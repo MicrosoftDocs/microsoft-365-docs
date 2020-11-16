@@ -25,7 +25,7 @@ To be productive, people need to communicate and collaborate with one another. T
 
 - To keep people connected while they work apart, use Microsoft Teams, which provides a common hub of communication for meetings, chats, and file storage for the organization, departments, and for small teams and individuals. 
 - For exchanging email and managing calendars, contacts, and tasks, use Exchange Online and the Outlook client.
-- For storing and collaborating on files, use SharePoint and OneDrive. You can use them with a web browser or within Teams.
+- For storing and collaborating on files, use SharePoint and OneDrive. You can use them within a web browser or within Teams.
 - For creating new content or collaborating on existing content, Microsoft 365 Apps are versions of Word, PowerPoint, Excel, and Outlook that are installed on your local computer and receive ongoing feature and security updates.
 
 ![Use Teams, Outlook, SharePoint, OneDrive, and Microsoft 365 Apps to stay productive](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
@@ -34,9 +34,9 @@ To be productive, people need to communicate and collaborate with one another. T
 
 Teams allows you to chat, meet, call, and collaborate all in one place. Millions of people get their work done in Teams every day because it brings together everything you need to work remotely into a hub for teamwork. 
 
-Use [this article](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) for guidance on supporting your remote workers with Teams. 
+For detailed guidance, see [Support remote workers using Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams). 
 
-Watch the [Part 1 video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) for guidance and demos on using Teams for remote work.
+Watch the [Enabling hybrid work with Microsoft Teams webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) for guidance and demos on using Teams for remote work.
 
 ### Chat and conversations
 
@@ -77,14 +77,14 @@ To protect SharePoint and OneDrive, see [this article](../security/office-365-se
 
 ## Create and collaborate on content with Microsoft 365 Apps
 
-Microsoft 365 Apps is the most productive and most secure Office experience for enterprises, allowing people to work together seamlessly from anywhere, anytime. Remote workers can collaborate on a document with multiple people simultaneously, see edits and changes in real time, and coauthor with others on any laptop, PC, or mobile device.
+Microsoft 365 Apps is the most productive and secure Office experience for enterprises, allowing people to work together seamlessly from anywhere, anytime. Remote workers can collaborate on a document with multiple people simultaneously, see edits and changes in real time, and coauthor with others on any laptop, PC, or mobile device.
 
-See [this article](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) to plan, deploy, and manage Microsoft 365 Apps in your enterprise environment.
+For more information, see the [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
 ## Admin technical resources for productivity apps and services
 
 - [Support remote workers using Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
-- [Part 1 video on Teams for remote workers](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
+- [Enabling hybrid work with Microsoft Teams webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams Customer Success Kit download](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Tools for driving Teams adoption](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Create a change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)

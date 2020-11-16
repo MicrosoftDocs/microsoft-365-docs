@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Office 365 Advanced Threat Protection (Office 365 ATP) can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams."
+description: "Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams."
 ---
 
 # Manage quarantined messages and files as an admin in EOP
@@ -29,7 +29,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 Admins can view, release, and delete all types of quarantined messages for all users. Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). Admins can also report false positives to Microsoft.
 
-Admins in organizations with Office 365 Advance Threat Protection (Office 365 ATP) can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+Admins in organizations with Microsoft Defender for Office 365 can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
 You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -65,6 +65,7 @@ You view and manage quarantined messages in the Security & Compliance Center or 
    - **Quarantine reason**<sup>\*</sup>
    - **Released?**<sup>\*</sup>
    - **Policy type**<sup>\*</sup>
+   - **Expires**
    - **Recipient**
    - **Message ID**
    - **Policy name**
@@ -86,16 +87,16 @@ You view and manage quarantined messages in the Security & Compliance Center or 
    - **Quarantine reason**:
      - **Policy**: The message matched the conditions of a mail flow rule (also known as a transport rule).
      - **Bulk**
-     - **Phish**: The spam filter verdict was **Phishing email** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)).
+     - **Phish**: The spam filter verdict was **Phishing email** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Malware**
      - **Spam**
      - **High Confidence Phish**
-     
+
    - **Policy Type**: Filter messages by policy type:
      - **Anti-malware policy**
      - **Safe Attachments policy**
      - **Anti-phish policy**
-     - **Hosted content filter policy**
+     - **Hosted content filter policy** (anti-spam policy)
      - **Transport rule**
 
    - **Email recipient**: All users or only messages sent to you. End users can only manage quarantined messages sent to them.
@@ -115,18 +116,12 @@ You view and manage quarantined messages in the Security & Compliance Center or 
    - **Recipient email address**: A single recipient's email address.
 
    - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
+  
+   - **Policy name**: The name of the policy that was responsible for quarantining the message.
 
    After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
-
-#### Export message results
-
-1. Select the messages you're interested in, and click **Export results**.
-
-2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-
-3. When your export is ready, you can name and choose the download location for the .csv file.
 
 #### View quarantined message details
 
@@ -141,6 +136,8 @@ When you select an email message in the list, the following message details appe
 - **Subject**
 
 - **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk**, **Phish**, matched a mail flow rule (**Transport rule**), or was identified as containing **Malware**.
+
+- **Recipient count**
 
 - **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
 
@@ -168,7 +165,6 @@ After you select a message, you have several options for what to do with the mes
   Notes about releasing messages:
 
   - You can't release a message to the same recipient more than once.
-
   - Only recipients who haven't received the message will appear in the list of potential recipients.
 
 - **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
@@ -209,18 +205,18 @@ When you select multiple quarantined messages in the list (up to 100), the **Bul
 
 When you're finished, click **Close**.
 
-## ATP Only: Use the Security & Compliance Center to manage quarantined files
+## Microsoft Defender for Office 365 Only: Use the Security & Compliance Center to manage quarantined files
 
 > [!NOTE]
-> The procedures for quarantined files in this section are available only to ATP Plan 1 and Plan 2 subscribers.
+> The procedures for quarantined files in this section are available only to Microsoft Defender for Office 365 Plan 1 and Plan 2 subscribers.
 
-In organizations with ATP, admins can manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+In organizations with Defender for Office 365, admins can manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams. To enable protection for these files, see [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 ### View quarantined files
 
 1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
 
-2. Change **View quarantined** to the default value **files**. You can sort on a field by clicking on an available column header.
+2. Change **View quarantined** to the value **files**. You can sort on a field by clicking on an available column header.
 
 3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default columns are marked with an asterisk (<sup>\*</sup>):
 
@@ -243,16 +239,9 @@ In organizations with ATP, admins can manage quarantined files in SharePoint Onl
      - A custom date/time range.
    - **Received time**
    - **Quarantine reason**: The only available value is **Malware**.
+   - **Policy type**
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).
-
-#### Export file results
-
-1. Select the files you're interested in, and click **Export results**.
-
-2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-
-3. When your export is ready, you can name and choose the download location for the .csv file.
 
 #### View quarantined file details
 
@@ -262,7 +251,7 @@ When you select a file in the list, the following file details appear in the **D
 - **File URL**: URL that defines the location of the file (for example, in SharePoint Online).
 - **Malicious content detected on** The date/time the file was quarantined.
 - **Expires**: The date when the file will be deleted from quarantine.
-- **Detected By**: ATP (Advanced Threat Protection) or Microsoft's anti-malware engine.
+- **Detected By**: Defender for Office 365 or Microsoft's anti-malware engine.
 - **Released?**
 - **Malware Name**
 - **Document ID**: A unique identifier for the document.
@@ -288,8 +277,6 @@ When you select multiple quarantined files in the list (up to 100), the **Bulk a
 
 - **Release files**
 - **Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.
-
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to view and manage quarantined messages and files
 

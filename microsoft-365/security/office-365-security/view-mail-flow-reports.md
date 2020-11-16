@@ -307,9 +307,9 @@ This chart shows the email count organized by:
 - **Email after file and URL detonation**<sup>1</sup>
 - **Email detected as benign after post-delivery protection (URL click time protection)**
 
-<sup>1</sup> Office 365 ATP only
+<sup>1</sup> Defender for Office 365 only
 
-To view the email filtered by EOP or ATP separately, click on the value in the chart legend.
+To view the email filtered by EOP or Defender for Office 365 separately, click on the value in the chart legend.
 
 The data table contains the following information, shown in descending date order:
 
@@ -325,10 +325,10 @@ The data table contains the following information, shown in descending date orde
   - **Anti-spoof**: Messages filtered due to the message attempting to spoof a domain that the recipient belongs to, or a domain that the message sender doesn't own.  
 - **Anti-spam, bulk mail filtering**:
   - **Bulk mail filtering**: Messages filtered due to an attempt to deliver bulk mail to its recipients. 
-- **User and domain impersonation (ATP)**:
+- **User and domain impersonation (Defender for Office 365)**:
   - **User impersonation**: Messages filtered due to an attempt to impersonate a user (message sender) that's defined in the impersonation protection settings of an anti-phishing policy.
   - **Domain impersonation**: Messages filtered due to an attempt to impersonate a domain that's defined in the impersonation protection settings of an anti-phishing policy. 
-- **File and URL detonation (ATP)**:
+- **File and URL detonation (Defender for Office 365)**:
   - **File detonation**: Messages filtered by a Safe Attachments policy.
   - **URL detonation**: Message filtered by a Safe Links policy.  
 - **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
@@ -370,11 +370,11 @@ This chart shows messages organized into the following categories:
 
 - **Total email**
 - **Edge allow, edge filtered**
-- **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
+- **Not malware, Safe attachments detection (Defender for Office 365), Anti-malware engine detection, rule block**
 - **Not phish, DMARC failure, impersonation detection, spoof detection, phish detection**
-- **No detection with URL detonation, URL detonation detection (ATP)**
+- **No detection with URL detonation, URL detonation detection (Defender for Office 365)**
 - **Not spam, spam**
-- **Non-malicious email, safe links detection (ATP), ZAP**
+- **Non-malicious email, Safe Links detection (Defender for Office 365), ZAP**
 
 When you hover over a category in the chart, you can see the number of messages in that category.
 
@@ -428,7 +428,7 @@ The following charts are available in the report view:
   - **Malware (anti-malware)** (EOP)
   - **Spam detections**
   - **Rule messages**
-  - **Advanced malware** (Office 365 ATP)
+  - **Advanced malware** (Microsoft Defender for Office 365)
 
   When you hover over a day (data point) in the chart, you can see details for that day.
 
@@ -483,7 +483,7 @@ The following charts are available in the report view:
 - **Show data for \> Top mail recipients**
 - **Show data for \> Top spam recipients**
 - **Show data for \> Top malware recipients** (EOP)
-- **Show data for \> Top malware recipients (ATP)** (Office 365 ATP)
+- **Show data for \> Top malware recipients (Defender for Office 365)** 
 
 The composition of the pie chart changes based on these selections.
 
@@ -517,9 +517,9 @@ If you click **View details table**, the information that's shown depends on the
   - **Top malware recipients**
   - **Count**
 
-- **Show data for \> Top malware recipients (ATP)** (Office 365 ATP)
+- **Show data for \> Top malware recipients (Defender for Office 365)** 
 
-  - **Top malware recipients (ATP)**
+  - **Top malware recipients (Defender for Office 365)**
   - **Count**
 
 If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
@@ -555,4 +555,4 @@ For more information, see [Permissions in Exchange Online](https://docs.microsof
 
 [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
 
-[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+[View reports for Microsoft Defender for Office 365](view-reports-for-atp.md)

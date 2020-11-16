@@ -13,7 +13,7 @@ description: "Learn more about explanation types in Microsoft SharePoint Syntex"
 
 # Introduction to explanation types
 
-Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft SharePoint Syntex. When creating an explanation, you need to select an explanation type. This article will help you learn more to better understand the different explanation types and how they are used. 
+Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft SharePoint Syntex. When creating an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they are used. 
 
    ![Explanation types](../media/content-understanding/explanation-types.png) 
    
@@ -23,7 +23,7 @@ These explanation types are available:
 
 - **Pattern list**: List patterns of numbers, letters, or other characters that you can use to identify the information that you are extracting. For example, you can extract the **Phone number** of the referring doctor from all Medical Referral document that you are identifying.</br>
 
-- **Proximity**: Describes how close explanations are to each other. For example, a *street number* pattern list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model, or the option will be disabled. 
+- **Proximity**: Describes how close explanations are to each other. For example, a *street number* pattern list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model or the option will be disabled. 
  
 ## Phrase list
 
@@ -37,17 +37,17 @@ If case sensitivity is a requirement in identifying your label, using the phrase
 
 ## Pattern lists
 
-A pattern list type is especially useful when you create an explanation that identifies and extracts information from a document. It is typically presented in different formats, such as dates, phone numbers, or credit card numbers. For example, a date can be displayed in a number of different formats (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, Jan 1,2020, etc.). Defining a pattern list makes your explanation more efficient by capturing any possible variations in the data that you are trying to identify and extract. 
+A pattern list type is especially useful when you create an explanation that identifies and extracts information from a document. It is typically presented in different formats, such as dates, phone numbers, and credit card numbers. For example, a date can be displayed in a number of different formats (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, Jan 1,2020, etc.). Defining a pattern list makes your explanation more efficient by capturing any possible variations in the data that you are trying to identify and extract. 
 
-For the **Phone number** sample, extract the phone number for each referring doctor from all Medical Referral documents that the model identifies. When you create the explanation, select the Pattern list type to allow the different formats that you may expect to be returned.
+For the **Phone number** example, you extract the phone number for each referring doctor from all Medical Referral documents that the model identifies. When you create the explanation, select the Pattern list type to allow the different formats that you may expect to be returned.
 
    ![Phone number pattern list](../media/content-understanding/pattern-list.png)
 
-For this sample, select the **Any digit from 0-9** checkbox. Selecting this recognizes each "0" value used in your pattern list to be any digit from 0 through 9.
+For this example, select the **Any digit from 0-9** checkbox to recognize each "0" value used in your pattern list to be any digit from 0 through 9.
 
    ![Any digit from 0-9](../media/content-understanding/digit-identity.png)
 
-Similarly, if you create a pattern list that includes text characters, select the **Any letter from a-z** checkbox. Selecting this recognizes each "a" character used in the pattern list to be any character from "a" to "z".
+Similarly, if you create a pattern list that includes text characters, select the **Any letter from a-z** checkbox to recognize each "a" character used in the pattern list to be any character from "a" to "z".
 
 For example, if you create a **Date** pattern list and you want to make sure that a date format such as *Jan 1, 2020* is recognized, you need to:
 - Add *aaa 0, 0000* and *aaa 00, 0000* to your pattern list.
@@ -63,13 +63,13 @@ Additionally, if you have capitalization requirements in your pattern list, you 
    ![Only exact capitalization](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Instead of manually creating pattern list explanation, use the [explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) to use pre-made pattern list templates for common pattern list, such as *date*, *phone number*, *credit card number*, etc.. 
+> Instead of manually creating a pattern list explanation, use the [explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) to use pattern list templates for a common pattern list, such as *date*, *phone number*, *credit card number*, etc.
 
 ## Proximity 
 
-The proximity explanation type helps your model identify data through defining how close another piece of data is to it. For example, in your model, you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
+The proximity explanation type helps your model identify data by defining how close another piece of data is to it. For example, in your model say you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
 
-You also notice that customer phone numbers always appear before the street address number. 
+Notice that customer phone numbers always appear before the street address number. 
 
 Alex Wilburn<br>
 555-555-5555<br>
@@ -82,24 +82,22 @@ Use the proximity explanation to define how far away the phone number explanatio
 
 #### What are tokens?
 
-In order to use the proximity explanation type, you need to understand what a token is, as the number of tokens is how the proximity explanation measures distance from one explanation to another.  
+In order to use the proximity explanation type, you need to understand what a token is, as the number of tokens is how the proximity explanation measures distance from one explanation to another. A token is a continuous span (not including spaces or punctuation) of letters and numbers. 
 
-A token is a continuous span (no spaces or punctuation) of letters and numbers. A space is NOT a token. Each punctuation character is a token. The following table shows some examples of how to determine the number of tokens in a phrase.
+The following table shows examples for how to determine the number of tokens in a phrase.
 
 |Phrase|Number of tokens|Explanation|
 |--|--|--|
 |`Dog`|1|A single word with no punctuation or spaces.|
-|`RMT33W`|1|A record locator number. It may have numbers and letters, but does not have any punctuation.|
-|`425-555-5555`|5|A phone number. Each punctuation mark is a single token so  `425-555-5555` would be 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
+|`RMT33W`|1|A record locator number. It may include numbers and letters, but does not have punctuation.|
+|`425-555-5555`|5|A phone number. Each punctuation mark is a single token, so `425-555-5555` is 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
 |`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
 
 #### Configure the proximity explanation type
 
-For the sample, configure the proximity setting so that we can define the range of the number of tokens the *Phone number* explanation is from the *Street address number* explanation.
+For the example, configure the proximity setting to define the range of the number of tokens in the *Phone number* explanation from the *Street address number* explanation. Notice that the minimum range is "0", because there are no tokens between the phone number and street address number.
 
-You should see that the minimum range is "0" since there are no tokens between the phone number and street address number.
-
-However, some phone numbers in the sample documents are appended with *(mobile)*.
+But some phone numbers in the sample documents are appended with *(mobile)*.
 
 Nestor Wilke<br>
 111-111-1111 (mobile)<br>
@@ -120,13 +118,13 @@ Configure the proximity setting to have a range of 0 through 3.
 
 ## Use explanation templates
 
-While you can manually add various pattern list values for your explanation, it can be much easier to use the pre-created templates provided to you in the explanation library.
+While you can manually add various pattern list values for your explanation, it can be easier to use the templates provided to you in the explanation library.
 
-For example, instead of manually adding all the variations for *Date*, you can use the pattern list template for *Date*, that already includes a number of pattern lists values:</br>
+For example, instead of manually adding all the variations for *Date*, you can use the pattern list template for *Date* as it already includes a number of pattern lists values:</br>
 
    ![Explanation library](../media/content-understanding/explanation-template.png)</br>
  
-The explanation library includes a number of commonly used pattern list explanations, including:</br>
+The explanation library includes commonly used pattern list explanations, including:</br>
 
 - Date</br>
 - Date (numeric)</br>
@@ -138,7 +136,7 @@ The explanation library includes a number of commonly used pattern list explanat
 - Credit card</br>
 - Social security number</br>
 
-Note that the explanation library also includes templates for phrase list explanations as well, including:
+Note that the explanation library also includes templates for phrase list explanations:
 - End of sentence
 - Currency
 
@@ -148,11 +146,11 @@ Note that the explanation library also includes templates for phrase list explan
 
    ![Create from template](../media/content-understanding/from-template.png)</br>
 
-2.  On the **Explanation templates** page, select the explanation you want to use, and then select **Add**.</br>
+2.  On the **Explanation templates** page, select the explanation you want to use, then select **Add**.</br>
 
        ![Select a template](../media/content-understanding/phone-template.png)</br>
 
-3. The information for the template you selected will display on the **Create an explanation** page. If needed, edit the explanation name, and add or remove items from the pattern list. </br> 
+3. The information for the template you selected displays on the **Create an explanation** page. If needed, edit the explanation name and add or remove items from the pattern list. </br> 
 
    ![Edit template](../media/content-understanding/phone-template-live.png)</br>
 

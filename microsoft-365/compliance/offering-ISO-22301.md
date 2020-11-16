@@ -33,7 +33,7 @@ Microsoft is the first hyperscale cloud service provider to receive the ISO 2230
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - Microsoft Graph
 - Microsoft Healthcare Bot
 - Intune

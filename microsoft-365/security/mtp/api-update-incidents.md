@@ -1,6 +1,6 @@
 ---
 title: Update incidents API
-description: Learn how to update incidents using Microsoft Threat Protection API
+description: Learn how to update incidents using Microsoft 365 Defender API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -27,7 +27,7 @@ search.appverid:
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -44,7 +44,7 @@ Updates properties of existing incident.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft Threat Protection APIs](api-access.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender APIs](api-access.md).
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
