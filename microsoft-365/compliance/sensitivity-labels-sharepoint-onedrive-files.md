@@ -23,7 +23,7 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Before you enable sensitivity labels for Office files in SharePoint and OneDrive, you can't apply your [sensitivity labels](sensitivity-labels.md) in Office on the web. You don't see the **Sensitivity** button on the ribbon, or the applied label name on the status bar. In addition, if you use desktop apps to label your files and then save them on SharePoint or OneDrive, the service can't process the content of these files if the label applied encryption. Coauthoring, eDiscovery, Data Loss Prevention, search, and other collaborative features won't work under these circumstances.
+You cannot apply [sensitivity labels](sensitivity-labels.md) in Office on the web before you enable sensitivity labels for Office files in SharePoint and OneDrive. You also will not see the **Sensitivity** button on the ribbon, or the applied label name on the status bar. In addition, if you use desktop apps to label your files and then save them on SharePoint or OneDrive, the service can't process the content of these files if the label applied encryption. Coauthoring, eDiscovery, Data Loss Prevention, search, and other collaborative features won't work under these circumstances.
 
 When you do enable sensitivity labels for Office files in SharePoint and OneDrive, all these capabilities are enabled. In addition to displaying sensitivity labels to users, for new and changed files that have a sensitivity label applied that includes encryption with a cloud-based key:
 
