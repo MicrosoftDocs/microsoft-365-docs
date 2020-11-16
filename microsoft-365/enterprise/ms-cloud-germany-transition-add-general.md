@@ -26,7 +26,7 @@ The following sections provide additional information on services, pre-work cons
 
 ## Azure Active Directory
 
-To complete the move from Azure German cloud to Azure Public cloud we recommend that authentication endpoint, AAD Graph and MS Graph endpoints for your applications be updated to those of the commercial cloud when OIDC endpoint https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration starts reporting commercial cloud endpoints. 
+To complete the move from Azure German cloud to Azure Public cloud we recommend that authentication endpoint, Azure Active Directory (Azure AD) Graph and MS Graph endpoints for your applications be updated to those of the commercial cloud when OIDC endpoint https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration starts reporting commercial cloud endpoints. 
  
 **When should I make this change?**
 
@@ -34,9 +34,9 @@ You will receive a notification in Azure/Office portal when your tenant complete
  
 There are 3 preconditions to updating your login authority.
 
-1. OIDC discovery endpoint for your tenant https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration returns AAD public cloud endpoints.
-2. If your tenant is setup for federation, ADFS is updated to sync with AAD Public. You can follow instructions to update AAD Connect settings for making this change.
-3. Resource applications, if any, used by your applications are modified to accept tokens signed by both AAD Germany and AAD Public.
+1. OIDC discovery endpoint for your tenant https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration returns Azure AD public cloud endpoints.
+2. If your tenant is setup for federation, ADFS is updated to sync with Azure AD Public. You can follow instructions to update Azure AD Connect settings for making this change.
+3. Resource applications, if any, used by your applications are modified to accept tokens signed by both Azure AD Germany and Azure AD Public.
  
 **What kind of applications?**
 
@@ -51,24 +51,24 @@ This could be any of the following:
 - Daemon app
 - Mobile app
  
-Note that that when an application switches to using login.microsoftonline.com as your authority, the tokens will be signed by this new authority. If you host any resource applications that other apps call into, you will need to allow for lax token validation. This means that your app needs to allow tokens signed by both the AAD Germany and AAD Public clouds. This lax token validation is needed until all client applications calling your service are fully migrated to AAD Public cloud. After this, your resource application only needs to accept token signed by AAD Public cloud.
+Note that that when an application switches to using login.microsoftonline.com as your authority, the tokens will be signed by this new authority. If you host any resource applications that other apps call into, you will need to allow for lax token validation. This means that your app needs to allow tokens signed by both the Azure AD Germany and Azure AD Public clouds. This lax token validation is needed until all client applications calling your service are fully migrated to Azure AD Public cloud. After this, your resource application only needs to accept token signed by Azure AD Public cloud.
 
 **What do I need to update?**
 
 1. If you are hosting an application in Azure Germany, that is used to authenticate Azure Germany or O365 Germany users, please ensure that https://login.microsoftonline.com is used as the authority in the authentication context.
 
-  - See Azure AD authentication contexts.
-  - This applies both to authentication to your application as well as authentication to any APIs your application may be calling (i.e. Microsoft Graph, Azure AD Graph, Azure Resource Manager).
+    - See Azure AD authentication contexts.
+    - This applies both to authentication to your application as well as authentication to any APIs your application may be calling (i.e. Microsoft Graph, Azure AD Graph, Azure Resource Manager).
 
-2. Update AAD Graph endpoint to be https://graph.windows.net
+2. Update Azure AD Graph endpoint to be https://graph.windows.net
 3. Update MS Graph endpoint to be https://graph.microsoft.com
 4. Update any German cloud endpoints like Exchange Online, SharePoint Online etc. that are used by your applications to be those of the public cloud.
 5. Update environment parameters to be AzurePublic (instead of AzureGermany) in administrative tools and scripts like
 
-  - Azure PowerShell
-  - AAD PowerShell (MSOnline)
-  - AAD PowerShell (AzureAD)
-  - Azure CLI
+    - Azure PowerShell
+    - Azure AD PowerShell (MSOnline)
+    - Azure AD PowerShell (AzureAD)
+    - Azure CLI
  
 **What about applications I publish?**
 
