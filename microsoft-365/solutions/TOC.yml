@@ -96,38 +96,18 @@
     - name: Overview
       href: workload-solutions-scenarios-overview.md
 
-    - name: DEPLOY AND MANAGE MICROSOFT 365 IN THE ENTERPRISE
+    - name: Tenant management
       items:
       - name: Your tenancies
-        items:
-        - name: Single Microsoft 365 tenancy
-          href: placeholder.md
-        - name: Multiple Microsoft 365 tenancies
-          href: placeholder.md
-        - name: Microsoft 365 multi-geo
-          href: placeholder.md
-      - name: Networking for your tenancies
-        items:
-        - name: Optimal network connectivity and performance for on-premises workers
-          href: placeholder.md
-        - name: Optimal network connectivity and performance for remote workers
-          href: placeholder.md
-        - name: Optimal network connectivity and performance using Network Insights
-          href: placeholder.md
-        - name: Optimal SPO performance with the Office 365 CDN 
-          href: placeholder.md
-        - name: Automated endpoint whitelisting using the endpoint web service
-          href: placeholder.md
-      - name: Identity for your tenancies
-        items:
-        - name: Hybrid identity
-          href: placeholder.md
-        - name: Secure sign-ins
-          href: placeholder.md
-      - name: Migration to cloud productivity apps
-        items:
-        - name: Migrate from Office servers
-          href: placeholder.md
+        href: placeholder.md
+      - name: Optimal networking
+        href: placeholder.md
+      - name: Identity
+        href: placeholder.md
+      - name: Migration
+        href: placeholder.md
+      - name: Device management
+        href: placeholder.md
 
     - name: Teamwork and collaboration
       items:
