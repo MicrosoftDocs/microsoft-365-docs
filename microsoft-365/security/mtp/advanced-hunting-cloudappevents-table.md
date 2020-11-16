@@ -37,14 +37,10 @@ This table will expand to include more activities monitored by Microsoft Cloud A
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
->[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
-
-
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Date and time when the event was recorded |
-| `ActionType` | string | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
+| `ActionType` | string | Type of activity that triggered the event |
 | `Application` | string | Application that performed the recorded action |
 | `ApplicationId` | string | Unique identifier for the application |
 | `AccountObjectId` | string | Unique identifier for the account in Azure Active Directory |
