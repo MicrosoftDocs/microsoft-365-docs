@@ -247,7 +247,7 @@ The following information is shown in the details table view:
 
 ![Mail latency report details](../../media/mail-latency-report-details.png)
 
-This shows that on 11/08/2020 the average latency experienced for all messages delivered and detonated was **111.744** seconds.
+This shows that on 11/14/2020 the average latency experienced for all messages delivered and detonated was **108.033** seconds.
 
 The details table contains same information on each tab.
 
