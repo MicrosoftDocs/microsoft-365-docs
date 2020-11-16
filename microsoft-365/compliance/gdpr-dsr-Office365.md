@@ -1733,7 +1733,7 @@ Here's a high-level overview of how to implement Compliance Boundaries (together
 
 3. Create an admin role group in the Security & Compliance Center for each compliance boundary. We recommend that you create these role groups by copying the built-in eDiscovery Manager role group and then removing any roles as necessary.
 
-4. Add members to each of the specific role groups as eDiscovery Mangers. Members are the people responsible for investigating and responding to DSRs, and will typically consist of IT admins, data privacy officers, compliance managers, and human resource representatives.
+4. Add members to each of the specific role groups as eDiscovery Managers. Members are the people responsible for investigating and responding to DSRs, and will typically consist of IT admins, data privacy officers, compliance managers, and human resource representatives.
 
 5. Create a search permissions filter for each compliance boundary so that the members of the corresponding admin role group can only search mailboxes and sites for users within that agency/compliance boundary. The search permissions filter allows members of the corresponding role group to search only the content locations with user object attribute value that corresponds to the agency/compliance boundary.
 

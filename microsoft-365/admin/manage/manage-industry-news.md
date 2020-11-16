@@ -22,8 +22,6 @@ description: "Provide your users with up-to-date news headlines about your indus
 To provide your users with up-to-date news headlines about your industry and info from your organization, use the [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) service to enable a customized news feed for your organization. You can also manage settings for the Bing homepage and Microsoft Edge new tab page (Starting with the release of Edge 87).
 
 ## What your users will see
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Microsoft search industry updates roll up":::
  
 Signed-in users that come to the Bing homepage will see your news feed under the personalized info from your organization.
 

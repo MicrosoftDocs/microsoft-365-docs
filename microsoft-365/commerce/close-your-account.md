@@ -85,10 +85,10 @@ You can also <a href="https://docs.microsoft.com/azure/active-directory/authenti
 
 2. Select **Azure Active Directory**.
 
-3. Switch to the directory you want to delete.
+3. Switch to the organization you want to delete.
 
-4. Select **Delete directory**.
+4. Select **Delete tenant**.
 
-5. If your directory fails one or more checks, you see a link to more information on how to pass the checks. After you pass all checks, select **Delete** to complete the process.
+5. If your organization fails one or more checks, you see a link to more information on how to pass the checks. After you pass all checks, select **Delete** to complete the process.
 
 After you complete this final step, your account with Microsoft is closed and deleted.

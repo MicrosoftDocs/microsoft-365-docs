@@ -61,6 +61,8 @@
           href: get-ready/mapped-drives.md
         - name: Prepare certificates and network profiles
           href: get-ready/certs-wifi-lan.md
+        - name: Prerequisites for guest accounts
+          href: get-ready/guest-accounts.md
         - name: Prepare printing resources
           href: get-ready/printing.md
         - name: Prepare apps
@@ -68,6 +70,11 @@
           items: 
             - name: Working with Microsoft Consulting Services
               href: get-ready/apps-MCS.md
+        - name: Use the Readiness assessment tool
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: Fix issues found by the readiness assessment tool
+              href: get-ready/readiness-assessment-fix.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
