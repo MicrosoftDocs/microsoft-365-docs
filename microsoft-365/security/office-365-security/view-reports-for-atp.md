@@ -204,7 +204,7 @@ The **Mail latency report** shows you an aggregate view of the mail delivery and
 - **90th percentile**: This indicates a high latency for message delivery. Only 10% of messages took longer than this value to deliver.
 - **99th percentile**: This indicates the highest latency for message delivery.
 
-Client side and network latency is not included.
+Client side and network latency are not included.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
 
@@ -247,9 +247,9 @@ The following information is shown in the details table view:
 
 ![Mail latency report details](../../media/mail-latency-report-details.png)
 
-This shows that on 11/14/2020 the average latency experienced for all messages delivered and detonated was **108.033** seconds.
+The above shows that on November 14 the average latency experienced for all messages delivered and detonated was **108.033** seconds.
 
-The details table contains same information on each tab.
+The details table contains the same information on each tab.
 
 ## Threat protection status report
 
