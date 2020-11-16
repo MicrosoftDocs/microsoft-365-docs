@@ -229,7 +229,7 @@ To find out more information about any actions needed during the migration phase
 
 ## IOS
 
-On iOS devices, user will need to manually remove any cached accounts from the Authenticator, un-register device as well as sign out from any native apps on their device.
+On iOS devices, user will need to manually remove any cached accounts from the Authenticator, un-registerthe  device as well as sign out from any native apps on their device.
 
 ### Step 1: If present, remove the account from the Authenticator app
 
@@ -246,7 +246,7 @@ On iOS devices, user will need to manually remove any cached accounts from the A
  
 ### Step 3: Sign out from individual apps if necessary.
 
-Users can go to individual apps like Outlook, Teams, OneDrive, and remove accounts from those apps.
+Users can go to individual apps like Outlook, Teams, and OneDrive, and remove accounts from those apps.
 
 ## More information
 
