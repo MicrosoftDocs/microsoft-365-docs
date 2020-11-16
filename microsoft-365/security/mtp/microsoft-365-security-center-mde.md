@@ -26,15 +26,9 @@ The new Microsoft 365 security center combines security capabilities that protec
 
 Use this URL to access the new security center: https://security.microsoft.com
 
-## Microsoft Defender Security Center navigation (old)
+## Microsoft 365 security navigation (new)
 
 Historically, the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. However, in the interest of reducing the number of portals, the Microsoft 365 security center will be the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
-
-This what the current Microsoft Defender Security Center navigation pane looks like, for comparison.
-
-![Endpoints left navigation.](../../media/m365-security-old-nav.png)
-
-## Microsoft 365 security navigation (new)
 
 The Microsoft 365 security navigation pane will look fairly familiar if you are coming from the Microsoft Defender Security Center. However there are some new and updated elements.
 
@@ -50,6 +44,11 @@ The Microsoft 365 security navigation pane will look fairly familiar if you are 
 |---------|---------|
  | ![Email and collaboration left navigation.](../../media/m365-security-email-collab-nav.png)  |    ![Access and reporting left navigation.](../../media/m365-security-access-reporting-nav.png) |
 
+## Microsoft Defender Security Center navigation (old)
+
+This what the current Microsoft Defender Security Center navigation pane looks like, for comparison.
+
+![Endpoints left navigation.](../../media/m365-security-old-nav.png)
 
 ## Changes
 
