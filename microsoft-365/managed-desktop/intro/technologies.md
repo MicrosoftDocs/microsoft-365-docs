@@ -26,9 +26,9 @@ This topic summarizes the components included in the required Enterprise license
  |
  --- | ---
 Microsoft 365 Apps for enterprise (64-bit) | These Office applications will be shipped with the device: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>The 64-bit full versions of Microsoft Project and Microsoft Visio are not included. However, since the installation of these applications depends on the Microsoft 365 Apps for enterprise installation, Microsoft Managed Desktop has created default Microsoft Intune deployments and security groups that you can then use to deploy these applications to licensed users. For more information, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
-OneDrive for Business |Azure Active Directory Single Sign On is enabled for users upon first sign in to OneDrive for Business.<br><br>Known Folder Redirection for "Desktop", "Document", and "Pictures" folders is included; enabled and configured by Microsoft Managed Desktop. 
+OneDrive |Azure Active Directory Single Sign On is enabled for users upon first sign in to OneDrive.<br><br>Known Folder Redirection for "Desktop", "Document", and "Pictures" folders is included; enabled and configured by Microsoft Managed Desktop.
 Store Apps |	Microsoft Sway and Power BI are not shipped with the device. These apps are available for download from Microsoft Store.
-Win32 Applications |	Teams is not shipped with the device, but is packaged and provided by Microsoft for Microsoft Managed Desktop devices. Azure Information Protection Client is not shipped with the device, but you can have this packaged for deployment. 
+Win32 Applications |	Teams is not shipped with the device, but is packaged and provided by Microsoft for Microsoft Managed Desktop devices. Azure Information Protection Client is not shipped with the device, but you can have this packaged for deployment.
 Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner are not shipped with the device. Users can access the web version of these applications with a browser.
 
 
