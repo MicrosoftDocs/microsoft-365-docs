@@ -88,7 +88,7 @@ Within an hour - or after they leave the current Microsoft 365 page they are on 
 > [!IMPORTANT]
 > If the user is in Outlook on the web, just clicking around in their mailbox, they may not be kicked out immediately. As soon as they select a different tile, such as OneDrive, or refresh their browser, the sign-out is initiated.
   
-To use PowerShell to sign out a user immediately, see [Revoke-AzureADUserAllRefreshToken](https://go.microsoft.com/fwlink/?linkid=841345) cmdlet.
+To use PowerShell to sign out a user immediately, see [Revoke-AzureADUserAllRefreshToken](https://docs.microsoft.com/powershell/module/azuread/revoke-azureaduserallrefreshtoken?view=azureadps-2.0) cmdlet.
   
 For more information about how long it takes to get someone out of email, see [What you need to know about terminating an employee's email session](#what-you-need-to-know-about-terminating-an-employees-email-session).
   
