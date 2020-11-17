@@ -37,7 +37,7 @@ Microsoft 365 organizations with mailboxes in Exchange Online are protected by E
 1. Email with suspected malware will automatically be quarantined and recipients will be notified. See [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 1. Phishing email identified as "high confidence" will be handled according to the anti-spam policy action. See [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-Because Microsoft wants to keep our customers secure by default, some tenants overrides are not applied for malware or high confidence phish. These overrides include:
+Because Microsoft wants to keep our customers secure by default, some tenants overrides are not applied for malware or high confidence phishing. These overrides include:
 
 - Allowed sender lists or allowed domain lists (anti-spam policies)
 - Outlook Safe senders
