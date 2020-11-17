@@ -32,7 +32,7 @@ Win32 Applications |	Teams is not shipped with the device, but is packaged and p
 Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner are not shipped with the device. Users can access the web version of these applications with a browser.
 
 
-## Windows 10 Enterprise E3 with Defender for Endpoint or E5
+## Windows 10 Enterprise E5 or E3 with Defender for Endpoint
 
  |
  --- | ---
