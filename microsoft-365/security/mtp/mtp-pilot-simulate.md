@@ -328,7 +328,7 @@ There's a single internal mailbox and device required for this scenario. You'll 
 
     1.	Look at the results and see if you can identify the email you opened.  It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the **Show Filters option** to find the message. 
 
-   In the sample, the email was sent from a Yahoo account. Click the **+** icon beside **yahoo.com** under the SenderFromDomain section and then click **Apply** to add the selected domain to the query.  Use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results.  Run the query again to get a smaller result set to verify that you see the message from the simulation.
+           In the sample, the email was sent from a Yahoo account. Click the **+** icon beside **yahoo.com** under the SenderFromDomain section and then click **Apply** to add the selected domain to the query.  Use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results.  Run the query again to get a smaller result set to verify that you see the message from the simulation.
    
         ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
 
@@ -353,7 +353,7 @@ There's a single internal mailbox and device required for this scenario. You'll 
 
 5.	Next, include the information about the attachment (such as: file name, hashes) to your result set. To do so, join the **EmailAttachmentInfo** table. The common fields to use for joining, in this case are **NetworkMessageId** and **RecipientObjectId**.
 
-The following query also includes an additional line “| **project-rename EmailTimestamp=Timestamp**” that'll help identify which timestamp was related to the email versus timestamps related to file actions that you'll add in the next step.
+    The following query also includes an additional line “| **project-rename EmailTimestamp=Timestamp**” that'll help identify which timestamp was related to the email versus timestamps related to file actions that you'll add in the next step.
 
     ```console
     EmailEvents 
@@ -432,7 +432,7 @@ Custom detections will run the query according to the frequency you set, and the
 
     ![Screenshot of the detection rules page which displays the rule and execution details](../../media/mtp/fig27b.png) 
 
-From this page, you can select the detection rule, which will open a details page. 
+    From this page, you can select the detection rule, which will open a details page. 
 
     ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
 
