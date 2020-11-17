@@ -112,11 +112,17 @@ When you create a sensitivity label, you're asked to configure the label's scope
 - Which label settings you can configure for that label
 - Where the label will be visible to users
 
-This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. By default, both scopes are selected. New, and currently in preview, you can select the scope for Azure Purview assets:
+This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. New, and currently in preview, you can also select the scope for Azure Purview assets:
 
 ![Scope options for sensitivity labels](../media/sensitivity-labels-scopes.png)
 
-When you change this default so not all scopes are selected, you see the first page of the configuration settings for the other scope but you can't select them. For example, if the scope for files and emails is not selected, you can't select the options on the next page:
+By default, the **Files & emails** scope is always selected. The other scopes are selected by default when the features are enabled for your tenant:
+
+- **Groups & sites**: [Enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+
+- **Azure Purview assets (preview)**: [Automatically label your content in Azure Purview](https://go.microsoft.com/fwlink/?linkid=2148989)
+
+If you change the defaults so not all scopes are selected, you see the first page of the configuration settings for scopes you haven't selected, but you can't configure the settings. For example, if the scope for files and emails is not selected, you can't select the options on the next page:
 
 ![Unavailable options for sensitivity labels](../media/sensitivity-labels-unavailable-settings.png)
 
@@ -152,7 +158,9 @@ If you edit a sensitivity label, the version of the label that was applied to co
 
 ## What label policies can do
 
-After you create your sensitivity labels, you need to publish them, to make them available to people and services in your organization. The sensitivity labels can then be applied to documents and emails. Unlike retention labels, which are published to locations such as all Exchange mailboxes, sensitivity labels are published to users or groups. Sensitivity labels then appear in Office apps for those users and groups.
+After you create your sensitivity labels, you need to publish them, to make them available to people and services in your organization. The sensitivity labels can then be applied to Office documents and emails, and other items that support sensitivity labels. 
+
+Unlike retention labels, which are published to locations such as all Exchange mailboxes, sensitivity labels are published to users or groups. Apps that support sensitivity labels can then display them to those users and groups as applied labels, or as labels that they can apply.
 
 With a label policy, you can:
 
