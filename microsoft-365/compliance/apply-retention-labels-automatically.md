@@ -163,6 +163,8 @@ Some things to consider when using keywords or searchable properties to auto-app
 
 - Although SharePoint managed properties can be renamed by using aliases, don't use these for KQL queries in your labels. Always specify the actual name of the managed property, for example, "RefinableString01".
 
+- To search for values that contain spaces or special characters, use double quotation marks (`" "`) to contain the phrase; for example, `subject:"Financial Statements"`.
+
 - Use the *DocumentLink* property instead of *Path* to match an item based on its URL. 
 
 - Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. However, prefix wildcard searches (such as `cat*`) are supported.
