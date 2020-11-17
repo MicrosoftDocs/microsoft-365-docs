@@ -39,18 +39,20 @@ Only people who can edit will see the Edit button
 
 ## Who can see what
 
-To see topics at all, a user must:
+To see topics, a user must:
 
 - Have a Topic Experiences license
 - Be a [topic viewer](topic-experiences-knowledge-rules#change-who-can-see-topics-in-your-organization)
 
 These two things give a user view access to the topic center and allow them to see highlights and topic cards.
 
-Contributors additionally have [create and edit](topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) permissions. They can create and update topics.
+Topic contributors additionally have [create and edit](topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) permissions. They can create and update topics.
 
 Topic viewers and contributors can see the list of confirmed and published topics in the topic center, but the topic details that a given person can see depends on the permissions that they have to the source material and on whether the topic has been manually edited.
 
-The following table describes what topic viewers and contributors can see based on their permissions.
+Information in a topic that was added by AI is only visible to people who have access to the source content. Information that has been manually added or edited by a person is visible to everyone who can see the topic.
+
+The following table describes what topic viewers and contributors can see in a given topic based on their permissions.
 
 |Topic item|What people can see|
 |:---------|:------------------|
@@ -72,13 +74,9 @@ Topic's discoverability is dictated by the resources associated with the topic.
 
 People with read permissions to the information from which the topic was discovered can discover the topic.
 
-Manually added topics require permissions to be determined by the person adding the topic page. See New Topic.
 
 
-A mined topic starts with being able to be edited by those that can see it. If a person seeing the result wants to change any information on the topic, this is the curation for everyone who sees the topic.
 
-Page is created in single knowledge center
-Default permissions is to be read and write for everyone
 The information curated on the page will be visible to everyone
 Suggestions continue to be security-protected
 
@@ -107,26 +105,30 @@ Topic viewers can see published topics in the topic center.
 
 ## Best practices
 
-workflow for requesting changes
+Topic experiences presents information to users based on their existing permissions to content. Microsoft 365 provides a variety of ways to ensure that sensitive content is restricted to appropriate users. Beyond standard team or site permissions, you can use [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) or [data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to restrict access to content and [access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) to periodically review user access to sensitive information.
 
-[Select SharePoint topic sources](topic-experiences-discovery#select-sharepoint-topic-sources)
+We recommend that you use these tools to ensure that your content permissions are set appropriately inside your organization. Topic experiences can then provide useful and appropriate information to your users.
 
-[Exclude topics by name](topic-experiences-discovery#exclude-topics-by-name)
+If there are topics that you want to exclude entirely from the knowledge network, you can also:
 
-have knowledge managers remove topics in the topic center.
+- [Exclude sensitive SharePoint sites from topic discovery](topic-experiences-discovery#select-sharepoint-topic-sources). Content in these sites will not appear in topic experiences.
 
-be aware of the audience and the sensitivity of information when creating topic descriptions. These descriptions may be widely visible to users who don't have permissions to the source content for the topic.
+- [Exclude topics by name](topic-experiences-discovery#exclude-topics-by-name). Topics explicitly excluded will not appear in topic experiences.
 
-we don't do anything to prevent people from creating topics. (people with create and edit perms)
+- Have knowledge managers remove topics in the topic center.
 
+Additionally, we recommend these best practices:
 
+- Set up a workflow for requesting changes. Knowledge managers or team or site owners should have a process by which they can request exclusion of topics or sites as new projects are started within your organization.
 
+- Be aware of the audience and the sensitivity of information when creating topic descriptions. These descriptions may be visible to users who don't have permissions to the source content for the topic.
 
-
+While you can change the permissions on individual topic pages to narrow access to a specific group of users, we don't recommend this approach because of the high degree of administrative effort required.
 
 ## See also
+
+[Configure Teams with three tiers of protection](../solutions/configure-teams-three-tiers-protection.md)
 
 [Plan topic experiences](plan-topic-experiences.md)
 
 [Set up topic experiences](set-up-topic-experiences.md)
-
