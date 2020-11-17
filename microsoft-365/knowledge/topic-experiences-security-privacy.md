@@ -16,14 +16,7 @@ description: "Learn how to plan for topic experiences security and privacy in Mi
 
 
 
-## Suggested topics
-## Topic pages
-## 
-## 
-## 
-## Manually created topics
-
-pages can contain local content or content that's separately ACL'd
+## Topic stages
 
 |Topic stage|Description|
 |:----------|:----------|
@@ -32,8 +25,19 @@ pages can contain local content or content that's separately ACL'd
 |Published|A knowledge manager or contributor has updated any of the AI-discovered items or added new items to the topic. Topic experiences continues to add to the topic in this stage, increasing its connections. Manually created topics start as published.|
 |Removed|A topic that has been removed from topic experience by a knowledge manager.|
 
+Mined topic (Suggestion – no human curation)
+As soon as a mined topic has a contribution, a page is created in the enterprise knowledge center.
+Permissions are to be read for everyone.
 
-workflow for requesting changes
+Only specific people can edit 
+Only people who can edit will see the Edit button
+
+
+
+
+## Who can see what
+
+pages can contain local content or content that's separately ACL'd
 
 Topic's discoverability is dictated by the resources associated with the topic. 
 
@@ -44,43 +48,13 @@ Manually added topics require permissions to be determined by the person adding 
 
 A mined topic starts with being able to be edited by those that can see it. If a person seeing the result wants to change any information on the topic, this is the curation for everyone who sees the topic.
 
-
-Topic Owner
-Mined topics do not have an owner. 
-
-
-[who can see topics in your organization](topic-experiences-knowledge-rules#change-who-can-see-topics-in-your-organization) determines who has access to the topic center. You can change topic page permissions for individual topics, but this is not recommended.
-
-
-
-
-Mined topic (Suggestion – no human curation)
-If I can read it, I can edit.
-As soon as a mined topic has a contribution, a page is created in the enterprise knowledge center.
-Permissions are to be read for everyone.
-
-Manually added / Mined topic + curation
-Contributor will be asked to set permissions for the visibility of the topic (read permissions).
-The edit permissions initially follow the read permissions.
-The contributor has the option to change the edit permissions, as well.
-
-
-
 Page is created in single knowledge center
 Default permissions is to be read and write for everyone
 The information curated on the page will be visible to everyone
 Suggestions continue to be security-protected
 
-Only specific people can edit 
-Only people who can edit will see the Edit button
 
-
-
-When a topic is first discovered, knowledge managers can see it in the topic center. Depending on the completeness and relevance of the topic, topic viewers may or may not see the topic presented in topic cards.
-
-Topic viewers can see published topics in the topic center. 
-
-
+[who can see topics in your organization](topic-experiences-knowledge-rules#change-who-can-see-topics-in-your-organization) determines who has access to the topic center. You can change topic page permissions for individual topics, but this is not recommended.
 
 
 The topic name is visible. Correct – AI discovered descriptions are protected by source document. The human edit is visible only if the topic page is visible
@@ -92,15 +66,13 @@ The information on the topic page that becomes visible to you when you have perm
 -	Name
 -	Description
 -	Pinned people
--	Suggested people you have permissions to source document
--	Pinned files/pages you have permissions to
--	Suggested files/pages you have permissions to
--	Suggested sites you have permissions to
--	Added sites you have permissions to
+-	Suggested people if they have permissions to the source document
+-	Pinned files and pages that they have permissions to
+-	Suggested files and pages that they have permissions to
+-	Suggested sites that they have permissions to
+-	Added sites that they have permissions to
 
 If AI associates a document to a Manually created topic and I don't have access to the document, you don't see the document
-
-we don't do anything to prevent people from creating topics. (people with create and edit perms)
 
 
 AI discovers
@@ -109,12 +81,20 @@ anyone can see the title
 people with page perms see all human-created content on the page
 they only see associated info if they have perms to it
 
+When a topic is first discovered, knowledge managers can see it in the topic center. Depending on the completeness and relevance of the topic, topic viewers may or may not see the topic presented in topic cards.
 
-|Item|Who can see it|
-|:---|:-------------|
-|Topic title|Everyone|
-|AI-generated description|People with permissions to description source|
-|Human-generated description|People with permissions to the topic page|
+Topic viewers can see published topics in the topic center. 
+
+
+## Best practices
+
+workflow for requesting changes
+
+
+we don't do anything to prevent people from creating topics. (people with create and edit perms)
+
+
+
 
 
 
