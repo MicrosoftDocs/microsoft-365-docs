@@ -135,7 +135,7 @@ For more information, see [Identify suspicious messages in Outlook.com and Outlo
 This section describes the policy settings that are only available in anti-phishing policies in Microsoft Defender for Office 365.
 
 > [!NOTE]
-> By default, the exclusive settings in Defender for Office 365 are not configured or turned on, even in the default policy. To take advantage of these features, you need to enable and configure them in the default anti-phishing policy, or create and configure custom anti-phishing policies.
+> The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) and mailbox intelligence for all recipients. However, the other available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) features and [advanced settings](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are not configured or enabled in the default policy. To enable all protection features, modify the default anti-phishing policy or create additional anti-phishing policies.
 
 ### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 
