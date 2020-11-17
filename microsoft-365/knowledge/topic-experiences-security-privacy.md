@@ -28,7 +28,7 @@ Each topic has a stage associated with it as described in the table below.
 |Removed|A topic that has been removed from topic experiences by a knowledge manager.|
 
 
-Permissions are to be read for everyone.
+
 
 Only specific people can edit 
 Only people who can edit will see the Edit button
@@ -37,6 +37,33 @@ Only people who can edit will see the Edit button
 
 
 ## Who can see what
+
+To see topics at all, a user must:
+
+- Have a Topic Experiences license
+- Be a [topic viewer](topic-experiences-knowledge-rules#change-who-can-see-topics-in-your-organization)
+
+These two things give a user view access to the topic center and allow them to see highlights and topic cards.
+
+Contributors additionally have [create and edit](topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) permissions. They can create and update topics.
+
+Topic viewers and contributors can see the list of confirmed and published topics in the topic center, but the topic details that a given person can see depends on the permissions that they have to the source material and on whether the topic has been manually edited.
+
+The following table describes what topic viewers and contributors can see based on their permissions.
+
+|Topic item|What people can see|
+|:---------|:------------------|
+|Topic name|Topic viewers and contributors can see the topic name of all topics in the topic center. Some topics may not be visible if they have a low relevancy to the user.|
+|Topic description|AI-generated descriptions are visible only to people who have permissions to the source content. Manually entered or updated descriptions are visible to all topic viewers and contributors.|
+|People|Pinned people are visible to all viewers and contributors. Suggested people are only visible to people who have permissions to the source content.|
+|Files|Files are only visible to topic viewers and contributors who have permissions to the source content.|
+|Pages|Pages are only visible to topic viewers and contributors who have permissions to the source content.|
+|Sites|Sites are only visible to topic viewers and contributors who have permissions to the source content.|
+
+
+
+You can change topic page permissions for individual topics, but this is not recommended.
+
 
 pages can contain local content or content that's separately ACL'd
 
@@ -55,7 +82,6 @@ The information curated on the page will be visible to everyone
 Suggestions continue to be security-protected
 
 
-[who can see topics in your organization](topic-experiences-knowledge-rules#change-who-can-see-topics-in-your-organization) determines who has access to the topic center. You can change topic page permissions for individual topics, but this is not recommended.
 
 
 The topic name is visible. Correct – AI discovered descriptions are protected by source document. The human edit is visible only if the topic page is visible
@@ -63,15 +89,6 @@ The topic name is visible. Correct – AI discovered descriptions are protected 
 
 Suggested people are protected by the source documents. Pinned people will always be visible.
 
-The information on the topic page that becomes visible to you when you have permissions to the topic page:
--	Name
--	Description
--	Pinned people
--	Suggested people if they have permissions to the source document
--	Pinned files and pages that they have permissions to
--	Suggested files and pages that they have permissions to
--	Suggested sites that they have permissions to
--	Added sites that they have permissions to
 
 If AI associates a document to a Manually created topic and I don't have access to the document, you don't see the document
 
@@ -91,6 +108,13 @@ Topic viewers can see published topics in the topic center.
 
 workflow for requesting changes
 
+[Select SharePoint topic sources](topic-experiences-discovery#select-sharepoint-topic-sources)
+
+[Exclude topics by name](topic-experiences-discovery#exclude-topics-by-name)
+
+have knowledge managers remove topics in the topic center.
+
+be aware of the audience and the sensitivity of information when creating topic descriptions. These descriptions may be widely visible to users who don't have permissions to the source content for the topic.
 
 we don't do anything to prevent people from creating topics. (people with create and edit perms)
 
