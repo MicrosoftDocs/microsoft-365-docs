@@ -184,7 +184,7 @@ Note that these are the same settings that are available in [anti-spam policy se
 
 ****
 
-|Security feature name|SDefault|Standard|Strict|Comment|
+|Security feature name|Default|Standard|Strict|Comment|
 |---|---|---|---|---|
 |**Enable anti-spoofing protection** <p> _EnableAntispoofEnforcement_|Off <p> `$False`|On <p> `$true`|On <p> `$true`||
 |**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|Off <p> `$False`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
