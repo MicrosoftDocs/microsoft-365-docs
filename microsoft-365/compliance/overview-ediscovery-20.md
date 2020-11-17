@@ -39,7 +39,7 @@ The built-in workflow of Advanced eDiscovery aligns with the eDiscovery process 
 
 At a high level, here's how Advanced eDiscovery supports the EDRM workflow:
 
-- **Identification.** After you identify potential persons of interest in an investigation, you can add them as custodians (also called *data custodians*, because they may possess information that's relevant to the investigation) to an Advanced eDiscovery case. After users are added as custodians, it's easy to preserve, collect, and review custodian documents.
+- **Identification.** After you identify potential persons of interest in an investigation, you can add them as custodians (also called *data custodians*, because they may possess information that's relevant to the case) to an Advanced eDiscovery case. After you identify custodians and add them to a case, you can preserve, collect, and review associated custodial data.
 
 - **Preservation.** To preserve and protect data that's relevant to an investigation, Advanced eDiscovery lets you place a legal hold on the data sources associated with the custodians in a case. You can also place non-custodial data on hold. Advanced eDiscovery also has a built-in communications workflow so you can send legal hold notifications to custodians and track their acknowledgments.
 
