@@ -186,8 +186,8 @@ Note that these are the same settings that are available in [anti-spam policy se
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|---|---|---|---|
-|**Enable anti-spoofing protection** <p> _EnableAntispoofEnforcement_|Off <p> `$False`|On <p> `$true`|On <p> `$true`||
-|**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|Off <p> `$False`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
+|**Enable anti-spoofing protection** <p> _EnableAntispoofEnforcement_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
+|**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
 |**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
 |
 
