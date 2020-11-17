@@ -1,0 +1,17 @@
+- name: Microsoft 365 small business training
+  href: index.yml
+  items: 
+    - name: Get started
+      items: 
+        - name: What is Microsoft 365
+          href: what-is-microsoft-365.md
+        - name: Overview of setup
+          href: setup-overview.md
+        - name: Choose a subscription
+          href: setup/plan-your-setup.md
+    - name: Cloud setup
+      items:
+        - name: Explore the Setup page and wizard
+          href: setup/o365-setup-wizard-and-setup-page.md
+        - name: Secure Windows 10 computers
+          href: ../business/secure-win-10-pcs.md
