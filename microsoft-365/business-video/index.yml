@@ -1,0 +1,108 @@
+### YamlMime:Hub
+
+title: Microsoft 365 small business training # < 60 chars
+summary: Explore training videos for working in the Microsoft 365 admin center.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 small business training # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Set up and manage Microsoft 365 in the Microsoft 365 admin center. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: sirkkuw #Required; your GitHub user alias, with correct capitalization.
+  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  ms.date: 11/08/2019 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+
+
+# productDirectory section (optional)
+productDirectory:
+  title: Set up and manage Microsoft 365 for a small business # < 60 chars (optional)
+  summary: Set up your subscription, email, add users, and install apps. # < 160 chars (optional)
+  items:
+    # Card
+    - title: Get started
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+      summary: Learn and plan for the cloud.
+      url: setup/index.yml
+    # Card
+    - title: Cloud setup
+      imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
+      summary: Sign up, add users, add a domain...
+      url: setup/migrate-email-and-contacts-admin.md
+    # Card
+    - title: Device setup
+      imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
+      summary:  Upgrade Windows, install Office apps...
+      url: setup/install-applications.md
+    # Card
+    - title: Mobile
+      imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
+      summary: Get Office apps on your phone.
+      url: https://support.microsoft.com/training
+    # Card
+    - title: Collaboration
+      imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
+      summary: Help users in your organization learn how to store and share files and use Office apps.
+      url: https://support.microsoft.com/training
+    # Card
+    - title: Cloud storage.
+      imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
+      summary: Store files in Teams, OneDrive, or SharePoint.
+      url: https://support.microsoft.com/training
+    # Card
+    - title: Business voice
+      imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+      summary: Set up a phone, audio conferencing, and a phone menu.
+      url: https://support.microsoft.com/training
+    # Card
+    - title: Productivity apps
+      imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
+      summary: Learn about Bookings, Lists, Tasks, and Forms.
+      url: https://support.microsoft.com/training
+    # Card
+    - title: Manage services
+      imageSrc: https://docs.microsoft.com/office/media/icons/settings-blue.svg
+      summary: Reset passwords, view your bill...
+      url: https://support.microsoft.com/training
+    # Card
+    - title: Manage devices
+      imageSrc: https://docs.microsoft.com/office/media/icons/devices-2-blue.svg
+      summary: Set up policies for user devices.
+      url: https://support.microsoft.com/training
+    # Card
+    - title: Security and compliance
+      imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+      summary: Set up MFA, protect from threats, and set up compliance features.
+      url: https://support.microsoft.com/training
+    # Card
+    - title: Support
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary: Get support or assistance.
+      url: https://support.microsoft.com/training
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Learn more # < 60 chars (optional)
+      summary: Switch from Google Workspace, learn to use Office apps and the Microsoft 365 admin center. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Learn about Office
+          summary: Learn how to use Word, Excel, PowerPoint and other Office apps. 
+          url: https://support.microsoft.com/training
+        # Card
+        - title: Switch from Google Workspace
+          summary: Find out how to switch to Microsoft 365 for business. 
+          url: https://support.microsoft.com/office/cff9f9fb-956e-4cb9-8b64-d7ebc1911123
+        # Card
+        - title: Microsoft 365 administration
+          summary: Learn how to manage your subscription in the Microsoft 365 admin center.
+          url: admin/index.yml
+        
