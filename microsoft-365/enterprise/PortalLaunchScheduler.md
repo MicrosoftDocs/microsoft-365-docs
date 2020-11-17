@@ -21,81 +21,117 @@ description: "This article describes how you can launch your portal using the Po
 
 # Launch your portal using the Portal Launch Scheduler
 
-You can launch your portal using the Portal Launch Scheduler by first validating the tenant admin's ability to setup a waves for a new portal. Then the admin can validate a redirection of requests, based on the existence of a user in the active waves.
+A portal is a SharePoint site on your intranet that has a large number of site viewers who consume content on the site. Launching your portal in waves is an important part of ensuring users have a smooth and performant experience accessing a new SharePoint Online portal. 
 
-For more information about launching a successful portal, follow the basic principles, practices, and recommendations detailed in the [Creating, launching and maintaining a healthy portal](https://go.microsoft.com/fwlink/?linkid=2105838). 
+Launching in waves is a key way to roll-out your portal, as detailed in [Planning your portal launch roll-out plan in SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). The Portal Launch Scheduler is designed to help you follow a wave / phased roll-out approach by managing the redirects for the new portal. During each of the waves, you can gather user feedback and monitor performance during each wave of deployment. This has the advantage of slowly introducing the portal, giving you the option to pause and resolve issues before proceeding with the next wave, and ultimately ensuring a positive experience for your users. 
 
-## App setup
-1. Uninstall if there an existing `Microsoft.Online.SharePoint.PowerShell` from your machine through the control panel.
-2. On PowerShell pass `Install-Module -Name Microsoft.Online.SharePoint.PowerShell`.
+There are two types of redirection: 
+- bidirectional: launch a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal 
+- temporary page redirection: launch a new modern SharePoint Online portal with no existing SharePoint portal
 
-## Connect to SharePoint Online
-1. Open the [SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) in Windows.
-2. Connect to your tenant as an admin.
-   - `Connect-SPOService -Url "https://*-admin.sharepoint.com" -Credential "username”`
-3.	Supply your password when prompted.
+The portal launch scheduler is only available to launch modern SharePoint Online portals, like communication sites and modern team sites. Launches must be scheduled at least 7 days in advance. The number of waves required is determined by the expected number of users. Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page on the portal is healthy. At the end of the portal launch, all users with permissions to the site will be able to access the new site. 
 
-## Command to get an existing setup
+For more information about launching a successful portal, follow the basic principles, practices, and recommendations detailed in [Creating, launching and maintaining a healthy portal](https://docs.microsoft.com/sharepoint/portal-health). 
 
-To view existing portal launch configurations:
+> [!NOTE]
+> This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans.
 
-1. Pass `Get-SPOPortalLaunchWaves  -LaunchSiteUrl  https://*.sharepoint.com/sites/newsite`.
-2. Pass the additional parameter `-DisplayFormat Raw` if you wish to see the wave collection formatted as a raw input format.
+## App setup and connecting to SharePoint Online
+1. [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
-## Commands for bi-directional redirection
+    > [!NOTE]
+    > If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell." <br>On the Download Center page, select your language and then click the Download button. You'll be asked to choose between downloading a x64 and x86 .msi file. Download the x64 file if you're running the 64-bit version of Windows or the x86 file if you're running the 32-bit version. If you don't know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system). After the file downloads, run it and follow the steps in the Setup Wizard.
 
-To migrate old site users to the new site in a staged manner:
+2. Connect to SharePoint as a [global admin or SharePoint admin](/sharepoint/sharepoint-admin-role) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-1. Create Portal launch waves.
-   - This is only applicable in the early release test phase.
-   - To test the impact of the change immediately, make sure the first wave `LaunchDateUtc` is set to the current date. If you do not supply this flag, you get an error message. This error happens because launches in production must be scheduled at least 7 days in advance.
 
-  `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+## View any existing portal launch setups
 
-2. Complete validation.
-  - It can take up to 5 minutes for the redirection to complete its configuration across the service, so please wait before continuing.
-  - If you login with the user specified as `WaveOverrideUsers`, then nothing changes. You should be staying at the site you navigated to.
-  - Login with a user who is part of *Viewers SG1*.
-    - Navigate to the old site and you should be redirected to the new site.
-    - Navigate to the new site and you should be stay on the new site.
-    - Log with user in *Viewers SG2* and navigate to the old site and stay on the old site.
-    - Navigate to the new site and you should be redirected to the old site.
+To see if there are existing portal launch configurations:
 
-3. Pause Portal launch.
-  - If you need to pause the launch waves, you can pause them for "x" number of days. Setting the `Status` flag to pause prevents all upcoming wave progressions. 
-  - `Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - This validates that all users are redirected to the old site.
+   ```PowerShell
+   Get-SPOPortalLaunchWaves -LaunchSiteUrl <object> -DisplayFormat <object>
+   ```
 
-4. Restart the portal launch progression. 
-  - `Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - Validate that the redirection is now restored.
+## Schedule a portal launch on the site
 
-5. Delete a portal launch setup.
-  - `Remove-SPOPortalLaunchWaves -LaunchSiteUrl https://*.sharepoint.com/sites/NewSite`.
-  - Validate that no redirection happens for all users.
+The number of waves required depends on your expected launch size. 
+- Less than 10k users: 1 wave
+- 10k to 30k users: 3 waves 
+- 30k+ to 100k users: 5 waves
+- More than 100k users: 5 waves and contact your Microsoft account team
 
-## Commands for redirection to temporary page
+### Steps for bi-directional redirection
 
-Follow these steps if you have no previous site and you want to omit users not in the wave from landing on the new portal page.
+Bidirectional redirection involves launching a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal. Users in active waves will be redirected to the new site regardless of whether they navigate to the old or new site. Users in a non-launched wave that try to access the new site will be redirected back to the old site until their wave is launched. Should you have administrators or owners that need access to the old and new sites without being redirected, ensure they are listed using the `WaveOverrideUsers` parameter. 
 
-To create a temporary page in any of the sites:
+To migrate users from an existing SharePoint site to a new SharePoint site in a staged manner:
 
+1. Run the following command to designate portal launch waves.
+   
+   ```PowerShell
+    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+    ```
+
+Example:
+   ```PowerShell
+   New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType Bidirectional -RedirectUrl "https://contoso.sharepoint.com/teams/oldsite" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
+[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   ```
+
+2. Complete validation. It can take 5-10 minutes for the redirection to complete its configuration across the service. 
+
+### Steps for redirection to temporary page
+
+Temporary page redirection should be used when no existing SharePoint portal exists. Users are directed to a new modern SharePoint Online portal in a staged manner. If a user is in a wave that has not been launched, they will be redirected to a temporary page (any URL). 
+
+1. Run the following command to designate portal launch waves.
+   
+      ```PowerShell
+    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+    ```
+
+Example:
+   ```PowerShell
+   New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType ToTemporaryPage -RedirectUrl "https://portal.contoso.com/UnderConstruction.aspx" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
+[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   ```
+
+2. Complete validation. It can take 5-10 minutes for the redirection to complete its configuration across the service. 
+   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+
+## Pause or restart a portal launch on the site
+
+1. To pause a portal launch in progress and temporarily prevent upcoming wave progressions from occurring, run the following command:
+
+   ```PowerShell
+   Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl <object>
+   ```
+2. Validate that all users are redirected to the old site. 
+
+3. To restart a portal launch that's been paused, run the following command:
+
+   ```PowerShell
+   Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl <object>
+   ```
+   
+4. Validate that the redirection is now restored. 
+
+## Delete a portal launch on the site
 1. Create a Portal launch Wave.
-   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+  - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
 
-2. Complete validation.
+2. Run the following command to delete a portal launch scheduled or in progress for a site.
 
-  - Wait five minutes before continuing, as the action can take up to five minutes to complete.
-  - Log with the user who is part of *Viewers SG1* and:
-     - Navigate to the new site, and you should be stay on the new site.
-     - Navigate to the temp page, and you should be stay on the temp page.
-  - Log with the user who is part of *Viewers SG2* and:
-     - Navigate to the new site, and you should be redirected to the temp page.
-     - Navigate to the temp page, and you should stay on the temp page.
+   ```PowerShell
+   Remove-SPOPortalLaunchWaves -LaunchSiteUrl <object>
+   ```
 
-3. Delete a portal launch setup.
-  - `Remove-SPOPortalLaunchWaves - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - Validate that no redirection happens for all users.
+3. Validate that no redirection happens for all users.
 
 ## Learn more
 [Planning your portal launch roll-out plan in SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
