@@ -47,7 +47,7 @@ productDirectory:
     # Card
     - title: Collaboration
       imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
-      summary: Help users in your organization learn how to store and share files and use Office apps.
+      summary: Use Outlook, Groups, Teams....
       url: https://support.microsoft.com/training
     # Card
     - title: Cloud storage.
@@ -62,7 +62,7 @@ productDirectory:
     # Card
     - title: Productivity apps
       imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
-      summary: Learn about Bookings, Lists, Tasks, and Forms.
+      summary: Learn about Bookings, Lists, Tasks, Forms...
       url: https://support.microsoft.com/training
     # Card
     - title: Manage services
