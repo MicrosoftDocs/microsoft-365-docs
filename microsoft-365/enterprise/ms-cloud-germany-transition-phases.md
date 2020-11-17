@@ -20,7 +20,7 @@ ms.custom:
 description: "Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Migration phases actions and impacts
+# Migration phases actions and impacts 
 
 Tenant migrations from Microsoft Cloud Deutschland to the Germany region of Microsoft’s Office 365 services are executed as a set of configured actions for each workload that ensure critical data and experiences are migrated to the Office 365 services. After your tenant is added to the migration queue, each workload migration will complete as a set of steps executed on the backend service and some may require actions by the admin (or user) or may impact usage for the phases executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized).
 

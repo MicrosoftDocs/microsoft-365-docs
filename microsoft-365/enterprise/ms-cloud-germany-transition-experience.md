@@ -21,7 +21,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Summary: Understand the experience of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Customer experience during the migration to Office 365 services in the new German datacenter regions
+# Customer experience during the migration to Office 365 services in the new German datacenter regions 
 
 Tenant migrations are designed to have minimal impact to administrators and users. However, there are considerations for each workload. Please review the following sections to have a better understanding of the migration experience for the workloads.
 

@@ -20,7 +20,7 @@ ms.custom:
 description: "Summary: Additional pre-work information when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Additional pre-work information for the migration from Microsoft Cloud Deutschland
+# Additional pre-work information for the migration from Microsoft Cloud Deutschland 
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|

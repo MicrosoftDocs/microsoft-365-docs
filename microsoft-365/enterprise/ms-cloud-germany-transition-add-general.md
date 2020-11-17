@@ -20,7 +20,7 @@ ms.custom:
 description: "Summary: Additional general information on services when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Additional general information for the migration from Microsoft Cloud Deutschland
+# Additional general information for the migration from Microsoft Cloud Deutschland 
 
 The following sections provide additional information on services, pre-work considerations, and customer experience.
 
