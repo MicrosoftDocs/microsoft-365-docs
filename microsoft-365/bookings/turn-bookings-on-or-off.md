@@ -22,7 +22,7 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 1. Sign in to the Microsoft 365 admin center as a global admin.
 
-2. In the admin center, go to **Settings** \> **Settings** and select **Bookings**.
+2. In the admin center, go to **Settings** \> **Org Settings** and select **Bookings**.
 
 3. Select the checkbox for **Allow your organization to use Bookings** to enable or disable Bookings for your organization.
 
