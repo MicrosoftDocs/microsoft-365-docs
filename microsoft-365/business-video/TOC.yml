@@ -8,10 +8,16 @@
         - name: Overview of setup
           href: setup-overview.md
         - name: Choose a subscription
-          href: setup/plan-your-setup.md
+          href: Choose-subscription.md
     - name: Cloud setup
       items:
-        - name: Explore the Setup page and wizard
-          href: setup/o365-setup-wizard-and-setup-page.md
-        - name: Secure Windows 10 computers
-          href: ../business/secure-win-10-pcs.md
+        - name: Sign up for a subscription
+          href: sign-up.md
+        - name: Set up the service
+          href: set-up.md
+        - name: Secure Windows 10 PCs
+          href: secure-win10-pcs.md
+        - name: Create a GoDaddy website
+          href: create-web-site.md
+    - name: Device setup
+      items:      

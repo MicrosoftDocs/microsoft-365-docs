@@ -28,12 +28,12 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
       summary: Learn and plan for the cloud.
-      url: setup/index.yml
+      url: what-is-microsoft-365.md
     # Card
     - title: Cloud setup
       imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
       summary: Sign up, add users, add a domain...
-      url: setup/migrate-email-and-contacts-admin.md
+      url: sign-up.md
     # Card
     - title: Device setup
       imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg

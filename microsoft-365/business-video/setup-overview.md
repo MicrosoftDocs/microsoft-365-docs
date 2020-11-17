@@ -20,7 +20,9 @@ search.appverid:
 description: "Learn what you need on  hand to set up Microsoft 365 Business Premium."
 ---
 
-# What is Microsoft 365 Business Premium
+# Overview Microsoft 365 Business Premium setup
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
 
 Congratulations on your decision to move your business to the cloud with Microsoft 365! Whether you have one person in your business or 20, doing a little planning will help you get the most out of Microsoft 365 Business Premium.
 
