@@ -419,8 +419,6 @@
           href: manage-microsoft-365-groups.md
         - name: Governance
           href: manage-microsoft-365-identity-governance.md
-        - name: Recover deleted items in a user mailbox
-          href: recover-deleted-items-in-a-mailbox.md
         - name: Directory synchronization
           items: 
             - name: View status
@@ -475,11 +473,11 @@
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 
-- name: Security
-  href: https://docs.microsoft.com/microsoft-365/security/
-
 - name: Compliance
-  href: https://docs.microsoft.com/microsoft-365/compliance/
+  href: ../compliance/index.yml
+
+- name: Security
+  href: ../security/index.yml
 
 - name: Cloud services
   items: 
@@ -579,7 +577,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: PowerShell community resources
           href: microsoft-365-powershell-community-resources.md
-    - name: Manage user accounts, licenses, and groups with PowerShell
+    - name: Manage user accounts, passwords, licenses, and groups with PowerShell
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items: 
         - name: User accounts
@@ -596,6 +594,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Block
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: Passwords
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: Licenses and services
           items: 
             - name: View licenses and services
@@ -617,7 +617,9 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Groups
           items: 
-            - name: Maintain group membership
+            - name: Manage security groups
+              href: manage-security-groups-with-microsoft-365-powershell.md
+            - name: Maintain security group membership
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
@@ -740,12 +742,6 @@
       href: contoso-info-protect.md
     - name: Security summary
       href: contoso-security-summary.md
-
-- name: Microsoft 365 compliance
-  href: ../compliance/index.yml
-
-- name: Microsoft 365 security
-  href: ../security/index.yml
 
 - name: Microsoft 365 architecture and solutions
   href: ../solutions/index.yml
