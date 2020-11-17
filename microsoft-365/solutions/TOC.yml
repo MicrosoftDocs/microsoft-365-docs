@@ -99,6 +99,21 @@
       items:
       - name: Teams architecture posters
         href: https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json  
+      - name: Deploy voice in Microsoft 365
+        items:
+        - name: Overview
+          href: deploy-voice.md
+        - name: Step 1. Select your voice solution 
+          href: https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        - name: Step 2 - Option A. Use Microsoft as your phone provider
+          href: https://docs.microsoft.com/en-us/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        - name: Step 2 - Option B. Use your own carrier with Direct Routing
+          href: https://docs.microsoft.com/en-us/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        - name: Step 3. Configure emergency calling
+          href: https://docs.microsoft.com/en-us/microsoftteams/what-are-emergency-locations-addresses-and-call-routing?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        - name: Case study for multi-national corporation 
+          href: https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        
       - name: Telephony solutions
         items: 
         - name: Choose your Teams voice solution 
