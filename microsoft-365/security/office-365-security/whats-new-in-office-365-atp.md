@@ -36,6 +36,10 @@ This article lists new features in the latest release of Microsoft Defender for 
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## November 2020 
+
+- Updated export limits in Review > Action Center > Remediation from Mail Submission and Action Log (Defender for Office 365 Plan 2)
+
 ## September/October 2020 
 
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)

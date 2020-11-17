@@ -196,6 +196,61 @@ If you click **View details table**, the report provides a near-real-time view o
 
 To get back to the reports view, click **View report**.
 
+## Mail latency report
+
+The **Mail latency report** shows you an aggregate view of the mail delivery and detonation latency experienced within your organization. Mail delivery times in the service are affected by a number of factors, and the absolute delivery time in seconds is often not a good indicator of success or a problem. A slow delivery time on one day might be considered an average delivery time on another day, or vice-versa. The **Mail latency report** tries to qualify message delivery based on statistical data about the observed delivery times of other messages:
+
+- **50th percentile**: This is the middle for message delivery times. You can consider this value as an average delivery time.
+- **90th percentile**: This indicates a high latency for message delivery. Only 10% of messages took longer than this value to deliver.
+- **99th percentile**: This indicates the highest latency for message delivery.
+
+Client side and network latency are not included.
+
+To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
+
+![Mail latency report widget in the Reports dashboard](../../media/mail-latency-report-widget.png)
+
+### Report view for the Mail latency report
+
+When you open the report, the **50th percentiles** tab is selected by default.
+
+By default, this view contains a chart that's configured with the following filters:
+
+- **Date**: The last 7 days
+- **Message View**:
+  - Detonated messages
+
+This chart shows messages organized into the following categories:
+
+- **Mail delivery latency**
+- **Detonation latency**
+
+When you hover over a category in the chart, you can see a breakdown of the latency in each category.
+
+![Mail latency report](../../media/mail-latency-report.png)
+
+If you click **Filter** in the report view, you can modify the results with the following filters:
+
+- All messages
+- Messages that contain attachments or URLs
+
+If you click the **90th percentiles** tab or the **99th percentiles** tab, the same default filters from the **50th percentiles** view are used.
+
+### Details table view for the Mail latency report
+
+The following information is shown in the details table view:
+
+- **Date**
+- **Percentiles**
+- **Message count**
+- **Overall latency**
+
+![Mail latency report details](../../media/mail-latency-report-details.png)
+
+The above shows that on November 14 the average latency experienced for all messages delivered and detonated was **108.033** seconds.
+
+The details table contains the same information on each tab.
+
 ## Threat protection status report
 
 The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
