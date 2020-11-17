@@ -345,6 +345,8 @@
           href: data-move-faq.md
         - name: Where customer data is stored
           href: o365-data-locations.md
+        - name: European Union data storage locations
+          href: eu-data-storage-locations.md
         - name: Microsoft Cloud Deutschland
           items: 
           - name: Overview
