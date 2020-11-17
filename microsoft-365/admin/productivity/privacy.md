@@ -75,14 +75,5 @@ To make the data that is collected for all reports anonymous, you must be a glob
 2. Select  **Reports**, and then choose to  **Display anonymous identifiers for user, group, and site names in Productivity Score and Usage Reports**. This setting is applied both to the usage reports and to the template app.
 3. Select  **Save changes**.
 
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Make user info anonymous for reports.":::
+:::image type="content" source="../../media/orgsettings_anonymous.png" alt-text="Make user info anonymous for reports.":::
 
-## Capability to opt out of People experiences
-
-When Productivity Score is generally available, you will also be able to opt out of the people experiences area of Productivity Score. If you opt out, no one from  organization will be able to view these metrics and your organization is removed from any calculations that involve communication, meetings, teamwork, content collaboration, and mobility.
-
-1. In the admin center, go to the  **Settings**  >  **Org Settings**, and under  **Services**  tab, choose  **Reports**.
-2. Select  **Reports**, and then un-check the box that says  **Allow Microsoft 365 usage data to be used for people experiences insights**. To understand how to modify data-sharing settings for Endpoint Analytics in the Intune configuration manager, click on **Learn More**.
-3. Select  **Save changes**.
-
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Org settings page where you can opt out from people experiences.":::
