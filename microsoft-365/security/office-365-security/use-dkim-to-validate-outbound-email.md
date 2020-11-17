@@ -306,7 +306,7 @@ In this example, the host name and domain contain the values to which the CNAME 
 ## Set up DKIM so that a third-party service can send, or spoof, email on behalf of your custom domain
 <a name="SetUp3rdPartyspoof"> </a>
 
-Some bulk email service providers, or software-as-a-service providers, let you set up DKIM keys for email that originates from their service. This requires coordination between yourself and the third-party in order to set up the necessary DNS records. Some third-party server can have it's own CNAME records with different selectors. No two organizations do it exactly the same way. Instead, the process depends entirely on the organization.
+Some bulk email service providers, or software-as-a-service providers, let you set up DKIM keys for email that originates from their service. This requires coordination between yourself and the third-party in order to set up the necessary DNS records. Some third-party servers can have their own CNAME records with different selectors. No two organizations do it exactly the same way. Instead, the process depends entirely on the organization.
 
 An example message showing a properly configured DKIM for contoso.com and bulkemailprovider.com might look like this:
 
