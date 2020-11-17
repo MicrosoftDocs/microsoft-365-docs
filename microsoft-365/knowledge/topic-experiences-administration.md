@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to change the name of the topic center in Microsoft 365."
 ---
 
