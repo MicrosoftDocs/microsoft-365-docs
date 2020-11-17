@@ -1,5 +1,5 @@
 ﻿---
-title: "European Union data storage locations"
+title: "Data locations for the European Union"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,13 +18,15 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Determine where your Microsoft 365 customer data is stored within the European Union"
 ---
 
-# European Union data storage locations
+# Data locations for the European Union
 
 When you use Microsoft 365 services, we start with the assumption that our enterprise customers would like to have their business data stored and processed close to home. Wherever possible, we do just that. To keep your data in datacenters nearest to you, we store your data based on the business location you provide when you create your tenant. To choose storage locations that are meaningful to your organization’s businesses, you may create as many tenants for your organization as you would like.  
 
 With Microsoft 365 you create amazing content and we protect and secure it. You can access, rectify, restrict the processing of, delete and export your data at any time and from any location. We encrypt it in transit and at rest. Additionally, through our ever-expanding network of datacenters across the globe, we automatically store it in regions close to where your busines is located wherever possible. 
 
-Your data is your business. Microsoft recognizes the importance of maintaining the privacy and confidentiality of your data. Your data belongs to you, and you can access, modify, or delete it at any time. Microsoft will not use your data without your consent and, when we have your consent, we use your data to provide only the services you have chosen. If you leave one of our services, we ensure your continued ownership of your data, following strict standards and processes to remove the data from our systems. 
+## Your data is your business
+
+Microsoft recognizes the importance of maintaining the privacy and confidentiality of your data. Your data belongs to you, and you can access, modify, or delete it at any time. Microsoft will not use your data without your consent and, when we have your consent, we use your data to provide only the services you have chosen. If you leave one of our services, we ensure your continued ownership of your data, following strict standards and processes to remove the data from our systems. 
 
 >[!Note]
 >Customer data (also referred to as “your data” or “your business data”) means all data, including text, sound, video or image files, and software that you provide to Microsoft or that’s provided on your behalf through your use of Microsoft enterprise online services, excluding Microsoft Professional Services. It includes customer content, which is the data you upload for storage or processing and apps you upload for distribution through a Microsoft enterprise cloud service. For example, customer content includes Exchange Online email and attachments, SharePoint Online site content, or instant messaging conversations. 
@@ -56,8 +58,6 @@ We have datacenters geos in Germany and France that allow you to store data in y
 | Whiteboard | European Union | European Union | European Union |
 | Forms | European Union | European Union | European Union |
 ||||| 
-
-Our datacenter geos in Germany and France allow you to store data in-country if your tenant is provisioned in those countries. Our European Union datacenters are located in Austria, Finland, France, Ireland, and the Netherlands.
 
 Core customer data consists of: 
 
@@ -91,6 +91,7 @@ If a temporary transfer is required, we will always employ state of the art encr
 <!--
 If you create a subscription today with a billing address in the EU, data for the following services will be stored in the EU. 
 
+Our datacenter geos in Germany and France allow you to store data in-country if your tenant is provisioned in those countries. Our European Union datacenters are located in Austria, Finland, France, Ireland, and the Netherlands.
 
 Whether the data is stored in a EU global geography datacenter or a datacenter geo will depend on which billing address you choose to use when you create the tenant and which services you use.  
 
