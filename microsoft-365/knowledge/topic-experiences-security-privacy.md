@@ -23,10 +23,7 @@ description: "Learn how to plan for topic experiences security and privacy in Mi
 ## 
 ## Manually created topics
 
-only knob is page perms
 pages can contain local content or content that's separately ACL'd
-page owner controls page perms
-if km is first to update page, then they're the owner
 
 |Topic stage|Description|
 |:----------|:----------|
@@ -42,36 +39,20 @@ Topic's discoverability is dictated by the resources associated with the topic.
 
 People with read permissions to the information from which the topic was discovered can discover the topic.
 
-
-Confirmed and Published topics
-A confirmed topic has been confirmed through feedback or KM (voted up).
-A published topic is also a confirmed topic, but it has human added updates (a topic page - curated)
-These topics show across all experiences.
-Manually added
-Creation entry points:
--	Knowledge center (Knowledge center.docx)
--	By adding a related topic to a topic where you have edit permissions (Knowledge-aware web part - Related Topics.pptx)
--	Through the topic picker (Entity picker - spec.pptx)
--	P2 – Search answer
-
 Manually added topics require permissions to be determined by the person adding the topic page. See New Topic.
 
 
 A mined topic starts with being able to be edited by those that can see it. If a person seeing the result wants to change any information on the topic, this is the curation for everyone who sees the topic.
-The person who makes the first contribution will be asked to set the permissions on the topic:
-1.	Encourage that the topic be available to everyone – enterprise topic
-a.	Topic is discoverable for everyone
-2.	Specific: Only specific people or groups can discover the topic – ACL on the page
 
 
 Topic Owner
-Mined topics do not have an owner. The person who confirms the topic or with the first curation becomes the owner of topic. They are set to the page owner.
-
-For manually added topics, the person who adds (creates) the topic will be the topic owner.
+Mined topics do not have an owner. 
 
 
-How did we get the right owner for the mined topic?
-The topic is only visible to people who have permissions to the files/pages.
+[who can see topics in your organization](topic-experiences-knowledge-rules#change-who-can-see-topics-in-your-organization) determines who has access to the topic center. You can change topic page permissions for individual topics, but this is not recommended.
+
+
+
 
 Mined topic (Suggestion – no human curation)
 If I can read it, I can edit.
@@ -85,35 +66,29 @@ The contributor has the option to change the edit permissions, as well.
 
 
 
-Anyone can edit
 Page is created in single knowledge center
 Default permissions is to be read and write for everyone
 The information curated on the page will be visible to everyone
 Suggestions continue to be security-protected
-Page permission can be changed if the information should not be for the tenant
 
 Only specific people can edit 
 Only people who can edit will see the Edit button
-Feedback mechanisms are available for feedback
+
+
+
+When a topic is first discovered, knowledge managers can see it in the topic center. Depending on the completeness and relevance of the topic, topic viewers may or may not see the topic presented in topic cards.
+
+Topic viewers can see published topics in the topic center. 
 
 
 
 
-Some open questions
--	Do we ever show just topic names and description but nothing else on a card?
-[cj] It's possible. The knowledge manager will be able to see such a topic, but quality filters may prevent this from showing to a normal end user. 
+The topic name is visible. Correct – AI discovered descriptions are protected by source document. The human edit is visible only if the topic page is visible
 
--	Can topics that have been published (as in, have a SP page) be seen by everyone with view access to the Topic center?
-[cj] Ultimately, the visibility will be dictated by the page. The default permissions for the page are the view access to topic center, so yes, that is the initial state. But, this is SP, so someone can change the permissions of the topic page.
 
--	Will the title always be visible? The description would be visible to everyone if it was human edited, but it might not be visible if it was not human edited and you don't have permission to the source doc?
-[cj] The topic name is visible. Correct – AI discovered descriptions are protected by source document. The human edit is visible only if the topic page is visible
+Suggested people are protected by the source documents. Pinned people will always be visible.
 
--	People on published topics are always visible to everyone with view access to the Topic center even if it was AI generated or manually created?
-[cj] Suggested people are protected by the source documents. Pinned people will always be visible.
-
--	Does this mean that if you add a description to a topic i didn't have access to the resources before, I now get to see the topic, description, people and resources due to the default behavior of manually edited topics being visible to all with admin permissions?
-[cj] The information on the topic page that becomes visible to you when you have permissions to the topic page:
+The information on the topic page that becomes visible to you when you have permissions to the topic page:
 -	Name
 -	Description
 -	Pinned people
@@ -123,18 +98,13 @@ Some open questions
 -	Suggested sites you have permissions to
 -	Added sites you have permissions to
 
-If AI associates a document to a Manually created topic and I don't have access to the document, what is my experience? Does this AI action take away my access?
-[cj] no, you still have permission to the manually created topic, you just don't see the document
+If AI associates a document to a Manually created topic and I don't have access to the document, you don't see the document
 
--	How are we ensuring that someone does not create a topic page for something not everyone should have access to? Or is this just an accepted risk?
-[cj] we don't do anything to prevent people from creating topics.
+we don't do anything to prevent people from creating topics. (people with create and edit perms)
 
 
 AI discovers
 anyone can see the title
-first person to edit sets page perms
-
-
 
 people with page perms see all human-created content on the page
 they only see associated info if they have perms to it
