@@ -18,15 +18,16 @@ description: "Learn how to plan for topic experiences security and privacy in Mi
 
 ## Topic stages
 
+Each topic has a stage associated with it as described in the table below.
+
 |Topic stage|Description|
 |:----------|:----------|
 |Suggested|AI has identified a topic that has supporting resources, connections, and properties.|
-|Confirmed|A knowledge manager has confirmed a suggested topic. No updates are made to any of the AI-discovered data.|
-|Published|A knowledge manager or contributor has updated any of the AI-discovered items or added new items to the topic. Topic experiences continues to add to the topic in this stage, increasing its connections. Manually created topics start as published.|
-|Removed|A topic that has been removed from topic experience by a knowledge manager.|
+|Confirmed|A knowledge manager has confirmed a suggested topic. No updates are made to the topic itself.|
+|Published|A knowledge manager or contributor has updated any of the AI-discovered items or added new items to the topic. Topic experiences continues to add to the topic in this stage, increasing its connections. In this stage, a page for the topic is created in the topic center. Manually created topics start as published.|
+|Removed|A topic that has been removed from topic experiences by a knowledge manager.|
 
-Mined topic (Suggestion – no human curation)
-As soon as a mined topic has a contribution, a page is created in the enterprise knowledge center.
+
 Permissions are to be read for everyone.
 
 Only specific people can edit 
