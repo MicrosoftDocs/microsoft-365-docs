@@ -63,7 +63,7 @@ Complete the following steps to add users to the eDiscovery Manager role group:
 
 3. On the eDiscovery Manager flyout page, click **Edit** next to the **eDiscovery Manager** section.
 
-4. On the **Choose eDiscovery Manager** page in the edit role group wizard, click **Choose Discovery Manager**.
+4. On the **Choose eDiscovery Manager** page in the edit role group wizard, click **Choose eDiscovery Manager**.
 
 5. Click **Add** then select the checkbox for all users you want to add to the role group.
 
