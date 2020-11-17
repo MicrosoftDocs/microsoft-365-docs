@@ -42,11 +42,11 @@ Only people who can edit will see the Edit button
 To see topics, a user must:
 
 - Have a Topic Experiences license
-- Be a [topic viewer](topic-experiences-knowledge-rules#change-who-can-see-topics-in-your-organization)
+- Be a [topic viewer](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization)
 
 These two things give a user view access to the topic center and allow them to see highlights and topic cards.
 
-Topic contributors additionally have [create and edit](topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) permissions. They can create and update topics.
+Topic contributors additionally have [create and edit](topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) permissions. They can create and update topics.
 
 Topic viewers and contributors can see the list of confirmed and published topics in the topic center, but the topic details that a given person can see depends on the permissions that they have to the source material and on whether the topic has been manually edited.
 
@@ -111,9 +111,9 @@ We recommend that you use these tools to ensure that your content permissions ar
 
 If there are topics that you want to exclude entirely from the knowledge network, you can also:
 
-- [Exclude sensitive SharePoint sites from topic discovery](topic-experiences-discovery#select-sharepoint-topic-sources). Content in these sites will not appear in topic experiences.
+- [Exclude sensitive SharePoint sites from topic discovery](topic-experiences-discovery#select-sharepoint-topic-sources.md). Content in these sites will not appear in topic experiences.
 
-- [Exclude topics by name](topic-experiences-discovery#exclude-topics-by-name). Topics explicitly excluded will not appear in topic experiences.
+- [Exclude topics by name](topic-experiences-discovery#exclude-topics-by-name.md). Topics explicitly excluded will not appear in topic experiences.
 
 - Have knowledge managers remove topics in the topic center.
 
