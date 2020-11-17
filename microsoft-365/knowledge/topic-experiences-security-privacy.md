@@ -111,9 +111,9 @@ We recommend that you use these tools to ensure that your content permissions ar
 
 If there are topics that you want to exclude entirely from the knowledge network, you can also:
 
-- [Exclude sensitive SharePoint sites from topic discovery](topic-experiences-discovery#select-sharepoint-topic-sources.md). Content in these sites will not appear in topic experiences.
+- [Exclude sensitive SharePoint sites from topic discovery](topic-experiences-discovery.md#select-sharepoint-topic-sources). Content in these sites will not appear in topic experiences.
 
-- [Exclude topics by name](topic-experiences-discovery#exclude-topics-by-name.md). Topics explicitly excluded will not appear in topic experiences.
+- [Exclude topics by name](topic-experiences-discovery.md#exclude-topics-by-name). Topics explicitly excluded will not appear in topic experiences.
 
 - Have knowledge managers remove topics in the topic center.
 
