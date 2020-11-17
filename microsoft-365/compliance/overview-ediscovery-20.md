@@ -43,7 +43,7 @@ At a high level, here's how Advanced eDiscovery supports the EDRM workflow:
 
 - **Preservation.** To preserve and protect data that's relevant to an investigation, Advanced eDiscovery lets you place a legal hold on the data sources associated with the custodians in a case. You can also place non-custodial data on hold (usually shared group resources such as SharePoint sites or shared Teams channels). Advanced eDiscovery also has a built-in communications workflow so you can send legal hold notifications to custodians and track their acknowledgments.
 
-- **Collection.** After you identified (and optionally preserved) the data sources relevant to the investigation, you can use the built-in search tool in Advanced eDiscovery to search and collect live data from the custodial data sources (and non-custodial data sources, if applicable) that may be relevant to the case.
+- **Collection.** After you have identified (and optionally preserved) the data sources relevant to the investigation, you can use the built-in search tool in Advanced eDiscovery to search and collect live data from the custodial data sources (and non-custodial data sources, if applicable) that may be relevant to the case.
 
 - **Processing.** After you've collected all data relevant to the case, the next step is to process it for further review and analysis. In Advanced eDiscovery, the in-place data you identified in the collection phase is copied to an Azure Storage location (called a *review set*), which provides you with a static view of the case data.
 
