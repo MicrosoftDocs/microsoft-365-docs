@@ -66,7 +66,7 @@ productDirectory:
       url: https://support.microsoft.com/training
     # Card
     - title: Manage services
-      imageSrc: https://docs.microsoft.com/office/media/icons/settings-blue.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
       summary: Reset passwords, view your bill...
       url: https://support.microsoft.com/training
     # Card
@@ -81,7 +81,7 @@ productDirectory:
       url: https://support.microsoft.com/training
     # Card
     - title: Support
-      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
       summary: Get support or assistance.
       url: https://support.microsoft.com/training
 
