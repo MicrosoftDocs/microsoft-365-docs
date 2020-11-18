@@ -40,7 +40,7 @@ When you use Microsoft 365 services, we start with the assumption that our enter
 
 We have datacenters geos in Germany and France that allow you to store data in your country if your business is located there. Our regional European Union data centers are located in Austria, Finland, France, Ireland, and the Netherlands. Your data for the following services will be hosted in the following locations based on which billing address you choose: 
 
-| Service name | Location for tenants created with a billing address in Germany | Location for tenants created with a billing address in France | Location for tenants created with a billing address in the EU outside of Germany and France |
+| Service name | Location for tenants created with a billing address in Germany | Location for tenants created with a billing address in France | Location for tenants created with a billing address in all other EU countries |
 |:-------|:-----|:-------|:-------|
 | Exchange Online | Germany | France | European Union |
 | OneDrive for Business | Germany | France | European Union |
