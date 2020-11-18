@@ -87,7 +87,9 @@ If there are topics that you want to exclude entirely from the knowledge network
 
 Additionally, we recommend these best practices:
 
-- Set up a workflow for requesting changes. Knowledge managers or team or site owners should have a process by which they can request exclusion of topics or sites as new projects are started within your organization.
+- Recruit knowledge managers from different areas of your organization. Having knowledge managers with a variety of expertise - and access to the underlying content used by AI - can help you curate the most useful knowledge for your users and remove sensitive information if found.
+
+- Set up a workflow for requesting changes. Knowledge managers or team or site owners should have a process by which they can request exclusion of topics or sites as new projects are started within your organization or if they find content with inappropriate permissions settings.
 
 - Be aware of the audience and the sensitivity of information when creating topic descriptions. These descriptions may be visible to users who don't have permissions to the source content for the topic.
 
