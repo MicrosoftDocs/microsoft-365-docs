@@ -143,7 +143,7 @@ Additional security benefits come with an Microsoft Defender for Office 365 subs
 
 > [!IMPORTANT]
 >
-> - The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) for all recipients. However, the available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) settings for specific senders or sender domains are not configured or enabled in the default policy. To enable impersonation protection, configure the default policy or create additional anti-phishing policies in Defender for Office 365.
+> - The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) and mailbox intelligence for all recipients. However, the other available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) features and [advanced settings](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are not configured or enabled in the default policy. To enable all protection features, modify the default anti-phishing policy or create additional anti-phishing policies.
 >
 > - There are no default Safe Links policies or Safe Attachments policies that automatically protect all recipients in the organization. To get the protections, you need to create at least one Safe Links Policy and Safe Attachments policy.
 >
@@ -184,11 +184,11 @@ Note that these are the same settings that are available in [anti-spam policy se
 
 ****
 
-|Security feature name|Standard|Strict|Comment|
-|---|---|---|---|
-|**Enable anti-spoofing protection** <p> _EnableAntispoofEnforcement_|On <p> `$true`|On <p> `$true`||
-|**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
-|**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
+|Security feature name|Default|Standard|Strict|Comment|
+|---|---|---|---|---|
+|**Enable anti-spoofing protection** <p> _EnableAntispoofEnforcement_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
+|**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
+|**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
 |
 
 #### Advanced settings in anti-phishing policies in Microsoft Defender for Office 365
