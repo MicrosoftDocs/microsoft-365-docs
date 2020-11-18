@@ -43,9 +43,11 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
 
-  - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+  - 30 days for messages quarantined by anti-spam policies (spam, phishing, and bulk email). This is the default and maximum value. To configure (lower) this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
-  - Messages that contain malware: 15 days.
+  - 15 days for messages that contain malware.
+
+  - 15 days for files quarantined by ATP for SharePoint, OneDrive, and Microsoft Teams in Defender for Office 365.
 
   When a message expires from quarantine, you can't recover it.
 
