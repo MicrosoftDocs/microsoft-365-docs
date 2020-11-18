@@ -39,7 +39,7 @@ Read through this important information before you contact [Microsoft 365 suppor
 
 The following table explains what you can expect when a paid Microsoft 365 for business subscription expires.
 
-| **Active**                                                             | **Expired <br/>(30 days\*)**                                                | **Disabled <br/>(90 days\*)**                                               | **Deleted**                                                                         |
+| Active | Expired <br/>(30 days\*) | Disabled <br/>(90 days\*) | Deleted |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Data accessible to all*                                               | *Data accessible to all*                                                     | *Data accessible to admins only*                                             | **Data deleted<br/>Azure Active Directory is removed, if not in use by other services** |
 | Users have normal access to Microsoft 365, files, and applications   | Users have normal access to Microsoft 365, files, and applications              | Users can't access Microsoft 365, files, or applications                        | Users can't access Microsoft 365, files, or applications                                     |
