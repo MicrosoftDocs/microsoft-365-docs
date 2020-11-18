@@ -14,11 +14,13 @@ description: "Learn how to plan for topic experiences security and privacy in Mi
 
 # Topic experiences security and privacy
 
-Topic experiences uses existing content security features in Microsoft 365, along with topic management controls, to control what AI-generated content is shown to users in your organization. It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and topic experiences admin settings that determine what a given user can see in topics.
+Topic experiences uses existing content security features in Microsoft 365, along with topic management controls, to control what AI-generated content is shown to users in your organization. It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and topic experiences admin settings that determine what a given user can see in topics. <Efren's note:  These two things might be worthy of a highlight>
 
 This article describes how topic experiences works from a security perspective and the options that knowledge administrators and knowledge managers have to control topic visibility. Read this article as part of your [planning for topic experiences](plan-topic-experiences.md).
 
 You should be familiar with [Topic experiences](knowledge-management-overview.md), the [topic center](topic-center-overview.md), and how to [work with topics in the topic center](work-with-topics.md) before you read this article.
+
+<Efren's note: Might be worth adding an important note here about what seems to be a big concern that Topic experiences will not allow users to see information they don't already have permissions to.  I know you dive deeper in the Best Practices section, but maybe it is good to highlight it here or there.> 
 
 ## What users can see in topics
 
