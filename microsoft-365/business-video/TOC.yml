@@ -94,7 +94,7 @@
         - name: What is an admin
           href: what-is-admin.md
         - name: Overview of the admin center
-          href: admin-overview.md
+          href: admin-center-overview.md
         - name: View, download, or print your bill
           href: view-bill.md
         - name: Update your payment method

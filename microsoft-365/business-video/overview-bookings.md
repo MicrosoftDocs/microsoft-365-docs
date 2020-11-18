@@ -24,7 +24,7 @@ description: "Learn about Microsoft Bookings."
 
 # Overview of Microsoft Bookings
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1qP?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
 Microsoft Bookings is an online and mobile app for small businesses who provide services to customers on an appointment basis. Examples of businesses include hair salons, dental offices, spas, law firms, financial services providers, consultants, and auto shops.
 
