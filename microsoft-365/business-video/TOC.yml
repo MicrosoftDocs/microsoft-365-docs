@@ -66,9 +66,7 @@
         - name: Schedule a meeting with guests
           href: schedule-guest-meeting.md
         - name: Join a meeting with guests
-          href: join-guest-meeting.md
-        - name: Business voice
-          href: business-voice.md   
+          href: join-guest-meeting.md   
     - name: Cloud storage
       items:
         - name: Sharing overview
@@ -78,4 +76,46 @@
         - name: Securely share files externally
           href: securely-share-files-externally.md
         - name: Easily share files externally
-          href: share-files-externally.md                
+          href: share-files-externally.md  
+    - name: Business Voice
+      items:
+        - name: Overview of Business Voice
+          href: business-voice.md    
+        - name: Buy Business Voice add-on
+          href: buy-business-voice.md    
+    - name: Productivity apps
+      items:
+        - name: Overview of Bookings
+          href: overview-bookings.md
+        - name: Plan an event
+          href: plan-event.md   
+    - name: Manage services
+      items: 
+        - name: What is an admin
+          href: what-is-admin.md
+        - name: Overview of the admin center
+          href: admin-overview.md
+        - name: View, download, or print your bill
+          href: view-bill.md
+        - name: Update your payment method
+          href: update-payment.md 
+        - name: Reset user passwords
+          href: reset-user-passwords.md
+        - name: Set up self-service password reset
+          href: set-up-self-serve-password-reset.md
+        - name: Add a user
+          href: add-user.md  
+        - name: Delete a user
+          href: delete-user.md 
+        - name: Add another admin
+          href: add-admin.md
+        - name: Change a user name or email
+          href: change-user-name-email.md 
+        - name: Move users to a different subscription
+          href: change-subscription.md  
+        - name: Create a company-wide signature
+          href: company-wide-signature.md 
+        - name: Act on usage report
+          href: act-on-report.md
+        - name: Add another domain
+          href: add-domain.md          
