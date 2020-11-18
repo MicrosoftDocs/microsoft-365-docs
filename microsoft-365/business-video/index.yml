@@ -48,7 +48,7 @@ productDirectory:
     - title: Collaboration
       imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
       summary: Use Outlook, Groups, Teams....
-      url: https://support.microsoft.com/training
+      url: collab-outlook-teams.md
     # Card
     - title: Cloud storage.
       imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
