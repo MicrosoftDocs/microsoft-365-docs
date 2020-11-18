@@ -34,6 +34,9 @@ Groups that are actively in use are renewed automatically. Any of the following 
 - Teams - visiting a teams channel.
 
 > [!IMPORTANT]
+> Viewing a SharePoint page does not count as an action for automatic renewal. 
+
+> [!IMPORTANT]
 > When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
 
 It's important to know that expiration is turned off by default. Administrators have to enable it for their organization if they want to use it.
