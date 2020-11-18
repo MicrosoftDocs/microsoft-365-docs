@@ -23,6 +23,8 @@ It is important to plan the best way to set up and configure topic experiences i
 - Which users you want to give permissions to create or edit topics in the topic center.
 - What name you want to give your topic center.
 
+We recommend you also read [Topic experiences security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
+
 ## Requirements
 
 You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up topic experiences.

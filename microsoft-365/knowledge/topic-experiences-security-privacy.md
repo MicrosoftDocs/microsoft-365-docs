@@ -14,33 +14,13 @@ description: "Learn how to plan for topic experiences security and privacy in Mi
 
 # Topic experiences security and privacy
 
-Topic experiences uses existing content security features in Microsoft 365 to control what AI-generated content is shown to users in your organization. 
+Topic experiences uses existing content security features in Microsoft 365, along with topic management controls, to control what AI-generated content is shown to users in your organization. It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and topic experiences admin settings that determine what a given user can see in topics.
 
-There are also options available to the knowledge administrator to control topic visibility:
+This article describes how topic experiences works from a security perspective and the options that knowledge administrators and knowledge managers have to control topic visibility. Read this article as part of your [planning for topic experiences](plan-topic-experiences.md).
 
-- [Admin controls to prevent specified sites and topic names from being included in topic experiences](topic-experiences-discovery.md)
-- Permissions for individual users to view or edit topics and access the topic center
+You should be familiar with [Topic experiences](knowledge-management-overview.md), the [topic center](topic-center-overview.md), and how to [work with topics in the topic center](work-with-topics.md) before you read this article.
 
-Additionally, knowledge managers can manually remove topics from the topic center if needed.
-
-It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and topic experiences admin settings that determine what a given user can see in topic experiences.
-
-## Topic stages
-
-Each topic has a stage associated with it as described in the table below.
-
-|Topic stage|Description|
-|:----------|:----------|
-|Suggested|A topic which AI has identified that has supporting resources, connections, and properties.|
-|Confirmed|A suggested topic that a knowledge manager has confirmed without making any changes to the topic itself.|
-|Published|A topic where a knowledge manager or contributor has updated any of the AI-discovered items or added new items to the topic. Topic experiences continues to add to the topic in this stage, increasing its connections. In this stage, a page for the topic is created in the topic center. Manually created topics start as published.|
-|Removed|A topic that has been removed from topic experiences by a knowledge manager.|
-
-Knowledge managers have access to the topic management dashboard where they can see the topic stages and confirm or remove topics as needed.
-
-As topics move through the stages to published, they become more complete and more likely to be presented to users in highlights and topic cards.
-
-## What users can see
+## What users can see in topics
 
 To see topics, a user must:
 
