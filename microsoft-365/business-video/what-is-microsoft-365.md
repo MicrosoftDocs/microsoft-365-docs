@@ -9,10 +9,12 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-ms.collection:
+ms.collection: 
+- M365-subscription-management 
 - Adm_O365
-ms.custom:
+ms.custom: 
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - MET150
 description: "Learn about Microsoft 365 Business Premium features."

@@ -12,7 +12,9 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
