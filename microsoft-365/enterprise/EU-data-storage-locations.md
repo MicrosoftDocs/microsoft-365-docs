@@ -38,7 +38,7 @@ When you use Microsoft 365 services, we start with the assumption that our enter
 
 ### Where EU data is stored
 
-We have datacenters geos in Germany and France that allow you to store data in your country if your business is located there. Our regional European Union data centers are located in Austria, Finland, France, Ireland, and the Netherlands. Your data for the following services will be hosted in the following locations based on which billing address you choose: 
+We have datacenter geos in Germany and France that allow you to store data in your country if your business is located there. Our regional European Union data centers are located in Austria, Finland, France, Ireland, and the Netherlands. Your data for the following services will be hosted in the following locations based on which billing address you choose: 
 
 | Service name | Location for tenants created with a billing address in Germany | Location for tenants created with a billing address in France | Location for tenants created with a billing address in all other EU countries |
 |:-------|:-----|:-------|:-------|
@@ -92,8 +92,6 @@ To prevent unauthorized physical access to datacenters, we employ rigorous opera
 In addition to the physical and technological protections, Microsoft takes strong measures to help protect your customer data from unauthorized access by Microsoft personnel and subcontractors. Access to customer data by Microsoft operations and support personnel is denied by default. Nearly all service operations performed by Microsoft are fully automated and human involvement is highly controlled and abstracted away from customer data. Only in rare cases does a Microsoft engineer need access to customer data to resolve a customer issue. Access to customer data is restricted, based on business need, by role-based access controls, multifactor authentication, minimization of standing access to production data, and other controls. All access to customer data is strictly logged, and both Microsoft and third parties perform regular audits (as well as sample audits) to attest that any access is appropriate. 
 
 Customers can use customer-managed keys to further prevent their data from being readable in case of unauthorized access. Both server-side and client-side encryption can rely on customer-managed keys or customer-provided keys. In either case, Microsoft would not have access to encryption keys and cannot decrypt the data. A SOC audit by an AICPA-accredited auditor twice a year to verifies the effectiveness of our security controls in audit scope. The SOC 2 Type 2 attestation report published by the auditor explains under what circumstances access to customer data can occur and how. 
-
-By far, the most common scenario involves a customer opening a troubleshooting ticket for technical support, and our Professional Services team subsequently obtaining consent to access customer resources that could potentially include customer data. For the majority of support scenarios, access to customer data is not needed.
 
 To learn more, see [Who can access your data](https://www.microsoft.com/trust-center/privacy/data-access) and on what terms and [Subprocessors and Data Privacy](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4qVL2).
 
