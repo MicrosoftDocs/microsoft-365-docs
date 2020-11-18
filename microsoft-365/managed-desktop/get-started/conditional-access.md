@@ -1,5 +1,5 @@
 ---
-title: Adjust conditional access
+title: Adjust access after enrollment
 description:  How to exclude certain Microsoft accounts
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -11,7 +11,23 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Adjust conditional access
+# Adjust access after enrollment
+
+After you've completed enrollment in Microsoft Managed Desktop, you need to adjust certain Intune and Azure AD settings to allow for management and maintain security. Set the following settings to exclude the Azure AD groups that contain Microsoft Managed Desktop devices and users.
+
+## Microsoft Intune settings
+
+- Autopilot deployment profile: exclude the **Modern Workplace Devices -All**  Azure AD group.
+- Conditional Access policies: exclude the **Modern Workplace Service Accounts** Azure AD group.
+- Multi-factor authentication: make sure any conditional access policies that require multi-factor authentication exclude the **Modern Workplace Service Accounts** Azure AD group.
+- Security baseline: exclude the **Modern Workplace Devices -All**  Azure AD group.
+- Windows 10 update ring: exclude the **Modern Workplace Devices -All**  Azure AD group.
+
+
+## Azure Active Directory settings
+
+- Self-service password reset: choose **Selected** setting and select **Modern Workplace Devices -All** Azure AD group
+
 
 If you use [conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies in your organization, you'll have to set them to exclude certain accounts so that Microsoft Managed Desktop can work properly.
 

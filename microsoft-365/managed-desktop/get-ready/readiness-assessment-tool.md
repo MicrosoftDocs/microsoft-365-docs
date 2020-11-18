@@ -74,3 +74,7 @@ For each check, the tool will report one of four possible results:
 |Advisory    | Follow the steps in the tool for the best experience with enrollment and for users. You *can* complete enrollment, but you must fix these issues before you deploy your first device.        |
 |Not ready | *Enrollment will fail* if you don't fix these issues. Follow the steps in the tool to resolve them.        |
 |Error | The Azure Active Director (AD) role you're using doesn't have sufficient permission to run this check. |
+
+## After enrollment
+
+After you've completed enrollment in Microsoft Managed Desktop, remember to go back and adjust certain Intune and Azure AD settings. For details, see 
