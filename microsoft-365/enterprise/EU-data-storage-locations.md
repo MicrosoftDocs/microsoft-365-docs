@@ -96,8 +96,6 @@ Microsoft has taken a firm public stand on protecting customer data from inappro
 - Content data requires a warrant. Content is what customers create, communicate, and store on or through Microsoft services, such as the words in an email exchanged between friends or business colleagues or the photographs and documents stored on OneDrive or cloud offerings such as Microsoft 365 and Azure. Microsoft requires a warrant (or its local equivalent) before Microsoft will consider disclosing content to law enforcement. This framework applies to the United States and abroad as applicable (Microsoft will adhere to local laws and regulations). Microsoft conducts a local legal review of each request it receives against local laws and standards. Microsoft also periodically reviews its screening processes around the world to ensure local judicial procedures are being followed and its global human rights statement is being applied.
 We apply this framework in adherence to local laws and regulations. Microsoft conducts a local legal review of each request it receives against local laws and standards. Microsoft also periodically reviews its screening processes around the world to ensure local judicial procedures are being followed and its global human rights statement is being applied.
 
-To learn more, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
-
 
 ## Additional resources
  
