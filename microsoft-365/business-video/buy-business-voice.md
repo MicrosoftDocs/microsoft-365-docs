@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
+monikerRange: 'o365-worldwide'
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
