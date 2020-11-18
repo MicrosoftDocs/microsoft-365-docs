@@ -18,7 +18,6 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Details of the Communication - People experience Productivity Score."
 ---
 
@@ -98,10 +97,10 @@ We also provide you with information that help you gain visibility into how peop
 1. **Header:** Highlights the increase in response rate for new email threads started in the last 28 days when they contain @mentions
 2. **Body:** Provides information on the value of using @mentions in emails. Additionally, people using @mentions is expressed as a percentage of all users who have sent an email in the last 28 days.
 3. **Visualization:** Breaks down the response rate for new email threads based on whether they had @mentions or not:
-      - **Responses to emails with @mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
+      - **Responses to emails with \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
           - **Numerator:** New email threads containing @mentions that were started and also received a response in the last 28 days.
           - **Denominator:** New email threads containing @mentions that were started in the last 28 days
-      - **Responses to emails without @mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
+      - **Responses to emails without \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
           - **Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.
           - **Denominator:** New email threads not containing @mentions that were started in the last 28 days.
 4. **View related content:** Select this link to view collated videos, and other related help content.
@@ -155,3 +154,12 @@ This section provides you with user-level details of activities relevant to all 
 - **Days used @mention in email:** Number of days the user sent an email containing an @mention in the last 28 days.
 
 You can also export the report data into an Excel .csv file, by selecting the Export **Export button** link. Note that you can customize the set of columns in the view by selecting the required columns after clicking on **Choose columns**.
+
+## Related content
+
+[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Meetings – People experiences](meetings.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
+[Teamwork – People experiences](teamwork.md) (article)

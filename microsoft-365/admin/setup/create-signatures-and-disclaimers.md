@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: "Learn to add email signature, legal disclaimer, or disclosure statement to all the email messages that enter or leave your organization."
+description: Learn to manage email signatures, including legal disclaimers or disclosure statements for all email messages that enter or leave your organization.
 ---
 
 # Create organization-wide signatures and disclaimers
 
- You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
+ You can manage email signatures by adding an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
  Watch a short video about creating a company-wide email signature. <br><br>
   
@@ -94,7 +95,7 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
     
 ## Limitations of organization wide signatures
 
-You can't do the following with Microsoft 365 signatures:
+You can't do the following when managing email signatures in Microsoft 365:
   
 - Insert the signature directly under the latest email reply or forward
     
@@ -104,10 +105,8 @@ You can't do the following with Microsoft 365 signatures:
     
 - Skip lines which contain variables that couldn't be updated (e.g. because the value wasn't provided for a user)
     
-To gain these and other capabilities, use a third-party tool. Please do an internet search for **email signature software**. A number of these providers are Microsoft Gold Partners and their software provides these capabilities. 
+To gain these and other capabilities to manage email signatures, use a third-party tool. Please do an internet search for **email signature software**. A number of these providers are Microsoft Gold Partners and their software provides these capabilities. 
   
 ## More resources
 
-- See [Organization-wide message disclaimers, signatures, footers, or headers in Microsoft 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell. 
-    
-
+- See [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell.

@@ -92,6 +92,8 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     Some, but not all apps support dynamic markings by using variables. For example, insert the label name or document name into the header, footer, or watermark. For more information, see [Dynamic markings with variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
     
+    Although you can configure a custom font name for these content markings and a wide range of font colors that include custom by RGB code, these settings are supported only by the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2). When you use built-in labeling, the font name setting is ignored and the following colors only are supported: Black, yellow, blue, green, red. If you select a color that isn't supported, black is used as the default.
+
     String lengths: Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter is not displayed in Excel.
 
 - **Protect content in containers such as sites and groups** when you enable the capability to [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).

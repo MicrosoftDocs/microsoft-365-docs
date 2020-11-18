@@ -18,7 +18,6 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Details of the Mobility - people experiences Productivity score."
 ---
 
@@ -167,3 +166,12 @@ The following metrics are based on the preceding 28 days:
 - **Days in Skype (desktop):** Number of days the person was active on Skype in the desktop platform.
 - **Days in Skype (web):** Number of days the person was active on Skype in the web platform.
 - **Days in Skype (mobile):** Number of days the person was active on Skype in the mobile platform.
+
+## Related content
+
+[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
+[Communication – People experiences](communication.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Meetings – People experiences](meetings.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
+[Teamwork – People experiences](teamwork.md) (article)

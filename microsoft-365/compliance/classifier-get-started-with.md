@@ -39,7 +39,7 @@ Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one 
 To access classifiers in the UI: 
 
 - the Global admin needs to opt in for the tenant to create custom classifiers.
-- the Compliance admin role or Compliance Data Administrator is required to train a classifier.
+- Compliance Administrator or Data Investigation role is required to train a classifier.
 
 You'll need accounts with these permissions to use classifiers in these scenarios:
 
@@ -48,7 +48,7 @@ You'll need accounts with these permissions to use classifiers in these scenario
 - Communication compliance policy scenario: Insider Risk Management Admin, Supervisory Review Administrator 
 
 > [!IMPORTANT]
-> By default, only the user who creates a custom classifier can train and review predictions made by that classifier. If you want others to be able to train and review classifier predictions, see [Give others train and review rights](#give-others-train-and-review-rights).
+> By default, only the user who creates a custom classifier can train and review predictions made by that classifier.
 
 ## Prepare for a custom trainable classifier 
 
@@ -151,21 +151,3 @@ Once the trainable classifier has processed enough positive samples to build a p
 20. Publish the classifier.
 
 21. Once published your classifier will be available as a condition in [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [Communication compliance](communication-compliance.md).
-
-## Give others train and review rights
-
-Use this procedure to give others permissions to train, review and tune your custom trainable classifier.  
- 
-1. As the creator of the classifier, a global admin or eDiscovery admin connect to the Compliance center using PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true).
-
-2. Run this command:
-
-   ```powershell
-   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-   ```
-   
-   For example:
-   
-   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
-
-   You can run this command multiple times to add multiple users. Note that you can only add Exchange Online Protection (EOP) Role Groups and not Azure Role Groups.
