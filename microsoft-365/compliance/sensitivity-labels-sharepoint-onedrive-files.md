@@ -42,7 +42,7 @@ When you do enable sensitivity labels for Office files in SharePoint and OneDriv
 > [!NOTE]
 > If encryption has been applied with an on-premises key (a key management topology often referred to as "hold your own key" or HYOK), or by using [Double Key Encryption](double-key-encryption.md), the SharePoint behavior for processing the file contents doesn't change.
 >
-> The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint. For these files to benefit from the new capabilities, they must be either downloaded and uploaded, or edited after you run the command to enable sensitivity labels for SharePoint and OneDrive. For example, they will then be returned in search and eDiscovery results.
+> The SharePoint behavior also doesn't change for existing files in SharePoint that are labeled with encryption using a single Azure-based key. For these files to benefit from the new capabilities after you enable sensitivity labels for Office files in SharePoint and OneDrive, the files must be either downloaded and uploaded again, or edited. For example, they will then be returned in search and eDiscovery results.
 
 After you enable sensitivity labels for Office files in SharePoint and OneDrive, three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied to documents in SharePoint and OneDrive:
 - **Applied sensitivity label to file**
@@ -198,7 +198,7 @@ With this behavior, you can be assured that all Office and PDF files are protect
 
 Use the managed property **InformationProtectionLabelId** to find all documents in SharePoint or OneDrive that have a specific sensitivity label. Use the following syntax: `InformationProtectionLabelId:<GUID>`
 
-For example, to search for all documents that have been labeled as "Confidential", and that label has a GUID of "8faca7b8-8d20-48a3-8ea2-0f96310a848e", in the search box, type:	
+For example, to search for all documents that have been labeled as "Confidential", and that label has a GUID of "8faca7b8-8d20-48a3-8ea2-0f96310a848e", in the search box, type:
 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`	
 
