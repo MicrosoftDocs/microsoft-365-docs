@@ -23,7 +23,7 @@ description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file
 
 # Get started with Endpoint data loss prevention
 
-Microsoft Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Overview of data loss prevention](data-loss-prevention-policies.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)
+Microsoft Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Overview of data loss prevention](data-loss-prevention-policies.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 
 Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them.
 
@@ -39,7 +39,7 @@ Before you get started with Endpoint DLP, you should confirm your [Microsoft 365
 - Microsoft 365 A5 compliance
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
-- Microsoft 365 E5 information protection and data loss prevention (only available with the E5 security, Enterprise Mobility and Security E5, Microsoft Cloud App Security, and Microsoft Defender Advanced Threat Protection)
+
 
 ### Permissions
 
@@ -167,6 +167,13 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 
 > [!NOTE]
 >This experience is under license enforcement. Without the required license, data will not be visible or accessible.
+
+### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
+
+1. Open the Data loss prevention page in the Microsoft 365 Compliance center and choose Alerts.
+
+2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
+
 
 ### Viewing Endpoint DLP data in activity explorer
 

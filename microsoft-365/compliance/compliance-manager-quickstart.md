@@ -38,6 +38,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
+- [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 
