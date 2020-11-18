@@ -44,7 +44,7 @@ You can add or modify your RFC so that the information is reflected in future Mi
 > [!NOTE]
 > If you're in a monthly or yearly recurrent billing subscription, the addition or modification of the RFC is reflected on the invoice of your next charge.
 
-## 3. Can I add or modify my RFC to an invoice that has already been generated?
+## 3. Can I add or modify my RFC to an invoice that was already generated?
 
 It's important that you add or modify your RFC before you make your purchase. After we have generated your Microsoft 365 for business invoice, you can't add or modify the RFC information.
 
