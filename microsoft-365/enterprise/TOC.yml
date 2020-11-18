@@ -275,7 +275,7 @@
       items: 
         - name: Microsoft 365 service health status
           href: microsoft-365-service-health.md
-        - name: Exchange monitoring
+        - name: Exchange Online monitoring
           href: microsoft-365-exchange-monitoring.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
