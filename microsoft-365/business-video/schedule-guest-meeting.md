@@ -29,6 +29,7 @@ description: "Learn how to schedule a Teams meeting with guests."
 You can invite people from outside of your organization to a meeting without having to add them to Microsoft Teams. Here's how it works for your customers or partners when they [join a meeting without a Teams account](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508).
 
 ## Try it!
+
 With Microsoft Teams, you can create new teams as you start new projects or add customers.
 
 1. On the  **Teams** tab, select **Join or create a team**, **Create team**, **Build a team from scratch**, and then **Private**.

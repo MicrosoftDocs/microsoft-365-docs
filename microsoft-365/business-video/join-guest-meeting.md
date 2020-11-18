@@ -26,7 +26,7 @@ description: "Learn how to join a Teams meeting with guests."
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 
-With Microsoft Teams, you can easily join and participate in meetings with both internal and external users
+With Microsoft Teams, you can easily join and participate in meetings with both internal and external users.
 
 ## Try it!
 
