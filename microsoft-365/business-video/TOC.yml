@@ -68,4 +68,14 @@
         - name: Join a meeting with guests
           href: join-guest-meeting.md
         - name: Business voice
-          href: business-voice.md             
+          href: business-voice.md   
+    - name: Cloud storage
+      items:
+        - name: Sharing overview
+          href: overview-file-sharing.md
+        - name: Where to store files
+          href: store-files.md
+        - name: Securely share files externally
+          href: securely-share-files-externally.md
+        - name: Easily share files externally
+          href: share-files-externally.md                

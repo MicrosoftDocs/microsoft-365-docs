@@ -53,7 +53,7 @@ productDirectory:
     - title: Cloud storage.
       imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
       summary: Store files in Teams, OneDrive, or SharePoint.
-      url: https://support.microsoft.com/training
+      url: overview-file-sharing.md
     # Card
     - title: Business voice
       imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
