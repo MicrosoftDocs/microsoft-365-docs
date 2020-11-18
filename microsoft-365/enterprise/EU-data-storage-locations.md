@@ -67,7 +67,7 @@ Core customer data consists of:
      
 - Files uploaded to OneDrive for Business 
 
-Although data locations may change due to load-balancing needs, Microsoft contractually commits to store core customer data in the above locations for the term of your subscription.
+Although current data storage locations for some services may change to accommodate load-balancing needs, Microsoft contractually commits to store core customer data in the above locations for the term of your subscription.
 
 ### Where EU data is computed
 
