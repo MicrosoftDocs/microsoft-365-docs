@@ -20,7 +20,7 @@ search.appverid:
 description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
 ---
 
-# Using Endpoint data loss prevention (preview)
+# Using Endpoint data loss prevention
 
 This article walks you through three scenarios where you create and modify a DLP policy that uses devices as a location.
 
@@ -109,11 +109,11 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 
 ### Scenario 1: Create a policy from a template, audit only
 
-These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md).
+These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Choose **Create policy (preview)**.
+2. Choose **Create policy**.
 
 3. For this scenario, choose **Privacy**, then **U.S. Personally Identifiable Information (PII) Data** and choose **Next**.
 
@@ -143,7 +143,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 2. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
 
-3. Choose **edit policy (preview)**.
+3. Choose **edit policy**.
 
 4. Go to the **Advanced DLP rules** page and edit the **Low volume of content detected U.S. Personally Identifiable Inf**.
 
@@ -168,7 +168,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 2. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
 
-3. Choose **edit policy (preview)**.
+3. Choose **edit policy**.
 
 4. Go to the **Advanced DLP rules** page and edit the **Low volume of content detected U.S. Personally Identifiable Inf**.
 
@@ -194,8 +194,8 @@ These scenarios require that you already have devices onboarded and reporting in
 
 ## See also
 
-- [Learn about Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)
-- [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)

@@ -9,14 +9,13 @@ ms.date:
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: High
+localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
 ms.collection: 
 - m365solution-mip
 - m365initiative-compliance
-ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: "Implement Microsoft Information Protection (MIP) to help you protect sensitive information wherever it lives or travels."
 ---
 
@@ -67,4 +66,4 @@ To help prevent accidental oversharing of sensitive information, use the followi
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:---------------------|:-----------------------------|
 |[Data loss prevention (DLP)](data-loss-prevention-policies.md)| Helps prevent unintentional sharing of sensitive items <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
-|[Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)|
+|[Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)|

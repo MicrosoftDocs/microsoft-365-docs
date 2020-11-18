@@ -43,9 +43,11 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
 
-  - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+  - 30 days for messages quarantined by anti-spam policies (spam, phishing, and bulk email). This is the default and maximum value. To configure (lower) this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
-  - Messages that contain malware: 15 days.
+  - 15 days for messages that contain malware.
+
+  - 15 days for files quarantined by ATP for SharePoint, OneDrive, and Microsoft Teams in Defender for Office 365.
 
   When a message expires from quarantine, you can't recover it.
 
@@ -122,14 +124,6 @@ You view and manage quarantined messages in the Security & Compliance Center or 
    After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
-
-#### Export message results
-
-1. Select the messages you're interested in, and click **Export results**.
-
-2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-
-3. When your export is ready, you can name and choose the download location for the .csv file.
 
 #### View quarantined message details
 
@@ -250,14 +244,6 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
    - **Policy type**
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).
-
-#### Export file results
-
-1. Select the files you're interested in, and click **Export results**.
-
-2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-
-3. When your export is ready, you can name and choose the download location for the .csv file.
 
 #### View quarantined file details
 

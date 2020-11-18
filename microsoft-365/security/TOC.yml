@@ -47,16 +47,18 @@
               href: mtp/preview.md
             - name: Microsoft 365 security center
               href: mtp/overview-security-center.md
+            - name: Troubleshoot issues
+              href: ./mtp/troubleshoot.md
+            - name: Industry tests
+              href: ./mtp/top-scoring-industry-tests.md
+        - name: Plan
+          items: 
             - name: Prerequisites
               href: mtp/prerequisites.md
             - name: Data security and privacy
               href: mtp/data-privacy.md
             - name: Microsoft security portals
               href: mtp/portals.md
-            - name: Troubleshoot issues
-              href: ./mtp/troubleshoot.md
-            - name: Industry tests
-              href: ./mtp/top-scoring-industry-tests.md
         - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
@@ -71,28 +73,33 @@
               href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
-        - name: Run your pilot project in production
-          items: 
-            - name: Pilot overview
-              href: mtp/mtp-pilot.md
-            - name: Plan
-              href: mtp/mtp-pilot-plan.md
-            - name: Prepare
-              href: mtp/prepare-mtpeval.md
-            - name: Simulate attack
-              href: mtp/mtp-pilot-simulate.md
-            - name: Close and summarize
-              href: mtp/mtp-pilot-close.md
+        - name: Deploy
+          items:
+            - name: Turn on Microsoft Threat Protection
+              href: mtp/mtp-enable.md
+            - name: Run your pilot project in production
+              items: 
+                - name: Pilot overview
+                  href: mtp/mtp-pilot.md
+                - name: Plan
+                  href: mtp/mtp-pilot-plan.md
+                - name: Prepare
+                  href: mtp/prepare-mtpeval.md
+                - name: Simulate attack
+                  href: mtp/mtp-pilot-simulate.md
+                - name: Close and summarize
+                  href: mtp/mtp-pilot-close.md
+            - name: Deploy supported services
+              href: mtp/deploy-supported-services.md
+            
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
               href: mtp/mtp-evaluation.md
             - name: Run pilot playbook
               href: mtp/mtp-pilot.md
-            - name: Deploy supported services
-              href: mtp/deploy-supported-services.md
-            - name: Turn on Microsoft 365 Defender
-              href: mtp/mtp-enable.md
+
+
             - name: Turn on FAQ
               href: mtp/mtp-enable-faq.md
             - name: Incidents
@@ -165,6 +172,8 @@
                       href: mtp/advanced-hunting-alertinfo-table.md
                     - name: AppFileEvents
                       href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: CloudAppEvents
+                      href: mtp/advanced-hunting-cloudappevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfo
@@ -426,8 +435,6 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Create team sites in a political campaign dev/test environment
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: User tags in Defender for Office 365
-              href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
               items: 
