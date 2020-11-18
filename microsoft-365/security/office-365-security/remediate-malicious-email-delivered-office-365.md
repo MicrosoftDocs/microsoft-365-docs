@@ -28,21 +28,7 @@ Remediation means taking a prescribed action against a threat. Malicious email s
 
 ## What you need to know before you begin
 
-To do things like view message headers or download email content, you must have a new role called *preview* added to another appropriate role group. The following table shows required roles and permissions.
-
-****
-
-|Activity|Role group|*Preview* role needed?|
-|---|---|:---:|
-|Use Threat Explorer (and real-time detections) to analyze threats ​|Global Administrator <p> Security Administrator <p> Security Reader|No|
-|Use Threat Explorer (and real-time detection) to view headers for email messages and to preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
-|Use Threat Explorer to view headers and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
-
-> [!NOTE]
->
-> - Preview is a *role*, not a *role group*. The preview role must be added to an existing role group for Office 365. The *Global Administrator role* is assigned in the [Microsoft 365 admin center](https://admin.microsoft.com). The Security Administrator and Security Reader roles are assigned in the [Security & Compliance Center](https://protection.office.com). To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
->
-> - Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Security & Compliance Center** \> **Permissions**.
+> - Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Security & Compliance Center** \> **Permissions**. Without the "search and purge" role added to one of the role-groups, they wont be able to execute the action.
 
 ## Manual and automated remediation
 
@@ -133,5 +119,7 @@ Open any remediation item to view details about it, including its name, creation
   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
 
   Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
+  
+  In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100k records.
 
   Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.
