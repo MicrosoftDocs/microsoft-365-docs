@@ -165,11 +165,9 @@ When you use sensitivity labels with SharePoint and OneDrive, keep in mind that 
 
 For example: You create and publish a new sensitivity label that applies encryption and it very quickly appears in a user's desktop app. The user applies this label to a document and then uploads it to SharePoint or OneDrive. If the label replication hasn't completed for the service, the new capabilities won't be applied to that document on upload. As a result, the document won't be returned in search or for eDiscovery and the document can't be opened in Office for the web.	
 
-The following changes replicate within one hour: 
-- New and deleted sensitivity labels, and sensitivity label policy settings that include which labels are in the policy.
+The following changes replicate within one hour: New and deleted sensitivity labels, and sensitivity label policy settings that include which labels are in the policy.
 
-The following changes replicate within 24 hours: 
-- Changes to sensitivity label settings for existing labels.
+The following changes replicate within 24 hours: Changes to sensitivity label settings for existing labels.
 
 Because the replication delay is only one hour for new sensitivity labels, you are unlikely to run into the scenario in the example. But as a safeguard, we recommend publishing new labels to just a few test users first, wait for an hour, and then verify the label behavior on SharePoint and OneDrive. As the final step, make the label available to more users by either adding more users to the existing label policy, or add the label to an existing label policy for your standard users. At the time your standard users see the label, it has already synchronized to SharePoint and OneDrive.
 
