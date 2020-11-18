@@ -43,7 +43,7 @@ productDirectory:
     - title: Mobile
       imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
       summary: Get Office apps on your phone.
-      url: https://support.microsoft.com/training
+      url: mobile-overview.md
     # Card
     - title: Collaboration
       imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg

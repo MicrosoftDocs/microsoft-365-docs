@@ -35,3 +35,37 @@
           href: files-to-onedrive.md
         - name: Move company files to SharePoint
           href: files-to-sharepoint.md    
+    - name: Mobile
+      items: 
+        - name: Overview
+          href: mobile-overview.md
+        - name: Install Office apps on Android
+          href: install-apps-android.md
+        - name: Install Office apps on iOS
+          href: install-apps-ios.md
+        - name: Get the Admin mobile app
+          href: admin-mobile.md 
+    - name: Collaborate
+      items: 
+        - name: Use Outlook and Teams
+          href: collab-outlook-teams.md
+        - name: Create a group email address
+          href: group-email.md
+        - name: Create a shared calendar
+          href: shared-calendar.md
+        - name: Create an org-wide team
+          href: org-wide-team.md 
+        - name: Create a team with guests
+          href: team-with-guests.md
+        - name: Join a team as a guest
+          href: join-team-guest.md
+        - name: Chat with employees and customers
+          href: start-and-pin-chats.md  
+        - name: Online meetings overview
+          href: overview-online-meetings.md 
+        - name: Schedule a meeting with guests
+          href: schedule-guest-meeting.md
+        - name: Join a meeting with guests
+          href: join-guest-meeting.md
+        - name: Business voice
+          href: business-voice.md             
