@@ -18,10 +18,10 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Microsoft 365 apps health - technology experiences Productivity score."
+description: "Details of the Microsoft 365 Apps health - technology experiences Productivity score."
 ---
 
-# Microsoft 365 apps health – Technology experiences
+# Microsoft 365 Apps health – technology experiences
 
 Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The apps health category is part of the measurements that falls under technology experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
 

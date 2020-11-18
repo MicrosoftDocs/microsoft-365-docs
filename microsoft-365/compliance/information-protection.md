@@ -9,14 +9,13 @@ ms.date:
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: High
+localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
 ms.collection: 
 - m365solution-mip
 - m365initiative-compliance
-ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: "Implement Microsoft Information Protection (MIP) to help you protect sensitive information wherever it lives or travels."
 ---
 
