@@ -40,16 +40,16 @@ Knowledge managers have access to the topic management dashboard where they can 
 
 As topics move through the stages to published, they become more complete and more likely to be presented to users in highlights and topic cards.
 
-## Who can see what
+## What users can see
 
 To see topics, a user must:
 
 - Have a Topic Experiences license
 - Be a [topic viewer](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization), [contributor, or knowledge manager](topic-experiences-user-permissions.md)
 
-These two things give a user view access to the topic center and allow them to see highlights and topic cards.
+These two things give users view access to the topic center and allow them to see highlights and topic cards.
 
-Topic contributors additionally have [create and edit](topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) permissions. They can create and update topics.
+Topic contributors additionally have [create and edit](topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) permissions for topics, and knowledge managers can confirm or remove topics.
 
 When a topic is first discovered, knowledge managers can see it in the topic center. Depending on the completeness and relevance of the topic, topic viewers may or may not see the topic presented in topic cards.
 
@@ -77,7 +77,7 @@ Topic experiences presents information to users based on their existing permissi
 
 We recommend that you use these tools to ensure that your content permissions are set appropriately inside your organization. Topic experiences can then provide useful and appropriate information to your users.
 
-If there are topics that you want to exclude entirely from the knowledge network, you can also:
+If there are topics that you want to exclude entirely from topic experiences, you can also:
 
 - [Exclude sensitive SharePoint sites from topic discovery](topic-experiences-discovery.md#select-sharepoint-topic-sources). Content in these sites will not appear in topic experiences.
 
