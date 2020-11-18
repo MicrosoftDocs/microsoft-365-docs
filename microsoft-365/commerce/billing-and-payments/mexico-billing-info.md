@@ -41,9 +41,12 @@ During the checkout purchase process, when you get to step **4. Payment and bill
 
 You can add or modify your RFC so that the information is reflected in future Microsoft 365 for business purchases. To add or modify your RFC, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
 
-## 3. Can I add or modify my RFC to a purchase that has already been confirmed?
+> [!NOTE]
+> If you're in a monthly or yearly recurrent billing subscription, the addition or modification of the RFC is reflected on the invoice of your next charge.
 
-It's important that you add or modify your RFC before you make your purchase. After your Microsoft 365 for business purchase is confirmed, you can't add or modify your billing information.
+## 3. Can I add or modify my RFC to an invoice that has already been generated?
+
+It's important that you add or modify your RFC before you make your purchase. After we have generated your Microsoft 365 for business invoice, you can't add or modify the RFC information.
 
 ## 4. Why don't I get a CFDI (Digital Government Invoice)?
 
