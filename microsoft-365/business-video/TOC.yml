@@ -20,4 +20,18 @@
         - name: Create a GoDaddy website
           href: create-web-site.md
     - name: Device setup
-      items:      
+      items: 
+        - name: Upgrade to Windows 10 Pro
+          href: upgrade.md
+        - name: Connect PCs to Microsoft 365
+          href: connect.md
+        - name: Install Microsoft Office apps
+          href: install-office.md
+        - name: Set up Outlook for email
+          href: setup-outlook.md 
+        - name: Import and redirect mail
+          href: import-email.md
+        - name: Move your files to OneDrive
+          href: files-to-onedrive.md
+        - name: Move company files to SharePoint
+          href: files-to-sharepoint.md    
