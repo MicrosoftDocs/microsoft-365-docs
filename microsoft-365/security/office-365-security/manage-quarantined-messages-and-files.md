@@ -160,7 +160,7 @@ After you select a message, you have several options for what to do with the mes
   - Choose one of the following options:
     - **Release messages to all recipients**
     - **Release messages to specific recipients**
-    - **Release messages to other people**
+    - **Release messages to other people** note that releasing malware messages to people that were not original recipient of the message is not supported. 
 
   When you're finished, click **Release messages**.
 
