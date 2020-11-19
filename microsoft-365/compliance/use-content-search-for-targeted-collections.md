@@ -98,7 +98,7 @@ To display a list of mailbox folders or site documentlink (path) names:
 	  if (!$ExoSession)
 	  {
 		  Import-Module ExchangeOnlineManagement
-	      Connect-ExchangeOnline
+		  Connect-ExchangeOnline
 	  }
 	  $folderQueries = @()
 	  $folderStatistics = Get-MailboxFolderStatistics $emailAddress
@@ -131,7 +131,7 @@ To display a list of mailbox folders or site documentlink (path) names:
 	  if (!$SccSession)
 	  {
 		  Import-Module ExchangeOnlineManagement
-	      Connect-IPPSSession
+		  Connect-IPPSSession
 	  }
 	  # Clean-up, if the script was aborted, the search we created might not have been deleted.  Try to do so now.
 	  Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
