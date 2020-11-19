@@ -19,28 +19,30 @@ description: Understand how the Contoso Corporation responded to the COVID-19 pa
 
 # Contoso's COVID-19 response and their hybrid workforce
 
-
-Contoso had always supported a remote workforce, who accessed on-premises resources through a central VPN server in the Paris headquarters. All remote workers had a Contoso issued and managed laptop. On-premises workers had a mixture of desktop computers and laptops.
+Contoso had always supported its remote workers, who accessed on-premises resources through a central VPN server in the Paris headquarters. Contoso has issued all remote workers a managed laptop. On-premises workers had a mixture of desktop computers and laptops.
 
 ## Contoso’s response to COVID-19
 
-With the COVID-19 pandemic, suddenly all but essential workers were remote workers. Contoso responded by shifting its workforce to work from home and its primary activities through remote access to on-premises resources and online for Microsoft 365 cloud services.
+With the onset of the COVID-19 pandemic, suddenly all but essential workers were remote workers. Contoso responded by shifting its workforce to work from home and conduct its primary activities through remote access to on-premises resources and online for Microsoft 365 cloud services.
 
-Contoso had remote access VPN servers in the Paris headquarters office to support the 25% of its already remote workforce, but had to quickly move to scale up to supporting 90% of its workforce. Contoso deployed remote access VPN servers in each of the satellite offices so that regionally located remote workers would use the satellite office for access to the intranet.
+Contoso had remote access VPN servers in the Paris headquarters office to support the 25% of its already remote workforce, but had to quickly move to scale up to supporting 90% of its workforce. Contoso deployed remote access VPN servers in each satellite office so that remote workers would use a local satellite office for access to the intranet.
 
-Split tunneling configuration for VPN clients
-
+Contoso also updated the configuration of the VPN clients installed on laptops, tablets, and smart phones for split tunneling so that traffic for the Optimize set of Office 365 endpoints bypassed the VPN connection and was sent directly over the Internet.
 
 
 ## Contoso’s support for a dynamic hybrid workforce
 
-After the initial remote access and security infrastructure changes to support a workforce of mostly remote workers, Contoso looked at a future hybrid workforce. 
+After the initial remote access changes were made to support mostly remote workers during regional lockdowns, Contoso looked at a future hybrid workforce in which a worker could be:
 
-Microsoft identity, security, and compliance features are designed for Zero Trust and to work regardless of the location of the user and their device. However, managing new installs and updates of software is dependent on the location of the device, which could come from an on-premises source or an Internet source.
+- Always remote.
+- Always on premesis.
+- A combination of remote or on-premises.
 
-Therefore, Contoso IT architects designed their installs and updates infrastructure based on the location of the device, rather than the user.
+Microsoft identity, security, and compliance features are designed for Zero Trust and to work regardless of the location of the user and their device. 
 
-They designated two types of devices.
+However, managing new installs and updates of software is dependent on the location of the device, which could come from an on-premises source or an Internet source. Contoso IT architects designed their installs and updates infrastructure based on the location of the device, rather than the user.
+
+They designated two types of devices: dedicated on-premises and roaming.
 
 ### Dedicated on-premises (the exception)
 
