@@ -28,11 +28,11 @@ Keep your devices secure, up-to-date, and spot potential threats in the Microsof
 
 ## View device alerts
 
-Get up-to-date alerts about breach activity and other threats on your devices from Microsoft Defender ATP (available with an E5 license). Microsoft 365 security center effectively monitors these alerts at a high level using your preferred workflow.
+Get up-to-date alerts about breach activity and other threats on your devices from Microsoft Defender for Endpoint (available with an E5 license). Microsoft 365 security center effectively monitors these alerts at a high level using your preferred workflow.
 
 ### Monitor high-impact alerts
 
-Each Microsoft Defender ATP alert has a corresponding severity (high, medium, low, or informational). It indicates potential impact to your network if left unattended.  
+Each Microsoft Defender for Endpoint alert has a corresponding severity (high, medium, low, or informational). It indicates potential impact to your network if left unattended.  
 
 Use the **Device alert severity** card to focus specifically on alerts that are more severe and might require immediate response. From this card, you can view more information on the Microsoft Defender Security Center portal.
 
@@ -40,7 +40,7 @@ Use the **Device alert severity** card to focus specifically on alerts that are 
 
 ### Understand sources of alerts
 
-Microsoft Defender ATP leverages data from a broad range of security sensors and intelligence sources to generate alerts. For example, it can use detection information from Microsoft Defender Antivirus and third-party antimalware. It can also use your own custom threat intelligence provided through the web service API.
+Microsoft Defender for Endpoint leverages data from a broad range of security sensors and intelligence sources to generate alerts. For example, it can use detection information from Microsoft Defender Antivirus and third-party antimalware. It can also use your own custom threat intelligence provided through the web service API.
 
 The **Device alert detection** sources card shows the distribution of alerts by source. Track activity related to certain sources, particularly your custom sources. You can also use the card to focus on alerts coming from sensors that aren't configured to automatically block malicious activity or components.
 
@@ -50,7 +50,7 @@ From this card, you can view more information on the Microsoft Defender Security
 
 ### Understand the types of threats that trigger alerts
 
-Microsoft Defender ATP sorts each alert into a category representing a certain stage in the attack chain or type of threat component. For example, a detected threat activity might be categorized as "lateral movement" to indicate there was an attempt to reach other devices on the network. The activity has likely occurred after attackers gained an initial foothold. When detected, a threat component might be classified broadly as malware or specifically as a specific threat type. Specifics include ransomware, credential stealing, or other types of malicious or unwanted software.
+Microsoft Defender for Endpoint sorts each alert into a category representing a certain stage in the attack chain or type of threat component. For example, a detected threat activity might be categorized as "lateral movement" to indicate there was an attempt to reach other devices on the network. The activity has likely occurred after attackers gained an initial foothold. When detected, a threat component might be classified broadly as malware or specifically as a specific threat type. Specifics include ransomware, credential stealing, or other types of malicious or unwanted software.
 
 The **Device threat categories** card shows the distribution of alerts into these categories. Use this information to identify threat activity, such as credential theft attempts, that usually have higher impact than social engineering attempts. You can also to monitor for potentially destructive threats like ransomware.
 
@@ -64,7 +64,7 @@ The **Device alert status** card indicates the number of alerts that haven't bee
 
 ### Monitor classification of resolved alerts
 
-When resolving a Microsoft Defender ATP alert, your security staff can specify whether an alert has been verified as:
+When resolving a Microsoft Defender for Endpoint alert, your security staff can specify whether an alert has been verified as:
 
 * A true alert that identifies actual breach activity or threat components
 * A false alert that has incorrectly detected normal activity

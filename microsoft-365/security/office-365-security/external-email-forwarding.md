@@ -26,34 +26,38 @@ The following types of automatic forwarding are available in Microsoft 365:
 
 - Users can configure [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) to automatically forward messages to external senders (deliberately or as a result of a compromised account).
 
-- Admins can configure [mailbox forwarding](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as SMTP forwarding) to automatically forward messages to external recipients.
+- Admins can configure [mailbox forwarding](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as _SMTP forwarding_) to automatically forward messages to external recipients.
 
 You can use outbound spam filter policies to control automatic forwarding to external recipients. Three settings are available:
 
 - **Automatic**: Automatic external forwarding is blocked. Internal automatic forwarding of messages will continue to work. This is the default setting.
+
 - **On**: Automatic external forwarding is allowed and not restricted.
+
 - **Off**: Automatic external forwarding is disabled and will result in a non-delivery report (also known as an NDR or bounce message) to the sender.
 
 For instructions on how to configure these settings, see [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
 
-**Notes**:
-
-- Disabling automatic forwarding will also disable Inbox rules that redirect messages to external addresses.
-
-- Automatic forwarding of messages between internal users isn't affected by the settings in outbound spam filter policies.
-
-- You can see information about users that are automatically forwarding messages to external recipients in the [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md).
+> [!NOTE]
+> 
+> - Disabling automatic forwarding disables any Inbox rules (users) or mailbox forwarding (admins) that redirect messages to external addresses.
+> 
+> - Automatic forwarding of messages between internal users isn't affected by the settings in outbound spam filter policies.
+> 
+> - You can see information about users that are automatically forwarding messages to external recipients in the [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md).
 
 ## How the outbound spam filter policy settings work with other automatic email forwarding controls
 
 As an admin, you might have already configured other controls to allow or block automatic email forwarding. For example:
 
 - [Remote domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) to allow or block automatic email forwarding to some or all external domains.
+
 - Conditions and actions in Exchange [mail flow rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to detect and block automatically forwarded messages to external recipients.
 
 Remote domain settings and mail flow rules are independent of the settings in outbound spam filter policies. For example:
 
 - You allow automatic forwarding for a remote domain, but you block automatic forwarding in outbound spam filter policies. In this example, automatically forwarded messages are blocked.
+
 - You allow automatic forwarding in outbound spam filter policies, but you use mail flow rules or remote domain settings to block automatically forwarded email. In this example, the mail flow rules or remote domain settings will block automatically forwarded messages.
 
 This feature independence allows you to (for example) allow automatic forwarding in outbound spam filter policies, but use remote domains to control the external domains that users can forward messages to.

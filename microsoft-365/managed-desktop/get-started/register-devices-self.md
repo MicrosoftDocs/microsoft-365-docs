@@ -42,6 +42,8 @@ You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 1.	Open a PowerShell prompt with administrative rights.
 2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4.  Run `powershell -ExecutionPolicy restricted` to prevent subsequent unrestricted scripts from running.
+
 
 #### Flash drive method
 
@@ -114,7 +116,6 @@ You’re also welcome to apply the image on your own if you prefer. To get start
 > Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.
 
 If all the licenses are applied, you can [get your users ready to use devices](get-started-devices.md), and then your user can start up the device and proceed through the Windows setup experience.
-
 
 
 

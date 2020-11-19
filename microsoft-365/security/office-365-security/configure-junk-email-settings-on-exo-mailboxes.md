@@ -40,7 +40,7 @@ When the junk email rule is enabled on the mailbox, EOP is able to move messages
 Admins can use Exchange Online PowerShell to disable, enable, and view the status of the junk email rule on mailboxes. Admins can also use Exchange Online PowerShell to configure entries in the safelist collection on mailboxes (the Safe Senders list, the Safe Recipients list, and the Blocked Senders list).
 
 > [!NOTE]
-> Messages from senders that users have added to their own Safe Senders lists will skip connection filtering as part of EOP (the SCL is -1). To prevent users from adding entries to their Safe Senders list in Outlook, use Group Policy as mentioned in the  [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section later in this topic. Policy filtering, Content filtering and Advanced Threat Protection (ATP) checks will still be applied to the messages.
+> Messages from senders that users have added to their own Safe Senders lists will skip connection filtering as part of EOP (the SCL is -1). To prevent users from adding entries to their Safe Senders list in Outlook, use Group Policy as mentioned in the  [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section later in this topic. Policy filtering, Content filtering and Defender for Office 365 checks will still be applied to the messages.
 
 ## What do you need to know before you begin?
 
