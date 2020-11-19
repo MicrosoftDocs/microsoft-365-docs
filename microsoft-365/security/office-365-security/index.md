@@ -33,7 +33,7 @@ Every Office 365 subscription comes with security capabilities. The goals and ac
 1. Microsoft Defender for Office 365 Plan 2 (Defender for Office P2)
 
 > [!NOTE]
-> If you bought your subscription and need to roll out security features *right now*, skip to the steps in the [Protect Against Threats](protect-against-threats) article. If you're new to your subscription and would like to know your license before you begin, browse Billing > Your Products in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/#/homepage).
+> If you bought your subscription and need to roll out security features *right now*, skip to the steps in the [Protect Against Threats](protect-against-threats.md) article. If you're new to your subscription and would like to know your license before you begin, browse Billing > Your Products in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/#/homepage).
 
 Office 365 security builds on the core protections offered by EOP. EOP is present in any subscription where Exchange Online mailboxes can be found (remember, all the security products discussed here are Cloud-based).
 
@@ -119,7 +119,7 @@ This quick-reference will help you understand what capabilities come with each M
 
 |Defender for Office 365 Plan 1|Defender for Office 365 Plan 2|
 |---|---|
-|<br/>Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](atp-safe-attachments.md)</li><li>[Safe Links](atp-safe-links.md)</li><li>[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-phishing protection in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Defender for Office 365 Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:</li><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](office-365-air.md)</li><li>[Attack Simulator](attack-simulator.md)</li></ul>|
+|Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](atp-safe-attachments.md)</li><li>[Safe Links](atp-safe-links.md)</li><li>[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-phishing protection in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Defender for Office 365 Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:</li><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](office-365-air.md)</li><li>[Attack Simulator](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender for Office 365 Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5.
@@ -141,7 +141,7 @@ If you're a Security Admin, you may need to configure DKIM or DMARC for your mai
 
 [Email Authentication, including SPF, DKIM, and DMARC (with links to setup of all three)](email-validation-and-authentication.md)
 
-[See the specific recommended 'golden' configs](recommended-settings-for-eop-and-office365-atp) and [use their recommended presets to configure security policies quickly](preset-security-policies.md)
+[See the specific recommended 'golden' configs](recommended-settings-for-eop-and-office365-atp.md) and [use their recommended presets to configure security policies quickly](preset-security-policies.md)
 
 Catch up on [what's new in Microsoft Defender for Office 365 (including EOP developments)](whats-new-in-office-365-atp.md)
 

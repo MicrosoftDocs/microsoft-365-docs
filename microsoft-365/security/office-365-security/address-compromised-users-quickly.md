@@ -21,7 +21,7 @@ description: "Learn how to speed up the process of detecting and addressing comp
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender for Office 365 Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. Microsoft continues to improve security capabilities. Recently, AIR capabilities were enhanced to include a compromised user security playbook (currently in preview). Read this article to learn more about the compromised user security playbook. And see the blog post [Speed up time to detect and respond to user compromise and limit breach scope with Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) for additional details.
+[Microsoft Defender for Office 365 Plan 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. Microsoft continues to improve security capabilities. Recently, AIR capabilities were enhanced to include a compromised user security playbook (currently in preview). Read this article to learn more about the compromised user security playbook. And see the blog post [Speed up time to detect and respond to user compromise and limit breach scope with Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) for additional details.
 
 ![Automated investigation for a compromised user](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -68,7 +68,9 @@ You have a few options for navigating to a list of restricted users. For example
 
    ![Other alerts widget](/microsoft-365/media/office365atp-otheralertswidget.jpg)
 
-   This opens the list of restricted users.<br/>![Restricted users in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
+   This opens the list of restricted users.
+
+   ![Restricted users in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
 
 4. Select a user account in the list to view details and take action, such as [releasing the restricted user](removing-user-from-restricted-users-portal-after-spam.md).
 
@@ -82,7 +84,7 @@ To learn more, see [View details of an investigation](air-view-investigation-res
 
 - **Stay on top of your alerts**. As you know, the longer a compromise goes undetected, the larger the potential for widespread impact and cost to your organization, customers, and partners. Early detection and timely response are critical to mitigate threats, and especially when a user's account is compromised.
 
-- **Automation assists, but does not replace, your security operations team**. Automated investigation and response capabilities can detect a compromised user early on, but your security operations team will likely need to engage and do some investigation and remediation. Need some help with this? See [Review and approve actions](office-365-air.md#review-and-approve-actions).
+- **Automation assists, but does not replace, your security operations team**. Automated investigation and response capabilities can detect a compromised user early on, but your security operations team will likely need to engage and do some investigation and remediation. Need some help with this? See [Review and approve actions](air-review-approve-pending-completed-actions.md).
 
 - **Don't rely on a suspicious login alert as your only indicator**. When a user account is compromised, it might or might not trigger a suspicious login alert. Sometimes it's the series of activities that occur after an account is compromised that triggers an alert. Want to know more about alerts? See [Alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
 

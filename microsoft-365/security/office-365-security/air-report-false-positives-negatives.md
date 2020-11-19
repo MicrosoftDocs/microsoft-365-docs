@@ -67,7 +67,7 @@ With Threat Explorer, your security operations team can find an email affected b
 |Scenario|Undo Options|Learn more|
 |---|---|---|
 |An email message was routed to a user's Junk Email folder|<ul><li>Move the message to the user's Deleted Items folder</li><li>Move the message to the user's Inbox</li><li>Delete the message</li></ul>|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
-|An email message or a file was quarantined|<ul><li>Release the email or file</li><li>Delete the email or file</li></ul>|[Manage quarantined messages and files as an administrator in Office 365](hmanage-quarantined-messages-and-files.md)|
+|An email message or a file was quarantined|<ul><li>Release the email or file</li><li>Delete the email or file</li></ul>|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
 |
 
 ### Undo an action using the Actions tab for an investigation

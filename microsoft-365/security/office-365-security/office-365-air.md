@@ -77,7 +77,7 @@ During and after each automated investigation, your security operations team can
 
 ## How to get AIR
 
-AIR capabilities are included in [Microsoft Defender for Office 365](office-365-atp.md#office-365-atp-plan-1-and-plan-2), provided your policies and alerts are configured. If you would like some help with this, follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
+AIR capabilities are included in [Microsoft Defender for Office 365](microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. If you would like some help with this, follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
 
 1. [Audit logging](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) (should be turned on)
 
@@ -132,7 +132,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Next steps
 
-- [See details and results of an automated investigation](air-view-investigation-results#view-details-of-an-investigation.md)
+- [See details and results of an automated investigation](air-view-investigation-results.md#view-details-of-an-investigation)
 
 - [Review and approve pending actions](air-remediation-actions.md)
 
