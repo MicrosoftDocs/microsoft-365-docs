@@ -37,8 +37,8 @@
           href: files-to-sharepoint.md    
     - name: Mobile
       items: 
-        - name: Overview
-          href: mobile-overview.md
+        - name: Work from anywhere
+          href: work-from-anywhere.md
         - name: Install Office apps on Android
           href: install-apps-android.md
         - name: Install Office apps on iOS
