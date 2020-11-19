@@ -29,7 +29,7 @@ There are two types of redirection:
 - bidirectional: launch a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal 
 - temporary page redirection: launch a new modern SharePoint Online portal with no existing SharePoint portal
 
-The portal launch scheduler is only available to launch modern SharePoint Online portals, like communication sites and modern team sites. Launches must be scheduled at least 7 days in advance. The number of waves required is determined by the expected number of users. Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page on the portal is healthy. At the end of the portal launch, all users with permissions to the site will be able to access the new site. 
+The portal launch scheduler is only available to launch modern SharePoint Online portals, i.e. communication sites and modern team sites. Launches must be scheduled at least 7 days in advance. The number of waves required is determined by the expected number of users. Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page on the portal is healthy. At the end of the portal launch, all users with permissions to the site will be able to access the new site. 
 
 For more information about launching a successful portal, follow the basic principles, practices, and recommendations detailed in [Creating, launching and maintaining a healthy portal](https://docs.microsoft.com/sharepoint/portal-health). 
 
@@ -61,9 +61,11 @@ The number of waves required depends on your expected launch size.
 - 30k+ to 100k users: 5 waves
 - More than 100k users: 5 waves and contact your Microsoft account team
 
-### Steps for bi-directional redirection
+### Steps for bidirectional redirection
 
-Bidirectional redirection involves launching a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal. Users in active waves will be redirected to the new site regardless of whether they navigate to the old or new site. Users in a non-launched wave that try to access the new site will be redirected back to the old site until their wave is launched. Should you have administrators or owners that need access to the old and new sites without being redirected, ensure they are listed using the `WaveOverrideUsers` parameter. 
+Bidirectional redirection involves launching a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal. Users in active waves will be redirected to the new site regardless of whether they navigate to the old or new site. Users in a non-launched wave that try to access the new site will be redirected back to the old site until their wave is launched. 
+
+We only support redirection between the default home page on the old site and the default home page on the new site. Should you have administrators or owners that need access to the old and new sites without being redirected, ensure they are listed using the `WaveOverrideUsers` parameter. 
 
 To migrate users from an existing SharePoint site to a new SharePoint site in a staged manner:
 
