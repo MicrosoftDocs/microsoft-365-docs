@@ -212,6 +212,19 @@
            href: activity-reports/activity-reports.md
          - name: Monitor user productivity with Productivity score
            href: productivity/productivity-score.md
+           items:
+            - name: Content collaboration
+              href: productivity/content-collaboration.md
+            - name: Communication 
+              href: productivity/communication.md
+            - name: Mobility
+              href: productivity/mobility.md
+            - name: Teamwork
+              href: productivity/teamwork.md
+            - name: Microsoft 365 Apps health
+              href: productivity/apps-health.md
+            - name: Create DNS records at any DNS host
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
