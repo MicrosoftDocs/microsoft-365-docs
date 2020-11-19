@@ -257,7 +257,9 @@ When you configure a sensitivity label for content markings, you can use the fol
 ## Require users to apply a label to their email and documents
 
 > [!IMPORTANT]
-> Also known as mandatory labeling, not all apps on all platforms currently support the policy setting of **Require users to apply a label to their email and documents**. The [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports mandatory labeling and for labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+> Also known as mandatory labeling, not all apps on all platforms currently support the policy setting of **Require users to apply a label to their email and documents**.
+> 
+> The [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports mandatory labeling and for labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
 
 When this policy setting is selected, users assigned the policy must select and apply a sensitivity label under the following scenarios:
 
@@ -271,7 +273,7 @@ When this policy setting is selected, users assigned the policy must select and 
 
 Additional information for built-in labeling:
 
-- When users are prompted to add a sensitivity label when opening an unlabeled document, they can add a label or choose to open the document in read-only mode.
+- When users are prompted to add a sensitivity label because they open an unlabeled document, they can add a label or choose to open the document in read-only mode.
 
 - When mandatory labeling is in effect, users can't remove sensitivity labels from documents, but can change an existing label.
 
