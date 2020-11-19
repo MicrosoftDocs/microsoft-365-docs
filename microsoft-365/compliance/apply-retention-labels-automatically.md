@@ -215,7 +215,7 @@ If the expected labels don't appear after seven days, check the **Status** of th
 When you edit a retention label or auto-apply policy, and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention label and policy name, and the retention settings except the retention period and when to start the retention period.
+- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ## Locking the policy to prevent changes
