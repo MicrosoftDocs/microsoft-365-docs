@@ -118,4 +118,34 @@
         - name: Act on usage report
           href: act-on-report.md
         - name: Add another domain
-          href: add-domain.md          
+          href: add-domain.md 
+    - name: Manage devices
+      items:
+        - name: Secure Windows 10 Pro devices
+          href: secure-win-10-pro-devices.md
+        - name: Secure Office apps on iOS
+          href: secure-office-on-ios.md  
+    - name: Security & compliance
+      items: 
+        - name: Overview of Microsoft 365 Business Premium security
+          href: overview-m365-security.md
+        - name: Secure employee accounts with MFA
+          href: turn-on-mfa.md
+        - name: Set up two-factor sign-in on your phone
+          href: set-up-mfa.md
+        - name: Turn on malware detection
+          href: anti-malware.md 
+        - name: Create email rules for ransomware
+          href: prevent-ransom-in-email.md
+        - name: Stop auto-forwarding emails
+          href: stop-email-auto-forward.md
+        - name: Set up anti-phishing
+          href: setup-anti-phishing.md  
+        - name: Manage safe attachments
+          href: safe-attachments.md 
+        - name: Manage safe links
+          href: safe-links.md
+        - name: Prevent data loss
+          href: set-up-dlp.md 
+        - name: Create sensitivity labels
+          href: create-sensitivity-labels.md        

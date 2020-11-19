@@ -73,12 +73,12 @@ productDirectory:
     - title: Manage devices
       imageSrc: https://docs.microsoft.com/office/media/icons/devices-2-blue.svg
       summary: Set up policies for user devices.
-      url: https://support.microsoft.com/training
+      url: secure-win-10-pro-devices.md
     # Card
     - title: Security and compliance
       imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
       summary: Set up MFA, protect from threats, and set up compliance features.
-      url: https://support.microsoft.com/training
+      url: overview-m365-security.md
     # Card
     - title: Support
       imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
