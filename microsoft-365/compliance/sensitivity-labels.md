@@ -168,16 +168,16 @@ With a label policy, you can:
 
 - **Require users to apply a label** with one option for email and documents, and another for containers. Also known as mandatory labeling, these options ensure a label must be applied before users can save documents and send emails, and create new groups or sites.
     
-    For documents and emails, a label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option described above). An example prompt shown in Outlook when a user is required to assign a label:
+    For documents and emails, a label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option previously described). An example prompt shown in Outlook when a user is required to assign a label:
 
     ![Prompt in Outlook asking user to apply required label](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > Mandatory labeling for documents and emails currently requires the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). This client runs only on Windows, so this feature is not yet supported on Mac, iOS, and Android.
+    > Mandatory labeling for documents and emails isn't available for all apps or all platforms. It's supported by the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) that runs on Windows only. For built-in labeling that supports all platforms, this feature is in [different stages of availability for different apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
     
     For containers, a label must be assigned at the time the group or site is created.
     
-    Consider using this option to help increase your labeling coverage. However, without user training, these settings can result in inaccurate labeling. In addition, unless you also set a corresponding default label, mandatory labeling can frustrate your users with the frequent prompts. 
+    Consider using this option to help increase your labeling coverage. However, without user training, these settings can result in inaccurate labeling. In addition, unless you also set a corresponding default label, mandatory labeling can frustrate your users with the frequent prompts.
 
 - **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps:
 
