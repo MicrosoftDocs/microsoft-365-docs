@@ -262,7 +262,7 @@ When you configure a sensitivity label for content markings, you can use the fol
 When this policy setting is selected, users assigned the policy must select and apply a sensitivity label under the following scenarios:
 
 - For the Azure Information Protection unified labeling client:
-    - For documents (Word, Excel, PowerPoint): When an unlabeled document is saved.
+    - For documents (Word, Excel, PowerPoint): When an unlabeled document is saved or users close the document.
     - For emails (Outlook): At the time users send an unlabeled message.
 
 - For labeling built in to Office apps:
