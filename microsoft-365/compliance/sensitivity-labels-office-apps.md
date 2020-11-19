@@ -259,22 +259,21 @@ When you configure a sensitivity label for content markings, you can use the fol
 > [!IMPORTANT]
 > Also known as mandatory labeling, not all apps on all platforms currently support mandatory labeling. The Azure Information Protection unified labeling client supports mandatory labeling and for labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
 
-When this policy setting is selected, users must select a sensitivity label under the following scenarios:
+When this policy setting is selected, users assigned the policy must select and apply a sensitivity label under the following scenarios:
 
-- For the Azure Information Protection client:
-    - For documents (Word, Excel, PowerPoint): When the document is saved.
-    - For emails (Outlook): At the time users send an email message.
+- For the Azure Information Protection unified labeling client:
+    - For documents (Word, Excel, PowerPoint): When an unlabeled document is saved.
+    - For emails (Outlook): At the time users send an unlabeled message.
 
 - For labeling built in to Office apps:
-    - For documents ((Word, Excel, PowerPoint): Saving or opening an unlabeled document.
-    - For emails (Outlook): At the time users send an email message.
+    - For documents ((Word, Excel, PowerPoint): When an unlabeled document is opened or saved.
+    - For emails (Outlook): At the time users send an unlabeled email message.
 
 Additional information for built-in labeling:
 
 - When users are prompted to add a sensitivity label when opening an unlabeled document, they can add a label or choose to open the document in read-only mode.
 
 - When mandatory labeling is in effect, users can't remove sensitivity labels from documents, but can change an existing label.
-
 
 ## End-user documentation
 
