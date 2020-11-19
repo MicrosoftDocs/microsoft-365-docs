@@ -275,6 +275,9 @@ To use the optional configuration to scope your retention settings, make sure th
 
 ## Updating retention policies
 
+Some settings can't be changed after a retention policy is created and saved, which include:
+- The retention policy name and the retention settings except the retention period and when to start the retention period.
+
 If you edit a retention policy and items are already subject to the original settings in your retention policy, your updated settings will be automatically applied to these items in addition to items that are newly identified.
 
 Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft 365 compliance center change from **On (Pending)** to **On (Success)**.
