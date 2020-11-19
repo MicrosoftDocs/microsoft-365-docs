@@ -104,5 +104,5 @@ additionalContent:
         # Card
         - title: Microsoft 365 administration
           summary: Learn how to manage your subscription in the Microsoft 365 admin center.
-          url: admin/index.yml
+          url: ../admin/index.yml
         
