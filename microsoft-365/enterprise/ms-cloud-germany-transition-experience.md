@@ -78,8 +78,7 @@ Office Online services are accessible via office.de before and during the transi
 ## Exchange Online Protection
 
 - Back-end Exchange Online Protection features are copied to new Germany region.
-SharePoint Online and OneDrive for Business 
-- SharePoint and OneDrive resource URLs will persist in using <tenant>.sharepoint.de before and after the migration.
+- Office 365 Security and Compliance Center users need to transition to using global URLs https://protection.office.com as part of the migration.
 
 ## Skype for Business Online
 

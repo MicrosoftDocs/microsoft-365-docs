@@ -97,6 +97,7 @@ As a result of the migration, core customer data and subscriptions are moved to 
 The first step is to notify Microsoft so that we have your permission to migrate your subscription and data from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions. Please refer to the [opt-in process](https://aka.ms/office365germanymoveoptin) for instructions and note that:
 
 - All migrating customers need to verify connectivity to the Office 365 Services [Office 365 URLs and IP addresses](urls-and-ip-address-ranges.md), which include the new German datacenter regions. Inaction may result in service and client failure.
+- Review the list of [pre-work](ms-cloud-germany-transition-add-pre-work.md) activities to ensure your organization is informed and prepared for the changes.
 - You should review the Office 365 platform service description to understand which features and services will become available to your organization following the migration to the German region.
 - Trial subscriptions will not be migrated and will block migration of all paid subscriptions. You must cancel any trials or convert to paid subscriptions before migration begins.
 
@@ -176,7 +177,9 @@ There are currently 29 services available as part of Office 365 services in the 
 
 **Azure**
 
-If you are an Azure customer only, you can begin [migrating](https://docs.microsoft.com/azure/germany/germany-migration-main) your Azure resources to another region today. If you have Azure with Office 365, Dynamics 365, or Power BI, please follow the steps below.
+If you are an Azure customer only, you can begin [migrating](https://docs.microsoft.com/azure/germany/germany-migration-main) your Azure resources to another region today. 
+
+If you have Azure with Office 365, Dynamics 365, or Power BI, you must follow the migration process to ensure successful migation AzureAD before you begin the self-directed Azure migration. You must complete the Azure migration before the service closure in order to maintain your Azure workloads with your AzureAD, and Office 365 organization.
 
 **Office 365**
 
