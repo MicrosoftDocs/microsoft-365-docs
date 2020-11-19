@@ -257,7 +257,7 @@ When you configure a sensitivity label for content markings, you can use the fol
 ## Require users to apply a label to their email and documents
 
 > [!IMPORTANT]
-> Also known as mandatory labeling, not all apps on all platforms currently support the policy setting of **Require users to apply a label to their email and documents**. The Azure Information Protection unified labeling client supports mandatory labeling and for labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+> Also known as mandatory labeling, not all apps on all platforms currently support the policy setting of **Require users to apply a label to their email and documents**. The [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports mandatory labeling and for labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
 
 When this policy setting is selected, users assigned the policy must select and apply a sensitivity label under the following scenarios:
 
