@@ -58,7 +58,7 @@ The script that you run in this first step will return a list of mailbox folders
 
   - **OneDrive for Business**: https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
 
-- **Your user credentials**: The script will use your credentials to connect to Exchange Online and the Security & Compliance Center with remote PowerShell. As previously explained, you have to assign the appropriate permissions to successfully run this script.
+- **Your user credentials**: The script will use your credentials to connect to Exchange Online PowerShell or Security & Compliance Center PowerShell. As previously explained, you have to assign the appropriate permissions to successfully run this script.
 
 To display a list of mailbox folders or site documentlink (path) names:
   
@@ -94,11 +94,11 @@ To display a list of mailbox folders or site documentlink (path) names:
    {
 	  # List the folder Ids for the target mailbox
 	  $emailAddress = $addressOrSite
-	  # Authenticate with Exchange Online
+	  # Connect to Exchange Online PowerShell
 	  if (!$ExoSession)
 	  {
-		  $ExoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $credentials -Authentication Basic -AllowRedirection
-		  Import-PSSession $ExoSession -AllowClobber -DisableNameChecking
+		  Import-Module ExchangeOnlineManagement
+	      Connect-ExchangeOnline
 	  }
 	  $folderQueries = @()
 	  $folderStatistics = Get-MailboxFolderStatistics $emailAddress
@@ -127,11 +127,11 @@ To display a list of mailbox folders or site documentlink (path) names:
 	  $searchActionName = "SPFoldersSearch_Preview"
 	  # List the folders for the SharePoint or OneDrive for Business Site
 	  $siteUrl = $addressOrSite
-	  # Authenticate with the Security & Compliance Center
+	  # Connect to Security & Compliance Center PowerShell
 	  if (!$SccSession)
 	  {
-		  $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection
-		  Import-PSSession $SccSession -AllowClobber -DisableNameChecking
+		  Import-Module ExchangeOnlineManagement
+	      Connect-IPPSSession
 	  }
 	  # Clean-up, if the script was aborted, the search we created might not have been deleted.  Try to do so now.
 	  Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
@@ -174,6 +174,9 @@ To display a list of mailbox folders or site documentlink (path) names:
 	  Write-Error "Couldn't recognize $addressOrSite as an email address or a site URL"
    }
    ```
+
+   > [!IMPORTANT]
+   > You can use the previous script as-is if you are a Microsoft 365 or a Microsoft 365 GCC organization. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. Specifically, you have to edit the line `Connect-ExchangeOnline` and use the *ExchangeEnvironmentName* parameter (and the appropriate value for your organization type) to connect to Exchange Online PowerShell.  Also, you have to edit the line `Connect-IPPSSession` and use the *ConnectionUri* and *AzureADAuthorizationEndpointUri* parameters (and the appropriate values for your organization type) to connect to Security & Compliance Center PowerShell. For more information, see the examples in [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa) and [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
 2. On your local computer, open Windows PowerShell and go to the folder where you saved the script.
 
