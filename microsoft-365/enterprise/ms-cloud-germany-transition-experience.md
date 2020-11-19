@@ -43,7 +43,7 @@ What isn't changing:
 
 - Tenant initial domain (such as contoso.onmicrosoft.de) with tenant ID (GUID) and custom domains will persist after the migration. 
 
-- Authentication requests for resources that are migrated to Office 365 services are granted by the Office 365 services Azure authentication service (login.microsoftonline.com).<!--v-gmoor: Can we change "Office 365 services Azure authentication service" to "Azure authentication service"? The current name is long, has "service" twice in its name, and includes "Office 365 services", which appears just a few words earlier in this sentence.--> During the migration, resources that remain still in Office 365 Germany are authenticated by the existing Germany Azure service (login.microsoftonline.de).
+- Authentication requests for resources that are migrated to Office 365 services are granted by the Office 365 services Azure authentication service (login.microsoftonline.com). During the migration, resources that remain still in Office 365 Germany are authenticated by the existing Germany Azure service (login.microsoftonline.de).
 
 Considerations to note:
 
@@ -53,7 +53,7 @@ Considerations to note:
 
 - Password resets, password changes, password reset by an admin for managed organizations (not using Active Directory Federation Services) must be performed via the Office 365 services portal. Attempts by users who access Microsoft Cloud Deutschland portals to reset passwords will fail.
 
-- GDPR Data Subject Requests (DSRs) are executed from the Office 365 services Azure admin portal<!--v-gmoor: Do we need to prepend "Azure admin portal" with "Office 365 services"? Would "Azure admin portal" alone be sufficient here?--> for future requests. Any legacy or non-customer diagnostic data that is information resident in Microsoft Cloud Deutschland is deleted at or before 30 days.
+- GDPR Data Subject Requests (DSRs) are executed from the Office 365 services Azure admin portal for future requests. Any legacy or non-customer diagnostic data that is information resident in Microsoft Cloud Deutschland is deleted at or before 30 days.
 
 ## Subscriptions & Licenses
 
@@ -69,7 +69,7 @@ Considerations to note:
 
 - Mailboxes are migrated as a backend process. Users in your organization may be in either Microsoft Cloud Deutschland or the German region during the transition and are part of the same Exchange organization (global address list [GAL]).
 
-- Users of Outlook Web App (OWA) who access the service by using a URL where their mailbox does not reside will see an extra authentication prompt. For example, if the user's mailbox is in the Office 365 services and the user’s OWA<!--v-gmoor: Is "OWA" still an allowed abbreviation? Other MS docs seem to be using only "Outlook on the web" and "Outlook Web App", though "OWA" still appears in TOC text. Example: https://docs.microsoft.com/en-us/exchange/troubleshoot/client-connectivity/set-up-web-access Acrolinx says "Do not use."--> connection uses the legacy endpoint outlook.office.de, the user will first authenticate to login.microsoftonline.de, and then to login.microsoftonline.com. When migration is complete, the user can access the new URL (https://outlook.office365.com), and they will see only the single, expected sign-in request. 
+- Users of Outlook Web App (OWA) who access the service by using a URL where their mailbox does not reside will see an extra authentication prompt. For example, if the user's mailbox is in the Office 365 services and the user’s OWA connection uses the legacy endpoint outlook.office.de, the user will first authenticate to login.microsoftonline.de, and then to login.microsoftonline.com. When migration is complete, the user can access the new URL (https://outlook.office365.com), and they will see only the single, expected sign-in request. 
 
 ## Office Services
 
@@ -78,7 +78,7 @@ Office Online services are accessible via office.de before and during the transi
 ## Exchange Online Protection
 
 - Back-end Exchange Online Protection features are copied to new Germany region.
-SharePoint Online and OneDrive for Business <!--v-gmoor: Where does this fragment belong?>
+SharePoint Online and OneDrive for Business 
 - SharePoint and OneDrive resource URLs will persist in using <tenant>.sharepoint.de before and after the migration.
 
 ## Skype for Business Online
