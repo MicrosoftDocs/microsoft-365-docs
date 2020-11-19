@@ -82,7 +82,7 @@ If you are using hybrid:
 \* (i) Customers with Microsoft Dynamics 365 must take action in this migration scenario as defined by the Migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii)When Microsoft is unable to complete the migration due to the customer’s inaction, then the customer’s subscription will expire on October 29, 2021. 
 
 
-### PowerBI
+### Power BI
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|

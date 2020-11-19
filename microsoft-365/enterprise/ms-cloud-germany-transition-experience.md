@@ -21,9 +21,9 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Summary: Understand the experience of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Customer experience during the migration to Office 365 services in the new German datacenter regions 
+# Customer experience during the migration to Office 365 services in the new German datacenter regions
 
-Tenant migrations are designed to have minimal impact to administrators and users. However, there are considerations for each workload. Please review the following sections to have a better understanding of the migration experience for the workloads.
+Tenant migrations are designed to have minimal effect on administrators and users. However, there are considerations for each workload. Please review the following sections to have a better understanding of the migration experience for the workloads.
 
 Here are the key differences between Microsoft Cloud Deutschland and Office 365 services in the new German datacenter regions.
 
@@ -39,47 +39,55 @@ Here are the key differences between Microsoft Cloud Deutschland and Office 365 
 
 ## Azure Active Directory
 
-What is not changing:
+What isn't changing:
 
 - Tenant initial domain (such as contoso.onmicrosoft.de) with tenant ID (GUID) and custom domains will persist after the migration. 
-- Authentication requests for resources that are migrated to Office 365 services are granted by the Office 365 services Azure authentication service (login.microsoftonline.com). During the migration, resources that remain still in Office 365 Germany are authenticated by the existing Germany Azure service (login.microsoftonline.de)
+
+- Authentication requests for resources that are migrated to Office 365 services are granted by the Office 365 services Azure authentication service (login.microsoftonline.com).<!--v-gmoor: Can we change "Office 365 services Azure authentication service" to "Azure authentication service"? The current name is long, has "service" twice in its name, and includes "Office 365 services", which appears just a few words earlier in this sentence.--> During the migration, resources that remain still in Office 365 Germany are authenticated by the existing Germany Azure service (login.microsoftonline.de).
 
 Considerations to note:
 
-- For managed domain accounts, once the initial Azure Active Directory (Azure AD) tenant copy completes (the first step of Azure AD migration to the Office 365 services Azure AD service), password changes, Self-service password reset (SSPR) changes, and password resets by administrators must be done from the Office 365 service portals. Requests to update passwords from the Germany service will not succeed at this point since the Azure AD tenant has been migrated to Office 365 services. Federated domain password resets are not affected as these are completed in the on-premises directory. 
-- Azure Sign-Ins are presented in the portal where the user attempts access. Audit Logs are available from only the Office 365 services endpoint after transition. You should save Sign-in and Audit logs from the Microsoft Cloud Deutschland portal prior to the completion of migration.
-- Password resets, password changes, password reset by admin for managed (non AD FS) organizations must be performed via the Office 365 services portal. Attempts by users who access Microsoft Cloud Deutschland portals and to perform password reset will fail.
-- GDPR Data Subject Requests (DSRs) are executed from the Office 365 services Azure admin portal for future requests. Any legacy or non-customer diagnostic data information resident Microsoft Cloud Deutschland is deleted at or before 30 days.
+- For managed domain accounts, once the initial Azure Active Directory (Azure AD) tenant copy completes (the first step of Azure AD migration to the Office 365 services Azure AD service), password changes, Self-service password reset (SSPR) changes, and password resets by administrators must be done from the Office 365 service portals. Requests to update passwords from the Germany service won't succeed at this point, because the Azure AD tenant has been migrated to Office 365 services. Resets of federated domain passwords aren't affected, because these are completed in the on-premises directory.
+
+- Azure sign-ins are presented in the portal where the user attempts access. Audit Logs are available from only the Office 365 services endpoint after transition. Before to the completion of migration, you should save Sign-in and Audit logs from the Microsoft Cloud Deutschland portal.
+
+- Password resets, password changes, password reset by an admin for managed organizations (not using Active Directory Federation Services) must be performed via the Office 365 services portal. Attempts by users who access Microsoft Cloud Deutschland portals to reset passwords will fail.
+
+- GDPR Data Subject Requests (DSRs) are executed from the Office 365 services Azure admin portal<!--v-gmoor: Do we need to prepend "Azure admin portal" with "Office 365 services"? Would "Azure admin portal" alone be sufficient here?--> for future requests. Any legacy or non-customer diagnostic data that is information resident in Microsoft Cloud Deutschland is deleted at or before 30 days.
 
 ## Subscriptions & Licenses
 
-- Office 365 and Dynamics subscriptions from Microsoft Cloud Deutschland are transitioned to the German region with the Azure AD relocation. The organization is then updated to reflect new Office 365 Services subscriptions. During the brief subscription transfer process, changes to subscriptions will be blocked.
-- As the tenant is transitioned to Office 365 services, its Germany-specific subscriptions and licenses are standardized with new Office 365 services offerings. Corresponding Office 365 services subscriptions are purchased for the transferred Germany subscriptions. Users with Germany licenses assigned will be assigned Office 365 services licenses. Legacy Germany subscriptions are cancelled and removed from the current Office 365 services tenant upon completion.
-- Additional functionality is made available through the Office 365 services (such as Microsoft Planner, and Microsoft Flow) as a result of the new Office 365 services subscriptions and after migration of the individual workloads. If appropriate for your organization, the tenant or licensing admin can disable new service plans as you plan for change management to introduce the new services. Review this [guidance](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses) on how to disable service plans assigned to users’ licenses.
+- Office 365 and Dynamics subscriptions from Microsoft Cloud Deutschland are transitioned to the German region with the Azure AD relocation. The organization is then updated to reflect new Office 365 Services subscriptions. During the brief subscription transfer process, changes to subscriptions are blocked.
+
+- As the tenant is transitioned to Office 365 services, its Germany-specific subscriptions and licenses are standardized with new Office 365 services offerings. Corresponding Office 365 services subscriptions are purchased for the transferred Germany subscriptions. Users who have Germany licenses will be assigned Office 365 services licenses. Upon completion, legacy Germany subscriptions are canceled and removed from the current Office 365 services tenant.
+
+- After migration of the individual workloads, additional functionality is made available through the Office 365 services (such as Microsoft Planner and Microsoft Flow) because of the new Office 365 services subscriptions. If appropriate for your organization, the tenant or licensing admin can disable new service plans as you plan for change management to introduce the new services. For guidance on how to disable service plans that are assigned to users' licenses, see [Disable access to Microsoft 365 services while assigning user licenses](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
 
 ## Exchange Online
 
-- Exchange resource URLs transition from the legacy Germany endpoint outlook.office.de to the Office 365 services endpoint outlook.office365.com after the migration. Your users may access their migrated mailbox using the legacy URL until the migration completes. Customers should transition users to the new URL as soon as possible after Exchange migration begins to avoid impact on retirement of the Germany environment. The Office 365 services URLs for Outlook services become available only after Exchange migration begins.
-- Mailboxes are migrated as a backend process, users in your organization may be in either Microsoft Cloud Deutschland or German region during the transition and are part of the same Exchange organization (global address list [GAL]).
-- Users in Outlook Web Access (OWA) who access the service with a URL where their mailbox does not reside will see an extra authentication prompt. For example, If the user mailbox is in the Office 365 services and the user’s OWA connection uses the legacy endpoint outlook.office.de, the user will first authenticate to login.microsoftonline.de, then to login.microsoftonline.com. When the user transitions to the correct URL (https://outlook.office365.com), they will see only the one expected login request. 
+- Exchange resource URLs transition from the legacy Germany endpoint outlook.office.de to the Office 365 services endpoint outlook.office365.com after the migration. Your users may access their migrated mailbox by using the legacy URL until the migration completes. Customers should transition users to the new URL as soon as possible after Exchange migration begins to avoid affecting retirement of the Germany environment. The Office 365 services URLs for Outlook services become available only after Exchange migration begins.
+
+- Mailboxes are migrated as a backend process. Users in your organization may be in either Microsoft Cloud Deutschland or the German region during the transition and are part of the same Exchange organization (global address list [GAL]).
+
+- Users of Outlook Web App (OWA) who access the service by using a URL where their mailbox does not reside will see an extra authentication prompt. For example, if the user's mailbox is in the Office 365 services and the user’s OWA<!--v-gmoor: Is "OWA" still an allowed abbreviation? Other MS docs seem to be using only "Outlook on the web" and "Outlook Web App", though "OWA" still appears in TOC text. Example: https://docs.microsoft.com/en-us/exchange/troubleshoot/client-connectivity/set-up-web-access Acrolinx says "Do not use."--> connection uses the legacy endpoint outlook.office.de, the user will first authenticate to login.microsoftonline.de, and then to login.microsoftonline.com. When migration is complete, the user can access the new URL (https://outlook.office365.com), and they will see only the single, expected sign-in request. 
 
 ## Office Services
 
-Office Online services are accessible via office.de before and during the transition. After user mailboxes are transitioned to the Office 365 services, users should begin to use Office 365 services URLs. As subsequent workloads migrate to Office 365 Services their interface from the office.com portal will begin to work.
+Office Online services are accessible via office.de before and during the transition. After users' mailboxes are transitioned to the Office 365 services, users should begin to use Office 365 services URLs. As subsequent workloads migrate to Office 365 services, their interface from the office.com portal will begin to work.
 
 ## Exchange Online Protection
 
 - Back-end Exchange Online Protection features are copied to new Germany region.
-SharePoint Online and OneDrive for Business
-- SharePoint and OneDrive resource URLs will persist using <tenant>.sharepoint.de before and after the migration.
+SharePoint Online and OneDrive for Business <!--v-gmoor: Where does this fragment belong?>
+- SharePoint and OneDrive resource URLs will persist in using <tenant>.sharepoint.de before and after the migration.
 
 ## Skype for Business Online
 
-Existing Skype for Business Online customers will transition to Microsoft Teams. See [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home) for more information.
+Existing Skype for Business Online customers will transition to Microsoft Teams. For more information, see [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home).
 
 ## Office 365 Video
 
-Office 365 Video is being retired on March 1, 2021 and Office 365 Video will not be supported after the SharePoint Online migration to the new German datacenter regions is completed. Content from Office 365 Video will be migrated as part of the SharePoint Online migration. However, Videos in Office 365 Video will not play back in the Office 365 Video UI after the SharePoint migration. Learn [more](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline) on the Office 365 Video transition to Microsoft Stream.
+Office 365 Video is being retired on March 1, 2021, and Office 365 Video won't be supported after migration of SharePoint Online to the new German datacenter regions is completed. Content from Office 365 Video will be migrated as part of migrating SharePoint Online. However, videos in Office 365 Video won't play back in the Office 365 Video UI after the SharePoint migration. Learn more about the migration timeline on [Office 365 Video transition to Microsoft Stream (classic) overview](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
 
 ## More information
 

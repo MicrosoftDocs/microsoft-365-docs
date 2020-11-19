@@ -1,5 +1,5 @@
 ---
-title: "Additional device nformation for the migration from Microsoft Cloud Deutschland"
+title: "Additional device information for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,7 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: "Summary: Additional device information on services when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region." 
+description: "Summary: Additional device information on services when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
 # Additional device information for the migration from Microsoft Cloud Deutschland
@@ -36,7 +36,7 @@ Ensure all of your devices are registered with the worldwide endpoint before you
   
 **When do my users re-register their devices?**
 
-It's critical to your success, that you only perform the un-registration and re-registration of your devices during migration stage Separate from Microsoft Cloud Deutschland
+It's critical to your success, that you only perform the unregistration and re-registration of your devices during migration stage Separate from Microsoft Cloud Deutschland
 
 **How do I restore my device state after migration?**
 
