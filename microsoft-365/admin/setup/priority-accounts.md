@@ -22,14 +22,13 @@ In every Microsoft 365 organization, there are people that are essential, like e
 To help your organization protect these accounts, you can now designate specific users as priority accounts and leverage app-specific features that provide them with extra protection. In the future, more apps and features will support priority accounts, and to start with, we’ve announced two capabilities: **priority account protection** and **premium mail flow monitoring**.
 
 - **Priority account protection** - Microsoft Defender for Office 365 (formerly Office 365 Advanced Threat Protection) supports priority accounts as tags that can be used in filters in alerts, reports, and investigations. For more information, check out [User tags in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
-- **Premium Mail Flow Monitoring** - Healthy mail flow can be critical to business success, and delivery delays or failures can have a negative impact on the business. You can choose a threshold for failed or delayed emails, receive alerts when that threshold is exceeded, and view a report of email issues for priority accounts. For more information, check out [Email issues for priority accounts report in the modern EAC](https://docs.microsoft.com/en-us/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).
-
+- **Premium Mail Flow Monitoring** - Healthy mail flow can be critical to business success, and delivery delays or failures can have a negative impact on the business. You can choose a threshold for failed or delayed emails, receive alerts when that threshold is exceeded, and view a report of email issues for priority accounts. For more information, check out [Email issues for priority accounts report in the modern EAC](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).
 
 ## Before you begin
 
 The **Priority account protection** feature that's described in this topic is available only to organizations that meet the following requirements:
 
-- Office 365 Plan 2, including those with Office 365 E5, Microsoft 365 E5, or Microsoft 365 E5 Security.
+- Microsoft Defender for Office 365 Plan 2, including those with Office 365 E3, Office 365 E5, Microsoft 365 E5, or Microsoft 365 E5 Security.
 
 The **Premium Mail Flow Monitoring** feature that's described in this topic is available only to organizations that meet both of the following requirements:
 
@@ -78,4 +77,5 @@ Add priority accounts from the Active users page.
 4. On the **Priority accounts** page, select the user or users you want to remove from the list and choose, **Remove accounts**.
 
 ## Related topics
-Link to blog
+
+[Using Priority Accounts in Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
