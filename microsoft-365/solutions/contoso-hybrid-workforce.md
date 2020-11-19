@@ -1,5 +1,5 @@
 ---
-title: "Contoso's COVID-19 response and support for their hybrid workforce"
+title: "Contoso's COVID-19 response and support for a hybrid workforce"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,7 +17,7 @@ ms.custom:
 description: Understand how the Contoso Corporation responded to the COVID-19 pandemic and engineered their software install and update infrastructure for a hybrid workforce.
 ---
 
-# Contoso's COVID-19 response and support for their hybrid workforce
+# Contoso's COVID-19 response and support for a hybrid workforce
 
 Contoso had always supported its remote workers, who accessed on-premises resources through a central VPN server in the Paris headquarters. Contoso had issued all remote workers a managed laptop. On-premises workers had a mixture of desktop computers and laptops.
 
@@ -27,7 +27,7 @@ With the onset of the COVID-19 pandemic, suddenly all but essential workers were
 
 Contoso had remote access VPN servers in the Paris headquarters office to support the 25% of its already remote workforce, but quickly moved to scale up it's remote access capacity to support 90% of its workforce. Contoso deployed remote access VPN servers in each satellite office so that remote workers would use a regionally close entry point for access to the Contoso intranet.
 
-Contoso also updated the configuration of VPN clients installed on laptops, tablets, and smart phones for split tunneling so that traffic for the Optimize set of Office 365 endpoints bypassed the VPN connection and was sent directly over the internet. For more information, see [Optimize Office 365 connectivity for remote users using VPN split tunneling](microsoft-365-vpn-split-tunnel.md).
+Contoso also updated the configuration of VPN clients installed on laptops, tablets, and smart phones for split tunneling so that traffic for the Optimize set of Office 365 endpoints bypassed the VPN connection and was sent directly over the internet. For more information, see [Optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
 Here is the resulting configuration with VPN devices installed in the Paris headquarters and each of the satellite offices. 
 
@@ -63,7 +63,7 @@ This means some of the installs and updates for roaming device will be done over
 
 Here is the resulting infrastructure.
 
-![Contoso's installs and updates infrastructure](../media/contoso-hybrid-workforce/contoso-update-infrastructure.png)
+![Contoso's installs and updates infrastructure](../media/contoso-hybrid-workforce/contoso-updates-infrastructure.png)
 
 Install and update behavior is determined by making the computer accounts of devices a member of one of these groups:
 
