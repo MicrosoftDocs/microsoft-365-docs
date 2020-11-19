@@ -28,6 +28,14 @@ ms.custom:
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
+## November 2020
+
+### Added 3 services related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+
+- Fix unquoted service path for Windows services
+- Change service executable path to a common protected location
+- Change service account to avoid cached password in windows registry
+
 ## October 2020
 
 ### Remove improvement action related to Microsoft Defender for Endpoint
