@@ -83,7 +83,7 @@ productDirectory:
     - title: Support
       imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
       summary: Get support or assistance.
-      url: https://support.microsoft.com/training
+      url: find-help-answers.md
 
 # additionalContent section (optional)
 # Card with summary style
