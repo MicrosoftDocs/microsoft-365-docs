@@ -130,8 +130,8 @@ To display a list of mailbox folders or site documentlink (path) names:
 	  # Authenticate with the Security & Compliance Center
 	  if (!$SccSession)
 	  {
-		  $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection
-		  Import-PSSession $SccSession -AllowClobber -DisableNameChecking
+		$UserCredential = Get-Credential
+Connect-IPPSSession -Credential $UserCredential [-ConnectionUri <URL>] [-AzureADAuthorizationEndpointUri <URL>] [-PSSessionOption $ProxyOptions]
 	  }
 	  # Clean-up, if the script was aborted, the search we created might not have been deleted.  Try to do so now.
 	  Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
