@@ -23,7 +23,7 @@ description: "This article describes how you can launch your portal using the Po
 
 A portal is a SharePoint site on your intranet that has a large number of site viewers who consume content on the site. Launching your portal in waves is an important part of ensuring users have a smooth and performant experience accessing a new SharePoint Online portal. 
 
-Launching in waves is a key way to roll-out your portal, as detailed in [Planning your portal launch roll-out plan in SharePoint Online](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). The Portal Launch Scheduler is designed to help you follow a wave / phased roll-out approach by managing the redirects for the new portal. During each of the waves, you can gather user feedback and monitor performance during each wave of deployment. This has the advantage of slowly introducing the portal, giving you the option to pause and resolve issues before proceeding with the next wave, and ultimately ensuring a positive experience for your users. 
+Launching in waves is a key way to roll-out your portal, as detailed in [Planning your portal launch roll-out plan in SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). The Portal Launch Scheduler is designed to help you follow a wave / phased roll-out approach by managing the redirects for the new portal. During each of the waves, you can gather user feedback and monitor performance during each wave of deployment. This has the advantage of slowly introducing the portal, giving you the option to pause and resolve issues before proceeding with the next wave, and ultimately ensuring a positive experience for your users. 
 
 There are two types of redirection: 
 - bidirectional: launch a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal 
@@ -65,7 +65,7 @@ The number of waves required depends on your expected launch size.
 
 Bidirectional redirection involves launching a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal. Users in active waves will be redirected to the new site regardless of whether they navigate to the old or new site. Users in a non-launched wave that try to access the new site will be redirected back to the old site until their wave is launched. 
 
-We only support redirection between the default home page on the old site and the default home page on the new site. Should you have administrators or owners that need access to the old and new sites without being redirected, ensure they are listed using the `WaveOverrideUsers` parameter. 
+We only support redirection between the default home page on the old site and the default home page on the new site. Should you have administrators or owners that need access to the old and new sites without being redirected, ensure they are listed using the `WaveOverrideUsers` parameter. Should you have administrators or owners that need access to the old and new sites without being redirected, ensure they are listed using the `WaveOverrideUsers` parameter. We only support redirection between the default home page on the old site and the default home page on the new site.
 
 To migrate users from an existing SharePoint site to a new SharePoint site in a staged manner:
 

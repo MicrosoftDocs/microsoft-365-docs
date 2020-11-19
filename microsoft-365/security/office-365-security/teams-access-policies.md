@@ -59,17 +59,17 @@ These are the dependent services to include in the assignment of cloud apps for 
 This table lists the policies that need to be revisited and links to each policy in the [common identity and device access policies](identity-access-policies.md), which has the wider policy set for all Office applications.
 
 |Protection level|Policies|Further information for Teams implementation|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Be sure Teams and dependent services are included in the list of apps. Teams has Guest Access and External Access rules to consider as well, you'll learn more about these later in this article.|
-|        |[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include Teams and dependent services in the assignment of cloud apps.|
-|        |[High risk users must change password](identity-access-policies.md#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account. Be sure Teams and dependent services are included in the list of apps.|
-|        |[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure Teams and dependent services are included in the list of apps. Update the policy for each platform (iOS, Android, Windows).|
-|        |[Define device compliance policies](identity-access-policies.md#define-device-compliance-policies)|Include Teams and dependent services in this policy.|
-|        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include Teams and dependent services in this policy.|
+||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include Teams and dependent services in the assignment of cloud apps.|
+||[High risk users must change password](identity-access-policies.md#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account. Be sure Teams and dependent services are included in the list of apps.|
+||[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure Teams and dependent services are included in the list of apps. Update the policy for each platform (iOS, Android, Windows).|
+||[Define device compliance policies](identity-access-policies.md#define-device-compliance-policies)|Include Teams and dependent services in this policy.|
+||[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include Teams and dependent services in this policy.|
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams has Guest Access and External Access rules to consider as well, you'll learn more about these later in this article. Include Teams and dependent services in this policy.|
-|         |[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Teams and dependent services in this policy.|
+||[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Teams and dependent services in this policy.|
 |**Highly regulated**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization. Include Teams and dependent services in this policy. |
-| | |
+|
 
 ## Teams dependent services architecture
 
@@ -90,27 +90,27 @@ Microsoft Teams defines the following:
 Conditional Access policies only apply to guest access in Teams because there is a corresponding Azure AD B2B account.
 
 <!--
-In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. 
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
 
---> 
+-->
 
 For recommended policies to allow access for guest and external users with an Azure AD B2B account, see [Policies for allowing guest and external B2B account access](identity-access-policies-guest-access.md).
 
 ### Guest access in Teams
 
-In addition to the policies for users who are internal to your business or organization, administrators may enable guest access to allow, on a user-by-user basis, people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings. 
+In addition to the policies for users who are internal to your business or organization, administrators may enable guest access to allow, on a user-by-user basis, people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings.
 
 For more information about guest access and how to implement it, see  [Teams guest access](https://docs.microsoft.com/microsoftteams/guest-access).
 
 ### External access in Teams
 
-External access is sometimes confused with guest access, so it's important to be clear that these two non-internal access mechanisms are actually quite different. 
+External access is sometimes confused with guest access, so it's important to be clear that these two non-internal access mechanisms are actually quite different.
 
 External access is a way for Teams users from an entire external domain to find, call, chat, and set up meetings with your users in Teams. Teams administrators configure external access at the organization level. For more information, see [Manage external access in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access).
 
 External access users have less access and functionality than an individual who's been added via guest access. For example, external access users can chat with your internal users with Teams but cannot access team channels, files, or other resources.
 
-External access does not use Azure AD B2B user accounts and therefore does not use Conditional Access policies. 
+External access does not use Azure AD B2B user accounts and therefore does not use Conditional Access policies.
 
 ## Teams policies
 
@@ -146,4 +146,3 @@ Configure Conditional Access policies for:
 
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
-

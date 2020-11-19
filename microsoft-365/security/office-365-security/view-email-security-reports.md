@@ -329,7 +329,7 @@ The following views are available:
   - **EOP URL reputation**: Malicious URL reputation.
   - **General phish filter**: Phishing signals based on analyst rules.
   - **Others**
-  - **Phish ZAP**<sup>2</sup>: Zero hour auto purge phishing messages.
+  - **Phish ZAP**<sup>2</sup>: Zero hour auto purge of phishing messages.
   - **URL detonation**<sup>1</sup>
   - **User impersonation**<sup>1</sup>: Impersonation of users defined by admin or learned through mailbox intelligence.
 
@@ -474,7 +474,7 @@ The **URL threat protection report** is available in Microsoft Defender for Offi
 
 ## User-reported messages report
 
-The **User-reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in).
+The **User-reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](enable-the-report-message-add-in.md).
 
 Details are available for each message, including the delivery reason, such a spam policy exception or mail flow rule configured for your organization. To view details, select an item in the user-reports list, and then view the information on the **Summary** and **Details** tabs.
 
@@ -501,7 +501,7 @@ To view and use the reports, you need to be a member of the specified role group
   -Security Administrator (you can also do this in the [Azure Active Directory admin center](https://aad.portal.azure.com)
   -Security Reader
 
-  For more information, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - In Exchange Online, you need to be a member of one of the following role groups:
 

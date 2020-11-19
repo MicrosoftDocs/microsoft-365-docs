@@ -27,6 +27,8 @@ First, learn about the [Contoso Corporation](../enterprise/contoso-overview.md),
 
 Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
 
+- [COVID-19 response and infrastructure for a hybrid workforce](contoso-hybrid-workforce.md)
+
 - [An isolated team for a top-secret project](contoso-team-for-top-secret-project.md)
 
 - [Migration of their on-premises users to Teams for unified communication, collaboration, and voice](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
