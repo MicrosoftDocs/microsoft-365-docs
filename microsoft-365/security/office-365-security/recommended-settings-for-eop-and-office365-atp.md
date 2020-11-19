@@ -139,7 +139,7 @@ For more information about these settings, see [Spoof settings](set-up-anti-phis
 
 ## Microsoft Defender for Office 365 security
 
-Additional security benefits come with an Microsoft Defender for Office 365 subscription. For the latest news and information, you can see [What's new in Defender for Office 365](whats-new-in-office-365-atp.md).
+Additional security benefits come with a Microsoft Defender for Office 365 subscription. For the latest news and information, you can see [What's new in Defender for Office 365](whats-new-in-office-365-atp.md).
 
 > [!IMPORTANT]
 >

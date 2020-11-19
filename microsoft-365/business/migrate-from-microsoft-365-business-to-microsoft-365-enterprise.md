@@ -124,7 +124,7 @@ Windows 10 Business includes these protections:
 Windows 10 Enterprise E3 also includes enterprise management of hardware-based isolation for Microsoft Edge.
 
 >[!Note]
->Users migrated to Microsoft 365 E3 will each require an Microsoft Defender for Office 365 license for continued threat protection. Be sure to purchase additional Defender for Office 365 licenses so that all of the users in scope of your Defender for Office 365 polices are licensed. 
+>Users migrated to Microsoft 365 E3 will each require a Microsoft Defender for Office 365 license for continued threat protection. Be sure to purchase additional Defender for Office 365 licenses so that all of the users in scope of your Defender for Office 365 polices are licensed. 
 >
 
 ### Device management with Intune

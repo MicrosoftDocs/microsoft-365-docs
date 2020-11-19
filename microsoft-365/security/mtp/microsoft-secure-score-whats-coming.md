@@ -31,7 +31,7 @@ We're making some changes in the near future to make [Microsoft Secure Score](mi
 
 Removing the ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow**.
 
-- The preview period for the ServiceNow connector is ending. This capability will no longer available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
+- The preview period for the ServiceNow connector is ending. This capability will no longer be available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
 
 
 ## Related resources
