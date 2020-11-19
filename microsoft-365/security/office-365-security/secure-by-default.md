@@ -43,7 +43,7 @@ Because Microsoft wants to keep our customers secure by default, some tenants ov
 - Outlook Safe senders
 - IP Allow List (connection filtering)
 
-More information on these overrides can be found in [Create safe sender lists](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
+More information on these overrides can be found in [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 Secure by default here is not a setting that could be turned on or off, but the way our filtering works out of the box to keep potentially dangerous or unwanted messages out of your mailboxes. Malware and high confidence phishing should be sent to quarantine. Only admins can manage messages that were quarantined as malware or high confidence phishing and they can also report false positives to Microsoft from there. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
 
