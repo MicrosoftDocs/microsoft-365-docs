@@ -30,7 +30,7 @@ Various limits are applied to the Content Search feature in the Security & Compl
 
 The following table lists the search limits in the Security & Compliance Center.
   
-|**Description of limit**|**Limit**|
+| Description of limit | Limit |
 |:-----|:-----|
 |The maximum number of mailboxes or sites that can be searched in a single Content Search  <br/> |No limit <sup>1</sup> <br/> |
 |The maximum number of Content Searches that can run at the same time in your organization.  <br/> |30  <br/> |
@@ -56,7 +56,7 @@ The following table lists the search limits in the Security & Compliance Center.
 
 The following table describes the indexing limits that might result in an email message being returned as an unindexed item or a partially indexed item in the results of a Content Search.
   
-|**Indexing limit**|**Maximum value**|**Description**|
+| Indexing limit | Maximum value | Description |
 |:-----|:-----|:-----|
 |Maximum attachment size|150 MB  <br/> |The maximum size of an email attachment that will parse for indexing. Any attachment that's larger than this limit won't be parsed for indexing, and the message with the attachment will be marked as partially indexed.  <br/> <br/>**Note:** Parsing is the process where the indexing service extracts text from the attachment, removes unnecessary characters like punctuation and spaces, and then divides the text into words (in a process called tokenization), that are then stored in the index.           |
 |Maximum number of attachments  <br/> |250  <br/> |The maximum number of files attached to an email message that will be parsed for indexing. If a message has more than 250 attachments, the first 250 attachments are parsed and indexed, and the message is marked as partially indexed because it had additional attachments that weren't parsed.  <br/> |
