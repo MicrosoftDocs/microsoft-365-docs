@@ -85,9 +85,9 @@ To learn more, see [European Union Model Clauses](https://docs.microsoft.com/mic
 
 ### Security measures
 
-Microsoft secures your data using multiple layers of security and encryption protocols. Get an overview of Microsoft data security capabilities in the [Microsoft 365 encryption article](../compliance/encryption).
+Microsoft secures your data using multiple layers of security and encryption protocols. Get an overview of Microsoft data security capabilities in the [Microsoft 365 encryption article](../compliance/encryption.md).
 
-By default, Microsoft Managed Keys protect your customer data. Data that persists on any physical media is always encrypted using FIPS 140-2 compliant encryption protocols. You can also employ customer-managed keys (CMK), [double encryption](../compliance/double-key-encryption), and/or hardware security modules (HSMs) for increased data protection.
+By default, Microsoft Managed Keys protect your customer data. Data that persists on any physical media is always encrypted using FIPS 140-2 compliant encryption protocols. You can also employ customer-managed keys (CMK), [double encryption](../compliance/double-key-encryption.md), and/or hardware security modules (HSMs) for increased data protection.
 
 All data traffic moving between datacenters is also protected using IEEE 802.1AE MAC Security Standards, preventing physical "man-in-the-middle" attacks.
 
