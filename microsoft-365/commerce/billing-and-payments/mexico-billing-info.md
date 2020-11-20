@@ -35,7 +35,7 @@ Your invoice is sent to the registered billing notification email address 24 hou
 
 ### During the purchase process (Checkout)
 
-During the checkout purchase process, when you get to step **4. Payment and billing**, select the box to enter a RFC. This step is necessary so that you can see it reflected in your purchase invoice.
+During the checkout purchase process, when you get to step **4. Payment and billing**, select the box to enter an RFC. This step is necessary so that you can see it reflected in your purchase invoice.
 
 ### For your future purchases
 
