@@ -195,8 +195,11 @@ The following impersonation settings are only available in anti-phishing policie
   - **Impersonated domains**: The From address contains a protected domain.
   - **Unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a protected sender or domain.
 
-  > [!NOTE]
-  > Even when the impersonation safety tips are turned off, you can use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** to messages. Specific safety tips will be displayed notifying recipients that they often don't get email from the sender or in cases when the recipient gets an email for the first time from the sender.
+> [!IMPORTANT]
+>
+> Even when the impersonation safety tips are turned off, **it is recommended** you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** to messages. Specific safety tips will be displayed notifying recipients that they often don't get email from the sender or in cases when the recipient gets an email for the first time from the sender.
+>:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="The text of the safety tip for impersonation protection with multiple recipients.":::
+<p>
 
 - **Mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between legitimate and spoofed email from those contacts. Mailbox intelligence is only available for Exchange Online mailboxes.
 
