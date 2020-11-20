@@ -37,7 +37,6 @@ The ability to create ServiceNow tickets through Secure Score by going to **Shar
 
 The preview period for the ServiceNow connector is ending. This capability will no longer be available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
 
-
 ## Related resources
 
 - [Microsoft Secure Score overview](microsoft-secure-score.md)
