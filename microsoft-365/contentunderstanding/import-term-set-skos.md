@@ -8,6 +8,7 @@ audience: admin
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: 
+ms.collection: enabler-strategic
 search.appverid: 
 localization_priority: Priority
 

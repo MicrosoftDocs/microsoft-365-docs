@@ -92,7 +92,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
   > [!NOTE]
   >
   > - Anti-spoofing protection is enabled by default in the default anti-phishing policy and in any new custom anti-phishing policies that you create.
-  > 
+  >
   > - You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   For messages from blocked spoofed senders, you can also specify the action to take on the messages:
@@ -135,7 +135,7 @@ For more information, see [Identify suspicious messages in Outlook.com and Outlo
 This section describes the policy settings that are only available in anti-phishing policies in Microsoft Defender for Office 365.
 
 > [!NOTE]
-> By default, the exclusive settings in Defender for Office 365 are not configured or turned on, even in the default policy. To take advantage of these features, you need to enable and configure them in the default anti-phishing policy, or create and configure custom anti-phishing policies.
+> The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) and mailbox intelligence for all recipients. However, the other available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) features and [advanced settings](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are not configured or enabled in the default policy. To enable all protection features, modify the default anti-phishing policy or create additional anti-phishing policies.
 
 ### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 
@@ -153,7 +153,10 @@ The following impersonation settings are only available in anti-phishing policie
   You can use protected users to add internal and external sender email addresses to protect from impersonation. This list of **senders** that are protected from user impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Applied to** setting in the [Policy settings](#policy-settings) section).
 
   > [!NOTE]
-  > The maximum number of protected users (sender email addresses) that you can define in all anti-phishing policies is 60. In other words, you can have 60 protected users in one policy, 12 protected users in 5 policies, etc.
+  >
+  > - In each anti-phishing policy, you can specify a maximum of 60 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
+  >
+  > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
 
   By default, no sender email addresses are configured for impersonation protection in **Users to protect**. Therefore, by default, no sender email addresses are covered by impersonation protection, either in the default policy or in custom policies.
 
@@ -162,7 +165,7 @@ The following impersonation settings are only available in anti-phishing policie
 - **Domains to protect**: Prevents the specified domains from being impersonated **in the message sender's domain**. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of **sender domains** that are protected from impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Applied to** setting in the [Policy settings](#policy-settings) section).
 
   > [!NOTE]
-  > The maximum number of protected domains that you can define in all anti-phishing policies is 50. In other words, you can have 50 protected domains in one policy, 10 protected domains in 5 policies, etc.
+  > The maximum number of protected domains that you can define in all anti-phishing policies is 50.
 
   By default, no sender domains are configured for impersonation protection in **Domains to protect**. Therefore, by default, no sender domains are covered by impersonation protection, either in the default policy or in custom policies.
 

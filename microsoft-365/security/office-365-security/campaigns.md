@@ -110,9 +110,9 @@ The most basic filtering that you can do is the start date/time and the end date
 
 To further filter the view, you can do single property with multiple values filtering by clicking the **Campaign type** button, making your selection, and then clicking **Refresh**.
 
-The available campaign properties are described in the following list:
+The filterable campaign properties that are available in the **Campaign type** button are described in the following list:
 
-- Basic
+- **Basic**:
   - **Campaign type**: Select **Malware** or **Phish**. Clearing the selections has the same result as selecting both.
   - **Campaign name**
   - **Campaign subtype**
@@ -122,23 +122,26 @@ The available campaign properties are described in the following list:
   - **Subject**
   - **Attachment filename**
   - **Malware family**
+  - **Tags**: Users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+  - **System overrides**
   - **Delivery action**
+  - **Additional action**
+  - **Directionality**
   - **Detection technology**
-  - **Tags**
+  - **Original delivery location**
+  - **Latest delivery location**
   - **System overrides**
 
-- Advanced
+- **Advanced**:
   - **Internet message ID**: Available in the **Message-ID** header field in the message header. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).
   - **Network message ID**: A GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header field in the message header.
   - **Sender IP**
   - **Attachment SHA256**: To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
-
   - **Cluster ID**
-
   - **Alert Policy ID**
+  - **ZAP URL signal**
 
-- URLs
-
+- **URLs**:
   - **URL domain**
   - **URL domain and path**
   - **URL**
@@ -157,7 +160,7 @@ After you create a basic or advanced filter, you can save it by using **Save que
 
 To export the graph or the list of campaigns, click **Export** and select **Export chart data** or **Export campaign list**.
 
-If you have a Microsoft Defender for Endpoint subscription, you can click **WDATP** to connect or disconnect the campaigns information with Microsoft Defender for Endpoint. For more information, see [Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
+If you have a Microsoft Defender for Endpoint subscription, you can click **WDATP** to connect or disconnect the campaigns information with Microsoft Defender for Endpoint. For more information, see [Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
 
 ## Campaign details
 
@@ -206,7 +209,7 @@ The diagram contains the following information:
 
   |Value|Spam filter verdict|Description|
   |---|---|---|
-  |**Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering. For example, the message was marked as not spam by a mail flow rule (also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons. For example, the sender and recipient appear to be in the same organization.|
+  |**Allowed**|`SFV:SKN` <p> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering. For example, the message was marked as not spam by a mail flow rule (also known as a transport rule). <p> The message skipped spam filtering for other reasons. For example, the sender and recipient appear to be in the same organization.|
   |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by spam filtering. For example, by a mail flow rule.|
   |**Detected**|`SFV:SPM`|The message was marked as spam by spam filtering.|
   |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by spam filtering.|
