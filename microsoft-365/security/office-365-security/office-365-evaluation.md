@@ -31,7 +31,7 @@ The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience
 
 Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don’t act on messages. You are not required to change your MX record configuration.
 
-With evaluation mode, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links), and [anti-phishing impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are setup on your behalf. All Defender for Office 365 policies are created in non-enforcement mode in the background and are not visible to you.
+With evaluation mode, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [anti-phishing impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are setup on your behalf. All Defender for Office 365 policies are created in non-enforcement mode in the background and are not visible to you.
 
 As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) which improves filtering accuracy by preserving IP address and sender information which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. This also improves the filtering accuracy for your Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
 
@@ -102,54 +102,33 @@ You will be able to scope the evaluation to an inbound connector. If there's no 
 
 ## Get started with the evaluation lab
 
-You can evaluate Microsoft Defender for Office 365 in two ways:
+You can go through the steps to set up the Microsoft Defender for Office 365 evaluation through two access points:
 
-From the Email & collaboration navigation pane >Threat policies >  Defender for Office 365 evaluation 
-
-From the dashboard
-
- 
-From the menu
-
-In the Email & collaboration navigation menu, select Evaluation lab. 
-
-From the dashboard 
-
-Go to Microsoft Defender for Office 365 card and select Evaluate. 
+- **Navigation pane**: In the Email & collaboration section, go to Policies & rules > Threat policies >  Defender for Office 365 evaluation
+- **Dashboard**: Go to Email & collaboration dashboard > Microsoft Defender for Office 365 card. Select Evaluate.
 
 ## Setting up the evaluation lab
 
-1. In the navigation pane, select **Evaluation lab**. Select **Evaluate Microsoft Defender for Office 365** to start the free 30-day trial.
+Once you start the set-up flow, you will be given two routing options. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online. Select **Share data with Microsoft** to get the data aggregation benefits in your detection reports.
 
-2. Select Start evaluation.
+- If you are using a third party or service provider on-premises, you'll need to select the name of the vendor from the drop-down menu. Provide the other connector-related details.
 
-3. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online. Select Share data with Microsoft to get the data aggregation benefits in your detection reports. Then, select Next.
-
-    - If you are using a third party or service provider on-premises, select the name of the vendor from the drop-down menu. Provide the other connector-related details.
-    - Select I’m using Microsoft Exchange Online on the routing settings panel if the MX record points to Microsoft and you have an Exchange Online mailbox.
-
- 4. 
-
-[OPTIONAL] Exchange rules
-
-If you have an existing gateway, you might want to bypass filtering because it will activate enhanced filtering for connectors and alter the incoming sender IP address. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don’t already have one). For details on the rule components and how they work, see Mail flow rules (transport rules) in Exchange Online.
+- Select Microsoft Exchange Online if the MX record points to Microsoft and you have an Exchange Online mailbox.
 
 Review your settings and edit them if necessary. Then, select Create evaluation.
 You should get the following confirmation message to indicate that your set-up is complete.
 
-[OPTIONAL] You can go to Settings to turn off your evaluation. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
+### Exchange rules (optional)
+
+If you have an existing gateway, you might want to bypass filtering because it will activate enhanced filtering for connectors and alter the incoming sender IP address. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don’t already have one). For details on the rule components and how they work, see Mail flow rules (transport rules) in Exchange Online.
 
 ## Evaluate capabilities
 
-In your daily security operation tasks, it’s important to know what email threats are hiding in your organization, to identify the nature of the threat, monitor the trends, investigate, and remediate them.  
-
-To start evaluating Microsoft Defender Office 365’s capabilities:
+In your daily security operation tasks, it’s important to know what email threats are hiding in your organization, and to identify the nature of the threat, monitor the trends, investigate, and remediate them.  
 
 Look at the dashboard to see how many advanced threat links, advanced threat attachments, potential impersonations, were seen in the emails and collaboration workspaces in your organization.  
 
-Get the evaluation report
-
-The evaluation report summarizes the results of the scan on your email and collaboration workspaces. It is important to review them to analyze the threats, strategize on addressing them, and report out to your leadership team.
+Go to Settings to turn off your evaluation. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
 
 ## Provide feedback
 
@@ -157,10 +136,3 @@ Your feedback helps us get better at protecting your environment from advanced a
 
 Select Give feedback to let us know what you think.
 
-## Related articles
-
-[Threat investigation and response capabilities in Office 365](office-365-ti.md)
-  
-[Microsoft Defender for Office 365](office-365-atp.md)
-  
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)
