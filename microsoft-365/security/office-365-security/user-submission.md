@@ -116,17 +116,17 @@ Messages sent to custom mailboxes need to follow a specific submission mail form
 where SafetyAPIAction is one of the following integer values:
 
 - 1: Junk
-- 2: NotJunk
-- 3: Phish
+- 2: Not junk
+- 3: Phishing
 
 In the following example:
 
-- The message is being reported as Phish.
+- The message is being reported as phishing.
 - The Network Message ID is 49871234-6dc6-43e8-abcd-08d797f20abe.
 - The Sender IP is 167.220.232.101.
 - The From address is test@contoso.com.
-- The message's subject line is "test phish submission"
+- The message's subject line is "test phishing submission"
 
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
+`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Messages that do not follow this format will not display properly in the Submissions portal.

@@ -90,9 +90,9 @@ Security settings in Office 365 help protect email and content. To view or chang
 
    :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on":::
 
-   - If you see **Incidents**, **Action center**, and **Hunting**, Microsoft 365 Defender is turned on. Proceed to the next procedure, [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
+   - If you see **Incidents**, **Action center**, and **Hunting**, Microsoft 365 Defender is turned on. See the procedure, [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) (in this article).
 
-   - If you do *not* see **Incidents**, **Action center**, or **Hunting**, then Microsoft 365 Defender might not be turned on. In this case, proceed to the next step.
+   - If you do *not* see **Incidents**, **Action center**, or **Hunting**, then Microsoft 365 Defender might not be turned on. In this case, proceed to the next step ([Review pending and completed actions](#review-pending-and-completed-actions-in-the-action-center), in this article).
 
 3. In the navigation pane, choose **Settings** > **Microsoft 365 Defender**. Confirm that Microsoft 365 Defender is turned on. 
 
