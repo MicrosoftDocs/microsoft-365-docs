@@ -46,7 +46,8 @@ Are you new to Microsoft 365 for business? :::image type="icon" source="../media
 ## 3. Open Outlook and add your account
 
 1. Open **Outlook** on your computer. In the Tell me field, type **account** then **Add Account**.
-    :::image type="content" source="../media/add-outlook-account.png" alt-text="A figure showing how to add an account to Outlook.":::    
+
+    :::image type="content" source="../media/add-outlook-account.png" alt-text="A figure showing how to add an account to Outlook.":::
 
 1. Type your name, email, and password then **Next**.
 
