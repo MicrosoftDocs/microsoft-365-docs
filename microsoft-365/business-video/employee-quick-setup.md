@@ -76,4 +76,4 @@ Are you new to Microsoft 365 for business? :::image type="icon" source="../media
 - Or, open Outlook on an iOS or Android device and go to **Settings**.
 
     Choose **Add Account** then **Add Email Account** then type your email and password.
-- On a **Windows Phone**, choose **Settings**, Email + accounts, and then **Add an account** then **Exchange**.
+- On a **Windows Phone**, choose **Settings**, **Email + accounts**, and then **Add an account** then **Exchange**.
