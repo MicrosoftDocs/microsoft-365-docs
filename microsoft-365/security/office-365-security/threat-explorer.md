@@ -164,27 +164,27 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 
 ### Improvements for the URL and clicks experience
 
-The set of improvements focused towards URL and URL clicks data include:
+The improvements for URL and URL-clicks data include:
 
 - Show the full clicked URL (including any query parameters that are part of the URL) in the **Clicks** section of the URL flyout. Currently the URL domain and path appear in the title bar. We're extending that information to show the full URL.
 
-- Fixes across URL filters (URL versus URL domain versus URL domain and path): We've made updates that affect searching for messages that contain a URL/click verdict. We've enabled support for protocol-agnostic searches, so you can search for a URL without using "http"). By default, the URL search maps to http, unless this value is explicitly specified. For example:
+- Fixes across URL filters (URL versus URL domain versus URL domain and path): The updates affect searching for messages that contain a URL/click verdict. We enabled support for protocol-agnostic searches, so you can search for a URL without using `http`. By default, the URL search maps to http, unless this value is explicitly specified. For example:
 
    -  Search with and without the `http://` prefix in the **URL**, **URL Domain**, and **URL Domain and Path** filter fields. The searches should show the same results.
 
    -  Search for the `https://` prefix in **URL**. When no value is specified, the `http://` prefix is assumed.
 
-   - `/` is ignored at the beginning and end of the **URL path**, **URL Domain**, **URL domain and path** fields is ignored. `/` at the end of the **URL** field is ignored.
+   - `/` is ignored at the beginning and end of the **URL path**, **URL Domain**, **URL domain and path** fields. `/` at the end of the **URL** field is ignored.
 
 ### Phish confidence Level
 
-Phish confidence level helps to identify the degree of confidence with which an email was categorized as "Phish." The two possible values are *High* and *Normal*. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
+Phish confidence level helps to identify the degree of confidence with which an email was categorized as "phish." The two possible values are *High* and *Normal*. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
 [ ![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png) ](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### ZAP URL signal
 
-The ZAP URL signal is typically used for ZAP Phish alert scenarios where an email was identified as Phish and removed after delivery. It connects the alert with the corresponding results in Explorer. It's one of the IOCs for the alert.
+The ZAP URL signal is typically used for ZAP Phish alert scenarios where an email was identified as Phish and removed after delivery. This signal connects the alert with the corresponding results in Explorer. It's one of the IOCs for the alert.
 
 To improve the hunting process, we've update the Threat Explorer and real-time detections. These changes making the hunting experience more consistent. The changes are outlined here:
 
@@ -204,30 +204,30 @@ You can now sort and filter on system or custom user tags to quickly grasp the s
 
 ### Timezone improvements
 
-You'll see the time zone for the email records in the Portal as well as for Exported data. The time zone will be visible across experiences like Email Grid, Details flyout, Email Timeline, and Similar Emails, so that the time zone for the result set is clear to the user.
+You'll see the time zone for the email records in the Portal as well as for Exported data. It will be visible across experiences like Email Grid, Details flyout, Email Timeline, and Similar Emails, so the time zone for the result set is clear.
 
 > [!div class="mx-imgBorder"]
 > ![View Timezone in Explorer](../../media/TimezoneImprovements.png)
 
-### Update in the Refresh process
+### Update in the refresh process
 
-We've gotten feedback about confusion with automatic refresh (for example, as soon as you change the date, the page refreshes) and manual refresh (for other filters). Similarly, removing filters leads to automatic refresh. Changing filters while modifying the query can cause inconsistent search experiences. To resolve these issues, we're moving to a manual-filtering mechanism.
+Some users have commented about confusion with automatic refresh (for example, as soon as you change the date, the page refreshes) and manual refresh (for other filters). Similarly, removing filters leads to automatic refresh. Changing filters while modifying the query can cause inconsistent search experiences. To resolve these issues, we're moving to a manual-filtering mechanism.
 
-From an experience standpoint, the user can apply and remove the different range of filters (from the filter set, and date), and press the refresh button to filter the results once they're done defining the query. The refresh button has also been updated to emphasize it on the screen. We've also updated the related tooltips and in-product documentation.
+From an experience standpoint, the user can apply and remove the different range of filters (from the filter set, and date) and select the refresh button to filter the results after they've defined the query. The refresh button is also now emphasized on the screen, and we've updated the related tooltips and in-product documentation.
 
 > [!div class="mx-imgBorder"]
 > ![Click on Refresh to filter results](../../media/ManualRefresh.png)
 
 ### Chart drilldown to add to filters
 
-You can now chart legend values to add them as filters. Note that you need to select the refresh button to filter the results.
+You can now chart legend values to add them as filters. You select the refresh button to filter the results.
 
 > [!div class="mx-imgBorder"]
 > ![Drilldown through charts to Filter](../../media/ChartDrilldown.png)
 
 ### In-product information updates
 
-Additional details are now available within the product, such as the total number of search results within the grid (see below). We've improved labels, error messages, and tooltips, to provide more information about the filters, search experience, and result set.
+Additional details are now available within the product, such as the total number of search results within the grid (see below). We've improved labels, error messages, and tooltips to provide more information about the filters, search experience, and result set.
 
 > [!div class="mx-imgBorder"]
 > ![View In-product Info](../../media/ProductInfo.png)
@@ -236,22 +236,22 @@ Additional details are now available within the product, such as the total numbe
 
 ### Top targeted users
 
-Today we expose the list of the top targeted users in the Malware view for emails (within the Top Malware Families section). We will be extending this view within Phish and All Email views as well. You'll be able to see the top-five targeted users along with the number of attempts for each user for the corresponding view. For example, for Phish view, you'll see the number of Phish attempts.
+Today we expose the list of the top targeted users in the Malware view for emails (in the **Top Malware Families** section). We'll be extending this view in the Phish and All Email views as well. You'll be able to see the top-five targeted users, along with the number of attempts for each user for the corresponding view. For example, for Phish view, you'll see the number of Phish attempts.
 
-You'll also be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts for offline analysis for each email view. In addition, selecting number of attempts (for example, 13 attempts below) will open a filtered view in Threat Explorer so you can see more details across emails and threats for that user.
+You'll be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts for offline analysis for each email view. In addition, selecting the number of attempts (for example, 13 attempts below) will open a filtered view in Threat Explorer, so you can see more details across emails and threats for that user.
 
 > [!div class="mx-imgBorder"]
 > ![Top Targeted Users](../../media/Top_Targeted_Users.png)
 
 ### Exchange transport rules
 
-As part of data enrichment, you'll be able to see all the different Exchange transport rules (ETR) that were applied to a message. This information will be available in Email grid view. To view it,  select **Column options** in the grid and then **Add Exchange Transport Rule** from the Column options in the grid. It will also be visible on the Details flyout in the email.
+As part of data enrichment, you'll be able to see all the different Exchange transport rules (ETR) that were applied to a message. This information will be available in the Email grid view. To view it,  select **Column options** in the grid and then **Add Exchange Transport Rule** from the column options in the grid. It will also be visible on the Details flyout in the email.
 
-You'll be able to see both the GUID and the name of the transport rules that were applied to the message. You'll be able to search for the messages by using the name of the transport rule. This is a "Contains" search, which means you will be able to do partial searches as well.
+You'll be able to see both the GUID and the name of the transport rules that were applied to the message. You'll be able to search for the messages by using the name of the transport rule. This is a "Contains" search, which means you can do partial searches as well.
 
 #### Important note:
 
-ETR search and name availability depend on the specific role that has been assigned to you. You need to have one of the following roles/permissions to view the ETR names and search.  If you don't have any of the following roles assigned to you, you can't see the names of the transport rules or search for messages by using ETR names. However, you would be able to see the ETR label and GUID information within the Email Details. Your other experiences viewing records in Email Grids, Email flyouts, Filters, and Export are not affected.
+ETR search and name availability depend on the specific role that's assigned to you. You need to have one of the following roles/permissions to view the ETR names and search. If you don't have any of the following roles assigned to you, you can't see the names of the transport rules or search for messages by using ETR names. However, you could see the ETR label and GUID information in the Email Details. Your other experiences viewing records in Email Grids, Email flyouts, Filters, and Export are not affected.
 
 - EXO Only - Data Loss Prevention: All
 - EXO Only - O365SupportViewConfig: All
@@ -267,7 +267,7 @@ Within the email grid, Details flyout, and Exported CSV, the ETRs are presented 
 
 ### Inbound connectors
 
-Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you can now view the connectors that are related to an email as well as search for emails by using connector names.
+Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization. They give you the ability to apply any security restrictions or controls. Within Threat Explorer, you can now view the connectors that are related to an email as well as search for emails by using connector names.
 
 The search for connectors is "Contains" in nature, which means partial keyword searches should work as well. Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown here:
 
@@ -286,7 +286,7 @@ These new features are outlined below.
 
 ### Preview email header and download email body
 
-The ability to preview an email header and download the email body are new features available in Threat Explorer. Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk the exposure of information, this process is controlled by roles-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
+You can now preview an email header and download the email body in Threat Explorer. Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
 
 But Explorer (and Real-time detections) also get new fields designed to give you a more complete picture of where your email messages land. These changes  make hunting easier for Security Ops, but the main result is you can know the location of problem email messages at a glance.
 
