@@ -64,7 +64,9 @@ Are you new to Microsoft 365 for business? :::image type="icon" source="../media
 ## Share Documents
 
 1. Share your documents with others by choosing **Share**.
+
     :::image type="content" source="../media/share-office-doc.png" alt-text="Share icon in an Office app.":::
+
 1. Type their email address, choose read or edit, include a message and **Share**.
 1. Or choose **Get sharing link** on the bottom of the screen.
 
