@@ -46,11 +46,11 @@ This article lists new features in the latest release of Microsoft Defender for 
 - [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
 - [Extended capabilities in Threat Explorer including top targeted users, transport rules, and connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender for Office 365 information in [Threat Explorer](threat-explorer.md) (email was allowed/blocked by tenant/user policy) (Defender for Office 365 Plan 2)
 - Surfacing URL threats in [Threat Explorer](threat-explorer.md#threats-in-urls) (malware, phish, spam, or none) (Defender for Office 365 Plan 2)
-- [Improvements to Hunting Experience Threat Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) with updates around Threats, Additional Actions, Delivery locations and Updated timeline view (Defender for Office 365 Plan 2)
+- [Improvements to Hunting Experience Threat Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) with updates around Threats, Additional Actions, Delivery locations and Updated timeline view (Defender for Office 365 Plan 2)
 
 ## July/August 2020
 
-- [Experience improvements to the hunting experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- [Experience improvements to the hunting experience](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 - [Easily apply recommended settings using preset security policies](preset-security-policies.md) 
 
 ## March/April 2020

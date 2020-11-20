@@ -145,7 +145,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 > - There will be new fields and values for **Detection technologies** and **Additional actions** (especially for ZAP scenarios). You'll need to evaluate your existing saved queries and tracked queries to make sure they work with the new values.
 
 > [!div class="mx-imgBorder"]
-> ![Additional_Actions](../../media/Additional_Actions.png)
+> ![Additional actions display](../../media/Additional_Actions.png)
 
 ### System overrides
 
@@ -157,10 +157,10 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 - Blocked by org policy: The organization's security teams set policies or mail flow rules to block senders, domains, message languages, or source IPs for users in their organization. This can also be for a set of users or the entire organization.
 - File extension blocked by org policy: An organization's security team blocks a file name extension through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also use the rich-filtering capability to filter on blocked file extensions.
 
-[ ![System_Overrides](../../media/System_Overrides.png) ](../../media/System_Overrides.png#lightbox)
+[ ![System overrides dialog box](../../media/System_Overrides.png) ](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> ![Details tab of system overrides grid](../../media/System_Overrides_Grid.png)
 
 ### Improvements for the URL and clicks experience
 
@@ -180,7 +180,7 @@ The improvements for URL and URL-clicks data include:
 
 Phish confidence level helps to identify the degree of confidence with which an email was categorized as "phish." The two possible values are *High* and *Normal*. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
-[ ![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png) ](../../media/Phish_Confidence_Level.png#lightbox)
+[ ![Phish confidence level](../../media/Phish_Confidence_Level.png) ](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### ZAP URL signal
 
@@ -286,20 +286,20 @@ These new features are outlined below.
 
 ### Preview email header and download email body
 
-You can now preview an email header and download the email body in Threat Explorer. Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
+You can now preview an email header and download the email body in Threat Explorer Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
 
-But Explorer (and Real-time detections) also get new fields designed to give you a more complete picture of where your email messages land. These changes  make hunting easier for Security Ops, but the main result is you can know the location of problem email messages at a glance.
+But Explorer and Real-time detections also get new fields that provide a more complete picture of where your email messages land. These changes  make hunting easier for Security Ops. But the main result is you can know the location of problem email messages at a glance.
 
-How is this done? Delivery Status is now broken out into two columns:
+How is this done? Delivery status is now broken out into two columns:
 
-- **Delivery Action** - What is the status of this email?
-- **Delivery Location** - Where was this email routed as a result?
+- **Delivery action** - Status of the email.
+- **Delivery location** - Where the email was routed.
 
-*Delivery Action* is the action taken on an email due to existing policies or detections. Here are the possible actions for an email:
+*Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions for an email:
 
 |Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|
-|Email was delivered to the inbox or folder of a user, and the user can access it.|Email was sent to the user's Junk  or Deleted folder, and the user has access to the email.|Emails that are quarantined, that failed, or were dropped. These mails are inaccessible to the user.|Email had malicious attachments replaced by .txt files that state the attachment was malicious.|
+|Email was delivered to the inbox or folder of a user, and the user can access it.|Email was sent to the user's Junk  or Deleted folder, and the user can access it.|Emails that are quarantined, that failed, or were dropped. These mails are inaccessible to the user.|Email had malicious attachments replaced by .txt files that state the attachment was malicious.|
 
 Here is what the user can and can't see:
 
@@ -308,21 +308,21 @@ Here is what the user can and can't see:
 |Delivered|Blocked|
 |Junked|Replaced|
 
-**Delivery location** shows the results of policies and detections that run post-delivery. It's linked to a *Delivery action*. This field provides insight into the action taken when a problem mail is found. These are the possible values:
+**Delivery location** shows the results of policies and detections that run post-delivery. It's linked to a ***Delivery action***. This field provides insight into the action taken when a problem mail is found. These are the possible values:
 
-- **Inbox or folder**: The email is in the inbox or a folder (according to your email rules).
-- **On-prem or external**: The mailbox doesn't exist on cloud but is on-premises.
-- **Junk folder**: The email is in the Junk folder of a user.
-- **Deleted items folder**: The email in the Deleted items folder of a user.
-- **Quarantine**: The email is in quarantine and not in a user's mailbox.
-- **Failed**: The email failed to reach the mailbox.
-- **Dropped**: The email gets lost somewhere in the mail flow.
+- *Inbox or folder*: The email is in the inbox or a folder (according to your email rules).
+- *On-prem or external*: The mailbox doesn't exist on cloud but is on-premises.
+- *Junk folder*: The email is in a user's Junk folder.
+- *Deleted items folder*: The email in a user's Deleted items folder.
+- *Quarantine*: The email is in quarantine and not in a user's mailbox.
+- *Failed*: The email failed to reach the mailbox.
+- *Dropped*: The email gots lost somewhere in the mail flow.
 
 ### Email timeline
 
-The **Email timeline** is a new Explorer feature that improves the hunting experience for admins. It cuts down on randomization because less time is spent checking different locations to try to understand the event. When multiple events happen at or close to the same time on an email, those events are displayed in a timeline view. Some events that happen to your email post-delivery are captured in the **Special action** column. Combining the information from the timeline of that mail with the special action taken on the mail post-delivery gives admins insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
+The **Email timeline** is a new Explorer feature that improves the hunting experience for admins. It cuts the time spent checking different locations to try to understand the event. When multiple events happen at or close to the same time an email arrives, those events are displayed in a timeline view. Some events that happen to your email post-delivery are captured in the **Special action** column. Combining the information from the timeline of that mail with the special action taken on the mail post-delivery gives admins insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
 
-For more information about investigating malicious email messages, see [Investigate and remediate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md).
+For more information see [Investigate and remediate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md).
 
 ### Export URL click data
 
