@@ -63,6 +63,12 @@ See these articles for the details:
 
   Contoso uses the full spectrum of Microsoft 365 for enterprise security features for identity and access management, threat protection, information protection, and security management.
 
+See these additional IT scenarios and configurations:
+
+- [COVID-19 response and infrastructure for remote and onsite work](../solutions/contoso-remote-onsite-work.md)
+
+  Learn how Contoso updated their remote access infrastructure for the COVID-19 pandemic and their new installs and updates infrastructure for remote and onsite work.
+
 - [Team for a top-secret project](../solutions/contoso-team-for-top-secret-project.md)
 
   To create a secure collaboration environment for a top-secret project, Contoso used a team with security isolation.
