@@ -31,7 +31,7 @@ Your invoice is sent to the registered billing notification email address 24 hou
 > [!IMPORTANT]
 > If you want the invoice to include your RFC, you must add it before the purchase confirmation.
 
-## 2. How can I add my RFC (Federal Taxpayers Registry) to the invoice I get for the purchase of Microsoft 365 for business?
+## 2. How can I add my RFC (Registro Federal de Contribuyentes) to the invoice I get for the purchase of Microsoft 365 for business?
 
 ### During the purchase process (Checkout)
 
@@ -48,7 +48,7 @@ You can add or modify your RFC so that the information is reflected in future Mi
 
 It's important that you add or modify your RFC before you make your purchase. After we have generated your Microsoft 365 for business invoice, you can't add or modify the RFC information.
 
-## 4. Why don't I get a CFDI (Comprobante Fiscal Digital por Invoice)?
+## 4. Why don't I get a CFDI (Comprobante Fiscal Digital por Internet)?
 
 Microsoft Corporation, as tax resident in the United States of America, is only able to issue invoices under the laws of jurisdiction and is not obligated to provide a CFDI electronic invoice.
 
