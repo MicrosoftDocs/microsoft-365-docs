@@ -26,7 +26,7 @@ description: "Overview of how to share your business files."
 
 You need to share files with clients, customers, partners, suppliers, and other people in your business. How do you share files so that everyone can find, open, and edit them?
 
-|![Securely share](../media/securely-share-file.png)<br/>[Share a file with someone outside of your company](#share-a-file-with-someone-outside-of-your-company)|[![Collaborate with a client](../media/share-and-collab-with-partner.png)](prepare-mtpeval.md)<br/>[Share and collaborate with a client or business partner](#share-and-collaborate-with-a-client-or-business-partner) | [![Share inside your org](../media/share-inside-your-org.png)](mtp-pilot-simulate.md)<br/>[Share inside your business](#share-inside-your-business) |
+|![Securely share](../media/securely-share-file.png)<br/>[Share a file with someone outside of your company](#share-a-file-with-someone-outside-of-your-company)|![Collaborate with a client](../media/share-and-collab-with-partner.png) <br/>[Share and collaborate with a client or business partner](#share-and-collaborate-with-a-client-or-business-partner) | ![Share inside your org](../media/share-inside-your-org.png) <br/>[Share inside your business](#share-inside-your-business) |
 |--|--|--|
 
 ## Share a file with someone outside of your company
@@ -64,4 +64,6 @@ Need a little help? Learn how to:
 - [Create a company-wide team](https://support.microsoft.com/en-us/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
 - [Add guests to a team](https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
 
-Download an infographic to get a quick overview of ways to share your business files. [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)
+Download an infographic to get a quick overview of ways to share your business files. 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079435) | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)

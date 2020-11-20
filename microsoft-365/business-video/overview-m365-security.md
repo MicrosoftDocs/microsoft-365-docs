@@ -28,3 +28,17 @@ description: "Learn about the security features included with Microsoft 365 for 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
 Microsoft 365 Business Premium provides threat protection, data protection, and device management features to help you protect your company from online threats and unauthorized access, as well as protect and manage company data on your phones, tablets, and computers.
+
+|![Securely share](../media/m365-business-security-threat-protection.png)<br/>[Threat protection](#threat-protection)|![Collaborate with a client](../media/m365-business-security-data-protection.png) <br/>[Data protection](#data-protection) | ![Device management](../media/share-inside-your-org.png) <br/>[Device management](#device-management) |
+|--|--|--|
+
+
+
+
+
+
+## Threat protection
+
+## Data protection
+
+## Device management
