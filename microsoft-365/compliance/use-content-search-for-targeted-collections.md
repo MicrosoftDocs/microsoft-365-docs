@@ -221,7 +221,7 @@ After you've run the script to collect a list of folder IDs or document links fo
 
     For example, the query in the following screenshot will search for any item in the Purges subfolder in the user's Recoverable Items folder (the value of the `folderid` property for the Purges subfolder is shown in the screenshot in Step 1):
 
-    ![Paste the folderid or documentlink in to the keyword box of the search query](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Paste the folderid or documentlink in to the keyword box of the search query](../media/FolderIDSearchQuery.png)
 
 4. Under **Locations**, select **Specific locations** and then click **Modify**.
 
