@@ -54,11 +54,11 @@ The script that you run in this first step will return a list of mailbox folders
   
 - **Email address or site URL**: Type an email address of the custodian to return a list of Exchange mailbox folders and folder IDs. Or type the URL for a SharePoint site or a OneDrive for Business site to return a list of paths for the specified site. Here are some examples:
 
-  - **Exchange**: stacig@contoso.onmicrosoft.com
+  - **Exchange**: stacig@contoso.onmicrosoft<spam><spam>.com
 
-  - **SharePoint**: https://contoso.sharepoint.com/sites/marketing 
+  - **SharePoint**: https<span>://</span>contoso.sharepoint.com/sites/marketing 
 
-  - **OneDrive for Business**: https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
+  - **OneDrive for Business**: https<span>://</span>contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
 
 - **Your user credentials**: The script will use your credentials to connect to Exchange Online PowerShell or Security & Compliance Center PowerShell using modern authentication. As previously explained, you have to be assigned the appropriate permissions to successfully run this script.
 
