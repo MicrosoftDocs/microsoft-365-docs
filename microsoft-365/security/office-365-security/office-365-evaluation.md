@@ -31,7 +31,7 @@ Conducting a comprehensive security product evaluation can help give you informe
 
 The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients, or Teams.
 
-Start your free 30-day evaluation to monitor and report on advanced threats. You'll enjoy the quick set-up and you can easily turn it off if necessary. 
+[Start your free 30-day evaluation](https://go.microsoft.com/fwlink/p/?LinkID=698279) to monitor and report on advanced threats. You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
 ## How the evaluation works
 
@@ -52,11 +52,13 @@ With the simplified set-up experience, you can focus on:
 - Analyzing the report for action
 - Presenting the evaluation outcome
 
-You'll have a free 30-day window with the evaluation to monitor and report on advanced threats. You'll also have the option to buy a paid subscription if you want the full Defender for Office 365 capabilities.
+With a trial, you'll have a 30-day window with the evaluation to monitor and report on advanced threats. You'll also have the option to buy a paid subscription if you want the full Defender for Office 365 capabilities.
 
 ## Before you begin
 
-### Roles
+### Licensing and roles
+
+You'll need to fulfill the [licensing requirements](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#licensing-requirements) or have [trial access to Defender for Office 365 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279) to access the evaluation. The trial includes a 30-day free trial for 25 licenses.
 
 Exchange Online roles are required to set up Defender for Office 365 in evaluation mode. The following roles are needed:
 
@@ -115,7 +117,7 @@ Set up the Microsoft Defender for Office 365 evaluation through two access point
 
 ## Setting up the evaluation
 
-Once you start the set-up flow for your free 30-day evaluation, you'll be given two routing options. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online.
+Once you start the set-up flow for your [free 30-day evaluation](https://go.microsoft.com/fwlink/p/?LinkID=698279), you'll be given two routing options. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online.
 
 - If you are using a third party and/or service provider on-premises, you'll need to select the name of the vendor from the drop-down menu. Provide the other connector-related details.
 
@@ -135,7 +137,7 @@ If you have an existing gateway, you might want to bypass filtering because it w
 
 After the evaluation report has been generated, see how many advanced threat links, advanced threat attachments, and potential impersonations were identified in the emails and collaboration workspaces in your organization.  
 
-Once the trial has expired, you can continue to access the report for 90 days. However, it won’t collect any more information. If you want to continue using Microsoft Defender for Office 365 after your trial has expired, **make sure you buy a paid subscription**.
+Once the trial has expired, you can continue to access the report for 90 days. However, it won’t collect any more information. If you want to continue using Microsoft Defender for Office 365 after your trial has expired, [make sure you buy a paid subscription](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
 
 You can to **Settings** to update your routing or turn off your evaluation at any time. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
 
