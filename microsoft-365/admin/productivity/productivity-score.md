@@ -110,12 +110,12 @@ The **People experiences** and **Technology experiences** areas contain the prim
 Each category details page shows the primary insight and supporting metrics as well as related research and actions you can take to drive change in your organization. Research supports the importance and rationale behind the primary insights for each category. for more information, [read the Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 The details pages are:
-- [Content collaboration – People experiences](content-collaboration.md)
-- [Communication – People experiences](communication.md)
-- [Meetings – People experiences](meetings.md)
-- [Mobility – People experiences](mobility.md)
-- [Teamwork – People experiences](teamwork.md)
-- [Microsoft 365 apps health – Technology experiences](apps-health.md)
+- [Content collaboration – people experiences](content-collaboration.md)
+- [Communication – people experiences](communication.md)
+- [Meetings – people experiences](meetings.md)
+- [Mobility – people experiences](mobility.md)
+- [Teamwork – people experiences](teamwork.md)
+- [Microsoft 365 Apps health – technology experiences](apps-health.md)
 
 ## Business continuity special report
 

@@ -212,6 +212,19 @@
            href: activity-reports/activity-reports.md
          - name: Monitor user productivity with Productivity score
            href: productivity/productivity-score.md
+           items:
+            - name: Content collaboration
+              href: productivity/content-collaboration.md
+            - name: Communication 
+              href: productivity/communication.md
+            - name: Mobility
+              href: productivity/mobility.md
+            - name: Teamwork
+              href: productivity/teamwork.md
+            - name: Microsoft 365 Apps health
+              href: productivity/apps-health.md
+            - name: Create DNS records at any DNS host
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
@@ -224,18 +237,20 @@
            href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
-         - name: Requirements for centralized deployment of add-ins
-           href: manage/centralized-deployment-of-add-ins.md
+         - name: Centralized deployment of add-ins
+           items:
+            - name: Requirements for centralized deployment of add-ins
+              href: manage/centralized-deployment-of-add-ins.md
+            - name: Deploy add-ins in the admin center 
+              href: manage/manage-deployment-of-add-ins.md
+            - name: Manage add-ins in the admin center 
+              href: manage/manage-addins-in-the-admin-center.md      
+            - name: Centralized Deployment FAQ
+              href: manage/centralized-deployment-faq.md
          - name: Manage industry news
            href: manage/manage-industry-news.md
-         - name: Deploy add-ins in the admin center 
-           href: manage/manage-deployment-of-add-ins.md
-         - name: Manage add-ins in the admin center 
-           href: manage/manage-addins-in-the-admin-center.md
          - name: Manage Office Scripts settings 
-           href: manage/manage-office-scripts-settings.md        
-         - name: Centralized Deployment FAQ
-           href: manage/centralized-deployment-faq.md
+           href: manage/manage-office-scripts-settings.md  
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
          - name: Manage Message center messages
@@ -288,40 +303,61 @@
           href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
-    - name: Manage devices
-      items: 
-        - name: View and edit policies and devices
-          href: ../business/view-policies-and-devices.md
-        - name: Remove company data
-          href: ../business/remove-company-data.md
-        - name: Reset devices to factory settings
-          href: ../business/reset-devices-to-factory-settings.md
-        - name: Map protection features to Intune settings
-          href: ../business/map-protection-features-to-intune-settings.md
-        - name: Device states
-          href: ../business/device-states.md
-        - name: App protection settings for Windows 10 PCs
-          href: ../business/protection-settings-for-windows-10-devices.md
-        - name: Set app protection settings for Android and iOS
-          href: ../business/app-protection-settings-for-android-and-ios.md
-          items: 
-            - name: Validate settings on Android or iOS
-              href: ../business/validate-settings-on-android-or-ios.md
-        - name: Edit or create device protection settings  for Windows 10 PCs
-          href: ../business/protection-settings-for-windows-10-pcs.md
-          items: 
-            - name: Validate settings on Windows 10 PCs
-              href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: Autopilot
-          items: 
-            - name: Add Autopilot devices and profile
-              href: ../business/add-autopilot-devices-and-profile.md
-            - name: Create and edit AutoPilot profiles
-              href: ../business/create-and-edit-autopilot-profiles.md
-            - name: Create and edit AutoPilot devices
-              href: ../business/create-and-edit-autopilot-devices.md
-            - name: AutoPilot Profile settings
-              href: ../business/autopilot-profile-settings.md
+    - name: Manage devices and app data
+      href: devices/index.yml
+      items:
+        - name: Device and app data protection methods 
+          href: devices/choose-device-security.md
+        - name: Microsoft Intune documentation
+          href: https://docs.microsoft.com/mem/intune/
+        - name: Microsoft 365 Business Premium
+          items:
+            - name: View and edit policies and devices
+              href: ../business/view-policies-and-devices.md
+            - name: Remove company data
+              href: ../business/remove-company-data.md
+            - name: Reset devices to factory settings
+              href: ../business/reset-devices-to-factory-settings.md
+            - name: Map protection features to Intune settings
+              href: ../business/map-protection-features-to-intune-settings.md
+            - name: Device states
+              href: ../business/device-states.md
+            - name: App protection settings for Windows 10 PCs
+              href: ../business/protection-settings-for-windows-10-devices.md
+            - name: Set app protection settings for Android and iOS
+              href: ../business/app-protection-settings-for-android-and-ios.md
+              items: 
+                - name: Validate settings on Android or iOS
+                  href: ../business/validate-settings-on-android-or-ios.md
+            - name: Edit or create device protection settings  for Windows 10 PCs
+              href: ../business/protection-settings-for-windows-10-pcs.md
+              items: 
+                - name: Validate settings on Windows 10 PCs
+                  href: ../business/validate-settings-on-windows-10-pcs.md
+            - name: Autopilot
+              items: 
+                - name: Add Autopilot devices and profile
+                  href: ../business/add-autopilot-devices-and-profile.md
+                - name: Create and edit AutoPilot profiles
+                  href: ../business/create-and-edit-autopilot-profiles.md
+                - name: Create and edit AutoPilot devices
+                  href: ../business/create-and-edit-autopilot-devices.md
+                - name: AutoPilot Profile settings
+                  href: ../business/autopilot-profile-settings.md
+        - name: Microsoft 365 for enterprise documentation
+          href: ../enterprise/index.yml
+        - name: Basic Mobility and Security
+          items:
+            - name: Overview of Basic Mobility and Security
+              href: basic-mobility-security/overview.md
+            - name: Compare Basic Mobility and Security and Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: Basic Mobility and Security FAQ
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: Capabilities of Basic Mobility and Security
+              href: basic-mobility-security/capabilities.md
+            - name: Compare Basic Mobility and Security and Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
     - name: Work with customers
       href: work-with-customers/index.yml
       items: 

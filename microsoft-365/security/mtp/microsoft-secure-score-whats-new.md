@@ -28,9 +28,17 @@ ms.custom:
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
+## November 2020
+
+### Added 3 services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+
+- Fix unquoted service path for Windows services
+- Change service executable path to a common protected location
+- Change service account to avoid cached password in windows registry
+
 ## October 2020
 
-### Remove improvement action related to Microsoft Defender Advanced Threat Protection
+### Remove improvement action related to Microsoft Defender for Endpoint
 
 - Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
 
@@ -49,8 +57,8 @@ In time, Identity Secure Score and the Graph API will adopt the new scoring mode
 ## Updated improvement actions
 
 - Added Azure Active Directory improvement actions
-- Added Azure Advanced Threat Protection improvement actions
-- Support for Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
+- Added Microsoft Defender for Identity improvement actions
+- Support for Microsoft Defender for Endpoint [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
     - All released security recommendations supplied by TVM are now available
 
 ## Updated interface and functionality
