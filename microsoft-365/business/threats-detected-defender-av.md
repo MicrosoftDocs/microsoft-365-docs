@@ -1,11 +1,11 @@
 ---
-title: "Threats detected by Microsoft Defender Antivirus"   # (Required) Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
+title: "Threats detected by Microsoft Defender Antivirus"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
 audience: Admin
-ms.topic: article 
+ms.topic: conceptual 
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -59,13 +59,13 @@ When threats are detected by Microsoft Defender Antivirus, the following things 
 
 - Users receive [notifications in Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
 - Detections are listed in the [Windows Security app](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) on the **Protection history** page.  
-- If you've [secured your Windows 10 devices](secure-win-10-pcs.md) and [enrolled them in Intune](/mem/intune/enrollment/windows-enrollment-methods), you'll see threat detections and insights in the Microsoft 365 admin center (https://admin.microsoft.com) on the **Active threats** page, which you can access from the **Microsoft Defender Antivirus** card on the **Home** page (or from the navigation pane by selecting **Health** > **Threats & antivirus**).
+- If you've [secured your Windows 10 devices](secure-win-10-pcs.md) and [enrolled them in Intune](/mem/intune/enrollment/windows-enrollment-methods), you'll see threat detections and insights in the <a href="https://admin.microsoft.com/Adminportal/Home#/homepage" target="_blank">Microsoft 365 admin center</a> on the **Active threats** page, which you can access from the **Microsoft Defender Antivirus** card on the **Home** page (or from the navigation pane by selecting **Health** > **Threats & antivirus**).
     > [!NOTE]
     > The **Microsoft Defender Antivirus** card and **Active threats** page are being rolled out in phases, so you may not have immediate access to them.
 
 In most cases, users don't need to take any further action. As soon as a malicious file or program is detected on a device, Microsoft Defender Antivirus blocks it and prevents it from running. Plus, newly detected threats are added to the antivirus and antimalware engine so that other devices and users are protected, as well.  
 
-If there's an action a user needs to take, such as approving the removal of a malicious file, they'll see that in the notification they receive. To learn more about actions that Microsoft Defender Antivirus takes on a user's behalf, or actions users might need to take, see [Protection History](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708).
+If there's an action a user needs to take, such as approving the removal of a malicious file, they'll see that in the notification they receive. To learn more about actions that Microsoft Defender Antivirus takes on a user's behalf, or actions users might need to take, see [Protection History](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). To learn how to manage threat detections as an IT professional/admin, see [Review detected threats and take action](review-threats-take-action.md).
 
 To learn more about different threats, visit the Microsoft Security Intelligence Threats site (https://www.microsoft.com/wdsi/threats), where you can perform the following actions: 
 
