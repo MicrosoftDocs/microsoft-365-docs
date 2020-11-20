@@ -135,7 +135,7 @@ If you have an existing gateway, you might want to bypass filtering because it w
 
 After the evaluation report has been generated, see how many advanced threat links, advanced threat attachments, and potential impersonations were identified in the emails and collaboration workspaces in your organization.  
 
-If you want to continue using Microsoft Defender for Office 365 after your trial has expired, **make sure you buy a paid subscription**.
+Once the trial has expired, you can continue to access the report for 90 days. However, it won’t collect any more information. If you want to continue using Microsoft Defender for Office 365 after your trial has expired, **make sure you buy a paid subscription**.
 
 You can to **Settings** to update your routing or turn off your evaluation at any time. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
 
