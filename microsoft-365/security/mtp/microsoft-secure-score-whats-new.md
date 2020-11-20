@@ -30,7 +30,7 @@ To make Microsoft Secure Score a better representative of your security posture,
 
 ## November 2020
 
-### Added 3 services related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+### Added 3 services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
 - Fix unquoted service path for Windows services
 - Change service executable path to a common protected location
