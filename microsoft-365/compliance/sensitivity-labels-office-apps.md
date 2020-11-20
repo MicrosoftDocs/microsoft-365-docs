@@ -267,8 +267,7 @@ Use the following syntax:
 ${If.App.<application type>}<your visual markings text> ${If.End}
 ```
 
-> [!NOTE]
->This syntax in this statement is case-sensitive.
+As with the other dynamic visual markings, the syntax is case-sensitive.
 
 Examples:
 
