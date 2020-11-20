@@ -46,6 +46,9 @@ Compliance Manager uses a role-based access control (RBAC) permission model. Onl
 
 The person holding the global admin role for your organization can set user permissions in the Microsoft 365 compliance center, as well as in Azure Active Directory (Azure AD).
 
+> [!NOTE]
+> Customers in US Government Community (GCC) High environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
+
 To set permissions and assign roles from within the Microsoft 365 compliance center, follow the steps below:
 
 1. Select **Permissions** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
