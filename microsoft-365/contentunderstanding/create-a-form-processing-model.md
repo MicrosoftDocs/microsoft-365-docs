@@ -7,6 +7,7 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: "Create a form processing model in Microsoft SharePoint Syntex."
 ---
