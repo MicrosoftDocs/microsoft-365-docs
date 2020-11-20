@@ -65,9 +65,9 @@ See these articles for the details:
 
 See these additional IT scenarios and configurations:
 
-- [COVID-19 response and infrastructure for a hybrid workforce](../solutions/contoso-hybrid-workforce.md)
+- [COVID-19 response and infrastructure for remote and onsite work](../solutions/contoso-remote-onsite-work.md)
 
-  Learn how Contoso updated their remote access infrastructure for the COVID-19 pandemic and their new installs and updates infrastructure for a hybrid workforce.
+  Learn how Contoso updated their remote access infrastructure for the COVID-19 pandemic and their new installs and updates infrastructure for remote and onsite work.
 
 - [Team for a top-secret project](../solutions/contoso-team-for-top-secret-project.md)
 
