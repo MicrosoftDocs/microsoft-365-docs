@@ -67,7 +67,7 @@ In most cases, users don't need to take any further action. As soon as a malicio
 
 If there's an action a user needs to take, such as approving the removal of a malicious file, they'll see that in the notification they receive. To learn more about actions that Microsoft Defender Antivirus takes on a user's behalf, or actions users might need to take, see [Protection History](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). To learn how to manage threat detections as an IT professional/admin, see [Review detected threats and take action](review-threats-take-action.md).
 
-To learn more about different threats, visit the Microsoft Security Intelligence Threats site (https://www.microsoft.com/wdsi/threats), where you can perform the following actions: 
+To learn more about different threats, visit the <a href="https://www.microsoft.com/wdsi/threats" target="_blank">Microsoft Security Intelligence Threats site</a>, where you can perform the following actions: 
 
 - View current information about top threats.
 - View the latest threats for a specific region.
