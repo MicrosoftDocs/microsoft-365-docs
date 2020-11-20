@@ -577,7 +577,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: PowerShell community resources
           href: microsoft-365-powershell-community-resources.md
-    - name: Manage user accounts, licenses, and groups with PowerShell
+    - name: User accounts, passwords, licenses, and groups
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items: 
         - name: User accounts
@@ -594,6 +594,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Block
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: Passwords
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: Licenses and services
           items: 
             - name: View licenses and services
@@ -615,6 +617,8 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Groups
           items: 
+            - name: Manage security groups
+              href: manage-security-groups-with-microsoft-365-powershell.md
             - name: Maintain security group membership
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
