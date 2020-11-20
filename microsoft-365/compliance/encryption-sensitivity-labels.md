@@ -380,6 +380,8 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - Encrypted files might take longer to open in Office apps (Windows, Mac, Android, and iOS).
 
+- If a label that applies encryption is added by using an Office app when the document is checked out in SharePoint, and the user then discards the checkout, the document remains labeled and encrypted.
+
 - The following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
 
   - View, restore, and save copies of previous versions. As an alternative, users can do these actions using Office on the web when you [enable and configure versioning for a list or library](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
