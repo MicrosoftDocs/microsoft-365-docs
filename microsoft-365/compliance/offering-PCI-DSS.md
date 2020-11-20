@@ -87,7 +87,7 @@ Currently OneDrive for Business and SharePoint Online is PCI-DSS compliant only 
 
 **What is in-scope for OneDrive for Business and SharePoint Online?**
 
-Currently, only files and documents uploaded to OneDrive for Business and SharePoint Online will be complaint with PCI DSS.
+Currently, only files and documents uploaded to OneDrive for Business and SharePoint Online will be compliant with PCI DSS.
 
 ## Use Microsoft Compliance Manager to assess your risk
 
