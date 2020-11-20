@@ -57,6 +57,7 @@ Are you new to Microsoft 365 for business? :::image type="icon" source="../media
 
 - Save documents to **OneDrive** from the **Save As** menu in Office apps.
     :::image type="content" source="../media/save-onedrive.png" alt-text="Imge that whos how to Save As to OneDrive.":::
+
 - Or copy files from your Desktop or Documents to **OneDrive**.
 
     :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Image showing how to save to OneDrive from Documents folder.":::
