@@ -86,10 +86,6 @@ To display a list of mailbox folders or site documentlink (path) names:
    # Collect the target email address or SharePoint Url
    $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
    # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
-   if (!$credentials)
-   {
- 	  $credentials = Get-Credential
-   }
    if ($addressOrSite.IndexOf("@") -ige 0)
    {
 	  # List the folder Ids for the target mailbox
