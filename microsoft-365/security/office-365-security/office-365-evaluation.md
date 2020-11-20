@@ -23,9 +23,15 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+>[!IMPORTANT]
+>Evaluate Microsoft Defender for Office 365 will soon be in public preview
+This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
+
 Conducting a comprehensive security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product’s capabilities to assess how it can help your security operations team in their daily tasks.
 
 The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients, or Teams.
+
+Start your free 30-day evaluation to monitor and report on advanced threats. You'll enjoy the quick set-up and you can easily turn it off if necessary. 
 
 ## How the evaluation works
 
@@ -46,20 +52,20 @@ With the simplified set-up experience, you can focus on:
 - Analyzing the report for action
 - Presenting the evaluation outcome
 
+You'll have a free 30-day window with the evaluation to monitor and report on advanced threats. You'll also have the option to buy a paid subscription if you want the full Defender for Office 365 capabilities.
+
 ## Before you begin
 
-### Licensing and roles
+### Roles
 
-You'll need to fulfill the licensing requirements or have trial access to Defender for Office 365 to access the evaluation.
-
-Exchange Online roles are required to set up Defender for Office 365 in evaluation mode. The following are needed.
+Exchange Online roles are required to set up Defender for Office 365 in evaluation mode. The following roles are needed:
 
 |Task | Role |
 |-----| -----|
 | Create evaluation policy| Remote and Accepted Domains and Security Admin|
 | Edit evaluation policy | Remote and Accepted Domains and Security Admin |
 | Delete evaluation policy | Remote and Accepted Domains and Security Admin |
-|View evaluation report | Security Admin, Security Reader |
+|View evaluation report | Security Admin or Security Reader |
 
 ### Enhanced filtering
 
@@ -100,22 +106,26 @@ Supported third-party partners include:
 
 You will be able to scope the evaluation to an inbound connector. If there's no connector configured, then the evaluation scope will allow admins to gather data from any user in your tenant to evaluate Defender for Office 365.
 
-## Get started with the evaluation lab
+## Get started with the evaluation
 
 Set up the Microsoft Defender for Office 365 evaluation through two access points:
 
-- **Navigation pane**: In the Email & collaboration section, go to Policies & rules > Threat policies >  Defender for Office 365 evaluation
+- **Policies**: In the Email & collaboration section, go to Policies & rules > Threat policies >  Defender for Office 365 evaluation
 - **Dashboard**: Go to Email & collaboration dashboard > Microsoft Defender for Office 365 card. Select Evaluate.
 
-## Setting up the evaluation lab
+## Setting up the evaluation
 
-Once you start the set-up flow, you will be given two routing options. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online. Select **Share data with Microsoft** to get the data aggregation benefits in your detection reports.
+Once you start the set-up flow for your free 30-day evaluation, you'll be given two routing options. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online.
 
-- If you are using a third party or service provider on-premises, you'll need to select the name of the vendor from the drop-down menu. Provide the other connector-related details.
+- If you are using a third party and/or service provider on-premises, you'll need to select the name of the vendor from the drop-down menu. Provide the other connector-related details.
 
 - Select Microsoft Exchange Online if the MX record points to Microsoft and you have an Exchange Online mailbox.
 
+ Select **Share data with Microsoft** to get the data aggregation benefits in your detection reports.
+
 Review your settings and edit them if necessary. Then, select **Create evaluation**. You should get a confirmation message to indicate that your set-up is complete.
+
+Your Microsoft Defender for Office 365 evaluation report is generated once per day. It may take up to 24 hours for the data to populate.
 
 ### Exchange rules (optional)
 
@@ -123,11 +133,11 @@ If you have an existing gateway, you might want to bypass filtering because it w
 
 ## Evaluate capabilities
 
-In your daily security operation tasks, it’s important to know what email threats are hiding in your organization, and to identify the nature of the threat, monitor the trends, investigate, and remediate them.  
+After the evaluation report has been generated, see how many advanced threat links, advanced threat attachments, and potential impersonations were identified in the emails and collaboration workspaces in your organization.  
 
-Look at the dashboard to see how many advanced threat links, advanced threat attachments, potential impersonations, were seen in the emails and collaboration workspaces in your organization.  
+If you want to continue using Microsoft Defender for Office 365 after your trial has expired, **make sure you buy a paid subscription**.
 
-Go to **Settings** to turn off your evaluation. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
+You can to **Settings** to update your routing or turn off your evaluation at any time. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
 
 ## Provide feedback
 
