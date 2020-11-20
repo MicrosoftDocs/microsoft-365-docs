@@ -33,7 +33,7 @@ Defender for Office 365 in evaluation mode creates Defender for Office 365 ema
 
 With evaluation mode, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [anti-phishing impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are setup on your behalf. All Defender for Office 365 policies are created in non-enforcement mode in the background and are not visible to you.
 
-As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) which improves filtering accuracy by preserving IP address and sender information which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. This also improves the filtering accuracy for your Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
+As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors), which improves filtering accuracy by preserving IP address and sender information which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. This also improves the filtering accuracy for your Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
 
 To minimize potential production impact on some unsupported scenarios, you can bypass all EOP filtering by creating a transport rule to set the Spam Confidence Level (SCL) to -1. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) for details.
 
@@ -102,7 +102,7 @@ You will be able to scope the evaluation to an inbound connector. If there's no 
 
 ## Get started with the evaluation lab
 
-You can go through the steps to set up the Microsoft Defender for Office 365 evaluation through two access points:
+Set up the Microsoft Defender for Office 365 evaluation through two access points:
 
 - **Navigation pane**: In the Email & collaboration section, go to Policies & rules > Threat policies >  Defender for Office 365 evaluation
 - **Dashboard**: Go to Email & collaboration dashboard > Microsoft Defender for Office 365 card. Select Evaluate.
@@ -115,8 +115,7 @@ Once you start the set-up flow, you will be given two routing options. Depending
 
 - Select Microsoft Exchange Online if the MX record points to Microsoft and you have an Exchange Online mailbox.
 
-Review your settings and edit them if necessary. Then, select Create evaluation.
-You should get the following confirmation message to indicate that your set-up is complete.
+Review your settings and edit them if necessary. Then, select **Create evaluation**. You should get a confirmation message to indicate that your set-up is complete.
 
 ### Exchange rules (optional)
 
@@ -128,11 +127,10 @@ In your daily security operation tasks, it’s important to know what email thre
 
 Look at the dashboard to see how many advanced threat links, advanced threat attachments, potential impersonations, were seen in the emails and collaboration workspaces in your organization.  
 
-Go to Settings to turn off your evaluation. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
+Go to **Settings** to turn off your evaluation. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
 
 ## Provide feedback
 
 Your feedback helps us get better at protecting your environment from advanced attacks. Share your experience and impressions of product capabilities and evaluation results.
 
 Select Give feedback to let us know what you think.
-
