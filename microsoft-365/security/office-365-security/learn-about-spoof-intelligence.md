@@ -69,7 +69,7 @@ You can manage spoof intelligence in the Security & Compliance Center, or in Pow
 ## Use the Security & Compliance Center to manage spoofed senders
 
 > [!NOTE]
-> If you have an Microsoft 365 Enterprise E5 subscription or have separately purchased an Microsoft Defender for Office 365 add-on, you can also manage senders who are spoofing your domain through the [Spoof Intelligence insight](walkthrough-spoof-intelligence-insight.md).
+> If you have an Microsoft 365 Enterprise E5 subscription or have separately purchased a Microsoft Defender for Office 365 add-on, you can also manage senders who are spoofing your domain through the [Spoof Intelligence insight](walkthrough-spoof-intelligence-insight.md).
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 

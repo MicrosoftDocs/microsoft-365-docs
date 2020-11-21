@@ -579,7 +579,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: PowerShell community resources
           href: microsoft-365-powershell-community-resources.md
-    - name: Manage user accounts, passwords, licenses, and groups with PowerShell
+    - name: User accounts, passwords, licenses, and groups
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items: 
         - name: User accounts

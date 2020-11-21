@@ -538,7 +538,7 @@ To view and use the reports, you need to be a member of the specified role group
   -Security Administrator (you can also do this in the [Azure Active Directory admin center](https://aad.portal.azure.com)
   -Security Reader
 
-  For more information, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - In Exchange Online, you need to be a member of one of the following role groups:
 

@@ -54,7 +54,7 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Preview: [Beta Channel and Current Channel (Preview)](https://office.com/insider)           | 16.42+     | 2.42+ | 16.0.13328+ | Under review |
+|[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Under review |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
@@ -253,6 +253,41 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
+
+#### Setting different visual markings for Word, Excel, PowerPoint, and Outlook
+
+As an additional variable, you can configure visual markings per Office application type by using an "If.App" variable statement in the text string, and identify the application type by using the values **Word**, **Excel**, **PowerPoint**, or **Outlook**. You can also abbreviate these values, which is necessary if you want to specify more than one in the same If.App statement.
+
+> [!NOTE]
+> For completeness, instructions for Outlook are included, although currently supported only by the Azure Information Protection unified labeling client.
+
+Use the following syntax:
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+As with the other dynamic visual markings, the syntax is case-sensitive.
+
+Examples:
+
+- **Set header text for Word documents only:**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    In Word document headers only, the label applies the header text "This Word document is sensitive". No header text is applied to other Office applications.
+
+- **Set footer text for Word, Excel, and Outlook, and different footer text for PowerPoint:**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    In Word, Excel, and Outlook, the label applies the footer text "This content is confidential." In PowerPoint, the label applies the footer text "This presentation is confidential."
+
+- **Set specific watermark text for Word and PowerPoint, and then watermark text for Word, Excel, and PowerPoint:**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    In Word and PowerPoint, the label applies the watermark text "This content is Confidential". In Excel, the label applies the watermark text "Confidential". In Outlook, the label doesn't apply any watermark text because watermarks as visual markings are not supported for Outlook.
 
 ## End-user documentation
 
