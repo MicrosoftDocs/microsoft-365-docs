@@ -35,8 +35,8 @@ As an IT professional/admin, you can view information about threat detections ac
 
 You have several options to view specific information about threat detections and devices:
 
-- The **Active devices** page in the <a href="https://admin.microsoft.com/Adminportal/Home#/homepage" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the Active devices page](#manage-threat-detections-on-the-active-devices-page) in this article.
-- The **Active threats** page in the <a href="https://admin.microsoft.com/Adminportal/Home#/homepage" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the Active threats page](#manage-threat-detections-on-the-active-threats-page) in this article.
+- The **Active devices** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the Active devices page](#manage-threat-detections-on-the-active-devices-page) in this article.
+- The **Active threats** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the Active threats page](#manage-threat-detections-on-the-active-threats-page) in this article.
 - The **Antivirus** page in <a href="https://endpoint.microsoft.com" target="_blank">Microsoft Endpoint Manager</a>. See [Manage threat detections in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in this article.
 
 To learn more, see [Threats detected by Microsoft Defender Antivirus](threats-detected-defender-av.md).
@@ -45,7 +45,7 @@ To learn more, see [Threats detected by Microsoft Defender Antivirus](threats-de
 
 The following procedure applies to customers who have Microsoft 365 Business Premium.
 
-1. Go to the Microsoft 365 admin center at <a href="https://admin.microsoft.com/Adminportal/Home#/homepage" target="_blank">https://admin.microsoft.com</a> and sign in.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in.
 
 2. In the navigation page, select **Devices** > **Active devices**. You'll see a list of active devices and details, such as protection status, antivirus (AV) protection state, and the number of active threats detected.
 
@@ -58,7 +58,7 @@ The following procedure applies to customers who have Microsoft 365 Business. [W
 > [!NOTE]
 > The **Microsoft Defender Antivirus** card and **Active threats** page are being rolled out in phases, so you may not have immediate access to them.
 
-1. Go to the Microsoft 365 admin center at <a href="https://admin.microsoft.com/Adminportal/Home#/homepage" target="_blank">https://admin.microsoft.com</a> and sign in.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in.
 
 2. On the **Microsoft Defender Antivirus** card, select **View active threats**. (Alternatively, in the navigation pane, select **Health** > **Threats & antivirus**.)
 
