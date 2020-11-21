@@ -137,7 +137,7 @@ For country/region specific data centers, the following defines the cities where
 | United Kingdom | Durham, London, Cardiff |
 | United States |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose |
 
-New Microsoft 365 tenants are defaulted to Geo based on the country of the billing address associated with that tenant's first subscription. To confirm where customer data is stored for existing Office 365 services, please view tenant specific data location information in your Office 365 Admin Center in Settings | Organization profile | Data location card. Alternatively, expand the country that your business is based in, from the list below, to find out where customer data would be stored if you were to start using a Microsoft 365 Service today.
+New Microsoft 365 tenants are defaulted to Geo based on the country of the billing address associated with that tenant's first subscription. To confirm where customer data is stored for existing Office 365 services, please view tenant specific data location information in your Office 365 Admin Center in Settings | Org settings | Organization profile | Data location card. Alternatively, expand the country that your business is based in, from the list below, to find out where customer data would be stored if you were to start using a Microsoft 365 Service today.
 
 ## Afghanistan
 <details><summary>Click to expand</summary><p>
