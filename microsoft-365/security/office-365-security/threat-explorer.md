@@ -176,7 +176,7 @@ The improvements for URL and URL-clicks data include:
 
    - `/` is ignored at the beginning and end of the **URL path**, **URL Domain**, **URL domain and path** fields. `/` at the end of the **URL** field is ignored.
 
-### Phish confidence Level
+### Phish confidence level
 
 Phish confidence level helps to identify the degree of confidence with which an email was categorized as "phish." The two possible values are *High* and *Normal*. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
@@ -308,7 +308,7 @@ Here is what the user can and can't see:
 |Delivered|Blocked|
 |Junked|Replaced|
 
-**Delivery location** shows the results of policies and detections that run post-delivery. It's linked to a ***Delivery action***. This field provides insight into the action taken when a problem mail is found. These are the possible values:
+**Delivery location** shows the results of policies and detections that run post-delivery. It's linked to ***Delivery action***. This field provides insight into the action taken when a problem mail is found. These are the possible values:
 
 - *Inbox or folder*: The email is in the inbox or a folder (according to your email rules).
 - *On-prem or external*: The mailbox doesn't exist on cloud but is on-premises.
@@ -326,18 +326,18 @@ For more information see [Investigate and remediate malicious email that was del
 
 ### Export URL click data
 
-Also, can now export reports for URL clicks to Microsoft Excel to view both their Network Message ID, and their Click Verdict, which helps you understand where your URL click traffic originated. Here's how it works: In Threat Management on the Office 365 quick-launch, click through this chain:
+You can now export reports for URL clicks to Microsoft Excel to their **network message ID** and their **click verdict**, which helps you understand where your URL click traffic originated. Here's how it works: In Threat Management on the Office 365 quick-launch, follow this chain:
 
-**Explorer** \> **View Phish** \> **Clicks** \> **Top URLs or URL Top Clicks** \> **Click on any record to open URL flyout**
+**Explorer** \> **View Phish** \> **Clicks** \> **Top URLs** or **URL Top Clicks** \> select any record to open the URL flyout.
 
 When you select an URL in the list, you'll see a new **Export** button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
 
 Follow this path to get to the same location in the Real-time detections report:
 
-**Explorer** \> **Real-time detections** \> **View Phish** \> **URLs** \> **Top URLs or Top Clicks** \> **Click on any record to open URL flyout** \> **Navigate to the Clicks Tab.**
+**Explorer** \> **Real-time detections** \> **View Phish** \> **URLs** \> **Top URLs** or **Top Clicks** \> Select any record to open the URL flyout \> navigate to the **Clicks** tab.
 
 > [!TIP]
-> The Network Message ID maps the click back to specific mails when you search on the ID through Explorer or associated third-party tools. Such searches give admins the specific email associated with a click result. On export, having the correlating identification of Network Message ID makes for quicker and more powerful analysis.
+> The Network Message ID maps the click back to specific mails when you search on the ID through Explorer or associated third-party tools. Such searches identify the email associated with a click result. Having the correlated Network Message ID makes for quicker and more powerful analysis.
 
 > [!div class="mx-imgBorder"]
 > ![Clicks tab in Explorer](../../media/tp_ExportClickResultAndNetworkID.png)
@@ -346,14 +346,14 @@ Follow this path to get to the same location in the Real-time detections report:
 
 Suppose you want to see malware detected in email, by Microsoft 365 technology. To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections).
 
-1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), select **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), select **Threat management** > **Explorer** or **Real-time detections**. (The following example uses Explorer.)
 
 2. From the **View** menu, select **Email** > **Malware**.
 
    > [!div class="mx-imgBorder"]
    > ![View menu for Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Click **Sender**, and then select **Basic** > **Detection technology**.
+3. Select **Sender** and then **Basic** > **Detection technology**.
 
    Your detection technologies are now available as filters for the report.
 
@@ -487,4 +487,3 @@ To learn more about roles and permissions, see the following resources:
 - The Real-time detections report allows you to view detections in real-time. Threat Explorer does this as well, but also allows you to view additional details for a given attack.
 - An *All email* view is available in Threat Explorer but not in the Real-time detections report.
 - More filtering capabilities and available actions are included in Threat Explorer. For more details, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-- 
