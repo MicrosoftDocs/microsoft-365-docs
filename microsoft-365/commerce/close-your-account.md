@@ -52,37 +52,28 @@ If your organization uses Active Directory that synchronizes with Microsoft Azur
 ## Step 2: Cancel all active subscriptions
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
 2. On the **Products** tab, find an active subscription. Select **More actions** (three dots), then select **Cancel subscription**.
-
 3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
-
 4. Select **Save**.
-
 5. Repeat steps 1 through 4 to cancel all active subscriptions.
 
 ## Step 3: Delete all disabled subscriptions
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
 2. On the **Products** tab, select a disabled subscription.
-
 3. On the subscription details page, in the **Subscription and payment settings** section, select **Delete subscription**.
-
 4. In the **Delete subscription** pane, select **Delete subscription**.
-
 5. In the **Delete subscription** dialog box, select **Yes**.
-
 6. For each disabled subscription, repeat steps 3 through 5 until all subscriptions are deleted.
+
+> [!NOTE]
+> If you're unable to immediately delete a disabled subscription, <a href="https://go.microsoft.com/fwlink/p/?linkid=518322" target="_blank">contact support</a>
 
 ## Step 4: Disable multi-factor authentication
 
 1. Sign in to the admin center with a Global administrator account. To verify what roles you have, see [Check admin roles in your organization](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).
-
 2. Go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
 3. Choose **Multi-factor authentication**.
-
 4. On the multi-factor authentication page, disable all accounts except for the global admin account that you're currently using.
 
 You can also <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">use PowerShell to disable multi-factor authentication for multiple users</a>.
@@ -90,13 +81,9 @@ You can also <a href="https://docs.microsoft.com/azure/active-directory/authenti
 ## Step 5: Delete the directory in Azure Active Directory
 
 1. Sign in to the <a href="https://aad.portal.azure.com/" target="_blank">Azure AD admin center</a> with a Global administrator account.
-
 2. Select **Azure Active Directory**.
-
 3. Switch to the organization that you want to delete.
-
 4. Select **Delete tenant**.
-
 5. If your organization fails one or more checks, you see a link to more information on how to pass the checks. After you pass all checks, select **Delete** to complete the process.
 
 After you complete this final step, your account with Microsoft is closed and deleted.
