@@ -20,13 +20,11 @@ description: "Determine where your Microsoft 365 customer data is stored within 
 
 # Data locations for the European Union
 
-When you use Microsoft 365 services, we start with the assumption that our enterprise customers would like to have their business data stored and processed close to home. Wherever possible, we do just that. To keep your data in datacenters nearest to you, we store your data based on the business location you provide when you create your tenant. To choose storage locations that are meaningful to your organization’s businesses, you may create as many tenants for your organization as you would like.  
 
-With Microsoft 365 you create amazing content, and we protect and secure it. You can access, rectify, restrict the processing of, delete and export your data at any time and from any location. We encrypt it in transit and at rest. Additionally, through our ever-expanding network of datacenters across the globe, we automatically store it in regions close to where your busines is located wherever possible. 
 
 ## Your data is your business
 
-Microsoft recognizes the importance of maintaining the privacy and confidentiality of your data. Your data belongs to you, and you can access, modify, or delete it at any time. Microsoft will not use your data without your consent and, when we have your consent, we use your data to provide only the services you have chosen. If you leave one of our services, we ensure your continued ownership of your data, following strict standards and processes to remove the data from our systems. 
+Microsoft recognizes the importance of maintaining the privacy and confidentiality of your business data. Your data belongs to you, and you can access, modify, or delete it at any time. Microsoft will not use your data without your consent and, when we have your consent, we use your data to provide only the services you have chosen. If you leave one of our services, we ensure your continued ownership of your data, following strict standards and processes to remove the data from our systems. 
 
 >[!Note]
 >Customer data (also referred to as “your data” or “your business data”) means all data, including text, sound, video or image files, and software that you provide to Microsoft or that’s provided on your behalf through your use of Microsoft enterprise online services, excluding Microsoft Professional Services. It includes customer content, which is the data you upload for storage or processing and apps you upload for distribution through a Microsoft enterprise cloud service. For example, customer content includes Exchange Online email and attachments, SharePoint Online site content, or instant messaging conversations. 
@@ -39,8 +37,6 @@ When you use Microsoft 365 services, we start with the assumption that our enter
 ### Where EU data is stored
 
 We have datacenter geos in Germany and France that allow you to store data in your country if your business is located there. Our regional European Union data centers are located in Austria, Finland, France, Ireland, and the Netherlands. Your data for the following services will be hosted in the following locations based on which billing address you choose: 
-
-
 
 | Service name | Location for tenants created with a billing address in France | Location for tenants created with a billing address in Germany | Location for tenants created with a billing address in all other EU countries |
 |:-------|:-----|:-------|:-------|
@@ -67,7 +63,7 @@ We have datacenter geos in Germany and France that allow you to store data in yo
 
 ### Where EU data is computed
 
-When you initiate the use of any of the above services, the computations needed to provide the service for your data stored in one of regional European datacenters (or in your country) will take place within that same geographic boundary unless a temporary data transfer is needed to perform the computation in a Microsoft datacenter located further away. 
+When you initiate the use of any of the above services, the computations needed to provide the service for your data stored in one of our regional European datacenters (or in your country) will take place within that same geographic boundary unless a temporary data transfer is needed to perform the computation in a Microsoft datacenter located further away. 
 
 If a temporary transfer is required, we will always employ state of the art encryption in the transfer and we will always return your data to your chosen data storage location immediately thereafter. We rely on our compliance with European law through the Standard Contractual Clauses (SCCs) for these temporary transfers, along with our supplemental measures to ensure the data is protected. 
 
@@ -95,7 +91,9 @@ To prevent unauthorized physical access to datacenters, we employ rigorous opera
 
 ### Technical controls
 
-In addition to the physical and technological protections, Microsoft takes strong measures to help protect your customer data from unauthorized access by Microsoft personnel and subcontractors. Access to customer data by Microsoft operations and support personnel is denied by default. Nearly all service operations performed by Microsoft are fully automated and human involvement is highly controlled and abstracted away from customer data. Only in rare cases does a Microsoft engineer need access to customer data to resolve a customer issue. Access to customer data is restricted, based on business need, by role-based access controls, multifactor authentication, minimization of standing access to production data, and other controls. All access to customer data is strictly logged, and both Microsoft and third parties perform regular audits (as well as sample audits) to attest that any access is appropriate. 
+In addition to the physical and technological protections, Microsoft takes strong measures to help protect your customer data from unauthorized access by Microsoft personnel and subcontractors. Access to customer data by Microsoft operations and support personnel is denied by default. Nearly all service operations performed by Microsoft are fully automated and human involvement is highly controlled and abstracted away from customer data. 
+
+Only in rare cases does a Microsoft engineer need access to customer data. Typically this is only necessary if you request Microsoft’s assistance to resolve a customer issue. Access to customer data is highly restricted by role-based access controls, multifactor authentication, data minimization and other controls. All access to customer data is strictly logged, and both Microsoft and third parties perform regular audits (as well as sample audits) to attest that any access is appropriate.
 
 Customers can use customer-managed keys to further prevent their data from being readable in case of unauthorized access. Both server-side and client-side encryption can rely on customer-managed keys or customer-provided keys. In either case, Microsoft would not have access to encryption keys and cannot decrypt the data. A SOC audit by an AICPA-accredited auditor twice a year to verifies the effectiveness of our security controls in audit scope. The SOC 2 Type 2 attestation report published by the auditor explains under what circumstances access to customer data can occur and how. 
 
