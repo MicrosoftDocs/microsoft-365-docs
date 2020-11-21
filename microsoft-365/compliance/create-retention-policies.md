@@ -94,7 +94,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 ### Retention policy for Yammer locations
 
 > [!NOTE]
-> Retention policies for Yammer are rolling out in preview. If you don't yet see the new locations for Yammer, try again in a few days.
+> Retention policies for Yammer are rolling out in preview. If you don't yet see the new locations for Yammer, try again in a few weeks.
 >
 > To use this feature, your Yammer network must be [Native Mode](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
