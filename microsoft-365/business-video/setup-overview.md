@@ -22,7 +22,7 @@ search.appverid:
 description: "Learn what you need on  hand to set up Microsoft 365 Business Premium."
 ---
 
-# Overview Microsoft 365 Business Premium setup
+# Overview of Microsoft 365 Business Premium setup
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
 

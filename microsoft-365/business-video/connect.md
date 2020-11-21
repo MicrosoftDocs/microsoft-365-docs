@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 description: "Learn how to connect your PC to Microsoft 365 Business."
 ---
-# Connect you PC to Microsoft 365 Business Premium
+# Connect your PC to Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 

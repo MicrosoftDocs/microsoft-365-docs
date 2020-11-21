@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 description: "Learn how to upgrade Windows 10 Home to Windows 10 Pro."
 ---
-# Upgrade Windows 10 Home to Windows 10 Pro
+# Upgrade from Windows 10 Home to Windows 10 Pro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j?autoplay=false]
 

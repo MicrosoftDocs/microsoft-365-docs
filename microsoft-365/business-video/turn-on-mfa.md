@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn how to turn on multi-factor authentication."
 ---
 
-# Overview of security
+# Turn on multi-factor authentication
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
