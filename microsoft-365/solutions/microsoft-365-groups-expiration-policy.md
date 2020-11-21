@@ -29,7 +29,7 @@ When a group expires it is "soft-deleted" which means it can still be recovered 
 Administrators can specify an expiration period and any inactive group that reaches the end of that period, and is not renewed, will be deleted. (This includes archived teams.) The expiration period begins when the group is created, or on the date it was last renewed. Group owners will automatically be sent an email before the expiration that allows them to renew the group for another expiration interval. Teams users will see persistent notifications in Teams.
 
 Groups that are actively in use are renewed automatically. Any of the following actions will auto-renew a group:
-- SharePoint - view, edit, download, move, share, or upload files.
+- SharePoint - view, edit, download, move, share, or upload files. (Viewing a SharePoint page does not count as an action for automatic renewal.)
 - Outlook - join group, read or write group message from the group, and like a message (Outlook on the web).
 - Teams - visiting a teams channel.
 
@@ -46,11 +46,11 @@ It's important to know that expiration is turned off by default. Administrators 
 |Role|What they can do|
 |---------|---------|
 |Office 365 global admin (in Azure, the Company administrator), User administrator|Create, read, update, or delete the Microsoft 365 groups expiration policy settings.|
-|User|Renew or [restore](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) an Microsoft 365 group that they own|
+|User|Renew or [restore](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) a Microsoft 365 group that they own|
 
 ## How to set the expiration policy
 
-As noted above, expiry is turned off by default. An administrator will have to enable the expiration policy and set the properties for it to take effect. To enable it go to **Azure Active Directory** > **Groups** > **Expiration**. Here you can set the default group lifetime and specify how far in advance you want the first and second expiration notifications to go to the group owner.
+As noted above, expiry is turned off by default. An administrator will have to enable the expiration policy and set the properties for it to take effect. To enable it, go to **Azure Active Directory** > **Groups** > **Expiration**. Here you can set the default group lifetime and specify how far in advance you want the first and second expiration notifications to go to the group owner.
 
 The group lifetime is specified in days and can be set to 180, 365 or to a custom value that you specify. The custom value has to be at least 30 days.
 

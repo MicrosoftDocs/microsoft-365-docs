@@ -36,7 +36,11 @@ This article lists new features in the latest release of Microsoft Defender for 
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
-## September/October 2020 
+## November 2020
+
+- Updated export limits in Review > Action Center > Remediation from Mail Submission and Action Log (Defender for Office 365 Plan 2)
+
+## September/October 2020
 
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
@@ -44,27 +48,27 @@ This article lists new features in the latest release of Microsoft Defender for 
 - Surfacing URL threats in [Threat Explorer](threat-explorer.md#threats-in-urls) (malware, phish, spam, or none) (Defender for Office 365 Plan 2)
 - [Improvements to Hunting Experience Threat Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) with updates around Threats, Additional Actions, Delivery locations and Updated timeline view (Defender for Office 365 Plan 2)
 
-## July/August 2020 
+## July/August 2020
 
 - [Experience improvements to the hunting experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 - [Easily apply recommended settings using preset security policies](preset-security-policies.md) 
 
 ## March/April 2020
 
-- The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available. (Microsoft Defender for Office 365 Plan 2)
+- The ability to [address compromised user accounts with automated investigation and response](address-compromised-users-quickly.md) is now generally available. (Microsoft Defender for Office 365 Plan 2)
 
 ## January/February 2020
 
 - [General availability of Campaign Views in Microsoft Defender for Office 365](campaigns.md) (Microsoft Defender for Office 365 Plan 2)
 - Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md): (Microsoft Defender for Office 365 Plan 2)
-    - Delivery location and special actions
-    - Directionality (inbound, outbound, or intra-org)
-    - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
-    - Granular time filters (day, hour, half-hour) 
+  - Delivery location and special actions
+  - Directionality (inbound, outbound, or intra-org)
+  - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
+  - Granular time filters (day, hour, half-hour)
 
 - The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Security & Compliance Center, go to **Threat management** > **Review**.) (Microsoft Defender for Office 365 Plan 2)
 
-- [Safe Documents in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**
+- [Safe Documents in Microsoft 365](safe-docs.md) **(preview)**
 
 ## December 2019
 

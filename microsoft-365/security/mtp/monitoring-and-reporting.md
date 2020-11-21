@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+>
 
 The Microsoft 365 security center provides a summary of protection and security statuses across your Microsoft 365 environment.
 
