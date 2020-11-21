@@ -861,7 +861,7 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
   items: 
-    - name: Unified auditing
+    - name: Basic auditing
       items:
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
