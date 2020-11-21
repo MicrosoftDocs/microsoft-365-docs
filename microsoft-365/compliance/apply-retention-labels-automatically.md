@@ -180,6 +180,7 @@ Examples queries:
 |Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:document` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:document`|
+|Exchange or SharePoint | `"customer information" OR "private"`|
 
 More complex examples:
 
