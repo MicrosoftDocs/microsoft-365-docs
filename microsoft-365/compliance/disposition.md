@@ -61,15 +61,15 @@ When content reaches the end of its retention period, there are several reasons 
 When a disposition review is triggered at the end of the retention period:
   
 - The people you choose receive an email notification that they have content to review. These reviewers can be individual users or mail-enabled security groups. New in preview:
-   - You can customize the email that they receive, including a link for your organization-specfic information, and instructions in different languages.
+   - You can customize the email that they receive, including a link for your organization-specific information, and instructions in different languages.
    - These users receive the email notification within 24 hours with a reminder once a week.
     
 - The reviewers go to the **Disposition** tab in the Microsoft 365 compliance center to review the content and decide whether to permanently delete it, extend its retention period, or apply a different retention label. New in preview:
 - Reviewers see only the disposition reviews that are assigned to them, whereas administrators see all disposition reviews.
-- Reviewers can forward the disposition review to new users, which generates a new auditing event and notifies the administrator.
+- Reviewers can add new users to the same disposition review, which generates a new auditing event and notifies the administrator.
 - For the disposition review process, a details pane for each item shows a preview of the content if they have permissions to see, and a link to request permissions if not. This details pane also has a History tab to display indexed properties, where it's located, who created it and when, who last modified it and when, matched sensitive info types, and any disposition review actions to date.
 
-A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
+A disposition review can include content in Exchange mailboxes, SharePoint sites, and OneDrive accounts. Content awaiting a disposition review in those locations is permanently deleted only after a reviewer for the final stage of disposition chooses to permanently delete the content.
 
 > [!NOTE]
 > A mailbox must have at least 10 MB data to support disposition reviews.
@@ -101,6 +101,8 @@ After you select this **Trigger a disposition review** option, you specify the d
 
 For the reviewers, specify a user or mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are not supported for this option.
 
+If you need more than one person to review an item at the end of its retention period, you must configure multiple stages of disposition. Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of it's retention period. 
+
 To configure multi-staged disposition, currently in preview, select **Add stage**, follow the prompts, and repeat this action up to 5 times. Existing disposition reviews can be upgraded to multi-staged disposition reviews by adding one or more stages.
 
 After you have specified your reviewers, remember to grant them the **Disposition Management** admin role. For more information, see the [Permissions for disposition](#permissions-for-disposition) section on this page.
@@ -115,17 +117,17 @@ After they select a retention label, they then see all pending dispositions for 
 
 As you can see from the picture, the actions supported are: 
   
-- Permanently delete the item
-- Extend the retention period
-- Apply a different retention label
+- **Permanently delete the item**:
+    - When this action is selected for an interim stage of disposition review when you have configured multiple stages: The item moves to the next disposition stage.
+    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is permanently deleted.
+- **Extend the retention period**:
+    - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review resumes for the same disposition stage (interim, final, or the only stage).
+- **Apply a different retention label**:
+    -When this action is selected, the item exits the disposition review process for the original label. The item is then subject to any new disposition review settings from the newly selected retention label.
 
-During a disposition review, the content never moves from its original location, and it's never deleted until a reviewer chooses to do so.
+During a disposition review, the content never moves from its original location, and it's never permanently deleted until this action is selected by a reviewer for the final or only disposition stage. Then, the content becomes eligible for the standard cleanup process for that workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 
 All disposition actions can be audited and the justification text entered by the reviewer is saved and displayed in the **Comment** column on the **Disposed items** page.
-  
-### How long until disposed content is permanently deleted
-
-Content awaiting a disposition review is deleted only after a reviewer chooses to permanently delete the content. When the reviewer chooses this option, the content becomes eligible for the standard cleanup process for that workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## Disposition of records
 
