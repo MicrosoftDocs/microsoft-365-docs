@@ -238,7 +238,7 @@ Use the following table to help you identify whether to use a retention policy o
 |UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
-|Start the retention period: <br /> - When items were created or last modified<br /> - When labeled or based on an event | <br />Yes <br />No | <br />Yes <br /> Yes |
+|Start the retention period: <br /> - When items were created <br /> - When items were last modified <br /> - When labeled <br /> - When based on an event | Yes <br /> Yes, supported for SharePoint and OneDrive only <br /> No <br /> No |  Yes <br /> Yes, supported for SharePoint and OneDrive only <br /> Yes <br /> Yes |
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
 |Audit admin activities| Yes | Yes|
