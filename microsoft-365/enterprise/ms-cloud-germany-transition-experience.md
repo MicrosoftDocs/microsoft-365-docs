@@ -77,7 +77,7 @@ Office Online services are accessible via office.de before and during the transi
 
 ## Exchange Online Protection
 
-- Back-end Exchange Online Protection features are copied to new Germany region.
+- Back-end Exchange Online Protection (EOP) features are copied to new Germany region.
 - Office 365 Security and Compliance Center users need to transition to using global URLs https://protection.office.com as part of the migration.
 
 ## Skype for Business Online
