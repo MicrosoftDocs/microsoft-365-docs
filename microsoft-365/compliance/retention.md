@@ -96,7 +96,7 @@ Retention policies can be applied to the following locations:
 - Exchange email
 - SharePoint site
 - OneDrive accounts
-- Microsoft 365 groups
+- Microsoft 365 Groups
 - Skype for Business
 - Exchange public folders
 - Teams channel messages
@@ -106,7 +106,7 @@ Retention policies can be applied to the following locations:
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
-For the start of the retention period, you can choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified.
+For the start of the retention period, you can choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups locations, when the content was last modified.
 
 Items inherit the retention settings from their container specified in the retention policy. If they are then moved outside that container when the policy is configured to retain content, a copy of that item is retained in the workload's secured location. However, the retention settings don't travel with the content in its new location. If that's required, use retention labels instead of retention policies.
 
