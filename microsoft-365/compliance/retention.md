@@ -106,6 +106,8 @@ Retention policies can be applied to the following locations:
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
+For the start of the retention period, you can choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified.
+
 Items inherit the retention settings from their container specified in the retention policy. If they are then moved outside that container when the policy is configured to retain content, a copy of that item is retained in the workload's secured location. However, the retention settings don't travel with the content in its new location. If that's required, use retention labels instead of retention policies.
 
 ### Retention labels
@@ -238,7 +240,7 @@ Use the following table to help you identify whether to use a retention policy o
 |UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
-|Start the retention period: <br /> - When items were created <br /> - When items were last modified <br /> - When labeled <br /> - When based on an event | Yes <br /> Yes, supported for SharePoint and OneDrive only <br /> No <br /> No |  Yes <br /> Yes, supported for SharePoint and OneDrive only <br /> Yes <br /> Yes |
+|Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
 |Audit admin activities| Yes | Yes|
