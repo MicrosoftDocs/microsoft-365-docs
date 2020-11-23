@@ -19,35 +19,36 @@ description: "Learn how to use a QR code to authenticate and download Outlook mo
 
 # Use a QR code to sign-in to Outlook mobile apps
 
-As the Microsoft 365 administrator, you can allow your users to sign-in to the Outlook for Android or iOS apps on their mobile devices without having to enter their username and password. You can turn on the setting in the Microsoft 365 admin center that allows your users to scan a QR code to authenticate themselves in the Outlook mobile apps.
+As the Microsoft 365 administrator, you can enable your users to sign in to Outlook for Android or iOS app on their mobile devices without having to enter their username and password. By scanning a QR code, users can securely  authenticate and sign in to Outlook mobile.  The setting can be managed in the Microsoft 365 admin center..
 
-In Outlook on the web or other desktop Outlook applications, there are notifications promoting the Outlook mobile apps, which can be managed by the administrator using Exchange Powershell.
-When a user interacts with them and sends themselves an SMS text message to download the app on their mobile device, a QR code will appear on their computer. Your users will be able to scan the QR code to log in to Outlook on their phone. This QR code is a short-lived token that can only be redeemed once. You can mange this feature from the Microsoft admin center.
+In Outlook on the web or other desktop Outlook applications, users may see notifications informing them that they can use Outlook on their mobile device. These notifications can be managed by the administrator using Exchange Powershell. If users choose to send themselves an SMS text message to download the app on their mobile device, a QR code will appear on their computer. They will be able to scan the QR code to log into Outlook on their phone or tablet. This QR code is a short-lived token that can only be redeemed once. You can manage this feature from the Microsoft admin center.
 
 > [!NOTE]
 > In some cases, your users will have to re-authenticate on their computer to generate the QR code.
   
 ## Before you begin
 
-You need to be a global administrator to initiate sign-out.
+You need to be a global administrator to configure these settings.
 
 ## Use the Microsoft admin center
 
 > [!NOTE]
-> This setting is on by default.
+> The QR code setting is on by default.
 
 1. In the Microsoft 365 admin center, go to **Settings** -> **Org Settings**.
 2. On the Org Settings page, select **Security & privacy**.
 3. Select **Mobile app sign-in**.
-4. Select the toggle to turn off the ability to use a QR code.
+4. Select the toggle to turn off the the QR code functionality.
 
 ## Use Exchange PowerShell
 
 1. Connect to [Connect to Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
-2. Using PowerShell, you can disable the QR code option for your users.
+2. Using PowerShell, you can disable the notifications informing your users about the Outlook mobile apps.
+
 ```powershell
 Set-Organization -MobileAppEducationEnabled <Boolean>
 ```
 
-For more information, check out [Set-OrganizationConfig
-](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps).
+Related topics
+
+[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps)
