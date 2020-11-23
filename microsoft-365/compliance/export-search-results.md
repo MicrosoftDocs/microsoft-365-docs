@@ -52,7 +52,9 @@ Exporting the results of a Content Search involves preparing the results, and th
   > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
   > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- When you download search results (described in Step 2), you can increase the download speed by configuring a Windows Registry setting on the computer you use to export the search results. For more information, see [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+- Depending on network configuration it is recommended to use a local machine. To eliminate your company's firewall or proxy infrastructure being the issue you may use something a virtual desktop https://azure.microsoft.com/en-us/services/virtual-desktop/ outside of your network. This could potentially decrease timeouts occurring in streams from Azure data connections when exporting large search result files.
+
+- Also for better performance with downloads, consider using smaller data ranges to break up the search.
   
 - When you export search results, the data is temporarily stored in a Microsoft-provided Azure Storage location in the Microsoft cloud before it's downloaded to your local computer. Be sure that your organization can connect to the endpoint in Azure, which is **\*.blob.core.windows.net** (the wildcard represents a unique identifier for your export). The search results data is deleted from the Azure Storage location two weeks after it's created. 
   
@@ -130,8 +132,6 @@ See the next section for instructions to download the exported search results.
 ## Step 2: Download the search results
 
 The next step is to download the search results from the Azure Storage location to your local computer.
-  
-As previously explained, you can increase the download speed by configuring a Windows Registry setting on the computer you use to export the search results. For more information, see [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
 1. On the **Content search** page, click the **Exports** tab. 
   
