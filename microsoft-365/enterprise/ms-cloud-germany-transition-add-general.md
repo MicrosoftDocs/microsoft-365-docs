@@ -26,7 +26,7 @@ The following sections provide additional information on services, pre-work cons
 
 ## Azure Active Directory
 
-To complete the move from Azure German cloud to Azure Public cloud we recommend that authentication endpoint, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications be updated to those of the commercial cloud when OIDC endpoint https://login.microsoftonline.com/[TenantIdOrDomain]/.well-known/openid-configuration starts reporting commercial cloud endpoints. 
+To complete the move from Azure German cloud to Azure Public cloud we recommend that the authentication endpoint, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications be updated to those of the commercial cloud when the OpenID Connect (OIDC) endpoint, `https://login.microsoftonline.com/[TenantIdOrDomain]/.well-known/openid-configuration`, starts reporting commercial cloud endpoints. 
  
 **When should I make this change?**
 
