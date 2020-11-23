@@ -36,7 +36,7 @@ description: "Set up email forwarding to one or more email accounts using Office
   
 As the admin of an organization, you might have company requirements to set up email forwarding for a user's mailbox. Email forwarding lets you forward email messages sent to a user's mailbox to another user's mailbox inside or outside of your organization.
 
-> [!Important]
+> [!IMPORTANT]
 > You can use outbound spam filter policies to control automatic forwarding to external recipients. For more information, View [Control automatic external email forwarding in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls). If you would 
 
   
