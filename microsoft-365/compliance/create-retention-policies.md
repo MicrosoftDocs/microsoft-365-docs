@@ -222,7 +222,7 @@ When you configure a retention policy, you choose to retain items for a specific
 
 When you configure a retention policy, you can choose to retain content indefinitely or for a specific number of days, months, or years. The retention period is calculated from the age of the content, not from when the retention policy is applied.
 
-For the start of the retention period, you can also choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Office 365 locations, when the content was last modified.
+For the start of the retention period, you can also choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified.
 
 Examples:
 
@@ -274,6 +274,9 @@ To use the optional configuration to scope your retention settings, make sure th
 > In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify excludes to be exempt from the policy.
 
 ## Updating retention policies
+
+Some settings can't be changed after a retention policy is created and saved, which include:
+- The retention policy name and the retention settings except the retention period and when to start the retention period.
 
 If you edit a retention policy and items are already subject to the original settings in your retention policy, your updated settings will be automatically applied to these items in addition to items that are newly identified.
 
