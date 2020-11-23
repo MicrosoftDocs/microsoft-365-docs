@@ -41,9 +41,9 @@ Here are the key differences between Microsoft Cloud Deutschland and Office 365 
 
 What isn't changing:
 
-- Tenant initial domain (such as contoso.onmicrosoft.de) with tenant ID (GUID) and custom domains will persist after the migration. 
+- Tenant initial domain (such as `contoso.onmicrosoft.de`) with tenant ID (GUID) and custom domains will persist after the migration. 
 
-- Authentication requests for resources that are migrated to Office 365 services are granted by the Office 365 services Azure authentication service (login.microsoftonline.com). During the migration, resources that remain still in Office 365 Germany are authenticated by the existing Germany Azure service (login.microsoftonline.de).
+- Authentication requests for resources that are migrated to Office 365 services are granted by the Office 365 services Azure authentication service (`login.microsoftonline.com`). During the migration, resources that remain still in Office 365 Germany are authenticated by the existing Germany Azure service (`login.microsoftonline.de`).
 
 Considerations to note:
 
@@ -65,20 +65,20 @@ Considerations to note:
 
 ## Exchange Online
 
-- Exchange resource URLs transition from the legacy Germany endpoint outlook.office.de to the Office 365 services endpoint outlook.office365.com after the migration. Your users may access their migrated mailbox by using the legacy URL until the migration completes. Customers should transition users to the new URL as soon as possible after Exchange migration begins to avoid affecting retirement of the Germany environment. The Office 365 services URLs for Outlook services become available only after Exchange migration begins.
+- Exchange resource URLs transition from the legacy Germany endpoint `outlook.office.de` to the Office 365 services endpoint `outlook.office365.com` after the migration. Your users may access their migrated mailbox by using the legacy URL until the migration completes. Customers should transition users to the new URL as soon as possible after Exchange migration begins to avoid affecting retirement of the Germany environment. The Office 365 services URLs for Outlook services become available only after Exchange migration begins.
 
 - Mailboxes are migrated as a backend process. Users in your organization may be in either Microsoft Cloud Deutschland or the German region during the transition and are part of the same Exchange organization (global address list [GAL]).
 
-- Users of Outlook Web App (OWA) who access the service by using a URL where their mailbox does not reside will see an extra authentication prompt. For example, if the user's mailbox is in the Office 365 services and the user’s OWA connection uses the legacy endpoint outlook.office.de, the user will first authenticate to login.microsoftonline.de, and then to login.microsoftonline.com. When migration is complete, the user can access the new URL (https://outlook.office365.com), and they will see only the single, expected sign-in request. 
+- Users of Outlook Web App (OWA) who access the service by using a URL where their mailbox does not reside will see an extra authentication prompt. For example, if the user's mailbox is in the Office 365 services and the user's OWA connection uses the legacy endpoint `outlook.office.de`, the user will first authenticate to `login.microsoftonline.de`, and then to `login.microsoftonline.com`. When migration is complete, the user can access the new URL (https://outlook.office365.com), and they will see only the single, expected sign-in request. 
 
 ## Office Services
 
-Office Online services are accessible via office.de before and during the transition. After users' mailboxes are transitioned to the Office 365 services, users should begin to use Office 365 services URLs. As subsequent workloads migrate to Office 365 services, their interface from the office.com portal will begin to work.
+Office Online services are accessible via `office.de` before and during the transition. After users' mailboxes are transitioned to the Office 365 services, users should begin to use Office 365 services URLs. As subsequent workloads migrate to Office 365 services, their interface from the office.com portal will begin to work.
 
 ## Exchange Online Protection
 
 - Back-end Exchange Online Protection (EOP) features are copied to new Germany region.
-- Office 365 Security and Compliance Center users need to transition to using global URLs https://protection.office.com as part of the migration.
+- Office 365 Security and Compliance Center users need to transition to using global URLs `https://protection.office.com` as part of the migration.
 
 ## Skype for Business Online
 

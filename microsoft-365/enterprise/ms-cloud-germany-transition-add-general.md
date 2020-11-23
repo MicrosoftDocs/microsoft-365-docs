@@ -26,7 +26,7 @@ The following sections provide additional information on services, pre-work cons
 
 ## Azure Active Directory
 
-To complete the move from Azure German cloud to Azure Public cloud we recommend that the authentication endpoint, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications be updated to those of the commercial cloud when the OpenID Connect (OIDC) endpoint, `https://login.microsoftonline.com/[TenantIdOrDomain]/.well-known/openid-configuration`, starts reporting commercial cloud endpoints. 
+To complete the move from Azure German cloud to Azure Public cloud we recommend that the authentication endpoint, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications be updated to those of the commercial cloud when the OpenID Connect (OIDC) endpoint, `https://login.microsoftonline.com/`\<TenantIdOrDomain\>`/.well-known/openid-configuration`, starts reporting commercial cloud endpoints. 
  
 **When should I make this change?**
 
@@ -34,7 +34,7 @@ You'll receive a notification in Azure/Office portal when your tenant completes 
  
 There are three preconditions to updating your login authority:
 
- - OIDC discovery endpoint for your tenant https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration returns Azure AD public cloud endpoints.
+ - OIDC discovery endpoint for your tenant `https://login.microsoftonline.com/`\<TenantIdOrDomain\>`/.well-known/openid-configuration` returns Azure AD public cloud endpoints.
 
  - If your tenant is set up for federation, AD FS is updated to sync with Azure AD Public. You can follow instructions to update Azure AD Connect settings for making this change.
 
@@ -63,9 +63,9 @@ An application could be any of the following:
     - See Azure AD authentication contexts.
     - This applies both to authentication to your application as well as authentication to any APIs your application may be calling (that is, Microsoft Graph, Azure AD Graph, Azure Resource Manager).
 
-2. Update Azure AD Graph endpoint to be https://graph.windows.net.
+2. Update Azure AD Graph endpoint to be `https://graph.windows.net`.
 
-3. Update MS Graph endpoint to be https://graph.microsoft.com.
+3. Update MS Graph endpoint to be `https://graph.microsoft.com`.
 
 4. Update any German cloud endpoints (such as those for Exchange Online and SharePoint Online) that are used by your applications to be those of the public cloud.
 
@@ -114,19 +114,19 @@ Here are some additional considerations for Azure AD:
 - For tenants that are created after October 22, 2019, security defaults may be auto-enabled for the tenant when it is migrated to the Office 365 service. Tenant admins can choose to leave security defaults enabled and register for MFA, or they can disable the feature. For more information, see [Disabling security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults). 
 
   > [!NOTE]
-  > Organizations which are not auto-enabled during migration may still be auto-enrolled in the future as the feature to enable security defaults is rolled out in the Office 365 service. Admins choosing to explicitly disable or enable Security Defaults may do so by updating the feature under **Azure Active Directory > Properties**. Once the feature enablement state is explicitly by the admin, it will not be auto-enabled.
+  > Organizations which are not auto-enabled during migration may still be auto-enrolled in the future as the feature to enable security defaults is rolled out in the Office 365 service. Admins who choose to explicitly disable or enable security defaults may do so by updating the feature under **Azure Active Directory > Properties**. After the feature is explicitly enabled by the admin, it will not be auto-enabled.
 
-- There will be an Azure AD Connect version warning in the Office 365 Germany portal as well as the Office 365 portal once the tenant is in migration. This can be ignored if the version warning is no longer show the warning after the migration is completed. In case there is a warning, either before or after migration, in the respective portal, Azure AD Connect must be updated. The warning displays: "We detected you’re using an outdated directory sync tool. We recommend you go to the Microsoft Download Center to get the latest version of Azure AD Connect."
+- There will be an Azure AD Connect version warning in the Office 365 Germany portal as well as the Office 365 portal once the tenant is in migration. This can be ignored if the version warning is no longer show the warning after the migration is completed. In case there is a warning, either before or after migration, in the respective portal, Azure AD Connect must be updated. The warning displays: "We detected you're using an outdated directory sync tool. We recommend you go to the Microsoft Download Center to get the latest version of Azure AD Connect."
 
 ## Exchange Online 
 
-- myaccount.msft.com will only work after cutover. Links will produce a “something went wrong” error until that time.
+- `myaccount.msft.com` will only work after cutover. Links will produce a "something went wrong" error until that time.
 
-- Users of Outlook Web App that access a shared mailbox in the other environment (for example, a user in the Germany environment accesses a shared mailbox in the global environment) will be prompted to authenticate a second time. The user must first authenticate and access their mailbox in outlook.office.de, then open the shared mailbox that is in outlook.office365.com. They'll need to authenticate a second time when accessing the shared resources that are hosted in the other service.
+- Users of Outlook Web App that access a shared mailbox in the other environment (for example, a user in the Germany environment accesses a shared mailbox in the global environment) will be prompted to authenticate a second time. The user must first authenticate and access their mailbox in `outlook.office.de`, then open the shared mailbox that is in `outlook.office365.com`. They'll need to authenticate a second time when accessing the shared resources that are hosted in the other service.
 
-- For existing Microsoft Cloud Deutschland customers or those in transition, when a shared mailbox is added to Outlook using **File > Info > Add Account**, viewing calendar permissions may fail (the Outlook client attempts to use the Rest API https://outlook.office.de/api/v2.0/Me/Calendars.) Customers wishing to add an account to view calendar permissions can add the registry key as described in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) to ensure this action will succeed. This registry Key can be deployed organization-wide using Group Policy.
+- For existing Microsoft Cloud Deutschland customers or those in transition, when a shared mailbox is added to Outlook using **File > Info > Add Account**, viewing calendar permissions may fail (the Outlook client attempts to use the Rest API `https://outlook.office.de/api/v2.0/Me/Calendars`.) Customers wishing to add an account to view calendar permissions can add the registry key as described in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) to ensure this action will succeed. This registry Key can be deployed organization-wide using Group Policy.
 
-- During Migration Phase, cmdlets `New-migrationEndpoint`, `Set-MigrationEndpoint`, and `Test-MigrationsServerAvailability` can result in errors [Error on proxy]. This happens when the arbitration mailbox has migrated to WW but the admin mailbox has not or vice versa. To resolve this, while creating the tenant PowerShell session use the arbitration mailbox as routing hint in the connectionuri. For example: `New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection`
+- During Migration Phase, cmdlets **New-migrationEndpoint**, **Set-MigrationEndpoint**, and **Test-MigrationsServerAvailability** can result in errors [Error on proxy]. This happens when the arbitration mailbox has migrated to WW but the admin mailbox has not or vice versa. To resolve this, while creating the tenant PowerShell session use the arbitration mailbox as routing hint in the **connectionuri**. For example: `New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection`
 
 - If you are using Exchange Online hybrid:
 
@@ -134,7 +134,7 @@ Here are some additional considerations for Azure AD:
 
 - During Migration Phase, cmdlets **New-migrationEndpoint**, **Set-MigrationEndpoint**, and **Test-MigrationsServerAvailability** can give error [Error on proxy]. This happens when the arbitration mailbox has migrated to Office 365 services but the admin mailbox has not or vice versa. To resolve this, while creating the tenant PowerShell session use the arbitration mailbox as routing hint in the **connectionuri**. For example: `New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection`
 
-For more information about actions required during the migration phase of this workload or about impact to administration or usage, review the [Exchange Online section of Migration phases actions and impacts](ms-cloud-germany-transition-phases.md#exchange-online).
+For more information about actions required during the migration phase of this workload or about impact to administration or usage, review the Exchange Online section of [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md#exchange-online).
 
 ## Office Services
 

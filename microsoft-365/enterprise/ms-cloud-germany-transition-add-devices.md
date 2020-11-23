@@ -26,7 +26,7 @@ description: "Summary: Additional device information on services when moving fro
 
 **How can I tell if my organization is affected?**
 
-Administrators should check https://portal.microsoftazure.de to determine if they have any registered devices. If your organization has registered devices, you are affected.
+Administrators should check `https://portal.microsoftazure.de` to determine if they have any registered devices. If your organization has registered devices, you are affected.
 
 **What is the impact on my users?**
 
@@ -75,9 +75,9 @@ Private key state : Okay
      Device state : Unknown
 ```
 
-The affected devices will have the “Device state” with value of “Unknown”. If the output is “Device not joined” or whose “Device state” value is “Okay”, ignore the following guidance.
+The affected devices will have the "Device state" with value of "Unknown". If the output is "Device not joined" or whose "Device state" value is "Okay", ignore the following guidance.
 
-Only for devices that show that the device is joined (by virtue of deviceId, thumbprint, and so on) and whose “Device state” value is “Unknown”, admins should run the following command in the context of a domain user signing in on such a down-level device:
+Only for devices that show that the device is joined (by virtue of deviceId, thumbprint, and so on) and whose "Device state" value is "Unknown", admins should run the following command in the context of a domain user signing in on such a down-level device:
 
 ```console
 %programfiles%\Microsoft Workplace Join\autoworkplace /leave
@@ -94,7 +94,7 @@ Sufficient care must be taken to not run this command when the user subsequently
 To determine whether the Windows 10 device was previously joined to Azure AD, run the following command on the device:
 
 ```console
-%SystemRoot%\system32\dsregcmd.exe /status”
+%SystemRoot%\system32\dsregcmd.exe /status"
 ```
 
 If the device is hybrid Azure AD–joined, the admin would see the following output:
@@ -109,7 +109,7 @@ If the device is hybrid Azure AD–joined, the admin would see the following out
               DomainJoined : YES
 ```
 
-If the output is “AzureAdJoined : No”, ignore the following guidance.
+If the output is "AzureAdJoined : No", ignore the following guidance.
 
 Only for devices that show that the device is joined to Azure AD, run the following command as an admin to remove the joined state of the device.
 
@@ -146,11 +146,11 @@ If the device is joined to Azure AD, the user or admin would see the following o
               DomainJoined : NO
 ```
 
-If the output is “AzureAdJoined : NO”, ignore the following guidance.
+If the output is "AzureAdJoined : NO", ignore the following guidance.
 
 User: If the device is Azure AD joined, a user can unjoin the device from the settings. Verify that there is local admin account on the device before unjoining the device from Azure AD. The local admin account is needed to sign back into the device.
 
-Admin: If the organization’s admin wants to unjoin the users' devices that are Azure AD–joined, they can do so by running the following command on each of the devices by using a mechanism such as Group Policy. The admin must verify that there is a local admin account on the device before unjoining the device from Azure AD. The local admin account is needed to sign back into the device.
+Admin: If the organization's admin wants to unjoin the users' devices that are Azure AD–joined, they can do so by running the following command on each of the devices by using a mechanism such as Group Policy. The admin must verify that there is a local admin account on the device before unjoining the device from Azure AD. The local admin account is needed to sign back into the device.
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /leave
@@ -236,7 +236,7 @@ On iOS devices, user will need to manually remove any cached accounts from the A
 ### Step 1: If present, remove the account from the Authenticator app
 
 1. Tap the account in the Authenticator app.
-2. Tap the **Settings** icon in the top-right corner. If you don’t see the **Settings** icon, you might not be using the latest version of Authenticator.
+2. Tap the **Settings** icon in the top-right corner. If you don't see the **Settings** icon, you might not be using the latest version of Authenticator.
 3. Tap the **Remove account** button.
 4. Tap **All apps on this device**.
  
