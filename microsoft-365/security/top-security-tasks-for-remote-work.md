@@ -37,7 +37,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 
 |Step|Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1|[Enable Azure Multi-Factor Authentication (MFA)](#1-enable-azure-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Enable Azure AD Multi-Factor Authentication (MFA)](#1-enable-azure-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Protect against threats](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Configure Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Configure Microsoft Defender for Identity](#4-configure-microsoft-defender-for-identity)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -55,7 +55,7 @@ Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft
 
 ![Screenshot of Microsoft Secure Score](../media/secure-score.png)
 
-## 1: Enable Azure Multi-Factor Authentication (MFA)
+## 1: Enable Azure AD Multi-Factor Authentication (MFA)
 
 The single best thing you can do to improve security for employees working from home is to turn on MFA. If you don't already have processes in place, treat this as an emergency pilot and make sure you have support folks ready to help employees who get stuck. As you probably can't distribute hardware security devices, use Windows Hello biometrics and smartphone authentication apps like Microsoft Authenticator.
 
