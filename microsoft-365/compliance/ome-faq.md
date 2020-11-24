@@ -91,7 +91,7 @@ On-premises users can send encrypted mail using Exchange Online mail flow rules.
   
 ## What email client do I need to use in order to create an OME encrypted message? What applications are supported for sending protected messages?
 
-You can create protected messages from Outlook 2016, and Outlook 2013 for Windows and Mac, and from Outlook on the web.
+You can create protected messages from Outlook 2016, and Outlook 2013 for Windows and Mac, and from Outlook on the web. See [client details](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us) on sending encrypted messages.
   
 ## What email clients are supported to read and reply to protected emails?
 
