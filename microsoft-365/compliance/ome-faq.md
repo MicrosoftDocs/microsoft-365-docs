@@ -96,7 +96,11 @@ You can create protected messages from Outlook 2016, and Outlook 2013 for Window
 ## What email clients are supported to read and reply to protected emails?
 
 Microsoft 365 users can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS). You can also use the iOS native mail client if your organization allows it. If you are not a Microsoft 365 user, you can read and reply to encrypted messages on the web through your web browser.
-  
+
+## What email clients support the Encrypt-only protected emails?
+
+Microsoft 365 users can use Outlook for PC versions 2019 and Microsoft 365 to create mail protected with the encrypt-only policy.  That means messages that have the new encrypt-only policy applied can be read directly in Outlook on the web, in Outlook for iOS and Android, and now Outlook for PC versions 2019 and Microsoft 365.
+
 ## Is there a size limit for messages you can send with OME?
 
 Yes. The maximum message size you can send with OME, including attachments, is 30 MB.
