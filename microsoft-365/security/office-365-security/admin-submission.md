@@ -67,11 +67,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
    - **Should have been blocked**: Select **Spam**, **Phishing**, or **Malware**. If you're not sure, use your best judgment.
 
-4. If the filter was bypassed due to policies upon submission, you'll see information about that policy.
-
-   If the filter was not bypassed due to one or more policies, the scan will complete in several minutes. You'll see additional information about the submission by clicking on the status link. This includes the results of the policy check and the rescan verdict. Note this does not run the email through the Microsoft Defender for Office 365 full filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file.
-
-5. When you're finished, click the **Submit** button.
+4. When you're finished, click the **Submit** button.
 
 ![URL submission example](../../media/submission-flyout-email.PNG)
 
@@ -140,10 +136,17 @@ You can click the **Column options** button near the bottom of the page to add o
 - **Submission type**
 - **Delivery reason**
 - **Status**<sup>\*</sup>
-- **Control type**
-- **Control source**
 
   <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
+
+#### Admin submission rescan details
+Messages that are submitted in Admin submissions are rescanned and results shown in the details flyout:
+1) if there was a failure in the sender's email authentication at time of delivery
+2) Information about any policy hits that could have affected or overridden the verdict of a message
+3) current detonation results to see if the URLs or files contained in the message were malicious or not
+4) feedback from graders
+
+If a override was found, the rescan should complete in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
 
 ### View admin URL submissions
 
