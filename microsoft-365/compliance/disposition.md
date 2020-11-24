@@ -97,15 +97,24 @@ From the **Define retention settings** page for a retention label:
 
 ![Retention settings for a label](../media/disposition-review-option.png)
  
-After you select this **Trigger a disposition review** option, you specify the disposition reviewers on the next page of the wizard:
+After you select this **Trigger a disposition review** option, on the next page of the wizard, you specify how many stages of disposition you want and the disposition reviewers for each stage:
 
 ![Specifying disposition reviewers](../media/disposition-reviewers.png)
 
+Select **Add stages**, and name your stage for identification purposes. Then specify the reviewers for that stage.
+
 For the reviewers, specify a user or mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are not supported for this option.
 
-If you need more than one person to review an item at the end of its retention period, you must configure multiple stages of disposition. Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of it's retention period. 
+If you need more than one person to review an item at the end of its retention period, select **Add stages** again and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
 
-To configure multi-staged disposition, currently in preview, select **Add stage**, follow the prompts, and repeat this action up to 5 times. Existing disposition reviews can be upgraded to multi-staged disposition reviews by adding one or more stages.
+Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of it's retention period. These users can also forward the disposition review to other users.
+
+> [!NOTE]
+> Multi-stage disposition is currently in preview. Existing disposition reviews can be upgraded to multi-staged disposition reviews by selecting **Add Stages**.
+
+For each stage specified, you can rename it, reorder it, or remove it by selecting the Stage actions option (**...**): 
+
+![Stage actions for disposition reviews](../media/stage-actions-disposition-review.png)
 
 After you have specified your reviewers, remember to grant them the **Disposition Management** admin role. For more information, see the [Permissions for disposition](#permissions-for-disposition) section on this page.
 
