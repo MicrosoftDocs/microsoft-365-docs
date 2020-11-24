@@ -105,7 +105,7 @@
                 - name: Threat analytics overview
                   href: mtp/threat-analytics.md
                 - name: Read the analyst report
-                  href: mtp/threat-analytics-analyst-report.md
+                  href: mtp/threat-analytics-analyst-reports.md
             - name: Incidents
               items: 
                 - name: Overview
