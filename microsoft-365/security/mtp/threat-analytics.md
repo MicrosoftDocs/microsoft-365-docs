@@ -73,12 +73,12 @@ _Threat analytics dashboard_
 
 Each threat analytics report provides information in several sections: 
 
-- **Overview** 
-- **Analyst report**
-- **Related incidents**
-- **Impacted assets**
-- **Prevented email attempts** 
-- **Mitigations**
+- [**Overview**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses) 
+- [**Analyst report**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
+- [**Related incidents**](#related-incidents-view-and-manage-related-incidents)
+- [**Impacted assets**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
+- [**Prevented email attempts**](#prevented-email-attempts-view-blocked-or-junked-threat-emails)
+- [**Mitigations**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
 
 ### Overview: Quickly understand the threat, assess its impact, and review defenses
 
