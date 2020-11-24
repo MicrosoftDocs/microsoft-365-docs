@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Create and auto-publish retention labels so you can automatically apply labels to retain what you need and delete what you don't
+description: Create retention labels and auto-labeling policies so you can automatically apply labels to retain what you need and delete what you don't
 ---
 
 # Automatically apply a retention label to retain or delete content
@@ -138,7 +138,11 @@ After you select a policy template, you can add or remove any types of sensitive
 For more information about these options, see the following guidance from the DLP documentation [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
 ![Options for identifying sensitive information types](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
-  
+
+To consider when using sensitive information types to auto-apply retention labels:
+
+- New and modified items can be auto-labeled.
+
 #### Auto-apply labels to content with keywords or searchable properties
 
 You can auto-apply labels to content by using a query that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators such as AND, OR, and NOT.
@@ -147,27 +151,75 @@ You can auto-apply labels to content by using a query that contains specific wor
 
 For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Query-based labels use the search index to identify content. For more information about the searchable properties that you can use, see:
+Query-based auto-apply policies use the same search index as eDiscovery content search to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
-- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
-- [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+Some things to consider when using keywords or searchable properties to auto-apply retention labels:
 
-> [!NOTE]
-> Although SharePoint managed properties support aliases, don't use these when you configure your retention labels. Always specify the actual name of the managed property, for example, "RefinableString01".
+- New, modified, and existing items will be auto-labeled for SharePoint, OneDrive, and Exchange.
+
+- For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings at the tenant level with the predefined managed properties that are enabled as refiners by default (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09). For more information, see [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property).
+
+- If you map a custom property to one of the refiner properties, wait 24 hours before you use it in your KQL query for a retention label.
+
+- Although SharePoint managed properties can be renamed by using aliases, don't use these for KQL queries in your labels. Always specify the actual name of the managed property, for example, "RefinableString01".
+
+- To search for values that contain spaces or special characters, use double quotation marks (`" "`) to contain the phrase; for example, `subject:"Financial Statements"`.
+
+- Use the *DocumentLink* property instead of *Path* to match an item based on its URL. 
+
+- Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. However, prefix wildcard searches (such as `cat*`) are supported.
+
+- Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
+
 
 Examples queries:
 
 | Workload | Example |
 |:-----|:-----|
-|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `subject:"Financial Statements"` |
 |Exchange   | `recipients:garthf@contoso.com` |
-|SharePoint | `contenttype:contract` |
-|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+|SharePoint | `contenttype:document` |
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:document`|
+|Exchange or SharePoint | `"customer information" OR "private"`|
+
+More complex examples:
+
+The following query for SharePoint identifies Word documents or Excel spreadsheets when those files contain the keywords **password**, **passwords**, or **pw**:
+
+```
+(password OR passwords OR pw) AND (filetype:doc* OR filetype:xls*)
+```
+
+The following query for Exchange identifies any Word document or PDF that contains the word **nda** or the phrase **non disclosure agreement** when those documents are attached to an email:
+
+```
+(nda OR "non disclosure agreement") AND (attachmentnames:.doc* OR attachmentnames:.pdf)
+```
+
+The following query for SharePoint identifies documents that contain a credit card number: 
+
+```
+sensitivetype:"credit card number"
+```
+
+The following query contains some typical keywords to help identify documents or emails that contain legal content:
+
+```
+ACP OR (Attorney Client Privilege*) OR (AC Privilege)
+```
+
+The following query contains typical keywords to help identify documents or emails for human resources: 
+
+```
+(resume AND staff AND employee AND salary AND recruitment AND candidate)
+```
+
+Note that this final example uses the best practice of always including  operators between keywords. A space between keywords (or two property:value expressions) is the same as using AND. By always adding operators, it's easier to see that this example query will identify only content that contains all these keywords, instead of content that contains any of the keywords. If your intention is to identify content that contains any of the keywords, specify OR instead of AND. As this example shows, when you always specify the operators, it's easier to correctly interpret the query. 
 
 ##### Microsoft Teams meeting recordings
 
 > [!NOTE]
-> The ability to retain and delete Teams meeting recordings is rolling out in preview and won't work before recordings are saved to OneDrive or SharePoint. For more information, see [Use OneDrive for Business and SharePoint Online or Stream for meeting recordings](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
+> The ability to retain and delete Teams meeting recordings is in preview and won't work before recordings are saved to OneDrive or SharePoint. For more information, see [Use OneDrive for Business and SharePoint Online or Stream for meeting recordings](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
 
 To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts or in SharePoint, specify the following for the **Keyword query editor**:
 
@@ -194,6 +246,10 @@ For more information about trainable classifiers, see [Learn about trainable cla
 > [!TIP]
 > If you use trainable classifiers for Exchange, see the recently released [How to retrain a classifier in content explorer (preview)](classifier-how-to-retrain-content-explorer.md).
 
+To consider when using trainable classifiers to auto-apply retention labels:
+
+- New and modified items can be auto-labeled, and existing items from the last six months.
+
 ## How long it takes for retention labels to take effect
 
 When you auto-apply retention labels, it can take up to seven days for the retention labels to be applied to all existing content that matches the conditions.
@@ -215,7 +271,7 @@ If the expected labels don't appear after seven days, check the **Status** of th
 When you edit a retention label or auto-apply policy, and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ## Locking the policy to prevent changes
