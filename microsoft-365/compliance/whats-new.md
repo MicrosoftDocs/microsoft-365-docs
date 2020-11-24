@@ -88,7 +88,7 @@ Watch the video below to learn how Compliance Manager can help simplify how your
 
 ### Sensitivity labels
 
-[Support for US Government customers](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Sensitivity labels are now supported for GCC, GCC High, and DoD customers, only for the Azure Information Protection unified labeling client and scanner.
+[Support for US Government customers](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Sensitivity labels are now supported for GCC, GCC High, and DoD customers, only for the Azure Information Protection unified labeling client and scanner.
 
 ### Trainable classifiers
 
