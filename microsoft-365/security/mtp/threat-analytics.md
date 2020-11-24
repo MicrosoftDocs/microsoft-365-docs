@@ -67,6 +67,8 @@ Select a threat from the dashboard to view the report for that threat.
 
 ![Image of a threat analytics dashboard](../../media/threat-analytics/ta-dashboard-mtp-small.png)
 
+_Threat analytics dashboard_ 
+
 ## View a threat analytics report
 
 Each threat analytics report provides information in several sections: 
@@ -83,6 +85,7 @@ Each threat analytics report provides information in several sections:
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
 ![Image of the overview section of a threat analytics report](../../media/threat-analytics/ta-overview-mtp_small.png)
+
 _Overview section of a threat analytics report_
 
 #### Assess impact to your organization
@@ -129,6 +132,7 @@ In the **Mitigations** section, review the list of specific actionable recommend
 Mitigation information in this section incorporates data from [threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
 
 ![Image of the mitigations section of a threat analytics report](../../media/threat-analytics/ta-mitigations-mtp.png)
+
 _Mitigations section of a threat analytics report_
 
 ## Additional report details and limitations
