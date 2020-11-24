@@ -57,6 +57,7 @@ To assign the Usage Summary Reports Reader role with PowerShell:
 
 ```powershell
 Connect-AzureAD
+Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
 $role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
 Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
 $u=Get-AzureADUser -ObjectId <user upn>
