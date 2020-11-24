@@ -26,7 +26,7 @@ description: "Summary: Additional device information on services when moving fro
 
 **How can I tell if my organization is affected?**
 
-Administrators should check `https://portal.microsoftazure.de` to determine if they have any registered devices. If your organization has registered devices, you are affected.
+Administrators should check `https://portal.microsoftazure.de` to determine if they have any registered devices. If your organization has registered devices, you're affected.
 
 **What is the impact on my users?**
 
@@ -36,7 +36,7 @@ Ensure that all of your devices are registered with the worldwide endpoint befor
   
 **When do my users re-register their devices?**
 
-It's critical to your success that you only de-register and re-register your devices during the migration stage, "Separate from Microsoft Cloud Deutschland."
+It's critical to your success that you only unregister and re-register your devices during the migration stage, "Separate from Microsoft Cloud Deutschland."<!--v-gmoor: Where are these stages listed and described?-->
 
 **How do I restore my device state after migration?**
 
@@ -48,13 +48,13 @@ Microsoft will publish instructions for how to successfully restore device state
  
 **How do I know that all my devices are registered in public cloud?**
 
-To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after migration stage "Separate from Microsoft Cloud Deutschland."
+To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after migration stage "Separate from Microsoft Cloud Deutschland."<!--v-gmoor: Where are these stages listed and described?-->
 
 ## Windows Hybrid Azure AD join
 
 ### Windows down-level
 
-_Windows down-level devices_ are Windows devices that currently run earlier versions of Windows (such as Windows 8.1 or Windows 7), or that run Windows Server versions earlier than 2019 and 2016. Such devices, if they are registered before, will need to un-registered and re-registered. 
+_Windows down-level devices_ are Windows devices that currently run earlier versions of Windows (such as Windows 8.1 or Windows 7), or that run Windows Server versions earlier than 2019 and 2016. Such devices, if they're registered before, you'll need to unregister and re-register those devices. 
 
 To determine whether a Windows down-level device was previously joined to Azure AD, use following command on the device:
 
@@ -62,7 +62,7 @@ To determine whether a Windows down-level device was previously joined to Azure 
 %programfiles%\Microsoft Workplace Join\autoworkplace /status
 ```
 
-If the device was previously joined to Azure AD, and if the device has network connectivity to public Azure AD endpoints, one would see the following output:
+If the device was previously joined to Azure AD, and if the device has network connectivity to global Azure AD endpoints, you would see the following output:
 
 ```console
 +----------------------------------------------------------------------+
@@ -121,7 +121,7 @@ The preceding command only needs to be run once in an administrative context on 
 
 #### Hybrid AD Join\Re-Registration
 
-The device is automatically joined to Azure AD without user or admin intervention as long as the device has network connectivity to public Azure AD endpoints. 
+The device is automatically joined to Azure AD without user or admin intervention as long as the device has network connectivity to global Azure AD endpoints. 
 
 
 ## Windows Azure AD Join
@@ -148,9 +148,9 @@ If the device is joined to Azure AD, the user or admin would see the following o
 
 If the output is "AzureAdJoined : NO", ignore the following guidance.
 
-User: If the device is Azure AD joined, a user can unjoin the device from the settings. Verify that there is local admin account on the device before unjoining the device from Azure AD. The local admin account is needed to sign back into the device.
+User: If the device is Azure AD joined, a user can unjoin the device from the settings. Verify that there is a local administrator account on the device before unjoining the device from Azure AD. The local administrator account is required to sign back into the device.
 
-Admin: If the organization's admin wants to unjoin the users' devices that are Azure AD–joined, they can do so by running the following command on each of the devices by using a mechanism such as Group Policy. The admin must verify that there is a local admin account on the device before unjoining the device from Azure AD. The local admin account is needed to sign back into the device.
+Admin: If the organization's admin wants to unjoin the users' devices that are Azure AD–joined, they can do so by running the following command on each of the devices by using a mechanism such as Group Policy. The admin must verify that there is a local administrator account on the device before unjoining the device from Azure AD. The local administrator account is needed to sign back into the device.
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /leave
@@ -182,10 +182,12 @@ If the device is Azure AD Registered, you would see the following output:
           WamDefaultAuthority : organizations
 ```
 
-To remove the existing Azure AD Register/Add Work Account /Workplace Join account on the device:
+To remove the existing Azure AD Register/Add Work Account /Workplace Join account<!--v-gmoor: I don't know what "the existing Azure AD Register/Add Work Account /Workplace Join account" means.--> on the device:
 
-- To remove the Azure AD–registered account on the device, use CleanupWPJ, a tool found that you can download from here: [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
+- To remove the Azure AD–registered account on the device, use CleanupWPJ, a tool that you can download from here: [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
+
 - Extract the ZIP file and run **WPJCleanup.cmd**. This tool will launch the right executable based on the version of Windows on the device.
+
 - By using a mechanism like Group Policy, the admin can run the command on the device in the context of any user who is signed in on the device.
 
 To disable Web Account Manager prompts to register the device in Azure AD, add this registry key: 
@@ -201,9 +203,9 @@ The presence of this registry key should block workplace join and prevent users 
 For Android, users will need to unregister and re-register their devices. This can be done via the Authenticator app or the Company Portal app. 
 
 - From the Authenticator app, users can go to **Settings > Device Registration**. From there users can unregister and re-register their device.
-- 
+ 
 - From the Company Portal, users can go to **Devices** tab and remove the device. After that, re-enroll the device by using Company Portal.
-- 
+ 
 - Users can also unregister and re-register by removing the account from the account settings page and then re-adding the work account.
 
 To unregister and re-register the device on Android by using the Authenticator app:
@@ -213,7 +215,7 @@ To unregister and re-register the device on Android by using the Authenticator a
 3.	Unregister the device by selecting **Unregister**.
 4.	For **Device registration**, re-register the device by typing your email address, and then select **Register**.
 
-To un-register and re-register an Android device with the Android Settings page:
+To unregister and re-register an Android device with the Android Settings page:
 
 1.	Open **Device Settings** and go to **Accounts**.
 2.	Select the work account that you want to re-register and select **Remove account**.
@@ -224,14 +226,14 @@ To unregister and re-register the device on Android from Company Portal:
 
 1.	Launch Company Portal and go to **Devices** tab.
 2.	Select the device to see the device details.
-3.	From the ellipses (3 dots) menu, select **Remove Device**, and complete the removal by confirming in the dialog.
+3.	From the ellipses (three dots) menu, select **Remove Device**, and complete the removal by confirming in the dialog.
 4.	You should now be logged out of the Company Portal app. Select **Sign in** to re-register the device.
 
 For more information about any actions required during the migration phase of this workload, or impact to administration or usage, review the information about Azure Active Directory in [Additional general information for the migration from Microsoft Cloud Deutschland](ms-cloud-germany-transition-add-general.md#azure-active-directory).
 
 ## iOS
 
-On iOS devices, user will need to manually remove any cached accounts from the Authenticator, unregister the device, and sign out from any native apps on their device.
+On iOS devices, a user will need to manually remove any cached accounts from the Authenticator, unregister the device, and sign out from any native apps on the device.
 
 ### Step 1: If present, remove the account from the Authenticator app
 
