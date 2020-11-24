@@ -28,7 +28,10 @@ ms.custom: seo-marvel-apr2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Microsoft 365 Defender
+
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+>
 
 Each [threat analytics report](threat-analytics.md) includes dynamic sections and a comprehensive written section called the _analyst report_. To access this section, open the report about the tracked threat and select the **Analyst report** tab.
 
@@ -51,14 +54,14 @@ Each section of the analyst report is designed to provide actionable information
 | Change log | The time the report was published and when significant changes were made to the report. |
 
 ## Apply additional mitigations
-Threat analytics dynamically tracks the [status of security updates and secure configurations](threat-analytics.md#review-list-of-mitigations-and-the-status-of-your-devices). This information is available as charts and tables in the **Mitigations** tab.
+Threat analytics dynamically tracks the [status of security updates and secure configurations](threat-analytics.md#mitigations-review-list-of-mitigations-and-the-status-of-your-devices). This information is available as charts and tables in the **Mitigations** tab.
 
 In addition to these tracked mitigations, the analyst report also discusses mitigations that are _not_ dynamically monitored. Here are some examples of important mitigations that are not dynamically tracked:
 
 - Block emails with _.lnk_ attachments or other suspicious file types
 - Randomize local administrator passwords
 - Educate end users about phishing email and other threat vectors
-- Turn on specific [attack surface reduction rules](attack-surface-reduction.md)
+- Turn on specific [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
 While you can use the **Mitigations** tab to assess your security posture against a threat, these recommendations let you take additional steps towards improving your security posture. Carefully read all the mitigation guidance in the analyst report and apply them whenever possible.
 
@@ -72,7 +75,7 @@ These detections are available on devices with [Microsoft Defender Antivirus](ht
 >The analyst report also lists **generic detections** that can identify a wide-range of threats, in addition to components or behaviors specific to the tracked threat. These generic detections don't reflect in the charts.
 
 ### Endpoint detection and response (EDR) alerts
-EDR alerts are raised for [devices onboarded to Microsoft Defender for Endpoint](onboard-configure.md). These alerts generally rely on security signals collected by the Microsoft Defender for Endpoint sensor and other endpoint capabilities—such as antivirus, network protection, tamper protection—that serve as powerful signal sources.
+EDR alerts are raised for [devices onboarded to Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). These alerts generally rely on security signals collected by the Microsoft Defender for Endpoint sensor and other endpoint capabilities—such as antivirus, network protection, tamper protection—that serve as powerful signal sources.
 
 Like the list of antivirus detections, some EDR alerts are designed to generically flag suspicious behavior that might not be associated with the tracked threat. In such cases, the report will clearly identify the alert as "generic" and that it doesn't influence any of the charts in the report.
 

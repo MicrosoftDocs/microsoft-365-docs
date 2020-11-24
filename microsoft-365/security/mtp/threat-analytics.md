@@ -28,7 +28,10 @@ ms.custom: seo-marvel-apr2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- Microsoft 365 Defender
+
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+>
 
 With more sophisticated adversaries and new threats emerging frequently and prevalently, it's critical to be able to quickly:
 
@@ -49,7 +52,7 @@ Each report provides an analysis of a tracked threat and extensive guidance on h
 Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
 <p></p>
 
-**DRAFT NOTES — Replace with MTP video when available**
+**DRAFT NOTES: Replace with MTP video when available**
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bw1f]
 
 ## View the threat analytics dashboard
@@ -84,12 +87,12 @@ _Overview section of a threat analytics report_
 
 #### Assess impact to your organization
 Each report includes charts designed to provide information about the organizational impact of a threat:
-- **Related incidents**—provides an overview of the impact of the tracked threat to your organzation with the following data:
+- **Related incidents**—provides an overview of the impact of the tracked threat to your organization with the following data:
   - Number of active alerts and the number of active incidents they are associated with
   - Severity of active incidents
 - **Alerts over time**—shows the number of related **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
-- **Impacted assets**—shows the number of distinct devices and email accounts (mailboxes) that currently have at least one active alerts associated with the tracked threat. Alerts are triggered for mailboxes that received threat emails. Review both org- and user-level policies for overrides that cause the delivery of threat emails.
-- **Prevented email attempts**—shows the number of emails that were either blocked prior to delivery or delivered to the junk mail folder. These attacks are considered to have been stopped prior to successful arrival.
+- **Impacted assets**—shows the number of distinct devices and email accounts (mailboxes) that currently have at least one active alert associated with the tracked threat. Alerts are triggered for mailboxes that received threat emails. Review both org- and user-level policies for overrides that cause the delivery of threat emails.
+- **Prevented email attempts**—shows the number of emails that were either blocked before delivery or delivered to the junk mail folder. These attacks are considered to have been stopped before they arrived.
 
 #### Review security resilience and posture
 Each report includes charts that provide an overview of how resilient your organization is against a given threat:
@@ -102,7 +105,7 @@ In the **Analyst report** section, read through the detailed expert write-up. Mo
 [Learn more about the analyst report](threat-analytics-analyst-reports.md)
 
 ### Related incidents: View and manage related incidents
-The **Related incidents** tab provides the list of all incidents related to the tracked threat.You can assign incidents or manage alerts linked to each incident. 
+The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident. 
 
 ### Impacted assets: Get list of impacted devices and mailboxes
 An asset is considered impacted if it is affected by an active, unresolved alert. The **Impacted assets** tab lists the following types of impacted assets:
@@ -110,7 +113,7 @@ An asset is considered impacted if it is affected by an active, unresolved alert
 - **Impacted mailboxes**—mailboxes that have received email messages that have triggered Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
 
 ### Prevented email attempts: View blocked or junked threat emails
-Office 365 typically block emails with known threat indicators, including malicious links or attachments. In some cases, proactive filtering mechanisms that check for suspicious content will instead send threat emails to the junk mail folder. In either cases, the chances of the threat launching malware code on the device is significantly reduced.
+Office 365 typically blocks emails with known threat indicators, including malicious links or attachments. In some cases, proactive filtering mechanisms that check for suspicious content will instead send threat emails to the junk mail folder. In either case, the chances of the threat launching malware code on the device is reduced.
 
 The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Office 365. 
 
@@ -123,15 +126,15 @@ In the **Mitigations** section, review the list of specific actionable recommend
   - Potentially unwanted application (PUA) protection
   - Real-time protection
  
-Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
+Mitigation information in this section incorporates data from [threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
 
 ![Image of the mitigations section of a threat analytics report](../../media/threat-analytics/ta-mitigations-mtp.png)
 _Mitigations section of a threat analytics report_
 
 ## Additional report details and limitations
-When using the reports, keep the following in mind: 
+When using the reports, keep these in mind: 
 
-- Data is scoped based on your role-based access control (RBAC) scope. You will see the status of devices in [groups that you can access](machine-groups.md).
+- Data is scoped based on your role-based access control (RBAC) scope. You'll see the status of devices in [groups that you can access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups).
 - Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not shown in the charts.
 - Mitigations don't guarantee complete resilience. The provided mitigations reflect the best possible actions needed to improve resiliency.
 - Devices are counted as "unavailable" if they have not transmitted data to the service.
@@ -140,4 +143,4 @@ When using the reports, keep the following in mind:
 ## Related topics
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md) 
 - [Understand the analyst report section](threat-analytics-analyst-reports.md)
-- [Assess and resolve security weaknesses and exposures](next-gen-threat-and-vuln-mgt.md)
+- [Assess and resolve security weaknesses and exposures](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

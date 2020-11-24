@@ -98,10 +98,14 @@
               href: mtp/mtp-evaluation.md
             - name: Run pilot playbook
               href: mtp/mtp-pilot.md
-
-
             - name: Turn on FAQ
               href: mtp/mtp-enable-faq.md
+            - name: Threat analytics
+              items:  
+                - name: Threat analytics overview
+                  href: mtp/threat-analytics.md
+                - name: Read the analyst report
+                  href: mtp/threat-analytics-analyst-report.md
             - name: Incidents
               items: 
                 - name: Overview
