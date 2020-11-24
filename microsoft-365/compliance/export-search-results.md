@@ -20,7 +20,7 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: "Export the search results from a Content Search in the Security & Compliance Center to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents. "
+description: "Export the search results from a Content Search in the Microsoft 365 compliance center to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -52,9 +52,9 @@ Exporting the results of a Content Search involves preparing the results, and th
   > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
   > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- Depending on network configuration it is recommended to use a local machine. To eliminate your company's firewall or proxy infrastructure being the issue you may use something a virtual desktop https://azure.microsoft.com/en-us/services/virtual-desktop/ outside of your network. This could potentially decrease timeouts occurring in streams from Azure data connections when exporting large search result files.
+- We recommend downloading search results to a local computer. However, to eliminate your company's firewall or proxy infrastructure from causing issues when downloading search results, you might consider downloading search results to a virtual desktop outside of your network. This may decrease timeouts that occur in Azure data connections when exporting a large number of files. For more information about virtual desktops, see [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
 
-- Also for better performance with downloads, consider using smaller data ranges to break up the search.
+- To improve performance when downloading search results, consider using dividing searches that return a large set of results into small searches. For example, you can use date ranges in seach queries to return a smaller set of results that you can download faster.
   
 - When you export search results, the data is temporarily stored in a Microsoft-provided Azure Storage location in the Microsoft cloud before it's downloaded to your local computer. Be sure that your organization can connect to the endpoint in Azure, which is **\*.blob.core.windows.net** (the wildcard represents a unique identifier for your export). The search results data is deleted from the Azure Storage location two weeks after it's created. 
   
