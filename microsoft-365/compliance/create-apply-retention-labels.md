@@ -249,9 +249,7 @@ For standard retention labels that you apply as a default retention label to a l
     
 - If you move an item with a default retention label applied from one container to another container, the item keeps its existing default retention label, even if the new location has a different default retention label. Only if you then change the default label for this new location will the moved item inherit the default label from its current location.
 
-For labels that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records):
-
-- The labeling behavior is the same except after an item is declared a record, the label cannot be changed by a default label. 
+When labels are applied that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records), these labels can only be manually changed or removed.
 
 ### Automatically applying a retention label to email by using rules
 
