@@ -55,7 +55,7 @@ For example, assume a case was imported and its data analyzed. In order to retri
 ## Set up batch export parameters
 <a name="BK_SetUpExport"> </a>
 
-The eDiscovery Export Tool is used to export search results from Advanced eDiscovery to your local computer. To increase the data transfer throughput and speed-up the export process, you can configure a Windows Registry setting on the computer that you use to export the search results. If you'd like to increase the download speed, configure the registry setting before you set up the export parameters. For more information, see [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+The eDiscovery Export Tool is used to export search results from Advanced eDiscovery to your local computer.
   
 1. In Advanced eDiscovery, select a Case and click **Export** \> **Setup**.
     
@@ -196,6 +196,3 @@ The following table lists the output files that are generated when you run an Ex
 [Quick setup for Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Export report fields](export-report-fields-in-advanced-ediscovery.md)
-  
-[Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
-
