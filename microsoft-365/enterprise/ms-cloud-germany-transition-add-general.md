@@ -86,7 +86,7 @@ Here are some additional considerations for Azure AD:
 
 - For federated authentication:
 
-  - You must not create, promote, or demote a federated domain while the tenant transition is in process. After the migration to the Office 365 services Azure service<!--v-gmoor: Is this "Office 365 services Azure service" a sensible phrase? Can we revise to eliminate a layer of branding?--> is complete (the tenant is fully complete), you can resume managing federated domains.
+  - You must not create, promote, or demote a federated domain while the tenant transition is in process. After the migration to the Office 365 services Azure serviceis complete (the tenant is fully complete), you can resume managing federated domains.
 
   - If you're using federated authentication with Active Directory Federation Services (AD FS), you shouldn't make changes to Issuer URIs used for all authentication with your on-premises Active Directory Domain Services (AD DS) during migration. Changing issuer URIs will lead to authentication failures for users in the domain. Issuer URIs can be changed directly in AD FS or when a domain is converted from managed to federated and vice versa. Microsoft recommends customers don't add, remove, or convert a federated domain in the Azure AD tenant being migrated. Issuer URIs can be changed after the migration is fully complete.
 
@@ -94,12 +94,12 @@ Here are some additional considerations for Azure AD:
 
   - Creating IPv6-named networks doesn't work in the Azure portal, `http://portal.microsoftazure.de/`. Use the Azure portal at `https://portal.azure.com` to create IPv6-named networks.
  
-   - You can't create trusted IP address ranges from the Deutschland portal when establishing Azure multi-factor authentication (MFA) service settings. Use the Office 365 services Azure AD portal<!--v-gmoor: Can we revise "Office 365 services Azure AD portal"?--> to create Azure MFA trusted IP address ranges.<!--v-gmoor: What is this? What would "MFA-trusted" mean for a range of IP addresses?-->
+   - You can't create trusted IP address ranges from the Deutschland portal when establishing Azure multi-factor authentication (MFA) service settings. Use the Office 365 services Azure AD portal to create Azure MFA trusted IP address ranges.
 
 
 - For Conditional Access: 
 
-  - Conditional Access policies with the following grant controls aren't supported until migration to Office 365 services is complete (after Azure AD Finalize):<!--v-gmoor: "Azure AD Finalize" seems to be another reference to a step in the migration, but where are these steps listed? Referring to them by name without a list makes no sense.-->
+  - Conditional Access policies with the following grant controls aren't supported until migration to Office 365 services is complete (after Azure AD Finalize):
 
     - Require Compliant Device
     - Require Approved App
@@ -142,7 +142,7 @@ The most recently used (MRU) service in Office is a cutover from the Germany ser
 
 - Upon completion of the SharePoint Online migration to the German region, data indexes are rebuilt. Features that are dependent on search indexes may be affected while reindexing completes.
 
-- If your organization still uses SharePoint 2010 workflows, they'll no longer function after December 31, 2021. SharePoint 2013 workflows will remain supported, although turned off by default for new tenants starting on November 1, 2020. After migration to the Office 365 services SharePoint Online service<!--v-gmoor: Can we revise "Office 365 services SharePoint Online service"?--> is complete, we recommend that you to move to Power Automate or other supported solutions.
+- If your organization still uses SharePoint 2010 workflows, they'll no longer function after December 31, 2021. SharePoint 2013 workflows will remain supported, although turned off by default for new tenants starting on November 1, 2020. After migration to the Office 365 services SharePoint Online service is complete, we recommend that you to move to Power Automate or other supported solutions.
 
 - Upon completion of the OneDrive migration to the German region, data indexes are rebuilt. Features that depend on search indexes may be affected while reindexing is in progress.
 
