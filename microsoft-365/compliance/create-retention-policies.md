@@ -273,6 +273,26 @@ To use the optional configuration to scope your retention settings, make sure th
 >
 > In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify excludes to be exempt from the policy.
 
+#### Examples of using inclusions and exclusions
+
+Exchange example:
+
+- **Requirement**: In an organization that has over 40,000 mailboxes, most users must have their email retained for 7 years but a subset of identified users (425) must have their email retained for only 5 years.
+
+- **Solution**: Create one retention policy for Exchange email with a retention period of 7 years and exclude the subset of users. Then create a second retention policy for Exchange email with a retention period of 5 years and include the subset of users. 
+    
+    In both cases, the number included and excluded is below the maximum number of specified mailboxes for a single policy, and the subset of users must be explicitly excluded from the first policy because it has a [longer retention period](retention.md#the-principles-of-retention-or-what-takes-precedence ) than the second policy. If the subset of users required a longer retention policy, you wouldn't need to exclude them from the first policy. 
+     
+    With this solution, if anybody new joins the organization, their mailbox is automatically included in the first policy for 7 years and there is no impact to the maximum numbers supported. However, new users that require the 5 year retention period add to the include and exclude numbers, and this limit would be reached at 1,000.
+
+SharePoint example:
+
+- **Requirement**: An organization has several thousand SharePoint sites but only 2,000 sites require a retention period of 10 years, and 8,000 sites require a retention period of 4 years.
+
+- **Solution**: Create 20 retention policies for SharePoint with a retention period of 10 years that includes 100 specific sites, and create 80 retention policies for SharePoint with a retention period of 4 years that includes 100 specific sites.
+    
+    Because you don't need to retain all SharePoint sites, you must create retention policies that specify the specific sites. Because a retention policy doesn't support more than 100 specified sites, you must create mulitple policies for the two retention periods. These retention policies  have the maximum number of included sites, so the next new site that needs retaining would require a new retention policy, irrespective of the retention period.
+
 ## Updating retention policies
 
 Some settings can't be changed after a retention policy is created and saved, which include:
