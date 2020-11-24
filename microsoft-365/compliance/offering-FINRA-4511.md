@@ -40,11 +40,9 @@ Cohasset validated that [Azure Immutable Blob Storage](https://docs.microsoft.co
 
 Software providers and partners with sensitive workloads can now rely on Azure Immutable Blob Storage as a one-stop shop cloud solution for records retention and immutable storage. Financial institutions can now build their own applications taking advantage of these features while remaining compliant.
 
-## Microsoft Office 365
+## Microsoft 365
 
-To evaluate Office 365 compliance with FINRA Rule 4511(c), Microsoft retained a leading independent law firm that specializes in regulatory issues, Covington & Burling, LLP. In the resulting report, Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4 compliance, Covington validated that [Office 365 with Preservation Lock](retention-preservation-lock.md) includes archiving features that enable regulated customers, including broker-dealers, to store data in a manner that helps them comply with FINRA requirements for records retention.
-
-Archiving in Office 365 helps preserve a wide range of data, including email, voicemail, shared documents, instant messages, and third-party data. In particular, archiving in Office 365 enables customers to set global or granular messaging retention policies to store data for a defined period and beyond in a non-rewriteable, non-erasable format.
+For [FINRA 4511(c)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d) requirements, Cohasset validated that Microsoft 365 includes archiving features that enable regulated customers, including broker-dealers, to store data in a manner that helps them comply with SEC requirements for records retention. Retention features in Microsoft 365 help preserve a wide range of data, including email, voicemail, shared documents, instant messages, and third-party data. In particular, archiving in Microsoft 365 enables customers to set global or granular messaging retention policies to store data for a defined period and beyond in a non-rewriteable, non-erasable format.
 
 ## Microsoft in-scope cloud services
 

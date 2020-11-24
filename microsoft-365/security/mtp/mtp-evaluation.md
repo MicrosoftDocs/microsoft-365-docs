@@ -49,11 +49,13 @@ This guide will help you:
 
 There are three phases in creating a Microsoft 365 Defender trial lab environment and deploying it:
 
+![Deployment phases: prepare, setup, onboard](../../media/phase-diagrams/deployment-phases.png)
+
 |Phase | Description | 
 |:-------|:-----|
-| ![Phase 1: Prepare](../../media/prepare.png)<br>[Phase 1: Prepare](prepare-mtpeval.md)| Learn what you need to consider when deploying Microsoft 365 Defender in a trial lab or pilot environment: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br>- Azure Active Directory setup <br> - Configuration order
-|  ![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md)|  Take the initial steps to access Microsoft 365 Security Center to set up your Microsoft 365 Defender trial lab or pilot environment. You'll be guided to:<br><br>- Sign up for Microsoft 365 E5 Trial <br>  - Configure domain<br>- Assign Microsoft 365 E5 licenses<br>- Complete the setup wizard in the portal|
-|  ![Phase 3: Configure & Onboard](../../media/config-onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft 365 Defender pillar and onboard endpoints. You'll be guided to:<br><br>- Configure Microsoft Defender for Office 365<br>- Configure Microsoft Cloud App Security<br>- Configure Microsoft Defender for Identity<br>- Configure Microsoft Defender for Endpoint
+|[Phase 1: Prepare](prepare-mtpeval.md)| Learn what you need to consider when deploying Microsoft 365 Defender in a trial lab or pilot environment: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br>- Azure Active Directory setup <br> - Configuration order
+|[Phase 2: Setup](setup-mtpeval.md)|  Take the initial steps to access Microsoft 365 Security Center to set up your Microsoft 365 Defender trial lab or pilot environment. You'll be guided to:<br><br>- Sign up for Microsoft 365 E5 Trial <br>  - Configure domain<br>- Assign Microsoft 365 E5 licenses<br>- Complete the setup wizard in the portal|
+|[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft 365 Defender pillar and onboard endpoints. You'll be guided to:<br><br>- Configure Microsoft Defender for Office 365<br>- Configure Microsoft Cloud App Security<br>- Configure Microsoft Defender for Identity<br>- Configure Microsoft Defender for Endpoint
 
 
 ## In scope
@@ -79,5 +81,5 @@ The following are out of scope of this deployment guide:
 -   Penetration testing in production environment
 
 ## Next step
-![Phase 1: Prepare](../../media/prepare.png) <br>[Phase 1: Prepare](prepare-mtpeval.md) 
+[Phase 1: Prepare](prepare-mtpeval.md) 
 <br> Prepare your Microsoft 365 Defender trial lab or pilot environment

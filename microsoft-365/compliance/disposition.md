@@ -127,7 +127,9 @@ Items that are shown in the **Disposed Items** tab for record labels are kept fo
 
 > [!NOTE]
 > This functionality is based on information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.
-    
+
+For auditing, search for **Deleted file marked as a record**.
+
 ## Filter and export the views
 
 When you select a retention label from the **Disposition** page, the **Pending disposition** tab (if applicable) and the **Disposed items** tab let you filter the views to help you more easily find items. 

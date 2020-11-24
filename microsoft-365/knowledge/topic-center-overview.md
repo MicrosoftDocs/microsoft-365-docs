@@ -18,7 +18,7 @@ localization_priority: None
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-The topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Knowledge Management setup](set-up-knowledge-network.md) in the Microsoft 365 admin center.
+The topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Knowledge Management setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
 
 The topic center has a default home page where you can see the topics to which you have been connected or suggested to be connected. Users with the proper permissions can also:
 
@@ -31,7 +31,7 @@ The topic center has a default home page where you can see the topics to which y
 
 ## Where is the topic center
 
-Your topic center is created during Knowledge Management setup. After setup completes, an admin can find the URL on the [knowledge center management page](manage-knowledge-network.md).
+Your topic center is created during Knowledge Management setup. After setup completes, an admin can find the URL on the [knowledge center management page](topic-experiences-discovery.md).
 
 1. In the Microsoft 365 admin center, select **Setup** in the navigation pane, and in the **Organizational Knowledge** section, select **Connect people to knowledge**.
 
@@ -41,7 +41,7 @@ Your topic center is created during Knowledge Management setup. After setup comp
 
 ## Home page
 
-To see the topic center, you need to have permissions to view topics and the topic experiences. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
+To see the topic center, you need to have permissions to view topics and the topic experiences. Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
 
 On the home page 
 - **View topics**: view topic experiences. So you can see topics in the organization and give feedback on topics where you have been connected:
@@ -55,7 +55,7 @@ Once I'm pinned, edits to the topic page can be done to curate my connection.
 
 ## Permissions to use the Manage Topics capability topic center
 
-To work in the Manage Topics section of topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
+To work in the Manage Topics section of topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
 
 Topic center users can be given two sets of permissions:
 

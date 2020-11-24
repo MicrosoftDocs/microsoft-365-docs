@@ -42,7 +42,6 @@ With this report, you can:
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (Defender for Office 365 Plan 2 only)
 - ... [Investigate malicious email, and more](#more-ways-to-use-explorer-or-real-time-detections)!
 
-
 ## Experience Improvements to Threat Explorer and Real-time detections
 
 ### Tags in Threat Explorer
@@ -62,6 +61,7 @@ The Tags column shown in the email grid would contain all the tags that have bee
 > ![Filter tags in email grid view](../../media/tags-grid.png)
 
 #### Filtering
+
 We now have Tags as a filter so you can hunt just across priority accounts, or specific User tags scenarios (and even exclude results with certain tags as part of this experience). Combining these with the multiple other filters that we provide, would help you to narrow down your scope of investigation
 
 [ ![Filter tags](../../media/tags-filter-normal.png) ](../../media/tags-filter-normal.png#lightbox)
@@ -110,11 +110,11 @@ Within email flyout-> Details tab, you would now be able to see the specific thr
 
 In addition to identifying all delivery and post-delivery events, timeline view also gives information about the Threat identified at that point of time for a subset of these events. It also gives you more information about Additional Actions (e.g., ZAP, Manual Remediation) along with the Result of that action. Timeline view contains information about the Original delivery and subsequently any post-delivery events performed on an email.
 
--	Source: This can be Admin/System/user based on what was the source of the event.
--	Event: This includes top-level events like Original Delivery, Manual Remediation, ZAP, Submissions, and Dynamic Delivery.
--	Action: This covers the specific action that was taken either as part of ZAP or Admin Action (e.g., Soft Delete).
--	Threats: Covers the threats (Malware, Phish, Spam) identified at that point of time.
--	Result/Details: Covers more information about the Result of the Action, whether it was performed as part of ZAP/Admin Action.
+- Source: This can be Admin/System/user based on what was the source of the event.
+- Event: This includes top-level events like Original Delivery, Manual Remediation, ZAP, Submissions, and Dynamic Delivery.
+- Action: This covers the specific action that was taken either as part of ZAP or Admin Action (e.g., Soft Delete).
+- Threats: Covers the threats (Malware, Phish, Spam) identified at that point of time.
+- Result/Details: Covers more information about the Result of the Action, whether it was performed as part of ZAP/Admin Action.
 
 ### Original and Latest Delivery location
 
@@ -167,15 +167,15 @@ System overrides are a method of making exceptions to the intended delivery loca
 
 The set of improvements focused towards URL and URL clicks data include:
 
- - Showing full Clicked URL (including any query Parameters which are part of URL) within the Clicks Section in URL Flyout. Currently we show the URL domain and path in title bar. We're extending that information to show the full URL.
+- Showing full Clicked URL (including any query Parameters which are part of URL) within the Clicks Section in URL Flyout. Currently we show the URL domain and path in title bar. We're extending that information to show the full URL.
 
- - Fixes across URL filters (URL vs URL domain vs URL Domain and path): We've made updates around searching for messages that contain a URL/Click verdict. As part of that, we've enabled support for protocol agnostic searches (meaning, you can directly search for a URL without http). By default, the URL search maps to http, unless explicitly specified. For example:
+- Fixes across URL filters (URL vs URL domain vs URL Domain and path): We've made updates around searching for messages that contain a URL/Click verdict. As part of that, we've enabled support for protocol agnostic searches (meaning, you can directly search for a URL without http). By default, the URL search maps to http, unless explicitly specified. For example:
 
-   1. Search with and without the `http://` prefix in "URL", "URL Domain", and "URL Domain and Path" filter fields. This behavior is consistent, and should show the same result.
+  1. Search with and without the `http://` prefix in "URL", "URL Domain", and "URL Domain and Path" filter fields. This behavior is consistent, and should show the same result.
 
-   1. Search for the `https://` prefix in "URL". When not present, the `http://` prefix is assumed.
+  1. Search for the `https://` prefix in "URL". When not present, the `http://` prefix is assumed.
 
-   1. `/` in beginning and end of the "URL path", "URL Domain", "URL domain and path" fields is ignored. `/` at the end of the "URL" field is ignored.
+  1. `/` in beginning and end of the "URL path", "URL Domain", "URL domain and path" fields is ignored. `/` at the end of the "URL" field is ignored.
 
 ### Phish Confidence Level
 
@@ -187,7 +187,7 @@ Phish confidence level helps to identify the degree of confidence, with which an
 
 Typically used for ZAP Phish Alert scenarios where an email was identified as Phish and removed after delivery. This is used to connect the alert with the corresponding results in Explorer. It is one of the IOCs for the alert.
 
-As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-time detections. These are ‘experience’ improvements, with the focus on making the hunting experience more consistent. These changes are outlined below:
+As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-time detections. These are 'experience' improvements, with the focus on making the hunting experience more consistent. These changes are outlined below:
 
 - [Timezone improvements](#timezone-improvements)
 - [Update in the Refresh process](#update-in-the-refresh-process)
@@ -244,12 +244,13 @@ You will also be able to export the list of targeted users up to a limit of 3000
 > [!div class="mx-imgBorder"]
 > ![Top Targeted Users](../../media/Top_Targeted_Users.png)
 
-
 ### Exchange transport rules
+
 As part of data enrichment, you should also be able to see all the different transport rules which were applied to a message. This information will be present within the Email grid view (to view this, select Column options in the grid and add Exchange Transport Rule from the Column options in the grid) as well as Details flyout in the email.
-You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a ‘Contains’ search which means you will be able to search using partial searches as well.
+You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a 'Contains' search which means you will be able to search using partial searches as well.
 
 #### Important Note:
+
 ETR search and name availability would depend on the specific role that has been assigned to you. You will need to have one of the following roles/permissions in order to view the ETR names and search.  If you do not have any of the following roles assigned to you, you will not be able to see the names of the transport rules, and search for the messages using the ETR names. However, you will be able to see the ETR label and GUID information within the Email Details. Your other experiences around viewing records in Email Grids, Email flyouts, Filters, and Export are not impacted.
 
 - EXO Only - Data Loss Prevention: All
@@ -267,7 +268,7 @@ Within the email grid, Details flyout, and Exported CSV, the ETRs are presented 
 ### Inbound connectors
 
 Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names.
-The search for connectors is ‘Contains’ in nature which means partial keyword searches should work as well.
+The search for connectors is 'Contains' in nature which means partial keyword searches should work as well.
 Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown below:
 
 > [!div class="mx-imgBorder"]
@@ -298,7 +299,7 @@ Delivery Action is the action taken on an email due to existing policies or dete
 
 |Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|
-|Email was delivered to Inbox or folder of a user and the user can directly access it.|Email was sent to either user’s Junk folder or Deleted folder, and the user has access to emails in those folders.|Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!|Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.|
+|Email was delivered to Inbox or folder of a user and the user can directly access it.|Email was sent to either user's Junk folder or Deleted folder, and the user has access to emails in those folders.|Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!|Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.|
 
 |Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|

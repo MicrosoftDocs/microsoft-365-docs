@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
@@ -17,13 +17,12 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
 description: "This article describes how to get started using Advanced eDiscovery in Microsoft 365. After you complete a few quick steps, the Advanced eDiscovery tool is ready to use. The first step is to create a case, and then start using Advanced eDiscovery features and functionality."
 ---
 
 # Get started with Advanced eDiscovery
 
-Advanced eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy Advanced eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use Advanced eDiscovery cases to manage your investigations.
+Advanced eDiscovery in Microsoft 365 provides an [end-to-end workflow](overview-ediscovery-20.md#advanced-ediscovery-architecture) to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy Advanced eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use Advanced eDiscovery cases to manage your investigations.
 
 This article discusses the steps necessary to set up Advanced eDiscovery. This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, as well as assigning permissions to your legal and investigation team so they can access and manage cases. This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
 
@@ -64,7 +63,7 @@ Complete the following steps to add users to the eDiscovery Manager role group:
 
 3. On the eDiscovery Manager flyout page, click **Edit** next to the **eDiscovery Manager** section.
 
-4. On the **Choose eDiscovery Manager** page in the edit role group wizard, click **Choose Discovery Manager**.
+4. On the **Choose eDiscovery Manager** page in the edit role group wizard, click **Choose eDiscovery Manager**.
 
 5. Click **Add** then select the checkbox for all users you want to add to the role group.
 
@@ -103,7 +102,7 @@ For more information about setting up and using the attorney-client privilege de
 
 The next step is to create a case and start using Advanced eDiscovery. Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with a user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
 
 2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
 
@@ -113,7 +112,7 @@ The next step is to create a case and start using Advanced eDiscovery. Complete 
 
 5. Click **Save** to create the case.
 
-   The new case is created and the **Settings** tab in the new case is displayed. 
+   The new case is created and the **Settings** tab in the new case is displayed.
 
 6. In the **Access & permissions** tile on the **Settings** tab, click **Select**, and then click **Update**.
 
@@ -157,18 +156,18 @@ To get you started using Advanced eDiscovery, here's a simple workflow that alig
 
 3. **[Add data to a review set](add-data-to-review-set.md)**. Once you've configured and verified that a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is reindexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md).
 
-   There's also a special kind of review set that you can add data to, called a *conversation review set*. These types of reviews sets provide conversation reconstruction capabilities to reconstruct, review, and export threaded conversations like those in Microsoft Teams. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
+   There's also a special kind of review set that you can add data to, called a *conversation review set*. These types of review sets provide conversation reconstruction capabilities to reconstruct, review, and export threaded conversations like those in Microsoft Teams. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
 
-4. **Review and analyze data in a review set**. Now that data is in a review set, you can use a wide-variety of tools and capabilities to view and analyze the case data with the goal of reducing the data set to what is most relevant to the case you're investigation. Here's a list of some tools and capabilities that you can use during this process.
+4. **Review and analyze data in a review set**. Now that data is in a review set, you can use a wide-variety of tools and capabilities to view and analyze the case data with the goal of reducing the data set to what is most relevant to the case you're investigating. Here's a list of some tools and capabilities that you can use during this process.
 
    - [View documents](view-documents-in-review-set.md). This includes viewing the metadata for each document in a review set, and viewing the document in its native version or text version.
 
-   - [Create queries and filters](review-set-search.md). You create search queries using a variety of search criteria (including the ability to search all [file metadata properties](document-metadata-fields-in-advanced-ediscovery.md)) to further refine and cull the case data to what is most relevant to the case. You can also use review set filters to quickly apply additional conditions to the results of a search query to further refine those results. 
+   - [Create queries and filters](review-set-search.md). You create search queries using a variety of search criteria (including the ability to search all [file metadata properties](document-metadata-fields-in-advanced-ediscovery.md)) to further refine and cull the case data to what is most relevant to the case. You can also use review set filters to quickly apply additional conditions to the results of a search query to further refine those results.
 
    - [Create and use tags](tagging-documents.md). You can apply tags to documents in a review set to identify which are responsive (or non-responsive to the case) and then use those tags when creating search queries to include or exclude the tagged documents. You can also tagging to determine which documents to export.
 
-   - [Annotate and redact documents](view-documents-in-review-set.md#annotate-view). You can use the annotation tool in a review to annotate documents and redact content in documents as work product. We generate a PDF version of an annotated or redacted document during review to reduce the risk of exporting the unredacted native version of the document.
+   - [Annotate and redact documents](view-documents-in-review-set.md#annotate-view). You can use the annotation tool in a review to annotate documents and redact content in documents as work product. We generate a PDF version of an annotated or redacted document during the review to reduce the risk of exporting the un-redacted native version of the document.
 
-   - [Analyze case data](analyzing-data-in-review-set.md). The analytics functionality in Advanced eDiscovery is powerful. After you run analytics on the data in review set, we perform analysis such as near duplicate detection, email threading, and themes that can help reduce the volume of documents that you have to review. We also generate an Analytics reports that summarize the result of running analytics. As previously explained, running analytics also runs [the attorney-client privilege detection model](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
+   - [Analyze case data](analyzing-data-in-review-set.md). The analytics functionality in Advanced eDiscovery is powerful. Advanced eDiscovery provides a number of tools to analyze the documents to further reduce the volume of documents to be reviewed in a review set. We also generate analytics reports that summarize the result of running analytics. As previously explained, running analytics also runs [the attorney-client privilege detection model](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
 5. **Export and download case data**. A final step after collecting, reviewing, and analyzing case data is to export it out of Advanced eDiscovery for external review or for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to [export](export-documents-from-review-set.md) data out of the review set and copy it to a different Azure Storage location (one provided by Microsoft or one managed by your organization). Then you use Azure Storage Explorer to [download](download-export-jobs.md) the data to a local computer. In addition to the exported data files, the contains of the export package also contains an export report, a summary report, and an error report.
