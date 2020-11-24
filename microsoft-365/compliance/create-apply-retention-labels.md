@@ -176,15 +176,19 @@ You can also right-click an item, click **Assign Policy** in the context menu, a
 
 After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email has a retention label applied that has an associated retention period, you can see at a glance when the email expires.
   
-You can also apply retention labels to folders, in which case:
+You can also apply retention labels to folders as a default label. When you do this with a standard retention label (it doesn't mark items as a [record or regulatory record](records-management.md#records)):
   
-- All items in the folder automatically get the same retention label, **except** for items that have had a retention label applied explicitly to them. Explicitly labeled items keep their existing retention label:
-    
-- If you change or remove the default retention label for a folder, the retention label's also changed or removed for all items in the folder, **except** items with explicitly assigned retention labels. 
-    
-- If you move an item with a default retention label from one folder to another folder with a different default retention label, the item gets the new default retention label.
-    
-- If you move an item with a default retention label from one folder to another folder with no default retention label, the old default retention label is removed.
+- All unlabeled items in the folder have this retention label applied.
+
+- The inheritance flows to any child folders and items inherit the label from their nearest folder.
+
+- Items that are already labeled retain their retention label, unless it was applied by a different default label.
+
+- If you change or remove the default retention label for the folder, existing retention labels applied to items in that folder are changed or removed only if those labels were applied by a default label.
+
+- If you move an item with a default retention label applied from one folder to another folder, the item keeps its existing default retention label, even if the new location has a different default retention label. Only if you then change the default label for this new location will the moved item inherit the default label from its current location.
+
+When labels are applied that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records), these labels can only be manually changed or removed.
 
 #### Applying retention labels in Outlook on the web
 
