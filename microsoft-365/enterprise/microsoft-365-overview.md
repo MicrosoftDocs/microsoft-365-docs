@@ -39,7 +39,7 @@ Microsoft 365 for enterprise is available in three plans.
 |Plan name|Capabilities|
 |---|---|
 |E3|Access the Microsoft 365 core products and features to securely enhance workplace productivity and drive innovation.|
-|E5|Access the Microsoft 365 latest products and features. These include advanced threat protection, security tools, and collaboration tools. This plan includes all E3 capabilities, plus advanced security, voice, and data analysis tools.|
+|E5|Access the Microsoft 365 latest products and features. These include Defender for Office 365, security tools, and collaboration tools. This plan includes all E3 capabilities, plus advanced security, voice, and data analysis tools.|
 |F3|Connect with your first-line workers through purpose-built tools and resources that they can use to help them do their best work.|
 |||
 
@@ -70,13 +70,11 @@ You can also [download a copy of the poster](https://github.com/MicrosoftDocs/mi
 
 ## Transition your entire organization
 
-To get a better picture about how to move your entire organization to the products and services in Microsoft 365 for enterprise, see the [transition poster](../downloads/transition-org-to-m365.pdf).
+To get a better picture about how to move your entire organization to the products and services in Microsoft 365 for enterprise, see the [transition poster](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 This two-page poster is a quick way to inventory your existing infrastructure. It helps you to find guidance and move to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements, such as device management, identity, and information and threat protection.
-
-You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## End of support for Windows 7 and Office 2010 clients and servers
 
