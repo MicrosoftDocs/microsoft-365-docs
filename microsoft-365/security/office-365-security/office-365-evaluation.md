@@ -119,7 +119,7 @@ Set up the Microsoft Defender for Office 365 evaluation through two access point
 
 Once you start the set-up flow for your [free 30-day evaluation](https://go.microsoft.com/fwlink/p/?LinkID=698279), you'll be given two routing options. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online.
 
-- If you are using a third party and/or service provider on-premises, you'll need to select the name of the vendor from the drop-down menu. Provide the other connector-related details.
+- If you are using a third-party partner and/or on-premises service provider, you'll need to select the name of the vendor from the drop-down menu. Provide the other connector-related details.
 
 - Select Microsoft Exchange Online if the MX record points to Microsoft and you have an Exchange Online mailbox.
 
