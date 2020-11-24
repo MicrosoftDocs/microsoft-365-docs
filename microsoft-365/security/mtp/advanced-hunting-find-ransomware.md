@@ -25,9 +25,8 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. While [Microsoft 365 Defender](microsoft-threat-protection.md) provides numerous capabilities that detect and block ransomware, including intrusion activity intended to deploy this payload, performing proactive checks using for signs of infection attempts can help keep networks protected.
 
