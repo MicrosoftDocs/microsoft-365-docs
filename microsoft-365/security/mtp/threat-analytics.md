@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 # Track and respond to emerging threats with threat analytics 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -97,13 +97,22 @@ Each report includes charts that provide an overview of how resilient your organ
 - **Vulnerability patching status**—shows the number of devices that have applied security updates or patches that address vulnerabilities exploited by the threat.
 
 ### Analyst report: Get expert insight from Microsoft security researchers
-Go to the [**Analyst report** section](threat-analytics-analyst-reports.md) to read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
+In the **Analyst report** section, read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
 
-### Related incidents:
+[Learn more about the analyst report](threat-analytics-analyst-reports.md)
 
-### Impacted assets:
+### Related incidents: View and manage related incidents
+The **Related incidents** tab provides the list of all incidents related to the tracked threat.You can assign incidents or manage alerts linked to each incident. 
 
-### Prevented email attempts:
+### Impacted assets: Get list of impacted devices and mailboxes
+An asset is considered impacted if it is affected by an active, unresolved alert. The **Impacted assets** tab lists the following types of impacted assets:
+- **Impacted devices**—endpoints that have unresolved Microsoft Defender for Endpoint alerts. These alerts typically fire on sightings of known threat indicators and activities.
+- **Impacted mailboxes**—mailboxes that have received email messages that have triggered Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
+
+### Prevented email attempts: View blocked or junked threat emails
+Office 365 typically block emails with known threat indicators, including malicious links or attachments. In some cases, proactive filtering mechanisms that check for suspicious content will instead send threat emails to the junk mail folder. In either cases, the chances of the threat launching malware code on the device is significantly reduced.
+
+The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Office 365. 
 
 ### Mitigations: Review list of mitigations and the status of your devices
 In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
@@ -114,10 +123,9 @@ In the **Mitigations** section, review the list of specific actionable recommend
   - Potentially unwanted application (PUA) protection
   - Real-time protection
  
-
 Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
-![Image of the mitigations section of a threat analytics report](images/ta-mitigations.png)
+![Image of the mitigations section of a threat analytics report](../../media/threat-analytics/ta-mitigations-mtp.png)
 _Mitigations section of a threat analytics report_
 
 ## Additional report details and limitations
