@@ -49,10 +49,10 @@ Microsoft security researchers have observed various common yet subtle artifacts
 
 
 ## Check for individual signs of ransomware activity
-Many activities that constitute ransomware behavior, such as stopping certain processes, can be benign. When using the following queries, validate your results by running multiple queries to check for other signs of ransomware activity on the same device.
+Many activities that constitute ransomware behavior, such as stopping certain processes, can be benign. When using the following queries, validate your results by running multiple queries to check for various signs of ransomware activity on the same device.
 
 ### Stopping multiple processes using _taskkill.exe_
-This query checks for attempts to stop at least 10 separate processes using the _taskkill.exe_ utility.
+This query checks for attempts to stop at least 10 separate processes using the _taskkill.exe_ utility. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -64,7 +64,7 @@ DeviceProcessEvents
 ```
   
 ### Stopping processes using _net stop_
-This query checks for attempts to stop at least 10 separate processes using the _net stop_ command.
+This query checks for attempts to stop at least 10 separate processes using the _net stop_ command. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using net stop
@@ -75,7 +75,7 @@ DeviceProcessEvents
 | where netStopCount > 10
 ```
 ### Deletion of data on multiple drives using _cipher.exe_
-This query checks for attempts to delete data on multiple drives using _cipher.exe_. This activity is typically done by ransomware to prevent recovery. 
+This query checks for attempts to delete data on multiple drives using _cipher.exe_. This activity is typically done by ransomware to prevent recovery of data after encryption. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for cipher.exe deleting data from multiple drives
@@ -91,7 +91,7 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 ```
 
 ### Clearing of forensic evidence from event logs using _wevutil_
-This query checks for attempts to clear at least 10 log entries from the event logs using _wevutil_.
+This query checks for attempts to clear at least 10 log entries from event logs using _wevutil_. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for use of wevutil to clear multiple logs
@@ -103,7 +103,7 @@ DeviceProcessEvents
 ```
 
 ### Turning off services using _sc.exe_
-This query checks for attempts to turn off at least 10 existing services using _sc.exe_.
+This query checks for attempts to turn off at least 10 existing services using _sc.exe_. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for sc.exe disabling services
@@ -111,7 +111,7 @@ DeviceProcessEvents
 | where Timestamp > ago(1d)
 | where ProcessCommandLine has "sc" and ProcessCommandLine has "config" and ProcessCommandLine has "disabled"
 | summarize ScDisableCount = dcount(ProcessCommandLine), ScDisableList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 5m)
-| where ScDisableCount > 10;
+| where ScDisableCount > 10
 ```
 
 ## Identify subtle ransomware activities
@@ -119,12 +119,12 @@ When hunting for subtler signs of threat activity—behaviors that can easily be
  
 
 ### Turning off System Restore
-Find attempts to stop System Restore and prevent the system from creating restore points, which can be used to recover data encrypted by ransomware.
+Find attempts to stop System Restore and prevent the system from creating restore points, which can be used to recover data encrypted by ransomware. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
-DeviceProcessEvents  
+DeviceProcessEvents
 //Pivoting for rundll32  
-and InitiatingProcessFileName =~ 'rundll32.exe'   
+| where InitiatingProcessFileName =~ 'rundll32.exe'   
 //Looking for empty command line   
 and InitiatingProcessCommandLine !contains " " and InitiatingProcessCommandLine != ""  
 //Looking for schtasks.exe as the created process  
@@ -135,7 +135,7 @@ and ProcessCommandLine has 'disable'
 ```
 
 ### Backup deletion
-Find use of WMIC to delete backups prior to encryption.
+Find use of _wmic.exe_ to delete shadow copy snapshots backups prior to encryption. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -151,7 +151,7 @@ Instead of running individual queries, you can also use a single query that chec
 - Weighs the presence of these signs
 - Identifies devices with a higher chance of being targets of ransomware 
 
-When run, this query returns a list of devices that have exhibited a relatively higher number of signs of attack. The count of each type of sign is also show.
+When run, this query returns a list of devices that have exhibited a relatively higher number of signs of attack. The count of each type of sign is also shown. To run this consolidated query, copy it directly to the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). 
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -248,7 +248,7 @@ The result lists only devices that have more than two types of signs of ransomwa
 While these activities don't constitute actual ransomware activities, they have been observed in many attacks deploying ransomware. You can use the following queries to find active attacks that will most likely result in the deployment of ransomware in your network.
 
 ### PsExec in remote file creation
-While PsExec is also used during intrusions that do not involve ransomware, ransomware campaigns often use this tool to move around the network and transfer payloads between devices. To find such activities on your network, run this query.
+While PsExec is also used during intrusions that do not involve ransomware, ransomware campaigns often use this tool to move around the network and transfer payloads between devices. To find such activities on your network, run this query. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWSS0vDUBSEZy34Hy5ZNVAouteNDyiU0oV7iWm0QZMGk7Yq_ni_TOKjoYIubu6cc2fmPMhEEwUtVOtKL8qUEqV6BiVqlKvUA5l70BO5GrwmF8wowA13ACWoVua3rGMd6RK0JZNyL-CvjWpX2oJKtB3zHYcd6syuQVPeclf_7mHf4brvZw6jsKaGmcBpPXdWr8hGqogzTxZ91aq1QVWYn-vN-gvcu1yppaONOww64yyp_JkZDXrZV876HcQa93t5NC_7l7LtdKgdzhzjf6dXvj83PcVp7JfWbaQb7sIujXWVX09gxQd3__sezjmnBzVdh7d_mi6gS_wfRd5pxQSRPgAgMAqyhgIAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // PsExec creating files on remote machines
@@ -261,7 +261,7 @@ makeset(FileName) by DeviceId, bin(Timestamp, 1d)
 ```
 
 ### RDP persistence
-In 2020, some human-operated ransomware campaigns, including ones by the PARINACOTA cybercriminal group, established RDP persistence through the registry.
+In 2020, some human-operated ransomware campaigns, including ones by the PARINACOTA cybercriminal group, established RDP persistence through the registry. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAM1UXWvCMBQ9z4P9h-DThriP501BdIIwxpj-gdK6WU2rtFU32I_fyaWbjSTa7klCmtv7ce7pSVKNGQoo9KE5VtjR7nIO6d8iRsj1FRkjxso5nuifIWVVjktc4JvZO8zpyzgVRqzStF4QIBFPVxBbEv_ADZ-fnC1ntd1rQDvhCNgvwjORU8ma05ML5p73FBPJTyUnJL9Y3vJKJ9O5EPaR9c1v9K1pZaKFYTtldSIsCvmONX0PgnPLYVZdKjcUvK9GuqkzUO79j3lz5X4r6-i2V01Zuk0YM91i5umG6p2Dfjb_Pq2QNZuSo085u6qZfmY9VM10WBDB8FNYyhoRKS53M6P3qnJG6-RX_wUryavuy5j5196Ie2d8N-3Rc9PauMed6BycuKs9D0KnRHCxcZ_e-lzc9f9hcuw01OdzDOUUqx84Q0AdAAYAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 let Allow = DeviceProcessEvents
