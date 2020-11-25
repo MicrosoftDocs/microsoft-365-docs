@@ -40,10 +40,12 @@ Microsoft security researchers have observed various common yet subtle artifacts
 | Ransomware activity | Common tools | Intent |
 |--|--|--|
 | Stop processes | _taskkill.exe_, _net stop_ | Ensure files targeted for encryption are not locked by various applications. |
-| Turn off services | _sc.exe_ | Prevent security software from disrupting encryption and other ransomware activity. Stops backup software from creating recoverable copies  |
-| Delete logs and files | _cipher.exe_, _wevtutil_, _fsutil.exe_, _wbadmin???_ | Remove forensic evidence. |
-| Delete shadow copies  | _vsadmin.exe_, _wmic.exe???_ | Remove drive shadow copies that can be used to recover encrypted files. |
-| Turn off recovery tools | _schtasks???_, _bcdedit???_, | Turn off System Restore and other system recovery options. |
+| Turn off services | _sc.exe_ | - Ensure files targeted for encryption are not locked by various applications.<br>- Prevent security software from disrupting encryption and other ransomware activity.<br>- Stop backup software from creating recoverable copies.  |
+| Delete logs and files | _cipher.exe_, _wevtutil_, _fsutil.exe_ | Remove forensic evidence. |
+| Delete shadow copies  | _vsadmin.exe_, _wmic.exe_ | Remove drive shadow copies that can be used to recover encrypted files. |
+| Delete and stop backups | _wbadmin.exe_ | Delete existing backups and stop scheduled backup tasks, preventing recovery after encryption. |
+| Modify boot settings | _bcdedit.exe_ | Turn off warnings and automatic repairs after boot failures that can be caused by the encryption process. |
+| Turn off recovery tools | _schtasks.exe_, _regedit.exe_, | Turn off System Restore and other system recovery options. |
 
 
 ## Check for individual signs of ransomware activity
