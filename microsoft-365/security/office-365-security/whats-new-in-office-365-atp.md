@@ -50,7 +50,7 @@ This article lists new features in the latest release of Microsoft Defender for 
 
 ## July/August 2020
 
-- [Experience improvements to the hunting experience](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- [Experience improvements to the hunting experience](threat-explorer.md#improvements-to-threat-explorer/real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 - [Easily apply recommended settings using preset security policies](preset-security-policies.md) 
 
 ## March/April 2020
@@ -98,7 +98,7 @@ This article lists new features in the latest release of Microsoft Defender for 
 
 ## June 2019
 
-- [View data about phishing URLs and click verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- [View phishing URLs and click verdict data](threat-explorer.md#view-phishing-url-and-click-verdict-data) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 

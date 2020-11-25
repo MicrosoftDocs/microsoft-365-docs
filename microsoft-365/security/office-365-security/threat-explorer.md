@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 # Threat Explorer and Real-time detections
 
-If your organization has [Microsoft Defender for Office 365](office-365-atp.md) and you have the [necessary permissions](#required-licenses-and-permissions), you have access to *Explorer* or *Real-time detections*, which was formerly *Real-time reports*. ([See what's new.](#new-features-in-threat-explorer-and-real-time-detections)) In the Security & Compliance Center, go to **Threat management**, and then select **Explorer** _or_ **Real-time detections**.
+If your organization has [Microsoft Defender for Office 365](office-365-atp.md) and you have the [necessary permissions](#required-licenses-and-permissions), you have access to *Explorer* or *Real-time detections, which were formerly *Real-time reports*. ([See what's new.](#new-features-in-threat-explorer-and-real-time-detections)) In the Security & Compliance Center, go to **Threat management**, and then select **Explorer** _or_ **Real-time detections**.
 
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
@@ -40,9 +40,9 @@ With this report, you can:
 - [See malware detected by Microsoft 365 security features](#see-malware-detected-in-email-by-technology)
 - [View phishing URL and click verdict data](#view-phishing-url-and-click-verdict-data)
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (Defender for Office 365 Plan 2 only)
-- [Investigate malicious email, and more](#more-ways-to-use-explorer-real-time-detections)!
+- [Investigate malicious email, and more](#more-ways-to-use-explorer/real-time-detections)
 
-## Improvements to Threat Explorer/real-time detections
+## Improvements to Threat Explorer/Real-time detections
 
 ### Tags in Threat Explorer
 
@@ -236,7 +236,7 @@ Additional details are now available within the product, such as the total numbe
 
 ### Top targeted users
 
-Today we expose the list of the top targeted users in the Malware view for emails,in the **Top Malware Families** section. We'll be extending this view in the Phish and All Email views as well. You'll be able to see the top-five targeted users, along with the number of attempts for each user for the corresponding view. For example, for Phish view, you'll see the number of Phish attempts.
+Today we expose the list of the top targeted users in the Malware view for emails, in the **Top Malware Families** section. We'll be extending this view in the Phish and All Email views as well. You'll be able to see the top-five targeted users, along with the number of attempts for each user for the corresponding view. For example, for Phish view, you'll see the number of Phish attempts.
 
 You'll be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts for offline analysis for each email view. In addition, selecting the number of attempts (for example, 13 attempts below) will open a filtered view in Threat Explorer, so you can see more details across emails and threats for that user.
 
@@ -322,7 +322,7 @@ Here is what the user can and can't see:
 
 The **Email timeline** is a new Explorer feature that improves the hunting experience for admins. It cuts the time spent checking different locations to try to understand the event. When multiple events happen at or close to the same time an email arrives, those events are displayed in a timeline view. Some events that happen to your email post-delivery are captured in the **Special action** column. Admins can combine  information from the timeline with the special action taken on the mail post-delivery to get insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
 
-For more information see [Investigate and remediate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md).
+For more information, see [Investigate and remediate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md).
 
 ### Export URL click data
 
@@ -330,7 +330,7 @@ You can now export reports for URL clicks to Microsoft Excel to view their **net
 
 **Explorer** \> **View Phish** \> **Clicks** \> **Top URLs** or **URL Top Clicks** \> select any record to open the URL flyout.
 
-When you select an URL in the list, you'll see a new **Export** button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
+When you select a URL in the list, you'll see a new **Export** button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
 
 Follow this path to get to the same location in the Real-time detections report:
 
@@ -469,7 +469,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
   - Security Administrator, which can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or thorugh PowerShell cmdlets (see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
+- For Exchange Online, you must have one of the following roles assigned in the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or through PowerShell cmdlets (see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   - Organization Management
   - View-only Organization Management
@@ -484,6 +484,6 @@ To learn more about roles and permissions, see the following resources:
 ## Differences between Threat Explorer and Real-time detections
 
 - The *Real-time detections* report is available in Defender for Office 365 Plan 1. *Threat Explorer* is available in Defender for Office 365 Plan 2.
-- The Real-time detections report allows you to view detections in real-time. Threat Explorer does this as well, but it also provides additional details for a given attack.
+- The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it also provides additional details for a given attack.
 - An *All email* view is available in Threat Explorer but not in the Real-time detections report.
-- More filtering capabilities and available actions are included in Threat Explorer. For more details, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- More filtering capabilities and available actions are included in Threat Explorer. For more information, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
