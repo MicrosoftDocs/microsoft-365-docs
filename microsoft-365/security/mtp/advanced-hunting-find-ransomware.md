@@ -89,11 +89,11 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 | where CipherCount > 1
 ```
 
-### Clearing of forensic evidence from event logs using _wevutil_
-This query checks for attempts to clear at least 10 log entries from event logs using _wevutil_. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
+### Clearing of forensic evidence from event logs using _wevtutil_
+This query checks for attempts to clear at least 10 log entries from event logs using _wevtutil_. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
-// Look for use of wevutil to clear multiple logs
+// Look for use of wevtutil to clear multiple logs
 DeviceProcessEvents
 | where Timestamp > ago(1d)
 | where ProcessCommandLine has "WEVTUTIL" and ProcessCommandLine has "CL"
@@ -171,7 +171,7 @@ let cipher = DeviceProcessEvents
 CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m) 
 // cipher.exe accessing multiple drives in a short timeframe 
 | where CipherCount > 1;
-// Look for use of wevutil to clear multiple logs
+// Look for use of wevtutil to clear multiple logs
 let wevtutilClear = DeviceProcessEvents
 | where Timestamp > ago(1d)
 | where ProcessCommandLine has "WEVTUTIL" and ProcessCommandLine has "CL"
