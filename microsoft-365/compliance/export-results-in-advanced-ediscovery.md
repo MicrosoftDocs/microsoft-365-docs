@@ -164,7 +164,7 @@ The eDiscovery Export Tool is used to export search results from Advanced eDisco
   
 11. In the **eDiscovery Export Tool**:
     
-    -  In **Paste the Shared Access Signature that will be used to connect to the source**, paste the Export key that youcopied to the clipboard in step 7.
+    -  In **Paste the Shared Access Signature that will be used to connect to the source**, paste the Export key that you copied to the clipboard in step 7.
     
     - Click **Browse** to select the target location for storing the downloaded export files on the local machine. 
     
