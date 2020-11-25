@@ -175,8 +175,10 @@ To label an item in the Outlook desktop client, select the item. On the **Home**
 You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. 
 
 After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email has a retention label applied that has an associated retention period, you can see at a glance when the email expires.
-  
-You can also apply retention labels to folders as a default label. When you do this with a standard retention label (it doesn't mark items as a [record or regulatory record](records-management.md#records)):
+
+##### Applying a default retention label to an Outlook folder
+
+You can apply retention labels to Outlook folders as a default label that's inherited by messages in that folder. When you do this with a standard retention label (it doesn't mark items as a [record or regulatory record](records-management.md#records)):
   
 - All unlabeled items in the folder have this retention label applied.
 
@@ -186,7 +188,9 @@ You can also apply retention labels to folders as a default label. When you do t
 
 - If you change or remove the default retention label for the folder, existing retention labels applied to items in that folder are changed or removed only if those labels were applied by a default label.
 
-- If you move an item with a default retention label applied from one folder to another folder, the item keeps its existing default retention label, even if the new location has a different default retention label. Only if you then change the default label for this new location will the moved item inherit the default label from its current location.
+- If you move an item with a default retention label from one folder to another folder with a different default retention label, the item gets the new default retention label.
+
+- If you move an item with a default retention label from one folder to another folder with no default retention label, the old default retention label is removed.
 
 When labels are applied that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records), these labels can only be manually changed or removed.
 
@@ -200,7 +204,7 @@ After the retention label is applied, you can view that retention label and what
   
 ![Label assigned to email in Outlook on the web](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
-As with Outlook on the web, you can also apply retention labels to folders. 
+As with the desktop version of Outlook on the web, you can also apply retention labels to folders. 
 
 #### Applying retention labels in OneDrive and SharePoint
 
