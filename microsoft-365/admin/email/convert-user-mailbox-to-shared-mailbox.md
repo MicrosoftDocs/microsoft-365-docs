@@ -89,8 +89,8 @@ Let's say you've deleted a user account and now you want to convert their old ma
 ## Convert a user's mailbox in a hybrid environment
 
 More details about converting an user mailbox to a shared mailbox, into an Exchange Hybrid environment can be found on:
-https://support.microsoft.com/en-gb/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49
-https://docs.microsoft.com/en-gb/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes#resolution
+https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49
+https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes
 
 > [!NOTE]
 > If you are a member of the Organization Management or Recipient Management role group, you can use the Exchange Management shell to change a user mailbox to a shared mailbox on-premises. For example, `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.
