@@ -43,9 +43,11 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
 
-  - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+  - 30 days for messages quarantined by anti-spam policies (spam, phishing, and bulk email). This is the default and maximum value. To configure (lower) this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
-  - Messages that contain malware: 15 days.
+  - 15 days for messages that contain malware.
+
+  - 15 days for files quarantined by ATP for SharePoint, OneDrive, and Microsoft Teams in Defender for Office 365.
 
   When a message expires from quarantine, you can't recover it.
 
@@ -123,14 +125,6 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
-#### Export message results
-
-1. Select the messages you're interested in, and click **Export results**.
-
-2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-
-3. When your export is ready, you can name and choose the download location for the .csv file.
-
 #### View quarantined message details
 
 When you select an email message in the list, the following message details appear in the **Details** flyout pane:
@@ -166,7 +160,7 @@ After you select a message, you have several options for what to do with the mes
   - Choose one of the following options:
     - **Release messages to all recipients**
     - **Release messages to specific recipients**
-    - **Release messages to other people**
+    - **Release messages to other people**: Note that releasing malware messages to people other than original recipients is not supported. 
 
   When you're finished, click **Release messages**.
 
@@ -190,7 +184,7 @@ After you select a message, you have several options for what to do with the mes
 
   - **Object type**: **Email** (default), **URL**, or **Attachment**.
 
-  - **Submission format**: **Network Message ID** (default, with the corresponding value in the **Network Message ID** box) or **File** (browse to a local .eml or .msg file). Note that if you select **File** and then select **Network Message ID**, the initially value is gone.
+  - **Submission format**: **Network Message ID** (default, with the corresponding value in the **Network Message ID** box) or **File** (browse to a local .eml or .msg file). Note that if you select **File** and then select **Network Message ID**, the initial value is gone.
 
   - **Recipients**: Type at lease one original recipient of the message, or click **Select All** to identify all recipients. You can also click **Select All** and then selectively remove individual recipients.
 
@@ -209,7 +203,7 @@ When you select multiple quarantined messages in the list (up to 100), the **Bul
   > [!NOTE]
   > Consider the following scenario: john@gmail.com sends a message to faith@contoso.com and john@subsidiary.contoso.com. Gmail bifurcates this message into two copies that are both routed to quarantine as phishing in Microsoft. An admin releases both of these messages to admin@contoso.com. The first released message that reaches the admin mailbox is delivered. The second released message is identified as duplicate delivery and is skipped. Message are identified as duplicates if they have the same message ID and received time.
 
-- **Delete messages**:  After you click **Yes** in the warning that appears, the message are immediately deleted without being sent to the original recipients.
+- **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately deleted without being sent to the original recipients.
 
 When you're finished, click **Close**.
 
@@ -250,14 +244,6 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
    - **Policy type**
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).
-
-#### Export file results
-
-1. Select the files you're interested in, and click **Export results**.
-
-2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-
-3. When your export is ready, you can name and choose the download location for the .csv file.
 
 #### View quarantined file details
 

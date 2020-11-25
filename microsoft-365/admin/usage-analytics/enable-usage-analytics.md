@@ -52,12 +52,7 @@ To share your data, both you and the people who you share the data with, need a 
   
 ### Enable the template app
 
-To enable the template app, you have to be one of the following: 
-- **Global administrator**
-- **Report reader**
-- **Exchange administrator**
-- **Skype for Business administrator**
-- **SharePoint administrator** 
+To enable the template app, you have to be a **Global administrator**.
   
 See [about admin roles](../add-users/about-admin-roles.md) for more information. 
   

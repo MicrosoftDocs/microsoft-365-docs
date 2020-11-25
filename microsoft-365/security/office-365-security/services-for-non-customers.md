@@ -33,7 +33,7 @@ This overview provides information about benefits we provide to your organizatio
 
 |Service|Benefits|
 |---|---|
-|This online help content|Provides: <br/> A starting point for any questions related to delivering communications to EOP users. <br/><br/> Includes a simple online guide with our policies and requirements. <br/><br/> An overview of the junk email filters and authentication technologies employed by Microsoft.|
+|This online help content|Provides: <ul><li>A starting point for any questions related to delivering communications to EOP users.</li><li>Includes a simple online guide with our policies and requirements.</li><li>An overview of the junk email filters and authentication technologies employed by Microsoft.</li><ul>|
 |[Microsoft support](#microsoft-support)|Provides self-help and escalation support for delivery issues.|
 |[Anti-Spam IP Delist Portal](#anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request it is the sender's responsibility to ensure that any further mail originating from the IP in question is not abusive or malicious.|
 |[Abuse and spam reporting for junk email originating from Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Keeps spam and other unwanted mail from being sent from Exchange Online and cluttering up the internet and your mail system.|

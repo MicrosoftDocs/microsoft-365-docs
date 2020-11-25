@@ -37,6 +37,8 @@ To grant users this required Disposition Management role, either add them to one
 > [!NOTE]
 > Even a global admin needs to be granted the **Disposition Management** role. 
 
+Additionally, to view the contents of items during the disposition process, add users to the following two role groups: **Content Explorer Content Viewer** and **Content Explorer List Viewer**. If users don't have the permissions from these role groups, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the compliance center.
+
 For instructions, see [Give users access to the Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### Enable auditing
@@ -127,7 +129,9 @@ Items that are shown in the **Disposed Items** tab for record labels are kept fo
 
 > [!NOTE]
 > This functionality is based on information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.
-    
+
+For auditing, search for **Deleted file marked as a record**.
+
 ## Filter and export the views
 
 When you select a retention label from the **Disposition** page, the **Pending disposition** tab (if applicable) and the **Disposed items** tab let you filter the views to help you more easily find items. 
