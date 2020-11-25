@@ -40,7 +40,7 @@ With this report, you can:
 - [See malware detected by Microsoft 365 security features](#see-malware-detected-in-email-by-technology)
 - [View phishing URL and click verdict data](#view-phishing-url-and-click-verdict-data)
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (Defender for Office 365 Plan 2 only)
-- [Investigate malicious email, and more](#more-ways-to-use-explorer/real-time-detections)
+- [Investigate malicious email, and more](#more-ways-to-use-explorer-real-time-detections)
 
 ## Improvements to Threat Explorer/Real-time detections
 
