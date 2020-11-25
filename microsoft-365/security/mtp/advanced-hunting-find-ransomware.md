@@ -28,14 +28,14 @@ ms.topic: article
 **Applies to:**
 - Microsoft 365 Defender
 
-Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. While [Microsoft 365 Defender](microsoft-threat-protection.md) provides many capabilities that detect and block ransomware, including intrusion activity intended to deploy this payload, performing proactive checks for signs of infection attempts can help keep networks protected.
+Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. While [Microsoft 365 Defender](microsoft-threat-protection.md) provides many capabilities that detect and block ransomware and associated intrusion activities, performing proactive checks for signs of infection can help keep your network protected.
 
 > [Read about human-operated ransomware](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-With [advanced hunting](advanced-hunting-overview.md) in Microsoft 365 Defender, you can create queries that locate individual artifacts associated with ransomware activity. You can also run more sophisticated queries that can look for signs of activity and weigh these signs to find devices that require immediate attention.
+With [advanced hunting](advanced-hunting-overview.md) in Microsoft 365 Defender, you can create queries that locate individual artifacts associated with ransomware activity. You can also run more sophisticated queries that can look for signs of activity and weigh those signs to find devices that require immediate attention.
 
 ## Signs of ransomware activity
-Microsoft security researchers have observed various common yet subtle artifacts in many ransomware campaigns launched by sophisticated intruders. These signs mostly involve use of various system tools to prepare for encryption, prevent detection, or clear forensic evidence.
+Microsoft security researchers have observed various common yet subtle artifacts in many ransomware campaigns launched by sophisticated intruders. These signs mostly involve use of system tools to prepare for encryption, prevent detection, and clear forensic evidence.
 
 | Ransomware activity | Common tools | Intent |
 |--|--|--|
@@ -47,9 +47,8 @@ Microsoft security researchers have observed various common yet subtle artifacts
 | Modify boot settings | _bcdedit.exe_ | Turn off warnings and automatic repairs after boot failures that can be caused by the encryption process. |
 | Turn off recovery tools | _schtasks.exe_, _regedit.exe_, | Turn off System Restore and other system recovery options. |
 
-
 ## Check for individual signs of ransomware activity
-Many activities that constitute ransomware behavior, such as stopping certain processes, can be benign. When using the following queries, validate your results by running multiple queries to check for various signs of ransomware activity on the same device.
+Many activities that constitute ransomware behavior, including the activities described in the preceding section, can be benign. When using the following queries to locate ransomware, run more than one query to check whether the same devices are exhibiting various signs of possible ransomware activity.
 
 ### Stopping multiple processes using _taskkill.exe_
 This query checks for attempts to stop at least 10 separate processes using the _taskkill.exe_ utility. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
@@ -114,10 +113,6 @@ DeviceProcessEvents
 | where ScDisableCount > 10
 ```
 
-## Identify subtle ransomware activities
-When hunting for subtler signs of threat activity—behaviors that can easily be confused with normal activities—use queries that check for more that one type of indicator. Consider running the following...
- 
-
 ### Turning off System Restore
 Find attempts to stop System Restore and prevent the system from creating restore points, which can be used to recover data encrypted by ransomware. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
 
@@ -135,7 +130,7 @@ and ProcessCommandLine has 'disable'
 ```
 
 ### Backup deletion
-Find use of _wmic.exe_ to delete shadow copy snapshots backups prior to encryption. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
+Find use of _wmic.exe_ to delete shadow copy snapshots prior to encryption. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -145,13 +140,13 @@ DeviceProcessEvents
 ProcessCommandLine, InitiatingProcessIntegrityLevel, InitiatingProcessParentFileName
 ```
 
-## Check various signs of ransomware activity and weigh them for possible attacks
-Instead of running individual queries, you can also use a single query that checks for multiple signs of ransomware activity to identify affected devices. The following advanced hunting query:
-- Looks for the most subtle signs of ransomware activity
+## Check for multiple signs of ransomware activity
+Instead of running several queries separately, you can also use a comprehensive query that checks for multiple signs of ransomware activity to identify affected devices. The following advanced hunting query:
+- Looks for both relatively concrete and subtle signs of ransomware activity
 - Weighs the presence of these signs
 - Identifies devices with a higher chance of being targets of ransomware 
 
-When run, this query returns a list of devices that have exhibited a relatively higher number of signs of attack. The count of each type of sign is also shown. To run this consolidated query, copy it directly to the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). 
+When run, the consolidated query returns a list of devices that have exhibited a relatively higher number of signs of attack. The count of each type of ransomware activity is also shown. To run this consolidated query, copy it directly to the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). 
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -226,7 +221,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 | where UniqueEvidenceCount > 2
 ```
 ### Understand and tweak the query results
-When looking at the results, you can focus on the following columns:
+The query returns the following results:
 
 - **DeviceId**—identifies the affected device the 
 - **TimeStamp**—first time any sign of ransomware activity was observed on the device
@@ -238,51 +233,10 @@ When looking at the results, you can focus on the following columns:
 
 *Query results showing affected devices and counts of various signs of ransomware activity*
 
-The result lists only devices that have more than two types of signs of ransomware infection. To see all devices with any sign of infection, modify the following `where` operator:
+By default, the query result lists only devices that have more than two types of ransomware activity. To see all devices with any sign of infection, modify the following `where` operator and set the number to zero (0). To see fewer devices, set a higher number. 
 
 ```kusto
 | where UniqueEvidenceCount > 2
-```
-
-## Look for general intrusion activities
-While these activities don't constitute actual ransomware activities, they have been observed in many attacks deploying ransomware. You can use the following queries to find active attacks that will most likely result in the deployment of ransomware in your network.
-
-### PsExec in remote file creation
-While PsExec is also used during intrusions that do not involve ransomware, ransomware campaigns often use this tool to move around the network and transfer payloads between devices. To find such activities on your network, run this query. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWSS0vDUBSEZy34Hy5ZNVAouteNDyiU0oV7iWm0QZMGk7Yq_ni_TOKjoYIubu6cc2fmPMhEEwUtVOtKL8qUEqV6BiVqlKvUA5l70BO5GrwmF8wowA13ACWoVua3rGMd6RK0JZNyL-CvjWpX2oJKtB3zHYcd6syuQVPeclf_7mHf4brvZw6jsKaGmcBpPXdWr8hGqogzTxZ91aq1QVWYn-vN-gvcu1yppaONOww64yyp_JkZDXrZV876HcQa93t5NC_7l7LtdKgdzhzjf6dXvj83PcVp7JfWbaQb7sIujXWVX09gxQd3__sezjmnBzVdh7d_mi6gS_wfRd5pxQSRPgAgMAqyhgIAAA&runQuery=true&timeRangeId=week)
-
-```kusto
-// PsExec creating files on remote machines
-DeviceProcessEvents
-| where InitiatingProcessFileName startswith "psexe"
-| summarize CommandCount = dcount(ProcessCommandLine), makeset(ProcessCommandLine),
-makeset(FileName) by DeviceId, bin(Timestamp, 1d)
-| where CommandCount > 2
-| where set_ProcessCommandLine has "copy"
-```
-
-### RDP persistence
-In 2020, some human-operated ransomware campaigns, including ones by the PARINACOTA cybercriminal group, established RDP persistence through the registry. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAM1UXWvCMBQ9z4P9h-DThriP501BdIIwxpj-gdK6WU2rtFU32I_fyaWbjSTa7klCmtv7ce7pSVKNGQoo9KE5VtjR7nIO6d8iRsj1FRkjxso5nuifIWVVjktc4JvZO8zpyzgVRqzStF4QIBFPVxBbEv_ADZ-fnC1ntd1rQDvhCNgvwjORU8ma05ML5p73FBPJTyUnJL9Y3vJKJ9O5EPaR9c1v9K1pZaKFYTtldSIsCvmONX0PgnPLYVZdKjcUvK9GuqkzUO79j3lz5X4r6-i2V01Zuk0YM91i5umG6p2Dfjb_Pq2QNZuSo085u6qZfmY9VM10WBDB8FNYyhoRKS53M6P3qnJG6-RX_wUryavuy5j5196Ie2d8N-3Rc9PauMed6BycuKs9D0KnRHCxcZ_e-lzc9f9hcuw01OdzDOUUqx84Q0AdAAYAAA&runQuery=true&timeRangeId=week)
-
-```kusto
-let Allow = DeviceProcessEvents
-| where FileName == "reg.exe"
-| where ProcessCommandLine has "AllowTSConnections"
-| extend AllowReport = Timestamp ;
-//
-let Deny = DeviceProcessEvents 
-| where FileName == "reg.exe"
-| where ProcessCommandLine has "fDenyTSConnections"
-| extend DenyReport = Timestamp;
-// 
-let Special = DeviceProcessEvents  
-| where FileName == "reg.exe"
-| where ProcessCommandLine has "SpecialAccounts"
-| extend SpecialReport = Timestamp;
-//
-Special | join kind=inner (Deny | join kind=inner Allow on DeviceId) on DeviceId 
-| where AllowReport < Timestamp +10s and AllowReport > Timestamp -10s
-| where DenyReport < Timestamp +10s and DenyReport > Timestamp -10s
-| where SpecialReport < Timestamp +10s and SpecialReport > Timestamp -10s
 ```
 
 ## Related topics
