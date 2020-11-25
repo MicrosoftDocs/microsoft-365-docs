@@ -54,7 +54,7 @@ To check whether your devices are registered in the public cloud, you should exp
 
 ### Windows down-level
 
-_Windows down-level devices_ are Windows devices that currently run earlier versions of Windows (such as Windows 8.1 or Windows 7), or that run Windows Server versions earlier than 2019 and 2016. Such devices, if they're registered before, you'll need to unregister and re-register those devices. 
+_Windows down-level devices_ are Windows devices that currently run earlier versions of Windows (such as Windows 8.1 or Windows 7), or that run Windows Server versions earlier than 2019 and 2016. If such devices were registered before, you'll need to unregister and re-register those devices. 
 
 To determine whether a Windows down-level device was previously joined to Azure AD, use following command on the device:
 
