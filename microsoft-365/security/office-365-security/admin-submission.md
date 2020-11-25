@@ -140,7 +140,7 @@ You can click the **Column options** button near the bottom of the page to add o
   <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
 
 #### Admin submission rescan details
-Messages that are submitted in Admin submissions are rescanned and results shown in the details flyout:
+Messages that are submitted in admin submissions are rescanned and results shown in the details flyout:
 1) if there was a failure in the sender's email authentication at time of delivery
 2) Information about any policy hits that could have affected or overridden the verdict of a message
 3) current detonation results to see if the URLs or files contained in the message were malicious or not
