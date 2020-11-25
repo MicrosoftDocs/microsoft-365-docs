@@ -146,7 +146,7 @@ Messages that are submitted in admin submissions are rescanned and results shown
 3) Current detonation results to see if the URLs or files contained in the message were malicious or not.
 4) Feedback from graders.
 
-If a override was found, the rescan should complete in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
+If an override was found, the rescan should complete in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
 
 ### View admin URL submissions
 
