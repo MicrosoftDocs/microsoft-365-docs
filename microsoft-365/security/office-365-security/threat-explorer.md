@@ -40,9 +40,9 @@ With this report, you can:
 - [See malware detected by Microsoft 365 security features](#see-malware-detected-in-email-by-technology)
 - [View phishing URL and click verdict data](#view-phishing-url-and-click-verdict-data)
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (Defender for Office 365 Plan 2 only)
-- [Investigate malicious email, and more](#more-ways-to-use-explorer-real-time-detections)
+- [Investigate malicious email, and more](#more-ways-to-use-explorer-and-real-time-detections)
 
-## Improvements to Threat Explorer/Real-time detections
+## Improvements to Threat Explorer and Real-time detections
 
 ### Tags in Threat Explorer
 
@@ -443,7 +443,7 @@ The report refreshes to show data about email messages that people in your organ
 
 [Automated investigation and response](automated-investigation-response-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
-## More ways to use Explorer/Real-time detections
+## More ways to use Explorer and Real-time detections
 
 In addition to the scenarios outlined in this article, you have many more reporting options available with Explorer (or Real-time detections). See the following articles:
 
