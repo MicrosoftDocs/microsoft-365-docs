@@ -28,7 +28,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft 365 Defender
 
-Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. While [Microsoft 365 Defender](microsoft-threat-protection.md) provides many capabilities that detect and block ransomware and associated intrusion activities, performing proactive checks for signs of infection can help keep your network protected.
+Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. While [Microsoft 365 Defender](microsoft-threat-protection.md) provides many capabilities that detect and block ransomware and associated intrusion activities, performing proactive checks for signs of compromise can help keep your network protected.
 
 > [Read about human-operated ransomware](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
@@ -233,7 +233,7 @@ The query returns the following results:
 
 *Query results showing affected devices and counts of various signs of ransomware activity*
 
-By default, the query result lists only devices that have more than two types of ransomware activity. To see all devices with any sign of infection, modify the following `where` operator and set the number to zero (0). To see fewer devices, set a higher number. 
+By default, the query result lists only devices that have more than two types of ransomware activity. To see all devices with any sign of ransomware activity, modify the following `where` operator and set the number to zero (0). To see fewer devices, set a higher number. 
 
 ```kusto
 | where UniqueEvidenceCount > 2
