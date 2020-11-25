@@ -74,12 +74,12 @@ To view the individual tags for sender and recipient, select the subject to open
 The information about individual tags for sender and recipient also extends to exported CSV data, where you can see these details in two separate columns.
 
 > [!div class="mx-imgBorder"]
-> ![Email Details Tags](../../media/tags-flyout.png)
+> ![Email Details tags](../../media/tags-flyout.png)
 
 Tags information is also shown in the URL clicks flyout. To view it, go to Phish or All Email view and then to the **URLs** or **URL Clicks** tab. Select an individual URL flyout to view additional details about clicks for that URL, including tags associated with that click.
 
 > [!div class="mx-imgBorder"]
-> ![URL Tags](../../media/tags-urls.png)
+> ![URL tags](../../media/tags-urls.png)
 
 ## Improvements to the threat hunting experience (upcoming)
 
@@ -101,7 +101,7 @@ The set of detection technologies now includes new detection methods, as well as
 You can now see the specific threat for a URL on the email flyout **Details** tab. The threat can be *malware*, *phish*, *spam*, or *none*.)
 
 > [!div class="mx-imgBorder"]
-> ![URL Threats](../../media/URL_Threats.png)
+> ![URL threats](../../media/URL_Threats.png)
 
 ### Updated timeline view (upcoming)
 
@@ -123,7 +123,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 **Original delivery location** will give more information about where an email was delivered initially. **Latest delivery location** will state where an email landed after system actions like *ZAP* or admin actions like *Move to deleted items*. Latest delivery location is intended to tell admins the message's last-known location post-delivery or any system/admin actions. It doesn't include any end-user actions on the email. For example, if a user deleted a message or moved the message to archive/pst, the message "delivery" location won't be updated. But if a system action updated the location (for example, ZAP resulting in an email moving to quarantine), **Latest delivery location** would show as "quarantine."
 
 > [!div class="mx-imgBorder"]
-> ![Updated Delivery Locations](../../media/Updated_Delivery_Location.png)
+> ![Updated delivery locations](../../media/Updated_Delivery_Location.png)
 
 > [!NOTE]
 > There are a few cases where **Delivery location** and **Delivery action** may show as "unknown":
@@ -133,7 +133,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 > - **Latest delivery location** can be unknown if an admin/system action (such as ZAP) was attempted, but the message wasn't found. Typically, the action happens after the user  moved or deleted the message. In such cases, verify the **Result/Details** column in timeline view. Look for the statement "Message moved or deleted by the user."
 
 > [!div class="mx-imgBorder"]
-> ![Delivery Locations for Timeline](../../media/Updated_Timeline_Delivery_Location.png)
+> ![Delivery locations for timeline](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### Additional actions
 
@@ -207,7 +207,7 @@ You can now sort and filter on system or custom user tags to quickly grasp the s
 You'll see the time zone for the email records in the Portal as well as for Exported data. It will be visible across experiences like Email Grid, Details flyout, Email Timeline, and Similar Emails, so the time zone for the result set is clear.
 
 > [!div class="mx-imgBorder"]
-> ![View Timezone in Explorer](../../media/TimezoneImprovements.png)
+> ![View time zone in Explorer](../../media/TimezoneImprovements.png)
 
 ### Update in the refresh process
 
@@ -223,14 +223,14 @@ From an experience standpoint, the user can apply and remove the different range
 You can now chart legend values to add them as filters. Select the **Refresh** button to filter the results.
 
 > [!div class="mx-imgBorder"]
-> ![Drilldown through charts to Filter](../../media/ChartDrilldown.png)
+> ![Drill down through charts to Filter](../../media/ChartDrilldown.png)
 
 ### In-product information updates
 
 Additional details are now available within the product, such as the total number of search results within the grid (see below). We've improved labels, error messages, and tooltips to provide more information about the filters, search experience, and result set.
 
 > [!div class="mx-imgBorder"]
-> ![View In-product Info](../../media/ProductInfo.png)
+> ![View in-product information](../../media/ProductInfo.png)
 
 ## Extended capabilities in Threat Explorer
 
@@ -238,10 +238,10 @@ Additional details are now available within the product, such as the total numbe
 
 Today we expose the list of the top targeted users in the Malware view for emails, in the **Top Malware Families** section. We'll be extending this view in the Phish and All Email views as well. You'll be able to see the top-five targeted users, along with the number of attempts for each user for the corresponding view. For example, for Phish view, you'll see the number of Phish attempts.
 
-You'll be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts for offline analysis for each email view. In addition, selecting the number of attempts (for example, 13 attempts below) will open a filtered view in Threat Explorer, so you can see more details across emails and threats for that user.
+You'll be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts for offline analysis for each email view. In addition, selecting the number of attempts (for example, 13 attempts in the image below) will open a filtered view in Threat Explorer, so you can see more details across emails and threats for that user.
 
 > [!div class="mx-imgBorder"]
-> ![Top Targeted Users](../../media/Top_Targeted_Users.png)
+> ![Top targeted users](../../media/Top_Targeted_Users.png)
 
 ### Exchange transport rules
 
@@ -272,7 +272,7 @@ Connectors are a collection of instructions that customize how your email flows 
 The search for connectors is "contains" in nature, which means partial keyword searches should work as well. Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown here:
 
 > [!div class="mx-imgBorder"]
-> ![Connector Details](../../media/Connector_Details.png)
+> ![Connector details](../../media/Connector_Details.png)
 
 ## New features in Threat Explorer and Real-time detections
 
