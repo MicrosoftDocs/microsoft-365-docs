@@ -144,7 +144,7 @@ Messages that are submitted in admin submissions are rescanned and results shown
 1) If there was a failure in the sender's email authentication at the time of delivery.
 2) Information about any policy hits that could have affected or overridden the verdict of a message.
 3) Current detonation results to see if the URLs or files contained in the message were malicious or not.
-4) feedback from graders
+4) Feedback from graders.
 
 If a override was found, the rescan should complete in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
 
