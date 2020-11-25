@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -32,29 +32,29 @@ To provide an additional level of security for sign-ins, you must use multi-fact
 - Something you have with you that is not easily duplicated, such as a smart phone.
 - Something you uniquely and biologically have, such as your fingerprints, face, or other biometric attribute.
 
-The additional verification method is not employed until after the user’s password has been verified. With MFA, even if a strong user password is compromised, the attacker does not have your smart phone or your fingerprint to complete the sign-in.
+The additional verification method is not employed until after the user's password has been verified. With MFA, even if a strong user password is compromised, the attacker does not have your smart phone or your fingerprint to complete the sign-in.
 
 ## MFA support in Microsoft 365
+
 By default, both Microsoft 365 and Office 365 support MFA for user accounts using:
 
 - A text message sent to a phone that requires the user to type a verification code.
 - A phone call.
 - The Microsoft Authenticator smart phone app.
 
-In both cases, the MFA sign-in is using the “something you have with you that is not easily duplicated” method for the additional verification.
-There are multiple ways in which you can enable MFA for Microsoft 365 and Office 365:
+In both cases, the MFA sign-in is using the "something you have with you that is not easily duplicated" method for the additional verification. There are multiple ways in which you can enable MFA for Microsoft 365 and Office 365:
 
 - With security defaults
 - With Conditional Access policies
 - For each individual user account (not recommended)
 
 These ways are based on your Microsoft 365 plan.
-	
-|Plan  |Recommendation  | Type of customer |
-|---------|---------|----------|
-| All Microsoft 365 plans |	Use security defaults, which require MFA for all user accounts. <br> You can also require MFA on a per-user account basis, but this is not recommended.	| Small business |
-| Microsoft 365 Business Premium <br><br> Microsoft 365 E3 <br><br> Azure Active Directory (Azure AD) Premium P1 licenses | Use Conditional Access policies to require MFA for user accounts based on group membership, apps, or other criteria. | Small business to enterprise |
-| Microsoft 365 E5 <br><br> Azure AD Premium P2 licenses | Use Azure AD Identity Protection to require MFA based on sign-in risk criteria. |  Enterprise |
+
+|Plan|Recommendation|Type of customer|
+|---|---|---|
+|All Microsoft 365 plans|Use security defaults, which require MFA for all user accounts. <p> You can also configure per-user MFA on individual user accounts, but this is not recommended.|Small business|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1 licenses|Use Conditional Access policies to require MFA for user accounts based on group membership, apps, or other criteria.|Small business to enterprise|
+|Microsoft 365 E5 <p> Azure AD Premium P2 licenses|Use Azure AD Identity Protection to require MFA based on sign-in risk criteria.|Enterprise|
 ||||
 
 ### Security defaults
@@ -74,7 +74,7 @@ You enable or disable security defaults from the **Properties** pane for Azure A
 
 You can use security defaults with any Microsoft 365 plan.
 
-For more information, see this [overview of security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). 
+For more information, see this [overview of security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### Conditional Access policies
 
@@ -88,13 +88,13 @@ You can also use Conditional Access policies for more advanced capabilities, suc
 
 You configure Conditional Access policies from the **Security** pane for Azure AD in the Azure portal.
 
-![Picure of menu option for Conditional Access](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Picture of menu option for Conditional Access](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 You can use Conditional Access policies with:
 
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 and E5
-- Azure AD Premium P1 and Azure AD Premium P2 licenses 
+- Azure AD Premium P1 and Azure AD Premium P2 licenses
 
 For small businesses with Microsoft 365 Business Premium, you can easily use Conditional Access policies with the following steps:
 
@@ -129,9 +129,9 @@ You can use Azure AD Identity Protection and risk-based Conditional Access polic
 
 For more information, see this [overview of Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
-### Legacy per person MFA (not recommended)
+### Legacy per-user MFA (not recommended)
 
-You should be using either security defaults or Conditional Access policies to require MFA for your user account sign-ins. However, if either of these cannot be used, Microsoft strongly recommends MFA for user accounts that have administrator roles, especially the global administrator role, for any size subscription. 
+You should be using either security defaults or Conditional Access policies to require MFA for your user account sign-ins. However, if either of these cannot be used, Microsoft strongly recommends MFA for user accounts that have administrator roles, especially the global administrator role, for any size subscription.
 
 You enable MFA for individual user accounts from the **Active user** pane of the Microsoft 365 admin center.
 
@@ -143,11 +143,11 @@ After being enabled, the next time the user signs in, they will be prompted to r
 
 This table shows the results of enabling MFA with security defaults, Conditional Access policies, and per-user account settings.
 
-|| Enabled | Disabled | Secondary authentication method |
-|:-------|:-----|:-------|:-------|
-| **Security defaults** | Can’t use Conditional Access policies |	Can use Conditional Access policies | Microsoft Authenticator app |
-| **Conditional Access policies** |If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults | User-specified during MFA registration |
-| **Legacy Per Person MFA (not recommended)** | Overrides security defaults and Conditional Access policies requiring MFA at each sign in | Overridden by security defaults and Conditional Access policies | User-specified during MFA registration|
+||Enabled|Disabled|Secondary authentication method|
+|---|---|---|---|
+|**Security defaults**|Can't use Conditional Access policies|Can use Conditional Access policies|Microsoft Authenticator app|
+|**Conditional Access policies**|If any are enabled, you can't enable security defaults|If all are disabled, you can enable security defaults|User-specified during MFA registration|
+|**Legacy per-user MFA (not recommended)**|Overrides security defaults and Conditional Access policies requiring MFA at each sign in|Overridden by security defaults and Conditional Access policies|User-specified during MFA registration|
 ||||
 
 If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app at their next sign-in.

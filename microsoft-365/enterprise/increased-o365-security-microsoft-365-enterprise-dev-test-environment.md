@@ -25,7 +25,7 @@ With the instructions in this article, you configure additional Microsoft 365 se
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
+> Click [here](../downloads/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
   
 ## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
@@ -55,13 +55,13 @@ Apps that do not support modern authentication cannot have [identity and device 
 4. Click **Apps that don't support modern authentication**, select **Block access**, and then click **Save**.
 
 
-### Enable Advanced Threat Protection for SharePoint, OneDrive for Business, and Microsoft Teams
+### Enable Defender for Office 365 for SharePoint, OneDrive for Business, and Microsoft Teams
 
-Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
+Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 
 1. Go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
 
-2. In the left navigation pane, under **Threat management**, click **Policy**, and then click **ATP safe attachments**. 
+2. In the left navigation pane, under **Threat management**, click **Policy**, and then click **Safe Attachments**. 
 
 3. Under **Protect files in SharePoint, OneDrive, and Microsoft Teams**. select **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**.
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Teams device usage"
+title: "Microsoft 365 Reports in the admin center - Microsoft Teams device usage"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -46,7 +46,7 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Item|Description|
 |:-----|:-----|
 |**Metric**|**Definition**|
-|User name  <br/> |The display name of the user. You can click the display name to go to the user's setting page in the Microsoft Teams admin center.  <br/> |
+|User name  <br/> |The display name of the user.  <br/> |
 |Windows  <br/> |Selected if the user was active in the Teams desktop client on a Windows-based computer.  <br/> |
 |Mac  <br/> |Selected if the user was active in the Teams desktop client on a macOS computer.  <br/> |
 |iOS  <br/> |Selected if the user was active on the Teams mobile client for iOS.  <br/> |

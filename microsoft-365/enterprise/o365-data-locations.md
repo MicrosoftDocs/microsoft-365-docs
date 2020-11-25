@@ -26,6 +26,8 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 The tables below shows where customer data is stored at-rest for Microsoft 365 services across all of Microsoft's global cloud locations. Expand the location of your billing address country to find out where customer data for each service would be stored.
 
+If your business is located in the European Union, see [Data locations for the European Union](EU-data-storage-locations.md) for more information. 
+
 Customers should view tenant specific data location information in your Microsoft 365 Admin Center in **Settings | Org settings | Organization Profile | Data location**.
 
 New Microsoft 365 tenants are defaulted to Geo based on the country of the transaction associated with that tenant's first subscription.
@@ -33,7 +35,6 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the trans
 Find information about the contractual commitments for the storage location of customer data at rest in the [Microsoft Online Services Terms (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 For Azure Active Directory data locations, please visit [AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
-
 
 If Customer’s billing address is outside Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within Europe or North America.  If Customer’s billing address is in Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within the European Union.
 
@@ -122,6 +123,7 @@ For country/region specific data centers, the following defines the cities where
 | Country | City |
 | --- | --- |
 | Australia | Sydney, Melbourne |
+| Brazil | Rio, Campinas |
 | Canada | Quebec City, Toronto |
 | European Union | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam) |
 | France | Paris, Marseille |
@@ -469,7 +471,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Yammer | United States |
 | OneNote Services | Australia |
 | Stream | Australia |
-| Whiteboard | United States |
+| Whiteboard | Australia |
 | Forms | United States |
 | Workplace Analytics | United States |
 </p></details>
@@ -887,19 +889,19 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 
 | Service | Location |
 | --- | --- |
-| Exchange Online | Global Geography 3 – Americas |
-| OneDrive for Business | Global Geography 3 – Americas |
-| SharePoint Online | Global Geography 3 – Americas |
+| Exchange Online | Brazil |
+| OneDrive for Business | Brazil |
+| SharePoint Online | Brazil |
 | Skype for Business | United States |
-| Microsoft Teams | United States |
-| Office Online &amp; Mobile | Global Geography 3 – Americas |
-| EOP | Global Geography 3 – Americas |
+| Microsoft Teams | Brazil |
+| Office Online &amp; Mobile | Brazil |
+| EOP | Brazil |
 | Intune | United States |
-| MyAnalytics | Global Geography 3 – Americas |
+| MyAnalytics | Brazil |
 | Planner | United States |
 | Sway | United States |
 | Yammer | United States |
-| OneNote Services | Global Geography 3 – Americas |
+| OneNote Services | Brazil |
 | Stream | United States |
 | Whiteboard | United States |
 | Forms | United States |

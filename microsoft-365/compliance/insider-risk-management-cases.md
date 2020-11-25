@@ -235,6 +235,9 @@ To learn more about Microsoft Teams for insider risk management, see [Getting st
 
 Sharing an insider risk management case allows risk investigators and analysts to easily collaborate with other compliance stakeholders in your organization. You can quickly share a link to an insider risk management case with external stakeholders from the case management area. To access the insider risk management case from the link, stakeholders must be included in any of the insider risk management role groups.
 
+>[!NOTE]
+>Thank you for your feedback and support during the preview of the ServiceNow connector. We've decided to end the preview of ServiceNow connector and discontinue support in insider risk management on November 30, 2020. We are actively evaluating alternative methods to provide customers with ServiceNow integration in insider risk management.
+
 The following sharing options are available:
 
 - **ServiceNow**: After configuring the Microsoft 365 ServiceNow connector for your Microsoft 365 organization, you can easily share a link to the case, open an incident, or request a change with your ServiceNow organization. To share the case with ServiceNow, select **Share** > **ServiceNow** from the case action. ServiceNow integration with insider risk management supports includes the following case information and actions:

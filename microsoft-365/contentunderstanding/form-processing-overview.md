@@ -7,6 +7,7 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: "Learn about form processing in Microsoft SharePoint Syntex"
 ---
@@ -28,13 +29,9 @@ For example, you can create a form processing model that identifies all purchase
 
 ![Doc library view](../media/content-understanding/doc-lib-done.png)</br>  
 
-You can also use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model, and it learns to extract your data from similar locations in your forms since they have a similar structured layout. 
+You use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model. You only need five form documents to get started. AI Builder will analyze your example files for key-value pairs, and you can also manually identify ones that may not have been detected.  AI builder lets you test the accuracy of your model on your example files.
 
 You need a minimum of five form documents to get started. AI building analyzes your example files for key-value pairs, and then manually identifies the ones that may not have been detected.  AI builder lets you test the accuracy of your model on your example files.
-
-After you train and publish your model, use it to create a [Power Automate Flow](https://docs.microsoft.com/power-automate/getting-started) that runs after a file is uploaded to the SharePoint document library. It then extracts data that has been identified in the model. The extracted data will display in columns in your model's document library view.
-
-You use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model. You only need five form documents to get started. AI Builder will analyze your example files for key-value pairs, and you can also manually identify ones that may not have been detected.  AI builder lets you test the accuracy of your model on your example files.
 
 After you train and publish your model, your model creates a [Power Automate Flow](https://docs.microsoft.com/power-automate/getting-started). The flow runs when a file is uploaded to the SharePoint document library and will extract data that has been identified in the model. The extracted data will display in columns in your model's document library view.
 

@@ -271,6 +271,11 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+
+    - name: Manage
+      items: 
+        - name: Microsoft 365 service health status
+          href: microsoft-365-service-health.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
@@ -340,6 +345,8 @@
           href: data-move-faq.md
         - name: Where customer data is stored
           href: o365-data-locations.md
+        - name: Data locations for the European Union
+          href: eu-data-storage-locations.md
         - name: Microsoft Cloud Deutschland
           items: 
           - name: Overview
@@ -414,8 +421,6 @@
           href: manage-microsoft-365-groups.md
         - name: Governance
           href: manage-microsoft-365-identity-governance.md
-        - name: Recover deleted items in a user mailbox
-          href: recover-deleted-items-in-a-mailbox.md
         - name: Directory synchronization
           items: 
             - name: View status
@@ -470,8 +475,11 @@
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 
-- name: Security and compliance
-  href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
+- name: Compliance
+  href: ../compliance/index.yml
+
+- name: Security
+  href: ../security/index.yml
 
 - name: Cloud services
   items: 
@@ -571,7 +579,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: PowerShell community resources
           href: microsoft-365-powershell-community-resources.md
-    - name: Manage user accounts, licenses, and groups with PowerShell
+    - name: User accounts, passwords, licenses, and groups
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items: 
         - name: User accounts
@@ -582,12 +590,14 @@
               href: view-user-accounts-with-microsoft-365-powershell.md
             - name: Configure properties
               href: configure-user-account-properties-with-microsoft-365-powershell.md
-            - name: Assign roles
+            - name: Assign admin roles
               href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: Delete and restore
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Block
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: Passwords
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: Licenses and services
           items: 
             - name: View licenses and services
@@ -609,7 +619,9 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Groups
           items: 
-            - name: Maintain group membership
+            - name: Manage security groups
+              href: manage-security-groups-with-microsoft-365-powershell.md
+            - name: Maintain security group membership
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
@@ -716,7 +728,7 @@
   items: 
     - name: Overview
       href: contoso-overview.md
-    - name: Contoso's IT infrastructure and needs
+    - name: Contoso IT infrastructure and needs
       href: contoso-infra-needs.md
     - name: Networking
       href: contoso-networking.md
@@ -732,15 +744,6 @@
       href: contoso-info-protect.md
     - name: Security summary
       href: contoso-security-summary.md
-
-- name: Microsoft 365 service health status
-  href: microsoft-365-service-health.md
-
-- name: Microsoft 365 compliance
-  href: ../compliance/index.yml
-
-- name: Microsoft 365 security
-  href: ../security/index.yml
 
 - name: Microsoft 365 architecture and solutions
   href: ../solutions/index.yml
