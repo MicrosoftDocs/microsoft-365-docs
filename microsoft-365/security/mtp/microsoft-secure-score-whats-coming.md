@@ -30,6 +30,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
 ### December 2020
+
 Adding 6 accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
 - Set 'Minimum password length' to '14 or more characters'

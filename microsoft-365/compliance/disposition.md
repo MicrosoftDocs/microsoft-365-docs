@@ -130,7 +130,7 @@ Items that are shown in the **Disposed Items** tab for record labels are kept fo
 > [!NOTE]
 > This functionality is based on information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.
 
-For auditing, search for **Deleted file marked as a record**.
+For auditing, search for **Deleted file marked as a record** in the **File and page activities** category. This audit event is applicable to documents and emails.
 
 ## Filter and export the views
 
