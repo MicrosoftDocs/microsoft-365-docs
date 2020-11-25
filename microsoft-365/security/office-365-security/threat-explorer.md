@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 # Threat Explorer and Real-time detections
 
-If your organization has [Microsoft Defender for Office 365](office-365-atp.md) and you have the [necessary permissions](#required-licenses-and-permissions), you have access to *Explorer* or *Real-time detections, which were formerly *Real-time reports*. ([See what's new.](#new-features-in-threat-explorer-and-real-time-detections)) In the Security & Compliance Center, go to **Threat management**, and then select **Explorer** _or_ **Real-time detections**.
+If your organization has [Microsoft Defender for Office 365](office-365-atp.md) and you have the [necessary permissions](#required-licenses-and-permissions), you have access to *Explorer* or *Real-time detections*, which were formerly *Real-time reports*. ([See what's new.](#new-features-in-threat-explorer-and-real-time-detections)) In the Security & Compliance Center, go to **Threat management**, and then select **Explorer** _or_ **Real-time detections**.
 
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
@@ -346,7 +346,7 @@ Follow this path to get to the same location in the Real-time detections report:
 
 Suppose you want to see malware detected in email sorted by Microsoft 365 technology. To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections).
 
-1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), select **Threat management** > **Explorer** or **Real-time detections**. (The following example uses Explorer.)
+1. In the [Security & Compliance Center](https://protection.office.com), select **Threat management** > **Explorer** or **Real-time detections**. (The following example uses Explorer.)
 
 2. From the **View** menu, select **Email** > **Malware**.
 
@@ -373,7 +373,7 @@ Suppose that you want to see phishing attempts through URLs in email, including 
 
 To review phish URLs in messages and clicks on URLs in phish messages, use the [**Email** > **Phish**](threat-explorer-views.md#email--phish) view of Explorer or Real-time detections.
 
-1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), select **Threat management** > **Explorer** or **Real-time detections**. (This example uses Explorer.)
+1. In the [Security & Compliance Center](https://protection.office.com), select **Threat management** > **Explorer** or **Real-time detections**. (This example uses Explorer.)
 
 2. From the **View** menu, select **Email** > **Phish**.
 
@@ -420,7 +420,7 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Report Message add-in for Outlook and Outlook on the web](enable-the-report-message-add-in.md). To see them, use the [**Email** > **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
 
-1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), go to **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the [Security & Compliance Center](https://protection.office.com](https://protection.office.com), go to **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
 2. From the **View** menu, go to **Email** > **Submissions**.
 
@@ -469,7 +469,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
   - Security Administrator, which can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or through PowerShell cmdlets (see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
+- For Exchange Online, you must have one of the following roles assigned in the [Exchange admin center](https://outlook.office365.com/ecp) or through PowerShell cmdlets (see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   - Organization Management
   - View-only Organization Management
