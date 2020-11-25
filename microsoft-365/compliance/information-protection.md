@@ -43,6 +43,9 @@ To understand your data landscape and identify important data across your hybrid
 
 ## Protect your data
 
+> [!NOTE]
+> For information about extending and applying sensitivity labels in Azure Purview, currently in preview, see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+
 To apply flexible protection actions that include encryption, access restrictions, and visual markings, use the following capabilities:
 
 |Capability|What problems does it solve?|Get started|
@@ -58,8 +61,6 @@ To apply flexible protection actions that include encryption, access restriction
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud | [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Extends sensitivity labels to third-party apps and services  <br /><br /> Example scenario: [Set and get a sensitivity label (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK setup and configuration](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
 
-> [!NOTE]
-> For information about extending and applying sensitivity labels in Azure Purview, see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
 ## Prevent data loss
 
