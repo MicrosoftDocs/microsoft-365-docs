@@ -114,7 +114,7 @@ DeviceProcessEvents
 ```
 
 ### Turning off System Restore
-Find attempts to stop System Restore and prevent the system from creating restore points, which can be used to recover data encrypted by ransomware. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
+This query identifies attempts to stop System Restore and prevent the system from creating restore points, which can be used to recover data encrypted by ransomware. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -130,7 +130,7 @@ and ProcessCommandLine has 'disable'
 ```
 
 ### Backup deletion
-Find use of _wmic.exe_ to delete shadow copy snapshots prior to encryption. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
+This query identifies use of _wmic.exe_ to delete shadow copy snapshots prior to encryption. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -141,12 +141,12 @@ ProcessCommandLine, InitiatingProcessIntegrityLevel, InitiatingProcessParentFile
 ```
 
 ## Check for multiple signs of ransomware activity
-Instead of running several queries separately, you can also use a comprehensive query that checks for multiple signs of ransomware activity to identify affected devices. The following advanced hunting query:
+Instead of running several queries separately, you can also use a comprehensive query that checks for multiple signs of ransomware activity to identify affected devices. The following consolidated  query:
 - Looks for both relatively concrete and subtle signs of ransomware activity
 - Weighs the presence of these signs
 - Identifies devices with a higher chance of being targets of ransomware 
 
-When run, the consolidated query returns a list of devices that have exhibited a relatively higher number of signs of attack. The count of each type of ransomware activity is also shown. To run this consolidated query, copy it directly to the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). 
+When run, this consolidated query returns a list of devices that have exhibited multiple signs of attack. The count of each type of ransomware activity is also shown. To run this consolidated query, copy it directly to the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). 
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -221,11 +221,11 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 | where UniqueEvidenceCount > 2
 ```
 ### Understand and tweak the query results
-The query returns the following results:
+The consolidated query returns the following results:
 
-- **DeviceId**—identifies the affected device the 
+- **DeviceId**—identifies the affected device 
 - **TimeStamp**—first time any sign of ransomware activity was observed on the device
-- **Specific signs of activity**—the count for each sign is in an individual column, such as _BcdEdit_ or _FsUtil_
+- **Specific signs of activity**—the count for each sign shown in multiple columns, such as _BcdEdit_ or _FsUtil_
 - **TotalEvidenceCount**—number of observed signs
 - **UniqueEvidenceCount**—number of types of observed signs
 
