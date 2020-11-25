@@ -120,7 +120,7 @@ This scope configuration lets you have sensitivity labels that are just for docu
 
 By default, the **Files & emails** scope is always selected. The other scopes are selected by default when the features are enabled for your tenant:
 
-- **Groups & sites**: [Enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+- **Groups & sites**: [Enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
 - **Azure Purview assets (preview)**: [Automatically label your content in Azure Purview](https://go.microsoft.com/fwlink/?linkid=2148989)
 
