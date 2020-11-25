@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive XIP source data from Globanet to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
 ---
 
-# Set up a connector to archive XIP source data (preview)
+# Set up a connector to archive XIP source data
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from the XIP source platform to user mailboxes in your Microsoft 365 organization. Globanet provides a [XIP](https://globanet.com/xip/) connector that allows using an XIP file to import items to Microsoft 365. An XIP file is similar to a ZIP file, but allows for a digital signature to be used. The digital signature is verified by the Globanet Merge 1 before the XIP source file is extracted. The connector converts the content from the XIP source file to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 

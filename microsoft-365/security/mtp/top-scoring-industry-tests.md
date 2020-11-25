@@ -20,6 +20,8 @@ search.appverid: met150
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+>
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes the results and provides analysis.
 

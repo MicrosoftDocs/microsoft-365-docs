@@ -478,8 +478,6 @@
           items: 
           - name: Configure permissions filtering for content search
             href: permissions-filtering-for-content-search.md
-          - name: Increase the download speed when exporting search results
-            href: increase-download-speeds-when-exporting-ediscovery-results.md
           - name: Change the size of PST files when exporting search results
             href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
@@ -861,7 +859,7 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
   items: 
-    - name: Unified auditing
+    - name: Basic auditing
       items:
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md

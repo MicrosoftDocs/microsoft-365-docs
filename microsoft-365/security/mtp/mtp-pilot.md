@@ -51,7 +51,7 @@ With the integrated Microsoft 365 Defender solution, security professionals can 
 
 The following sample timeline varies depending on having the right resources in your environment. Some detections and workflows might need more learning time than the others.
 
-![Sample timeline in running a Microsoft 365 Defender pilot](../../media/pilotimeline.png)
+![Sample timeline in running a Microsoft 365 Defender pilot](../../media/phase-diagrams/pilot-phases.png)
 
 >[!IMPORTANT]
 >For optimum results, follow the pilot instructions as closely as possible.
@@ -63,11 +63,11 @@ There are four phases in running a Microsoft 365 Defender pilot:
 
 |Phase | Description | 
 |:-------|:-----|
-| ![Planning](../../media/mtp/plan.png)<br>[Planning](mtp-pilot-plan.md)| Learn what you need to consider before running your Microsoft 365 Defender pilot project: <br><br>- Scope <br> - Use cases <br>- Requirements <br>- Test plan <br> - Success criteria <br> - Scorecard 
-| ![Preparation](../../media/mtp/prep.png) <br>[Preparation](mtp-evaluation.md)|  Access Microsoft 365 Security Center to set up your Microsoft 365 Defender pilot  environment. You'll be guided to:<br><br>- Identify stakeholders and seek sign-off for your pilot <br> - Environment considerations <br>- Access <br>- Azure Active Directory setup <br> - Configuration order <br> - Sign up for Microsoft 365 E5 Trial <br> - Configure domain <br>- Assign Microsoft 365 E5 licenses <br> - Complete the setup wizard in the portal|
-| ![Attack simulation](../../media/mtp/run-sim.png) <br>[Attack simulation](mtp-pilot-simulate.md) | To simulate an attack, you'll be guided to:<br><br>- Verify the test environment requirements <br>-  Run the simulation <br>- Investigate an incident <br>- resolve the incident 
-| ![Closing and summary](../../media/mtp/close.png) <br>[Closing and summary](mtp-pilot-close.md) | When you've reached the end of the process, you'll be guided to:<br><br>- Go through your final output<br>- Present your output to your stakeholders <br>- Provide feedback <br>- Take next steps 
+| [Planning](mtp-pilot-plan.md)<br> ~ 1 day| Learn what you need to consider before running your Microsoft 365 Defender pilot project: <br><br>- Scope <br> - Use cases <br>- Requirements <br>- Test plan <br> - Success criteria <br> - Scorecard 
+| [Preparation](mtp-evaluation.md) <br>~2 days|  Access Microsoft 365 Security Center to set up your Microsoft 365 Defender pilot  environment. You'll be guided to:<br><br>- Identify stakeholders and seek sign-off for your pilot <br> - Environment considerations <br>- Access <br>- Azure Active Directory setup <br> - Configuration order <br> - Sign up for Microsoft 365 E5 Trial <br> - Configure domain <br>- Assign Microsoft 365 E5 licenses <br> - Complete the setup wizard in the portal|
+| [Attack simulation](mtp-pilot-simulate.md) <br>~2 days| To simulate an attack, you'll be guided to:<br><br>- Verify the test environment requirements <br>-  Run the simulation <br>- Investigate an incident <br>- resolve the incident 
+| [Closing and summary](mtp-pilot-close.md) <br>~ 1 day| When you've reached the end of the process, you'll be guided to:<br><br>- Go through your final output<br>- Present your output to your stakeholders <br>- Provide feedback <br>- Take next steps 
 
 ## Next step
-|![Planning phase](../../media/mtp/plan.png) <br>[Planning phase](mtp-pilot-plan.md) | Plan your Microsoft 365 Defender pilot project 
+|[Planning phase](mtp-pilot-plan.md) | Plan your Microsoft 365 Defender pilot project 
 |:-------|:-----|
