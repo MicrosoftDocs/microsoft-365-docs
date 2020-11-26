@@ -57,6 +57,9 @@ A data encryption policy defines the encryption hierarchy to encrypt data using 
 
 Later, you can either refresh the DEP or assign a different DEP to the mailbox as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses in order to assign a DEP. For more information about licensing, see [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
 
+Note:
+The DEP can be applied to shared mailbox, public folder mailbox and Microsoft 365 group mailbox for tenants that meet the licensing requirement for user mailboxes, even though some of these mailbox types cannot be a assigned license (Public Folder mailbox and Microsoft 365 Group mailbox) or need license for increasing storage (Shared mailbox).
+
 **SharePoint Online, OneDrive for Business, and Teams files** If you're using the multi-geo feature, you can create up to one DEP per geo for your organization. You can use different Customer Keys for each geo. If you're not using the multi-geo feature, you can only create one DEP per tenant. When you assign the DEP, encryption begins automatically but can take some time to complete. Refer to the details in [Set up Customer Key](customer-key-set-up.md).
 
 ## Leaving the service
