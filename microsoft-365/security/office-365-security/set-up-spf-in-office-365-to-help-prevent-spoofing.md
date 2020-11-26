@@ -100,7 +100,7 @@ It is important to note that you need to create a separate record for each subdo
 An additional wildcard SPF record (`*.`) is required for every domain and subdomain to prevent attackers from sending email claiming to be from non-existent subdomains. For example:
 
 ```text
-*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+*.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
 ## More information about SPF

@@ -91,10 +91,14 @@ Depending on your subscription, here are the available reports.
   
 - [Email apps usage](email-apps-usage.md)
 
-- [Forms activity](forms-activity.md)
+- [Forms activity](forms-activity-ww.md)
 
-- [Forms Pro activity](forms-pro-activity.md)
+- [Forms activity for US Government](forms-activity.md)
+
+- [Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)
   
+- [Dynamics 365 Customer Voice activity for US Government](forms-pro-activity.md)
+
 - [Microsoft 365 groups](office-365-groups.md)
   
 - [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
@@ -125,19 +129,37 @@ Depending on your subscription, here are the available reports.
   
 ::: moniker range="o365-worldwide"
 
-- [Yammer activity](yammer-activity-report.md)
+- [Yammer activity](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer device usage](yammer-device-usage-report.md)
+- [Yammer activity for US Government](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer groups activity report](yammer-groups-activity-report.md)
+- [Yammer device usage](yammer-device-usage-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Yammer device usage for US Government](yammer-device-usage-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Yammer groups activity report](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Yammer groups activity report for US Government](yammer-groups-activity-report.md)
 
 ::: moniker-end
 

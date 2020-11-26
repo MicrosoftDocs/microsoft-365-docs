@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Best practices for unauthenticated sharing"
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Priority
@@ -121,11 +122,9 @@ To create a DLP rule
 13. Choose your test options and click **Next**.
 14. Click **Submit**, and then click **Done**.
 
-limit-accidental-exposure-dlp-anyone-links.png
-
 ## Protect against malicious files
 
-When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In Microsoft 365, you can use the *Safe Attachments* feature in Advanced Threat Protection to automatically scan uploaded files and quarantine files that are found to be unsafe.
+When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In Microsoft 365, you can use the *Safe Attachments* feature in Defender for Office 365 to automatically scan uploaded files and quarantine files that are found to be unsafe.
 
 To turn on safe attachments
 1. Open the [ATP Safe Attachments page](https://protection.office.com/safeattachmentv2) in the Security and Compliance admin center.

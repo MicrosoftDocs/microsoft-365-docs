@@ -34,7 +34,7 @@ To meet the criteria for protecting information for compliance with data privacy
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
 | Compliance Manager | Manage regulatory compliance activities, get an overall score of your current compliance configuration, and find recommendations for improvement in this workflow-based risk assessment tool in the Microsoft 365 compliance center. | Microsoft 365 E3 and E5 |
-| Office Advanced Threat Protection (ATP) | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. | Microsoft 365 E3 and E5 | 
+| Microsoft Defender for Office 365 | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. | Microsoft 365 E3 and E5 | 
 | Sensitivity labels | Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate by placing labels with various levels of protection on email, files, or sites. | Microsoft 365 E3 and E5 |
 | Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 and E5 | 
 | Data retention labels and policies | Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization's policies or data regulations. | Microsoft 365 E3 and E5 |

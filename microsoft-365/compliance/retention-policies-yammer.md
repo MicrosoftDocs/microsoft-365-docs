@@ -80,7 +80,7 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 ## Messages and external users
 
-By default, a retention policy for Yammer private messages apply to all users in your organization, but not external users. You can apply a retention policy to external users if you use the **Choose user** and specify their account. 
+By default, a retention policy for Yammer private messages applies to all users in your organization, but not external users. You can apply a retention policy to external users if you use the **Choose user** and specify their account. 
 
 At this time, Azure B2B guest users are not supported.
 
