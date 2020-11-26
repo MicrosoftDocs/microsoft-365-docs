@@ -114,7 +114,7 @@ We also provide you with information that help you gain visibility into how peop
 2. **Body:** Provides information on the value of using channel messages within Microsoft Teams
 3. **Visualization:** Breaks down the use of chat and channel messages:
       - **People sending chat messages:** The colored portion and the fraction represent the use of chat messages within people who sent messages on Microsoft Teams. The fraction is constructed from:
-        - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days
+        - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.
         - **Denominator:** People sent messages on Microsoft Teams in the last 28 days
       - **People sending Channel messages:** The colored portion and the fraction represent the use of channel messages within people sending messages on Microsoft Teams. The fraction is constructed from:
         - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.
