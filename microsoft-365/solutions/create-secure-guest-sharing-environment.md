@@ -11,6 +11,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Priority

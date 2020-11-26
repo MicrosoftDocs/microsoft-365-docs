@@ -138,6 +138,7 @@ When a particular instance of that event type occurs, such as a product reaches 
 
 ![Create an event to trigger start of retention for event-based retention labels](../media/create-event-records-management.png)
 
+Up to one million events are supported per tenant.
 
 ### Step 6: Choose the same event type used by the label in step 2
 

@@ -23,7 +23,7 @@ In the topic center, a knowledge manager can review topics that have been mined 
 
 ## Requirements
 
-In order to work in the topic center, you need to have the required permissions. Your admin can add you during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md).
+In order to work in the topic center, you need to have the required permissions. Your admin can add you during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md).
 
 Topic center users can be given two sets of permissions:
 
@@ -55,7 +55,7 @@ To review a suggested topic:
 
 ## Review confirmed topics
 
-On the topic center home page, topics that were discovered in your specified SharePoint source locations and have been confirmed by a knowlege manager or crowdsourced confirmed by 2 or more people through the card feedback mechanism will be listed in the **Confirmed** tab. A user with permissions to manage topics can review confirmed topics and choose to reject them.
+On the topic center home page, topics that were discovered in your specified SharePoint source locations and have been confirmed by a knowledge manager or crowdsourced confirmed by 2 or more people through the card feedback mechanism will be listed in the **Confirmed** tab. A user with permissions to manage topics can review confirmed topics and choose to reject them.
 
 
 To review a confirmed topic:
@@ -67,7 +67,7 @@ To review a confirmed topic:
 3. You can reject it too
 
 ## Review published topics
-Published topics have been edited so that speific information will always appear to whoever encountrs the page. Manually created topics show here.
+Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics show here.
 
    
 ## Create a new topic
@@ -96,7 +96,7 @@ To create a new topic:
 
     ![New topic page](../media/content-understanding/k-new-topic-page.png)
     
-3. If you need to add other components to the page, such as text, images, webparts, links, etc., select the canvas icon in the middle of the page to locate and add them.
+3. If you need to add other components to the page, such as text, images, web parts, links, etc., select the canvas icon in the middle of the page to locate and add them.
 
     ![Add items to page](../media/content-understanding/static-icon.png)
 
