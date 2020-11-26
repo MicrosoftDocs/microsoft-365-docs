@@ -229,6 +229,5 @@ Detailed guidance on the use of Content Search for discovery of personal data is
 Additional insights on investigative and remediation techniques for personal data in Microsoft 365 are provided in the [monitor and respond article](information-protection-deploy-monitor-respond.md).
 
 > [!NOTE]
-> To Find what sensitive information you have in files stored on-premises, Please refer to [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo)
-
+> To Find what sensitive information you have in files stored on-premises, please refer to [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo).
 
