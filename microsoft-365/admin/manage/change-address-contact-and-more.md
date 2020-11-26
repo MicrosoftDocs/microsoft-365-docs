@@ -73,7 +73,7 @@ As an admin, you can change your alternate email address for resetting passwords
 
 3. On the left, select **Security info**.
 
-4. In the Eamail section, Click on **Change**
+4. In the Email section, select **Change**
 
 5. Edit the address in the **Alternate email** box, then select **Next**.
 
