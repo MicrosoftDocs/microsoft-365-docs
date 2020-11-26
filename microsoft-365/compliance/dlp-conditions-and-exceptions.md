@@ -43,6 +43,7 @@ The tables in the following sections describe the conditions and exceptions that
 |Sender address contains words   | condition: *FromAddressContainsWords* <br/> exception: *ExceptIfFromAddressContainsWords*        |   Words      |   Messages that contain the specified words in the sender's email address.|
 | Sender address matches patterns    | condition: *FromAddressMatchesPatterns* <br/> exception: *ExceptFromAddressMatchesPatterns*       |      Patterns   |  Messages where the sender's email address contains text patterns that match the specified regular expressions.  |
 |Sender domain is  |  condition: *SenderDomainIs* <br/> exception: *ExceptIfSenderDomainIs*       |DomainName         |     Messages where the domain of the sender's email address matches the specified value. If you need to find sender domains that *contain* the specified domain (for example, any subdomain of a domain), use **The sender address matches**(*FromAddressMatchesPatterns*) condition and specify the domain by using the syntax: '\.domain\.com$'.    |
+|Sender scope    | condition: *FromScope* <br/> exception: *ExceptIfFromScope*    | UserScopeFrom    |    Messages that are sent by either internal or external senders.    |
 
 ## Recipients
 
@@ -61,13 +62,15 @@ The tables in the following sections describe the conditions and exceptions that
 |Subject contains words or phrases|	condition: *SubjectContainsWords* <br/> exception: *ExceptIf SubjectContainsWords*|	Words	|Messages that have the specified words in the Subject field.|
 |Subject matches patterns|condition: *SubjectMatchesPatterns* <br/> exception: *ExceptIf SubjectMatchesPatterns*|Patterns	|Messages where the Subject field contain text patterns that match the specified regular expressions.|
 |Content contains|	condition: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|	SensitiveInformationTypes|	Messages or documents that contain sensitive information as defined by data loss prevention (DLP) policies.|
+| Subject or Body matches pattern    | condition: *SubjectOrBodyMatchesPatterns* <br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*    | Patterns    | Messages where the subject field or message body contains text patterns that match the specified regular expressions.    |
+| Subject or Body contains words    | condition: *SubjectOrBodyContainsWords* <br/> exception: *ExceptIfSubjectOrBodyContainsWords*    | Words    | Messages that have the specified words in the subject field or message body    |
 
 
 ## Attachments
 
 |**condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	**property type**	|**description**|
 |---------|---------|---------|---------|
-|Attachment is password protected|condition: *DocumentIsPasswordProtected* <br/> exception: *ExceptIfDocumentIsPasswordProtected*|none| Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents and .zip files.|
+|Attachment is password protected|condition: *DocumentIsPasswordProtected* <br/> exception: *ExceptIfDocumentIsPasswordProtected*|none| Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents, .zip files, and .7z files.|
 |Attachment’s file extension is|condition: *ContentExtensionMatchesWords* <br/> exception: *ExceptIfContentExtensionMatchesWords*|	Words	|Messages where an attachment's file extension matches any of the specified words.|
 |Any email attachment’s content could not be scanned|condition: *DocumentIsUnsupported* <br/>exception: *ExceptIf DocumentIsUnsupported*|	n/a|	Messages where an attachment isn't natively recognized by Exchange Online.|
 |Any email attachment’s content didn’t complete scanning|	condition: *ProcessingLimitExceeded* <br/> exception: *ExceptIfProcessingLimitExceeded*|	n/a	|Messages where the rules engine couldn't complete the scanning of the attachments. You can use this condition to create rules that work together to identify and process messages where the content couldn't be fully scanned.|
@@ -88,4 +91,8 @@ The tables in the following sections describe the conditions and exceptions that
 |**condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	**property type**	|**description**|
 |---------|---------|---------|---------|
 |Message size over|condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver*|	Size	|Messages where the total size (message plus attachments) is greater than or equal to the specified value. <br/>**Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
+| With importance    | condition: *WithImportance* <br/> exception: *ExceptIfWithImportance*    | Importance    | Messages that are marked with the specified importance level.    |
+| Content character set contains words    | condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Messages that have any of the specified character set names.    |
+| Has sender override    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/a    | Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).   |
+| Message type matches    | condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*    | MessageType    | Messages of the specified type.    |
 
