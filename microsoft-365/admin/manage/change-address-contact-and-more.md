@@ -77,7 +77,7 @@ As an admin, you can change your alternate email address for resetting passwords
 
 5. Edit the address in the **Alternate email** box, then select **Next**.
 
-6. Enter the Code  sent to the Alternate email and Click on **OK** to verify the change.
+6. Enter the code sent to the alternate email address and select **OK** to verify the change.
 To learn about changing other profile information, see [Change your contact preferences](change-contact-preferences.md) or [Change your display language](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
   
 ### Email signatures
