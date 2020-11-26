@@ -227,3 +227,8 @@ In addition to the Content Explorer, organizations have access to the Content Se
 Detailed guidance on the use of Content Search for discovery of personal data is provided in [this article](../compliance/search-for-and-find-personal-data.md). Content Search and other discovery techniques are also explored in [DSRs for the GDPR and CCPA](../compliance/gdpr-dsr-office365.md#introduction-to-dsrs).
 
 Additional insights on investigative and remediation techniques for personal data in Microsoft 365 are provided in the [monitor and respond article](information-protection-deploy-monitor-respond.md).
+
+> [!NOTE]
+> To Find what sensitive information you have in files stored on-premises, Please refer to [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo)
+
+
