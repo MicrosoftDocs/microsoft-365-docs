@@ -210,8 +210,8 @@ This table consists of month over month summary data about the usage or activity
 |DocumentCount  <br/> |Total number of documents that existed on the site at the end of the timeframe.  <br/> |
 |Diplansed  <br/> |Total storage used summed across all sites at the end of the timeframe.  <br/> |
 |ActivityType  <br/> |Number of sites that recorded the various types of file activity (any/active files/ files shared EXT/INT/files synched).  <br/> Represents any of the file activity that was performed.  <br/> |
-|SitesWithOwnerActivities  <br/> |Number of active sites, where the site owner performed a particular file activity on their own sites.  <br/> |
-|SitesWithNonOwnerActivities  <br/> |Number of active sites summed up for the month, where the users other than the site owner performed a particular file activity on sites.  <br/> |
+|SitesWithOwnerActivities  <br/> |Number of active sites, where the site owner performed a particular file activity on their own sites. You can get Site Owner from powershell command **get-sposite**. This is the person who is repsonsible for the site.   <br/> |
+|SitesWithNonOwnerActivities  <br/> |Number of active sites summed up for the month, where the users other than the site owner performed a particular file activity on sites. You can get Site Owner from powershell command **get-sposite**. This is the person who is repsonsible for the site. <br/> |
 |ActivityTotalSites  <br/> |Number of sites that recorded any activity during the timeframe. If a site that had activity earlier in the timeframe, and was deleted by the end of the timeframe, it would still be counted in the active site total for that timeframe.  <br/> |
 |Timeframe  <br/> |This column has the date value. Used as Many to one relationship for Calendar table.  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
