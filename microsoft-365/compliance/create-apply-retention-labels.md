@@ -196,7 +196,7 @@ After the retention label is applied, you can view that retention label and what
   
 ![Label assigned to email in Outlook on the web](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
-As with Outlook on the web, you can also apply retention labels to folders. 
+As with the desktop version of Outlook, you can also apply retention labels to folders. 
 
 #### Applying retention labels in OneDrive and SharePoint
 
