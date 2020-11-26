@@ -105,7 +105,7 @@ The tables in the following sections describe the conditions and exceptions that
 
 ## Actions for DLP policies
 
-This table describes the Exchange Online mail flow rule actions that are available in DLP.
+This table describes the actions that are available in DLP.
 
 
 |**action in DLP**|**action parameters in Microsoft 365 PowerShell**|**property type**|**description**|
@@ -116,5 +116,10 @@ This table describes the Exchange Online mail flow rule actions that are availab
 |Forward the message for approval to sender’s manager| Moderate|First property: *ModerateMessageByManager*</br> Second property: *Boolean*|The Moderate parameter specifies an action for the DLP rule that sends the email message to a moderator. This parameter uses the syntax: @{ModerateMessageByManager = <$true \| $false>;|
 |Forward the message for approval to specific approvers| Moderate|First property: *ModerateMessageByUser*</br>Second property: *Addresses*|The Moderate parameter specifies an action for the DLP rule that sends the email message to a moderator. This parameter uses the syntax: @{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")}|
 |Add recipient|AddRecipients|First property: *Field*</br>Second property: *Addresses*| Adds one or more recipients to the To/Cc/Bcc field of the message. This parameter uses the syntax: @{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
-|Add the sender’s manager as recipient|AddRecipients | First property: *AddedManagerAction*</br>Second property: *Field* | Adds the sender's manager to the message as the specified recipient type ( To, Cc, Bcc ), or redirects the message to the sender's manager without notifying the sender or the recipient. This action only works if the sender's Manager attribute is defined in Active Directory. This parameter uses the syntax: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|
+|Add the sender’s manager as recipient|AddRecipients | First property: *AddedManagerAction*</br>Second property: *Field* | Adds the sender's manager to the message as the specified recipient type ( To, Cc, Bcc ), or redirects the message to the sender's manager without notifying the sender or the recipient. This action only works if the sender's Manager attribute is defined in Active Directory. This parameter uses the syntax: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
+Prepend subject    |PrependSubject    |String    |Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.</br>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.    |
+Apply HTML disclaimer    |ApplyHtmlDisclaimer    |First property: *Text*</br>Second property: *Location*</br>Third property: *Fallback action*    |Applies the specified HTML disclaimer to the required location of the message.</br>This parameter uses the syntax: @{ Text = “ ” ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }
+
+
+
 
