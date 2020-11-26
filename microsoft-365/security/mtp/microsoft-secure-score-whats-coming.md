@@ -23,11 +23,14 @@ search.appverid:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
+Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
 ## Proposed changes
 
+We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
+
 ### December 2020
+
 Adding 6 accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
 - Set 'Minimum password length' to '14 or more characters'
@@ -39,10 +42,11 @@ Adding 6 accounts-related improvement actions for Microsoft Defender for Endpoin
 
 ### November 2020
 
-Removing the ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow**.
+#### Removing the ability to create ServiceNow tickets through Secure Score 
 
-- The preview period for the ServiceNow connector is ending. This capability will no longer be available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
+The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** will be removed.
 
+The preview period for the ServiceNow connector is ending. This capability will no longer be available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
 
 ## Related resources
 

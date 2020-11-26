@@ -31,8 +31,6 @@ For example, you can create a form processing model that identifies all purchase
 
 You use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model. You only need five form documents to get started. AI Builder will analyze your example files for key-value pairs, and you can also manually identify ones that may not have been detected.  AI builder lets you test the accuracy of your model on your example files.
 
-You need a minimum of five form documents to get started. AI building analyzes your example files for key-value pairs, and then manually identifies the ones that may not have been detected.  AI builder lets you test the accuracy of your model on your example files.
-
 After you train and publish your model, your model creates a [Power Automate Flow](https://docs.microsoft.com/power-automate/getting-started). The flow runs when a file is uploaded to the SharePoint document library and will extract data that has been identified in the model. The extracted data will display in columns in your model's document library view.
 
 An Office 365 admin needs to [enable Form processing](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding) for the SharePoint document library for users to be able to [create a form processing model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
