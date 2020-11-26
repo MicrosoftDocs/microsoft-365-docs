@@ -198,6 +198,8 @@ Depending on your subscription, here are the available reports.
 Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
   
 You can't generate a report where you enter a user's account and then get a list which services they are using and how much.
+
+There are circumstances where new users show up as **unknown**. This is usually due to occasional delays in creating user profiles.  
   
 ## Hide user details in the reports
 
