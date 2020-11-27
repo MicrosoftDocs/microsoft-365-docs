@@ -178,7 +178,7 @@ After the retention label is applied, you can view that retention label and what
 
 ##### Applying a default retention label to an Outlook folder
 
-You can apply retention labels to Outlook folders as a default label that can be inherited by messages in that folder. When you do this with a standard retention label (it doesn't mark items as a [record or regulatory record](records-management.md#records)):
+You can apply retention labels to Outlook folders as a default label that can be inherited by messages in that folder. When you do this with a standard retention label:
   
 - All unlabeled items in the folder have this retention label applied.
 
