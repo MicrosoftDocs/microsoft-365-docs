@@ -99,7 +99,7 @@ Microsoft 365 users can read and respond from Outlook for Windows and Mac (2013 
   
 ## Is there a size limit for messages you can send with OME?
 
-Yes. The maximum message size you can send with OME(for subscribers using Office 365 Message Encryption with new capabilities), including attachments, is 150 MB.
+Yes. The maximum message size you can send with OME (for subscribers using Office 365 Message Encryption with new capabilities), including attachments, is 150 MB.
 
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
