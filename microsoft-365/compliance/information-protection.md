@@ -41,9 +41,9 @@ To understand your data landscape and identify important data across your hybrid
 
 |Capability|What problems does it solve?|Get started|Licensing|
 |:------|:------------|:--------------------|:-----------------------------|:--------------------|
-|[Sensitive information types](sensitive-information-type-entity-definitions.md)| Identifies sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
-|[Trainable classifiers (preview)](classifier-learn-about.md)| Classifies data for you, using one of the built-in classifiers or train a classifier with your own content | [Get started with trainable classifiers (preview)](classifier-get-started-with.md) |
-|[Data classification](data-classification-overview.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization and the actions that your users are taking on them  | [Get started with content explorer](data-classification-content-explorer.md)<br /><br /> [Get started with activity explorer](data-classification-activity-explorer.md) |
+|[Sensitive information types](sensitive-information-type-entity-definitions.md)| Identifies sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity. Use sensitive information types to identify specific types of data in your organization. Use the out-of-the-box sensitive information types to find standard types of data, such as passport numbers. Create a custom information type to identify information that is unique to your environment, such as part numbers. | [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|:--------------------|
+|[Trainable classifiers (preview)](classifier-learn-about.md)| Classifies data for you, using one of the built-in classifiers or train a classifier with your own content | [Get started with trainable classifiers (preview)](classifier-get-started-with.md)|:--------------------|
+|[Data classification](data-classification-overview.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization and the actions that your users are taking on them  | [Get started with content explorer](data-classification-content-explorer.md)<br /><br /> [Get started with activity explorer](data-classification-activity-explorer.md)|:--------------------|
 
 ## Protect your data
 
@@ -52,7 +52,7 @@ To apply flexible protection actions that include encryption, access restriction
 :::image type="content" source="../media/protectyourdata-4638524.PNG" alt-text="Protect your data":::
 
 |Capability|What problems does it solve?|Get started|Licensing|
-|:------|:------------|---------------------|:----------------------------|---------------------|
+|:------|:------------|:---------------------|:----------------------------|:---------------------|
 |[Sensitivity labels](sensitivity-labels.md)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization <br /><br />Example scenario: [Apply and view sensitivity labels in Power BI, and protect data when it is exported](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[ Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| For Windows computers, extends sensitivity labels for additional features and functionality that includes labeling and protecting all file types from File Explorer and PowerShell<br /><br /> Example additional features: [Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection unified labeling client administrator guide](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Double Key Encryption](double-key-encryption.md)| Under all circumstances, only you can ever decrypt protected content, or for regulatory requirements you must hold encryption keys within a geographical boundary | [Deploy Double Key Encryption](double-key-encryption.md#deploy-dke)|
@@ -63,7 +63,7 @@ To apply flexible protection actions that include encryption, access restriction
 |[Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Discovers, labels, and protects sensitive information that resides in data stores that are on premises | [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud | [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Extends sensitivity labels to third-party apps and services  <br /><br /> Example scenario: [Set and get a sensitivity label (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK setup and configuration](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
-
+|[Activity Explorer]()|
 ## Transition from AIP to MIP
 The classic Azure Information Protection admin experience and client are being deprecated early next year. It is recommended to move to Microsoft Information Protection.This entails migrating all your existing labels and policies over. 
 
@@ -88,8 +88,6 @@ To help prevent accidental oversharing of sensitive information, use the followi
 Step 1 - Review and meet prerequisites
 
 
-
-|Capability|What problems does it solve?|Get started|
+|Step|Description|More information|
 |:------|:------------|:---------------------|:-----------------------------|
-|[Data loss prevention (DLP)](data-loss-prevention-policies.md)| Helps prevent unintentional sharing of sensitive items <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
-|[Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)|
+|[Design DLP policies](data-loss-prevention-policies.md)| Plan for the mode of identifying info(sensitive info type, label, other) <br /><br /> Plan where the policies will target(services, client, 3rd party apps.) <br /><br /> Plan policy tips, other | 
