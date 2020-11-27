@@ -64,7 +64,7 @@ Where you create and configure your retention labels depend on whether you're us
 
 2. Follow the prompts in the wizard. If you are using records management:
     
-    - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
+    - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md).
     
     - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
@@ -90,7 +90,7 @@ Publish retention labels so that they can be applied by users in apps, such as S
 
 2. Follow the prompts in the wizard.
     
-    For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section. 
+    For information about the locations supported by retention labels, see [Retention labels and locations](retention.md#retention-label-policies-and-locations). 
 
 To edit an existing retention label policy (the policy type is **Publish**), select it, and then select the **Edit** option to start the Edit retention policy. This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
@@ -106,7 +106,7 @@ For example:
 ![Diagram of when manual labels take effect](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
+If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy), a PowerShell command, to retry the policy distribution:
 
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
@@ -186,7 +186,9 @@ You can apply retention labels to Outlook folders as a default label that's inhe
 
 - Items that are already labeled retain their retention label, unless it was applied by a different default label.
 
-- If you change or remove the default retention label for the folder, existing retention labels applied to items in that folder are changed or removed only if those labels were applied by a default label.
+- If you change the default retention label for the folder, existing retention labels applied to items in that folder are changed or removed only if those labels were applied by a default label.
+
+- If you remove the default retention label for the folder, items retain their labels.
 
 - If you move an item with a default retention label from one folder to another folder with a different default retention label, the item gets the new default retention label.
 
@@ -253,7 +255,9 @@ For standard retention labels that you apply as a default retention label to a l
 
 - Items that are already labeled retain their retention label, unless it was applied by a different default label.
     
-- If you change or remove the default retention label for the container, existing retention labels applied to items in that container are changed or removed only if those labels were applied by a default label.
+- If you change the default retention label for the container, existing retention labels applied to items in that container are changed only if those labels were applied by a default label.
+
+- If you remove the default retention label for the container, items retain their labels.
     
 - If you move an item with a default retention label applied from one container to another container, the item keeps its existing default retention label, even if the new location has a different default retention label. Only if you then change the default label for this new location will the moved item inherit the default label from its current location.
 
@@ -281,7 +285,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ## Locking the policy to prevent changes
 
-If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
+If you need to ensure that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Next steps
 

@@ -144,6 +144,8 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: Hunt across devices, emails, apps, and identities
                       href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: Hunt for ransomware
+                      href: mtp/advanced-hunting-find-ransomware.md
                     - name: Transition from Defender for Endpoint 
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Work with query results
