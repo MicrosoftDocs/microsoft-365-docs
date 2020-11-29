@@ -152,6 +152,8 @@ Use the following sections to learn how published retention labels can be applie
 
 In addition, when you use [SharePoint Syntex](../contentunderstanding/index.md) and publish retention labels to SharePoint locations, you can [apply a retention label to a document understanding model](../contentunderstanding/apply-a-retention-label-to-a-model.md) so that identified documents are automatically labeled.
 
+After content is labeled, see the following information to understand when the applied label can be removed or changed: [Only one retention label at a time](retention.md#only-one-retention-label-at-a-time).
+
 ### Manually apply retention labels 
 
 End users, as well as administrators, can manually apply retention labels from the following locations:  
