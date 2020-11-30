@@ -17,7 +17,7 @@ For the smoothest possible experience when you enroll in Microsoft Managed Deskt
 
 The tool checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization (tenant). After 12 months, we retain it in de-identified form.  You can choose to delete the data we collect.
 
-Anyone with at least the Intune Administrator role will be able to run this tool, but two of the checks ([Certificate connectors](readiness-assessment-fix.md#certificate-connectors) and [Multi-factor authentication](readiness-assessment-fix.md#multi-factor-authentication) require additional permissions.
+Anyone with at least the Intune Administrator role will be able to run this tool, but two of the checks ([Certificate connectors](readiness-assessment-fix.md#certificate-connectors) and [Multifactor authentication](readiness-assessment-fix.md#multifactor-authentication) require additional permissions.
  
 The assessment tool checks these items:
 
@@ -34,7 +34,7 @@ The assessment tool checks these items:
 |Enrollment Status Page     | Confirms that Enrollment Status Page is not enabled      |
 |Intune enrollment     | Verifies that Windows 10 devices in your Azure AD organization are automatically enrolled in Intune         |
 |Microsoft Store for Business     | Confirms that Microsoft Store for Business is enabled and synced with Intune        |
-|Multi-factor authentication | Verifies that multi-factor authentication isn't applied to Microsoft Managed Desktop service accounts.
+|Multifactor authentication | Verifies that multifactor authentication isn't applied to Microsoft Managed Desktop service accounts.
 |PowerShell scripts     | Checks that Windows PowerShell scripts are *not* assigned in a way that would target Microsoft Managed Desktop devices    |
 |Region     | Checks that your region is supported by Microsoft Managed Desktop        |
 |Security baselines     | Checks that the security baseline profile doesn't target all users or all devices (Security baseline policies should *not* target any Microsoft Managed Desktop devices.)       |
@@ -50,7 +50,7 @@ The assessment tool checks these items:
 |"Ad hoc" subscriptions for Enterprise State Roaming     | Advises how to check a setting that (if set to "false") might prevent Enterprise State Roaming from working correctly  |
 |Enterprise State Roaming     | Advises how to check that Enterprise State Roaming is enabled       |
 |Licenses     | Checks that you have obtained the necessary [licenses](prerequisites.md#more-about-licenses)         |
-|Multi-factor authentication     | Checks that multi-factor authentication is not applied to all users (Multi-factor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.)|
+|Multifactor authentication     | Checks that multifactor authentication is not applied to all users (Multifactor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.)|
 |Security account names   | Checks that no user names conflict with ones that Microsoft Managed Desktop reserves for its own use        |
 |Security administrator roles     | Confirms that users with Security Reader, Security Operator, or Global Reader roles have been assigned those roles in Microsoft Defender for Endpoint         |
 |Security defaults | Checks whether your Azure AD organization has security defaults enabled in Azure Active Directory |
