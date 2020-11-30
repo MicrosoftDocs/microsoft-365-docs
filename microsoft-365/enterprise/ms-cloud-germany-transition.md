@@ -54,7 +54,7 @@ The following services will be migrated as part of the Microsoft-driven approach
 
 \*\*\*Prerequisites and impact of migration for these services are described in the [Dynamics 365 Customer engagement](https://aka.ms/d365ceoptin) article.
 
-Office 365 Video is being retired on March 1, 2021. If you choose to migrate your Office 365 tenant to the new German datacenter regions, Office 365 Video will not be supported after the SharePoint Online migration is completed. Click [here](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline) to learn more.
+Office 365 Video is being retired on March 1, 2021. If you choose to migrate your Office 365 tenant to the new German datacenter regions, Office 365 Video will not be supported after the SharePoint Online migration is completed. For more information, see [Microsoft Cloud Deutschland timeline](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
 
 ## How is the migration organized?
 
@@ -182,7 +182,7 @@ There are currently 29 services available as part of Office 365 services in the 
 
 If you are an Azure customer only, you can begin [migrating](https://docs.microsoft.com/azure/germany/germany-migration-main) your Azure resources to another region today. 
 
-If you have Azure with Office 365, Dynamics 365, or Power BI, you must follow the migration process to ensure successful migation AzureAD before you begin the self-directed Azure migration. You must complete the Azure migration before the service closure in order to maintain your Azure workloads with your AzureAD, and Office 365 organization.
+If you have Azure with Office 365, Dynamics 365, or Power BI, you must follow the migration process to ensure successful migration AzureAD before you begin the self-directed Azure migration. You must complete the Azure migration before the service closure in order to maintain your Azure workloads with your AzureAD, and Office 365 organization.
 
 **Office 365**
 
