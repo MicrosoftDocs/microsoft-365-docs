@@ -80,7 +80,7 @@ The affected devices will have the "Device state" with value of "Unknown". If th
 Only for devices that show that the device is joined (by virtue of deviceId, thumbprint, and so on) and whose "Device state" value is "Unknown", admins should run the following command in the context of a domain user signing in on such a down-level device:
 
 ```console
-%programfiles%\Microsoft Workplace Join\autoworkplace /leave
+"%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
 ```
 
 The preceding command only needs to be run once per domain user signing in on the Windows down-level device. This command should be run in the context of the domain user signing in. 
@@ -94,7 +94,7 @@ Sufficient care must be taken to not run this command when the user subsequently
 To determine whether the Windows 10 device was previously joined to Azure AD, run the following command on the device:
 
 ```console
-%SystemRoot%\system32\dsregcmd.exe /status"
+%SystemRoot%\system32\dsregcmd.exe /status
 ```
 
 If the device is hybrid Azure AD–joined, the admin would see the following output:
@@ -190,12 +190,14 @@ To remove the existing Azure AD Register/Add Work Account /Workplace Join accoun
 
 - By using a mechanism like Group Policy, the admin can run the command on the device in the context of any user who is signed in on the device.
 
-To disable Web Account Manager prompts to register the device in Azure AD, add this registry key: 
+To disable Web Account Manager prompts to register the device in Azure AD, add this registry value: 
 
-```console
-HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin, "BlockAADWorkplaceJoin"=dword:1
-``` 
-The presence of this registry key should block workplace join and prevent users from seeing prompts to join the device.
+- Location: HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin
+- Type: DWORD (32 bit)
+- Name: BlockAADWorkplaceJoin
+- Value data: 1
+
+The presence of this registry value should block workplace join and prevent users from seeing prompts to join the device.
 
 ## Android
 
