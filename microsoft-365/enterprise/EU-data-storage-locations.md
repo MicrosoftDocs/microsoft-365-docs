@@ -61,6 +61,8 @@ We have datacenter geos in Germany and France that allow you to store data in yo
 >If you have an Office 365 Education subscription with a billing address in France or Germany, your data may be stored in our regional European Union datacenters. 
 >
 
+For the locations of tenant data outside of the EU, see [Where your Microsoft 365 customer data is stored](o365-data-locations.md).
+
 ### Where EU data is computed
 
 When you initiate the use of any of the above services, the computations needed to provide the service for your data stored in one of our regional European datacenters (or in your country) will take place within that same geographic boundary unless a temporary data transfer is needed to perform the computation in a Microsoft datacenter located further away. 
