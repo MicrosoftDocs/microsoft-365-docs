@@ -30,10 +30,10 @@ The **Priority account protection** feature that's described in this topic is av
 
 - Microsoft Defender for Office 365 Plan 2, including those with Office 365 E3, Office 365 E5, Microsoft 365 E5, or Microsoft 365 E5 Security.
 
-The **Premium Mail Flow Monitoring** feature that's described in this topic is available only to organizations that meet both of the following requirements:
+The **Premium Mail Flow Monitoring** feature that's described in this topic is available only to organizations that meet the following requirements:
 
-- Office 365 E3, Microsoft 365 E3, Office 365 E5, or Microsoft 365 E5; and
-- At least 10,000 licenses and at least 50 monthly active Exchange Online users.
+- Your organization needs to have a license count of at least 10,000, from either one of, or a combination of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. For example, your organization can have 3000 Office 365 E3 licenses and 8500 Microsoft 365 E5, for a total of 11,500 licenses from the qualifying products.
+- Your organization needs to have at least 50 monthly active Exchange Online users.
 
 > [!NOTE]
 > You can monitor up to 250 priority accounts.
