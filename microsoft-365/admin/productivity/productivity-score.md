@@ -134,7 +134,7 @@ This report helps business leaders understand:
 [Learn more about Microsoft Graph](https://docs.microsoft.com/graph/)
 
 > [!NOTE]
-> User's also have option to vieww productivity insights from [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2)
+> Users also have the option to get productivity insights from the [MyAnalytics dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
 
 
 ## We want to hear from you
