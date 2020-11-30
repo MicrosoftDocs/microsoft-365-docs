@@ -195,22 +195,21 @@ To disable Web Account Manager prompts to register the device in Azure AD, add t
 ```console
 HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin, "BlockAADWorkplaceJoin"=dword:1
 ``` 
-
 The presence of this registry key should block workplace join and prevent users from seeing prompts to join the device.
 
 ## Android
 
-For Android, users will need to unregister and re-register their devices. This can be done via the Authenticator app or the Company Portal app. 
+For Android, users will need to unregister and re-register their devices. This can be done via the Microsoft Authenticator app or the Company Portal app. 
 
-- From the Authenticator app, users can go to **Settings > Device Registration**. From there users can unregister and re-register their device.
+- From the Microsoft Authenticator app, users can go to **Settings > Device Registration**. From there users can unregister and re-register their device.
  
 - From the Company Portal, users can go to **Devices** tab and remove the device. After that, re-enroll the device by using Company Portal.
  
 - Users can also unregister and re-register by removing the account from the account settings page and then re-adding the work account.
 
-To unregister and re-register the device on Android by using the Authenticator app:
+To unregister and re-register the device on Android by using the Microsoft Authenticator app:
 
-1.	Open the Authenticator app and go to **Settings**.
+1.	Open the Microsoft Authenticator app and go to **Settings**.
 2.	Select **Device registration**.
 3.	Unregister the device by selecting **Unregister**.
 4.	For **Device registration**, re-register the device by typing your email address, and then select **Register**.
@@ -233,16 +232,16 @@ For more information about any actions required during the migration phase of th
 
 ## iOS
 
-On iOS devices, a user will need to manually remove any cached accounts from the Authenticator, unregister the device, and sign out from any native apps on the device.
+On iOS devices, a user will need to manually remove any cached accounts from the Microsoft Authenticator, unregister the device, and sign out from any native apps on the device.
 
-### Step 1: If present, remove the account from the Authenticator app
+### Step 1: If present, remove the account from the Microsoft Authenticator app
 
-1. Tap the account in the Authenticator app.
-2. Tap the **Settings** icon in the top-right corner. If you don't see the **Settings** icon, you might not be using the latest version of Authenticator.
+1. Tap the account in the Microsoft Authenticator app.
+2. Tap the **Settings** icon in the top-right corner. If you don't see the **Settings** icon, you might not be using the latest version of Microsoft Authenticator.
 3. Tap the **Remove account** button.
 4. Tap **All apps on this device**.
  
-### Step 2: Unregister the device from the Authenticator app
+### Step 2: Unregister the device from the Microsoft Authenticator app
 
 1. Tap the menu icon in the top-right corner.
 2. Tap **Settings** and then **Device Registration**.
