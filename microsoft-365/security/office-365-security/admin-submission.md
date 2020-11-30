@@ -58,6 +58,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
    - **Network Message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message.
 
    - **File**: Click **Choose file**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
+   
+> [!NOTE]
+> Admins with Defender for Office 365 Plan 1 or 2 are able to submit messages as old as 30 days. Non-Defender for Office 365 customers will only be able to go back 7 days.
 
 2. In the **Recipients** section, specify one or more recipients that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
