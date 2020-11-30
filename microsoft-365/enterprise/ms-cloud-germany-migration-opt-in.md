@@ -57,10 +57,28 @@ The Online Services Terms have changed to include terms that will enable Microso
 
 Customer and partner tenant administrators are encouraged to opt-in for migration in Admin Center so the migration process can begin as soon as possible.
 
+
+## Next step
+
+[Understand the customer experience during the migration](ms-cloud-germany-transition-experience.md)
+
 ## More information
 
-- [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
+Getting started:
+
+- [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition.md)
 - [Office 365 migration program for Microsoft Cloud Deutschland customers](https://aka.ms/office365germanymove)
-- [Dynamics 365 migration program for Microsoft Cloud Deutschland customers](https://aka.ms/d365ceoptin)
-- [Power BI migration program for Microsoft Cloud Deutschland customers](https://aka.ms/pbioptin)
-- Submit questions using the “Need Help?” link of the [Microsoft 365 admin center](https://portal.office.de/)
+- [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
+- [Customer experience during the migration](ms-cloud-germany-transition-experience.md)
+
+Moving through the transition:
+
+- [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
+- [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
+- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), and [experiences](ms-cloud-germany-transition-add-experience.md).
+
+Specific service information:
+
+- [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
+- [Power BI migration program information](https://aka.ms/pbioptin)
+- [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)

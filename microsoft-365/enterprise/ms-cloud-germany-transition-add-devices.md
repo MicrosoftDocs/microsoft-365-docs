@@ -46,9 +46,15 @@ For all other devices, including personal Windows devices that are registered in
 
 Microsoft will publish instructions for how to successfully restore device state. 
  
-**How do I know that all my devices are registered in public cloud?**
+**How do I know that all my devices are registered in the public cloud?**
 
 To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after the [Separate from Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) migration phase.
+
+Device registration is deactivated after migration of the tenant and cannot be enabled or disabled. If Intune is not used, sign in to your subscription and run this command to re-activate the option:
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ## Windows Hybrid Azure AD join
 

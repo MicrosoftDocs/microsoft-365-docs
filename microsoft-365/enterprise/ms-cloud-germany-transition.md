@@ -64,7 +64,10 @@ This figure represents the various components of Office 365 and Dynamics 365 in 
 
 Migration is executed in phases that all start when you [opt-in for migration](https://aka.ms/office365germanymoveoptin). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
 
-Migration does not immediately begin when opt-in occurs. Your organization is added to the list of tenants that are scheduled for later migration. You can begin the pre-work phases now as these are critical to ensure successful migration and usage upon completion.
+Migration does not immediately begin when opt-in occurs. Your organization is added to the list of tenants that are scheduled for later migration. You can begin the pre-work phases now as these are critical to ensure successful migration and usage upon completion:
+
+- [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
+- [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
 
 One week prior to the start of the tenant migration, you will receive notice in the Message center service as a final warning that all prerequisites must be complete.
 
@@ -265,13 +268,27 @@ If you have questions, you can contact us or your partner:
 - For Office 365, you may submit questions using the &quot;Need Help?&quot; link of the [Microsoft 365 admin center](https://portal.office.de/).
 - If you are Dynamics 365 Customer Engagement and Power BI customer and also have Office 365, you may submit questions using the &quot;Need Help?&quot; link of the [Microsoft 365 admin center](https://portal.office.de/). Dynamics 365 Customer Engagement support options are located [here](https://docs.microsoft.com/dynamics365/get-started/support/). Power BI support options are located [here](https://powerbi.microsoft.com/support/).
 
+
+## Next step
+
+[How to opt-in for migration](ms-cloud-germany-migration-opt-in.md).
+
 ## More information
 
-Additonal information about migrating to the new German datacenter regions is coming. Bookmark this page so that you can check in and keep current.
+Getting started:
 
+- [Office 365 migration program for Microsoft Cloud Deutschland customers](https://aka.ms/office365germanymove)
 - [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
-- [How to opt-in for migration](https://aka.ms/office365germanymoveoptin)
+- [Customer experience during the migration](ms-cloud-germany-transition-experience.md)
+
+Moving through the transition:
+
+- [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
+- [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
+- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), and [experiences](ms-cloud-germany-transition-add-experience.md).
+
+Specific service information:
+
 - [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
 - [Power BI migration program information](https://aka.ms/pbioptin)
-- [Office 365 URLs and IP address ranges](https://aka.ms/o365endpoints)
 - [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)
