@@ -30,13 +30,13 @@ Administrators should check `https://portal.microsoftazure.de` to determine if t
 
 **What is the impact on my users?**
 
-Users from a registered device will no longer be able to sign in after your migration enters the stage "Finalize Azure AD."  
+Users from a registered device will no longer be able to sign in after your migration enters the the [Finalize Azure AD](ms-cloud-germany-transition.md#how-is-the-migration-organized) migration phase.  
 
 Ensure that all of your devices are registered with the worldwide endpoint before your organization is disconnected from Microsoft Cloud Deutschland.
   
 **When do my users re-register their devices?**
 
-It's critical to your success that you only unregister and re-register your devices during the migration stage, "Separate from Microsoft Cloud Deutschland."
+It's critical to your success that you only unregister and re-register your devices during the [Separate from Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) migration phase.
 
 **How do I restore my device state after migration?**
 
@@ -48,7 +48,7 @@ Microsoft will publish instructions for how to successfully restore device state
  
 **How do I know that all my devices are registered in public cloud?**
 
-To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after migration stage "Separate from Microsoft Cloud Deutschland."
+To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after the [Separate from Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) migration phase.
 
 ## Windows Hybrid Azure AD join
 
@@ -182,7 +182,7 @@ If the device is Azure AD Registered, you would see the following output:
           WamDefaultAuthority : organizations
 ```
 
-To remove the existing Azure AD Register/Add Work Account /Workplace Join account on the device:
+To remove the existing Azure AD-registered account on the device:
 
 - To remove the Azure AD–registered account on the device, use CleanupWPJ, a tool that you can download from here: [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
 

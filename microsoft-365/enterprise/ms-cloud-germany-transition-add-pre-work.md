@@ -41,7 +41,7 @@ description: "Summary: Additional pre-work information when moving from Microsof
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
-| Notify external partners of the upcoming transition to Office 365 services. | Availability address space configurations allow sharing of free/busy information with Office 365. | Exchange Online customers who have enabled sharing calendar and availability address space. | Required action.  Failure to do so may result in service or client failure at a later stage of customer migration. |
+| Notify external partners of the upcoming transition to Office 365 services. | Availability address space configurations allow sharing of free/busy information with Office 365. | Exchange Online customers who have enabled sharing calendar and availability address space. | Required action.  Failure to do so may result in service or client failure at a later phase of customer migration. |
 |||||
 
 If you have hybrid Exchange:
