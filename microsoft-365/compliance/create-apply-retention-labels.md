@@ -188,9 +188,7 @@ You can apply retention labels to Outlook folders as a default label that can be
 
 - Items that are already labeled retain their retention label, unless it was applied by a different default label.
 
-- If you change the default retention label for the folder: Existing retention labels applied to items in that folder are also changed only if those labels were applied by a default label.
-
-- If you remove the default retention label for the folder: Items retain their labels.
+- If you change or remove the default retention label for the folder: Existing retention labels applied to items in that folder are also changed or removed only if those labels were applied by a default label.
 
 - If you move an item with a default retention label from one folder to another folder with a different default retention label: The item gets the new default retention label.
 
