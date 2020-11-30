@@ -29,7 +29,7 @@ To migrate your Active Directory Federation Services (AD FS) farm from Microsoft
 3. Create a new Relying Party trust from **AD FS >  Office 365 services**.
 4. In **Relying Party Trusts** in the AD FS management console, select **Add Relying Party Trust**.
 5. Select **Next** on the **Welcome** page of the Add Relying Party Trust wizard.
-6. On the **Select Data Source** page, select **Import data about the relying party published online or on a local network**. The **Federation metadata address (host name or URL)** value is set to **https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml**. Click **Next**.
+6. On the **Select Data Source** page, select **Import data about the relying party published online or on a local network**. The **Federation metadata address (host name or URL)** value is set to `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml`. Click **Next**.
 7. On the **Select Data Source** page, type the display name. Microsoft recommends **Microsoft Office 365 Identity Platform WorldWide**. Click **Next**.
 8. Click **Next** on the **Configure Multi-factor Authentication Now?**, **Choose Issuance Authorization Rules**, and **Ready to Add Trust** pages.
 9. Click **Close** on the **Finish** page.
@@ -85,12 +85,23 @@ If your farm failed completely and there is no way to return to the old farm, do
 
 3. Point your new DNS records or load balancer to the new AD FS servers.
 
-
 ## More information
 
+Getting started:
+
+- [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
-- [How to opt-in for migration](https://aka.ms/office365germanymoveoptin)
+- [How to opt-in for migration](ms-cloud-germany-migration-opt-in.md)
+- [Customer experience during the migration](ms-cloud-germany-transition-experience.md)
+
+Moving through the transition:
+
+- [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
+- [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
+- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), and [experiences](ms-cloud-germany-transition-add-experience.md).
+
+Cloud apps:
+
 - [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
 - [Power BI migration program information](https://aka.ms/pbioptin)
-- [Office 365 URLs and IP address ranges](https://aka.ms/o365endpoints)
 - [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)

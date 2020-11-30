@@ -88,11 +88,26 @@ Existing Skype for Business Online customers will transition to Microsoft Teams.
 
 Office 365 Video is being retired on March 1, 2021, and Office 365 Video won't be supported after migration of SharePoint Online to the new German datacenter regions is completed. Content from Office 365 Video will be migrated as part of migrating SharePoint Online. However, videos in Office 365 Video won't play back in the Office 365 Video UI after the SharePoint migration. Learn more about the migration timeline on [Office 365 Video transition to Microsoft Stream (classic) overview](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
 
+## Next step
+
+[Understand migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
+
 ## More information
 
+Getting started:
+
+- [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
-- [How to opt-in for migration](https://aka.ms/office365germanymoveoptin)
+- [How to opt-in for migration](ms-cloud-germany-migration-opt-in.md)
+
+Moving through the transition:
+
+- [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
+- [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
+- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), and [experiences](ms-cloud-germany-transition-add-experience.md).
+
+Cloud apps:
+
 - [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
 - [Power BI migration program information](https://aka.ms/pbioptin)
-- [Office 365 URLs and IP address ranges](https://aka.ms/o365endpoints)
 - [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)

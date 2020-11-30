@@ -149,9 +149,21 @@ The most recently used (MRU) service in Office is a cutover from the Germany ser
 
 ## More information
 
+Getting started:
+
+- [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
-- [How to opt-in for migration](https://aka.ms/office365germanymoveoptin)
+- [How to opt-in for migration](ms-cloud-germany-migration-opt-in.md)
+- [Customer experience during the migration](ms-cloud-germany-transition-experience.md)
+
+Moving through the transition:
+
+- [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
+- [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
+- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), and [experiences](ms-cloud-germany-transition-add-experience.md).
+
+Cloud apps:
+
 - [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
 - [Power BI migration program information](https://aka.ms/pbioptin)
-- [Office 365 URLs and IP address ranges](https://aka.ms/o365endpoints)
 - [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)

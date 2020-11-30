@@ -3,7 +3,7 @@ title: "Migration from Microsoft Cloud Deutschland to Office 365 services in the
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 09/30/2020
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -287,7 +287,7 @@ Moving through the transition:
 - [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
 - Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), and [experiences](ms-cloud-germany-transition-add-experience.md).
 
-Specific service information:
+Cloud apps:
 
 - [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
 - [Power BI migration program information](https://aka.ms/pbioptin)
