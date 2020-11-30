@@ -48,7 +48,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 
 - [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
 - [European Union GDPR](gdpr.md) (Microsoft 365, Office 365, Intune)
-- [ISO 27001:2013](offering-iso-27001.md)
+- [ISO 27001:2013](https://docs.microsoft.com/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Rev.4
 
 ## Premium templates
