@@ -97,4 +97,4 @@ For more information about applying protection, see [Apply protection to persona
 
 ### Step 5 — Monitor for leaks of personal data
 
-Office 365 data loss prevention reports provide the greatest level of detail for monitoring sensitive data. You can setup automated alerts and investigate breaches by using the audit log. Cloud App Security extends the ability to find and monitor sensitive data to other SaaS providers. For more information on these tools, see [Monitor for breaches of personal data](/security/office-365-security/monitor-for-leaks-of-personal-data.md).
+Office 365 data loss prevention reports provide the greatest level of detail for monitoring sensitive data. You can set up automated alerts and investigate breaches by using the audit log. Cloud App Security extends the ability to find and monitor sensitive data to other SaaS providers. For more information on these tools, see [Monitor for leaks of personal data](https://docs.microsoft.com/microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data?view=o365-worldwide).
