@@ -367,8 +367,6 @@
               href: ms-cloud-germany-transition-add-pre-work.md
             - name: Experience
               href: ms-cloud-germany-transition-add-experience.md
-            - name: AD FS migration steps
-              href: ms-cloud-germany-transition-add-adfs.md
 
 - name: Identity
   items: 
