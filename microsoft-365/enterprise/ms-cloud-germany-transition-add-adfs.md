@@ -24,7 +24,7 @@ description: "Summary: Active Directory Federation Services (AD FS) migration st
 
 To migrate your Active Directory Federation Services (AD FS) farm from Microsoft Cloud Deutschland:
 
-1. Back up your AD FS settings including FF trust info with [these steps](#backup). Name the backup **Microsoft Cloud Deutschland_Only** to indicate it only has the  Microsoft Cloud Deutschland tenant info.
+1. Back up your AD FS settings including FF trust info with [these steps](#backup). Name the backup **Microsoft Cloud Deutschland_Only** to indicate it only has the Microsoft Cloud Deutschland tenant info.
 2. Test the restore using the Microsoft Cloud Deutschland_Only backup, The AD FS farm should continue to operate as Microsoft Cloud Deutschland only.
 3. Create a new Relying Party trust from **AD FS >  Office 365 services**.
 4. In **Relying Party Trusts** in the AD FS management console, select **Add Relying Party Trust**.
