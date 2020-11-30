@@ -67,7 +67,6 @@ Customer and partner tenant administrators are encouraged to opt-in for migratio
 Getting started:
 
 - [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition.md)
-- [Office 365 migration program for Microsoft Cloud Deutschland customers](https://aka.ms/office365germanymove)
 - [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
 - [Customer experience during the migration](ms-cloud-germany-transition-experience.md)
 

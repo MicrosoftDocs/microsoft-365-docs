@@ -271,14 +271,14 @@ If you have questions, you can contact us or your partner:
 
 ## Next step
 
-[How to opt-in for migration](ms-cloud-germany-migration-opt-in.md).
+[Opt-in for migration](ms-cloud-germany-migration-opt-in.md)
 
 ## More information
 
 Getting started:
 
-- [Office 365 migration program for Microsoft Cloud Deutschland customers](https://aka.ms/office365germanymove)
 - [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
+- [How to opt-in for migration](ms-cloud-germany-migration-opt-in.md)
 - [Customer experience during the migration](ms-cloud-germany-transition-experience.md)
 
 Moving through the transition:
