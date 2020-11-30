@@ -86,7 +86,7 @@ Here are some additional considerations for Azure AD:
 
 - For federated authentication:
 
-  - You must not create, promote, or demote a federated domain while the tenant transition is in process. After the migration to the Office 365 services Azure service is complete (the tenant is fully complete), you can resume managing federated domains.
+  - You must not create, promote, or demote a federated domain while the tenant transition is in process. After the migration to the Azure AD service is complete (the tenant is fully complete), you can resume managing federated domains.
 
   - If you're using federated authentication with Active Directory Federation Services (AD FS), you shouldn't make changes to Issuer URIs used for all authentication with your on-premises Active Directory Domain Services (AD DS) during migration. Changing issuer URIs will lead to authentication failures for users in the domain. Issuer URIs can be changed directly in AD FS or when a domain is converted from managed to federated and vice versa. Microsoft recommends customers don't add, remove, or convert a federated domain in the Azure AD tenant being migrated. Issuer URIs can be changed after the migration is fully complete.
 
@@ -99,7 +99,7 @@ Here are some additional considerations for Azure AD:
 
 - For Conditional Access: 
 
-  - Conditional Access policies with the following grant controls aren't supported until migration to Office 365 services is complete (after Azure AD Finalize):
+  - Conditional Access policies with the following grant controls aren't supported until migration to Office 365 services is complete (after the [Finalize Azure AD](ms-cloud-germany-transition.md#how-is-the-migration-organized) migration phase):
 
     - Require Compliant Device
     - Require Approved App
