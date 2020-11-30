@@ -124,7 +124,7 @@ After you've collected the information that the script will prompt you for, the 
      Import-Module ExchangeOnlineManagement
      Connect-IPPSSession
    }
-   # Get user credentials to connect to SPO Management Shelll
+   # Get user credentials to connect to SPO Management Shell
    $credentials = Get-Credential -Message "Type your credentials again to connect to SharePoint Online Management Shell"
    # Load the SharePoint assemblies from the SharePoint Online Management Shell
    # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
