@@ -30,7 +30,7 @@ Administrators should check `https://portal.microsoftazure.de` to determine if t
 
 **What is the impact on my users?**
 
-Users from a registered device will no longer be able to sign in after your migration enters the the [Finalize Azure AD](ms-cloud-germany-transition.md#how-is-the-migration-organized) migration phase.  
+Users from a registered device will no longer be able to sign in after your migration enters the [Finalize Azure AD](ms-cloud-germany-transition.md#how-is-the-migration-organized) migration phase.  
 
 Ensure that all of your devices are registered with the worldwide endpoint before your organization is disconnected from Microsoft Cloud Deutschland.
   

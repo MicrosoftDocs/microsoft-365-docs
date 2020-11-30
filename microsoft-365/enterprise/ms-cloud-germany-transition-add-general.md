@@ -94,7 +94,7 @@ Here are some additional considerations for Azure AD:
 
   - Creating IPv6-named networks doesn't work in the Azure portal, `http://portal.microsoftazure.de/`. Use the Azure portal at `https://portal.azure.com` to create IPv6-named networks.
  
-   - You can't create trusted IP address ranges from the Deutschland portal when establishing Azure multi-factor authentication (MFA) service settings. Use the Office 365 services Azure AD portal to create Azure MFA trusted IP address ranges.
+   - You can't create trusted IP address ranges for Azure Multi-Factor Authentication (MFA) service settings from the Microsoft Cloud Deutschland portal. Use the Azure AD portal for Office 365 services to create Azure MFA trusted IP address ranges.
 
 
 - For Conditional Access: 
@@ -142,7 +142,7 @@ The most recently used (MRU) service in Office is a cutover from the Germany ser
 
 - Upon completion of the SharePoint Online migration to the German region, data indexes are rebuilt. Features that are dependent on search indexes may be affected while reindexing completes.
 
-- If your organization still uses SharePoint 2010 workflows, they'll no longer function after December 31, 2021. SharePoint 2013 workflows will remain supported, although turned off by default for new tenants starting on November 1, 2020. After migration to the Office 365 services SharePoint Online service is complete, we recommend that you to move to Power Automate or other supported solutions.
+- If your organization still uses SharePoint 2010 workflows, they'll no longer function after December 31, 2021. SharePoint 2013 workflows will remain supported, although turned off by default for new tenants starting on November 1, 2020. After migration to the SharePoint Online service is complete, we recommend that you to move to Power Automate or other supported solutions.
 
 - Upon completion of the OneDrive migration to the German region, data indexes are rebuilt. Features that depend on search indexes may be affected while reindexing is in progress.
 
