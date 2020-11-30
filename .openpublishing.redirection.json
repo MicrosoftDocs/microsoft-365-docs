@@ -1686,6 +1686,871 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/compliance/offering-23-NYCRR-Part-500.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-23-NYCRR-Part-500",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-AFM-DNB-Netherlands.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-AFM-DNB-Netherlands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-AMF-ACPR-France.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-AMF-ACPR-France",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-APRA-Australia.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-APRA-Australia",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-BIR-2012-Netherlands.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-BIR-2012-Netherlands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-C5-Germany.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-C5-Germany",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-Canadian-Privacy-Laws.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-Canadian-Privacy-Laws",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ccpa.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ccpa",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-CCSL-IRAP-Australia.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-CCSL-IRAP-Australia",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-CDSA.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-CDSA",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-CFTC-1-31-US.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-CFTC-1-31-US",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-CIS-Benchmark.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-CIS-Benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-CJIS.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-CJIS",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-CNSSI-1253.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-CNSSI-1253",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-CS-Mark-Gold-Japan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-CS-Mark-Gold-Japan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-CSA-STAR-Attestation.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-CSA-Star-Certification.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-csa-star-self-assessment.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-csa-star-self-assessment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-Cyber-Essentials-Plus-UK.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-Cyber-Essentials-Plus-UK",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-DFARS.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-DFARS",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-DoD-DISA-L2-L4-L5.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-DoD-DISA-L2-L4-L5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-doe-10-cfr-part-810.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-doe-10-cfr-part-810",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-DPP-UK.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-DPP-UK",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ear.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ear",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-EBA-EU.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-EBA-EU",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-EN-301-549-EU.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-EN-301-549-EU",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-enisa.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-enisa",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ENS-Spain.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ENS-Spain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-EU-Model-Clauses.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-EU-Model-Clauses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-EU-US-Privacy-Shield.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-EU-US-Privacy-Shield",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FACT-UK.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FACT-UK",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FCA-UK.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FCA-UK",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FDA-CFR-Title-21-Part-11.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FDA-CFR-Title-21-Part-11",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FedRAMP.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FedRAMP",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FERPA.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FERPA",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FFIEC-US.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FFIEC-US",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FINMA-Switzerland.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FINMA-Switzerland",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FINRA-4511.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FINRA-4511",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FIPS-140-2.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FIPS-140-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FISC-Japan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FISC-Japan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-FSA-Denmark.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-FSA-Denmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-G-Cloud-UK.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-G-Cloud-UK",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-GLBA.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-GLBA",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-gxp.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-gxp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-HDS-France.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-HDS-France",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-HIPAA-HITECH.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-HIPAA-HITEC",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-HITRUST.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-HITRUST",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-home.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-home",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-IRS-1075.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-IRS-1075",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ISMS-korea.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ISMS-korea",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ISO-9001.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ISO-9001",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ISO-20000-1-2011.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ISO-2230.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ISO-27001.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ISO-27017.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ISO-27018.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-iso-27701.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-iso-27701",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-IT-Grundschutz-Workbook-Germany.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-IT-Grundschutz-Workbook-Germany",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-ITAR.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-ITAR",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-KNF-Poland.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-KNF-Poland",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-LOPD-Spain.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-LOPD-Spain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-MARS-E.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-MARS-E",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-MAS-ABS-Singapore.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-MAS-ABS-Singapore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-MeitY-India.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-MeitY-India",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-MPAA.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-MPAA",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-MTCS-Singapore.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-MTCS-Singapore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-My-Number-Act-Japan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-My-Number-Act-Japan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-NBB-FSMA-Belgium.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-NBB-FSMA-Belgium",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-NEN-7510-Netherlands.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-NEN-7510-Netherlands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-nerc-cip.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-nerc-cip",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-nist-csf.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-nist-csf",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-nist-sp-800-171.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-nist-sp-800-171",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-nz-cc-framework-nz.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-nz-cc-framework-nz",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-OSFI-Canada.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-OSFI-Canada",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-pasf-uk.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-pasf-uk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-PCI-DSS.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-pdpa-argentina.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-pdpa-argentina",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-RBI-IRDAI-India.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-RBI-IRDAI-India",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-russia-data-localization.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-russia-data-localization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-SEC-17a-4.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-SEC-17a-4",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-sec-reg-sci.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-sec-reg-sci",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-Section-508-VPATS.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-Section-508-VPATS",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-shared-assessments.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-shared-assessments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-SOC.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-SOC",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-SOX.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-SOX",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-TISAX-Germany.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-TISAX-Germany",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-trusight.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-trusight",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-WCAG-2-1.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-WCAG-2-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/office-365-information-protection-for-gdpr.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/office-365-info-protection-for-gdpr-overview.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-for-and-find-personal-data.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/customize-or-create-a-new-sensitive-information-type.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/architect-a-classification-schema-for-personal-data.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/apply-labels-to-personal-data-in-office-365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/apply-protection-to-personal-data-in-office-365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-system-generated-log-data.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-system-generated-log-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-information-protection.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-information-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-skype-for-business-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-skype-for-business-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-project-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-project-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-sharepoint-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-sharepoint-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-on-premises-file-shares.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-on-premises-file-shares",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-office-servers.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-office-servers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-office-online-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-office-online-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-exchange-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-exchange-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-fast-track-migration.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-fast-track-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-windows.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-vsts.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-vsts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-visual-studio-family.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-visual-studio-family",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-prof-services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-prof-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-Office365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-Office365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-Intune.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-Intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-Dynamics365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-Dynamics365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-Azure.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-Azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-windows.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-prof-services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-prof-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-office365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-office365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-dynamics.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-dynamics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-azure.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-data-subject-requests.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-data-protection-officer.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-data-protection-officer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-data-protection-impact-assessments.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-data-protection-impact-assessments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-windows.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-Office365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-Office365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-notification.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-notification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-Microsoft-Support-Professional-Services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-Microsoft-Support-Professional-Services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-azure-dynamics.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-azure-dynamics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-arc.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-arc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-arc-prof-services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-arc-prof-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-arc-Office365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-arc-Office365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-arc-azure-dynamics.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-arc-azure-dynamics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-action-plan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-action-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/ccpa-faq.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/ccpa-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/iso-action-plan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/iso-action-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/nist-action-plan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/nist-action-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-administrative-access-controls-overview.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-administrative-access-controls-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-auditing-and-reporting-overview.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-auditing-and-reporting-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-core-principles-of-defense-against-dos-attacks.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-core-principles-of-defense-against-dos-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-data-destruction.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-data-destruction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-data-immutability.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-data-immutability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-data-resiliency-overview.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-data-resiliency-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-data-retention-deletion-and-destruction-overview.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-dealing-with-data-corruption.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-dealing-with-data-corruption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-defending-cloud-services-against-dos-attacks.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-defending-cloud-services-against-dos-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-ediscovery-and-search-features.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-exchange-data-resiliency.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-exchange-data-resiliency",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-exchange-online-data-deletion.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-exchange-online-data-deletion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-internal-logging.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-internal-logging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-mailbox-migrations.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-management-activity-api.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-microsoft-dos-defense-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-microsoft-dos-defense-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-monitoring-and-auditing-access-controls.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-monitoring-and-auditing-access-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-monitoring-and-self-healing.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-monitoring-and-self-healing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-personnel-controls.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-human-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-reporting-features.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-reporting-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-sharepoint-online-data-deletion.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-sharepoint-online-data-deletion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-skype-data-deletion.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-technology-control.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-technology-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/office-365-encryption-for-data-in-transit.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-encryption-in-transit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md",
+      "redirect_url": "nhttps://docs.microsoft.com/compliance/assurance/assurance-encryption-for-microsoft-365-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-yammer-enterprise-access-controls.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-yammer-enterprise-access-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-monitoring-and-testing.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-monitoring-and-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-resource-limits.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-resource-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-understanding-ebcm-with-cloud-services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-understanding-ebcm-with-cloud-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-customer-and-cloud-partner-ebcm-responsibilities.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-m365-service-resiliency.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-m365-service-resiliency",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-developing-your-ebcm-plan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-developing-your-ebcm-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-microsoft-365-mitigations.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-microsoft-365-mitigations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-ebcm-plan-rehearsal-and-user-training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-legal-disclaimer.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-ebcm-legal-disclaimer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-discovery-protection-reporting-in-Office365-dev-test-environment.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-discovery-protection-reporting-in-Office365-dev-test-environment",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/get-started-with-dlp-policy.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies",
       "redirect_document_id": true
