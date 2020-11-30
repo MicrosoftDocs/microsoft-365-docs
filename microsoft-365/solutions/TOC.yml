@@ -99,7 +99,7 @@
     - name: Tenant management
       items:
       - name: Your tenancies
-        href: placeholder.md
+        href: tenant-management-your-tenancies.md
       - name: Optimal networking 
         href: placeholder.md
       - name: Identity
