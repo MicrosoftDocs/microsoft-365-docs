@@ -57,11 +57,16 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Under review |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under review   | Under review         | Under review                                                        |
-|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
+|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Yes <sup>\*</sup>                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Preview for Word and PowerPoint: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | Under review | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
+
+**Footnote:**
+
+<sup>\*</sup>
+Currently, doesn't include justification text to remove a label or lower the classification level
 
 ### Sensitivity label capabilities in Outlook
 
@@ -75,10 +80,11 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Under review                     | Under review                 | Under review         | Under review           | Under review               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Under review               |
+|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Yes               |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review                       | Under review                    | Under review           | Under review               | Under review               |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | Under review                    | Under review           | Under review               | Yes |
 |
+
 
 ## Office built-in labeling client and other labeling solutions
 
@@ -194,7 +200,7 @@ In addition to restricting access to users in your own organization, you can ext
 
 If external users do not have an account in Azure Active Directory, you can create a guest account for them in your tenant. For their email address, you can specify any email address that they already use. For example, their Gmail address. This guest account can also be used to access a shared document in SharePoint or OneDrive when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-External users can also use a Microsoft account for encrypted documents when they use Microsoft 365 Apps ([formerly Office 365 apps](https://docs.microsoft.com/deployoffice/name-change)) on Windows, and now on Android (version 13029+) and iOS (version 1385219+). This capability is not yet supported for macOS. For example, somebody shares an encrypted document with them, and the encryption settings specify their Gmail email address. This user can create their own Microsoft account that uses their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for that user. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+External users can also use a Microsoft account for encrypted documents when they use Microsoft 365 Apps ([formerly Office 365 apps](https://docs.microsoft.com/deployoffice/name-change)) on Windows, and newly supported on macOS (version 16.42+), Android (version 16.0.13029+), and iOS (version 2.42+). For example, somebody shares an encrypted document with them, and the encryption settings specify their Gmail email address. This user can create their own Microsoft account that uses their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for that user. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > The email address for the Microsoft account must match the email address that's specified to restrict access for the encryption settings.
