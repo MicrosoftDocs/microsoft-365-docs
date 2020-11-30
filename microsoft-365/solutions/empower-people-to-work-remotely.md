@@ -110,3 +110,5 @@ Use these steps to secure and optimize access to your organization's servers and
 
 For the latest information from Microsoft about supporting remote workers, see the [Enabling hybrid work
 with Microsoft Teams site](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+
+To see how a fictional but representative multi-national organization empowered its remote workers, see [Contoso's COVID-19 response and infrastructure for remote and onsite work](contoso-remote-onsite-work.md).
