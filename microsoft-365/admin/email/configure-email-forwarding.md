@@ -2,8 +2,8 @@
 title: "Configure email forwarding"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -41,7 +41,7 @@ As the admin of an organization, you might have company requirements to set up e
 
  Before you set up email forwarding, note the following: 
 
-- Once you set up email forwarding, only **new** emails sent to the  *from*  mailbox will be fowarded. 
+- Once you set up email forwarding, only **new** emails sent to the  *from*  mailbox will be forwarded. 
     
 - Email forwarding requires that the  *from*  account has a license. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50GB. 
     
