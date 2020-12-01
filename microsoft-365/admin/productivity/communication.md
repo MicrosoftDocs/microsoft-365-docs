@@ -62,7 +62,7 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
 
  This chart provides the trend of numerator of the key metric in the primary insight – that is, the number of people using more than one communication modes over the last 180 days. Here that the daily value is an aggregate of the number of people who use multiple forms of communication over the last 28 days.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Chart that shows number of poeple who use more than one mode to communicate vs. time.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Chart that shows number of people who use more than one mode to communicate vs. time.":::
 
 ### Scoring model
 
