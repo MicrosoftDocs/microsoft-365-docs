@@ -72,9 +72,24 @@ Depending on where a group is created, certain resources are provisioned automat
 > When a new Office 365 Group is created via Yammer or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Yammer groups cannot be connected to Teams.
 
 
-## Define a communication (or collaboration?) strategy (for your organization? for your team?)
-… 
-## Collaboration options
+
+
+## Key governance capabilities and licensing requirements
+
+To enable the capabilities of Microsoft 365 for your remote workers, use these Microsoft 365 features.
+
+| Capability or feature | Description | Licensing |
+|:----------------------|:------------|:----------|
+|Team and site sharing|Control if teams, groups, and sites can be shared with people outside your organization.|Microsoft 365 E5 or E3|
+|Domain allow/block|Restrict sharing with people outside your organization to people from specific domains.|Microsoft 365 E5 or E3|
+|Self-service site creation|Allow or prevent users from creating their own SharePoint sites.|Microsoft 365 E5 or E3|
+|Restricted site and file sharing|Restrict site, file, and folder sharing to members of a specific security group.|Microsoft 365 E5 or E3|
+|Restricted group creation|Restrict team and group creation to members of a specific security group.|Microsoft 365 E5 or E3 with Azure AD Premium or Azure AD Basic EDU licenses|
+|Group naming policy|Enforce prefixes or suffixes on group and team names.|Microsoft 365 E5 or E3 with Azure AD Premium or Azure AD Basic EDU licenses|
+|Group expiration policy|Set inactive groups and teams to expire and be deleted after a specified period of time.|Microsoft 365 E5 or E3 with Azure AD Premium licenses|
+|Per-group guest access|Allow or prevent team and group sharing with people outside your organization on a per-group basis.|Microsoft 365 E5 or E3|
+
+## Define a collaboration strategy for your organization
 
 I keep tripping over who is doing the creating, and who this article is for. Does IT create the group? Or do users create groups on the fly? Who’s making the decision?
 
@@ -105,7 +120,7 @@ Every group gets a connected SharePoint team site where users can share content,
 This isn’t so much something that you set up, so we’ll sub with what are the next steps? I assume they’re the next sections in the TOC? Suggest an overview graphic like this, with a list that calls out the steps with links to the articles. Need to tune up the articles too, to be more active & prescriptive and less reference-y.
 
 
-![](../media/collaboration-governance-steps.png)
+![Illustration of recommended governance steps](../media/collaboration-governance-steps.png)
 
 
 ## Req’d element: Best practices. 
