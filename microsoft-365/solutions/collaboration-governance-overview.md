@@ -163,12 +163,7 @@ https://docs.microsoft.com/en-us/learn/paths/m365-manage-team-collaboration/
 
 ## Illustrations
 
-
-Opt’l element: Architecture illustrations. Switch order so we have groups 1st? Or do we even need the Teams one?	
-
-Frame this with an intro – why look at these? IP/Compliance capabilities in Teams – include that too
-
-
+These illustrations will help you understand how groups and teams interact with other services in Microsoft 365 and what governance and compliance features are available to help you manage these services in your organization.
 
 ### Groups in Microsoft 365 for IT Architects
 What IT architects need to know about groups in Microsoft 365
