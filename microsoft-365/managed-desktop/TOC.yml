@@ -61,6 +61,8 @@
           href: get-ready/mapped-drives.md
         - name: Prepare certificates and network profiles
           href: get-ready/certs-wifi-lan.md
+        - name: Prerequisites for guest accounts
+          href: get-ready/guest-accounts.md
         - name: Prepare printing resources
           href: get-ready/printing.md
         - name: Prepare apps
@@ -80,7 +82,7 @@
           href: get-started/access-admin-portal.md
         - name: Add and verify admin contacts in the Admin portal
           href: get-started/add-admin-contacts.md
-        - name: Adjust conditional access
+        - name: Adjust settings after enrollment
           href: get-started/conditional-access.md
         - name: Assign licenses
           href: get-started/assign-licenses.md

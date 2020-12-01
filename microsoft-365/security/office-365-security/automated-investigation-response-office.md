@@ -1,5 +1,5 @@
 ---
-title: "How automated investigation and response (AIR) works in Microsoft Defender for Office 365"
+title: "How automated investigation and response works in Microsoft Defender for Office 365"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -23,7 +23,7 @@ ms.custom:
 - seo-marvel-mar2020
 ---
 
-# How automated investigation and response (AIR) works in Microsoft Defender for Office 365
+# How automated investigation and response works in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -92,4 +92,4 @@ For example, recently, an organization set up a way for their security operation
 
 - [Visit the Microsoft 365 Roadmap to see what's planned and releasing soon](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [Learn about automated investigation and response capabilities in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [Learn about automated investigation and response capabilities in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

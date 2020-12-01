@@ -210,10 +210,23 @@
     - name: Manage your data and services
       href: manage/index.yml
       items:
-         - name: Monitor user activity by using reports
+         - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
-         - name: Monitor user productivity with Productivity score
+         - name: Microsoft Productivity Score - overview
            href: productivity/productivity-score.md
+           items:
+            - name: Content collaboration
+              href: productivity/content-collaboration.md
+            - name: Communication 
+              href: productivity/communication.md
+            - name: Mobility
+              href: productivity/mobility.md
+            - name: Teamwork
+              href: productivity/teamwork.md
+            - name: Microsoft 365 Apps health
+              href: productivity/apps-health.md
+            - name: Create DNS records at any DNS host
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
@@ -226,18 +239,20 @@
            href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
-         - name: Requirements for centralized deployment of add-ins
-           href: manage/centralized-deployment-of-add-ins.md
+         - name: Centralized deployment of add-ins
+           items:
+            - name: Requirements for centralized deployment of add-ins
+              href: manage/centralized-deployment-of-add-ins.md
+            - name: Deploy add-ins in the admin center 
+              href: manage/manage-deployment-of-add-ins.md
+            - name: Manage add-ins in the admin center 
+              href: manage/manage-addins-in-the-admin-center.md      
+            - name: Centralized Deployment FAQ
+              href: manage/centralized-deployment-faq.md
          - name: Manage industry news
            href: manage/manage-industry-news.md
-         - name: Deploy add-ins in the admin center 
-           href: manage/manage-deployment-of-add-ins.md
-         - name: Manage add-ins in the admin center 
-           href: manage/manage-addins-in-the-admin-center.md
          - name: Manage Office Scripts settings 
-           href: manage/manage-office-scripts-settings.md        
-         - name: Centralized Deployment FAQ
-           href: manage/centralized-deployment-faq.md
+           href: manage/manage-office-scripts-settings.md  
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
          - name: Manage Message center messages
@@ -276,7 +291,7 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Secure Microsoft Business Premium
+        - name: Secure Microsoft 365 Business Premium
           items:
             - name: Pre-requisites for data protection
               href: ../business/pre-requisites-for-data-protection.md
@@ -284,6 +299,10 @@
               href: ../business/security-features.md
             - name: Increase threat protection
               href: ../business/increase-threat-protection.md
+            - name: Threats detected by Microsoft Defender Antivirus
+              href: ../business/threats-detected-defender-av.md              
+            - name: Review detected threats and take action
+              href: ../business/review-threats-take-action.md    
             - name: Set up compliance features
               href: ../business/set-up-compliance.md
         - name: Secure score

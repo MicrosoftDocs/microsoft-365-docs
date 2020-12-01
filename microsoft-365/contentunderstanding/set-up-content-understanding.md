@@ -6,6 +6,7 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: enabler-strategic
 search.appverid: MET150
 localization_priority: Priority
 description: "Set up content understanding in Project Cortex"
@@ -87,7 +88,7 @@ To assign licenses:
 
 3. Select **Assign more**.
 
-4. Select **Intelligent Content Services**. Under **Apps**, make sure **Common Data Service for Intelligent Content Services** and **Intelligent Content Services** are both selected.
+4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
     > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/content-understanding/sharepoint-syntex-licenses.png)
