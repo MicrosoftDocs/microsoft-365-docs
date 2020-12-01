@@ -77,4 +77,4 @@ For each check, the tool will report one of four possible results:
 
 ## After enrollment
 
-After you've completed enrollment in Microsoft Managed Desktop, remember to go back and adjust certain Intune and Azure AD settings. For details, see 
+After you've completed enrollment in Microsoft Managed Desktop, remember to go back and adjust certain Intune and Azure AD settings. For details, see [Adjust settings after enrollment](../get-started/conditional-access.md).
