@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Collaborating with people outside your organization"
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,11 +11,13 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-scenario
+- m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Configure Microsoft 365 to enable sharing and additional security when you invite external users to collaborate in Teams and share Sharepoint sites."
+description: Learn how to configure Microsoft 365 apps like Teams, OneDrive, and SharePoint for collaboration with people outside your organization.
 ---
 
 # Collaborating with people outside your organization

@@ -27,7 +27,7 @@ Admins can view, edit, and configure (but not delete) the default anti-phishing 
 
 Organizations with Exchange Online mailboxes can configure anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell. Standalone EOP organizations can only use the Security & Compliance Center.
 
-For information about creating and modifying the more advanced ATP anti-phishing policies that are available in Office 365 Advanced Threat Protection (Office 365 ATP), see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
+For information about creating and modifying the more advanced anti-phishing policies in Microsoft Defender for Office 365 that are available in Defender for Office 365, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 The basic elements of an anti-phishing policy are:
 
@@ -153,7 +153,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
 5. **Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-   Note that these same settings are also available in ATP anti-phishing policies.
+   Note that these same settings are also available in anti-phishing policies in Defender for Office 365.
 
    - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
 
@@ -503,7 +503,7 @@ For detailed syntax and parameter information, see [Remove-AntiPhishRule](https:
 
 ## How do you know these procedures worked?
 
-To verify that you've successfully configured ATP anti-phishing policies, do any of the following steps:
+To verify that you've successfully configured anti-phishing policies in Microsoft Defender for Office 365, do any of the following steps:
 
 - In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details do either of the following steps:
 

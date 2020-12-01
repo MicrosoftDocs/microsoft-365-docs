@@ -21,13 +21,13 @@ search.appverid:
 description: "Details of the Content collaboration - people experiences Productivity Score."
 ---
 
-# Content collaboration – People experiences
+# Content collaboration – people experiences
 
-Productivity Score helps you transform how work gets done with metrics about how people use Microsoft 365 apps and the technology experiences that support them. The score reflects your organization&#39;s performance for people and technology experiences and compares your score with organizations like yours. Content collaboration is one of the measures that falls under people experiences. Check out the  [Productivity Score overview](productivity-score.md).
+Productivity Score helps you transform how work gets done with metrics about how people use Microsoft 365 apps and the technology experiences that support them. The score reflects your organization&#39;s performance for people and technology experiences and compares your score with organizations like yours. Content collaboration is one of the measures that falls under people experiences. Check out the [Productivity Score overview](productivity-score.md).
 
 ## Why your organization&#39;s content collaboration score matters
 
-A fundamental pillar for organizational productivity is how people collaborate in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes per week. See the [evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+A fundamental pillar for organizational productivity is how people collaborate in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes per week. [See the evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 ## How we calculate the content collaboration score
 
@@ -135,25 +135,25 @@ We also provide you with information that helps you gain visibility into how peo
         - Denominator: The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days
 4. **Link to resources:** Select this link to view help content.
 
-### Intensity of files collaborated on
+### Number of files collaborated on
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Chart showing how many files were most collaborated on.":::
 
-1. **Header:** This highlights t the percentage of people who have access to OneDrive or SharePoint who are collaborating on 4 or more files.
+1. **Header:** This highlights the percentage of people who have access to OneDrive or SharePoint who are collaborating on 4 or more files.
 2. **Body:** This provides information about how people can leverage online files for better collaboration.
 3. **Visualization:** This shows a distribution of the people who have access to OneDrive or SharePoint, based on the number of files they collaborate on. This is shown through the following 4 categories (for each, the blue portion of the bar and the fraction represent the percentage of people who have access to OneDrive or SharePoint that fall into that category):
       - **No collaboration:**
         - **Numerator:** The number of people not collaborating on any files in the last 28 days
-        - **Denominator:** The total number of people who have access to OneDrive or SharePoint for at least 1 of last 28 days
+        - **Denominator:** The total number of people who have access to OneDrive or SharePoint for at least 1 of last 28 days.
       - **Collaboration on 1-3 files:**
         - **Numerator:** The number of people collaborating on 1-3 files in the last 28 days
-        - **Denominator:** The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days
+        - **Denominator:** The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Collaboration on 4-10 files:**
         - **Numerator:** The number of people collaborating on 4-10 files in the last 28 days
-        - **Denominator: The** total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days
+        - **Denominator: The** total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Collaboration on 11 or more files:**
         - **Numerator:** The number of people collaborating on 11 or more files in the last 28 days
-        - **Denominator:** The total number of people who have had access to OneDrive or SharePoint for at least 1 ofthe last 28 days
+        - **Denominator:** The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
         
 4. **Link to resources:** Select this link to view help content.
 
@@ -164,7 +164,7 @@ We also provide you with information that helps you gain visibility into how peo
 1. **Header:** Highlights the percentage of devices out of all tested that has poor network connection to OneDrive and SharePoint. 
 2. **Body:** Provides information about why network connection performance important for collaboration. 
 3. **Visualization:** shows a percentage of devices with different levels of network connectivity performance in regard to OneDrive and SharePoint:
-      - **80-100(best)**: The dark green (colored) portion of the bar represent percentage of devices with best performance.
+      - **80-100 (best)**: The dark green (colored) portion of the bar represent percentage of devices with best performance.
       - **60-80**: The green (colored) portion of the bar represent percentage of devices with network performance score between 60-80. 
       - **40-60**: The orange (colored) portion of the bar represent percentage of devices with network performance score between 40-60. 
       - **20-40**: The red (colored) portion of the bar represent percentage of devices with network performance score between 20-40. 
@@ -178,14 +178,14 @@ The following columns are presented in the table at the user level:
 
 - **Username**  is the email address of the user.
 - **Display name**  is the full name of the user.
-- **Last activity date**  refers to the last time the user performed an activity relating to any of the insights within content collaboration within the last 28 days
-- **Department:** The user&#39;s department, as defined in Azure Active Directory (AAD)
-- **Company:** The user&#39;s company, as defined in AAD
-- **Country:** The user&#39;s country, as defined in AAD
-- **State:** The user&#39;s state, as defined in AAD
-- **City:** The user&#39;s city, as defined in AAD
-- **OneDrive:** Boolean value indicating if the person had access tor OneDrive for at least 1 ofthe last 28 days.
-- **SharePoint:** Boolean value indicating if the person had access toSharePoint for at least 1 ofthe last 28 days.
+- **Last activity date**  refers to the last time the user performed an activity relating to any of the insights within content collaboration within the last 28 days.
+- **Department:** The user&#39;s department, as defined in Azure Active Directory (AAD).
+- **Company:** The user&#39;s company, as defined in AAD.
+- **Country:** The user&#39;s country, as defined in AAD.
+- **State:** The user&#39;s state, as defined in AAD.
+- **City:** The user&#39;s city, as defined in AAD.
+- **OneDrive:** Boolean value indicating if the person had access tor OneDrive for at least 1 of the last 28 days.
+- **SharePoint:** Boolean value indicating if the person had access toSharePoint for at least 1 of the last 28 days.
 - **Accessed Office files:** Boolean value indicating if the person accessed files through Microsoft Word, Excel, PowerPoint, or OneNote in the last 28 days.
 - **Created files on OneDrive:** Boolean value indicating if the person created, modified, uploaded, synced, checked in, copied, or moved online files (in Microsoft Word, Excel, PowerPoint, or OneNote) on OneDrive within the last 28 days.
 - **Created files on SharePoint:** Boolean value indicating if the person created, modified, uploaded, synced, checked in, copied, or moved online files (in Microsoft Word, Excel, PowerPoint, or OneNote) on SharePoint within the last 28 days.

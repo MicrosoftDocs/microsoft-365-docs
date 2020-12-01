@@ -2,7 +2,7 @@
 title: "User submissions policy"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
@@ -44,9 +44,9 @@ Use the following articles to configure the prerequisites required so user repor
 
 - Skip spam filtering on the custom mailbox by creating an exchange mail flow rule to set the spam confidence level. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **-1**.
 
-- Turn off scanning attachments for malware in the custom mailbox. Use [Set up Safe Attachments policies in Office 365 ATP](set-up-atp-safe-attachments-policies.md) to create a Safe Attachments policy with the setting **Off** for **Safe Attachments unknown malware response**.
+- Turn off scanning attachments for malware in the custom mailbox. Use [Set up Safe Attachments policies in Defender for Office 365](set-up-atp-safe-attachments-policies.md) to create a Safe Attachments policy with the setting **Off** for **Safe Attachments unknown malware response**.
 
-- Turn off URL scanning on messages in the custom mailbox. Use [Set up Safe Links policies in Office 365 ATP](set-up-atp-safe-links-policies.md) to create a Safe Links policy with the setting **Off** for **Select the action for unknown potentially malicious URLs in messages**.
+- Turn off URL scanning on messages in the custom mailbox. Use [Set up Safe Links policies in Defender for Office 365](set-up-atp-safe-links-policies.md) to create a Safe Links policy with the setting **Off** for **Select the action for unknown potentially malicious URLs in messages**.
 
 - Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
 
@@ -116,17 +116,17 @@ Messages sent to custom mailboxes need to follow a specific submission mail form
 where SafetyAPIAction is one of the following integer values:
 
 - 1: Junk
-- 2: NotJunk
-- 3: Phish
+- 2: Not junk
+- 3: Phishing
 
 In the following example:
 
-- The message is being reported as Phish.
+- The message is being reported as phishing.
 - The Network Message ID is 49871234-6dc6-43e8-abcd-08d797f20abe.
 - The Sender IP is 167.220.232.101.
 - The From address is test@contoso.com.
-- The message's subject line is "test phish submission"
+- The message's subject line is "test phishing submission"
 
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
+`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Messages that do not follow this format will not display properly in the Submissions portal.

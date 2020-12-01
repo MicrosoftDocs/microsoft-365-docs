@@ -48,5 +48,5 @@ Metered connections | By default, updates over metered connections (such as LTE 
  ### Additional security policies
 
  These policies are added to increase security for highly regulated industries. 
- - **Security monitoring**: Microsoft will monitor devices using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). If a threat is detected, Microsoft will notify the customer, isolate the device, and rectify the issue remotely. 
+ - **Security monitoring**: Microsoft will monitor devices using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). If a threat is detected, Microsoft will notify the customer, isolate the device, and rectify the issue remotely. 
  - **Disable PowerShell V2**: Microsoft removed PowerShell V2 in August 2017. This feature has been disabled on all Microsoft Managed Desktop devices. For more information on this change, see [Windows PowerShell 2.0 Deprecation](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

@@ -3167,9 +3167,9 @@ seven to eight digits plus delimiters a check digit or letter
 
 seven to eight digits plus delimiters:
 - one to two digits 
-- a period 
+- an optional period 
 - three digits 
-- a period 
+- an optional period 
 - three digits 
 - a dash 
 - one digit or letter (not case sensitive) which is a check digit
@@ -3206,18 +3206,40 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_chile_id_card
 
-- National Identification Number 
-- Identity card 
-- ID 
-- Identification 
-- Rol Único Nacional 
-- RUN 
-- Rol Único Tributario 
-- RUT 
-- Cédula de Identidad 
-- Número De Identificación Nacional 
-- Tarjeta de identificación 
-- Identificación 
+- cédula de identidad
+- identificación
+- national identification
+- national identification number
+- national id
+- número de identificación nacional
+- rol único nacional
+- rol único tributario
+- RUN
+- RUT
+- tarjeta de identificación
+- Rol Unico Nacional
+- Rol Unico Tributario
+- RUN#
+- RUT#
+- nationaluniqueroleID#
+- nacional identidad
+- número identificación
+- identidad número
+- numero identificacion
+- identidad numero
+- Chilean identity no.
+- Chilean identity number
+- Chilean identity #
+- Unique Tax Registry
+- Unique Tributary Role
+- Unique Tax Role
+- Unique Tributary Number
+- Unique National Number
+- Unique National Role
+- National unique role
+- Chile identity no.
+- Chile identity number
+- Chile identity #
 
    
 ## China resident identity card (PRC) number
@@ -12056,7 +12078,9 @@ three letters, a space (optional), and four digits
 
 ### Pattern
 
-three letters (not case sensitive) a space (optional) four digits
+- three letters (not case sensitive) except 'I' and 'O'
+- a space (optional) 
+- four digits
 
 ### Checksum
 
@@ -12069,27 +12093,38 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - A keyword from Keyword_nz_terms is found.
 - The checksum passes.
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_new_zealand_ministry_of_health_number finds content that matches the pattern.
+- The checksum passes.
+
 ```xml
-<!-- New Zealand Health Number -->
-<Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
+    <!-- New Zealand Health Number -->
+    <Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
-        <Any minMatches="1">
           <Match idRef="Keyword_nz_terms" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
+       </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
 #### Keyword_nz_terms
 
-- NHI 
-- New Zealand 
-- Health 
-- treatment 
-
+- NHI
+- New Zealand
+- Health
+- treatment
+- National Health Index Number
+- nhi number
+- nhi no.
+- NHI#
+- National Health Index No.
+- National Health Index Id
+- National Health Index #
 
 ## New Zealand social wlefare number
 This sensitive information type is only available for use in:

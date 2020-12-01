@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/18/2016
+ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -22,7 +22,7 @@ description: Learn what the data loss prevention (DLP) functions look for.
 
 # What the DLP functions look for
 
-Data loss prevention (DLP) includes sensitive information types, such as credit card Number and EU Debit card number, which are ready for you to use in your DLP policies. These sensitive information types look for a specific pattern and corroborate it by ensuring proper formatting, enforcing checksums, and looking for relevant keywords or other information. Some of this functionality is performed by internal functions. For example, the Credit Card Number sensitive information type uses a function to look for dates formatted like an expiration date, to help corroborate that a number is a credit card number.
+Data loss prevention (DLP) policies can use sensitive information types to identify sensitive items. Credit card number and EU debit card number are examples of sensitive information types. Sensitive information types look for  specific patterns. Sensitive information types validate the data by looking at it's format, it's checksums, and looks for relevant keywords or other information. Some of this functionality is performed by internal functions. For example, the Credit Card Number sensitive information type uses a function to look for dates that are formatted like an expiration date. This helps to corroborate that a number is a credit card number.
   
 This article explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
   
@@ -55,22 +55,22 @@ This article explains what these functions look for, to help you understand how 
 |Func_bulgaria_eu_national_id_card|detects Bulgaria uniform civil number|no|
 |Func_california_drivers_license_number|detects California driver’s license number|no|
 |Func_canadian_sin|detects Canada sin|yes|
-|Func_chile_id_card|detects Chile id card|no|
-|Func_china_resident_id|detects China resident id|no|
+|Func_chile_id_card|detects Chile ID card|no|
+|Func_china_resident_id|detects China-resident ID|no|
 |Func_colorado_drivers_license_number|detects Colorado driver’s license number|no|
 |Func_connecticut_drivers_license_number|detects Connecticut driver’s license number|no|
 |Func_credit_card|detects credit card|yes|no|
-|Func_croatia_id_card|detects Croatia id card|no|
+|Func_croatia_id_card|detects Croatia ID card|no|
 |Func_croatia_oib_number|detects Croatia OIB number|no|
 |Func_cyprus_eu_tax_file_number|detects Cyprus tax file number|no|
-|Func_czech_id_card|detects Czech id card|no|
-|Func_czech_id_card_new_format|detects Czech id card in new format|no|
+|Func_czech_id_card|detects Czech ID card|no|
+|Func_czech_id_card_new_format|detects Czech ID card in new format|no|
 |Func_dea_number|detects DEA number|yes|
 |Func_denmark_eu_tax_file_number|detects Denmark personal identification number|no|
 |Func_district_of_columbia_drivers_license_number|detects District of Columbia driver’s license number|no|
 |Func_estonia_eu_national_id_card|detects Estonia Personal Identification Code|no|
 |Func_eu_debit_card|detects EU debit card|no|
-|Func_finnish_national_id|detects Finnish national id|no|
+|Func_finnish_national_id|detects Finnish national ID|no|
 |Func_florida_drivers_license_number|detects Florida driver’s license number|no|
 |Func_florida_maryland_michigan_minnesota_drivers_license_number|detects Florida, Maryland, Michigan, Minnesota driver’s license number|no|
 |Func_formatted_itin|detects formatted US ITIN|yes|
@@ -86,9 +86,9 @@ This article explains what these functions look for, to help you understand how 
 |Func_german_passport_data|detects Germany passport|no|
 |Func_germany_eu_tax_file_number|detects Germany tax file number|no|
 |Func_germany_value_added_tax_number|detects Germany value added tax number|no|
-|Func_greece_eu_ssn|detects Greece ssn (AMKA)|no|
+|Func_greece_eu_ssn|detects Greece sin (AMKA)|no|
 |Func_hawaii_drivers_license_number|detects Hawaii driver’s license number|no|
-|Func_hong_kong_id_card	|detects Hong Kong id card|no|
+|Func_hong_kong_id_card	|detects Hong Kong ID card|no|
 |Func_hungarian_value_added_tax_number|detects Hungary value added tax number|no|
 |Func_hungary_eu_national_id_card|detects Hungary personal identification number|no|
 |Func_hungary_eu_ssn_or_equivalent|detects Hungary social security number|no|
@@ -100,7 +100,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_indiana_drivers_license_number|detects Indiana driver’s license number|no|
 |Func_iowa_drivers_license_number|detects Iowa driver’s license number|no|
 |Func_ireland_pps|detects Ireland PPS|no|
-|Func_israeli_national_id_number|detects Israel national id number|no|
+|Func_israeli_national_id_number|detects Israel national ID number|no|
 |Func_italy_eu_national_id_card	|detects Italy fiscal code|no|
 |Func_italy_value_added_tax_number|detects Italy value added tax number|no|
 |Func_japanese_my_number_corporate|detects Japan my number corporate|yes|
@@ -109,7 +109,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_jp_bank_account_branch_code|detects Japan bank account branch code|no|
 |Func_jp_drivers_license_number|detects Japan driver’s license number|no|
 |Func_jp_passport|detects Japan passport|no|
-|Func_jp_resident_registration_number|detects Japan resident registration number|no|
+|Func_jp_resident_registration_number|detects Japan-resident registration number|no|
 |Func_jp_sin|detects Japan SIN|no|
 |Func_jp_sin_pre_1997|detects Japan sin pre 1997|no|
 |Func_kansas_drivers_license_number|detects Kansas driver’s license number|no|
@@ -119,7 +119,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_lithuania_eu_tax_file_number|detects Lithuania personal code|no|
 |Func_louisiana_drivers_license_number|detects Louisiana driver’s license number|no|
 |Func_luxemburg_eu_tax_file_number|detects Luxemburg national identification number (natural persons)|no|
-|Func_luxemburg_eu_tax_file_number_non_natural|detects Luxemburg national identification number (non natural persons)|no|
+|Func_luxemburg_eu_tax_file_number_non_natural|detects Luxemburg national identification number (non-natural persons)|no|
 |Func_maine_drivers_license_number|detects Maine driver’s license number|no|
 |Func_manitoba_drivers_license_number|detects Manitoba driver’s license number|no|
 |Func_maryland_drivers_license_number|detects Maryland driver’s license number|no|
@@ -148,7 +148,7 @@ This article explains what these functions look for, to help you understand how 
 |Func_newzealand_social_welfare_number	|detects New Zealand social welfare number|no|
 |Func_north_carolina_drivers_license_number|detects North Carolina driver’s license number|no|
 |Func_north_dakota_drivers_license_number|detects North Dakota driver’s license number|no|
-|Func_norway_id_number	|detects Norway id number|no|
+|Func_norway_id_number	|detects Norway ID number|no|
 |Func_nova_scotia_drivers_license_number|detects Nova Scotia driver’s license number|no|
 |Func_ohio_drivers_license_number	|detects Ohio driver’s license number|no|
 |Func_ontario_drivers_license_number	|detects Ontario driver’s license number|no|
@@ -178,14 +178,14 @@ This article explains what these functions look for, to help you understand how 
 |Func_spain_eu_driver's_license_number	|detects Spain driver's license number|no|
 |Func_spain_eu_tax_file_number	|detects Spain tax file number|no|
 |Func_spanish_social_security_number|detects Spanish social security number|no|
-|Func_ssn	|Function to detct non-randomized formatted US SSN|yes|
+|Func_ssn	|Function to detect non-randomized formatted US SSN|yes|
 |Func_sweden_eu_tax_file_number|detects Sweden tax file number|no|
 |Func_swedish_national_identifier|detects Swedish national identifier|yes|
 |Func_swiss_social_security_number_ahv|detects Swiss social security number AHV|no|
-|Func_taiwanese_national_id	|detects Taiwanese national id|no|
+|Func_taiwanese_national_id	|detects Taiwanese national ID|no|
 |Func_tennessee_drivers_license_number|detects Tennessee driver’s license number|no|
 |Func_texas_drivers_license_number	|detects Texas driver’s license number|no|
-|Func_Thai_Citizen_Id	|detects Thai Citizen Id|no|
+|Func_Thai_Citizen_Id	|detects Thai Citizen ID|no|
 |Func_Turkish_National_Id|detects Turkish National ID|yes|
 |Func_uk_drivers_license|detects UK driver’s license|no|
 |Func_uk_eu_tax_file_number|detects UK unique taxpayer number|no|
@@ -206,7 +206,7 @@ This article explains what these functions look for, to help you understand how 
 
 ## Func_us_date
 
-This function looks for a date in the format commonly used in the U.S. This includes the formats "month/day/year", "month-day-year", and "month day year ". The names or abbreviations of months are not case sensitive. 
+Func_us_date looks for dates in common U.S. formats. The common formats are "month/day/year", "month-day-year", and "month day year ". The names or abbreviations of months aren't case-sensitive. 
   
 Examples:
   
@@ -234,7 +234,7 @@ Accepted month names:
     
 ## Func_eu_date
 
-This function looks for a date in the format commonly used in the E.U. (and most places outside the U.S.), such as "day/month/year", "day-month-year", and "day month year". The names or abbreviations of months are not case sensitive.
+Fund_eu_dates looks for dates in common E.U. formats (and most places outside the U.S.), such as "day/month/year", "day-month-year", and "day month year". The names or abbreviations of months aren't case-sensitive.
   
 Examples:
   
@@ -360,7 +360,7 @@ Accepted month names:
     
 ## Func_expiration_date
 
-This function looks for a date in the formats commonly used by credit and debit cards, which exclude days in favor of months. This function will match dates in format of "month/year", "month-year", "[month name] year", and "[month abbreviation] year". The names or abbreviations of months are not case sensitive.
+Func_expiration_date looks for dates that are in formats commonly used by credit and debit cards. This function will match dates in format of "month/year", "month-year", "[month name] year", and "[month abbreviation] year". The names or abbreviations of months aren't case-sensitive.
   
 Examples:
   
@@ -392,7 +392,7 @@ Accepted month names:
     
 ## Func_us_address
 
-This function looks for a U.S. state name or postal abbreviation followed by a valid zip code, just as they're used in postal addresses. The zip code must be one of the correct zip codes associated with the U.S. state name or abbreviation. The U.S. state name and zip code cannot be separated by punctuation or letters.
+Func_us_address looks for a U.S. state name or postal abbreviation followed by a valid zip code. The zip code must be one of the correct zip codes associated with the U.S. state name or abbreviation. The U.S. state name and zip code cannot be separated by punctuation or letters.
   
 Examples:
   
@@ -403,5 +403,3 @@ Examples:
 - WA 98052
     
 - WA 98052-9998
-    
-
