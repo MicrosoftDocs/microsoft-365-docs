@@ -191,17 +191,26 @@ Exchange public folders, Skype, Teams and Yammer messages do not support retenti
 
 #### Only one retention label at a time
 
-An email or document can have only a single retention label assigned to it at a time:
-  
-- For retention labels assigned manually by admins or end users, people can remove or change the retention label that's assigned.
+An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
+
+- [Auto-apply label policy](apply-retention-labels-automatically.md)
+- [Document understanding model for SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- [Default label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+
+For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
+
+- Admins and end users can manually change or remove an existing retention label that's applied on content. 
+
+- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied as a default label.
     
-- If content has an auto-apply label assigned, this label can be replaced by a published retention label.
-    
-- If content has a published retention label assigned, an auto-apply label cannot replace it.
-    
-- If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is assigned.
-    
-To understand all outcomes when you use a default label, see the information in the [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) section.
+    For more information about the label behavior when it's applied by using a default label:
+    - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+    - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+
+- If there are multiple auto-apply label policies that could apply a retention label, and content meets the conditions of multiple policies, the retention label for the oldest auto-apply label policy (by date created) is applied.
+
+When retention labels mark items as a record or a regulatory record, these labels are never automatically changed. Only admins for the container can manually change or remove retention labels that mark items as a record, but not regulatory records. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 #### Monitoring retention labels
 

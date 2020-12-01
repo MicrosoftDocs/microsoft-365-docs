@@ -54,7 +54,7 @@ Each of the roles below can be assigned to provide different levels of access:
 If you need help assigning Azure Active Directory roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 For easy management of the built-in roles, a security group has been created for each custom role (for example, “Modern Workplace Roles – Security Manager”). To assign users to one of the security groups, follow these steps:
-1.	Go the Azure portal and navigate to the Azure Active Directory blade.
+1.	Go the Microsoft Endpoint Manager portal
 2.	Select Groups on the left-hand side.
 3.	Search for Modern Workplace Roles, and then select the group associated with the role you want to assign. 
 4.	Select Members on the left-hand side, and then select + Add members on the command bar.
