@@ -61,6 +61,7 @@ This table is a quick reference of the areas where change has occurred between t
 |---------|---------|
 | Incidents & alerts  | Previously separate sections, "Incidents" and "Alerts queue."  |
 | [Hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)  |  Now includes "Advanced hunting" and "Custom detection rules."   |
+|Action center    | Lists pending and completed actions that were taken following automated investigations and remediation actions. Formerly, the Action center in the Microsoft Defender Security Center listed pending and completed actions for remediation actions taken on devices only. In the new and improved Microsoft 365 security center, the Action center brings together remediation actions across email, devices, and users—all in one location.  |
 | Threat analytics |  It's on it's own, no longer under the "Dashboards" section.   |
 
 ### Endpoints
@@ -68,7 +69,7 @@ This table is a quick reference of the areas where change has occurred between t
 |**New area**  |**Description of change**  |
 |---------|---------|
 |Search   |  Instead of being in the heading, Microsoft Defender for Endpoint search bar is moving under the Endpoints section. You can continue to search for devices, files, users, URLs, IPs, vulnerabilities, software, and recommendations.  |
-|[Dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  This page will be the current “Security operations” dashboard. The threat analytics dashboard will be in the first navigation section, generally called alerts and actions.   |
+|[Dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  This is your security operations dashboard. It tells you at a glance how many active alerts were triggered, which devices are at risk, which users are at risk, and severity level for alerts, devices, and users. You can also see if any devices have sensor issues, your overall service health, and how any unresolved alerts were detected.  <br> <br> Formerly, the security operations dashboard that was in the Microsoft Defender Security Center also listed the number and status of any automated investigations. In the new and improved Microsoft 365 security center, details about automated investigations are found in the Incidents view. In the navigation pane, go to Incidents & alerts > Incidents. Select an incident, then choose the Investigations tab to view details about an automated investigation. <br> <br> The threat analytics dashboard is now in the top alerts and actions navigation section.   |
 |Device inventory | No changes. |
 |[Vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Name was shortened to fit in the navigation pane. It is the same as the threat and vulnerability management section, with all the pages underneath.     |
 | Partners and APIs | No changes, except the & became "and." |
