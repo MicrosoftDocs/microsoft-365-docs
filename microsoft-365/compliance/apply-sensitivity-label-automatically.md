@@ -23,11 +23,11 @@ description: "When you create a sensitivity label, you can automatically assign 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 > [!NOTE]
-> For information about applying a sensitivity label in Azure Purview (preview), see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label)
+> For information about automatically applying a sensitivity label in Azure Purview (preview), see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
-When you create a sensitivity label, you can automatically assign that label to content when it matches conditions that you specify.
+When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
 
-The ability to apply sensitivity labels to content automatically is important because:
+This ability to apply sensitivity labels to content automatically is important because:
 
 - You don't need to train your users when to use each of your classifications.
 
@@ -35,7 +35,7 @@ The ability to apply sensitivity labels to content automatically is important be
 
 - Users no longer need to know about your policies—they can instead focus on their work.
 
-There are two different methods for automatically applying a sensitivity label:
+There are two different methods for automatically applying a sensitivity label to content in Microsoft 365:
 
 - **Client-side labeling when users edit documents or compose (also reply or forward) emails**: Use a label that's configured for auto-labeling for files and emails (includes Word, Excel, PowerPoint, and Outlook). 
     
