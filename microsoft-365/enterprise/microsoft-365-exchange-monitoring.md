@@ -3,7 +3,7 @@ title: "Exchange Online monitoring for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/21/2020
+ms.date: 12/01/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
