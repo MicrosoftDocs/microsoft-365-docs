@@ -80,7 +80,7 @@ View a video on adding calendars to your site, see [Create a shared calendar](ht
 
 Your team site shares almost everything with all members of the group associated with the site. If you want to have a separate site for specific customers, you can create additional team sites, and manage them using SharePoint hub sites. Here's more information.
   
-Hub sites let you add and associate sites. For more info see [What is a SharePoint hub site?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
+Hub sites let you add and associate sites. For more info, see [What is a SharePoint hub site?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
   
 Ready to build a hub site, see [Create a hub site in SharePoint Online](/sharepoint/create-hub-site).
   
@@ -88,11 +88,11 @@ To learn how to add sites to a hub site, see [Associate a SharePoint site with a
   
 ## Sharing files with the team
 
-While file storage and document management is a start, sharing with your team and external clients is also important. Here are some links to topics that will help you manage users and share your data.
+While file storage and document management is a start, sharing with your team and external clients is also important. The following articles will help you manage users and share your data:
   
-For file sharing with your team, see [Share SharePoint files or folders in Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
+- For file sharing with your team, see [Share SharePoint files or folders in Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
-To understand sharing outside your team, see [External sharing overview](/sharepoint/external-sharing-overview).
+- To understand sharing outside your team, see [External sharing overview](/sharepoint/external-sharing-overview).
   
 ## Managing users and groups
 
@@ -104,9 +104,9 @@ To add users to a Microsoft 365 group, see [Add users and assign licenses at the
   
 Learn how to handle access requests with [Set up and manage access requests](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3).
   
-## Here are more topics you might be interested in
+## Here are more articles you might be interested in
 
-- **Set up Office apps on your tablets and phones**. You need to do this so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
+- **Set up Office apps on your tablets and phones**. You must do this so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
     
   - [Install and set up Office on an Android with Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

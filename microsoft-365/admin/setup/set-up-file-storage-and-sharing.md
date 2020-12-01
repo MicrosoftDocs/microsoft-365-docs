@@ -57,7 +57,7 @@ Here are recommendations for what to store in each location when you use OneDriv
 |:-----|:-----|:-----|
 |**Storage location** <br/> |**What it's for** <br/> |**What to store here** <br/> |
 |**OneDrive** <br/> |Storing content in OneDrive is like storing files on your computer; no one else can easily access them.  <br/> For more info, see [What is OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Business files that other team members won't need to collaborate on or access regularly.  <br/> |
-|**SharePoint team sites** <br/> |Collaboration. When you create a Microsoft 365 group (for example, in the Microsoft 365 admin center, in Outlook, or by creating a team in Microsoft Teams) a SharePoint team site is created for that group. Likewise, when you create a new SharePoint team site from the SharePoint home page or from the new SharePoint admin center, it also creates a Microsoft 365 group. For more info, see [What is a SharePoint team site?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) and [Create a team site in SharePoint Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Files that have shared ownership. We recommend separate team sites for each unit of work in your organization. For example, to keep personnel and financial documents private to a small team, create a separate team site.  <br/> |
+|**SharePoint team sites** <br/> |Collaboration. When you create a Microsoft 365 group (for example, in the Microsoft 365 admin center, in Outlook, or by creating a team in Microsoft Teams), a SharePoint team site is created for that group. Likewise, when you create a new SharePoint team site from the SharePoint home page or from the new SharePoint admin center, it also creates a Microsoft 365 group. For more info, see [What is a SharePoint team site?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) and [Create a team site in SharePoint Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Files that have shared ownership. We recommend separate team sites for each unit of work in your organization. For example, to keep personnel and financial documents private to a small team, create a separate team site.  <br/> |
 
 > [!NOTE]
 > SharePoint also has other types of sites you can use for your business. You can use [communication sites](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) in your intranet to publish information for a broad audience. And you can use [hub sites](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f) to connect sites in your intranet.
@@ -66,7 +66,7 @@ Here are recommendations for what to store in each location when you use OneDriv
 
 ### Team members can store their own files in OneDrive
 
-Each person in your business who has an Microsoft 365 license assigned (and SharePoint Online selected) gets OneDrive cloud storage. They can store business-related files here for access from any device, and they are only available to that user. For example, they might store a draft proposal, their meeting notes, or the script for a demo they're going to deliver.
+Each person in your business who has a Microsoft 365 license assigned (and SharePoint Online selected) gets OneDrive cloud storage. They can store business-related files here for access from any device, and they are only available to that user. For example, they might store a draft proposal, their meeting notes, or the script for a demo they're going to deliver.
   
 Employees can also share OneDrive files and folders. If an employee is away or leaves the company, others can access shared files stored in OneDrive (OneDrive team folder sharing).
   
@@ -112,7 +112,7 @@ Here are the steps to add files:
   
 5. You can delete the files from your computer. In the next step, [Sync online files with your PC or Mac](#sync-online-files-with-your-pc-or-mac), you're going to create a new location for these files on your computer.
 
-    If you have a lot of files or large files to upload to your team site, read these tips on [uploading large or many files to a library](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
+    If you have numerous files or large files to upload to your team site, read these tips on [uploading large or many files to a library](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
 
     If you need more storage space, see [Change storage space for your subscription](../../commerce/add-storage-space.md).
 
