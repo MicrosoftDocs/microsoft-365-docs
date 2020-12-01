@@ -45,7 +45,7 @@ You need to be a global administrator to configure these settings.
 
 ## Use Exchange PowerShell
 
-1. Connect to [Connect to Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Connect to Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
 2. Using PowerShell, you can disable the notifications informing your users about the Outlook mobile apps.
 
 ```powershell
