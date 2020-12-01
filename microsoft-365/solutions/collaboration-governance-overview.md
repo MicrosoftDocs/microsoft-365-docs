@@ -152,29 +152,14 @@ https://docs.microsoft.com/en-us/learn/paths/m365-manage-team-collaboration/
 > [!div class="nextstepaction"]
 > [Start >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
 
+### Collaborate with SharePoint in Microsoft 365
 
-Start https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/
+|||
+|:---|:---|
+|![SharePoint training icon](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|1 hr 14 min - Learning Path - 4 Modules<br><br>Manage shared content with Microsoft SharePoint introduces you to the features and capabilities of SharePoint, and how it works with Microsoft 365. You'll learn about the different types of SharePoint sites, including hub sites, as well as information protection, reporting, and monitoring. You'll also learn how to use SharePoint file and folder sharing to optimize collaboration, how to share files externally, and how to manage SharePoint sites in the SharePoint admin center. This learning path can help you prepare for the Microsoft 365 Certified: Teamwork Administrator Associate certification.
 
-
-
-
-https://docs.microsoft.com/en-us/learn/paths/m365-teams-sharepoint/
-
-![SharePoint training icon](../media/collaborate-with-sharepoint-in-microsoft-365.svg)
-
-Collaborate with SharePoint in Microsoft 365
-1 hr 14 min
-Learning Path
-4 Modules
-Intermediate
-Administrator
-Microsoft 365
-Office 365
-Manage shared content with Microsoft SharePoint introduces you to the features and capabilities of SharePoint, and how it works with Microsoft 365. You'll learn about the different types of SharePoint sites, including hub sites, as well as information protection, reporting, and monitoring. You'll also learn how to use SharePoint file and folder sharing to optimize collaboration, how to share files externally, and how to manage SharePoint sites in the SharePoint admin center. This learning path can help you prepare for the Microsoft 365 Certified: Teamwork Administrator Associate certification.
-
-Prerequisites
-Basic understanding of Microsoft 365.
-Start https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/
+> [!div class="nextstepaction"]
+> [Start >](https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
 ## Illustrations
 
