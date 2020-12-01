@@ -38,8 +38,6 @@ The following list includes the existing gaps between Azure Information Protecti
   
 - IRM with SharePoint (IRM-protected sites and libraries) is currently not available.
   
-- The Rights Management Connector is currently not available.
-  
 - The Mobile Device Extension for AD RMS is currently not available.
 
 ## Configuring Azure Information Protection for customers in China
