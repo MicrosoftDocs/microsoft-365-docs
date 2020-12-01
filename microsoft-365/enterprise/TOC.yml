@@ -275,6 +275,20 @@
             href: ms-cloud-germany-transition.md
           - name: Opt-in for migration
             href: ms-cloud-germany-migration-opt-in.md
+          - name: Customer experience
+            href: ms-cloud-germany-transition-experience.md
+          - name: Migration phases actions and impacts
+            href: ms-cloud-germany-transition-phases.md
+          - name: Additional information
+            items: 
+            - name: General
+              href: ms-cloud-germany-transition-add-general.md
+            - name: Devices
+              href: ms-cloud-germany-transition-add-devices.md
+            - name: Pre-work
+              href: ms-cloud-germany-transition-add-pre-work.md
+            - name: Experience
+              href: ms-cloud-germany-transition-add-experience.md
 
 - name: Identity
   items: 
