@@ -31,7 +31,7 @@ Conducting a comprehensive security product evaluation can help give you informe
 
 The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients, or Teams.
 
-[Start your free 30-day evaluation](https://go.microsoft.com/fwlink/p/?LinkID=698279) to monitor and report on advanced threats. You'll enjoy the quick set-up and you can easily turn it off if necessary.
+Start your free 30-day evaluation in the Office 365 Security & Compliance center to monitor and report on advanced threats. You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
 ## How the evaluation works
 
@@ -58,16 +58,19 @@ With a trial, you'll have a 30-day window with the evaluation to monitor and rep
 
 ### Licensing and roles
 
-You'll need to fulfill the [licensing requirements](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#licensing-requirements) or have [trial access to Defender for Office 365 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279) to access the evaluation. The trial includes a 30-day free trial for 25 licenses.
+You'll need to fulfill the licensing requirements, which means having either Microsoft Defender for Office 365 Plan 1, Microsoft Defender for Office 365 Plan 2, Microsoft 365 E5, Microsoft 365 E5 Security, or Office 365 E5.
+
+have [trial access to Defender for Office 365 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279) to access the evaluation. The trial includes a 30-day free trial for 25 licenses.
 
 Exchange Online roles are required to set up Defender for Office 365 in evaluation mode. The following roles are needed:
 
 |Task | Role |
 |-----| -----|
-| Create evaluation policy| Remote and Accepted Domains and Security Admin|
-| Edit evaluation policy | Remote and Accepted Domains and Security Admin |
-| Delete evaluation policy | Remote and Accepted Domains and Security Admin |
-|View evaluation report | Security Admin or Security Reader |
+| Get a free trial or buy Microsoft Defender for Office 365 (Plan 2)| Billing admin or Global admin|
+| Create evaluation policy| Remote and Accepted Domains and Security admin|
+| Edit evaluation policy | Remote and Accepted Domains and Security admin |
+| Delete evaluation policy | Remote and Accepted Domains and Security admin |
+|View evaluation report | Security admin or Security reader |
 
 ### Enhanced filtering
 
