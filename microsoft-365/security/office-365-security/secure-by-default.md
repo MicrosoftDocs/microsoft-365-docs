@@ -55,5 +55,5 @@ Overrides should only be used for:
 
 - Phishing simulations: simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
 - Security/SecOps mailboxes: dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content.
-- Third-party filters: some third party vendors will recommend turning off EOP (SCL = -1) as the third-party filter will manage the mail filtering. Microsoft does not recommend turning off EOP as EOP is required for Defender for Office 365.
+- Third-party filters: some third party vendors will recommend turning off EOP (SCL = -1) as the third-party filter will manage the mail filtering. Microsoft does not recommend turning off EOP as EOP is required for Defender for Office 365. The recommendation here is to turn on [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) instead.
 - False positives: you may want to allow certain messages that are still being analyzed by Microsoft [via Admin submissions](admin-submission.md). As with all overrides, it is recommended that they are temporary.
