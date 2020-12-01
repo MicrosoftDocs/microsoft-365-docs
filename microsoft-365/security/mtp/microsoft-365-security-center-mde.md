@@ -61,7 +61,7 @@ This table is a quick reference of the areas where change has occurred between t
 |---------|---------|
 | Incidents & alerts  | Previously separate sections, "Incidents" and "Alerts queue."  |
 | [Hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)  |  Now includes "Advanced hunting" and "Custom detection rules."   |
-|Action center    | Lists pending and completed actions that were taken following automated investigations and remediation actions. Formerly, the Action center in the Microsoft Defender Security Center listed pending and completed actions for remediation actions taken on devices only. In the new and improved Microsoft 365 security center, the Action center brings together remediation actions across email, devices, and users—all in one location.  |
+|Action center    | Lists pending and completed actions that were taken following automated investigations and remediation actions. Formerly, the Action center in the Microsoft Defender Security Center listed pending and completed actions for remediation actions taken on devices only, while Automated investigations listed alerts and status. In the new and improved Microsoft 365 security center, the Action center brings together remediation actions and investigations across email, devices, and users—all in one location.  |
 | Threat analytics |  It's on it's own, no longer under the "Dashboards" section.   |
 
 ### Endpoints
