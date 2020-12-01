@@ -41,28 +41,29 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
 
 :::image type="content" source="../../media/primaryinsight.png" alt-text="Primary insight to communications modes.":::
 
-1. **Header:** Provides the key metric of people using more than one of communication modes, namely:
+- **Header:** Provides the key metric of people using more than one of communication modes, namely:
 
-    - Sending emails through Exchange
-    - Sending messages through Teams
-    - Posting on communities in Yammer
+  - Sending emails through Exchange
+  - Sending messages through Teams
+  - Posting on communities in Yammer
 
-    This key metric is shown as a percentage of all people who are using two or more of these products–Exchange, Teams, and Yammer. 
+  This key metric is shown as a percentage of all people who are using two or more of these products–Exchange, Teams, and Yammer. 
 
-2. **Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org.
+- **Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org.
 
-3. **Visualization of current state:**
-    - Horizontal bar where the blue portion represents the percentage expressed in the header.
+- **Visualization of current state:**
+
+  - Horizontal bar where the blue portion represents the percentage expressed in the header.
 	
-    - Highlights the (numerator/denominator) used for computing the percentage expressed in the header:
+  - Highlights the (numerator/denominator) used for computing the percentage expressed in the header:
 	
-      - **Numerator**: # of people using more than one communication modes in the last 28 days.
+    - **Numerator**: # of people using more than one communication modes in the last 28 days.
 	  
-      - **Denominator**: # of people marked as enabled for more than one communication products in the last 28 days.
+    - **Denominator**: # of people marked as enabled for more than one communication products in the last 28 days.
 	  
-    - **Peer Benchmark** value of the key metric is also shown as a percentage.
+  - **Peer Benchmark** value of the key metric is also shown as a percentage.
 
-1. **View communication resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication. From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.
+- **View communication resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication. From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.
 
 #### Trend visualization of primary insight
 
