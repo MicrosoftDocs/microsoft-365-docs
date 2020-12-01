@@ -27,8 +27,6 @@ Microsoft 365 groups help users (?) manage with whom and how they share informat
 Microsoft 365 empowers users and reduces the risk...by providing the tools needed to collaborate. Underneath and interacting with services in Microsoft 365 are Microsoft 365 groups, which let users choose a set of people with whom they want to collaborate, and easily set up a collection of resources for those people to share. … 
 
 
-Req’d element: Key capabilities/licensing options. We usually have a table to cover this. Perhaps we can have just a statement that this guidance applies to any M365 SKU, just that the apps available to them will vary?
-
 
 ![Chart showing collaboration governance options in Microsoft 365](../media/collaboration-governance-overview.png)
 
@@ -128,10 +126,15 @@ This isn’t so much something that you set up, so we’ll sub with what are the
 I’m not seeing a lot of prescriptive guidance in here, just options? Can we provide some best practices or learnings from the talks you reference below?
 
 
-## Req’d element: End user impact/change management. 
+## End user impact and change management
 
-What do we expect end users to do differently? How can IT help them comply?Unpublished end user article coming...
+Because groups and teams can be created in several ways, we recommend training your users to use the method that fits your organization the best:
 
+- If your organization does most of its communication using email, instruct your users to create groups in Outlook.
+- If your organization heavily uses SharePoint or is migrating from SharePoint on-premises, instruct your users to create SharePoint team sites for collaboration.
+- If your organization has deployed Teams, instruct your users to create a team when they need need a collaboration space.
+
+This helps avoid confusion if users are unfamiliar with how groups relate to their related services. For more information about how to talk to your users about groups, see [Explaining Microsoft 365 Groups to your users](../admin/create-groups/explain-groups-knowledge-worker.md).
 
 ## Training for administrators
 
