@@ -110,9 +110,11 @@ With this new integrated experience, Microsoft's plan is to collect your feedbac
 
 This feature is in Public preview and only available for customers that meet the requirements in question 1.
 
+<!--
 >[!Note]
 >INTERNAL: That decision is pending
 >
+--> 
 
 #### 6.	How do I provide feedback? 
 
