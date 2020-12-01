@@ -137,8 +137,41 @@ What do we expect end users to do differently? How can IT help them comply?Unpub
 
 I’m sure we have something about creating/using groups…	
 
+## Training for administrators
+MS Learn
+
+https://docs.microsoft.com/en-us/learn/paths/m365-manage-team-collaboration/
 
 
+### Manage team collaboration with Microsoft Teams
+
+|||
+|:---|:---|
+|![Teams training icon](../media/manage-team-collaboration-with-microsoft-teams.svg)|2 hr 17 min - Learning Path - 5 Modules<br>Manage team collaboration with Microsoft Teams introduces you to the features and capabilities of Microsoft Teams, the central hub for team collaboration in Microsoft 365. You’ll learn how you can use Teams to facilitate teamwork and communication within your organization, both on and off premises, on a wide range of devices—from desktops to tablets to phones—while taking advantage of all the rich functionality of Office 365 applications. You’ll gain an understanding of how Teams provides a comprehensive and flexible environment for collaboration across applications and devices. This learning path can help you prepare for the Microsoft 365 Certified: Teams Administrator Associate certification.|
+
+
+Start https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/
+
+
+
+
+https://docs.microsoft.com/en-us/learn/paths/m365-teams-sharepoint/
+
+![SharePoint training icon](../media/collaborate-with-sharepoint-in-microsoft-365.svg)
+
+Collaborate with SharePoint in Microsoft 365
+1 hr 14 min
+Learning Path
+4 Modules
+Intermediate
+Administrator
+Microsoft 365
+Office 365
+Manage shared content with Microsoft SharePoint introduces you to the features and capabilities of SharePoint, and how it works with Microsoft 365. You'll learn about the different types of SharePoint sites, including hub sites, as well as information protection, reporting, and monitoring. You'll also learn how to use SharePoint file and folder sharing to optimize collaboration, how to share files externally, and how to manage SharePoint sites in the SharePoint admin center. This learning path can help you prepare for the Microsoft 365 Certified: Teamwork Administrator Associate certification.
+
+Prerequisites
+Basic understanding of Microsoft 365.
+Start https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/
 
 ## Illustrations
 
