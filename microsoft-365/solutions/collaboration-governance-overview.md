@@ -1,5 +1,5 @@
 ---
-title: "Overview of collaboration governance in Microsoft 365"
+title: "What is collaboration governance?"
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -18,9 +18,19 @@ f1.keywords: NOCSH
 description: "Learn about how to govern related features in Microsoft 365 groups, Teams, SharePoint, and Yammer."
 ---
 
-# Overview of collaboration governance in Microsoft 365
+# What is collaboration governance?
 
 Microsoft 365 has a rich set of tools to implement any governance capabilities your organization might require. This article guides IT Pros to ask the right questions to determine their requirements for governance and how to meet them based on their organizational profile.
+
+
+Microsoft 365 groups help users (?) manage with whom and how they share information
+Microsoft 365 empowers users and reduces the risk...by providing the tools needed to collaborate. Underneath and interacting with services in Microsoft 365 are Microsoft 365 groups, which let users choose a set of people with whom they want to collaborate, and easily set up a collection of resources for those people to share. … 
+
+
+Req’d element: Key capabilities/licensing options. We usually have a table to cover this. Perhaps we can have just a statement that this guidance applies to any M365 SKU, just that the apps available to them will vary?
+
+
+![Chart showing collaboration governance options in Microsoft 365](../media/collaboration-governance-overview.png)
 
 ## What are Microsoft 365 groups?
 
@@ -34,7 +44,7 @@ Services such as Microsoft 365 groups, Teams, and Yammer empower users and reduc
 
 Microsoft 365 Groups includes a variety of governance controls, including an expiration policy, naming conventions, and a blocked words policy, to help you manage groups in your organization. See [Plan organization and lifecycle governance for Microsoft 365 groups and Microsoft Teams](plan-organization-lifecycle-governance.md) for details.
 
-## Technical architecture
+## Communications methods supported by Microsoft 365
 
 There are three main communication methods supported by Microsoft 365:
 
@@ -46,19 +56,27 @@ There are three main communication methods supported by Microsoft 365:
 > Creating a new group via other teamwork applications - such as SharePoint, Planner or Stream - will create a group with an Outlook inbox and the ability to connect to Teams.
 
 Depending on where a group is created, certain resources are provisioned automatically, such as:
-- [Inbox](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) - For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.
- - [Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a) – For scheduling events related to the group
-- [SharePoint team site](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e) – A central repository for information, links and content relating to your group
-- [OneNote notebook](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97) – For gathering ideas, research, and information
-- [Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) – For assigning and managing project tasks among your group members
-- [Yammer group](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) – A common place to have conversations and share information
-- Teams – A chat-based workspace in Microsoft 365
-- Stream - A video streaming service
+
+|Resource|Description|
+|:------|:----------|
+|[Inbox](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.|
+|[Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|For scheduling events related to the group|
+|[SharePoint team site](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|A central repository for information, links and content relating to your group|
+|[OneNote notebook](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|For gathering ideas, research, and information|
+|[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|For assigning and managing project tasks among your group members|
+|[Yammer group](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|A common place to have conversations and share information|
+|Teams|A chat-based workspace in Microsoft 36|
+|Stream|A video streaming service|
 
 > [!NOTE]
 > When a new Office 365 Group is created via Yammer or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Yammer groups cannot be connected to Teams.
 
+
+## Define a communication (or collaboration?) strategy (for your organization? for your team?)
+… 
 ## Collaboration options
+
+I keep tripping over who is doing the creating, and who this article is for. Does IT create the group? Or do users create groups on the fly? Who’s making the decision?
 
 There are multiple places to collaborate and have conversations within Microsoft 365. Understanding where to start a conversation can help you define a strategy for communication.
 
@@ -80,7 +98,40 @@ There are multiple places to collaborate and have conversations within Microsoft
  
 Every group gets a connected SharePoint team site where users can share content, create customized pages and author news. You can also [connect existing SharePoint team sites to new Microsoft 365 groups](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview).
 
+
+
+## Req’d element: Steps to set up. 
+
+This isn’t so much something that you set up, so we’ll sub with what are the next steps? I assume they’re the next sections in the TOC? Suggest an overview graphic like this, with a list that calls out the steps with links to the articles. Need to tune up the articles too, to be more active & prescriptive and less reference-y.
+
+
+![](../media/collaboration-governance-steps.png)
+
+
+## Req’d element: Best practices. 
+
+I’m not seeing a lot of prescriptive guidance in here, just options? Can we provide some best practices or learnings from the talks you reference below?
+
+
+## Req’d element: End user impact/change management. 
+
+What do we expect end users to do differently? How can IT help them comply?Unpublished end user article coming...
+
+
+## Req’d element: End user training.
+
+I’m sure we have something about creating/using groups…	
+
+
+
+
 ## Illustrations
+
+
+Opt’l element: Architecture illustrations. Switch order so we have groups 1st? Or do we even need the Teams one?	
+
+Frame this with an intro – why look at these? IP/Compliance capabilities in Teams – include that too
+
 
 ### Microsoft Teams and related productivity services in Microsoft 365 for IT architects
 The logical architecture of productivity services in Microsoft 365, leading with Microsoft Teams.
