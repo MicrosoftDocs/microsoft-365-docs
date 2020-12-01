@@ -129,7 +129,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 9. Review your settings and choose **Submit**.
 
-10. The new DLP policy will appear in the policy list.
+10. The new DLP policy will appear in the policy list. 123
 
 11. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
 
