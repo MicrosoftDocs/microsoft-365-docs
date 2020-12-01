@@ -208,7 +208,7 @@
     - name: Manage your data and services
       href: manage/index.yml
       items:
-         - name: Monitor your business activity by using reports
+         - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
          - name: Microsoft Productivity Score - overview
            href: productivity/productivity-score.md
