@@ -50,7 +50,7 @@ Use the following instructions for the two admin steps.
 > [!NOTE]
 > Auto-policies use service-side labeling with conditions to automatically apply retention labels. You can also automatically apply a retention label with a label policy when you do the following: 
 >
-> - Apply a default retention label to a SharePoint library, folder, or document set so that unlabeled content in that container is automatically labeled
+> - Apply a default retention label for SharePoint and Outlook, so that unlabeled content is automatically labeled
 >- Automatically applying a retention label to email by using rules
 >
 > For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-labels.md).
@@ -87,7 +87,6 @@ Navigation instructions depend on whether you're using [records management](reco
 
 To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
-
 ### Step 2: Create an auto-apply policy
 
 When you create an auto-apply policy, you select a retention label to automatically apply to content, based on the conditions that you specify.
@@ -110,6 +109,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 To edit an existing auto-apply policy, select it to start the Edit retention policy wizard that lets you change the selected retention label and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
+After content is labeled by using an auto-apply label policy, the applied label can't be automatically removed or changed by changing the content or the policy, or by a new auto-apply label policy. For more information, see [Only one retention label at a time](retention.md#only-one-retention-label-at-a-time).
 
 ### Configuring conditions for auto-apply retention labels
 

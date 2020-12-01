@@ -57,9 +57,9 @@ To put it another way: as a security service, we're acting on your behalf to pre
 
 The only override that allows high confidence phishing message to bypass filtering is Exchange mail flow rules (also known as transport rules). To use mail flow rules to bypass filtering, see [Use mail flow rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-You should only use overrides in the following scenarios:
+You should only consider using overrides in the following scenarios:
 
 - Phishing simulations: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
-- Security/SecOps mailboxes: dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content.
-- Third-party filters: Some third party vendors will recommend turning off EOP (SCL=-1) as the third-party filter will manage the mail filtering. Microsoft does not recommend turning off EOP as EOP is required for Defender for Office 365.
-- False positives: You may want to allow certain messages that are still being analyzed by Microsoft [via Admin submissions](admin-submission.md). As with all overrides, it is recommended that they are temporary.
+- Security/SecOps mailboxes: Dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content.
+- Third-party filters: Some third-party vendors will recommend turning off EOP (SCL=-1) as the third-party filter will manage the mail filtering. Microsoft does not recommend turning off EOP as EOP is required for Defender for Office 365. Instead, the recommendation here is to turn on [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- False positives: You might want to temporarily allow certain messages that are still being analyzed by Microsoft [via Admin submissions](admin-submission.md). As with all overrides, it is recommended that they are temporary.
