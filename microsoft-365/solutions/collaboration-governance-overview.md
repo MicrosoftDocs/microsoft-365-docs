@@ -133,10 +133,6 @@ I’m not seeing a lot of prescriptive guidance in here, just options? Can we pr
 What do we expect end users to do differently? How can IT help them comply?Unpublished end user article coming...
 
 
-## Req’d element: End user training.
-
-I’m sure we have something about creating/using groups…	
-
 ## Training for administrators
 
 These training modules from Microsoft Learn can help you learn the collaboration features in Teams and SharePoint.
