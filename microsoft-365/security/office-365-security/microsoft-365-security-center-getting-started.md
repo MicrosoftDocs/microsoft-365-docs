@@ -93,7 +93,7 @@ Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365
 
 The last step in 'Getting Started' is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
 
-Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. MSDO security operations teams can monitor ZAP misses by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
+Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. Security teams can monitor ZAP misses by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
 
 1. On the Advanced Hunting page, click Query.
 1. Copy the query below into the query window.
