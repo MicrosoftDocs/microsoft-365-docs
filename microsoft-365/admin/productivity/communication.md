@@ -62,7 +62,7 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
 
  This chart provides the trend of numerator of the key metric in the primary insight – that is, the number of people using more than one communication modes over the last 180 days. Here that the daily value is an aggregate of the number of people who use multiple forms of communication over the last 28 days.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Chart that shows number of poeple who use more than one mode to communicate vs. time.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Chart that shows number of people who use more than one mode to communicate vs. time.":::
 
 ### Scoring model
 
@@ -97,10 +97,10 @@ We also provide you with information that help you gain visibility into how peop
 1. **Header:** Highlights the increase in response rate for new email threads started in the last 28 days when they contain @mentions
 2. **Body:** Provides information on the value of using @mentions in emails. Additionally, people using @mentions is expressed as a percentage of all users who have sent an email in the last 28 days.
 3. **Visualization:** Breaks down the response rate for new email threads based on whether they had @mentions or not:
-      - **Responses to emails with @mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
+      - **Responses to emails with \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
           - **Numerator:** New email threads containing @mentions that were started and also received a response in the last 28 days.
           - **Denominator:** New email threads containing @mentions that were started in the last 28 days
-      - **Responses to emails without @mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
+      - **Responses to emails without \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
           - **Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.
           - **Denominator:** New email threads not containing @mentions that were started in the last 28 days.
 4. **View related content:** Select this link to view collated videos, and other related help content.
@@ -114,9 +114,9 @@ We also provide you with information that help you gain visibility into how peop
 2. **Body:** Provides information on the value of using channel messages within Microsoft Teams
 3. **Visualization:** Breaks down the use of chat and channel messages:
       - **People sending chat messages:** The colored portion and the fraction represent the use of chat messages within people who sent messages on Microsoft Teams. The fraction is constructed from:
-        - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days
-        - **Denominator:** People sent messages on Microsoft Teams in the last 28 days
-      - **People sending chat messages:** The colored portion and the fraction represent the use of channel messages within people sending messages on Microsoft Teams. The fraction is constructed from:
+        - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.
+        - **Denominator:** People who sent messages on Microsoft Teams in the last 28 days.
+      - **People sending Channel messages:** The colored portion and the fraction represent the use of channel messages within people sending messages on Microsoft Teams. The fraction is constructed from:
         - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.
         - **Denominator:** People who sent messages on Microsoft Teams in the last 28 days.
 4. **View related content:** Select this link to view collated videos, and other related help content.

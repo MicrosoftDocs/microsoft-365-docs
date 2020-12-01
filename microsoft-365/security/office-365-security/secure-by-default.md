@@ -37,26 +37,23 @@ Microsoft 365 organizations with mailboxes in Exchange Online are protected by E
 1. Email with suspected malware will automatically be quarantined and recipients will be notified. See [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 1. Phishing email identified as "high confidence" will be handled according to the anti-spam policy action. See [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-Because Microsoft wants to keep our customers secure by default, some tenants overrides are not applied for malware or high confidence phish. These overrides include:
+Because Microsoft wants to keep our customers secure by default, some tenants overrides are not applied for malware or high confidence phishing. These overrides include:
 
 - Allowed sender lists or allowed domain lists (anti-spam policies)
 - Outlook Safe senders
 - IP Allow List (connection filtering)
 
-More information on these overrides can be found in [Create safe sender lists](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
+More information on these overrides can be found in [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
-Secure by default here is not a setting that could be turned on or off, but the way our filtering works out of the box to keep potentially dangerous or unwanted messages out of your mailboxes. Malware and high confidence phish should be sent to quarantine. Only admins can manage messages that were quarantined as malware or high confidence phishing and they can also report false positives to Microsoft from there. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
+Secure by default here is not a setting that could be turned on or off, but the way our filtering works out of the box to keep potentially dangerous or unwanted messages out of your mailboxes. Malware and high confidence phishing should be sent to quarantine. Only admins can manage messages that were quarantined as malware or high confidence phishing and they can also report false positives to Microsoft from there. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
 
 ## Exceptions
 
-The only overrides that will bypass all filters include:
+The only override that allows high confidence phishing message to bypass filtering is Exchange mail flow rules (also known as transport rules). To use mail flow rules to bypass filtering, see [Use mail flow rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-- Exchange Transport Rules (ETR)/mail flow rules. Use mail flow rules to set the spam confidence level (SCL) in messages in EOP.
-- Tenant Allow/Block List: Manage URLs and files in the Tenant Allow/Block List.
+Overrides should only be used for:
 
-These types of overrides are useful for:
-
-- Phish simulations: simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
+- Phishing simulations: simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
 - Security/SecOps mailboxes: dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content.
-- Third-party filters: some third party vendors will recommend turning off EOP (SCL = -1) as the third-party filter will manage the mail filtering. Microsoft does not recommend turning off EOP as EOP is required for Defender for Office 365.
+- Third-party filters: some third-party vendors will recommend turning off EOP (SCL=-1) as the third-party filter will manage the mail filtering. Microsoft does not recommend turning off EOP as EOP is required for Defender for Office 365. Instead, the recommendation here is to turn on [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) instead.
 - False positives: you may want to allow certain messages that are still being analyzed by Microsoft [via Admin submissions](admin-submission.md). As with all overrides, it is recommended that they are temporary.

@@ -77,13 +77,11 @@ landingContent:
           - text: Compliance Manager
             url: compliance-manager.md
           - text: GDPR compliance action plan
-            url: gdpr-action-plan.md
-          - text: Information protection for GDPR
-            url: office-365-info-protection-for-gdpr-overview.md
+            url: https://docs.microsoft.com/compliance/regulatory/gdpr-action-plan
           - text: ISO compliance action plan
-            url: iso-action-plan.md
+            url: https://docs.microsoft.com/compliance/regulatory/iso-action-plan
           - text: NIST compliance action plan
-            url: nist-action-plan.md
+            url: https://docs.microsoft.com/compliance/regulatory/nist-action-plan
 
     # Card
   - title: Deploy compliance solutions
