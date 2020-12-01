@@ -90,18 +90,18 @@ We also provide you with information that help you gain visibility into how peop
 
       - **People sending emails:** The colored portion and the fraction represent the percentage of users enabled for Exchange that are sending emails. This fraction is constructed from:
 	  
-          - **Numerator**: People sending emails in the last 28 days.
-          - **Denominator**: People enabled for Exchange in the last 28 days.
+        - **Numerator**: People sending emails in the last 28 days.
+        - **Denominator**: People enabled for Exchange in the last 28 days.
 		  
       - **People sending messages in Microsoft Teams:** The colored portion and the fraction represent the percentage of users enabled for Microsoft Teams that are sending messages. This fraction is constructed from:
 	  
-          - **Numerator**: People sending messages on Microsoft Teams in the last 28 days.
-          - **Denominator**: People enabled for Microsoft Teams in the last 28 days.
+        - **Numerator**: People sending messages on Microsoft Teams in the last 28 days.
+        - **Denominator**: People enabled for Microsoft Teams in the last 28 days.
 		  
       - **People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Yammer that are posting in communities. This fraction is constructed from:
 	  
-          - **Numerator:** People posting in Yammer communities in the last 28 days.
-          - **Denominator:** People enabled for Yammer in the last 28 days.
+        - **Numerator:** People posting in Yammer communities in the last 28 days.
+        - **Denominator:** People enabled for Yammer in the last 28 days.
 		  
 - **View related content:** Select this link to view collated videos, and other related help content.
 
@@ -115,15 +115,15 @@ We also provide you with information that help you gain visibility into how peop
 
 - **Visualization:** Breaks down the response rate for new email threads based on whether they had @mentions or not:
 
-      - **Responses to emails with \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
+  - **Responses to emails with \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
 	  
-        - **Numerator:** New email threads containing @mentions that were started and also received a response in the last 28 days.
-        - **Denominator:** New email threads containing @mentions that were started in the last 28 days
+    - **Numerator:** New email threads containing @mentions that were started and also received a response in the last 28 days.
+    - **Denominator:** New email threads containing @mentions that were started in the last 28 days
 		  
-      - **Responses to emails without \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
+  - **Responses to emails without \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
 	  
-        - **Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.
-        - **Denominator:** New email threads not containing @mentions that were started in the last 28 days.
+    - **Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.
+    - **Denominator:** New email threads not containing @mentions that were started in the last 28 days.
 		
 - **View related content:** Select this link to view collated videos, and other related help content.
 
@@ -160,13 +160,15 @@ We also provide you with information that help you gain visibility into how peop
 
 - **Visualization:** Breaks down the use of the questions and answers feature in your org:
 
-      - **Questions:** The colored portion of the bar and associated number represents the total number of posts marked as questions in the last 28 days.
+  - **Questions:** The colored portion of the bar and associated number represents the total number of posts marked as questions in the last 28 days.
 	  
-      - **Questions with answers:** The colored portion of the bar and the associated number represents the number of posts marked as questions and have received answers in the last 28 days.
+  - **Questions with answers:** The colored portion of the bar and the associated number represents the number of posts marked as questions and have received answers in the last 28 days.
 	  
-      - **Questions with best answers:** The colored portion of the bar and the associated number represents the number of posts that were marked as questions and have also received a &quot;best answer&quot; in the last 28 days.
+  - **Questions with best answers:** The colored portion of the bar and the associated number represents the number of posts that were marked as questions and have also received a &quot;best answer&quot; in the last 28 days.
 	  
 - **View related content:** Select this link to view collated videos, and other related help content.
+
+
 ## Explore how people in your organization communicate
 
 This section provides you with user-level details of activities relevant to all the insights on the page. The columns in the table are described as follows:

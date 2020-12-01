@@ -118,23 +118,24 @@ You must be a [global admin](about-admin-roles.md) to do these steps.
 
 3. Select **Set as Primary** for the email address that you want to set as the primary email address for that person. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
-    
-    Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+   > [!IMPORTANT]
+   > You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+   > 
+   > Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
 5. Tell the person the following information:
  
-  - This change may take a while to take effect.
+   - This change may take a while to take effect.
   
-  - What their new username is. They'll need it to sign in to Microsoft 365.
+   - What their new username is. They'll need it to sign in to Microsoft 365.
     
-  - If they are using Skype for Business Online, tell them they will need to reschedule any Skype for Business Online meetings that they organized, and that they will need to tell their external contacts to update the old contact information.
+   - If they are using Skype for Business Online, tell them they will need to reschedule any Skype for Business Online meetings that they organized, and that they will need to tell their external contacts to update the old contact information.
 
-  - If they are using OneDrive, tell them that the URL to this location has been changed. If they have OneNote notebooks in their OneDrive, then they may need to close and reopen them in OneNote. If they have shared files from their OneDrive, then the links to the files may not work and the user can reshare.    
+   - If they are using OneDrive, tell them that the URL to this location has been changed. If they have OneNote notebooks in their OneDrive, then they may need to close and reopen them in OneNote. If they have shared files from their OneDrive, then the links to the files may not work and the user can reshare.    
   
-  - If their password changed too, tell them that they will be prompted to enter the new password on their mobile device, or it won't sync.
+   - If their password changed too, tell them that they will be prompted to enter the new password on their mobile device, or it won't sync.
 
 ::: moniker-end
 
@@ -146,23 +147,24 @@ You must be a [global admin](about-admin-roles.md) to do these steps.
 
 3. Select **Set as Primary** for the email address that you want to set as the primary email address for that person. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
-    
-    Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+   > [!IMPORTANT]
+   > You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+   >  
+   > Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
 5. Tell the person the following information:
  
-  - This change may take a while to take effect.
+   - This change may take a while to take effect.
   
-  - What their new username is. They'll need it to sign in to Microsoft 365.
+   - What their new username is. They'll need it to sign in to Microsoft 365.
     
-  - If they are using Skype for Business Online, tell them they will need to reschedule any Skype for Business Online meetings that they organized, and that they will need to tell their external contacts to update the old contact information.
+   - If they are using Skype for Business Online, tell them they will need to reschedule any Skype for Business Online meetings that they organized, and that they will need to tell their external contacts to update the old contact information.
 
-  - If they are using OneDrive, tell them that the URL to this location has been changed. If they have OneNote notebooks in their OneDrive, then they may need to close and reopen them in OneNote. If they have shared files from their OneDrive, then the links to the files may not work and the user can reshare.    
+   - If they are using OneDrive, tell them that the URL to this location has been changed. If they have OneNote notebooks in their OneDrive, then they may need to close and reopen them in OneNote. If they have shared files from their OneDrive, then the links to the files may not work and the user can reshare.    
   
-  - If their password changed too, tell them that they will be prompted to enter the new password on their mobile device, or it won't sync.
+   - If their password changed too, tell them that they will be prompted to enter the new password on their mobile device, or it won't sync.
 
 ::: moniker-end
   
@@ -176,7 +178,7 @@ You must be a [global admin](about-admin-roles.md) to do these steps.
 
 3. In the **Display name** box, type a new name for the person, and then select **Save**.
 
-    If you get the error message "**We're sorry, the user couldn't be edited. Review the user information and try again**, see [Resolve error messages](#resolve-error-messages).
+   If you get the error message "**We're sorry, the user couldn't be edited. Review the user information and try again**, see [Resolve error messages](#resolve-error-messages).
 
 It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username.
 
@@ -190,7 +192,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 3. In the **Display name** box, type a new name for the person, and then select **Save**.
 
-    If you get the error message "**We're sorry, the user couldn't be edited. Review the user information and try again**, see [Resolve error messages](#resolve-error-messages).
+   If you get the error message "**We're sorry, the user couldn't be edited. Review the user information and try again**, see [Resolve error messages](#resolve-error-messages).
 
 It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
@@ -204,7 +206,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 3. In the **Display name** box, type a new name for the person, and then select **Save**.
 
-    If you get the error message "**We're sorry, the user couldn't be edited. Review the user information and try again**, see [Resolve error messages](#resolve-error-messages).
+   If you get the error message "**We're sorry, the user couldn't be edited. Review the user information and try again**, see [Resolve error messages](#resolve-error-messages).
 
 It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
