@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint in the Microsoft 365 security center
 description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 security center
-keywords: Getting started with the 'Microsoft 365 Security' center, OATP, MDATP, MSDO, MSDE, single pane of glass, converged portal, new security portal, new defender security portal
+keywords: Getting started with the 'Microsoft 365 Security' center, OATP, MDATP, MDO, MDE, single pane of glass, converged portal, new security portal, new defender security portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 
 # Microsoft Defender for Endpoint in the Microsoft 365 security center
 
-The new Microsoft 365 security center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 security & compliance center. [Learn more about the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
+The new Microsoft 365 security center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 security & compliance center. [Learn more about the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
 
 Use this URL to access the new security center: https://security.microsoft.com
 
@@ -44,7 +44,7 @@ The Microsoft 365 security navigation pane will look fairly familiar if you are 
 |---------|---------|
  | ![Email and collaboration left navigation.](../../media/m365-security-email-collab-nav.png)  |    ![Access and reporting left navigation.](../../media/m365-security-access-reporting-nav.png) |
 
-## Microsoft Defender Security Center navigation (old)
+## Microsoft Defender Security Center navigation
 
 This what the current Microsoft Defender Security Center navigation pane looks like, for comparison.
 
