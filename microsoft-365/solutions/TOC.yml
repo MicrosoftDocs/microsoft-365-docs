@@ -98,16 +98,18 @@
 
     - name: Tenant management
       items:
+      - name: Overview
+        href: tenant-management-overview.md
       - name: Your tenancies
         href: tenant-management-your-tenancies.md
-      - name: Optimal networking 
-        href: placeholder.md
+      - name: Optimal networking
+        href: tenant-management-networking.md
       - name: Identity
-        href: placeholder.md
+        href: tenant-management-identity.md
       - name: Migration
-        href: placeholder.md
+        href: tenant-management-migration.md
       - name: Device management
-        href: placeholder.md
+        href: tenant-management-device-management.md
 
     - name: Teamwork and collaboration
       items:
