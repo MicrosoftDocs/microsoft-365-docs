@@ -76,8 +76,8 @@ You must be a [global admin](about-admin-roles.md) to do these steps.
 
 ::: moniker-end
 
-**IMPORTANT**: 
-If you get an error message, see [Resolve error messages](#resolve-error-messages).
+> [!IMPORTANT]
+> If you get an error message, see [Resolve error messages](#resolve-error-messages).
 
 ## Set the primary email address
 
@@ -89,23 +89,24 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
 
 3. Select **Set as Primary** for the email address that you want to set as the primary email address for that person. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
-    
-    Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+   > [!IMPORTANT]
+   > You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+   >  
+   > Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
 5. Give the person the following information:
  
-  - This change could take a while.
+   - This change could take a while.
   
-  - Their new username. They'll need it to sign in to Microsoft 365.
+   - Their new username. They'll need it to sign in to Microsoft 365.
     
-  - If they are using Skype for Business Online, they must reschedule any Skype for Business Online meetings that they organized, and tell their external contacts to update their contact information.
+   - If they are using Skype for Business Online, they must reschedule any Skype for Business Online meetings that they organized, and tell their external contacts to update their contact information.
 
-  - If they are using OneDrive, the URL to this location has changed. If they have OneNote notebooks in their OneDrive, they might need to close and reopen them in OneNote. If they have shared files from their OneDrive, the links to the files might not work and the user can reshare.    
+   - If they are using OneDrive, the URL to this location has changed. If they have OneNote notebooks in their OneDrive, they might need to close and reopen them in OneNote. If they have shared files from their OneDrive, the links to the files might not work and the user can reshare.    
   
-  - If their password changed too, they are prompted to enter the new password on their mobile device, or it won't sync.
+   - If their password changed too, they are prompted to enter the new password on their mobile device, or it won't sync.
   
 ::: moniker-end
 
@@ -213,7 +214,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 ### "A parameter cannot be found that matches parameter name 'EmailAddresses"
 
-If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) and ask them to do a full sync for you.
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the setup process has time to finish, and then try again. If the problem persists, call [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) and ask them to do a full sync for you.
   
 ### "We're sorry, the user couldn't be edited. Review the user information and try again"
 
