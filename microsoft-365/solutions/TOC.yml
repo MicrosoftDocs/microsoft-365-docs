@@ -101,7 +101,7 @@
       - name: Overview
         href: tenant-management-overview.md
       - name: Your tenancies
-        href: tenant-management-your-tenancies.md
+        href: tenant-management-tenancies.md
       - name: Optimal networking
         href: tenant-management-networking.md
       - name: Identity
