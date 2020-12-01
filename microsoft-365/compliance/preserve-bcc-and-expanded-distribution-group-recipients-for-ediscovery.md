@@ -16,7 +16,7 @@ description: "In-Place Hold, Litigation Hold, and Microsoft 365 retention polici
 
 # Preserve Bcc and expanded distribution group recipients for eDiscovery
   
-In-Place Hold, Litigation Hold, and [Microsoft 365 retention policies](https://go.microsoft.com/fwlink/?LinkID=827811) (created in the Security & Compliance Center) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default, but your organization may require the ability to search for and reproduce details about all recipients of a message. This includes: 
+In-Place Hold, Litigation Hold, and [Microsoft 365 retention policies](https://go.microsoft.com/fwlink/?LinkID=827811) (created in the Security & Compliance Center) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default. But your organization may require the ability to search for and reproduce details about all recipients of a message. This includes:
   
 - **Recipients addressed using the Bcc field of a message:** Bcc recipients are stored in the message in the sender's mailbox, but not included in headers of the message delivered to recipients. 
     
@@ -28,13 +28,13 @@ Exchange Online and Exchange Server 2013 (Cumulative Update 7 and later versions
 
 As stated earlier, information about Bcc'ed recipients is stored with the message in the sender's mailbox. This information is indexed and available to eDiscovery searches and holds. 
   
-Information about expanded distribution group recipients is stored with the message after you place a mailbox on In-Place Hold or Litigation Hold. In Office 365, this information is also stored when an Microsoft 365 retention policy is applied to a mailbox. Distribution group membership is determined at the time the message is sent. The expanded recipients list stored with the message is not impacted by changes to membership of the group after the message is sent. 
+Information about expanded distribution group recipients is stored with the message after you place a mailbox on In-Place Hold or Litigation Hold. In Office 365, this information is also stored when a Microsoft 365 retention policy is applied to a mailbox. Distribution group membership is determined at the time the message is sent. The expanded recipients list stored with the message is not impacted by changes to membership of the group after the message is sent. 
   
 |**Information about…**|**Is stored in…**|**Is stored by default?**|**Is accessible to…**|
 |:-----|:-----|:-----|:-----|
 |To and Cc recipients  <br/> |Message properties in the sender and recipients' mailboxes.  <br/> |Yes  <br/> |Sender, recipients, and compliance officers  <br/> |
 |Bcc recipients  <br/> |Message property in the sender's mailbox.  <br/> |Yes  <br/> |Sender and compliance officers  <br/> |
-|Expanded distribution group recipients  <br/> |Message properties in the sender's mailbox.  <br/> |No. Expanded distribution group recipient information is stored after a mailbox is placed on In-Place Hold or Litigation Hold, or assigned to an Microsoft 365 retention policy.  <br/> |Compliance officers  <br/> |
+|Expanded distribution group recipients  <br/> |Message properties in the sender's mailbox.  <br/> |No. Expanded distribution group recipient information is stored after a mailbox is placed on In-Place Hold or Litigation Hold, or assigned to a Microsoft 365 retention policy.  <br/> |Compliance officers  <br/> |
    
 ## Searching for messages sent to Bcc and expanded distribution group recipients
 
