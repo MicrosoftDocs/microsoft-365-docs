@@ -88,20 +88,20 @@ We also provide you with information that help you gain visibility into how peop
 
 - **Visualization:** The breakdown represents the use for each mode. The colored portion and the fraction on each bar represent the number of people sending emails, messages, or community posts as a percentage of number of people enabled for that mode:
 
-      - **People sending emails:** The colored portion and the fraction represent the percentage of users enabled for Exchange that are sending emails. This fraction is constructed from:
+  - **People sending emails:** The colored portion and the fraction represent the percentage of users enabled for Exchange that are sending emails. This fraction is constructed from:
 	  
-        - **Numerator**: People sending emails in the last 28 days.
-        - **Denominator**: People enabled for Exchange in the last 28 days.
+    - **Numerator**: People sending emails in the last 28 days.
+    - **Denominator**: People enabled for Exchange in the last 28 days.
 		  
-      - **People sending messages in Microsoft Teams:** The colored portion and the fraction represent the percentage of users enabled for Microsoft Teams that are sending messages. This fraction is constructed from:
+  - **People sending messages in Microsoft Teams:** The colored portion and the fraction represent the percentage of users enabled for Microsoft Teams that are sending messages. This fraction is constructed from:
 	  
-        - **Numerator**: People sending messages on Microsoft Teams in the last 28 days.
-        - **Denominator**: People enabled for Microsoft Teams in the last 28 days.
+    - **Numerator**: People sending messages on Microsoft Teams in the last 28 days.
+    - **Denominator**: People enabled for Microsoft Teams in the last 28 days.
 		  
-      - **People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Yammer that are posting in communities. This fraction is constructed from:
+  - **People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Yammer that are posting in communities. This fraction is constructed from:
 	  
-        - **Numerator:** People posting in Yammer communities in the last 28 days.
-        - **Denominator:** People enabled for Yammer in the last 28 days.
+    - **Numerator:** People posting in Yammer communities in the last 28 days.
+    - **Denominator:** People enabled for Yammer in the last 28 days.
 		  
 - **View related content:** Select this link to view collated videos, and other related help content.
 
