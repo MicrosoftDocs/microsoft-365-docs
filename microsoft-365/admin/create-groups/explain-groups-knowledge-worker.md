@@ -28,9 +28,9 @@ Because groups can be created in several ways, we recommend training your users 
 
 - If your organization does most of its communication using email, instruct your users to create groups in Outlook.
 - If your organization heavily uses SharePoint or is migrating from SharePoint on-premises, instruct your users to create SharePoint team sites for collaboration.
-- If your organization has deployed Teams, instruct your users to create a team when they need need a collaboration space.
+- If your organization has deployed Teams, instruct your users to create a team when they need a collaboration space.
 
-![image desc](../../media/03.png)
+[ ![image desc](../../media/03.png) ](../../media/03.png#lightbox)
 
 If you train your users to always use the group creation method that most aligns with their way of working when they need a space to collaborate with others, you can help avoid confusion and duplication of resources. As users become more experienced, they will understand better the collection of services that come with a group and that different creation methods lead to the same result.
 
