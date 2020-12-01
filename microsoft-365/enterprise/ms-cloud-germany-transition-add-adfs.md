@@ -72,7 +72,7 @@ To restore the AD FS farm in a disaster [AD FS Rapid Restore Tool](https://docs.
 
 4. Store the backup safely on a desired destination. 
 
-### Restore AD FS Farm
+### Restore an AD FS Farm
 
 If your farm failed completely and there is no way to return to the old farm, do the following. 
 
