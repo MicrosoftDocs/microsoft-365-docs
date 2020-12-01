@@ -258,7 +258,7 @@ Moving through the transition:
 
 - [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
 - [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
-- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), and [experiences](ms-cloud-germany-transition-add-experience.md).
+- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), [experiences](ms-cloud-germany-transition-add-experience.md), and [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud apps:
 
