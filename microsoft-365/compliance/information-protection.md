@@ -33,6 +33,9 @@ For information about governing your data, see [Microsoft Information Governance
 
 ## Know your data
 
+> [!NOTE]
+> For information about classifying and labeling data in Azure Purview, currently in preview, see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+
 To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
  
 |Capability|What problems does it solve?|Get started|
@@ -42,9 +45,6 @@ To understand your data landscape and identify important data across your hybrid
 |[Data classification](data-classification-overview.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization and the actions that your users are taking on them  | [Get started with content explorer](data-classification-content-explorer.md)<br /><br /> [Get started with activity explorer](data-classification-activity-explorer.md) |
 
 ## Protect your data
-
-> [!NOTE]
-> For information about extending and applying sensitivity labels in Azure Purview, currently in preview, see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
 To apply flexible protection actions that include encryption, access restrictions, and visual markings, use the following capabilities:
 
