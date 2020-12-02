@@ -202,8 +202,8 @@ You make your sensitivity labels available to users by publishing them in a sens
 A label policy consists of:
 
 - A set of labels.
-- The scope of the label policy, meaning the users and groups included in the policy.
-- The settings of the label policy described above (default label, justification, mandatory label, and help link).
+- The users and groups that will be assigned the policy with labels.
+- The scope of the policy and policy settings for that scope (such as default label for files and emails).
 
 You can include a user in multiple label policies, and the user will see all the sensitivity labels from those policies. However, a user gets the policy settings from only the label policy with the highest priority.
 
