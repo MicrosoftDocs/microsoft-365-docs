@@ -197,7 +197,7 @@ The following impersonation settings are only available in anti-phishing policie
 
 > [!IMPORTANT]
 >
-> Even when the impersonation safety tips are turned off, **it is recommended** you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** to messages. Specific safety tips will be displayed notifying recipients that they often don't get email from the sender or in cases when the recipient gets an email for the first time from the sender.
+> Even when the impersonation safety tips are turned off, **it is recommended** you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** with value **enable** to messages. Specific safety tips will be displayed notifying recipients that they often don't get email from the sender or in cases when the recipient gets an email for the first time from the sender.
 >:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="The text of the safety tip for impersonation protection with multiple recipients.":::
 <p>
 
