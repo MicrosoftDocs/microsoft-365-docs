@@ -25,7 +25,7 @@ Insider risks are one of the top concerns of security and compliance professiona
 
 Insider risks include vulnerabilities in a variety of areas and can cause major problems for your organization, ranging from the loss of intellectual property to workplace harassment, and more. The following figure outlines common insider risks.
 
-ARTWORK PLACEHOLDER
+![Insider risk threats](../media/ir-solution-threats.png)
 
 Microsoft 365 risk prevention features are designed and built-in to our insider risk products and solutions. These solutions work together and use advanced service and 3rd-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
 
