@@ -145,6 +145,17 @@ See [Plan organization and lifecycle governance for Microsoft 365 groups and Mic
 I’m not seeing a lot of prescriptive guidance in here, just options? Can we provide some best practices or learnings from the talks you reference below?
 
 
+Identify your biggest users of collab solutions and meet with them to gather info and understand their needs.
+
+boil down the core use cases.
+
+talk to your customer success manager
+
+learning pathways
+
+tech community
+
+
 ## End user impact and change management
 
 Because groups and teams can be created in several ways, we recommend training your users to use the method that fits your organization the best:
