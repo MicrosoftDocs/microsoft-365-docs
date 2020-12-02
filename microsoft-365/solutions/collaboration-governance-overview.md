@@ -92,12 +92,6 @@ Governance capabilities for collaboration in Microsoft 365 include features in M
 
 ## Define a collaboration strategy for your organization
 
-
-I keep tripping over who is doing the creating, and who this article is for. Does IT create the group? Or do users create groups on the fly? Who’s making the decision?
-
-
-
-
 There are multiple places to collaborate and have conversations within Microsoft 365. Understanding where users can start conversations can help you define a strategy for communication.
 
 ![Diagram showing when to use Teams, Yammer, and Outlook](../media/inner-loop-outer-loop.png)
@@ -118,7 +112,7 @@ There are multiple places to collaborate and have conversations within Microsoft
  
 
 
-## Req’d element: Steps to set up. 
+## Create your governance plan 
 
 This isn’t so much something that you set up, so we’ll sub with what are the next steps? I assume they’re the next sections in the TOC? Suggest an overview graphic like this, with a list that calls out the steps with links to the articles. Need to tune up the articles too, to be more active & prescriptive and less reference-y.
 
