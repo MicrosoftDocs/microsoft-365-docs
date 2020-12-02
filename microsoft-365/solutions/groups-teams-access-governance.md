@@ -30,7 +30,7 @@ The following table provides a quick reference for the access controls available
 ||Dynamic group membership based on rules|[Create or update a dynamic group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Control who can share files, folders, and sites.|[Set up and manage access requests](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Conditional access|||
-||Multi-Factor Authentication|[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Multi-Factor Authentication|[Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Control device access based on group, team, or site sensitivity.|[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||Limit site access for unmanaged devices.|[Control SharePoint access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||Control site access based on location|[Control access to SharePoint and OneDrive data based on network location](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
@@ -68,7 +68,7 @@ SharePoint sites provide the ability to add owners, members, and visitors apart 
 
 With Microsoft 365, you can require multi-factor authentication for both people inside and outside your organization. There are many options for the circumstances when people are prompted for a second factor of authentication. We highly recommend that you deploy multi-factor authentication for your organization:
 
-- [Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 If you have sensitive information in some of your groups and teams, you can enforce device management policies based on a group or team's sensitivity label. You can block access entirely from unmanaged devices, or allow limited, web only access:
 

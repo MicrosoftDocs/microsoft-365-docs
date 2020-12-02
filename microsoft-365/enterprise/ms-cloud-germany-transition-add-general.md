@@ -44,14 +44,14 @@ There are three preconditions to updating your sign-in authority:
 
 An application could be any of the following:
 
-- Single-page app (SPA)
-- Web app that signs in users
-- Web app that calls web APIs
-- Protected web API
-- Web API that calls web APIs
-- Desktop app
-- Daemon app
-- Mobile app
+- [Single-page app (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [Web app that signs in users](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Web app that calls web APIs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [Protected web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [Web API that calls web APIs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [Desktop app](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+- [Daemon app](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+- [Mobile app](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > When an application switches to using `login.microsoftonline.com` as your authority, the tokens will be signed by this new authority. If you host any resource applications that other apps call into, you will need to allow for lax token validation. This means that your app needs to allow tokens that are signed by both the Azure AD Germany and Azure AD public clouds. This lax token validation is needed until all client applications that call your service are fully migrated to the Azure AD public cloud. After migration, your resource application only needs to accept tokens signed by the Azure AD public cloud.
@@ -71,10 +71,10 @@ An application could be any of the following:
 
 5. Update environment parameters to be `AzurePublic` (instead of `AzureGermany`) in administrative tools and scripts for:
 
-    - Azure PowerShell
-    - Azure AD PowerShell (MSOnline)
-    - Azure AD PowerShell (AzureAD)
-    - Azure CLI
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
+    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
  
 **What about applications that I publish?**
 
@@ -160,7 +160,7 @@ Moving through the transition:
 
 - [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
 - [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
-- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), and [experiences](ms-cloud-germany-transition-add-experience.md).
+- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), [experiences](ms-cloud-germany-transition-add-experience.md), and [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud apps:
 
