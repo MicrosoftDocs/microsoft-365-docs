@@ -131,9 +131,9 @@ Setting up and configuring EDM-based classification involves:
 
 The above XML sample makes use of the `caseInsensitive` and the `ignoredDelimiters` fields. 
 
-When you include the ***caseInsensitive*** field set to the value of `true`in your schema definition, EDM will not exclude an item based on case differences for `PatientID` field. So EDM will see, `PatientID` **FOO-1234** and **fOo-1234** will be seen as identical.
+When you include the ***caseInsensitive*** field set to the value of `true`in your schema definition, EDM will not exclude an item based on case differences for `PatientID` field. So EDM will see, `PatientID` **FOO-1234** and **fOo-1234** as being identical.
 
-When you include the ***ignoredDelimiters*** field with supported characters,  EDM will ignore those characters in the `PatientID`. So EDM will see, `PatientID` **FOO-1234** and `PatientID` **FOO#1234** will be seen as identical. The `ignoredDelimiters` flag supports any non-alphanumeric character, here are some examples:
+When you include the ***ignoredDelimiters*** field with supported characters,  EDM will ignore those characters in the `PatientID`. So EDM will see, `PatientID` **FOO-1234** and `PatientID` **FOO#1234** as being identical. The `ignoredDelimiters` flag supports any non-alphanumeric character, here are some examples:
 - \.
 - \-
 - \/
