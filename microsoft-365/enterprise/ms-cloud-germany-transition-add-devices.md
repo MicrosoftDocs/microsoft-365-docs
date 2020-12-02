@@ -132,10 +132,11 @@ The device is automatically joined to Azure AD without user or admin interventio
 
 ## Windows Azure AD Join
 
-IMPORTANT: 
-After commerce migration the Intune service principal will be enabled. This implies the activation of Azure AD Device Registration. Customers that blocked Azure AD Device Registration before migration must disable the Intune service principal via MSOnline or Azure AD PowerShell to disable Azure AD Device Registration via the Azure AD portal again. Deactivation of the Intune service principal can be done via the following command:
+**IMPORTANT:** The Intune service principal will be enabled after commerce migration, which implies the activation of Azure AD Device Registration. If you blocked Azure AD Device Registration before migration, you must disable the Intune service principal with PowerShell to disable Azure AD Device Registration with the Azure AD portal again. You can disable the Intune service principal with this command in the Azure Active Directory PowerShell for Graph module.
 
+```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ### Unjoin
 
