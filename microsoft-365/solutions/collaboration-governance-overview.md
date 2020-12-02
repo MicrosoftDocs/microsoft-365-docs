@@ -114,31 +114,16 @@ There are multiple places to collaborate and have conversations within Microsoft
 
 ## Create your governance plan 
 
-This isn’t so much something that you set up, so we’ll sub with what are the next steps? I assume they’re the next sections in the TOC? Suggest an overview graphic like this, with a list that calls out the steps with links to the articles. Need to tune up the articles too, to be more active & prescriptive and less reference-y.
+Follow these basic steps to create your governance plan:
 
+1. Consider key business goals and processes - [create your governance plan](collaboration-governance-first.md) to meet the needs of your business.
+2. Understand settings in services - [settings in groups and SharePoint](groups-sharepoint-governance.md) interact with each other, as do [settings in groups, SharePoint and Teams](groups-sharepoint-teams-governance.md) and [other services](groups-services-interactions.md). Be sure to understand these interactions as you plan your governance strategy.
+3. Plan to manage user access - plan [the level of access you want to grant users in groups, SharePoint, and Teams](groups-teams-access-governance.md).
+4. Plan to manage compliance settings - review the available [compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration](groups-teams-compliance-governance.md).
+5. Plan to manage communications - review the available [communications governance options for collaboration scenarios](groups-teams-communication-governance.md).
+6. Plan for organization and lifecycle governance - choose [the policies you want to use for group and team creation, naming, expiration, and archiving](plan-organization-lifecycle-governance.md). Also, understand the [end of lifecycle options for groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md)
 
 ![Illustration of recommended governance steps](../media/collaboration-governance-steps.png)
-
-See [Plan organization and lifecycle governance for Microsoft 365 groups and Microsoft Teams](plan-organization-lifecycle-governance.md) for details.
-
-
-[Create your governance plan](collaboration-governance-first.md)
-
-[Settings interactions between Microsoft 365 Groups and SharePoint](groups-sharepoint-governance.md)
-
-[Settings interactions between Microsoft 365 Groups, Teams and SharePoint](groups-sharepoint-teams-governance.md)
-
-[Groups services interactions](groups-services-interactions.md)
-
-[Governing access in Microsoft 365 groups, Teams, and SharePoint](groups-teams-access-governance.md)
-
-[Compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration](groups-teams-compliance-governance.md)
-
-[Communications governance for collaboration scenarios](groups-teams-communication-governance.md)
-
-[End of lifecycle options for groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md)
-
-
 
 ## Best practices
 
