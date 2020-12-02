@@ -125,6 +125,9 @@ To configure DKIM, you will complete these steps:
 
 For each domain for which you want to add a DKIM signature in DNS, you need to publish two CNAME records.
 
+> [!NOTE]
+> If you haven't read the full article, you may have missed this time-saving PowerShell connection information: [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.) 
+
 Run the following commands to create the selector records:
 
 ```powershell
@@ -182,8 +185,6 @@ TTL:                3600
 > [!NOTE]
 > It's important to create the second record, but only one of the selectors may be available at the time of creation. In essence, the second selector might point to an address that hasn't been created yet. We still recommended that you create the second CNAME record, because your key rotation will be seamless.
 
-> [!CAUTION]
-> Automatic key rotation has been temporarily disabled as we implement some design changes in how we create keys. It's a good practice to have multiple keys so that you can rotate them periodically. Although it's hard to crack, it's still a practical mitigation strategy to protect against things like impersonation. You can follow the [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) document to help do this for your organization. We expect that automatic rotation will be enabled again by August 2020.
 
 ### Enable DKIM signing for your custom domain
 <a name="EnableDKIMinO365"> </a>
@@ -306,7 +307,7 @@ In this example, the host name and domain contain the values to which the CNAME 
 ## Set up DKIM so that a third-party service can send, or spoof, email on behalf of your custom domain
 <a name="SetUp3rdPartyspoof"> </a>
 
-Some bulk email service providers, or software-as-a-service providers, let you set up DKIM keys for email that originates from their service. This requires coordination between yourself and the third-party in order to set up the necessary DNS records. No two organizations do it exactly the same way. Instead, the process depends entirely on the organization.
+Some bulk email service providers, or software-as-a-service providers, let you set up DKIM keys for email that originates from their service. This requires coordination between yourself and the third-party in order to set up the necessary DNS records. Some third-party servers can have their own CNAME records with different selectors. No two organizations do it exactly the same way. Instead, the process depends entirely on the organization.
 
 An example message showing a properly configured DKIM for contoso.com and bulkemailprovider.com might look like this:
 
@@ -345,3 +346,8 @@ For example, the DKIM record would look like this:
 <a name="DKIMNextSteps"> </a>
 
 Although DKIM is designed to help prevent spoofing, DKIM works better with SPF and DMARC. Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). Next, see [Use DMARC to validate email](use-dmarc-to-validate-email.md). [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
+
+## More information
+
+Key rotation via PowerShell
+[Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)

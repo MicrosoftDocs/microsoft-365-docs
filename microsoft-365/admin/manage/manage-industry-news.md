@@ -19,39 +19,37 @@ description: "Provide your users with up-to-date news headlines about your indus
 
 # Manage Industry news
 
-To provide your users with up-to-date news headlines about your industry and info from your organization, use the [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) service to enable a customized news feed for your organization. You can also manage settings for the Bing homepage.
+To provide your users with up-to-date news headlines about your industry and info from your organization, use the [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) service to enable a customized news feed for your organization. You can also manage settings for the Bing homepage and Microsoft Edge new tab page (Starting with the release of Edge 87).
 
 ## What your users will see
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Microsoft search industry updates roll up":::
  
-Signed-in users that come to the Bing homepage will see your news feed under the personalized info from your organization.
-
+Signed-in users who go to the Bing homepage will see your industry's news feed under the personalized info for your organization.  
 :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Screenshot of image carousel with industry news from the web":::
-
 They can also see company, industry, and internal news or personalized work information on their Microsoft Edge new tab page. 
 
 :::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft in news homepage":::
 
 ## News settings
 
-As an admin, you control the News feed settings for your organization, including the selected industry and the Bing homepage, along with the Microsoft Edge new tab page.
-
-
+As an admin, you control the News feed settings for your organization, including the selected industry and the Bing homepage, along with the Microsoft Edge new tab page (Starting with the release of Edge 87).
 
 1. In the Microsoft 365 admin center, go to **Settings** > **Org settings** > **Services** > [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
 2. In the **News** panel, click the **General** tab
 3. In the **Industry** list, select your organization's industries. This determines the general news that appears in your organization's new feed. Microsoft may pre-select an industry using information from your account. You may remove or add industries by updating the Industry list.
 4. In the **Topics** field, enter topics that you want see news articles about. Your users will not be able to change these topics.
-5. You can block articles and containing keywords in the **Exclude content** field. For example, to avoid articles containing the keyword “bake” from showing up in the news feed add the keyword “bake” in the Exclude content field. Avoid including general terms (the, it, and, etc.), they can block relevant content from appearing in your enterprise news feeds.
+5. You can block articles containing keywords in the **Exclude content** field.  For example, to avoid articles containing the keyword “bake” from showing up in the news feed, add the keyword “bake” in the Exclude content field. Avoid including general terms (the, it, and, etc.), they can block relevant content from appearing in your enterprise news feeds.
 6. Select **Save**. It may take up to 24 hours for changes to appear.
 
 ## Bing homepage
 
-You can customize the Bing homepage to include news about your industry. In the Microsoft 365 admin center, go to **Settings** > **Org settings** > **Services** > [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). In the **News** panel, click the **Bing homepage** tab, and select **Include on Bing homepage**. The industry news appears under the personalized info from your organization on Bing.com.
+You can customize the Bing homepage to include news about your industry. 
+
+1. In the Microsoft 365 admin center, go to **Settings** > **Org settings** > **Services** > [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+2. In the **News** panel, click the **Bing homepage** tab, and select **Include on Bing homepage**.
+3. The industry news appears under the personalized info from your organization on Bing.com.
 
 ## Microsoft Edge new tab page 
-When your users sign in to Microsoft Edge with a valid work or school account, they can see news tailored to your organization.
+When your users sign in to Microsoft Edge (release 87 or higher) with a valid work or school account, they can see news tailored to your organization.
 
 1. In the Microsoft 365 admin center, go to **Settings** > **Org settings** > **Services** > [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. In the **News** panel, click **Microsoft Edge new tab page**.
