@@ -19,6 +19,10 @@
 
 - name: Manage insider risks
   items:
+    - name: Microsoft 365 insider risk solutions
+      href: insider-risk-solution-overview.md
+    - name: Steps to deploy insider risk solutions
+      href: insider-risk-solution-steps.md
     - name: Insider risk management
       items:
         - name: Learn about insider risk management
