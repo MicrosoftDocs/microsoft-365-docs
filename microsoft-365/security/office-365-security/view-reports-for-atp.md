@@ -17,7 +17,7 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-defender-office365
-description: "Find and use reports for Microsoft Defender for Office 365 in the Security &amp; Compliance Center."
+description: "Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -333,7 +333,7 @@ In addition to the reports described in this topic, several other reports are av
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
-In order to view and use the reports described in this topic, **you must have an appropriate role assigned for both the Security &amp; Compliance Center and the Exchange admin center**.
+In order to view and use the reports described in this topic, **you must have an appropriate role assigned for both the Security & Compliance Center and the Exchange admin center**.
 
 - For the Security & Compliance Center, you must have one of the following roles assigned:
 
