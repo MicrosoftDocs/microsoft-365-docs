@@ -46,21 +46,6 @@ Microsoft 365 groups lets you choose a set of people with whom you wish to colla
 
 Microsoft 365 groups include a suite of linked resources that users can use for communication and collaboration. Groups always include a SharePoint site, Planner, a Power BI workspace, a mailbox and calendar, and Stream. Depending on how you create the group, you can optionally add other services such as Teams, Yammer, and Project.
 
-![Diagram showing Microsoft 365 Groups and related services](../media/microsoft-365-groups-hub-spoke.png)
-
-Microsoft 365 Groups includes a variety of governance controls, including an expiration policy, naming conventions, and a blocked words policy, to help you manage groups in your organization. Because groups control membership and access to this suite of resources, managing groups is a key part of governing collaboration in Microsoft 365.
-
-
-## Communications methods supported by Microsoft 365
-
-There are three main communication methods supported by Microsoft 365:
-
-- Outlook: collaboration through email with a shared group inbox and calendar
-- Microsoft Teams: a persistent-chat-based workspace where you can have informal, real-time, conversations around a variety of topics, organized by specific sub-groups
-- Yammer: enterprise social experience for collaboration
-
-Depending on where a group is created, certain resources are provisioned automatically, such as:
-
 |Resource|Description|
 |:------|:----------|
 |[Inbox](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.|
@@ -72,27 +57,19 @@ Depending on where a group is created, certain resources are provisioned automat
 |Teams|A chat-based workspace in Microsoft 36|
 |Stream|A video streaming service|
 
-> [!NOTE]
-> When a new Office 365 Group is created via Yammer or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Yammer groups cannot be connected to Teams.
+![Diagram showing Microsoft 365 Groups and related services](../media/microsoft-365-groups-hub-spoke.png)
 
-## Key governance capabilities and licensing requirements
-
-Governance capabilities for collaboration in Microsoft 365 include features in Microsoft 365, Teams, SharePoint, and Azure Active Directory.
-
-| Capability or feature | Description | Licensing |
-|:----------------------|:------------|:----------|
-|Team and site sharing|Control if teams, groups, and sites can be shared with people outside your organization.|Microsoft 365 E5 or E3|
-|Domain allow/block|Restrict sharing with people outside your organization to people from specific domains.|Microsoft 365 E5 or E3|
-|Self-service site creation|Allow or prevent users from creating their own SharePoint sites.|Microsoft 365 E5 or E3|
-|Restricted site and file sharing|Restrict site, file, and folder sharing to members of a specific security group.|Microsoft 365 E5 or E3|
-|Restricted group creation|Restrict team and group creation to members of a specific security group.|Microsoft 365 E5 or E3 with Azure AD Premium or Azure AD Basic EDU licenses|
-|Group naming policy|Enforce prefixes or suffixes on group and team names.|Microsoft 365 E5 or E3 with Azure AD Premium or Azure AD Basic EDU licenses|
-|Group expiration policy|Set inactive groups and teams to expire and be deleted after a specified period of time.|Microsoft 365 E5 or E3 with Azure AD Premium licenses|
-|Per-group guest access|Allow or prevent team and group sharing with people outside your organization on a per-group basis.|Microsoft 365 E5 or E3|
+Microsoft 365 Groups includes a variety of governance controls, including an expiration policy, naming conventions, and a blocked words policy, to help you manage groups in your organization. Because groups control membership and access to this suite of resources, managing groups is a key part of governing collaboration in Microsoft 365.
 
 ## Define a collaboration strategy for your organization
 
 There are multiple places to collaborate and have conversations within Microsoft 365. Understanding where users can start conversations can help you define a strategy for communication.
+
+There are three main communication methods supported by Microsoft 365:
+
+- Outlook: collaboration through email with a shared group inbox and calendar
+- Microsoft Teams: a persistent-chat-based workspace where you can have informal, real-time, conversations around a variety of topics, organized by specific sub-groups
+- Yammer: enterprise social experience for collaboration
 
 ![Diagram showing when to use Teams, Yammer, and Outlook](../media/inner-loop-outer-loop.png)
 
@@ -110,24 +87,15 @@ There are multiple places to collaborate and have conversations within Microsoft
   - Used for targeted communication with a group of people
   - Shared calendar for meetings with other group members
  
+As you determine how you want to use collaboration features in Microsoft 365, consider these methods of communication and which your users are likely to use in different scenarios.
 
+> [!NOTE]
+> When a new Office 365 Group is created via Yammer or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Yammer groups cannot be connected to Teams.
 
-## Create your governance plan 
-
-Follow these basic steps to create your governance plan:
-
-1. Consider key business goals and processes - [create your governance plan](collaboration-governance-first.md) to meet the needs of your business.
-2. Understand settings in services - [settings in groups and SharePoint](groups-sharepoint-governance.md) interact with each other, as do [settings in groups, SharePoint and Teams](groups-sharepoint-teams-governance.md) and [other services](groups-services-interactions.md). Be sure to understand these interactions as you plan your governance strategy.
-3. Plan to manage user access - plan [the level of access you want to grant users in groups, SharePoint, and Teams](groups-teams-access-governance.md).
-4. Plan to manage compliance settings - review the available [compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration](groups-teams-compliance-governance.md).
-5. Plan to manage communications - review the available [communications governance options for collaboration scenarios](groups-teams-communication-governance.md).
-6. Plan for organization and lifecycle governance - choose [the policies you want to use for group and team creation, naming, expiration, and archiving](plan-organization-lifecycle-governance.md). Also, understand the [end of lifecycle options for groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md)
-
-![Illustration of recommended governance steps](../media/collaboration-governance-steps.png)
 
 ## Best practices
 
-As you start your governance planning process, keep these best practices in mind.
+As you start your governance planning process, keep these best practices in mind:
 
 - **Talk to your users** - identify your biggest users of collaboration features and meet with them to understand their core business requirements and use case scenarios.
 
@@ -158,6 +126,34 @@ Because groups and teams can be created in several ways, we recommend training y
 - If your organization has deployed Teams, instruct your users to create a team when they need need a collaboration space.
 
 This helps avoid confusion if users are unfamiliar with how groups relate to their related services. For more information about how to talk to your users about groups, see [Explaining Microsoft 365 Groups to your users](../admin/create-groups/explain-groups-knowledge-worker.md).
+
+## Key governance capabilities and licensing requirements
+
+Governance capabilities for collaboration in Microsoft 365 include features in Microsoft 365, Teams, SharePoint, and Azure Active Directory.
+
+| Capability or feature | Description | Licensing |
+|:----------------------|:------------|:----------|
+|Team and site sharing|Control if teams, groups, and sites can be shared with people outside your organization.|Microsoft 365 E5 or E3|
+|Domain allow/block|Restrict sharing with people outside your organization to people from specific domains.|Microsoft 365 E5 or E3|
+|Self-service site creation|Allow or prevent users from creating their own SharePoint sites.|Microsoft 365 E5 or E3|
+|Restricted site and file sharing|Restrict site, file, and folder sharing to members of a specific security group.|Microsoft 365 E5 or E3|
+|Restricted group creation|Restrict team and group creation to members of a specific security group.|Microsoft 365 E5 or E3 with Azure AD Premium or Azure AD Basic EDU licenses|
+|Group naming policy|Enforce prefixes or suffixes on group and team names.|Microsoft 365 E5 or E3 with Azure AD Premium or Azure AD Basic EDU licenses|
+|Group expiration policy|Set inactive groups and teams to expire and be deleted after a specified period of time.|Microsoft 365 E5 or E3 with Azure AD Premium licenses|
+|Per-group guest access|Allow or prevent team and group sharing with people outside your organization on a per-group basis.|Microsoft 365 E5 or E3|
+
+## Create your governance plan
+
+Follow these basic steps to create your governance plan:
+
+1. Consider key business goals and processes - [create your governance plan](collaboration-governance-first.md) to meet the needs of your business.
+2. Understand settings in services - [settings in groups and SharePoint](groups-sharepoint-governance.md) interact with each other, as do [settings in groups, SharePoint and Teams](groups-sharepoint-teams-governance.md) and [other services](groups-services-interactions.md). Be sure to understand these interactions as you plan your governance strategy.
+3. Plan to manage user access - plan [the level of access you want to grant users in groups, SharePoint, and Teams](groups-teams-access-governance.md).
+4. Plan to manage compliance settings - review the available [compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration](groups-teams-compliance-governance.md).
+5. Plan to manage communications - review the available [communications governance options for collaboration scenarios](groups-teams-communication-governance.md).
+6. Plan for organization and lifecycle governance - choose [the policies you want to use for group and team creation, naming, expiration, and archiving](plan-organization-lifecycle-governance.md). Also, understand the [end of lifecycle options for groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md)
+
+![Illustration of recommended governance steps](../media/collaboration-governance-steps.png)
 
 ## Training for administrators
 
