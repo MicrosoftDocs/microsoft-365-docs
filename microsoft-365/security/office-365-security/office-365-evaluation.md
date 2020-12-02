@@ -1,6 +1,6 @@
 ---
 title: Evaluate Microsoft Defender for Office 365
-description: The Microsoft Defender for Office 365 evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution.
+description: Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don’t act on messages.
 keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, ATP 
 f1.keywords:
 - NOCSH
