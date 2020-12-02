@@ -44,14 +44,14 @@ There are three preconditions to updating your sign-in authority:
 
 An application could be any of the following:
 
-- [Single-page app (SPA)](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-overview)
-- [Web app that signs in users](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-sign-user-overview)
-- [Web app that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-overview)
-- [Protected web API](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-protected-web-api-overview)
-- [Web API that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-api-call-api-overview)
-- [Desktop app](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-overview)
-- [Daemon app](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-overview)
-- [Mobile app](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-mobile-overview)
+- [Single-page app (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [Web app that signs in users](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Web app that calls web APIs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [Protected web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [Web API that calls web APIs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [Desktop app](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+- [Daemon app](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+- [Mobile app](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > When an application switches to using `login.microsoftonline.com` as your authority, the tokens will be signed by this new authority. If you host any resource applications that other apps call into, you will need to allow for lax token validation. This means that your app needs to allow tokens that are signed by both the Azure AD Germany and Azure AD public clouds. This lax token validation is needed until all client applications that call your service are fully migrated to the Azure AD public cloud. After migration, your resource application only needs to accept tokens signed by the Azure AD public cloud.
@@ -71,10 +71,10 @@ An application could be any of the following:
 
 5. Update environment parameters to be `AzurePublic` (instead of `AzureGermany`) in administrative tools and scripts for:
 
-    - [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
-    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)
-    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
-    - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
+    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
  
 **What about applications that I publish?**
 
