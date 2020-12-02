@@ -44,7 +44,7 @@ To help protect your organization against insider risks, set up and deploy the f
 
 ![Insider risk solution defense-in-depth](../media/ir-solution-defense-in-depth.png)
 
-1. Configure and create communication compliance policies
-2. Configure and create insider risk management policies
-3. Optional: Configure and create information barrier policies
-4. Optional: Enable and configure privileged access management
+1. Configure and create [communication compliance policies](communication-compliance-configure.md)
+2. Configure and create [insider risk management policies](insider-risk-management-configure.md)
+3. Optional: Configure and create [information barrier policies](information-barriers-policies.md)
+4. Optional: Enable and configure [privileged access management](privileged-access-management-configuration.md)
