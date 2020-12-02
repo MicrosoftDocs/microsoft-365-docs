@@ -27,10 +27,10 @@ Protecting sensitive information and detecting and acting on workplace harassmen
 
 ![Insider risk solution communication compliance steps](../media/ir-solution-cc-steps.png)
 
-1. [Plan for communication compliance](communication-compliance-plan.md) and [verify licensing](communication-compliance-configure.md#before-you-begin)
-2. [Review feature reference and solution capabilities](communication-compliance-feature-reference.md)
+1. Plan for [communication compliance](communication-compliance-plan.md) and [verify licensing](communication-compliance-configure.md#before-you-begin)
+2. Review [feature reference and solution capabilities](communication-compliance-feature-reference.md)
 3. Configure [prerequisites](communication-compliance-configure.md#step-2-required-enable-the-audit-log) and [permissions](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
-4. [Create and configure communication compliance policies](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
+4. Create and configure [communication compliance policies](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
 
 ### More information about communication compliance
 
@@ -47,10 +47,10 @@ Increasingly, employees have more access to create, manage, and share data acros
 
 ![Insider risk solution insider risk management steps](../media/ir-solution-ir-steps.png)
 
-1. [Plan for insider risk management and verify licensing](insider-risk-management-plan.md)
-2. [Configure insider risk management settings](insider-risk-management-settings.md)
+1. Plan for [insider risk management and verify licensing](insider-risk-management-plan.md)
+2. Configure [insider risk management settings](insider-risk-management-settings.md)
 3. Configure [permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) and [policy prerequisites & connectors](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)
-4. [Create and configure insider risk management policies](insider-risk-management-configure.md#step-5-create-an-insider-risk-management-policy)
+4. Create and configure [insider risk management policies](insider-risk-management-configure.md#step-5-create-an-insider-risk-management-policy)
 
 ### More information about insider risk management
 
@@ -77,10 +77,10 @@ Microsoft 365 enables communication and collaboration across groups and organiza
 
 ![Insider risk solution information barriers steps](../media/ir-solution-ib-steps.png)
 
-1. [Configure prerequisites and permissions](information-barriers-policies.md#prerequisites)
-2. [Segment users in your organization](information-barriers-policies.md#part-1-segment-users)
-3. [Create and configure information barrier policies](information-barriers-policies.md#part-2-define-information-barrier-policies)
-4. [Apply information barrier policies](information-barriers-policies.md#part-3-apply-information-barrier-policies)
+1. Configure [prerequisites and permissions](information-barriers-policies.md#prerequisites)
+2. Segment [users in your organization](information-barriers-policies.md#part-1-segment-users)
+3. Create and configure [information barrier policies](information-barriers-policies.md#part-2-define-information-barrier-policies)
+4. Apply [information barrier policies](information-barriers-policies.md#part-3-apply-information-barrier-policies)
 
 #### More information about information barriers
 
@@ -95,10 +95,10 @@ Having standing access by some users to sensitive information or critical networ
 
 ![Insider risk solution privileged access management steps](../media/ir-solution-pam-steps.png)
 
-1. [Create an approver's group](privileged-access-management-configuration.md#step-1-create-an-approvers-group)
-2. [Enable privileged access management](privileged-access-management-configuration.md#step-2-enable-privileged-access)
-3. [Create an access policy](privileged-access-management-configuration.md#step-3-create-an-access-policy)
-4. [Submit/approve privileged access requests](privileged-access-management-configuration.md#step-4-submitapprove-privileged-access-requests)
+1. Create an [approver's group](privileged-access-management-configuration.md#step-1-create-an-approvers-group)
+2. Enable [privileged access management](privileged-access-management-configuration.md#step-2-enable-privileged-access)
+3. Create an [access policy](privileged-access-management-configuration.md#step-3-create-an-access-policy)
+4. Submit/approve [privileged access requests](privileged-access-management-configuration.md#step-4-submitapprove-privileged-access-requests)
 
 #### More information about privileged access management
 
