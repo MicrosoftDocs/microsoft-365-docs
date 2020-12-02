@@ -23,7 +23,7 @@ description: "Details of the Mobility - people experiences Productivity score."
 
 # Mobility – People experiences
 
-Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The Teamwork category is part of the measurements that falls under people experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
+Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and its technology. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from orgs similar in size to yours. The mobility category is part of the people experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
 
 ## Why your organization&#39;s mobility score matters
 
@@ -57,7 +57,8 @@ This chart shows the trend-line, where the numerator is the number of people who
 
 ### Scoring framework
 
-The mobility score measures whether people are using Microsoft 365 apps - Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, and Skype - across the different platforms - desktop, web, and mobile.
+The mobility score for your organization measures at an organization (aggregate) level whether people are using Microsoft 365 apps - Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, and Skype - across the different platforms - desktop, web, and mobile.
+The scores are not provided at the individual user level.
 
 ## Explore how your org works across platforms and locations
 

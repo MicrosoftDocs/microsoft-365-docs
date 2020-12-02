@@ -51,7 +51,7 @@ You can use sensitivity labels to:
 
 - **Protect content in third-party apps and services** by using Microsoft Cloud App Security. With Cloud App Security, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
 
-- **Protect containers** that include Teams, Microsoft 365 Groups and SharePoint sites. For example, set privacy settings, external user access, and access from unmanaged devices.
+- **Protect containers** that include Teams, Microsoft 365 Groups and SharePoint sites. For example, set privacy settings, external user access and external sharing, and access from unmanaged devices.
 
 - **Extend sensitivity labels to third-party apps and services.** Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 
@@ -92,13 +92,11 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     Some, but not all apps support dynamic markings by using variables. For example, insert the label name or document name into the header, footer, or watermark. For more information, see [Dynamic markings with variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
     
-    Although you can configure a custom font name for these content markings and a wide range of font colors that include custom by RGB code, these settings are supported only by the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2). When you use built-in labeling, the font name setting is ignored and the following colors only are supported: Black, yellow, blue, green, red. If you select a color that isn't supported, black is used as the default.
-
     String lengths: Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter is not displayed in Excel.
 
 - **Protect content in containers such as sites and groups** when you enable the capability to [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
     
-    You can't configure protection settings for groups and sites until you enable this capability. This label configuration doesn't result in documents or emails being automatically labeled but instead, the label settings protect content by controlling access to the container where content can be stored. These settings include privacy settings, external user access, and access from unmanaged devices.
+    You can't configure protection settings for groups and sites until you enable this capability. This label configuration doesn't result in documents or emails being automatically labeled but instead, the label settings protect content by controlling access to the container where content can be stored. These settings include privacy settings, external user access and external sharing, and access from unmanaged devices.
 
 - **Apply the label automatically in Office apps, or recommend a label.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
