@@ -20,25 +20,17 @@ description: "Learn about how to govern related features in Microsoft 365 groups
 
 # What is collaboration governance?
 
-We know that organizations today are using a diverse tool set. There's the team of developers using team chat, the executives sending email, and the entire organization connecting over enterprise social. Multiple collaboration tools are in use because every group is unique and has their own functional needs and work style. Some will use only email while others will live primarily in chat. 
+Collaboration governance is important so you can manage users' access to resources, compliance with your business standards, and to ensure the security of your data.
+
+Organizations today are using a diverse tool set. There's the team of developers using team chat, the executives sending email, and the entire organization connecting over enterprise social. Multiple collaboration tools are in use because every group is unique and has their own functional needs and work style. Some will use only email while others will live primarily in chat. 
 
 If users feel the IT-provided tools do not fit their needs, they will likely download their favorite consumer app which supports their scenarios. Although this process allows users to get started quickly, it leads to a frustrating user experience across the organization with multiple logins, difficulty sharing, and no single place to view content. This concept is referred to as “Shadow IT” and poses a significant risk to organizations. It reduces the ability to uniformly manage user access, ensure security, and service compliance needs.
 
-Services such as Microsoft 365 groups, Teams, and Yammer empower users and reduces the risk of shadow IT by providing the tools needed to collaborate. 
-
-Microsoft 365 has a rich set of tools to implement any governance capabilities your organization might require. This series of articles will help you understand how groups, teams, and SharePoint settings interact, what governance capabilities are available, and how to create and implement a governance plan for the collaboration features in Microsoft 365.
-
-
-
-Microsoft 365 groups help users (?) manage with whom and how they share information
-Microsoft 365 empowers users and reduces the risk...by providing the tools needed to collaborate. Underneath and interacting with services in Microsoft 365 are Microsoft 365 groups, which let users choose a set of people with whom they want to collaborate, and easily set up a collection of resources for those people to share. … 
-
-
+Services such as Microsoft 365 groups, Teams, and Yammer empower users and reduces the risk of shadow IT by providing the tools needed to collaborate. Microsoft 365 has a rich set of tools to implement any governance capabilities your organization might require. 
 
 ![Chart showing collaboration governance options in Microsoft 365](../media/collaboration-governance-overview.png)
 
-
-
+This series of articles will help you understand how groups, teams, and SharePoint settings interact, what governance capabilities are available, and how to create and implement a governance plan for the collaboration features in Microsoft 365.
 
 ## What are Microsoft 365 groups?
 
