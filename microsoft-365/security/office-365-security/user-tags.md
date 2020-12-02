@@ -61,9 +61,9 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
    When you're finished, click **Next**.
 
-4. On the **Assign mailboxes** page, do either of the following steps:
+4. On the **Assign users** page, do either of the following steps:
 
-   - Click **Add mailboxes**. In the fly out that appears, do any of the following steps to add individual users or groups:
+   - Click **Add users**. In the fly out that appears, do any of the following steps to add individual users or groups:
      - Click in the box and scroll through the list to select a user or group.
      - Click in the box and start typing to filter the list and select a user or group.
      - To add additional values, click in an empty area in the box.
