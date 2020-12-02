@@ -62,8 +62,8 @@ You can use this logic to construct your exclusion paths:
 
 When a policy's **Access by unallowed apps and browsers** setting is turned on and users attempt to use these apps to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
 
-[!IMPORTANT]
-Do not include the path to the executable, but only the executable name (i.e., browser.exe).
+> [!IMPORTANT]
+> Do not include the path to the executable, but only the executable name (such as browser.exe).
 
 
 ### Browser and domain restrictions
