@@ -138,7 +138,7 @@ See [Plan organization and lifecycle governance for Microsoft 365 groups and Mic
 
 [Governing access in Microsoft 365 groups, Teams, and SharePoint](groups-teams-access-governance.md)
 
-[Compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration](groups-teams-compliance-governance)
+[Compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration](groups-teams-compliance-governance.md)
 
 [Communications governance for collaboration scenarios](groups-teams-communication-governance.md)
 
