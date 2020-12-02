@@ -298,7 +298,8 @@ In order for Bookings to properly sync with your staff members' calendars, each 
 
 1. Sign in to Microsoft 365, and then select **Outlook** from the app launcher.
 
-   ![Image of Outlook in App launcher](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![Image of Outlook in App launcher](../media/bookings-applauncher-outlook.png)
 
 1. At the top of the page, select **Share** \> **Calendar**.
 
@@ -306,10 +307,11 @@ In order for Bookings to properly sync with your staff members' calendars, each 
 
 1. In the **People inside your organization** section, select the drop-down box next to **My Organization**, and then select **Can view when I'm busy**.
 
-> [!NOTE]
-> This setting shares your free/busy information with Bookings and with other users in your organization. It does not include any other information, such as what type of appointment you have scheduled, who you have scheduled the appointment with, or the location.
+   > [!NOTE]
+   > This setting shares your free/busy information with Bookings and with other users in your organization. It does not include any other information, such as what type of appointment you have scheduled, who you have scheduled the appointment with, or the location.
 
-   ![Image of calendar sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![Image of calendar sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
 
 1. Select **Done**.
 
@@ -330,7 +332,7 @@ If an employee has left your company and you removed them from your Microsoft 36
 
 To check if you have more than one calendar, in the left menu, select the drop-down arrow next to your company name, and then select **Open**. If you only have one calendar, then you will see only the option to add a booking calendar. This example shows that there is a second calendar named "Contoso CO".
 
-   ![Image of Choose a calendar screen with a second calendar shown](../media/bookings-choose-calendar.png)
+![Image of Choose a calendar screen with a second calendar shown](../media/bookings-choose-calendar.png)
 
 ### There's a syncing error we can't identify
 

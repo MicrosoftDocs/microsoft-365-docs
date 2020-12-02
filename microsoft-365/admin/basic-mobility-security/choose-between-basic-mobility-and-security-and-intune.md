@@ -28,7 +28,7 @@ description: "Basic Mobility and Security are part of the Microsoft 365 plans."
  
 Both Basic Mobility and Security and Intune are included in a variety of plans, described in the following table.
 
-|**Plan**|**Basic Mobility and Security**|**Microsoft Intune**|
+| Plan | Basic Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Yes|No|
 |Microsoft 365 Business Basic|Yes|No|
@@ -59,7 +59,7 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 >[!NOTE]
 >You can manage users and their mobile devices using both Intune and Basic Mobility and Security in the same Microsoft 365 Business Standard organization *by setting up Basic Mobility and Security first, and then adding Microsoft Intune*. This allows you to choose Basic Mobility and Security or the more feature-rich Intune solution. Assign an Intune license to enable the Intune features.
 
-|**Feature area**|**Feature highlights**|**Basic Mobility and Security**|**Microsoft Intune**|
+| Feature area | Feature highlights | Basic Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |Device types|Managing different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
 |Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
