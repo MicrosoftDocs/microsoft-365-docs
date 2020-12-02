@@ -80,7 +80,7 @@ However, the content might be already encrypted. For example, another user might
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| |**Encryption: Not selected**|**Encryption: Configured**|**Encryption: Remove**|
+| | Encryption: Not selected | Encryption: Configured | Encryption: Remove |
 |:-----|:-----|:-----|:-----|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
@@ -271,7 +271,7 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 - Windows: **File** tab > **Info** > **Protect Document** > **Restrict Access** > **Restricted Access**
 
-- MacOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
+- macOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
 
 ## Example configurations for the encryption settings
 
