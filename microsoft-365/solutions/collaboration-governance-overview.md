@@ -20,7 +20,7 @@ description: "Learn about how to govern related features in Microsoft 365 groups
 
 # What is collaboration governance?
 
-Collaboration governance is important so you can manage users' access to resources, compliance with your business standards, and to ensure the security of your data.
+Collaboration governance is how you manage users' access to resources, compliance with your business standards, and ensure the security of your data.
 
 Organizations today are using a diverse tool set. There's the team of developers using team chat, the executives sending email, and the entire organization connecting over enterprise social. Multiple collaboration tools are in use because every group is unique and has their own functional needs and work style. Some will use only email while others will live primarily in chat. 
 
@@ -153,7 +153,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 
 ### Manage team collaboration with Microsoft Teams
 
-|||
+|Training:|Manage team collaboration with Microsoft Teams|
 |:---|:---|
 |![Teams training icon](../media/manage-team-collaboration-with-microsoft-teams.svg)|Manage team collaboration with Microsoft Teams introduces you to the features and capabilities of Microsoft Teams, the central hub for team collaboration in Microsoft 365. You’ll learn how you can use Teams to facilitate teamwork and communication within your organization, both on and off premises, on a wide range of devices—from desktops to tablets to phones—while taking advantage of all the rich functionality of Office 365 applications. You’ll gain an understanding of how Teams provides a comprehensive and flexible environment for collaboration across applications and devices. This learning path can help you prepare for the Microsoft 365 Certified: Teams Administrator Associate certification.<br><br>2 hr 17 min - Learning Path - 5 Modules|
 
