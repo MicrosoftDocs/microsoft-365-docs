@@ -140,21 +140,29 @@ See [Plan organization and lifecycle governance for Microsoft 365 groups and Mic
 
 
 
-## Req’d element: Best practices. 
+## Best practices
 
-I’m not seeing a lot of prescriptive guidance in here, just options? Can we provide some best practices or learnings from the talks you reference below?
+As you start your governance planning process, keep these best practices in mind.
 
+- **Talk to your users** - identify your biggest users of collaboration features and meet with them to understand their core business requirements and use case scenarios.
 
-Identify your biggest users of collab solutions and meet with them to gather info and understand their needs.
+- **Balance risks and benefits** - review your business, regulatory, legal, and compliance needs and plan a solution that optimizes for all outcomes.
 
-boil down the core use cases.
+- **Adapt to different organizations and different types of content and scenarios** - consider the different needs for different groups or departments and different types of content such as intranet content versus a user's OneDrive content.
 
-talk to your customer success manager
+- **Align to business priorities** - business goals will help you define how much time and energy you need to invest in governance.
 
-learning pathways
+- **Embed governance decisions directly in the solutions you create** - many governance decisions can be implemented by turning on or off features in Microsoft 365.
 
-tech community
+- **Reinforce with training** - adapt solutions such as [Microsoft 365 learning pathways](https://docs.microsoft.com/office365/customlearning) to ensure that your organization-specific expectations are reinforced with Microsoft-provided training.
 
+- **Have a strategy for communicating governance policies and guidelines in your organization** - create a Microsoft 365 Adoption Center in a SharePoint communication site to communicate policies and procedures.
+
+- **Define roles and responsibilities** - identify your governance core team and work through key governance decisions about provisioning and naming and external access first, and then work through the remaining decisions.
+
+- **Revisit your decisions as business and technology changes** - meet periodically to review new capabilities and new business expectations.
+
+For a closer look at these practices, read [Create your collaboration governance plan](collaboration-governance-first.md).
 
 ## End user impact and change management
 
