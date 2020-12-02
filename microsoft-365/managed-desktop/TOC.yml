@@ -82,7 +82,7 @@
           href: get-started/access-admin-portal.md
         - name: Add and verify admin contacts in the Admin portal
           href: get-started/add-admin-contacts.md
-        - name: Adjust conditional access
+        - name: Adjust settings after enrollment
           href: get-started/conditional-access.md
         - name: Assign licenses
           href: get-started/assign-licenses.md

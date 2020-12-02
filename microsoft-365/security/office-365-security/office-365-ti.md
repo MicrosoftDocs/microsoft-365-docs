@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: "Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan."
@@ -28,12 +28,13 @@ description: "Learn about threat investigation and response capabilities in Micr
 
 
 Threat investigation and response capabilities in [Microsoft Defender for Office 365](office-365-atp.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
+
 - Making it easy to identify, monitor, and understand cyberattacks
 - Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams
 - Providing insights and knowledge to help security operations prevent cyberattacks against their organization
 - Employing [automated investigation and response in Office 365](automated-investigation-response-office.md) for critical email-based threats
-    
-Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Security &amp; Compliance Center. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
+
+Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Security & Compliance Center. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
 
 ## Get acquainted with threat investigation and response tools
 
@@ -48,19 +49,19 @@ Threat investigation and response capabilities surface in the Security & Complia
 ### Threat dashboard
 
 Use the Threat dashboard (this is also referred to as the [Security dashboard](security-dashboard.md)) to quickly see what threats have been addressed, and as a visual way to report to business decision makers how Microsoft 365 services are securing your business.
-  
+
 ![Threat Dashboard](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
-  
-To view and use this dashboard, in the Security &amp; Compliance Center, go to **Threat management** \> **Dashboard**.
-  
+
+To view and use this dashboard, in the Security & Compliance Center, go to **Threat management** \> **Dashboard**.
+
 ### Threat Explorer
 
 Use [Threat Explorer (and real-time detections)](threat-explorer.md) to analyze threats, see the volume of attacks over time, and analyze data by threat families, attacker infrastructure, and more. Threat Explorer (also referred to as Explorer) is the starting place for any security analyst's investigation workflow.
 
 ![Threat explorer](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
-  
-To view and use this report, in the Security &amp; Compliance Center, go to **Threat management** \> **Explorer**.
-  
+
+To view and use this report, in the Security & Compliance Center, go to **Threat management** \> **Explorer**.
+
 ### Incidents
 
 Use the Incidents list (this is also called Investigations) to see a list of in flight security incidents. Incidents are used to track threats such as suspicious email messages, and to conduct further investigation and remediation.
@@ -96,7 +97,7 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 > [!TIP]
 > Although some roles, such as Security Administrator, can be assigned in the Security & Compliance Center, consider using either the Microsoft 365 admin center or Azure Active Directory instead. For information about roles, role groups, and permissions, see the following resources:
 >
-> - [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+> - [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 >
 > - [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
