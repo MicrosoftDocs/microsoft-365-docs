@@ -31,7 +31,7 @@ Conducting a comprehensive security product evaluation can help give you informe
 
 The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients, or Teams.
 
-Start your free 30-day evaluation in the Office 365 Security & Compliance center to monitor and report on advanced threats. You'll enjoy the quick set-up and you can easily turn it off if necessary.
+If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the Office 365 Security & Compliance center (https://protection.office.com/homepage). You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
 ## How the evaluation works
 
@@ -52,25 +52,38 @@ With the simplified set-up experience, you can focus on:
 - Analyzing the report for action
 - Presenting the evaluation outcome
 
-With a trial, you'll have a 30-day window with the evaluation to monitor and report on advanced threats. You'll also have the option to buy a paid subscription if you want the full Defender for Office 365 capabilities.
-
 ## Before you begin
 
-### Licensing and roles
+### Licensing
 
-You'll need to fulfill the licensing requirements, which means having either Microsoft Defender for Office 365 Plan 1, Microsoft Defender for Office 365 Plan 2, Microsoft 365 E5, Microsoft 365 E5 Security, or Office 365 E5.
+To access the evaluation, you'll need to meet the licensing requirements. Any of the following licenses will work:
 
-have [trial access to Defender for Office 365 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279) to access the evaluation. The trial includes a 30-day free trial for 25 licenses.
+- Microsoft Defender for Office 365 Plan 1
+- Microsoft Defender for Office 365 Plan 2
+- Microsoft 365 E5, Microsoft 365 E5 Security
+- Office 365 E5
+
+If you don't have one of those licenses, then you'll need to obtain a trial license.
+
+#### Trial
+
+To obtain a trial license for Microsoft Defender for Office 365, you need to have the **Billing admin role** or **Global admin role**. Request permission from someone that has the Global admin role. [Learn about subscriptions and licenses](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+
+Once you have the proper role, the recommended path is to obtain a trial license for Microsoft Defender for Office 365 (Plan 2) in the Microsoft 365 admin center by going to Billing > Purchase services. The trial includes a 30-day free trial for 25 licenses. [Get a trial for Microsoft Defender for Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA). 
+
+You'll have a 30-day window with the evaluation to monitor and report on advanced threats. You'll also have the option to buy a paid subscription if you want the full Defender for Office 365 capabilities.
+
+### Roles
 
 Exchange Online roles are required to set up Defender for Office 365 in evaluation mode. The following roles are needed:
 
 |Task | Role |
 |-----| -----|
-| Get a free trial or buy Microsoft Defender for Office 365 (Plan 2)| Billing admin or Global admin|
-| Create evaluation policy| Remote and Accepted Domains and Security admin|
-| Edit evaluation policy | Remote and Accepted Domains and Security admin |
-| Delete evaluation policy | Remote and Accepted Domains and Security admin |
-|View evaluation report | Security admin or Security reader |
+| Get a free trial or buy Microsoft Defender for Office 365 (Plan 2)| Billing admin role OR Global admin role|
+| Create evaluation policy| Remote and Accepted Domains role; Security admin role|
+| Edit evaluation policy | Remote and Accepted Domains role; Security admin role |
+| Delete evaluation policy | Remote and Accepted Domains role; Security admin role |
+|View evaluation report | Security admin role OR Security reader role|
 
 ### Enhanced filtering
 
@@ -113,20 +126,19 @@ You will be able to scope the evaluation to an inbound connector. If there's no 
 
 ## Get started with the evaluation
 
-Set up the Microsoft Defender for Office 365 evaluation through two access points:
+Find the Microsoft Defender for Office 365 evaluation set-up card in the Office 365 Security & Compliance center (https://protection.office.com/homepage) from three access points:
 
-- **Policies**: In the Email & collaboration section, go to Policies & rules > Threat policies >  Defender for Office 365 evaluation
-- **Dashboard**: Go to Email & collaboration dashboard > Microsoft Defender for Office 365 card. Select Evaluate.
+- Threat management > Dashboard
+- Threat management > Policy
+- Reports > Dashboard
 
 ## Setting up the evaluation
 
-Once you start the set-up flow for your [free 30-day evaluation](https://go.microsoft.com/fwlink/p/?LinkID=698279), you'll be given two routing options. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online.
+Once you start the set-up flow for your evaluation, you'll be given two routing options. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online.
 
 - If you are using a third-party partner and/or on-premises service provider, you'll need to select the name of the vendor from the drop-down menu. Provide the other connector-related details.
 
 - Select Microsoft Exchange Online if the MX record points to Microsoft and you have an Exchange Online mailbox.
-
- Select **Share data with Microsoft** to get the data aggregation benefits in your detection reports.
 
 Review your settings and edit them if necessary. Then, select **Create evaluation**. You should get a confirmation message to indicate that your set-up is complete.
 
@@ -140,12 +152,12 @@ If you have an existing gateway, you might want to bypass filtering because it w
 
 After the evaluation report has been generated, see how many advanced threat links, advanced threat attachments, and potential impersonations were identified in the emails and collaboration workspaces in your organization.  
 
-Once the trial has expired, you can continue to access the report for 90 days. However, it won’t collect any more information. If you want to continue using Microsoft Defender for Office 365 after your trial has expired, [make sure you buy a paid subscription](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
+Once the trial has expired, you can continue to access the report for 90 days. However, it won’t collect any more information. If you want to continue using Microsoft Defender for Office 365 after your trial has expired, make sure you [buy a paid subscription for Microsoft Defender for Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
-You can to **Settings** to update your routing or turn off your evaluation at any time. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
+You can go to **Settings** to update your routing or turn off your evaluation at any time. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
 
 ## Provide feedback
 
 Your feedback helps us get better at protecting your environment from advanced attacks. Share your experience and impressions of product capabilities and evaluation results.
 
-Select Give feedback to let us know what you think.
+Select **Give feedback** to let us know what you think.
