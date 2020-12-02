@@ -57,7 +57,7 @@ This table shows the differences between Microsoft 365 Business Premium and Micr
 | Attack surface reduction capabilities    | [See this list](#threat-protection) | Enterprise management of hardware-based isolation for Microsoft Edge | 
 | Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure AD multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | Cloud App Discovery, Azure AD Connect Health    |     | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Office 365 apps Single Sign-On (SSO): 10 apps per user (Gallery SaaS apps such as Salesforce)* | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Premium 1 SSO: no limit (On-premises apps through Azure AD Application Proxy and non-gallery apps using Self-Service App Integration templates)    |     | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
