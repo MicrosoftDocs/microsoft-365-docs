@@ -287,6 +287,16 @@ Some settings can't be changed after the label or policy is created and saved, w
 - The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
+### Deleting retention labels
+
+You can delete retention labels that aren't included in any label policies or auto-labeling policies, and they aren't configured for event-based retention or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently in preview and if the label has been applied to items, you'll be prompted to review them before confirming the label deletion.
+
+If you delete a retention label that has been applied to items, that label is automatically removed from those items.
+
+After you delete a retention label, you can't create a new retention label with the same name, even if the original label was never applied to items.
+
+You can't delete retention labels that are included in label policies or auto-labeling policies, configured for event-based retention, or mark items as regulatory records.
+
 ## Locking the policy to prevent changes
 
 If you need to ensure that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
