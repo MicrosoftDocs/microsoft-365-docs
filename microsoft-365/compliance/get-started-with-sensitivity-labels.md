@@ -88,6 +88,8 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Apply and view sensitivity labels in Power BI, and protect data when it is exported|[How to apply sensitivity labels in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
 |Monitor and understand how sensitivity labels are being used in my organization|[Know your data - data classification overview](data-classification-overview.md) <br /><br /> [View label usage with label analytics](label-analytics.md)|
 |Extend sensitivity labels to third-party apps and services|[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|Extend sensitivity labels across content in Azure Blob Storage, Azure files, Azure Data Lake Storage Gen1, and Azure Data Lake Storage Gen12|[Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+
 
 ## End-user documentation for sensitivity labels
 
