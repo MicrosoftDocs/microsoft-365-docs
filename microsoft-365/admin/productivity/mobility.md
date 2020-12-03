@@ -23,7 +23,7 @@ description: "Details of the Mobility - people experiences Productivity score."
 
 # Mobility – People experiences
 
-Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and its technology. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from orgs similar in size to yours. The mobility category is part of the people experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
+Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The mobility category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Why your organization&#39;s mobility score matters
 
@@ -31,21 +31,21 @@ A fundamental pillar of organizational productivity is how well people are able 
 
 ## How we calculate the score
 
-We provide a primary insight in the experience that contains the key metrics for this category. Then, a scoring framework detailed below is used for these metrics to calculate your score.
+We provide a primary insight in the experience that contains the key metrics for this category. Then, a scoring framework detailed below is used for these metrics to calculate your organization's score.
 
 ### Primary insight
 
-Microsoft 365 lets people work flexibly across apps, including Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer, and Skype. People can also work from anywhere by using a seamless experience across desktop, web, and mobile platforms. The primary insight looks at the products that are enabled for people in your organization–and how many of these people are active on at least two platforms.
+Microsoft 365 lets people work flexibly across apps, including Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer, and Skype for Business. People can also work from anywhere by using a seamless experience across desktop, web, and mobile platforms. The primary insight looks at the products that are enabled for people in your organization – and how many of these people are active on at least two platforms.
 
 :::image type="content" source="../../media/primary-mobility.png" alt-text="Chart showing primary insight for Mobility - people experiences productivity score.":::
 
-1. **Header:** Shows the percentage of people who have access to any of Microsoft 365 apps, and who are active on at least one of these applications on more than one platform.
+1. **Header:** Shows the percentage of people in your org who have access to any of Microsoft 365 Apps, and who are active on at least one of these applications on more than one platform.
 2. **Body:** Provides more information on how the use of these applications on multiple platforms can promote efficiency and satisfaction.
-3. **Visualization (current state):** Shows how many people use more than one platform across desktop, mobile, and web for at least one Microsoft 365 (list mentioned below) as follows:
+3. **Visualization (current state):** Shows how many people use more than one platform across desktop, mobile, and web for at least one Microsoft 365 (list below) as follows:
     - **Horizontal bar** where the blue (colored) portion represents the percentage expressed in the header.
     - **The fraction** on the bar highlights the (numerator/denominator) used for calculating the percentage in the header.
-        - Numerator: The number of people using any application within Microsoft Outlook, Word, Excel, PowerPoint, OneNote and Microsoft Teams, Yammer, and Skype on more than one platform from desktop, web, and mobile in the last 28 days.
-        - Denominator: The number of people licensed for Microsoft 365 apps, Exchange, Yammer, Microsoft Teams, or Skype for at least 1 of the last 28 days.
+        - Numerator: The number of people in your org using any application within Microsoft Outlook, Word, Excel, PowerPoint, OneNote and Microsoft Teams, Yammer, and Skype on more than one platform from desktop, web, and mobile in the last 28 days.
+        - Denominator: The number of people licensed for Microsoft 365 Apps, Exchange, Yammer, Microsoft Teams, or Skype for at least 1 of the last 28 days.
     - The **peer benchmark** value for the key metric is also shown as a percentage.
 4. **View Mobility resources:** Select this link to view help content.
 
@@ -53,14 +53,17 @@ Microsoft 365 lets people work flexibly across apps, including Microsoft Outlook
 
 :::image type="content" source="../../media/mobility-primary.png" alt-text="Chart showing number of people who use more than one platform vs. time.":::
 
-This chart shows the trend-line, where the numerator is the number of people who have used apps, over the last 180 days. Each data point on the line chart is an aggregate of activity for the last 28 days. Each data point provides a count of all people using an application across at least two platforms in the last 28 days for each date on the x-axis.
+This chart shows the trend-line, where the numerator is the number of people who have used apps, over the last 180 days. Each data point on the line chart is an aggregate of activity for the last 28 days. Each data point provides a count of all people in your org using an application across at least two platforms in the last 28 days for each date on the x-axis.
 
 ### Scoring framework
 
-The mobility score for your organization measures at an organization (aggregate) level whether people are using Microsoft 365 apps - Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, and Skype - across the different platforms - desktop, web, and mobile.
+The mobility score for your organization measures at an organization (aggregate) level whether people are using Microsoft 365 Apps - Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, and Skype - across the different platforms - desktop, web, and mobile.
+
 The scores are not provided at the individual user level.
 
 ## Explore how your org works across platforms and locations
+
+We also provide you with information that helps you gain visibility into how people in your organization work across platforms. These additional metrics do not directly contribute to your Productivity Score, but help you create an action plan as part of your digital transformation.  
 
 ### Use of Outlook across platforms
 
@@ -70,7 +73,7 @@ The scores are not provided at the individual user level.
 2. **Body:** Provides information about the value of using Outlook on mobile devices to help stay connected from anywhere on email.
 3. **Visualization:** Shows the percentage of people who are active on Outlook and are using either one or more than one platform:
       - **Multiple platforms:**
-        - Numerator: The number of people who have used Outlook on at least two platforms from desktop, mobile, or web in the last 28 days
+        - Numerator: The number of people who have used Outlook on at least two platforms from desktop, mobile, or web in the last 28 days.
         - Denominator: The number of people who have used Outlook at least once in the last 28 days.
       - **Desktop only:**
         - Numerator: The number of people who have used Outlook on only a desktop platform in the last 28 days.
@@ -80,8 +83,7 @@ The scores are not provided at the individual user level.
         - Denominator: The number of people who have used Outlook at least once in the last 28 days.
       - **Mobile only:**
         - Numerator: Number of people who have used Outlook on only a mobile platform in the last 28 days.
-        - *Denominator: Number of people who have used Outlook at least once in the last 28 days
-4. **View related content:** Select this link to view help content.
+        - *Denominator: Number of people who have used Outlook at least once in the last 28 days.
 
 ### Use of Teams across platforms
 
@@ -102,71 +104,26 @@ The scores are not provided at the individual user level.
     - **Mobile only:**
         - Numerator: The number of people who have used Microsoft Teams only on a mobile platform in the last 28 days
         - Denominator: The number of people who have used Teams at least once in the last 28 days
-1. **View related content:** Select this link to view help content.
 
-### Use of Microsoft 365 apps across platforms
+### Use of Microsoft 365 Apps across platforms
 
 :::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Chart that shows number of people who use Microsoft 365 apps on multiple or single platforms.":::
 
-1. **Header:** Shows the percentage of people active on Microsoft 365 apps (Word, Excel, PowerPoint, and OneNote) on multiple platforms.
+1. **Header:** Shows the percentage of people active on Microsoft 365 Apps (Word, Excel, PowerPoint, and OneNote) on multiple platforms.
 2. **Body:** Provides information about the value of providing people in your organization the flexibility to access their files from anywhere.
-3. **Visualization:** The grouped vertical is meant to represent the number of people who are using each of the apps considered–Word, Excel, PowerPoint, and OneNote-across single or multiple platforms. For each of these applications, bars represent the following:
-      - **Multiple platforms:** The number of users active on applications across at least two platforms in the last 28 days
-      - **Desktop only:** The umber of users active on application on only the desktop platform in the last 28 days
-      - **Web only:** The umber of users active on application on only the web platform in the last 28 days
-      - **Mobile only:** The number of users active on application on only mobile platform in the last 28 days
-4. **View related content:** Select this link to view help content.
+3. **Visualization:** The grouped vertical is meant to represent the number of people who are using each of the apps considered–Word, Excel, PowerPoint, and OneNote — across single or multiple platforms. For each of these applications, bars represent the following:
+      - **Multiple platforms:** The number of users active on an app across at least two platforms in the last 28 days.
+      - **Desktop only:** The number of users active on app on only the desktop platform in the last 28 days.
+      - **Web only:** The number of users active on app on only the web platform in the last 28 days.
+      - **Mobile only:** The number of users active on app on only mobile platform in the last 28 days.
 
 ### Remote work
 
 :::image type="content" source="../../media/remotework-trend.png" alt-text="Chart that shows how many people are working remotely, on-site, or both.":::
 
-1. **Header:** Shows the percentage of people working only from home or location outside of their company&#39;s network.
-2. **Body:** Highlights the importance of facilitating remote work for people without access to organization&#39;s physical offices.
-3. **Visualization:** Shows trend-line for daily percentage of people who only work remotely as well as daily percentage of people who also work onsite. Users are considered onsite if they perform at least three hours of activity in Microsoft 365 apps in a day.
-4. **View related content:** Select this link to view help content.
-
-## People in your organization
-
-This section provides actionable, user-level details of activities relevant to all the insights on the page.
-
-The following columns are presented in the table at the user level:
-
-- **Username:**  The email address of the user.
-- **Display name:**  The full name of the user.
-- **Last activity date:**  The last time the user performed an activity relating to any of the insights within mobility score in the last 28 days.
-- **Department:** Department defined for the user in Azure Active Directory (Azure AD).
-- **Company:** Company defined for the user in Azure AD.
-- **Country:** Country defined for the user in Azure AD.
-- **State:** State defined for the user in Azure AD.
-- **City:** City defined for the user in Azure AD.
-The following metrics are based on the preceding 28 days:
-- **Microsoft 365 Apps:** Boolean value indicating if the person was enabled for Microsoft 365 Apps – Outlook, Word, Excel, PowerPoint, OneNote for at least one day.
-- **Exchange:** Boolean value indicating if the person was enabled for Exchange for at least one day.
-- **Yammer:** Boolean value indicating if the person was enabled for Yammer for at least one day.
-- **Skype:** Boolean value indicating if the person was enabled for Skype for at least one day.
-- **Microsoft Teams:** Boolean value indicating if the person was enabled for Teams for at least one day.
-- **Days in Outlook (desktop):** Number of days the person was active on Outlook in the desktop platform.
-- **Days in Outlook (web):** Number of days the person was active on Outlook in the web platform.
-- **Days in Outlook (mobile):** Number of days the person was active on Outlook in the mobile platform.
-- **Days in Microsoft Teams (desktop):** Number of days the person was active on Teams in the desktop platform.
-- **Days in Microsoft Teams (web):** Number of days the person was active on Teams in the web platform.
-- **Days in Microsoft Teams (mobile):** Number of days the person was active on Teams in the mobile platform.
-- **Days in Word (desktop):** Number of days the person was active on Word in the desktop platform.
-- **Days in Word (web):** Number of days the person was active on Word in the web platform.
-- **Days in Word (mobile):** Number of days the person was active on Word in the mobile platform.
-- **Days in Excel (desktop):** Number of days the person was active on Excel in the desktop platform.
-- **Days in Excel (web):** Number of days the person was active on Excel in the web platform.
-- **Days in Excel (mobile):** Number of days the person was active on Excel in the mobile platform.
-- **Days in PowerPoint (desktop):** Number of days the person was active on PowerPoint in the desktop platform.
-- **Days in PowerPoint (web):** Number of days the person was active on PowerPoint in the web platform.
-- **Days in PowerPoint (mobile):** Number of days the person was active on PowerPoint in the mobile platform.
-- **Days in Yammer (desktop):** Number of days the person was active on Yammer in the desktop platform.
-- **Days in Yammer (web):** Number of days the person was active on Yammer in the web platform.
-- **Days in Yammer (mobile):** Number of days the person was active on Yammer in the mobile platform.
-- **Days in Skype (desktop):** Number of days the person was active on Skype in the desktop platform.
-- **Days in Skype (web):** Number of days the person was active on Skype in the web platform.
-- **Days in Skype (mobile):** Number of days the person was active on Skype in the mobile platform.
+1. **Header:** Shows the percentage of people working only from home or location outside of their company's network.
+2. **Body:** Highlights the importance of facilitating remote work for people without access to your organization's physical offices.
+3. **Visualization:** Shows trend-line for daily percentage of people who only work remotely as well as daily percentage of people who also work onsite. Users are considered onsite if they perform at least three hours of activity in Microsoft 365 Apps in a day.
 
 ## Related content
 
