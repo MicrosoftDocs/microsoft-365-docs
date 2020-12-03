@@ -40,6 +40,7 @@ Before you get started with communication compliance, you should confirm your [M
 - Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
 - Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
 - Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 A5 subscription (paid or trial version)
 - Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
 Users included in communication compliance policies must be assigned one of the licenses above.
@@ -47,7 +48,7 @@ Users included in communication compliance policies must be assigned one of the 
 >[!IMPORTANT]
 >Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-If you don't have an existing Office 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Office 365 Enterprise E5.
+If you don't have an existing Office 365 Enterprise E5 plan and want to try communication compliance, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Office 365 Enterprise E5.
 
 ## Step 1 (required): Enable permissions for communication compliance
 
@@ -120,10 +121,10 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 Use the following chart to help you configure groups in your organization for communication compliance policies:
 
-| Policy Member | Supported Groups | Unsupported Groups |
+| **Policy Member** | **Supported Groups** | **Unsupported Groups** |
 |:-----|:-----|:-----|
-|Supervised users <br> Non-supervised users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Mail-enabled security groups |
-| Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Mail-enabled security groups |
+|Supervised users <br> Non-supervised users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
+| Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
   
 When you assign a distribution group in the policy, the policy monitors all emails and Teams chats from each user in distribution group. When you assign a Microsoft 365 group in the policy, the policy monitors all emails and Teams chats sent to that group, not the individual emails and chats received by each group member.
 
