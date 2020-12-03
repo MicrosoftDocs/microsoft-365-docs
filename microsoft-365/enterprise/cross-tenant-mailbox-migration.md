@@ -445,7 +445,8 @@ Foreach ($i in $Mailboxes)
  	$myObj | Add-Member -type NoteProperty -name DisplayName -value $User.DisplayName 
  	$myObj | Add-Member -type NoteProperty -name Name -value $i.Name 
  	$myObj | Add-Member -type NoteProperty -name SamAccountName -value $i.SamAccountName 
- 	$myObj | Add-Member -type NoteProperty -name legacyExchangeDN -value $i.legacyExchangeDN  	$myObj | Add-Member -type NoteProperty -name ExchangeGuid -value $i.ExchangeGuid 
+ 	$myObj | Add-Member -type NoteProperty -name legacyExchangeDN -value $i.legacyExchangeDN
+  $myObj | Add-Member -type NoteProperty -name ExchangeGuid -value $i.ExchangeGuid 
  	$outArray += $myObj 
 } 
 $outArray | Export-CSV $outfile -notypeinformation  
@@ -462,7 +463,8 @@ for ($i=0; $i -lt $pwstr.Length; $i++) {$pw.AppendChar($pwstr[$i])} foreach ($us
  	$tmpUser = New-MailUser -organization -UserPrincipalName $upn -ExternalEmailAddress $user.primarysmtpaddress -FirstName $user.FirstName ` 
                  -LastName $user.LastName -SamAccountName $user.SamAccountName -ResetPasswordOnNextLogon $false ` 
                  -Alias $user.alias -PrimarySmtpAddress $UPN -Name $User.Name -DisplayName $user.DisplayName ` 
-                 -OrganizationalUnit "OU=ContosoUsers,OU=MLB,DC=ContosoLab,DC=net" -Password $pw       $x500 = "x500:" + $user.legacyExchangeDN 
+                 -OrganizationalUnit "OU=ContosoUsers,OU=MLB,DC=ContosoLab,DC=net" -Password $pw
+  $x500 = "x500:" + $user.legacyExchangeDN 
  	$tmpUser | Set-MailUser -ExchangeGuid $user.ExchangeGuid -EmailAddresses @{Add=$x500} -CustomAttribute1 "ProjectKermit" 
 }  
 ################################################################# 
