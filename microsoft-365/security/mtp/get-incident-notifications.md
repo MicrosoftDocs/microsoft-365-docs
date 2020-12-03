@@ -47,15 +47,22 @@ Likewise, if your organization is using role-based access control (RBAC), you ca
 
 To set up your first email notification for incidents, create a new rule and customize email notification settings.
 
-1. In the navigation pane, select **Settings** > **Incident notifications**.
-2. Select **Create rule**.
-3. Give the rule a name in **Name rule**.
-4. Next, go to **Notification settings** to specify the following:
+1. In the navigation pane, select **Settings** > **Incident email notifications**.
+2. Select **Add item**.
+3. Give the rule a name in **Name** and supply a **Description**.
+
+    ![Create rule window for incident email notifs](../../media/incidentemailnotif1.png) 
+4. Select **Next** to go to **Notification settings**. Here you can specify the following:
     - **Alert severity** - Choose the alert severity that will trigger an inncident notification. For example, if you only want to be informed about High severity incidents, select High.
-    - **Device group scope** 
-    - **Only notify on first occurrence per incident**
-    - **Include organization name**
-    - **Include tenant-specific portal link**
-5. Next, specify the recipients in **Recipients**.
-6. Finally, select **Review rule** to check your new rule.
+    - **Device group scope** - This displays all the device groups the user can access. Select which device groups you are creating the incident notification rules for.
+    - **Only notify on first occurrence per incident** - Selecting this option will send an email notification only on the first alert that matches your other selections. Subsequent updates or alerts related to the incident will not trigger a notification.
+    - **Include organization name** - Indicates whether or not the customer name appears on the email notification.
+    - **Include tenant-specific portal link** -  Adds a link with the tenant ID to allow access to a specific tenant.
+    
+    ![Notif settings window for incident email notifs](../../media/incidentemailnotif2.png)
+5. Select **Next** to go the **Recipients** section. Here you can specify email addresses that will receive the incident email notifications. Select **Add a recipient** after typing every email address.
+
+    ![Add recipients window for incident email notifs](../../media/incidentemailnotif3.png) 
+
+6. Finally, select **Next** to go to **Review rule** so you can see all the settings associated with your new rule.
 
