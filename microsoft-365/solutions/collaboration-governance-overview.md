@@ -151,7 +151,7 @@ Follow these basic steps to create your governance plan:
 
 These training modules from Microsoft Learn can help you learn the collaboration features in Teams and SharePoint.
 
-<br><br>
+#### Teams
 
 |Training:|Manage team collaboration with Microsoft Teams|
 |:---|:---|
@@ -160,7 +160,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 > [!div class="nextstepaction"]
 > [Start >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
 
-<br><br>
+#### SharePoint
 
 |Training:|Collaborate with SharePoint in Microsoft 365|
 |:---|:---|
