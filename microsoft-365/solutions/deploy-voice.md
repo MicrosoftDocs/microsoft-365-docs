@@ -5,11 +5,12 @@ author: CarolynRowe
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.prod: teams
 localization_priority: Normal
 ms.collection: 
 - M365-collaboration
 - m365solution-overview
+- m365solution-voice
 ms.custom: 
 - M365solutions
 - seo-marvel-jun2020
