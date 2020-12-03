@@ -31,7 +31,7 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 
   - NEW! Windows 10 Enterprise, Version 20H2
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager, Version 2002
+  - Microsoft Endpoint Configuration Manager, Version 2010*
   - Windows Assessment and Deployment Kit for Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -89,7 +89,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 300 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires February, 2020. A new version will be published prior to expiration.
+*Installed baseline version 2002 can be updated to Version 2010 using in-console update. Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16GB of available memory and 150GB of free disk space. For optimal performance, 32GB of available memory and 300GB of free space is recommended. The lab expires February 7, 2021. A new version will be published prior to expiration.
 
 ## Additional guidance
 
