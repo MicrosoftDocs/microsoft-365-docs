@@ -289,13 +289,23 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't included in any label policies or auto-labeling policies, and they aren't configured for event-based retention or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently in preview and if the label has been applied to items, you'll be prompted to review them before confirming the label deletion.
+You can delete retention labels that aren't included in any label policies or auto-labeling policies, and they aren't configured for event-based retention or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently in preview.
 
-If you delete a retention label that has been applied to items, that label is automatically removed from those items.
+If you try to delete a retention label that has been applied to items but is no longer in a label policy or auto-apply label policy:
+
+- For a retention label that doesn't mark items as a record: The deletion succeeds and the label remains on the item. Because you can no longer edit the label, the only way to change the retention settings applied to that item is to change or remove the retention label.
+
+- For a retention label that marks items as a record: The deletion fails and you see a link to content explorer to identify the items.
 
 After you delete a retention label, you can't create a new retention label with the same name, even if the original label was never applied to items.
 
-You can't delete retention labels that are included in label policies or auto-labeling policies, configured for event-based retention, or mark items as regulatory records.
+You can't delete retention labels under any of the following scenarios:
+
+- They are currently included in any label policies or auto-labeling policies
+
+- They are configured for event-based retention, or mark items as regulatory records
+
+- They mark items as records and have been applied to documents or emails
 
 ## Locking the policy to prevent changes
 
