@@ -60,9 +60,9 @@ Here's what happens:
 
 OneDrive sync clients will not download files that contain viruses. The sync client will display a notification that the file can't be synced.
 
-## Extended capabilities with Office 365 Advanced Threat Protection
+## Extended capabilities with Microsoft Defender for Office 365
 
-Microsoft 365 organizations that have [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) included in their subscription or purchased as an add-on can enable ATP for SharePoint, OneDrive, and Microsoft Teams for enhanced reporting and protection. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](office-365-atp.md) included in their subscription or purchased as an add-on can enable ATP for SharePoint, OneDrive, and Microsoft Teams for enhanced reporting and protection. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 ## More information
 

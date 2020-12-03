@@ -26,7 +26,7 @@ ms.custom: seo-marvel-apr2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
+[Microsoft Defender for Office 365](office-365-atp.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
 
 > [!NOTE]
 > Jump to the remediation article [here](remediate-malicious-email-delivered-office-365.md).
@@ -35,13 +35,13 @@ ms.custom: seo-marvel-apr2020
 
 Make sure that the following requirements are met:
 
-- Your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
+- Your organization has [Microsoft Defender for Office 365](office-365-atp.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
 
 - [audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization.
 
 - Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
 
-- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Security &amp; Compliance Center. See [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). For some actions, you must also have a new Preview role assigned.
+- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Security & Compliance Center. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). For some actions, you must also have a new Preview role assigned.
 
 ### Preview role permissions
 
@@ -51,9 +51,9 @@ To perform certain actions, such as viewing message headers or downloading email
 
 |Activity|Role group|Preview role needed?|
 |---|---|---|
-|Use Threat Explorer (and real-time detections) to analyze threats ​|Global Administrator <br> Security Administrator <br> Security Reader|No|
-|Use Threat Explorer (and real-time detections) to view headers for email messages ​as well as preview and download quarantined email messages|Global Administrator <br> Security Administrator <br>Security Reader|No|
-|Use Threat Explorer to view headers and download email messages delivered to mailboxes|Global Administrator <br>Security Administrator <br> Security Reader <br> Preview|Yes|
+|Use Threat Explorer (and real-time detections) to analyze threats ​|Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer (and real-time detections) to view headers for email messages ​as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer to view headers and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
 |
 
 > [!NOTE]
@@ -66,7 +66,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 > [!NOTE]
 > Default searches in Explorer don't currently include Zapped items.  This applies to all views, for example malware or phish views. To include Zapped items you need to add a 'Delivery action' set to include 'Removed by ZAP'. If you include all options, you'll see all delivery action results, including Zapped items.
 
-1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
+1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security & Compliance Center.
 
 2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
 
@@ -80,7 +80,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
     The *Malware* view is currently the default, and captures emails where a malware threat is detected. The *Phish* view operates in the same way, for Phish.
 
-    However, *All email* view lists every mail received by the organization, whether threats were detected or not. As you can imagine, this is a lot of data, which is why this view shows a placeholder that asks a filter be applied. (This view is only available for ATP P2 customers.)
+    However, *All email* view lists every mail received by the organization, whether threats were detected or not. As you can imagine, this is a lot of data, which is why this view shows a placeholder that asks a filter be applied. (This view is only available for Defender for Office 365 P2 customers.)
 
     *Submissions* view shows up all mails submitted by admin or user that were reported to Microsoft.
 
@@ -195,8 +195,8 @@ Delivery location shows the results of policies and detections that run post-del
 
 [Remediate malicious email delivered in Office 365](remediate-malicious-email-delivered-office-365.md)
 
-[Office 365 Advanced Threat Protection](office-365-ti.md)
+[Microsoft Defender for Office 365](office-365-ti.md)
 
 [Protect against threats in Office 365](protect-against-threats.md)
 
-[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+[View reports for Defender for Office 365](view-reports-for-atp.md)

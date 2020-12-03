@@ -2,7 +2,7 @@
 title: Admin submissions
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
@@ -58,6 +58,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
    - **Network Message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message.
 
    - **File**: Click **Choose file**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
+   
+   > [!NOTE]
+   > Admins with Defender for Office 365 Plan 1 or Plan 2 are able to submit messages as old as 30 days. Other admins will only be able to go back 7 days.
 
 2. In the **Recipients** section, specify one or more recipients that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
@@ -67,11 +70,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
    - **Should have been blocked**: Select **Spam**, **Phishing**, or **Malware**. If you're not sure, use your best judgment.
 
-4. If the filter was bypassed due to policies upon submission, you'll see information about that policy.
-
-   If the filter was not bypassed due to one or more policies, the scan will complete in several minutes. You'll see additional information about the submission by clicking on the status link. This includes the results of the policy check and the rescan verdict. Note this does not run the email through the Office 365 ATP full filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file.
-
-5. When you're finished, click the **Submit** button.
+4. When you're finished, click the **Submit** button.
 
 ![URL submission example](../../media/submission-flyout-email.PNG)
 
@@ -140,10 +139,19 @@ You can click the **Column options** button near the bottom of the page to add o
 - **Submission type**
 - **Delivery reason**
 - **Status**<sup>\*</sup>
-- **Control type**
-- **Control source**
 
   <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
+
+#### Admin submission rescan details
+
+Messages that are submitted in admin submissions are rescanned and results shown in the details flyout:
+
+- If there was a failure in the sender's email authentication at the time of delivery.
+- Information about any policy hits that could have affected or overridden the verdict of a message.
+- Current detonation results to see if the URLs or files contained in the message were malicious or not.
+- Feedback from graders.
+
+If an override was found, the rescan should complete in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
 
 ### View admin URL submissions
 
@@ -228,6 +236,10 @@ You can click the **Column options** button near the bottom of the page to add o
 Near the top of the page, you can enter a start date, an end date, and you can filter by **Submitted by** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
+
+## Undo user submissions
+
+Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders. 
 
 ### Submit messages to Microsoft from the custom mailbox
 

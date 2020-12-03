@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -37,8 +37,6 @@ The following list includes the existing gaps between Azure Information Protecti
 - Sharing of documents and email attachments to users in the commercial cloud is currently not available. This includes Office 365 operated by 21Vianet users in the commercial cloud, non-Office 365 operated by 21Vianet users in the commercial cloud, and users with an RMS for Individuals license.
   
 - IRM with SharePoint (IRM-protected sites and libraries) is currently not available.
-  
-- The Rights Management Connector is currently not available.
   
 - The Mobile Device Extension for AD RMS is currently not available.
 

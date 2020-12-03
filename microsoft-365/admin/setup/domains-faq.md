@@ -1,10 +1,10 @@
 ---
-title: "Domains FAQ"
+title: Domains Frequently Asked Questions
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -23,7 +24,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: "Learn more about domains by finding answers to your frequently asked questions."
+description: Learn more about domains (onmicrosoft domain and tranfer domain) by finding answers to your questions in FAQ.
 ---
 
 # Domains FAQ
@@ -32,7 +33,7 @@ description: "Learn more about domains by finding answers to your frequently ask
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview).
 
 ::: moniker-end
 

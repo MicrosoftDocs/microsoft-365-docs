@@ -109,25 +109,25 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 ### Resolution
 
-1. Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
-
-2. If you still have issues, connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:
+1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
    ```
 
-3. Find the amount of data to be downloaded in the SearchResults and SearchStatistics parameters.
+2. Find the amount of data to be downloaded in the SearchResults and SearchStatistics parameters.
 
-4. Run the following command:
+3. Run the following command:
 
    ```powershell
    Get-ComplianceSearchAction | FL
    ```
 
-5. In the results field, find the data that has been exported and view any errors encountered.
+4. In the results field, find the data that has been exported and view any errors encountered.
 
-6. Check the trace.log file located in the directory that you exported the content to for any errors.
+5. Check the trace.log file located in the directory that you exported the content to for any errors.
+
+6. If you still have issues, consider dividing searches that return a large set of results into smaller searches. For example, you can use date ranges in search queries to return a smaller set of results that can be downloaded faster.
 
 ## Error/issue: "Internal server error (500) occurred"
 

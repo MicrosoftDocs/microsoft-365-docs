@@ -18,25 +18,24 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "How privacy is protected with the Productivity Score."
 ---
 
 # Privacy controls for Productivity Score
 
-Productivity Score helps organizations transform how work gets done with insights about how people use Microsoft 365 and the technology experiences that support them. The score reflects your organization&#39;s performance against employee and technology experience measures and compares your score with organizations like yours. For more details, check out the [Productivity Score overview](productivity-score.md) topic.
+Productivity Score provides insights into your organization’s digital transformation journey through its use of Microsoft 365 and the technology experiences that support it.  Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. For more details, view the [Productivity Score overview](productivity-score.md).
 
-Your privacy is important to us and you can view Microsoft's privacy statement [here](https://privacy.microsoft.com/privacystatement). In Productivity Score, there is vital information that we provide on how people in your organizations work. Thus, we also aim to provide you controls to make sure the information is actionable in a meaningful way while not compromising the trust you place in us.
+Your privacy is important to Microsoft. To learn how we protect your privacy, see [Microsoft's privacy statement](https://privacy.microsoft.com/privacystatement). Productivity Score gives you, as your organization's IT administrator, access to privacy settings to help make sure any Productivity Score information you view is actionable, while not compromising the trust your organization places in Microsoft.
 
-We provide the following controls to allow for safer handling of data:
+Within the people experiences area, metrics are available at the organizational level only. This area looks at how people use Microsoft 365 by looking at the categories of content collaboration, mobility, meetings, teamwork, and communication. We enable you with several levels of controls to help you meet your internal privacy policy needs.
+The controls give you:
 
 - Flexible admin roles to control who can see the information in Productivity Score.
-- Anonymization of user level metrics.
-- Capability to opt out of Employee experience.
+- The capability to opt out of the people experiences area.
 
 ## Flexible admin roles to control who can see the information in Productivity Score
 
-To view the entire Productivity Score experience with an admin role, including tenant level insights and per-user level details, your role should be one of the following:
+To view the entire Productivity Score, you need be one of the following admin roles:
 
 - Global admin
 - Exchange admins
@@ -45,29 +44,36 @@ To view the entire Productivity Score experience with an admin role, including t
 - Teams admin
 - Global Reader
 - Reports Reader
+- Usage Summary Reports Reader
 
-To invite people who are responsible for change management and adoption but are not IT administrators into the experience, while giving them access to the complete experience including tenant level insights and per-user level details, you can give them Report Reader role.
+Assign the Reports Reader or the Usage Summary Reports Reader role to anyone who's responsible for change management and adoption, but not necessarily an IT administrator. This role gives them access to the complete Productivity Score experience in the Microsoft 365 admin Center.
 
-Within Employee experience, we provide per-user level activity details in grid format for each category detail page. As this level of detail is not suitable for all potential visitors of Productivity Score, we have created a custom role within Azure AD – Usage Summary Reports Reader role – to enable access to a wider set of visitors within your org to only the aggregate metrics and no per-level details within the experience.
+The Usage Summary Reports Reader role will have to be assigned through PowerShell cmdlets until it becomes assignable from the Microsoft 365 admin center later in 2020.
 
-:::image type="content" source="../../media/communicationspage.jpg" alt-text="Communications page in Productivity reports.":::
+To assign the Usage Summary Reports Reader role with PowerShell:
 
-## Anonymization of user level metrics
+- Run the following PowerShell:
 
-To make the data that is collected for all reports anonymous, you must be a global administrator. This will hide identifiable information such as user, group, and site names in all reports – including Productivity Score and Microsoft 365 Usage.
+```powershell
+Connect-AzureAD
+Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
+$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
+$u=Get-AzureADUser -ObjectId <user upn>
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
+```
 
-1. In the admin center, go to the  **Settings**  >  **Org Settings** , and under  **Services**  tab, choose  **Reports**.
-2. Select  **Reports** , and then choose to  **Display anonymous identifiers for user, group and site names in Productivity Score and Usage Reports**. This setting gets applied both to the usage reports as well as to the template app.
-3. Select  **Save changes**.
+</br>
 
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Make user info anonymous for reports.":::
 
-## Capability to opt out of Employee experience
+## Capability to opt out of people experiences
 
-We will also provide the capability to opt out of the Employee experience area of Productivity Score at general availability. Turning this setting on will prevent anyone from your organization being able to view these metrics and remove your organization from any calculations involving categories of Communication, Meetings, Teamwork, Content collaboration and Mobility.
+You can also opt out of the people experiences area of Productivity Score. If you opt out, no one from your organization will be able to view these metrics, and your organization will be removed from any calculations that involve communication, meetings, teamwork, content collaboration, and mobility.
 
-1. In the admin center, go to the  **Settings**  >  **Org Settings** , and under  **Services**  tab, choose  **Reports**.
-2. Select  **Reports** , and then un-check the box that says  **Share your org&#39;s data with Productivity Score Employee Experience insights**. To understand how to modify data-sharing settings for Endpoint Analytics in the Intune configuration manager, click on **Learn More**.
-3. Select  **Save changes**.
+To opt put:
 
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Org settings page where you can opt out from employee experience.":::
+1. In the admin center, go to the  **Settings**  >  **Org Settings**, and under  **Services**  tab, select  **Reports**.
+2. Un-check the box that says  **Allow Microsoft 365 usage data to be used for people experiences insights**. To understand how to modify data-sharing settings for Endpoint Analytics in the Intune configuration manager, select **Learn more**.
+3. Select  **Save**.
+
+:::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Org settings page where you can opt out from people experiences.":::

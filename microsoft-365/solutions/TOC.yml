@@ -101,8 +101,8 @@
         href: https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json  
       - name: Telephony solutions
         items: 
-        - name: Choose your solution 
-          href: https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        - name: Choose your Teams voice solution 
+          href: https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
         - name: Case study for multi-national corporation 
           href: https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
 
@@ -110,14 +110,16 @@
         items:
         - name: Overview
           href: collaboration-governance-overview.md
-        - name: Governance first
+        - name: Create your governance plan
           href: collaboration-governance-first.md
-        - name: Groups with SharePoint
-          href: groups-sharepoint-governance.md
-        - name: Groups, SharePoint, and Teams
-          href: groups-sharepoint-teams-governance.md
-        - name: Services interactions reference
-          href: groups-services-interactions.md
+        - name: Settings in services
+          items:
+          - name: Groups with SharePoint
+            href: groups-sharepoint-governance.md
+          - name: Groups, SharePoint, and Teams
+            href: groups-sharepoint-teams-governance.md
+          - name: Groups with other services
+            href: groups-services-interactions.md
         - name: Access
           href: groups-teams-access-governance.md
         - name: Compliance
@@ -175,6 +177,8 @@
       items:
       - name: Microsoft 365 solutions for the Contoso Corporation
         href: contoso-case-study-solutions.md
+      - name: COVID-19 response and support for remote and onsite work
+        href: contoso-remote-onsite-work.md
       - name: Isolated Team for a top-secret project
         href: contoso-team-for-top-secret-project.md
       - name: Teams voice migration
