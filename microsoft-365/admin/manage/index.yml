@@ -22,12 +22,14 @@ landingContent:
   # Card (optional)
   - title: Monitor the status of our service
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
           - text: Microsoft 365 Usage reports - overview
             url: ../activity-reports/activity-reports.md
           - text: Productivity score - overview
             url: ../productivity/productivity-score.md
+      - linkListType: how-to-guide
+        links:
           - text: Monitor usage analytics
             url: ../usage-analytics/usage-analytics.md
           - text: Enable usage analytics
