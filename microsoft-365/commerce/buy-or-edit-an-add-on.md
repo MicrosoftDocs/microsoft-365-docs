@@ -230,7 +230,7 @@ For information about Skype for Business add-ons, see [Skype for Business and Mi
 |**Add-on**|**Available in these subscriptions**|
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
+|[Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Exchange Online Plan 1 <br/> Exchange Online Plan 2 <br/> Exchange Online Kiosk <br/> Exchange Online Protection <br/> Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/> Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> Office 365 A3 <br/> Office 365 A1 <br/> Office 365 Enterprise F3 <br/> 
 |[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
