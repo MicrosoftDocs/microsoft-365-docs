@@ -1,5 +1,5 @@
 ---
-title: "Apply a sensitivity label to content automatically"
+title: "Automatically apply a sensitivity label to content in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,16 +15,19 @@ ms.topic: article
 search.appverid: 
 - MOE150
 - MET150
-description: "When you create a sensitivity label, you can automatically assign a label to a document or email, or you can prompt users to select the label that you recommend."
+description: "When you create a sensitivity label, you can automatically assign a label to files and emails, or you can prompt users to select the label that you recommend."
 ---
 
 # Apply a sensitivity label to content automatically
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-When you create a sensitivity label, you can automatically assign that label to content when it matches conditions that you specify.
+> [!NOTE]
+> For information about automatically applying a sensitivity label in Azure Purview (preview), see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
-The ability to apply sensitivity labels to content automatically is important because:
+When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
+
+This ability to apply sensitivity labels to content automatically is important because:
 
 - You don't need to train your users when to use each of your classifications.
 
@@ -34,9 +37,9 @@ The ability to apply sensitivity labels to content automatically is important be
 
 When content has been manually labeled, that label will never be replaced by automatic labeling. However, automatic labeling can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters) that was automatically applied.
 
-There are two different methods for automatically applying a sensitivity label:
+There are two different methods for automatically applying a sensitivity label to content in Microsoft 365:
 
-- **Client-side labeling when users edit documents or compose (also reply or forward) emails**: Use a label that's configured for auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook). 
+- **Client-side labeling when users edit documents or compose (also reply or forward) emails**: Use a label that's configured for auto-labeling for files and emails (includes Word, Excel, PowerPoint, and Outlook). 
     
     This method supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This client-side labeling has minimal delay for documents because the label can be applied even before the document is saved. However, not all client apps support auto-labeling. This capability is supported by the Azure Information Protection unified labeling client, and [some versions of Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
     
@@ -70,7 +73,7 @@ There are two different methods for automatically applying a sensitivity label:
 
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling methods:
 
-|Feature or behavior|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
+|Feature or behavior|Label setting: Auto-labeling for files and emails  |Policy: Auto-labeling|
 |:-----|:-----|:-----|
 |App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No \* |
 |Restrict by location|No |Yes |
@@ -105,7 +108,7 @@ The auto-labeling settings for Office apps are available when you [create or edi
 
 ![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
 
-As you move through the wizard, you see the **Auto-labeling for Office apps** page where you can choose from a list of sensitive info types or trainable classifiers:
+As you move through the wizard, you see the **Auto-labeling for files and emails** page where you can choose from a list of sensitive info types or trainable classifiers:
 
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
