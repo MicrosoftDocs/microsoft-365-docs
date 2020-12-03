@@ -132,28 +132,6 @@ We also provide you with information that helps you gain visibility into how you
       - **Questions with answers:** The colored portion of the bar and the associated number represents the number of posts marked as questions and have received answers in the last 28 days.
       - **Questions with best answers:** The colored portion of the bar and the associated number represents the number of posts that were marked as questions and have also received a &quot;best answer&quot; in the last 28 days.
 4. **View related content:** Select this link to view collated videos, and other related help content.
-## Explore how people in your organization communicate
-
-This section provides you with user-level details of activities relevant to all the insights on the page. The columns in the table are described as follows:
-
-- **Username**  is the email address of the user.
-- **Display name**  is the full name if the user.
-- **Last activity date**  the last time the user performed an activity relating to any of the insights within Communication within the last 28 days.
-- **Department:** Department defined for the user in Azure Active Directory (Azure AD).
-- **Company:** Company defined for the user in Azure AD.
-- **Country:** Country defined for the user in Azure AD.
-- **State:** State defined for the user in Azure AD.
-- **City:** City defined for the user in Azure AD.
-- **Exchange:** True if the user is enabled for Exchange in the last 28 days otherwise False.
-- **Teams:** True if the user is enabled for Teams in the last 28 days otherwise False.
-- **Yammer:** True if the user is enabled for Yammer in the last 28 days otherwise False.
-- **Days sent email:** Number of days the user sent an email in the last 28 days.
-- **Days used Teams chat:** Number of days the user sent a chat message on Microsoft Teams in the last 28 days.
-- **Days used Teams channels:** Number of days the user sent a channel message on Microsoft Teams in the last 28 days.
-- **Days posted to Yammer:** Number of days the user posted on Yammer in the last 28 days.
-- **Days used @mention in email:** Number of days the user sent an email containing an @mention in the last 28 days.
-
-You can also export the report data into an Excel .csv file, by selecting the Export **Export button** link. Note that you can customize the set of columns in the view by selecting the required columns after clicking on **Choose columns**.
 
 ## Related content
 
