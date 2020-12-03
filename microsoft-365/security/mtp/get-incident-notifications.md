@@ -35,9 +35,9 @@ You can set up Microsoft 365 Defender to notify you by email every time there ar
 
 You can choose to get notifications based on incident severity or by device group. You can also choose to get a notification only on the first update per incident.
 
-You can add or remove other recipients in the email notifications. Newly added recipients get notified about incidents after they are added. 
+You can add or remove recipients in the email notifications. Newly added recipients get notified about incidents after they are added. 
 
-The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also directly go to incidents to start your investigation right away. For more on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents).
+The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also directly go to incidents so you can start your investigation right away. For more on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents).
 
 >[!NOTE]
 >You need 'Manage security settings' permissions to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications for you. <br> <br>
@@ -64,5 +64,10 @@ To set up your first email notification for incidents, create a new rule and cus
 
     ![Add recipients window for incident email notifs](../../media/incidentemailnotif3.png) 
 
-6. Finally, select **Next** to go to **Review rule** so you can see all the settings associated with your new rule.
+6. Finally, select **Next** to go to **Review rule** so you can see all the settings associated with your new rule. Recipients will start receiving incident notifications through email based on the settings.
+
+## See also
+- [Incidents overview in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)
+- [Prioritize incidents in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue)
+- [Investigate incidents in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)
 
