@@ -44,7 +44,7 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
       - Sending messages through Teams
       - Posting on communities in Yammer
 
-    This key metric is shown as a percentage of all people who are using two or more of these products–Exchange, Teams, and Yammer. 
+    This key metric is shown as a percentage of all people who are using two or more of Exchange, Teams, or Yammer. 
 
 2. **Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org
 3. **Visualization of current state:**
