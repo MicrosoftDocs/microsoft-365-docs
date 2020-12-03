@@ -55,7 +55,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 1. In the **Object type** section, select **Email**. In the **Submission format** section, use one of the following options:
 
-   - **Network Message ID**: This is a GUID value that's available in the **X-MS-Office365-Filtering-Correlation-Id** header in the message.
+   - **Network Message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message, or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
 
    - **File**: Click **Choose file**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
 
