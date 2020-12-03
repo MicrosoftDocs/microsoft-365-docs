@@ -96,11 +96,11 @@ This chart shows the trend-line of the devices running supported versions and la
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Chart that showa how many devices run supported and latest versions of apps over time.":::
 
-## People in your organization
+## Devices in your organization
 
 This section helps you act on the metrics you want to focus on by providing relevant information to all the metrics for Microsoft 365 apps health - technology experiences.
 
-The following columns are presented in the table at the user level:
+The following columns are presented in the table at the channel/version level:
 
 - **Channel** : Current Microsoft 365 apps channel on the devices.
 - **Status:**   Microsoft 365 apps support state of the devices based on current channel and version.
