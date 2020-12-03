@@ -43,14 +43,11 @@ This solution guidance helps you to:
 
 In addition, you might want read about how a large, multi-national corporation migrated to a Teams voice solution in the [Contoso case study](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json).
 
-For voice, you'll need the following licenses:
+For information about required licenses, see the following:
 
-[NOTE TO ME: NEED TO UPDATE LICENSE INFO]
+- [Teams add-on licenses](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?tabs=enterprise#what-voice-features-are-available-with-my-plan)
 
-| Product or component | Capability or feature | Licensing |
-|:-------|:-----|:-------|
-| Microsoft Defender for Office 365	| Safe Attachments for SPO, OneDrive and Teams; Safe Documents; Safe Links for Teams	| Microsoft 365 E1, E3 and E5 |
-| SharePoint	| Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings	| Microsoft 365 E1, E3 and E5 |
-| Microsoft Teams	| Guest access, private teams, private channels	| Microsoft 365 E1, E3 and E5 |
-| Microsoft 365 Compliance	| Sensitivity labels	| Microsoft 365 E3 and E5 |
+- [Direct Routing licensing requirements](https://docs.microsoft.com/microsoftteams/direct-routing-plan#licensing-and-other-requirements)
+
+
 
