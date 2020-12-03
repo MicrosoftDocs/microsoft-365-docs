@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 monikerRange: 'o365-worldwide'
 ms.collection: 
 - M365-subscription-management 
@@ -23,21 +23,21 @@ description: "Overview of Microsoft productivity score."
 
 # Microsoft Productivity Score 
 
-Productivity Score helps organizations transform how work gets done with insights about how people use Microsoft 365 and the technology experiences that support them. The score reflects your organization’s performance against people and technology experiences measures and compares your score with organizations like yours.
+Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
 
-The score includes:
+It provides:
 
-- **Metrics** to help you see how people are using Microsoft 365 products to collaborate, communicate, and work across platforms.
-- **Insights** about the data to help you identify opportunities to improve employee productivity and satisfaction.
-- **Recommended actions** you can take to help the people in your organization use Microsoft 365 products efficiently so everyone can do their best work.
+- **Metrics** to help you see where you are on your digital transformation journey.
+- **Insights** about the data to help you identify opportunities to improve productivity and satisfaction in your organization.
+- **Recommended actions** you can take to help your organization use Microsoft 365 products efficiently.
 
-We provide data, insights, and recommendations in two areas: 
+We provide metrics, insights, and recommendations in two areas: 
 
-- **People experiences:** Measures how people collaborate on content, how they use Microsoft 365 products to communicate, and whether they use Microsoft 365 across multiple platforms. 
+- **People experiences:** Quantifies how the organization works using Microsoft 365 categories like content collaboration, mobility, communication, meetings, and teamwork.  
 
-    We provide these insights because when people collaborate online, they save time, and with the freedom to work on any device makes then more productive and satisfied. The ability to communicate in a flexible way makes people more efficient, able to form better relationships therefore making your organization more unified. For evidence, see [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    For each of the mentioned categories, we look at public research to identify some best practices and associated benefits in the form of organizational effectiveness . For example, [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf research    has shown that when people collaborate and share content in the cloud (instead of emailing attachments), they can save up to 100 minutes a week. Furthermore, we quantify the use of these best practices in your organization to help you see where you are on your digital transformation journey. 
 
-- **Technology experiences:** Your team's productivity depends on reliable and well performing technology as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your users’ productivity can be impacted by performance and health issues with your hardware and software.Recommended actions help you to remediate these issues. Microsoft 365 network connectivity insights will help you troubleshoot connectivty issues for your organization.
+- **Technology experiences:** Your organization depends on reliable and well performing technology as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
 
 See [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -58,22 +58,22 @@ Your Productivity Score is based on the combined scores of your people and techn
 - Microsoft 365 Apps Health (100 points)
 - **Total possible = 800 points**
  
- In each score category, we identify patterns for key activities that are indicators for how people use Microsoft 365 products to collaborate, communicate, and work across platforms. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying behaviors and settings that you can address.
+ In each score category, we quantify the key indicators for how your organization is using Microsoft 365 in its journey towards digital transformation. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying usage statistics and configurations that you can address.
 
 ### Products included in Productivity Score 
 
 Productivity Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
 
-Your score is updated daily and reflects user actions completed in the last 28 (including the current day).
+Your organization's score is updated daily and reflects user actions completed in the last 28 (including the current day).
 
 
 ## Pre-requisites 
 
-For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about Microsoft Intune. 
+For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
 > A license to Workplace Analytics is not required to get the Productivity Score features.
 
-To view the Productivity Score for your organization, you must have of one of the following roles: 
+Productivity Score is only available in the Microsoft 365 Admin Center and can only be accessed by IT professionals who have one of the following roles:  
 
 - Global admin 
 - Exchange admins
@@ -83,17 +83,21 @@ To view the Productivity Score for your organization, you must have of one of th
 - Global Reader 
 - Reports Reader 
 
+Please note that the information is only intended to be used for furthering digital transformation using Microsoft 365, and should therefore be shared with discretion. 
+
+Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization’s IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft .
+
 You can access the experience from Microsoft 365 Admin home under **Reports** > **Productivity Score**.
 
-## Interpreting Productivity Score 
+## Interpreting your organization's Productivity Score 
 
-The Productivity Score home page shows your total score and score history and the primary insight for each category.
+The Productivity Score home page shows your organization's total score and score history and the primary insight for each category.
 
 :::image type="content" source="../../media/prodscore-landing.png" alt-text="Productivity Score page in Reports.":::
 
-**Your score** is shown as a percent value and in points. You can see your points in the numerator and the maximum possible points in the denominator.
+**Your organization's score** is shown as a percent value and in points. You can see your points in the numerator and the maximum possible points in the denominator.
 
-**Peer benchmarks** allow you to compare your score with organizations like yours. The peer benchmark for the people experiences categories is calculated as the average of measures within a set of similar organizations. The set of organizations is composed of organizations in your region with a similar number of licensed users, types of licenses, industry, and tenure with Microsoft 365. 
+**Peer benchmarks** allow you to compare your organization's score with organizations like yours. The peer benchmark for the people experiences categories is calculated as the average of measures within a set of similar organizations. The set of organizations is composed of organizations in your region with a similar number of licensed users, types of licenses, industry, and tenure with Microsoft 365. 
 
 The endpoint analytics peer benchmark includes targets for device startup performance and recommended software configuration based on aggregated median values across all tenants.
 
@@ -121,13 +125,13 @@ The details pages are:
 
 The Business continuity report is a limited-time Workplace Intelligence report available to all Microsoft 365 customers to help them guide their organizations during this challenging time.  
 
-This report helps business leaders understand: 
+This report helps organizations understand: 
 
 - How collaboration and communication are affected by the shift to remote work. 
 
 - The impact on work-life balance as people adjust to working from home. 
 
-- If remote meetings support effective decision-making.
+- Whether remote meetings support effective decision-making.
 
 [Learn more about the Business continuity report](https://aka.ms/bcrps)
 
@@ -135,4 +139,4 @@ This report helps business leaders understand:
 
 ## We want to hear from you
 
-Share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at ProductivityScorePreview@service.microsoft.com.
+Share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at prodscorefeedback@microsoft.com.
