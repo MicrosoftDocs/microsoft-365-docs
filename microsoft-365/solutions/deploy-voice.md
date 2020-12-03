@@ -19,7 +19,7 @@ description: Learn how to choose and deploy the right Teams voice solution for y
 
 # Plan and deploy a Teams voice solution
 
-A Teams voice solution enables people in your organization to make calls both within and outside your organization. A complete voice solution consists of Teams, Microsoft's Phone System, and a choice of options for connecting to the Public Switched Telephone Network (PSTN). 
+A Teams voice solution enables people in your organization to make calls both within and outside your organization. A complete voice solution consists of Teams, Microsoft Phone System, and a choice of options for connecting to the Public Switched Telephone Network (PSTN). 
 
 Phone System provides complete Private Branch Exchange (PBX) capabilities for your organization. Calls between users in your organization--no matter their geographic location--are handled internally within Phone System thereby removing long-distance costs on these internal calls.  
 
@@ -39,7 +39,7 @@ This solution guidance helps you to:
 
 3. Set up PSTN connectivity by choosing one, or a combination, of the following:
    - [Calling Plan](https://docs.microsoft.com/microsoftteams/set-up-calling-plans) - Microsoft's all-in-the-cloud solution with Microsoft as your PSTN carrier
-   - [Direct Routing](https://docs.microsoft.com/microsoftteams/direct-routing-configure) - Connect your own PSTN carrier to Teams by using Direct Routing
+   - [Direct Routing](https://docs.microsoft.com/microsoftteams/direct-routing-configure) - Use Direct Routing to connect your own PSTN carrier to Teams 
 
 In addition, you might want read about how a large, multi-national corporation migrated to a Teams voice solution in the [Contoso case study](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json).
 
