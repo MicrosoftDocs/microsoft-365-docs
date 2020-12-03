@@ -135,7 +135,7 @@ For more information, see [Identify suspicious messages in Outlook.com and Outlo
 This section describes the policy settings that are only available in anti-phishing policies in Microsoft Defender for Office 365.
 
 > [!NOTE]
-> The only exclusive feature in Defender for Office 365 that's turned on by default in the default anti-phishing policy is mailbox intelligence. To take advantage of the other exclusive features, you need to enable and configure them in the default anti-phishing policy, or create and configure custom anti-phishing policies.
+> The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) and mailbox intelligence for all recipients. However, the other available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) features and [advanced settings](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are not configured or enabled in the default policy. To enable all protection features, modify the default anti-phishing policy or create additional anti-phishing policies.
 
 ### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 
@@ -195,8 +195,11 @@ The following impersonation settings are only available in anti-phishing policie
   - **Impersonated domains**: The From address contains a protected domain.
   - **Unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a protected sender or domain.
 
-  > [!NOTE]
-  > Even when the impersonation safety tips are turned off, you can use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** to messages. Specific safety tips will be displayed notifying recipients that they often don't get email from the sender or in cases when the recipient gets an email for the first time from the sender.
+> [!IMPORTANT]
+>
+> Even when the impersonation safety tips are turned off, **it is recommended** you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** to messages. Specific safety tips will be displayed notifying recipients that they often don't get email from the sender or in cases when the recipient gets an email for the first time from the sender.
+>:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="The text of the safety tip for impersonation protection with multiple recipients.":::
+<p>
 
 - **Mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between legitimate and spoofed email from those contacts. Mailbox intelligence is only available for Exchange Online mailboxes.
 

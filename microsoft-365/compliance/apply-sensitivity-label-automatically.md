@@ -32,6 +32,8 @@ The ability to apply sensitivity labels to content automatically is important be
 
 - Users no longer need to know about your policies—they can instead focus on their work.
 
+When content has been manually labeled, that label will never be replaced by automatic labeling. However, automatic labeling can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters) that was automatically applied.
+
 There are two different methods for automatically applying a sensitivity label:
 
 - **Client-side labeling when users edit documents or compose (also reply or forward) emails**: Use a label that's configured for auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook). 
@@ -82,9 +84,6 @@ Use the following table to help you identify the differences in behavior for the
 |Label incoming email|No |Yes (encryption not applied) |
 
 \* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the Auto-labeling tab isn't visible in the admin labeling center.
-
-> [!NOTE]
-> When content has been manually labeled, that label will never be replaced by automatic labeling. However, auto-labeling policies can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters) that was applied by using auto-labeling for Office apps.
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
@@ -194,7 +193,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - Simulation mode:
     - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
-    - To view file contents in the source view, you must have the **Content Explorer Content Viewer** role. Global admins don't have this role by default. If you don't have this permission, you don't see the previewer pane when you select an item from the **Matched Items** tab.
+    - To view file contents in the source view, you must have the **Content Explorer Content Viewer** role. Global admins don't have this role by default. If you don't have this permission, you don't see the preview pane when you select an item from the **Matched Items** tab.
 
 - To auto-label files in SharePoint and OneDrive:
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
