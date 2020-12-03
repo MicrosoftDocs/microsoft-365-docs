@@ -38,18 +38,20 @@ Microsoft 365 groups lets you choose a set of people with whom you wish to colla
 
 Microsoft 365 groups include a suite of linked resources that users can use for communication and collaboration. Groups always include a SharePoint site, Planner, a Power BI workspace, a mailbox and calendar, and Stream. Depending on how you create the group, you can optionally add other services such as Teams, Yammer, and Project.
 
+![Diagram showing Microsoft 365 Groups and related services](../media/microsoft-365-groups-hub-spoke.png)
+
 |Resource|Description|
 |:------|:----------|
-|[Inbox](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.|
 |[Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|For scheduling events related to the group|
-|[SharePoint team site](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|A central repository for information, links and content relating to your group|
+|[Inbox](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.|
 |[OneNote notebook](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|For gathering ideas, research, and information|
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|For assigning and managing project tasks among your group members|
+|[Power BI Workspace](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|A data collaboration space with dashboards and reports|
+|[Project and Roadmap](https://support.microsoft.com/project)|Web-based project management tools|
+|[SharePoint team site](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|A central repository for information, links and content relating to your group|
+|[Stream](https://support.microsoft.com/microsoft-stream)|A video streaming service|
+|[Teams](https://support.microsoft.com/teams)|A chat-based workspace in Microsoft 365|
 |[Yammer group](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|A common place to have conversations and share information|
-|Teams|A chat-based workspace in Microsoft 36|
-|Stream|A video streaming service|
-
-![Diagram showing Microsoft 365 Groups and related services](../media/microsoft-365-groups-hub-spoke.png)
 
 Microsoft 365 Groups includes a variety of governance controls, including an expiration policy, naming conventions, and a blocked words policy, to help you manage groups in your organization. Because groups control membership and access to this suite of resources, managing groups is a key part of governing collaboration in Microsoft 365.
 
