@@ -151,12 +151,16 @@ Follow these basic steps to create your governance plan:
 
 These training modules from Microsoft Learn can help you learn the collaboration features in Teams and SharePoint.
 
+<br><br>
+
 |Training:|Manage team collaboration with Microsoft Teams|
 |:---|:---|
 |![Teams training icon](../media/manage-team-collaboration-with-microsoft-teams.svg)|Manage team collaboration with Microsoft Teams introduces you to the features and capabilities of Microsoft Teams, the central hub for team collaboration in Microsoft 365. You’ll learn how you can use Teams to facilitate teamwork and communication within your organization, both on and off premises, on a wide range of devices—from desktops to tablets to phones—while taking advantage of all the rich functionality of Office 365 applications. You’ll gain an understanding of how Teams provides a comprehensive and flexible environment for collaboration across applications and devices. This learning path can help you prepare for the Microsoft 365 Certified: Teams Administrator Associate certification.<br><br>2 hr 17 min - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
 > [Start >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+
+<br><br>
 
 |Training:|Collaborate with SharePoint in Microsoft 365|
 |:---|:---|
