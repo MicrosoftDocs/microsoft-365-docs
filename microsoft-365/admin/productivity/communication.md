@@ -123,7 +123,7 @@ We also provide you with information that helps you gain visibility into how you
 
 ### Questions and Answers in Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions and answers in Yammer]":::
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions and answers in Yammer]"::: 
 
 1. **Header:** Highlights the posts marked as questions on Yammer that have received an answer marked as &quot;Best answer&quot; as a percentage of all posts marked as questions on Yammer in the last 28 days
 2. **Body:** Provides information on the value of using questions and answers in Yammer to share knowledge.
