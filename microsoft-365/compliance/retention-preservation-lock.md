@@ -23,11 +23,17 @@ description: "Use Preservation Lock with retention policies and retention label 
 
 Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive. This configuration might be needed for regulatory requirements and can help safeguard against rogue administrators.
 
-When a policy for retention is locked:
+When a retention policy is locked:
 
-- No one can turn it off
+- No one can disable the policy or delete it
 - Locations can be added but not removed
-- You can extend a retention period but not decrease it
+- You can extend the retention period but not decrease it
+
+When a retention label policy or retention auto-apply policy is locked:
+
+- No one can disable the policy or delete it
+- Locations can be added but not removed
+- Labels can be added but not removed
 
 In summary, a locked policy can be increased or extended, but it can't be reduced or turned off.
   
