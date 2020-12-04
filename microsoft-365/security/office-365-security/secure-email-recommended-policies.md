@@ -42,16 +42,17 @@ Note the addition of a new policy for Exchange Online to block ActiveSync client
 If you included Exchange Online and Outlook in the scope of the policies when you set them up, you only need to create the new policy to block ActiveSync clients. Review the policies listed in the following table and either make the recommended additions, or confirm that these are already included. Each policy links to the associated configuration instructions in [Common identity and device access policies](identity-access-policies.md).
 
 |Protection level|Policies|More information|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
-|        |[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include Exchange Online in the assignment of cloud apps|
-|        |[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows)|
-|        |[Require approved apps and APP protection](identity-access-policies.md#require-approved-apps-and-app-protection)|Include Exchange Online in the list of cloud apps|
-|        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include Exchange Online in list of cloud apps|
-|        |[Block ActiveSync clients](#block-activesync-clients)|Add this new policy| 
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Include Exchange Online in the assignment of cloud apps|
-|         |[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps|
+||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include Exchange Online in the assignment of cloud apps|
+||[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows)|
+||[Require approved apps and APP protection](identity-access-policies.md#require-approved-apps-and-app-protection)|Include Exchange Online in the list of cloud apps|
+||[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include Exchange Online in list of cloud apps|
+||[Block ActiveSync clients](#block-activesync-clients)|Add this new policy|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
+||[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps|
 |**Highly regulated**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
+|
 
 ## Block ActiveSync clients
 
@@ -81,20 +82,19 @@ Here are the steps:
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-4. In the Azure portal, create a new Conditional Access policy with these settings:
+5. In the Azure portal, create a new Conditional Access policy with these settings:
 
-   **Assignments > Users and groups**: Select appropriate users and groups to include and exclude.
+   **Assignments** \> **Users and groups**: Select appropriate users and groups to include and exclude.
 
-   **Assignments > Cloud apps or actions > Cloud apps > Include > Select apps**: Select **Office 365 Exchange Online**
+   **Assignments** \> **Cloud apps or actions** \> **Cloud apps** \> **Include** \> **Select apps**: Select **Office 365 Exchange Online**
 
-   **Access controls > Session**: Select **Use app enforced restrictions**
+   **Access controls** \> **Session**: Select **Use app enforced restrictions**
 
 ## Require that iOS and Android devices must use Outlook
 
 To ensure that users of iOS and Android devices can only access work or school content using Outlook for iOS and Android, you need a Conditional Access policy that targets those potential users.
 
 See the steps to configure this policy in [Manage messaging collaboration access by using Outlook for iOS and Android]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
-
 
 ## Set up message encryption
 

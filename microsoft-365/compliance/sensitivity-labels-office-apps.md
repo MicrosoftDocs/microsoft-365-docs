@@ -57,11 +57,16 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Under review |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under review   | Under review         | Under review                                                        |
-|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
+|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Yes <sup>\*</sup>                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Preview for Word and PowerPoint: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | Under review | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
+
+**Footnote:**
+
+<sup>\*</sup>
+Currently, doesn't include justification text to remove a label or lower the classification level
 
 ### Sensitivity label capabilities in Outlook
 
@@ -75,10 +80,11 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Under review                     | Under review                 | Under review         | Under review           | Under review               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Under review               |
+|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Yes               |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review                       | Under review                    | Under review           | Under review               | Under review               |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | Under review                    | Under review           | Under review               | Yes |
 |
+
 
 ## Office built-in labeling client and other labeling solutions
 
@@ -194,7 +200,7 @@ In addition to restricting access to users in your own organization, you can ext
 
 If external users do not have an account in Azure Active Directory, you can create a guest account for them in your tenant. For their email address, you can specify any email address that they already use. For example, their Gmail address. This guest account can also be used to access a shared document in SharePoint or OneDrive when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-External users can also use a Microsoft account for encrypted documents when they use Microsoft 365 Apps ([formerly Office 365 apps](https://docs.microsoft.com/deployoffice/name-change)) on Windows, and now on Android (version 13029+) and iOS (version 1385219+). This capability is not yet supported for macOS. For example, somebody shares an encrypted document with them, and the encryption settings specify their Gmail email address. This user can create their own Microsoft account that uses their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for that user. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+External users can also use a Microsoft account for encrypted documents when they use Microsoft 365 Apps ([formerly Office 365 apps](https://docs.microsoft.com/deployoffice/name-change)) on Windows, and newly supported on macOS (version 16.42+), Android (version 16.0.13029+), and iOS (version 2.42+). For example, somebody shares an encrypted document with them, and the encryption settings specify their Gmail email address. This user can create their own Microsoft account that uses their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for that user. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > The email address for the Microsoft account must match the email address that's specified to restrict access for the encryption settings.
@@ -253,6 +259,41 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
+
+#### Setting different visual markings for Word, Excel, PowerPoint, and Outlook
+
+As an additional variable, you can configure visual markings per Office application type by using an "If.App" variable statement in the text string, and identify the application type by using the values **Word**, **Excel**, **PowerPoint**, or **Outlook**. You can also abbreviate these values, which is necessary if you want to specify more than one in the same If.App statement.
+
+> [!NOTE]
+> For completeness, instructions for Outlook are included, although currently supported only by the Azure Information Protection unified labeling client.
+
+Use the following syntax:
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+As with the other dynamic visual markings, the syntax is case-sensitive.
+
+Examples:
+
+- **Set header text for Word documents only:**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    In Word document headers only, the label applies the header text "This Word document is sensitive". No header text is applied to other Office applications.
+
+- **Set footer text for Word, Excel, and Outlook, and different footer text for PowerPoint:**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    In Word, Excel, and Outlook, the label applies the footer text "This content is confidential." In PowerPoint, the label applies the footer text "This presentation is confidential."
+
+- **Set specific watermark text for Word and PowerPoint, and then watermark text for Word, Excel, and PowerPoint:**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    In Word and PowerPoint, the label applies the watermark text "This content is Confidential". In Excel, the label applies the watermark text "Confidential". In Outlook, the label doesn't apply any watermark text because watermarks as visual markings are not supported for Outlook.
 
 ## End-user documentation
 

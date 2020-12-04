@@ -2,8 +2,8 @@
 title: "Change a user name and email address"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -35,9 +35,9 @@ Watch a short video about changing a user's email address. <br><br>
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## Change a user's email address
-
 You must be a [global admin](about-admin-roles.md) to do these steps. 
+
+## Change a user's email address
 
 ::: moniker range="o365-worldwide"
  
