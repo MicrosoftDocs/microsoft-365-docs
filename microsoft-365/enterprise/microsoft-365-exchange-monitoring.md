@@ -22,9 +22,9 @@ description: "Use Exchange Online monitoring for information about email inciden
 
 You can use Exchange Online monitoring in the Microsoft 365 admin center to monitor the health of the Exchange service for your organization’s Microsoft 365 subscription. Exchange Online monitoring provides you with information about incidents and advisories that are collected in these categories:
 
-- **Infrastructure**: Issue is detected in the Microsoft 365 infrastructure that Microsoft owns for providing regular updates and resolving the issue. For example, users cannot access Exchange Online due to issues with Exchange or other Microsoft 365 cloud infrastructure.
+- **Infrastructure**: Issue is detected in the Microsoft 365 infrastructure that Microsoft owns for providing regular updates and resolving the issue. For example, users cannot access Exchange Online because of issues with Exchange or other Microsoft 365 cloud infrastructure.
 - **Third-party infrastructure**: Issue is detected in third-party infrastructure on which your organization has taken a dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
-- **Customer infrastructure**: Issue is detected in your organization infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization due to an expired certificate.
+- **Customer infrastructure**: Issue is detected in your organization's infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization because of an expired certificate.
 
 Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health**.
 
@@ -38,15 +38,15 @@ Here is an example of the **Exchange Online** monitoring page in the Microsoft 3
 
 ![The Exchange Online monitoring page in the Microsoft 365 admin center](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
 
-With the **Exchange Online** monitoring page, you can see whether the Exchange service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by scenario. 
+With the **Exchange Online** monitoring page, you can see whether the Exchange Online service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by scenario. 
 
 ## Requirements
 
 This preview is enabled for customers who meet these requirements: 
 
-- Your organization needs to have a license count of at least 10,000, from either one of, or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Your organization needs to have a license count of at least 10,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
 
-  For example, your organization can have 3000 Office 365 E3 licenses and 8,500 Microsoft 365 E5, for a total of 11,500 licenses from the qualifying products.
+  For example, your organization can have 3,000 Office 365 E3 licenses and 8,500 Microsoft 365 E5, for a total of 11,500 licenses from the qualifying products.
 
 - Your organization needs to have at least 50 monthly active Exchange Online users.
 
@@ -61,17 +61,17 @@ With Exchange Online monitoring you can view the health for the following email 
 For these clients, you can see the number of active users in the last 30 minutes based on users reading an email, along with number of incidents and advisories in the dashboard. This data is compared to the same interval for the previous week to see if there’s an issue. 
 
 >[!Note]
-> Active user count is measured by a single activity, for example, a user reads an email. It only accounts for the last 30 minutes of activity.
+> Active user count is measured by a single activity, for example, when a user reads an email. It only accounts for the last 30 minutes of activity.
 >
 
-You can also monitor Exchange health for the following scenarios:
+You can also monitor Exchange Online health for the following scenarios:
 
 - **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network. 
-- **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange service.
+- **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange Online service.
 
 ![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exhange-monitoring-scenario-example.png)
 
-For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios shows the near real time trend for seven days with 30-minute aggregate compared with the previous week. 
+For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios shows the near real-time trend for seven days with the 30-minute aggregate compared with the previous week. 
 
 ## Send us feedback
 
@@ -90,8 +90,8 @@ First, make sure you’ve enabled the new admin center on the **Home** page of t
 
 Then make sure you meet both of the following requirements: 
 
-- Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5
-- At least 10,000 licenses and at least 50 monthly active Exchange Online users
+- Your organization needs to have a license count of at least 10,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Your organization needs to have at least 50 monthly active Exchange Online users.
 
 If the license count for your organization goes below 10,000 users and the monthly active users goes below 50 users, Exchange Online monitoring won’t be enabled until these requirements are met.
 
@@ -101,7 +101,7 @@ The active user count shown in monitoring is based on a 30-minute window where u
 
 #### 3.	Will there be other monitoring scenarios for other services such as Teams and SharePoint? 
 
-Microsoft is integrated this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share. 
+Microsoft is integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share. 
 
 #### 4.	What is the plan for general availability of this experience? 
 
