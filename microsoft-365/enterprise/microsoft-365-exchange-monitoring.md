@@ -3,7 +3,7 @@ title: "Exchange Online monitoring for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/03/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -44,8 +44,11 @@ With the **Exchange Online** monitoring page, you can see whether the Exchange s
 
 This preview is enabled for customers who meet these requirements: 
 
-- Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5
-- At least 10,000 licenses and at least 50 monthly active Exchange Online users
+- Your organization needs to have a license count of at least 10,000, from either one of, or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+
+  For example, your organization can have 3000 Office 365 E3 licenses and 8,500 Microsoft 365 E5, for a total of 11,500 licenses from the qualifying products.
+
+- Your organization needs to have at least 50 monthly active Exchange Online users.
 
 With Exchange Online monitoring you can view the health for the following email clients based on email read activity:
 
@@ -121,4 +124,8 @@ This feature is in Public preview and only available for customers that meet the
 For general feedback, use the **Give feedback** icon on the bottom right corner of the **Exchange Online** monitoring page. 
 
 For feedback on incidents or advisories, use the **Is this post helpful?** link.
+
+#### 7.	Where is the data instrumented for the scenarios that show activity trends?
+
+The data is instrumented in the Exchange Online service. If there is a failure that happens before the request reaches Exchange Online or there is a failure in Exchange Online, you will see a drop in the activity signal.
 
