@@ -39,12 +39,13 @@ This walkthrough is one of several for the Security & Compliance Center. To abou
 
   You can view the Spoof intelligence insight from more than one dashboard in the Security & Compliance Center. Regardless of which dashboard you're looking at, the insight provides the same details and allows you to quickly perform the same tasks.
 
-- You need to be assigned permissions before you can do the procedures in this topic. To use the spoof intelligence insight, you need to be a member of one of the following role groups:
+- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+  - **Organization Management**
+  - **Security Administrator**
+  - **Security Reader**
+  - **Global Reader**
 
-  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 - You enable and disable spoof intelligence in anti-phishing policies in Microsoft Defender for Office 365. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
