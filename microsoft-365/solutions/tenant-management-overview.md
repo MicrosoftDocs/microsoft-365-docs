@@ -1,5 +1,5 @@
 ---
-title: Tenant management for Microsoft 365 for Enterprise
+title: Tenant management for Microsoft 365 for enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.custom:
 description: "Description."
 ---
 
-# Tenant management for Microsoft 365 for Enterprise
+# Tenant management for Microsoft 365 for enterprise
 
 Definition
 

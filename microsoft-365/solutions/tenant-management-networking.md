@@ -1,5 +1,5 @@
 ---
-title: Optimal networking for your Microsoft 365 for Enterprise tenancies
+title: Optimal networking for your Microsoft 365 for enterprise tenancies
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.custom:
 description: "Description."
 ---
 
-# Optimal networking for your Microsoft 365 for Enterprise tenancies
+# Optimal networking for your Microsoft 365 for enterprise tenancies
 
 
 ## On-premises workers

@@ -1,5 +1,5 @@
 ---
-title: Identity for your Microsoft 365 for Enterprise tenancies
+title: Identity for your Microsoft 365 for enterprise tenancies
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.custom:
 description: "Description."
 ---
 
-# Identity for your Microsoft 365 for Enterprise tenancies
+# Identity for your Microsoft 365 for enterprise tenancies
 
 
 ## Cloud-only vs. hybrid

@@ -1,5 +1,5 @@
 ---
-title: Your Microsoft 365 for Enterprise tenancies
+title: Your Microsoft 365 for enterprise tenancies
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.custom:
 description: "Description."
 ---
 
-# Your Microsoft 365 for Enterprise tenancies
+# Your Microsoft 365 for enterprise tenancies
 
 
 ## Single tenant

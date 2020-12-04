@@ -1,5 +1,5 @@
 ---
-title: Migration for your Microsoft 365 for Enterprise tenancies
+title: Migration for your Microsoft 365 for enterprise tenancies
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.custom:
 description: "Description."
 ---
 
-# Migration for your Microsoft 365 for Enterprise tenancies
+# Migration for your Microsoft 365 for enterprise tenancies
 
 
 ## Migrating on-premises data
