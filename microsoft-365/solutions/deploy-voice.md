@@ -29,8 +29,6 @@ Phone System provides complete Private Branch Exchange (PBX) capabilities for yo
 
 By connecting Phone System to the Public Switched Telephone Network (PSTN), your Teams users can make calls outside your organization as well.
 
-![Phone System plus PSTN overview](..\media\solutions-architecture-center\phone-system-plus-pstn.png)
-
 This solution guidance helps you to:
 
 - Choose the voice solution that is right for your organization
