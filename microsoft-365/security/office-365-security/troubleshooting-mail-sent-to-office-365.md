@@ -46,9 +46,7 @@ For instructions about how to create and maintain DNS records, including the MX 
 We may not accept email from senders who fail a reverse-DNS lookup. In some cases, legitimate senders advertise themselves incorrectly as a non-internet routable IP when attempting to open a connection to EOP. IP addresses that are reserved for private (non-routable) networking include:
 
 - 192.168.0.0/16 (or 192.168.0.0 - 192.168.255.255)
-
 - 10.0.0.0/8 (or 10.0.0.0 - 10.255.255.255)
-
 - 172.16.0.0/11 (or 172.16.0.0 - 172.31.255.255)
 
 ## You received a non-delivery report (NDR) when sending email to a user in Office 365

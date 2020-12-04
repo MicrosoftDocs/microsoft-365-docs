@@ -58,24 +58,36 @@ You can use this logic to construct your exclusion paths:
 
 - A mix of all the above. <br/>For example: %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
-### Service domains
+### Unallowed apps
 
-You can add domains to this list that Edge Chromium will refer to when enforcing the Endpoint DLP policy cloud upload access restriction. 
+When a policy's **Access by unallowed apps and browsers** setting is turned on and users attempt to use these apps to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
+
+> [!IMPORTANT]
+> Do not include the path to the executable, but only the executable name (such as browser.exe).
+
+
+### Browser and domain restrictions
+Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
+
+#### Service domains
+
+You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
 If the list mode is set to **Block**, then user will not be able to upload sensitive items to those domains. When an upload action is blocked because an item matches a DLP policy, DLP will either generate a warning or block the upload of the sensitive item.
 
 If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains is not allowed.
 
-### Unallowed apps
-
-When a policy's **Access by unallowed apps and browsers** setting is turned on and users attempt to use these apps to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
-
-### Unallowed browsers
+#### Unallowed browsers
 
 You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
 
-[!IMPORTANT]
-Do not include the path to the executable, but only the executable name (i.e., browser.exe).
+### Always audit file activity from onboarded devices
+
+Control whether DLP activity for Office, PDF, and CSV files is automatically audited and available for review in the audit telemetry and the Activity Explorer from onboarded devices. 
+
+If this is turned On (the default), file activity is always audited for onboarded devices, regardless of whether or not they are included in an active DLP policy.
+If this is turned off, file activity is audited for onboarded devices only when they are included in an active DLP policy. 
+
 
 ## Tying DLP settings together
 
