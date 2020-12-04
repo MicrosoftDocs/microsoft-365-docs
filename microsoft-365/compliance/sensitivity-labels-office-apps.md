@@ -260,7 +260,6 @@ When you configure a sensitivity label for content markings, you can use the fol
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
 
-<<<<<<< HEAD
 ## Require users to apply a label to their email and documents
 
 > [!IMPORTANT]
@@ -283,7 +282,7 @@ Additional information for built-in labeling:
 - When users are prompted to add a sensitivity label because they open an unlabeled document, they can add a label or choose to open the document in read-only mode.
 
 - When mandatory labeling is in effect, users can't remove sensitivity labels from documents, but can change an existing label.
-=======
+
 #### Setting different visual markings for Word, Excel, PowerPoint, and Outlook
 
 As an additional variable, you can configure visual markings per Office application type by using an "If.App" variable statement in the text string, and identify the application type by using the values **Word**, **Excel**, **PowerPoint**, or **Outlook**. You can also abbreviate these values, which is necessary if you want to specify more than one in the same If.App statement.
