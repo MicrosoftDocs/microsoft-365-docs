@@ -30,7 +30,7 @@ ms.custom:
 
 To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
 
-Sensitivity labels from the Microsoft Information Protection framework let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
+Sensitivity labels from the Microsoft Information Protection solution let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
 
 Example showing available sensitivity labels in Excel, from the **Home** tab on the Ribbon. In this example, the applied label displays on the status bar:
 
@@ -51,7 +51,9 @@ You can use sensitivity labels to:
 
 - **Protect content in third-party apps and services** by using Microsoft Cloud App Security. With Cloud App Security, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
 
-- **Protect containers** that include Teams, Microsoft 365 Groups and SharePoint sites. For example, set privacy settings, external user access, and access from unmanaged devices.
+- **Protect containers** that include Teams, Microsoft 365 Groups and SharePoint sites. For example, set privacy settings, external user access and external sharing, and access from unmanaged devices.
+
+- **Extend sensitivity labels to assets in Azure Purview**: When you turn on this capability, currently in preview, you can apply your sensitivity labels to assets such as SQL columns, files in Azure Blob Storage, and more. 
 
 - **Extend sensitivity labels to third-party apps and services.** Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 
@@ -96,7 +98,7 @@ After a sensitivity label is applied to an email or document, any configured pro
 
 - **Protect content in containers such as sites and groups** when you enable the capability to [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
     
-    You can't configure protection settings for groups and sites until you enable this capability. This label configuration doesn't result in documents or emails being automatically labeled but instead, the label settings protect content by controlling access to the container where content can be stored. These settings include privacy settings, external user access, and access from unmanaged devices.
+    You can't configure protection settings for groups and sites until you enable this capability. This label configuration doesn't result in documents or emails being automatically labeled but instead, the label settings protect content by controlling access to the container where content can be stored. These settings include privacy settings, external user access and external sharing, and access from unmanaged devices.
 
 - **Apply the label automatically in Office apps, or recommend a label.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
@@ -110,11 +112,17 @@ When you create a sensitivity label, you're asked to configure the label's scope
 - Which label settings you can configure for that label
 - Where the label will be visible to users
 
-This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. By default, both scopes are selected:
+This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. New, and currently in preview, you can also select the scope for Azure Purview assets:
 
 ![Scope options for sensitivity labels](../media/sensitivity-labels-scopes.png)
 
-When you change this default and select just one scope, you still see the first page of the configuration settings for the other scope but you can't select them. For example, if the scope for files and emails is not selected, you can't select the options on the next page:
+By default, the **Files & emails** scope is always selected. The other scopes are selected by default when the features are enabled for your tenant:
+
+- **Groups & sites**: [Enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+
+- **Azure Purview assets (preview)**: [Automatically label your content in Azure Purview](https://go.microsoft.com/fwlink/?linkid=2148989)
+
+If you change the defaults so not all scopes are selected, you see the first page of the configuration settings for scopes you haven't selected, but you can't configure the settings. For example, if the scope for files and emails is not selected, you can't select the options on the next page:
 
 ![Unavailable options for sensitivity labels](../media/sensitivity-labels-unavailable-settings.png)
 
@@ -150,7 +158,9 @@ If you edit a sensitivity label, the version of the label that was applied to co
 
 ## What label policies can do
 
-After you create your sensitivity labels, you need to publish them, to make them available to people and services in your organization. The sensitivity labels can then be applied to documents and emails. Unlike retention labels, which are published to locations such as all Exchange mailboxes, sensitivity labels are published to users or groups. Sensitivity labels then appear in Office apps for those users and groups.
+After you create your sensitivity labels, you need to publish them, to make them available to people and services in your organization. The sensitivity labels can then be applied to Office documents and emails, and other items that support sensitivity labels. 
+
+Unlike retention labels, which are published to locations such as all Exchange mailboxes, sensitivity labels are published to users or groups. Apps that support sensitivity labels can then display them to those users and groups as applied labels, or as labels that they can apply.
 
 With a label policy, you can:
 
@@ -192,8 +202,8 @@ You make your sensitivity labels available to users by publishing them in a sens
 A label policy consists of:
 
 - A set of labels.
-- The scope of the label policy, meaning the users and groups included in the policy.
-- The settings of the label policy described above (default label, justification, mandatory label, and help link).
+- The users and groups that will be assigned the policy with labels.
+- The scope of the policy and policy settings for that scope (such as default label for files and emails).
 
 You can include a user in multiple label policies, and the user will see all the sensitivity labels from those policies. However, a user gets the policy settings from only the label policy with the highest priority.
 

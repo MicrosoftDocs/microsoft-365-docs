@@ -75,7 +75,7 @@ There are three categories of possible causes for poor web part performance. Use
   - Reuse frameworks like _React_ and _Fabric imports_ that come as part of the SharePoint Framework (SPFx). For more information, see [Overview of the SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Ensure that you are using the latest version of the SharePoint Framework, and upgrade to new versions as they become available.
 - Data fetching/caching
-  - If the web part relies on extra server calls to fetch data for display, ensure those server APIs are fast and/or implement client side caching (such as using _localStorage_ or _IndexDB_ for larger sets).
+  - If the web part relies on extra server calls to fetch data for display, ensure those server APIs are fast and/or implement client side caching (such as using _localStorage_ or _IndexedDB_ for larger sets).
   - If multiple calls are required to render critical data, consider batching on the server or other methods of consolidating requests to a single call.
   - Alternatively, if some elements of data require a slower API, but are not critical to initial rendering, decouple these to a separate call that is executed after critical data is rendered.
   - If multiple parts use the same data, utilize a common data layer to avoid duplicate calls.
