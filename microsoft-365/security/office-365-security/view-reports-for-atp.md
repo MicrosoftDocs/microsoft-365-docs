@@ -1,5 +1,5 @@
 ---
-title: View reports for Defender for Office 365
+title: View Defender for Office 365 reports in the Reports dashboard
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -17,11 +17,11 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-defender-office365
-description: "Find and use reports for Microsoft Defender for Office 365 in the Security &amp; Compliance Center."
+description: "Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
 
-# View reports for Microsoft Defender for Office 365
+# View Defender for Office 365 reports in the Reports dashboard in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -333,27 +333,16 @@ In addition to the reports described in this topic, several other reports are av
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
-In order to view and use the reports described in this topic, **you must have an appropriate role assigned for both the Security &amp; Compliance Center and the Exchange admin center**.
+In order to view and use the reports described in this topic, you need to be a member of one of the following role groups in the Security & Compliance Center:
 
-- For the Security & Compliance Center, you must have one of the following roles assigned:
+- **Organization Management**
+- **Security Administrator**
+- **Security Reader**
+- **Global Reader**
 
-  - Organization Management
-  - Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
-  - Security Operator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
-  - Security Reader
+For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
-
-  - Organization Management
-  - View-only Organization Management
-  - View-Only Recipients role
-  - Compliance Management
-
-To learn more, see the following resources:
-
-- [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
-
-- [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## What if the reports aren't showing data?
 

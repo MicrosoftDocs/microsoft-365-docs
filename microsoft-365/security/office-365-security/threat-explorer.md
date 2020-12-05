@@ -17,6 +17,7 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+
 description: Use Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
 
 ms.custom: seo-marvel-apr2020
@@ -463,7 +464,7 @@ You must have [Microsoft Defender for Office 365](office-365-atp.md) to use Expl
 
 To view and use Explorer or Real-time detections, you must have appropriate permissions, such as those granted to a security administrator or security reader.
 
-- For the Security &amp; Compliance Center, you must have one of the following roles assigned:
+- For the Security & Compliance Center, you must have one of the following roles assigned:
 
   - Organization Management
   - Security Administrator, which can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))
@@ -478,7 +479,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## Differences between Threat Explorer and Real-time detections

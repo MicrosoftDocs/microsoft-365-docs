@@ -1,5 +1,5 @@
 ---
-title: "Governance first"
+title: "Create your collaboration governance plan"
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,10 +14,10 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
-description: "Governance first"
+description: "Learn how to create your collaboration governance plan"
 ---
 
-# Governance first
+# Create your collaboration governance plan
 
 It is always best to start your move to Microsoft 365 with a clear vision:
 
@@ -29,9 +29,9 @@ It is always best to start your move to Microsoft 365 with a clear vision:
 
 A clear vision statement provides critical guidance to the inevitable decision tradeoffs you will need to make in thinking about your governance plan. The degree of formality and the depth to which you need to document the governance plan should align with the outcomes you want to achieve. The vision, thus, provides a framework for both the context and investment in governance.
 
-The Microsoft 365 cloud creates new paradigms for technologies to support the business. These new paradigms change the way these technologies are adopted, managed, and governed. 
+Microsoft 365 creates new paradigms for technologies to support the business. These new paradigms change the way these technologies are adopted, managed, and governed. 
 
-Microsoft 365 governance should complement existing policies that govern on-premises environments.  But, since the cloud enables new opportunities to support the business, it is important to understand these opportunities and think about a governance approach that creates an appropriate balance between user goals, business risk, and industry and regulatory requirements.
+Microsoft 365 governance should complement existing policies that govern on-premises environments. But, since the cloud enables new opportunities to support the business, it is important to understand these opportunities and think about a governance approach that creates an appropriate balance between user goals, business risk, and industry and regulatory requirements.
 
 Thinking about governance first means starting your journey to the cloud with some key decisions to best position for overall success. Some of these decisions include:
 
@@ -53,13 +53,13 @@ Governance planning for Microsoft 365 is about making sure that you are protecti
 
 - **Outcomes Assurance** – steering empowered site or team owners in the right direction to achieve business results. Outcomes assurance is largely about providing guidance to content authors and site, group and team owners – ensuring that the appropriate training is available to ensure that they know how to make good choices to get desired outcomes within overall organizational standards and practices.
 
-Governance planning should come first, but governance needs to be something that you continuously re-visit in an iterative process. As your data estate changes over time, you will want to revisit your governance decisions to adapt to changing business needs and feature availability. You may find that you need greater oversight to ensure conformance. You may find that you need less oversight to encourage more creative application of core features. You may find that roles and responsibilities need to be updated to reflect changes in the solution or changes in how users are using different applications.
+Governance planning should come first, but governance needs to be something that you continuously revisit in an iterative process. As your data estate changes over time, you will want to revisit your governance decisions to adapt to changing business needs and feature availability. You may find that you need greater oversight to ensure conformance. You may find that you need less oversight to encourage more creative application of core features. You may find that roles and responsibilities need to be updated to reflect changes in the solution or changes in how users are using different applications.
 
-For example, one of the key empowering capabilities of Microsoft 365 is the ability to easily work collaboratively with external users and organizations. Some organizations in some industries choose to block all external sharing. Others enable external sharing in specific scenarios or with specific organizations. There is no right or wrong governance decision when it comes to external sharing – and there are many different scenarios where you can enable different settings in Microsoft 365 to allow sharing in some cases and block it in others. However, if you are just beginning your journey from an on-premises environment to the cloud, it is important to think about external sharing decisions and understand the benefits and risks associated with the different available options.
+For example, one of the key empowering capabilities of Microsoft 365 is the ability to easily work collaboratively with people outside your organization. Some organizations in some industries choose to block all external sharing. Others enable external sharing in specific scenarios or with specific organizations. There is no right or wrong governance decision when it comes to external sharing – and there are many different scenarios where you can enable different settings in Microsoft 365 to allow sharing in some cases and block it in others. However, if you are just beginning your journey from an on-premises environment to the cloud, it is important to think about external sharing decisions and understand the benefits and risks associated with the different available options.
 
-## Why think about governance first?
+## Think about governance first
 
-Your investment in Microsoft 365 is only as good as the value of the content and experiences you enable – so thinking about governance at the start of your journey ensures that you will neither lock down or enable too much before you have had a chance to understand and evaluate the implications of each decision. There are multiple "knobs and dials" you can turn in the Microsoft 365 Admin Center and for individual sites and teams. An effective governance plan is critical to achieve business goals – but governance is about balancing risk with benefits. If we lock everything down, people will find a way to work around the rules if they need to do so to get work done.
+Your investment in Microsoft 365 is only as good as the value of the content and experiences you enable – so thinking about governance at the start of your journey ensures that you will neither lock down or enable too much before you have had a chance to understand and evaluate the implications of each decision. There are multiple "knobs and dials" you can turn in the Microsoft 365 admin center and for individual sites and teams. An effective governance plan is critical to achieve business goals – but governance is about balancing risk with benefits. If we lock everything down, people will find a way to work around the rules if they need to do so to get work done.
 
 Thinking about governance first allows you to:
 
@@ -93,7 +93,7 @@ Work through the key governance decisions – but don't try to make every decisi
 
 In addition to external sharing, discussed earlier, another key decision for every organization is how to provision sites and groups. For example, consider the following:
 
-- Because it is so easy for users to create Microsoft 365 groups, you may want to open group creation so that IT is not inundated with requests to create them on behalf of other people. To avoid "group sprawl," you could create a custom workflow that sends an email with governance, training, and other information to group creators soon after the group is created. (For example, "You just created a site/team, community, etc. -- here are your responsibilities and links to training...") On the other hand, depending on your business, however, you might want to control who has the ability to create groups.
+- Because it is so easy for users to create Microsoft 365 groups, you may want to open group creation so that IT is not inundated with requests to create them on behalf of other people. To avoid "group sprawl," you could create a custom workflow that sends an email with governance, training, and other information to group creators soon after the group is created. (For example, "You just created a site/team, community, etc. -- here are your responsibilities and links to training...") On the other hand, depending on your business, you might want to control who has the ability to create groups.
 
 - If you want to control how SharePoint sites are created, you can hide the **Create site** link on the SharePoint start page. Create a custom form, or create a custom site design and site script to automate provisioning new modern SharePoint sites using a pre-defined site structure that can include links to your governance and training best practices.
 
@@ -125,7 +125,7 @@ Ultimately, the success of your governance planning efforts depends on how well 
 
 - Should you create a certification and re-certification for site and team owners?
 
-- Can you create a Microsoft 365 Champions program for your organization? In addition, consider joining the worldwide Microsoft 365 champions program to get ideas and approaches for your own champions program and to connect with like-minded people and thought leaders from within and around Microsoft.
+- Can you create a Microsoft 365 Champions program for your organization? In addition, consider joining the worldwide [Microsoft 365 champions program](https://aka.ms/O365Champions) to get ideas and approaches for your own champions program and to connect with like-minded people and thought leaders from within and around Microsoft.
 
 ## Related topics
 
@@ -134,3 +134,5 @@ Ultimately, the success of your governance planning efforts depends on how well 
 [SharePoint governance overview](https://docs.microsoft.com/sharepoint/governance-overview)
 
 [Plan organization and lifecycle governance for groups services](plan-organization-lifecycle-governance.md)
+
+[File collaboration in SharePoint with Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
