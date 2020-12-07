@@ -24,13 +24,13 @@ description: Learn how to manage partially indexed (or unindexed) items from Exc
 
 An eDiscovery search that you run from the Microsoft 365 compliance center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
   
-- Email messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items
+- Email messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items.
 
-- Too many files attached to an email message
+- Too many files attached to an email message.
 
-- A file attached to an email message is too large
+- A file attached to an email message is too large.
 
-- The file type is supported for indexing but an indexing error occurred for a specific file
+- The file type is supported for indexing but an indexing error occurred for a specific file.
 
 Although it varies, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
   
@@ -42,8 +42,8 @@ After you run an eDiscovery search, the total number and size of partially index
 
 - If you specify a date range for a search query (by including it in the keyword query or by using a condition), any partially indexed item that doesn't match the date range isn't included in the count of partially indexed items. Only the partially indexed items that fall within date range are included in the count of indexed items.
 
-> [!NOTE]
-> Partially indexed items located in SharePoint and OneDrive sites *are not* included in the estimate of partially indexed items that's displayed in the detailed statistics for the search. However, partially indexed items can be exported when you export the results of an eDiscovery search. For example, if you only search sites, the estimated number partially indexed items will be zero.
+  > [!NOTE]
+  > Partially indexed items located in SharePoint and OneDrive sites *are not* included in the estimate of partially indexed items that's displayed in the detailed statistics for the search. However, partially indexed items can be exported when you export the results of an eDiscovery search. For example, if you only search sites, the estimated number partially indexed items will be zero.
   
 ## Calculating the ratio of partially indexed items in your organization
 
@@ -82,17 +82,17 @@ When you export eDiscovery search results or a search report using one of these 
   
 ## Errors related to partially indexed items
 
-Error tags are made up of two pieces of information, the error and the file type. For example, in this error/filetype pair:
+Error tags are made up of two pieces of information, the error and the file type. For example, in this error/file-type pair:
 
 ```text
  parseroutputsize_xls
 ```
 
- `parseroutputsize` is the error and `xls` is the file type of the file the error occurred on. In cases were the file type wasn't recognized or the file type didn't apply to the error, you will see the value `noformat` in place of the file type.
+ `parseroutputsize` is the error and `xls` is the file type of the file the error occurred on. In cases where the file type wasn't recognized or the file type didn't apply to the error, you will see the value `noformat` in place of the file type.
   
 The following is a list of indexing errors and a description of the possible cause of the error.
   
-|**Error tag**|**Description**|
+| Error tag | Description |
 |:-----|:-----|
 | `attachmentcount` <br/> |An email message had too many attachments, and some of these attachments weren't processed.  <br/> |
 | `attachmentdepth` <br/> |The content retriever and document parser found too many levels of attachments nested inside other attachments. Some of these attachments were not processed.  <br/> |
@@ -103,7 +103,7 @@ The following is a list of indexing errors and a description of the possible cau
 | `parserencrypted` <br/> |The content of attachment or email message is encrypted, and Microsoft 365 couldn't decode the content.  <br/> |
 | `parsererror` <br/> |An unknown error occurred during parsing. This typically results from a software bug or a service crash.  <br/> |
 | `parserinputsize` <br/> |An attachment was too large for the parser to handle, and the parsing of that attachment didn't happen or wasn't completed.  <br/> |
-| `parsermalformed` <br/> |An attachment was malformed and couldn't be handled by the parser. This result from can old file formats, files created by incompatible software, or viruses pretending to be something other than claimed.  <br/> |
+| `parsermalformed` <br/> |An attachment was malformed and couldn't be handled by the parser. This result can be due to old file formats, files created by incompatible software, or viruses pretending to be something other than claimed.  <br/> |
 | `parseroutputsize` <br/> |The output from the parsing of an attachment was too large and had to be truncated.  <br/> |
 | `parserunknowntype` <br/> |An attachment had a file type that Microsoft 365 couldn't detect.  <br/> |
 | `parserunsupportedtype` <br/> |An attachment had a file type that Office 365 could detect, but parsing that file type isn't supported.  <br/> |
