@@ -24,7 +24,6 @@ Additionally, in several locations throughout Microsoft Endpoint Manager you can
 - **All devices**
 - **Device compliance**
 - **Noncompliant devices**
-- All devices {APPEARS TWICE?}
 
 > [!NOTE]
 > Custom Microsoft Managed Desktop roles guarantee access only to the Microsoft Managed Desktop reports. To access other parts of Microsoft Endpoint Manager, such as **All devices**, see [Role-based access control with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control). 
