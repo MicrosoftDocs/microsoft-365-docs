@@ -64,8 +64,7 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |Device types|Managing different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
 |Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
 |Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |Yes |
-|Device configuration  |Configure device settings (for example, disabling the camera)|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
- |Limited set of settings. |Yes|
+|Device configuration  |Configure device settings (for example, disabling the camera)|Limited set of settings.|Yes|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
