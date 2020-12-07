@@ -15,6 +15,7 @@ description: "Learn how Attack simulation training in Microsoft 365 security cen
 
 # Gain insights through Attack simulation training
 
+
 Within Attack simulation training, Microsoft provides you with insights based on outcomes of simulations and training employees went through. These insights will help inform you on progress your employees are doing on threat readiness, as well as recommend next steps to better prepare your employees and your environment for attacks.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
