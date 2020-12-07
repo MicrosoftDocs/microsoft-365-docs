@@ -24,7 +24,7 @@ landingContent:
 # Start card title with a verb
 
   # Card 
-  - title: Foundational solution guidance - These solutions provide a complete guidance for a specific business problem or need. They guide you through concepts and features and help you make the choices that lead to a functioning end result, from planning to implementation, to adoption.
+  - title: Foundational solution guidance
     linkLists:
       - linkListType: quickstart
         links:
