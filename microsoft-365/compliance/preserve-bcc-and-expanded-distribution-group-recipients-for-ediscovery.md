@@ -30,7 +30,7 @@ As stated earlier, information about Bcc'ed recipients is stored with the messag
   
 Information about expanded distribution group recipients is stored with the message after you place a mailbox on In-Place Hold or Litigation Hold. In Office 365, this information is also stored when a Microsoft 365 retention policy is applied to a mailbox. Distribution group membership is determined at the time the message is sent. The expanded recipients list stored with the message is not impacted by changes to membership of the group after the message is sent. 
   
-|**Information about…**|**Is stored in…**|**Is stored by default?**|**Is accessible to…**|
+| Information about… | Is stored in… | Is stored by default? | Is accessible to… |
 |:-----|:-----|:-----|:-----|
 |To and Cc recipients  <br/> |Message properties in the sender and recipients' mailboxes.  <br/> |Yes  <br/> |Sender, recipients, and compliance officers  <br/> |
 |Bcc recipients  <br/> |Message property in the sender's mailbox.  <br/> |Yes  <br/> |Sender and compliance officers  <br/> |
@@ -42,7 +42,7 @@ When searching for messages sent to a recipient, eDiscovery search results now i
   
 Scenario 1: John is a member of the US-Sales distribution group. This table shows eDiscovery search results when Bob sends a message to John directly or indirectly via a distribution group.
   
-|**When you search Bob's mailbox for messages sent…**|**And the message is sent with…**|**Results include message?**|
+| When you search Bob's mailbox for messages sent… | And the message is sent with… | Results include message? |
 |:-----|:-----|:-----|
 |To:John  <br/> |John on TO  <br/> |Yes  <br/> |
 |To:John  <br/> |US-Sales on TO  <br/> |Yes  <br/> |
@@ -53,7 +53,7 @@ Scenario 1: John is a member of the US-Sales distribution group. This table show
    
 Scenario 2: Bob sends an email to John (To/Cc) and Jack (Bcc directly, or indirectly via a distribution group). The table below shows eDiscovery search results.
   
-|**When you search…**|**For messages sent…**|**Results include message?**|**Notes**|
+| When you search… | For messages sent… | Results include message? | Notes |
 |:-----|:-----|:-----|:-----|
 |Bob's mailbox  <br/> |To/Cc:John  <br/> |Yes  <br/> |Presents an indication that Jack was Bcc'ed.  <br/> |
 |Bob's mailbox  <br/> |Bcc:Jack  <br/> |Yes  <br/> |Presents an indication that Jack was Bcc'ed.  <br/> |
