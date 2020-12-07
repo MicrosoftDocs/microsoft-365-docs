@@ -14,7 +14,7 @@ search.appverid:
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-defender-office365
-description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security &amp; Compliance Center.
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 ![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
 
-[Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Security &amp; Compliance Center. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
+[Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Security & Compliance Center. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
 
 - If you have [Microsoft Defender for Office 365](office-365-atp.md) Plan 2, then you have Explorer.
 - If you have Microsoft Defender for Office 365 Plan 1, then you have real-time detections.
