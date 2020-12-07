@@ -66,12 +66,14 @@ landingContent:
             url: test-lab-guides-overview-solutions.md
 
   # Card
-  - title: Teamwork and collaboration solutions
+  - title: Teamwork and collaboration solution guides
     linkLists:
       - linkListType: deploy
         links:
           - text: Plan and deploy a Teams Voice solution
             url: deploy-voice.md
+      - linkListType: overview
+        links:
           - text: Collaboration governance
             url: collaboration-governance-overview.md
           - text: File collaboration
@@ -82,16 +84,14 @@ landingContent:
             url: https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
 
   # Card
-  - title: Security and compliance solutions
+  - title: Security and compliance solution guides
     linkLists:
-      - linkListType: overview
+      - linkListType: deploy
         links:
           - text: Top tasks for security teams to support working from home
             url: https://docs.microsoft.com/en-us/microsoft-365/security/top-security-tasks-for-remote-work?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide.md
           - text: Microsoft 365 security for Business Decision Makers (BDMs)
             url: https://docs.microsoft.com/en-us/microsoft-365/security/microsoft-365-security-for-bdm?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
-      - linkListType: deploy
-        links:
           - text: Deploy Microsoft Defender Advanced Threat Protection
             url: https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
       - linkListType: reference
