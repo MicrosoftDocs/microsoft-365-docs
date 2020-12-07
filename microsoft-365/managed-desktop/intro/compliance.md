@@ -13,7 +13,7 @@ ms.topic: article
 
 # Compliance
 
-When you use Microsoft Managed Desktop IT-as-a-service, Microsoft provides you with a comprehensive set of compliance offerings. This effort helps your organization comply with the various compliance requirements.
+When you use Microsoft Managed Desktop, Microsoft provides you with a comprehensive set of compliance offerings. This effort helps your organization comply with the various compliance requirements.
 
 ## Compliance coverage
 
@@ -30,8 +30,8 @@ Microsoft Managed Desktop has achieved the following certifications:
 - [Cloud Security Alliance (CSA) STAR certification](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [Service Organization Controls (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
-- [Health Insurance Portability and Accountability Act (HIPAA)](https://docs.microsoft.com/en-us/compliance/regulatory/offering-hipaa-hitech)
-- [Australian Government Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/en-us/compliance/regulatory/offering-ccsl-irap-australia)
+- [Health Insurance Portability and Accountability Act (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
+- [Australian Government Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 
 
 ## Auditor reports and compliance certificates
@@ -43,4 +43,4 @@ You can find relevant information, including control and technical requirements,
 
 ## Shared responsibility
 
-Compliance for cloud services is a shared responsibility between cloud service providers and their customers. For more, see [Shared Responsibilities for Cloud Computing](https://docs.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility).
+Compliance for cloud services is a shared responsibility between cloud service providers and their customers. For more, see [Shared Responsibilities for Cloud Computing](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).
