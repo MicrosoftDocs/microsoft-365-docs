@@ -24,7 +24,7 @@ landingContent:
 # Start card title with a verb
 
   # Card 
-  - title: Foundational solution guidance
+  - title: Foundational solution guides
     linkLists:
       - linkListType: quickstart
         links:
