@@ -46,6 +46,8 @@ landingContent:
             url: cloud-architecture-models.md
           - text: Microsoft 365 productivity illustrations
             url: productivity-illustrations.md
+          - text: Teams architecture posters
+            url: https://docs.microsoft.com/en-us/MicrosoftTeams/teams-architecture-solutions-posters?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
       - linkListType: overview
         links:
           - text: Design principles
@@ -82,10 +84,6 @@ landingContent:
         links:
           - text: Contoso case study - Teams Voice migration
             url: https://docs.microsoft.com/en-us/MicrosoftTeams/voice-case-study-overview?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
-      - linkListType: architecture
-        links:
-          - text: Teams architecture posters
-            url: https://docs.microsoft.com/en-us/MicrosoftTeams/teams-architecture-solutions-posters?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
 
   # Card
   - title: Security solutions
