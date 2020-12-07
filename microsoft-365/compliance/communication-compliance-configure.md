@@ -147,7 +147,7 @@ To manage supervised users in large enterprise organizations, you may need to mo
 
 2. Select an unused [Exchange custom attribute](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) to track users added to the communication compliance policy in your organization.
 
-3. Run the following PowerShell script on a recurring schedule to add users to the communication policy:
+3. Run the following PowerShell script on a recurring schedule to add users to the communication compliance policy:
 
     ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
