@@ -22,6 +22,11 @@ description: "This article explains the changes being rolled out to the protecti
 
 # Protection features in Azure Information Protection rolling out to existing tenants
 
+**Applies to**
+
+- [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 

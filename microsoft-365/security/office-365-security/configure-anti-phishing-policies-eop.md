@@ -18,6 +18,9 @@ description: "Admins can learn how to create, modify, and delete the anti-phishi
 
 # Configure anti-phishing policies in EOP
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
