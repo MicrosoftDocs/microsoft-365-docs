@@ -145,7 +145,7 @@ To manage supervised users in large enterprise organizations, you may need to mo
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
 
-2. Select an unused [Exchange custom attribute](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) to track users added to the communication compliance policy in your organization.
+2. Select an unused [Exchange custom attribute](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) to track users added to the communication compliance policy in your organization.
 
 3. Run the following PowerShell script on a recurring schedule to add users to the communication compliance policy:
 
