@@ -86,7 +86,7 @@ landingContent:
             url: https://docs.microsoft.com/en-us/MicrosoftTeams/voice-case-study-overview?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
 
   # Card
-  - title: Security solutions
+  - title: Security and compliance solutions
     linkLists:
       - linkListType: overview
         links:
@@ -98,10 +98,6 @@ landingContent:
         links:
           - text: Deploy Microsoft Defender Advanced Threat Protection
             url: https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
-
-  # Card
-  - title: Compliance solutions
-    linkLists:
       - linkListType: reference
         links:
           - text: ISO - Recommended action plan
