@@ -68,3 +68,8 @@ For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contos
 
 > [!IMPORTANT]
 > If you have an existing *msoid* CNAME record in your DNS zone, you must **remove** the record from DNS at this time.  The msoid record is incompatible with Microsoft 365 Enterprise Apps *(formerly Office 365 ProPlus)* and will prevent activation from succeeding.
+
+
+## Related articles
+
+[Add another domain name](https://support.microsoft.com/office/add-a-new-domain-in-microsoft-office-365-285437c3-d6c9-45cd-8b48-ed29c670c796)
