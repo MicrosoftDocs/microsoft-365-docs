@@ -97,9 +97,9 @@ For a 2-page summary of this solution, see the [Empower remote workers poster](.
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) and print it on letter, legal, or tabloid (11 x 17) size paper.
 
-## Providing remote work capability for all of your workers
+## Provide remote working for all of your workers
 
-You can enable all of your employees to stay productive from anywhere with these devices:
+You can enable all of your workers to stay productive from anywhere with these devices:
 
 - A modern device, such as a Surface laptop and Windows 10, which has the features, security, and performance to access Microsoft 365 cloud apps and services directly over the web.
 
