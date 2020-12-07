@@ -42,6 +42,10 @@ Microsoft Managed Desktop stores its data in one or more of the following Micros
 
 Microsoft Managed Desktop stores its data in the United States. Personal data is retained by Microsoft Managed Desktop for a maximum of 30 days.
 
+### Staff location
+
+The MMD Operations and MMD Security Operations teams are located in the United States and India.
+
 ## Data usage of Microsoft Managed Desktop
 
 Microsoft Managed Desktop uses this data:

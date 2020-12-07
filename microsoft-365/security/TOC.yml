@@ -144,6 +144,8 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: Hunt across devices, emails, apps, and identities
                       href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: Hunt for ransomware
+                      href: mtp/advanced-hunting-find-ransomware.md
                     - name: Transition from Defender for Endpoint 
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Work with query results
@@ -528,7 +530,7 @@
               href: ./office-365-security/campaigns.md
             - name: Investigate malicious email
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: View reports in the Security & Compliance Center
+            - name: View Defender for Office 365 reports in the Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: View details and results of an automated investigation
               href: ./office-365-security/air-view-investigation-results.md
