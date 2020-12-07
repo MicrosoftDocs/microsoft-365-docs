@@ -530,7 +530,7 @@
               href: ./office-365-security/campaigns.md
             - name: Investigate malicious email
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: View reports in the Security & Compliance Center
+            - name: View Defender for Office 365 reports in the Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: View details and results of an automated investigation
               href: ./office-365-security/air-view-investigation-results.md
