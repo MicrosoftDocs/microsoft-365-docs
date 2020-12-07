@@ -193,11 +193,12 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
-
     - name: Manage
       items: 
         - name: Microsoft 365 service health status
           href: microsoft-365-service-health.md
+        - name: Exchange Online monitoring
+          href: microsoft-365-exchange-monitoring.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
@@ -289,6 +290,8 @@
               href: ms-cloud-germany-transition-add-pre-work.md
             - name: Experience
               href: ms-cloud-germany-transition-add-experience.md
+            - name: AD FS migration steps
+              href: ms-cloud-germany-transition-add-adfs.md
 
 - name: Identity
   items: 
