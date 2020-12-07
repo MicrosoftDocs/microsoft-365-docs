@@ -135,7 +135,7 @@ If you're an organization with an Exchange on-premises deployment or an external
 
 To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
 
-1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) for your global supervision policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
+1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) for your global communication compliance policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
 
     - **MemberDepartRestriction = Closed**. Ensures that users cannot remove themselves from the distribution group.
     - **MemberJoinRestriction = Closed**. Ensures that users cannot add themselves to the distribution group.
