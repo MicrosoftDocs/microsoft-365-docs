@@ -39,7 +39,7 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
 
 :::image type="content" source="../../media/primaryinsight.png" alt-text="Primary insight to communications modes.":::
 
- - **Header:** Provides the key metric of people using more than one communication mode, namely:
+1. **Header:** Provides the key metric of people using more than one communication mode, namely:
 
    - Sending emails through Exchange
    - Sending messages through Teams
@@ -47,9 +47,9 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
 
    This key metric is shown as a percentage of all people who are using two or more of Exchange, Teams, or Yammer. 
 
- - **Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org.
+2. **Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org.
 
- - **Visualization of current state:**
+3. **Visualization of current state:**
 
    - Horizontal bar where the blue portion represents the percentage expressed in the header
    - Highlights the (numerator/denominator) used for computing the percentage expressed in the header:
@@ -57,7 +57,7 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
      - **Denominator**: # of people marked as enabled for more than one communication product in the last 28 days
    - **Peer Benchmark** value of the key metric is also shown as a percentage
 
- - **View communication resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication. From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.
+4. **View communication resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication. From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.
 
 #### Trend visualization of primary insight
 
@@ -79,11 +79,11 @@ We also provide you with information that helps you gain visibility into how you
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="![Breakdown of communication modes.]":::
 
- - **Header:** Highlights the goal of the insight to provide a detailed breakdown across the different communication modes being considered within Communication.
+1. **Header:** Highlights the goal of the insight to provide a detailed breakdown across the different communication modes being considered within Communication.
 
- - **Body:** Provides information on the value of using different modes for sharing knowledge.
+2. **Body:** Provides information on the value of using different modes for sharing knowledge.
 
- - **Visualization:** The breakdown represents the use for each mode. The colored portion and the fraction on each bar represent the number of people sending emails,messages, or community posts as a percentage of number of people enabled for that mode:
+3. **Visualization:** The breakdown represents the use for each mode. The colored portion and the fraction on each bar represent the number of people sending emails,messages, or community posts as a percentage of number of people enabled for that mode:
 
    - **People sending emails:** The colored portion and the fraction represent the percentage of users enabled for Exchange who are sending emails. This fraction is constructed from:
    
@@ -100,17 +100,17 @@ We also provide you with information that helps you gain visibility into how you
      - **Numerator:** People posting in Yammer communities in the last 28 days.
      - **Denominator:** People enabled for Yammer in the last 28 days.
 		  
- - **View related content:** Select this link to view collated videos, and other related help content.
+4. **View related content:** Select this link to view collated videos, and other related help content.
 
 ### @mentions in emails
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="![Emails with mentions.]":::
 
- - **Header:** Highlights the increase in response rate for new email threads started in the last 28 days when they contain @mentions.
+1. **Header:** Highlights the increase in response rate for new email threads started in the last 28 days when they contain @mentions.
 
- - **Body:** Provides information on the value of using @mentions in emails. Additionally, people using @mentions is expressed as a percentage of all users who have sent an email in the last 28 days.
+2. **Body:** Provides information on the value of using @mentions in emails. Additionally, people using @mentions is expressed as a percentage of all users who have sent an email in the last 28 days.
 
- - **Visualization:** Breaks down the response rate for new email threads based on whether they had @mentions or not:
+3. **Visualization:** Breaks down the response rate for new email threads based on whether they had @mentions or not:
 
    - **Responses to emails with \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
    
@@ -122,18 +122,18 @@ We also provide you with information that helps you gain visibility into how you
      - **Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.
      - **Denominator:** New email threads not containing @mentions that were started in the last 28 days.
 	 
- - **View related content:** Select this link to view collated videos, and other related help content.
+4. **View related content:** Select this link to view collated videos, and other related help content.
 
 
 ### Breakdown of messages by type in Microsoft Teams
 
 :::image type="content" source="../../media/teamsmessages.png" alt-text="![Teams message types.]":::
 
- - **Header:** Highlights the people who sent channel messages as a percentage of people who sent any kind of message (including chat and channel messages) in the last 28 days.
+1. **Header:** Highlights the people who sent channel messages as a percentage of people who sent any kind of message (including chat and channel messages) in the last 28 days.
 
- - **Body:** Provides information on the value of using channel messages within Microsoft Teams.
+2. **Body:** Provides information on the value of using channel messages within Microsoft Teams.
 
- - **Visualization:** Breaks down the use of chat and channel messages:
+3. **Visualization:** Breaks down the use of chat and channel messages:
 
       - **People sending chat messages:** The colored portion and the fraction represent the use of chat messages within people who sent messages on Microsoft Teams. The fraction is constructed from:
 	  
@@ -145,23 +145,23 @@ We also provide you with information that helps you gain visibility into how you
         - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.
         - **Denominator:** People who sent messages on Microsoft Teams in the last 28 days.
 		
- - **View related content:** Select this link to view collated videos, and other related help content.
+4. **View related content:** Select this link to view collated videos, and other related help content.
 
 ### Questions and Answers in Yammer
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions and answers in Yammer]"::: 
 
- - **Header:** Highlights the posts marked as questions on Yammer that have received an answer marked as &quot;Best answer&quot; as a percentage of all posts marked as questions on Yammer in the last 28 days.
+1. **Header:** Highlights the posts marked as questions on Yammer that have received an answer marked as &quot;Best answer&quot; as a percentage of all posts marked as questions on Yammer in the last 28 days.
 
- - **Body:** Provides information on the value of using questions and answers in Yammer to share knowledge.
+2. **Body:** Provides information on the value of using questions and answers in Yammer to share knowledge.
 
- - **Visualization:** Breaks down the use of the questions and answers feature in your organization:
+3. **Visualization:** Breaks down the use of the questions and answers feature in your organization:
 
    - **Questions:** The colored portion of the bar and associated number represents the total number of posts marked as questions in the last 28 days.
    - **Questions with answers:** The colored portion of the bar and the associated number represents the number of posts marked as questions and have received answers in the last 28 days.
    - **Questions with best answers:** The colored portion of the bar and the associated number represents the number of posts that were marked as questions and have also received a &quot;best answer&quot; in the last 28 days.
 	  
- - **View related content:** Select this link to view collated videos, and other related help content.
+4. **View related content:** Select this link to view collated videos, and other related help content.
 
 ## Related content
 
