@@ -16,6 +16,10 @@ description: "Admins can learn how to assign or remove permissions in the Exchan
 
 # Manage role groups in standalone EOP
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 

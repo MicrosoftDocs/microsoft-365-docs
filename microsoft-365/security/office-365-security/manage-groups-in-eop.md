@@ -18,6 +18,10 @@ description: "Admins in standalone Exchange Online Protection (EOP) organization
 
 # Manage groups in EOP
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
