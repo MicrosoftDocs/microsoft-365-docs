@@ -80,11 +80,6 @@ Once the service is provisioned, it adds:
 To share Microsoft Defender for Identity data with Microsoft 365 Defender, ensure that Microsoft Cloud App Security and Microsoft Defender for Identity integration is turned on. [Learn more about this integration](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
 
-## Turn off Microsoft 365 Defender
-To stop using Microsoft 365 Defender, go to **Settings** > **Microsoft 365 Defender** > **Opt-in / Opt-out** in the Microsoft 365 security center. Unselect **Turn on Microsoft 365 Defender** and apply the changes.
-
-Corresponding features will be removed from the Microsoft 365 security center.
-
 ## Get assistance
 
 To get answers to the most commonly asked questions about turning on Microsoft 365 Defender, [read the FAQ](mtp-enable-faq.md).
