@@ -53,8 +53,7 @@ Check for duplicate users or distribution list with the same user ID.
 
 ## Error/issue: Search fails on specific locations
 
-An eDiscovery or content search may yield the following error:
->This search completed with (#) errors.  Would you like to retry the search on the failed locations?
+An eDiscovery or content search may yield the following error: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![Search-specific location fails error screenshot](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -190,6 +189,14 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
    ```
 
 4. Contact Microsoft Support.
+
+## Error: "The condition specified using HTTP conditional header(s) is not met"
+
+When downloading search results using the eDiscovery Export Tool, it's possible you might receive the following error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` This is transient error, which typically occurs in the Azure Storage location.
+
+### Resolution
+
+To resolve this issue, retry [downloading the search results](#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
 
 ## See Also
 
