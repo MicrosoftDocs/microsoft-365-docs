@@ -18,6 +18,8 @@ description: "In this article, you'll learn how to move domains and settings fro
 
 # Move domains and settings from one EOP organization to another
 
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 

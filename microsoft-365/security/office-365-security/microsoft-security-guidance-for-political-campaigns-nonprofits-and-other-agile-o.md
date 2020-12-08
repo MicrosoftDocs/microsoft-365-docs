@@ -25,6 +25,9 @@ description: "Summary: Planning and implementation guidance for fast-moving orga
 
 # Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
 
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
