@@ -80,7 +80,7 @@ However, the content might be already encrypted. For example, another user might
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| |**Encryption: Not selected**|**Encryption: Configured**|**Encryption: Remove**|
+| | Encryption: Not selected | Encryption: Configured | Encryption: Remove |
 |:-----|:-----|:-----|:-----|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
@@ -271,7 +271,7 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 - Windows: **File** tab > **Info** > **Protect Document** > **Restrict Access** > **Restricted Access**
 
-- MacOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
+- macOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
 
 ## Example configurations for the encryption settings
 
@@ -379,6 +379,8 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 - The [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality in Office apps (Windows, Mac, Android, and iOS) is disabled for encrypted files. Users see a message that the file has restricted permissions that must be removed before AutoSave can be turned on.
 
 - Encrypted files might take longer to open in Office apps (Windows, Mac, Android, and iOS).
+
+- If a label that applies encryption is added by using an Office app when the document is [checked out in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), and the user then discards the checkout, the document remains labeled and encrypted.
 
 - The following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
 

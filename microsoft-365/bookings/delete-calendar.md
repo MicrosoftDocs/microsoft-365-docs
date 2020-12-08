@@ -41,7 +41,7 @@ The booking calendar is where all relevant information about that booking calend
 
 ## Delete a booking calendar using Exchange Online PowerShell
 
-See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) for prerequisites and guidance for connecting to Exchange Online PowerShell.
+See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) for prerequisites and guidance for connecting to Exchange Online PowerShell.
 
 To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the “Run as administrator” option.
 

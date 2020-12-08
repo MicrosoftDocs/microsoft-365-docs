@@ -20,7 +20,7 @@ search.appverid:
 description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
 ---
 
-# Using Endpoint data loss prevention (preview)
+# Using Endpoint data loss prevention
 
 This article walks you through three scenarios where you create and modify a DLP policy that uses devices as a location.
 
@@ -58,24 +58,36 @@ You can use this logic to construct your exclusion paths:
 
 - A mix of all the above. <br/>For example: %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
-### Service domains
+### Unallowed apps
 
-You can add domains to this list that Edge Chromium will refer to when enforcing the Endpoint DLP policy cloud upload access restriction. 
+When a policy's **Access by unallowed apps and browsers** setting is turned on and users attempt to use these apps to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
+
+> [!IMPORTANT]
+> Do not include the path to the executable, but only the executable name (such as browser.exe).
+
+
+### Browser and domain restrictions
+Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
+
+#### Service domains
+
+You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
 If the list mode is set to **Block**, then user will not be able to upload sensitive items to those domains. When an upload action is blocked because an item matches a DLP policy, DLP will either generate a warning or block the upload of the sensitive item.
 
 If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains is not allowed.
 
-### Unallowed apps
-
-When a policy's **Access by unallowed apps and browsers** setting is turned on and users attempt to use these apps to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
-
-### Unallowed browsers
+#### Unallowed browsers
 
 You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
 
-[!IMPORTANT]
-Do not include the path to the executable, but only the executable name (i.e., browser.exe).
+### Always audit file activity from onboarded devices
+
+Control whether DLP activity for Office, PDF, and CSV files is automatically audited and available for review in the audit telemetry and the Activity Explorer from onboarded devices. 
+
+If this is turned On (the default), file activity is always audited for onboarded devices, regardless of whether or not they are included in an active DLP policy.
+If this is turned off, file activity is audited for onboarded devices only when they are included in an active DLP policy. 
+
 
 ## Tying DLP settings together
 
@@ -109,11 +121,11 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 
 ### Scenario 1: Create a policy from a template, audit only
 
-These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md).
+These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Choose **Create policy (preview)**.
+2. Choose **Create policy**.
 
 3. For this scenario, choose **Privacy**, then **U.S. Personally Identifiable Information (PII) Data** and choose **Next**.
 
@@ -143,7 +155,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 2. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
 
-3. Choose **edit policy (preview)**.
+3. Choose **edit policy**.
 
 4. Go to the **Advanced DLP rules** page and edit the **Low volume of content detected U.S. Personally Identifiable Inf**.
 
@@ -168,7 +180,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 2. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
 
-3. Choose **edit policy (preview)**.
+3. Choose **edit policy**.
 
 4. Go to the **Advanced DLP rules** page and edit the **Low volume of content detected U.S. Personally Identifiable Inf**.
 
@@ -194,12 +206,12 @@ These scenarios require that you already have devices onboarded and reporting in
 
 ## See also
 
-- [Learn about Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)
-- [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)

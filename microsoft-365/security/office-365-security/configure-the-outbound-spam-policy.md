@@ -62,17 +62,16 @@ To increase the effectiveness of outbound spam filtering, you can create custom 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can do the procedures in this topic:
+- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+  - To add, modify, and delete outbound spam policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - For read-only access to outbound spam policies, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  - To add, modify, and delete outbound spam policies, you need to be a member of one of the following role groups:
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Notes**:
 
-  - For read-only access to outbound spam policies, you need to be a member of one of the following role groups:
-
-    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 - For our recommended settings for outbound spam policies, see [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
@@ -162,16 +161,14 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
    >
    > - These settings apply only to cloud-based mailboxes.
    >
-   > - Automatic forwarding to internal recipients is not affected by these setting.
+   > - When automatic forwarding is disabled, the recipient will receive a non-delivery report (also known as an NDR or bounce message) if external senders send email to a mailbox that has forwarding in place. If the email is sent by an internal sender, the sender will get the NDR.
 
    The available values are:
 
    - **Automatic - System-controlled**: Allows outbound spam filtering to control automatic external email forwarding. This is the default value.
-
    - **On**: Automatic external email forwarding is not disabled by the policy.
-
    - **Off**: All automatic external email forwarding is disabled by the policy.
-
+ 
 7. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
 
     You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<sender1\>_ or _\<sender2\>_). Different conditions or exceptions use AND logic (for example, _\<sender1\>_ and _\<member of group 1\>_).

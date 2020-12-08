@@ -52,7 +52,7 @@ Depending on the structure of your compliance management team, you have options 
 
 Depending on how you plan to implement insider risk management policies, you need to have the proper Microsoft 365 licensing subscriptions and understand and plan for some solution prerequisites.
 
-**Licensing:** Insider risk management is available as part of wide selection of Microsoft 365 licensing subscriptions. For details, see the [Getting started with insider risk management](insider-risk-management-configure.md#before-you-begin) article.
+**Licensing:** Insider risk management is available as part of wide selection of Microsoft 365 licensing subscriptions. For details, see the [Getting started with insider risk management](insider-risk-management-configure.md#subscriptions-and-licensing) article.
 
 If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
@@ -60,7 +60,7 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 
 - When using the **Data theft by departing users** template, you must configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
 - When using **Data leaks** templates, you must configure at least one Data Loss Prevention (DLP) policy to define sensitive information in your organization and to receive insider risk alerts for High Severity DLP policy alerts. See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies for your organization.
-- When using **Security policy violation** templates, you must enable Microsoft Defender Advanced Threat Protection (ATP) for insider risk management integration in the Defender Security Center to import security violation alerts. See the [Configure advanced features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) article for step-by-step guidance to enable Microsoft Defender ATP integration with insider risk management.
+- When using **Security policy violation** templates, you must enable Microsoft Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. See the [Configure advanced features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) article for step-by-step guidance to enable Defender for Endpoint integration with insider risk management.
 - When using **Disgruntled user** templates, you must configure a Microsoft 365 HR connector to periodically import performance or demotion status information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
 
 ## Test with a small group of users in a production environment
