@@ -196,7 +196,7 @@ When downloading search results using the eDiscovery Export Tool, it's possible 
 
 ### Resolution
 
-To resolve this issue, retry [downloading the search results](#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
+To resolve this issue, retry [downloading the search results](export-search-results.md#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
 
 ## See Also
 
