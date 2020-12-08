@@ -1,7 +1,7 @@
 ---
 title: Hello World for Microsoft 365 Defender REST API 
 description: Learn how to create an app and use a token to access the Microsoft 365 Defender APIs
-keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission
+keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -34,7 +34,7 @@ search.appverid:
 
 ## Get incidents using a simple PowerShell script
 
-It should take 5 to 10 minutes to complete this app, including registering the application, and applying the code from the PowerShell sample script below.
+It should take 5 to 10 minutes to complete this project. This time estimate includes registering the application, and applying the code from the PowerShell sample script.
 
 ### Register an app in Azure Active Directory
 
@@ -44,7 +44,7 @@ It should take 5 to 10 minutes to complete this app, including registering the a
 
    ![Image of Microsoft Azure and navigation to application registration](../../media/atp-azure-new-app2.png)
 
-3. In the registration form, choose a name for your application, then select **Register**. Selecting a redirect URI is optional, and you won't need one to complete this example.
+3. In the registration form, choose a name for your application, then select **Register**. Selecting a redirect URI is optional. You won't need one to complete this example.
 
 4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft 365 Defender**, and then select **Microsoft 365 Defender**. Your app can now access Microsoft 365 Defender.
 
@@ -74,6 +74,11 @@ It should take 5 to 10 minutes to complete this app, including registering the a
 
 ### Get a token using the app and use the token to access the API
 
+For more information on Azure Active Directory tokens, see the [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+
+> [!IMPORTANT]
+> Although the example in this demo app encourage you to paste in your secret value for testing purposes, you should **never hardcode secrets** into an application running in production. A third party could use your secret to access resources. You can help keep your app's secrets secure by using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates). For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).
+
 1. Copy the script below and paste it into your favorite text editor. Save as **Get-Token.ps1**. You can also run the code as-is in PowerShell ISE, but you should save it, because we'll need to run it again when we use the incident-fetching script in the next section.
 
     This script will generate a token and save it in the working folder under the name, *Latest-token.txt*.
@@ -84,7 +89,7 @@ It should take 5 to 10 minutes to complete this app, including registering the a
 
     $tenantId = '' # Paste your directory (tenant) ID here
     $clientId = '' # Paste your application (client) ID here
-    $appSecret = '' # Paste your application key here
+    $appSecret = '' # # Paste your own app secret here to test, then store it in a safe place!
 
     $resourceAppIdUri = 'https://api.security.microsoft.com'
     $oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
@@ -153,7 +158,7 @@ $outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-You're all done! You have just successfully:
+You're all done! You've successfully:
 
 - Created and registered an application.
 - Granted permission for that application to read alerts.
@@ -164,7 +169,8 @@ You're all done! You have just successfully:
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
 - [Access the Microsoft 365 Defender APIs](api-access.md)
-- [Access  Microsoft 365 Defender with application context](api-create-app-web.md)
-- [Access  Microsoft 365 Defender with user context](api-create-app-user-context.md)
-- [Learn about API limits and licensing](api-terms.md)
-- [Understand error codes](api-error-codes.md)
+- [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)
+- [Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md)
+- [Create an app with multi-tenant partner access to Microsoft 365 Defender APIs](api-partner-access.md)
+- [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [OAuth 2.0 Authorization for user sign in and API access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

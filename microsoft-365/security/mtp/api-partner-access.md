@@ -288,4 +288,4 @@ The following example shows how to send a request to get a list of incidents **u
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
 - [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
-- [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.c  om/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [OAuth 2.0 authorization for user sign in and API access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

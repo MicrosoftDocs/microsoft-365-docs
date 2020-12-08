@@ -43,7 +43,7 @@ The following conditions relate to all queries.
 3. You can make up to 10 calls per minute per tenant.
 4. You have 10 minutes of running time per hour per tenant.
 5. You have four total hours of running time day per tenant.
-6. If a single request runs for more than 10 minutes, it will timeout and return an error.
+6. If a single request runs for more than 10 minutes, it will time out and return an error.
 7. A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time. The response body will include the time until the quota you reached will be reset.
 
 ## Permissions
@@ -167,7 +167,6 @@ In the following example, a user sends the query below and receives an API respo
         }
     ]
 }
-
 ```
 
 ## Related articles

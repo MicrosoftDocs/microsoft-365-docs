@@ -36,12 +36,13 @@ search.appverid:
 
 ## API description
 
-The List incidents API allows you to sort through incidents to create an informed cybersecurity response. It exposes a collection of incidents that were flagged in your network, within the time range you specified in your environment retention policy. The most recent incidents are displayed at the top of the list. Each incident contains an array of related alerts, and their related entities.
+The list incidents API allows you to sort through incidents to create an informed cybersecurity response. It exposes a collection of incidents that were flagged in your network, within the time range you specified in your environment retention policy. The most recent incidents are displayed at the top of the list. Each incident contains an array of related alerts, and their related entities.
 
-<br>The API supports the following **OData** operators:
-<br>```$filter``` on: ```lastUpdateTime```, ```createdTime```, ```status```, and ```assignedTo``` properties.
-<br>```$top``` with max value of **100**
-<br>```$skip```
+The API supports the following **OData** operators:
+
+- `$filter` on the `lastUpdateTime`, `createdTime`, `status`, and `assignedTo` properties
+- `$top`, with a maximum value of **100**
+- `$skip`
 
 ## Limitations
 

@@ -36,10 +36,12 @@ search.appverid:
 
 Updates properties of existing incident. Updatable properties are: ```status```, ```determination```, ```classification```, ```assignedTo```, and ```tags```.
 
-## Limitations
+### Quotas, resource allocation, and other constraints
 
-1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
-2. You can set the ```determination``` only if the classification is set to TruePositive.
+1. You can make up to 50 calls per minute or 1500 calls per hour before you hit the throttling threshold.
+2. You can set the `determination` property only if `classification` is set to TruePositive.
+
+If your request is throttled, it will return a `429` response code. The response body will indicate the time when you can begin making new calls.
 
 ## Permissions
 
@@ -68,7 +70,7 @@ Content-Type | String | application/json. **Required**.
 
 ## Request body
 
-In the request body, supply the values for the fields that should be updated. Existing properties that aren't included in the request body will maintain their values or be recalculated based on any changes to related property values. For best performance, you should omit existing values that haven't changed.
+In the request body, supply the values for the fields that should be updated. Existing properties that aren't included in the request body will maintain their values, unless they have to be recalculated due to changes to related values. For best performance, you should omit existing values that haven't changed.
 
 Property | Type | Description
 -|-|-
@@ -80,14 +82,14 @@ tags | string List | List of Incident tags.
 
 ## Response
 
-If successful, this method returns `200 OK`, and the response body will contain the incident entity with updated properties. If an incident with the specified ID wasn't found, the method returns
+If successful, this method returns `200 OK`. The response body will contain the incident entity with updated properties. If an incident with the specified ID wasn't found, the method returns
  `404 Not Found`.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```HTTP
  PATCH https://api.security.microsoft.com/api/incidents/{id}
@@ -110,6 +112,6 @@ Here is an example of the request.
 - [Access the Microsoft 365 Defender APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
-- [Incidents overview](incidents-overview.md)
 - [Incident APIs](api-incident.md)
 - [List incidents](api-list-incidents.md)
+- [Incidents overview](incidents-overview)

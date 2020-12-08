@@ -46,14 +46,14 @@ The incidents API requires different kinds of permissions for each of its method
 
 ## Methods
 
-Method |Return Type |Description
-:---|:---|:---
+Method | Return Type | Description
+-|-|-
 [List incidents](api-list-incidents.md) | [Incident](api-incident.md) list | Get a list of incidents.
 [Update incident](api-update-incidents.md) | [Incident](api-incident.md) | Update a specific incident.
 
 ## Request body, response, and examples
 
-Please refer to the method articles for more details on how to construct a request or parse a response, and for practical examples.
+Refer to the respective method articles for more details on how to construct a request or parse a response, and for practical examples.
 
 ## Common properties
 
@@ -75,9 +75,6 @@ alerts | Alert List | List of related alerts. See examples at [List incidents](a
 ## Related articles
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
-- [Access the Microsoft 365 Defender APIs](api-access.md)
-- [Learn about API limits and licensing](api-terms.md)
-- [Understand error codes](api-error-codes.md)
 - [Incidents overview](incidents-overview.md)
 - [List incidents API](api-list-incidents.md)
 - [Update incident API](api-update-incidents.md)

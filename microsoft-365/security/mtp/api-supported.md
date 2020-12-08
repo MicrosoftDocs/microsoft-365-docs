@@ -35,8 +35,8 @@ search.appverid:
 ## List of available APIs
 
 Article | Description
-:---|:---
-[Advanced Hunting API](api-advanced-hunting.md) | Run Advanced Hunting queries from the API.
+-|-
+[Advanced Hunting API](api-advanced-hunting.md) | Run Advanced Hunting queries.
 [Incident APIs](api-incident.md) | List and update incidents, along with other practical tasks.
 
 ### Endpoint URIs

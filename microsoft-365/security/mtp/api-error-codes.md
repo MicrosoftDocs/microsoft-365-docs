@@ -32,7 +32,7 @@ search.appverid:
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Error codes may be returned by an operation on any of the Microsoft 365 Defender APIs. Every error response will contain an error message, which can help resolve the problem. The error message column in the table section provides some sample messages. The content of actual messages will vary based on the specific error, input, etc. that triggered the response. Variable content is indicated in the table by angle brackets.
+Error codes may be returned by an operation on any of the Microsoft 365 Defender APIs. Every error response will contain an error message, which can help resolve the problem. The error message column in the table section provides some sample messages. The content of actual messages will vary based on the factors that triggered the response. Variable content is indicated in the table by angle brackets.
 
 ## Error codes
 
@@ -85,7 +85,7 @@ InternalServerError | Internal Server Error (500) | *Note: No error message,  re
 > [!IMPORTANT]
 > Body parameters are case-sensitive.
 
-If you experience an *InvalidRequestBody* or *MissingRequiredParameter* error, it might be caused by a typo, such as a capital letter where a lower-case letter should be. We recommend  you review the API documentation and check that the submitted parameters match the relevant example.
+If you experience an *InvalidRequestBody* or *MissingRequiredParameter* error, it might be caused by a typo. Review the API documentation and check that the submitted parameters match the relevant example.
 
 ## Tracking ID
 
