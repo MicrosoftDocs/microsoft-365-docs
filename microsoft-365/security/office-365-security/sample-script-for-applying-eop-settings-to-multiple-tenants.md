@@ -18,6 +18,10 @@ description: "In this article, you'll learn how to use PowerShell to apply confi
 
 # Sample script for applying EOP settings to multiple tenants
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
