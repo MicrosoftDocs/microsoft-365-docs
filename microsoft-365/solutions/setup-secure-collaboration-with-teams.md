@@ -73,7 +73,7 @@ To manage access to information with different sensitivities, we've developed [t
 
 These tiers - *baseline*, *sensitive*, and *highly sensitive* - gradually increase the protections that help prevent oversharing and potential information leakage, as shown in the following table.
 
-|-|**Baseline tier**|**Sensitive tier**|**Highly sensitive tier**|
+|` `|**Baseline tier**|**Sensitive tier**|**Highly sensitive tier**|
 |:--|:-----------|:------------|:-------------------|
 |Public or private team|Either|Private|Private|
 |Unauthenticated sharing|Blocked|Blocked|Blocked|
