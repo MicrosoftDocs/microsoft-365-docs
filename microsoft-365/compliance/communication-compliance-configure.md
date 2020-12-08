@@ -40,6 +40,7 @@ Before you get started with communication compliance, you should confirm your [M
 - Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
 - Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
 - Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 A5 subscription (paid or trial version)
 - Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
 Users included in communication compliance policies must be assigned one of the licenses above.
@@ -47,7 +48,7 @@ Users included in communication compliance policies must be assigned one of the 
 >[!IMPORTANT]
 >Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-If you don't have an existing Office 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Office 365 Enterprise E5.
+If you don't have an existing Office 365 Enterprise E5 plan and want to try communication compliance, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Office 365 Enterprise E5.
 
 ## Step 1 (required): Enable permissions for communication compliance
 
@@ -120,10 +121,10 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 Use the following chart to help you configure groups in your organization for communication compliance policies:
 
-| Policy Member | Supported Groups | Unsupported Groups |
+| **Policy Member** | **Supported Groups** | **Unsupported Groups** |
 |:-----|:-----|:-----|
-|Supervised users <br> Non-supervised users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Mail-enabled security groups |
-| Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Mail-enabled security groups |
+|Supervised users <br> Non-supervised users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
+| Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
   
 When you assign a distribution group in the policy, the policy monitors all emails and Teams chats from each user in distribution group. When you assign a Microsoft 365 group in the policy, the policy monitors all emails and Teams chats sent to that group, not the individual emails and chats received by each group member.
 
@@ -131,6 +132,35 @@ If you're an organization with an Exchange on-premises deployment or an external
 
 >[!IMPORTANT]
 >You must file a request with Microsoft Support to enable your organization to use the graphical user interface in the Security & Compliance Center to search for Teams chat data for on-premises users. For more information, see [Searching cloud-based mailboxes for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
+
+To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
+
+1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) for your global communication compliance policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
+
+    - **MemberDepartRestriction = Closed**. Ensures that users cannot remove themselves from the distribution group.
+    - **MemberJoinRestriction = Closed**. Ensures that users cannot add themselves to the distribution group.
+    - **ModerationEnabled = True**. Ensures that all messages sent to this group are subject to approval and that the group is not being used to communicate outside of the communication compliance policy configuration.
+
+    ```PowerShell
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+
+2. Select an unused [Exchange custom attribute](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) to track users added to the communication compliance policy in your organization.
+
+3. Run the following PowerShell script on a recurring schedule to add users to the communication compliance policy:
+
+    ```PowerShell
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
 
 For more information about setting up groups, see:
 
