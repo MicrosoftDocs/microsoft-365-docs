@@ -29,18 +29,21 @@ When a retention policy is locked:
 - Locations can be added but not removed
 - You can extend the retention period but not decrease it
 
-When a retention label policy or retention auto-apply policy is locked:
+When a retention label policy is locked:
 
 - No one can disable the policy or delete it
 - Locations can be added but not removed
 - Labels can be added but not removed
 
 In summary, a locked policy can be increased or extended, but it can't be reduced or turned off.
-  
+
 > [!IMPORTANT]
 > Before you lock a retention policy or retention label policy, it's critical that you understand the impact and confirm whether it's required for your organization. For example, it might be needed to meet regulatory requirements. Administrators won't be able to disable or delete these policies after the preservation lock is applied.
 
 Configure Preservation Lock after you've created a [retention policy](create-retention-policies.md), or a retention label policy that you [publish](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md). 
+
+> [!NOTE]
+> Locking a label policy doesn't prevent an administrator from reducing the retention period that's configured with the label. That requirement, with other restrictions, can be met when you use [regulatory labels](records-management.md#records).
 
 ## How to lock a retention policy or retention label policy
 
