@@ -67,7 +67,7 @@ To set permissions and assign roles from within the Microsoft 365 compliance cen
 
 8. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
 
-##### More about the Office 365 Secruity & Compliance Center
+##### More about the Office 365 Security & Compliance Center
 
 Learn more about [permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
