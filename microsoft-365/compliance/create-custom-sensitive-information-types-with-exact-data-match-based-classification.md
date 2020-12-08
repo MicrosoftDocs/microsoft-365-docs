@@ -102,7 +102,7 @@ Setting up and configuring EDM-based classification involves:
 
 #### Define the schema for your database of sensitive information
 
-3. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax: 
+1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax: 
 
       `\<Field name="" searchable=""/\>`.
 
@@ -636,4 +636,3 @@ EDM sensitive information types for following scenarios are currently in develop
 - [Overview of DLP policies](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
-
