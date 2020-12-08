@@ -55,7 +55,7 @@ Information that is critical to your organization's success, or has stringent se
 
 For all the scenarios noted above, you can use teams in Microsoft Teams to store, share, and collaborate on the information. 
 
-To configure secure collabration, you use these Microsoft 365 capabilities and features.
+To configure secure collaboration, you use these Microsoft 365 capabilities and features.
 
 | Product or component | Capability or feature | Licensing |
 |:-------|:-----|:-------|
