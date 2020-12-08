@@ -106,7 +106,7 @@
         - name: Step 1. Choose your voice solution 
           href: https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
         - name: Step 2. - Set up Phone System
-          href: https://docs.microsoft.com/en-us/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
         - name: Step 3. - Set up PSTN connectivity
           items: 
           - name: Calling Plan option
