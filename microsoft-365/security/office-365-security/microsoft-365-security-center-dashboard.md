@@ -50,3 +50,15 @@ The E&C dashboard is driven by **Incidents and Alerts** > **Email and collaborat
 The new dashboard will show Alert trends for Email & Collaborations, Active alerts by severity (including Data loss, Threat management, and other alert types), your most recent alerts by severity and policy, and give you a panel for viewing and creating Alert policies.
 
 :::image type="content" source="../../media/Converge 16 E&C New Alert Policy.png" alt-text="The new alert policy panel from clicking the link on the E&C Dashboard.":::
+
+## Related information
+
+[The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)
+
+[Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies)
+
+[Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices?view=o365-worldwide)
+
+[Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
+
+**Attack Simulator** [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) and [create a payload for training your people](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)
