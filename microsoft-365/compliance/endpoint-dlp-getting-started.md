@@ -191,8 +191,8 @@ Now that you have onboarded devices and can view the activity data in Activity e
 
 ## See also
 
-- [Learn about Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)
-- [Using Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+- [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
+- [Using Endpoint data loss prevention ](endpoint-dlp-using.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)

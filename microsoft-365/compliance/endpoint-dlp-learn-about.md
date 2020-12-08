@@ -73,7 +73,7 @@ If you have onboarded devices through [Microsoft Defender for Endpoint](https://
 
 ### Viewing Endpoint DLP data
 
- Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed. At public preview it watches all:
+ Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed. At this time the following file types are supported:
 
 - Word files
 - PowerPoint files
