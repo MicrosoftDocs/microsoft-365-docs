@@ -85,9 +85,13 @@ Depending on your subscription, here are the available reports.
     
 - [Mailbox usage](mailbox-usage.md)
     
-- [Office activations](microsoft-office-activations.md)
+- [Office activations](microsoft-office-activations-ww.md)
 
-- [Active Users](active-users.md)
+- [Office activations for US Government](microsoft-office-activations.md)
+
+- [Active Users](active-users-ww.md)
+
+- [Active Users for US Government](active-users.md)
   
 - [Email apps usage](email-apps-usage.md)
 
@@ -99,7 +103,9 @@ Depending on your subscription, here are the available reports.
   
 - [Dynamics 365 Customer Voice activity for US Government](forms-pro-activity.md)
 
-- [Microsoft 365 groups](office-365-groups.md)
+- [Microsoft 365 groups](office-365-groups-ww.md)
+
+- [Microsoft 365 groups for US Government](office-365-groups.md)
   
 - [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
 
@@ -109,7 +115,9 @@ Depending on your subscription, here are the available reports.
 
 - [OneDrive for Business usage for US Government](onedrive-for-business-usage.md)
 
-- [Microsoft 365 Apps usage](microsoft365-apps-usage.md)
+- [Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)
+
+- [Microsoft 365 Apps usage for US Government](microsoft365-apps-usage.md)
   
 - [SharePoint site usage](sharepoint-site-usage-ww.md)
 
