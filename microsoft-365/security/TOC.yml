@@ -44,7 +44,7 @@
             - name: What's new in Microsoft 365 Defender
               href: mtp/whats-new.md
             - name: Microsoft 365 Security center advantages
-              href: microsoft-365-security-center-advantages.md
+              href: mtp/microsoft-365-security-center-advantages.md
             - name: Defender for Endpoint in the Microsoft 365 security center
               href: mtp/microsoft-365-security-center-mde.md
             - name: Defender for Office 365 in the Microsoft 365 security center

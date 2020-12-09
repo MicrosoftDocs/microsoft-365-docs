@@ -1,6 +1,5 @@
 ---
 title: Microsoft Defender for EOffice 365 in the Microsoft 365 security center
-description: Learn about changes from the Office 365 Security and Compliance center to the Microsoft 365 security center
 keywords: Microsoft 365 security, Getting started with the Microsoft 365 Security center, OATP, MDATP, MDO, MDE, single pane of glass, new security portal, new defender security portal
 ms.author: tracyp
 author: msfttracyp
@@ -16,7 +15,7 @@ search.appverid:
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-m365-defender 
-description: "Manage security for Office 365 and endpoint devices in the same place, the Microsoft 365 Security center. This article outlines what's new and where to find things."
+description: Learn about changes from the Office 365 Security and Compliance center to the Microsoft 365 security center.
 ---
 
 # Microsoft Defender for Office 365 in the Microsoft 365 security center
@@ -37,9 +36,9 @@ This table is a quick reference of Email & Collaboration areas where change has 
 
 |**Changed**  |**Unchanged**  |
 |---------|---------|
-|[Dashboard](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-365-security-center-dashboard)     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer?view=o365-worldwide)       |
+|[Dashboard](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-365-security-center-dashboard?view=o365-worldwide)     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer?view=o365-worldwide)       |
 |[Attack Simulator ](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-worldwide)   |  [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide)       |
-|[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center)    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
+|[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center?view=o365-worldwide)    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
 |     |    [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
 |     |    [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
 |     |    [Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers?view=o365-worldwide)    |
@@ -72,12 +71,13 @@ The home page also welcomes you to the new Microsoft 365 security center experie
 - The links under ‘Next steps’ will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
 - ‘Give feedback’ will allow you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
 
-The ‘Welcome’ page will disappear after you navigate through the Next button to Close. Be sure to take note of any URLs you’d want for your records, or bookmark this page (since the URLs are listed above).
+The **Welcome** page will disappear after you navigate through the Next button to Close. Be sure to take note of any URLs you’d want for your records, or bookmark this page (since the URLs are listed above).
 
-The ‘Guided Tour’ bar will remain on the page and has these useful features.  
+The **Guided Tour** will remain on the page where you can choose a tour of Endpoint or Email and Collaboration pages.  
 
-:::image type="content" source="../../media/converge-12-home-page-guided-tour-bar.gif"
- alt-text="An animation showing the Guided tour drop-down. Options are Tours of Endpoint and Email and Collaboration pages. Next is a link to the Office 365 Security and Compliance center for comparison. The last link is to the 'What's New' page that describes recent updates.":::
+![Guided tour drop down](../../media/converge-12-home-page-guided-tour-bar.gif)
+
+Also included is a link to the **Office 365 Security and Compliance center** for comparison. The last link is to the **What's New**'** page that describes recent updates.
 
 ## Navigation and the Guided Tour
 
@@ -146,13 +146,9 @@ EmailPostDeliveryEvents
 | project ZapTime, ActionType, NetworkMessageId , RecipientEmailAddress, AccountUpn, 
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
-
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap
-.PNG" alt-text="Under Hunting > Advanced Hunting, click Query, and then enter the Kusto query below.":::
+![Hunting query example](../../media/converge-13-advanced-hunt-an-email-zap.PNG)
 
 The data from this query will appear in the results panel below the query itself. Results include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set. Results can also be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries.
-
-
 
 ## Related information
 
