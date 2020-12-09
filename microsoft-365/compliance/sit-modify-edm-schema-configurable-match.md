@@ -38,7 +38,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
 
 4. If you don't have a current copy of the existing schema, you'll need to download a copy of the existing schema, run this command:
 
-    `EdmUploadAgent.exe /SaveSchema /DataStoreName <dataStoreName>`
+    `EdmUploadAgent.exe /SaveSchema /DataStoreName <dataStoreName> [/OutputDir [Output dir location]]`
 
 5. Customize the schema so each column utilizes “caseInsensitive” and / or “ignoredDelimiters”.  The default value for “caseInsensitive” is “false” and for “ignoredDelimiters”, it is an empty string. 
 
@@ -116,7 +116,7 @@ The `ignoredDelimiters` flag doesn't support:
 
 9. Open Command Prompt window (as an administrator) and run the following command to hash and upload your sensitive data:
 
-    `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] [/Schema [Schema file]]`
+    `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Salt [custom salt] /Schema [Schema file]`
 
 
 ## Related articles
