@@ -2,7 +2,7 @@
 title: "Microsoft 365 guest sharing settings reference"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise

@@ -112,4 +112,8 @@ With information barriers, you can segment your data and users to restrict unwan
 
 [Protect information](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
 
+## Related topics
 
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)

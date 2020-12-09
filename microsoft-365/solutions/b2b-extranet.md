@@ -2,7 +2,7 @@
 title: "Create a B2B extranet with managed guests"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise

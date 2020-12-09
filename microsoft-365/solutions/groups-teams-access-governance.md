@@ -161,3 +161,9 @@ Additional resources:
 [Create and manage an external network in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-an-external-network)
 
 [Configure Teams with three tiers of protection](https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection)
+
+## Related topics
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)

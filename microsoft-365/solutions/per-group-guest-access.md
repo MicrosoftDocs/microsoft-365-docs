@@ -84,7 +84,11 @@ Then run the following using the appropriate values for ObjectID, GivenName, Sur
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## Related articles
+## Related topics
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
 
 [Manage Group membership in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)
   
