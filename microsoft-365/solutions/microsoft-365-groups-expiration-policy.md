@@ -76,7 +76,11 @@ If for some reason none of the owners or admins renew the group before it expire
 
 If you have a group that you no longer plan to use, but you want to retain its content, see [Archive groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md) for information about how to export information from the different groups services.
 
-## Related articles
+## Related topics
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
 
 [Overview of retention policies](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
 
