@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
+ms.date: 12/09/2020
 ---
 
 # The Action center
@@ -31,7 +31,7 @@ ms.date: 09/16/2020
 **Applies to:**
 - Microsoft 365 Defender
 
-Use the Action center to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and resulting verdict, [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) occur automatically or upon approval by your organization's security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
+Use the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and resulting verdict, [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) can occur automatically or upon approval by your organization's security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
 
 ![Action Center](../../media/air-actioncenter.png)
 
@@ -80,6 +80,25 @@ As remediation actions are taken, they're listed on the History tab in the Actio
 - Restrict code execution (this action can be undone) 
 - Run antivirus scan 
 - Stop and quarantine 
+
+> [!NOTE]
+> In addition to remediation actions that are taken automatically, your security operations team can take manual actions to address detected threats. For more information about automatic and manual remediation actions, see [Remediation actions](mtp-remediation-actions.md).
+
+## Action source
+
+(**NEW!**) The new and improved Action center includes a column indicating the source of each remediation action. The following table summarizes values you might see in the **Action source** column:
+
+| Action source value | Description |
+|:---|:---|
+| **Manual device action** | A manual action taken on a device. Examples include device isolation or file quarantine. |
+| **Manual email action** | A manual action taken on email. An example includes soft-deleting email messages. |
+| **Automated device action** | An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. |
+| **Automated email action** | An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. |
+| **Advanced hunting action** | Actions taken on devices or email with advanced hunting. |
+| **Explorer action** | Actions taken on email content with Explorer. |
+| **Manual live response action** | Actions taken on a device with live response. Examples include deleting a file, stopping a process, and removing a scheduled task. |
+| **Live response action** | Actions taken on a device with Microsoft Defender for Endpoint APIs. Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
+
 
 ## Required permissions for Action center tasks
 
