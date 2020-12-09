@@ -62,7 +62,7 @@ can create an auto-claim policy.
 2. Near the bottom of the table, select **User owned apps and services**.
 3. In the right pane, clear the box for **Let users auto-claim licenses the first time they sign in**.
 
-If you already have an active policy, but you don't want any more users to claim licenses, you can [turn off the policy](#turn-a-policy-on-or-off) When you turn off an auto-claim policy, no additional users can claim a license from that point on. Users who already claimed a license don't lose their license.
+If you already have an active policy, but you don't want any more users to claim licenses, [turn off the policy](#turn-a-policy-on-or-off). When you turn off an auto-claim policy, no additional users can claim a license from that point on. Users who already claimed a license don't lose their license.
 
 ## Create an auto-claim policy
 
@@ -72,9 +72,9 @@ associated with the policy, the product that's assigned to the policy,
 the number of available licenses, and the status of the policy.
 
 When you create an auto-claim policy, you can add a backup product to
-the policy. If the primary product is out of licenses, the backup
+it. If the primary product is out of licenses, the backup
 product is used to assign licenses to users. You can add up to four backup
-products and [change the order in which they are used](#change-the-assigning-order-for-backup-products). To learn more,
+products and [change the order in which they're used](#change-the-assigning-order-for-backup-products). To learn more,
 see [Add or remove backup products](#add-or-remove-backup-products).
 
 > [!NOTE]
@@ -149,7 +149,7 @@ new users can receive licenses for that product.
 
 Each product has a collection of apps and services associated with it.
 For each product in your auto-claim policy, you can specify which apps
-and services are included when a user is automatically assigned a
+and services to include when a user is automatically assigned a
 license to that product.
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
@@ -162,7 +162,7 @@ license to that product.
 ## Change the assigning order for backup products
 
 If you have backup products assigned to the policy, you can change the
-order in which they are used to assign licenses when users sign in
+order in which they're used to assign licenses when users sign in
 to the app.
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
