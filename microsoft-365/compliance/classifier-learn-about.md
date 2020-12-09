@@ -109,28 +109,12 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. 
 
-Sample categories you may be interested in creating a trainable classifier for can include:
-    1.	Legal documents  
-        a)	Attorney Client Privilege 
-        b)	Closing Sets 
-        c)	Statement of Work  
-    2.	Strategic business documents 
-        a)	Press Releases 
-        b)	Merger & Acquisition  
-        c)	Deals 
-        d)	Business plans 
-        e)	Marketing plans 
-        f)	Intellectual Property 
-        g)	Patents 
-        h)	Software design documents  
-    3.	Pricing information 
-        a)	Invoices 
-        b)	Quotation 
-        c)	Work orders 
-        d)	Bidding documents 
-    4.	Financial information 
-        a)	Organizational investments  
-        b)	Quarterly or annual results    
+For example you could create trainable classifiers for:
+ 
+- Legal documents - such as attorney client privilege, closing sets, statement of work
+- Strategic business documents - like press releases, merger and acquisition, deals, business or marketing plans, intellectual property, patents, design docs
+- Pricing information - like invoices, price quotes, work orders, bidding documents 
+- Financial information - such as organizational investments, quarterly or annual results    
 
 #### Process flow for creating custom classifiers
 
