@@ -136,7 +136,7 @@ Governance capabilities for collaboration in Microsoft 365 include features in M
 |Group expiration policy|Set inactive groups and teams to expire and be deleted after a specified period of time.|Microsoft 365 E5 or E3 with Azure AD Premium licenses|
 |Per-group guest access|Allow or prevent team and group sharing with people outside your organization on a per-group basis.|Microsoft 365 E5 or E3|
 
-## Create your governance plan
+## Collaboration governance planning step-by-step
 
 Follow these basic steps to create your governance plan:
 
