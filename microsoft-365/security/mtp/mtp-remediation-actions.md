@@ -55,16 +55,29 @@ When an automated investigation completes, a verdict is reached for every piece 
 
 The following table lists possible verdicts and outcomes:
 
-|Verdict    |Area    |Outcomes|
+| Verdict    | Area    | Outcomes|
 |------|------|------|
-|Malicious    |Devices (endpoints)    |Remediation actions are taken automatically (assuming your organization's [device groups](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) are set to **Full - remediate threats automatically**)|
-|Malicious    |Email content (URLs or attachments) | Recommended remediation actions are pending approval|
-|Suspicious    |Devices or email content |Recommended remediation actions are pending approval|
-|No threats found    |Devices or email content    |No remediation actions are needed|
-
+| Malicious    | Devices (endpoints)    | Remediation actions are taken automatically (assuming your organization's [device groups](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) are set to **Full - remediate threats automatically**)|
+| Malicious    | Email content (URLs or attachments) | Recommended remediation actions are pending approval|
+| Suspicious    | Devices or email content | Recommended remediation actions are pending approval|
+| No threats found    | Devices or email content    | No remediation actions are needed|
 
 
 ## Remediation actions that are taken manually
+
+In addition to remediation actions that follow automated investigations, your security operations team can take certain remediation actions manually, as listed in the following table:
+
+| Action | Description |
+|:---|:---|
+| Manual device action | A manual action taken on a device. Examples include device isolation or file quarantine. |
+| Manual email action | A manual action taken on email. An example includes soft-deleting email messages. |
+| Automated device action | An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. |
+| Automated email action  | An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. |
+| Advanced hunting action | Actions taken on devices or email with advanced hunting. |
+| Explorer action | Actions taken on email content with Explorer. |
+| Manual live response action | Actions taken on a device with live response. Examples include deleting a file, stopping a process, and removing a scheduled task. |
+| Live response action | Actions taken on a device with Microsoft Defender for Endpoint APIs. Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
+
 
 ## Next steps
 
