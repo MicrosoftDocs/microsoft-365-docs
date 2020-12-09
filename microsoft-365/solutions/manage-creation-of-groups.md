@@ -109,7 +109,7 @@ and [sign in with your administrator account](https://docs.microsoft.com/microso
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"
-$AllowGroupCreation = $False"
+$AllowGroupCreation = $False
 
 Connect-AzureAD
 
