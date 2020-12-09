@@ -61,3 +61,11 @@ To help protect your organization against insider risks, set up and deploy the f
 2. Configure and create [insider risk management policies](insider-risk-management-solution-overview.md)
 3. Optional: Configure and create [information barrier policies](information-barriers-solution-overview.md)
 4. Optional: Enable and configure [privileged access management](privileged-access-management-solution-overview.md)
+
+## Illustrations with examples
+
+To help you plan an integrated strategy for implementing Microsoft 365 insider risk capabilities, download the *Microsoft 365 information protection and compliance capabilities* set of illustrations. For architecture illustrations of insider risk capabilities, see topics 5-7. Feel free to adapt these illustrations for your own use.
+
+| Item | Description |
+|:-----|:-----|
+|[![Model poster: Microsoft 365 information protection and compliance capabilities](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Updated October 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk management</li><li>Third-party data ingestion</li>|
