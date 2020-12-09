@@ -260,7 +260,7 @@ Available (completed) Enhanced summary reports are available in the **Downloadab
 
 - **delivery_priority**<sup>*</sup>: Whether the message was sent with **High**, **Low**, or **Normal** priority.
 
-<sup>*</sup>These properties are only available in Enhanced summary reports.
+<sup>*</sup> These properties are only available in Enhanced summary reports.
 
 ### Extended reports
 

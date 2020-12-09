@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-m365-defender
 description: "Learn how to simulate phishing attacks and train your users on phishing prevention with Attack simulation training in Microsoft Defender for Office 365."
 ---
@@ -64,7 +64,7 @@ If you'd like to create your own payload, read [create a payload for attack simu
 
 ## Audience targeting
 
-Now it's time to select this simulation's audience. You can choose to **include all users in your organization** or **include only specific users and groups**. 
+Now it's time to select this simulation's audience. You can choose to **include all users in your organization** or **include only specific users and groups**.
 
 When you choose to **include only specific users and groups** you can either:
 
@@ -89,7 +89,7 @@ In the next steps you'll need to **Add trainings** if you opted to select it you
 
 ## Launch details and review
 
-Now that everything is configured, you can launch this simulation immediately or schedule it for a later date. You will also need to choose when to end this simulation. We will stop capturing interaction with this simulation past the selected time. 
+Now that everything is configured, you can launch this simulation immediately or schedule it for a later date. You will also need to choose when to end this simulation. We will stop capturing interaction with this simulation past the selected time.
 
 **Enable region aware timezone delivery** to deliver simulated attack messages to your employees during their working hours based on their region.
 

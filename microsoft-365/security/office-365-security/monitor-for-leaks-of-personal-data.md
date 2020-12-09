@@ -111,7 +111,6 @@ The second policy blocks downloads of files to any unmanaged device. You choose 
 These attribute types are coming soon to Cloud App Security:
 
 - Sensitive information types
-
 - Unified labels across Microsoft 365 and Azure Information Protection
 
 ### Cloud App Security dashboard
@@ -136,69 +135,24 @@ More information:
 
 Alert when a file containing a credit card number is shared from an approved cloud app.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Control</strong></th>
-<th align="left"><strong>Settings</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Policy type</td>
-<td align="left">File policy</td>
-</tr>
-<tr class="even">
-<td align="left">Policy template</td>
-<td align="left">No template</td>
-</tr>
-<tr class="odd">
-<td align="left">Policy severity</td>
-<td align="left">High</td>
-</tr>
-<tr class="even">
-<td align="left">Category</td>
-<td align="left">DLP</td>
-</tr>
-<tr class="odd">
-<td align="left">Filter settings</td>
-<td align="left"><p>Access level = Public (Internet), Public, External</p>
-<p>App = &lt;select apps&gt; (use this setting if you want to limit monitoring to specific SaaS apps)</p></td>
-</tr>
-<tr class="even">
-<td align="left">Apply to</td>
-<td align="left">All files, all owners</td>
-</tr>
-<tr class="odd">
-<td align="left">Content inspection</td>
-<td align="left"><p>Includes files that match a present expression: All countries: Finance: Credit card number</p>
-<p>Don't require relevant context: unchecked (this will match keywords as well as regex)</p>
-<p>Includes files with at least 1 match</p>
-<p>Unmask the last 4 characters of the violation: checked</p></td>
-</tr>
-<tr class="even">
-<td align="left">Alerts</td>
-<td align="left"><p>Create an alert for each matching file: checked</p>
-<p>Daily alert limit: 1000</p>
-<p>Select an alert as email: checked</p>
-<p>To: infosec@contoso.com</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Governance</td>
-<td align="left"><p>Microsoft OneDrive for Business</p>
-<p>Make private: check Remove External Users</p>
-<p>All other settings: unchecked</p>
-<p>Microsoft SharePoint Online</p>
-<p>Make private: check Remove External Users</p>
-<p>All other settings: unchecked</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Control|Settings|
+|---|---|
+|Policy type|File policy|
+|Policy template|No template|
+|Policy severity|High|
+|Category|DLP|
+|Filter settings|Access level = Public (Internet), Public, External <p> App = \<select apps\> (use this setting if you want to limit monitoring to specific SaaS apps)|
+|Apply to|All files, all owners|
+|Content inspection|Includes files that match a present expression: All countries: Finance: Credit card number <p> Don't require relevant context: unchecked (this will match keywords as well as regex) <p> Includes files with at least 1 match <p> Unmask the last 4 characters of the violation: checked|
+|Alerts|Create an alert for each matching file: checked <p> Daily alert limit: 1000 <p> Select an alert as email: checked <p> To: infosec@contoso.com|
+|Governance|Microsoft OneDrive for Business <p> Make private: check Remove External Users <p> All other settings: unchecked <p> Microsoft SharePoint Online <p> Make private: check Remove External Users <p> All other settings: unchecked|
+|
 
 Similar policies:
 
 - Detect sharing of Files containing PII - Email Address
-
 - Detect sharing of Files containing PII - Passport Number
 
 ### Detect Customer or HR Data in Box or OneDrive for Business
@@ -208,64 +162,23 @@ Alert when a file labeled as Customer Data or HR Data is uploaded to OneDrive fo
 Notes:
 
 - Box monitoring requires a connector be configured using the API Connector SDK.
-
 - This policy requires capabilities that are currently in private preview.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Control</strong></th>
-<th align="left"><strong>Settings</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Policy type</td>
-<td align="left">Activity policy</td>
-</tr>
-<tr class="even">
-<td align="left">Policy template</td>
-<td align="left">No template</td>
-</tr>
-<tr class="odd">
-<td align="left">Policy severity</td>
-<td align="left">High</td>
-</tr>
-<tr class="even">
-<td align="left">Category</td>
-<td align="left">Sharing Control</td>
-</tr>
-<tr class="odd">
-<td align="left">Act on</td>
-<td align="left">Single activity</td>
-</tr>
-<tr class="even">
-<td align="left">Filter settings</td>
-<td align="left"><p>Activity type = Upload File</p>
-<p>App = Microsoft OneDrive for Business and Box</p>
-<p>Classification Label (currently in private preview): Azure Information Protection = Customer Data, Human Resources—Salary Data, Human Resources—Employee Data</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Alerts</td>
-<td align="left"><p>Create an alert: checked</p>
-<p>Daily alert limit: 1000</p>
-<p>Select an alert as email: checked</p>
-<p>To: infosec@contoso.com</p></td>
-</tr>
-<tr class="even">
-<td align="left">Governance</td>
-<td align="left"><p>All apps</p>
-<p>Put user in quarantine: check</p>
-<p>All other settings: unchecked</p>
-<p>Office 365</p>
-<p>Put user in quarantine: check</p>
-<p>All other settings: unchecked</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Control|Settings|
+|---|---|
+|Policy type|Activity policy|
+|Policy template|No template|
+|Policy severity|High|
+|Category|Sharing Control|
+|Act on|Single activity|
+|Filter settings|Activity type = Upload File <p> App = Microsoft OneDrive for Business and Box <p> Classification Label (currently in private preview): Azure Information Protection = Customer Data, Human Resources—Salary Data, Human Resources—Employee Data|
+|Alerts|Create an alert: checked <p> Daily alert limit: 1000 <p> Select an alert as email: checked <p> To: infosec@contoso.com|
+|Governance|All apps <p> Put user in quarantine: check <p> All other settings: unchecked <p> Office 365 <p> Put user in quarantine: check <p> All other settings: unchecked|
+|
 
 Similar policies:
 
 - Detect large downloads of Customer data or HR Data — Alert when a large number of files containing customer data or HR data have been detected being downloaded by a single user within a short period of time.
-
 - Detect Sharing of Customer and HR Data — Alert when files containing Customer or HR Data are shared.
