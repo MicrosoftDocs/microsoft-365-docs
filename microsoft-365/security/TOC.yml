@@ -118,7 +118,7 @@
               items: 
                 - name: Overview of automated investigation and response
                   href: mtp/mtp-autoir.md
-                - name: Remediation actions following automated investigations
+                - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
                 - name: Configure automated investigation and response capabilities
                   href: mtp/mtp-configure-auto-investigation-response.md
