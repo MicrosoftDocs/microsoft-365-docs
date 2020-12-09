@@ -146,7 +146,7 @@ Additional Actions consist of the actions that were applied post the delivery of
 > - There will be new fields and values for Detection technologies and Additional actions (especially for ZAP scenarios). Evaluate your existing Saved Queries and Tracked queries to make sure they work with the new values.
 
 > [!div class="mx-imgBorder"]
-> ![Additional_Actions](../../media/Additional_Actions.png)
+> ![Additional Actions in Explorer](../../media/Additional_Actions.png)
 
 ### System overrides
 
@@ -158,10 +158,10 @@ System overrides are a method of making exceptions to the intended delivery loca
 - Blocked by org policy: This is when the organization's security teams set policies or mail flow rules to block senders, domains, message languages, or source IPs for users in their organization. This can also be for a set of users or the entire organization.
 - File extension blocked by org policy: This is when a file type extension is blocked by the security teams of an organization through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also filter on blocked file extensions using the rich filtering capability.
 
-[![System_Overrides](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![System Overrides in Explorer](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> ![System Overrides Grid in Explorer](../../media/System_Overrides_Grid.png)
 
 ### Improvements around URL and Clicks Experience
 
@@ -181,7 +181,7 @@ The set of improvements focused towards URL and URL clicks data include:
 
 Phish confidence level helps to identify the degree of confidence, with which an email was categorized as Phish. The two possible values are High and Normal. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
-[![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![Phish Confidence Level in Explorer](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### ZAP URL Signal
 
