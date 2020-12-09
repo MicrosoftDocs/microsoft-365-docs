@@ -25,6 +25,21 @@ Insider risks include vulnerabilities in a variety of areas and can cause major 
 
 ![Insider risk threats](../media/ir-solution-threats.png)
 
+| **Risks** | **Communication compliance** | **Insider risk management** | **Information barriers** | **Privileged access management** |
+| :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
+| Data spillage | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
+| Confidentiality violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| IP theft | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| Workplace violence | ![Supported](../media/check-mark.png) |  |  |  |
+| Fraud | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
+| Policy violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
+| Insider trading | ![Supported](../media/check-mark.png) |  |  |  |
+| Conflicts of interest |  |  | ![Supported](../media/check-mark.png) |  |
+| Sensitive data leaks | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
+| Workplace harassment | ![Supported](../media/check-mark.png) |  |  |  |
+| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
+| Regulatory compliance violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+
 Microsoft 365 risk prevention features are designed and built-in to our insider risk products and solutions. These solutions work together and use advanced service and 3rd-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
 
 ## Microsoft 365 insider risk solutions
@@ -40,11 +55,11 @@ To help protect your organization against insider risks, use these Microsoft 365
 
 ## Deploy Microsoft 365 insider risk solutions
 
-To help protect your organization against insider risks, set up and deploy the following solutions:
+To help protect your organization against insider risks, set up and deploy the following Microsoft 365 solutions:
 
 ![Insider risk solution defense-in-depth](../media/ir-solution-defense-in-depth.png)
 
-1. Configure and create [communication compliance policies](communication-compliance-configure.md)
-2. Configure and create [insider risk management policies](insider-risk-management-configure.md)
-3. Optional: Configure and create [information barrier policies](information-barriers-policies.md)
-4. Optional: Enable and configure [privileged access management](privileged-access-management-configuration.md)
+1. Configure and create [communication compliance policies](communication-compliance-solution-overview.md)
+2. Configure and create [insider risk management policies](insider-risk-management-solution-overview.md)
+3. Optional: Configure and create [information barrier policies](information-barriers-solution-overview.md)
+4. Optional: Enable and configure [privileged access management](privileged-access-management-solution-overview.md)

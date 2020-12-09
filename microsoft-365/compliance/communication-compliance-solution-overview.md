@@ -19,7 +19,7 @@ ms.collection:
 
 # Communication compliance in Microsoft 365
 
-## Step 1: Enable and configure communication compliance
+## Enable and configure communication compliance
 
 Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Communication compliance](communication-compliance.md) in Microsoft 365 helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
