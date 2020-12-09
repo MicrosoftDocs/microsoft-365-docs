@@ -1,5 +1,7 @@
 ---
-title: Getting Started with the 'Microsoft 365 Security' center, OATP, MDATP, MSDO, MSDE, single pane of glass, converged portal, new security portal, new O365 security portal
+title: Microsoft Defender for EOffice 365 in the Microsoft 365 security center
+description: Learn about changes from the Office 365 Security and Compliance center to the Microsoft 365 security center
+keywords: Microsoft 365 security, Getting started with the Microsoft 365 Security center, OATP, MDATP, MDO, MDE, single pane of glass, new security portal, new defender security portal
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -17,11 +19,18 @@ ms.collection:
 description: "Manage security for Office 365 and endpoint devices in the same place, the Microsoft 365 Security center. This article outlines what's new and where to find things."
 ---
 
-# Getting started with the Microsoft 365 Security center
+# Microsoft Defender for Office 365 in the Microsoft 365 security center
 
-The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together features in Microsoft Defender for Endpoint with Microsoft Defender for Office 365 features.
+**Applies to:**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+The new [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center.
+
+If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the new Microsoft 365 Security Center.
 
 Use this URL to access the new security center: https://security.microsoft.com
+
+## What's Changed
 
 This table is a quick reference of Email & Collaboration areas where change has occurred between the **Security & Compliance center** and the **Microsoft 365 Security** portal. Click the links to navigate to topics.
 <p>
@@ -38,17 +47,11 @@ This table is a quick reference of Email & Collaboration areas where change has 
 
 Also, check the 'Related Information' section at the bottom of this article.
 
-## Navigation and the Guided Tour
-
-The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
-<p>
-
-|Alerts & Actions  |Endpoints  |Email & Collaboration  |Access & Reporting  |
-|---------|---------|---------|---------|
-|:::image type="content" source="../../media/Converge 1 AlertsAndActions.png" alt-text="The Alerts and Actions quick launch bar.":::     |     :::image type="content" source="../../media/Converge 2 Endpoints.png" alt-text="The Endpoints quicklaunch bar.":::    | :::image type="content" source="../../media/Converge 3 Email and Collab.png" alt-text="The Emails and Collaboration quicklaunch bar.":::        |    :::image type="content" source="../../media/Converge 4 Access and reporting.png" alt-text="The Access and Reporting quicklaunch bar.":::    |
 
 > [!IMPORTANT]
 > The Microsoft 365 Security portal (https://security.microsoft.com) combines security features in https://securitycenter.windows.com, and https://protection.office.com. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
+
+## The Microsoft 365 Security Center home page
 
 The home page of the new portal surfaces:
 
@@ -62,7 +65,7 @@ The home page of the new portal surfaces:
 
 As soon as you arrive at this information page, you’ll also see a pop-up for security notifications if there are any.
 
-:::image type="content" source="../../media/Converge 5 Microsoft 365 Security center.png" alt-text="This is the Microsoft Security center page with Home, Endpoints, Email and Collaboration, and miscellaneous areas.":::
+:::image type="content" source="../../media/converge-5-microsoft-365-security-center.png" alt-text="This is the Microsoft Security center page with Home, Endpoints, Email and Collaboration, and miscellaneous areas.":::
 
 The home page also welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
@@ -73,9 +76,39 @@ The ‘Welcome’ page will disappear after you navigate through the Next button
 
 The ‘Guided Tour’ bar will remain on the page and has these useful features.  
 
-:::image type="content" source="../../media/Converge 12 Home Page Guided Tour bar.gif" alt-text="An animation showing the Guided tour drop-down. Options are Tours of Endpoint and Email and Collaboration pages. Next is a link to the Office 365 Security and Compliance center for comparison. The last link is to the 'What's New' page that describes recent updates.":::
+:::image type="content" source="../../media/converge-12-home-page-guided-tour-bar.gif"
+ alt-text="An animation showing the Guided tour drop-down. Options are Tours of Endpoint and Email and Collaboration pages. Next is a link to the Office 365 Security and Compliance center for comparison. The last link is to the 'What's New' page that describes recent updates.":::
+
+## Navigation and the Guided Tour
+
+The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
+
+### Alerts & Actions
+
+Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries.
+
+![The Alerts and Actions quick launch bar](../../media/converge-1-alertsandactions.png)
+
+### Endpoints
+
+View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
+
+![The Endpoints quick launch bar](../../media/converge-2-endpoints.png)
+
+### Email & collaboration
+
+Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will familiar. 
+
+![The Emails and Collaboration quick launch bar](../../media/converge-3-email-and-collab.png)
+
+### Access and Reports
+
+View reports, change your settings, and modify user roles.
+
+![The Access and Reporting quicklaunch bar](../../media/converge-4-access-and-reporting.png)
 
 ## Advanced Hunting example for Microsoft Defender for Office 365
+Want to get started searching for email threats using advanced hunting? Try this: 
 
 The *[Getting Started](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) has logical early configuration chunks that look like this:
 
@@ -114,7 +147,8 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/Converge 13 Advanced Hunt an Email ZAP.PNG" alt-text="Under Hunting > Advanced Hunting, click Query, and then enter the Kusto query below.":::
+:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap
+.PNG" alt-text="Under Hunting > Advanced Hunting, click Query, and then enter the Kusto query below.":::
 
 The data from this query will appear in the results panel below the query itself. Results include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set. Results can also be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries.
 
