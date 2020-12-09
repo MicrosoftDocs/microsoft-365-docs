@@ -27,7 +27,7 @@ The new [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365
 
 If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the new Microsoft 365 Security Center.
 
-Use this URL to access the new security center: https://security.microsoft.com
+Access the new security center: [https://security.microsoft.com](https://security.microsoft.com).
 
 ## What's Changed
 
@@ -36,7 +36,7 @@ This table is a quick reference of Email & Collaboration areas where change has 
 
 |**Changed**  |**Unchanged**  |
 |---------|---------|
-|[Dashboard](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-365-security-center-dashboard?view=o365-worldwide)     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer?view=o365-worldwide)       |
+|[Dashboard](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-365-security-center-dashboard?view=o365-worldwide)     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer?view=o365-worldwide)       |
 |[Attack Simulator ](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-worldwide)   |  [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide)       |
 |[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center?view=o365-worldwide)    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
 |     |    [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
