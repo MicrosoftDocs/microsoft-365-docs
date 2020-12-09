@@ -258,8 +258,8 @@ In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/pow
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|On <p> `$true`|On <p> `$true`||
-|**Turn on Safe Documents for Office clients** <bt/><br/> _EnableSafeDocs_|On <p> `$true`|On <p> `$true`|This setting is only available with Microsoft 365 E5 or Microsoft 365 E5 Security licenses. For more information, see [Safe Documents in Microsoft Defender for Office 365](safe-docs.md).|
-|**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <bt/><br/> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|This setting is related to Safe Documents.|
+|**Turn on Safe Documents for Office clients** <p> _EnableSafeDocs_|On <p> `$true`|On <p> `$true`|This setting is only available with Microsoft 365 E5 or Microsoft 365 E5 Security licenses. For more information, see [Safe Documents in Microsoft Defender for Office 365](safe-docs.md).|
+|**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <p> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|This setting is related to Safe Documents.|
 |
 
 #### Safe Attachments policy settings

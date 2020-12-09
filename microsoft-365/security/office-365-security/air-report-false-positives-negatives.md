@@ -74,9 +74,9 @@ With Threat Explorer, your security operations team can find an email affected b
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the Security & Compliance Center.
+1. Go to <https://protection.office.com> and sign in. This takes you to the Security & Compliance Center.
 
-2. Go to **Threat management** > **Investigations**.
+2. Go to **Threat management** \> **Investigations**.
 
 3. In the list of investigations, select the **Open in new window** icon next to an item's ID.
 

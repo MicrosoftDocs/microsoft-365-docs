@@ -150,11 +150,11 @@ The guidelines presented below are best practices for sending outbound email mes
 
   The message body should have a clear indication of the offering, service, or product. For example, if a sender is sending out a bulk mailing for the Contoso company, the following is what the email From and Subject should resemble:
 
-  > From: marketing@contoso.com <br/> Subject: New updated catalog for the Christmas season!
+  > From: marketing@contoso.com <br> Subject: New updated catalog for the Christmas season!
 
   The following is an example of what not to do because it is not descriptive:
 
-  > From: user@hotmail.com <br/> Subject: Catalogs
+  > From: user@hotmail.com <br> Subject: Catalogs
 
 - **If sending a bulk mailing to many recipients and the message is in newsletter format, there should be a way of unsubscribing at the bottom of the message.**
 

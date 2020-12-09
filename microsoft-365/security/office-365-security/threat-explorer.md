@@ -351,14 +351,14 @@ You can get to the same location in the Real-time detections report as follows:
 
 Suppose you want to see malware detected in email, by Microsoft 365 technology. To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections).
 
-1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** > **Malware**.
+2. In the **View** menu, choose **Email** \> **Malware**.
 
    > [!div class="mx-imgBorder"]
    > ![View menu for Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Click **Sender**, and then choose **Basic** > **Detection technology**.
+3. Click **Sender**, and then choose **Basic** \> **Detection technology**.
 
    Your detection technologies are now available as filters for the report.
 
@@ -378,14 +378,14 @@ Suppose that you want to see phishing attempts through URLs in email, including 
 
 To review phish URLs in messages and clicks on URLs in phish messages, use the [Email > Phish](threat-explorer-views.md#email--phish) view of Explorer (or Real-time detections).
 
-1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** > **Phish**.
+2. In the **View** menu, choose **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
    > ![View menu for Explorer in phishing context](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Click **Sender**, and then choose **URLs** > **Click verdict**.
+3. Click **Sender**, and then choose **URLs** \> **Click verdict**.
 
 4. Select one or more options, such as **Blocked** and **Block overridden**, and then click the **Refresh** button that is on the same line as the options to apply that filter. (Don't refresh your browser window.)
 
@@ -425,14 +425,14 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 Suppose that you want to see email messages that users in your organization have reported as Junk, Not Junk, or Phishing by using the [Report Message add-in for Outlook and Outlook on the web](enable-the-report-message-add-in.md). To do this, use the [Email > Submissions](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
 
-1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** > **Submissions**.
+2. In the **View** menu, choose **Email** \> **Submissions**.
 
    > [!div class="mx-imgBorder"]
    > ![View menu for Explorer for emails](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Click **Sender**, and then choose **Basic** > **Report type**.
+3. Click **Sender**, and then choose **Basic** \> **Report type**.
 
 4. Select an option, such as **Phish**, and then click the **Refresh** button.
 
@@ -473,14 +473,14 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 - For the Security & Compliance Center, you must have one of the following roles assigned:
 
   - Organization Management
-  - Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
+  - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
+- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (<https://admin.protection.outlook.com/ecp/>) or [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
 
   - Organization Management
-  - View-only Organization Management
-  - View-Only Recipients role
+  - View-Only Organization Management
+  - View-Only Recipients
   - Compliance Management
 
 To learn more about roles and permissions, see the following resources:

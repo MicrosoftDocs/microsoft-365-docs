@@ -156,7 +156,9 @@ For detailed syntax and parameter information, see [New-QuarantineTag](https://d
 To create a quarantine tag using the _EndUserQuarantinePermissionsValue_ parameter, do the following steps:
 
 A. Store a quarantine permissions object in a variable using the **New-QuarantinePermissions** cmdlet.
-<br/>
+
+<p>
+
 B. Use the variable as the _EndUserQuarantinePermissions_ value in the **New-QuarantineTag** command.
 
 ##### Step A: Store a quarantine permissions object in a variable

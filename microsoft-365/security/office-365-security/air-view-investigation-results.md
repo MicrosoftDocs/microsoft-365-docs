@@ -48,7 +48,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details of an investigation
 
-1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
+1. Go to the Security & Compliance Center (<https://protection.office.com>) and sign in.
 
 2. Do one of the following actions:
 
@@ -72,7 +72,7 @@ Certain kinds of alerts trigger automated investigation in Microsoft 365. To lea
 
 Use the following procedure to view details about an alert that is associated with an automated investigation.
 
-1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
+1. Go to the Security & Compliance Center (<https://protection.office.com>) and sign in.
 
 2. Go to **Threat management** \> **Investigations**.
 

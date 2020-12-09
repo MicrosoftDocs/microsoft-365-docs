@@ -34,9 +34,9 @@ While viewing the [details of an investigation](air-view-investigation-results.m
 > [!IMPORTANT]
 > Appropriate permissions are required to approve or reject remediation actions. See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the the Security & Compliance Center.
+1. Go to <https://protection.office.com> and sign in. This takes you to the the Security & Compliance Center.
 
-2. Go to **Threat management** > **Investigations**.
+2. Go to **Threat management** \> **Investigations**.
 
 3. In the list of investigations, select an item in the **ID** column. 
 
