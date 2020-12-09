@@ -1,6 +1,6 @@
 ---
-title: Configure insider risk capabilities across Microsoft 365
-description: Learn how to configure insider risk capabilities across Microsoft 365.
+title: Information barriers in Microsoft 365
+description: Learn how to configure information barriers in Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -16,6 +16,8 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ---
+
+# Information barriers in Microsoft 365
 
 ### Optional: Enable and configure information barriers
 

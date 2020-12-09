@@ -1,12 +1,13 @@
 ---
-title: "Privileged access management"
-f1.keywords:
-- NOCSH
+title: "Learn about privileged access management"
+description: This article provides an overview about privileged access management in Microsoft 365, including answers to frequently asked questions (FAQs).
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: overview
+f1.keywords:
+- NOCSH
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,11 +20,9 @@ ms.collection:
 ms.custom: 
  - Ent_Solutions
  - seo-marvel-apr2020
-ms.assetid: 
-description: This article provides an overview about privileged access management in Microsoft 365, including answers to frequently asked questions (FAQs).
 ---
 
-# Privileged access management
+# Learn about privileged access management
 
 Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management in Microsoft 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 

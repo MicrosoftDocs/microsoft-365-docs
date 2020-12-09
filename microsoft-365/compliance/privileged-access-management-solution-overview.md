@@ -1,5 +1,5 @@
 ---
-title: Configure insider risk capabilities across Microsoft 365
+title: Privileged access management in Microsoft 365
 description: Learn how to configure insider risk capabilities across Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
 localization_priority: Normal
@@ -16,6 +16,8 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ---
+
+# Privileged access management in Microsoft 365
 
 ### Optional: Enable and configure privileged access management policies
 
