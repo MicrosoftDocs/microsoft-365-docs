@@ -64,7 +64,7 @@ To help protect your organization against insider risks, set up and deploy the f
 
 ## Illustrations with examples
 
-To help you plan an integrated strategy for implementing Microsoft 365 insider risk capabilities, download the *Microsoft 365 information protection and compliance capabilities* set of illustrations. For architecture illustrations of insider risk capabilities, see topics 5-7. Feel free to adapt these illustrations for your own use.
+To help you plan an integrated strategy for implementing Microsoft 365 insider risk capabilities, download the *Microsoft 365 information protection and compliance capabilities* set of illustrations. For insider risk capabilities, see the architecture illustration topics 5-7. Feel free to adapt these illustrations for your own use.
 
 | Item | Description |
 |:-----|:-----|
