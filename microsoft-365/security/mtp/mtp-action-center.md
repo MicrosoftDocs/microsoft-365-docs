@@ -95,7 +95,7 @@ As remediation actions are taken, they're listed on the History tab in the Actio
 | **Automated device action** | An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. |
 | **Automated email action** | An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. |
 | **Advanced hunting action** | Actions taken on devices or email with [advanced hunting](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview). |
-| **Explorer action** | Actions taken on email content with Explorer. |
+| **Explorer action** | Actions taken on email content with [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
 | **Manual live response action** | Actions taken on a device with live response. Examples include deleting a file, stopping a process, and removing a scheduled task. |
 | **Live response action** | Actions taken on a device with Microsoft Defender for Endpoint APIs. Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
 
