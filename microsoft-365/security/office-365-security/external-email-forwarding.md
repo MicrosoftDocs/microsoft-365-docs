@@ -39,11 +39,11 @@ You can use outbound spam filter policies to control automatic forwarding to ext
 For instructions on how to configure these settings, see [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
 
 > [!NOTE]
-> 
+>
 > - Disabling automatic forwarding disables any Inbox rules (users) or mailbox forwarding (admins) that redirect messages to external addresses.
-> 
+>
 > - Automatic forwarding of messages between internal users isn't affected by the settings in outbound spam filter policies.
-> 
+>
 > - You can see information about users that are automatically forwarding messages to external recipients in the [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md).
 
 ## How the outbound spam filter policy settings work with other automatic email forwarding controls
