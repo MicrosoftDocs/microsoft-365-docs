@@ -69,7 +69,7 @@ Your security operations team can operate more effectively and efficiently, beca
 
 ## Available actions
 
-As remediation actions are taken, they're listed on the History tab in the Action center. Such actions include the following:
+As remediation actions are taken, they're listed on the **History** tab in the Action center. Such actions include the following:
 
 - Collect investigation package 
 - Isolate device (this action can be undone) 
