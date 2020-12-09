@@ -6,6 +6,9 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Apps in Microsoft Managed Desktop
@@ -18,7 +21,7 @@ ms.collection: M365-modern-desktop
 
 Microsoft includes certain key apps along with the Microsoft 365 E3 or E5 license needed to participate in Microsoft Managed Desktop. However, even though we provide these apps, you still have certain responsibilities and actions to complete.
 
-You can also deploy additional non-Microsoft apps to your end users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline. If you have the expertise, you can migrate those apps you need yourself; alternatively, Microsoft Consulting Services (MCS) or non-Microsoft vendors will be happy to help you with a packaging and migration project. For more information about working with MCS, see [Working with Microsoft Consulting Services](apps-MCS.md).
+You can also deploy additional non-Microsoft apps to your users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline. If you have the expertise, you can migrate those apps you need yourself; alternatively, Microsoft Consulting Services (MCS) or non-Microsoft vendors will be happy to help you with a packaging and migration project. For more information about working with MCS, see [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## Apps provided by Microsoft
@@ -27,13 +30,13 @@ Included with your Microsoft Managed Desktop license are 64-bit versions of the 
 
 ### What Microsoft does to support the apps we provide
 
-Microsoft will provide full service for the deployment, update, and support for the included Microsoft 365 Apps for enterprise apps. Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but Microsoft Managed Desktop will provide deployment groups allowing your IT administrator to manage licenses and deploy these applications appropriately for your organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop support channels.
+Microsoft will provide full service for the deployment, update, and support for the included Microsoft 365 Apps for enterprise apps. Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but Microsoft Managed Desktop will provide deployment groups allowing your IT administrator to manage licenses and deploy these applications appropriately for your organization. Microsoft will support users of these applications through the Microsoft Managed Desktop support channels.
 
 ### What you need to do to support the apps we provide
 
 There are still certain things you need to do with these apps:
 
-- **Assign licenses** - You are responsible for obtaining and assigning the appropriate licenses to end users for Microsoft 365 Apps for enterprise.
+- **Assign licenses** - You are responsible for obtaining and assigning the appropriate licenses to users for Microsoft 365 Apps for enterprise.
 - **Add users to security groups** - If you're using Microsoft Project or Visio, your IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for reclaiming licenses from those users if they leave the company.
 - **Deploy Microsoft 365 Add-ons** - If you need any Add-ons for any of the Microsoft 365 Apps for enterprise apps, deploy them centrally like any other Windows 32 app. 
 

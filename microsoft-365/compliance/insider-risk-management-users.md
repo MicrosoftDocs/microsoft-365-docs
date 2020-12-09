@@ -3,7 +3,7 @@ title: Insider risk management Users dashboard
 description: Learn about insider risk management Users dashboard in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,7 +18,7 @@ ms.collection: m365-security-compliance
 
 The **Users dashboard** is an important tool in the insider risk management workflow and helps investigators and analysts have a more complete understanding of risk activities. This dashboard offers views and management features to meet administrative needs between the creating insider risk management policies and managing insider risk management cases.
 
-After users are added to insider risk management policies, background processes are automatically evaluating user activities for [triggering indicators](insider-risk-management-policies.md#indicators). After triggering indicators are present, user activities are assigned risk scores. Some of these activities may result in an insider risk alert, but some activities may not meet a minimum risk score level and an insider risk alert won't be created. The **Users dashboard** allows you to view users with these types of indicators and risk scores, as well users that have active insider risk alerts.
+After users are added to insider risk management policies, background processes are automatically evaluating user activities for [triggering indicators](insider-risk-management-settings.md#indicators). After triggering indicators are present, user activities are assigned risk scores. Some of these activities may result in an insider risk alert, but some activities may not meet a minimum risk score level and an insider risk alert won't be created. The **Users dashboard** allows you to view users with these types of indicators and risk scores, as well users that have active insider risk alerts.
 
 Additionally, there may be scenarios where you need to add temporarily users to insider risk policies after an unusual event is reported outside of the insider risk management workflow. The **Users dashboard** allows you to manually add a user to an insider risk policy for a specific amount of time and bypass the requirement for a user to have a triggering indicator. These users are always displayed in the Users dashboard when actively assigned to a policy.
 
@@ -34,13 +34,13 @@ The **Users dashboard** automatically displays all users with active insider ris
 
 ## Dashboard users with triggering indicators
 
-The **Users dashboard** automatically displays all users with triggering indicators, but that don't have an activity risk score that would create an insider risk activity. For example, a user with a reported resignation date is displayed because this event is a triggering indicator, but isn't an activity that has a risk score. Activities for these users are viewed by selecting the user in the **Users dashboard** and navigating to the **User activity** tab.
+The **Users dashboard** automatically displays all users with triggering indicators, but that don't have an activity risk score that would create an insider risk alert. For example, a user with a reported resignation date is displayed because this event is a triggering indicator but isn't an activity that has a risk score. Activities for these users are viewed by selecting the user in the **Users dashboard** and navigating to the **User activity** tab.
 
 ## Dashboard users added temporarily to policies
 
 The **Users dashboard** allows you to temporarily add users to an existing insider risk management policy after an unusual event outside of the insider risk management workflow. Temporarily adding users is also a way to add users to an insider risk management policy for testing the policy, even if a required connector isn't configured.
 
-When a user is manually added to a policy, the user activities for the previous 90 days are scored and added to the **User activity** timeline. For example, a user not currently in-scope in an insider risk policy and the user has data leak activities reported to the legal department in your organization. The legal department recommends that you configure new short-term monitoring requirements for the user. You can temporarily assign the user to your *Data leaks* policy for a designated length of time (activation window). All users added temporarily are displayed in the **Users dashboard** because triggering indicator requirements are waived.
+When a user is manually added to a policy, the user activities for the previous 90 days are scored and added to the **User activity** timeline. For example, you have a user not currently in-scope in an insider risk policy and the user has data leak activities reported to the legal department in your organization. The legal department recommends that you configure new short-term monitoring requirements for the user. You can temporarily assign the user to your *Data leaks* policy for a designated length of time (activation window). All users added temporarily are displayed in the **Users dashboard** because triggering indicator requirements are waived.
 
 >[!NOTE]
 >It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
@@ -99,3 +99,17 @@ Complete the following steps to add a user to an existing insider risk policy:
 
 >[!NOTE]
 >It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
+
+## Run automated tasks with Power Automate flows for a user
+
+Using recommended Power Automate flows, risk investigators and analysts can quickly take action to:
+
+- Notify users when they're added to an insider risk policy
+
+To run, manage, or create Power Automate flows for an insider risk management user:
+
+1. Select **Automate** on the user action toolbar.
+2. Choose the Power Automate flow to run, then select **Run flow**.
+3. After the flow has completed, select **Done**.
+
+To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).

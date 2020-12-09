@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,13 +26,15 @@ ms.custom:
 
 If you purchased a domain from a third-party hosting provider, you can connect it to Microsoft 365 by updating the DNS records in your registrar’s account.
 
-At the end of these steps, your domain will stay registered with the host that you purchased the domain from, but Microsoft 365 can use it for you email addresses (like user@yourdomain.com) and other services.
+At the end of these steps, your domain will stay registered with the host that you purchased the domain from, but Microsoft 365 can use it for your email addresses (like user@yourdomain.com) and other services.
 
 If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
 
 [Check the Domains FAQ](../setup/domains-faq.md) if you don't find what you're looking for below.
 
-## Step 1: Add a TXT record to verify you own the domain
+## Step 1: Add a TXT or MX record to verify you own the domain
+
+### Recommended: Verify with a TXT record
 
 First, you need to prove you own the domain you want to add to Microsoft 365.
 
@@ -51,6 +53,25 @@ Example:
 
 When Microsoft finds the correct TXT record, your domain is verified.
 
+### Verify with an MX record
+
+If your registrar doesn't support adding TXT records, you can verify by adding an MX record.
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) and select **Show all** > **Settings** > **Domains**.
+2. In a new browser tab or window, sign in to your DNS hosting provider, and then find where you manage your DNS settings (e.g., Zone File Settings, Manage Domains, Domain Manager, DNS Manager).
+3. Go to your provider's DNS Manager page, and add the MX record indicated in the admin center to your domain.
+
+This MX record's **Priority** must be the highest of all existing MX records for the domain. Otherwise, it can interfere with sending and receiving email. You should delete this records as soon as domain verification is complete.
+
+Make sure that the fields are set to the following values:
+
+- Record Type: `MX`
+- Priority: Set to the highest value available, typically `0`.
+- Host Name: `@`
+- Points to address: Copy the value from the admin center and paste it here.
+- TTL: `3600‎` (or your provider default)
+
+When Microsoft finds the correct MX record, your domain is verified.
 
 ## Step 2: Add DNS records to connect Microsoft services
 

@@ -22,7 +22,7 @@ description: Learn how to add search results or samples of those search results 
 
 # Add search results to a review set
 
-When you're satisfied with the results of a search and you're ready to review and analyze those search results, you can add them to a review set in the case. Copying the original data to the review set also facilitates the review and analysis process by providing you with advanced analytics tools such as themes detection, near-duplicate detection, and email thread identification. You can also add data from non-Microsoft 365 data sources to a review set so that you can review that data in addition to the data you collect from Microsoft 365. 
+When you're satisfied with the results of a search and you're ready to review and analyze those search results, you can add them to a review set in the case. Copying the original data to the review set also facilitates the review and analysis process by providing you with advanced analytics tools such as themes detection, near-duplicate detection, and email thread identification. You can also add data from non-Microsoft 365 data sources to a review set so that you can review that data in addition to the data you collect from Microsoft 365.
 
 When you add the results of a search to a review set (the review sets in a case are listed on the **Review sets** tab), the following things occur:
 
@@ -30,17 +30,27 @@ When you add the results of a search to a review set (the review sets in a case 
 
 - All items in the search results are copied from the original data source in the live services, and copied to a secure Azure Storage location in the Microsoft cloud.
 
-- All items (including the content and metadata) are re-indexed so that all data in the review set is fully searchable during the review of the case data. Re-indexing the data results in thorough and fast searches when you search the data in the review set during the case investigation.
+- All items (including the content and metadata) are reindexed so that all data in the review set is fully searchable during the review of the case data. Reindexing the data results in thorough and fast searches when you search the data in the review set during the case investigation.
+
+- A file encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's returned in the search results is decrypted when the email message and attached file are added to the review set. You can review and query the decrypted file in the review set. You have to be assigned the RMS Decrypt role to add decrypted email attachments to a review set. For more information, see [Decryption in Microsoft 365 eDiscovery tools](ediscovery-decryption.md).
 
 To add data to a review set, click a search on the **Searches** tab, and then click **Add results to review set** on the flyout page.
 
-![Adding data to a review set](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+You can add to an existing review set or create a new review set.  If adding to a new review set, specify the name and then click **Add** to display the flyout page.
 
-You can add to an existing review set or create a new review set.  If adding to a new review set, specify the name and then click **Add**.
+![Select a review set and configure collection options](../media/AeD_AddToReviewSet.png)
 
-![Select a review set](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+Adding data to a review set is a long-running process. This process includes gathering items from the original data sources in Microsoft 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then reindexing the items. You can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column. After the review set processing is completed, click the **Review sets** tab in the case, and then click the review set to start the process of filtering, reviewing, tagging, and exporting data in the review set.
 
-Adding data to a review set is a long-running process. This process includes gathering items from the original data sources in Microsoft 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then re-indexing the items. You can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column. After the review set processing is completed, click the **Review sets** tab in the case, and click the review set to start the process of filtering, reviewing, tagging, and exporting data in the review set.
+## Define options to scope your collection for review
+
+When you add the content of a search to an existing or new review set, you have the following options for how to collect the content for review:
+
+- **Include versions from SharePoint (beta)**: Use this option to enable the collection of all version of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
+
+- **Conversation retrieval options**: Items added to the review set are enabled for threaded conversations to help review content in context of the back and forth conversation. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
+
+- **Enable retrieval for modern attachments**: Use this option to include modern attachments or linked files in the collection for further review. For more information about the searchable properties related to modern attachments, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## Add a sample to a review set
 

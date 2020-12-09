@@ -7,18 +7,18 @@ brand: m365
 
 metadata:
   title: Microsoft 365 solution and architecture center # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Understand how to design the solution and architecture that is right for your organization # Required; article description that is displayed in search results. < 160 chars.
+  description: This help center will enable you to learn about IT training and how to design the solution and architecture that is right for your organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: o365-solutions #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: 
   - m365-security-compliance
-  - M365solutions
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   manager: bcarter
   audience: ITPro
   ms.date: 11/08/2019 #Required; mm/dd/yyyy format.
   localization_priority: Priority
+  ROBOTS: NOINDEX
 
 # highlightedContent section (optional)
 # Maximum of 8 items

@@ -1,5 +1,5 @@
 ---
-title: "Manage load sets"
+title: "Manage load sets in Data Investigations (preview)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,11 +14,10 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: ""
+ROBOTS: NOINDEX, NOFOLLOW
+description: "Learn about managing load sets in Data Investigations (preview)."
 ---
 
-# Manage load sets
+# Manage load sets in Data Investigations (preview)
 
 Content coming soon.

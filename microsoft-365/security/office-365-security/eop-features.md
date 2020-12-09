@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
@@ -16,19 +16,23 @@ description: "The following table provides a list of features that are available
 
 # EOP features
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 The following table provides a list of features that are available in the Exchange Online Protection (EOP) hosted email filtering service.
 
 > [!TIP]
 > The [Microsoft 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features. For a broader view about what features are available with the different EOP subscription plans, see [Exchange Online Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-|||
+****
+
+|Feature|Description|
 |---|---|
-|**Feature**|**Description**|
 |**Anti-spam protection**||
-|Inbound spam detection|For more information, see [Anti-spam protection in Microsoft 365](anti-spam-protection.md). <br/><br/> In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
+|Inbound spam detection|For more information, see [Anti-spam protection in Microsoft 365](anti-spam-protection.md). <p> In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |Outbound spam detection|Outbound anti-spam protection is always enabled if you use the service for sending outbound mail. For more information, see [Outbound spam protection](outbound-spam-controls.md).|
 |Backscatter protection|For more information, see [Backscatter and EOP](backscatter-messages-and-eop.md).|
-|Bulk mail filtering|EOP uses the bulk complaint threshold (BCL) to mark bulk email messages as spam. For more information, see the following topics: <br/><br/> [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) <br/> [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md) <br/> [Configure anti-spam policies](configure-your-spam-filter-policies.md)|
+|Bulk mail filtering|EOP uses the bulk complaint threshold (BCL) to mark bulk email messages as spam. For more information, see the following topics: <p> [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md) <p> [Configure anti-spam policies](configure-your-spam-filter-policies.md)|
 |Malicious URL block lists|EOP uses several URL block lists that help detect known malicious links within messages.|
 |Anti-phishing protection|EOP includes 750,000 domains of known spammers.|
 |Anti-spoofing protection|For more information, see [Anti-spoofing protection](anti-spoofing-protection.md).|
@@ -37,7 +41,7 @@ The following table provides a list of features that are available in the Exchan
 |Create custom anti-spam policies|For greater granularity, you can create custom anti-spam policies and apply them to specified users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (that is, the running order) of your custom policies. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
 |Configure the actions on spam-filtered messages|For example, you can delete content-filtered messages or send them to the Junk Email folder or the quarantine. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
 |International spam filtering|You can configure anti-spam filtering to filter messages written in specific languages or sent from specific countries or regions. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
-|Manage spam via Outlook or Outlook on the web (formerly known as Outlook Web App)|Admins and end users can create safe sender lists and blocked sender lists. For more information, see [About junk email settings in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook). <br/><br/> If you're using EOP to help protect on-premises mailboxes, be sure to use directory synchronization to help ensure that these settings are synced to the service. For more information about setting up directory synchronization, see "Use directory synchronization to manage mail users" in [Manage mail users in EOP](manage-mail-users-in-eop.md).|
+|Manage spam via Outlook or Outlook on the web (formerly known as Outlook Web App)|Admins and end users can create safe sender lists and blocked sender lists. For more information, see [About junk email settings in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook). <p> If you're using EOP to help protect on-premises mailboxes, be sure to use directory synchronization to help ensure that these settings are synced to the service. For more information about setting up directory synchronization, see "Use directory synchronization to manage mail users" in [Manage mail users in EOP](manage-mail-users-in-eop.md).|
 |Report false positives and false negatives to Microsoft.|For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).|
 |End-user spam quarantine notifications|For more information, see [End-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md) and [Configure end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications).|
 |View, find, and manage messages in the quarantine portal.|For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md) or [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md).|
@@ -88,3 +92,4 @@ The following table provides a list of features that are available in the Exchan
 |A geo-redundant global network of servers|EOP runs on a worldwide network of datacenters that are designed to help provide the best availability. For more information, see the "EOP data centers" section in [Exchange Online Protection overview](exchange-online-protection-overview.md).|
 |Message queuing when the on-premises server cannot accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](eop-queued-deferred-and-bounced-messages-faq.md).|
 |Office 365 Message Encryption available as an add-on service|For more information, see [Encryption in Office 365](../../compliance/encryption.md).|
+|

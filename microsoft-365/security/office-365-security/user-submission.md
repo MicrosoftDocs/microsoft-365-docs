@@ -1,29 +1,35 @@
 ---
-title: "Specify a mailbox for user submissions of spam and phishing messages"
+title: "User submissions policy"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 description: "Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users."
 ---
 
-# Specify a mailbox for user submissions of spam and phishing messages in Exchange Online
+# User submissions policy
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a mailbox to receive messages that users report as malicious or not malicious. When users submit messages using the various reporting options, you can use this mailbox to intercept messages (send to the custom mailbox only) or receive copies of messages (send to the custom mailbox and Microsoft). This feature works with the following message reporting options:
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
 
 - [Built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (formerly known as Outlook Web App)
+
+- [Built-in reporting in Outlook for iOS and Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
 
   > [!NOTE]
   > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user submissions here will override that setting and enable users to report messages in Outlook on the web again.
@@ -32,23 +38,32 @@ You can also configure third-party message reporting tools to forward messages t
 
 Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
 
+## Custom mailbox prerequisites
+
+Use the following articles to configure the prerequisites required so user reported messages go to your custom mailbox:
+
+- Skip spam filtering on the custom mailbox by creating an exchange mail flow rule to set the spam confidence level. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **-1**.
+
+- Turn off scanning attachments for malware in the custom mailbox. Use [Set up Safe Attachments policies in Defender for Office 365](set-up-atp-safe-attachments-policies.md) to create a Safe Attachments policy with the setting **Off** for **Safe Attachments unknown malware response**.
+
+- Turn off URL scanning on messages in the custom mailbox. Use [Set up Safe Links policies in Defender for Office 365](set-up-atp-safe-links-policies.md) to create a Safe Links policy with the setting **Off** for **Select the action for unknown potentially malicious URLs in messages**.
+
+- Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
+
+- Create a spam filter policy to disable zero-hour auto purge (ZAP) for spam and phishing in the custom mailbox. See [Use the Security & Compliance Center to create anti-spam policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) and clear the **On** checkboxes for **Spam ZAP** and **Phish ZAP**.
+
+- Disable the junk email rule in the custom mailbox. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Once disabled, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
+
+After you've verified that your mailbox meets all applicable prerequisites, [Use the Security & Compliance Center to configure the user submissions mailbox](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (in this article).
+
 ## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User submissions** page, use <https://protection.office.com/userSubmissionsReportMessage>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
-- You need to be assigned permissions before you can do the procedures in this topic:
-
-  - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
-
-    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-
-  - For read-only access to User submissions, you need to be a member of one of the following role groups:
-
-    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ## Use the Security & Compliance Center to configure the user submissions mailbox
 
@@ -56,7 +71,7 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 2. In the **User submissions** page that appears, select one of the following options:
 
-   a. **Enable the Report Message feature for Outlook (Recommended)**: Select this option if you use the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
+   1. **Enable the Report Message feature for Outlook (Recommended)**: Select this option if you use the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
       - **Customize the end-user confirmation message**: Click this link. In the **Customize confirmation message** flyout that appears, configure the following settings:
 
@@ -96,22 +111,22 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 Messages sent to custom mailboxes need to follow a specific submission mail format. The Subject (Envelope Title) of the submission should be in this format:
 
-`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
+`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-were SafetyAPIAction is one of the following integer values:
+where SafetyAPIAction is one of the following integer values:
 
 - 1: Junk
-- 2: NotJunk
-- 3: Phish
+- 2: Not junk
+- 3: Phishing
 
 In the following example:
 
-- The message is being reported as Phish.
+- The message is being reported as phishing.
 - The Network Message ID is 49871234-6dc6-43e8-abcd-08d797f20abe.
 - The Sender IP is 167.220.232.101.
 - The From address is test@contoso.com.
-- The message's subject line is "test phish submission"
+- The message's subject line is "test phishing submission"
 
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
+`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Messages that do not follow this format will not display properly in the Submissions portal.

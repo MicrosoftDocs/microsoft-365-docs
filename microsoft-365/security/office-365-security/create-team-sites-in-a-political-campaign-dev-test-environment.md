@@ -22,6 +22,9 @@ description: "Summary: Create public, private, sensitive, and highly confidentia
 
 # Create team sites in a political campaign dev/test environment
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
  **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment. 
   
 Use the instructions in this article to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution. These sites are described in detail on Topic 10, titled **SharePoint and OneDrive for Business**.
@@ -38,9 +41,9 @@ In this phase, you create the labels for the different levels of security for Sh
     
 2. From the **Microsoft Office Home** tab, click the **Admin** tile.
     
-3. From the new **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security &amp; Compliance**.
+3. From the new **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.
     
-4. From the new **Home - Security &amp; Compliance** tab of your browser, click **Classifications > Labels**.
+4. From the new **Home - Security & Compliance** tab of your browser, click **Classifications > Labels**.
     
 5. From the **Home > Labels** pane, click **Create a label**.
     
@@ -210,9 +213,9 @@ Next, configure the documents folder of the Campaign marketing team site for the
     
 Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on a SharePoint Online team site with the Sensitive label outside the organization. This DLP policy will apply to resources in the Campaign marketing site.
   
-1. From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.
+1. From the **Microsoft Office Home** tab in your browser, click the **Security & Compliance** tile.
     
-2. On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.
+2. On the new **Security & Compliance** tab in your browser, click **Data loss prevention > Policy**.
     
 3. In the **Data loss prevention** pane, click **+ Create a policy**.
     
@@ -320,9 +323,9 @@ Next, configure a DLP policy that blocks users when they share a document on a S
   
 1. If needed, use a browser on your local computer and sign in to the admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) with an account that has the Security Administrator or Company Administrator role.
     
-2. From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.
+2. From the **Microsoft Office Home** tab in your browser, click the **Security & Compliance** tile.
     
-3. On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.
+3. On the new **Security & Compliance** tab in your browser, click **Data loss prevention > Policy**.
     
 4. In the **Data loss prevention** pane, click **+ Create a policy**.
     
@@ -414,7 +417,7 @@ To protect a document with Azure Information Protection and this new label, you 
   
 [Configure groups and users for a political campaign dev/test environment](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
   
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 solution and architecture center
-description: Get the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant modern collaboration.
+description: Technical guidance for understanding, planning, and implementing integrated Microsoft 365 solutions for enterprise resource planning and secure collaboration.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -10,14 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
-- M365solutions
 ms.custom: 
 f1.keywords: NOCSH
+ROBOTS: NOINDEX
+
 ---
 
 # Microsoft 365 solution and architecture center
 
-This solution and architecture center brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant modern collaboration. In this center, you'll find:
+This solution and architecture center brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for enterprise resource planning and secure and compliant modern collaboration. In this center, you'll find:
 
 ![blocks](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[Foundational solution guidance](foundation-solutions-overview.md)**  These solutions provide a complete guidance for a specific business problem or need. They guide you through concepts and features and help you make the choices that lead to a functioning end result, from planning to implementation, to adoption. 
 

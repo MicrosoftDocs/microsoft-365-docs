@@ -1,20 +1,23 @@
-﻿---
+---
 title: "Collaborating with people outside your organization"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
+- m365solution-scenario
+- m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to configure Microsoft 365 for collaboration with people outside your organization."
+description: Learn how to configure Microsoft 365 apps like Teams, OneDrive, and SharePoint for collaboration with people outside your organization.
 ---
 
 # Collaborating with people outside your organization

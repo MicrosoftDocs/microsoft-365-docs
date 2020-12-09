@@ -3,7 +3,7 @@ title: Insider risk management policies
 description: Learn about insider risk management policies in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,7 +16,7 @@ ms.collection: m365-security-compliance
 
 # Insider risk management policies
 
-Insider risk management policies determine which employees are in-scope and which types of risk indicators are configured for alerts. You can quickly create a policy that applies to all users in your organization, or define individual users or groups for management in a policy. Policies support content priorities to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. Using templates, they include specific risk indicators and how much weight they are assigned within a policy, effectively determining the weight of each alert trigger in the policy. Policies windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated. The maximum policy limit is five active policies at the same time. However, you can configure additional policies and activate and deactivate policies as needed.
+Insider risk management policies determine which users are in-scope and which types of risk indicators are configured for alerts. You can quickly create a policy that applies to all users in your organization or define individual users or groups for management in a policy. Policies support content priorities to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. Using templates, you can select specific risk indicators and customize event thresholds for policy indicators, effectively customizing risk scores and level and frequency of alerts. Additionally, risk score boosters and anomaly detections help identify user activity that is of higher importance or more unusual. Policies windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated.
 
 ## Policy dashboard
 
@@ -33,103 +33,117 @@ The **Policy dashboard** allows you to quickly see the policies in your organiza
 
 ## Policy templates
 
-Insider risk management templates are pre-defined policy conditions that define the types of risk indicators monitored by a policy. Each policy must have a template assigned in the policy creation wizard before the policy is created. When you create a new insider risk policy, you'll choose from one of the following templates.
+Insider risk management templates are pre-defined policy conditions that define the types of risk indicators and risk scoring model used by the policy. Each policy must have a template assigned in the policy creation wizard before the policy is created. Insider risk management supports up to five policies for each policy template. When you create a new insider risk policy with the policy wizard, you'll choose from one of the following policy templates:
 
-### Departing employee data theft
+### Data theft by departing users
 
-When employees leave your organization, there are specific risk indicators typically associated with data theft by departing employees. This policy template prioritizes these indicators and focuses detection and alerts to this risk area. Data theft for departing employees may include downloading files from SharePoint Online, printing files, and copying data to personal cloud messaging and storage services near their employment resignation and end dates. This template prioritizes risk indicators relating to these activities and how they correlate with employee employment status.
+When users leave your organization, there are specific risk indicators typically associated with data theft by departing users. This policy template uses indicators for risk scoring and focuses detection and alerts to this risk area. Data theft for departing users may include downloading files from SharePoint Online, printing files, and copying data to personal cloud messaging and storage services near their employment resignation and end dates. This template starts scoring for risk indicators relating to these activities and how they correlate with user employment status.
 
 >[!IMPORTANT]
->When using this template, you must configure a Microsoft 365 HR connector to periodically import resignation and termination date information for employees in your organization. See the [Import data with the HR Connector](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization.
+>When using this template, you must configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
 
-### Data leaks
+### General data leaks
 
-Protecting data and preventing data leaks is a constant challenge for most organizations, particularly with the rapid grow of new data created by employees, devices, and services. Employees are empowered to create, store, and share information across services and devices that make managing data leaks increasingly more complex and difficult. Data leaks can include accidental oversharing of information outside your organization or data theft with malicious intent. In conjunction with an assigned Data Loss Prevention (DLP) policy, this template prioritizes real-time detection of suspicious SharePoint Online data downloads, file and folder sharing, printing files, and copying data to personal cloud messaging and storage services.
+Protecting data and preventing data leaks is a constant challenge for most organizations, particularly with the rapid grow of new data created by users, devices, and services. Users are empowered to create, store, and share information across services and devices that make managing data leaks increasingly more complex and difficult. Data leaks can include accidental oversharing of information outside your organization or data theft with malicious intent. In conjunction with an assigned Data Loss Prevention (DLP) policy, this template starts scoring real-time detections of suspicious SharePoint Online data downloads, file and folder sharing, printing files, and copying data to personal cloud messaging and storage services.
 
-When using **Data leaks** template, you must assign a DLP policy to trigger indicators in the insider risk policy for high severity alerts in your organization. Whenever a high severity alert is generated by a DLP policy rule is added to the Office 365 audit log, insider risk policies created with this template automatically examine the high severity DLP alert. If the alert contains an in-scope user defined in the insider risk policy, the alert will be processed by the insider risk policy as a new alert and assigned an insider risk severity and risk score. This alert can be evaluated as part of the insider risk management workflow and added to an insider risk management case if needed.
+When using a **Data leaks** template, you must assign a DLP policy to trigger indicators in the insider risk policy for high severity alerts in your organization. Whenever a high severity alert is generated by a DLP policy rule is added to the Office 365 audit log, insider risk policies created with this template automatically examine the high severity DLP alert. If the alert contains an in-scope user defined in the insider risk policy, the alert is processed by the insider risk policy as a new alert and assigned an insider risk severity and risk score. This policy allows you to evaluate this alert in context with other activities included in the case.
+
+#### Data leaks policy guidelines
 
 When creating or modifying DLP policies for use with insider risk management policies, consider the following guidelines:
 
-- Prioritize data exfiltration events and be selective when assigning **Incident reports** settings to *High* when configuring rules in your DLP policies. For example, emailing sensitive documents to a known competitor should be a *High* alert level exfiltration event. Over-assigning the *High* level in the **Incident reports** settings in other DLP policy rules can increase the noise in the insider risk management alert workflow and make it more difficult for your data investigators and analysts to properly evaluate these alerts. For example, assigning *High* alert levels to blocking activities in DLP policies makes it more challenging to evaluate truly risky user behavior and activities.
-- Make sure you understand and properly configure the in-scope users in both the DLP and insider risk management policies. Only users defined as in-scope for insider risk management policies using the **Data leaks** template will have high severity DLP policy alerts processed. Additionally, only users defined as in-scope in a rule for a high severity DLP alert will be examined by the insider risk management policy for consideration. It is important that you don’t unknowingly configure in-scope users in both your DLP and insider risk policies in a conflicting manner.
+- Prioritize data exfiltration events and be selective when assigning **Incident reports** settings to *High* when configuring rules in your DLP policies. For example, emailing sensitive documents to a known competitor should be a *High* alert level exfiltration event. Over-assigning the *High* level in the **Incident reports** settings in other DLP policy rules can increase the noise in the insider risk management alert workflow and make it more difficult for your data investigators and analysts to properly evaluate these alerts. For example, assigning *High* alert levels to access denial activities in DLP policies makes it more challenging to evaluate truly risky user behavior and activities.
+- Make sure you understand and properly configure the in-scope users in both the DLP and insider risk management policies. Only users defined as in-scope for insider risk management policies using the **Data leaks** template will have high severity DLP policy alerts processed. Additionally, only users defined as in-scope in a rule for a high severity DLP alert will be examined by the insider risk management policy for consideration. It is important that you don't unknowingly configure in-scope users in both your DLP and insider risk policies in a conflicting manner.
 
-     For example, if your DLP policy rules are scoped to only users on the Sales Team and the insider risk policy created from the **Data leaks** template has defined all users as in-scope, the insider risk policy will only actually process high severity DLP alerts for the users on the Sales Team. The insider risk policy won’t receive any high priority DLP alerts for users to process that aren’t defined in the DLP rules in this example. Conversely, if your insider risk management policy created from the **Data leaks** template is scoped to only users on the Sales Team and the assigned DLP policy is scoped to all users, the insider risk policy will only process high severity DLP alerts for members of the Sales Team. The insider risk management policy will ignore high severity DLP alerts for all users not on the Sales Team.
+     For example, if your DLP policy rules are scoped to only users on the Sales Team and the insider risk policy created from the **Data leaks** template has defined all users as in-scope, the insider risk policy will only actually process high severity DLP alerts for the users on the Sales Team. The insider risk policy won't receive any high priority DLP alerts for users to process that aren't defined in the DLP rules in this example. Conversely, if your insider risk management policy created from **Data leaks** templates is scoped to only users on the Sales Team and the assigned DLP policy is scoped to all users, the insider risk policy will only process high severity DLP alerts for members of the Sales Team. The insider risk management policy will ignore high severity DLP alerts for all users not on the Sales Team.
 
-- Make sure the **Incident reports** rule setting in the DLP policy used for this insider risk management template is configured for *High* severity level alerts. The *High* severity level is the triggering indicator and insider risk management alerts won't be generated from rules in DLP policies with the **Incident reports** field set at *Low* or *Medium*.
+- Make sure the **Incident reports** rule setting in the DLP policy used for this insider risk management template is configured for *High* severity level alerts. The *High* severity level is the triggering events and insider risk management alerts won't be generated from rules in DLP policies with the **Incident reports** field set at *Low* or *Medium*.
 
     ![DLP policy alert setting](../media/insider-risk-DLP-policy-high-severity.png)
 
      >[!NOTE]
-     >When creating a new DLP policy using the built-in templates, you’ll need to select the **Create or customize advanced DLP rules** option to configure the **Incident reports** setting for the *High* severity level.
+     >When creating a new DLP policy using the built-in templates, you'll need to select the **Create or customize advanced DLP rules** option to configure the **Incident reports** setting for the *High* severity level.
 
-Each insider risk management policy created from the **Data leaks** template can only have one DLP policy assigned. Consider creating a dedicated DLP policy that combines the different activities you want to detect and act as triggering indicators for  insider risk policies that use the **Data leaks** template.
+Each insider risk management policy created from the **Data leaks** template can only have one DLP policy assigned. Consider creating a dedicated DLP policy that combines the different activities you want to detect and act as triggering events for  insider risk policies that use the **Data leaks** template.
 
-See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization.
+See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies for your organization.
+
+### Data leaks by priority users (preview)
+
+Protecting data and preventing data leaks for users in your organization may depend on their position, level of access to sensitive information, or risk history. Data leaks can include accidental oversharing of highly sensitive information outside your organization or data theft with malicious intent. In conjunction with an assigned Data Loss Prevention (DLP) policy, this template starts scoring real-time detections of suspicious activity and result in an increased likelihood of insider risk alerts and alerts with higher severity levels. Priority users are defined in [priority user groups](insider-risk-management-settings.md#priority-user-groups-preview) configured in the insider risk management settings area.
+
+As with the **General data leaks template**, you must assign a DLP policy to trigger indicators in the insider risk policy for high severity alerts in your organization. Follow the Data leaks policy guidelines above when creating a policy using this template. Additionally, you will need to assign priority user groups created in **Insider risk management** > **Settings** > **Priority user groups** to the policy.
+
+### Data leaks by disgruntled users (preview)
+
+When users experience employment stressors, they may become disgruntled which may increase the chances of insider risk activity. This template starts scoring user activity when an indicator associated with disgruntlement is identified. Examples include performance improvement notifications, poor performance reviews, or changes to job level status. Data leaks for disgruntled users may include downloading files from SharePoint Online and copying data to personal cloud messaging and storage services near employment stressor events.
+
+When using this template, you must also configure a Microsoft 365 HR connector to periodically import performance improvement notifications, poor performance review status, or job level change information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
+
+### General security policy violations (preview)
+
+In many organizations, users have permissions to install software on their devices or to modify device settings to help with their tasks. Either inadvertently or with malicious intent, users may install malware or disable important security features that help protect information on their device or on your network resources. This policy template uses security alerts from Microsoft Defender for Endpoint to start scoring these activities and focus detection and alerts to this risk area. Use this template to provide insights for security policy violations in scenarios when users may have a history of security policy violations that may be an indicator of insider risk.
+
+You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+
+### Security policy violations by departing users (preview)
+
+Departing users, whether leaving on positive or negative terms, may be higher risks for security policy violations. To help protect against inadvertent or malicious security violations for departing users, this policy template uses Defender for Endpoint alerts to provide insights into security-related activities. These activities include the user installing malware or other potentially harmful applications and disabling security features on their devices. Policy indicators are activated after users have a resignation or termination date imported from the Microsoft 365 HR Connector as a triggering event.
+
+When using this template, you must configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
+
+You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+
+### Security policy violations by priority users (preview)
+
+Protecting against security violations for users in your organization may depend on their position, level of access to sensitive information, or risk history. Because security violations by priority users may have an outsized impact on your organization's critical areas, this policy template starts scoring on these indicators and uses Microsoft Defender for Endpoint alerts to provide insights into security-related activities for these users. These may include the priority users installing malware or other potentially harmful applications and disabling security features on their devices. Priority users are defined in priority user groups configured in the insider risk management settings area.
+
+You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center). Additionally, you will need to assign priority user groups created in **Insider risk management** > **Settings** > **Priority user groups** to the policy.
+
+### Security policy violations by disgruntled users (preview)
+
+Users that experience employment stressors may be at a higher risk for inadvertent or malicious security policy violations. These stressors may include the user being placed on a performance improvement plan, poor performance review status, or being demoted from their current position. This policy template starts risk scoring based these indicators and activities associated with these events for these users.
+
+When using this template, you must also configure a Microsoft 365 HR connector to periodically import performance improvement notifications, poor performance review status, or job level change information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
+
+You'll also need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### Offensive language in email
 
-Detecting and taking action to prevent offensive and abusive behavior is a critical component of preventing risk. Built-in offensive language classifiers in Microsoft 365 can scan sent email messages from Exchange Online mailboxes in your organization for different types of compliance issues. These classifiers use a combination of artificial intelligence and keywords to identify language in email likely to violate anti-harassment policies. Use this template to quickly create a policy that uses these classifiers to automatically detect email message content that may be considered abusive or offensive. Insider risk management uses classifiers that scan sent email messages for English language terms and sentiment for offensive language.
+>[!IMPORTANT]
+>Starting October 16, 2020, you will no longer be able to create policies using this template. Any active policies that use this template will work until they're permanently removed in January 2021. We are deprecating the Offensive Language built-in classifier that supports this template because it has been producing a high number of false positives. To address risk issues for offensive language, we recommend using Microsoft 365 [communication compliance](communication-compliance.md) policies. For more information about built-in classifiers, see [Getting started with trainable classifiers](classifier-get-started-with.md).
 
-## Policy settings
+Detecting and taking action to prevent offensive and abusive behavior is a critical component of preventing risk. Built-in classifiers in Microsoft 365 scan sent email messages from Exchange Online mailboxes in your organization for different types of compliance issues. These classifiers use a combination of artificial intelligence and keywords to identify language in email likely to violate anti-harassment policies. Use this template to quickly create a policy that uses these classifiers to automatically detect email message content that may be considered abusive or offensive. Insider risk management uses classifiers that scan sent email messages for English language terms and sentiment for offensive language.
 
-Insider risk settings apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
+### Policy template prerequisites and triggering events
 
-### Privacy
+Depending on the template you choose for an insider risk management policy, the triggering events and policy prerequisites vary. Triggering events are prerequisites that determine if a user is active for an insider risk management policy. If a user is added to an insider risk management policy but does not have a triggering event, the user activity is not evaluated by the policy unless they are manually added in the Users dashboard. Policy prerequisites are required items so that the policy receives the signals or activities necessary to evaluate risk.
 
-Protecting the privacy of users that have policy matches is important and can help promote objectivity in data investigation and analysis reviews for insider risk alerts. For users with an insider risk policy match, you can choose one of the following settings:
+The following table lists the triggering events and prerequisites for policies created from each insider risk management policy template:
 
-- **Show anonymized versions of usernames**: User names are anonymized to prevent admins, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized pseudonym such as 'AnonIS8-988' in all areas of the insider risk management experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the insider risk alert and case details will not be available when this option is chosen. However, usernames are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn off this setting, usernames will be displayed for all users that have current or past policy matches.
-- **Do not show anonymized versions of usernames**: Usernames are displayed for all current and past policy matches for alerts and cases. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
+| **Policy template** | **Triggering events for policies** | **Prerequisites** |
+| :------------------ | :--------------------------------- | :---------------- |
+| Data theft by departing users | Resignation or termination date indicator from HR connector | Microsoft 365 HR connector configured for termination and resignation date indicators |
+| General data leaks | Data leak policy activity that creates a High severity alert | DLP policy configured for High severity alerts |
+| Data leaks by priority users | Data leak policy activity that creates a High severity alert | DLP policy configured for High severity alerts <br><br> Priority user groups configured in insider risk settings |
+| Data leaks by disgruntled users | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators |
+| General security policy violations | Defensive evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
+| Security policy violations by departing users | Resignation or termination date indicators from HR connector | Microsoft 365 HR connector configured for termination and resignation date indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
+| Security policy violations by priority users | Defensive evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured <br><br> Priority user groups configured in insider risk settings |
+| Security policy violations by disgruntled user | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
+| Offensive language in email | Profanity, threats, or harassing language in email messages | Active Exchange Online subscription |
 
-### Indicators
+## Prioritize content in policies
 
-Insider risk policy templates define the type of risk activities that you want to detect and investigate. Each policy template is based on specific indicators that correspond to specific triggers and risk activities. All indicators are disabled by default, and you must select one or more policy indicators before configuring an insider risk management policy. 
+Insider risk management policies support specifying a higher priority for content depending where it is stored or how it is classified. Specifying content as a priority increases the risk score for any associated activity, which in turn increases the chance of generating a high severity alert. However, some activities won't generate an alert at all unless the related content contains built-in or custom sensitive info types or was specified as a priority in the policy.
 
-Alerts are triggered by policies when users perform activities related to policy indicators that meet a required threshold. Insider risk management uses two types of indicators:
+For example, your organization has a dedicated SharePoint site for a highly confidential project. Data leaks for information in this SharePoint site could compromise the project and would have a significant impact on its success. By prioritizing this SharePoint site in a Data leaks policy, risk scores for qualifying activities are automatically increased. This prioritization increases the likelihood that these activities generate an insider risk alert and raises the severity level for the alert.
 
-- **Triggering indicators**: Indicators that determine if a user is active for an insider risk management policy. If a user is added to an insider risk management policy that uses triggering indicators but does not have a triggering indicator activity, the user activity is not evaluated by the policy. For example, User A is added to a policy created from the *Departing employee data theft* policy template and the policy and HR connector are properly configured. Until User A has a termination date reported by the HR connector, User A activities aren't evaluated by this insider risk management policy for risk. Another example of a triggering indicator is if a user is in-scope for a *High* severity DLP policy alert.
-- **Insider risk policy indicators**: Indicators included in insider risk management policies used to determine a risk score for an in-scope user. These policy indicators are only activated after a triggering indicator occurs for a user. Some examples of insider risk policy indicators are when a user copies data to personal cloud storage services or portable storage devices, or if a user shares internal files and folders with unauthorized external parties.
+When you create an insider risk management policy in the policy wizard, you can choose from the following priorities:
 
-In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies. Triggering indicators cannot be modified for insider risk policy templates.
-
-To define the insider risk policy indicators that are enabled in all insider risk policies, navigate to **Insider risk settings** > **Indicators** and select one or more policy indicators. The indicators selected on the Indicators settings page cannot be individually configured when creating or editing an insider risk policy in the policy wizard.
-
->[!NOTE]
->It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
-
-### Policy timeframes
-
-Policy timeframes allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following policy timeframes are available:
-
-- **Activation window**: Available for all policy templates, the *Activation window* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Activation window* to 30 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Activation window* and the policy is active for that user for 30 days after the triggering event occurred.
-- **Past activity detection**: Available for all policy templates, the *Past activity detection* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 180 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past activity detection* to 90 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Past activity detection* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
-
-### Intelligent detections
-
-Intelligent detection settings help refine how the detections of risky activities are processed for alerts. In certain circumstances, you may need to define files types to ignore or you want to enforce a detection level for files to help define a minimum bar for alerts. When using offensive language policies, you may need to increase or decrease the detection sensitivity to control the amount of reported policy matches. Use these settings to control overall alert volume, file type exclusions, file volume limits, and the offensive language detection sensitivity.
-
-#### Anomaly detections
-
-Anomalous detections include settings for file type exclusions and file volume limits.
-
-- **File type exclusions**: To exclude specific file types from all insider risk management policy matching, enter file type extensions separated by commas. For example, to exclude certain types of music files from policy matches you may enter *aac,mp3,wav,wma* in the **File type exclusions** field. Files with these extensions would be ignored by all insider risk management policies.
-- **File volume cut off limit**: To define a minimum file level before activity alerts are reported in insider risk policies, enter the number of files. For example, you would enter '10' if you do not want to generate insider risk alerts when a user downloads 10 files or less, even if the policies consider this activity an anomaly.
-
-#### Offensive language detections
-
-To adjust the sensitivity of the offensive language classifier for policies using the *Offensive language in email* template, choose one of the following settings:
-
-- **Low**: The lowest sensitivity level with the broadest range for detection offensive language and sentiment. The probability of false positives for offensive language matching is elevated.
-- **Medium**: The mid-level sensitivity level with a balanced range for detection offensive language and sentiment. The probability of false positives for offensive language matching is average.
-- **High**: The highest sensitivity level with a narrow range for detection offensive language and sentiment. The probability of false positives for offensive language matching is low.
-
-#### Alert volume
-
-User activities detected by insider risk policies are assigned a specific risk score, which in turn determines the alert severity (low, medium, high). By default, we'll generate a certain amount of low, medium, and high severity alerts, but you can increase or decrease the volume to suit your needs. To adjust the volume of alerts for all insider risk management policies, choose one of the following settings:
-
-- **Fewer alerts**: You'll see all high severity alerts, fewer medium severity alerts, and no low severity ones. This setting level means you might miss some true positives.
-- **Default volume**: You'll see all high severity alerts and a balanced amount of medium and low severity alerts.
-- **More alerts**: You'll see all medium and high severity alerts and most low severity alerts. This setting level might result in more false positives.
+- **SharePoint sites**: Any activity associated with all file types in defined SharePoint sites is assigned a higher risk score. 
+- **Sensitive information types**: Any activity associated with content that contains [sensitive information types](sensitive-information-type-entity-definitions.md) are assigned a higher risk score.
+- **Sensitivity labels**: Any activity associated with content that has specific [sensitivity labels](sensitivity-labels.md) applied are assigned a higher risk score.
 
 ## Create a new policy
 
@@ -139,25 +153,30 @@ Complete the following steps to create a new policy:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard
-3. On the **Name your policy and choose a template** page, complete the following fields:
-    - **Name (required)**: Enter a friendly name for the policy
+3. On the **New insider risk policy** page, complete the following fields:
+    - **Name (required)**: Enter a friendly name for the policy.
     - **Description (optional)**: Enter a description for the policy.
     - **Choose policy template (required)**: Select one of the [policy templates](insider-risk-management-policies.md#policy-templates) to define the types of risk indicators are monitored by the policy.
 
     >[!IMPORTANT]
-    >If you select the *Data leaks* template, you'll need to configure at least one DLP policy that you'll assign later in the wizard. If you select the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template.
+    >Most policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see [Get started with insider risk management](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates).
 
 4. Select **Next** to continue.
-5. On the **Choose users and groups** page, select **Choose users or groups** to define which users are included in the policy or select **All users and mail-enabled groups** checkbox. Select **Next** to continue.
-6. On the **Specify what content to prioritize (optional)** page, you can assign higher risk scores to detected activity based on where the related content is located, what sensitive info is included, and what sensitivity labels are applied:
-    - SharePoint sites: Select **Choose SharePoint sites** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
-    - Sensitive info type: Select **Choose sensitive info types** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
-    - Sensitivity labels: Select **Choose sensitivity labels** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
+5. On the **Users** page, select **Add user or group** or **Choose Priority user groups** to define which users or priority user groups are included in the policy, depending on the policy template you've selected. Select **All users and mail-enabled groups** checkbox if applicable (if you haven't selected a priority user-based template). Select **Next** to continue.
+6. On the **Specify what content to prioritize (optional)** page, you can assign the sources to prioritize for increased risk scores. However, some activities won't generate an alert at all unless the related content contains built-in or custom sensitive info types or was specified as a priority on this page:
+    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
+    - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 7. Select **Next** to continue.
-8. On the **Alert indicators** page, you'll see the indicators that you've defined on the **Insider risk settings** > **Indicators** page. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
-9. On the **Select monitoring window** page, you'll see the [monitoring window conditions](insider-risk-management-policies.md#policy-timeframes) for the policy that you've configured in insider risk settings. If you've selected the *Departing employee data theft* policy template, you can select the *Check for activity post termination* checkbox to detect activity after the termination date imported from the Microsoft 365 HR Connector.
-10. Select **Next** to continue.
-11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
+8. On the **Select policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. If you selected a *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list to enable triggering indicators for the policy. Select the indicators you want to apply to the policy. If you prefer not to use the default policy threshold settings for these indicators, disable the **Use default thresholds recommended by Microsoft** and enter the threshold values for each selected indicator. If you've selected at least one *Office* or *Device* indicator, select the **Risk score boosters** as appropriate. Risk score boosters are only applicable for selected indicators.
+
+    >[!IMPORTANT]
+    >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies on the **Insider risk management** > **Settings** > **Policy indicators** page.
+
+9. Select **Next** to continue.
+10. On the **Policy timeframes** page, you'll see the [activation window conditions](insider-risk-management-settings.md#policy-timeframes) for the policy that on the **Insider risk settings** > **Policy timeframes** page.
+11. Select **Next** to continue.
+12. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
 ## Update a policy
 
@@ -170,17 +189,24 @@ Complete the following steps to manage an existing policy:
 3. On the policy details page, select **Edit policy**
 4. In the policy wizard, you cannot edit the following fields:
     - **Name**: The friendly name for the policy
-    - **Select playbook**: The template used to define the types of risk indicators monitored by the policy.
-5. Enter a new description for the policy in the **Description** field. Select **Next** to continue.
-6. On the **Choose users and groups** page, select **Choose users or groups** to define which users are included in the policy or select **All users and mail-enabled groups** checkbox. Select **Next** to continue
-7. On the **Specify what content to prioritize (optional)** page, update the sources to prioritize for risky user activities:
-    - SharePoint sites: Select **Choose SharePoint sites** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
-    - Sensitive info type: Select **Choose sensitive info types** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
-    - Sensitivity labels: Select **Choose sensitivity labels** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
-8. Select **Next** to continue.
-9. On the **Alert indicators** page, you'll see the indicators that you've defined on the **Insider risk settings** > **Indicators** page. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
-10. On the **Select monitoring window** page, you'll see the [monitoring window conditions](insider-risk-management-policies.md#policy-timeframes) for the policy that you've configured in insider risk settings. If you've selected the *Departing employee data theft* policy template, you can select the *Check for activity post termination* checkbox to detect activity after the termination date imported from the Microsoft 365 HR Connector.
-11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to update and activate the changes in the policy.
+    - **Choose policy template**: The template used to define the types of risk indicators monitored by the policy.
+5. Enter a new description for the policy in the **Description** field. 
+6. Select **Next** to continue.
+7. On the **Users** page, select **Add user or group** or **Choose Priority user groups** to define which users or priority user groups are included in the policy, depending on the policy template you've selected. Select **All users and mail-enabled groups** checkbox if applicable (if you haven't selected a priority user-based template). Select **Next** to continue.
+8. On the **Specify what content to prioritize (optional)** page, you can assign the sources to prioritize for increased risk scores. However, some activities won't generate an alert at all unless the related content contains built-in or custom sensitive info types or was specified as a priority on this page:
+    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
+    - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
+9. Select **Next** to continue.
+10. On the **Select policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. If you selected a *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list to enable triggering indicators for the policy. Select the indicators you want to apply to the policy. If you prefer not to use the default policy threshold settings for these indicators, disable the **Use default thresholds recommended by Microsoft** and enter the threshold values for each selected indicator. If you've selected at least one *Office* or *Device* indicator, select the **Risk score boosters** as appropriate. Risk score boosters are only applicable for selected indicators.
+
+    >[!IMPORTANT]
+    >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies on the **Insider risk management** > **Settings** > **Policy indicators** page.
+
+11. Select **Next** to continue.
+12. On the **Policy timeframes** page, you'll see the [activation window conditions](insider-risk-management-settings.md#policy-timeframes) for the policy that on the **Insider risk settings** > **Policy timeframes** page.
+13. Select **Next** to continue.
+14. On the **Review** page, review the settings you've updated for the policy. Select **Edit** to change any of the policy values or select **Submit** to update and activate the policy.
 
 ## Delete a policy
 
@@ -190,6 +216,6 @@ Complete the following steps to manage an existing policy:
 To delete an existing insider risk management policy, complete the following steps:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
-2. On the policy dashboard, select the policy you want to manage.
+2. On the policy dashboard, select the policy you want to delete.
 3. Select **Delete** on the dashboard toolbar.
 4. On the **Delete** dialog, Select **Yes** to delete the policy, or select **Cancel** to close the dialog.

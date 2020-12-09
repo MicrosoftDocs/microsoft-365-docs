@@ -1,15 +1,18 @@
 ---
 title: Microsoft Managed Desktop devices
-description:  This topic lists the device specifications used in Microsoft Managed Desktop.
+description:  This topic lists the specifications for devices approved for Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Microsoft Managed Desktop devices 
 
-Microsoft Managed Desktop regularly evaluates devices to be included in the service. This topic outlines the requirements for a device to be enrolled in Microsoft Managed Desktop and lists the specific devices that are currently supported.
+Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article outlines the requirements for a device to be enrolled in Microsoft Managed Desktop and lists the specific devices that are currently supported.
 
 For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
 
@@ -23,42 +26,52 @@ The links to devices here are for your reference only. If you want to order devi
 >Devices can be added to this table at any time, but we will provide 90 days notice for any changes affecting archive or retirement date. The devices most recently added are marked with **\***.
 
 
-**Microsoft Managed Desktop Devices**
+## Microsoft Managed Desktop Devices
 
+### Dell
 
 | Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Precision 3530](https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 22, 2020  | May 22, 2023 |
-| [Dell Latitude 5300](https://www.dell.com/en-us/work/shop/laptops/13-5300/spd/latitude-13-5300-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | June 1, 2021  | June 1, 2024  |
-| **\*[Dell Latitude 5300 2-in-1](https://www.dell.com/en-us/work/shop/laptops/13-5300-2-in-1/spd/latitude-13-5300-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| [Dell Latitude 5400](https://www.dell.com/en-us/work/shop/laptops/14-5400/spd/latitude-14-5400-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | June 1, 2021  | June 1, 2024  |
-| [Dell Latitude 5500](https://www.dell.com/en-us/work/shop/laptops/15-5500/spd/latitude-15-5500-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | June 1, 2021  | June 1, 2024  |
-| [Dell Latitude 7200 2-in-1](https://www.dell.com/en-us/work/shop/laptops/12-7200-2-in-1/spd/latitude-12-7200-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| [Dell Latitude 7300](https://www.dell.com/en-us/work/shop/laptops/13-7300/spd/latitude-13-7300-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| [Dell Latitude 7400](https://www.dell.com/en-us/work/shop/laptops/new-14/spd/latitude-14-7400-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| **\*[Dell Latitude 7400 2-in-1](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| **\*[Dell Optiplex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop)** | 128 GB / Intel i3 / 8 GB RAM | None | May 1, 2022  | May 1, 2025  |
-| [HP EliteBook 830 / 840 / 850 G6 Notebook PC](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
-| [HP EliteBook x360 830 G6 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
-| **\*[HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV | July 31, 2021 | July 31, 2024 |
-| **\*[HP EliteBook x360 1030 G4 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV | Feb 28, 2021 | Feb 28, 2024 |
-|[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV| Nov 30, 2020 | Nov 30, 2023 |
-| [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | Jul 18, 2020 | Jul 18, 2023 |
-| [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | Jul 18, 2020 | Jul 18, 2023 |
-| [HP EliteOne 800 G4 23.8in AIO](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | Jul 18, 2020 | Jul 18, 2023 |
-| **\*[HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Dec 31, 2020 | Dec 31, 2023 |
-| [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV, IR camera or fingerprint reader required | Jun 6, 2020 | Jun 6, 2023 |
-| [HP Z2 Mini G4 Workstation](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8QR48AV| Jan 31, 2021 | Jan 31, 2024 |
-|[HP ZBook 14u/15u G6 Mobile Workstation](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS02AV, IR camera required | Nov 30, 2020 | Nov 30, 2023 |
+| [Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022  | April 28, 2025 |
+| [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025  |
+| [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025 |
+| [Dell Latitude 7310 / 7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 4, 2022  | May 4, 2025  |
+| [Dell Latitude 7410 / 7410 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 19, 2022  | May 19, 2025  |
+| [Dell Latitude 9410 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 5, 2022  | May 5, 2025  |
+| [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 5, 2022  | May 5, 2025  |
+| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB / Intel i3 / 8 GB RAM | None | May 27, 2022  | May 27, 2025  |
+| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB / Intel i3 / 8 GB RAM | None | May 15, 2022  | May 15, 2025  |
+| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB / Intel i5 / 8 GB RAM | None | May 27, 2022  | May 27, 2025  |
+
+### HP
+
+| Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
+|----------|----------------|---------------------------|----------------|--------------------|
+| [HP EliteBook 830 / 840 / 850 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Nov 30, 2021 | Nov 30, 2024 |
+| [HP EliteBook x360 830 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Nov 30, 2021 | Nov 30, 2024 |
+| [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV | July 31, 2021 | July 31, 2024 |
+| [HP EliteBook x360 1030 / 1040 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8XW08AV | Aug 31, 2021 | Aug 31, 2024 |
+| [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Mar 31, 2021 | Mar 31, 2024 |
+| **\*[HP EliteOne 800 G6 24/27 All-in-One PC ](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 GB RAM | SKU with 9XM14AV | Jun 30, 2022 | Jun 30, 2025 |
+| **\*[HP EliteDesk 800 G6 Desktop Mini PC ](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256 / Intel i5 / 8 GB RAM | SKU with 9XM14AV | Jun 30, 2022 | Jun 30, 2025 |
+| [HP Z2 Mini G5 Workstation](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8QR48AV| Dec 31, 2021 | Dec 31, 2024 |
+| **\*[HP ZBook Firefly 14/15 G7 Mobile Workstation](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ22AV, IR camera required | Nov 30, 2021 | Nov 30, 2024 |
+
+### Microsoft
+
+| Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
+|----------|----------------|---------------------------|----------------|--------------------|
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
 | [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
+| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 12, 2022 | Oct 12, 2025 |
 | [Surface Laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
-| **\*[Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
+| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
-| **\*[Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 
 In addition, the device must also meet these criteria:     
 
-- Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
+- If a specific SKU is listed in the device requirements, make sure you use it when you order. This ensures that devices comply with Microsoft Managed Desktop software requirements. 
 - Not have completed the Windows first-run experience.
 - Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
 

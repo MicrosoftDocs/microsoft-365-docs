@@ -43,6 +43,6 @@ We have listened to your valuable feedback on OneDrive integration during our pr
 - [Get started with data classification (preview)](data-classification-overview.md)
 - [View label activity (preview)](data-classification-activity-explorer.md)
 - [View labeled content (preview)](data-classification-content-explorer.md)
-- [Sensitivity labels](sensitivity-labels.md)
-- [Retention labels](labels.md)
+- [Learn about sensitivity labels](sensitivity-labels.md)
+- [Learn about retention policies and retention labels](retention.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)

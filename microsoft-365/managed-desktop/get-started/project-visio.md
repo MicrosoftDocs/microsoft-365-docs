@@ -4,6 +4,7 @@ description: Info on installing Microsoft Project or Microsoft Visio on Microsof
 keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft Visio
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
@@ -23,26 +24,17 @@ Admins should verify that they meet these prerequisites:
 - **Company Portal** -  The Company Portal must be available in your tenant for your users to install these applications. If the Company Portal isn’t deployed in your tenant, see [Company Portal](company-portal.md).
 
 ## Deploy Project and Visio for Microsoft Managed Desktop devices
-After you submit your support request, Microsoft Managed Desktop will create three Azure AD groups and three application deployments through Microsoft Intune to deploy the apps to your tenant.  
+Microsoft Managed Desktop will add Microsoft Project and Microsoft Visio as two Win32 Applications in Microsoft Intune. We will also create two groups in Azure Active Directory which will be assigned to the corresponding application with the "Available" intent. 
 
 **To deploy Project and Visio**
-1. **File a support request** IT administrators need to file a support request to make these applications available their users. For information on contacting Microsoft Managed Desktop, see [Admin support for Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
-2. **Assign users to new Azure AD groups** Microsoft Managed Desktop will create 3 Azure AD groups in your tenant and 3 corresponding application deployments. IT admins need to assign the users to the appropriate groups.
-
->[!NOTE]
->Assign users to only one of these Azure AD groups. 
+Add the user to the appropriate group and the application will become available in the Company Portal. It may take a few minutes to sync, but then your users can install the apps from Company Portal. 
 
 Azure AD Group name | Which users to assign?   
  --- | ---
 Modern Workplace-Office-Project_Install | Users needing Project
 Modern Workplace-Office-Visio_Install | Users needing Visio
 
-Once assigned to these groups, applications will be available in the Company Portal. It may take a few minutes to sync, but then your users can install the apps from Company Portal. 
-
 ## Communicate changes
 It’s important for IT administrators to let their users know how to install Project and Visio. This includes: 
 - Notifying users when these applications are available to them. 
 - Instructions on how to install these applications from the Company Portal.
-
->[!NOTE]
->Users must close all Office applications before installing Microsoft Project or Microsoft Visio from Company Portal. 

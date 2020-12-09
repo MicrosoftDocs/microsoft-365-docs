@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -77,11 +77,11 @@ The charges pages show the cost broken down by product. For Azure customers, the
 Line items details vary depending on the type of product you're charged for. For example, for Azure products, the amount of Azure credits applied is shown. Seat-based products show a unit price and
 quantity. The invoice details show the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
 
-    `Total = Charges - Azure Credit + Tax`
+> Total = Charges - Azure Credit + Tax
 
 The total amount due for each service family is calculated by subtracting Azure credits from credits/charges, and adding tax:
 
-    `Total = Charges/Credits - Azure Credit + Tax`
+> Total = Charges/Credits - Azure Credit + Tax
 
 If there are Azure charges on your invoice that you would like more details on, see [Review your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 

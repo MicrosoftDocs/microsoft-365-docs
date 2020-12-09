@@ -34,11 +34,11 @@ description: "Learn how to set up the release option for new product and feature
 
 ::: moniker-end
 
-With Microsoft 365, you receive new product updates and features as they become available instead of doing costly updates every few years. You can manage how your organization receives these updates. For example, you can sign up for an early release so that your organization receives updates first. You can designate that only certain individuals receive the updates. Or, you can remain on the default release schedule and receive the updates later. This article explains the different release options and how you can use them for your organization.
-  
 > [!IMPORTANT]
-> The Microsoft 365 updates described in this article apply to Microsoft 365, SharePoint Online, and Exchange Online. They do not apply to Skype for Business and related services. These release options are targeted, best effort ways to release changes to Microsoft 365 but cannot be guaranteed at all times or for all updates. 
-  
+> The Microsoft 365 updates described in this article apply to Microsoft 365, SharePoint Online, and Exchange Online. These release options are targeted, best effort ways to release changes to Microsoft 365 but cannot be guaranteed at all times or for all updates. They do not apply to Microsoft 365 Apps, Skype for Business, Microsoft Teams, and related services. For information about release options for Microsoft 365 Apps, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
+
+With Microsoft 365, you receive new product updates and features as they become available instead of doing costly updates every few years. You can manage how your organization receives these updates. For example, you can sign up for an early release so that your organization receives updates first. You can designate that only certain individuals receive the updates. Or, you can remain on the default release schedule and receive the updates later. This article explains the different release options and how you can use them for your organization.
+
 ## How it works - release validation
 
 Any new release is first tested and validated by the feature team, then by the entire Microsoft 365 feature team, followed by all of Microsoft. After internal testing and validation, the next step is a **Targeted release** (formerly known as First release) to customers who opt in. At each release ring, Microsoft collects feedback and further validates quality by monitoring key usage metrics. This series of progressive validation is in place to make sure the worldwide-release is as robust as possible. The releases are pictured in the following figure. 

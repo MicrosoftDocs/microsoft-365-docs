@@ -29,13 +29,19 @@ productDirectory:
     - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Practical guidance and go to market resources for partners for securing remote work.
-      url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+      url: https://aka.ms/SMBSecurityKit
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Azure AD Premium P1 is coming to Microsoft 365 Business Premium!
+      summary: Azure AD Premium P1 is now included in Microsoft 365 Business Premium!
       url: https://aka.ms/aadp1smbblog
+    # Card
+    - title: Watch the partner webinar 
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary:  Driving profit and reducing risk in the remote work world!
+      url: https://aka.ms/GrowwithMicrosoft365 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -88,9 +94,15 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
           itemType: download
           text: Tech fundamentals
-        - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
+        - url: https://aka.ms/SMBSecurityKit
           itemType: download
-          text: Checklist for securing remote work
+          text: Secure Remote Work kit
+        - url: https://cct.transform.microsoft.com/
+          itemType: deploy
+          text: Customer Consulting Tool
+        - url: https://vc.transform.microsoft.com/
+          itemType: learn
+          text: Value Calculator
   # Card
     - title: Manage users
       links:
@@ -182,7 +194,7 @@ conceptualContent:
         - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
           itemType: overview
           text: Intune App Protection Policies report
-        - url: https://docs.microsoft.com/office365/enterprise/view-service-health
+        - url: https://docs.microsoft.com/microsoft-365/enterprise/view-service-health
           itemType: how-to-guide
           text: Health monitoring alerts
       # footerLink (optional)

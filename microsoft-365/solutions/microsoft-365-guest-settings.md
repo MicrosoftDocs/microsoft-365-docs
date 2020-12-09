@@ -2,14 +2,16 @@
 title: "Microsoft 365 guest sharing settings reference"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
+- m365initiative-externalcollab
 f1.keywords: NOCSH
 ms.custom: 
 - seo-marvel-apr2020
@@ -32,7 +34,7 @@ Azure Active Directory is the directory service used by Microsoft 365. The Azure
 
 ### Organizational relationships settings
 
-**Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > Organizational relationships > Settings
+**Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > External Identities > External collaboration settings
 
 ![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -55,7 +57,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 ### Sharing
 
-**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Settings > Security & privacy tab > Sharing
+**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Org Settings > Security & privacy tab > Sharing
 
 ![Screenshot of the security and privacy guest sharing setting in the  Microsoft 365 admin center](../media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -71,7 +73,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
-|Let group members outside your organization access group content|On|When set to **On**, guests can access groups content; when set to **Off**, they can't. This setting should be **On** for any scenario where guest users are interacting with Microsoft 365 Groups or Teams.|
+|Let group members outside your organization access group content|On|When set to **On**, guests can access groups content; when set to **Off**, they can't. This setting should be **On** for any scenario where guests are interacting with Microsoft 365 Groups or Teams.|
 |Let group owners add people outside your organization to groups|On|When **On**, Owners of Microsoft 365 Groups or Teams can invite new guests to the group. When **Off**, owners can only invite guests who are already in the directory.|
 
 These settings are at the organization level. See [Create settings for a specific group](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) for information about how to change these settings at the group level by using PowerShell.
@@ -187,7 +189,7 @@ If you want to limit who can share with guests in SharePoint and OneDrive, you c
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
-|Let only users in selected security groups share with authenticated external users|Off|When **On**, only the people in the specified security groups can share with external users. Only *Specific people* links are available. *Anyone* sharing is effectively disabled unless **Let only users in selected security groups share with authenticated external users and using anonymous links** is also **On**|
+|Let only users in selected security groups share with authenticated external users|Off|When **On**, only the people in the specified security groups can share with people outside the organization. Only *Specific people* links are available. *Anyone* sharing is effectively disabled unless **Let only users in selected security groups share with authenticated external users and using anonymous links** is also **On**|
 |Let only users in selected security groups share with authenticated external users and using anonymous links|Off|When **On**, only the people in the specified security groups can share with guests. Both *Anyone* and *Specific people* links are available.|
 
 Both of these settings can be used at the same time. If a user is in security groups specified for both settings, then the greater permission level prevails (*Anyone* plus *Specific user*). Nested security groups are supported.

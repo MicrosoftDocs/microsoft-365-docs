@@ -22,12 +22,16 @@ landingContent:
   # Card (optional)
   - title: Monitor the status of our service
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft 365 Usage reports - overview
+            url: ../activity-reports/activity-reports.md
+          - text: Productivity score - overview
+            url: ../productivity/productivity-score.md
+          - text: Microsoft 365 Usage analytics - PowerBI
+            url: ../usage-analytics/usage-analytics.md
       - linkListType: how-to-guide
         links:
-          - text: Monitor user activity by using reports
-            url: ../activity-reports/activity-reports.md
-          - text: Monitor usage analytics
-            url: ../usage-analytics/usage-analytics.md
           - text: Enable usage analytics
             url: ../usage-analytics/enable-usage-analytics.md
           - text: Change your organization contact info
@@ -62,6 +66,8 @@ landingContent:
             url: centralized-deployment-of-add-ins.md
           - text: Install and manage add-ins by using Centralized Deployment
             url: manage-deployment-of-add-ins.md
+          - text: Manage Office Scripts settings
+            url: manage-office-scripts-settings.md            
    # Card
   - title: Microsoft Teams
     linkLists:

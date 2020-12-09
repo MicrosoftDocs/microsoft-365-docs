@@ -14,9 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn how to use the Non-Office 365 content import feature to upload non-Office 365 documents into evidence in a data investigation.
+description: "Learn how to use the Non-Office 365 content import feature to upload non-Office 365 documents into evidence in a data investigation."
 ms.custom: 
  - seo-marvel-mar2020
  - seo-marvel-apr2020

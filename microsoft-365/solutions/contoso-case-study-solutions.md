@@ -13,7 +13,6 @@ localization_priority: Priority
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management
-- M365solutions
 ms.custom:
 description: How a fictional but representative global organization has deployed Microsoft 365 solutions.
 ---
@@ -27,6 +26,8 @@ The overall goal of Contoso for Microsoft 365 Enterprise is to accelerate their 
 First, learn about the [Contoso Corporation](../enterprise/contoso-overview.md), their worldwide offices, and the design considerations that were addressed when they deployed Microsoft 365 Enterprise.
 
 Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
+
+- [COVID-19 response and infrastructure for remote and onsite work](contoso-remote-onsite-work.md)
 
 - [An isolated team for a top-secret project](contoso-team-for-top-secret-project.md)
 

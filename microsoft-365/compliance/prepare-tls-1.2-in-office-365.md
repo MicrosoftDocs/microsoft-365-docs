@@ -1,23 +1,21 @@
 ---
 title: Preparing for TLS 1.2 in Office 365 and Office 365 GCC
 description: How to prepare to use TLS 1.2 for all client-server and browser-server combinations in Office 365 and Office 365 GCC after support for TLS 1.0 and 1.1 is disabled.
-author: simonxjx
-manager: dcscontentpm
+author: workshay  
+manager: laurawi
 localization_priority: Normal
 search.appverid: 
 - MET150
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: v-six
+ms.author: shmehta
+ms.reviewer: krowley
 appliesto:
 - Office 365 Business
 ---
 
 # Preparing for TLS 1.2 in Office 365 and Office 365 GCC
-
-> [!IMPORTANT]
-> The world is in the middle of a pandemic, and we at Microsoft are aware of the impact on our customers and partners. To lighten the burden on our commercial customers, we have temporarily halted any deprecation enforcement of TLS 1.0 and 1.1. An update will be sent on a revised timeline after the current crisis stabilizes. (This article is revised to reflect the change.)
 
 ## Summary
 
@@ -29,7 +27,7 @@ For information about how to remove TLS 1.0 and 1.1 dependencies, see the follo
 
 ## More information
 
-We have already begun deprecation of TLS 1.0 and 1.1 as of January 2020. Any clients, devices, or services that connect to Office 365 through TLS 1.0 or 1.1 in our DoD or GCC High instances are unsupported. For our commercial customers of Office 365, we will halt any deprecation enforcement of TLS 1.0 and 1.1 until the situation regarding COVID-19 stabilizes.
+We have already begun deprecation of TLS 1.0 and 1.1 as of January 2020. Any clients, devices, or services that connect to Office 365 through TLS 1.0 or 1.1 in our DoD or GCC High instances are unsupported. For our commercial customers of Office 365, deprecation of TLS 1.0 and 1.1 will begin October 15, 2020 and rollout will continue over the following weeks and months. 
 
 We recommend that all client-server and browser-server combinations use TLS 1.2 (or a later version) in order to maintain connection to Office 365 services. You might have to update certain client-server and browser-server combinations.
 

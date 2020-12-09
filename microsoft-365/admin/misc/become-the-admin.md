@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -66,8 +66,6 @@ If you are an admin and want to take over an unmanaged tenant created by a self-
 YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Admin takeover in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
-
-[Get help with domains](../get-help-with-domains/get-help-with-domains.md)
 
 [Using self-service sign up in your organization](self-service-sign-up.md)
   

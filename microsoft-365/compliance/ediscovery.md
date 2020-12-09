@@ -83,3 +83,7 @@ The Advanced eDiscovery solution in Microsoft 365 (also called *Advanced eDiscov
 |[Analyze data in a review set](analyzing-data-in-review-set.md)|Learn about running analysis on the documents in a review set. The results of running analysis include near-duplication detection, email threading, and themes identification.|
 |[Export case data](exporting-data-ediscover20.md)|Learn about exporting data from a case for external review.|
 |||
+
+## Roadmap
+
+To see what eDiscovery features have been launched, are rolling out, or in development, please visit the [Microsoft 365 Roadmap](https://aka.ms/eDiscoRoadMap).

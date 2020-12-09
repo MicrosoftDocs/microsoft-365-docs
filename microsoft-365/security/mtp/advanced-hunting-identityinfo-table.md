@@ -15,14 +15,19 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
 # IdentityInfo
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 The `IdentityInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user accounts obtained from various services, including Azure Active Directory. Use this reference to construct queries that return information from this table.
 
@@ -45,7 +50,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
 | `EmailAddress` | string | SMTP address of the account |
-| `SipProxyAddress` | string | Voice of over IP (VOIP) session initiation protocol (SIP) address of the account |
+| `SipProxyAddress` | string | Voice over IP (VOIP) session initiation protocol (SIP) address of the account |
 | `City` | string | City where the account user is located |
 | `Country` | string | Country/Region where the account user is located |
 | `IsAccountEnabled` | boolean | Indicates whether the account is enabled or not |
@@ -54,6 +59,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

@@ -1,7 +1,7 @@
 ---
-title: What's coming to Microsoft Secure Score?
+title: What's coming to Microsoft Secure Score
 description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -19,23 +19,30 @@ search.appverid:
 - MET150
 ---
 
-# What's coming to Microsoft Secure Score?
+# What's coming to Microsoft Secure Score
 
-To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
+Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
-## August 2020
+## Proposed changes
 
-### Add improvement actions for Azure Advanced Threat Protection
+We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
-- Risky lateral movement paths
-- Unsecure account attributes
-- Enable security features on Active Directory trusts
-- Remove unsecure SID history attributes from entities
+### December 2020
+
+Adding 6 accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+
+- Set 'Minimum password length' to '14 or more characters'
+- Set 'Enforce password history' to '24 or more password(s)'
+- Set 'Maximum password age' to '60 or fewer days, but not 0'
+- Set 'Minimum password age' to '1 or more day(s)'
+- Disable the built-in Administrator account
+- Disable the built-in Guest account
 
 ## Related resources
 
 - [Microsoft Secure Score overview](microsoft-secure-score.md)
-- [Gain visibility into your security posture](microsoft-secure-score-improvement-actions.md)
+- [Assess your security posture](microsoft-secure-score-improvement-actions.md)
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
+- [What's new](microsoft-secure-score-whats-new.md)

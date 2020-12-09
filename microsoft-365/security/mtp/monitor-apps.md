@@ -1,6 +1,6 @@
 ---
 title: App monitoring & reporting - Security center
-description: Learn how you can gain more insight into cloud app use in your organization, including what kinds of apps, their level of risk, and alerts.
+description: Learn how to gain more insight into cloud app use in your organization. Includes different kinds of apps, their level of risk, and alerts.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, apps
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -11,7 +11,9 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
@@ -19,11 +21,14 @@ ms.custom: seo-marvel-apr2020
 
 # App monitoring and reporting in the Microsoft 365 security center
 
-These reports provide more insight into how cloud apps are being used in your organization, including what kinds of apps, their level of risk, and alerts.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+These reports provide more insight into how cloud apps are being used in your organization. Includes different kinds of apps, their level of risk, and alerts.
 
 ## Monitor email accounts at risk
 
-**Email protection** shows email accounts at risk. You can click an account to investigate further in Microsoft Defender Security Center.
+**Email protection** shows email accounts at risk. You can select an account to investigate further in Microsoft Defender Security Center.
 
 ![Email protection card](../../media/email-protection.png)
 
@@ -31,7 +36,7 @@ These reports provide more insight into how cloud apps are being used in your or
 
 **Cloud App Security - OAuth apps** lists apps discovered by Cloud App Security that have been granted permissions by users. Cloud App Security's risk catalog includes over 16,000 apps that are assessed using over 70 risk factors.
 
-The risk factors start from general information, such as the app publisher, to security measures and controls, such as whether the app supports for encryption at rest or provides an audit log of user activity.
+The risk factors start from general information, such as the app publisher. It then moves to security measures and controls, such as whether the app supports encryption at rest or provides an audit log of user activity.
 
 ![Cloud App Security OAuth apps card](../../media/cloud-app-security-oauth-apps.png)
 
@@ -43,7 +48,7 @@ The risk factors start from general information, such as the app publisher, to s
 
 ## Understand which cloud apps are used
 
-**Discovered cloud apps (categories)** show what kinds of apps are being used in your organization and links to the Cloud Discovery dashboard in Cloud App Security. For more information, see [Quickstart: Work with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
+**Discovered cloud apps (categories)** show what kinds of apps are being used in your organization. It links to the Cloud Discovery dashboard in Cloud App Security. For more information, see [Quickstart: Work with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
 
 ![Discovered cloud apps categories card](../../media/discovered-cloud-apps-categories.png)
 
@@ -55,10 +60,10 @@ The risk factors start from general information, such as the app publisher, to s
 
 ## Monitor health for infrastructure workloads
 
-**Infrastructure health** shows health status alerts for infrastructure workloads in Azure Security Center.
+**Infrastructure health** shows health status alerts for infrastructure workloads in Azure Defender.
 
-Azure Security Center provides unified security management and advanced threat protection across on-premises and cloud workloads. You can collect, search, and analyze security data from a variety of sources, including firewalls and other partner solutions.
+Azure Defender provides unified security management and Defender for Office 365 across on-premises and cloud workloads. You can collect, search, and analyze security data from different sources, including firewalls and other partner solutions.
 
-For more information, see [Azure Security Center Documentation](https://docs.microsoft.com/azure/security-center/).
+For more information, see [Azure Defender Documentation](https://docs.microsoft.com/azure/security-center/).
 
 ![Infrastructure health card](../../media/infrastructure-health.png)

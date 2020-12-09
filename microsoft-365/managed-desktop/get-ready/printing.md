@@ -7,13 +7,15 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
 ---
 
 # Prepare printing resources for Microsoft Managed Desktop
 
 As you get ready to enroll in Microsoft Managed Desktop, you should evaluate your printing requirements and determine the right approach for your environment. You have three options:
  
-- Deploy the Microsoft hybrid cloud print solution to make it easy for Microsoft Managed Desktop devices to discover printers. For more information, see [Deploy Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- Deploy the Microsoft Universal Print solution to make it easy for Microsoft Managed Desktop devices to discover printers. For more information, see [What is Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis).
 - Deploy printers directly by using a custom PowerShell script. Follow the steps in the [Set up local printers](#set-up-local-printers) section to do this.
 - Use a non-Microsoft cloud printing solution that is compatible with Windows 10 devices that are joined to an Azure Active Directory domain. The solution must meet the software requirements for Microsoft Managed Desktop. For more information, see [Microsoft Managed Desktop app requirements](../service-description/mmd-app-requirements.md).
  

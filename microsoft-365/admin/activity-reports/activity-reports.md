@@ -53,9 +53,8 @@ Watch this video for on overview: on how you can use the reports:
 
 ::: moniker-end
 
-   
-2. Select **Select a report** at the top of the dashboard to select from a list of all available reports. Or, select an at-a-glance activity widget for a service (such as email or OneDrive) to see more information. <br/>![The Usage dashboard](../../media/usage-report-dashboard.png)
-  
+2. Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs. <br/>![The Usage dashboard](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## Who can see reports
 
 People who have the following permissions:
@@ -86,27 +85,47 @@ Depending on your subscription, here are the available reports.
     
 - [Mailbox usage](mailbox-usage.md)
     
-- [Office activations](microsoft-office-activations.md)
+- [Office activations](microsoft-office-activations-ww.md)
 
-- [Active Users](active-users.md)
+- [Office activations for US Government](microsoft-office-activations.md)
+
+- [Active Users](active-users-ww.md)
+
+- [Active Users for US Government](active-users.md)
   
 - [Email apps usage](email-apps-usage.md)
 
-- [Forms activity](forms-activity.md)
+- [Forms activity](forms-activity-ww.md)
 
-- [Forms Pro activity](forms-pro-activity.md)
-  
-- [Microsoft 365 groups](office-365-groups.md)
-  
-- [OneDrive for Business user activity](onedrive-for-business-activity.md)
-  
-- [OneDrive for Business usage](onedrive-for-business-usage.md)
+- [Forms activity for US Government](forms-activity.md)
 
-- [Microsoft 365 Apps usage](microsoft365-apps-usage.md)
+- [Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)
   
-- [SharePoint site usage](sharepoint-site-usage.md)
+- [Dynamics 365 Customer Voice activity for US Government](forms-pro-activity.md)
+
+- [Microsoft 365 groups](office-365-groups-ww.md)
+
+- [Microsoft 365 groups for US Government](office-365-groups.md)
   
-- [SharePoint activity](sharepoint-activity.md)
+- [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
+
+- [OneDrive for Business user activity for US Government](onedrive-for-business-activity.md)
+
+- [OneDrive for Business usage](onedrive-for-business-usage-ww.md)
+
+- [OneDrive for Business usage for US Government](onedrive-for-business-usage.md)
+
+- [Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)
+
+- [Microsoft 365 Apps usage for US Government](microsoft365-apps-usage.md)
+  
+- [SharePoint site usage](sharepoint-site-usage-ww.md)
+
+- [SharePoint site usage for US Government](sharepoint-site-usage.md)
+  
+- [SharePoint activity](sharepoint-activity-ww.md)
+
+- [SharePoint activity for US Government](sharepoint-activity.md)
   
 - [Skype for Business Online activity](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -118,31 +137,61 @@ Depending on your subscription, here are the available reports.
   
 ::: moniker range="o365-worldwide"
 
-- [Yammer activity](yammer-activity-report.md)
+- [Yammer activity](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer device usage](yammer-device-usage-report.md)
+- [Yammer activity for US Government](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer groups activity report](yammer-groups-activity-report.md)
+- [Yammer device usage](yammer-device-usage-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams user activity](microsoft-teams-user-activity.md)
+- [Yammer device usage for US Government](yammer-device-usage-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams device usage](microsoft-teams-device-usage.md)
+- [Yammer groups activity report](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Yammer groups activity report for US Government](yammer-groups-activity-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams user activity for US Government](microsoft-teams-user-activity.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams device usage for US Government](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
@@ -156,7 +205,9 @@ Depending on your subscription, here are the available reports.
 
 Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
   
-You can't generate a report where you enter a user's account and then get a list which services they are using and how much.
+You can't generate a report where you enter a user's account and then get a list of which services they are using and how much.
+
+There are circumstances where new users show up as **unknown**. This is usually due to occasional delays in creating user profiles.  
   
 ## Hide user details in the reports
 

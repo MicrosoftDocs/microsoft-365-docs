@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -20,7 +20,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 [Find another country or region](../contact-support-for-business-products.md).
 
 ## Phone number
-01 271 0156
+01 912 5070
 
 Select option 9
 

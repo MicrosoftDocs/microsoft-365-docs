@@ -22,7 +22,7 @@ description: "Learn how to make your organization more secure against password a
 ---
 
 # Password policy recommendations
- 
+
 As the admin of an organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
 To determine how often Microsoft 365 passwords expire in your organization, see [Set password expiration policy for Microsoft 365](../manage/set-password-expiration-policy.md).
@@ -73,11 +73,11 @@ These are some of the most commonly used password management practices, but rese
   
 ### Password expiration requirements for users
 
-Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers which are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cyber criminals almost always use credentials as soon as they compromise them.
+Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers which are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cyber criminals almost always use credentials as soon as they compromise them. Check out [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018) for more info.
   
 ### Requiring long passwords
 
-Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing their passwords down, re-using them, or storing them unencrypted in their documents. To encourage users to think about a unique password, we recommend keeping a reasonable 8-character minimum length requirement. 
+Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing their passwords down, re-using them, or storing them unencrypted in their documents. To encourage users to think about a unique password, we recommend keeping a reasonable 8-character minimum length requirement.
   
 ### Requiring the use of multiple character sets
 
@@ -97,7 +97,7 @@ In contrast, here are some recommendations in encouraging password diversity.
   
 ### Ban common passwords
 
-The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abdcefg**, **password**, **monkey**.
+The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abcdefg**, **password**, **monkey**.
   
 ### Educate users to not re-use organization passwords anywhere else
 
@@ -126,8 +126,6 @@ Risk-based multi-factor authentication ensures that when our system detects susp
 - [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018)
 
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
-
-- [Download files from the web](https://go.microsoft.com/fwlink/p/?linkid=861029)
 
 ## Related articles
 

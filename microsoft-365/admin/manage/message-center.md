@@ -173,3 +173,9 @@ We use machine translation to automatically display messages in your preferred l
 - Intune service administrator
 - Privileged role administrator
 - Reports reader
+
+## Unsubscribe from Message center emails
+
+1. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, change the **Send a weekly digest of my messages** setting to **Off**. <br/><br/>Email notification for major updates is a separate control. If you don't want to receive email notices about major updates, verify that **Send me emails for major updates** is **Off**.  <br/><br/>To stop receiving email notices about data privacy messages, verify that **Send me emails for data privacy messages** is **Off**.  (Data privacy messages are not included in the weekly digest.)<br/><br/>
+
+2. Select **Save** to keep your changes.<br/>

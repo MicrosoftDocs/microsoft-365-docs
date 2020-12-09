@@ -1,10 +1,10 @@
 ---
 title: "Change nameservers to set up Microsoft 365 with any domain registrar"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -33,7 +33,7 @@ description: "Learn how to add and set up your domain in Microsoft 365 so that y
   
 Check [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) first to see if we have instructions for your registrar. 
   
-Follow these instructions to add and set up your domain in Microsoft 365 so your services like email and Skype for Business Online will use your own domain name. To do this, you'll verify your domain, and then change your domain's nameservers to Microsoft 365 so the correct DNS records can be set up for you. Follow these steps if the following statements describe your situation:
+Follow these instructions to add and set up your domain in Microsoft 365 so your services like email and Teams will use your own domain name. To do this, you'll verify your domain, and then change your domain's nameservers to Microsoft 365 so the correct DNS records can be set up for you. Follow these steps if the following statements describe your situation:
   
 - You have your own domain and want to set it up to work with Microsoft 365.
     
@@ -109,17 +109,19 @@ When you get to the last step of the domains setup wizard in Microsoft 365, you 
   
 To change your domain's nameservers at your domain registrar's website yourself, follow these steps:
   
-1. Find the area on the domain registrar's website where you can edit the nameservers for your domain.
+1. Find the area on the domain registrar's website where you can change the nameservers for your domain or an area where you can use custom nameservers.
     
-2. Create two nameserver records, or edit the existing nameserver records to match the following values:
+2. Create nameserver records, or edit the existing nameserver records to match the following values:
     
 |||
 |:-----|:-----|
 |First nameserver  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Second nameserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Third nameserver  <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|Fourth nameserver  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > You should use at least two nameserver records. If there are any other nameservers listed, you can either delete them, or change them to **ns3.bdm.microsoftonline.com** and **ns4.bdm.microsoftonline.com**. 
+   > It's best to add all four records, but if your registrar only supports two, add **ns1.bdm.microsoftonline.com** and **ns2.bdm.microsoftonline.com**. 
   
 3. Save your changes.
     
@@ -157,15 +159,14 @@ For example, here are some additional steps that might be required for email and
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
-3. On the Domains page, select a domain.
+2. On the **Domains** page, select the domain and then choose **DNS Records**.
 
-4. Under **DNS settings**, select **Custom Records**, and then choose **New custom record**.
+3. Under **DNS settings**, select **Custom Records**, and then choose **New custom record**.
 
-5. Select the type of DNS record you want to add, and type the information for the new record.
+4. Select the type of DNS record you want to add, and type the information for the new record.
 
-6. Select **Save**.
+5. Select **Save**.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
-

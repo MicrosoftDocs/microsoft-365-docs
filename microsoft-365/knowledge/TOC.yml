@@ -1,0 +1,21 @@
+    - name: Get started with knowledge management
+      items: 
+        - name: Knowledge management overview
+          href: knowledge-management-overview.md 
+        - name: Topic center overview 
+          href: topic-center-overview.md 
+        - name: Work with topics in the topic center
+          href: work-with-topics.md   
+        - name: Give users permissions to the topic center
+          href: give-user-permissions-to-the-topic-center.md 
+ 
+
+    
+    - name: Get started with setup
+      items:
+
+        - name: Set up knowledge management
+          href: set-up-topic-experiences.md
+        - name: Manage your knowledge management network
+          href: topic-experiences-discovery.md
+    

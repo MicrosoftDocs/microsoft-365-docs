@@ -23,13 +23,9 @@ ms.custom: seo-marvel-mar2020
 
 There are three ways to export data from a review set:
 
-**Download:** Download (by using a browser) a small set of native files. This is the quickest way to export a small set of data. This method preserves the native file names.
+**Download:** Download (by using a browser) a small set of native files. This is the quickest way to export a small set of data. This method preserves the native file names. For more information, see [Download documents from a review set](download-documents-from-review-set.md).
 
-**Export:** Customize what data is exported. This includes exporting file metadata, native files, text files, and redacted documents that have been saved to a PDF file. After the exported data is uploaded to an Azure Storage location, you can download it to a local computer. For more information, see:
-
-- [Export documents from a review set](export-documents-from-review-set.md)
-
-- [Download export jobs](download-export-jobs.md)
+**Export:** Customize what data is exported. This includes exporting file metadata, native files, text files, and redacted documents that have been saved to a PDF file. Once the exported data is prepared, you can download the data from the **Export** tab to a local computer. For more information, see [Export documents from a review set](export-documents-from-review-set.md)
 
 **Add to another review set:** Copy data from one review set to a different review set. For more information, see [Add data from one review set to another review set](add-data-to-review-set-from-another-review-set.md).
 

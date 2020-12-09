@@ -5,8 +5,10 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, sett
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Configurable settings - Microsoft Managed Desktop
@@ -15,7 +17,7 @@ Microsoft Managed Desktop deploys settings and policies that are applied to all 
 
 Configurable settings in Microsoft Managed Desktop give IT admins a way to customize and deploy settings that are unique to their organization and business needs. These settings are in addition to device configuration settings and policies that are managed by Microsoft Managed Desktop.  
 
-Configurable setting changes are made in the cloud and applied to your Microsoft Managed Desktop devices in defined deployment groups. This process is similar to how Microsoft Managed Desktop manages changes to device configuruation settings and policies that are defined and managed by the service. By using the same process that Microsoft Managed Desktop uses for deploying changes, you continue to move your organization forward, using modern IT management practices.
+Configurable setting changes are made in the cloud and applied to your Microsoft Managed Desktop devices in defined deployment groups. This process is similar to how Microsoft Managed Desktop manages changes to device configuration settings and policies that are defined and managed by the service. By using the same process that Microsoft Managed Desktop uses for deploying changes, you continue to move your organization forward, using modern IT management practices.
 
 ## When to use configurable settings?
 

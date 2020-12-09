@@ -22,6 +22,9 @@ description: "This article provides troubleshooting information for issues with 
 
 # Troubleshooting mail sent to Microsoft 365
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Microsoft 365 and best practices for bulk mailing to customers.
 
 ## Are you managing your IP and domain's sending reputation?
@@ -43,9 +46,7 @@ For instructions about how to create and maintain DNS records, including the MX 
 We may not accept email from senders who fail a reverse-DNS lookup. In some cases, legitimate senders advertise themselves incorrectly as a non-internet routable IP when attempting to open a connection to EOP. IP addresses that are reserved for private (non-routable) networking include:
 
 - 192.168.0.0/16 (or 192.168.0.0 - 192.168.255.255)
-
 - 10.0.0.0/8 (or 10.0.0.0 - 10.255.255.255)
-
 - 172.16.0.0/11 (or 172.16.0.0 - 172.31.255.255)
 
 ## You received a non-delivery report (NDR) when sending email to a user in Office 365
@@ -74,7 +75,7 @@ You received the NDR because suspicious activity has been detected from the IP a
 
 ## I can't receive email from senders in Microsoft 365
 
- In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+ In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## Best practices for bulk emailing to Microsoft 365 users
 

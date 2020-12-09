@@ -5,12 +5,14 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/08/2019
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 localization_priority: None
 description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
 ms.custom: seo-marvel-apr2020
@@ -60,10 +62,11 @@ To learn more about the user experience with information barriers, see [informat
 
 Information barriers are rolling out now, and are included in subscriptions, such as:
 
-- Microsoft 365 E5
-- Office 365 E5
+- Microsoft 365 E5/A5
+- Office 365 E5/A5
 - Office 365 Advanced Compliance
-- Microsoft 365 Compliance E5
+- Microsoft 365 Compliance E5/A5
+- Microsoft 365 Insider Risk Management
 
 For more details, see [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
 

@@ -1,84 +1,75 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Microsoft Managed Desktop documentation and resources
+### YamlMime:Landing
+
+title: Microsoft Managed Desktop documentation # < 60 chars
+summary: Microsoft Managed Desktop is a unique ITaaS solution that combines endpoint management and security monitoring in a way gives users a secure and productive device experience that IT pros can trust. # < 160 chars
+
 metadata:
-  title: Microsoft Managed Desktop documentation
-  description: 
+  title: Microsoft Managed Desktop documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Microsoft Managed Desktop brings together Microsoft 365 Enterprise, cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs. # Required; article description that is displayed in search results. < 160 chars.
   keywords: device, app, management
-  author: jaimeo
-  ms.author: jaimeo
-  ms.topic: landing-page
-  ms.devlang: na
-  ms.service: m365-md
-sections:
-- items:
-  - type: markdown
-    text: Microsoft Managed Desktop brings together Microsoft 365 Enterprise, cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs.
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
-    - href: intro/index.md
-      html: <p>Introduction to Microsoft Managed Desktop for decision makers--what it is, how it works, and what it can do for you</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_overview.svg
-        alt: ""
-      title: What is Microsoft Managed Desktop?
-    - href: service-description/index.md
-      html: <p>Detailed description of all parts of Microsoft Managed Desktop</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
-        alt: ""
-      title: Service description
-    - href: get-ready/index.md
-      html: <p>All the steps to get your environment and organization ready to work with the service</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_support.svg
-        alt: ""
-      title: Get ready
-    - href: get-started/index.md
-      html: <p>Get your organization on board with Microsoft Managed Desktop, including setting up devices and deploying apps</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-        alt: ""
-      title: Get started
-    - href: working-with-managed-desktop/index.md
-      html: <p>All about your day-to-day operations with the service</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_portal.svg
-        alt: ""
-      title: Working with Microsoft Managed Desktop
-- title: New articles and blog posts
-  items:
-  - type: paragraph
-    text: 'Read the latest and greatest information you need to know.'
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items: 
-    - href: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
-      title: "[Roadmap] Your Complete Roadmap to Microsoft Managed Desktop"
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-    - href: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
-      title: "[Whitepaper] Study: Rising Demand for Managed Desktop Services"
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-    - href: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
-      title: "[E-book] Delight your company with a modern workplace"
-      image:
-        src: https://docs.microsoft.com/media/common/i_guide.svg
-        alt: ""
-- title: Videos
-  items:
-  - type: paragraph
-    text: 'Learn about the benefits of Microsoft Managed Desktop from the VP of Technology at the Indiana Pacers.'
-  - type: markdown
-    text: ">[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]"
-  - type: paragraph
-    text: 'The General Manager of Microsoft Managed Desktop shares all the highlights of the service at the annual Ignite conference.'
-  - type: markdown
-    text: ">[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]"
+  ms.service: m365-md #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: jaimeo #Required; your GitHub user alias, with correct capitalization.
+  ms.author: jaimeo #Required; microsoft alias of author; optional team alias.
+  ms.date: 12/04/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Microsoft Managed Desktop
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Managed Desktop?
+            url: /microsoft-365/managed-desktop/intro/
+          - text: Service description
+            url: /microsoft-365/managed-desktop/service-description
+      - linkListType: get-started
+        links:
+          - text: Get ready
+            url: get-ready/index.md
+          - text: Get started
+            url: get-started/index.md
+          - text: Working with Microsoft Managed Desktop
+            url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+  
+  # Card (optional)
+  - title: Articles and blog posts
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: "[Blog] Workplace devices are the new \"free snacks\""
+            url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/workplace-devices-are-the-new-free-snacks/ba-p/1675936
+          - text: "[Whitepaper] Study: Microsoft Managed Desktop saves time and costs"
+            url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/study-microsoft-managed-desktop-saves-time-and-costs/ba-p/1403408
+          - text: "[Whitepaper] Microsoft Managed Desktop Can Help Boost Engagement"
+            url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/microsoft-managed-desktop-can-help-boost-engagement/ba-p/1031932
+          - text: "[Whitepaper] SA Power Networks deploys Microsoft Managed Desktop to satisfy evolving user needs"
+            url: https://customers.microsoft.com/story/832888-sa-power-networks-case-study-energy-microsoft-managed-desktop
+  
+  # Card (optional)
+  - title: Benefits and highlights
+    linkLists:
+      - linkListType: video
+        links:
+          - text: Microsoft Managed Desktop - IT Admin experience
+            url: https://www.youtube.com/watch?v=UQ8VRSysUXw&feature=youtu.be
+          - text: What enterprises love about Microsoft Managed Desktop
+            url: https://www.microsoft.com/en-us/videoplayer/embed/RE4yjfL
+          - text: Microsoft Managed Desktop - Fantastic device experiences
+            url: https://www.microsoft.com/en-us/videoplayer/embed/RE41urx?autoplay=false
+          - text: Microsoft Managed Desktop - Security operations
+            url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+          - text: Microsoft Managed Desktop - Change and release process
+            url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+          - text: The Shiproom / IGM / Episode 29 - Prioritizing user experience with security
+            url: https://www.youtube.com/watch?v=im11J9C1MTA&feature=youtu.be
+          - text: The Shiproom / Lloyds Banking Group / Episode 25 - Leadership amid rapid transformation
+            url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
+            
+
+
+

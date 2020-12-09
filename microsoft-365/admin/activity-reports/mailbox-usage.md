@@ -31,15 +31,15 @@ The **Mailbox usage report** provides information about users with a user mailbo
 ## How to get to the mailbox usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
+2. Select **View More** under **Email activity**. 
+3. From the **Email activity** drop-down list, select **Exchange** \> **Mailbox usage**.
 
-    
-2. From the **Select a report** drop-down, select **Exchange** \> **Mailbox usage**.
   
 ## Interpret the mailbox usage report
 
 You can get a view into your organization's **Mailbox usage** by looking at the **Mailbox**, **Storage** and **Quota** charts. 
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **Mailbox usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |
@@ -52,4 +52,3 @@ You can get a view into your organization's **Mailbox usage** by looking at the 
 |9.  <br/> |You can also export the report data into an Excel .csv file, by selecting the **Export** link.  <br/> |
 |||
    
-

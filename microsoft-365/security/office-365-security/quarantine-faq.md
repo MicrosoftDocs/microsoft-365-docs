@@ -7,19 +7,23 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: reference
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 description: "Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP)."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Quarantined messages FAQ
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 This topic provides frequently asked questions and answers about quarantined email messages for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 

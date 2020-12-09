@@ -2,11 +2,11 @@
 title: "Enable the Report Message add-in"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -20,6 +20,9 @@ description: "Learn how to enable the Report Message add-in for Outlook and Outl
 
 # Enable the Report Message add-in
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 > [!NOTE]
 > If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
@@ -27,7 +30,7 @@ The Report Message add-in for Outlook and Outlook on the web (formerly known as 
 
 For example, suppose that people are reporting a lot of messages as phishing. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated. Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).
 
-In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.
+In addition, if your organization is using [Microsoft Defender for Office 365 Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.
 
 Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.
 
@@ -44,12 +47,9 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook 2016 for Mac
   - Outlook included with Microsoft 365 apps for Enterprise
 
-- The Report Message add-in is currently not available for:
+- The Report Message add-in is not available for mailboxes in on-premises Exchange organizations.
 
-  - Mailboxes in on-premises Exchange organizations
-  - GCC, GCC HIGH, or DoD subscriptions
-
-- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [Specify a mailbox for user submissions of spam and phishing messages in Exchange Online](user-submission.md).
+- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
 - Your existing web browser should work with the Report Message add-in. But, if you notice the add-in is not available or not working as expected, try a different browser.
 
@@ -86,7 +86,7 @@ To learn how to use the add-in, see [Use the Report Message add-in](https://supp
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>, and then click **Deploy Add-In**.
+1. In the Microsoft 365 admin center, go to the **Settings, integrated Apps & Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, and then click **Deploy Add-In**.
 
    ![Services and add-ins page in the Microsoft 365 admin center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 

@@ -3,7 +3,7 @@ title: "Configure teams with baseline protection"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,7 +13,8 @@ search.appverid:
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - Ent_Solutions
 description: "Learn how to deploy teams with a baseline level of protection."
@@ -25,15 +26,15 @@ In this article, we look at how to deploy teams with a baseline level of protect
 
 ## Initial protections
 
-As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies) for details.
+As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](../security/office-365-security/teams-access-policies.md) for details.
 
-We also recommend turning on basic Advanced Threat Protection features to guard against malware in documents, attachments, and links. We recommend turning on each of the options in the following table.
+We also recommend turning on basic Defender for Office 365 features to guard against malware in documents, attachments, and links. We recommend turning on each of the options in the following table.
 
 |Option|Information|
 |:------|:-----------|
-|ATP Safe Attachments for SPO, OneDrive and Teams|[Office 365 ATP Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|ATP Safe Documents|[Safe Documents in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|ATP Safe Links for Teams|[Office 365 Safe Links in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Office 365 ATP Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
+|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
+|Safe Links for Teams|[Office 365 Safe Links in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
 
 ## Teams guest sharing
 
@@ -88,7 +89,7 @@ To update the site sharing settings
 
 Microsoft 365 offers additional methods for securing your content. Consider if the following options would help improve security for your organization.
 
-- Have your guest users agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+- Have guests agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
 - Configure a [session timeout policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
 - Create [sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) and use [data loss protection](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to set policies around accessing sensitive information.
 

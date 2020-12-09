@@ -22,6 +22,8 @@
              href: setup/setup-apps-for-business.md
         - name: Explore the Setup page and wizard
           href: setup/o365-setup-wizard-and-setup-page.md
+        - name: Secure Windows 10 computers
+          href: ../business/secure-win-10-pcs.md
         - name: Install Office apps
           href: setup/install-applications.md
         - name: Set up windows devices
@@ -80,7 +82,7 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection parity
           href: services-in-china/parity-between-azure-information-protection.md      
-    - name: Manage users and groups
+    - name: Manage users, groups, and passwords
       href: add-users/index.yml
       items: 
         - name: Users
@@ -107,14 +109,6 @@
              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
            - name: Restore a user
              href: add-users/restore-user.md
-           - name: Reset passwords
-             href: add-users/reset-passwords.md
-           - name: Set passwords to never expire
-             href: add-users/set-password-to-never-expire.md
-           - name: Let users reset passwords
-             href: add-users/let-users-reset-passwords.md
-           - name: Resend user passwords
-             href: add-users/resend-user-password.md
            - name: Create template to add users
              href: add-users/create-and-use-a-template-to-add-users.md
            - name: Upgrade users to the latest apps 
@@ -127,26 +121,30 @@
              href: create-groups/compare-groups.md
            - name: Create a group
              href: create-groups/create-groups.md
+           - name: Explain groups
+             href: create-groups/explain-groups-knowledge-worker.md
            - name: Manage groups
              href: create-groups/manage-groups.md
            - name: Add or remove group members
              href: create-groups/add-or-remove-members-from-groups.md
            - name: Restore a deleted group
              href: create-groups/restore-deleted-group.md
-           - name: Plan for governance of groups
-             href: create-groups/plan-for-groups-governance.md
-           - name: Manage creation of groups
-             href: create-groups/manage-creation-of-groups.md
-           - name: Choose domain for groups
-             href: create-groups/choose-domain-to-create-groups.md
-           - name: Overview of group naming policies
-             href: create-groups/groups-naming-policy.md
-           - name: Allow members to send mail to and from groups
-             href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
            - name: Manage guest access to groups
              href: create-groups/manage-guest-access-in-groups.md
-           - name: Use sensitivity labels with groups
-             href: ../compliance/sensitivity-labels-teams-groups-sites.md
+        - name: Passwords 
+          items:
+           - name: Reset passwords
+             href: add-users/reset-passwords.md
+           - name: Let users reset passwords
+             href: add-users/let-users-reset-passwords.md
+           - name: Set passwords to never expire
+             href: add-users/set-password-to-never-expire.md
+           - name: Resend user passwords
+             href: add-users/resend-user-password.md
+           - name: Turn off strong passwords
+             href: add-users/strong-password.md
+           - name: Set the password expiration policy
+             href: manage/set-password-expiration-policy.md
     - name: Manage email and calendars
       href: email/index.yml
       items: 
@@ -195,6 +193,10 @@
           href: get-help-with-domains/buy-a-domain-name.md
         - name: Remove a domain
           href: get-help-with-domains/remove-a-domain.md
+        - name: Transfer a domain from Microsoft 365 to another host
+          href: get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md
+        - name: Pilot Microsoft 365 from my custom domain
+          href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: Domains FAQ
           href: setup/domains-faq.md
         - name: Host-specific instructions
@@ -208,8 +210,23 @@
     - name: Manage your data and services
       href: manage/index.yml
       items:
-         - name: Monitor user activity by using reports
+         - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
+         - name: Microsoft Productivity Score - overview
+           href: productivity/productivity-score.md
+           items:
+            - name: Content collaboration
+              href: productivity/content-collaboration.md
+            - name: Communication 
+              href: productivity/communication.md
+            - name: Mobility
+              href: productivity/mobility.md
+            - name: Teamwork
+              href: productivity/teamwork.md
+            - name: Microsoft 365 Apps health
+              href: productivity/apps-health.md
+            - name: Create DNS records at any DNS host
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
@@ -218,18 +235,26 @@
            href: manage/set-password-expiration-policy.md
          - name: Customize the app launcher
            href: manage/customize-the-app-launcher.md
+         - name: Pin apps to users' app launcher
+           href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
-         - name: Requirements for centralized deployment of add-ins
-           href: manage/centralized-deployment-of-add-ins.md
-         - name: Install and manage add-ins by using Centralized Deployment
-           href: manage/manage-deployment-of-add-ins.md
-         - name: Centralized Deployment FAQ
-           href: manage/centralized-deployment-faq.md
+         - name: Centralized deployment of add-ins
+           items:
+            - name: Requirements for centralized deployment of add-ins
+              href: manage/centralized-deployment-of-add-ins.md
+            - name: Deploy add-ins in the admin center 
+              href: manage/manage-deployment-of-add-ins.md
+            - name: Manage add-ins in the admin center 
+              href: manage/manage-addins-in-the-admin-center.md      
+            - name: Centralized Deployment FAQ
+              href: manage/centralized-deployment-faq.md
+         - name: Manage industry news
+           href: manage/manage-industry-news.md
+         - name: Manage Office Scripts settings 
+           href: manage/manage-office-scripts-settings.md  
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
-         - name: About Message center
-           href: manage/message-center.md
          - name: Manage Message center messages
            href: manage/manage-messages.md
          - name: Set up release options
@@ -266,7 +291,7 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Secure Microsoft Business Premium
+        - name: Secure Microsoft 365 Business Premium
           items:
             - name: Pre-requisites for data protection
               href: ../business/pre-requisites-for-data-protection.md
@@ -274,46 +299,71 @@
               href: ../business/security-features.md
             - name: Increase threat protection
               href: ../business/increase-threat-protection.md
+            - name: Threats detected by Microsoft Defender Antivirus
+              href: ../business/threats-detected-defender-av.md              
+            - name: Review detected threats and take action
+              href: ../business/review-threats-take-action.md    
             - name: Set up compliance features
               href: ../business/set-up-compliance.md
         - name: Secure score
           href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
-    - name: Manage devices
-      items: 
-        - name: View and edit policies and devices
-          href: ../business/view-policies-and-devices.md
-        - name: Remove company data
-          href: ../business/remove-company-data.md
-        - name: Reset devices to factory settings
-          href: ../business/reset-devices-to-factory-settings.md
-        - name: Map protection features to Intune settings
-          href: ../business/map-protection-features-to-intune-settings.md
-        - name: Device states
-          href: ../business/device-states.md
-        - name: App protection settings for Windows 10 PCs
-          href: ../business/protection-settings-for-windows-10-devices.md
-        - name: App protection settings for Android and iOS
-          href: ../business/app-protection-settings-for-android-and-ios.md
-          items: 
-            - name: Validate settings on Android or iOS
-              href: ../business/validate-settings-on-android-or-ios.md
-        - name: Device protection settings  for Windows 10 PCs
-          href: ../business/protection-settings-for-windows-10-pcs.md
-          items: 
-            - name: Validate settings on Windows 10 PCs
-              href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: Autopilot
-          items: 
-            - name: Add Autopilot devices and profile
-              href: ../business/add-autopilot-devices-and-profile.md
-            - name: Create and edit AutoPilot profiles
-              href: ../business/create-and-edit-autopilot-profiles.md
-            - name: Create and edit AutoPilot devices
-              href: ../business/create-and-edit-autopilot-devices.md
-            - name: AutoPilot Profile settings
-              href: ../business/autopilot-profile-settings.md
+    - name: Manage devices and app data
+      href: devices/index.yml
+      items:
+        - name: Device and app data protection methods 
+          href: devices/choose-device-security.md
+        - name: Microsoft Intune documentation
+          href: https://docs.microsoft.com/mem/intune/
+        - name: Microsoft 365 Business Premium
+          items:
+            - name: View and edit policies and devices
+              href: ../business/view-policies-and-devices.md
+            - name: Remove company data
+              href: ../business/remove-company-data.md
+            - name: Reset devices to factory settings
+              href: ../business/reset-devices-to-factory-settings.md
+            - name: Map protection features to Intune settings
+              href: ../business/map-protection-features-to-intune-settings.md
+            - name: Device states
+              href: ../business/device-states.md
+            - name: App protection settings for Windows 10 PCs
+              href: ../business/protection-settings-for-windows-10-devices.md
+            - name: Set app protection settings for Android and iOS
+              href: ../business/app-protection-settings-for-android-and-ios.md
+              items: 
+                - name: Validate settings on Android or iOS
+                  href: ../business/validate-settings-on-android-or-ios.md
+            - name: Edit or create device protection settings  for Windows 10 PCs
+              href: ../business/protection-settings-for-windows-10-pcs.md
+              items: 
+                - name: Validate settings on Windows 10 PCs
+                  href: ../business/validate-settings-on-windows-10-pcs.md
+            - name: Autopilot
+              items: 
+                - name: Add Autopilot devices and profile
+                  href: ../business/add-autopilot-devices-and-profile.md
+                - name: Create and edit AutoPilot profiles
+                  href: ../business/create-and-edit-autopilot-profiles.md
+                - name: Create and edit AutoPilot devices
+                  href: ../business/create-and-edit-autopilot-devices.md
+                - name: AutoPilot Profile settings
+                  href: ../business/autopilot-profile-settings.md
+        - name: Microsoft 365 for enterprise documentation
+          href: ../enterprise/index.yml
+        - name: Basic Mobility and Security
+          items:
+            - name: Overview of Basic Mobility and Security
+              href: basic-mobility-security/overview.md
+            - name: Compare Basic Mobility and Security and Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: Basic Mobility and Security FAQ
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: Capabilities of Basic Mobility and Security
+              href: basic-mobility-security/capabilities.md
+            - name: Compare Basic Mobility and Security and Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
     - name: Work with customers
       href: work-with-customers/index.yml
       items: 

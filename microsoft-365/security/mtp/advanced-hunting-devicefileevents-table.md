@@ -15,16 +15,24 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
 # DeviceFileEvents
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 The `DeviceFileEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from this table.
+
+>[!TIP]
+> For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -33,7 +41,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | datetime | Date and time when the event was recorded |
 | `DeviceId` | string | Unique identifier for the machine in the service |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
-| `ActionType` | string | Type of activity that triggered the event |
+| `ActionType` | string | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
 | `FileName` | string | Name of the file that the recorded action was applied to |
 | `FolderPath` | string | Folder containing the file that the recorded action was applied to |
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
@@ -75,6 +83,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

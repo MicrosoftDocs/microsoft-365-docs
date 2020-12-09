@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Key compliance and security considerations for US banking and capital markets"
 ms.author: bcarter
 author: brendacarter
@@ -7,11 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.collection: 
 - M365-security-compliance
-- M365solutions
 ms.prod: microsoft-365-enterprise
-ms.custom: 
+ms.custom: seo-marvel-jun2020
 localization_priority: Priority
-description: "Learn how Microsoft 365 helps financial services move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
+description: Learn how financial services institutions can maintain financial security compliance and effectively collaborate using Microsoft 365 and Teams.
 f1.keywords: NOCSH
 ---
 
@@ -43,13 +42,22 @@ In the financial services sector, careful consideration is required for the conf
 
 As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
 
+The following downloadable illustrations supplement this article. Woodgrove Bank and Contoso are used to demonstrate how capabilities described in this article can be applied to address common regulatory requirements of financial services. Feel free to adapt these illustrations for your own use. 
+
+**Microsoft 365 information protection and compliance illustrations**
+
+| Item | Description |
+|:-----|:-----|
+|[![Model poster: Microsoft 365 information protection and compliance capabilities](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>English: [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanese: [Download as a PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Updated November 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
+
+
 ## Empower organizational and employee productivity by using Microsoft 365 and Teams
 
 Collaboration typically requires various forms of communication, the ability to store and access documents/data, and the ability to integrate other applications as needed. Employees in financial services typically need to collaborate and communicate with members of other departments or teams and sometimes with external entities. Therefore, using systems that create silos or make information sharing difficult is undesirable. Instead, it's preferable to leverage platforms and applications that enable employees to communicate, collaborate, and share information securely and according to corporate policy.
 
 Providing employees with a modern, cloud-based collaboration platform allows them to choose and integrate tools that make them more productive and empower them to find agile ways to work. Using Teams in conjunction with security controls and information governance policies that protect the organization can help your workforce communicate and collaborate effectively.
 
-Teams provides a collaboration hub for the organization. It helps bring people together to work productively on common initiatives and projects. Teams lets team members conduct 1:1 and multi-party chat conversations, collaborate and coauthor documents, and store and share files. Teams also facilitates online meetings through integrated enterprise voice and video. Teams can also be customized with Microsoft apps such as Microsoft Planner, Microsoft Dynamics 365, PowerApps, PowerBI, and third-party line-of-business applications. Teams is designed for use by both internal team members and permitted external users who can join team channels, participate in chat conversations, access stored files, and leverage other applications
+Teams provides a collaboration hub for the organization. It helps bring people together to work productively on common initiatives and projects. Teams lets team members conduct 1:1 and multi-party chat conversations, collaborate and coauthor documents, and store and share files. Teams also facilitates online meetings through integrated enterprise voice and video. Teams can also be customized with Microsoft apps such as Microsoft Planner, Microsoft Dynamics 365, PowerApps, Power BI, and third-party line-of-business applications. Teams is designed for use by both internal team members and permitted external users who can join team channels, participate in chat conversations, access stored files, and leverage other applications
 
 Every Microsoft Team is backed by a Microsoft 365 group. That group is considered the membership service for numerous Office 365 services, including Teams. Microsoft 365 groups are used to securely distinguish between "owners" and "members" and to control access to various capabilities within Teams. When coupled with appropriate governance controls and regularly administered access reviews, Teams allows only members and owners to utilize authorized channels and capabilities.
 
@@ -62,7 +70,7 @@ Teams can provide a collaboration space to securely store sensitive client data 
 
 Another common scenario is to use Teams as a "virtual data room" to securely collaborate, including storing and managing documents. Team members and syndicates within investment banking, asset management, or private equity firms can securely collaborate on a deal or investment. Cross-functional teams are often involved in planning and fulfilling such deals, and the ability to securely share data and conduct conversations is a core requirement. Securely sharing related documents with external investors is also a key requirement. Teams provides a secure and fully auditable location from which to centrally store, protect, and share investment data.
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="A group of office workers in a meeting discuss images on a large screen.":::
+![A group of office workers in a meeting discuss images on a large scree](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### Teams: Improve collaboration and reduce compliance risk
 
@@ -108,7 +116,7 @@ As employees work, they may move from application to application or between mult
 
 Microsoft 365 provides a secure identity platform in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/), where identities are centrally stored and securely managed. Azure AD, along with a host of related Microsoft 365 security services, forms the basis for providing employees with the access they need to work securely while also protecting the organization from threats.
 
-[Azure Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
+[Azure AD Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
 
 - The Microsoft Authenticator app
 - A one-time passcode delivered via SMS
@@ -152,7 +160,7 @@ Identity Protection uses knowledge that Microsoft has acquired from its position
 
 Identity Protection helps organizations automatically protect against identity compromise by taking advantage of cloud intelligence powered by advanced detection based on heuristics, user and entity behavior analytics (UEBA), and machine learning (ML) across the Microsoft ecosystem.
 
-:::image type="content" source="../media/win17-15021-00-n9.jpg" alt-text="Five information workers watch as another gives a presentation.":::
+![Five information workers watch as another gives a presentation](../media/win17-15021-00-n9.jpg)
  
 ## Identify sensitive data and prevent data loss
 Microsoft 365 allows all organizations to identify sensitive data within the organization through a combination of powerful capabilities, including:
@@ -160,7 +168,7 @@ Microsoft 365 allows all organizations to identify sensitive data within the org
 * **Microsoft Information Protection (MIP)** for both user-based classification and automated classification of sensitive data.
 * **Office 365 Data Loss Prevention (DLP)** for automated identification of sensitive data using sensitive data types (in other words, regular expressions) and keywords and policy enforcement.
 
-**[Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/)** enables organizations to classify documents and emails intelligently by using sensitivity labels. Sensitivity labels can be applied manually by users to documents in Microsoft Office applications and to emails in Outlook. The labels can automatically apply document markings, protection through encryption, and rights-management enforcement. Sensitivity labels can also be applied automatically by configuring policies that use keywords and sensitive data types (such as credit card numbers, social insurance numbers, and identity numbers) to automatically find and classify sensitive data.
+**[Microsoft Information Protection (MIP)](../compliance/information-protection.md)** enables organizations to classify documents and emails intelligently by using sensitivity labels. Sensitivity labels can be applied manually by users to documents in Microsoft Office applications and to emails in Outlook. The labels can automatically apply document markings, protection through encryption, and rights-management enforcement. Sensitivity labels can also be applied automatically by configuring policies that use keywords and sensitive data types (such as credit card numbers, social insurance numbers, and identity numbers) to automatically find and classify sensitive data.
 
 In addition, Microsoft provides "trainable classifiers" that use machine-learning models to identify sensitive data based on the content, as opposed to simply through pattern matching or by the elements within the content. A classifier learns how to identify a type of content by looking at numerous examples of the content to be classified. Training a classifier begins by giving it examples of content in a particular category. After it learns from those examples, the model is tested by giving it a mix of matching and non-matching examples. The classifier predicts whether a given example falls into the category or not. A person then confirms the results, sorting the positives, negatives, false positives, and false negatives to help increase the accuracy of the classifier's predictions. When the trained classifier is published, it processes content in Microsoft SharePoint Online, Exchange Online, and OneDrive for Business and automatically classifies the content.
 
@@ -174,28 +182,28 @@ The signals generated by and fed to Identity Protection can also be fed into too
 
 Identity Protection helps organizations automatically protect against identity compromise by taking advantage of cloud intelligence powered by advanced detections based on heuristics, user and entity behavior analytics, and machine learning across the Microsoft ecosystem.
 
-:::image type="content" source="../media/clo1718-portrait-006.jpg" alt-text="An information worker is pictured in front of a large array of monitors.":::
+![An information worker is pictured in front of a large array of monitors](../media/clo1718-portrait-006.jpg)
 
 ## Defend the fortress
 
-Microsoft recently launched the Microsoft Threat Protection solution, which is designed to secure the modern organization from the evolving threat landscape. By leveraging the Intelligent Security Graph, the Threat Protection solution offers comprehensive, integrated security against multiple attack vectors.
+Microsoft recently launched the Microsoft 365 Defender solution, which is designed to secure the modern organization from the evolving threat landscape. By leveraging the Intelligent Security Graph, the Threat Protection solution offers comprehensive, integrated security against multiple attack vectors.
 
 ### [The Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Security services from Microsoft 365 are powered by the Intelligent Security Graph. To combat cyberthreats, the Intelligent Security Graph uses advanced analytics to link threat intelligence and security signals from Microsoft and its partners. Microsoft operates global services at a massive scale, gathering trillions of security signals that power protection layers across the stack. Machine-learning models assess this intelligence, and the signal and threat insights are widely shared across our products and services. This enables us to detect and respond to threats quickly and bring actionable alerts and information to customers for remediation. Our machine learning models are continuously trained and updated with new insights, helping us build more-secure products and provide more proactive security.
 
-[Office 365 Advanced Threat Protection (OATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) provides an integrated Microsoft 365 service that protects organizations from malicious links and malware delivered through email and Office documents. One of the most common attack vectors that affects users today is email phishing attacks. These attacks can be targeted at specific users and can be very convincing, with some call to action that prompts the user to click a malicious link or open an attachment that contains malware. Once a computer is infected, the attacker can either steal the user's credentials and move laterally across the organization or exfiltrate emails and data to look for sensitive information. OATP supports safe attachments and safe links by evaluating documents and links at click-time for potentially malicious intent and blocks access. Email attachments are opened in a protected sandbox before they're delivered to a user's mailbox. It also evaluates links in Office documents for malicious URLs. OATP also protects links and files in SharePoint Online, OneDrive for Business, and Teams. If a malicious file is detected, OATP automatically locks that file to reduce potential damage.
+[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) provides an integrated Microsoft 365 service that protects organizations from malicious links and malware delivered through email and Office documents. One of the most common attack vectors that affects users today is email phishing attacks. These attacks can be targeted at specific users and can be very convincing, with some call to action that prompts the user to click a malicious link or open an attachment that contains malware. Once a computer is infected, the attacker can either steal the user's credentials and move laterally across the organization or exfiltrate emails and data to look for sensitive information. Defender for Office 365 supports safe attachments and safe links by evaluating documents and links at click-time for potentially malicious intent and blocks access. Email attachments are opened in a protected sandbox before they're delivered to a user's mailbox. It also evaluates links in Office documents for malicious URLs. Defender for Office 365 also protects links and files in SharePoint Online, OneDrive for Business, and Teams. If a malicious file is detected, Defender for Office 365  automatically locks that file to reduce potential damage.
 
-[Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is a unified endpoint security platform for preventative protection, post-breach detection, and automated investigation and response. MDATP provides built-in capabilities for discovery and protection of sensitive data on enterprise endpoints.
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is a unified endpoint security platform for preventative protection, post-breach detection, and automated investigation and response. Defender for Endpoint provides built-in capabilities for discovery and protection of sensitive data on enterprise endpoints.
 
 [Microsoft Cloud App Security (MCAS)](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) enables organizations to enforce policies at a granular level and to detect behavioral anomalies based on individual user profiles that are automatically defined by using machine learning. MCAS policies can build on Azure Conditional Access policies to protect sensitive company assets by evaluating additional signals related to user behavior and properties of the documents that are accessed. Over time, MCAS learns what's typical behavior for each employee with regard to the data they access and the applications they use. Based on learned behavior patterns, policies can then automatically enforce security controls if an employee acts outside of that behavioral profile. For example, if an employee typically accesses an accounting application from 9 AM to 5 PM Monday through Friday but suddenly starts to access that application heavily on a Sunday evening, MCAS can dynamically enforce policies to require the user to reauthenticate. This helps ensure that the user's credentials haven't been compromised. MCAS can also help identify "shadow IT" in the organization, which helps information security teams ensure that employees are using sanctioned tools when they work with sensitive data. Finally, MCAS can protect sensitive data anywhere in the Cloud, even outside the Microsoft 365 platform. It allows organizations to sanction (or unsanction) specific external Cloud apps, controlling access and monitoring usage.
  
-[Azure Advanced Threat Protection (AATP)](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. AATP enables SecOp analysts and security professionals detect advanced attacks in hybrid environments to:
+[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. AATP enables SecOp analysts and security professionals detect advanced attacks in hybrid environments to:
 * Monitor users, entity behavior, and activities by using learning-based analytics.
 * Protect user identities and credentials stored in Active Directory.
 * Identify and investigate suspicious user activities and advanced attacks throughout the kill chain.
 * Provide clear incident information on a simple timeline for fast triage.
 
-:::image type="content" source="../media/clo1717-corporate-office-021.jpg" alt-text="The office workers meet in a small conference room. One gives a presentation.":::
+![The office workers meet in a small conference room. One gives a presentation.](../media/clo1717-corporate-office-021.jpg)
  
 ## Govern data and manage records
 
@@ -285,7 +293,7 @@ Financial institutions are typically required to establish and maintain a superv
  
 * [FINRA Rule 3120 (Supervisory Control System)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) requires firms to have a system of supervisory control policies and procedures (SCPs) that validates their written supervisory procedures as defined by Rule 3110. Firms are required not only to have WSPs but also to have policies that test these procedures annually to validate their ability to ensure compliance with applicable securities laws and regulations. Risk-based methodologies and sampling may be used to define the scope of testing. Among other requirements, this rule requires firms to provide an annual report to senior management that includes a summary of test results and any significant exceptions or amended procedures in response to test results.
 
-:::image type="content" source="../media/wco18-desk-work-002.jpg" alt-text="An office worker views a chart and tables on a screen while others meet in the background.":::
+![An office worker views a chart and tables on a screen while others meet in the background.](../media/wco18-desk-work-002.jpg)
  
 ### Communication compliance
 
@@ -296,7 +304,7 @@ Communication compliance provides reports that enable policy review activities t
 
 In addition to complying with FINRA rules, communication compliance allows organizations to monitor communications for compliance with other legal requirements, corporate policies, and ethical standards. Communication compliance provides built-in threat, harassment, and profanity classifiers that help reduce false positives when reviewing communications, saving reviewers time during the investigation and remediation process. It also allows organizations to reduce risk by monitoring communications when they undergo sensitive changes, such as mergers and acquisitions or leadership changes.
 
-:::image type="content" source="../media/msc16-slalom-004.jpg" alt-text="An information worker focuses on a screen.":::
+![An information worker focuses on a screen.](../media/msc16-slalom-004.jpg)
  
 ## Protect against data exfiltration and insider risk
 
@@ -312,14 +320,14 @@ For example, insider risk management in Microsoft 365 can correlate signals from
 
 Insider risk management in Microsoft 365 significantly increases capabilities of organizations to monitor and investigate insider risks while allowing organizations to still meet data privacy regulations and follow established escalation paths when cases require higher-level action.
 
-:::image type="content" source="../media/clo17-call-center-006.jpg" alt-text="A call center worker in in a cubicle types while viewing a screen.":::
+![A call center worker in in a cubicle types while viewing a screen.](../media/clo17-call-center-006.jpg)
  
 ### Tenant restrictions
 Organizations that deal with sensitive data and put a strict emphasis on security typically want to control the online resources that users can access. At the same time, they want to enable secure collaboration through online services such as Office 365. As a result, controlling the Office 365 environments that users can access becomes a challenge because noncorporate Office 365 environments can be used to exfiltrate data from corporate devices either maliciously or inadvertently. Traditionally, organizations restrict the domains or IP addresses that users can access from corporate devices. But this doesn't work in a cloud-first world, where users need to legitimately access Office 365 services.
 
 Microsoft 365 provides the tenant [restrictions](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions) the capability to address this challenge. Tenant restrictions can be configured to restrict employee access to external Office 365 enterprise tenants using rogue identities (identities that aren't part of your corporate directory). Today, tenant restrictions apply across the tenant, allowing access to only those tenants that appear on the list that you configure. Microsoft is continuing to develop this solution to increase granularity of control and enhance the protections it provides.
 
-:::image type="content" source="../media/clo1717-corporate-office-001.jpg" alt-text="GRAPHIC":::
+![GRAPHIC](../media/clo1717-corporate-office-001.jpg)
  
 ## Conclusion
 

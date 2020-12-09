@@ -97,11 +97,15 @@ You can create protected messages from Outlook 2016, and Outlook 2013 for Window
 
 Microsoft 365 users can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS). You can also use the iOS native mail client if your organization allows it. If you are not a Microsoft 365 user, you can read and reply to encrypted messages on the web through your web browser.
   
+## Is there a size limit for messages you can send with OME?
+
+Yes. The maximum message size you can send with OME, including attachments, is 30 MB.
+
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
-You can attach any file type to a protected mail, however protection policies are applied only on the file formats mentioned in [File types supported by the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
-  
-If a file format is supported, such as a Word, Excel, or PowerPoint file, the file is always protected, even after the attachment has been downloaded by the recipient. For example, if an attachment is protected by Do Not Forward, and the original recipient downloads and forwards the attachment to a new recipient, the new recipient will not be able to open the protected file.
+You can attach any file type to a protected mail. With one exception, protection policies are applied only on the file formats mentioned in [File types supported by the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types). OME does not support the 97-2003 versions of the following Office programs: Word (.doc), Excel (.xls), and PowerPoint (.ppt).
+
+If a file format is supported, such as a Word, Excel, or PowerPoint file, the file is always protected, even after the attachment has been downloaded by the recipient. For example, say an attachment is protected by Do Not Forward. The original recipient downloads the file, creates a message to a new recipient and attaches the file. When the new recipient receives the file, the recipient will not be able to open the protected file.
   
 ## Are PDF file attachments supported?
 
@@ -111,7 +115,7 @@ For Outlook on the web, Outlook for iOS, and Outlook for Android, you can encryp
 
 Outlook desktop does not natively support encryption of PDF file attachments. Instead, you'll need to set up Exchange mail flow rules or DLP to apply encryption to PDF attachments first. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
 
-To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
@@ -183,9 +187,19 @@ The following table lists the supported clients for shared mailboxes.
 
 There are currently two known limitations:
 
-- We only support access provided by direct user assignment to the shared mailbox. We don't support assignment through an email enabled security group.
-
 - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
+
+- We don't support assignment through an email enabled security group. We only support access provided by direct user assignment to the shared mailbox and that automapping is enabled for Exchange Online. Automapping is enabled by default for Exchange Online.
+
+**To assign a user to the shared mailbox**
+
+1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
+
+2. Run the Add-MailboxPermission cmdlet with the Automapping parameter. This example gives Ayla full access permissions to a support mailbox.
+
+   ```powershell
+   Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
+   ```
 
 ## What do I do if I don’t receive the one-time pass code after I requested it?
 

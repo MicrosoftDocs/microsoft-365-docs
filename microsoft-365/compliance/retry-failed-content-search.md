@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
@@ -20,10 +20,11 @@ ms.custom: seo-marvel-apr2020
 
 # Retry a Content Search to resolve a content location error
 
-When you use Content Search in the security and compliance center to search a large number of mailboxes, you may get search errors that are similar to the following:
+When you use Content Search in the security and compliance center to search a large number of mailboxes, you may get search errors that are similar to the  error:
 
 ```text
 Error
+
 
 The search on the following locations failed:
 
@@ -36,7 +37,7 @@ These errors (with error codes of CS001-002, CS003-002, CS008-009, CS012-002, an
 
 ## Cause of content location errors
 
-When searching a large number of mailboxes, the search is distributed across thousands of servers in a Microsoft datacenter. At any one time, specific servers could be in reboot state or in the process of failing over to redundant copies. In either of these cases, the Content Search's request to retrieve data will timeout. In the previous example, the errors for the mailboxes that failed were the result of the search timing out.
+When searching a large number of mailboxes, the search is distributed across thousands of servers in a Microsoft datacenter. At any one time, specific servers could be in reboot state or in the process of failing over to redundant copies. In either of these cases, the Content Search's request to retrieve data will time out. In the previous example, the errors for the mailboxes that failed were the result of the search timing out.
 
 ## Resolving content location errors
 
@@ -48,7 +49,7 @@ This will result in the retrying the search only for the mailboxes that failed. 
 
 ## Tips to avoid content location errors
 
-Here are some addition causes of content location errors and some tips to help you avoid them when searching large numbers of mailboxes.
+Here are some additional causes of content location errors and some tips to help you avoid them when searching large numbers of mailboxes.
 
 - The mailbox being searched might be busy due to user activity. In this case, the search service might throttle itself to prevent the mailbox from becoming unavailable. To avoid this, try running searches during non-business hours.
 
@@ -61,6 +62,6 @@ Here are some addition causes of content location errors and some tips to help y
 
 - Too many searches are being performed on the same mailbox at the same time. If possible, try to run one search at a time on any one mailbox.
 
-- Searching too many mailboxes in a single search. The probability of content location errors increases when searching a very large number of mailboxes. If possible, try to run multiple searches so that each search includes a subset of  mailboxes in your organization.
+- Searching too many mailboxes in a single search. The probability of content location errors increases when searching a large number of mailboxes. If possible, try to run multiple searches so that each search includes a subset of  mailboxes in your organization.
 
 - Required maintenance is being performed on the mailbox. Though this cause probably occurs infrequently, wait a little while after receiving the content location error and then retry the search.

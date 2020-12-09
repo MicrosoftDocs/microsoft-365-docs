@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -42,7 +42,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Author|Author|Doc_authors|Author from the document metadata.|
 |BCC|Bcc|Email_bcc|Bcc field for message types. Format is **DisplayName \<SMTPAddress>**.|
 |CC|Cc|Email_cc|Cc field for message types. Format is **DisplayName \<SMTPAddress>**.|
-|Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](labels.md) applied to content in Office 365.|
+|Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](retention.md) applied to content in Office 365.|
 |Compound Path|CompoundPath|Compound_path|Human readable path that describes the source of the item.|
 |Content*|Content||Extracted text of the item.|
 |Conversation Body|Conversation Body||Conversation body of the item.|
@@ -89,12 +89,17 @@ The following table lists the metadata fields for documents in a review set in a
 |File system date created||File_system_date_created|Created date from file system (only applies to non-Office 365 data).|
 |File system date modified||File_system_date_modified|Modified date from file system (only applies to non-Office 365 data).|
 |File Type|FileType||File type of the item based on file extension.|
+|Group Id| GroupID|  |Group ID for grouped content.|
 |Has attachment|HasAttachment|Email_has_attachment|Indicates whether or not the message has attachments.|
 |Has attorney|HasAttorney||**True** when at least one of the participants is found in the attorney list; otherwise, the value is **False**.|
 |HasText*||Has_text|Indicates whether or not the item has text; possible values are **True** and **False**.|
 |Immutable ID||Immutable_ID|This Id is used to uniquely identify a document within a review set. This field can't be used in a review set search and the Id can't be used to access a document in its native location.|
 |Inclusive type|InclusiveType|Inclusive_type|Inclusive type calculated for analytics: **0** - not inclusive; **1** - inclusive; **2** - inclusive minus; **3** - inclusive copy.|
 |In Reply To Id||In_reply_to_ID|In reply to Id from the message.|
+|Is modern attachment| IsModernAttachment|  |This file is a modern attachment or linked file.|
+|Is from document version | IsFromDocumentVersion |  |Current document is from a different version of another document.|
+|Is email attachment | IsEmailAttachment|  |This item is from an email attachment that shows up as an attached item to the message.|
+|Is inline attachment| IsInlineAttachment|  |This was attached inline and shows up in the body of the message.|
 |Is Representative|IsRepresentative|Is_representative|One document in every set of exact duplicates is marked as representative.|
 |Item class|ItemClass|Item_class|Item class supplied by exchange server; for example, **IPM.Note**|
 |Last modified date|LastModifiedDate|Doc_date_modified|Last modified date from document metadata.|

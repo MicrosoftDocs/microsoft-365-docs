@@ -6,10 +6,11 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
+- m365solution-smb
 ms.custom: 
  - TopSMBIssues
  - seo-marvel-apr2020
@@ -20,6 +21,9 @@ search.appverid:
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
 ---
 # Responding to a Compromised Email Account
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.
 
@@ -61,11 +65,8 @@ If a user reports any of the above symptoms, you should perform further investig
 - **Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:
 
   - Review IP address
-
   - sign-in locations
-
   - sign-in times
-
   - sign-in success or failure
 
 ## How to secure and restore email function to a suspected compromised Microsoft 365 account and mailbox
@@ -78,31 +79,31 @@ You must perform all the following steps to regain access to your account the so
 
 ### Step 1 Reset the user's password
 
-> [!WARNING]
-> Do not send the new password to the intended user through email as the attacker still has access to the mailbox at this point.
+Follow the procedures in [Reset a business password for someone](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
 
-1. Follow the Reset a Microsoft 365 Apps for business password for someone else procedures in [Reset Microsoft 365 Apps for business passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
-
-**Notes**:
-
-- Make sure that the password is strong and that it contains upper and lowercase letters, at least one number, and at least one special character.
-
-- Don't reuse any of your last five passwords. Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.
-
-- If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
-
-> [!TIP]
-> We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  To learn more about MFA, go to [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> [!IMPORTANT]
+>
+> - Do not send the new password to the intended user through email as the attacker still has access to the mailbox at this point.
+>
+> - Make sure that the password is strong and that it contains upper and lowercase letters, at least one number, and at least one special character.
+>
+> - Don't reuse any of your last five passwords. Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.
+>
+> - If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
+>
+> - Be sure to update app passwords. App passwords aren't automatically revoked when a user account password reset. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+>
+> - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### Step 2 Remove suspicious email forwarding addresses
 
-1. Open the **Microsoft 365 admin center > Active Users**.
+1. Open the Microsoft 365 admin center at <https://admin.microsoft.com>
 
-2. Find the user account in question and expand **Mail Settings**.
+2. Go to **Users** \> **Active users**. Find the user account in question, and select the user (row) without selecting the checkbox.
 
-3. For **Email forwarding**, click **Edit**.
+3. In the details flyout that appears, select the **Mail** tab.
 
-4. Remove any suspicious forwarding addresses.
+4. If the value in the **Email forwarding** section is **Applied**, click **Manage email forwarding**. In the **Manage email forwarding** flyout that appears, clear **Forward all email sent to this mailbox**, and then click **Save changes**.
 
 ### Step 3 Disable any suspicious inbox rules
 
@@ -125,50 +126,50 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 > [!IMPORTANT]
 > You can block the suspected compromised account from signing-in until you believe it is safe to re-enable access.
 
-1. Go to the Microsoft 365 admin center.
+1. Open the Microsoft 365 admin center and go to **Users** \> **Active users**.
 
-2. In the Microsoft 365 admin center, select **Users**.
+2. Find and select the user account, click ![More icon](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
 
-3. Select the employee that you want to block, and then choose **Edit** next to **Sign-in status** in the user pane.
+3. On the **Block sign-in** pane that appears, select **Block this user from signing in**, and then click **Save changes**.
 
-4. On the **Sign-in status** pane, choose **Sign-in blocked** and then **Save**.
+4. Open the Exchange admin center (EAC) at <admin.protection.outlook.com/ecp/>, and go to **Recipients > Mailboxes**.
 
-5. In the Admin center, in the lower-left navigation pane, expand **Admin Centers** and select **Exchange**.
+5. Find and select the select the user. In the details pane, do the following steps:
 
-6. In the Exchange admin center, navigate to **Recipients > Mailboxes**.
+   - In the **Phone and voice features** section, do the following steps:
 
-7. Select the user, and on the user properties page, under **Mobile Devices**, click **Disable Exchange ActivcSync** and **Disable OWA for Devices** and answer **yes** to both.
+     - Select **Disable Exchange ActiveSync** and then click **Yes** in the warning that appears.
+     - Select **Disable OWA for Devices** and then click **Yes** in the warning that appears.
 
-8. Under **Email Connectivity**, **Disable** and answer **yes**.
+   - In the **Email Connectivity** section for Outlook on the web, click **Disable** and then click **Yes** in the warning that appears.
 
 ### Step 6 Optional: Remove the suspected compromised account from all administrative role groups
 
 > [!NOTE]
 > Administrative role group membership can be restored after the account has been secured.
 
-1. Sign in to the Microsoft 365 admin center with a global administrator account and open **Active Users**.
+1. Sign in with a global administrator account:
 
-2. Find the suspected compromised account and manually check to see if there are any administrative roles assigned to the account.
+2. In the Microsoft 365 admin center, do the following steps:
 
-3. Open the **Security & Compliance Center**.
+   1. Go to **Users** \> **Active users**.
+   2. Find and select the user account, click ![More icon](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
+   3. Remove any administrative roles that are assigned to the account. When you're finished, click **Save changes**.
 
-4. Click **Permissions**.
+3. In the Security & Compliance Center at <https://protection.office.com>, do the following steps:
 
-5. Manually review the role groups to see if the suspected compromised account is a member of any of them.  If it is:
+   Select **Permissions**, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
 
-   a. Click the role group and click **Edit Role Group**.
+   a. Click **Edit** next to **Members**.
+   b. On the **Editing Choose members** flyout that appears, click **Edit**.
+   c. In the **Choose members** flyout that appears, select the user account, and then click **Remove**. When you're finished, click **Done**, **Save**, and then **Close**.
 
-   b. Click **Chose Members** and **Edit** to remove the user from the role group.
+4. In the EAC at <admin.protection.outlook.com/ecp/>, do the following steps:
 
-6. Open the **Exchange admin center**.
+   Select **Permissions**, manually select each role group, and in the details pane, verify the user accounts in the **Members** section.  If the role group contains the user account, do the following steps:
 
-7. Click **Permissions**.
-
-8. Manually review the role groups to see if the suspected compromised account is a member of any of them. If it is:
-
-   a. Click the role group and click **Edit**.
-
-   b. Use the **members** section to remove the user from the role group.
+   a. Select the role group, click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).
+   b. In the **Member** section, select the user account, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif). When you're finished, click **Save**.
 
 ### Step 7 Optional: Additional precautionary steps
 

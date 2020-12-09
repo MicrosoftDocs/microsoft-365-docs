@@ -2,8 +2,8 @@
 title: "Sign in to Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
-ms.author: supotter
-author: supotter
+ms.author: sirkkuw
+author: sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: article
@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management 
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration

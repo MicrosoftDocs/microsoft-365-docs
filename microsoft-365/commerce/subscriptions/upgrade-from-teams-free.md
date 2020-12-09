@@ -20,6 +20,7 @@ ms.custom:
 search.appverid:
 description: "Learn how to upgrade from Microsoft Teams Free to a new Microsoft 365 for business subscription."
 ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 07/08/2020
 ---
 # Upgrade from Microsoft Teams Free to Microsoft 365 for business
 

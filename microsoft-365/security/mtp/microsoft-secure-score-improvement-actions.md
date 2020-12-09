@@ -1,7 +1,7 @@
 ---
-title: Gain visibility into your security posture through Microsoft Secure Score
+title: Assess your security posture through Microsoft Secure Score
 description: Describes how to take action to improve your Microsoft Secure Score in the Microsoft 365 security center.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -22,28 +22,30 @@ ms.custom:
 - seo-marvel-jun2020
 ---
 
-# Gain visibility into your security posture through Microsoft Secure Score
+# Assess your security posture with Microsoft Secure Score
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
 To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
-* Identity (Azure AD accounts & roles)
-* Data  (Microsoft Information Protection)
-* Device (Microsoft Defender ATP, known as [Configuration score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score))
+* Identity (Azure Active Directory accounts & roles)
+* Data  (no improvement actions for now)
+* Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 * Infrastructure (no improvement actions for now)
 
 >[!NOTE]
->In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+>In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-whats-new.md)
 
-In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
+In the Microsoft Secure Score overview page, see how points are split between these groups and what points are available. You can also get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
 ![Secure Score homepage](../../media/secure-score/secure-score-homepage-new.png)
 
 ## Check your current score
 
-To check on your current score, go to the Microsoft Secure Score overview page and look for the tile that says **Your secure score**. Your score will be shown as a percentage, along with the number of points you have achieved out of a total possible points.
+To check on your current score, go to the Microsoft Secure Score overview page and look for the tile that says **Your secure score**. Your score will be shown as a percentage, along with the number of points you've achieved out of a total possible points.
 
 Additionally, if you select the **Include** button next to your score, you can choose different views of your score. These different score views will display in the graph on the score tile and the point breakdown chart.
 
@@ -53,17 +55,17 @@ The following are scores you can add to your view of your overall score to give 
 - **Current license score**: Show score that can be achieved with your current Microsoft license
 - **Achievable score**: Show score that can be achieved with your Microsoft licenses and current risk acceptance
 
-This is what it will look like if you have included all possible score views:
+This view is what it will look like if you've included all possible score views:
 
 ![Your secure score including planned score, current license score, and achievable score](../../media/secure-score/your-secure-score.png)
 
 ## Take action to improve your score
 
-The **Improvement actions** tab lists the security recommendations that address possible attack surfaces, along with their status (to address, planned, risk accepted, resolved through third party, resolved through alternate mitigation, and completed). You can search, filter, and group all the improvement actions.  
+The **Improvement actions** tab lists the security recommendations that address possible attack surfaces. It also includes their status (to address, planned, risk accepted, resolved through third party, resolved through alternate mitigation, and completed). You can search, filter, and group all the improvement actions.  
 
 ### Ranking
 
-Ranking is based on the number of remaining points left to achieve, implementation difficulty, user impact, and complexity. The highest ranked improvement actions have a large number of points remaining with low difficulty, user impact, and complexity.
+Ranking is based on the number of points left to achieve, implementation difficulty, user impact, and complexity. The highest ranked improvement actions have a large number of points remaining with low difficulty, user impact, and complexity.
 
 ### View improvement action details
 
@@ -74,45 +76,46 @@ When you select a specific improvement action, a full page flyout appears.
 
 To complete the action, you have a few options:
 
-* Select **Manage** to go the configuration screen and make the change. You will then gain the points that the action is worth, visible in the fly out. Points generally take about 24 hours to update.
+* Select **Manage** to go the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the fly out. Points generally take about 24 hours to update.
 
-* Select **Share** to copy the direct link to the improvement action, or choose the platform to share the link such as email, Microsoft Teams, Microsoft Planner, or ServiceNow. Selecting ServiceNow will let you create a change ticket which will be visible in ServiceNow and the Microsoft 365 security center home. To learn more, see [Microsoft 365 security center and ServiceNow integration](tickets-security-center.md).
+* Select **Share** to copy the direct link to the improvement action. You can also choose the platform to share the link, such as email, Microsoft Teams, Microsoft Planner, or ServiceNow. Selecting ServiceNow will let you create a change ticket that will be visible in ServiceNow and the Microsoft 365 security center home. To learn more, see [Microsoft 365 security center and ServiceNow integration](tickets-security-center.md).
 
 ### Choose an improvement action status
 
-Choose any statuses and record notes specific to the improvement action. The statues you can select are the following:
+Choose any statuses and record notes specific to the improvement action.
 
-* **To address** — You recognize that the improvement action is necessary and plan to address it at some point in the future. This state also applies to actions which are detected as partially, but not fully completed.
-* **Planned** — There are concrete plans in place to complete the improvement action.
-* **Risk accepted** — Security should always be balanced with usability, and not every recommendation will work for your environment. When that is the case, you can choose to accept the risk, or the remaining risk, and not enact the improvement action. You will not be given any points, but the action will no longer be visible in the list of improvement actions. You can view this action in history or undo it at any time.
-* **Resolved through third party** and **Resolved through alternate mitigation** — The improvement action has already been addressed by a third-party application or software, or an internal tool. You will gain the points that the action is worth, so your score better reflects your overall security posture. If a third party or internal tool no longer covers the control, you can choose another status. Please keep in mind, Microsoft will have no visibility into the completeness of implementation if the improvement action is marked as either of these statuses.
+- **To address** - You recognize that the improvement action is necessary and plan to address it at some point in the future. This state also applies to actions that are detected as partially, but not fully completed.
+- **Planned** - There are concrete plans in place to complete the improvement action.
+- **Risk accepted** - Security should always be balanced with usability, and not every recommendation will work for your environment. When that is the case, you can choose to accept the risk, or the remaining risk, and not enact the improvement action. You won't be given any points, but the action will no longer be visible in the list of improvement actions. You can view this action in history or undo it at any time.
+- **Resolved through third party** and **Resolved through alternate mitigation** - The improvement action has already been addressed by a third-party application or software, or an internal tool. You'll gain the points that the action is worth, so your score better reflects your overall security posture. If a third party or internal tool no longer covers the control, you can choose another status. Keep in mind, Microsoft will have no visibility into the completeness of implementation if the improvement action is marked as either of these statuses.
 
 #### Threat & Vulnerability Management improvement actions
 
-For improvement actions in the "Device" category, you will not be able to choose statuses. Instead, you will be directed to the associated [Threat & Vulnerability Management (TVM) security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) to take action. The exception you choose and justification you write will specific to that portal, and will not be present in the Microsoft Secure Score portal.
+For improvement actions in the "Device" category, you won't be able to choose statuses. Instead, you'll be directed to the associated [Threat & Vulnerability Management (TVM) security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) to take action. The exception you choose and justification you write will be specific to that portal. It won't be present in the Microsoft Secure Score portal.
 
 #### Completed improvement actions
 
-Improvement actions have a "completed" status once all possible points for the improvement action have been achieved. Completed improvement actions are confirmed though Microsoft data, and you will not be able to change the status.
+Improvement actions have a "completed" status once all possible points for the improvement action have been achieved. Completed improvement actions are confirmed though Microsoft data, and you won't be able to change the status.
 
 ### Assess information and review user impact
 
-The **At a glance** section will tell you the category, attacks it can protect against, and the product.
+The section called **At a glance** will tell you the category, attacks it can protect against, and the product.
 
 The **User impact** shows what the users will experience if the improvement action is enacted, and **Users affected​** shows who will experience it.
 
 ### Implement the improvement action
 
-The **Implementation** section shows any prerequisites, step by step next steps to complete the improvement action, the current implementation status of the improvement action, and any learn more links.
+The **Implementation** section shows any prerequisites, step-by-step next steps to complete the improvement action, the current implementation status of the improvement action, and any learn more links.
 
-Prerequisites will be any licenses that need to be obtained or actions that need to be completed before the improvement action is addressed. Make sure you have enough seats in your license to complete the improvement action and that those licenses are applied to the necessary users.  
+Prerequisites include any licenses that need to be obtained or actions that need to be completed before the improvement action is addressed. Make sure you have enough seats in your license to complete the improvement action and that those licenses are applied to the necessary users.  
 
 ## We want to hear from you
 
-If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
+If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
 
 ## Related resources
 
 - [Microsoft Secure Score overview](microsoft-secure-score.md)
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
+- [What's new](microsoft-secure-score-whats-new.md)

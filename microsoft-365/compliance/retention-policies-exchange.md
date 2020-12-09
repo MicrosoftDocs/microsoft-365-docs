@@ -16,32 +16,40 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about retention behavior that applies specifically to Exchange email and Exchange public folders."
+description: "Learn how retention works for Exchange."
 ---
 
-# Learn about retention policies for Exchange
+# Learn about retention for Exchange
 
-The information in this article supplements [Learn about retention policies](retention-policies.md) because it has information that's specific to Exchange.
+The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.  For other workloads, see:
 
-## How a retention policy works with Exchange
+- [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
+- [Learn about retention for Microsoft Teams](retention-policies-teams.md)
+- [Learn about retention for Yammer](retention-policies-yammer.md)
 
-For a user's mail, calendar, and other mailbox items, a retention policy is applied at the level of a mailbox.
+## What's included for retention and deletion
 
-For public folders, a retention policy is applied to all public folders and not at the folder or mailbox level.
+The following Exchange items can be retained and deleted by using retention policies and retention labels: Mail messages (includes drafts) with any attachments, tasks when they have an end date, and notes. 
 
-When you configure a retention policy for these locations, the following mail items are included: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. Contacts, and any tasks and calendar items that don't have an end date are not included. Other items stored in a mailbox, such as Skype and Teams saved messages, are included with their separate retention policy.
+Calendar items that have an end date are supported for retention policies but aren't supported for retention labels.
+
+Contacts, and any tasks and calendar items that don't have an end date are not supported.
+
+Other items stored in a mailbox, such as Skype and Teams messages, aren't included in retention policies or labels for Exchange. These items have their own retention policies.
+
+## How retention works for Exchange
 
 Both a mailbox and a public folder use the [Recoverable Items folder](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) to retain items. Only people who have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.
   
 When a person deletes a message in a folder other than the Deleted Items folder, by default, the message moves to the Deleted Items folder. When a person deletes an item in the Deleted Items folder, the message is moved to the Recoverable Items folder. However, a user can soft delete an item (Shift+Delete) in any folder, which bypasses the Deleted Items folder and moves the item directly to the Recoverable Items folder.
   
-When you apply a retention policy to an Exchange location, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy, the item is permanently deleted (also called hard deleted) from the Recoverable Items folder.
+When you apply retention settings to Exchange data, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy or retention label, the item is permanently deleted (also called hard deleted) from the Recoverable Items folder.
 
 The timer job can take up to seven days to run and the Exchange location must contain at least 10 MB.
   
 When a user attempts to change properties of a mailbox item—such as the subject, body, attachments, senders and recipients, or date sent or received for a message—a copy of the original item is saved to the Recoverable Items folder before the change is committed. This action happens for each subsequent change. At the end of the retention period, copies in the Recoverable Items folder are permanently deleted.
 
-After a retention policy is assigned to a mailbox or public folder, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
+After retention settings are applied to Exchange content, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
 
 When the retention settings are to retain and delete:
 
@@ -65,24 +73,15 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 2. **If the item is deleted** during the configured period: The item is immediately moved to the Recoverable Items folder. If a user deletes the item from there or empties the Recoverable Items folder, the item is permanently deleted. Otherwise, the item is permanently deleted after being in the Recoverable Items folder for 14 days. 
 
-## Excluding specific types of Exchange items from a retention policy
-
-By using PowerShell, you can exclude specific types of Exchange items from a retention policy when the retention settings are for retain-only. For example, you can exclude voicemail messages, IM conversations, and other Skype for Business Online content in mailboxes. You can also exclude calendar, note, and task items. This capability is available only by using PowerShell; it's not available when you create a retention policy by using the wizard in the Microsoft 365 compliance center.
-  
-To exclude your selected types for Exchange items in a retention policy, use the  `ExcludedItemClasses` parameter with the [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) and  [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlets.
-
-To use the retention policies cmdlets, you must first [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
-
 ## When a user leaves the organization 
 
-If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Microsoft 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
+If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Microsoft 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
 
-## How to configure a retention policy for Exchange
+## Configuration guidance
 
-Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations**  page of the wizard, select one of the following options:
+If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
 
-- **Apply policy only to content in Exchange email, public folders, Office 365 groups, OneDrive and SharePoint documents**
-
-- **Let me choose specific locations** > **Exchange email**, **Exchange public folders**, and **Office 365 groups**.
-
-Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Office 365 groups** location.
+If you're ready to configure a retention policy or retention label for Exchange, see the following instructions:
+- [Create and configure retention policies](create-retention-policies.md)
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)

@@ -94,7 +94,7 @@ Here's an illustration and description of the complete PST import process. The i
     
   - Use [eDiscovery cases](ediscovery-cases.md) to manage your organization's legal investigations 
     
-  - Use [retention policies](retention-policies.md) in the Security & Compliance Center to control how long mailbox content is retained, and then delete content after the retention period expires. 
+  - Use [retention policies](retention.md) in the Security & Compliance Center to control how long mailbox content is retained, and then delete content after the retention period expires. 
 
   - Use [Communication compliance policies](communication-compliance.md) to examine messages to make sure they are compliant with message standards and add a classification type.
     
@@ -141,7 +141,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
   
  **Where is network upload available?**
   
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
+Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Switzerland, Norway, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
   
  **What is the pricing for importing PST files by using network upload?**
   

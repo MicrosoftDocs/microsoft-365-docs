@@ -27,7 +27,7 @@ description: "Learn how usage analytics connects to an API and provides monthly 
 
 ## Data for the Microsoft 365 usage analytics tables
 
-Microsoft 365 usage analytics connects to an API which exposes a multidimensional data model. The APIs are in preview and can be accessed at `https://reports.office.com/pbi/v1.0/\<tenantid\>` (replace the \<tenant id\> with your tenant GUID). 
+Microsoft 365 usage analytics connects to an API that exposes a multidimensional data model. The APIs are in preview and can be accessed at `https://reports.office.com/pbi/v1.0/\<tenantid\>` (replace the \<tenant id\> with your tenant GUID). 
   
 > [!NOTE]
 > For more information, see [Working with Microsoft 365 usage reports in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=864336). 
@@ -39,22 +39,22 @@ This API provides information about the monthly trend of usage of the various Mi
 |**Table name**|**Information in the table**|**Date range**|
 |:-----|:-----|:-----|
 |Tenant Product Usage  <br/> |Contains monthly totals of enabled, active users, month-over-month retained users, first-time users, and the cumulative active users.  <br/> |Contains monthly aggregated data for a rolling 12-month period including the current partial month.  <br/> |
-|Tenant Product Activity  <br/> |Contains monthly totals of activity and active user count for various activity within the products.  <br/> See [active user definition](active-user-in-usage-reports.md) for information about the activities within a product that are returned in this data table.  <br/> |Contains monthly aggregated data for a rolling 12-month period including the current partial month.  <br/> |
+|Tenant Product Activity  <br/> |Contains monthly totals of activities and active user count for various activities within the products.  <br/> See [active user definition](active-user-in-usage-reports.md) for information about the activities within a product that are returned in this data table.  <br/> |Contains monthly aggregated data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant Office Licenses  <br/> |Contains data about number of Microsoft Office subscriptions assigned to users  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
-|Tenant Mailbox Usage  <br/> |Contains data about the user's mailbox, in terms of total mailbox count and how storage is used.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
+|Tenant Mailbox Usage  <br/> |Contains data about the user's mailbox, for total mailbox count and how storage is used.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant Client Usage  <br/> |Contains data about the number of users actively using specific client/devices to connect to Exchange Online, Skype for Business and Yammer.  <br/> |Contains monthly aggregated data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant SharePoint Online Usage  <br/> |Contains data about the SharePoint sites, covering Team or Groups sites such as total number of sites, number of documents on site, file count by activity type and storage used.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant OneDrive for Business Usage  <br/> |Contains data about the OneDrive accounts such as number of accounts, number of documents across OneDrives, storage used, file count by activity type.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant Microsoft 365 Groups Usage  <br/> |Contains data about Microsoft 365 Groups usage including Mailbox, SharePoint, and Yammer.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant Office Activation  <br/> |Contains data about number of Office subscription activations, count of activation per device (Android/iOS/Mac/PC), activations by service plan, for example, Microsoft 365 Apps for enterprise, Visio, Project.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
-|User State  <br/> |Contains metadata about users, including user display name, products assigned, location, department, title, company. This data is about users who were assigned a licenses during the last complete month . Every user is uniquely represented by a user ID.  <br/> |This data is about users that had a license assigned during the last complete month.  <br/> |
+|User State  <br/> |Contains metadata about users, including user display name, products assigned, location, department, title, company. This data is about users who were assigned a license during the last complete month. Every user is uniquely represented by a user ID.  <br/> |This data is about users that had a license assigned during the last complete month.  <br/> |
 |User Activity  <br/> |Contains per-user level information about activity performed by licensed users.  <br/> See [active user definition](active-user-in-usage-reports.md) for information about the activities within a product that are returned in this data table.  <br/> |This data is about users that performed an activity in any of the services during the last complete month.  <br/> |
    
 Expand the following sections to see the detailed information for each data table.
   
 ### Data table - User State
 
-This table provides user level details for all users that have an license assigned to them during the last complete month. It brings in data from the Azure Active Directory.
+This table provides user level details for all users that have a license assigned to them during the last complete month. It brings in data from the Azure Active Directory.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
@@ -62,7 +62,7 @@ This table provides user level details for all users that have an license assign
 |Timeframe  <br/> |Month value for which this table has data for.  <br/> |
 |UPN  <br/> |User principal name, uniquely identifies the user to be able to join with other external data sources.  <br/> |
 |DisplayName  <br/> |User's display name.  <br/> |
-|IDType  <br/> |ID type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this users connects to Yammer with their Yammer ID and not their Microsoft 365 ID  <br/> |
+|IDType  <br/> |ID type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this user connects to Yammer with their Yammer ID and not their Microsoft 365 ID  <br/> |
 |HasLicenseEXO  <br/> |Set to true if user is assigned a license and enabled to use Exchange.  <br/> |
 |HasLicenseODB  <br/> |Set to true if user is assigned a license and enabled to use OneDrive for Business.  <br/> |
 |HasLicenseSPO  <br/> |Set to true if user is assigned a license and enabled to use SharePoint Online.  <br/> |
@@ -78,7 +78,7 @@ This table provides user level details for all users that have an license assign
 |Title  <br/> |Title data represented in Azure Active Directory for this user.  <br/> |
 |Deleted  <br/> |True if the user has been deleted from Microsoft 365 in that last complete month.  <br/> |
 |DeletedDate  <br/> |Date when the user was deleted from Microsoft 365.  <br/> |
-|YAM_State  <br/> |States of the user in the Yammer system, can be active, deleted or suspended.  <br/> |
+|YAM_State  <br/> |States of the user in the Yammer system, can be active, deleted, or suspended.  <br/> |
 |YAM_ActivationDate  <br/> |Date the user entered the state of being active in Yammer.  <br/> |
 |YAM_DeletionDate  <br/> |Date the user entered the state of being deleted in Yammer.  <br/> |
 |YAM_SuspensionDate  <br/> |Date the user entered the state of being suspended in Yammer.  <br/> |
@@ -89,15 +89,15 @@ This table contains data about each user who had an activity in any of the servi
   
 |**Column name**|**Column description**|
 |:-----|:-----|
-|UserID  <br/> |Unique user id that represents a user and enables joining with other data tables within the data set.  <br/> |
-|IDType  <br/> |Id type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this users connects to Yammer with their Yammer ID and not their Microsoft 365 ID  <br/> |
+|UserID  <br/> |Unique user ID that represents a user and enables joining with other data tables within the data set.  <br/> |
+|IDType  <br/> |ID type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this user connects to Yammer with their Yammer ID and not their Microsoft 365 ID  <br/> |
 |Timeframe  <br/> |Month value for which this table represents data for.  <br/> |
 |EXO_EmailSent  <br/> |Number of emails sent.  <br/> |
 |EXO_EmailReceived  <br/> |Number of emails received.  <br/> |
-|EXO_EmailRead  <br/> |Number of email read activity the user performed, it could be multiple times reading the an already read email, or an email received previously.  <br/> |
+|EXO_EmailRead  <br/> |Number of emails read activity the user performed, it could be multiple times reading an already read email, or an email received previously.  <br/> |
 |EXO_AppointmentCreated  <br/> |Number of appointments created.  <br/> |
 |EXO_MeetingAccepted  <br/> |Number of meetings accepted.  <br/> |
-|EXO_MeetingCancelled  <br/> |Number of meetings cancelled.  <br/> |
+|EXO_MeetingCancelled  <br/> |Number of meetings canceled.  <br/> |
 |EXO_MeetingDeclined  <br/> |Number of meetings declined.  <br/> |
 |EXO_MeetingSent  <br/> |Number of meetings sent.  <br/> |
 |ODB_FileViewedModified  <br/> |Number of files this user interacted with on any OneDrive for Business (for example, created, updated, deleted, viewed, or downloaded).  <br/> |
@@ -129,31 +129,34 @@ This table contains data about each user who had an activity in any of the servi
 |Teams_CallParticipate  <br/> |Number of calls the user participated in.  <br/> |
 |Teams_MeetingParticipate  <br/> |Number of meetings the user joined.  <br/> |
 |Teams_HasOtherAction  <br/> |Boolean value if the user performed other actions in Microsoft Teams.  <br/> |
-|YAM_MessagePost  <br/> |Number of Yammer message this user posted.  <br/> |
-|YAM_MessageLiked  <br/> |Number of Yammer message this user liked.  <br/> |
-|YAM_MessageRead  <br/> |Number of Yammer message this user read.  <br/> |
+|YAM_MessagePost  <br/> |Number of Yammer messages this user posted.  <br/> |
+|YAM_MessageLiked  <br/> |Number of Yammer messages this user liked.  <br/> |
+|YAM_MessageRead  <br/> |Number of Yammer messages this user read.  <br/> |
 |SFB_P2PSummary  <br/> |Number of peer-to-peer sessions this user took part in.  <br/> |
 |SFB_ConfOrgSummary  <br/> |Number of conference sessions this user organized.  <br/> |
 |SFB_ConfPartSummary  <br/> |Number of conference sessions this user participated in.  <br/> |
+
+> [!NOTE]
+> Teams_HasOtherAction means user is considered active but has a zero value for the Chat Messages, 1:1 calls, Channel Messages, Total Meetings, and Meetings organized.
    
 ### Data table - Tenant Product Usage
 
-This table provides month-over-month adoption data in terms of enable, active, returning and first-time users for each product within Microsoft 365. The Microsoft 365 value represent active usage in either of the products.
+This table provides month-over-month adoption data in terms of enable, active, returning, and first-time users for each product within Microsoft 365. The Microsoft 365 values represent active usage in either of the products.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
 |Product  <br/> |Name of products for which the usage information is summarized. Microsoft 365 value in the product column represents activity across any of the products  <br/> |
 |Timeframe  <br/> |Month value. There will be one row per product per month for the last 12 months including the current partial month.  <br/> |
-|EnabledUsers  <br/> |Number of users enabled to use the product for the timeframe value, If a user was enabled for portion of the month, they are still counted.  <br/> |
-|ActiveUsers  <br/> |Number of users who performed an intentional activity in the product for the timeframe value.  <br/> A user is counted as active for a product in a particular month, if they have performed one of the key activities in the product. The key activities are available in the **Tenant Product Activity** table.  <br/> |
+|EnabledUsers  <br/> |Number of users enabled to use the product for the time-frame value, if a user was enabled for portion of the month, they are still counted.  <br/> |
+|ActiveUsers  <br/> |Number of users who performed an intentional activity in the product for the time-frame value.  <br/> A user is counted as active for a product in a particular month, if they have performed one of the key activities in the product. The key activities are available in the **Tenant Product Activity** table.  <br/> |
 |CumulativeActiveUsers  <br/> |Number of users who are enabled to use a product and have used the product up to the timeframe month at least once since data collection started in the new usage system.  <br/> |
 |MoMReturningUsers  <br/> |Number of users who are active in the timeframe month and also were active in the previous month.  <br/> |
-|FirstTimeUsers  <br/> |Number of users who became active in the timeframe for the first time since data collection in the new usage system.  <br/> A user is counted as a first-time user in a particular month, if we detect their activity for the first time since the beginning of data collection in this new reporting system. Once counted as a first-time user, even if this user has a big gap in their activity they will never be counted again as a first-time user  <br/> |
+|FirstTimeUsers  <br/> |Number of users who became active in the timeframe for the first time since data collection in the new usage system.  <br/> A user is counted as a first-time user in a particular month, if we detect their activity for the first time since the beginning of data collection in this new reporting system. Once counted as a first-time user, even if this user has a large gap in their activity they will never be counted again as a first-time user  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
    
 ### Data table - Tenant Product Activity
 
-This table provides monthly totals of activity and active user count for various activity within the products.
+This table provides monthly totals of activity and active user count for various activities within the products.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
@@ -167,19 +170,19 @@ This table provides monthly totals of activity and active user count for various
    
 ### Data table - Tenant Mailbox Usage
 
-This table consists of summary data across all licensed Exchange Online users who have a user mailboxes. It contains end of month state across all user mailboxes. The data in this table is not additive across multiple months. Latest month's data in this table represents the most recent state.
+This table consists of summary data across all licensed Exchange Online users who have a user mailbox. It contains end of month state across all user mailboxes. The data in this table is not additive across multiple months. Latest month's data in this table represents the most recent state.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
 |TotalMailboxes  <br/> |Number of user mailboxes for Microsoft 365 subscription.  <br/> |
-|IssueWarningQuota  <br/> |Total quota for issuing warning across all users mailboxes.  <br/> |
+|IssueWarningQuota  <br/> |Total quota for issuing warning across all users' mailboxes.  <br/> |
 |ProhibitSendQuota  <br/> |Total quota for prohibit send across all user mailboxes.  <br/> |
 |ProhibitSendReceiveQuota  <br/> |Total quota for prohibit send receive quota across all user mailboxes.  <br/> |
 |TotalItemBytes  <br/> |Amount of storage used across all user mailboxes in bytes.  <br/> |
 |MailboxesNoWarning  <br/> |Number of user mailboxes that were under the storage warning limit.  <br/> |
 |MailboxesIssueWarning  <br/> |Number of user mailboxes that were issued a warning for storage quota.  <br/> |
 |MailboxesExceedSendQuota  <br/> |Number of user mailboxes that have exceeded the send quota.  <br/> |
-|MailboxesExceedSendReceiveQuota  <br/> |Number of user mailboxes that have exceeded the send/receive quota .  <br/> |
+|MailboxesExceedSendReceiveQuota  <br/> |Number of user mailboxes that have exceeded the send/receive quota.  <br/> |
 |DeletedMailboxes  <br/> |Number of users mailboxes deleted in the timeframe.  <br/> |
 |Timeframe  <br/> |Month value.  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
@@ -198,7 +201,7 @@ This table provides month-over-month summary data about the clients that the use
    
 ### Data table - Tenant SharePoint Online Usage
 
-This table consists of month over month summary data about the usage or activity of SharePoint Online sites. This only covers Team Sites and Group sites. The end of month state of SharePoint Online sites is represented in this column, for example, if a user created a 5 documents and used 10 MB for total storage , and then deleted some files, and added more files so that at the end of month state for files is 7 total that use 5MB of storage, the value of represented in this table is end of month state. This table is hidden to avoid duplicate count of aggregations and is used as a source to create two reference tables.
+This table consists of month over month summary data about the usage or activity of SharePoint Online sites. This only covers Team Sites and Group sites. The end of month state of SharePoint Online sites is represented in this column, for example, if a user created a five documents and used 10 MB for total storage, and then deleted some files, and added more files so that at the end of month state for files is seven total that use five MB of storage, the value of represented in this table is end of month state. This table is hidden to avoid duplicate count of aggregations and is used as a source to create two reference tables.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
@@ -206,23 +209,23 @@ This table consists of month over month summary data about the usage or activity
 |TotalSites  <br/> |Number of sites that existed at the end of the timeframe.  <br/> |
 |DocumentCount  <br/> |Total number of documents that existed on the site at the end of the timeframe.  <br/> |
 |Diplansed  <br/> |Total storage used summed across all sites at the end of the timeframe.  <br/> |
-|ActivityType  <br/> |Number of sites that recorded the various types of file activity (any/active files/ files shared EXT/INT/files synched).  <br/> Any represents any of the file activity was performed.  <br/> |
-|SitesWithOwnerActivities  <br/> |Number of active sites, where the site owner performed a particular file activity on their own sites.  <br/> |
-|SitesWithNonOwnerActivities  <br/> |Number of active sites summed up for the month, where the users other than the site owner performed a particular file activity on sites.  <br/> |
+|ActivityType  <br/> |Number of sites that recorded the various types of file activity (any/active files/ files shared EXT/INT/files synched).  <br/> Represents any of the file activity that was performed.  <br/> |
+|SitesWithOwnerActivities  <br/> |Number of active sites, where the site owner performed a particular file activity on their own sites. You can get the site owner from the PowerShell command **get-sposite**. This is the person who is responsible for the site.   <br/> |
+|SitesWithNonOwnerActivities  <br/> |Number of active sites summed up for the month, where the users other than the site owner performed a particular file activity on sites. You can get the site owner from the PowerShell command **get-sposite**. This is the person who is responsible for the site. <br/> |
 |ActivityTotalSites  <br/> |Number of sites that recorded any activity during the timeframe. If a site that had activity earlier in the timeframe, and was deleted by the end of the timeframe, it would still be counted in the active site total for that timeframe.  <br/> |
 |Timeframe  <br/> |This column has the date value. Used as Many to one relationship for Calendar table.  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
    
 ### Data table - Tenant OneDrive Usage
 
-This table provides data about the OneDrive accounts such as number of accounts, number of documents across OneDrive accounts, storage used, file count by activity type. The end of month state of OneDrive for Business accounts is represented in this table. For example, if a user created a 5 documents that used 10 MB of storage, and then deleted a few and added more files so that at the end of month he has 7 files that use 5 MB of storage, then the end of the month value is represented in this table at the end of the month.
+This table provides data about the OneDrive accounts such as number of accounts, number of documents across OneDrive accounts, storage used, file count by activity type. The end of month state of OneDrive for Business accounts is represented in this table. For example, if a user created a Five documents that used 10 MB of storage, and then deleted a few and added more files so that at the end of month they have seven files that use Five MB of storage, then the end of the month value is represented in this table at the end of the month.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
 |SiteType  <br/> |Value is "OneDrive".  <br/> |
 |TotalSites  <br/> |Number of OneDrive for Business accounts that existed at the end of the timeframe.  <br/> |
 |DocumentCount  <br/> |Total number of documents that existed across all OneDrive for Business accounts at the end of the timeframe  <br/> |
-|Diplansed  <br/> |Total storage used summed across all OneDrive account at the end of the timeframe .  <br/> |
+|Diplansed  <br/> |Total storage used summed across all OneDrive account at the end of the timeframe.  <br/> |
 |ActivityType  <br/> |Number of accounts that recorded the various types of file activity (any/active files/ files shared EXT/INT/files synched).  <br/> Any represents any of the file activity was performed  <br/> |
 |SitesWithOwnerActivities  <br/> |Number of active OneDrive for Business accounts, where the account owner performed a particular file activity on their own account.  <br/> |
 |SitesWithNonOwnerActivities  <br/> |Count of OneDrive for Business accounts where file activity was performed by users other than the owner of the account.  <br/> |
@@ -249,9 +252,9 @@ This table provides data about how Microsoft 365 Groups is used across the organ
 |MBX_StorageUsed  <br/> |Quantity of mailbox storage used.  <br/> |
 |SPO_TotalGroups  <br/> |Number of SharePoint groups.  <br/> |
 |SPO_ActiveGroups  <br/> |Number of active SharePoint groups.  <br/> |
-|SPO_FileAccessedActiveGroups  <br/> |Number of SharePoint groups which have file accessed activities.  <br/> |
-|SPO_FileSyncedActiveGroups  <br/> |Number of SharePoint groups which have file synchronized activities.  <br/> |
-|SPO_FileSharedInternallyActiveGroups  <br/> |Number of SharePoint groups which have shared activities internally, or with groups (that might include external users).  <br/> |
+|SPO_FileAccessedActiveGroups  <br/> |Number of SharePoint groups that have file accessed activities.  <br/> |
+|SPO_FileSyncedActiveGroups  <br/> |Number of SharePoint groups that have file synchronized activities.  <br/> |
+|SPO_FileSharedInternallyActiveGroups  <br/> |Number of SharePoint groups that have shared activities internally, or with groups (that might include external users).  <br/> |
 |SPO_FileSharedExternallyActiveGroups  <br/> |Number of SharePoint groups which have shared externally activities.  <br/> |
 |SPO_TotalActivities  <br/> |Number of SharePoint activities.  <br/> |
 |SPO_FileAccessedActivities  <br/> |Number of SharePoint file accessed activities.  <br/> |

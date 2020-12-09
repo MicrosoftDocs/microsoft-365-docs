@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,7 +13,8 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
+- m365solution-scenario
 ms.custom: 
 description: Determine the data privacy regulations, the relevant scenarios, your readiness, and the sensitive information types that are in your Microsoft 365 environment.
 ---
@@ -73,7 +74,7 @@ For later reference in the articles of this overall solution, this table provide
 |||||
 
 >[!Important]
->This is not intended to be an exhaustive list. Refer to [Compliance Manager](../compliance/compliance-manager-overview.md) or your legal or compliance advisor for further information on the applicability of the cited sections to the technical control categories listed.
+>This is not intended to be an exhaustive list. Refer to [Compliance Manager](../compliance/compliance-manager.md) or your legal or compliance advisor for further information on the applicability of the cited sections to the technical control categories listed.
 >
 
 ## Knowing your data
@@ -93,6 +94,8 @@ Data also moves around over time as it is processed, refined, and other versions
 To address data privacy regulations, you can’t rely on general notions of where you think personal data might exist, either now or in the future. Data privacy regulations require that organizations prove that they know where personal data is on an ongoing basis. This makes it important to take an initial snapshot of all your data sources for possible storage of personal information, including your Microsoft 365 environment, and establish mechanisms for ongoing monitoring and detection.
 
 If you have not already assessed your overall readiness and risk associated with data privacy regulations, use the following 3-step framework to get started. 
+
+![Steps to assess your overall readiness and risk associated with data privacy regulations](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 >[!Note]
 >This article and its content are not meant to take the place of legal advisory services. It just provides some basic guidance and links to tools that may be of assistance in the early stages of your assessment.
@@ -161,7 +164,7 @@ Understanding your exposure to risk and data privacy regulation is an important 
 
 If you don't have personal data from consumers in your Microsoft 365 environment or it is confined to certain parts of the environment and the need for a technical control is predicated on there being consumer-type data exposure, then that technical control may only need to be employed in high risk parts of the environment, not everywhere.
 
-While an external organization or standard control set recommendation, such as from Compliance Score in Microsoft 365, may help inform your control strategy, your choice of implementation should be driven by data inventory awareness to quantify your real risk exposure.
+While an external organization or standard control set recommendation, such as from Compliance Manager in Microsoft 365, may help inform your control strategy, your choice of implementation should be driven by data inventory awareness to quantify your real risk exposure.
 
 Most organizations will have some exposure to one of the above scenarios. Taking a holistic approach to assessment is important.
 
@@ -173,7 +176,7 @@ Organizations subject to other data privacy regulations, such as CCPA in the Uni
 
 GDPR assessment consists of these sections:
 
-| | |
+| Section | Description |
 |:-------|:-----|
 | Governance | <ol><li>Does your privacy policy explicitly state what data information is being processed? </li><li>Do you regularly run Privacy Impact Assessments (PIAs)? </li><li> Do you use a tool to manage personal information (PI)? </li><li> Do you have legal authority to conduct business using PI data on any given individual? Do you track consent for data? </li><li> Do you track, implement, and manage audit controls? Do you monitor for data leaks? </li></ol>|
 | Deletion and notification | <ol><li>Do you give explicit instructions on how users' data can be accessed? </li><li> Do you have documented processes in place for handling opt out consent? </li><li>	Do you have an Automated Deletion process for data? </li><li>	Do you have a process to validate identity when engaging with a customer? </li></ol>|

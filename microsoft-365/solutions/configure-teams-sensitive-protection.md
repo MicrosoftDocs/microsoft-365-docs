@@ -3,7 +3,7 @@ title: "Configure teams with protection for sensitive data"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,7 +13,8 @@ search.appverid:
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - Ent_Solutions
 description: "Learn how to deploy teams with protection for sensitive data."

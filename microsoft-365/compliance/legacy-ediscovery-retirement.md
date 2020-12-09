@@ -39,7 +39,7 @@ As a result of this new and improved eDiscovery functionality in the Microsoft 3
    > [!NOTE]
    > The [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) and [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) cmdlets will be available after the other ****-MailboxSearch*** cmdlets are retired so that you can use them to help in your transition to other eDiscovery and hold tools. However, after a certain date (cited below) Microsoft Support will no longer supports these two cmdlets.
 
-- The [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox?view=exchange-ps) cmdlet in Exchange Online PowerShell.
+- The [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) cmdlet in Exchange Online PowerShell.
 
 - The following operations in the Exchange Web Services API:
 
@@ -87,9 +87,9 @@ The following table describes other tools that you can use to replace the existi
 <table>
 <thead>
 <tr class="header">
-<th><strong>Functionality</strong></th>
-<th><strong>Alternative tool</strong></th>
-<th><strong>Comments</strong></th>
+<th>Functionality</th>
+<th>Alternative tool</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -119,7 +119,7 @@ The following table describes other tools that you can use to replace the existi
 <p>Applying policies to specific content locations such as Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, and Office 365 Groups</p></li>
 <li>
 <p>Applying policies to specific users</p></li></ul>
-<p>For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies"> Overview of retention policies</a>.</td>
+<p>For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies"> Learn about retention policies and retention labels</a>.</td>
 </tr>
 <tr class="odd">
 <td>Copy email search results to a discovery mailbox for review</td><td>Review sets in Advanced eDiscovery v2.0</td>
@@ -190,9 +190,9 @@ The following table describes other tools that you can use to replace the existi
 <table>
 <thead>
 <tr class="header">
-<th><strong>Functionality</strong></th>
-<th><strong>Alternative tools</strong></th>
-<th><strong>Comments</strong></th>
+<th>Functionality</th>
+<th>Alternative tools</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -269,16 +269,16 @@ The following table describes other tools that you can use to replace the existi
 <table>
 <thead>
 <tr class="header">
-<th><strong>Functionality</strong></th>
-<th><strong>Alternative tools</strong></th>
-<th><strong>Comments</strong></th>
+<th>Functionality</th>
+<th>Alternative tools</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Search a mailbox</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
 <td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction -Export</strong> command to export the search results. You'll still have to use the core eDiscovery tool in the Microsoft 365 compliance center to download those search results to your local computer.</p></p>
 </td>
@@ -302,8 +302,8 @@ The following table describes other tools that you can use to replace the existi
 </tr>
 <tr class=even>
   <td>Purge messages from a mailbox</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
 <td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and purge content. You can create and run a search with <strong>New-ComplianceSearch</strong> and <strong>New-ComplianceSearch</strong> cmdlets, and then you can purge the content by using <strong>New-ComplianceSearchAction -Purge -PurgeType</strong> command. For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Search for and delete messages</span></a>.</p>
 </td>
@@ -354,13 +354,15 @@ To access Advanced eDiscovery v2.0:
 
 2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
 
-At this time, we recommend that you begin to transition your eDiscovery workflow to the new Advanced eDiscovery functionality. Although you'll still be able to access Advanced eDiscovery v1.0 in existing cases, Microsoft Support won't provide support after October 1, 2020. See the following timeline for more details.
+At this time, we recommend that you begin to transition your eDiscovery workflow to the new Advanced eDiscovery functionality. If required, you can archive your Advanced eDiscovery 1.0 cases by exporting the content and storing it offline. Although you'll still be able to access Advanced eDiscovery v1.0 in existing cases until December 31, 2020, Microsoft Support won't provide support after October 1, 2020. See the following timeline for more details.
 
 ### Scope of affected organizations
 
 - Office 365 and Microsoft 365 Enterprise organizations
 
 - Office 365 and Microsoft 365 Education organizations
+
+- Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
 
 - Office 365 Germany
 
@@ -369,6 +371,8 @@ At this time, we recommend that you begin to transition your eDiscovery workflow
 - July 1, 2020: You won't be able to create new Advanced eDiscovery v1.0  cases.
 
 - October 1, 2020: You won't be able to add new data (Prepare search results for Advanced eDiscovery) to any cases. You'll be able to continue working with data in existing cases at your own risk. Microsoft Support will no longer provide assistance. 
+
+- December 31, 2020: You won't be able to access Advanced eDiscovery v1.0 cases.
 
 ### Alternative tools
 

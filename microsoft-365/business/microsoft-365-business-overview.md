@@ -66,11 +66,11 @@ Microsoft 365 Business Premium helps safeguard your data in each of these instan
 
 Microsoft 365 Business Premium helps **defended against threats** by:
 
-- Scanning links in emails and documents in real time to block unsafe web sites (ATP Safe Links).
+- Scanning links in emails and documents in real time to block unsafe web sites (Safe Links).
 
-- Performing advanced analysis of email attachments in a sandbox environment to detect newly developed malware (ATP Safe Attachments). 
+- Performing advanced analysis of email attachments in a sandbox environment to detect newly developed malware (Safe Attachments). 
 
-- Enabling anti-phishing policies that use machine learning models and impersonation detection to provide protection against advanced attacks (ATP anti-phishing intelligence). 
+- Enabling anti-phishing policies that use machine learning models and impersonation detection to provide protection against advanced attacks (Anti-phishing in Defender for Office 365 intelligence). 
 
 - Setting up advanced policies that disable access from untrusted locations or bypass multifactor authentication from trusted places such as your office network (Azure MFA including trusted IPs, and Conditional Access). 
 
@@ -105,11 +105,6 @@ To see the full list of security features, see [Microsoft 365 Business Premium s
 - If you have a partner, they'll get Microsoft 365 Business Premium: [Get Microsoft 365 Business Premium from Microsoft Partner Center](get-microsoft-365-business.md).
 
 - If you don't have a partner and want to get Microsoft 365 Business Premium, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
-
-- You can also head over to a [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) to both buy Microsoft 365 Business Premium and get set-up help.
-
-    > [!NOTE]
-    > This link is for stores in U.S. only
 
 ## See also
 

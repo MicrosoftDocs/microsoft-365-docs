@@ -3,7 +3,7 @@ title: Insider risk management Content Explorer
 description: Learn about insider risk management Content Explorer in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,13 +16,15 @@ ms.collection: m365-security-compliance
 
 # Insider risk management Content Explorer
 
-The insider risk management Content Explorer allows users assigned the **Insider Risk Management Investigators** role to examine the context and details of communications captured in alerts. For all alerts, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. The copying of data and messages is transparent to the employee associated with the alert and to the owner of the content. The permission settings and access rights for the data are maintained for the copied content and messages and risk analysts and investigators need these permissions and rights if they need to open and view the files. Each file and message is automatically assigned a unique file ID in the insider risk management case for management purposes.
+The insider risk management Content Explorer allows users assigned the *Insider Risk Management Investigators* role to examine the context and details of content associated with activity in alerts. For all alerts that are confirmed to a case, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. The copying of data and messages is transparent to the user associated with the alert and to the owner of the content. If the content includes Information Rights management permissions, these permissions are maintained for the copied content and users assigned the *Insider Risk Management Investigators* role will need these permissions and rights if they need to open and view the files. Each file and message are automatically assigned a unique file ID in the insider risk management case for management purposes. Documents associated with device indicator activities are not included in Content Explorer.
+
+![Insider risk management content explorer](../media/insider-risk-content-explorer.png)
 
 ## Column options
 
 To make it easier for risk analysts and investigators to review captured data and messages and review the context to the case, several filtering and sorting tools are included in the Content Explorer. For basic sorting, the **Date** and **File class** columns support sorting using the column titles in the content queue pane. Other queue columns are available to add to the view to provide different pivots on the files and messages.
 
-To add or remove column headings for the content queue, use the **Edit columns** control and select from the following column options. These columns map to the common, email, and document property conditions supported in the Content Explorer and listed later in this topic.
+To add or remove column headings for the content queue, use the **Edit columns** control and select from the following column options. These columns map to the common, email, and document property conditions supported in the Content Explorer and listed later in this article.
 
 | **Column option** | **Description** |
 |:------------------|:----------------|
@@ -36,10 +38,10 @@ To add or remove column headings for the content queue, use the **Edit columns**
 | **Date** | For email, the date a message was received by a recipient or sent by the sender. For documents, the date a document was last modified. |
 | **Dominant theme** | Dominant theme as calculated for analytics. |
 | **Email set ID** | Group ID for all messages in the same email set. |
-| **Family ID** | Family Id groups together all items; for email, this includes the message and all attachments; for documents, this includes the document and any embedded items. |
+| **Family ID** | Family Id groups together all items; for email, this column includes the message and all attachments; for documents, this column includes the document and any embedded items. |
 | **File class** | For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email or **Attachment**. |
 | **File ID** | Document identifier unique within the case. |
-| **File type icon** | The extension of a file; for example, docx, one, pptx, or xlsx. This is the same property as the FileExtension site property. |
+| **File type icon** | The extension of a file; for example, docx, one, pptx, or xlsx. This field is the same property as the FileExtension site property. |
 | **ID** | The GUID identifier for the file. |
 | **Immutable ID** | Immutable Id as stored in Office 365. |
 | **Inclusive type** | Inclusive type calculated for analytics: **0** - not inclusive; **1** - inclusive; **2** - inclusive minus; **3** - inclusive copy. |
@@ -48,12 +50,12 @@ To add or remove column headings for the content queue, use the **Edit columns**
 | **Message kind** | The type of email message to search for. Possible values: contacts, docs, email, external data, faxes, im, journals, meetings, microsoft teams (returns items from chats, meetings, and calls in Microsoft Teams), notes, posts, rssfeeds, tasks, voicemail |
 | **Participants** | List of all participants of a message; for example, Sender, To, Cc, Bcc. |
 | **Pivot ID** | The ID of a pivot. |
-| **Received** | The date that an email message was received by a recipient. This is the same property as the Received email property. |
+| **Received** | The date that an email message was received by a recipient. This field is the same property as the Received email property. |
 | **Recipients** | All recipient fields in an email message. These fields are To, Cc, and Bcc. |
 | **Representative ID** | Numeric identifier of each set of exact duplicates. |
 | **Sender** | The sender of an email message. |
 | **Sender/Author** | For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the OR operator. |
-| **Sent** | The date that an email message was sent by the sender. This is the same property as the Sent email property. |
+| **Sent** | The date that an email message was sent by the sender. This field is the same property as the Sent email property. |
 | **Size** | For both email and documents, the size of the item (in bytes). |
 | **Subject** | The text in the subject line of an email message. |
 | **Subject/Title** | For email, the text in the subject line of a message. For documents, the title of the document. As previously explained, the Title property is metadata specified in Microsoft Office documents. You can type the name of more than one subject/title, separated by commas. Two or more values are logically connected by the OR operator. |
@@ -63,7 +65,7 @@ To add or remove column headings for the content queue, use the **Edit columns**
 
 ## Advanced search conditions
 
-You can add search conditions to narrow the scope of a search and return a more refined set of results. Each condition adds a clause to the search query that is created and run when you start the search. A condition is logically connected to the keyword query (specified in the keyword box) by a logical operator (which is represented as c:c) that is similar in functionality to the AND operator. That means that items have to satisfy both the keyword query and one or more conditions to be included in the search results. This is how conditions help to narrow your results.
+You can add search conditions to narrow the scope of a search and return a more refined set of results. Each condition adds a clause to the search query that is created and run when you start the search. A condition is logically connected to the keyword query (specified in the keyword box) by a logical operator (which is represented as c:c) that is similar in functionality to the AND operator. That means that items have to satisfy both the keyword query and one or more conditions to be included in the search results. This functionality is how conditions help to narrow your results.
 
 For advanced filter and search tools, expand the **Filter** pane on the left side of the content queue. Select the **Add a condition** button to open the condition list:
 
@@ -140,7 +142,7 @@ The following table lists documents property conditions available the Content Ex
 | **Created time** | The time the file or email message was created. |
 | **Custodian** | Name of the custodian the item was associated with. |
 | **Dominant theme** | Dominant theme as calculated for analytics. |
-| **Family ID** | Family Id groups together all items; for email, this includes the message and all attachments; for documents, this includes the document and any embedded items. |
+| **Family ID** | Family Id groups together all items; for email, this field includes the message and all attachments; for documents, this field includes the document and any embedded items. |
 | **File class** | For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email or **Attachment**. |
 | **File types** | The extension of a file; for example, docx, one, pptx, or xlsx. |
 | **Has attorney participant** | True when at least one of the participants is found in the attorney list; otherwise, the value is False. |
@@ -149,7 +151,7 @@ The following table lists documents property conditions available the Content Ex
 | **Item class** | Item class supplied by exchange server; for example, **IPM.Note** |
 | **Last modified** | The date that a document was last changed. |
 | **Load ID** | Load Id, in which the item was loaded into a review set. |
-| **Location name** | String that identifies the source of the item.  For exchange, this will be the SMTP address of the mailbox. For SharePoint and OneDrive, the URL to the site collection. |
+| **Location name** | String that identifies the source of the item.  For exchange, this field will be the SMTP address of the mailbox. For SharePoint and OneDrive, the URL to the site collection. |
 | **Marked as representative** | One document from each set of exact duplicates is marked as representatives. |
 | **Native file extension** | Native extension of the item. |
 | **Native file name** | Native file name of the item. |

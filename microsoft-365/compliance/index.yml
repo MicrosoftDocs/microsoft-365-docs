@@ -22,42 +22,20 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Manage information protection
+  - title: Manage information protection & governance
     linkLists:
       - linkListType: overview
         links:
-          - text: Sensitivity labels
-            url: sensitivity-labels.md
-          - text: Data loss prevention (DLP)
-            url: data-loss-prevention-policies.md
-          - text: Sensitive information types
-            url: custom-sensitive-info-types.md
-          - text: Email encryption
-            url: email-encryption.md
-          - text: Customer Key
-            url: customer-key-overview.md  
-
-  # Card
-  - title: Manage information governance
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Retention labels
-            url: labels.md         
-          - text: Retention policies
-            url: retention-policies.md
-          - text: Records management
-            url: records-management.md
-          - text: File plan manager
-            url: file-plan-manager.md
-          - text: Event-based retention
-            url: event-driven-retention.md
-          - text: PST import
-            url: importing-pst-files-to-office-365.md
-          - text: Third-party data connectors
-            url: archiving-third-party-data.md
-          - text: Data governance reports
-            url: view-the-data-governance-reports.md
+          - text: Know your data
+            url: information-protection.md#know-your-data
+          - text: Protect your data
+            url: information-protection.md#protect-your-data
+          - text: Prevent data loss
+            url: information-protection.md#prevent-data-loss
+          - text: Govern your data
+            url: manage-information-governance.md
+          - text: "Learning path: Manage information protection and governance"
+            url: /learn/paths/m365-compliance-information
 
 # Card (optional)
   - title: Manage insider risks
@@ -96,13 +74,21 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Compliance Score
-            url: compliance-score.md
+          - text: Compliance Manager
+            url: compliance-manager.md
           - text: GDPR compliance action plan
-            url: gdpr-action-plan.md
-          - text: Information protection for GDPR
-            url: office-365-info-protection-for-gdpr-overview.md
+            url: https://docs.microsoft.com/compliance/regulatory/gdpr-action-plan
           - text: ISO compliance action plan
-            url: iso-action-plan.md
+            url: https://docs.microsoft.com/compliance/regulatory/iso-action-plan
           - text: NIST compliance action plan
-            url: nist-action-plan.md
+            url: https://docs.microsoft.com/compliance/regulatory/nist-action-plan
+
+    # Card
+  - title: Deploy compliance solutions
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Deploy information protection for data privacy regulations
+            url: ../solutions/information-protection-deploy.md
+          - text: Information protection and compliance illustrations
+            url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities

@@ -12,6 +12,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -87,7 +89,7 @@ Sensitivity labels must be enabled for files that are in SharePoint and OneDrive
 
 ### Retention labels
 
-A [retention label](labels.md) allows you to define how long a labeled item is kept and the steps to be taken prior to deleting it. They are applied manually or automatically via policies. They can play a role in helping your organization stay in compliance with legal and regulatory requirements.
+A [retention label](retention.md) allows you to define how long a labeled item is kept and the steps to be taken prior to deleting it. They are applied manually or automatically via policies. They can play a role in helping your organization stay in compliance with legal and regulatory requirements.
 
 ### How to use content explorer
 
@@ -134,8 +136,7 @@ You can search on:
 
 ## See also
 
-- [Sensitivity labels](sensitivity-labels.md)
-- [Retention labels](labels.md)
+- [Learn about sensitivity labels](sensitivity-labels.md)
+- [Learn about retention policies and retention labels](retention.md)
 - [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
-- [Overview of retention policies](retention-policies.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)

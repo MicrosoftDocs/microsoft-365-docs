@@ -1,5 +1,5 @@
 ---
-title: "Assign permissions for Data Investigations (Preview)"
+title: "Assign permissions for Data Investigations (preview)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,7 +19,7 @@ ms.assetid:
 description: "This article describes how to set up the permissions necessary to use the Data Investigations tool in Microsoft 365."
 ---
 
-# Assign permissions for Data Investigations (Preview)
+# Assign permissions for Data Investigations (preview)
 
 To access a data investigation in the Office 365 or Microsoft 365 compliance center, you need be a member of the Data Investigator role group. To add members to a role group, you must be a member of the Organization Management role group or assigned the Role Management role in the Security & Compliance Center. After a user becomes a member of the Data Investigator role group, they can create, access, and conduct investigations in the data investigations that you are a member of.
 

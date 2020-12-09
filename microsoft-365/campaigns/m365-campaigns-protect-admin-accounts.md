@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management 
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven

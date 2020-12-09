@@ -1,10 +1,10 @@
 ---
-title: "Office 365 operated by 21Vianet"
+title: "Parity between Azure Information Protection for Office 365 operated by 21Vianet and commercial offerings"
 f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -26,7 +26,7 @@ monikerRange: 'o365-21vianet'
 
 While our goal is to deliver all commercial features and functionality to customers in China with our Azure Information Protection for Office 365 operated by 21Vianet offer, there is some missing functionality that we'd like to highlight.
 
-These are the existing gaps between Azure Information Protection for Office 365 operated by 21Vianet and our commercial offerings as of July 2019:
+The following list includes the existing gaps between Azure Information Protection for Office 365 operated by 21Vianet and our commercial offerings as of July 2019:
 
 - Information Rights Management (IRM) is supported only for Microsoft 365 Apps for enterprise (build 11731.10000 or higher). Office 2010, Office 2013, and other Office 2016 versions are not supported.
 
@@ -37,8 +37,6 @@ These are the existing gaps between Azure Information Protection for Office 365 
 - Sharing of documents and email attachments to users in the commercial cloud is currently not available. This includes Office 365 operated by 21Vianet users in the commercial cloud, non-Office 365 operated by 21Vianet users in the commercial cloud, and users with an RMS for Individuals license.
   
 - IRM with SharePoint (IRM-protected sites and libraries) is currently not available.
-  
-- The Rights Management Connector is currently not available.
   
 - The Mobile Device Extension for AD RMS is currently not available.
 

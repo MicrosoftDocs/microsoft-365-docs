@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+ROBOTS: NOINDEX, NOFOLLOW
+description: "Tag documents in an evidence set to identify their relevance to your investigation."
 ---
 
 # Tag documents in evidence

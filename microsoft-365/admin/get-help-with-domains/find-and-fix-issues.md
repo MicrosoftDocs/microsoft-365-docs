@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -83,7 +83,7 @@ Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, 
 We can help you track down issues with your domain's DNS setup. The domains troubleshooter in Microsoft 365 will show you any records that need fixing, and exactly what the records need to be set to. 
 
 > [!TIP]
-> Got your DNS set up correctly, but mail doesn't work in Outlook on your desktop? Check out the [different mail flow scenarios you can have with Microsoft 365](https://www.microsoft.com/?ref=go) to make sure you've got things set up correctly for your business. Or get more troubleshooting help with email here: [Fix Outlook problems](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
+> Got your DNS set up correctly, but mail doesn't work in Outlook on your desktop? Check out the [different mail flow scenarios you can have with Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) to make sure you've got things set up correctly for your business. Or get more troubleshooting help with email here: [Fix Outlook problems](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## Accessing your website isn't working?
 <a name="BKMK_Website"> </a>
@@ -93,4 +93,9 @@ If you've fixed any DNS issues and you're still having trouble, try one of the f
 - People can't get to your website at www.mydomain.com: [Track down website issues](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
 - You can't update your A record or CNAME record to point to your website: [Update custom DNS records in Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
+
+## Related content
+
+[Troubleshoot: Audit data on verified domain change](https://docs.microsoft.com/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+
     
