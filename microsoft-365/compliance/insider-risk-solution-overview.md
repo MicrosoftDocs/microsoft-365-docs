@@ -34,7 +34,7 @@ Microsoft 365 risk prevention features are designed and built-in to our insider 
 | ![Fraud/thief icon](../media/ir-risk-fraud.png)| Fraud | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
 | ![Policy violations icon](../media/ir-risk-policy-violations.png)| Policy violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
 | ![Insider trading/handshake icon](../media/ir-risk-insider-trading.png)| Insider trading | ![Supported](../media/check-mark.png) |  |  |  |
-| ![Conflicts of interest icon](../media/ir-risk-conflicts-of-interest.png)| Conflicts of interest |  |  | ![Supported](../media/check-mark.png) |  |
+| ![Conflicts of interest icon](../media/ir-risk-conflicts-of-interest.png)| Conflicts of interest | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |  |
 | ![Sensitive data leaks/devices icon](../media/ir-risk-sensitive-data-leaks.png)| Sensitive data leaks | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
 | ![Workplace harassment/people icon](../media/ir-risk-workplace-harassment.png)| Workplace harassment | ![Supported](../media/check-mark.png) |  |  |  |
 | ![Security violations icon](../media/ir-risk-security-violations.png)| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
