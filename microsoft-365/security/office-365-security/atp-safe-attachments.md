@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: "Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365."

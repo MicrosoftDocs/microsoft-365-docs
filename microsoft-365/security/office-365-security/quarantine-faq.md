@@ -14,8 +14,8 @@ search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+- M365-security-compliance
+- m365initiative-m365-defender
 description: "Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP)."
 ms.custom: seo-marvel-apr2020
 ---
