@@ -17,12 +17,14 @@ ms.collection:
 description: "Advantages in the newly merged Microsoft 365 Security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE). This article outlines Microsoft 365 Security center advances for administrators."
 ---
 
-# Microsoft 365 Security center simplifies design and adds features
+# Microsoft 365 Security center advantages
 
-The new portal is the result of customer feedback over time. This security center emphasizes quick access to information, simpler layouts, and clarity across a single security center. The new design fortifies Office 365, by combining and streamlining *Office 365* security work, and *device security work* in one place and adding features where it was logical.
+The new portal is the result of customer feedback over time. This security center emphasizes quick access to information, simpler layouts, and clarity across a single security center. The new design fortifies Office 365, by combining and streamlining *Office 365* security work, and *device security work*.
+
+The Microsoft 365 Security center creates a big picture in one place and adds features where it's logical.
 
 > [!NOTE]
-> One new addition: you now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 Security center, on this page https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
+> In one new addition, you now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 Security center. It's on this page https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
 
 The new [Microsoft 365 Security portal](https://security.microsoft.com/) combines:
 
@@ -58,7 +60,7 @@ Double-clicking on an incident name listed here, for example, on a Severity *Hig
 :::image type="content" source="../../media/1. Converged 3.png" alt-text="I clicked 'multi-stage incident involving privilege escalation on multiple endpoints’, and see 16 impacted devices and 9 impacted users.":::
 
 > [!TIP]
-> The converged Users tab is a good place to being your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and MCAS, if you leverage it).
+> The converged Users tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and MCAS, if you leverage it), and across a range of sources, such as on-premises AD, Azure AD, synced, local, and Third party users.
 
 Incident information relates user / identity specifics and at-risk devices, side-by-side with effected mailboxes, as well as any Investigation information and gathered Evidence. This makes it easier for admins and ops teams to pivot from one high-risk alert, to its effected users and mailboxes, among other pivots that can now be done in this single place.
 
@@ -87,7 +89,7 @@ The layout has also been merged wherever centers overlap, so that common control
 
 
 
-## Related information
+### Related information
 
 [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)
 
