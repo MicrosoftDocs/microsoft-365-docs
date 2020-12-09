@@ -255,7 +255,7 @@ When you configure a sensitivity label for content markings, you can use the fol
 | `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled | **\\\Sales\2020\Q3\Report.docx**|
 | `${User.Name}` | Display name of the user applying the label| **Richard Simone** |
 | `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Date and time when the content is labeled, in the time zone of the user applying the label | **8/10/2020 1:30 PM** |
+| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
