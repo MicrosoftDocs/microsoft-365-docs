@@ -1,5 +1,5 @@
 ---
-title: "Prevent guest users from being added to a specific group"
+title: "Prevent guests from being added to a specific group"
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,10 +14,10 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
-description: "Learn how to prevent guest users from being added to a specific group"
+description: "Learn how to prevent guests from being added to a specific group"
 ---
 
-# Prevent guest users from being added to a specific Microsoft 365 group or Microsoft Teams team
+# Prevent guests from being added to a specific Microsoft 365 group or Microsoft Teams team
 
 If you want to allow guest access to most groups and teams, but have some where you want to prevent guest access, you can block guest access for individual groups and teams. (Blocking guest access to a team is done by blocking guest access to the associated group.) This prevents new guests from being added but does not remove guests that are already in the group or team.
 
@@ -64,7 +64,7 @@ The verification looks like this:
   
 ## Allow or block guest access based on their domain
 
-You can allow or block guest users who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your Allow list so your users can add those guests to their groups.
+You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your Allow list so your users can add those guests to their groups.
 
 For more information, see [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
 
@@ -72,7 +72,7 @@ For more information, see [Allow or block invitations to B2B users from specific
 
 By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list.
 
-Find the guest user's ObjectID by running:
+Find the guest's ObjectID by running:
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"

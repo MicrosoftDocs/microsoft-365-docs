@@ -31,7 +31,7 @@ If your business requires that you restrict who can create groups, you can do so
 - Microsoft Teams
 - Microsoft Stream
 - Planner
-- PowerBI (classic)
+- Power BI (classic)
 - Project for the web / Roadmap
 
 You can restrict Microsoft 365 Group creation to the members of a particular security group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
