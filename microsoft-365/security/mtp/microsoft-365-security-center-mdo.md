@@ -44,8 +44,7 @@ This table is a quick reference of Email & Collaboration areas where change has 
 |     |    [Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers?view=o365-worldwide)    |
 |     |          |
 
-Also, check the 'Related Information' section at the bottom of this article.
-
+Also, check the **Related Information** section at the bottom of this article.
 
 > [!IMPORTANT]
 > The Microsoft 365 Security portal (https://security.microsoft.com) combines security features in https://securitycenter.windows.com, and https://protection.office.com. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
@@ -68,16 +67,16 @@ As soon as you arrive at this information page, you’ll also see a pop-up for s
 
 The home page also welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
-- The links under ‘Next steps’ will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
-- ‘Give feedback’ will allow you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
+- The links under **Next steps** will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
+- **Give feedback** allows you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
 
 The **Welcome** page will disappear after you navigate through the Next button to Close. Be sure to take note of any URLs you’d want for your records, or bookmark this page (since the URLs are listed above).
 
-The **Guided Tour** will remain on the page where you can choose a tour of Endpoint or Email and Collaboration pages.  
+The **Guided Tour** will remain on the page and you can choose a tour of Endpoint or Email & collaboration pages.  
 
 ![Guided tour drop down](../../media/converge-12-home-page-guided-tour-bar.gif)
 
-Also included is a link to the **Office 365 Security and Compliance center** for comparison. The last link is to the **What's New**'** page that describes recent updates.
+Also included is a link to the **Office 365 Security and Compliance center** for comparison. The last link is to the **What's New** page that describes recent updates.
 
 ## Navigation and the Guided Tour
 
@@ -97,7 +96,7 @@ View and manage the security of endpoints in your organization. If you've used t
 
 ### Email & collaboration
 
-Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will familiar. 
+Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will familiar.
 
 ![The Emails and Collaboration quick launch bar](../../media/converge-3-email-and-collab.png)
 
@@ -124,7 +123,7 @@ The *[Getting Started](https://docs.microsoft.com/microsoft-365/security/office-
 
 Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true) to jump right in and get configuration going on Day 1.
 
-The last step in 'Getting Started' is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
+The last step in **Getting Started** is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
 
 Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. Security teams can monitor ZAP misses by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
 
