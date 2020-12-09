@@ -250,12 +250,12 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 | Variable | Description | Example when label applied |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Current label display name | **General**|
-| `${Item.Name}` | Current file name or email subject | **Sales.docx** |
-| `${Item.Location}` | Current path and file name of the document, or the email subject for an email | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Current user display name  | **Richard Simone** |
-| `${User.PrincipalName}` | Current user Azure AD user principal name (UPN) | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Current date and time for the local time zone | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | Label display name of the label applied| **General**|
+| `${Item.Name}` | File name or email subject of the content being labeled | **Sales.docx** |
+| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Display name of the user applying the label| **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
@@ -317,7 +317,7 @@ Examples:
     `${If.App.WP}This content is ${If.End}Confidential`
 
     In Word and PowerPoint, the label applies the watermark text "This content is Confidential". In Excel, the label applies the watermark text "Confidential". In Outlook, the label doesn't apply any watermark text because watermarks as visual markings are not supported for Outlook.
->>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
+
 
 ## End-user documentation
 

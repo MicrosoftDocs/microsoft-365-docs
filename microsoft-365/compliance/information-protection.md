@@ -35,6 +35,10 @@ For information about governing your data, see [Microsoft Information Governance
 
 > [!NOTE]
 > For information about classifying and labeling data in Azure Purview, currently in preview, see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+> 
+> For information about this new release, see the blog post [Microsoft Information Protection and Microsoft Azure Purview: Better Together](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481).
+
+
 
 To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
  

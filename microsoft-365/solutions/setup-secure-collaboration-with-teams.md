@@ -2,7 +2,7 @@
 title: Set up secure collaboration with Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
