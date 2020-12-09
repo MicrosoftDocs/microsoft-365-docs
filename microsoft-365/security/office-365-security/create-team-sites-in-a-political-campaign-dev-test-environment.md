@@ -41,9 +41,9 @@ In this phase, you create the labels for the different levels of security for Sh
     
 2. From the **Microsoft Office Home** tab, click the **Admin** tile.
     
-3. From the new **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security &amp; Compliance**.
+3. From the new **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.
     
-4. From the new **Home - Security &amp; Compliance** tab of your browser, click **Classifications > Labels**.
+4. From the new **Home - Security & Compliance** tab of your browser, click **Classifications > Labels**.
     
 5. From the **Home > Labels** pane, click **Create a label**.
     
@@ -213,9 +213,9 @@ Next, configure the documents folder of the Campaign marketing team site for the
     
 Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on a SharePoint Online team site with the Sensitive label outside the organization. This DLP policy will apply to resources in the Campaign marketing site.
   
-1. From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.
+1. From the **Microsoft Office Home** tab in your browser, click the **Security & Compliance** tile.
     
-2. On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.
+2. On the new **Security & Compliance** tab in your browser, click **Data loss prevention > Policy**.
     
 3. In the **Data loss prevention** pane, click **+ Create a policy**.
     
@@ -323,9 +323,9 @@ Next, configure a DLP policy that blocks users when they share a document on a S
   
 1. If needed, use a browser on your local computer and sign in to the admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) with an account that has the Security Administrator or Company Administrator role.
     
-2. From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.
+2. From the **Microsoft Office Home** tab in your browser, click the **Security & Compliance** tile.
     
-3. On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.
+3. On the new **Security & Compliance** tab in your browser, click **Data loss prevention > Policy**.
     
 4. In the **Data loss prevention** pane, click **+ Create a policy**.
     

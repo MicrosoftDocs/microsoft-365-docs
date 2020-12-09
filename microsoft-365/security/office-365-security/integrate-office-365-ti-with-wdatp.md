@@ -42,7 +42,7 @@ In this example, you can see that the recipients of the detected email message h
 
 - Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.
     
-- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security &amp; Compliance Center](https://protection.office.com). (See [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security & Compliance Center](https://protection.office.com). (See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
     
 - You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Security & Compliance Center and the Microsoft Defender Security Center.
     
