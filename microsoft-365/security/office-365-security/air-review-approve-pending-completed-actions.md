@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 description: "Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2."
 ---
@@ -38,13 +38,13 @@ While viewing the [details of an investigation](air-view-investigation-results.m
 
 2. Go to **Threat management** \> **Investigations**.
 
-3. In the list of investigations, select an item in the **ID** column. 
+3. In the list of investigations, select an item in the **ID** column.
 
 4. Select the **Actions** tab.
 
 5. Select an item in the list. (This activates the Approve and Reject buttons.)
 
-6. Review available information for the item(s) you selected, and then either approve or reject the action(s). 
+6. Review available information for the item(s) you selected, and then either approve or reject the action(s).
    - **Approve** allows remediation to begin.
    - **Reject** takes no further action
 

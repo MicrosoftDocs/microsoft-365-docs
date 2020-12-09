@@ -243,11 +243,11 @@ Full instructions for creating and modifying anti-spam policies are described in
 2. Find and select an existing anti-spam policy to edit, or create a new anti-spam policy.
 
 3. In the policy details flyout, expand the **Spam and bulk actions** section.
-  
+
 4. If you've selected **Quarantine message** for the action of an available spam filtering verdict, the **Apply quarantine policy tag** box is available for you to select the quarantine tag for that verdict.
 
    **Note**: When you create a new policy, a blank quarantine tag value for a spam filtering verdict indicates the default quarantine tag for that verdict is used. When you later edit the policy, the blank values are replaced by the actual default quarantine tag names as described in the previous table.
-  
+
    ![Quarantine tag selections in an anti-spam policy](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. When you're finished, click **Save**.
@@ -513,7 +513,7 @@ The **Allow recipients to release a message from quarantine** permission (_Permi
 - **Quarantined message details**:
   - Permission enabled: The **Release message** button is available.
   - Permission disabled: The **Release message** button is not available.
-  
+
 - **End-user spam notifications**:
   - Permission enabled: The **Release** button is available.
   - Permission disabled: The **Release** button is not available.

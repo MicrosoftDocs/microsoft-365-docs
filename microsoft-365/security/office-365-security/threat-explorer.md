@@ -64,7 +64,7 @@ The Tags column shown in the email grid would contain all the tags that have bee
 
 We now have Tags as a filter so you can hunt just across priority accounts, or specific User tags scenarios (and even exclude results with certain tags as part of this experience). Combining these with the multiple other filters that we provide, would help you to narrow down your scope of investigation
 
-[ ![Filter tags](../../media/tags-filter-normal.png) ](../../media/tags-filter-normal.png#lightbox)
+[![Filter tags](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![Not filter tags](../../media/tags-filter-not.png)
@@ -158,7 +158,7 @@ System overrides are a method of making exceptions to the intended delivery loca
 - Blocked by org policy: This is when the organization's security teams set policies or mail flow rules to block senders, domains, message languages, or source IPs for users in their organization. This can also be for a set of users or the entire organization.
 - File extension blocked by org policy: This is when a file type extension is blocked by the security teams of an organization through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also filter on blocked file extensions using the rich filtering capability.
 
-[ ![System_Overrides](../../media/System_Overrides.png) ](../../media/System_Overrides.png#lightbox)
+[![System_Overrides](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
@@ -181,7 +181,7 @@ The set of improvements focused towards URL and URL clicks data include:
 
 Phish confidence level helps to identify the degree of confidence, with which an email was categorized as Phish. The two possible values are High and Normal. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
-[ ![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png) ](../../media/Phish_Confidence_Level.png#lightbox)
+[![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### ZAP URL Signal
 

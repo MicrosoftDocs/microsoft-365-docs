@@ -103,7 +103,7 @@ Open any remediation item to view details about it, including its name, creation
   The following image shows how a submission looks in Action Center. A remediation can contain multiple submissions. If multiple actions get approved through one automated investigation, each email or email cluster action appears in the same remediation as a different submission.
 
   > [!div class="mx-imgBorder"]
-  > [ ![ZAP email cluster flyout panel.](../../media/tp-RemediationArticle6.png) ](../../media/tp-RemediationArticle6.png#lightbox)
+  > [![ZAP email cluster flyout panel.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
   Select a mail submission item to show the details of that remediation, such as the query (when remediation is triggered through automated investigations or Threat Explorer through selecting a query) and the start and end times of remediation. It also displays a list of messages that were submitted for remediation. As messages move out of the Threat Explorer retention period, the messages disappear from this list. The list also shows individual messages that are remediable.
 
@@ -124,7 +124,7 @@ Open any remediation item to view details about it, including its name, creation
   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
 
   Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
-  
+
   In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100k records.
 
   Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.

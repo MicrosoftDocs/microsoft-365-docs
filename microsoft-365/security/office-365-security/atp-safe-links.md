@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020

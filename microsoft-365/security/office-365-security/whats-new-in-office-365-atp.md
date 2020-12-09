@@ -14,7 +14,7 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
 ms.date: 10/09/2020
@@ -51,7 +51,7 @@ This article lists new features in the latest release of Microsoft Defender for 
 ## July/August 2020
 
 - [Experience improvements to the hunting experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
-- [Easily apply recommended settings using preset security policies](preset-security-policies.md) 
+- [Easily apply recommended settings using preset security policies](preset-security-policies.md)
 
 ## March/April 2020
 

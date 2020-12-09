@@ -1,5 +1,5 @@
 ---
-title: How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365 
+title: How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365
 description: Was something missed or wrongly detected by AIR in Microsoft Defender for Office 365? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
 search.appverid: met150
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
 ms.custom: 

@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
@@ -119,7 +119,7 @@ The guidelines presented below are best practices for sending outbound email mes
 - **The source email domain should resolve in DNS.**
 
   For example, if the sender is user@fabrikam, the domain fabrikam resolves to the IP address 192.0.43.10.
-  
+
   If a sending domain has no A-record and no MX record in DNS, the service will route the message through its higher risk delivery pool regardless of whether or not the content of the message is spam. For more information about the higher risk delivery pool, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Outbound mail eserver should have a reverse DNS (PTR) entry.**
