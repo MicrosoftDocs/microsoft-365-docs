@@ -42,14 +42,7 @@ Watch the following video to see how self-healing works:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-In Microsoft 365 Defender, automated investigation and response with self-healing capabilities works across your devices, email & content, and identities, as summarized in the following table:
-
-| Area | Offering |
-|:---|:---|
-| Devices (also referred to as endpoints) | [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) |
-| Email & collaboration content | [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) |
-| Identities & user accounts | [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection) |
-| Cloud apps and data | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) |
+In Microsoft 365 Defender, automated investigation and response with self-healing capabilities works across your devices, email & content, and identities.
  
 > [!TIP]
 > This article describes how automated investigation and response works. To configure these capabilities, see [Configure automated investigation and response capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).

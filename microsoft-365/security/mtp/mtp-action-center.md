@@ -86,7 +86,9 @@ As remediation actions are taken, they're listed on the History tab in the Actio
 
 ## Action source
 
-(**NEW!**) The new and improved Action center includes a column indicating the source of each remediation action. The following table summarizes values you might see in the **Action source** column:
+(**NEW!**) As you know, Microsoft 365 Defender brings together automated investigation and response capabilities across multiple services, such as Microsoft Defender for Endpoint and Microsoft Defender for Office 365. In addition, the new and improved Action center now indicates the source of each remediation action (whether taken automatically or manually). 
+
+The following table describes possible **Action source** values:
 
 | Action source value | Description |
 |:---|:---|
@@ -98,7 +100,6 @@ As remediation actions are taken, they're listed on the History tab in the Actio
 | **Explorer action** | Actions taken on email content with [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
 | **Manual live response action** | Actions taken on a device with [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response). Examples include deleting a file, stopping a process, and removing a scheduled task. |
 | **Live response action** | Actions taken on a device with [Microsoft Defender for Endpoint APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis). Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
-
 
 ## Required permissions for Action center tasks
 
