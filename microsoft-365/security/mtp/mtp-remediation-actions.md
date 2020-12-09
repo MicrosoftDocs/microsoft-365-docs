@@ -74,8 +74,6 @@ In addition to remediation actions that follow automated investigations, your se
 - Manual [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) action, such as deleting a file, stopping a process, and removing a scheduled task.
 - Live response action with [Microsoft Defender for Endpoint APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis), such as isolating a device, running an antivirus scan, and getting information about a file. 
 
-
-
 ## Next steps
 
 - [Visit the Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
