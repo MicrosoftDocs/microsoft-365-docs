@@ -154,6 +154,10 @@ Additional resources:
 
 ## Related topics
 
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
+
 [Security and compliance in Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
 
 [Manage sharing settings in SharePoint](https://docs.microsoft.com/sharepoint/turn-external-sharing-on-or-off)
@@ -161,9 +165,3 @@ Additional resources:
 [Create and manage an external network in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-an-external-network)
 
 [Configure Teams with three tiers of protection](https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection)
-
-## Related topics
-
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
-
-[Create your collaboration governance plan](collaboration-governance-first.md)

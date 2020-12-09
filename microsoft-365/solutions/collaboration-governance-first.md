@@ -129,7 +129,7 @@ Ultimately, the success of your governance planning efforts depends on how well 
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Governance in the Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
 
