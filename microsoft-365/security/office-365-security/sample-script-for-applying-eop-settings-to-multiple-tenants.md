@@ -85,7 +85,7 @@ Import-Module ExchangeOnlineManagement
 
 # Loop through each entry from the .csv file.
 ForEach ($Company in $CompanyList) {
-  
+
 # Get the current entry's UserName.
 $UserName = $Company.UserName
 
