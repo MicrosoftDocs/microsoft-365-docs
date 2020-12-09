@@ -317,7 +317,7 @@ Examples:
     `${If.App.WP}This content is ${If.End}Confidential`
 
     In Word and PowerPoint, the label applies the watermark text "This content is Confidential". In Excel, the label applies the watermark text "Confidential". In Outlook, the label doesn't apply any watermark text because watermarks as visual markings are not supported for Outlook.
->>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
+
 
 ## End-user documentation
 
