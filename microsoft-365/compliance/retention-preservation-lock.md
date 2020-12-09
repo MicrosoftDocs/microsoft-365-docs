@@ -43,7 +43,7 @@ In summary, a locked policy can be increased or extended, but it can't be reduce
 Configure Preservation Lock after you've created a [retention policy](create-retention-policies.md), or a retention label policy that you [publish](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md). 
 
 > [!NOTE]
-> Locking a label policy doesn't prevent an administrator from reducing the retention period that's configured with the label. That requirement, with other restrictions, can be met when you use [regulatory labels](records-management.md#records).
+> Locking a label policy doesn't prevent an administrator from reducing the retention period in a label that is included in the locked policy. That requirement, with other restrictions, can be met when you configure a label to mark items as a [regulatory record](records-management.md#records).
 
 ## How to lock a retention policy or retention label policy
 
