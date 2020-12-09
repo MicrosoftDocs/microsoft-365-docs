@@ -90,14 +90,14 @@ As remediation actions are taken, they're listed on the History tab in the Actio
 
 | Action source value | Description |
 |:---|:---|
-| **Manual device action** | A manual action taken on a device. Examples include device isolation or file quarantine. |
-| **Manual email action** | A manual action taken on email. An example includes soft-deleting email messages. |
+| **Manual device action** | A manual action taken on a device. Examples include [device isolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) or [file quarantine](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#stop-and-quarantine-files). |
+| **Manual email action** | A manual action taken on email. An example includes soft-deleting email messages or [remediating an email message](https://docs.microsoft.com/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365). |
 | **Automated device action** | An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. |
 | **Automated email action** | An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. |
 | **Advanced hunting action** | Actions taken on devices or email with [advanced hunting](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview). |
 | **Explorer action** | Actions taken on email content with [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
 | **Manual live response action** | Actions taken on a device with [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response). Examples include deleting a file, stopping a process, and removing a scheduled task. |
-| **Live response action** | Actions taken on a device with Microsoft Defender for Endpoint APIs. Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
+| **Live response action** | Actions taken on a device with [Microsoft Defender for Endpoint APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis). Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
 
 
 ## Required permissions for Action center tasks
