@@ -1,7 +1,7 @@
 ---
 title: Evaluate Microsoft Defender for Office 365
 description: Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don’t act on messages.
-keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, ATP 
+keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, ATP
 f1.keywords:
 - NOCSH
 ms.author: ellevin
@@ -23,9 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
->[!IMPORTANT]
->Evaluate Microsoft Defender for Office 365 will soon be in public preview
-This preview version is provided without a service level agreement. Certain features might not be supported or might have constrained capabilities.
+> [!IMPORTANT]
+> Evaluate Microsoft Defender for Office 365 will soon be in public preview. This preview version is provided without a service level agreement. Certain features might not be supported or might have constrained capabilities.
 
 Conducting a comprehensive security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product’s capabilities to assess how it can help your security operations team in their daily tasks.
 
@@ -69,7 +68,7 @@ If you don't have one of those licenses, then you'll need to obtain a trial lice
 
 To obtain a trial license for Microsoft Defender for Office 365, you need to have the **Billing admin role** or **Global admin role**. Request permission from someone that has the Global admin role. [Learn about subscriptions and licenses](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-Once you have the proper role, the recommended path is to obtain a trial license for Microsoft Defender for Office 365 (Plan 2) in the Microsoft 365 admin center by going to Billing > Purchase services. The trial includes a 30-day free trial for 25 licenses. [Get a trial for Microsoft Defender for Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA). 
+Once you have the proper role, the recommended path is to obtain a trial license for Microsoft Defender for Office 365 (Plan 2) in the Microsoft 365 admin center by going to Billing > Purchase services. The trial includes a 30-day free trial for 25 licenses. [Get a trial for Microsoft Defender for Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
 You'll have a 30-day window with the evaluation to monitor and report on advanced threats. You'll also have the option to buy a paid subscription if you want the full Defender for Office 365 capabilities.
 
@@ -77,13 +76,14 @@ You'll have a 30-day window with the evaluation to monitor and report on advance
 
 Exchange Online roles are required to set up Defender for Office 365 in evaluation mode. The following roles are needed:
 
-|Task | Role |
-|-----| -----|
-| Get a free trial or buy Microsoft Defender for Office 365 (Plan 2)| Billing admin role OR Global admin role|
-| Create evaluation policy| Remote and Accepted Domains role; Security admin role|
-| Edit evaluation policy | Remote and Accepted Domains role; Security admin role |
-| Delete evaluation policy | Remote and Accepted Domains role; Security admin role |
-|View evaluation report | Security admin role OR Security reader role|
+|Task|Role|
+|---|---|
+|Get a free trial or buy Microsoft Defender for Office 365 (Plan 2)|Billing admin role OR Global admin role|
+|Create evaluation policy|Remote and Accepted Domains role; Security admin role|
+|Edit evaluation policy|Remote and Accepted Domains role; Security admin role|
+|Delete evaluation policy|Remote and Accepted Domains role; Security admin role |
+|View evaluation report|Security admin role OR Security reader role|
+|
 
 ### Enhanced filtering
 
@@ -103,7 +103,7 @@ You need to prepare the corresponding details that you will need to set up how y
 
 Supported email routing scenarios include:
 
-- **Third-party partner and/or on-premises service provider**: The inbound connector that you want to evaluate uses a third-party provider and/or you’re using a solution for email security on-premises.  
+- **Third-party partner and/or on-premises service provider**: The inbound connector that you want to evaluate uses a third-party provider and/or you’re using a solution for email security on-premises.
 - **Microsoft Exchange Online Protection only**: The tenant that you want to evaluate uses Office 365 for email security and the Mail Exchange (MX) record points to Microsoft.
 
 ### Email security gateway
@@ -150,7 +150,7 @@ If you have an existing gateway, you might want to bypass filtering because it w
 
 ## Evaluate capabilities
 
-After the evaluation report has been generated, see how many advanced threat links, advanced threat attachments, and potential impersonations were identified in the emails and collaboration workspaces in your organization.  
+After the evaluation report has been generated, see how many advanced threat links, advanced threat attachments, and potential impersonations were identified in the emails and collaboration workspaces in your organization.
 
 Once the trial has expired, you can continue to access the report for 90 days. However, it won’t collect any more information. If you want to continue using Microsoft Defender for Office 365 after your trial has expired, make sure you [buy a paid subscription for Microsoft Defender for Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
