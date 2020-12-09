@@ -118,10 +118,10 @@
               items: 
                 - name: Overview of automated investigation and response
                   href: mtp/mtp-autoir.md
-                - name: Configure automated investigation and response capabilities
-                  href: mtp/mtp-configure-auto-investigation-response.md
                 - name: Remediation actions following automated investigations
                   href: mtp/mtp-remediation-actions.md
+                - name: Configure automated investigation and response capabilities
+                  href: mtp/mtp-configure-auto-investigation-response.md
                 - name: Visit the Action center
                   href: mtp/mtp-action-center.md
                 - name: Approve or reject pending remediation actions
