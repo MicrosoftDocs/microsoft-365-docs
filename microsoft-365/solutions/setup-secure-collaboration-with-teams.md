@@ -55,7 +55,7 @@ Information that is critical to your organization's success, or has stringent se
 
 For all the scenarios noted above, you can use teams in Microsoft Teams to store, share, and collaborate on the information. 
 
-To configure secure collabration, you use these Microsoft 365 capabilities and features.
+To configure secure collaboration, you use these Microsoft 365 capabilities and features.
 
 | Product or component | Capability or feature | Licensing |
 |:-------|:-----|:-------|
@@ -73,7 +73,7 @@ To manage access to information with different sensitivities, we've developed [t
 
 These tiers - *baseline*, *sensitive*, and *highly sensitive* - gradually increase the protections that help prevent oversharing and potential information leakage, as shown in the following table.
 
-||**Baseline tier**|**Sensitive tier**|**Highly sensitive tier**|
+|-|**Baseline tier**|**Sensitive tier**|**Highly sensitive tier**|
 |:--|:-----------|:------------|:-------------------|
 |Public or private team|Either|Private|Private|
 |Unauthenticated sharing|Blocked|Blocked|Blocked|
