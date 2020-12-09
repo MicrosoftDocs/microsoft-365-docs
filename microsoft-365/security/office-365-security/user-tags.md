@@ -35,6 +35,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Threat Explorer and real-time detections](threat-explorer.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Campaign Views](campaigns.md)
+- For priority accounts, you can use the [Email issues for priority accounts report](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
 
 This article explains how to configure user tags in the Security & Compliance Center. There are no cmdlets in Security & Compliance Center to manage user tags.
 
@@ -55,17 +56,14 @@ This article explains how to configure user tags in the Security & Compliance Ce
 2. On the **User tags** page that opens, click **Create tag**.
 
 3. The **Create tag** wizard opens in a new fly out. On the **Define tag** page, configure the following settings:
-
    - **Name**: Enter a unique, descriptive name for the tag. This is the value that you'll see and use.
-
    - **Description**: Enter an optional description for the tag.
 
    When you're finished, click **Next**.
 
-4. On the **Assign mailboxes** page, do either of the following steps:
+4. On the **Assign users** page, do either of the following steps:
 
-   - Click **Add mailboxes**. In the fly out that appears, do any of the following steps to add individual users or groups:
-
+   - Click **Add users**. In the fly out that appears, do any of the following steps to add individual users or groups:
      - Click in the box and scroll through the list to select a user or group.
      - Click in the box and start typing to filter the list and select a user or group.
      - To add additional values, click in an empty area in the box.

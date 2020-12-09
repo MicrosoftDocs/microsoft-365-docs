@@ -9,11 +9,11 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: High
+localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Implement Microsoft Information Governance capabilities in Microsoft 365 to govern your data for compliance or regulatory requirements."
+description: "Implement Microsoft Information Governance capabilities to govern your data for compliance or regulatory requirements."
 ---
 
 # Microsoft Information Governance in Microsoft 365

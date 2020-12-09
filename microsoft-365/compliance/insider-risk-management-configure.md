@@ -26,7 +26,7 @@ Use insider risk management policies to identify risky activities and management
 
 For more information about how insider risk policies can help you manage risk in your organization, see [Insider risk management in Microsoft 365](insider-risk-management.md).
 
-## Before you begin
+## Subscriptions and licensing
 
 Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use insider risk management, your organization must have one of the following subscriptions or add-ons:
 
@@ -87,8 +87,6 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 ## Step 3: Configure prerequisites for templates
 
 Most insider risk management templates have prerequisites that must be configured for policy indicators to generate relevant activity alerts. Configure the appropriate prerequisites depending on the policies you plan to configure for your organization.
-
-If you are configuring a policy using the *Offensive language in email* policy template, you can skip this step and go directly to **Step 4**.
 
 ### Configure Microsoft 365 HR connector
 

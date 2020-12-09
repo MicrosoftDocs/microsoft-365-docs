@@ -109,9 +109,6 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs.
 
-> [!IMPORTANT]
-> By default, only the user who creates a custom classifier can train and review predictions made by that classifier. If you want others to be able to train and review classifier predictions, see [Give others train and review rights](classifier-get-started-with.md#give-others-train-and-review-rights).
-
 #### Process flow for creating custom classifiers
 
 Creating and publishing a classifier for use in compliance solutions, such as retention policies and communication supervision, follows this flow. For more detail on creating a custom trainable classifier see, [Creating a custom classifier](classifier-get-started-with.md).

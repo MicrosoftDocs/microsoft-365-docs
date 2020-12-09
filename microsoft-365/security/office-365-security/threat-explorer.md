@@ -17,7 +17,7 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Learn about using Explorer and real-time detections in the Security &amp; Compliance Center to investigate and respond to threats effectively and efficiently.
+description: Learn about using Explorer and real-time detections in the Security & Compliance Center to investigate and respond to threats effectively and efficiently.
 
 ms.custom: seo-marvel-apr2020
 ---
@@ -187,7 +187,7 @@ Phish confidence level helps to identify the degree of confidence, with which an
 
 Typically used for ZAP Phish Alert scenarios where an email was identified as Phish and removed after delivery. This is used to connect the alert with the corresponding results in Explorer. It is one of the IOCs for the alert.
 
-As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-time detections. These are ‘experience’ improvements, with the focus on making the hunting experience more consistent. These changes are outlined below:
+As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-time detections. These are 'experience' improvements, with the focus on making the hunting experience more consistent. These changes are outlined below:
 
 - [Timezone improvements](#timezone-improvements)
 - [Update in the Refresh process](#update-in-the-refresh-process)
@@ -247,7 +247,7 @@ You will also be able to export the list of targeted users up to a limit of 3000
 ### Exchange transport rules
 
 As part of data enrichment, you should also be able to see all the different transport rules which were applied to a message. This information will be present within the Email grid view (to view this, select Column options in the grid and add Exchange Transport Rule from the Column options in the grid) as well as Details flyout in the email.
-You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a ‘Contains’ search which means you will be able to search using partial searches as well.
+You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a 'Contains' search which means you will be able to search using partial searches as well.
 
 #### Important Note:
 
@@ -268,7 +268,7 @@ Within the email grid, Details flyout, and Exported CSV, the ETRs are presented 
 ### Inbound connectors
 
 Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names.
-The search for connectors is ‘Contains’ in nature which means partial keyword searches should work as well.
+The search for connectors is 'Contains' in nature which means partial keyword searches should work as well.
 Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown below:
 
 > [!div class="mx-imgBorder"]
@@ -299,7 +299,7 @@ Delivery Action is the action taken on an email due to existing policies or dete
 
 |Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|
-|Email was delivered to Inbox or folder of a user and the user can directly access it.|Email was sent to either user’s Junk folder or Deleted folder, and the user has access to emails in those folders.|Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!|Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.|
+|Email was delivered to Inbox or folder of a user and the user can directly access it.|Email was sent to either user's Junk folder or Deleted folder, and the user has access to emails in those folders.|Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!|Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.|
 
 |Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|
@@ -470,7 +470,7 @@ You must have [Microsoft Defender for Office 365](office-365-atp.md) to get Expl
 
 To view and use Explorer or Real-time detections, you must have appropriate permissions, such as those granted to a security administrator or security reader.
 
-- For the Security &amp; Compliance Center, you must have one of the following roles assigned:
+- For the Security & Compliance Center, you must have one of the following roles assigned:
 
   - Organization Management
   - Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
@@ -485,7 +485,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## Some differences between Threat Explorer and Real-time detections

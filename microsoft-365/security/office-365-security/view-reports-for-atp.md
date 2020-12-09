@@ -1,5 +1,5 @@
 ---
-title: View reports for Defender for Office 365
+title: View Defender for Office 365 reports in the Reports dashboard
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -17,11 +17,11 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-defender-office365
-description: "Find and use reports for Microsoft Defender for Office 365 in the Security &amp; Compliance Center."
+description: "Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
 
-# View reports for Microsoft Defender for Office 365
+# View Defender for Office 365 reports in the Reports dashboard in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -196,6 +196,61 @@ If you click **View details table**, the report provides a near-real-time view o
 
 To get back to the reports view, click **View report**.
 
+## Mail latency report
+
+The **Mail latency report** shows you an aggregate view of the mail delivery and detonation latency experienced within your organization. Mail delivery times in the service are affected by a number of factors, and the absolute delivery time in seconds is often not a good indicator of success or a problem. A slow delivery time on one day might be considered an average delivery time on another day, or vice-versa. The **Mail latency report** tries to qualify message delivery based on statistical data about the observed delivery times of other messages:
+
+- **50th percentile**: This is the middle for message delivery times. You can consider this value as an average delivery time.
+- **90th percentile**: This indicates a high latency for message delivery. Only 10% of messages took longer than this value to deliver.
+- **99th percentile**: This indicates the highest latency for message delivery.
+
+Client side and network latency are not included.
+
+To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
+
+![Mail latency report widget in the Reports dashboard](../../media/mail-latency-report-widget.png)
+
+### Report view for the Mail latency report
+
+When you open the report, the **50th percentiles** tab is selected by default.
+
+By default, this view contains a chart that's configured with the following filters:
+
+- **Date**: The last 7 days
+- **Message View**:
+  - Detonated messages
+
+This chart shows messages organized into the following categories:
+
+- **Mail delivery latency**
+- **Detonation latency**
+
+When you hover over a category in the chart, you can see a breakdown of the latency in each category.
+
+![Mail latency report](../../media/mail-latency-report.png)
+
+If you click **Filter** in the report view, you can modify the results with the following filters:
+
+- All messages
+- Messages that contain attachments or URLs
+
+If you click the **90th percentiles** tab or the **99th percentiles** tab, the same default filters from the **50th percentiles** view are used.
+
+### Details table view for the Mail latency report
+
+The following information is shown in the details table view:
+
+- **Date**
+- **Percentiles**
+- **Message count**
+- **Overall latency**
+
+![Mail latency report details](../../media/mail-latency-report-details.png)
+
+The above shows that on November 14 the average latency experienced for all messages delivered and detonated was **108.033** seconds.
+
+The details table contains the same information on each tab.
+
 ## Threat protection status report
 
 The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
@@ -278,27 +333,16 @@ In addition to the reports described in this topic, several other reports are av
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
-In order to view and use the reports described in this topic, **you must have an appropriate role assigned for both the Security &amp; Compliance Center and the Exchange admin center**.
+In order to view and use the reports described in this topic, you need to be a member of one of the following role groups in the Security & Compliance Center:
 
-- For the Security & Compliance Center, you must have one of the following roles assigned:
+- **Organization Management**
+- **Security Administrator**
+- **Security Reader**
+- **Global Reader**
 
-  - Organization Management
-  - Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
-  - Security Operator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
-  - Security Reader
+For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
-
-  - Organization Management
-  - View-only Organization Management
-  - View-Only Recipients role
-  - Compliance Management
-
-To learn more, see the following resources:
-
-- [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
-
-- [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## What if the reports aren't showing data?
 

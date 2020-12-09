@@ -2,10 +2,12 @@
 title: 'Set up SharePoint Syntex'
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: enabler-strategic
 search.appverid: MET150
 localization_priority: Priority
 description: "Set up content understanding in Project Cortex"
