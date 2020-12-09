@@ -55,7 +55,6 @@ Whether automated investigations run, and whether remediation actions are taken 
 3. Review your device group policies. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want. To get help with this task, see the following articles:
 
    - [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
-   
    - [Create and manage device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) 
 
 ## Review your security and alert policies in Office 365
@@ -100,6 +99,6 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 ## Review pending and completed actions in the Action center
 
-After you have configured automated investigation and response in Microsoft 365 Defender, your next step is to visit the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). There, you can review and approve pending actions, and see remediation actions that were taken automatically. 
+After you have configured automated investigation and response in Microsoft 365 Defender, your next step is to visit the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). There, you can review and approve pending actions, and see remediation actions that were taken automatically or manually. 
 
 [Visit the Action center](mtp-action-center.md).
