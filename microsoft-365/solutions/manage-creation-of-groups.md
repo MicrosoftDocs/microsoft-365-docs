@@ -34,7 +34,7 @@ If your business requires that you restrict who can create groups, you can do so
 - PowerBI (classic)
 - Project for the web / Roadmap
 
-You can restrict Microsoft 365 Group creation to the members of a particular security group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
+You can restrict Microsoft 365 Group creation to the members of a particular group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
 
 The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via any means, such as the Microsoft 365 admin center, Planner, Teams, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
 
@@ -53,7 +53,7 @@ If you're a member of one of these roles, you can create Microsoft 365 Groups fo
 To manage who creates groups, the following people need Azure AD Premium licenses or Azure AD Basic EDU licenses assigned to them:
 
 - The admin who configures these group creation settings
-- The members of the security group who are allowed to create groups
+- The members of the group who are allowed to create groups
 
 > [!NOTE]
 > See [Assign or remove licenses in the Azure Active Directory portal](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
@@ -62,22 +62,19 @@ The following people don't need Azure AD Premium or Azure AD Basic EDU licenses 
 
 - People who are members of Microsoft 365 groups and who don't have the ability to create other groups.
 
-## Step 1: Create a security group for users who need to create Microsoft 365 groups
+## Step 1: Create a group for users who need to create Microsoft 365 groups
 
-Only one security group in your organization can be used to control who is able to create Groups. But, you can nest other security groups as members of this group.
+Only one group in your organization can be used to control who is able to create Groups. But, you can nest other groups as members of this group.
 
 Admins in the roles listed above do not need to be members of this group: they retain their ability to create groups.
-
-> [!IMPORTANT]
-> Be sure to use a **security group** to restrict who can create groups. Using a Microsoft 365 group is not supported.
 
 1. In the admin center, go to the [Groups page](https://admin.microsoft.com/adminportal/home#/groups).
 
 2. Click on **Add a Group**.
 
-3. Choose **Security** as the group type. Remember the name of the group! You'll need it later.
+3. Choose the group type you want. Remember the name of the group! You'll need it later.
 
-4. Finish setting up the security group, adding people or other security groups who you want to be able to create groups in your org.
+4. Finish setting up the group, adding people or other groups who you want to be able to create groups in your org.
 
 For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
 
@@ -93,7 +90,7 @@ You must use the preview version of [Azure Active Directory PowerShell for Graph
 
 Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Replace *\<SecurityGroupName\>* with the name of the security group that you created. For example:
+Replace *\<GroupName\>* with the name of the group that you created. For example:
 
 `$GroupName = "Group Creators"`
 
@@ -108,7 +105,7 @@ Run the script by typing:
 and [sign in with your administrator account](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
 
 ```PowerShell
-$GroupName = "<SecurityGroupName>"
+$GroupName = "<GroupName>"
 $AllowGroupCreation = $False
 
 Connect-AzureAD
@@ -141,7 +138,7 @@ The last line of the script will display the updated settings:
 
 ![This is what your settings will look like when you're done.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
-If in the future you want to change which security group is used, you can rerun the script with the name of the new security group.
+If in the future you want to change which group is used, you can rerun the script with the name of the new group.
 
 If you want to turn off the group creation restriction and again allow all users to create groups, set $GroupName to "" and $AllowGroupCreation to "True" and rerun the script.
 
@@ -149,7 +146,7 @@ If you want to turn off the group creation restriction and again allow all users
 
 Changes can take thirty minutes or more to take effect. You can verify the new settings by doing the following:
 
-1. Sign in to Microsoft 365 with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the security group you created or an administrator.
+1. Sign in to Microsoft 365 with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the group you created or an administrator.
 
 2. Select the **Planner** tile.
 
@@ -157,10 +154,10 @@ Changes can take thirty minutes or more to take effect. You can verify the new s
 
 4. You should get a message that plan and group creation is disabled.
 
-Try the same procedure again with a member of the security group.
+Try the same procedure again with a member of the group.
 
 > [!NOTE]
-> If members of the security group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](https://go.microsoft.com/fwlink/?linkid=852135).
+> If members of the group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](https://go.microsoft.com/fwlink/?linkid=852135).
 
 ## Related articles
 
