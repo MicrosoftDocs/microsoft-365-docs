@@ -28,7 +28,9 @@ Information barriers is supported in Microsoft Teams, SharePoint Online, and One
 - An internal team with trade secret material should not call or chat online with people in certain groups within their organization
 - A research team should only call or chat online with a product development team
 
-## To configure information barriers for Microsoft 365
+## Configure information barriers for Microsoft 365
+
+Use the following steps to configure information barriers for your organization:
 
 ![Insider risk solution information barriers steps](../media/ir-solution-ib-steps.png)
 

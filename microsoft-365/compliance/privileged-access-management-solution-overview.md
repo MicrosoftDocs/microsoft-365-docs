@@ -21,7 +21,9 @@ ms.collection:
 
 Having standing access by some users to sensitive information or critical network configuration settings in Microsoft Exchange Online is a potential pathway for compromised accounts or internal threat activities. Privileged access management helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions. Enabling privileged access management for Exchange Online in Microsoft 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
-## To configure privileged access management for Microsoft 365
+## Configure privileged access management for Microsoft 365
+
+Use the following steps to configure privileged access management for your organization:
 
 ![Insider risk solution privileged access management steps](../media/ir-solution-pam-steps.png)
 

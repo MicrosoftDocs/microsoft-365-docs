@@ -23,6 +23,8 @@ Protecting sensitive information and detecting and acting on workplace harassmen
 
 ## Configure communication compliance for Microsoft 365
 
+Use the following steps to configure communication compliance for your organization:
+
 ![Insider risk solution communication compliance steps](../media/ir-solution-cc-steps.png)
 
 1. Learn about [communication compliance](communication-compliance.md) in Microsoft 365
