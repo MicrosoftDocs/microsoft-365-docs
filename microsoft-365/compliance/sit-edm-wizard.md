@@ -15,8 +15,9 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Learn how to create custom sensitive information types with Exact Data Match based classification.
+description: Learn how to use the exact data match schema and rule package wizard.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Use the Exact Data Match Schema and Rule Package Wizard
+
