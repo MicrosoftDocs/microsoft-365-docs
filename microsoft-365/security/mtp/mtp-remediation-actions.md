@@ -65,16 +65,15 @@ The following table lists possible verdicts and outcomes:
 
 ## Remediation actions that are taken manually
 
-In addition to remediation actions that follow automated investigations, your security operations team can take certain remediation actions manually, as listed in the following table:
+In addition to remediation actions that follow automated investigations, your security operations team can take certain remediation actions manually. These include the following actions:
 
-| Action | Description |
-|:---|:---|
-| Manual device action | A manual action taken on a device. Examples include device isolation or file quarantine. |
-| Manual email action | A manual action taken on email. An example includes soft-deleting email messages. |
-| Advanced hunting action | Actions taken on devices or email with advanced hunting. |
-| Explorer action | Actions taken on email content with Explorer. |
-| Manual live response action | Actions taken on a device with live response. Examples include deleting a file, stopping a process, and removing a scheduled task. |
-| Live response action | Actions taken on a device with Microsoft Defender for Endpoint APIs. Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
+- Manual device action, such as device isolation or file quarantine.
+- Manual email action, such as soft-deleting email messages. 
+- [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) action on devices or email.
+- [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) action on email content, such as moving email to junk, soft-deleting email, or hard-deleting email.
+- Manual [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) action, such as deleting a file, stopping a process, and removing a scheduled task.
+- Live response action with Microsoft Defender for Endpoint APIs, such as isolating a device, running an antivirus scan, and getting information about a file. 
+
 
 
 ## Next steps
