@@ -25,20 +25,20 @@ Insider risks are one of the top concerns of security and compliance professiona
 
 Microsoft 365 risk prevention features are designed and built-in to our insider risk products and solutions. These solutions work together and use advanced service and 3rd-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
 
-| **Risks** | **Communication compliance** | **Insider risk management** | **Information barriers** | **Privileged access management** |
-| :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
-| Data spillage | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
-| Confidentiality violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
-| IP theft | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
-| Workplace violence | ![Supported](../media/check-mark.png) |  |  |  |
-| Fraud | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
-| Policy violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
-| Insider trading | ![Supported](../media/check-mark.png) |  |  |  |
-| Conflicts of interest |  |  | ![Supported](../media/check-mark.png) |  |
-| Sensitive data leaks | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
-| Workplace harassment | ![Supported](../media/check-mark.png) |  |  |  |
-| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
-| Regulatory compliance violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| | **Risks** | **Communication compliance** | **Insider risk management** | **Information barriers** | **Privileged access management** |
+| :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
+| ![Data spillage icon](../media/ir-risk-data-spillage.png)| Data spillage | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
+| ![Confidentiality violations icon](../media/ir-risk-confidentiality-violations.png)| Confidentiality violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| ![IP theft icon](../media/ir-risk-ip-theft.png)| IP theft | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| ![Workplace violence icon](../media/ir-risk-workplace-violence.png)| Workplace violence | ![Supported](../media/check-mark.png) |  |  |  |
+| ![Fraud/thief icon](../media/ir-risk-fraud.png)| Fraud | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
+| ![Policy violations icon](../media/ir-risk-policy-violations.png)| Policy violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
+| ![Insider trading/handshake icon](../media/ir-risk-insider-trading.png)| Insider trading | ![Supported](../media/check-mark.png) |  |  |  |
+| ![Conflicts of interest icon](../media/ir-risk-conflicts-of-interest.png)| Conflicts of interest |  |  | ![Supported](../media/check-mark.png) |  |
+| ![Sensitive data leaks/devices icon](../media/ir-risk-sensitive-data-leaks.png)| Sensitive data leaks | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
+| ![Workplace harassment/people icon](../media/ir-risk-workplace-harassment.png)| Workplace harassment | ![Supported](../media/check-mark.png) |  |  |  |
+| ![Security violations icon](../media/ir-risk-security-violations.png)| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
+| ![Regulatory compliance violations icon](../media/ir-risk-regulatory-compliance-violations.png)| Regulatory compliance violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
 
 ## Microsoft 365 insider risk solutions
 
