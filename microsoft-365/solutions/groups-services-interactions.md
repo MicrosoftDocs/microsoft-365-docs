@@ -635,3 +635,9 @@ No, the Yammer group can only ever be associated with the Microsoft 365 group to
 
 Yes, deleting the group in Yammer will delete related Microsoft group and group-associated services and content.
 
+## Related topics
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
+
