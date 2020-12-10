@@ -172,7 +172,7 @@ By assigning a user to one of the Microsoft 365 compliance or security admin rol
 |Microsoft Defender for Identity|[Microsoft Defender for Identity role groups](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Compliance Manager|[Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
-|Exchange Online|[Exchange role-based access control](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo)|
+|Exchange Online|[Exchange role-based access control](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)|
 |Intune|[Intune role-based access control](https://docs.microsoft.com/intune/role-based-access-control)|
 |Managed Desktop|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Cloud App Security|[Role-based access control](https://docs.microsoft.com/cloud-app-security/manage-admins)|
