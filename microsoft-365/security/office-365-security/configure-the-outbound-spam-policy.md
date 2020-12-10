@@ -153,7 +153,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
      - **No action, alert only**: Email notifications are sent.
 
-6. (Optional) Expand **Automatic forwarding** section to control automatic email forwarding by users to external senders. For more information about automatic forwarding, see [Configure email forwarding](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
+6. (Optional) Expand **Automatic forwarding** section to control automatic email forwarding by users to external senders. For more information, see [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md).
 
    > [!NOTE]
    >
@@ -161,7 +161,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
    >
    > - These settings apply only to cloud-based mailboxes.
    >
-   > - When automatic forwarding is disabled, the recipient will receive a non-delivery report (also known as an NDR or bounce message) if external senders send email to a mailbox that has forwarding in place. If the email is sent by an internal sender, the sender will get the NDR.
+   > - When automatic forwarding is disabled, the recipient will receive a non-delivery report (also known as an NDR or bounce message) if external senders send email to a mailbox that has forwarding in place. If the message is sent by an internal sender **and** the forwarding method is [mailbox forwarding](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as _SMTP forwarding_), the internal sender will get the NDR. The internal sender does not get an NDR if the forwarding occurred due to an inbox rule.
 
    The available values are:
 
