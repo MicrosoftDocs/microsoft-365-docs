@@ -63,10 +63,10 @@ productDirectory:
       links:
         - url: /MicrosoftTeams/quick-start-meetings-live-events
           text: Meetings and live events in Microsoft Teams
+        - url: solutions/deploy-voice.md
+          text: Plan and deploy a Teams voice solution
         - url: /MicrosoftTeams/business-voice/whats-business-voice
           text: Microsoft 365 Business Voice
-        - url: /MicrosoftTeams/cloud-voice-landing-page
-          text: Cloud Voice in Microsoft Teams
         - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
           text: Microsoft telephony solutions
     # Card
@@ -105,9 +105,9 @@ productDirectory:
         - url: solutions/configure-teams-three-tiers-protection.md
           text: Configure three tiers of protection with Microsoft Teams
         - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
-          text: Deploy Microsoft Defender Advanced Threat Protection
+          text: Deploy Microsoft Defender for Endpoint
         - url: security/office-365-security/office-365-atp.md
-          text: Deploy Office 365 Advanced Threat Protection
+          text: Deploy Microsoft Defender for Office 365
         - url: security/office-365-security/microsoft-365-policies-configurations.md
           text: Configure identity and device access protection
     # Card
@@ -115,6 +115,8 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
       links:
+        - url: compliance/insider-risk-solution-overview.md
+          text: Insider risk solutions in Microsoft 365
         - url: compliance/compliance-quick-tasks.md
           text: Quick tasks for getting started with Microsoft 365 compliance
         - url: compliance/information-protection.md
