@@ -32,7 +32,7 @@ To see topics, a user must:
 
 These two things give users view access to the topic center and allow them to see highlights and topic cards.
 
-Topic contributors additionally have [create and edit](topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) permissions for topics, and knowledge managers can confirm or remove topics.
+Topic contributors additionally have [create and edit](topic-experiences-user-permissions.md#change-who-has permissions-to-update-topic-details) permissions for topics, and knowledge managers can confirm or remove topics.
 
 When a topic is first discovered, knowledge managers can see it in the topic center. Depending on the completeness and relevance of the topic, topic viewers may or may not see the topic presented in topic cards.
 
