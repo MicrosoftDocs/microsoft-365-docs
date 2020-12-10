@@ -177,7 +177,3 @@ The following table lists changes and improvements coming to AIR in Microsoft De
 - [See details and results of an automated investigation](air-view-investigation-results.md#view-details-of-an-investigation)
 
 - [Review and approve pending actions](air-remediation-actions.md)
-
-## See also
-
-- [The Microsoft 365 Security center dashboard for Email & Collaboration](microsoft-365-security-center-dashboard.md)
