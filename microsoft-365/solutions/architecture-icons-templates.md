@@ -21,6 +21,17 @@ You can see these icons, symbols, and templates in action in downloadable files 
 - [Productivity illustrations](productivity-illustrations.md)
 - [Microsoft cloud architecture models](cloud-architecture-models.md)
 
+## Terms and download
+
+Microsoft permits the use of these icons in architectural diagrams, training materials, or documentation. You may copy, distribute, and display the icons only for the permitted use unless granted explicit permission by Microsoft. Microsoft reserves all other rights.
+
+
+ > [!div class="button"]
+ > [Download SVG and PNG icons](https://go.microsoft.com/fwlink/?linkid=869455)
+
+ > [!div class="button"]
+ > [Download Visio templates and stencils](https://go.microsoft.com/fwlink/?linkid=2056186)
+
 ## Example architecture diagrams
 
 You can use these icons and templates to create diagrams like the following examples:
@@ -32,14 +43,3 @@ You can use these icons and templates to create diagrams like the following exam
 2. Teams retention lifecycle architecture diagram:
 
     ![Teams retention lifecycle](../media/TeamsRetentionLifecycle.png)
-
-## Terms
-
-Microsoft permits the use of these icons in architectural diagrams, training materials, or documentation. You may copy, distribute, and display the icons only for the permitted use unless granted explicit permission by Microsoft. Microsoft reserves all other rights.
-
-
- > [!div class="button"]
- > [Download SVG and PNG icons](https://go.microsoft.com/fwlink/?linkid=869455)
-
- > [!div class="button"]
- > [Download Visio templates and stencils](https://go.microsoft.com/fwlink/?linkid=2056186)
