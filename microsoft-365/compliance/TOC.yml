@@ -16,11 +16,34 @@
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
-
 - name: Manage insider risks
   items:
+    - name: Microsoft 365 insider risk solutions
+      href: insider-risk-solution-overview.md
+    - name: Communication compliance
+      items:
+        - name: Overview
+          href: communication-compliance-solution-overview.md 
+        - name: Learn about communication compliance
+          href: communication-compliance.md
+        - name: Plan for communication compliance
+          href: communication-compliance-plan.md
+        - name: Get started with communication compliance
+          href: communication-compliance-configure.md
+        - name: Investigate and remediate communication compliance alerts
+          href: communication-compliance-investigate-remediate.md
+        - name: Feature reference for communication compliance
+          href: communication-compliance-feature-reference.md
+        - name: Case study - Contoso quickly configures an offensive language policy 
+          href: communication-compliance-case-study.md
+        - name: Supervision policies in Office 365
+          href: supervision-policies.md
+        - name: Configure supervision policies for Office 365
+          href: configure-supervision-policies.md
     - name: Insider risk management
       items:
+        - name: Overview
+          href: insider-risk-management-solution-overview.md
         - name: Learn about insider risk management
           href: insider-risk-management.md
         - name: Plan for insider risk management
@@ -41,27 +64,12 @@
           href: insider-risk-management-users.md
         - name: Create insider risk notice templates
           href: insider-risk-management-notices.md
-    - name: Communication compliance
-      items: 
-        - name: Learn about communication compliance
-          href: communication-compliance.md
-        - name: Plan for communication compliance
-          href: communication-compliance-plan.md
-        - name: Get started with communication compliance
-          href: communication-compliance-configure.md
-        - name: Investigate and remediate communication compliance alerts
-          href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance
-          href: communication-compliance-feature-reference.md
-        - name: Case study - Contoso quickly configures an offensive language policy 
-          href: communication-compliance-case-study.md
-        - name: Supervision policies in Office 365
-          href: supervision-policies.md
-        - name: Configure supervision policies for Office 365
-          href: configure-supervision-policies.md
     - name: Information barriers
-      href: information-barriers.md
-      items: 
+      items:
+        - name: Overview
+          href: information-barriers-solution-overview.md 
+        - name: Learn about information barriers
+          href: information-barriers.md
         - name: Define information barrier policies
           href: information-barriers-policies.md
         - name: Attributes for information barrier policies
@@ -71,7 +79,9 @@
         - name: Edit information barrier policies
           href: information-barriers-edit-segments-policies.md
     - name: Privileged access management
-      items: 
+      items:
+        - name: Overview
+          href: privileged-access-management-solution-overview.md
         - name: Learn about privileged access management
           href: privileged-access-management-overview.md
         - name: Get started with privileged access management

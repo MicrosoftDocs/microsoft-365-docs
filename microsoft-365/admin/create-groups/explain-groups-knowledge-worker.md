@@ -34,6 +34,8 @@ Because groups can be created in several ways, we recommend training your users 
 
 If you train your users to always use the group creation method that most aligns with their way of working when they need a space to collaborate with others, you can help avoid confusion and duplication of resources. As users become more experienced, they will understand better the collection of services that come with a group and that different creation methods lead to the same result.
 
+You can use the [Microsoft 365 Groups for Business User - PowerPoint template](https://www.microsoft.com/download/details.aspx?id=102396) as a starting point for training presentations for your users.
+
 ## Related topics
 
 [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
