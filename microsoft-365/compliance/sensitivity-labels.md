@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Use sensitivity labels from the Microsoft Information Protection framework to classify and protect sensitive content with encryption and watermarks.
+description: Use sensitivity labels from Microsoft Information Protection (MIP) to classify and protect sensitive content.
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
@@ -47,11 +47,11 @@ You can use sensitivity labels to:
   
 - **Provide protection settings that include encryption and content markings such as headers, footers, or watermarks.** For example, apply a "Confidential" label to a document or email, and that label can encrypt the content and apply a "Confidential" watermark.
 
-- **Protect content in Office apps across different platforms and devices.** Supported by Word, Excel, PowerPoint, and Outlook on the Office desktop apps and Office on the web, for Windows, macOS, iOS and Android.
+- **Protect content in Office apps across different platforms and devices.** Supported by Word, Excel, PowerPoint, and Outlook on the Office desktop apps and Office on the web. Supported on Windows, macOS, iOS, and Android.
 
 - **Protect content in third-party apps and services** by using Microsoft Cloud App Security. With Cloud App Security, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
 
-- **Protect containers** that include Teams, Microsoft 365 Groups and SharePoint sites. For example, set privacy settings, external user access and external sharing, and access from unmanaged devices.
+- **Protect containers** that include Teams, Microsoft 365 Groups, and SharePoint sites. For example, set privacy settings, external user access and external sharing, and access from unmanaged devices.
 
 - **Extend sensitivity labels to Power BI**: When you turn on this capability, you can apply and view labels in Power BI, and protect data when it's saved outside the service.
 
@@ -74,7 +74,7 @@ When you assign a sensitivity label to a document or email, it's like a stamp th
 
 - **Clear text.** Because the label is stored in clear text in the content's metadata, third-party apps and services can read it and then apply their own protective actions, if required.
 
-- **Persistent.** Because the label is stored in the content's metadata, the label persists with the content, no matter where it's saved or stored. Unique to your organization, the label reference becomes the basis for applying and enforcing policies.
+- **Persistent.** Because the label is stored in the content's metadata, the label roams with the content, no matter where it's saved or stored. Unique to your organization, the label identification becomes the basis for applying and enforcing policies.
 
 When viewed by users, a sensitivity label appears like a tag on their apps that they use.
 
