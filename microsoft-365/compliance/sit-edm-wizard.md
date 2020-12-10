@@ -1,5 +1,5 @@
 ---
-title: "Use the Exact Data Match Schema and Rule Package Wizard"
+title: "Use the Exact Data Match Schema and Sensitive Information Type Wizard"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Learn how to use the exact data match schema and rule package wizard.
+description: Learn how to use the exact data match schema and sensitive information type wizard.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Use the Exact Data Match Schema and Rule Package Wizard
+# Use the Exact Data Match Schema and Sensitive Information Type Wizard
 
-[Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)  involves many steps.  You can use this wizard to create your schema and pattern (rule package) files to help simplify the process.
+[Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)  involves many steps.  You can use this wizard to create your schema and sensitive information type pattern (rule package) files to help simplify the process.
 
 This wizard can be used instead of the:
 
@@ -40,4 +40,4 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 After you have used this wizard to create your EDM schema and pattern (rule package) files, you still have to perform the steps in [Part 2: Hash and upload the sensitive data](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-2-hash-and-upload-the-sensitive-data) before you can use the EDM custom sensitive information type.
 
-## Use the Exact Data Match Schema and Patter Wizard
+## Use the exact data match schema and sensitive information type patter wizard
