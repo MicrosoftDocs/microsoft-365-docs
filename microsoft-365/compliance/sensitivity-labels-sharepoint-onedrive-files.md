@@ -74,7 +74,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
     2. Download the files and then upload them to SharePoint.
 
 - SharePoint and OneDrive can't process encrypted files when the label that applied the encryption has any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
-    - **Let users assign permissions when they apply the label** and the checkbox for **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
+    - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
     - **Double Key Encryption** is selected.
     
@@ -189,7 +189,7 @@ However, you can use both protection solutions together and the behavior is as f
 
 - If you download an Office or PDF file that isn't encrypted with a sensitivity label, IRM settings are applied.
 
-- If you have enabled any of the additional IRM library settings, which includes preventing users from uploading documents that don't support IRM, these settings are enforced.
+- If you have enabled any of the additional IRM library settings, which include preventing users from uploading documents that don't support IRM, these settings are enforced.
 
 With this behavior, you can be assured that all Office and PDF files are protected from unauthorized access if they are downloaded, even if they aren't labeled. However, labeled files that are uploaded won't benefit from the new capabilities.
 
