@@ -28,7 +28,7 @@ Remediation means taking a prescribed action against a threat. Malicious email s
 
 ## What you need to know before you begin
 
-Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Security & Compliance Center** \> **Permissions**. Without the "search and purge" role added to one of the role-groups, they wont be able to execute the action.
+Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Security & Compliance Center** \> **Permissions**. Without the "search and purge" role added to one of the role-groups, they won't be able to execute the action.
 
 ## Manual and automated remediation
 
