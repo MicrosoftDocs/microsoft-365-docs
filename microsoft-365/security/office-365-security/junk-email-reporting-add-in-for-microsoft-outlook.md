@@ -65,7 +65,7 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
    - Moved to the Junk Email folder if it was reported as spam.
    - Deleted if it was reported as phishing.
-   
+
    To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
 ## Use the Junk Email Reporting add-in to report non-spam and phishing messages from the Junk Email folder

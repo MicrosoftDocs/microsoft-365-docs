@@ -3,7 +3,7 @@ title: "Configure teams with protection for highly sensitive data"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -63,7 +63,7 @@ To create a sensitivity label
 6. On the **Encryption** page, in the **Encryption** dropdown, choose **Apply**.
 7. Under **Assign permissions to specific users and groups**, click **Assign permissions**.
 8. Click **Add all users and groups in your organization**.
-9. If there are guest users who should have permissions to decrypt files, click **Add users or groups** and add them.
+9. If there are guests who should have permissions to decrypt files, click **Add users or groups** and add them.
 10.  Click **Save**, and then click **Next**.
 11. On the **Content marking** page, turn on content marking if you want to automatically add a header, footer, or watermark to files that are classified with this label.
 12. On the **Site and group settings** page, set **Site and group settings** to **On**.

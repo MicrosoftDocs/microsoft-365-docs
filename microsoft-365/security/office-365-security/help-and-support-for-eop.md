@@ -71,13 +71,13 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 
 |Country or region|Pre-purchase and billing questions|Technical Support questions|
 |---|---|---|
-|Brazil|Toll-free: 08007621146 <br/> Local: 1147001999|Same|
-|France|Toll-free: 0805 540 594 <br/> Local: 01 57 32 42 97|Same|
-|Germany|Toll-free: 0800 589 2332 <br/>  Local: 069 380 789 508|Same|
-|Japan|Toll-free: 0120-628860 <br/> Local: 343326257|Toll-free: 0120-996680 <br/> Local: 357679793|
-|Korea|Toll-free: 080-495-0880 <br/> Local: 234831937|Same|
-|Spain|Toll-free: 900 814 197 <br/> Local: 912 718 160|Same|
-|United Kingdom|Toll-free: 0800 032 6417 <br/> Local: 0203 450 6455|Same|
+|Brazil|Toll-free: 08007621146 <br> Local: 1147001999|Same|
+|France|Toll-free: 0805 540 594 <br> Local: 01 57 32 42 97|Same|
+|Germany|Toll-free: 0800 589 2332 <br>  Local: 069 380 789 508|Same|
+|Japan|Toll-free: 0120-628860 <br> Local: 343326257|Toll-free: 0120-996680 <br> Local: 357679793|
+|Korea|Toll-free: 080-495-0880 <br> Local: 234831937|Same|
+|Spain|Toll-free: 900 814 197 <br> Local: 912 718 160|Same|
+|United Kingdom|Toll-free: 0800 032 6417 <br> Local: 0203 450 6455|Same|
 |United States|Toll-free: 1-877-913-2707|Toll-free: 1-800-865-9408|
 |
 

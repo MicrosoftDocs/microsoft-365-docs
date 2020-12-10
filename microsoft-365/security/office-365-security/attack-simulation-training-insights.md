@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-m365-defender
 description: "Learn how Attack simulation training in Microsoft 365 security center affect employees and gain insights from simulation and training outcomes."
 ---

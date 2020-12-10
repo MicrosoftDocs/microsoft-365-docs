@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 description: "Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
@@ -351,5 +351,5 @@ If you are not seeing data in your Defender for Office 365 reports, double-check
 ## Related topics
 
 [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
-  
+
 [Role permissions (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
