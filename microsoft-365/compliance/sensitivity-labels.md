@@ -45,13 +45,15 @@ To apply sensitivity labels, users must be signed in with their Microsoft 365 wo
 
 You can use sensitivity labels to:
   
-- **Enforce protection settings such as encryption or watermarks on labeled content.** For example, your users can apply a Confidential label to a document or email, and that label can encrypt the content and apply a Confidential watermark.
+- **Provide protection settings that include encryption and content markings such as headers, footers, or watermarks.** For example, apply a "Confidential" label to a document or email, and that label can encrypt the content and apply a "Confidential" watermark.
 
-- **Protect content in Office apps across different platforms and devices.** For a list of supported apps, see [Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
+- **Protect content in Office apps across different platforms and devices.** Supported by Word, Excel, PowerPoint, and Outlook on the Office desktop apps and Office on the web, for Windows, macOS, iOS and Android.
 
 - **Protect content in third-party apps and services** by using Microsoft Cloud App Security. With Cloud App Security, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
 
 - **Protect containers** that include Teams, Microsoft 365 Groups and SharePoint sites. For example, set privacy settings, external user access and external sharing, and access from unmanaged devices.
+
+- **Extend sensitivity labels to Power BI**: When you turn on this capability, you can apply and view labels in Power BI, and protect data when it's saved outside the service.
 
 - **Extend sensitivity labels to assets in Azure Purview**: When you turn on this capability, currently in preview, you can apply your sensitivity labels to assets such as SQL columns, files in Azure Blob Storage, and more. 
 
@@ -59,19 +61,22 @@ You can use sensitivity labels to:
 
 - **Classify content without using any protection settings.** You can also simply assign a classification to content (like a sticker) that persists and roams with the content as it's used and shared. You can use this classification to generate usage reports and see activity data for your sensitive content. Based on this information, you can always choose to apply protection settings later.
 
+> [!NOTE]
+> For more information about these and other scenarios that are supported by sensitivity labels, see [Common scenarios for sensitivity labels](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels).
+
 In all these cases, sensitivity labels in Microsoft 365 can help you take the right actions on the right content. With sensitivity labels, you can classify data across your organization, and enforce protection settings based on that classification.
 
 ## What a sensitivity label is
 
 When you assign a sensitivity label to a document or email, it's like a stamp that's applied to content that is:
 
-- **Customizable.** You can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
+- **Customizable.** Specific to your organization and business needs, you can create categories for different levels of sensitive content in your organization. For example, Personal, Public, General, Confidential, and Highly Confidential.
 
 - **Clear text.** Because the label is stored in clear text in the content's metadata, third-party apps and services can read it and then apply their own protective actions, if required.
 
-- **Persistent.** After you apply a sensitivity label to content, the label is stored in the metadata of that email or document. This means the label roams with the content, including the protection settings, and this data becomes the basis for applying and enforcing policies.
+- **Persistent.** Because the label is stored in the content's metadata, the label persists with the content, no matter where it's saved or stored. Unique to your organization, the label reference becomes the basis for applying and enforcing policies.
 
-In Office apps, a sensitivity label appears like a tag to users on an email or document.
+When viewed by users, a sensitivity label appears like a tag on their apps that they use.
 
 Each item that supports sensitivity labels can have a single sensitivity label applied to it. Documents and emails can have both a sensitivity label and a [retention label](retention.md#retention-labels) applied to them.
 
@@ -264,5 +269,5 @@ You can also learn about [partner solutions that are integrated with Microsoft I
 
 ## Deployment guidance
 
-For deployment planning and guidance that includes licensing information, permissions, deployment strategy, and a list of resources for supported scenarios and end user documentation, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+For deployment planning and guidance that includes licensing information, permissions, deployment strategy, and a list of supported scenarios and end user documentation, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
 
