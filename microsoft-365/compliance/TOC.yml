@@ -106,6 +106,8 @@
           href: custom-sensitive-info-types.md
         - name: Create custom sensitive information types with exact data match
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Use the Exact Data Match Schema and Sensitive Information Type Wizard
+          href: sit-edm-wizard.md
         - name: Create a custom sensitive information type - Security & Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
