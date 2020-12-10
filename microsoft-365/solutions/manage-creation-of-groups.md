@@ -34,7 +34,7 @@ If your business requires that you restrict who can create groups, you can do so
 - PowerBI (classic)
 - Project for the web / Roadmap
 
-You can restrict Microsoft 365 Group creation to the members of a particular group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
+You can restrict Microsoft 365 Group creation to the members of a particular Microsoft 365 group or security group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
 
 The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via any means, such as the Microsoft 365 admin center, Planner, Teams, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
 
