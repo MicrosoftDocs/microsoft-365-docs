@@ -75,7 +75,7 @@ When you assign a sensitivity label to a document or email, it's like a stamp th
 
 - **Persistent.** Because the label is stored in the content's metadata, the label roams with the content, no matter where it's saved or stored. Unique to your organization, the label identification becomes the basis for applying and enforcing policies.
 
-When viewed by users, a sensitivity label appears like a tag on their apps that they use.
+When viewed by users, a sensitivity label appears like a tag on apps that they use and can be easily integrated into their existing workflows.
 
 Each item that supports sensitivity labels can have a single sensitivity label applied to it. Documents and emails can have both a sensitivity label and a [retention label](retention.md#retention-labels) applied to them.
 
