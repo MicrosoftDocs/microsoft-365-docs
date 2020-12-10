@@ -196,6 +196,7 @@ sections:
           
           > [!NOTE]
           > If you added a contoso.com domain to a Microsoft 365 subscription, you can also add the subdomain xyz.contoso.com to another Microsoft 365 organization. When adding the subdomain, you are prompted to add a TXT record in the DNS hosting provider.
+          ::: moniker-end
           
       - question: How do I transfer a domain from Microsoft 365 to another host?
         answer: |
@@ -219,9 +220,7 @@ sections:
               
           You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
             
-          ::: moniker-end
           
-          ::: moniker range="o365-germany"
       - question: Why do I have an "onmicrosoft.de" domain?
         answer: |
           Microsoft 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service. The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.de*. 
@@ -236,7 +235,6 @@ sections:
               
           You can keep using the initial onmicrosoft.de domain even after you add your domain. It still works for email and other services, so it's your choice.
             
-          ::: moniker-end
           
       - question: How do I verify my nonprofit or education status?
         answer: |
