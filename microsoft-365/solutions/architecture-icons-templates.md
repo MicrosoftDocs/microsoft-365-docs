@@ -22,12 +22,9 @@ You can see these icons, symbols, and templates in action on the [Productivity i
 
 Microsoft permits the use of these icons in architectural diagrams, training materials, or documentation. You may copy, distribute, and display the icons only for the permitted use unless granted explicit permission by Microsoft. Microsoft reserves all other rights.
 
-<div id="consent-checkbox">
-I agree to the above terms
-</div>
 
  > [!div class="button"]
  > [Download SVG and PNG icons](https://go.microsoft.com/fwlink/?linkid=869455)
 
  > [!div class="button"]
- > [Download Visio templates](https://go.microsoft.com/fwlink/?linkid=2056186)
+ > [Download Visio templates and stencils](https://go.microsoft.com/fwlink/?linkid=2056186)
