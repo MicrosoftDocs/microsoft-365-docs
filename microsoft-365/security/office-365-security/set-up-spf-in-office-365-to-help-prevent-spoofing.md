@@ -64,11 +64,11 @@ Gather this information:
    |---|---|---|---|
    |1|Any email system (required)|Common. All SPF TXT records start with this value|`v=spf1`|
    |2|Exchange Online|Common|`include:spf.protection.outlook.com`|
-   |3|Exchange Online dedicated only|Not common|`ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com`|
+   |3|Exchange Online dedicated only|Not common|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
    |4|Office 365 Germany, Microsoft Cloud Germany only|Not common|`include:spf.protection.outlook.de`|
-   |5|Third-party email system|Not common|`include:<domain_name>`  <br/> Where \<domain_name\> is the domain of the third party email system.|
-   |6|On-premises mail system. For example, Exchange Online Protection plus another mail system|Not common|Use one of these for each additional mail system: <br> `ip4:<IP_address>` <br/> `ip6:<IP_address>` <br/> `include:<domain_name>` <br/> Where \<IP_address\> and \<domain_name\> are the IP address and domain of the other mail system that sends mail on behalf of your domain.|
-   |7|Any email system (required)|Common. All SPF TXT records end with this value|`<enforcement rule>` <br/> This can be one of several values. We recommend the value ``-all`.|
+   |5|Third-party email system|Not common|`include:<domain_name>` <p> \<domain_name\> is the domain of the third party email system.|
+   |6|On-premises email system. For example, Exchange Online Protection plus another email system|Not common|Use one of these for each additional mail system: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> and \<domain_name\> are the IP address and domain of the other email system that sends mail on behalf of your domain.|
+   |7|Any email system (required)|Common. All SPF TXT records end with this value|`<enforcement rule>` <p> This can be one of several values. We recommend the value `-all`.|
    |
 
 2. If you haven't already done so, form your SPF TXT record by using the syntax from the table.
