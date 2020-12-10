@@ -59,7 +59,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, you can use th
 
    - Select the message, click **Not Junk** on the toolbar, and then select **Not Junk** or **Phishing**.
 
-     ![Report junk or phishing email from the ribbon](../../media/owa-report-not-junk.png)
+     ![Report not junk or not phishing email from the ribbon](../../media/owa-report-not-junk.png)
 
    - Select one or more messages, right-click, and then select **Mark as not junk**.
 

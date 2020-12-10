@@ -49,7 +49,7 @@ Standalone EOP customers can access the EAC by using the following methods:
 
 This section describes the user interface elements that are found in the EAC.
 
-![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
+![The Exchange admin center in Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
 ### Feature Pane
 
