@@ -118,7 +118,7 @@ You view and manage quarantined messages in the Security & Compliance Center or 
    - **Recipient email address**: A single recipient's email address.
 
    - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
-  
+
    - **Policy name**: The name of the policy that was responsible for quarantining the message.
 
    After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
@@ -160,7 +160,7 @@ After you select a message, you have several options for what to do with the mes
   - Choose one of the following options:
     - **Release messages to all recipients**
     - **Release messages to specific recipients**
-    - **Release messages to other people**: Note that releasing malware messages to people other than original recipients is not supported. 
+    - **Release messages to other people**: Note that releasing malware messages to people other than original recipients is not supported.
 
   When you're finished, click **Release messages**.
 
