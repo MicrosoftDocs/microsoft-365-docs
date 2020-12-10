@@ -67,5 +67,19 @@ To help protect your organization against insider risks, set up and deploy the f
 To help you plan an integrated strategy for implementing Microsoft 365 insider risk capabilities, download the *Microsoft 365 information protection and compliance capabilities* set of illustrations. For insider risk capabilities, see the architecture illustration topics 5-7. Feel free to adapt these illustrations for your own use.
 
 | Item | Description |
-|:-----|:-----|
+|:-----|:------------|
 |[![Model poster: Microsoft 365 information protection and compliance capabilities](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Updated October 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk management</li><li>Third-party data ingestion</li>|
+
+## Training
+
+Training your administrators and compliance team in the basics for each insider risk solution can help your organization get started more quickly with your deployment and implementation efforts. 
+
+Microsoft 365 provides the following resources to help inform and train these users in your organization:
+
+| **Solution/Area** | **Resources** |
+|:------------------|:--------------|
+| Manage insider risk in Microsoft 365 |[Complete learning path](/learn/paths/m365-compliance-insider) <br> This learning path includes all the individual solution modules for communication compliance, insider risk management, information barriers, and privileged access management. Select this learning path to complete all the modules. |
+| Communication compliance | [Learning module: Prepare communication compliance in Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> This module helps you learn the basics on how to identify and remediate code-of-conduct policy violations with communication compliance, cover the the prerequisites needed before creating communication compliance policies, and learn about the types of built-in, pre-defined policy templates in communication compliance. |
+| Insider risk management | [Learning module: Insider risk management in Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> This module helps you learn how insider risk management in Microsoft 365 can help prevent, detect, and contain internal risks in an organization, learn about the types of built-in, pre-defined policy templates, understand the basic prerequisites needed before creating insider risk policies, and explains the types of actions you can take on insider risk management cases. |
+| Information barriers | [Learning module: Plan for information barriers](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> This module helps you learn how information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, lists the types of situations when information barriers would be applicable, helps explain the process of creating an information barrier policy, and helps explain how to troubleshoot unexpected issues after information barriers are in place. |
+| Privileged access management | [Learning module: Implement privileged access management](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> This module helps you understand the difference between privileged access management and privileged identity management, understand the privileged access management process flow, and understand the basics of how to configure and enable privileged access management. |
