@@ -45,7 +45,7 @@ To apply sensitivity labels, users must be signed in with their Microsoft 365 wo
 
 You can use sensitivity labels to:
   
-- **Provide protection settings that include encryption and content markings such as headers, footers, or watermarks.** For example, apply a "Confidential" label to a document or email, and that label can encrypt the content and apply a "Confidential" watermark.
+- **Provide protection settings that include encryption and content markings such as headers, footers, or watermarks.** For example, apply a "Confidential" label to a document or email, and that label encrypts the content and applies a "Confidential" watermark.
 
 - **Protect content in Office apps across different platforms and devices.** Supported by Word, Excel, PowerPoint, and Outlook on the Office desktop apps and Office on the web. Supported on Windows, macOS, iOS, and Android.
 
