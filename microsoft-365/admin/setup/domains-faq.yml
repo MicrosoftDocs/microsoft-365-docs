@@ -29,31 +29,11 @@ metadata:
     
 title: Domains FAQ
 summary: |
-  ::: moniker range="o365-21vianet"
-  
-  > [!NOTE]
-  > The admin center is changing. If your experience doesn't match the details presented here, see 
-  [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview).
-  
-  ::: moniker-end
+
   
   This article contains answers to frequently asked questions about domains in Microsoft 365.
   
   If you can't find an answer to your question, let us know by leaving a comment and we'll add it to the list.
-  
-  In this article
-  
-  - [What is MX priority?](#what-is-mx-priority)
-  - [How can I validate SPF records for my domain?](#how-can-i-validate-spf-records-for-my-domain)
-  - [What is a domain name?](#what-is-a-domain-name)
-  - [What happens if my DNS provider doesn't support certain record types?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
-  - [How do I set or change the default domain in Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
-  - [Can I add custom subdomains or multiple domains to Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
-  - [How do I transfer a domain from Microsoft 365 to another host?](#how-do-i-transfer-a-domain-from-microsoft-365-to-another-host)
-  - [Why do I have an "onmicrosoft.com" domain?](#why-do-i-have-an-onmicrosoftcom-domain)
-  - [Why do I have an "onmicrosoft.de" domain?](#why-do-i-have-an-onmicrosoftde-domain)
-  - [How do I verify my nonprofit or education status?](#how-do-i-verify-my-nonprofit-or-education-status)
-      
 
 sections:
   - name: Ignored
