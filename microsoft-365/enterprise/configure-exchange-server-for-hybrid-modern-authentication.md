@@ -71,7 +71,7 @@ Get-WebServicesVirtualDirectory | FL server,*url*
 Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
 Get-OABVirtualDirectory | FL server,*url*
 Get-AutodiscoverVirtualDirectory | FL server,*url*
-Get-OutlookAnywhere | FL server,*url*
+Get-OutlookAnywhere | FL server, HostName
 ```
 
 Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD.
