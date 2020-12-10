@@ -87,11 +87,11 @@ The Subject should be a brief summary of what the message is about, and the mess
 
 Correct:
 
-> From: marketing@shoppershandbag.com <br/> Subject: Updated catalog for the Christmas season!
+> From: marketing@shoppershandbag.com <br> Subject: Updated catalog for the Christmas season!
 
 Incorrect:
 
-> From: someone@outlook.com <br/> Subject: Catalogs
+> From: someone@outlook.com <br> Subject: Catalogs
 
 The easier you make it for people to know who you are and what you are doing, the less difficulty you will have delivering through most spam filters.
 

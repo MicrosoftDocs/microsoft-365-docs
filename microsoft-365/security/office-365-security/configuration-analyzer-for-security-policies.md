@@ -32,7 +32,7 @@ Configuration analyzer in the Security & Compliance center provides a central lo
 The following types of policies are analyzed by the configuration analyzer:
 
 - **Exchange Online Protection (EOP) policies**: This includes Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
-  
+
   - [Anti-spam policies](configure-your-spam-filter-policies.md).
   - [Anti-malware policies](configure-anti-malware-policies.md).
   - [EOP Anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
