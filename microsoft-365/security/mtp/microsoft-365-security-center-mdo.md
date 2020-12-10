@@ -36,12 +36,12 @@ This table is a quick reference of Email & Collaboration areas where change has 
 
 |**Changed**  |**Unchanged**  |
 |---------|---------|
-|[Dashboard](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-365-security-center-dashboard?view=o365-worldwide)     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer?view=o365-worldwide)       |
-|[Attack Simulator ](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-worldwide)   |  [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide)       |
-|[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center?view=o365-worldwide)    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
-|     |    [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
-|     |    [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
-|     |    [Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers?view=o365-worldwide)    |
+|[Dashboard](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-365-security-center-dashboard)     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)       |
+|[Attack Simulator ](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights)   |  [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)       |
+|[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center)    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns)     |
+|     |    [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)     |
+|     |    [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)     |
+|     |    [Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)    |
 |     |          |
 
 Also, check the **Related Information** section at the bottom of this article.
@@ -109,7 +109,7 @@ View reports, change your settings, and modify user roles.
 ## Advanced Hunting example for Microsoft Defender for Office 365
 Want to get started searching for email threats using advanced hunting? Try this: 
 
-The *[Getting Started](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) has logical early configuration chunks that look like this:
+The *[Getting Started](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) has logical early configuration chunks that look like this:
 
 - Configure everything with 'anti' in the name.
     - anti-malware
@@ -121,7 +121,7 @@ The *[Getting Started](https://docs.microsoft.com/microsoft-365/security/office-
 - Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
 - Protect with Zero-Hour auto purge
 
-Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true) to jump right in and get configuration going on Day 1.
+Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats&preserve-view=true) to jump right in and get configuration going on Day 1.
 
 The last step in **Getting Started** is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
 
@@ -151,12 +151,12 @@ The data from this query will appear in the results panel below the query itself
 
 ## Related information
 
-[The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)
+[The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 
-[Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies)
+[Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
 
-[Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices?view=o365-worldwide)
+[Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
 
 [Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
 
-**Attack Simulator** [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) and [create a payload for training your people](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)
+**Attack Simulator** [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) and [create a payload for training your people](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
