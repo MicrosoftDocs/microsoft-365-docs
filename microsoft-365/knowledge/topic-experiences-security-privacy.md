@@ -3,6 +3,7 @@ title: "Topic experiences security and privacy"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration

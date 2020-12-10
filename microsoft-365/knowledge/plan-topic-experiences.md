@@ -3,6 +3,7 @@ title: "Plan topic experiences in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,7 +15,9 @@ description: "Learn how to plan for topic experiences in Microsoft 365"
 
 # Plan topic experiences in Microsoft 365
 
-It is important to plan the best way to set up and configure topic experiences in your environment. In this article we'll examine these planning decisions:
+You're in control of how topics are experienced in your organization. Your planning decisions for topic experiences ensures that high quality topics are shown to your users and they have the right permissions to consume and contribute knowledge.
+
+In this article we'll examine these planning decisions:
 
 - Which SharePoint sites you want to crawl for topics.
 - Which topics, if any, you want to exclude from topic experiences
@@ -23,17 +26,17 @@ It is important to plan the best way to set up and configure topic experiences i
 - Which users you want to give permissions to create or edit topics in the topic center.
 - What name you want to give your topic center.
 
-We recommend you also read [Topic experiences security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
+Security and privacy of your data is respected, and topic experiences does not grant users additional access to files they don’t have rights to. We recommend you also read [Topic experiences security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
 
 ## Requirements
 
 You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up topic experiences.
 
-All users who are going to use topic experiences require a **Topic Experiences** license along with the associated **Graph Connectors Search with Index** and **Topic Experiences** app licenses. Assigning licenses is covered in [Set up topic experiences](set-up-topic-experiences.md).
+All users who are going to use topic experiences require a **Topic Experiences** license. Assigning licenses is covered in [Set up topic experiences](set-up-topic-experiences.md).
 
 ## Topic discovery
 
-The topic discovery settings specify which SharePoint sites are crawled for topics. You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
+The topic discovery settings specify which SharePoint sites are used as sources for topics. You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
 
 When you set up topic experiences, you can choose from the following options:
 
@@ -62,9 +65,7 @@ The user permissions that you specify determine which people in your organizatio
 
 Knowledge managers oversee the quality of information, how its structured, and other best practices in your organization. They can confirm and reject topics.
 
-You can choose to have everyone in your organization be a knowledge manager, or you can limit it to specific people with this role.
-
-If you don't want everyone in your organization to be able to manage topics, create a security group that contains the people who you want to be knowledge managers. You can specify this security group during the setup process.
+While you can specify individual topic managers, we recommend that you create a security group (or use an existing one) that contains the people who you want to be knowledge managers. You can specify this security group during the setup process.
 
 *Create and edit topics*
 
@@ -74,7 +75,7 @@ We recommend that you allow everyone in your organization to create and edit top
 
 If you want to limit creating and editing topics to specific people or groups, create a security group for them and specify it during the setup process.
 
-You can choose to not allow anyone to contribute to topics, however this is not recommended.
+You can choose to not allow anyone to contribute to topics, however this is not recommended. Knowledge managers will still be able to edit and create topics.
 
 *Topic viewers*
 
@@ -86,7 +87,7 @@ When setting up topic viewers, you can choose from:
 - **Only selected people or security groups**
 - **No one**
 
-We recommend **Everyone in my organization**, but if you're doing a pilot you may want to choose only selected people or security groups. You can also choose **No one** if you want to set up topic experiences, but not allow people to see topics yet.
+We recommend **Everyone in my organization**, but if you're doing a pilot you may want to choose only selected people or security groups. You can also choose **No one** if you want to set up topic experiences, but not allow people to see topics yet. (Knowledge managers will still have access to allow them view the topics and help with the decision to make topic experiences broadly available.)
 
 ## Knowledge rules
 
@@ -97,10 +98,10 @@ If you want to exclude topics at the administrator level, you must add them to a
 The .csv file must contain the following parameters:
 
 - **Name**: Type the name of the topic you want to exclude. There are two ways to do this:
-- Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).
-- Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
-- **Stands for (optional)**: (Also known as *expansion*) If you want to exclude an acronym, type the words the acronym stands for.
 - **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.
+    - Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).
+    - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
+- **Stands for (optional)**: (Also known as *expansion*) If you want to exclude an acronym, type the words the acronym stands for.
 
     ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
 
@@ -112,7 +113,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## Administration
 
-When you set up topic experiences, a topic center is automatically created. Think about what you want to name the topic center and what you want the URL to be. You can set both the name and URL as part of the setup process, and you can change the name (but not URL) later in the Microsoft 365 admin center.
+When you set up topic experiences, as part of the setup process, a topic center is automatically created. Think about what you want to name the topic center and what you want the URL to be. You can set both the name and URL as part of the setup process, and you can change the name (but not URL) later in the Microsoft 365 admin center.
 
 ## Setup checklist
 

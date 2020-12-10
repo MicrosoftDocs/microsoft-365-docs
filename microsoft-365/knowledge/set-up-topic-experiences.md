@@ -3,6 +3,7 @@ title: "Set up topic experiences in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,8 +25,8 @@ You must be a global administrator or SharePoint administrator to access the Mic
 
 To set up topic experiences in Microsoft 365
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then view the **Organizational Knowledge** section.
-2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then view the **Files and content** section.
+2. In the **Files and content** section, click **Connect people to knowledge**.
 
     ![Connect people to knowledge](../media/admin-org-knowledge-options.png) 
 
@@ -108,7 +109,7 @@ Select **Next**.
 
 ## Assign licenses
 
-Once you have configured topic experiences, you must assign licenses for the users who will be using topic experiences.
+Once you have configured topic experiences, you must assign licenses for the users who will be using topic experiences. Only users with a license can see information on topics including highlights, topic cards, topic pages and the topic center. 
 
 To assign licenses:
 

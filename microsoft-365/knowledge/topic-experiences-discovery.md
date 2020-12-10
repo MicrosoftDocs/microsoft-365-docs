@@ -3,6 +3,7 @@ title: "Manage topic discovery in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,16 +19,14 @@ You can manage topic discovery settings in the [Microsoft 365 admin center](http
 
 ## To access topics management settings:
 
-1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
-2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.
+1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
+2. On the **Services** tab, click **Knowledge network**.
 
     ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
 
-3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.
+3. Select the **Topic discovery** tab. See the following sections for information about each setting.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
-
-4. Select the **Topic discovery** tab. See the following sections for information about each setting.
 
 ## Select SharePoint topic sources
 
@@ -38,6 +37,8 @@ If you want to include or exclude a specific list of sites, you can use the foll
 ``` csv
 Site name,URL
 ```
+
+If you add sites using the site picker, they are added to the existing list of sites to include or exclude. If you upload a .csv file, it overwrites any existing list. If you have previously included or excluded specific sites, you and download the list as a .csv file, make changes, and upload the new list.
 
 To choose sites for topic discovery
 
@@ -54,11 +55,11 @@ To choose sites for topic discovery
 
 ## Exclude topics by name
 
-You can exclude topics from discovery.
+You can exclude topics from discovery by uploading a list using a .csv file. If you've previously excluded topics, you can download the .csv, make changes, and upload it again.
 
 1. On the **Topic discovery** tab, under **Exclude topics**, select **Edit**.
 2. Click **Exclude topics by name**.
-3. If you need to create a list, download the .csv template and add the topics that you want to exclude (see *Working with the .csv template* below). When the file is ready, click **Browse** and upload the file.
+3. If you need to create a list, download the .csv template and add the topics that you want to exclude (see *Working with the .csv template* below). When the file is ready, click **Browse** and upload the file. If there's an existing list, you can download the .csv containing the list.
 4. Click **Save**.
 
     ![Screenshot of exclude topics user interface](../media/km-manage-exclude-topics.png)

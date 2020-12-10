@@ -3,6 +3,7 @@ title: "Change the name of the topic center in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,16 +19,14 @@ You can change the name of your topic center in the [Microsoft 365 admin center]
 
 ## To access topics management settings:
 
-1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
-2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.<br/>
+1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
+2. On the **Services** tab, click **Knowledge network**.
 
     ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
 
-3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.
+3. Select the **Topic center** tab. See the following sections for information about each setting.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
-
-4. Select the **Topic center** tab. See the following sections for information about each setting.
 
 ##  Update your topic center name
 
