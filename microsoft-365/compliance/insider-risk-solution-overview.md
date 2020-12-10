@@ -25,7 +25,7 @@ Insider risks are one of the top concerns of security and compliance professiona
 
 Microsoft 365 risk prevention features are designed and built-in to our insider risk products and solutions. These solutions work together and use advanced service and 3rd-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
 
-| | **Risks** | **Communication compliance** | **Insider risk management** | **Information barriers** | **Privileged access management** |
+| | Risks | Communication compliance | Insider risk management | Information barriers | Privileged access management |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
 | ![Data spillage icon](../media/ir-risk-data-spillage.png)| Data spillage | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
 | ![Confidentiality violations icon](../media/ir-risk-confidentiality-violations.png)| Confidentiality violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
@@ -44,7 +44,7 @@ Microsoft 365 risk prevention features are designed and built-in to our insider 
 
 To help protect your organization against insider risks, use these Microsoft 365 capabilities and features.
 
-| **Solution/capabilities** | **Description** | **Licensing** |
+| Solution/capabilities | Description | Licensing |
 | :------------------------ | :-------------- | :------------ |
 | Communication compliance | Communication compliance helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. | Microsoft 365 E5 <br> Microsoft 365 E3 subscription + Microsoft 365 E5 Insider Risk Management add-on <br> Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on |
 | Insider risk management | Insider risk management helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. | Microsoft 365 E5 <br> Microsoft 365 E3 subscription + Microsoft 365 E5 Insider Risk Management add-on <br> Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on |
@@ -57,10 +57,10 @@ To help protect your organization against insider risks, set up and deploy the f
 
 ![Insider risk solution defense-in-depth](../media/ir-solution-defense-in-depth.png)
 
-1. Configure and create [communication compliance policies](communication-compliance-solution-overview.md)
-2. Configure and create [insider risk management policies](insider-risk-management-solution-overview.md)
-3. Optional: Configure and create [information barrier policies](information-barriers-solution-overview.md)
-4. Optional: Enable and configure [privileged access management](privileged-access-management-solution-overview.md)
+1. Configure and create [communication compliance policies](communication-compliance-solution-overview.md).
+2. Configure and create [insider risk management policies](insider-risk-management-solution-overview.md).
+3. Optional: Configure and create [information barrier policies](information-barriers-solution-overview.md).
+4. Optional: Enable and configure [privileged access management](privileged-access-management-solution-overview.md).
 
 ## Illustrations with examples
 
@@ -76,10 +76,10 @@ Training your administrators and compliance team in the basics for each insider 
 
 Microsoft 365 provides the following resources to help inform and train these users in your organization:
 
-| **Solution/Area** | **Resources** |
+| Solution/Area | Resources |
 |:------------------|:--------------|
 | Manage insider risk in Microsoft 365 |[Complete learning path](/learn/paths/m365-compliance-insider) <br> This learning path includes all the individual solution modules for communication compliance, insider risk management, information barriers, and privileged access management. Select this learning path to complete all the modules. |
-| Communication compliance | [Learning module: Prepare communication compliance in Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> This module helps you learn the basics on how to identify and remediate code-of-conduct policy violations with communication compliance, cover the the prerequisites needed before creating communication compliance policies, and learn about the types of built-in, pre-defined policy templates in communication compliance. |
+| Communication compliance | [Learning module: Prepare communication compliance in Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> This module helps you learn the basics on how to identify and remediate code-of-conduct policy violations with communication compliance, cover the prerequisites needed before creating communication compliance policies, and learn about the types of built-in, pre-defined policy templates in communication compliance. |
 | Insider risk management | [Learning module: Insider risk management in Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> This module helps you learn how insider risk management in Microsoft 365 can help prevent, detect, and contain internal risks in an organization, learn about the types of built-in, pre-defined policy templates, understand the basic prerequisites needed before creating insider risk policies, and explains the types of actions you can take on insider risk management cases. |
 | Information barriers | [Learning module: Plan for information barriers](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> This module helps you learn how information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, lists the types of situations when information barriers would be applicable, helps explain the process of creating an information barrier policy, and helps explain how to troubleshoot unexpected issues after information barriers are in place. |
 | Privileged access management | [Learning module: Implement privileged access management](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> This module helps you understand the difference between privileged access management and privileged identity management, understand the privileged access management process flow, and understand the basics of how to configure and enable privileged access management. |
