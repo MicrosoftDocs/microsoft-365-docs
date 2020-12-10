@@ -22,12 +22,11 @@ description: Design isolated SharePoint Online team sites, including determine p
 
 # Design an isolated SharePoint Online team site
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
  **Summary:** Step through the design process for isolated SharePoint Online team sites.

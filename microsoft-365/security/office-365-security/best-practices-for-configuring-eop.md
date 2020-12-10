@@ -15,11 +15,10 @@ description: "Follow these best-practice recommendations for standalone Exchange
 
 # Best practices for configuring standalone EOP
 
-**Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Follow these best-practice recommendations for standalone Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors. This topic assumes that you've already completed the setup process. If you haven't completed EOP setup, see [Set up your EOP service](set-up-your-eop-service.md).
 
