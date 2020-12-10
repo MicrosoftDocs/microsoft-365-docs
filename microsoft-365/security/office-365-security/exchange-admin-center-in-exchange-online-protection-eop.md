@@ -102,16 +102,12 @@ When you select an object from the list view, information about that object is d
 
 ### Me tile and Help
 
-The **Me** tile allows you to sign out the EAC and sign in as a different user. From the **Help**![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can perform the following actions:
+The **Me** tile allows you to sign out the EAC and sign in as a different user. From the **Help**![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can do the following actions:
 
 - **Help**: Click ![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) to view the online help content.
-
 - **Feedback**: Leave feedback.
-
 - **Community**: Post a question for find answers in the community forums.
-
 - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been disabled.
-
 - **Show Command Logging**: A new window opens that shows the equivalent PowerShell commands based on what you configured in EAC.
 
 ## Supported Browsers
