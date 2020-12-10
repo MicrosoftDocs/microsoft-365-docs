@@ -19,8 +19,8 @@ You can manage topic permissions settings in the [Microsoft 365 admin center](ht
 
 With topic permissions settings you can choose:
 
-- Which users can create and edit topics: Create new topics that were not found during discovery or edit existing topic page details.
-- Which users can manage topics: Confirm or reject discovered topics.
+- Which users can create and edit topics: Create new topics that were not found during discovery or edit existing topic details.
+- Which users can manage topics: Access the topic management center and view feedback on topics as well as move topics through the lifecycle.
 
 ## To access topics management settings:
 
@@ -33,7 +33,7 @@ With topic permissions settings you can choose:
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-permissions.png) 
 
-## Change who has permissions to do tasks on the topic center
+## Change who has permissions to update topic details
 
 To update who has permissions to create and edit topics:
 
