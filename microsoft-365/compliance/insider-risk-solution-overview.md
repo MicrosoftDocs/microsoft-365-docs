@@ -77,7 +77,7 @@ Training your administrators and compliance team in the basics for each insider 
 Microsoft 365 provides the following resources to help inform and train these users in your organization:
 
 | **Solution/Area** | **Resources** |
-|:------------|:--------------|
+|:------------------|:--------------|
 | Manage insider risk in Microsoft 365 |[Complete learning path](/learn/paths/m365-compliance-insider) <br> This learning path includes all the individual solution modules for communication compliance, insider risk management, information barriers, and privileged access management. Select this learning path to complete all the modules. |
 | Communication compliance | [Learning module: Prepare communication compliance in Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> This module helps you learn the basics on how to identify and remediate code-of-conduct policy violations with communication compliance, cover the the prerequisites needed before creating communication compliance policies, and learn about the types of built-in, pre-defined policy templates in communication compliance. |
 | Insider risk management | [Learning module: Insider risk management in Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> This module helps you learn how insider risk management in Microsoft 365 can help prevent, detect, and contain internal risks in an organization, learn about the types of built-in, pre-defined policy templates, understand the basic prerequisites needed before creating insider risk policies, and explains the types of actions you can take on insider risk management cases. |
