@@ -102,7 +102,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 ## Step 5: Set up a Facebook Business pages connector in the Microsoft 365 compliance center
 
-The final step is to set up the connector in the Microsoft 365 compliance center that will import data from your Facebook Business pages to a specified mailbox in Microsoft 365. After you complete this step, the Office 365 Import service will start importing data from your Facebook Business pages to Microsoft 365.
+The final step is to set up the connector in the Microsoft 365 compliance center that will import data from your Facebook Business pages to a specified mailbox in Microsoft 365. After you complete this step, the Microsoft 365 Import service will start importing data from your Facebook Business pages to Microsoft 365.
 
 For step-by-step instructions, see [Step 5: Set up a Facebook connector in the Microsoft 365 compliance center](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center). 
 
