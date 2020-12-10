@@ -35,7 +35,7 @@ Permissions in the Security & Compliance Center are based on the role-based acce
 
 A **role** grants permissions to do a set of tasks; for example, the Case Management role lets people work with eDiscovery cases.
 
-A **role group** is a set of roles that lets people perform their job across the Security & Compliance Center. For example, the Compliance Administrator role group includes (among other roles) the roles for Case Management, Content Search, and Organization Configuration (plus others) because someone who's a compliance admin will need the permissions for those tasks to do their job.
+A **role group** is a set of roles that lets people do their jobs across the Security & Compliance Center. For example, the Compliance Administrator role group includes (among other roles) the roles for Case Management, Content Search, and Organization Configuration (plus others) because someone who's a compliance admin will need the permissions for those tasks to do their job.
 
 The Security & Compliance Center includes default role groups for the most common tasks and functions that you'll need to assign people to. We recommend simply adding individual users as **members** to the default role groups.
 
@@ -154,7 +154,7 @@ Note that the following roles aren't assigned to the Organization Management rol
 |**Sensitivity Label Administrator**|View, create, modify, and remove sensitivity labels.|Compliance Data Administrator <p> Organization Management <p> Security Administrator|
 |**Sensitivity Label Reader**|View the configuration and usage of sensitivity labels.|Global Reader <p> Organization Management <p> Security Reader|
 |**Service Assurance View**|Download the available documents from the Service Assurance section. Content includes independent auditing, compliance documentation, and trust-related guidance for using Microsoft 365 features to manage regulatory compliance and security risks.|Service Assurance User <p> Organization Management|
-|**Supervisory Review Administrator**|Manage supervisory review policies, including which communications to review and who should perform the review.|Supervisory Review|
+|**Supervisory Review Administrator**|Manage supervisory review policies, including which communications to review and who should do the review.|Supervisory Review|
 |**View-Only Audit Logs**|View and export audit reports. Because these reports might contain sensitive information, you should only assign this role to people with an explicit need to view this information.|Compliance Administrator <p> Compliance Data Administrator <p> Organization Management <p> Security Administrator <p> Security Operator|
 |**View-Only Device Management**|View the configuration and reports for the Device Management feature.|Compliance Administrator <p> Compliance Data Administrator <p> Organization Management <p> Security Administrator <p> Security Operator <p> Security Reader|
 |**View-Only DLP Compliance Management**|View the settings and reports for data loss prevention (DLP) policies.|Compliance Administrator <p> Compliance Data Administrator <p> Organization Management <p> Security Administrator <p> Security Operator <p> Security Reader|
