@@ -125,8 +125,6 @@ productDirectory:
           text: Manage information governance
         - url: compliance/overview-data-investigations.md
           text: Manage internal and external investigations
-        - url: compliance/insider-risk-management.md
-          text: Manage insider risks
 
     # Card
     - title: Deploy and manage your desktops and devices
