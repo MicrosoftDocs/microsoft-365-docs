@@ -30,6 +30,10 @@ Bookings is available and active by default for Microsoft 365 Business Premium, 
 
 Your customers will only see the Bookings calendar that you publish online for the services, times, and staff that you choose to register.
 
+### How to change bookable attribute under Manage staff?
+
+When the staff was added, he would have received an email for accepting or rejecting the request. They can open the same email and select "Reject" . This will make him non bookable. We currently do not have a way to toggle this from inside the app.
+
 ### How do end users access the Bookings app?
 
 Anyone who is licensed for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There is also a companion app available for iOS and Android.
