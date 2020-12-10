@@ -171,7 +171,7 @@ The target admin setup is now complete!
 
 3. In either the Microsoft 365 admin center or a Remote PowerShell session, create one or more mail-enabled security groups to control the list of mailboxes allowed by the target tenant to pull (move) from the source tenant to the target tenant. You do not need to populate this group in advance, but at least one group must be provided to run the setup steps (script). Nest groups are not supported. 
 
-4. Download the SetupCrossTenantRelationshipForTargetResource.ps1 script for the source tenant setup from the GitHub repository [here](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
+4. Download the SetupCrossTenantRelationshipForTargetResource.ps1 script for the source tenant setup from the GitHub repository here: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
 
 5. Create a Remote PowerShell connection to the source tenant with your Exchange Administrator permissions. Global Admin permissions are not required to configure the source tenant, only the target tenant because of the Azure application creation process.
 
@@ -368,9 +368,9 @@ You must ensure the following objects and attributes are set in the target organ
 
     Clear the soft-deleted mailbox using this command.
 
-    ````
+    ```powershell
     Set-User <identity> -PermanentlyClearPreviousMailboxInfo
-    ````
+    ```
 
     Here is an example.
 
@@ -550,7 +550,7 @@ Yes, an Azure subscription is required to use Key Vault to store the certificate
 
 **Do you have any recommendations for batches?**  
 
-Do not exceed 2000 mailboxes per batch. We strongly recommend submitting batches two weeks prior to the cut-over date as there is no impact to the end users during sync. If you need guidance for mailboxes quantities over 50,000 you can reachout to the Engineering Feedback Distribution List at crosstenantmigrationpreview@service.microsoft.com.
+Do not exceed 2000 mailboxes per batch. We strongly recommend submitting batches two weeks prior to the cut-over date as there is no impact to the end users during sync. If you need guidance for mailboxes quantities over 50,000 you can reach out to the Engineering Feedback Distribution List at crosstenantmigrationpreview@service.microsoft.com.
 
 **What if I use Service encryption with Customer Key?**
 
