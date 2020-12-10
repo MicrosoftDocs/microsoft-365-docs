@@ -67,13 +67,13 @@ For more information about these and other scenarios that are supported by sensi
 
 ## What a sensitivity label is
 
-When you assign a sensitivity label to a document or email, it's like a stamp that's applied to content that is:
+When you assign a sensitivity label to content, it's like a stamp that's applied and is:
 
 - **Customizable.** Specific to your organization and business needs, you can create categories for different levels of sensitive content in your organization. For example, Personal, Public, General, Confidential, and Highly Confidential.
 
-- **Clear text.** Because the label is stored in clear text in the content's metadata, third-party apps and services can read it and then apply their own protective actions, if required.
+- **Clear text.** Because a label is stored in clear text in the metadata for files and emails, third-party apps and services can read it and then apply their own protective actions, if required.
 
-- **Persistent.** Because the label is stored in the content's metadata, the label roams with the content, no matter where it's saved or stored. Unique to your organization, the label identification becomes the basis for applying and enforcing policies.
+- **Persistent.** Because the label is stored in metadata for files and emails, the label roams with the content, no matter where it's saved or stored. The unique label identification becomes the basis for applying and enforcing the policies that you configure.
 
 When viewed by users, a sensitivity label appears like a tag on apps that they use and can be easily integrated into their existing workflows.
 
