@@ -4,7 +4,7 @@ keywords: Microsoft 365 security, Getting started with the Microsoft 365 Securit
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 11/03/2020
+ms.date: 
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -27,11 +27,11 @@ The new [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365
 
 If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the new Microsoft 365 Security Center.
 
-Access the new security center: [https://security.microsoft.com](https://security.microsoft.com).
+Take a look at the new security center: [https://security.microsoft.com](https://security.microsoft.com).
 
 ## What's Changed
 
-This table is a quick reference of Email & Collaboration areas where change has occurred between the **Security & Compliance center** and the **Microsoft 365 Security** portal. Click the links to navigate to topics.
+This table is a quick reference of Email & Collaboration areas where change has occurred between the **Security & Compliance center** and the **Microsoft 365 Security** portal. Click the links to read more about these areas.
 <p>
 
 |**Changed**  |**Unchanged**  |
@@ -49,9 +49,9 @@ Also, check the **Related Information** section at the bottom of this article.
 > [!IMPORTANT]
 > The Microsoft 365 Security portal (https://security.microsoft.com) combines security features in https://securitycenter.windows.com, and https://protection.office.com. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
 
-## The Microsoft 365 Security Center home page
+## Microsoft 365 Security Center Home page
 
-The home page of the new portal surfaces:
+The new Home page of the new portal surfaces:
 
 - Secure Score ratings
 - the number of users and devices at risk
@@ -63,22 +63,22 @@ The home page of the new portal surfaces:
 
 As soon as you arrive at this information page, you’ll also see a pop-up for security notifications if there are any.
 
-:::image type="content" source="../../media/converge-5-microsoft-365-security-center.png" alt-text="This is the Microsoft Security center page with Home, Endpoints, Email and Collaboration, and miscellaneous areas.":::
+![The Microsoft Security center home page](../../media/converge-5-microsoft-365-security-center.png)
 
-The home page also welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
+The Home page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
 - The links under **Next steps** will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
 - **Give feedback** allows you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
 
 The **Welcome** page will disappear after you navigate through the Next button to Close. Be sure to take note of any URLs you’d want for your records, or bookmark this page (since the URLs are listed above).
 
-The **Guided Tour** will remain on the page and you can choose a tour of Endpoint or Email & collaboration pages.  
+The **Guided tour** will remain on the page and you can choose a tour of Endpoint or Email & collaboration pages.  
 
 ![Guided tour drop down](../../media/converge-12-home-page-guided-tour-bar.gif)
 
 Also included is a link to the **Office 365 Security and Compliance center** for comparison. The last link is to the **What's New** page that describes recent updates.
 
-## Navigation and the Guided Tour
+## New navigation
 
 The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
 
@@ -109,7 +109,7 @@ View reports, change your settings, and modify user roles.
 ## Advanced Hunting example for Microsoft Defender for Office 365
 Want to get started searching for email threats using advanced hunting? Try this: 
 
-The *[Getting Started](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) has logical early configuration chunks that look like this:
+The [Getting Started](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#getting-started) section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) has logical early configuration chunks that look like this:
 
 - Configure everything with 'anti' in the name.
     - anti-malware

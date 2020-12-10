@@ -34,7 +34,7 @@ Historically, the [Microsoft Defender security center](https://docs.microsoft.co
 > [!IMPORTANT]
 > What you see in the Microsoft 365 security center depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown. 
 
-Access the new security center: [https://security.microsoft.com](https://security.microsoft.com).
+Take a look at the new security center: [https://security.microsoft.com](https://security.microsoft.com).
 
 ## What's changed
 
@@ -70,7 +70,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 | Health  |  Currently includes the "Service health" page. |
 | Settings |  Manage your settings for the Microsoft 365 security center, Microsoft 365 Defender, Endpoints, Email & collaboration, Identities, and Device discovery.   |
 
-## Microsoft 365 security navigation (new)
+## New navigation
 
 Historically, the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. However, in the interest of reducing the number of portals, the Microsoft 365 security center will be the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
