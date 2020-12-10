@@ -291,7 +291,7 @@ Valid URL entries and their results are described in the following sections.
   - test.com/q=contoso.com
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
-  
+
 - **Block match**:
 
   - contoso.com
@@ -319,7 +319,7 @@ Valid URL entries and their results are described in the following sections.
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
-  
+
 #### Scenario: Right wildcard at top of path
 
 **Entry**: `contoso.com/a/*`
@@ -336,7 +336,7 @@ Valid URL entries and their results are described in the following sections.
   - contoso.com/a
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
-  
+
 #### Scenario: Left tilde
 
 **Entry**: `~contoso.com`
