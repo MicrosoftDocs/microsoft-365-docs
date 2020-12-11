@@ -30,7 +30,13 @@ ms.topic: conceptual
 **Applies to:**
 - Microsoft 365 Defender
 
-To effectively determine the benefit and adoption of Microsoft 365 Defender, you can run a pilot project. Before enabling Microsoft 365 Defender in your production environment and starting your use cases, it's best to plan to determine the tasks to accomplish for your pilot project and set the success criteria. 
+
+This guide helps you run a pilot project by providing pointers to ensure you have a well-structured plan, guiding you through using the attack simulation feature, and finally concluding the pilot with key take-aways for you to reflect on and document results.
+
+![Phases in running a Microsoft 365 Defender pilot](../../media/pilotphases.png)
+
+
+Running a pilot helps you effectively determine the benefit of adoptiing Microsoft 365 Defender. Before enabling Microsoft 365 Defender in your production environment and starting your use cases, it's best to plan to determine the tasks to accomplish for your pilot project and set the success criteria. 
 
 
 ## How to use this pilot playbook
@@ -47,7 +53,7 @@ Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suit
 
 With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, and Microsoft Cloud App Security receive, and determine the full scope and impact of the threat, how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. See the [Microsoft 365 Defender overview](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) for details.
 
-![Phases in running a Microsoft 365 Defender pilot](../../media/pilotphases.png)
+
 
 The following sample timeline varies depending on having the right resources in your environment. Some detections and workflows might need more learning time than the others.
 
