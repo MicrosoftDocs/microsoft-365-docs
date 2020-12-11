@@ -34,7 +34,7 @@ description: "Learn how to remove an old domain from Microsoft 365 and move user
 
 ::: moniker-end
   
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan? Or do you just want to cancel your subscription? You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).
   
@@ -223,7 +223,7 @@ Still not working? Your domain might need to be manually removed. [Give us a cal
 
 ## Related articles
 
-[Domains FAQ](../setup/domains-faq.md)
+[Domains FAQ](../setup/domains-faq.yml)
 
 [Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
