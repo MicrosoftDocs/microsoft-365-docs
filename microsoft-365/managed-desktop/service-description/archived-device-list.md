@@ -55,8 +55,9 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 |Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | None | **Nov 16, 2022** |
 |Surface Go| 128 GB / Intel 4415Y / 8GB RAM | None | **Aug 2, 2023** |
 |Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
+|Surface Laptop 2| 128 GB / Intel i5 / 8 GB RAM | None | **Oct 16, 2023** |
 |Surface Pro| 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2022** |
-
+|Surface Pro 6| 128 GB / Intel i5 / 8 GB RAM | None | **Oct 16, 2023** |
 
 In addition, the device must also:
 
