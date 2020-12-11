@@ -98,7 +98,7 @@ You can manage spoof intelligence in the Security & Compliance Center, or in Pow
 
      - On the **External Domains** tab, the value contains the domain of the spoofed user, not the full email address.
 
-   - **Sending Infrastructure**: The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address, or the IP address if the source has no PTR record.
+   - **Sending Infrastructure**: The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address. If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
 
      For more information about message sources and message senders, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
@@ -107,22 +107,18 @@ You can manage spoof intelligence in the Security & Compliance Center, or in Pow
    - **# of user complaints**: Complaints filed by your users against this sender within the last 30 days. Complaints are usually in the form of junk submissions to Microsoft.
 
    - **Authentication result**: One of the following values:
-
       - **Passed**: The sender passed sender email authentication checks (SPF or DKIM).
       - **Failed**: The sender failed EOP sender authentication checks.
       - **Unknown**: The result of these checks isn't known.
 
    - **Decision set by**: Shows who determined if the sending infrastructure is allowed to spoof the user:
-
        - **Spoof intelligence policy** (automatic)
        - **Admin** (manual)
 
    - **Last seen**: The last date when a message was received from the sending infrastructure that contains the spoofed user.
 
    - **Allowed to spoof?**: The values that you see here are:
-
      - **Yes**: Messages from the combination of spoofed user and sending infrastructure are allowed and not treated as spoofed email.
-
      - **No**: Messages from the combination of spoofed user and sending infrastructure are marked as spoofed. The action is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). See the next section for more information.
 
      - **Some users** (**Your Domains** tab only): A sending infrastructure is spoofing multiple users, where some spoofed users are allowed and others are not. Use the **Detailed** tab to see the specific addresses.

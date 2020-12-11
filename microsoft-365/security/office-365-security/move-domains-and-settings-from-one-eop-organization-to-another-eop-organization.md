@@ -243,7 +243,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## Step 5: Verify domains for the target organization
 
-1. Sign in to the admin center at [https://portal.office.com](https://portal.office.com).
+1. Sign in to the admin center at <https://portal.office.com>.
 
 2. Click **Domains**.
 

@@ -2,6 +2,7 @@
 title: 'Set up SharePoint Syntex'
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article

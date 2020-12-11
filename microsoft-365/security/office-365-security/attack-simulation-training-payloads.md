@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-m365-defender
 description: "Learn how to create custom payload for Attack simulation training in Microsoft Defender for Office 365."
 ---
@@ -55,7 +55,7 @@ Add a custom description to describe the indicator and click within the indicato
 
 ## Review payload
 
-You're done building your payload. Now it's time to review the details and see a preview of your payload. The preview will include all indicators you've created. You can edit each part of the payload from this step. Once satisfied, **Submit** your payload. 
+You're done building your payload. Now it's time to review the details and see a preview of your payload. The preview will include all indicators you've created. You can edit each part of the payload from this step. Once satisfied, **Submit** your payload.
 
 > [!IMPORTANT]
 > Payloads you've created will have **Tenant** set as their source. When selecting payloads, make sure you don't have **Tenant** filtered out.
