@@ -108,7 +108,7 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     ![Prompt to assign a required label](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    For more information about the **Auto-labeling for Office apps** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+    For more information about the **Auto-labeling for files and emails** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
 ### Label scopes
 
