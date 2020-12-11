@@ -40,13 +40,15 @@ This walkthrough is one of several for the Security & Compliance Center. To abou
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Security dashboard** page, use <https://protection.office.com/searchandinvestigation/dashboard>.
 
-  You can view the Spoof intelligence insight from more than one dashboard in the Security & Compliance Center. Regardless of which dashboard you're looking at, the insight provides the same details and allows you to quickly perform the same tasks.
+  You can view the Spoof intelligence insight from more than one dashboard in the Security & Compliance Center. Regardless of which dashboard you're looking at, the insight provides the same details and allows you to quickly do the same tasks.
 
 - You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
   - **Organization Management**
   - **Security Administrator**
   - **Security Reader**
   - **Global Reader**
+
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
   **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 

@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
@@ -89,7 +89,7 @@ Since both 1024 and 2048 bitness are supported for DKIM keys, these directions w
    1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.)
    1. Run the following command:
 
-      ```powershell 
+      ```powershell
       Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
       ```
 
@@ -130,7 +130,7 @@ To configure DKIM, you will complete these steps:
 For each domain for which you want to add a DKIM signature in DNS, you need to publish two CNAME records.
 
 > [!NOTE]
-> If you haven't read the full article, you may have missed this time-saving PowerShell connection information: [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.) 
+> If you haven't read the full article, you may have missed this time-saving PowerShell connection information: [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.)
 
 Run the following commands to create the selector records:
 
@@ -253,7 +253,7 @@ Wait a few minutes before you follow these steps to confirm that you have proper
 
 If at some point in the future you decide to add another custom domain and you want to enable DKIM for the new domain, you must complete the steps in this article for each domain. Specifically, complete all steps in [What you need to do to manually set up DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365).
 
-## Disabling the DKIM signing policy for a custom domain 
+## Disabling the DKIM signing policy for a custom domain
 <a name="DisableDKIMSigningPolicy"> </a>
 
 Disabling the signing policy does not completely disable DKIM. After a period of time, Microsoft 365 will automatically apply the default policy for your domain. For more information, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
@@ -335,7 +335,7 @@ In this example, in order to achieve this result:
    > sender@**contoso.com**
 
    > d=**contoso.com**
-   
+
 ## Identify domains that do not send email
 
 Organizations should explicitly state if a domain does not send email by specifying `v=DKIM1; p=` in the DKIM record for those domains. This advises receiving email servers that there are no valid public keys for the domain, and any email claiming to be from that domain should be rejected. You should do this for each domain and subdomain using a wildcard DKIM.

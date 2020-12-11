@@ -497,7 +497,7 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ## What permissions are needed to view these reports?
 
-In order to view and use the reports described in this topic, you need to be a member of one of the following role groups in the Security & Compliance Center:
+In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Security & Compliance Center:
 
 - **Organization Management**
 - **Security Administrator**

@@ -97,7 +97,7 @@ You should follow the normal reporting process for [false positives](report-junk
 
 ### What if I use the Quarantine folder instead of the Junk Mail folder?
 
-ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this topic.
+ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this article.
 
 ### What if I'm using safe senders, mail flow rules, or allowed/blocked sender lists?
 

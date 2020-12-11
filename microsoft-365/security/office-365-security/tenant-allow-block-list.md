@@ -27,7 +27,7 @@ description: "Admins can learn how to configure URL entries in the Tenant Allow/
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
-> The features described in this topic are in Preview, are subject to change, and are not available in all organizations.
+> The features described in this article are in Preview, are subject to change, and are not available in all organizations.
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
@@ -39,7 +39,7 @@ This topic describes how to configure entries in the Tenant Allow/Block List in 
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Tenant Allow/Block List** page, use <https://protection.office.com/tenantAllowBlockList>.
 
-- The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.
+- The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
 
 - The Tenant Allow/Block List allows a maximum of 500 entries for URLs.
 
@@ -64,7 +64,7 @@ This topic describes how to configure entries in the Tenant Allow/Block List in 
 
 ## Use the Security & Compliance Center to create URL entries in the Tenant Allow/Block List
 
-For details about the syntax for URL entries, see the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.
+For details about the syntax for URL entries, see the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
@@ -295,7 +295,7 @@ Valid URL entries and their results are described in the following sections.
   - test.com/q=contoso.com
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
-  
+
 - **Block match**:
 
   - contoso.com
@@ -323,7 +323,7 @@ Valid URL entries and their results are described in the following sections.
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
-  
+
 #### Scenario: Right wildcard at top of path
 
 **Entry**: `contoso.com/a/*`
@@ -340,7 +340,7 @@ Valid URL entries and their results are described in the following sections.
   - contoso.com/a
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
-  
+
 #### Scenario: Left tilde
 
 **Entry**: `~contoso.com`
