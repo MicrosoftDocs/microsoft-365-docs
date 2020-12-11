@@ -36,6 +36,8 @@ If you're an individual user, you can [enable the Report Phish add-in for yourse
 
 If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Phish add-in for your organization](#get-and-enable-the-report-phish-add-in-for-your-organization). The Report Phish Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
+Messages can be reported as Junk or Not Junk using the Report Message add-in. For more information about enabling the Report Message add-in, see [Enable the report message add-in](enable-the-report-message-add-in.md).
+
 ## What do you need to know before you begin?
 
 - The Report Phish add-in works with most Microsoft 365 subscriptions and the following products:
