@@ -9,4 +9,4 @@ f1.keywords:
 ---
 
 > [!IMPORTANT]
-> Welcome to **Microsoft 365 Defender**, the new name for **Microsoft Threat Protection**. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). 
+> The new [Microsoft 365 security center](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint and Defender for Office 365 to the center. [Learn what's new](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)

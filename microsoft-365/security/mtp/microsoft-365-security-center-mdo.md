@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for EOffice 365 in the Microsoft 365 security center
-keywords: Microsoft 365 security, Getting started with the Microsoft 365 Security center, OATP, MDATP, MDO, MDE, single pane of glass, new security portal, new defender security portal
+title: Microsoft Defender for Office 365 in the Microsoft 365 security center
+keywords: Microsoft 365 security, Getting started with the Microsoft 365 security center, OATP, MDATP, MDO, MDE, single pane of glass, new security portal, new defender security portal
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -25,9 +25,11 @@ description: Learn about changes from the Office 365 Security and Compliance cen
 
 The new [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center.
 
-If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the new Microsoft 365 Security Center.
+If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the new Microsoft 365 security center.
 
 Take a look at the new security center: [https://security.microsoft.com](https://security.microsoft.com).
+
+If you are looking for compliance-related items, visit the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage).
 
 ## What's Changed
 
@@ -49,7 +51,7 @@ Also, check the **Related Information** section at the bottom of this article.
 > [!IMPORTANT]
 > The Microsoft 365 Security portal (https://security.microsoft.com) combines security features in https://securitycenter.windows.com, and https://protection.office.com. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
 
-## Microsoft 365 Security Center Home page
+## Microsoft 365 security center Home page
 
 The new Home page of the new portal surfaces:
 
@@ -63,7 +65,7 @@ The new Home page of the new portal surfaces:
 
 As soon as you arrive at this information page, you’ll also see a pop-up for security notifications if there are any.
 
-![The Microsoft Security center home page](../../media/converge-5-microsoft-365-security-center.png)
+![The Microsoft security center home page](../../media/converge-5-microsoft-365-security-center.png)
 
 The Home page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
