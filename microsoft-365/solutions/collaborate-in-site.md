@@ -33,9 +33,9 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the external collaboration settings to ensure that sharing with guests is not blocked.
+Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
 
 ![Screenshot of Azure Active Directory External collaboration Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -104,6 +104,8 @@ We'll invite users later. Next, it's important to check the site-level sharing s
 Check the site-level sharing settings to make sure that they allow the type of access that you want for this site. For example, if you set the organization-level settings to **Anyone**, but you want all guests to authenticate for this site, then make sure the site-level sharing settings are set to **New and existing guests**.
 
 Note that the site cannot be shared with unauthenticated people (**Anyone** setting), but individual files and folders can.
+
+You can also use [sensitivity labels to control external sharing settings for SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 ![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
 
