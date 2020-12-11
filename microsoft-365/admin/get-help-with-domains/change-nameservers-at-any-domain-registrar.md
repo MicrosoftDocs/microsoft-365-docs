@@ -29,7 +29,7 @@ description: "Learn how to add and set up your domain in Microsoft 365 so that y
 
 # Change nameservers to set up Microsoft 365 with any domain registrar
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 Check [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) first to see if we have instructions for your registrar. 
   
@@ -75,7 +75,7 @@ Depending on whether you are creating a TXT record or an MX record, do one of th
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Record Type**|**Alias** or **Host Name**|**Value**|**Priority**|**TTL**|
-|MX|Type either **@** or your domain name. |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |For **Priority**, to avoid conflicts with the MX record used for mail flow, use a lower priority than the priority for any existing MX records. For more information about priority, see [What is MX priority?](../setup/domains-faq.md#what-is-mx-priority) |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. |
+|MX|Type either **@** or your domain name. |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |For **Priority**, to avoid conflicts with the MX record used for mail flow, use a lower priority than the priority for any existing MX records. For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. |
    
 ### Save the record
 

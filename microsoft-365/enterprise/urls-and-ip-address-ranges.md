@@ -63,6 +63,8 @@ Data columns shown are:
 ## Related Topics
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
+
+[General Microsoft Stream endpoints](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
 [Troubleshooting Office 365 connectivity](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d.aspx)
 
