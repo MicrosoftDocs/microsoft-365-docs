@@ -90,9 +90,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 
    ![Deploy a new add-in page](../../media/NewAddInScreen2.png)
 
-4. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Message** and then click **Add**.
-
-   ![Select add-in search results](../../media/NewAddInScreen3.png)
+4. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Phish**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Phish** and then click **Add**.
 
 5. In the dialog that appears, review the licensing and privacy information, and then click **Continue**.
 
@@ -110,43 +108,35 @@ After the add-in is installed and enabled, you'll see the following icons:
      - **Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.
      - **Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.
 
-   ![Configure add-in page](../../media/configure-add-in.png)
-
    When you're finished, click **Deploy**.
 
-7. In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed. After you read the information, click **Next**.
-
-   ![Deploy Report Message page](../../media/deploy-report-message-page.png)
+7. In the **Deploy Report Phishing** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed. After you read the information, click **Next**.
 
 8. On the **Announce add-in** page that appears, review the information, and then click **Close**.
 
-   ![Announce add-in page](../../media/announce-add-in-page.png)
-
-## Learn how to use the Report Message add-in
+## Learn how to use the Report Phish add-in
 
 People who have the add-in assigned to them will see the following icons:
 
 - In Outlook, the icon looks like this:
 
-  ![Report Message Add-in icon for Outlook](../../media/OutlookReportMessageIcon.png)
+  ![Report Phish add-in icon for Outlook](../../media/Outlook-ReportPhishing.png)
 
 - In Outlook on the web, the icon looks like this:
 
-  ![Outlook on the Web Report Message Add-in icon](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook on the Web Report Phish Add-in icon](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+When you notify users about the Report Phish add-in, include a link to [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
-## Review or edit settings for the Report Message add-in
+## Review or edit settings for the Report Phish add-in
 
 1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
 
    ![Services and Add-Ins page in the new Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. Find and select the **Report Message** add-in.
+2. Find and select the **Report Phish** add-in.
 
-3. In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization. When you're finished, click **Save**.
-
-   ![Settings for the Report Message add-in](../../media/EditReportMessageAddIn.png)
+3. In the **Edit Report Phish** flyout that appears, review and edit settings as appropriate for your organization. When you're finished, click **Save**.
 
 ## View and review reported messages
 
@@ -155,3 +145,7 @@ To review messages that users report to Microsoft, you have these options:
 - Use the Admin Submissions portal. For more information, see [View user submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
 
 - Create a mail flow rule (also known as a transport rule) to send copies of reported messages. For instructions, see [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+
+## Related topics
+
+[Enable the report message add-in](enable-the-report-message-add-in.md)
