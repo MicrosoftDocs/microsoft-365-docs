@@ -451,7 +451,7 @@
           href: retention-regulatory-requirements.md
 - name: Manage eDiscovery
   items:
-    - name: eDiscovery in Microsoft 365
+    - name: Microsoft 365 eDiscovery solutions
       href: ediscovery.md
     - name: Content search
       items:
@@ -572,7 +572,7 @@
           href: overview-ediscovery-20.md
         - name: Set up Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Create and manage a case
+        - name: Create and manage an Advanced eDiscovery case
           href: create-and-manage-advanced-ediscoveryv2-case.md
         - name: Work with custodians and non-custodial data sources
           href: managing-custodians.md

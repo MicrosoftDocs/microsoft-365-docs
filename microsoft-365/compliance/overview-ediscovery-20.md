@@ -17,15 +17,15 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about the Advanced eDiscovery solution in Microsoft 365. This article provides an overview of Advanced eDiscovery in Microsoft 365, a tool to help you manage internal and external investigations. It also frames the business reasons for using Advanced eDiscovery to manage your legal investigations. "
+description: "Learn about the Advanced eDiscovery solution in Microsoft 365. This article provides an overview of Advanced eDiscovery in Microsoft 365, a tool to help you manage internal and external investigations. It also frames the business reasons for using Advanced eDiscovery to manage your legal investigations."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Overview of the Advanced eDiscovery solution in Microsoft 365
+# Overview of Microsoft 365 Advanced eDiscovery
 
 The Advanced eDiscovery solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, analyze, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
-## Why use Advanced eDiscovery in Microsoft 365?
+## Why use Microsoft 365 Advanced eDiscovery?
 
 Advanced eDiscovery can help your organization respond to legal matters or internal investigations by discovering data where it lives. You can seamlessly manage eDiscovery workflows by identifying persons of interest and their data sources, seamlessly apply holds to preserve data, and then manage the legal hold communication process. By collecting data from the source, you can search the live Microsoft 365 platform to quickly find what you need. Intelligent, machine learning capabilities such as deep indexing, email threading, and near duplicate detection also help you to reduce large volumes of data to a relevant data set. The following sections describe how these Advanced eDiscovery capabilities of can help your organization.
 
