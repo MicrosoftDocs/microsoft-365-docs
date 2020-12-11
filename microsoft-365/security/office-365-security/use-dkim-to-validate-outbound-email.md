@@ -23,13 +23,12 @@ description: "Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 
 
 # Use DKIM to validate outbound email sent from your custom domain
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 **Applies to**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
  **Summary:** This article describes how you use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure that destination email systems trust messages sent outbound from your custom domain.
 

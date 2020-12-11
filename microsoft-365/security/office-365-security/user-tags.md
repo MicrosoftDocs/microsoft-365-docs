@@ -19,8 +19,6 @@ description: "Admins can learn how to identify specific groups of users with use
 
 # User tags in Microsoft Defender for Office 365
 
-
-
 > [!NOTE]
 > The user tags feature is in Preview, isn't available to everyone, and is subject to change. For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 

@@ -23,13 +23,12 @@ description: "In this article, you'll learn how to use the delist portal to remo
 
 # Use the delist portal to remove yourself from the blocked senders list
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 **Applies to**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Are you getting an error message when you try to send an email to a recipient whose email address is in Microsoft 365? If you think you should not be receiving the error message, you can use the delist portal to remove yourself from the blocked senders list.
 

@@ -21,12 +21,11 @@ description: "Learn about Threat Trackers, including new Noteworthy Trackers, to
 
 # Threat Trackers - New and Noteworthy
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 [Office 365 Threat Investigation and Response](office-365-ti.md) capabilities enable your organization's security team to discover and take action against cybersecurity threats. Office 365 Threat Investigation and Response capabilities include Threat Tracker features, including Noteworthy trackers. Read this article to get an overview of these new features and next steps.
 
