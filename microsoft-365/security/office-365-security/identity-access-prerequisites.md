@@ -33,7 +33,7 @@ Before implementing the recommended identity and device access policies, there a
 - Hybrid with pass-through authentication (PTA)
 - Federated
 
-The following table details the prerequisite features and their configuration that apply to all identity models, except where noted. 
+The following table details the prerequisite features and their configuration that apply to all identity models, except where noted.
 
 |Configuration|Exceptions|
 |---|:---:|
@@ -71,7 +71,7 @@ We also recommend that organization-owned devices are standardized on OEMs and v
 
 ### Recommended email clients
 
-The following email clients support modern authentication and Conditional Access. 
+The following email clients support modern authentication and Conditional Access.
 
 |Platform|Client|Version/Notes|
 |---|---|---|
@@ -111,9 +111,9 @@ For editions of Microsoft 365 or Office 365 that do not support Conditional Acce
 
 Here are some additional recommendations:
 
-- Use [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts. 
-- [Use privileged access management](../../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
-- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function. 
+- Use [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts.
+- [Use privileged access management](../../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
+- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
 - Follow [best practices](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) for securing privileged accounts in Azure AD.
 
 ## Next step
