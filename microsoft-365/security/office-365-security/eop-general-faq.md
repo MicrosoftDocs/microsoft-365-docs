@@ -21,7 +21,7 @@ description: "Get answers to the most common general questions about the Exchang
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Here we answer the most common general questions about Exchange Online Protection (EOP) cloud-hosted email filtering service. For additional frequently asked questions (FAQ) topics, go to the following links:
 

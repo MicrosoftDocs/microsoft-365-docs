@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, mail users are the fundamental type of user account. A mail user has account credentials in your standalone EOP organization, and can access resources (have permissions assigned). A mail user's email address is external (for example, in your on-premises email environment).
 

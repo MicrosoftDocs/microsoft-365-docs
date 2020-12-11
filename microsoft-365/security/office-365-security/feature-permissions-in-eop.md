@@ -19,7 +19,7 @@ description: "Learn about the permission that are required for tasks in standalo
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Standalone Exchange Online Protection (EOP) without Exchange Online mailboxes uses the Role Based Access Control (RBAC) permissions model to easily grant permissions to your admins. You can use the permission features in standalone EOP to get your new organization up and running quickly.
 
