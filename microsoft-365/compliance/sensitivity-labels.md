@@ -104,11 +104,11 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     You can't configure protection settings for groups and sites until you enable this capability. This label configuration doesn't result in documents or emails being automatically labeled but instead, the label settings protect content by controlling access to the container where content can be stored. These settings include privacy settings, external user access and external sharing, and access from unmanaged devices.
 
-- **Apply the label automatically in Office apps, or recommend a label.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
+- **Apply the label automatically to files and emails, or recommend a label.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users in Office apps to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
     ![Prompt to assign a required label](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    For more information about the **Auto-labeling for files and emails** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+    For more information about the **Auto-labeling for files and emails** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) for Office apps, and [Automatically label your data in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
 ### Label scopes
 
