@@ -126,7 +126,7 @@ To invite internal users to a group
 3. Click **Add members**.
 4. Type the names or email addresses of the users that you want to invite to the site, and then click **Save**.
 
-Guest users can't be added from the site. You need to add them using Outlook on the web. Therefore, as a prerequisite to add and invite guests to a group, click the URL of the site in the **URL**  column to navigate to the site-specific page. From this page, click the **App launcher** icon and select **Outlook**. This is the screen from which you can invite guests into a group, for which procedure is described below.
+Guests can't be added from the site. You need to add them using Outlook on the web. Therefore, as a prerequisite to add and invite guests to a group, click the URL of the site in the **URL**  column to navigate to the site-specific page. From this page, click the **App launcher** icon and select **Outlook**. This is the screen from which you can invite guests into a group, for which procedure is described below.
 
 To invite guests to a group
 1. Under **Groups**, click the group to which you want to invite guests.
