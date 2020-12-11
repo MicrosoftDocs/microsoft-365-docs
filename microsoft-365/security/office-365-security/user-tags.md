@@ -43,26 +43,19 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User tags** page, open <https://protection.office.com/userTags>.
 
-- Permissions to manage user tags are controlled by the following AzureAD permissions:
-  - TagManager: Create, modify, and delete tags.
-  - TagContributor: Add and remove users from existing tags.
-  - TagReader: View tag information in both the management experience and in filtered experiences across reports.
-
-  The role groups in the Security & Compliance Center that have these permissions assigned are described in the following table:
-
-  |Security & Compliance <br/> Center role group|TagManager|TagContributor|TagReader|
-  |---|:--:|:---:|:---:|
-  |Organization Management|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Security Administrator|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
-  |Security Operator||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Security Reader|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |
+- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+  - To create, modify, and delete user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - To add and remove members from existing user tags, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups
+  - For read-only access to user tags, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
   For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- To configure priority accounts (system tags), you need to be a [Global administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) or an [Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).
+  **Notes**:
 
-  You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - User tag management is controlled by the **Tag Reader**, **Tag Contributor**, and **Tag Manager** roles.
+
+- You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ## Use the Security Center to create user tags
 
