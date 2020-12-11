@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: "Learn how to allow members to send email as a Microsoft 365 group or send email on behalf of an Microsoft 365 group."
+description: "Learn how to allow members to send email as a Microsoft 365 group or send email on behalf of a Microsoft 365 group."
 ---
 
 # Allow members to send as or send on behalf of a group
