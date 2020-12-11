@@ -27,7 +27,7 @@ The Advanced eDiscovery solution in Microsoft 365 builds on the existing Microso
 
 ## Why use Microsoft 365 Advanced eDiscovery?
 
-Advanced eDiscovery can help your organization respond to legal matters or internal investigations by discovering data where it lives. You can seamlessly manage eDiscovery workflows by identifying persons of interest and their data sources, seamlessly apply holds to preserve data, and then manage the legal hold communication process. By collecting data from the source, you can search the live Microsoft 365 platform to quickly find what you need. Intelligent, machine learning capabilities such as deep indexing, email threading, and near duplicate detection also help you to reduce large volumes of data to a relevant data set. The following sections describe how these Advanced eDiscovery capabilities of can help your organization.
+Advanced eDiscovery can help your organization respond to legal matters or internal investigations by discovering data where it lives. You can seamlessly manage eDiscovery workflows by identifying persons of interest and their data sources, seamlessly apply holds to preserve data, and then manage the legal hold communication process. By collecting data from the source, you can search the live Microsoft 365 platform to quickly find what you need. Intelligent, machine learning capabilities such as deep indexing, email threading, and near duplicate detection also helps you to reduce large volumes of data to a relevant data set. The following sections describe how these Advanced eDiscovery capabilities of can help your organization.
 
 ### Discover and collect data in-place
 
@@ -57,7 +57,7 @@ Intelligent, machine learning capabilities in Advanced eDiscovery help you reduc
 
 Additional machine learning capabilities can further refine and identify relevant data using smart tags and technology assisted review tools like the Relevance modules.
 
-## Advanced eDiscovery architecture and workflow
+## Advanced eDiscovery architecture
 
 Here's an Advanced eDiscovery architecture diagram that shows the end-to-end workflow in a single-geo environment and in a multi-geo environment, and the end-to-end data flow that's aligned with the [Electronic Discovery Reference Model](advanced-ediscovery-edrm.md) (EDRM).
 
@@ -71,9 +71,13 @@ Here's an Advanced eDiscovery architecture diagram that shows the end-to-end wor
 
 For more information about the end-to-end workflow in Advanced eDiscovery, see this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133).
 
-The following sections describe each step in the built-in workflow in Advanced eDiscovery. The following screenshot shows the **Overview** tab of a case named *2020.11.03 - Contoso v. Fabrikam*.
+## Advanced eDiscovery workflow
+
+The following sections describe each step in the built-in workflow in the Advanced eDiscovery tool in the Microsoft 365 compliance center. The following screenshot shows the **Overview** tab of a case named *2020.11.03 - Contoso v. Fabrikam*.
 
 ![Tabs in built-in Advanced eDiscovery workflow](../media/AeD-Case-Screenshot1.png)
+
+For more detailed information, see [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
 
 ## Managing custodians and non-custodial data sources
 

@@ -17,7 +17,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to create and manage Advanced eDiscovery cases. The first step is to create a case, and then start using Advanced eDiscovery features and functionality."
+description: "This article describes how to create and manage Advanced eDiscovery cases. The first step is to create a case and start using Advanced eDiscovery features and functionality."
 ---
 
 # Create and manage an Advanced eDiscovery case
@@ -26,7 +26,7 @@ After setting up Advanced eDiscovery and [assigning permissions to eDiscovery ma
 
 This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
 
-## Create an Advanced eDiscovery case
+## Create a case
 
 Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member.
 
@@ -56,7 +56,7 @@ Complete the following steps to create a case and add members. The user who crea
 
 12. Click the **Home** tab to go to the case home page.
 
-## Manage the Advanced eDiscovery workflow
+## Manage the workflow
 
 To get you started using Advanced eDiscovery, here's a basic workflow that aligns with [common eDiscovery practices](advanced-ediscovery-edrm.md). In each of these steps, we'll also highlight some extended Advanced eDiscovery functionality that you can explore.
 
