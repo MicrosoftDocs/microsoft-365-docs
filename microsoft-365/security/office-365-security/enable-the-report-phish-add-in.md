@@ -28,7 +28,7 @@ description: "Learn how to enable the Report Phish add-in for Outlook and Outloo
 
 The Report Phish add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report phishing emails (emails that try to steal sensitive information in messages that appear to be from legitimate or trusted senders.) to Microsoft and its affiliates for analysis. Microsoft uses these submissions to improve the effectiveness of email protection technologies.
 
-For example, suppose that people are reporting a lot of messages using the Report Message add-in. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
+For example, suppose that people are reporting a lot of messages using the Report Phish add-in. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
 Admins can enable the Report Phishing add-in for the organization, and individual users can install it for themselves.
 
@@ -64,8 +64,6 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 3. In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.
 
 4. Sign in using your work or school account (for business use) or your Microsoft account (for personal use).
-
-  ![Report phish add-in installed](../../media/AddIn-ReportPhishing.png)
 
 After the add-in is installed and enabled, you'll see the following icons:
 
