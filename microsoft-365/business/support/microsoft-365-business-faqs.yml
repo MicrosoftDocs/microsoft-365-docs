@@ -29,7 +29,7 @@ sections:
           
           - Word, Excel, PowerPoint, Outlook, OneNote, Publisher, and Access
           - Exchange, OneDrive, Skype for Business, Microsoft Teams, and SharePoint.
-          - Business apps from Office (Bookings, MileIQ<sup>[1](#footnote1)</sup>).
+          - Business apps from Office (Bookings, MileIQ<sup>1</sup>).
           
           **Enterprise-grade device management and security capabilities**:
           
@@ -140,7 +140,7 @@ sections:
 
       - question: What should customers and partners know before running Microsoft 365 Business Premium within their organization?
         answer: |
-          Customers who wish to experience the complete capabilities of Microsoft 365 Business Premium must be running Windows 7, 8.1, or 10 Pro<sup>[2](#footnote2)</sup> on their existing desktops. Existing Windows 10 Pro PCs should be running Creators Update if they have not already done so.
+          Customers who wish to experience the complete capabilities of Microsoft 365 Business Premium must be running Windows 7, 8.1, or 10 Pro<sup>2</sup> on their existing desktops. Existing Windows 10 Pro PCs should be running Creators Update if they have not already done so.
           
   - name: Deployment
     questions:
