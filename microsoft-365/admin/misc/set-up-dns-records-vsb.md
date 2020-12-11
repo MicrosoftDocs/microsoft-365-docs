@@ -28,7 +28,7 @@ ms.custom:
 > [!NOTE]
 > If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
 
-[Check the Domains FAQ](../setup/domains-faq.md) if you don't find what you're looking for below.
+[Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for below.
 
 ## Add an MX record so email for your domain will come to Microsoft
 
