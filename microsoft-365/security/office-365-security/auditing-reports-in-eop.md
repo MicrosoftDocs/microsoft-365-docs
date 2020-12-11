@@ -19,7 +19,7 @@ description: "Admins can learn about the administrator auditing reports that are
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, auditing reports can help you meet regulatory, compliance, and litigation requirements for your organization. You can obtain auditing reports at any time to determine the changes that have been made to your EOP configuration. These reports can help you troubleshoot configuration issues or find the cause of security-related or compliance-related problems.
 
