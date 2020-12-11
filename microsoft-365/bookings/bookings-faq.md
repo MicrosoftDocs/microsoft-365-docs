@@ -32,7 +32,7 @@ Your customers will only see the Bookings calendar that you publish online for t
 
 ### How do I change a bookable attribute under Manage staff?
 
-When the staff was added, he would have received an email for accepting or rejecting the request. They can open the same email and select "Reject" . This will make him non bookable. We currently do not have a way to toggle this from inside the app.
+When staff members were added, they would have received an email to accept or reject the request. They can open the same email and select "Reject" to make them non-bookable. We currently do not have a way to toggle this from inside the app.
 
 ### How do end users access the Bookings app?
 
