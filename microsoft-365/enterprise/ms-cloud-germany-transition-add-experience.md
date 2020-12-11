@@ -1,9 +1,9 @@
 ---
-title: "Additional experience information for the migration from Microsoft Cloud Deutschland"
+title: "Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (advanced)"
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -20,9 +20,9 @@ ms.custom:
 description: "Summary: Additional customer experience information when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Additional experience information for the migration from Microsoft Cloud Deutschland 
+# Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (advanced) 
 
-The following sections provide additional information on customer experiences.
+The following sections provide additional information on customer experiences when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
 
 ## Services
 
