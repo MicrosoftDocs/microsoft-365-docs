@@ -265,11 +265,11 @@ For more information about how retention policies and retention labels work toge
 
 ## The principles of retention, or what takes precedence?
 
-Unlike retention labels, you can apply more than one retention policy to the same content. Each retention policy can have a different action (retain and delete), and a different date for those actions (how long to retain the content and when to delete the content). Additionally, that item could also be subject to retention settings from a label.
+Unlike retention labels, you can apply more than one retention policy to the same content. Each retention policy can result in a retain action and a delete action. Additionally, that item could also be subject to these actions from a label.
 
-In this scenario, when items can be subject to multiple retention settings, what takes precedence to determine the outcome?
+In this scenario, when items can be subject to multiple retention settings that could conflict with one another, what takes precedence to determine the outcome?
 
-The outcome isn't which single retention policy or retention label wins, but how long an item is retained (if applicable) and when an item is deleted (if applicable). These two action are calculated independently from where or how they were applied. 
+The outcome isn't which single retention policy or single retention label wins, but how long an item is retained (if applicable) and when an item is deleted (if applicable). These two action are calculated independently from each other and how they were applied.
 
 At a high level, you can be assured that retention always takes precedence over deletion, and the longest retention period wins.
 
@@ -305,6 +305,23 @@ Explanation for the four different levels:
 4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies only, and all the retention policies are scoped or none of the retention policies are scoped: Content is deleted at the end of the shortest retention period. 
 
 Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When that hold is released, the content again becomes eligible for the cleanup process in the secured locations for the workload.
+
+Examples:
+
+1. An item has a retention policy for delete-only after 2 years and also a label that retains the content for three years and then deletes it after 5 years:
+    
+    Outcome: The item is retained for three years (retention takes precedence over deletion) and deleted after 5 years (retention labels takes precedence over a retention policy).
+
+2.  An item has an unscoped retention policy that retains items for 5 years and then deletes after 2 years, and a scoped retention policy that retains items for 10 years and then deletes after 5 years.
+    
+    Outcome: The item is retained for 10 years (the longest retention period takes precedence) and deleted after 5 years (a scoped retention policy takes precedence). 
+
+
+
+
+
+
+
 
 ## Use Preservation Lock to restrict changes to policies
 
