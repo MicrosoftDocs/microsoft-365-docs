@@ -26,9 +26,9 @@ description: "Learn how to enable the Report Phish add-in for Outlook and Outloo
 > [!NOTE]
 > If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-The Report Phish add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report phishing emails (emails that try to steal sensitive information in messages that appear to be from legitimate or trusted senders.) to Microsoft and its affiliates for analysis. Microsoft uses these submissions to improve the effectiveness of email protection technologies.
+The Report Phish add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report phishing emails (emails that try to steal sensitive information in messages that appear to be from legitimate or trusted senders) to Microsoft and its affiliates for analysis. Microsoft uses these submissions to improve the effectiveness of email protection technologies.
 
-For example, suppose that people are reporting a lot of messages using the Report Phish add-in. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
+For example, suppose that people are reporting many messages using the Report Phish add-in. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
 Admins can enable the Report Phishing add-in for the organization, and individual users can install it for themselves.
 
@@ -132,11 +132,9 @@ When you notify users about the Report Phish add-in, include a link to [Use the 
 
 1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
 
-   ![Services and Add-Ins page in the new Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
-
 2. Find and select the **Report Phish** add-in.
 
-3. In the **Edit Report Phish** flyout that appears, review and edit settings as appropriate for your organization. When you're finished, click **Save**.
+3. In the **Edit Report Phish** flyout that appears, review, and edit settings as appropriate for your organization. When you're finished, click **Save**.
 
 ## View and review reported messages
 
