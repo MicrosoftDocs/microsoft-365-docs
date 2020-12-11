@@ -26,6 +26,11 @@ This article describes prerequisites that need to be implemented before you can 
 
 ## Prerequisites
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- Azure
+
 Before implementing the recommended identity and device access policies, there are several prerequisites that your organization must meet for these identity and authentication models for Microsoft 365 and Office 365:
 
 - Cloud-only
