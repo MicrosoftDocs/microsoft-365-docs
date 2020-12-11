@@ -265,16 +265,18 @@ For more information about how retention policies and retention labels work toge
 
 ## The principles of retention, or what takes precedence?
 
-Unlike retention labels, you can apply more than one retention policy to the same content. Each retention policy can have a different action (retain, delete, or retain and then delete) and a different retention period. Additionally, although you can apply only one retention label to an item, that item could also be subject to one or more retention policies.
+Unlike retention labels, you can apply more than one retention policy to the same content. Each retention policy can have a different action (retain and delete), and a different date for those actions (how long to retain the content and when to delete the content). Additionally, that item could also be subject to retention settings from a label.
 
-In this scenario, when items are subject to multiple retention settings, what takes precedence that determines the outcome? 
+In this scenario, when items can be subject to multiple retention settings, what takes precedence to determine the outcome?
 
-At a high level, you can be assured that retention always takes precedence over deletion, and then the longest retention period wins. 
+The outcome isn't which single retention policy or retention label wins, but how long an item is retained (if applicable) and when an item is deleted (if applicable). These two action are calculated independently from where or how they were applied. 
 
-However, there are a few more factors to throw into the mix, so use the following flow to understand the outcome where each level acts as a tie-breaker from top to bottom.
+At a high level, you can be assured that retention always takes precedence over deletion, and the longest retention period wins.
+
+However, there are a few more factors to consider, so use the following flow to understand the outcome where each level acts as a tie-breaker from top to bottom.
 
 > [!IMPORTANT]
-> If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only one retention label at a time ).
+> If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only one retention label at a time).
 
 ![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
@@ -282,22 +284,25 @@ Explanation for the four different levels:
   
 1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it. Example:
     
-    - A retention policy for Exchange is configured to delete items after three years and some of the items also have a retention label applied that is configured to retain for five years and then delete. After three years, all items are deleted so users can't see them, but the labeled items are retained in the Recoverable Items folder until the content reaches five years old, when it is then permanently deleted.
+    - A retention policy for Exchange is configured to delete items after three years and some of the items also have a retention label applied that is configured to retain for five years. The items are retained for five years.
 
-2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period.
+2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period. Example:
+    
+    - A retention policy for all SharePoint sites is configured to retain items for five years but one SharePoint site has a retention policy configured to retain items for ten years. Content from the specified SharePoint site is retained for ten years whereas content for the other sites are retained for five years.
+
+3. **Explicit wins over implicit.** Applicable to determine when items will be deleted: 
+    
+    1. Retention labels (however they are assigned) provide explicit retention because the retention settings are applied to individual items. This means that a delete action from an applied retention label takes precedence over a delete action from any retention policy.
+    
+    2. For retention policies only: If a retention policy is scoped in any way, that retention policy takes precedence over another retention policy that isn't scoped. A retention policy is scoped when you select specific locations, or use includes or excludes. For example, specify just SharePoint sites, or include specific user mailboxes or exclude OneDrive accounts. All scopes have equal precedence.
     
     Example:
     
-    - A retention policy for all SharePoint sites is configured to retain items for five years but one SharePoint site has a retention policy configured to retain items for ten years. Content from the specified SharePoint site is retained for ten years whereas content for the other sites are retained for only five year.
+    - An item that has a delete action after 5 years from a retention policy and 10 years from a retention label: The item is deleted after 10 year because the delete action from the label has precedence over the retention policy.
+    - An item that has a delete action after 10 years from a retention policy that excludes one user and a delete action after 5 years from an unscoped policy: The item is deleted after 5 years because it is scoped.
 
 
-3. **Explicit wins over implicit.** This means: 
-    
-    1. Retention labels (however they are assigned) provide explicit retention because the retention settings are applied to individual items. This means that an applied retention label takes precedence over any retention policy.
-    
-    2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive account, that retention policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive accounts but doesn't specifically include that user's mailbox.
-    
-4. **The shortest deletion period wins.** Similarly, if content is subject to multiple retention settings that delete content without a retention period, that content will be deleted at the end of the shortest retention period. 
+4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies only, and all the retention policies are scoped or none of the retention policies are scoped: Content is deleted at the end of the shortest retention period. 
 
 Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When that hold is released, the content again becomes eligible for the cleanup process in the secured locations for the workload.
 
