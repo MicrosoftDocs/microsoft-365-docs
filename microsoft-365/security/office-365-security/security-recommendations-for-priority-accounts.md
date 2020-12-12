@@ -1,5 +1,5 @@
 ---
-title: "Security recommendations for high value employee accounts in Microsoft 365"
+title: "Security recommendations for priority accounts in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
