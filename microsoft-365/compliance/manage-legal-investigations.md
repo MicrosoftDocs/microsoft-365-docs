@@ -51,9 +51,9 @@ The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscov
 
 Advanced eDiscovery requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Here's a quick overview of the built-in workflow in Advanced eDiscovery. For more information, see [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-advanced-ediscovery-workflow).
+Here's a quick overview of the built-in workflow in Advanced eDiscovery. For more information, see [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
 
-- [Create a case](create-and-manage-advanced-ediscoveryv2-case.md#create-an-advanced-ediscovery-case) to get started.
+- [Create a case](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) to get started.
 
 - [Manage custodians](managing-custodians.md) by adding them to a case and placing a legal hold on content in their mailbox, OneDrive account, and Microsoft Teams they're members of.
 
