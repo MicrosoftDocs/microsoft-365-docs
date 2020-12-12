@@ -95,8 +95,6 @@ You manage a standalone add-on subscription the same way that you manage any oth
 
 You manage a traditional add-on by going to the subscription that contains it and making changes there. Use the following steps to manage a traditional add-on.
   
-### Update a traditional add-on
-
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
@@ -113,7 +111,7 @@ You manage a traditional add-on by going to the subscription that contains it an
 2. On the **Subscriptions** page, select the subscription for which you want to update an add-on.
 3. Select **Add-ons**.
     The add-ons that you have purchased are shown and each of the add-ons will have a **Change quantity** link below it.
-4. Select the **Change quantity** link for the add-on that you want to update.
+4. Select the **Change quantity** link for the add-on that you want to update.\
     ![Add-ons link and the change quantity link.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
 5. Enter the number of user licenses that you need in the box, and then select **Submit**.
     > [!TIP]
@@ -129,7 +127,7 @@ You manage a traditional add-on by going to the subscription that contains it an
 2. On the **Subscriptions** page, select the subscription for which you want to update an add-on.
 3. Select **Add-ons**.
     The add-ons that you have purchased are shown and each of the add-ons will have a **Change quantity** link below it.
-4. Select the **Change quantity** link for the add-on that you want to update.
+4. Select the **Change quantity** link for the add-on that you want to update.\
     ![Add-ons link and the change quantity link.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
 5. Enter the number of user licenses that you need in the box, and then select **Submit**.
     > [!TIP]
