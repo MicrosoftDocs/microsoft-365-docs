@@ -45,7 +45,7 @@ You must be a Global or Billing admin to do the steps described in this article.
 
 ## Buy an add-on
 
-Use the following steps to find and buy add-ons that are available to you. The list only includes add-ons that you can buy. This list is based on your currently active subscriptions, and any other existing add-ons you already have. If an add-on isn’t on the list, it’s not available to buy.
+Use the following steps to find and buy add-ons. The list only includes add-ons that are available to you. This list is based on your currently active subscriptions, and any other existing add-ons you already have. If an add-on isn’t on the list, it’s not available to buy.
 
 For information about Skype for Business add-ons, see [Skype for Business and Microsoft Teams add-on licensing](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
 
