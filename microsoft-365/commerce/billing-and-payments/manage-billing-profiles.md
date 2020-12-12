@@ -22,7 +22,7 @@ search.appverid:
 description: "Learn how billing profiles support invoices."
 ---
 
-# Manage billing profiles
+# Understand billing profiles
 
 ::: moniker range="o365-21vianet"
 
