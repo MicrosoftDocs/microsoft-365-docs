@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: "Compare Microsoft 365 encryption options including Office Message Encryption (OME), S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
+description: "Compare Microsoft 365 encryption options including Office 365 Message Encryption (OME), S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
 ---
 
 # Email encryption
 
-This article compares encryption options in Microsoft 365 including Office 365 Message Encryption (OME), S/MIME, Information Rights Management (IRM), and introduces Transport Layer Security (TLS).
+This article compares encryption options in Microsoft 365 including Office Message Encryption (OME), S/MIME, Information Rights Management (IRM), and introduces Transport Layer Security (TLS).
   
 Microsoft 365 delivers multiple encryption options to help you meet your business needs for email security. This article presents three ways to encrypt email in Office 365. If you want to learn more about all security features in Office 365, visit the [Office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=282470). This article introduces the three types of encryption available for Microsoft 365 administrators to help secure email in Office 365:
   
@@ -33,7 +33,7 @@ Microsoft 365 delivers multiple encryption options to help you meet your busines
 
 - Information Rights Management (IRM).
 
-## Email encryption and how Microsoft 365 uses it
+## What is email encryption and how does Microsoft 365 use it?
 
 Encryption is the process by which information is encoded so that only an authorized recipient can decode and consume the information. Microsoft 365 uses encryption in two ways: in the service, and as a customer control. In the service, encryption is used in Microsoft 365 by default; you don't have to configure anything. For example, Microsoft 365 uses Transport Layer Security (TLS) to encrypt the connection, or session, between two servers. 
   
@@ -63,16 +63,11 @@ Watch this video for an introduction to [Encryption in Office 365](https://www.y
 |Recommendations and example scenarios|We recommend using OME when you want to send sensitive business information to people outside your organization, whether they're consumers or other businesses. For example:  <br/>  A bank employee sending credit card statements to customers  <br/>  A doctor's office sending medical records to a patient  <br/>  An attorney sending confidential legal information to another attorney|We recommend using IRM when you want to apply usage restrictions as well as encryption. For example:  <br/>  A manager sending confidential details to her team about a new product applies the "Do Not Forward" option.  <br/>  An executive needs to share a bid proposal with another company, which includes an attachment from a partner who is using Office 365, and require both the email and the attachment to be protected.|We recommend using S/MIME when either your organization or the recipient's organization requires true peer-to-peer encryption.  <br/>  S/MIME is most commonly used in the following scenarios:  <br/>  Government agencies communicating with other government agencies  <br/>  A business communicating with a government agency|
 ||
 
-In case of using both [Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information) and email encryption to protect the data, consider following:
-- You can use sensitivity labels with OME and IRM encryption. For more details, see [Restrict access to content by using sensitivity labels to apply encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#what-happens-to-existing-encryption-when-a-labels-applied).
-- You can apply sensitivity labels to emails digitally signed using S/MIME.
-- You can't apply sensitivity labels to emails encrypted using S/MIME, because messages protected by end-to-end encryption are not processed by policies.
-
-## Encryption options available for my Microsoft 365 subscription
+## What encryption options are available for my Microsoft 365 subscription?
 
 For information about email encryption options for your Microsoft 365 subscription see the [Exchange Online service description](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Here, you can find information about the following encryption features:
-
-- Azure RMS, including both IRM capabilities and the new OME capabilities
+  
+- Azure RMS, including both IRM capabilities and OME
 
 - S/MIME
 

@@ -30,7 +30,7 @@ At the end of these steps, your domain will stay registered with the host that y
 
 If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
 
-[Check the Domains FAQ](../setup/domains-faq.md) if you don't find what you're looking for below.
+[Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for below.
 
 ## Step 1: Add a TXT or MX record to verify you own the domain
 

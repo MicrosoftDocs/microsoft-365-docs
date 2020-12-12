@@ -25,7 +25,7 @@ description: "Learn to set up your Microsoft custom domain with Network Solution
 
 # Change nameservers to set up Microsoft with Network Solutions
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
   
 Follow these instructions if you want Microsoft to manage your DNS records for you. (If you prefer, you can [manage all your Microsoft DNS records at Network Solutions](create-dns-records-at-network-solutions.md).)
   

@@ -58,7 +58,7 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Yes <sup>\*</sup>                                                        |
-|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Preview: [Beta Channel](https://office.com/insider)             | Preview: [Beta Channel](https://office.com/insider)         | Under review   | Under review         | Under review                                            
+|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Preview: [Beta Channel](https://office.com/insider)             | Preview: [Beta Channel](https://office.com/insider)         | Preview: [Beta Channel](https://office.com/insider)   | Under review         | Under review                                            
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Preview for Word and PowerPoint: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | Under review | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -250,12 +250,12 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 | Variable | Description | Example when label applied |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Current label display name | **General**|
-| `${Item.Name}` | Current file name or email subject | **Sales.docx** |
-| `${Item.Location}` | Current path and file name of the document, or the email subject for an email | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Current user display name  | **Richard Simone** |
-| `${User.PrincipalName}` | Current user Azure AD user principal name (UPN) | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Current date and time for the local time zone | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | Label display name of the label applied| **General**|
+| `${Item.Name}` | File name or email subject of the content being labeled | **Sales.docx** |
+| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Display name of the user applying the label| **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
@@ -317,7 +317,7 @@ Examples:
     `${If.App.WP}This content is ${If.End}Confidential`
 
     In Word and PowerPoint, the label applies the watermark text "This content is Confidential". In Excel, the label applies the watermark text "Confidential". In Outlook, the label doesn't apply any watermark text because watermarks as visual markings are not supported for Outlook.
->>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
+
 
 ## End-user documentation
 
