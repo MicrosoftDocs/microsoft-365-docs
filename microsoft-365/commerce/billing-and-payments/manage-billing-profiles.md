@@ -1,5 +1,5 @@
 ---
-title: Manage billing profiles
+title: Understand billing profiles
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,12 +12,14 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- Commerce
 search.appverid:
 - MET150
 description: "Learn how billing profiles support invoices."
-keywords: billing profile, invoices, charges, managed charges
 ---
 
 # Manage billing profiles
