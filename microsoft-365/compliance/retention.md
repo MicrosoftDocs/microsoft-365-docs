@@ -280,7 +280,7 @@ There are a few more factors that determine when an item will be deleted, which 
 Use the following flow to understand the retention and deletion outcomes for a single item, where each level acts as a tie-breaker from top to bottom.
 
 > [!IMPORTANT]
-> If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only one retention label at a time).
+> If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
 
 ![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
