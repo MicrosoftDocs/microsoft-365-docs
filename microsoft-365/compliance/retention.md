@@ -269,7 +269,7 @@ Unlike retention labels, you can apply more than one retention policy to the sam
 
 In this scenario, when items can be subject to multiple retention settings that could conflict with one another, what takes precedence to determine the outcome?
 
-The outcome isn't which single retention policy or single retention label wins, but how long an item is retained (if applicable) and when an item is deleted (if applicable). These two actions are calculated independently from each other.
+The outcome isn't which single retention policy or single retention label wins, but how long an item is retained (if applicable) and when an item is deleted (if applicable). These two actions are calculated independently from each other, from all the retention settings applied to an item.
 
 For example, an item might be subject to one retention policy that is configured for a delete-only action, and another retention policy that is configured to retain and then delete. To determine the outcome, this item has just one retain action but two delete actions. Retention and deletion can be in conflict with each other and the two deletion actions might have a conflicting date.
 
