@@ -271,7 +271,7 @@ In this scenario, when items can be subject to multiple retention settings that 
 
 The outcome isn't which single retention policy or single retention label wins, but how long an item is retained (if applicable) and when an item is deleted (if applicable). These two actions are calculated independently from each other.
 
-For example, an item might be subject to one retention policy that has a delete-only action, and another retention policy that is subject to retain and then delete. For the outcome, this item has just one retain action but two delete actions. Retention and deletion can be in conflict with each other and the two deletion actions might have a conflicting date.
+For example, an item might be subject to one retention policy that is configured for a delete-only action, and another retention policy that is configured to retain and then delete. To determine the outcome, this item has just one retain action but two delete actions. Retention and deletion can be in conflict with each other and the two deletion actions might have a conflicting date.
 
 At a high level, you can be assured that retention always takes precedence over deletion, and the longest retention period wins. These two simple rules always decide how long an item will be retained.
 
