@@ -336,7 +336,7 @@ More complex examples that combine retain and delete actions:
     
     **Outcome**: The item is retained for seven years because retention takes precdence over deletion and seven years is the longest retention period. At the end of this retention period, the item is deleted because of the delete action from the retention policies that was deferred while the item was retained. 
     
-    Although the two retention policies have different dates for the delete actions, the earliest the item can be deleted is at the end of the longest retention period, so there is no conflict.
+    Although the two retention policies have different dates for the delete actions, the earliest the item can be deleted is at the end of the longest retention period, so there is no conflict to resolve.
 
 2.  An item has the following retention settings applied to it:
     
