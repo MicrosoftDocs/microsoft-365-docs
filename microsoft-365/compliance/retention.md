@@ -290,11 +290,12 @@ Explanation for the four different levels:
     
     - An email message is subject to a retention policy for Exchange that is configured to delete items after three years and it also has a retention label applied that is configured to retain content for five years.
     
-        Outcome: The email message is retained for five years because this retention action from the label takes precedence over deletion. The email message is deleted at the end of the five years because of the deferred delete action from the retention policy.
+        Outcome: The email message is retained for five years because this retention action takes precedence over deletion. The email message is deleted at the end of the five years because of the deferred delete action.
 
 2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period. Example:
     
-    - Documents in the Marking SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years. The second retention policy is configured for specific SharePoint sites to retain items for ten years. 
+    - Documents in the Marking SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years. The second retention policy is configured for specific SharePoint sites to retain items for ten years.
+        
         Outcome: Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period.
 
 3. **Explicit wins over implicit.** Applicable to determine when items will be deleted: 
