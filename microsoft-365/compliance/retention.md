@@ -271,7 +271,7 @@ In this scenario, when items can be subject to multiple retention settings that 
 
 The outcome isn't which single retention policy or single retention label wins, but how long an item is retained (if applicable) and when an item is deleted (if applicable). These two actions are calculated independently from each other.
 
-For example, an item might be subject to one retention policy that has a delete-only action, and another retention policy that is subject to retain and then delete. For the outcome, this item has just one retain action but two delete actions with a date that might conflict.
+For example, an item might be subject to one retention policy that has a delete-only action, and another retention policy that is subject to retain and then delete. For the outcome, this item has just one retain action but two delete actions. Retention and deletion can be in conflict with each other and the two deletion actions might have a conflicting date.
 
 At a high level, you can be assured that retention always takes precedence over deletion, and the longest retention period wins. These two simple rules always decide how long an item will be retained.
 
@@ -288,7 +288,7 @@ Explanation for the four different levels:
   
 1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it. Example:
     
-    - An email message is subject to a retention policy for Exchange that is configured to delete items after three years and it also has a retention label applied that is configured to retain content for five years. This email message is retained for five years and then deleted because retention takes precedence over deletion.
+    - An email message is subject to a retention policy for Exchange that is configured to delete items after three years and it also has a retention label applied that is configured to retain content for five years. The email message is retained for five years because this retention action from the label takes precedence over deletion. The email message is deleted at the end of the five years because of the deferred delete action from the retention policy.
 
 2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period. Example:
     
@@ -296,7 +296,7 @@ Explanation for the four different levels:
 
 3. **Explicit wins over implicit.** Applicable to determine when items will be deleted: 
     
-    1. A retention label (however it is assigned) provides explicit retention because the retention settings are applied to an individual item. This means that a delete action from a retention label takes precedence over a delete action from any retention policy. Example:
+    1. A retention label (however it is assigned) provides explicit retention because the retention settings are applied to an individual item. This means that a delete action from a retention label always takes precedence over a delete action from any retention policy. Example:
     
     - A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.  The document is deleted after seven years because the delete action from the retention label takes precedence.
     
@@ -309,7 +309,7 @@ Explanation for the four different levels:
     
     - A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. This document will be deleted after seven years because that's the shortest retention period for these two scoped policies.
 
-Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them, and these items could then be subject to a longer retention period or a deferred delete action.
+Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a deferred delete action.
 
 More complex examples that combine retain and delete actions:
 
