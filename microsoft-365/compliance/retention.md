@@ -288,11 +288,14 @@ Explanation for the four different levels:
   
 1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it. Example:
     
-    - An email message is subject to a retention policy for Exchange that is configured to delete items after three years and it also has a retention label applied that is configured to retain content for five years. The email message is retained for five years because this retention action from the label takes precedence over deletion. The email message is deleted at the end of the five years because of the deferred delete action from the retention policy.
+    - An email message is subject to a retention policy for Exchange that is configured to delete items after three years and it also has a retention label applied that is configured to retain content for five years.
+    
+        Outcome: The email message is retained for five years because this retention action from the label takes precedence over deletion. The email message is deleted at the end of the five years because of the deferred delete action from the retention policy.
 
 2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period. Example:
     
-    - Documents in the Marking SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years. The second retention policy is configured for specific SharePoint sites to retain items for ten years. Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period.
+    - Documents in the Marking SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years. The second retention policy is configured for specific SharePoint sites to retain items for ten years. 
+        Outcome: Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period.
 
 3. **Explicit wins over implicit.** Applicable to determine when items will be deleted: 
     
@@ -304,13 +307,19 @@ Explanation for the four different levels:
         
         An unscoped policy uses the default location selection of **Exchange email** and **All recipients**, **SharePoint sites** and **All sites**, **OneDrive accounts** and **All accounts**, and **Microsoft 365 Groups** and **All groups**. Note that policies for Teams and Yammer are always scoped. All scopes have equal precedence. Examples: 
         
-        - An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years. The email message is deleted after five years because the deletion action from the scoped retention policy takes precedence over the unscoped retention policy.
+        - An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
+            
+            Outcome: The email message is deleted after five years because the deletion action from the scoped retention policy takes precedence over the unscoped retention policy.
         
-        - A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. When this document will be deleted can't be determined at this level because both policies are scoped.
+        - A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. 
+            
+        Outcome: When this document will be deleted can't be determined at this level because both policies are scoped.
 
 4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies: Content is deleted at the end of the shortest retention period. Example:
     
-    - A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. This document will be deleted after seven years because that's the shortest retention period for these two scoped policies.
+    - A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. 
+        
+        Outcome: This document will be deleted after seven years because that's the shortest retention period for these two scoped policies.
 
 Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a deferred delete action.
 
