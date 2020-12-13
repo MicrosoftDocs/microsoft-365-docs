@@ -308,7 +308,7 @@ Explanation for the four different levels:
     
     2. When you have retention policies only: If a retention policy is scoped to specific locations or uses an include configuration (such as specific users for Exchange email) that retention policy takes precedence over unscoped retention policies.
         
-        An unscoped policy uses the default location selection of **Exchange email** and **All recipients**, **SharePoint sites** and **All sites**, **OneDrive accounts** and **All accounts**, and **Microsoft 365 Groups** and **All groups**. Note that policies for Teams and Yammer are always scoped. All scopes have equal precedence.
+        An unscoped retention policy uses the default location selection of **Exchange email** and **All recipients**, **SharePoint sites** and **All sites**, **OneDrive accounts** and **All accounts**, and **Microsoft 365 Groups** and **All groups**. Note that retention policies for Teams and Yammer are always scoped. All scoped retention policies have equal precedence.
         
         Example 1: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
         
