@@ -301,12 +301,12 @@ Explanation for the four different levels:
     - A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years. The document is deleted after seven years because the delete action from the retention label takes precedence.
     
     2. When you have retention policies only: If a retention policy is scoped to specific locations or uses an include configuration (such as specific users for Exchange email) that retention policy takes precedence over unscoped retention policies.
-    
-    An unscoped policy uses the default location selection of **Exchange email** and **All recipients**, **SharePoint sites** and **All sites**, **OneDrive accounts** and **All accounts**, and **Microsoft 365 Groups** and **All groups**. Note that policies for Teams and Yammer are always scoped. All scopes have equal precedence. Examples: 
-    
-    - An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years. The email message is deleted after five years because the deletion action from the scoped retention policy takes precedence over the unscoped retention policy.
-    
-    - A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. When this document will be deleted can't be determined at this level because both policies are scoped.
+        
+        An unscoped policy uses the default location selection of **Exchange email** and **All recipients**, **SharePoint sites** and **All sites**, **OneDrive accounts** and **All accounts**, and **Microsoft 365 Groups** and **All groups**. Note that policies for Teams and Yammer are always scoped. All scopes have equal precedence. Examples: 
+        
+        - An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years. The email message is deleted after five years because the deletion action from the scoped retention policy takes precedence over the unscoped retention policy.
+        
+        - A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. When this document will be deleted can't be determined at this level because both policies are scoped.
 
 4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies: Content is deleted at the end of the shortest retention period. Example:
     
