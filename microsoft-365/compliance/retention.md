@@ -300,7 +300,7 @@ Explanation for the four different levels:
 
 3. **Explicit wins over implicit.** Applicable to determine when items will be deleted: 
     
-    1. A retention label (however it is assigned) provides explicit retention because the retention settings are applied to an individual item. This means that a delete action from a retention label always takes precedence over a delete action from any retention policy.
+    1. A retention label (however it was applied) provides explicit retention in comparison with retention policies, because the retention settings are applied to an individual item rather than implicitly assigned from a container. This means that a delete action from a retention label always takes precedence over a delete action from any retention policy.
         
         Example: A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.
         
