@@ -322,7 +322,7 @@ Explanation for the four different levels:
     
     Example: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. 
     
-    This document will be deleted after seven years because that's the shortest retention period for these two scoped policies.
+    This document will be deleted after seven years because that's the shortest retention period for these two scoped retention policies.
 
 Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a deferred delete action.
 
