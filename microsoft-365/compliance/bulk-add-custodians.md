@@ -24,15 +24,15 @@ For Advanced eDiscovery cases that involve a lot of custodians, you can import m
 
 ## Bulk-add custodians
 
-1. Enter case and navigate to the **Sources** tab.
+1. Enter case and navigate to the **Data sources** tab.
 
-2. Click **Import custodians**
+2. Under **Add data source**, click **Import custodians**.
 
 3. On the flyout page, click **Download a blank template** to download a CSV custodian template file.
 
 4. Add the custodial information to the CSV file and save it on your local computer. See the next section for information about the properties in the CSV file.
 
-5. On the **Sources** tab, click **Import Custodians** again.
+5. On the **Data sources** tab, click **Import Custodians** again.
 
 6. On flyout page, click **Browse** and the upload your CSV file.
 
@@ -72,22 +72,30 @@ When you upload the custodian CSV file, Advanced eDiscovery does the following t
 
 Currently, we only support importing custodians that are in Azure Active Directory (AAD).
 
-We validate and find custodians using the UPN value in the **Contact Email** column in the CSV file. Custodians that are validated are automatically added to the case and listed on the **Custodian** tab on the **Sources** page of the case. If a custodian can't be validated, they are listed in the error log for the BulkAddCustodian job that is listed on the **Jobs** tab in the case. Unvalidated custodians are not added to the case.
+We validate and find custodians using the UPN value in the **Contact Email** column in the CSV file. Custodians that are validated are automatically added to the case and listed on the **Data sources** tab of the case. If a custodian can't be validated, they are listed in the error log for the BulkAddCustodian job that is listed on the **Jobs** tab in the case. Unvalidated custodians are not added to the case.
 
 ### Data source validation
 
-After custodians are validated and added to the case, each data source that's associated with a custodian is validated. If any data source for a custodian can't be found, the value **Not validated** would be displayed in the **Validated** column on the **Custodian** tab for that custodian.
+After custodians are added to the case, each primary mailbox and OneDrive  that's associated with a custodian will be added as well. 
 
-### Remediating unvalidated data sources
+However, if any data sources for a custodian can't be found, none of the additional data sources (Teams, Microsoft 365 Groups, Yammer, SharePoint sets, etc) will not be added to this custodian in this case and the value **Not validated** would be displayed in the **Status** column next to each custodain in the **Data source** tab of a case.
 
-To remediate custodians with unvalidated data sources: 
 
-1. On the **Custodian** tab, select a custodian who isn't validated.
+To add validated data sources for a custodians: 
 
-2. On the custodian flyout page, scroll to the **Data sources** section to view the data sources that are associated with custodian. Both validated and unvalidated data sources are listed.
+1. On the **Data source** tab, select a custodian that contains data sources that is not validated.
 
-3. In the **Data sources** section, click **Edit**.
+2. On the custodian flyout page, scroll to the **Data sources** section to view both validated and not validated data sources that are associated with custodian. Click **Update** to add validated sources to this custodian and remove invalid sources. 
 
-4. On the **Choose custodial locations** page, remove an unvalidated data source.
+3. This custodian should appear as **Active** in the status column and no longer have data sources that are not validated. To add sources that previously appeared to be invalid, follow the remediation steps below to manually add them to a custodian. 
 
-5. On the **Select additional locations** page, click **Update** to add additional data sources for a custodian.
+### Remediating invalid data sources
+
+To manually add and associate data sources that was previously invalid:
+
+1. On the **Data source** tab, select a custodian that you would like to manually add and associate data sources that was previously invalid. 
+
+2. In the **Data sources** section, add and associate mailboxes, sites, yammer, or teams by selecting **Edit** next to each data location type: Exchange, SharePoint, Teams, or Yammer. 
+
+3. Click **Next** to enter **Hold settings** page and **Next** again to enter **Review custodians** page. Click **Submit** to save any changes. 
+

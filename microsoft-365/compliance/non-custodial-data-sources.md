@@ -27,21 +27,30 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
 1. On the **Advanced eDiscovery** home page, click the case that you want to add the data to.
 
-2. On the **Sources** page, click the **Data locations** tab, and then click **Add data location**.
+2. Click the **Data sources** tab and then select **Add data location** under **Add data source** dropdown.
 
-3. Click **Add data location** and choose the data sources that you want to add to the case. You can add multiple mailboxes and sites.
+3. Choose the data sources that you want to add to the case. You can add multiple mailboxes and sites by expanding SharePoint or Exchange and selecting **Edit**. 
 
-4. On the **Choose locations** page in the wizard, add mailboxes or sites (or both) as non-custodial data sources to the case.
+   - **Exchange email** - Click **Edit** next to Exchange to specify mailboxes to assign to the selected custodian. Type into the search box the name or alias (a minimum of 3 characters) of user mailboxes or distribution groups. Select the mailboxes that you would like to assign to this custodian and click **Add**. 
 
-5. After adding the data sources, click **Next**.
 
-6. On the **Place holds** page, choose which data sources you want to place on hold by selecting or unselecting the associated checkbox.
+   - **SharePoint sites** - Click **Edit** next to SharePoint to associate a site with the custodian. Select a site in the list or you can search for a site by typing the URL of the site in the search bar. Select the sites that you would like to assign to this custodian and click **Add**. 
 
-7. Verify the hold selections and then click **Submit**.
+   > [!NOTE]
+      > You can use the SharePoint and Exchange pickers to associate an additional Team or Yammer with a custodian, you have to separately add the mailbox and site associated with the team by using the **Exchange mail** and **SharePoint sites** locations.
+   
+4. Click **Add** to add the SharePoint sites or Exchange mailboxes to the flyout. Choose which data location you want to place on hold by selecting or unselecting the associated checkbox.
+
+5. Click **Add** to add all data locations to the case and place holds on each data location. 
 
    Each non-custodial data source that you added is listed on the **Data sources** page.
 
    Also, a job named *Reindexing non-custodial data* is created and displayed on the **Jobs** tab of the case. After the job is created, the Advanced indexing process in initiated and the data sources are reindexed.
+
+
+
+
+
 
 ## Managing the hold on non-custodial data sources
 
