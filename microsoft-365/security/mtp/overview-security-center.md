@@ -23,6 +23,9 @@ ms.custom: seo-marvel-jun2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+*Applies to:**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 
 Protecting your business from an ever-evolving threat landscape brings many challenges. You might have too many security solutions with various places to configure lots of controls. You may struggle with knowing which controls are the most effective and which will introduce new challenges for your workforce. 
@@ -83,7 +86,7 @@ Incident information shows user/identity specifics and at-risk devices, beside a
 
 Selecting these opens unified data about the incident. For example, a High severity incident would list information from 9 users, and 16 devices, on respective tabs. 
 
-Selecting **Investigations** opens  a page that features a graphic of the analysis taking place, for example, on a user mailbox, and list a status (such as **pending approval**'**) for remediation. Take time to select specific incidents in your environment, drill down into these tabs, and practice building a profile for different kinds of threats. Familiarity will benefit any later pressing investigations.
+Selecting **Investigations** opens  a page that features a graphic of the analysis taking place, for example, on a user mailbox, and list a status (such as **pending approval**) for remediation. Take time to select specific incidents in your environment, drill down into these tabs, and practice building a profile for different kinds of threats. Familiarity will benefit any later pressing investigations.
 
 ## Improved processes
 
@@ -104,7 +107,7 @@ The layout has also been merged wherever centers overlap. Common controls and co
 **Device Groups** work the same way. On the same General flyout where you create the Device Group, you can select the User access tab to grant Azure AD user groups access to a device group.
 ![add the Role via the General tab, and then add users / groups to it on the Assigned user groups tab](../../media/converged-add-role-7.png)
 
-Reports are also unified in the Microsoft 365 security center. Admins can start with a General security report, and branch into specific reports about Endpoints, Email & Collaboration. It's notable that the links here are dynamically generated based upon workload configuration.
+Reports are also unified in the Microsoft 365 security center. Admins can start with a General security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
 ![report page that includes a General security report, and specific Endpoint and Email & Collaboration reports](../../media/converged-reports-9.png)
 
 > [!NOTE]
