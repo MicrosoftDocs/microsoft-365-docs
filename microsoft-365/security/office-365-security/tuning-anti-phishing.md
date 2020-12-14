@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 - MET150
 description: "Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future."

@@ -61,7 +61,7 @@ conceptualContent:
         - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
           itemType: reference
           text: Service description
-        - url: support/microsoft-365-business-faqs.md
+        - url: support/microsoft-365-business-faqs.yml
           itemType: reference
           text: FAQ
   #Card
