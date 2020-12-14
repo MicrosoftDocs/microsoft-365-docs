@@ -23,6 +23,9 @@ ms.custom: seo-marvel-apr2020
 
 [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)  involves many steps.  You can use this wizard to create your schema and sensitive information type pattern (rule package) files to help simplify the process.
 
+> [!NOTE]
+> The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
+
 This wizard can be used instead of the:
 
 - [Define the schema for your database of sensitive information](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#define-the-schema-for-your-database-of-sensitive-information)
