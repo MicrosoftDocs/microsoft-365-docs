@@ -2,9 +2,9 @@
 title: "Detect and remediate the Outlook rules and custom forms injections attacks."
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date: 04/23/2018
 audience: ITPro
 ms.topic: article

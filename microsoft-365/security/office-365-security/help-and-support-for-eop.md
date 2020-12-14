@@ -19,7 +19,7 @@ description: "Microsoft provides help for EOP in a variety of places and methods
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this topic will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this article will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
 
 ## Self-support options
 

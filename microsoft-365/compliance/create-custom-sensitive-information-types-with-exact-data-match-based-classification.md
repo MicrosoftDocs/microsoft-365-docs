@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types with Exact Data Match based classification
 
-[Custom sensitive information types](custom-sensitive-info-types.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
+[Custom sensitive information types](custom-sensitive-info-types.md) are used to help identify sensitive items so that you can help prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
 
 - patterns
 - keyword evidence such as *employee*, *badge*, or *ID*
@@ -31,7 +31,7 @@ ms.custom: seo-marvel-apr2020
 
 But what if you wanted a custom sensitive information type that uses exact data values, instead of one that found matches based on generic patterns? With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:
 
-- be dynamic and refreshable
+- be dynamic and easily refreshed
 - be more scalable
 - result in fewer false-positives
 - work with structured sensitive data
@@ -118,7 +118,7 @@ If for business or technical reasons, you prefer not to use PowerShell or comman
       ```xml
       <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
             <DataStore name="PatientRecords" description="Schema for patient records" version="1">
-                  <Field name="PatientID" searchable="true" />
+                  <Field name="PatientID" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
                   <Field name="MRN" searchable="true" />
                   <Field name="FirstName" />
                   <Field name="LastName" />
@@ -130,6 +130,39 @@ If for business or technical reasons, you prefer not to use PowerShell or comman
             </DataStore>
       </EdmSchema>
       ```
+
+##### Configurable match using the caseInsensitive and ignoredDelimiters fields
+
+The above XML sample makes use of the `caseInsensitive` and the `ignoredDelimiters` fields. 
+
+When you include the ***caseInsensitive*** field set to the value of `true` in your schema definition, EDM will not exclude an item based on case differences for `PatientID` field. So EDM will see, `PatientID` **FOO-1234** and **fOo-1234** as being identical.
+
+When you include the ***ignoredDelimiters*** field with supported characters,  EDM will ignore those characters in the `PatientID`. So EDM will see, `PatientID` **FOO-1234** and `PatientID` **FOO#1234** as being identical. The `ignoredDelimiters` flag supports any non-alphanumeric character, here are some examples:
+- \.
+- \-
+- \/
+- \_
+- \*
+- \^
+- \#
+- \!
+- \?
+- \[
+- \]
+- \{
+- \}
+- \\
+- \~
+- \; 
+
+- The `ignoredDelimiters` flag doesn't support:
+- characters 0-9
+- A-Z
+- a-z
+- \"
+- \,
+
+In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, EDM would see **FOO-1234** and **fOo#1234** as  identical and classify the item as a patient record sensitive information type. 
 
 4. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
@@ -261,6 +294,9 @@ In this example, note that:
 
 If you want to make changes to your **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:
 
+> [!TIP]
+> You can change your EDM schema and data file to take advantage of **configurable match**. When configured, EDM will ignore case differences and some delimiters when it evaluates an item. This makes defining your xml schema and your sensitive data files easier. To learn more see, [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md).
+
 1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
 
 2. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
@@ -313,7 +349,6 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
       > [!TIP]
       >  If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
 
-
 ### Part 2: Hash and upload the sensitive data
 
 In this phase, you set up a custom security group and user account, and set up the EDM Upload Agent tool. Then, you use the tool to hash with salt value the sensitive data, and upload it.
@@ -351,11 +386,21 @@ This computer must have direct access to your Microsoft 365 tenant.
 >[!NOTE]
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
 
+> [!TIP]
+> Optionally, you can run a validation against your csv file before uploading by running:
+>
+>`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+>
+>For more information on all the EdmUploadAgent.exe >supported parameters run
+>
+> `EdmUploadAgent.exe /?`
+
+
 #### Links to EDM upload agent by subscription type
 
-- [Commercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
-- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
-- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
+- [Commercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) - most commercial customers should use this
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) - This is specifically for high security government cloud subscribers
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - this is specifically for United States Department of Defense cloud customers
 
 1. Create a working directory for the EDMUploadAgent. For example, **C:\EDM\Data**. Place the **PatientRecords.csv** file there.
 
@@ -381,9 +426,9 @@ OPTIONAL: If you used the Exact Data Match schema and sensitive information type
 
 4. To hash and upload the sensitive data, run the following command in Command Prompt window:
 
-`EdmUploadAgent.exe /UploadData /DataStoreName \<DataStoreName\> /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
+`EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
 
-Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash**
+Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
 This will automatically add a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt <saltvalue>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
 
@@ -405,11 +450,11 @@ OPTIONAL: If you used the Exact Data Match schema and sensitive information type
 
 1. Run the following command in Command Prompt windows:
 
-`EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
+`EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
 
 For example:
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash**
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
 This will output a hashed file and a salt file with these extensions if you didn't specify the **/Salt <saltvalue>** option:
 - .EdmHash
@@ -473,11 +518,14 @@ $user = "$env:USERDOMAIN\\$env:USERNAME"
 $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
+$schemaext = '.xml'
 \# Assuming CSV file name is same as data store name
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
-$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ' /HashLocation' + $hashLocation
+\# Assuming Schema file name is same as data store name
+$schemaFile = "$fileLocation\\$dataStoreName$schemaext"
+$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ' /HashLocation' + $hashLocation + ' /Schema ' + $schemaFile
 \# Set up actions associated with the task
 $actions = @()
 $actions += New-ScheduledTaskAction -Execute $edmuploader -Argument $uploadDataArgs -WorkingDirectory $edminstallpath
@@ -506,12 +554,16 @@ $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $edmext = '.EdmHash'
+$schemaext = '.xml'
 \# Assuming CSV file name is same as data store name
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 $hashFile = "$fileLocation\\$dataStoreName$edmext"
+\# Assuming Schema file name is same as data store name
+$schemaFile = "$fileLocation\\$dataStoreName$schemaext "
+
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
-$createHashArgs = '/CreateHash' + ' /DataFile ' + $dataFile + ' /HashLocation ' + $hashLocation
+$createHashArgs = '/CreateHash' + ' /DataFile ' + $dataFile + ' /HashLocation ' + $hashLocation + ' /Schema ' + $schemaFile
 $uploadHashArgs = '/UploadHash /DataStoreName ' + $dataStoreName + ' /HashFile ' + $hashFile
 \# Set up actions associated with the task
 $actions = @()
@@ -530,6 +582,7 @@ $password=\[Runtime.InteropServices.Marshal\]::PtrToStringAuto(\[Runtime.Interop
 \# Register the scheduled task
 $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
+
 ```
 
 ### Part 3: Use EDM-based classification with your Microsoft cloud services
@@ -591,3 +644,5 @@ EDM sensitive information types for following scenarios are currently in develop
 - [Overview of DLP policies](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md)
+
