@@ -67,7 +67,7 @@ If your organization uses Active Directory that synchronizes with Microsoft Azur
 6. For each disabled subscription, repeat steps 3 through 5 until all subscriptions are deleted.
 
 > [!NOTE]
-> The **Delete subscription** option isn't available until three days after you have cancelled a 'Free Trial' Azure subscription. Otherwise, If you're unable to immediately delete a disabled subscription, <a href="https://go.microsoft.com/fwlink/p/?linkid=518322" target="_blank">contact support</a>.
+> The **Delete subscription** option isn't available until three days after you have cancelled a 'Free Trial' Azure subscription. Otherwise, if you're unable to immediately delete a disabled subscription, <a href="https://go.microsoft.com/fwlink/p/?linkid=518322" target="_blank">contact support</a>.
 
 ## Step 4: Disable multi-factor authentication
 
