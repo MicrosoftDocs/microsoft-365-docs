@@ -29,9 +29,9 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 ## Endpoint activities you can monitor and take action on
 
-Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10. This includes:
+Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
 
-
+<!--  
 |activity on item |auditable/restrictable  |
 |---------|---------|
 |created    | auditable      |
@@ -41,6 +41,20 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 |printed |    auditable and restrictable       |
 |copied to cloud via Chromium Edge    |   auditable and restrictable        |
 |accessed by unallowed apps and browsers    |  auditable and restrictable       |
+-->
+
+|activity |description  | auditable/restictable|
+|---------|---------|---------|
+|upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an being an unallowed browser, the upload activity will be blocked and the user is redirected to use Edge Chromium. Edge Chromium will then either allow or block the upload or access based on the DLP policy configuration         |auditable and restrictable|
+|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.         | auditable and restrictable|
+|copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.         | auditable and restrictable|
+|copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive         |auditable and restrictable|
+|print a document    |Detects when a user attempts to print a protected item to a local or network printer.| auditable and restrictable         |
+|copy to a remote session     |detects when a user attempts to copy information into a remote desktop protocol (RDP) session or drive that is available through that RDP session.| auditable and restrictable|
+|copy to Bluetooth device     | Detects when a user attempts to copy information into an app that has Bluetooth connectivity|auditable and restrictable|
+|create an item|Detects when a user creates an item| auditable|
+|rename an item|Detects when a user renames an item| auditable|
+
 
 ## What's different in Endpoint DLP
 
