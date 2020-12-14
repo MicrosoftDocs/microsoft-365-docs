@@ -39,12 +39,12 @@ The available individual permissions and what's included or not included in the 
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
-|**Allow sender** (_PermissionToAllowSender_)|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Delete** (_PermissionToDelete_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Preview** (_PermissionToPreview_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Allow sender** (_PermissionToAllowSender_)|||![Check mark](../../media/checkmark.png)|
+|**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Preview** (_PermissionToPreview_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/checkmark.png)|
+|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/checkmark.png)||
 |
 
 If you don't like the default permissions in the preset permission groups, you can use custom permissions when you create or modify custom quarantine tags. For more information about what each permission does, see the [Quarantine tag permission details](#quarantine-tag-permission-details) section later in this article.
