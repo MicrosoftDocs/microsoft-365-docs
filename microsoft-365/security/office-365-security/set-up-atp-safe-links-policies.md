@@ -173,7 +173,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
    - Move the toggle to the left to disable the policy: ![Turn policy off](../../media/scc-toggle-off.png).
 
-   - Move the toggle to the right to enable the policy: ![Turn policy on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - Move the toggle to the right to enable the policy: ![Turn policy on](../../media/scc-toggle-on.png).
 
 ### Set the priority of Safe Links policies
 
