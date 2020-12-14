@@ -8,14 +8,26 @@
           href: topic-experiences-discovery.md
         - name: Get your environment ready for Topic experiences
           href: topic-experiences-get-ready.md           
-    
+
     - name: Setup and administration
       items:
-        - name: Set up knowledge management
-          href: set-up-topic-experiences.md
-        - name: Manage your knowledge management network
-          href: topic-experiences-discovery.md
 
+        - name: Topic security
+          href: topic-experiences-security-privacy.md
+        - name: Plan topic experiences
+          href: plan-topic-experiences.md
+        - name: Set up topic experiences
+          href: set-up-topic-experiences.md
+        - name: Manage topic discovery
+          href: topic-experiences-discovery.md
+        - name: Manage topic visibility
+          href: topic-experiences-knowledge-rules.md
+        - name: Manage topic permissions
+          href: topic-experiences-user-permissions.md
+        - name: Change the topic center name
+          href: topic-experiences-administration.md
+    
+    
     - name: Get started with topics
       items:
         - name: Topic center overview
