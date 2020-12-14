@@ -35,7 +35,7 @@ You can set up Microsoft 365 Defender to notify you by email every time there ar
 
 You can choose to get notifications based on incident severity or by device group. You can also choose to get a notification only on the first update per incident.
 
-You can add or remove recipients in the email notifications. Newly added recipients get notified about incidents after they are added. 
+You can add or remove recipients in the email notifications. Newly added recipients get notified about incidents after they're added. 
 
 The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also directly go to incidents so you can start your investigation right away. For more on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents).
 
@@ -52,11 +52,11 @@ To set up your first email notification for incidents, create a new rule and cus
 3. Give the rule a name in **Name** and supply a **Description**.
 
     ![Create rule window for incident email notifs](../../media/incidentemailnotif1.png) 
-4. Select **Next** to go to **Notification settings**. Here you can specify the following:
-    - **Alert severity** - Choose the alert severity that will trigger an inncident notification. For example, if you only want to be informed about High severity incidents, select High.
-    - **Device group scope** - This displays all the device groups the user can access. Select which device groups you are creating the incident notification rules for.
-    - **Only notify on first occurrence per incident** - Selecting this option will send an email notification only on the first alert that matches your other selections. Subsequent updates or alerts related to the incident will not trigger a notification.
-    - **Include organization name** - Indicates whether or not the customer name appears on the email notification.
+4. Select **Next** to go to **Notification settings**. Here you can specify:
+    - **Alert severity** - Choose the alert severity that will trigger an incident notification. For example, if you only want to be informed about High severity incidents, select High.
+    - **Device group scope** - This dropdown displays all the device groups the user can access. Select which device groups you're creating the incident notification rules for.
+    - **Only notify on first occurrence per incident** - Selecting this option will send an email notification only on the first alert that matches your other selections. Later updates or alerts related to the incident won't trigger a notification.
+    - **Include organization name** - Indicates whether the customer name appears on the email notification or not.
     - **Include tenant-specific portal link** -  Adds a link with the tenant ID to allow access to a specific tenant.
     
     ![Notif settings window for incident email notifs](../../media/incidentemailnotif2.png)
