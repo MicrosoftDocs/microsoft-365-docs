@@ -27,6 +27,8 @@ search.appverid:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!IMPORTANT]
+> Email notifications for incidents is currently in public preview. 
 
 **Applies to:**
 - Microsoft 365 Defender
