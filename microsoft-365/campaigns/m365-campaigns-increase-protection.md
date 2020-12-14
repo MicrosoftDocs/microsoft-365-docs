@@ -285,8 +285,8 @@ The following figure shows the default policies that are included with Microsoft
 
 You can prevent people in your organization from sharing their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
 
-1. Go to the admin center at <https://admin.microsoft.com> and choose **Settings** \> **Services & add-ins**.
-2. On the **Services & add-ins** page, choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
+1. Go to the admin center at <https://admin.microsoft.com> and choose **Settings** \> **Org Settings**.
+2. On the **Services** page, choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
 
    If you choose the share with anyone option, you can decide to also only share free/busy information.
 
