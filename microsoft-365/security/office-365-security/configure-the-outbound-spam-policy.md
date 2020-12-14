@@ -225,7 +225,7 @@ To enable or disable a policy, set the policy priority order, or configure the e
 
    Move the toggle to the left to disable the policy: ![Toggle off](../../media/scc-toggle-off.png)
 
-   Move the toggle to the right to enable the policy: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Move the toggle to the right to enable the policy: ![Toggle on](../../media/scc-toggle-on.png)
 
 You can't disable the default outbound spam policy.
 
