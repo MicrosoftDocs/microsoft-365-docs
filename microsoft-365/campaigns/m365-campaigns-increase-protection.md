@@ -253,7 +253,7 @@ After you turn on the audit log search in the Security & Compliance Center, you 
 
 You must be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. Global admins in Microsoft 365 are members of this group by default.
 
-1. To turn on the audit log search on, go to the admin center at <https://admin.microsoft.com> and then choose **Security** under **Admin centers** in the left nav.
+1. To turn on the audit log search, go to the admin center at <https://admin.microsoft.com> and then choose **Security** under **Admin centers** in the left nav.
 2. On the **Microsoft 365 Security** page, choose **More resources**, and then **Open** on the **Office 365 Security & Complainc Center** card.
 
     ![Choose Open on the security & compliance cars.](../media/gotosecandcomp.png)
