@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
