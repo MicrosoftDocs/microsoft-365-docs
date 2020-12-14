@@ -18,11 +18,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Use the bulk-add tool to quickly add multiple custodians and their associated data sources to a case in Advanced eDiscovery."
 ---
 
-# Bulk-add custodians to an Advanced eDiscovery case
+# Import custodians to an Advanced eDiscovery case
 
 For Advanced eDiscovery cases that involve a lot of custodians, you can import multiple custodians at once by a CSV file that contains all the information necessary to add them to a case.
 
-## Bulk-add custodians
+## Import custodians
 
 1. Enter case and navigate to the **Data sources** tab.
 
@@ -78,7 +78,7 @@ We validate and find custodians using the UPN value in the **Contact Email** col
 
 After custodians are added to the case, each primary mailbox and OneDrive  that's associated with a custodian will be added as well. 
 
-However, if any data sources for a custodian can't be found, none of the additional data sources (Teams, Microsoft 365 Groups, Yammer, SharePoint sets, etc) will not be added to this custodian in this case and the value **Not validated** would be displayed in the **Status** column next to each custodain in the **Data source** tab of a case.
+However, if any data sources for a custodian can't be found, none of the additional data sources (Teams, Microsoft 365 Groups, Yammer, SharePoint sites, etc) will not be added to this custodian in this case and the value **Not validated** would be displayed in the **Status** column next to each custodain in the **Data source** tab of a case.
 
 
 To add validated data sources for a custodians: 

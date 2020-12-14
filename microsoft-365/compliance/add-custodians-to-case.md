@@ -26,7 +26,7 @@ Use the built-in custodian management tool in Advanced eDiscovery to coordinate 
 Add and manage custodians in Advanced eDiscovery cases in 4 steps: 
 1. Identify custodians
 2. Manage custodian data locations
-3. Place Hold settings
+3. Configure Hold settings
 4. Review your custodians
 
 ![Sources tab in Advanced eDiscovery case](../media/AeD-Sources-Tab.png)
@@ -51,7 +51,7 @@ To add custodians to a case, you must be a member of the eDiscovery Manager role
 
 After you select the custodian, the system automatically attempts to identify and verify these data sources, and then adds them to the case as data sources associated with the custodians. After adding custodians to the list, the tool will automatically identify and add the primary mailbox and OneDrive of each custodian. 
 
-To deselect the primary mailbox and OneDrove to be added to a custodian: 
+To deselect the primary mailbox and OneDrive to be added to a custodian: 
 1. Expand a custodian to view the primary data locations that have been automatically associated to each custodian.
 
 2. Select **Clear** next to Mailboxes or OneDrive to deselect/remove a custodian's Mailbox or OneDrive from being associated as a data location to this Custodian. 
@@ -81,14 +81,14 @@ To map mailboxes, sites, yammer, or teams to a specific custodian:
 
       ![Map Data Sources](../media/AddCustodianStep4.PNG)
 
-   2. You can view the total number of mailboxes, sites, yammer and teams associated with each custodian by expanding each custodian in the table. When you've finalized the relevant data locations for each custodian, these associations will be maintained and used during the collection, processing, and review stages in eDiscovery workflow. Click **Next** to porgress into **Hold settings** for these custodians.  
+   2. You can view the total number of mailboxes, sites, yammer and teams associated with each custodian by expanding each custodian in the table. When you've finalized the relevant data locations for each custodian, these associations will be maintained and used during the collection, processing, and review stages in eDiscovery workflow. Click **Next** to go to **Hold settings** for these custodians.  
 
    
 
 
 
 
-## Step 3: Place Hold settings
+## Step 3: Configure Hold settings
 
  After you've finalized the custodians and their data locations, you can optionally place some or all of the custodians on hold. When you place a custodian on hold, all content in all content locations that are associated with the custodian is preserved until you remove the hold or release the custodian from the hold. In some cases, you may want to add custodians to a case without placing them on hold.
 
@@ -115,11 +115,3 @@ After a custodian is added and placed on hold, a custodian hold policy that cont
 1. On the **Home** page of the case, click the **Holds** tab and then click **CustodianHold-Guid**,  
 
 2. On the flyout page, click **Edit hold** to view all the custodian data sources that are placed on hold.
-
-To map mailboxes, sites, or teams to a specific custodian:
-
-1. On the **Select additional data sources** page, click **Add** in the row for the specific custodian. 
-  
-   ![Map Additional Data Sources](../media/AddCustodianStep3.PNG)
-
-2. On the flyout page, you can specify a data source from any of the following services:
