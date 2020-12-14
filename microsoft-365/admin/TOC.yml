@@ -198,7 +198,7 @@
         - name: Pilot Microsoft 365 from my custom domain
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: Domains FAQ
-          href: setup/domains-faq.md
+          href: setup/domains-faq.yml
         - name: Host-specific instructions
           items:
             - name: Change nameservers at any DNS host
