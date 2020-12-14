@@ -113,7 +113,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## Administration
 
-When you set up topic experiences, as part of the setup process, a topic center is automatically created. Think about what you want to name the topic center and what you want the URL to be. You can set both the name and URL as part of the setup process, and you can change the name (but not URL) later in the Microsoft 365 admin center.
+When you set up topic experiences, as part of the setup process, a topic center is automatically created. Think about what you want to name the topic center and what you want the URL to be. You can set both the name and URL as part of the setup process, and you can change the name (but not URL) later in the Microsoft 365 admin center. You can only have one topic center.
 
 ## Setup checklist
 
