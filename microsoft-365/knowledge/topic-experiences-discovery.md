@@ -1,76 +1,91 @@
 ---
-title: 'Topic Experiences topic discovery and curation (Preview) '
-description: 'Overview of how topics are discovered.'
-ms.author: efrene
-author: efrene
+title: "Manage topic discovery in Microsoft 365"
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
-ms.service: 
-ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.service: o365-administration
+search.appverid: MET150
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-
+description: "Learn how to administer topic discovery in Microsoft 365."
 ---
-# Topic Experiences discovery
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+# Manage topic discovery in Microsoft 365
 
-Topic Experiences converts knowledge information to knowledge in your Microsoft 365 environment. We've all experienced reading through documents and site pages where we encounter terms we are unfamiliar with. Many times we stop what we are doing to spend precious time searching for more information.
+You can manage topic discovery settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
 
-What Topic Experiences does is use Microsoft Graph and AI to identify **topics** in your organization.  A topic is a phrase or term that has a specific meaning to an organization, where users would benefit by being able to view a wiki page about it. AI searches for people and content connected to the topic, and if enough it discovered, it becomes a suggested topic.
+## To access topics management settings:
 
-The AI generated topic information is added to a **Topic page**, which can contain:
-- A short description of the topic.
-- Alternate names for the topic.
-- People who might know more about the topic.
-- Sites, files, and pages that might be related to the topic.
+1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
+2. On the **Services** tab, click **Knowledge network**.
 
-Topic experiences then makes sure that every instance of a topic is highlighted on all SharePoint modern site pages in your tenant. When a user is curious to learn more about a topic, they can select the highlighted topic to view a **Topic summary** card that provides a short description. And if they want to learn more, they can select a **Topic details** link in the summary to open the detailed topic page.
+    ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
 
-![Topic highlights](../media/knowledge-management/saturn.png) </br>
+3. Select the **Topic discovery** tab. See the following sections for information about each setting.
 
-Additionally, users will also be able to find topics through Microsoft Search.
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
 
+## Select SharePoint topic sources
 
-## Topic curation
+You can change the SharePoint sites in your organization that will be crawled for topics.
 
-Topic Experiences welcomes human "curation" to improve the quality of your topics. While AI initially identifies and suggests topics, manually made updates to content from contributors, confirmation from users for AI generated content, and feedback on the usefulness of topics are all essential.
+If you want to include or exclude a specific list of sites, you can use the following .csv template:
 
-- AI generated topics ("suggested topics") can be reviewed by **knowledge managers** in your organization. In the Manage Topics page in the Topic Center, they can choose to confirm them as valid, or reject them to prevent them from being viewed.
+``` csv
+Site name,URL
+```
 
-- You can assign *Create and edit topics* permissions to any of your licensed users so that they can make changes to existing topics or create new topics when needed. 
+If you add sites using the site picker, they are added to the existing list of sites to include or exclude. If you upload a .csv file, it overwrites any existing list. If you have previously included or excluded specific sites, you and download the list as a .csv file, make changes, and upload the new list.
 
-- Even users who only have read access to topic (topic viewers) will be asked to verify the usefulness of specific topics.
+To choose sites for topic discovery
 
-Even with human curation, AI will continually look for more information about topics, and will look for human verification. For example, if AI thinks you are a person that should be pinned as an expert on a topic, it will ask you to confirm this. 
+1. On the **Topic discovery** tab, under **Select SharePoint topic sources**, select **Edit**.
+2. On the **Select SharePoint topic sources** page, select which SharePoint sites will be crawled as sources for your topics during discovery. This includes:
+    - **All sites**: All SharePoint sites in your tenant. This captures current and future sites.
+    - **All, except selected sites**: Type the names of the sites you want to exclude.  You can also upload a list of sites you want to opt out from discovery. Sites created in the future will be included as sources for topic discovery. 
+    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
+    - **No sites**: Topics won't be automatically generated or updated with SharePoint content. Existing topics remain in the topic center.
 
+    ![Screenshot of SharePoint topic sources user interface](../media/k-manage-select-topic-source.png)
+   
+3. Click **Save**.
 
+## Exclude topics by name
 
+You can exclude topics from discovery by uploading a list using a .csv file. If you've previously excluded topics, you can download the .csv, make changes, and upload it again.
 
+1. On the **Topic discovery** tab, under **Exclude topics**, select **Edit**.
+2. Click **Exclude topics by name**.
+3. If you need to create a list, download the .csv template and add the topics that you want to exclude (see *Working with the .csv template* below). When the file is ready, click **Browse** and upload the file. If there's an existing list, you can download the .csv containing the list.
+4. Click **Save**.
 
+    ![Screenshot of exclude topics user interface](../media/km-manage-exclude-topics.png)
 
+### Working with the .csv template
 
+You can copy the csv template below:
 
+``` csv
+Name (required),Expansion,MatchType- Exact/Partial (required)
+```
 
+In the CSV template, enter the following information about the topics you want to exclude:
 
+- **Name**: Type the name of the topic you want to exclude. There are two ways to do this:
+    - Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).
+    - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
+- **Stands for (optional)**: If you want to exclude an acronym, type the words the acronym stands for.
+- **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.
 
-
-
-
-
-
+    ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
 
 ## See also
 
+[Manage topic visibility in Microsoft 365](topic-experiences-knowledge-rules.md)
 
+[Manage topic permissions in Microsoft 365](topic-experiences-user-permissions.md)
 
-  
-
-
-
-
-
-
+[Change the name of the topic center in Microsoft 365](topic-experiences-administration.md)
