@@ -47,7 +47,7 @@ Additional capabilities are available when you install the Azure Information Pro
 
 ### Sensitivity label capabilities in Word, Excel, and PowerPoint
 
-The columns for each operating system list the minimum Office version required for each capability.
+The numbers listed are for the minimum Office application version required for each capability.
 
 |Capability                                                                                                        |Windows |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
@@ -72,7 +72,7 @@ Currently, doesn't include justification text to remove a label or lower the cla
 
 ### Sensitivity label capabilities in Outlook
 
-The columns for each operating system list the minimum Office version required for each capability.
+The numbers listed are for the minimum Office application version required for each capability.
 
 |Capability                                                                                                        |Outlook for Windows |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
