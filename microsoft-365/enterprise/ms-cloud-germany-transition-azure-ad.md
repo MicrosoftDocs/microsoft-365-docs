@@ -67,10 +67,10 @@ An application could be any of the following:
 
 5. Update environment parameters to be `AzurePublic` (instead of `AzureGermany`) in administrative tools and scripts for:
 
-    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
-    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
-    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
-    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)
+    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview)
+    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?)
+    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
  
 **What about applications that I publish?**
 
