@@ -25,7 +25,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
 # Create DNS records at Freenom for Microsoft
 
-[Check the Domains FAQ ](../setup/domains-faq.md) if you don't find what you're looking for. 
+[Check the Domains FAQ ](../setup/domains-faq.yml) if you don't find what you're looking for. 
   
 > [!CAUTION]
 > The Freenom website doesn't support SRV records, which means that several Skype for Business Online and Outlook Web App features won't work. No matter which Microsoft plan you use, there are significant service limitations, and you may want to switch to a different DNS hosting provider. 

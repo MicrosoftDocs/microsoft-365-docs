@@ -13,7 +13,6 @@ ms.collection:
 ms.custom: 
 f1.keywords: NOCSH
 ROBOTS: NOINDEX
-
 ---
 
 # Microsoft 365 Foundation Solutions Overview

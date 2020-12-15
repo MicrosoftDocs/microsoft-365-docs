@@ -186,7 +186,7 @@ Here's more information about exporting search results.
 
   - You can export a maximum of 2 TB of data from a single Content Search. If the search results are larger than 2 TB, consider using date ranges or other types of filters to decrease the total size of the search results.
   
-  - Your organization can export a maximum of 2 TB of data during a single day.
+  - Your organization can export a maximum of 2 TB of data during a single day. The quota will reset daily at 12:00AM UTC.
   
   - You can have a maximum of 10 exports running at the same time within your organization.
 

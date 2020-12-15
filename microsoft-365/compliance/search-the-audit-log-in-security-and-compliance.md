@@ -107,25 +107,25 @@ Be sure to read the following items before you start searching the audit log.
 
   |Microsoft 365 service or feature|30 minutes|24 hours|
   |:-----|:-----:|:-----:|
-  |Defender for Office 365 and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory (user login events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Azure Active Directory (admin events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Data Loss Prevention|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |eDiscovery|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange Online|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Microsoft Project|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Power BI|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Security & Compliance Center|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sensitivity labels||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |SharePoint Online and OneDrive for Business|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Workplace Analytics|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Defender for Office 365 and Threat Intelligence|![Check mark](../media/checkmark.png)||
+  |Azure Active Directory (user login events)||![Check mark](../media/checkmark.png)|
+  |Azure Active Directory (admin events)||![Check mark](../media/checkmark.png)|
+  |Data Loss Prevention|![Check mark](../media/checkmark.png)||
+  |Dynamics 365 CRM||![Check mark](../media/checkmark.png)|
+  |eDiscovery|![Check mark](../media/checkmark.png)||
+  |Exchange Online|![Check mark](../media/checkmark.png)||
+  |Microsoft Power Automate||![Check mark](../media/checkmark.png)|
+  |Microsoft Project|![Check mark](../media/checkmark.png)||
+  |Microsoft Stream|![Check mark](../media/checkmark.png)||
+  |Microsoft Teams|![Check mark](../media/checkmark.png)||
+  |Power Apps||![Check mark](../media/checkmark.png)|
+  |Power BI|![Check mark](../media/checkmark.png)||
+  |Security & Compliance Center|![Check mark](../media/checkmark.png)||
+  |Sensitivity labels||![Check mark](../media/checkmark.png)|
+  |SharePoint Online and OneDrive for Business|![Check mark](../media/checkmark.png)||
+  |Workplace Analytics|![Check mark](../media/checkmark.png)||
+  |Yammer||![Check mark](../media/checkmark.png)||
+  |Microsoft Forms|![Check mark](../media/checkmark.png)|
   ||||
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).
