@@ -30,6 +30,7 @@ The resources in this section help you learn more about what Topic experiences i
 |:-----|:-----|
 |Learn more about document understanding|[Topic Experiences overview](topic-experiences-overview.md)|
 |Learn how topics are discovered and created by AI|[Topic Experiences discovery](topic-experiences-discovery.md)|
+|Learn about topic security|[Topic Experiences security and privacy](topic-experiences-security-privacy.md)|
 
 
 ## Adoption
@@ -40,14 +41,16 @@ Learn more about how to use and implement Topic Experiences in your organization
 |:-----|:-----|
 |Learn how to start planning to use Topic Experiences. |[Get started](topics-adoption-getstarted.md)<br><br>|  
 
-## Set up Topic Experiences
+## Set up and administration
 
 The resources in this section help your admin in your organization to set up and configure Microsoft SharePoint Syntex in your Microsoft 365 environment.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|xx|[xx](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding)|
-|xx|[xx](https://docs.microsoft.com/microsoft-365/contentunderstanding/image-tagging)|
+|Learn how to set up and configure Topic Experiences|[Set up Topic Experiences](set-up-topic-experiences.md)|
+|Learn how to configure user permissions|[Manage topic permissions](topic-experiences-user-permissions.md)|
+|Learn how manage who can view topics|[Manage topic visibility](topic-experiences-knowledge-rules.md)|
+|Learn how to manage your topic discovery settings|[Manage topic discovery](topic-experiences-discovery.md)|
 
 ## Set started with topics
 

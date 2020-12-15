@@ -2,10 +2,10 @@
       items: 
         - name: Topic experiences overview
           href: topic-experiences-overview.md 
+        - name: Topic experiences discovery and curation
+          href: topic-experiences-discovery-curation.md           
         - name: Topic experiences roles 
           href: topic-experiences-roles.md 
-        - name: Topic experiences discovery 
-          href: topic-experiences-discovery.md
         - name: Get your environment ready 
           href: topic-experiences-get-ready.md           
 
