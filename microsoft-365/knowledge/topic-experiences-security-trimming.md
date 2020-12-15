@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: enabler-strategic
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Overview of the knowledge management in Project Cortex."
+description: "Overview of how security is used to view topics."
 ---
 
 # Topic Experiences security trimming (Preview)
