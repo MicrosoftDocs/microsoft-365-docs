@@ -65,8 +65,6 @@ On the Manage Topics page, the topic dashboard shows topics that were identified
 
 ## Create or edit a topic
 
-<Note to CJ:  Not sure how this fits in. Knowledge managers can select a topic in the dashboard, and click Edit in the toolbar menu to edit it. Regular users don't see this at all. If you are only a contributor, what does your topic center menu look like?  I'm assuming they don't see the manage topics tab.  How do they select and edit topics? >
-
 If you have **Create and edit topics** permissions, you will be able to:
 
 - [Edit existing topics](edit-a-topic.md): You can make changes to existing topic pages that were created through discovery.
