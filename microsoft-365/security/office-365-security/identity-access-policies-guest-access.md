@@ -39,7 +39,7 @@ The following table lists the policies you either need to create and update. The
 
 |Protection level|Policies|More information|
 |---|---|---|
-|**Baseline**|[Require MFA always for guest and external users](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure: <ul><li> For **Assignments > Users and groups > Include**, choose **Select users and groups**, and then select **All guest and external users**. </li><li> For **Assignments > Conditions > Sign-in**, leave all options unchecked to always enforce multi-factor authentication (MFA).</li>|
+|**Baseline**|[Require MFA always for guest and external users](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure: <ul><li>For **Assignments > Users and groups > Include**, choose **Select users and groups**, and then select **All guest and external users**.</li><li>For **Assignments > Conditions > Sign-in**, leave all options unchecked to always enforce multi-factor authentication (MFA).</li></ul>|
 ||[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modify this policy to exclude guest and external users.|
 ||[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modify this policy to exclude guest and external users.|
 
