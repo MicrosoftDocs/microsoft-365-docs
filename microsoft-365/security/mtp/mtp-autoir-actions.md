@@ -63,7 +63,7 @@ Pending actions can be reviewed and approved by using the [Action center](#revie
 
 ## Undo completed actions
 
-if you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. In the Action center, on the **History** tab, you can undo any of the following actions:  
+If you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. In the Action center, on the **History** tab, you can undo any of the following actions:  
 
 | Action source | Supported Actions |
 |:---|:---|
