@@ -161,7 +161,7 @@ For example, here are some additional steps that might be required for email and
 
 2. On the **Domains** page, select the domain and then choose **DNS Records**.
 
-3. Under **DNS settings**, select **Custom Records**, and then choose **New custom record**.
+3. Under **Manage DNS**, select **Custom Records**, and then choose **New custom record**.
 
 4. Select the type of DNS record you want to add, and type the information for the new record.
 

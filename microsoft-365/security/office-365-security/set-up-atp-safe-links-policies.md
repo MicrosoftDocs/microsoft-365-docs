@@ -30,6 +30,9 @@ Safe Links is a feature in [Microsoft Defender for Office 365](office-365-atp.md
 
 There's no built-in or default Safe Links policy. To get Safe Links scanning of URLs, you need to create one or more Safe Links policies as described in this article.
 
+> [!NOTE]
+> You configure the global settings for Safe Links protection **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
+
 You can configure Safe Links policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Microsoft Defender for Office 365 add-on subscriptions).
 
 The basic elements of a Safe Links policy are:
@@ -44,9 +47,6 @@ The difference between these two elements isn't obvious when you manage Safe Lin
 - When you remove a Safe Links policy, the safe links rule and the associated safe links policy are removed.
 
 In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) section later in this article.
-
-> [!NOTE]
-> You configure the global settings for Safe Links protection **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
 ## What do you need to know before you begin?
 
@@ -173,7 +173,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
    - Move the toggle to the left to disable the policy: ![Turn policy off](../../media/scc-toggle-off.png).
 
-   - Move the toggle to the right to enable the policy: ![Turn policy on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - Move the toggle to the right to enable the policy: ![Turn policy on](../../media/scc-toggle-on.png).
 
 ### Set the priority of Safe Links policies
 
