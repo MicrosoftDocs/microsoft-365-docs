@@ -286,7 +286,7 @@
             href: ms-cloud-germany-transition-add-experience.md
           - name: Additional information
             items: 
-            - name: Azure Active Directory
+            - name: Azure AD
               href: ms-cloud-germany-transition-azure-ad.md
             - name: Devices
               href: ms-cloud-germany-transition-add-devices.md
