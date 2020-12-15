@@ -28,13 +28,17 @@ While all licensed users who can view topics will have access to the Topic cente
 
 The Topic center is created during Topic Experiences setup. After setup completes, an admin can find the URL on the [Topic center management page](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings).
 
-1. In the Microsoft 365 admin center, select **Setup** in the navigation pane, and in the **Organizational Knowledge** section, select **Connect people to knowledge**.
 
-   ![Connect people to knowledge](../media/knowledge-management/manage-connect-people-to-knowledge.png) </br>
+1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
+2. On the **Services** tab, click **Knowledge network**.
 
-2. On the **Connect people to knowledge** page, in the **At a glance** section, see **Topic center address** for the site URL.
- 
-   ![Topic Center URL](../media/knowledge-management/topic-center-url-glance.png) </br>
+    ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) </br>
+
+3. Select the **Topic center** tab. Under **Site address** is a link to your Topic center.
+
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) </br>
+
+
 
 ## Home page
 
