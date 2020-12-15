@@ -72,16 +72,16 @@ The following table lists the eDiscovery-related RBAC roles in the Security & Co
   
 |**Role**|**Compliance Administrator**|**eDiscovery Manager & Administrator**|**Organization Management**|**Reviewer**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Case Management <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Communication <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Compliance Search <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Custodian <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Export <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Preview <br/>  | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|RMS Decrypt <br/>  ||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|Search And Purge <br/> | <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
+|Case Management <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> |
+|Communication <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Compliance Search <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> |
+|Custodian <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Export <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> |
+|Preview <br/>  | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Review <br/>  | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> |
+|RMS Decrypt <br/>  ||![Check mark](../media/checkmark.png) <br/> |||
+|Search And Purge <br/> | <br/> | <br/> |![Check mark](../media/checkmark.png)           <br/> | <br/> |
 ||||
   
 The following sections describe each of the eDiscovery-related RBAC roles listed in the previous table.
