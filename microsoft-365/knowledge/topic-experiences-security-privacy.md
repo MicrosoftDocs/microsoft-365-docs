@@ -21,7 +21,7 @@ Setting up the knowledge network does not modify any existing access controls on
 
 This article describes how topic experiences works from a security perspective and the options that knowledge administrators and knowledge managers have to control topic visibility. Read this article as part of your [planning for topic experiences](plan-topic-experiences.md).
 
-You should be familiar with [Topic experiences](knowledge-management-overview.md), the [topic center](topic-center-overview.md), and how to [work with topics in the topic center](work-with-topics.md) before you read this article.
+You should be familiar with [Topic experiences](knowledge-management-overview.md), the [topic center](topic-center-overview.md), and how to [work with topics in the topic center](manage-topics.md) before you read this article.
 
 ## What users can see in topics
 
