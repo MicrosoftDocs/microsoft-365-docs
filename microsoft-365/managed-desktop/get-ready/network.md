@@ -39,7 +39,7 @@ The Microsoft Managed Desktop URL is used for anything our service runs on the c
 Microsoft service  | URLs required on allow list 
 --- | ---
 Microsoft Managed Desktop | prod-mwaas-services-customerapi.azurewebsites.net
-Get Help | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+Get Help | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com
 Quick Assist | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com
 Microsoft Support and Recovery Assistant | \*.apibasic.diagnostics.office.com  <br>\*.api.diagnostics.office.com
  
