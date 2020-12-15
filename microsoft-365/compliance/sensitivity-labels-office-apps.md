@@ -47,7 +47,7 @@ Additional capabilities are available when you install the Azure Information Pro
 
 For iOS and Android: Where these have a minimum version listed, the sensitivity label capability is also supported with the [Office app](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
-|Capability                                                                                                        |Office version: Windows |Office version: Mac |iOS    |Android      |Web                                                         |
+|Capability                                                                                                        |Office version: <br />Windows |Office version: <br />Mac |Operating system version: <br />iOS    |Operating system version: <br />Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manually apply, change, or remove label](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -70,7 +70,7 @@ Currently, doesn't include justification text to remove a label or lower the cla
 
 ### Sensitivity label capabilities in Outlook
 
-|Capability                                                                                                        |Office version: Outlook for Windows |Office version: Outlook for Mac  |Outlook on iOS |Outlook on Android |Outlook on the web |
+|Capability                                                                                                        |Office version: <br />Outlook for Windows |Office version:<br /> Outlook for Mac  |Operating system version: <br />Outlook on iOS |Operating system version: <br />Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
 |[Manually apply, change, or remove label](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
