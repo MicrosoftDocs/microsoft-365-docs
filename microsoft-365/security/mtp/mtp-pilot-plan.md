@@ -1,6 +1,6 @@
 ---
-title: Planning your pilot Microsoft Threat Protection project 
-description: Plan your pilot Microsoft Threat Protection project with stakeholders to manage expectations and ensure successful outcome.
+title: Planning your pilot Microsoft 365 Defender project 
+description: Plan your pilot Microsoft 365 Defender project with stakeholders to manage expectations and ensure successful outcome.
 keywords: Microsoft Threat Protection pilot, plan pilot Microsoft Threat Protection project, evaluate Microsoft Threat Protection in production, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,52 +22,17 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Planning your pilot Microsoft Threat Protection project 
+# Planning your pilot Microsoft 365 Defender project 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft Threat Protection
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Plan your pilot Microsoft Threat Protection project" />
-      <br/>Plan</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Prepare your Microsoft Threat Protection trial lab or pilot environment" />
-      <br/>Prepare</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Run your Microsoft Threat Protection attack simulations" />
-     <br/>Simulate attack</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Close and summarize your Microsoft Threat Protection pilot" />
-     <br/>Close and summarize</a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
+- Microsoft 365 Defender
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|![Planning](../../media/phase-diagrams/1-planning.png)<br/>Planning|[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparation](prepare-mtpeval.md) | [![Simulate attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simulate attack](mtp-pilot-simulate.md) | [![Close and summarize](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Close and summarize](mtp-pilot-close.md)|
+|--|--|--|--|
+|*You are here!*| | | |
 
 You're currently in the planning phase.
 
@@ -86,7 +51,7 @@ The scope of the pilot will determine how broad the test will be, based on your 
 - Production environment with Microsoft 365, Azure, Active Directory services, endpoints, and servers
 
 >[!NOTE]
->If you don’t have the full licenses yet, you can get trial licenses to [evaluate Microsoft Threat Protection](https://aka.ms/mtp-trial-lab) – plan, prepare, setup, configure, and run your pilot project. Your stakeholders will play a big role in helping facilitate the process from start to finish.
+>If you don’t have the full licenses yet, you can get trial licenses to [evaluate Microsoft 365 Defender](https://aka.ms/mtp-trial-lab) – plan, prepare, setup, configure, and run your pilot project. Your stakeholders will play a big role in helping facilitate the process from start to finish.
 
 The types of operating systems to be evaluated should also be defined based on the organizational makeup. This may include the following: [Mac endpoints](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), [Linux Servers](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), [Windows 10 endpoints](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
 
@@ -105,11 +70,11 @@ From the list of use cases, you can start to create requirements. Requirements i
 
 ## Test plan
 
-Depending on the requirements, different methods of testing may be appropriate. For instance, if the requirement is to evaluate the efficacy of Automated Remediation, the test plan needs to include steps to generate the behavior(s) that would trigger an automated remediation action within Microsoft Threat Protection. If the requirement is to detect a particular behavior or attack, then the test may involve more steps. The point is to have a plan in place to accurately test against your requirements.
+Depending on the requirements, different methods of testing may be appropriate. For instance, if the requirement is to evaluate the efficacy of Automated Remediation, the test plan needs to include steps to generate the behavior(s) that would trigger an automated remediation action within Microsoft 365 Defender. If the requirement is to detect a particular behavior or attack, then the test may involve more steps. The point is to have a plan in place to accurately test against your requirements.
 
 ## Success criteria
 
-Success criteria is ultimately the bar set to measure against what you are testing. Whether you are testing Microsoft Threat Protection (or any other technology for that matter) against other tools or by itself, there must be some quantifiable criteria to determine the value the tool provides. Based on the scope, requirements, and testing plan, the success criteria will determine how to score the test. This should be less of a pass or fail and more of a weighted scoring based on your needs. For example, to be successful, a tool may need to score above 80% in certain critical areas you identify.
+Success criteria is ultimately the bar set to measure against what you are testing. Whether you are testing Microsoft 365 Defender (or any other technology for that matter) against other tools or by itself, there must be some quantifiable criteria to determine the value the tool provides. Based on the scope, requirements, and testing plan, the success criteria will determine how to score the test. This should be less of a pass or fail and more of a weighted scoring based on your needs. For example, to be successful, a tool may need to score above 80% in certain critical areas you identify.
 
 ## Scorecard
 
@@ -117,12 +82,12 @@ One way to bring all elements of your plan together can be to create a scorecard
 
 | Use case | Requirements | Configuration requirements | Test plan | Expected outcome | Test status | Score | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Incident management|-	Microsoft Threat Protection	</br></br>- Azure ATP </br></br>- Microsoft Defender ATP </br></br>- Microsoft Cloud App Security (optional)|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Investigate the incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Investigators can understand the scope and impact of the incident and manage the incident||||
-|AutoIR|-	Microsoft Threat Protection </br></br>- Azure ATP </br></br>- Microsoft Defender ATP |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Automated investigation](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Alerts and incidents are automatically remediated by Microsoft Threat Protection||||
-|Advanced hunting|-	Microsoft Threat Protection </br></br>- Microsoft Defender ATP </br></br>- Office 365 ATP	|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details|[Advanced hunting scenario](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Investigators can find data through advanced hunting, pivoting to impacted entities, and by creating custom detections||||
+|Incident management|-	Microsoft 365 Defender	</br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint </br></br>- Microsoft Cloud App Security (optional)|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Investigate the incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Investigators can understand the scope and impact of the incident and manage the incident||||
+|AutoIR|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Automated investigation](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Alerts and incidents are automatically remediated by Microsoft 365 Defender||||
+|Advanced hunting|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Endpoint </br></br>-Microsoft Defender for Office 365	|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details|[Advanced hunting scenario](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |Investigators can find data through advanced hunting, pivoting to impacted entities, and by creating custom detections||||
 
 
 
 ## Next step
-|![Preparation phase](../../media/mtp/prep.png) <br>[Preparation phase](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection pilot environment
+|![Preparation phase](../../media/mtp/prep.png) <br>[Preparation phase](prepare-mtpeval.md) | Prepare your Microsoft 365 Defender pilot environment
 |:-------|:-----|

@@ -32,7 +32,7 @@ Each of the roles below can be assigned to provide different levels of access:
 |Global Administrator     | Admins with this role will have **read and write permissions to all features** in the Microsoft Managed Desktop Admin portal.         |
 |Global Reader     | Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal.         |
 |Intune Service Administrator     |  Admins with this role will have **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.       |
-|Service Support Administrator     | Admins with this role will have **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.         |
+|Service Support Administrator     | Admins with this role will have **read-only permissions to features not related to security** and **write permissions to manage support requests** in the Microsoft Managed Desktop Admin portal.         |
 |Security Admin | Admins with this role will have **read-only permissions to all features** and **write permissions for security related features** in Microsoft Managed Desktop in the Admin portal. |
 |Security Reader |Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal.|
 
@@ -54,7 +54,7 @@ Each of the roles below can be assigned to provide different levels of access:
 If you need help assigning Azure Active Directory roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 For easy management of the built-in roles, a security group has been created for each custom role (for example, “Modern Workplace Roles – Security Manager”). To assign users to one of the security groups, follow these steps:
-1.	Go the Azure portal and navigate to the Azure Active Directory blade.
+1.	Go the Microsoft Endpoint Manager portal
 2.	Select Groups on the left-hand side.
 3.	Search for Modern Workplace Roles, and then select the group associated with the role you want to assign. 
 4.	Select Members on the left-hand side, and then select + Add members on the command bar.

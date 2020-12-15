@@ -1,5 +1,5 @@
 ---
-title: Safe Documents in Office 365 ATP
+title: Safe Documents in Microsoft Defender for Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -22,11 +22,11 @@ description: "Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Safe Documents is a feature in Microsoft 365 E5 or Microsoft 365 E5 Security that uses [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to scan documents and files that are opened in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
+Safe Documents is a feature in Microsoft 365 E5 or Microsoft 365 E5 Security that uses [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to scan documents and files that are opened in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
 ## What do you need to know before you begin?
 
-- Safe Documents is available only to users with *Microsoft 365 E5* or *Microsoft 365 E5 Security* licenses. These licenses are not included in Office 365 Advanced Threat Protection (ATP) plans.
+- Safe Documents is available only to users with *Microsoft 365 E5* or *Microsoft 365 E5 Security* licenses. These licenses are not included in Microsoft Defender for Office 365 plans.
 
 - Safe Documents is supported in Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus) version 2004 or later.
 
@@ -34,11 +34,20 @@ Safe Documents is a feature in Microsoft 365 E5 or Microsoft 365 E5 Security tha
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can perform the procedures in this topic. To enable and configure Safe Documents, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+  - To configure Safe Documents settings, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - For read-only access to Safe Documents settings, you need to be a member of the **Global Reader** or **Security Reader** role groups.
+
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+  **Notes**:
+
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 ### How does Microsoft handle your data?
 
-To keep you protected, Safe Documents sends files to the [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) cloud for analysis. Details on how Microsoft Defender ATP handles your data can be found here: [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+To keep you protected, Safe Documents sends files to the [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) cloud for analysis. Details on how Microsoft Defender for Endpoint handles your data can be found here: [Microsoft Defender for Endpoint data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
 Files sent by Safe Documents are not retained in Defender beyond the time needed for analysis (typically, less than 24 hours).
 
@@ -48,13 +57,13 @@ Files sent by Safe Documents are not retained in Defender beyond the time needed
 
 2. In the **Global settings** fly out that appears, configure the following settings:
 
-   - **Turn on Safe Documents for Office clients**: Move the toggle to the right to turn on the feature: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - **Turn on Safe Documents for Office clients**: Move the toggle to the right to turn on the feature: ![Toggle on](../../media/scc-toggle-on.png).
 
    - **Allow people to click through Protected View even if Safe Documents identifies the file as malicious**: We recommend that you leave this option turned off (leave the toggle to the left: ![Toggle off](../../media/scc-toggle-off.png)).
 
    When you're finished, click **Save**.
 
-   ![Safe Documents settings after selecting Global settings on the ATP Safe Attachments page.](../../media/safe-docs.png)
+   ![Safe Documents settings after selecting Global settings on the Safe Attachments page.](../../media/safe-docs.png)
 
 ### Use Exchange Online PowerShell to configure Safe Documents
 

@@ -1,5 +1,5 @@
 ---
-title: Turn on Office 365 ATP - SharePoint, OneDrive, & Teams
+title: Turn on Microsoft Defender for Office 365 - SharePoint, OneDrive, & Teams
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Microsoft Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 This article contains the steps for enabling and configuring ATP for SharePoint, OneDrive, and Microsoft Teams.
 
@@ -45,7 +45,7 @@ This article contains the steps for enabling and configuring ATP for SharePoint,
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, and click **Global settings**.
 
-2. In the **Global settings** fly out that appears, go to the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting. Move the toggle to the right ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
+2. In the **Global settings** fly out that appears, go to the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting. Move the toggle to the right ![Toggle on](../../media/scc-toggle-on.png) to turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
 
    When you're finished, click **Save**.
 

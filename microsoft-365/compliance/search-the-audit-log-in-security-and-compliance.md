@@ -107,25 +107,25 @@ Be sure to read the following items before you start searching the audit log.
 
   |Microsoft 365 service or feature|30 minutes|24 hours|
   |:-----|:-----:|:-----:|
-  |Advanced Threat Protection and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory (user login events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Azure Active Directory (admin events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Data Loss Prevention|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |eDiscovery|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange Online|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Microsoft Project|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Power BI|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Security & Compliance Center|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sensitivity labels||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |SharePoint Online and OneDrive for Business|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Workplace Analytics|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Defender for Office 365 and Threat Intelligence|![Check mark](../media/checkmark.png)||
+  |Azure Active Directory (user login events)||![Check mark](../media/checkmark.png)|
+  |Azure Active Directory (admin events)||![Check mark](../media/checkmark.png)|
+  |Data Loss Prevention|![Check mark](../media/checkmark.png)||
+  |Dynamics 365 CRM||![Check mark](../media/checkmark.png)|
+  |eDiscovery|![Check mark](../media/checkmark.png)||
+  |Exchange Online|![Check mark](../media/checkmark.png)||
+  |Microsoft Power Automate||![Check mark](../media/checkmark.png)|
+  |Microsoft Project|![Check mark](../media/checkmark.png)||
+  |Microsoft Stream|![Check mark](../media/checkmark.png)||
+  |Microsoft Teams|![Check mark](../media/checkmark.png)||
+  |Power Apps||![Check mark](../media/checkmark.png)|
+  |Power BI|![Check mark](../media/checkmark.png)||
+  |Security & Compliance Center|![Check mark](../media/checkmark.png)||
+  |Sensitivity labels||![Check mark](../media/checkmark.png)|
+  |SharePoint Online and OneDrive for Business|![Check mark](../media/checkmark.png)||
+  |Workplace Analytics|![Check mark](../media/checkmark.png)||
+  |Yammer||![Check mark](../media/checkmark.png)||
+  |Microsoft Forms|![Check mark](../media/checkmark.png)|
   ||||
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).
@@ -135,8 +135,7 @@ Be sure to read the following items before you start searching the audit log.
 ## Search the audit log
 
 > [!NOTE]
-> We're currently investigating an issue where Azure AD activities are not available in the audit log search tool. This issue started around October 26, 2020. 
-These activites include Azure AD user administration activities, group administration activities, application administration activities, role administration activities, and directory administration activities. We'll provide an update when the issue is resolved.
+> There was an issue with Azure AD activities being unavailable in the audit log search tool from October 22, 2020 to November 6, 2020. These activites include Azure AD user administration activities, group administration activities, application administration activities, role administration activities, and directory administration activities. The missing events for the period of impact will be available over the next few days, and is expected to take no later than November 20, 2020 to complete. In some cases, customers might notice duplicate event data for events generated between October 26, 2020 and November 05, 2020.
     
 Here's the process for searching the audit log in Office 365.
 
@@ -434,7 +433,7 @@ The following table describes the file and page activities in SharePoint Online 
 |Deleted file|FileDeleted|User deletes a document from a site.|
 |Deleted file from recycle bin|FileDeletedFirstStageRecycleBin|User deletes a file from the recycle bin of a site.|
 |Deleted file from second-stage recycle bin|FileDeletedSecondStageRecycleBin|User deletes a file from the second-stage recycle bin of a site.|
-|Deleted record compliance policy label|ComplianceRecordDelete|A document that was marked as a record was deleted. A document is considered a record when a retention label that marks content as a record is applied to the document.|
+|Deleted file marked as a record|RecordDelete|A document or email that was marked as a record was deleted. An item is considered a record when a retention label that marks items as a record is applied to content.|
 |Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document to a site that's protected with a sensitivity label and the document has a higher priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled Confidential is uploaded to a site labeled General. <br/><br/> This event isn't triggered if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled General is uploaded to a site labeled Confidential. For more information about sensitivity label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).|
 |Detected malware in file|FileMalwareDetected|SharePoint anti-virus engine detects malware in a file.|
 |Discarded file checkout|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
@@ -944,9 +943,9 @@ The following table lists events that result from labeling activities for ShareP
 |:-----|:-----|:-----|
 |Applied sensitivity label to site|SensitivityLabelApplied|A sensitivity label was applied to a SharePoint or Teams site.|
 |Removed sensitivity label from site|SensitivityLabelRemoved|A sensitivity label was removed from a SharePoint or Teams site.|
-|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Office on the web or an autolabeling policy.|
-|Changed sensitivity label applied to file|FileSensitivityLabelChanged|A different sensitivity label was applied to a document by using Office on the web or an autolabeling policy.|
-|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web or an autolabeling policy.|
+|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
+|Changed sensitivity label applied to file|FileSensitivityLabelChanged|A different sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
+|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web, an auto-labeling policy, or by using the [Unlock-SPOSensitivityLabelEncryptedFile](https://docs.microsoft.com/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet.|
 ||||
 
 ### Retention policy and retention label activities
@@ -995,7 +994,7 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 **What are different Microsoft 365 services that are currently audited?**
 
-The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
+The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Defender for Office 365, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
 
 **What activities are audited by auditing service in Office 365?**
 

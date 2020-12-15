@@ -1,5 +1,5 @@
 ---
-title: Insider risk management
+title: Learn about insider risk management
 description: Learn how to help minimize risk in your organization with insider risk management in Microsoft 365.
 keywords: Microsoft 365, insider risk, risk management, compliance
 localization_priority: Normal
@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-compliance
 ---
 
-# Insider risk management in Microsoft 365
+# Learn about insider risk management in Microsoft 365
 
 Insider risk management is a compliance solution in Microsoft 365 that helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Insider risk policies allow you to define the types of risks to identify and detect in your organization, including acting on cases and escalating cases to Microsoft Advanced eDiscovery if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.
 
@@ -141,7 +141,7 @@ User-to-user communications are often a source of inadvertent or malicious viola
 
 ## Intentional or unintentional security policy violations (preview)
 
-Users typically have a large degree of control when managing their devices in the modern workplace. This may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identity these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender Advanced Threat Protection (ATP) alerts to provide insights for security-related activities:
+Users typically have a large degree of control when managing their devices in the modern workplace. This may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identity these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender for Endpoint alerts to provide insights for security-related activities:
 
 - [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

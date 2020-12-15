@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Normal
@@ -32,9 +33,9 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the external collaboration settings to ensure that sharing with guests is not blocked.
+Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
 
 ![Screenshot of Azure Active Directory External collaboration Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -104,6 +105,8 @@ Check the site-level sharing settings to make sure that they allow the type of a
 
 Note that the site cannot be shared with unauthenticated people (**Anyone** setting), but individual files and folders can.
 
+You can also use [sensitivity labels to control external sharing settings for SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
 ![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
@@ -123,7 +126,7 @@ To invite internal users to a group
 3. Click **Add members**.
 4. Type the names or email addresses of the users that you want to invite to the site, and then click **Save**.
 
-Guest users can't be added from the site. You need to add them using Outlook on the web. Therefore, as a prerequisite to add and invite guests to a group, click the URL of the site in the **URL**  column to navigate to the site-specific page. From this page, click the **App launcher** icon and select **Outlook**. This is the screen from which you can invite guests into a group, for which procedure is described below.
+Guests can't be added from the site. You need to add them using Outlook on the web. Therefore, as a prerequisite to add and invite guests to a group, click the URL of the site in the **URL**  column to navigate to the site-specific page. From this page, click the **App launcher** icon and select **Outlook**. This is the screen from which you can invite guests into a group, for which procedure is described below.
 
 To invite guests to a group
 1. Under **Groups**, click the group to which you want to invite guests.

@@ -39,7 +39,9 @@ You can view the user activity in the Teams report by choosing the **User activi
 
 Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. The exported format for **audio time**, **video time** and **screen share time** follows ISO8601 duration format.
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
+
+To ensure data quality, we perform daily data validation checks for the past three days and will be filling any gaps detected. You may notice differences in historical data during the process.
 
 |Item|Description|
 |:-----|:-----|
@@ -54,5 +56,5 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Meetings organized adhoc <br/> |The number of meetings not scheduled on the calendar that the user organized during the specified time period. <br/>|
 |Meetings organized scheduled  <br/> |The number of scheduled meetings  a user organized during the specified time period.  <br/> |
 |Is licensed |Selected if the user is licensed to use Teams.|
-|Other activity|the User is considered active but has a zero value for the Chat Messages, 1:1 calls, Channel Messages, Total Meetings, and Meetings organized metric values. Examples actions are when a user opens a Channel Message post but does not reply or when a Private message is received and it is read but not responded to. |
+|Other activity|The User is active but has performed other activities than exposed action types offered in the report (sending or replying to channel messages and chat messages, scheduling or participating in 1:1 calls and meetings). Examples actions are when a user changes the Teams status or the Teams status message or opens a Channel Message post but does not reply. |
 |||

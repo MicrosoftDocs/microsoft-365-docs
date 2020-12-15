@@ -22,48 +22,48 @@ ms.collection:
 
 # Common identity and device access policies
 
-This article describes the common recommended policies for securing access to Microsoft 365 cloud services, including on-premises applications published with Azure Active Directory (Azure AD) Application Proxy. 
+This article describes the common recommended policies for securing access to Microsoft 365 cloud services, including on-premises applications published with Azure Active Directory (Azure AD) Application Proxy.
 
-This guidance discusses how to deploy the recommended policies in a newly-provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your preproduction and production environments. Your newly provisioned environment can be cloud-only or hybrid to reflect your evaluation needs.  
+This guidance discusses how to deploy the recommended policies in a newly-provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your preproduction and production environments. Your newly provisioned environment can be cloud-only or hybrid to reflect your evaluation needs.
 
-## Policy set 
+## Policy set
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where you configure these policies.
 
 [![Common policies for configuring identity and device access](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 Here's a one-page PDF summary with links to the individual policies:
 
-[![Thumb image for Identity and device protection for Microsoft 365 handout](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
+[![Thumb image for Identity and device protection for Microsoft 365 handout](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
-The rest of this article describes how to configure these policies. 
+The rest of this article describes how to configure these policies.
 
->[!Note]
->Requiring the use of multi-factor authentication (MFA) is recommended before enrolling devices in Intune to assure that the device is in the possession of the intended user. You must enroll devices in Intune before you can enforce device compliance policies.
->
+> [!NOTE]
+> Requiring the use of multi-factor authentication (MFA) is recommended before enrolling devices in Intune to assure that the device is in the possession of the intended user. You must enroll devices in Intune before you can enforce device compliance policies.
 
 To give you time to accomplish these tasks, we recommend implementing the baseline policies in the order listed in this table. However, the MFA policies for sensitive and highly regulated levels of protection can be implemented at any time.
 
 |Protection level|Policies|More information|
-|:---------------|:-------|:----------------|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
-|        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass Conditional Access policies, so it's important to block these.|
-|        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|
-|        |[Apply app data protection policies](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|
-|        |[Require approved apps and app protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.|
-|        |[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform.|
-|        |[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs using Windows or MacOS.|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)| |
-|         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or MacOS) and phones or tablets (iOS, iPadOS, or Android).|
+|---|---|---|
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)||
+||[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass Conditional Access policies, so it's important to block these.|
+||[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|
+||[Apply app data protection policies](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|
+||[Require approved apps and app protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.|
+||[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform.|
+||[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs using Windows or MacOS.|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)||
+||[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or MacOS) and phones or tablets (iOS, iPadOS, or Android).|
 |**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|
-| | | |
+|
 
 ## Assigning policies to groups and users
 
-Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, baseline protection applies to everybody in the organization. A user who is included for both baseline and sensitive protection will have all the baseline policies applied plus the sensitive policies. Protection is cumulative and the most restrictive policy is enforced. 
+Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, baseline protection applies to everybody in the organization. A user who is included for both baseline and sensitive protection will have all the baseline policies applied plus the sensitive policies. Protection is cumulative and the most restrictive policy is enforced.
 
-A recommended practice is to create an Azure AD group for Conditional Access exclusion. Add this group to all of your Conditional Access policies in the **Exclude** value of the **Users and groups** setting in the **Assignments** section. This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended. 
+A recommended practice is to create an Azure AD group for Conditional Access exclusion. Add this group to all of your Conditional Access policies in the **Exclude** value of the **Users and groups** setting in the **Assignments** section. This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended.
 
 Here's an example of group assignment and exclusions for requiring MFA.
 
@@ -81,7 +81,7 @@ Here are the results:
 
   In this case, members of the Top Secret Project X group match both the baseline and highly-regulated Conditional Access policies. The access controls for both policies are combined. Because the access control for the highly-regulated Conditional Access policy is more restrictive, it is used.
 
-Be careful when applying higher levels of protection to groups and users. For example, members of the Top Secret Project X group will be required to use MFA every time they sign in, even if they are not working on the highly-regulated content for Project X.  
+Be careful when applying higher levels of protection to groups and users. For example, members of the Top Secret Project X group will be required to use MFA every time they sign in, even if they are not working on the highly-regulated content for Project X.
 
 All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint.
 
@@ -103,33 +103,33 @@ The following tables describes the Conditional Access policy settings to require
 In the **Assignments** section:
 
 |Setting|Properties|Values|Notes|
-|:---|:---------|:-----|:----|
-|Users and groups|Include| **Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts. |Start with the group that includes pilot user accounts.|
-||Exclude| **Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
-|Cloud apps or actions| **Cloud apps > Include** | **Select apps**: Select the apps you want this policy to apply to. For example, select Exchange Online.||
-|Conditions| | |Configure conditions that are specific to your environment and needs.|
+|---|---|---|---|
+|Users and groups|Include|**Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts.|Start with the group that includes pilot user accounts.|
+||Exclude|**Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
+|Cloud apps or actions|**Cloud apps > Include**|**Select apps**: Select the apps you want this policy to apply to. For example, select Exchange Online.||
+|Conditions|||Configure conditions that are specific to your environment and needs.|
 ||Sign-in risk||See the guidance in the following table.|
-|||||
+|
 
-**Sign-in risk condition settings**
+### Sign-in risk condition settings
 
 Apply the risk level settings based on the protection level you are targeting.
 
 |Level of protection|Risk level values needed|Action|
-|:---------|:-----|:----|
+|---|---|---|
 |Baseline|High, medium|Check both.|
 |Sensitive|High, medium, low|Check all three.|
-|Highly regulated| |Leave all options unchecked to always enforce MFA.|
-||||
+|Highly regulated||Leave all options unchecked to always enforce MFA.|
+|
 
 In the **Access controls** section:
 
 |Setting|Properties|Values|Action|
-|:---|:---------|:-----|:----|
-|Grant|**Grant access**| | Select |
-|||**Require Multi-factor authentication**| Check |
-||**Require all the selected controls** ||Select|
-|||||
+|---|---|---|---|
+|Grant|**Grant access**||Select|
+|||**Require Multi-factor authentication**|Check|
+||**Require all the selected controls**||Select|
+|
 
 Choose **Select** to save the **Grant** settings.
 
@@ -146,20 +146,20 @@ See [this article](../../enterprise/microsoft-365-client-support-modern-authenti
 In the **Assignments** section:
 
 |Setting|Properties|Values|Notes|
-|:---|:---------|:-----|:----|
-|Users and groups|Include| **Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts. |Start with the group that includes pilot user accounts.|
-||Exclude| **Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
-|Cloud apps or actions|**Cloud apps > Include**| **Select apps**: Select the apps corresponding to the clients that do not support modern authentication.||
-|Conditions| **Client apps** | Choose **Yes** for **Configure** <br> Clear the check marks for **Browser** and **Mobile apps and desktop clients** | |
-||||
+|---|---|---|---|
+|Users and groups|Include|**Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts.|Start with the group that includes pilot user accounts.|
+||Exclude|**Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
+|Cloud apps or actions|**Cloud apps > Include**|**Select apps**: Select the apps corresponding to the clients that do not support modern authentication.||
+|Conditions|**Client apps**|Choose **Yes** for **Configure** <p> Clear the check marks for **Browser** and **Mobile apps and desktop clients**||
+|
 
 In the **Access controls** section:
 
 |Setting|Properties|Values|Action|
-|:---|:---------|:-----|:----|
-|Grant|**Block access**| | Select |
-||**Require all the selected controls** ||Select|
-|||||
+|---|---|---|---|
+|Grant|**Block access**||Select|
+||**Require all the selected controls**||Select|
+|
 
 Choose **Select** to save the **Grant** settings.
 
@@ -178,18 +178,18 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 In the **Assignments** section:
 
 |Type|Properties|Values|Action|
-|:---|:---------|:-----|:----|
+|---|---|---|---|
 |Users|Include|**All users**|Select|
-|User risk| **High**||Select|
-|||||
+|User risk|**High**||Select|
+|
 
 In the second **Assignments** section:
 
-| Type | Properties | Values                  | Action |
-|:-----|:-----------|:------------------------|:------|
-| Access | **Allow access** |  | Select  |
-|      |     | **Require password change** | Check  |
-|||||
+|Type|Properties|Values|Action|
+|---|---|---|---|
+|Access|**Allow access**||Select|
+|||**Require password change**|Check|
+|
 
 Choose **Done** to save the **Access** settings.
 
@@ -201,32 +201,33 @@ Use this policy in conjunction with [Configure Azure AD password protection](htt
 
 ## Apply APP data protection policies
 
-App Protection Policies (APP) define which apps are allowed and the actions they can take with your organization's data. The choices available in APP enable organizations to tailor the protection to their specific needs. For some, it may not be obvious which policy settings are required to implement a complete scenario. To help organizations prioritize mobile client endpoint hardening, Microsoft has introduced taxonomy for its APP data protection framework for iOS and Android mobile app management. 
+App Protection Policies (APP) define which apps are allowed and the actions they can take with your organization's data. The choices available in APP enable organizations to tailor the protection to their specific needs. For some, it may not be obvious which policy settings are required to implement a complete scenario. To help organizations prioritize mobile client endpoint hardening, Microsoft has introduced taxonomy for its APP data protection framework for iOS and Android mobile app management.
 
-The APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level: 
+The APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level:
 
-- **Enterprise basic data protection** (Level 1) ensures that apps are protected with a PIN and encrypted and performs selective wipe operations. For Android devices, this level validates Android device attestation. This is an entry level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces IT and the user population to APP. 
-- **Enterprise enhanced data protection** (Level 2) introduces APP data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data. 
-- **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high risk data. 
+- **Enterprise basic data protection** (Level 1) ensures that apps are protected with a PIN and encrypted and performs selective wipe operations. For Android devices, this level validates Android device attestation. This is an entry level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces IT and the user population to APP.
+- **Enterprise enhanced data protection** (Level 2) introduces APP data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data.
+- **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high risk data.
 
-To see the specific recommendations for each configuration level and the minimum apps that must be protected, review [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
+To see the specific recommendations for each configuration level and the minimum apps that must be protected, review [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework).
 
 Using the principles outlined in [Identity and device access configurations](microsoft-365-policies-configurations.md), the Baseline and Sensitive protection tiers map closely with the Level 2 enterprise enhanced data protection settings. The Highly regulated protection tier maps closely to the Level 3 enterprise high data protection settings.
 
-|Protection level |App Protection Policy  |More information  |
-|---------|---------|---------|
-|Baseline     | [Level 2 enhanced data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
-|Sensitive     | [Level 2 enhanced data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.        |
-|Highly Regulated     | [Level 3 enterprise high data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.        |
+|Protection level|App Protection Policy|More information|
+|---|---|---|
+|Baseline|[Level 2 enhanced data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.|
+|Sensitive|[Level 2 enhanced data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.|
+|Highly Regulated|[Level 3 enterprise high data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.|
+|
 
 To create a new app protection policy for each platform (iOS and Android) within Microsoft Endpoint Manager using the data protection framework settings, you can:
 
-1. Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies). 
+1. Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies).
 2. Import the sample [Intune App Protection Policy Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
 
 ## Require approved apps and APP protection
 
-To enforce the APP protection policies you applied in Intune, you must create a Conditional Access policy to require approved client apps and the conditions set in the APP protection policies. 
+To enforce the APP protection policies you applied in Intune, you must create a Conditional Access policy to require approved client apps and the conditions set in the APP protection policies.
 
 Enforcing APP protection policies requires a set of policies described in in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). These policies are each included in this recommended set of identity and access configuration policies.
 
@@ -269,7 +270,7 @@ You must create a policy for each PC, phone, or tablet platform:
 - Windows 8.1 and later
 - Windows 10 and later
 
-To create device compliance policies, log in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) with your administrator credentials, and then navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
+To create device compliance policies, log in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) with your administrator credentials, and then navigate to **Devices** \> **Compliance policies** \> **Policies**. Select **Create Policy**.
 
 For device compliance policies to be deployed, they must be assigned to user groups. You assign a policy after you create and save it. In the admin center, select the policy and then select **Assignments**. After selecting the groups that you want to receive the policy, select **Save** to save that group assignment and deploy the policy.
 
@@ -282,11 +283,11 @@ The following settings are recommended for PCs running Windows 10 and later, as 
 For **Device health > Windows Health Attestation Service evaluation rules**, see this table.
 
 |Properties|Value|Action|
-|:---------|:-----|:----|
-|Require BitLocker|Require| Select |
-|Require Secure Boot to be enabled on the device|Require| Select |
-|Require code integrity|Require| Select |
-||||
+|---|---|---|
+|Require BitLocker|Require|Select|
+|Require Secure Boot to be enabled on the device|Require|Select|
+|Require code integrity|Require|Select|
+|
 
 For **Device properties**, specify appropriate values for operating system versions based on your IT and security policies.
 
@@ -295,35 +296,35 @@ For **Configuration Manager Compliance**, select **Require**.
 For **System security**, see this table.
 
 |Type|Properties|Value|Action|
-|:---|:---------|:-----|:----|
-|Password|Require a password to unlock mobile devices|Require| Select |
+|---|---|---|---|
+|Password|Require a password to unlock mobile devices|Require|Select|
 ||Simple passwords|Block|Select|
 ||Password type|Device default|Select|
 ||Minimum password length|6|Type|
-||Maximum minutes of inactivity before password is required|15|Type <br>This setting is supported for Android versions 4.0 and above or KNOX 4.0 and above. For iOS devices, it's supported for iOS 8.0 and above.|
+||Maximum minutes of inactivity before password is required|15|Type <p> This setting is supported for Android versions 4.0 and above or KNOX 4.0 and above. For iOS devices, it's supported for iOS 8.0 and above.|
 ||Password expiration (days)|41|Type|
 ||Number of previous passwords to prevent reuse|5|Type|
 ||Require password when device returns from idle state (Mobile and Holographic)|Require|Available for Windows 10 and later|
 |Encryption|Encryption of data storage on device|Require|Select|
 |Device Security|Firewall|Require|Select|
 ||Antivirus|Require|Select|
-||Antispyware|Require|Select <br> This setting requires an Anti-Spyware solution registered with Windows Security Center.|
+||Antispyware|Require|Select <p> This setting requires an Anti-Spyware solution registered with Windows Security Center.|
 |Defender|Microsoft Defender Antimalware|Require|Select|
-||Microsoft Defender Antimalware minimum version||Type <br> Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version.|
+||Microsoft Defender Antimalware minimum version||Type <p> Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version.|
 ||Microsoft Defender Antimalware signature up to date|Require|Select|
-||Real-time protection|Require|Select <br>Only supported for Windows 10 desktop|
-|||||
+||Real-time protection|Require|Select <p> Only supported for Windows 10 desktop|
+|
 
-**Microsoft Defender ATP**
+#### Microsoft Defender for Endpoint
 
 |Type|Properties|Value|Action|
-|:---|:---------|:-----|:----|
-|Microsoft Defender Advanced Threat Protection rules|Require the device to be at or under the machine-risk score|Medium|Select|
-|||||
+|---|---|---|---|
+|Microsoft Defender for Endpoint rules|Require the device to be at or under the machine-risk score|Medium|Select|
+|
 
 ## Require compliant PCs (but not compliant phones and tablets)
 
-Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. 
+Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user.
 
 To require compliant PCs:
 
@@ -342,13 +343,12 @@ To require compliant PCs:
 
 9. Under **Access controls**, choose **Grant** .
 
-10. Choose **Grant access** and then check **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**. When complete, choose **Select**. 
+10. Choose **Grant access** and then check **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**. When complete, choose **Select**.
 
-10. Select **On** for **Enable policy**, and then choose **Create**.
+11. Select **On** for **Enable policy**, and then choose **Create**.
 
->[!Note]
->Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
->
+> [!NOTE]
+> Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
 
 ## Require compliant PCs *and* mobile devices
 
@@ -367,13 +367,12 @@ To require compliance for all devices:
 
 8. Under **Access controls**, choose **Grant** .
 
-9. Choose **Grant access** and then check **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**. When complete, choose **Select**. 
+9. Choose **Grant access** and then check **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**. When complete, choose **Select**.
 
 10. Select **On** for **Enable policy**, and then choose **Create**.
 
->[!Note]
->Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
->
+> [!NOTE]
+> Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
 
 ## Next step
 

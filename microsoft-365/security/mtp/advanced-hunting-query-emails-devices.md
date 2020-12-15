@@ -27,12 +27,12 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across:
-- Devices managed by Microsoft Defender ATP
+[Advanced hunting](advanced-hunting-overview.md) in Microsoft 365 Defender allows you to proactively hunt for threats across:
+- Devices managed by Microsoft Defender for Endpoint
 - Emails processed by Microsoft 365
-- Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Cloud App Security and Azure ATP
+- Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Cloud App Security and Microsoft Defender for Identity
 
 With this level of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices. 
 

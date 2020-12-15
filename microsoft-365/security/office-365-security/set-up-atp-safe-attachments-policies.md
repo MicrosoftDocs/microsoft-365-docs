@@ -1,5 +1,5 @@
 ---
-title: "Set up Safe Attachments policies in Office 365 ATP"
+title: "Set up Safe Attachments policies in Microsoft Defender for Office 365"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,18 +19,18 @@ description: Learn about how to define Safe Attachments policies to protect your
 ms.custom: seo-marvel-apr2020
 ---
 
-# Set up Safe Attachments policies in Office 365 ATP
+# Set up Safe Attachments policies in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> This article is intended for business customers who have [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). If you're a home user looking for information about attachment scanning in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> This article is intended for business customers who have [Microsoft Defender for Office 365](office-365-atp.md). If you're a home user looking for information about attachment scanning in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Attachments is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that uses a virtual environment to check attachments in inbound email messages after they've been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md), but before delivery to recipients. For more information, see [Safe Attachments in Office 365 ATP](atp-safe-attachments.md).
+Safe Attachments is a feature in [Microsoft Defender for Office 365](office-365-atp.md) that uses a virtual environment to check attachments in inbound email messages after they've been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md), but before delivery to recipients. For more information, see [Safe Attachments in Microsoft Defender for Office 365](atp-safe-attachments.md).
 
 There's no built-in or default Safe Attachments policy. To get Safe Attachments scanning of email message attachments, you need to create one or more Safe Attachments policies as described in this article.
 
-You can configure Safe Attachments policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Office 365 ATP add-on subscriptions).
+You can configure Safe Attachments policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Defender for Office 365 add-on subscriptions).
 
 The basic elements of a Safe Attachments policy are:
 
@@ -50,14 +50,20 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **ATP Safe Attachments** page, use <https://protection.office.com/safeattachmentv2>.
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Safe Attachments** page, use <https://protection.office.com/safeattachmentv2>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- To view, create, modify, and delete Safe Attachments policies, you need to be a member of one of the following role groups:
+- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+  - To create, modify, and delete Safe Attachments policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - For read-only access to Safe Attachments policies, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+  **Notes**:
+
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 - For our recommended settings for Safe Attachments policies, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -155,7 +161,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
    - Move the toggle to the left ![Turn policy off](../../media/scc-toggle-off.png) to disable the policy.
 
-   - Move the toggle to the right ![Turn policy on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to enable the policy.
+   - Move the toggle to the right ![Turn policy on](../../media/scc-toggle-on.png) to enable the policy.
 
 ### Set the priority of Safe Attachments policies
 
@@ -439,4 +445,4 @@ To verify that you've successfully created, modified, or removed Safe Attachment
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-To verify that Safe Attachments is scanning messages, check the available Advanced Threat Protection reports. For more information, see [View reports for Office 365 ATP](view-reports-for-atp.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).
+To verify that Safe Attachments is scanning messages, check the available Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](view-reports-for-atp.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).
