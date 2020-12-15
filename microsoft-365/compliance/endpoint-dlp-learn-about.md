@@ -31,17 +31,6 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
 
-<!--  
-|activity on item |auditable/restrictable  |
-|---------|---------|
-|created    | auditable      |
-|renamed    |  auditable       |
-|copied to or created on removable media     |     auditable and restrictable|
-|copied to network share, e.g. \\my-server\fileshare   |     auditable and restrictable    |
-|printed |    auditable and restrictable       |
-|copied to cloud via Chromium Edge    |   auditable and restrictable        |
-|accessed by unallowed apps and browsers    |  auditable and restrictable       |
--->
 
 |activity |description  | auditable/restictable|
 |---------|---------|---------|
