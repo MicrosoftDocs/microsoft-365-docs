@@ -1,9 +1,9 @@
 ---
-title: "Additional pre-work information for the migration from Microsoft Cloud Deutschland"
+title: "Pre-work for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,10 +17,10 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: "Summary: Additional pre-work information when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
+description: "Summary: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Additional pre-work information for the migration from Microsoft Cloud Deutschland
+# Pre-work for the migration from Microsoft Cloud Deutschland
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
