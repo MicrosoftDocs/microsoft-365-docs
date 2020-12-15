@@ -17,9 +17,9 @@ ROBOTS: NOINDEX
 # Get started driving adoption of Topic Experiences (Preview)
 
 > [!Note]
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-Before you get started with adoption, you need to understand the concepts involved in Topic Experiences. The following diagram shows what happens during Topic discovery and curation:
+Before you get started with adoption, you need to understand the concepts involved in knowledge management and topic experiences. The following diagram shows what happens during topic discovery and curation:
 
 ![Topic experiences architecture](../media/knowledge-management/topic-management-architecture.png)
 
@@ -28,7 +28,7 @@ Before you get started with adoption, you need to understand the concepts involv
 - **Identification**: With Microsoft Graph and Artificial Intelligence (AI) knowledge and people (topics, skills, an so on) are identified and automatically organized into related topics. SharePoint content is indexed with security content.
 - **Extension**: With Microsoft Graph content connectors (coming soon), you can ingest knowledge from external services and data repositories.
 
-For more information, you can review [Topic Experiences overview](topic-experiences-overview.md) for an introduction to Topic Experiences (Preview).
+For more information, you can review the [overview](topic-experiences-overview.md) for an introduction.
 
 Keep in mind that:
 

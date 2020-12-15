@@ -6,7 +6,7 @@
           href: topic-experiences-roles.md 
         - name: Topic experiences discovery 
           href: topic-experiences-discovery.md
-        - name: Get your environment ready for Topic experiences
+        - name: Get your environment ready 
           href: topic-experiences-get-ready.md           
 
     - name: Setup and administration
@@ -43,5 +43,5 @@
 
     - name: Adoption
       items: 
-        - name: Get started
+        - name: Get started driving adoption
           href: topics-adoption-getstarted.md
