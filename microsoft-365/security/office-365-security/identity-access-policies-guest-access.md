@@ -59,8 +59,6 @@ Microsoft Teams defines the following:
 
 For more information, see the [comparison between guest and external access for teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
-Conditional Access policies only apply to guest access in Teams because there is a corresponding Azure AD B2B account.
-
 See [Policy recommendations for securing Teams chats, groups, and files](teams-access-policies.md) for more information about securing identity and device access policies for Teams.
 
 ### Require MFA always for guest and external users
