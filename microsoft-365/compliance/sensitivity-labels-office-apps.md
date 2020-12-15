@@ -34,7 +34,7 @@ To use sensitivity labels with these standalone editions of Office on Windows co
 
 ## Support for sensitivity label capabilities in apps
 
-For each capability, the following tables list the minimum Office version (for Windows and Mac) or operating system version (for iOS and Android) that you need to support sensitivity labels using built-in labeling. Or, if the label capability is in public preview or under review for a future release. Use the [Microsoft 365 roadmap](https://aka.ms/MIPC/Roadmap) for details about future releases.
+For each capability, the following tables list the minimum Office version that you need to support sensitivity labels using built-in labeling. Or, if the label capability is in public preview or under review for a future release. Use the [Microsoft 365 roadmap](https://aka.ms/MIPC/Roadmap) for details about future releases.
 
 New versions of Office apps are made available at different times for different update channels. For more information, including how to configure your update channel so that you can test a new labeling capability that you're interested in, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). New capabilities that are in private preview are not included in the table but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
 
@@ -45,9 +45,9 @@ Additional capabilities are available when you install the Azure Information Pro
 
 ### Sensitivity label capabilities in Word, Excel, and PowerPoint
 
-For the Windows and Mac columns: The minimum Office version is listed.
+The columns for each operating system list the minimum Office version required for each capability.
 
-For the iOS and Android columns: The minimum operating system version is listed that supports sensitivity labels built into the [Office app](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+For Office Mobile, (iOS and Android), sensitivity labels are built into the [Office app](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 |Capability                                                                                                        |Windows |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
@@ -72,9 +72,7 @@ Currently, doesn't include justification text to remove a label or lower the cla
 
 ### Sensitivity label capabilities in Outlook
 
-For the Windows and Mac columns: The minimum Office version is listed.
-
-For the iOS and Android columns: The minimum operating system version is listed that supports sensitivity labels built into the [Office app](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+The columns for each operating system list the minimum Office version required for each capability.
 
 |Capability                                                                                                        |Outlook for Windows |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
