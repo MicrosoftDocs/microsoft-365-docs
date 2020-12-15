@@ -8,7 +8,8 @@
           href: work-with-topics.md   
         - name: Give users permissions to the topic center
           href: give-user-permissions-to-the-topic-center.md 
- 
+        - name: Get your environment ready
+          href: topic-experiences-get-ready.md
 
     
     - name: Setup and administration
@@ -29,3 +30,7 @@
         - name: Change the topic center name
           href: topic-experiences-administration.md
     
+    - name: Adoption
+      items:
+        - name: Get started driving adoption
+          href: topics-adoption-getstarted.md
