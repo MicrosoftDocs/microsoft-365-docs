@@ -32,7 +32,7 @@ To manage disposition reviews and confirm that records have been deleted, you mu
 
 To successfully access the **Disposition** tab in the Microsoft 365 compliance center, users must have the **Disposition Management** admin role. From December 2020, this role is now included in the **Records Management** default admin role group.
 
-[!NOTE]	
+> [!NOTE]
 > By default, a global admin isn't granted the **Disposition Management** role. 
 
 To grant users just the permissions they need for disposition reviews without granting them permissions to view and configure other features for retention and records management, create a custom role group (for example, named "Disposition Reviewers") and grant this group the Disposition Management role.
