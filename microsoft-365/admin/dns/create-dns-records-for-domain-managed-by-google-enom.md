@@ -25,7 +25,7 @@ description: "Learn to access eNom and create DNS through the Google Domains pag
 
 # Create DNS records when your domain is managed by Google (eNom)
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 To migrate your mail accounts to Microsoft, you need to create a DNS record at your domain registrar.
   

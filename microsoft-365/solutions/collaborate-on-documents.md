@@ -29,15 +29,13 @@ This video shows the configuration steps described in this document.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
-## Azure organizational relationships settings
+## Azure external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the organizational relationships settings to ensure that sharing with guests is not blocked.
+Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
 
 ![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
-
-To set organizational relationship settings
 
 To set external collaboration settings
 
@@ -104,11 +102,11 @@ To set permissions for links that allow sharing with anyone
 
 1. Under the **These links can give these permissions:** sub-pane, 
     1. From the **Files** drop-down list, 
-        1. Select **View and edit** if you want to allow unauthenticated users to make changes to the files.
-        2. Select **View** if you do not want unauthenticated users to make changes to the files.
+        - Select **View and edit** if you want to allow unauthenticated users to make changes to the files.
+        - Select **View** if you do not want unauthenticated users to make changes to the files.
     2. From the **Folders** drop-down list,
-        1. Select **View, edit, and upload** if you want to allow unauthenticated users to make changes to the folders.
-        2. Select **View** if you do not want unauthenticated users to make changes to the folders.
+        - Select **View, edit, and upload** if you want to allow unauthenticated users to make changes to the folders.
+        - Select **View** if you do not want unauthenticated users to make changes to the folders.
 
 ## SharePoint site-level sharing settings
 

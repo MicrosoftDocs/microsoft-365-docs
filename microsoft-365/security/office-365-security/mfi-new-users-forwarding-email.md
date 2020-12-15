@@ -26,7 +26,7 @@ This insight appears only when the issue is detected, and it appears on the [For
 
 ![New users forwarding email insight](../../media/mfi-new-users-forwarding-email.png)
 
-When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link to the [Forwarding modifications report](#forwarding-modifications-report) as described later in this topic.
+When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link to the [Forwarding modifications report](#forwarding-modifications-report) as described later in this article.
 
 ![Details flyout that appears after clicking on the New users forwarding email insight](../../media/mfi-new-users-forwarding-email-details.png)
 
