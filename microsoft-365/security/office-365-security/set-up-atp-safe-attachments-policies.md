@@ -161,7 +161,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
    - Move the toggle to the left ![Turn policy off](../../media/scc-toggle-off.png) to disable the policy.
 
-   - Move the toggle to the right ![Turn policy on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to enable the policy.
+   - Move the toggle to the right ![Turn policy on](../../media/scc-toggle-on.png) to enable the policy.
 
 ### Set the priority of Safe Attachments policies
 
