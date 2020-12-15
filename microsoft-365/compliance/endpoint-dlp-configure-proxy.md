@@ -25,14 +25,16 @@ description: "Learn how to Configure device proxy and internet connection settin
 
 Microsoft Endpoint DLP uses Microsoft Windows HTTP (WinHTTP) to report data and communicate with the Microsoft endpoint cloud service. The embedded Endpoint DLP runs in system context using the LocalSystem account.
 
-> [!TIP] For organizations that use forward proxies as a gateway to the Internet, you can use network protection to investigate behind a proxy. For more information, see [Investigate connection events that occur behind forward proxies](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
+> [!TIP]
+> For organizations that use forward proxies as a gateway to the Internet, you can use network protection to investigate behind a proxy. For more information, see [Investigate connection events that occur behind forward proxies](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) Internet browsing proxy settings and can only discover a proxy server by using the following auto discovery methods:
 
 - Transparent proxy
 - Web Proxy Auto-discovery Protocol (WPAD)
 
-> [!NOTE] If you’re using Transparent proxy or WPAD in your network topology, you don’t need special configuration settings. For more information on Defender for Endpoint URL exclusions in the proxy, see [Enable access to Endpoint DLP cloud service URLs in the proxy server](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server).
+> [!NOTE]
+> If you’re using Transparent proxy or WPAD in your network topology, you don’t need special configuration settings. For more information on Defender for Endpoint URL exclusions in the proxy, see [Enable access to Endpoint DLP cloud service URLs in the proxy server](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server).
 
 - Manual static proxy configuration:
     - Registry based configuration
@@ -66,7 +68,8 @@ The registry value `DisableEnterpriseAuthProxy` should be set to 1.
 
 Use netsh to configure a system-wide static proxy.
 
-> [!NOTE] This will affect all applications including Windows services which use WinHTTP with default proxy. - Laptops that are changing topology (for example: from office to home) will malfunction with netsh. Use the registry-based static proxy configuration.
+> [!NOTE]
+> This will affect all applications including Windows services which use WinHTTP with default proxy. - Laptops that are changing topology (for example: from office to home) will malfunction with netsh. Use the registry-based static proxy configuration.
 
 1. Open an elevated command-line:
     1. Go to **Start** and type **cmd**
