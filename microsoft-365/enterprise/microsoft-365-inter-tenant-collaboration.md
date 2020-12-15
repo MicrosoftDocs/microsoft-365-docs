@@ -3,7 +3,6 @@ title: "Microsoft 365 inter-tenant collaboration"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/21/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -73,7 +72,7 @@ Microsoft 365 inter-tenant collaboration options include using a central locatio
 |Sharing goal|Administrative action|How-to information|
 |:-----|:-----|:-----|
 |Collaborate in Teams with users external to the organization | A global admin for the inviting Microsoft 365 tenant needs to enable external collaboration in Teams. Global admins and team owners will now be able to invite anyone with an email address to collaborate in Teams.  <br/> Admins can also manage and edit Guests already present in their tenant. |  <ul><li> [Authorize Guest Access](https://docs.microsoft.com/microsoftteams/teams-dependencies) </li><li> [Turn Guest Access On or Off in Teams](https://docs.microsoft.com/microsoftteams/set-up-guests) </li><li> [Use PowerShell to control Guest Access](https://docs.microsoft.com/microsoftteams/guest-access-powershell) </li><li> [Guest Access Checklist](https://docs.microsoft.com/microsoftteams/guest-access-checklist) </li><li> [View Guest Users](https://docs.microsoft.com/microsoftteams/view-guests) </li><li> [Edit guest user information](https://docs.microsoft.com/microsoftteams/edit-guests-information) </li></ul> |
-|Team owners can invite and manage how guests collaborate within their teams.  </li><li> |Team owners have additional controls on what the guests can do within their teams. |  <ul><li> [Add Guests](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Add a guest to a team](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Manage Guest Access in Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [See who's on a Team or in a Channel](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
+|Team owners can invite and manage how guests collaborate within their teams.  |Team owners have additional controls on what the guests can do within their teams. |  <ul><li> [Add Guests](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Add a guest to a team](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Manage Guest Access in Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [See who's on a Team or in a Channel](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |Guests from other tenants can view contents in Teams and collaborate with other members | None. | [The guest access experience](https://docs.microsoft.com/microsoftteams/guest-experience)| 
 
 ## Power BI collaboration options
@@ -88,18 +87,18 @@ Microsoft 365 inter-tenant collaboration options include using a central locatio
 
 Each organization maintains its own user accounts, identities, security groups, subscriptions, licenses, and storage. People use the collaboration features in Microsoft 365 together with sharing policies and security settings to provide access to needed information while maintaining control of company assets.
   
-- **User accounts:** Accounts cannot be shared and accounts cannot be duplicated between the tenants or partitions in the on-premises Active Directory Directory Services. 
+- **User accounts:** Accounts cannot be shared or duplicated between the tenants or partitions in the on-premises Active Directory Domain Services. 
     
 - **Licenses &amp; subscriptions:** In Microsoft 365, licenses from licensing plans (also called SKUs or Microsoft 365 plans) give users access to the Microsoft 365 services that are defined for those plans. 
     
-- **Storage:** In Microsoft 365 plans, software boundaries and limits for SharePoint Online are managed separately from mailbox storage limits. Mailbox storage limits are set up and managed by using Exchange Online. In both scenarios storage can't be shared cross tenants. 
+- **Storage:** In Microsoft 365 licensing plans, software boundaries and limits for SharePoint Online are managed separately from mailbox storage limits. Mailbox storage limits are set up and managed by using Exchange Online. In both scenarios, storage can't be shared across tenants. 
     
 ### Can we share domain namespaces across Microsoft 365 tenants?
 
-No. Vanity domains, such as fabrikam.com or tailspintoys.com, can only be associated and used with one tenant at the time. Each tenant must have its own namespace; UPN, SMTP and SIP namespaces cannot be shared across tenants.
+No. Organization domain names, such as fabrikam.com or tailspintoys.com, can only be associated and used with a single Microsoft 365 tenant. Each tenant must have its own namespace. UPN, SMTP, and SIP namespaces cannot be shared across tenants.
   
 ### What about hybrid components and Microsoft 365 inter-tenant collaboration?
 
 On-premises hybrid components, such as an Exchange organization and Azure AD Connect, cannot be split across multiple tenants.
-  
+ 
 

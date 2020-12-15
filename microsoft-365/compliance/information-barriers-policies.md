@@ -11,6 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 localization_priority: None
 description: Learn how to define policies for information barriers in Microsoft Teams.
 ms.custom: seo-marvel-apr2020
@@ -60,6 +62,8 @@ In addition to the [required licenses and permissions](information-barriers.md#r
   - [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
 - Scoped directory search - Before you define your organization's first information barrier policy, you must [enable scoped directory search in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Wait at least 24 hours after enabling scoped directory search before you set up or define information barrier policies.
+
+- EXO license - IB policies work only if the target users have been assigned an EXO license.
 
 - Audit logging - In order to look up the status of a policy application, audit logging must be turned on. We recommend doing this before you begin to define segments or policies. To learn more, see [Turn the audit log search on or off](turn-audit-log-search-on-or-off.md).
 
@@ -253,7 +257,7 @@ With PowerShell, you can view status of user accounts, segments, policies, and p
 |Segments     |Use the **Get-OrganizationSegment** cmdlet.<p>Syntax: `Get-OrganizationSegment` <p>This will display a list of all segments defined for your organization.         |
 |Information barrier policies     |Use the **Get-InformationBarrierPolicy** cmdlet. <p> Syntax: `Get-InformationBarrierPolicy` <p>This will display a list of information barrier policies that were defined, and their status.       |
 |The most recent information barrier policy application     | Use the **Get-InformationBarrierPoliciesApplicationStatus** cmdlet. <p>Syntax: `Get-InformationBarrierPoliciesApplicationStatus`<p>    This will display information about whether policy application completed, failed, or is in progress.       |
-|All information barrier policy applications|Use `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>This will display information about whether policy application completed, failed, or is in progress.|
+|All information barrier policy applications|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p>This will display information about whether policy application completed, failed, or is in progress.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

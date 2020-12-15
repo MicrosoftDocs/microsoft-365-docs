@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
@@ -127,5 +127,9 @@ To set up a naming policy:
 ![Screenshot of the groups naming policy settings in Azure Active Directory](../media/groups-naming-policy-azure.png)
 
 ## Related topics
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
 
 [Azure Active Directory cmdlets for configuring group settings](https://go.microsoft.com/fwlink/?linkid=868341)

@@ -50,7 +50,7 @@ Malware ZAP is enabled by default in anti-malware policies. For more information
 
 ### Phish ZAP
 
-For **read or unread messages** that are identified as phish after delivery, the ZAP outcome depends on the action that's configured for a **Phishing email** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for phish and their possible ZAP outcomes are described in the following list:
+For **read or unread messages** that are identified as phishing after delivery, the ZAP outcome depends on the action that's configured for a **Phishing email** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for phishing and their possible ZAP outcomes are described in the following list:
 
 - **Add X-Header**, **Prepend subject line with text**: ZAP takes no action on the message.
 
@@ -76,9 +76,9 @@ By default, spam ZAP is enabled in anti-spam policies, and the default action fo
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
-### ZAP considerations for Office 365 Advanced Threat Protection (Office 365 ATP)
+### ZAP considerations for Microsoft Defender for Office 365
 
-ZAP will not quarantine any message that's in the process of [Dynamic Delivery](dynamic-delivery-and-previewing.md) scanning, or where malware filtering has already replaced the attachment with the **Malware Alert Text.txt** file. If a phish or spam signal is received for these types of messages, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, Quarantine) then ZAP will default to a 'Move to Junk' action.
+ZAP will not quarantine any message that's in the process of [Dynamic Delivery](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) in Safe Attachments scanning, or where EOP malware filtering has already replaced the attachment with the **Malware Alert Text.txt** file. If a phishing or spam signal is received for these types of messages, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, or Quarantine) then ZAP will default to a 'Move to Junk' action.
 
 ## How to see if ZAP moved your message
 
@@ -92,7 +92,7 @@ You should follow the normal reporting process for [false positives](report-junk
 
 ### What if I use the Quarantine folder instead of the Junk Mail folder?
 
-ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this topic.
+ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this article.
 
 ### What if I'm using safe senders, mail flow rules, or allowed/blocked sender lists?
 
@@ -100,7 +100,7 @@ Safe senders, mail flow rules, or block and allow organizational settings take p
 
 ### What if a message is moved to another folder (e.g. Inbox rules)?
 
-ZAP still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the phish policy is set to quarantine and the user or administrator has already junked the email, then quarantine will take action to quarantine the file.
+ZAP still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the anti-phishing policy is set to quarantine and message is already in the Junk Email, then ZAP will take action to quarantine the message.
 
 ### How does ZAP affect mailboxes on hold?
 

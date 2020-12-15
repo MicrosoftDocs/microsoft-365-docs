@@ -61,17 +61,17 @@ To use an existing template to add a user:
 
 2. Select **User templates**, and then select a template from the drop-down list. (The list will contain only the templates that you created, not those created by other admins.)
 
- > [!NOTE]
- > You can also use a template to add a user by selecting **User templates** > **Manage templates**, selecting a template, and then selecting **Use template**.
+   > [!NOTE]
+   > You can also use a template to add a user by selecting **User templates** > **Manage templates**, selecting a template, and then selecting **Use template**.
 
 3. Follow the steps to create a user from the template you selected.
 
-> [!NOTE]
-> If you have insufficient licenses available for a user that you add, and your payment information is available, we will attempt to purchase another license using your existing payment information. If your payment information is unavailable, the user will be created as an unlicensed user.
+   > [!NOTE]
+   > If you have insufficient licenses available for a user that you add, and your payment information is available, we will attempt to purchase another license using your existing payment information. If your payment information is unavailable, the user will be created as an unlicensed user.
 
 ## Manage templates
 
-You can easily delete templates you no longer need and add new ones. To delete a template:
+You can only delete templates you no longer need and add new ones. To delete a template:
 
 1. In the admin center, select **Users** > **Active users**.
 

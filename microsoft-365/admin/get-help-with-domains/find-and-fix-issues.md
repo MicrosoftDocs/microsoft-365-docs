@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,7 +26,7 @@ description: "Learn to track down any problems you run into while setting up a c
 
 # Find and fix issues after adding your domain or DNS records
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 Getting your domain set up to work with Microsoft 365 can be challenging. The DNS system is nitpicky to work with, and the DNS setup for your domain affects important business activities, like email!
 
@@ -93,4 +93,9 @@ If you've fixed any DNS issues and you're still having trouble, try one of the f
 - People can't get to your website at www.mydomain.com: [Track down website issues](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
 - You can't update your A record or CNAME record to point to your website: [Update custom DNS records in Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
+
+## Related content
+
+[Troubleshoot: Audit data on verified domain change](https://docs.microsoft.com/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+
     

@@ -1,7 +1,7 @@
 ---
 title: What's coming to Microsoft Secure Score
 description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -23,15 +23,22 @@ search.appverid:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
-We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
+Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
 ## Proposed changes
 
-### October 2020
+We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
-#### Remove improvement action for Microsoft Defender Advanced Threat Protection
-- Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
+### December 2020
+
+Adding 6 accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+
+- Set 'Minimum password length' to '14 or more characters'
+- Set 'Enforce password history' to '24 or more password(s)'
+- Set 'Maximum password age' to '60 or fewer days, but not 0'
+- Set 'Minimum password age' to '1 or more day(s)'
+- Disable the built-in Administrator account
+- Disable the built-in Guest account
 
 ## Related resources
 

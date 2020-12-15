@@ -10,7 +10,10 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -70,10 +73,8 @@ Microsoft 365 comes with five pre-trained classifiers:
     - C++
     - Clojure
     - CoffeeScript
-    - CSS
     - Go
     - Haskell
-    - HTML
     - Java
     - JavaScript
     - Lua
@@ -106,10 +107,14 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 ### Custom classifiers
 
-When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs.
+When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. 
 
-> [!IMPORTANT]
-> By default, only the user who creates a custom classifier can train and review predictions made by that classifier. If you want others to be able to train and review classifier predictions, see [Give others train and review rights](classifier-get-started-with.md#give-others-train-and-review-rights).
+For example you could create trainable classifiers for:
+ 
+- Legal documents - such as attorney client privilege, closing sets, statement of work
+- Strategic business documents - like press releases, merger and acquisition, deals, business or marketing plans, intellectual property, patents, design docs
+- Pricing information - like invoices, price quotes, work orders, bidding documents 
+- Financial information - such as organizational investments, quarterly or annual results    
 
 #### Process flow for creating custom classifiers
 

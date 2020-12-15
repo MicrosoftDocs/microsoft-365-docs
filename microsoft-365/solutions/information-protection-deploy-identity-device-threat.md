@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: 
 description: Prevent personal data breaches with identity, device, and threat protection services of Microsoft 365.
 ---
@@ -64,19 +65,19 @@ Use [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microso
 - Require mobile devices to lock upon inactivity.
 - Require mobile devices to wipe on multiple sign-in failures.
 
-Use [Exchange Online Protection and Office 365 Advanced Threat Protection (ATP)](../security/office-365-security/office-365-atp.md) for the **Protect Against Threats** category, with which you can:
+Use [Exchange Online Protection and Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md) for the **Protect Against Threats** category, with which you can:
 
 - Enable sender authentication (SPF, DMARC and DKIM).
-- Set up Office 365 Advanced Threat Protection (ATP) anti-phishing policies.
-- Implement ATP Safe Attachments.
-- Implement ATP Safe Links.
+- Set up Microsoft Defender for Office 365 anti-phishing policies.
+- Implement Safe Attachments.
+- Implement Safe Links.
 - Implement malware detection and response policies.
 - Implement outbound and inbound spam policies.
 
 ### References:
 
-- [Common identity and device access policies](../enterprise/identity-access-policies.md)
+- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 - [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [ATP Safe Attachments](../security/office-365-security/atp-safe-attachments.md)
-- [ATP Safe Links](../security/office-365-security/atp-safe-links.md)
-- [ATP Safe Documents](../security/office-365-security/safe-docs.md)
+- [Safe Attachments](../security/office-365-security/atp-safe-attachments.md)
+- [Safe Links](../security/office-365-security/atp-safe-links.md)
+- [Safe Documents](../security/office-365-security/safe-docs.md)

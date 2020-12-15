@@ -301,7 +301,7 @@ We can then trigger policy such as approve, trigger MFA or block authentication 
 
 Again, Office 365 provides protection for the Optimize marked endpoints in various layers in the service itself, [outlined in this document](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection). As noted, it is vastly more efficient to provide these security elements in the service itself rather than try and do it in line with devices that may not fully understand the protocols/traffic.By default, SharePoint Online [automatically scans file uploads](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo) for known malware
 
-For the Exchange endpoints listed above, [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) and [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) do an excellent job of providing security of the traffic to the service.
+For the Exchange endpoints listed above, [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) and [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) do an excellent job of providing security of the traffic to the service.
 
 ### Can I send more than just the Optimize traffic direct?
 
@@ -320,6 +320,10 @@ Port 80 is only used for things like redirect to a port 443 session, no customer
 ### Does this advice apply to users in China using a worldwide instance of Office 365?
 
 **No**, it does not. The one caveat to the above advice is users in the PRC who are connecting to a worldwide instance of Office 365. Due to the common occurrence of cross border network congestion in the region, direct Internet egress performance can be variable. Most customers in the region operate using a VPN to bring the traffic into the corporate network and utilize their authorized MPLS circuit or similar to egress outside the country via an optimized path. This is outlined further in the article [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
+
+### Does split-tunnel configuration work for Teams running in a browser?
+
+**No**, it does not. It works only on Microsoft Teams client version 1.3.00.13565 or greater. This version includes improvements in how the client detects available network paths.
 
 ## Related topics
 

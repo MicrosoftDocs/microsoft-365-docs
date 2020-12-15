@@ -15,7 +15,9 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -25,9 +27,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+- Microsoft 365 Defender
 
 The `IdentityDirectoryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains events involving an on-premises domain controller running Active Directory (AD). This table captures various identity-related events, like password changes, password expiration, and user principal name (UPN) changes. It also captures system events on the domain controller, like scheduling of tasks and PowerShell activity. Use this reference to construct queries that return information from this table.
 
@@ -52,7 +52,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDomain` | string | Domain of the account |
 | `AccountUpn` | string | User principal name (UPN) of the account |
 | `AccountSid` | string | Security Identifier (SID) of the account |
-| `AccountObjectId` | string | Unique identifier for the account in Azure AD |
+| `AccountObjectId` | string | Unique identifier for the account in Azure Active Directory |
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
 | `IPAddress` | string | IP address assigned to the device during communication |

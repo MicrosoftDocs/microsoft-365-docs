@@ -10,6 +10,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
@@ -633,4 +634,10 @@ No, the Yammer group can only ever be associated with the Microsoft 365 group to
 **Does deleting the Yammer group delete the Microsoft 365 group?**
 
 Yes, deleting the group in Yammer will delete related Microsoft group and group-associated services and content.
+
+## Related topics
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
 

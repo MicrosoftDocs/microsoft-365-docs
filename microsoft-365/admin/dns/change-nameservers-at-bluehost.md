@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,7 +25,7 @@ description: "Learn how you can set up Microsoft to manage your DNS records at B
 
 # Change nameservers to set up Microsoft with Bluehost
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 Follow these instructions if you want Microsoft to manage your DNS records for you. (If you prefer, you can [manage all your DNS records at Bluehost](create-dns-records-at-bluehost.md).)
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,7 +25,7 @@ description: "Learn how you can set up Office 365 operated by 21Vianet to manage
 
 # Change nameservers to set up Microsoft 365 with 1&1 IONOS
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 Follow these instructions if you want Microsoft 365 to manage your Microsoft 365 DNS records for you. (If you prefer, you can [manage all your Microsoft 365 DNS records at 1&1 IONOS](create-dns-records-at-1-1-internet.md).) 
   

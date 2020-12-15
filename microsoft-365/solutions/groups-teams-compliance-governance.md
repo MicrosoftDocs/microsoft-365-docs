@@ -10,6 +10,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
@@ -107,8 +108,10 @@ With information barriers, you can segment your data and users to restrict unwan
 
 ## Related topics
 
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
+
 [Security and compliance for Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [Protect information](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
-
-

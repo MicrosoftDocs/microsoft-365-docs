@@ -10,6 +10,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
@@ -68,3 +69,9 @@ Once you set groups to expire:
 - Any group that is deleted can be restored within 30 days by the group owners or the admin.
 
 Expiration policies are a good way to limit group sprawl by ensuring that groups that are no longer in use are deleted. If you want to create a group expiration policy, see [Microsoft 365 Group Expiration Policy](microsoft-365-groups-expiration-policy.md).
+
+## Related topics
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)

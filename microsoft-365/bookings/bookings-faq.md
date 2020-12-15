@@ -16,7 +16,7 @@ description: "Microsoft Bookings frequently asked questions."
 
 ### What is Microsoft Bookings?
 
-Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings incudes a Web-based booking calendar and integrates with Outlook to optimize your staff’s calendar, giving your customers flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams, and helps you manage day-to-day scheduling via the Bookings app in Teams. With built-in ability to customize, Bookings is designed to meet the needs of multiple parts of any organization.
+Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings includes a Web-based booking calendar and integrates with Outlook to optimize your staff’s calendar, giving your customers flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams, and helps you manage day-to-day scheduling via the Bookings app in Teams. With built-in ability to customize, Bookings is designed to meet the needs of multiple parts of any organization.
 
 ### How do I use Microsoft Bookings?
 
@@ -24,7 +24,7 @@ Bookings is an online service, so you don't need to download anything. Just go t
 
 ### Who has access to Microsoft Bookings?
 
-Bookings is available and active by default for Microsoft 365 Business Premium, A3, A5, E3, and E5 customers worldwide. Bookings is also available in Office 365 operated by 21Vianet.
+Bookings is available and active by default for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, and E5 customers worldwide. Bookings is also available in Office 365 operated by 21Vianet.
 
 ### Will my customers see my personal or business calendar?
 
@@ -32,7 +32,7 @@ Your customers will only see the Bookings calendar that you publish online for t
 
 ### How do end users access the Bookings app?
 
-Anyone who is licensed for Microsoft 365 Business Premium, A3, A5, E3, E5, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There is also a companion app available for iOS and Android.
+Anyone who is licensed for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There is also a companion app available for iOS and Android.
 
 ### Can I use Bookings in my own Web site?
 
@@ -44,9 +44,9 @@ Yes. We provide a link to your booking page within the **Booking page** tab in t
 
 ### Can our IT department control whether end users can access Bookings?
 
-Bookings is available in Business Premium, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
+Bookings is available in Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
 
-If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either user a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
+If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either use a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
 
 If you use an OWA Mailbox policy to disable access to Bookings, all users will have a Bookings license, however when they attempt to access the app, they will only be successful if they are part of the policy or if they have been added to an existing Bookings calendar as staff. Details [here](turn-bookings-on-or-off.md) in the “Allow only selected users to create Bookings calendars” section.
 
@@ -109,7 +109,7 @@ Bookings is an ideal solution for both Enterprise and small business customers, 
 
 ### How do I get Microsoft Bookings?
 
-Bookings is available in Microsoft 365 for customers with Business Premium, A3, A5, E3, and E5 licenses, along with an iOS and Android companion app. Bookings is not available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
+Bookings is available in Microsoft 365 for customers with Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, and E5 licenses, along with an iOS and Android companion app. Bookings is not available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
 
 A Bookings license provides full functionality to the product, including creating and managing calendars. It also enables the ability for users to view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 
@@ -209,7 +209,7 @@ Recording Time Off within the Bookings Web app will always trigger a notificatio
 
 ### Can Bookings calendars be cloned or duplicated, and can they be templatized for easy scaling?
 
-The ability to duplicate pages is currently available via PowerShell. The process would be to use the Graph API to get mailbox details, and then use those details to create a new mailbox. API documentation is [here](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+The process would be to use the Graph API to get mailbox details, and then use those details to create a new mailbox. API documentation is [here](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### What reporting is available in Bookings?
 
@@ -298,7 +298,8 @@ In order for Bookings to properly sync with your staff members' calendars, each 
 
 1. Sign in to Microsoft 365, and then select **Outlook** from the app launcher.
 
-   ![Image of Outlook in App launcher](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![Image of Outlook in App launcher](../media/bookings-applauncher-outlook.png)
 
 1. At the top of the page, select **Share** \> **Calendar**.
 
@@ -306,10 +307,11 @@ In order for Bookings to properly sync with your staff members' calendars, each 
 
 1. In the **People inside your organization** section, select the drop-down box next to **My Organization**, and then select **Can view when I'm busy**.
 
-> [!NOTE]
-> This setting shares your free/busy information with Bookings and with other users in your organization. It does not include any other information, such as what type of appointment you have scheduled, who you have scheduled the appointment with, or the location.
+   > [!NOTE]
+   > This setting shares your free/busy information with Bookings and with other users in your organization. It does not include any other information, such as what type of appointment you have scheduled, who you have scheduled the appointment with, or the location.
 
-   ![Image of calendar sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![Image of calendar sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
 
 1. Select **Done**.
 
@@ -330,7 +332,7 @@ If an employee has left your company and you removed them from your Microsoft 36
 
 To check if you have more than one calendar, in the left menu, select the drop-down arrow next to your company name, and then select **Open**. If you only have one calendar, then you will see only the option to add a booking calendar. This example shows that there is a second calendar named "Contoso CO".
 
-   ![Image of Choose a calendar screen with a second calendar shown](../media/bookings-choose-calendar.png)
+![Image of Choose a calendar screen with a second calendar shown](../media/bookings-choose-calendar.png)
 
 ### There's a syncing error we can't identify
 

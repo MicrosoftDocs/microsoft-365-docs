@@ -1,10 +1,10 @@
 ---
-title: Manage billing profiles
+title: Understand billing profiles
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,21 +12,23 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- Commerce
 search.appverid:
 - MET150
 description: "Learn how billing profiles support invoices."
-keywords: billing profile, invoices, charges, managed charges
 ---
 
-# Manage billing profiles
+# Understand billing profiles
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 

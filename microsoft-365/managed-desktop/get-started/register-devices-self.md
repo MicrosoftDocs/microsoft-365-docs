@@ -42,6 +42,8 @@ You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 1.	Open a PowerShell prompt with administrative rights.
 2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4.  Run `powershell -ExecutionPolicy restricted` to prevent subsequent unrestricted scripts from running.
+
 
 #### Flash drive method
 
@@ -79,14 +81,14 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devic
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
-3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **AutopilotRegistrationRequested**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
+3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
 
 You can monitor the progress of device registration on the main page. Possible states reported there include:
 
 | State | Description |
 |---------------|-------------|
-| AutopilotRegistrationRequested | Registration is not done yet. Check back later. |
+| Registration Pending | Registration is not done yet. Check back later. |
 | Registration failed | Registration could not be completed. Refer to [Troubleshooting device registration](#troubleshooting-device-registration) for more information. |
 | Ready for user | Registration succeeded and the device is now ready to be delivered to the user. Microsoft Managed Desktop will guide them through first time set-up, so there’s no need for you to do any further preparations. |
 | Active | The device has been delivered to the user and they have registered with your tenant. This also indicates that they are regularly using the device. |
@@ -114,7 +116,6 @@ You’re also welcome to apply the image on your own if you prefer. To get start
 > Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.
 
 If all the licenses are applied, you can [get your users ready to use devices](get-started-devices.md), and then your user can start up the device and proceed through the Windows setup experience.
-
 
 
 

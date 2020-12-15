@@ -1,5 +1,5 @@
 ---
-title: "Document metadata fields in Data Investigations (Preview)"
+title: "Document metadata fields in Data Investigations (preview)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,13 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: View a table listing the metadata fields for documents in an evidence set in Data Investigations (Preview).
+description: View a table listing the metadata fields for documents in an evidence set in Data Investigations (preview).
 ms.custom: seo-marvel-mar2020
 ---
 
-# Document metadata fields in Data Investigations (Preview)
+# Document metadata fields in Data Investigations (preview)
 
-The following table lists the metadata fields for documents in a evidence set in an investigation in Data Investigations (Preview). The table indicates the name of the metadata field, whether the field can be searched when running a query in an evidence set, whether the field is present when viewing the file metadata of a selected document in an evidence set, and whether the field is included when documents are exported. 
+The following table lists the metadata fields for documents in a evidence set in an investigation in Data Investigations (preview). The table indicates the name of the metadata field, whether the field can be searched when running a query in an evidence set, whether the field is present when viewing the file metadata of a selected document in an evidence set, and whether the field is included when documents are exported. 
 
 > [!NOTE]
 > The values in parentheses in the **Searchable in evidence set** column is the name of the property that you can search for. The values in parentheses in the **Viewable in file metadata** column is the name of the property that's displayed when you're viewing the file metadata.

@@ -1,5 +1,5 @@
 ---
-title: Take action on advanced hunting query results in Microsoft Threat Protection
+title: Take action on advanced hunting query results in Microsoft 365 Defender
 description: Quickly address threats and affected assets in your advanced hunting query results
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, take action
 search.product: eADQiWindows 10XVcnh
@@ -15,7 +15,9 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -25,7 +27,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -35,7 +37,7 @@ You can quickly contain threats or address compromised assets that you find in [
 - Quarantine files
 
 ## Required permissions
-To be able to take action through advanced hunting, you need a role in Microsoft Defender ATP with [permissions to submit remediation actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
+To be able to take action through advanced hunting, you need a role in Microsoft Defender for Endpoint with [permissions to submit remediation actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
 
 *Active remediation actions > Threat and vulnerability management - Remediation handling*
 
@@ -48,7 +50,7 @@ You can take the following actions on devices identified by the `DeviceId` colum
 - Initiate an automated investigation to check and remediate threats on the device and possibly other affected devices
 - Restrict app execution to only Microsoft-signed executable files, preventing subsequent threat activity through malware or other untrusted executables
 
-To learn more about how these response actions are performed through Microsoft Defender ATP, [read about response actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+To learn more about how these response actions are performed through Microsoft Defender for Endpoint, [read about response actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
 ## Quarantine files
 You can deploy the *quarantine* action on files so that they are automatically quarantined when encountered. When selecting this action, you can choose between the following columns to identify which files in your query results to quarantine:

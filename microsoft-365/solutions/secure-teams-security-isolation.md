@@ -3,7 +3,7 @@ title: "Configure a team with security isolation"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -37,18 +37,22 @@ The elements of configuration for a team with security isolation are:
 > [!IMPORTANT]
 > Be sure you have enabled [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) before you proceed with the steps in this article.
 
+Watch this video for an overview of the deployment process.
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
+
 <a name="poster"></a>
 For a 2-page summary of this scenario, see the [Microsoft Teams with security isolation poster](../downloads/team-security-isolation-poster.pdf).
 
 [![Microsoft Teams with security isolation poster](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) or [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
 
 ## Initial protections
 
 To help protect access to the team and its underlying SharePoint site, review the following best practices:
-- [Identity and device access policies](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies)
-- [SharePoint Online access policies](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies)
+- [Identity and device access policies](../security/office-365-security/identity-access-policies.md)
+- [SharePoint Online access policies](../security/office-365-security/sharepoint-file-access-policies.md)
 - [Deploy teams with baseline protection](configure-teams-baseline-protection.md)
 
 ## Guest sharing
@@ -213,7 +217,7 @@ To add users to the site
 
 Microsoft 365 offers additional methods for securing your content. Consider if the following options would help improve security for your organization.
 
-- Have your guest users agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+- Have your guests agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
 - Configure a [session timeout policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
 - Create [sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) and use [data loss protection](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to set policies around accessing sensitive information.
 - Use [Azure Active Directory access](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) reviews to periodically review team access and membership.

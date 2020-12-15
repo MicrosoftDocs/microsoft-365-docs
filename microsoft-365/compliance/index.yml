@@ -27,11 +27,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: Know your data
-            url: protect-information.md#know-your-data
+            url: information-protection.md#know-your-data
           - text: Protect your data
-            url: protect-information.md#protect-your-data
+            url: information-protection.md#protect-your-data
           - text: Prevent data loss
-            url: protect-information.md#prevent-data-loss
+            url: information-protection.md#prevent-data-loss
           - text: Govern your data
             url: manage-information-governance.md
           - text: "Learning path: Manage information protection and governance"
@@ -77,10 +77,18 @@ landingContent:
           - text: Compliance Manager
             url: compliance-manager.md
           - text: GDPR compliance action plan
-            url: gdpr-action-plan.md
-          - text: Information protection for GDPR
-            url: office-365-info-protection-for-gdpr-overview.md
+            url: https://docs.microsoft.com/compliance/regulatory/gdpr-action-plan
           - text: ISO compliance action plan
-            url: iso-action-plan.md
+            url: https://docs.microsoft.com/compliance/regulatory/iso-action-plan
           - text: NIST compliance action plan
-            url: nist-action-plan.md
+            url: https://docs.microsoft.com/compliance/regulatory/nist-action-plan
+
+    # Card
+  - title: Deploy compliance solutions
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Deploy information protection for data privacy regulations
+            url: ../solutions/information-protection-deploy.md
+          - text: Information protection and compliance illustrations
+            url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities

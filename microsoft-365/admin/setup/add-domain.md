@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -38,7 +38,7 @@ description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center
 
 ::: moniker-end
 
- **[Check the Domains FAQ](domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for. 
   
  *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  
 
@@ -131,7 +131,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
-- [WordPress](https://wordpress.com/)
+- [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)
@@ -147,7 +147,7 @@ If you have a website that you use with your business, it will keep working wher
 
 ## Related articles
 
-[Domains FAQ](domains-faq.md)
+[Domains FAQ](domains-faq.yml)
 
 [What is a domain?](../get-help-with-domains/what-is-a-domain.md)
 

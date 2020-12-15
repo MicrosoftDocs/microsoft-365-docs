@@ -22,7 +22,7 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 1. Sign in to the Microsoft 365 admin center as a global admin.
 
-2. In the admin center, go to **Settings** \> **Settings** and select **Bookings**.
+2. In the admin center, go to **Settings** \> **Org Settings** and select **Bookings**.
 
 3. Select the checkbox for **Allow your organization to use Bookings** to enable or disable Bookings for your organization.
 
@@ -33,7 +33,7 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 ## Turn Bookings on or off for your organization using PowerShell
 
-To turn Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell]() and run the following command:
+To turn Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false

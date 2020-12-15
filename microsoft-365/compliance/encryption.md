@@ -1,5 +1,5 @@
 ---
-title: "Encryption"
+title: "Encryption in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,6 +17,8 @@ ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
+- m365solution-mip
+- m365initiative-compliance
 description: "With Office 365, your content is encrypted at rest and in transit with the strongest encryption, protocols, and technologies available. Get an overview of encryption in Office 365."
 ---
 
@@ -40,7 +42,7 @@ You can have multiple layers of encryption in place at the same time. For exampl
 
  **Examples of data at rest** include files that you've uploaded to a SharePoint library, Project Online data, documents that you've uploaded in a Skype for Business meeting, email messages and attachments that you've stored in folders in your mailbox, and files you've uploaded to OneDrive for Business.
   
- **Examples of data in transit** include mail messages that are in the process of being delivered, or conversations that are taking place in an online meeting. In Office 365, data is in transit whenever a user's device is communicating with a Microsoft server, or when an Microsoft server is communicating with another server.
+ **Examples of data in transit** include mail messages that are in the process of being delivered, or conversations that are taking place in an online meeting. In Office 365, data is in transit whenever a user's device is communicating with a Microsoft server, or when a Microsoft server is communicating with another server.
   
 With Office 365, multiple layers and kinds of encryption work together to secure your data. The following table includes some examples, with links to additional information.
   
@@ -64,6 +66,8 @@ To learn more, see the following resources:
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
 - [Service encryption with Customer Key in Office 365](customer-key-overview.md)
+
+- [Double Key Encryption for Microsoft 365](double-key-encryption.md)
 
 ## How do I...
 

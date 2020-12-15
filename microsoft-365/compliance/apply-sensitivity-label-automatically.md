@@ -1,5 +1,5 @@
 ---
-title: "Apply a sensitivity label to content automatically"
+title: "Automatically apply a sensitivity label to content in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,16 +15,19 @@ ms.topic: article
 search.appverid: 
 - MOE150
 - MET150
-description: "When you create a sensitivity label, you can automatically assign a label to a document or email, or you can prompt users to select the label that you recommend."
+description: "When you create a sensitivity label, you can automatically assign a label to files and emails, or you can prompt users to select the label that you recommend."
 ---
 
 # Apply a sensitivity label to content automatically
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-When you create a sensitivity label, you can automatically assign that label to content when it matches conditions that you specify.
+> [!NOTE]
+> For information about automatically applying a sensitivity label in Azure Purview (preview), see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
-The ability to apply sensitivity labels to content automatically is important because:
+When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
+
+This ability to apply sensitivity labels to content automatically is important because:
 
 - You don't need to train your users when to use each of your classifications.
 
@@ -32,9 +35,11 @@ The ability to apply sensitivity labels to content automatically is important be
 
 - Users no longer need to know about your policies—they can instead focus on their work.
 
-There are two different methods for automatically applying a sensitivity label:
+When content has been manually labeled, that label will never be replaced by automatic labeling. However, automatic labeling can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters) that was automatically applied.
 
-- **Client-side labeling when users edit documents or compose (also reply or forward) emails**: Use a label that's configured for auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook). 
+There are two different methods for automatically applying a sensitivity label to content in Microsoft 365:
+
+- **Client-side labeling when users edit documents or compose (also reply or forward) emails**: Use a label that's configured for auto-labeling for files and emails (includes Word, Excel, PowerPoint, and Outlook). 
     
     This method supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This client-side labeling has minimal delay for documents because the label can be applied even before the document is saved. However, not all client apps support auto-labeling. This capability is supported by the Azure Information Protection unified labeling client, and [some versions of Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
     
@@ -42,7 +47,7 @@ There are two different methods for automatically applying a sensitivity label:
 
 - **Service-side labeling when content is already saved (in SharePoint or OneDrive) or emailed (processed by Exchange Online)**: Use an auto-labeling policy. 
     
-    You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). 
+    You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes).
     
     Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
     
@@ -50,10 +55,11 @@ There are two different methods for automatically applying a sensitivity label:
     
     Specific to auto-labeling for SharePoint and OneDrive:
     - Office files for Word, PowerPoint, and Excel are supported. Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls).
+        - These files can be auto-labeled when they are not part of an open session and whether they have been created, uploaded, or changed since you created auto-labeling policies, or they are existing files that have not been changed since you created your auto-labeling policies.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
     - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive).
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
-    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who created the sensitivity label.
+    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
     Specific to auto-labeling for Exchange:
     - Unlike manual labeling or auto-labeling with Office apps, Office attachments (Word, Excel, and PowerPoint files) and PDF attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
@@ -68,9 +74,9 @@ There are two different methods for automatically applying a sensitivity label:
 
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling methods:
 
-|Feature or behavior|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
+|Feature or behavior|Label setting: Auto-labeling for files and emails  |Policy: Auto-labeling|
 |:-----|:-----|:-----|
-|App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
+|App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No \* |
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifiers|Yes |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
@@ -81,8 +87,7 @@ Use the following table to help you identify the differences in behavior for the
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes (encryption not applied) |
 
-> [!NOTE]
-> When content has been manually labeled, that label will never be replaced by automatic labeling. However, auto-labeling policies can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters) that was applied by using auto-labeling for Office apps.
+\* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the Auto-labeling tab isn't visible in the admin labeling center.
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
@@ -100,7 +105,11 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 Automatic labeling in Office apps for Windows is supported by the Azure Information Protection unified labeling client. For built-in labeling in Office apps, this capability is in [different stages of availability for different apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). You can choose to apply sensitivity labels to content automatically when sensitive information is detected. Choose from a list of sensitive info types or trainable classifiers:
+The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). Make sure **Files & emails** is selected for the label's scope: 
+
+![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
+
+As you move through the wizard, you see the **Auto-labeling for files and emails** page where you can choose from a list of sensitive info types or trainable classifiers:
 
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
@@ -188,14 +197,14 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - Simulation mode:
     - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
-    - To view file contents in the source view, you must have the **Content Explorer Content Viewer** role. Global admins don't have this role by default. If you don't have this permission, you don't see the previewer pane when you select an item from the **Matched Items** tab.
+    - To view file contents in the source view, you must have the **Content Explorer Content Viewer** role. Global admins don't have this role by default. If you don't have this permission, you don't see the preview pane when you select an item from the **Matched Items** tab.
 
 - To auto-label files in SharePoint and OneDrive:
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
     - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
 
 - If you plan to use [custom sensitive information types](custom-sensitive-info-types.md) rather than the built-in sensitivity types: 
-    - Custom sensitivity information types are evaluated for content that is created after the custom sensitivity information types are saved. 
+    - Custom sensitivity information types are evaluated for content that is added to SharePoint or OneDrive after the custom sensitivity information types are saved. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
 - One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
@@ -237,6 +246,8 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     ![Auto-labeling tab](../media/auto-labeling-tab.png)
     
+    > [!NOTE]
+    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region.
 
 3. Select **+ Create auto-labeling policy**. This starts the New policy wizard:
     
@@ -284,8 +295,6 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     ![Test out the policy auto-labeling wizard](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the wizard.
-    
-    Unlike auto-labeling for Office apps, there's no separate publish option. However, as with publishing labels, allow up to 24 hours for the auto-labeling policy to replicate throughout your organization.
 
 Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
@@ -310,7 +319,7 @@ You can also see the results of your auto-labeling policy by using [content expl
 
 ### Use PowerShell for auto-labeling policies
 
-You can now use [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) to create and configure auto-labeling policies. This means you can now fully script the creation and maintenance of your auto-labeling policies, which also provides a more efficient method of specifying multiple URLs for OneDrive and SharePoint locations.
+You can use [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) to create and configure auto-labeling policies. This means you can fully script the creation and maintenance of your auto-labeling policies, which also provides a more efficient method of specifying multiple URLs for OneDrive and SharePoint locations.
 
 Before you run the commands in PowerShell, you must first [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
@@ -347,4 +356,3 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 - [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule)
-
