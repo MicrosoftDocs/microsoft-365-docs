@@ -6,7 +6,6 @@ ms.author: efrene
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.service: o365-administration
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: enabler-strategic 

@@ -19,8 +19,6 @@ localization_priority: None
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-(Add Topic Center overview video here)
-
 The topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Topic Experiences setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
 
 The Topic center has a default home page (My topics) where all Topic Experience users can see the topics to which they have a connection. 
@@ -40,8 +38,6 @@ The Topic center is created during Topic Experiences setup. After setup complete
    ![Topic Center URL](../media/knowledge-management/topic-center-url-glance.png) </br>
 
 ## Home page
-
-(Add My Topics video here)
 
 On the Topic center home page, you can see the topics in your organization to which you have a connection.
 

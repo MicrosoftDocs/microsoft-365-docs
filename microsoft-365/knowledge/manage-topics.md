@@ -6,7 +6,6 @@ ms.author: efrene
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.service: o365-administration
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: enabler-strategic 
@@ -21,7 +20,7 @@ localization_priority: None
 
 In the Topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in SharePoint source locations as specified by your knowledge admin.  
 
-   ![Topic Center](../media/content-understanding/topic-center.png) </br> 
+   ![Topic Center](../media/knowledge-management/topic-center.png) </br> 
 
 
 
@@ -32,7 +31,7 @@ Knowledge managers help to guide discovered topics through the topic lifecycle i
 - Removed: A topic is rejected by a knowledge admin and will no longer be visible to viewers. The topic can be in any state when it is removed (suggested or confirmed). 
 - Published: A confirmed topic that has been manually updated.
 
-   ![Topic Lifecycle chart](../media/content-understanding/topic-lifecycle.png) </br> 
+   ![Topic Lifecycle chart](../media/knowledge-management/topic-lifecycle.png) </br> 
 
 ## Requirements
 
@@ -65,7 +64,7 @@ To review a suggested topic:
 
     Rejected topics will be removed from the **Suggested** list and will now display in the **Removed** tab.
 
-   ![Suggested topics](../media/content-understanding/suggested.png) </br> 
+   </br> 
 
 ## Confirmed topics
 

@@ -23,8 +23,6 @@ Topic experiences uses Microsoft AI technology, Microsoft 365, Delve, Microsoft 
 
    ![Knowledge Management flow](../media/knowledge-management/knowledge-management-flowchart.png) </br> 
 
-Note to CJ: Will replace this image with the video.
-
 Its goal is to convert information into knowledge and deliver it to your users in apps they use everyday, such as SharePoint modern pages and Microsoft Search.
 
 Topic experiences helps to address a key business issue in many companies - providing the information to users when they need it. For example, new employees need to learn a lot of new information quickly, and encounter terms they know nothing about when reading through company information. To learn more, the user might need to step away from what they are doing and spend valuable time searching for details, such as information about what the term is, who in the organization is a subject matter expert, and maybe sites and documents that are related to the term.

@@ -118,12 +118,12 @@ Existing topic pages can be found in the **Pages** page.
 
 4. Make the changes you need to the page. This includes updates to the following fields:
 
-    1. Alternate names
-    1. Description
-    1. People
-    1. Files and pages
-    1. Sites
-    1. You can also add static items to the page—such as text, images, or link—by selecting the canvas icon.
+    - Alternate names
+    - Description
+    - People
+    - Files and pages
+    - Sites
+    - You can also add static items to the page—such as text, images, or link—by selecting the canvas icon.
 
 5. Select **Republish** to save your changes.
 

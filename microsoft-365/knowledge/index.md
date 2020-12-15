@@ -56,7 +56,7 @@ The resources in this section help your users learn how to use and manage topics
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to work with topics|[Topic center overview](topic-center-overview.md)<br><br>[Manage topics](manage-topics.md)<br><br>[Create a new topic](create-a-topic.md)<br><br>[Edit an existing topic](edit-a-topic.md)<br><br>|
-|Understand user roles|[Topic Experience roles](Topic-experience-roles.md)|
+|Understand user roles|[Topic Experience roles](topic-experiences-roles.md)|
 |Understand why topics might differ to different users|[Topic Experiences security trimming](topic-experiences-security-trimming.md)|
 |Learn how to prevent specific topics from being identified and viewed|[Restrict access to topics](restrict-access-to-topics.md)|
 
