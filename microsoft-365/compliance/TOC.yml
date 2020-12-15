@@ -237,6 +237,8 @@
           href: endpoint-dlp-learn-about.md
         - name: Get started with Endpoint data loss prevention
           href: endpoint-dlp-getting-started.md
+        - name: Configure device proxy and internet connection settings for Endpoint DLP
+          href: endpoint-dlp-configure-proxy.md
         - name: Using Endpoint data loss prevention
           href: endpoint-dlp-using.md
         - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
