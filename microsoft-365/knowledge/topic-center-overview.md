@@ -6,7 +6,6 @@ ms.author: efrene
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.service: o365-administration
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: enabler-strategic
@@ -54,7 +53,7 @@ Once a user confirms their connection to a topic, the user can make edits to the
 
 ## Manage topics page
 
-To work in the **Manage Topics** section of Topic center, you need to have the required *Manage topics* permissions needed for the knowledge manager role. Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
+To work in the **Manage Topics** section of Topic center, you need to have the required *Manage topics* permissions needed for the knowledge manager role. Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.
 
 On the Manage Topics page, the topic dashboard shows topics that were identified from your specified source locations. Each topic will show the date the topic was discovered and if any feedback has been provided on it. A user who was assigned **Manage topics** permissions can review the unconfirmed topics and choose to:
 - Confirm the topic: Highlights the topic to users who have access and lets them see the associated topic card and topic page.
