@@ -282,8 +282,8 @@
             href: ms-cloud-germany-transition-phases.md
           - name: Additional information
             items: 
-            - name: General
-              href: ms-cloud-germany-transition-add-general.md
+            - name: Azure Active Directory
+              href: ms-cloud-germany-transition-azure-ad.md
             - name: Devices
               href: ms-cloud-germany-transition-add-devices.md
             - name: Pre-work
