@@ -40,20 +40,48 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 ## Configure the proxy server manually using a registry-based static proxy
 
-Configure a registry-based static proxy to allow only Microsoft Endpoint DLP to report diagnostic data and communicate with Microsoft endpoint cloud service if a computer is not be permitted to connect to the Internet.
+For endpoint devices that aren't permitted to connect to the Internet, you need to configure a registry-based static proxy. You need to configure this to allow only Microsoft Endpoint DLP to report diagnostic data and communicate with Microsoft endpoint cloud service.
 
 The static proxy is configurable through Group Policy (GP). The group policy can be found under:
-- Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
-    - Set it to **Enabled** and select **Disable Authenticated Proxy usage**: Image of Group Policy setting1
-- **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
-    - Configure the proxy: Image of Group Policy setting2
-    - The policy sets two registry values TelemetryProxyServer as REG_SZ and DisableEnterpriseAuthProxy as REG_DWORD under the registry key HKLM\Software\Policies\Microsoft\Windows\DataCollection.
-    - The registry value TelemetryProxyServer takes the following string format:
-    - <server name or ip>:<port>
-    - For example: 10.0.0.6:8080
-    - The registry value DisableEnterpriseAuthProxy should be set to 1.
 
+1. Open **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**
 
+2. Set it to **Enabled** and select **Disable Authenticated Proxy usage**: 
+
+![Image of group policy settings 1](../media/atp-gpo-proxy1.png)
+ 
+3. Open **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
+
+ Configure the proxy
+
+![Image of group policy settings 2](../media/atp-gpo-proxy2.png)
+
+The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
+
+The registry value TelemetryProxyServer is in this format \<server name or ip\>:\<port\>. For example: **10.0.0.6:8080**
+
+The registry value `DisableEnterpriseAuthProxy` should be set to 1.
+
+## Configure the proxy server manually using "netsh" command
+
+Use netsh to configure a system-wide static proxy.
+
+> [!NOTE] This will affect all applications including Windows services which use WinHTTP with default proxy. - Laptops that are changing topology (for example: from office to home) will malfunction with netsh. Use the registry-based static proxy configuration.
+
+1. Open an elevated command-line:
+    1. Go to **Start** and type **cmd**
+    1. Right-click **Command prompt** and select **Run as administrator**.
+2.	Enter the following command and press **Enter**:
+
+ 	`netsh winhttp set proxy <proxy>:<port>`
+
+ 	For example: **netsh winhttp set proxy 10.0.0.6:8080**
+
+3. To reset the winhttp proxy, enter the following command and press **Enter**:
+
+     `netsh winhttp reset proxy`
+
+See [Netsh Command Syntax, Contexts, and Formatting](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts) to learn more.
 ## See also
 
 - [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
