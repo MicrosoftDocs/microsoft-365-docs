@@ -44,7 +44,7 @@ For more information about these tiers and capabilities recommended for each tie
 
 The following table summarizes the configurations for each tier. Use these configurations as starting point recommendations and adjust the configurations to meet the needs of your organization. You may not need every tier.
 
-||Baseline (Public)|Baseline (Private)|Sensitive|Highly sensitive|
+|-|Baseline (Public)|Baseline (Private)|Sensitive|Highly sensitive|
 |:-----|:-----|:-----|:-----|:-----|
 |Private or public team|Public|Private|Private|Private|
 |Who has access?|Everybody in the organization, including B2B users.|Only members of the team. Others can request access to the associated site.|Only members of the team.|Only members of the team.|

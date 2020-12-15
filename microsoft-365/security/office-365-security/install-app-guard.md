@@ -74,9 +74,7 @@ For detailed system requirements, refer to [System requirements for Microsoft De
 
    Alternatively, you can set the corresponding CSP policy:
 
-   OMA-URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard**<br/>
-   Data type: **Integer**<br/>
-   Value: **2**
+   > OMA-URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> Data type: **Integer** <br> Value: **2**
 
 4. Reboot the system.
 
