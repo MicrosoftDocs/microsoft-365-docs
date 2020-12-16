@@ -68,7 +68,7 @@ Information barriers are rolling out now, and are included in subscriptions, suc
 - Microsoft 365 Compliance E5/A5
 - Microsoft 365 Insider Risk Management
 
-For more details, see [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
+For more details, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 To [define or edit information barrier policies](information-barriers-policies.md), you must be assigned one of the following roles:
 
@@ -77,7 +77,7 @@ To [define or edit information barrier policies](information-barriers-policies.m
 - Compliance administrator
 - IB Compliance Management (this is a new role!)
 
-(To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/protect-against-threats.md).)
+(To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center).)
 
 You must be familiar with PowerShell cmdlets in order to define, validate, or edit information barrier policies. Although we provide several examples of PowerShell cmdlets in the [how-to article](information-barriers-policies.md), you'll need to know additional details, such as parameters, for your organization.
 
