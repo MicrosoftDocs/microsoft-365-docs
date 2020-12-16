@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn about the Microsoft 365 admin center."
+description: "Learn more about the Microsoft 365 admin center."
 ---
 
 # Overview of the Microsoft 365 admin center

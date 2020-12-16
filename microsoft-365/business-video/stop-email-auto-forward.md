@@ -24,7 +24,7 @@ search.appverid:
 description: "Learn how to stop auto-forwarding emails."
 ---
 
-# Create email rules to prevent ransomware
+# Stop email auto-forward
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 

@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn how to join a Teams meeting with guests."
 ---
 
-# Schedule a Teams meeting with guests
+# Join a Teams meeting with guests
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 

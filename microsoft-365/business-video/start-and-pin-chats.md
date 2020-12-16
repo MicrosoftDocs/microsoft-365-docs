@@ -27,7 +27,7 @@ description: "Learn how to start and pin chats in Microsoft Teams."
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
 
-You can chat internally with your coworkers, or chat with a guest user, such as a customer or a partner. If [guest access is turned on](https://docs.microsoft.com/en-us/microsoftteams/set-up-guests) for your business, you can just type an email address to add a guest to a chat.
+You can chat internally with your coworkers, or chat with a guest user, such as a customer or a partner. If [guest access is turned on](https://docs.microsoft.com/microsoftteams/set-up-guests) for your business, you can just type an email address to add a guest to a chat.
 
 ## Try it!
 

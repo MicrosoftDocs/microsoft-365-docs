@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn how to sign up for Microsoft 365 Business Premium."
 ---
 
-# Sign up for Microsoft 365 Business Premium
+# Sign up for Microsoft 365 Business Premium subscription
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 
