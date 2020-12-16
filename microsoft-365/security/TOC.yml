@@ -122,7 +122,7 @@
                   href: mtp/mtp-autoir.md
                 - name: Configure automated investigation and response capabilities
                   href: mtp/mtp-configure-auto-investigation-response.md
-                - name: Remediation actions following automated investigations
+                - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
                 - name: Visit the Action center
                   href: mtp/mtp-action-center.md
@@ -369,7 +369,7 @@
           items: 
             - name: Exchange Online Protection
               items: 
-                - name: Configure the default anti-phishing policy in EOP
+                - name: Configure anti-phishing policies in EOP
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: Configure standalone EOP to deliver spam to the Junk Email folder
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
