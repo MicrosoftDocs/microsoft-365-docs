@@ -38,12 +38,9 @@ You can also find out how Office 365 can help customers comply with standards, l
     
 ## Who can access Office 365 Service assurance, and how?
 
- **New customers, and customers evaluating Microsoft online services** can access Service assurance which is included with Office 365 Enterprise E3 and E5 plans (both trial and paid subscriptions). If you don't have one of these plans and want to try Service assurance, you can [sign-up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
-  
- **Existing customers of Microsoft 365 for business** can access Service assurance. If you're the global admin (sometimes called company administrator) for your organization, you'll already have access to Service assurance, and you can onboard others. If you're not the global admin for your organization, and you need access to Service assurance, ask your admin to add you to the Service Assurance User role group. 
+ **New customers, and customers evaluating Microsoft online services** can access Service assurance which is included with Office 365 Enterprise E3 and E5 plans (both trial and paid subscriptions). If you don't have one of these plans and want to try Service assurance, you can [sign-up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
  **O365 Subscription Members** can access the Service assurance section in the Office 365 Protection Center by default. Service assurance provides reports and documents that describe Microsoft's security practices for customer data that's stored in Office 365. It also provides independent third-party audit reports on Office 365.
-  
  
 ## Choose your industry and regional settings
 <a name="Chooseyourindustryregional"> </a>

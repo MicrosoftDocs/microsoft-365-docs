@@ -212,33 +212,33 @@ To see which category a default alert policy is assigned to, see the table in th
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Audit Logs|||||||
 |Case Management|||||||
-|Compliance Administrator|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Compliance Administrator|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||![Check mark](../media/checkmark.png)||![Check mark](../media/checkmark.png)|
 |Compliance Search|||||||
 |Device Management|||||||
 |Disposition Management|||||||
-|DLP Compliance Management||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|DLP Compliance Management||![Check mark](../media/checkmark.png)|||||
 |Export|||||||
 |Hold|||||||
-|Manage Alerts||||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Organization Configuration||||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Manage Alerts||||||![Check mark](../media/checkmark.png)|
+|Organization Configuration||||||![Check mark](../media/checkmark.png)|
 |Preview|||||||
-|Record Management|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Retention Management|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Record Management|![Check mark](../media/checkmark.png)||||||
+|Retention Management|![Check mark](../media/checkmark.png)||||||
 |Review|||||||
 |RMS Decrypt|||||||
-|Role Management||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Role Management||||![Check mark](../media/checkmark.png)|||
 |Search And Purge|||||||
-|Security Administrator||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Security Reader||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Security Administrator||![Check mark](../media/checkmark.png)||![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
+|Security Reader||![Check mark](../media/checkmark.png)||![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)
 |Service Assurance View|||||||
 |Supervisory Review Administrator|||||||
 |View-Only Audit Logs|||||||
 |View-Only Device Management|||||||
-|View-Only DLP Compliance Management||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|View-Only Manage Alerts||||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|View-Only Recipients|||  ![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|View-Only Record Management|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|View-Only Retention Management|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|View-Only DLP Compliance Management||![Check mark](../media/checkmark.png)|||||
+|View-Only Manage Alerts||||||![Check mark](../media/checkmark.png)|
+|View-Only Recipients|||![Check mark](../media/checkmark.png)||||
+|View-Only Record Management|![Check mark](../media/checkmark.png)||||||
+|View-Only Retention Management|![Check mark](../media/checkmark.png)||||||
 |||||||
 
 > [!TIP]

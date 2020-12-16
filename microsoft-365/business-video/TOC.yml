@@ -1,0 +1,159 @@
+- name: Microsoft 365 small business training
+  href: index.yml
+  items: 
+    - name: Get started
+      items: 
+        - name: What is Microsoft 365
+          href: what-is-microsoft-365.md
+        - name: Overview of setup
+          href: setup-overview.md
+        - name: Choose a subscription
+          href: Choose-subscription.md
+    - name: Cloud setup
+      items:
+        - name: Sign up for a subscription
+          href: sign-up.md
+        - name: Set up the service
+          href: set-up.md
+        - name: Secure Windows 10 PCs
+          href: secure-win10-pcs.md
+        - name: Create a GoDaddy website
+          href: create-web-site.md
+    - name: Device setup
+      items: 
+        - name: Upgrade to Windows 10 Pro
+          href: upgrade.md
+        - name: Connect PCs to Microsoft 365
+          href: connect.md
+        - name: Install Microsoft Office apps
+          href: install-office.md
+        - name: Set up Outlook for email
+          href: setup-outlook.md 
+        - name: Import and redirect mail
+          href: import-email.md
+        - name: Move your files to OneDrive
+          href: files-to-onedrive.md
+        - name: Move company files to SharePoint
+          href: files-to-sharepoint.md    
+    - name: Mobile
+      items: 
+        - name: Work from anywhere
+          href: work-from-anywhere.md
+        - name: Install Office apps on Android
+          href: install-apps-android.md
+        - name: Install Office apps on iOS
+          href: install-apps-ios.md
+        - name: Get the Admin mobile app
+          href: admin-mobile.md 
+    - name: Collaborate
+      items: 
+        - name: Use Outlook and Teams
+          href: collab-outlook-teams.md
+        - name: Create a group email address
+          href: group-email.md
+        - name: Create a shared calendar
+          href: shared-calendar.md
+        - name: Create an org-wide team
+          href: org-wide-team.md 
+        - name: Create a team with guests
+          href: team-with-guests.md
+        - name: Join a team as a guest
+          href: join-team-guest.md
+        - name: Chat with employees and customers
+          href: start-and-pin-chats.md  
+        - name: Online meetings overview
+          href: overview-online-meetings.md 
+        - name: Schedule a meeting with guests
+          href: schedule-guest-meeting.md
+        - name: Join a meeting with guests
+          href: join-guest-meeting.md   
+    - name: Cloud storage
+      items:
+        - name: Sharing overview
+          href: overview-file-sharing.md
+        - name: Where to store files
+          href: store-files.md
+        - name: Securely share files externally
+          href: securely-share-files-externally.md
+        - name: Easily share files externally
+          href: share-files-externally.md  
+    - name: Business Voice
+      items:
+        - name: Overview of Business Voice
+          href: business-voice.md    
+        - name: Buy Business Voice add-on
+          href: buy-business-voice.md    
+    - name: Productivity apps
+      items:
+        - name: Overview of Bookings
+          href: overview-bookings.md
+        - name: Plan an event
+          href: plan-event.md   
+    - name: Manage services
+      items: 
+        - name: What is an admin
+          href: what-is-admin.md
+        - name: Overview of the admin center
+          href: admin-center-overview.md
+        - name: View, download, or print your bill
+          href: view-bill.md
+        - name: Update your payment method
+          href: update-payment.md 
+        - name: Reset user passwords
+          href: reset-user-passwords.md
+        - name: Set up self-service password reset
+          href: set-up-self-serve-password-reset.md
+        - name: Add a user
+          href: add-user.md  
+        - name: Delete a user
+          href: delete-user.md 
+        - name: Add another admin
+          href: add-admin.md
+        - name: Change a user name or email
+          href: change-user-name-email.md 
+        - name: Move users to a different subscription
+          href: change-subscription.md  
+        - name: Create a company-wide signature
+          href: company-wide-signature.md 
+        - name: Act on usage report
+          href: act-on-report.md
+        - name: Add another domain
+          href: add-domain.md 
+    - name: Manage devices
+      items:
+        - name: Secure Windows 10 Pro devices
+          href: secure-win-10-pro-devices.md
+        - name: Secure Office apps on iOS
+          href: secure-office-on-ios.md  
+    - name: Security & compliance
+      items: 
+        - name: Overview of Microsoft 365 Business Premium security
+          href: overview-m365-security.md
+        - name: Secure employee accounts with MFA
+          href: turn-on-mfa.md
+        - name: Set up two-factor sign-in on your phone
+          href: set-up-mfa.md
+        - name: Turn on malware detection
+          href: anti-malware.md 
+        - name: Create email rules for ransomware
+          href: prevent-ransom-in-email.md
+        - name: Stop auto-forwarding emails
+          href: stop-email-auto-forward.md
+        - name: Set up anti-phishing
+          href: setup-anti-phishing.md  
+        - name: Manage safe attachments
+          href: safe-attachments.md 
+        - name: Manage safe links
+          href: safe-links.md
+        - name: Prevent data loss
+          href: set-up-dlp.md 
+        - name: Create sensitivity labels
+          href: create-sensitivity-labels.md 
+    - name: Support
+      items:
+        - name: Find answers and help
+          href: find-help-answers.md
+        - name: Get help or support
+          href: get-help-support.md 
+        - name: Employee quick setup  
+          href: employee-quick-setup.md    

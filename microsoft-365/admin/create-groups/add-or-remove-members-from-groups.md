@@ -15,10 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: "Learn how to add a member to a group, remove member from group, and manage group owner status in the Microsoft 365 admin center."
 ---
@@ -32,9 +29,9 @@ In Microsoft 365, group members typically create their own groups, add themselve
   
 ## Add a member to a group in the admin center
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.  
+1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
 
-2. Select a group name.
+2. Click a group name.
 
 3. In the details pane, on the **Members** tab, select **View all and manage members**, and then select **Add members**.
 
@@ -44,9 +41,9 @@ In Microsoft 365, group members typically create their own groups, add themselve
 
 ## Add a group to a member in the admin center
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
+1. In the admin center, go to the [**Active users**](https://admin.microsoft.com/Adminportal/Home?#/users) page.  
 
-2. Select a user.
+2. Click a user.
 
 3. In the details pane, on the **Account** tab, select **Manage groups**.
 
@@ -57,11 +54,11 @@ In Microsoft 365, group members typically create their own groups, add themselve
 ## Remove a member from a group in the admin center
 
 > [!NOTE]
-> When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group (after membership changes are fully replicated among domain controllers).
+> When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group.
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
 
-2. Select a group name.
+2. Click a group name.
 
 3. In the details pane, on the **Members** tab, select **View all and manage members**.
 
@@ -75,13 +72,13 @@ By default, the person who created the group is the group owner. Often a group w
   
 ### Promote a member to owner status in the admin center
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
 
-2. Select a group name.
+2. Click a group name.
 
 3. In the details pane, on the **Members** tab, select **View all and manage owners**.
 
-4. Search for a member, or select **Add owners**.
+4. Select **Add owners**.
 
 5. Select the check box next to the name of the member you want to add.
 
@@ -89,9 +86,9 @@ By default, the person who created the group is the group owner. Often a group w
 
 ### Remove owner status in the admin center
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
 
-2. Select a group name.
+2. Click a group name.
 
 3. In the details pane, on the **Members** tab, select **View all and manage owners**.
 
@@ -103,7 +100,7 @@ By default, the person who created the group is the group owner. Often a group w
 
 - [Manage groups dynamically in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): see the section "How can I manage the membership of a group dynamically?"
 
-- To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
+- To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks).
 
 - [Assign a new owner to an orphaned group](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
