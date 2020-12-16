@@ -1,5 +1,7 @@
     - name: Get started with Topic experiences
       items: 
+        - name: Introduction to Topic experiences 
+          href: index.md         
         - name: Topic experiences overview
           href: topic-experiences-overview.md 
         - name: Topic experiences discovery and curation
