@@ -21,6 +21,11 @@ ms.collection:
 
 # Policies for allowing guest and external B2B access
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- Azure
+
 This article describes how to adjust the recommended common identity and device access policies to allow access for guest and external users that have an Azure Active Directory (Azure AD) Business-to-Business (B2B) account. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
 
 These recommendations are designed to apply to the **baseline** tier of protection. However, you can also adjust the recommendations based on the granularity of your needs for **sensitive** and **highly regulated** protection.
