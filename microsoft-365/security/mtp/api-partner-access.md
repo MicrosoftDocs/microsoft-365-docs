@@ -82,10 +82,10 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
    ![Image of the Register an application form](../..//media/atp-api-new-app-partner.png)
 
-4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft 365 Defender**, and then select **Microsoft 365 Defender**. Your app can now access Microsoft 365 Defender.
+4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**. Your app can now access Microsoft 365 Defender.
 
    > [!TIP]
-   > Microsoft 365 Defender will not appear in the original list. You need to start writing its name in the text box to see it appear.
+   > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
 
