@@ -102,6 +102,11 @@ Setting up and configuring EDM-based classification involves:
 
 #### Define the schema for your database of sensitive information
 
+If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type patter (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
+
+> [!NOTE]
+> The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
+
 1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax: 
 
       `\<Field name="" searchable=""/\>`.
@@ -247,7 +252,7 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
       </RulePackage>
       ```
 
-1. Upload the rule package by running the following PowerShell cmdlets, one at a time:
+2. Upload the rule package by running the following PowerShell cmdlets, one at a time:
 
       ```powershell
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
@@ -355,7 +360,10 @@ The hashing and uploading can be done using one computer or you can separate the
 
 If you want to hash and upload from one computer, you need to do it from a computer that can directly connect to your Microsoft 365 tenant. This requires that your clear text sensitive data files are on that computer for hashing.
 
-If you do not want to expose your clear text sensitive data file, you can hash it on a computer in a secure location and then copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload. In this scenario, you will need the EDMUploadAgent on both computers. 
+If you do not want to expose your clear text sensitive data file, you can hash it on a computer in a secure location and then copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload. In this scenario, you will need the EDMUploadAgent on both computers.
+
+> [!IMPORTANT]
+> If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, you ***must** download the schema for this procedure.
 
 #### Prerequisites
 
@@ -366,6 +374,7 @@ If you do not want to expose your clear text sensitive data file, you can hash i
     - your sensitive item file in csv format **PatientRecords.csv** in our examples
     -  and the output hash and salt files
     - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
+- If you used the [Exact Data Match schema and sensitive information type wizard](sit-edm-wizard.md) you ***must*** download it
 
 #### Set up the security group and user account
 
@@ -414,6 +423,10 @@ This computer must have direct access to your Microsoft 365 tenant.
 
 3. Sign in with your work or school account for Microsoft 365 that was added to the EDM_DataUploaders security group. Your tenant information is extracted from the user account to make the connection.
 
+OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, run the following command in a Command Prompt window:
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+
 4. To hash and upload the sensitive data, run the following command in Command Prompt window:
 
 `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
@@ -433,6 +446,10 @@ Look for the status to be in **ProcessingInProgress**. Check again every few min
 #### Separate Hash and upload
 
 Perform the hash on a computer in a secure environment.
+
+OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, run the following command in a Command Prompt window:
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 1. Run the following command in Command Prompt windows:
 
