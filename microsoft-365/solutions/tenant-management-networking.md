@@ -65,7 +65,7 @@ Microsoft 365 traffic must take an indirect route through your organization, whi
 
 With split tunneling, you can configure your VPN client to exclude specific types of traffic from being sent over the VPN connection to the organization network.
 
-To optimize access to Microsoft 365 cloud resources, configure your split tunneling VPN clients to exclude traffic to the **Optimize** category Microsoft 365 endpoints over the VPN connection. For more information, see [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories). See [the lists](../microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#implement-vpn-split-tunneling) of Optimize category endpoints.
+To optimize access to Microsoft 365 cloud resources, configure your split tunneling VPN clients to exclude traffic to the **Optimize** category Microsoft 365 endpoints over the VPN connection. For more information, see [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories). See [the lists](../microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) of Optimize category endpoints.
 
 Here is the resulting traffic flow for split tunneling, in which most of the traffic to Microsoft 365 cloud apps bypass the VPN connection.
 
@@ -73,7 +73,7 @@ Here is the resulting traffic flow for split tunneling, in which most of the tra
 
 This allows the VPN client to send and receive crucial Microsoft 365 cloud service traffic directly over the Internet and to the nearest entry point into the Microsoft network.
 
-For more information and guidance, see [Optimize Office 365 connectivity for remote users using VPN split tunneling](../microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?).
+For more information and guidance, see [Optimize Office 365 connectivity for remote users using VPN split tunneling](../microsoft-365/enterprise/microsoft-365-vpn-split-tunnel.md).
 
 ## Using Network Insights
 

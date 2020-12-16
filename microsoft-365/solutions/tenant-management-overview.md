@@ -18,9 +18,25 @@ description: "An overview of the planning, deployment, and ongoing operation of 
 
 # Tenant management for Microsoft 365 for enterprise
 
+Needs business framing
+
+<!--
+
+Example: 
+
+Your business may need to enable your workers to have secure access to your organization's on-premises and cloud-based information, tools, and resources from their homes. Allowing workers to work away from the office is important for many organizations to:
+
+- Save on office space.
+- Hire and retain workers who are unwilling to relocate.
+- Reduce worker commuting, leaving them with more time to be productive and for stress-reducing activities outside of work.
+
+--> 
+
+## A Microsoft 365 tenant defined
+
 A Microsoft 365 tenant is a dedicated instance of the services of Microsoft 365 and your organization data stored within a specific default location, such as Europe or North America. This location is specified when you create the tenant for your organization. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. You create a Microsoft 365 tenant when you purchase one or more services from Microsoft, such as Microsoft 365 E3 or E5, and a set of licenses for each.
 
-Your Microsoft 365 tenant also includes an Azure Active Directory (AD) tenant, which is a dedicated instance of Azure AD for user accounts, groups, and other objects. Each Azure AD tenant is distinct, unique, and separate from all other Azure AD tenants. While your organization can have multiple Azure AD tenants that you can set up with Azure subscriptions, Microsoft 365 tenants can only use a single Azure AD tenant, the one that was created when you created the tenant. 
+Your Microsoft 365 tenant also includes an Azure Active Directory (Azure AD) tenant, which is a dedicated instance of Azure AD for user accounts, groups, and other objects. Each Azure AD tenant is distinct, unique, and separate from all other Azure AD tenants. While your organization can have multiple Azure AD tenants that you can set up with Azure subscriptions, Microsoft 365 tenants can only use a single Azure AD tenant, the one that was created when you created the tenant. 
 
 Here is an example:
 
@@ -30,26 +46,77 @@ Here is an example:
 
 ## Attributes of a well-designed and operating tenancy
 
-Beyond choosing the right name and location for your tenancy, there are additional elements to plan, deploy, and manage to ensure that your users can use the cloud productivity apps of your tenants, such as Microsoft Teams and Exchange Online, can operated effectively, securely, and performant.
+Beyond choosing the right name and location for your tenancy, there are additional elements to plan, deploy, and manage to ensure that your user experiences with cloud productivity apps, such as Microsoft Teams and Exchange Online, are effective, secure, and performant.
+
 Here are the elements:
 
-- You have the correct set of services (subscriptions) and licenses
-  - The set of services match your business, IT, and security needs
-  - There is an adequate number of licenses for your workers and anticipated changes in staffing
+- You have the correct set of services (subscriptions) and licenses.
+  - The set of services match your business, IT, and security needs.
+  - There is an adequate number of licenses for your workers and anticipated changes in staffing.
 - For networking:
-  - You have configured the correct DNS domain names
-  - For enterprise networks, you have optimized network traffic to the Microsoft network for onsite workers
-  - You have optimized network traffic for remote workers who are using a VPN client
-- You have synchronized your Active Directory Domain Services (AD DS) accounts, groups, and other objects
-  - Your Azure AD tenant accounts are mapped to Exchange Online mailboxes with the correct DNS domains for email addresses
-  - Your user accounts have been assigned the correct licenses from the correct purchased services (such as Microsoft 365 E3 or E5)
-- You have configured strong identity and access management
-  - You are requiring secure user sign-in with passwordless or multi-factor authentication (MFA)
-  - You have Conditional Access policies that enforce sign-in requirements and restrictions for higher levels of security
-- On-premises Office servers and their data have been migrated to cloud apps or are being used in a hybrid configuration
-- You are doing device management with Intune or Basic Mobility and Security built into Microsoft 365
-  - Your organization-owned devices are enrolled and managed
-  - The apps for personal devices are managed
+  - You have configured the correct DNS domain names.
+  - For enterprise networks, you have optimized network traffic to the Microsoft network for onsite workers.
+  - You have optimized network traffic for remote workers who are using a VPN client.
+- You have synchronized your Active Directory Domain Services (AD DS)accounts, groups, and other objects.
+  - Your Azure AD tenant accounts are mapped to Exchange Online mailboxes with the correct DNS domains for email addresses.
+  - Your user accounts have been assigned the correct licenses from the correct purchased services (such as Microsoft 365 E3 or E5).
+- You have configured strong identity and access management.
+  - You are requiring secure user sign-in with passwordless or multi-factor authentication (MFA).
+  - You have Conditional Access policies that enforce sign-in requirements and restrictions for higher levels of security.
+- On-premises Office servers and their data have been migrated to cloud apps or are being used in a hybrid configuration.
+- You are doing device management with Intune or Basic Mobility and Security built into Microsoft 365.
+  - Your organization-owned devices are enrolled and managed.
+  - The apps for personal devices are managed.
+
+Here is an example of a Microsoft 365 tenant with all these elements in place.
+
+![An example Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-tenant-config.png)
+
+This Microsoft 365 tenant includes:
+
+- Services and licenses for Microsoft 365 E3 and E5.
+- Microsoft 365 productivity apps.
+- Intune with enrolled devices and device and application policies.
+- An Azure AD tenant that has synchronized user account (groups and other directory objects are not shown), domains, and Conditional Access policies.
+
+## Tenant capabilities for Microsoft 365 for enterprise
+
+| Tenancy capability or feature | Description | Licensing |
+|:-------|:-----|:-------|
+| Multiple tenancies |  | Microsoft 365 E3 or E5 | 
+| Cross-tenant mailbox migration |  | Microsoft 365 E3 or E5 | 
+| Multi-Geo |  | Microsoft 365 E3 or E5 | 
+| Move core data to a new datacenter geo |  | Microsoft 365 E3 or E5 | 
+||||
+
+
+| Networking capability or feature | Description | Licensing |
+|:-------|:-----|:-------|
+| Network Insights |  | Microsoft 365 E3 or E5 | 
+| Automate endpoint updates |  | Microsoft 365 E3 or E5 | 
+||||
+
+
+| Identity capability or feature | Description | Licensing |
+|:-------|:-----|:-------|
+| Synchronize on-premises Active Directory Domain Services (AD DS) with your Azure AD tenant	| 	| Microsoft 365 E3 or E5 |
+| MFA enforced with security defaults	| Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.	| Microsoft 365 E3 or E5 |
+| MFA enforced with Conditional Access| Require MFA based on the properties of the sign-in with Conditional Access policies.	| Microsoft 365 E3 or E5 | 
+| MFA enforced with risk-based Conditional Access	| Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses | 
+| Self-Service Password Reset (SSPR)	| Allow your users to reset or unlock their passwords or accounts.	| Microsoft 365 E3 or E5 |
+||||
+
+| Migration capability or feature | Description | Licensing |
+|:-------|:-----|:-------|
+|  |  | Microsoft 365 E3 or E5 | 
+||||
+
+| Device management capability or feature | Description | Licensing |
+|:-------|:-----|:-------|
+| Microsoft Intune | Manage devices and applications.	| Microsoft 365 E3 or E5 | 
+| Basic Mobility and Security | Manage devices and applications.	| Microsoft 365 E3 or E5 | 
+||||
+
 
 ## Next steps
 
