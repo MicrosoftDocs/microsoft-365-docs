@@ -25,3 +25,8 @@ description: "Description."
 
 ## Enforcing strong sign-ins
 
+## Next step
+
+[![Step 4. Migrate your on-premises Office servers and data](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
+
+Continue with [migration](tenant-management-migration.md) to migrate your on-premises Office servers and their data to Microsoft 365.

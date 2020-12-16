@@ -82,7 +82,7 @@ Here is an example.
 
 ![Example of a multi-geo Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
-For more information, see [Microsoft 365 Multi-Geo](..enterprise/microsoft-365-multi-geo.md).
+For more information, see [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
 
 ## Moving core data to a new datacenter geo
 

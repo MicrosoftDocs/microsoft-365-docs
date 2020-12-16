@@ -23,3 +23,10 @@ description: "Description."
 
 ## Decommissioning on-premises servers
 
+
+## Next step
+
+[![Step 5. Deploy device and app management](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
+
+Continue with [device management](tenant-management-device-management.md) to deploy device and app management.
+
