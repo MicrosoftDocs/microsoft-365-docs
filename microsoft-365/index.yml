@@ -265,8 +265,8 @@ additionalContent:
               url: /Kaizala
             - text: Microsoft Stream
               url: /stream/
-            - text: SharePoint Syntex
-              url: contentunderstanding/index.md
+            - text: MileIQ
+              url: https://docs.microsoft.com/office365/mileiq/
             - text: Yammer
               url: /yammer/yammer-landing-page
         # Card
