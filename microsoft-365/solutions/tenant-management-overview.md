@@ -24,7 +24,7 @@ Your Microsoft 365 tenant also includes an Azure Active Directory (AD) tenant, w
 
 Here is an example:
 
-[An example Microsoft 365 tenant with its Azure AD tenant](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![An example Microsoft 365 tenant with its Azure AD tenant](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *Tenant management* is the planning, deployment, and ongoing operation of your Microsoft 365 tenants. 
 
