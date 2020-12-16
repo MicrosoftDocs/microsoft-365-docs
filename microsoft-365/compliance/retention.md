@@ -306,21 +306,21 @@ Explanation for the four different levels:
         
         The document is deleted after seven years because the delete action from the retention label takes precedence.
     
-    2. When you have retention policies only: If a retention policy is scoped to specific locations or uses an include configuration (such as specific users for Exchange email) that retention policy takes precedence over unscoped retention policies.
+    2. When you have retention policies only: If a retention policy for a location is scoped to use an include configuration (such as specific users for Exchange email) that retention policy takes precedence over unscoped retention policies for the same location.
         
-        An unscoped retention policy uses the default location selection of **Exchange email** and **All recipients**, **SharePoint sites** and **All sites**, **OneDrive accounts** and **All accounts**, and **Microsoft 365 Groups** and **All groups**. Note that retention policies for Teams and Yammer are always scoped. All scoped retention policies have equal precedence.
+        An unscoped retention policy is where the locations is selected without any further configuration to specify specific instances. For example, **Exchange email** and **All recipients**. Or, **SharePoint sites** and **All sites**. All scoped retention policies for a location have equal precedence.
         
         Example 1: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
         
         The email message is deleted after five years because the deletion action from the scoped retention policy takes precedence over the unscoped retention policy.
         
-        Example 2: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. 
+        Example 2: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
         
         When this document will be deleted can't be determined at this level because both policies are scoped.
 
 4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies and the outcome couldn't be resolved from the previous level: Content is deleted at the end of the shortest retention period.
     
-    Example: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to all OneDrive accounts and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years. 
+    Example: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
     
     This document will be deleted after seven years because that's the shortest retention period for these two scoped retention policies.
 
@@ -334,7 +334,7 @@ More complex examples that combine retain and delete actions:
     - A retention policy that retains for three years and then deletes
     - A retention label that retains-only for seven years
     
-    **Outcome**: The item is retained for seven years because retention takes precdence over deletion and seven years is the longest retention period. At the end of this retention period, the item is deleted because of the delete action from the retention policies that was deferred while the item was retained. 
+    **Outcome**: The item is retained for seven years because retention takes precdence over deletion and seven years is the longest retention period. At the end of this retention period, the item is deleted because of the delete action from the retention policies that was deferred while the item was retained.
     
     Although the two retention policies have different dates for the delete actions, the earliest the item can be deleted is at the end of the longest retention period, so there is no conflict to resolve.
 
@@ -344,7 +344,7 @@ More complex examples that combine retain and delete actions:
     - A scoped retention policy that retains for five years and then deletes
     - A retention label that retains for three years and then deletes
     
-    **Outcome**: The item is retained for fives years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action from the retention label that was deferred while the item was retained.
+    **Outcome**: The item is retained for fives years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained.
 
 ## Use Preservation Lock to restrict changes to policies
 
