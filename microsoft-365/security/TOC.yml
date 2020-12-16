@@ -369,7 +369,7 @@
           items: 
             - name: Exchange Online Protection
               items: 
-                - name: Configure the default anti-phishing policy in EOP
+                - name: Configure anti-phishing policies in EOP
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: Configure standalone EOP to deliver spam to the Junk Email folder
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
