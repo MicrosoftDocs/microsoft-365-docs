@@ -53,7 +53,7 @@ The resources in this section help your admin in your organization to set up and
 |Learn how manage who can view topics|[Manage topic visibility](topic-experiences-knowledge-rules.md)|
 |Learn how to manage your topic discovery settings|[Manage topic discovery](topic-experiences-discovery.md)|
 
-## Set started with topics
+## Work with topics
 
 The resources in this section help your users learn how to use and manage topics.
 
