@@ -65,7 +65,7 @@ The **Tags** column in the email grid contains all the tags that have been appli
 
 You can use tags as a filter. Hunt just across priority accounts or specific user tags scenarios. You can also exclude results that have certain tags. Combine this functionality with other filters to narrow your scope of investigation.
 
-[ ![Filter tags](../../media/tags-filter-normal.png) ](../../media/tags-filter-normal.png#lightbox)
+[![Filter tags](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![Not filter tags](../../media/tags-filter-not.png)
@@ -146,7 +146,8 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 > - There will be new fields and values for **Detection technologies** and **Additional actions** (especially for ZAP scenarios). You'll need to evaluate your existing saved queries and tracked queries to make sure they work with the new values.
 
 > [!div class="mx-imgBorder"]
-> ![Additional actions display](../../media/Additional_Actions.png)
+
+> ![Additional Actions in Explorer](../../media/Additional_Actions.png)
 
 ### System overrides
 
@@ -158,10 +159,10 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 - Blocked by org policy: The organization's security teams set policies or mail flow rules to block senders, domains, message languages, or source IPs for users in their organization. This can be applied to a set of users or the entire organization.
 - File extension blocked by org policy: An organization's security team blocks a file name extension through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also use the rich-filtering capability to filter on blocked file extensions.
 
-[ ![System overrides dialog box](../../media/System_Overrides.png) ](../../media/System_Overrides.png#lightbox)
+[![System Overrides in Explorer](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Details tab of system overrides grid](../../media/System_Overrides_Grid.png)
+> ![System Overrides Grid in Explorer](../../media/System_Overrides_Grid.png)
 
 ### Improvements for the URL and clicks experience
 
@@ -181,7 +182,7 @@ The improvements include:
 
 Phish confidence level helps identify the degree of confidence with which an email was categorized as "phish." The two possible values are *High* and *Normal*. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
-[ ![Phish confidence level](../../media/Phish_Confidence_Level.png) ](../../media/Phish_Confidence_Level.png#lightbox)
+[![Phish Confidence Level in Explorer](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### ZAP URL signal
 
@@ -347,14 +348,14 @@ Follow this path to get to the same location in the Real-time detections report:
 
 Suppose you want to see malware detected in email sorted by Microsoft 365 technology. To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections).
 
-1. In the [Security & Compliance Center](https://protection.office.com), select **Threat management** > **Explorer** or **Real-time detections**. (The following example uses Explorer.)
+1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. From the **View** menu, select **Email** > **Malware**.
+2. In the **View** menu, choose **Email** \> **Malware**.
 
    > [!div class="mx-imgBorder"]
    > ![View menu for Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Select **Sender** and then **Basic** > **Detection technology**.
+3. Click **Sender**, and then choose **Basic** \> **Detection technology**.
 
    Your detection technologies are now available as filters for the report.
 
@@ -374,14 +375,14 @@ Suppose that you want to see phishing attempts through URLs in email, including 
 
 To review phish URLs in messages and clicks on URLs in phish messages, use the [**Email** > **Phish**](threat-explorer-views.md#email--phish) view of Explorer or Real-time detections.
 
-1. In the [Security & Compliance Center](https://protection.office.com), select **Threat management** > **Explorer** or **Real-time detections**. (This example uses Explorer.)
+1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. From the **View** menu, select **Email** > **Phish**.
+2. In the **View** menu, choose **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
    > ![View menu for Explorer in phishing context](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Select **Sender**, and then **URLs** > **Click verdict**.
+3. Click **Sender**, and then choose **URLs** \> **Click verdict**.
 
 4. Select one or more options, such as **Blocked** and **Block overridden**, and then select the **Refresh** button on the same line as the options to apply that filter. (Don't refresh your browser window.)
 
@@ -421,14 +422,14 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Report Message add-in for Outlook and Outlook on the web](enable-the-report-message-add-in.md). To see them, use the [**Email** > **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
 
-1. In the [Security & Compliance Center](https://protection.office.com](https://protection.office.com), go to **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. From the **View** menu, go to **Email** > **Submissions**.
+2. In the **View** menu, choose **Email** \> **Submissions**.
 
    > [!div class="mx-imgBorder"]
    > ![View menu for Explorer for emails](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Select **Sender**. Go to **Basic** > **Report type**.
+3. Click **Sender**, and then choose **Basic** \> **Report type**.
 
 4. Select an option, such as **Phish**, and then select the **Refresh** button.
 
@@ -467,13 +468,13 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 - For the Security & Compliance Center, you must have one of the following roles assigned:
 
   - Organization Management
-  - Security Administrator, which can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))
+  - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in the [Exchange admin center](https://outlook.office365.com/ecp) or through PowerShell cmdlets (see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
+- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (<https://admin.protection.outlook.com/ecp/>) or [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
 
   - Organization Management
-  - View-only Organization Management
+  - View-Only Organization Management
   - View-Only Recipients
   - Compliance Management
 

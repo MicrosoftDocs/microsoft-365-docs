@@ -38,13 +38,13 @@ Follow these steps to choose, plan, and configure your voice solution:
 
 ![Choose your voice solution](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
-1. [Choose your voice solution](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+1. [Choose your voice solution](https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
 
-2. [Set up Phone System](https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+2. [Set up Phone System](https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
 
 3. Set up PSTN connectivity by choosing one, or a combination, of the following:
-   - [Calling Plan](https://docs.microsoft.com/microsoftteams/set-up-calling-plans/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) - Microsoft's all-in-the-cloud solution with Microsoft as your PSTN carrier
-   - [Direct Routing](https://docs.microsoft.com/microsoftteams/direct-routing-configure/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) - Use Direct Routing to connect your own PSTN carrier to Teams 
+   - [Calling Plan](https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) - Microsoft's all-in-the-cloud solution with Microsoft as your PSTN carrier
+   - [Direct Routing](https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) - Use Direct Routing to connect your own PSTN carrier to Teams 
 
 In addition, you might want read about how a large, multi-national corporation migrated to a Teams voice solution in the [Contoso case study](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json).
 

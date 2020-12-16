@@ -2,8 +2,8 @@
 title: "Analyze case data with Advanced eDiscovery"
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
