@@ -19,7 +19,7 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ---
-# Microsoft 365 Security center overview
+# Microsoft 365 security center overview
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -28,37 +28,33 @@ ms.custom: seo-marvel-jun2020
 
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 
-Protecting your business from an ever-evolving threat landscape brings many challenges. You might have too many security solutions with various places to configure lots of controls. You may struggle with knowing which controls are the most effective and which will introduce new challenges for your workforce. 
+Protecting your business from an ever-evolving threat landscape brings many challenges. You might have too many security solutions with various places to configure lots of controls. You may struggle with knowing which controls are the most effective and which will introduce new challenges for your workforce.
 
-The new [Microsoft 365 security center (https://security.microsoft.com)](https://security.microsoft.com) integrates signals across Microsoft 365 services, providing you actionable insights across your endpoints, email, identities, and apps.
+The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) integrates signals across Microsoft 365 services, providing you actionable insights across your endpoints, email, identities, and apps. It emphasizes quick access to information, simpler layouts, and clarity across a single security center.
 
-This security center emphasizes quick access to information, simpler layouts, and clarity across a single security center. The new design fortifies Office 365, by combining and streamlining Office 365 security, and endpoint security workloads. Here, you can manage security, regardless of workload.
+This combined center means your Office 365 or Microsoft 365 subscription, and the devices that connect to it, are secured in a single portal.
 
-> [!NOTE]
-> One new addition you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 Security center: https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
-
-The new [Microsoft 365 security center](https://security.microsoft.com/) combines:
+The new Microsoft 365 security center now includes these products:
 
  - **Microsoft Defender for Office 365 (or MDO)**
  - **Microsoft Defender for Endpoint (or MDE)**
 
-in one easy to navigate location. This combined center means your Office 365 or Microsoft 365 subscription, and the devices that connect to it, are secured in a single portal.
-
-If you want more information about moving what's changed from the Office 365 Security & Compliance center or the Microsoft Defender security center, see these articles:
+If you want more information about what's changed from the Office 365 Security & Compliance center or the Microsoft Defender security center, see these articles:
 
 - [Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
 - [Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 
+> [!NOTE]
+> You can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 security center: https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
+
 ## What to expect
 
-The Microsoft security center emphasizes *unity, clarity, and common goals*. Some of the priorities used to merge Microsoft Defender for Office 365 and Microsoft Defender for Endpoint emphasize:
+The Microsoft security center emphasizes *unity, clarity, and common goals*. The priorities used to merge Microsoft Defender for Office 365 and Microsoft Defender for Endpoint emphasize the following traits without sacrificing the capabilities that each security suite brought to the combination:
 
 - common building blocks
 - common terminology
 - common entities
 - parity
-
-without sacrificing the capabilities that each security suite brought to the combination.
 
 > [!NOTE]
 > If you leverage Office 365 Cloud App Security, you can use its additional features for discovering **Shadow IT apps**, **controlling app permissions to Office 365**, and more, all accessible through **Policies & rules > Manage advanced alerts**. <p> **Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams. 
@@ -68,25 +64,23 @@ without sacrificing the capabilities that each security suite brought to the com
 
 ## Efficiency gains
 
-Streamlining security centers also creates a single pane for investigating any incidents taking place in Office 365. A primary example is the **Incidents** node on the quick launch of the Microsoft security center.
+Streamlining security centers also creates a single pane for investigating any incidents taking place in Office 365. A primary example is the **Incidents** node on the quick launch of the Microsoft 365 security center.
 
 ![Incidents in the Microsoft 365 security center](../../media/converged-incidents-2.png)
 
-Double-clicking on an incident name listed here, for example, on a Severity **High** incident, brings you to a page that better demonstrates the advantage of converging centers.
+For example, double-clicking on an incident name with **High** severity brings you to a page that better demonstrates the advantage of converging centers.
 
-![multi-stage incident involving privilege escalation on multiple endpoints, showing see 16 impacted devices and 9 impacted users](../../media/converged-incident-info-3.png)
+![multi-stage incident involving privilege escalation on multiple endpoints, showing see 16 impacted devices and 9 impacted users.](../../media/converged-incident-info-3.png)
 
 > [!TIP]
-> The converged **Users** tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and MCAS, if you leverage it), and across a range of sources, such as on-premises AD, Azure AD, synced, local, and Third party users.
+> The converged **Users** tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and MCAS, if you leverage it), and across a range of sources, such as on-premises AD, Azure AD, synced, local, and third-party users.
 
-Incident information shows user/identity specifics and at-risk devices, beside affected mailboxes. It also relates any **Investigation information** and gathered **Evidence**. This makes it easier for admins and ops teams to pivot from one high-risk alert, to its affected users and mailboxes. Looking at the **Incident** tabs at the top of this page, there are other key security pivots available from this single location.
+Incident information shows user/identity specifics and at-risk devices, beside affected mailboxes. It also relates any **Investigation information** and gathered **Evidence**. This makes it easier for admins and security operation teams to pivot from one high-risk alert to the affected users and mailboxes. Looking at the **Incident** tabs at the top of this page, there are other key security pivots available from this single location.
 
 > [!IMPORTANT]
-> Along the top of any page for a specific Incident, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, and **Evidence** tabs. 
+> Along the top of any page for a specific Incident, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, and **Evidence** tabs.
 
-Selecting these opens unified data about the incident. For example, a High severity incident would list information from 9 users, and 16 devices, on respective tabs. 
-
-Selecting **Investigations** opens  a page that features a graphic of the analysis taking place, for example, on a user mailbox, and list a status (such as **pending approval**) for remediation. Take time to select specific incidents in your environment, drill down into these tabs, and practice building a profile for different kinds of threats. Familiarity will benefit any later pressing investigations.
+Selecting **Investigations** opens  a page that features a graphic of the analysis taking place and list a status (such as **pending approval**) for remediation. Take time to select specific incidents in your environment, drill down into these tabs, and practice building a profile for different kinds of threats. Familiarity will benefit any later pressing investigations.
 
 ## Improved processes
 
@@ -98,11 +92,10 @@ The layout has also been merged wherever centers overlap. Common controls and co
 **Integrated permissions & roles**
 ![Permissions & Roles page showing Endpoints roles & groups, Roles, and Device groups.](../../media/converged-roles-5.png)
 
- Select either of **Roles** or **Device groups** will drop admins deeper into Settings, in the **Permissions** section (but take a second to look at the other nodes here).
+ Selecting either of **Roles** or **Device groups** drops admins deeper into the **Permissions** section (but take a second to look at the other nodes here).
 ![clicked 'Roles' and opened the Settings page, which includes General settings, Permissions, APIs and Rules. Open Permissions and then Roles. Shows all roles](../../media/converged-settings-6.png)
 
-
-**Roles** allow admins to create and bundle permissions, and then add user groups to them. Role creation is done on the General tab. Members of the security team can access parts of the center to do work, once they're added here. After creation, the Role wizard also reminds you that user groups can be added to this Role 'at a later phase' using the **Assigned user groups** tab. 
+**Roles** allow admins to create and bundle permissions, and then add user groups to them. Role creation is done on the General tab. Members of the security team can access parts of the center to do work, once they're added here. After creation, the Role wizard also reminds you that user groups can be added to this Role 'at a later phase' using the **Assigned user groups** tab.
 
 **Device Groups** work the same way. On the same General flyout where you create the Device Group, you can select the User access tab to grant Azure AD user groups access to a device group.
 ![add the Role via the General tab, and then add users / groups to it on the Assigned user groups tab](../../media/converged-add-role-7.png)
@@ -115,6 +108,7 @@ Reports are also unified in the Microsoft 365 security center. Admins can start 
 ![help menu from the Home page of Microsoft 365 security center is in the upper right of the screen under the question mark.](../../media/converged-home-8.gif)
 
 ### Related information
+
 [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 
 [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
