@@ -137,6 +137,10 @@ This report helps organizations understand:
 
 [Learn more about Microsoft Graph](https://docs.microsoft.com/graph/)
 
+> [!NOTE]
+> Users also have the option to get productivity insights from the [MyAnalytics dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+
+
 ## We want to hear from you
 
 Share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at prodscorefeedback@microsoft.com.
