@@ -34,16 +34,16 @@ Microsoft eDiscovery tools support items encrypted with Microsoft encryption tec
 
 ## eDiscovery activities that support encrypted items
 
-The following table identifies the tasks performed in Microsoft 365 eDiscovery tools that support decryption of encrypted files attached to email massages and encrypted documents in SharePoint and OneDrive. The support tasks can be performed on an encrypted file that's attached to an email message and site documents that match the criteria of a search. A value of "N/A" indicates that the function isn't available in the corresponding eDiscovery tool.
+The following table identifies the supported tasks that can be performed in Microsoft 365 eDiscovery tools on encrypted files attached to email massages and encrypted documents in SharePoint and OneDrive. These supported tasks can be performed on an encrypted files that match the criteria of a search. A value of "N/A" indicates the functionality isn't available in the corresponding eDiscovery tool.
 
 |eDiscovery task  |Content search  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
 |Search for content in encrypted files in email and sites     |Yes      |Yes      |Yes      |
 |Preview encrypted files attached to email     |Yes      |Yes     |Yes       |
 |Preview encrypted documents in SharePoint and OneDrive|No      |No    |Yes       |
-|Review encrypted files attached to email in a review set    |N/A      |N/A        | Yes        |
+|Review encrypted files in a review set    |N/A      |N/A        | Yes        |
 |Export encrypted files attached to email    |Yes       |Yes  |Yes    |
-|Export encrypted documents SharePoint and OneDrive attached    |No       |No  |Yes    |
+|Export encrypted documents in SharePoint and OneDrive    |No       |No  |Yes    |
 |||||
 
 ## Requirements for decryption in eDiscovery
