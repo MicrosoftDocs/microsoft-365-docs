@@ -144,7 +144,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Changes are coming soon in your security center
 
-If you’re already using AIR capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [new and improved Microsoft 365 security center](microsoft-365-security-center-getting-started.md). 
+If you’re already using AIR capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [new and improved Microsoft 365 security center](../mtp/overview-security-center.md). 
 
 The new and improved security center brings together AIR capabilities in [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) and in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
 
