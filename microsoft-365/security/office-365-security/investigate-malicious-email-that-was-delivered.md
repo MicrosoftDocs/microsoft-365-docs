@@ -53,11 +53,14 @@ To perform certain actions, such as viewing message headers or downloading email
 |---|---|---|
 |Use Threat Explorer (and real-time detections) to analyze threats ​|Global Administrator <p> Security Administrator <p> Security Reader|No|
 |Use Threat Explorer (and real-time detections) to view headers for email messages ​as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
-|Use Threat Explorer to view headers and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
+|Use Threat Explorer to view headers, preview email (only in email entity page) and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
 |
 
 > [!NOTE]
-> *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365. The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in the Security & Compliance Center (<https://protection.office.com>). To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> *Preview* is a role and not a role group; Preview role must be added to an existing role group for Office 365 from protection.office.com > Permissions > edit an existing role group or add another role group with "Preview" role assigned
+The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in the Security & Compliance Center (<https://protection.office.com>). To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in protection.office.com > Search > Audit log search by filtering on the admin name in Search section. The filtered results will show activity "AdminMailAccess", clicking on the row will show details under "more information" section about email being previewed or downloaded.
 
 ## Find suspicious email that was delivered
 
