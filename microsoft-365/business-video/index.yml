@@ -89,7 +89,6 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Learn more # < 60 chars (optional)
-      summary: Switch from Google Workspace, learn to use Office apps and the Microsoft 365 admin center. # < 160 chars (optional)
       items:
         # Card
         - title: Learn about Office
