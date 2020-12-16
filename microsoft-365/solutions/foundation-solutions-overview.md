@@ -12,6 +12,7 @@ ms.collection:
 - M365-subscription-management
 ms.custom: 
 f1.keywords: NOCSH
+ROBOTS: NOINDEX
 ---
 
 # Microsoft 365 Foundation Solutions Overview

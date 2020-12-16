@@ -11,8 +11,8 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+- M365-security-compliance
+- m365initiative-m365-defender
 description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
 ---
 

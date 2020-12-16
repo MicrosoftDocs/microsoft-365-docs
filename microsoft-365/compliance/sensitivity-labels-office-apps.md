@@ -58,7 +58,7 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Yes <sup>\*</sup>                                                        |
-|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
+|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Preview: [Beta Channel](https://office.com/insider)             | Preview: [Beta Channel](https://office.com/insider)         | Preview: [Beta Channel](https://office.com/insider)   | Under review         | Under review                                            
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Preview for Word and PowerPoint: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | Under review | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -80,8 +80,8 @@ Currently, doesn't include justification text to remove a label or lower the cla
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Under review                     | Under review                 | Under review         | Under review           | Under review               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
+|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Preview: [Beta Channel](https://office.com/insider)                        | 16.43+                     | 4.57.0+            | 4.2037.4+                | Yes                |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Yes               |
-|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review                       | Under review                    | Under review           | Under review               | Under review               |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | Under review                    | Under review           | Under review               | Yes |
 |
 
@@ -250,15 +250,38 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 | Variable | Description | Example when label applied |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Current label display name | **General**|
-| `${Item.Name}` | Current file name or email subject | **Sales.docx** |
-| `${Item.Location}` | Current path and file name of the document, or the email subject for an email | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Current user display name  | **Richard Simone** |
-| `${User.PrincipalName}` | Current user Azure AD user principal name (UPN) | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Current date and time for the local time zone | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | Label display name of the label applied| **General**|
+| `${Item.Name}` | File name or email subject of the content being labeled | **Sales.docx** |
+| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Display name of the user applying the label| **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
+
+## Require users to apply a label to their email and documents
+
+> [!IMPORTANT]
+> Also known as mandatory labeling, not all apps on all platforms currently support the policy setting of **Require users to apply a label to their email and documents**.
+> 
+> The [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports mandatory labeling and for labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+
+When this policy setting is selected, users assigned the policy must select and apply a sensitivity label under the following scenarios:
+
+- For the Azure Information Protection unified labeling client:
+    - For documents (Word, Excel, PowerPoint): When an unlabeled document is saved or users close the document.
+    - For emails (Outlook): At the time users send an unlabeled message.
+
+- For labeling built in to Office apps:
+    - For documents ((Word, Excel, PowerPoint): When an unlabeled document is opened or saved.
+    - For emails (Outlook): At the time users send an unlabeled email message.
+
+Additional information for built-in labeling:
+
+- When users are prompted to add a sensitivity label because they open an unlabeled document, they can add a label or choose to open the document in read-only mode.
+
+- When mandatory labeling is in effect, users can't remove sensitivity labels from documents, but can change an existing label.
 
 #### Setting different visual markings for Word, Excel, PowerPoint, and Outlook
 
@@ -294,6 +317,7 @@ Examples:
     `${If.App.WP}This content is ${If.End}Confidential`
 
     In Word and PowerPoint, the label applies the watermark text "This content is Confidential". In Excel, the label applies the watermark text "Confidential". In Outlook, the label doesn't apply any watermark text because watermarks as visual markings are not supported for Outlook.
+
 
 ## End-user documentation
 

@@ -186,7 +186,7 @@ Here's more information about exporting search results.
 
   - You can export a maximum of 2 TB of data from a single Content Search. If the search results are larger than 2 TB, consider using date ranges or other types of filters to decrease the total size of the search results.
   
-  - Your organization can export a maximum of 2 TB of data during a single day.
+  - Your organization can export a maximum of 2 TB of data during a single day. The quota will reset daily at 12:00AM UTC.
   
   - You can have a maximum of 10 exports running at the same time within your organization.
 
@@ -340,6 +340,8 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 
 ### Miscellaneous
   
+- When downloading search results using the eDiscovery Export Tool, it's possible you might receive the following error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` This is transient error, which typically occurs in the Azure Storage location. To resolve this issue, retry [downloading the search results](#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
+
 - All search results and the export reports are included in a folder that has the same name as the Content Search. The email messages that were exported are located in a folder named **Exchange**. Documents are located in a folder named **SharePoint**.
 
 - The file system metadata for documents on SharePoint and OneDrive for Business sites is maintained when documents are exported to your local computer. That means document properties, such as created and last modified dates, aren't changed when documents are exported.

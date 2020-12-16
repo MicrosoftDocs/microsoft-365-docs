@@ -114,13 +114,15 @@
                       href: mtp/investigate-incidents.md
                     - name: Manage incidents
                       href: mtp/manage-incidents.md
+                - name: Get email notifications
+                  href: mtp/get-incident-notifications.md
             - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
                   href: mtp/mtp-autoir.md
                 - name: Configure automated investigation and response capabilities
                   href: mtp/mtp-configure-auto-investigation-response.md
-                - name: Remediation actions following automated investigations
+                - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
                 - name: Visit the Action center
                   href: mtp/mtp-action-center.md
@@ -367,7 +369,7 @@
           items: 
             - name: Exchange Online Protection
               items: 
-                - name: Configure the default anti-phishing policy in EOP
+                - name: Configure anti-phishing policies in EOP
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: Configure standalone EOP to deliver spam to the Junk Email folder
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
@@ -413,6 +415,8 @@
               href: ./office-365-security/email-validation-and-authentication.md
             - name: Give users access to the Security center
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
+            - name: Security recommendations for priority accounts
+              href: ./office-365-security/security-recommendations-for-priority-accounts.md
             - name: Safe Documents in Defender for Office 365
               href: ./office-365-security/safe-docs.md
             - name: Set up Safe Links policies in Defender for Office 365
@@ -530,7 +534,7 @@
               href: ./office-365-security/campaigns.md
             - name: Investigate malicious email
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: View reports in the Security & Compliance Center
+            - name: View Defender for Office 365 reports in the Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: View details and results of an automated investigation
               href: ./office-365-security/air-view-investigation-results.md
