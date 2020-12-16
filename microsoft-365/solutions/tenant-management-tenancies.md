@@ -83,9 +83,9 @@ Here is an example.
 
 ![Example of a multi-geo Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
-For more information, see [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
+For more information, see [Microsoft 365 Multi-Geo](..enterprise/microsoft-365-multi-geo.md).
 
-## Moving a tenant between datacenter geos
+## Moving core data to a new datacenter geos
 
 Microsoft continues to open new datacenter geos for Microsoft 365 services. These new datacenter geos add capacity and compute resources to support our ongoing customer demand and usage growth. Additionally, the new datacenter geos offer in-geo data residency for core customer data.
 
@@ -95,7 +95,7 @@ Here is an example in which a Microsoft 365 tenant was moved from the European U
 
 ![Example of moving a Microsoft 365 tenant between datacenter geos](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
-For more information, see [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
+For more information, see [Moving core data to new Microsoft 365 datacenter geos](../enterprise/moving-data-to-new-datacenter-geos.md).
 
 ## Next step
 
