@@ -31,10 +31,8 @@ Microsoft Secure Score is a measurement of an organization's security posture, w
 To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
 * Identity (Azure Active Directory accounts & roles)
-* Data  (no improvement actions for now)
 * Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
-* Infrastructure (no improvement actions for now)
 
 >[!NOTE]
 >In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-whats-new.md)

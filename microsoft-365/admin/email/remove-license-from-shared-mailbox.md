@@ -41,6 +41,7 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 > 1. The shared mailbox has more than 50 GB of storage in use.
 > 2. The shared mailbox uses in-place archiving.
 > 3. The shared mailbox is placed in litigation hold.
+> 4. The shared mailbox has a Microsoft Defender license assigned.
 
   
 ## Remove the license
@@ -101,6 +102,8 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 6. You're still paying for the license. To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).
 
 ::: moniker-end 
+
+ 
 
 ## Related articles
 

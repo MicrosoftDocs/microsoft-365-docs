@@ -1,9 +1,9 @@
 ---
-title: "Additional pre-work information for the migration from Microsoft Cloud Deutschland"
+title: "Pre-work for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,10 +17,10 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: "Summary: Additional pre-work information when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
+description: "Summary: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Additional pre-work information for the migration from Microsoft Cloud Deutschland
+# Pre-work for the migration from Microsoft Cloud Deutschland
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -60,10 +60,6 @@ If you have SharePoint 2013:
 | Limit SharePoint 2013 workflows, use during the SharePoint Online migration. | Reduce SharePoint 2013 workflows and complete in-flight workflows before transitions. | SharePoint Online Customers | Inaction may result in user confusion and help desk calls. |
 |||||
 
-<!--
-[Reference:  If Pre-Work][ SharePoint 2013 ]
---> 
-
 ## Mobile
 
 If you're using a third-party mobile device management (MDM) solution:
@@ -72,10 +68,6 @@ If you're using a third-party mobile device management (MDM) solution:
 |:-------|:-----|:-------|:-------|
 | Determine if any reconfiguration is required after migration. | MDM solutions may target `outlook.de` endpoints. In this transition to Office 365 Services, client profiles should update to the Office 365 services URL, `outlook.office365.com`. | Exchange Online and MDM customers | Clients may continue to function while the `outlook.de` endpoint is accessible, but they'll fail if Microsoft Cloud Deutschland endpoints are no longer available. |
 |||||
-
-<!--
-[Reference:  If Pre-Work][ Mobile]
--->  			
 
 ## Line-of-business apps
 
@@ -86,20 +78,12 @@ If you're using a third-party service or line-of-business (LOB) apps that are in
 | Determine if any reconfiguration is required after migration. | Third-party services and applications that integrate with Office 365 may be coded to expect Microsoft Cloud Deutschland IP addresses and URLs. | All customers | Required action. Inaction may result in failures of the service or client software. |
 |||||
 
-<!--
-[Reference:  If Pre-Work][ LOB]
---> 
-
 ## Azure 
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
 | Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 services tenant by working with your partners. Follow the steps described in the [Azure migration playbook](https://docs.microsoft.com/azure/germany/germany-migration-main). | Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services. <br><br> Office 365 Germany customers who have Azure subscriptions under the same identity partition (organization) must follow the Microsoft-prescribed order when they can begin subscription and services migration. | Azure Customers | - Customers may have multiple Azure subscriptions, each subscription containing infrastructure, services, and platform components. <br><br> - Administrators should identify subscriptions and stakeholders to ensure prompt migration and validation is possible as part of this migration event. <br><br> Failing to successfully complete migration of these subscriptions and Azure components within the prescribed timeline will affect completion of the Office and Azure AD transition to Office 365 services and may result in data loss.  <br><br> - A Message center notification will signal the point at which customer-led migration can begin. |
 |||||
-
-<!--
-[Reference:  If Azure Pre-Work][ Azure]
--->  
 
 ## Dynamics	365
 
@@ -108,20 +92,12 @@ If you're using a third-party service or line-of-business (LOB) apps that are in
 | For Dynamics 365 sandbox subscriptions, be sure to download the production environment of the Dynamics SQL instance from your Dynamics 365 subscription in Microsoft Cloud Deutschland. The latest production backup should be restored to the sandbox before sandbox migration. | Migration of Dynamics 365 requires customers to ensure that the Sandbox environment is refreshed with the latest production database. | Microsoft Dynamics customers | The FastTrack team will assist customers in performing dry runs to validate the version upgrade from 8.x to 9.1.x. |
 |||||
 
-<!--
-[Reference: Prework][Dynamics]
--->   			
-
 ## Power BI
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
 | Removal of objects from Power BI subscriptions that won't be migrated from Power BI Microsoft Cloud Deutschland to Office 365 services. | Migration of Power BI services will require customer action to delete certain artifacts, such as datasets and dashboards. | Power BI customers | Admins may have to remove the following items from their subscription: <br> - Real-Time datasets (for example, streaming or push datasets) <br> - Power BI on-premises Data Gateway configuration and data source |
 |||||
-
-<!--
-[Reference: Prework][Power BI]
---> 
 
 ## DNS
 
@@ -130,20 +106,12 @@ If you're using a third-party service or line-of-business (LOB) apps that are in
 | Review and prepare for DNS change if the current DNS has an MSOID CName entry. | Customer-owned DNS zone changes | Office client services customers | Update the Time to Live (TTL) for customer-owned DNS records to 5 minutes if an MSOID CName exists. |
 |||||
 
-<!--
-[Reference: Prework][DNS]
--->  			
-
 ## Federated identity
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
 | Generate relying party trust for global Azure AD endpoints. | Customers need to manually create a relying party trust (RPT) to [global](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) endpoints. This is done by adding a new RPT via GUI by leveraging the global federation metadata URL and then using [Azure AD RPT Claim Rules](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (in AD FS Help) to generate the claim rules and import them into the RPT. | Federated authentication organizations | Required Action. Inaction will result in service impact during the migration. |
 |||||
-
-<!--
-[Reference: Prework][Federation]
--->  
 
 ## More information
 
@@ -158,7 +126,7 @@ Moving through the transition:
 
 - [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
 - [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
-- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), [experiences](ms-cloud-germany-transition-add-experience.md), and [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Additional information for [Azure AD](ms-cloud-germany-transition-azure-ad.md), [devices](ms-cloud-germany-transition-add-devices.md), [experiences](ms-cloud-germany-transition-add-experience.md), and [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud apps:
 
