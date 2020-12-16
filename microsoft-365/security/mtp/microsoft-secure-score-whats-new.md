@@ -26,11 +26,26 @@ ms.custom:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
+To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
+## December 2020
+
+### Added 6 accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+
+- Set 'Minimum password length' to '14 or more characters'
+- Set 'Enforce password history' to '24 or more password(s)'
+- Set 'Maximum password age' to '60 or fewer days, but not 0'
+- Set 'Minimum password age' to '1 or more day(s)'
+- Disable the built-in Administrator account
+- Disable the built-in Guest account
+
 ## November 2020
+
+### Removed the ability to create ServiceNow tickets through Secure Score 
+
+The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
 ### Added 3 services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
