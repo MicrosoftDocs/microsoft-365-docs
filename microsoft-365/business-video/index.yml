@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 small business training # < 60 chars
-summary: Explore training videos for working in the Microsoft 365 admin center.
+summary: Learn how to set up and manage Microsoft 365 for your business.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -13,76 +13,74 @@ metadata:
   ms.topic: hub-page # Required
   author: Sirkkuw #Required; your GitHub user alias, with correct capitalization.
   ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/17/2020 #Required; mm/dd/yyyy format.
+  ms.date: 12/16/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
 
 
 # productDirectory section (optional)
 productDirectory:
-  title: Set up and manage Microsoft 365 for a small business # < 60 chars (optional)
-  summary: Set up your subscription, email, add users, and install apps. # < 160 chars (optional)
   items:
     # Card
     - title: Get started
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Learn and plan for the cloud.
+      summary: Plan your move to Microsoft 365 for business.
       url: what-is-microsoft-365.md
     # Card
-    - title: Cloud setup
+    - title: Set up Microsoft 365 for business
       imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
-      summary: Sign up, add users, add a domain...
+      summary: Add a domain, add users, set up security policies…
       url: sign-up.md
     # Card
-    - title: Device setup
+    - title: Set up computers
       imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
-      summary:  Upgrade Windows, install Office apps...
+      summary:  Install Office, set up email, migrate files...
       url: upgrade.md
     # Card
-    - title: Mobile
+    - title: Set up mobile devices
       imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
-      summary: Get Office apps on your phone.
+      summary: Install Office apps on mobile devices.
       url: work-from-anywhere.md
     # Card
-    - title: Collaboration
+    - title: Collaborate with other people
       imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
-      summary: Use Outlook, Groups, Teams....
+      summary: Work with employees and customers in Teams.
       url: collab-outlook-teams.md
     # Card
-    - title: Cloud storage.
+    - title: Store and share files
       imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
-      summary: Store files in Teams, OneDrive, or SharePoint.
+      summary: Store files securely and access from anywhere.
       url: overview-file-sharing.md
     # Card
-    - title: Business voice
+    - title: Set up Business Voice
       imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
-      summary: Set up a phone, audio conferencing, and a phone menu.
+      summary: Set up phone service and conferencing.
       url: business-voice.md
     # Card
-    - title: Productivity apps
+    - title: Set up business apps
       imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
-      summary: Learn about Bookings, Lists, Tasks, Forms...
+      summary: Set up and learn about Bookings, Lists, Tasks…
       url: overview-bookings.md
     # Card
-    - title: Manage services
+    - title: Manage your subscription
       imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
-      summary: Reset passwords, view your bill...
+      summary: Manage users, reset passwords, view your bill…
       url: what-is-admin.md
     # Card
-    - title: Manage devices
+    - title: Manage your devices
       imageSrc: https://docs.microsoft.com/office/media/icons/devices-2-blue.svg
-      summary: Set up policies for user devices.
+      summary: Set up policies for personal and work devices.
       url: secure-win-10-pro-devices.md
     # Card
-    - title: Security and compliance
+    - title: Secure your business
       imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
-      summary: Set up MFA, protect from threats, and set up compliance features.
+      summary: Set up security and compliance features.
       url: overview-m365-security.md
     # Card
-    - title: Support
+    - title: Get support
       imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
-      summary: Get support or assistance.
+      summary: Get help with Microsoft 365 for business.
       url: find-help-answers.md
 
 # additionalContent section (optional)
@@ -102,7 +100,7 @@ additionalContent:
           summary: Find out how to switch to Microsoft 365 for business. 
           url: https://support.microsoft.com/office/cff9f9fb-956e-4cb9-8b64-d7ebc1911123
         # Card
-        - title: Microsoft 365 administration
-          summary: Learn how to manage your subscription in the Microsoft 365 admin center.
+        - title: Find more admin resources
+          summary: Go to the Microsoft 365 admin center help site.
           url: ../admin/index.yml
         
