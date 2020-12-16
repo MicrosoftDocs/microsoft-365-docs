@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 ---
 
-# Overview of Microsoft 365 Defender APIs
+# Overview of  Microsoft 365 Defender APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ Use the Microsoft 365 Defender APIs to automate workflows based on the shared in
 
 Along with these Microsoft 365 Defender-specific APIs, each of our other security products expose [additional APIs](api-articles.md) to help you take advantage of their unique capabilities.
 
-### Learn more
+## Learn more
 
 | **Understand how to access the APIs** |
 |-|

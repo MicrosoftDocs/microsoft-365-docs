@@ -1,5 +1,5 @@
 ---
-title: "Encryption"
+title: "Encryption in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: krowley

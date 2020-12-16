@@ -1,11 +1,11 @@
 ---
-title: "Learn about Information barriers"
+title: "Learn about information barriers in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/08/2019
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,7 +18,7 @@ description: "Use information barriers to ensure communication compliance using 
 ms.custom: seo-marvel-apr2020
 ---
 
-# Information barriers
+# Learn about information barriers in Microsoft 365
 
 Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communication and collaboration between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communication and collaboration  among specific groups of users when necessary? With information barriers, you can! 
 

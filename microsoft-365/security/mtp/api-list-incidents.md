@@ -106,7 +106,6 @@ severity | Indicates the possible impact on assets. The higher the severity the 
 tags | Array of custom tags associated with an incident, for example to flag a group of incidents with a common characteristic. | \[\]
 alerts | Array containing all of the alerts related to the incident, plus other information, such as severity, entities that were involved in the alert, and the source of the alerts. | \[\] (see details on alert fields below)
 
-
 ### Alerts metadata
 
 Field name | Description | Example value

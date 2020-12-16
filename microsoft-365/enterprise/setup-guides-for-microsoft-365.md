@@ -130,12 +130,12 @@ The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with st
 
 ## Guides for security and compliance
 
-### Microsoft Defender Advanced Threat Protection (ATP) advisor
+### Microsoft Defender for Endpoint advisor
 
-The [Microsoft Defender Advanced Threat Protection advisor](https://aka.ms/mdatpsetup) provides instructions that will help your enterprise network prevent, detect, investigate, and respond to advanced threats. Make an informed assessment of your organization's vulnerability and decide which deployment package and configuration methods are best. 
+The [Microsoft Defender for Endpoint advisor](https://aka.ms/mdatpsetup) provides instructions that will help your enterprise network prevent, detect, investigate, and respond to advanced threats. Make an informed assessment of your organization's vulnerability and decide which deployment package and configuration methods are best. 
 
 >[!NOTE]
->A Microsoft Volume License is required for Microsoft Defender ATP.
+>A Microsoft Volume License is required for Microsoft Defender for Endpoint.
 
 ### Exchange Online Protection setup guide
 
@@ -143,9 +143,9 @@ Microsoft Exchange Online Protection (EOP) is a cloud-based email filtering serv
 
 Use the [Exchange Online Protection setup guide](https://aka.ms/EOPguidance) to set up EOP by selecting which of the three deployment scenarios&mdash;on-premises mailboxes, hybrid (mix of on-premises and cloud) mailboxes, or all cloud mailboxes&mdash;fits your organization. The guide provides information and resources to set up and review your user's licensing, assign permissions in the Microsoft 365 admin center, and configure your organization's anti-malware and spam policies in the Security & Compliance Center. 
 
-### Office 365 Advanced Threat Protection advisor
+### Microsoft Defender for Office 365 advisor
 
-The [Office 365 Advanced Threat Protection advisor](https://aka.ms/oatpsetup) safeguards your organization against malicious threats that your environment might encounter through email messages, links, and third-party collaboration tools. This guide provides you with the resources and information to help you prepare and identify the advanced threat protection plan to fit your organization's needs. 
+The [Microsoft Defender for Office 365 advisor](https://aka.ms/oatpsetup) safeguards your organization against malicious threats that your environment might encounter through email messages, links, and third-party collaboration tools. This guide provides you with the resources and information to help you prepare and identify the Defender for Office 365 plan to fit your organization's needs. 
 
 ### Microsoft information protection setup guide
 

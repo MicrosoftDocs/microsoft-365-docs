@@ -25,6 +25,8 @@ search.appverid:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+**Applies to:**
+
 - Microsoft 365 Defender
 
 > [!IMPORTANT]

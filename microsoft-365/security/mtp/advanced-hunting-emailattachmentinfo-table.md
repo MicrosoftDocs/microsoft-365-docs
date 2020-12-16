@@ -27,11 +27,11 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
+The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -46,7 +46,11 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileType` | string | File extension type |
 | `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
 | `MalwareFilterVerdict` | string | Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware |
-| `MalwareDetectionMethod` | string | Method used to detect malware in the email: Antimalware engine, File reputation, ATP Safe Attachments |
+| `MalwareDetectionMethod` | string | Method used to detect malware in the email: Antimalware engine, File reputation, Safe Attachments |
+| `SenderDisplayName` | string | Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname |
+| `SenderObjectId` | string | Unique identifier for the sender’s account in Azure AD |
+| `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `ThreatNames` | string | Detection name for malware or other threats found |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

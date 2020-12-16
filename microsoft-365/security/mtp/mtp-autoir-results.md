@@ -29,9 +29,9 @@ ms.date: 09/16/2020
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-When an automated investigation occurs in Microsoft Threat Protection, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
+When an automated investigation occurs in Microsoft 365 Defender, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
 ![Investigation details](../../media/mtp-air-investdetails.png)
 
@@ -71,17 +71,17 @@ Use the investigation details view to see past, current, and pending activity pe
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
-|Tab	|Description |
+| Tab | Description |
 |--------|--------|
-|Investigation graph	|Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can click an item on the graph to view more details. For example, clicking the **Threats found** icon takes you to the **Key findings** tab. |
-|Alerts	|Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's machine, in Office apps, Cloud App Security, and other Microsoft 365 Threat Protection features.|
-|Devices|Lists machines included in the investigation along with remediation level.|
-|Key findings	|Lists results from the investigation along with status and actions taken or pending. You can approve pending actions for devices and identities in on this tab.|
-|Entities	|Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation, along with status and actions taken.|
-|Log	|Provides a detailed view of all steps taken during the investigation, along with status.|
-|Pending actions	|Lists items that require approval to proceed.|
+| **Investigation graph**	| Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can click an item on the graph to view more details. For example, clicking the **Threats found** icon takes you to the **Key findings** tab. |
+| **Alerts**	| Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's machine, in Office apps, Cloud App Security, and other Microsoft 365 Defender features.|
+| **Devices** | Lists machines included in the investigation along with remediation level.|
+| **Key findings**	| Lists results from the investigation along with status and actions taken or pending. You can approve pending actions for devices and identities in on this tab.|
+| **Entities**	| Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation, along with status and actions taken.|
+|**Log**	| Provides a detailed view of all steps taken during the investigation, along with status.|
+| **Pending actions** | Lists items that require approval to proceed.|
 
 ## Next steps
 
 - [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
-
+- [Review remediation actions](mtp-remediation-actions.md)

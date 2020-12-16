@@ -2,7 +2,7 @@
 title: "Manually submit messages to Microsoft for analysis"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:

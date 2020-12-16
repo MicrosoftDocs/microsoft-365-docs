@@ -1,6 +1,6 @@
 ---
-title: Common Microsoft Threat Protection REST API error codes
-description: Learn about the common Microsoft Threat Protection REST API error codes
+title: Common Microsoft 365 Defender REST API error codes
+description: Learn about the common Microsoft 365 Defender REST API error codes
 keywords: api, error, codes, common errors, mtp, api error codes
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 ---
 
-# Common Microsoft Threat Protection REST API error codes
+# Common Microsoft 365 Defender REST API error codes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

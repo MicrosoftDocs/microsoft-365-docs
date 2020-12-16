@@ -138,7 +138,7 @@ Microsoft 365 administrators can create PAC (Proxy Automatic Configuration) scri
 #### Microsoft 365 security features
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Data Loss Prevention, Anti-Virus, Multi-Factor Authentication, Customer Lock Box, Advanced Threat Protection, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, Exchange Online Protection, and Network DDOS Security.
+Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Data Loss Prevention, Anti-Virus, Multi-Factor Authentication, Customer Lock Box, Defender for Office 365, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, Exchange Online Protection, and Network DDOS Security.
   
 For more information on Microsoft datacenter and Global Network security, see the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security).
   
@@ -228,7 +228,7 @@ A holistic approach to enhanced security should include consideration of the fol
   - Ensures local egress for Microsoft 365 traffic
 - Improvements can be addressed incrementally as described in the [Incremental optimization](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) section. Some optimization techniques may offer better cost/benefit ratios depending on your network architecture, and you should choose optimizations that make the most sense for your organization.
 
-For more information on Microsoft 365 security and compliance, see the article [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/security) and [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/compliance).
+For more information on Microsoft 365 security and compliance, see the articles [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/security) and [Microsoft 365 compliance](https://docs.microsoft.com/microsoft-365/compliance).
   
 ## Incremental optimization
 <a name="BKMK_IncOpt"> </a>

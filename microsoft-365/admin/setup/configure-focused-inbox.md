@@ -2,9 +2,9 @@
 title: "Configure Focused Inbox for everyone in your organization"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: kwekua
+author: kwekua
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,7 +25,7 @@ description: "Learn to configure Focused Inbox for all or specific users of your
 # Configure Focused Inbox for everyone in your organization
 
   If you're responsible for configuring how email works for EVERYONE in a business this article is for you! It explains how to customize it or turn it off for your business, and answers [frequently asked questions](#faq-for-focused-inbox).  <br/> If you would like to turn off Focused Inbox for just yourself, please see [Turn off Focused Inbox](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
-   
+
 If you want to be sure that your users receive business-specific email messages, for example, from HR or payroll, you can configure Focused Inbox so these messages reach the Focused view. You can also control whether users in your organization see the Focused Inbox in their mailbox.
   
 ## Turn Focused Inbox On or Off in your organization
@@ -37,31 +37,31 @@ You use PowerShell to turn Focused Inbox on or off for everyone in your organiza
 The following PowerShell example turns Focused Inbox **Off** in your organization. However, it doesn't block the availability of the feature for your users. If they want, they can still re-enable Focused Inbox again on each of their clients. 
   
 1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
-    
+
 2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
-    
+
 3. Run the **Get-OrganizationConfig** cmdlet. 
-    
+
  ``` PowerShell
 Get-OrganizationConfig
  ```
 
 4. Look for **FocusedInboxOn** to view its current setting: 
-    
+
     ![Response from PowerShell on state of Focused Inbox.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Run the following cmdlet to turn Focused Inbox off.
-    
+
  ``` PowerShell
  Set-OrganizationConfig -FocusedInboxOn $false
  ```
 
 6. Run the **Get-OrganizationConfig** cmdlet again and you'll see that FocusedInboxOn is set to $false, which means it's been turned off. 
-    
+
  **To turn on Focused Inbox:**
   
 - In Step 5 above, run the following cmdlet to turn Focused Inbox on.
-    
+
  ``` PowerShell
  Set-OrganizationConfig -FocusedInboxOn $true
  ```
@@ -83,27 +83,27 @@ When a user decides to start using Focused Inbox, Clutter gets disabled automati
 This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organization. However, it doesn't block the availability of the feature to him. If his wants, he can still re-enable Focused Inbox again on each of his clients. 
   
 1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
-    
+
 2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the Messaging policy and compliance permissions topic.
-    
+
 3. Run the **Get-FocusedInbox** cmdlet, for example: 
-    
+
  ``` PowerShell
  Get-FocusedInbox -Identity <tim@contoso.com>
  ```
 
 4. Look for FocusedInboxOn to view its current setting:
-    
+
     ![Response from PowerShell on state of Focused Inbox.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Run the following cmdlet to turn Focused Inbox off:
-    
+
  ``` PowerShell
  Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
  ```
 
 6. OR, run the following cmdlet to turn it on:
-    
+
  ``` PowerShell
  Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
  ```
@@ -111,23 +111,26 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 ## Use the UI to create a transport rule to direct email messages to the Focused view for all your users
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
-    
+
 2. Navigate to **mail flow** \> **Rules**. Select ![EAC Add icon](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) and then select **Create a new rule...**. 
-    
-3. After you're done creating the new rule, select **Save** to start the rule. 
-    
+
+3. After you're done creating the new rule, select **Save** to start the rule.
+
     The following image shows an example where all messages From "Payroll Department" are to be delivered to the Focused Inbox.
-    
+
     ![focusedinbox payroll](../../media/focusedinbox-transport-rule.PNG)
+
+> [!NOTE]
+> The message header value text in this example is, **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## Use PowerShell to create a transport rule to direct email messages to the Focused view for all your users
 
 1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
-    
+
 2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
 
 3. Run the following command to allow all messages from "Payroll Department," for example, to be delivered to the Focused Inbox.
-    
+
  ``` PowerShell
  New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
  ```
@@ -139,15 +142,15 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 
 ### How do you know this worked?
 
-You can check email message headers to see if the email messages are landing in the Inbox due to the Focused Inbox transport rule bypass. Pick an email message from a mailbox in your organization that has the Focused Inbox transport rule applied. Look at the headers stamped on the message, and you should see the **X-MS-Exchange-Organization-BypassFocusedInbox: true** header. This means the bypass is working. Check out the [View the Internet header information for an email message](https://go.microsoft.com/fwlink/p/?LinkId=822530) article for info on how to find the header information. 
- 
+You can check email message headers to see if the email messages are landing in the Inbox due to the Focused Inbox transport rule bypass. Pick an email message from a mailbox in your organization that has the Focused Inbox transport rule applied. Look at the headers stamped on the message, and you should see the **X-MS-Exchange-Organization-BypassFocusedInbox: true** header. This means the bypass is working. Check out the [View the Internet header information for an email message](https://go.microsoft.com/fwlink/p/?LinkId=822530) article for info on how to find the header information.
+
 ## Turn on/off Clutter
- 
+
 We've received reports that Clutter suddenly stopped working for some users. If this happens, you can enable it again for specific users. See [Configure Clutter for your organization](../email/configure-clutter.md).
- 
+
 ## FAQ for Focused Inbox
 
-Here are answers to Frequently Asked Questions about Focused Inbox. 
+Here are answers to Frequently Asked Questions about Focused Inbox.
 
 ### Can I control how I roll out Focused Inbox in my organization?
 
@@ -179,10 +182,10 @@ No. It's possible to disable Clutter for a mailbox explicitly by running the Set
 
 There are two states associated with Focused Inbox.
   
-- **Organization Level**: Focused Inbox state, and an associated last update time-stamp. 
-    
+- **Organization Level**: Focused Inbox state, and an associated last update time-stamp.
+
 - **Mailbox Level**: Focused Inbox state, and an associated last update time-stamp 
-    
+
 ### How does Outlook decide to show the Focused Inbox experience with these two states?
 
 Outlook decides to show the experience by choosing which cmdlet has the latest time stamp. By default, both time stamps are "null" and in this case, the feature is enabled.

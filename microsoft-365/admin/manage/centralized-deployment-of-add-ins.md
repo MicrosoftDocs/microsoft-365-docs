@@ -40,7 +40,7 @@ It can take up to 24 hours for an add-in to show up for client for all users.
   
 ## Requirements
 
-Centralized deployment of add-ins requires that the users are using Microsoft 365 Apps for enterprise, or Microsoft 365 Business Premium (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory.
+Centralized deployment of add-ins requires that the users are using Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory.
 You can view specific requirements for Office and Exchange below, or use the [Centralized Deployment Compatibility Checker](#centralized-deployment-compatibility-checker).
 
 Centralized Deployment doesn't support the following:
@@ -50,17 +50,17 @@ Centralized Deployment doesn't support the following:
 - Add-in Deployment to an Exchange On-Prem Mailbox
 - Add-in deployment to SharePoint  
 - Teams apps
-- Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins
-- Deployments of Microsoft 365 that do not include Exchange such as Microsoft 365 Apps for business
+- Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins.
+- Deployments of Microsoft 365 that do not include Exchange Online such as SKUs: Microsoft 365 Apps for Business and Microsoft 365 Apps for Enterprise.
 
 ### Office Requirements
 
 - For Word, Excel, and PowerPoint add-ins, your users must be using one of the following:
-  - On a Windows device, Version 1704 or later of Microsoft 365 Apps for enterprise, or Microsoft 365 Business Premium.
+  - On a Windows device, Version 1704 or later of Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium.
   - On a Mac, Version 15.34 or later.
 
 - For Outlook, your users must be using one of the following: 
-  - Version 1701 or later of Microsoft 365 Apps for enterprise, or Microsoft 365 Business Premium.
+  - Version 1701 or later of Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium.
   - Version 1808 or later of Office Professional Plus 2019 or Office Standard 2019.
   - Version 16.0.4494.1000 or later of Office Professional Plus 2016 (MSI) or Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 or later of Office Professional Plus 2013 (MSI) or Office Standard 2013 (MSI)\*
@@ -69,20 +69,6 @@ Centralized Deployment doesn't support the following:
 - Version 2.2.145 or later of Outlook mobile for Android 
     
     *MSI versions of Outlook show admin-installed add-ins in the appropriate Outlook ribbon, not the "My add-ins" section.
-    
-
-#### Find out if Microsoft 365 Apps for enterprise is installed
-
-To use Microsoft 365 Apps for enterprise, a user must have an Microsoft 365 account and must have been assigned a license. For more information, see [Overview of Microsoft 365 Apps for enterprise](https://go.microsoft.com/fwlink/p/?linkid=846328).
-
-The simplest way to detect if a user has Microsoft 365 Apps for enterprise installed and has been using it recently is to use the Microsoft Office Activations report, which is available in the Microsoft 365 admin center. The report provides a list of all users who have activated Microsoft 365 Apps for enterprise within the last 7 days, 30 days, 90 days, or 180 days. For centralized deployment purposes, the desktop activations for Windows or Mac are the important columns in the report. You can export the report to Excel. For more information about the report, see [Microsoft 365 Reports in the Admin Center - Microsoft Office activations](../activity-reports/microsoft-office-activations.md).
-  
-If you don't want to use the Activations report, you can ask a user to open an Office application such as Word on their machine, and then choose **File** \> **Account**. Under **Product Information**, you should see **Subscription Product** and **Microsoft 365 for enterprise**,or Microsoft 365 Business Premium, similar to what is shown in the following image.
-
-![Product information in an Office application](../../media/product-information-microsoft-365-enterprise.png)
-  
-For help with Microsoft 365 Apps for enterprise, see [Troubleshooting tips for Microsoft 365 Apps for enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
-
 
 ### Exchange Online requirements
 

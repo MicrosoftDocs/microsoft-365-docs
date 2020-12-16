@@ -1,6 +1,6 @@
 ---
-title: Supported Microsoft Threat Protection APIs
-description: Supported Microsoft Threat Protection APIs
+title: Supported Microsoft 365 Defender APIs
+description: Supported Microsoft 365 Defender APIs
 keywords: MTP, APIs, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,13 +21,12 @@ search.appverid:
 - MET150
 ---
 
-# Supported Microsoft Threat Protection APIs
+# Supported Microsoft 365 Defender APIs 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.

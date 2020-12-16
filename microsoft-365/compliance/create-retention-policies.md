@@ -48,7 +48,7 @@ Although a retention policy can support multiple locations, you can't create a s
 - Yammer community messages
 - Yammer private messages
 
-If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. Therefore, the instructions to follow depend on whether you need to include the Teams or Yammer locations:
+If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. Therefore, which instructions to follow depends on whether you need to include the Teams or Yammer locations:
 
 - [Instructions for a retention policy for Teams locations](#retention-policy-for-teams-locations)
 - [Instructions for a retention policy for Yammer locations](#retention-policy-for-yammer-locations)
@@ -78,7 +78,7 @@ For more information about retention policies for Teams, see [Retention policies
 
 #### Additional retention policy needed to support Teams
 
-Teams is more than just chats and channel messages. If you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Office 365 groups** location. This retention policy applies to content in the group's mailbox, site, and files.
+Teams is more than just chats and channel messages. If you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Microsoft 365 Groups** location. This retention policy applies to content in the group's mailbox, site, and files.
 
 If you have team sites that aren't connected to a Microsoft 365 group, you need a retention policy that includes the **SharePoint sites** or **OneDrive accounts** locations to retain and delete files in Teams:
 
@@ -94,7 +94,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 ### Retention policy for Yammer locations
 
 > [!NOTE]
-> Retention policies for Yammer are rolling out in preview. If you don't yet see the new locations for Yammer, try again in a few days.
+> Retention policies for Yammer are rolling out in preview. If you don't yet see the new locations for Yammer, try again in a few weeks.
 >
 > To use this feature, your Yammer network must be [Native Mode](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
@@ -122,7 +122,7 @@ For more information about how retention policies work for Yammer, see [Learn ab
 
 #### Additional retention policies needed to support Yammer
 
-Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Office 365 groups** location. 
+Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Groups** location. 
 
 To retain and delete files that are stored in Yammer, you need a retention policy that includes the **SharePoint sites** or **OneDrive accounts** locations:
 
@@ -151,7 +151,7 @@ Use the following instructions for retention policies that apply to any of these
     Information specific to locations:
     - [Exchange email and Exchange public folders](#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [SharePoint sites and OneDrive accounts](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
-    - [Office 365 groups](#configuration-information-for-microsoft-365-groups)
+    - [Microsoft 365 Groups](#configuration-information-for-microsoft-365-groups)
     - [Skype for Business](#configuration-information-for-skype-for-business)
 
 4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
@@ -164,21 +164,19 @@ Use the following instructions for retention policies that apply to any of these
 
 The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox.
 
-The following mail items are included: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. Contacts, and any tasks and calendar items that don't have an end date are not included. Other items stored in a mailbox, such as Skype and Teams saved messages, aren't included with this location. These items have their own retention locations.
+For detailed information about which items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
-Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Office 365 groups** location.
+Note that even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Microsoft 365 Groups** location.
 
 The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
 
 #### Configuration information for SharePoint sites and OneDrive accounts
 
-When you choose the **SharePoint sites** location, the retention policy can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Office 365 groups, and classic sites. Team sites connected by Office 365 groups aren't supported with this option and instead, use the **Office 365 groups** location that applies to content in the group's mailbox, site, and files.
+When you choose the **SharePoint sites** location, the retention policy can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
 
-Although the retention policy is applied at the site level, only documents have retention settings applied to them. Retention settings do not apply to the organizing structures that include libraries, lists, and folders within the site.
+Although the retention policy is applied at the site level, only documents have retention settings applied to them. For detailed information about what's included and excluded when you configure retention settings for SharePoint and OneDrive, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
 
-When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites must be indexed and the sites that you specify are checked that they exist at the end of the wizard.
-
-If this check fails, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation check passes. If you see this message, go back in the wizard to change the URL or remove the site from the retention policy.
+When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist at the end of the wizard. If this check fails, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation check passes. If you see this message, go back in the wizard to change the URL or remove the site from the retention policy.
 
 To specify individual OneDrive accounts to include or exclude, the URL has the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
@@ -186,11 +184,11 @@ For example, for a user in the contoso tenant that has a user name of "rsimone":
 
 To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
-### Configuration information for Microsoft 365 groups
+### Configuration information for Microsoft 365 Groups
 
-To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Office 365 groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
+To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
 
-A retention policy applied to a Microsoft 365 group includes the group mailbox and teams site, if a teams site was selected at the time the group was created or later added to the group. Files stored in the teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
+A retention policy applied to a Microsoft 365 group includes the group mailbox and SharePoint teams site. Files stored in the SharePoint teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
 
 ### Configuration information for Skype for Business
 
@@ -224,7 +222,7 @@ When you configure a retention policy, you choose to retain items for a specific
 
 When you configure a retention policy, you can choose to retain content indefinitely or for a specific number of days, months, or years. The retention period is calculated from the age of the content, not from when the retention policy is applied.
 
-For the start of the retention period, you can also choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Office 365 locations, when the content was last modified.
+For the start of the retention period, you can also choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified.
 
 Examples:
 
@@ -248,7 +246,7 @@ So before you assign a retention policy for the first time, and especially when 
 
 When you choose locations, with the exception of Skype for Business, the default setting is **All** when the status of the location is **On**.
 
-When a retention policy applies to any combination of entire locations, there is no limit to the number of recipients, sites, accounts, groups etc that the policy can include.
+When a retention policy applies to any combination of entire locations, there is no limit to the number of recipients, sites, accounts, groups, etc., that the policy can include.
 
 For example, if a policy includes all Exchange email and all SharePoint sites, all sites and recipients will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
 
@@ -262,7 +260,7 @@ Only if you use the optional configuration to scope your retention settings to s
   - 1,000 users for Teams private chats
   - 100 sites (OneDrive or SharePoint)
 
-There is also a maximum number of policies that are supported for a tenant: 10,000. These items include retention policies, retention label policies, and auto-apply retention policies.
+There is also a maximum number of policies that are supported for a tenant: 10,000. However, for Exchange Online, the maximum number is 1,800. The maximum number includes retention policies, retention label policies, and auto-apply retention policies.
 
 If your retention policies are likely to be subject to these limitations, use the default configuration that applies to the entire location because these policies don't have any limitations.
 
@@ -277,42 +275,13 @@ To use the optional configuration to scope your retention settings, make sure th
 
 ## Updating retention policies
 
+Some settings can't be changed after a retention policy is created and saved, which include:
+- The retention policy name and the retention settings except the retention period and when to start the retention period.
+
 If you edit a retention policy and items are already subject to the original settings in your retention policy, your updated settings will be automatically applied to these items in addition to items that are newly identified.
 
 Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft 365 compliance center change from **On (Pending)** to **On (Success)**.
 
-## Lock a retention policy by using PowerShell
+## Locking the policy to prevent changes
 
-You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements. Because administrators can't disable or delete a retention policy after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
-
-All retention policies with any configuration support Preservation Lock. However, when you use the PowerShell commands that follow, you'll notice that the **Workload** parameter always displays **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** rather than reflect the actual workloads configured in the policy. This is a display issue only.
-
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
-
-2. List your retention policies and find the name of the policy that you want to lock by running [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy). For example:
-
-   ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
-
-3. To place a Preservation Lock on a retention policy, run the [Set-RetentionCompliancePolicy]( ) cmdlet with the name of the retention policy, and the *RestrictiveRetention* parameter set to true:
-
-    ```powershell
-    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
-    ```
-
-    For example:
-
-    ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
-
-     When prompted, read and acknowledge the restrictions that come with this configuration by entering **Y**:
-
-   ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
-
-A Preservation Lock is now placed on the retention policy. To confirm, run `Get-RetentionCompliancePolicy` again, but specify the retention policy name and display the policy parameters:
-
-```powershell
-Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
-```
-
-You should see **RestrictiveRetention** is set to **True**. For example:
-
-![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
+If you need to ensure that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).

@@ -27,6 +27,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 
 - Privacy (public or private) of teams sites and Microsoft 365 groups
 - External user access
+- External sharing from SharePoint sites (in preview)
 - Access from unmanaged devices
 
 > [!IMPORTANT]
@@ -73,12 +74,12 @@ Enabling sensitivity labels for containers means that you can now configure prot
     
     When only this scope is selected for the label, the label won't be displayed in Office apps that support sensitivity labels and can't be applied to files and emails. Having this separation of labels can be helpful for both users and administrators, but can also add to the complexity of your label deployment.
     
-    For example, you need to carefully review your [label ordering](sensitivity-labels.md#label-priority-order-matters) because SharePoint detects when a labeled document is uploaded to a labeled site. In this sceanrio, an audit event and email is automatically generated when the document has a higher priority sensitivity label than the site's label. For more information, see the [Auditing sensitivity label activities](#auditing-sensitivity-label-activities) section on this page. 
+    For example, you need to carefully review your [label ordering](sensitivity-labels.md#label-priority-order-matters) because SharePoint detects when a labeled document is uploaded to a labeled site. In this scenario, an audit event and email is automatically generated when the document has a higher priority sensitivity label than the site's label. For more information, see the [Auditing sensitivity label activities](#auditing-sensitivity-label-activities) section on this page. 
 
 2. Then, on the **Define protection settings for groups and sites** page, select one or both of the available options:
     
     - **Privacy and external user access settings** to configure the **Privacy** and **External users access** settings. 
-    - **Device access and external sharing settings** to configure the **Access from unmanaged devices** setting.
+    - **Device access and external sharing settings** to configure the **Control external sharing from labeled SharePoint sites** and **Access from unmanaged devices** setting.
 
 3. If you selected **Privacy and external user access settings**, now configure the following settings:
     
@@ -92,9 +93,11 @@ Enabling sensitivity labels for containers means that you can now configure prot
     
     - **External user access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-4. If you selected **Device access and external sharing setting**, now configure the following setting:
+4. If you selected **Device access and external sharing setting**, now configure the following settings:
     
-    - **Access from unmanaged devices**: This option uses the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices) from the SharePoint documentation. The option you specify for this label setting is the equivalent of running a PowerShell command for a site, as described in steps 2-4 from the [Block or limit access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) section from the SharePoint instructions.
+    - **Control external sharing from labeled SharePoint sites**: Currently in preview, select this option to then select either external sharing for anyone, new and existing guests, existing guests, or only people in your organization. For more information about this configuration and settings, see the SharePoint documentation, [Turn external sharing on or off for a site](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
+    
+    - **Access from unmanaged devices**: This option uses the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices) from the SharePoint documentation. The option you specify for this label setting is the equivalent of running a PowerShell command for a site, as described in steps 3-5 from the [Block or limit access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) section from the SharePoint instructions.
         
         For additional information, see [More information about the dependencies for the unmanaged devices option](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) at the end of this section.
 

@@ -22,11 +22,11 @@ ms.collection:
 Use insider risk management policies to identify risky activities and management tools to act on risk alerts in your organization. Complete the following steps to set up prerequisites and configure an insider risk management policy.
 
 >[!IMPORTANT]
->The Microsoft 365 insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft 365 compliance center to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual users behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization.
+>The Microsoft 365 insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft 365 compliance center to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual user's behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization. In addition, customers acknowledge that they must conduct their own full investigation related to the individual user's behavior, character, or performance materially related to employment, and not just rely on insights from the insider risk management service. Customers are solely responsible for using the Microsoft 365 insider risk management service, and any associated feature or service in compliance with all applicable laws, including laws relating to individual user identification and any remediation actions.
 
 For more information about how insider risk policies can help you manage risk in your organization, see [Insider risk management in Microsoft 365](insider-risk-management.md).
 
-## Before you begin
+## Subscriptions and licensing
 
 Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use insider risk management, your organization must have one of the following subscriptions or add-ons:
 
@@ -87,8 +87,6 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 ## Step 3: Configure prerequisites for templates
 
 Most insider risk management templates have prerequisites that must be configured for policy indicators to generate relevant activity alerts. Configure the appropriate prerequisites depending on the policies you plan to configure for your organization.
-
-If you are configuring a policy using the *Offensive language in email* policy template, you can skip this step and go directly to **Step 4**.
 
 ### Configure Microsoft 365 HR connector
 
@@ -160,7 +158,7 @@ Before configuring a policy, define the following insider risk settings:
     - [Anomaly detections](insider-risk-management-settings.md#anomaly-detections)
     - [Offensive language detections](insider-risk-management-settings.md#offensive-language-detections)
     - [Alert volume level](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft 365 Defender Advanced Threat Protection alert status](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Domain settings](insider-risk-management-settings.md#domains-preview)
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.

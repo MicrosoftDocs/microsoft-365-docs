@@ -307,21 +307,31 @@ This chart shows the email count organized by:
 - **Email after file and URL detonation**<sup>1</sup>
 - **Email detected as benign after post-delivery protection (URL click time protection)**
 
-<sup>1</sup> Office 365 ATP only
+<sup>1</sup> Defender for Office 365 only
 
-To view the email filtered by EOP or ATP separately, click on the value in the chart legend.
+To view the email filtered by EOP or Defender for Office 365 separately, click on the value in the chart legend.
 
 The data table contains the following information, shown in descending date order:
 
 - **Date**
 - **Total email**
 - **Edge protection**
-- **Anti-malware, file reputation, file type block**
-- **Anti-phish, URL reputation, Brand impersonation, anti-spoof**
-- **Anti-spam, bulk mail filtering**
-- **User and domain impersonation (ATP)**
-- **File and URL detonation (ATP)**
-- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**
+- **Anti-malware, file reputation, file type block**:
+  - **File reputation**: Messages filtered due to identification of an attached file by other Microsoft customers.
+  - **File type block**: Messages filtered due to the type of malicious file identified in the message.
+- **Anti-phish, URL reputation, Brand impersonation, anti-spoof**:
+  - **URL reputation**: Messages filtered due to the identification of the URL by other Microsoft customers.
+  - **Brand impersonation**: Messages filtered due to the message coming from well-known brand impersonating senders.
+  - **Anti-spoof**: Messages filtered due to the message attempting to spoof a domain that the recipient belongs to, or a domain that the message sender doesn't own.
+- **Anti-spam, bulk mail filtering**:
+  - **Bulk mail filtering**: Messages filtered due to an attempt to deliver bulk mail to its recipients.
+- **User and domain impersonation (Defender for Office 365)**:
+  - **User impersonation**: Messages filtered due to an attempt to impersonate a user (message sender) that's defined in the impersonation protection settings of an anti-phishing policy.
+  - **Domain impersonation**: Messages filtered due to an attempt to impersonate a domain that's defined in the impersonation protection settings of an anti-phishing policy.
+- **File and URL detonation (Defender for Office 365)**:
+  - **File detonation**: Messages filtered by a Safe Attachments policy.
+  - **URL detonation**: Message filtered by a Safe Links policy.
+- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
 
 If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
 
@@ -359,12 +369,14 @@ If you click **Filter**, you can filter both the chart and the data table.
 This chart shows messages organized into the following categories:
 
 - **Total email**
-- **Edge allow, edge filtered**
-- **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
-- **Not phish, DMARC failure, impersonation detection, spoof detection, phish detection**
-- **No detection with URL detonation, URL detonation detection (ATP)**
-- **Not spam, spam**
-- **Non-malicious email, safe links detection (ATP), ZAP**
+- **Edge allow** and **Edge filtered**
+- **Not malware**, **Safe Attachments detection**<sup>\*</sup>, **Anti-malware engine detection**, and **Rule messages**
+- **Not phish**, **DMARC failure**, **Impersonation detection**, **Spoof detection**, and **Phish detection**
+- **No detection with URL detonation** and **URL detonation detection**<sup>\*</sup>
+- **Not spam** and  **Spam**
+- **Non-malicious email**, **Safe Links detection**<sup>\*</sup>, and **ZAP**
+
+<sup>\*</sup> Defender for Office 365
 
 When you hover over a category in the chart, you can see the number of messages in that category.
 
@@ -373,12 +385,14 @@ The data table contains the following information, shown in descending date orde
 - **Date**
 - **Total email**
 - **Edge filtered**
-- **Anti-malware engine, safe attachments, rule filtered**
-- **DMARC, impersonation, spoof, phish filtered**
+- **Anti-malware engine, Safe Attachments, rule filtered**:
+  - **Rule filtered**: Messages filtered due to  mail flow rules (also known as transport rules).
+- **DMARC, impersonation, spoof, phish filtered**:
+  - **DMARC**: Messages filtered due to the message failing its DMARC authentication check.
 - **URL detonation detection**
 - **Anti-spam filtered**
 - **ZAP removed**
-- **Detection by safe links**
+- **Detection by Safe Links**
 
 If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
 
@@ -416,7 +430,7 @@ The following charts are available in the report view:
   - **Malware (anti-malware)** (EOP)
   - **Spam detections**
   - **Rule messages**
-  - **Advanced malware** (Office 365 ATP)
+  - **Advanced malware** (Microsoft Defender for Office 365)
 
   When you hover over a day (data point) in the chart, you can see details for that day.
 
@@ -471,7 +485,7 @@ The following charts are available in the report view:
 - **Show data for \> Top mail recipients**
 - **Show data for \> Top spam recipients**
 - **Show data for \> Top malware recipients** (EOP)
-- **Show data for \> Top malware recipients (ATP)** (Office 365 ATP)
+- **Show data for \> Top malware recipients (Defender for Office 365)**
 
 The composition of the pie chart changes based on these selections.
 
@@ -505,9 +519,9 @@ If you click **View details table**, the information that's shown depends on the
   - **Top malware recipients**
   - **Count**
 
-- **Show data for \> Top malware recipients (ATP)** (Office 365 ATP)
+- **Show data for \> Top malware recipients (Defender for Office 365)**
 
-  - **Top malware recipients (ATP)**
+  - **Top malware recipients (Defender for Office 365)**
   - **Count**
 
 If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
@@ -516,24 +530,16 @@ To go back to the report view, click **View report**.
 
 ## What permissions are needed to view these reports?
 
-To view and use the reports, you need to be a member of the specified role group in the Security & Compliance Center **and** in Exchange Online.
+In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Security & Compliance Center:
 
-- In the Security & Compliance Center, you need to be a member of one of the following role groups:
+- **Organization Management**
+- **Security Administrator**
+- **Security Reader**
+- **Global Reader**
 
-  -Organization Management
-  -Security Administrator (you can also do this in the [Azure Active Directory admin center](https://aad.portal.azure.com)
-  -Security Reader
+For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  For more information, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
-
-- In Exchange Online, you need to be a member of one of the following role groups:
-
-  -Organization Management
-  -View-only Organization Management
-  -View-Only Recipients
-  -Compliance Management
-
-For more information, see [Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) and [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Related topics
 
@@ -543,4 +549,4 @@ For more information, see [Permissions in Exchange Online](https://docs.microsof
 
 [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
 
-[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+[View reports for Microsoft Defender for Office 365](view-reports-for-atp.md)

@@ -1,5 +1,5 @@
 ---
-title: "Email encryption"
+title: "Email encryption in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: "Compare encryption options including Office Message Encryption (OME), S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
+description: "Compare Microsoft 365 encryption options including Office 365 Message Encryption (OME), S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
 ---
 
 # Email encryption

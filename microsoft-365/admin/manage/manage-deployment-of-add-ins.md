@@ -71,7 +71,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
     You can view available add-ins by categories: **Suggested for you**, **Rating**, or **Name**. Only free add-ins are available from the Office Store. Paid add-ins aren't supported currently. After you select an add-in, accept the terms and conditions to proceed. <br/> 
 
     > [!NOTE] 
-    > With the Office Store option, updates and enhancements are automatically to users.
+    > With the Office Store option, updates and enhancements are automatically deployed to users.
 
 5. On the next page, select **Everyone**, **Specific users/groups**, or **Just me** to specify who the add-in is deployed to. Use the Search box to find specific users or groups. <br/>
 
@@ -134,7 +134,7 @@ Updates for add-ins happen as follows:
 
 [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md)
 
-[Building Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins-fundamentals).
+[Build your first Word task pane add-in](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator).
 
 [Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md)
   

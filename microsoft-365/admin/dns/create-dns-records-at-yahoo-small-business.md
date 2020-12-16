@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,7 +25,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
 # Create DNS records at Yahoo! Small Business for Microsoft
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 If Yahoo! Small Business has been your DNS hosting provider, you should be aware that your provider is now Aabaco Small Business.
   

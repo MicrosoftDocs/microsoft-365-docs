@@ -44,6 +44,10 @@ Some settings for Microsoft 365 Groups and SharePoint in Microsoft 365, particul
 
 ## Related topics
 
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
+
 [Collaborating with people outside your organization](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 
 [Manage site creation in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
