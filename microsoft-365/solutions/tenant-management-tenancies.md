@@ -70,7 +70,7 @@ For more information, see [Cross-tenant mailbox migration](../enterprise/cross-t
 
 There are several architectural approaches for mergers, acquisitions, divestitures, and other scenarios that might lead you to migrate an existing Microsoft 365 tenant to a new tenant. 
 
-For detailed guidance, see [Cross-tenant mailbox migration](../enterprise/cross-tenant-mailbox-migration.md).
+For detailed guidance, see [Microsoft 365 tenant-to-tenant migrations](../enterprise/microsoft-365-tenant-to-tenant-migrations.md).
 
 ## Multi-Geo for a tenant
 
