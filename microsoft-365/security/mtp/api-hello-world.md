@@ -1,11 +1,7 @@
 ---
 title: Hello World for Microsoft 365 Defender REST API 
 description: Learn how to create an app and use a token to access the Microsoft 365 Defender APIs
-<<<<<<< HEAD
 keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
-=======
-keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission
->>>>>>> master
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -25,19 +21,11 @@ search.appverid:
 - MET150
 ---
 
-<<<<<<< HEAD
 # Hello World for Microsoft 365 Defender REST API
-=======
-# Hello World for Microsoft 365 Defender REST API 
->>>>>>> master
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-<<<<<<< HEAD
-=======
-- Microsoft 365 Defender
->>>>>>> master
 
 - Microsoft 365 Defender
 
@@ -62,7 +50,7 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
-   ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
+   ![Image of API permission selection](../../media/apis-in-my-org-tab.PNG)
 
    - Choose **Application permissions** > **Incident.Read.All** and select **Add permissions**.
 
@@ -178,7 +166,6 @@ You're all done! You've successfully:
 
 ## Related articles
 
-<<<<<<< HEAD
 - [Microsoft 365 Defender APIs overview](api-overview.md)
 - [Access the Microsoft 365 Defender APIs](api-access.md)
 - [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)
@@ -186,9 +173,3 @@ You're all done! You've successfully:
 - [Create an app with multi-tenant partner access to Microsoft 365 Defender APIs](api-partner-access.md)
 - [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 Authorization for user sign in and API access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
-=======
-## Related topic
-- [Access the Microsoft 365 Defender APIs](api-access.md)
-- [Access  Microsoft 365 Defender with application context](api-create-app-web.md)
-- [Access  Microsoft 365 Defender with user context](api-create-app-user-context.md)
->>>>>>> master

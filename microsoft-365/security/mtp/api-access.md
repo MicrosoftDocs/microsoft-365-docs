@@ -78,7 +78,7 @@ Use this context when you need to provide an app to many users across [multiple 
 4. Get a security token using user credentials based on a customer's tenant ID.
 5. Use the token to access  Microsoft 365 Defender API.
 
-For more information, see **[Create an app with partner access to Microsoft 365 Defender APIs](api-partner-context.md)**.
+For more information, see **[Create an app with partner access to Microsoft 365 Defender APIs](api-partner-access.md)**.
 
 ## Related articles
 

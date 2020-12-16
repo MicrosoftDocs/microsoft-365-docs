@@ -76,7 +76,7 @@ This article explains how to:
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
+   ![Image of API permission selection](../../media/apis-in-my-org-tab.PNG)
 
    - Choose **Delegated permissions**. Choose the relevant permissions for your scenario (for example **Incident.Read**), and then select **Add permissions**.
 
@@ -85,7 +85,7 @@ This article explains how to:
     > [!NOTE]
     > You need to select the relevant permissions for your scenario. *Read all incidents* is just an example. To determine which permission you need, please look at the **Permissions** section in the API you want to call.
     >
-    > For instance, to [run advanced queries](run-advanced-query-api.md), select the 'Run advanced queries' permission; to [isolate a device](isolate-machine.md), select the 'Isolate machine' permission.
+    > For instance, to [run advanced queries](api-advanced-hunting.md), select the 'Run advanced queries' permission; to [isolate a device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine), select the 'Isolate machine' permission.
 
 5. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
