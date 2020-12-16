@@ -40,8 +40,8 @@ A remote worker with the installed VPN client uses DNS to find the regionally cl
 After the initial changes were made to support mostly remote workers during regional lockdowns, Contoso made infrastructure changes to support remote and onsite work in which a worker could be:
 
 - Always remote.
-- Always on-premises.
-- A combination of remote and on-premises.
+- Always onsite.
+- A combination of onsite and remote.
 
 Microsoft 365 identity, security, and compliance features are designed for Zero Trust and to work regardless of the location of the user and their device. For more information, see [Zero Trust](https://www.microsoft.com/security/business/zero-trust).
 

@@ -121,6 +121,8 @@
              href: create-groups/compare-groups.md
            - name: Create a group
              href: create-groups/create-groups.md
+           - name: Explain groups
+             href: create-groups/explain-groups-knowledge-worker.md
            - name: Manage groups
              href: create-groups/manage-groups.md
            - name: Add or remove group members
@@ -196,7 +198,7 @@
         - name: Pilot Microsoft 365 from my custom domain
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: Domains FAQ
-          href: setup/domains-faq.md
+          href: setup/domains-faq.yml
         - name: Host-specific instructions
           items:
             - name: Change nameservers at any DNS host
@@ -208,9 +210,9 @@
     - name: Manage your data and services
       href: manage/index.yml
       items:
-         - name: Monitor user activity by using reports
+         - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
-         - name: Monitor user productivity with Productivity score
+         - name: Microsoft Productivity Score - overview
            href: productivity/productivity-score.md
            items:
             - name: Content collaboration
