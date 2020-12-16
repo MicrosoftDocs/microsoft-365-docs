@@ -245,7 +245,7 @@ No, the encrypted messages are kept on the recipient's email system, and when th
   
  **Q. Can I customize encrypted email messages with my brand?**
   
-Yes. You can use Windows PowerShell cmdlets to customize the default text that appears at the top of encrypted email messages, the disclaimer text, and the logo that you want to use for the email message and the encryption portal. For details, see [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Yes. You can use Windows PowerShell cmdlets to customize the default text that appears at the top of encrypted email messages, the disclaimer text, and the logo that you want to use for the email message and the encryption portal. This feature is now available in OMEv2. For details, see [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
   
  **Q. Does the service require a license for every user in my organization?**
   

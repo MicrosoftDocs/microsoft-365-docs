@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
@@ -119,7 +119,7 @@ The guidelines presented below are best practices for sending outbound email mes
 - **The source email domain should resolve in DNS.**
 
   For example, if the sender is user@fabrikam, the domain fabrikam resolves to the IP address 192.0.43.10.
-  
+
   If a sending domain has no A-record and no MX record in DNS, the service will route the message through its higher risk delivery pool regardless of whether or not the content of the message is spam. For more information about the higher risk delivery pool, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Outbound mail eserver should have a reverse DNS (PTR) entry.**
@@ -150,11 +150,11 @@ The guidelines presented below are best practices for sending outbound email mes
 
   The message body should have a clear indication of the offering, service, or product. For example, if a sender is sending out a bulk mailing for the Contoso company, the following is what the email From and Subject should resemble:
 
-  > From: marketing@contoso.com <br/> Subject: New updated catalog for the Christmas season!
+  > From: marketing@contoso.com <br> Subject: New updated catalog for the Christmas season!
 
   The following is an example of what not to do because it is not descriptive:
 
-  > From: user@hotmail.com <br/> Subject: Catalogs
+  > From: user@hotmail.com <br> Subject: Catalogs
 
 - **If sending a bulk mailing to many recipients and the message is in newsletter format, there should be a way of unsubscribing at the bottom of the message.**
 

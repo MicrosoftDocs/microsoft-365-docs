@@ -24,7 +24,7 @@ description: "Learn how to verify your email and domain ownership to take over a
 
 # Perform an internal admin takeover
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
 
 If you are an admin and want to take over an unmanaged tenant created by a self-service user signup, you can do this with an internal admin takeover.
 
