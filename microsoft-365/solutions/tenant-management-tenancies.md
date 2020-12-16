@@ -40,7 +40,7 @@ There are many reasons why your organization could have multiple tenants:
 - Clear separation of branding for conglomerate organizations
 - Pre-production, test, or sandbox tenancies
 
-Here is an example.
+Here is an example of an organization that has two tenants (Tenant A and Tenant B) in the same default datacenter geo.
 
 ![Multiple Microsoft 365 tenants with their own Azure AD tenants](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
@@ -59,7 +59,6 @@ Prior to cross-tenant mailbox migration (in preview), when moving Exchange Onlin
 Here are two example tenants and their mailboxes before cross-tenant mailbox migration.
 
 ![Multiple Microsoft 365 tenants and their mailboxes](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
-tenant-management-cross-tenant-mailbox-before
 
 Here is the target tenant (Tenant A) after cross-tenant mailbox migration.
 
@@ -71,7 +70,7 @@ For more information, see [Cross-tenant mailbox migration](../enterprise/cross-t
 
 There are several architectural approaches for mergers, acquisitions, divestitures, and other scenarios that might lead you to migrate an existing Microsoft 365 tenant to a new tenant. 
 
-For guidance, see [Cross-tenant mailbox migration](../enterprise/cross-tenant-mailbox-migration.md).
+For detailed guidance, see [Cross-tenant mailbox migration](../enterprise/cross-tenant-mailbox-migration.md).
 
 ## Multi-Geo for a tenant
 
@@ -85,11 +84,11 @@ Here is an example.
 
 For more information, see [Microsoft 365 Multi-Geo](..enterprise/microsoft-365-multi-geo.md).
 
-## Moving core data to a new datacenter geos
+## Moving core data to a new datacenter geo
 
 Microsoft continues to open new datacenter geos for Microsoft 365 services. These new datacenter geos add capacity and compute resources to support our ongoing customer demand and usage growth. Additionally, the new datacenter geos offer in-geo data residency for core customer data.
 
-Although opening a new datacenter geo does not impact you and your core customer data stored in an already existing datacenter geo, Microsoft allows you to request an early migration of your organization's core customer data at rest to a new datacenter geo.
+Although opening a new datacenter geo does not impact you and your core data stored in an already existing datacenter geo, Microsoft allows you to request an early migration of your organization's core customer data at rest to a new datacenter geo.
 
 Here is an example in which a Microsoft 365 tenant was moved from the European Union (EU) datacenter geo to the one located in the United Kingdom (UK).
 

@@ -63,4 +63,4 @@ Use these steps to set up and manage your Microsoft 365 tenancies.
 
 [![The steps to deploy and manage a Microsoft 365 tenancy](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenancies.md)
 
-To understand how a fictional but representative multi-national organization deployed the elements of their Microsoft 365 tenancy, see [Microsoft 365for the Contoso Corporation](../enterprise/contoso-case-study.md).
+To understand how a fictional but representative multi-national organization deployed the elements of their Microsoft 365 tenancy, see the [Contoso case study](../enterprise/contoso-case-study.md).
