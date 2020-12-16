@@ -3,7 +3,7 @@ title: "Pre-work for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -110,6 +110,7 @@ If you're using a third-party service or line-of-business (LOB) apps that are in
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
+| Add a Web Account Manager (WAM) ID | A WAM ID must be added to the AD FS relying party trust before starting your migration. | Run this command on the AD FS server: `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de')` | Required Action. Inaction will result in service impact during the migration.  |
 | Generate relying party trust for global Azure AD endpoints. | Customers need to manually create a relying party trust (RPT) to [global](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) endpoints. This is done by adding a new RPT via GUI by leveraging the global federation metadata URL and then using [Azure AD RPT Claim Rules](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (in AD FS Help) to generate the claim rules and import them into the RPT. | Federated authentication organizations | Required Action. Inaction will result in service impact during the migration. |
 |||||
 
