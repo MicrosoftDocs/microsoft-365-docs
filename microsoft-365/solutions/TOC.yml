@@ -100,15 +100,15 @@
       items:
       - name: Overview
         href: tenant-management-overview.md
-      - name: Your tenancies
+      - name: Step 1. Your tenancies
         href: tenant-management-tenancies.md
-      - name: Optimal networking
+      - name: Step 2. Optimal networking
         href: tenant-management-networking.md
-      - name: Identity
+      - name: Step 3. Identity
         href: tenant-management-identity.md
-      - name: Migration
+      - name: Step 4. Migration
         href: tenant-management-migration.md
-      - name: Device management
+      - name: Step 5. Device management
         href: tenant-management-device-management.md
 
     - name: Teamwork and collaboration

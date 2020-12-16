@@ -1,5 +1,5 @@
 ---
-title: Device management for your Microsoft 365 for enterprise tenancies
+title: Step 5. Device management for your Microsoft 365 for enterprise tenancies
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.custom:
 description: "Description."
 ---
 
-# Device management for your Microsoft 365 for enterprise tenancies
+# Step 5. Device management for your Microsoft 365 for enterprise tenancies
 
 
 ## Organization-owned devices enrolled and managed (MDM)

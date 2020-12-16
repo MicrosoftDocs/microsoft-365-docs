@@ -1,5 +1,5 @@
 ---
-title: Your Microsoft 365 for enterprise tenancies
+title: Step 1. Your Microsoft 365 for enterprise tenancies
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.custom:
 description: "An overview of a single or multiple Microsoft 365 tenants and managing tenants for multi-geo and moving locations."
 ---
 
-# Your Microsoft 365 for enterprise tenancies
+# Step 1. Your Microsoft 365 for enterprise tenancies
 
 One of your first tenant decisions is how many to have. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. It’s corresponding Azure AD tenant is also distinct, unique, and separate from all other Microsoft 365 tenants.
 
