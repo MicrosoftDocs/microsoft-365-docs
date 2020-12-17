@@ -31,15 +31,15 @@ To maximize the business value of the Microsoft 365 for Enterprise integrated su
 
 ## Migrating to Windows 10
 
-Microsoft 365 for Enterprise license includes a license for Windows 10 Enterprise. To migrate your devices that run Windows 7 or Windows 8.1, you can do an in-place upgrade. Support ended for Windows 7 on *January 14, 2020*. 
+Each Microsoft 365 for Enterprise license includes a license for Windows 10 Enterprise. To migrate your devices that run Windows 7 or Windows 8.1, you can do an in-place upgrade. Support ended for Windows 7 on *January 14, 2020*. 
 
-For additional methods beyond an in-place upgrade, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](https://aka.ms/planforwin10deployment) on your own.
+For additional methods of installing Windows 10 Enterprise beyond an in-place upgrade, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](https://aka.ms/planforwin10deployment) on your own.
 
 ## Migrating to Microsoft 365 Apps for enterprise
 
-Microsoft 365 for Enterprise includes Microsoft 365 Apps for enterprise. This version of the Office client products is available with a Microsoft 365 for Enterprise license. It's installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. For more information, see [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
+Microsoft 365 for Enterprise includes Microsoft 365 Apps for enterprise, a version of the Office client products (Word, PowerPoint, Excel, and Outlook) that is installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. For more information, see [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
-Rather than keeping your computers current with the latest security updates for Office 2013 or Office 2016, or updating your computers from Office 2013 to Office 2016, consider taking the following steps:
+Rather than keeping your computers current for Office 2019 or older versions, take the following steps:
 
 1. Get and assign a Microsoft 365 license for your users.
 2. Uninstall Office 2013 or Office 2016 on their computers.
@@ -49,7 +49,7 @@ Microsoft 365 Apps for enterprise installs both security updates and new feature
 
 ## Migrating on-premises server-based servers and data to Microsoft 365
 
-Microsoft 365 for Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These cloud-based services are automatically updated for security and new features. Your IT personnel can save the time it takes to maintain and update on-premises servers.
+Microsoft 365 for Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These cloud-based services are automatically updated for security and new features. After migration, your IT department can save the time it takes to maintain and update on-premises servers.
 
 Use the following resources for information about migrating users and data for specific Microsoft 365 workloads:
 
@@ -70,4 +70,3 @@ This two-page poster is a quick way to inventory your existing infrastructure. U
 [![Step 5. Deploy device and app management](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
 
 Continue with [device and app management](tenant-management-device-management.md) to deploy device and app management.
-
