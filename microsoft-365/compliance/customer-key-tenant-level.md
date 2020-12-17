@@ -26,6 +26,7 @@ Using keys you provide, you can create Data Encryption Policy and assign it to t
 - Teams media messages (images, code snippets, videos, wiki images)
 - Teams chat notifications
 - Chat suggestions by Cortana
+- User and signal information for Exchange Online
 
 For Customer Key at the tenant level, if you're using Microsoft Teams, you can create one DEP per geo for your organization. You can use different Customer Keys for each geo. If you're not using the multi-geo feature, you can create multiple DEPs per tenant but can only assign one DEP at any point in time. 
 
@@ -63,7 +64,7 @@ Before contacting the Microsoft 365 team, you must perform the following steps f
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. Contact Microsoft to have the process finalized. For Exchange Online and Skype for Business, contact [m365ck@microsoft.com](mailto:m365ck@microsoft.com). Include the following in your email:
+3. Contact Microsoft to have the process finalized at [m365ck@microsoft.com](mailto:m365ck@microsoft.com). Include the following in your email:
 
    **Subject**: Customer Key for \<*Your tenant's fully-qualified domain name*\>
 
@@ -96,7 +97,7 @@ When you create a key vault, you must choose a SKU: either Standard or Premium. 
 > [!IMPORTANT]
 > Use the Premium SKU key vaults and HSM-protected keys for production data, and only use Standard SKU key vaults and keys for testing and validation purposes.
 
-Use a common prefix for key vaults and include an abbreviation of the use and scope of the key vault and keys. For example, for the Contoso SharePoint service where the vaults will be located in North America, a possible pair of names is Contoso-O365SP-NA-VaultA1 and Contoso-O365SP-NA-VaultA2. Vault names are globally unique strings within Azure, so you may need to try variations of your desired names in case the desired names are already claimed by other Azure customers. Once configured, vault names cannot be changed, so the best practice is to have a written plan for setup and use a second person to verify the plan is executed correctly.
+Use a common prefix for key vaults and include an abbreviation of the use and scope of the key vault and keys. For example, for the Contoso service where the vaults will be located in North America, a possible pair of names is Contoso-O365-NA-VaultA1 and Contoso-O365-NA-VaultA2. Vault names are globally unique strings within Azure, so you may need to try variations of your desired names in case the desired names are already claimed by other Azure customers. Once configured, vault names cannot be changed, so the best practice is to have a written plan for setup and use a second person to verify the plan is executed correctly.
 
 If possible, create your vaults in non-paired regions. Paired Azure regions provide high availability across service failure domains. Therefore, regional pairs can be thought of as each other's backup region. This means that an Azure resource that is placed in one region is automatically gaining fault tolerance through the paired region. For this reason, choosing regions for two vaults used in a data encryption policy where the regions are paired means that only a total of two regions of availability are in use. Most geographies only have two regions, so it's not yet possible to select non-paired regions. If possible, choose two non-paired regions for the two vaults used with a data encryption policy. This benefits from a total of four regions of availability. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) for a current list of regional pairs.
 
@@ -236,7 +237,7 @@ Run the [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvaul
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-In the output, look for the Access Policy and for the Exchange Online identity (GUID) or the SharePoint Online identity (GUID) as appropriate. All three of the above permissions must be shown under Permissions to Keys.
+In the output, look for the Access Policy and for the Microsoft 365 app ID (GUID) as appropriate. All three of the above permissions must be shown under Permissions to Keys.
   
 If the access policy configuration is incorrect, run the Set-AzKeyVaultAccessPolicy cmdlet as follows:
   
