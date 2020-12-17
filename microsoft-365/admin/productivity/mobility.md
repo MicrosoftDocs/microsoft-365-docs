@@ -25,6 +25,21 @@ description: "Details of the Mobility - people experiences Productivity score."
 
 Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The mobility category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
+## Prerequisites
+
+To get started with Mobility insights, people in your organization need to be licensed for:
+
+- Microsoft Teams
+- Exchange Online
+- Word
+- Excel
+- PowerPoint
+- OneNote
+
+For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).
+
+After people have been active in the above products at least once in the last 28 days, you will start to see the insights.
+
 ## Why your organization&#39;s mobility score matters
 
 A fundamental pillar of organizational productivity is how well people are able to work flexibly from wherever they are. With Microsoft 365, people can stay connected with Outlook, Microsoft Teams, and Yammer. People can also seamlessly collaborate on content by using Word, Excel, PowerPoint, and OneNote from any location, and platforms.

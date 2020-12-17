@@ -1,5 +1,6 @@
 ---
-title: "Microsoft recommendations for EOP and Defender for Office 365 security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365 , set up Defender for Office 365 , set up EOP, configure Defender for Office 365, configure EOP, security configuration"
+title: "Microsoft recommendations for EOP and Defender for Office 365 security settings"
+keywords: Office 365 security recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365 , set up Defender for Office 365 , set up EOP, configure Defender for Office 365, configure EOP, security configuration
 f1.keywords:
 - NOCSH
 ms.author: tracyp

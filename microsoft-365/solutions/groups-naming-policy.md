@@ -111,8 +111,6 @@ Some administrators are exempted from these policies, across all group workloads
 
 - User account admin
 
-- Directory writers
-
 ## How to set up the naming policy
 
 To set up a naming policy:

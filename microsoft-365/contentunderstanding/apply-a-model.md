@@ -73,6 +73,9 @@ While an applied model processes all files uploaded to the document library afte
 
       ![Classify and extract](../media/content-understanding/extract-classify.png)</br> 
 
+> [!NOTE]
+> You can copy individual files to a library and apply them to a model, but not folders.
+
 ## See Also
 [Create a classifier](create-a-classifier.md)
 

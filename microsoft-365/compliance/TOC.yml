@@ -106,6 +106,8 @@
           href: custom-sensitive-info-types.md
         - name: Create custom sensitive information types with exact data match
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Use the Exact Data Match Schema and Sensitive Information Type Wizard
+          href: sit-edm-wizard.md
         - name: Modify exact data match schema to use configurable match
           href: sit-modify-edm-schema-configurable-match.md
         - name: Create a custom sensitive information type - Security & Compliance Center
@@ -170,6 +172,8 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items: 
+            - name: Customer Key for Microsoft 365 at the tenant level (public preview)
+              href: customer-key-tenant-level.md
             - name: Service encryption with Customer Key in Office 365
               href: customer-key-overview.md
             - name: Set up Customer Key for Office 365
