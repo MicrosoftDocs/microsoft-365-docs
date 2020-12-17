@@ -21,7 +21,6 @@ description: "Learn how to set up Customer Key for all data within your Microsof
 
 Using keys you provide, you can create a data encryption policy (DEP) and assign it to the tenant. The DEP encrypts data across the tenant for these workloads:
 
-- Microsoft Teams files
 - Teams chat messages (1:1 chats, group chats, meeting chats and channel conversations)
 - Teams media messages (images, code snippets, videos, wiki images)
 - Teams chat notifications
@@ -37,11 +36,11 @@ You can create multiple DEPs per tenant but can only assign one DEP at any point
 
 If you already have Customer Key set up for Exchange Online and Sharepoint Online, here's how the new tenant-level public preview fits in.
 
-The tenant-level encryption policy you create encrypts all data for the Microsoft Teams and Exchange Online workloads in Microsoft 365. This policy doesn't interfere with finely-tuned DEPs you've already created in Customer Key.
+The tenant-level encryption policy you create encrypts all data for the Microsoft Teams and Exchange Online workloads in Microsoft 365. This policy doesn't interfere with finely tuned DEPs you've already created in Customer Key.
 
 Examples:
 
-For Microsoft Teams, call and meeting recordings which are saved in OneDrive for Business and SharePoint, are encrypted in a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo. The tenant-level DEP will encrypt the encrypted data again with the new policy.
+For Microsoft Teams, files and call and meeting recordings, which are saved in OneDrive for Business and SharePoint, are encrypted in a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo. The tenant-level DEP will encrypt the encrypted data again with the new policy.
 
 For Exchange Online, you can create a DEP that encrypts one or more user mailboxes with Customer Key. When you create a tenant-level policy, that policy will not encrypt the encrypted mailboxes. However,  the tenant-level key will encrypt the mailboxes that are not affected by a DEP already.
 
@@ -137,9 +136,9 @@ For each key vault, you will need to define three separate sets of permissions f
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Key vault contributors** that can change permissions on the Azure Key Vault itself. You'll need to change these permissions as employees leave or join your team, or in the extremely rare situation that the key vault administrators legitimately need permission to delete or restore a key. This set of key vault contributors needs to be granted the Contributor role on your key vault. You can assign this role by using Azure Resource Manager. For detailed steps, see [Use Role-Based Access Control](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) to manage access to your Azure subscription resources. The administrator who creates a subscription has this access by default, as well as the ability to assign other administrators to the Contributor role.
+- **Key vault contributors** that can change permissions on the Azure Key Vault itself. You'll need to change these permissions as employees leave or join your team, or in the rare situation that the key vault administrators legitimately need permission to delete or restore a key. This set of key vault contributors needs to be granted the Contributor role on your key vault. You can assign this role by using Azure Resource Manager. For detailed steps, see [Use Role-Based Access Control](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) to manage access to your Azure subscription resources. The administrator who creates a subscription has this access by default, and the ability to assign other administrators to the Contributor role.
 
-- **Microsoft 365 data at rest encryption service** that does the work of Customer Key at the tenant level.To give permission to Microsoft 365, run the **Set-AzKeyVaultAccessPolicy** cmdlet using the following syntax:
+- **Microsoft 365 data at rest encryption service** that does the work of Customer Key at the tenant level. To give permission to Microsoft 365, run the **Set-AzKeyVaultAccessPolicy** cmdlet using the following syntax:
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Microsoft 365 appID>
@@ -157,7 +156,7 @@ For each key vault, you will need to define three separate sets of permissions f
 
 ### Enable and then confirm soft delete on your key vaults
 
-When you can quickly recover your keys, you are less likely to experience an extended service outage due to accidentally or maliciously deleted keys. You need to enable this configuration, referred to as Soft Delete, before you can use your keys with Customer Key. Enabling Soft Delete allows you to recover keys or vaults within 90 days of deletion without having to restore them from backup.
+When you can quickly recover your keys, you are less likely to experience an extended service outage due to accidentally or maliciously deleted keys. Enable this configuration, referred to as Soft Delete, before you can use your keys with Customer Key. Enabling Soft Delete allows you to recover keys or vaults within 90 days of deletion without having to restore them from backup.
   
 To enable Soft Delete on your key vaults, complete these steps:
   
