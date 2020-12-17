@@ -49,9 +49,9 @@ If you implement these principles, you get an enterprise network optimized for M
 
 Here's are how this configuration solves the latency issues of a traditional enterprise network:
 
-- Traffic skips the WAN backbone and is sent to local front doors for all offices, decreasing latency.
+- Trusted Microsoft 365 traffic skips the WAN backbone and is sent to local front doors for all offices, decreasing latency.
 - Network hairpins that perform duplicate packet processing are skipped for Microsoft 365 trusted traffic, decreasing latency.
-- Network edge devices that perform unneeded and duplicate packet processing are skipped for trusted traffic, decreasing latency.
+- Network edge devices that perform unneeded and duplicate packet processing are skipped for Microsoft 365 trusted traffic, decreasing latency.
 
 For more information, see [Microsoft 365 network connectivity overview](../enterprise/microsoft-365-networking-overview.md).
 

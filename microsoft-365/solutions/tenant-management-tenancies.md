@@ -18,7 +18,7 @@ description: "An overview of a single or multiple Microsoft 365 tenants and mana
 
 # Step 1. Your Microsoft 365 for enterprise tenancies
 
-One of your first tenant decisions is how many to have. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. It’s corresponding Azure AD tenant is also distinct, unique, and separate from all other Microsoft 365 tenants.
+One of your first tenant decisions is how many to have. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. It’s corresponding Azure AD tenant is also distinct, unique, and separate from all other Microsoft 365 tenants.
 
 ## Single tenancy
 Having a single tenancy simplifies many aspects of your organization’s use of Microsoft 365. A single tenancy means a single Azure AD tenant with a single set of accounts, groups, and policies. Permissions and sharing of resources across your organization can be done through this central identity provider.

@@ -47,7 +47,7 @@ Rather than keeping your computers current for Office 2019 or older versions, ta
 
 Microsoft 365 Apps for enterprise installs both security updates and new feature updates automatically. It can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
-## Migrating on-premises server-based servers and data to Microsoft 365
+## Migrating on-premises servers and data to Microsoft 365
 
 Microsoft 365 for Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These cloud-based services are automatically updated for security and new features. After migration, your IT department can save the time it takes to maintain and update on-premises servers.
 
@@ -59,7 +59,7 @@ Use the following resources for information about migrating users and data for s
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for Enterprise, download this transition poster:
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for enterprise, download this transition poster:
 
 [![Image showing the Transition to Microsoft 365 poster.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 

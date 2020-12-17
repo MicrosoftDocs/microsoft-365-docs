@@ -59,9 +59,11 @@ Microsoft provides a set of configurations for [identity and device access](../s
 - Azure AD Identity Protection user risk policies
 - Additional policies of cloud apps
 
+Here is the application of these settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.
+
 ![Identity and device access configurations for requirements and restrictions on users, thier devices, and their use of apps](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 
-For device access, use the configurations in these articles:
+For device access and app management, use the configurations in these articles:
 
 - [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
 - [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
