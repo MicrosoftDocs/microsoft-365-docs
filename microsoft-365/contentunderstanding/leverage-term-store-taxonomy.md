@@ -20,7 +20,7 @@ description: "Leverage term store taxonomy when creating an extractor in your do
 
 </br>
 
-When you create an extractor in your document understanding model using SharePoint Syntex, you can take advantage of [Managed Metadata services](https://docs.microsoft.com/sharepoint/managed-metadata#terms) term store taxonomy to display preferred terms for data that you extract.  
+When you create an extractor in your document understanding model using SharePoint Syntex, you can take advantage of global term sets in the [term store](https://docs.microsoft.com/sharepoint/managed-metadata) to display preferred terms for data that you extract.  
 
 As an example, your model identifies and classifies all **Contract** documents that are uploaded to the document library.  Additionally, the model also extracts a **Contract Service** value from each contract, and will display it in a column in your library view. Among the various Contract Services values in the contracts, there are several older values that your company no longer uses and have been renamed. For example, all references to the terms *Design*, *Graphics*, or *Topography* contract services should now be called *Creative*. Whenever your model extracts one of the outdated terms from a contract document, you want it to display the current term - Creative - in your library view. In the example below, while training the model we see that one sample document contains the outdated term of *Design*.
 
@@ -31,9 +31,6 @@ As an example, your model identifies and classifies all **Contract** documents t
 Term sets are configured in the Managed Metadata services (MMS) term store in the SharePoint admin center. In the the example below, the *Contract Services* [term set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) is configured to include a number of terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*. 
 
    ![Term set](../media/content-understanding/term-store.png)</br>
-
-> [!NOTE]
->  Term sets are configured as global in the MMS field of the content center.
 
 There could be a number of reasons why you might want to use a synonym in your term set. For example, there could be outdated terms, renamed terms, or variations between your organizations departments on naming.
 
