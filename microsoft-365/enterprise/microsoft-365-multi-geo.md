@@ -45,7 +45,7 @@ Here are the key terms used in describing Microsoft 365 Multi-Geo:
 
 ## Licensing
 
-Microsoft 365 Multi-Geo is available as an add-on to the following Microsoft 365 subscription plans for EA customers with a minimum of 250 Microsoft 365 seats in their tenant, and a minimum of 5% of those seats using multi-geo. Please contact your Microsoft account team for details.
+Microsoft 365 Multi-Geo is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers with a minimum of 250 Microsoft 365 seats in their tenant, and a minimum of 5% of those seats using multi-geo. User subscription licenses must be on the same Enterprise Agreement as the Multi-Geo Services licenses. Please contact your Microsoft account team for details.
 
 - Microsoft 365 F1, F3, E3, or E5
 - Office 365 F3, E1, E3, or E5
