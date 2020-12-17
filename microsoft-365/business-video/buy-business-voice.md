@@ -3,7 +3,7 @@ title: "Buy Microsoft 365 Business Voice"
 f1.keywords:
 - NOCSH
 ms.author: twerner
-author: twerner-msft
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
