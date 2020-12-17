@@ -22,26 +22,27 @@ ms.custom: seo-marvel-apr2020
 
 Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communication and collaboration between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communication and collaboration  among specific groups of users when necessary? With information barriers, you can! 
 
-Information barriers is now supported in Microsoft Teams, SharePoint Online, and OneDrive for Business. Assuming your [subscription](#required-licenses-and-permissions) includes information barriers, a compliance administrator or information barriers administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. Information barrier policies can be used for situations like these:
+Information barriers is now supported in Microsoft Teams, SharePoint Online, and OneDrive for Business. Assuming your [subscription](#required-licenses-and-permissions) includes information barriers, a compliance administrator or information barriers administrator can define policies to allow or prevent communication and collaboaration between groups of users in Microsoft Teams, SharePoint Online and OneDrive. Information barrier policies can be used for situations like these:
 
 - User in the day trader group should not communicate or share files with the marketing team
 - Finance personnel working on confidential company information should not communicate or share files with certain groups within their organization
 - An internal team with trade secret material should not call or chat online with people in certain groups within their organization
 - A research team should only call or chat online with a product development team
+- A site for day trader group should not be shared or accessed by anyone outside the day trader group
 
 > [!IMPORTANT]
-> Information barriers ***only supports*** two way restrictions. One way restrictions, such as marketing can communicate with day traders, but day traders cannot communicate with marketing ***is not supported***.
+> Information barriers ***only supports*** two way restrictions. One way restrictions, such as marketing can communicate and collaborate with day traders, but day traders cannot communicate and collaborate with marketing ***is not supported***.
 
-For all of these example scenarios (and more), information barrier policies can be defined to prevent or allow communications in Microsoft Teams. Such policies can prevent people from calling or chatting with those they shouldn't, or enable people to communicate only with specific groups in Microsoft Teams. With information barrier policies in effect, whenever users who are covered by those policies attempt to communicate with others in Microsoft Teams, checks are done to prevent (or allow) communication (as defined by information barrier policies). To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
+For all of these example scenarios (and more), information barrier policies can be defined to prevent or allow communications and collaboration in Microsoft Teams, SharePoint Online and OneDrive. Such policies can prevent people from calling or chatting with those they shouldn't, or enable people to communicate only with specific groups in Microsoft Teams. With information barrier policies in effect, whenever users who are covered by those policies attempt to communicate and collaborate with others in Microsoft Teams, SharePoint Online or OneDrive checks are done to prevent (or allow) communication and collaboration (as defined by information barrier policies). To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams) and [information barriers in SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
 
 > [!IMPORTANT]
 > Currently, information barriers do not apply to email communications. In addition, information barriers are independent from [compliance boundaries](set-up-compliance-boundaries.md).<p>Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.) 
 
 ## What happens with information barriers
 
-When information barrier policies are in place, people who should not communicate or share files with other specific users won't be able to find, select, chat, or call those users. With information barriers, checks are in place to prevent unauthorized communication.
+When information barrier policies are in place, people who should not communicate or share files with other specific users won't be able to find, select, chat, or call those users. With information barriers, checks are in place to prevent unauthorized communication and collaboration. 
 
-Initially, information barriers apply to Microsoft Teams chats and channels only. 
+Information barriers applies to Microsoft Teams (chats and channels), SharePoint Online and OneDrive. 
 In Microsoft Teams, information barrier policies determine and prevent the following kinds of unauthorized communications:
 
 - Searching for a user
@@ -57,6 +58,15 @@ In Microsoft Teams, information barrier policies determine and prevent the follo
 If the people involved are included in an information barrier policy to prevent the activity, they will not be able to proceed. In addition, potentially, everyone included in an information barrier policy can be blocked from communicating with others in Microsoft Teams. When people affected by information barrier policies are part of the same team or group chat, they might be removed from those chat sessions and further communication with the group might not be allowed.
 
 To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
+
+In SharePoint Online and OneDrive, information barrier policies determine and prevent the following kinds of unauthorized collaborations:
+
+- Adding a member to a site
+- Accessing site or content by a user
+- Sharing site or content with another user
+- Searching a site 
+
+To learn more about the user experience with information barriers, see [information barriers in SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
 
 ## Required licenses and permissions
 
