@@ -27,6 +27,10 @@ Using keys you provide, you can create Data Encryption Policy and assign it to t
 - Teams chat notifications
 - Chat suggestions by Cortana
 
+For Customer Key at the tenant level, if you're using Microsoft Teams, you can create one DEP per geo for your organization. You can use different Customer Keys for each geo. If you're not using the multi-geo feature, you can create multiple DEPs per tenant but can only assign one DEP at any point in time. 
+
+When you assign the DEP, encryption begins automatically but can take some time to complete.
+
 ## Set up Customer Key at the tenant level (public preview)
 
 These steps are similar but not identical to the steps for setting up Customer Key at the application level. You should only use this public preview with test data in test tenants. Do not use this with production data or in your production environment. If you already have a production deployment of Customer Key, use these steps to set up Customer Key at the tenant level in a test environment.
@@ -59,7 +63,7 @@ Before contacting the Microsoft 365 team, you must perform the following steps f
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. Contact Microsoft to have the process finalized. For the SharePoint and OneDrive for Business team, contact [spock@microsoft.com](mailto:spock@microsoft.com). For Exchange Online and Skype for Business, contact [m365ck@microsoft.com](mailto:m365ck@microsoft.com). Include the following in your email:
+3. Contact Microsoft to have the process finalized. For Exchange Online and Skype for Business, contact [m365ck@microsoft.com](mailto:m365ck@microsoft.com). Include the following in your email:
 
    **Subject**: Customer Key for \<*Your tenant's fully-qualified domain name*\>
 
@@ -272,77 +276,128 @@ In Azure PowerShell:
 
 ## Set up the Customer Key encryption policy for your tenant
 
-You need to be assigned permissions before you can run this cmdlet. Although this topic lists all parameters for the cmdlet, you may not have access to some parameters if they're not included in the permissions assigned to you. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+You need to be assigned permissions before you can run these cmdlets. Although this article lists all parameters for the cmdlets, you may not have access to some parameters if they're not included in the permissions assigned to you. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 
 ### Create policy
 
-New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
-Description:
-Enable compliance admin to create a new data encryption policy (DEP) using two AKV root keys. Once created, a policy can then be assigned using Set-M365DataAtRestEncryptionPolicy cmdlet.
+```powershell
+   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
+```
+
+Description: Enable compliance admin to create a new data encryption policy (DEP) using two AKV root keys. Once created, a policy can then be assigned using Set-M365DataAtRestEncryptionPolicy cmdlet. Upon first assignment of keys or after you rotate keys, it can take up to 24 hours for the new keys to take effect. If the new DEP takes more than 24 hours to take effect, contact Microsoft.
+
 Example:
+
+```powershell
 New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://contosoWestUSvault01.vault.azure.net/keys/Key_01","https://contosoEastUSvault01.vault.azure.net/keys/Key_02" -Description "Tenant default policy"
-Parameters:
-Name	Description	Optional (Y/N)
--Name	Friendly name of the data encryption policy	N
--AzureKeyIDs	Specifies two URI values of the Azure Key Vault keys (separate by comma) to associate with the data encryption policy	N
--Description	Description of the data encryption policy	N
+```
 
-b.	Assign policy
+Parameters:
+| Name | Description | Optional (Y/N) |
+|--|--|--|
+|Name|Friendly name of the data encryption policy|N|
+|AzureKeyIDs|Specifies two URI values of the Azure Key Vault keys (separate by comma) to associate with the data encryption policy|N|
+|Description|Description of the data encryption policy|N|
+
+### Assign policy
+
+```powershell
+Set-M365DataAtRestEncryptionPolicyAssignment -Policy “<Default_PolicyName or Default_PolicyID>”
+```
+
 Description:
-This cmdlet is used for configuring default Data Encryption Policy. This policy will be used to then encrypt data across all support workloads.
-Examples:
-Assign data encryption policy: 
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “<Default_PolicyName> |  <or Default_PolicyID>”
+This cmdlet is used for configuring default Data Encryption Policy. This policy will be used to then encrypt data across all support workloads. 
+
+Example:
+
+```powershell
+Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
+```
 
 Parameters:
-Name	Description	Optional (Y/N)
--Policy	Specifies the data encryption policy that needs to be assigned; specify either the Policy Name or the PolicyID.	N
+| Name | Description | Optional (Y/N) |
+|--|--|--|
+-Policy|Specifies the data encryption policy that needs to be assigned; specify either the Policy Name or the Policy ID.|N|
 
-c.	Modify / Refresh policy
+### Modify or Refresh policy
+
+```powershell
 Set-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
-Description:
-This is a multi-purpose cmdlet. The cmdlet can be used either to modify or refresh an existing policy. It can also be used to enabled/disable a policy. 
-Examples:
-Disable data encryption policy: 
-Set-M365DataAtRestEncryptionPolicy -Identity "NAM Policy" -Enabled $false
+```
 
-Refresh data encryption policy: 
+Description:
+The cmdlet can be used either to modify or refresh an existing policy. It can also be used to enable or disable a policy. Upon first assignment of keys or after you rotate keys, it can take up to 24 hours for the new keys to take effect. If the new DEP takes more than 24 hours to take effect, contact Microsoft.
+
+Examples:
+
+Disable a data encryption policy.
+
+```powershell
+Set-M365DataAtRestEncryptionPolicy -Identity "NAM Policy" -Enabled $false
+```
+
+Refresh a data encryption policy.
+
+```powershell
 Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
+```
 
 Parameters:
-Name	Description	Optional (Y/N)
--Identity	Specifies the data encryption policy that you want to modify.	N
--Refresh	Use the Refresh switch to update the data encryption policy after you rotate any of the associated keys in the Azure Key Vault. You don't need to specify a value with this switch.	Y
--Enabled	The Enabled parameter enables or disable the data encryption policy. Valid values are:
-$true: The policy is enabled.
-$false: The policy is disabled.
+| Name | Description | Optional (Y/N) |
+|--|--|--|
+|-Identity|Specifies the data encryption policy that you want to modify.|N|
+|-Refresh|Use the Refresh switch to update the data encryption policy after you rotate any of the associated keys in the Azure Key Vault. You don't need to specify a value with this switch.|Y|
+|-Enabled|The Enabled parameter enables or disable the data encryption policy. Before you disable a policy, you must unassign it from your tenant. Valid values are:</br > $true: The policy is enabled</br > $false: The policy is disabled.|Y|
+|-Name|The Name parameter specifies the unique name for the data encryption policy.|Y
+|-Description|The Description parameter specifies an optional description for the data encryption policy.|Y|
 
-Please note that disabling a policy would require that the policy is not assigned.	Y
--Name	The Name parameter specifies the unique name for the data encryption policy.	Y
--Description	The Description parameter specifies an optional description for the data encryption policy.	Y
+### Get policy details
 
-d.	Get policy details
+```powershell
 Get-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
-Description:
-This cmdlet lists all of M365DataAtRest encryption policies that are created for the tenant or details about a specific policy. 
+```
+
+Description: This cmdlet lists all of M365DataAtRest encryption policies that are created for the tenant or details about a specific policy.
 
 Examples:
-Get-M365DataAtRestEncryptionPolicy
+
 This example returns a summary list of M365DatAtRest Encryption policies in the organization.
+
+```powershell
+Get-M365DataAtRestEncryptionPolicy
+```
+
+This example returns detailed information for the data encryption policy named "NAM Policy".
+
+```powershell
 Get-M365DataAtRestEncryptionPolicy -Identity "NAM Policy"
-The example returns detailed information for the data encryption policy named "NAM Policy".
-Parameters
-Name	Description	Optional (Y/N)
--Identity	Specifies the data encryption policy that you want to list the details for.	Y
+```
 
-e.	Get policy assignment info
+Parameters:
+
+| Name | Description | Optional (Y/N) |
+|--|--|--|
+|-Identity|Specifies the data encryption policy that you want to list the details for.|Y|
+
+### Get policy assignment info
+
+```powershell
+Get-M365DataAtRestEncryptionPolicyAssignment
+```
+
 Description:
-This cmdlet lists the policy that’s currently assigned to the tenant. 
-Examples:
-List the currently assigned data encryption policy:
-Get-M365DataAtRestEncryptionPolicyAssignment 
+This cmdlet lists the policy that’s currently assigned to the tenant.
 
-Related articles:
+## About the availability key
+
+For information about the availability key, see [Learn about the availability key](customer-key-availability-key-understand.md).
+
+## Key rotation
+
+For information about rotating or rolling keys used with Customer Key, see [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). When you update the DEP to use the new version of the keys, you'll run the Set-M365DataAtRestEncryptionPolicy cmdlet as described earlier in this article.
+
+
+## Related articles:
 
 - [Service encryption with Customer Key](customer-key-overview.md)
 
