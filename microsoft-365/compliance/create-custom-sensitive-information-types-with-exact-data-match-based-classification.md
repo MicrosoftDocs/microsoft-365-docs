@@ -204,7 +204,7 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
 
       - **idMatch**: This field points to the primary element for EDM.
         - Matches: Specifies the field to be used in exact lookup. You provide a searchable field name in EDM Schema for the DataStore.
-        - Classification: This field specifies the sensitive type match that triggers EDM lookup. You can provide Name or GUID of an existing built-in or custom classification.
+        - Classification: This field specifies the sensitive type match that triggers EDM lookup. You can provide Name or GUID of an existing built-in or custom sensitive information type. Be aware that any string that matches the sensitive info type provided will be hashed and compared to every entry in the sensitive information table. In order to avoid causing performance issues, if you use a custom sensitive information type as the Classification element in EDM avoid using one that will match a large percentage of content (e.g. "any number" or "any five letter word") by adding supporting keywords or including formatting in the definiton of the custom classification sensitive information type. 
 
       - **Match:** This field points to additional evidence found in proximity of idMatch.
         - Matches: You provide any field name in EDM Schema for DataStore.
