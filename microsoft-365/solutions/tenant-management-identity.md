@@ -18,7 +18,7 @@ description: "An overview of identity models, authentication methods, and how to
 
 # Step 3. Identity for your Microsoft 365 for enterprise tenancies
 
-Your Microsoft 365 tenancy include an Azure Active Directory (Azure AD) tenant to manage identities and authentication for sign-ins. Getting your identity infrastructure configured correctly is vital to managing Microsoft 365 user access and permissions for your organization.
+Your Microsoft 365 tenancy includes an Azure Active Directory (Azure AD) tenant to manage identities and authentication for sign-ins. Getting your identity infrastructure configured correctly is vital to managing Microsoft 365 user access and permissions for your organization.
 
 ## Cloud-only vs. hybrid
 
@@ -51,7 +51,7 @@ Here are the two types of authentication when using the hybrid identity model.
 
 | Authentication type | Description |
 |:-------|:-----|
-| Managed authentication | Azure AD handles the authentication process by using a locally-stored hashed version of the password or sends the credentials to an on-premises software agent to be authenticated by the on-premises AD DS. There are two types of managed authentication: Password hash synchronization (PHS) and Pass-through authentication (PTA). With PHS, Azure AD performs the authentication itself. With PTA, Azure AD has AD DS perform the authentication. |
+| Managed authentication | Azure AD handles the authentication process by using a locally-stored hashed version of the password or sends the credentials to an on-premises software agent to be authenticated by the on-premises AD DS. <br> <br>  There are two types of managed authentication: Password hash synchronization (PHS) and Pass-through authentication (PTA). With PHS, Azure AD performs the authentication itself. With PTA, Azure AD has AD DS perform the authentication. |
 | Federated authentication | Azure AD redirects the client computer requesting authentication to another identity provider. |
 |  |  |
 

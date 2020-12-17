@@ -108,7 +108,7 @@
         href: tenant-management-identity.md
       - name: Step 4. Migration
         href: tenant-management-migration.md
-      - name: Step 5. Device management
+      - name: Step 5. Device and app management
         href: tenant-management-device-management.md
 
     - name: Teamwork and collaboration

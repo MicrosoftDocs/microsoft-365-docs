@@ -1,5 +1,5 @@
 ---
-title: Step 5. Device management for your Microsoft 365 for enterprise tenancies
+title: Step 5. Device and app management for your Microsoft 365 for enterprise tenancies
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,13 +13,22 @@ ms.collection:
 - m365solution-tenantmanagement
 ms.custom:
 - Ent_Solutions
-description: "Description."
+description: "An overview of device and app management for your Microsoft 365 tenant."
 ---
 
-# Step 5. Device management for your Microsoft 365 for enterprise tenancies
+# Step 5. Device and app management for your Microsoft 365 for enterprise tenancies
 
+Summary statement
 
-Microsoft 365 for enterprise includes features to help manage devices, and their apps, within your organization. Managing mobile devices helps you secure and protect your organization's resources.
+## Organization-owned devices enrolled and managed (MDM)
+
+## Apps for personal devices managed (MAM)
+
+## Intune device and app policies
+
+## Based on existing content
+
+To help you secure and protect your organization's resources, Microsoft 365 for enterprise includes features to help manage devices and their access to apps.
 
 There are two options for device management:
 
@@ -42,7 +51,7 @@ This is built into Microsoft 365 and helps you secure and manage your users' mob
 
 To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune).
 
-Based on your assessment, get started managing your devices with:
+Based on your assessment, you can manage your devices and their access to apps with:
 
 - [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
 - [Basic Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
@@ -54,15 +63,4 @@ Microsoft provides a set of recommendations for [identity and device access](../
 - [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
 - [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 
-## How Contoso did device management for Microsoft 365
-
-For information about how a fictional but representative multi-national business deployed their mobile device management infrastructure with Microsoft 365 cloud services, see [Mobile device management for Contoso](contoso-mdm.md).
-
-
-
-## Organization-owned devices enrolled and managed (MDM)
-
-## Apps for personal devices managed (MAM)
-
-## Intune device and app policies
 
