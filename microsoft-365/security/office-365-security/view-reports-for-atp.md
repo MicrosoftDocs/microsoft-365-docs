@@ -317,7 +317,7 @@ To get back to the reports view, click **View report**.
 
 ## Additional reports to view
 
-In addition to the reports described in this topic, several other reports are available, as described in the following table:
+In addition to the reports described in this article, several other reports are available, as described in the following table:
 
 ****
 
@@ -333,7 +333,7 @@ In addition to the reports described in this topic, several other reports are av
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
-In order to view and use the reports described in this topic, you need to be a member of one of the following role groups in the Security & Compliance Center:
+In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Security & Compliance Center:
 
 - **Organization Management**
 - **Security Administrator**

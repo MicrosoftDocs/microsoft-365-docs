@@ -75,7 +75,7 @@ If a user reports any of the above symptoms, you should perform further investig
 
 Even after you've regained access to your account, the attacker may have added back-door entries that enable the attacker to resume control of the account.
 
-You must perform all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account. These steps help you remove any back-door entries that the hijacker may have added to your account. After you perform these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.
+You must do all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account. These steps help you remove any back-door entries that the hijacker may have added to your account. After you do these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.
 
 ### Step 1 Reset the user's password
 
@@ -175,7 +175,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 1. Make sure that you verify your sent items. You may have to inform people on your contacts list that your account was compromised. The attacker may have asked them for money, spoofing, for example, that you were stranded in a different country and needed money, or the attacker may send them a virus to also hijack their computers.
 
-2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, perform these steps for your Microsoft 365 subscription, and then perform these steps for your other accounts.
+2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, do these steps for your Microsoft 365 subscription, and then do these steps for your other accounts.
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
 
