@@ -318,7 +318,7 @@ Here is what the user can and can't see:
 - *Deleted items folder*: The email in a user's Deleted items folder.
 - *Quarantine*: The email is in quarantine and not in a user's mailbox.
 - *Failed*: The email failed to reach the mailbox.
-- *Dropped*: The email gots lost somewhere in the mail flow.
+- *Dropped*: The email got lost somewhere in the mail flow.
 
 ### Email timeline
 
