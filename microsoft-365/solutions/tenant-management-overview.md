@@ -18,19 +18,19 @@ description: "An overview of the planning, deployment, and ongoing operation of 
 
 # Tenant management for Microsoft 365 for enterprise
 
-Needs business framing
+Creating a path to your organization's digital transformation and the cloud requires a firm foundation upon which your workers can rely for productivity, collaboration, performance, privacy, compliance, and security.
 
-<!--
+Correct configuration of your Microsoft 365 tenancies provides that foundation, leaving your workers to focus on getting their work done and your IT department to focus on end-to-end solutions that provide additional business value. 
 
-Example: 
+This solution takes you through the configuration of that foundation in these steps:
 
-Your business may need to enable your workers to have secure access to your organization's on-premises and cloud-based information, tools, and resources from their homes. Allowing workers to work away from the office is important for many organizations to:
+1. Determine your tenancies
+2. Optimize your networking
+3. Synchronize your identities and enforce secure sign-ins
+4. Migrate your Windows devices, Office clients, and on-premises Office servers and data
+5. Deploy device and app management
 
-- Save on office space.
-- Hire and retain workers who are unwilling to relocate.
-- Reduce worker commuting, leaving them with more time to be productive and for stress-reducing activities outside of work.
-
---> 
+But first, let's take a moment to understand what a tenancy is and what a tenancy that provides a firm foundation looks like.
 
 ## A Microsoft 365 tenant defined
 
@@ -81,7 +81,11 @@ This Microsoft 365 tenant includes:
 
 ## Tenant capabilities for Microsoft 365 for enterprise
 
-| Tenancy capability or feature | Description | Licensing |
+The following sections and table list the key capabilities and licensing for the steps in this solution.
+
+### Tenancy
+
+| Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
 | Multiple tenancies |  | Microsoft 365 E3 or E5 | 
 | Cross-tenant mailbox migration |  | Microsoft 365 E3 or E5 | 
@@ -89,15 +93,17 @@ This Microsoft 365 tenant includes:
 | Move core data to a new datacenter geo |  | Microsoft 365 E3 or E5 | 
 ||||
 
+### Networking
 
-| Networking capability or feature | Description | Licensing |
+| Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
 | Network Insights |  | Microsoft 365 E3 or E5 | 
 | Automate endpoint updates |  | Microsoft 365 E3 or E5 | 
 ||||
 
+### Identity
 
-| Identity capability or feature | Description | Licensing |
+| Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
 | Synchronize on-premises Active Directory Domain Services (AD DS) with your Azure AD tenant	| 	| Microsoft 365 E3 or E5 |
 | MFA enforced with security defaults	| Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.	| Microsoft 365 E3 or E5 |
@@ -106,12 +112,16 @@ This Microsoft 365 tenant includes:
 | Self-Service Password Reset (SSPR)	| Allow your users to reset or unlock their passwords or accounts.	| Microsoft 365 E3 or E5 |
 ||||
 
-| Migration capability or feature | Description | Licensing |
+### Migration
+
+| Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
 |  |  | Microsoft 365 E3 or E5 | 
 ||||
 
-| Device management capability or feature | Description | Licensing |
+### Device and app management
+
+| Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
 | Microsoft Intune | Manage devices and applications.	| Microsoft 365 E3 or E5 | 
 | Basic Mobility and Security | Manage devices and applications.	| Microsoft 365 E3 or E5 | 
