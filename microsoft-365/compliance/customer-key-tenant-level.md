@@ -23,6 +23,7 @@ Using keys you provide, you can create a data encryption policy (DEP) and assign
 
 - Teams chat messages (1:1 chats, group chats, meeting chats and channel conversations)
 - Teams media messages (images, code snippets, videos, wiki images)
+- Teams call and meeting recordings stored in Teams storage
 - Teams chat notifications
 - Teams chat suggestions by Cortana
 - Teams status messages
@@ -40,7 +41,7 @@ The tenant-level encryption policy you create encrypts all data for the Microsof
 
 Examples:
 
-For Microsoft Teams, files and call and meeting recordings, which are saved in OneDrive for Business and SharePoint, are encrypted in a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo. The tenant-level DEP will encrypt the encrypted data again with the new policy.
+Microsoft Teams files and some Teams call and meeting recordings that are saved in OneDrive for Business and SharePoint are encrypted by a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo. The tenant-level DEP will encrypt the encrypted data again with the new policy.
 
 For Exchange Online, you can create a DEP that encrypts one or more user mailboxes with Customer Key. When you create a tenant-level policy, that policy will not encrypt the encrypted mailboxes. However,  the tenant-level key will encrypt the mailboxes that are not affected by a DEP already.
 
