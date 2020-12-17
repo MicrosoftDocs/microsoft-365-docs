@@ -237,7 +237,7 @@ Run the [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvaul
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-In the output, look for the Access Policy and for the Microsoft 365 app ID (GUID) as appropriate. All three of the above permissions must be shown under Permissions to Keys.
+In the output, look for the Access Policy and for the Microsoft 365 app ID (GUID) as appropriate. All three operations, get, wrapKey, and unwrapKey, must be shown under Permissions to Keys.
   
 If the access policy configuration is incorrect, run the Set-AzKeyVaultAccessPolicy cmdlet as follows:
   
@@ -397,6 +397,17 @@ For information about the availability key, see [Learn about the availability ke
 
 For information about rotating or rolling keys used with Customer Key, see [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). When you update the DEP to use the new version of the keys, you'll run the Set-M365DataAtRestEncryptionPolicy cmdlet as described earlier in this article.
 
+Frequently asked questions for Customer Key at the tenant level (public preview)
+
+### Is all data from the point of onboarding encrypted using Customer Key? Is all past data encrypted as well?
+
+For Microsoft Teams services, after you onboard to Customer Key and assign a tenant default policy, all new data is encrypted using the provisioned key within 4 hours. Past data can take multiple days depending on the amount of data stored with Microsoft. Public preview does not support encrypting past data.
+
+### Can I onboard to tenant level Customer Key for Microsoft 365 if I am already using Customer Key at the application level?
+
+Yes, you can. Customer Key for Microsoft 365 public preview enables you to assign Data Encryption Policy (DEP) at the tenant level. Through this all your mailboxes which are currently either not encrypted or encrypted using Microsoft managed keys will be encrypted using the tenant level DEPs. Your mailboxes that are already encrypted by Customer Key continue to be encrypted using the more granular mailbox level policy. These mailboxes will have both layers of encryption.
+
+If you want, you can choose to have your mailboxes encrypted only by the tenant level key. First, you'll need to assigning a $NULL policy to your mailboxes. This removes the existing mailbox level policy. The service then applies the tenant-wide default policy to those mailboxes. In other words, the mailboxes are rewrapped using Customer Key for Microsoft 365 tenant level policy if you create one.
 
 ## Related articles:
 
