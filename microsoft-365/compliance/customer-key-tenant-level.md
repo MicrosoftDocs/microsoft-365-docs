@@ -17,20 +17,33 @@ ms.collection:
 description: "Learn how to set up Customer Key for all data within your Microsoft 365 tenant."
 ---
 
-# Overview of Customer Key at the tenant level (public preview)
+# Overview of Customer Key for Microsoft 365 at the tenant level (public preview)
 
-Using keys you provide, you can create Data Encryption Policy and assign it to the tenant. Doing so will start encrypting all new data across the following workloads from the point of creation of these policies:
+Using keys you provide, you can create a data encryption policy (DEP) and assign it to the tenant. The DEP encrypts data across the tenant for these workloads:
 
 - Microsoft Teams files
 - Teams chat messages (1:1 chats, group chats, meeting chats and channel conversations)
 - Teams media messages (images, code snippets, videos, wiki images)
 - Teams chat notifications
-- Chat suggestions by Cortana
+- Teams chat suggestions by Cortana
+- Teams status messages
 - User and signal information for Exchange Online
 
-For Customer Key at the tenant level, if you're using Microsoft Teams, you can create one DEP per geo for your organization. You can use different Customer Keys for each geo. If you're not using the multi-geo feature, you can create multiple DEPs per tenant but can only assign one DEP at any point in time.
+For Microsoft Teams, Customer Key at the tenant level encrypts new data from the time the DEP is assigned to the tenant. Public preview does not support encrypting past data. For Exchange Online, Customer Key encrypts all existing and new data.
 
-When you assign the DEP, encryption begins automatically but can take some time to complete.
+You can create multiple DEPs per tenant but can only assign one DEP at any point in time. When you assign the DEP, encryption begins automatically but can take some time to complete depending on the size of your tenant.
+
+## Tenant level policies add broader control to Customer Key for Microsoft 365
+
+If you already have Customer Key set up for Exchange Online and Sharepoint Online, here's how the new tenant-level public preview fits in.
+
+The tenant-level encryption policy you create encrypts all data for the Microsoft Teams and Exchange Online workloads in Microsoft 365. This policy doesn't interfere with finely-tuned DEPs you've already created in Customer Key.
+
+Examples:
+
+For Microsoft Teams, call and meeting recordings which are saved in OneDrive for Business and SharePoint, are encrypted in a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo. The tenant-level DEP will encrypt the encrypted data again with the new policy.
+
+For Exchange Online, you can create a DEP that encrypts one or more user mailboxes with Customer Key. When you create a tenant-level policy, that policy will not encrypt the encrypted mailboxes. However,  the tenant-level key will encrypt the mailboxes that are not affected by a DEP already.
 
 ## Set up Customer Key at the tenant level (public preview)
 
@@ -390,6 +403,15 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 Description:
 This cmdlet lists the policy that’s currently assigned to the tenant.
 
+## Offboarding from Customer Key
+
+If you need to revert back to Microsoft-managed keys, you can. When you offboard, your data is re-encrypted using default encryption supported by each individual workload. For example, Exchange Online supports default encryption using Microsoft-managed keys.
+
+If you decided to offboard your tenant from Customer Key at the tenant level, reach out to Microsoft with a request through email to “disable” the service for the tenant at [m365ck@microsoft.com](mailto:m365ck@microsoft.com).
+
+> [!IMPORTANT]
+> Offboarding is not the same as a data purge. A data purge permanently crypto-deletes your organization's data from Microsoft 365, offboarding does not. You can't perform a data purge for a tenant-level policy. For information about data purge path, see [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
+
 ## About the availability key
 
 For information about the availability key, see [Learn about the availability key](customer-key-availability-key-understand.md).
@@ -397,18 +419,6 @@ For information about the availability key, see [Learn about the availability ke
 ## Key rotation
 
 For information about rotating or rolling keys used with Customer Key, see [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). When you update the DEP to use the new version of the keys, you'll run the Set-M365DataAtRestEncryptionPolicy cmdlet as described earlier in this article.
-
-Frequently asked questions for Customer Key at the tenant level (public preview)
-
-### Is all data from the point of onboarding encrypted using Customer Key? Is all past data encrypted as well?
-
-For Microsoft Teams services, after you onboard to Customer Key and assign a tenant default policy, all new data is encrypted using the provisioned key within 4 hours. Past data can take multiple days depending on the amount of data stored with Microsoft. Public preview does not support encrypting past data.
-
-### Can I onboard to tenant level Customer Key for Microsoft 365 if I am already using Customer Key at the application level?
-
-Yes, you can. Customer Key for Microsoft 365 public preview enables you to assign a Data Encryption Policy (DEP) at the tenant level. All your mailboxes, encrypted or not, will be encrypted using the tenant level DEP. Your mailboxes that are already encrypted by Customer Key continue to be encrypted using the more granular mailbox level policy. These mailboxes will have both layers of encryption.
-
-If you want, you can choose to have your mailboxes encrypted only by the tenant level key. First, you'll need to assigning a $NULL policy to your mailboxes. Assigning the NULL policy removes the existing mailbox level policy. The service then applies the tenant-wide default policy to those mailboxes. The mailboxes are rewrapped using the Customer Key for Microsoft 365 tenant level policy.
 
 ## Related articles:
 
