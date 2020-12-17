@@ -28,13 +28,13 @@ Using keys you provide, you can create Data Encryption Policy and assign it to t
 - Chat suggestions by Cortana
 - User and signal information for Exchange Online
 
-For Customer Key at the tenant level, if you're using Microsoft Teams, you can create one DEP per geo for your organization. You can use different Customer Keys for each geo. If you're not using the multi-geo feature, you can create multiple DEPs per tenant but can only assign one DEP at any point in time. 
+For Customer Key at the tenant level, if you're using Microsoft Teams, you can create one DEP per geo for your organization. You can use different Customer Keys for each geo. If you're not using the multi-geo feature, you can create multiple DEPs per tenant but can only assign one DEP at any point in time.
 
 When you assign the DEP, encryption begins automatically but can take some time to complete.
 
 ## Set up Customer Key at the tenant level (public preview)
 
-These steps are similar but not identical to the steps for setting up Customer Key at the application level. You should only use this public preview with test data in test tenants. Do not use this with production data or in your production environment. If you already have a production deployment of Customer Key, use these steps to set up Customer Key at the tenant level in a test environment.
+These steps are similar but not identical to the steps for setting up Customer Key at the application level. You should only use this public preview with test data in test tenants. Do not use this release with production data or in your production environment. If you already have a production deployment of Customer Key, use these steps to set up Customer Key at the tenant level in a test environment.
 
 You'll complete most of these tasks by remotely connecting to Azure PowerShell. For best results, use version 4.4.0 or later of Azure PowerShell.
 
@@ -51,7 +51,7 @@ There is no practical limit to the number of Azure subscriptions that you can cr
 
 ### Register Azure subscriptions to use a mandatory retention period
 
-The temporary or permanent loss of root encryption keys can be very disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. Azure subscriptions can be tagged or registered in a way that will prevent immediate and irrevocable cancellation. This is referred to as registering for a mandatory retention period. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Microsoft. This process can take up to five business days. Previously, this was sometimes referred to as "Do Not Cancel".
+The temporary or permanent loss of root encryption keys can be disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. Azure subscriptions can be tagged or registered in a way that will prevent immediate and irrevocable cancellation. This is referred to as registering for a mandatory retention period. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Microsoft. This process can take up to five business days. Previously, this was sometimes referred to as "Do Not Cancel".
   
 Before contacting the Microsoft 365 team, you must perform the following steps for each Azure subscription that you use with Customer Key. Ensure that you have the [Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) module installed before you start.
 
@@ -167,7 +167,7 @@ To enable Soft Delete on your key vaults, complete these steps:
 
 ### Add a key to each key vault either by creating or importing a key
 
-There are two ways to add keys to an Azure Key Vault; you can create a key directly in Key Vault, or you can import a key. Creating a key directly in Key Vault is the less complicated method, while importing a key provides total control over how the key is generated. You need to use the RSA keys. Azure Key Vault doesn't support wrapping and unwrapping with elliptical curve keys.
+There are two ways to add keys to an Azure Key Vault; you can create a key directly in Key Vault, or you can import a key. Creating a key directly in Key Vault is the less complicated method, while importing a key provides total control over how the key is generated. Use the RSA keys. Azure Key Vault doesn't support wrapping and unwrapping with elliptical curve keys.
   
 To create a key directly in your key vault, run the [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) cmdlet as follows:
   
@@ -202,11 +202,11 @@ To check the recovery level of a key, in Azure PowerShell, run the Get-AzKeyVaul
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-If the _Recovery Level_ property returns anything other than a value of **Recoverable+ProtectedSubscription**, you will need to review this article and ensure that you have followed all of the steps to put the subscription on the Do Not Cancel list and that you have soft delete enabled on each of your key vaults.  Next, put a screenshot of the output of (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes in the private preview channel or email it to m365ck@microsoft.com.
+If the _Recovery Level_ property returns anything other than a value of **Recoverable+ProtectedSubscription**, you will need to review this article and ensure that you have followed all of the steps to put the subscription on the Do Not Cancel list and that you enabled "soft delete" on each of your key vaults.  Next, put a screenshot of the output of `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` in the public preview channel or email it to m365ck@microsoft.com.
 
 ### Back up Azure Key Vault
 
-Immediately following creation or any change to a key, perform a backup and store copies of the backup, both online and offline. Offline copies should not be connected to any network, such as in a physical safe or commercial storage facility. At least one copy of the backup should be stored in a location that will be accessible in the event of a disaster. The backup blobs are the sole means of restoring key material should a Key Vault key be permanently destroyed or otherwise rendered inoperable. Keys that are external to Azure Key Vault and were imported to Azure Key Vault do not qualify as a backup because the metadata necessary for Customer Key to use the key does not exist with the external key. Only a backup taken from Azure Key Vault can be used for restore operations with Customer Key. Therefore, it is essential that a backup of Azure Key Vault be made once a key is uploaded or created.
+Immediately following creation or any change to a key, perform a backup and store copies of the backup, both online and offline. Don't connect offline copies to any network. Instead, store them in a physical safe or commercial storage facility. At least one copy of the backup should be stored in a location that will be accessible if a disaster happens. The backup blobs are the sole means of restoring key material should a Key Vault key be permanently destroyed or otherwise rendered inoperable. Keys that are external to Azure Key Vault and were imported to Azure Key Vault do not qualify as a backup because the metadata necessary for Customer Key to use the key does not exist with the external key. Only a backup taken from Azure Key Vault can be used for restore operations with Customer Key. Therefore, it is essential that you make a backup of Azure Key Vault once a key is uploaded or created.
   
 To create a backup of an Azure Key Vault key, run the [Backup-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) cmdlet as follows:
 
@@ -251,7 +251,7 @@ Example: For the Microsoft 365 Data at Rest Encryption service, replace  *Micros
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
   ```
 
-To verify that an expiration date is not set for your keys run the [Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet as follows:
+To verify that an expiration date is not set for your keys, run the [Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet as follows:
   
 ```powershell
 Get-AzKeyVaultKey -VaultName <vault name>
@@ -294,10 +294,11 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 ```
 
 Parameters:
+
 | Name | Description | Optional (Y/N) |
 |--|--|--|
 |Name|Friendly name of the data encryption policy|N|
-|AzureKeyIDs|Specifies two URI values of the Azure Key Vault keys (separate by comma) to associate with the data encryption policy|N|
+|AzureKeyIDs|Specifies two URI values of the Azure Key Vault keys, separated by a comma, to associate with the data encryption policy|N|
 |Description|Description of the data encryption policy|N|
 
 ### Assign policy
@@ -405,9 +406,9 @@ For Microsoft Teams services, after you onboard to Customer Key and assign a ten
 
 ### Can I onboard to tenant level Customer Key for Microsoft 365 if I am already using Customer Key at the application level?
 
-Yes, you can. Customer Key for Microsoft 365 public preview enables you to assign Data Encryption Policy (DEP) at the tenant level. Through this all your mailboxes which are currently either not encrypted or encrypted using Microsoft managed keys will be encrypted using the tenant level DEPs. Your mailboxes that are already encrypted by Customer Key continue to be encrypted using the more granular mailbox level policy. These mailboxes will have both layers of encryption.
+Yes, you can. Customer Key for Microsoft 365 public preview enables you to assign a Data Encryption Policy (DEP) at the tenant level. All your mailboxes, encrypted or not, will be encrypted using the tenant level DEP. Your mailboxes that are already encrypted by Customer Key continue to be encrypted using the more granular mailbox level policy. These mailboxes will have both layers of encryption.
 
-If you want, you can choose to have your mailboxes encrypted only by the tenant level key. First, you'll need to assigning a $NULL policy to your mailboxes. This removes the existing mailbox level policy. The service then applies the tenant-wide default policy to those mailboxes. In other words, the mailboxes are rewrapped using Customer Key for Microsoft 365 tenant level policy if you create one.
+If you want, you can choose to have your mailboxes encrypted only by the tenant level key. First, you'll need to assigning a $NULL policy to your mailboxes. Assigning the NULL policy removes the existing mailbox level policy. The service then applies the tenant-wide default policy to those mailboxes. In other words, the mailboxes are rewrapped using Customer Key for Microsoft 365 tenant level policy if you create one.
 
 ## Related articles:
 
