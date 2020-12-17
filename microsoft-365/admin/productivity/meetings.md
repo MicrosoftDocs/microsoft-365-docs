@@ -25,6 +25,16 @@ description: "Details of the Meetings - people experiences Productivity score."
 
 Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The meetings category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
+## Prerequisites
+
+To get started with Meetings insights, people in your organization need to be licensed for:
+
+- Microsoft Teams
+
+For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).
+
+After people have been active in Teams at least once in the last 28 days, you will start to see the insights.
+
 ## Why your organization's meetings score matters
 
 Meetings, where people explore ideas, plan, solve problems, and make decisions, are a fundamental pillar for organizational productivity. Research indicates that when people use online meeting tools effectively, they tend to save up to 104 minutes per week. See the [evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
