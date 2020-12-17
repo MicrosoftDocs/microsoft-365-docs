@@ -41,7 +41,7 @@ You'll complete most of these tasks by remotely connecting to Azure PowerShell. 
 Before you get started, make sure of the following:
 
 - You'll need to use a work or school account that has the compliance admin role to set up Customer Key at the tenant level.
-- Before you get started, ensure that you have the appropriate licensing for your organization. Use a paid, invoiced Azure Subscription using either an Enterprise Agreement or a Cloud Service Provider. Azure Subscriptions purchased using Pay As You Go plans or using a credit card aren't supported for Customer Key. Starting April 1, 2020, Customer Key in Office 365 is offered in Office 365 E5, M365 E5, M365 E5 Compliance, and M365 E5 Information Protection & Governance SKUs. Office 365 Advanced Compliance SKU is no longer available for procuring new licenses. Existing Office 365 Advanced Compliance licenses will continue to be supported. Appropriate licenses are listed below for your reference. While the service can be enabled with a minimum of one license under the tenant having the appropriate license, you should still make sure all users that benefit from the service have appropriate licenses. You'll need one of the following licenses:
+- Ensure that you have the appropriate licensing for your organization. Use a paid, invoiced Azure Subscription using either an Enterprise Agreement or a Cloud Service Provider. Azure Subscriptions purchased using Pay As You Go plans or using a credit card aren't supported for Customer Key. Starting April 1, 2020, Customer Key in Office 365 is offered in Office 365 E5, M365 E5, M365 E5 Compliance, and M365 E5 Information Protection & Governance SKUs. Office 365 Advanced Compliance SKU is no longer available for procuring new licenses. Existing Office 365 Advanced Compliance licenses will continue to be supported. Appropriate licenses are listed below for your reference. While the service can be enabled with a minimum of one license under the tenant having the appropriate license, you should still make sure all users that benefit from the service have appropriate licenses. You'll need one of the following licenses:
 
 ### Create two new Azure subscriptions
 
@@ -408,7 +408,7 @@ For Microsoft Teams services, after you onboard to Customer Key and assign a ten
 
 Yes, you can. Customer Key for Microsoft 365 public preview enables you to assign a Data Encryption Policy (DEP) at the tenant level. All your mailboxes, encrypted or not, will be encrypted using the tenant level DEP. Your mailboxes that are already encrypted by Customer Key continue to be encrypted using the more granular mailbox level policy. These mailboxes will have both layers of encryption.
 
-If you want, you can choose to have your mailboxes encrypted only by the tenant level key. First, you'll need to assigning a $NULL policy to your mailboxes. Assigning the NULL policy removes the existing mailbox level policy. The service then applies the tenant-wide default policy to those mailboxes. In other words, the mailboxes are rewrapped using Customer Key for Microsoft 365 tenant level policy if you create one.
+If you want, you can choose to have your mailboxes encrypted only by the tenant level key. First, you'll need to assigning a $NULL policy to your mailboxes. Assigning the NULL policy removes the existing mailbox level policy. The service then applies the tenant-wide default policy to those mailboxes. The mailboxes are rewrapped using the Customer Key for Microsoft 365 tenant level policy.
 
 ## Related articles:
 
