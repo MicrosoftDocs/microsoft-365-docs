@@ -39,7 +39,7 @@ The following table lists the policies you either need to create and update. The
 
 |Protection level|Policies|More information|
 |---|---|---|
-|**Baseline**|[Require MFA always for guest and external users](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure: <ul><li> For **Assignments > Users and groups > Include**, choose **Select users and groups**, and then select **All guest and external users**. </li><li> For **Assignments > Conditions > Sign-in**, leave all options unchecked to always enforce multi-factor authentication (MFA).</li>|
+|**Baseline**|[Require MFA always for guest and external users](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure: <ul><li>For **Assignments > Users and groups > Include**, choose **Select users and groups**, and then select **All guest and external users**.</li><li>For **Assignments > Conditions > Sign-in**, leave all options unchecked to always enforce multi-factor authentication (MFA).</li></ul>|
 ||[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modify this policy to exclude guest and external users.|
 ||[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modify this policy to exclude guest and external users.|
 
@@ -58,8 +58,6 @@ Microsoft Teams defines the following:
 - **External access** is for an external user that does not have a B2B account. External access can include invitations and participation in calls, chats, and meetings, but does not include team membership and access to the resources of the team.
 
 For more information, see the [comparison between guest and external access for teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
-
-Conditional Access policies only apply to guest access in Teams because there is a corresponding Azure AD B2B account.
 
 See [Policy recommendations for securing Teams chats, groups, and files](teams-access-policies.md) for more information about securing identity and device access policies for Teams.
 
