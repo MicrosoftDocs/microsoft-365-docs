@@ -27,7 +27,7 @@ Productivity   Score supports the journey to digital transformation with insight
 
 ## Prerequisites
 
-To get started with ommunication insights, people in your organization need to be licensed for:
+To get started with Communication insights, people in your organization need to be licensed for:
 
 - Microsoft Teams
 - Yammer
