@@ -117,6 +117,10 @@ There are a few different ways you can access a mailbox once you've been given a
 
 6. Select **Save**.
 
+
+> [!NOTE]
+> Read and Modify access is also called as Fullaccess permissions when granting access through Exchange admin center. Full access does not grant **Send as** or **Send on Behalf**  permission.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
