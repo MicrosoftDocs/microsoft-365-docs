@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive Yieldbroker data from Globanet to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
 ---
 
-# Set up a connector to archive Yieldbroker data
+# Set up a connector to archive Yieldbroker data (preview)
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from the Yieldbroker to user mailboxes in your Microsoft 365 organization. Globanet provides you with a [Yieldbroker](https://globanet.com/yieldbroker/) connector that's configured to capture items from the third-party data source and import those items to Microsoft 365. The connector converts the content from Yieldbroker to an email message format and then imports those items to the user’s mailbox in Microsoft 365.
 
@@ -38,13 +38,13 @@ The following overview explains the process of using a connector to archive the 
 
 - Create a Globanet Merge1 account for Microsoft connectors. To create an account, contact [Globanet Customer Support](https://globanet.com/contact-us/). You need to sign into this account when you create the connector in Step 1.
 
-- The user who creates the Yieldbroker connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the Data connectors page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/en-us/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/en-us/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates the Yieldbroker connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the Data connectors page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Step 1: Set up the Yieldbroker connector
 
 The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for the Yieldbroker.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** &gt; **Yieldbroker**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** &gt; **Yieldbroker**.
 
 2. On the **Yieldbroker** product description page, click **Add new connector**.
 
@@ -58,7 +58,7 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 The second step is to configure the Yieldbroker connector on the Merge1 site. For information about how to configure the Yieldbroker, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Yieldbroker%20User%20Guide%20.pdf).
 
-After you click **Save & Finish,** you are directed back to the Microsoft 365 compliance center, to the **User mapping** page in the connector wizard.
+After you click **Save & Finish**, the **User mapping** page in the connector wizard in the Microsoft 365 compliance center is displayed.
 
 ## Step 3: Map users and complete the connector setup
 
@@ -72,7 +72,7 @@ To map users and complete the connector setup, follow these steps:
 
 After you create the Yieldbroker connector, you can view the connector status in the Microsoft 365 compliance center.
 
-1. Go to <https://compliance.microsoft.com/> and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
 
 2. Click the **Connectors** tab and then select the **Yieldbroker** connector to display the flyout page, which contains the properties and information about the connector.
 

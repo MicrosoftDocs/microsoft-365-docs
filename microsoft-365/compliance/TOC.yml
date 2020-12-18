@@ -371,12 +371,18 @@
               href: archive-mssqldatabaseimporter-data.md
             - name: Pivot
               href: archive-pivot-data.md
+            - name: Redtail Speak
+              href: archive-redtailspeak-data.md
             - name: Reuters Dealing
               href: archive-reutersdealing-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
+            - name: Salesforce Chatter
+              href: archive-salesforcechatter-data.md
+            - name: ServiceNow
+              href: archive-servicenow-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md    
             - name: Symphony
@@ -393,6 +399,8 @@
               href: archive-xip-data.md
             - name: XSLT/XML 
               href: archive-xslt-xml-data.md
+            - name: Yieldbroker
+              href: archive-yieldbroker-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
