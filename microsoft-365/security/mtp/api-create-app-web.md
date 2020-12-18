@@ -151,7 +151,9 @@ return $token
 > The following code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
 
 1. Create a new console application.
+
 1. Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+
 1. Add the following line:
 
     ```C#
@@ -210,34 +212,40 @@ aadToken = jsonResponse["access_token"]
 > Curl is pre-installed on Windows 10, versions 1803 and later. For other versions of Windows, download and install the tool directly from the [official curl website](https://curl.haxx.se/windows/).
 
 1. Open a command prompt, and set CLIENT_ID to your Azure application ID.
+
 1. Set CLIENT_SECRET to your Azure application secret.
+
 1. Set TENANT_ID to the Azure tenant ID of the customer that wants to use your app to access Microsoft 365 Defender.
+
 1. Run the following command:
 
-```bash
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
-```
+   ```bash
+   curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
+   ```
 
-A successful response will look like this:
+   A successful response will look like this:
 
-```bash
-{"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
-```
+   ```bash
+   {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
+   ```
 
 ## Validate the token
 
 1. Copy and paste the token into the [JSON web token validator website, JWT,](https://jwt.ms) to decode it.
+
 1. Make sure that the *roles* claim within the decoded token contains the desired permissions.
 
-In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
+   In the following image, you can see a decoded token acquired from an app, with `Incidents.Read.All`, `Incidents.ReadWrite.All`, and `AdvancedHunting.Read.All` permissions:
 
-![Image of token validation](../../media/webapp-decoded-token.png)
+   ![Image of token validation](../../media/webapp-decoded-token.png)
 
 ## Use the token to access the Microsoft 365 Defender API
 
 1. Choose the API you want to use (incidents, or advanced hunting). For more information, see [Supported Microsoft 365 Defender APIs](api-supported.md).
+
 2. In the http request you are about to send, set the authorization header to `"Bearer" <token>`, *Bearer* being the authorization scheme, and *token* being your validated token.
-3. The token will expire within one hour. You can send more than one request during this time  with the same token.
+
+3. The token will expire within one hour. You can send more than one request during this time with the same token.
 
 The following example shows how to send a request to get a list of incidents **using C#**.
 
