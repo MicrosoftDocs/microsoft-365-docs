@@ -101,7 +101,7 @@ The tenancy for an enterprise organization has:
 
 - Local internet access for each branch office with an SDWAN device that forwards trusted Microsoft 365 traffic to a local front door.
 - Eliminated network hairpins.
-- SDWAN devices and security and proxy edge devices forward Microsoft 365 trusted traffic without processing to a local front door.
+- Central office ecurity and proxy edge devices that forward Microsoft 365 trusted traffic without processing to a local front door.
 
 ## Ongoing maintenance for optimal networking
 

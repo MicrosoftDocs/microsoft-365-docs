@@ -84,7 +84,7 @@ The tenancy has:
 
 - An AD DS forest that is being synchronized with the Azure AD tenant using a DirSync server and Azure AD Connect.
 - A copy of the AD DS user accounts and other objects from the AD DS forest.
-- A set of Conditional Access policies to enforce secure user sign-ins. 
+- A set of Conditional Access policies to enforce secure user sign-ins and access based on the user account. 
 
 ## Ongoing maintenance for identity
 
