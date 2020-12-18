@@ -119,7 +119,7 @@ For your Microsoft 365 for enterprise tenancies, you have determined:
 
 Here is an example of a new tenancy.
 
-[Example of a new tenancy](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
+![Example of a new tenancy](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
 
 The tenancy has:
 

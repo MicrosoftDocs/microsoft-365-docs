@@ -95,7 +95,7 @@ For your Microsoft 365 tenancy with optimal networking, you have determined:
 
 Here is an example of a tenancy with optimal networking.
 
-[Example of a tenancy with optimal networking](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
+![Example of a tenancy with optimal networking](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
 The tenancy has:
 

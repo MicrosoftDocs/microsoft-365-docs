@@ -73,7 +73,7 @@ For migration for your Microsoft 365 tenancy, you have determined:
 
 Here is an example of a tenancy with a completed migration of on-premises servers.
 
-[Example of a tenancy with a completed migration of on-premises servers](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
+![Example of a tenancy with a completed migration of on-premises servers](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
 
 The tenancy has:
 

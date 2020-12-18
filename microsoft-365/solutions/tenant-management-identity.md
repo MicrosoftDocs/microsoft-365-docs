@@ -78,7 +78,7 @@ For identity for your Microsoft 365 tenancy, you have determined:
 
 Here is an example of identity for a tenancy with identity elements.
 
-[Example of identity for a tenancy](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
+![Example of identity for a tenancy](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
 
 The tenancy has:
 

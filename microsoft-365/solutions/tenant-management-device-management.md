@@ -76,7 +76,7 @@ For device and app management for your Microsoft 365 tenancy, you have determine
 
 Here is an example of a tenancy with device and app management.
 
-[Example of a tenancy with device and app management](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+![Example of a tenancy with device and app management](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
 The tenancy has:
 
