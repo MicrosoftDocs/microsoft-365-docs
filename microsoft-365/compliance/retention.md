@@ -277,7 +277,15 @@ At a high level, you can be assured that retention always takes precedence over 
 
 There are a few more factors that determine when an item will be deleted, which include the delete action from a retention label always takes precedence over the delete action from a retention policy.
 
-Use the following flow to understand the retention and deletion outcomes for a single item, where each level acts as a tie-breaker from top to bottom.
+Use the following flow to understand the retention and deletion outcomes for a single item, where each level acts as a tie-breaker from top to bottom. If the outcome is determined by the first level because there are no further conflicts, there's no need to progress to the next level, and so on. For example:
+
+- A document is subject to just two retention policies: The first retention policy is configured to retain-only for five years and the second retention policy is configured to delete-only after three years. The conflict here is between retention for five years and deletion after three years.
+    
+    Because of the rule in the first level that states retention wins over deletion, the item will be retained for five years, and then deleted as a deferred action during the retention period. The conflict is resolved so there's no need to move to the second level.
+
+- If the same document is subject to an additional retention policy that is configured to retain-only for seven years, the conflict for how long to retain the document can't be resolved by the first level. The conflict here is between the two retention periods.
+    
+    Because of the rule in the second level that states the longest retention period wins, the item will be retained for seven years (the longest retention period), and then deleted. The conflict is resolved because there are no delete actions with a date shorter than the longest retention period. Consequently, there's no need to move to the third level that resolves conflicts for delete actions. Most of the time, conflicts can be resolved by these first two levels of retention.
 
 > [!IMPORTANT]
 > If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
