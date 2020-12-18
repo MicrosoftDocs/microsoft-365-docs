@@ -30,7 +30,7 @@ In August 2018, Microsoft announced our intention to deliver the complete Micros
 
 The new regions are designed to address the evolving needs of German customers with greater flexibly, the latest intelligent cloud services, and full connectivity to our Microsoft 365 services cloud network as well as customer data residency within Germany.
 
-## How to migrate to the new German regions
+## How to migrate to the new German datacenter regions
 
 Existing Microsoft Cloud Deutschland customers can now begin to migrate their Office 365, Dynamics 365 Customer Engagement, and Power Platform customers. The first step is to [opt-in to a Microsoft-led migration](https://aka.ms/office365germanymoveoptin) to our new German datacenter regions.
 
@@ -73,9 +73,9 @@ One week prior to the start of the tenant migration, you will receive notice in 
 
 The migration will move of your Azure AD tenant from the sovereign Germany Azure AD service to the Office 365 services instance of Azure AD in the EU region.
 
-The next phase is the migration of your tenant&#39;s subscriptions and user licenses from Germany-specific products.
+The next phase is the migration of your tenant&#39;s subscriptions and user licenses from Germany-specific products to global products.
 
-Once all steps are completed including customer Azure migration, your tenant is finalized in the Office 365 services service and migration is marked complete. At this point, the final update to Message center is provided to you. The tenant is now not a fully global Office 365 organization.
+Once all steps are completed including customer Azure migration, your tenant is finalized in the Office 365 services service and migration is marked complete. At this point, the final update to Message center is provided to you. The tenant is now a fully global Office 365 organization.
 
 You are notified of migration progress with Message center posts. The posts will occur at specific milestones and will provide guidance as to progress of a step as well as important information for customers to act on based on the process requirements. Message center notifications are provided at the following milestones:
 
@@ -89,11 +89,11 @@ You are notified of migration progress with Message center posts. The posts will
 - Power BI complete
 - Final cutover of services is complete
 
-## Moving to the new German regions
+## Moving to the new German datacenter regions
 
-Existing Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers can now begin to migrate their Office 365, Dynamics 365 Customer Engagement, and Power Platform customers. The first step is to [opt-in to a Microsoft-led migration](https://aka.ms/office365germanymoveoptin) to our new German datacenter regions. When you renew your subscription, you automatically opt-in for a Microsoft-assisted migration. Microsoft will notify customer tenant administrators with e-mail and in the Message center of the Microsoft 365 admin center when this has happened. However, if you prefer to start the process now, you can [opt-in](https://aka.ms/office365germanymoveoptin) directly in Microsoft 365 admin center today. Migrations are expected to begin in early 2021 and will be completed by October 29, 2021. 
+Existing Microsoft Cloud Deutschland customers can now begin to migrate their Office 365, Dynamics 365 Customer Engagement, and Power Platform services. The first step is to [opt-in to a Microsoft-led migration](https://aka.ms/office365germanymoveoptin) to our new German datacenter regions. When you renew your subscription, you automatically opt-in for a Microsoft-assisted migration. Microsoft will notify customer tenant administrators with e-mail and in the Message center of the Microsoft 365 admin center when this has happened. However, if you prefer to start the process now, you can [opt-in](https://aka.ms/office365germanymoveoptin) directly in Microsoft 365 admin center today. Migrations are expected to begin in early 2021 and will be completed by October 29, 2021. 
 
-As a result of the migration, core customer data and subscriptions are moved to the new German regions.
+As a result of the migration, core customer data and subscriptions are moved to the new German datacenter regions.
 
 ## How to prepare for migration to Office 365 services in the new German datacenter regions
 
@@ -144,7 +144,7 @@ The following 15 services are available in the Microsoft Cloud Deutschland cloud
 14. Office 365 Pro Plus
 15. Outlook Mobile
 
-There are currently 29 services available as part of Office 365 services in the new German datacenter regions. New features and services will be available consistent with global Office 365 services on an ongoing basis.
+There are currently 39 services available as part of Office 365 services in the new German datacenter regions. New features and services will be available consistent with global Office 365 services on an ongoing basis.
 
 1. Exchange Online
 2. Customer Lockbox for Exchange Online
@@ -156,7 +156,7 @@ There are currently 29 services available as part of Office 365 services in the 
 8. Defender for Office 365
 9. Advanced eDiscovery
 10. Advanced Security Management
-11. Information Rights Management
+11. Information Protection for Office 365 
 12. Advance Data Governance
 13. SharePoint Online
 14. Customer Lockbox for SharePoint Online
@@ -168,13 +168,23 @@ There are currently 29 services available as part of Office 365 services in the 
 20. PSTN calling
 21. Microsoft Teams
 22. Admin Reports / Usage Reports
-23. Word Online, Excel Online, PowerPoint, OneNote, and Visio Online
+23. Office for the web
 24. Planner
 25. Sway
 26. Microsoft 365 Apps
 27. Outlook Mobile
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1, Intune, and Rights Management Service)
-29. Yammer Online
+29. Yammer Enterprise
+30. Microsoft Forms
+31. Power Automate for Office 365
+32. Power Virtual Agents for Office 365
+33. PowerApps for Office 365
+34. Microsoft Bookings
+35. To-Do
+36. Whiteboard
+37. Microsoft StuffHub
+38. Microsoft Kaizala Pro
+39. Lists
 
 ### When will migration happen?
 
@@ -285,7 +295,7 @@ Moving through the transition:
 
 - [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
 - [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
-- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), [experiences](ms-cloud-germany-transition-add-experience.md), and [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Additional information for [Azure AD](ms-cloud-germany-transition-azure-ad.md), [devices](ms-cloud-germany-transition-add-devices.md), [experiences](ms-cloud-germany-transition-add-experience.md), and [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud apps:
 
