@@ -70,6 +70,27 @@ To increase the security of user sign-ins, use the features and capabilities in 
 | Azure AD Identity Protection | Protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. | [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection) |
 |  |  |  |
 
+## Results of Step 3
+
+For identity for your Microsoft 365 tenancy, you have determined:
+
+- 
+
+Here is an example of identity for a tenancy with identity elements.
+
+[Example of identity for a tenancy](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
+
+The tenancy has:
+
+- 
+
+## Ongoing maintenance for identity
+
+On an ongoing basis, you might need to:
+
+- 
+
+
 ## Next step
 
 [![Step 4. Migrate your on-premises Office servers and data](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)

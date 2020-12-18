@@ -87,6 +87,27 @@ Kelley: Can you please flesh out this section?
 
 Kelley: Can you please flesh out this section?
 
+## Results of Step 2
+
+For your Microsoft 365 tenancy with optimal networking, you have determined:
+
+- 
+
+Here is an example of a tenancy with optimal networking.
+
+[Example of a tenancy with optimal networking](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
+
+The tenancy has:
+
+- 
+
+## Ongoing maintenance for optimal networking
+
+On an ongoing basis, you might need to:
+
+- 
+
+
 ## Next step
 
 [![Step 3. Synchronize your identities and enforce secure sign-ins](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)

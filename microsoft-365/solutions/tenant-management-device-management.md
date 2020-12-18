@@ -67,3 +67,24 @@ For device access and app management, use the configurations in these articles:
 
 - [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
 - [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
+
+## Results of Step 5
+
+For device and app management for your Microsoft 365 tenancy, you have determined:
+
+- 
+
+Here is an example of a tenancy with device and app management.
+
+[Example of a tenancy with device and app management](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+
+The tenancy has:
+
+- 
+
+## Ongoing maintenance for device and app management
+
+On an ongoing basis, you might need to:
+
+- 
+

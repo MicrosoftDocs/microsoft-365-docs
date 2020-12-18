@@ -65,6 +65,27 @@ To get a better picture of how to move your entire organization to the products 
 
 This two-page poster is a quick way to inventory your existing infrastructure. Use it to get guidance for moving to a product or service in Microsoft 365 for Enterprise. It shows Windows and Office products and other infrastructure and security elements such as device management, identity and threat protection, and information and compliance protection.
 
+## Results of Step 4
+
+For migration for your Microsoft 365 tenancy, you have determined:
+
+- 
+
+Here is an example of a tenancy with a completed migration of on-premises servers.
+
+[Example of a tenancy with a completed migration of on-premises servers](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
+
+The tenancy has:
+
+- 
+
+## Ongoing maintenance for migration
+
+On an ongoing basis, you might need to:
+
+- 
+
+
 ## Next step
 
 [![Step 5. Deploy device and app management](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)

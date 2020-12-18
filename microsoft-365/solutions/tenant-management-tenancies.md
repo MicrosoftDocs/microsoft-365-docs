@@ -96,6 +96,51 @@ Here is an example in which a Microsoft 365 tenant was moved from the European U
 
 For more information, see [Moving core data to new Microsoft 365 datacenter geos](../enterprise/moving-data-to-new-datacenter-geos.md).
 
+## Products and licenses for a tenant
+
+Your Microsoft 365 tenant gets created when you purchase your first product, such as Microsoft 365 E3. Along with the product are licenses, which are charged a monthly or annual fee. An administrator then assigns an available license from one of your products to a user account, either directly or through group membership. Depending on your organization's business needs, you might have a set of products, each with their own pool of licenses. 
+
+Planning on set of products and the number of licenses for each requires some planning to:
+
+- Ensure you have enough licenses for the user accounts that need advanced features.
+- Prevent you from running out of licenses or having too many unassigned licenses, based on changes in staffing at your organization.
+
+
+## Results of Step 1
+
+For your Microsoft 365 for enterprise tenancies, you have determined:
+
+- How many tenants have or you need to have.
+- For each tenant, which products must be purchased and the number of licenses for each product.
+- Whether a tenancy needs to be Multi-Geo to comply with data residency requirements.
+- Whether you need to set up inter-tenant collaboration.
+- Whether you need to migrate one tenancy to another.
+- Whether you need to move core data from one datacenter geo to new one.
+
+Here is an example of a new tenancy.
+
+[Example of a new tenancy](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
+
+The tenancy has:
+
+- A default location corresponding to a Microsoft 365 datacenter geo.
+- A set of products and licenses.
+- The set of cloud productivity apps, some of which are specific to the product.
+- An Azure AD tenant that contains global administrator accounts and an initial DNS domain name.
+
+As we move through the additional steps of this solution, we will build out this figure.
+
+## Ongoing maintenance for tenancies
+
+On an ongoing basis, you might need to:
+
+- Add a new tenancy.
+- Add new products to a tenancy with an initial number of licenses.
+- Change the set of licenses for a product in a tenancy to adjust for changing staff requirements.
+- Move your core data from a tenancy to a new datacenter geo location.
+- Add Multi-Geo for data residency requirements.
+- Set up inter-tenant collaboration.
+
 ## Next step
 
 [![Step 2. Optimize your tenant for network for access](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)

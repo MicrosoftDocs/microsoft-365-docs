@@ -50,8 +50,8 @@ Beyond choosing the right name and location for your tenancy, there are addition
 
 Here are the elements:
 
-- You have the correct set of services (subscriptions) and licenses.
-  - The set of services match your business, IT, and security needs.
+- You have the correct set of products (subscriptions) and licenses.
+  - The set of products match your business, IT, and security needs.
   - There is an adequate number of licenses for your workers and anticipated changes in staffing.
 - For networking:
   - You have configured the correct DNS domain names.
@@ -74,7 +74,7 @@ Here is an example of a Microsoft 365 tenant with all these elements in place.
 
 This Microsoft 365 tenant includes:
 
-- Services and licenses for Microsoft 365 E3 and E5.
+- Products and licenses for Microsoft 365 E3 and E5.
 - Microsoft 365 productivity apps.
 - Intune with enrolled devices and device and application policies.
 - An Azure AD tenant that has synchronized user account (groups and other directory objects are not shown), domains, and Conditional Access policies.
