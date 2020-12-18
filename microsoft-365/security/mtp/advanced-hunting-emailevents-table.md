@@ -66,6 +66,17 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AttachmentCount` | int | Number of attachments in the email |
 | `UrlCount` | int | Number of embedded URLs in the email |
 | `EmailLanguage` | string | Detected language of the email content |
+| `OrgLevelAction` | string | Action taken on the email in response to matches to a policy defined at the organizational level |
+| `OrgLevelPolicy` | string | Organizational policy that triggered the action taken on the email |
+| `UserLevelAction` | string | Action taken on the email in response to matches to a mailbox policy defined by the recipient |
+| `UserLevelPolicy` | string | End-user mailbox policy that triggered the action taken on the email |
+| `Connectors` | string | Custom instructions that define organizational mail flow and how the email was routed |
+| `SenderDisplayName` | string | Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname |
+| `SenderObjectId` | string |Unique identifier for the sender’s account in Azure AD |
+| `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `ThreatNames` | string |Detection name for malware or other threats found |
+| `DetectionMethods` | string | Methods used to detect malware, phishing, or other threats found in the email |
+
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

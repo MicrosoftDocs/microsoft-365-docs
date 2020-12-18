@@ -144,8 +144,6 @@ After you select a message, you have options for what to do with the messages in
   - **Source view**: Shows the HTML version of the message body with all links disabled.
   - **Text view**: Shows the message body in plain text.
 
-- **Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
-
 - **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.
 
 When you're finished, click **Close**.

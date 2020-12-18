@@ -83,7 +83,7 @@ The default alert policy named **User restricted from sending email** will autom
 
 3. In the flyout that appears, verify or configure the following settings:
 
-   - **Status**: Verify the alert is turned on ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - **Status**: Verify the alert is turned on ![Toggle on](../../media/scc-toggle-on.png).
 
    - **Email recipients**: Click **Edit** and verify or configure the following settings in the **Edit recipients** flyout that appears:
 

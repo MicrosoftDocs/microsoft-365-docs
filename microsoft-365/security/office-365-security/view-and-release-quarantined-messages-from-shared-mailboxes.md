@@ -43,16 +43,6 @@ Regardless of the method, users can avoid confusion by including the **Recipient
 
 - The first user to act on the quarantined message decides the fate of the message for everyone who uses the shared mailbox. For example, if a shared mailbox is accessed by 10 users, and a user decides to delete the quarantine message, the message is deleted for all 10 users. Likewise, if a user decides to release the message, it's released to the shared mailbox and is accessible by all other users of the shared mailbox.
 
-- Currently, if a user selects multiple quarantined messages that were sent to the shared mailbox, the following misleading errors are returned when the user clicks **Release messages** or **Delete messages** in the **Bulk actions** flyout:
-
-  > You do not have permission to release all selected quarantined messages.
-  >
-  > You do not have permission to delete all selected quarantined messages.
-
-  Regardless of the error, the action is taken on the messages, and the error can be ignored.
-
-  ![False error when bulk releasing or deleting quarantined messages sent to a shared mailbox.](../../media/quarantine-bulk-action-error.png)
-
 - Currently, the **Block sender** button is not available in the **Details** flyout for quarantined messages that were sent to the shared mailbox.
 
 - To manage quarantined messages for the shared mailbox in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell), the end-user will need to use the [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) cmdlet with shared mailbox email address for the value of the _RecipientAddress_ parameter to identify the messages. For example:
