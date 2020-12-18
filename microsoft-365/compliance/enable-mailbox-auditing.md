@@ -135,7 +135,7 @@ Mailbox auditing on by default brings mailbox audit logging to Microsoft 365 Gro
 
 The following table describes the mailbox actions that are logged by default on Microsoft 365 Group mailboxes for each logon type.
 
-Remember, an admin with Full Access permission to an Microsoft 365 Group mailbox is considered a delegate.
+Remember, an admin with Full Access permission to a Microsoft 365 Group mailbox is considered a delegate.
 
 |**Mailbox action**|**Description**|**Admin**|**Delegate**|**Owner**|
 |:---------|:---------|:---------:|:---------:|:---------:|
@@ -364,7 +364,7 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 - If you've changed the *AuditLogAgeLimit* property for a mailbox prior to mailbox auditing on by default being turned on for organization, the mailbox's existing audit log age limit isn't changed. In other words, mailbox auditing on by default doesn't affect the current age limit for mailbox audit records.
 
-- To change the *AuditLogAgeLimit* value on an Microsoft 365 Group mailbox, you need to include the `-GroupMailbox` switch in the **Set-Mailbox** command.
+- To change the *AuditLogAgeLimit* value on a Microsoft 365 Group mailbox, you need to include the `-GroupMailbox` switch in the **Set-Mailbox** command.
 
 - Mailbox audit log records are stored in a subfolder (named *Audits*) in the Recoverable Items folder in each user's mailbox. Keep the following things in mind about mailbox audit records and the Recoverable Items folder:
 
