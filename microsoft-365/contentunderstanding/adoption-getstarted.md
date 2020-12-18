@@ -27,8 +27,8 @@ With new AI services and capabilities, you can build content understanding and c
 |Manual entry| Form processing | Document understanding |
 |:-------|:--------|:--------|
 | Data entry and labor-intensive on any content | Process digital content - photos, scans, receipts, business cards, videos with OCR & text |  Capture content types and  metadata from contracts, resumes, and other structured documents |
-| Interactive   | Pre-built, automated   | Custom, assisted   | Custom, compliant |
-| People doing the work | Taught by your subject matter experts (SMEs). Capture content types and  metadata from contracts, resumes, other unstructured documents. | SMEs are less involved. from purchase orders, applications, other semi structured and structured documents |
+| Interactive   | Pre-built, automated   | Custom, assisted  |
+| People doing the work | Taught by your subject matter experts (SMEs). Capture content types and  metadata from contracts, resumes, other structured documents. | SMEs are less involved. from purchase orders, applications, other semi structured and structured documents |
 
 The following table explains what you get when you use SharePoint Syntex:
 
