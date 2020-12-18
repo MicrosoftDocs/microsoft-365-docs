@@ -72,7 +72,7 @@ For device access and app management, use the configurations in these articles:
 
 For device and app management for your Microsoft 365 tenancy, you have determined:
 
-- 
+- add
 
 Here is an example of a tenancy with device and app management.
 
@@ -80,11 +80,11 @@ Here is an example of a tenancy with device and app management.
 
 The tenancy has:
 
-- 
+- add
 
 ## Ongoing maintenance for device and app management
 
 On an ongoing basis, you might need to:
 
-- 
+- add
 

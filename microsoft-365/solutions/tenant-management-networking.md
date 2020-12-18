@@ -91,7 +91,7 @@ Kelley: Can you please flesh out this section?
 
 For your Microsoft 365 tenancy with optimal networking, you have determined:
 
-- 
+- add
 
 Here is an example of a tenancy with optimal networking.
 
@@ -99,14 +99,13 @@ Here is an example of a tenancy with optimal networking.
 
 The tenancy has:
 
-- 
+- add
 
 ## Ongoing maintenance for optimal networking
 
 On an ongoing basis, you might need to:
 
-- 
-
+- add
 
 ## Next step
 

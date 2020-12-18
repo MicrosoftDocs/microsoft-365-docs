@@ -69,7 +69,7 @@ This two-page poster is a quick way to inventory your existing infrastructure. U
 
 For migration for your Microsoft 365 tenancy, you have determined:
 
-- 
+- add
 
 Here is an example of a tenancy with a completed migration of on-premises servers.
 
@@ -77,13 +77,13 @@ Here is an example of a tenancy with a completed migration of on-premises server
 
 The tenancy has:
 
-- 
+- add
 
 ## Ongoing maintenance for migration
 
 On an ongoing basis, you might need to:
 
-- 
+- add
 
 
 ## Next step
