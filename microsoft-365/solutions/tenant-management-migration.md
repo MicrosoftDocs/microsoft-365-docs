@@ -77,7 +77,8 @@ Here is an example of a tenancy with a completed migration of on-premises server
 
 The tenancy has:
 
-- add
+- Migrated its on-premises Exchange Server mailboxes to Exchange Online.
+- Migrated its on-premises SharePoint Server sites and data to SharePoint in Microsoft 365.
 
 ## Ongoing maintenance for migration
 

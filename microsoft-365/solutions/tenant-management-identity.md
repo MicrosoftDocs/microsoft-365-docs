@@ -82,7 +82,9 @@ Here is an example of identity for a tenancy with identity elements.
 
 The tenancy has:
 
-- add
+- An AD DS forest that is being synchronized with the Azure AD tenant using a DirSync server and Azure AD Connect.
+- A copy of the AD DS user accounts and other objects from the AD DS forest.
+- A set of Conditional Access policies to enforce secure user sign-ins. 
 
 ## Ongoing maintenance for identity
 

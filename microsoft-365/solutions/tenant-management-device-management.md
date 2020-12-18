@@ -80,7 +80,8 @@ Here is an example of a tenancy with device and app management.
 
 The tenancy has:
 
-- add
+- Organization-owned devices enrolled in Intune.
+- Intune device and app policies for enrolled and personal devices.
 
 ## Ongoing maintenance for device and app management
 

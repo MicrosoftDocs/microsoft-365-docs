@@ -97,9 +97,11 @@ Here is an example of a tenancy with optimal networking.
 
 ![Example of a tenancy with optimal networking](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
-The tenancy has:
+The tenancy for an enterprise organization has:
 
-- add
+- Local internet access for each branch office with an SDWAN device that forwards trusted Microsoft 365 traffic to a local front door.
+- Eliminated network hairpins.
+- SDWAN devices and security and proxy edge devices forward Microsoft 365 trusted traffic without processing to a local front door.
 
 ## Ongoing maintenance for optimal networking
 
