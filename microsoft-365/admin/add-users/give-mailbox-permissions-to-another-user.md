@@ -119,7 +119,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 
 > [!NOTE]
-> Read and Manage permissions are called Full Access permission when granting access through the Exchange admin center. Full Access permission does not grant **Send as** or **Send on Behalf**  permissions.
+> **Read** and **Manage** permissions are called **Full Access** permission when granted in the Exchange admin center. Full Access permission does not grant **Send as** or **Send on Behalf**  permissions.
 
 ::: moniker-end
 
