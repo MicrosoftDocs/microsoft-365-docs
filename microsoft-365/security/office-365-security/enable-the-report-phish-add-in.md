@@ -26,12 +26,12 @@ description: "Learn how to enable the Report Phish add-in for Outlook and Outloo
 > [!NOTE]
 > If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-As an user or an admin, you can install Outlook and Outlook on the web (formerly known as Outlook Web App) add-ins to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
+As a user or an admin, you can install Outlook and Outlook on the web (formerly known as Outlook Web App) add-ins to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
 
 You can install the following add-ins:
 
 - **Report Message add-in**: The Report Message add-in provides options to report messages as Junk, Not Junk and Phishing. For more information about enabling the Report Message add-in, see [Enable the report message add-in](enable-the-report-message-add-in.md).
-- **Report Phish add-in**: The Report Phish add-in to provides the option to report Phishing messages only.
+- **Report Phish add-in**: The Report Phish add-in to provides the option to report Phishing messages only. To get started with the Report Phish add-in, see the [What do you need to know before you begin](#What-do-you-need-to-know-before-you-begin) section later in this article.
 
 Microsoft uses these submissions to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phish add-in. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
