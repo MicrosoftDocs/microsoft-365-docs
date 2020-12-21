@@ -131,8 +131,6 @@ People who have the add-in assigned to them will see the following icons:
 
   ![Outlook on the Web Report Phishing Add-in icon](../../media/OWA-ReportPhishing.png)
 
-When you notify users about the Report Phishing add-in, include a link to [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
-
 ## Review or edit settings for the Report Phishing add-in
 
 1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
