@@ -352,7 +352,7 @@ More complex examples that combine retain and delete actions:
     - A scoped retention policy that retains for five years and then deletes
     - A retention label that retains for three years and then deletes
     
-    **Outcome**: The item is retained for fives years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels take precedence over deletion from all retention policies.
+    **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels takes precedence over deletion from all retention policies.
 
 ## Use Preservation Lock to restrict changes to policies
 
