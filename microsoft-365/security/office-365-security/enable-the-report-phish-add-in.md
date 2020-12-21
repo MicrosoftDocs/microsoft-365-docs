@@ -15,10 +15,10 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: "Learn how to enable the Report Phish add-in for Outlook and Outlook on the web, for individual users or your entire organization."
+description: "Learn how to enable the Report Phishing add-in for Outlook and Outlook on the web, for individual users or your entire organization."
 ---
 
-# Enable the Report Phish add-in
+# Enable the Report Phishing add-in
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -26,45 +26,43 @@ description: "Learn how to enable the Report Phish add-in for Outlook and Outloo
 > [!NOTE]
 > If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-The Report Message and Report Phish add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App) enable people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
+The Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App) enable people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
 
-You can choose to install either or both of these add-ins depending on what your individual or organizational message reporting needs are:
+You can choose to install one or both of these add-ins depending on what your individual or organizational message reporting needs are:
 
 - **Report Message add-in**: The Report Message add-in provides options to report messages as Junk, Not Junk, and Phishing. For more information about enabling the Report Message add-in, see [Enable the report message add-in](enable-the-report-message-add-in.md).
-- **Report Phish add-in**: The Report Phish add-in provides the option to report Phishing messages only. To get started with the Report Phish add-in, see the [What do you need to know before you begin](#what-do-you-need-to-know-before-you-begin) section in this article.
+- **Report Phishing add-in**: The Report Phishing add-in provides the option to report messages as Phishing only. To get started with the Report Phishing add-in, see the [What do you need to know before you begin](#what-do-you-need-to-know-before-you-begin) section in this article.
 
 Microsoft uses these submissions to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phish add-in. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
 Admins can enable the Report Phishing add-in for the organization, and individual users can install it for themselves.
 
-If you're an individual user, you can [enable the Report Phish add-in for yourself](#get-the-report-phish-add-in-for-yourself).
+If you're an individual user, you can [enable the Report Phishing add-in for yourself](#get-the-report-phishing-add-in-for-yourself).
 
-If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Phish add-in for your organization](#get-and-enable-the-report-phish-add-in-for-your-organization). The Report Phish Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
-
-Messages can be reported as Junk or Not Junk using the Report Message add-in.
+If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Phishing add-in for your organization](#get-and-enable-the-report-phishing-add-in-for-your-organization). The Report Phishing Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
 ## What do you need to know before you begin?
 
-- The Report Phish add-in works with most Microsoft 365 subscriptions and the following products:
+- The Report Phishing add-in works with most Microsoft 365 subscriptions and the following products:
 
   - Outlook on the web
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
   - Outlook included with Microsoft 365 apps for Enterprise
 
-- The Report Phish add-in is not available for mailboxes in on-premises Exchange organizations.
+- The Report Phishing add-in is not available for mailboxes in on-premises Exchange organizations.
 
 - You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
-- Your existing web browser should work with the Report Phish add-in. But, if you notice the add-in is not available or not working as expected, try a different browser.
+- Your existing web browser should work with the Report Phishing add-in. But, if you notice the add-in is not available or not working as expected, try a different browser.
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
 - Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## Get the Report Phish add-in for yourself
+## Get the Report Phishing add-in for yourself
 
-1. Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Phish add-in.
+1. Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Phishing add-in.
 
 2. Click **GET IT NOW**.
 
@@ -76,13 +74,13 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 - In Outlook, the icon looks like this:
 
-  ![Report Phish add-in icon for Outlook](../../media/Outlook-ReportPhishing.png)
+  ![Report Phishing add-in icon for Outlook](../../media/Outlook-ReportPhishing.png)
 
 - In Outlook on the web, the icon looks like this:
 
-  ![Outlook on the web Report Phish add-in icon](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook on the web Report Phishing add-in icon](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-## Get and enable the Report Phish add-in for your organization
+## Get and enable the Report Phishing add-in for your organization
 
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
@@ -97,7 +95,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 
    ![Deploy a new add-in page](../../media/NewAddInScreen2.png)
 
-4. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Phish**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Phish** and then click **Add**.
+4. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Phishing** and then click **Add**.
 
 5. In the dialog that appears, review the licensing and privacy information, and then click **Continue**.
 
@@ -121,27 +119,27 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 8. On the **Announce add-in** page that appears, review the information, and then click **Close**.
 
-## Learn how to use the Report Phish add-in
+## Learn how to use the Report Phishing add-in
 
 People who have the add-in assigned to them will see the following icons:
 
 - In Outlook, the icon looks like this:
 
-  ![Report Phish add-in icon for Outlook](../../media/Outlook-ReportPhishing.png)
+  ![Report Phishing add-in icon for Outlook](../../media/Outlook-ReportPhishing.png)
 
 - In Outlook on the web, the icon looks like this:
 
-  ![Outlook on the Web Report Phish Add-in icon](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook on the Web Report Phishing Add-in icon](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-When you notify users about the Report Phish add-in, include a link to [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+When you notify users about the Report Phishing add-in, include a link to [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
-## Review or edit settings for the Report Phish add-in
+## Review or edit settings for the Report Phishing add-in
 
 1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
 
-2. Find and select the **Report Phish** add-in.
+2. Find and select the **Report Phishing** add-in.
 
-3. In the **Edit Report Phish** flyout that appears, review, and edit settings as appropriate for your organization. When you're finished, click **Save**.
+3. In the **Edit Report Phishing** flyout that appears, review, and edit settings as appropriate for your organization. When you're finished, click **Save**.
 
 ## View and review reported messages
 
