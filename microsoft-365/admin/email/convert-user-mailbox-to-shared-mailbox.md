@@ -93,7 +93,7 @@ https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared
 https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes
 
 > [!NOTE]
-> If you are a member of the Organization Management or Recipient Management role group, you can use the Exchange Management Shell to change a user mailbox to a shared mailbox on-premises. For example, `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.
+> If you are a member of the Organization Management or Recipient Management role group, you can use the Exchange Management Shell to change a user mailbox to a shared mailbox on-premises. For example, `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
 ## Related articles
 
