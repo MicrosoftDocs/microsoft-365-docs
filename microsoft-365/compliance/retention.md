@@ -336,7 +336,7 @@ More complex examples that combine retain and delete actions:
     
     **Outcome**: The item is retained for seven years because retention takes precedence over deletion and seven years is the longest retention period. At the end of this retention period, the item is deleted because of the delete action from the retention policies that was deferred while the item was retained.
     
-    Although the two retention policies have different dates for the delete actions, the earliest the item can be deleted is at the end of the longest retention period, which is longer than both deletion dates. In this example, there is no conflict to resolve for the delete actions and the conflicts are resolved by the second level.
+    Although the two retention policies have different dates for the delete actions, the earliest the item can be deleted is at the end of the longest retention period, which is longer than both deletion dates. In this example, there is no conflict to resolve for the delete actions and all conflicts are resolved by the second level.
 
 2.  An item has the following retention settings applied to it:
     
@@ -344,7 +344,7 @@ More complex examples that combine retain and delete actions:
     - A scoped retention policy that retains for five years and then deletes
     - A retention label that retains for three years and then deletes
     
-    **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels takes precedence over deletion from all retention policies. In this example, the conflicts are resolved by the third level.
+    **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels takes precedence over deletion from all retention policies. In this example, all conflicts are resolved by the third level.
 
 ## Use Preservation Lock to restrict changes to policies
 
