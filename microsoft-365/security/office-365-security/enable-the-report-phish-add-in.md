@@ -26,9 +26,12 @@ description: "Learn how to enable the Report Phish add-in for Outlook and Outloo
 > [!NOTE]
 > If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-The Report Phish add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report phishing emails (emails that try to steal sensitive information in messages that appear to be from legitimate or trusted senders) to Microsoft and its affiliates for analysis. Microsoft uses these submissions to improve the effectiveness of email protection technologies.
+As an admin or a user, you can install the add-ins available for Outlook and Outlook on the web (formerly known as Outlook Web App) to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
 
-For example, suppose that people are reporting many messages using the Report Phish add-in. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
+- **Report Message add-in**: The Report Message add-in provides options to report messages as Junk, Not Junk and Phishing. For more information about enabling the Report Message add-in, see [Enable the report message add-in](enable-the-report-message-add-in.md).
+- **Report Phish add-in**: The Report Phish add-in to provides the option to report Phishing messages only.
+
+Microsoft uses these submissions to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phish add-in. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
 Admins can enable the Report Phishing add-in for the organization, and individual users can install it for themselves.
 
@@ -36,7 +39,7 @@ If you're an individual user, you can [enable the Report Phish add-in for yourse
 
 If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Phish add-in for your organization](#get-and-enable-the-report-phish-add-in-for-your-organization). The Report Phish Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-Messages can be reported as Junk or Not Junk using the Report Message add-in. For more information about enabling the Report Message add-in, see [Enable the report message add-in](enable-the-report-message-add-in.md).
+Messages can be reported as Junk or Not Junk using the Report Message add-in.
 
 ## What do you need to know before you begin?
 
