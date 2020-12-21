@@ -277,15 +277,7 @@ At a high level, you can be assured that retention always takes precedence over 
 
 There are a few more factors that determine when an item will be deleted, which include the delete action from a retention label always takes precedence over the delete action from a retention policy.
 
-Use the following flow to understand the retention and deletion outcomes for a single item, where each level acts as a tie-breaker from top to bottom. If the outcome is determined by the first level because there are no further conflicts, there's no need to progress to the next level, and so on. For example:
-
-- A document is subject to just two retention policies: The first retention policy is configured to retain-only for five years and the second retention policy is configured to delete-only after three years. The conflict here is between retention for five years and deletion after three years.
-    
-    Because of the rule in the first level that states retention wins over deletion, the item will be retained for five years as a result of the first retention policy, and then deleted as a deferred action from the second retention policy. The conflict is resolved so there's no need to move to the second level.
-
-- If the same document then has a retention label applied that is configured to retain-only for seven years, the conflict for how long to retain the document can't be resolved by the first level. There's a new conflict between the retention period for five years and seven years.
-    
-    Because of the rule in the second level that states the longest retention period wins, the item will be retained for seven years (the longest retention period), and then deleted as a deferred action. The conflict is resolved and for this example, there's no need to move to the third level that resolves conflicts for delete actions. Most of the time, conflicts can be resolved by these first two levels.
+Use the following flow to understand the retention and deletion outcomes for a single item, where each level acts as a tie-breaker for conflicts, from top to bottom.
 
 > [!IMPORTANT]
 > If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
@@ -332,6 +324,17 @@ Explanation for the four different levels:
     
     This document will be deleted after seven years because that's the shortest retention period for these two scoped retention policies.
 
+If the outcome is determined by the first level because there are no further conflicts, there's no need to progress to the next level, and so on. For example:
+
+- A document is subject to just two retention policies: The first retention policy is configured to retain-only for five years and the second retention policy is configured to delete-only after three years. The conflict here is between retention for five years and deletion after three years.
+    
+    Because of the rule in the first level that states retention wins over deletion, the item will be retained for five years as a result of the first retention policy, and then deleted as a deferred action from the second retention policy. The conflict is resolved so there's no need to move to the second level.
+
+- If the same document then has a retention label applied that is configured to retain-only for seven years, the conflict for how long to retain the document can't be resolved by the first level. There's a new conflict between the retention period for five years and seven years.
+    
+    Because of the rule in the second level that states the longest retention period wins, the item will be retained for seven years (the longest retention period), and then deleted as a deferred action. The conflict is resolved and for this example, there's no need to move to the third level that resolves conflicts for delete actions. Most of the time, conflicts can be resolved by these first two levels.
+
+
 Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a deferred delete action.
 
 More complex examples that combine retain and delete actions:
@@ -344,7 +347,7 @@ More complex examples that combine retain and delete actions:
     
     **Outcome**: The item is retained for seven years because retention takes precedence over deletion and seven years is the longest retention period. At the end of this retention period, the item is deleted because of the delete action from the retention policies that was deferred while the item was retained.
     
-    Although the two retention policies have different dates for the delete actions, the earliest the item can be deleted is at the end of the longest retention period, so there is no conflict to resolve.
+    Although the two retention policies have different dates for the delete actions, the earliest the item can be deleted is at the end of the longest retention period, which is longer than both deletion dates. In this example, there is no date conflict to resolve for the deletion actions and the conflicts are resolved by the second level.
 
 2.  An item has the following retention settings applied to it:
     
@@ -352,7 +355,7 @@ More complex examples that combine retain and delete actions:
     - A scoped retention policy that retains for five years and then deletes
     - A retention label that retains for three years and then deletes
     
-    **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels takes precedence over deletion from all retention policies.
+    **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels takes precedence over deletion from all retention policies. In this example, the conflicts are resolved by the third level.
 
 ## Use Preservation Lock to restrict changes to policies
 
