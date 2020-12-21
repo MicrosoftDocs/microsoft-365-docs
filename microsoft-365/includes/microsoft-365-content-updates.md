@@ -2,6 +2,389 @@
 
 
 
+## Week of November 30, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/30/2020 | [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts?view=o365-21vianet) | modified |
+| 11/30/2020 | [Create retention labels and apply them in apps to retain or delete content](/microsoft-365/compliance/create-apply-retention-labels?view=o365-21vianet) | modified |
+| 11/30/2020 | [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention?view=o365-21vianet) | modified |
+| 11/30/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
+| 11/30/2020 | [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-21vianet) | modified |
+| 11/30/2020 | [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-21vianet) | modified |
+| 11/30/2020 | [Manage Industry news](/microsoft-365/admin/manage/manage-industry-news?view=o365-21vianet) | modified |
+| 11/30/2020 | [Microsoft Productivity Score - Privacy](/microsoft-365/admin/productivity/privacy?view=o365-worldwide) | modified |
+| 11/30/2020 | [Parity between Azure Information Protection for Office 365 operated by 21Vianet and commercial offerings](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet) | modified |
+| 11/30/2020 | GDPR discovery, protection, and reporting in the Microsoft 365 dev/test environment | removed |
+| 11/30/2020 | Microsoft 365 NIST 800-53 action plan, priorities for the first 30 days, 90 days, and beyond | removed |
+| 11/30/2020 | Apply labels to personal data | removed |
+| 11/30/2020 | Apply protection to personal data | removed |
+| 11/30/2020 | Architect a classification schema for personal data | removed |
+| 11/30/2020 | California Consumer Privacy Act (CCPA) FAQ | removed |
+| 11/30/2020 | [Microsoft Compliance Manager templates list](/microsoft-365/compliance/compliance-manager-templates-list?view=o365-21vianet) | modified |
+| 11/30/2020 | Customize or create a new sensitive information type | removed |
+| 11/30/2020 | Microsoft 365 GDPR action plan, priorities for your first 30 days, 90 days, and beyond | removed |
+| 11/30/2020 | Accountability readiness checklist for the GDPR | removed |
+| 11/30/2020 | Azure and Dynamics 365 accountability readiness checklist for the GDPR | removed |
+| 11/30/2020 | Microsoft Support and Professional Services accountability readiness checklist for the GDPR | removed |
+| 11/30/2020 | Accountability readiness checklists for the GDPR | removed |
+| 11/30/2020 | Microsoft Support and Professional Services and Breach Notification Under the GDPR | removed |
+| 11/30/2020 | Breach Notification Under the GDPR | removed |
+| 11/30/2020 | Azure and Dynamics 365 breach notification under the GDPR | removed |
+| 11/30/2020 | Breach Notification | removed |
+| 11/30/2020 | Data processor service for Windows Enterprise notification under the GDPR | removed |
+| 11/30/2020 | Data protection impact assessments | removed |
+| 11/30/2020 | Microsoft's data protection officer | removed |
+| 11/30/2020 | Data Subject Requests for the GDPR and CCPA | removed |
+| 11/30/2020 | DPIA Azure for the GDPR | removed |
+| 11/30/2020 | DPIA Dynamics for the GDPR | removed |
+| 11/30/2020 | Guidance for Data Controllers using Office 365 | removed |
+| 11/30/2020 | Guidance for Data Controllers Using Microsoft Professional Services | removed |
+| 11/30/2020 | Data Protection Impact Assessment (DPIA) data processor service for Windows Enterprise for the GDPR | removed |
+| 11/30/2020 | Azure Data Subject Requests for the GDPR and CCPA | removed |
+| 11/30/2020 | Dynamics 365 Data Subject Requests for the GDPR and CCPA | removed |
+| 11/30/2020 | Intune Data Subject Requests for the GDPR and CCPA | removed |
+| 11/30/2020 | Office 365 Data Subject Requests Under the GDPR and CCPA | removed |
+| 11/30/2020 | Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA | removed |
+| 11/30/2020 | Visual Studio Family Data Subject Requests for the GDPR and CCPA | removed |
+| 11/30/2020 | Azure DevOps Data Subject Requests for GDPR and CCPA | removed |
+| 11/30/2020 | Data processor service for Windows Enterprise Data Subject Requests for the GDPR and CCPA | removed |
+| 11/30/2020 | GDPR | removed |
+| 11/30/2020 | GDPR for Exchange Server | removed |
+| 11/30/2020 | GDPR for Office Online Server and Office Web Apps Server | removed |
+| 11/30/2020 | GDPR for Office Servers | removed |
+| 11/30/2020 | GDPR for on-premises file shares | removed |
+| 11/30/2020 | GDPR for Project Server | removed |
+| 11/30/2020 | GDPR for SharePoint Server | removed |
+| 11/30/2020 | GDPR for Skype for Business Server | removed |
+| 11/30/2020 | Information protection | removed |
+| 11/30/2020 | Additional steps to export system-generated log data | removed |
+| 11/30/2020 | General Data Protection Regulation | removed |
+| 11/30/2020 | [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection?view=o365-21vianet) | modified |
+| 11/30/2020 | Microsoft 365 ISO 27001 action plan, priorities for your first 30 days, 90 days, and beyond | removed |
+| 11/30/2020 | Manage GDPR data subject requests with DSR case tool in Security & Compliance Center | removed |
+| 11/30/2020 | Title 23 NYCRR Part 500 | removed |
+| 11/30/2020 | Dutch Authority for the Financial Markets and the Central Bank of the Netherlands | removed |
+| 11/30/2020 | Financial Authority (AMF) and Prudential Authority (ACPR) France | removed |
+| 11/30/2020 | Australian Prudential Regulation Authority (APRA) | removed |
+| 11/30/2020 | Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012) | removed |
+| 11/30/2020 | Cloud Computing Compliance Controls Catalog (C5) | removed |
+| 11/30/2020 | Australian Government Certified Cloud Services List (CCSL) | removed |
+| 11/30/2020 | Content Delivery & Security Association (CDSA) Content Protection & Security (CPS) Standard | removed |
+| 11/30/2020 | Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States | removed |
+| 11/30/2020 | Center for Internet Security (CIS) Benchmarks | removed |
+| 11/30/2020 | Criminal Justice Information Services (CJIS) Security Policy | removed |
+| 11/30/2020 | Committee on National Security Systems Instruction No. 1253 (CNSSI 1253) | removed |
+| 11/30/2020 | Cloud Security Mark Gold (CS Gold Mark) | removed |
+| 11/30/2020 | Cloud Security Alliance (CSA) STAR attestation | removed |
+| 11/30/2020 | Cloud Security Alliance (CSA) STAR certification | removed |
+| 11/30/2020 | Canadian Privacy Laws | removed |
+| 11/30/2020 | United Kingdom Cyber Essentials PLUS | removed |
+| 11/30/2020 | Defense Federal Acquisition Regulation Supplement (DFARS) | removed |
+| 11/30/2020 | Digital Production Partnership (DPP) United Kingdom | removed |
+| 11/30/2020 | US Department of Defense (DoD) Provisional Authorization | removed |
+| 11/30/2020 | European Banking Authority (EBA) | removed |
+| 11/30/2020 | European Standards EN 301 549 | removed |
+| 11/30/2020 | Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures | removed |
+| 11/30/2020 | European Union Model Clauses | removed |
+| 11/30/2020 | EU-US and Swiss-US Privacy Shield Frameworks | removed |
+| 11/30/2020 | Federation Against Copyright Theft (FACT) | removed |
+| 11/30/2020 | United Kingdom Financial Conduct Authority (FCA) | removed |
+| 11/30/2020 | Food and Drug Administration CFR Title 21 Part 11 | removed |
+| 11/30/2020 | Family Educational Rights and Privacy Act (FERPA) | removed |
+| 11/30/2020 | Federal Financial Institutions Examination Council (FFIEC) | removed |
+| 11/30/2020 | Financial Market Supervisory Authority (FINMA) Switzerland | removed |
+| 11/30/2020 | Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States | removed |
+| 11/30/2020 | Federal Information Processing Standard (FIPS) Publication 140-2 | removed |
+| 11/30/2020 | Center for Financial Industry Information Systems (FISC) | removed |
+| 11/30/2020 | Financial Supervisory Authority (FSA) Denmark | removed |
+| 11/30/2020 | Federal Risk and Authorization Management Program (FedRAMP) | removed |
+| 11/30/2020 | United Kingdom Government-Cloud (G-Cloud) | removed |
+| 11/30/2020 | Gramm-Leach-Bliley Act (GLBA) | removed |
+| 11/30/2020 | Health Data Hosting (HDS) France | removed |
+| 11/30/2020 | Health Insurance Portability and Accountability (HIPAA) & HITECH Acts | removed |
+| 11/30/2020 | Health Information Trust Alliance (HITRUST) Common Security Framework (CSF) | removed |
+| 11/30/2020 | US Internal Revenue Service Publication 1075 | removed |
+| 11/30/2020 | Korea-Information Security Management System (K-ISMS) | removed |
+| 11/30/2020 | ISO/IEC 20000-1:2011 Information Technology Service Management | removed |
+| 11/30/2020 | ISO 22301:2012 Business Continuity Management Standard | removed |
+| 11/30/2020 | ISO/IEC 27001:2013 Information Security Management Standards | removed |
+| 11/30/2020 | ISO/IEC 27017:2015 Code of Practice for Information Security Controls | removed |
+| 11/30/2020 | ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud | removed |
+| 11/30/2020 | ISO 9001:2015 Quality Management Systems Standards | removed |
+| 11/30/2020 | IT-Grundschutz Compliance workbook | removed |
+| 11/30/2020 | International Traffic in Arms Regulations (ITAR) | removed |
+| 11/30/2020 | Financial Supervision Authority (KNF) Poland | removed |
+| 11/30/2020 | Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999 | removed |
+| 11/30/2020 | Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework | removed |
+| 11/30/2020 | Monetary Authority of Singapore (MAS) and Association of Banks in Singapore (ABS) | removed |
+| 11/30/2020 | Motion Picture Association of America (MPAA) | removed |
+| 11/30/2020 | Multi-Tier Cloud Security (MTCS) Standard for Singapore | removed |
+| 11/30/2020 | Ministry of Electronics and Information Technology (MeitY) | removed |
+| 11/30/2020 | My Number Act (Japan) | removed |
+| 11/30/2020 | National Bank of Belgium (NBB) and the Financial Services and Markets Authority (FSMA) | removed |
+| 11/30/2020 | NEN 7510 | removed |
+| 11/30/2020 | Office of the Superintendent of Financial Institutions (OSFI) Canada | removed |
+| 11/30/2020 | Payment Card Industry (PCI) Data Security Standard (DSS) | removed |
+| 11/30/2020 | Reserve Bank of India (RBI) and Insurance Regulatory and Development Authority of India (IRDAI) | removed |
+| 11/30/2020 | Securities and Exchange Commission (SEC) Rule 17a-4(f) United States | removed |
+| 11/30/2020 | Service Organization Controls (SOC) | removed |
+| 11/30/2020 | Sarbanes-Oxley Act of 2002 (SOX) | removed |
+| 11/30/2020 | U.S. Section 508 | removed |
+| 11/30/2020 | Trusted Information Security Assessment Exchange (TISAX) Germany | removed |
+| 11/30/2020 | Web Content Accessibility Guidelines | removed |
+| 11/30/2020 | California Consumer Privacy Act (CCPA) | removed |
+| 11/30/2020 | Compliance offering- Cloud Security Alliance (CSA) STAR self-assessment | removed |
+| 11/30/2020 | US DoE 10 CFR Part 810 | removed |
+| 11/30/2020 | US Export Administration Regulations (EAR) | removed |
+| 11/30/2020 | ENISA Information Assurance Framework | removed |
+| 11/30/2020 | Good Clinical, Laboratory, and Manufacturing Practices (GxP) | removed |
+| 11/30/2020 | Microsoft compliance offerings # < 60 chars | removed |
+| 11/30/2020 | ISO/IEC 27701 Privacy Information Management System (PIMS) | removed |
+| 11/30/2020 | North American Electric Reliability Corporation (NERC) | removed |
+| 11/30/2020 | National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF) | removed |
+| 11/30/2020 | NIST SP 800-171 | removed |
+| 11/30/2020 | New Zealand Government Cloud Computing Security and Privacy Considerations | removed |
+| 11/30/2020 | Police-Assured Secure Facilities (PASF) United Kingdom | removed |
+| 11/30/2020 | Personal Data Protection Act (PDPA) Argentina | removed |
+| 11/30/2020 | Russian Personal Data Localization Requirements | removed |
+| 11/30/2020 | Securities and Exchange Commission - Regulation Systems Compliance and Integrity (SCI) | removed |
+| 11/30/2020 | Shared Assessments Program | removed |
+| 11/30/2020 | TruSight | removed |
+| 11/30/2020 | Encryption for data in transit | removed |
+| 11/30/2020 | Encryption for Skype, OneDrive, SharePoint, and Exchange | removed |
+| 11/30/2020 | Overview of Office 365 Information Protection for GDPR | removed |
+| 11/30/2020 | Information Protection for GDPR | removed |
+| 11/30/2020 | Search for and find personal data | removed |
+| 11/30/2020 | [Form processing overview](/microsoft-365/contentunderstanding/form-processing-overview) | modified |
+| 11/30/2020 | Customer and Cloud Partner Enterprise Business Continuity Responsibilities | removed |
+| 11/30/2020 | Considerations for your Enterprise Business Continuity Management Plan | removed |
+| 11/30/2020 | Enterprise Business Continuity Management Plan Rehearsal and User Training | removed |
+| 11/30/2020 | Enterprise Business Continuity Management Legal Disclaimer | removed |
+| 11/30/2020 | Microsoft 365 Service Resilience | removed |
+| 11/30/2020 | Microsoft 365 for enterprise Business Continuity Management Mitigations | removed |
+| 11/30/2020 | Understanding Enterprise Business Continuity Management with cloud services | removed |
+| 11/30/2020 | [Exchange 2007 end of support roadmap](/microsoft-365/enterprise/exchange-2007-end-of-support?view=o365-21vianet) | modified |
+| 11/30/2020 | [Exchange 2010 end of support roadmap](/microsoft-365/enterprise/exchange-2010-end-of-support?view=o365-21vianet) | modified |
+| 11/30/2020 | Administrative access controls in Microsoft 365 | removed |
+| 11/30/2020 | Auditing and reporting in Microsoft cloud services | removed |
+| 11/30/2020 | Microsoft 365 core principles of defense against denial-of-service attacks | removed |
+| 11/30/2020 | Microsoft 365 Data Destruction | removed |
+| 11/30/2020 | Microsoft 365 Data Immutability | removed |
+| 11/30/2020 | Data Resiliency in Microsoft 365 | removed |
+| 11/30/2020 | Data Retention, Deletion, and Destruction in Microsoft 365 | removed |
+| 11/30/2020 | Microsoft 365 Dealing with Data Corruption | removed |
+| 11/30/2020 | Defending Microsoft 365 cloud services against denial-of-service attacks | removed |
+| 11/30/2020 | Microsoft 365 eDiscovery and search features overview | removed |
+| 11/30/2020 | Exchange Online Data Resiliency in Microsoft 365 | removed |
+| 11/30/2020 | Microsoft 365 Exchange Online Data Deletion | removed |
+| 11/30/2020 | Microsoft 365 internal logging for Microsoft 365 engineering | removed |
+| 11/30/2020 | Microsoft 365 mailbox migrations | removed |
+| 11/30/2020 | Malware and Ransomware Protection in Microsoft 365 | removed |
+| 11/30/2020 | Office 365 Management Activity API | removed |
+| 11/30/2020 | Microsoft 365 denial-of-service defense strategy | removed |
+| 11/30/2020 | Microsoft 365 Monitoring and Auditing Access Controls | removed |
+| 11/30/2020 | Microsoft 365 Monitoring and Self-Healing | removed |
+| 11/30/2020 | Microsoft 365 Monitoring and Testing Tenant Boundaries | removed |
+| 11/30/2020 | [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles?view=o365-21vianet) | modified |
+| 11/30/2020 | Microsoft 365 personnel controls | removed |
+| 11/30/2020 | Microsoft 365 reporting features | removed |
+| 11/30/2020 | Microsoft 365 Resource Limits | removed |
+| 11/30/2020 | Microsoft 365 SharePoint Online Data Deletion | removed |
+| 11/30/2020 | Office 365 Skype for Business Data Deletion | removed |
+| 11/30/2020 | Microsoft 365 technology controls | removed |
+| 11/30/2020 | Microsoft 365 Yammer enterprise access controls | removed |
+| 11/30/2020 | [Windows and Office deployment lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-21vianet) | modified |
+| 11/30/2020 | [Optimize web part performance in SharePoint Online modern site pages](/microsoft-365/enterprise/modern-web-part-optimization?view=o365-21vianet) | modified |
+| 11/30/2020 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-21vianet) | modified |
+| 11/30/2020 | [PerformancePoint Server 2007 end of support roadmap](/microsoft-365/enterprise/pps-2007-end-of-support?view=o365-21vianet) | modified |
+| 11/30/2020 | [Project Server 2007 end of support roadmap](/microsoft-365/enterprise/project-server-2007-end-of-support?view=o365-21vianet) | modified |
+| 11/30/2020 | [Project Server 2010 end-of-support roadmap](/microsoft-365/enterprise/project-server-2010-end-of-support?view=o365-21vianet) | modified |
+| 11/30/2020 | [SharePoint Server 2007 end of support roadmap](/microsoft-365/enterprise/sharepoint-2007-end-of-support?view=o365-21vianet) | modified |
+| 11/30/2020 | [Resources to help you upgrade from Office 2007 servers and clients](/microsoft-365/enterprise/upgrade-from-office-2007-servers-and-products?view=o365-21vianet) | modified |
+| 11/30/2020 | [Resources to help you upgrade from Office 2010 servers and clients](/microsoft-365/enterprise/upgrade-from-office-2010-servers-and-products?view=o365-21vianet) | modified |
+| 11/30/2020 | [Upgrading from SharePoint 2010](/microsoft-365/enterprise/upgrade-from-sharepoint-2010?view=o365-21vianet) | modified |
+| 11/30/2020 | [Readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-tool?view=o365-21vianet) | modified |
+| 11/30/2020 | [Access the Admin portal](/microsoft-365/managed-desktop/get-started/access-admin-portal?view=o365-21vianet) | modified |
+| 11/30/2020 | [Compliance](/microsoft-365/managed-desktop/intro/compliance?view=o365-21vianet) | modified |
+| 11/30/2020 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-21vianet) | modified |
+| 11/30/2020 | [Microsoft 365 compliance documentation # < 60 chars](/microsoft-365/compliance/index?view=o365-21vianet) | modified |
+| 11/30/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
+| 12/1/2020 | [Customize a SharePoint team site for file storage and sharing](/microsoft-365/admin/setup/customize-team-site?view=o365-21vianet) | modified |
+| 12/1/2020 | [Set up file storage and sharing](/microsoft-365/admin/setup/set-up-file-storage-and-sharing?view=o365-21vianet) | modified |
+| 12/1/2020 | [Use a script to add users to a hold in a Core eDiscovery case](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery?view=o365-21vianet) | modified |
+| 12/1/2020 | [How to opt-in for migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in?view=o365-21vianet) | modified |
+| 12/1/2020 | [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-transition?view=o365-21vianet) | modified |
+| 12/1/2020 | [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure?view=o365-21vianet) | modified |
+| 12/1/2020 | [Communication compliance feature reference](/microsoft-365/compliance/communication-compliance-feature-reference?view=o365-21vianet) | modified |
+| 12/1/2020 | [Data locations for the European Union](/microsoft-365/enterprise/eu-data-storage-locations?view=o365-21vianet) | modified |
+| 12/1/2020 | [Fix issues found by the readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-fix?view=o365-21vianet) | modified |
+| 12/1/2020 | [Readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-tool?view=o365-21vianet) | modified |
+| 12/1/2020 | [Adjust settings after enrollment](/microsoft-365/managed-desktop/get-started/conditional-access?view=o365-21vianet) | modified |
+| 12/1/2020 | [Microsoft Managed Desktop operations and monitoring](/microsoft-365/managed-desktop/service-description/operations-and-monitoring?view=o365-21vianet) | modified |
+| 12/1/2020 | [About the Exchange Online admin role](/microsoft-365/admin/add-users/about-exchange-online-admin-role?view=o365-21vianet) | modified |
+| 12/1/2020 | [Change a user name and email address](/microsoft-365/admin/add-users/change-a-user-name-and-email-address?view=o365-21vianet) | modified |
+| 12/1/2020 | [Microsoft Productivity Score - Communication](/microsoft-365/admin/productivity/communication?view=o365-worldwide) | modified |
+| 12/1/2020 | [Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-21vianet) | modified |
+| 12/1/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
+| 12/1/2020 | [Windows and Office deployment lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-21vianet) | modified |
+| 12/1/2020 | [Prepare a non-routable domain for directory synchronization](/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?view=o365-21vianet) | modified |
+| 12/1/2020 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
+| 12/1/2020 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
+| 12/1/2020 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-default?view=o365-21vianet) | modified |
+| 12/1/2020 | [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-21vianet) | modified |
+| 12/1/2020 | [Let users reset their own passwords](/microsoft-365/admin/add-users/let-users-reset-passwords?view=o365-21vianet) | modified |
+| 12/1/2020 | [Restore a user](/microsoft-365/admin/add-users/restore-user?view=o365-21vianet) | modified |
+| 12/1/2020 | [Configure email forwarding](/microsoft-365/admin/email/configure-email-forwarding?view=o365-21vianet) | modified |
+| 12/1/2020 | [Microsoft Productivity Score - Mobility](/microsoft-365/admin/productivity/mobility?view=o365-worldwide) | modified |
+| 12/1/2020 | [Configure Focused Inbox for everyone in your organization](/microsoft-365/admin/setup/configure-focused-inbox?view=o365-21vianet) | modified |
+| 12/1/2020 | [Set up Microsoft 365 for business](/microsoft-365/admin/setup/setup?view=o365-21vianet) | modified |
+| 12/1/2020 | [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
+| 12/1/2020 | [Administering Exchange Online mailboxes in a multi-geo environment](/microsoft-365/enterprise/administering-exchange-online-multi-geo?view=o365-21vianet) | modified |
+| 12/1/2020 | [Configure spam filter policies](/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
+| 12/1/2020 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
+| 12/2/2020 | [Set up multi-factor authentication for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
+| 12/2/2020 | [Migrate to Microsoft 365 Business from Office 365 E3](/microsoft-365/business/migrate-from-e3?view=o365-21vianet) | modified |
+| 12/2/2020 | [Migrate from Microsoft 365 Business to Microsoft 365 E3](/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise?view=o365-21vianet) | modified |
+| 12/2/2020 | [Set up conditional access policies](/microsoft-365/campaigns/m365-campaigns-conditional-access?view=o365-21vianet) | modified |
+| 12/2/2020 | [Get started with insider risk management](/microsoft-365/compliance/insider-risk-management-configure?view=o365-21vianet) | modified |
+| 12/2/2020 | [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-21vianet) | modified |
+| 12/2/2020 | [Information protection for the Contoso Corporation](/microsoft-365/enterprise/contoso-info-protect?view=o365-21vianet) | modified |
+| 12/2/2020 | [Contoso IT infrastructure and business needs](/microsoft-365/enterprise/contoso-infra-needs?view=o365-21vianet) | modified |
+| 12/2/2020 | [Summary of Microsoft 365 for enterprise security for the Contoso Corporation](/microsoft-365/enterprise/contoso-security-summary?view=o365-21vianet) | modified |
+| 12/2/2020 | [Secure user sign-ins to your Microsoft 365 tenant](/microsoft-365/enterprise/microsoft-365-secure-sign-in?view=o365-21vianet) | modified |
+| 12/2/2020 | [Additional general information for the migration from Microsoft Cloud Deutschland](/microsoft-365/enterprise/ms-cloud-germany-transition-add-general?view=o365-21vianet) | modified |
+| 12/2/2020 | [Microsoft 365 for enterprise test environment multi-factor authentication](/microsoft-365/enterprise/multi-factor-authentication-microsoft-365-test-environment?view=o365-21vianet) | modified |
+| 12/2/2020 | [Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-prerequisites?view=o365-21vianet) | modified |
+| 12/2/2020 | [Identity and device access configurations - Microsoft 365 for enterprise](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations?view=o365-21vianet) | modified |
+| 12/2/2020 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-default?view=o365-21vianet) | modified |
+| 12/2/2020 | [Top 12 tasks for security teams to support working from home](/microsoft-365/security/top-security-tasks-for-remote-work?view=o365-21vianet) | modified |
+| 12/2/2020 | [Create a secure guest sharing environment](/microsoft-365/solutions/create-secure-guest-sharing-environment?view=o365-21vianet) | modified |
+| 12/2/2020 | [Step 1. Increase sign-in security for remote workers with MFA](/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in?view=o365-21vianet) | modified |
+| 12/2/2020 | [Key Compliance and Security Considerations for the Energy Industry](/microsoft-365/solutions/energy-secure-collaboration?view=o365-21vianet) | modified |
+| 12/2/2020 | [Key compliance and security considerations for US banking and capital markets](/microsoft-365/solutions/financial-services-secure-collaboration?view=o365-21vianet) | modified |
+| 12/2/2020 | [Governing access in Microsoft 365 groups, Teams, and SharePoint](/microsoft-365/solutions/groups-teams-access-governance?view=o365-21vianet) | modified |
+| 12/2/2020 | [Configure email forwarding](/microsoft-365/admin/email/configure-email-forwarding?view=o365-21vianet) | modified |
+| 12/2/2020 | [Change your organization's address, technical contact, and more](/microsoft-365/admin/manage/change-address-contact-and-more?view=o365-21vianet) | modified |
+| 12/2/2020 | [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration?view=o365-21vianet) | modified |
+| 12/2/2020 | [Additional device information for the migration from Microsoft Cloud Deutschland](/microsoft-365/enterprise/ms-cloud-germany-transition-add-devices?view=o365-21vianet) | modified |
+| 12/2/2020 | [Additional experience information for the migration from Microsoft Cloud Deutschland](/microsoft-365/enterprise/ms-cloud-germany-transition-add-experience?view=o365-21vianet) | modified |
+| 12/2/2020 | [How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-21vianet) | modified |
+| 12/2/2020 | [Microsoft 365 Reports in the admin center - Mailbox usage](/microsoft-365/admin/activity-reports/mailbox-usage?view=o365-21vianet) | modified |
+| 12/2/2020 | [Choose between Basic Mobility and Security and Intune](/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune?view=o365-21vianet) | modified |
+| 12/2/2020 | [Microsoft Productivity Score - Communication](/microsoft-365/admin/productivity/communication?view=o365-worldwide) | modified |
+| 12/2/2020 | [Microsoft Productivity Score - Content collaboration](/microsoft-365/admin/productivity/content-collaboration?view=o365-worldwide) | modified |
+| 12/2/2020 | [Microsoft Productivity Score - Meetings](/microsoft-365/admin/productivity/meetings?view=o365-worldwide) | modified |
+| 12/2/2020 | [Microsoft Productivity Score - Mobility](/microsoft-365/admin/productivity/mobility?view=o365-worldwide) | modified |
+| 12/2/2020 | [Microsoft Productivity Score - Privacy](/microsoft-365/admin/productivity/privacy?view=o365-worldwide) | modified |
+| 12/2/2020 | [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) | modified |
+| 12/2/2020 | [Microsoft Productivity Score - Teamwork](/microsoft-365/admin/productivity/teamwork?view=o365-worldwide) | modified |
+| 12/2/2020 | [Microsoft Bookings Frequently Asked Questions](/microsoft-365/bookings/bookings-faq?view=o365-21vianet) | modified |
+| 12/2/2020 | [Restrict access to content using sensitivity labels to apply encryption](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-21vianet) | modified |
+| 12/2/2020 | [Using  Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using?view=o365-21vianet) | modified |
+| 12/2/2020 | [Microsoft Managed Desktop devices](/microsoft-365/managed-desktop/service-description/device-list?view=o365-21vianet) | modified |
+| 12/2/2020 | [Create team sites - Political campaign dev environment](/microsoft-365/security/office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment?view=o365-21vianet) | modified |
+| 12/2/2020 | [Deploy an isolated SharePoint Online team site](/microsoft-365/security/office-365-security/deploy-an-isolated-sharepoint-online-team-site?view=o365-21vianet) | modified |
+| 12/2/2020 | [Application Guard for Office 365 (public preview) for admins](/microsoft-365/security/office-365-security/install-app-guard?view=o365-21vianet) | modified |
+| 12/2/2020 | [Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-21vianet) | modified |
+| 12/2/2020 | [Investigate malicious email that was delivered in Office 365, Find and investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-21vianet) | modified |
+| 12/2/2020 | [Threat investigation & response capabilities - Microsoft Defender for Office 365 Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
+| 12/2/2020 | [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats?view=o365-21vianet) | modified |
+| 12/2/2020 | [Remediate malicious email that was delivered in Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-21vianet) | modified |
+| 12/2/2020 | [Microsoft 365 security roadmap - Top priorities](/microsoft-365/security/office-365-security/security-roadmap?view=o365-21vianet) | modified |
+| 12/2/2020 | [SIEM integration with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/siem-integration-with-office-365-ti?view=o365-21vianet) | modified |
+| 12/2/2020 | [Views in Threat Explorer and real-time detections](/microsoft-365/security/office-365-security/threat-explorer-views?view=o365-21vianet) | modified |
+| 12/2/2020 | [Threat Explorer and Real-time detections](/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet) | modified |
+| 12/2/2020 | [Threat Trackers - New and Noteworthy](/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet) | modified |
+| 12/2/2020 | [Remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis?view=o365-21vianet) | modified |
+| 12/2/2020 | [View reports for Defender for Office 365](/microsoft-365/security/office-365-security/view-reports-for-atp?view=o365-21vianet) | modified |
+| 12/2/2020 | [Microsoft Productivity Score - Microsoft 365 apps health](/microsoft-365/admin/productivity/apps-health?view=o365-worldwide) | modified |
+| 12/2/2020 | [Decision based on the results in Advanced eDiscovery](/microsoft-365/compliance/decision-based-on-the-results-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 12/2/2020 | [Create a DLP policy to protect documents with FCI or other properties](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties?view=o365-21vianet) | modified |
+| 12/2/2020 | [Search and Tagging](/microsoft-365/compliance/search-and-tagging?view=o365-21vianet) | modified |
+| 12/2/2020 | [Manage your data and service # < 60 chars](/microsoft-365/admin/manage/index?view=o365-21vianet) | modified |
+| 12/3/2020 | [Microsoft 365 Reports in the admin center - Mailbox usage](/microsoft-365/admin/activity-reports/mailbox-usage?view=o365-21vianet) | modified |
+| 12/3/2020 | [About shared mailboxes](/microsoft-365/admin/email/about-shared-mailboxes?view=o365-21vianet) | modified |
+| 12/3/2020 | [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) | modified |
+| 12/3/2020 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
+| 12/3/2020 | [Create and publish sensitivity labels](/microsoft-365/compliance/create-sensitivity-labels?view=o365-21vianet) | modified |
+| 12/3/2020 | [Get started with sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-21vianet) | modified |
+| 12/3/2020 | [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection?view=o365-21vianet) | modified |
+| 12/3/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
+| 12/3/2020 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
+| 12/3/2020 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
+| 12/3/2020 | [Threat Trackers - New and Noteworthy](/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet) | modified |
+| 12/3/2020 | [Troubleshooting mail sent to Microsoft 365](/microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365?view=o365-21vianet) | modified |
+| 12/3/2020 | [Create your collaboration governance plan](/microsoft-365/solutions/collaboration-governance-first?view=o365-21vianet) | modified |
+| 12/3/2020 | [What is collaboration governance?](/microsoft-365/solutions/collaboration-governance-overview?view=o365-21vianet) | modified |
+| 12/3/2020 | [Create a communications site](/microsoft-365/campaigns/create-communications-site?view=o365-21vianet) | modified |
+| 12/3/2020 | [Microsoft 365 network connectivity test tool (preview)](/microsoft-365/enterprise/office-365-network-mac-perf-onboarding-tool?view=o365-21vianet) | modified |
+| 12/3/2020 | [Set up Microsoft 365 Business Standard](/microsoft-365/admin/setup/setup-business-standard?view=o365-21vianet) | modified |
+| 12/3/2020 | [Get started with Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-setup?view=o365-21vianet) | modified |
+| 12/3/2020 | [Configuration analyzer for security policies](/microsoft-365/security/office-365-security/configuration-analyzer-for-security-policies?view=o365-21vianet) | modified |
+| 12/3/2020 | [Configure anti-malware policies](/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-21vianet) | modified |
+| 12/3/2020 | [Configure anti-phishing policies in EOP](/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-21vianet) | modified |
+| 12/3/2020 | [Configure anti-phishing policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies?view=o365-21vianet) | modified |
+| 12/3/2020 | [Configure global settings for Safe Links settings in Defender for Office 365](/microsoft-365/security/office-365-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
+| 12/3/2020 | [Configure the default connection filter policy](/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-21vianet) | modified |
+| 12/3/2020 | [Configure outbound spam filtering](/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-21vianet) | modified |
+| 12/3/2020 | [Configure spam filter policies](/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
+| 12/3/2020 | [Configure spoof intelligence](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence?view=o365-21vianet) | modified |
+| 12/3/2020 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-21vianet) | modified |
+| 12/3/2020 | [Quarantine tags](/microsoft-365/security/office-365-security/quarantine-tags?view=o365-21vianet) | modified |
+| 12/3/2020 | [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
+| 12/3/2020 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
+| 12/3/2020 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
+| 12/3/2020 | [Manage your allowed and blocked URLs in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list?view=o365-21vianet) | modified |
+| 12/3/2020 | [View email security reports in the Security & Compliance Center](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
+| 12/3/2020 | [View mail flow reports in the Reports dashboard](/microsoft-365/security/office-365-security/view-mail-flow-reports?view=o365-21vianet) | modified |
+| 12/3/2020 | [View Defender for Office 365 reports in the Reports dashboard](/microsoft-365/security/office-365-security/view-reports-for-atp?view=o365-21vianet) | modified |
+| 12/3/2020 | [Walkthrough - Spoof intelligence insight](/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight?view=o365-21vianet) | modified |
+| 12/3/2020 | [Manage who can create Microsoft 365 Groups](/microsoft-365/solutions/manage-creation-of-groups?view=o365-21vianet) | modified |
+| 12/4/2020 | [Microsoft Managed Desktop documentation # < 60 chars](/microsoft-365/managed-desktop/index?view=o365-21vianet) | modified |
+| 12/4/2020 | [Choose between Basic Mobility and Security and Intune](/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune?view=o365-21vianet) | modified |
+| 12/4/2020 | [Configure email forwarding](/microsoft-365/admin/email/configure-email-forwarding?view=o365-21vianet) | modified |
+| 12/4/2020 | [Email encryption in Microsoft 365](/microsoft-365/compliance/email-encryption?view=o365-21vianet) | modified |
+| 12/4/2020 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
+| 12/4/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
+| 12/4/2020 | [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-21vianet) | modified |
+| 12/4/2020 | [Contoso's COVID-19 response and support for remote and onsite work](/microsoft-365/solutions/contoso-remote-onsite-work?view=o365-21vianet) | modified |
+| 12/4/2020 | [Set an individual user's password to never expire](/microsoft-365/admin/add-users/set-password-to-never-expire?view=o365-21vianet) | modified |
+| 12/4/2020 | [Customize the theme for your organization](/microsoft-365/admin/setup/customize-your-organization-theme?view=o365-21vianet) | modified |
+
+
+## Week of November 23, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/23/2020 | [Review detected threats and take action](/microsoft-365/business/review-threats-take-action?view=o365-21vianet) | modified |
+| 11/23/2020 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-21vianet) | modified |
+| 11/23/2020 | [Create retention labels and apply them in apps to retain or delete content](/microsoft-365/compliance/create-apply-retention-labels?view=o365-21vianet) | modified |
+| 11/23/2020 | [Create and configure retention policies to automatically retain or delete content](/microsoft-365/compliance/create-retention-policies?view=o365-21vianet) | modified |
+| 11/23/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
+| 11/24/2020 | [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
+| 11/24/2020 | [Set up a connector to archive CellTrust data in Microsoft 365](/microsoft-365/compliance/archive-celltrust-data?view=o365-21vianet) | modified |
+| 11/24/2020 | [Set up a connector to archive data from MS SQL Database](/microsoft-365/compliance/archive-mssqldatabaseimporter-data?view=o365-21vianet) | modified |
+| 11/24/2020 | [Set up a connector to archive Reuters Dealing data in Microsoft 365](/microsoft-365/compliance/archive-reutersdealing-data?view=o365-21vianet) | modified |
+| 11/24/2020 | [Set up a connector to archive Reuters FX data in Microsoft 365](/microsoft-365/compliance/archive-reutersfx-data?view=o365-21vianet) | modified |
+| 11/24/2020 | [Set up a connector to archive XIP source data in Microsoft 365](/microsoft-365/compliance/archive-xip-data?view=o365-21vianet) | modified |
+| 11/24/2020 | [Disposition of content](/microsoft-365/compliance/disposition?view=o365-21vianet) | modified |
+| 11/24/2020 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
+| 11/24/2020 | [What's new in Microsoft 365 compliance](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
+| 11/24/2020 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
+| 11/24/2020 | [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
+| 11/24/2020 | [Prioritize incidents in Microsoft 365 Defender](/microsoft-365/security/mtp/incident-queue?view=o365-21vianet) | modified |
+| 11/24/2020 | [What's coming to Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-coming?view=o365-21vianet) | modified |
+| 11/25/2020 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
+| 11/25/2020 | [Troubleshooting common eDiscovery issues](/microsoft-365/compliance/ediscovery-troubleshooting-common-issues?view=o365-21vianet) | modified |
+| 11/25/2020 | [Export results in Advanced eDiscovery](/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 11/25/2020 | [Export Content Search results](/microsoft-365/compliance/export-search-results?view=o365-21vianet) | modified |
+| 11/25/2020 | Increase the download speed when exporting eDiscovery search results | removed |
+| 11/25/2020 | [Search for content](/microsoft-365/compliance/search-for-content?view=o365-21vianet) | modified |
+
+
 ## Week of November 16, 2020
 
 
@@ -758,811 +1141,3 @@
 | 11/6/2020 | [Top 12 tasks for security teams to support working from home](/microsoft-365/security/top-security-tasks-for-remote-work?view=o365-21vianet) | modified |
 | 11/6/2020 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-21vianet) | modified |
 | 11/6/2020 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
-
-
-## Week of October 26, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/26/2020 | [Set up Customer Key](/microsoft-365/compliance/customer-key-set-up?view=o365-21vianet) | modified |
-| 10/26/2020 | [Customer Lockbox Requests](/microsoft-365/compliance/customer-lockbox-requests?view=o365-21vianet) | modified |
-| 10/26/2020 | [Email encryption in Microsoft 365](/microsoft-365/compliance/email-encryption?view=o365-21vianet) | modified |
-| 10/26/2020 | [Encryption](/microsoft-365/compliance/encryption?view=o365-21vianet) | modified |
-| 10/26/2020 | [Get started with Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-21vianet) | modified |
-| 10/26/2020 | [Learn about Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-21vianet) | modified |
-| 10/26/2020 | [Using  Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using?view=o365-21vianet) | modified |
-| 10/26/2020 | [Encryption Risks and Protections](/microsoft-365/compliance/office-365-encryption-risks-and-protections?view=o365-21vianet) | modified |
-| 10/26/2020 | [Set an expiration date for email encrypted by Office 365 Advanced Message Encryption](/microsoft-365/compliance/ome-advanced-expiration?view=o365-21vianet) | modified |
-| 10/26/2020 | [Technical reference details about encryption](/microsoft-365/compliance/technical-reference-details-about-encryption?view=o365-21vianet) | modified |
-| 10/26/2020 | [Microsoft 365 SharePoint Online Data Deletion](/microsoft-365/enterprise/microsoft-365-sharepoint-online-data-deletion?view=o365-21vianet) | modified |
-| 10/26/2020 | [Session timeouts for Microsoft 365](/microsoft-365/enterprise/session-timeouts?view=o365-21vianet) | modified |
-| 10/26/2020 | [Deploy apps to devices](/microsoft-365/managed-desktop/get-started/deploy-apps?view=o365-21vianet) | modified |
-| 10/26/2020 | [Track your Microsoft Secure Score history and meet goals](/microsoft-365/security/mtp/microsoft-secure-score-history-metrics-trends?view=o365-21vianet) | modified |
-| 10/26/2020 | [What's coming to Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-coming?view=o365-21vianet) | modified |
-| 10/26/2020 | [What's new in Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-new?view=o365-21vianet) | modified |
-| 10/26/2020 | [Create and track ServiceNow tickets in the Microsoft 365 security center](/microsoft-365/security/mtp/tickets-security-center?view=o365-21vianet) | modified |
-| 10/26/2020 | [Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center](/microsoft-365/security/mtp/tickets?view=o365-21vianet) | modified |
-| 10/26/2020 | [Configure ATP anti-phishing policies](/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies?view=o365-21vianet) | modified |
-| 10/26/2020 | [Mail flow insights in the Mail flow dashboard](/microsoft-365/security/office-365-security/mail-flow-insights-v2?view=o365-21vianet) | modified |
-| 10/26/2020 | [Threat Explorer and Real-time detections](/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet) | modified |
-| 10/26/2020 | [Best practices for unauthenticated sharing](/microsoft-365/solutions/best-practices-anonymous-sharing?view=o365-21vianet) | modified |
-| 10/26/2020 | [Limit accidental exposure](/microsoft-365/solutions/share-limit-accidental-exposure?view=o365-21vianet) | modified |
-| 10/26/2020 | [Get started with Microsoft 365 Endpoint data loss prevention (preview)](/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-21vianet) | modified |
-| 10/26/2020 | [Learn about Microsoft 365 Endpoint data loss prevention (preview)](/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-21vianet) | modified |
-| 10/26/2020 | [Manage Industry news](/microsoft-365/admin/manage/manage-industry-news?view=o365-21vianet) | modified |
-| 10/26/2020 | [Microsoft Productivity Score - Privacy](/microsoft-365/admin/productivity/privacy?view=o365-worldwide) | modified |
-| 10/26/2020 | [DeviceTvmSecureConfigurationAssessment table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table?view=o365-21vianet) | modified |
-| 10/27/2020 | [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario?view=o365-21vianet) | modified |
-| 10/27/2020 | [Create retention labels and apply them in apps to retain or delete content](/microsoft-365/compliance/create-apply-retention-labels?view=o365-21vianet) | modified |
-| 10/27/2020 | [Create and configure retention policies to automatically retain or delete content](/microsoft-365/compliance/create-retention-policies?view=o365-21vianet) | modified |
-| 10/27/2020 | [Insider risk management cases](/microsoft-365/compliance/insider-risk-management-cases?view=o365-21vianet) | modified |
-| 10/27/2020 | [Insider risk management](/microsoft-365/compliance/insider-risk-management?view=o365-21vianet) | modified |
-| 10/27/2020 | [Network connectivity in the Microsoft 365 Admin Center (preview)](/microsoft-365/enterprise/office-365-network-mac-perf-overview?view=o365-21vianet) | modified |
-| 10/27/2020 | [Prepare for directory synchronization to Microsoft 365](/microsoft-365/enterprise/prepare-for-directory-synchronization?view=o365-21vianet) | modified |
-| 10/27/2020 | [Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-21vianet) | modified |
-| 10/27/2020 | [Remediate malicious email that was delivered in Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-21vianet) | modified |
-| 10/27/2020 | [Safe Documents in Office 365 ATP](/microsoft-365/security/office-365-security/safe-docs?view=o365-21vianet) | modified |
-| 10/27/2020 | [Microsoft 365 productivity illustrations](/microsoft-365/solutions/productivity-illustrations?view=o365-21vianet) | modified |
-| 10/27/2020 | [Activity Reports in the Microsoft 365 admin center](/microsoft-365/admin/activity-reports/activity-reports?view=o365-21vianet) | modified |
-| 10/27/2020 | [Microsoft 365 Reports in the admin center - Yammer groups activity report](/microsoft-365/admin/activity-reports/yammer-groups-activity-report?view=o365-21vianet) | modified |
-| 10/27/2020 | [Manage Industry news](/microsoft-365/admin/manage/manage-industry-news?view=o365-21vianet) | modified |
-| 10/27/2020 | [Get started with Microsoft 365 Endpoint data loss prevention (preview)](/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-21vianet) | modified |
-| 10/27/2020 | [What's coming to Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-coming?view=o365-21vianet) | modified |
-| 10/27/2020 | [What's new in Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-new?view=o365-21vianet) | modified |
-| 10/27/2020 | [Best practices for unauthenticated sharing](/microsoft-365/solutions/best-practices-anonymous-sharing?view=o365-21vianet) | modified |
-| 10/28/2020 | [Cortana in Microsoft 365](/microsoft-365/admin/misc/cortana-integration?view=o365-21vianet) | modified |
-| 10/28/2020 | [Set up a connector to archive Cisco Jabber on MS SQL data in Microsoft 365](/microsoft-365/compliance/archive-ciscojabberonmssql-data?view=o365-21vianet) | modified |
-| 10/28/2020 | [Set up a connector to archive Jive data in Microsoft 365](/microsoft-365/compliance/archive-jive-data?view=o365-21vianet) | modified |
-| 10/28/2020 | [Set up a connector to archive Pivot data in Microsoft 365](/microsoft-365/compliance/archive-pivot-data?view=o365-21vianet) | modified |
-| 10/28/2020 | [Set up a connector to archive webpage data in Microsoft 365](/microsoft-365/compliance/archive-webpagecapture-data?view=o365-21vianet) | modified |
-| 10/28/2020 | [Set up a connector to archive XSLT/XML data in Microsoft 365](/microsoft-365/compliance/archive-xslt-xml-data?view=o365-21vianet) | modified |
-| 10/28/2020 | [Get started with insider risk management](/microsoft-365/compliance/insider-risk-management-configure?view=o365-21vianet) | modified |
-| 10/28/2020 | [Set the password expiration policy for your organization](/microsoft-365/admin/manage/set-password-expiration-policy?view=o365-21vianet) | modified |
-| 10/28/2020 | [Search the audit log to troubleshoot common scenarios](/microsoft-365/compliance/auditing-troubleshooting-scenarios?view=o365-21vianet) | modified |
-| 10/28/2020 | [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
-| 10/28/2020 | [Get support for Microsoft Managed Desktop](/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support?view=o365-21vianet) | modified |
-| 10/28/2020 | [Create a secure guest sharing environment](/microsoft-365/solutions/create-secure-guest-sharing-environment?view=o365-21vianet) | modified |
-| 10/28/2020 | [Manage Industry news](/microsoft-365/admin/manage/manage-industry-news?view=o365-21vianet) | modified |
-| 10/28/2020 | [Microsoft Compliance Manager FAQ](/microsoft-365/compliance/compliance-manager-faq?view=o365-21vianet) | modified |
-| 10/28/2020 | [Microsoft Compliance Manager quickstart guide](/microsoft-365/compliance/compliance-manager-quickstart?view=o365-21vianet) | modified |
-| 10/28/2020 | [Get started with Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-setup?view=o365-21vianet) | modified |
-| 10/28/2020 | [Working with assessment templates in Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-templates?view=o365-21vianet) | modified |
-| 10/28/2020 | [Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager?view=o365-21vianet) | modified |
-| 10/28/2020 | [Office 365 Data Subject Requests Under the GDPR and CCPA](/microsoft-365/compliance/gdpr-dsr-office365?view=o365-21vianet) | modified |
-| 10/28/2020 | [Microsoft 365 ISO 27001 action plan, priorities for your first 30 days, 90 days, and beyond](/microsoft-365/compliance/iso-action-plan?view=o365-21vianet) | modified |
-| 10/28/2020 | [Office 365 endpoints for Germany](/microsoft-365/enterprise/microsoft-365-germany-endpoints?view=o365-21vianet) | modified |
-| 10/28/2020 | [Microsoft 365 global tenant performance optimization for China users](/microsoft-365/enterprise/microsoft-365-networking-china?view=o365-21vianet) | modified |
-| 10/28/2020 | [Office 365 US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-21vianet) | modified |
-| 10/28/2020 | [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-21vianet) | modified |
-| 10/28/2020 | [URLs and IP address ranges for Office 365 operated by 21Vianet](/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-21vianet) | modified |
-| 10/28/2020 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
-| 10/28/2020 | [Use Compliance Manager to manage improvement actions](/microsoft-365/solutions/information-protection-deploy-compliance?view=o365-21vianet) | modified |
-| 10/28/2020 | [Microsoft Productivity Score - Communication](/microsoft-365/admin/productivity/communication?view=o365-worldwide) | modified |
-| 10/28/2020 | [Microsoft Productivity Score - Privacy](/microsoft-365/admin/productivity/privacy?view=o365-worldwide) | modified |
-| 10/28/2020 | [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) | modified |
-| 10/28/2020 | [Support information for Mexico](/microsoft-365/admin/support/mexico?view=o365-21vianet) | modified |
-| 10/28/2020 | [Close your account](/microsoft-365/commerce/close-your-account?view=o365-21vianet) | modified |
-| 10/28/2020 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
-| 10/28/2020 | [Learn about retention for Yammer](/microsoft-365/compliance/retention-policies-yammer?view=o365-21vianet) | modified |
-| 10/28/2020 | [Fix issues found by the readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-fix?view=o365-21vianet) | modified |
-| 10/28/2020 | [Readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-tool?view=o365-21vianet) | modified |
-| 10/29/2020 | [Manage your data and service # < 60 chars](/microsoft-365/admin/manage/index?view=o365-21vianet) | modified |
-| 10/29/2020 | [Microsoft Productivity Score - Microsoft 365 apps health](/microsoft-365/admin/productivity/apps-health?view=o365-worldwide) | modified |
-| 10/29/2020 | [Microsoft Productivity Score - Communication](/microsoft-365/admin/productivity/communication?view=o365-worldwide) | modified |
-| 10/29/2020 | [Microsoft Productivity Score - Content collaboration](/microsoft-365/admin/productivity/content-collaboration?view=o365-worldwide) | modified |
-| 10/29/2020 | [Microsoft Productivity Score - Meetings](/microsoft-365/admin/productivity/meetings?view=o365-worldwide) | modified |
-| 10/29/2020 | [Microsoft Productivity Score - Mobility](/microsoft-365/admin/productivity/mobility?view=o365-worldwide) | modified |
-| 10/29/2020 | [Microsoft Productivity Score - Privacy](/microsoft-365/admin/productivity/privacy?view=o365-worldwide) | modified |
-| 10/29/2020 | [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) | modified |
-| 10/29/2020 | [Microsoft Productivity Score - Teamwork](/microsoft-365/admin/productivity/teamwork?view=o365-worldwide) | modified |
-| 10/29/2020 | [Increase the Recoverable Items quota for mailboxes on hold](/microsoft-365/compliance/increase-the-recoverable-quota-for-mailboxes-on-hold?view=o365-21vianet) | modified |
-| 10/29/2020 | [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-21vianet) | modified |
-| 10/29/2020 | [Learn about retention for Yammer](/microsoft-365/compliance/retention-policies-yammer?view=o365-21vianet) | modified |
-| 10/29/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
-| 10/29/2020 | [Set up an archive and deletion policy for mailboxes in your organization](/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-21vianet) | modified |
-| 10/29/2020 | [Create a classifier](/microsoft-365/contentunderstanding/create-a-classifier?view=o365-21vianet) | modified |
-| 10/29/2020 | [Tax Information](/microsoft-365/commerce/billing-and-payments/tax-information?view=o365-21vianet) | modified |
-| 10/29/2020 | [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
-| 10/29/2020 | [Insider risk management cases](/microsoft-365/compliance/insider-risk-management-cases?view=o365-21vianet) | modified |
-| 10/29/2020 | [Insider risk management](/microsoft-365/compliance/insider-risk-management?view=o365-21vianet) | modified |
-| 10/29/2020 | [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
-| 10/29/2020 | [Microsoft 365 Client App Support: Certificate-based Authentication](/microsoft-365/enterprise/microsoft-365-client-support-certificate-based-authentication?view=o365-21vianet) | modified |
-| 10/29/2020 | [Microsoft 365 Client App Support: Conditional Access](/microsoft-365/enterprise/microsoft-365-client-support-conditional-access?view=o365-21vianet) | modified |
-| 10/29/2020 | [Microsoft 365 Client App Support: Modern Authentication](/microsoft-365/enterprise/microsoft-365-client-support-modern-authentication?view=o365-21vianet) | modified |
-| 10/29/2020 | [Microsoft 365 Client App Support: Single Sign-On](/microsoft-365/enterprise/microsoft-365-client-support-single-sign-on?view=o365-21vianet) | modified |
-| 10/29/2020 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
-| 10/29/2020 | [Safe Links](/microsoft-365/security/office-365-security/atp-safe-links?view=o365-21vianet) | modified |
-| 10/29/2020 | [Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-21vianet) | modified |
-| 10/29/2020 | [Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, set up ATP, set up EOP, configure ATP, configure EOP, security configuration](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive Cisco Jabber on MS SQL data in Microsoft 365](/microsoft-365/compliance/archive-ciscojabberonmssql-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive EML data in Microsoft 365](/microsoft-365/compliance/archive-eml-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive FX Connect data in Microsoft 365](/microsoft-365/compliance/archive-fxconnect-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive Jive data in Microsoft 365](/microsoft-365/compliance/archive-jive-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive Pivot data in Microsoft 365](/microsoft-365/compliance/archive-pivot-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive Reuters Eikon data in Microsoft 365](/microsoft-365/compliance/archive-reuterseikon-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive Slack eDiscovery data in Microsoft 365](/microsoft-365/compliance/archive-slack-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive Symphony data in Microsoft 365](/microsoft-365/compliance/archive-symphony-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive text-delimited data in Microsoft 365](/microsoft-365/compliance/archive-text-delimited-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to Webex Teams data in Microsoft 365](/microsoft-365/compliance/archive-webexteams-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive webpage data in Microsoft 365](/microsoft-365/compliance/archive-webpagecapture-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive Workplace from Facebook data in Microsoft 365](/microsoft-365/compliance/archive-workplacefromfacebook-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive XSLT/XML data in Microsoft 365](/microsoft-365/compliance/archive-xslt-xml-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to archive Zoom Meetings data in Microsoft 365](/microsoft-365/compliance/archive-zoommeetings-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to import HR data to the US Government cloud](/microsoft-365/compliance/import-hr-data-us-government?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to import HR data](/microsoft-365/compliance/import-hr-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Set up a connector to import physical badging data](/microsoft-365/compliance/import-physical-badging-data?view=o365-21vianet) | modified |
-| 10/30/2020 | [Insider risk management cases](/microsoft-365/compliance/insider-risk-management-cases?view=o365-21vianet) | modified |
-| 10/30/2020 | [Insider risk management](/microsoft-365/compliance/insider-risk-management?view=o365-21vianet) | modified |
-| 10/30/2020 | [Query the data in a review set](/microsoft-365/compliance/review-set-search?view=o365-21vianet) | modified |
-| 10/30/2020 | [Microsoft 365 productivity illustrations](/microsoft-365/solutions/productivity-illustrations?view=o365-21vianet) | modified |
-| 10/30/2020 | [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
-| 10/30/2020 | [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-21vianet) | modified |
-
-
-## Week of October 19, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/19/2020 | [Create SharePoint Online sites and add users with PowerShell](/microsoft-365/enterprise/create-sharepoint-sites-and-add-users-with-powershell?view=o365-21vianet) | modified |
-| 10/19/2020 | [View email security reports in the Security & Compliance Center](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
-| 10/19/2020 | [Configure Teams with three tiers of protection](/microsoft-365/solutions/configure-teams-three-tiers-protection?view=o365-21vianet) | modified |
-| 10/19/2020 | [Insider risk management settings](/microsoft-365/compliance/insider-risk-management-settings?view=o365-21vianet) | modified |
-| 10/19/2020 | [Keyword queries and search conditions for Content Search](/microsoft-365/compliance/keyword-queries-and-search-conditions?view=o365-21vianet) | modified |
-| 10/19/2020 | [Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-21vianet) | modified |
-| 10/19/2020 | [Supported file types in Data Investigations (preview)](/microsoft-365/compliance/supported-filetypes-datainvestigations?view=o365-21vianet) | modified |
-| 10/19/2020 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-21vianet) | modified |
-| 10/19/2020 | [Enable the Report Message add-in](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-21vianet) | modified |
-| 10/19/2020 | [Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-21vianet) | modified |
-| 10/19/2020 | [Find and release quarantined messages as a user](/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user?view=o365-21vianet) | modified |
-| 10/19/2020 | [Order and precedence of email protection](/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined?view=o365-21vianet) | modified |
-| 10/19/2020 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files?view=o365-21vianet) | modified |
-| 10/19/2020 | [Office 365 Advanced Threat Protection](/microsoft-365/security/office-365-security/office-365-atp?view=o365-21vianet) | modified |
-| 10/19/2020 | [SIEM integration with Advanced Threat Protection](/microsoft-365/security/office-365-security/siem-integration-with-office-365-ti?view=o365-21vianet) | modified |
-| 10/19/2020 | [End-user spam notifications in Microsoft 365](/microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages?view=o365-21vianet) | modified |
-| 10/19/2020 | [Use mail flow rules to filter bulk email](/microsoft-365/security/office-365-security/use-transport-rules-to-configure-bulk-email-filtering?view=o365-21vianet) | modified |
-| 10/19/2020 | [User submissions policy](/microsoft-365/security/office-365-security/user-submission?view=o365-21vianet) | modified |
-| 10/19/2020 | [View mail flow reports in the Reports dashboard](/microsoft-365/security/office-365-security/view-mail-flow-reports?view=o365-21vianet) | modified |
-| 10/19/2020 | [What's new in Office 365 Advanced Threat Protection](/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?view=o365-21vianet) | modified |
-| 10/20/2020 | [Set strong password requirement for users](/microsoft-365/admin/add-users/strong-password?view=o365-21vianet) | modified |
-| 10/20/2020 | [Configure junk email settings on Exchange Online mailboxes](/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-21vianet) | modified |
-| 10/20/2020 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files?view=o365-21vianet) | modified |
-| 10/20/2020 | [Communication compliance feature reference](/microsoft-365/compliance/communication-compliance-feature-reference?view=o365-21vianet) | modified |
-| 10/20/2020 | [Create a legal hold notice](/microsoft-365/compliance/create-hold-notification?view=o365-21vianet) | modified |
-| 10/21/2020 | [Microsoft 365 Reports in the admin center - Active Users](/microsoft-365/admin/activity-reports/active-users?view=o365-21vianet) | modified |
-| 10/21/2020 | [Activity Reports in the Microsoft 365 admin center](/microsoft-365/admin/activity-reports/activity-reports?view=o365-21vianet) | modified |
-| 10/21/2020 | [Microsoft 365 Reports in the admin center - Microsoft Teams device usage](/microsoft-365/admin/activity-reports/microsoft-teams-device-usage-preview?view=o365-21vianet) | modified |
-| 10/21/2020 | [Microsoft 365 Reports in the admin center - Microsoft Teams user activity](/microsoft-365/admin/activity-reports/microsoft-teams-user-activity-preview?view=o365-21vianet) | modified |
-| 10/21/2020 | [About the Exchange Online admin role](/microsoft-365/admin/add-users/about-exchange-online-admin-role?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change a user name and email address](/microsoft-365/admin/add-users/change-a-user-name-and-email-address?view=o365-21vianet) | modified |
-| 10/21/2020 | [Let users reset their own passwords](/microsoft-365/admin/add-users/let-users-reset-passwords?view=o365-21vianet) | modified |
-| 10/21/2020 | [Restore a user](/microsoft-365/admin/add-users/restore-user?view=o365-21vianet) | modified |
-| 10/21/2020 | [Set an individual user's password to never expire](/microsoft-365/admin/add-users/set-password-to-never-expire?view=o365-21vianet) | modified |
-| 10/21/2020 | [Set strong password requirement for users](/microsoft-365/admin/add-users/strong-password?view=o365-21vianet) | modified |
-| 10/21/2020 | [About the Microsoft 365 Admin mobile app](/microsoft-365/admin/admin-overview/admin-mobile-app?view=o365-21vianet) | modified |
-| 10/21/2020 | [Admin center overview](/microsoft-365/admin/admin-overview/admin-overview?view=o365-21vianet) | modified |
-| 10/21/2020 | [How to sign up - Admin Help](/microsoft-365/admin/admin-overview/sign-up-for-office-365?view=o365-21vianet) | modified |
-| 10/21/2020 | [How to get help in the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/what-is-help?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change nameservers to set up Microsoft with 1&1 IONOS](/microsoft-365/admin/dns/change-nameservers-at-1-1-internet?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change nameservers to set up Microsoft with Amazon Web Services (AWS)](/microsoft-365/admin/dns/change-nameservers-at-aws?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change nameservers to set up Microsoft with Bluehost](/microsoft-365/admin/dns/change-nameservers-at-bluehost?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change nameservers to set up Microsoft with Google Domains](/microsoft-365/admin/dns/change-nameservers-at-google-domains?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change nameservers to set up Microsoft with Hostgator](/microsoft-365/admin/dns/change-nameservers-at-hostgator?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change nameservers to set up Microsoft with MyDomain](/microsoft-365/admin/dns/change-nameservers-at-mydomain?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change nameservers to set up Microsoft with Namecheap](/microsoft-365/admin/dns/change-nameservers-at-namecheap?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change nameservers to set up Microsoft with Network Solutions](/microsoft-365/admin/dns/change-nameservers-at-network-solutions?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at 1&1 IONOS for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-1-1-internet?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at 123-reg.co.uk for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-123-reg-co-uk?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Amazon Web Services (AWS) for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-aws?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Bluehost for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-bluehost?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Cloudflare for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-cloudflare?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Crazy Domains for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-crazy-domains?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at DNSMadeEasy for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-dnsmadeeasy?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Dreamhost for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-dreamhost?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Dyn.com for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-dyn-com?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at eNomCentral for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-enomcentral?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Freenom for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-freenom?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at GoDaddy for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-godaddy?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Google Domains for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-google-domains?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Hostgator for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-hostgator?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at MyDomain for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-mydomain?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at name.com for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-name-com?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Namecheap for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-namecheap?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Names.co.uk for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-names-co-uk?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Netregistry for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-netregistry?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Network Solutions for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-network-solutions?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at OVH for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-ovh?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Register.com for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-register-com?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Register365 for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-register365?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at web.com for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-web-com?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Wix for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-wix?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at Yahoo! Small Business for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-yahoo-small-business?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records for Azure DNS zones](/microsoft-365/admin/dns/create-dns-records-for-azure-dns-zones?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records when your domain is managed by Google (eNom)](/microsoft-365/admin/dns/create-dns-records-for-domain-managed-by-google-enom?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records for Microsoft using Windows-based DNS](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records at easyDNS for Microsoft](/microsoft-365/admin/dns/set-up-dns-records-at-easydns?view=o365-21vianet) | modified |
-| 10/21/2020 | [Update DNS records to keep your website with your current hosting provider](/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change your email address to use your custom domain](/microsoft-365/admin/email/change-email-address?view=o365-21vianet) | modified |
-| 10/21/2020 | [Configure email forwarding](/microsoft-365/admin/email/configure-email-forwarding?view=o365-21vianet) | modified |
-| 10/21/2020 | [Buy a domain name](/microsoft-365/admin/get-help-with-domains/buy-a-domain-name?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change nameservers to set up Microsoft 365 with any domain registrar](/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar?view=o365-21vianet) | modified |
-| 10/21/2020 | [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-21vianet) | modified |
-| 10/21/2020 | [DNS basics](/microsoft-365/admin/get-help-with-domains/dns-basics?view=o365-21vianet) | modified |
-| 10/21/2020 | [Using Domain Connect](/microsoft-365/admin/get-help-with-domains/domain-connect?view=o365-21vianet) | modified |
-| 10/21/2020 | [Find and fix issues after adding your domain or DNS records](/microsoft-365/admin/get-help-with-domains/find-and-fix-issues?view=o365-21vianet) | modified |
-| 10/21/2020 | [Find your domain registrar](/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar?view=o365-21vianet) | modified |
-| 10/21/2020 | [Gather the information you need to create DNS records](/microsoft-365/admin/get-help-with-domains/information-for-dns-records?view=o365-21vianet) | modified |
-| 10/21/2020 | [Remove a domain](/microsoft-365/admin/get-help-with-domains/remove-a-domain?view=o365-21vianet) | modified |
-| 10/21/2020 | [Set up your domain (host-specific instructions)](/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-21vianet) | modified |
-| 10/21/2020 | [Transfer a domain from Microsoft to another host](/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host?view=o365-21vianet) | modified |
-| 10/21/2020 | [Transfer data manually between two accounts](/microsoft-365/admin/get-help-with-domains/transfer-data-manually?view=o365-21vianet) | modified |
-| 10/21/2020 | [What is a domain?](/microsoft-365/admin/get-help-with-domains/what-is-a-domain?view=o365-21vianet) | modified |
-| 10/21/2020 | [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change your organization's address, technical contact, and more](/microsoft-365/admin/manage/change-address-contact-and-more?view=o365-21vianet) | modified |
-| 10/21/2020 | [Unassign licenses from users](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-21vianet) | modified |
-| 10/21/2020 | [Resolve license conflicts](/microsoft-365/admin/manage/resolve-license-conflicts?view=o365-21vianet) | modified |
-| 10/21/2020 | [About the Microsoft 365 admin center](/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) | modified |
-| 10/21/2020 | [Perform an internal admin takeover](/microsoft-365/admin/misc/become-the-admin?view=o365-21vianet) | modified |
-| 10/21/2020 | [ICANN Verification of Contact Information](/microsoft-365/admin/misc/icann-verification-of-contact-information?view=o365-21vianet) | modified |
-| 10/21/2020 | [Move email and data to Microsoft 365 Business Standard](/microsoft-365/admin/misc/move-email-and-data-to-office-365-business-premium?view=o365-21vianet) | modified |
-| 10/21/2020 | [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-21vianet) | modified |
-| 10/21/2020 | [Your domain may be in use if someone else in your organization signed up with it](/microsoft-365/admin/misc/sign-up-for-online-services?view=o365-21vianet) | modified |
-| 10/21/2020 | [Signing up for Office 365 with a personal email address](/microsoft-365/admin/misc/sign-up-with-a-personal-email-address?view=o365-21vianet) | modified |
-| 10/21/2020 | [Update your MX records to transition to the global Exchange Online service](/microsoft-365/admin/misc/transition-to-global-exchange-online?view=o365-21vianet) | modified |
-| 10/21/2020 | [Set up multi-factor authentication for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
-| 10/21/2020 | [Apply for a Fapiao for Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/apply-for-a-fapiao?view=o365-21vianet) | modified |
-| 10/21/2020 | [Buy or try subscriptions for Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/buy-or-try-subscriptions?view=o365-21vianet) | modified |
-| 10/21/2020 | [Create DNS records for Office 365 when you manage your DNS records](/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) | modified |
-| 10/21/2020 | [Download Office app for Android for Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/download-office-app-for-android?view=o365-21vianet) | modified |
-| 10/21/2020 | [Download Office app for iOS for Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/download-office-app-for-ios?view=o365-21vianet) | modified |
-| 10/21/2020 | [Parity between Azure Information Protection for Office 365 operated by 21Vianet and commercial offerings](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet) | modified |
-| 10/21/2020 | [What's the purpose of the Office 365 CNAME record for MSOID?](/microsoft-365/admin/services-in-china/purpose-of-cname?view=o365-21vianet) | modified |
-| 10/21/2020 | [Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/services-in-china?view=o365-21vianet) | modified |
-| 10/21/2020 | [View your bill or get a Fapiao in Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/view-your-bill-or-get-a-fapiao?view=o365-21vianet) | modified |
-| 10/21/2020 | [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain?view=o365-21vianet) | modified |
-| 10/21/2020 | [Configure Focused Inbox for everyone in your organization](/microsoft-365/admin/setup/configure-focused-inbox?view=o365-21vianet) | modified |
-| 10/21/2020 | [Customize team site for file storage and sharing - SharePoint Online](/microsoft-365/admin/setup/customize-team-site?view=o365-21vianet) | modified |
-| 10/21/2020 | [Domains FAQ](/microsoft-365/admin/setup/domains-faq?view=o365-21vianet) | modified |
-| 10/21/2020 | [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts?view=o365-21vianet) | modified |
-| 10/21/2020 | [Set up Microsoft 365 Business Standard](/microsoft-365/admin/setup/setup-business-standard?view=o365-21vianet) | modified |
-| 10/21/2020 | [Set up Microsoft 365 for business](/microsoft-365/admin/setup/setup?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Afghanistan](/microsoft-365/admin/support/afghanistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Aland Islands](/microsoft-365/admin/support/aland-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Albania](/microsoft-365/admin/support/albania?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Algeria](/microsoft-365/admin/support/algeria?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for American Samoa](/microsoft-365/admin/support/american-samoa?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Andorra](/microsoft-365/admin/support/andorra?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Angola](/microsoft-365/admin/support/angola?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Anguilla](/microsoft-365/admin/support/anguilla?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Antigua and Barbuda](/microsoft-365/admin/support/antigua-and-barbuda?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Argentina](/microsoft-365/admin/support/argentina?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Armenia](/microsoft-365/admin/support/armenia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Aruba](/microsoft-365/admin/support/aruba?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Ascension](/microsoft-365/admin/support/ascension?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Australia](/microsoft-365/admin/support/australia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Austria](/microsoft-365/admin/support/austria?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Azerbaijan](/microsoft-365/admin/support/azerbaijan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bahamas](/microsoft-365/admin/support/bahamas?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bahrain, Kingdom of](/microsoft-365/admin/support/bahrain?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bangladesh](/microsoft-365/admin/support/bangladesh?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Barbados](/microsoft-365/admin/support/barbados?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Belarus](/microsoft-365/admin/support/belarus?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Belgium](/microsoft-365/admin/support/belgium?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Belize](/microsoft-365/admin/support/belize?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Benin](/microsoft-365/admin/support/benin?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bermuda](/microsoft-365/admin/support/bermuda?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bhutan](/microsoft-365/admin/support/bhutan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bolivia](/microsoft-365/admin/support/bolivia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bonaire](/microsoft-365/admin/support/bonaire?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bosnia and Herzegovnia](/microsoft-365/admin/support/bosnia-and-herzegovina?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Botswana](/microsoft-365/admin/support/botswana?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bouvet Island](/microsoft-365/admin/support/bouvet-island?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Brazil](/microsoft-365/admin/support/brazil?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for British Virgin Islands](/microsoft-365/admin/support/british-virgin-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Brunei](/microsoft-365/admin/support/brunei?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Bulgaria](/microsoft-365/admin/support/bulgaria?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Burkina Faso](/microsoft-365/admin/support/burkina-faso?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Burundi](/microsoft-365/admin/support/burundi?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Cambodia](/microsoft-365/admin/support/cambodia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Cameroon](/microsoft-365/admin/support/cameroon?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Canada](/microsoft-365/admin/support/canada?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Cape Verde (Cabo Verde)](/microsoft-365/admin/support/cape-verde?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Cayman Islands](/microsoft-365/admin/support/cayman-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Central African Republic](/microsoft-365/admin/support/central-african-republic?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Chad](/microsoft-365/admin/support/chad?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Chile](/microsoft-365/admin/support/chile?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for China (PRC)](/microsoft-365/admin/support/china-prc?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Christmas Island](/microsoft-365/admin/support/christmas-island?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Cocos (Keeling) Islands](/microsoft-365/admin/support/cocos-keeling-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Colombia](/microsoft-365/admin/support/colombia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Comoros](/microsoft-365/admin/support/comoros?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Congo (DRC)](/microsoft-365/admin/support/congo-drc?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Congo](/microsoft-365/admin/support/congo?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Cook Islands](/microsoft-365/admin/support/cook-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Costa Rica](/microsoft-365/admin/support/costa-rica?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Côte d'Ivoire](/microsoft-365/admin/support/cote-divoire?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Croatia](/microsoft-365/admin/support/croatia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Curacao](/microsoft-365/admin/support/curacao?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Cyprus](/microsoft-365/admin/support/cyprus?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Czech Republic](/microsoft-365/admin/support/czech-republic?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Denmark](/microsoft-365/admin/support/denmark?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Djibouti](/microsoft-365/admin/support/djibouti?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Dominica](/microsoft-365/admin/support/dominica?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Dominican Republic](/microsoft-365/admin/support/dominican-republic?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Ecuador](/microsoft-365/admin/support/ecuador?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Egypt](/microsoft-365/admin/support/egypt?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for El Salvador](/microsoft-365/admin/support/el-salvador?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Equatorial Guinea](/microsoft-365/admin/support/equatorial-guinea?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Eritrea](/microsoft-365/admin/support/eritrea?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Estonia](/microsoft-365/admin/support/estonia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Ethiopia](/microsoft-365/admin/support/ethiopia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Falkland Islands](/microsoft-365/admin/support/falkland-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Faroe Islands](/microsoft-365/admin/support/faroe-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Fiji](/microsoft-365/admin/support/fiji?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Finland](/microsoft-365/admin/support/finland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for France](/microsoft-365/admin/support/france?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for French Guiana](/microsoft-365/admin/support/french-guiana?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for French Polynesia](/microsoft-365/admin/support/french-polynesia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for French Southern Territories (Antarctic Lands)](/microsoft-365/admin/support/french-southern-territories?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Gabon](/microsoft-365/admin/support/gabon?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Gambia](/microsoft-365/admin/support/gambia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Georgia](/microsoft-365/admin/support/georgia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Germany](/microsoft-365/admin/support/germany?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Ghana](/microsoft-365/admin/support/ghana?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Gibraltar](/microsoft-365/admin/support/gibraltar?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Greece](/microsoft-365/admin/support/greece?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Greenland](/microsoft-365/admin/support/greenland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Grenada](/microsoft-365/admin/support/grenada?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Guadeloupe](/microsoft-365/admin/support/guadeloupe?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Guam](/microsoft-365/admin/support/guam?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Guatemala](/microsoft-365/admin/support/guatemala?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Guernsey](/microsoft-365/admin/support/guernsey?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Guinea-Bissau](/microsoft-365/admin/support/guinea-bissau?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Guinea](/microsoft-365/admin/support/guinea?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Guyana](/microsoft-365/admin/support/guyana?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Haiti](/microsoft-365/admin/support/haiti?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Heard Island and McDonald Islands](/microsoft-365/admin/support/heard-island-and-mcdonald-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Honduras](/microsoft-365/admin/support/honduras?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Hong Kong SAR](/microsoft-365/admin/support/hong-kong-sar?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Hungary](/microsoft-365/admin/support/hungary?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Iceland](/microsoft-365/admin/support/iceland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for India](/microsoft-365/admin/support/india?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Indonesia](/microsoft-365/admin/support/indonesia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Iraq](/microsoft-365/admin/support/iraq?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Ireland](/microsoft-365/admin/support/ireland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Isle of Man](/microsoft-365/admin/support/isle-of-man?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Israel](/microsoft-365/admin/support/israel?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Italy](/microsoft-365/admin/support/italy?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Jamaica](/microsoft-365/admin/support/jamaica?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Jan Mayen](/microsoft-365/admin/support/jan-mayen?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Japan](/microsoft-365/admin/support/japan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Jersey](/microsoft-365/admin/support/jersey?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Jordan](/microsoft-365/admin/support/jordan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Kazakhstan](/microsoft-365/admin/support/kazakhstan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Kenya](/microsoft-365/admin/support/kenya?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Kiribati](/microsoft-365/admin/support/kiribati?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Korea](/microsoft-365/admin/support/korea?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Kosovo](/microsoft-365/admin/support/kosovo?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Kuwait](/microsoft-365/admin/support/kuwait?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Kyrgyzstan](/microsoft-365/admin/support/kyrgyzstan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Laos](/microsoft-365/admin/support/laos?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Latvia](/microsoft-365/admin/support/latvia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Lebanon](/microsoft-365/admin/support/lebanon?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Lesotho](/microsoft-365/admin/support/lesotho?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Liberia](/microsoft-365/admin/support/liberia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Libya](/microsoft-365/admin/support/libya?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Liechtenstein](/microsoft-365/admin/support/liechtenstein?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Lithuania](/microsoft-365/admin/support/lithuania?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Luxembourg](/microsoft-365/admin/support/luxembourg?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Macau SAR](/microsoft-365/admin/support/macau-sar?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Macedonia](/microsoft-365/admin/support/macedonia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Madagascar](/microsoft-365/admin/support/madagascar?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Malawi](/microsoft-365/admin/support/malawi?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Malaysia](/microsoft-365/admin/support/malaysia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Maldives](/microsoft-365/admin/support/maldives?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Mali](/microsoft-365/admin/support/mali?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Malta](/microsoft-365/admin/support/malta?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Marshall Islands](/microsoft-365/admin/support/marshall-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Martinique](/microsoft-365/admin/support/martinique?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Mauritania](/microsoft-365/admin/support/mauritania?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Mauritius](/microsoft-365/admin/support/mauritius?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Mayotte](/microsoft-365/admin/support/mayotte?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Mexico](/microsoft-365/admin/support/mexico?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Micronesia](/microsoft-365/admin/support/micronesia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Moldova](/microsoft-365/admin/support/moldova?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Monaco](/microsoft-365/admin/support/monaco?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Mongolia](/microsoft-365/admin/support/mongolia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Montenegro](/microsoft-365/admin/support/montenegro?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Montserrat](/microsoft-365/admin/support/montserrat?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Morocco](/microsoft-365/admin/support/morocco?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Mozambique](/microsoft-365/admin/support/mozambique?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Myanmar](/microsoft-365/admin/support/myanmar?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Namibia](/microsoft-365/admin/support/namibia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Nauru](/microsoft-365/admin/support/nauru?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Nepal](/microsoft-365/admin/support/nepal?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Netherlands](/microsoft-365/admin/support/netherlands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for New Caledonia](/microsoft-365/admin/support/new-caledonia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for New Zealand](/microsoft-365/admin/support/new-zealand?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Nicaragua](/microsoft-365/admin/support/nicaragua?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Niger](/microsoft-365/admin/support/niger?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Nigeria](/microsoft-365/admin/support/nigeria?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Niue](/microsoft-365/admin/support/niue?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Norfolk Island](/microsoft-365/admin/support/norfolk-island?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Northern Mariana Islands](/microsoft-365/admin/support/northern-mariana-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Norway](/microsoft-365/admin/support/norway?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Oman](/microsoft-365/admin/support/oman?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Pakistan](/microsoft-365/admin/support/pakistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Palau](/microsoft-365/admin/support/palau?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Palestinian Authority](/microsoft-365/admin/support/palestinian-authority?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Panama](/microsoft-365/admin/support/panama?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Papua New Guinea](/microsoft-365/admin/support/papua-new-guinea?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Paraguay](/microsoft-365/admin/support/paraguay?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Peru](/microsoft-365/admin/support/peru?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Philippines](/microsoft-365/admin/support/philippines?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Pitcairn Islands](/microsoft-365/admin/support/pitcairn-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Poland](/microsoft-365/admin/support/poland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Portugal](/microsoft-365/admin/support/portugal?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Puerto Rico](/microsoft-365/admin/support/puerto-rico?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Qatar](/microsoft-365/admin/support/qatar?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Reunion](/microsoft-365/admin/support/reunion?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Romania](/microsoft-365/admin/support/romania?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Russia](/microsoft-365/admin/support/russia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Rwanda](/microsoft-365/admin/support/rwanda?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Saba](/microsoft-365/admin/support/saba?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Saint Barthelemy](/microsoft-365/admin/support/saint-barthelemy?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Saint Lucia](/microsoft-365/admin/support/saint-lucia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Saint Martin](/microsoft-365/admin/support/saint-martin?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Saint Pierre and Miquelon](/microsoft-365/admin/support/saint-pierre-and-miquelon?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Saint Vincent and the Grenadines](/microsoft-365/admin/support/saint-vincent-and-the-grenadines?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Samoa](/microsoft-365/admin/support/samoa?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for San Marino](/microsoft-365/admin/support/san-marino?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Sao Tome and Principe](/microsoft-365/admin/support/sao-tome-and-principe?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Saudi Arabia](/microsoft-365/admin/support/saudi-arabia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Senegal](/microsoft-365/admin/support/senegal?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Serbia](/microsoft-365/admin/support/serbia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Seychelles](/microsoft-365/admin/support/seychelles?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Sierra Leone](/microsoft-365/admin/support/sierra-leone?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Singapore](/microsoft-365/admin/support/singapore?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Sint Eustatius](/microsoft-365/admin/support/sint-eustatius?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Sint Maarten](/microsoft-365/admin/support/sint-maarten?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Slovakia](/microsoft-365/admin/support/slovakia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Slovenia](/microsoft-365/admin/support/slovenia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Solomon Islands](/microsoft-365/admin/support/solomon-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Somalia](/microsoft-365/admin/support/somalia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for South Africa](/microsoft-365/admin/support/south-africa?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for South Georgia and South Sandwich Islands](/microsoft-365/admin/support/south-georgia-and-south-sandwich-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for South Sudan](/microsoft-365/admin/support/south-sudan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Spain](/microsoft-365/admin/support/spain?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Sri Lanka](/microsoft-365/admin/support/sri-lanka?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for St Helena](/microsoft-365/admin/support/st-helena?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for St Kitts & Nevis](/microsoft-365/admin/support/st-kitts-nevis?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Suriname](/microsoft-365/admin/support/suriname?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Svalbard](/microsoft-365/admin/support/svalbard?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Swaziland](/microsoft-365/admin/support/swaziland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Sweden](/microsoft-365/admin/support/sweden?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Switzerland](/microsoft-365/admin/support/switzerland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Taiwan](/microsoft-365/admin/support/taiwan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Tajikistan](/microsoft-365/admin/support/tajikistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Tanzania](/microsoft-365/admin/support/tanzania?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Thailand](/microsoft-365/admin/support/thailand?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Timor-Leste](/microsoft-365/admin/support/timor-leste?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Togo](/microsoft-365/admin/support/togo?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Tokelau](/microsoft-365/admin/support/tokelau?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Tonga](/microsoft-365/admin/support/tonga?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Trinidad and Tobago](/microsoft-365/admin/support/trinidad-and-tobago?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Tristan da Cunha](/microsoft-365/admin/support/tristan-da-cunha?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Tunisia](/microsoft-365/admin/support/tunisia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Turkey](/microsoft-365/admin/support/turkey?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Turkmenistan](/microsoft-365/admin/support/turkmenistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Turks and Caicos Islands](/microsoft-365/admin/support/turks-and-caicos-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Tuvalu](/microsoft-365/admin/support/tuvalu?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Uganda](/microsoft-365/admin/support/uganda?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Ukraine](/microsoft-365/admin/support/ukraine?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for UAE (United Arab Emirates)](/microsoft-365/admin/support/united-arab-emirates?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for United Kingdom](/microsoft-365/admin/support/united-kingdom?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for United States](/microsoft-365/admin/support/united-states?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Uruguay](/microsoft-365/admin/support/uruguay?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Uzbekistan](/microsoft-365/admin/support/uzbekistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Vanuatu](/microsoft-365/admin/support/vanuatu?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Vatican City](/microsoft-365/admin/support/vatican-city?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Venezuela](/microsoft-365/admin/support/venezuela?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Vietnam](/microsoft-365/admin/support/vietnam?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Virgin Islands, US](/microsoft-365/admin/support/virgin-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Wallis and Futuna](/microsoft-365/admin/support/wallis-and-futuna?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Yemen](/microsoft-365/admin/support/yemen?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Zambia](/microsoft-365/admin/support/zambia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Support information for Zimbabwe](/microsoft-365/admin/support/zimbabwe?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change your payment method](/microsoft-365/commerce/billing-and-payments/change-payment-method?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change your billing addresses](/microsoft-365/commerce/billing-and-payments/change-your-billing-addresses?view=o365-21vianet) | modified |
-| 10/21/2020 | [Understand your e-Invoice for Microsoft 365 for business (Taiwan)](/microsoft-365/commerce/billing-and-payments/e-invoice-of-your-subscription-in-taiwan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Manage billing profiles](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles?view=o365-21vianet) | modified |
-| 10/21/2020 | [Pay for your subscription](/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment Services Directive 2 and Strong Customer Authentication for commercial customers](/microsoft-365/commerce/billing-and-payments/psd2?view=o365-21vianet) | modified |
-| 10/21/2020 | [Understand your bill or invoice](/microsoft-365/commerce/billing-and-payments/understand-your-invoice?view=o365-21vianet) | modified |
-| 10/21/2020 | [Understand your bill or invoice for Microsoft 365 for business](/microsoft-365/commerce/billing-and-payments/understand-your-invoice2?view=o365-21vianet) | modified |
-| 10/21/2020 | [Buy or edit an add-on](/microsoft-365/commerce/buy-or-edit-an-add-on?view=o365-21vianet) | modified |
-| 10/21/2020 | [Close your account](/microsoft-365/commerce/close-your-account?view=o365-21vianet) | modified |
-| 10/21/2020 | [Enter your product key for Microsoft 365 Business Standard](/microsoft-365/commerce/enter-your-product-key?view=o365-21vianet) | modified |
-| 10/21/2020 | [Add licenses to a subscription purchased through the Volume Licensing Service Center](/microsoft-365/commerce/licenses/add-licenses-bought-through-vlsc?view=o365-21vianet) | modified |
-| 10/21/2020 | [Allotment basics](/microsoft-365/commerce/licenses/allotment-basics?view=o365-21vianet) | modified |
-| 10/21/2020 | [Manage licenses for devices](/microsoft-365/commerce/licenses/manage-licenses-for-devices?view=o365-21vianet) | modified |
-| 10/21/2020 | [Understand subscriptions and licenses in Microsoft 365 for business](/microsoft-365/commerce/licenses/subscriptions-and-licenses?view=o365-21vianet) | modified |
-| 10/21/2020 | [Manage billing accounts](/microsoft-365/commerce/manage-billing-accounts?view=o365-21vianet) | modified |
-| 10/21/2020 | [Manage software-as-a-service apps for your organization](/microsoft-365/commerce/manage-saas-apps?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Afghanistan](/microsoft-365/commerce/pay/afghanistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Albania](/microsoft-365/commerce/pay/albania?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Algeria](/microsoft-365/commerce/pay/algeria?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Angola](/microsoft-365/commerce/pay/angola?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Argentina](/microsoft-365/commerce/pay/argentina?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Armenia](/microsoft-365/commerce/pay/armenia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Australia](/microsoft-365/commerce/pay/australia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Austria](/microsoft-365/commerce/pay/austria?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Azerbaijan](/microsoft-365/commerce/pay/azerbaijan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Bahamas](/microsoft-365/commerce/pay/bahamas?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Bahrain](/microsoft-365/commerce/pay/bahrain?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Bangladesh](/microsoft-365/commerce/pay/bangladesh?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Barbados](/microsoft-365/commerce/pay/barbados?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Belarus](/microsoft-365/commerce/pay/belarus?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Belgium](/microsoft-365/commerce/pay/belgium?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Belize](/microsoft-365/commerce/pay/belize?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Bermuda](/microsoft-365/commerce/pay/bermuda?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Bolivia](/microsoft-365/commerce/pay/bolivia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Bosnia and Herzegovina](/microsoft-365/commerce/pay/bosnia-and-herzegovina?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Botswana](/microsoft-365/commerce/pay/botswana?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Brazil](/microsoft-365/commerce/pay/brazil?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Brunei](/microsoft-365/commerce/pay/brunei?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Bulgaria](/microsoft-365/commerce/pay/bulgaria?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Cameroon](/microsoft-365/commerce/pay/cameroon?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Canada](/microsoft-365/commerce/pay/canada?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Cape Verde](/microsoft-365/commerce/pay/cape-verde?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Cayman Islands](/microsoft-365/commerce/pay/cayman-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Chile](/microsoft-365/commerce/pay/chile?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for China (PRC)](/microsoft-365/commerce/pay/china-prc?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Colombia](/microsoft-365/commerce/pay/colombia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Costa Rica](/microsoft-365/commerce/pay/costa-rica?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Côte d'Ivoire](/microsoft-365/commerce/pay/cote-divoire?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Croatia](/microsoft-365/commerce/pay/croatia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Curacao](/microsoft-365/commerce/pay/curacao?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Cyprus](/microsoft-365/commerce/pay/cyprus?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Czech Republic](/microsoft-365/commerce/pay/czech-republic?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Democratic Republic of Congo](/microsoft-365/commerce/pay/democratic-republic-of-congo?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Denmark](/microsoft-365/commerce/pay/denmark?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Dominican Republic](/microsoft-365/commerce/pay/dominican-republic?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Ecuador](/microsoft-365/commerce/pay/ecuador?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Egypt](/microsoft-365/commerce/pay/egypt?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for El Salvador](/microsoft-365/commerce/pay/el-salvador?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Estonia](/microsoft-365/commerce/pay/estonia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Ethiopia](/microsoft-365/commerce/pay/ethiopia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Faroe Islands](/microsoft-365/commerce/pay/faroe-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Fiji](/microsoft-365/commerce/pay/fiji?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Finland](/microsoft-365/commerce/pay/finland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for France](/microsoft-365/commerce/pay/france?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for French Guiana](/microsoft-365/commerce/pay/french-guiana?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Georgia](/microsoft-365/commerce/pay/georgia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Germany](/microsoft-365/commerce/pay/germany?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Ghana](/microsoft-365/commerce/pay/ghana?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Greece](/microsoft-365/commerce/pay/greece?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Grenada](/microsoft-365/commerce/pay/grenada?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Guadeloupe](/microsoft-365/commerce/pay/guadeloupe?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Guam](/microsoft-365/commerce/pay/guam?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Guatemala](/microsoft-365/commerce/pay/guatemala?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Guyana](/microsoft-365/commerce/pay/guyana?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Haiti](/microsoft-365/commerce/pay/haiti?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Honduras](/microsoft-365/commerce/pay/honduras?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Hong Kong](/microsoft-365/commerce/pay/hong-kong?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Hungary](/microsoft-365/commerce/pay/hungary?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Iceland](/microsoft-365/commerce/pay/iceland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for India](/microsoft-365/commerce/pay/india?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Indonesia](/microsoft-365/commerce/pay/indonesia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Iraq](/microsoft-365/commerce/pay/iraq?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Ireland](/microsoft-365/commerce/pay/ireland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Israel](/microsoft-365/commerce/pay/israel?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Italy](/microsoft-365/commerce/pay/italy?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Jamaica](/microsoft-365/commerce/pay/jamaica?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Jordan](/microsoft-365/commerce/pay/jordan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Kazakhstan](/microsoft-365/commerce/pay/kazakhstan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Kenya](/microsoft-365/commerce/pay/kenya?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Korea](/microsoft-365/commerce/pay/korea?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Kuwait](/microsoft-365/commerce/pay/kuwait?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Kyrgyzstan](/microsoft-365/commerce/pay/kyrgyzstan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Latvia](/microsoft-365/commerce/pay/latvia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Lebanon](/microsoft-365/commerce/pay/lebanon?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Libya](/microsoft-365/commerce/pay/libya?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Liechtenstein](/microsoft-365/commerce/pay/liechtenstein?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Lithuania](/microsoft-365/commerce/pay/lithuania?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Luxembourg](/microsoft-365/commerce/pay/luxembourg?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Macao](/microsoft-365/commerce/pay/macao?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Macedonia, Former Yugoslav Republic of](/microsoft-365/commerce/pay/macedonia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Malaysia](/microsoft-365/commerce/pay/malaysia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Malta](/microsoft-365/commerce/pay/malta?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Mauritius](/microsoft-365/commerce/pay/mauritius?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Mexico](/microsoft-365/commerce/pay/mexico?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Moldova](/microsoft-365/commerce/pay/moldova?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Monaco](/microsoft-365/commerce/pay/monaco?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Mongolia](/microsoft-365/commerce/pay/mongolia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Montenegro](/microsoft-365/commerce/pay/montenegro?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Morocco](/microsoft-365/commerce/pay/morocco?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Namibia](/microsoft-365/commerce/pay/namibia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Nepal](/microsoft-365/commerce/pay/nepal?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Netherlands](/microsoft-365/commerce/pay/netherlands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for New Zealand](/microsoft-365/commerce/pay/new-zealand?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Nicaragua](/microsoft-365/commerce/pay/nicaragua?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Nigeria](/microsoft-365/commerce/pay/nigeria?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Norway](/microsoft-365/commerce/pay/norway?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Oman](/microsoft-365/commerce/pay/oman?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Pakistan](/microsoft-365/commerce/pay/pakistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Palestinian Authority](/microsoft-365/commerce/pay/palestinian-authority?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Panama](/microsoft-365/commerce/pay/panama?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Paraguay](/microsoft-365/commerce/pay/paraguay?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Peru](/microsoft-365/commerce/pay/peru?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Philippines](/microsoft-365/commerce/pay/philippines?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Poland](/microsoft-365/commerce/pay/poland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Portugal](/microsoft-365/commerce/pay/portugal?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Puerto Rico](/microsoft-365/commerce/pay/puerto-rico?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Qatar](/microsoft-365/commerce/pay/qatar?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Romania](/microsoft-365/commerce/pay/romania?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Russia](/microsoft-365/commerce/pay/russia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Rwanda](/microsoft-365/commerce/pay/rwanda?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Saint Kitts and Nevis](/microsoft-365/commerce/pay/saint-kitts-and-nevis?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Saint Lucia](/microsoft-365/commerce/pay/saint-lucia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Saint Vincent and the Grenadines](/microsoft-365/commerce/pay/saint-vincent-and-the-grenadines?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Saudi Arabia](/microsoft-365/commerce/pay/saudi-arabia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Senegal](/microsoft-365/commerce/pay/senegal?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Serbia](/microsoft-365/commerce/pay/serbia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Singapore](/microsoft-365/commerce/pay/singapore?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Slovakia](/microsoft-365/commerce/pay/slovakia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Slovenia](/microsoft-365/commerce/pay/slovenia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for South Africa](/microsoft-365/commerce/pay/south-africa?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Spain](/microsoft-365/commerce/pay/spain?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Sri Lanka](/microsoft-365/commerce/pay/sri-lanka?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Suriname](/microsoft-365/commerce/pay/suriname?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Sweden](/microsoft-365/commerce/pay/sweden?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Switzerland](/microsoft-365/commerce/pay/switzerland?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Taiwan](/microsoft-365/commerce/pay/taiwan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Tajikistan](/microsoft-365/commerce/pay/tajikistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Tanzania](/microsoft-365/commerce/pay/tanzania?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Thailand](/microsoft-365/commerce/pay/thailand?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Trinidad and Tobago](/microsoft-365/commerce/pay/trinidad-and-tobago?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Tunisia](/microsoft-365/commerce/pay/tunisia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Turkey](/microsoft-365/commerce/pay/turkey?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Turkmenistan](/microsoft-365/commerce/pay/turkmenistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Uganda](/microsoft-365/commerce/pay/uganda?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Ukraine](/microsoft-365/commerce/pay/ukraine?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for United Arab Emirates](/microsoft-365/commerce/pay/united-arab-emirates?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for United Kingdom](/microsoft-365/commerce/pay/united-kingdom?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for United States](/microsoft-365/commerce/pay/united-states?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Uruguay](/microsoft-365/commerce/pay/uruguay?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Uzbekistan](/microsoft-365/commerce/pay/uzbekistan?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Venezuela](/microsoft-365/commerce/pay/venezuela?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Vietnam](/microsoft-365/commerce/pay/vietnam?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Virgin Islands, US](/microsoft-365/commerce/pay/virgin-islands?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Yemen](/microsoft-365/commerce/pay/yemen?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Zambia](/microsoft-365/commerce/pay/zambia?view=o365-21vianet) | modified |
-| 10/21/2020 | [Payment information for Zimbabwe](/microsoft-365/commerce/pay/zimbabwe?view=o365-21vianet) | modified |
-| 10/21/2020 | [Problems with your Microsoft 365 for business product key?](/microsoft-365/commerce/product-key-errors-and-solutions?view=o365-21vianet) | modified |
-| 10/21/2020 | [Enter your product key purchased from Microsoft Open](/microsoft-365/commerce/purchases-from-microsoft-open?view=o365-21vianet) | modified |
-| 10/21/2020 | [Back up data before changing plans](/microsoft-365/commerce/subscriptions/back-up-data-before-switching-plans?view=o365-21vianet) | modified |
-| 10/21/2020 | [Change Microsoft 365 for business plans manually](/microsoft-365/commerce/subscriptions/change-plans-manually?view=o365-21vianet) | modified |
-| 10/21/2020 | [Manage self-service sign-up subscriptions](/microsoft-365/commerce/subscriptions/manage-self-service-signup-subscriptions?view=o365-21vianet) | modified |
-| 10/21/2020 | [Move users to a different subscription](/microsoft-365/commerce/subscriptions/move-users-different-subscription?view=o365-21vianet) | modified |
-| 10/21/2020 | [Switch Microsoft 365 for business plans manually](/microsoft-365/commerce/subscriptions/switch-plans-manually?view=o365-21vianet) | modified |
-| 10/21/2020 | [Switch to a different Microsoft 365 for business plan](/microsoft-365/commerce/subscriptions/switch-to-a-different-plan?view=o365-21vianet) | modified |
-| 10/21/2020 | [What happens to my data and access when my subscription ends?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-21vianet) | modified |
-| 10/21/2020 | [Why can't I switch Microsoft 365 for business plans?](/microsoft-365/commerce/subscriptions/why-can-t-i-switch-plans?view=o365-21vianet) | modified |
-| 10/21/2020 | [Understand the proposal workflow](/microsoft-365/commerce/understand-proposal-workflow?view=o365-21vianet) | modified |
-| 10/21/2020 | [Use your promo code to reduce price](/microsoft-365/commerce/use-a-promo-code?view=o365-21vianet) | modified |
-| 10/21/2020 | [Get started with trainable classifiers (preview)](/microsoft-365/compliance/classifier-get-started-with?view=o365-21vianet) | modified |
-| 10/21/2020 | [Use sensitivity labels as conditions in DLP policies (preview)](/microsoft-365/compliance/dlp-sensitivity-label-as-condition?view=o365-21vianet) | modified |
-| 10/21/2020 | [Use Data loss prevention policies for non-Microsoft cloud apps (preview)](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps?view=o365-21vianet) | modified |
-| 10/21/2020 | [Manage mailbox auditing](/microsoft-365/compliance/enable-mailbox-auditing?view=o365-21vianet) | modified |
-| 10/21/2020 | [Using  Endpoint data loss prevention (preview)](/microsoft-365/compliance/endpoint-dlp-using?view=o365-21vianet) | modified |
-| 10/21/2020 | [Import non-Microsoft 365 content for Advanced eDiscovery analysis](/microsoft-365/compliance/import-non-office-365-data-into-advanced-ediscovery?view=o365-21vianet) | modified |
-| 10/21/2020 | [Learn about Information barriers](/microsoft-365/compliance/information-barriers?view=o365-21vianet) | modified |
-| 10/21/2020 | [Advanced eDiscovery](/microsoft-365/compliance/office-365-advanced-ediscovery?view=o365-21vianet) | modified |
-| 10/21/2020 | [Microsoft 365 for enterprise for the Contoso Corporation](/microsoft-365/enterprise/contoso-case-study?view=o365-21vianet) | modified |
-| 10/21/2020 | [Identity for the Contoso Corporation](/microsoft-365/enterprise/contoso-identity?view=o365-21vianet) | modified |
-| 10/21/2020 | [Information protection for the Contoso Corporation](/microsoft-365/enterprise/contoso-info-protect?view=o365-21vianet) | modified |
-| 10/21/2020 | [Contoso IT infrastructure and business needs](/microsoft-365/enterprise/contoso-infra-needs?view=o365-21vianet) | modified |
-| 10/21/2020 | [Mobile device management for Contoso](/microsoft-365/enterprise/contoso-mdm?view=o365-21vianet) | modified |
-| 10/21/2020 | [Networking for the Contoso Corporation](/microsoft-365/enterprise/contoso-networking?view=o365-21vianet) | modified |
-| 10/21/2020 | [Microsoft 365 Apps for enterprise deployment for Contoso](/microsoft-365/enterprise/contoso-o365pp?view=o365-21vianet) | modified |
-| 10/21/2020 | [Overview of Contoso Corporation](/microsoft-365/enterprise/contoso-overview?view=o365-21vianet) | modified |
-| 10/21/2020 | [Summary of Microsoft 365 for enterprise security for the Contoso Corporation](/microsoft-365/enterprise/contoso-security-summary?view=o365-21vianet) | modified |
-| 10/21/2020 | [Configure Microsoft 365 Multi-Geo eDiscovery](/microsoft-365/enterprise/multi-geo-ediscovery-configuration?view=o365-21vianet) | modified |
-| 10/21/2020 | [Advanced hunting query best practices in Microsoft Threat Protection](/microsoft-365/security/mtp/advanced-hunting-best-practices?view=o365-21vianet) | modified |
-| 10/21/2020 | [Handle errors in advanced hunting for Microsoft Threat Protection](/microsoft-365/security/mtp/advanced-hunting-errors?view=o365-21vianet) | modified |
-| 10/21/2020 | [Advanced hunting quotas and usage parameters in Microsoft Threat Protection](/microsoft-365/security/mtp/advanced-hunting-limits?view=o365-21vianet) | modified |
-| 10/21/2020 | [Secure email recommended policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/secure-email-recommended-policies?view=o365-21vianet) | modified |
-| 10/21/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
-| 10/21/2020 | [View licensed and unlicensed Microsoft 365 users with PowerShell](/microsoft-365/enterprise/view-licensed-and-unlicensed-users-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/21/2020 | [Limit sharing in Microsoft 365](/microsoft-365/solutions/microsoft-365-limit-sharing?view=o365-21vianet) | modified |
-| 10/21/2020 | [Communication compliance feature reference](/microsoft-365/compliance/communication-compliance-feature-reference?view=o365-21vianet) | modified |
-| 10/21/2020 | [Quick tasks for getting started with Microsoft 365 compliance](/microsoft-365/compliance/compliance-quick-tasks?view=o365-21vianet) | modified |
-| 10/21/2020 | [Insider risk management settings](/microsoft-365/compliance/insider-risk-management-settings?view=o365-21vianet) | modified |
-| 10/21/2020 | [Prevent guest users from being added to a specific group](/microsoft-365/solutions/per-group-guest-access?view=o365-21vianet) | modified |
-| 10/21/2020 | [Turn off strong password requirements for users](/microsoft-365/admin/add-users/strong-password?view=o365-21vianet) | modified |
-| 10/21/2020 | [Overview of inactive mailboxes](/microsoft-365/compliance/inactive-mailboxes-in-office-365?view=o365-21vianet) | modified |
-| 10/21/2020 | [Recover an inactive mailbox](/microsoft-365/compliance/recover-an-inactive-mailbox?view=o365-21vianet) | modified |
-| 10/21/2020 | [Restore an inactive mailbox](/microsoft-365/compliance/restore-an-inactive-mailbox?view=o365-21vianet) | modified |
-| 10/21/2020 | [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-21vianet) | modified |
-| 10/21/2020 | [Assign roles to Microsoft 365 user accounts with PowerShell](/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/21/2020 | [Client and server software roadmap for Microsoft 365](/microsoft-365/enterprise/client-server-software-roadmap-microsoft-365?view=o365-21vianet) | modified |
-| 10/21/2020 | [Manage Microsoft 365 with PowerShell](/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/21/2020 | [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview?view=o365-21vianet) | modified |
-| 10/21/2020 | [Tenant roadmap for Microsoft 365](/microsoft-365/enterprise/tenant-roadmap-microsoft-365?view=o365-21vianet) | modified |
-| 10/21/2020 | [Microsoft Managed Desktop operations and monitoring](/microsoft-365/managed-desktop/service-description/operations-and-monitoring?view=o365-21vianet) | modified |
-| 10/21/2020 | [Isolated team for a top-secret project of the Contoso Corporation](/microsoft-365/solutions/contoso-team-for-top-secret-project?view=o365-21vianet) | modified |
-| 10/21/2020 | [Deploy information protection for data privacy regulations with Microsoft 365](/microsoft-365/solutions/information-protection-deploy?view=o365-21vianet) | modified |
-| 10/22/2020 | [Restore a deleted group](/microsoft-365/admin/create-groups/restore-deleted-group?view=o365-21vianet) | modified |
-| 10/22/2020 | [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-21vianet) | modified |
-| 10/22/2020 | [Create a custom sensitive information type in the Security & Compliance Center](/microsoft-365/compliance/create-a-custom-sensitive-information-type?view=o365-21vianet) | modified |
-| 10/22/2020 | [Create a keyword dictionary](/microsoft-365/compliance/create-a-keyword-dictionary?view=o365-21vianet) | modified |
-| 10/22/2020 | [Create custom sensitive information types with Exact Data Match](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification?view=o365-21vianet) | modified |
-| 10/22/2020 | [Create and configure retention policies to automatically retain or delete content](/microsoft-365/compliance/create-retention-policies?view=o365-21vianet) | modified |
-| 10/22/2020 | [Custom sensitive information types for DLP](/microsoft-365/compliance/custom-sensitive-info-types?view=o365-21vianet) | modified |
-| 10/22/2020 | [Microsoft 365 compliance support for double byte character set release notes (preview)](/microsoft-365/compliance/mip-dbcs-relnotes?view=o365-21vianet) | modified |
-| 10/22/2020 | [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/microsoft-365/compliance/prepare-tls-1.2-in-office-365?view=o365-21vianet) | modified |
-| 10/22/2020 | [TLS 1.0 and 1.1 deprecation for Office 365](/microsoft-365/compliance/tls-1.0-and-1.1-deprecation-for-office-365?view=o365-21vianet) | modified |
-| 10/22/2020 | [View the data governance reports](/microsoft-365/compliance/view-the-data-governance-reports?view=o365-21vianet) | modified |
-| 10/22/2020 | [Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-21vianet) | modified |
-| 10/22/2020 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
-| 10/22/2020 | [Create a secure guest sharing environment](/microsoft-365/solutions/create-secure-guest-sharing-environment?view=o365-21vianet) | modified |
-| 10/22/2020 | [Steps to configure threat protection capabilities across Microsoft 365](/microsoft-365/solutions/deploy-threat-protection-configure?view=o365-21vianet) | modified |
-| 10/22/2020 | [Step 4. Deploy endpoint management for your devices, PCs, and other endpoints](/microsoft-365/solutions/empower-people-to-work-remotely-manage-endpoints?view=o365-21vianet) | modified |
-| 10/22/2020 | [Step 2. Provide remote access to on-premises apps and services](/microsoft-365/solutions/empower-people-to-work-remotely-remote-access?view=o365-21vianet) | modified |
-| 10/22/2020 | [Step 1. Increase sign-in security for remote workers with MFA](/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in?view=o365-21vianet) | modified |
-| 10/22/2020 | [Step 3: Deploy security and compliance for remote workers](/microsoft-365/solutions/empower-people-to-work-remotely-security-compliance?view=o365-21vianet) | modified |
-| 10/22/2020 | [Step 5. Deploy remote worker productivity apps and services](/microsoft-365/solutions/empower-people-to-work-remotely-teams-productivity-apps?view=o365-21vianet) | modified |
-| 10/22/2020 | [Step 6: Train remote workers and address usage feedback](/microsoft-365/solutions/empower-people-to-work-remotely-train-monitor-usage?view=o365-21vianet) | modified |
-| 10/22/2020 | [Empower remote workers with Microsoft 365](/microsoft-365/solutions/empower-people-to-work-remotely?view=o365-21vianet) | modified |
-| 10/22/2020 | [End of lifecycle options for groups, teams, and Yammer](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer?view=o365-21vianet) | modified |
-| 10/22/2020 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-21vianet) | modified |
-| 10/22/2020 | [Communication compliance feature reference](/microsoft-365/compliance/communication-compliance-feature-reference?view=o365-21vianet) | modified |
-| 10/22/2020 | [Create retention labels and apply them in apps to retain or delete content](/microsoft-365/compliance/create-apply-retention-labels?view=o365-21vianet) | modified |
-| 10/23/2020 | [Add or remove members from Microsoft 365 groups](/microsoft-365/admin/create-groups/add-or-remove-members-from-groups?view=o365-21vianet) | modified |
-| 10/23/2020 | [Create a group in the admin center](/microsoft-365/admin/create-groups/create-groups?view=o365-21vianet) | modified |
-| 10/23/2020 | [Manage a group in the admin center](/microsoft-365/admin/create-groups/manage-groups?view=o365-21vianet) | modified |
-| 10/23/2020 | [Manage guest access in Microsoft 365 groups](/microsoft-365/admin/create-groups/manage-guest-access-in-groups?view=o365-21vianet) | modified |
-| 10/23/2020 | [Overview of Microsoft 365 Groups for administrators](/microsoft-365/admin/create-groups/office-365-groups?view=o365-21vianet) | modified |
-| 10/23/2020 | [Restore a deleted Microsoft 365 group](/microsoft-365/admin/create-groups/restore-deleted-group?view=o365-21vianet) | modified |
-| 10/23/2020 | [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies?view=o365-21vianet) | modified |
-| 10/23/2020 | [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
-| 10/23/2020 | [Message Encryption (OME) version comparison](/microsoft-365/compliance/ome-version-comparison?view=o365-21vianet) | modified |
-| 10/23/2020 | [Learn about retention for Exchange](/microsoft-365/compliance/retention-policies-exchange?view=o365-21vianet) | modified |
-| 10/23/2020 | [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-21vianet) | modified |
-| 10/23/2020 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
-| 10/23/2020 | [Learn about retention for Yammer](/microsoft-365/compliance/retention-policies-yammer?view=o365-21vianet) | modified |
-| 10/23/2020 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
-| 10/23/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
-| 10/23/2020 | [Assign roles to Microsoft 365 user accounts with PowerShell](/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/23/2020 | [Block Microsoft 365 user accounts with PowerShell](/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/23/2020 | [Cmdlet references for Microsoft 365 services](/microsoft-365/enterprise/cmdlet-references-for-microsoft-365-services?view=o365-21vianet) | modified |
-| 10/23/2020 | [Configure Microsoft 365 user account properties with PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/23/2020 | [Connect to all Microsoft 365 services in a single PowerShell window](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window?view=o365-21vianet) | modified |
-| 10/23/2020 | [Connect to Microsoft 365 with PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/23/2020 | [Microsoft 365 for enterprise for the Contoso Corporation](/microsoft-365/enterprise/contoso-case-study?view=o365-21vianet) | modified |
-| 10/23/2020 | [Identity for the Contoso Corporation](/microsoft-365/enterprise/contoso-identity?view=o365-21vianet) | modified |
-| 10/23/2020 | [Information protection for the Contoso Corporation](/microsoft-365/enterprise/contoso-info-protect?view=o365-21vianet) | modified |
-| 10/23/2020 | [Contoso IT infrastructure and business needs](/microsoft-365/enterprise/contoso-infra-needs?view=o365-21vianet) | modified |
-| 10/23/2020 | [Mobile device management for Contoso](/microsoft-365/enterprise/contoso-mdm?view=o365-21vianet) | modified |
-| 10/23/2020 | [Networking for the Contoso Corporation](/microsoft-365/enterprise/contoso-networking?view=o365-21vianet) | modified |
-| 10/23/2020 | [Microsoft 365 Apps for enterprise deployment for Contoso](/microsoft-365/enterprise/contoso-o365pp?view=o365-21vianet) | modified |
-| 10/23/2020 | [Overview of Contoso Corporation](/microsoft-365/enterprise/contoso-overview?view=o365-21vianet) | modified |
-| 10/23/2020 | [Summary of Microsoft 365 for enterprise security for the Contoso Corporation](/microsoft-365/enterprise/contoso-security-summary?view=o365-21vianet) | modified |
-| 10/23/2020 | [Windows 10 Enterprise deployment for Contoso](/microsoft-365/enterprise/contoso-win10?view=o365-21vianet) | modified |
-| 10/23/2020 | [Create Microsoft 365 user accounts with PowerShell](/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/23/2020 | [Delete Microsoft 365 user accounts with PowerShell](/microsoft-365/enterprise/delete-and-restore-user-accounts-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/23/2020 | [Get started with PowerShell for Microsoft 365](/microsoft-365/enterprise/getting-started-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/23/2020 | [Microsoft 365 community resources for PowerShell](/microsoft-365/enterprise/microsoft-365-powershell-community-resources?view=o365-21vianet) | modified |
-| 10/23/2020 | [Tenant roadmap for Microsoft 365](/microsoft-365/enterprise/tenant-roadmap-microsoft-365?view=o365-21vianet) | modified |
-| 10/23/2020 | [Use PowerShell to create reports for Microsoft 365](/microsoft-365/enterprise/use-windows-powershell-to-create-reports-in-microsoft-365?view=o365-21vianet) | modified |
-| 10/23/2020 | [View Microsoft 365 user accounts with PowerShell](/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/23/2020 | [Why you need to use PowerShell for Microsoft 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell?view=o365-21vianet) | modified |
-| 10/23/2020 | [Microsoft Managed Desktop archived devices](/microsoft-365/managed-desktop/service-description/archived-device-list?view=o365-21vianet) | modified |
-| 10/23/2020 | [Top scoring in industry tests - Microsoft Threat Protection](/microsoft-365/security/mtp/top-scoring-industry-tests?view=o365-21vianet) | modified |
-| 10/23/2020 | [Anti-spam message headers](/microsoft-365/security/office-365-security/anti-spam-message-headers?view=o365-21vianet) | modified |
-| 10/23/2020 | [Create retention labels and apply them in apps to retain or delete content](/microsoft-365/compliance/create-apply-retention-labels?view=o365-21vianet) | modified |
-| 10/23/2020 | [Create and configure retention policies to automatically retain or delete content](/microsoft-365/compliance/create-retention-policies?view=o365-21vianet) | modified |
-| 10/23/2020 | [Records Management in Microsoft 365](/microsoft-365/compliance/records-management?view=o365-21vianet) | modified |
-| 10/23/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |

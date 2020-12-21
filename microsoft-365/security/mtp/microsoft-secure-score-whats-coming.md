@@ -29,23 +29,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
-### December 2020
-Adding 6 accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
-
-- Set 'Minimum password length' to '14 or more characters'
-- Set 'Enforce password history' to '24 or more password(s)'
-- Set 'Maximum password age' to '60 or fewer days, but not 0'
-- Set 'Minimum password age' to '1 or more day(s)'
-- Disable the built-in Administrator account
-- Disable the built-in Guest account
-
-### November 2020
-
-#### Removing the ability to create ServiceNow tickets through Secure Score 
-
-The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** will be removed.
-
-The preview period for the ServiceNow connector is ending. This capability will no longer be available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
+### No Planned Changes
 
 ## Related resources
 

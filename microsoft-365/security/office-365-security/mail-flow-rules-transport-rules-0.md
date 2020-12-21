@@ -63,7 +63,7 @@ For more information about mail flow rule actions that are available in standalo
 
 - **Properties**: Specify other rules settings that aren't conditions, exceptions or actions. For example, when the rule should be applied, whether to enforce or test the rule, and the time period when the rule is active.
 
-  For more information, see the [Mail flow rule properties](#mail-flow-rule-properties) section in this topic.
+  For more information, see the [Mail flow rule properties](#mail-flow-rule-properties) section in this article.
 
 ### Multiple conditions, exceptions, and actions
 

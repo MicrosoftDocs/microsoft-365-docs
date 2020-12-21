@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive CellTrust data from Globanet to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
 ---
 
-# Set up a connector to archive CellTrust data (preview)
+# Set up a connector to archive CellTrust data
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from the CellTrust platform to user mailboxes in your Microsoft 365 organization. Globanet provides a [CellTrust](https://globanet.com/celltrust/) connector that's configured to capture items from the third-party data source (on a regular basis) and import those items to Microsoft 365. The connector converts the content of SMS messages from CellTrust accounts to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 
@@ -66,11 +66,7 @@ To map users and complete the connector set up in the Microsoft 365 compliance c
 
 1. On the **Map CellTrust users to Microsoft 365 users** page, enable automatic user mapping. The CellTrust items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
 
-2. On the **Admin Consent** page, click the **Provide Consent** button. You will be redirected to the Microsoft site. Click **Accept** to provide the consent.
-
-   Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To provide admin consent, you must be signed in with the credentials of a Microsoft 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using global admin credentials to accept the request.
-
-3. Click **Next**, review your settings, and go to the **Data connectors** page to see the progress of the import process for the new connector.
+2. Click **Next**, review your settings, and go to the **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Step 4: Monitor the CellTrust connector
 
