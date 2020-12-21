@@ -44,7 +44,7 @@ This table shows the differences between Microsoft 365 Business Premium and Offi
 | OneDrive for Business    | 1 TB storage limit per user    | Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager, MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Threat Protection**        | | | 
 | Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
