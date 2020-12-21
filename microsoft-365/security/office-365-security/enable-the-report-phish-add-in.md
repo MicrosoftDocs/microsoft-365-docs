@@ -28,7 +28,7 @@ description: "Learn how to enable the Report Phishing add-in for Outlook and Out
 
 The Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App) enable people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
 
-You can choose to install one or both of these add-ins depending on what your individual or organizational message reporting needs are:
+You can choose to install one, or both, of the available add-ins:
 
 - **Report Message add-in**: The Report Message add-in provides options to report messages as Junk, Not Junk, and Phishing. For more information about enabling the Report Message add-in, see [Enable the report message add-in](enable-the-report-message-add-in.md).
 - **Report Phishing add-in**: The Report Phishing add-in provides the option to report messages as Phishing only. To get started with the Report Phishing add-in, see the [What do you need to know before you begin](#what-do-you-need-to-know-before-you-begin) section in this article.
@@ -78,7 +78,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 - In Outlook on the web, the icon looks like this:
 
-  ![Outlook on the web Report Phishing add-in icon](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook on the web Report Phishing add-in icon](../../media/OWA-ReportPhishing.png)
 
 ## Get and enable the Report Phishing add-in for your organization
 
@@ -129,7 +129,7 @@ People who have the add-in assigned to them will see the following icons:
 
 - In Outlook on the web, the icon looks like this:
 
-  ![Outlook on the Web Report Phishing Add-in icon](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook on the Web Report Phishing Add-in icon](../../media/OWA-ReportPhishing.png)
 
 When you notify users about the Report Phishing add-in, include a link to [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
