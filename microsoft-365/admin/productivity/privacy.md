@@ -72,7 +72,7 @@ You can also opt out of the people experiences area of Productivity Score. If yo
 
 To opt put:
 
-1. In the admin center, go to the  **Settings**  >  **Org Settings**, and **Productivity Score**
+1. In the admin center, go to **Settings**  >  **Org Settings** > **Productivity Score**.
 2. Un-check the box that says  **Allow Microsoft 365 usage data to be used for people experiences insights**. To understand how to modify data-sharing settings for Endpoint Analytics in the Intune configuration manager, select **Learn more**.
 3. Select  **Save**.
 
