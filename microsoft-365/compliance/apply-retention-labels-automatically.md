@@ -50,8 +50,8 @@ Use the following instructions for the two admin steps.
 > [!NOTE]
 > Auto-policies use service-side labeling with conditions to automatically apply retention labels. You can also automatically apply a retention label with a label policy when you do the following: 
 >
-> Apply a retention label to a document understanding model in SharePoint Syntex
-> Apply a default retention label for SharePoint and Outlook
+> - Apply a retention label to a document understanding model in SharePoint Syntex
+> - Apply a default retention label for SharePoint and Outlook
 >- Apply a retention label to email by using Outlook rules
 >
 > For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-labels.md).
