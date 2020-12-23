@@ -187,7 +187,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 ## Next steps
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
 
-- [Using Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
 
