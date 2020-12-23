@@ -66,7 +66,7 @@ To require that all users sign in with a second form of ID:
 
 ## Set up baseline policies
 
-1. Go to the [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Conditional Access** to create a **new policy**.
+1. Go to the [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Security** \> **Conditional Access** to create a **new policy**.
 
 See the following specific instructions for each policy: <br>
     - [Require MFA for admins](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
