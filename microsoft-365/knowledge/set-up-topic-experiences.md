@@ -15,6 +15,12 @@ description: "Learn how to set up topic experiences in Microsoft 365"
 
 # Set up topic experiences in Microsoft 365
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+
+</br>
+
 You can use the Microsoft 365 admin center to set up and configure [topic experiences](topic-experiences-overview.md). 
 
 It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan topic experiences](plan-topic-experiences.md) before you begin the procedures in this article.
