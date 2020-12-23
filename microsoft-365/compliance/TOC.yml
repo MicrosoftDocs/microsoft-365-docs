@@ -577,7 +577,7 @@
           items: 
             - name: Add custodians to a case
               href: add-custodians-to-case.md
-            - name: Bulk-add custodians to a case
+            - name: Import multiple custodians to a case
               href: bulk-add-custodians.md
             - name: Manage custodians
               href: manage-new-custodians.md
