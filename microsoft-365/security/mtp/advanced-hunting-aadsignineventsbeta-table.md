@@ -20,8 +20,6 @@ ms.collection:
 - m365initiative-m365-defender 
 ms.topic: article
 ---
- 
-
 
 # AADSignInEventsBeta
 
