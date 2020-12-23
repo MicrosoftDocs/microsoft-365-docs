@@ -88,7 +88,7 @@ If a message was incorrectly identified as spam, you can submit the message to t
 
 ## Where is the data from submissions to Microsoft stored?
 
-The data resides in the Office 365 compliance boundary in North America datacenters and are reviewed by analysts on the engineering team to improve the effectiveness of the filters.
+The data resides in the Office 365 compliance boundary in North American data centers and are reviewed by analysts on the engineering team to improve the effectiveness of the filters.
 
 ## Create a mail flow rule to receive copies of messages that are reported to Microsoft
 
