@@ -40,13 +40,13 @@ The ```AADSpnSignInEventsBeta``` table in the advanced hunting schema contains
 information about Azure Active Directory service principal and managed identity
 sign-ins. You can learn more about the different kinds of sign-ins in [Azure
 Active Directory sign-in activity reports -
-preview](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+preview](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Use this reference to construct queries that return information from the table.
 
 For information on other tables in the advanced hunting schema, see [the
 advanced hunting
-reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
+reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
 
  
 
