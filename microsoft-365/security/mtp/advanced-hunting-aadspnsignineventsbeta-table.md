@@ -20,14 +20,9 @@ ms.collection:
 - m365initiative-m365-defender 
 ms.topic: article
 ---
- 
-
-
 # AADSpnSignInEventsBeta
 
-
-
-Applies to:
+**Applies to:**
 
 - Microsoft 365 Defender
 
