@@ -1,7 +1,7 @@
 ---
-title: AlertEvidence table in the advanced hunting schema
-description: Learn about information associated with alerts in the AlertEvidence table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account
+title: AADSignInEventsBeta table in the advanced hunting schema
+description: Learn about information associated with Azure Active Directory sign-in events table of the advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: maccruz
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -38,14 +38,14 @@ Applies to:
 
 The ```AADSignInEventsBeta``` table in the advanced hunting schema contains
 information about Azure Active Directory interactive and non-interactive
-sign-ins. You can learn more about the different kinds of sign-ins in [Azure
+sign-ins. Learn more about the different kinds of sign-ins in [Azure
 Active Directory sign-in activity reports -
-preview](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+preview](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Use this reference to construct queries that return information from the table.
 For information on other tables in the advanced hunting schema, see [the
 advanced hunting
-reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
+reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
 
  
 
@@ -100,13 +100,13 @@ reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/m
 
  
 
-## Related topics
+## Related articles
 
 -   [Advanced hunting
-    overview](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+    overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 -   [Learn the query
-    language](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
+    language](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
 -   [Understand the
-    schema](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
+    schema](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
 
  
