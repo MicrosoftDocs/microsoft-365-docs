@@ -11,7 +11,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: maccruz
-author: maccruz
+author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,9 +22,10 @@ ms.topic: article
 ---
  
 
+
 # AADSignInEventsBeta
 
- 
+
 
 Applies to:
 
