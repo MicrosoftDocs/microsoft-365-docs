@@ -1,6 +1,6 @@
 ---
 title: Overview - Microsoft 365 security center
-description: Advantages in the new Microsoft 365 Security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE). This article outlines Microsoft 365 Security center advances for administrators.
+description: Advantages in the new Microsoft 365 security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE). This article outlines Microsoft 365 security center advances for administrators.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
