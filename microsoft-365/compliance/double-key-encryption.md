@@ -452,6 +452,9 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 Ensure that no errors appear in the output. When you're ready, [register your key store](#register-your-key-store).
 
+> [!NOTE]
+> Key name is case senstive. Provide the Keyname as in the appsettings.json.
+
 ## Register your key store
 
 The following steps enable you to register your DKE service. Registering your DKE service is the last step in deploying DKE before you can start creating labels.
