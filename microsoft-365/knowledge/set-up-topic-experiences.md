@@ -17,7 +17,7 @@ description: "Learn how to set up topic experiences in Microsoft 365"
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 </br>
 
