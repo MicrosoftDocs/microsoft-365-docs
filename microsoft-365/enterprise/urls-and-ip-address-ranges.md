@@ -77,3 +77,5 @@ Data columns shown are:
 [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653)
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[Protocol Information](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/setting-up-your-imap-server-connection#to-get-the-name-of-your-source-email-server-by-using-outlook-on-the-web)
