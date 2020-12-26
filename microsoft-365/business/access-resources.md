@@ -56,6 +56,6 @@ If the Windows device that you Azure-AD joined was previously domain-joined or i
 
 - If the device is using Group Policy Objects (GPO), some GPOs may not have a comparable [Configuration Service Provider](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) in Intune. Run the [MMAT tool](https://www.microsoft.com/download/details.aspx?id=45520) to find comparable CSPs for existing GPOs.
 
-- Users won't be able to authenticate to applications that depend on Active Directory authentication. Evaluate the legacy app and consider updating to an app that uses modern Auth, if possible.
+- Users won't be able to authenticate to applications that depend on Active Directory machine authentication. Evaluate the legacy app and consider updating to an app that uses modern Auth, if possible.
 
 - Active Directory printer discovery won't work. You can provide direct printer paths for all users or use [Universal Print](https://aka.ms/UPDocs).
