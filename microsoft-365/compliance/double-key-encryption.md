@@ -453,7 +453,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 Ensure that no errors appear in the output. When you're ready, [register your key store](#register-your-key-store).
 
 > [!NOTE]
-> The key name is case sensitive. Enter the key name as it appears in the appsettings.json file.
+The key name is case sensitive. Enter the key name as it appears in the appsettings.json file.
 
 ## Register your key store
 
