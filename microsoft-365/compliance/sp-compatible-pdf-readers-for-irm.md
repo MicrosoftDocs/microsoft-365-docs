@@ -25,7 +25,7 @@ Microsoft SharePoint 2013 supports Information Rights Management (IRM) protectio
   
 To use PDF files in libraries that the owner has protected with IRM, the user will need to obtain one of the following PDF-compatible readers:
   
-|**Operating System**|**Compatible Readers**|**Download Link**|
+| Operating System | Compatible Readers | Download Link |
 |:-----|:-----|:-----|
 |Windows Vista  <br/> |Foxit Reader  <br/> NitroPDF  <br/> |[Download Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Download NitroPDF](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> |
 |Windows 7  <br/> |Azure Information Protection app  <br/> Foxit Reader  <br/> NitroPDF  <br/> |[Download Azure Information Protection app](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Download Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Download NitroPDF](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> |
@@ -34,6 +34,6 @@ To use PDF files in libraries that the owner has protected with IRM, the user wi
 |Windows 10  <br/> |Azure Information Protection app  <br/> Foxit Reader  <br/> NitroPDF  <br/> |[Download Azure Information Protection app](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Download Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Download NitroPDF](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> |
 |Android  <br/> |Azure Information Protection app  <br/> Foxit MobilePDF with RMS  <br/> |[Download Azure Information Protection app](https://go.microsoft.com/fwlink/?linkid=836827) <br/> [Purchase Foxit MobilePDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite) <br/> |
 |Windows Phone  <br/> |N/A  <br/> |N/A  <br/> |
-|MacOS  <br/> |N/A  <br/> |N/A  <br/> |
+|macOS  <br/> |N/A  <br/> |N/A  <br/> |
 |IOS  <br/> |Azure Information Protection app  <br/> Foxit MobilePDF with RMS  <br/> |[Download Azure Information Protection app](https://go.microsoft.com/fwlink/?linkid=836828) <br/> [Purchase Foxit MobilePDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite) <br/> |
    
