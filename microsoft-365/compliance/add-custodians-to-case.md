@@ -96,7 +96,7 @@ To place the custodians and data sources on hold:
 
 2. Verify the custodian hold selections and then click **Next**.
 
-> [!NOTE] If you don't place a hold on a custodian, the custodian and their associated data sources will be added to the case but the content in those data sources won't preserved by the hold that associated with the case.
+   [!NOTE] If you don't place a hold on a custodian, the custodian and their associated data sources will be added to the case but the content in those data sources won't preserved by the hold that associated with the case.
 
 ## Step 4: Review the custodians and complete the process
 
