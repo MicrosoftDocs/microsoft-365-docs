@@ -87,9 +87,9 @@ To add validated data sources for a custodian:
 
 2. On the custodian flyout page, scroll to the **Custodial locations** section to view both validated and unvalidated data sources that are associated with custodian.
 
-3. Click **Edit** at the topic of the floyout page to remove invalid sources or add validated data sources.
+3. Click **Edit** at the top of the flyout page to remove invalid data sources or add new ones.
 
-4. After you remove unvalidated data sources or add new validated new ones, the value **Active** is displayed in **Status** column for the custodian on the **Data sources** tab. To add sources that previously appeared to be invalid, follow the remediation steps below to manually add them to a custodian.
+4. After you remove unvalidated data sources or add a new one, the value **Active** is displayed in **Status** column for the custodian on the **Data sources** tab. To add sources that previously appeared to be invalid, follow the remediation steps below to manually add them to a custodian.
 
 ### Remediating invalid data sources
 
@@ -97,7 +97,7 @@ To manually add and associate a data source that was previously invalid:
 
 1. On the **Data sources** tab, select a custodian to manually add and associate a data source that was previously invalid.
 
-2. Under **Custodial locations** on the flyout page, add and associate mailboxes, sites, Teams, or Yammer groups by clicking **Edit** next to the appropriate data location type.
+2. Click **Edit** at the top of the flyout page to associate mailboxes, sites, Teams, or Yammer groups to the custodian. Do this by clicking **Edit** next to the appropriate data location type.
 
 3. Click **Next** to display the **Hold settings** page and configure the hold setting for the data sources you added.
 
