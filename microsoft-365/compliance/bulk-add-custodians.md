@@ -27,7 +27,9 @@ For Advanced eDiscovery cases that involve a lot of custodians, you can import m
 
 2. Click **Add data source** > **Import custodians**.
 
-3. On the **Import custodians** flyout page, click **Download a blank template** to download a CSV custodian template file.
+3. On the **Import custodians** flyout page, click **Download a blank template** to download a custodian template CSV file.
+
+   ![Download a CSV template from Import custodians flyout page](../media/ImportCustodians1.png)
 
 4. Add the custodial information to the CSV file and save it to your local computer. See the [Custodian CSV file](#custodian-csv-file) section for information about the required properties in the CSV file.
 
@@ -47,7 +49,7 @@ After you download the CSV custodian template, you can add custodians and their 
 |**Exchange Enabled** | TRUE/FALSE value to include or not include the custodian's mailbox.      |
 |**OneDrive Enabled** | TRUE/FALSE value to include or not included the custodian's OneDrive for Business account. |
 |**Is OnHold**        | TRUE/FALSE value to indicate whether to place the custodian data sources on hold.       |
-|**Workload1 Type**         |String value indicating the type of data source to associate with the custodian. <br />Possible values include: <br />ExchangeMailbox, SharePointSite, TeamsMailbox, TeamsSite, YammerMailbox, YammerSite. |
+|**Workload1 Type**         |String value indicating the type of data source to associate with the custodian. Possible values include: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
 |**Workload1 Location**     | Depending on your workload type, this would be the location of the data source. For example, the email address for an Exchange mailbox or the URL for a SharePoint site. |
 |||
 
@@ -55,7 +57,7 @@ Here's an example of a CSV file with custodian information:
 
 |Custodian contactEmail      | Exchange Enabled | OneDrive Enabled | Is OnHold | Workload1 Type | Workload1 Location             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
-|sarad@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
+|robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
 ||||||
 
@@ -65,27 +67,29 @@ After you upload the custodian CSV file, Advanced eDiscovery does the following 
 
 1. Validates the custodians and their data sources.
 
-2. Indexes all data sources for each custodian and places them on hold (if the **Is OnHold** property is set to TRUE).
+2. Indexes all data sources for each custodian and places them on hold (if the **Is OnHold** property in the CSV file is set to TRUE).
 
 ### Custodian validation
 
 Currently, we only support importing custodians that are included in your organization's Azure Active Directory (Azure AD).
 
-We validate and find custodians using the UPN value in the **Custodian contactEmail** column in the CSV file. Custodians that are validated are automatically added to the case and listed on the **Data sources** tab of the case. If a custodian can't be validated, they are listed in the error log for the BulkAddCustodian job that is listed on the **Jobs** tab in the case. Unvalidated custodians are not added to the case.
+The custodian import tool finds and validates custodians using the UPN value in the **Custodian contactEmail** column in the CSV file. Custodians that are validated are automatically added to the case and listed on the **Data sources** tab of the case. If a custodian can't be validated, they are listed in the error log for the BulkAddCustodian job that is listed on the **Jobs** tab in the case. Unvalidated custodians are not added to the case or listed on the **Data sources** tab.
 
 ### Data source validation
 
-After custodians are added to the case, each primary mailbox and OneDrive account that's associated with a custodian is added.
+After custodians are validated and added to the case, each primary mailbox and OneDrive account that's associated with a custodian is added.
 
-However, if any of the additional data sources (such as Teams, Microsoft 365 Groups, Yammer groups, or SharePoint sites) associated with a custodian can't be found, none of them are assigned to the custodian and the value **Not validated** is displayed in the **Status** column next to the custodian on the **Data sources** tab.
+However, if any of the additional data sources (such as SharePoint sites, Microsoft Teams, Microsoft 365 Groups, or Yammer groups) associated with a custodian can't be found, none of them are assigned to the custodian and the value **Not validated** is displayed in the **Status** column next to the custodian on the **Data sources** tab.
 
 To add validated data sources for a custodian:
 
-1. On the **Data source** tab, select a custodian that contains data sources that aren't validated.
+1. On the **Data sources** tab, select a custodian that contains data sources that aren't validated.
 
-2. On the custodian flyout page, scroll to the **Data sources** section to view both validated and unvalidated data sources that are associated with custodian. Click **Update** to remove invalid sources or add validated data sources.
+2. On the custodian flyout page, scroll to the **Custodial locations** section to view both validated and unvalidated data sources that are associated with custodian.
 
-3. After you remove unvalidated data sources or add new validated new ones, the value **Active** is displayed in **Status** column for the custodian on the **Data sources** tab. To add sources that previously appeared to be invalid, follow the remediation steps below to manually add them to a custodian.
+3. Click **Edit** at the topic of the floyout page to remove invalid sources or add validated data sources.
+
+4. After you remove unvalidated data sources or add new validated new ones, the value **Active** is displayed in **Status** column for the custodian on the **Data sources** tab. To add sources that previously appeared to be invalid, follow the remediation steps below to manually add them to a custodian.
 
 ### Remediating invalid data sources
 
@@ -93,7 +97,7 @@ To manually add and associate a data source that was previously invalid:
 
 1. On the **Data sources** tab, select a custodian to manually add and associate a data source that was previously invalid.
 
-2. Under **Data sources** on the flyout page, add and associate mailboxes, sites, Teams, or Yammer groups by clicking **Edit** next to the appropriate data location type.
+2. Under **Custodial locations** on the flyout page, add and associate mailboxes, sites, Teams, or Yammer groups by clicking **Edit** next to the appropriate data location type.
 
 3. Click **Next** to display the **Hold settings** page and configure the hold setting for the data sources you added.
 
