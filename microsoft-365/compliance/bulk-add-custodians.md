@@ -53,7 +53,7 @@ After you download the CSV custodian template, you can add custodians and their 
 |**Workload1 Location**     | Depending on your workload type, this would be the location of the data source. For example, the email address for an Exchange mailbox or the URL for a SharePoint site. |
 |||
 
-Here's an example of a CSV file with custodian information:<br/>
+Here's an example of a CSV file with custodian information:<br/><br/>
 
 |Custodian contactEmail      | Exchange Enabled | OneDrive Enabled | Is OnHold | Workload1 Type | Workload1 Location             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
