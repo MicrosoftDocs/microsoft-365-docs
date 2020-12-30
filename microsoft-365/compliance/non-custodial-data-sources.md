@@ -35,10 +35,10 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
    - **SharePoint** - Click **Edit** to add sites. Select a site in the list or you can search for a site by typing the URL of the site in the search bar. Select the sites that you want to add as non-custodian data sources and click **Add**.
 
-   - **Exchange** - Click **Edit** to add mailboxes. Type a name or alias (a minimum of 3 characters) in the search box for mailboxes or distribution groups. Select the mailboxes that you want to add as non-custodian data sources and click **Add**.
+   - **Exchange** - Click **Edit** to add mailboxes. Type a name or alias (a minimum of three characters) in the search box for mailboxes or distribution groups. Select the mailboxes that you want to add as non-custodian data sources and click **Add**.
 
    > [!NOTE]
-   > You can use the **SharePoint** and **Exchange** sections to add sites and mailboxes associated with a Team or Yammer group as non-custodia data sources. You have to separately add the mailbox and site associated with a Team or Yammer group.
+   > You can use the **SharePoint** and **Exchange** sections to add sites and mailboxes associated with a Team or Yammer group as non-custodial data sources. You have to separately add the mailbox and site associated with a Team or Yammer group.
 
 4. After you add non-custodial data sources, you have the option to place those locations on hold or not. Select or unselect the **Hold** checkbox next to the data source to place it on hold.
 
@@ -46,13 +46,13 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
    Each non-custodial data source that you added is listed on the **Data sources** page. Non-custodial data sources are identified by the **Data location** value in the **Source type** column.
 
-   [ ![Non-custodial data sources on the Data sources tab](../media/NonCustodialDataSources2.png) ](../media/NonCustodialDataSources2.png#lightbox)
+   ![Non-custodial data sources on the Data sources tab](../media/NonCustodialDataSources2.png)
 
 After you add non-custodial data sources to the case, a job named *Reindexing non-custodial data* is created and displayed on the **Jobs** tab of the case. After the job is created, the Advanced indexing process in initiated and the data sources are reindexed.
 
 ## Manage the hold for non-custodial data sources
 
-After you place a hold on a non-custodial data source, a hold policy that contains the non-custodial data sources for the case is automatically created. When you place additional non-custodial data sources on hold, they are added to this hold policy.
+After you place a hold on a non-custodial data source, a hold policy that contains the non-custodial data sources for the case is automatically created. When you place other non-custodial data sources on hold, they are added to this hold policy.
 
 1. Open the Advanced eDiscovery case and select the **Hold** tab.
 
@@ -62,7 +62,7 @@ After you place a hold on a non-custodial data source, a hold policy that contai
 
    ![The flyout page for non-custodial data sources hold displays statistics](../media/NonCustodialDataSourcesHoldFlyout.png)
 
-4. Click **Edit hold** to view the non-custodial data sources placed on hold and perform the following management tasks:
+3. Click **Edit hold** to view the non-custodial data sources placed on hold and perform the following management tasks:
 
    - On the **Locations** page, you can release a non-custodial data source by removing it from the hold. Releasing a data source doesn't remove the non-custodial data source from the case. It only removes the hold that was placed on the data source.
 

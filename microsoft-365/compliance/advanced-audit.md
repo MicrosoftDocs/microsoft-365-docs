@@ -150,7 +150,7 @@ Advanced Audit features such as the ability to log crucial events such as MailIt
 
 5. If the checkbox isn’t selected, select it, and then click **Save changes.**
 
-   The Logging of audit records for MailItemsAccessed, Send, and other crucial events for the user will begin within 24 hours.
+   The logging of audit records for MailItemsAccessed, Send, and other crucial events for the user will begin within 24 hours.
 
 For organizations that assign licenses to groups of users by using group-based licensing, you have to turn off the licensing assignment for Microsoft 365 Advanced Auditing for the group. After you save your changes, verify that Microsoft 365 Advanced Auditing is turned off for the group. Then turn the licensing assignment for the group back on. For instructions about group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
