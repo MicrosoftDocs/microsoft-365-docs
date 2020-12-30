@@ -132,7 +132,7 @@ For more information about holds, see:
 
 - [Create a hold in Core eDiscovery](create-ediscovery-holds.md) 
 
-- [Create a hold in Advanced eDiscovery](add-custodians-to-case.md#step-4-place-custodians-on-hold)
+- [Create a hold in Advanced eDiscovery](add-custodians-to-case.md)
 
 ### Preview
 
