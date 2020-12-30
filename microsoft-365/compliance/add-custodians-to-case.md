@@ -25,15 +25,15 @@ Use the built-in custodian management tool in Advanced eDiscovery to coordinate 
 
 You can add and manage custodians in Advanced eDiscovery cases in four steps:
 
-1. Identify the custodians
+1. Identify the custodians.
 
-2. Choose custodian data locations
+2. Choose custodian data locations.
 
-3. Configure hold settings
+3. Configure hold settings.
 
-4. Review the custodians and complete the process
+4. Review the custodians and complete the process.
 
-![Sources tab in Advanced eDiscovery case](../media/AeD-Sources-Tab.png)
+   [ ![Sources tab in Advanced eDiscovery case](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
 
 ## Make sure you have the necessary permissions
 
@@ -96,7 +96,8 @@ To place the custodians and data sources on hold:
 
 2. Verify the custodian hold selections and then click **Next**.
 
-   [!NOTE] If you don't place a hold on a custodian, the custodian and their associated data sources will be added to the case but the content in those data sources won't preserved by the hold that associated with the case.
+   > [!NOTE]
+   > If you don't place a hold on a custodian, the custodian and their associated data sources will be added to the case but the content in those data sources won't preserved by the hold that associated with the case.
 
 ## Step 4: Review the custodians and complete the process
 
@@ -108,4 +109,4 @@ Before you actually add the custodians to the case, you can review the list of c
 
    The new custodians are added to the case and displayed on the **Data sources** tab.
 
-   ![Custodians listed on the Data sources tab](../media/DataSourcesTab.png)
+   [ ![Custodians listed on the Data sources tab](../media/DataSourcesTab.png) ](../media/DataSourcesTab.png#lightbox)
