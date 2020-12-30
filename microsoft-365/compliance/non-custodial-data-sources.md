@@ -46,7 +46,7 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
    Each non-custodial data source that you added is listed on the **Data sources** page. Non-custodial data sources are identified by the **Data location** value in the **Source type** column.
 
-   ![Add SharePoint sites and Exchange mailboxes as non-custodial data sources](../media/NonCustodialDataSources2.png)
+   ![Non-custodial data sources on the Data sources tab](../media/NonCustodialDataSources2.png)
 
 After you add non-custodial data sources to the case, a job named *Reindexing non-custodial data* is created and displayed on the **Jobs** tab of the case. After the job is created, the Advanced indexing process in initiated and the data sources are reindexed.
 
