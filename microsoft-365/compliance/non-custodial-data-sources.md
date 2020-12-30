@@ -27,7 +27,7 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
 1. On the **Advanced eDiscovery** home page, click the case that you want to add the data to.
 
-2. Click the **Data sources** tab and then click **Add data source** > **Add data locations**
+2. Click the **Data sources** tab and then click **Add data source** > **Add data locations**.
 
 3. On the **New non-custodial data locations** flyout page, choose the data sources that you want to add to the case. You can add multiple mailboxes and sites by expanding the **SharePoint** or **Exchange** sections and then clicking **Edit**.
 
@@ -46,7 +46,7 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
    Each non-custodial data source that you added is listed on the **Data sources** page. Non-custodial data sources are identified by the **Data location** value in the **Source type** column.
 
-   ![Non-custodial data sources on the Data sources tab](../media/NonCustodialDataSources2.png)
+   [ ![Non-custodial data sources on the Data sources tab](../media/NonCustodialDataSources2.png) ](../media/NonCustodialDataSources2.png#lightbox)
 
 After you add non-custodial data sources to the case, a job named *Reindexing non-custodial data* is created and displayed on the **Jobs** tab of the case. After the job is created, the Advanced indexing process in initiated and the data sources are reindexed.
 

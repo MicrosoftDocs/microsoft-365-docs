@@ -37,7 +37,7 @@ For Advanced eDiscovery cases that involve a lot of custodians, you can import m
 
 6. On the **Import custodians** flyout page, click **Browse** and then upload the CSV file that contains the custodian information.
 
-   After the CSV file is uploaded, a job named **BulkAddCustodian** is created and displayed on the **Jobs** tab. The job validates the custodians and their associated data sources and then adds them to the the **Data sources** page of the case.
+   After the CSV file is uploaded, a job named **BulkAddCustodian** is created and displayed on the **Jobs** tab. The job validates the custodians and their associated data sources and then adds them to the **Data sources** page of the case.
 
 ## Custodian CSV file
 
@@ -53,7 +53,7 @@ After you download the CSV custodian template, you can add custodians and their 
 |**Workload1 Location**     | Depending on your workload type, this would be the location of the data source. For example, the email address for an Exchange mailbox or the URL for a SharePoint site. |
 |||
 
-Here's an example of a CSV file with custodian information:  
+Here's an example of a CSV file with custodian information:<br/><br/>
 
 |Custodian contactEmail      | Exchange Enabled | OneDrive Enabled | Is OnHold | Workload1 Type | Workload1 Location             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
