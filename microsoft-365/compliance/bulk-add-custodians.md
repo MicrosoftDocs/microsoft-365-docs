@@ -19,7 +19,7 @@ description: "Use the import tool dto quickly add multiple custodians and their 
 
 # Import custodians to an Advanced eDiscovery case
 
-For Advanced eDiscovery cases that involve a lot of custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case.
+For Advanced eDiscovery cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case.
 
 ## Import custodians
 
@@ -41,7 +41,7 @@ For Advanced eDiscovery cases that involve a lot of custodians, you can import m
 
 ## Custodian CSV file
 
-After you download the CSV custodian template, you can add custodians and their data source in each row. Be sure not to change the column names in the header row. Use the workload type and workload location columns to associate additional data sources to a custodian.
+After you download the CSV custodian template, you can add custodians and their data source in each row. Be sure not to change the column names in the header row. Use the workload type and workload location columns to associate other data sources to a custodian.
 
 | Column name|Description|
 |:------- |:------------------------------------------------------------|
@@ -79,7 +79,7 @@ The custodian import tool finds and validates custodians using the UPN value in 
 
 After custodians are validated and added to the case, each primary mailbox and OneDrive account that's associated with a custodian is added.
 
-However, if any of the additional data sources (such as SharePoint sites, Microsoft Teams, Microsoft 365 Groups, or Yammer groups) associated with a custodian can't be found, none of them are assigned to the custodian and the value **Not validated** is displayed in the **Status** column next to the custodian on the **Data sources** tab.
+However, if any of the other data sources (such as SharePoint sites, Microsoft Teams, Microsoft 365 Groups, or Yammer groups) associated with a custodian can't be found, none of them are assigned to the custodian and the value **Not validated** is displayed in the **Status** column next to the custodian on the **Data sources** tab.
 
 To add validated data sources for a custodian:
 
