@@ -55,7 +55,7 @@ To add custodians to a case, you must be a member of the eDiscovery Manager role
 
 After you select custodians, the system automatically attempts to identify and verify these users and their data sources. After adding custodians to the list, the tool automatically includes the primary mailbox and OneDrive account for each custodian. You can choose not to include these data sources when adding custodians to the case.
 
-In addition to a custodian's mailbox and OneDrive account, you can also associate additional data locations to a custodian, such as SharePoint site or a Microsoft Team the custodian is a member of. This allows you preserve, collect, analyze, and review content in other data sources associated with the custodians of the case.
+In addition to a custodian's mailbox and OneDrive account, you can also associate additional data locations to a custodian, such as SharePoint site or a Microsoft Team the custodian is a member of. This allows you to preserve, collect, analyze, and review content in other data sources associated with the custodians of the case.
 
 To deselect the primary mailbox and OneDrive account for a custodian:
 
