@@ -16,7 +16,7 @@ description: "Admins can set up a connector to import and archive Redtail Speak 
 
 # Set up a connector to archive Redtail Speak data
 
-Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from the Redtail Speak to user mailboxes in your Microsoft 365 organization. Globanet provides you with a [Redtail Speak](https://globanet.com/redtail/) connector that's configured to capture items from your organization’s SFTP server where the items are received from Redtail. The connector converts the content from Redtail Speak to an email message format and then imports those items to the user’s mailbox in Microsoft 365.
+Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from the Redtail Speak to user mailboxes in your Microsoft 365 organization. Globanet provides you with a [Redtail Speak](https://globanet.com/redtail/) connector that's configured to capture items from your organization’s SFTP server where the items are received from Redtail. The connector converts the content from Redtail Speak to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 
 After Redtail Speak data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies, and retention labels. Using a Redtail Speak connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -26,7 +26,7 @@ The following overview explains the process of using a connector to archive the 
 
 ![Archiving workflow for Redtail Speak data](../media/RedtailSpeakConnectorWorkflow.png)
 
-1. Your organization works with Redtail Speak to set up and configure an SMTP gateway where daily messages are forwarded from Redtail Speak to your organizations SFTP server.
+1. Your organization works with Redtail Speak to set up and configure an SMTP gateway where messages are forwarded from Redtail Speak to your organization's SFTP server on a daily basis.
 
 2. Once every 24 hours, the Redtail Speak items are copied to the Globanet Merge1 site. The connector also converts the Redtail Speak items to an email message format.
 
@@ -38,7 +38,7 @@ The following overview explains the process of using a connector to archive the 
 
 - Create a Globanet Merge1 account for Microsoft connectors. To create an account, contact [Globanet Customer Support](https://globanet.com/contact-us/). You need to sign into this account when you create the connector in Step 1.
 
-- In Step you, you need to specify your organization's SFTP server. This is necessary so that Globanet Merge1 can contact it to collect Redtail Speak data via SFTP.
+- In Step 2, you need to specify your organization's SFTP server. This is necessary so that Globanet Merge1 can contact it to collect Redtail Speak data via SFTP.
 
 - The user who creates the Redtail Speak Importer connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the Data connectors page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
