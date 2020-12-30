@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive Redtail Speak data from Globanet to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
 ---
 
-# Set up a connector to archive Redtail Speak data (preview)
+# Set up a connector to archive Redtail Speak data
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from the Redtail Speak to user mailboxes in your Microsoft 365 organization. Globanet provides you with a [Redtail Speak](https://globanet.com/redtail/) connector that's configured to capture items from your organization’s SFTP server where the items are received from Redtail. The connector converts the content from Redtail Speak to an email message format and then imports those items to the user’s mailbox in Microsoft 365.
 
