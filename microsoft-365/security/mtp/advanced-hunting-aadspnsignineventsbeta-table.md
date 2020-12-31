@@ -28,8 +28,7 @@ ms.topic: article
 
 > [!IMPORTANT]
 > The ```AADSpnSignInEventsBeta``` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) service principal and managed identity sign-in events. We will eventually move all sign-ins to the ```IdentityLogonEvents``` table.
-> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities. 
-> For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+
 
 The ```AADSpnSignInEventsBeta``` table in the advanced hunting schema contains
 information about Azure Active Directory service principal and managed identity
