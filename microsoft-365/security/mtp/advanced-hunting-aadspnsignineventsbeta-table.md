@@ -65,7 +65,7 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 | ```Latitude```             | string        | The north to south coordinates of the sign-in location                                                                                          |
 | ```Longitude```            | string        | The east to west coordinates of the sign-in location                                                                                            |
 | ```RequestId```            | string        | Unique identifier of the request                                                                                                                |
-
+|```ReportId``` | string | Unique identifier for the event |
  
 
  

@@ -91,6 +91,7 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 | ```Longitude```                       | string        | The east to west coordinates of the sign-in location                                                                                                                                |
 | ```NetworkLocationDetails```          | string        | Network location details of the authentication processor of the sign-in event                                                                                                       |
 | ```RequestId```                       | string        |  Unique identifier of the request                                                                                                                                                   |
+|```ReportId``` | string | Unique identifier for the event |
 
  
 
