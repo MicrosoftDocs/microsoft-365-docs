@@ -48,9 +48,9 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 
 
 
-| **Column name**                 | **Data type** | **Description**                                                           |
+| **Column name**     | **Data type** | **Description**   |
 | ----- | ----- | ---- |
-| ```Timestamp```            | datetime      | Date and time when the record was generated                                                                                                     |
+| ```Timestamp``` | datetime      | Date and time when the record was generated                                                                                                     |
 | ```Application```          | string        | Application that performed the recorded action                                                                                                   |
 | ```ApplicationId```        | string        | Unique identifier for the application                                                                                                           |
 | ```IsManagedIdentity```    | boolean       | Indicates whether the sign-in was initiated by a managed identity                                                                               |
@@ -68,8 +68,7 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 | ```Latitude```             | string        | The north to south coordinates of the sign-in location                                                                                          |
 | ```Longitude```            | string        | The east to west coordinates of the sign-in location                                                                                            |
 | ```RequestId```            | string        | Unique identifier of the request                                                                                                                |
-|```ReportId``` | string | Unique identifier for the event |
- 
+|```ReportId``` | string | Unique identifier for the event | 
 
  
 
