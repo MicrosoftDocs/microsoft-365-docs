@@ -46,18 +46,20 @@ This function returns a table with the following columns:
 ## Syntax
 
 ```kusto
-invoke DeviceFromIP(x,y)
+invoke DeviceFromIP()
 ```
 
 ## Arguments
 
-- **x**—`IP` should contain local IP addresses. External IP addresses are not supported.
-- **y**—`Timestamp` (datetime) value instructing the function to obtain the most recent assigned devices from a specific time. If not specified, the function returns the latest available records.
+This function can be invoked as part of a query.
+
+- **x**—The first parameter is typically already a column in the query, which is the `IP`, the IP address for which you want to see a list of devices that have been assigned to it. It should be a local IP address. External IP addresses are not supported.
+- **y**—A second optional parameter is the `Timestamp`, which instructs the function to obtain the most recent assigned devices from a specific time. If not specified, the function returns the latest available records.
 
 ## Example
 
 
-### Get devices that have been assigned specific IP addresses at a given point in time
+### Get the latest devices that have been assigned specific IP addresses
 
 ```kusto
 DeviceNetworkEvents 
