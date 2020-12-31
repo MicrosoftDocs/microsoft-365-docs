@@ -1,7 +1,7 @@
 ---
-title: AssignedIPAddresses() function in advanced hunting for Microsoft 365 Defender
-description: Learn how to use the AssignedIPAddresses() function to get the latest IP addresses assigned to a device 
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
+title: DeviceFromIP() function in advanced hunting for Microsoft 365 Defender
+description: Learn how to use the DeviceFromIP() function to get the devices that have been assigned a specific IP address 
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, device, devicefromIP, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -30,63 +30,36 @@ ms.topic: article
 - Microsoft 365 Defender
 
 
-ADD PREVIEW NOTE
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-
-Use the `AssignedIPAddresses()` function in your [advanced hunting](advanced-hunting-overview.md) queries to quickly obtain the latest IP addresses that have been assigned to a device. If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time. 
+Use the `DeviceFromIP()` function in your [advanced hunting](advanced-hunting-overview.md) queries to quickly obtain the list of devices that have been assigned to a certain IP address at a given point in time. 
 
 This function returns a table with the following columns:
 
 | Column | Data type | Description |
 |------------|-------------|-------------|
-| `IPAddress` | string | IP address used by the device |
-| `Timestamp` | datetime | Latest time when the device was observed using the IP address |
+| `IP` | string | IP address  |
+| `DeviceId` | string | Unique identifier for the device in the service |
 
 
 ## Syntax
 
 ```kusto
-DeviceFromIP(x, y)
+invoke DeviceFromIP(x,y)
 ```
 
 ## Arguments
 
-- **x**—`DeviceId` or `DeviceName` value identifying the device
-- **y**—`Timestamp` (datetime) value instructing the function to obtain the most recent assigned IP addresses from a specific time. If not specified, the function returns the latest IP addresses.
+- **x**—`IP` should contain local IP addresses. External IP addresses are not supported.
+- **y**—`Timestamp` (datetime) value instructing the function to obtain the most recent assigned devices from a specific time. If not specified, the function returns the latest available records.
 
-## Examples
+## Example
 
-### Get the list of IP addresses used by a device 24 hours ago
 
-```kusto
-AssignedIPAddresses('example-device-name', ago(1d))
-```
-
-### Get IP addresses used by a device and find devices communicating with it
-This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`example-date`). It then uses the IP addresses to find connections to the device initiated by other devices. 
+### Get devices that have been assigned specific IP addresses at a given point in time
 
 ```kusto
-let Date = datetime(example-date);
-let DeviceName = "example-device-name";
-// List IP addresses used on or before the specified date
-AssignedIPAddresses(DeviceName, Date)
-| project DeviceName, IPAddress, AssignedTime = Timestamp 
-// Get all network events on devices with the assigned IP addresses as the destination addresses
-| join kind=inner DeviceNetworkEvents on $left.IPAddress == $right.RemoteIP
-// Get only network events around the time the IP address was assigned
-| where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
-```
-
-
-### Get the devices that have been assigned specific IP addresses at a given point in time
-```kusto
-// Inputs:
-// IP addresses – Table or tabular operation returning a column named "IP". This column should contain local IP addresses.
-// External IP addresses are not supported as they cannot be correlated to a single device.
-// Timestamp - Datetime argument specifying the point in time from where to check IP address assignments.
-// If Timestamp is unspecified, the function checks the latest available records.
-// Example:
 DeviceNetworkEvents 
 | limit 100 
 | project IP = LocalIP 
