@@ -53,7 +53,7 @@ invoke DeviceFromIP()
 
 This function is invoked as part of a query.
 
-- **x**—The first parameter is typically already a column in the query. In this case it is the `IP`, the IP address for which you want to see a list of devices that have been assigned to it. It should be a local IP address. External IP addresses are not supported.
+- **x**—The first parameter is typically already a column in the query. In this case, it is the column named `IP`, the IP address for which you want to see a list of devices that have been assigned to it. It should be a local IP address. External IP addresses are not supported.
 - **y**—A second optional parameter is the `Timestamp`, which instructs the function to obtain the most recent assigned devices from a specific time. If not specified, the function returns the latest available records.
 
 ## Example
