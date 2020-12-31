@@ -629,7 +629,7 @@
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md
             - name: Search statistics
-              href: search-statistics.md
+              href: search-statistics-in-advanced-ediscovery.md
             - name: Add search results to a review set
               href: add-data-to-review-set.md
         - name: Manage review sets

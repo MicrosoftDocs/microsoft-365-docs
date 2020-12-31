@@ -117,4 +117,4 @@ When remediated files are uploaded, the original metadata is preserved except fo
 - WordCount
 - WorkingsetId
 
-For a definition of all metadata fields in Advanced eDiscovery, see [Document metadata fields](document-metadata-fields.md).
+For a definition of all metadata fields in Advanced eDiscovery, see [Document metadata fields](document-metadata-fields-in-advanced-ediscovery.md).

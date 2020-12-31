@@ -3,7 +3,7 @@ title: "Search statistics in Advance eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
-author: esclee
+author: 
 manager: laurawi
 ms.date: 
 audience: Admin
