@@ -26,7 +26,7 @@ ms.topic: article
 
 - Microsoft 365 Defender
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 > The ```AADSpnSignInEventsBeta``` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) service principal and managed identity sign-in events. We will eventually move all sign-ins to the ```IdentityLogonEvents``` table.<br><br>
 > Customers who can access Microsoft 365 Defender through the Azure Security Center’s integrated Microsoft Defender for Endpoint solution, but do not have licenses for Microsoft Defender for Office, Microsoft Defender for Identity, or Microsoft Cloud App Security, will not be able to view this schema. 
 
@@ -43,6 +43,8 @@ Use this reference to construct queries that return information from the table.
 For information on other tables in the advanced hunting schema, see [the
 advanced hunting
 reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
+
+
 
 
 
