@@ -48,8 +48,8 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 
 
 
-| **Column name**                 | **Data type** | **Description**                                                                                                                                                                     |
-|---------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Column name**                 | **Data type** | **Description**                                                           |
+| ----- | ----- | ---- |
 | ```Timestamp```            | datetime      | Date and time when the record was generated                                                                                                     |
 | ```Application```          | string        | Application that performed the recorded action                                                                                                   |
 | ```ApplicationId```        | string        | Unique identifier for the application                                                                                                           |
