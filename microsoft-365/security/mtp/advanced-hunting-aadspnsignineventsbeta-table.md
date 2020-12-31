@@ -31,6 +31,7 @@ ms.topic: article
 >Customers who can access Microsoft 365 Defender through the Azure Security Center’s integrated Microsoft Defender for Endpoint solution, but do not have licenses for Microsoft Defender for Office, Microsoft Defender for Identity, or Microsoft Cloud App Security, will not be able to view this schema. 
 
 
+
 The ```AADSpnSignInEventsBeta``` table in the advanced hunting schema contains
 information about Azure Active Directory service principal and managed identity
 sign-ins. You can learn more about the different kinds of sign-ins in [Azure
@@ -43,7 +44,6 @@ For information on other tables in the advanced hunting schema, see [the
 advanced hunting
 reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
 
- 
 
 | **Column name**      | **Data type** | **Description**                                                                                                                                 |
 |----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
