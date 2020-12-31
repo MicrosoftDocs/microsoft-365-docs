@@ -460,7 +460,7 @@ If you have configured SharePoint sites for content type policies or information
 - [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Resources to help you meet regulatory requirements for information governance and records management](retention-regulatory-requirements.md)
 
-## Next steps
+## Configuration guidance
 
 If you are ready to create retention policies, see [Create and configure retention policies](create-retention-policies.md).
 

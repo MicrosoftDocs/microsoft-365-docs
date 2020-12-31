@@ -32,7 +32,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ## December 2020
 
-### Added 6 accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+### Added six accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
 - Set 'Minimum password length' to '14 or more characters'
 - Set 'Enforce password history' to '24 or more password(s)'
@@ -47,7 +47,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
-### Added 3 services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+### Added three services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
 - Fix unquoted service path for Windows services
 - Change service executable path to a common protected location
