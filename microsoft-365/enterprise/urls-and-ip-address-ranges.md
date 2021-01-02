@@ -74,12 +74,12 @@ Data columns shown are:
   
 [Content delivery networks](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
   
-[Microsoft Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
+[Microsoft Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
 
-[Microsoft Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
+[Microsoft Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
 
-[Microsoft Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
+[Microsoft Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
 
-[Microsoft Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
+[Microsoft Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)
