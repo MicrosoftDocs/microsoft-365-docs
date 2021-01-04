@@ -111,10 +111,15 @@ To create a sensitivity label
 10. Click **Choose permissions**.
 11. Choose **Co-Author** from the dropdown list, and then click **Save**.
 12. If you want to include users or groups with read-only access to files with the label:
+
   a. Click **Assign permissions**.
+
   b. Click **Add users or groups**, select the users or groups that you want to add, and then click **Add**.
+
   c. Click **Choose permissions**.
+
   d. Choose **Viewer** from the dropdown list, and then click **Save**.
+  
 13.  Click **Save**, and then click **Next**.
 14. On the *Auto-labeling for files and emails** page, click **Next**.
 15. On the **Define protection settings for groups and sites** page, select **Privacy and external user access settings** and **Device access and external sharing settings** and click **Next**.
