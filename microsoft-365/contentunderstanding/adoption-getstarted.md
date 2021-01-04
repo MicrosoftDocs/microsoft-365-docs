@@ -38,7 +38,7 @@ The following table explains availability and licensing for SharePoint Syntex:
 | Uses AI Builder credits - 1M credits = 2000 pages; Consumption is about 2000 invoices=2 units. Power Automate is required - if you need more you can add it. 1M credits allocated for 300+ licenses purchased. You can also purchase credits separately. | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. |
 | Provisioned against the default common data service environment| Does not have capacity restrictions. |
 
-For more information about AI Builder credits and units, see [https://docs.microsoft.com/en-us/ai-builder/administer-licensing](AI Builder licensing).
+For more information about AI Builder credits and units, see [AI Builder licensing](https://docs.microsoft.com/en-us/ai-builder/administer-licensing).
 
 There are two different ways of understanding your content. The model type you use is based on file format and use case:
 
