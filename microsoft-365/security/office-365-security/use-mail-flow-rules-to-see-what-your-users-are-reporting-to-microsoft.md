@@ -64,7 +64,7 @@ You can create the mail flow rule in the Exchange admin center (EAC) and PowerSh
      - `junk@office365.microsoft.com`
      - `abuse@messaging.microsoft.com`
      - `phish@office365.microsoft.com`
-     - `false_positive@messaging.microsoft.com`
+     - `not_junk@office365.microsoft.com`
 
      To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
 
