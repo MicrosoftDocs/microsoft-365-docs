@@ -45,7 +45,7 @@ To configure search and analytics settings for a case:
 
 ## Near duplicates and email threading
 
-In this section, you can set parameters for duplicate detection, near duplicate detection, and email threading. For more information, see [Near duplicate detection](near-duplicates.md) and [Email threading](email-threading.md).
+In this section, you can set parameters for duplicate detection, near duplicate detection, and email threading. For more information, see [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md) and [Email threading](email-threading-in-advanced-ediscovery.md).
 
 - **Near duplicates/email threading:** When turned on, duplicate detection, near duplicate detection, and email threading are included as part of the workflow when you run analytics on the data in a review set.
 
