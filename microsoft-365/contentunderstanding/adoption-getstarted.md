@@ -30,13 +30,15 @@ With new AI services and capabilities, you can build content understanding and c
 | Interactive   | Pre-built, automated   | Custom, assisted  |
 | People doing the work | Taught by your subject matter experts (SMEs). Capture content types and  metadata from contracts, resumes, other structured documents. | SMEs are less involved. from purchase orders, applications, other semi structured and structured documents |
 
-The following table explains what you get when you use SharePoint Syntex:
+The following table explains availability and licensing for SharePoint Syntex:
 
 | Form processing | Document understanding |
 |:-------|:-------|
 | Available in APAC, Australia, Canada, EU, JP, LATAM, UK, US | Available in all regions |
 | Uses AI Builder credits - 1M credits = 2000 pages; Consumption is about 2000 invoices=2 units. Power Automate is required - if you need more you can add it. 1M credits allocated for 300+ licenses purchased. You can also purchase credits separately. | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. |
 | Provisioned against the default common data service environment| Does not have capacity restrictions. |
+
+For more information about AI Builder credits and units, see [https://docs.microsoft.com/en-us/ai-builder/administer-licensing](AI Builder licensing).
 
 There are two different ways of understanding your content. The model type you use is based on file format and use case:
 
