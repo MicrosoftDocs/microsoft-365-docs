@@ -89,7 +89,7 @@ Use the following workflow to remediate files with errors in Advanced eDiscovery
 
 10. Copy the predefined command by clicking **Copy to clipboard**. Open a Windows Command Prompt, paste the AzCopy command, and then press **Enter**. upload the files.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![Results of successful upload of remediated files in Azcopy](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. After you run the AzCopy command, click **Next: Process files**.
 
