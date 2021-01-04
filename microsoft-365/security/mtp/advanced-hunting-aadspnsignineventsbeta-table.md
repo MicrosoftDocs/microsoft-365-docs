@@ -54,7 +54,7 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 | ```Application```          | string        | Application that performed the recorded action                                                                                                   |
 | ```ApplicationId```        | string        | Unique identifier for the application                                                                                                           |
 | ```IsManagedIdentity```    | boolean       | Indicates whether the sign-in was initiated by a managed identity                                                                               |
-| ```ErrorCode```            | string        | Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit <https://aka.ms/AADsigninsErrorCodes>. |
+| ```ErrorCode```            | int        | Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit <https://aka.ms/AADsigninsErrorCodes>. |
 | ```CorrelationId```        | string        | Unique identifier of the sign-in event                                                                                                          |
 | ```ServicePrincipalName``` | string        | Name of the service principal that initiated the sign-in                                                                                        |
 | ```ServicePrincipalId```   | string        | Unique identifier of the service principal that initiated the sign-in                                                                           |
