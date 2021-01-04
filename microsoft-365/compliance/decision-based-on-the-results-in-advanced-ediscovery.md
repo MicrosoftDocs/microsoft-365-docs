@@ -15,6 +15,7 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: "Learn how the Decide tab in Advanced eDiscovery provides data that can help you determine the correct size of the review set of case files."
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
 ---
 

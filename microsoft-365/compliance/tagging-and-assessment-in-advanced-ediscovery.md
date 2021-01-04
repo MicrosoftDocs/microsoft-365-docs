@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Review the steps to perform Assessment training, including tagging files, and reviewing assessment results in Advanced eDiscovery."
 ---
 
