@@ -50,8 +50,6 @@ This tab includes the following components:
 The expanded Details pane displays additional details. Files in collection figures do not include empty or nebulous files. Family files figures represent files that are not loaded in Relevance, yet still counted as part of the family.
   
 ## Related topics
-
-[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   
@@ -62,4 +60,3 @@ The expanded Details pane displays additional details. Files in collection figur
 [Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
   
 [Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)
-
