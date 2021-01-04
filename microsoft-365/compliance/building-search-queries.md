@@ -34,7 +34,7 @@ Alternatively, you can select the **Show keyword list** check box and the type a
 
 ![Use the keyword list to get statistics on each keyword in the query](../media/KeywordListSearch.png)
 
-Why use the keyword list? You can get statistics that show how many items match each keyword in the keyword list. This can help you quickly identify the keywords that are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row in the keywords list. For more information about search statistics, see [Search statistics](search-statistics.md).
+Why use the keyword list? You can get statistics that show how many items match each keyword in the keyword list. This can help you quickly identify the keywords that are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row in the keywords list. For more information about search statistics, see [Search statistics](search-statistics-in-advanced-ediscovery.md).
 
 ## Conditions
 

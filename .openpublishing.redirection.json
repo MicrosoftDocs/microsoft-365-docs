@@ -336,6 +336,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/overview-data-investigations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/manage-data-spillage-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/data-spillage-scenariosearch-and-purge",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/delete-items-from-original-locations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Windows.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
       "redirect_document_id": false
