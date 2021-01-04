@@ -944,13 +944,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passnummer
 - reisepässe
 
-#### Keywords_eu_passport_date
 
-- date of issue
-- date of expiry
-
-## Austria social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
+## Austria social security number
 
 ### Format
 
@@ -971,43 +966,56 @@ Yes
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_austria_eu_
-- _or_equivalent` finds content that matches the pattern. 
+- The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern. 
 - a keyword from  `Keywords_austria_eu_ssn_or_equivalent` is found. 
     
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern. 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Social Security Number -->
+      <Entity id="6896a906-86c9-4d19-a2da-6e43ccd19b7b" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_austria_eu_ssn_or_equivalent" />
         </Pattern>
-<Pattern confidenceLevel="75">
-            <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
-          </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_austria_eu_telephone_number" />
+            <Match idRef="Keywords_austria_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### Keywords
 
 #### Keywords_austria_eu_ssn_or_equivalent
 
+- austrian ssn
+- ehic number
+- ehic no
+- insurance code
+- insurancecode#
+- insurance number
+- insurance no
+- krankenkassennummer
+- krankenversicherung
+- socialsecurityno
+- socialsecurityno#
 - social security no
 - social security number
 - social security code
-- insurance number
-- austrian ssn
+- sozialversicherungsnummer
+- sozialversicherungsnummer#
+- soziale sicherheit kein
+- sozialesicherheitkein#
 - ssn#
 - ssn
-- insurance code
-- insurance code#
-- socialsecurityno#
-- sozialversicherungsnummer
-- soziale sicherheit kein
+- versicherungscode
 - versicherungsnummer
+- zdravstveno zavarovanje
 
 ## Austria tax identification number
 
@@ -1970,78 +1978,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Pass-Nr
 - Passnummer
 - reisepass kein
-
-#### Keywords_eu_passport_date
-
-- date of issue
-- date of expiry
-
-#### Keywords_belgium_eu_passport_date
-
-- date de délivrance
-- date d'expiration
-- ausstellungsdatum
-
-
-## Belgium social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-11 digits without spaces or delimiters
-  
-### Pattern
-
-11 digits
-  
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_belgium_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_belgium_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_belgium_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_belgium_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_belgium_eu_ssn_or_equivalent
-
-- belgian national number
-- national number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- personal id number
-- personalidnumber#
-- numéro national
-- numéro de sécurité
-- numéro d'assuré
-- identifiant national
-- identifiantnational#
-- numéronational#
 
 
 ## Belgium value added tax number
@@ -4027,68 +3963,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
-## Croatia social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
-### Format
-
-11 digits without spaces and delimiters
-  
-### Pattern
-
-11 digits:
-  
-- ten digits
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_croatia_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_croatia_eu_ssn_or_equivalent
-
-- personal identification number
-- master citizen number
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- personal id number
-- personalidnumber#
-- oib
-- osobni identifikacijski broj
-
-   
 ## Cyprus drivers license number
 
 ### Format
@@ -4809,68 +4684,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - unique identification number
 
 
-## Czech social security number or equivalent identification
-
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-ten digits and a backslash in the specified pattern
-  
-### Pattern
-
-ten digits and a backslash:
-  
-- six digits that correspond to the birth date (YYMMDD): 
-- a backslash
-- three digits that correspond to a serial number that separates persons born on the same date
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_czech_republic_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_czech_republic_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_czech_republic_eu_ssn_or_equivalent` finds content that matches the pattern. 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_czech_republic_eu_ssn_or_equivalent
-
-- birth number
-- national identification number
-- personal identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- personal id number
-- personalidnumber#
-- rč
-- rodné číslo
-- rodne cislo
-
-
 ## Denmark driver's license number
 
 ### Format
@@ -5225,64 +5038,6 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - sygesikringskortnummer
 - sygesikringsnr
 - sygesikringsnummer
-
-
-## Denmark social security number or equivalent identification
-This sensitive information type entity is only available the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-ten digits and a hyphen in the specified pattern
-  
-### Pattern
-
-ten digits and a hyphen:
-  
-- six digits that correspond to the birth date (DDMMYY) 
-- a hyphen
-- four digits that correspond to a sequence number
-
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_denmark_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_denmark_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_denmark_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_denmark_eu_ssn_or_equivalent
-
-- personal identification number
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- personal id number
-- personalidnumber#
-- cpr-nummer
-- personnummer
 
 
 ## Drug Enforcement Agency (DEA) number
@@ -6131,19 +5886,19 @@ These are the entities in the EU passport number sensitive information typeThese
 
 These are the entities that are in the EU Social Security Number or equivalent identification sensitive information type.
 
-- [Austria](#austria-social-security-number-or-equivalent-identification)
-- [Belgium](#belgium-social-security-number-or-equivalent-identification)
-- [Croatia](#croatia-social-security-number-or-equivalent-identification)
-- [Czech](#czech-social-security-number-or-equivalent-identification)
-- [Denmark](#denmark-social-security-number-or-equivalent-identification)
-- [Finland](#finland-social-security-number-or-equivalent-identification)
+- [Austria](#austria-social-security-number)
+- [Belgium](#belgium-national-number)
+- [Croatia](#croatia-personal-identification-oib-number)
+- [Czech](#czech-personal-identity-number)
+- [Denmark](#denmark-personal-identification-number)
+- [Finland](#finland-national-id)
 - [France](#france-social-security-number-insee-or-equivalent-identification)
 - [Germany](#germany-identity-card-number)
 - [Greece](#greece-national-id-card)
-- [Hungary](#hungary-social-security-number-or-equivalent-identification)
+- [Hungary](#hungary-social-security-number-taj)
 - [Portugal](#portugal-citizen-card-number)
 - [Spain](#spain-social-security-number-ssn)
-- [Sweden](#sweden-social-security-number-or-equivalent-identification)
+- [Sweden](#sweden-national-id)
 
 
 ## EU Tax identification number
@@ -6564,78 +6319,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - passin numero.
 - passi#
 - passi number
-
-
-## Finland social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-An 11-character combination in the specified format
-  
-### Pattern
-
-an 11-character combination in the specified format:
-  
-- six digits 
-- one instance of one of the following:
-  - plus symbol
-  - minus symbol
-  - the letter "A" (not case-sensitive)
-- three digits
-- one letter or one digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_finland_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_finland_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_finland_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_finland_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_finland_eu_ssn_or_equivalent
-
-- identification number
-- personal id
-- identity number
-- finnish national id number
-- personalidnumber#
-- national identification number
-- id number
-- national id no.
-- national id number
-- id no
-- tunnistenumero
-- henkilötunnus
-- yksilöllinen henkilökohtainen tunnistenumero
-- ainutlaatuinen henkilökohtainen tunnus
-- identiteetti numero
-- suomen kansallinen henkilötunnus
-- henkilötunnusnumero#
-- kansallisen tunnistenumero
-- tunnusnumero
-- kansallinen tunnus numero
-- hetu
 
 
 ## France driver's license number
@@ -7925,10 +7608,63 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
 
-#### Keywords_greece_eu_passport_date
 
-- iss. date
-- date of expiry
+## Greece Social Security Number (AMKA)
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
+
+### Format
+
+Eleven digits without spaces and delimiters
+  
+### Pattern
+
+- 6 digits as date of birth YYMMDD
+- 4 digits
+- a check digit
+  
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_greece_eu_ssn` finds content that matches the pattern. 
+- A keyword from  `Keywords_greece_eu_ssn_or_equivalent` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_greece_eu_ssn` finds content that matches the pattern. 
+
+```xml
+      <!-- Greece Social Security Number (AMKA) -->
+      <Entity id="e39b03f4-50ea-41ae-af7a-a4b9539596ad" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+          <Match idRef="Keywords_greece_eu_ssn_or_equivalent" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keywords_greece_eu_ssn_or_equivalent
+
+- ssn
+- ssn#
+- social security no
+- socialsecurityno#
+- social security number
+- amka
+- a.m.k.a.
+- Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
 
 ## Greece tax identification number
@@ -8386,15 +8122,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Útlevelek száma
 - útlevél szám
 
-#### Keywords_eu_passport_date
 
-- date of issue
-- date of expiry
-
-
-## Hungary social security number or equivalent identification
-
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
+## Hungary social security number (TAJ)
 
 ### Format
 
@@ -8420,16 +8149,16 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - The function  `Func_hungary_eu_ssn_or_equivalent` finds content that matches the pattern. 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungarian Social Security Number (TAJ) -->
+      <Entity id="0de78315-9537-47f5-95ab-b3e77eba3993" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_hungary_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
+        </Pattern>
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
+        </Pattern>
+      </Entity>
 ```
 
 ### Keywords
@@ -15241,7 +14970,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Spain social security number (SSN)
-This sensitive information type entity is included in the EU Social Security Number or Equivalent ID sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -15776,66 +15504,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - PasseportNon 
 - Passeportn ° 
 
-## Sweden social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-12 digits without spaces and delimiters
-  
-### Pattern
-
-12 digits:
-  
-- eight digits that correspond to the birth date (YYYYMMDD) 
-- three digits that correspond to a serial number where: 
-  - the last digit in the serial number indicates gender by the assignment of an odd number for male and an even number for female
-  - up to 1990, the assignment of serial number corresponded to the county where the bearer of the number was born or (if born before 1947) where he/she had been living, according to tax records, on January 1, 1947, with a special code (usually 9 as the 7th digit) for immigrants 
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_sweden_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_sweden_eu_ssn_or_equivalent
-
-- personal id number
-- identification number
-- personal id no
-- identity no
-- identification no
-- personal identification no
-- personnummer id
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer#
-- identifikationsnumret#
 
 ## Sweden tax identification number
 This sensitive information type is only available for use in:
