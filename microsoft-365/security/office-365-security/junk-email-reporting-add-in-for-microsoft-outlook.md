@@ -30,7 +30,7 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
 ## What do you need to know before you begin?
 
-- To install the Junk Email Reporting add-in, see the [Install the Junk Email Reporting add-in](#install-the-junk-email-reporting-add-in) section later in this topic.
+- To install the Junk Email Reporting add-in, see the [Install the Junk Email Reporting add-in](#install-the-junk-email-reporting-add-in) section later in this article.
 
 - The Junk Email Reporting add-in works with the following versions of Outlook:
 

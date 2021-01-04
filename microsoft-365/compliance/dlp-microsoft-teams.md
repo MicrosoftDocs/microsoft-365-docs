@@ -24,6 +24,9 @@ description: "You can now apply DLP policies to Microsoft Teams chats and channe
 Support for DLP protection in Teams Chat requires E5.
 To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
+> [!IMPORTANT]
+> DLP for Teams is only supported when the user has a mailbox that is in Exchange Online
+
 ## Overview of DLP for Microsoft Teams
 
 Recently, [data loss prevention](data-loss-prevention-policies.md) (DLP) capabilities were extended to include Microsoft Teams chat and channel messages, **including private channel messages**.

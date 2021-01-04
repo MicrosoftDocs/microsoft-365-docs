@@ -198,7 +198,7 @@
         - name: Pilot Microsoft 365 from my custom domain
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: Domains FAQ
-          href: setup/domains-faq.md
+          href: setup/domains-faq.yml
         - name: Host-specific instructions
           items:
             - name: Change nameservers at any DNS host
@@ -223,10 +223,11 @@
               href: productivity/mobility.md
             - name: Teamwork
               href: productivity/teamwork.md
+            - name: Meetings
+              href: productivity/meetings.md
             - name: Microsoft 365 Apps health
               href: productivity/apps-health.md
-            - name: Create DNS records at any DNS host
-              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+            
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
