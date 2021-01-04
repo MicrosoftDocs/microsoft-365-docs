@@ -21,7 +21,11 @@ description: "Overview of Topic experiences."
 
 Topic experiences uses Microsoft AI technology, Microsoft 365, Delve, Microsoft Graph, Search, and other components and services to build a knowledge network in your Microsoft 365 environment. 
 
-   ![Knowledge Management flow](../media/knowledge-management/knowledge-management-flowchart.png) </br> 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
 
 Its goal is to convert information into knowledge and deliver it to your users in apps they use everyday, such as SharePoint modern pages and Microsoft Search.
 

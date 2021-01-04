@@ -19,6 +19,13 @@ description: "Learn how to find resources for Topic Experiences."
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
+
+
 Topic Experiences is an Office 365 service that helps organizations to transform information to knowledge.
 
 The resources on this page are designed to get you started with learning about and using Topic Experiences in your organization.
