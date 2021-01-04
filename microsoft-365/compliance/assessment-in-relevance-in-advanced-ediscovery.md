@@ -47,19 +47,4 @@ Each issue has its own richness, current margin of error, and as a result, estim
 You can accept the Relevance recommendations or adjust the current margin of error according to your needs. The default current margin of error is determined for recall at equal or above 75%.
   
 > [!NOTE]
-> The Assessment stage can be bypassed, in the **Relevance \> Track** tab in the expanded view for an issue, by clearing the **Assessment** check box per issue and then for "all issues". However, as a result, there will be no statistics for this issue. > Clearing the **Assessment** check box can only be done before assessment is performed. Where multiple issues exist in a case, assessment is bypassed only if the check box is cleared for each issue 
-  
-## Related topics
-
-[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
-  
-[Tagging and Assessment](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Tagging and Relevance training](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Deciding based on the results](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)
-
+> The Assessment stage can be bypassed, in the **Relevance \> Track** tab in the expanded view for an issue, by clearing the **Assessment** check box per issue and then for "all issues". However, as a result, there will be no statistics for this issue. > Clearing the **Assessment** check box can only be done before assessment is performed. Where multiple issues exist in a case, assessment is bypassed only if the check box is cleared for each issue.

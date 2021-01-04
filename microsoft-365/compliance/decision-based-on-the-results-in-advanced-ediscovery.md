@@ -49,14 +49,3 @@ This tab includes the following components:
     
 The expanded Details pane displays additional details. Files in collection figures do not include empty or nebulous files. Family files figures represent files that are not loaded in Relevance, yet still counted as part of the family.
   
-## Related topics
-  
-[Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging and Assessment](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Performing Relevance training](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)

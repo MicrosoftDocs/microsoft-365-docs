@@ -64,15 +64,4 @@ The parameters described in this section are available in the Advanced eDiscover
 
 - Define and organize issues carefully, as this can impact the Relevance training results.
 
-After parameters are set, the reviewer / expert can start training the files in the **Relevance** tab. 
-  
-## See also
-
-[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
-  
-[Defining issues and assigning users](define-issues-and-assign-users.md)
-  
-[Setting up loads to add imported files](set-up-loads-to-add-imported-files.md)
-  
-[Defining highlighted keywords and advanced options](define-highlighted-keywords-and-advanced-options.md)
-
+After parameters are set, the reviewer / expert can start training the files in the **Relevance** tab.
