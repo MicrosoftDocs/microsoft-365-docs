@@ -123,11 +123,11 @@ When you select the **Sensitive info types** option, you see the same list of se
 
 ![Sensitive info types for auto-labeling in Office apps](../media/sensitivity-labels-sensitive-info-types.png)
 
-After you select your sensitive information types, you can refine your condition by changing the instance count or match accuracy. For more information, see [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+Similarly to when you configure DLP policies, you can then refine your condition by changing the instance count and match accuracy. You can learn more about these configuration options from the DLP documentation: [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
-Further, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add groups and use logical operators between the groups. For more information, see [Grouping and logical operators](data-loss-prevention-policies.md#grouping-and-logical-operators).
+![Options for match accuracy and instance count](../media/sensitivity-labels-instance-count-match-accuracy.png)
 
-![Options for instance count and match accuracy](../media/Sensitivity-labels-instance-count-match-accuracy.png)
+Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups]. For more information, see [Grouping and logical operators](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 ### Configuring trainable classifiers for a label
 
