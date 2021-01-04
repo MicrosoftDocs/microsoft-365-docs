@@ -31,6 +31,8 @@ We're making some changes in the near future to make [Microsoft Secure Score](mi
 
 ### No Planned Changes
 
+There are no planned changes at this time.
+
 ## Related resources
 
 - [Microsoft Secure Score overview](microsoft-secure-score.md)

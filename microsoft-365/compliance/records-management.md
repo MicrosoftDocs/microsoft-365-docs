@@ -106,7 +106,7 @@ Containers include SharePoint document libraries and Exchange mailboxes.
 > 
 > Because of these irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 
-## Next steps
+## Configuration guidance
 
 See [Get started with records management](get-started-with-records-management.md).
 
