@@ -127,7 +127,7 @@ Similarly to when you configure DLP policies, you can then refine your condition
 
 ![Options for match accuracy and instance count](../media/sensitivity-labels-instance-count-match-accuracy.png)
 
-Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups]. For more information, see [Grouping and logical operators](data-loss-prevention-policies.md#grouping-and-logical-operators).
+Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 ### Configuring trainable classifiers for a label
 
