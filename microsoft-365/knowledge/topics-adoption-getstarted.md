@@ -28,7 +28,7 @@ Before you get started with adoption, you need to understand the concepts involv
 - **Identification**: With Microsoft Graph and Artificial Intelligence (AI) knowledge and people (topics, skills, an so on) are identified and automatically organized into related topics. SharePoint content is indexed with security content.
 - **Extension**: With Microsoft Graph content connectors (coming soon), you can ingest knowledge from external services and data repositories.
 
-For more information, you can review the [overview](knowledge-management-overview.md) for an introduction.
+For more information, you can review the [overview](topic-experiences-overview.md) for an introduction.
 
 Keep in mind that:
 

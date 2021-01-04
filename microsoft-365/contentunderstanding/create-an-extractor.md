@@ -32,7 +32,9 @@ You need to create an extractor for each entity in the document that you want to
 
 1. From the model home page, in the **Create and train extractors** tile, click **Train extractor**.
 2. On the **New entity extractor** screen, type the name of your extractor in the **New extractor name** field. For example, name it **Service Start Date** if you want to extract the service start date from each Contract Renewal document. You can also choose to reuse a previously created column (for example, a managed metadata column).
-3. Click **Create**.
+> [!NOTE]
+> If you create a new extractor, then select **New column type** and choose **Single line of text**, the maximum character limit is 255. Any characters that you type exceeding the limit get truncated. 
+3. When you're done, click **Create**.
 
 ## Add a label
 

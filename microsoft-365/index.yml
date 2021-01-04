@@ -123,8 +123,6 @@ productDirectory:
           text: Manage information protection
         - url: compliance/manage-information-governance.md
           text: Manage information governance
-        - url: compliance/overview-data-investigations.md
-          text: Manage internal and external investigations
 
     # Card
     - title: Deploy and manage your desktops and devices
@@ -265,8 +263,8 @@ additionalContent:
               url: /Kaizala
             - text: Microsoft Stream
               url: /stream/
-            - text: SharePoint Syntex
-              url: contentunderstanding/index.md
+            - text: MileIQ
+              url: https://docs.microsoft.com/office365/mileiq/
             - text: Yammer
               url: /yammer/yammer-landing-page
         # Card
