@@ -36,7 +36,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
   
   - Manage any eDiscovery case after they add themselves as a member of the case.
   
-  See the [More information](#more-information) section for reasons why you might want eDiscovery Administrators in your organization.
+  For reasons why you might want eDiscovery Administrators in your organization, see [More information](#more-information).
 
 > [!NOTE]
 > To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or a Office 365 or Microsoft 365 E3 license can be assigned an Microsoft 365 E5 Compliance or Microsoft 365 eDiscovery and Audit add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about Advanced eDiscovery licensing, see [Get started with Advanced eDiscovery](get-started-with-advanced-ediscovery.md).
@@ -45,7 +45,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
 
 - You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the Security & Compliance Center.
 
-- You can use the [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see the [More information](#more-information) section. 
+- You can use the [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see [More information](#more-information). 
   
 ## Assign eDiscovery permissions in the Security & Compliance Center
 
@@ -64,13 +64,13 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
 > [!NOTE]
 > You can also use the **Add-eDiscoveryCaseAdmin** cmdlet to make a user an eDiscovery Administrator. However, the user must be assigned the Case Management role before you can use this cmdlet to make them an eDiscovery Administrator. For more information, see [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
-On the **Permissions** page in the Security & Compliance Center, you can also assign users eDiscovery-related permissions by adding them to the Compliance Administrator, Organization Management, and Reviewer role groups. For a description of the eDiscovery-related RBAC roles assigned to each of these role groups, see the [RBAC roles related to eDiscovery](#rbac-roles-related-to-ediscovery) section.
+On the **Permissions** page in the Security & Compliance Center, you can also assign users eDiscovery-related permissions by adding them to the Compliance Administrator, Organization Management, and Reviewer role groups. For a description of the eDiscovery-related RBAC roles assigned to each of these role groups, see [RBAC roles related to eDiscovery](#rbac-roles-related-to-ediscovery).
 
 ## RBAC roles related to eDiscovery
 
 The following table lists the eDiscovery-related RBAC roles in the Security & Compliance Center, and indicates the built-in role groups that each role is assigned to by default.
   
-|**Role**|**Compliance Administrator**|**eDiscovery Manager & Administrator**|**Organization Management**|**Reviewer**|
+| Role | Compliance Administrator | eDiscovery Manager & Administrator | Organization Management | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Case Management <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> |
 |Communication <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -132,7 +132,7 @@ For more information about holds, see:
 
 - [Create a hold in Core eDiscovery](create-ediscovery-holds.md) 
 
-- [Create a hold in Advanced eDiscovery](add-custodians-to-case.md#step-4-place-custodians-on-hold)
+- [Create a hold in Advanced eDiscovery](add-custodians-to-case.md)
 
 ### Preview
 
@@ -167,7 +167,7 @@ This role lets users perform bulk removal of data matching the criteria of a con
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by using the `New-DistributionGroup -Type Security` command. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the Microsoft 365 admin center. It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
+    Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by running `New-DistributionGroup -Type Security`. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the Microsoft 365 admin center. It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
 
     Also as previously stated, you can't make a mail-enabled security group an eDiscovery Administrator by using the **Add-eDiscoveryCaseAdmin** cmdlet in Security & Compliance Center PowerShell. You can only add individual users as eDiscovery Administrators.
 
