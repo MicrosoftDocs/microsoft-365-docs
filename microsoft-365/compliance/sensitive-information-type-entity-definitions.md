@@ -660,7 +660,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - tfn
 
 ## Austria driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -1606,7 +1605,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 </Entity>
 ```
 ## Belgium driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -2276,7 +2274,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Bulgaria driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -3599,7 +3596,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 
 ## Croatia driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -4018,7 +4014,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
    
 ## Cyprus drivers license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -4370,7 +4365,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Czech driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -4761,7 +4755,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Denmark driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -5213,7 +5206,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Estonia driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -6030,7 +6022,6 @@ These entities are in the EU Tax identification number sensitive information typ
 
 
 ## Finland driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -6490,7 +6481,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## France driver's license number
-This sensitive information type entity is available in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -7026,7 +7016,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Germany driver's license number
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -7467,7 +7456,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Greece driver's license number
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -7901,8 +7889,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
    
 ## Hungary driver's license number
-
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -8743,8 +8729,6 @@ For IPv6, a DLP policy is 95% confident that it's detected this type of sensitiv
 
 ## Ireland driver's license number
 
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
-
 ### Format
 
 Six digits followed by four letters
@@ -9175,7 +9159,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
    
 ## Italy driver's license number
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -9935,7 +9918,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Latvia driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -10294,7 +10276,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - n° du Passeport
 
 ## Lithuania driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -10601,7 +10582,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - paso nr
 
 ## Luxemburg driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -11037,7 +11017,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - personal identification card
 
 ## Malta driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -11478,7 +11457,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - uniqueidentityno#
 
 ## Netherlands driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -12284,7 +12262,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Pinag-isang Multi-Layunin ID
 
 ## Poland driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -12783,7 +12760,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 
 ## Portugal driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -13102,7 +13078,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 
 ## Romania driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -13643,7 +13618,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 身份證 
 
 ## Slovakia driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -13963,7 +13937,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - n° Passeport
 
 ## Slovenia driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -14437,7 +14410,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 주민등록번호
 
 ## Spain driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -15004,7 +14976,6 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - s-int.<!--no-hyperlink-->net
 
 ## Sweden driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 

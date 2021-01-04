@@ -39,7 +39,7 @@ Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one 
 To access classifiers in the UI: 
 
 - the Global admin needs to opt in for the tenant to create custom classifiers.
-- Compliance Administrator or Data Investigation role is required to train a classifier.
+- Compliance Administrator role is required to train a classifier.
 
 You'll need accounts with these permissions to use classifiers in these scenarios:
 

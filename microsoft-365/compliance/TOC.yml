@@ -107,6 +107,11 @@
         - name: Create custom sensitive information types with exact data match
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
         - name: Get started with custom sensitive information types
+        - name: Use the Exact Data Match Schema and Sensitive Information Type Wizard
+          href: sit-edm-wizard.md
+        - name: Modify exact data match schema to use configurable match
+          href: sit-modify-edm-schema-configurable-match.md
+        - name: Create a custom sensitive information type - Security & Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
@@ -168,6 +173,8 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items: 
+            - name: Customer Key for Microsoft 365 at the tenant level (public preview)
+              href: customer-key-tenant-level.md
             - name: Service encryption with Customer Key in Office 365
               href: customer-key-overview.md
             - name: Set up Customer Key for Office 365
@@ -365,12 +372,18 @@
               href: archive-mssqldatabaseimporter-data.md
             - name: Pivot
               href: archive-pivot-data.md
+            - name: Redtail Speak
+              href: archive-redtailspeak-data.md
             - name: Reuters Dealing
               href: archive-reutersdealing-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
+            - name: Salesforce Chatter
+              href: archive-salesforcechatter-data.md
+            - name: ServiceNow
+              href: archive-servicenow-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md    
             - name: Symphony
@@ -387,6 +400,8 @@
               href: archive-xip-data.md
             - name: XSLT/XML 
               href: archive-xslt-xml-data.md
+            - name: Yieldbroker
+              href: archive-yieldbroker-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
@@ -575,7 +590,7 @@
           items: 
             - name: Add custodians to a case
               href: add-custodians-to-case.md
-            - name: Bulk-add custodians to a case
+            - name: Import multiple custodians to a case
               href: bulk-add-custodians.md
             - name: Manage custodians
               href: manage-new-custodians.md
@@ -615,7 +630,7 @@
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md
             - name: Search statistics
-              href: search-statistics.md
+              href: search-statistics-in-advanced-ediscovery.md
             - name: Add search results to a review set
               href: add-data-to-review-set.md
         - name: Manage review sets
@@ -778,83 +793,6 @@
               href: run-reports-in-advanced-ediscovery.md
     - name: Retirement of legacy eDiscovery tools
       href: legacy-ediscovery-retirement.md
-- name: Manage data investigations
-  items: 
-    - name: Overview of data investigations
-      href: overview-data-investigations.md
-    - name: Manage a data spillage incident
-      href: manage-data-spillage-incidents.md
-    - name: Assign permissions for data investigations
-      href: data-investigations-permissions.md
-    - name: Create a new investigation
-      href: create-new-investigation.md
-    - name: Search for data in an investigation
-      href: search-for-data.md
-      items: 
-        - name: Build search queries
-          href: build-search-queries.md
-        - name: Search statistics
-          href: search-statistics.md
-    - name: Review data in evidence
-      href: review-data-in-evidence.md
-      items: 
-        - name: Query the data
-          href: evidence-query.md
-        - name: Tag documents
-          href: tag-documents.md
-        - name: Annotate and redact documents
-          href: annotate-and-redact-documents.md
-        - name: Load non-Office 365 data
-          href: load-non-office365-data.md
-        - name: Error remediation when processing data
-          href: error-remediation.md
-        - name: Delete items from their original location
-          href: delete-items-from-original-locations.md
-    - name: Run analytics to investigate faster
-      href: run-analytics-to-investigate-faster.md
-      items: 
-        - name: Email threading
-          href: email-threading.md
-        - name: Near duplicate detection
-          href: near-duplicates.md
-        - name: Themes
-          href: themes.md
-        - name: Use the Relevance module
-          href: use-relevance-module.md
-    - name: Manage people of interest in an investigation
-      href: manage-people-of-interest.md
-      items: 
-        - name: Index the data of people in an investigation
-          href: index-data-people-of-interest.md
-        - name: View the audit activity of people in an investigation
-          href: view-people-of-interest-activity.md
-    - name: Export data from an investigation
-      href: export-data.md
-      items: 
-        - name: Export documents from evidence
-          href: export-documents-from-incident.md
-        - name: Download export jobs
-          href: download-export-jobs-from-a-data-investigation.md
-    - name: Configure investigation settings
-      items: 
-        - name: Add or remove members from an investigation
-          href: add-remove-members.md
-        - name: Configure search and analytics settings
-          href: configure-search-analytics-settings.md
-        - name: Close or delete an investigation
-          href: close-or-delete-investigation.md
-    - name: Data investigations reference
-      items: 
-        - name: Release notes
-          href: data-investigations-release-notes.md
-        - name: Limits in data investigations
-          href: limits-datainvestigations.md
-        - name: Supported file types
-          href: supported-filetypes-datainvestigations.md
-        - name: Document metadata fields
-          href: document-metadata-fields.md
-        - name: Manage jobs
-          href: manage-jobs.md
 - name: Manage holds
   items: 
     - name: How to identify the type of hold placed on a mailbox

@@ -25,7 +25,7 @@ If you use sensitivity labels in your organization, we recommend using them to c
 
 ## Change group settings using Microsoft PowerShell
 
-You can also prevent the addition of new guests to individual groups by using PowerShell.
+You can also prevent the addition of new guests to individual groups by using PowerShell. (Remember that the team's associated SharePoint site has [separate guest sharing controls](https://docs.microsoft.com/sharepoint/change-external-sharing-site).)
 
 You must use the preview version of [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
 
