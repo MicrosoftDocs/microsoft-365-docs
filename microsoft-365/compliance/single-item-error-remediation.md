@@ -72,7 +72,7 @@ To remediate a single document, follow these steps:
 
     ![You can view the remediated file in the native format in the review set](../media/SIERimage9.png)
 
-For more information about what happens when a document is remediated, see [What happens when files are remediated](error-remediation.md#what-happens-when-files-are-remediated).
+For more information about what happens when a document is remediated, see [What happens when files are remediated](error-remediation-when-processing-data-in-advanced-ediscovery.md#what-happens-when-files-are-remediated).
 
 ## Search for remediated documents
 
