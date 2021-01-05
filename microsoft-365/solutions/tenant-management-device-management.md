@@ -1,5 +1,5 @@
 ---
-title: Step 5. Device and app management for your Microsoft 365 for enterprise tenancies
+title: Step 5. Device and app management for your Microsoft 365 for enterprise tenants
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.custom:
 description: "Deploy the correct option for device and app management for your Microsoft 365 tenants."
 ---
 
-# Step 5. Device and app management for your Microsoft 365 for enterprise tenancies
+# Step 5. Device and app management for your Microsoft 365 for enterprise tenants
 
 Microsoft 365 for enterprise includes features to help manage devices and the use of apps on those devices within your organization with mobile device management (MDM) and mobile application management (MAM). You can use Microsoft Intune or Basic Mobility and Security to manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. For example, you can prevent emails from being sent to people outside your organization or isolate organization data from personal data on your worker's personal devices.
 
@@ -70,16 +70,16 @@ For device access and app management, use the configurations in these articles:
 
 ## Results of Step 5
 
-For device and app management for your Microsoft 365 tenancy, you have determined:
+For device and app management for your Microsoft 365 tenant, you have determined:
 
 - Whether to use Intune or Basic Mobility and Security.
 - The settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps.
 
-Here is an example of a tenancy with device and app management with the new elements highlighted.
+Here is an example of a tenant with device and app management with the new elements highlighted.
 
-![Example of a tenancy with device and app management](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+![Example of a tenant with device and app management](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
-The tenancy has:
+The tenant has:
 
 - Organization-owned devices enrolled in Intune.
 - Intune device and app policies for enrolled and personal devices.

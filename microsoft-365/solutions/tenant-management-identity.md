@@ -1,5 +1,5 @@
 ---
-title: Step 3. Identity for your Microsoft 365 for enterprise tenancies
+title: Step 3. Identity for your Microsoft 365 for enterprise tenants
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,9 +16,9 @@ ms.custom:
 description: "Deploy the correct identity model for your Microsoft 365 tenants and enforce strong user sign-ins."
 ---
 
-# Step 3. Identity for your Microsoft 365 for enterprise tenancies
+# Step 3. Identity for your Microsoft 365 for enterprise tenants
 
-Your Microsoft 365 tenancy includes an Azure Active Directory (Azure AD) tenant to manage identities and authentication for sign-ins. Getting your identity infrastructure configured correctly is vital to managing Microsoft 365 user access and permissions for your organization.
+Your Microsoft 365 tenant includes an Azure Active Directory (Azure AD) tenant to manage identities and authentication for sign-ins. Getting your identity infrastructure configured correctly is vital to managing Microsoft 365 user access and permissions for your organization.
 
 ## Cloud-only vs. hybrid
 
@@ -72,16 +72,16 @@ To increase the security of user sign-ins, use the features and capabilities in 
 
 ## Results of Step 3
 
-For identity for your Microsoft 365 tenancy, you have determined:
+For identity for your Microsoft 365 tenant, you have determined:
 
 - Which identity model to use.
 - How you will enforce strong user and device access.
 
-Here is an example a tenancy with the new hybrid identity elements highlighted.
+Here is an example a tenant with the new hybrid identity elements highlighted.
 
-![Example of hybrid identity for a tenancy](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
+![Example of hybrid identity for a tenant](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
 
-The tenancy has:
+The tenant has:
 
 - An AD DS forest that is being synchronized with the Azure AD tenant using a DirSync server and Azure AD Connect.
 - A copy of the AD DS user accounts and other objects from the AD DS forest.

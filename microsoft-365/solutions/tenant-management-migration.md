@@ -1,5 +1,5 @@
 ---
-title: Step 4. Migration for your Microsoft 365 for enterprise tenancies
+title: Step 4. Migration for your Microsoft 365 for enterprise tenants
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.custom:
 description: "Migrate your Windows devices, Office client apps, and Office servers for your your Microsoft 365 tenants."
 ---
 
-# Step 4. Migration for your Microsoft 365 for enterprise tenancies
+# Step 4. Migration for your Microsoft 365 for enterprise tenants
 
 Most enterprise organizations have a heterogeneous environment that includes multiple releases of operating systems, client software, and server software. Microsoft 365 for Enterprise includes the most secure versions of the key components of your IT infrastructure. It also includes productivity features that are designed to take advantage of cloud technologies.
 
@@ -67,17 +67,17 @@ This two-page poster is a quick way to inventory your existing infrastructure. U
 
 ## Results of Step 4
 
-For migration for your Microsoft 365 tenancy, you have determined:
+For migration for your Microsoft 365 tenant, you have determined:
 
 - Which devices are running Windows 7 or Windows 8.1 and the plan to update them to Windows 10 Enterprise.
 - Which devices are running the Office client apps and the plan to update them to Microsoft 365 apps for enterprise.
 - Which on-premises Office server services should be migrated to their Microsoft 365 equivalent and the plan to migrate them and their data.
 
-Here is an example of a tenancy with a completed migration of on-premises servers.
+Here is an example of a tenant with a completed migration of on-premises servers.
 
-![Example of a tenancy with a completed migration of on-premises servers](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
+![Example of a tenant with a completed migration of on-premises servers](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
 
-The tenancy has:
+The tenant has:
 
 - Migrated its on-premises Exchange Server mailboxes to Exchange Online.
 - Migrated its on-premises SharePoint Server sites and data to SharePoint in Microsoft 365.

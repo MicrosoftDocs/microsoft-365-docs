@@ -100,8 +100,8 @@
       items:
       - name: Overview
         href: tenant-management-overview.md
-      - name: Step 1. Your tenancies
-        href: tenant-management-tenancies.md
+      - name: Step 1. Your tenants
+        href: tenant-management-tenants.md
       - name: Step 2. Optimal networking
         href: tenant-management-networking.md
       - name: Step 3. Identity

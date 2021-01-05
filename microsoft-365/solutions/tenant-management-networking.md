@@ -1,5 +1,5 @@
 ---
-title: Step 2. Optimal networking for your Microsoft 365 for enterprise tenancies
+title: Step 2. Optimal networking for your Microsoft 365 for enterprise tenants
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,13 +16,13 @@ ms.custom:
 description: "Optimize the network access to your Microsoft 365 tenants."
 ---
 
-# Step 2. Optimal networking for your Microsoft 365 for enterprise tenancies
+# Step 2. Optimal networking for your Microsoft 365 for enterprise tenants
 
-Microsoft 365 for enterprise includes cloud productivity apps such as Teams and Exchange Online, Microsoft Intune, and many identity and security services of Microsoft Azure. All of these cloud-based services rely on the security, performance, and reliability of connections from client devices on your on-premises network or any location on the Internet. 
+Microsoft 365 for enterprise includes cloud productivity apps such as Teams and Exchange Online, and Microsoft Intune, along with many identity and security services of Microsoft Azure. All of these cloud-based services rely on the security, performance, and reliability of connections from client devices on your on-premises network or any location on the Internet. 
 
-To optimize network access for your tenancy, you need to:
+To optimize network access for your tenant, you need to:
 
-- Optimize the path between your on-premises users and the closest location to the Microsoft network and bypass unnecessary or duplicate packet processing for trusted Microsoft 365 traffic.
+- Optimize the path between your on-premises users and the closest location to the Microsoft network.
 - Optimize access to the Microsoft network for your remote users that are using a remote access VPN solution.
 - Use Network Insights to design the network perimeter for your office locations.
 - Optimize access to specific assets hosted on SharePoint sites with the Office 365 CDN.
@@ -30,15 +30,15 @@ To optimize network access for your tenancy, you need to:
 
 ## Enterprise on-premises workers
 
-For enterprise networks, you should optimize the end user experience by enabling the least restrictive access between clients and the closest Microsoft 365 endpoints. The quality of end user experience is directly related to the performance and responsiveness of the application that the user is using. For example, Microsoft Teams relies on low latency so that user phone calls, conferences and shared screen collaborations are glitch-free, and Outlook relies on great networking connectivity for instant search features that leverage server-side indexing and AI capabilities.
+For enterprise networks, you should optimize the end user experience by enabling the highest-performing network access between clients and the closest Microsoft 365 endpoints. The quality of end user experience is directly related to the performance and responsiveness of the application that the user is using. For example, Microsoft Teams relies on low latency so that user phone calls, conferences and shared screen collaborations are glitch-free.
 
-The primary goal in the network design should be to minimize latency by reducing the round-trip time (RTT) from client machines to the Microsoft Global Network, Microsoft's public network backbone that interconnects all of Microsoft's datacenters with low latency, high availability cloud application entry points spread around the world.
+The primary goal in the network design should be to minimize latency by reducing the round-trip time (RTT) from client devices to the Microsoft Global Network, Microsoft's public network backbone that interconnects all of Microsoft's datacenters with low latency, high availability cloud application entry points spread around the world.
 
 Here is an example of a traditional enterprise network.
 
 ![A traditional enterprise network with central access to the Internet](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
-Here are the problems with this configuration for Microsoft 365 cloud services:
+The problems with this configuration for Microsoft 365 cloud services are:
 
 - Traffic gets sent to non-local front doors, increasing latency.
 - Network hairpins perform duplicate packet processing for trusted traffic, increasing latency.
@@ -46,7 +46,7 @@ Here are the problems with this configuration for Microsoft 365 cloud services:
 
 Optimizing Microsoft 365 network performance doesn't need to be complicated. You can get the best possible performance by following a few key principles:
 
-- Identify Microsoft 365 network traffic, which is trusted traffic bound to Microsoft cloud services.
+- Identify Microsoft 365 network traffic, which is trusted traffic destined to Microsoft cloud services.
 - Allow local branch egress of Microsoft 365 network traffic to the internet from each location where users connect to Microsoft 365.
 - Avoid network hairpins.
 - Allow Microsoft 365 traffic to bypass proxies and packet inspection devices.
@@ -55,7 +55,7 @@ If you implement these principles, you get an enterprise network optimized for M
 
 ![An enterprise network optimized for Microsoft 365](../media/tenant-management-overview/tenant-management-networking-optimized.png)
 
-Here's are how this configuration solves the latency issues of a traditional enterprise network:
+Here's are how the optimized configuration solves the latency issues of a traditional enterprise network:
 
 - Trusted Microsoft 365 traffic skips the WAN backbone and is sent to local front doors for all offices, decreasing latency.
 - Network hairpins that perform duplicate packet processing are skipped for Microsoft 365 trusted traffic, decreasing latency.
@@ -69,11 +69,11 @@ If your remote workers are using a traditional VPN client to obtain remote acces
 
 ![Network traffic from VPN clients without tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Microsoft 365 traffic must take an indirect route through your organization, which could be the forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance. 
+Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance. 
 
 With split tunneling, you can configure your VPN client to exclude specific types of traffic from being sent over the VPN connection to the organization network.
 
-To optimize access to Microsoft 365 cloud resources, configure your split tunneling VPN clients to exclude traffic to the **Optimize** category Microsoft 365 endpoints over the VPN connection. For more information, see [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories). See [the lists](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) of Optimize category endpoints.
+To optimize access to Microsoft 365 cloud resources, configure your split tunneling VPN clients to exclude traffic to the **Optimize** category Microsoft 365 endpoints over the VPN connection. For more information, see [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) and [the lists](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) of Optimize category endpoints for split tunneling.
 
 Here is the resulting traffic flow for split tunneling, in which most of the traffic to Microsoft 365 cloud apps bypass the VPN connection.
 
@@ -108,7 +108,7 @@ For more information, see [Microsoft 365 Network Insights](../enterprise/office-
 
 ## SharePoint performance with the Office 365 CDN
 
-A cloud-based Content Delivery Network (CDN) lets you reduce load times, save bandwidth, and speed responsiveness. A CDN improves performance by caching static assets such as graphic or video files closer to the browsers requesting them, which helps to speed up downloads and reduce latency. You can use the built-in Office 365 Content Delivery Network (CDN), included with SharePoint in Microsoft 365 E3 and E5, to host static assets to provide better performance for your SharePoint Online pages.
+A cloud-based Content Delivery Network (CDN) allows you to reduce load times, save bandwidth, and speed responsiveness. A CDN improves performance by caching static assets such as graphic or video files closer to the browsers requesting them, which helps to speed up downloads and reduce latency. You can use the built-in Office 365 Content Delivery Network (CDN), included with SharePoint in Microsoft 365 E3 and E5, to host static assets to provide better performance for your SharePoint pages.
 
 The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins, or both.
 
@@ -120,17 +120,11 @@ For more information, see [Use the Office 365 CDN with SharePoint Online](../ent
 
 ## Automated endpoint listing
 
-To have your on-premises clients, edge devices, and cloud-based packet analysis services skip processing of trusted Microsoft 365 traffic, you must configure them with the set of endpoints (IP address ranges and DNS names) corresponding to Microsoft 365 services. These endpoints can be manually configured in firewalls and other edge security devices, PAC files for client computers, or SD-WAN devices at branch offices. However, the endpoints change over time, requiring ongoing manual maintenance of the endpoint lists in these locations.
+To have your on-premises clients, edge devices, and cloud-based packet analysis services skip processing of trusted Microsoft 365 traffic, you must configure them with the set of endpoints (IP address ranges and DNS names) corresponding to Microsoft 365 services. These endpoints can be manually configured in firewalls and other edge security devices, PAC files for client computers to bypass proxies, or SD-WAN devices at branch offices. However, the endpoints change over time, requiring ongoing manual maintenance of the endpoint lists in these locations.
 
 To automate the listing and change management for Microsoft 365 endpoints in your client PAC files and network devices, use the [Office 365 IP Address and URL REST-based web service](../enterprise/microsoft-365-ip-web-service.md). This service helps you better identify and differentiate Microsoft 365 network traffic, making it easier for you to evaluate, configure, and stay current with the latest changes.
 
-You can use PowerShell, Python, or other languages to determine the changes to endpoints over time and configure your PAC files and network devices.
-
-Network perimeter device vendors you also can use this web service to:
-
-- Create and test device software to download the list for automated configuration.
-- Check for the current version.
-- Get the current changes.
+You can use PowerShell, Python, or other languages to determine the changes to endpoints over time and configure your PAC files and edge network devices.
 
 The basic process is:
 
@@ -142,25 +136,25 @@ For more information, see [Office 365 IP Address and URL web service](../enterpr
 
 ## Results of Step 2
 
-For your Microsoft 365 tenancy with optimal networking, you have determined:
+For your Microsoft 365 tenant with optimal networking, you have determined:
 
 - How to optimize network performance for on-premises users by adding Internet connections to all branch offices and eliminating network hairpins.
-- How to implement automated trusted endpoint listing for your client-based PAC files and your network devices and services, including ongoing updates.
+- How to implement automated trusted endpoint listing for your client-based PAC files and your network devices and services, including ongoing updates (most suitable for enterprise networks).
 - How to support the access of remote workers to on-premises resources.
-- How to use network insights
-- How to deploy the Office 365 CDN for your tenant. 
+- How to use Network Insights
+- How to deploy the Office 365 CDN.
 
-Here is an example of an enterprise organization and it's tenancy with optimal networking.
+Here is an example of an enterprise organization and its tenant with optimal networking.
 
-![Example of a tenancy with optimal networking](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
+![Example of a tenant with optimal networking](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
-The tenancy for an enterprise organization has:
+The tenant for this enterprise organization has:
 
 - Local internet access for each branch office with an SDWAN device that forwards trusted Microsoft 365 traffic to a local front door.
-- Eliminated network hairpins.
-- Central office security and proxy edge devices that forward Microsoft 365 trusted traffic without processing to a local front door.
+- No network hairpins.
+- Central office security and proxy edge devices that forward Microsoft 365 trusted traffic to a local front door.
 
 ## Ongoing maintenance for optimal networking
 

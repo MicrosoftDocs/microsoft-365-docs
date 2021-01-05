@@ -18,23 +18,23 @@ description: "An overview of the planning, deployment, and ongoing operation of 
 
 # Tenant management for Microsoft 365 for enterprise
 
-Creating a path to your organization's digital transformation and the cloud requires a firm foundation upon which your workers can rely for productivity, collaboration, performance, privacy, compliance, and security.
+Creating a path to your organization's digital transformation with cloud computing requires a firm foundation upon which your workers can rely for productivity, collaboration, performance, privacy, compliance, and security.
 
-Correct configuration of your Microsoft 365 tenancies provides that foundation, leaving your workers to focus on getting their work done and your IT department to focus on end-to-end solutions that provide additional business value. 
+Correct configuration of your Microsoft 365 tenants provides that foundation, leaving your workers to focus on getting their work done and your IT department to focus on end-to-end solutions that provide additional business value. 
 
 This solution takes you through the configuration of that foundation in these steps:
 
-1. Determine your tenancies
+1. Determine your tenants
 2. Optimize your networking
 3. Synchronize your identities and enforce secure sign-ins
 4. Migrate your Windows devices, Office clients, and on-premises Office servers and data
 5. Deploy device and app management
 
-But first, let's take a moment to understand what a tenancy is and what a tenancy that provides a firm foundation looks like.
+But first, let's take a moment to understand what a tenant is and what a tenant that provides a firm foundation looks like.
 
 ## A Microsoft 365 tenant defined
 
-A Microsoft 365 tenant is a dedicated instance of the services of Microsoft 365 and your organization data stored within a specific default location, such as Europe or North America. This location is specified when you create the tenant for your organization. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. You create a Microsoft 365 tenant when you purchase one or more services from Microsoft, such as Microsoft 365 E3 or E5, and a set of licenses for each.
+A Microsoft 365 tenant is a dedicated instance of the services of Microsoft 365 and your organization data stored within a specific default location, such as Europe or North America. This location is specified when you create the tenant for your organization. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. You create a Microsoft 365 tenant when you purchase one or more products from Microsoft, such as Microsoft 365 E3 or E5, and a set of licenses for each.
 
 Your Microsoft 365 tenant also includes an Azure Active Directory (Azure AD) tenant, which is a dedicated instance of Azure AD for user accounts, groups, and other objects. Each Azure AD tenant is distinct, unique, and separate from all other Azure AD tenants. While your organization can have multiple Azure AD tenants that you can set up with Azure subscriptions, Microsoft 365 tenants can only use a single Azure AD tenant, the one that was created when you created the tenant. 
 
@@ -44,9 +44,9 @@ Here is an example:
 
 *Tenant management* is the planning, deployment, and ongoing operation of your Microsoft 365 tenants. 
 
-## Attributes of a well-designed and operating tenancy
+## Attributes of a well-designed and operating tenant
 
-Beyond choosing the right name and location for your tenancy, there are additional elements to plan, deploy, and manage to ensure that your user experiences with cloud productivity apps, such as Microsoft Teams and Exchange Online, are effective, secure, and performant.
+Beyond the correct name and location for your tenant, there are additional elements to plan, deploy, and manage to ensure that your user experiences with cloud productivity apps&mdash;such as Microsoft Teams and Exchange Online&mdash;are effective, secure, and performant.
 
 Here are the elements:
 
@@ -59,7 +59,7 @@ Here are the elements:
   - You have optimized network traffic for remote workers who are using a VPN client.
 - You have synchronized your Active Directory Domain Services (AD DS)accounts, groups, and other objects.
   - Your Azure AD tenant accounts are mapped to Exchange Online mailboxes with the correct DNS domains for email addresses.
-  - Your user accounts have been assigned the correct licenses from the correct purchased services (such as Microsoft 365 E3 or E5).
+  - Your user accounts have been assigned the correct licenses from the correct purchased products (such as Microsoft 365 E3 or E5).
 - You have configured strong identity and access management.
   - You are requiring secure user sign-in with passwordless or multi-factor authentication (MFA).
   - You have Conditional Access policies that enforce sign-in requirements and restrictions for higher levels of security.
@@ -83,11 +83,11 @@ This Microsoft 365 tenant includes:
 
 The following sections and table list the key capabilities and licensing for the steps in this solution.
 
-### Tenancy
+### Tenant
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Multiple tenancies | Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. With multiple tenants, there are restrictions and additional considerations when managing them and providing services to your users. | Microsoft 365 E3 or E5 | 
+| Multiple tenants | Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. With multiple tenants, there are restrictions and additional considerations when managing them and providing services to your users. | Microsoft 365 E3 or E5 | 
 | Cross-tenant mailbox migration | Tenant administrators can move mailboxes between tenants with minimal infrastructure dependencies in their on-premises systems. This removes the need to off-board and onboard mailboxes. | Microsoft 365 E3 or E5 | 
 | Multi-Geo | Your tenant can store data at rest in the other datacenter geo locations that you've chosen to meet data residency requirements. | Microsoft 365 E3 or E5 | 
 | Move core data to a new datacenter geo | As Microsoft adds new datacenter geos for additional capacity and compute resources, you can request a datacenter geo move for in-geo data residency for your core customer data. | Microsoft 365 E3 or E5 | 
@@ -131,14 +131,16 @@ The following sections and table list the key capabilities and licensing for the
 
 ## Next steps
 
-Use these steps to set up and manage your Microsoft 365 tenancies.
+Use these steps to set up and manage your Microsoft 365 tenants.
 
-1. [Determine your tenancies](tenant-management-tenancies.md)
+1. [Determine your tenants](tenant-management-tenants.md)
 2. [Optimize your networking](tenant-management-networking.md)
 3. [Synchronize your identities and enforce secure sign-ins](tenant-management-identity.md)
 4. [Migrate your on-premises Office servers and data](tenant-management-migration.md)
 5. [Deploy device and app management](tenant-management-device-management.md)
 
-[![The steps to deploy and manage a Microsoft 365 tenancy](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenancies.md)
+[![The steps to deploy and manage a Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
-To understand how a fictional but representative multi-national organization deployed the elements of their Microsoft 365 tenancy, see the [Contoso case study](../enterprise/contoso-case-study.md).
+Each step describes deployment options, summarizes the results, and lists the ongoing maintenance tasks of the step.
+
+To understand how a fictional but representative multi-national organization deployed the elements of their Microsoft 365 tenant, see the [Contoso case study](../enterprise/contoso-case-study.md).
