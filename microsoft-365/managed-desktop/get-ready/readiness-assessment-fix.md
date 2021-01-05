@@ -23,7 +23,8 @@ For each check, the tool will report one of four possible results:
 |Not ready | *Enrollment will fail if you don't fix these issues.* Follow the steps in the tool or this article to resolve them.        |
 |Error | The Azure Active Director (AD) role you're using doesn't have sufficient permission to run this check. |
 
-Note that assessment results reflect a point-in-time check and subsequent changes to Intune, Azure AD and M365 policies after running this check may shift settings that are in Ready state to Not ready. Prior to any policy changes affecting any of the below specific settings, review the conditions below affecting that setting to ensure the change will not cause errors in Microsoft Management Desktop operations.
+> [!NOTE]
+> The results reported by this tool reflect the status of your settings only at the specific point in time that you ran it. If you later make any changes to policies in Microsoft Intune, Azure Active Directory, or Microsoft 365, items that were "Ready" can become "Not ready." To avoid problems with Microsoft Managed Desktop operations, check the specific settings described in this article before you change any policies.
 
 ## Microsoft Intune settings
 
