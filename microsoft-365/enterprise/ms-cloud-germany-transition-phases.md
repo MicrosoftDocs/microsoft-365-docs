@@ -73,6 +73,10 @@ Additional considerations:
 
 - Upon completion of the OneDrive migration to the German region, data indexes are rebuilt. Features that depend on search indexes may be affected while reindexing is in progress.
 
+- Microsoft Cloud Deutschland customers whose SharePoint Online instance is not yet migrated need to stay on SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 or below. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
+
+- Microsoft Cloud Deutschland customers whose SharePoint Online instance is migrated must update SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM to version 16.0.20717.12000 or above. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
+
 
 ## Skype for Business Online
 
