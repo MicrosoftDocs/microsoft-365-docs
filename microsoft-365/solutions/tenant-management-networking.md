@@ -122,7 +122,7 @@ For more information, see [Use the Office 365 CDN with SharePoint Online](../ent
 
 To have your on-premises clients, edge devices, and cloud-based packet analysis services skip processing of trusted Microsoft 365 traffic, you must configure them with the set of endpoints (IP address ranges and DNS names) corresponding to Microsoft 365 services. These endpoints can be manually configured in firewalls and other edge security devices, PAC files for client computers, or SD-WAN devices at branch offices. However, the endpoints change over time, requiring ongoing manual maintenance of the endpoint lists in these locations.
 
-To automate the listing and change management for Microsoft 365 endpoints in your client PAC files and network devices, use the [Office 365 IP Address and URL REST-based web service](.../enterprise/microsoft-365-ip-web-service.md). This service helps you better identify and differentiate Microsoft 365 network traffic, making it easier for you to evaluate, configure, and stay current with the latest changes.
+To automate the listing and change management for Microsoft 365 endpoints in your client PAC files and network devices, use the [Office 365 IP Address and URL REST-based web service](../enterprise/microsoft-365-ip-web-service.md). This service helps you better identify and differentiate Microsoft 365 network traffic, making it easier for you to evaluate, configure, and stay current with the latest changes.
 
 You can use PowerShell, Python, or other languages to determine the changes to endpoints over time and configure your PAC files and network devices.
 
@@ -138,7 +138,7 @@ The basic process is:
 2. Run a daily recurring to check for changes in the endpoints or use a notification method.
 3. When changes are detected, regenerate and redistribute the PAC file for client computers and make the changes to your network devices.
 
-For more information, see [Office 365 IP Address and URL web service](.../enterprise/microsoft-365-ip-web-service.md).
+For more information, see [Office 365 IP Address and URL web service](../enterprise/microsoft-365-ip-web-service.md).
 
 ## Results of Step 2
 
