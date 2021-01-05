@@ -140,10 +140,7 @@ This role lets users view a list of items that were returned from a Content Sear
 
 ### Review
 
-This role lets users access case data in [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md) (also know as *Advanced eDiscovery v1*). The primary purpose of this role is to give users access to Advanced eDiscovery (classic). Users who are assigned this role can see and open the list of cases on the **eDiscovery** page in the Security & Compliance Center that they're members of. After the user accesses a case in the Security & Compliance Center, they can select **Switch to Advanced eDiscovery** to access and analyze the case data in Advanced eDiscovery (classic). This role doesn't allow the user to preview the results of a content search that's associated with the case or do other content search or case management tasks.
-
-> [!NOTE]
-> At this time, users who are assigned the Review role (or is a member of the Reviewer role group) can't access data in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (also known as *Advanced eDiscovery v2.0*). To add members to a case in Advanced eDiscovery v2.0 so that they can review case data, a user must be a member of the eDiscovery Manager role group.
+This role lets users access review sets in [Advanced eDiscovery](overview-ediscovery-20.md). Users who are assigned this role can see and open the list of cases on the **eDiscovery** page in the Microsoft 365 Compliance Center that they're members of. After the user accesses a case in the Microsoft 365 Compliance Center, they can select **Review sets** to access data in Advanced eDiscovery. This role doesn't allow the user to preview the results of a content search that's associated with the case or do other content search or case management tasks.
 
 ### RMS Decrypt
 
