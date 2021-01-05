@@ -30,7 +30,7 @@ The Report Message and Report Phishing add-ins for Outlook and Outlook on the we
 
 Microsoft uses these submissions to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phishing add-in. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
-You can choose to install one of the available add-ins:
+You can install either the Report Message or Report Phishing add-in:
 
 - **Report Message add-in**: The Report Message add-in provides options to report messages as Junk, Not Junk, and Phishing. For more information about the Report Message add-in, see [Enable the report message add-in](enable-the-report-message-add-in.md).
 - **Report Phishing add-in**: The Report Phishing add-in provides the option to only report Phishing messages. To get started with the Report Phishing add-in, see the [What do you need to know before you begin](#what-do-you-need-to-know-before-you-begin) section in this article.
