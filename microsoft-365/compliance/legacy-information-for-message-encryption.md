@@ -42,10 +42,6 @@ Here are some examples:
 
 Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS). With Azure RMS, administrators can define mail flow rules to determine the conditions for encryption. For example, a rule can require the encryption of all messages addressed to a specific recipient.
   
-Watch this short video to see how Office 365 Message Encryption works without the new capabilities.
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/c55540e7-f7f0-42f5-b254-4b2d2fbb1d63?autoplay=false]
-  
 When someone sends an email message in Exchange Online that matches an encryption rule, the message is sent with an HTML attachment. The recipient opens the HTML attachment and follows instructions to view the encrypted message on the Office 365 Message Encryption portal. The recipient can choose to view the message by signing in with a Microsoft account or a work or school associated with Office 365, or by using a one-time pass code. Both options help ensure that only the intended recipient can view the encrypted message. This process is very different for the new OME capabilities.
   
 The following diagram summarizes the passage of an email message through the encryption and decryption process.
@@ -178,8 +174,9 @@ As an Exchange Online and Exchange Online Protection administrator, you can cust
 You can also revert back to the default look and feel at any time.
   
 The following example shows a custom logo for ContosoPharma in the email attachment:
-  
-![Sample of the view encrypted message page](../media/TA-OME-3attachment2.jpg)
+
+> [!div class="mx-imgBorder"]
+> ![Sample of the view encrypted message page](../media/TA-OME-3attachment2.jpg)
   
 **To customize encryption email messages and the encryption portal with your organization's brand**
   
@@ -189,12 +186,12 @@ The following example shows a custom logo for ContosoPharma in the email attachm
 
    **Encryption customization options**
 
-**To customize this feature of the encryption experience**|**Use these Windows PowerShell commands**|
-|:-----|:-----|
-|Default text that accompanies encrypted email messages  <br/> The default text appears above the instructions for viewing encrypted messages  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
-|Disclaimer statement in the email that contains the encrypted message  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
-|Text that appears at the top of the encrypted mail viewing portal  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
-|Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Example:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Supported file formats: .png, .jpg, .bmp, or .tiff  <br/> Optimal size of logo file: less than 40 KB  <br/> Optimal size of logo image: 170x70 pixels  <br/> |
+   | To customize this feature of the encryption experience | Use these Windows PowerShell commands |
+   |:-----|:-----|
+   |Default text that accompanies encrypted email messages  <br/> The default text appears above the instructions for viewing encrypted messages  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
+   |Disclaimer statement in the email that contains the encrypted message  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
+   |Text that appears at the top of the encrypted mail viewing portal  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
+   |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Example:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Supported file formats: .png, .jpg, .bmp, or .tiff  <br/> Optimal size of logo file: less than 40 KB  <br/> Optimal size of logo image: 170x70 pixels  <br/> |
 
 **To remove brand customizations from encryption email messages and the encryption portal**
   
@@ -204,19 +201,19 @@ The following example shows a custom logo for ContosoPharma in the email attachm
 
    **Encryption customization options**
 
-|**To revert this feature of the encryption experience back to the default text and image**|**Use these Windows PowerShell commands**|
-|:-----|:-----|
-|Default text that accompanies encrypted email messages  <br/> The default text appears above the instructions for viewing encrypted messages  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
-|Disclaimer statement in the email that contains the encrypted message  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
-|Text that appears at the top of the encrypted mail viewing portal  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Example reverting back to default:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
-|Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Example reverting back to default:** `Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
+   | To revert this feature of the encryption experience back to the default text and image | Use these Windows PowerShell commands |
+   |:-----|:-----|
+   |Default text that accompanies encrypted email messages  <br/> The default text appears above the instructions for viewing encrypted messages  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
+   |Disclaimer statement in the email that contains the encrypted message  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
+   |Text that appears at the top of the encrypted mail viewing portal  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Example reverting back to default:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
+   |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Example reverting back to default:** `Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
 
 ## Service information for legacy Office 365 Message Encryption prior to the release of the new OME capabilities
 <a name="LegacyServiceInfo"> </a>
 
 The following table provides technical details for the Office 365 Message Encryption service prior to the release of the new OME capabilities.
   
-|**Service details**|**Description**|
+| Service details | Description |
 |:-----|:-----|
 |Client device requirements  <br/> |Encrypted messages can be viewed on any client device, as long as the HTML attachment can be opened in a modern browser that supports Form Post.  <br/> |
 |Encryption algorithm and Federal Information Processing Standards (FIPS) compliance  <br/> |Office 365 Message Encryption uses the same encryption keys as Windows Azure Information Rights Management (IRM) and supports Cryptographic Mode 2 (2K key for RSA and 256 bits key for SHA-1 systems). For more information about the underlying IRM cryptographic modes, see [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439%28WS.10%29.aspx).  <br/> |
@@ -297,7 +294,7 @@ All EHE customers have been upgraded to Office 365 Message Encryption. For more 
   
 Yes. You have to add URLs for Exchange Online to the allow list for your organization to enable authentication for messages encrypted by Office 365 Message Encryption. For a list of Exchange Online URLs, see [Microsoft 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
   
- **Q. How many recipients can I send an Microsoft 365 encrypted message to?**
+ **Q. How many recipients can I send a Microsoft 365 encrypted message to?**
   
 The recipient limit is 500 recipients per message, or, when combined after distribution list expansion, 11,980 characters in the message's **To** field, whichever comes first.
   

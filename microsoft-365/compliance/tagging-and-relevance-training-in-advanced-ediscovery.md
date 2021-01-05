@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of Advanced eDiscovery."
 ---
 
@@ -93,17 +94,3 @@ The sample files list allows you to view a list of the files in a training sampl
     
     To navigate to the last file in the sample: Shift + Ctrl + \>
     
-## See also
-
-[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
-  
-[Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging and Assessment](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Deciding based on the results](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)
-

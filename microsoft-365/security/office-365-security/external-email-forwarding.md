@@ -20,7 +20,7 @@ description: "."
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-As an admin, you might have company requirements to restrict or control automatically forwarded messages to external recipients (recipients outside of your organization). Email forwarding can be a useful, but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or partners.
+As an admin, you might have company requirements to restrict or control automatically forwarded messages to external recipients (recipients outside of your organization). Email forwarding can be a useful feature, but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or partners.
 
 The following types of automatic forwarding are available in Microsoft 365:
 

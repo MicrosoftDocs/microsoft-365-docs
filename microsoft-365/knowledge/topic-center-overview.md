@@ -42,6 +42,13 @@ The Topic center is created during Topic Experiences setup. After setup complete
 
 ## Home page
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]  
+
+</br>
+
+
 On the Topic center home page, you can see the topics in your organization to which you have a connection.
 
 - Suggested connections - You will see suggested topics listed under **We've listed you on these topics. Did we get it right?**. These are topics where your connection to the topic has been suggested through AI. For example, you may be the owner of a related file or site. Suggested topics will ask you to confirm you connection to the topic.
