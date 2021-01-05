@@ -15,7 +15,9 @@ ms.topic: article
 
 After you've completed enrollment in Microsoft Managed Desktop, you need to adjust certain Microsoft Intune and Azure Active Directory (Azure AD) settings to allow for management and maintain security. Set the following settings to exclude the Azure AD groups that contain Microsoft Managed Desktop devices and users. For steps to exclude groups, see [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users).
 
-Note that policy changes made by tenant admins to Intune, Azure AD and M365 policies after Microsoft Management Desktop enrollment may prevent Microsoft Managed Desktop from operating properly. Prior to making a policy change, review the conditions related to specific setting listed in [Fix issues found by the readiness assessment tool](https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/get-ready/readiness-assessment-fix?view=o365-worldwide) to ensure the change will not cause errors in Microsoft Management Desktop operations.
+> [!NOTE]
+> If you make any changes after enrollment to policies in Microsoft Intune, Azure Active Directory, or Microsoft 365, it's possible that Microsoft Managed Desktop could stop operating properly. To avoid problems with Microsoft Managed Desktop operations, check the specific settings described in [Fix issues found by the readiness assessment tool](../get-ready/readiness-assessment-fix.md) before you change any policies.
+
 
 ## Microsoft Intune settings
 
