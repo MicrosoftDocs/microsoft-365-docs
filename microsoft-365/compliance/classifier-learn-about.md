@@ -20,7 +20,7 @@ search.appverid:
 description: "A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it positive and negative samples to look at. Once the classifier is trained, you confirm that its results are accurate. Then you use it to search through your organization's content and classify it to apply retention or sensitivity labels or include it in data loss prevention (DLP) or retention policies."
 ---
 
-# Learn about classifiers
+# Learn about trainable classifiers
 
 Classifying and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content.
 
