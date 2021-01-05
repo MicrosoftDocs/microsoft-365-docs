@@ -87,27 +87,27 @@ The following sections and table list the key capabilities and licensing for the
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Multiple tenancies |  | Microsoft 365 E3 or E5 | 
-| Cross-tenant mailbox migration |  | Microsoft 365 E3 or E5 | 
-| Multi-Geo |  | Microsoft 365 E3 or E5 | 
-| Move core data to a new datacenter geo |  | Microsoft 365 E3 or E5 | 
+| Multiple tenancies | Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. With multiple tenants, there are restrictions and additional considerations when managing them and providing services to your users. | Microsoft 365 E3 or E5 | 
+| Cross-tenant mailbox migration | Tenant administrators can move mailboxes between tenants with minimal infrastructure dependencies in their on-premises systems. This removes the need to off-board and onboard mailboxes. | Microsoft 365 E3 or E5 | 
+| Multi-Geo | Your tenant can store data at rest in the other datacenter geo locations that you've chosen to meet data residency requirements. | Microsoft 365 E3 or E5 | 
+| Move core data to a new datacenter geo | As Microsoft adds new datacenter geos for additional capacity and compute resources, you can request a datacenter geo move for in-geo data residency for your core customer data. | Microsoft 365 E3 or E5 | 
 ||||
 
 ### Networking
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Network Insights |  | Microsoft 365 E3 or E5 | 
-| Automate endpoint updates |  | Microsoft 365 E3 or E5 | 
+| Network Insights | Network performance metrics collected from your Microsoft 365 tenant to help you design network perimeters for your office locations. | Microsoft 365 E3 or E5 | 
+| Automate endpoint updates | Automate the configuration and ongoing updates for Microsoft 365 endpoints in your client PAC files and network devices and services. | Microsoft 365 E3 or E5 | 
 ||||
 
 ### Identity
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Synchronize on-premises Active Directory Domain Services (AD DS) with your Azure AD tenant	| 	| Microsoft 365 E3 or E5 |
+| Synchronize on-premises Active Directory Domain Services (AD DS) with your Azure AD tenant	| Leverage your on-premises identity provider for user accounts, groups, and other objects.	| Microsoft 365 E3 or E5 |
 | MFA enforced with security defaults	| Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.	| Microsoft 365 E3 or E5 |
-| MFA enforced with Conditional Access| Require MFA based on the properties of the sign-in with Conditional Access policies.	| Microsoft 365 E3 or E5 | 
+| MFA enforced with Conditional Access| Require MFA based on the attributes of the sign-in with Conditional Access policies.	| Microsoft 365 E3 or E5 | 
 | MFA enforced with risk-based Conditional Access	| Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses | 
 | Self-Service Password Reset (SSPR)	| Allow your users to reset or unlock their passwords or accounts.	| Microsoft 365 E3 or E5 |
 ||||
@@ -116,17 +116,18 @@ The following sections and table list the key capabilities and licensing for the
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-|  |  | Microsoft 365 E3 or E5 | 
+| Migrate to Windows 10 | Migrate your devices that run Windows 7 or Windows 8.1 to Windows 10 Enterprise. | Windows 10 Enterprise licenses included with Microsoft 365 E3 or E5 | 
+| Migrate to Microsoft 365 Apps for enterprise | Migrate your Office client apps such as Word and PowerPoint to the versions installed from the cloud that are updated with new features. | Microsoft 365 E3 or E5 | 
+| Migrate on-premises servers and data to Microsoft 365 | Migrate your Exchange mailboxes, SharePoint sites, and Skype for Business Online to Microsoft 365 cloud services. | Microsoft 365 E3 or E5 | 
 ||||
 
 ### Device and app management
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Microsoft Intune | Manage devices and applications.	| Microsoft 365 E3 or E5 | 
-| Basic Mobility and Security | Manage devices and applications.	| Microsoft 365 E3 or E5 | 
+| Microsoft Intune | A cloud-based service that provides mobile device management (MDM) and mobile application management (MAM) to control how your organization’s application and the devices are used, including mobile phones, tablets, and laptops.	| Microsoft 365 E3 or E5 | 
+| Basic Mobility and Security | Secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones with this built-in service.	| Microsoft 365 E3 or E5 | 
 ||||
-
 
 ## Next steps
 

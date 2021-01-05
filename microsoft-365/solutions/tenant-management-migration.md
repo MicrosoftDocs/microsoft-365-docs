@@ -69,7 +69,9 @@ This two-page poster is a quick way to inventory your existing infrastructure. U
 
 For migration for your Microsoft 365 tenancy, you have determined:
 
-- add
+- Which devices are running Windows 7 or Windows 8.1 and the plan to update them to Windows 10 Enterprise.
+- Which devices are running the Office client apps and the plan to update them to Microsoft 365 apps for enterprise.
+- Which on-premises Office server services should be migrated to their Microsoft 365 equivalent and the plan to migrate them and their data.
 
 Here is an example of a tenancy with a completed migration of on-premises servers.
 
@@ -84,8 +86,8 @@ The tenancy has:
 
 On an ongoing basis, you might need to:
 
-- add
-
+- Depending on the state of your Exchange mailbox migration, continue rolling the transition to Exchange Online out to your organization.
+- Depending on the state of your on-premises SharePoint site migration, continue rolling the transition to SharePoint in Microsoft 365 out to your organization.
 
 ## Next step
 

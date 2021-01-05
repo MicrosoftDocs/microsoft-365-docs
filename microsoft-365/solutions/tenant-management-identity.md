@@ -35,9 +35,9 @@ Here are the basic components of cloud-only identity.
  
 ![Basic components of cloud-only identity](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-Here are the components of hybrid identity.
+Here are the basic components of hybrid identity.
 
-![Components of hybrid identity](../media/about-microsoft-365-identity/hybrid-identity.png)
+![Basic components of hybrid identity](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 ## Synchronizing your on-premises AD DS
 
@@ -64,7 +64,7 @@ To increase the security of user sign-ins, use the features and capabilities in 
 | Capability | Description | More information | Licensing requirements |
 |:-------|:-----|:-----|:-----|:-----|
 | Windows Hello for Business | Replaces passwords with strong two-factor authentication when signing on a Windows device. The two factors are a new type of user credential that is tied to a device and a biometric or PIN. | [Windows Hello for Business Overview](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 or E5 |
-| Azure Azure AD Password Protection | Detects and blocks known weak passwords and their variants and can also block additional weak terms that are specific to your organization. | [Configure Azure AD password protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 or E5 |
+| Azure AD Password Protection | Detects and blocks known weak passwords and their variants and can also block additional weak terms that are specific to your organization. | [Configure Azure AD password protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 or E5 |
 | Use multi-factor authentication (MFA) | MFA requires that user sign-ins be subject to an additional verification beyond the user account password, such as verification with a smartphone app or a text message sent to a smartphone. | [MFA for Microsoft 365 for enterprise](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 or E5 |
 | Identity and device access configurations | Settings and policies are recommended prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions.  | [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 or E5 |
 | Azure AD Identity Protection | Protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. | [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 or Microsoft 365 E5 with the Identity & Threat Protection add-on |
@@ -74,11 +74,12 @@ To increase the security of user sign-ins, use the features and capabilities in 
 
 For identity for your Microsoft 365 tenancy, you have determined:
 
-- add
+- Which identity model to use.
+- How you will enforce strong user and device access.
 
-Here is an example of identity for a tenancy with identity elements.
+Here is an example a tenancy with the new hybrid identity elements highlighted.
 
-![Example of identity for a tenancy](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
+![Example of hybrid identity for a tenancy](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
 
 The tenancy has:
 
@@ -90,8 +91,8 @@ The tenancy has:
 
 On an ongoing basis, you might need to:
 
-- add
-
+- Add or modify user accounts and groups. For cloud-only identity, you maintain your cloud-based users and groups with Azure AD tools such as the Microsoft 365 admin center or PowerShell. For hybrid identity, you maintain your on-premises users and groups with AD DS tools.
+- Add or modify your identity and device access configuration to enforce sign-in security requirements.
 
 ## Next step
 

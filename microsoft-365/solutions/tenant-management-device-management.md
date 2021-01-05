@@ -72,9 +72,10 @@ For device access and app management, use the configurations in these articles:
 
 For device and app management for your Microsoft 365 tenancy, you have determined:
 
-- add
+- Whether to use Intune or Basic Mobility and Security.
+- The settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps.
 
-Here is an example of a tenancy with device and app management.
+Here is an example of a tenancy with device and app management with the new elements highlighted.
 
 ![Example of a tenancy with device and app management](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
@@ -85,7 +86,5 @@ The tenancy has:
 
 ## Ongoing maintenance for device and app management
 
-On an ongoing basis, you might need to:
-
-- add
+On an ongoing basis, you might need to revise your settings and policies for additional apps, devices, and security requirements.
 
