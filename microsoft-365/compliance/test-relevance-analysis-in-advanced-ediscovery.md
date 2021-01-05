@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to use the Test tab after Batch calculation in Advanced eDiscovery to test, compare, and validate the overall quality of processing."
 ---
 
@@ -104,18 +105,3 @@ The "Test the Slice" test performs testing similar to the "Test the Rest" test, 
 10. Review and tag each of the files in the **Relevance \> Tag** tab and when done, click **Calculate**. 
     
 11. In the Test tab, you can click **View results** to see the test results. 
-    
-## See also
-
-[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
-  
-[Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging and Assessment](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Tagging and Relevance training](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Deciding based on the results](decision-based-on-the-results-in-advanced-ediscovery.md)
-
