@@ -43,7 +43,7 @@ Here's a quick overview of how alert policies work and the alerts that are trigg
 
 2. A user performs an activity that matches the conditions of an alert policy. In the case of malware attacks, infected email messages sent to users in your organization trigger an alert.
 
-3. Microsoft 365 generates an alert that's displayed on the **View alerts** page in the Security & Compliance Center. Also, if email notifications are enabled for the alert policy, Microsoft sends a notification to a list of recipients. The alerts that an admin or other users can see that on the View alerts page is determined by the roles assigned to the user. For more information, see the [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts) section.
+3. Microsoft 365 generates an alert that's displayed on the **View alerts** page in the Security & Compliance Center. Also, if email notifications are enabled for the alert policy, Microsoft sends a notification to a list of recipients. The alerts that an admin or other users can see that on the View alerts page is determined by the roles assigned to the user. For more information, see [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts).
 
 4. An admin manages alerts in the security and compliance center. Managing alerts consists of assigning an alert status to help track and manage any investigation.
 
@@ -100,7 +100,7 @@ An alert policy consists of the following settings and conditions.
 
 Microsoft provides built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. On the **Alert policies** page, the names of these built-in policies are in bold and the policy type is defined as **System**. These policies are turned on by default. You can turn off these policies (or back on again), set up a list of recipients to send email notifications to, and set a daily notification limit. The other settings for these policies can't be edited.
 
-The following table lists and describes the available default alert policies and the category each policy is assigned to. The category is used to determine which alerts a user can view on the View alerts page. For more information, see the [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts) section.
+The following table lists and describes the available default alert policies and the category each policy is assigned to. The category is used to determine which alerts a user can view on the View alerts page. For more information, see [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts).
 
 The table also indicates the Office 365 Enterprise and Office 365 US Government plan required for each one. Some default alert policies are available if your organization has the appropriate add-on subscription in addition to an E1/F1/G1 or E3/G3 subscription.
 
@@ -144,7 +144,7 @@ The unusual activity monitored by some of the built-in policies is based on the 
 
 ## Viewing alerts
 
-When an activity performed by users in your organization matches the settings of an alert policy, an alert is generated and displayed on the **View alerts** page in the security and compliance center. Depending on the settings of an alert policy, an email notification is also sent to a list of specified users when an alert is triggered. For each alert, the dashboard on the **View alerts** page displays the name of the corresponding alert policy, the severity and category for the alert (defined in the alert policy), and the number of times an activity has occurred that resulted in the alert being generated. This value is based on the threshold setting of the alert policy. The dashboard also shows the status for each alert. For more information about using the status property to manage alerts, see the [Managing alerts](#managing-alerts) section.
+When an activity performed by users in your organization matches the settings of an alert policy, an alert is generated and displayed on the **View alerts** page in the security and compliance center. Depending on the settings of an alert policy, an email notification is also sent to a list of specified users when an alert is triggered. For each alert, the dashboard on the **View alerts** page displays the name of the corresponding alert policy, the severity and category for the alert (defined in the alert policy), and the number of times an activity has occurred that resulted in the alert being generated. This value is based on the threshold setting of the alert policy. The dashboard also shows the status for each alert. For more information about using the status property to manage alerts, see [Managing alerts](#managing-alerts).
 
 To view alerts, go to [https://protection.office.com](https://protection.office.com) and then select **Alerts** \> **View alerts**.
 
@@ -164,7 +164,7 @@ You can use the following filters to view a subset of all the alerts on the **Vi
 
 - **Tags.** Use this filter to show alerts from one or more user tags. Tags are reflected based on tagged mailboxes or users that appear in the alerts. See [User tags in Office 356 ATP](..\security\office-365-security\user-tags.md) to learn more.
 
-- **Source.** Use this filter to show alerts triggered by alert policies in the security and compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see the [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts) section.
+- **Source.** Use this filter to show alerts triggered by alert policies in the security and compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts).
 
 > [!IMPORTANT]
 > Filtering and sorting by user tags is currently in public preview.
@@ -211,7 +211,7 @@ This design (based on RBAC permissions) lets you determine which alerts can be  
 
 The following table lists the roles that are required to view alerts from the six different alert categories. The first column in the tables lists all roles in the Security & Compliance Center.  A check mark indicates that a user who is assigned that role can view alerts from the corresponding alert category listed in the top row.
 
-To see which category a default alert policy is assigned to, see the table in the [Default alert policies](#default-alert-policies) section.
+To see which category a default alert policy is assigned to, see the table in [Default alert policies](#default-alert-policies).
 
 |Role|Information governance|Data loss prevention|Mail flow|Permissions|Threat management|Others|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
