@@ -13,7 +13,7 @@ ms.collection:
 - m365solution-tenantmanagement
 ms.custom:
 - Ent_Solutions
-description: "An overview of migration to your your Microsoft 365 tenant for Windows, Office client apps, and Office servers."
+description: "Migrate your Windows devices, Office client apps, and Office servers for your your Microsoft 365 tenants."
 ---
 
 # Step 4. Migration for your Microsoft 365 for enterprise tenancies

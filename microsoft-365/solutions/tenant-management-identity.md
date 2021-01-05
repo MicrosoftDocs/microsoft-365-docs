@@ -13,7 +13,7 @@ ms.collection:
 - m365solution-tenantmanagement
 ms.custom:
 - Ent_Solutions
-description: "An overview of identity models, authentication methods, and how to implement secure sign-ins for your Microsoft 365 tenant."
+description: "Deploy the correct identity model for your Microsoft 365 tenants and enforce strong user sign-ins."
 ---
 
 # Step 3. Identity for your Microsoft 365 for enterprise tenancies

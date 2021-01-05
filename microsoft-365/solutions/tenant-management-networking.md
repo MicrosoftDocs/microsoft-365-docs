@@ -13,12 +13,20 @@ ms.collection:
 - m365solution-tenantmanagement
 ms.custom:
 - Ent_Solutions
-description: "Description."
+description: "Optimize the network access to your Microsoft 365 tenants."
 ---
 
 # Step 2. Optimal networking for your Microsoft 365 for enterprise tenancies
 
-Add overview
+Microsoft 365 for enterprise includes cloud productivity apps such as Teams and Exchange Online, Microsoft Intune, and many identity and security services of Microsoft Azure. All of these cloud-based services rely on the security, performance, and reliability of connections from client devices on your on-premises network or any location on the Internet. 
+
+To optimize network access for your tenancy, you need to:
+
+- Optimize the path between your on-premises users and the closest location to the Microsoft network and bypass unnecessary or duplicate packet processing for trusted Microsoft 365 traffic.
+- Optimize access to the Microsoft network for your remote users that are using a remote access VPN solution.
+- Use Network Insights to design the network perimeter for your office locations.
+- Optimize access to specific assets hosted on SharePoint sites with the Office 365 CDN.
+- Configure proxy and network edge devices to bypass processing for Microsoft 365 trusted traffic with the list of endpoints and automate the updating of the list as changes are made.
 
 ## Enterprise on-premises workers
 
@@ -75,18 +83,16 @@ This allows the VPN client to send and receive crucial Microsoft 365 cloud servi
 
 For more information and guidance, see [Optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-## Using Network Insights
+## Using Network Insights (preview)
 
-**Network insights** are performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
+Network insights are performance metrics collected from your Microsoft 365 tenant that help you design network perimeters for your office locations. Each insight provides live details about the performance characteristics for a specified issue for each geographic location where on-premises users are accessing your tenant.
 
-Insights are intended to help in designing network perimeters for your office locations. Each insight provides live details about the performance characteristics for a specific common issue for each geographic location where users are accessing your tenant.
-
-There are two tenant level network insights that may be shown for the tenant. These also appear in the producvitivy score pages:
+There are two tenant level network insights that may be shown for the tenant:
 
 - [Exchange sampled connections impacted by connectivity issues](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-impacted-by-connectivity-issues)
 - [SharePoint sampled connections impacted by connectivity issues](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
-There are six specific network insights that may be shown for each office location:
+These are the specific network insights for each office location:
 
 - [Backhauled network egress](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
 - [Better performance detected for customers near you](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
@@ -95,28 +101,28 @@ There are six specific network insights that may be shown for each office locati
 - [Low download speed from SharePoint front door](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
-
 >[!IMPORTANT]
->Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
+>Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status. It is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
 
-## SPO performance with the Office 365 CDN
+For more information, see [Microsoft 365 Network Insights](../enterprise/office-365-network-mac-perf-insights.md).
 
-You can use the built-in Office 365 Content Delivery Network (CDN) to host static assets to provide better performance for your SharePoint Online pages. The Office 365 CDN improves performance by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency. Also, the Office 365 CDN uses the [HTTP/2 protocol](https://en.wikipedia.org/wiki/HTTP/2) for improved compression and HTTP pipelining. The Office 365 CDN service is included as part of your SharePoint Online subscription.
+## SharePoint performance with the Office 365 CDN
 
-> [!NOTE]
-> The Office 365 CDN is only available to tenants in the **Production** (worldwide) cloud. Tenants in the US Government, China and Germany clouds do not currently support the Office 365 CDN.
+A cloud-based Content Delivery Network (CDN) lets you reduce load times, save bandwidth, and speed responsiveness. A CDN improves performance by caching static assets such as graphic or video files closer to the browsers requesting them, which helps to speed up downloads and reduce latency. You can use the built-in Office 365 Content Delivery Network (CDN), included with SharePoint in Microsoft 365 E3 and E5, to host static assets to provide better performance for your SharePoint Online pages.
 
-The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins or both. See [Choose whether each origin should be public or private](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) for more information on the difference between public and private origins.
+The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins, or both.
 
-![Office 365 CDN conceptual diagram](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN conceptual diagram")
+When deployed and configured, the Office 365 CDN uploads assets from public and private origins and makes them available for fast access to users located across the Internet.
 
-If you are already familiar with the way that CDNs work, you only need to complete a few steps to enable the Office 365 CDN for your tenant. This topic describes how. Read on for information about how to get started hosting your static assets.
+![Office 365 CDN deployed for users](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN deployed for users")
+
+For more information, see [Use the Office 365 CDN with SharePoint Online](../enterprise/use-microsoft-365-cdn-with-spo.md).
 
 ## Automated endpoint listing
 
-To have your on-premises clients, edge devices, and cloud-based packet analysis services skip processing of trusted Microsoft 365 traffic, you must configure them with the set of endpoints (IP address ranges and DNS names) corresponding to Microsoft 365 services. These endpoints can be manually configured in firewalls and other edge security devices, PAC files for client computers, or SD-WAN devices at branch offices. Hoever, the endpoints change over time, requiring ongoing manual maintenance of the endpoint lists in these locations.
+To have your on-premises clients, edge devices, and cloud-based packet analysis services skip processing of trusted Microsoft 365 traffic, you must configure them with the set of endpoints (IP address ranges and DNS names) corresponding to Microsoft 365 services. These endpoints can be manually configured in firewalls and other edge security devices, PAC files for client computers, or SD-WAN devices at branch offices. However, the endpoints change over time, requiring ongoing manual maintenance of the endpoint lists in these locations.
 
-To automate the listing and change management for Microsoft 365 endpoints in your client PAC files and network devices and services, use the Office 365 IP Address and URL REST-based web service. This services helps you better identify and differentiate Microsoft 365 network traffic, making it easier for you to evaluate, configure, and stay up to date with changes.
+To automate the listing and change management for Microsoft 365 endpoints in your client PAC files and network devices, use the [Office 365 IP Address and URL REST-based web service](.../enterprise/microsoft-365-ip-web-service.md). This service helps you better identify and differentiate Microsoft 365 network traffic, making it easier for you to evaluate, configure, and stay current with the latest changes.
 
 You can use PowerShell, Python, or other languages to determine the changes to endpoints over time and configure your PAC files and network devices.
 
@@ -128,9 +134,9 @@ Network perimeter device vendors you also can use this web service to:
 
 The basic process is:
 
-1. Use the Office 365 IP Address and URL web service and the configuration mechanism of your choice to configure your PAC files and network devices and services with the current set of Microsoft 365 endpoints.
+1. Use the Office 365 IP Address and URL web service and the configuration mechanism of your choice to configure your PAC files and network devices with the current set of Microsoft 365 endpoints.
 2. Run a daily recurring to check for changes in the endpoints or use a notification method.
-3. When changes are detected, regenerate and redistribute the PAC file for client computers and make the changes to your network devices and services.
+3. When changes are detected, regenerate and redistribute the PAC file for client computers and make the changes to your network devices.
 
 For more information, see [Office 365 IP Address and URL web service](.../enterprise/microsoft-365-ip-web-service.md).
 
@@ -139,8 +145,8 @@ For more information, see [Office 365 IP Address and URL web service](.../enterp
 For your Microsoft 365 tenancy with optimal networking, you have determined:
 
 - How to optimize network performance for on-premises users by adding Internet connections to all branch offices and eliminating network hairpins.
-- How to implement automated trusted endpoint whitelisting for your client-based PAC files and your network devices and services, including ongoing updates.
-- How to support remote workers access to on-premises resources.
+- How to implement automated trusted endpoint listing for your client-based PAC files and your network devices and services, including ongoing updates.
+- How to support the access of remote workers to on-premises resources.
 - How to use network insights
 - How to deploy the Office 365 CDN for your tenant. 
 
@@ -160,9 +166,9 @@ The tenancy for an enterprise organization has:
 
 On an ongoing basis, you might need to:
 
-- Update your edge devices and deployed PAC files for changes in endpoints.
-- Manage the assets in the Office 365 CDN.
-- Update VPN clients for changes in endpoints.
+- Update your edge devices and deployed PAC files for changes in endpoints or verify that your automated process works properly.
+- Manage your assets in the Office 365 CDN.
+- Update the split tunneling configuration in your VPN clients for changes in endpoints.
 
 ## Next step
 

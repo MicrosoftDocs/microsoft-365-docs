@@ -13,7 +13,7 @@ ms.collection:
 - m365solution-tenantmanagement
 ms.custom:
 - Ent_Solutions
-description: "An overview of device and app management for your Microsoft 365 tenant."
+description: "Deploy the correct option for device and app management for your Microsoft 365 tenants."
 ---
 
 # Step 5. Device and app management for your Microsoft 365 for enterprise tenancies

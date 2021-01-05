@@ -13,7 +13,7 @@ ms.collection:
 - m365solution-tenantmanagement
 ms.custom:
 - Ent_Solutions
-description: "An overview of a single or multiple Microsoft 365 tenants and managing tenants for multi-geo and moving locations."
+description: "Deploy and manage single or multiple Microsoft 365 tenants, with options for multi-geo and moving locations."
 ---
 
 # Step 1. Your Microsoft 365 for enterprise tenancies
