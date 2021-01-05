@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Review the steps to perform Assessment training, including tagging files, and reviewing assessment results in Advanced eDiscovery."
 ---
 
@@ -118,17 +119,3 @@ In the absence of statistically based stabilization, there will be results with 
 > [!TIP]
 > In the **Relevance \> Track** tab, expanded issue display, the following viewing options are available: > The recommended next step, such as **Next step: Tagging** can be bypassed (per issue) by clicking the **Modify** button to its right, and then selecting an different step in the **Next step**. When the assessment progress indicator has not completed, assessment will be the next recommended option, to tag more assessment files and increase statistics accuracy. > You can change the error margin and assess its impact, by clicking **Modify**, and in the **Assessment level dialog**, changing the **Target error margin for recall estimates**, and clicking **Update values**. Also, in this dialog, you can view advanced options, by clicking **Advanced**. > You can view additional assessment level statistics and their impact by clicking **View**. In the displayed Detail results dialog, statistics are available per issue, when there are at least 500 tagged assessment files and at least 18 files are tagged as Relevant for the issue. 
   
-## See also
-
-[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
-  
-[Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging and Relevance training](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Deciding based on the results](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)
-

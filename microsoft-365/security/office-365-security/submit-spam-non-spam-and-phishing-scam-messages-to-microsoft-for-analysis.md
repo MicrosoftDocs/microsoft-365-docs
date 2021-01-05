@@ -86,6 +86,10 @@ If a message was incorrectly identified as spam, you can submit the message to t
 > [!TIP]
 > Admins have several different ways to allow specific messages to skip spam filtering. For details, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
 
+## Where is the data from submissions to Microsoft stored?
+
+The data resides in the Office 365 compliance boundary in North American data centers. The data is reviewed by analysts on the engineering team to help improve the effectiveness of the filters.
+
 ## Create a mail flow rule to receive copies of messages that are reported to Microsoft
 
 For instructions, see [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
