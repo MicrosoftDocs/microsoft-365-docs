@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to view and interpret the Relevance training status and results for case issues in Advanced eDiscovery."
 ---
 
@@ -164,18 +165,3 @@ This view shows the following:
 - **Recall**: Percentage of Relevant files in the review set. 
     
 - **Distribution by relevance score**: Files in the dark gray display to the left are below the cutoff score. A tool-tip displays the Relevance score and the related percentage of files in the review file set in relation to the total files.
-    
-## See also
-
-[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
-  
-[Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Performing and reviewing Assessment](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Performing Relevance training](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Making decisions based on the results](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)
-
