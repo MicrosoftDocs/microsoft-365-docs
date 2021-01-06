@@ -25,7 +25,7 @@ Insider risks are one of the top concerns of security and compliance professiona
 
 Microsoft 365 risk prevention features are designed and built-in to our insider risk products and solutions. These solutions work together and use advanced service and 3rd-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
 
-| | Risks | Communication compliance | Insider risk management | Information barriers | Privileged access management |
+| Risk icon | Risks | Communication compliance | Insider risk management | Information barriers | Privileged access management |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
 | ![Data spillage icon](../media/ir-risk-data-spillage.png)| Data spillage | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
 | ![Confidentiality violations icon](../media/ir-risk-confidentiality-violations.png)| Confidentiality violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
