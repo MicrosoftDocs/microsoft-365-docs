@@ -54,7 +54,7 @@ Search permissions filtering is supported by the Content Search feature in the S
 
 ## Connect to Exchange Online and Security & Compliance Center PowerShell in a single session
 
-Before you can successfully run the script in this section, you have to download and install the the Exchange Online PowerShell V2 module. For information, see [About the Exchange Online PowerShell V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+Before you can successfully run the script in this section, you have to download and install the Exchange Online PowerShell V2 module. For information, see [About the Exchange Online PowerShell V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of **.ps1**. For example, you could save it to a file named **ConnectEXO-SCC.ps1**.
 
