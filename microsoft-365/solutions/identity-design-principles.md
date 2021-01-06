@@ -301,9 +301,9 @@ I am often asked if there is a way to separate high-privilege roles between Azur
 
 It is important to understand relationships between various services in the same tenant. I am working with many customers that are building business solutions that span Azure, Office 365, and Power Platform (and often also on-premises and third-party cloud services). One common example:
 
-- I want to collaborate on a set of documents/images/etc (Office 365)
-- Send each one of them through an approval process (Power Platform)
-- After all components are approved, assemble these into a unified deliverable(s) (Azure)
+1. I want to collaborate on a set of documents/images/etc (Office 365)
+2. Send each one of them through an approval process (Power Platform)
+3.  After all components are approved, assemble these into a unified deliverable(s) (Azure)
 [Microsoft Graph API](https://docs.microsoft.com/azure/active-directory/develop/microsoft-graph-intro) is your best friend for these.  Not impossible, but significantly more complex to design a solution spanning [multiple tenants](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
 
 Azure Role-Based Access Control (RBAC) enables fine-grained access management for Azure. Using RBAC, you can manage access to resources by granting users the fewest permissions needed to perform their jobs. Details are out of scope for this document, but for more information on RBAC, see [What is role-based access control (RBAC) in Azure?](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC is important but only part of the governance considerations for Azure. [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/) is a great starting point to learn more. I like how my friend, Andres Ravinet walks customers step by step though various components to decide on the approach. High-level view for various elements (not as good as the process to get to actual customer model) is something like this:
