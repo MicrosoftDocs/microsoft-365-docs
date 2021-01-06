@@ -1,7 +1,7 @@
 ---
 title: AADSignInEventsBeta table in the advanced hunting schema
 description: Learn about information associated with Azure Active Directory sign-in events table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account, identity, AAD
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -27,14 +27,14 @@ ms.topic: article
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> The ```AADSignInEventsBeta``` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) sign-in events. We will eventually move all sign-ins to the ```IdentityLogonEvents``` table.<br><br>
+> The ```AADSignInEventsBeta``` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) sign-in events. We will eventually move all sign-in schema information to the ```IdentityLogonEvents``` table.<br><br>
 > Customers who can access Microsoft 365 Defender through the Azure Security Center’s integrated Microsoft Defender for Endpoint solution, but do not have licenses for Microsoft Defender for Office, Microsoft Defender for Identity, or Microsoft Cloud App Security, will not be able to view this schema. 
 
  
 
 The ```AADSignInEventsBeta``` table in the advanced hunting schema contains
 information about Azure Active Directory interactive and non-interactive
-sign-ins. Learn more about the different kinds of sign-ins in [Azure
+sign-ins. Learn more about sign-ins in [Azure
 Active Directory sign-in activity reports -
 preview](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
@@ -99,6 +99,7 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 
 ## Related articles
 
+-   [AADSpnSignInEventsBeta](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-aadspnsignineventsbeta-table)
 -   [Advanced hunting
     overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 -   [Learn the query
