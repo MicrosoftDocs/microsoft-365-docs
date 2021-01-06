@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: "Learn more about Azure Information Protection for Office 365 operated by 21Vianet and how to configure it for customers in China."
+description: "Learn more about Azure Information Protection (AIP) for Office 365 operated by 21Vianet and how to configure it for customers in China."
 monikerRange: 'o365-21vianet'
 ---
 
 # Parity between Azure Information Protection for Office 365 operated by 21Vianet and commercial offerings
 
-While our goal is to deliver all commercial features and functionality to customers in China with our Azure Information Protection for Office 365 operated by 21Vianet offer, there is some missing functionality that we'd like to highlight.
+While our goal is to deliver all commercial features and functionality to customers in China with our Azure Information Protection (AIP) for Office 365 operated by 21Vianet offer, there is some missing functionality that we'd like to highlight.
 
 The following list includes the existing gaps between Azure Information Protection for Office 365 operated by 21Vianet and our commercial offerings as of July 2019:
 
