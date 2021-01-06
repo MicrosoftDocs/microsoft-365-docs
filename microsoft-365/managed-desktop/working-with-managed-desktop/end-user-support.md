@@ -24,9 +24,9 @@ The preferred method for providing support to your users is **Get Help**, an eas
 
 ![Get Help app icon](../../media/get-help.png)
 
-This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar. 
+Get Help is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar. 
 
-- Users can request a call back to a provided phone number, or chat online with a service rep.
+- Users can request a callback to a provided phone number, or chat online with a service rep.
 - Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.
 
 > [!NOTE]
@@ -37,7 +37,7 @@ For your users to be able to get help through the app, make sure these prerequis
 
 - The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).
 - The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.
-- The Get Help app should be up to date. To confirm this, check for app updates in the Microsoft Store.
+- The Get Help app should be up to date. To confirm its status, check for app updates in the Microsoft Store.
 - Certain [endpoints](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) must be accessible from the device.
 
 > [!NOTE]
@@ -47,7 +47,7 @@ If you've checked these prerequisites and the Get Help app still isn't working, 
 
 ## Phone support
 
-Users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
+Users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. The numbers are meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
 
 - United States: +1 855 425 0216
 - Canada (excluding Quebec): +1 855 425 0216
@@ -66,7 +66,7 @@ Users with Microsoft Managed Desktop devices also have access to toll-free phone
 >[!NOTE]
 >You'll need to have your organizational email address ready when you call to verify your identity. 
 
-## Additional resources
+## More resources
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md).
 - If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** under the Microsoft Managed Desktop section of the **Tenant administration** menu in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
