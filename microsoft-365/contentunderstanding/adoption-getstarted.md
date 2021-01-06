@@ -22,13 +22,16 @@ Think of the intelligent content services available in SharePoint Syntex as havi
 - **Content processing:** Automate capture, ingestion and categorization of content and streamline content-centric processes using Power Automate. Learn more about [content processing](form-processing-overview.md).
 - **Content compliance:** Control and manage content to improve security and governance with integration to Microsoft Information Protection.
 
-With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using SharePoint Syntex:
+With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using SharePoint Syntex. There are two different ways of understanding your content. The model type you use is based on file format and use case:
 
-|Manual entry| Form processing | Document understanding |
-|:-------|:--------|:--------|
-| Data entry and labor-intensive on any content. | Identify files and extract data from structured or semi-structured documents, such as forms or invoices. |  Identify and extract data from unstructured documents, such as letters or contracts, where the text entities you want to extract reside in sentences or specific regions of the document. |
-| Interactive.   |  Custom, assisted.  | Pre-built, automated. |
-| People doing the work. | Taught by your subject matter experts (SMEs). | SMEs are less involved. |
+| Form processing | Document understanding |
+|:-------|:-------|
+| Created from document library. | Created in the content center, part of SharePoint Syntex. |
+| Model created in AI builder. | Model created in native interface. |
+| Used for semi-structured file formats. | Used for unstructured file formats. |
+| Settable classifier. | Trainable classifier with optional extractors. |
+| Restricted to a single library. | Can be applied to multiple libraries. |
+| Train on PDF, JPG, PNG format, total 50 MB/500 pp. | Train on 5-10 PDF, Office, or email files, including negative examples. |
 
 The following table explains availability and licensing for SharePoint Syntex:
 
@@ -39,17 +42,6 @@ The following table explains availability and licensing for SharePoint Syntex:
 | Provisioned against the default common data service environment. | Does not have capacity restrictions. |
 
 For more information about AI Builder credits and units, see [AI Builder licensing](https://docs.microsoft.com/ai-builder/administer-licensing).
-
-There are two different ways of understanding your content. The model type you use is based on file format and use case:
-
-| Form processing | Document understanding |
-|:-------|:-------|
-| Created from document library. | Created in the content center, part of SharePoint Syntex. |
-| Model created in AI builder. | Model created in native interface. |
-| Used for semi-structured file formats. | Used for unstructured file formats. |
-| Settable classifier. | Trainable classifier with optional extractors. |
-| Restricted to a single library. | Can be applied to multiple libraries. |
-| Train on PDF, JPG, PNG format, total 50 MB/500 pp. | Train on 5-10 PDF, Office, or email files, including negative examples. |
 
 SharePoint Syntex integrates with Microsoft 365 compliance features like:
 
