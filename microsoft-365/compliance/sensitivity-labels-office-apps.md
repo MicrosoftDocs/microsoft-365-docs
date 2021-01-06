@@ -89,6 +89,10 @@ The numbers listed are the minimum Office application version required for each 
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | Under review                    | Under review           | Under review               | Yes |
 |
 
+**Footnote:**
+
+<sup>\*</sup>
+Currently, doesn't include justification text to remove a label or lower the classification level
 
 ## Office built-in labeling client and other labeling solutions
 
