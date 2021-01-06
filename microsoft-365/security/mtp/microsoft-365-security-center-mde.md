@@ -84,10 +84,26 @@ The Microsoft 365 security navigation pane will look fairly familiar if you are 
 
 The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
 
-### Alerts & Actions
-Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries.
+### Incidents and Alerts
+Brings together incident and alert management across your email, devices, and identities. Alerts are now available under the Investigation node, and help provide a broader view of an attack. The alert page provides full context to the alert, by combining attack signals to construct a detailed story. Previously, alerts were specific to different workloads. A new, unified experience now brings together a consistent view of alerts across workloads. You can quickly triage, investigate, and take effective action.  
+- [Learn more about Investigations](incidents-overview.md)
+ - [Learn more about managing alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
 ![The Alerts and Actions quick launch bar](../../media/converge-1-alertsandactions.png)
+
+### Hunting
+Proactively search for threats, malware, and malicious activity across your endpoints, Office 365 mailboxes, and more by using hunting queries.
+
+These powerful queries can be used to  locate and review threat indicators and entities for both known and potential threats.
+
+[Learn more about Hunting](advanced-hunting-overview.md)
+
+### Action center
+Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
+[Learn more about Action Center](mtp-action-center.md)
+
+### Threat Analytics
+Threat Analytics provides a summary of the latest threats that could be affecting your organization. With this information, security teams can learn the specifics about each individual threat in the Threat Analytics reports as well as see how these threats might be impacting your organization. New in the Microsoft 365 security center is a combined view of threats that include signals from both Defender for Endpoint as well as Defender for Office 365.
 
 ### Endpoints
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
