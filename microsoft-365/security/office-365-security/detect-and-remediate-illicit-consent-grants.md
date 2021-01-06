@@ -40,7 +40,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 ### Steps for finding signs of this attack
 
-1. Open the **Azure Active directory** at <https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview>.
+1. Open [Azure Active directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
 2. Navigate to **Enterprise Applications** and select **Audit logs**.
 
