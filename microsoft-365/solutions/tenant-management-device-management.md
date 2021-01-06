@@ -20,7 +20,7 @@ description: "Deploy the correct option for device and app management for your M
 
 Microsoft 365 for enterprise includes features to help manage devices and the use of apps on those devices within your organization with mobile device management (MDM) and mobile application management (MAM). You can use Microsoft Intune or Basic Mobility and Security to manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. For example, you can prevent emails from being sent to people outside your organization or isolate organization data from personal data on your worker's personal devices.
 
-Here is the validation and management of users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.
+Here is an example of the validation and management of users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.
 
 ![Validation and management of users, devices, and apps](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
@@ -33,13 +33,13 @@ To help you secure and protect your organization's resources, Microsoft 365 for 
 
 You can use Microsoft Intune to manage access to your organization using MDM or MAM. MDM is when users "enroll" their devices in Intune. After a device is enrolled, it is a managed device; therefore, it can receive your organization's  policies, rules, and settings. For example, you can install specific apps, create a password policy, install a VPN connection, and more.
 
-Users with their own personal devices may not want to enroll their devices or be managed by Intune and your organization's policies. But you still need to protect your organization's resources and data. In this scenario, you can protect your apps using MAM. For example, you can use an MAM policy that requires a user to enter a PIN when accessing SharePoint Online on the device.
+Users with their own personal devices may not want to enroll their devices or be managed by Intune and your organization's policies. But you still need to protect your organization's resources and data. In this scenario, you can protect your apps using MAM. For example, you can use an MAM policy that requires a user to enter a PIN when accessing SharePoint on the device.
 
 You'll also determine how you're going to manage personal devices and organization-owned devices. You might want to treat devices differently, depending on their uses.
 
 ## Basic Mobility and Security
 
-This is built into Microsoft 365 and helps you secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
+This is built into Microsoft 365 for enterprise and helps you secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
 
 ## Choose between the two options
 
@@ -59,7 +59,7 @@ Microsoft provides a set of configurations for [identity and device access](../s
 - Azure AD Identity Protection user risk policies
 - Additional policies of cloud apps
 
-Here is the application of these settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.
+Here is an example of the application of these settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.
 
 ![Identity and device access configurations for requirements and restrictions on users, thier devices, and their use of apps](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 
