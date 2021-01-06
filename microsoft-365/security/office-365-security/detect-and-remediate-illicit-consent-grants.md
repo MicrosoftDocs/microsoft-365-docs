@@ -44,7 +44,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 2. Navigate to **Enterprise Applications** and select **Audit logs**.
 
-3. Search (all activities and all users) and enter the  date andthen click **Apply**.
+3. Search (all activities and all users) and enter the  date and then click **Apply**.
 
 4. In this case, an audit event will also be logged with a Category of "ApplicationManagement", Activity Type of "Consent to application", and Status Reason of "Risky application detected".
 
