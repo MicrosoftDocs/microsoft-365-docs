@@ -60,10 +60,10 @@ The risk factors start from general information, such as the app publisher. It t
 
 ## Monitor health for infrastructure workloads
 
-**Infrastructure health** shows health status alerts for infrastructure workloads in Azure Defender*.
+**Infrastructure health** shows health status alerts for infrastructure workloads in Azure Defender.
 
-Azure Defender* provides unified security management and Defender for Office 365 across on-premises and cloud workloads. You can collect, search, and analyze security data from different sources, including firewalls and other partner solutions.
+Azure Defender provides unified security management and Defender for Office 365 across on-premises and cloud workloads. You can collect, search, and analyze security data from different sources, including firewalls and other partner solutions.
 
-For more information, see [Azure Defender* Documentation](https://docs.microsoft.com/azure/security-center/).
+For more information, see [Azure Defender Documentation](https://docs.microsoft.com/azure/security-center/).
 
 ![Infrastructure health card](../../media/infrastructure-health.png)

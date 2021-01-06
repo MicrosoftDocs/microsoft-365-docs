@@ -63,7 +63,7 @@ In this phase, you create and configure the Azure AD groups for your campaign.
 
 First, create a set of groups for a typical political campaign with the Azure portal.
 
-1. On a separate tab in your browser, go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Office 365 E5 trial subscription.
+1. On a separate tab in your browser, go to the Azure portal at <https://portal.azure.com>. If needed, sign in with the credentials of the global administrator account for your Office 365 E5 trial subscription.
 
 2. In the Azure portal, click **Azure Active Directory > Users and groups > All groups**.
 

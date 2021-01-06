@@ -37,7 +37,7 @@ Azure AD Connect synchronizes your users' UPN and password so that users can sig
   
 ### **Change your primary domain**
 
-Change your primary domain to a domain you have verified in Microsoft 365, for example, contoso.com. Every user that has the domain contoso.local is then updated to contoso.com. For instructions, see [How Domain Rename Works](https://go.microsoft.com/fwlink/p/?LinkId=624174). This is a very involved process, however, and an easier solution is described in the following section.
+Change your primary domain to a domain you have verified in Microsoft 365, for example, contoso.com. Every user that has the domain contoso.local is then updated to contoso.com. This is a very involved process, however, and an easier solution is described in the following section.
   
 ### **Add UPN suffixes and update your users to them**
 
@@ -86,7 +86,7 @@ After you have updated the UPNs to use the verified domain, you are ready to syn
 
 If you have a lot of users to update, it is easier to use Windows PowerShell. The following example uses the cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) and [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) to change all contoso.local suffixes to contoso.com. 
 
-Foe example, you could run the following Windows PowerShell commands to update all contoso.local suffixes to contoso.com:
+For example, you could run the following Windows PowerShell commands to update all contoso.local suffixes to contoso.com:
     
   ```powershell
   $LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*contoso.local'" -Properties userPrincipalName -ResultSetSize $null

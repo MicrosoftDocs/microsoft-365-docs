@@ -61,6 +61,8 @@
           href: get-ready/mapped-drives.md
         - name: Prepare certificates and network profiles
           href: get-ready/certs-wifi-lan.md
+        - name: Prerequisites for guest accounts
+          href: get-ready/guest-accounts.md
         - name: Prepare printing resources
           href: get-ready/printing.md
         - name: Prepare apps
@@ -68,6 +70,11 @@
           items: 
             - name: Working with Microsoft Consulting Services
               href: get-ready/apps-MCS.md
+        - name: Use the Readiness assessment tool
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: Fix issues found by the readiness assessment tool
+              href: get-ready/readiness-assessment-fix.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
@@ -75,7 +82,7 @@
           href: get-started/access-admin-portal.md
         - name: Add and verify admin contacts in the Admin portal
           href: get-started/add-admin-contacts.md
-        - name: Adjust conditional access
+        - name: Adjust settings after enrollment
           href: get-started/conditional-access.md
         - name: Assign licenses
           href: get-started/assign-licenses.md
@@ -118,9 +125,6 @@
           items:
             - name: Device inventory report
               href: working-with-managed-desktop/device-inventory-report.md
-        - name: Work with insights
-          href: working-with-managed-desktop/insights.md
-          items: 
             - name: Usage insights
               href: working-with-managed-desktop/usage-insights.md
             - name: Reliability insights

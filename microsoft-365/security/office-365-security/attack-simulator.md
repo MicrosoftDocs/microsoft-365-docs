@@ -14,8 +14,8 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: "Admins can learn how to use Attack Simulator to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations."
@@ -30,6 +30,9 @@ If your organization has Microsoft Defender for Office 365 Plan 2, which include
 
 > [!NOTE]
 > Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
+
+> [!TIP]
+> Attack simulation training is available for public preview in the Microsoft 365 security center. Check out [Simulate a phishing attack with Microsoft Defender for Office 365](attack-simulation-training.md) to learn more.
 
 ## What do you need to know before you begin?
 

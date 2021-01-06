@@ -8,9 +8,9 @@ ms.topic: article
 ms.collection: 
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
-ms.custom: 
+ms.custom: seo-marvel-jun2020
 localization_priority: Priority
-description: "Learn how Microsoft 365 helps financial services move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
+description: Learn how financial services institutions can maintain financial security compliance and effectively collaborate using Microsoft 365 and Teams.
 f1.keywords: NOCSH
 ---
 
@@ -42,13 +42,22 @@ In the financial services sector, careful consideration is required for the conf
 
 As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
 
+The following downloadable illustrations supplement this article. Woodgrove Bank and Contoso are used to demonstrate how capabilities described in this article can be applied to address common regulatory requirements of financial services. Feel free to adapt these illustrations for your own use. 
+
+**Microsoft 365 information protection and compliance illustrations**
+
+| Item | Description |
+|:-----|:-----|
+|[![Model poster: Microsoft 365 information protection and compliance capabilities](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>English: [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanese: [Download as a PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Updated November 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
+
+
 ## Empower organizational and employee productivity by using Microsoft 365 and Teams
 
 Collaboration typically requires various forms of communication, the ability to store and access documents/data, and the ability to integrate other applications as needed. Employees in financial services typically need to collaborate and communicate with members of other departments or teams and sometimes with external entities. Therefore, using systems that create silos or make information sharing difficult is undesirable. Instead, it's preferable to leverage platforms and applications that enable employees to communicate, collaborate, and share information securely and according to corporate policy.
 
 Providing employees with a modern, cloud-based collaboration platform allows them to choose and integrate tools that make them more productive and empower them to find agile ways to work. Using Teams in conjunction with security controls and information governance policies that protect the organization can help your workforce communicate and collaborate effectively.
 
-Teams provides a collaboration hub for the organization. It helps bring people together to work productively on common initiatives and projects. Teams lets team members conduct 1:1 and multi-party chat conversations, collaborate and coauthor documents, and store and share files. Teams also facilitates online meetings through integrated enterprise voice and video. Teams can also be customized with Microsoft apps such as Microsoft Planner, Microsoft Dynamics 365, PowerApps, PowerBI, and third-party line-of-business applications. Teams is designed for use by both internal team members and permitted external users who can join team channels, participate in chat conversations, access stored files, and leverage other applications
+Teams provides a collaboration hub for the organization. It helps bring people together to work productively on common initiatives and projects. Teams lets team members conduct 1:1 and multi-party chat conversations, collaborate and coauthor documents, and store and share files. Teams also facilitates online meetings through integrated enterprise voice and video. Teams can also be customized with Microsoft apps such as Microsoft Planner, Microsoft Dynamics 365, PowerApps, Power BI, and third-party line-of-business applications. Teams is designed for use by both internal team members and permitted external users who can join team channels, participate in chat conversations, access stored files, and leverage other applications
 
 Every Microsoft Team is backed by a Microsoft 365 group. That group is considered the membership service for numerous Office 365 services, including Teams. Microsoft 365 groups are used to securely distinguish between "owners" and "members" and to control access to various capabilities within Teams. When coupled with appropriate governance controls and regularly administered access reviews, Teams allows only members and owners to utilize authorized channels and capabilities.
 
@@ -107,7 +116,7 @@ As employees work, they may move from application to application or between mult
 
 Microsoft 365 provides a secure identity platform in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/), where identities are centrally stored and securely managed. Azure AD, along with a host of related Microsoft 365 security services, forms the basis for providing employees with the access they need to work securely while also protecting the organization from threats.
 
-[Azure Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
+[Azure AD Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
 
 - The Microsoft Authenticator app
 - A one-time passcode delivered via SMS
@@ -159,7 +168,7 @@ Microsoft 365 allows all organizations to identify sensitive data within the org
 * **Microsoft Information Protection (MIP)** for both user-based classification and automated classification of sensitive data.
 * **Office 365 Data Loss Prevention (DLP)** for automated identification of sensitive data using sensitive data types (in other words, regular expressions) and keywords and policy enforcement.
 
-**[Microsoft Information Protection (MIP)](../compliance/protect-information.md)** enables organizations to classify documents and emails intelligently by using sensitivity labels. Sensitivity labels can be applied manually by users to documents in Microsoft Office applications and to emails in Outlook. The labels can automatically apply document markings, protection through encryption, and rights-management enforcement. Sensitivity labels can also be applied automatically by configuring policies that use keywords and sensitive data types (such as credit card numbers, social insurance numbers, and identity numbers) to automatically find and classify sensitive data.
+**[Microsoft Information Protection (MIP)](../compliance/information-protection.md)** enables organizations to classify documents and emails intelligently by using sensitivity labels. Sensitivity labels can be applied manually by users to documents in Microsoft Office applications and to emails in Outlook. The labels can automatically apply document markings, protection through encryption, and rights-management enforcement. Sensitivity labels can also be applied automatically by configuring policies that use keywords and sensitive data types (such as credit card numbers, social insurance numbers, and identity numbers) to automatically find and classify sensitive data.
 
 In addition, Microsoft provides "trainable classifiers" that use machine-learning models to identify sensitive data based on the content, as opposed to simply through pattern matching or by the elements within the content. A classifier learns how to identify a type of content by looking at numerous examples of the content to be classified. Training a classifier begins by giving it examples of content in a particular category. After it learns from those examples, the model is tested by giving it a mix of matching and non-matching examples. The classifier predicts whether a given example falls into the category or not. A person then confirms the results, sorting the positives, negatives, false positives, and false negatives to help increase the accuracy of the classifier's predictions. When the trained classifier is published, it processes content in Microsoft SharePoint Online, Exchange Online, and OneDrive for Business and automatically classifies the content.
 

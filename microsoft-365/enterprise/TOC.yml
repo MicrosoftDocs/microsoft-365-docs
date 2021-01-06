@@ -121,12 +121,12 @@
               href: microsoft-365-client-support-certificate-based-authentication.md
             - name: Conditional Access
               href: microsoft-365-client-support-conditional-access.md
-            - name: Choose between Basic Mobility Security and Intune
-              href: https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune
             - name: Modern authentication
               href: microsoft-365-client-support-modern-authentication.md
             - name: Single sign-on
               href: microsoft-365-client-support-single-sign-on.md
+            - name: Choose between Basic Mobility Security and Intune
+              href: https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune
         - name: Hybrid modern authentication
           items: 
             - name: Prerequisites for Skype for Business Server and Exchange Server
@@ -189,93 +189,16 @@
               href: microsoft-365-isolation-in-microsoft-365-video.md
             - name: Tenant Isolation in the Office Graph and Delve
               href: microsoft-365-isolation-in-graph-and-delve.md
-        - name: Service assurance
-          items: 
-            - name: Service assurance in the Security & Compliance Center
-              href: https://docs.microsoft.com/microsoft-365/compliance/service-assurance
-            - name: Administrative Access Controls
-              href: microsoft-365-administrative-access-controls-overview.md
-              items: 
-                - name: Monitoring and Auditing Access Controls
-                  href: microsoft-365-monitoring-and-auditing-access-controls.md
-                - name: Isolation Controls
-                  href: microsoft-365-isolation-controls.md
-                - name: Personnel Controls
-                  href: microsoft-365-personnel-controls.md
-                - name: Technology Controls
-                  href: microsoft-365-technology-controls.md
-                - name: Yammer Enterprise Access Controls
-                  href: microsoft-365-yammer-enterprise-access-controls.md
-            - name: Auditing and Reporting
-              href: microsoft-365-auditing-and-reporting-overview.md
-              items: 
-                - name: Reporting features
-                  href: microsoft-365-reporting-features.md
-                - name: eDiscovery and search features
-                  href: microsoft-365-ediscovery-and-search-features.md
-                - name: Internal logging for Microsoft 365 engineering
-                  href: microsoft-365-internal-logging.md
-                - name: Mailbox migrations
-                  href: microsoft-365-mailbox-migrations.md
-                - name: Management Activity API
-                  href: microsoft-365-management-activity-api.md
-            - name: Data Resiliency
-              href: microsoft-365-data-resiliency-overview.md
-              items: 
-                - name: Dealing with Data Corruption
-                  href: microsoft-365-dealing-with-data-corruption.md
-                - name: Exchange Online Data Resilience
-                  href: microsoft-365-exchange-data-resiliency.md
-                - name: Malware and Ransomware Protection
-                  href: microsoft-365-malware-and-ransomware-protection.md
-                - name: Monitoring and Self-Healing
-                  href: microsoft-365-monitoring-and-self-healing.md
-            - name: Data Retention, Deletion, and Destruction
-              href: microsoft-365-data-retention-deletion-and-destruction-overview.md
-              items: 
-                - name: Data Destruction
-                  href: microsoft-365-data-destruction.md
-                - name: Immutability
-                  href: microsoft-365-data-immutability.md
-                - name: Exchange Online Data Deletion
-                  href: microsoft-365-exchange-online-data-deletion.md
-                - name: SharePoint Online Data Deletion
-                  href: microsoft-365-sharepoint-online-data-deletion.md
-                - name: Skype for Business Data Deletion
-                  href: microsoft-365-skype-data-deletion.md
-            - name: Defending against denial-of-service attacks
-              href: microsoft-365-defending-cloud-services-against-dos-attacks.md
-              items: 
-                - name: Microsoft's denial-of-services defense strategy
-                  href: microsoft-365-microsoft-dos-defense-strategy.md
-                - name: Core principles of defense against denial-of-service attacks
-                  href: microsoft-365-core-principles-of-defense-against-dos-attacks.md
-            - name: Encryption in the Microsoft Cloud
-              href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview
-              items: 
-                - name: Microsoft 365 service encryption
-                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption
-                - name: Encryption for data in transit
-                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit
-                - name: Customer-managed encryption features
-                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features
-                - name: Encryption risks and protections
-                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections
-                - name: Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online
-                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange
-                - name: Encryption in Microsoft Dynamics 365
-                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365
-                - name: Encryption in Azure
-                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-azure-encryption
     - name: Deploy
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
-
     - name: Manage
       items: 
         - name: Microsoft 365 service health status
           href: microsoft-365-service-health.md
+        - name: Exchange Online monitoring
+          href: microsoft-365-exchange-monitoring.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
@@ -345,12 +268,30 @@
           href: data-move-faq.md
         - name: Where customer data is stored
           href: o365-data-locations.md
+        - name: Data locations for the European Union
+          href: eu-data-storage-locations.md
         - name: Microsoft Cloud Deutschland
           items: 
           - name: Overview
             href: ms-cloud-germany-transition.md
           - name: Opt-in for migration
             href: ms-cloud-germany-migration-opt-in.md
+          - name: What has changed
+            href: ms-cloud-germany-transition-experience.md
+          - name: Pre-work
+            href: ms-cloud-germany-transition-add-pre-work.md
+          - name: Migration phases actions and impacts (general)
+            href: ms-cloud-germany-transition-phases.md
+          - name: Migration phases actions and impacts (advanced)
+            href: ms-cloud-germany-transition-add-experience.md
+          - name: Additional information
+            items: 
+            - name: Azure AD
+              href: ms-cloud-germany-transition-azure-ad.md
+            - name: Devices
+              href: ms-cloud-germany-transition-add-devices.md
+            - name: AD FS migration steps
+              href: ms-cloud-germany-transition-add-adfs.md
 
 - name: Identity
   items: 
@@ -419,8 +360,6 @@
           href: manage-microsoft-365-groups.md
         - name: Governance
           href: manage-microsoft-365-identity-governance.md
-        - name: Recover deleted items in a user mailbox
-          href: recover-deleted-items-in-a-mailbox.md
         - name: Directory synchronization
           items: 
             - name: View status
@@ -475,8 +414,11 @@
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 
-- name: Security and compliance
-  href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
+- name: Compliance
+  href: ../compliance/index.yml
+
+- name: Security
+  href: ../security/index.yml
 
 - name: Cloud services
   items: 
@@ -576,7 +518,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: PowerShell community resources
           href: microsoft-365-powershell-community-resources.md
-    - name: Manage user accounts, licenses, and groups with PowerShell
+    - name: User accounts, passwords, licenses, and groups
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items: 
         - name: User accounts
@@ -593,6 +535,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Block
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: Passwords
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: Licenses and services
           items: 
             - name: View licenses and services
@@ -614,7 +558,9 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Groups
           items: 
-            - name: Maintain group membership
+            - name: Manage security groups
+              href: manage-security-groups-with-microsoft-365-powershell.md
+            - name: Maintain security group membership
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
@@ -737,12 +683,6 @@
       href: contoso-info-protect.md
     - name: Security summary
       href: contoso-security-summary.md
-
-- name: Microsoft 365 compliance
-  href: ../compliance/index.yml
-
-- name: Microsoft 365 security
-  href: ../security/index.yml
 
 - name: Microsoft 365 architecture and solutions
   href: ../solutions/index.yml

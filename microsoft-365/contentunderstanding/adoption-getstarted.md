@@ -8,6 +8,7 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: 
 localization_priority: Normal
@@ -25,28 +26,30 @@ With new AI services and capabilities, you can build content understanding and c
 
 |Manual entry| Form processing | Document understanding |
 |:-------|:--------|:--------|
-| Data entry and labor-intensive on any content | Process digital content - photos, scans, receipts, business cards, videos with OCR & text |  Capture content types and  metadata from contracts, resumes, and other structured documents |
-| Interactive   | Pre-built, automated   | Custom, assisted   | Custom, compliant |
-| People doing the work | Taught by your subject matter experts (SMEs). Capture content types and  metadata from contracts, resumes, other unstructured documents. | SMEs are less involved. from purchase orders, applications, other semi structured and structured documents |
+| Data entry and labor-intensive on any content. | Identify files and extract data from structured or semi-structured documents, such as forms or invoices. |  Identify and extract data from unstructured documents, such as letters or contracts, where the text entities you want to extract reside in sentences or specific regions of the document. |
+| Interactive.   |  Custom, assisted.  | Pre-built, automated. |
+| People doing the work. | Taught by your subject matter experts (SMEs). | SMEs are less involved. |
 
-The following table explains what you get when you use SharePoint Syntex:
+The following table explains availability and licensing for SharePoint Syntex:
 
 | Form processing | Document understanding |
 |:-------|:-------|
-| Available in APAC, Australia, Canada, EU, JP, LATAM, UK, US | Available in all regions |
-| Uses AI Builder credits - 1M credits = 2000 pages; Consumption is about 2000 invoices=2 units. Power Automate is required - if you need more you can add it. 1M credits allocated for 300+ licenses purchased. You can also purchase credits separately. | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. |
-| Provisioned against the default common data service environment| Does not have capacity restrictions. |
+| Form processing relies on Power Platform. <br>For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions. |
+| Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2000 file pages. | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. |
+| Provisioned against the default common data service environment. | Does not have capacity restrictions. |
+
+For more information about AI Builder credits and units, see [AI Builder licensing](https://docs.microsoft.com/ai-builder/administer-licensing).
 
 There are two different ways of understanding your content. The model type you use is based on file format and use case:
 
 | Form processing | Document understanding |
 |:-------|:-------|
-| Created from document library | Created in the content center, part of SharePoint Syntex |
-| Model created in AI builder | Model created in native interface |
-| Used for semi-structured file formats | Used for unstructured file formats |
-| Settable classifier | Trainable classifier with optional extractors |
-| Restricted to a single library | Can be applied to multiple libraries |
-| Train on PDF, JPG, PNG format, total 50 MB/500 pp | Train on 5-10 PDF, Office, or email files, including negative examples |
+| Created from document library. | Created in the content center, part of SharePoint Syntex. |
+| Model created in AI builder. | Model created in native interface. |
+| Used for semi-structured file formats. | Used for unstructured file formats. |
+| Settable classifier. | Trainable classifier with optional extractors. |
+| Restricted to a single library. | Can be applied to multiple libraries. |
+| Train on PDF, JPG, PNG format, total 50 MB/500 pp. | Train on 5-10 PDF, Office, or email files, including negative examples. |
 
 SharePoint Syntex integrates with Microsoft 365 compliance features like:
 
