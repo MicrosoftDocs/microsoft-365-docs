@@ -45,7 +45,7 @@ Once you're done building the payload to your liking, click **Next**.
 
 ## Adding indicators
 
-Indicators will help employees going through the attack simulation understand clue they can look for in future attacks. To start, click **Add indicator**.
+Indicators will help employees going through the attack simulation understand the clue they can look for in future attacks. To start, click **Add indicator**.
 
 Select an indicator you'd like to use from the drop-down list. This list is curated to contain the most common clues that appear in phishing email messages. Once selected, make sure the indicator placement is set to **From the body of the email** and click on **Select text**. Highlight the portion of your payload where this indicator appears and click **Select**.
 
