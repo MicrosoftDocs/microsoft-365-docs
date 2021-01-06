@@ -78,7 +78,7 @@ You have a shared mailbox and it includes a shared calendar. Now go on to the ne
 
 ## Which permissions should you use?
 
-You can use the following permissions with a shared mailbox.
+You can use the following permissions with a shared mailbox:
 
 - **Full Access**: The Full Access permission lets a user open the shared mailbox and act as the owner of that mailbox. After accessing the shared mailbox, a user can create calendar items; read, view, delete, and change email messages; create tasks and calendar contacts. However, a user with Full Access permission can't send email from the shared mailbox unless they also have Send As or Send on Behalf permission.
 
@@ -203,7 +203,6 @@ When you created the shared mailbox, you automatically created a shared calendar
 [Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md)
 
 [Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md)
-
 
 
 
