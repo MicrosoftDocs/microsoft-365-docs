@@ -42,7 +42,7 @@ Search permissions filtering is supported by the Content Search feature in the S
 
 - To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
-- You have to connect to both thExchange Online and Security & Compliance Center PowerShell to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online PowerShell. See the steps in the next section.
+- You have to connect to both Exchange Online and Security & Compliance Center PowerShell to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online PowerShell. See the steps in the next section.
 
 - See the [More information](#more-information) section for additional information about search permissions filters.
 
@@ -53,6 +53,8 @@ Search permissions filtering is supported by the Content Search feature in the S
 - There is no limit to the number of search permissions filters that can be created in an organization. But search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive in a single filter whenever possible.
 
 ## Connect to Exchange Online and Security & Compliance Center PowerShell in a single session
+
+Before you can successfully run the script in this section, you have to download and install the the Exchange Online PowerShell V2 module. For information, see [About the Exchange Online PowerShell V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of **.ps1**. For example, you could save it to a file named **ConnectEXO-SCC.ps1**.
 
