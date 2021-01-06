@@ -40,15 +40,13 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 ### Steps for finding signs of this attack
 
-1. Open the **Security & Compliance Center** at <https://protection.office.com>.
+1. Open the **Azure Active directory** at <https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview>.
 
-2. Navigate to **Search** and select **Audit log search**.
+2. Navigate to **Enterprise Applications** and select **Audit logs**.
 
-3. Search (all activities and all users) and enter the start date and end date if required and then click **Search**.
+3. Search (all activities and all users) and enter the  date andthen click **Apply**.
 
-4. Click **Filter results** and enter Consent to application in the **Activity** field.
-
-5. Click on the result to see the details of the activity. Click **More Information** to get details of the activity. Check to see if IsAdminContent is set to True.
+4. In this case, an audit event will also be logged with a Category of "ApplicationManagement", Activity Type of "Consent to application", and Status Reason of "Risky application detected".
 
 > [!NOTE]
 >
