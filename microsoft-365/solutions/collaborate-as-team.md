@@ -174,6 +174,8 @@ To invite guests to a team
 
 ## See also
 
+[Sharing options are greyed out when sharing from SharePoint Online or OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+
 [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
 
 [Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
