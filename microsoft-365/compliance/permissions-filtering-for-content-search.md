@@ -41,58 +41,46 @@ Search permissions filtering is supported by the Content Search feature in the S
 ## Requirements to configure permissions filtering
 
 - To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
-    
-- You have to connect Windows PowerShell to both the Security & Compliance Center and to your Exchange Online organization to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online. See the steps in the next section. 
-    
-- See the [More information](#more-information) section for additional information about search permissions filters. 
-    
-- Search permissions filtering is applicable to inactive mailboxes, which means you can use mailbox and mailbox content filtering to limit who can search an inactive mailbox. See the [More information](#more-information) section for additional information about permissions filtering and inactive mailboxes. 
-    
--  Search permissions filtering can't be used to limit who can search public folders in Exchange. 
-    
-- There is no limit to the number of search permissions filters that can be created in an organization. But search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive in a single filter whenever possible.
-    
-## Connect to the Security & Compliance Center and Exchange Online in a single remote PowerShell session
 
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of **.ps1**. For example, you could save it to a file named **ConnectEXO-CC.ps1**.
-    
+- You have to connect to both thExchange Online and Security & Compliance Center PowerShell to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online PowerShell. See the steps in the next section.
+
+- See the [More information](#more-information) section for additional information about search permissions filters.
+
+- Search permissions filtering is applicable to inactive mailboxes, which means you can use mailbox and mailbox content filtering to limit who can search an inactive mailbox. See the [More information](#more-information) section for additional information about permissions filtering and inactive mailboxes.
+
+- Search permissions filtering can't be used to limit who can search public folders in Exchange.
+
+- There is no limit to the number of search permissions filters that can be created in an organization. But search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive in a single filter whenever possible.
+
+## Connect to Exchange Online and Security & Compliance Center PowerShell in a single session
+
+1. Save the following text to a Windows PowerShell script file by using a filename suffix of **.ps1**. For example, you could save it to a file named **ConnectEXO-SCC.ps1**.
+
     ```powershell
+    Import-Module ExchangeOnlineManagement
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -AllowClobber -DisableNameChecking
+    Connect-ExchangeOnline -Credential $UserCredential
+    Connect-IPPSSession -Credential $UserCredential
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```
 
 2. On your local computer, open Windows PowerShell, go to the folder where the script that you created in the previous step is located, and then run the script; for example:
-    
-    ```powershell
-    .\ConnectEXO-CC.ps1
-    ```
-
-How do you know if this worked? After you run the script, cmdlets from the Security & Compliance Center and Exchange Online are imported into your local Windows PowerShell session. If you don't receive any errors, you connected successfully. A quick test is to run a Security & Compliance Center cmdlet and an Exchange Online cmdlet. For example, you can run **Install-UnifiedCompliancePrerequisite** and **Get-Mailbox**. 
-  
-If you receive errors, check the following requirements:
-  
-- A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
-    
-- Verify that your account has permission to access the Security & Compliance Center. For details, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
-    
-- To help prevent denial-of-service (DoS) attacks, you're limited to three open remote PowerShell connections to the Security & Compliance Center.
-    
-- Windows PowerShell must be configured to run scripts. This only has to be done once, not every time you connect. To enable Windows PowerShell to run signed scripts, run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you opened by selecting **Run as administrator**).
 
     ```powershell
-    Set-ExecutionPolicy RemoteSigned
+    .\ConnectEXO-SCC.ps1
     ```
 
-- TCP port 80 traffic needs to be open between your local computer and Office 365. It's probably open, but it's something to consider if your organization has a restrictive Internet access policy.
+How do you know if this worked? After you run the script, cmdlets from Exchange Online and Security & Compliance PowerShell are imported to your local Windows PowerShell session. If you don't receive any errors, you connected successfully. A quick test is to run an Exchange Online and Security & Compliance Center cmdlet. For example, you can run and **Get-Mailbox** and **Get-ComplianceSearch**.
 
-  
+For troubleshooting PowerShell connection errors, see:
+
+- [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
+
+- [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+
 ## New-ComplianceSecurityFilter
 
-The **New-ComplianceSecurityFilter** is used to create a search permissions filter. The following table describes the parameters for this cmdlet. All parameters are required to create a compliance security filter. 
+The **New-ComplianceSecurityFilter** is used to create a search permissions filter. The following table describes the parameters for this cmdlet. All parameters are required to create a compliance security filter.
   
 |**Parameter**|**Description**|
 |:-----|:-----|
@@ -139,7 +127,7 @@ This example allows the user annb@contoso.com to perform all Content Search acti
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
 ```
 
-This example allows the users' donh and suzanf to search only the mailboxes that have the value 'Marketing' for the CustomAttribute1 mailbox property.
+This example allows the users donh and suzanf to search only the mailboxes that have the value 'Marketing' for the CustomAttribute1 mailbox property.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
