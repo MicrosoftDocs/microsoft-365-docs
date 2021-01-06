@@ -30,7 +30,7 @@ Complete the following steps in order to mover your data, email and users from G
 
 | Step  |Description  |
 |---------|---------|
-|Step 1 |  Sign up for Microsoft 365 Business Premium       |
+|Step 1 |  [Sign up](../sign-up.md) for Microsoft 365 Business Premium       |
 |Step 2 |   Set up Microsoft 365 for Google Workspace migration. </br> In this step you will validate you own the domain you use in Google Workspace, add users, and set up some basic security for devices. |
 |Step 3 | Set up security policies for Windows devices. |
 |Step 4 | Install apps and Teams. |

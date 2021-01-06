@@ -1,0 +1,10 @@
+- name: Switch from Google Workspace to Microsoft 365
+  items: 
+    - name: Sign up for Microsoft 365
+      href: ../sign-up.md
+    - name: Set up Microsoft 365 for Google migration
+      href: set-up-microsoft-365-forgoogle.md
+    - name: Add Google Workspace Domain 
+      href: add-google-domain.md
+    
+    
