@@ -126,7 +126,7 @@ Just as important as the way the emails are sent is the content they contain. Wh
 
 - Redirects included in the body of the message should be similar and consistent, and not multiple and varied. A redirect in this context is anything that points away from the message, such as links and documents. If you have a lot of advertising or Unsubscribe links or Update the Profile links, they should all point to the same domain. For example:
 
-  Correct:
+  Correct (all domains are the same):
 
   `unsubscribe.bulkmailer.com`
 
@@ -134,7 +134,7 @@ Just as important as the way the emails are sent is the content they contain. Wh
 
   `options.bulkmailer.com`
 
-  Incorrect:
+  Incorrect (all domains are different):
 
   `unsubscribe.bulkmailer.com`
 
