@@ -37,7 +37,7 @@ Naming changes are automatically applied to queries that are saved in the securi
 - Queries that are run using the API
 - Queries that are saved elsewhere outside the security center
 
-## November 2020
+## December 2020
 
 | Table name | Original column name | New column name | Reason for change
 |--|--|--|--|
