@@ -32,7 +32,7 @@ Your users will enjoy the latest versions of Windows 10 and Microsoft 365 Apps f
 
 ## Unique to Microsoft Managed Desktop
 
-Of course there's nothing stopping you from obtaining and managing your own devices and Microsoft 365 deployments yourself. So what does Microsoft Managed Desktop offer beyond that?
+Of course, there's nothing stopping you from obtaining and managing your own devices and Microsoft 365 deployments yourself. So what does Microsoft Managed Desktop offer beyond those things?
 
 Our policies and security baseline offers your users these benefits:
 
@@ -66,10 +66,10 @@ We also monitor device health and provide you with insights about device perform
 ## Need more details?
 For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam), a [Forrester Total Economic Impact case study](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf), and a downloadable [one-page summary](https://aka.ms/AA6ob3h). You can find the latest news at the Microsoft Managed Desktop [blog](https://aka.ms/AA6l2dd).
 
-If Microsoft Managed Desktop seems right for your organization, you can delve into additional documentation that explains more about the service, how to prepare your organization to enroll, how to get started with the service, and ongoing operations thereafter, including how you and your users can easily get help if needed. If you're already ready to come on board, start with contacting your [local account team](https://pages.email.office.com/contactmmd/).
+If Microsoft Managed Desktop seems right for your organization, you can delve into further documentation that explains more about the service, how to prepare your organization to enroll, how to get started with the service, and ongoing operations thereafter, including how you and your users can easily get help if needed. If you're already ready to come on board, start with contacting your [local account team](https://pages.email.office.com/contactmmd/).
 
 **More overview and background**
-Primarily for technical and business decision makers, these topics detail the division of roles and responsibilities between your organization and Microsoft, more about the technologies used in Microsoft Managed Desktop, and how the service fits into a broader strategy as part of the ITIL framework.
+Primarily for technical and business decision makers, these articles detail the division of roles and responsibilities between your organization and Microsoft, more about the technologies used in Microsoft Managed Desktop, and how the service fits into a broader strategy as part of the ITIL framework.
 
 - [Microsoft Managed Desktop roles and responsibilities](roles-and-responsibilities.md)
 - [Microsoft Managed Desktop technologies](technologies.md)

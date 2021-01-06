@@ -24,9 +24,9 @@ We recommend working with one of our approved device partners. You can work with
     - Work with a partner to register the devices
 4. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices
 
-## To re-use existing devices
+## To reuse existing devices
 
-1. Review the list of [currently approved devices](../service-description/device-list.md) to identify which of your devices is approved for use with Microsoft Managed Desktop. If you re-use an existing device, you will have to re-image it.
+1. Review the list of [currently approved devices](../service-description/device-list.md) to identify which of your devices is approved for use with Microsoft Managed Desktop. If you reuse an existing device, you will have to reimage it.
 2. Do either of the following:
     - [Register existing devices yourself](register-reused-devices-self.md)
     - Work with a partner to register the devices

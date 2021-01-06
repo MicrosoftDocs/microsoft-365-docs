@@ -26,7 +26,7 @@ An exception is any addition or change to the Microsoft Managed Desktop base con
 |Digital experience monitoring     |  Software used to track data on a user’s device to report to IT       |
 |Hardware or software drivers     |   Device drivers, restricted by the [application requirements](mmd-app-requirements.md)      |
 |Policies     | Windows 10 or Microsoft 365 Apps for enterprise settings on a managed device        |
-|Devices     | Devices which are not on the Microsoft Managed Desktop [device list](device-list.md)        |
+|Devices     | Devices that are not on the Microsoft Managed Desktop [device list](device-list.md)        |
 |Other     |  Anything not covered by the other areas       |
  
 ## Request an exception
@@ -44,7 +44,7 @@ When we review exception requests, we assess these factors in this order:
  
 1.	Some applications and policies which Microsoft Managed Desktop deploys to all devices aren't negotiable, so your request must not affect those. See [Device configuration](device-policies.md) for more information.
 2.	Restricted productivity software required by a user to do their job will likely be approved. 
-3.	If we can meet your requirement by using Microsoft technology, we’ll likely approve your request for an exception migration period of three to twelve months (depending on the scope of the project).
+3.	If we can meet your requirement by using Microsoft technology, we’ll likely approve your request for an exception migration period of three to 12 months (depending on the scope of the project).
 4.	If we can’t meet your requirement by using Microsoft technology, we’ll likely approve your request unless it violates one of the conditions below.  
 
 These principles ensure that Microsoft Managed Desktop can always meet your needs while tracking deviations from our standard template. 
@@ -66,10 +66,10 @@ After a requested exception is approved and deployed, it’s possible that we mi
  
 If this happens, we’ll notify you by using the Microsoft Managed Desktop admin portal. From the first time we notify you, you have 90 days to remove the exception before the devices with the exception are no longer bound by Microsoft Managed Desktop service level agreements. We'll send you several notifications according to a strict timeline--however, a severe incident or threat might require us to change the timeline or our decisions about an exception. We won't *remove* an exception without your consent, but any device with a revoked exception will no longer be bound by our service level agreement. Here is the timeline of notifications we will send you:
 
-- **First notice:** We provide the first notice of our decision to revoke approval, including information about why we’re revoking it, the actions we advise you to take, the deadline for those actions, and steps to follow if you want to appeal the decision. This is 90 days in advance before the exception needs to be removed from all devices. 
+- **First notice:** We provide the first notice of our decision to revoke approval, including information about why we’re revoking it, the actions we advise you to take, the deadline for those actions, and steps to follow if you want to appeal the decision. This notice occurs 90 days in advance before the exception needs to be removed from all devices. 
 - **Second notice (30 days later):** We provide a second notice, including the same information provided in the first notice. 
 - **Third notice (60 days after the first notice):** We provide a third notice, including the same information provided in the first notice. 
-- **Final notice (1 week before the 90-day deadline):** We provide a fourth notice, including the same information provided in the first notice.
+- **Final notice (one week before the 90-day deadline):** We provide a fourth notice, including the same information provided in the first notice.
 - **90 days after first notice:** Microsoft Managed Desktop service level agreements no longer apply to any devices that have the revoked exception. At any time, you can challenge the decision and provide additional information for consideration, including upgrade, configuration changes, or change of software. 
 
 
