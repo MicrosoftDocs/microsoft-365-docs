@@ -351,6 +351,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/office-365-advanced-ediscovery.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/quick-setup-for-advanced-ediscovery.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/get-started-with-advanced-ediscovery",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Windows.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
       "redirect_document_id": false
