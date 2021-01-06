@@ -1,5 +1,5 @@
 ---
-title: "How to retrain a classifier in communications compliance (preview)"
+title: "How to retrain a classifier in communications compliance"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,13 +17,13 @@ search.appverid:
 description: "Learn how to provide feedback to a trainable classifier in Communications compliance."
 ---
 
-# How to retrain a classifier in communications compliance (preview)
+# How to retrain a classifier in communications compliance
 
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, communications compliance policies, and retention label policies.
 
 This article shows you how to improve the performance of custom trainable classifiers and some pre-trained classifiers by providing them additional feedback.
 
-To learn more about the different types of classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
+To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
 ## Permissions
 
@@ -47,7 +47,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 > [!NOTE]
 > A classifier must already be published and in use before it can be retrained.
 
-## How to retrain a classifier in communication compliance policies (preview)
+## How to retrain a classifier in communication compliance policies
 
 1. Open the Communication compliance policy that uses a classifier as a condition and choose one of the identified items from the **Pending** list.
 2. Choose the ellipsis and **Improve classification**.
@@ -63,7 +63,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 > This information goes to the classifier in your tenant, **it does not go back to Microsoft**.
 
 6.  Open the **Data classification** page in the **Microsoft 365 compliance center**.
-7. Open **Trainable classifiers (preview)**.
+7. Open **Trainable classifiers**.
 8. The classifier that was used in your Communications compliance policy will appear under the **Re-training** heading.
 
 ![classifier in retraining status](../media/classifier-retraining.png)
@@ -89,5 +89,5 @@ We compare the performance numbers on both sets of items for the retrained and p
 
 ## See also
 
-- [Learn about trainable classifiers (preview)](classifier-learn-about.md)
+- [Learn about trainable classifiers](classifier-learn-about.md)
 - [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

@@ -42,7 +42,7 @@ Once the search estimate is completed, select the search to display the flyout p
 - Top locations
 - Queries
 
-For more information about search statistics, see [Search statistics](search-statistics.md).
+For more information about search statistics, see [Search statistics](search-statistics-in-advanced-ediscovery.md).
 
 Once preview is completed, the **Preview** button will be active. Select it to preview a sampled subset of the results.
 
