@@ -46,7 +46,7 @@ The following files can be deleted:
 
 List items are not supported by retention policies but are supported by retention labels with the exception of items in system lists. These are hidden lists used by SharePoint to manage the system and include the master page catalog, solution catalog, and data sources.
 
-Retention settings do not apply to organizing structures that include libraries, lists, and folders.
+Retention settings from both retention policies and retention labels do not apply to organizing structures that include libraries, lists, and folders.
 
 For retention policies and auto-apply label policies: SharePoint sites must be indexed for the retention settings to be applied. However, if items in SharePoint document libraries are configured to not appear in search results, this configuration doesn't exclude files from the retention settings.
 
