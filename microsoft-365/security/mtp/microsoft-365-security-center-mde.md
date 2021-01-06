@@ -46,9 +46,9 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 |**Area**  |**Description of change**  |
 |---------|---------|
 | [Incidents & alerts](incidents-overview.md)  | In the Microsoft 365 security center, you can manage incidents and alerts across all of your endpoints, email, and identities. We've converged the experience to help you find related events more easily. For more information, see [Incidents Overview](incidents-overview.md).   |
-| [Hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)  |  Now includes "Advanced hunting" and "Custom detection rules."   |
-|Action center    | Lists pending and completed actions that were taken following automated investigations and remediation actions. Formerly, the Action center in the Microsoft Defender Security Center listed pending and completed actions for remediation actions taken on devices only, while Automated investigations listed alerts and status. In the new and improved Microsoft 365 security center, the Action center brings together remediation actions and investigations across email, devices, and users—all in one location.  |
-| Threat analytics |  Moved from under the "Dashboards" section.   |
+| [Hunting](advanced-hunting-overview.md)  |  Now includes "Advanced hunting" and "Custom detection rules."   |
+|[Action center](mtp-action-center.md)    | Lists pending and completed actions that were taken following automated investigations and remediation actions. Formerly, the Action center in the Microsoft Defender Security Center listed pending and completed actions for remediation actions taken on devices only, while Automated investigations listed alerts and status. In the new and improved Microsoft 365 security center, the Action center brings together remediation actions and investigations across email, devices, and users—all in one location.  |
+| [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) |  Moved from under the "Dashboards" section.   |
 
 ### Endpoints
 
@@ -104,6 +104,7 @@ Action center shows you the investigations created by automated investigation an
 
 ### Threat Analytics
 Threat Analytics provides a summary of the latest threats that could be affecting your organization. With this information, security teams can learn the specifics about each individual threat in the Threat Analytics reports as well as see how these threats might be impacting your organization. New in the Microsoft 365 security center is a combined view of threats that include signals from both Defender for Endpoint as well as Defender for Office 365.
+[Learn more about Threat Analytics]
 
 ### Endpoints
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
