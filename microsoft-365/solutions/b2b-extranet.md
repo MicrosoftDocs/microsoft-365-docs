@@ -1,8 +1,8 @@
-﻿---
+---
 title: "Create a B2B extranet with managed guests"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: 
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to create a B2B extranet site or team with managed guest users from a partner organization."
+description: "Learn how to create a B2B extranet site or team with managed guests from a partner organization."
 ---
 
 # Create a B2B extranet with managed guests
 
 You can use [Azure Active Directory Entitlement Management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) to create a B2B extranet to collaborate with a partner organization that uses Azure Active Directory. This allows users to self-enroll in the extranet site or team and receive access via an approval workflow.
 
-With this method of sharing resources for collaboration, the partner organization can help maintain and approve the guest users on their end, reducing the burden on your IT department and allowing those most familiar with the collaboration agreement to manage user access.
+With this method of sharing resources for collaboration, the partner organization can help maintain and approve the guests on their end, reducing the burden on your IT department and allowing those most familiar with the collaboration agreement to manage user access.
 
 This article walks through the steps to create a package of resources (in this case, a site or team) that you can share with a partner organization through a self-service access registration model. 
 
@@ -51,7 +52,7 @@ To add a connected organization
 6. Click **Add directory + domain**.
 7. Type the domain for the organization that you want to connect, and then click **Add**.
 8. Click **Connect**, and then click **Next: Sponsors**.
-9. Add people from your organization or the organization that you're connecting to who you want to approve access for guest users.
+9. Add people from your organization or the organization that you're connecting to who you want to approve access for guests.
 10. Click **Next: Review + Create**.
 11. Review the settings that you've chosen and then click **Create**.
 
@@ -86,7 +87,7 @@ To create an access package
 2. Click **Access packages**, and then click **New access package**.
 3. Type a name and description for the access package, and then click **Next: Resource roles**.
 4. Choose the resources from the catalog that you want to use for your extranet.
-5. For each resource, in the **Role** column, choose the user role you want to grant to the guest users who use the extranet.
+5. For each resource, in the **Role** column, choose the user role you want to grant to the guests who use the extranet.
 6. Click **Next: Requests**.
 7. Under **Users who can request access**, choose **For users not in your directory**.
 8. Ensure that the **Specific connected organizations** option is selected, and then click **Add directories**.

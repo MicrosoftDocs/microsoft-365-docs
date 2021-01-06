@@ -94,7 +94,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 ### Retention policy for Yammer locations
 
 > [!NOTE]
-> Retention policies for Yammer are rolling out in preview. If you don't yet see the new locations for Yammer, try again in a few days.
+> Retention policies for Yammer are rolling out in preview. If you don't yet see the new locations for Yammer, try again in a few weeks.
 >
 > To use this feature, your Yammer network must be [Native Mode](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
@@ -188,7 +188,7 @@ To verify the syntax for your tenant and identify URLs for users, see [Get a lis
 
 To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
 
-A retention policy applied to a Microsoft 365 group includes the group mailbox and teams site, if a teams site was selected at the time the group was created or later added to the group. Files stored in the teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
+A retention policy applied to a Microsoft 365 group includes the group mailbox and SharePoint teams site. Files stored in the SharePoint teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
 
 ### Configuration information for Skype for Business
 
@@ -222,7 +222,7 @@ When you configure a retention policy, you choose to retain items for a specific
 
 When you configure a retention policy, you can choose to retain content indefinitely or for a specific number of days, months, or years. The retention period is calculated from the age of the content, not from when the retention policy is applied.
 
-For the start of the retention period, you can also choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Office 365 locations, when the content was last modified.
+For the start of the retention period, you can also choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified.
 
 Examples:
 
@@ -260,7 +260,7 @@ Only if you use the optional configuration to scope your retention settings to s
   - 1,000 users for Teams private chats
   - 100 sites (OneDrive or SharePoint)
 
-There is also a maximum number of policies that are supported for a tenant: 10,000. These items include retention policies, retention label policies, and auto-apply retention policies.
+There is also a maximum number of policies that are supported for a tenant: 10,000. However, for Exchange Online, the maximum number is 1,800. The maximum number includes retention policies, retention label policies, and auto-apply retention policies.
 
 If your retention policies are likely to be subject to these limitations, use the default configuration that applies to the entire location because these policies don't have any limitations.
 
@@ -274,6 +274,9 @@ To use the optional configuration to scope your retention settings, make sure th
 > In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify excludes to be exempt from the policy.
 
 ## Updating retention policies
+
+Some settings can't be changed after a retention policy is created and saved, which include:
+- The retention policy name and the retention settings except the retention period and when to start the retention period.
 
 If you edit a retention policy and items are already subject to the original settings in your retention policy, your updated settings will be automatically applied to these items in addition to items that are newly identified.
 

@@ -29,18 +29,19 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 ## Endpoint activities you can monitor and take action on
 
-Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10. This includes:
+Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
 
 
-|activity on item |auditable/restrictable  |
-|---------|---------|
-|created    | auditable      |
-|renamed    |  auditable       |
-|copied to or created on removable media     |     auditable and restrictable|
-|copied to network share, e.g. \\my-server\fileshare   |     auditable and restrictable    |
-|printed |    auditable and restrictable       |
-|copied to cloud via Chromium Edge    |   auditable and restrictable        |
-|accessed by unallowed apps and browsers    |  auditable and restrictable       |
+|activity |description  | auditable/restictable|
+|---------|---------|---------|
+|upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an being an unallowed browser, the upload activity will be blocked and the user is redirected to use Edge Chromium. Edge Chromium will then either allow or block the upload or access based on the DLP policy configuration         |auditable and restrictable|
+|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.         | auditable and restrictable|
+|copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.         | auditable and restrictable|
+|copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive         |auditable and restrictable|
+|print a document    |Detects when a user attempts to print a protected item to a local or network printer.| auditable and restrictable         |
+|create an item|Detects when a user creates an item| auditable|
+|rename an item|Detects when a user renames an item| auditable|
+
 
 ## What's different in Endpoint DLP
 
@@ -73,7 +74,7 @@ If you have onboarded devices through [Microsoft Defender for Endpoint](https://
 
 ### Viewing Endpoint DLP data
 
- Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed. At public preview it watches all:
+ Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed. At this time the following file types are supported:
 
 - Word files
 - PowerPoint files
@@ -142,13 +143,13 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 
 Now that you've learned about Endpoint DLP, your next steps are:
 
-1) [Getting started with Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)
-2) [Using Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+1) [Getting started with Microsoft Endpoint data loss prevention ](endpoint-dlp-getting-started.md)
+2) [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
 
-- [Getting started with Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)
-- [Using Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+- [Getting started with Microsoft Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+- [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)

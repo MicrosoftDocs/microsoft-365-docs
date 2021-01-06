@@ -29,45 +29,10 @@ ms.topic: conceptual
 
 **Applies to:**
 - Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Plan your pilot Microsoft 365 Defender project" />
-      <br/>Plan</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Prepare your Microsoft 365 Defender trial lab or pilot environment" />
-      <br/>Prepare</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Run your Microsoft 365 Defender attack simulations" />
-     <br/>Simulate attack</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Close and summarize your Microsoft 365 Defender pilot" />
-     <br/>Close and summarize</a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|![Planning](../../media/phase-diagrams/1-planning.png)<br/>Planning|[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparation](prepare-mtpeval.md) | [![Simulate attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simulate attack](mtp-pilot-simulate.md) | [![Close and summarize](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Close and summarize](mtp-pilot-close.md)|
+|--|--|--|--|
+|*You are here!*| | | |
 
 You're currently in the planning phase.
 
@@ -118,8 +83,8 @@ One way to bring all elements of your plan together can be to create a scorecard
 | Use case | Requirements | Configuration requirements | Test plan | Expected outcome | Test status | Score | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Incident management|-	Microsoft 365 Defender	</br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint </br></br>- Microsoft Cloud App Security (optional)|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Investigate the incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Investigators can understand the scope and impact of the incident and manage the incident||||
-|AutoIR|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Automated investigation](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Alerts and incidents are automatically remediated by Microsoft 365 Defender||||
-|Advanced hunting|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Endpoint </br></br>-Microsoft Defender for Office 365	|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details|[Advanced hunting scenario](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Investigators can find data through advanced hunting, pivoting to impacted entities, and by creating custom detections||||
+|AutoIR|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Automated investigation](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Alerts and incidents are automatically remediated by Microsoft 365 Defender||||
+|Advanced hunting|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Endpoint </br></br>-Microsoft Defender for Office 365	|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details|[Advanced hunting scenario](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |Investigators can find data through advanced hunting, pivoting to impacted entities, and by creating custom detections||||
 
 
 

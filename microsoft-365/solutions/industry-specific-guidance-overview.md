@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 industry-specific guidance overview
-description: Description.
+description: Find best practices for your industry - finance, healthcare, and education.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,6 +12,8 @@ ms.collection:
 - M365-subscription-management
 ms.custom: 
 f1.keywords: NOCSH
+ROBOTS: NOINDEX
+
 ---
 
 # Microsoft 365 industry-specific guidance overview

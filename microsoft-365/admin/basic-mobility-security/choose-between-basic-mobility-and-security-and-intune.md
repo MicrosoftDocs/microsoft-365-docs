@@ -28,7 +28,7 @@ description: "Basic Mobility and Security are part of the Microsoft 365 plans."
  
 Both Basic Mobility and Security and Intune are included in a variety of plans, described in the following table.
 
-|**Plan**|**Basic Mobility and Security**|**Microsoft Intune**|
+| Plan | Basic Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Yes|No|
 |Microsoft 365 Business Basic|Yes|No|
@@ -59,13 +59,12 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 >[!NOTE]
 >You can manage users and their mobile devices using both Intune and Basic Mobility and Security in the same Microsoft 365 Business Standard organization *by setting up Basic Mobility and Security first, and then adding Microsoft Intune*. This allows you to choose Basic Mobility and Security or the more feature-rich Intune solution. Assign an Intune license to enable the Intune features.
 
-|**Feature area**|**Feature highlights**|**Basic Mobility and Security**|**Microsoft Intune**|
+| Feature area | Feature highlights | Basic Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |Device types|Managing different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
 |Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
-|Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |No |
-|Device configuration  |Configure device settings (for example, disabling the camera)|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
- |Limited set of settings. |Yes|
+|Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |Yes |
+|Device configuration  |Configure device settings (for example, disabling the camera)|Limited set of settings.|Yes|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|

@@ -49,27 +49,16 @@ As a user, you can view, release, and delete quarantined messages where you are 
 2. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
    - **Received**<sup>\*</sup>
-
    - **Sender**<sup>\*</sup>
-
    - **Subject**<sup>\*</sup>
-
    - **Quarantine reason**<sup>\*</sup>
-
    - **Released?**<sup>\*</sup>
-
    - **Policy type**<sup>\*</sup>
-
    - **Expires**<sup>\*</sup>
-
    - **Recipient**
-
    - **Message ID**
-
    - **Policy name**
-
    - **Size**
-
    - **Direction**
 
    When you're finished, click **Save**, or click **Set to default**.
@@ -77,29 +66,21 @@ As a user, you can view, release, and delete quarantined messages where you are 
 3. To filter the results, click **Filter**. The available filters are:
 
    - **Expires time**: Filter messages by when they will expire from quarantine:
-
      - **Today**
-
      - **Next 2 days**
-
      - **Next 7 days**
-
      - **Custom**: Enter a **Start date** and **End date**.
 
    - **Received time**: Enter a **Start date** and **End date**.
 
    - **Quarantine reason**:
-
      - **Bulk**
-
      - **Spam**
-
      - **Phish**
-     
+
    - **Policy Type**: Filter messages by policy type:
      - **Anti-phish policy**
-     - **Hosted content filter policy**
-     
+     - **Hosted content filter policy** (anti-spam policy)
 
    To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
 
@@ -108,7 +89,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
    - **Message ID**: The globally unique identifier of the message. If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears. Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.
 
    - **Sender email address**: A single sender's email address.
-   
+
    - **Policy name**: Use the entire policy name of the message. The search is not case-sensitive.
 
    - **Recipient email address**: A single recipient's email address.
@@ -160,12 +141,8 @@ After you select a message, you have options for what to do with the messages in
 - **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
 
 - **Preview message**: In the flyout pane that appears, choose one of the following options:
-
   - **Source view**: Shows the HTML version of the message body with all links disabled.
-  
   - **Text view**: Shows the message body in plain text.
-
-- **Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
 
 - **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.
 

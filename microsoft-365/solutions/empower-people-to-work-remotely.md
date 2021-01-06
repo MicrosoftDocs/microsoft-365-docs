@@ -95,7 +95,17 @@ For a 2-page summary of this solution, see the [Empower remote workers poster](.
 
 [![Empower remote workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
-You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) and print it on letter, legal, or tabloid (11 x 17) size paper.
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) or  [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
+
+## Provide remote working for all of your workers
+
+You can enable all of your workers to stay productive from anywhere with these devices:
+
+- A modern device, such as a Surface laptop and Windows 10, which has the features, security, and performance to access Microsoft 365 cloud apps and services directly over the web.
+
+- Any device including older laptops or desktops used from home, which can access Microsoft 365 cloud apps and services indirectly through a quickly deployed [Windows 10-based virtual desktop](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices). This option provides high performance, strong security, and simplified IT management.
+
+## Next steps
 
 Use these steps to secure and optimize access to your organization's servers and cloud services and maximize your remote worker's productivity.
 
@@ -110,3 +120,5 @@ Use these steps to secure and optimize access to your organization's servers and
 
 For the latest information from Microsoft about supporting remote workers, see the [Enabling hybrid work
 with Microsoft Teams site](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+
+To see how a fictional but representative multi-national organization empowered its remote workers, see [Contoso's COVID-19 response and infrastructure for remote and onsite work](contoso-remote-onsite-work.md).
