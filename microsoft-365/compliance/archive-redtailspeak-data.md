@@ -1,5 +1,5 @@
 ---
-title: "Set up a connector to archive Redtail Speak data in Microsoft 365"
+title: "Set up a connector to archive Red tail Speak data in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: "Admins can set up a connector to import and archive Redtail Speak data from Globanet to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
+description: "Admins can set up a connector to import and archive Red tail Speak data from Globanet to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
 ---
 
 # Set up a connector to archive Redtail Speak data
@@ -46,13 +46,13 @@ The following overview explains the process of using a connector to archive the 
 
 The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for the Redtail Speak data.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** &gt; **Redtail Speak**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and select **Data connectors** &gt; **Redtail Speak**.
 
-2. On the **Redtail Speak** product description page, click **Add new connector**.
+2. On the **Redtail Speak** product description page, select **Add new connector**.
 
-3. On the **Terms of service** page, click **Accept**.
+3. On the **Terms of service** page, select **Accept**.
 
-4. Enter a unique name that identifies the connector, and then click **Next**.
+4. Enter a unique name that identifies the connector, and then select **Next**.
 
 5. Sign in to your Merge1 account to configure the connector.
 
@@ -60,7 +60,7 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 The second step is to configure the Redtail Speak connector on the Merge1 site. For information about how to configure the Redtail Speak connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Redtail%20Speak%20User%20Guide%20.pdf).
 
-After you click **Save & Finish**, the **User mapping** page in the connector wizard in the Microsoft 365 compliance center is displayed.
+After you select **Save & Finish**, the **User mapping** page in the connector wizard in the Microsoft 365 compliance center is displayed.
 
 ## Step 3: Map users and complete the connector setup
 
@@ -68,17 +68,17 @@ To map users and complete the connector setup, follow these steps:
 
 1. On the **Map Redtail Speak users to Microsoft 365 users** page, enable automatic user mapping. The Redtail Speak items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
 
-2. Click **Next**, review your settings, and go to the **Data connectors** page to see the progress of the import process for the new connector.
+2. Select **Next**, review your settings, and go to the **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Step 4: Monitor the Redtail Speak connector
 
 After you create the Redtail Speak connector, you can view the connector status in the Microsoft 365 compliance center.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and select **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the **Redtail Speak** connector to display the flyout page. This page displays properties and information about the connector.
+2. Select the **Connectors** tab and then select the **Redtail Speak** connector to display the flyout page. This page displays properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, select the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
 
 ## Known issues
 
