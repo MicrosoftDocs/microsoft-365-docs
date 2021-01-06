@@ -249,7 +249,7 @@ additionalContent:
         - title: Planner and Project
           links:
             - text: Planner admin help
-              url: /office365/planner/planner-admin-home
+              url: /office365/planner
             - text: Project for the web
               url: /project-for-the-web/projectforweb-admin-home
             - text: More Project >
