@@ -3,7 +3,6 @@ title: "Managing Office 365 endpoints"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,19 +22,19 @@ description: Learn how to manage Office 365 endpoints so that they work with you
 
 # Managing Office 365 endpoints
 
-Most enterprise organizations that have multiple office locations and a connecting WAN will need configuration for Office 365 network connectivity. You can optimize your network by sending all trusted Office 365 network requests directly through your firewall, bypassing all additional packet level inspection or processing. This reduces latency and your perimeter capacity requirements. Identifying Office 365 network traffic is the first step in providing optimal performance for your users. For more information about Office 365 network connectivity, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+Most enterprise organizations that have multiple office locations and a connecting WAN will need configuration for Office 365 network connectivity. You can optimize your network by sending all trusted Office 365 network requests directly through your firewall, bypassing all additional packet level inspection or processing. This reduces latency and your perimeter capacity requirements. Identifying Office 365 network traffic is the first step in providing optimal performance for your users. For more information, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
-Microsoft recommends you access the Office 365 network endpoints and changes to them using the [Office 365 IP Address and URL Web Service](microsoft-365-ip-web-service.md).
+Microsoft recommends you access the Office 365 network endpoints and ongoing changes to them using the [Office 365 IP Address and URL Web Service](microsoft-365-ip-web-service.md).
 
 Regardless of how you manage vital Office 365 network traffic, Office 365 requires Internet connectivity. Other network endpoints where connectivity is required are listed at [Additional endpoints not included in the Office 365 IP Address and URL Web service](additional-office365-ip-addresses-and-urls.md).
 
-How you use the Office 365 network endpoints will depend on your enterprise organization network architecture. This article outlines several ways that enterprise network architectures can integrate with Office 365 IP addresses and URLs. The easiest way to choose which network requests to trust is to use SDWAN devices that support automated Office 365 configuration at each of your office locations.
+How you use the Office 365 network endpoints will depend on your enterprise organization network architecture. This article outlines several ways that enterprise network architectures can integrate with Office 365 IP addresses and URLs. The easiest way to choose which network requests to trust is to use SD-WAN devices that support automated Office 365 configuration at each of your office locations.
 
-## SDWAN for local branch egress of vital Office 365 network traffic
+## SD-WAN for local branch egress of vital Office 365 network traffic
 
-At each branch office location, you can provide an SDWAN device that is configured to route traffic for Office 365 Optimize category of endpoints, or Optimize and Allow categories, directly to Microsoft's network. Other network traffic including on-premises datacenter traffic, general Internet web sites traffic, and traffic to Office 365 Default category endpoints is sent to another location where you have a more substantial network perimeter.
+At each branch office location, you can provide an SD-WAN device that is configured to route traffic for Office 365 Optimize category of endpoints, or Optimize and Allow categories, directly to Microsoft's network. Other network traffic including on-premises datacenter traffic, general Internet web sites traffic, and traffic to Office 365 Default category endpoints is sent to another location where you have a more substantial network perimeter.
 
-Microsoft is working with SDWAN providers to enable automated configuration. For more information, see [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
+Microsoft is working with SD-WAN providers to enable automated configuration. For more information, see [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
 
 <a name="pacfiles"> </a>
 ## Use a PAC file for direct routing of vital Office 365 traffic
@@ -116,7 +115,7 @@ For information about a Microsoft Flow sample and template, see [Use Microsoft F
 <a name="FAQ"> </a>
 ## Office 365 network endpoints FAQ
 
-Frequently-asked administrator questions about Office 365 connectivity:
+See these frequently-asked questions about Office 365 network connectivity.
   
 ### How do I submit a question?
 
@@ -212,7 +211,7 @@ Keep in mind that blocking access to the Microsoft consumer services alone won't
 
 Office 365 does not provide IP addresses of all required network endpoints. Some are provided as URLs only and are categorized as default. URLs in the default category which are required should be allowed through a proxy server. If you do not have a proxy server then look at how you have configured web requests for URLs that users type into the address bar of a web browser; the user doesn’t provide an IP address either. The Office 365 default category URLs which do not provide IP addresses should be configured in the same way.
 
-## Related Topics
+## Related topics
 
 [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
 
