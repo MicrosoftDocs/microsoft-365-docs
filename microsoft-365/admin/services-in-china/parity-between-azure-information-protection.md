@@ -82,22 +82,23 @@ Also, the assumption is that users will log in with a username based off the ten
 
 ### DNS configuration for encryption (Mac, iOS, Android)
 
-- Log in to your DNS provider, navigate to the DNS settings for the domain, and then add a new SRV record.
-  - Service = `_rmsdisco`
-  - Protocol = `_http`
-  - Name = `_tcp`
-  - Target = `api.aadrm.cn`
-  - Port = `80`
-  - Priority, Weight, Seconds, TTL = default values
+Log in to your DNS provider, navigate to the DNS settings for the domain, and then add a new SRV record.
+
+- Service = `_rmsdisco`
+- Protocol = `_http`
+- Name = `_tcp`
+- Target = `api.aadrm.cn`
+- Port = `80`
+- Priority, Weight, Seconds, TTL = default values
 
 ### AIP apps configuration (unified labeling only)
 
 For the unified labeling solution, AIP apps on Windows need the following registry key to point them to the correct sovereign cloud for Azure China:
 
-- Registry node: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP**
-- Name: **CloudEnvType**
-- Value: **6** (Default = 0)
-- Type: **REG_DWORD**
+- Registry node = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
+- Name = `CloudEnvType`
+- Value = `6` (default = 0)
+- Type = `REG_DWORD`
 
 > [!IMPORTANT]
 > Make sure you don't delete the registry key after an uninstall. If the key is empty, incorrect, or non-existent, the functionality will behave as the default value (default value = 0 for the commercial cloud). If the key is empty or incorrect, a print error is also added to the log.
