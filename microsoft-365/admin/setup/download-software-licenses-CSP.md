@@ -17,18 +17,12 @@ search.appverid:
 - MET150
 ms.custom:
 - AdminSurgePortfolio
-description: Learn how to download the software and product license keys for perpetual software that you bought through CSP.
+description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
 ---
 
 # Download perpetual software and product license keys
 
-We plan to retire the Microsoft Open License program on December 31, 2021. Starting on January 1, 2022, you won’t be able to renew or buy new perpetual software licenses, Software Assurance, or online services through the Microsoft Open License program. Beginning on January 1, 2021, small and medium-sized business customers can buy perpetual software licenses through the Cloud Solution Provider (CSP) program.
-
-> [!NOTE]
-> You can continue to renew and buy new perpetual software licenses, Software Assurance, and online services through the existing Microsoft Open License program until December 31, 2021.
-
-The changes to these programs provide a simplified approach to buying perpetual software licenses for your organization. This article explains how to download the software and product license keys for perpetual software that you bought through CSP.
-For more information, see [Microsoft Open License program changes](https://www.microsoft.com/licensing/news/microsoft-open-license-program-changes).
+This article explains how to download software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
 
 ## Before you begin
 
@@ -44,8 +38,8 @@ You must be a Global admin to do the steps in this article. For more information
 6. Paste the key in a file in a secure location. The key is needed to activate the downloaded software.
 
 ## Next steps
+...
 
 ## Related content
 
-[Sell on-premise software through the Cloud Solution Provider (CSP) program](https://docs.microsoft.com/partner-center/csp-on-premise-software) (article)\
-Cloud Solution Providers (CSP) perpetual software version availability (new article we need to create)
+[Sell on-premise software through the Cloud Solution Provider (CSP) program](https://docs.microsoft.com/partner-center/csp-on-premise-software) (article)
