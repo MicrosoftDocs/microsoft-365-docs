@@ -16,6 +16,8 @@
       href: migrate-email.md
     - name: Connect your domain to Microsoft 365
       href: connect-domain-tom365.md
+    - name: Use [Mover to move everyone's data
+      href: mover-migrate-files.md
     - name: Cancel Google Workspace
       href: cancel-google.md
     
