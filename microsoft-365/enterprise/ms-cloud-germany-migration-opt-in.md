@@ -47,15 +47,15 @@ Once you have opted-in on behalf of your tenant, all administrators will see the
  
 ![Opt-in confirmation](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
-## What happens after opting-in for migration?
+## What happens after opting in for migration?
 
-Migrations will begin in early 2021 for organizations that opt-in to the Microsoft-driven approach and will be complete before the Microsoft Cloud Germany (Microsoft Cloud Deutschland) retirement date on October 29, 2021.  As a result of the migration, core customer data and subscriptions are moved to the new German regions.  Microsoft will post updates throughout the migration process in the Message Center. Please see [these articles](#moreinformation) to learn more.
+Migrations will begin in early 2021 for organizations that opt-in to the Microsoft-driven approach and will be complete before the Microsoft Cloud Germany (Microsoft Cloud Deutschland) retirement date on October 29, 2021.  As a result of the migration, core customer data and subscriptions are moved to the new German regions.  Microsoft will post updates throughout the migration process in the Message Center. See [these articles](#more-information) to learn more.
 
 ## What happens if you do not opt-in for migration in Admin Center?
 
-The Online Services Terms have changed to include terms that will enable Microsoft to migrate your Microsoft 365, Dynamics 365 and Power BI data and subscriptions from Microsoft Cloud Deutschland to a new data center. These terms take effect on any Microsoft Cloud Germany (Microsoft Cloud Deutschland) subscription renewed since May 1, 2020. 
+The Online Services Terms have changed to include terms that will enable Microsoft to migrate your Microsoft 365, Dynamics 365, and Power BI data and subscriptions from Microsoft Cloud Deutschland to a new data center. These terms take effect on any Microsoft Cloud Germany (Microsoft Cloud Deutschland) subscription renewed since May 1, 2020. 
 
-The customer tenant administrator will receive a notice in e-mail and the Message Center advising that opt-in to migration will happen automatically for a Microsoft-assisted migration. This notice will be sent at least 30 days prior to the automatic opt-in. After migration opt-in all communications and status updates are sent to customer tenant administrators in the Message Center.
+The customer tenant administrator will receive a notice in e-mail and the Message Center advising that opt-in to migration will happen automatically for a Microsoft-assisted migration. This notice will be sent at least 30 days prior to the automatic opt-in. After migration opt-in, all communications and status updates are sent to customer tenant administrators in the Message Center.
 
 Customer and partner tenant administrators are encouraged to opt-in for migration in the Microsoft 365 admin center so the migration process can begin as soon as possible.
 
