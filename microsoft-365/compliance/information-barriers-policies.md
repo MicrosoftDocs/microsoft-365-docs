@@ -80,7 +80,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
       ```powershell
       Connect-AzureAD 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid')"
+      $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
       if ($sp -eq $null) { New-AzureADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
