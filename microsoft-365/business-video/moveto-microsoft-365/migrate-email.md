@@ -25,7 +25,7 @@ description: "Learn how to migrate email, contacts and calendar from Google Work
 
 # Migrate business email and calendar from Google Workspace
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
 You can use an admin-ran migration to Exchange Online from Google Workspace. You can migrate the mail either all at once, or in stages. The following steps show how to migrate the email data at once. For more information, see [Perform a G Suite migration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration).
 
@@ -33,343 +33,111 @@ The migration process takes several steps and can take from several hours to a c
 
 ## Try it!
 
-Using a Chrome browser, sign into your Google Workspace admin console at [admin.google.com](https://admin.google.com). 
+### Create a Google Service Account
 
-In a new tab or window, navigate to the [Service Accounts](https://console.developers.google.com/iam-admin/serviceaccounts) page. 
+1. Using a Chrome browser, sign into your Google Workspace admin console at [admin.google.com](https://admin.google.com). 
+1. In a new tab or window, navigate to the [Service Accounts](https://console.developers.google.com/iam-admin/serviceaccounts) page. 
+1. Select **Create project**, name the project and choose **Create**. 
+1. Select **Create service account**, enter a name, choose **Create** and then **Done**. 
+1. Open the **Actions** menu, select **Edit**, and take note of the Unique ID. You’ll need this ID later in the process. 
+1. Open the **Show domain-wide delegation** section. 
+1. Select **Enable G Suite Domain-wide Delegation**, enter a product name for the consent screen, and choose **Save**. 
 
-Select **Create project**, name the project and choose **Create**. 
-Select Create service account, enter a name… 
+    > [!NOTE]
+> The product name is not used by the migration process, but is needed to save in the dialog.     
 
+1. Open the **Actions** menu again and select **Create key**. 
+1. Choose **JSON**, then **Create**. 
+
+     The private key is saved to the download folder on your device.
  
+1. Select **Close**. 
 
-… Choose Create… 
+### Enable API usage for the project
 
-… Then Done. 
+1. Navigate to the [APIs page](https://console.developers.google.com/apis/library). 
+1. In the search bar, enter **Gmail API**.
+1. Select it and then choose **Enable**.
+1. Repeat this process for Google Calendar API and Contacts API. 
 
-Open the Actions menu… 
+### Grant access to the service account
 
+1. Return to the Google Workspace admin console. 
+1. Select **Security**, scroll down and open **API controls**. 
+1. Scroll down and select **Manage Domain-wide Delegation**.
+1. Select **Add new** and enter the Client ID you made note of earlier.
+1. Then enter the OAuth scopes for Google APIs. These are available at [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) in step 5 and are:
+
+    `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`
  
-
-… Select Edit… 
-
-… And take note of the Unique ID. You’ll need this ID later in the process. 
-
-Open the Show domain-wide delegation section… 
-
-… Select Enable G Suite Domain-wide Delegation… 
-
-… Enter a Product name for the consent screen… 
-
-… and choose Save. 
-
-Open the Actions menu again… 
-
- 
-
-… And select Create key. 
-
-Choose JSON… 
-
- 
-
-… Then Create. 
-
-The private key is saved to the download folder on your device. 
-
- 
-
-Select Close. 
-
-Navigate to the APIs page. 
-
-In the search bar, enter Gmail API… 
-
- 
-
-… Select it… 
-
-… Then, Enable. 
-
-Repeat this process for Google Calendar API and Contacts API. 
-
- 
-
- 
-
-
-Return to the Google Workspace admin console… 
-
- 
-
-… Select Security… 
-
-… Scroll down… 
-
- 
-
-… And open API controls. 
-
-Scroll down… 
-
- 
-
-… Select Manage Domain-wide Delegation… 
-
-… Then, Add new. 
-
-Enter the Client ID you made note of earlier… 
-
- 
-
-...Then enter the OAuth scopes for Google APIs. These are available at aka.ms/GoogleWorkspaceMigration. 
-
- 
-
-… Then, Authorize. 
-
- 
-
-NOTE: OAuth is pronounced “oh-auth” (“auth” as in “AUTHorization”). 
-
- 
-
-Next, you need to create a subdomain for mail going to Microsoft 365. 
-
- 
-
-Select Domains… 
-
-… Manage domains… 
-
-… Then, Add a domain alias. 
-
-Enter a domain alias… 
-
- 
-
-… Then select Continue and verify domain ownership. 
-
- 
-
-Domain verification usually takes just a few minutes, but it can take up to 48 hours. 
-
- 
-
-In the Microsoft 365 admin center, select Show all… 
-
-… Settings… 
-
- 
-
-… Domains… 
-
- 
-
-… Then, Add domain. 
-
-Enter the subdomain you previously created… 
-
- 
-
-… Then select Use this domain. 
-
-To connect the domain, select Continue. 
-
-Scroll down and take note of the MX records… 
-
- 
-
-… CNAME records… 
-
- 
-
-… And TXT records. 
-
- 
-
-MX = “em-ex” 
-
- 
-
-CNAME = “Sea-name” 
-
- 
-
-TXT = “Tea-ex-tea” 
-
- 
-
-Back in the Domain section of the Google Workspace admin console, select Manage domains… 
-
-… Verify Details… 
-
- 
-
-… Then, Manage domain. 
-
-Choose DNS… 
-
- 
-
-… And scroll down to Custom resource records. 
-
-Open the record type dropdown… 
-
- 
-
- 
-
-… Select MX… 
-
-… Enter or copy and paste the MX record information you previously noted… 
-
- 
-
-… Then choose Add. 
-
-Repeat the process for the CNAME record… 
-
- 
-
-… And the TXT record. 
-
- 
-
-It may take some time for these changes to take effect. 
-
- 
-
-Return to where you left off in Microsoft 365, and select Continue. 
+1. Choose **Authorize**. 
+
+### Create a sub-domain for mail going to Microsoft 365
+
+1. Return to the **Google Workspace admin** console.
+1. Select **Domains**, **Manage domains**, then, **Add a domain alias**. 
+1. Enter a domain alias like `m365.contoso.com`.
+1. Then select **Continue and verify domain ownership**. 
+
+    Domain verification usually takes just a few minutes, but it can take up to 48 hours.
+
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com).
+1. In the **Microsoft 365 admin center**, in the left nav, select **Show all**, **Settings**, **Domains**, and then **Add domain**. 
+1. Enter the subdomain you previously created, then select **Use this domain**. 
+1. To connect the domain, select **Continue**. 
+1. Scroll down and take note of the MX records, CNAME records, and TXT records. 
+1. Return to the **Google admin console**.
+1. Select **Domains**, select **Manage domains**, **Verify Details** and then, **Manage domain**. 
+1. In the left nav, choose **DNS** and scroll down to **Custom resource records**. 
+1. Open the record type dropdown and select **MX**, enter or copy and paste the MX record information you previously noted,then choose **Add**. 
+1. Repeat the process for the CNAME record and the TXT record. 
+
+    It may take some time for these changes to take effect.  
+
+1. Return to where you left off in **Microsoft 365 admin center**, and select **Continue**. 
 
 Your domain is now set up.  
 
- 
-
-To start the next step, select Go to Active users. 
+### Create email aliases in Microsoft 365
 
 Before migration can begin, you need to create email aliases for your users with the new subdomain. 
 
- 
+1. To start the next step, in the **Add Domains** wizard in the Microsoft 365 admin center, select **Go to Active users**. 
+1. Select a user, then, **Manage username and email**. 
+1. From the **Domains** dropdown, select the subdomain you previously created. 
+1. Enter a username, select **Add**, **Save changes**, and close the window. 
 
-Select a user… 
+    Repeat this process for each user. 
 
- 
+### Start the migration process
 
-… Then, Manage username and email. 
+Once you’ve finished, you’re ready to migrate. 
 
-From the Domains dropdown, select the subdomain you previously created. 
+1. In the left nav of the **Microsoft 365 admin center**, scroll down to **Admin centers**,and select **Exchange**. 
+1. Under **recipients**, choose **migration**, select **New**, **Migrate to Exchange Online**, choose **G Suite migration**, and then **Next**. 
+1. Create a CSV file with a list of the mailboxes you want to migrate. Make sure the file follows this format: 
 
-Enter a username… 
+    ```CSV
+    EmailAddress
+    will@fabrikaminc.net
+    user123@fabrikaminc.net
+    ```
 
- 
+      For details see [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration#start-a-g-suite-migration-batch-with-the-exchange-admin-center-eac). 
 
-… Select Add… 
+1. Select **Choose File**, navigate to the CSV file, choose it, select **Open**, then **Next**. 
+1. Verify the admin email address you want to use for testing. 
+1. Select **Choose File**, navigate to the JSON file you created earlier (usually in the Downloads folder on your computer), choose it, select **Open**, then **Next**. 
+1. Enter a name in the **New migration batch name field**.
+1. Enter the subdomain you created in the **Target delivery domain** field, select **Next**, and then **New**. 
+1. Once the information is saved, select **OK**. 
 
-… Save changes… 
+    You can now view the status of your migration. 
 
- 
-
- 
-
-… And close the window. 
-
-Repeat this process for each user. 
-
-Once you’ve finished, you’re ready to migrate. Scroll down to Admin centers… 
-
- 
-
-… And select Exchange. 
-
-Under recipients… 
-
- 
-
-… Choose migration. 
-
-Select New… 
-
- 
-
-… Migrate to Exchange Online. 
-
-Choose G Suite migration… 
-
- 
-
-… Then, Next. 
-
-Create a CSV file with a list of the mailboxes you want to migrate. Make sure the file follows this format. For details see aka.ms/GoogleWorkspaceMigration. 
-
-Select Choose File… 
-
-… Navigate to the file… 
-
- 
-
-… Choose it… 
-
- 
-
-… Select Open… 
-
-… Then, Next. 
-
-Verify the admin email address you want to use for testing. 
-
- 
-
-Select Choose File… 
-
-… Navigate to the JSON file you created earlier… 
-
- 
-
-… Choose it… 
-
- 
-
-… Select Open… 
-
-… Then, Next. 
-
-Select a name… 
-
- 
-
-… Enter the subdomain you created in the Target delivery domain field… 
-
- 
-
-… Select Next… 
-
-… and New. 
-
-Once the information is saved, select OK. 
-
-You can now view the status of your migration. 
-
-After some time has passed, depending on how many users you are migrating, select Refresh. 
-
-Once the status has changed to Synced… 
-
- 
-
-… Select Complete this migration batch… 
-
-… Then Yes. 
-
-Once the process is complete, your status will change to Completed. 
-
-If you want, you can select View details for more information about the migration. 
-
- 
-
-Select Close. 
-
-Open Outlook to verify that all the emails from Google Workspace were successfully migrated… 
-
-You can repeat this for calendar items and contacts as well. 
-
-
-
+1. After some time has passed, depending on how many users you are migrating, select **Refresh**. 
+1. Once the status has changed to **Synced**, select **Complete this migration batch**,then **Yes**. 
+1. Once the process is complete, your status will change to **Completed**. 
+1. If you want, you can select **View details** for more information about the migration. 
+1. Select **Close**. 
+1. Open Outlook to verify that all the emails from Google Workspace were successfully migrated.
+You can repeat this for calendar items and contacts as well.

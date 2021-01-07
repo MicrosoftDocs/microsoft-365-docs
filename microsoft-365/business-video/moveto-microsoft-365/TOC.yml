@@ -8,5 +8,15 @@
       href: set-up-microsoft-365-forgoogle.md
     - name: Add Google Workspace Domain 
       href: add-google-domain.md
+    - name: Set up security policies for Windows devices
+      href: ../secure-win10-pcs.md
+    - name: Install Office apps and Microsoft Teams
+      href: ../install-office.md
+    - name: Migrate email, calendar, and contacts to Microsoft 365
+      href: migrate-email.md
+    - name: Connect your domain to Microsoft 365
+      href: connect-domain-tom365.md
+    - name: Cancel Google Workspace
+      href: cancel-google.md
     
     
