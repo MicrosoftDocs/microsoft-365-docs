@@ -156,7 +156,7 @@ You should also hold down the CTRL key at the same time you right click the icon
 
 ## Using hybrid Modern Authentication with Outlook for iOS and Android
 
-If you are an on-premises customer using Exchange server on TCP 443, please whitelist the following IP ranges:
+If you are an on-premises customer using Exchange server on TCP 443, please bypass traffic processing for the following IP ranges:
 
 ```text
 52.125.128.0/20
