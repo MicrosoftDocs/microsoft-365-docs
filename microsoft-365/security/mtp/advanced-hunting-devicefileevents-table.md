@@ -79,6 +79,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SensitivitySubLabel` | string | Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently |
 | `IsAzureInfoProtectionApplied` | boolean | Indicates whether the file is encrypted by Azure Information Protection |
 
+>[!NOTE]
+> File hash information will always be shown when it is available. However, there are several possible reasons why a SHA1, SHA256, or MD5 cannot be calculated. For instance, the file might be located in remote storage, locked by another process, compressed, or marked as virtual. In these scenarios, the file hash information appears empty.
+
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)

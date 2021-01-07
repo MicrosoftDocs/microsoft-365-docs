@@ -148,7 +148,7 @@ To get you started using Advanced eDiscovery, here's a simple workflow that alig
 
 2. **[Search custodial data sources for data relevant to the case](collecting-data-for-ediscovery.md)**. After you add custodians to a case, use the built-in search tool to search the custodian data locations for data that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
 
-   - View [search statistics](search-statistics.md) that may help you refine a search query to narrow the results.
+   - View [search statistics](search-statistics-in-advanced-ediscovery.md) that may help you refine a search query to narrow the results.
 
    - Preview the search results to quickly verify whether the relevant data is being found.
 

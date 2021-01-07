@@ -24,15 +24,15 @@ ms.custom: seo-marvel-mar2020
 
 When the number of collected documents is large, it can be difficult to review them all. Advanced eDiscovery provides a number of tools to analyze the documents to reduce the volume of documents to be reviewed without any loss in information, and to help you organize the documents in a coherent manner. To learn more about these capabilities, see:
 
-- [Near duplicate detection](near-duplicates.md)
+- [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md)
 
-- [Email threading](email-threading.md)
+- [Email threading](email-threading-in-advanced-ediscovery.md)
 
-- [Themes](themes.md)
+- [Themes](themes-in-advanced-ediscovery.md)
 
 To analyze data in a review set:
 
-1. Configure analytics settings for your case. For more information, see [Configure search and analytics settings](configure-search-analytics-settings.md).
+1. Configure analytics settings for your case. For more information, see [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md).
 
 2. Open the review set you want to analyze.
 
