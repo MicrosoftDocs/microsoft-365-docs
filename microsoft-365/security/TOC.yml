@@ -170,6 +170,10 @@
                   items: 
                     - name: Understand the schema
                       href: mtp/advanced-hunting-schema-tables.md
+                    - name: AADSignInEventsBeta
+                      href: mtp/advanced-hunting-aadsignineventsbeta-table.md
+                    - name: AADSpnSignInEventsBeta
+                      href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
                     - name: Schema naming changes
                       href: mtp/advanced-hunting-schema-changes.md
                     - name: AlertEvidence
