@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 workload solutions and scenarios
-description: Description.
+description: Accomplish your business objectives with these solution guides for specific Microsoft 365 workloads.
 ms.author: samanro
 author: samanro
 manager: bcarter

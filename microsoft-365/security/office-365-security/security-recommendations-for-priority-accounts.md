@@ -27,6 +27,8 @@ For attackers, ordinary phishing attacks that cast a random net to get the crede
 
 Microsoft 365 and Microsoft Defender for Office 365 contain many different features that can help you to provided additional layers of security for your priority accounts. The available features and how to use them are discussed in this article.
 
+![Summary of the security recommendations in icon form](../../media/security-recommendations-for-priority-users.png)
+
 ## Increase sign-in security for priority accounts
 
 Priority accounts require increased sign-in security. You can increase their sign-in security by requiring multi-factor authentication (MFA) and disabling legacy authentication protocols.
@@ -55,7 +57,7 @@ Preset security policies are a convenient and central location to apply our reco
 
 For details about how the Strict policy settings differ from the the default and Standard policy settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
 
-## User tags
+## Apply user tags to priority accounts
 
 User tags in Microsoft Defender for Office 365 Plan 2 (as part of Microsoft 365 E5 or an add-on subscription) are a way to quickly identify and classify specific users or groups of users in reports and incident investigations.
 
@@ -63,7 +65,11 @@ User tags in Microsoft Defender for Office 365 Plan 2 (as part of Microsoft 365 
 
 You can also create custom tags to further identify and classify your priority accounts. For more information, see [User tags](user-tags.md). Note that you can manage **priority accounts** (system tags) in the same interface as custom user tags.
 
-## Priority accounts in reports and investigations in Microsoft 365
+## Monitor priority accounts in alerts, reports, and detections
+
+After you secure and tag your priority users, you can use the available reports, alerts, and investigations in EOP and Defender for Office 365 to quickly identify incidents or detections that involve priority accounts. The features that support user tags are described in the following table.
+
+<br>
 
 ****
 
