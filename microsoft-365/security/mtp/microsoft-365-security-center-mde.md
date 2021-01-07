@@ -70,6 +70,12 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 | Health  |  Currently includes the "Service health" page. |
 | Settings |  Manage your settings for the Microsoft 365 security center, Microsoft 365 Defender, Endpoints, Email & collaboration, Identities, and Device discovery.   |
 
+> [!NOTE] 
+> **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab. 
+
+> [!NOTE] 
+> **Service Health** is available from the [Microsoft 365 Admin Center](https://admin.microsoft.com/)
+
 ## New navigation
 
 Historically, the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. However, in the interest of reducing the number of portals, the Microsoft 365 security center will be the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
@@ -79,6 +85,7 @@ The Microsoft 365 security navigation pane will look fairly familiar if you are 
 > [!IMPORTANT]
 > What you see in the Microsoft 365 security center depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown. 
 <p>
+
 
 ## Navigation and the Guided Tour
 
@@ -100,11 +107,13 @@ These powerful queries can be used to  locate and review threat indicators and e
 
 ### Action center
 Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
+
 [Learn more about Action Center](mtp-action-center.md)
 
 ### Threat Analytics
 Threat Analytics provides a summary of the latest threats that could be affecting your organization. With this information, security teams can learn the specifics about each individual threat in the Threat Analytics reports as well as see how these threats might be impacting your organization. New in the Microsoft 365 security center is a combined view of threats that include signals from both Defender for Endpoint as well as Defender for Office 365.
-[Learn more about Threat Analytics]
+
+[Learn more about Threat Analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
 
 ### Endpoints
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
