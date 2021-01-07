@@ -26,7 +26,7 @@ description: "Turn on a setting that enables coauthoring in desktop apps for doc
 
 Enable the setting to support coauthoring for Office desktop apps stored in SharePoint so that when documents are labeled and encrypted by your [sensitivity labels](sensitivity-labels.md), multiple users can edit them at the same time. 
 
-Without this setting enabled for your tenant, users must check out an encrypted document stored in SharePoint or OneDrive when they use Office desktop apps, which means that they can't collaborate in real time. Or, they must use Office on the web when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive.md).
+Without this setting enabled for your tenant, users must check out an encrypted document stored in SharePoint or OneDrive when they use Office desktop apps, which means that they can't collaborate in real time. Or, they must use Office on the web when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 In addition, enabling this functionality results in the [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality being supported for encrypted files.
 
