@@ -141,6 +141,6 @@ Use these steps to set up and manage your Microsoft 365 tenants.
 
 [![The steps to deploy and manage a Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
-Each step describes deployment options, summarizes the results, and lists the ongoing maintenance tasks of the step.
+Each step describes deployment options, summarizes the results, and ongoing maintenance tasks.
 
 To understand how a fictional but representative multi-national organization deployed the elements of their Microsoft 365 tenant, see the [Contoso case study](../enterprise/contoso-case-study.md).
