@@ -9,9 +9,9 @@
     - name: Add Google Workspace Domain 
       href: add-google-domain.md
     - name: Set up security policies for Windows devices
-      href: ../secure-win10-pcs.md
+      href: ../secure-win10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
     - name: Install Office apps and Microsoft Teams
-      href: ../install-office.md
+      href: ../install-office.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
     - name: Migrate email, calendar, and contacts to Microsoft 365
       href: migrate-email.md
     - name: Connect your domain to Microsoft 365
