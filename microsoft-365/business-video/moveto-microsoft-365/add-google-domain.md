@@ -25,7 +25,7 @@ description: "Learn how to move your domain from Google Workspace to Microsoft 3
 
 # Add your Google Workspace domain to Microsoft 365
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LWKT?autoplay=false]
 
 Add your Google Workspace domain to Microsoft 365 for business so you can keep using your business email address.
 

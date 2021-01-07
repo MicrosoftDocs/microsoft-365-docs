@@ -31,10 +31,10 @@ Complete the following steps in order to mover your data, email and users from G
 | Step  |Description  |
 |---------|---------|
 |Step 1 |  [Sign up](../sign-up.md) for Microsoft 365 Business Premium       |
-|Step 2 |   Set up Microsoft 365 for Google Workspace migration. </br> In this step you will validate you own the domain you use in Google Workspace, add users, and set up some basic security for devices. |
-|Step 3 | Set up security policies for Windows devices. |
-|Step 4 | Install apps and Teams. |
-|Step 5 | Migrate everyone's email and calendar items.  |
+|Step 2 |   [Set up Microsoft 365 for Google Workspace migration](set-up-microsoft-365-forgoogle.md). </br> In this step you will validate you own the domain you use in Google Workspace, add users, and set up basic security for devices. |
+|Step 3 | [Set up security policies for Windows devices](../secure-win10-pcs.md).</br> Windows security is set up separately in the Setup page of Microsoft 365 admin center. |
+|Step 4 | [Install Office apps and Microsoft Teams](../install-office.md).</br> All the people who have Microsoft 365 licenses should install the Office apps on their work devices.|
+|Step 5 | Migrate everyone's email and calendar items.</br> In this step you will run an Exchange Online migration to move everyone's email, calendar and contacts from Google Workspace.  |
 |Step 6 | Connect domain to Microsoft 365.|
 |Step 7|Use Mover to move everyone's data from Drive to OneDrive and from shared Drives to Team sites.|
 |Step 8| Discontinue Google Workspace but keep your domain.|

@@ -1,5 +1,7 @@
 - name: Switch from Google Workspace to Microsoft 365
   items: 
+    - name: Overview
+      href: move-from-google-workspace-overview.md
     - name: Sign up for Microsoft 365
       href: ../sign-up.md
     - name: Set up Microsoft 365 for Google migration
