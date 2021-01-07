@@ -44,7 +44,7 @@ You can read more about this metadata change from the following resources:
 
 - Blog post: [Upcoming Changes to Microsoft Information Protection Metadata Storage](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
 
-- [2.6.3 LabelInfo versus Custom Document Properties](https://docs.microsoft.com/en-us/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
+- [2.6.3 LabelInfo versus Custom Document Properties](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
 The Microsoft Information Protection (MIP) SDK version 1.7 reads and writes labeling metadata to the new location, and the latest Microsoft 365 Apps and Azure Information Protection unified labeling client will use this version of the SDK.
 
@@ -64,7 +64,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 - You must be a global admin to turn on this feature.
 
-- Sensitivity labels must be [enabled for Office files in Share and SharePoint](sensitivity-labels-sharepoint-onedrive.md). If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
+- Sensitivity labels must be [enabled for Office files in Share and SharePoint](sensitivity-labels-sharepoint-onedrive-files.md). If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - All apps, services, and operation tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
 - Azure Information Protection unified labeling client: Minimum version of x
