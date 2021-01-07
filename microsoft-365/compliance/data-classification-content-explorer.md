@@ -61,7 +61,7 @@ Access to content explorer is highly restricted because it lets you read the con
 > [!IMPORTANT]
 > These permissions supercede permissions that are locally assigned to the items, which allows viewing of the content. 
 
-There are two roles that grant access to content explorer:
+There are two roles that grant access to content explorer and it can be granted using the Microsoft Security and Complaince center(https://protection.office.com/permissions0:
 
 - **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location in list view. The `data classification list viewer` role has been pre-assigned to this role group.
 
