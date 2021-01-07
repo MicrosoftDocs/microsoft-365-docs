@@ -3,7 +3,7 @@
     - name: Overview
       href: move-from-google-workspace-overview.md
     - name: Sign up for Microsoft 365
-      href: ../sign-up.md
+      href: ../sign-up.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
     - name: Set up Microsoft 365 for Google migration
       href: set-up-microsoft-365-forgoogle.md
     - name: Add Google Workspace Domain 
