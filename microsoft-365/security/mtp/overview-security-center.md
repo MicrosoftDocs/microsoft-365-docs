@@ -28,22 +28,25 @@ ms.custom: seo-marvel-jun2020
 
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 
-Protecting your business from an ever-evolving threat landscape brings many challenges. You might have too many security solutions with various places to configure lots of controls. You may struggle with knowing which controls are the most effective and which will introduce new challenges for your workforce.
+The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) integrates Microsoft 365 services and endpoints, so that devices, email, identities, and app security can be managed from a single location. This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
 
-The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) integrates signals across Microsoft 365 services, providing you actionable insights across your endpoints, email, identities, and apps. It emphasizes quick access to information, simpler layouts, and clarity across a single security center.
+The Microsoft 365 security center combines two existing centers into one:
 
-The new Microsoft 365 security center now includes **Microsoft Defender for Office 365**
-and **Microsoft Defender for Endpoint**. If you want more information about what's changed from the Office 365 Security & Compliance center or the Microsoft Defender Security Center, see these articles:
+1. **Microsoft Defender for Office 365**
+1. **Microsoft Defender for Endpoint**
+
+If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft Defender Security Center, see:
 
 - [Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 - [Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
+- [Microsoft 365 Defender](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
 
 > [!NOTE]
 > You can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 security center: https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
 
 ## What to expect
 
-The Microsoft 365 security center emphasizes *unity, clarity, and common goals* as it merges Microsoft Defender for Office 365 and Microsoft Defender for Endpoint. The merge had the following priorities without sacrificing the capabilities that each security suite brought to the combination:
+The Microsoft 365 security center emphasizes *unity, clarity, and common goals* as it merges Microsoft Defender for Office 365 and Microsoft Defender for Endpoint. The merge was based on the priorities listed below, and made without sacrificing the capabilities that each security suite brought to the combination:
 
 - common building blocks
 - common terminology
@@ -61,7 +64,7 @@ As an example, double-clicking on an incident name with **High** severity brings
 ![multi-stage incident involving privilege escalation on multiple endpoints, showing see 16 impacted devices and 9 impacted users.](../../media/converged-incident-info-3.png)
 
 > [!TIP]
-> The converged **Users** tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and MCAS, if you leverage it) and a range of sources such as on-premises Active Directory, Azure Active Directory, synced, local, and third-party users.
+> The converged **Users** tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and MCAS, if you leverage it) and a range of sources such as on-premises Active Directory, Azure Active Directory, synced, local, and third-party users.
 
 Incident information shows user/identity specifics and at-risk devices, beside affected mailboxes. It also relates any **Investigation information** and gathered **Evidence**. This makes it easier for admins and security operation teams to pivot from one high-risk alert to the affected users and mailboxes. Looking at the **Incident** tabs at the top of this page, there are other key security pivots available from this single location.
 
