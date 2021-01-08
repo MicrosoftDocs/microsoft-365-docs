@@ -161,19 +161,15 @@ For more information, see [Using a retention label as a condition in a DLP polic
 
 #### Retention labels and policies that apply them
 
-Retention labels are independent, reusable building blocks. The primary purpose of a retention label policy is to group a set of retention labels and specify the locations where you want those labels to appear. Then, admins and users can apply those labels to content in those locations.
-  
-![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
-  
-When you publish retention labels, they're included in a retention label policy that make them available for admins and users to select:
+When you publish retention labels, they're included in a **retention label policy** that makes them available for admins and users to apply to content. As the following diagram shows:
 
-- A single retention label can be included in many retention label policies.
+1. A single retention label can be included in multiple retention label policies.
 
-- Retention label policies specify the locations to publish the retention labels.
+2. Retention label policies specify the locations to publish the retention labels. The same location can be included in multiple retention label policies.
 
-- A single location can also be included in many retention label policies.
+![How retention labels can be added to label policies that specify locations](../media/retention-labels-and-policies.png)
 
-In addition to retention label policies, you can also create one or more auto-apply policies, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met.
+You can also create one or more **auto-apply retention label policies**, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met.
 
 #### Retention label policies and locations
 
@@ -282,7 +278,7 @@ Use the following flow to understand the retention and deletion outcomes for a s
 > [!IMPORTANT]
 > If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
 
-![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagram of the principles of retention](../media/principles-of-retention.png)
   
 Explanation for the four different levels:
   
