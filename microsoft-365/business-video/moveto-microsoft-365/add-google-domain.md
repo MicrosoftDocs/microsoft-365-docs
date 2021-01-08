@@ -44,4 +44,4 @@ Add your Google Workspace domain to Microsoft 365 for business so you can keep u
 1. Choose a user, select **Manage username and email**, **Edit**, select your domain from the dropdown, then select **Done** and **Save changes**. 
 1. Repeat this process for each user. 
 
-    When you're finished, you'll be ready to migrate your email and calendar items to Microsoft 365. 
+    When you're finished, you'll be ready to install Office apps and migrate your email and calendar items to Microsoft 365. 

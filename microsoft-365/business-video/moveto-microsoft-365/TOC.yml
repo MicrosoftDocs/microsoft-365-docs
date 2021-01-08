@@ -6,10 +6,10 @@
       href: ../sign-up.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
     - name: Set up Microsoft 365 for Google migration
       href: set-up-microsoft-365-forgoogle.md
-    - name: Add Google Workspace Domain 
-      href: add-google-domain.md
     - name: Set up security policies for Windows devices
       href: ../secure-win10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+    - name: Add Google Workspace Domain 
+      href: add-google-domain.md
     - name: Install Office apps and Microsoft Teams
       href: ../install-office.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
     - name: Migrate email, calendar, and contacts to Microsoft 365
