@@ -69,6 +69,6 @@ Microsoft 365 organizations that have [Microsoft Defender for Office 365](office
 For more information about anti-virus in SharePoint Online, OneDrive, and Microsoft Teams, see [Protect against threats](protect-against-threats.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 
-## Related Artciles
+## Related Articles
 
 [Malware and ransomware protection in Microsoft 365](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)
