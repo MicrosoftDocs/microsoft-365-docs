@@ -16,18 +16,31 @@ search.appverid:
 ms.assetid:
 ms.collection:
 - M365-security-compliance
+- m365solution-overview
+- m365solution-protecthve
 description: "Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations."
 ---
 
 # Security recommendations for priority accounts in Microsoft 365
 
-What would you do if you received an urgent message from an executive in your organization that asked you to do something? Would you do it? Most people would comply with the request.
+Not all user accounts have access to the same company information. Some accounts have access to sensitive information, such as financial data, product development information, partner access to critical build systems, and more. Accounts that have access to highly confidential information pose a serious threat if compromised. We call these types of accounts _priority accounts_. Priority accounts include CEOs, CISOs, CFOs, infrastructure admin accounts, build system accounts and more.
 
-For attackers, ordinary phishing attacks that cast a random net to get the credentials of random or unknown users are inefficient. On the other hand, _spear phishing_ or _whaling_ attacks that target users in positions of power or authority are much more rewarding for attackers. If these priority accounts are compromised, the attacker might gain access to accounts with admin, financial, product, or even physical access capabilities within the organization.
+For attackers, ordinary phishing attacks that cast a random net for ordinary or unknown users are inefficient. On the other hand, _spear phishing_ or _whaling_ attacks that target priority accounts are very rewarding for attackers. So, priority accounts require stronger than ordinary protection to help prevent account compromise.
 
-Microsoft 365 and Microsoft Defender for Office 365 contain many different features that can help you to provided additional layers of security for your priority accounts. The available features and how to use them are discussed in this article.
+Microsoft 365 and Microsoft Defender for Office 365 contain several key features that provide additional layers of security for your priority accounts. This article describes these capabilities and how to use them.
 
 ![Summary of the security recommendations in icon form](../../media/security-recommendations-for-priority-users.png)
+
+****
+
+|Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
+|---|:---:|:---:|:---:|
+|[Increase sign-in security for priority accounts](#Increase-sign-in-security-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Use Strict preset security policies for priority accounts](#Use-Strict-preset-security-policies-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Assign user tags to priority accounts](#Apply-user-tags-to-priority-accounts)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Monitor reports, alerts, and detections for priority accounts](#Monitor-priority-accounts-in-alerts,-reports,-and-detections)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|
+
 
 ## Increase sign-in security for priority accounts
 
@@ -39,7 +52,7 @@ For instructions, see [Step 1. Increase sign-in security for remote workers with
 
 - Basic authentication is in the process of being deprecated in Exchange Online for Exchange Web Services (EWS), Exchange ActiveSync, POP3, IMAP4, and remote PowerShell. For details, see this [blog post](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
 
-- You can use [authentication policies](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) and [Client Access Rules](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online to block Basic authentication and legacy authentication protocols like POP3, IMAP4, and authenticated SMTP.
+- You can use [authentication policies](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) and [Client Access Rules](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online to block or allow Basic authentication and legacy authentication protocols like POP3, IMAP4, and authenticated SMTP for specific users.
 
 - You can disable POP3 and IMAP4 access on individual mailboxes. You can disable authenticated SMTP at the organizational level and enable it on specific mailboxes that still require it. For instructions, see the following topics:
   - [Enable or Disable POP3 or IMAP4 access for a user](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
