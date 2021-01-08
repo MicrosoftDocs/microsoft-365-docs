@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Microsoft 365 for campaigns"
+description: "Microsoft 365 guidance for smaller businesses, including smaller firms, practices, and political campaigns."
 ---
 
-Microsoft 365 for Campaigns
+Microsoft 365 for smaller businesses and campaigns
 ===========================
 
-In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for Campaigns comes with a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, even if you're not a campaign.
+In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other smaller businesses. Microsoft 365 for Campaigns comes with a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, even if you're not a campaign.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
@@ -64,7 +64,7 @@ Follow these steps to get started:
 - [Learn how your users will work with Microsoft 365](m365-campaigns-users.md)
 - [Set up Microsoft 365 campaigns](microsoft-365-campaigns-setup-overview.md)
 
-Solutions for your campaign or small business
+Solutions for your business or campaign
 --------------------------
 
 After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:
@@ -82,5 +82,5 @@ After you set up your secure Microsoft 365 environment, you can use the followin
 | Share files and videos |
 | ------------- |
 | ![sharing a file in Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) |
-| Save your files and videos to the cloud so they're available to all <br><br>of the appropriate people. [Start sharing](share-files-and-videos.md) |
+| Save your files and videos to the cloud so they're available to all <br>of the appropriate people. [Start sharing](share-files-and-videos.md) |
 
