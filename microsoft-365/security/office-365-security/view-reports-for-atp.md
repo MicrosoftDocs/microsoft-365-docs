@@ -313,6 +313,9 @@ If you click **View details table**, the report provides a near-real-time view o
 
 If you click **Filters** in the details table view, you can filter by the same criteria as in the report view, and also by **Domains** or **Recipients** separated by commas.
 
+[!NOTE]
+The Domains filter refers to the URL domain listed found in the report results. 
+
 To get back to the reports view, click **View report**.
 
 ## Additional reports to view
