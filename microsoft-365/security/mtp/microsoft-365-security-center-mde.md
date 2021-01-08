@@ -107,13 +107,13 @@ Action center shows you the investigations created by automated investigation an
 
 Threat Analytics provides a summary of the latest threats that could be affecting your organization. With this information, security teams can learn the specifics about each individual threat in the Threat Analytics reports as well as see how these threats might be impacting your organization. New in the Microsoft 365 security center is a combined view of threats that include signals from both Defender for Endpoint as well as Defender for Office 365.
 
+[Learn more about Threat Analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
+
 ### Endpoints
 
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
 
 ![The Endpoints quick launch bar](../../media/converge-2-endpoints.png)
-
-[Learn more about Threat Analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
 
 ### Email & collaboration
 
