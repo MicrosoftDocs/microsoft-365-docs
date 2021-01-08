@@ -30,10 +30,11 @@ ms.custom: seo-marvel-jun2020
 
 The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) integrates Microsoft 365 services and endpoints, so that devices, email, identities, and app security can be managed from a single location. This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
 
-The Microsoft 365 security center combines two existing centers into one:
+The Microsoft 365 security center combines these centers into one:
 
 1. **Microsoft Defender for Office 365**
 1. **Microsoft Defender for Endpoint**
+1. **Microsoft 365 Defender**
 
 If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft Defender Security Center, see:
 
@@ -107,6 +108,10 @@ As admins and operations teams work, they will find other points where features 
 
 
 ### Related information
+
+[Watch 'Intro to unified portal'](https://msit.microsoftstream.com/video/2300a1ff-0400-b9eb-d203-f1eb3fc369fd?App=msteamsBot&refId=f:5540385164873375231&referrer=https:%2F%2Fstatics.teams.cdn.office.net%2F)
+
+[Give us your Microsoft 365 Defender feedback](https://www.microsoft.com/en-us/videoplayer/embed/RE4K5Ci)
 
 [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 
