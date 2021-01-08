@@ -49,6 +49,11 @@ Managing permissions in the Security & Compliance Center only gives users access
 
 To see how to grant access to the Security & Compliance Center, check out [Give users access to Microsoft 365 Compliance admin center](grant-access-to-the-security-and-compliance-center.md).
 
+> [!NOTE]
+> To view the **Permissions** tab in the Security & Compliance Center, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group in the Security & Compliance Center by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
+
+<br><br>
+
 ****
 
 |Role group|Description|Default roles assigned|
@@ -136,6 +141,8 @@ Note that the following roles aren't assigned to the Organization Management rol
 - Review
 - RMS Decrypt
 - Supervisory Review Administrator
+
+<br><br>
 
 ****
 

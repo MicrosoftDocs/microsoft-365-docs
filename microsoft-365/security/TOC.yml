@@ -8,6 +8,8 @@
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
+        - name: Security recommendations for priority accounts
+          href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Identity and device access configurations
       href: ./office-365-security/microsoft-365-policies-configurations.md
       items: 
@@ -174,6 +176,12 @@
                   items: 
                     - name: Understand the schema
                       href: mtp/advanced-hunting-schema-tables.md
+                    - name: AADSignInEventsBeta
+                      href: mtp/advanced-hunting-aadsignineventsbeta-table.md
+                    - name: AADSpnSignInEventsBeta
+                      href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
+                    - name: Schema naming changes
+                      href: mtp/advanced-hunting-schema-changes.md
                     - name: AlertEvidence
                       href: mtp/advanced-hunting-alertevidence-table.md
                     - name: AlertInfo
@@ -423,8 +431,6 @@
               href: ./office-365-security/email-validation-and-authentication.md
             - name: Give users access to the Security center
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
-            - name: Security recommendations for priority accounts
-              href: ./office-365-security/security-recommendations-for-priority-accounts.md
             - name: Safe Documents in Defender for Office 365
               href: ./office-365-security/safe-docs.md
             - name: Set up Safe Links policies in Defender for Office 365
