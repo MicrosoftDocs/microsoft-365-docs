@@ -40,7 +40,7 @@ If you need information about what's changed from the Office 365 Security & Comp
 
 - [Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 - [Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
-- [Microsoft 365 Defender](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
 
 > [!NOTE]
 > You can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 security center: https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
@@ -111,7 +111,7 @@ As admins and operations teams work, they will find other points where features 
 
 [Watch 'Intro to unified portal'](https://msit.microsoftstream.com/video/2300a1ff-0400-b9eb-d203-f1eb3fc369fd?App=msteamsBot&refId=f:5540385164873375231&referrer=https:%2F%2Fstatics.teams.cdn.office.net%2F)
 
-[Give us your Microsoft 365 Defender feedback](https://www.microsoft.com/en-us/videoplayer/embed/RE4K5Ci)
+[Give us your Microsoft 365 Defender feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci)
 
 [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 
