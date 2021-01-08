@@ -152,7 +152,8 @@ If you're going to use one of the built-in templates or create the email message
 
    - Click **Use Template** and select a built-in or custom email template. After you select the template, the **Name** box is automatically filled based on the template, but you can change the name.
 
-   ![Phishing Start Page](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Phishing Start Page](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    When you're finished, click **Next**.
 
@@ -215,7 +216,8 @@ If you're going to use one of the built-in templates or create the email message
 
    For **Spear Phishing (Attachment)** campaigns, you should remove the link from the body of the message (otherwise, the message will contain both a link **and** an attachment, and link clicks aren't tracked in an attachment campaign).
 
-   ![Compose Email Body](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Compose Email Body](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    When you're finished, click **Next**.
 
