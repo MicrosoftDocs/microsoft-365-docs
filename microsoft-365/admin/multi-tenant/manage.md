@@ -67,6 +67,7 @@ The service health view shows you if any incidents or advisories are affecting t
 1. Select an incident on the **All services** or **All issues** tab to get more information about any incident on the **Overview** tab. Select the **Tenants affected** tab to get a list of the affected tenants.
 
     :::image type="content" source="../../media/tenantsaffected.png" alt-text="List of tenants affected by a service health issue.":::
+
 The list of affected tenants can be exported to CSV format so that admins can share it with support teams.
 
 ## View a single tenant in the Microsoft 365 admin center
