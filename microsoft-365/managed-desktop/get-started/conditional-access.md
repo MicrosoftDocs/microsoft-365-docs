@@ -20,7 +20,7 @@ After you’ve completed enrollment in Microsoft Managed Desktop, some managemen
 3. If you want to double-check that all settings are correct, you can rerun the [readiness assessment tool](https://aka.ms/mmdart) to make sure nothing conflicts with Microsoft Managed Desktop.
 
 > [!NOTE]
-> As your operations continue in following months, if you make any changes after enrollment to policies in Microsoft Intune, Azure Active Directory, or Microsoft 365, it's possible that Microsoft Managed Desktop could stop operating properly. To avoid problems with Microsoft Managed Desktop operations, check the specific settings described in [Fix issues found by the readiness assessment tool](../get-ready/readiness-assessment-fix.md) before you change any policies. You can also rerun the readiness assessment tool at any time.
+> As your operations continue in following months, if you make changes after enrollment to policies in Microsoft Intune, Azure Active Directory, or Microsoft 365 that affect Microsoft Managed Desktop, it's possible that Microsoft Managed Desktop could stop operating properly. To avoid problems with the service, check the specific settings described in [Fix issues found by the readiness assessment tool](../get-ready/readiness-assessment-fix.md) before you change the policies listed there. You can also rerun the readiness assessment tool at any time.
 
 
 ## Microsoft Intune settings
@@ -33,12 +33,12 @@ After you’ve completed enrollment in Microsoft Managed Desktop, some managemen
 
 ## Azure Active Directory settings
 
-Self-service password reset: if your use self-service password reset for all users, adjust the assignment to exclude Microsoft Managed Desktop service accounts. To adjust this assignment, create a Azure AD dynamic group for all users *except* Microsoft Managed Desktop service accounts, and then use that group for assignment instead of "all users."
+Self-service password reset: if you use self-service password reset for all users, adjust the assignment to exclude Microsoft Managed Desktop service accounts. To adjust this assignment, create a Azure AD dynamic group for all users *except* Microsoft Managed Desktop service accounts, and then use that group for assignment instead of "all users."
 
 To help you find and exclude the service accounts, here is an example of a dynamic query you can use:
 
 ```Console
-(user.objectID -ne null) and (user.userPrincipalName -ne "mstest@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "msadmin@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "msadminint@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "mwaas_wdgsoc@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "mwaas_soc_ro@TENANT.onmicrosoft.com") and (user.objectID -ne null)
+(user.objectID -ne null) and (user.userPrincipalName -ne "MSADMIN@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSADMININT@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_SOC_RO@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_WDGSOC@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSTEST@TENANT.onmicrosoft.com")
 ```
 
 In this query, replace @TENANT with your tenant domain name.
