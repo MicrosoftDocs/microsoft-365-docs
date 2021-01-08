@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection: 
 - M365-security-compliance
-- m365initiative-m365-defender
+m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: "Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan."

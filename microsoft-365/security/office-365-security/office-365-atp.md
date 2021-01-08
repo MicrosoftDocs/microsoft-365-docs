@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection: 
 - M365-security-compliance
-- m365initiative-m365-defender
+m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: "Microsoft Defender for Office 365 includes safe attachments, safe links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities."

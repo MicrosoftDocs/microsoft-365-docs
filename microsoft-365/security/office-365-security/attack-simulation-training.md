@@ -9,7 +9,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- m365initiative-m365-defender
+m365initiative-defender-office365
 description: "Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365."
 ---
 
