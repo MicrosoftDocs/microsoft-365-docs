@@ -79,6 +79,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 Allow approximately one hour for your changes to work their way through your data center and sync to user accounts.
  <!-- why are these syncing to user accounts? -->
+
 ## Add Microsoft Teams as a location to existing DLP policies
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
@@ -91,12 +92,13 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 4. In the **Status** column, turn the policy on for **Teams chat and channel messages**.<br/>![DLP for Teams chats and channels](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. Keep the default settings of all accounts, or specify which accounts, distribution lists or security groups to include or exclude.
+5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts, distribution lists, or security groups for inclusion and exclusion. Then choose **Next**.
 
 6. Click **Save**.
 
 Allow approximately one hour for your changes to work their way through your data center and sync to user accounts.
 <!-- again, why user accounts? -->
+
 ## Define a new DLP policy for Microsoft Teams
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
@@ -109,7 +111,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 4. On the **Name your policy** tab, specify a name and description for the policy, and then choose **Next**.
 
-5. On the **Choose locations** tab, keep the default setting of all locations, or select **Let me choose specific locations**.  DLP supports selecting individuals, security groups, or distribution lists for inclusion and exclusion. Then choose **Next**.
+5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts, distribution lists, or security groups for inclusion and exclusion. Then choose **Next**.
 
 ![DLP policy locations](../media/dlp-teams-selectlocationsnewpolicy.png)
 
