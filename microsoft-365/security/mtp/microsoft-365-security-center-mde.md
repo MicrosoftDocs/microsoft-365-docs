@@ -29,16 +29,16 @@ The new [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365
 
 If you are familiar with the Microsoft Defender Security Center, this article helps describe some of the changes and improvements in the new Microsoft 365 security center. However there are some new and updated elements to be aware of.
 
-Historically, the [Microsoft Defender security center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. To help reduce the number of portals, the Microsoft 365 security center will be the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
+Historically, the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. To help reduce the number of portals, the Microsoft 365 security center will be the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
 > [!IMPORTANT]
-> What you see in the Microsoft 365 security center depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown. 
+> What you see in the Microsoft 365 security center depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown.
 
 Take a look at the new security center: [https://security.microsoft.com](https://security.microsoft.com).
 
 ## What's changed
 
-This table is a quick reference of the changes between the Microsoft Defender Security Center and the Microsoft 365 security portal.
+This table is a quick reference of the changes between the Microsoft Defender Security Center and the new Microsoft 365 security center.
 <p>
 
 ### Alerts and actions
@@ -70,66 +70,62 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 | Health  |  Currently includes the "Service health" page. |
 | Settings |  Manage your settings for the Microsoft 365 security center, Microsoft 365 Defender, Endpoints, Email & collaboration, Identities, and Device discovery.   |
 
-> [!NOTE] 
+> [!NOTE]
 > **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab. 
 
-> [!NOTE] 
+> [!NOTE]
 > **Service Health** is available from the [Microsoft 365 Admin Center](https://admin.microsoft.com/)
 
-## New navigation
-
-Historically, the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. However, in the interest of reducing the number of portals, the Microsoft 365 security center will be the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
-
-The Microsoft 365 security navigation pane will look fairly familiar if you are coming from the Microsoft Defender Security Center. However there are some new and updated elements.
-
-> [!IMPORTANT]
-> What you see in the Microsoft 365 security center depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown. 
-<p>
-
-
-## Navigation and the Guided Tour
+## Navigation and guided tour
 
 The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
 
-### Incidents and Alerts
-Brings together incident and alert management across your email, devices, and identities. Alerts are now available under the Investigation node, and help provide a broader view of an attack. The alert page provides full context to the alert, by combining attack signals to construct a detailed story. Previously, alerts were specific to different workloads. A new, unified experience now brings together a consistent view of alerts across workloads. You can quickly triage, investigate, and take effective action.  
+### Incidents and alerts
+
+Brings together incident and alert management across your email, devices, and identities. Alerts are now available under the Investigation node, and help provide a broader view of an attack. The alert page provides full context to the alert, by combining attack signals to construct a detailed story. Previously, alerts were specific to different workloads. A new, unified experience now brings together a consistent view of alerts across workloads. You can quickly triage, investigate, and take effective action.
+
 - [Learn more about Investigations](incidents-overview.md)
- - [Learn more about managing alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
+- [Learn more about managing alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
 ![The Alerts and Actions quick launch bar](../../media/converge-1-alertsandactions.png)
 
-### Hunting
+#### Hunting
+
 Proactively search for threats, malware, and malicious activity across your endpoints, Office 365 mailboxes, and more by using hunting queries.
 
 These powerful queries can be used to  locate and review threat indicators and entities for both known and potential threats.
 
 [Learn more about Hunting](advanced-hunting-overview.md)
 
-### Action center
+#### Action center
+
 Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
 
 [Learn more about Action Center](mtp-action-center.md)
 
-### Threat Analytics
-Threat Analytics provides a summary of the latest threats that could be affecting your organization. With this information, security teams can learn the specifics about each individual threat in the Threat Analytics reports as well as see how these threats might be impacting your organization. New in the Microsoft 365 security center is a combined view of threats that include signals from both Defender for Endpoint as well as Defender for Office 365.
-
-[Learn more about Threat Analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
-
 ### Endpoints
+
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
 
 ![The Endpoints quick launch bar](../../media/converge-2-endpoints.png)
 
+#### Threat Analytics
+
+Threat Analytics provides a summary of the latest threats that could be affecting your organization. With this information, security teams can learn the specifics about each individual threat in the Threat Analytics reports as well as see how these threats might be impacting your organization. New in the Microsoft 365 security center is a combined view of threats that include signals from both Defender for Endpoint as well as Defender for Office 365.
+
+[Learn more about Threat Analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
+
 ### Email & collaboration
+
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will look familiar. 
 
 ![The Emails and Collaboration quick launch bar](../../media/converge-3-email-and-collab.png)
 
-### Access and Reports
+### Access and reports
+
 View reports, change your settings, and modify user roles.
 
 ![The Access and Reporting quicklaunch bar](../../media/converge-4-access-and-reporting.png)
-
 
 ## Microsoft Defender Security Center navigation
 
@@ -137,5 +133,7 @@ This what the current Microsoft Defender Security Center navigation pane looks l
 
 ![Endpoints left navigation.](../../media/m365-security-old-nav.png)
 
-
 ## Related information
+
+- [Microsoft 365 security center](overview-security-center.md)
+- [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
