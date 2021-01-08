@@ -26,7 +26,7 @@ monikerRange: 'o365-21vianet'
 
 While our goal is to deliver all commercial features and functionality to customers in China with our Azure Information Protection (AIP) for Office 365 operated by 21Vianet offer, there's some missing functionality that we'd like to highlight.
 
-The following list includes the existing gaps between Azure Information Protection for Office 365 operated by 21Vianet and our commercial offerings as of July 2019:
+The following list includes the existing gaps between Azure Information Protection for Office 365 operated by 21Vianet and our commercial offerings as of January 2021:
 
 - Information Rights Management (IRM) is supported only for Microsoft 365 Apps for enterprise (build 11731.10000 or higher). Office 2010, Office 2013, and other Office 2016 versions are not supported.
 
@@ -41,6 +41,8 @@ The following list includes the existing gaps between Azure Information Protecti
 - The Mobile Device Extension for AD RMS is currently not available.
 
 - The [Mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) is not supported by Azure China 21Vianet.
+
+- Sensitivity labels are not supported in SharePoint Online and Office on the web. 
 
 ## Configuring Azure Information Protection for customers in China
 
