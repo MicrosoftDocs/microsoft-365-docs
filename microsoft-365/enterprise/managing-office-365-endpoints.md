@@ -1,7 +1,7 @@
 ---
 title: "Managing Office 365 endpoints"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
