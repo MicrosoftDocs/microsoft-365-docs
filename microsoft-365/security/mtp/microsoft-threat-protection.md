@@ -46,9 +46,12 @@ With the integrated Microsoft 365 Defender solution, security professionals can 
 </table>
 <br>
 
+## Microsoft 365 Defender interactive guide
 
->[!TIP]
->Check out this [Microsoft 365 Defender interactive guide](https://aka.ms/MTP-Interactive-Guide).
+In this interactive guide, you'll learn how to protect your organization with Microsoft 365 Defender. You'll see how Microsoft 365 Defender can help you detect security risks, investigate attacks to your organization, and prevent harmful activities automatically.
+
+> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+
 
 
 Microsoft 365 Defender suite protects: 

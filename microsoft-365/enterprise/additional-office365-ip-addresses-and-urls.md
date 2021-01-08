@@ -1,7 +1,7 @@
 ---
 title: "Additional endpoints not included in the Office 365 IP Address and URL Web service"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/29/2020
 audience: Admin
