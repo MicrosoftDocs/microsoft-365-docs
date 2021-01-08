@@ -105,7 +105,7 @@ We recommend that you include setting the user's Preferred Data Location as a pa
 
 ## OneDrive Provisioning and the effect of PDL
 
-If the user already has a OneDrive site created in the tenant, setting their PDL will not automatically move their existing OneDrive. To move a user's OneDrive, see [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md) please follow the instructions in Moving OneDrive between geo locations. (Note that the user's Exchange mailbox does move automatically when you set the user's PDL.)
+If the user already has a OneDrive site created in the tenant, setting their PDL will not automatically move their existing OneDrive. To move a user's OneDrive, see [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md) please follow the instructions in Moving OneDrive between geo locations. (Note that Exchange Online automatically  relocates the user's mailbox if the PLD changes and the MailboxRegion no longer matches the Mailbox Database Geo Location code. See Administering Exchange Online mailboxes in a multi-geo environment.)
 
 If the user does not have a OneDrive site within the tenant, OneDrive will be provisioned for them in accordance to their PDL value, assuming the PDL for the user matches one of the company's satellite locations.
 
