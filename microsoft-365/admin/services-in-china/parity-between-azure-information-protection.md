@@ -102,6 +102,8 @@ For the unified labeling solution, AIP apps on Windows need the following regist
 - Value = `6` (default = 0)
 - Type = `REG_DWORD`
 
+The unified AIP client can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
+
 > [!IMPORTANT]
 > Make sure you don't delete the registry key after an uninstall. If the key is empty, incorrect, or non-existent, the functionality will behave as the default value (default value = 0 for the commercial cloud). If the key is empty or incorrect, a print error is also added to the log.
 
