@@ -99,7 +99,7 @@ Enhanced filtering for connectors will allow tenants to use anti-spoofing protec
 
 ### URLs
 
-URLs will be detonated during mail flow. If you don't want specific URLs detonated, manage your list of allowed URLs appropriately. See [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md) for details.
+URLs will be detonated during mail flow. If you don't want specific URLs detonated, manage your list of allowed URLs appropriately. See [Manage the Tenant Allow/Block List](tenant-allow-block-list.md) for details.
 
 URL links in the email message bodies won't wrap, to lessen customer impact.
 

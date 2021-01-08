@@ -1,5 +1,5 @@
 ---
-title: "Manage your allowed and blocked URLs in the Tenant Allow/Block List"
+title: "Manage allowed and blocked items in the Tenant Allow/Block List"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,7 +17,7 @@ ms.collection:
 description: "Admins can learn how to configure URL entries in the Tenant Allow/Block List in the Security & Compliance Center."
 ---
 
-# Manage URLs in the Tenant Allow/Block List
+# Manage the Tenant Allow/Block List
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -27,17 +27,25 @@ description: "Admins can learn how to configure URL entries in the Tenant Allow/
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The Tenant Allow/Block List in the Security & Compliance Center gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow and at the time of user clicks. You can specify URLs to allow or block in the Tenant Allow/Block List.
+The Tenant Allow/Block List in the Security & Compliance Center gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow and at the time of user clicks. You can specify URLs or files to always allow or always block.
 
-This topic describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+This article describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Tenant Allow/Block List** page, use <https://protection.office.com/tenantAllowBlockList>.
 
+- You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
+
+  ```dos
+  certutil.exe -hashfile "<Path>\<Filename>" SHA256
+  ```
+
+  An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not supported.
+
 - The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
 
-- The Tenant Allow/Block List allows a maximum of 500 entries for URLs.
+- The Tenant Allow/Block List allows a maximum of 500 entries for URLs, and 500 entries for file hashes.
 
 - An entry should be active within 15 minutes.
 
@@ -84,15 +92,39 @@ For details about the syntax for URL entries, see the [URL syntax for the Tenant
 
 4. When you're finished, click **Add**.
 
+## Use the Security & Compliance Center to create file entries in the Tenant Allow/Block List
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
+
+2. On the **Tenant Allow/Block List** page, select **Files** tab, and then click **Add**.
+
+3. In the **Add new files** flyout that appears, configure the following settings:
+
+   - **Add file hashes**: Enter one SHA256 hash value per line, up to a maximum of 20.
+
+   - **Block/Allow**: Select whether you want to **Allow** or **Block** the specified files.
+
+   - **Never expire**: Do one of the following steps:
+
+     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entries.
+
+     or
+
+     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
+
+   - **Optional note**: Enter descriptive text for the entries.
+
+4. When you're finished, click **Add**.
+
 ## Use the Security & Compliance Center to view entries in the Tenant Allow/Block List
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
-2. Select the **URLs** tab.
+2. Select the **URLs** tab or the **Files** tab.
 
 Click on the following column headings to sort in ascending or descending order:
 
-- **Value**
+- **Value**: The URL or the file hash.
 - **Action**: **Block** or **Allow**.
 - **Last updated date**
 - **Expiration date**
@@ -118,11 +150,11 @@ To clear existing filters, click **Filter**, and in the **Filter** flyout that a
 
 ## Use the Security & Compliance Center to modify entries in the Tenant Allow/Block List
 
-You can't modify the URL value itself. Instead, you need to delete the entry and recreate it.
+You can't modify the existing URL or file values within an entry. To modify these values, you need to delete and recreate the entry.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
-2. Select the **URLs** tab.
+2. Select the **URLs** tab or the **Files** tab.
 
 3. Select the entry that you want to modify, and then click **Edit** ![Edit icon](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png).
 
@@ -146,7 +178,7 @@ You can't modify the URL value itself. Instead, you need to delete the entry and
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
-2. Select the **URLs** tab.
+2. Select the **URLs** tab or the **Files** tab.
 
 3. Select the entry that you want to remove, and then click **Delete** ![Delete icon](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).
 
@@ -154,18 +186,24 @@ You can't modify the URL value itself. Instead, you need to delete the entry and
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to configure the Tenant Allow/Block List
 
-### Use PowerShell to add entries in the Tenant Allow/Block List
+### Use PowerShell to add entries to the Tenant Allow/Block List
 
 To add entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-New-TenantAllowBlockListItems -ListType Url -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+New-TenantAllowBlockListItems -ListType <Url | FileHash> -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 This example adds a URL block entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com). Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.
 
 ```powershell
 New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
+```
+
+This example adds a file allow entry for the specified files that never expires.
+
+```powershell
+New-TenantAllowBlockListItem -ListType FileHash -Action Allow -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
@@ -175,7 +213,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 To view entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType Url [-Entry <URLValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
+Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
 ```
 
 This example returns all blocked URLs.
@@ -184,16 +222,22 @@ This example returns all blocked URLs.
 Get-TenantAllowBlockListItems -ListType Url -Action Block
 ```
 
+This example returns information for the specified file hash value.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+```
+
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).
 
 ### Use PowerShell to modify entries in the Tenant Allow/Block List
 
-You can't modify the URL value itself. Instead, you need to delete the entry and recreate it.
+You can't modify the existing URL or file values within an entry. To modify these values, you need to delete and recreate the entry.
 
 To modify entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 This example changes the expiration date of the specified entry.
@@ -209,7 +253,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 To remove entries from the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
 ```
 
 This example removes the specified URL entry from the Tenant Allow/Block List.
@@ -229,7 +273,6 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 - Unicode is not supported, but Punycode is.
 
 - Hostnames are allowed if all of the following statements are true:
-
   - The hostname contains a period.
   - There is at least one character to the left of the period.
   - There are at least two characters to the right of the period.
