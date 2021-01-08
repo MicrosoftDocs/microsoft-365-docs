@@ -34,7 +34,7 @@ Providing a path for B2B accounts to authenticate with your Azure AD tenant does
 
 ## Updating the common policies to allow and protect guest and external access
 
-To protect guest and external access with Azure AD B2B accounts, the following diagram illustrates which policies to add or update from the the common identity and device access policies.
+To protect guest and external access with Azure AD B2B accounts, the following diagram illustrates which policies to add or update from the common identity and device access policies.
 
 [![Summary of policy updates for protecting guest access](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
@@ -56,9 +56,9 @@ To include or exclude guest and external users in Conditional Access policies, f
 
 ### Guest and external access with Microsoft Teams
 
-Microsoft Teams defines the following:
+Microsoft Teams defines the following terminology:
 
-- **Guest access** uses an Azure AD B2B account that can be added as a member of a team and have all permissioned access to the communications and resources of the team.
+- **Guest access** uses an Azure AD B2B account that can be added as a member of a team and have correct permissions and access to the communications and resources of the team.
 
 - **External access** is for an external user that does not have a B2B account. External access can include invitations and participation in calls, chats, and meetings, but does not include team membership and access to the resources of the team.
 
