@@ -260,6 +260,8 @@ Only if you use the optional configuration to scope your retention settings to s
   - 1,000 users for Teams private chats
   - 100 sites (OneDrive or SharePoint)
 
+The workaround is be to use groups instead when exceeding 1000 mailboxes per inclusion/exclusion.
+
 There is also a maximum number of policies that are supported for a tenant: 10,000. However, for Exchange Online, the maximum number is 1,800. The maximum number includes retention policies, retention label policies, and auto-apply retention policies.
 
 If your retention policies are likely to be subject to these limitations, use the default configuration that applies to the entire location because these policies don't have any limitations.
