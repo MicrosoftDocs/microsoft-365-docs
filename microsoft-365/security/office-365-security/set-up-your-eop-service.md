@@ -13,7 +13,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: "Admins can learn how to setup standalone Exchange Online Protection (EOP) to protect on-premises email environments."
+description: "Admins can learn how to set up standalone Exchange Online Protection (EOP) to protect on-premises email environments."
 ---
 
 # Set up your standalone EOP service

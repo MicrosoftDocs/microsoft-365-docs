@@ -60,9 +60,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `PhishDetectionMethod` | string | Method used to detect the email as a phish: Malicious URL reputation, Safe Links URL Detonation, Advanced phish filter, General phish filter, Anti-Spoof: Intra-org, Anti-spoof: external domain, Domain impersonation, User impersonation, Brand impersonation |
 | `MalwareFilterVerdict` | string | Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware |
 | `MalwareDetectionMethod` | string | Method used to detect malware in the email: Antimalware engine, File reputation, Safe Attachments |
-| `FinalEmailAction` | string | Final action taken on the email based on filter verdict, policies, and user actions:  Move message to junk mail folder, Add X-header, Modify subject, Redirect message, Delete message, send to quarantine, No action taken, Bcc message |
-| `FinalEmailActionPolicy` | string | Action policy that took effect: Antispam high-confidence, Antispam, Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Safe Attachments, Enterprise Transport Rules (ETR) |
-| `FinalEmailActionPolicyGuid` | string | Unique identifier for the policy that determined the final mail action |
+| `EmailAction` | string | Final action taken on the email based on filter verdict, policies, and user actions:  Move message to junk mail folder, Add X-header, Modify subject, Redirect message, Delete message, send to quarantine, No action taken, Bcc message |
+| `EmailActionPolicy` | string | Action policy that took effect: Antispam high-confidence, Antispam, Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Safe Attachments, Enterprise Transport Rules (ETR) |
+| `EmailActionPolicyGuid` | string | Unique identifier for the policy that determined the final mail action |
 | `AttachmentCount` | int | Number of attachments in the email |
 | `UrlCount` | int | Number of embedded URLs in the email |
 | `EmailLanguage` | string | Detected language of the email content |

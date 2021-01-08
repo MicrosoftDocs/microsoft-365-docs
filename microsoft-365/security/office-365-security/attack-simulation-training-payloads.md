@@ -29,7 +29,7 @@ In the next step name your payload. Optionally, you can give it a description.
 
 ## Configure payload
 
-Now it's time to build your payload. Input the sender's name, email address, and the email's subject in the **Sender details** section. Pick a phishing URL from the the provided list. This URL will later be embedded into the body of the message.
+Now it's time to build your payload. Input the sender's name, email address, and the email's subject in the **Sender details** section. Pick a phishing URL from the provided list. This URL will later be embedded into the body of the message.
 
 > [!TIP]
 > You can choose an internal email for your payload's sender, which will make the payload appear as coming from another employee of the company. This will increase susceptibility to the payload and will help educate employees on the risk of internal threats.
@@ -45,7 +45,7 @@ Once you're done building the payload to your liking, click **Next**.
 
 ## Adding indicators
 
-Indicators will help employees going through the attack simulation understand clue they can look for in future attacks. To start, click **Add indicator**.
+Indicators will help employees going through the attack simulation understand the clue they can look for in future attacks. To start, click **Add indicator**.
 
 Select an indicator you'd like to use from the drop-down list. This list is curated to contain the most common clues that appear in phishing email messages. Once selected, make sure the indicator placement is set to **From the body of the email** and click on **Select text**. Highlight the portion of your payload where this indicator appears and click **Select**.
 
