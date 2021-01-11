@@ -36,6 +36,10 @@ This article lists new features in the latest release of Microsoft Defender for 
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## December 2020
+
+- [Secure by default in Office 365](secure-by-default.md)
+
 ## November 2020
 
 - Updated export limits in Review > Action Center > Remediation from Mail Submission and Action Log (Defender for Office 365 Plan 2)
@@ -43,7 +47,6 @@ This article lists new features in the latest release of Microsoft Defender for 
 ## September/October 2020
 
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
-- [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
 - [Extended capabilities in Threat Explorer including top targeted users, transport rules, and connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender for Office 365 information in [Threat Explorer](threat-explorer.md) (email was allowed/blocked by tenant/user policy) (Defender for Office 365 Plan 2)
 - Surfacing URL threats in [Threat Explorer](threat-explorer.md#threats-in-urls) (malware, phish, spam, or none) (Defender for Office 365 Plan 2)
 - [Improvements to Hunting Experience Threat Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) with updates around Threats, Additional Actions, Delivery locations and Updated timeline view (Defender for Office 365 Plan 2)
