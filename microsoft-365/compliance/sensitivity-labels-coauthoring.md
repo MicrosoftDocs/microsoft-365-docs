@@ -56,6 +56,8 @@ Do not enable this setting if you have any apps, services, or scripts in your or
 
 - Inaccurate reporting for label usage
 
+- Co-authoring and Auto-Save doesn't work for an encrypted document if another user has it open in an Office desktop app that doesn't support the new labeling metadata.
+
 - An Exchange Online mail flow rule that [identifies labels as custom properties in Office attachments](https://docs.microsoft.com/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) fails to encrypt the email and attachment, or incorrectly encrypts them
 
 ## Prerequisites
@@ -64,7 +66,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 - You must be a global admin to turn on this feature.
 
-- Sensitivity labels must be [enabled for Office files in Share and SharePoint](sensitivity-labels-sharepoint-onedrive-files.md). If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
+- Sensitivity labels must be [enabled for Office files in OneDrive and SharePoint](sensitivity-labels-sharepoint-onedrive-files.md). If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - All apps, services, and operation tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
 - Azure Information Protection unified labeling client: Minimum version of x
@@ -78,6 +80,18 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 
 ## Limitations
+
+Before you enable the tenant setting for co-authoring for files encrypted with sensitivity labels, make sure you understand the following limitations of this feature.
+
+- Because of the [labeling metadata changes[(#metadata-changes-for-sensitivity-labels), All apps, services, and operation tools in your tenant must support the ne 
+
+
+
+## Known issues
+
+This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
+
+
 
 ## How to enable co-authoring for files with sensitivity labels
 
@@ -93,3 +107,15 @@ Make sure you understand the following prerequisites before you turn on this fea
     ![Option to turn on co-authoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
 
+## How to disable co-authoring for files with sensitivity labels
+
+After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test it first with a test tenant rather than a production tenant.
+
+![Option that shows co-authoring for fco-authoring-tenant-option-set-for-sensitivity-labels.png)
+
+As the screenshot shows, you can contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) and request that this setting is disabled. This request might take several times, you will need to prove that you are you global administrator for your tenant. Expect usual support charges to apply. If a support engineer disables this setting for your tenant:
+
+- Saving labeled and unencrypted Office documents then saves the labeling metadata in the original format and location.
+- Office documents that were labeled and unencrypted while the setting was enabled will not be copied to the original format and location, which means that this labeling information will be lost.
+- Co-authoring and Auto-Save no longer works in your tenant.
+- Sensitivity labels remain enabled for Office files in OneDrive and SharePoint.
