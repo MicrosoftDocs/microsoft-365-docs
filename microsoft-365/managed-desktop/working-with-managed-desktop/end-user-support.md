@@ -1,6 +1,6 @@
 ---
-title: Get support for Microsoft Managed Desktop
-description:  
+title: Get user support for Microsoft Managed Desktop
+description:  How users can get help with the service and devices
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Managed Desktop and ITIL
-description:  
+description:  Correlates ITIL phases with Microsoft Managed Desktop information and articles
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, ITISM
 ms.service: m365-md
 author: jaimeo

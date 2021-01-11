@@ -1,6 +1,6 @@
 ---
 title: Admin support for Microsoft Managed Desktop
-description:  
+description:  How admins can get help with the service
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo

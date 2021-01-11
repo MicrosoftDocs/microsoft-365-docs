@@ -1,6 +1,6 @@
 ---
 title: Security technologies in Microsoft Managed Desktop 
-description:  
+description:  Technologies used for device security, identity and access management, network security, and information security
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -23,7 +23,7 @@ Specifically:
 - [Network security](#network-security) – VPN information and Microsoft Managed Desktop recommended solution and settings
 - [Information security](#information-security) – optional available services to further protect sensitive information 
 
-For information about data storage, usage, and security practices used by Microsoft Managed Desktop, see our white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
+For information about data storage, usage, and security practices used by Microsoft Managed Desktop, see our whitepaper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
 
 
 ## Device security
@@ -57,7 +57,7 @@ Customers are responsible for network security.
 
 Service | Description
 --- | ---
-VPN | Customers own their VPN infrastructure, to ensure limited corporate resources can be exposed outside the intranet.<br><br>Minimum requirement: Microsoft Managed Desktop requires a Windows 10 compatible and supported VPN solution. If your organization needs a VPN solution, it needs to support Windows 10 and be packaged and deployable through Intune. Contact your software publisher for more information.<br><br>Recommendation:<br>- Microsoft recommends a modern VPN solution that could be easily deployed through Intune to push VPN profiles. This approach provides an always-on, seamless, reliable, and secure way to access corporate network. For more information, see [[VPN settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>- Thick VPN clients, or legacy VPN clients, are not recommended by Microsoft while using Microsoft Managed Desktop as it can impact the user environment.<br>- Microsoft recommends that the outgoing web traffic goes directly to Internet without going through the VPN to avoid any performance issues.<br>- Ideally, Microsoft recommends the use of Azure Active Directory App Proxy instead of a VPN.
+VPN | Customers own their VPN infrastructure, to ensure limited corporate resources can be exposed outside the intranet.<br><br>Minimum requirement: Microsoft Managed Desktop requires a Windows 10 compatible and supported VPN solution. If your organization needs a VPN solution, it needs to support Windows 10 and be packaged and deployable through Intune. Contact your software publisher for more information.<br><br>Recommendation:<br>- Microsoft recommends a modern VPN solution that could be easily deployed through Intune to push VPN profiles. This approach provides an always-on, seamless, reliable, and secure way to access corporate network. For more information, see [[VPN settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>- Thick VPN clients, or older VPN clients, are not recommended by Microsoft while using Microsoft Managed Desktop as it can impact the user environment.<br>- Microsoft recommends that the outgoing web traffic goes directly to Internet without going through the VPN to avoid any performance issues.<br>- Ideally, Microsoft recommends the use of Azure Active Directory App Proxy instead of a VPN.
 
 
 ## Information security

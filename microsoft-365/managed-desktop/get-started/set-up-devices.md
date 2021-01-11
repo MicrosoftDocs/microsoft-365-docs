@@ -1,6 +1,6 @@
 ---
 title: Set up devices for Microsoft Managed Desktop 
-description:  
+description:  How to get new devices or reuse existing ones that qualify
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -39,6 +39,6 @@ We recommend working with one of our approved device partners. You can work with
 3. [Assign licenses](assign-licenses.md)
 4. [Deploy Intune Company Portal](company-portal.md)
 5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
-6. Set up devices (this topic)
+6. Set up devices (this article)
 7. [Get your users ready to use devices](get-started-devices.md)
 8. [Deploy apps](deploy-apps.md)

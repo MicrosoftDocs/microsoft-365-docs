@@ -1,6 +1,6 @@
 ---
 title: Apps in Microsoft Managed Desktop 
-description:  
+description:  Explains how apps are handled, including how to package, deploy, and support them.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -64,10 +64,6 @@ There are three options to get your apps packaged:
 - You can package apps yourself
 - You can work with a non-Microsoft vendor
 - You can engage with MCS to package your apps. Work with your Microsoft account representative. For more information, see [Working with Microsoft Consulting Services](apps-MCS.md).
-
-
-
-
 
 
 

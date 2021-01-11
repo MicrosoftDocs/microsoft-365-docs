@@ -1,6 +1,6 @@
 ---
 title: Microsoft Managed Desktop operations and monitoring 
-description:  
+description:  Who does what for various change processes
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -39,7 +39,7 @@ Package for deployment | Microsoft | Microsoft | Customer | Customer
 
 ### Change process overview
 
-Here’s a summary of how the change process is shared between Microsoft and customers. 
+Here’s a summary of how the change process is shared between Microsoft and customers: 
 
 
 
@@ -61,7 +61,7 @@ Not all changes have the same impact on your users or require action. Some are p
 
 |   | Functionality |	Non-security updates |	Security
 --- | --- | --- | ---
-**Type of change** | - Feature updates<br>- New features or applications<br>- Deprecated features | Client hotfixes for issues | Security patches
+**Type of change** | - Feature updates<br>- New features or applications<br>- Deprecated features | Client hotfixes for issues | Security updates
 **Advance notice** | Five days notice for changes that require action |	No, such changes are included in the monthly release	| No, changes are included in the monthly release 
 **Communication channel** | - Message Center<br>- Email alert | - Message Center<br>- Email alert | - Message Center<br>- Email alert
 **Requires global admin action** | Sometimes |	Rarely |	Rarely 
@@ -72,7 +72,7 @@ Not all changes have the same impact on your users or require action. Some are p
 
 ## Standard operating procedures
 
-The Microsoft Managed Desktop service is implemented and operated by Microsoft in your Microsoft cloud instance where you may conduct other administrative activities. Microsoft is solely responsible for Microsoft Managed Desktop-specific setup, configuration, and operation. 
+The Microsoft Managed Desktop service is implemented and operated by Microsoft in your Microsoft cloud instance where you might conduct other administrative activities. Microsoft is solely responsible for Microsoft Managed Desktop-specific setup, configuration, and operation. 
 
 For on-premises products, your organization takes on all the responsibility for managing setup, and configuration and operational activities.
 
@@ -91,7 +91,7 @@ Certificates | | - Create a support request 60 days prior to a certificate expir
 
 ## Device wipe with factory reset
 
-The Microsoft Managed Desktop Operations Team can perform a factory reset of devices enrolled in the service when required. Resetting is helpful if you need to give a device to a different employee, or if an employee leaves your company. 
+The Microsoft Managed Desktop Operations team can perform a factory reset of devices enrolled in the service when required. Resetting is helpful if you need to give a device to a different employee, or if an employee leaves your company. 
 
 There are a few requirements:
 

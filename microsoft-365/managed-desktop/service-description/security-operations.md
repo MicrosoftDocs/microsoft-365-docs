@@ -1,6 +1,6 @@
 ---
 title: Security operations in Microsoft Managed Desktop 
-description:  
+description:  Services and processes provided by the Security Operations Center
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -27,7 +27,7 @@ The SOC provides these services:
 
 ## Processes
 
-- Microsoft Managed Desktop Security Operations is staffed by full-time Microsoft employees in partnership with  Microsoft’s [Cyber Defense Operations Center](https://www.microsoft.com/msrc/cdoc). 
+- Microsoft Managed Desktop Security Operations is staffed by full-time Microsoft employees in partnership with Microsoft’s [Cyber Defense Operations Center](https://www.microsoft.com/msrc/cdoc). 
 - Our SOC uses collective signals from across our company, both internal and external, to protect your devices--even from things we have not yet seen in Microsoft Managed Desktop.
 - Microsoft security solutions align to many cybersecurity protection standards. SOC operations are based on the National Institute of Standards and Technology Computer Security Incident Response Handling Guide (NIST 800-61 r2).
 - The process allows for proper collection of information and evidence, for analysis and documentation and post-recovery insights into ways to better defend your environment through these phases:

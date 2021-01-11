@@ -1,6 +1,7 @@
 ---
 title: Access the Admin portal
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+description: How to find and use the Admin portal, including controlling access to it.
 ms.service: m365-md
 ms.author: jaimeo
 author: jaimeo
@@ -16,7 +17,7 @@ manager: laurawi
 Your gateway to the Microsoft Managed Desktop service is the Microsoft [Azure portal](https://portal.azure.com). For more about using and customizing your Azure portal experience generally, see the [Azure portal documentation](https://docs.microsoft.com/azure/azure-portal/). Available in preview now, you can also find Microsoft Managed Desktop in the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). If you are unfamiliar with the capabilities of this portal for device management, see the [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/).
 
 > [!NOTE]
-> However you choose to accesss Microsoft Managed Desktop, in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) or the [Azure portal](https://portal.azure.com), the following browsers are supported:
+> However you choose to access Microsoft Managed Desktop, in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) or the [Azure portal](https://portal.azure.com), the following browsers are supported:
 > - Microsoft Edge (latest version)
 > - Microsoft Internet Explorer 11
 > - Safari (latest version, Mac only)
@@ -53,13 +54,13 @@ Each of the roles below can be assigned to provide different levels of access:
 
 If you need help with assigning Azure Active Directory roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
-For easy management of the built-in roles, a security group has been created for each custom role (for example, “Modern Workplace Roles – Security Manager”). To assign users to one of the security groups, follow these steps:
-1.	Go the Microsoft Endpoint Manager portal
-2.	Select Groups on the left-hand side.
-3.	Search for Modern Workplace Roles, and then select the group associated with the role you want to assign. 
-4.	Select Members on the left-hand side, and then select + Add members on the command bar.
-5.	Enter the email of the person being added. If they are a guest, you have to invite them before you can assign the group.
-6.	Select Select at the bottom.
+To make it easy to manage built-in roles, there is a security group for each custom role (for example, “Modern Workplace Roles – Security Manager”). To assign users to one of the security groups, follow these steps:
+1.	Go the Microsoft Endpoint Manager portal.
+2.	Select **Groups** on the left side.
+3.	Search for **Modern Workplace Roles**, and then select the group associated with the role you want to assign. 
+4.	Select **Members** on the left side, and then select **+ Add members** on the command bar.
+5.	Enter the email of the person being added. If they are a guest, you must invite them before you can assign the group.
+6.	Select **Select** at the bottom.
 
 > [!NOTE]
 > Nesting security groups for role assignment is not currently supported. 
