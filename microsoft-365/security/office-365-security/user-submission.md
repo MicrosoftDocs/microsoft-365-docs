@@ -27,6 +27,8 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
 
+- [The Report Phishing add-in](enable-the-report-phish-add-in.md)
+
 - [Built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (formerly known as Outlook Web App)
 
 - [Built-in reporting in Outlook for iOS and Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
