@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn how to connect your domain to Microsoft 365."
 ---
 
-# Connect your domain to Microsoft 365
+# Connect your domain to Microsoft 365 for business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LFpy?autoplay=false]
 

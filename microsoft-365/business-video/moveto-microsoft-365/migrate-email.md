@@ -123,7 +123,7 @@ Once you’ve finished, you’re ready to migrate.
     user123@fabrikaminc.net
     ```
 
-      For details see [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration#start-a-g-suite-migration-batch-with-the-exchange-admin-center-eac). 
+      For details see [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration#start-a-g-suite-migration-batch-with-the-exchange-admin-center-eac). 
 
 1. Select **Choose File**, navigate to the CSV file, choose it, select **Open**, then **Next**. 
 1. Verify the admin email address you want to use for testing. 

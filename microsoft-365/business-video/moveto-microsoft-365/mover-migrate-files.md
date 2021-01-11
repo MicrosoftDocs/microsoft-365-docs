@@ -67,7 +67,7 @@ When you move to Microsoft 365 for business, you’ll want to migrate your files
 1. In this case, we have added a SharePoint site called Migrated files, and taken note of the URL for the documents page. 
 1. We then created a CSV file using the format of Source Path, Destination Path, and Tags. 
 
-    For details see [aka.ms/movercsv](https://docs.microsoft.com/en-us/sharepointmigration/mover-create-migration-csv).
+    For details see [aka.ms/movercsv](https://docs.microsoft.com/sharepointmigration/mover-create-migration-csv).
 
     When adding the Destination Path URL, remove everything after Shared Documents for example For example, this full URL won't work:
 `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
