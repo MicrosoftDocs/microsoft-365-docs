@@ -83,8 +83,14 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 Before you enable the tenant setting for co-authoring for files encrypted with sensitivity labels, make sure you understand the following limitations of this feature.
 
-- Because of the [labeling metadata changes[(#metadata-changes-for-sensitivity-labels), All apps, services, and operation tools in your tenant must support the ne 
+- Because of the [labeling metadata changes[(#metadata-changes-for-sensitivity-labels), all apps, services, and operation tools in your tenant must support the new labeling metadata for a consistent labeling experience.
 
+- Co-authoring and Auto-Save aren't supported and don't work for labeled and encrypted Office documents that use any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
+    - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
+    - **User access to content expires** is set to a value other than **Never**.
+    - **Double Key Encryption** is selected.
+    
+    If a document with any of these encryptions settings is open by another user
 
 
 ## Known issues
@@ -111,7 +117,7 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 
 After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test it first with a test tenant rather than a production tenant.
 
-![Option that shows co-authoring for fco-authoring-tenant-option-set-for-sensitivity-labels.png)
+![Option that shows co-authoring setting turned on for sensitivity labels](co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
 As the screenshot shows, you can contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) and request that this setting is disabled. This request might take several times, you will need to prove that you are you global administrator for your tenant. Expect usual support charges to apply. If a support engineer disables this setting for your tenant:
 
