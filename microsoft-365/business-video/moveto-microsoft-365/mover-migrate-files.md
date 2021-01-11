@@ -41,9 +41,13 @@ All the users should have signed in to Microsoft 365 for business and set up the
 ### Install Mover
 
 1. Sign into your Google Workspace admin console at [admin.google.com](https://admin.google.com).
+
 1. Choose **Apps**, **Google Workspace Marketplace apps**, Then **Add app to Domain Install list**.
+
 1. Search for Mover and select it.
+
 1. Choose **Domain Install**, then **Continue**.
+
 1. Review the permissions, select the checkbox to agree to the terms,then select **Allow**, choose **Next**, then **Done**.
 
 ### Create Connectors and run the migration
