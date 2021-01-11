@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection: 
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: "Microsoft Defender for Office 365 includes safe attachments, safe links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities."
@@ -38,6 +38,11 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 - **[Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities)**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
 
 - **[Automated investigation and response capabilities](office-365-air.md)**: Save time and effort investigating and mitigating threats.
+
+## Interactive guide to Microsoft Defender for Office 365
+In this interactive guide you'll learn how to safeguard your organization with Microsoft Defender for Office 365. You'll see how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
+
+> [!VIDEO https://aka.ms/MSDO-IG]
 
 ## Getting Started
 
