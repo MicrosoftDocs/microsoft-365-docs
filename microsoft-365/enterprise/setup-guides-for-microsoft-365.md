@@ -137,7 +137,7 @@ The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with st
 
 ### Microsoft Intune setup guide 
 
-Set up Microsoft Intune to manage devices in your org. For full control of corporate devices, you’ll use Intune’s mobile device management (MDM) features. To manage corporate data on shared and personal devices, you can use Intune’s mobile app management (MAM) features. 
+Set up Microsoft Intune to manage devices in your organization. For full control of corporate devices, you’ll use Intune’s mobile device management (MDM) features. To manage your organization's data on shared and personal devices, you can use Intune’s mobile application management (MAM) features. 
 
 With the [Microsoft Intune setup guide](https://aka.ms/intunesetupguide), you'll set up device and app compliance policies, assign app protection policies, and monitor the device and app protection status. 
 
