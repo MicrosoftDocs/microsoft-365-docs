@@ -181,28 +181,22 @@ Here's more information about exporting search results.
 [Miscellaneous](#miscellaneous)
   
 ### Export limits
-  
-- Exporting search results from the Security & Compliance Center has the following limits:
 
-  - You can export a maximum of 2 TB of data from a single Content Search. If the search results are larger than 2 TB, consider using date ranges or other types of filters to decrease the total size of the search results.
-  
-  - Your organization can export a maximum of 2 TB of data during a single day. The quota will reset daily at 12:00AM UTC.
-  
-  - You can have a maximum of 10 exports running at the same time within your organization.
+These limits also apply when exporting search results in a Core eDiscovery case.
 
-  - A single user can run a maximum of three exports at the same time.
-  
-  - You can download the search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the Office 365 Security & Compliance Center or the Microsoft 365 compliance center. To download the search results from more than 100,000 mailboxes, you have to use Security & Compliance Center PowerShell. For instructions, see [Exporting results from more than 100,000 mailboxes](#exporting-results-from-more-than-100000-mailboxes).
+|Description of limit|Limit|
+|:-----|:-----|
+|Maximum amount of exportable data from a single Content Search  <br/><br/> **Note:** If the search results are larger than 2 TB, consider using date ranges or other types of filters to decrease the total size of the search results. <br/>  |2 TB  <br/> | 
+|Maximum an organization can export in a single day <br/><br/> **Note:** This limit is reset daily at 12:00AM UTC <br/> |2 TB <br/> |
+|Maximum concurrent exports that can be ran at same time within your organization <br/><br/> **Note:** Running a **Report Only** export counts against total concurrent exports for your organization. If three users are performing 3 exports each, then only one other export can be performed. Whether it is exporting a report or search results, no other exports can be performed until one has completed.   <br/> |10 <br/> |
+|Maximum exports a single user can run <br/> |3 <br/> |
+|Maximum amount of mailboxes search results can be downloaded using the eDiscovery Export Tool in the Microsoft 365 compliance center  <br/><br/> **Note:** To download the search results from more than 100,000 mailboxes, you have to use Security & Compliance Center PowerShell. For instructions, see [Exporting results from more than 100,000 mailboxes](#exporting-results-from-more-than-100000-mailboxes). <br/> | 100,000 <br/>|
+|Maximum size of PST file that can be exported <br/><br/> **Note:** If the search results from a user's mailbox are larger than 10 GB, the search results for the mailbox will be exported in two (or more) separate PST files. If you choose to export all search results in a single PST file, the PST file will be spilt into additional PST files if the total size of the search results is larger than 10 GB. If you want to change this default size, you can edit the Windows Registry on the computer that you use to export the search results. See [Change the size of PST files when exporting eDiscovery search results](change-the-size-of-pst-files-when-exporting-results.md). The search results from a specific mailbox won't be divided among multiple PST files unless the content from a single mailbox is more than 10 GB. If you chose to export the search results in one PST file for that contains all messages in a single folder and the search results are larger than 10 GB, the items are still organized in chronological order, so they will be spilt into additional PST files based on the sent date.<br/> | 10 GB <br/> |
+|Rate at which search results from mailboxes and sites are uploaded to a Microsoft-provided Azure Storage location. |Maximum of 2 GB per hour|
+|||
 
-  > [!NOTE]
-  > Exporting only the reports from a Content Search also counts against the number of exports running at the same time and the number of exports that a single user can run.
-  
-- As previously stated, search results from mailboxes and sites are uploaded to a Microsoft-provided Azure Storage location (as described in [Step 1: Prepare search results for export](#step-1-prepare-search-results-for-export)) at a maximum rate of 2 GB per hour.
-  
-- The maximum size of a PST file that can be exported is 10 GB by default. That means if the search results from a user's mailbox are larger than 10 GB, the search results for the mailbox will be exported in two (or more) separate PST files. If you choose to export all search results in a single PST file, the PST file will be spilt into additional PST files if the total size of the search results is larger than 10 GB. If you want to change this default size, you can edit the Windows Registry on the computer that you use to export the search results. See [Change the size of PST files when exporting eDiscovery search results](change-the-size-of-pst-files-when-exporting-results.md).
-  
-    Also, the search results from a specific mailbox won't be divided among multiple PST files unless the content from a single mailbox is more than 10 GB. If you chose to export the search results in one PST file for that contains all messages in a single folder and the search results are larger than 10 GB, the items are still organized in chronological order, so they will be spilt into additional PST files based on the sent date.
-  
+For information about other limits, see [Limits for Content Search](limits-for-content-search.md). 
+
 ### Export reports
   
 - When you export search results, the following reports are included in addition to the search results.
