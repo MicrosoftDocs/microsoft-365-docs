@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 ms.collection: 
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: "Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties."
 ---
 
