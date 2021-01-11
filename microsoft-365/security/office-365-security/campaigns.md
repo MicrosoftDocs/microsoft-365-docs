@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: "Learn about Campaign Views in Microsoft Defender for Office 365."
 ---
 
