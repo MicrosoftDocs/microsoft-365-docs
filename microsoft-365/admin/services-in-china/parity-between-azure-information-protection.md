@@ -93,7 +93,21 @@ Log in to your DNS provider, navigate to the DNS settings for the domain, and th
 - Port = `80`
 - Priority, Weight, Seconds, TTL = default values
 
-### AIP apps configuration (unified labeling only)
+### AIP client configuration
+
+The unified AIP client can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
+
+For more information, see:
+
+- [Azure Information Protection documentation](/azure/information-protection/)
+- [AIP version history and support policy](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [AIP system requirements](/azure/information-protection/requirements)
+- [AIP quickstart: Deploy the AIP client](/azure/information-protection/quickstart-deploy-client)
+- [AIP administrator guide](/azure/information-protection/rms-client/clientv2-admin-guide)
+- [AIP user guide](/azure/information-protection/rms-client/clientv2-user-guide)
+- [Learn about Microsoft 365 sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
+
+### AIP apps configuration (unified labeling client only)
 
 For the unified labeling solution, AIP apps on Windows need the following registry key to point them to the correct sovereign cloud for Azure China:
 
@@ -101,8 +115,6 @@ For the unified labeling solution, AIP apps on Windows need the following regist
 - Name = `CloudEnvType`
 - Value = `6` (default = 0)
 - Type = `REG_DWORD`
-
-The unified AIP client can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
 
 > [!IMPORTANT]
 > Make sure you don't delete the registry key after an uninstall. If the key is empty, incorrect, or non-existent, the functionality will behave as the default value (default value = 0 for the commercial cloud). If the key is empty or incorrect, a print error is also added to the log.
@@ -122,13 +134,3 @@ To manage your Azure Information Protection content scan jobs with an Azure Chin
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Defines settings for an existing repository in your content scan job. |
 
 For more information, see [Manage your content scan jobs using PowerShell only](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer).
-
-## Related content
-
-[Azure Information Protection documentation](/azure/information-protection/) (content library)\
-[AIP version history and support policy](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history) (article)\
-[AIP system requirements](/azure/information-protection/requirements) (article)\
-[AIP quickstart: Deploy the AIP client](/azure/information-protection/quickstart-deploy-client) (article)\
-[AIP administrator guide](/azure/information-protection/rms-client/clientv2-admin-guide) (article)\
-[AIP user guide](/azure/information-protection/rms-client/clientv2-user-guide) (article)\
-[Learn about Microsoft 365 sensitivity labels](/microsoft-365/compliance/sensitivity-labels) (article)
