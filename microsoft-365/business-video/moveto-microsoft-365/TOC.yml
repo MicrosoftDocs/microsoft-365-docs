@@ -1,0 +1,24 @@
+- name: Switch from Google Workspace to Microsoft 365
+  items: 
+    - name: Overview
+      href: move-from-google-workspace-overview.md
+    - name: Sign up for Microsoft 365
+      href: ../sign-up.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+    - name: Set up Microsoft 365 for Google migration
+      href: set-up-microsoft-365-forgoogle.md
+    - name: Set up security policies for Windows devices
+      href: ../secure-win10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+    - name: Add Google Workspace Domain 
+      href: add-google-domain.md
+    - name: Install Office apps and Microsoft Teams
+      href: ../install-office.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+    - name: Migrate email, calendar, and contacts to Microsoft 365
+      href: migrate-email.md
+    - name: Connect your domain to Microsoft 365
+      href: connect-domain-tom365.md
+    - name: Use Mover to move everyone's data
+      href: mover-migrate-files.md
+    - name: Cancel Google Workspace
+      href: cancel-google.md
+    
+    
