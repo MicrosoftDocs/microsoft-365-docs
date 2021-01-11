@@ -2,6 +2,241 @@
 
 
 
+## Week of January 04, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/4/2021 | [Microsoft 365 for enterprise for the Contoso Corporation](/microsoft-365/enterprise/contoso-case-study?view=o365-21vianet) | modified |
+| 1/4/2021 | [Device management roadmap for Microsoft 365](/microsoft-365/enterprise/device-management-roadmap-microsoft-365?view=o365-21vianet) | modified |
+| 1/4/2021 | [User experience in a multi-geo environment](/microsoft-365/enterprise/multi-geo-user-experience?view=o365-21vianet) | modified |
+| 1/4/2021 | [Microsoft 365 informed network routing](/microsoft-365/enterprise/office-365-network-mac-perf-cpe?view=o365-21vianet) | modified |
+| 1/4/2021 | [Set up topic experiences in Microsoft 365](/microsoft-365/knowledge/set-up-topic-experiences) | modified |
+| 1/4/2021 | [Step 4. Deploy endpoint management for your devices, PCs, and other endpoints](/microsoft-365/solutions/empower-people-to-work-remotely-manage-endpoints?view=o365-21vianet) | modified |
+| 1/4/2021 | [Monitor and respond to data privacy incidents in your organization](/microsoft-365/solutions/information-protection-deploy-monitor-respond?view=o365-21vianet) | modified |
+| 1/4/2021 | [Guest users in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-guest-users?view=o365-21vianet) | modified |
+| 1/4/2021 | [Set the password expiration policy for your organization](/microsoft-365/admin/manage/set-password-expiration-policy?view=o365-21vianet) | modified |
+| 1/4/2021 | [Cortana in Microsoft 365](/microsoft-365/admin/misc/cortana-integration?view=o365-21vianet) | modified |
+| 1/4/2021 | [Microsoft Bookings Frequently Asked Questions](/microsoft-365/bookings/bookings-faq?view=o365-21vianet) | modified |
+| 1/4/2021 | Add or remove members from a data investigation | removed |
+| 1/4/2021 | [Analyze data in a review set in Advanced eDiscovery](/microsoft-365/compliance/analyzing-data-in-review-set?view=o365-21vianet) | modified |
+| 1/4/2021 | Annotate and redact documents in evidence | removed |
+| 1/4/2021 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-21vianet) | modified |
+| 1/4/2021 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
+| 1/4/2021 | Build search queries in Data investigations | removed |
+| 1/4/2021 | [Build search queries in Advanced eDiscovery](/microsoft-365/compliance/building-search-queries?view=o365-21vianet) | modified |
+| 1/4/2021 | [Get started with trainable classifiers (preview)](/microsoft-365/compliance/classifier-get-started-with?view=o365-21vianet) | modified |
+| 1/4/2021 | Close or delete a data investigation | removed |
+| 1/4/2021 | [Collect data for a case in Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery?view=o365-21vianet) | modified |
+| 1/4/2021 | Configure search and analytics settings - Data investigations | removed |
+| 1/4/2021 | [Configure search and analytics settings - Advanced eDiscovery](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/4/2021 | Create a new investigation in Data Investigations (preview) | removed |
+| 1/4/2021 | [Customer Key for Microsoft 365 at the tenant level (public preview)](/microsoft-365/compliance/customer-key-tenant-level?view=o365-21vianet) | modified |
+| 1/4/2021 | Assign permissions for Data Investigations (preview) | removed |
+| 1/4/2021 | Release notes for Data Investigations (preview) in Microsoft 365 | removed |
+| 1/4/2021 | Delete items from their original location | removed |
+| 1/4/2021 | Document metadata fields in Data Investigations (preview) | removed |
+| 1/4/2021 | Download export jobs for an investigation | removed |
+| 1/4/2021 | [Download export jobs for an Advanced eDiscovery case](/microsoft-365/compliance/download-export-jobs?view=o365-21vianet) | modified |
+| 1/4/2021 | Email threading - Data investigations | removed |
+| 1/4/2021 | [Error remediation when processing data](/microsoft-365/compliance/error-remediation-when-processing-data-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/4/2021 | Error remediation when processing data for an investigation | removed |
+| 1/4/2021 | Query the data in evidence | removed |
+| 1/4/2021 | Export data from an investigation | removed |
+| 1/4/2021 | [Get started with Advanced eDiscovery in Microsoft 365](/microsoft-365/compliance/get-started-with-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/4/2021 | Advanced indexing of data for an investigation | removed |
+| 1/4/2021 | [Microsoft 365 compliance documentation # < 60 chars](/microsoft-365/compliance/index?view=o365-21vianet) | modified |
+| 1/4/2021 | [Advanced indexing of custodian data](/microsoft-365/compliance/indexing-custodian-data?view=o365-21vianet) | modified |
+| 1/4/2021 | [Retirement of legacy eDiscovery tools](/microsoft-365/compliance/legacy-ediscovery-retirement?view=o365-21vianet) | modified |
+| 1/4/2021 | Data Investigations limits | removed |
+| 1/4/2021 | Load non-Microsoft 365 data into evidence | removed |
+| 1/4/2021 | Manage a data spillage incident in Microsoft 365 | removed |
+| 1/4/2021 | Manage evidence sets in Data Investigations | removed |
+| 1/4/2021 | Manage jobs in Data Investigations | removed |
+| 1/4/2021 | Manage load sets in Data Investigations (preview) | removed |
+| 1/4/2021 | Manage people of interest in Data Investigations (preview) | removed |
+| 1/4/2021 | [Manage jobs in Advanced eDiscovery](/microsoft-365/compliance/managing-jobs-ediscovery20?view=o365-21vianet) | modified |
+| 1/4/2021 | [Microsoft 365 compliance center](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-21vianet) | modified |
+| 1/4/2021 | [Microsoft 365 solution catalog](/microsoft-365/compliance/microsoft-365-solution-catalog?view=o365-21vianet) | modified |
+| 1/4/2021 | Near duplicate detection - Data investigation | removed |
+| 1/4/2021 | Overview of Data Investigations (preview) in Microsoft 365 | removed |
+| 1/4/2021 | Process data for an investigation | removed |
+| 1/4/2021 | [Work with processing errors in Advanced eDiscovery](/microsoft-365/compliance/processing-data-for-case?view=o365-21vianet) | modified |
+| 1/4/2021 | Review the data in evidence | removed |
+| 1/4/2021 | Run analytics to investigate faster | removed |
+| 1/4/2021 | Search for data in an investigation | removed |
+| 1/4/2021 | [Search statistics in Advance eDiscovery](/microsoft-365/compliance/search-statistics-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/4/2021 | Search statistics | removed |
+| 1/4/2021 | [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-21vianet) | modified |
+| 1/4/2021 | [Single item error remediation](/microsoft-365/compliance/single-item-error-remediation?view=o365-21vianet) | modified |
+| 1/4/2021 | Supported file types in Data Investigations (preview) | removed |
+| 1/4/2021 | Tag documents in evidence | removed |
+| 1/4/2021 | Themes - Data investigations | removed |
+| 1/4/2021 | Use the Relevance module to analyze data in evidence | removed |
+| 1/4/2021 | View the audit activity of people of interest | removed |
+| 1/4/2021 | [Content stored in Exchange Online mailboxes](/microsoft-365/compliance/what-is-stored-in-exo-mailbox?view=o365-21vianet) | modified |
+| 1/4/2021 | [What's new in Microsoft 365 compliance](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
+| 1/4/2021 | [Office 365 endpoints for Germany](/microsoft-365/enterprise/microsoft-365-germany-endpoints?view=o365-21vianet) | modified |
+| 1/4/2021 | [Office 365 US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-21vianet) | modified |
+| 1/4/2021 | [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-21vianet) | modified |
+| 1/4/2021 | [URLs and IP address ranges for Office 365 operated by 21Vianet](/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-21vianet) | modified |
+| 1/4/2021 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
+| 1/4/2021 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-21vianet) | modified |
+| 1/4/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
+| 1/4/2021 | [Manually submit messages to Microsoft for analysis](/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis?view=o365-21vianet) | modified |
+| 1/4/2021 | [Use mail flow rules to see what your users are reporting to Microsoft](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft?view=o365-21vianet) | modified |
+| 1/4/2021 | [Configure teams with protection for highly sensitive data](/microsoft-365/solutions/configure-teams-highly-sensitive-protection?view=o365-21vianet) | modified |
+| 1/4/2021 | [Configure teams with protection for sensitive data](/microsoft-365/solutions/configure-teams-sensitive-protection?view=o365-21vianet) | modified |
+| 1/4/2021 | [Configure a team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation?view=o365-21vianet) | modified |
+| 1/4/2021 | [Get started with trainable classifiers](/microsoft-365/compliance/classifier-get-started-with?view=o365-21vianet) | modified |
+| 1/4/2021 | [How to retrain a classifier in communications compliance](/microsoft-365/compliance/classifier-how-to-retrain-comms-compliance?view=o365-21vianet) | modified |
+| 1/4/2021 | [How to retrain a classifier in content explorer](/microsoft-365/compliance/classifier-how-to-retrain-content-explorer?view=o365-21vianet) | modified |
+| 1/4/2021 | [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about?view=o365-21vianet) | modified |
+| 1/5/2021 | Analyze case data with Advanced eDiscovery | removed |
+| 1/5/2021 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-21vianet) | modified |
+| 1/5/2021 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
+| 1/5/2021 | [Understand Assessment in Relevance in Advanced eDiscovery](/microsoft-365/compliance/assessment-in-relevance-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/5/2021 | [Decision based on the results in Advanced eDiscovery](/microsoft-365/compliance/decision-based-on-the-results-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/5/2021 | Define case and tenant settings in Advanced eDiscovery | removed |
+| 1/5/2021 | Define highlighted keywords and advanced options in Advanced eDiscovery | removed |
+| 1/5/2021 | Define issues and assign users in Advanced eDiscovery | removed |
+| 1/5/2021 | [eDiscovery](/microsoft-365/compliance/ediscovery?view=o365-21vianet) | modified |
+| 1/5/2021 | Export case data in Advanced eDiscovery | removed |
+| 1/5/2021 | [Export and download content from a Core eDiscovery case](/microsoft-365/compliance/export-content-in-core-ediscovery?view=o365-21vianet) | modified |
+| 1/5/2021 | Export report fields in Advanced eDiscovery | removed |
+| 1/5/2021 | Export results in Advanced eDiscovery | removed |
+| 1/5/2021 | Import non-Microsoft 365 content for Advanced eDiscovery analysis | removed |
+| 1/5/2021 | [Manage Relevance setup in Advanced eDiscovery](/microsoft-365/compliance/manage-relevance-setup-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/5/2021 | Advanced eDiscovery | removed |
+| 1/5/2021 | Prepare data for Advanced eDiscovery | removed |
+| 1/5/2021 | Prepare search results for Advanced eDiscovery | removed |
+| 1/5/2021 | Quick setup for Advanced eDiscovery | removed |
+| 1/5/2021 | Run reports in Advanced eDiscovery | removed |
+| 1/5/2021 | Run the Process module and load data in Advanced eDiscovery | removed |
+| 1/5/2021 | Run the Process module in Advanced eDiscovery | removed |
+| 1/5/2021 | Search and Tagging | removed |
+| 1/5/2021 | Set Analyze advanced settings in Advanced eDiscovery | removed |
+| 1/5/2021 | Set Analyze options in Advanced eDiscovery | removed |
+| 1/5/2021 | Set Ignore Text option for Analyze in Advanced eDiscovery | removed |
+| 1/5/2021 | Set up loads to add imported files in Advanced eDiscovery | removed |
+| 1/5/2021 | Set up users and cases in Advanced eDiscovery | removed |
+| 1/5/2021 | [Tagging and Assessment in Advanced eDiscovery](/microsoft-365/compliance/tagging-and-assessment-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/5/2021 | [Tagging and Relevance training in Advanced eDiscovery](/microsoft-365/compliance/tagging-and-relevance-training-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/5/2021 | [Test Relevance analysis in Advanced eDiscovery](/microsoft-365/compliance/test-relevance-analysis-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/5/2021 | [Track Relevance analysis in Advanced eDiscovery](/microsoft-365/compliance/track-relevance-analysis-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/5/2021 | Understand document similarity in Advanced eDiscovery | removed |
+| 1/5/2021 | Use Advanced eDiscovery utilities | removed |
+| 1/5/2021 | Use Express Analysis in Advanced eDiscovery | removed |
+| 1/5/2021 | Use the Relevance module in Advanced eDiscovery | removed |
+| 1/5/2021 | View Analyze results in Advanced eDiscovery | removed |
+| 1/5/2021 | View batch history and export past results in Advanced eDiscovery | removed |
+| 1/5/2021 | View Process module results in Advanced eDiscovery | removed |
+| 1/5/2021 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
+| 1/5/2021 | [Turn on Microsoft 365 Defender in the Microsoft 365 security center](/microsoft-365/security/mtp/mtp-enable?view=o365-21vianet) | modified |
+| 1/5/2021 | [Run your Microsoft 365 Defender attack simulations](/microsoft-365/security/mtp/mtp-pilot-simulate?view=o365-21vianet) | modified |
+| 1/5/2021 | [Troubleshoot Microsoft 365 Defender service issues](/microsoft-365/security/mtp/troubleshoot?view=o365-21vianet) | modified |
+| 1/5/2021 | [Configure anti-phishing policies in EOP](/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-21vianet) | modified |
+| 1/5/2021 | [Email authentication in Microsoft 365](/microsoft-365/security/office-365-security/email-validation-and-authentication?view=o365-21vianet) | modified |
+| 1/5/2021 | [Order and precedence of email protection](/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined?view=o365-21vianet) | modified |
+| 1/5/2021 | [Configure spoof intelligence](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence?view=o365-21vianet) | modified |
+| 1/5/2021 | [Monitor for leaks of personal data](/microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data?view=o365-21vianet) | modified |
+| 1/5/2021 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
+| 1/5/2021 | [S/MIME for encryption in Exchange Online - Office 365](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption?view=o365-21vianet) | modified |
+| 1/5/2021 | [Set up your standalone EOP service](/microsoft-365/security/office-365-security/set-up-your-eop-service?view=o365-21vianet) | modified |
+| 1/5/2021 | [Switch to EOP from another protection service](/microsoft-365/security/office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco?view=o365-21vianet) | modified |
+| 1/5/2021 | [Troubleshooting mail sent to Microsoft 365](/microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365?view=o365-21vianet) | modified |
+| 1/5/2021 | [Use DMARC to validate email](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-21vianet) | modified |
+| 1/5/2021 | [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about?view=o365-21vianet) | modified |
+| 1/5/2021 | [Options for accessing email from your mobile device](/microsoft-365/admin/email/access-email-from-a-mobile-device?view=o365-21vianet) | modified |
+| 1/5/2021 | [Share calendars with external users](/microsoft-365/admin/manage/share-calendars-with-external-users?view=o365-21vianet) | modified |
+| 1/5/2021 | [Alert policies in the security and compliance centers](/microsoft-365/compliance/alert-policies?view=o365-21vianet) | modified |
+| 1/5/2021 | [Assign eDiscovery permissions in the Security & Compliance Center](/microsoft-365/compliance/assign-ediscovery-permissions?view=o365-21vianet) | modified |
+| 1/5/2021 | [Differences between estimated and actual eDiscovery search results](/microsoft-365/compliance/differences-between-estimated-and-actual-ediscovery-search-results?view=o365-21vianet) | modified |
+| 1/5/2021 | [Microsoft SharePoint Syntex adoption: Get started](/microsoft-365/contentunderstanding/adoption-getstarted) | modified |
+| 1/5/2021 | [Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (general)](/microsoft-365/enterprise/ms-cloud-germany-transition-phases?view=o365-21vianet) | modified |
+| 1/5/2021 | [Fix issues found by the readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-fix?view=o365-21vianet) | modified |
+| 1/5/2021 | [Adjust settings after enrollment](/microsoft-365/managed-desktop/get-started/conditional-access?view=o365-21vianet) | modified |
+| 1/5/2021 | [Microsoft 365 groups naming policy](/microsoft-365/solutions/groups-naming-policy?view=o365-21vianet) | modified |
+| 1/6/2021 | [Set up a connector to archive Red tail Speak data in Microsoft 365](/microsoft-365/compliance/archive-redtailspeak-data?view=o365-21vianet) | modified |
+| 1/6/2021 | [Understand Assessment in Relevance in Advanced eDiscovery](/microsoft-365/compliance/assessment-in-relevance-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/6/2021 | [Decision based on the results in Advanced eDiscovery](/microsoft-365/compliance/decision-based-on-the-results-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/6/2021 | [Insider risk solution](/microsoft-365/compliance/insider-risk-solution-overview?view=o365-21vianet) | modified |
+| 1/6/2021 | [Tagging and Assessment in Advanced eDiscovery](/microsoft-365/compliance/tagging-and-assessment-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/6/2021 | [Tagging and Relevance training in Advanced eDiscovery](/microsoft-365/compliance/tagging-and-relevance-training-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/6/2021 | [Test Relevance analysis in Advanced eDiscovery](/microsoft-365/compliance/test-relevance-analysis-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/6/2021 | [Track Relevance analysis in Advanced eDiscovery](/microsoft-365/compliance/track-relevance-analysis-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 1/6/2021 | [Use the communications editor](/microsoft-365/compliance/using-communications-editor?view=o365-21vianet) | modified |
+| 1/6/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
+| 1/6/2021 | [Security recommendations for priority accounts in Microsoft 365](/microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts?view=o365-21vianet) | modified |
+| 1/6/2021 | [Microsoft SharePoint Syntex adoption: Get started](/microsoft-365/contentunderstanding/adoption-getstarted) | modified |
+| 1/6/2021 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-21vianet) | modified |
+| 1/6/2021 | [DeviceFileEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicefileevents-table?view=o365-21vianet) | modified |
+| 1/6/2021 | [Configure secure access to Microsoft 365 services](/microsoft-365/solutions/configure-secure-access?view=o365-21vianet) | modified |
+| 1/6/2021 | [Microsoft 365 Foundation Solutions Overview](/microsoft-365/solutions/foundation-solutions-overview?view=o365-21vianet) | modified |
+| 1/6/2021 | [Microsoft 365 enterprise resource planning - Security architecture](/microsoft-365/solutions/identity-design-principles?view=o365-21vianet) | modified |
+| 1/6/2021 | [Microsoft 365 industry-specific guidance overview](/microsoft-365/solutions/industry-specific-guidance-overview?view=o365-21vianet) | modified |
+| 1/6/2021 | [Networking up (to the cloud)—One architect’s viewpoint](/microsoft-365/solutions/networking-design-principles?view=o365-21vianet) | modified |
+| 1/6/2021 | [Microsoft 365 Enterprise resource planning - Cybersecurity architecture](/microsoft-365/solutions/security-design-principles?view=o365-21vianet) | modified |
+| 1/6/2021 | [Microsoft 365 workload solutions and scenarios](/microsoft-365/solutions/workload-solutions-scenarios-overview?view=o365-21vianet) | modified |
+| 1/6/2021 | [Service Encryption](/microsoft-365/compliance/office-365-service-encryption?view=o365-21vianet) | modified |
+| 1/6/2021 | [Configure permissions filtering for Content Search](/microsoft-365/compliance/permissions-filtering-for-content-search?view=o365-21vianet) | modified |
+| 1/6/2021 | [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-21vianet) | modified |
+| 1/6/2021 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
+| 1/6/2021 | [TLS 1.0 and 1.1 deprecation for Office 365](/microsoft-365/compliance/tls-1.0-and-1.1-deprecation-for-office-365?view=o365-21vianet) | modified |
+| 1/6/2021 | [Adjust settings after enrollment](/microsoft-365/managed-desktop/get-started/conditional-access?view=o365-21vianet) | modified |
+| 1/7/2021 | [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-21vianet) | modified |
+| 1/7/2021 | [Additional device information for the migration from Microsoft Cloud Deutschland](/microsoft-365/enterprise/ms-cloud-germany-transition-add-devices?view=o365-21vianet) | modified |
+| 1/7/2021 | [EmailEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-emailevents-table?view=o365-21vianet) | modified |
+| 1/7/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
+| 1/7/2021 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
+| 1/7/2021 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
+| 1/7/2021 | [Collaborate with guests in a team](/microsoft-365/solutions/collaborate-as-team?view=o365-21vianet) | modified |
+| 1/7/2021 | [Configure permissions filtering for Content Search](/microsoft-365/compliance/permissions-filtering-for-content-search?view=o365-21vianet) | modified |
+| 1/7/2021 | [Address space calculator for Azure gateway subnets](/microsoft-365/enterprise/address-space-calculator-for-azure-gateway-subnets?view=o365-21vianet) | modified |
+| 1/7/2021 | [How to configure Exchange Server on-premises to use Hybrid Modern Authentication](/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication?view=o365-21vianet) | modified |
+| 1/7/2021 | [Data move general FAQ](/microsoft-365/enterprise/data-move-faq?view=o365-21vianet) | modified |
+| 1/7/2021 | [Managing Office 365 endpoints](/microsoft-365/enterprise/managing-office-365-endpoints?view=o365-21vianet) | modified |
+| 1/7/2021 | [Windows and Office deployment lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-21vianet) | modified |
+| 1/7/2021 | [How to opt-in for migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in?view=o365-21vianet) | modified |
+| 1/7/2021 | [Prepare a non-routable domain for directory synchronization](/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?view=o365-21vianet) | modified |
+| 1/7/2021 | [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-21vianet) | modified |
+| 1/7/2021 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-21vianet) | modified |
+| 1/7/2021 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
+| 1/7/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
+| 1/7/2021 | [Buy new licenses](/microsoft-365/business-video/buy-licenses?view=o365-worldwide) | modified |
+| 1/8/2021 | [Manage messages in Message center](/microsoft-365/admin/manage/manage-messages?view=o365-21vianet) | modified |
+| 1/8/2021 | [Manage multiple tenants](/microsoft-365/admin/multi-tenant/manage?view=o365-21vianet) | modified |
+| 1/8/2021 | [What's new in the Microsoft 365 admin center?](/microsoft-365/admin/whats-new-in-preview?view=o365-21vianet) | modified |
+| 1/8/2021 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
+| 1/8/2021 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
+| 1/8/2021 | [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-21vianet) | modified |
+| 1/8/2021 | [Managing Office 365 endpoints](/microsoft-365/enterprise/managing-office-365-endpoints?view=o365-21vianet) | modified |
+| 1/8/2021 | [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints?view=o365-21vianet) | modified |
+| 1/8/2021 | [Office 365 endpoints for Germany](/microsoft-365/enterprise/microsoft-365-germany-endpoints?view=o365-21vianet) | modified |
+| 1/8/2021 | [Microsoft 365 Networking Partner Program](/microsoft-365/enterprise/microsoft-365-networking-partner-program?view=o365-21vianet) | modified |
+| 1/8/2021 | [Office 365 US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-21vianet) | modified |
+| 1/8/2021 | [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-21vianet) | modified |
+| 1/8/2021 | [Networking roadmap for Microsoft 365](/microsoft-365/enterprise/networking-roadmap-microsoft-365?view=o365-21vianet) | modified |
+| 1/8/2021 | [URLs and IP address ranges for Office 365 operated by 21Vianet](/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-21vianet) | modified |
+| 1/8/2021 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
+| 1/8/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-21vianet) | modified |
+| 1/8/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
+| 1/8/2021 | [Campaign Views in Microsoft Defender for Office 365 Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
+| 1/8/2021 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-21vianet) | modified |
+| 1/8/2021 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-default?view=o365-21vianet) | modified |
+| 1/8/2021 | [Security recommendations for priority accounts in Microsoft 365](/microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts?view=o365-21vianet) | modified |
+| 1/8/2021 | [Test and deploy Microsoft 365 Apps](/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-21vianet) | modified |
+| 1/8/2021 | [Set up a connector to archive Bloomberg Message data](/microsoft-365/compliance/archive-bloomberg-message-data?view=o365-21vianet) | modified |
+| 1/8/2021 | [Set up a connector to archive Facebook data](/microsoft-365/compliance/archive-facebook-data-with-sample-connector?view=o365-21vianet) | modified |
+| 1/8/2021 | [Set up a connector to archive ICE Chat data](/microsoft-365/compliance/archive-icechat-data?view=o365-21vianet) | modified |
+| 1/8/2021 | [Set up a connector to archive Instant Bloomberg data](/microsoft-365/compliance/archive-instant-bloomberg-data?view=o365-21vianet) | modified |
+| 1/8/2021 | [Set up a connector to archive LinkedIn data](/microsoft-365/compliance/archive-linkedin-data?view=o365-21vianet) | modified |
+| 1/8/2021 | [Set up a connector to archive Twitter data](/microsoft-365/compliance/archive-twitter-data-with-sample-connector?view=o365-21vianet) | modified |
+| 1/8/2021 | [Data loss prevention and Microsoft Teams](/microsoft-365/compliance/dlp-microsoft-teams?view=o365-21vianet) | modified |
+| 1/8/2021 | [Enable unlimited archiving - Admin Help](/microsoft-365/compliance/enable-unlimited-archiving?view=o365-21vianet) | modified |
+| 1/8/2021 | [Records Management in Microsoft 365](/microsoft-365/compliance/records-management?view=o365-21vianet) | modified |
+
+
 ## Week of December 21, 2020
 
 
@@ -169,386 +404,3 @@
 | 12/18/2020 | [Supported Microsoft 365 Defender APIs](/microsoft-365/security/mtp/api-supported?view=o365-21vianet) | modified |
 | 12/18/2020 | [Microsoft 365 Defender APIs license and terms of use](/microsoft-365/security/mtp/api-terms?view=o365-21vianet) | modified |
 | 12/18/2020 | [Update incidents API](/microsoft-365/security/mtp/api-update-incidents?view=o365-21vianet) | modified |
-
-
-## Week of November 30, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/30/2020 | [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts?view=o365-21vianet) | modified |
-| 11/30/2020 | [Create retention labels and apply them in apps to retain or delete content](/microsoft-365/compliance/create-apply-retention-labels?view=o365-21vianet) | modified |
-| 11/30/2020 | [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention?view=o365-21vianet) | modified |
-| 11/30/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
-| 11/30/2020 | [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-21vianet) | modified |
-| 11/30/2020 | [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-21vianet) | modified |
-| 11/30/2020 | [Manage Industry news](/microsoft-365/admin/manage/manage-industry-news?view=o365-21vianet) | modified |
-| 11/30/2020 | [Microsoft Productivity Score - Privacy](/microsoft-365/admin/productivity/privacy?view=o365-worldwide) | modified |
-| 11/30/2020 | [Parity between Azure Information Protection for Office 365 operated by 21Vianet and commercial offerings](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet) | modified |
-| 11/30/2020 | GDPR discovery, protection, and reporting in the Microsoft 365 dev/test environment | removed |
-| 11/30/2020 | Microsoft 365 NIST 800-53 action plan, priorities for the first 30 days, 90 days, and beyond | removed |
-| 11/30/2020 | Apply labels to personal data | removed |
-| 11/30/2020 | Apply protection to personal data | removed |
-| 11/30/2020 | Architect a classification schema for personal data | removed |
-| 11/30/2020 | California Consumer Privacy Act (CCPA) FAQ | removed |
-| 11/30/2020 | [Microsoft Compliance Manager templates list](/microsoft-365/compliance/compliance-manager-templates-list?view=o365-21vianet) | modified |
-| 11/30/2020 | Customize or create a new sensitive information type | removed |
-| 11/30/2020 | Microsoft 365 GDPR action plan, priorities for your first 30 days, 90 days, and beyond | removed |
-| 11/30/2020 | Accountability readiness checklist for the GDPR | removed |
-| 11/30/2020 | Azure and Dynamics 365 accountability readiness checklist for the GDPR | removed |
-| 11/30/2020 | Microsoft Support and Professional Services accountability readiness checklist for the GDPR | removed |
-| 11/30/2020 | Accountability readiness checklists for the GDPR | removed |
-| 11/30/2020 | Microsoft Support and Professional Services and Breach Notification Under the GDPR | removed |
-| 11/30/2020 | Breach Notification Under the GDPR | removed |
-| 11/30/2020 | Azure and Dynamics 365 breach notification under the GDPR | removed |
-| 11/30/2020 | Breach Notification | removed |
-| 11/30/2020 | Data processor service for Windows Enterprise notification under the GDPR | removed |
-| 11/30/2020 | Data protection impact assessments | removed |
-| 11/30/2020 | Microsoft's data protection officer | removed |
-| 11/30/2020 | Data Subject Requests for the GDPR and CCPA | removed |
-| 11/30/2020 | DPIA Azure for the GDPR | removed |
-| 11/30/2020 | DPIA Dynamics for the GDPR | removed |
-| 11/30/2020 | Guidance for Data Controllers using Office 365 | removed |
-| 11/30/2020 | Guidance for Data Controllers Using Microsoft Professional Services | removed |
-| 11/30/2020 | Data Protection Impact Assessment (DPIA) data processor service for Windows Enterprise for the GDPR | removed |
-| 11/30/2020 | Azure Data Subject Requests for the GDPR and CCPA | removed |
-| 11/30/2020 | Dynamics 365 Data Subject Requests for the GDPR and CCPA | removed |
-| 11/30/2020 | Intune Data Subject Requests for the GDPR and CCPA | removed |
-| 11/30/2020 | Office 365 Data Subject Requests Under the GDPR and CCPA | removed |
-| 11/30/2020 | Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA | removed |
-| 11/30/2020 | Visual Studio Family Data Subject Requests for the GDPR and CCPA | removed |
-| 11/30/2020 | Azure DevOps Data Subject Requests for GDPR and CCPA | removed |
-| 11/30/2020 | Data processor service for Windows Enterprise Data Subject Requests for the GDPR and CCPA | removed |
-| 11/30/2020 | GDPR | removed |
-| 11/30/2020 | GDPR for Exchange Server | removed |
-| 11/30/2020 | GDPR for Office Online Server and Office Web Apps Server | removed |
-| 11/30/2020 | GDPR for Office Servers | removed |
-| 11/30/2020 | GDPR for on-premises file shares | removed |
-| 11/30/2020 | GDPR for Project Server | removed |
-| 11/30/2020 | GDPR for SharePoint Server | removed |
-| 11/30/2020 | GDPR for Skype for Business Server | removed |
-| 11/30/2020 | Information protection | removed |
-| 11/30/2020 | Additional steps to export system-generated log data | removed |
-| 11/30/2020 | General Data Protection Regulation | removed |
-| 11/30/2020 | [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection?view=o365-21vianet) | modified |
-| 11/30/2020 | Microsoft 365 ISO 27001 action plan, priorities for your first 30 days, 90 days, and beyond | removed |
-| 11/30/2020 | Manage GDPR data subject requests with DSR case tool in Security & Compliance Center | removed |
-| 11/30/2020 | Title 23 NYCRR Part 500 | removed |
-| 11/30/2020 | Dutch Authority for the Financial Markets and the Central Bank of the Netherlands | removed |
-| 11/30/2020 | Financial Authority (AMF) and Prudential Authority (ACPR) France | removed |
-| 11/30/2020 | Australian Prudential Regulation Authority (APRA) | removed |
-| 11/30/2020 | Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012) | removed |
-| 11/30/2020 | Cloud Computing Compliance Controls Catalog (C5) | removed |
-| 11/30/2020 | Australian Government Certified Cloud Services List (CCSL) | removed |
-| 11/30/2020 | Content Delivery & Security Association (CDSA) Content Protection & Security (CPS) Standard | removed |
-| 11/30/2020 | Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States | removed |
-| 11/30/2020 | Center for Internet Security (CIS) Benchmarks | removed |
-| 11/30/2020 | Criminal Justice Information Services (CJIS) Security Policy | removed |
-| 11/30/2020 | Committee on National Security Systems Instruction No. 1253 (CNSSI 1253) | removed |
-| 11/30/2020 | Cloud Security Mark Gold (CS Gold Mark) | removed |
-| 11/30/2020 | Cloud Security Alliance (CSA) STAR attestation | removed |
-| 11/30/2020 | Cloud Security Alliance (CSA) STAR certification | removed |
-| 11/30/2020 | Canadian Privacy Laws | removed |
-| 11/30/2020 | United Kingdom Cyber Essentials PLUS | removed |
-| 11/30/2020 | Defense Federal Acquisition Regulation Supplement (DFARS) | removed |
-| 11/30/2020 | Digital Production Partnership (DPP) United Kingdom | removed |
-| 11/30/2020 | US Department of Defense (DoD) Provisional Authorization | removed |
-| 11/30/2020 | European Banking Authority (EBA) | removed |
-| 11/30/2020 | European Standards EN 301 549 | removed |
-| 11/30/2020 | Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures | removed |
-| 11/30/2020 | European Union Model Clauses | removed |
-| 11/30/2020 | EU-US and Swiss-US Privacy Shield Frameworks | removed |
-| 11/30/2020 | Federation Against Copyright Theft (FACT) | removed |
-| 11/30/2020 | United Kingdom Financial Conduct Authority (FCA) | removed |
-| 11/30/2020 | Food and Drug Administration CFR Title 21 Part 11 | removed |
-| 11/30/2020 | Family Educational Rights and Privacy Act (FERPA) | removed |
-| 11/30/2020 | Federal Financial Institutions Examination Council (FFIEC) | removed |
-| 11/30/2020 | Financial Market Supervisory Authority (FINMA) Switzerland | removed |
-| 11/30/2020 | Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States | removed |
-| 11/30/2020 | Federal Information Processing Standard (FIPS) Publication 140-2 | removed |
-| 11/30/2020 | Center for Financial Industry Information Systems (FISC) | removed |
-| 11/30/2020 | Financial Supervisory Authority (FSA) Denmark | removed |
-| 11/30/2020 | Federal Risk and Authorization Management Program (FedRAMP) | removed |
-| 11/30/2020 | United Kingdom Government-Cloud (G-Cloud) | removed |
-| 11/30/2020 | Gramm-Leach-Bliley Act (GLBA) | removed |
-| 11/30/2020 | Health Data Hosting (HDS) France | removed |
-| 11/30/2020 | Health Insurance Portability and Accountability (HIPAA) & HITECH Acts | removed |
-| 11/30/2020 | Health Information Trust Alliance (HITRUST) Common Security Framework (CSF) | removed |
-| 11/30/2020 | US Internal Revenue Service Publication 1075 | removed |
-| 11/30/2020 | Korea-Information Security Management System (K-ISMS) | removed |
-| 11/30/2020 | ISO/IEC 20000-1:2011 Information Technology Service Management | removed |
-| 11/30/2020 | ISO 22301:2012 Business Continuity Management Standard | removed |
-| 11/30/2020 | ISO/IEC 27001:2013 Information Security Management Standards | removed |
-| 11/30/2020 | ISO/IEC 27017:2015 Code of Practice for Information Security Controls | removed |
-| 11/30/2020 | ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud | removed |
-| 11/30/2020 | ISO 9001:2015 Quality Management Systems Standards | removed |
-| 11/30/2020 | IT-Grundschutz Compliance workbook | removed |
-| 11/30/2020 | International Traffic in Arms Regulations (ITAR) | removed |
-| 11/30/2020 | Financial Supervision Authority (KNF) Poland | removed |
-| 11/30/2020 | Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999 | removed |
-| 11/30/2020 | Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework | removed |
-| 11/30/2020 | Monetary Authority of Singapore (MAS) and Association of Banks in Singapore (ABS) | removed |
-| 11/30/2020 | Motion Picture Association of America (MPAA) | removed |
-| 11/30/2020 | Multi-Tier Cloud Security (MTCS) Standard for Singapore | removed |
-| 11/30/2020 | Ministry of Electronics and Information Technology (MeitY) | removed |
-| 11/30/2020 | My Number Act (Japan) | removed |
-| 11/30/2020 | National Bank of Belgium (NBB) and the Financial Services and Markets Authority (FSMA) | removed |
-| 11/30/2020 | NEN 7510 | removed |
-| 11/30/2020 | Office of the Superintendent of Financial Institutions (OSFI) Canada | removed |
-| 11/30/2020 | Payment Card Industry (PCI) Data Security Standard (DSS) | removed |
-| 11/30/2020 | Reserve Bank of India (RBI) and Insurance Regulatory and Development Authority of India (IRDAI) | removed |
-| 11/30/2020 | Securities and Exchange Commission (SEC) Rule 17a-4(f) United States | removed |
-| 11/30/2020 | Service Organization Controls (SOC) | removed |
-| 11/30/2020 | Sarbanes-Oxley Act of 2002 (SOX) | removed |
-| 11/30/2020 | U.S. Section 508 | removed |
-| 11/30/2020 | Trusted Information Security Assessment Exchange (TISAX) Germany | removed |
-| 11/30/2020 | Web Content Accessibility Guidelines | removed |
-| 11/30/2020 | California Consumer Privacy Act (CCPA) | removed |
-| 11/30/2020 | Compliance offering- Cloud Security Alliance (CSA) STAR self-assessment | removed |
-| 11/30/2020 | US DoE 10 CFR Part 810 | removed |
-| 11/30/2020 | US Export Administration Regulations (EAR) | removed |
-| 11/30/2020 | ENISA Information Assurance Framework | removed |
-| 11/30/2020 | Good Clinical, Laboratory, and Manufacturing Practices (GxP) | removed |
-| 11/30/2020 | Microsoft compliance offerings # < 60 chars | removed |
-| 11/30/2020 | ISO/IEC 27701 Privacy Information Management System (PIMS) | removed |
-| 11/30/2020 | North American Electric Reliability Corporation (NERC) | removed |
-| 11/30/2020 | National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF) | removed |
-| 11/30/2020 | NIST SP 800-171 | removed |
-| 11/30/2020 | New Zealand Government Cloud Computing Security and Privacy Considerations | removed |
-| 11/30/2020 | Police-Assured Secure Facilities (PASF) United Kingdom | removed |
-| 11/30/2020 | Personal Data Protection Act (PDPA) Argentina | removed |
-| 11/30/2020 | Russian Personal Data Localization Requirements | removed |
-| 11/30/2020 | Securities and Exchange Commission - Regulation Systems Compliance and Integrity (SCI) | removed |
-| 11/30/2020 | Shared Assessments Program | removed |
-| 11/30/2020 | TruSight | removed |
-| 11/30/2020 | Encryption for data in transit | removed |
-| 11/30/2020 | Encryption for Skype, OneDrive, SharePoint, and Exchange | removed |
-| 11/30/2020 | Overview of Office 365 Information Protection for GDPR | removed |
-| 11/30/2020 | Information Protection for GDPR | removed |
-| 11/30/2020 | Search for and find personal data | removed |
-| 11/30/2020 | [Form processing overview](/microsoft-365/contentunderstanding/form-processing-overview) | modified |
-| 11/30/2020 | Customer and Cloud Partner Enterprise Business Continuity Responsibilities | removed |
-| 11/30/2020 | Considerations for your Enterprise Business Continuity Management Plan | removed |
-| 11/30/2020 | Enterprise Business Continuity Management Plan Rehearsal and User Training | removed |
-| 11/30/2020 | Enterprise Business Continuity Management Legal Disclaimer | removed |
-| 11/30/2020 | Microsoft 365 Service Resilience | removed |
-| 11/30/2020 | Microsoft 365 for enterprise Business Continuity Management Mitigations | removed |
-| 11/30/2020 | Understanding Enterprise Business Continuity Management with cloud services | removed |
-| 11/30/2020 | [Exchange 2007 end of support roadmap](/microsoft-365/enterprise/exchange-2007-end-of-support?view=o365-21vianet) | modified |
-| 11/30/2020 | [Exchange 2010 end of support roadmap](/microsoft-365/enterprise/exchange-2010-end-of-support?view=o365-21vianet) | modified |
-| 11/30/2020 | Administrative access controls in Microsoft 365 | removed |
-| 11/30/2020 | Auditing and reporting in Microsoft cloud services | removed |
-| 11/30/2020 | Microsoft 365 core principles of defense against denial-of-service attacks | removed |
-| 11/30/2020 | Microsoft 365 Data Destruction | removed |
-| 11/30/2020 | Microsoft 365 Data Immutability | removed |
-| 11/30/2020 | Data Resiliency in Microsoft 365 | removed |
-| 11/30/2020 | Data Retention, Deletion, and Destruction in Microsoft 365 | removed |
-| 11/30/2020 | Microsoft 365 Dealing with Data Corruption | removed |
-| 11/30/2020 | Defending Microsoft 365 cloud services against denial-of-service attacks | removed |
-| 11/30/2020 | Microsoft 365 eDiscovery and search features overview | removed |
-| 11/30/2020 | Exchange Online Data Resiliency in Microsoft 365 | removed |
-| 11/30/2020 | Microsoft 365 Exchange Online Data Deletion | removed |
-| 11/30/2020 | Microsoft 365 internal logging for Microsoft 365 engineering | removed |
-| 11/30/2020 | Microsoft 365 mailbox migrations | removed |
-| 11/30/2020 | Malware and Ransomware Protection in Microsoft 365 | removed |
-| 11/30/2020 | Office 365 Management Activity API | removed |
-| 11/30/2020 | Microsoft 365 denial-of-service defense strategy | removed |
-| 11/30/2020 | Microsoft 365 Monitoring and Auditing Access Controls | removed |
-| 11/30/2020 | Microsoft 365 Monitoring and Self-Healing | removed |
-| 11/30/2020 | Microsoft 365 Monitoring and Testing Tenant Boundaries | removed |
-| 11/30/2020 | [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles?view=o365-21vianet) | modified |
-| 11/30/2020 | Microsoft 365 personnel controls | removed |
-| 11/30/2020 | Microsoft 365 reporting features | removed |
-| 11/30/2020 | Microsoft 365 Resource Limits | removed |
-| 11/30/2020 | Microsoft 365 SharePoint Online Data Deletion | removed |
-| 11/30/2020 | Office 365 Skype for Business Data Deletion | removed |
-| 11/30/2020 | Microsoft 365 technology controls | removed |
-| 11/30/2020 | Microsoft 365 Yammer enterprise access controls | removed |
-| 11/30/2020 | [Windows and Office deployment lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-21vianet) | modified |
-| 11/30/2020 | [Optimize web part performance in SharePoint Online modern site pages](/microsoft-365/enterprise/modern-web-part-optimization?view=o365-21vianet) | modified |
-| 11/30/2020 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-21vianet) | modified |
-| 11/30/2020 | [PerformancePoint Server 2007 end of support roadmap](/microsoft-365/enterprise/pps-2007-end-of-support?view=o365-21vianet) | modified |
-| 11/30/2020 | [Project Server 2007 end of support roadmap](/microsoft-365/enterprise/project-server-2007-end-of-support?view=o365-21vianet) | modified |
-| 11/30/2020 | [Project Server 2010 end-of-support roadmap](/microsoft-365/enterprise/project-server-2010-end-of-support?view=o365-21vianet) | modified |
-| 11/30/2020 | [SharePoint Server 2007 end of support roadmap](/microsoft-365/enterprise/sharepoint-2007-end-of-support?view=o365-21vianet) | modified |
-| 11/30/2020 | [Resources to help you upgrade from Office 2007 servers and clients](/microsoft-365/enterprise/upgrade-from-office-2007-servers-and-products?view=o365-21vianet) | modified |
-| 11/30/2020 | [Resources to help you upgrade from Office 2010 servers and clients](/microsoft-365/enterprise/upgrade-from-office-2010-servers-and-products?view=o365-21vianet) | modified |
-| 11/30/2020 | [Upgrading from SharePoint 2010](/microsoft-365/enterprise/upgrade-from-sharepoint-2010?view=o365-21vianet) | modified |
-| 11/30/2020 | [Readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-tool?view=o365-21vianet) | modified |
-| 11/30/2020 | [Access the Admin portal](/microsoft-365/managed-desktop/get-started/access-admin-portal?view=o365-21vianet) | modified |
-| 11/30/2020 | [Compliance](/microsoft-365/managed-desktop/intro/compliance?view=o365-21vianet) | modified |
-| 11/30/2020 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-21vianet) | modified |
-| 11/30/2020 | [Microsoft 365 compliance documentation # < 60 chars](/microsoft-365/compliance/index?view=o365-21vianet) | modified |
-| 11/30/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
-| 12/1/2020 | [Customize a SharePoint team site for file storage and sharing](/microsoft-365/admin/setup/customize-team-site?view=o365-21vianet) | modified |
-| 12/1/2020 | [Set up file storage and sharing](/microsoft-365/admin/setup/set-up-file-storage-and-sharing?view=o365-21vianet) | modified |
-| 12/1/2020 | [Use a script to add users to a hold in a Core eDiscovery case](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery?view=o365-21vianet) | modified |
-| 12/1/2020 | [How to opt-in for migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in?view=o365-21vianet) | modified |
-| 12/1/2020 | [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-transition?view=o365-21vianet) | modified |
-| 12/1/2020 | [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure?view=o365-21vianet) | modified |
-| 12/1/2020 | [Communication compliance feature reference](/microsoft-365/compliance/communication-compliance-feature-reference?view=o365-21vianet) | modified |
-| 12/1/2020 | [Data locations for the European Union](/microsoft-365/enterprise/eu-data-storage-locations?view=o365-21vianet) | modified |
-| 12/1/2020 | [Fix issues found by the readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-fix?view=o365-21vianet) | modified |
-| 12/1/2020 | [Readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-tool?view=o365-21vianet) | modified |
-| 12/1/2020 | [Adjust settings after enrollment](/microsoft-365/managed-desktop/get-started/conditional-access?view=o365-21vianet) | modified |
-| 12/1/2020 | [Microsoft Managed Desktop operations and monitoring](/microsoft-365/managed-desktop/service-description/operations-and-monitoring?view=o365-21vianet) | modified |
-| 12/1/2020 | [About the Exchange Online admin role](/microsoft-365/admin/add-users/about-exchange-online-admin-role?view=o365-21vianet) | modified |
-| 12/1/2020 | [Change a user name and email address](/microsoft-365/admin/add-users/change-a-user-name-and-email-address?view=o365-21vianet) | modified |
-| 12/1/2020 | [Microsoft Productivity Score - Communication](/microsoft-365/admin/productivity/communication?view=o365-worldwide) | modified |
-| 12/1/2020 | [Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-21vianet) | modified |
-| 12/1/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
-| 12/1/2020 | [Windows and Office deployment lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-21vianet) | modified |
-| 12/1/2020 | [Prepare a non-routable domain for directory synchronization](/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?view=o365-21vianet) | modified |
-| 12/1/2020 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
-| 12/1/2020 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
-| 12/1/2020 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-default?view=o365-21vianet) | modified |
-| 12/1/2020 | [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-21vianet) | modified |
-| 12/1/2020 | [Let users reset their own passwords](/microsoft-365/admin/add-users/let-users-reset-passwords?view=o365-21vianet) | modified |
-| 12/1/2020 | [Restore a user](/microsoft-365/admin/add-users/restore-user?view=o365-21vianet) | modified |
-| 12/1/2020 | [Configure email forwarding](/microsoft-365/admin/email/configure-email-forwarding?view=o365-21vianet) | modified |
-| 12/1/2020 | [Microsoft Productivity Score - Mobility](/microsoft-365/admin/productivity/mobility?view=o365-worldwide) | modified |
-| 12/1/2020 | [Configure Focused Inbox for everyone in your organization](/microsoft-365/admin/setup/configure-focused-inbox?view=o365-21vianet) | modified |
-| 12/1/2020 | [Set up Microsoft 365 for business](/microsoft-365/admin/setup/setup?view=o365-21vianet) | modified |
-| 12/1/2020 | [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
-| 12/1/2020 | [Administering Exchange Online mailboxes in a multi-geo environment](/microsoft-365/enterprise/administering-exchange-online-multi-geo?view=o365-21vianet) | modified |
-| 12/1/2020 | [Configure spam filter policies](/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
-| 12/1/2020 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
-| 12/2/2020 | [Set up multi-factor authentication for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
-| 12/2/2020 | [Migrate to Microsoft 365 Business from Office 365 E3](/microsoft-365/business/migrate-from-e3?view=o365-21vianet) | modified |
-| 12/2/2020 | [Migrate from Microsoft 365 Business to Microsoft 365 E3](/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise?view=o365-21vianet) | modified |
-| 12/2/2020 | [Set up conditional access policies](/microsoft-365/campaigns/m365-campaigns-conditional-access?view=o365-21vianet) | modified |
-| 12/2/2020 | [Get started with insider risk management](/microsoft-365/compliance/insider-risk-management-configure?view=o365-21vianet) | modified |
-| 12/2/2020 | [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-21vianet) | modified |
-| 12/2/2020 | [Information protection for the Contoso Corporation](/microsoft-365/enterprise/contoso-info-protect?view=o365-21vianet) | modified |
-| 12/2/2020 | [Contoso IT infrastructure and business needs](/microsoft-365/enterprise/contoso-infra-needs?view=o365-21vianet) | modified |
-| 12/2/2020 | [Summary of Microsoft 365 for enterprise security for the Contoso Corporation](/microsoft-365/enterprise/contoso-security-summary?view=o365-21vianet) | modified |
-| 12/2/2020 | [Secure user sign-ins to your Microsoft 365 tenant](/microsoft-365/enterprise/microsoft-365-secure-sign-in?view=o365-21vianet) | modified |
-| 12/2/2020 | [Additional general information for the migration from Microsoft Cloud Deutschland](/microsoft-365/enterprise/ms-cloud-germany-transition-add-general?view=o365-21vianet) | modified |
-| 12/2/2020 | [Microsoft 365 for enterprise test environment multi-factor authentication](/microsoft-365/enterprise/multi-factor-authentication-microsoft-365-test-environment?view=o365-21vianet) | modified |
-| 12/2/2020 | [Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-prerequisites?view=o365-21vianet) | modified |
-| 12/2/2020 | [Identity and device access configurations - Microsoft 365 for enterprise](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations?view=o365-21vianet) | modified |
-| 12/2/2020 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-default?view=o365-21vianet) | modified |
-| 12/2/2020 | [Top 12 tasks for security teams to support working from home](/microsoft-365/security/top-security-tasks-for-remote-work?view=o365-21vianet) | modified |
-| 12/2/2020 | [Create a secure guest sharing environment](/microsoft-365/solutions/create-secure-guest-sharing-environment?view=o365-21vianet) | modified |
-| 12/2/2020 | [Step 1. Increase sign-in security for remote workers with MFA](/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in?view=o365-21vianet) | modified |
-| 12/2/2020 | [Key Compliance and Security Considerations for the Energy Industry](/microsoft-365/solutions/energy-secure-collaboration?view=o365-21vianet) | modified |
-| 12/2/2020 | [Key compliance and security considerations for US banking and capital markets](/microsoft-365/solutions/financial-services-secure-collaboration?view=o365-21vianet) | modified |
-| 12/2/2020 | [Governing access in Microsoft 365 groups, Teams, and SharePoint](/microsoft-365/solutions/groups-teams-access-governance?view=o365-21vianet) | modified |
-| 12/2/2020 | [Configure email forwarding](/microsoft-365/admin/email/configure-email-forwarding?view=o365-21vianet) | modified |
-| 12/2/2020 | [Change your organization's address, technical contact, and more](/microsoft-365/admin/manage/change-address-contact-and-more?view=o365-21vianet) | modified |
-| 12/2/2020 | [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration?view=o365-21vianet) | modified |
-| 12/2/2020 | [Additional device information for the migration from Microsoft Cloud Deutschland](/microsoft-365/enterprise/ms-cloud-germany-transition-add-devices?view=o365-21vianet) | modified |
-| 12/2/2020 | [Additional experience information for the migration from Microsoft Cloud Deutschland](/microsoft-365/enterprise/ms-cloud-germany-transition-add-experience?view=o365-21vianet) | modified |
-| 12/2/2020 | [How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-21vianet) | modified |
-| 12/2/2020 | [Microsoft 365 Reports in the admin center - Mailbox usage](/microsoft-365/admin/activity-reports/mailbox-usage?view=o365-21vianet) | modified |
-| 12/2/2020 | [Choose between Basic Mobility and Security and Intune](/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune?view=o365-21vianet) | modified |
-| 12/2/2020 | [Microsoft Productivity Score - Communication](/microsoft-365/admin/productivity/communication?view=o365-worldwide) | modified |
-| 12/2/2020 | [Microsoft Productivity Score - Content collaboration](/microsoft-365/admin/productivity/content-collaboration?view=o365-worldwide) | modified |
-| 12/2/2020 | [Microsoft Productivity Score - Meetings](/microsoft-365/admin/productivity/meetings?view=o365-worldwide) | modified |
-| 12/2/2020 | [Microsoft Productivity Score - Mobility](/microsoft-365/admin/productivity/mobility?view=o365-worldwide) | modified |
-| 12/2/2020 | [Microsoft Productivity Score - Privacy](/microsoft-365/admin/productivity/privacy?view=o365-worldwide) | modified |
-| 12/2/2020 | [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) | modified |
-| 12/2/2020 | [Microsoft Productivity Score - Teamwork](/microsoft-365/admin/productivity/teamwork?view=o365-worldwide) | modified |
-| 12/2/2020 | [Microsoft Bookings Frequently Asked Questions](/microsoft-365/bookings/bookings-faq?view=o365-21vianet) | modified |
-| 12/2/2020 | [Restrict access to content using sensitivity labels to apply encryption](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-21vianet) | modified |
-| 12/2/2020 | [Using  Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using?view=o365-21vianet) | modified |
-| 12/2/2020 | [Microsoft Managed Desktop devices](/microsoft-365/managed-desktop/service-description/device-list?view=o365-21vianet) | modified |
-| 12/2/2020 | [Create team sites - Political campaign dev environment](/microsoft-365/security/office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment?view=o365-21vianet) | modified |
-| 12/2/2020 | [Deploy an isolated SharePoint Online team site](/microsoft-365/security/office-365-security/deploy-an-isolated-sharepoint-online-team-site?view=o365-21vianet) | modified |
-| 12/2/2020 | [Application Guard for Office 365 (public preview) for admins](/microsoft-365/security/office-365-security/install-app-guard?view=o365-21vianet) | modified |
-| 12/2/2020 | [Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-21vianet) | modified |
-| 12/2/2020 | [Investigate malicious email that was delivered in Office 365, Find and investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-21vianet) | modified |
-| 12/2/2020 | [Threat investigation & response capabilities - Microsoft Defender for Office 365 Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
-| 12/2/2020 | [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats?view=o365-21vianet) | modified |
-| 12/2/2020 | [Remediate malicious email that was delivered in Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-21vianet) | modified |
-| 12/2/2020 | [Microsoft 365 security roadmap - Top priorities](/microsoft-365/security/office-365-security/security-roadmap?view=o365-21vianet) | modified |
-| 12/2/2020 | [SIEM integration with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/siem-integration-with-office-365-ti?view=o365-21vianet) | modified |
-| 12/2/2020 | [Views in Threat Explorer and real-time detections](/microsoft-365/security/office-365-security/threat-explorer-views?view=o365-21vianet) | modified |
-| 12/2/2020 | [Threat Explorer and Real-time detections](/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet) | modified |
-| 12/2/2020 | [Threat Trackers - New and Noteworthy](/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet) | modified |
-| 12/2/2020 | [Remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis?view=o365-21vianet) | modified |
-| 12/2/2020 | [View reports for Defender for Office 365](/microsoft-365/security/office-365-security/view-reports-for-atp?view=o365-21vianet) | modified |
-| 12/2/2020 | [Microsoft Productivity Score - Microsoft 365 apps health](/microsoft-365/admin/productivity/apps-health?view=o365-worldwide) | modified |
-| 12/2/2020 | [Decision based on the results in Advanced eDiscovery](/microsoft-365/compliance/decision-based-on-the-results-in-advanced-ediscovery?view=o365-21vianet) | modified |
-| 12/2/2020 | [Create a DLP policy to protect documents with FCI or other properties](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties?view=o365-21vianet) | modified |
-| 12/2/2020 | [Search and Tagging](/microsoft-365/compliance/search-and-tagging?view=o365-21vianet) | modified |
-| 12/2/2020 | [Manage your data and service # < 60 chars](/microsoft-365/admin/manage/index?view=o365-21vianet) | modified |
-| 12/3/2020 | [Microsoft 365 Reports in the admin center - Mailbox usage](/microsoft-365/admin/activity-reports/mailbox-usage?view=o365-21vianet) | modified |
-| 12/3/2020 | [About shared mailboxes](/microsoft-365/admin/email/about-shared-mailboxes?view=o365-21vianet) | modified |
-| 12/3/2020 | [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) | modified |
-| 12/3/2020 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
-| 12/3/2020 | [Create and publish sensitivity labels](/microsoft-365/compliance/create-sensitivity-labels?view=o365-21vianet) | modified |
-| 12/3/2020 | [Get started with sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-21vianet) | modified |
-| 12/3/2020 | [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection?view=o365-21vianet) | modified |
-| 12/3/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
-| 12/3/2020 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
-| 12/3/2020 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
-| 12/3/2020 | [Threat Trackers - New and Noteworthy](/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet) | modified |
-| 12/3/2020 | [Troubleshooting mail sent to Microsoft 365](/microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365?view=o365-21vianet) | modified |
-| 12/3/2020 | [Create your collaboration governance plan](/microsoft-365/solutions/collaboration-governance-first?view=o365-21vianet) | modified |
-| 12/3/2020 | [What is collaboration governance?](/microsoft-365/solutions/collaboration-governance-overview?view=o365-21vianet) | modified |
-| 12/3/2020 | [Create a communications site](/microsoft-365/campaigns/create-communications-site?view=o365-21vianet) | modified |
-| 12/3/2020 | [Microsoft 365 network connectivity test tool (preview)](/microsoft-365/enterprise/office-365-network-mac-perf-onboarding-tool?view=o365-21vianet) | modified |
-| 12/3/2020 | [Set up Microsoft 365 Business Standard](/microsoft-365/admin/setup/setup-business-standard?view=o365-21vianet) | modified |
-| 12/3/2020 | [Get started with Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-setup?view=o365-21vianet) | modified |
-| 12/3/2020 | [Configuration analyzer for security policies](/microsoft-365/security/office-365-security/configuration-analyzer-for-security-policies?view=o365-21vianet) | modified |
-| 12/3/2020 | [Configure anti-malware policies](/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-21vianet) | modified |
-| 12/3/2020 | [Configure anti-phishing policies in EOP](/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-21vianet) | modified |
-| 12/3/2020 | [Configure anti-phishing policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies?view=o365-21vianet) | modified |
-| 12/3/2020 | [Configure global settings for Safe Links settings in Defender for Office 365](/microsoft-365/security/office-365-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
-| 12/3/2020 | [Configure the default connection filter policy](/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-21vianet) | modified |
-| 12/3/2020 | [Configure outbound spam filtering](/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-21vianet) | modified |
-| 12/3/2020 | [Configure spam filter policies](/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
-| 12/3/2020 | [Configure spoof intelligence](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence?view=o365-21vianet) | modified |
-| 12/3/2020 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-21vianet) | modified |
-| 12/3/2020 | [Quarantine tags](/microsoft-365/security/office-365-security/quarantine-tags?view=o365-21vianet) | modified |
-| 12/3/2020 | [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
-| 12/3/2020 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
-| 12/3/2020 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
-| 12/3/2020 | [Manage your allowed and blocked URLs in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list?view=o365-21vianet) | modified |
-| 12/3/2020 | [View email security reports in the Security & Compliance Center](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
-| 12/3/2020 | [View mail flow reports in the Reports dashboard](/microsoft-365/security/office-365-security/view-mail-flow-reports?view=o365-21vianet) | modified |
-| 12/3/2020 | [View Defender for Office 365 reports in the Reports dashboard](/microsoft-365/security/office-365-security/view-reports-for-atp?view=o365-21vianet) | modified |
-| 12/3/2020 | [Walkthrough - Spoof intelligence insight](/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight?view=o365-21vianet) | modified |
-| 12/3/2020 | [Manage who can create Microsoft 365 Groups](/microsoft-365/solutions/manage-creation-of-groups?view=o365-21vianet) | modified |
-| 12/4/2020 | [Microsoft Managed Desktop documentation # < 60 chars](/microsoft-365/managed-desktop/index?view=o365-21vianet) | modified |
-| 12/4/2020 | [Choose between Basic Mobility and Security and Intune](/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune?view=o365-21vianet) | modified |
-| 12/4/2020 | [Configure email forwarding](/microsoft-365/admin/email/configure-email-forwarding?view=o365-21vianet) | modified |
-| 12/4/2020 | [Email encryption in Microsoft 365](/microsoft-365/compliance/email-encryption?view=o365-21vianet) | modified |
-| 12/4/2020 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
-| 12/4/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
-| 12/4/2020 | [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-21vianet) | modified |
-| 12/4/2020 | [Contoso's COVID-19 response and support for remote and onsite work](/microsoft-365/solutions/contoso-remote-onsite-work?view=o365-21vianet) | modified |
-| 12/4/2020 | [Set an individual user's password to never expire](/microsoft-365/admin/add-users/set-password-to-never-expire?view=o365-21vianet) | modified |
-| 12/4/2020 | [Customize the theme for your organization](/microsoft-365/admin/setup/customize-your-organization-theme?view=o365-21vianet) | modified |
-
-
-## Week of November 23, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/23/2020 | [Review detected threats and take action](/microsoft-365/business/review-threats-take-action?view=o365-21vianet) | modified |
-| 11/23/2020 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-21vianet) | modified |
-| 11/23/2020 | [Create retention labels and apply them in apps to retain or delete content](/microsoft-365/compliance/create-apply-retention-labels?view=o365-21vianet) | modified |
-| 11/23/2020 | [Create and configure retention policies to automatically retain or delete content](/microsoft-365/compliance/create-retention-policies?view=o365-21vianet) | modified |
-| 11/23/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
-| 11/24/2020 | [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
-| 11/24/2020 | [Set up a connector to archive CellTrust data in Microsoft 365](/microsoft-365/compliance/archive-celltrust-data?view=o365-21vianet) | modified |
-| 11/24/2020 | [Set up a connector to archive data from MS SQL Database](/microsoft-365/compliance/archive-mssqldatabaseimporter-data?view=o365-21vianet) | modified |
-| 11/24/2020 | [Set up a connector to archive Reuters Dealing data in Microsoft 365](/microsoft-365/compliance/archive-reutersdealing-data?view=o365-21vianet) | modified |
-| 11/24/2020 | [Set up a connector to archive Reuters FX data in Microsoft 365](/microsoft-365/compliance/archive-reutersfx-data?view=o365-21vianet) | modified |
-| 11/24/2020 | [Set up a connector to archive XIP source data in Microsoft 365](/microsoft-365/compliance/archive-xip-data?view=o365-21vianet) | modified |
-| 11/24/2020 | [Disposition of content](/microsoft-365/compliance/disposition?view=o365-21vianet) | modified |
-| 11/24/2020 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
-| 11/24/2020 | [What's new in Microsoft 365 compliance](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
-| 11/24/2020 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
-| 11/24/2020 | [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
-| 11/24/2020 | [Prioritize incidents in Microsoft 365 Defender](/microsoft-365/security/mtp/incident-queue?view=o365-21vianet) | modified |
-| 11/24/2020 | [What's coming to Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-coming?view=o365-21vianet) | modified |
-| 11/25/2020 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
-| 11/25/2020 | [Troubleshooting common eDiscovery issues](/microsoft-365/compliance/ediscovery-troubleshooting-common-issues?view=o365-21vianet) | modified |
-| 11/25/2020 | [Export results in Advanced eDiscovery](/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-21vianet) | modified |
-| 11/25/2020 | [Export Content Search results](/microsoft-365/compliance/export-search-results?view=o365-21vianet) | modified |
-| 11/25/2020 | Increase the download speed when exporting eDiscovery search results | removed |
-| 11/25/2020 | [Search for content](/microsoft-365/compliance/search-for-content?view=o365-21vianet) | modified |
