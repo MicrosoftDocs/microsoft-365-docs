@@ -46,7 +46,8 @@ The following table lists the indexing limits in Advanced eDiscovery.
   |Maximum number of characters extracted from a single file.  <br/> |10 million<sup>1</sup> <br/> |
   |Maximum size of a single file.   <br/> |100 MB<sup>1</sup> <br/> |
   |Maximum depth of embedded items in a document.  <br/> |25<sup>1</sup> <br/> |
-  |Maximum size of file processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/> |  
+  |Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
+  |Maximum number of indexing jobs per organization per day. <br/> |10<sup>6</sup> <br/>|  
 |||
 
 ## Search limits
@@ -106,4 +107,5 @@ The limits described in this section are related to using the search tool on the
 > <sup>3</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR …"**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.<br/>
 > <sup>4</sup> This limit is shared across all eDiscovery tools. This means that concurrent exports in Content search, Core eDiscovery, and Advanced eDiscovery are applied against this limit. <br/>
 > <sup>5</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md). <br/>
+> <sup>6</sup> Indexing limits per organization per day. As a workaround, you can select multiple custodians and then click **Update index** to avoid creating a separate index job for each custodian. <br/>
 
