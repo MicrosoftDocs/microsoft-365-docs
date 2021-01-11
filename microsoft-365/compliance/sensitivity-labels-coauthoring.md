@@ -15,14 +15,14 @@ ms.topic: article
 description: "Turn on a setting that enables coauthoring in desktop apps for documents in SharePoint Online that are labeled with encryption."
 ---
 
-# Enable co-authoring for files with sensitivity labels
+# Enable co-authoring for files encrypted with sensitivity labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 > [!NOTE]
 > This feature is in preview and subject to change. 
 >
-> Because enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change, and because you cannot disable the option after it is enabled, we recommend you try it in a test tenant rather than a production tenant.
+> Because enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change, we recommend that you try it in a test tenant rather than a production tenant.
 
 Enable the setting to support coauthoring for Office desktop apps stored in SharePoint so that when documents are labeled and encrypted by your [sensitivity labels](sensitivity-labels.md), multiple users can edit them at the same time. 
 
