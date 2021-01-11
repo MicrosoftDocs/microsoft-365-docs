@@ -28,7 +28,7 @@ description: "Learn how to buy new Microsoft 365 for business licenses."
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-As you add new users, you will need to purchase more licenses for those users.
+As you add new users, you will need to purchase more Microsoft 365 licenses for those users.
 
 ## Try it!
 

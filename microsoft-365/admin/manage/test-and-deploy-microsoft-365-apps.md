@@ -48,7 +48,7 @@ By choosing Integrated apps in the Microsoft 365 admin center, you can manage te
 
     Review the details of the test or full deployment on the **Overview** tab.
 
-## Find published apps for test and full deployment 
+## Find published apps for testing and full deployment 
 
 You can find, test, and fully deploy published apps that do not already appear in the list on the Integrated apps page. By purchasing and licensing the apps from the admin center, you can add Microsoft and Microsoft partner apps to your list from a single location.
 
@@ -82,4 +82,12 @@ In the Microsoft 365 admin center, each deployed app **Status** is **OK** with a
 
 > [!NOTE]
 > If an app was previously deployed from somewhere other than the Integrated Apps portal, the **Deployment Type** is **Custom.**
+
+## Unsupported scenarios
+
+The following scenarios are not currently supported for deployment from the Integrated Apps portal:
+
+- The app or add-in is linked to more than one software as a service (SaaS) offer.
+- The SaaS app is linked to apps and add-ins but it doesn't have an associated AADid.
+- Two SaaS apps share the same AADid and they are both linked to apps or add-ins.
   
