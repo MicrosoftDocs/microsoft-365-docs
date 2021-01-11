@@ -22,9 +22,9 @@ description: "Turn on a setting that enables coauthoring in desktop apps for doc
 > [!NOTE]
 > This feature is in preview and subject to change. 
 >
-> Because enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change, we recommend that you try it in a test tenant rather than a production tenant.
+> Because enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change, we recommend that you try it in a test tenant rather than a production tenant. You cannot disable this feature after it is enabled.
 
-Enable the setting to support coauthoring for Office desktop apps stored in SharePoint so that when documents are labeled and encrypted by your [sensitivity labels](sensitivity-labels.md), multiple users can edit them at the same time. 
+Enable the setting to support coauthoring for Office desktop apps stored in SharePoint so that when documents are labeled and encrypted by your [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
 
 Without this setting enabled for your tenant, users must check out an encrypted document stored in SharePoint or OneDrive when they use Office desktop apps, which means that they can't collaborate in real time. Or, they must use Office on the web when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
@@ -92,10 +92,11 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     If a document with any of these encryptions settings is open by another user
 
-- There is a maximum file size 
+- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 350 MB. For these files, use the Office desktop apps.
 
+- 
 
-## Known issues
+## Known issues for this preview
 
 This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
 
@@ -119,7 +120,7 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 
 After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test it first with a test tenant rather than a production tenant.
 
-![Option that shows co-authoring setting turned on for sensitivity labels](co-authoring-tenant-option-set-for-sensitivity-labels.png)
+![Option that shows co-authoring turned on for sensitivity labels](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
 As the screenshot shows, you can contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) and request that this setting is disabled. This request might take several times, you will need to prove that you are you global administrator for your tenant. Expect usual support charges to apply. If a support engineer disables this setting for your tenant:
 
