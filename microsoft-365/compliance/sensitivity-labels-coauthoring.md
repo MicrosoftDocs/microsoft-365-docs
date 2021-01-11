@@ -92,6 +92,8 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     If a document with any of these encryptions settings is open by another user
 
+- There is a maximum file size 
+
 
 ## Known issues
 
