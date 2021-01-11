@@ -25,7 +25,7 @@ description: "Learn how to Migrate Google files to Microsoft 365 for business by
 
 # Migrate Google files to Microsoft 365 for business 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
 When you move to Microsoft 365 for business, you’ll want to migrate your files from Google Drive. You can use the Mover app to migrate files from personal and shared Drives. For more information, see [Mover Cloud Migration](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
 
