@@ -117,7 +117,7 @@ IRM cannot protect restricted content from the following:
     
 - Copying of content metadata (column values) through the use of third-party screen-capture programs or copy-and-paste action
     
-[Apply Information Rights Management to a list or library](https://support.office.com/article/6714cfe3-ef39-43b0-bb65-a887726bb63c)
+[Apply Information Rights Management to a list or library](https://support.office.com/article/3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1)
   
 ## How IRM works for lists and libraries
 <a name="__toc256598178"> </a>
