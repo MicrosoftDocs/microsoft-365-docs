@@ -32,8 +32,8 @@ Microsoft uses these submissions to improve the effectiveness of email protectio
 
 You can install either the Report Message or Report Phishing add-in:
 
-- The Report Message add-in provides options to report messages as Junk, Not Junk, and Phishing. For more information, see [Enable the report message add-in](enable-the-report-message-add-in.md).
-- The Report Phishing add-in provides the option to only report Phishing messages. To get started with the Report Phishing add-in, see the [What do you need to know before you begin](#what-do-you-need-to-know-before-you-begin) section in this article.
+- If you want your users to report both spam and phishing messages,deploy, the Report Message add-in. For more information, see [Enable the report message add-in](enable-the-report-message-add-in.md).
+- If you want your users to report only phishing messages, deploy the Report Phishing add-in in your organization. To get started with the Report Phishing add-in, see the [What do you need to know before you begin](#what-do-you-need-to-know-before-you-begin) section in this article.
 
 Admins can enable the Report Phishing add-in for the organization, and individual users can install it for themselves.
 
