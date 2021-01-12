@@ -30,7 +30,7 @@ description: "Set up multifactor authentication."
 
 Multi-factor authentication provides more security for your business. After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
 See more at [Set up multifactor authentication in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 

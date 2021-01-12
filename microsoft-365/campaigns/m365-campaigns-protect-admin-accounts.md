@@ -30,9 +30,8 @@ Because admin accounts come with elevated privileges, they're valuable targets f
 
 - How to set up an additional administrator account for emergencies.
 - How to protect these accounts.
- 
-When you sign up for Microsoft 365 and enter your information, you automatically become the global admin. A global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
+When you sign up for Microsoft 365 and enter your information, you automatically become the global admin. A global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
 ## Create additional admin accounts
 
@@ -46,14 +45,14 @@ To create additional admin accounts:
 
     ![Choose Users and then Active users in the left nav](../media/Activeusers.png)
 
-2. On the **Active users** page, select **Add a user** at the top of the page, and on the **New user** panel, enter the name and other information.
-3. Expand the **Roles** section, and choose **Global administrator** to give this user global admin access. You can also choose **Customized administrator** and choose any of the roles that are displayed.
+ 2. On the **Active users** page, select **Add a user** at the top of the page, and on the **New user** panel, enter the name and other information.
+ 3. Expand the **Roles** section, and choose **Global administrator** to give this user global admin access. You can also choose **Customized administrator** and choose any of the roles that are displayed.
 
     Enter an alternate email in the **Alternative email address** text box. You can use this address to recover your password information if you get locked out. For global admins, a billing statement will also be sent to this address.
 
     ![Choose the administrator role](../media/adminroles.png)
-    
-4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **Off** and the **Create user without product license** to **On**.
+
+ 4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **Off** and the **Create user without product license** to **On**.
 
     ![Choose the product license](../media/productlicense.png)
 
@@ -66,13 +65,15 @@ You should also create a backup account that isn't set up with multi-factor auth
 Use your user account to participate in collaboration with your organization, including checking mail. This means your admin credentials might be similar to  *Alice.Chavez<span></span>@Contoso.org* and your regular user account might be similar to *Alice<span></span>@Contoso.com*.
 
 To create a new user account:
+
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">admin center</a> and then choose **Users** \> **Active users** in the left nav.
 2. On the **Active users** page, select **Add a user** at the top of the page, and on the **New user** panel, enter the name and other information.
 3. Expand the **Roles** section, and choose **User (no administrative access)**.
-1. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **On**. 
+4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **On**.
 
 ## Register each of these accounts for multi-factor authentication
 
+Make sure these accounts are using [multifactor authentication](m365-campaigns-multifactor-authenication.md).
 
 ## Additional recommendations
 

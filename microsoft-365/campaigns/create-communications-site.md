@@ -41,13 +41,13 @@ Include the following elements in your Communications site:
 
 ![Diagram of a SharePoint Communications page with space for common elements that a campaign would need](../media/m365-democracy-comms-site.png)
 
-## Infographic: Create a Communications Site infographic 
+## Infographic: Create a Communications Site infographic
+
 The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).
 
 [![Image for communications site infographic](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
-
 
 ## Set it up
 
@@ -57,8 +57,6 @@ The following links for PowerPoint and PDF can be downloaded and printed in tabl
 
 Learn all [about Communications sites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) and how to [create a communication site in SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
 
-
 ## Admin settings
 
-If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365. To create a team site, contact the person administering Microsoft 365 in your organization. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint Online admin center.
-  
+If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365. To create a team site, contact the person administering Microsoft 365 in your organization. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint Online admin center.  

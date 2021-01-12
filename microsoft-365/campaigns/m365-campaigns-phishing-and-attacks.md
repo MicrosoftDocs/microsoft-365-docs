@@ -37,17 +37,18 @@ Microsoft 365 includes many protections to guard against attacks, but there are 
 
 ## Best practices
 
-**Reduce spam mail**
+### Reduce spam mail
 
 Follow these [10 tips on how to help reduce spam](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
-**Report it!**
+### Report it!
 
 Report any phishing or other scam emails you receive. 
 Select the message, and choose **Report message** on the ribbon.
 Here's more information about [reporting junk and phishing emails](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
-**Avoid phishing**
+### Avoid phishing
+
 - Never reply to an email that asks you to send personal or account information.
 - If you receive an email that looks suspicious or asks you for this type of information, never click links that supposedly take you to a company website.
 - Never open any file attached to a suspicious-looking email.
@@ -56,7 +57,7 @@ Here's more information about [reporting junk and phishing emails](https://suppo
 
 Read about five common types of scams in [Deal with abuse, phishing, or spoofing](https://support.office.com/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
 
-**Make sure your emails look legitimate to others**
+### Make sure your emails look legitimate to others
 
 Help your customers trust your communications by adding a digital signature to prove that it's coming from you. See [Secure messages by using a digital signature](https://support.office.com/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
@@ -71,6 +72,7 @@ Download this infographic with tips for you and the members of your campaign tea
 ## Set it up
 
 Learn more about how to:
+
 - [Keep your files and communications safe with Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
 - [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

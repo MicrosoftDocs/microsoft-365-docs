@@ -28,7 +28,7 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 # Protect unmanaged Windows 10 PCs and Macs
 
-You can manage Windows 10 PCs and Macs by enrolling them in Microsoft Intune, which allows you to ensure they're healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff who bring their own devices (byod), which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure that minimum security capabilities are configured. 
+You can manage Windows 10 PCs and Macs by enrolling them in Microsoft Intune, which allows you to ensure they're healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff who bring their own devices (BYOD), which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure that minimum security capabilities are configured.
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -44,12 +44,12 @@ You can manage Windows 10 PCs and Macs by enrolling them in Microsoft Intune, wh
 If your Windows 10 PC or Mac is not managed by your organization, be sure to configure these security capabilities.
 
 ## [Windows 10](#tab/Windows10)
+
 **Turn on device encryption**<p>
 
 Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals will be able to access your device and data. See [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) for instructions.
 
  If device encryption isn't available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker isn't available on Windows 10 Home edition.) 
-
 
 **Protect your device with Windows Security**<p>
 If you have Windows 10, you'll get the latest antivirus protection with Windows Security. When you start up Windows 10 for the first time, Windows Security is on and actively helping to protect your PC by scanning for malware (malicious software), viruses, and security threats. Windows Security uses real-time protection to scan everything you download or run on your PC.
@@ -62,6 +62,7 @@ If you have an earlier version of Windows and are using Microsoft Security Essen
 You should always run Windows Firewall even if you have another firewall turned on. Turning off Windows Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions
 
 ## [Mac](#tab/Mac)
+
 **Use FileVault to encrypt your Mac disk**<p>
 Disk encryption protects data when devices are lost or stolen. FileVault full-disk encryption helps prevent unauthorized access to the information on your startup disk. See [use FileVault to encrypt the startup disk on your Mac](https://support.apple.com/HT204837) for instructions.
 

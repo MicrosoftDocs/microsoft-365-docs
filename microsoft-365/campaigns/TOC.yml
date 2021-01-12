@@ -26,7 +26,7 @@
       href: m365-campaigns-security-overview.md
     - name: Protect admin accounts
       href: m365-campaigns-protect-admin-accounts.md
-    - name: Protect access to your campaign data
+    - name: Protect access to your data
       href: m365-campaigns-conditional-access.md
     - name: Protect against malware and other threats
       href: m365-campaigns-increase-protection.md
@@ -65,4 +65,4 @@
 - name: Security incident management
   items: 
     - name: Respond to a compromised email account
-      href: https://docs.microsoft.com/microsoft-365/compliance/responding-to-a-compromised-email-account
+      href: ../compliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json
