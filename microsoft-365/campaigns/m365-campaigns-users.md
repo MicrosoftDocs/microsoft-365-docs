@@ -40,7 +40,7 @@ All users should be aware of and use these email practices to help keep their em
 - Verify legitimate emails and look for safety tips from Advanced Phishing in Defender for Office 365 Protection.
 - Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
 
-Learn more about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
+Learn more about [multi-factor authentication](m365-campaigns-multifactor-authenication) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
 
 Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your campaign team.
 
@@ -72,6 +72,7 @@ For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), 
 To learn more about these recommendations, see [Protect your account and devices from hackers and malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
 ## Collaborate using Microsoft Teams, OneDrive, SharePoint Online, and other tools
+
 Your users might be tempted to share and store your organization files in places other than Microsoft 365. Microsoft 365 makes it as easy as possible to collaborate and share securely. You can [share files and videos](share-files-and-videos.md) directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can add additional protection to sensitive data to prevent sharing outside your organization.
 
 ## Set up managed Windows 10 devices
