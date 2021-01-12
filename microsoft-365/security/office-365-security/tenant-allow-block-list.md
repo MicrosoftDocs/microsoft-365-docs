@@ -1,5 +1,5 @@
 ---
-title: "Manage your allowed and blocked URLs in the Tenant Allow/Block List"
+title: "Manage your allows and blocks in the Tenant Allow/Block List"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,10 +14,10 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to configure URL entries in the Tenant Allow/Block List in the Security & Compliance Center."
+description: "Admins can learn how to configure allows and blocks in the Tenant Allow/Block List in the Security portal."
 ---
 
-# Manage URLs in the Tenant Allow/Block List
+# Managing allows and blocks in the Tenant Allow/Block List
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
