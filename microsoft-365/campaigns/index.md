@@ -45,8 +45,7 @@ This configuration includes the following guidance for productivity, collaborati
 |Storing and sharing files securely | Share files and videos from Microsoft Teams, OneDrive, SharePoint, and Microsoft Stream, and protect sensitive data.| [Share files and videos](share-files-and-videos.md) |
 |Managed Windows 10 devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](set-up-windows-devices.md) |
 
-
-Microsoft 365 for Campaigns - a secure configuration of Microsoft 365
+Microsoft 365 for Campaigns - a recommended security configuration of Microsoft 365
 ------------------------------------
 
 Microsoft 365 for Campaigns is a recommended secure configuration that includes Microsoft 365 Business Premium so that you can:
@@ -54,7 +53,6 @@ Microsoft 365 for Campaigns is a recommended secure configuration that includes 
 - Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.
 - Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.
 - Apply extra protection for user accounts and identity.
-
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
