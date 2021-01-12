@@ -17,7 +17,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to set up Advanced eDiscovery so you can start creating and managing cases. After you complete a few quick steps, the Advanced eDiscovery tool is ready to use."
+description: "This article describes how to set up Advanced eDiscovery so you can start creating and managing cases. It also describes the required Microsoft subscriptions and licensing. After you complete a few quick steps, the Advanced eDiscovery tool is ready to use."
 ---
 
 # Set up Microsoft 365 Advanced eDiscovery
@@ -100,4 +100,4 @@ For more information about setting up and using the attorney-client privilege de
 
 ## Next steps
 
-After you set up Advanced eDiscovery, you're ready to [create and manage a case](create-and-manage-advanced-ediscoveryv2-case.md).
+After you set up Advanced eDiscovery, you're ready to [create a case](create-and-manage-advanced-ediscoveryv2-case.md).

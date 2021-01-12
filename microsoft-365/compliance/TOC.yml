@@ -582,9 +582,9 @@
           href: overview-ediscovery-20.md
         - name: Set up Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Create and manage an Advanced eDiscovery case
+        - name: Create Advanced eDiscovery cases
           href: create-and-manage-advanced-ediscoveryv2-case.md
-        - name: Work with custodians and non-custodial data sources
+        - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
           items: 
             - name: Add custodians to a case
@@ -597,7 +597,7 @@
               href: view-custodian-activity.md
             - name: Add non-custodial data sources to a case
               href: non-custodial-data-sources.md
-        - name: Work with communications
+        - name: Manage custodian communications
           href: managing-custodian-communications.md
           items: 
             - name: Create a hold notification
@@ -610,7 +610,7 @@
               href: acknowledge-hold-notification.md
         - name: Manage holds
           href: managing-holds.md
-        - name: Work with processing errors
+        - name: Manage processing errors
           href: processing-data-for-case.md
           items: 
             - name: Advanced indexing of custodian data
