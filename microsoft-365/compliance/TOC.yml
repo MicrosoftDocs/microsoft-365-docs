@@ -582,7 +582,7 @@
           href: overview-ediscovery-20.md
         - name: Set up Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Create Advanced eDiscovery cases
+        - name: Create an Advanced eDiscovery case
           href: create-and-manage-advanced-ediscoveryv2-case.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
