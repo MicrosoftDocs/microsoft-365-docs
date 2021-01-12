@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how Microsoft 365 for campaigns affects your users."
+description: "Learn how Microsoft 365 for campaigns affects your users and protects your data."
 ---
 
 # How Microsoft 365 for Campaigns affects your users
@@ -42,7 +42,7 @@ All users should be aware of and use these email practices to help keep their em
 
 Learn more about [multi-factor authentication](m365-campaigns-multifactor-authenication) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
 
-Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your campaign team.
+Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your team.
 
 ## Set up iPhones and Android devices
 
@@ -58,7 +58,7 @@ After setting these up, your users will be prompted to use the authenticator app
 
 It's also important that users keep their primary work device up to date:
 
-- Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted. 
+- Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted.
 - Stay on top of operating system updates, such as Windows updates.
 
 For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.
