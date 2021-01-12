@@ -40,7 +40,7 @@ All users should be aware of and use these email practices to help keep their em
 - Verify legitimate emails and look for safety tips from Advanced Phishing in Defender for Office 365 Protection.
 - Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
 
-Learn more about [multi-factor authentication](m365-campaigns-multifactor-authenication) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
+Learn more about [multi-factor authentication](m365-campaigns-multifactor-authentication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
 
 Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your team.
 
@@ -65,7 +65,7 @@ For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), 
 
 **Enable basic security capabilities on BYOD Windows 10 and Mac devices**
 
-||**Windows 10**|**Mac**|
+| |**Windows 10**|**Mac**|
 |:-----|:-----|:------|
 |Security capabilities|Turn on BitLocker device protection<p><p> Ensure Windows Defender remains on <p>Turn on Windows Firewall| Use FileVault to encrypt the Mac disk <p><p>Use a reliable antivirus software <p>Turn on firewall protection|
 

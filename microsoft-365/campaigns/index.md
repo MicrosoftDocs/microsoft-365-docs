@@ -40,10 +40,10 @@ This configuration includes the following guidance for productivity, collaborati
 | Protection for | Description | Links |
 | ----- | ----- | ----- | ----- |
 |Email | Use multi-factor authentication, and ATP Advanced Phishing Protection, and ATP Safe Links and Safe Attachments, and use encrypted email for sensitive information.| [Set up multi-factor authentication](m365-campaigns-multifactor-authenication.md), [Protect against phishing attacks](m365-campaigns-phishing-and-attacks.md), [Encrypt or label your sensitive email](send-encrypted-email.md) |
-|iPhones and Android devices |Use multi-factor authentication, and set up Microsoft mobile apps, and require a PIN | [Set up multi-factor authentication](m365-campaigns-multifactor-authenication.md), [Set up mobile devices](set-up-mobile-devices.md)|
+|iPhones and Android devices |Use multi-factor authentication, and set up Microsoft mobile apps, and require a PIN | [Set up multi-factor authentication](m365-campaigns-multifactor-authenication.md), [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)|
 |Bring-your-own-devices (BYOD) Macs and Windows 10 PCs |Keep Office up to date, keep operating systems updated, and enable security features. | [Protect unmanaged Windows 10 PCs and Macs](m365-campaigns-protect-pcs-macs.md) |
 |Storing and sharing files securely | Share files and videos from Microsoft Teams, OneDrive, SharePoint, and Microsoft Stream, and protect sensitive data.| [Share files and videos](share-files-and-videos.md) |
-|Managed Windows 10 devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](set-up-windows-devices.md) |
+|Managed Windows 10 devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
 Microsoft 365 for Campaigns - a recommended security configuration of Microsoft 365
 ------------------------------------

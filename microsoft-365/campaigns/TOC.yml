@@ -65,4 +65,4 @@
 - name: Security incident management
   items: 
     - name: Respond to a compromised email account
-      href: ../compliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json
+      href: ../security/office-365-security/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json
