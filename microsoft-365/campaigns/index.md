@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 for for smaller businesses and campaigns"
+title: "Microsoft 365 for smaller businesses and campaigns"
 f1.keywords:
 - NOCSH
 ms.author: samanro
