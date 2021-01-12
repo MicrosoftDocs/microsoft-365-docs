@@ -79,6 +79,7 @@ Selecting **Investigations** opens  a page that features a graphic of the analys
 The layout has been merged wherever centers overlap. Common controls and content either appear in the same place, or are condensed into one feed of data making it easier to find. For example, unified settings.
 
 **Unified settings**
+
 ![Settings page covers everything in Microsoft Defender for Endpoints and for Microsoft Defender for Office 365](../../media/converged-settings-4.png)
 
 ### Integrated permissions & roles
@@ -86,24 +87,30 @@ The layout has been merged wherever centers overlap. Common controls and content
 ![Permissions & Roles page showing Endpoints roles & groups, Roles, and Device groups.](../../media/converged-roles-5.png)
 
  Selecting either of **Roles** or **Device groups** drops admins deeper into the **Permissions** section (but take a second to look at the other nodes here).
-![clicked 'Roles' and opened the Settings page, which includes General settings, Permissions, APIs and Rules. Open Permissions and then Roles. Shows all roles](../../media/converged-settings-6.png)
+
+![clicked 'Roles' and opened the Settings page, which includes General settings, Permissions, APIs and Rules. Open Permissions and then Roles. Shows all roles](../../media/converged-add-role-9.png)
 
 - **Roles** allow admins to create and bundle permissions, and then add user groups to them. Role creation is done on the General tab. Members of the security team can access parts of the center to do work, once they're added here. After creation, the Role wizard also reminds you that user groups can be added to this Role 'at a later phase' using the **Assigned user groups** tab.
 
 - **Device Groups** work the same way. On the same **General** flyout where you create the Device Group, you can select the **User access** tab to grant Azure AD user groups access to a device group.
-![add the Role via the General tab, and then add users / groups to it on the Assigned user groups tab](../../media/converged-add-role-7.png)
+
+:::image type="content" source="../../media/converged-add-role-7a.png" alt-text="Add the Role via the General tab, and then add users / groups to it on the Assigned user groups tab.":::
 
 ### Integrated reports
 
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
+
 ![report page that includes a General security report, and specific Endpoint and Email & Collaboration reports](../../media/converged-reports-9.png)
+
 
 ## Office 365 Cloud App Security and other security integrations
 
-As admins and operations teams work, they will find other points where features from different security centers have merged. It's important to explore the new portal to build familiarity and highlight any issues that can be reported through giving feedback on the home page. You can also quickly access self-help, and Microsoft for help, if assistance is called for.
-![help menu from the Home page of Microsoft 365 security center is in the upper right of the screen under the question mark.](../../media/converged-home-8.gif)
+As admins and operations teams work, they will find other points where features from different security centers have merged. It's important to explore the new portal to build familiarity and highlight any issues that can be reported through giving feedback on the home page. You can also quickly access self-help, and Microsoft for help, if assistance is called for. Just click the question mark (?).
 
- If you use **Office 365 Cloud App Security**, you can leverage its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**. <p> **Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams. 
+:::image type="content" source="../../media/converged-help.gif" alt-text="The animated graphic shows the home page with the 'help' question mark in the upper right corner, and then the Need Help panel prompting people to type in their issue.":::
+
+ If you use **Office 365 Cloud App Security**, you can leverage its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**. <p> **Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams.
+
 ![Office 365 Cloud App Security page in the Microsoft 365 security center](../../media/converged-advanced-alerts-1.png)
 
 
