@@ -40,7 +40,7 @@ All users should be aware of and use these email practices to help keep their em
 - Verify legitimate emails and look for safety tips from Advanced Phishing in Defender for Office 365 Protection.
 - Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
 
-Learn more about [multi-factor authentication](m365-campaigns-multifactor-authentication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
+Learn more about [multi-factor authentication](m365-campaigns-multifactor-authenication.md) and [phishing and other attacks](m365-campaigns-phishing-and-attacks.md).
 
 Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your team.
 
