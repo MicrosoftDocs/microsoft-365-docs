@@ -23,11 +23,11 @@ description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file
 
 # Get started with data loss prevention on-premises scanner
 
-Microsoft data loss prevention on-premises scanner is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Overview of data loss prevention](data-loss-prevention-policies.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+Microsoft data loss prevention on-premises scanner is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Overview of data loss prevention](data-loss-prevention-policies.md).
 
-On-premises scanner allows you to monitor on-premises data-at-rest in file shares and SharePoint document libraries and folders to detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them.
+DLP on-premises scanner allows you to monitor on-premises data-at-rest in file shares and SharePoint document libraries and folders to detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. <!--ADD LINKS -->DLP on-premises scanner detects sensitive information by using built-in or custom sensitive information types, sensitivity labels or file properties. 
 
-DLP on-premises scanner relies on a full implemenation of Azure Information Protection (AIP) scanner to monitor, label and protect sensitive items. If you aren't familiar with AIP scanner, we strongly recommend familiarizing yourself with it. See these articles:
+DLP on-premises scanner relies on a full implementation of Azure Information Protection (AIP) scanner to monitor, label and protect sensitive items. If you aren't familiar with AIP scanner, we strongly recommend familiarizing yourself with it. See these articles:
 
 - [What is Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)
 - [What is the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner)
@@ -36,10 +36,6 @@ DLP on-premises scanner relies on a full implemenation of Azure Information Prot
 
 
 ## Before you begin
-
-Network discovery jobs configuration is optional step. You can skip it and define specific repositories to be scanned in your Content scan job.
-
-
 
 ### SKU/subscriptions licensing
 
@@ -61,15 +57,23 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 - Security administrator
 - Compliance data administrator
 
-### Scanner prerequisites
+### DLP on-premises scanner prerequisites
 
 - AIP scanner implements DLP policy matching and policy enforcement. See [Requirements for installing and deploying the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner-prereqs).
 - Deploy AIP scanner, see [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner-configure-install).
 - There must be at least one label and policy published in the tenant, even if all your detection rules are based on sensitive information types only.
 
+## Deploy DLP on-premises scanner
+
+1. Follow the [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install) to complete scanner installation
+    1. Network discovery jobs configuration is optional step. You can skip it and define specific repositories to be scanned in your Content scan job.
+    1. You must create Content scan job and specify the repositories that host files that need to be evaluated by the DLP engine.
+    1. Enable DLP scan in the created Content scan job, set the Enforce option to Off (unless you want to proceed directly to the DLP enforcement stage)
 
 
-
+2. CREATE POLICY - see NEW TOPIC GENERIC HOW TO CREATE A DLP POLICY
+    1. CONDITIONS
+    1. ACTIONS
 
 ## Next steps
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
