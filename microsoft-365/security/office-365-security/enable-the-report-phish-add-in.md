@@ -32,9 +32,7 @@ Microsoft uses these submissions to improve the effectiveness of email protectio
 
 You can install either the Report Message or Report Phishing add-in. If you want your users to report both spam and phishing messages, deploy the Report Message add-in in your organization. See [Enable the Report Message add-in](enable-the-report-message-add-in.md).
 
-The Report Phishing add-in provides the option to report only phishing messages. To get started with the Report Phishing add-in, see the [What do you need to know before you begin](#what-do-you-need-to-know-before-you-begin) section in this article.
-
-Admins can enable the Report Phishing add-in for the organization, and individual users can install it for themselves.
+The Report Phishing add-in provides the option to report only phishing messages. Admins can enable the Report Phishing add-in for the organization, and individual users can install it for themselves.
 
 If you're an individual user, you can [enable the Report Phishing add-in for yourself](#get-the-report-phishing-add-in-for-yourself).
 
