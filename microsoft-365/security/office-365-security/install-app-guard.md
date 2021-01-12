@@ -150,7 +150,7 @@ If you encounter any issues when launching Application Guard for Office, you are
 
 1. Open the **Feedback Hub app** and sign in.
 
-2. If you get an error dialog while launching Application Guard, select **Report to Microsoft** in the error dialog to start a new feedback submission. Otherwise, navigate to <https://aka.ms/wdagoffice-fb> to select the correct category for Application Guard, then select **+ Add new feedback** near the top right.
+2. If you get an error dialog while launching Application Guard, select **Report to Microsoft** in the error dialog to start a new feedback submission. Otherwise, navigate to <https://aka.ms/mdagoffice-fb> to select the correct category for Application Guard, then select **+ Add new feedback** near the top right.
 
 3. Fill in the **Summarize your feedback** box if it isn't already filled in for you.
 

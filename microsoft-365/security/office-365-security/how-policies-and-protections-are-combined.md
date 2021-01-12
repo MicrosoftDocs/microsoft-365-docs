@@ -61,7 +61,7 @@ For example, consider the following anti-phishing policies in Microsoft Defender
   |Policy B|2|Off|On|
   |
 
-1. The message is marked and treated as spoof, because spoofing has a higher priority (4) than user impersonation (8).
+1. The message is marked and treated as spoof, because spoofing has a higher priority (4) than user impersonation (5).
 2. Policy A is applied to the users because it has a higher priority than Policy B.
 3. Based on the settings in Policy A, no action is taken on the message, because anti-spoofing is turned off in the policy.
 4. Policy processing stops, so Policy B is never applied to the users.

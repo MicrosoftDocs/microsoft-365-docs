@@ -1,5 +1,5 @@
 ---
-title: "Manage your allowed and blocked URLs in the Tenant Allow/Block List"
+title: "Manage your allows and blocks in the Tenant Allow/Block List"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,10 +14,10 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to configure URL entries in the Tenant Allow/Block List in the Security & Compliance Center."
+description: "Admins can learn how to configure allows and blocks in the Tenant Allow/Block List in the Security portal."
 ---
 
-# Manage URLs in the Tenant Allow/Block List
+# Managing allows and blocks in the Tenant Allow/Block List
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -78,7 +78,7 @@ For details about the syntax for URL entries, see the [URL syntax for the Tenant
 
      or
 
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
 
    - **Optional note**: Enter descriptive text for the entries.
 
@@ -106,7 +106,7 @@ Click **Filter**. In the **Filter** flyout that appears, configure any of the fo
 
 - **Action**: Select **Allow**, **Block** or both.
 
-- **Never expire**: Select off (![Toggle off](../../media/scc-toggle-off.png)) or on (![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)).
+- **Never expire**: Select off: ![Toggle off](../../media/scc-toggle-off.png) or on: ![Toggle on](../../media/scc-toggle-on.png).
 
 - **Last updated**: Select a start date (**From**), an end date (**To**) or both.
 
@@ -136,7 +136,7 @@ You can't modify the URL value itself. Instead, you need to delete the entry and
 
      or
 
-     - Move the toggle to the right to configure the entry to never expire: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Move the toggle to the right to configure the entry to never expire: ![Toggle on](../../media/scc-toggle-on.png).
 
    - **Optional note**: Enter descriptive text for the entry.
 

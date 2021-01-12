@@ -54,11 +54,11 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
-  - To create, modify, and delete Safe Attachments policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to Safe Attachments policies, you need to be a member of the **Global Reader** or **Security Reader** role groups.
+- You need to be assigned permissions before you can do the procedures in this article:
+  - To create, modify, and delete Safe Links policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center **and** a member of the **Organization Management** role group in Exchange Online.
+  - For read-only access to Safe Links policies, you need to be a member of the **Global Reader** or **Security Reader** role groups in the Security & Compliance Center.
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Notes**:
 
@@ -161,7 +161,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
    - Move the toggle to the left ![Turn policy off](../../media/scc-toggle-off.png) to disable the policy.
 
-   - Move the toggle to the right ![Turn policy on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to enable the policy.
+   - Move the toggle to the right ![Turn policy on](../../media/scc-toggle-on.png) to enable the policy.
 
 ### Set the priority of Safe Attachments policies
 

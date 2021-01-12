@@ -39,7 +39,7 @@ If you currently host your mailboxes on premises and use an on-premises protecti
 
 ## Switch to Exchange Online
 
-Perhaps you have on-premises mailboxes protected by an on-premises appliance, and you want to jump to Exchange Online cloud-hosted mailboxes and EOP protection to take advantage of Microsoft 365 cloud messaging and protection features. To get started, you can sign up for Microsoft 365 and add your domain. This scenario doesn't require you to setup connectors, because there isn't any routing to on-premises mailboxes. Begin at [Get the latest advanced features with Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) to sign-up and get familiar with its features.
+Perhaps you have on-premises mailboxes protected by an on-premises appliance, and you want to jump to Exchange Online cloud-hosted mailboxes and EOP protection to take advantage of Microsoft 365 cloud messaging and protection features. To get started, you can sign up for Microsoft 365 and add your domain. This scenario doesn't require you to set up connectors, because there isn't any routing to on-premises mailboxes. Begin at [Get the latest advanced features with Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) to sign-up and get familiar with its features.
 
 During the Microsoft 365 setup process, you will create your cloud-based mailbox users.
 
