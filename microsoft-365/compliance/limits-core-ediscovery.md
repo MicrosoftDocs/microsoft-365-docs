@@ -19,9 +19,9 @@ search.appverid:
 description: "This article describes the limits in core eDiscovery case in Microsoft 365."
 ---
 
-# Limits in core eDiscovery
+# Limits in Core eDiscovery
 
-The following table lists the limits for core eDiscovery cases and holds associated with a core eDiscovery case. For more information about core eDiscovery, see [Overview of core eDiscovery](ediscovery-cases.md).
+The following table lists the limits for core eDiscovery cases and holds associated with a core eDiscovery case. For more information about Core eDiscovery, see [Overview of Core eDiscovery](ediscovery-cases.md).
     
   |**Description of limit**|**Limit**|
   |:-----|:-----|
@@ -34,3 +34,5 @@ The following table lists the limits for core eDiscovery cases and holds associa
 
    > [!NOTE]
    > <sup>1</sup> To view a list of more than 1,000 cases, holds, searches, or exports, you can use the corresponding Office 365 Security & Compliance PowerShell cmdlet:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+
+For more information about limits related to content searches and exports associated with a Core eDiscovery case, see [Limits for Content Search and Core eDiscovery](limits-for-content-search.md).
