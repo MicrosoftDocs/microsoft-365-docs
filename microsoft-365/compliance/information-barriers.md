@@ -1,5 +1,5 @@
 ---
-title: "Learn about Information barriers"
+title: "Learn about information barriers in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ description: "Use information barriers to ensure communication compliance using 
 ms.custom: seo-marvel-apr2020
 ---
 
-# Information barriers
+# Learn about information barriers in Microsoft 365
 
 Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communication and collaboration between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communication and collaboration  among specific groups of users when necessary? With information barriers, you can! 
 
@@ -68,7 +68,7 @@ Information barriers are rolling out now, and are included in subscriptions, suc
 - Microsoft 365 Compliance E5/A5
 - Microsoft 365 Insider Risk Management
 
-For more details, see [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
+For more details, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 To [define or edit information barrier policies](information-barriers-policies.md), you must be assigned one of the following roles:
 
@@ -77,7 +77,7 @@ To [define or edit information barrier policies](information-barriers-policies.m
 - Compliance administrator
 - IB Compliance Management (this is a new role!)
 
-(To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/protect-against-threats.md).)
+(To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).)
 
 You must be familiar with PowerShell cmdlets in order to define, validate, or edit information barrier policies. Although we provide several examples of PowerShell cmdlets in the [how-to article](information-barriers-policies.md), you'll need to know additional details, such as parameters, for your organization.
 

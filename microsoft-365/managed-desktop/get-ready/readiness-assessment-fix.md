@@ -23,6 +23,9 @@ For each check, the tool will report one of four possible results:
 |Not ready | *Enrollment will fail if you don't fix these issues.* Follow the steps in the tool or this article to resolve them.        |
 |Error | The Azure Active Director (AD) role you're using doesn't have sufficient permission to run this check. |
 
+> [!NOTE]
+> The results reported by this tool reflect the status of your settings only at the specific point in time that you ran it. If you later make any changes to policies in Microsoft Intune, Azure Active Directory, or Microsoft 365, items that were "Ready" can become "Not ready." To avoid problems with Microsoft Managed Desktop operations, check the specific settings described in this article before you change any policies.
+
 ## Microsoft Intune settings
 
 You can access Intune settings at the Microsoft Endpoint Manager [admin center](https://endpoint.microsoft.com).
@@ -149,14 +152,14 @@ We use Microsoft Store for Business so that you can download Company Portal to d
 
 Microsoft Store for Business either isn't enabled or isn't synced with Intune. For more information, see [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) and [Install Intune Company Portal on on devices](../get-started/company-portal.md).
 
-### Multi-factor authentication
+### Multifactor authentication
 
-Multi-factor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.
+Multifactor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.
 
 
 **Not ready**
 
-You have some multi-factor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+You have some multifactor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
 
 **Advisory**
 

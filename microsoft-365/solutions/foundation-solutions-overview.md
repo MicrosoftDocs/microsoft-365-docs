@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Foundation Solutions Overview
-description: Description.
+description: Read these foundation solution guides to understand concepts and features and help you make the choices that lead to a functioning end result, from planning to implementation, to adoption.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,6 +12,7 @@ ms.collection:
 - M365-subscription-management
 ms.custom: 
 f1.keywords: NOCSH
+ROBOTS: NOINDEX
 ---
 
 # Microsoft 365 Foundation Solutions Overview
