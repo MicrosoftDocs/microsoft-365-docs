@@ -64,7 +64,7 @@ A policy has medium confidence that it's detected this type of sensitive informa
 - The function Func_aba_routing finds content that matches the pattern.
 - A keyword from Keyword_ABA_Routing is found.
 
-A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_aba_routing finds content that matches the pattern.
 
 ```xml
@@ -973,7 +973,7 @@ Yes
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern. 
 - a keyword from  `Keywords_austria_eu_ssn_or_equivalent` is found. 
     
@@ -1924,12 +1924,12 @@ not applicable
   
 ### Definition
 
- A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+ A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_belgium_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_belgium_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date2` finds date in the format DD MM YY or a keyword from `Keywords_eu_passport_date` or `Keywords_belgium_eu_passport_number` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_belgium_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_belgium_eu_passport_number` is found. 
 
@@ -2538,12 +2538,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found. 
 
@@ -3845,12 +3845,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_croatia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_croatia_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_croatia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_croatia_eu_passport_number` is found. 
     
@@ -4199,12 +4199,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_cyprus_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_cyprus_eu_passport_number` is found. 
 - The regular expression `Regex_cyprus_eu_passport_date` finds date in the format DD/MM/YYYY or a keyword from `Keywords_cyprus_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_cyprus_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_cyprus_eu_passport_number` is found.  
     
@@ -4529,12 +4529,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_czech_republic_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_czech_republic_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_czech_republic_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_czech_republic_eu_passport_number` is found. 
     
@@ -4870,12 +4870,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_denmark_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_denmark_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date2` finds date in the format DD MM YY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_denmark_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_denmark_eu_passport_number` is found. 
     
@@ -5072,7 +5072,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - A keyword from `Keyword_dea_number` is found
 - The checksum passes.
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_dea_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -5376,12 +5376,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found. 
     
@@ -7562,12 +7562,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_greece_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_greece_eu_passport_number` is found. 
 - The regular expression `Regex_greece_eu_passport_date` finds date in the format DD MMM YY (Example - 28 Aug 19) or a keyword from `Keywords_greece_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_greece_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_greece_eu_passport_number` is found. 
     
@@ -7641,11 +7641,11 @@ Yes
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function  `Func_greece_eu_ssn` finds content that matches the pattern. 
 - A keyword from  `Keywords_greece_eu_ssn_or_equivalent` is found. 
     
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function  `Func_greece_eu_ssn` finds content that matches the pattern. 
 
 ```xml
@@ -8077,12 +8077,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_hungary_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_hungary_eu_passport_number` is found. 
 - The regular expression `Regex_hungary_eu_passport_date` finds date in the format  DD MMM/MMM YY (Example - 01 MÁR/MAR 12) or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_hungary_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_hungary_eu_passport_number` is found. 
     
@@ -8363,7 +8363,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
 - A keyword from Keyword_india_permanent_account_number is found.
 
-A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
 
 
@@ -8864,12 +8864,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_ireland_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_ireland_eu_passport_number` is found. 
 - The regular expression `Regex_ireland_eu_passport_date` finds date in the format DD MMM/MMM YYYY (Example - 01 BEA/MAY 1988) or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_ireland_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_ireland_eu_passport_number` is found.
     
@@ -9281,12 +9281,12 @@ not applicable
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_italy_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_italy_eu_passport_number` is found. 
 - The regular expression `Regex_italy_eu_passport_date` finds date in the format DD MMM/MMM YYYY (Example - 01 GEN/JAN 1988) or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_italy_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_italy_eu_passport_number` is found. 
     
@@ -10225,12 +10225,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found. 
     
@@ -10555,12 +10555,12 @@ not applicable
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_lithuania_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_lithuania_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_lithuania_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_lithuania_eu_passport_number` is found. 
     
@@ -10868,12 +10868,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found. 
     
@@ -11347,12 +11347,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_malta_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_malta_eu_passport_number` is found. 
 - A keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_malta_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_malta_eu_passport_number` is found. 
     
@@ -11738,12 +11738,12 @@ not applicable
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_netherlands_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_netherlands_eu_passport_number` is found. 
 - The regular expression `Regex_netherlands_eu_passport_date` finds date in the format  DD MMM/MMM YYYY (Example - 26 MAA/MAR 2012)
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_netherlands_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_netherlands_eu_passport_number` is found. 
     
@@ -12195,7 +12195,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - A keyword from Keyword_nz_terms is found.
 - The checksum passes.
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_new_zealand_ministry_of_health_number finds content that matches the pattern.
 - The checksum passes.
 
@@ -13087,12 +13087,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_portugal_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_portugal_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_portugal_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_portugal_eu_passport_number` is found.
     
@@ -13504,12 +13504,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_romania_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_romania_eu_passport_number` is found. 
 - The regular expression `Regex_romania_eu_passport_date` finds date in the format DD MMM/MMM YY (Example- 01 FEB/FEB 10) or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_romania_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_romania_eu_passport_number` is found. 
     
@@ -14061,12 +14061,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovakia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_slovakia_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovakia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_slovakia_eu_passport_number` is found. 
     
@@ -14385,12 +14385,12 @@ No
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovenia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_slovenia_eu_passport_number` is found. 
 - The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovenia_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_slovenia_eu_passport_number` is found. 
     
@@ -14908,12 +14908,12 @@ Not applicable
   
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_spain_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_spain_eu_passport_number` is found. 
 - The regular expression `Regex_spain_eu_passport_date` finds date in the format DD-MM-YYYY or a keyword from `Keywords_eu_passport_date` is found
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_spain_eu_passport_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_eu_passport_number` or `Keywords_spain_eu_passport_number` is found.
     
@@ -16546,7 +16546,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - The function Func_unformatted_itin finds content that matches the pattern.
 - A keyword from Keyword_itin is found.
 
-A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_formatted_itin or Func_unformatted_itin finds content that matches the pattern.
 
 ```xml
