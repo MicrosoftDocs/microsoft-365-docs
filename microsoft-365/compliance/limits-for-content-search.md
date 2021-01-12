@@ -20,7 +20,6 @@ description: "Learn about the limits in effect for the Content search feature in
 ---
 
 # Limits for Content search 
-
 Various limits are applied to the Content search tool in the Microsoft 365 compliance center. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **Core eDiscovery** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for Content Search or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting content searches.
   
 ## Search limits
@@ -51,7 +50,6 @@ The following table lists the search limits when using the content search tool i
 > <sup>1</sup> Although you can search an unlimited number of mailboxes in a single search, you can only download the exported search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the Microsoft 365 compliance center. To download the search results from more than 100,000 mailboxes, you have to use Security & Compliance Center PowerShell. For more information and a sample script, see [Exporting results from more than 100,000 mailboxes](export-search-results.md#exporting-results-from-more-than-100000-mailboxes). <br/><br/> <sup>2</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched are counted against this limit. <br/><br/> <sup>3</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  `"time*"` can expand to  `"time OR timer OR times OR timex OR timeboxed OR …"`. 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms. 
   
 ## Export limits
-
 The following table lists the limits when exporting the results of a content search. These limits also apply when you export content from a Core eDiscovery case.
 
 |Description of limit|Limit|
