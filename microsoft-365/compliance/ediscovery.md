@@ -30,9 +30,6 @@ Microsoft 365 provides the following eDiscovery tools:
 
 - [Advanced eDiscovery](#advanced-ediscovery)
 
-> [!NOTE]
-> Advanced eDiscovery (classic) (also called *Advanced eDiscovery v1.0*), which is the version of Advanced eDiscovery available in a Core eDiscovery case by clicking **Switch to Advanced eDiscovery**, is being retired. Its functionality has been replaced by the Advanced eDiscovery solution in Microsoft 365. For more information about the retirement of Advanced eDiscovery v1.0, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
-
 ## Content Search
 
 The following table contains links to topics that will help you use the Content Search tool.

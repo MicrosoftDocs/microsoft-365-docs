@@ -18,12 +18,12 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-description: "Details of the Microsoft 365 apps health - technology experiences Productivity score."
+description: "Details of the Microsoft 365 Apps health - technology experiences Productivity score."
 ---
 
-# Microsoft 365 apps health – Technology experiences
+# Microsoft 365 Apps health – technology experiences
 
-Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The Teamwork category is part of the measurements that falls under people experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
+Productivity Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The apps health category is part of the measurements that falls under technology experiences. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Why your organization&#39;s Microsoft 365 apps health score matters
 
@@ -96,11 +96,11 @@ This chart shows the trend-line of the devices running supported versions and la
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Chart that showa how many devices run supported and latest versions of apps over time.":::
 
-## People in your organization
+## Devices in your organization
 
 This section helps you act on the metrics you want to focus on by providing relevant information to all the metrics for Microsoft 365 apps health - technology experiences.
 
-The following columns are presented in the table at the user level:
+The following columns are presented in the table at the channel/version level:
 
 - **Channel** : Current Microsoft 365 apps channel on the devices.
 - **Status:**   Microsoft 365 apps support state of the devices based on current channel and version.
@@ -109,9 +109,9 @@ The following columns are presented in the table at the user level:
 
 ## Related content
 
-[Communication – People experiences](communication.md) (article)
-[Content collaboration – People experiences](content-collaboration.md) (article)
-[Meetings – People experiences](meetings.md) (article)
-[Mobility – People experiences](mobility.md) (article)
-[Privacy controls for Productivity Score](privacy.md) (article)
+[Communication – People experiences](communication.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Meetings – People experiences](meetings.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
 [Teamwork – People experiences](teamwork.md) (article)

@@ -3,7 +3,7 @@ title: "Configure teams with protection for sensitive data"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -53,17 +53,21 @@ To create a sensitivity label
 1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
 2. Under **Solutions**, click **Information protection**.
 3. Click **Create a label**.
-4. Give the label a name. We suggest **sensitive**, but you can choose a different name if that one is already in use.
-5. Add a tool tip, and then click **Next**.
-6. On the **Encryption** page, click **Next**.
-7. On the **Content marking** page, turn on content marking if you want to automatically add a header, footer, or watermark to files that are classified with this label.
-8. On the **Site and group settings** page, set **Site and group settings** to **On**.
-9. In the **Privacy of Office 365 group-connected team sites** dropdown, choose **Private - only members can access the site**.
-10. If you want to allow guest access, select the **Let Office 365 group owners add people outside the organization to the group** check box. 
-11. Under **Unmanaged devices**, choose **Allow limited, web-only access**.
+4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
+5. Add a display name and description, and then click **Next**.
+6. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
+7. On the **Choose protection settings for files and emails** page, click **Next**.
+8. On the *Auto-labeling for files and emails** page, click **Next**.
+9. On the **Define protection settings for groups and sites** page, select **Privacy and external user access settings** and **Device access and external sharing settings** and click **Next**.
+10. On the **Define privacy and external user access settings** page, under **Privacy**, select the **Private** option.
+11. If you want to allow guest access, under **External user access**, select **Let Microsoft 365 Group owners add people outside your organization to the group as guests**.
 12. Click **Next**.
-13. On the **Auto-labeling for Office apps** page, click **Next**.
-14. Click **Submit**, and then click **Done**.
+13. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
+14. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
+15. Under **Access from unmanaged devices**, choose **Allow limited, web-only access**.
+16. Click **Next**.
+17. On the **Auto-labeling for database columns** page, click **Next**.
+18. Click **Create label**, and then click **Done**.
 
 Once you've created the label, you need to publish it to the users who will use it. For sensitive protection, we'll make the label available to all users. You publish the label in the Microsoft 365 compliance center, on the **Label policies** tab of the **Information protection** page. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 

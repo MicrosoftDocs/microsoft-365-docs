@@ -2,7 +2,7 @@
 title: Report junk and phishing email in Outlook for iOS and Android
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:

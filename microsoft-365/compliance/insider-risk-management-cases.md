@@ -179,9 +179,9 @@ Risk analysts and investigators can take action on a case in one of several meth
 
 ### Send email notice
 
-In most cases, user actions that create insider risk alerts are inadvertent or accidental. Sending a reminder notice to the user via email is an effective method for documenting case review and action, as well as a method to remind users of corporate policies or point them to refresher training. Notices are generated from [notice templates that you create](insider-risk-management-notices.md) for your insider risk management infrastructure.
+In most cases, user actions that create insider risk alerts are inadvertent or accidental. Sending a reminder notice to the user via email is an effective method for documenting case review and action, and is a method to remind users of corporate policies or point them to refresher training. Notices are generated from [notice templates that you create](insider-risk-management-notices.md) for your insider risk management infrastructure.
 
-It's important to remember that sending an email notice to a user ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to a user to look for additional risk activities without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step after sending a notice.
+It's important to remember that sending an email notice to a user ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to a user to look for more risk activities without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step after sending a notice.
 
 To send a notice to the user assigned to a case:
 
@@ -212,6 +212,7 @@ Using recommended Power Automate flows, risk investigators and analysts can quic
 - Request information from HR or business about a user in an insider risk case
 - Notify manager when a user has an insider risk alert
 - Add calendar reminder to follow up on an insider risk case
+- Create a record for an insider risk management case in ServiceNow
 
 To run, manage, or create Power Automate flows for an insider risk management case:
 
@@ -236,7 +237,7 @@ To learn more about Microsoft Teams for insider risk management, see [Getting st
 Sharing an insider risk management case allows risk investigators and analysts to easily collaborate with other compliance stakeholders in your organization. You can quickly share a link to an insider risk management case with external stakeholders from the case management area. To access the insider risk management case from the link, stakeholders must be included in any of the insider risk management role groups.
 
 >[!NOTE]
->The ServiceNow preview will end on November, 30 2020 and will not be continued. Thank you for your feedback and support while we determine next steps.
+>Thank you for your feedback and support during the preview of the ServiceNow connector. We've decided to end the preview of ServiceNow connector and discontinue support in insider risk management on November 30, 2020. We are actively evaluating alternative methods to provide customers with ServiceNow integration in insider risk management.
 
 The following sharing options are available:
 

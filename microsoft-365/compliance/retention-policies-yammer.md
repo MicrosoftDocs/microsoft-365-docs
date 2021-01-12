@@ -56,7 +56,7 @@ When the retention policy is to retain and then delete:
 
 For the two paths in the diagram:
 
-1. **If a Yammer message is edited or deleted** by the user during the retention period, the original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder. The message is stored there until the retention period expires and then the message is immediately permanently deleted.
+1. **If a Yammer message is edited or deleted** by the user during the retention period, the original message is immediately copied (if edited) or moved (if deleted) to the SubstrateHolds folder. The message is stored there until the retention period expires and then the message is immediately permanently deleted.
 
 2. **If a Yammer message is not deleted** and for current messages after editing, the message is moved to the SubstrateHolds folder after the retention period expires. This action takes up to seven days from the expiry date. When the message is in the SubstrateHolds folder, it is then immediately permanently deleted. 
 
@@ -67,7 +67,7 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 ### Content paths for retain-only retention policy
 
-1. **If a Yammer message is edited or deleted**: A copy of the original message is created in the SubstrateHolds folder and retained there until the retention period expires. Then the message is immediately permanently deleted from the SubstrateHolds folder.
+1. **If a Yammer message is edited or deleted**: A copy of the original message is immediately created in the SubstrateHolds folder and retained there until the retention period expires. Then the message is immediately permanently deleted from the SubstrateHolds folder.
 
 2. **If the Yammer message is not modified or deleted** and for current messages after editing during the retention period: Nothing happens before and after the retention period; the message remains in its original location.
 
@@ -75,7 +75,7 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 1. **If the Yammer message is not deleted** during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder. This action takes up to seven days from the expiry date. Then the message is immediately permanently deleted from the SubstrateHolds folder.
 
-2. **If the Yammer message is deleted by the user** during the period, the item is moved to the SubstrateHolds folder where it is immediately permanently deleted.
+2. **If the Yammer message is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder where it is immediately permanently deleted.
 
 
 ## Messages and external users

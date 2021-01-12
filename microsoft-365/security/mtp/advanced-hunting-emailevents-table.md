@@ -27,11 +27,11 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-The `EmailEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving the processing of emails on Office 365 ATP. Use this reference to construct queries that return information from this table.
+The `EmailEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving the processing of emails on Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table.
 
 >[!TIP]
 > For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
@@ -57,15 +57,26 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeliveryAction` | string | Delivery action of the email: Delivered, Junked, Blocked, or Replaced |
 | `DeliveryLocation` | string | Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items |
 | `PhishFilterVerdict` | string | Verdict of the email filtering stack on whether the email is phish: Phish or Not Phish |
-| `PhishDetectionMethod` | string | Method used to detect the email as a phish: Malicious URL reputation, ATP Safe Links URL Detonation, Advanced phish filter, General phish filter, Anti-Spoof: Intra-org, Anti-spoof: external domain, Domain impersonation, User impersonation, Brand impersonation |
+| `PhishDetectionMethod` | string | Method used to detect the email as a phish: Malicious URL reputation, Safe Links URL Detonation, Advanced phish filter, General phish filter, Anti-Spoof: Intra-org, Anti-spoof: external domain, Domain impersonation, User impersonation, Brand impersonation |
 | `MalwareFilterVerdict` | string | Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware |
-| `MalwareDetectionMethod` | string | Method used to detect malware in the email: Antimalware engine, File reputation, ATP Safe Attachments |
-| `FinalEmailAction` | string | Final action taken on the email based on filter verdict, policies, and user actions:  Move message to junk mail folder, Add X-header, Modify subject, Redirect message, Delete message, send to quarantine, No action taken, Bcc message |
-| `FinalEmailActionPolicy` | string | Action policy that took effect: Antispam high-confidence, Antispam, Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Safe Attachments, Enterprise Transport Rules (ETR) |
-| `FinalEmailActionPolicyGuid` | string | Unique identifier for the policy that determined the final mail action |
+| `MalwareDetectionMethod` | string | Method used to detect malware in the email: Antimalware engine, File reputation, Safe Attachments |
+| `EmailAction` | string | Final action taken on the email based on filter verdict, policies, and user actions:  Move message to junk mail folder, Add X-header, Modify subject, Redirect message, Delete message, send to quarantine, No action taken, Bcc message |
+| `EmailActionPolicy` | string | Action policy that took effect: Antispam high-confidence, Antispam, Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Safe Attachments, Enterprise Transport Rules (ETR) |
+| `EmailActionPolicyGuid` | string | Unique identifier for the policy that determined the final mail action |
 | `AttachmentCount` | int | Number of attachments in the email |
 | `UrlCount` | int | Number of embedded URLs in the email |
 | `EmailLanguage` | string | Detected language of the email content |
+| `OrgLevelAction` | string | Action taken on the email in response to matches to a policy defined at the organizational level |
+| `OrgLevelPolicy` | string | Organizational policy that triggered the action taken on the email |
+| `UserLevelAction` | string | Action taken on the email in response to matches to a mailbox policy defined by the recipient |
+| `UserLevelPolicy` | string | End-user mailbox policy that triggered the action taken on the email |
+| `Connectors` | string | Custom instructions that define organizational mail flow and how the email was routed |
+| `SenderDisplayName` | string | Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname |
+| `SenderObjectId` | string |Unique identifier for the sender’s account in Azure AD |
+| `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `ThreatNames` | string |Detection name for malware or other threats found |
+| `DetectionMethods` | string | Methods used to detect malware, phishing, or other threats found in the email |
+
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

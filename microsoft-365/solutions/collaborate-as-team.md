@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Collaborate with guests in a team"
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,11 +11,12 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn about the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests in Teams."
+description: Learn about the Microsoft 365 configuration steps necessary to set up a team for task, conversation, and documentation collaboration with guests in Teams.
 ---
 
 # Collaborate with guests in a team
@@ -30,15 +31,15 @@ This video shows the configuration steps described in this document.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
-## Azure Organizational relationships settings
+## Azure External collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the organizational relationships settings to ensure that sharing with guests is not blocked.
+Check the B2B external collaboration settings settings to ensure that sharing with guests is not blocked.
 
 ![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
-To set organizational relationship settings
+To set external collaboration settings
 
 1. Log in to Azure Active Directory at [https://aad.portal.azure.com](https://aad.portal.azure.com).
 2. In the left navigation pane, click **Azure Active Directory**.
@@ -67,6 +68,8 @@ To set Teams guest access settings
 4. In the Teams admin center, in the left navigation pane, expand **Org-wide settings** and click **Guest access**.
 5. Ensure that **Allow guest access in Teams** is set to **On**.
 6. Make any desired changes to the additional guest settings, and then click **Save**.
+
+Once Teams guest access is turned on, you can optionally control guest access to individual teams and their associated SharePoint sites using sensitivity labels. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > It may take up to twenty-four hours for the Teams guest settings to become active after you turn it on.
@@ -146,7 +149,6 @@ Check the site-level sharing settings to make sure that they allow the type of a
 
 ![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
 
-
 To set site-level sharing settings
 1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and click **Active sites**.
 2. Select the site for the team that you just created.
@@ -181,3 +183,5 @@ To invite guests to a team
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
 [SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+
+[Sharing options are greyed out when sharing from SharePoint or OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

@@ -2,7 +2,7 @@
 title: "Install and use the Junk Email Reporting add-in for Microsoft Outlook"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
@@ -30,7 +30,7 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
 ## What do you need to know before you begin?
 
-- To install the Junk Email Reporting add-in, see the [Install the Junk Email Reporting add-in](#install-the-junk-email-reporting-add-in) section later in this topic.
+- To install the Junk Email Reporting add-in, see the [Install the Junk Email Reporting add-in](#install-the-junk-email-reporting-add-in) section later in this article.
 
 - The Junk Email Reporting add-in works with the following versions of Outlook:
 
@@ -65,7 +65,7 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
    - Moved to the Junk Email folder if it was reported as spam.
    - Deleted if it was reported as phishing.
-   
+
    To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
 ## Use the Junk Email Reporting add-in to report non-spam and phishing messages from the Junk Email folder

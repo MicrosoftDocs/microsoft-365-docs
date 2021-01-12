@@ -12,9 +12,9 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
-description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security &amp; Compliance Center.
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -25,22 +25,22 @@ ms.custom: seo-marvel-apr2020
 
 ![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
 
-[Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Security &amp; Compliance Center. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
+[Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Security & Compliance Center. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
 
-- If you have [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) Plan 2, then you have Explorer.
-- If you have Office 365 ATP Plan 1, then you have real-time detections.
+- If you have [Microsoft Defender for Office 365](office-365-atp.md) Plan 2, then you have Explorer.
+- If you have Microsoft Defender for Office 365 Plan 1, then you have real-time detections.
 
-When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show ATP detections, such as malicious URLs detected by [Safe Links](atp-safe-links.md), and malicious files detected by [Safe Attachments](atp-safe-attachments.md). This report can be modified to show data for the past 30 days (with an ATP P2 paid subscription). Trial subscriptions will include data for the past seven days only.
+When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show Microsoft Defender for Office 365 detections, such as malicious URLs detected by [Safe Links](atp-safe-links.md), and malicious files detected by [Safe Attachments](atp-safe-attachments.md). This report can be modified to show data for the past 30 days (with a Microsoft Defender for Office 365 P2 paid subscription). Trial subscriptions will include data for the past seven days only.
 
 ****
 
 |Subscription|Utility|Days of Data|
 |---|---|---|
-|ATP P1 trial|Real-time detections|7|
-|ATP P1 paid|Real-time detections|30|
-|ATP P1 paid testing ATP P2 trial|Threat Explorer|7|
-|ATP P2 trial|Threat Explorer|7|
-|ATP P2 paid|Threat Explorer|30|
+|Microsoft Defender for Office 365 P1 trial|Real-time detections|7|
+|Microsoft Defender for Office 365 P1 paid|Real-time detections|30|
+|Microsoft Defender for Office 365 P1 paid testing Defender for Office 365 P2 trial|Threat Explorer|7|
+|Microsoft Defender for Office 365 P2 trial|Threat Explorer|7|
+|Microsoft Defender for Office 365 P2 paid|Threat Explorer|30|
 |
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
@@ -51,7 +51,7 @@ Once you have selected a view, you can apply filters and set up queries to condu
 
 ## Email > Malware
 
-To view this report, in Explorer (or real-time detections), choose **View** > **Email** > **Malware**. This view shows information about email messages that were identified as containing malware.
+To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Malware**. This view shows information about email messages that were identified as containing malware.
 
 ![View data about email identified as malware](../../media/ExplorerEmailMalwareMenu.png)
 
@@ -67,7 +67,7 @@ Below the chart, view more details about specific messages. When you select an i
 
 ## Email > Phish
 
-To view this report, in Explorer (or real-time detections), choose **View** > **Email** > **Phish**. This view shows email messages identified as phishing attempts.
+To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Phish**. This view shows email messages identified as phishing attempts.
 
 ![View data about email identified as phishing attempts](../../media/ThreatExplorerEmailPhish.png)
 
@@ -87,13 +87,13 @@ When you select an item in the list, such as a URL that was detected, a fly-out 
 
 ## Email > Submissions
 
-To view this report, in Explorer (or real-time detections), choose **View** > **Email** > **Submissions**. This view shows email that users have reported as junk, not junk, or phishing email.
+To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Submissions**. This view shows email that users have reported as junk, not junk, or phishing email.
 
 ![Email messages reported by users](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
 Click **Sender** to open your list of viewing options. Use this list to view information by sender, recipients, report type (the user's determination that the email was junk, not junk, or phish), and more.
 
-For example, to view information about email messages that were reported as phishing attempts, click **Sender** > **Report type**, select **Phish**, and then click the Refresh button.
+For example, to view information about email messages that were reported as phishing attempts, click **Sender** \> **Report type**, select **Phish**, and then click the Refresh button.
 
 ![Phish selected for Report Type filter](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -105,7 +105,7 @@ Select an item in the list to view additional details.
 
 ## Email > All email
 
-To view this report, in Explorer, choose **View** > **Email** > **All mail**. This views shows an all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).
+To view this report, in Explorer, choose **View** \> **Email** \> **All mail**. This views shows an all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).
 
 > [!NOTE]
 > If you get an error that reads **Too much data to display**, add a filter and, if necessary, narrow the date range you're viewing.
@@ -118,7 +118,7 @@ Below the chart, view more details about specific email messages, such as subjec
 
 ## Content > Malware
 
-To view this report, in Explorer (or real-time detections), choose **View** > **Content** > **Malware**. This view shows files that were identified as malicious by [Office 365 Advanced Threat Protection in SharePoint Online, OneDrive for Business, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+To view this report, in Explorer (or real-time detections), choose **View** \> **Content** \> **Malware**. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 View information by malware family, detection technology (how the malware was detected), and workload (OneDrive, SharePoint, or Teams).
 
@@ -134,7 +134,7 @@ With Explorer (and real-time detections), you can apply a filter in a click. Cli
 
 Clicking **ATP Detonation** in this chart results in a view like this:
 
-![Explorer filtered to display only ATP Detonation results](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorer filtered to display only Defender for Office 365 Detonation results](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
 In this view, we are now looking at data for files that were detonated by [Safe Attachments](atp-safe-attachments.md). Below the chart, we can see details about specific email messages that had attachments that were detected by Safe Attachments.
 

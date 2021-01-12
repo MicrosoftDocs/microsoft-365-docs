@@ -77,13 +77,11 @@ The first step is to enable the archive mailbox for each user in your organizati
 
 6. Click **Yes** to close the warning message and start the process to enable the archive mailbox for each selected mailbox.
 
-7. When the process is complete, click **Refresh** ![refresh](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the list on the **Archive** page. 
+7. When the process is complete, click **Refresh** ![refresh](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the list on the **Archive** page.
 
     The archive mailbox is enabled for all user's in your organization.
 
     ![The list of mailboxes with the archive mailbox enabled](../media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
-  
-8. Leave the Security & Compliance Center open. You'll use it in the next step.
 
 ## Step 2: Create new retention tags for the archive and deletion policies
 
@@ -95,15 +93,11 @@ In this step, you'll create the three custom retention tags that were previously
 
 - Alpine House Deleted Items 5 Years Delete and Allow Recovery (custom tag for the Deleted Items folder)
 
-To create new retention tags, you'll use the Exchange admin center (EAC) in your Exchange Online organization.
+To create new retention tags, you'll use the Exchange admin center (EAC) in your Exchange Online organization. Be sure to use the classic version of the EAC.
   
-1. In the Security & Compliance Center, click the app launcher  in the upper left corner, and then click the **Admin** tile.
-
-2. In the left navigation pane of the Microsoft 365 admin center, click **Admin centers**, and then click **Exchange**.
-
-    ![Screenshot shows the Microsoft 365 admin center with the Admin centers option expanded and Exchange selected.](../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+1. Go to [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) and sign in using your credentials.
   
-3. In the EAC, go to **Compliance management** \> **Retention tags**
+2. In the EAC, go to **Compliance management** > **Retention tags**
 
     A list of the retention tags for your organization is displayed.
 
@@ -179,7 +173,7 @@ The last retention tag that you'll create is a custom retention policy tag (RPT)
 
 After you create the custom retention tags, the next step is to create a new retention policy and add the retention tags. You'll add the three custom retention tags that you created in Step 2, and the built-in tags that were mentioned in the first section. In Step 4, you'll assign this new retention policy to user mailboxes.
   
-1. In the EAC, go to **Compliance management** \> **Retention policies**.
+1. In the EAC, go to **Compliance management** > **Retention policies**.
 
 2. On the **Retention policies** page, click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
 
@@ -208,7 +202,7 @@ After you create the custom retention tags, the next step is to create a new ret
 
 When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy (because a mailbox can have only one retention policy assigned to it) by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. This step assumes that you'll assign the new policy to all mailboxes in your organization.
   
-1. In the EAC, go to **Recipients** \> **Mailboxes**.
+1. In the EAC, go to **Recipients** > **Mailboxes**.
 
     A list of all user mailboxes in your organization is displayed.
 
@@ -253,7 +247,7 @@ Here are the steps to connect to Exchange Online PowerShell, and then run the Ma
 That's it! You've set up an archive and deletion policy for the Alpine House organization.
 
 > [!NOTE]
-> As previously stated, the Managed Folder Assistant processes mailboxes at least once every 7 days. So it's possible that a mailbox can be processed by the Managed Folder Assistant more frequently. Also, admins can't predict the next time a mailbox is processed by the Managed Folder Assistant, which is one reason why you may want to run it manually. However, if you want to temporarily prevent the Managed Folder Assistant from applying the new retention settings to a mailbox, you can run the `Set-Mailbox -ElcProcessingDisabled $true` command to temporarily disable the the Managed Folder Assistant from processing a mailbox. To re-enable the Managed Folder Assistant for a mailbox, run the `Set-Mailbox -ElcProcessingDisabled $false` command.
+> As previously stated, the Managed Folder Assistant processes mailboxes at least once every 7 days. So it's possible that a mailbox can be processed by the Managed Folder Assistant more frequently. Also, admins can't predict the next time a mailbox is processed by the Managed Folder Assistant, which is one reason why you may want to run it manually. However, if you want to temporarily prevent the Managed Folder Assistant from applying the new retention settings to a mailbox, you can run the `Set-Mailbox -ElcProcessingDisabled $true` command to temporarily disable the the Managed Folder Assistant from processing a mailbox. To re-enable the Managed Folder Assistant for a mailbox, run the `Set-Mailbox -ElcProcessingDisabled $false` command. Finally, if a mailbox user has a disabled account, we will not process the move items to archive action for that mailbox.
   
 ## (Optional) Step 6: Make the new retention policy the default for your organization
 
