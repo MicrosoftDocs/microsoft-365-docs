@@ -78,7 +78,7 @@ To get you started using Advanced eDiscovery, here's a basic workflow that align
 
 2. **[Search data sources for data relevant to the case](collecting-data-for-ediscovery.md)**. After you add custodians and non-custodial data sources to a case, use the built-in search tool to search these data sources for data that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
 
-   - View [search statistics](search-statistics.md) that may help you refine a search query to narrow the results.
+   - View [search statistics](search-statistics-in-advanced-ediscovery.md) that may help you refine a search query to narrow the results.
 
    - Preview the search results to quickly verify whether the relevant data is being found.
 
@@ -92,7 +92,7 @@ To get you started using Advanced eDiscovery, here's a basic workflow that align
 
    - [View documents](view-documents-in-review-set.md). This includes viewing the metadata for each document in a review set, and viewing the document in its native version or text version.
 
-   - [Create queries and filters](review-set-search.md). You create search queries using a variety of search criteria (including the ability to search all [file metadata properties](document-metadata-fields-in-advanced-ediscovery.md)) to further refine and cull the case data to what is most relevant to the case. You can also use review set filters to quickly apply additional conditions to the results of a search query to further refine those results. 
+   - [Create queries and filters](review-set-search.md). You create search queries using various search criteria (including the ability to search all [file metadata properties](document-metadata-fields-in-advanced-ediscovery.md)) to further refine and cull the case data to what is most relevant to the case. You can also use review set filters to quickly apply other conditions to the results of a search query to further refine those results. 
 
    - [Create and use tags](tagging-documents.md). You can apply tags to documents in a review set to identify which are responsive (or non-responsive to the case) and then use those tags when creating search queries to include or exclude the tagged documents. You can also tagging to determine which documents to export.
 
