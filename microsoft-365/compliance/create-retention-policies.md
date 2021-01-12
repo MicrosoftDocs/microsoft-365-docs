@@ -252,13 +252,18 @@ For example, if a policy includes all Exchange email and all SharePoint sites, a
 
 ### A policy with specific inclusions or exclusions
 
-Only if you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits to be aware of: 
+Only if you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of: 
 
 - Maximum numbers for a retention policy:
-  - 1,000 mailboxes
+  - 1,000 mailboxes (user mailboxes or group mailboxes)
   - 1,000 Microsoft 365 groups
   - 1,000 users for Teams private chats
   - 100 sites (OneDrive or SharePoint)
+
+These limitations are per policy, so if you need to use specific inclusions or exclusions that result in going over these numbers, you can create additional retention policies that have the same retention settings. See the next section for some [example scenarios and solutions](#examples-of-using-inclusions-and-exclusions) that use multiple retention policies for this reason. Multiple retention policies result in higher administrative overheads, so always challenge whether you really need inclusions and exclusions.
+
+> [!TIP]
+> If do you need to create and maintain multiple retention policies for this scenario, consider using [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) for more efficient configuration.
 
 There is also a maximum number of policies that are supported for a tenant: 10,000. However, for Exchange Online, the maximum number is 1,800. The maximum number includes retention policies, retention label policies, and auto-apply retention policies.
 
@@ -275,13 +280,15 @@ To use the optional configuration to scope your retention settings, make sure th
 
 #### Examples of using inclusions and exclusions
 
+The following examples provide some design solutions for when you can't specify just the location for a retention policy, and must take into account the limitations documented in the previous section.
+
 Exchange example:
 
-- **Requirement**: In an organization that has over 40,000 mailboxes, most users must have their email retained for 7 years but a subset of identified users (425) must have their email retained for only 5 years.
+- **Requirement**: In an organization that has over 40,000 user mailboxes, most users must have their email retained for 7 years but a subset of identified users (425) must have their email retained for only 5 years.
 
 - **Solution**: Create one retention policy for Exchange email with a retention period of 7 years and exclude the subset of users. Then create a second retention policy for Exchange email with a retention period of 5 years and include the subset of users. 
     
-    In both cases, the number included and excluded is below the maximum number of specified mailboxes for a single policy, and the subset of users must be explicitly excluded from the first policy because it has a [longer retention period](retention.md#the-principles-of-retention-or-what-takes-precedence ) than the second policy. If the subset of users required a longer retention policy, you wouldn't need to exclude them from the first policy. 
+    In both cases, the number included and excluded is below the maximum number of specified mailboxes for a single policy, and the subset of users must be explicitly excluded from the first policy because it has a [longer retention period](retention.md#the-principles-of-retention-or-what-takes-precedence) than the second policy. If the subset of users required a longer retention policy, you wouldn't need to exclude them from the first policy.
      
     With this solution, if anybody new joins the organization, their mailbox is automatically included in the first policy for 7 years and there is no impact to the maximum numbers supported. However, new users that require the 5 year retention period add to the include and exclude numbers, and this limit would be reached at 1,000.
 
