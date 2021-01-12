@@ -66,6 +66,8 @@
           href: whats-new-in-preview.md
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
+        - name: Manage multiple tenants
+          href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
         - name: About Office 365 operated by 21Vianet
@@ -223,10 +225,11 @@
               href: productivity/mobility.md
             - name: Teamwork
               href: productivity/teamwork.md
+            - name: Meetings
+              href: productivity/meetings.md
             - name: Microsoft 365 Apps health
               href: productivity/apps-health.md
-            - name: Create DNS records at any DNS host
-              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+            
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info

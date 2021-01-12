@@ -25,7 +25,7 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
-        - name: Configure M365E endpoint whitelisting
+        - name: Configure endpoints to bypass
           items: 
             - name: Office 365 IP Address and URL Web service
               href: microsoft-365-ip-web-service.md
