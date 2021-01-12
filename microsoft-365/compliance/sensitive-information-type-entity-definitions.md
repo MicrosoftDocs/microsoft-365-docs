@@ -875,7 +875,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - personalausweis republik österreich
 
 ## Austria passport number
-This sensitive information type entity is only available in the EU Passport Number sensitiveinformation type.
 
 ### Format
 
@@ -895,26 +894,42 @@ not applicable
   
 ### Definition
 
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_austria_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_austria_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_austria_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_austria_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_austria_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Passport Number -->
+      <Entity id="1c96ae4e-303b-447d-86c7-77113ac266bf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_austria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -937,8 +952,8 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Passnummer
 - reisepässe
 
-## Austria social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
+
+## Austria social security number
 
 ### Format
 
@@ -958,44 +973,57 @@ Yes
   
 ### Definition
 
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_austria_eu_
-- _or_equivalent` finds content that matches the pattern. 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern. 
 - a keyword from  `Keywords_austria_eu_ssn_or_equivalent` is found. 
     
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern. 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Social Security Number -->
+      <Entity id="6896a906-86c9-4d19-a2da-6e43ccd19b7b" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_austria_eu_ssn_or_equivalent" />
         </Pattern>
-<Pattern confidenceLevel="75">
-            <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
-          </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_austria_eu_telephone_number" />
+            <Match idRef="Keywords_austria_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### Keywords
 
 #### Keywords_austria_eu_ssn_or_equivalent
 
+- austrian ssn
+- ehic number
+- ehic no
+- insurance code
+- insurancecode#
+- insurance number
+- insurance no
+- krankenkassennummer
+- krankenversicherung
+- socialsecurityno
+- socialsecurityno#
 - social security no
 - social security number
 - social security code
-- insurance number
-- austrian ssn
+- sozialversicherungsnummer
+- sozialversicherungsnummer#
+- soziale sicherheit kein
+- sozialesicherheitkein#
 - ssn#
 - ssn
-- insurance code
-- insurance code#
-- socialsecurityno#
-- sozialversicherungsnummer
-- soziale sicherheit kein
+- versicherungscode
 - versicherungsnummer
+- zdravstveno zavarovanje
 
 ## Austria tax identification number
 
@@ -1881,7 +1909,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - tin#
 
 ## Belgium passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -1897,26 +1924,44 @@ not applicable
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+ A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_belgium_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_belgium_eu_passport_number` is found.
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_belgium_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date2` finds date in the format DD MM YY or a keyword from `Keywords_eu_passport_date` or `Keywords_belgium_eu_passport_number` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_belgium_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_belgium_eu_passport_number` is found. 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Passport Number -->
+      <Entity id="d7b1315b-21ca-4774-a32a-596010ff78fd" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+            <Match idRef="Keywords_belgium_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_belgium_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -1941,66 +1986,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Pass-Nr
 - Passnummer
 - reisepass kein
-
-## Belgium social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-11 digits without spaces or delimiters
-  
-### Pattern
-
-11 digits
-  
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_belgium_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_belgium_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_belgium_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_belgium_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_belgium_eu_ssn_or_equivalent
-
-- belgian national number
-- national number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- personal id number
-- personalidnumber#
-- numéro national
-- numéro de sécurité
-- numéro d'assuré
-- identifiant national
-- identifiantnational#
-- numéronational#
 
 
 ## Belgium value added tax number
@@ -2538,7 +2523,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Bulgaria passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -2554,25 +2538,41 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_bulgaria_eu_passport_number` or `Keywords_eu_passport_number_common`is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found. 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Bulgaria Passport Number -->
+      <Entity id="f7172b82-c588-4216-845e-4e54e397f29a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_bulgaria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -2590,6 +2590,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - номер на паспорта
 - номер на паспорт
 - паспорт №
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
 
 ## Canada bank account number
 
@@ -3825,7 +3830,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Croatia passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -3841,21 +3845,37 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_croatia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_croatia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_croatia_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_croatia_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_croatia_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Passport Number -->
+      <Entity id="7d7a729d-32d8-4204-8d01-d5e6a6c25581" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_croatia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### Keywords
 
@@ -3951,68 +3971,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin no
 - tin#
 
-## Croatia social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
-### Format
-
-11 digits without spaces and delimiters
-  
-### Pattern
-
-11 digits:
-  
-- ten digits
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_croatia_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_croatia_eu_ssn_or_equivalent
-
-- personal identification number
-- master citizen number
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- personal id number
-- personalidnumber#
-- oib
-- osobni identifikacijski broj
-
-   
 ## Cyprus drivers license number
 
 ### Format
@@ -4225,7 +4184,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Cyprus passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -4241,21 +4199,37 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_cyprus_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_cyprus_eu_passport_number` is found. 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_cyprus_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_cyprus_eu_passport_number` is found. 
+- The regular expression `Regex_cyprus_eu_passport_date` finds date in the format DD/MM/YYYY or a keyword from `Keywords_cyprus_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_cyprus_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_cyprus_eu_passport_number` is found.  
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Passport Number -->
+      <Entity id="9193e2e8-7f8c-43c1-a274-ac40d651936f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_cyprus_eu_passport_date" />
+            <Match idRef="Keywords_cyprus_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_cyprus_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
@@ -4286,6 +4260,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - pasaport numarası
 - Pasaport no.
 - Αρ. Διαβατηρίου
+
+#### Keywords_cyprus_eu_passport_date
+
+- expires on
+- issued on
+
 
 ## Cyprus tax identification number
 This sensitive information type is only available for use in:
@@ -4534,7 +4514,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Czech passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -4550,21 +4529,37 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_czech_republic_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_czech_republic_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_czech_republic_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_czech_republic_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_czech_republic_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Czech Republic Passport Number -->
+      <Entity id="7bcd8ce8-5e92-4bbe-bc92-fa669f0369fa" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_czech_republic_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
@@ -4589,6 +4584,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - cestovní pasu
 - passeport no
 - čísla pasu
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
 
 
 ## Czech personal identity number
@@ -4690,68 +4690,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin no
 - tin#
 - unique identification number
-
-
-## Czech social security number or equivalent identification
-
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-ten digits and a backslash in the specified pattern
-  
-### Pattern
-
-ten digits and a backslash:
-  
-- six digits that correspond to the birth date (YYMMDD): 
-- a backslash
-- three digits that correspond to a serial number that separates persons born on the same date
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_czech_republic_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_czech_republic_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_czech_republic_eu_ssn_or_equivalent` finds content that matches the pattern. 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_czech_republic_eu_ssn_or_equivalent
-
-- birth number
-- national identification number
-- personal identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- personal id number
-- personalidnumber#
-- rč
-- rodné číslo
-- rodne cislo
 
 
 ## Denmark driver's license number
@@ -4917,7 +4855,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Denmark passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -4933,21 +4870,38 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_denmark_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_denmark_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_denmark_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date2` finds date in the format DD MM YY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_denmark_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_denmark_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Passport Number -->
+      <Entity id="25e8c47e-e6fe-4884-a211-74898f8c0196" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_denmark_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### Keywords
@@ -4970,6 +4924,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - pasnummer
 - Passeport n°
 - pasnumre
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
 
 
 ## Denmark personal identification number
@@ -5087,64 +5046,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - sygesikringskortnummer
 - sygesikringsnr
 - sygesikringsnummer
-
-
-## Denmark social security number or equivalent identification
-This sensitive information type entity is only available the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-ten digits and a hyphen in the specified pattern
-  
-### Pattern
-
-ten digits and a hyphen:
-  
-- six digits that correspond to the birth date (DDMMYY) 
-- a hyphen
-- four digits that correspond to a sequence number
-
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_denmark_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_denmark_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_denmark_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_denmark_eu_ssn_or_equivalent
-
-- personal identification number
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- personal id number
-- personalidnumber#
-- cpr-nummer
-- personnummer
 
 
 ## Drug Enforcement Agency (DEA) number
@@ -5460,7 +5361,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Estonia passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -5476,21 +5376,37 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_estonia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Passport Number -->
+      <Entity id="61f7073a-509e-425b-a754-bc01bb5d5b8c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_estonia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
@@ -5516,6 +5432,12 @@ passinumbrid
 document number
 document no
 dokumendi nr
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## EU debit card number
 
@@ -5972,19 +5894,19 @@ These are the entities in the EU passport number sensitive information typeThese
 
 These are the entities that are in the EU Social Security Number or equivalent identification sensitive information type.
 
-- [Austria](#austria-social-security-number-or-equivalent-identification)
-- [Belgium](#belgium-social-security-number-or-equivalent-identification)
-- [Croatia](#croatia-social-security-number-or-equivalent-identification)
-- [Czech](#czech-social-security-number-or-equivalent-identification)
-- [Denmark](#denmark-social-security-number-or-equivalent-identification)
-- [Finland](#finland-social-security-number-or-equivalent-identification)
+- [Austria](#austria-social-security-number)
+- [Belgium](#belgium-national-number)
+- [Croatia](#croatia-personal-identification-oib-number)
+- [Czech](#czech-personal-identity-number)
+- [Denmark](#denmark-personal-identification-number)
+- [Finland](#finland-national-id)
 - [France](#france-social-security-number-insee-or-equivalent-identification)
 - [Germany](#germany-identity-card-number)
 - [Greece](#greece-national-id-card)
-- [Hungary](#hungary-social-security-number-or-equivalent-identification)
+- [Hungary](#hungary-social-security-number-taj)
 - [Portugal](#portugal-citizen-card-number)
 - [Spain](#spain-social-security-number-ssn)
-- [Sweden](#sweden-social-security-number-or-equivalent-identification)
+- [Sweden](#sweden-national-id)
 
 
 ## EU Tax identification number
@@ -6350,7 +6272,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Finland passport number
-This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 combination of nine letters and digits
@@ -6406,78 +6327,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - passin numero.
 - passi#
 - passi number
-
-
-## Finland social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-An 11-character combination in the specified format
-  
-### Pattern
-
-an 11-character combination in the specified format:
-  
-- six digits 
-- one instance of one of the following:
-  - plus symbol
-  - minus symbol
-  - the letter "A" (not case-sensitive)
-- three digits
-- one letter or one digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_finland_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_finland_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_finland_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_finland_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_finland_eu_ssn_or_equivalent
-
-- identification number
-- personal id
-- identity number
-- finnish national id number
-- personalidnumber#
-- national identification number
-- id number
-- national id no.
-- national id number
-- id no
-- tunnistenumero
-- henkilötunnus
-- yksilöllinen henkilökohtainen tunnistenumero
-- ainutlaatuinen henkilökohtainen tunnus
-- identiteetti numero
-- suomen kansallinen henkilötunnus
-- henkilötunnusnumero#
-- kansallisen tunnistenumero
-- tunnusnumero
-- kansallinen tunnus numero
-- hetu
 
 
 ## France driver's license number
@@ -7260,7 +7109,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 
 ## Germany passport number
-This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -7282,12 +7130,12 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_german_passport finds content that matches the pattern.
-- A keyword from `Keyword_german_passport` is found.
+- A keyword from `Keyword_german_passport` or `Keywords_eu_passport_number_common` is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_german_passport_data finds content that matches the pattern.
-- A keyword from `Keyword_german_passport` is found.
+- A keyword from `Keyword_german_passport` or `Keywords_eu_passport_number_common` is found.
 - The checksum passes.
 
 ```xml
@@ -7295,11 +7143,17 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
     <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
     </Entity>
 ```
@@ -7317,6 +7171,20 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - reisepässe
 - passeport no.
 - passeport no
+
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 
 ## Germany tax identification number
 
@@ -7680,8 +7548,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Greece passport number
 
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
-
 ### Format
 
 Two letters followed by seven digits with no spaces or delimiters
@@ -7696,27 +7562,42 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_greece_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_greece_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_greece_eu_passport_number` is found. 
+- The regular expression `Regex_greece_eu_passport_date` finds date in the format DD MMM YY (Example - 28 Aug 19) or a keyword from `Keywords_greece_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_greece_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_greece_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Passport Number -->
+      <Entity id="7e65eb47-cdf9-4f52-8f90-2a27d5ee67e3" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_greece_eu_passport_date" />
+            <Match idRef="Keywords_greece_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_greece_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -7734,6 +7615,65 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - αριθμός διαβατηρίου
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
+
+
+## Greece Social Security Number (AMKA)
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
+
+### Format
+
+Eleven digits without spaces and delimiters
+  
+### Pattern
+
+- 6 digits as date of birth YYMMDD
+- 4 digits
+- a check digit
+  
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_greece_eu_ssn` finds content that matches the pattern. 
+- A keyword from  `Keywords_greece_eu_ssn_or_equivalent` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_greece_eu_ssn` finds content that matches the pattern. 
+
+```xml
+      <!-- Greece Social Security Number (AMKA) -->
+      <Entity id="e39b03f4-50ea-41ae-af7a-a4b9539596ad" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+          <Match idRef="Keywords_greece_eu_ssn_or_equivalent" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keywords_greece_eu_ssn_or_equivalent
+
+- ssn
+- ssn#
+- social security no
+- socialsecurityno#
+- social security number
+- amka
+- a.m.k.a.
+- Αριθμού Μητρώου Κοινωνικής Ασφάλισης
+
 
 ## Greece tax identification number
 This sensitive information type is only available for use in:
@@ -8123,8 +8063,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Hungary passport number
 
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
-
 ### Format
 
 Two letters followed by six or seven digits with no spaces or delimiters
@@ -8139,26 +8077,41 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_hungary_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_hungary_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_hungary_eu_passport_number` is found. 
+- The regular expression `Regex_hungary_eu_passport_date` finds date in the format  DD MMM/MMM YY (Example - 01 MÁR/MAR 12) or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_hungary_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_hungary_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungary Passport Number -->
+      <Entity id="5b483910-9aa7-4c99-9917-f4001464bda7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_hungary_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_hungary_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -8177,9 +8130,8 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Útlevelek száma
 - útlevél szám
 
-## Hungary social security number or equivalent identification
 
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
+## Hungary social security number (TAJ)
 
 ### Format
 
@@ -8205,16 +8157,16 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - The function  `Func_hungary_eu_ssn_or_equivalent` finds content that matches the pattern. 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungarian Social Security Number (TAJ) -->
+      <Entity id="0de78315-9537-47f5-95ab-b3e77eba3993" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_hungary_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
+        </Pattern>
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
+        </Pattern>
+      </Entity>
 ```
 
 ### Keywords
@@ -8895,8 +8847,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Ireland passport number
 
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
-
 ### Format
 
 Two letters or digits followed by seven digits with no spaces or delimiters
@@ -8914,22 +8864,37 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_ireland_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_ireland_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_ireland_eu_passport_number` is found. 
+- The regular expression `Regex_ireland_eu_passport_date` finds date in the format DD MMM/MMM YYYY (Example - 01 BEA/MAY 1988) or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_ireland_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_ireland_eu_passport_number` is found.
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Passport Number -->
+      <Entity id="a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_ireland_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_ireland_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
@@ -8956,6 +8921,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - uimhreacha pas
 - uimhir cárta
 - uimhir chárta
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Ireland personal public service (PPS) number
 
@@ -9292,7 +9263,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Italy passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -9311,21 +9281,37 @@ not applicable
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_italy_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_italy_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_italy_eu_passport_number` is found. 
+- The regular expression `Regex_italy_eu_passport_date` finds date in the format DD MMM/MMM YYYY (Example - 01 GEN/JAN 1988) or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_italy_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_italy_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Italy Passport Number -->
+      <Entity id="39811019-4750-445f-b26d-4c0e6c431544" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_italy_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_italy_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
@@ -9352,6 +9338,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - numero di passaporto
 - numeri del passaporto
 - passeport italien
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Italy value added tax number
 This sensitive information type is only available for use in:
@@ -10215,7 +10207,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - voter’s number
 
 ## Latvia passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -10234,21 +10225,37 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_latvia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Passport Number -->
+      <Entity id="23ae25ec-cc28-421b-b77a-3054eadf1ede" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_latvia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
@@ -10274,6 +10281,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - pases nr
 - passeport no
 - n° du Passeport
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Lithuania driver's license number
 
@@ -10527,7 +10540,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - uniqueidentityno#
 
 ## Lithuania passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -10543,26 +10555,42 @@ not applicable
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_lithuania_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_lithuania_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_lithuania_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_lithuania_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_lithuania_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Passport Number -->
+      <Entity id="1b79900f-047b-4c3f-846f-7d73b5534bce" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_lithuania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -10580,6 +10608,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - paso numeris
 - paso numeriai
 - paso nr
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Luxemburg driver's license number
 
@@ -10819,7 +10853,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - uniqueidkey#
 
 ## Luxemburg passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -10835,28 +10868,76 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_nation_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_nation_eu_passport_number` is found. 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_nation_eu_passport_number" />
-          <Match idRef="Keywords_nation_eu_passport_number" />
+      <!-- Luxemburg Passport Number -->
+      <Entity id="81d5c027-bed9-4421-91a0-3b2e55b3eb85" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_nation_eu_passport_number
+#### Keywords_eu_passport_number
 
-- passport number
-- latvian passport number
-- passport no
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+#### Keywords_luxemburg_eu_passport_number
+- ausweisnummer
+- luxembourg pass
+- luxembourg passeport
+- luxembourg passport
+- no de passeport
+- no-reisepass
+- nr-reisepass
+- numéro de passeport
+- pass net
+- pass nr
 - passnummer
+- passeport nombre
+- reisepässe
+- reisepass-nr
+- reisepassnummer
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Luxemburg national identification number (non natural persons)
 
@@ -11251,7 +11332,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 
 ## Malta passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -11267,26 +11347,39 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_malta_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_malta_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_malta_eu_passport_number` is found. 
+- A keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_malta_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_malta_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Passport Number -->
+      <Entity id="b2b21198-48f9-4d13-b2a5-03969bff0fb8" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
+          <Match idRef="Keywords_eu_passport_date" />
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_malta_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -11304,6 +11397,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - numru tal-passaport
 - numri tal-passaport
 - Nru tal-passaport
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Malta tax identification number
 
@@ -11624,7 +11723,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Netherlands passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -11640,31 +11738,57 @@ not applicable
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_netherlands_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_netherlands_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_netherlands_eu_passport_number` is found. 
+- The regular expression `Regex_netherlands_eu_passport_date` finds date in the format  DD MMM/MMM YYYY (Example - 26 MAA/MAR 2012)
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_netherlands_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_netherlands_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Passport Number -->
+      <Entity id="61786727-bafd-45f6-94d9-888d815e228e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_netherlands_eu_passport_number" />
+          <Match idRef="Regex_netherlands_eu_passport_date" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_passport_number" />
-          <Match idRef="Keywords_netherlands_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_netherlands_eu_passport_number
 
-- dutch passport number
-- passport number
-- netherlands passport number
-- nederlanden paspoort nummer
-- paspoort
-- nederlanden paspoortnummer
+- paspoort nummer
+- paspoortnummers
 - paspoortnummer
+- paspoort nr
 
 ## Netherlands tax identification number
 This sensitive information type is only available for use in:
@@ -12945,7 +13069,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - carta de condução
 
 ## Portugal passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -12964,26 +13087,42 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_portugal_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_portugal_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_portugal_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_portugal_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_portugal_eu_passport_number` is found.
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Passport Number -->
+      <Entity id="080a52fd-a7bc-431e-b54d-51f08f59db11" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_portugal_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -13008,6 +13147,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - portuguese passports
 - número passaporte
 - números passaporte
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Portugal tax identification number
 
@@ -13344,7 +13489,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - uniqueidentityno
 
 ## Romania passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -13360,26 +13504,42 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_romania_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_romania_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_romania_eu_passport_number` is found. 
+- The regular expression `Regex_romania_eu_passport_date` finds date in the format DD MMM/MMM YY (Example- 01 FEB/FEB 10) or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_romania_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_romania_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Passport Number -->
+      <Entity id="5d31b90c-7fe2-4a76-a14b-767b8fd19d6c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_romania_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_romania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -13398,6 +13558,12 @@ numărul pașaportului
 numarul pasaportului
 numerele pașaportului
 Pașaport nr
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Russia passport number domestic
 This sensitive information type is only available for use in:
@@ -13880,7 +14046,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - tin#
 
 ## Slovakia passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -13896,26 +14061,42 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovakia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_slovakia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_slovakia_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_slovakia_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_slovakia_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Passport Number -->
+      <Entity id="238e1f08-d80e-4793-af33-9b57918335b7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovakia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -13935,6 +14116,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - pas č.
 - Passeport n°
 - n° Passeport
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Slovenia driver's license number
 
@@ -14179,7 +14366,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - uniqueidentityno#
 
 ## Slovenia passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -14199,26 +14385,42 @@ No
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovenia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_slovenia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_slovenia_eu_passport_number` is found. 
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_slovenia_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_slovenia_eu_passport_number` is found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Passport Number -->
+      <Entity id="235b7976-7bbe-4df5-bb40-08678e749d1a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovenia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -14239,6 +14441,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - datum rojstva
 - potni list
 - številke potnih listov
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Slovenia tax identification number
 This sensitive information type is only available for use in:
@@ -14681,7 +14889,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - uniqueid#
 
 ## Spain passport number
-This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -14701,26 +14908,42 @@ Not applicable
   
 ### Definition
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_spain_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_spain_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_spain_eu_passport_number` is found. 
+- The regular expression `Regex_spain_eu_passport_date` finds date in the format DD-MM-YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_spain_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_spain_eu_passport_number` is found.
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Spain Passport Number -->
+      <Entity id="d17a57de-9fa5-4e9f-85d3-85c26d89686e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_spain_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_spain_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -14748,9 +14971,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - pasaporte n°
 - spain passport
 
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Spain social security number (SSN)
-This sensitive information type entity is included in the EU Social Security Number or Equivalent ID sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -15285,66 +15512,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - PasseportNon 
 - Passeportn ° 
 
-## Sweden social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-12 digits without spaces and delimiters
-  
-### Pattern
-
-12 digits:
-  
-- eight digits that correspond to the birth date (YYYYMMDD) 
-- three digits that correspond to a serial number where: 
-  - the last digit in the serial number indicates gender by the assignment of an odd number for male and an even number for female
-  - up to 1990, the assignment of serial number corresponded to the county where the bearer of the number was born or (if born before 1947) where he/she had been living, according to tax records, on January 1, 1947, with a special code (usually 9 as the 7th digit) for immigrants 
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_sweden_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_sweden_eu_ssn_or_equivalent
-
-- personal id number
-- identification number
-- personal id no
-- identity no
-- identification no
-- personal identification no
-- personnummer id
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer#
-- identifikationsnumret#
 
 ## Sweden tax identification number
 This sensitive information type is only available for use in:
