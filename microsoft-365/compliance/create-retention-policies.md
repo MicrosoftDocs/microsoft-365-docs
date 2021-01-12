@@ -260,14 +260,12 @@ Only if you use the optional configuration to scope your retention settings to s
   - 1,000 users for Teams private chats
   - 100 sites (OneDrive or SharePoint)
 
-These limitations are per policy, so if you need to use specific inclusions or exclusions that result in going over these numbers, you can create additional retention policies that have the same retention settings. See the next section for some [example scenarios and solutions](#examples-of-using-inclusions-and-exclusions) that use multiple retention policies for this reason. Multiple retention policies result in higher administrative overheads, so always challenge whether you really need inclusions and exclusions.
+These limitations are per policy, so if you need to use specific inclusions or exclusions that result in going over these numbers, you can create additional retention policies that have the same retention settings. See the next section for some [example scenarios and solutions](#examples-of-using-inclusions-and-exclusions) that use multiple retention policies for this reason. Multiple retention policies result in higher administrative overheads, so always challenge whether you really need inclusions and exclusions. Remember that the default configuration that applies to the entire location doesn't have any limitations, and this configuration choice might be a better solution than creating and maintaining multiple policies.
 
 > [!TIP]
 > If do you need to create and maintain multiple retention policies for this scenario, consider using [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) for more efficient configuration.
 
 There is also a maximum number of policies that are supported for a tenant: 10,000. However, for Exchange Online, the maximum number is 1,800. The maximum number includes retention policies, retention label policies, and auto-apply retention policies.
-
-If your retention policies are likely to be subject to these limitations, use the default configuration that applies to the entire location because these policies don't have any limitations.
 
 To use the optional configuration to scope your retention settings, make sure the **Status** of that location is **On**, and then use the links to include or exclude specific users, Microsoft 365 groups, or sites.
 
