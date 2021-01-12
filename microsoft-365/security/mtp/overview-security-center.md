@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 
+ms.date: 01/12/2021
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
@@ -109,7 +109,7 @@ As admins and operations teams work, they will find other points where features 
 
 :::image type="content" source="../../media/converged-help.gif" alt-text="The animated graphic shows the home page with the 'help' question mark in the upper right corner, and then the Need Help panel prompting people to type in their issue.":::
 
- If you use **Office 365 Cloud App Security**, you can leverage its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**. <p> **Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams.
+ If you use **Office 365 Cloud App Security**, you can use its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**. <p> **Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams.
 
 ![Office 365 Cloud App Security page in the Microsoft 365 security center](../../media/converged-advanced-alerts-1.png)
 
