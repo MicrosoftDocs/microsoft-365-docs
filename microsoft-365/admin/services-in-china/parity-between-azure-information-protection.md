@@ -43,8 +43,6 @@ The following list includes the existing gaps between Azure Information Protecti
 
 - The [Mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) is not supported by Azure China 21Vianet.
 
-- Sensitivity labels are not supported in SharePoint Online and Office on the web. 
-
 ## Configuring Azure Information Protection for customers in China
 
 ### Enable Rights Management for the tenant
