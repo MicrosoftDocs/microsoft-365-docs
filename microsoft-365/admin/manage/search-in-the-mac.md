@@ -53,13 +53,13 @@ If you select the "More actions" menu next to their name, you can reset their pa
 
 You can search for Groups by group name or group email address. You can select the Group and edit the group from any page.
 
-### Tips to improve Group search results
+**Tips to improve Group search results**
 
-Make sure you spell the Group name correctly.
+Make sure you spell the group name correctly.
 
 ## Actions
 
-Actions category contains frequently used actions in M365 Admin Center. Think of actions as verb in the system. For example, you can also search "reset password" from any page and then reset one or more passwords for users. You can search for “delete a user” and delete the user from the Delete user page .
+You can search for Actions category contains frequently used actions in M365 Admin Center. Think of actions as verb in the system. For example, you can also search "reset password" from any page and then reset one or more passwords for users. You can search for “delete a user” and delete the user from the Delete user page .
 
 ## Navigation
 
