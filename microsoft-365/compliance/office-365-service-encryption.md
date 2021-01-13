@@ -40,7 +40,7 @@ Using Customer Key, you can generate your own cryptographic keys using either an
 
 Another benefit of Customer Key is the control you have over the ability of Microsoft to process your data. If you want to remove data from Office 365, such as if you want to terminate service with Microsoft or remove a portion of your data stored in the cloud, you can do so and use Customer Key as a technical control. Removing data ensures that no one, including Microsoft, can access or process the data. Customer Key is in addition and complementary to Customer Lockbox that you use to control access to your data by Microsoft personnel.
 
-To learn how to set up Customer Key for Microsoft 365 for Exchange Online, Teams, SharePoint Online, including Team Sites, and OneDrive for Business, see these articles:
+To learn how to set up Customer Key for Microsoft 365 for Exchange Online, Microsoft Teams, SharePoint Online, including Team Sites, and OneDrive for Business, see these articles:
 
 - [Service encryption with Customer Key](customer-key-overview.md)
 
