@@ -44,7 +44,7 @@ If you select the "More actions" menu next to their name, you can reset their pa
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password.png" alt-text="Screenshot: User search with the option to reset password from search result":::
 
-### Tips to improve user search results
+**Tips to improve user search results**
 
 - Make sure you spell the users'    names correctly as user searches are matched exactly against the earlier mentioned properties. For example, in the above example, Jus or Malz will work but misspelling like  for Jostin will not find this user.
 - To get an exact match, search by primary email address or username.
@@ -53,30 +53,44 @@ If you select the "More actions" menu next to their name, you can reset their pa
 
 You can search for Groups by group name or group email address. You can select the Group and edit the group from any page.
 
+:::image type="content" source="../../media/search-for-groups-mac.png" alt-text="Screenshot: Search results for groups in the admin center":::
+
 **Tips to improve Group search results**
 
 Make sure you spell the group name correctly.
 
 ## Actions
 
-You can search for Actions category contains frequently used actions in M365 Admin Center. Think of actions as verb in the system. For example, you can also search "reset password" from any page and then reset one or more passwords for users. You can search for “delete a user” and delete the user from the Delete user page .
+You can search for Actions category contains frequently used actions in M365 Admin Center. Think of actions as verb in the system. For example, you can also search "reset password" from any page and then reset one or more passwords for users. You can search for “delete a user” and delete the user from the Delete user page.
+
+:::image type="content" source="../../media/search-for-actions-mac.png" alt-text="Screenshot: Search results showing actions you can perform in the admin center":::
 
 ## Navigation
 
 Results under Navigation category are an attempt to quickly help you get to a page in the admin center. For example, searching for RBAC will take you to the Roles page for Azure AD roles.
 
+:::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Screenshot: Search results showing navigation path in the admin center":::
+
 ## Settings
 
 Search for supported app level settings related to your organization, the services you subscribe to, and security and privacy settings.
+
+:::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Screenshot: Search results showing settings in the admin center":::
 
 ## Domain
 
 You can find quick links to your domains, and then the link will take you to that domain's overview page.
 
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Screenshot: Search results showing domains owned in the admin center":::
+
 ## Documentation
 
 If we can’t find a result for you, we'll try to find some documentation to help. It takes a little longer for the curated list of articles to find a match, so wait a second to let search find the results.
 
-## Feedback
+:::image type="content" source="../../media/search-for-docs-mac.png" alt-text="Screenshot: Search showing documentation results in the admin center":::
+
+## Search in the admin center feedback
 
 This is a new feature, and any feedback is really appreciated. Send us feedback from Search. The more descriptive the feedback is, the better we would be able to help improve the feature.
+
+:::image type="content" source="../../media/search-feedback-mac.png" alt-text="Screenshot: Send feedback on search in the admin center":::
