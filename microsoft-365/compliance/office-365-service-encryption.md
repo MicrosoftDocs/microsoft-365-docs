@@ -18,7 +18,7 @@ description: "Summary: Understand data resiliency in Microsoft Office 365."
 
 # Service Encryption
 
-In addition to using volume-level encryption, Exchange Online, Skype for Business, SharePoint Online, and OneDrive for Business also use Service Encryption to encrypt customer data. Service Encryption allows for two key management options:
+In addition to using volume-level encryption, Exchange Online, Teams, SharePoint Online, and OneDrive for Business also use Service Encryption to encrypt customer data. Service Encryption allows for two key management options:
 
 ## Microsoft-managed keys
 Microsoft manages all cryptographic keys including the root keys for service encryption. This option is currently enabled by default for Exchange Online, SharePoint Online, OneDrive for Business. Microsoft-managed keys provide default service encryption unless you decide to onboard using Customer Key. If, at a later date, you decide to stop using Customer Key without following the data purge path, then your data stays encrypted using the Microsoft-managed keys. Your data is always encrypted at this default level at a minimum. 
@@ -40,7 +40,7 @@ Using Customer Key, you can generate your own cryptographic keys using either an
 
 Another benefit of Customer Key is the control you have over the ability of Microsoft to process your data. If you want to remove data from Office 365, such as if you want to terminate service with Microsoft or remove a portion of your data stored in the cloud, you can do so and use Customer Key as a technical control. Removing data ensures that no one, including Microsoft, can access or process the data. Customer Key is in addition and complementary to Customer Lockbox that you use to control access to your data by Microsoft personnel.
 
-To learn how to set up Customer Key for Microsoft 365 for Exchange Online, Skype for Business, SharePoint Online, including Team Sites, and OneDrive for Business, see these articles:
+To learn how to set up Customer Key for Microsoft 365 for Exchange Online, Teams, SharePoint Online, including Team Sites, and OneDrive for Business, see these articles:
 
 - [Service encryption with Customer Key](customer-key-overview.md)
 
