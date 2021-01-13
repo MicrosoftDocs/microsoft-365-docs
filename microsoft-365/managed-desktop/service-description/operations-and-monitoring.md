@@ -1,6 +1,6 @@
 ---
 title: Microsoft Managed Desktop operations and monitoring 
-description:  
+description:  Who does what for various change processes
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -20,13 +20,13 @@ ms.topic: article
 
 ## Change management
 
-In a service offering, the balance of responsibility for things such as hardware maintenance and security updates shifts to the service provider (Microsoft) instead of the customer (you). However, you still need to ensure that third-party and custom software continues to function as expected when updates are rolled out.
+In a service offering, the balance of responsibility for things such as hardware maintenance and security updates shifts to the service provider (Microsoft) instead of the customer (you). However, you still need to ensure that non-Microsoft and custom software continues to function as expected when updates are rolled out.
 
 For on-premises products, your organization assumes all responsibility for managing change.
 
 ### Balance of responsibility
 
-Responsibility | Microsoft Managed Desktop service | Microsoft 365 client software | On-premises clients and servers | 3rd party and custom software
+Responsibility | Microsoft Managed Desktop service | Microsoft 365 client software | On-premises clients and servers | non-Microsoft and custom software
 ----- | ----- | ----- | ----- | -----
 Provide new functionality | Microsoft | Microsoft | Both | Customer
 Test new features for quality assurance |  Microsoft | Microsoft | Both | Customer
@@ -39,7 +39,7 @@ Package for deployment | Microsoft | Microsoft | Customer | Customer
 
 ### Change process overview
 
-Here’s a summary of how the change process is shared between Microsoft and customers. 
+Here’s a summary of how the change process is shared between Microsoft and customers: 
 
 
 
@@ -55,14 +55,14 @@ Here’s a summary of how the change process is shared between Microsoft and cus
 
 ### Change types
 
-There are several types of changes that are made to the service on a regular basis. The communication channel for those changes and the actions that customers are responsible for varies.
+There are several types of changes that we make to the service regularly. The communication channel for those changes and the actions that you are responsible for varies.
 
 Not all changes have the same impact on your users or require action. Some are planned and some unplanned by their nature (non-security updates and security updates aren't usually planned). Depending on the type of change, the communication channel may vary. The following table lists the types of changes you can expect for the Microsoft Managed Desktop service.
 
 |   | Functionality |	Non-security updates |	Security
 --- | --- | --- | ---
-**Type of change** | - Feature updates<br>- New features or applications<br>- Deprecated features | Client hotfixes for issues | Security patches
-**Advance notice** | 5 days notice for changes that require action |	No, these are included in the monthly release	| No, these are included in the monthly release 
+**Type of change** | - Feature updates<br>- New features or applications<br>- Deprecated features | Client hotfixes for issues | Security updates
+**Advance notice** | Five days notice for changes that require action |	No, such changes are included in the monthly release	| No, changes are included in the monthly release 
 **Communication channel** | - Message Center<br>- Email alert | - Message Center<br>- Email alert | - Message Center<br>- Email alert
 **Requires global admin action** | Sometimes |	Rarely |	Rarely 
 **Type of action** | Change settings | Communicate changes to users | Change admin settings 	
@@ -72,26 +72,26 @@ Not all changes have the same impact on your users or require action. Some are p
 
 ## Standard operating procedures
 
-The Microsoft Managed Desktop service is implemented and operated by Microsoft in your Microsoft cloud instance where you may conduct other administrative activities. Microsoft is solely responsible for Microsoft Managed Desktop-specific setup, configuration and operation. 
+The Microsoft Managed Desktop service is implemented and operated by Microsoft in your Microsoft cloud instance where you might conduct other administrative activities. Microsoft is solely responsible for Microsoft Managed Desktop-specific setup, configuration, and operation. 
 
-For on-premises products, your organization takes on all the responsibility for managing setup,and configuration and operational activities.
+For on-premises products, your organization takes on all the responsibility for managing setup, and configuration and operational activities.
 
 Categories |	Microsoft will | Customer will
 --- | --- | ---
-Network (proxy, packet inspection, VPN)  | Advise and plan with customers to minimize risk to business users. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.
-Service accounts |- Implement, securely store, and manage the credentials.<br> - Communicate unauthorized access or use of these credentials to your Security Operations team. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not assign policy, multifactor authentication, conditional access, or application deployment to the Microsoft Managed Desktop Service Accounts.<br>- Not reset the password or use the credentials.<br>- Open a Sev C support request to Microsoft Managed Desktop Operations if suspicious activity is observed in Intune or Azure audit logs, related to these service accounts.
-Device Groups |	- Implement and manage the membership of devices within Microsoft Managed Desktop groups.<br>- Use the Microsoft Managed Desktop groups to manage the assignment and release of configuration and updates to devices. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not modify the membership of any Microsoft Managed Desktop group.<br>- Only use the groups to assign corporate certificates for services such as VPN, Windows Hello for Business or email encryption, or corporate Wi-Fi profile configuration.<br>- Where co-management exists, explicitly exclude all Microsoft Managed Desktop groups when deploying the Configuration Manager client.
-Policies |	- Implement and manage the Microsoft Managed Desktop policies that govern the configuration state of devices within service.<br>- Deploy updates, to policy or Windows, incrementally using Device Groups.<br> - Explicitly exclude targeting non-Microsoft Managed Desktop groups. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not edit or assign Microsoft Managed Desktop policies to devices or users not managed by the Microsoft Managed Desktop service.
-Microsoft Defender for Endpoint	| Monitor and investigate devices within the scope of the Microsoft Managed Desktop service. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised
-Microsoft Store for Business |	Configure and maintain the Windows Autopilot profile for the Microsoft Managed Desktop service. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not modify the configuration of the Microsoft Managed Desktop Windows Autopilot profile or add/remove assigned devices.
-Certificates | | - Create a support request 60 days prior to a certificate expiring, requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Update all certificates that are required to configure certificate profiles, VPN profiles, and Wi-Fi profiles.
+Network (proxy, packet inspection, VPN)  | Advise and plan with customers to minimize risk to business users. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline, and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.
+Service accounts |- Implement, securely store, and manage the credentials.<br> - Communicate unauthorized access or use of these credentials to your Security Operations team. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline, and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not assign policy, multifactor authentication, conditional access, or application deployment to the Microsoft Managed Desktop Service Accounts.<br>- Not reset the password or use the credentials.<br>- Open a Sev C support request to Microsoft Managed Desktop Operations if suspicious activity is observed in Intune or Azure audit logs, related to these service accounts.
+Device Groups |	- Implement and manage the membership of devices within Microsoft Managed Desktop groups.<br>- Use the Microsoft Managed Desktop groups to manage the assignment and release of configuration and updates to devices. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline, and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not modify the membership of any Microsoft Managed Desktop group.<br>- Only use the groups to assign corporate certificates for services such as VPN, Windows Hello for Business or email encryption, or corporate Wi-Fi profile configuration.<br>- Where co-management exists, explicitly exclude all Microsoft Managed Desktop groups when deploying the Configuration Manager client.
+Policies |	- Implement and manage the Microsoft Managed Desktop policies that govern the configuration state of devices within service.<br>- Deploy updates, to policy or Windows, incrementally using Device Groups.<br> - Explicitly exclude targeting non-Microsoft Managed Desktop groups. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline, and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not edit or assign Microsoft Managed Desktop policies to devices or users not managed by the Microsoft Managed Desktop service.
+Microsoft Defender for Endpoint	| Monitor and investigate devices within the scope of the Microsoft Managed Desktop service. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline, and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised
+Microsoft Store for Business |	Configure and maintain the Windows Autopilot profile for the Microsoft Managed Desktop service. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline, and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not modify the configuration of the Microsoft Managed Desktop Windows Autopilot profile or add/remove assigned devices.
+Certificates | | - Create a support request 60 days prior to a certificate expiring, requesting information for a planned configuration change, including configuration details, scope, timeline, and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Update all certificates that are required to configure certificate profiles, VPN profiles, and Wi-Fi profiles.
 
 
 
 
 ## Device wipe with factory reset
 
-The Microsoft Managed Desktop Operations Team can perform a factory reset of devices enrolled in the service when required. This is helpful if you need to give a device to a different employee, or if an employee leaves your company. 
+The Microsoft Managed Desktop Operations team can perform a factory reset of devices enrolled in the service when required. Resetting is helpful if you need to give a device to a different employee, or if an employee leaves your company. 
 
 There are a few requirements:
 

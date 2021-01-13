@@ -2586,6 +2586,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/index.md",
+      "redirect_url": "move-from-google-workspace-overview",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/knowledge/give-user-permissions-to-the-topic-center.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions",
       "redirect_document_id": true
