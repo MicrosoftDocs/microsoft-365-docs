@@ -35,6 +35,19 @@ ms.topic: article
 
 ![Image of shared queries](../../media/advanced-hunting-shared-queries.png)
 
+### Before you begin
+
+Users with one of the following levels of permissions to access Microsoft denfender.
+
+Full access (Read and Write)
+Read-only access
+
+**Full access**
+Users with full access can Save,Modify and share a query. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" AAD built-in roles.
+
+**Read-only access**
+Users with read-only access can log in, view all alerts, and related information. They will not be able to save, modify or share a query. Assigning read-only access rights requires adding the users to the "Security Reader" Azure AD built-in role.
+
 ## Save, modify, and share a query
 You can save a new or existing query so that it is only accessible to you or shared with other users in your organization. 
 
