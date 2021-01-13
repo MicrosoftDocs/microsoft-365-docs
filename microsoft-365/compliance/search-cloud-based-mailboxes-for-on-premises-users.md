@@ -140,6 +140,10 @@ For more information using these cmdlets, see:
  **Where is the cloud-based storage for on-premises users located?**
   
 Cloud-based storage is provisioned in the same datacenter as your organization.
+
+**Where is the cloud-based storage in a Multi geo tenant?**
+
+Preferred Data Location (PDL) for the user is hnoured in case of a Multi geo scenario.
   
  **Are there any other requirements other than submitting a support request?**
   
