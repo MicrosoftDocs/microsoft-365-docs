@@ -55,9 +55,9 @@ Once you identify the appropriate assignee, be sure they hold a sufficient [Comp
 
 The assigned user can then perform the recommended actions.
 
-**Assign multiple improvement actions at one time**
+#### Assign multiple improvement actions to a single user
 
-You can also assign multiple improvement actions to one user at once by following these steps: 
+You can assign multiple improvement actions to one user by following these steps:
 
 1. Go to your Improvement actions page.
 2. Select the area to the left of the improvement action's name. A round check icon will appear indicating you've selected that action. Check all the actions you want to assign.
@@ -158,7 +158,7 @@ If you’re in the middle of completing an assessment that includes the improvem
 
 #### Accept all updates at once
 
-If you have multiple updates and want to accept them all at one time, select the **Accept all updates** link at the top of your improvement actions table. A flyout pane will appear, listing the number of actions that will be updated. Select the **Accept updates** button to apply all updates.
+If you have multiple updates and want to accept them all at one time, select the **Accept all updates** link at the top of your improvement actions table. A flyout pane will appear which lists the number of actions to be updated. Select the **Accept updates** button to apply all updates.
 
 Note that when you return to your improvement actions page, you may see a message across the top of the page asking you to refresh the page for the updates to be completed.
 
