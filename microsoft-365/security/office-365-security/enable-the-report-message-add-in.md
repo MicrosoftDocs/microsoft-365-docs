@@ -30,8 +30,6 @@ The Report Message and Report Phishing add-ins for Outlook and Outlook on the we
 
 Microsoft uses these submissions to improve the effectiveness of email protection technologies. For example, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).
 
-In addition, if your organization is using [Microsoft Defender for Office 365 Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.
-
 You can install either the Report Message or Report Phishing add-in. If you want your users to report only phishing messages, deploy the Report Phishing add-in in your organization. For more information, see [Enable the Report Phishing add-in](enable-the-report-phish-add-in.md).
 
 The Report Message add-in provides the option to report both spam and phishing messages. Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.
