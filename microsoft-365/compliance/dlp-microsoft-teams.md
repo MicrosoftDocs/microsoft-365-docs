@@ -92,7 +92,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 4. In the **Status** column, turn the policy on for **Teams chat and channel messages**.<br/>![DLP for Teams chats and channels](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts, distribution lists, or security groups for inclusion and exclusion. Then choose **Next**.
+5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts to include or exclude. Then choose **Next**.
 
 6. Click **Save**.
 
@@ -111,7 +111,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 4. On the **Name your policy** tab, specify a name and description for the policy, and then choose **Next**.
 
-5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts, distribution lists, or security groups for inclusion and exclusion. Then choose **Next**.
+5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts to include or exclude. Then choose **Next**.
 
 ![DLP policy locations](../media/dlp-teams-selectlocationsnewpolicy.png)
 
