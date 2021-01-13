@@ -51,11 +51,11 @@ To include or exclude guests and external users in Conditional Access policies, 
 
 ### Guests and external user access with Microsoft Teams
 
-Microsoft Teams defines the following:
+Microsoft Teams defines the following users:
 
-- **Guest access** uses an Azure AD B2B account that can be added as a member of a team and have all permissioned access to the communications and resources of the team.
+- **Guest access** uses an Azure AD B2B account that can be added as a member of a team and have access to the communications and resources of the team.
 
-- **External user access** is for an external user that does not have a B2B account. External user access can include invitations and participation in calls, chats, and meetings, but does not include team membership and access to the resources of the team.
+- **External access** is for an external user that doesn't have a B2B account. External user access includes invitations, calls, chats, and meetings, but doesn't include team membership and access to the resources of the team.
 
 For more information, see the [comparison between guests and external user access for teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
