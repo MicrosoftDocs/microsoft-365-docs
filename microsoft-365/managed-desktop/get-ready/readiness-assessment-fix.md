@@ -23,6 +23,9 @@ For each check, the tool will report one of four possible results:
 |Not ready | *Enrollment will fail if you don't fix these issues.* Follow the steps in the tool or this article to resolve them.        |
 |Error | The Azure Active Director (AD) role you're using doesn't have sufficient permission to run this check. |
 
+> [!NOTE]
+> The results reported by this tool reflect the status of your settings only at the specific point in time that you ran it. If you later make any changes to policies in Microsoft Intune, Azure Active Directory, or Microsoft 365, items that were "Ready" can become "Not ready." To avoid problems with Microsoft Managed Desktop operations, check the specific settings described in this article before you change any policies.
+
 ## Microsoft Intune settings
 
 You can access Intune settings at the Microsoft Endpoint Manager [admin center](https://endpoint.microsoft.com).
@@ -149,14 +152,14 @@ We use Microsoft Store for Business so that you can download Company Portal to d
 
 Microsoft Store for Business either isn't enabled or isn't synced with Intune. For more information, see [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) and [Install Intune Company Portal on on devices](../get-started/company-portal.md).
 
-### Multi-factor authentication
+### Multifactor authentication
 
-Multi-factor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.
+Multifactor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.
 
 
 **Not ready**
 
-You have some multi-factor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+You have some multifactor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
 
 **Advisory**
 
@@ -213,7 +216,7 @@ Review apps you want your Microsoft Managed Desktop users to have.
 
 **Advisory**
 
-You should prepare an inventory of the apps that you want your Microsoft Managed Desktop users to have. Since these apps must be deployed by Intune, evaluate re-using existing Intune apps. Consider using Company Portal (see [Install Intune Company Portal on devices](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) and Enrollment Status Page (ESP) to distribute apps to your users. For more information, see [Apps in Microsoft Managed Desktop](apps.md) and [First-run experience with Autopilot and the Enrollment Status Page](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
+You should prepare an inventory of the apps that you want your Microsoft Managed Desktop users to have. Since these apps must be deployed by Intune, evaluate reusing existing Intune apps. Consider using Company Portal (see [Install Intune Company Portal on devices](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) and Enrollment Status Page (ESP) to distribute apps to your users. For more information, see [Apps in Microsoft Managed Desktop](apps.md) and [First-run experience with Autopilot and the Enrollment Status Page](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 You can ask your Microsoft account representative for a query in Microsoft Endpoint Configuration Manager to identify those apps that are ready to migrate to Intune or need adjustment.
 
@@ -241,7 +244,7 @@ You have an "update ring" policy that targets all devices, all users, or both. C
 
 **Advisory**
 
-Make sure that any update ring policies you have exclude the **Modern Workplace Devices -All** Azure AD group. If you have assigned Azure AD user group to these policies, make sure that any update ring policies you have also excluded the **Modern Workplace -All** Azure AD group which includes your Microsoft Managed Desktop users. For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Both the **Modern Workplace Devices -All** and **Modern Workplace -All** Azure AD groups are assigned groups that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+Make sure that any update ring policies you have exclude the **Modern Workplace Devices -All** Azure AD group. If you have assigned Azure AD user group to these policies, make sure that any update ring policies you have also excluded the **Modern Workplace -All** Azure AD group that includes your Microsoft Managed Desktop users. For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Both the **Modern Workplace Devices -All** and **Modern Workplace -All** Azure AD groups are assigned groups that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
 
 ## Azure Active Directory settings
@@ -285,7 +288,7 @@ You have at least one account name that will conflict with ones created by Micro
 
 ### Security administrator roles
 
-Users with certain security roles must have those assigned in Microsoft Defender for Endpoint.
+Users with certain security roles must have those roles assigned in Microsoft Defender for Endpoint.
 
 **Advisory**
 

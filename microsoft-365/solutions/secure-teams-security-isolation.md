@@ -3,7 +3,7 @@ title: "Configure a team with security isolation"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -46,7 +46,7 @@ For a 2-page summary of this scenario, see the [Microsoft Teams with security is
 
 [![Microsoft Teams with security isolation poster](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) format and print it on letter, legal, or tabloid (11 x 17) size paper.
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) or [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
 
 ## Initial protections
 
@@ -97,33 +97,36 @@ To configure a team for security isolation, we'll be using a sensitivity label c
 
 If you have an internal partner or stakeholder group who should be able to view encrypted documents but not edit them, you can add them to the label with view-only permissions. You can then add these people to the team's SharePoint site with Reader permissions, and they will have read-only access to the site where the documents are kept, but not the team itself.
 
+
 To create a sensitivity label
 1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
 2. Under **Solutions**, click **Information protection**.
 3. Click **Create a label**.
-4. Type a name for the label that is similar to your team name. For example, **Highly sensitive - Project Saturn**.
-5. Add a tool tip, and then click **Next**.
-6. On the **Encryption** page, in the **Encryption** dropdown, choose **Apply**.
-7. To add the team permissions:<br>
-  a. Click **Assign permissions**.<br>
-  b. Click **Add users or groups**, select the team that you created, and then click **Add**<br>
-  c. Click **Choose permissions**.<br>
-  d. Choose **Co-Author** from the dropdown list, and then click **Save**.<br>
-8. If you want to include users or groups with read-only access to files with the label:<br>
-  a. Click **Assign permissions**.<br>
-  b. Click **Add users or groups**, select the users or groups that you want to add, and then click **Add**.<br>
-  c. Click **Choose permissions**.<br>
-  d. Choose **Viewer** from the dropdown list, and then click **Save**.<br>
-  e. Click **Save**.
-9. Click **Next**.
-10. On the **Content marking** page, turn on content marking if you want to automatically add a header, footer, or watermark to files that are classified with this label.
-11. On the **Site and group settings** page, set **Site and group settings** to **On**.
-12. In the **Privacy of Office 365 group-connected team sites** dropdown, choose **Private - only members can access the site**.
-13. If you want to allow guest access, select the **Let Office 365 group owners add people outside the organization to the group** check box. 
-14. Under **Unmanaged devices**, choose **Block access**.
-15. Click **Next**.
-16. On the **Auto-labeling for Office apps** page, click **Next**.
-17. Click **Submit**, and then click **Done**.
+4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
+5. Add a display name and description, and then click **Next**.
+6. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
+7. On the **Choose protection settings for files and emails** page, select **Encrypt files and emails**, and then click **Next**.
+8. On the **Encryption** page, choose **Configure encryption settings**.
+9. Click **Add users or groups**, select the team that you created, and then click **Add**
+10. Click **Choose permissions**.
+11. Choose **Co-Author** from the dropdown list, and then click **Save**.
+12. If you want to include users or groups with read-only access to files with the label:
+    1. Click **Assign permissions**.
+    1. Click **Add users or groups**, select the users or groups that you want to add, and then click **Add**.
+    1. Click **Choose permissions**.
+    1. Choose **Viewer** from the dropdown list, and then click **Save**.
+13.  Click **Save**, and then click **Next**.
+14. On the *Auto-labeling for files and emails** page, click **Next**.
+15. On the **Define protection settings for groups and sites** page, select **Privacy and external user access settings** and **Device access and external sharing settings** and click **Next**.
+16. On the **Define privacy and external user access settings** page, under **Privacy**, select the **Private** option.
+17. If you want to allow guest access, under **External user access**, select **Let Microsoft 365 Group owners add people outside your organization to the group as guests**.
+18. Click **Next**.
+19. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
+20. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
+21. Under **Access from unmanaged devices**, choose **Block access**.
+22. Click **Next**.
+23. On the **Auto-labeling for database columns** page, click **Next**.
+24. Click **Create label**, and then click **Done**.
 
 Once you've created the label, you need to publish it to the users who will use it. In this case, we'll make the label available only to people in the team.
 
@@ -217,7 +220,7 @@ To add users to the site
 
 Microsoft 365 offers additional methods for securing your content. Consider if the following options would help improve security for your organization.
 
-- Have your guest users agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+- Have your guests agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
 - Configure a [session timeout policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
 - Create [sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) and use [data loss protection](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to set policies around accessing sensitive information.
 - Use [Azure Active Directory access](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) reviews to periodically review team access and membership.

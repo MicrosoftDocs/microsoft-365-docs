@@ -140,7 +140,7 @@ You can use this method to resolve intra-org spoofing and cross-domain spoofing 
 
 - [Consider setting up DMARC records](use-dmarc-to-validate-email.md) for your domain to determine your legitimate senders.
 
-Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's many information available online. There are also third party companies dedicated to helping your organization setup email authentication records.
+Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's many information available online. There are also third party companies dedicated to helping your organization set up email authentication records.
 
 #### You don't know all sources for your email
 

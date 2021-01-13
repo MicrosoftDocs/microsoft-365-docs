@@ -1,6 +1,6 @@
 ---
 title: Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
-description: Describes the prerequisites prior to implementing identity and device access policies and configurations.
+description: This article describes the prerequisites you need to meet to use identity and device access policies and configurations.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -22,25 +22,25 @@ ms.collection:
 
 # Prerequisite work for implementing identity and device access policies
 
-This article describes prerequisites that need to be implemented before you can deploy the recommended identity and device access policies. This article also discusses the recommended default platform client configurations to provide the best single sign-on (SSO) experience to your users, as well as the technical prerequisites for Conditional Access.
+This article describes the prerequisites admins must meet to use recommended identity and device access policies, and to use Conditional Access. It also discusses the recommended defaults for configuring client platforms for the best single sign-on (SSO) experience.
 
 ## Prerequisites
 
-Before implementing the recommended identity and device access policies, there are several prerequisites that your organization must meet for these identity and authentication models for Microsoft 365 and Office 365:
+Before using the identity and device access policies that are recommended, your organization needs to meet prerequisites. The requirements are different for the various identity and authentication models listed:
 
 - Cloud-only
 - Hybrid with password hash sync (PHS) authentication
 - Hybrid with pass-through authentication (PTA)
 - Federated
 
-The following table details the prerequisite features and their configuration that apply to all identity models, except where noted. 
+The following table details the prerequisite features and their configuration that apply to all identity models, except where noted.
 
 |Configuration|Exceptions|
 |---|:---:|
 |[Configure PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  This must be enabled to detect leaked credentials and to act on them for risk-based Conditional Access. **Note:** This is required regardless of whether your organization uses federated authentication.|Cloud-only|
 |[Enable seamless single sign-on](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) to automatically sign users in when they are on their organization devices connected to your organization network.|Cloud-only and federated|
 |[Configure named networks](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection collects and analyzes all available session data to generate a risk score. We recommend you specify your organization's public IP ranges for your network in the Azure AD named networks configuration. Traffic coming from these ranges is given a reduced risk score, and traffic from outside the organization environment is given a higher risk score.||
-|[Register all users for self-service password reset (SSPR) and multi-factor authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). We recommend you register users for Azure Multi-Factor Authentication ahead of time. Azure AD Identity Protection makes use of Azure Multi-Factor Authentication to perform additional security verification. Additionally, for the best sign-in experience, we recommend users install the [Microsoft Authenticator app](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) and the Microsoft Company Portal app on their devices. These can be installed from the app store for each platform.||
+|[Register all users for self-service password reset (SSPR) and multi-factor authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). We recommend you register users for Azure AD Multi-Factor Authentication ahead of time. Azure AD Identity Protection makes use of Azure AD Multi-Factor Authentication to perform additional security verification. Additionally, for the best sign-in experience, we recommend users install the [Microsoft Authenticator app](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) and the Microsoft Company Portal app on their devices. These can be installed from the app store for each platform.||
 |[Enable automatic device registration of domain-joined Windows computers](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Conditional Access will make sure devices connecting to apps are domain-joined or compliant. To support this on Windows computers, the device must be registered with Azure AD.  This article discusses how to configure automatic device registration.|Cloud-only|
 |**Prepare your support team**. Have a plan in place for users that cannot complete MFA. This could be adding them to a policy exclusion group, or registering new MFA information for them. Before making either of these security-sensitive changes, you need to ensure that the actual user is making the request. Requiring users' managers to help with the approval is an effective step.||
 |[Configure password writeback to on-premises AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Password writeback allows Azure AD to require that users change their on-premises passwords when a high-risk account compromise is detected. You can enable this feature using Azure AD Connect in one of two ways: either enable **Password Writeback** in the optional features screen of the Azure AD Connect setup wizard, or enable it via Windows PowerShell.|Cloud-only|
@@ -71,7 +71,7 @@ We also recommend that organization-owned devices are standardized on OEMs and v
 
 ### Recommended email clients
 
-The following email clients support modern authentication and Conditional Access. 
+The following email clients support modern authentication and Conditional Access.
 
 |Platform|Client|Version/Notes|
 |---|---|---|
@@ -111,9 +111,9 @@ For editions of Microsoft 365 or Office 365 that do not support Conditional Acce
 
 Here are some additional recommendations:
 
-- Use [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts. 
-- [Use privileged access management](../../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
-- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function. 
+- Use [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts.
+- [Use privileged access management](../../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
+- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
 - Follow [best practices](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) for securing privileged accounts in Azure AD.
 
 ## Next step

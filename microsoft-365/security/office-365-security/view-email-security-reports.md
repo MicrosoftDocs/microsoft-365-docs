@@ -474,7 +474,7 @@ The **URL threat protection report** is available in Microsoft Defender for Offi
 
 ## User-reported messages report
 
-The **User-reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](enable-the-report-message-add-in.md).
+The **User-reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](enable-the-report-message-add-in.md) or [The Report Phishing add-in](enable-the-report-phish-add-in.md).
 
 Details are available for each message, including the delivery reason, such a spam policy exception or mail flow rule configured for your organization. To view details, select an item in the user-reports list, and then view the information on the **Summary** and **Details** tabs.
 
@@ -493,24 +493,16 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ## What permissions are needed to view these reports?
 
-To view and use the reports, you need to be a member of the specified role group in the Security & Compliance Center **and** in Exchange Online.
+In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Security & Compliance Center:
 
-- In the Security & Compliance Center, you need to be a member of one of the following role groups:
+- **Organization Management**
+- **Security Administrator**
+- **Security Reader**
+- **Global Reader**
 
-  -Organization Management
-  -Security Administrator (you can also do this in the [Azure Active Directory admin center](https://aad.portal.azure.com)
-  -Security Reader
+For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-
-- In Exchange Online, you need to be a member of one of the following role groups:
-
-  -Organization Management
-  -View-only Organization Management
-  -View-Only Recipients
-  -Compliance Management
-
-For more information, see [Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) and [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## What if the reports aren't showing data?
 

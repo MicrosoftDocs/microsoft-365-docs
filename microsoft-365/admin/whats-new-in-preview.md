@@ -52,7 +52,7 @@ Welcome to Microsoft Ignite - our first online-only Ignite. We hope to see you i
 
 ### Multi-tenant management
 
-We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently.
+We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently. For more information, see [Manage multiple tenants](multi-tenant/manage.md).
 
 - **Your tenants**: Quickly switch between the tenants you manage.
 - **All tenants**: A new page where you can quickly see the health of all your tenants' services, any open service requests, your products and billing, recommended setup tasks, and the number of users in that tenant.
@@ -79,7 +79,7 @@ There are two ways to get started:
 - Go to **Users**, and then in the "more actions" menu select **Manage priority accounts** to add users to the list.
 - Go to **Setup**, find the setup task **Monitor your most important accounts**, and then select **Get started**.
 
-For more info on priority accounts, check out [Monitoring priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) and [Email issues for priority accounts](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts).
+For more info on priority accounts, check out [Monitoring priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ### Search faster and get better results from any page
 

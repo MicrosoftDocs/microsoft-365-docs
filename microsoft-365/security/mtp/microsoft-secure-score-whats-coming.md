@@ -29,13 +29,9 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
-### November 2020
+### No Planned Changes
 
-#### Removing the ability to create ServiceNow tickets through Secure Score 
-
-The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** will be removed.
-
-The preview period for the ServiceNow connector is ending. This capability will no longer be available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
+There are no planned changes at this time.
 
 ## Related resources
 
