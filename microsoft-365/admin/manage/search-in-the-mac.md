@@ -21,9 +21,9 @@ description: "Learn how to use the search feature in the admin center for better
 
 # Search in the Microsoft 365 admin center
 
-Search functionality has improved in the Microsoft 365 admin center. With the new search, you can now get search results even faster, and you can search from every page in the admin center. The search box has moved to the banner region at the top of the admin center where it says **Microsoft 365 admin center**. You can also use the Alt+S shortcut to search from any page, not just the home page.
+As the administrator of a Microsoft 365 organization, you can use the search bar to search for users, perform actions, navigate to different settings, and send us feedback. With new search functionality, search speed has improved, and you can now search from every page in the admin center. The search box has moved to the banner region at the top of the admin center where it says **Microsoft 365 admin center**. You can also use the Alt+S shortcut to search from any page.
 
-**I'll add a screenshot here.**
+:::image type="content" source="../../media/search-bar.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
 
 ## Before you begin
 
@@ -31,19 +31,52 @@ You need to be an administrator to search in the admin center.
 
 ## Search faster and get better results from any page
 
-Search results are organized by the type of item or action you can take. Here's an overview of how search functionality works in a few different areas in the admin center.
+Search results are organized in different categories. Most of these categories are either the actual items in Microsoft 365 admin center e.g., Users, Groups, Shared Mailboxes or Domains. We also have some categories devoted to places you can navigate to, actions you can take or app level settings that you can change. Finally, there is a category related to documentation.
+The following sections describe the different areas/categories in the admin center that are searchable. To improve the searching speed, searches in these categories run simultaneously and results from one category are not affected by the other one.
 
-- **Users**: Select the user's name and you can edit that user right there. If you select the "more actions" menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. But to get an exact match, search by primary email address or username.
-- **Groups**: Edit the group from any page, add members, assign owners.
+## Users
 
-- **Actions**: Similar to how you can search for a user and then reset their password, you can also search "reset password" from any page and then reset one or more passwords for users.
+Users can be found by display name, last name, first name, username, primary email address, or email aliases. Select the user's name edit to edit the user’s details.
 
-- **Navigation**: Results under Navigation can quickly help you get to a page in the admin center quickly. For example, searching "roles" will take you to the Roles page for Azure AD roles.
+:::image type="content" source="../../media/User-search-stock-picture.png" alt-text="Screenshot: Search for a user Felix Henderson":::
 
-- **Settings**: Search for any setting related to your organization, the services you subscribe to, and security and privacy settings.
+If you select the "More actions" menu next to their name, you can reset their password.
 
-- **Domains**: You can find quick links to your domains, and then the link will take you to that domain's Overview and health page.
+:::image type="content" source="../../media/User-search-stock-picture-reset-password.png" alt-text="Screenshot: User search with the option to reset password from search result":::
 
-- **Documentation**: If we can't find a result for you, we'll try to find some documentation to help. It takes a little longer for the curated list of articles to find a match, so wait a second to let Search find the results.
+### Tips to improve user search results
 
-- **Feedback**: Didn't find what you were looking for? Send us feedback from Search.
+- Make sure you spell the users'    names correctly as user searches are matched exactly against the earlier mentioned properties. For example, in the above example, Jus or Malz will work but misspelling like  for Jostin will not find this user.
+- To get an exact match, search by primary email address or username.
+
+## Groups
+
+You can search for Groups by group name or group email address. You can select the Group and edit the group from any page.
+
+### Tips to improve Group search results
+
+Make sure you spell the Group name correctly.
+
+## Actions
+
+Actions category contains frequently used actions in M365 Admin Center. Think of actions as verb in the system. For example, you can also search "reset password" from any page and then reset one or more passwords for users. You can search for “delete a user” and delete the user from the Delete user page .
+
+## Navigation
+
+Results under Navigation category are an attempt to quickly help you get to a page in the admin center. For example, searching for RBAC will take you to the Roles page for Azure AD roles.
+
+## Settings
+
+Search for supported app level settings related to your organization, the services you subscribe to, and security and privacy settings.
+
+## Domain
+
+You can find quick links to your domains, and then the link will take you to that domain's overview page.
+
+## Documentation
+
+If we can’t find a result for you, we'll try to find some documentation to help. It takes a little longer for the curated list of articles to find a match, so wait a second to let search find the results.
+
+## Feedback
+
+This is a new feature, and any feedback is really appreciated. Send us feedback from Search. The more descriptive the feedback is, the better we would be able to help improve the feature.
