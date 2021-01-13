@@ -27,7 +27,7 @@ Microsoft Managed Desktop ensures that Microsoft 365 Apps for enterprise (64-bit
 - Skype for Business
 - OneNote
 
-This approach minimizes network impact and ensures that users can be productive as soon as they receive their device. We then deploy additional policies to managed devices to set up the applications for use.
+This approach minimizes network impact and ensures that users can be productive as soon as they receive their device. We then deploy more policies to managed devices to set up the applications for use.
 
 > [!NOTE]
 > Microsoft Teams is deployed separately from Microsoft 365 Apps for enterprise and is not included in the base image. 
@@ -46,8 +46,8 @@ Microsoft 365 Apps are set to update on the [Monthly Enterprise Channel](https:/
 
 Microsoft Managed Desktop staggers each release to identify any potential issues in your environment. We complete the rollout 28 days after the release from the Microsoft 365 App product group. Microsoft Managed Desktop schedules update releases to different groups to allow time for validation and testing as follows: 
 
-- Test: 0 days
-- First: 0 days
+- Test: zero days
+- First: zero days
 - Fast: 7 days
 - Broad: 21 days
 
@@ -61,7 +61,7 @@ During a release, Microsoft Managed Desktop monitors the error rates of all Micr
 
 ### Delivery optimization
 
-Delivery Optimization is a peer-to-peer distribution technology available in Windows 10. It allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. This can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.
+Delivery Optimization is a peer-to-peer distribution technology available in Windows 10. It allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. Using it can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.
 
 [Delivery Optimization](https://docs.microsoft.com/deployoffice/delivery-optimization) is enabled by default on devices running the Windows 10 Enterprise or Windows 10 Education editions. 
 
@@ -89,8 +89,8 @@ The **UpdateDeadline** policy is used to configure the grace period which users 
 
 This policy is configured differently for each update management device group and is required for Microsoft Managed Desktop to meet its update targets:  
 
-- Test: 0 days
-- First: 0 days
+- Test: zero days
+- First: zero days
 - Fast 7 days
 - Broad: 21 days
 
@@ -145,7 +145,7 @@ Some organizations are concerned about users having access to both corporate and
 
 ## Settings you manage
 
-There are many other policies which Microsoft Managed Desktop does not yet set as a part of our service. You can configure these by using Microsoft Intune, which uses the [Office Cloud Policy](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) service. To do this, follow these steps:
+There are many other policies which Microsoft Managed Desktop does not yet set as a part of our service. You can configure these policies by using Microsoft Intune, which uses the [Office Cloud Policy](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) service. To set these policies, follow these steps:
 
 1.	Sign in to the Microsoft Endpoint Manager admin center.
 2.	Select **Apps > Policies for Office apps > Create**
