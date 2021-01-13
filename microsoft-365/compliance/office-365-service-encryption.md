@@ -18,7 +18,7 @@ description: "Summary: Understand data resiliency in Microsoft Office 365."
 
 # Service Encryption
 
-In addition to using volume-level encryption, Exchange Online, Teams, SharePoint Online, and OneDrive for Business also use Service Encryption to encrypt customer data. Service Encryption allows for two key management options:
+In addition to using volume-level encryption, Exchange Online, Microsoft Teams, SharePoint Online, and OneDrive for Business also use Service Encryption to encrypt customer data. Service Encryption allows for two key management options:
 
 ## Microsoft-managed keys
 Microsoft manages all cryptographic keys including the root keys for service encryption. This option is currently enabled by default for Exchange Online, SharePoint Online, OneDrive for Business. Microsoft-managed keys provide default service encryption unless you decide to onboard using Customer Key. If, at a later date, you decide to stop using Customer Key without following the data purge path, then your data stays encrypted using the Microsoft-managed keys. Your data is always encrypted at this default level at a minimum. 
@@ -51,4 +51,3 @@ To learn how to set up Customer Key for Microsoft 365 for Exchange Online, Teams
 - [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)
 
 - [Understand the availability key](customer-key-availability-key-understand.md)
-
