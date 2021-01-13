@@ -63,8 +63,8 @@ You can also assign multiple improvement actions to one user at once by followin
 2. Select the area to the left of the improvement action's name. A round check icon will appear indicating you've selected that action. Check all the actions you want to assign.
 3. Select the **Assign to user** link at the top of the improvement actions table.
 4. A pop-up window appears. In the **Assign to** field, start typing the name of the person you want to assign the actions to. You can also select from the list of suggested people.
-5. After placing the assignee's name in the **Assign to** field, select **Assign** to complete.
-6. You'll then see your Improvement actions page, with the new assignee listed for the actions you just assigned.
+5. After you populate the **Assign to** field with the assignee's name, select **Assign**.
+6. You'll then see your Improvement actions page with the new assignee listed for the actions you just assigned.
 
 ## Perform work and store documentation
 
@@ -158,9 +158,9 @@ If you’re in the middle of completing an assessment that includes the improvem
 
 #### Accept all updates at once
 
-If you have multiple updates and want to accept them all at one time, select the **Accept all updates** link at the top of your improvement actions table. A flyout pane will appear, listing the number of actions that will be updated. To accept all updates at once, select the **Accept updates** button.
+If you have multiple updates and want to accept them all at one time, select the **Accept all updates** link at the top of your improvement actions table. A flyout pane will appear, listing the number of actions that will be updated. Select the **Accept updates** button to apply all updates.
 
-Note that when you return to your improvement actions page, you may see a message across the top of your screen suggesting that you refresh your page for the updates to be completed.
+Note that when you return to your improvement actions page, you may see a message across the top of the page asking you to refresh the page for the updates to be completed.
 
 ## Export a report
 
