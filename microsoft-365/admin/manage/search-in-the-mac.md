@@ -82,11 +82,11 @@ Search for supported app level settings related to your organization, the servic
 
 You can find quick links to your domains, and then the link will take you to that domain's overview page.
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Screenshot: Search results showing domains owned in the admin center":::
+:::image type="content" source="../../media/search-for-docs-mac1.png" alt-text="Screenshot: Search results showing domains owned in the admin center":::
 
 ## Documentation
 
-A documentation search provides relevant help documentation based on your search phrase. It takes a little longer for the curated list of content, so wait a second to let search find the results.
+A documentation search provides relevant help documentation based on your search phrase. Click on the topic to learn more.
 
 :::image type="content" source="../../media/search-for-docs-mac.png" alt-text="Screenshot: Search showing documentation results in the admin center":::
 
