@@ -32,7 +32,7 @@ With [Microsoft Defender for Office 365](office-365-atp.md), you get [detailed i
 Use the following resources to set this up:
 
 |Resource|Description|
-|---|---|
+|:---|:---|
 |[Office 365 Management APIs overview](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)|The Office 365 Management Activity API provides information about various user, admin, system, and policy actions and events from Microsoft 365 and Azure Active Directory activity logs.|
 |[Get started with Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)|The Office 365 Management API uses Azure AD to provide authentication services for your application to access Microsoft 365 data. Follow the steps in this article to set this up.|
 |[Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)|You can use the Office 365 Management Activity API to retrieve information about user, admin, system, and policy actions and events from Microsoft 365 and Azure AD activity logs. Read this article to learn more about how this works.|
