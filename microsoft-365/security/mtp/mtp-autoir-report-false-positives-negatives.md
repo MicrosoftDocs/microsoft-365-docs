@@ -31,12 +31,10 @@ ms.reviewer: evaldm, isco
 **Applies to:**
 - Microsoft 365 Defender
 
-Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft 365 Defender miss or wrongly detect something? There are steps you can take to fix it. You can:
+False positives/negatives can sometimes occur with any therat protection solution. If [automated investigation and response capabilities](mtp-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your organization can take. Your security operations team can:
 
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
-
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
-
 - [Undo remediation actions that were taken on devices](#undo-a-remediation-action-that-was-taken-on-a-device). 
 
 Use this article as a guide. 
