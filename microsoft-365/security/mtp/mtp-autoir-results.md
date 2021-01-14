@@ -42,9 +42,7 @@ You can open the investigation details view by using one of the following method
 
 ### Select an item in the Action center
 
-The [Action center](mtp-action-center.md) ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together [remediation actions](mtp-remediation-actions.md) across your devices, email & collaboration content, and identities. In the Action center, you can: 
-- View actions that are awaiting approval on the **Pending** tab.
-- View actions that were already approved or completed on the **History** tab.
+The [Action center](mtp-action-center.md) ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together [remediation actions](mtp-remediation-actions.md) across your devices, email & collaboration content, and identities. In the Action center, you can view actions that are awaiting approval and actions that were already approved or completed.
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
