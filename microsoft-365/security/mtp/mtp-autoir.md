@@ -62,9 +62,21 @@ Automated investigation and response capabilities enable your security operation
 
 ## The automated investigation process
 
-An alert creates an incident, which can start an automated investigation. The automated investigation results in a verdict for each piece of evidence. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Remediation actions for malicious or suspicious entities are identified. Depending on how automated investigation and response capabilities are configured for your organization, remediation actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](mtp-action-center.md).
+An alert creates an incident, which can start an automated investigation. The automated investigation results in a verdict for each piece of evidence. Verdicts can be:
+- *Malicious*;
+- *Suspicious*; or 
+- *No threats found*. 
 
-While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run. 
+Remediation actions for malicious or suspicious entities are identified. Examples of remediation actions include:
+- Sending a file to quarantine;
+- Stopping a process;
+- Isolating a device;
+- Blocking a URL; and 
+- other actions. (See [Remediation actions in Microsoft 365 Defender](mtp-remediation-actions.md).)
+
+Depending on [how automated investigation and response capabilities are configured](mtp-configure-auto-investigation-response.md) for your organization, remediation actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](mtp-action-center.md).
+
+While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation expands its scope to include that entity, and the investigation process repeats. 
 
 In Microsoft 365 Defender, each automated investigation correlates signals across Microsoft Defender for Identity, Microsoft Defender for Endpoint, and Defender for Office 365, as summarized in the following table: 
 
