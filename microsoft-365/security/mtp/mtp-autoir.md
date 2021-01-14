@@ -64,18 +64,17 @@ Automated investigation and response capabilities enable your security operation
 
 ## The automated investigation process
 
-**Alert** > **incident** > **automated investigation** > **verdict** > **remediation action**
+An alert creates an incident, which can start an automated investigation. The automated investigation results in a verdict for each piece of evidence. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Remediation actions for malicious or suspicious entities are identified, and depending on how automated investigation and response capabilities are configured for your organization, actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](mtp-action-center.md).
 
-A triggered alert creates an incident, which can start an automated investigation. That investigation can result in one or more remediation actions. In Microsoft 365 Defender, each automated investigation correlates signals across Microsoft Defender for Identity, Microsoft Defender for Endpoint, and Defender for Office 365, as summarized in the following table: 
+While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run. 
+
+In Microsoft 365 Defender, each automated investigation correlates signals across Microsoft Defender for Identity, Microsoft Defender for Endpoint, and Defender for Office 365, as summarized in the following table: 
 
 |Entities |Threat protection services  |
 |---------|---------|
 |Devices (also referred to as endpoints)     |[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Email content (files and messages in mailboxes)     |[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-Each investigation generates verdicts (*Malicious*, *Suspicious*, or *No threats found*) for each piece of evidence investigated. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization's security operations team. Pending and completed actions are listed in the [Action center](mtp-action-center.md).
-
-While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run. 
 
 > [!NOTE]
 > Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; this all depends on how automated investigation and response is configured for your organization. See [Configure automated investigation and response capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
