@@ -76,7 +76,6 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 > [!NOTE]
 > Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; this all depends on how automated investigation and response is configured for your organization. See [Configure automated investigation and response capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
 
-
 ## Next steps
 
 - [See the prerequisites for automated investigation and response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
