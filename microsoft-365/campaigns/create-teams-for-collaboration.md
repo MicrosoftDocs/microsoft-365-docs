@@ -37,15 +37,17 @@ As an example, campaigns can create the following teams to communicate and colla
 2. **A general Campaign team:** This is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
 3. **A partners team:** Coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
 
+![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign](../media/m365-democracy-teams-collab.png)
+
 A legal firm or healthcare practice could create the following teams:
 
 1. **An firm-wide or practice-wide team:** This is for everyone to use for day to day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
 1. **Individual teams:** Set up teams for smaller groups to collaborate about their day to day work.
 1. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
 
-You can also create teams for specific projects and apply the right amount of protection based on who should be included.
+![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business](../media/m365-democracy-teams-business-collab.png)
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration](../media/m365-democracy-teams-collab.png)
+You can also create teams for specific projects and apply the right amount of protection based on who should be included.
 
 When you create a team, here's what else gets created:
 
