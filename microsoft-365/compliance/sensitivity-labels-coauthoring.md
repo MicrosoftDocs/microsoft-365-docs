@@ -22,9 +22,9 @@ description: "Turn on a setting that enables co-authoring and Auto-Save in deskt
 > [!NOTE]
 > This feature is in preview and subject to change. 
 >
-> Because enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change, we recommend that you try it in a test tenant rather than a production tenant.
-> 
-> Note that you cannot disable this feature yourself after it is enabled.
+> We recommend that you try it in a test tenant rather than a production tenant because:
+> - Enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change
+> - You cannot disable this feature yourself after it is enabled
 
 Enable the setting to support [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps stored in SharePoint or OneDrive so that when documents are labeled and encrypted by your [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
 
