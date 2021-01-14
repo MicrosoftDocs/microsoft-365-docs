@@ -42,7 +42,7 @@ Users with one of the following levels of permissions to access Microsoft denfen
 Full access (Read and Write)
 Read-only access
 
-**Full access**
+**Full access**:
 Users with full access can save, modify, and share a query. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" AAD built-in roles.
 
 **Read-only access**:
