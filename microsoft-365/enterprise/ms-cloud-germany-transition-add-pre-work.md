@@ -22,6 +22,23 @@ description: "Summary: Pre-work when moving from Microsoft Cloud Germany (Micros
 
 # Pre-work for the migration from Microsoft Cloud Deutschland
 
+
+Use these links to get to the pre-work steps relevant to your organization:
+
+- For all subscriptions, use [these steps](#applies-to-everyone)
+- If you're using Exchange Online, [this step](#exchange-online)
+- If you're using SharePoint Online, [this step](#sharepoint-online)
+- If you're using a third-party mobile device management (MDM) solution, [this step](#mobile)
+- If you're using third-party service or line-of-business (LOB) apps that are integrated with Office 365, [this step](#line-of-business-apps)
+- If you're also using Azure services beyond those included with your Office 365 subscription, [this step](#azure)
+- If you're also using Dynamics 365, [this step](#dynamics-365)
+- If you're also using Power BI, [this step](#power-bi)
+- For DNS changes, use [this step](#dns)
+- If you're using federated identity, [these steps](#federated-identity)
+
+
+## Applies to everyone
+
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
 | Ensure network connectivity to [Office 365 services URLs and IP addresses](https://aka.ms/o365urls). | All clients and services hosted by the customer that are used to access Office 365 service must be able to access the Office 365 services endpoints. | All transitioning customers, and customers with network access restricted to Microsoft Cloud Deutschland. | Required action. Inaction may result in failures of the service or client software. |
