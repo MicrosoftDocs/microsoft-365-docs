@@ -15,7 +15,7 @@ This article provides details about regions and languages supported by Microsoft
 
 ## Supported languages
 
-English is the only language available to users of Microsoft Managed Desktop. This includes all user interfaces for both users and administrators and all interactions with both [admin support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) and [end-user support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
+English is the only language available to users of Microsoft Managed Desktop. This policy includes all user interfaces for both users and administrators and all interactions with both [admin support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) and [user support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
 
 
 You can still use managed devices outside of English-speaking regions without an interruption to the Microsoft Managed Desktop service. For example, an employee based in the United Kingdom can work securely and receive updates on their managed device while traveling Asia, Europe, or South America. 

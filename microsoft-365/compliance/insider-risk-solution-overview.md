@@ -44,12 +44,66 @@ Microsoft 365 risk prevention features are designed and built-in to our insider 
 
 To help protect your organization against insider risks, use these Microsoft 365 capabilities and features.
 
-| Solution/capabilities | Description | Licensing |
-| :------------------------ | :-------------- | :------------ |
-| Communication compliance | Communication compliance helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. | Microsoft 365 E5 subscription (paid or trial version) <br><br> Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on <br><br> Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on <br><br> Microsoft 365 A5 subscription (paid or trial version) <br><br> Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on <br><br> Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on <br><br> Microsoft 365 G5 subscription (paid or trial version) <br><br> Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on <br> Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on <br><br> Office 365 Enterprise E5 subscription (paid or trial version) <br><br> Office 365 A5 subscription (paid or trial version) <br><br> Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions) |
-| Insider risk management | Insider risk management helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. | Microsoft 365 E5 subscription (paid or trial version) <br><br> Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on <br><br> Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on <br><br> Microsoft 365 A5 subscription (paid or trial version) <br><br> Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on <br><br> Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on |
-| Information barriers | Information barriers allow you to restrict communication and collaboration between two internal groups to avoid a conflict of interest from occurring in your organization.  | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Office 365 Advanced Compliance <br><br> Microsoft 365 Compliance E5/A5 <br><br> Microsoft 365 Insider Risk Management |
-| Privileged access management | Privileged access management allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Microsoft 365 E5/A5 Compliance <br><br> Microsoft 365 E5/A5 Information Protection and Governance |
+### Communication compliance
+
+Communication compliance helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Communication compliance is available in the following subscriptions:
+
+- Microsoft 365 E5 subscription (paid or trial version)
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
+- Microsoft 365 A5 subscription (paid or trial version)
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
+- Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 A5 subscription (paid or trial version)
+- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
+
+### Insider risk management
+
+Insider risk management helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization.
+
+Insider risk management is available in the following subscriptions:
+
+- Microsoft 365 E5 subscription (paid or trial version)
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
+- Microsoft 365 A5 subscription (paid or trial version)
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+
+### Information barriers
+
+Information barriers allow you to restrict communication and collaboration between two internal groups to avoid a conflict of interest from occurring in your organization.
+
+Information barriers are available in the following subscriptions:
+
+- Microsoft 365 E5 subscription (paid or trial version)
+- Microsoft 365 A5 subscription (paid or trial version)
+- Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 A5 subscription (paid or trial version)
+- Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+
+### Privileged access management
+
+Privileged access management allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
+
+Privileged access management is available in the following subscriptions:
+
+- Microsoft 365 E5 subscription (paid or trial version)
+- Microsoft 365 A5 subscription (paid or trial version)
+- Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 A5 subscription (paid or trial version)
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Information Protection and Governance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Information Protection and Governance add-on
 
 ## Deploy Microsoft 365 insider risk solutions
 

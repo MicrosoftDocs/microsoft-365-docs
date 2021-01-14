@@ -66,6 +66,8 @@
           href: whats-new-in-preview.md
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
+        - name: Manage multiple tenants
+          href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
         - name: About Office 365 operated by 21Vianet

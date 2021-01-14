@@ -1,6 +1,6 @@
 ---
 title: Microsoft Managed Desktop devices
-description:  This topic lists the specifications for devices approved for Microsoft Managed Desktop.
+description:  This article lists the specifications for devices approved for Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -18,7 +18,7 @@ For more information on Microsoft Managed Desktop, see [Microsoft Managed Deskto
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. 
+To be enrolled in Microsoft Managed Desktop, a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. 
 
 The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this table, the *archive date* is the date on which these models will be subject to a shorter Microsoft Managed Desktop service life; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. Archived devices are also listed in [Microsoft Managed Desktop archived devices](archived-device-list.md). *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
 
@@ -61,15 +61,15 @@ The links to devices here are for your reference only. If you want to order devi
 
 | Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
-| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | May 21, 2022 | May 21, 2027 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB RAM | None | May 21, 2022 | May 21, 2027 |
 | [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 12, 2022 | Oct 12, 2025 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 
 In addition, the device must also meet these criteria:     
 
-- If a specific SKU is listed in the device requirements, make sure you use it when you order. This ensures that devices comply with Microsoft Managed Desktop software requirements. 
+- If a specific SKU is listed in the device requirements, make sure you use it when you order. Doing so ensures that devices comply with Microsoft Managed Desktop software requirements. 
 - Not have completed the Windows first-run experience.
 - Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
 
@@ -79,7 +79,7 @@ In addition, the device must also meet these criteria:
 >-	Using one device for several different workloads.
 >- Using multiple monitors.
 
-**Additional Help**
+**More Help**
 
 These resources can help answer questions that you might have about specific devices:
 
