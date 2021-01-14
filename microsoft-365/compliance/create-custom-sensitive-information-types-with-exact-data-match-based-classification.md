@@ -43,7 +43,7 @@ But what if you wanted a custom sensitive information type that uses exact data 
 EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
+> Microsoft 365 Information Protection supports in preview double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
@@ -102,7 +102,7 @@ Setting up and configuring EDM-based classification involves:
 
 #### Define the schema for your database of sensitive information
 
-If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type patter (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
+If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type pattern (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
 
 > [!NOTE]
 > The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
