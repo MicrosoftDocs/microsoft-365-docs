@@ -137,17 +137,13 @@ For more information using these cmdlets, see:
 
 ## Frequently asked questions
 
- **Where is the cloud-based storage for on-premises users located?**
+**Where is the cloud-based storage for on-premises users located?**
   
-Cloud-based storage is provisioned in the same datacenter as your organization.
-
-**Where is the cloud-based storage in a Multi geo tenant?**
-
-Preferred Data Location (PDL) for the user is hnoured in case of a Multi geo scenario.
+Teams chat data is stored in the Preferred Data Location (PDL) for an on-premises user. The PDL is honored in both Single-Geo and Multi-Geo environments. For more information, see [Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo).
   
  **Are there any other requirements other than submitting a support request?**
   
- As previously explained, the identities of users with on-prem mailboxes must be synchronized to your cloud-based organization so that a corresponding mail user account is created for each on-premises user account in Office 365. Your organization must also have an Office 365 enterprise subscription, such as an Office 365 Enterprise E1, E3, or E5 subscription.
+As previously explained, the identities of users with on-prem mailboxes must be synchronized to your cloud-based organization so that a corresponding mail user account is created for each on-premises user account in Office 365. Your organization must also have an Office 365 enterprise subscription, such as an Office 365 Enterprise E1, E3, or E5 subscription.
   
  **Is there a risk of losing the Teams chat data if the user's on-premises mailbox is migrated to the cloud?**
   
