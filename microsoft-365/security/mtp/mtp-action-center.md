@@ -31,9 +31,11 @@ ms.date: 01/14/2021
 **Applies to:**
 - Microsoft 365 Defender
 
-The new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together the results of current and past investigations across your organization's devices, email & collaboration content, and identities. As [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) are taken or are pending approval, such actions are consolidated in a single Action center. 
+The new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together the results of current and past investigations across your organization's devices, email & collaboration content, and identities. As [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) are taken or are pending approval, such actions are consolidated in a single Action center, providing your security operations team with a "single pane of glass" experience.  
 
 ![Action Center](../../media/air-actioncenter.png)
+
+Read this article to get an overview of the Action center, including available actions, required permissions, and next steps.
 
 ## A "single pane of glass" experience
 
@@ -59,10 +61,6 @@ Your security operations team can operate more effectively and efficiently, beca
 4. To show only the columns you want to see, select **Customize columns**.<br/>![Action Center in Microsoft 365 Defender](../../media/mtp-action-center.png)
 
 5. Select an item in the list to view more details about an investigation. The investigation details view opens.<br/>![Investigation details](../../media/mtp-air-investdetails.png)
-
-    - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
-
-    - If the investigation involves a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
 
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft 365 Defender, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
