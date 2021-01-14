@@ -59,7 +59,7 @@ Automated investigation and response capabilities enable your security operation
 
 1. Determining whether a threat requires action;
 2. Taking (or recommending) any necessary remediation actions;
-3. Determining what additional investigations should occur; and
+3. Determining whether and what additional investigations should occur; and
 4. Repeating the process as necessary for other alerts.
 
 ## The automated investigation process
