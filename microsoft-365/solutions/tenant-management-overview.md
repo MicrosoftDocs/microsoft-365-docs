@@ -57,7 +57,7 @@ Here are the elements:
   - You have configured the correct DNS domain names.
   - For enterprise networks, you have optimized network traffic to the Microsoft network for onsite workers.
   - You have optimized network traffic for remote workers who are using a VPN client.
-- You have synchronized your Active Directory Domain Services (AD DS)accounts, groups, and other objects.
+- You have synchronized your Active Directory Domain Services (AD DS) accounts, groups, and other objects.
   - Your Azure AD tenant accounts are mapped to Exchange Online mailboxes with the correct DNS domains for email addresses.
   - Your user accounts have been assigned the correct licenses from the correct purchased products (such as Microsoft 365 E3 or E5).
 - You have configured strong identity and access management.
