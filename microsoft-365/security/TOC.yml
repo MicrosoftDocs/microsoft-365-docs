@@ -484,6 +484,8 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Attack Simulator in Defender for Office 365
               href: ./office-365-security/attack-simulator.md
+            - name: Get started using Attack simulation training
+              href: ./office-365-security/attack-simulation-training-get-started.md
             - name: Simulate a phishing attack with Attack simulation training
               href: ./office-365-security/attack-simulation-training.md
             - name: Create a custom payload for Attack simulation training

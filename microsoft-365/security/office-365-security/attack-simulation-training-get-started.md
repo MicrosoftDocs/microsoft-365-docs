@@ -21,14 +21,15 @@ ms.custom:
 description: "Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations."
 ---
 
-# Get started using Attack simulation training in Microsoft Defender for Office 365
+# Get started using Attack simulation training
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack simulation training in the Microsoft Security Center to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
 > [!NOTE]
->
 > Attack simulation training replaces the old Attack Simulator v1 experience that's described in [Attack Simulator in Microsoft Defender for Office 365](attack-simulator.md).
 
 ## What do you need to know before you begin?
