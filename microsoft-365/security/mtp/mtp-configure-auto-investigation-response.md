@@ -22,7 +22,7 @@ f1.keywords: CSH
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Microsoft 365 Defender includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. With self-healing, these capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure automated investigation and response in Microsoft 365 Defender.
+Microsoft 365 Defender includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. With [self-healing](mtp-autoir.md#how-automated-investigation-and-self-healing-works), these capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure automated investigation and response in Microsoft 365 Defender.
 
 To configure automated investigation and response capabilities, follow these steps:
 
@@ -36,7 +36,7 @@ Then, after you're all set up, [review pending and completed actions in the Acti
 ## Prerequisites for automated investigation and response in Microsoft 365 Defender
 
 |Requirement |Details |
-|--|--|
+|:----|:----|
 |Subscription requirements |One of the subscriptions: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E5 Security</li><li>Microsoft 365 A5 Security</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul><p> See [Microsoft 365 Defender licensing requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
 |Network requirements |<ul><li>[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) enabled</li><li>[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) configured</li><li>[Microsoft Defender for Identity integration](https://docs.microsoft.com/cloud-app-security/mdi-integration)</li></ul>|
 |Windows machine requirements |Windows 10, version 1709 or later installed (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/)) with the following threat protection services configured:<ul><li>[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)</li><li>[Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul>|
