@@ -34,9 +34,13 @@ In addition, enabling this functionality results in the [AutoSave](https://suppo
 
 ## Metadata changes for sensitivity labels
 
-Before you enable the setting to support co-authoring for Office desktop apps, it's important to understand that this action makes changes to how and where labeling metadata is saved and read in Office files. This change affects both newly applied labels and labels that are already applied.
+Before you enable the setting to support co-authoring for Office desktop apps, it's important to understand that this action makes changes to how and where labeling metadata is saved and read in Office files. 
 
 The labeling metadata includes information that identifies your tenant and applied sensitivity label. The change made is the format and location of where this labeling metadata is saved and read for unencrypted files for Word, Excel, and PowerPoint. There are no labeling metadata changes for encrypted files or emails.
+
+This change affects both files that are newly labeled and files that are already labeled.  When you use apps and services that support the coauthoring setting:
+- For files that are newly labeled, only the new format and location is used for the labeling metadata.
+- For files that are already labeled, the next time the file is opened and saved, if the file has metadata in the old format and location, it is copied to the new format and location.
 
 You can read more about this metadata change from the following resources:
 
