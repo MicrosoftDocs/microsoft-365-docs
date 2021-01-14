@@ -30,16 +30,9 @@ You must be a Global admin to do the steps in this article. For more information
 
 ## Download software and product license keys
 
-1. In the Microsoft 365 admin center, go to the **Billing** ><a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, in the **Software** section, select the software that you want to download.
 3. On the subscription details page, in the **Downloads & keys** section, choose the **Product version**, **Language**, and **CPU & file type**, then select **Download**.
 4. To download the key, select **Copy key to clipboard**.
 5. In the right pane, select **Copy**, then close the pane.
-6. Paste the key in a file in a secure location. The key is needed to activate the downloaded software.
-
-## Next steps
-...
-
-## Related content
-
-[Sell on-premise software through the Cloud Solution Provider (CSP) program](https://docs.microsoft.com/partner-center/csp-on-premise-software) (article)
+6. Paste the key in a file in a secure location and then enter it as instructed during the software installation. The key is needed to activate the downloaded software.
