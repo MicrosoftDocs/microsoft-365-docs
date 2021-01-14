@@ -43,7 +43,7 @@ Full access (Read and Write)
 Read-only access
 
 **Full access**
-Users with full access can Save,Modify and share a query. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" AAD built-in roles.
+Users with full access can save, modify, and share a query. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" AAD built-in roles.
 
 **Read-only access**
 Users with read-only access can log in and view all alerts and related information. They will not be able to save, modify, or share a query. Assigning read-only access rights requires adding the users to the "Security Reader" Azure AD built-in role.
