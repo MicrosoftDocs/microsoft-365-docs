@@ -1,5 +1,5 @@
 ---
-title: "Setup overview for Microsoft 365 for Campaigns"
+title: "Setup overview for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,18 +24,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Setup overview for Microsoft 365 for Campaigns"
+description: "Setup overview for Microsoft 365 Business Premium for campaigns or other businesses"
 ---
 
-# Set up Microsoft 365 for Campaigns
+# Set up Microsoft 365
 
-This article describes the process of setting up Microsoft 365 for Campaigns. Anybody with Microsoft 365 Business Premium can use this guidance to step up security.
+This article describes the process of setting up Microsoft 365. Anybody with Microsoft 365 Business Premium can use this guidance to step up security.
 
-## Admins: Set up Microsoft 365 for Campaigns
+## Admins: Set up Microsoft 365
 
-The following diagram describes how admins set up Microsoft 365 for Campaigns.
+The following diagram describes how admins set up Microsoft 365.
 
-![Steps to set up Microsoft 365 for Campaigns](../media/M365-democracy-SetUpProcess.png)
+![Steps to set up Microsoft 365](../media/M365-democracy-SetUpProcess.png)
 
 For campaigns that qualify for special pricing, get started by [requesting an invite from Microsoft](https://m365forcampaigns.microsoft.com/), then [signing up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). To complete setup, [run the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
 

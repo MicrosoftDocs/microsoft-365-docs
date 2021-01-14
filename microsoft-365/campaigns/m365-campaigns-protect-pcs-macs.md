@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Protect unmanaged or bring-your-own devices (BYOD) with Microsoft 365 for campaigns."
+description: "Protect unmanaged or bring-your-own devices (BYOD) with Microsoft 365."
 ---
 
 # Protect unmanaged Windows 10 PCs and Macs

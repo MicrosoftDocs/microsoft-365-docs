@@ -1,5 +1,5 @@
 ---
-title: "How Microsoft 365 for campaigns affects your users"
+title: "How these security recommendations affect your users"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how Microsoft 365 for campaigns affects your users and protects your data."
+description: "Learn how these security recommendations for Microsoft 365 Business Premium affects your users and protects your data."
 ---
 
-# How Microsoft 365 for Campaigns affects your users
+# How these security recommendations affect your users
 
-Microsoft 365 for Campaigns makes it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
+The security recommendations for Microsoft 365 in this solution make it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
 ![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff](../media/M365-democracy-Users_900px.png)
 

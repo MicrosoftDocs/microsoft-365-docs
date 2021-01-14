@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to protect your campaign or business by increasing your security with Microsoft 365 for Campaigns."
+description: "Learn how to protect your campaign or business by increasing your security with Microsoft 365."
 ---
 
 # Bump up security protection for your campaign or business
