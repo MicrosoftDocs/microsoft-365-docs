@@ -102,7 +102,7 @@ To create a sensitivity label
 1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
 2. Under **Solutions**, click **Information protection**.
 3. Click **Create a label**.
-4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
+4. Give the label a name. We naming it after the team you'll be using it with.
 5. Add a display name and description, and then click **Next**.
 6. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
 7. On the **Choose protection settings for files and emails** page, select **Encrypt files and emails**, and then click **Next**.
