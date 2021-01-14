@@ -21,18 +21,17 @@ description: "Learn how to use the search feature in the admin center for better
 
 # Search in the Microsoft 365 admin center
 
-As the administrator of a Microsoft 365 organization, you can use the search bar to search for users, perform actions, navigate to different settings, and send us feedback. With new search functionality, search speed has improved, and you can now search from every page in the admin center. The search box has moved to the banner region at the top of the admin center where it says **Microsoft 365 admin center**. You can also use the Alt+S shortcut to search from any page.
+As the administrator of a Microsoft 365 organization, you can use the search bar to search for users, perform actions, navigate to different settings, and send us feedback. With the new search functionality, search speed has improved, and you can now search from every page in the admin center. The search box has moved to the banner region at the top of the admin center where it says **Microsoft 365 admin center**. You can also use the Alt+S shortcut to search from any page.
 
 :::image type="content" source="../../media/search-bar.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
 
+Search results are organized in different categories. Most of the categories are the actual items in the admin center. For example, users, groups, shared mailboxes or domains. Other categories show you places you can navigate to, actions you can take or app level settings that you can change. And there's also a related to documentation.
+
+The following sections describe the different areas and categories in the admin center that are searchable. To improve the search speed, searches in the categories run simultaneously and results from one category are not affected by results in another one.
+
 ## Before you begin
 
-You need to be an administrator to search in the admin center.
-
-## Search faster and get better results from any page
-
-Search results are organized in different categories. Most of these categories are either the actual items in Microsoft 365 admin center e.g., Users, Groups, Shared Mailboxes or Domains. We also have some categories devoted to places you can navigate to, actions you can take or app level settings that you can change. Finally, there is a category related to documentation.
-The following sections describe the different areas/categories in the admin center that are searchable. To improve the searching speed, searches in these categories run simultaneously and results from one category are not affected by the other one.
+You need to be an administrator to search in the admin center. Search results are scoped to what administrator permissions the logged in user has. For example, if SharePoint admin doesn't see an area or category in the admin center, they won't see it in search.
 
 ## Users
 
@@ -91,6 +90,6 @@ If we can’t find a result for you, we'll try to find some documentation to hel
 
 ## Search in the admin center feedback
 
-This is a new feature, and any feedback is really appreciated. Send us feedback from Search. The more descriptive the feedback is, the better we would be able to help improve the feature.
+Send us feedback for our new search feature. Be descriptive and specific . The more descriptive and specific your feedback is, the better we would be able to help improve the feature.
 
 :::image type="content" source="../../media/search-feedback-mac.png" alt-text="Screenshot: Send feedback on search in the admin center":::
