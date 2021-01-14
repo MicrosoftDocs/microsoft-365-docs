@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 12/09/2020
+ms.date: 01/14/2021
 ---
 
 # The Action center
@@ -31,7 +31,7 @@ ms.date: 12/09/2020
 **Applies to:**
 - Microsoft 365 Defender
 
-Use the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and resulting verdict, [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) can occur automatically or upon approval by your organization's security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
+The new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together the results of current and past investigations across your organization's devices, email & collaboration content, and identities. As [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) are taken or are pending approval, such actions are consolidated in a single Action center. 
 
 ![Action Center](../../media/air-actioncenter.png)
 

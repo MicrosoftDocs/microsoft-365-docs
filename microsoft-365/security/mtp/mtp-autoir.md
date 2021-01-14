@@ -34,6 +34,15 @@ ms.reviewer: evaldm, isco
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 >
 
+The [new Microsoft 365 security center](overview-security-center.md) ([https://security.microsoft.com](https://security.microsoft.com)) brings together automated investigation and response capabilities across:
+- Microsoft Defender for Endpoint;
+- Microsoft Defender for Office 365; and 
+- Microsoft Defender for Identity
+
+Now, automated investigation and response capabilities for your organization's devices, email & collaboration content, and identities are brought together in a single experience. Your security team can now view details about investigations as well as pending and completed actions in a single location: the new, unified Action center. 
+
+Read this article to see how it works, and then take your next steps.
+
 ## How automated investigation and self-healing works
 
 As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor and protect against. Automated investigation and response capabilities, with self-healing, in Microsoft 365 Defender can help.
