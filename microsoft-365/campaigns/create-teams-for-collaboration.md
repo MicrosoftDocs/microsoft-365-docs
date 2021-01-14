@@ -66,15 +66,15 @@ Use the command box at the top to search for specific items or people, take quic
 
 ## Set it up
 
-Create a private team for just the campaign manager and candidate like this.
+Create a private team for just the business owner and managers, or campaign manager and candidate like this.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-Create an organization-wide team that everyone in the campaign can use to communicate and share files.
+Create an organization-wide team that everyone in the business or campaign can use to communicate and share files.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
-Create a team that you share with guests outside the campaign, such as advertising of financing.
+Create a team that you share with guests outside your organization, such as for advertising or finances.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 

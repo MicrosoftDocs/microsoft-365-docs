@@ -30,12 +30,12 @@ description: "Microsoft 365 guidance for smaller businesses, including smaller f
 Microsoft 365 for smaller businesses and campaigns
 ===========================
 
-In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other smaller businesses. Microsoft 365 for Campaigns comes with a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, even if you're not a campaign.
+In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses. This solution provides a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, no matter your business type.
 
 
 ![Microsoft 365 Business Premium protects your productivity tools, collaboration tools, file storage, email, devices, and identity](../media/M365-WhatIsIt-SecurityFocus.png)
 
-This configuration includes the following guidance for productivity, collaboration, file storage, email, devices, and identity to protect your business or campaign:
+This configuration includes the following guidance for productivity, collaboration, file storage, email, devices, and identity to protect your business:
 
 | Protection for | Description | Links |
 | ----- | ----- | ----- | ----- |
@@ -45,10 +45,10 @@ This configuration includes the following guidance for productivity, collaborati
 |Storing and sharing files securely | Share files and videos from Microsoft Teams, OneDrive, SharePoint, and Microsoft Stream, and protect sensitive data.| [Share files and videos](share-files-and-videos.md) |
 |Managed Windows 10 devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
-Microsoft 365 for Campaigns - a recommended security configuration of Microsoft 365
+A recommended security configuration for Microsoft 365 Business Premium
 ------------------------------------
 
-Microsoft 365 for Campaigns is a recommended secure configuration that includes Microsoft 365 Business Premium so that you can:
+This recommended secure configuration for Microsoft 365 Business Premium lets you:
 
 - Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.
 - Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.
@@ -56,7 +56,7 @@ Microsoft 365 for Campaigns is a recommended secure configuration that includes 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
-While federal and some state election campaigns in the United States qualify for [special pricing](get-microsoft-365-campaigns.md) for Microsoft 365 Business Premium, any organization with this plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.
+While federal and some state election campaigns in the United States qualify for [special pricing](get-microsoft-365-campaigns.md) for the Microsoft 365 for Campaigns offering of Microsoft 365 Business Premium, any organization with the Business Premium plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.
 
 This library includes the following:
 
@@ -75,7 +75,7 @@ Follow these steps to get started:
 - For any business: [Learn how your users will work with Microsoft 365](m365-campaigns-users.md)
 - For any business: [Set up Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
-Solutions for your business or campaign
+Solutions for your business
 --------------------------
 
 After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:

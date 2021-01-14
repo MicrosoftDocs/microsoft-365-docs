@@ -22,21 +22,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Create a communications site for your campaign."
+description: "Create a communications site for your campaign or business."
 ---
 
-# Create a communications site for your campaign
+# Create a communications site
 
-A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint. Communications sites are for sharing things broadly across your whole campaign; it's your internal campaign site.
+A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint. Communications sites are for sharing things broadly across your whole business or campaign; it's your internal strategy site.
 
 ## Best practices
 
 Include the following elements in your Communications site:
 
-1. Add your campaign logo and colors as a header image and theme
+1. Add your logo and colors as a header image and theme.
 2. Lead with your strategy, message, important documents, a directory, and FAQ in a **Hero web part**.
-3. Include a candidate statement to the team in a **Text web part**.
-4. Add campaign events to an **Events web part** so everyone can see what's coming up.
+3. Include a CEO or candidate statement to the team in a **Text web part**.
+4. Add events to an **Events web part** so everyone can see what's coming up.
 5. Add photos that people can use or share to an **Image gallery web part**.
 
 ![Diagram of a SharePoint Communications page with space for common elements that a campaign would need](../media/m365-democracy-comms-site.png)
