@@ -31,7 +31,7 @@ ms.reviewer: evaldm, isco
 **Applies to:**
 - Microsoft 365 Defender
 
-False positives/negatives can occasionally occur with any therat protection solution. If [automated investigation and response capabilities](mtp-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your organization can take. Your security operations team can:
+False positives/negatives can occasionally occur with any threat protection solution. If [automated investigation and response capabilities](mtp-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your organization can take. Your security operations team can:
 
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
@@ -56,7 +56,7 @@ Use this article as a guide.
 
 ## Undo a remediation action that was taken on a device
 
-If a remediation action was taken on a device (such as a Windows 10 device) and the item is not a threat, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
+If a remediation action was taken on a device (such as a Windows 10 device) and the affected entity is not actually a threat, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
 
 > [!IMPORTANT]
 > Make sure you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) before attempting to perform the following task.
