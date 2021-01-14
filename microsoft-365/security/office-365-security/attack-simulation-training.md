@@ -19,6 +19,8 @@ Attack simulation training in Microsoft Defender for Office 365 lets you run ben
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
+For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+
 To launch a simulated phishing attack, open the [Microsoft 365 security center](https://security.microsoft.com/), go to **Email & collaboration** \> **Attack simulation training**, and switch to the [**Simulations**](https://security.microsoft.com/attacksimulator?viewid=simulations) tab.
 
 Under **Simulations**, select **+ Launch a simulation**.
