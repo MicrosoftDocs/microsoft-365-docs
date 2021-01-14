@@ -28,7 +28,7 @@ For this tier of protection, we create a sensitivity label that can be used acro
 
 The highly sensitive tier offers the following additional protections over the baseline tier:
 
-- A sensitivity label for the team that allows you to turn guest sharing on or off and limits access to SharePoint content to web-only for unmanaged devices. This label can also be used to classify and encrypt files.
+- A sensitivity label for the team that allows you to turn guest sharing on or off and blocks access to SharePoint content for unmanaged devices. This label can also be used to classify and encrypt files.
 - A more restrictive default sharing link type
 - Only team owners can create private channels.
 - Access requests for the associated SharePoint site are turned off.
