@@ -27,14 +27,12 @@ ms.reviewer: evaldm, isco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Microsoft 365 Defender
 
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
->
 
-Microsoft 365 Defender includes automated investigation and response capabilities for your organization's devices, email & collaboration content, and identities. These capabilities are brought together in the new, unified Microsoft 365 security center. Your security team can view details about investigations, including any pending or completed remediation actions, in a single location: the [Action center](mtp-action-center.md). 
+Microsoft 365 Defender includes automated investigation and response capabilities for your organization's devices, email & collaboration content, and identities. These capabilities are brought together in the [new, unified Microsoft 365 security center](overview-security-center.md). Your security team can view details about investigations, including any pending or completed remediation actions, in a single location: the [Action center](mtp-action-center.md). 
 
 Read this article to see how automated investigation and response capabilities work, and then take your next steps.
 
@@ -71,7 +69,7 @@ While an investigation is running, any other related alerts that arise are added
 In Microsoft 365 Defender, each automated investigation correlates signals across Microsoft Defender for Identity, Microsoft Defender for Endpoint, and Defender for Office 365, as summarized in the following table: 
 
 |Entities |Threat protection services  |
-|---------|---------|
+|:---------|:---------|
 |Devices (also referred to as endpoints)     |[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Email content (files and messages in mailboxes)     |[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
