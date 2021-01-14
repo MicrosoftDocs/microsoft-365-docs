@@ -59,12 +59,12 @@ Automated investigation and response capabilities enable your security operation
 
 1. Determining whether a threat requires action;
 2. Taking (or recommending) any necessary remediation actions;
-3. Determining whether and what additional investigations should occur; and
+3. Determining whether and what other investigations should occur; and
 4. Repeating the process as necessary for other alerts.
 
 ## The automated investigation process
 
-An alert creates an incident, which can start an automated investigation. The automated investigation results in a verdict for each piece of evidence. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Remediation actions for malicious or suspicious entities are identified, and depending on how automated investigation and response capabilities are configured for your organization, actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](mtp-action-center.md).
+An alert creates an incident, which can start an automated investigation. The automated investigation results in a verdict for each piece of evidence. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Remediation actions for malicious or suspicious entities are identified. Depending on how automated investigation and response capabilities are configured for your organization, remediation actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](mtp-action-center.md).
 
 While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run. 
 
