@@ -84,4 +84,4 @@ In the Investigation details view, you can see information on the **Investigatio
 ## Next steps
 
 - [Approve or reject remediation actions following an automated investigation](mtp-autoir-actions.md)
-- [Review remediation actions](mtp-remediation-actions.md)
+- [Learn more about remediation actions](mtp-remediation-actions.md)
