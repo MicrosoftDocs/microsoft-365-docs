@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
+ms.date: 01/14/2021
 ---
 
 # Details and results of an automated investigation
