@@ -39,7 +39,7 @@ ms.topic: article
 
 Users with one of the following levels of permissions to access Microsoft denfender.
 
-Full access (Read and Write)
+- Full access (read and write)
 - Read-only access
 
 **Full access**:
