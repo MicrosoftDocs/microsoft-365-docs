@@ -37,7 +37,7 @@ ms.topic: article
 
 ### Before you begin
 
-Users with one of the following levels of permissions to access Microsoft denfender.
+Users need one of the following levels of permissions to access Microsoft Defender:
 
 - Full access (read and write)
 - Read-only access
