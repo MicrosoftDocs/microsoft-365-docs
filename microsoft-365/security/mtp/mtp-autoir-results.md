@@ -72,7 +72,7 @@ Use the investigation details view to see past, current, and pending activity pe
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
 | Tab | Description |
-|--------|--------|
+|:--------|:--------|
 | **Investigation graph**	| Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can click an item on the graph to view more details. For example, clicking the **Threats found** icon takes you to the **Key findings** tab. |
 | **Alerts**	| Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's machine, in Office apps, Cloud App Security, and other Microsoft 365 Defender features.|
 | **Devices** | Lists machines included in the investigation along with remediation level.|
@@ -83,5 +83,5 @@ In the Investigation details view, you can see information on the **Investigatio
 
 ## Next steps
 
-- [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
+- [Approve or reject remediation actions following an automated investigation](mtp-autoir-actions.md)
 - [Review remediation actions](mtp-remediation-actions.md)
