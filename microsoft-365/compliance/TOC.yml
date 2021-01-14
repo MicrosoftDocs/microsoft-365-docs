@@ -148,10 +148,10 @@
           href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels
           href: create-sensitivity-labels.md
-        - name: Enable co-authoring for documents encrypted by sensitivity labels
-          href: sensitivity-labels-coauthoring.md
         - name: Restrict access to content by using sensitivity labels to apply encryption
           href: encryption-sensitivity-labels.md
+        - name: Enable co-authoring for documents encrypted by sensitivity labels
+          href: sensitivity-labels-coauthoring.md
         - name: Apply a sensitivity label to content automatically
           href: apply-sensitivity-label-automatically.md
         - name: View label usage with label analytics

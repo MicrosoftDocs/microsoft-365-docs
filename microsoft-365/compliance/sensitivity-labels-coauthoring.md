@@ -76,12 +76,12 @@ Make sure you understand the following prerequisites before you turn on this fea
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
 - Azure Information Protection unified labeling client: Minimum version of 2.10.xx
 - Microsoft 365 Apps for enterprise:
-    - Windows: Preview: [Current Channel (Preview)](https://office.com/insider)
-    - MacOS: Preview: [Current Channel (Preview)](https://office.com/insider)
+    - Windows: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
+    - MacOS: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
     - iOS: Not yet supported
     - Android: Not yet supported
 - OneDrive sync app for Windows or macOS: Minimum version of 19.002.0121.0008
-- Endpoint data loss prevention (Endpoint DLP): [Beta Channel](https://office.com/insider)
+- Endpoint data loss prevention (Endpoint DLP): xx
 - Apps and services that use the Microsoft Information Protection SDK: Minimum version of 1.7 
 
 Microsoft 365 services automatically support the new labeling metadata when you turn on this feature. For example:
