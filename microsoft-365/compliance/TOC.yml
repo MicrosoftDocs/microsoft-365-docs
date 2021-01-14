@@ -241,6 +241,8 @@
           href: endpoint-dlp-learn-about.md
         - name: Get started with Endpoint data loss prevention
           href: endpoint-dlp-getting-started.md
+        - name: Configure device proxy and internet connection settings for Endpoint DLP
+          href: endpoint-dlp-configure-proxy.md
         - name: Using Endpoint data loss prevention
           href: endpoint-dlp-using.md
         - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
@@ -463,7 +465,7 @@
           href: retention-regulatory-requirements.md
 - name: Manage eDiscovery
   items:
-    - name: eDiscovery in Microsoft 365
+    - name: Microsoft 365 eDiscovery solutions
       href: ediscovery.md
     - name: Content search
       items:
@@ -580,9 +582,11 @@
       items:
         - name: Overview of Advanced eDiscovery
           href: overview-ediscovery-20.md
-        - name: Get started with Advanced eDiscovery
+        - name: Set up Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Work with custodians and non-custodial data sources
+        - name: Create an Advanced eDiscovery case
+          href: create-and-manage-advanced-ediscoveryv2-case.md
+        - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
           items: 
             - name: Add custodians to a case
@@ -595,7 +599,7 @@
               href: view-custodian-activity.md
             - name: Add non-custodial data sources to a case
               href: non-custodial-data-sources.md
-        - name: Work with communications
+        - name: Manage custodian communications
           href: managing-custodian-communications.md
           items: 
             - name: Create a hold notification
@@ -608,7 +612,7 @@
               href: acknowledge-hold-notification.md
         - name: Manage holds
           href: managing-holds.md
-        - name: Work with processing errors
+        - name: Manage processing errors
           href: processing-data-for-case.md
           items: 
             - name: Advanced indexing of custodian data
@@ -677,6 +681,8 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Advanced eDiscovery reference
           items: 
+            - name: Advanced eDiscovery alignment with EDRM
+              href: advanced-ediscovery-edrm.md
             - name: Advanced eDiscovery limits
               href: limits-ediscovery20.md
             - name: Supported file types
@@ -796,9 +802,9 @@
       items: 
         - name: Configure IRM to use an on-premises AD RMS server
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
-- name: Office 365 Enterprise
-  href: https://docs.microsoft.com/Office365/Enterprise
-- name: Microsoft 365 Apps for business
-  href: https://docs.microsoft.com/office365/admin/admin-home
+- name: Microsoft 365 enterprise
+  href: https://docs.microsoft.com/microsoft-365/enterprise/
 - name: Microsoft 365 security
   href: https://docs.microsoft.com/microsoft-365/security/
+- name: Microsoft 365 Apps for business
+  href: https://docs.microsoft.com/office365/admin/admin-home

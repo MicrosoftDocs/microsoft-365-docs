@@ -9,7 +9,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: "Admins can learn how to create custom payloads for Attack simulation training in Microsoft Defender for Office 365."
 ---
 
@@ -59,3 +59,11 @@ You're done building your payload. Now it's time to review the details and see a
 
 > [!IMPORTANT]
 > Payloads that you've created will have **Tenant** as their source. When selecting payloads, make sure that you don't filter out **Tenant**.
+
+## Related links
+
+[Get started using Attack simulation training](attack-simulation-training-get-started.md)
+
+[Create a phishing attack simulation](attack-simulation-training.md)
+
+[Gain insights through Attack simulation training](attack-simulation-training-insights.md)

@@ -9,7 +9,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: "Admins can learn how Attack simulation training in the Microsoft 365 security center affects employees and can gain insights from simulation and training outcomes."
 ---
 
@@ -48,4 +48,8 @@ The recommended actions section details recommendations as available in [Microso
 
 ## Related Links
 
-**Attack Simulator** [Create a phishing attack simulation](attack-simulation-training.md) and [create a payload for training your people](attack-simulation-training-payloads.md)
+[Get started using Attack simulation training](attack-simulation-training-get-started.md)
+
+[Create a phishing attack simulation](attack-simulation-training.md)
+
+[create a payload for training your people](attack-simulation-training-payloads.md)
