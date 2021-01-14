@@ -31,7 +31,7 @@ ms.reviewer: evaldm, isco
 **Applies to:**
 - Microsoft 365 Defender
 
-False positives/negatives can sometimes occur with any therat protection solution. If [automated investigation and response capabilities](mtp-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your organization can take. Your security operations team can:
+False positives/negatives can occasionally occur with any therat protection solution. If [automated investigation and response capabilities](mtp-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your organization can take. Your security operations team can:
 
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
