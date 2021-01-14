@@ -80,9 +80,8 @@ Make sure you understand the following prerequisites before you turn on this fea
     - MacOS: Minimum version of x
     - iOS: Not yet supported
     - Android: Not yet supported
-- OneDrive sync app:
-    - Windows: Minimum version of 19.002.0121.0008
-    - MacOS: Minimum version of x
+- OneDrive sync app for Windows or macOS: Minimum version of 19.002.0121.0008
+- Endpoint DLP: [Beta Channel](https://office.com/insider)
 - Apps and services that use the Microsoft Information Protection SDK: Minimum version of 1.7 
 
 Microsoft 365 services automatically support the new labeling metadata when you turn on this feature. For example:
