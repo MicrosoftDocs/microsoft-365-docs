@@ -27,11 +27,10 @@ ms.date: 01/14/2021
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Microsoft 365 Defender
 
-With Microsoft 365 Defender, when an automated investigation runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
+With Microsoft 365 Defender, when an [automated investigation](mtp-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
 ![Investigation details](../../media/mtp-air-investdetails.png)
 
@@ -43,7 +42,7 @@ You can open the investigation details view by using one of the following method
 
 ### Select an item in the Action center
 
-Use the Action center to view actions that are either pending approval (on the **Pending** tab) or were already approved (on the **History** tab). 
+The [Action center](mtp-action-center.md) ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together [remediation actions](mtp-remediation-actions.md) across your devices, email & collaboration content, and identities. Use the Action center to view actions that are either pending approval (on the **Pending** tab) or that were already approved (on the **History** tab).
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
