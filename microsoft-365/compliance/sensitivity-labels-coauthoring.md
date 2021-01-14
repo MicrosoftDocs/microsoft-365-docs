@@ -76,12 +76,12 @@ Make sure you understand the following prerequisites before you turn on this fea
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
 - Azure Information Protection unified labeling client: Minimum version of 2.10.xx
 - Microsoft 365 Apps for enterprise:
-    - Windows: Minimum version of x
-    - MacOS: Minimum version of x
+    - Windows: Preview: [Current Channel (Preview)](https://office.com/insider)
+    - MacOS: Preview: [Current Channel (Preview)](https://office.com/insider)
     - iOS: Not yet supported
     - Android: Not yet supported
 - OneDrive sync app for Windows or macOS: Minimum version of 19.002.0121.0008
-- Endpoint DLP: [Beta Channel](https://office.com/insider)
+- Endpoint data loss prevention (Endpoint DLP): [Beta Channel](https://office.com/insider)
 - Apps and services that use the Microsoft Information Protection SDK: Minimum version of 1.7 
 
 Microsoft 365 services automatically support the new labeling metadata when you turn on this feature. For example:
@@ -95,12 +95,14 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 
 Before you enable the tenant setting for co-authoring for files encrypted with sensitivity labels, make sure you understand the following limitations of this feature.
 
-- Because of the [labeling metadata changes](#metadata-changes-for-sensitivity-labels), all apps, services, and operation tools in your tenant must support the new labeling metadata for a consistent and reliable labeling experience.
+- Because of the [labeling metadata changes](#metadata-changes-for-sensitivity-labels), all apps, services, and operational tools in your tenant must support the new labeling metadata for a consistent and reliable labeling experience.
 
 - Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
     - **Double Key Encryption** is selected.
+    
+    These features remain unsupported and don't work for Office documents that are encrypted without using sensitivity labels. For example, by directly applying rights management templates or by using Information Rights Management (IRM) options from Office apps.
 
 - Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 350 MB. For these files, use the Office desktop apps.
 
