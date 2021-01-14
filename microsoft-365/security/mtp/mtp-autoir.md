@@ -34,7 +34,7 @@ ms.reviewer: evaldm, isco
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 >
 
-Microsoft 365 Defender includes automated investigation and response capabilities for your organization's devices, email & collaboration content, and identities. These capabilities are brought together in the new, unified Microsoft 365 security center. Your security team can view details about investigations as well as pending and completed actions in a single location: the Action center. 
+Microsoft 365 Defender includes automated investigation and response capabilities for your organization's devices, email & collaboration content, and identities. These capabilities are brought together in the new, unified Microsoft 365 security center. Your security team can view details about investigations, including any pending or completed remediation actions, in a single location: the [Action center](mtp-action-center.md). 
 
 Read this article to see how automated investigation and response capabilities work, and then take your next steps.
 
@@ -55,10 +55,10 @@ In Microsoft 365 Defender, automated investigation and response with self-healin
 
 Imagine having a virtual analyst in your Tier 1 / Tier 2 security operations team. The virtual analyst mimics the ideal steps that security operations would take to investigate and remediate threats. The virtual assistant could work 24x7, with unlimited capacity, and take on a significant load of investigations and threat remediation. Such a virtual assistant could significantly reduce the time to respond, freeing up your security operations team for other important strategic projects. If this scenario sounds like science fiction, it's not! Such a virtual analyst is part of your Microsoft 365 Defender suite, and its name is *automated investigation and response*.
 
-Automated investigation and response enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With automated investigation and response, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. automated investigation and response helps your security operations team by:
+Automated investigation and response capabilities enable your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With automated investigation and response, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. Automated investigation and response helps your security operations team by:
 
 1. Determining whether a threat requires action;
-2. Performing (or recommending) any necessary remediation actions;
+2. Taking (or recommending) any necessary remediation actions;
 3. Determining what additional investigations should occur; and
 4. Repeating the process as necessary for other alerts.
 
