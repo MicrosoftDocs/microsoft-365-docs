@@ -31,7 +31,7 @@ ms.date: 01/14/2021
 **Applies to:**
 - Microsoft 365 Defender
 
-When an automated investigation occurs in Microsoft 365 Defender, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
+With Microsoft 365 Defender, when an automated investigation runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
 ![Investigation details](../../media/mtp-air-investdetails.png)
 
