@@ -39,9 +39,9 @@ As an example, campaigns can create the following teams to communicate and colla
 
 ![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign](../media/m365-democracy-teams-collab.png)
 
-A legal firm or healthcare practice could create the following teams:
+A business, legal firm, or healthcare practice could create the following teams:
 
-1. **An firm-wide or practice-wide team:** This is for everyone to use for day to day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
+1. **An business-, firm-, or practice-wide team:** This is for everyone to use for day to day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
 1. **Individual teams:** Set up teams for smaller groups to collaborate about their day to day work.
 1. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
 
