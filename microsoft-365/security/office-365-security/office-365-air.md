@@ -8,7 +8,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 11/11/2020
+ms.date: 01/14/2021
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -159,7 +159,6 @@ The new and improved security center brings together AIR capabilities in [Micros
 
 The following table lists changes and improvements coming to AIR in Microsoft Defender for Office 365.
 
-
 |Item  |What's changing?  |
 |---------|---------|
 |**Investigations** page     | The updated **Investigations** page is more consistent with what you see in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#details-of-an-automated-investigation). You’ll see some general format and styling changes that align with the new, unified **Investigations** view. For example, the investigation graph has a more unified format.        |
@@ -175,5 +174,4 @@ The following table lists changes and improvements coming to AIR in Microsoft De
 ## Next steps
 
 - [See details and results of an automated investigation](air-view-investigation-results.md#view-details-of-an-investigation)
-
 - [Review and approve pending actions](air-remediation-actions.md)
