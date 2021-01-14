@@ -25,17 +25,16 @@ description: "Summary: Pre-work when moving from Microsoft Cloud Germany (Micros
 
 Use these links to get to the pre-work steps relevant to your organization:
 
-- For all subscriptions, use [these steps](#applies-to-everyone)
-- If you're using Exchange Online, [this step](#exchange-online)
-- If you're using SharePoint Online, [this step](#sharepoint-online)
-- If you're using a third-party mobile device management (MDM) solution, [this step](#mobile)
-- If you're using third-party service or line-of-business (LOB) apps that are integrated with Office 365, [this step](#line-of-business-apps)
-- If you're also using Azure services beyond those included with your Office 365 subscription, [this step](#azure)
-- If you're also using Dynamics 365, [this step](#dynamics-365)
-- If you're also using Power BI, [this step](#power-bi)
-- For DNS changes, use [this step](#dns)
-- If you're using federated identity, [these steps](#federated-identity)
-
+- For all subscriptions, do [these steps](#applies-to-everyone).
+- If you're using Exchange Online or Exchange hybrid, do [this step](#exchange-online).
+- If you're using SharePoint Online, do [this step](#sharepoint-online).
+- If you're using a third-party mobile device management (MDM) solution, do [this step](#mobile).
+- If you're using third-party service or line-of-business (LOB) apps that are integrated with Office 365, do [this step](#line-of-business-apps).
+- If you're also using Azure services beyond those included with your Office 365 subscription, do [this step](#azure).
+- If you're also using Dynamics 365, do [this step](#dynamics-365).
+- If you're also using Power BI, do [this step](#power-bi).
+- For DNS changes, do [this step](#dns).
+- If you're using federated identity, do [these steps](#federated-identity).
 
 ## Applies to everyone
 
