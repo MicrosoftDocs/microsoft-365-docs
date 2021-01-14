@@ -275,8 +275,7 @@ The following apps and services support sensitivity labels configured for sites 
   - Outlook on the web and for Windows, macOS, iOS, and Android
   - Forms
   - Stream
-  - Planner (rolling out)
-  - 
+  - Planner (rolling out) 
 
 The following apps and services don't currently support sensitivity labels configured for sites and group settings:
 
