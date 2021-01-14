@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 12/09/2020
+ms.date: 01/14/2021
 ---
 
 # Approve or reject pending actions following an automated investigation
@@ -33,10 +33,14 @@ ms.date: 12/09/2020
 
 When an automated investigation runs, it can result in one or more [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
-> [!TIP]
-> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft 365 Defender, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
+In the new, unified Microsoft 365 security center, the Action center brings together pending and completed actions across
+- Microsoft Defender for Endpoint;
+- Microsoft Defender for Office 365; and 
+- Microsoft Defender for Identity
 
-Pending actions can be reviewed and approved by using the [Action center](#review-a-pending-action-in-the-action-center) or the [investigation details view](#review-a-pending-action-in-the-investigation-details-view).
+This means that all remediation actions, whether completed or pending approval, across your organization's devices, email & collaboration content, and identities, are viewable in one portal: the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+
+This article describes how to approve pending actions (these are actions that require approval before steps are taken to remediate detected entities). To review or approve pending actions, your security operations team can use either the [Pending tab in the Action center](#review-a-pending-action-in-the-action-center) or [while viewing the details of an investigation](#review-a-pending-action-in-the-investigation-details-view).
 
 > [!NOTE]
 > You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see [Prerequisites for automated investigation and response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
@@ -64,4 +68,5 @@ Pending actions can be reviewed and approved by using the [Action center](#revie
 ## Next steps
 
 - [View the details and results of an automated investigation](mtp-autoir-results.md)
-- [Handle false positives/negatives in automated investigation and response capabilities](mtp-autoir-report-false-positives-negatives.md)
+
+- [Learn how to handle false positives/negatives (if you get one)](mtp-autoir-report-false-positives-negatives.md)
