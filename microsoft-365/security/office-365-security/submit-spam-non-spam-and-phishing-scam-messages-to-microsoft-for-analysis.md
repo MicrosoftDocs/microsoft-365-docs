@@ -41,7 +41,7 @@ You and your users can help this process by submitting false positives (good ema
 ## Submit false negatives to Microsoft
 
 > [!TIP]
-> Instead of using the following procedures to report false negatives, users in Outlook and Outlook on the web (formerly known as Outlook Web App) can use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](enable-the-report-message-add-in.md).
+> Instead of using the following procedures to report false negatives, users in Outlook and Outlook on the web (formerly known as Outlook Web App) can use the Report Message add-in or the Report Phishing add-in. For information about how to install and use these tools, see [Enable the Report Message add-in](enable-the-report-message-add-in.md) and [Enable the Report Phishing add-in](enable-the-report-phish-add-in.md).
 
 If you receive a message that passed through spam filtering that should have been identified as spam or phishing, you can submit the message to the Microsoft Spam Analysis and Microsoft Phishing Analysis teams as appropriate. The analysts will review the message and add it to the service-wide filters if it meets the classification criteria.
 
@@ -69,7 +69,8 @@ If you receive a message that passed through spam filtering that should have bee
 ## Submit false positives to Microsoft
 
 > [!TIP]
-> Instead of using the following procedures to report false positives, users in Outlook and Outlook on the web can use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](enable-the-report-message-add-in.md).
+> Instead of using the following procedures to report false positives, users in Outlook and Outlook on the web (formerly known as Outlook Web App) can use the Report Message add-in or the Report Phishing add-in. For information about how to install and use these tools, see [Enable the Report Message add-in](enable-the-report-message-add-in.md) and [Enable the Report Phishing add-in](enable-the-report-phish-add-in.md).
+
 
 If a message was incorrectly identified as spam, you can submit the message to the Microsoft Spam Analysis Team. The analysts will evaluate the message, and (depending on the results of the analysis) the service-wide filters can be adjusted to allow the message through.
 
