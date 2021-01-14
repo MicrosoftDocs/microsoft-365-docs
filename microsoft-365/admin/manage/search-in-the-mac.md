@@ -21,13 +21,13 @@ description: "Learn how to use the search feature in the admin center for better
 
 # Search in the Microsoft 365 admin center
 
-As the administrator of a Microsoft 365 organization, you can use the search bar to search for users, perform actions, navigate to different settings, and send us feedback. With the new search functionality, search speed has improved, and you can now search from every page in the admin center. The search box has moved to the banner region at the top of the admin center where it says **Microsoft 365 admin center**. You can also use the **Alt+S shortcut** to search from any page.
+As the administrator of a Microsoft 365 organization, you can use search to find users, perform actions, navigate to different settings, and read documentation. With new search functionality, search speed has improved, and you can now search from every page in the admin center. The search box has moved to the banner area at the top of the admin center. You can use the **Alt+S shortcut** to use search from any page.
 
 :::image type="content" source="../../media/search-full-screen.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
 
-Search results are organized in different categories. Most of the categories are the actual items in the admin center. For example, users, groups, shared mailboxes or domains. Other categories show you places you can navigate to, actions you can take or app level settings that you can change. And there's also a category related to documentation.
+Search results are organized into different categories. Most of the categories are items in the admin center. For example, users, groups, shared mailboxes or domains. Other categories show you places you can navigate to, actions you can take or app level settings that you can change. And there's also a category related to documentation.
 
-The following sections describe the different areas and categories in the admin center that are searchable. To improve the search speed, searches in the categories run simultaneously and results from one category are not affected by results in another one.
+The following sections describe the different areas and categories in the admin center that are searchable.
 
 ## Before you begin
 
@@ -66,9 +66,11 @@ You can search for Actions category contains frequently used actions in M365 Adm
 
 ## Navigation
 
-Results under Navigation category are an attempt to quickly help you get to a page in the admin center. For example, searching for RBAC will take you to the Roles page for Azure AD roles.
+Results provides a way to quickly navigate to a specific page in the admin center. For example, searching for RBAC will take you to the Roles page for Azure AD roles.
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Screenshot: Search results showing navigation path in the admin center":::
+> [!NOTE]
+> Information the user should notice even if skimming
 
 ## Settings
 
@@ -84,12 +86,12 @@ You can find quick links to your domains, and then the link will take you to tha
 
 ## Documentation
 
-If we can’t find a result for you, we'll try to find some documentation to help. It takes a little longer for the curated list of articles to find a match, so wait a second to let search find the results.
+A documentation search provides relevant help documentation based on your search phrase. It takes a little longer for the curated list of content, so wait a second to let search find the results.
 
 :::image type="content" source="../../media/search-for-docs-mac.png" alt-text="Screenshot: Search showing documentation results in the admin center":::
 
 ## Search in the admin center feedback
 
-Send us feedback for our new search feature. Be descriptive and specific . The more descriptive and specific your feedback is, the better we would be able to help improve the feature.
+Use this to submit feedback on the search experience. We can't respond to all feedback, but we read all of it, and use your feedback to improve the search experience. Make sure to provide as much detail in your feedback.
 
 :::image type="content" source="../../media/search-feedback-mac.png" alt-text="Screenshot: Send feedback on search in the admin center":::
