@@ -31,8 +31,6 @@ With [Microsoft Defender for Office 365](office-365-atp.md), you get [detailed i
 
 Use the following resources to set this up:
 
-****
-
 |Resource|Description|
 |---|---|
 |[Office 365 Management APIs overview](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)|The Office 365 Management Activity API provides information about various user, admin, system, and policy actions and events from Microsoft 365 and Azure Active Directory activity logs.|
