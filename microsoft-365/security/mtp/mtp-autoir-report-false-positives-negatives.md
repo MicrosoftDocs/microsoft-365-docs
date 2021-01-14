@@ -58,7 +58,7 @@ Use this article as a guide.
 
 ## Undo a remediation action that was taken on a device
 
-If a remediation action was taken on a device (such as a Windows 10 device) and the item is actually not a threat, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
+If a remediation action was taken on a device (such as a Windows 10 device) and the item is not a threat, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
 
 > [!IMPORTANT]
 > Make sure you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) before attempting to perform the following task.
@@ -67,7 +67,7 @@ If a remediation action was taken on a device (such as a Windows 10 device) and 
 
 2. In the navigation pane, choose **Action center**. 
 
-3. On the **History** tab, select an action that you want to undo. This opens a flyout.<br/>
+3. On the **History** tab, select an action that you want to undo. Selecting an action opens a flyout.<br/>
     > [!TIP]
     > Use filters to narrow down the list of results. 
 
@@ -75,7 +75,7 @@ If a remediation action was taken on a device (such as a Windows 10 device) and 
 
 5. In the investigation details view, select the **Actions** tab.
 
-6. Select an item that has status of **Completed**, and look for a link, such as **Approved**, in the **Decisions** column. This opens a flyout with more details about the action.
+6. Select an item that has status of **Completed**, and look for a link, such as **Approved**, in the **Decisions** column. Selection an action opens a flyout with more details about the action.
 
 7. To undo the action, select **Delete remediation**.
 
