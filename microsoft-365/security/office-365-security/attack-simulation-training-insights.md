@@ -48,4 +48,8 @@ The recommended actions section details recommendations as available in [Microso
 
 ## Related Links
 
-**Attack Simulator** [Create a phishing attack simulation](attack-simulation-training.md) and [create a payload for training your people](attack-simulation-training-payloads.md)
+[Get started using Attack simulation training](attack-simulation-training-get-started.md)
+
+[Create a phishing attack simulation](attack-simulation-training.md)
+
+[create a payload for training your people](attack-simulation-training-payloads.md)
