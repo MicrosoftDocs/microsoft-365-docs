@@ -66,15 +66,17 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
-- All apps, services, and operation tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
-- Azure Information Protection unified labeling client: Minimum version of x
+- All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
+- Azure Information Protection unified labeling client: Minimum version of 2.10.xx
 - Microsoft 365 Apps for enterprise:
     - Windows: Minimum version of x
     - MacOS: Minimum version of x
     - iOS: Not yet supported
     - Android: Not yet supported
+- OneDrive sync app:
+    - Windows: Minimum version of 19.002.0121.0008
+    - MacOS: Minimum version of x
 - Apps and services that use the Microsoft Information Protection SDK: Minimum version of 1.7 
-
 
 Microsoft 365 services automatically support the new labeling metadata when you turn on this feature. For example:
 
@@ -82,7 +84,6 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 - [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md)
 - [Microsoft Cloud App Security configured to apply sensitivity labels](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 - [Content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md)
-
 
 ## Limitations
 
@@ -100,7 +101,6 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 ## Known issues for this preview
 
 This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
-
 
 
 ## How to enable co-authoring for files with sensitivity labels
