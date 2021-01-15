@@ -17,8 +17,6 @@ description: "Admins can learn how Attack simulation training in the Microsoft 3
 
 Within Attack simulation training, Microsoft provides you with insights based on outcomes of simulations and trainings that employees went through. These insights will help keep you informed on the threat readiness progress of your employees, as well as recommend next steps to better prepare your employees and your environment for attacks.
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 We are continuously working on expanding the insights that are available to you. Behavior impact and recommended actions are currently available. To start, head over to [Attack simulation training in the Microsoft 365 security center](https://security.microsoft.com/attacksimulator?viewid=overview).
 
 ## Behavior impact on compromise rate
