@@ -33,22 +33,21 @@ Microsoft Teams is a collaboration app that helps your staff stay organized and 
 
 1. Create private teams for sensitive information.
 1. Create an org-wide team for communication with everyone across your organization.
+1. Create teams for specific projects and apply the right amount of protection based on who should be included.
 1. Create specific teams for communication with external partners to keep them separate from anything sensitive for your business.
 
-You can also create teams for specific projects and apply the right amount of protection based on who should be included.
+For example, a business, legal firm, or healthcare practice could create the following teams:
 
-A business, legal firm, or healthcare practice could create the following teams:
-
-1. **An business-, firm-, or practice-wide team:** This is for everyone to use for day to day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
+1. **A business-, firm-, or practice-wide team:** This is for everyone to use for day to day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
 1. **Individual teams:** Set up teams for smaller groups to collaborate about their day to day work.
 1. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
 
 ![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business](../media/m365-democracy-teams-business-collab.png)
 
-And campaigns can create the following teams to communicate and collaborate securely:
+And campaigns could create the following teams to communicate and collaborate securely:
 
-1. **A Campaign Leads team:** Set this up as a private team so that only your key campaign members can access it and discuss potentially sensitive concerns.
-2. **A general Campaign team:** This is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
+1. **A campaign Leads team:** Set this up as a private team so that only your key campaign members can access it and discuss potentially sensitive concerns.
+2. **A general campaign team:** This is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
 3. **A partners team:** Coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
 
 ![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign](../media/m365-democracy-teams-collab.png)
