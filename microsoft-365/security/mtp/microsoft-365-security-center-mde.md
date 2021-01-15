@@ -46,7 +46,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 |**Area**  |**Description of change**  |
 |---------|---------|
 | [Incidents & alerts](incidents-overview.md)  | In the Microsoft 365 security center, you can manage incidents and alerts across all of your endpoints, email, and identities. We've converged the experience to help you find related events more easily. For more information, see [Incidents Overview](incidents-overview.md).   |
-| [Hunting](advanced-hunting-overview.md)  |  Now includes "Advanced hunting" and "Custom detection rules."   |
+| [Hunting](advanced-hunting-overview.md)  |  Now includes "Advanced hunting" and "Custom detection rules." Hunt across ...  |
 |[Action center](mtp-action-center.md)    | Lists pending and completed actions that were taken following automated investigations and remediation actions. Formerly, the Action center in the Microsoft Defender Security Center listed pending and completed actions for remediation actions taken on devices only, while Automated investigations listed alerts and status. In the new and improved Microsoft 365 security center, the Action center brings together remediation actions and investigations across email, devices, and users—all in one location.  |
 | [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) |  Moved from under the "Dashboards" section.   |
 
