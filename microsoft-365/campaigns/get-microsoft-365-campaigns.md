@@ -30,12 +30,15 @@ description: "Get Microsoft 365 for Campaigns so you can protect your campaign f
 
 Anybody with Microsoft 365 Business Premium can use this guidance to configure extra security for email and collaboration. However, campaigns and political parties in the USA are eligible for special pricing for Microsoft 365. Currently this special pricing is available to:
 
-- US federal political campaigns (for example, campaigns seeking office for the US House, US Senate, or President)
-- National-level political parties in the United States.
+- National-level political parties in the United States, Canada, and New Zealand
+- National or federal political campaigns in the United States and New Zealand
+- U.S. State-wide political campaigns (eg: campaigns seeking office for governor, state legislature, or attorney general)
+    *Due to local regulations, we are unable to offer M365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.office.com/business).
+- State-level political parties in the United States
 
-If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft.  
+If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).  
 
-If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). Then use this library to configure extra security and to help your team collaborate securely.
+If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json) and then use this library to configure extra security and to help your team collaborate securely.
 
 ## What does Microsoft 365 for Campaigns include?
 
