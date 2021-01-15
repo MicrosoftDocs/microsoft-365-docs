@@ -24,6 +24,8 @@
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Secure Windows 10 computers
           href: ../business/secure-win-10-pcs.md
+        - name: Download software and product keys
+          href: setup/download-software-licenses-csp.md
         - name: Install Office apps
           href: setup/install-applications.md
         - name: Set up windows devices
