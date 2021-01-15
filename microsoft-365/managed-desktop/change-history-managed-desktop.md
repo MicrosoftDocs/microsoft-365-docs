@@ -35,7 +35,6 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
-[Windows security update insights](working-with-managed-desktop/security-update-insights) | Updated article
 [Readiness assessment tool](get-ready/readiness-assessment-tool.md) | New article
 [Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | New article
 [Register new devices yourself](get-started/register-devices-self.md) | Updated article
