@@ -31,15 +31,15 @@ After you've set it up, the people in your organization must enroll their devi
 To get to the device management panel, follow these steps:
 
 1. Go to the [Microsoft 365 admin center](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
-    
+
 2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Mobile device management option":::
 
-3. Select  **Manage devices**.
+3. Select  **Let's get started**.
 
 ## Manage mobile devices
-    
+
 After you've got Basic Mobility and Security set up, here are some ways you can manage the mobile devices in your organization.
 
 |**To do this**|**Do this**|
