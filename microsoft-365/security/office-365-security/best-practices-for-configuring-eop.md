@@ -43,7 +43,7 @@ These settings cover a range of features that are outside of security policies.
 |[Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
 |[Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)|Yes|Yes||
 |[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use `action=quarantine` for Standard, and `action=reject` for Strict.|
-|Deploy the [Report Message add-in](enable-the-report-message-add-in.md) to improve end-user reporting of suspicious email|Yes|Yes||
+|Deploy the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) to improve end-user reporting of suspicious email|Yes|Yes||
 |Schedule Malware and Spam Reports|Yes|Yes||
 |Auto-forwarding to external domains should be disallowed or monitored|Yes|Yes||
 |Unified Auditing should be enabled|Yes|Yes||
