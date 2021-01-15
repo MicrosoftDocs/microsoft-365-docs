@@ -116,7 +116,7 @@ Prepare the source tenant:
 6. The script will pause and ask you to accept or consent to the Exchange mailbox migration application that was created during this process. Here is an example.
 
     ```powershell
-    PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
+    PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain fabrikam.onmicrosoft.com -ResourceTenantAdminEmail admin@fabrikam.onmicrosoft.com -TargetTenantDomain contoso.onmicrosoft.com -ResourceTenantId <fabrikam's Id> -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
 
     cmdlet Get-Credential at command pipeline position 1
     Supply values for the following parameters:
@@ -125,16 +125,16 @@ Prepare the source tenant:
 
     Name                                     Account                                 SubscriptionName                        Environment                             TenantId
         ----                                     -------                                 ----------------                        -----------                             --------
-    Pay-As-You-Go (ewe23423-a3327-34232-343... Admin@fabrikam... Pay-As-You-Go                           AzureCloud                              dsad938432-dd8e-s9034-bf9a-83984293n43
+    Pay-As-You-Go (ewe23423-a3327-34232-343... Admin@fabrikam... Pay-As-You-Go                           AzureCloud                              <contoso's Id>
     Auditing setup successfully for Cross-TenantMovesVault
     Exchange application given access to KeyVault Cross-TenantMovesVault
-    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - Directory.ReadWrite.All. Exchange - Mailbox.Migration
-    Admin consent URI for fabrikam.onmicrosoft.com tenant admin is -
-    https://login.microsoftonline.com/fabrikam.onmicrosoft.com/adminconsent?client_id=6fea6ere-0dwe-404d-ad35-c71a15cers5c&redirect_uri=https://office.com
+    Application contoso_Friends_fabrikam_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - Directory.ReadWrite.All. Exchange - Mailbox.Migration
     Admin consent URI for contoso.onmicrosoft.com tenant admin is -
-    https://login.microsoftonline.com/contoso.onmicrosoft.com/adminconsent?client_id=6fea6ssd-0753-404d-wer5-c71a154d675c&redirect_uri=https://office.com
+    https://login.microsoftonline.com/contoso.onmicrosoft.com/adminconsent?client_id=6fea6ere-0dwe-404d-ad35-c71a15cers5c&redirect_uri=https://office.com
+    Admin consent URI for fabrikam.onmicrosoft.com tenant admin is -
+    https://login.microsoftonline.com/fabrikam.onmicrosoft.com/adminconsent?client_id=6fea6ssd-0753-404d-wer5-c71a154d675c&redirect_uri=https://office.com
     Application details to be registered in organization relationship: ApplicationId: [ 6fes8en4-sjo3-406d-ad35-sldkfjiew993 ]. KeyVault secret Id: [ https://cross-tenantmovesvault.vault.azure.net:443/certificates/Contoso-Fabrikam-cert/ksdfj843nt8476h84c288c5a3fb8ec5fdb08 ]. These values are available in variables $AppId and $CertificateId respectively
-    Please consent to the application for fabrikam.onmicrosoft.com before sending invitation to admin@contoso.onmicrosoft.com:
+    Please consent to the application for contoso.onmicrosoft.com before sending invitation to admin@fabrikam.onmicrosoft.com:
     ```  
 
 7. A URL will be displayed in the Remote PowerShell session. Copy the link provided for your tenant consent and paste it into a Web browser.
@@ -148,9 +148,9 @@ Prepare the source tenant:
 10. The script will configure the remaining setup objects. Here is an example.
 
     ```powershell
-    Successfully sent invitation to admin@contoso.onmicrosoft.com
-    Setting up exchange components on target tenant: fabrikam.onmicrosoft.com
-    MigrationEndpoint created in fabrikam.onmicrosoft.com for target contoso.onmicrosoft.com
+    Successfully sent invitation to admin@fabrikam.onmicrosoft.com
+    Setting up exchange components on target tenant: contoso.onmicrosoft.com
+    MigrationEndpoint created in contoso.onmicrosoft.com for source fabrikam.onmicrosoft.com
     Exchange setup complete. Migration endpoint details are available in $MigrationEndpoint variable
     ```
 
@@ -190,7 +190,7 @@ The target admin setup is now complete!
 
     Here is an example.
     ```powershell
-    SetupCrossTenantRelationshipForResourceTenant.ps1 -SourceMailboxMovePublishedScopes "MigScope","MyGroup" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
+    SetupCrossTenantRelationshipForResourceTenant.ps1 -SourceMailboxMovePublishedScopes "MigScope","MyGroup" -ResourceTenantDomain fabrikam.onmicrosoft.com -TargetTenantDomain contoso.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId <contoso's Id>
     Exchange setup complete.
 
     ```
@@ -208,15 +208,15 @@ Verify that the organization relationships in both source and target tenants and
 Verify that the organization relationship object was created and configured with this command.
 
 ```powershell
-Get-OrganizationRelationship <source tenant organization name> | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
 ```
 Here is an example:
 
 ```powershell
-PS C:\PowerShell\> Get-OrganizationRelationship fabrikam_contoso_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+PS C:\PowerShell\> Get-OrganizationRelationship contoso_fabrikam_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
 
-Name                  : fabrikam_contoso_1123
-DomainNames           : {sd0933me9f-9304-s903-s093-s093mfi903m4}
+Name                  : contoso_fabrikam_1123
+DomainNames           : {fabrikam's Id}
 MailboxMoveEnabled    : True
 MailboxMoveCapability : Inbound
 
@@ -227,17 +227,17 @@ MailboxMoveCapability : Inbound
 Verify that the migration endpoint object was created and configured with this command.
 
 ```powershell
-Get-MigrationEndpoint "<fabrikam_contoso_1123> | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
+Get-MigrationEndpoint | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
 ```
 
 Here is an example.
 
 ```powershell
-PS C:\PowerShell\> Get-MigrationEndpoint fabrikam_contoso_1123 | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
+PS C:\PowerShell\> Get-MigrationEndpoint contoso_fabrikam_1123 | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
 
 
-Identity             : fabrikam_contoso_1123
-RemoteTenant         : contoso.onmicrosoft.com
+Identity             : contoso_fabrikam_1123
+RemoteTenant         : fabrikam.onmicrosoft.com
 ApplicationId        : s93mf93-das9-dq24-dq234-dada9033904m
 AppSecretKeyVaultUrl : https://cross-tenantmyvaultformoves.vault.azure.net:443/certificates/Contoso-Fabrikam-cert/ae79348mx94384c288c5a3dfsioepw308
 
@@ -256,10 +256,10 @@ Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapabilit
 Here is an example.
 
 ```powershell
-PS C:\PowerShell\> Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
+PS C:\PowerShell\> Get-OrganizationRelationship contoso_fabrikam_0012 | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
 
 
-Name                       : fabrikam_contoso_001
+Name                       : contoso_fabrikam_0012
 MailboxMoveEnabled         : True
 MailboxMoveCapability      : RemoteOutbound
 MailboxMovePublishedScopes : {MigScope}
@@ -284,10 +284,10 @@ You must ensure the following objects and attributes are set in the target organ
       - ExchangeGUID (direct flow from source to target) – The mailbox GUID must match. The move process will not proceed if this is not present on target object. 
       - ArchiveGUID (direct flow from source to target) – The archive GUID must match. The move process will not proceed if this is not present on the target object. (This is only required if the source mailbox is Archive enabled). 
       - LegacyExchangeDN (flow as proxyAddress, “x500:<LegacyExchangeDN>”) – The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. The move processes will not proceed if this is not present on the target object. 
-      -	UserPrincipalName – UPN will align to the user’s NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com). 
-      -	Primary SMTPAddress – Primary SMTP address will align to the user’s NEW company (for example, user@northwind.com). 
-      -	TargetAddress/ExternalEmailAddress – MailUser will reference the user’s current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When assigning this value, verify that you have/are also assigning PrimarySMTPAddress or this value will set the PrimarySMTPAddress which will cause move failures. 
-      -	You cannot add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you cannot maintain contoso.com on the MEU in fabrikam.onmicrosoft.com tenant objects). Domains are associated with one Azure AD or Exchange Online tenant only.
+      -	UserPrincipalName – UPN will align to the user’s NEW identity or target company (for example, user@contoso.onmicrosoft.com). 
+      -	Primary SMTPAddress – Primary SMTP address will align to the user’s NEW company (for example, user@contoso.com). 
+      -	TargetAddress/ExternalEmailAddress – MailUser will reference the user’s current mailbox hosted in source tenant (for example user@fabrikam.onmicrosoft.com). When assigning this value, verify that you have/are also assigning PrimarySMTPAddress or this value will set the PrimarySMTPAddress which will cause move failures. 
+      -	You cannot add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you cannot maintain fabrikam.com on the MEU in contoso.onmicrosoft.com tenant objects). Domains are associated with one Azure AD or Exchange Online tenant only.
  
      Example **target** MailUser object:
  
@@ -296,16 +296,16 @@ You must ensure the following objects and attributes are set in the target organ
      | Alias                 | LaraN                                                                                                                    |
      | RecipientType         | MailUser                                                                                                                 |
      | RecipientTypeDetails  | MailUser                                                                                                                 |
-     | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
-     | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
-     | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
+     | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                                                                            |
+     | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                                                                  |
+     | ExternalEmailAddress  | SMTP:LaraN@fabrikam.onmicrosoft.com                                                                                      |
      | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
      | LegacyExchangeDN      | /o=First Organization/ou=Exchange Administrative Group                                                                   |
      |                       | (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara                                                  |
      | EmailAddresses        | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190  |
      |                       | 7273f1f9-Lara                                                                                                            |
-     |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
-     |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
+     |                       | smtp:LaraN@contoso.onmicrosoft.com                                                                                       |
+     |                       | SMTP:Lara.Newton@contoso.com                                                                                             |
      |||
 
      Example **source** Mailbox object:
@@ -315,13 +315,13 @@ You must ensure the following objects and attributes are set in the target organ
      | Alias                 | LaraN                                                                    |
      | RecipientType         | UserMailbox                                                              |
      | RecipientTypeDetails  | UserMailbox                                                              |
-     | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
-     | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
+     | UserPrincipalName     | LaraN@fabrikam.onmicrosoft.com                                           |
+     | PrimarySmtpAddress    | Lara.Newton@fabrikam.com                                                 |
      | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
      | LegacyExchangeDN      | /o=First Organization/ou=Exchange Administrative Group                   |
      |                       | (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara  |
-     | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
-     |                       | SMTP:Lara.Newton@contoso.com          |
+     | EmailAddresses        | smtp:LaraN@fabrikam.onmicrosoft.com                                      |
+     |                       | SMTP:Lara.Newton@fabrikam.com                                            |
      |||
 
    - Additional attributes may be included in Exchange hybrid write back already. If not, they should be included. 
@@ -360,7 +360,7 @@ You must ensure the following objects and attributes are set in the target organ
     Here is an example. 
 
     ```powershell
-    PS demo> get-user John@northwindtraders.com |select name, *recipient*| ft -AutoSize  
+    PS demo> get-user John@contoso.com |select name, *recipient*| ft -AutoSize  
 
     Name       	PreviousRecipientTypeDetails	 RecipientType RecipientTypeDetails  
     ----       ---------------------------- ------------- --------------------  
@@ -376,9 +376,9 @@ You must ensure the following objects and attributes are set in the target organ
     Here is an example.
 
     ```powershell
-    PS demo> Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo Confirm 
+    PS demo> Set-User John@contoso.com -PermanentlyClearPreviousMailboxInfo Confirm 
     Are you sure you want to perform this action? 
-    Delete all existing information about user “John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.  
+    Delete all existing information about user “John@contoso.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.  
     Do you want to continue? 
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y  
     ```
@@ -392,7 +392,7 @@ Cross-tenant Exchange mailbox migrations are submitted as migration batches init
 Here is an example migration batch cmdlet for kicking off moves.
 
 ```powershell
-New-MigrationBatch -Name T2Tbatch-testforignitedemo -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain targetformoves.onmicrosoft.com -AutoComplete
+New-MigrationBatch -Name T2Tbatch-testforignitedemo -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain contoso.onmicrosoft.com -AutoComplete
 
 Identity                   Status  Type               TotalCount
 --------                   ------  ----               ----------
@@ -435,7 +435,7 @@ Get-MoveRequest -Flags "CrossTenant"
 ```powershell
 #Dumps out the test mailboxes from SourceTenant 
 #Note, the filter applied on GetMailbox is for an attribute set on CA1 = “ProjectKermit” 
-#These are the ‘target’ users to be moved to the Northwind org tenant #################################################################  
+#These are the ‘target’ users to be moved to the contoso org tenant #################################################################  
 $outFile = "$home\desktop\UserListToImport.csv" 
 $outArray = @() 
 #output the test objects 
@@ -465,7 +465,7 @@ $pwstr = "Something 98053 Random!!";
 $pw = new-object "System.Security.SecureString"; 
 for ($i=0; $i -lt $pwstr.Length; $i++) {$pw.AppendChar($pwstr[$i])} foreach ($user in $ImportUserList) { 
      $tmpUser = $null 
- 	$UPNSuffix = "@northwindtraders.com"  	$UPN = $user.Alias+$upnsuffix 
+ 	$UPNSuffix = "@contoso.com"  	$UPN = $user.Alias+$upnsuffix 
  	$tmpUser = New-MailUser -organization -UserPrincipalName $upn -ExternalEmailAddress $user.primarysmtpaddress -FirstName $user.FirstName ` 
                  -LastName $user.LastName -SamAccountName $user.SamAccountName -ResetPasswordOnNextLogon $false ` 
                  -Alias $user.alias -PrimarySmtpAddress $UPN -Name $User.Name -DisplayName $user.DisplayName ` 
@@ -515,7 +515,7 @@ PS C:\PowerShell\> Get-SourceMailboxPermission testuser_7 |ft -AutoSize User, Ac
 User                                             AccessRights                                                            IsInherited Deny
 ----                                             ------------                                                            ----------- ----
 NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       False
-TestUser_8@SourceCompany.onmicrosoft.com         {FullAccess}                                                            False       False....
+TestUser_8@fabrikam.onmicrosoft.com         {FullAccess}                                                            False       False....
 ```
 Here's an example of the output of the mailbox permission after the move. 
 
@@ -523,7 +523,7 @@ Here's an example of the output of the mailbox permission after the move.
 PS C:\PowerShell\> Get-TargetMailboxPermission testuser_7 | ft -AutoSize User, AccessRights, IsInherited, Deny
 User                                             AccessRights                                                            IsInherited Deny
 ----                                             ------------                                                            ----------- ----
-NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       FalseTestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                                                            False       False
+NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       FalseTestUser_8@contoso.onmicrosoft.com         {FullAccess}                                                            False       False
 ```
  
 > [!Note]
@@ -569,16 +569,16 @@ Do remember that this feature is currently in preview and the SLA and any applic
 
 - **Issue: Cloud MailUsers with non-owned smtp proxyAddress block MRS moves background.** When creating target tenant MailUser objects, you must ensure that all SMTP proxy addresses belong to the target tenant organization. If an SMTP proxyAddress exists on the target mail user that does not belong to the local tenant, the conversion of the MailUser to Mailbox is prevented. This is due to our assurance that mailbox objects can only send mail from domains for which the tenant is authoritative (domains claimed by the tenant): 
 
-   - When you sync users from on-premises using Azure AD Connect, you provision on-premises MailUser objects with ExternalEmailAddress pointing to the source tenant where the mailbox exists (laran@contoso.onmicrosoft.com) and you stamp the PrimarySMTPAddress as a domain that resides in the target tenant (Lara.Newton@northwind.com). These values sync down to the tenant and an appropriate mail user is provisioned and ready for migration. An example object is shown here.
+   - When you sync users from on-premises using Azure AD Connect, you provision on-premises MailUser objects with ExternalEmailAddress pointing to the source tenant where the mailbox exists (laran@fabrikam.onmicrosoft.com) and you stamp the PrimarySMTPAddress as a domain that resides in the target tenant (Lara.Newton@contoso.com). These values sync down to the tenant and an appropriate mail user is provisioned and ready for migration. An example object is shown here.
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
      --------------------               -------------- 
-     SMTP:laran@contoso.onmicrosoft.com {SMTP:lara.newton@northwind.com} 
+     SMTP:laran@fabrikam.onmicrosoft.com {SMTP:lara.newton@contoso.com} 
      ```
 
    > [!Note]
-   > The *contoso.onmicrosoft.com* address is *not* present in the EmailAddresses / proxyAddresses array.
+   > The *fabrikam.onmicrosoft.com* address is *not* present in the EmailAddresses / proxyAddresses array.
 
 - **Issue: MailUser objects with “external” primary SMTP addresses are modified / reset to “internal” company claimed domains**
 
