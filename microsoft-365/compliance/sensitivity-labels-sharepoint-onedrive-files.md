@@ -251,3 +251,5 @@ If you have Microsoft 365 Multi-Geo, you must run this command for each of your 
 ## Next steps
 
 After you've enabled sensitivity labels for Office files in SharePoint and OneDrive, consider automatically labeling these files by using auto-labeling policies. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+
+Need to share encrypted documents with users outside your organization?  See [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
