@@ -207,7 +207,7 @@ If external users do not have an account in Azure Active Directory, they can aut
 
 - One option is to create these guest accounts yourself. You can specify any email address that these users already use. For example, their Gmail address.
     
-    The advantage of this option is that you can restrict access and rights to specific users by specifying their email address in the encryption settings. The downside is the administration overheads.
+    The advantage of this option is that you can restrict access and rights to specific users by specifying their email address in the encryption settings. The downside is the administration overhead for the account creation and coordination with the label configuration.
 
 - Another option is to use [SharePoint and OneDrive integration with Azure AD B2B (Preview)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) so that guest accounts are automatically created when your users share links.
     
