@@ -42,7 +42,7 @@ Basic Mobility and Security for Microsoft 365 hosted by the Intune service works
 If your device is not listed above, and you need to use it with Basic Mobility and Security, contact your work or school administrator.
 
 >[!TIP]
->If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](troubleshoot-basic-mobility-and-security.md).
+>If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](/basic-mobility-security/troubleshoot.md).
 
 ## Set up your mobile device with Intune and Basic Mobility and Security
 
