@@ -1,5 +1,5 @@
 ---
-title: "Enable coauthoring for documents encrypted by sensitivity labels in Microsoft 365"
+title: "Enable co-authoring for documents encrypted by sensitivity labels in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -12,10 +12,10 @@ localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 ms.topic: article
-description: "Turn on a setting that enables coauthoring and AutoSave in desktop apps for documents in SharePoint and OneDrive that are labeled with encryption."
+description: "Turn on a setting that enables co-authoring and AutoSave in desktop apps for documents in SharePoint and OneDrive that are labeled with encryption."
 ---
 
-# Enable coauthoring for files encrypted with sensitivity labels
+# Enable co-authoring for files encrypted with sensitivity labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -26,7 +26,7 @@ description: "Turn on a setting that enables coauthoring and AutoSave in desktop
 > - Enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change
 > - You cannot disable this feature yourself after it is enabled
 
-Enable the setting to support [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps stored in SharePoint or OneDrive so that when documents are labeled and encrypted by your [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
+Enable the setting to support [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps stored in SharePoint or OneDrive so that when documents are labeled and encrypted by your [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
 
 Without this setting enabled for your tenant, users must check out an encrypted document stored in SharePoint or OneDrive when they use Office desktop apps, which means that they can't collaborate in real time. Or, they must use Office on the web when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
@@ -35,13 +35,13 @@ In addition, enabling this functionality results in the [AutoSave](https://suppo
 ## Metadata changes for sensitivity labels
 
 > [!IMPORTANT]
-> After you enable the setting for coauthoring, labeling information for unencrypted files is no longer saved in custom properties.
+> After you enable the setting for co-authoring, labeling information for unencrypted files is no longer saved in custom properties.
 
-Before you enable the setting to support coauthoring for Office desktop apps, it's important to understand that this action makes changes to how and where labeling metadata is saved and read in Office files.
+Before you enable the setting to support co-authoring for Office desktop apps, it's important to understand that this action makes changes to how and where labeling metadata is saved and read in Office files.
 
 The labeling metadata includes information that identifies your tenant and applied sensitivity label. The change that this setting makes is the format and location for unencrypted files for Word, Excel, and PowerPoint. There are no labeling metadata changes for encrypted files or emails.
 
-This change affects both files that are newly labeled and files that are already labeled. When you use apps and services that support the coauthoring setting:
+This change affects both files that are newly labeled and files that are already labeled. When you use apps and services that support the co-authoring setting:
 - For files that are newly labeled, only the new format and location is used for the labeling metadata.
 - For files that are already labeled, the next time the file is opened and saved, if the file has metadata in the old format and location, it is copied to the new format and location.
 
@@ -59,7 +59,7 @@ Do not enable this setting if you have any apps, services, scripts, or tools in 
 
 - Inaccurate reporting for label usage
 
-- Coauthoring and AutoSave won't work for a labeled and encrypted document if another user has it open in an Office desktop app that doesn't support the new labeling metadata
+- Co-authoring and AutoSave won't work for a labeled and encrypted document if another user has it open in an Office desktop app that doesn't support the new labeling metadata
 
 - An Exchange Online mail flow rule that [identifies labels as custom properties in Office attachments](https://docs.microsoft.com/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) fails to encrypt the email and attachment, or incorrectly encrypts them
 
@@ -71,7 +71,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 - You must be a global admin to turn on this feature.
 
-- Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on coauthoring for files with sensitivity labels.
+- Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
 - Azure Information Protection unified labeling client: Minimum version of 2.10.xx
@@ -93,11 +93,11 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 
 ## Limitations
 
-Before you enable the tenant setting for coauthoring for files encrypted with sensitivity labels, make sure you understand the following limitations of this feature.
+Before you enable the tenant setting for co-authoring for files encrypted with sensitivity labels, make sure you understand the following limitations of this feature.
 
 - Because of the [labeling metadata changes](#metadata-changes-for-sensitivity-labels), all apps, services, and operational tools in your tenant must support the new labeling metadata for a consistent and reliable labeling experience.
 
-- Coauthoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
+- Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
     - **Double Key Encryption** is selected.
@@ -108,27 +108,27 @@ Before you enable the tenant setting for coauthoring for files encrypted with se
 
 ## Known issues for this preview
 
-This preview version of coauthoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
+This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
 
 
-## How to enable coauthoring for files with sensitivity labels
+## How to enable co-authoring for files with sensitivity labels
 
 > [!IMPORTANT]
 > Turning on this setting is a one-way action. We recommend that while the feature is in preview, test it only in a non-production environment and only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
 
 1. Sign in the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your test tenant.
 
-2. Select **Settings** > **Coauthoring for files with sensitivity labels**.
+2. Select **Settings** > **Co-authoring for files with sensitivity labels**.
 
-3. After you have read the summary description, prerequisites, what to expect, and the warning that you can't turn it off,  select **Turn on coauthoring for files with sensitivity labels**, and then **Apply**:
+3. After you have read the summary description, prerequisites, what to expect, and the warning that you can't turn it off,  select **Turn on co-authoring for files with sensitivity labels**, and then **Apply**:
     
-    ![Option to turn on coauthoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
+    ![Option to turn on co-authoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-## How to disable coauthoring for files with sensitivity labels
+## How to disable co-authoring for files with sensitivity labels
 
-After you've enabled coauthoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test it first with a test tenant rather than a production tenant.
+After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test it first with a test tenant rather than a production tenant.
 
-![Option that shows coauthoring turned on for sensitivity labels](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
+![Option that shows co-authoring turned on for sensitivity labels](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
 As the screenshot shows, you can contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) and request that this setting is disabled. This request might take several days and you will need to prove that you are you global administrator for your tenant. Expect usual support charges to apply. 
 
@@ -138,6 +138,6 @@ If a support engineer disables this setting for your tenant:
 
 - The new metadata format and location for Office documents that were used while the setting was enabled will not be copied to the original format and location. As a result, this labeling information for unencrypted Word, Excel, and PowerPoint files will be lost.
 
-- Coauthoring and AutoSave no longer work in your tenant.
+- Co-authoring and AutoSave no longer work in your tenant.
 
 - Sensitivity labels remain enabled for Office files in OneDrive and SharePoint.
