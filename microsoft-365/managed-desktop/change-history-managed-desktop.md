@@ -17,7 +17,41 @@ ms.localizationpriority: normal
 
 # Change history for Microsoft Managed Desktop documentation
 
-This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles are those which have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## December 2020
+New or changed article | Description
+--- | ---
+[What is Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Updated article
+[Work with reports](working-with-managed-desktop/reports.md) | Updated article
+[Privacy and personal data](service-description/privacy-personal-data.md) | Updated article
+[Compliance](intro/compliance.md) | Updated article
+[Prerequisites](get-ready/prerequisites.md) | Updated article
+[Network configuration](get-ready/network.md) | Updated article
+
+
+## November 2020
+New or changed article | Description
+--- | ---
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
+[Readiness assessment tool](get-ready/readiness-assessment-tool.md) | New article
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | New article
+[Register new devices yourself](get-started/register-devices-self.md) | Updated article
+[Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
+[Prerequisites for guest accounts](get-ready/guest-accounts.md) | New article
+[Access the admin portal](get-started/access-admin-portal.md) | Updated article
+
+
+## October 2020
+New or changed article | Description
+--- | ---
+[Prerequisites](get-ready/prerequisites.md) | Updated article
+[Work with insights](working-with-managed-desktop/insights.md) | Updated article
+[Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
+[Access the admin portal](get-started/access-admin-portal.md) | Updated article
+[Deploy apps to devices](get-started/deploy-apps.md) | Updated article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
 
 
 ## September 2020

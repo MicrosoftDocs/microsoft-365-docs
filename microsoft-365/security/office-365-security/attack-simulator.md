@@ -27,11 +27,8 @@ description: "Admins can learn how to use Attack Simulator to run simulated phis
 
 If your organization has Microsoft Defender for Office 365 Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
-> [!NOTE]
-> Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
-
 > [!TIP]
-> Attack simulation training is available for public preview in the Microsoft 365 security center. Check out [Simulate a phishing attack with Microsoft Defender for Office 365](attack-simulation-training.md) to learn more.
+> Attack simulation training is available for Public Preview in the Microsoft 365 security center. Check out [Simulate a phishing attack with Microsoft Defender for Office 365](attack-simulation-training.md) to learn more.
 
 ## What do you need to know before you begin?
 
@@ -44,6 +41,8 @@ If your organization has Microsoft Defender for Office 365 Plan 2, which include
 - Your account needs to be configured for multi-factor authentication (MFA) to create and manage campaigns in Attack Simulator. For instructions, see [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 - Phishing campaigns will collect and process events for 30 days. Historical campaign data will be available for up to 90 days after you launch the campaign.
+
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
 
 - There are no corresponding PowerShell cmdlets for Attack Simulator.
 
