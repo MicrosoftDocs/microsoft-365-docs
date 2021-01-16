@@ -77,7 +77,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Azure Information Protection unified labeling client: Minimum version of 2.10.xx
 - Microsoft 365 Apps for enterprise:
     - Windows: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
-    - MacOS: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
+    - macOS: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
     - iOS: Not yet supported
     - Android: Not yet supported
 - OneDrive sync app for Windows or macOS: Minimum version of 19.002.0121.0008
