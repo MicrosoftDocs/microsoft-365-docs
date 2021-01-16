@@ -1,5 +1,5 @@
 ---
-title: "Use Microsoft 365 data loss prevention on-premises scanner"
+title: "Use Microsoft 365 data loss prevention on-premises scanner (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn how to use the Microsoft 365  data loss prevention on premises scanner to monitor file activities and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
 ---
 
-# Use Microsoft 365 data loss prevention on-premises scanner
+# Use Microsoft 365 data loss prevention on-premises scanner (preview)
 
 
 

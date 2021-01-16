@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft 365 data loss prevention on-premises scanner"
+title: "Get started with Microsoft 365 data loss prevention on-premises scanner (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,19 +21,9 @@ search.appverid:
 description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file activities and implement protective actions for those file to endpoints."
 ---
 
-# Get started with data loss prevention on-premises scanner
+# Get started with data loss prevention on-premises scanner (preview)
 
-Microsoft data loss prevention on-premises scanner is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Overview of data loss prevention](data-loss-prevention-policies.md).
-
-DLP on-premises scanner allows you to monitor on-premises data-at-rest in file shares and SharePoint document libraries and folders to detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. <!--ADD LINKS -->DLP on-premises scanner detects sensitive information by using built-in or custom sensitive information types, sensitivity labels or file properties. 
-
-DLP on-premises scanner relies on a full implementation of Azure Information Protection (AIP) scanner to monitor, label and protect sensitive items. If you aren't familiar with AIP scanner, we strongly recommend familiarizing yourself with it. See these articles:
-
-- [What is Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)
-- [What is the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner)
-- [Requirements for installing and deploying the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner-prereqs)
-- [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner-configure-install)
-
+This article walks you through two scenarios where you create and modify a DLP policy that uses on-premises as a location.
 
 ## Before you begin
 
@@ -72,6 +62,10 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
     1. Add repositories that you would like to scan to the repositories list under the content scan job.
 
 
+## Understand DLP on-premises scan
+
+
+
 2. CREATE POLICY - see NEW TOPIC GENERIC HOW TO CREATE A DLP POLICY
     1. CONDITIONS
     1. ACTIONS
@@ -106,39 +100,29 @@ set the scanner schedule or use the manual **Scan Now** in the protal or run **S
 
 Remember that scanner runs delta scan of the repository by default and files were already scanned in the previous scan cycle will be skipped unless the file was changed or unless you initiated full rescan. Full rescan can be initiated by using **Rescan all files** option in the UI or by running **Start-AIPScan -Reset**.
 
-## PUT THIS INTO A USING DLP ON PREMISES SCANNER TOPIC viewing results 
-
-Microsoft DLP for on-premises detects DLP rule matches and reports them to the  Activity Explorer (https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer)
-
-And to Audit log in the Security & Compliance Center (https://security.microsoft.com/auditlogsearch). During the private preview the DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](https://docs.microsoft.com/en-us/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell. 
 
 
-Permissions for crawled files is available in Azure Log Analytics under NetworkScan_CL table. You must [enable AIP analytics](https://docs.microsoft.com/en-us/azure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports) to get this table populated.
+### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
 
-Use this query to get list of all files, folders and file shares:
-NetworkScan_CL
-| where TimeGenerated >= ago(30d)
-| extend rootPath = tolower(ObjectId_s)
-| project TimeGen = TimeGenerated, Path = rootPath, EffectivePublicAccess = EffectivePublicAccess_s, ScannerAccess = ScannerAccess_s,               RepositoryPermissions = RepositoryPermissions_s, SharePermissions = SharePermissions_s
-| summarize arg_max(TimeGen,*) by Path
+1. Open the Data loss prevention page in the Microsoft 365 Compliance center and choose Alerts.
 
-Discovery data is also available in local csv report stored under %localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_%timestamp%.csv report. Look for the following columns:
-•	DLP Mode
-•	DLP Status
-•	DLP Comment
-•	DLP Rule Name	DLP Actions
-•	Owner
-•	Current NTFS Permissions (SDDL)
-•	Applied NTFS Permissions (SDDL)
-•	NTFS permissions type
- 
-Scenario: Enforce DLP rule 
-To enforce DLP rules on the scanned files enforcement should be enabled on both content scan job and policy level.
-To enable scanner to enforce actions on the files connect to Azure Information Protection extension in Azure portal https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade, and enable Enforce option under the conte
+2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
-You can also set this setting per repository: some of the repositories in the same content scan job can set to enforce policy while others will only match and report.
 
-To complete enablement of enforce scenario you should set at least one DLP policy scoped to the on-premises scanner:
+### Viewing Endpoint DLP data in activity explorer
+
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
+
+2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
+
+   > [!div class="mx-imgBorder"]
+   > ![activity explorer filter for endpoint devices](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+
+## Next steps
+Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
+
+- [Using Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+
 
 ## Next steps
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
