@@ -12,7 +12,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 ms.topic: article
-description: "Turn on a setting that enables co-authoring and Auto-Save in desktop apps for documents in SharePoint and OneDrive that are labeled with encryption."
+description: "Turn on a setting that enables co-authoring and AutoSave in desktop apps for documents in SharePoint and OneDrive that are labeled with encryption."
 ---
 
 # Enable co-authoring for files encrypted with sensitivity labels
