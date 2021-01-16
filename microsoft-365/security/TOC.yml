@@ -25,6 +25,8 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
           href: ./office-365-security/sharepoint-file-access-policies.md
+        - name: Recommended Cloud App Security policies
+          href: ./office-365-security/mcas-saas-access-policies.md  
     - name: Microsoft Secure Score
       items: 
         - name: Secure Score overview
