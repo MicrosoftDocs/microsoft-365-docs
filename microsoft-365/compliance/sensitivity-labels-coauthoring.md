@@ -26,9 +26,9 @@ description: "Turn on a setting that enables co-authoring and AutoSave in deskto
 > - Enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change
 > - You cannot disable this feature yourself after it is enabled
 
-Enable the setting to support [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps stored in SharePoint or OneDrive so that when documents are labeled and encrypted by your [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
+Enable the setting to support [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps so that when documents are labeled and encrypted by [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
 
-Without this setting enabled for your tenant, users must check out an encrypted document stored in SharePoint or OneDrive when they use Office desktop apps, which means that they can't collaborate in real time. Or, they must use Office on the web when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Without this setting enabled for your tenant, users must check out an encrypted document stored in SharePoint or OneDrive when they use Office desktop apps. As a result, they can't collaborate in real time. Or, they must use Office on the web when [sensitivity labels are enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 In addition, enabling this functionality results in the [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality being supported for these labeled and encrypted files.
 
@@ -37,7 +37,7 @@ In addition, enabling this functionality results in the [AutoSave](https://suppo
 > [!IMPORTANT]
 > After you enable the setting for co-authoring, labeling information for unencrypted files is no longer saved in custom properties.
 
-Before you enable the setting to support co-authoring for Office desktop apps, it's important to understand that this action makes changes to how and where labeling metadata is saved and read in Office files.
+Before you enable the setting to support co-authoring for Office desktop apps, it's important to understand that this action makes changes to the labeling metadata that is saved to and read from Office files.
 
 The labeling metadata includes information that identifies your tenant and applied sensitivity label. The change that this setting makes is the format and location for unencrypted files for Word, Excel, and PowerPoint. There are no labeling metadata changes for encrypted files or emails.
 
