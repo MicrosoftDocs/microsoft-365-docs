@@ -52,9 +52,6 @@ Each report provides an analysis of a tracked threat and extensive guidance on h
 Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
 <p></p>
 
-**DRAFT NOTES: Replace with MTP video when available**
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bw1f]
-
 ## View the threat analytics dashboard
 
 The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https://security.microsoft.com/threatanalytics3)) highlights the reports that are most relevant to your organization. It summarizes the threats in the following sections:
