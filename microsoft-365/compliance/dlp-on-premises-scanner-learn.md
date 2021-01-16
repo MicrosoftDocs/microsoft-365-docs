@@ -37,7 +37,7 @@ DLP on-premises scanner relies on a full implementation of Azure Information Pro
 - [Tutorial: Installing the Azure Information Protection (AIP) unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/tutorial-install-scanner)- [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner-configure-install)
 - [Azure Information Protection unified labeling client - Version release history and support policy version 2.9.111.0](https://docs.microsoft.com/en-us/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
-## What on-premises scanner detects
+## DLP on-premises scanner activites you can monitor and take action on
 
 |activity |description  | auditable/restictable|
 |---------|---------|---------|
