@@ -40,11 +40,14 @@ The following conditions relate to all queries.
 
 1. Queries explore and return data from the past 30 days.
 2. Results can return up to 100,000 rows.
-3. You can make up to 10 calls per minute per tenant.
+3. You can make up to 15 calls per minute per tenant.
 4. You have 10 minutes of running time per hour per tenant.
 5. You have four total hours of running time day per tenant.
 6. If a single request runs for more than 10 minutes, it will time out and return an error.
-7. A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time. The response body will include the time until the quota you reached will be reset.
+7. A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time. Read the response body to understand the limit you have reached. 
+
+>[!Note]
+> All quatas listed above (e.g. 15 calls per min) are per tenant size. The above quotas are the minimum.
 
 ## Permissions
 
