@@ -159,8 +159,8 @@ For a more consistent label experience with meaningful reporting, provide approp
     - **Confidential \ All Employees**
     - **Confidential \ Anyone (no encryption)**
 
-  > [!NOTE]
-  > If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
+> [!NOTE]
+> If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
 
 
 ## Apply sensitivity labels to files, emails, and attachments
