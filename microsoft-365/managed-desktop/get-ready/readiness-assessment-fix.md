@@ -65,11 +65,11 @@ You have at least one certificate connector and no errors are reported. However,
 
 ### Conditional access policies
 
-Conditional access policies in your Azure AD organization must not target any Microsoft Manage Desktop users.
+Conditional access policies in your Azure AD organization must not target any Microsoft Manage Desktop service accounts.
 
 **Not ready**
 
-You have at least one conditional access policy that targets all users. Reset the policy to target a specific Azure AD group that does not include the Azure AD group of Microsoft Managed Desktop service accounts that will be created at enrollment. For steps, see [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups).
+You have at least one conditional access policy that targets all users. Modify the policy to target a specific Azure AD group that does not include the Azure AD group of Microsoft Managed Desktop service accounts that will be created at enrollment. For steps, see [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups).
 
 **Advisory**
 
@@ -88,29 +88,29 @@ The Intune Administrator role doesn't have sufficient permissions for this check
 
 ### Device Compliance policies
 
-Intune Device Compliance policies in your Azure AD organization must not target any Microsoft Managed Desktop users.
+Intune Device Compliance policies in your Azure AD organization may impact Microsoft Managed Desktop devices.
 
 **Not ready**
 
-You have at least one compliance policy that targets all users. Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
+You have at least one compliance policy that targets all users. Microsoft Managed Desktop includes compliance policies that will target your MIcrosoft Managed Desktop devices.  Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users or devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
 
 **Advisory**
 
-Make sure that any compliance policies you have don't include any Microsoft Managed Desktop users. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
+Make sure that any compliance policies you have don't target any Microsoft Managed Desktop users. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
 
 
 
-### Device Configuration policies
+### Device Configuration profiles
 
-Intune Device Configuration policies in your Azure AD organization must not target any Microsoft Manage Desktop devices or users.
+Intune Device Configuration profiles in your Azure AD organization must not target any Microsoft Manage Desktop devices or users.
 
 **Not ready**
 
-You have at least one configuration policy that targets all users, all devices, or both. Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
+You have at least one configuration profile that targets all users, all devices, or both. Reset the profile to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a profile with custom settings in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
 
 **Advisory**
 
-Make sure that any compliance policies you have don't include any Microsoft Managed Desktop devices or users. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
+Make sure that any configuration policies you have don't include any Microsoft Managed Desktop devices or users. For steps, see [Create a profile with custom settings in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
 
 
 
@@ -120,12 +120,12 @@ Microsoft Managed Desktop devices must be allowed to enroll in Intune.
 
 **Not ready**
 
-Follow the steps in [Set enrollment restrictions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) to change the setting to **Allow**.
+You currently have at least one enrollment restrictions policy configured to prevent Windows devices from enrollment into Intune. Follow the steps in [Set enrollment restrictions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) for each enrollment restriction policy that targets Microsoft Managed Desktop users and change the Windows (MDM) setting to **Allow**.  Note that personally owned WIndows (MDM) devices can be set to **Block**. 
 
 
 ### Enrollment Status Page
 
-You currently have the Enrollment Status Page (ESP) enabled. If you are participating in the public preview of this feature, you can ignore this item. For more information, see [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
+You currently have the Enrollment Status Page (ESP) enabled. If you are intending to participate in the Microsoft Managed Desktop public preview of this feature, you can ignore this item. For more information, see [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
 
 **Not ready**
 
@@ -137,16 +137,16 @@ Make sure that any profiles that have the **Show app and profile configuration p
 
 ### Intune enrollment
 
-Windows 10 devices in your Azure AD organization must be automatically enrolled in Intune.
+Windows 10 devices in your Azure AD organization must be able to automatically enroll in Intune.
 
 **Advisory**
 
-Make sure the MDM User scope is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
+Make sure the MDM User scope is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups** or an equivalent group targeting all of your Microsoft Managed Desktop users.
 
 
 ### Microsoft Store for Business
 
-We use Microsoft Store for Business so that you can download Company Portal to deploy some apps, such as Microsoft Project and Microsoft Visio.
+We use Microsoft Store for Business and deploy the Company Portal app on Microsoft Managed Desktop so allow users to optionally install some apps, such as Microsoft Project and Microsoft Visio (where pemritted).
 
 **Not ready**
 
@@ -154,7 +154,7 @@ Microsoft Store for Business either isn't enabled or isn't synced with Intune. F
 
 ### Multifactor authentication
 
-Multifactor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.
+Multifactor authentication must not be applied to Microsoft Managed Desktop service accounts.
 
 
 **Not ready**
