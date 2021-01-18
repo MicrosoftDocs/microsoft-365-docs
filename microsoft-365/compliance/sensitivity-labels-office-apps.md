@@ -159,8 +159,8 @@ For a more consistent label experience with meaningful reporting, provide approp
     - **Confidential \ All Employees**
     - **Confidential \ Anyone (no encryption)**
 
-  > [!NOTE]
-  > If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
+> [!NOTE]
+> If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
 
 
 ## Apply sensitivity labels to files, emails, and attachments
@@ -272,6 +272,41 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
+
+#### Setting different visual markings for Word, Excel, PowerPoint, and Outlook
+
+As an additional variable, you can configure visual markings per Office application type by using an "If.App" variable statement in the text string, and identify the application type by using the values **Word**, **Excel**, **PowerPoint**, or **Outlook**. You can also abbreviate these values, which is necessary if you want to specify more than one in the same If.App statement.
+
+> [!NOTE]
+> For completeness, instructions for Outlook are included, although currently supported only by the Azure Information Protection unified labeling client.
+
+Use the following syntax:
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+As with the other dynamic visual markings, the syntax is case-sensitive.
+
+Examples:
+
+- **Set header text for Word documents only:**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    In Word document headers only, the label applies the header text "This Word document is sensitive". No header text is applied to other Office applications.
+
+- **Set footer text for Word, Excel, and Outlook, and different footer text for PowerPoint:**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    In Word, Excel, and Outlook, the label applies the footer text "This content is confidential." In PowerPoint, the label applies the footer text "This presentation is confidential."
+
+- **Set specific watermark text for Word and PowerPoint, and then watermark text for Word, Excel, and PowerPoint:**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    In Word and PowerPoint, the label applies the watermark text "This content is Confidential". In Excel, the label applies the watermark text "Confidential". In Outlook, the label doesn't apply any watermark text because watermarks as visual markings are not supported for Outlook.
 
 ## Require users to apply a label to their email and documents
 
