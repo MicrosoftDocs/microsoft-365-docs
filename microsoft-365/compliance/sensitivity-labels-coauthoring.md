@@ -22,7 +22,7 @@ description: "Turn on a setting that enables co-authoring and AutoSave in deskto
 > [!NOTE]
 > This feature is in preview and subject to change. 
 >
-> We recommend that you try it in a test tenant rather than a production tenant because:
+> We recommend that you try this feature in a test tenant rather than a production tenant because:
 > - Enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change
 > - You cannot disable this feature yourself after it is enabled
 
@@ -74,7 +74,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
-- Azure Information Protection unified labeling client: Minimum version of 2.10.xx
+- Azure Information Protection unified labeling client: Minimum version of 2.10.xx with the documented minimum version of Microsoft 365 Apps for enterprise for Windows
 - Microsoft 365 Apps for enterprise:
     - Windows: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
     - macOS: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
@@ -106,6 +106,8 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 - Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 350 MB. For these files, use the Office desktop apps.
 
+- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for additional requirements or limitations. 
+
 ## Known issues for this preview
 
 This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
@@ -126,7 +128,7 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 
 ## How to disable co-authoring for files with sensitivity labels
 
-After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test it first with a test tenant rather than a production tenant.
+After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test this feature with a test tenant rather than a production tenant.
 
 ![Option that shows co-authoring turned on for sensitivity labels](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
