@@ -1,6 +1,6 @@
 ---
 title: Overview - Microsoft 365 security center
-description: Advantages in the new Microsoft 365 security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE). This article outlines Microsoft 365 security center advances for administrators.
+description: Advantages in the new Microsoft 365 security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE), with elements of Microsoft Defender for Identity (MDI) and Microsoft Cloud App Security (MCAS). This article outlines Microsoft 365 security center advances for administrators.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -58,7 +58,7 @@ The Microsoft 365 security center emphasizes *unity, clarity, and common goals* 
 
 Streamlining security centers creates a single pane for investigating any incidents taking place in Office 365. A primary example is the **Incidents** node on the quick launch of the Microsoft 365 security center.
 
-![Incidents in the Microsoft 365 security center](../../media/converged-incidents-2.png)
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in MDO.":::
 
 As an example, double-clicking on an incident name with **High** severity brings you to a page that demonstrates the advantage of converging centers.
 
@@ -100,14 +100,11 @@ The layout has been merged wherever centers overlap. Common controls and content
 
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
 
-![report page that includes a General security report, and specific Endpoint and Email & Collaboration reports](../../media/converged-reports-9.png)
-
+:::image type="content" source="../../media/OLDconverged-reports-9.png" alt-text="report page that includes a General security report, and specific Endpoint and Email & Collaboration reports":::
 
 ## Office 365 Cloud App Security and other security integrations
 
 As admins and operations teams work, they will find other points where features from different security centers have merged. It's important to explore the new portal to build familiarity and highlight any issues that can be reported through giving feedback on the home page. You can also quickly access self-help, and Microsoft for help, if assistance is called for. Just click the question mark (?).
-
-:::image type="content" source="../../media/converged-help.gif" alt-text="The animated graphic shows the home page with the 'help' question mark in the upper right corner, and then the Need Help panel prompting people to type in their issue.":::
 
  If you use **Office 365 Cloud App Security**, you can use its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**. <p> **Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams.
 
