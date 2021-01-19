@@ -18,63 +18,80 @@ ms.collection:
 - m365initiative-compliance
 search.appverid: 
 - MET150
-description: "Learn how to use the Microsoft 365  data loss prevention on premises scanner to monitor file activities and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
+description: "Learn how to use the Microsoft 365  data loss prevention on premises scanner to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
 ---
 
 # Use Microsoft 365 data loss prevention on-premises scanner (preview)
 
+To help familiarize you with DLP on-premises features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
-
-## PUT THIS INTO A USING DLP ON PREMISES SCANNER TOPIC viewing results 
+> [!IMPORTANT]
+> These DLP on-premises scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
+>- [Overview of data loss prevention](data-loss-prevention-policies.md)
+>- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
+>- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+>- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 
 ### Scenario: Discover files matching DLP rules
 
-Microsoft DLP for on-premises detects DLP rule matches and reports them to the  Activity Explorer (https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer)
+Data from DLP on-premises scanner surfaces in several areas
 
-And to Audit log in the Security & Compliance Center (https://security.microsoft.com/auditlogsearch). During the private preview the DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](https://docs.microsoft.com/en-us/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell. 
+#### Activity explorer
 
+ Microsoft DLP for on-premises detects DLP rule matches and reports them to [Activity Explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer). 
+ 
+#### Microsoft 365 Audit log
 
-Permissions for crawled files is available in Azure Log Analytics under NetworkScan_CL table. You must [enable AIP analytics](https://docs.microsoft.com/en-us/azure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports) to get this table populated.
+During the public preview the DLP rule matches are available in Audit log UI, see [Search the audit log in the compliance center](search-the-audit-log-in-security-and-compliance.md)  or accessible by [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell.
 
-Use this query to get list of all files, folders and file shares:
+#### AIP
+
+You can also get a list of all files, folders and file shares from AIP.
+
+1. Make sure you have the right permissions in AIP. Permissions for crawled files is available in Azure Log Analytics under NetworkScan_CL table. You must [enable AIP analytics](https://docs.microsoft.com/azure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports) to get this table populated.
+1. Use this query to get list of all files, folders and file shares:
+
+```sql
 NetworkScan_CL
 | where TimeGenerated >= ago(30d)
 | extend rootPath = tolower(ObjectId_s)
 | project TimeGen = TimeGenerated, Path = rootPath, EffectivePublicAccess = EffectivePublicAccess_s, ScannerAccess = ScannerAccess_s,               RepositoryPermissions = RepositoryPermissions_s, SharePermissions = SharePermissions_s
 | summarize arg_max(TimeGen,*) by Path
+```
+Discovery data is also available in a local report in csv format which is stored under:
 
-Discovery data is also available in local csv report stored under %localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_%timestamp%.csv report. Look for the following columns:
-•	DLP Mode
-•	DLP Status
-•	DLP Comment
-•	DLP Rule Name	DLP Actions
-•	Owner
-•	Current NTFS Permissions (SDDL)
-•	Applied NTFS Permissions (SDDL)
-•	NTFS permissions type
+**%localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_%timestamp%.csv report**.
+
+ Look for the following columns:
+- DLP Mode
+- DLP Status
+- DLP Comment
+- DLP Rule Name	DLP Actions
+- Owner
+- Current NTFS Permissions (SDDL)
+- Applied NTFS Permissions (SDDL)
+- NTFS permissions type
  
 ### Scenario: Enforce DLP rule 
-To enforce DLP rules on the scanned files enforcement should be enabled on both content scan job and policy level.
-To enable scanner to enforce actions on the files connect to Azure Information Protection extension in Azure portal https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade, and enable Enforce option under the conte
 
-You can also set this setting per repository: some of the repositories in the same content scan job can set to enforce policy while others will only match and report.
+If you want to enforce DLP rules on the scanned files, enforcement must be enabled on both the content scan job in AIP and at the policy level in DLP.
 
-To complete enablement of enforce scenario you should set at least one DLP policy scoped to the on-premises scanner:
+#### Configure AIP scanner to enforce actions 
 
-## Next steps
-Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
+1. Connect to [Azure Information Protection extension in the Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade).
+2. Select the **Enforce** option in the the content scan job.
+3. You can also set this setting per repository. Some of the repositories in the same content scan job can be set to enforce policy while others will only match and report.
 
-- [Using Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+#### Configure DLP to enforce policy actions
+
+1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) and select the DLP policy that is scoped to the on-premises location repositories you have configured in AIP. 
+1. Edit the policy.
+1. On the **Test or turn on the policy** page, select **Yes, turn it on right away**. 
 
 ## See also
 
-- [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
-- [Using Endpoint data loss prevention ](endpoint-dlp-using.md)
+- [Learn about DLP on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
+- [Get started with  DLP on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
-- [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
-- [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

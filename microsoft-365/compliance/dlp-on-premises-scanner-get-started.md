@@ -73,7 +73,7 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 6.  Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-7. Choose **Create policy** and create a test DLP policy. See [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md) if you need help creating a policy. Use these parameters for your policy:
+7. Choose **Create policy** and create a test DLP policy. See [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md) if you need help creating a policy. Be sure to run it in test until you are comfortable with this feature. Use these parameters for your policy:
     1. Scope the DLP on-premises scanner rule to specific locations if needed. If you scope **locations** to **All**, all files scanned by the scanner will be subject to the DLP rule matching and enforcement.
     1. When specifying the locations, you can use either exclusion or inclusion list. During public preview you cannot set both of them. You can either define that the rule is relevant only to paths matching one of the patterns listed in inclusion list or, all files, except the files matching the pattern listed in inclusion list. No local paths are supported. Here are some examples of valid paths:
     - \\\server\share
@@ -99,11 +99,13 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
-### Viewing DLP on-premises scanner in activity explorer
+### Viewing DLP on-premises scanner in activity explorer and audit log
 
 1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your on-premises scanner locations.
+
+3. Open the [Audit log in the Compliance center](https://security.microsoft.com/auditlogsearch). During the public preview the DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 
 
 ## Next steps
 Now that you have deployed a test policy for DLP on-premises locations and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.

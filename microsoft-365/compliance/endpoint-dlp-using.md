@@ -103,7 +103,7 @@ This configuration will help ensure your data remains safe while also avoiding u
 
 ## Endpoint DLP policy scenarios
 
-To help familiarize you with Endpoint DLP features and how they surface in DLP policies, we've put together some scenarios for you to follow. All the Endpoint DLP content will be folded in to the main DLP content set when Endpoint DLP becomes generally available.
+To help familiarize you with Endpoint DLP features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
 > [!IMPORTANT]
 > These Endpoint DLP scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
