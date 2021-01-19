@@ -8,6 +8,8 @@
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
+        - name: Security recommendations for priority accounts
+          href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Identity and device access configurations
       href: ./office-365-security/microsoft-365-policies-configurations.md
       items: 
@@ -170,6 +172,12 @@
                   items: 
                     - name: Understand the schema
                       href: mtp/advanced-hunting-schema-tables.md
+                    - name: AADSignInEventsBeta
+                      href: mtp/advanced-hunting-aadsignineventsbeta-table.md
+                    - name: AADSpnSignInEventsBeta
+                      href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
+                    - name: Schema naming changes
+                      href: mtp/advanced-hunting-schema-changes.md
                     - name: AlertEvidence
                       href: mtp/advanced-hunting-alertevidence-table.md
                     - name: AlertInfo
@@ -329,6 +337,8 @@
                   href: ./office-365-security/auditing-reports-in-eop.md
             - name: Defender for Office 365
               href: ./office-365-security/office-365-atp.md
+            - name: Evaluate Defender for Office 365
+              href: ./office-365-security/office-365-evaluation.md
             - name: What's new in Defender for Office 365
               href: office-365-security/whats-new-in-office-365-atp.md
             - name: Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams
@@ -417,8 +427,6 @@
               href: ./office-365-security/email-validation-and-authentication.md
             - name: Give users access to the Security center
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
-            - name: Security recommendations for priority accounts
-              href: ./office-365-security/security-recommendations-for-priority-accounts.md
             - name: Safe Documents in Defender for Office 365
               href: ./office-365-security/safe-docs.md
             - name: Set up Safe Links policies in Defender for Office 365
@@ -478,6 +486,8 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Attack Simulator in Defender for Office 365
               href: ./office-365-security/attack-simulator.md
+            - name: Get started using Attack simulation training
+              href: ./office-365-security/attack-simulation-training-get-started.md
             - name: Simulate a phishing attack with Attack simulation training
               href: ./office-365-security/attack-simulation-training.md
             - name: Create a custom payload for Attack simulation training
@@ -518,6 +528,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Enable the Report Message add-in
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: Enable the Report Phishing add-in
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: Install and use the Junk Email Reporting add-in
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: Mail flow rules (transport rules) in standalone EOP

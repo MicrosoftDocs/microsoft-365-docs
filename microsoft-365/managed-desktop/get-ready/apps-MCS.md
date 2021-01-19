@@ -19,7 +19,7 @@ You can engage with Microsoft Consulting Services (MCS) to get your apps package
 
 To work with MCS app packaging, **you must provide these elements**:
 
-- The source installer files (e.g., setup.exe or .msi).
+- The source installer files (for example, setup.exe or .msi).
 - The installation instructions, specifying details about how the final installation should look. For example, should there be a desktop shortcut to the app? What should the app's visibility be? Should the app connect to a server and if so, which one? For details, see the [application packaging request template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
 - You must perform your own acceptance testing to verify that the app works as you need it to in your environment.
 
@@ -35,11 +35,11 @@ Start the packaging process by uploading the app information to the Microsoft Ma
 
 ![calendar showing app inflow on a Thursday (the 21st in this example), media validation the next day, packaging on the following Monday (the 25th), and app delivery on the subsequent Friday (the 29th)](../../media/MCS-cal.png)
 
-You'll be notified once the app has been delivered. At that point, you have 21 days to perform acceptance testing and sign off on the work in the Microsoft Managed Desktop portal. If discover some problem with the app during your acceptance testing, reject the app in the Microsoft Managed Desktop portal and you will be connected via email with an MCS packager to understand and resolve the issue.
+You'll be notified once the app has been delivered. At that point, you have 21 days to perform acceptance testing and approve the work in the Microsoft Managed Desktop portal. If discover some problem with the app during your acceptance testing, reject the app in the Microsoft Managed Desktop portal and you will be connected via email with an MCS packager to understand and resolve the issue.
 
 ## Testing accounts and environment
 
-For the packaging team to complete the migration to Microsoft Intune we recommend that you provide certain permissions:
+For the packaging team to complete the migration to Microsoft Intune, we recommend that you provide certain permissions:
  
 -	Access to Microsoft Intune’s App Deployment capabilities for the packager to add and assign the app 
 -	Test groups, user accounts, and licenses for the packagers to be able to test the apps
