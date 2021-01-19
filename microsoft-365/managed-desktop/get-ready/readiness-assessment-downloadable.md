@@ -11,7 +11,6 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Downloadable readiness assessment checker
 
 # Downloadable readiness assessment checker
 
