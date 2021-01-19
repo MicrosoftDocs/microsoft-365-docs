@@ -37,6 +37,10 @@ By default, an eDiscovery Manager or Administrator of a multi-geo tenant will be
 
 Users' Exchange mailboxes are moved automatically if their PDL is changed. When a new mailbox is created, it is provisioned to the user's PDL or to the central location if no value has been set for the user's PDL.
 
+## Power BI
+
+As a Power BI Premium customer, you can deploy content to datacenters in regions other than the home region of the Power BI tenant. See [Configure Multi-Geo support for Power BI Premium](https://docs.microsoft.com/power-bi/admin/service-admin-premium-multi-geo)
+
 ## Information Protection (IP) Data Loss Prevention (DLP) Policy
 
 You can set your IP DLP policies for OneDrive for Business, SharePoint, and Exchange in the Security and Compliance center, scoping policies as needed to the whole tenant or to applicable users. For example: If you wish to select a policy for a user in a satellite location, select to apply the policy to a specific OneDrive and enter the user's OneDrive url. See [Overview of data loss prevention policies](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) for general guidance in creating DLP policies.
@@ -45,9 +49,9 @@ The DLP policies are automatically synchronized based on their applicability to 
 
 Implementing Information Protection and Data Loss prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable accounts for the policy or apply the policy globally to all accounts.
 
-## Microsoft Flow
+## Power Automate
 
-Flows created for the satellite location will use the end point located in the default geo location for the tenant.  Microsoft Flow is not a Multi-Geo service. 
+Flows created for the satellite location will use the end point located in the default geo location for the tenant.  Power Automate is not a Multi-Geo service. 
 
 ## Microsoft PowerApps
 
