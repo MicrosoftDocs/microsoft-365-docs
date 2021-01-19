@@ -201,3 +201,24 @@ To resolve this issue, retry [downloading the search results](export-search-resu
 ## See Also
 
 - [Tips to avoid content location errors](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
+
+## Error/issue: Downloaded Export shows no results
+
+After a successful export, the completed download via the export tool shows zero files in the results.
+
+### Resolution
+
+This is a client side issue and in order to remediate please attempt the following steps:
+
+1. Try using another client/machine to download
+
+2. Make sure to download to local drive
+
+3. Make sure the virus scanner is not running
+
+4. Make sure that no other export is downloading to same folder or any parent folder
+
+5. If the previous setps do not work, disable zipping and de-duplication
+
+6. If this works then the issue is due to a local virus scanner or a disk issue
+
