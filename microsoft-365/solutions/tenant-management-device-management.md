@@ -18,7 +18,7 @@ description: "Deploy the correct option for device and app management for your M
 
 # Step 5. Device and app management for your Microsoft 365 for enterprise tenants
 
-Microsoft 365 for enterprise includes features to help manage devices and the use of apps on those devices within your organization with mobile device management (MDM) and mobile application management (MAM). You can use Microsoft Intune or Basic Mobility and Security to manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. For example, you can prevent emails from being sent to people outside your organization or isolate organization data from personal data on your worker's personal devices.
+Microsoft 365 for enterprise includes features to help manage devices and the use of apps on those devices within your organization with mobile device management (MDM) and mobile application management (MAM). You can manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. For example, you can prevent emails from being sent to people outside your organization or isolate organization data from personal data on your worker's personal devices.
 
 Here is an example of the validation and management of users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.
 
@@ -26,30 +26,19 @@ Here is an example of the validation and management of users, their devices, and
 
 To help you secure and protect your organization's resources, Microsoft 365 for enterprise includes features to help manage devices and their access to apps. There are two options for device management:
 
-- Microsoft Intune
-- Basic Mobility and Security
+- Microsoft Intune, which is a comprehensive device and app management solution for enterprises.
+- Basic Mobility and Security, which is a subset of Intune services included with all Microsoft 365 products for managing devices in your organization. For more information, see [Capabilities of Basic Mobility and Security](https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/capabilities).
+
+If you have Microsoft 365 E3 or E5, you should use Intune.
 
 ## Microsoft Intune
 
-You can use Microsoft Intune to manage access to your organization using MDM or MAM. MDM is when users "enroll" their devices in Intune. After a device is enrolled, it is a managed device; therefore, it can receive your organization's  policies, rules, and settings. For example, you can install specific apps, create a password policy, install a VPN connection, and more.
+You use [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide) to manage access to your organization using MDM or MAM. MDM is when users "enroll" their devices in Intune. After a device is enrolled, it is a managed device and can receive your organization's  policies, rules, and settings. For example, you can install specific apps, create a password policy, install a VPN connection, and more.
 
 Users with their own personal devices may not want to enroll their devices or be managed by Intune and your organization's policies. But you still need to protect your organization's resources and data. In this scenario, you can protect your apps using MAM. For example, you can use an MAM policy that requires a user to enter a PIN when accessing SharePoint on the device.
 
 You'll also determine how you're going to manage personal devices and organization-owned devices. You might want to treat devices differently, depending on their uses.
 
-## Basic Mobility and Security
-
-This is built into Microsoft 365 for enterprise and helps you secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
-
-## Choose between the two options
-
-To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune).
-
-Based on your assessment, you can manage your devices and their access to apps with:
-
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
-- [Basic Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
- 
 ## Identity and device access configurations
 
 Microsoft provides a set of configurations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. These configurations include the use of:
@@ -70,21 +59,20 @@ For device access and app management, use the configurations in these articles:
 
 ## Results of Step 5
 
-For device and app management for your Microsoft 365 tenant, you have determined:
+For device and app management for your Microsoft 365 tenant, you have determined the Intune settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps.
 
-- Whether to use Intune or Basic Mobility and Security.
-- The settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps.
+Here is an example of a tenant with Intune device and app management with the new elements highlighted.
 
-Here is an example of a tenant with device and app management with the new elements highlighted.
+![Example of a tenant with Intune device and app management](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
-![Example of a tenant with device and app management](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
-
-The tenant has:
+In this illustration, the tenant has:
 
 - Organization-owned devices enrolled in Intune.
 - Intune device and app policies for enrolled and personal devices.
 
 ## Ongoing maintenance for device and app management
 
-On an ongoing basis, you might need to revise your settings and policies for additional apps, devices, and security requirements.
+On an ongoing basis, you might need to: 
 
+- Manage device enrollment.
+- Revise your settings and policies for additional apps, devices, and security requirements.

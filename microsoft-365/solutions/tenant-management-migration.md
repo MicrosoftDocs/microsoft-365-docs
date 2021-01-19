@@ -77,7 +77,7 @@ Here is an example of a tenant with a completed migration of on-premises servers
 
 ![Example of a tenant with a completed migration of on-premises servers](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
 
-The tenant has:
+In this illustration, the organization has:
 
 - Migrated its on-premises Exchange Server mailboxes to Exchange Online.
 - Migrated its on-premises SharePoint Server sites and data to SharePoint in Microsoft 365.

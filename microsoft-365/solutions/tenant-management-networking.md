@@ -38,12 +38,12 @@ Here is an example of a traditional enterprise network.
 
 ![A traditional enterprise network with central access to the Internet](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
-In this illustration, 
+In this illustration, branch offices connect to a central office through wide area network (WAN) devices and a WAN backbone. Internet access is through a security or proxy device at the network edge of the central office and an Internet service provider (ISP). On the Internet, the Microsoft Global Network has a series of front doors in regions around the world. Organizations can also use intermediate locations for additional packet processing and security for traffic. An organization's Microsoft 365 tenant is located within the Microsoft Global Network.
 
 The problems with this configuration for Microsoft 365 cloud services are:
 
-- Traffic gets sent to non-local front doors, increasing latency.
-- Network hairpins perform duplicate packet processing for trusted traffic, increasing latency.
+- For users in branch offices, traffic gets sent to non-local front doors, increasing latency.
+- Sending traffic to intermediate locations create network hairpins that perform duplicate packet processing for trusted traffic, increasing latency.
 - Network edge devices perform unneeded and duplicate packet processing on trusted traffic, increasing latency.
 
 Optimizing Microsoft 365 network performance doesn't need to be complicated. You can get the best possible performance by following a few key principles:
@@ -56,6 +56,8 @@ Optimizing Microsoft 365 network performance doesn't need to be complicated. You
 If you implement these principles, you get an enterprise network optimized for Microsoft 365.
 
 ![An enterprise network optimized for Microsoft 365](../media/tenant-management-overview/tenant-management-networking-optimized.png)
+
+In this illustration, branch offices have their own Internet connection through a software-defined WAN device (SDWAN) device, which sends trusted Microsoft 365 traffic to the regionally closest front door. At the central office, trusted Microsoft 365 traffic bypasses the security or proxy device and intermediate devices are no longer used.
 
 Here's are how the optimized configuration solves the latency issues of a traditional enterprise network:
 
@@ -71,7 +73,7 @@ If your remote workers are using a traditional VPN client to obtain remote acces
 
 ![Network traffic from VPN clients without tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance. 
+In this illustration, Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance. 
 
 With split tunneling, you can configure your VPN client to exclude specific types of traffic from being sent over the VPN connection to the organization network.
 
@@ -81,7 +83,7 @@ Here is the resulting traffic flow for split tunneling, in which most of the tra
 
 ![Network traffic from VPN clients with tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
-This allows the VPN client to send and receive crucial Microsoft 365 cloud service traffic directly over the Internet and to the nearest entry point into the Microsoft network.
+In this illustration, the VPN client sends and receives crucial Microsoft 365 cloud service traffic directly over the Internet and to the nearest entry point into the Microsoft network.
 
 For more information and guidance, see [Optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
 

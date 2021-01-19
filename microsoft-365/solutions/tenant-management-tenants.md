@@ -25,7 +25,7 @@ Having a single tenant simplifies many aspects of your organization’s use of M
 
 A single tenant provides the most feature-rich and simplified collaboration and productivity experience for your users.
 
-Here is an example.
+Here is an example showing the default location and Azure AD tenant of a Microsoft 365 tenant.
 
 ![A single Microsoft 365 tenant with its Azure AD tenant](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
@@ -40,7 +40,7 @@ There are many reasons why your organization could have multiple tenants:
 - Clear separation of branding for conglomerate organizations
 - Pre-production, test, or sandbox tenants
 
-Here is an example of an organization that has two tenants (Tenant A and Tenant B) in the same default datacenter geo.
+Here is an example of an organization that has two tenants (Tenant A and Tenant B) in the same default datacenter geo. Each tenant as a separate Azure AD tenant.
 
 ![Multiple Microsoft 365 tenants with their own Azure AD tenants](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
@@ -60,9 +60,13 @@ Here are two example tenants and their mailboxes before cross-tenant mailbox mig
 
 ![Multiple Microsoft 365 tenants and their mailboxes](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
+In this illustration, two separate tenants have their own domains and set of Exchange mailboxes.
+
 Here is the target tenant (Tenant A) after cross-tenant mailbox migration.
 
 ![The target tenant after cross-tenant mailbox migration](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
+
+In this illustration, a single tenant has both domains and both sets of Exchange mailboxes.
 
 For more information, see [Cross-tenant mailbox migration](../enterprise/cross-tenant-mailbox-migration.md).
 
@@ -78,7 +82,7 @@ With Microsoft 365 Multi-Geo, you can provision and store data at rest in the ot
 
 In a Multi-Geo environment, your Microsoft 365 tenant consists of a default or central location where your Microsoft 365 subscription was originally created and one or more satellite locations. In a multi-geo tenant, the information about geo locations, groups, and user information is mastered in a global Azure AD tenant. Because your tenant information is mastered centrally and synchronized into each geo location, collaboration experiences involving anyone from your company are shared across the locations.
 
-Here is an example.
+Here is an example of an organization that has its default location in Europe and a satellite location in North America. Both locations share the same global Azure AD tenant for the single Microsoft 365 tenant.
 
 ![Example of a multi-geo Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
@@ -121,7 +125,7 @@ Here is an example of a new tenant.
 
 ![Example of a new tenant](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
 
-The tenant has:
+In this illustration, the tenant has:
 
 - A default location corresponding to a Microsoft 365 datacenter geo.
 - A set of products and licenses.
