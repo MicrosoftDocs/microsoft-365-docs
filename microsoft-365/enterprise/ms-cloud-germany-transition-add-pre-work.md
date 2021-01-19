@@ -31,7 +31,7 @@ Use these links to get to the pre-work steps relevant to your organization:
 - If you're using a third-party mobile device management (MDM) solution, do [this step](#mobile).
 - If you're using third-party service or line-of-business (LOB) apps that are integrated with Office 365, do [this step](#line-of-business-apps).
 - If you're also using Azure services beyond those included with your Office 365 subscription, do [this step](#azure).
-- If you're also using Dynamics 365, do [this step](#dynamics-365).
+- If you're also using Dynamics 365, do [this step](#dynamics365).
 - If you're also using Power BI, do [this step](#power-bi).
 - For DNS changes, do [this step](#dns).
 - If you're using federated identity, do [these steps](#federated-identity).
@@ -171,7 +171,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
-| Review and prepare for DNS change if the current DNS has an MSOID CName entry. | Customer-owned DNS zone changes | Office client services customers | Update the Time to Live (TTL) for customer-owned DNS records to 5 minutes if an MSOID CName exists. |
+| Remove MSOID, CName from customer-owned DNS if it exists anytime before Azure AD cut-over. A TTL of 5 minutes can be set so that the change can take effect quickly. | Customer-owned DNS zone changes | Office client services customers | 
 |||||
 
 ## Federated identity
