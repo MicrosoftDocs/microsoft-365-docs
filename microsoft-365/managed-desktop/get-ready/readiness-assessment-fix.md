@@ -88,11 +88,11 @@ The Intune Administrator role doesn't have sufficient permissions for this check
 
 ### Device Compliance policies
 
-Intune Device Compliance policies in your Azure AD organization may impact Microsoft Managed Desktop devices.
+Intune Device Compliance policies in your Azure AD organization might impact Microsoft Managed Desktop devices.
 
 **Not ready**
 
-You have at least one compliance policy that targets all users. Microsoft Managed Desktop includes compliance policies that will target your MIcrosoft Managed Desktop devices.  Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users or devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
+You have at least one compliance policy that targets all users. Microsoft Managed Desktop includes compliance policies that will target your Microsoft Managed Desktop devices.  Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users or devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
 
 **Advisory**
 
@@ -120,12 +120,12 @@ Microsoft Managed Desktop devices must be allowed to enroll in Intune.
 
 **Not ready**
 
-You currently have at least one enrollment restrictions policy configured to prevent Windows devices from enrollment into Intune. Follow the steps in [Set enrollment restrictions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) for each enrollment restriction policy that targets Microsoft Managed Desktop users and change the Windows (MDM) setting to **Allow**.  Note that personally owned WIndows (MDM) devices can be set to **Block**. 
+You currently have at least one enrollment restriction policy configured to prevent Windows devices from enrollment in Intune. Follow the steps in [Set enrollment restrictions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) for each enrollment restriction policy that targets Microsoft Managed Desktop users and change the Windows (MDM) setting to **Allow**. You can, however, set any **personally owned** Windows (MDM) devices to **Block**. 
 
 
 ### Enrollment Status Page
 
-You currently have the Enrollment Status Page (ESP) enabled. If you are intending to participate in the Microsoft Managed Desktop public preview of this feature, you can ignore this item. For more information, see [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
+You currently have the Enrollment Status Page (ESP) enabled. If you intend to participate in the Microsoft Managed Desktop public preview of this feature, you can ignore this item. For more information, see [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
 
 **Not ready**
 
@@ -146,11 +146,11 @@ Make sure the MDM User scope is set to **Some** or **All**, not **None**. If you
 
 ### Microsoft Store for Business
 
-We use Microsoft Store for Business and deploy the Company Portal app on Microsoft Managed Desktop so allow users to optionally install some apps, such as Microsoft Project and Microsoft Visio (where pemritted).
+We use Microsoft Store for Business and deploy the Company Portal app on Microsoft Managed Desktop to allow users to optionally install some apps, such as Microsoft Project and Microsoft Visio (where permitted).
 
 **Not ready**
 
-Microsoft Store for Business either isn't enabled or isn't synced with Intune. For more information, see [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) and [Install Intune Company Portal on on devices](../get-started/company-portal.md).
+Microsoft Store for Business either isn't enabled or isn't synced with Intune. For more information, see [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) and [Install Intune Company Portal on devices](../get-started/company-portal.md).
 
 ### Multifactor authentication
 
@@ -159,11 +159,11 @@ Multifactor authentication must not be applied to Microsoft Managed Desktop serv
 
 **Not ready**
 
-You have some multifactor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. Change the policy to use an assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
 
 **Advisory**
 
-Make sure that any conditional access policies that require MFA exclude the **Modern Workplace -All** Azure AD group. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+Make sure that any conditional access policies that require multifactor authentication exclude the **Modern Workplace -All** Azure AD group. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
 **Error**
 
