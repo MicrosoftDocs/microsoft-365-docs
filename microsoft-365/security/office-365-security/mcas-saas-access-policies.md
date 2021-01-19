@@ -25,7 +25,6 @@ Microsoft Cloud App Security also integrates natively with Microsoft Information
 This guidance includes recommendations for these scenarios:
 - Bring SaaS apps into IT management
 - Tune protection for specific SaaS apps
-- Add protection for sensitive or highly regulated SharePoint sites
 - Configure data loss prevention (DLP) to help comply with data protection regulations
 
 ## Bring SaaS apps into IT management
@@ -67,9 +66,6 @@ For examples of how to apply additional protection to specific apps, see [Protec
 
 [How Cloud App Security helps protect your Box environment](https://docs.microsoft.com/cloud-app-security/protect-box) demonstrates the types of controls that can help you protect your business data in Box and other apps with sensitive data.
 
-## Add protection for sensitive or highly regulated SharePoint sites
-
-tbd
 
 ## Configure data loss prevention (DLP) to help comply with data protection regulations
 
