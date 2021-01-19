@@ -20,7 +20,7 @@ ROBOTS: NOINDEX
 description: "Admins can learn about the trials feature in Microsoft Defender for Office 365"
 ---
 
-## About trials
+# About trials
 
 > [!NOTE]
 > The features described in this article are currently in Preview, aren't available to everyone, and are subject to change without notice.
