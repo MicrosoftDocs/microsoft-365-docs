@@ -26,7 +26,7 @@ The built-in Basic Mobility and Security for Microsoft 365 helps you secure and 
 
 Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently-asked questions (FAQ)](frequently-asked-questions.md). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
 
-Device management is part of the Security & Compliance Center so you'll need to go there to kick off MDM setup.
+Device management is part of the Security & Compliance Center so you'll need to go there to kick off Basic Mobility and Security setup.
 
 ## Activate the Basic Mobility and Security service
 
@@ -40,7 +40,7 @@ Device management is part of the Security & Compliance Center so you'll need to 
 
 When the service is ready, complete the following steps to finish setup.
 
-### Step 1: (Required) Configure domains for MDM
+### Step 1: (Required) Configure domains for Basic Mobility and Security
 
 If you don't have a custom domain associated with Microsoft 365 or if you're not managing Windows devices, you can skip this section. Otherwise, you'll need to add DNS records for the domain at your DNS host. If you've added the records already, as part of setting up your domain with Microsoft 365, you're all set. After you add the records, Microsoft 365 users in your organization who sign in on their Windows device with an email address that uses your custom domain are redirected to enroll in Basic Mobility and Security.
 

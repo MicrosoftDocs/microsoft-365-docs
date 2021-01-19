@@ -182,3 +182,9 @@ If any of the properties listed in the table in the [previous section](#filterin
 For example, in audit records shown in the following screenshot, though we are accessing mail from EWSEditor and OWA simultaneously, the access activity is collated in different audit records depending on the context in which the access took place. In this case, the context is defined by different values for the ClientInfoString property.
 
 ![Different audit records based on context](../media/MailItemsAccessed4.png)
+
+Here is the syntax for the command shown in the previous screenshot:
+
+```powershell
+Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
+``` 
