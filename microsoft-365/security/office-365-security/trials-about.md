@@ -27,10 +27,11 @@ description: "Admins can learn about the trials feature in Microsoft Defender fo
 
 The new trials feature is the easiest way to try the capabilities of Microsoft Defender for Office 365 Plan 2.
 
-Getting started is easy and only takes a couple of clicks. Once setup is complete, all Defender for Office 365 Plan 1 and Plan 2 capabilities are available in the organization for up to 90 days.
+Getting started is easy and only takes a couple of clicks. Once setup is complete, all Microsoft Defender for Office 365 Plan 1 and Plan 2 capabilities are available in the organization for up to 90 days.
 
 ## Setting up trials
-The new trials feature allows organizations to easiliy setup Defender for Office 365 Plan 1 and Plan 2 capabilities. During setup, Defender for Office 365 policies, specifically ([Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security polices](preset-security-policies.md). By default, the policies are scoped for all users in the organization, although admins can customize the policies during or after setup to apply them to specific users.
+
+The new trials feature allows organizations to easiliy set up Defender for Office 365 Plan 1 and Plan 2 capabilities. During setup, Defender for Office 365 policies, specifically ([Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security polices](preset-security-policies.md). By default, the policies are scoped for all users in the organization, although admins can customize the policies during or after setup to apply them to specific users.
 
 During setup, MDO response functionality (found in MDO P2 or equivalent) is also setup for the entire organization. No policy scoping is required.
 
@@ -52,15 +53,16 @@ Admins can disable the trial at any point by going to the <> card.
 
 The trials feature is currently in Public Preview. It's available to all exiting Microsoft 365 organizations that have managed account teams, have Exchange Online mailboxes in Canadian datacenters, but who don't have Microsoft Defender for Office 365 Plan 1 or Plan 2 licenses.
 
-## Learn about MDO
+## Learn more about Defender for Office 365
 
-**Detect capabilties**
+### Detect capabilties**
 
 - MDO policies
 - Policy templates
 - Etc.
 
-**Response capabilties**
+### Response capabilties
+
 - AIR
 - Threat Explorer
 - Etc.
@@ -72,7 +74,3 @@ The trials feature is currently in Public Preview. It's available to all exiting
 ## Provide feedback
 
 Your feedback helps us get better at protecting your environment from advanced attacks. Share your experience and impressions of product capabilities and trial results.
-
-
-
-
