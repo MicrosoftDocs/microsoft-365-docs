@@ -22,8 +22,8 @@ Microsoft 365 for enterprise includes cloud productivity apps such as Teams and 
 
 To optimize network access for your tenant, you need to:
 
-- Optimize the path between your on-premises users and the closest location to the Microsoft network.
-- Optimize access to the Microsoft network for your remote users that are using a remote access VPN solution.
+- Optimize the path between your on-premises users and the closest location to the Microsoft Global Network.
+- Optimize access to the Microsoft Global Network for your remote users that are using a remote access VPN solution.
 - Use Network Insights to design the network perimeter for your office locations.
 - Optimize access to specific assets hosted on SharePoint sites with the Office 365 CDN.
 - Configure proxy and network edge devices to bypass processing for Microsoft 365 trusted traffic with the list of endpoints and automate the updating of the list as changes are made.
@@ -32,7 +32,7 @@ To optimize network access for your tenant, you need to:
 
 For enterprise networks, you should optimize the end user experience by enabling the highest-performing network access between clients and the closest Microsoft 365 endpoints. The quality of end user experience is directly related to the performance and responsiveness of the application that the user is using. For example, Microsoft Teams relies on low latency so that user phone calls, conferences and shared screen collaborations are glitch-free.
 
-The primary goal in the network design should be to minimize latency by reducing the round-trip time (RTT) from client devices to the Microsoft Global Network, Microsoft's public network backbone that interconnects all of Microsoft's datacenters with low latency, high availability cloud application entry points spread around the world.
+The primary goal in the network design should be to minimize latency by reducing the round-trip time (RTT) from client devices to the Microsoft Global Network, Microsoft's public network backbone that interconnects all of Microsoft's datacenters with low latency, high availability cloud application entry points, known as front doors, spread around the world.
 
 Here is an example of a traditional enterprise network.
 
@@ -43,7 +43,7 @@ In this illustration, branch offices connect to a central office through wide ar
 The problems with this configuration for Microsoft 365 cloud services are:
 
 - For users in branch offices, traffic gets sent to non-local front doors, increasing latency.
-- Sending traffic to intermediate locations create network hairpins that perform duplicate packet processing for trusted traffic, increasing latency.
+- Sending traffic to intermediate locations create network hairpins that perform duplicate packet processing on trusted traffic, increasing latency.
 - Network edge devices perform unneeded and duplicate packet processing on trusted traffic, increasing latency.
 
 Optimizing Microsoft 365 network performance doesn't need to be complicated. You can get the best possible performance by following a few key principles:
@@ -73,7 +73,7 @@ If your remote workers are using a traditional VPN client to obtain remote acces
 
 ![Network traffic from VPN clients without tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-In this illustration, Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance. 
+In this illustration, Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft Global Network front door far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance. 
 
 With split tunneling, you can configure your VPN client to exclude specific types of traffic from being sent over the VPN connection to the organization network.
 
@@ -83,7 +83,7 @@ Here is the resulting traffic flow for split tunneling, in which most of the tra
 
 ![Network traffic from VPN clients with tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
-In this illustration, the VPN client sends and receives crucial Microsoft 365 cloud service traffic directly over the Internet and to the nearest entry point into the Microsoft network.
+In this illustration, the VPN client sends and receives crucial Microsoft 365 cloud service traffic directly over the Internet and to the nearest front door into the Microsoft Global Network.
 
 For more information and guidance, see [Optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
@@ -154,7 +154,7 @@ Here is an example of an enterprise organization and its tenant with optimal net
 
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
-The tenant for this enterprise organization has:
+In this illustration, the tenant for this enterprise organization has:
 
 - Local internet access for each branch office with an SDWAN device that forwards trusted Microsoft 365 traffic to a local front door.
 - No network hairpins.

@@ -41,7 +41,7 @@ Here are the basic components of hybrid identity.
 
 ![Basic components of hybrid identity](../media/about-microsoft-365-identity/hybrid-identity.png)
 
-In this illustration, on-premises and remote users sign in to their Microsoft 365 tenant with accounts in the Azure AD tenant that have been copied their on-premises AD DS.
+In this illustration, on-premises and remote users sign in to their Microsoft 365 tenant with accounts in the Azure AD tenant that have been copied from their on-premises AD DS.
 
 ## Synchronizing your on-premises AD DS
 
