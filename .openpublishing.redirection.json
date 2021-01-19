@@ -2598,27 +2598,27 @@
     {
       "source_path": "microsoft-365/solutions/industry-specific-guidance-overview.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/solutions/foundation-solutions-overview.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/solutions/workload-solutions-scenarios-overview.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/solutions/solution-architecture-center.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/solutions/productivity-solutions.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
