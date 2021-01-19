@@ -31,11 +31,11 @@ Microsoft data loss prevention on-premises scanner is part of the Microsoft 365 
 
 DLP on-premises scanner relies on a full implementation of Azure Information Protection (AIP) scanner to monitor, label and protect sensitive items. If you aren't familiar with AIP scanner, we strongly recommend familiarizing yourself with it. See these articles:
 
-- [What is Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)
-- [What is the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner)
-- [Requirements for installing and deploying the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner-prereqs)
-- [Tutorial: Installing the Azure Information Protection (AIP) unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/tutorial-install-scanner)- [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner-configure-install)
-- [Azure Information Protection unified labeling client - Version release history and support policy version 2.9.111.0](https://docs.microsoft.com/en-us/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [What is Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
+- [What is the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)
+- [Requirements for installing and deploying the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-prereqs)
+- [Tutorial: Installing the Azure Information Protection (AIP) unified labeling scanner](https://docs.microsoft.com/azure/information-protection/tutorial-install-scanner)- [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)
+- [Azure Information Protection unified labeling client - Version release history and support policy version 2.9.111.0](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
 ## DLP on-premises scanner actions
 
