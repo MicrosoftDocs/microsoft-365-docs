@@ -23,6 +23,12 @@ description: Learn about changes from the Office 365 Security and Compliance cen
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+#### In this article
+- [What's changed](#whats-changed)
+- [Microsoft 365 security center Home page](#microsoft-365-security-center-home-page)
+- [New navigation](#new-navigation)
+- [An Advanced Hunting example for admins](#advanced-hunting-example-for-microsoft-defender-for-office-365)
+
 The new [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center.
 
 If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the new Microsoft 365 security center.
@@ -31,7 +37,7 @@ Take a look at the new security center: [https://security.microsoft.com](https:/
 
 If you are looking for compliance-related items, visit the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage).
 
-## What's Changed
+## What's changed
 
 This table is a quick reference of Email & Collaboration areas where change has occurred between the **Security & Compliance center** and the **Microsoft 365 Security** portal. Click the links to read more about these areas.
 <p>
@@ -63,20 +69,18 @@ The new Home page of the new portal surfaces:
 - tweets from Microsoft’s security intelligence twitter feed
 - and more summary information
 
-As soon as you arrive at this information page, you’ll also see a pop-up for security notifications if there are any.
-
-![The Microsoft security center home page](../../media/converge-5-microsoft-365-security-center.png)
+:::image type="content" source="../../media/1. Con.png" alt-text="When you arrive at https://security.microsoft.com, you'll see a welcome screen "Meet your improved security center" explaining that the center combines MDO and MDE in 1 place.":::
 
 The Home page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
+
+:::image type="content" source="../../media/2. ConPortal.png" alt-text="The main body of the center showing the Home page and links to Intro, Next steps, and to Give feedback.":::
 
 - The links under **Next steps** will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
 - **Give feedback** allows you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
 
-The **Welcome** page will disappear after you navigate through the Next button to Close. Be sure to take note of any URLs you’d want for your records, or bookmark this page (since the URLs are listed above).
-
 The **Guided tour** will remain on the page and you can choose a tour of Endpoint or Email & collaboration pages.  
 
-![Guided tour drop down](../../media/converge-12-home-page-guided-tour-bar.gif)
+:::image type="content" source="../../media/converge-12-home-page-guided-tour-bar.png" alt-text="The security center's Home page with the Guided Tour selected shows you can tour Endpoint MSDE), or Email & Collaboration (MSDO).":::
 
 Also included is a link to the **Office 365 Security and Compliance center** for comparison. The last link is to the **What's New** page that describes recent updates.
 
@@ -88,28 +92,28 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries.
 
-![The Alerts and Actions quick launch bar](../../media/converge-1-alertsandactions.png)
+:::image type="content" source="../../media/3. ConPortal.png" alt-text="The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.":::
 
 ### Endpoints
 
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
 
-![The Endpoints quick launch bar](../../media/converge-2-endpoints.png)
+:::image type="content" source="../../media/converge-2-endpoints_new.png" alt-text="The quick launch menu for Endpoints (or MSDE) on the left hand side of the Microsoft 365 security center.":::
 
 ### Email & collaboration
 
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will familiar.
 
-![The Emails and Collaboration quick launch bar](../../media/converge-3-email-and-collab.png)
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left side of the Microsoft 365 security center.":::
 
 ### Access and Reports
 
 View reports, change your settings, and modify user roles.
 
-![The Access and Reporting quicklaunch bar](../../media/converge-4-access-and-reporting.png)
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 security center permissions and reporting, on the left side of the security center.":::
 
 ## Advanced Hunting example for Microsoft Defender for Office 365
-Want to get started searching for email threats using advanced hunting? Try this: 
+Want to get started searching for email threats using advanced hunting? Try this:
 
 The [Getting Started](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#getting-started) section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) has logical early configuration chunks that look like this:
 
@@ -147,7 +151,8 @@ EmailPostDeliveryEvents
 | project ZapTime, ActionType, NetworkMessageId , RecipientEmailAddress, AccountUpn, 
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
-![Hunting query example](../../media/converge-13-advanced-hunt-an-email-zap.PNG)
+
+:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="The Advanced hunting page (under Hunting)with Query selected at the top of the query panel, and running a Kusto query to capture ZAP actions over the last 7 days.":::
 
 The data from this query will appear in the results panel below the query itself. Results include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set. Results can also be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries.
 
