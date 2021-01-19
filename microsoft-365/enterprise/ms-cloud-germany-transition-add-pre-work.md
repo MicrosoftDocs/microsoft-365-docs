@@ -171,7 +171,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
-| Remove MSOID, CName from customer-owned DNS if it exists anytime before AAD cut-over. A TTL of 5 minutes can be set so that the change can take effect quickly. | Customer-owned DNS zone changes | Office client services customers | 
+| Remove MSOID, CName from customer-owned DNS if it exists anytime before Azure AD cut-over. A TTL of 5 minutes can be set so that the change can take effect quickly. | Customer-owned DNS zone changes | Office client services customers | 
 |||||
 
 ## Federated identity
