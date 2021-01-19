@@ -46,7 +46,7 @@ The following conditions relate to all queries.
 6. If a single request runs for more than 10 minutes, it will time out and return an error.
 7. A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time. Read the response body to understand the limit you have reached. 
 
->[!Note]
+> [!NOTE]
 > All quatas listed above (e.g. 15 calls per min) are per tenant size. The above quotas are the minimum.
 
 ## Permissions
