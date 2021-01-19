@@ -38,6 +38,8 @@ Here is an example of a traditional enterprise network.
 
 ![A traditional enterprise network with central access to the Internet](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
+In this illustration, 
+
 The problems with this configuration for Microsoft 365 cloud services are:
 
 - Traffic gets sent to non-local front doors, increasing latency.

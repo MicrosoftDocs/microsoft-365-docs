@@ -72,7 +72,7 @@ Here is an example of a Microsoft 365 tenant with all these elements in place.
 
 ![An example Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
-This Microsoft 365 tenant includes:
+In this illustration, the Microsoft 365 tenant includes:
 
 - Products and licenses for Microsoft 365 E3 and E5.
 - Microsoft 365 productivity apps.
