@@ -259,6 +259,12 @@
               href: dlp-configure-endpoints-script.md
             - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
               href: dlp-configure-endpoints-vdi.md
+        - name: Learn about data loss prevention on-premises scanner (preview)
+          href: dlp-on-premises-scanner-learn.md
+        - name: Get started with data loss prevention on-premises scanner (preview)
+          href: dlp-on-premises-scanner-get-started.md
+        - name: Use data loss prevention on-premises scanner (preview)
+          href: dlp-on-premises-scanner-use.md
         - name: Get started with the default DLP policy
           href: get-started-with-the-default-dlp-policy.md
         - name: Create a DLP policy from a template
