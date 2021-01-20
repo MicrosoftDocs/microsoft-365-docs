@@ -120,7 +120,7 @@ Microsoft Managed Desktop devices must be allowed to enroll in Intune.
 
 **Not ready**
 
-You currently have at least one enrollment restriction policy configured to prevent Windows devices from enrollment in Intune. Follow the steps in [Set enrollment restrictions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) for each enrollment restriction policy that targets Microsoft Managed Desktop users and change the Windows (MDM) setting to **Allow**. You can, however, set any **personally owned** Windows (MDM) devices to **Block**. 
+You currently have at least one enrollment restriction policy configured to prevent Windows devices from enrollment in Intune. Follow the steps in [Set enrollment restrictions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) for each enrollment restriction policy that targets Microsoft Managed Desktop users and change the **Windows (MDM)** setting to **Allow**. You can, however, set any **personally owned** **Windows (MDM)** devices to **Block**. 
 
 
 ### Enrollment Status Page
