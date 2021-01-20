@@ -621,7 +621,7 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Single item error remediation
               href: single-item-error-remediation.md
-        - name: Collect data for a case
+        - name: Collect data for a case (old)
           href: collecting-data-for-ediscovery.md
           items: 
             - name: Create a search
@@ -634,6 +634,17 @@
               href: search-statistics-in-advanced-ediscovery.md
             - name: Add search results to a review set
               href: add-data-to-review-set.md
+        
+        - name: Collect content for a case (new)
+          items: 
+            - name: Learn about collections
+              href: collections-overview.md
+            - name: Create a draft collection
+              href: create-draft-collection.md
+            - name: Commit a draft collection to a review set
+              href: commit-draft-collection.md
+            - name: Collection statistics and reports
+              href: collection-reports.md        
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
