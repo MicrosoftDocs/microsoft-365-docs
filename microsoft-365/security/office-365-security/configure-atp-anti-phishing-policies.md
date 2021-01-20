@@ -39,7 +39,7 @@ The difference between these two elements isn't obvious when you manage anti-phi
 - When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule. All other settings modify the associated anti-phish policy.
 - When you remove a policy, the anti-phish rule and the associated anti-phish policy are removed.
 
-In Exchange Online PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell to configure anti-phishing policies in Microsoft Defender for Office 365](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) section later in this topic.
+In Exchange Online PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell to configure anti-phishing policies in Microsoft Defender for Office 365](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) section later in this article.
 
 Every Microsoft Defender for Office 365 organization has a built-in anti-phishing policy named Office365 AntiPhish Default that has these properties:
 
@@ -55,17 +55,17 @@ To increase the effectiveness of anti-phishing protection in Microsoft Defender 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can do the procedures in this article:
+- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+  - To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - For read-only access to anti-phishing policies, you need to be a member of the **Global Reader** or **Security Reader** role groups<sup>\*</sup>.
 
-  - To add, modify, and delete anti-phishing policies, you need to be a member of one of the following role groups:
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Notes**:
 
-  - For read-only access to anti-phishing policies, you need to be a member of one of the following role groups:
-
-    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature<sup>\*</sup>.
+  - <sup>\*</sup> In the Security & Compliance Center, read-only access allows users to view the settings of custom anti-phishing policies. Read-only users can't see the settings in the default anti-phishing policy.
 
 - For our recommended settings for anti-phishing policies in Microsoft Defender for Office 365, see [Anti-phishing policy in Defender for Office 365 settings](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
@@ -165,7 +165,10 @@ Use the following procedures to modify anti-phishing policies: a new policy that
      To edit an existing entry, select the protected user in the list.
 
      > [!NOTE]
-     > You can have a maximum of 60 users in all anti-phishing policies. In other words, you can have 60 protected users in one policy, 12 protected users in 5 policies, etc.
+     >
+     > - In each anti-phishing policy, you can specify a maximum of 60 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
+     >
+     > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
 
    - **Add domains to protect**: Configure one or both of the following settings:
 
@@ -173,7 +176,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
      - **Include custom domains**: The default value is **Off**. To turn it on, slide the toggle to **On**, and in the **Add domains** box, enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.
 
      > [!NOTE]
-     > You can have a maximum of 50 domains in all anti-phishing policies. In other words, you can have 50 protected users in one policy, 10 protected users in 5 policies, etc.
+     > You can have a maximum of 50 domains in all anti-phishing policies.
 
    - **Actions**: Click **Edit**
 
@@ -494,7 +497,7 @@ For detailed syntax and parameter information, see [Get-AntiPhishRule](https://d
 
 ### Use PowerShell to modify anti-phish policies
 
-Other than the following items, the same settings are available when you modify an anti-phish policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an anti-phish policy](#step-1-use-powershell-to-create-an-anti-phish-policy) section earlier in this topic.
+Other than the following items, the same settings are available when you modify an anti-phish policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an anti-phish policy](#step-1-use-powershell-to-create-an-anti-phish-policy) section earlier in this article.
 
 - The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify an anti-phish policy in PowerShell.
 
@@ -512,7 +515,7 @@ For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https:/
 
 The only setting that isn't available when you modify an anti-phish rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule. To enable or disable existing anti-phish rules, see the next section.
 
-Otherwise, no additional settings are available when you modify an anti-phish rule in PowerShell. The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an anti-phish rule](#step-2-use-powershell-to-create-an-anti-phish-rule) section earlier in this topic.
+Otherwise, no additional settings are available when you modify an anti-phish rule in PowerShell. The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an anti-phish rule](#step-2-use-powershell-to-create-an-anti-phish-rule) section earlier in this article.
 
 To modify an anti-phish rule, use this syntax:
 

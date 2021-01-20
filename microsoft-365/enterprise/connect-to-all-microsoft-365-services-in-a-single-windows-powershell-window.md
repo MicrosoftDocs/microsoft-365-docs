@@ -104,7 +104,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
+   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $Credential
    ```
 
 5. Run these commands to connect to Skype for Business Online. A warning about increasing the `WSMan NetworkDelayms` value will appear the first time that you connect. Ignore it.
@@ -238,7 +238,7 @@ Connect-AzureAD
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Exchange Online
 Import-Module ExchangeOnlineManagement
@@ -258,7 +258,7 @@ Connect-AzureAD
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Security & Compliance Center
 Import-Module ExchangeOnlineManagement
@@ -280,7 +280,7 @@ Connect-MsolService
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Exchange Online
 Import-Module ExchangeOnlineManagement
@@ -300,7 +300,7 @@ Connect-MsolService
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Security & Compliance Center
 Import-Module ExchangeOnlineManagement

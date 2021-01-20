@@ -183,23 +183,21 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-256)** | 6DC47172E01CBCB0BF62580D895FE2B8AC9AD4F873801E0C10B9C837D21EB177 |
 | **Pin (SHA-256)** | HqPF5D7WbC2imDpCpKebHpBnhs6fG1hiFBmgBGOofTg= |
 
-### **GlobalSign**
+### **GlobalSign Root CA - R1**
 
-| **Subject** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R2 |
+| **Subject** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Serial Number** | 04:00:00:00:00:01:0F:86:26:E6:0D |
+| **Serial Number** | 04:00:00:00:00:01:15:4B:5A:C3:94 |
 | **Public Key Length** | RSA 2048 bits (e 65537) |
 | **Signature Algorithm** | sha1RSA |
-| **Validity Not Before** | Dec 15 08:00:00 2006 UTC |
-| **Validity Not After** | Dec 15 08:00:00 2021 UTC |
-| **Subject Key Identifier** | 9b:e2:07:57:67:1c:1e:c0:6a:06:de:59:b4:9a:2d:df:dc:19:86:2e |
-| **Authority Key Identifier** | keyid:9b:e2:07:57:67:1c:1e:c0:6a:06:de:59:b4:9a:2d:df:dc:19:86:2e |
-| **Thumbprint (SHA-1)** | 75E0ABB6138512271C04F85FDDDE38E4B7242EFE |
-| **Thumbprint (SHA-256)** | CA42DD41745FD0B81EB902362CF9D8BF719DA1BD1B1EFC946F5B4C99F42C1B9E |
-| **Pin (SHA-256)** | iie1VXtL7HzAMF+/PVPR9xzT80kQxdZeJ+zduCB3uj0= |
-| **CRL URLs** | http://crl.globalsign.net/root-r2.crl |
+| **Validity Not Before** | Sep 01 12:00:00 1998 UTC |
+| **Validity Not After** | Jan 28 12:00:00 2028 UTC |
+| **Subject Key Identifier** | 60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
+| **Thumbprint (SHA-1)** | B1BC968BD4F49D622AA89A81F2150152A41D829C |
+| **Thumbprint (SHA-256)** | EBD41040E4BB3EC742C9E381D31EF2A41A48B6685C96E7CEF3C1DF6CD4331C99 |
+| **Pin (SHA-256)** | K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q= |
 
-### **GlobalSign**
+### **GlobalSign Root CA - R3**
 
 | **Subject** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
 | --- | --- |
@@ -213,20 +211,6 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Thumbprint (SHA-1)** | D69B561148F01C77C54578C10926DF5B856976AD |
 | **Thumbprint (SHA-256)** | CBB522D7B7F127AD6A0113865BDF1CD4102E7D0759AF635A7CF4720DC963C53B |
-
-### **GlobalSign Root CA**
-
-| **Subject** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
-| --- | --- |
-| **Serial Number** | 04:00:00:00:00:01:15:4B:5A:C3:94 |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha1RSA |
-| **Validity Not Before** | Sep 01 12:00:00 1998 UTC |
-| **Validity Not After** | Jan 28 12:00:00 2028 UTC |
-| **Subject Key Identifier** | 60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
-| **Thumbprint (SHA-1)** | B1BC968BD4F49D622AA89A81F2150152A41D829C |
-| **Thumbprint (SHA-256)** | EBD41040E4BB3EC742C9E381D31EF2A41A48B6685C96E7CEF3C1DF6CD4331C99 |
-| **Pin (SHA-256)** | K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q= |
 
 ### **thawte Primary Root CA - G3**
 
@@ -332,29 +316,12 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.cn |
 
+
 ### **DigiCert Cloud Services CA-1**
 
 | **Subject** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **Issuer** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
-| **Serial Number** | 01:9E:C1:C6:BD:3F:59:7B:B2:0C:33:38:E5:51:D8:77 |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha256RSA |
-| **Validity Not Before** | Aug 04 12:00:00 2015 UTC |
-| **Validity Not After** | Aug 04 12:00:00 2030 UTC |
-| **Subject Key Identifier** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
-| **Authority Key Identifier** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
-| **Thumbprint (SHA-1)** | 81B68D6CD2F221F8F534E677523BB236BBA1DC56 |
-| **Thumbprint (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
-| **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
-| **CRL URLs** | http://crl4.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl3.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | http://ocsp.digicert.com |
-
-### **DigiCert Cloud Services CA-1**
-
-| **Subject** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
-| --- | --- |
-| **Issuer** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **Serial Number** | 0F:17:1A:48:C6:F2:23:80:92:18:CD:2E:D6:DD:C0:E8 |
 | **Public Key Length** | RSA 2048 bits |
 | **Signature Algorithm** | sha256RSA |
@@ -364,7 +331,8 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
 | **Thumbprint (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
-| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl <br> http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **DigiCert SHA2 Extended Validation Server CA**

@@ -39,12 +39,12 @@ The available individual permissions and what's included or not included in the 
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
-|**Allow sender** (_PermissionToAllowSender_)|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Delete** (_PermissionToDelete_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Preview** (_PermissionToPreview_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Allow sender** (_PermissionToAllowSender_)|||![Check mark](../../media/checkmark.png)|
+|**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Preview** (_PermissionToPreview_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/checkmark.png)|
+|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/checkmark.png)||
 |
 
 If you don't like the default permissions in the preset permission groups, you can use custom permissions when you create or modify custom quarantine tags. For more information about what each permission does, see the [Quarantine tag permission details](#quarantine-tag-permission-details) section later in this article.
@@ -57,9 +57,7 @@ You create and assign quarantine tags in the Security & Compliance Center or in 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- To view, create, modify, or remove quarantine tags, you need to be a member of one of the following role groups:
-  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+- To view, create, modify, or remove quarantine tags, you need to be a member of the **Organization Management** or **Security Administrator** roles in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## Step 1: Create quarantine tags in the Security & Compliance Center
 
@@ -158,7 +156,9 @@ For detailed syntax and parameter information, see [New-QuarantineTag](https://d
 To create a quarantine tag using the _EndUserQuarantinePermissionsValue_ parameter, do the following steps:
 
 A. Store a quarantine permissions object in a variable using the **New-QuarantinePermissions** cmdlet.
-<br/>
+
+<p>
+
 B. Use the variable as the _EndUserQuarantinePermissions_ value in the **New-QuarantineTag** command.
 
 ##### Step A: Store a quarantine permissions object in a variable
@@ -243,11 +243,11 @@ Full instructions for creating and modifying anti-spam policies are described in
 2. Find and select an existing anti-spam policy to edit, or create a new anti-spam policy.
 
 3. In the policy details flyout, expand the **Spam and bulk actions** section.
-  
+
 4. If you've selected **Quarantine message** for the action of an available spam filtering verdict, the **Apply quarantine policy tag** box is available for you to select the quarantine tag for that verdict.
 
    **Note**: When you create a new policy, a blank quarantine tag value for a spam filtering verdict indicates the default quarantine tag for that verdict is used. When you later edit the policy, the blank values are replaced by the actual default quarantine tag names as described in the previous table.
-  
+
    ![Quarantine tag selections in an anti-spam policy](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. When you're finished, click **Save**.
@@ -470,7 +470,7 @@ The **Allow sender** permission (_PermissionToAllowSender_) controls access to t
 
 - **End-user spam notifications**: No effect.
 
-For more information about the Safe Senders list, see [Prevent trusted senders from being blocked](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+For more information about the Safe Senders list, see [Prevent trusted senders from being blocked](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### Block sender permission
 
@@ -484,7 +484,7 @@ The **Block sender** permission (_PermissionToBlockSender_) controls access to t
   - **Block sender** permission disabled: The **Block sender** button is not available.
   - **Block sender** permission enabled: The **Block sender** button is available.
 
-For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### Delete permission
 
@@ -513,7 +513,7 @@ The **Allow recipients to release a message from quarantine** permission (_Permi
 - **Quarantined message details**:
   - Permission enabled: The **Release message** button is available.
   - Permission disabled: The **Release message** button is not available.
-  
+
 - **End-user spam notifications**:
   - Permission enabled: The **Release** button is available.
   - Permission disabled: The **Release** button is not available.

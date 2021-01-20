@@ -11,8 +11,8 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+- M365-security-compliance
+- m365initiative-defender-office365
 description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
 ---
 
@@ -143,7 +143,7 @@ You can report phishing messages that contain ransomware by using one of several
 
 - [Enable or disable macros in Office files](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [Recommended settings for EOP and Microsoft Defender for Office 365 security](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
+- [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md)
 
 - [A worthy upgrade: Next-gen security on Windows 10 proves resilient against ransomware outbreaks in 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 

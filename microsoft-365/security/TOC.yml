@@ -8,6 +8,8 @@
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
+        - name: Security recommendations for priority accounts
+          href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Identity and device access configurations
       href: ./office-365-security/microsoft-365-policies-configurations.md
       items: 
@@ -47,16 +49,18 @@
               href: mtp/preview.md
             - name: Microsoft 365 security center
               href: mtp/overview-security-center.md
+            - name: Troubleshoot issues
+              href: ./mtp/troubleshoot.md
+            - name: Industry tests
+              href: ./mtp/top-scoring-industry-tests.md
+        - name: Plan
+          items: 
             - name: Prerequisites
               href: mtp/prerequisites.md
             - name: Data security and privacy
               href: mtp/data-privacy.md
             - name: Microsoft security portals
               href: mtp/portals.md
-            - name: Troubleshoot issues
-              href: ./mtp/troubleshoot.md
-            - name: Industry tests
-              href: ./mtp/top-scoring-industry-tests.md
         - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
@@ -71,28 +75,33 @@
               href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
-        - name: Run your pilot project in production
-          items: 
-            - name: Pilot overview
-              href: mtp/mtp-pilot.md
-            - name: Plan
-              href: mtp/mtp-pilot-plan.md
-            - name: Prepare
-              href: mtp/prepare-mtpeval.md
-            - name: Simulate attack
-              href: mtp/mtp-pilot-simulate.md
-            - name: Close and summarize
-              href: mtp/mtp-pilot-close.md
+        - name: Deploy
+          items:
+            - name: Turn on Microsoft Threat Protection
+              href: mtp/mtp-enable.md
+            - name: Run your pilot project in production
+              items: 
+                - name: Pilot overview
+                  href: mtp/mtp-pilot.md
+                - name: Plan
+                  href: mtp/mtp-pilot-plan.md
+                - name: Prepare
+                  href: mtp/prepare-mtpeval.md
+                - name: Simulate attack
+                  href: mtp/mtp-pilot-simulate.md
+                - name: Close and summarize
+                  href: mtp/mtp-pilot-close.md
+            - name: Deploy supported services
+              href: mtp/deploy-supported-services.md
+            
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
               href: mtp/mtp-evaluation.md
             - name: Run pilot playbook
               href: mtp/mtp-pilot.md
-            - name: Deploy supported services
-              href: mtp/deploy-supported-services.md
-            - name: Turn on Microsoft 365 Defender
-              href: mtp/mtp-enable.md
+
+
             - name: Turn on FAQ
               href: mtp/mtp-enable-faq.md
             - name: Incidents
@@ -107,13 +116,15 @@
                       href: mtp/investigate-incidents.md
                     - name: Manage incidents
                       href: mtp/manage-incidents.md
+                - name: Get email notifications
+                  href: mtp/get-incident-notifications.md
             - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
                   href: mtp/mtp-autoir.md
                 - name: Configure automated investigation and response capabilities
                   href: mtp/mtp-configure-auto-investigation-response.md
-                - name: Remediation actions following automated investigations
+                - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
                 - name: Visit the Action center
                   href: mtp/mtp-action-center.md
@@ -137,6 +148,8 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: Hunt across devices, emails, apps, and identities
                       href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: Hunt for ransomware
+                      href: mtp/advanced-hunting-find-ransomware.md
                     - name: Transition from Defender for Endpoint 
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Work with query results
@@ -159,12 +172,20 @@
                   items: 
                     - name: Understand the schema
                       href: mtp/advanced-hunting-schema-tables.md
+                    - name: AADSignInEventsBeta
+                      href: mtp/advanced-hunting-aadsignineventsbeta-table.md
+                    - name: AADSpnSignInEventsBeta
+                      href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
+                    - name: Schema naming changes
+                      href: mtp/advanced-hunting-schema-changes.md
                     - name: AlertEvidence
                       href: mtp/advanced-hunting-alertevidence-table.md
                     - name: AlertInfo
                       href: mtp/advanced-hunting-alertinfo-table.md
                     - name: AppFileEvents
                       href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: CloudAppEvents
+                      href: mtp/advanced-hunting-cloudappevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfo
@@ -212,7 +233,9 @@
                 - name: Functions
                   items: 
                     - name: AssignedIPAddresses()
-                      href: mtp/advanced-hunting-assignedipaddresses-function.md
+                      href: mtp/advanced-hunting-assignedipaddresses-function.md                    
+                    - name: DeviceFromIP()
+                      href: mtp/advanced-hunting-devicefromip-function.md
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Custom detections
@@ -291,7 +314,9 @@
       href: ./office-365-security/index.md
       items: 
         - name: Overview
-          items: 
+          items:
+            - name: Security roadmap
+              href: ./office-365-security/security-roadmap.md
             - name: Exchange Online Protection
               items: 
                 - name: Exchange Online Protection overview
@@ -312,14 +337,14 @@
                   href: ./office-365-security/auditing-reports-in-eop.md
             - name: Defender for Office 365
               href: ./office-365-security/office-365-atp.md
+            - name: Evaluate Defender for Office 365
+              href: ./office-365-security/office-365-evaluation.md
             - name: What's new in Defender for Office 365
               href: office-365-security/whats-new-in-office-365-atp.md
             - name: Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
-            - name: Security roadmap
-              href: ./office-365-security/security-roadmap.md
             - name: Threat Explorer (and real-time detections)
               href: ./office-365-security/threat-explorer.md
             - name: AIR overview
@@ -356,7 +381,7 @@
           items: 
             - name: Exchange Online Protection
               items: 
-                - name: Configure the default anti-phishing policy in EOP
+                - name: Configure anti-phishing policies in EOP
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: Configure standalone EOP to deliver spam to the Junk Email folder
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
@@ -376,7 +401,9 @@
               href: ./office-365-security/siem-server-integration.md
             - name: SIEM integration with Defender for Office 365
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: Configure anti-phishing policies
+            - name: Secure by default
+              href: ./office-365-security/secure-by-default.md
+            - name: Configure ATP anti-phishing policies
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: Configure anti-malware policies
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -424,8 +451,6 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Create team sites in a political campaign dev/test environment
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: User tags in Defender for Office 365
-              href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
               items: 
@@ -461,6 +486,14 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Attack Simulator in Defender for Office 365
               href: ./office-365-security/attack-simulator.md
+            - name: Get started using Attack simulation training
+              href: ./office-365-security/attack-simulation-training-get-started.md
+            - name: Simulate a phishing attack with Attack simulation training
+              href: ./office-365-security/attack-simulation-training.md
+            - name: Create a custom payload for Attack simulation training
+              href: ./office-365-security/attack-simulation-training-payloads.md
+            - name: Gain insights through Attack simulation training
+              href: ./office-365-security/attack-simulation-training-insights.md
             - name: Recommended settings for configuring EOP and Defender for Office 365 Security
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Best practices for configuring EOP
@@ -495,6 +528,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Enable the Report Message add-in
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: Enable the Report Phishing add-in
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: Install and use the Junk Email Reporting add-in
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: Mail flow rules (transport rules) in standalone EOP
@@ -513,7 +548,7 @@
               href: ./office-365-security/campaigns.md
             - name: Investigate malicious email
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: View reports in the Security & Compliance Center
+            - name: View Defender for Office 365 reports in the Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: View details and results of an automated investigation
               href: ./office-365-security/air-view-investigation-results.md

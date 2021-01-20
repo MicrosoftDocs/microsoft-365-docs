@@ -1,5 +1,5 @@
 - name: Microsoft 365 solution and architecture center
-  href: solution-architecture-center.md
+  href: index.yml
   displayName: Home
 - name: Solution and architecture illustrations
   items: 
@@ -7,10 +7,10 @@
       href: productivity-illustrations.md
     - name: Microsoft cloud architecture models
       href: cloud-architecture-models.md
+    - name: Architecture icons and templates
+      href: architecture-icons-templates.md
 - name: Microsoft 365 foundation solutions 
   items: 
-    - name: Overview
-      href: foundation-solutions-overview.md
     - name: Empower remote workers with Microsoft 365
       items:
       - name: Overview   
@@ -95,14 +95,40 @@
   items: 
     - name: Overview
       href: workload-solutions-scenarios-overview.md
+
+    - name: Tenant management
+      items:
+      - name: Overview
+        href: tenant-management-overview.md
+      - name: Step 1. Your tenants
+        href: tenant-management-tenants.md
+      - name: Step 2. Optimal networking
+        href: tenant-management-networking.md
+      - name: Step 3. Identity
+        href: tenant-management-identity.md
+      - name: Step 4. Migration
+        href: tenant-management-migration.md
+      - name: Step 5. Device and app management
+        href: tenant-management-device-management.md
+
     - name: Teamwork and collaboration
       items:
       - name: Teams architecture posters
         href: https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json  
-      - name: Telephony solutions
-        items: 
-        - name: Choose your Teams voice solution 
+      - name: Deploy Teams voice in Microsoft 365
+        items:
+        - name: Overview
+          href: deploy-voice.md
+        - name: Step 1. Choose your voice solution 
           href: https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        - name: Step 2. - Set up Phone System
+          href: https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        - name: Step 3. - Set up PSTN connectivity
+          items: 
+          - name: Calling Plan option
+            href: https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          - name: Direct Routing option
+            href: https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
         - name: Case study for multi-national corporation 
           href: https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
 
@@ -110,14 +136,16 @@
         items:
         - name: Overview
           href: collaboration-governance-overview.md
-        - name: Governance first
+        - name: Create your governance plan
           href: collaboration-governance-first.md
-        - name: Groups with SharePoint
-          href: groups-sharepoint-governance.md
-        - name: Groups, SharePoint, and Teams
-          href: groups-sharepoint-teams-governance.md
-        - name: Services interactions reference
-          href: groups-services-interactions.md
+        - name: Settings in services
+          items:
+          - name: Groups with SharePoint
+            href: groups-sharepoint-governance.md
+          - name: Groups, SharePoint, and Teams
+            href: groups-sharepoint-teams-governance.md
+          - name: Groups with other services
+            href: groups-services-interactions.md
         - name: Access
           href: groups-teams-access-governance.md
         - name: Compliance
@@ -160,6 +188,18 @@
         href: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
     - name: Compliance
       items:
+      - name: Insider risk solutions in Microsoft 365
+        items:
+          - name: Overview
+            href: https://docs.microsoft.com/microsoft-365/compliance/insider-risk-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          - name: Communication compliance
+            href: https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          - name: Insider risk management
+            href: https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          - name: Information barriers
+            href: https://docs.microsoft.com/microsoft-365/compliance/information-barriers-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          - name: Privileged access management
+            href: https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
       - name: Regulatory compliance action plans
         items: 
         - name: ISO - Recommended action plan
@@ -170,11 +210,15 @@
           href: https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
         - name: GDPR - Recommended action plan
           href: https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+      - name: Contoso compliance case study
+        href: https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-case-study?view=o365-worldwide?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
 
     - name: Contoso case studies
       items:
       - name: Microsoft 365 solutions for the Contoso Corporation
         href: contoso-case-study-solutions.md
+      - name: COVID-19 response and support for remote and onsite work
+        href: contoso-remote-onsite-work.md
       - name: Isolated Team for a top-secret project
         href: contoso-team-for-top-secret-project.md
       - name: Teams voice migration
@@ -189,8 +233,6 @@
     
 - name: Industry-specific guidance
   items: 
-    - name: Overview
-      href: industry-specific-guidance-overview.md
     - name: Finance
       items:
       - name: Security and compliance for financial services

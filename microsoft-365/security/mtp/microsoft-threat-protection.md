@@ -29,7 +29,8 @@ ms.topic: conceptual
 **Applies to:**
 - Microsoft 365 Defender
 
-
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+>
 
 Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
@@ -45,9 +46,12 @@ With the integrated Microsoft 365 Defender solution, security professionals can 
 </table>
 <br>
 
+## Microsoft 365 Defender interactive guide
 
->[!TIP]
->Check out this [Microsoft 365 Defender interactive guide](https://aka.ms/MTP-Interactive-Guide).
+In this interactive guide, you'll learn how to protect your organization with Microsoft 365 Defender. You'll see how Microsoft 365 Defender can help you detect security risks, investigate attacks to your organization, and prevent harmful activities automatically.
+
+> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+
 
 
 Microsoft 365 Defender suite protects: 

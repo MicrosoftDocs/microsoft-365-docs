@@ -76,7 +76,7 @@ For detailed syntax and parameter issues, see [Add-RoleGroupMember](https://docs
 
 To verify that you've successfully granted access to the Security & Compliance Center, do either of the following steps:
 
-- In the Security & Compliance Center, go to **Permissions** and select the role group. In the details flyout that opens, verify the members of the role group. 
+- In the Security & Compliance Center, go to **Permissions** and select the role group. In the details flyout that opens, verify the members of the role group.
 
 - In Security & Compliance Center PowerShell, replace \<RoleGroupName\> with the name of the role group, and run the following command:
 

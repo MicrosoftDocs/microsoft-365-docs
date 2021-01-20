@@ -49,7 +49,7 @@ The basic flow for deploying and applying sensitivity labels:
 
 A number of different subscriptions support sensitivity labels and the licensing requirements for users depend on the features you use.
 
-To see the options for licensing your users to benefit from Microsoft 365 compliance features as of April 1, 2020, see the [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD). For sensitivity labels, see the [Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section and related PDF or Excel download.
+To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD). For sensitivity labels, see the [Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section and related PDF or Excel download.
 
 ## Permissions required to create and manage sensitivity labels
 
@@ -68,7 +68,7 @@ A successful strategy to deploy sensitivity labels for an organization is to cre
 
 Using the table in the next section, we recommend identifying your top one or two scenarios that map to your most impactful business requirements. After these scenarios are deployed, return to the list to identify the next one or two priorities for deployment.
 
-You'll find additional general deployment guidance in the downloadable Microsoft 365 Information Protection & Compliance deployment acceleration guide. For more information, see the blog post, [Microsoft Information Protection and Compliance Deployment Acceleration Guide](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493).
+You'll find additional general deployment guidance in the downloadable Data Loss Prevention and Microsoft Information Protection Deployment Acceleration Guide. For more information, see the blog post, [Microsoft 365 Information Protection and Compliance Deployment Acceleration Guides](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404).
 
 ## Common scenarios for sensitivity labels
 
@@ -85,9 +85,11 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Prevent or warn users about sharing files or emails with a specific sensitivity label |[Use sensitivity labels as conditions in DLP policies (preview)](dlp-sensitivity-label-as-condition.md) |
 |Discover, label, and protect files stored in data stores that are on premises |[Deploying the Azure Information Protection scanner to automatically classify and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Discover, label, and protect files stored in data stores that are in the cloud|[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Apply and view sensitivity labels in Power BI, and protect data when it is exported|[How to apply sensitivity labels in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
+|Apply and view labels in Power BI, and protect data when it's saved outside the service|[Sensitivity labels in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-sensitivity-label-overview)|
 |Monitor and understand how sensitivity labels are being used in my organization|[Know your data - data classification overview](data-classification-overview.md) <br /><br /> [View label usage with label analytics](label-analytics.md)|
 |Extend sensitivity labels to third-party apps and services|[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|Extend sensitivity labels across content in Azure Blob Storage, Azure files, Azure Data Lake Storage Gen1, and Azure Data Lake Storage Gen12|[Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+
 
 ## End-user documentation for sensitivity labels
 
