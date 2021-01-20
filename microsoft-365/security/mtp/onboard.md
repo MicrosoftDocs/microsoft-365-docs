@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 

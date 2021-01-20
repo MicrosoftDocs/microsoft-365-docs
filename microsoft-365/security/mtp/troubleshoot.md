@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

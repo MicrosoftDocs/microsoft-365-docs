@@ -4,7 +4,7 @@ description: Describes what new changes are coming to Microsoft Secure Score in 
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
-ms.localizationpriority: medium
+localization_priority: Normal
 f1.keywords:
 - NOCSH
 ms.author: ellevin
