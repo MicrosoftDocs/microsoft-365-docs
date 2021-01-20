@@ -31,7 +31,6 @@ You can use the Content Search eDiscovery tool in the compliance center in Offic
 
 - SharePoint Online sites and OneDrive for Business accounts
 
-- Skype for Business conversations
 
 - Microsoft Teams
 
@@ -39,38 +38,32 @@ You can use the Content Search eDiscovery tool in the compliance center in Offic
 
 - Yammer Groups
 
+- Skype for Business conversations
+
 After you run a Content Search, the number of content locations and an estimated number of search results are displayed in the search statistics. You can also quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
 
 ## Create a search
 
 To have access to the **Content search** page to run searches and preview and export search results, an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Security & Compliance Center. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your Microsoft email address and password.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using your Microsoft email address and password.
+
+2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **Content search**.
     
-2. Click **Search** \> **Content search**.
-    
-3. On the **Search** page, click the arrow next to ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**. 
-    
-    ![The New search dropdown list](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+3. On the **Content search** page, click **New search**.
   
-    You can choose one of the following options:
+    You can also choose one of the other search options options:
     
-    - **Guided search:** This option starts a wizard that guides you through the creating the search. The user interface to select content locations and build the search query are the same as the **New search** option. 
+    - **Guided search:** This option starts a wizard that guides you through the creating the search. The user interface to select content locations and build the search query are the same as the **New search** option.
     
-    - **New search:** This option displays an updated user interface to create a search. This is the default option if you click **New search**.
+    - **Search by ID list:** This option lets you search for specific email messages and other mailbox items using a list of Exchange IDs. To create an ID list search, you submit a comma-separated value (CSV) file that identifies the specific mailbox items to search for. For instructions, see [Prepare a CSV file for an ID list search](csv-file-for-an-id-list-content-search.md). 
     
-    - **Search by ID List:** This option lets you search for specific email messages and other mailbox items using a list of Exchange IDs. To create an ID list search (formally called a targeted search), you submit a comma-separated value (CSV) file that identifies the specific mailbox items to search for. For instructions, see [Prepare a CSV file for an ID list Content Search in Office 365](csv-file-for-an-id-list-content-search.md).
-    
-    The remainder of the steps in this procedure follows the default new search workflow.
-    
-4. Click **New search** in the drop-down list. 
-    
-5. Under **Search query**, specify the following things:
+4. Under **Search query**, specify the following things:
     
     ![Specify keywords, conditions, and locations to search](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
    - **Keywords to search for:** Type a search query in **Keywords** box. You can specify keywords, message properties such as sent and received dates, or document properties such as file names or the date that a document was last changed. You can use more complex queries that use a Boolean operator, such as **AND**, **OR**, **NOT**, and **NEAR**. You can also search for sensitive information (such as social security numbers) in documents, or search for documents that have been shared externally. If you leave the keyword box empty, all content located in the specified content locations is included in the search results.
-    
+
       Alternatively, you can click the **Show keyword list** checkbox and the type a keyword in each row. If you do this, the keywords on each row are connected by a logical operator (**c:s**) that is similar in functionality to the **OR** operator in the search query that's created. 
     
       Why use the keyword list? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row. For more information about search statistics, see [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md).
@@ -93,17 +86,17 @@ To have access to the **Content search** page to run searches and preview and ex
        > [!NOTE]
        > When you search all mailbox locations or just specific mailboxes, data from other Office 365 applications that's saved to user mailboxes is included when you export the results of a Content Search. This data won't be included in the estimated search results and isn't available for preview. It is included when you export and download the search results. For more information, see [Content stored in Exchange Online mailboxes](what-is-stored-in-exo-mailbox.md).
    
-6. After you've set up your search query, click **Save & run**.
+5. After you've set up your search query, click **Save & run**.
     
-7. On the **Save search** page, type a name for the search, and an optional description that helps identify the search. The name of the search has to be unique in your organization. 
+6. On the **Save search** page, type a name for the search, and an optional description that helps identify the search. The name of the search has to be unique in your organization. 
     
-8. Click **Save** to start the search. 
+7. Click **Save** to start the search. 
     
     After you save and run the search, any results returned by the search are displayed in the results pane. Depending on how you have the preview setting configured, the search results are display or you have to click **Preview results** to view them. See the next section for details. 
     
 To access this content search again or access other content searches listed on the **Content search** page, select the search and then click **Open**. 
   
-To clear the results or create another search, click ![Add icon](../media/O365-MDM-CreatePolicy-AddIcon.gif) **New search**. 
+To clear the results or create another search, click ![Add icon](../media/O365-MDM-CreatePolicy-AddIcon.gif) **New search**.
   
 ## Preview search results
 
@@ -145,7 +138,6 @@ To view search statistics:
     
 For more detailed information about search statistics, see [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md).
   
-  
 ## Export search results
 
 After a search is successfully run, you can export the search results to a local computer. When you export email results, they can be downloaded to your computer as PST files or as individual messages (.msg files). When you export content from SharePoint and OneDrive sites, copies of native Office documents are exported. There are also other documents and reports that are included with the exported search results. You can also export the search results report and not the actual items.
@@ -153,19 +145,18 @@ After a search is successfully run, you can export the search results to a local
 To export search results:
   
 1. On the **Content search** page, click the search that you want to export the search results for. 
-    
-2. On the flyout page, click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, and then click **Export results**. You can also export a search results report.
-    
-3. Complete the sections on the **Export results** fly out page. Be sure to use the scroll bar to view all export options. 
-    
+
+2. On the flyout page, click **Export results**. You can also export a search results report.
+
+3. Complete the sections on the **Export results** fly out page. Be sure to use the scroll bar to view all export options.
+
 For more detailed instructions and troubleshooting tips, see:
   
-- [Export Content Search results](export-search-results.md)
-    
-- [Export a Content Search report](export-a-content-search-report.md)
-    
-  
-## More information about content search
+- [Export Content search results](export-search-results.md)
+
+- [Export a Content search report](export-a-content-search-report.md)
+
+## More information about ontent search
 
 See the following sections for more information about content searches.
   
@@ -191,18 +182,19 @@ See the following sections for more information about content searches.
   
 ### Content search limits
 
-- For a description of the limits that are applied to the Content Search feature, see [Limits for Content Search](limits-for-content-search.md).
+- For a description of the limits that are applied to Content search, see [Limits for Content search](limits-for-content-search.md).
     
-- Microsoft collects performance information for Content Searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
-    
-|**Number of mailboxes**|**Average search time**|
-|:-----|:-----|
-|100  <br/> |30 seconds  <br/> |
-|1,000  <br/> |45 seconds  <br/> |
-|10,000  <br/> |4 minutes  <br/> |
-|25,000  <br/> |10 minutes  <br/> |
-|50,000  <br/> |20 minutes  <br/> |
-|100,000  <br/> |25 minutes  <br/> |
+- Microsoft collects performance information for Content searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
+  
+  |**Number of mailboxes**|**Average search time**|
+  |:-----|:-----|
+  |100  <br/> |30 seconds  <br/> |
+  |1,000  <br/> |45 seconds  <br/> |
+  |10,000  <br/> |4 minutes  <br/> |
+  |25,000  <br/> |10 minutes  <br/> |
+  |50,000  <br/> |20 minutes  <br/> |
+  |100,000  <br/> |25 minutes  <br/> |
+  |||
   
 ### Building a search query
 
@@ -308,7 +300,13 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   To search for card content, you can use the `kind:microsoftteams` or `itemclass:IPM.SkypeTeams.Message` search conditions. When reviewing search results, card content generated by bots in a Teams channel have the **Sender/Author** email property as `<appname>@teams.microsoft.com`, where `appname` is the name of the app that generated the card content. If card content was generated by a user, the value of **Sender/Author** identifies the user.
 
-  Card content appears as an attachment to the message. The attachment is named `appname.html`, where `appname` is the name of the app that generated the card content.
+  When viewing card content in Content search results, the content appears as an attachment to the message. The attachment is named `appname.html`, where `appname` is the name of the app that generated the card content. The following screenshots show how card content appears in the Teams client app and in search results.
+
+  **Card content in Teams client**
+
+  **Card content in search results**
+
+  
 
 - You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams.
   
@@ -320,7 +318,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
     ![Use the Message kind condition with the value microsoftteams.](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
-Conditions are logically connected to the keyword query by the **AND** operator. That means an item must match both the keyword query and the search condition to be returned in the search results. For more information, see the "Guidelines for using conditions" section in [Keyword queries and search conditions for Content Search.](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)
+   Conditions are logically connected to the keyword query by the **AND** operator. That means an item must match both the keyword query and the search condition to be returned in the search results. For more information, see the "Guidelines for using conditions" section in [Keyword queries and search conditions for Content Search.](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)
   
 ### Searching Yammer Groups
 
