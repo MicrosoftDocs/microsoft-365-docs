@@ -106,7 +106,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 - Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 350 MB. For these files, use the Office desktop apps.
 
-- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for additional requirements or limitations. 
+- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [additional requirements or limitations](https://docs.microsoft.com/azure/information-protection/known-issues#co-authoring-public-preview). 
 
 ## Known issues for this preview
 

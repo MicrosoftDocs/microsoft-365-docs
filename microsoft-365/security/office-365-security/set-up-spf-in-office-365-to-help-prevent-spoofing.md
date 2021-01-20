@@ -24,22 +24,23 @@ description: "Learn how to update a Domain Name Service (DNS) record to use Send
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [Prerequisites <a name="UpdateSPFTXT"></a>](#updating-your-spf-txt-record-for-office-365-a-nameUpdateSPFTXT)
-- [Create / update your SPF TXT record for Office 365 <a name="CreateUpdateSPFTXT"></a>](#to-create-or-update-your-spf-txt-record-a-namecreateupdatespftxta)
-    - [How to handle subdomains? <a name="SPFandSubdomains"></a>](#how-to-handle-subdomains-a-namespfandsubdomainsa)
-- [SPF troubleshooting and best practices <a name="TshootingSPF"></a>](#next-steps-after-you-set-up-spf-for-office-365-a-nametshootingspfa)
-- [Advanced SPF examples <a name="AdvancedSPFexs"></a>](#more-information-about-spf-a-nameadvancedspfexsa)
+- [Prerequisites](#prerequisites)
+- [Create or update your SPF TXT record](#create-or-update-your-spf-txt-record)   
+  - [How to handle subdomains?](#how-to-handle-subdomains)
+- [What does SPF email authentication actually do?](#what-does-spf-email-authentication-actually-do)   
+   - [Troubleshooting SPF](#troubleshooting-spf)
+- [More information about SPF](#more-information-about-spf)
 
 This article describes how to update an Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF)  email authentication with your custom domain in Office 365.
 
 Using SPF helps to validate outbound email sent from your custom domain. It's a first step in setting up other recommended email authentication methods DMARC and DKIM (two further email authentication methods supported in Office 365).
 
-## Updating your SPF TXT record for Office 365 <a name="UpdateSPFTXT"></a>
+## Prerequisites
 
 > [!IMPORTANT]
 > If you are a **small business**, or are unfamiliar with IP addresses or DNS configuration, call your Internet domain registrar (ex. GoDaddy, Bluehost, web.com) to ask for help with DNS configuration of SPF (and any other email authentication method). *Also*, if you haven't bought, or don't use a custom URL (in other words the URL you and your customers browse to reach Office 365 ends in **onmicrosoft.com**), SPF has been set up for you in the Office 365 service. No further steps are required in that case. Thanks for reading.
 
-Before you update the TXT record in DNS, you need to gather some information needed to make the record. For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+Before you create or update the SPF TXT record for Office 365 in external DNS, you need to gather some information needed to make the record. For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
 Gather this information:
 
@@ -54,7 +55,7 @@ Gather this information:
 > [!IMPORTANT]
 > In order to use a custom domain, Office 365 requires that you add a Sender Policy Framework (SPF) TXT record to your DNS record to help prevent spoofing.
 
-## Create or update your SPF TXT record <a name="CreateUpdateSPFTXT"></a>
+## Create or update your SPF TXT record
 
 1. Ensure that you're familiar with the SPF syntax in the following table.
 
@@ -93,7 +94,7 @@ Gather this information:
 
 4. Test your SPF TXT record.
 
-## How to handle subdomains? <a name="SPFandSubdomains"></a>
+## How to handle subdomains?
 
 It is important to note that *you need to create a separate record for each subdomain as subdomains don't inherit the SPF record of their top level domain*.
 
@@ -103,7 +104,7 @@ An additional wildcard SPF record (`*.`) is required for every domain and subdom
 *.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
-## Next steps <a name="TshootingSPF"></a>
+## Troubleshooting SPF
 
 Having trouble with your SPF TXT record? Read [Troubleshooting: Best practices for SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
@@ -124,7 +125,7 @@ If you've already set up mail for Office 365, then you have already included Mic
 
 - You intend to set up DKIM and DMARC (recommended).
 
-## More information about SPF <a name="AdvancedSPFexs"></a>
+## More information about SPF
 
 For advanced examples, a more detailed discussion about supported SPF syntax, spoofing, troubleshooting, and how Office 365 supports SPF, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
