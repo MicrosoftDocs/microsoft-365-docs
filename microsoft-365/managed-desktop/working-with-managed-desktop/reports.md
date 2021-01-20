@@ -19,11 +19,15 @@ Microsoft Managed Desktop provides several reports and dashboards that IT admins
 
 The Microsoft Endpoint Manager console brings together reporting from several products into a single location to help you monitor and investigate issues with your Azure AD organization ("tenant") configuration and devices. Microsoft Managed desktop has a section under **Reports** in the main menu where you can find reports specific to Microsoft Managed Desktop's management of the devices you’ve registered.
 
+These reports include:
+- Managed devices > Feature updates - This view shows the overall status of feature updates across your Microsoft Managed Desktop devices
+- Managed devices > Office updates - This view shows the overall status of Office updates across your Microsoft Managed Desktop devices
+
 Additionally, in several locations throughout Microsoft Endpoint Manager you can filter reports from other product groups to specifically include or exclude your devices that are managed by Microsoft Managed Desktop. These reports have integrated this filtering capability:
 
-- **All devices**
-- **Device compliance**
-- **Noncompliant devices**
+- [All devices](https://docs.microsoft.com/mem/intune/remote-actions/device-management#get-to-your-devices)
+- [Device compliance](https://docs.microsoft.com/mem/intune/fundamentals/reports#device-compliance-report-organizational)
+- [Noncompliant devices](https://docs.microsoft.com/mem/intune/fundamentals/reports#noncompliant-devices-report-operational)
 
 > [!NOTE]
 > Custom Microsoft Managed Desktop roles guarantee access only to the Microsoft Managed Desktop reports. To access other parts of Microsoft Endpoint Manager, such as **All devices**, see [Role-based access control with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control). 
