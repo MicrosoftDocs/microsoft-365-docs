@@ -54,10 +54,15 @@ To apply your model to to a SharePoint document library:
 
     ![Selected library](../media/content-understanding/selected-library.png)</br>
 
-7. Go to your document library and make sure you are in the model's document library view. Notice that if you select the information button next to the document library name, a message notes that your model has been applied to the document library.
+7. Go to your document library and make sure you are in the model's document library view. Notice that if you select the information button next to the document library name, a message notes that the document library has a model applied to it.
 
     ![Information view](../media/content-understanding/info-du.png)</br> 
 
+You can the select **View active models** to see details about any models that are applied to the document library.
+
+8. In the **Active models** pane, you can see the models that are applied to the document library. Select a model to see more details about it, such as a description of the model, who published the model, and if the model applies a retention label to the files it classifies.
+
+    ![Active models pane](../media/content-understanding/active-models.png)</br> 
 
 After applying the model to the document library, you can begin uploading documents to the site and see the results.
 
@@ -75,6 +80,10 @@ While an applied model processes all files uploaded to the document library afte
 
 > [!NOTE]
 > You can copy individual files to a library and apply them to a model, but not folders.
+
+### The Classification Date field
+
+
 
 ## See Also
 [Create a classifier](create-a-classifier.md)
