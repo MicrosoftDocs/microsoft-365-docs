@@ -200,21 +200,28 @@ Note that action titles, both for your improvement actions and for Microsoft act
 
 #### Remove an improvement action
 
-Deleting an improvement action from a row in a spreadsheet **does not** remove the action from the template you're editing. Instead, follow the process below:
+To remove an improvement action from a template, you'll need to remove it from every control that references it. Follow the steps below to modify your spreadsheet:
 
-1. On the **Actions** tab, insert a new column as column A and put **Operation** in the header row, which is row number one.
-2. On the row for the improvement action you want to remove, put **Delete** in column A for that row.
-3. Ensure that this improvement action is no longer referenced by a control. Go to the **ControlFamily** tab and look for your improvement action's title in column F, which is **controlActionTitle**.
-4. When you find your improvement action listed in the **controlActionTitle** column, delete it.
-5. Save your spreadsheet.
+1. On the **ControlFamily** tab, search for for the title of the improvement action you want to remove.
+2. Delete the improvement action's title in the cells where it appears. If the improvement action is the only action on that row, delete the entire row (which removes the control).
+3. On the **Actions** tab, delete the row that contains the improvement action you're deleting.
+4. Save your spreadsheet.
 
-When you import your spreadsheet back into the template, your action will be removed from the template. Removing an action from a template does not completely remove the action. That action can still be referenced by another template.
+When you import your spreadsheet back into the template, your improvement action will be removed from the template.
 
-If you're removing the last improvement action that a control references, then you need to remove the control.
+Removing an improvement action from a template does not completely remove the improvement action from Compliance Manager. That action can still be referenced by another template.
 
 #### Remove a control
 
-To remove a control, follow the same process for removing an improvement action as outlined above. In the **ControlFamily** tab, add an **Operation** column and put **Delete** next to the control you want to remove.
+To remove a control, modify your spreadsheet by following the steps below, then re-import your spreadsheet:
+
+1. On the **ControlFamily** tab, find the control you want to remove in the **controlName** column.
+2. Delete the row for that control.
+    - If this deleted control contains improvement actions that aren't referenced by any other control, you'll need to remove those improvement actions from the **Actions** tab. Otherwise, you'll receive a validation error.
+
+3. Save your spreadsheet.
+
+When you import your spreadsheet back into the template, your control will be removed from the template.
 
 ## Export a template
 
