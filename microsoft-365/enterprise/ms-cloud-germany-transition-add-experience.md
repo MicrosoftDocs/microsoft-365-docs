@@ -22,6 +22,10 @@ description: "Summary: Additional customer experience information when moving fr
 
 # Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (advanced) 
 
+Tenant migrations from Microsoft Cloud Deutschland to the Germany region of Microsoft's Office 365 services are executed as a set of phases and their configured actions for each workload. This figure shows the nine phases of migration to the new German datacenters.
+
+![The nine phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+
 The following sections provide additional information on customer experiences when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
 
 ## Services
