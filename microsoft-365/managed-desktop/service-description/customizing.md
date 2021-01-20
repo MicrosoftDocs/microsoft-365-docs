@@ -31,7 +31,7 @@ An exception is any addition or change to the Microsoft Managed Desktop base con
  
 ## Request an exception
 
-Submit requests through the Microsoft Managed Desktop Admin portal by creating a change request. Be sure to include these details:
+Submit requests through the Microsoft Managed Desktop Admin portal by creating a change request. Customers who have not yet enrolled in Microsoft Managed Desktop should raise an exception via through Microsoft account manager. Be sure to include these details:
 
 -	Exemption type: Which category of exception is it? (see the previous table)
 -	Requirement: What is the specific business requirement for the exception?
