@@ -49,7 +49,7 @@ The basic flow for deploying and applying sensitivity labels:
 
 A number of different subscriptions support sensitivity labels and the licensing requirements for users depend on the features you use.
 
-To see the options for licensing your users to benefit from Microsoft 365 compliance features as of April 1, 2020, see the [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD). For sensitivity labels, see the [Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section and related PDF or Excel download.
+To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD). For sensitivity labels, see the [Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section and related PDF or Excel download.
 
 ## Permissions required to create and manage sensitivity labels
 
@@ -68,7 +68,7 @@ A successful strategy to deploy sensitivity labels for an organization is to cre
 
 Using the table in the next section, we recommend identifying your top one or two scenarios that map to your most impactful business requirements. After these scenarios are deployed, return to the list to identify the next one or two priorities for deployment.
 
-You'll find additional general deployment guidance in the downloadable Microsoft 365 Information Protection & Compliance deployment acceleration guide. For more information, see the blog post, [Microsoft Information Protection and Compliance Deployment Acceleration Guide](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493).
+You'll find additional general deployment guidance in the downloadable Data Loss Prevention and Microsoft Information Protection deployment acceleration guide. For more information, see the blog post, [Microsoft 365 Information Protection and Compliance Deployment Acceleration Guides](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404).
 
 ## Common scenarios for sensitivity labels
 
