@@ -47,13 +47,15 @@ Because Microsoft wants to keep our customers secure by default, some tenants ov
 
 More information on these overrides can be found in [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
+Also, we are in the process of deprecating 'Move to Junk folder'policy option for High confidence phishing messages in EOP anti-spam policies. Tenants using 'Move to Junk folder' option will be defaulted to 'Quarantine message'. Note that 'Redirect message to email address' option will continue to exist as is.
+
 Secure by default is not a setting that can be turned on or off, but is the way our filtering works out of the box to keep potentially dangerous or unwanted messages out of your mailboxes. Malware and high confidence phishing messages should be quarantined. Only admins can manage messages that are quarantined as malware or high confidence phishing, and they can also report false positives to Microsoft from there. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
 
 ## More on why we're doing this
 
-The spirit of being secure by default is: we're taking the same action on the message that you would take if you knew the message malicious, even if there was an allow in place. This is the same approach that we've used on malware, and now we're extending this same behavior to high confidence phishing messages. Our data indicates that the false positive rate for high confidence phishing messages is very low, and admins can resolve any false positives with admin submissions. Our data also indicates that the allowed sender lists and allowed domain lists in anti-spam policies and Safe Senders in Outlook were too broad and causing more harm than good.
+The spirit of being secure by default is: we're taking the same action on the message that you would take if you knew the message malicious, even if there was an allow in place. This is the same approach that we've used on malware, and now we're extending this same behavior to high confidence phishing messages. Or data indicates that the probability of a user clicking on a malicious link is 30 times when the message lands in Junk versus in Quarantine. Our data also indicates that the false positive rate for high confidence phishing messages is very low, and admins can resolve any false positives with admin submissions. Also that the allowed sender lists and allowed domain lists in anti-spam policies and Safe Senders in Outlook were too broad and causing more harm than good.
 
-To put it another way: as a security service, we're acting on your behalf to prevent your users from being compromised. In addition, secure by default is not a full takeover of your available options for high confidence phishing messages in anti-spam policies. Although we recommend Quarantine, the other actions that have always been available are still available (Move to Junk Email folder or Redirect to an email address).
+To put it another way: as a security service, we're acting on your behalf to prevent your users from being compromised. 
 
 ## Exceptions
 
