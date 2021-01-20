@@ -39,7 +39,7 @@ Users' Exchange mailboxes are moved automatically if their PDL is changed. When 
 
 ## Power BI
 
-As a Power BI Premium customer, you can deploy content to datacenters in regions other than the home region of the Power BI tenant. See [Configure Multi-Geo support for Power BI Premium](https://docs.microsoft.com/power-bi/admin/service-admin-premium-multi-geo)
+As a Power BI Premium customer, you can deploy content to datacenters in regions other than the home region of the Power BI tenant. See [Configure Multi-Geo support for Power BI Premium](https://docs.microsoft.com/power-bi/admin/service-admin-premium-multi-geo).
 
 ## Information Protection (IP) Data Loss Prevention (DLP) Policy
 
