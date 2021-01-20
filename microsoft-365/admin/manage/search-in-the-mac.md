@@ -69,8 +69,6 @@ You can search for Actions category contains frequently used actions in M365 Adm
 Results provides a way to quickly navigate to a specific page in the admin center. For example, searching for RBAC will take you to the Roles page for Azure AD roles.
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Screenshot: Search results showing navigation path in the admin center":::
-> [!NOTE]
-> Information the user should notice even if skimming
 
 ## Settings
 
@@ -82,7 +80,7 @@ Search for supported app level settings related to your organization, the servic
 
 You can find quick links to your domains, and then the link will take you to that domain's overview page.
 
-:::image type="content" source="../../media/search-for-docs-mac1.png" alt-text="Screenshot: Search results showing domains owned in the admin center":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Search results showing domains owned in the admin center":::
 
 ## Documentation
 
