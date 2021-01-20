@@ -1,0 +1,291 @@
+- name: Microsoft 365 security
+  href: index.yml
+  expanded: true
+  items: 
+      - name: Microsoft Secure Score
+        items: 
+        - name: Secure Score overview
+          href: mtp/microsoft-secure-score.md
+        - name: Assess your security posture
+          href: mtp/microsoft-secure-score-improvement-actions.md
+        - name: Track your score history and meet goals
+          href: mtp/microsoft-secure-score-history-metrics-trends.md
+        - name: What's coming
+          href: mtp/microsoft-secure-score-whats-coming.md
+        - name: What's new
+          href: mtp/microsoft-secure-score-whats-new.md
+      - name: Microsoft 365 Defender
+        items: 
+        - name: Overview
+          items: 
+            - name: What is Microsoft 365 Defender?
+              href: mtp/microsoft-threat-protection.md
+            - name: What's new in Microsoft 365 Defender
+              href: mtp/whats-new.md
+            - name: Preview features
+              href: mtp/preview.md
+            - name: Microsoft 365 security center
+              href: mtp/overview-security-center.md
+            - name: Troubleshoot issues
+              href: ./mtp/troubleshoot.md
+            - name: Industry tests
+              href: ./mtp/top-scoring-industry-tests.md
+        - name: Plan
+          items: 
+            - name: Prerequisites
+              href: mtp/prerequisites.md
+            - name: Data security and privacy
+              href: mtp/data-privacy.md
+            - name: Microsoft security portals
+              href: mtp/portals.md
+        - name: Evaluate capabilities
+          items: 
+            - name: Trial lab overview
+              href: mtp/mtp-evaluation.md
+            - name: Prepare
+              href: mtp/prepare-mtpeval.md
+            - name: Setup
+              href: mtp/setup-mtpeval.md
+            - name: Configure and onboard
+              href: mtp/config-mtpeval.md
+            - name: Start the Microsoft 365 Defender service
+              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
+            - name: Generate a test alert
+              href: mtp/generate-test-alert.md
+        - name: Deploy
+          items:
+            - name: Turn on Microsoft Threat Protection
+              href: mtp/mtp-enable.md
+            - name: Run your pilot project in production
+              items: 
+                - name: Pilot overview
+                  href: mtp/mtp-pilot.md
+                - name: Plan
+                  href: mtp/mtp-pilot-plan.md
+                - name: Prepare
+                  href: mtp/prepare-mtpeval.md
+                - name: Simulate attack
+                  href: mtp/mtp-pilot-simulate.md
+                - name: Close and summarize
+                  href: mtp/mtp-pilot-close.md
+            - name: Deploy supported services
+              href: mtp/deploy-supported-services.md
+            
+        - name: How-to guides
+          items: 
+            - name: Create a trial lab or pilot environment
+              href: mtp/mtp-evaluation.md
+            - name: Run pilot playbook
+              href: mtp/mtp-pilot.md
+
+
+            - name: Turn on FAQ
+              href: mtp/mtp-enable-faq.md
+            - name: Incidents
+              items: 
+                - name: Overview
+                  href: mtp/incidents-overview.md
+                - name: Prioritize incidents
+                  href: mtp/incident-queue.md
+                - name: Investigate incidents
+                  items: 
+                    - name: Investigate incidents
+                      href: mtp/investigate-incidents.md
+                    - name: Manage incidents
+                      href: mtp/manage-incidents.md
+                - name: Get email notifications
+                  href: mtp/get-incident-notifications.md
+            - name: Automated investigation and response
+              items: 
+                - name: Overview of automated investigation and response
+                  href: mtp/mtp-autoir.md
+                - name: Configure automated investigation and response capabilities
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: Remediation actions
+                  href: mtp/mtp-remediation-actions.md
+                - name: Visit the Action center
+                  href: mtp/mtp-action-center.md
+                - name: Approve or reject pending remediation actions
+                  href: mtp/mtp-autoir-actions.md
+                - name: View details and results of automated investigations
+                  href: mtp/mtp-autoir-results.md
+                - name: Report false positives/negatives
+                  href: mtp/mtp-autoir-report-false-positives-negatives.md
+            - name: Advanced hunting
+              items: 
+                - name: Advanced hunting overview
+                  href: mtp/advanced-hunting-overview.md
+                - name: Learn, train, & get examples
+                  items: 
+                    - name: Learn the query language
+                      href: mtp/advanced-hunting-query-language.md
+                    - name: Get expert training
+                      href: mtp/advanced-hunting-expert-training.md
+                    - name: Use shared queries
+                      href: mtp/advanced-hunting-shared-queries.md
+                    - name: Hunt across devices, emails, apps, and identities
+                      href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: Hunt for ransomware
+                      href: mtp/advanced-hunting-find-ransomware.md
+                    - name: Transition from Defender for Endpoint 
+                      href: mtp/advanced-hunting-migrate-from-mdatp.md
+                - name: Work with query results
+                  href: mtp/advanced-hunting-query-results.md
+                - name: Take action on query results
+                  href: mtp/advanced-hunting-take-action.md
+                - name: Go hunt
+                  href: mtp/advanced-hunting-go-hunt.md
+                - name: Optimize & handle errors
+                  items: 
+                    - name: Apply query best practices
+                      href: mtp/advanced-hunting-best-practices.md
+                    - name: Handle errors
+                      href: mtp/advanced-hunting-errors.md
+                    - name: Quotas and usage parameters
+                      href: mtp/advanced-hunting-limits.md
+                - name: Extend data coverage
+                  href: mtp/advanced-hunting-extend-data.md
+                - name: Data schema
+                  items: 
+                    - name: Understand the schema
+                      href: mtp/advanced-hunting-schema-tables.md
+                    - name: AADSignInEventsBeta
+                      href: mtp/advanced-hunting-aadsignineventsbeta-table.md
+                    - name: AADSpnSignInEventsBeta
+                      href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
+                    - name: Schema naming changes
+                      href: mtp/advanced-hunting-schema-changes.md
+                    - name: AlertEvidence
+                      href: mtp/advanced-hunting-alertevidence-table.md
+                    - name: AlertInfo
+                      href: mtp/advanced-hunting-alertinfo-table.md
+                    - name: AppFileEvents
+                      href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: CloudAppEvents
+                      href: mtp/advanced-hunting-cloudappevents-table.md
+                    - name: DeviceEvents
+                      href: mtp/advanced-hunting-deviceevents-table.md
+                    - name: DeviceFileCertificateInfo
+                      href: mtp/advanced-hunting-devicefilecertificateinfo-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceTvmSecureConfigurationAssessment
+                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
+                    - name: DeviceTvmSecureConfigurationAssessmentKB
+                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                    - name: DeviceTvmSoftwareInventoryVulnerabilities
+                      href: mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
+                    - name: DeviceTvmSoftwareVulnerabilitiesKB
+                      href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
+                    - name: EmailAttachmentInfo
+                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailEvents
+                      href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailPostDeliveryEvents
+                      href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
+                    - name: EmailUrlInfo
+                      href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityDirectoryEvents
+                      href: mtp/advanced-hunting-identitydirectoryevents-table.md
+                    - name: IdentityInfo
+                      href: mtp/advanced-hunting-identityinfo-table.md
+                    - name: IdentityLogonEvents
+                      href: mtp/advanced-hunting-identitylogonevents-table.md
+                    - name: IdentityQueryEvents
+                      href: mtp/advanced-hunting-identityqueryevents-table.md
+                - name: Functions
+                  items: 
+                    - name: AssignedIPAddresses()
+                      href: mtp/advanced-hunting-assignedipaddresses-function.md                    
+                    - name: DeviceFromIP()
+                      href: mtp/advanced-hunting-devicefromip-function.md
+                    - name: FileProfile()
+                      href: mtp/advanced-hunting-fileprofile-function.md
+                - name: Custom detections
+                  items: 
+                    - name: Custom detections overview
+                      href: mtp/custom-detections-overview.md
+                    - name: Create & manage detection rules
+                      href: mtp/custom-detection-rules.md
+            - name: Reports
+              items: 
+                - name: Monitor and view reports
+                  href: mtp/monitoring-and-reporting.md
+                - name: Identity monitoring and reporting
+                  href: mtp/monitor-and-report-identities.md
+                - name: Data monitoring and reporting
+                  href: mtp/monitor-data.md
+                - name: Device monitoring and reporting
+                  href: mtp/monitor-devices.md
+                - name: App monitoring and reporting
+                  href: mtp/monitor-apps.md
+        - name: Reference
+          items: 
+            - name: Permissions & settings
+              items: 
+                - name: Manage access
+                  href: mtp/mtp-permissions.md
+                - name: Set time zone
+                  href: mtp/mtp-time-zone.md
+                - name: View device profiles
+                  href: mtp/device-profile.md
+                - name: Provide feedback
+                  href: mtp/feedback.md
+                - name: Create ServiceNow tickets and tasks
+                  items: 
+                    - name: ServiceNow integration overview
+                      href: ./mtp/tickets.md
+                    - name: ServiceNow tickets in the security center
+                      href: ./mtp/tickets-security-center.md
+            - name: Microsoft 365 Defender APIs (Preview)
+              items: 
+                - name: Overview of Microsoft 365 Defender APIs (Preview)
+                  href: mtp/api-overview.md
+                - name: Get started with Microsoft 365 Defender APIs (Preview)
+                  items: 
+                    - name: Microsoft 365 Defender API license and terms of use
+                      href: mtp/api-terms.md
+                    - name: Access Microsoft 365 Defender APIs
+                      href: mtp/api-access.md
+                    - name: Hello World example
+                      href: mtp/api-hello-world.md
+                    - name: Get access with application context
+                      href: mtp/api-create-app-web.md
+                    - name: Get access with user context
+                      href: mtp/api-create-app-user-context.md
+                    - name: Get partner application access
+                      href: mtp/api-partner-access.md
+                    - name: Other API resources
+                      href: mtp/api-articles.md
+                - name: Microsoft 365 Defender APIs & schema (Preview)
+                  items: 
+                    - name: Supported Microsoft 365 Defender APIs
+                      href: mtp/api-supported.md
+                    - name: Common REST API error codes
+                      href: mtp/api-error-codes.md
+                    - name: Advanced Hunting API
+                      href: mtp/api-advanced-hunting.md
+                    - name: Incident APIs
+                      items: 
+                        - name: Incident methods and properties
+                          href: mtp/api-incident.md
+                        - name: List incidents
+                          href: mtp/api-list-incidents.md
+                        - name: Update incident
+                          href: mtp/api-update-incidents.md
+            - name: New Microsoft 365 security center
+              href: ./mtp/overview-security-center.md
