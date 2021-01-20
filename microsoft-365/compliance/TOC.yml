@@ -644,7 +644,7 @@
             - name: Commit a draft collection to a review set
               href: commit-draft-collection.md
             - name: Collection statistics and reports
-              href: collection-reports.md        
+              href: collection-statistics-reports.md        
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
