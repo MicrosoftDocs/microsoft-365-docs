@@ -93,7 +93,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
   
 ### Considerations when assigning an add-in to users and groups
 
-Global Admins and Exchange Admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
+Global admins and Exchange admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
   
 - **Everyone** This option assigns the add-in to every user in the organization. Use this option sparingly and only for add-ins that are truly universal to your organization. 
     
