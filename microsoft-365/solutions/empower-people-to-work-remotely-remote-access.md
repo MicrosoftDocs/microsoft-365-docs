@@ -102,7 +102,7 @@ For more information, see this [overview of Windows Virtual Desktop](https://doc
 
 ## Protect your Remote Desktop Services connections with the Remote Desktop Services Gateway
 
-If you are using Remote Desktop Services (RDS) to allow employees to connect into Windows-based computers on your on-premises network, you should use a Microsoft Remote Desktop Services gateway in your edge network. The gateway uses Secure Sockets Layer (SSL) to encrypt communications and prevents the on-premises computer hosting RDS from being directly exposed to the Internet.
+If you are using Remote Desktop Services (RDS) to allow employees to connect into Windows-based computers on your on-premises network, you should use a Microsoft Remote Desktop Services gateway in your edge network. The gateway uses Transport Layer Security (TLS) to encrypt traffic and prevents the on-premises computer hosting RDS from being directly exposed to the Internet.
 
 ![Remote Desktop Services connections with the Remote Desktop Services Gateway](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 
