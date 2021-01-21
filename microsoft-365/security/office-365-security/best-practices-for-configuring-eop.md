@@ -1,7 +1,7 @@
 ---
-title: "Best practices for configuring EOP"
-f1.keywords:
-- NOCSH
+title: Best practices for configuring EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,7 +10,9 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
-description: "Follow these best-practice recommendations for standalone Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors."
+description: Follow these best-practice recommendations for standalone Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Best practices for configuring standalone EOP

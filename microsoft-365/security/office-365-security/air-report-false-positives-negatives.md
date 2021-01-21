@@ -7,8 +7,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.date: 09/29/2020
@@ -16,11 +16,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 ms.topic: conceptual
 ms.custom: 
-- autoir
+  - autoir
+ms.technology: mdo
 ---
 
 # How to report false positives/negatives in automated investigation and response capabilities

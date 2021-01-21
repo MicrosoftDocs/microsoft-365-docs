@@ -1,23 +1,25 @@
 ---
 title: Permissions - Security & Compliance Center
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
-- 'ms.o365.cc.AdminRoleGroups'
+f1_keywords: 
+  - 'ms.o365.cc.AdminRoleGroups'
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
-description: "Admins can learn about the permissions that are available in the Security & Compliance Center in Microsoft 365."
+search.appverid: 
+  - MOE150
+  - MET150
+description: Admins can learn about the permissions that are available in the Security & Compliance Center in Microsoft 365.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Permissions in the Security & Compliance Center

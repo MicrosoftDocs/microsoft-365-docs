@@ -1,22 +1,24 @@
 ---
-title: "Configuration analyzer for security policies"
-f1.keywords:
-- NOCSH
+title: Configuration analyzer for security policies
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer:
-ms.date:
+ms.reviewer: 
+ms.date: 
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to use the configuration analyzer to find and fix security policies that are below the Standard protection and Strict protection preset security policies."
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the Standard protection and Strict protection preset security policies.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365

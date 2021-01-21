@@ -1,7 +1,7 @@
 ---
-title: "Configure your Microsoft 365 tenant for increased security"
-f1.keywords:
-- NOCSH
+title: Configure your Microsoft 365 tenant for increased security
+f1.keywords: 
+  - NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection: 
+  - Ent_O365
+  - Strat_O365_IP
+  - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-ms.custom:
-- seo-marvel-apr2020
-description: "This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment."
+ms.custom: 
+  - seo-marvel-apr2020
+description: This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure your Microsoft 365 tenant for increased security

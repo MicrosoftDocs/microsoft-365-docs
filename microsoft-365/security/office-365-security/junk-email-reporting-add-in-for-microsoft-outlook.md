@@ -1,19 +1,21 @@
 ---
-title: "Install and use the Junk Email Reporting add-in for Microsoft Outlook"
-f1.keywords:
-- NOCSH
+title: Install and use the Junk Email Reporting add-in for Microsoft Outlook
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
-ms.collection:
-- M365-security-compliance
-description: "Learn how to install and use the Microsoft Junk Email Reporting add-in to report spam, non-spam, and phishing messages to Microsoft."
+ms.collection: 
+  - M365-security-compliance
+description: Learn how to install and use the Microsoft Junk Email Reporting add-in to report spam, non-spam, and phishing messages to Microsoft.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Install and use the Junk Email Reporting add-in for Microsoft Outlook

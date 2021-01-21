@@ -1,21 +1,23 @@
 ---
-title: "User submissions policy"
-f1.keywords:
-- NOCSH
+title: User submissions policy
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # User submissions policy

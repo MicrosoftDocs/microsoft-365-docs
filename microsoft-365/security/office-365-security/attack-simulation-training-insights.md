@@ -1,5 +1,5 @@
 ---
-title: "Gain insights through Attack simulation training"
+title: Gain insights through Attack simulation training
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -8,9 +8,10 @@ ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Admins can learn how Attack simulation training in the Microsoft 365 security center affects employees and can gain insights from simulation and training outcomes."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn how Attack simulation training in the Microsoft 365 security center affects employees and can gain insights from simulation and training outcomes.
+ms.technology: mdo
 ---
 
 # Gain insights through Attack simulation training

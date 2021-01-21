@@ -1,20 +1,22 @@
 ---
-title: "Manage your allows and blocks in the Tenant Allow/Block List"
-f1.keywords:
-- NOCSH
+title: Manage your allows and blocks in the Tenant Allow/Block List
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to configure allows and blocks in the Tenant Allow/Block List in the Security portal."
+search.appverid: 
+  - MET150
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to configure allows and blocks in the Tenant Allow/Block List in the Security portal.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Managing allows and blocks in the Tenant Allow/Block List

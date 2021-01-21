@@ -1,7 +1,7 @@
 ---
-title: "Set up SPF to help prevent spoofing"
-f1.keywords:
-- CSH
+title: Set up SPF to help prevent spoofing
+f1.keywords: 
+  - CSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,14 +10,16 @@ audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Learn how to update a Domain Name Service (DNS) record to use Sender Policy Framework (SPF) with your custom domain in Office 365."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Learn how to update a Domain Name Service (DNS) record to use Sender Policy Framework (SPF) with your custom domain in Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Set up SPF to help prevent spoofing

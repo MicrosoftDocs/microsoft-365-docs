@@ -1,7 +1,7 @@
 ---
-title: "Protect against threats"
-f1.keywords:
-- NOCSH
+title: Protect against threats
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,15 +10,17 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: 09/08/2020
-search.appverid:
-- MOE150
-- MET150
+search.appverid: 
+  - MOE150
+  - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Protect against threats

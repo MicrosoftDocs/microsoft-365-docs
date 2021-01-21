@@ -1,7 +1,7 @@
 ---
-title: "Manage an isolated SharePoint Online team site"
-f1.keywords:
-- NOCSH
+title: Manage an isolated SharePoint Online team site
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,10 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: 
- - Ent_Solutions
- - seo-marvel-apr2020
+  - Ent_Solutions
+  - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: Manage an isolated SharePoint Online team site, add new users and groups, remove users and groups, and create a documents subfolder with custom permissions.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Manage an isolated SharePoint Online team site

@@ -1,7 +1,7 @@
 ---
-title: "Top domain mail flow status insight in the Mail flow dashboard"
-f1.keywords:
-- NOCSH
+title: Top domain mail flow status insight in the Mail flow dashboard
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: chrisda
 manager: dansimp
@@ -10,9 +10,11 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use the Top domain mail flow status insight in the Mail flow dashboard in the Security & Compliance Center to troubleshoot mail flow issues related to their MX records."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use the Top domain mail flow status insight in the Mail flow dashboard in the Security & Compliance Center to troubleshoot mail flow issues related to their MX records.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Top domain mail flow status insight in the Security & Compliance Center

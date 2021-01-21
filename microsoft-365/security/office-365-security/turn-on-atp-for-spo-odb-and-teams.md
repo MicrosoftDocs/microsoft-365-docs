@@ -1,24 +1,26 @@
 ---
 title: Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
+ms.date: 
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
-ms.collection:
-- M365-security-compliance
-- SPO_Content
-description: "Admins can learn how to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, including how to set alerts for detected files."
+ms.collection: 
+  - M365-security-compliance
+  - SPO_Content
+description: Admins can learn how to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, including how to set alerts for detected files.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams

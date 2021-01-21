@@ -1,7 +1,7 @@
 ---
-title: "Tune anti-phishing protection"
-f1.keywords:
-- NOCSH
+title: Tune anti-phishing protection
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +9,14 @@ audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
+search.appverid: 
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-- MET150
-description: "Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  - MET150
+description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Tune anti-phishing protection

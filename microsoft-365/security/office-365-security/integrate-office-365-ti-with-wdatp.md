@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 keywords: integrate, Microsoft Defender, ATP
 ms.author: deniseb
 author: denisebmsft
@@ -11,13 +11,15 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance
+  - M365-security-compliance
 description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint

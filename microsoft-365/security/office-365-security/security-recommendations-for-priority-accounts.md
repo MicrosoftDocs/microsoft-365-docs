@@ -1,24 +1,26 @@
 ---
-title: "Security recommendations for priority accounts in Microsoft 365"
-f1.keywords:
-- NOCSH
+title: Security recommendations for priority accounts in Microsoft 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.date:
+ms.date: 
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-- m365solution-overview
-- m365solution-protecthve
-description: "Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations."
+search.appverid: 
+  - MET150
+  - MOE150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+  - m365solution-overview
+  - m365solution-protecthve
+description: Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Security recommendations for priority accounts in Microsoft 365

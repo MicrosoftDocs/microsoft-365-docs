@@ -1,22 +1,24 @@
 ---
-title: "Manually submit messages to Microsoft for analysis"
-f1.keywords:
-- NOCSH
+title: Manually submit messages to Microsoft for analysis
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
-ms.collection:
-- M365-security-compliance
-description: "Admins and end users can learn how to email messages (good mail marked as bad or bad mail allowed) to Microsoft for analysis."
+ms.collection: 
+  - M365-security-compliance
+description: Admins and end users can learn how to email messages (good mail marked as bad or bad mail allowed) to Microsoft for analysis.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Manually submit messages to Microsoft for analysis

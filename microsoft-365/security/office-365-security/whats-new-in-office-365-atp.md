@@ -6,20 +6,22 @@ search.appverid: met150
 ms.service: O365-seccomp
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # What's new in Microsoft Defender for Office 365

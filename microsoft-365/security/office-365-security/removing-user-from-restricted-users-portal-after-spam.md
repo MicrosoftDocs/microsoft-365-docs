@@ -1,24 +1,26 @@
 ---
 title: Remove blocked users from the Restricted Users portal
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-f1_keywords:
-- 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
+f1_keywords: 
+  - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
 ms.service: O365-seccomp
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to remove users from the Restricted Users portal in Office 365. Users are added to the Restricted Users portal for sending outbound spam, typically as a result of account compromise."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to remove users from the Restricted Users portal in Office 365. Users are added to the Restricted Users portal for sending outbound spam, typically as a result of account compromise.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Remove blocked users from the Restricted Users portal in Office 365

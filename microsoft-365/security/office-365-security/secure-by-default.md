@@ -1,22 +1,23 @@
 ---
 title: Secure by default in Office 365
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
-ms.collection:
-- M365-security-compliance
-description: "Learn more about the secure by default setting in Exchange Online Protection (EOP)"
-
+search.appverid: 
+  - MET150
+  - MOE150
+ms.collection: 
+  - M365-security-compliance
+description: Learn more about the secure by default setting in Exchange Online Protection (EOP)
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Secure by default in Office 365
