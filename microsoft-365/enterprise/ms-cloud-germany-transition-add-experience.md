@@ -22,11 +22,15 @@ description: "Summary: Additional customer experience information when moving fr
 
 # Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (advanced) 
 
+Tenant migrations from Microsoft Cloud Deutschland to the Germany region of Microsoft's Office 365 services are executed as a set of phases and their configured actions for each workload. This figure shows the nine phases of migration to the new German datacenters.
+
+![The nine phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+
 The following sections provide additional information on customer experiences when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
 
 ## Services
 
-### Azure AD
+### Azure AD (Phase 2 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -35,7 +39,7 @@ The following sections provide additional information on customer experiences wh
 | Migration of Azure resources. | Customers who use Office 365 and Azure resources (for example, networking, compute, and storage) will perform the migration of resources to the Office 365 services instance. This migration is a responsibility for customers. Message Center posts will signal the start. Migration must be completed before finalization of the Azure AD organization in the Office 365 services environment. | Azure Customers | For Azure migrations, see the Azure migration playbook, [Overview of migration guidance for Azure Germany](https://docs.microsoft.com/azure/germany/germany-migration-main). |
 |||||
 
-### Exchange Online
+### Exchange Online (Phase 5 of 9)
 
 If you're using **Set-UserPhoto**:
 
@@ -51,7 +55,7 @@ If you're using a hybrid, on-premises deployment:
 |Stop or delete any onboarding or offboarding moves of mailboxes.  | This ensures the move requests don't fail with an error. | Exchange Online customers with hybrid (on-premises) deployments | Required action. Failure to do so may result in failure of the service or of software clients. |
 |||||
 
-### Dynamics
+### Dynamics (Phase 8 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -61,7 +65,7 @@ If you're using a hybrid, on-premises deployment:
 \* (i) Customers with Microsoft Dynamics 365 must take action in this migration scenario as defined by the migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021. 
 
 
-### Power BI
+### Power BI (Phase 8 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -72,17 +76,24 @@ If you're using a hybrid, on-premises deployment:
   (i) Customers with Microsoft Power BI must take action in this migration scenario as defined by the Migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021. 
 
 
-### Office Apps
+### Office Apps (Phase 9 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
-| Clients, Office Online during Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. | This configuration change enables Office clients to update and point to the Office 365 services endpoints. | All Office customers | - Remove MSOID CName from customer-owned DNS, if it exists. <br><br> - Notify users to close _all_ Office apps and then sign back in (or force clients to restart and users to sign in) to enable Office clients to pick up the change. <br><br> - Notify users and help desk staff that users *may* see an Office banner that prompts them to reactivate Office apps within 72 hours of the cutover. <br><br> - All Office applications on personal machines must be closed, and users must sign out then sign in again. In the Yellow activation bar, sign in to reactivate against Office 365 services. <br><br> - Shared machines will require actions that are similar to personal machines, and won't require a special procedure. <br><br> - On mobile devices, users must sign out of apps, close them, and then sign in again. |
+| Clients, Office Online during Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. | This configuration change enables Office clients to update and point to the Office 365 services endpoints. | All Office customers | - Notify users to close _all_ Office apps and then sign back in (or force clients to restart and users to sign in) to enable Office clients to pick up the change. <br><br> - Notify users and help desk staff that users *may* see an Office banner that prompts them to reactivate Office apps within 72 hours of the cutover. <br><br> - All Office applications on personal machines must be closed, and users must sign out then sign in again. In the Yellow activation bar, sign in to reactivate against Office 365 services. <br><br> - Shared machines will require actions that are similar to personal machines, and won't require a special procedure. <br><br> - On mobile devices, users must sign out of apps, close them, and then sign in again. |
 |||||
 
 ## During migration
 
+### SharePoint Online (Phase 4 of 9)
 
-### Exchange Online
+| Step(s) | Description | Applies to | Impact |
+|:-------|:-----|:-------|:-------|
+| SharePoint and OneDrive are transitioned. | SharePoint and OneDrive are migrated from Microsoft Cloud Deutschland to Office 365 services in this phase. Existing Microsoft Cloud Deutschland URLs are preserved (`contoso.sharepoint.de`). Tokens issued by Microsoft Cloud Deutschland or Office 365 services are valid during the transition. | SharePoint customers | Inflight SharePoint 2013 workflows will be broken during migration and must be republished after migration. |
+|||||
+
+
+### Exchange Online (Phase 5 of 9)
 
 For eDiscovery:
 
@@ -92,14 +103,7 @@ For eDiscovery:
 |||||
 
 
-### SharePoint Online
-
-| Step(s) | Description | Applies to | Impact |
-|:-------|:-----|:-------|:-------|
-| SharePoint and OneDrive are transitioned. | SharePoint and OneDrive are migrated from Microsoft Cloud Deutschland to Office 365 services in this phase. Existing Microsoft Cloud Deutschland URLs are preserved (`contoso.sharepoint.de`). Tokens issued by Microsoft Cloud Deutschland or Office 365 services are valid during the transition. | SharePoint customers | Inflight SharePoint 2013 workflows will be broken during migration and must be republished after migration. |
-|||||
-
-### Skype for Business Online
+### Skype for Business Online (Phase 7 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -109,7 +113,7 @@ For eDiscovery:
 
 ## Post-migration
 
-### Azure AD
+### Azure AD (Phase 9 of 9)
 
 For hybrid:
 
@@ -146,7 +150,15 @@ For third-party services for Office 365 services endpoints:
 | Update partners and third-party services for Office 365 services endpoints. | - Third-party services and partners that point to Office 365 Germany need to be updated to point to the Office 365 services endpoints. Example: Re-register, in alignment with your vendors and partners, the gallery app version of applications, if available. <br><br> -  Point all custom applications that leverage Graph API from `graph.microsoft.de` to `graph.microsoft.com`. Other APIs with changed endpoints also need to be updated, if leveraged. <br><br> - Change all non-first-party enterprise applications to redirect to the worldwide endpoints.  | All Office customers | Required action. Failure to do so may result in failure of the service or of software clients. |
 |||||
 
-### Exchange Online
+### SharePoint Online (Phase 4 of 9)
+
+| Step(s) | Description | Applies to | Impact |
+|:-------|:-----|:-------|:-------|
+| Republish SharePoint 2013 workflows. | In the pre-migration work, we reduced the number of SharePoint 2013 workflows. Now with migration complete, the customer can republish the workflows. | All Office customers | This is a required action. Failure to do so may result in user confusion and help desk calls. |
+| Share items via Outlook | Sharing items via Outlook no longer works after tenant cutover. | SharePoint Online and OneDrive for Business | - In SharePoint Online and OneDrive for Business, you can share items via Outlook. After pressing the Outlook button, a shareable link is created and pushed into a new message in the Outlook Web App. <br><br> - After tenant cutover, this method of sharing won't work. We recognize this is a known issue. However, since this Outlook feature is in the path of deprecation, fixing the issue is not planned until the deprecation is rolled out. |
+
+
+### Exchange Online (Phase 5 of 9)
 
 If you're using a hybrid Exchange configuration:
 
@@ -162,12 +174,7 @@ For eDiscovery:
 | Remove organization-wide retention policies that were created during pre-migration steps | Customers can remove the organization-wide retention policies that were created during the customers' pre-migration work. | All customers who applied a retention policy as part of pre-migration steps. | None. |
 |||||
 
-### SharePoint Online
 
-| Step(s) | Description | Applies to | Impact |
-|:-------|:-----|:-------|:-------|
-| Republish SharePoint 2013 workflows. | In the pre-migration work, we reduced the number of SharePoint 2013 workflows. Now with migration complete, the customer can republish the workflows. | All Office customers | This is a required action. Failure to do so may result in user confusion and help desk calls. |
-| Share items via Outlook | Sharing items via Outlook no longer works after tenant cutover. | SharePoint Online and OneDrive for Business | - In SharePoint Online and OneDrive for Business, you can share items via Outlook. After pressing the Outlook button, a shareable link is created and pushed into a new message in the Outlook Web App. <br><br> - After tenant cutover, this method of sharing won't work. We recognize this is a known issue. However, since this Outlook feature is in the path of deprecation, fixing the issue is not planned until the deprecation is rolled out. |
 
 ## Next step
 
