@@ -308,7 +308,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   **Card Content in search results**
   
-  ![Same card content in the results of a Content search](../media/CardContentSearchResults.png)
+  ![Same card content in the results of a Content search](../media/CardContentEdiscoverySearchResults.png)
 
 - You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams.
   
