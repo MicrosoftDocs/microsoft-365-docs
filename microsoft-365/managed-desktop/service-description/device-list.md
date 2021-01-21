@@ -12,7 +12,7 @@ ms.topic: article
 
 # Microsoft Managed Desktop devices 
 
-Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article outlines the requirements for a device to be enrolled in Microsoft Managed Desktop and lists the specific devices that are currently supported.
+Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article lists the specific devices that are currently supported. For a more general statement of device requirements, see [Device requirements](device-requirements.md).
 
 For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
 
