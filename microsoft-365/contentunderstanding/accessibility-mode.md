@@ -16,7 +16,7 @@ description: "Learn how to use accessibility mode when training a model in Share
 
 In SharePoint Syntex, users can turn on accessibility mode when they are training a document understanding model to extract data from sample documents. Using accessibility mode can help low-sight users to have easier keyboarding accessibility as they navigate and label items in the document viewer.
 
-This helps the user to use their keyboard to navigate through text in the document viewer and to hear a narration of not only the selected string values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional sample documents. 
+This helps users to use their keyboards to navigate through text in the document viewer and to hear a narration of not only the selected values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional sample documents. 
 
 
 ![Accessibility mode](../media/content-understanding/accessibility-mode.png)
