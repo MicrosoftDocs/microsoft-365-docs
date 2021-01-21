@@ -28,11 +28,11 @@
                 - name: Auditing reports in standalone EOP
                   href: auditing-reports-in-eop.md
             - name: Defender for Office 365
-              href: office-365-atp.md
+              href: defender-for-office-365.md
             - name: What's new in Defender for Office 365
-              href: office-365-security/whats-new-in-office-365-atp.md
+              href: whats-new-in-defender-for-office-365.md
             - name: Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams
-              href: atp-for-spo-odb-and-teams.md
+              href: mdo-for-spo-odb-and-teams.md
             - name: New Microsoft 365 security center
               href: threat-explorer.md
             - name: AIR overview
@@ -50,9 +50,9 @@
             - name: Anti-spoofing protection
               href: anti-spoofing-protection.md
             - name: Safe Attachments in Defender for Office 365
-              href: atp-safe-attachments.md
+              href: safe-attachments.md
             - name: Safe Links in Defender for Office 365
-              href: atp-safe-links.md
+              href: safe-links.md
             - name: Outbound spam protection
               href: outbound-spam-controls.md
             - name: Security Dashboard overview
