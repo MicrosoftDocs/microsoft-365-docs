@@ -1,25 +1,26 @@
 ---
-title: Summarizing your pilot Microsoft 365 Defender project results 
+title: Summarizing your pilot Microsoft 365 Defender project results
 description: Conclude your pilot Microsoft 365 Defender project by completing your scorecard, analyzing your report findings, and deciding how to move forward.
 keywords: Microsoft Threat Protection pilot, decide what to do next after pilot Microsoft Threat Protection project, what to do after evaluating Microsoft Threat Protection in production, transition from Microsoft Threat Protection pilot to deployment, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: dolmont
 author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
-- m365solution-pilotmtpproject
+  - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-pilotmtpproject
 ms.topic: conceptual
+ms.technology: m365d
 ---
 
 # Closing and summarizing your Microsoft 365 Defender pilot  

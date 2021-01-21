@@ -3,19 +3,21 @@ title: Quarantine tags
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer:
-ms.date:
+ms.reviewer: 
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
 ROBOTS: NOINDEX
-description: "Admins can learn how to use quarantine tags to control what users are able to do to their quarantined messages."
+description: Admins can learn how to use quarantine tags to control what users are able to do to their quarantined messages.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Quarantine tags
