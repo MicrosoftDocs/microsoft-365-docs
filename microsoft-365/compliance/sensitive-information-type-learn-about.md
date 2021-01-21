@@ -20,13 +20,13 @@ description: ""
 
 # Learn about sensitive information types
 
-Know your data, in other words, identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](protect-information.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
+Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](protect-information.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
 
 - manually by users
 - automated pattern recognition, like sensitive information types
 - [machine learning](classifier-learn-about.md)
 
-Sensitive information types are pattern based classifiers which detect sensitive information like social security, credit card or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)
+Sensitive information types are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)
 
 ## Sensitive information types are used in
 
@@ -43,7 +43,7 @@ Every sensitive information type entity is defined by these fields:
 - name: how the sensitive information type is referred to
 - description: describes what the sensitive information type is looking for
 - pattern: A pattern defines what a sensitive information type detects. It consists of the following components
-    - Primary element – the main element which the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
+    - Primary element – the main element that the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
     - Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
     - Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
     - Proximity – Number of characters between primary and supporting element
