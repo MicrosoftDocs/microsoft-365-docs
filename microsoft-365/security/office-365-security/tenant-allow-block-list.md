@@ -26,11 +26,11 @@ description: "Admins can learn how to configure allows and blocks in the Tenant 
 >
 > The features described in this article are in Preview, are subject to change, and are not available in all organizations.
 >
-> You can't **configure** allowed items in the Tenant All/Block List, but you can **view** the configuration of allowed items. To configure allowed items, see <>.
+> You can't **configure** allowed items in the Tenant Allow/Block List yet. We are still working on that feature and it should be released later this year.
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The Tenant Allow/Block List in the Security & Compliance Center gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow and at the time of user clicks. You can specify URLs or files to always always block.
+The Tenant Allow/Block List in the Security & Compliance Center gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow and at the time of user clicks. You can specify URLs or files to always block.
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -122,18 +122,13 @@ For details about the syntax for URL entries, see the [URL syntax for the Tenant
 Click on the following column headings to sort in ascending or descending order:
 
 - **Value**: The URL or the file hash.
-- **Action**: **Block** or **Allow**.
 - **Last updated date**
 - **Expiration date**
 - **Note**
 
-Click **Group** to group the entries by **Action** (**Block** or **Allow**) or **None**.
-
 Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click **Clear search** ![Clear search icon](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif).
 
 Click **Filter**. In the **Filter** flyout that appears, configure any of the following settings:
-
-- **Action**: Select **Allow**, **Block** or both.
 
 - **Never expire**: Select off: ![Toggle off](../../media/scc-toggle-off.png) or on: ![Toggle on](../../media/scc-toggle-on.png).
 
@@ -186,19 +181,19 @@ You can't modify the existing blocked URL or file values within an entry. To mod
 To add block entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-New-TenantAllowBlockListItems -ListType <Url | FileHash> -Action Block -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 This example adds a block URL entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com). Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.
 
 ```powershell
-New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
+New-TenantAllowBlockListItem -ListType Url -Block -Entries ~contoso.com
 ```
 
 This example adds a block file entry for the specified files that never expires.
 
 ```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Action Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
+New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
@@ -208,13 +203,13 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 To view entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
+Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Block] [-ExpirationDate <DateTime>] [-NoExpiration]
 ```
 
 This example returns all blocked URLs.
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType Url -Action Block
+Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
 This example returns information for the specified file hash value.
@@ -232,7 +227,7 @@ You can't modify the existing URL or file values within a block entry. To modify
 To modify block entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Action Block] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Block] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 This example changes the expiration date of the specified block entry.
