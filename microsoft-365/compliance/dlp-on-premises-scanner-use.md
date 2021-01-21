@@ -46,19 +46,7 @@ During the public preview the DLP rule matches are available in Audit log UI, se
 
 #### AIP
 
-You can also get a list of all files, folders and file shares from AIP.
-
-1. Make sure you have the right permissions in AIP. Permissions for crawled files is available in Azure Log Analytics under NetworkScan_CL table. You must [enable AIP analytics](https://docs.microsoft.com/azure/information-protection/reports-aip#configure-a-log-analytics-workspace-for-the-reports) to get this table populated.
-1. Use this query to get list of all files, folders and file shares:
-
-```sql
-NetworkScan_CL
-| where TimeGenerated >= ago(30d)
-| extend rootPath = tolower(ObjectId_s)
-| project TimeGen = TimeGenerated, Path = rootPath, EffectivePublicAccess = EffectivePublicAccess_s, ScannerAccess = ScannerAccess_s,               RepositoryPermissions = RepositoryPermissions_s, SharePermissions = SharePermissions_s
-| summarize arg_max(TimeGen,*) by Path
-```
-Discovery data is also available in a local report in csv format which is stored under:
+Discovery data is available in a local report in csv format which is stored under:
 
 **%localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_%timestamp%.csv report**.
 

@@ -93,7 +93,7 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 > [!IMPORTANT]
 > The exclusion list takes precedence over the inclusions list.
 
-### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
+### Viewing DLP on-premises scanner alerts in DLP Alerts Management dashboard
 
 1. Open the Data loss prevention page in the Microsoft 365 Compliance center and choose Alerts.
 
