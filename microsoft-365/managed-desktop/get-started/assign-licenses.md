@@ -13,10 +13,10 @@ ms.topic: article
 
 # Assign licenses
 
-As part of preparing to enroll in Microsoft Managed Desktop, you'll need to be sure you've obtained the necessary licenses. If you haven't already done this, see [More about licenses](../get-ready/prerequisites.md#more-about-licenses) for details about exactly which licenses you need.
+As part of preparing to enroll in Microsoft Managed Desktop, you'll need to be sure you've obtained the necessary licenses. If you haven't already obtained the licenses, see [More about licenses](../get-ready/prerequisites.md#more-about-licenses) for details about exactly which licenses you need.
 
 
-If your license are all lined up, it's time now to assign them to your users. To do this, we recommend that you take advantage of the [group-based licensing feature](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
+If your licenses are all lined up, it's time now to assign them to your users. To assign licenses, we recommend that you take advantage of the [group-based licensing feature](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
 
 If you have any difficulty with license assignment, contact Admin [support](../working-with-managed-desktop/admin-support.md).
 
@@ -24,7 +24,7 @@ If you have any difficulty with license assignment, contact Admin [support](../w
 
 1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
 2. [Adjust conditional access](conditional-access.md)
-3. Assign licenses (this topic)
+3. Assign licenses (this article)
 4. [Deploy Intune Company Portal](company-portal.md)
 5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Set up devices](set-up-devices.md)

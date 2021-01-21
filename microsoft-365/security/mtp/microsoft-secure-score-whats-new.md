@@ -30,6 +30,12 @@ To make Microsoft Secure Score a better representative of your security posture,
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
+## January 2021
+
+### Added our first security recommendation for Microsoft Teams
+
+Microsoft Teams customers will see "Restrict Anonymous user joins during meetings" as a new improvement action in Secure Score.
+
 ## December 2020
 
 ### Added six accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
