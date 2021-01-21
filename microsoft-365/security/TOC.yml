@@ -510,7 +510,7 @@
               href: ./office-365-security/air-custom-reporting.md
             - name: Advanced Spam Filter (ASF) settings
               href: ./office-365-security/advanced-spam-filtering-asf-options.md
-            - name: Manage URLs in the Tenant Allow/Block List
+            - name: Manage the Tenant Allow/Block List
               href: ./office-365-security/tenant-allow-block-list.md
             - name: Message trace in the Security & Compliance Center
               href: ./office-365-security/message-trace-scc.md
