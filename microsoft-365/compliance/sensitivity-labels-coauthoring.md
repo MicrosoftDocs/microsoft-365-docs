@@ -69,6 +69,8 @@ Check the following section for a list of apps and services that support this se
 
 Make sure you understand the following prerequisites before you turn on this feature.
 
+- You must use a test tenant for this preview.
+
 - You must be a global admin to turn on this feature.
 
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
