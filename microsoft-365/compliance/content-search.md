@@ -20,17 +20,16 @@ search.appverid:
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
-description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in a variety of Office 365 services."
+description: "Use the Content Search tool in the Microsoft compliance center to search for content in different Microsoft 365 services."
 ---
 
 # Content Search
 
-You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your organization. Use this tool to search for items in these services:
+You can use the Content search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your organization. Use this tool to search for items in these services:
   
-- Exchange Online mailboxes and public folders
+- Exchange Online mailboxes
 
 - SharePoint Online sites and OneDrive for Business accounts
-
 
 - Microsoft Teams
 
@@ -40,7 +39,7 @@ You can use the Content Search eDiscovery tool in the compliance center in Offic
 
 - Skype for Business conversations
 
-After you run a Content Search, the number of content locations and an estimated number of search results are displayed in the search statistics. You can also quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
+After you run a Content search, the number of content locations and an estimated number of search results are displayed in the search statistics. You can also quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
 
 ## Create a search
 
@@ -122,20 +121,20 @@ You can also download the search statistics and keyword statistics to a CSV file
   
 To view search statistics:
   
-1. On the **Content search** page, click **Open** and then click the search that you want to view the statistic for. 
-    
+1. On the **Content search** page, click **Open** and then click the search that you want to view the statistic for.
+  
 2. On the flyout page, click **Open query**. 
-    
+  
 3. In the **Individual results** drop down list, click **Search statistics**.
-    
+  
 4. In the **Type** drop down list, click one of the following options depending on the search statistics you want to view:
-    
+  
     - **Summary:** Displays statistics for each type of content locations searched. This contents the number of content locations that contained items that matched the search query, and the total number and size of search result items. This is the default setting.
 
     - **Queries:** Displays statistics about the search query. This includes the type of content location the query statistics are applicable to, part of the search query the statistics are applicable to (note that **Primary** indicates the entire search query), the number of the content locations that contain items that match the search query, and the total number and size and items that were found (in the specified content location) that match the search query. Statistics for unindexed items (also called *partially indexed items*) are also displayed. However, only partially indexed items from mailboxes are included in the statistics. Partially indexed items from SharePoint and OneDrive are not included in the statistics.
 
     - **Top locations:** Displays statistics about the number of items that match the search query in each content location. The top 1,000 locations are displayed.
-    
+
 For more detailed information about search statistics, see [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md).
   
 ## Export search results
@@ -158,7 +157,7 @@ For more detailed instructions and troubleshooting tips, see:
 
 ## More information about content search
 
-See the following sections for more information about content searches.
+See the following sections for more information about Content searches.
   
 [Content search limits](#content-search-limits)
   
@@ -183,7 +182,7 @@ See the following sections for more information about content searches.
 ### Content search limits
 
 - For a description of the limits that are applied to Content search, see [Limits for Content search](limits-for-content-search.md).
-    
+  
 - Microsoft collects performance information for Content searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
   
   |**Number of mailboxes**|**Average search time**|
@@ -306,9 +305,12 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   ![Card content in Teams channel message](../media/CardContentTeams.png)
 
-  **Card Content in search results**
+  **Card content in search results**
   
   ![Same card content in the results of a Content search](../media/CardContentEdiscoverySearchResults.png)
+
+  > [!NOTE]
+  > To display images from card content (such as the checkmarks in the previous screenshot) in search results at this time, you have to be signed into Teams (at https://teams.microsoft.com) in a different tab in the same browser session that you use to view the search results. Otherwise, generic image placeholders are displayed.
 
 - You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams.
   
