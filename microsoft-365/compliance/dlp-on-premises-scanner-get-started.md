@@ -21,7 +21,7 @@ search.appverid:
 description: "Set up Microsoft 365 data loss prevention on-premises scanner"
 ---
 
-# Get started with data loss prevention on-premises scanner (preview)
+# Get started with the data loss prevention on-premises scanner (preview)
 
 This article walks you through the prerequisites and configuration for the Microsoft 365 data loss prevention on-premises scanner.
 
