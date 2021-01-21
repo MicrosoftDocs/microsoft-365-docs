@@ -53,7 +53,7 @@ Add a custom description to describe the indicator and click within the indicato
 
 ## Review payload
 
-You're done building your payload. Now it's time to review the details and see a preview of your payload. The preview will include all indicators that you've created. You can edit each part of the payload from this step. Once satisfied, **Submit** your payload.
+You're done building your payload. Now it's time to review the details and see a preview of your payload. The preview will include all indicators that you've created. You can edit each part of the payload from this step. Once satisfied, you can **Submit** your payload.
 
 > [!IMPORTANT]
 > Payloads that you've created will have **Tenant** as their source. When selecting payloads, make sure that you don't filter out **Tenant**.

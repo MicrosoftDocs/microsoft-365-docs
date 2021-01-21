@@ -93,6 +93,24 @@
         href: information-protection-deploy-monitor-respond.md
 - name: Workload solutions and scenarios
   items: 
+    - name: Overview
+      href: workload-solutions-scenarios-overview.md
+
+    - name: Tenant management
+      items:
+      - name: Overview
+        href: tenant-management-overview.md
+      - name: Step 1. Your tenants
+        href: tenant-management-tenants.md
+      - name: Step 2. Optimal networking
+        href: tenant-management-networking.md
+      - name: Step 3. Identity
+        href: tenant-management-identity.md
+      - name: Step 4. Migration
+        href: tenant-management-migration.md
+      - name: Step 5. Device and app management
+        href: tenant-management-device-management.md
+
     - name: Teamwork and collaboration
       items:
       - name: Teams architecture posters
