@@ -52,7 +52,7 @@ To have access to the **Content search** page to run searches and preview and ex
     
 3. On the **Content search** page, click **New search**.
   
-    You can also choose one of the other search options options:
+    You can also choose one of the other search options:
     
     - **Guided search:** This option starts a wizard that guides you through the creating the search. The user interface to select content locations and build the search query are the same as the **New search** option.
     
@@ -156,7 +156,7 @@ For more detailed instructions and troubleshooting tips, see:
 
 - [Export a Content search report](export-a-content-search-report.md)
 
-## More information about ontent search
+## More information about content search
 
 See the following sections for more information about content searches.
   
@@ -306,7 +306,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   ![Card content in Teams channel message](../media/CardContentTeams.png)
 
-  **Card content in search results**
+  **Card Content in search results**
   
   ![Same card content in the results of a Content search](../media/CardContentSearchResults.png)
 
