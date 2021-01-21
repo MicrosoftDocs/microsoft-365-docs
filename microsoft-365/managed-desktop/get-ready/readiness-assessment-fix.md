@@ -47,20 +47,20 @@ Make sure that your Autopilot profiles target an assigned or dynamic Azure AD gr
 
 ### Certificate connectors
 
-If you have any certificate connectors used by the devices you want to enroll in Microsoft Managed Desktop, the connectors cannot have any errors. Only one of the following advisories will apply to your situation, so check them carefully.
+If you have any certificate connectors that will be used by the devices you want to enroll in Microsoft Managed Desktop, the connectors should not have any errors. Only one of the following advisories will apply to your situation, so check them carefully.
 
 **Advisory**
 
-No certificate connectors are present. It's possible you don't need any connectors, but you should evaluate whether you might need some for network connectivity to Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
+No certificate connectors are present. It's possible you don't need any connectors, but you should evaluate whether you might need some for network connectivity on your Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
 **Advisory**
 
-At least one certificate connector has an error. If you need this connector for connectivity to Microsoft Managed Desktop devices, you must resolve the error. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
+At least one certificate connector has an error. If you need this connector for providing certificates to Microsoft Managed Desktop devices, you must resolve the error. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
 
 **Advisory**
 
-You have at least one certificate connector and no errors are reported. However, you might need to create a profile to reuse the connector for Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
+You have at least one certificate connector and no errors are reported. However, in preparation for deployment, you might need to create a profile to reuse the connector for Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
 
 ### Conditional access policies
@@ -92,7 +92,7 @@ Intune Device Compliance policies in your Azure AD organization might impact Mic
 
 **Not ready**
 
-You have at least one compliance policy that targets all users. Microsoft Managed Desktop includes compliance policies that will target your Microsoft Managed Desktop devices.  Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users or devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
+You have at least one compliance policy that targets all users. Microsoft Managed Desktop includes compliance policies that will target your Microsoft Managed Desktop devices.  Change the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users or devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
 
 **Advisory**
 
@@ -135,15 +135,6 @@ You have the ESP default profile set to **Show app and profile configuration pro
 
 Make sure that any profiles that have the **Show app and profile configuration progress** setting are not assigned to any Azure AD group that includes Microsoft Managed Desktop devices. For more information, see [Set up the Enrollment Status Page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
-### Intune enrollment
-
-Windows 10 devices in your Azure AD organization must be able to automatically enroll in Intune.
-
-**Advisory**
-
-Make sure the MDM User scope is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups** or an equivalent group targeting all of your Microsoft Managed Desktop users.
-
-
 ### Microsoft Store for Business
 
 We use Microsoft Store for Business and deploy the Company Portal app on Microsoft Managed Desktop to allow users to optionally install some apps, such as Microsoft Project and Microsoft Visio (where permitted).
@@ -159,7 +150,7 @@ Multifactor authentication must not be applied to Microsoft Managed Desktop serv
 
 **Not ready**
 
-You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. Change the policy to use an assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. Change the policy to use an assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop service accounts. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
 
 **Advisory**
 
@@ -182,7 +173,7 @@ Windows PowerShell scripts can't be assigned in a way that would target Microsof
 
 **Advisory**
 
-Make sure that Windows PowerShell scripts in your Azure AD organization don't target any Microsoft Manage Desktop devices or users. Do not assign a PowerShell script to target all users, all devices, or both. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
+Make sure that Windows PowerShell scripts in your Azure AD organization don't target any Microsoft Manage Desktop devices or users. Do not assign a PowerShell script to target all users, all devices, or both. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices or users. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
 
 ### Region
 
@@ -244,12 +235,21 @@ You have an "update ring" policy that targets all devices, all users, or both. C
 
 **Advisory**
 
-Make sure that any update ring policies you have exclude the **Modern Workplace Devices -All** Azure AD group. If you have assigned Azure AD user group to these policies, make sure that any update ring policies you have also excluded the **Modern Workplace -All** Azure AD group that includes your Microsoft Managed Desktop users. For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Both the **Modern Workplace Devices -All** and **Modern Workplace -All** Azure AD groups are assigned groups that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+Make sure that any update ring policies you have exclude the **Modern Workplace Devices -All** Azure AD group. If you have assigned Azure AD user groups to these policies, make sure that any update ring policies you have also excluded the **Modern Workplace -All** Azure AD group that you add your Microsoft Managed Desktop users to (or an equivalent group). For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Both the **Modern Workplace Devices -All** and **Modern Workplace -All** Azure AD groups are groups that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
 
 ## Azure Active Directory settings
 
 You can access Azure Active Directory settings at the [Azure portal](https://portal.azure.com).
+
+### Intune enrollment
+
+Windows 10 devices in your Azure AD organization must be able to automatically enroll in Intune.
+
+**Advisory**
+
+Make sure the **MDM User scope** is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups** or an equivalent group targeting all of your Microsoft Managed Desktop users.  See [Set up enrollment for Windows devices by using Microsoft Intune]]https://docs.microsoft.com/en-us/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment
+
 
 ### Ad hoc subscriptions
 
@@ -310,11 +310,11 @@ You have Security defaults turned on. Turn off Security defaults and set up cond
 
 ### Self-service Password Reset
 
-Self-service Password Reset (SSPR) should be enabled for all Microsoft Managed Desktop users excluding Microsoft Managed Desktop service accounts. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Self-service Password Reset (SSPR) can be enabled for all Microsoft Managed Desktop users excluding Microsoft Managed Desktop service accounts. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Advisory**
 
-Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop devices but excludes Microsoft Managed Desktop service accounts. Microsoft Managed Desktop service accounts cannot work as expected when SSPR is enabled.  
+Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop users but excludes Microsoft Managed Desktop service accounts. Microsoft Managed Desktop service accounts cannot work as expected when SSPR is enabled.  
 
 
 ### Standard user role
