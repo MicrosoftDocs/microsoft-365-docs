@@ -43,10 +43,8 @@ ms.custom:
 
 The following table summarizes threats and appropriate remediation actions in Microsoft Defender for Office 365. In some cases, an automated investigation does not result in a specific remediation action. Your security operations team can further investigate and take appropriate actions as described in the table below.
 
-****
-
 |Category|Threat/risk|Remediation action(s)|
-|---|---|---|
+|:---|:---|:---|
 |Email|Malware|Soft delete email/cluster​ <br> If more than a handful of email messages in a cluster contain malware, the cluster is considered to be malicious.​|
 |Email|Malicious URL​ <br> (A malicious URL was detected by [Safe Links in Microsoft Defender for Office 365](atp-safe-links.md)).|Soft delete email/cluster​ <p> Email that contains a malicious URL is considered to be malicious​.|
 |Email|Phish|Soft delete email/cluster​ <br> If more than a handful of email messages in a cluster contain phishing attempts, the cluster is considered to be phish.​|
