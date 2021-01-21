@@ -6,7 +6,7 @@ keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, 
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
-ms.localizationpriority: high
+localization_priority: Priority
 ms.author: ellevin
 author: levinec
 manager: dansimp

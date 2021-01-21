@@ -4,7 +4,7 @@ description: Learn how to gain more insight into cloud app use in your organizat
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, apps
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
-ms.localizationpriority: medium
+localization_priority: Normal
 f1.keywords:
 - NOCSH
 ms.author: ellevin
