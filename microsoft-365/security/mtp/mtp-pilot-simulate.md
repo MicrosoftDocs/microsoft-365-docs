@@ -8,18 +8,19 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: dolmont
 author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
-- m365solution-pilotmtpproject
+  - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-pilotmtpproject
 ms.topic: conceptual
+ms.technology: m365d
 ---
 
 # Run your Microsoft 365 Defender attack simulations

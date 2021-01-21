@@ -1,5 +1,5 @@
 ---
-title: Run your pilot Microsoft 365 Defender project 
+title: Run your pilot Microsoft 365 Defender project
 description: Run your pilot Microsoft 365 Defender project in production to effectively determine the benefits and adoption of Microsoft 365 Defender.
 keywords: Microsoft Threat Protection pilot, run pilot Microsoft Threat Protection project, evaluate Microsoft Threat Protection in production, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -8,18 +8,19 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: dolmont
 author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-overview
-- m365solution-pilotmtpproject
+  - M365-security-compliance
+  - m365solution-overview
+  - m365solution-pilotmtpproject
 ms.topic: conceptual
+ms.technology: m365d
 ---
 
 # Run your pilot Microsoft 365 Defender project 

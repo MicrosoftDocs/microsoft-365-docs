@@ -1,24 +1,25 @@
 ---
 title: Preview features in Microsoft 365 Defender
-description:  Learn about new features in Microsoft 365 security
+description: Learn about new features in Microsoft 365 security
 keywords: preview, new, m365 security, security, 365, capabilities
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 search.appverid: 
-- MOE150
-- MET150
+  - MOE150
+  - MET150
+ms.technology: m365d
 ---
 
 # Microsoft 365 Defender preview features

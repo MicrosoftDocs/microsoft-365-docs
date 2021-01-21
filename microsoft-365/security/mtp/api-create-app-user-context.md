@@ -1,24 +1,25 @@
 ---
 title: Create an app to access Microsoft 365 Defender APIs on behalf of a user
 description: Learn how to access Microsoft 365 Defender APIs on behalf of a user.
-keywords: access, on behalf of user, api, application, user, access token, token, 
+keywords: access, on behalf of user, api, application, user, access token, token,
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 search.appverid: 
-- MOE150
-- MET150
+  - MOE150
+  - MET150
+ms.technology: m365d
 ---
 
 # Create an app to access Microsoft 365 Defender APIs on behalf of a user

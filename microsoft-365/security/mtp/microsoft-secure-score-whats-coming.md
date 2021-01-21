@@ -5,18 +5,19 @@ keywords: microsoft secure score, secure score, office 365 secure score, microso
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance  
+  - M365-security-compliance
 ms.topic: article
 search.appverid: 
-- MOE150
-- MET150
+  - MOE150
+  - MET150
+ms.technology: m365d
 ---
 
 # What's coming to Microsoft Secure Score

@@ -5,16 +5,17 @@ keywords: security, malware, Microsoft 365, M365, security center, threat analyt
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
+ms.technology: m365d
 ---
 
 # Understand the latest attack campaigns and techniques with threat analytics 

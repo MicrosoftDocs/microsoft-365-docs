@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
-- m365solution-evalutatemtp
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-evalutatemtp
+ms.topic: article
+ms.technology: m365d
 ---
 
 # Prepare your Microsoft 365 Defender trial lab or pilot environment

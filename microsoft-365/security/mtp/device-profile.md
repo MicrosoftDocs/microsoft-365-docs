@@ -12,6 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: m365d
 ---
 
 # Device profile page

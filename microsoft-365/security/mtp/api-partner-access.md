@@ -1,24 +1,25 @@
 ---
 title: Partner access through Microsoft 365 Defender APIs
 description: Learn how to create an app to get programmatic access to Microsoft 365 Defender on behalf of your users.
-keywords: partner, access, api, multi tenant, consent, access token, app 
+keywords: partner, access, api, multi tenant, consent, access token, app
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 search.appverid: 
-- MOE150
-- MET150
+  - MOE150
+  - MET150
+ms.technology: m365d
 ---
 
 # Create an app with partner access to Microsoft 365 Defender APIs

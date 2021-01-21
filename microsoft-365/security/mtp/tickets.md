@@ -5,20 +5,21 @@ keywords: security, Microsoft 365, M365, compliance, compliance center, security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance  
+  - M365-security-compliance
 ms.topic: article
 search.appverid: 
-- MOE150
-- MET150
-ms.custom:
-- seo-marvel-apr2020
+  - MOE150
+  - MET150
+ms.custom: 
+  - seo-marvel-apr2020
+ms.technology: m365d
 ---
 # Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
 

@@ -1,25 +1,26 @@
 ---
 title: Configure Microsoft 365 Defender pillars for the trial lab or pilot environment
 description: Configure Microsoft 365 Defender pillars, such as Microsoft Defender for Office 365 , Microsoft Defender for Identity, Microsoft Cloud App Security, and Microsoft Defender for Endpoint, for your trial lab or pilot environment.
-keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars 
+keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
-ms.author: dolmont  
+f1.keywords: 
+  - NOCSH
+ms.author: dolmont
 author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
-- m365solution-evalutatemtp
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-evalutatemtp
+ms.topic: article
+ms.technology: m365d
 ---
 
 # Configure Microsoft 365 Defender pillars for your trial lab or pilot environment

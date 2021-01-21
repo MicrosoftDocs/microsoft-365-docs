@@ -10,11 +10,12 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
+ms.technology: m365d
 ---
 
 # Configure automated investigation and response capabilities in Microsoft 365 Defender
