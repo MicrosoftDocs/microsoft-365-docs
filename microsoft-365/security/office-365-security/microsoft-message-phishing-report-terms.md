@@ -3,7 +3,6 @@ title: Microsoft Report Message and Report Phishing Add-In license terms
 description: Describes the Microsoft Report Message and Report Phishing Add-In license terms
 keywords: microsoft, report, phishing, security, scam, hack, license, terms, application, use, installation, service, feedback
 search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
