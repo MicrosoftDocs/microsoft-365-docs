@@ -13,7 +13,7 @@ ms.collection:
   - Ent_O365
   - GDPR
   - M365-security-compliance
-ms.service: O365-seccomp
+
 localization_priority: Priority
 search.appverid: 
   - MET150

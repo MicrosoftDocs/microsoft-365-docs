@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 11/18/2019
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: 
   - M365-security-compliance

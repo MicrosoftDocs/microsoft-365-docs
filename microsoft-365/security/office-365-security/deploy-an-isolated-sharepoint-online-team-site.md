@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: 

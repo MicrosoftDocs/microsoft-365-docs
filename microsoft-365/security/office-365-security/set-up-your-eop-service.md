@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 ms.custom: 
   - seo-marvel-apr2020
 localization_priority: Normal

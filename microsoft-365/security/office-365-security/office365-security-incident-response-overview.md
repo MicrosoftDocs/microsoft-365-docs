@@ -11,7 +11,7 @@ ms.topic: overview
 ms.collection: 
   - o365_security_incident_response
   - M365-security-compliance
-ms.service: O365-seccomp
+
 localization_priority: Normal
 search.appverid: 
   - MET150

@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords: 
   - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
-ms.service: O365-seccomp
+
 localization_priority: Priority
 search.appverid: 
   - MET150

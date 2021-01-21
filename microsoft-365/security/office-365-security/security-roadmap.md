@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 10/08/2018
 audience: Admin
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: 
   - Ent_O365

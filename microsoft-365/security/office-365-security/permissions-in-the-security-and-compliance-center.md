@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords: 
   - 'ms.o365.cc.AdminRoleGroups'
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: 

@@ -3,7 +3,7 @@ title: What's new in Microsoft Defender for Office 365
 description: Learn about the new features and functionality available in the latest release of Microsoft Defender for Office 365.
 keywords: what's new in Office 365 atp, ga, generally available, capabilities, available, new
 search.appverid: met150
-ms.service: O365-seccomp
+
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 

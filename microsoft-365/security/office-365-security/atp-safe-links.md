@@ -9,7 +9,7 @@ audience: Admin
 ms.article: overview
 f1_keywords: 
   - '197503'
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: 
   - Strat_O365_IP

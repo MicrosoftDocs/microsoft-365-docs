@@ -7,7 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: None
 search.appverid: 
   - MET150

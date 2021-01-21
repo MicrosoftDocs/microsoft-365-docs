@@ -14,7 +14,7 @@ ms.collection:
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
-ms.service: O365-seccomp
+
 localization_priority: Priority
 search.appverid: 
   - MET150

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 audience: Consumer/IW
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Priority
 search.appverid: 
   - MET150
