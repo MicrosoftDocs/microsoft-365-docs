@@ -29,7 +29,7 @@ ms.custom:
 
 ## Remediation actions
 
-[Automated investigation and response capabilities](office-365-air.md) (AIR) in [Microsoft Defender for Office 365](office-365-atp.md) include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. Such remediation actions can include the following:
+[Automated investigation and response capabilities](office-365-air.md) (AIR) in [Microsoft Defender for Office 365](office-365-atp.md) include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. Such remediation actions can include:
 
 - Soft delete email messages or clusters
 - Block URL (time-of-click)
@@ -41,7 +41,7 @@ ms.custom:
 
 ## Threats and remediation actions
 
-The following table summarizes threats and appropriate remediation actions in Microsoft Defender for Office 365. In some cases, an automated investigation does not result in a specific remediation action. Your security operations team can further investigate and take appropriate actions as described in the table below.
+The table in this section summarizes threats and appropriate remediation actions in Microsoft Defender for Office 365. In some cases, an automated investigation does not result in a specific remediation action. Your security operations team can further investigate and take appropriate actions as described in the table below.
 
 |Category|Threat/risk|Remediation action(s)|
 |:---|:---|:---|
@@ -57,7 +57,7 @@ The following table summarizes threats and appropriate remediation actions in Mi
 |User|Email forwarding <br> (Mailbox forwarding rules are configured, which could be used for data exfiltration​.)|Remove forwarding rule​ <p> Use [mail flow insights](mail-flow-insights-v2.md), including the [Autoforwarded messages report](mfi-auto-forwarded-messages-report.md), to view more specific details about forwarded email.|
 |User|Email delegation rules​ <br> (A user's account has delegation set up.)|Remove delegation rule​ <p> If your organization is using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), consider [investigating the user](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) who's getting the delegation permission.​|
 |User|Data exfiltration <br> (A user violated email or file-sharing [DLP policies](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).)|Automated investigation does not result in a specific pending action. <p> [View DLP reports and take action](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).|
-|User|Anomalous email sending <br> (A user recently sent more email than during the previous 7-10 days.)|Automated investigation does not result in a specific pending action. <p> Sending a lot of email isn't malicious by itself; the user might just have sent email to a large group of recipients for an event. To investigate, use [mail flow insights](mail-flow-insights-v2.md), including the [mail flow map report](mfi-mail-flow-map-report.md) to determine what's going on and take action.|
+|User|Anomalous email sending <br> (A user recently sent more email than during the previous 7-10 days.)|Automated investigation does not result in a specific pending action. <p> Sending a large volume of email isn't malicious by itself; the user might just have sent email to a large group of recipients for an event. To investigate, use [mail flow insights](mail-flow-insights-v2.md), including the [mail flow map report](mfi-mail-flow-map-report.md) to determine what's going on and take action.|
 |
 
 ## Next steps
