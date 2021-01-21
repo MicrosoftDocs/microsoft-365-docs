@@ -5,7 +5,7 @@ author: efrene
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.service: 
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW

@@ -64,7 +64,7 @@ To apply your model to to a SharePoint document library:
 
     ![Active models pane](../media/content-understanding/active-models.png)</br> 
 
-After applying the model to the document library, you can begin uploading documents to the site and see the results.
+After applying the model to the dcument library, you can begin uploading documents to the site and see the results.
 
 The model identifies any files with model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file.
 
