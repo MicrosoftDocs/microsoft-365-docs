@@ -3,7 +3,7 @@ title: Get incident notifications in Microsoft 365 Defender
 description: Learn how to create rules to get email notifications for incidents in Microsoft 365 Defender
 keywords: incident, email, email notfications, configure, users, mailbox, email, incidents
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

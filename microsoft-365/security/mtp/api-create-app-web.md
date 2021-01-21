@@ -3,7 +3,7 @@ title: Create an app to access Microsoft 365 Defender without a user
 description: Learn how to create an app to access Microsoft 365 Defender without a user.
 keywords: app, access, api, create
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

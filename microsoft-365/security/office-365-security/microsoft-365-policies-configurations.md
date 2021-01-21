@@ -4,7 +4,7 @@ description: Describes Microsoft recommendations and core concepts for deploying
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 ms.date: 09/29/2020
 f1.keywords: 

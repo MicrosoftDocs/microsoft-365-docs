@@ -3,7 +3,7 @@ title: Overview of Microsoft 365 Defender APIs
 description: Learn about the available APIs in Microsoft 365 Defender
 keywords: api, apis, overview, incident, incidents, threat hunting, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

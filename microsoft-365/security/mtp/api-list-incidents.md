@@ -3,7 +3,7 @@ title: List incidents API in Microsoft 365 Defender
 description: Learn how to list incidents API in Microsoft 365 Defender
 keywords: list, incident, incidents, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

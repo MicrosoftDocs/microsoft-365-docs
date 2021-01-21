@@ -3,7 +3,7 @@ title: Provide feedback on Microsoft 365 Defender
 description: Provide product feedback on Microsoft 365 Defender
 keywords: feedback, m365 security, security, 365, capabilities
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

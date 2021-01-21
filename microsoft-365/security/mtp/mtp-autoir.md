@@ -3,7 +3,7 @@ title: Automated investigation and response in Microsoft 365 Defender
 description: Get an overview of automated investigation and response capabilities, also called self-healing, in Microsoft 365 Defender
 keywords: automated, investigation, alert, trigger, action, remediation, self-healing
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -3,7 +3,7 @@ title: Microsoft 365 Defender advanced hunting API
 description: Learn how to run advanced hunting queries using Microsoft 365 Defender's advanced hunting API
 keywords: Advanced Hunting, APIs, api, MTP, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

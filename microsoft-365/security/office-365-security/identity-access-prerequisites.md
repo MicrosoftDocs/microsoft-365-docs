@@ -4,7 +4,7 @@ description: This article describes the prerequisites you need to meet to use id
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 ms.date: 09/01/2020
 f1.keywords: 

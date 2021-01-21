@@ -3,7 +3,7 @@ title: Common Microsoft 365 Defender REST API error codes
 description: Learn about the common Microsoft 365 Defender REST API error codes
 keywords: api, error, codes, common errors, mtp, api error codes
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

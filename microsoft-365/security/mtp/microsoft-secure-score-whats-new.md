@@ -2,7 +2,7 @@
 title: What's new in Microsoft Secure Score
 description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 security center.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords: 

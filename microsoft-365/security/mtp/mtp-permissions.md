@@ -3,7 +3,7 @@ title: Manage access to Microsoft 365 Defender data in the Microsoft 365 securit
 description: Learn how to manage permissions to data in Microsoft 365 Defender
 keywords: access, permissions, MTP, Microsoft Threat Protection, M365, security, MCAS, MDATP, Cloud App Security, Microsoft Defender Advanced Threat Protection, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

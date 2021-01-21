@@ -3,7 +3,7 @@ title: Microsoft 365 Defender incidents APIs and the incident resource type
 description: Learn about the methods and properties of the Incident resource type in Microsoft 365 Defender
 keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

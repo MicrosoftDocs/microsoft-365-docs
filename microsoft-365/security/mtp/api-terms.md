@@ -3,7 +3,7 @@ title: Microsoft 365 Defender APIs license and terms of use
 description: Description of the license and terms of use for APIs in Microsoft 365 Defender
 keywords: api, apis, license, terms, apis, legal, notices, code of conduct
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

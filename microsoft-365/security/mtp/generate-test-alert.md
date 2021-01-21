@@ -4,7 +4,7 @@ description: Generate a test alert to try how your Microsoft 365 Defender lab en
 keywords: Microsoft Threat Protection simulation, try Microsoft Threat Protection, generate test alert in Microsoft Threat Protection, test alert in Microsoft Threat Protection evaluation lab
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

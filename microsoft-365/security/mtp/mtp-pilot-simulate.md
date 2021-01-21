@@ -4,7 +4,7 @@ description: Run attack simulations for your Microsoft 365 Defender pilot projec
 keywords: Microsoft Threat Protection pilot attack simulation, run Microsoft Threat Protection pilot attack simulation, simulate attack in Microsoft Threat Protection, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -3,7 +3,7 @@ title: What's new in Microsoft 365 security
 description: Learn about new capabilities in Microsoft 365 security
 keywords: new, m365 security, security, 365, capabilities
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

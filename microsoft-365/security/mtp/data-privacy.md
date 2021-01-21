@@ -3,7 +3,7 @@ title: Microsoft 365 Defender data security and privacy
 description: Describes the privacy and data security of the service.
 keywords: privacy, data, security, trust center, information collection
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

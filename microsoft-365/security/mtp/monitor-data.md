@@ -2,7 +2,7 @@
 title: Data monitoring & reporting - Security center
 description: Learn how you can track user activity that could lead to unauthorized data disclosure in Microsoft 365 security center.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, data
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords: 

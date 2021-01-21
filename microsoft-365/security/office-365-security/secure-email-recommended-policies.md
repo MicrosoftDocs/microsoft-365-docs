@@ -4,7 +4,7 @@ description: Describes the policies for Microsoft recommendations about how to a
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 f1.keywords: 
   - NOCSH

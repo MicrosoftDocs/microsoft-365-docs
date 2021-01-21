@@ -3,7 +3,7 @@ title: Remediation actions in Microsoft 365 Defender
 description: Get an overview of remediation actions that follow automated investigations in Microsoft 365 Defender
 keywords: automated, investigation, alert, trigger, action, remediation
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

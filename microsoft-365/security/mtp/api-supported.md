@@ -3,7 +3,7 @@ title: Supported Microsoft 365 Defender APIs
 description: Supported Microsoft 365 Defender APIs
 keywords: MTP, APIs, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
