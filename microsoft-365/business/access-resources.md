@@ -58,4 +58,4 @@ If the Windows device that you Azure-AD joined was previously domain-joined or i
 
 - Users won't be able to authenticate to applications that depend on Active Directory authentication. Evaluate the legacy app and consider updating to an app that uses modern Auth, if possible.
 
-- Active Directory printer discovery won't work. You can provide direct printer paths for all users or use [Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- Active Directory printer discovery won't work. You can provide direct printer paths for all users or use [Universal Print](https://aka.ms/UPDocs).

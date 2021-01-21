@@ -83,6 +83,9 @@ Productivity Score is only available in the Microsoft 365 Admin Center and can o
 - Global Reader 
 - Reports Reader 
 
+> [!NOTE]
+> Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Productivity Score.
+
 Please note that the information is only intended to be used for furthering digital transformation using Microsoft 365, and should therefore be shared with discretion. 
 
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization’s IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft .
@@ -136,6 +139,10 @@ This report helps organizations understand:
 [Learn more about the Business continuity report](https://aka.ms/bcrps)
 
 [Learn more about Microsoft Graph](https://docs.microsoft.com/graph/)
+
+> [!NOTE]
+> Users also have the option to get productivity insights from the [MyAnalytics dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+
 
 ## We want to hear from you
 

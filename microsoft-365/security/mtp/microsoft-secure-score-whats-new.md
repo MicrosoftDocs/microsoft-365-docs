@@ -30,13 +30,30 @@ To make Microsoft Secure Score a better representative of your security posture,
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
+## January 2021
+
+### Added our first security recommendation for Microsoft Teams
+
+Microsoft Teams customers will see "Restrict Anonymous user joins during meetings" as a new improvement action in Secure Score.
+
+## December 2020
+
+### Added six accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+
+- Set 'Minimum password length' to '14 or more characters'
+- Set 'Enforce password history' to '24 or more password(s)'
+- Set 'Maximum password age' to '60 or fewer days, but not 0'
+- Set 'Minimum password age' to '1 or more day(s)'
+- Disable the built-in Administrator account
+- Disable the built-in Guest account
+
 ## November 2020
 
 ### Removed the ability to create ServiceNow tickets through Secure Score 
 
 The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
-### Added 3 services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+### Added three services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
 - Fix unquoted service path for Windows services
 - Change service executable path to a common protected location
