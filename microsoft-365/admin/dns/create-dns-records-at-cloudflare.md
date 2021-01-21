@@ -164,7 +164,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
     
   
-5. Select the **DNS Traffic** icon (orange cloud) to bypass the Cloudflare servers.
+5. Select the **DNS Traffic** icon (change orange cloud to grey) to bypass the Cloudflare servers.
   
 6. Select **Save**.
   
