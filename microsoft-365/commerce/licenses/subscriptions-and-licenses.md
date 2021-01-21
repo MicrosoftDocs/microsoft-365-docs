@@ -14,7 +14,7 @@ ms.collection:
 - Adm_TOC
 - commerce
 ms.custom: 
-- okr_SMB
+- okr_smb
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid:
