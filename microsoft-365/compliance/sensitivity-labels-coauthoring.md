@@ -126,8 +126,9 @@ During the preview, you must first use PowerShell before you can enable co-autho
 
 2. Run the [Set-PolicyConfigl](https://docs.microsoft.com/powershell/module/exchange/set-policyconfig) cmdlet to display the UI in the compliance center that lets you enable co-authoring for files with sensitivity labels:	
     
-    ```powershell	
+    ```powershell
     Set-PolicyConfig -EnableLabelCoauth $True
+    ```
     
     To confirm that you want this UI visible, press **Y**.
     
