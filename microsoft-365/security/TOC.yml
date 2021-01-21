@@ -337,9 +337,11 @@
                   href: ./office-365-security/auditing-reports-in-eop.md
             - name: Defender for Office 365
               href: ./office-365-security/office-365-atp.md
+            - name: Evaluate Defender for Office 365
+              href: ./office-365-security/office-365-evaluation.md
             - name: What's new in Defender for Office 365
               href: office-365-security/whats-new-in-office-365-atp.md
-            - name: Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams
+            - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
@@ -401,7 +403,7 @@
               href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: Secure by default
               href: ./office-365-security/secure-by-default.md
-            - name: Configure ATP anti-phishing policies
+            - name: Configure anti-phishing policies in Defender for Office 365
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: Configure anti-malware policies
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -437,7 +439,7 @@
               href: ./office-365-security/user-submission.md
             - name: User tags in Defender for Office 365
               href: ./office-365-security/user-tags.md
-            - name: Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams
+            - name: Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Use DKIM to validate outbound email
               href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -458,7 +460,7 @@
                   href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
                 - name: Send and receive S/MIME signed and encrypted email
                   href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
-                - name: Sync user certificates to Office 365 for S/MIME
+                - name: Sync user certificates to Microsoft 365 for S/MIME
                   href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
                 - name: Set up virtual certificate collection to validate S/MIME
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
@@ -484,6 +486,8 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Attack Simulator in Defender for Office 365
               href: ./office-365-security/attack-simulator.md
+            - name: Get started using Attack simulation training
+              href: ./office-365-security/attack-simulation-training-get-started.md
             - name: Simulate a phishing attack with Attack simulation training
               href: ./office-365-security/attack-simulation-training.md
             - name: Create a custom payload for Attack simulation training
@@ -524,6 +528,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Enable the Report Message add-in
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: Enable the Report Phishing add-in
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: Install and use the Junk Email Reporting add-in
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: Mail flow rules (transport rules) in standalone EOP

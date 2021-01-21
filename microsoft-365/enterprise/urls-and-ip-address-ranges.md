@@ -57,7 +57,7 @@ Data columns shown are:
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->For recommendations on Yammer IP addresses and URLs, see [this blog post](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
+>For recommendations on Yammer IP addresses and URLs, see [Using hard-coded IP addresses for Yammer is not recommended](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592) on the Yammer blog.
 >
 
 ## Related Topics
@@ -66,7 +66,7 @@ Data columns shown are:
 
 [General Microsoft Stream endpoints](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Monitor Microsoft 365 connectivity](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[Monitor Microsoft 365 connectivity](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
 
 [Root CA and the Intermediate CA bundle on the third-party application system](../compliance/encryption-office-365-certificate-chains.md)
   
@@ -83,3 +83,5 @@ Data columns shown are:
 [Microsoft Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)

@@ -12220,7 +12220,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - National Health Index Id
 - National Health Index #
 
-## New Zealand social wlefare number
+## New Zealand social welfare number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
