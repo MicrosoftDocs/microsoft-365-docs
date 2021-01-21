@@ -20,8 +20,8 @@ Microsoft Managed Desktop provides several reports and dashboards that IT admins
 The Microsoft Endpoint Manager console brings together reporting from several products into a single location to help you monitor and investigate issues with your Azure AD organization ("tenant") configuration and devices. Microsoft Managed desktop has a section under **Reports** in the main menu where you can find reports specific to Microsoft Managed Desktop's management of the devices you’ve registered.
 
 These reports include:
-- Managed devices > Feature updates - This view shows the overall status of feature updates across your Microsoft Managed Desktop devices
-- Managed devices > Office updates - This view shows the overall status of Office updates across your Microsoft Managed Desktop devices
+- **Managed devices** > **Feature updates**: This view shows the overall status of feature updates across your Microsoft Managed Desktop devices.
+- **Managed devices** > **Office updates**: This view shows the overall status of Office updates across your Microsoft Managed Desktop devices.
 
 Additionally, in several locations throughout Microsoft Endpoint Manager you can filter reports from other product groups to specifically include or exclude your devices that are managed by Microsoft Managed Desktop. These reports have integrated this filtering capability:
 
