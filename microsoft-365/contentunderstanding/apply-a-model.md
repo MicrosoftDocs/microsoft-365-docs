@@ -58,7 +58,7 @@ To apply your model to to a SharePoint document library:
 
     ![Information view](../media/content-understanding/info-du.png)</br> 
 
-You can the select **View active models** to see details about any models that are applied to the document library.
+    You can the select **View active models** to see details about any models that are applied to the document library.
 
 8. In the **Active models** pane, you can see the models that are applied to the document library. Select a model to see more details about it, such as a description of the model, who published the model, and if the model applies a retention label to the files it classifies.
 
@@ -82,6 +82,12 @@ While an applied model processes all files uploaded to the document library afte
 > You can copy individual files to a library and apply them to a model, but not folders.
 
 ### The Classification Date field
+
+When a SharePoint Syntex model is applied to a document library, a <b> Classification date </b> field is included in the library schema. By default this field is empty, but when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+
+The Classification date field is used by the [<b>When a file is classified by a content understanding model</b> trigger](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) to run a Power Automate flow after a Syntex content understanding model has finished processing a file and updated the "Classification date" field.
+
+The <b>When a file is classified by a content understanding model</b> trigger can then be used to start another workflow using any  extracted information from the file.
 
 
 
