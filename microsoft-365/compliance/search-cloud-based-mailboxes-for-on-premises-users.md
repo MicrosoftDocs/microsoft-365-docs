@@ -30,6 +30,8 @@ Here are the requirements and limitations for enabling cloud-based storage for o
 
 - The user whose primary mailbox is located in the on-premises organization must be assigned a Microsoft Teams license and a minimum of an Exchange Online Plan 1 license.
 
+- Have an exchange hybrid configuration in order there is no duplicate mailbox generated for the user which his mailbox is hosted on-premises.
+
 - Only Teams chat data associated with an on-premises user is stored in the cloud-based storage area. An on-premises user can't access this storage area in any way.
 
 - You have to submit a request to Microsoft Support to enable your organization to search for Teams chat data for on-premises users. See [Filing a request with Microsoft Support to enable this feature](#filing-a-request-with-microsoft-support-to-enable-this-feature) in this article.
