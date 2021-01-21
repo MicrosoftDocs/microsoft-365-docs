@@ -1,4 +1,6 @@
 - name: Microsoft 365 security
+  href: index.yml
+  expanded: true
   items:     
     - name: Office 365 security
       href: index.md
