@@ -117,6 +117,20 @@ Configure the proximity setting to have a range of 0 through 3.
 
    ![Proximity example](../media/content-understanding/proximity-example.png)</br>
 
+
+## Configure where phrases occur in the document
+
+You can use the <b>Where these phrases occur</b> advanced setting to help in isolating a specific location in the document that a phrase occurs. This is useful in situations where similar instances of a phrase might appear somewhere else in the document, and you want to make sure that the correct one is selected. Referring to our Medical Referral document example, the **Referring Doctor** is always mentioned in the first paragraph of the document. With the <b>Where these phrases occur</b> setting, you can configure your explanation to search for this label only in the beginning section of the document. 
+
+   ![Where these phrases occur setting](../media/content-understanding/phrase-location.png)</br>
+
+
+
+To aid in isolating the region of a document where an entity appears, especially if there are similar instances elsewhere in the document, this new feature allows you to reduce the view from the default “anywhere in document” to a specific region:
+
+
+
+
 ## Use explanation templates
 
 While you can manually add various pattern list values for your explanation, it can be easier to use the templates provided to you in the explanation library.
