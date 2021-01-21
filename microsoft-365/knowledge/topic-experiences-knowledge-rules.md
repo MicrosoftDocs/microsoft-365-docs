@@ -1,5 +1,5 @@
 ---
-title: "Manage topic visibility in Microsoft 365"
+title: "Manage topic visibility in Microsoft Viva Topics"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -10,17 +10,17 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to administer topic visibility in Microsoft 365."
+description: "Learn how to administer topic visibility in Microsoft Viva Topics."
 ---
 
-# Manage topic visibility in Microsoft 365
+# Manage topic visibility in Microsoft Viva Topics
 
 You can manage the set of users who can see topic highlights, topic cards, and the topic center in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
 
 ## To access topics management settings:
 
 1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
-2. On the **Services** tab, click **Knowledge network**.
+2. On the **Services** tab, click **Topic experiences**.
 
     ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
 
@@ -32,8 +32,8 @@ You can manage the set of users who can see topic highlights, topic cards, and t
 
 You can change the users who can see topics in your organization.
 
-1. On the **Topic visibility** tab, under **Who can see topics in the knowledge network**, select **Edit**.
-2. On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:
+1. On the **Topic visibility** tab, under **Who can see topics**, select **Edit**.
+2. On the **Who can see topics** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:
     - **Everyone in your organization**
     - **Only selected people or security groups**
     - **No one**
@@ -47,9 +47,9 @@ You can change the users who can see topics in your organization.
 
 ## See also
 
-[Manage topic discovery in Microsoft 365](topic-experiences-discovery.md)
+[Manage topic discovery in Microsoft Viva Topics](topic-experiences-discovery.md)
 
-[Manage topic permissions in Microsoft 365](topic-experiences-user-permissions.md)
+[Manage topic permissions in Microsoft Viva Topics](topic-experiences-user-permissions.md)
 
-[Change the name of the topic center in Microsoft 365](topic-experiences-administration.md)
+[Change the name of the topic center in Microsoft Viva Topics](topic-experiences-administration.md)
 

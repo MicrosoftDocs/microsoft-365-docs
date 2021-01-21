@@ -1,5 +1,5 @@
 ---
-title: "Topic experiences security and privacy"
+title: "Microsoft Viva Topics security and privacy"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -10,18 +10,18 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to plan for topic experiences security and privacy in Microsoft 365"
+description: "Learn how to plan for Microsoft Viva Topics security and privacy"
 ---
 
-# Topic experiences security and privacy
+# Microsoft Viva Topics security and privacy
 
-Topic experiences uses existing content security features in Microsoft 365, along with knowledge network controls, to control what AI-generated content is shown to users in your organization. It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and topic experiences admin settings that determine what a given user can see in topics.
+Topics uses existing content security features in Microsoft 365, along with administrative controls, to control what AI-generated content is shown to users in your organization. It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and Topics admin settings that determine what a given user can see in topics.
 
-Setting up the knowledge network does not modify any existing access controls on content in your organization. Users will only see what they already have access to.
+Setting up Topics does not modify any existing access controls on content in your organization. Users will only see what they already have access to.
 
-This article describes how topic experiences works from a security perspective and the options that knowledge administrators and knowledge managers have to control topic visibility. Read this article as part of your [planning for topic experiences](plan-topic-experiences.md).
+This article describes how Topics works from a security perspective and the options that knowledge administrators and knowledge managers have to control topic visibility. Read this article as part of your [planning for Topics](plan-topic-experiences.md).
 
-You should be familiar with [Topic experiences](topic-experiences-overview.md), the [topic center](topic-center-overview.md), and how to [work with topics in the topic center](manage-topics.md) before you read this article.
+You should be familiar with [what Topics is](topic-experiences-overview.md), the [topic center](topic-center-overview.md), and how to [work with topics in the topic center](manage-topics.md) before you read this article.
 
 ## What users can see in topics
 
@@ -56,7 +56,7 @@ The following table describes what users - topic viewers, contributors, and know
 
 ## Best practices
 
-Topic experiences presents information to users based on their existing permissions to content. Microsoft 365 provides a variety of ways to ensure that sensitive content is restricted to appropriate users. Beyond standard team or site permissions, you can use [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) or [data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to restrict access to content and [access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) to periodically review user access to sensitive information.
+Topics presents information to users based on their existing permissions to content. Microsoft 365 provides a variety of ways to ensure that sensitive content is restricted to appropriate users. Beyond standard team or site permissions, you can use [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) or [data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to restrict access to content and [access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) to periodically review user access to sensitive information.
 
 We recommend that you use these tools to ensure that your content permissions are set appropriately inside your organization. Topic experiences can then provide useful and appropriate information to your users.
 

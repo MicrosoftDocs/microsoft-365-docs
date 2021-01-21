@@ -1,5 +1,5 @@
 ---
-title: "Manage topic discovery in Microsoft 365"
+title: "Manage topic discovery in Microsoft Viva Topics"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -10,17 +10,17 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to administer topic discovery in Microsoft 365."
+description: "Learn how to administer topic discovery in Microsoft Viva Topics."
 ---
 
-# Manage topic discovery in Microsoft 365
+# Manage topic discovery in Microsoft Viva Topics
 
 You can manage topic discovery settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
 
 ## To access topics management settings:
 
 1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
-2. On the **Services** tab, click **Knowledge network**.
+2. On the **Services** tab, click **Topic experiences**.
 
     ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
 
