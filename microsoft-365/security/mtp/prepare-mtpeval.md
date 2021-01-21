@@ -4,7 +4,7 @@ description: Prepare stakeholder sign-off, timelines, environment considerations
 keywords: MTP trial prep, MTP pilot prep, prep for running an MTP pilot project, run a pilot MTP project, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
