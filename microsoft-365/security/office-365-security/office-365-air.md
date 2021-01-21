@@ -91,7 +91,7 @@ AIR capabilities are included in [Microsoft Defender for Office 365](office-365-
 
 5. [Safe Links and Safe Attachments](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365).
 
-6. [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](protect-against-threats.md#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on).
+6. [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on).
 
 7. [Zero-hour auto purge for email](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop).
 
