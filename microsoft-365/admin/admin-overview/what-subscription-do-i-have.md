@@ -15,7 +15,7 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom: 
-- okr_SMB
+- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - MET150

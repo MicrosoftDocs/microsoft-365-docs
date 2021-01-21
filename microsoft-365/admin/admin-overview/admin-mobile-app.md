@@ -17,6 +17,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150

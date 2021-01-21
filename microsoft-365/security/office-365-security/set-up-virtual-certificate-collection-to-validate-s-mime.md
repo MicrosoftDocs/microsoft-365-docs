@@ -1,20 +1,22 @@
 ---
 title: Set up virtual certificate collection - Exchange Online
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
-description: "Admins can learn how to create a virtual certificate collection that will be used to validate S/MIME certificates in Exchange Online."
+description: Admins can learn how to create a virtual certificate collection that will be used to validate S/MIME certificates in Exchange Online.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Set up virtual certificate collection in Exchange Online to validate S/MIME
