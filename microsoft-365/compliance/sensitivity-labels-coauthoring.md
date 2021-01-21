@@ -132,7 +132,7 @@ Use the [Set-PolicyConfigl](https://docs.microsoft.com/powershell/module/exchang
 
     ```powershell	
     Set-PolicyConfig -EnableLabelCoauth $True
-   
+    
     Read the warning, and to confirm that you're using a test tenant and have read and understood the prerequisites, consequences, and limitations , press **Y**. 
 
 
