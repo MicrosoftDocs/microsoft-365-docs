@@ -20,12 +20,10 @@ hideEdit: true
 
 # Microsoft Report Message and Report Phishing Add-In license terms
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 ## Microsoft software license terms: Microsoft Report Message and Report Phishing Add-in
 
 > [!IMPORTANT]
-> If you live in or are a business with a principal place of business based in the United States, please read Section 7, *[Binding arbitration and class action waiver](#section-7-binding-arbitration)*. It describes how disputes are resolved.
+> If you live in or are a business with a principal place of business based in the United States, please read Section 7, *Binding arbitration and class action waiver*. It describes how disputes are resolved.
 
 > [!NOTE]
 > *In English:* As this software is distributed in Canada, some of the clauses in this agreement (specifically in Sections 10, 11, and 12) are provided in French.
@@ -40,7 +38,7 @@ If you comply with these license terms, you have the rights below. By using the 
 
     1. **General.** You may install and use any number of copies of the software.
     1. **Third Party Software.** The software may include third party applications that Microsoft, not the third party, licenses to you under this agreement. Any included notices for third party applications are for your information only.
-    1. **Microsoft Services Agreement.** Some features of the software provide access to, or rely on, online services. The use of those services (but not the software) is governed by the separate terms and privacy policies in the Microsoft Services Agreement at [http://go.microsoft.com/fwlink/?linkid=398923](http://go.microsoft.com/fwlink/?linkid=398923). Please read them. The services may not be available in all regions.
+    1. **Microsoft Services Agreement.** Some features of the software provide access to, or rely on, online services. The use of those services (but not the software) is governed by the separate terms and privacy policies in the Microsoft Services Agreement at [https://go.microsoft.com/fwlink/?linkid=398923](https://go.microsoft.com/fwlink/?linkid=398923). Please read them. The services may not be available in all regions.
 
 2. **DATA COLLECTION.** The software may collect information about you and your use of the software and send that to Microsoft. Microsoft may use this information to provide services and improve Microsoft’s products and services. Your opt-out rights, if any, are described in the product documentation. Some features in the software may enable collection of data from users of your applications that access or use the software. 
 
@@ -54,13 +52,13 @@ If you comply with these license terms, you have the rights below. By using the 
     1. use the software in any way that is against the law or to create or propagate malware; or
     1. share, publish, distribute, or lend the software, provide the software as a stand-alone hosted solution for others to use, or transfer the software or this agreement to any third party.
 
-4. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit [http://aka.ms/exporting](http://aka.ms/exporting).
+4. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit [https://aka.ms/exporting](https://aka.ms/exporting).
 
 5. **SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 
 6. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.<a href="section-7-binding-arbitration"></a>
 
-7. **BINDING ARBITRATION AND CLASS ACTION WAIVER.** **This Section applies if you live in (or, if a business, your principal place of business is in) the United States.** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. If you and Microsoft can’t, you and Microsoft agree to **binding individual arbitration before the American Arbitration Association** under the Federal Arbitration Act (“FAA”), and **not to sue in court in front of a judge or jury.** Instead, a neutral arbitrator will decide. **Class action lawsuits, class-wide arbitrations, private attorney-general actions**, and any other proceeding where someone acts in a representative capacity **are not allowed**; nor is combining individual proceedings without the consent of all parties. The complete Arbitration Agreement contains more terms and is at [http://aka.ms/arb-agreement-1](http://aka.ms/arb-agreement-1). You and Microsoft agree to these terms.
+7. **BINDING ARBITRATION AND CLASS ACTION WAIVER.** **This Section applies if you live in (or, if a business, your principal place of business is in) the United States.** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. If you and Microsoft can’t, you and Microsoft agree to **binding individual arbitration before the American Arbitration Association** under the Federal Arbitration Act (“FAA”), and **not to sue in court in front of a judge or jury.** Instead, a neutral arbitrator will decide. **Class action lawsuits, class-wide arbitrations, private attorney-general actions**, and any other proceeding where someone acts in a representative capacity **are not allowed**; nor is combining individual proceedings without the consent of all parties. The complete Arbitration Agreement contains more terms and is at [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1). You and Microsoft agree to these terms.
 
 8. **ENTIRE AGREEMENT.** This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 
