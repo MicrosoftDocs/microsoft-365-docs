@@ -35,7 +35,7 @@ Microsoft Secure Score can be found at https://security.microsoft.com/securescor
 
 ### Added our first security recommendation for Microsoft Teams
 
-Microsoft Teams customers will see "Restrict Anonymous user joins during meetings" as a new improvement action in Secure Score.
+Microsoft Teams customers will see "Restrict anonymous users from joining meetings" as a new improvement action in Secure Score.
 
 ## December 2020
 
