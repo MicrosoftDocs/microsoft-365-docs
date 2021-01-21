@@ -22,8 +22,8 @@ description: "Turn on a setting that enables co-authoring and AutoSave in deskto
 > [!NOTE]
 > This feature is in preview and subject to change. 
 >
-> We recommend that you try this feature in a test tenant rather than a production tenant because:
-> - Enabling this feature makes changes to labeling metadata and not all apps on all platforms currently support this change
+> Enable this feature in a test tenant rather than a production tenant because:
+> - This feature makes changes to labeling metadata and not all apps on all platforms currently support this change
 > - You cannot disable this feature yourself after it is enabled
 
 Enable the setting to support [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps so that when documents are labeled and encrypted by [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
@@ -116,7 +116,27 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 ## How to enable co-authoring for files with sensitivity labels
 
 > [!IMPORTANT]
-> Turning on this setting is a one-way action. We recommend that while the feature is in preview, test it only in a non-production environment and only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
+> Turning on this setting is a one-way action. While the feature is in preview, test it only in a non-production environment and only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
+
+During the preview, you must use PowerShell to enable co-authoring for files with sensitivity labels.
+
+### Use PowerShell to enable co-authoring for files with sensitivity labels
+
+Use the [Set-PolicyConfigl](https://docs.microsoft.com/powershell/module/exchange/set-policyconfig) cmdlet to enable co-authoring for files with sensitivity labels:	
+
+1. In a PowerShell session that you run as administrator, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+   
+    Sign in to your test tenant with a global administrator account.
+
+2. Run the following command:	
+
+    ```powershell	
+    Set-PolicyConfig -EnableLabelCoauth $True
+   
+    Read the warning, and to confirm that you're using a test tenant and have read and understood the prerequisites, consequences, and limitations , press **Y**. 
+
+
+### Use the compliance center to enable co-authoring for files with sensitivity labels
 
 1. Sign in the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your test tenant.
 
@@ -132,7 +152,7 @@ After you've enabled co-authoring for files with sensitivity labels for your ten
 
 ![Option that shows co-authoring turned on for sensitivity labels](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-As the screenshot shows, you can contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) and request that this setting is disabled. This request might take several days and you will need to prove that you are you global administrator for your tenant. Expect usual support charges to apply. 
+You can contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) and request that this setting is disabled. This request might take several days and you will need to prove that you are you global administrator for your tenant. Expect usual support charges to apply. 
 
 If a support engineer disables this setting for your tenant:
 
