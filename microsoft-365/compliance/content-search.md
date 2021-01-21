@@ -310,7 +310,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
   ![Same card content in the results of a Content search](../media/CardContentEdiscoverySearchResults.png)
 
   > [!NOTE]
-  > To display images from card content (such as the checkmarks in the previous screenshot) in search results at this time, you have to be signed into Teams (at https://teams.microsoft.com) in a different tab in the same browser session that you use to view the search results. Otherwise, generic image placeholders are displayed.
+  > To display images from card content in search results at this time (such as the checkmarks in the previous screenshot), you have to be signed into Teams (at https://teams.microsoft.com) in a different tab in the same browser session that you use to view the search results. Otherwise, image placeholders are displayed.
 
 - You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams.
   
