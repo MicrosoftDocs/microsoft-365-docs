@@ -118,31 +118,26 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 > [!IMPORTANT]
 > Turning on this setting is a one-way action. While the feature is in preview, test it only in a non-production environment and only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
 
-During the preview, you must use PowerShell to enable co-authoring for files with sensitivity labels.
-
-### Use PowerShell to enable co-authoring for files with sensitivity labels
-
-Use the [Set-PolicyConfigl](https://docs.microsoft.com/powershell/module/exchange/set-policyconfig) cmdlet to enable co-authoring for files with sensitivity labels:	
+During the preview, you must first use PowerShell before you can enable co-authoring for files with sensitivity labels. This setting in the Microsoft 365 compliance center isn't visible by default.
 
 1. In a PowerShell session that you run as administrator, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
    
     Sign in to your test tenant with a global administrator account.
 
-2. Run the following command:	
+2. Run the [Set-PolicyConfigl](https://docs.microsoft.com/powershell/module/exchange/set-policyconfig) cmdlet to display the UI in the compliance center that lets you enable co-authoring for files with sensitivity labels:	
 
     ```powershell	
     Set-PolicyConfig -EnableLabelCoauth $True
     
-    Read the warning, and to confirm that you're using a test tenant and have read and understood the prerequisites, consequences, and limitations , press **Y**. 
+    To confirm that you want this UI visible, press **Y**.
+    
+    If you change your mind about seeing the UI to enable co-authoring, you can hide it again by running the same cmdlet with the **false** value: `Set-PolicyConfig -EnableLabelCoauth $False`
 
+3. Sign in the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your test tenant.
 
-### Use the compliance center to enable co-authoring for files with sensitivity labels
+4. Select **Settings** > **Co-authoring for files with sensitivity labels**.
 
-1. Sign in the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your test tenant.
-
-2. Select **Settings** > **Co-authoring for files with sensitivity labels**.
-
-3. After you have read the summary description, prerequisites, what to expect, and the warning that you can't turn it off,  select **Turn on co-authoring for files with sensitivity labels**, and then **Apply**:
+5. After you have read the summary description, prerequisites, what to expect, and the warning that you can't turn it off,  select **Turn on co-authoring for files with sensitivity labels**, and then **Apply**:
     
     ![Option to turn on co-authoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
@@ -152,7 +147,7 @@ After you've enabled co-authoring for files with sensitivity labels for your ten
 
 ![Option that shows co-authoring turned on for sensitivity labels](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-You can contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) and request that this setting is disabled. This request might take several days and you will need to prove that you are you global administrator for your tenant. Expect usual support charges to apply. 
+As you see from the screenshot when the UI is visible, you can contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) and request that this setting is disabled. This request might take several days and you will need to prove that you are you global administrator for your tenant. Expect usual support charges to apply. 
 
 If a support engineer disables this setting for your tenant:
 
