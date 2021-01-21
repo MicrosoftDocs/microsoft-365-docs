@@ -64,15 +64,10 @@ Discovery data is available in a local report in csv format which is stored unde
 
 If you want to enforce DLP rules on the scanned files, enforcement must be enabled on both the content scan job in AIP and at the policy level in DLP.
 
-#### Configure AIP scanner to enforce actions 
-
-1. Connect to [Azure Information Protection extension in the Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade).
-2. Select the **Enforce** option in the the content scan job.
-3. You can also set this setting per repository. Some of the repositories in the same content scan job can be set to enforce policy while others will only match and report.
 
 #### Configure DLP to enforce policy actions
 
-1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) and select the DLP policy that is scoped to the on-premises location repositories you have configured in AIP. 
+1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) and select the DLP policy that is targeted to the on-premises location repositories you have configured in AIP. 
 1. Edit the policy.
 1. On the **Test or turn on the policy** page, select **Yes, turn it on right away**. 
 
