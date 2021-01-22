@@ -77,6 +77,7 @@ Currently there are recommendations for the following products:
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
 - Cloud App Security
+- Microsoft Teams
 
 Recommendations for other security products are coming soon. The recommendations won't cover all the attack surfaces associated with each product, but they're a good baseline. You can also mark the improvement actions as covered by a third party or alternate mitigation.
 
