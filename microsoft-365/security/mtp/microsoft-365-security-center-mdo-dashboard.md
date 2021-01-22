@@ -18,7 +18,7 @@ ms.collection:
 description: "Describes the Microsoft 365 Security center dashboard for Email & Collaboration"
 ---
 
-# [VERIFY IF DEPRECATED] The Microsoft 365 Security center dashboard for Email & Collaboration
+# The Microsoft 365 Security center dashboard for Email & Collaboration
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)

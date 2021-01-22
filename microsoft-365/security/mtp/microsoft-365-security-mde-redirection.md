@@ -1,7 +1,7 @@
 ---
-title: 
-description: 
-keywords: 
+title: Redirecting accounts from Microsoft Defender for Endpoint to the new Microsoft 365 security center
+description: How to redirect accounts and sessions from the Defender for Endpoint to the new Microsoft 365 security center.
+keywords: Microsoft 365 security center, Getting started with the Microsoft 365 security center, security center redirection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,7 +21,7 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ---
-# Redirecting accounts from Microsoft Defender for Endpoint to the new Microsoft 365 security center portal
+# Redirecting accounts from Microsoft Defender for Endpoint to the new Microsoft 365 security center
 
 **Applies to:**
 
