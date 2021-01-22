@@ -139,7 +139,7 @@ In the viewer, you can manually adjust the select box to include the location wh
 - Custom range:  The document is searched in a specified range within the it for the phrase location.</br> 
    ![End of file](../media/content-understanding/custom-file.png)</br>
 In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a <b>Start</b> and an <b>End</b> position. These values represent the number of tokens from the begging of the document. While you can manually enter in these values, it is easier to manually adjust the select box in the viewer.</br> 
-   ![End of file](../media/content-understanding/end-box.png)</br>
+   
 
 
 ## Use explanation templates
