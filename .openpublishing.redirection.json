@@ -2624,6 +2624,31 @@
       "source_path": "microsoft-365/solutions/productivity-solutions.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitoring-and-reporting.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitor-and-report-identities.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitor-data.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitor-devices.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitor-apps.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
     }
   ]
 }
