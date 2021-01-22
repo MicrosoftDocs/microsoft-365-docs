@@ -216,4 +216,8 @@ This is a client-side issue and in order to remediate it, please attempt the fol
 
 5. If the previous steps did not work, disable zipping and de-duplication.
 
+## See Also
+
+- [Tips to avoid content location errors](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
+
 6. If this works then the issue is due to a local virus scanner or a disk issue.
