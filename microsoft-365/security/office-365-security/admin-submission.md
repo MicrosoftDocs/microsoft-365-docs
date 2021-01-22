@@ -29,7 +29,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, admins can use
 
 When you submit an email, you will get:
 1) **Email authentication check**: Details on whether email authentication passed or failed when it was delivered.
-2) Policy hits: information about any policies that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts
+2) **Policy hits**: Information about any policies that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts.
 3) Payload reputation/detonation: examination of any URLs and attachments in the message
 4) Grader analysis: review done by human graders in order to confirm if messages are malicious or not
 
