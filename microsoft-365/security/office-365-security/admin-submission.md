@@ -34,7 +34,7 @@ When you submit an email, you will get:
 4) **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
 
 > [!IMPORTANT]
-> Payload reputation/detonation and grader analysis is not done in all tenants. Information is blocked from going outside of the tenancy when  data is not supposed to leave the tenant boundary for compliance purposes.
+> Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside of the tenancy when data is not supposed to leave the tenant boundary for compliance purposes.
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
