@@ -124,6 +124,8 @@ When you create an explanation, by default the entire document is searched for t
 
    ![Where these phrases occur setting](../media/content-understanding/phrase-location.png)</br>
 
+You can choose the following options for this setting:
+
 - Anywhere in the file: The entire document is searched for the phrase.
 - Beginning of the file:  The document is searched from the beginning to the phrase location.</br> 
    ![Beginning of file](../media/content-understanding/beginning-of-file.png)</br>
