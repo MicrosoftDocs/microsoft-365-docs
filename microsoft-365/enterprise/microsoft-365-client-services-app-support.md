@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 client and services support"
+title: "Microsoft 365 client and services app support"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,10 +14,10 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: In this article, find details about Microsoft 365 client and services support.
+description: In this article, find details about Microsoft 365 client and services app support.
 ---
 
-# Microsoft 365 client and services support
+# Microsoft 365 client and services app support
 
 INTRODUCTION
 
