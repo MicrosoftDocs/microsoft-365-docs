@@ -19,7 +19,7 @@ Admins can use the Microsoft 365 admin center to set up [Microsoft SharePoint Sy
 
 Consider the following before you start:
 
-- In Which SharePoint sites will you enable form processing? All of them, some, or select sites?
+- In which SharePoint sites will you enable form processing? All of them, some, or select sites?
 - What will you name your default content center?
 
 You can change your settings after initial setup in the Microsoft 365 admin center.
