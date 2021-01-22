@@ -76,7 +76,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
-- Azure Information Protection unified labeling client: Minimum version of 2.10.xx with the documented minimum version of Microsoft 365 Apps for enterprise for Windows
+- Azure Information Protection unified labeling client: Minimum version of [2.10.xx](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history) with the following minimum version of Microsoft 365 Apps for enterprise for Windows
 - Microsoft 365 Apps for enterprise:
     - Windows: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
     - macOS: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
@@ -106,14 +106,15 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     These features remain unsupported and don't work for Office documents that are encrypted without using sensitivity labels. For example, by directly applying rights management templates or by using Information Rights Management (IRM) options from Office apps.
 
-- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 350 MB. For these files, use the Office desktop apps.
-
 - If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [additional requirements or limitations](https://docs.microsoft.com/azure/information-protection/known-issues#co-authoring-public-preview). 
 
 ## Known issues for this preview
 
 This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
 
+- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 350 MB. For these files, use the Office desktop apps.
+
+- Office apps for iOS and Android are not supported.
 
 ## How to enable co-authoring for files with sensitivity labels
 
@@ -129,12 +130,12 @@ During the preview, you must first use PowerShell before you can enable co-autho
 2. Run the [Set-PolicyConfigl](https://docs.microsoft.com/powershell/module/exchange/set-policyconfig) cmdlet to display the UI in the compliance center that lets you enable co-authoring for files with sensitivity labels:	
     
     ```powershell
-    Set-PolicyConfig -EnableLabelCoauth $True
+    Enable-MipCoauthConfiguration $True
     ```
     
     To confirm that you want this UI visible, press **Y**.
     
-    If you change your mind about seeing the UI to enable co-authoring, you can hide it again by running the same cmdlet with the **false** value: `Set-PolicyConfig -EnableLabelCoauth $False`
+    If you change your mind about seeing the UI to enable co-authoring, you can hide it again by running the same cmdlet with the **false** value: `Enable-MipCoauthConfiguration $False`
 
 3. Sign in the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your test tenant.
 
