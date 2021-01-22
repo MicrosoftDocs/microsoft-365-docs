@@ -464,6 +464,10 @@
           href: record-versioning.md
         - name: Resources for regulatory requirements
           href: retention-regulatory-requirements.md
+- name: Manage app protection and governance
+  items: 
+    - name: Protect and govern your apps
+      href: manage-app-protection-governance.md
 - name: Manage eDiscovery
   items:
     - name: Microsoft 365 eDiscovery solutions
