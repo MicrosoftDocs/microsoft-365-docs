@@ -1,24 +1,26 @@
 ---
 title: Find and release quarantined messages as a user
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Consumer/IW
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Priority
-search.appverid:
-- MET150
-- MEW150
+search.appverid: 
+  - MET150
+  - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Find and release quarantined messages as a user in EOP

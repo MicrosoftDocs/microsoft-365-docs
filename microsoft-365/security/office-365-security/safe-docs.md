@@ -4,17 +4,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: kshi
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security."
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Safe Documents in Microsoft 365 E5

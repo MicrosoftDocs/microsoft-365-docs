@@ -1,26 +1,28 @@
 ---
-title: "Quarantined email messages"
-f1.keywords:
-- NOCSH
+title: Quarantined email messages
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MED150
-- MET150
+search.appverid: 
+  - MOE150
+  - MED150
+  - MET150
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about quarantine in Exchange Online Protection (EOP) that holds potentially dangerous or unwanted messages."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about quarantine in Exchange Online Protection (EOP) that holds potentially dangerous or unwanted messages.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Quarantined email messages in EOP
