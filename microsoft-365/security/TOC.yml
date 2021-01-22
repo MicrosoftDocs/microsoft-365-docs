@@ -71,7 +71,7 @@
                   href: mtp/prepare-mtpeval.md
                 - name: Setup
                   href: mtp/setup-mtpeval.md
-                - name: Configure and onboard
+                - name: Configure Microsoft 365 Defender pillars and onboard
                   href: mtp/config-mtpeval.md
                 - name: Generate a test alert
                   href: mtp/generate-test-alert.md                       
