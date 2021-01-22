@@ -51,6 +51,7 @@ This configuration of Microsoft 365 Business Premium includes simple controls th
 - **Protect mobile devices**: Protect data on mobile devices (mobile app protection policy).
 - **Guard against malicious content**: Prevent access to malicious content by scanning email attachments (Defender for Office 365).
 - **Protect passwords**: Set passwords to never expire which is more secure and helps prevent work stoppages (password policy).
+- **AccountGuard Program Access**: Microsoft AccountGuard is a security service offered at no additional cost to customers in the political space. The service is designed to inform and help these highly targeted customers protect themselves from cybersecurity threats across their organizational and personal Microsoft email accounts. View more information at [Microsoft AccountGuard](https://www.microsoftaccountguard.com/).
 
 ## What does it cost, who needs it, and what is the commitment?
 
