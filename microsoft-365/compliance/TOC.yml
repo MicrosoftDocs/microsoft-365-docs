@@ -278,6 +278,8 @@
           href: view-the-dlp-reports.md
         - name: Form a query to find sensitive data stored on sites
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+        - name: Migrate Exchange Online DLP policies to Compliance center DLP (preview)
+          href: dlp-migrate-exo-policy-to-unified-dlp.md
         - name: How DLP works between the Security & Compliance Center and Exchange admin center
           href: how-dlp-works-between-admin-centers.md
         - name: Use sensitivity labels as a condition in DLP policies (preview)
@@ -286,6 +288,7 @@
           href: dlp-use-policies-non-microsoft-cloud-apps.md
         - name: DLP policy conditions and exceptions (preview)
           href: dlp-conditions-and-exceptions.md
+        
 - name: Manage information governance
   items: 
     - name: Govern your data
