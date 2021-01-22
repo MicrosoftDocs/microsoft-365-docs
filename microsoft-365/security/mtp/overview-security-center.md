@@ -2,21 +2,22 @@
 title: Overview - Microsoft 365 security center
 description: Describes monitoring and managing security across your Microsoft identities, data, devices, and apps with Microsoft 365 security.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
+ms.technology: m365d
 ---
 
 # Overview of the Microsoft 365 security center

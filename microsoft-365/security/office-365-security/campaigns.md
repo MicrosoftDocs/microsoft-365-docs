@@ -1,23 +1,25 @@
 ---
-title: "Campaign Views in Microsoft Defender for Office 365 Plan"
-f1.keywords:
-- NOCSH
+title: Campaign Views in Microsoft Defender for Office 365 Plan
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: mcostea
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Learn about Campaign Views in Microsoft Defender for Office 365."
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Learn about Campaign Views in Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Campaign Views in Microsoft Defender for Office 365

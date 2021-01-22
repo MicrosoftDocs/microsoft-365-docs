@@ -1,24 +1,26 @@
 ---
-title: "Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams"
-f1.keywords:
-- NOCSH
+title: Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: reference
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- SPO160
-- MOE150
-- MET150
+search.appverid: 
+  - SPO160
+  - MOE150
+  - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
 description: Learn about how SharePoint Online detects viruses in files that users upload and prevents users from downloading or syncing the files.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams

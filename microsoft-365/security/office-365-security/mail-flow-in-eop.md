@@ -1,19 +1,21 @@
 ---
-title: "Mail flow in EOP"
-f1.keywords:
-- NOCSH
+title: Mail flow in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
-ms.custom:
-- seo-marvel-apr2020
-description: "Admin can learn about the options for configuring mail flow and routing in Exchange Online Protection (EOP)."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admin can learn about the options for configuring mail flow and routing in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Mail flow in EOP

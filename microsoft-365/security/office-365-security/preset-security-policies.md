@@ -1,19 +1,21 @@
 ---
-title: "Preset security policies"
-f1.keywords:
-- NOCSH
+title: Preset security policies
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
-ms.service: O365-seccomp
+ms.date: 
+
 localization_priority: Normal
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365"
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
