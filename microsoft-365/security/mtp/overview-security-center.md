@@ -39,12 +39,24 @@ Visit the Microsoft 365 security center at [https://security.microsoft.com](http
 > [!NOTE]
 > You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center.
 
-
-## Let's take a closer look
+## Begin with the home page
 
 The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
 This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
+
+Loosely, the cards fall into these categories:
+
+- **Identities**- user accounts and credentials
+    - Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Data** - email and document contents
+    - Help track user activity that could lead to unauthorized data disclosure.
+- **Devices** - computers, mobile phones, and other devices
+    - Get up-to-date information on alerts, breach activity, and other threats on your devices
+- **Apps** - programs and attached online services
+    - These reports provide more insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+
+## Explore what the security center has to offer
 
 The Microsoft 365 security center includes:
 

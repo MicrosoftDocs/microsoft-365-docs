@@ -31,16 +31,18 @@ The Microsoft 365 security center provides a summary of protection and security 
 
 The security center includes a **Reports** section which features a host of cards covering a variety of areas. Security analysts and administrators can track the cards as part of their day-to-day operations. On drill-down, cards provide detailed reports and, in some cases, management options.
 
-## Customize views
-
-By default, cards are grouped into these categories:
+Loosely, the cards fall into these categories:
   
-* [Identities](monitor-and-report-identities.md) - user accounts and credentials
-* [Data](monitor-data.md) - email and document contents
-* [Devices](monitor-devices.md) - computers, mobile phones, and other devices
-* [Apps](monitor-apps.md) - programs and attached online services
+- **Identities**- user accounts and credentials
+    - Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Data** - email and document contents
+    - Help track user activity that could lead to unauthorized data disclosure.
+- **Devices** - computers, mobile phones, and other devices
+- **Apps** - programs and attached online services
+    - These reports provide more insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
 
-Switch to **Group by topic**, to rearrange the cards and group them into the following topics:
+
+Cards also contain topic such as:
 
 * **Risk** - cards that highlight entities, such as accounts and devices, that might be at risk. These cards also highlight possible sources of risk, such as new threat campaigns and privileged cloud apps  
 * **Detection trends** - cards that highlight new threat detections, anomalies, and policy violations
