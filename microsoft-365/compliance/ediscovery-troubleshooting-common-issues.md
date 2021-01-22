@@ -204,7 +204,7 @@ After a successful export, the completed download via the export tool shows zero
 
 ### Resolution
 
-This is a client side issue and in order to remediate please attempt the following steps:
+This is a client-side issue and in order to remediate it, please attempt the following steps:
 
 1. Try using another client/machine to download.
 
