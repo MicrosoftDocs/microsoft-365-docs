@@ -1,10 +1,10 @@
 ---
 title: Microsoft Defender for Office 365 in the Microsoft 365 security center
+description: Learn about changes from the Office 365 Security and Compliance center to the Microsoft 365 security center.
 keywords: Microsoft 365 security, Getting started with the Microsoft 365 security center, OATP, MDATP, MDO, MDE, single pane of glass, new security portal, new defender security portal
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,10 +15,11 @@ search.appverid:
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-m365-defender 
-description: Learn about changes from the Office 365 Security and Compliance center to the Microsoft 365 security center.
+ms.prod: m365-security
+ms.technology: m365d
 ---
 
-## Microsoft Defender for Office 365 in the Microsoft 365 security center
+# Microsoft Defender for Office 365 in the Microsoft 365 security center
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -86,12 +87,7 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries.
 
-<<<<<<< HEAD
-[The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.](media/m3d-nav1.png)
-
-=======
-:::image type="content" source="../../media/3. conportal.png" alt-text="The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.":::
->>>>>>> 328399c8ea3704a9d11e1bf2e747229be2ce3ccb
+![The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.](../../media/m3d-nav1.png)
 
 ### Endpoints
 

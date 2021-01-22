@@ -20,6 +20,7 @@ search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
 ---
+
 # Microsoft 365 security center overview
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -34,8 +35,8 @@ The new Microsoft 365 security center ([https://security.microsoft.com](https://
 The Microsoft 365 security center combines these centers into one:
 
 1. **Microsoft Defender for Office 365**
-1. **Microsoft Defender for Endpoint**
-1. **Microsoft 365 Defender**
+2. **Microsoft Defender for Endpoint**
+3. **Microsoft 365 Defender**
 
 If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft Defender Security Center, see:
 
@@ -113,8 +114,6 @@ The layout has been merged wherever centers overlap. Common controls and content
 
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
 
-:::image type="content" source="../../media/converged-reports-9.png" alt-text="report page that includes a General security report, and specific Endpoint and Email & Collaboration reports":::
-
 ## Office 365 Cloud App Security and other security integrations
 
 As admins and operations teams work, they will find other points where features from different security centers have merged. It's important to explore the new portal to build familiarity and highlight any issues that can be reported through giving feedback on the home page. You can also quickly access self-help, and Microsoft for help, if assistance is called for. Just click the question mark (?).
@@ -122,7 +121,6 @@ As admins and operations teams work, they will find other points where features 
  If you use **Office 365 Cloud App Security**, you can use its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**. <p> **Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams.
 
 ![Office 365 Cloud App Security page in the Microsoft 365 security center](../../media/converged-advanced-alerts-1.png)
-
 
 ### Related information
 
