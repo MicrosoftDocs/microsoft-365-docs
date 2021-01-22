@@ -39,7 +39,7 @@ Visit the Microsoft 365 security center at [https://security.microsoft.com](http
 > [!NOTE]
 > You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center.
 
-## Begin with the home page
+## At-a-glance view of your Microsoft 365 environment
 
 The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
