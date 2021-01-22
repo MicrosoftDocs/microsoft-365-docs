@@ -49,10 +49,10 @@ The device must have this software preinstalled:
 
 Devices must have these capabilities:
 
-- Enabled for UEFI secure boot. 
-- Trusted Platform Module 2.0. 
-- Capable of virtualization-based security. 
-- Supports Hypervisor-protected code integrity. 
+- Enabled for UEFI secure boot 
+- Trusted Platform Module 2.0 
+- Capable of virtualization-based security 
+- Supports Hypervisor-protected code integrity 
 
 For more about these capabilities and the technologies related to them that the service uses, see [Microsoft Managed Desktop technologies](../intro/technologies.md).
 
