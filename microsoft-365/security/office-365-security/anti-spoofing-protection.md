@@ -36,9 +36,18 @@ When it comes to protecting its users, Microsoft takes the threat of phishing se
 
 The following anti-spoofing technologies are available in EOP:
 
-- **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Anti-phishing policies**: In EOP, anti-phishing policies contain the following spoofing information and settings:
+  - In the main anti-phishing policy page, the **Spoof intelligence insight** shows you the number of detected messages from spoofed senders over the last 7 days. If you click on the widget, you can review the spoofed senders and allow or block those senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+  - In the settings of every anti-phishing policy, you can turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to the Junk Email folder or quarantine). For more information, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Anti-phishing policies**: In EOP, anti-phishing policies allow you to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to the Junk Email folder or quarantine). Advanced anti-phishing policies that are available in Microsoft Defender for Office 365 also contain anti-impersonation settings (protected senders and domains), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
+  Anti-phishing policies that are available in Microsoft Defender for Office 365 also contain these additional related features and settings:
+
+  - In the main anti-phishing policy page, the **Impersonation insight** shows you the number of detected messages from **impersonated** senders over the last 7 days. Note that **impersonated** senders are different than **spoofed** senders. If you click on the widget, you can review the impersonated senders and allow or block those senders. For more information, see <>.
+  - In the settings of every anti-phishing policy, you can configure **anti-impersonation settings** (protected senders and domains), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+- **Spoof detections**: EOP organizations can use the **Spoof detections** report in the Reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+
+  Defender for Office 365 organizations can also use Real-time detections (Plan 1) or Threat Explorer (Plan 2) to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
 
 - **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by SPF, DKIM, and DMARC records in DNS. You can configure these records for your domains so destination email systems can check the validity of messages that claim to be from senders in your domains. For inbound messages, Microsoft 365 requires email authentication for sender domains. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
 
@@ -117,12 +126,6 @@ Microsoft differentiates between two different types of spoofed messages:
 For more information about the Category and composite authentication (compauth) values that are related to spoofing, see [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md).
 
 For more information about DMARC, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
-
-## Reports of how many messages were marked as spoofed
-
-EOP organizations can use the **Spoof detections** report in the Reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
-
-Microsoft Defender for Office 365 organization can use Threat Explorer in the Security & Compliance Center to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
 
 ## Problems with anti-spoofing protection
 
