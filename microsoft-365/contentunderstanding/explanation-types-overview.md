@@ -120,7 +120,7 @@ Configure the proximity setting to have a range of 0 through 3.
 
 ## Configure where phrases occur in the document
 
-When you create an explanation, by default the entire document is searched for the phrase you are trying to extract. However, you can use the <b>Where these phrases occur</b> advanced setting to help in isolating a specific location in the document that a phrase occurs. This is useful in situations where similar instances of a phrase might appear somewhere else in the document, and you want to make sure that the correct one is selected. Referring to our Medical Referral document example, the **Referring Doctor** is always mentioned in the first paragraph of the document. With the <b>Where these phrases occur</b> setting, you can configure your explanation to search for this label only in the beginning section of the document, or any other location in which it might occur.
+When you create an explanation, by default the entire document is searched for the phrase you are trying to extract. However, you can use the <b>Where these phrases occur</b> advanced setting to help in isolating a specific location in the document that a phrase occurs. This is useful in situations where similar instances of a phrase might appear somewhere else in the document, and you want to make sure that the correct one is selected. Referring to our Medical Referral document example, the **Referring Doctor** is always mentioned in the first paragraph of the document. With the <b>Where these phrases occur</b> setting, in this example you can configure your explanation to search for this label only in the beginning section of the document, or any other location in which it might occur.
 
    ![Where these phrases occur setting](../media/content-understanding/phrase-location.png)</br>
 
@@ -129,7 +129,7 @@ You can choose the following options for this setting:
 - Anywhere in the file: The entire document is searched for the phrase.
 - Beginning of the file:  The document is searched from the beginning to the phrase location.</br> 
    ![Beginning of file](../media/content-understanding/beginning-of-file.png)</br>
-In the viewer, you can manually adjust the select box to include the location where the phase occurs. The <b>End position</b> value will update to show the number of tokens your selected area includes. Note that you can update the End position value as well to adjust the selected area.
+In the viewer, you can manually adjust the select box to include the location where the phase occurs. The <b>End position</b> value will update to show the number of tokens your selected area includes. Note that you can update the End position value as well to adjust the selected area.</br>
    ![Beginning of file](../media/content-understanding/beginning-box.png)</br>
 
 - End of the file:  The document is searched from the end to the phrase location.</br> 
