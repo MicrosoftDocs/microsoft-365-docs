@@ -1,25 +1,26 @@
 ---
 title: What's new in Microsoft Secure Score
-description:  Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 security center.
+description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 security center.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance  
+  - M365-security-compliance
 ms.topic: article
 search.appverid: 
-- MOE150
-- MET150
-ms.custom:
-- seo-marvel-apr2020
-- seo-marvel-jun2020
+  - MOE150
+  - MET150
+ms.custom: 
+  - seo-marvel-apr2020
+  - seo-marvel-jun2020
+ms.technology: m365d
 ---
 
 # What's new in Microsoft Secure Score
@@ -29,6 +30,12 @@ ms.custom:
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
+
+## January 2021
+
+### Added our first security recommendation for Microsoft Teams
+
+Microsoft Teams customers will see "Restrict anonymous users from joining meetings" as a new improvement action in Secure Score.
 
 ## December 2020
 

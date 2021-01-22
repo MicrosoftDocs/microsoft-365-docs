@@ -24,6 +24,8 @@
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Secure Windows 10 computers
           href: ../business/secure-win-10-pcs.md
+        - name: Download software and product keys
+          href: setup/download-software-licenses-csp.md
         - name: Install Office apps
           href: setup/install-applications.md
         - name: Set up windows devices
@@ -66,6 +68,8 @@
           href: whats-new-in-preview.md
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
+        - name: Manage multiple tenants
+          href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
         - name: About Office 365 operated by 21Vianet
@@ -359,12 +363,32 @@
               href: basic-mobility-security/overview.md
             - name: Compare Basic Mobility and Security and Intune
               href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
-            - name: Basic Mobility and Security FAQ
-              href: basic-mobility-security/frequently-asked-questions.md
             - name: Capabilities of Basic Mobility and Security
-              href: basic-mobility-security/capabilities.md
-            - name: Compare Basic Mobility and Security and Intune
-              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+              href: basic-mobility-security/capabilities.md  
+            - name: Set up Basic Mobility and Security
+              href: basic-mobility-security/set-up.md
+            - name: Create device security policies
+              href: basic-mobility-security/create-device-security-policies.md
+            - name: Create an APNs certificate for iOS devices
+              href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
+            - name: Manage device access settings
+              href: basic-mobility-security/manage-device-access-settings.md
+            - name: Get details about managed devices
+              href: basic-mobility-security/get-details-about-managed-devices.md
+            - name: Manage enrolled devices
+              href: basic-mobility-security/manage-enrolled-devices.md
+            - name: Enroll your mobile device
+              href: basic-mobility-security/enroll-your-mobile-device.md
+            - name: Privacy and security
+              href: basic-mobility-security/privacy-and-security.md
+            - name: Frequently asked questions
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: Wipe mobile devices
+              href: basic-mobility-security/wipe-mobile-device.md
+            - name: Turn off Basic Mobility and Security
+              href: basic-mobility-security/turn-off.md
+            - name: Troubleshoot
+              href: basic-mobility-security/troubleshoot.md
     - name: Work with customers
       href: work-with-customers/index.yml
       items: 

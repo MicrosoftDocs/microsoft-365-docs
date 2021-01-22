@@ -1,26 +1,28 @@
 ---
-title: "How automated investigation and response works in Microsoft Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: How automated investigation and response works in Microsoft Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
 ms.date: 11/05/2020
-description: "See how automated investigation and response capabilities work in Microsoft Defender for Office 365"
+description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
 ms.custom: 
-- air
-- seo-marvel-mar2020
+  - air
+  - seo-marvel-mar2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # How automated investigation and response works in Microsoft Defender for Office 365
@@ -39,7 +41,7 @@ This article describes how AIR works through several examples. When you're ready
 
 ## Example: A user-reported phish message launches an investigation playbook
 
-Suppose that a user in your organization receives an email that they think is a phishing attempt. The user, trained to report such messages, uses the [Report Message add-in](enable-the-report-message-add-in.md) to send it to Microsoft for analysis. The submission is also sent to your system and is visible in Explorer in the **Submissions** view (formerly referred to as the **User-reported** view). In addition, the user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
+Suppose that a user in your organization receives an email that they think is a phishing attempt. The user, trained to report such messages, uses the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) to send it to Microsoft for analysis. The submission is also sent to your system and is visible in Explorer in the **Submissions** view (formerly referred to as the **User-reported** view). In addition, the user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
 
 During the root investigation phase, various aspects of the email are assessed. These aspects include:
 

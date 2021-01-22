@@ -1,23 +1,25 @@
 ---
-title: "Isolated SharePoint Online team sites"
-f1.keywords:
-- NOCSH
+title: Isolated SharePoint Online team sites
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
-- Strat_O365_Enterprise
-ms.custom:
-- Ent_Solutions
-- seo-marvel-apr2020
+  - Ent_O365
+  - Strat_O365_Enterprise
+ms.custom: 
+  - Ent_Solutions
+  - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: Learn about isolated SharePoint Online team sites, including uses, requirements, and features they can be used with.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Isolated SharePoint Online team sites
@@ -27,9 +29,9 @@ description: Learn about isolated SharePoint Online team sites, including uses, 
 
  **Summary:** Learn about the uses for isolated SharePoint Online team sites.
 
-SharePoint Online team sites are an easy way to quickly create a space for collaboration of notes, documents, articles, a calendar, and other resources in Microsoft Office 365. SharePoint Online team sites are based on a Microsoft 365 group and have a simplified administration model to allow open collaboration with a private set of group members or the entire organization. A default SharePoint Online team site allows members of the Microsoft 365 group to invite other users and control permissions settings.
+SharePoint Online team sites are an easy way to quickly create a space for collaboration. Users can work together on notes, documents, articles, a calendar, and other resources in Microsoft Office 365. SharePoint Online team sites are based on a Microsoft 365 group and have a simplified administration model to allow open collaboration with a private set of group members or the entire organization. A default SharePoint Online team site allows members of the Microsoft 365 group to invite other users and control permissions settings.
 
-However, in some cases, you want to create a SharePoint Online team site for collaboration where the permissions of that site are more tightly controlled through group membership and SharePoint Online permission levels, which are only managed by SharePoint administrators. We call this an isolated site, which is isolated to the set of users that are either collaborating, viewing its contents, or administering the site. You might need an isolated site for the following:
+However, you'll sometimes need site access to be controlled by group memberships, and SharePoint Online permission levels managed by SharePoint administrators. We call this an isolated site, which is isolated to the set of users that are either collaborating, viewing its contents, or administering the site. You might need an isolated site for the following:
 
 - A secret project within your organization.
 
