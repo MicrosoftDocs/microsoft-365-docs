@@ -256,7 +256,7 @@
               items: 
                 - name: Manage access
                   href: mtp/mtp-permissions.md
-                - name: Custom roles in role-based access ./office-365-security/outbound-spam-controls.md
+                - name: Custom roles in role-based access 
                   href: mtp/custom-roles.md
                 - name: Set time zone
                   href: mtp/mtp-time-zone.md
