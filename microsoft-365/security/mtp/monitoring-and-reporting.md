@@ -27,24 +27,13 @@ ms.technology: m365d
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 >
 
-The Microsoft 365 security center provides a summary of protection and security statuses across your Microsoft 365 environment.
+The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
-The security center includes a **Reports** section which features a host of cards covering a variety of areas. Security analysts and administrators can track the cards as part of their day-to-day operations. On drill-down, cards provide detailed reports and, in some cases, management options.
+This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
 
 Loosely, the cards fall into these categories:
-  
-- **Identities**- user accounts and credentials
-    - Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-- **Data** - email and document contents
-    - Help track user activity that could lead to unauthorized data disclosure.
-- **Devices** - computers, mobile phones, and other devices
-- **Apps** - programs and attached online services
-    - These reports provide more insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
 
-
-Cards also contain topic such as:
-
-* **Risk** - cards that highlight entities, such as accounts and devices, that might be at risk. These cards also highlight possible sources of risk, such as new threat campaigns and privileged cloud apps  
-* **Detection trends** - cards that highlight new threat detections, anomalies, and policy violations
-* **Configuration and health** - cards that cover the configuration and deployment of security controls, including device onboarding states to management services
-* **Other** - all other cards not categorized under other topics
+- **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Data** - Help track user activity that could lead to unauthorized data disclosure.
+- **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
+- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)

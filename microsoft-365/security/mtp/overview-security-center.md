@@ -47,14 +47,10 @@ This at-a-glance information helps you keep up with the latest activities in you
 
 Loosely, the cards fall into these categories:
 
-- **Identities**- user accounts and credentials
-    - Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-- **Data** - email and document contents
-    - Help track user activity that could lead to unauthorized data disclosure.
-- **Devices** - computers, mobile phones, and other devices
-    - Get up-to-date information on alerts, breach activity, and other threats on your devices
-- **Apps** - programs and attached online services
-    - These reports provide more insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+- **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Data** - Help track user activity that could lead to unauthorized data disclosure.
+- **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
+- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
 
 ## Explore what the security center has to offer
 
