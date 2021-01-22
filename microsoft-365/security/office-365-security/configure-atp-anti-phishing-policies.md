@@ -1,19 +1,21 @@
 ---
-title: "Configure anti-phishing policies in Microsoft Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: Configure anti-phishing policies in Microsoft Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
-ms.service: O365-seccomp
+ms.date: 
+
 localization_priority: Normal
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Microsoft Defender for Office 365."
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure anti-phishing policies in Microsoft Defender for Office 365

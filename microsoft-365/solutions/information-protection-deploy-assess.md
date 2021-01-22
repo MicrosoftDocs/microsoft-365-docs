@@ -207,7 +207,7 @@ You can also customize an existing, built-in sensitive information type.
 See these articles for more information:
 
 - [Customize a built-in sensitive information type](../compliance/customize-a-built-in-sensitive-information-type.md)
-- [Custom sensitive information types](../compliance/custom-sensitive-info-types.md)
+- [Learn about sensitive information types](../compliance/sensitive-information-type-learn-about.md)
 - [Create a custom sensitive information type in the Security & Compliance Center](../compliance/create-a-custom-sensitive-information-type.md)
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Create custom sensitive information types with Exact Data Match based classification](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

@@ -1,22 +1,24 @@
 ---
 title: Permissions in the Microsoft 365 security and compliance centers
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date: 
 ms.audience: Admin
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Priority
 ms.collection: 
-- M365-security-compliance
+  - M365-security-compliance
 search.appverid: 
-- MOE150
-- MET150
-description: "By using the Microsoft 365 security center or Microsoft 365 compliance center, you can manage permissions centrally for all tasks related to security or compliance."
+  - MOE150
+  - MET150
+description: By using the Microsoft 365 security center or Microsoft 365 compliance center, you can manage permissions centrally for all tasks related to security or compliance.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Permissions in the Microsoft 365 compliance center and Microsoft 365 security center

@@ -1,26 +1,25 @@
 ---
 title: Threat Explorer and Real-time detections
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
-
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-office365
-
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
 description: Use Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
-
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Threat Explorer and Real-time detections
@@ -420,7 +419,7 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 ## Review email messages reported by users
 
-Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Report Message add-in for Outlook and Outlook on the web](enable-the-report-message-add-in.md). To see them, use the [**Email** > **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
+Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md). To see them, use the [**Email** > **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
 
 1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 

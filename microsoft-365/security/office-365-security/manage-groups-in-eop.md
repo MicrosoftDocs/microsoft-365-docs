@@ -1,19 +1,21 @@
 ---
-title: "Manage groups in EOP"
-f1.keywords:
-- NOCSH
+title: Manage groups in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins in standalone Exchange Online Protection (EOP) organizations can learn how to create, modify, and remove distribution groups and mail-enabled security groups in the Exchange admin center (EAC) and in standalone Exchange Online Protection (EOP) PowerShell."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins in standalone Exchange Online Protection (EOP) organizations can learn how to create, modify, and remove distribution groups and mail-enabled security groups in the Exchange admin center (EAC) and in standalone Exchange Online Protection (EOP) PowerShell.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Manage groups in EOP

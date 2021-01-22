@@ -1,23 +1,24 @@
 ---
 title: Admin submissions
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use the Submissions portal in the Security & Compliance Center to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use the Submissions portal in the Security & Compliance Center to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
@@ -185,7 +186,7 @@ You can click the **Column options** button near the bottom of the page to add o
 
 ## View user submissions to Microsoft
 
-If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User submissions** tab.
+If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User submissions** tab.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Submissions**.
 

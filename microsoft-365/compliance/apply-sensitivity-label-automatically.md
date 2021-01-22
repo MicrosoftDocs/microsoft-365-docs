@@ -205,7 +205,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
     - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
 
-- If you plan to use [custom sensitive information types](custom-sensitive-info-types.md) rather than the built-in sensitivity types: 
+- If you plan to use [custom sensitive information types](sensitive-information-type-learn-about.md) rather than the built-in sensitivity types: 
     - Custom sensitivity information types are evaluated for content that is added to SharePoint or OneDrive after the custom sensitivity information types are saved. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
