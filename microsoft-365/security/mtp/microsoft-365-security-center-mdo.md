@@ -23,12 +23,6 @@ description: Learn about changes from the Office 365 Security and Compliance cen
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-#### In this article
-- [What's changed](#whats-changed)
-- [Microsoft 365 security center Home page](#microsoft-365-security-center-home-page)
-- [New navigation](#new-navigation)
-- [An Advanced Hunting example for admins](#advanced-hunting-example-for-microsoft-defender-for-office-365)
-
 The new [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center.
 
 If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the new Microsoft 365 security center.
