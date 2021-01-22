@@ -18,7 +18,7 @@ ms.collection:
 description: Learn about changes from the Office 365 Security and Compliance center to the Microsoft 365 security center.
 ---
 
-# Microsoft Defender for Office 365 in the Microsoft 365 security center
+## Microsoft Defender for Office 365 in the Microsoft 365 security center
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -63,7 +63,11 @@ The new Home page of the new portal surfaces:
 - tweets from Microsoft’s security intelligence twitter feed
 - and more summary information
 
+<<<<<<< HEAD
 ![Welcome screen "Meet your improved security center"](media/m3d-welcome.png)
+=======
+:::image type="content" source="../../media/1. con.png" alt-text="When you arrive at https://security.microsoft.com, you'll see a welcome screen "Meet your improved security center" explaining that the center combines MDO and MDE in 1 place.":::
+>>>>>>> 328399c8ea3704a9d11e1bf2e747229be2ce3ccb
 
 The Home page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
@@ -86,8 +90,12 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries.
 
+<<<<<<< HEAD
 [The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.](media/m3d-nav1.png)
 
+=======
+:::image type="content" source="../../media/3. conportal.png" alt-text="The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.":::
+>>>>>>> 328399c8ea3704a9d11e1bf2e747229be2ce3ccb
 
 ### Endpoints
 
