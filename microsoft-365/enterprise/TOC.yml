@@ -115,8 +115,10 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-        - name: Client app support
+        - name: Client and services app support
           items: 
+            - name: Client and services app support
+              href: microsoft-365-client-services-support-overview.md
             - name: Certificate-based authentication
               href: microsoft-365-client-support-certificate-based-authentication.md
             - name: Conditional Access
