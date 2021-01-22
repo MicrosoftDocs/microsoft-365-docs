@@ -69,11 +69,11 @@ The new Home page of the new portal surfaces:
 - tweets from Microsoft’s security intelligence twitter feed
 - and more summary information
 
-:::image type="content" source="../../media/1. Con.png" alt-text="When you arrive at https://security.microsoft.com, you'll see a welcome screen "Meet your improved security center" explaining that the center combines MDO and MDE in 1 place.":::
+![Welcome screen "Meet your improved security center"](media/m3d-welcome.png)
 
 The Home page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
-:::image type="content" source="../../media/2. conportal.png" alt-text="The main body of the center showing the Home page and links to Intro, Next steps, and to Give feedback.":::
+![Welcome screen showing the Home page and links to Intro, Next steps, and to Give feedback.](media/m3d-welcome-security-center.png)
 
 - The links under **Next steps** will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
 - **Give feedback** allows you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
@@ -92,7 +92,8 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries.
 
-:::image type="content" source="../../media/3. ConPortal.png" alt-text="The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.":::
+[The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.](media/m3d-nav1.png)
+
 
 ### Endpoints
 
