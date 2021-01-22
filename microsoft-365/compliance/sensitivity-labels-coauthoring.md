@@ -76,7 +76,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
-    - Azure Information Protection unified labeling client: Minimum version of [2.10.xx](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history) with the following minimum version of Microsoft 365 Apps for enterprise for Windows
+    - Azure Information Protection unified labeling client: Minimum version of [2.10.xx](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
     - Microsoft 365 Apps for enterprise:
         - Windows: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
         - macOS: Preview: [Current Channel (Preview)](https://office.com/insider) and Preview: [Beta Channel](https://office.com/insider)
