@@ -19,7 +19,7 @@ description: In this article, find details about Microsoft 365 client and servic
 
 # Microsoft 365 client and services app support
 
-INTRODUCTION
+INTRODUCTION?
 
 ## Client support
 
@@ -27,7 +27,7 @@ INTRODUCTION
 
 [Certificate-based authentication (CBA)](microsoft-365-client-support-certificate-based-authentication.md) is the use of a digital certificate to identify a user, machine, or device before granting access to a resource, network, application, etc. In the case of user authentication, it is often deployed in coordination with traditional methods such as username and password.
 
-One differentiator of certificate-based authentication is that unlike some solutions that only work for users, such as biometrics and one time passwords (OTP), the same solution can be used for all endpoints – users, machine, devices and even the growing Internet of Things (IoT).
+One differentiator of certificate-based authentication is that unlike some solutions that only work for users, such as biometrics and one time passwords (OTP), the same solution can be used for all endpoints – users, machine, devices, and even the growing Internet of Things (IoT).
 
 ### Conditional access
 
@@ -43,16 +43,17 @@ Common signals that Conditional Access can take in to account when making a poli
 - Real-time and calculated risk detection
 - Microsoft Cloud App Security (MCAS)
 
-Common decisions
-•	Block access
-o	Most restrictive decision
-•	Grant access
-o	Least restrictive decision, can still require one or more of the following options:
-	Require multi-factor authentication
-	Require device to be marked as compliant
-	Require Hybrid Azure AD joined device
-	Require approved client app
-	Require app protection policy (preview)
+Common decisions:
+
+- Block access
+    - Most restrictive decision
+- Grant access
+    - Least restrictive decision, can still require one or more of the following options:
+        - Require multi-factor authentication
+        - Require device to be marked as compliant
+        - Require Hybrid Azure AD joined device
+        - Require approved client app
+        - Require app protection policy (preview)
 
 
 ### Mobile application management
@@ -89,11 +90,11 @@ Modern Authentication enables new scenarios for customers to authenticate agains
 - Multi-Factor Authentication (MFA) support for administrative interaction with the tenancy and services, and end-user interaction with applications and their data
 - Conditional Access
 - SAML-based third-party identity provider sign-in
-- Smartcard logon on PC
+- Smartcard log on on PC
 - Certificate-Based Authentication on mobile devices
 - No longer require the transmission of credentials over basic authentication.
 
-Evolved Security Token Service (evoSTS, aka eSTS) simplifies the architecture and partner story for AAD combining STS providers (OrgID, ACS) and multiple Principal and Key stores (Webstore(OrgID), SQL Azure(ACS), MSODS).
+Evolved Security Token Service (evoSTS, eSTS) simplifies the architecture and partner story for AAD combining STS providers (OrgID, ACS) and multiple Principal and Key stores (Webstore(OrgID), SQL Azure(ACS), MSODS).
 
 ### Azure Active Directory conditional access
 
