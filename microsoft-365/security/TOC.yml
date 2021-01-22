@@ -250,18 +250,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: Create & manage detection rules
                       href: mtp/custom-detection-rules.md
-            - name: Reports
-              items: 
-                - name: Monitor and view reports
-                  href: mtp/monitoring-and-reporting.md
-                - name: Identity monitoring and reporting
-                  href: mtp/monitor-and-report-identities.md
-                - name: Data monitoring and reporting
-                  href: mtp/monitor-data.md
-                - name: Device monitoring and reporting
-                  href: mtp/monitor-devices.md
-                - name: App monitoring and reporting
-                  href: mtp/monitor-apps.md
         - name: Reference
           items: 
             - name: Permissions & settings

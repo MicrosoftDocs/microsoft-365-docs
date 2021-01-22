@@ -56,7 +56,6 @@ The Microsoft 365 security center emphasizes *unity, clarity, and common goals* 
 - parity
 
 ### At-a-glance view of your Microsoft 365 environment
-
 The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
 This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
@@ -128,6 +127,10 @@ As admins and operations teams work, they will find other points where features 
 ### Related information
 
 [Watch 'Intro to unified portal'](https://msit.microsoftstream.com/video/2300a1ff-0400-b9eb-d203-f1eb3fc369fd?App=msteamsBot&refId=f:5540385164873375231&referrer=https:%2F%2Fstatics.teams.cdn.office.net%2F)
+=======
+## Explore what the security center has to offer
+
+The Microsoft 365 security center includes:
 
 [Give us your Microsoft 365 Defender feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci)
 
