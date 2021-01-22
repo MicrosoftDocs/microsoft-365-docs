@@ -69,7 +69,7 @@ The new Home page of the new portal surfaces:
 - tweets from Microsoft’s security intelligence twitter feed
 - and more summary information
 
-:::image type="content" source="../../media/1. Con.png" alt-text="When you arrive at https://security.microsoft.com, you'll see a welcome screen "Meet your improved security center" explaining that the center combines MDO and MDE in 1 place.":::
+:::image type="content" source="../../media/1. con.png" alt-text="When you arrive at https://security.microsoft.com, you'll see a welcome screen "Meet your improved security center" explaining that the center combines MDO and MDE in 1 place.":::
 
 The Home page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
@@ -92,7 +92,7 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries.
 
-:::image type="content" source="../../media/3. ConPortal.png" alt-text="The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.":::
+:::image type="content" source="../../media/3. conportal.png" alt-text="The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.":::
 
 ### Endpoints
 
