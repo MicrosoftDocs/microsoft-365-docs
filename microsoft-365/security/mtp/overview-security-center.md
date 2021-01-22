@@ -26,11 +26,12 @@ ms.technology: m365d
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 
-The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) integrates Microsoft 365 services and endpoints, so that devices, email, identities, and app security can be managed from a single location. This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
+The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com) integrates Microsoft 365 services and endpoints, so that devices, email, identities, and app security can be managed from a single location. This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
 
 The Microsoft 365 security center combines these centers into one:
 
@@ -42,7 +43,7 @@ If you need information about what's changed from the Office 365 Security & Comp
 
 - [Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 - [Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
+- [Microsoft 365 Defender](microsoft-threat-protection.md)
 
 > [!NOTE]
 > You can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 security center: https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
@@ -92,7 +93,7 @@ Selecting **Investigations** opens  a page that features a graphic of the analys
 
 The layout has been merged wherever centers overlap. Common controls and content either appear in the same place, or are condensed into one feed of data making it easier to find. For example, unified settings.
 
-**Unified settings**
+### Unified settings
 
 ![Settings page covers everything in Microsoft Defender for Endpoints and for Microsoft Defender for Office 365](../../media/converged-settings-4.png)
 
@@ -118,14 +119,12 @@ Reports are also unified in the Microsoft 365 security center. Admins can start 
 
 As admins and operations teams work, they will find other points where features from different security centers have merged. It's important to explore the new portal to build familiarity and highlight any issues that can be reported through giving feedback on the home page. You can also quickly access self-help, and Microsoft for help, if assistance is called for. Just click the question mark (?).
 
- If you use **Office 365 Cloud App Security**, you can use its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**. <p> **Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams.
+ If you use **Office 365 Cloud App Security**, you can use its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**.
+
+**Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams.
 
 ![Office 365 Cloud App Security page in the Microsoft 365 security center](../../media/converged-advanced-alerts-1.png)
 
-### Related information
-
-[Watch 'Intro to unified portal'](https://msit.microsoftstream.com/video/2300a1ff-0400-b9eb-d203-f1eb3fc369fd?App=msteamsBot&refId=f:5540385164873375231&referrer=https:%2F%2Fstatics.teams.cdn.office.net%2F)
-=======
 ## Explore what the security center has to offer
 
 The Microsoft 365 security center includes:

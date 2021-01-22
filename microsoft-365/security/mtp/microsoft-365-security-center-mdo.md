@@ -7,7 +7,6 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -35,12 +34,11 @@ If you are looking for compliance-related items, visit the [Microsoft 365 compli
 ## What's changed
 
 This table is a quick reference of Email & Collaboration areas where change has occurred between the **Security & Compliance center** and the **Microsoft 365 Security** portal. Click the links to read more about these areas.
-<p>
 
 |**Changed**  |**Unchanged**  |
 |---------|---------|
 |[Dashboard](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-365-security-center-dashboard)     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)       |
-|[Attack Simulator ](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights)   |  [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)       |
+|[Attack Simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights)   |  [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)       |
 |[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center)    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns)     |
 |     |    [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)     |
 |     |    [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)     |
@@ -112,15 +110,15 @@ Want to get started searching for email threats using advanced hunting? Try this
 
 The [Getting Started](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#getting-started) section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) has logical early configuration chunks that look like this:
 
-- Configure everything with 'anti' in the name.
-    - anti-malware
-    - anti-phishing
-    - anti-spam
-- Set up everything with 'safe' in the name.
-    - safe links
-    - safe attachments
-- Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
-- Protect with Zero-Hour auto purge
+1. Configure everything with 'anti' in the name.
+- anti-malware
+- anti-phishing
+- anti-spam
+2. Set up everything with 'safe' in the name.
+- safe links
+- safe attachments
+3. Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
+4. Protect with Zero-Hour auto purge
 
 Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats&preserve-view=true) to jump right in and get configuration going on Day 1.
 

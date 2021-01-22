@@ -21,7 +21,6 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 01/14/2021
-ms.prod: m365-security
 ms.technology: m365d
 ---
 
