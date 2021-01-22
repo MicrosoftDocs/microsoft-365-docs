@@ -135,7 +135,7 @@ During the preview, you must first use PowerShell before you can enable co-autho
     
     To confirm that you want this UI visible, press **Y**.
     
-    If you change your mind about seeing the UI to enable co-authoring, you can hide it again by running the same cmdlet with the **false** value: `Enable-MipCoauthConfiguration $False`
+    If you change your mind about seeing the UI to enable co-authoring, you can hide it again by running the same cmdlet with the **False** value: `Enable-MipCoauthConfiguration $False`
 
 3. Sign in the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your test tenant.
 
