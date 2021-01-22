@@ -63,15 +63,11 @@ The new Home page of the new portal surfaces:
 - tweets from Microsoft’s security intelligence twitter feed
 - and more summary information
 
-<<<<<<< HEAD
-![Welcome screen "Meet your improved security center"](media/m3d-welcome.png)
-=======
-:::image type="content" source="../../media/1. con.png" alt-text="When you arrive at https://security.microsoft.com, you'll see a welcome screen "Meet your improved security center" explaining that the center combines MDO and MDE in 1 place.":::
->>>>>>> 328399c8ea3704a9d11e1bf2e747229be2ce3ccb
+![Welcome screen "Meet your improved security center"](../../media/m3d-welcome.png)
 
 The Home page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
-![Welcome screen showing the Home page and links to Intro, Next steps, and to Give feedback.](media/m3d-welcome-security-center.png)
+![Welcome screen showing the Home page and links to Intro, Next steps, and to Give feedback.](../../media/m3d-welcome-security-center.png)
 
 - The links under **Next steps** will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
 - **Give feedback** allows you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
