@@ -96,16 +96,17 @@
       href: information-protection.md
     - name: Sensitive information types
       items: 
+        - name: Learn about sensitive information types
+          href: sensitive-information-type-learn-about.md
         - name: Sensitive information type entity definitions 
           href: sensitive-information-type-entity-definitions.md
         - name: What the DLP functions look for
           href: what-the-dlp-functions-look-for.md
         - name: Customize a built-in sensitive information type
           href: customize-a-built-in-sensitive-information-type.md
-        - name: Custom sensitive information types
-          href: custom-sensitive-info-types.md
         - name: Create custom sensitive information types with exact data match
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Get started with custom sensitive information types
         - name: Use the Exact Data Match Schema and Sensitive Information Type Wizard
           href: sit-edm-wizard.md
         - name: Modify exact data match schema to use configurable match
