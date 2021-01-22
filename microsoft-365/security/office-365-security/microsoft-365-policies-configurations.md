@@ -1,24 +1,24 @@
 ---
 title: Identity and device access configurations - Microsoft 365 for enterprise
-description:  Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations.
+description: Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 ms.date: 09/29/2020
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.reviewer: martincoetzer
 ms.custom: 
-- it-pro
-- goldenconfig
+  - it-pro
+  - goldenconfig
 ms.collection: 
-- M365-identity-device-management
-- M365-security-compliance
-- m365solution-identitydevice
-- m365solution-overview
-
+  - M365-identity-device-management
+  - M365-security-compliance
+  - m365solution-identitydevice
+  - m365solution-overview
+ms.technology: mdo
 ---
 # Identity and device access configurations
 
