@@ -3,7 +3,7 @@ title: Top scoring in industry tests - Microsoft 365 Defender
 ms.reviewer: 
 description: View the latest scores and analysis of Microsoft 365 Defender. It consistently achieves high scores in independent tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). View the latest scores and analysis.
 keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, security, malware, av, antivirus, scores, scoring, next generation protection, ranking, success
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: high
@@ -11,9 +11,10 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: m365d
 ---
 
 # Top scoring in industry tests

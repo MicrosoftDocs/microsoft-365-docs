@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types with Exact Data Match based classification
 
-[Custom sensitive information types](custom-sensitive-info-types.md) are used to help identify sensitive items so that you can help prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
+[Custom sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
 
 - patterns
 - keyword evidence such as *employee*, *badge*, or *ID*
@@ -643,7 +643,7 @@ EDM sensitive information types for following scenarios are currently in develop
 ## Related articles
 
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
-- [Custom sensitive information types](custom-sensitive-info-types.md)
+- [Learn about sensitive information types](sensitive-information-type-learn-about.md)
 - [Overview of DLP policies](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)

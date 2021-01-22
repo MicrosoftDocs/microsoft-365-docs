@@ -1,17 +1,19 @@
 ---
 title: Mail flow rules in EOP
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: "You can use mail flow rules (transport rules) to identify and take action on messages that flow through your organization."
+description: You can use mail flow rules (transport rules) to identify and take action on messages that flow through your organization.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Mail flow rules (transport rules) in standalone EOP
