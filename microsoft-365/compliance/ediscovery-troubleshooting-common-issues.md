@@ -198,10 +198,6 @@ When downloading search results using the eDiscovery Export Tool, it's possible 
 
 To resolve this issue, retry [downloading the search results](export-search-results.md#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
 
-## See Also
-
-- [Tips to avoid content location errors](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
-
 ## Error/issue: Downloaded Export shows no results
 
 After a successful export, the completed download via the export tool shows zero files in the results.
@@ -221,4 +217,3 @@ This is a client side issue and in order to remediate please attempt the followi
 5. If the previous setps do not work, disable zipping and de-duplication
 
 6. If this works then the issue is due to a local virus scanner or a disk issue
-
