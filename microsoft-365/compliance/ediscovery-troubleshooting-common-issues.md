@@ -198,7 +198,7 @@ When downloading search results using the eDiscovery Export Tool, it's possible 
 
 To resolve this issue, retry [downloading the search results](export-search-results.md#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
 
-## Error/issue: Downloaded Export shows no results
+## Error/issue: Downloaded export shows no results
 
 After a successful export, the completed download via the export tool shows zero files in the results.
 
