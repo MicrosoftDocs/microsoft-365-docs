@@ -206,14 +206,14 @@ After a successful export, the completed download via the export tool shows zero
 
 This is a client side issue and in order to remediate please attempt the following steps:
 
-1. Try using another client/machine to download
+1. Try using another client/machine to download.
 
-2. Make sure to download to local drive
+2. Make sure to download to a local drive.
 
-3. Make sure the virus scanner is not running
+3. Make sure the virus scanner is not running.
 
-4. Make sure that no other export is downloading to same folder or any parent folder
+4. Make sure that no other export is downloading to the same folder or any parent folder.
 
-5. If the previous setps do not work, disable zipping and de-duplication
+5. If the previous steps did not work, disable zipping and de-duplication.
 
-6. If this works then the issue is due to a local virus scanner or a disk issue
+6. If this works then the issue is due to a local virus scanner or a disk issue.
