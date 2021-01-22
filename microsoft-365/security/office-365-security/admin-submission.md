@@ -27,14 +27,15 @@ description: "Admins can learn how to use the Submissions portal in the Security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, admins can use the Submissions portal in the Security & Compliance Center to submit email messages, URLs, and attachments to Microsoft for scanning.
 
-When you submit an email, you will get:
-1) **Email authentication check**: Details on whether email authentication passed or failed when it was delivered.
-2) **Policy hits**: Information about any policies that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts.
-3) **Payload reputation/detonation**: Examination of any URLs and attachments in the message.
-4) **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
+When you submit an email message, you will get:
+
+1. **Email authentication check**: Details on whether email authentication passed or failed when it was delivered.
+2. **Policy hits**: Information about any policies that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts.
+3. **Payload reputation/detonation**: Examination of any URLs and attachments in the message.
+4. **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
 
 > [!IMPORTANT]
-> Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside of the tenancy when data is not supposed to leave the tenant boundary for compliance purposes.
+> Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes.
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
