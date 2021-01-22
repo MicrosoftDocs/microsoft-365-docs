@@ -26,7 +26,7 @@ You can change your settings after initial setup in the Microsoft 365 admin cent
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
-- The SharePoint sites that you want to enable form processing - all of them, some, or selected sites
+- The SharePoint sites in which you want to enable form processing - all of them, some, or selected sites.
 - Your content center.
 
 ## Requirements 
@@ -109,4 +109,3 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 [Overview of the form processing model](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
 [Step-by-Step: How to Build a Document Understanding Model (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
-
