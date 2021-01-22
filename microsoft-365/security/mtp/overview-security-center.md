@@ -76,7 +76,7 @@ Streamlining security centers creates a single pane for investigating any incide
 
 As an example, double-clicking on an incident name with **High** severity brings you to a page that demonstrates the advantage of converging centers.
 
-![multi-stage incident involving privilege escalation on multiple endpoints, showing see 16 impacted devices and 9 impacted users.](../../media/converged-incident-info-3.png)
+![Multi-stage incident involving privilege escalation on multiple endpoints, showing see 16 impacted devices and 9 impacted users.](../../media/converged-incident-info-3.png)
 
 > [!TIP]
 > The converged **Users** tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and MCAS, if you leverage it) and a range of sources such as on-premises Active Directory, Azure Active Directory, synced, local, and third-party users.
