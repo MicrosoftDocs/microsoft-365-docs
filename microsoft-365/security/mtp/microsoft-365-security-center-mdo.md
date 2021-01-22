@@ -73,7 +73,7 @@ The new Home page of the new portal surfaces:
 
 The Home page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
-:::image type="content" source="../../media/2. ConPortal.png" alt-text="The main body of the center showing the Home page and links to Intro, Next steps, and to Give feedback.":::
+:::image type="content" source="../../media/2. conportal.png" alt-text="The main body of the center showing the Home page and links to Intro, Next steps, and to Give feedback.":::
 
 - The links under **Next steps** will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
 - **Give feedback** allows you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.

@@ -101,7 +101,7 @@ The layout has been merged wherever centers overlap. Common controls and content
 
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
 
-:::image type="content" source="../../media/OLDconverged-reports-9.png" alt-text="report page that includes a General security report, and specific Endpoint and Email & Collaboration reports":::
+:::image type="content" source="../../media/converged-reports-9.png" alt-text="report page that includes a General security report, and specific Endpoint and Email & Collaboration reports":::
 
 ## Office 365 Cloud App Security and other security integrations
 
