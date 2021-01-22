@@ -1,24 +1,26 @@
 ---
-title: "Get started using Attack simulation training"
-f1.keywords:
-- NOCSH
+title: Get started using Attack simulation training
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations."
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-m365-defender
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Get started using Attack simulation training
