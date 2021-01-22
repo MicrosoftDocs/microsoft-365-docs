@@ -120,15 +120,24 @@ Configure the proximity setting to have a range of 0 through 3.
 
 ## Configure where phrases occur in the document
 
-You can use the <b>Where these phrases occur</b> advanced setting to help in isolating a specific location in the document that a phrase occurs. This is useful in situations where similar instances of a phrase might appear somewhere else in the document, and you want to make sure that the correct one is selected. Referring to our Medical Referral document example, the **Referring Doctor** is always mentioned in the first paragraph of the document. With the <b>Where these phrases occur</b> setting, you can configure your explanation to search for this label only in the beginning section of the document. 
+When you create an explanation, by default the entire document is searched for the phrase you are trying to extract. However, you can use the <b>Where these phrases occur</b> advanced setting to help in isolating a specific location in the document that a phrase occurs. This is useful in situations where similar instances of a phrase might appear somewhere else in the document, and you want to make sure that the correct one is selected. Referring to our Medical Referral document example, the **Referring Doctor** is always mentioned in the first paragraph of the document. With the <b>Where these phrases occur</b> setting, you can configure your explanation to search for this label only in the beginning section of the document, or any other location in which it might occur.
 
    ![Where these phrases occur setting](../media/content-understanding/phrase-location.png)</br>
 
+- Anywhere in the file: The entire document is searched for the phrase.
+- Beginning of the file:  The document is searched from the beginning to the phrase location.</br> 
+   ![Beginning of file](../media/content-understanding/beginning-of-file.png)</br>
+In the viewer, you can manually adjust the select box to include the location where the phase occurs. The <b>End position</b> value will update to show the number of tokens your selected area includes. Note that you can update the End position value as well to adjust the selected area.
+   ![Beginning of file](../media/content-understanding/beginning-box.png)</br>
 
-
-To aid in isolating the region of a document where an entity appears, especially if there are similar instances elsewhere in the document, this new feature allows you to reduce the view from the default “anywhere in document” to a specific region:
-
-
+- End of the file:  The document is searched from the end to the phrase location.</br> 
+   ![End of file](../media/content-understanding/end-of-file.png)</br>
+In the viewer, you can manually adjust the select box to include the location where the phase occurs. The <b>Starting position</b> value will update to show the number of tokens your selected area includes. Note that you can update the Starting position value as well to adjust the selected area.</br> 
+   ![End of file](../media/content-understanding/end-box.png)</br>
+- Custom range:  The document is searched in a specified range within the it for the phrase location.</br> 
+   ![End of file](../media/content-understanding/custom-file.png)</br>
+In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a <b>Start</b> and an <b>End</b> position. These values represent the number of tokens from the begging of the document. While you can manually enter in these values, it is easier to manually adjust the select box in the viewer.</br> 
+   ![End of file](../media/content-understanding/end-box.png)</br>
 
 
 ## Use explanation templates
