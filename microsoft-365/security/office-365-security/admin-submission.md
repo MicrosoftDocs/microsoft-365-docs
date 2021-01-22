@@ -31,7 +31,7 @@ When you submit an email, you will get:
 1) **Email authentication check**: Details on whether email authentication passed or failed when it was delivered.
 2) **Policy hits**: Information about any policies that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts.
 3) **Payload reputation/detonation**: Examination of any URLs and attachments in the message.
-4) Grader analysis: review done by human graders in order to confirm if messages are malicious or not
+4) **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
 
 > [!IMPORTANT]
 > Payload reputation/detonation and grader analysis is not done in all tenants. Information is blocked from going outside of the tenancy when  data is not supposed to leave the tenant boundary for compliance purposes.
