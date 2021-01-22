@@ -1,24 +1,26 @@
 ---
 title: View Defender for Office 365 reports in the Reports dashboard
-f1.keywords:
-- CSH
+f1.keywords: 
+  - CSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # View Defender for Office 365 reports in the Reports dashboard in the Security & Compliance Center

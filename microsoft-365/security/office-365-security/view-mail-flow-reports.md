@@ -1,23 +1,25 @@
 ---
 title: View mail flow reports in the Reports dashboard
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center."
-ms.custom:
+search.appverid: 
+  - MET150
+  - MOE150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
+ms.custom: 
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # View mail flow reports in the Reports dashboard in Security & Compliance Center

@@ -1,21 +1,23 @@
 ---
-title: "Isolated SharePoint Online team site dev/test environment"
-f1.keywords:
-- NOCSH
+title: Isolated SharePoint Online team site dev/test environment
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- TLG
-- Ent_TLGs
+ms.custom: 
+  - TLG
+  - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "Summary: Configure a SharePoint Online team site that is isolated from the rest of the organization in your Microsoft 365 dev/test environment."
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Isolated SharePoint Online team site dev/test environment

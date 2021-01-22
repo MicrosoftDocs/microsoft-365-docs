@@ -1,21 +1,23 @@
 ---
-title: "Use DMARC to validate email"
-f1.keywords:
-- NOCSH
+title: Use DMARC to validate email
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use DMARC to validate email

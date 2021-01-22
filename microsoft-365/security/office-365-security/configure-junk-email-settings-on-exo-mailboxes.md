@@ -1,21 +1,23 @@
 ---
-title: "Configure junk email settings on Exchange Online mailboxes"
+title: Configure junk email settings on Exchange Online mailboxes
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MED150
-- MBS150
-- MET150
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web."
+search.appverid: 
+  - MOE150
+  - MED150
+  - MBS150
+  - MET150
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure junk email settings on Exchange Online mailboxes

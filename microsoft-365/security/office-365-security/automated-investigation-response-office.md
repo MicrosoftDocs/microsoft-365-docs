@@ -1,26 +1,28 @@
 ---
-title: "How automated investigation and response works in Microsoft Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: How automated investigation and response works in Microsoft Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
 ms.date: 11/05/2020
-description: "See how automated investigation and response capabilities work in Microsoft Defender for Office 365"
+description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
 ms.custom: 
-- air
-- seo-marvel-mar2020
+  - air
+  - seo-marvel-mar2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # How automated investigation and response works in Microsoft Defender for Office 365

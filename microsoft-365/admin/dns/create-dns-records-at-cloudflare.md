@@ -81,7 +81,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 4. On the **DNS management** page, click **Add record**, and then select the values from the following table. 
     
-    |**Type**|**Name**|**Automatic TTL**|**Content**|
+    | Type | Name | Automatic TTL | Content |
     |:-----|:-----|:-----|:----|
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)    |
   
@@ -125,7 +125,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
   
 4. On the **DNS management** page, click **Add record**, and then select the values from the following table. 
     
-    |**Type**|**Name**|**Mail server**|**Priority**|**TTL**|
+    | Type | Name | Mail server | Priority | TTL |
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft 365 account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 minutes  <br/> |
    
@@ -154,7 +154,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     On the **DNS management** page, click **Add record**, and then select the values from the following table.
     
     
-    |**Type**|**Name**|**Target**|**TTL**|
+    | Type | Name | Target | TTL |
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minutes  <br/> |
@@ -164,7 +164,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
     
   
-5. Select the **DNS Traffic** icon (orange cloud) to bypass the Cloudflare servers.
+5. Select the **DNS Traffic** icon (change orange cloud to grey) to bypass the Cloudflare servers.
   
 6. Select **Save**.
   
@@ -187,7 +187,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
   
 4. On the **DNS management** page, click **Add record**, and then select the values from the following table.  
     
-    |**Type**|**Name**|**TTL**|**Content**|
+    | Type | Name | TTL | Content |
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.   |
 
@@ -212,7 +212,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
 
     On the **DNS management** page, click **Add record**, and then select the values from the first row of the following table.
         
-    |**Type**|**Service**|**Protocol**|**Name**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
+    | Type | Service | Protocol | Name | TTL | Priority | Weight | Port | Target |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |Use your *domain_name*; for example, contoso.com  |30 minutes | 100|1 |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|Use your *domain_name*; for example, contoso.com   |30 minutes |100 |1 |5061 | sipfed.online.lync.com |
