@@ -286,5 +286,5 @@ Congratulations! You've just created your Microsoft 365 Defender trial lab or pi
 Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
 ## Next step
-|[Attack simulation phase](mtp-pilot-simulate.md) | Run the attack simulation for your Microsoft 365 Defender pilot environment.
+|[Generate a test alert](generate-test-alert.md) | Run an attack simulation in your Microsoft 365 Defender trial lab.
 |:-------|:-----|

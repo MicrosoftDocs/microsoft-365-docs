@@ -69,22 +69,18 @@
               href: mtp/portals.md
         - name: Evaluate capabilities
           items: 
-            - name: Trial lab overview
-              href: mtp/mtp-evaluation.md
-            - name: Prepare
-              href: mtp/prepare-mtpeval.md
-            - name: Setup
-              href: mtp/setup-mtpeval.md
-            - name: Configure and onboard
-              href: mtp/config-mtpeval.md
-            - name: Start the Microsoft 365 Defender service
-              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
-            - name: Generate a test alert
-              href: mtp/generate-test-alert.md
-        - name: Deploy
-          items:
-            - name: Turn on Microsoft Threat Protection
-              href: mtp/mtp-enable.md
+            - name: Create a trial lab
+              items:
+                - name: Trial lab overview
+                  href: mtp/mtp-evaluation.md
+                - name: Prepare
+                  href: mtp/prepare-mtpeval.md
+                - name: Setup
+                  href: mtp/setup-mtpeval.md
+                - name: Configure Microsoft 365 Defender pillars and onboard
+                  href: mtp/config-mtpeval.md
+                - name: Generate a test alert
+                  href: mtp/generate-test-alert.md                       
             - name: Run your pilot project in production
               items: 
                 - name: Pilot overview
@@ -96,20 +92,19 @@
                 - name: Simulate attack
                   href: mtp/mtp-pilot-simulate.md
                 - name: Close and summarize
-                  href: mtp/mtp-pilot-close.md
+                  href: mtp/mtp-pilot-close.md                           
+        - name: Get started
+          items:
+            - name: Overview
+              href: mtp/get-started.md
+            - name: Turn on Microsoft Threat Protection
+              href: mtp/mtp-enable.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
-            
-        - name: How-to guides
-          items: 
-            - name: Create a trial lab or pilot environment
-              href: mtp/mtp-evaluation.md
-            - name: Run pilot playbook
-              href: mtp/mtp-pilot.md
-
-
             - name: Turn on FAQ
-              href: mtp/mtp-enable-faq.md
+              href: mtp/mtp-enable-faq.md              
+        - name: How-to guides
+          items:     
             - name: Incidents
               items: 
                 - name: Overview
