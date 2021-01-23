@@ -7,7 +7,9 @@ manager: pamgreen
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-topics
 ms.service: 
 search.appverid: 
 localization_priority: Normal
