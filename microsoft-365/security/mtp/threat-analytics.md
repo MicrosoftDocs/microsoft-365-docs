@@ -56,8 +56,8 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https://security.microsoft.com/threatanalytics3)) highlights the reports that are most relevant to your organization. It summarizes the threats in the following sections:
 
-- **Latest threats**—lists the most recently published or updated threat reports, along with the number of devices with active and resolved alerts.
-- **High-impact threats**—lists the threats that have had the highest impact to your organization. This section lists threats with the highest number of devices with active alerts first.
+- **Latest threats**—lists the most recently published or updated threat reports, along with the number of active and resolved alerts.
+- **High-impact threats**—lists the threats that have had the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
 - **Threat summary**—provides the overall impact of all tracked threats by showing the number of threats with active and resolved alerts.
 
 Select a threat from the dashboard to view the report for that threat.
@@ -96,8 +96,8 @@ Each report includes charts designed to provide information about the organizati
 
 #### Review security resilience and posture
 Each report includes charts that provide an overview of how resilient your organization is against a given threat:
-- **Secure configuration status**—shows the number of devices that have applied the recommended security settings that can help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
-- **Vulnerability patching status**—shows the number of devices that have applied security updates or patches that address vulnerabilities exploited by the threat.
+- **Secure configuration status**—shows the number of devices with misconfigured security settings. Apply the recommended security settings to help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
+- **Vulnerability patching status**—shows the number of vulnerable devices. Apply security updates or patches to address vulnerabilities exploited by the threat.
 
 ### Analyst report: Get expert insight from Microsoft security researchers
 In the **Analyst report** section, read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
