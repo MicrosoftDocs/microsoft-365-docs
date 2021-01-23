@@ -36,14 +36,22 @@ When it comes to protecting its users, Microsoft takes the threat of phishing se
 
 The following anti-spoofing technologies are available in EOP:
 
-- **Anti-phishing policies**: In EOP, anti-phishing policies contain the following spoofing information and settings:
-  - In the main anti-phishing policy page, the **Spoof intelligence insight** shows you the number of detected messages from spoofed senders over the last 7 days. If you click on the widget, you can review the spoofed senders and allow or block those senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
-  - In the settings of every anti-phishing policy, you can turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to the Junk Email folder or quarantine). For more information, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings).
+- **Spoof intelligence insight**: Review spoofed messages from senders in internal and external domains in the last 7 days, and allow or block those senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+
+- **Anti-phishing policies**: In EOP, anti-phishing policies contain the following anti-spoofing settings:
+  - Turn spoof intelligence on or off.
+  - Turn unauthenticated sender identification (question mark or via tag) on or off.
+  - Specify the action for blocked spoofed senders (move to the Junk Email folder or quarantine). For more information, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings).
 
   Anti-phishing policies that are available in Microsoft Defender for Office 365 also contain these additional related features and settings:
 
   - In the main anti-phishing policy page, the **Impersonation insight** shows you the number of detected messages from **impersonated** senders over the last 7 days. Note that **impersonated** senders are different than **spoofed** senders. If you click on the widget, you can review the impersonated senders and allow or block those senders. For more information, see <>.
-  - In the settings of every anti-phishing policy, you can configure **anti-impersonation settings** (protected senders and domains), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+  - In every anti-phishing policy, you can configure the following **impersonation protection** settings**:
+    - Protected users, protected domains, exceptions, and actions for protected users and protected domains.
+    - Mailbox intelligence settings.
+    - Advanced phishing thresholds.
+  
+    For more information, see [Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 - **Spoof detections**: EOP organizations can use the **Spoof detections** report in the Reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
 
