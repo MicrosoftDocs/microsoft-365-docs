@@ -28,6 +28,13 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
+Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. While they provide in-depth information about unique events, alerts are typically part of a broader attack and provide clues to an incident. 
+
+In Microsoft 365 Defender, related alerts are aggregated together to form incidents. Incidents will always provide the broader context of an attack, however, investigating alerts can be valuable when deeper analysis is required or when specific remediation action is needed. 
+
+The alerts queue provides unparalleled visibility into alerts across identities, endpoints, data, apps, email and collaboration tools.
+
+
 ## Digging into incidents using alert pages 
 From the alerts tab of any incident page, selecting an alert brings you to the individual alert pages. The alert page is composed of three sections: impacted assets, alert story, and the details pane.
 
