@@ -34,10 +34,9 @@ Here are the requirements and limitations for enabling cloud-based storage for o
 
 - Only Teams chat data associated with an on-premises user is stored in the cloud-based storage area. An on-premises user can't access this storage area in any way.
 
-- You have to submit a request to Microsoft Support to enable your organization to search for Teams chat data for on-premises users. See [Filing a request with Microsoft Support to enable this feature](#filing-a-request-with-microsoft-support-to-enable-this-feature) in this article.
 
 > [!NOTE]
-> Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team. That means you can use Content Search to search channel conversations without have to file a support request. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Microsoft 365 Groups](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team. That means you can use Content Search to search channel conversations . For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Microsoft 365 Groups](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## How it works
 
@@ -49,20 +48,7 @@ The following graphic shows the workflow of how Teams chat data for on-premises 
   
 In addition to this new capability, you can still use Content Search to search, preview, and export Teams content in the cloud-based SharePoint site and Exchange mailbox associated with each Microsoft Team and 1xN Teams chat data in the Exchange Online mailbox for cloud-based users.
 
-## Filing a request with Microsoft Support to enable this feature
 
-You must file a request with Microsoft Support to enable your organization to use the graphical user interface in the Security & Compliance Center to search for Teams chat data for on-premises users. This feature is available in Security & Compliance Center PowerShell. You don't have to submit a support request to use PowerShell to search for Teams chat data for on-premises users.
-  
-Include the following information when you submit the request to Microsoft Support:
-  
-- The default domain name of your organization.
-
-- The tenant name and tenant ID of your organization. You can find these in the Azure Active Directory portal (under **Manage** \> **Properties**). See [Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-
-- The following title or description of the purpose of the support request: "Enable Application Content Search for On-premises Users". This helps route the request to the eDiscovery engineering team who will implement the request.
-
-After the engineering change is made, Microsoft Support will send you an estimated deployment date. The deployment process usually takes 2–3 weeks after you submit the support request.
-  
 ### What happens after this feature is enabled?
 
 After this feature is deployed in your organization, the following changes are made in Content Search and in searches associated with an eDiscovery case in the Security & Compliance Center:
