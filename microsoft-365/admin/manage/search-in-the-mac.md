@@ -25,6 +25,8 @@ As the administrator of a Microsoft 365 organization, you can use search to find
 
 :::image type="content" source="../../media/search-full-screen.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
 
+:::image type="content" source="../../media/search-bar.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
+
 Search results are organized into different categories. Most of the categories are items in the admin center. For example, users, groups, shared mailboxes or domains. Other categories show you places you can navigate to, actions you can take or app level settings that you can change. And there's also a category related to documentation.
 
 The following sections describe the different areas and categories in the admin center that are searchable.
@@ -88,8 +90,8 @@ A documentation search provides relevant help documentation based on your search
 
 :::image type="content" source="../../media/search-for-docs-mac.png" alt-text="Screenshot: Search showing documentation results in the admin center":::
 
-## Search in the admin center feedback
+## Send us feedback
 
-Use this to submit feedback on the search experience. We can't respond to all feedback, but we read all of it, and use your feedback to improve the search experience. Make sure to provide as much detail in your feedback.
+Use this section to submit feedback on the search experience. We can't respond to all feedback, but we read all of it, and use your feedback to improve the search experience. Make sure to provide as much detail as you can in your feedback.
 
 :::image type="content" source="../../media/search-feedback-mac.png" alt-text="Screenshot: Send feedback on search in the admin center":::
