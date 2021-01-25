@@ -8,7 +8,9 @@ audience: admin
 ms.topic: article
 ms.service: 
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 
