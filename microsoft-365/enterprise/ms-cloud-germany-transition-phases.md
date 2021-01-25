@@ -30,7 +30,7 @@ The phases and their actions ensure that critical data and experiences are migra
 
 The following sections contain actions and effects for workloads as they progress through various phases of the migration. Review the tables and determine which actions or effects are applicable to your organization. Ensure that you're prepared to execute the steps in the respective phases as required. Failure to complete necessary steps may result in service outage and might delay completion of the migration to the Office 365 services.
 
-## Exchange Online
+## Exchange Online (Phase 5 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -53,7 +53,7 @@ Additional considerations:
 
 To find out more about the differences for organizations in migration and after Exchange Online resources are migrated, review the information in [Customer experience during the migration to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition-experience.md).
 
-## Exchange Online Protection
+## Exchange Online Protection (Phase 6 of 9)
 
 Back-end Exchange Online Protection (EOP) features are copied to new Germany region. 
 
@@ -62,7 +62,7 @@ Back-end Exchange Online Protection (EOP) features are copied to new Germany reg
 | Migration of Exchange Online routing and historical message detail. | Exchange Online enables routing from external hosts to Office 365. The external MX records are transitioned to route to the EOP service. Tenant configuration and historical details are migrated. | Exchange Online customers | - Microsoft–managed DNS entries are updated from Office 365 Germany EOP to Office 365 services. <br><br> - Customers should wait for 30 days after EOP dual write for EOP migration. Otherwise, there may be data loss. |
 |||||
 
-## SharePoint Online
+## SharePoint Online (Phase 4 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -82,7 +82,7 @@ Additional considerations:
 - Microsoft Cloud Deutschland customers whose SharePoint Online instance is migrated must update SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM to version 16.0.20717.12000 or above. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
 
 
-## Skype for Business Online
+## Skype for Business Online (Phase 7 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
