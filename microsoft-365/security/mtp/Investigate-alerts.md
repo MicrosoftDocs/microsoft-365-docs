@@ -38,7 +38,7 @@ The alerts queue provides unparalleled visibility into alerts across identities,
 ## Digging into incidents using alert pages 
 From the alerts tab of any incident page, selecting an alert brings you to the individual alert pages. The alert page is composed of three sections: impacted assets, alert story, and the details pane.
 
-*[SCREENSHOT OF ALERT PAGE]*
+![Image of sample alert page](/../../media/newalertpage2.png)
 
 ### Analyze impacted assets
 Affected assets lists cards of mailboxes, devices and users affected by this alert. Selecting any of the affected assets populates the details side pane with information.
