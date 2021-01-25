@@ -42,9 +42,19 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 | Table name | Original column name | New column name | Reason for change
 |--|--|--|--|
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailAction | EmailAction | Customer feedback |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicy | EmailActionPolicy | Customer feedback |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicyGuid | EmailActionPolicyGuid | Customer feedback |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailAction` | `EmailAction` | Customer feedback |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicy` | `EmailActionPolicy` | Customer feedback |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicyGuid` | `EmailActionPolicyGuid` | Customer feedback |
+
+## January 2021
+| Column name | Original value name | New value name | Reason for change
+|--|--|--|--|
+| `ServiceSource` | Microsoft Defender ATP|	Microsoft Defender for Endpoint | Rebranding |
+| `ServiceSource` | Microsoft Cloud App Security | Microsoft Cloud App Security | Rebranding |
+|`ServiceSource` |Microsoft Threat Protection	| Microsoft 365 Defender | Rebranding |
+| `ServiceSource` | Office 365 ATP	|Microsoft Defender for Office 365 | Rebranding |
+| `ServiceSource` |Azure ATP	|Microsoft Defender for Identity | Rebranding |
+
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
