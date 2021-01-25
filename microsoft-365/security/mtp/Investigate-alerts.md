@@ -28,7 +28,7 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. While they provide in-depth information about unique events, alerts are typically part of a broader attack and provide clues to an incident. 
+Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. Alerts provide in-depth information about unique events which are typically part of a broader attack and provide prices of clues about an incident. 
 
 In Microsoft 365 Defender, related alerts are aggregated together to form incidents. Incidents will always provide the broader context of an attack, however, investigating alerts can be valuable when deeper analysis is required or when specific remediation action is needed. 
 
