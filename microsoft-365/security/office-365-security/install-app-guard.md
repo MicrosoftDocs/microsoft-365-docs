@@ -1,20 +1,22 @@
 ---
 title: Application Guard for Office 365 (public preview) for admins
 keywords: application guard, protection, isolation, isolated container, hardware isolation
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: maccruz
 author: schmurky
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: M365-security-compliance
-description: "Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security."
+description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Application Guard for Office (public preview) for admins
