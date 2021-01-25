@@ -87,7 +87,7 @@ To revert to the former Microsoft Defender for Endpoint portal:
 
 1. [Sign in](https://security.microsoft.com/) to the Microsoft 365 security center as a global administrator or using and account with security administrator permissions in Azure Active directory. 
 
-2. Navigate to **Settings** > **Endpoints** > **General** > **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).  
+2. Navigate to **Settings** > **Endpoints** > **General** > **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).  
 
 3. Toggle the Automatic redirection setting to **Off**.
 
