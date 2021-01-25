@@ -66,6 +66,8 @@
           href: admin-overview/admin-mobile-app.md
         - name: What's new in the admin center
           href: whats-new-in-preview.md
+        - name: Search in the Microsoft 365 admin center
+          href: manage/search-in-the-mac.md
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
         - name: Manage multiple tenants
