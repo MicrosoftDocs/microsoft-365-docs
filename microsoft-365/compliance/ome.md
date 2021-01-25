@@ -77,11 +77,10 @@ With Office 365 Message Encryption, users can send encrypted email from Outlook 
 
 Recipients of encrypted messages who are in organizations will be able to read those messages seamlessly in any version Outlook, including Outlook for PC, Outlook for Mac, Outlook on the web, Outlook for iOS, and Outlook for Android. Users that receive encrypted messages on other email clients can view the messages in the OME portal.
 
-For detailed guidance about how to send and view encrypted messages, take a look at these articles:
+For detailed guidance about how to send and view encrypted messages, take a look at these articles.
 
-|||
-|:-----|:-----|
 |Read this article...|If you are...|
+|:-----|:-----|
 |[Learn about protected messages in Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|An end user that wants to learn more about how encrypted messages work and what options are available to you.|
 |[How do I open a protected message?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|An end user that wants to read a protected message that was sent to you. This article includes information about reading messages in several versions of Outlook and from different email accounts, including those accounts outside of Microsoft 365 such as gmail and Yahoo! accounts.|
 |[Send, view, and reply to encrypted messages in Outlook](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|An end user that wants to send, view, or reply to an encrypted message from Outlook. Even if you're not a member of an organization, you still receive notification of encrypted messages sent to you in Outlook. Use this article for instructions on how to view and reply to encrypted messages sent from Office 365.|

@@ -1,26 +1,27 @@
 ---
-title: Approve or reject pending actions following an automated investigation 
+title: Approve or reject pending actions following an automated investigation
 description: Use the Action Center to manage actions related to automated investigation and response
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 12/09/2020
+ms.technology: m365d
 ---
 
 # Approve or reject pending actions following an automated investigation
@@ -60,6 +61,30 @@ Pending actions can be reviewed and approved by using the [Action center](#revie
 1. On an [investigation details](mtp-autoir-results.md) page, select the **Pending actions** (or **Actions**) tab. Items that are pending approval are listed here.
 
 2. Select an item in the list, and then choose **Approve** or **Reject**.
+
+## Undo completed actions
+
+If you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. In the Action center, on the **History** tab, you can undo any of the following actions:  
+
+| Action source | Supported Actions |
+|:---|:---|
+| - Automated investigation <br/>- Microsoft Defender Antivirus <br/>- Manual response actions | - Isolate device <br/>- Restrict code execution <br/>- Quarantine a file <br/>- Remove a registry key <br/>- Stop a service <br/>- Disable a driver <br/>- Remove a scheduled task |
+
+### To undo a remediation action
+
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+
+2. On the **History** tab, select an action that you want to undo.
+
+3. In the pane on the right side of the screen, select **Undo**.
+
+### To remove a file from quarantine across multiple devices 
+
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+
+2. On the **History** tab, select a file that has the Action type **Quarantine file**.
+
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
 
 ## Next steps
 

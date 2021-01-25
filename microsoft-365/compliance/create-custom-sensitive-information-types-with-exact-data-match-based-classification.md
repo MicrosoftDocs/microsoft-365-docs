@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types with Exact Data Match based classification
 
-[Custom sensitive information types](custom-sensitive-info-types.md) are used to help identify sensitive items so that you can help prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
+[Custom sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
 
 - patterns
 - keyword evidence such as *employee*, *badge*, or *ID*
@@ -101,6 +101,11 @@ Setting up and configuring EDM-based classification involves:
 3. Pay attention to the format of the sensitive data fields. In particular, fields that may contain commas in their content (e.g. a street address that contains the value "Seattle,WA") would be parsed as two eparate fields when parsed by the EDM tool. In order to avoid this, you need to ensure such fields are surrounded by single or double quotes in the sensitive data table. If fields with commas in them may also contain spaces, you would need to create a custom Sensitive Information Type that matches the corresponding format (e.g. a multi-word string with commas and spaces in it) to ensure the string is correctly matched wjen the document is scanned.
 
 #### Define the schema for your database of sensitive information
+
+If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type patter (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
+
+> [!NOTE]
+> The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
 
 1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax: 
 
@@ -247,7 +252,7 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
       </RulePackage>
       ```
 
-1. Upload the rule package by running the following PowerShell cmdlets, one at a time:
+2. Upload the rule package by running the following PowerShell cmdlets, one at a time:
 
       ```powershell
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
@@ -355,7 +360,10 @@ The hashing and uploading can be done using one computer or you can separate the
 
 If you want to hash and upload from one computer, you need to do it from a computer that can directly connect to your Microsoft 365 tenant. This requires that your clear text sensitive data files are on that computer for hashing.
 
-If you do not want to expose your clear text sensitive data file, you can hash it on a computer in a secure location and then copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload. In this scenario, you will need the EDMUploadAgent on both computers. 
+If you do not want to expose your clear text sensitive data file, you can hash it on a computer in a secure location and then copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload. In this scenario, you will need the EDMUploadAgent on both computers.
+
+> [!IMPORTANT]
+> If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, you ***must** download the schema for this procedure.
 
 #### Prerequisites
 
@@ -366,6 +374,7 @@ If you do not want to expose your clear text sensitive data file, you can hash i
     - your sensitive item file in csv format **PatientRecords.csv** in our examples
     -  and the output hash and salt files
     - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
+- If you used the [Exact Data Match schema and sensitive information type wizard](sit-edm-wizard.md) you ***must*** download it
 
 #### Set up the security group and user account
 
@@ -414,6 +423,10 @@ This computer must have direct access to your Microsoft 365 tenant.
 
 3. Sign in with your work or school account for Microsoft 365 that was added to the EDM_DataUploaders security group. Your tenant information is extracted from the user account to make the connection.
 
+OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, run the following command in a Command Prompt window:
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+
 4. To hash and upload the sensitive data, run the following command in Command Prompt window:
 
 `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
@@ -433,6 +446,10 @@ Look for the status to be in **ProcessingInProgress**. Check again every few min
 #### Separate Hash and upload
 
 Perform the hash on a computer in a secure environment.
+
+OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, run the following command in a Command Prompt window:
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 1. Run the following command in Command Prompt windows:
 
@@ -626,7 +643,7 @@ EDM sensitive information types for following scenarios are currently in develop
 ## Related articles
 
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
-- [Custom sensitive information types](custom-sensitive-info-types.md)
+- [Learn about sensitive information types](sensitive-information-type-learn-about.md)
 - [Overview of DLP policies](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)

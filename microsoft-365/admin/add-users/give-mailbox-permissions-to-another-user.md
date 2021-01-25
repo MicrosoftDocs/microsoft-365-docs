@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -116,6 +117,10 @@ There are a few different ways you can access a mailbox once you've been given a
 5. Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.
 
 6. Select **Save**.
+
+
+> [!NOTE]
+> **Read** and **Manage** permissions are called **Full Access** permission when granted in the Exchange admin center. Full Access permission does not grant **Send as** or **Send on Behalf**  permissions.
 
 ::: moniker-end
 

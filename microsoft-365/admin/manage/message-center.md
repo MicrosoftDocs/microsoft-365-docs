@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -63,6 +65,7 @@ You can also use the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/p
 |Can I get message center posts emailed instead?  <br/> |Yes! You can select to have a weekly digest emailed to you and up to two other email addresses. The emailed weekly digest is turned on by default. If you aren't getting your weekly digests, check your spam folder. See the [Preferences](#preferences) section of this article for more information on how to set up the weekly digest.  <br/> |
 |How do I stop getting the Message center digest?  <br/> |Go to Message center in the admin center and select **Edit preferences**. Turn off the option to **Send a weekly email digest of my messages**. If you also no longer want to receive email about major updates, turn off **Send me emails for major updates**.  <br/> |
 |How can I ensure data privacy notifications are received by the right contacts in my organization? <br/> |As a global admin you will receive data privacy messages for your organization. Additionally, you can assign the Message Center Privacy reader role to people who should see data privacy messages. Other admin roles with access to Message Center cannot view data privacy messages.   <br/><br/>For more info, see [Preferences](#preferences) in this article.<br/> |
+|Why can’t I see a message that was previously there? <br/> |To manage the number of messages within Message center, each message will expire and be removed after a period of time. Generally, messages expire 30 days post the time period outlined in the message body. <br/> |
 
 ### Messages
 

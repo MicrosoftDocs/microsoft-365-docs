@@ -193,7 +193,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Confirm or update the policy name. Policy names cannot be changed once the policy is created.
     
-    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
+    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude. When using the conflict of interest template, you'll select two groups or two users to monitor for internal communications.
     
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
     
