@@ -41,25 +41,20 @@ From the alerts tab of any incident page, selecting an alert brings you to the i
 ![Image of sample alert page](../../media/newalertpage2.png)
 
 ### Analyze impacted assets
-Affected assets lists cards of mailboxes, devices and users affected by this alert. Selecting any of the affected assets populates the details side pane with information.
+The impacted assets section lists cards of mailboxes, devices and users affected by this alert. Selecting any of the assets populates the details side pane with information, including other alerts that occurred involving the assets, if any.
 
-For mailboxes, the details pane contains the mailbox name, any related incidents and alerts, and the option to go to the mailbox page for further investigation.
+Selecting the three-dot icon (**...**) beside the cards or below the details pane allows you to see available actions like opening the specific asset page or performing specific remediation steps.
 
-For devices, the details pane contains device details like the risk level, exposure score, any related incidents and alerts, and the option to go to the device page for further investigation. You can also take action on the device from teh details pane by selecting the three-dot icon beside the blue *Open device page* button.
 
-For users, the details pane contains user details like ...
-
-### Investigate part of an incident using the alert story
-The alert story displays all entities related to the alert, interconnected by a process tree view. The alert in the title will be the one in focus when you first land on your selected alert's page. Entities in the alert story are expandable and clickable, to provide additional information and expedite response by allowing you to take actions right in the context of the alert page. 
-
-Expand entities to view details at a glance. Selecting an entity will switch the context of the details pane to this entity, and will allow you to review further information, as well as manage that entity. Selecting the three-dot icon (**...**) to the right of the entity card will reveal all actions available for that entity. These same actions appear in the details pane when that entity is in focus.
+### Trace an alert's role in the alert story
+The alert story displays all assets or entities related to the alert, interconnected by a process tree view. The alert in the title will be the one in focus when you first land on your selected alert's page. Assets in the alert story are expandable and clickable. They provide additional information and expedite response by allowing you to take actions right in the context of the alert page. 
 
 > [!NOTE]
 > The alert story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
 
-### Take action on alerts in the details pane
+### View more alert information in the details pane
 
-The details pane show the details of the selected alert at first, with details and actions related to this alert. If you select any of the affected assets or entities in the alert story, the details pane will change to provide contextual information and actions for the selected object.
+The details pane shows the details of the selected alert at first, with details and actions related to this alert. If you select any of the impacted assets or entities in the alert story, the details pane will change to provide contextual information and actions for the selected object.
 
 Once you've selected an entity of interest, the details pane will change to display information about the selected entity type, historic information when it's available, and offer controls to take action on this entity directly from the alert page.
 
@@ -83,7 +78,7 @@ On the top navigation, you can:
 - Export data
 - Customize columns to add or remove columns
 
-The following filters are available for the unified alert queue:
+You can also filter alerts according to different criteria:
 
 - Severity
 - Status
@@ -93,6 +88,7 @@ The following filters are available for the unified alert queue:
 - Impacted assets
 - First activity
 - Last activity
+
 
 To start an investigation on an incident, read [Investigate incidents in Microsoft 365 Defender](investigate-incidents.md)
 ## Related topics
