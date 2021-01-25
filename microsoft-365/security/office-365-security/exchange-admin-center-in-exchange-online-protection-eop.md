@@ -1,21 +1,23 @@
 ---
-title: "Exchange admin center in standalone EOP"
-f1.keywords:
-- NOCSH
+title: Exchange admin center in standalone EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
-ms.collection:
-- M365-security-compliance
-description: "Learn about the web management interface in standalone Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+description: Learn about the web management interface in standalone Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Exchange admin center in standalone EOP

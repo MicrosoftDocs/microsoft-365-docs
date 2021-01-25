@@ -17,6 +17,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -74,7 +75,7 @@ Yes, but with reduced functionality. You'll be able to sign in and view service 
   
 ### What languages are supported by the app?
 
-The app supports all 39 languages that the web-based Microsoft 365 admin center supports. 
+The app supports all 39 languages that the web-based Microsoft 365 admin center supports. To change the language, select the app launch icon in the upper bar and choose **Settings** > **Language**.
   
 ### Why does the Messages tile on the Home screen show numbers even after I've read the new messages?
 
