@@ -36,14 +36,14 @@ The alerts queue provides unparalleled visibility into alerts across identities,
 
 
 ## Using alert pages in investigations
-From the alerts tab of any incident page, selecting an alert brings you to the individual alert pages. The alert page is composed of three sections: impacted assets, alert story, and the details pane.
+From the Alerts tab of any incident page, selecting an alert brings you to the individual alert pages. An alert page is composed of three sections: impacted assets, alert story, and the details pane.
 
 ![Image of sample alert page](../../media/newalertpage2.png)
 
+Throughout an alert page, selecting the three-dot icon (**...**) beside any of the assets or entities allows you to see available actions like opening the specific asset page or performing specific remediation steps.
+
 ### Analyze impacted assets
 The impacted assets section lists cards of mailboxes, devices and users affected by this alert. Selecting any of the assets populates the details side pane with information, including other alerts that occurred involving the assets, if any.
-
-Selecting the three-dot icon (**...**) beside the cards or below the details pane allows you to see available actions like opening the specific asset page or performing specific remediation steps.
 
 
 ### Trace an alert's role in the alert story
@@ -58,19 +58,18 @@ The details pane shows the details of the selected alert at first, with details 
 
 Once you've selected an entity of interest, the details pane will change to display information about the selected entity type, historic information when it's available, and offer controls to take action on this entity directly from the alert page.
 
-Once you're done investigating, go back to the alert you started with, mark the alert's status as Resolved and classify it as either False alert or True alert. Classifying alerts helps tune this capability to provide more true alerts and less false alerts.
+### Manage alerts
 
-If you classify it as a true alert, you can also select a determination, as shown in the image below.
+Once you're done investigating the alerts, you can go back to the alert you started with, mark the alert's status as Resolved and classify it as either False alert or True alert. Classifying alerts helps tune this capability to provide more true alerts and less false alerts.
 
-If you are experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
 
 ## Manage the unified alert queue
 
-Selecting **Alerts** under Incidents & Alerts in the Microsoft 365 security center navigation pane brings you to the unified alert queue. Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft 365 Defender appear in this section. 
+Selecting Alerts under Incidents & Alerts in the Microsoft 365 security center navigation pane brings you to the unified alert queue. Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft 365 Defender appear in this section. 
 
 ![Image of sample alert page](../../media/unifiedalertqueue.png)
 
-The Alerts queue shows a list of alerts that were flagged in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view. The most recent alerts are showed at the top of the list helping you see the most recent alerts first.
+The Alerts queue shows a list of alerts that were flagged in your network. By default, the queue displays alerts seen in the last 30 days. The most recent alerts are showed at the top of the list helping you see the most recent alerts first.
 
 On the top navigation, you can:
 
@@ -83,7 +82,7 @@ You can also filter alerts according to different criteria:
 - Severity
 - Status
 - Category
-- Detection source or service source
+- Detection source
 - Policy
 - Impacted assets
 - First activity
