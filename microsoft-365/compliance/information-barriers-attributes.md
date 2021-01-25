@@ -1,26 +1,26 @@
 ---
 title: "Attributes for information barrier policies"
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: This is a reference article on the Azure Active Directory user account attributes that you use to define information barrier segments.
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: This is a reference article on the Azure Active Directory user account attributes that you use to define information barrier segments.
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
 ---
 
 # Attributes for information barrier policies
 
-Certain attributes in Azure Active Directory can be used to segment users. Once segments are defined, those segments can be used as filters for information barrier policies. For example, you might use **Department** to define segments of users by department within your organization (assuming no single employee works for two departments at the same time). 
+Certain attributes in Azure Active Directory can be used to segment users. Once segments are defined, those segments can be used as filters for information barrier policies. For example, you might use **Department** to define segments of users by department within your organization (assuming no single employee works for two departments at the same time).
 
 This article describes how to use attributes with information barriers, and it provides a list of attributes that can be used. To learn more about information barriers, see the following resources:
+
 - [Information barriers](information-barriers.md)
 - [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
 - [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md)

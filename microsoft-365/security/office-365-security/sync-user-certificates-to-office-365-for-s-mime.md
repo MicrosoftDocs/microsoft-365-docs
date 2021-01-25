@@ -1,21 +1,23 @@
 ---
-title: "Sync user certificates to Office 365 for S/MIME"
-f1.keywords:
-- NOCSH
+title: Sync user certificates to Office 365 for S/MIME
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date: 12/09/2016
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
-ms.custom:
-- seo-marvel-apr2020
-description: "In this article, you'll learn how to publish appropriate certificates to Office 365 before sending S/MIME-protected messages in Exchange Online."
+ms.custom: 
+  - seo-marvel-apr2020
+description: In this article, you'll learn how to publish appropriate certificates to Office 365 before sending S/MIME-protected messages in Exchange Online.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Sync user certificates to Office 365 for S/MIME
