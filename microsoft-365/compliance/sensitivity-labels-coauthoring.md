@@ -36,6 +36,8 @@ In addition, enabling this functionality results in the [AutoSave](https://suppo
 
 > [!IMPORTANT]
 > After you enable the setting for co-authoring, labeling information for unencrypted files is no longer saved in custom properties.
+> 
+> Do not enable this setting if you have any apps, services, scripts, or tools in your organization that reads or writes labeling metadata to the old location.
 
 Before you enable the setting to support co-authoring for Office desktop apps, it's important to understand that this action makes changes to the labeling metadata that is saved to and read from Office files.
 
@@ -51,7 +53,7 @@ You can read more about this metadata change from the following resources:
 
 - Open Specifications: [2.6.3 LabelInfo versus Custom Document Properties](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-Do not enable this setting if you have any apps, services, scripts, or tools in your organization that reads or writes labeling metadata to the old location. If you do, some example consequences:
+Because of these changes, do not enable this setting if you have any apps, services, scripts, or tools in your organization that reads or writes labeling metadata to the old location. If you do, some example consequences:
 
 - A document that is labeled appears to users to be unlabeled
 
