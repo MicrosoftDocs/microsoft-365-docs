@@ -36,8 +36,8 @@ The resources in this section help you learn more about what Topic experiences i
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn more about document understanding|[Topic Experiences overview](topic-experiences-overview.md)|
-|Learn how topics are discovered and created by AI|[Topic Experiences discovery](topic-experiences-discovery.md)|
+|Learn more about topic experiences|[Topic Experiences overview](topic-experiences-overview.md)|
+|Learn how topics are discovered and suggested by AI|[Topic Experiences discovery](topic-experiences-discovery.md)|
 |Learn about topic security|[Topic Experiences security and privacy](topic-experiences-security-privacy.md)|
 
 
@@ -57,7 +57,7 @@ The resources in this section help your admin in your organization to set up and
 |:-----|:-----|
 |Learn how to set up and configure Topic Experiences|[Set up Topic Experiences](set-up-topic-experiences.md)|
 |Learn how to configure user permissions|[Manage topic permissions](topic-experiences-user-permissions.md)|
-|Learn how manage who can view topics|[Manage topic visibility](topic-experiences-knowledge-rules.md)|
+|Learn how to manage who can view topics|[Manage topic visibility](topic-experiences-knowledge-rules.md)|
 |Learn how to manage your topic discovery settings|[Manage topic discovery](topic-experiences-discovery.md)|
 
 ## Work with topics
