@@ -127,7 +127,7 @@ During the preview, you must first use PowerShell before you can enable co-autho
    
     Sign in to your test tenant with a global administrator account.
 
-2. Run the [Set-PolicyConfigl](https://docs.microsoft.com/powershell/module/exchange/set-policyconfig) cmdlet to display the UI in the compliance center that lets you enable co-authoring for files with sensitivity labels:	
+2. Run the [Enable-MipCoauthConfiguration](https://docs.microsoft.com/powershell/module/exchange/enable-mipcoauthconfiguration) cmdlet to display the UI in the compliance center that lets you enable co-authoring for files with sensitivity labels:	
     
     ```powershell
     Enable-MipCoauthConfiguration $True
