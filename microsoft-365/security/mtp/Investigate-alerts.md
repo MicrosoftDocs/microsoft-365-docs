@@ -24,8 +24,10 @@ search.appverid:
 ms.technology: m365d
 ---
 # Investigate alerts in Microsoft 365 Defender
-**Applies to:**
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+**Applies to:**
 - Microsoft 365 Defender
 
 Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. Providing in-depth information about unique events, alerts are typicially part of a broader attack and provide peices of clues about an incident.

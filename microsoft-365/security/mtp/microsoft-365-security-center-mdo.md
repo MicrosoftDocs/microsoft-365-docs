@@ -20,6 +20,8 @@ ms.technology: m365d
 
 # Microsoft Defender for Office 365 in the Microsoft 365 security center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

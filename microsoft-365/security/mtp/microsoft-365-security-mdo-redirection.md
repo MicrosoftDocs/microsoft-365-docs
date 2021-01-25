@@ -23,6 +23,8 @@ ms.technology: m365d
 ---
 # Redirecting accounts from Microsoft Defender for Office 365 to the new Microsoft 365 security center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 **Applies to:**
 
 - Microsoft 365 Defender
