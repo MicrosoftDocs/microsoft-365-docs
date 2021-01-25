@@ -81,7 +81,7 @@ Make sure you understand the following prerequisites before you turn on this fea
         - macOS: Preview: [Current Channel (Preview)](https://office.com/insider) or [Beta Channel](https://office.com/insider)
         - iOS: Not yet supported
         - Android: Not yet supported
-    - Azure Information Protection unified labeling client: Minimum version of [2.10.xx](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
+    - Azure Information Protection unified labeling client: Version 2.10.xx that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
     - OneDrive sync app for Windows or macOS: Minimum version of 19.002.0121.0008
     - Endpoint data loss prevention (Endpoint DLP): xx
     - Apps and services that use the Microsoft Information Protection SDK: Minimum version of 1.7 
