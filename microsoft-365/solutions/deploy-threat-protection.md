@@ -1,6 +1,6 @@
 ---
-title: Deploy network security threat protection across Microsoft 365
-description: Learn how to deploy threat protection services and IT network security capabilities across Microsoft 365 E5.
+title: Deploy threat protection capabilities across Microsoft 365
+description: Learn how to deploy threat protection services and security capabilities across Microsoft 365 E5.
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
