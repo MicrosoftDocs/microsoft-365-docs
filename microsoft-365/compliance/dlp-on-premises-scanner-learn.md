@@ -62,14 +62,14 @@ There are a few extra concepts that you need to be aware of before you dig into 
 
 ### AIP repositories and content scan jobs
 
-You must create an AIP content scan jobs and identify the repositories that host the files that you want to be evaluated by DLP engine. Make sure you enable DLP rules in the created AIP content scan job, and set the **Enforce** option to **Off**, unless you want to proceed directly to the DLP enforcement stage.
+You must create an AIP content scan jobs and identify the repositories that host the files that you want to be evaluated by DLP engine. Make sure you enable DLP rules in the created AIP content scan job.
 
 ### Policy tips
 
 [Policy tips](use-notifications-and-policy-tips.md) are not available in on-premises scanner.
 
 
-### Viewing DLP on-premises scanner data
+### Viewing DLP on-premises scanner events
 
 You view DLP on-premises scanner data in the M365 Compliance Center [activity explorer](data-classification-activity-explorer.md). 
 
