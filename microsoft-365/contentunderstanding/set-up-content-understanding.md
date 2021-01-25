@@ -26,8 +26,8 @@ You can change your settings after initial setup in the Microsoft 365 admin cent
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
-- The SharePoint sites in which you want to enable form processing - all of them, some, or selected sites.
-- Your content center.
+- The SharePoint sites in which you want to enable form processing - all of them, some, or selected sites
+- The name and admins or your content center
 
 ## Requirements 
 
