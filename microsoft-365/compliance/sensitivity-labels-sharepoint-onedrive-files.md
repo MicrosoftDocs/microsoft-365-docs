@@ -97,6 +97,8 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
     - Encryption that was applied by using [Double Key Encryption](double-key-encryption.md)
     - Encryption that was applied independently from a label, for example, by directly applying a Rights Management protection template.
 
+- Labels configured for [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) are not supported and display the original language only.
+
 - If you delete a label that's been applied to a document in SharePoint or OneDrive, rather than remove the label from the applicable label policy, the document when downloaded won't be labeled or encrypted. In comparison, if the labeled document is stored outside SharePoint or OneDrive, the document remains encrypted if the label is deleted. Note that although you might delete labels during a testing phase, it's very rare to delete a label in a production environment.
 
 ## How to enable sensitivity labels for SharePoint and OneDrive (opt-in)
