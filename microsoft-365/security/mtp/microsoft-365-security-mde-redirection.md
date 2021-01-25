@@ -33,7 +33,9 @@ In alignment with Microsoft’s cross-domain approach to threat protection with 
 This guide explains how to route accounts to the new portal by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to the newMicrosoft 365 security center portal (security.microsoft.com).
 
 ## What to expect
-Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Endpoint portal at securitycenter.windows.com or securitycenter.microsoft.com, will be automatically routed to the new and integrated Microsoft 365 security center portal at security.microsoft.com.  
+Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Endpoint portal at securitycenter.windows.com or securitycenter.microsoft.com, will be automatically routed to the new and integrated Microsoft 365 security center portal at security.microsoft.com.
+ 
+Learn more about what’s changed: [Microsoft Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md).
 
 This includes redirection for direct access to the former portal via browser, including links pointing towards the former securitycenter.windows.com portal - such as links in email notifications, and links returned by SIEM API calls.  
 
@@ -96,9 +98,10 @@ This setting can be enabled again at any time.
 Once disabled, accounts will no longer be routed to security.microsoft.com, and you will once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com. 
 
 ## Related information
+- [Microsoft 365 security center overview](overview-security-center.md)
+- [Microsoft Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
 - [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR versus SIEM infographic](https://afrait.com/blog/xdr-versus-siem/) 
 - [The New Defender](https://afrait.com/blog/the-new-defender/) 
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender) 
-- [Microsoft security portals and admin centers](portals.md) 
-- [Overview of the Microsoft 365 security center](overview-security-center.md)  
+- [Microsoft security portals and admin centers](portals.md)
