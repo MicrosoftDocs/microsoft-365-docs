@@ -28,10 +28,6 @@ In Outlook on the web or other desktop Outlook applications, users may see notif
 
 > [!NOTE]
 > In some cases, your users will have to re-authenticate on their computer to generate the QR code.
-  
-## Before you begin
-
-You need to be a global administrator to configure these settings.
 
 ## Use Exchange PowerShell
 
