@@ -21,7 +21,9 @@ description: Microsoft Defender for Office 365 E5 and ATP P1 and ATP P2 customer
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 admins can now get a 360-degree view of email using the **Email entity page** <get URL from Shubhanshi>. This go-to email page was created to enhance information delivered on the [Threat Explorer 'email details' fly-out](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer-views?view=o365-worldwide), giving administrators a 360-degree view of an email.
+Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 admins have a 360-degree view of email using the **Email entity page**.
+
+This go-to email page was created to enhance information delivered on the [Threat Explorer 'email details' fly-out](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer-views?view=o365-worldwide).
 
 ## Reach the email entity page
 
@@ -32,7 +34,7 @@ Either of the existing Office Security and Compliance center (protection.office.
 |Security & Compliance |protection.office.com | Threat Management > Explorer   |
 |Microsoft 365 security center |security.microsoft.com | Email & Collaboration > Explorer |
 
-Once in Explorer, click the subject of an email you are investigating, and notice the gold bar at the top of the email fly-out. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select it to navigate to the new page.
+In Threat Explorer, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Click to view the new page.
 
 :::image type="content" source="../../media/email-entitypage-banner.png" alt-text="You will see a gold banner with the words *Try out our new email entity page with enriched data*, to click and navigate to the new experience.":::
 
@@ -122,6 +124,7 @@ Users will see enriched detonation details for known malicious attachments or hy
     *Domain Created Date*: Specifies the date of creation of the sending domain. A newly created domain is something you could be cautious of if other signals indicate some suspicious behavior.
 
 *Email Authentication*: Email authentication methods used by Microsoft 365 include SPF, DKIM, and DMARC.
+
     - Sender Policy Framework (**SPF**):  Describes results for SPF check for the message. Possible values can be:
         - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
         - Fail (IP address): The SPF check for the message failed and includes the sender's IP address. This is sometimes called hard fail.
