@@ -56,7 +56,8 @@ Refer to the table below for more on links and routing.
 |**Property**  |**Destination when redirection is OFF**  |**Destination when redirection is ON** |
 |---------|---------|---------|
 | Alert page  | Alert page in securitycenter.windows.com  | Redirected to the equivalent alert page in security.microsoft.com  |
-| Incident page  |Incident page in securitycenter.windows.com  | Redirected to the equivalent incident page in security.microsoft.com  |
+| Incident page  |Incident page in securitycenter.windows.com  | Redirected to the equivalent incident page in security.microsoft.com  
+| Alert page in security center portal | Alert page in security.microsoft.com | Alert page in security.microsoft.com | 
 | Incident page in security center portal | Incident page in security.microsoft.com  | Incident page in security.microsoft.com  |
 
 ## When does this take effect? 
