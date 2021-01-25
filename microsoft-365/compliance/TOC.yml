@@ -646,6 +646,9 @@
               href: commit-draft-collection.md
             - name: Collection statistics and reports
               href: collection-statistics-reports.md        
+            - name: Build search queries for collections
+              href: building-search-queries.md
+        
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
