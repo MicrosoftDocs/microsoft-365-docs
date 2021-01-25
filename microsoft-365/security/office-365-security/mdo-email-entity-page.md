@@ -103,43 +103,42 @@ Users will see enriched detonation details for known malicious attachments or hy
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-    *Exchange Transport Rules (ETRs or Mailflow rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange Transport Rules (ETRs or Mailflow rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
     
-    *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
+- *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
     
-    *Junk Mailbox Rule*: 'Junk' is hidden Inbox rule that's enabled by default in every mailbox.
-        - When the Junk email rule is enabled on the mailbox, Exchange Online Protection (EOP) is able to move messages to Junk according to some criteria. The move can be based on spam filtering verdict action *Move message to Junk Email folder*, or on the Blocked Senders list on the mailbox. This prevents the delivery of messages to the Junk Email folder based on the Safe Senders list on the mailbox.
-        - When the junk email rule is *disabled* on the mailbox, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action *Move message to Junk Email folder*, or the safe list collection on the mailbox.
+- *Junk Mailbox Rule*: 'Junk' is hidden Inbox rule that's enabled by default in every mailbox.
+    - When the Junk email rule is enabled on the mailbox, Exchange Online Protection (EOP) is able to move messages to Junk according to some criteria. The move can be based on spam filtering verdict action *Move message to Junk Email folder*, or on the Blocked Senders list on the mailbox. This prevents the delivery of messages to the Junk Email folder based on the Safe Senders list on the mailbox.
+    - When the junk email rule is *disabled* on the mailbox, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action *Move message to Junk Email folder*, or the safe list collection on the mailbox.
     
-    *Bulk Compliant Level (BCL)*: The Bulk Complaint Level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
+- *Bulk Compliant Level (BCL)*: The Bulk Complaint Level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
     
-    *Spam Confidence Level (SCL)*: The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam.
+- *Spam Confidence Level (SCL)*: The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam.
 
-    *Domain Name*: Is the sender domain name.
+- *Domain Name*: Is the sender domain name.
     
-    *Domain Owner*: Specifies the owner of the sending domain.
+- *Domain Owner*: Specifies the owner of the sending domain.
     
-    *Domain Location*: Specifies the location of the sending domain.
+- *Domain Location*: Specifies the location of the sending domain.
     
-    *Domain Created Date*: Specifies the date of creation of the sending domain. A newly created domain is something you could be cautious of if other signals indicate some suspicious behavior.
+- *Domain Created Date*: Specifies the date of creation of the sending domain. A newly created domain is something you could be cautious of if other signals indicate some suspicious behavior.
 
 *Email Authentication*: Email authentication methods used by Microsoft 365 include SPF, DKIM, and DMARC.
+- Sender Policy Framework (**SPF**):  Describes results for SPF check for the message. Possible values can be:
+    - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
+    - Fail (IP address): The SPF check for the message failed and includes the sender's IP address. This is sometimes called hard fail.
+    - Softfail (reason): The SPF record designated the host as not being allowed to send but is in transition.
+    - Neutral: The SPF record explicitly states that it does not assert whether the IP address is authorized to send.
+    - None: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
+    - Temperror: A temporary error has occurred. For example, a DNS error. The same check later might succeed.
+    - Permerror: A permanent error has occurred. For example, the domain has a badly formatted SPF record.
 
-    - Sender Policy Framework (**SPF**):  Describes results for SPF check for the message. Possible values can be:
-        - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
-        - Fail (IP address): The SPF check for the message failed and includes the sender's IP address. This is sometimes called hard fail.
-        - Softfail (reason): The SPF record designated the host as not being allowed to send but is in transition.
-        - Neutral: The SPF record explicitly states that it does not assert whether the IP address is authorized to send.
-        - None: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
-        - Temperror: A temporary error has occurred. For example, a DNS error. The same check later might succeed.
-        - Permerror: A permanent error has occurred. For example, the domain has a badly formatted SPF record.
-
-    - DomainKeys Identified Mail (**DKIM**): 
+- DomainKeys Identified Mail (**DKIM**): 
         - Pass: Indicates the DKIM check for the message passed.
         - Fail (reason): Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.
         - None: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed
 
-    - Domain-based Message Authentication, Reporting and Conformance (**DMARC**): 
+- Domain-based Message Authentication, Reporting and Conformance (**DMARC**): 
         - Pass: Indicates the DMARC check for the message passed.
         - Fail: Indicates the DMARC check for the message failed.
         - Bestguesspass: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed. 
