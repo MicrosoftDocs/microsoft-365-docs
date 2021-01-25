@@ -3,7 +3,7 @@ title: "Enable the Report Phish add-in"
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -82,7 +82,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center, go to the **Settings, integrated Apps & Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, and then click **Deploy Add-In**.
+1. In the Microsoft 365 admin center, go to the **Settings > Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, and then click **Deploy Add-In**.
 
    ![Services and add-ins page in the Microsoft 365 admin center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -130,7 +130,7 @@ People who have the add-in assigned to them will see the following icons:
 
 ## Review or edit settings for the Report Phishing add-in
 
-1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
+1. In the Microsoft 365 admin center, go to the **Settings > Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>.
 
 2. Find and select the **Report Phishing** add-in.
 
