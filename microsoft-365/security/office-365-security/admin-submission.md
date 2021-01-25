@@ -28,7 +28,15 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, admins can use the Submissions portal in the Security & Compliance Center to submit email messages, URLs, and attachments to Microsoft for scanning.
 
-When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange mail flow rules (also known as transport rules).
+When you submit an email message, you will get:
+
+1. **Email authentication check**: Details on whether email authentication passed or failed when it was delivered.
+2. **Policy hits**: Information about any policies that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts.
+3. **Payload reputation/detonation**: Examination of any URLs and attachments in the message.
+4. **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
+
+> [!IMPORTANT]
+> Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes.
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -73,7 +81,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-![URL submission example](../../media/submission-flyout-email.PNG)
+   ![URL submission example](../../media/submission-flyout-email.PNG)
 
 ### Send a suspect URL to Microsoft
 
@@ -87,7 +95,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 3. When you're finished, click the **Submit** button.
 
-![Email submission example](../../media/submission-url-flyout.png)
+   ![Email submission example](../../media/submission-url-flyout.png)
 
 ### Submit a suspected file to Microsoft
 
@@ -103,7 +111,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-![Attachment submission example](../../media/submission-file-flyout.PNG)
+   ![Attachment submission example](../../media/submission-file-flyout.PNG)
 
 ## View admin submissions
 
