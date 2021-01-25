@@ -20,3 +20,6 @@ description: ""
 
 # Collection statistics and reports in Advanced eDiscovery
 
+After you create a draft collection, you can view statistics on the retrieved items, such as the locations that had the most items that matched the search query. You can also preview a subset of the results. 
+
+When you've identified the set of documents you want to further examine, you can add the search results to a review set to collect and process.
