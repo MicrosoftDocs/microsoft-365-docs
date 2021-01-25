@@ -170,8 +170,7 @@ To add a contributor to a case:
 2. Select a case, then select the **Contributors** tab.
 3. Select **Add contributor**.
 4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list. This list is generated from the Azure Active Directory of your tenant subscription.
-5. On the **Add contributor** dialog, select the access level for the contributor. You can select **Permanent** or **Temporary**.
-6. Select **Add** to add the user as a contributor or select **Cancel** close the dialog without adding the user as a contributor.
+5. Select **Add** to add the user as a contributor or select **Cancel** close the dialog without adding the user as a contributor.
 
 ## Case actions
 
