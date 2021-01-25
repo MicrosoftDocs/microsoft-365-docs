@@ -1,19 +1,21 @@
 ---
-title: "Reporting and message trace"
-f1.keywords:
-- NOCSH
+title: Reporting and message trace
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
-ms.custom:
-- seo-marvel-apr2020
-description: "In this article, you'll learn about reports and troubleshooting tools available to Microsoft Exchange Online Protection (EOP) admins."
+ms.custom: 
+  - seo-marvel-apr2020
+description: In this article, you'll learn about reports and troubleshooting tools available to Microsoft Exchange Online Protection (EOP) admins.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Reporting and message trace in EOP

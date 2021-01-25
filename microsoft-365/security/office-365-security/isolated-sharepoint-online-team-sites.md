@@ -1,23 +1,25 @@
 ---
-title: "Isolated SharePoint Online team sites"
-f1.keywords:
-- NOCSH
+title: Isolated SharePoint Online team sites
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
-- Strat_O365_Enterprise
-ms.custom:
-- Ent_Solutions
-- seo-marvel-apr2020
+  - Ent_O365
+  - Strat_O365_Enterprise
+ms.custom: 
+  - Ent_Solutions
+  - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: Learn about isolated SharePoint Online team sites, including uses, requirements, and features they can be used with.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Isolated SharePoint Online team sites

@@ -4,16 +4,18 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: O365-seccomp
+
 audience: admin
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 localization_priority: Normal
 MS.collection: 
 search.appverid: MET150
 description: Threat remediation
 appliesto: 
-- Microsoft 365 Defender
+  - Microsoft 365 Defender
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Remediate malicious email delivered in Office 365

@@ -1,31 +1,33 @@
 ---
-title: "Safe Links"
-f1.keywords:
-- NOCSH
+title: Safe Links
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
 ms.article: overview
-f1_keywords:
-- '197503'
-ms.service: O365-seccomp
+f1_keywords: 
+  - '197503'
+
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-search.appverid:
-- MET150
-- MOE150
-- ZVO160
-- ZXL160
-- ZPP160
-- ZWD160
+ms.collection: 
+  - Strat_O365_IP
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+search.appverid: 
+  - MET150
+  - MOE150
+  - ZVO160
+  - ZXL160
+  - ZPP160
+  - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: "In this article, admins can learn about Safe Links protection in Defender for Office 365 to protect their organization from phishing and other attacks that use malicious URLs."
+description: In this article, admins can learn about Safe Links protection in Defender for Office 365 to protect their organization from phishing and other attacks that use malicious URLs.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Safe Links in Microsoft Defender for Office 365
@@ -246,7 +248,7 @@ You configure the list of URLs in the global settings for Safe Links. For instru
 
 **Notes**:
 
-- For a truly universal list of URLs that are blocked everywhere, see [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md).
+- For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
 - Limits:
   - The maximum number of entries is 500.
@@ -291,7 +293,7 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
   - Microsoft Teams
   - Office web apps
 
-  For a truly universal list of URLs that are allowed everywhere, see [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md).
+  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
 - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
 

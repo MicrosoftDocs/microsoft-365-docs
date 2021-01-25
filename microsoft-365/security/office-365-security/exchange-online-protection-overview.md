@@ -1,19 +1,21 @@
 ---
-title: "Exchange Online Protection (EOP) overview"
-f1.keywords:
-- NOCSH
+title: Exchange Online Protection (EOP) overview
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
-ms.custom:
-- seo-marvel-apr2020
-description: "Learn how Exchange Online Protection (EOP) can help protect your on-premises email organization in standalone and hybrid environments."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Learn how Exchange Online Protection (EOP) can help protect your on-premises email organization in standalone and hybrid environments.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Exchange Online Protection overview
