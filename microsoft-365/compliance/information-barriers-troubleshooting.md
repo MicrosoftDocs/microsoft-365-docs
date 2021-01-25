@@ -1,18 +1,17 @@
 ---
 title: "Troubleshooting information barriers"
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: Use this article as a guide for troubleshooting information barriers.
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: Use this article as a guide for troubleshooting information barriers.
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
 ---
 

@@ -1,18 +1,17 @@
 ---
 title: "Edit information barrier policies"
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: "Learn how to edit or remove policies for information barriers."
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Learn how to edit or remove policies for information barriers."
+f1.keywords:
+- NOCSH
 ---
 
 # Edit (or remove) information barrier policies

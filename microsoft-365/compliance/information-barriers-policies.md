@@ -1,11 +1,9 @@
 ---
 title: "Define information barrier policies"
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: Learn how to define policies for information barriers in Microsoft Teams.
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,7 +12,8 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 localization_priority: None
-description: Learn how to define policies for information barriers in Microsoft Teams.
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
 ---
 
