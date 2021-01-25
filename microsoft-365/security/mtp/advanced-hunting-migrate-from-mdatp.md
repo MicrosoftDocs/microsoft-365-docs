@@ -142,7 +142,7 @@ See the sample query below:
 ```kusto
 AlertInfo
 | where Timestamp > ago(7d)
-| where ServiceSource == "Microsoft Defender ATP"
+| where ServiceSource == "Microsoft Defender for Endpoint"
 | join AlertEvidence on AlertId
 ```
 
