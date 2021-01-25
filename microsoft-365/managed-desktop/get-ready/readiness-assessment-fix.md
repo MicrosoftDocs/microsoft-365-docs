@@ -65,15 +65,15 @@ You have at least one certificate connector and no errors are reported. However,
 
 ### Conditional access policies
 
-Conditional access policies in your Azure AD organization must not target any Microsoft Manage Desktop service accounts.
+Conditional access policies in your Azure AD organization must not prevent Microsoft Managed Desktop from managing your tenant in Intune and Azure AD.
 
 **Not ready**
 
-You have at least one conditional access policy that targets all users. Modify the policy to target a specific Azure AD group that does not include the Azure AD group of Microsoft Managed Desktop service accounts that will be created at enrollment. For steps, see [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups).
+You have at least one conditional access policy that targets all users. During Microsoft Managed Desktop enrollment, Microsoft Managed Desktop will modify conditional access policies that prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. After enrollment, you can review the Microsoft Managed Desktop conditional access policy in Microsoft Endpoint Manager. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Advisory**
 
-Make sure that any conditional access policies you have exclude the **Modern Workplace Service Accounts** Azure AD group. For steps, see [Adjust conditional access](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access). The **Modern Workplace Service Accounts** Azure AD group is a dynamic group that we create for the service when you enroll. You'll have to come back to exclude this group after enrollment. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
+You have conditional access policies that may prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Error**
 
@@ -145,16 +145,16 @@ Microsoft Store for Business either isn't enabled or isn't synced with Intune. F
 
 ### Multifactor authentication
 
-Multifactor authentication must not be applied to Microsoft Managed Desktop service accounts.
+Multifactor authentication must not prevent Microsoft Managed Desktop from managing your tenant in Intune and Azure AD.
 
 
 **Not ready**
 
-You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. Change the policy to use an assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop service accounts. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. At Microsoft Managed Desktop enrollment, Microsoft Managed Desktop will modify conditional access policies that prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service.  During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Advisory**
 
-Make sure that any conditional access policies that require multifactor authentication exclude the **Modern Workplace -All** Azure AD group. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+You have multifactor authentication required on conditional access policies that may prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Error**
 
