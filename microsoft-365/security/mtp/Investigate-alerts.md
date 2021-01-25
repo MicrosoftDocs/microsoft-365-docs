@@ -1,5 +1,5 @@
 ---
-title: Using alerts in Microsoft 365 Defender
+title: Investigate alerts in Microsoft 365 Defender
 description: Investigate incidents seen across devices, users, and mailboxes.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Using alerts in Microsoft 365 Defender
+# Investigate alerts in Microsoft 365 Defender
 **Applies to:**
 
 - Microsoft 365 Defender
@@ -35,10 +35,10 @@ In Microsoft 365 Defender, related alerts are aggregated together to form incide
 The alerts queue provides unparalleled visibility into alerts across identities, endpoints, data, apps, email and collaboration tools.
 
 
-## Digging into incidents using alert pages 
+## Using alert pages in investigations
 From the alerts tab of any incident page, selecting an alert brings you to the individual alert pages. The alert page is composed of three sections: impacted assets, alert story, and the details pane.
 
-![Image of sample alert page](/../../media/newalertpage2.png)
+![Image of sample alert page](../../media/newalertpage2.png)
 
 ### Analyze impacted assets
 Affected assets lists cards of mailboxes, devices and users affected by this alert. Selecting any of the affected assets populates the details side pane with information.
@@ -73,7 +73,7 @@ If you are experiencing a false alert with a line-of-business application, creat
 
 Selecting **Alerts** under Incidents & Alerts in the Microsoft 365 security center navigation pane brings you to the unified alert queue. Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft 365 Defender appear in this section. 
 
-*[SCREENSHOT OF ALERTS QUEUE]*
+![Image of sample alert page](../../media/unifiedalertqueue.png)
 
 The Alerts queue shows a list of alerts that were flagged in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view. The most recent alerts are showed at the top of the list helping you see the most recent alerts first.
 
@@ -98,5 +98,5 @@ To start an investigation on an incident, read [Investigate incidents in Microso
 ## Related topics
 
 - [Incidents overview](incidents-overview.md)
-- [Prioritize incidents](incident-queue.md)
+- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)

@@ -116,6 +116,8 @@
                       href: mtp/investigate-incidents.md
                     - name: Manage incidents
                       href: mtp/manage-incidents.md
+                    - name: Investigate alerts
+                      href: mtp/investigate-alerts.md                      
                 - name: Get email notifications
                   href: mtp/get-incident-notifications.md
             - name: Automated investigation and response
