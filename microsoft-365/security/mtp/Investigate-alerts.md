@@ -1,9 +1,9 @@
 ---
 title: Investigate alerts in Microsoft 365 Defender
-description: Investigate incidents seen across devices, users, and mailboxes.
+description: Investigate alerts seen across devices, users, and mailboxes.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -32,18 +32,19 @@ Alerts are the basis of all incidents and indicate the occurrence of malicious o
 
 In Microsoft 365 Defender, related alerts are aggregated together to form incidents. Incidents will always provide the broader context of an attack, however, investigating alerts can be valuable when deeper analysis is required or when specific remediation action is needed. 
 
-The alerts queue provides unparalleled visibility into alerts across identities, endpoints, data, apps, email and collaboration tools.
+The alerts queue provides unparalleled visibility into alerts across identities, endpoints, data, apps, email, and collaboration tools.
 
 
 ## Using alert pages in investigations
+
 From the Alerts tab of any incident page, selecting an alert brings you to the individual alert pages. An alert page is composed of three sections: impacted assets, alert story, and the details pane.
 
 ![Image of sample alert page](../../media/newalertpage2.png)
 
-Throughout an alert page, selecting the three-dot icon (**...**) beside any of the assets or entities allows you to see available actions like opening the specific asset page or performing specific remediation steps.
+Throughout an alert page, you can select the three-dot icon (**...**) beside any of the assets or entities so you can see available actions like opening the specific asset page or doing specific remediation steps.
 
 ### Analyze impacted assets
-The impacted assets section lists cards of mailboxes, devices and users affected by this alert. Selecting any of the assets populates the details side pane with information, including other alerts that occurred involving the assets, if any.
+The impacted assets section lists mailboxes, devices, and users affected by this alert. Selecting any of the asset cards populates the details side pane with information, including other alerts that occurred involving the assets, if any.
 
 
 ### Trace an alert's role in the alert story
@@ -69,7 +70,7 @@ Selecting Alerts under Incidents & Alerts in the Microsoft 365 security center n
 
 ![Image of sample alert page](../../media/unifiedalertqueue.png)
 
-The Alerts queue shows a list of alerts that were flagged in your network. By default, the queue displays alerts seen in the last 30 days. The most recent alerts are showed at the top of the list helping you see the most recent alerts first.
+The Alerts queue shows a list of alerts that were flagged in your network. By default, the queue displays alerts seen in the last 30 days. The most recent alerts are shown at the top of the list helping you see the most recent alerts first.
 
 On the top navigation, you can:
 
@@ -90,7 +91,7 @@ You can also filter alerts according to different criteria:
 
 
 To start an investigation on an incident, read [Investigate incidents in Microsoft 365 Defender](investigate-incidents.md)
-## Related topics
+## See also
 
 - [Incidents overview](incidents-overview.md)
 - [Investigate incidents](investigate-incidents.md)
