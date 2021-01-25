@@ -36,6 +36,8 @@ Historically, the [Microsoft Defender Security Center](https://docs.microsoft.co
 
 Take a look at the new security center: [https://security.microsoft.com](https://security.microsoft.com).
 
+Learn more about the benefits: [Overview of the Microsoft 365 security center](overview-security-center.md)
+
 ## What's changed
 
 This table is a quick reference of the changes between the Microsoft Defender Security Center and the new Microsoft 365 security center.
@@ -134,4 +136,5 @@ This what the current Microsoft Defender Security Center navigation pane looks l
 ## Related information
 
 - [Microsoft 365 security center](overview-security-center.md)
-- [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
+- [Microsoft Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
+- [Redirecting accounts from Microsoft Defender for Endpoint to the new Microsoft 365 security center](microsoft-365-security-mde-redirection.md)
