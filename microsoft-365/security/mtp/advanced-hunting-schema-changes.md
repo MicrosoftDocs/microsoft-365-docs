@@ -63,7 +63,6 @@ Naming changes are automatically applied to queries that are saved in the securi
 | `DetectionSource` | ThreatExperts	| Microsoft Threat Experts | Rebranding |
 | `DetectionSource` | 3rd party TI | 3rd Party sensors | Rebranding |
 | `ServiceSource` | Microsoft Defender ATP|	Microsoft Defender for Endpoint | Rebranding |
-| `ServiceSource` | MCAS | Microsoft Cloud App Security | Rebranding |
 |`ServiceSource` |Microsoft Threat Protection	| Microsoft 365 Defender | Rebranding |
 | `ServiceSource` | Office 365 ATP	|Microsoft Defender for Office 365 | Rebranding |
 | `ServiceSource` |Azure ATP	|Microsoft Defender for Identity | Rebranding |
