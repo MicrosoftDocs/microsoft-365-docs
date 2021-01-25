@@ -1,9 +1,8 @@
 ---
 title: "Learn about information barriers in Microsoft 365"
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: ITPro
@@ -14,7 +13,8 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 localization_priority: None
-description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
 ---
 
