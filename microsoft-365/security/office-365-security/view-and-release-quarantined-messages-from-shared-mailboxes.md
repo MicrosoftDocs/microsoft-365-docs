@@ -3,19 +3,21 @@ title: View and release quarantined messages from shared mailboxes
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer:
-ms.date:
+ms.reviewer: 
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
 ROBOTS: NOINDEX
-description: "Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to."
+description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # View and release quarantined messages from shared mailboxes

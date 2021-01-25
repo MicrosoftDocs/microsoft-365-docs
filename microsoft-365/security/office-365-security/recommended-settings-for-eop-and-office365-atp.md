@@ -1,23 +1,25 @@
 ---
-title: "Microsoft recommendations for EOP and Defender for Office 365 security settings"
+title: Microsoft recommendations for EOP and Defender for Office 365 security settings
 keywords: Office 365 security recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365 , set up Defender for Office 365 , set up EOP, configure Defender for Office 365, configure EOP, security configuration
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date:
+ms.date: 
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?"
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security

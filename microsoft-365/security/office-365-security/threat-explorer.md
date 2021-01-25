@@ -1,26 +1,25 @@
 ---
 title: Threat Explorer and Real-time detections
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
-
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-office365
-
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
 description: Use Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
-
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Threat Explorer and Real-time detections
