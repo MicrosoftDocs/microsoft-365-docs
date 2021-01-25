@@ -1,26 +1,28 @@
 ---
 title: Protect on-premises mailboxes in China with standalone EOP
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- GEU150
-- GMA150
-- GPA150
-- MET150
+search.appverid: 
+  - GEU150
+  - GMA150
+  - GPA150
+  - MET150
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins in China using Office 365 operated by 21Vianet can learn how to use standalone Exchange Online Protection (EOP) to protect their on-premises mailboxes."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins in China using Office 365 operated by 21Vianet can learn how to use standalone Exchange Online Protection (EOP) to protect their on-premises mailboxes.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Protect on-premises mailboxes in China with standalone EOP

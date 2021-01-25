@@ -133,6 +133,35 @@ If you're an organization with an Exchange on-premises deployment or an external
 >[!IMPORTANT]
 >You must file a request with Microsoft Support to enable your organization to use the graphical user interface in the Security & Compliance Center to search for Teams chat data for on-premises users. For more information, see [Searching cloud-based mailboxes for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
+To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
+
+1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) for your global communication compliance policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
+
+    - **MemberDepartRestriction = Closed**. Ensures that users cannot remove themselves from the distribution group.
+    - **MemberJoinRestriction = Closed**. Ensures that users cannot add themselves to the distribution group.
+    - **ModerationEnabled = True**. Ensures that all messages sent to this group are subject to approval and that the group is not being used to communicate outside of the communication compliance policy configuration.
+
+    ```PowerShell
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+
+2. Select an unused [Exchange custom attribute](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) to track users added to the communication compliance policy in your organization.
+
+3. Run the following PowerShell script on a recurring schedule to add users to the communication compliance policy:
+
+    ```PowerShell
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
+
 For more information about setting up groups, see:
 
 - [Create and manage distribution groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
@@ -164,7 +193,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Confirm or update the policy name. Policy names cannot be changed once the policy is created.
     
-    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
+    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude. When using the conflict of interest template, you'll select two groups or two users to monitor for internal communications.
     
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
     

@@ -50,8 +50,9 @@ Use the following instructions for the two admin steps.
 > [!NOTE]
 > Auto-policies use service-side labeling with conditions to automatically apply retention labels. You can also automatically apply a retention label with a label policy when you do the following: 
 >
-> - Apply a default retention label for SharePoint and Outlook, so that unlabeled content is automatically labeled
->- Automatically applying a retention label to email by using rules
+> - Apply a retention label to a document understanding model in SharePoint Syntex
+> - Apply a default retention label for SharePoint and Outlook
+>- Apply a retention label to email by using Outlook rules
 >
 > For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-labels.md).
 
@@ -123,7 +124,7 @@ You can apply retention labels to content automatically when that content contai
 
 #### Auto-apply labels to content with specific types of sensitive information
 
-When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. For example, the template shown here looks for U.S. ITIN, SSN, and passport numbers from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data template**:
+When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. For example, the template shown here looks for U.S. ITIN, SSN, and passport numbers from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
 ![Policy templates with sensitive information types](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
@@ -241,10 +242,10 @@ When you choose the option for a trainable classifier, you can select one of the
 
 To automatically apply a label by using this option, SharePoint sites and mailboxes must have at least 10 MB of data.
 
-For more information about trainable classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
+For more information about trainable classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
 > [!TIP]
-> If you use trainable classifiers for Exchange, see the recently released [How to retrain a classifier in content explorer (preview)](classifier-how-to-retrain-content-explorer.md).
+> If you use trainable classifiers for Exchange, see [How to retrain a classifier in content explorer](classifier-how-to-retrain-content-explorer.md).
 
 To consider when using trainable classifiers to auto-apply retention labels:
 

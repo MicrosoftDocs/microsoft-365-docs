@@ -20,6 +20,7 @@ ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
 ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- okr_smb
 description: Now that you've set up Microsoft 365, learn how to install individual Office applications on your Mac, PC, or mobile devices and set up email in Outlook.
 ---
 

@@ -4,21 +4,22 @@ description: Learn about email attachment information in the EmailAttachmentInfo
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailAttachmentInfo, network message id, sender, recipient, attachment id, attachment name, malware verdict
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 mms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
+ms.technology: m365d
 ---
 
 # EmailAttachmentInfo
@@ -47,6 +48,10 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
 | `MalwareFilterVerdict` | string | Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware |
 | `MalwareDetectionMethod` | string | Method used to detect malware in the email: Antimalware engine, File reputation, Safe Attachments |
+| `SenderDisplayName` | string | Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname |
+| `SenderObjectId` | string | Unique identifier for the sender’s account in Azure AD |
+| `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `ThreatNames` | string | Detection name for malware or other threats found |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

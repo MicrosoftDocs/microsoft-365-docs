@@ -1,19 +1,21 @@
 ---
 title: Sample script for EOP settings - multiple tenants
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
-ms.custom:
-- seo-marvel-apr2020
-description: "In this article, you'll learn how to use PowerShell to apply configuration settings to your tenants in Microsoft Exchange Online Protection (EOP)."
+ms.custom: 
+  - seo-marvel-apr2020
+description: In this article, you'll learn how to use PowerShell to apply configuration settings to your tenants in Microsoft Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Sample script for applying EOP settings to multiple tenants
@@ -85,7 +87,7 @@ Import-Module ExchangeOnlineManagement
 
 # Loop through each entry from the .csv file.
 ForEach ($Company in $CompanyList) {
-  
+
 # Get the current entry's UserName.
 $UserName = $Company.UserName
 

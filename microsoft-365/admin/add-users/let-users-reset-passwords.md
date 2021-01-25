@@ -2,8 +2,8 @@
 title: "Let users reset their own passwords"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150

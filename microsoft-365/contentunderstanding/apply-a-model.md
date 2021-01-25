@@ -7,7 +7,9 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 localization_priority: Priority
 description: "Learn how to apply a published a model to a SharePoint document library"
 ---
@@ -72,6 +74,9 @@ While an applied model processes all files uploaded to the document library afte
 3. The files you selected will be added to the queue to be processed.
 
       ![Classify and extract](../media/content-understanding/extract-classify.png)</br> 
+
+> [!NOTE]
+> You can copy individual files to a library and apply them to a model, but not folders.
 
 ## See Also
 [Create a classifier](create-a-classifier.md)

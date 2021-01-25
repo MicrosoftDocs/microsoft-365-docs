@@ -1,18 +1,20 @@
 ---
-title: "Message trace in the Security & Compliance Center"
-f1.keywords:
-- NOCSH
+title: Message trace in the Security & Compliance Center
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can use message trace in the Security & Compliance Center to find out what happened to messages."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can use message trace in the Security & Compliance Center to find out what happened to messages.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Message trace in the Security & Compliance Center
@@ -80,7 +82,7 @@ The default value is **2 days**, but you can specify date/time ranges of up to 9
 
   For 10 days or less, the results are available instantly as a **Summary** report. If you specify a time range that's even slightly greater than 10 days, the results will be delayed as they are only available as a downloadable CSV file ( **Enhanced summary** or **Extended** reports).
 
-  For more information about the different report types, see the [Choose report type](#choose-report-type) section in this topic.
+  For more information about the different report types, see the [Choose report type](#choose-report-type) section in this article.
 
   **Note**: Enhanced summary and Extended reports are prepared using archived message trace data, and it can take up to several hours before your report is available for download. Depending on how many other admins have also submitted report requests around the same time, you might also notice a delay before processing starts for your queued request.
 
@@ -180,7 +182,7 @@ Related message records are records that shared the same Message ID. Remember, e
 
 After you select a row's check box, you can find related records for the message by clicking the **Find related** button that appears, or by selecting **More options** ![More](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Find related records for this message**).
 
-For more information about the Message ID, see the Message ID section earlier in this topic.
+For more information about the Message ID, see the Message ID section earlier in this article.
 
 #### Message trace details
 
@@ -220,7 +222,7 @@ The message trace details contain the following additional information that's no
 
 - **More information**: This section contains the following details:
 
-  - **Message ID**: This value is described in the [Message ID](#message-id) section earlier in this topic. For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **Message ID**: This value is described in the [Message ID](#message-id) section earlier in this article. For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
   - **Message size**
 
@@ -248,7 +250,7 @@ Available (completed) Enhanced summary reports are available in the **Downloadab
 
 - **total_bytes**: The size of the message in bytes, including attachments.
 
-- **message_id**: This value is described in the [Message ID](#message-id) section earlier in this topic. For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: This value is described in the [Message ID](#message-id) section earlier in this article. For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
 - **network_message_id**: A unique message ID value that persists across all copies of the message that might be created due to bifurcation or distribution group expansion. An example value is `1341ac7b13fb42ab4d4408cf7f55890f`.
 
@@ -260,7 +262,7 @@ Available (completed) Enhanced summary reports are available in the **Downloadab
 
 - **delivery_priority**<sup>*</sup>: Whether the message was sent with **High**, **Low**, or **Normal** priority.
 
-<sup>*</sup>These properties are only available in Enhanced summary reports.
+<sup>*</sup> These properties are only available in Enhanced summary reports.
 
 ### Extended reports
 

@@ -56,7 +56,7 @@ Device registration is deactivated after migration of the tenant and cannot be e
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## Windows Hybrid Azure AD join
+## Hybrid Azure AD join
 
 ### Windows down-level
 
@@ -130,7 +130,13 @@ The preceding command only needs to be run once in an administrative context on 
 The device is automatically joined to Azure AD without user or admin intervention as long as the device has network connectivity to global Azure AD endpoints. 
 
 
-## Windows Azure AD Join
+## Azure AD Join
+
+**IMPORTANT:** The Intune service principal will be enabled after commerce migration, which implies the activation of Azure AD Device Registration. If you blocked Azure AD Device Registration before migration, you must disable the Intune service principal with PowerShell to disable Azure AD Device Registration with the Azure AD portal again. You can disable the Intune service principal with this command in the Azure Active Directory PowerShell for Graph module.
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ### Unjoin
 
@@ -169,7 +175,7 @@ The preceding command only needs to be run once in an administrative context on 
 The user can join the device to Azure AD from Windows settings: **Settings > Accounts > Access Work Or School > Connect**.
  
 
-## Windows Azure AD Registered (Company owned)
+## Azure AD Registered (Company owned)
 
 To determine whether the Windows 10 device is Azure AD–registered, run the following command on the device:
 
@@ -236,7 +242,7 @@ To unregister and re-register the device on Android from Company Portal:
 3.	From the ellipses (three dots) menu, select **Remove Device**, and complete the removal by confirming in the dialog.
 4.	You should now be logged out of the Company Portal app. Select **Sign in** to re-register the device.
 
-For more information about any actions required during the migration phase of this workload, or impact to administration or usage, review the information about Azure Active Directory in [Additional general information for the migration from Microsoft Cloud Deutschland](ms-cloud-germany-transition-add-general.md#azure-active-directory).
+For more information about any actions required during the migration phase of this workload, or impact to administration or usage, review the information about Azure Active Directory (Azure AD) in [Additional Azure AD information for the migration from Microsoft Cloud Deutschland](ms-cloud-germany-transition-azure-ad.md).
 
 ## iOS
 
@@ -272,7 +278,7 @@ Moving through the transition:
 
 - [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
 - [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
-- Additional information for [services](ms-cloud-germany-transition-add-general.md), [devices](ms-cloud-germany-transition-add-devices.md), and [experiences](ms-cloud-germany-transition-add-experience.md).
+- Additional information for [Azure AD](ms-cloud-germany-transition-azure-ad.md), [devices](ms-cloud-germany-transition-add-devices.md), [experiences](ms-cloud-germany-transition-add-experience.md), and [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud apps:
 

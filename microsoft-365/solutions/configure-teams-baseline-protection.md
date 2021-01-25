@@ -3,7 +3,7 @@ title: "Configure teams with baseline protection"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -82,14 +82,14 @@ To update the site sharing settings
 1. In the tool bar for the team, click **Files**.
 2. Click **Open in SharePoint**.
 3. In the tool bar of the SharePoint site, click the settings icon, and then click **Site permissions**.
-4. In the **Site permissions** pane, under **Sharing settings**, click **Change sharing settings**.
+4. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
 5. Under **Sharing permissions**, choose **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**, and then click **Save**.
 
 ## Additional protections
 
 Microsoft 365 offers additional methods for securing your content. Consider if the following options would help improve security for your organization.
 
-- Have your guest users agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+- Have guests agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
 - Configure a [session timeout policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
 - Create [sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) and use [data loss protection](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to set policies around accessing sensitive information.
 

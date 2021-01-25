@@ -1,17 +1,19 @@
 ---
-title: "Feature permissions in EOP"
-f1.keywords:
-- NOCSH
+title: Feature permissions in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
-description: "Learn about the permission that are required for tasks in standalone Exchange Online Protection"
+description: Learn about the permission that are required for tasks in standalone Exchange Online Protection
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Permissions in standalone EOP

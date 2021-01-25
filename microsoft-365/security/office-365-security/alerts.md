@@ -1,25 +1,26 @@
 ---
-title: "Alerts in the Security & Compliance Center"
-f1.keywords:
-- NOCSH
+title: Alerts in the Security & Compliance Center
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: hub-page
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
-- BCS160
+search.appverid: 
+  - MOE150
+  - MET150
+  - BCS160
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 description: Learn about how to use the alerts features in the Office 365 Security & Compliance Center to view and manage alerts, including managing advanced alerts.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Alerts in the Security & Compliance Center

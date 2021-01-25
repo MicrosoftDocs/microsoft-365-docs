@@ -3,24 +3,25 @@ title: Go to the Action center to view and approve your automated investigation 
 description: Use the Action Center to view details about automated investigation and approve pending actions
 keywords: Action Center, threat protection, investigation, alert, pending, automated, detection
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
+ms.date: 12/09/2020
+ms.technology: m365d
 ---
 
 # The Action center
@@ -31,7 +32,7 @@ ms.date: 09/16/2020
 **Applies to:**
 - Microsoft 365 Defender
 
-Use the Action center to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and resulting verdict, [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) occur automatically or upon approval by your organization's security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
+Use the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and resulting verdict, [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) can occur automatically or upon approval by your organization's security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
 
 ![Action Center](../../media/air-actioncenter.png)
 
@@ -69,7 +70,7 @@ Your security operations team can operate more effectively and efficiently, beca
 
 ## Available actions
 
-As remediation actions are taken, they're listed on the History tab in the Action center. Such actions include the following:
+As remediation actions are taken, they're listed on the **History** tab in the Action center. Such actions include the following:
 
 - Collect investigation package 
 - Isolate device (this action can be undone) 
@@ -80,6 +81,26 @@ As remediation actions are taken, they're listed on the History tab in the Actio
 - Restrict code execution (this action can be undone) 
 - Run antivirus scan 
 - Stop and quarantine 
+
+> [!NOTE]
+> In addition to remediation actions that are taken automatically, your security operations team can take manual actions to address detected threats. For more information about automatic and manual remediation actions, see [Remediation actions](mtp-remediation-actions.md).
+
+## Action source
+
+(**NEW!**) As you know, Microsoft 365 Defender brings together automated investigation and response capabilities across multiple services, such as [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). The new and improved Action center now includes an **Action source** column that tells you where each remediation action came from. 
+
+The following table describes possible **Action source** values:
+
+| Action source value | Description |
+|:-----|:---|
+| **Manual device action** | A manual action taken on a device. Examples include [device isolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) or [file quarantine](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#stop-and-quarantine-files). |
+| **Manual email action** | A manual action taken on email. An example includes soft-deleting email messages or [remediating an email message](https://docs.microsoft.com/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365). |
+| **Automated device action** | An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. (See [Remediation actions in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions).) |
+| **Automated email action** | An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. (See [Remediation actions in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions).) |
+| **Advanced hunting action** | Actions taken on devices or email with [advanced hunting](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview). |
+| **Explorer action** | Actions taken on email content with [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+| **Manual live response action** | Actions taken on a device with [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response). Examples include deleting a file, stopping a process, and removing a scheduled task. |
+| **Live response action** | Actions taken on a device with [Microsoft Defender for Endpoint APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis). Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
 
 ## Required permissions for Action center tasks
 

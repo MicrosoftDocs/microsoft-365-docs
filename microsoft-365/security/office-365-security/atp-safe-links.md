@@ -1,31 +1,33 @@
 ---
-title: "Safe Links"
-f1.keywords:
-- NOCSH
+title: Safe Links
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
 ms.article: overview
-f1_keywords:
-- '197503'
-ms.service: O365-seccomp
+f1_keywords: 
+  - '197503'
+
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
-- M365-security-compliance 
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-search.appverid:
-- MET150
-- MOE150
-- ZVO160
-- ZXL160
-- ZPP160
-- ZWD160
+ms.collection: 
+  - Strat_O365_IP
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+search.appverid: 
+  - MET150
+  - MOE150
+  - ZVO160
+  - ZXL160
+  - ZPP160
+  - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: "In this article, admins can learn about Safe Links protection in Defender for Office 365 to protect their organization from phishing and other attacks that use malicious URLs."
+description: In this article, admins can learn about Safe Links protection in Defender for Office 365 to protect their organization from phishing and other attacks that use malicious URLs.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Safe Links in Microsoft Defender for Office 365
@@ -45,7 +47,7 @@ Safe Links protection is available in the following locations:
 
 - **Microsoft Teams** (currently in TAP Preview): Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links in Teams, you need to create one or more Safe Links policies**.
 
-  For more information about Safe Links protection in Teams, see the [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams) section later in this topic.
+  For more information about Safe Links protection in Teams, see the [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams) section later in this article.
 
 - **Office 365 apps**: Safe Links protection for Office 365 apps is available in supported desktop, mobile, and web aps. You **configure** Safe Links protection for Office 365 apps in the global setting that are **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links settings in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
@@ -75,8 +77,8 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 |Jean is a member of the marketing department. Safe Links protection for Office 365 apps is turned on in the global settings for Safe Links, and a Safe Links policy that applies to members of the marketing department exists. Jean opens a PowerPoint presentation in an email message, and then clicks a URL in the presentation.|Jean is protected by Safe Links. <p> Jean is included in a Safe Links policy, and Safe Links protection for Office 365 apps is turned on. <p> For more information about the requirements for Safe Links protection in Office 365 apps, see the [Safe Links settings for Office 365 apps](#safe-links-settings-for-office-365-apps) section later in this article.|
 |Chris's Microsoft 365 E5 organization has no Safe Links policies configured. Chris receives an email from an external sender that contains a URL to a malicious website that he ultimately clicks.|Chris is not protected by Safe Links. <p> An admin must create at least one Safe Links policy for anyone to get Safe Links protection in inbound email messages. Chris must be included in the conditions of policy to get Safe Links protection.|
 |In Pat's organization, no admins have created any Safe Links policies, but Safe Links protection for Office 365 apps is turned on. Pat opens a Word document and clicks a URL in the file.|Pat is not protected by Safe Links. <p> Although Safe Links protection for Office 365 apps is turned on globally, Pat is not included in any active Safe Links policies, so the protection can't be applied.|
-|In Lee's organization, `https://tailspintoys.com` is configured in the **Block the following URLs** list in the global settings for Safe Links. A Safe Links policy that includes Lee already exists. Lee receives an email message that contains the URL `https://tailspintoys.com/aboutus/trythispage`. Lee clicks the URL.|The URL might be automatically blocked for Lee; it depends on the URL entry in the list and the email client Lee used. For more information, see the ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links) section later in this topic.|
-|Jamie and Julia both work for contoso.com. A long time ago, admins configured Safe Links policies that apply to both of Jamie and Julia. Jamie sends an email to Julia, not knowing that the email contains a malicious URL.|Julia is protected by Safe Links **if** the Safe Links policy that applies to her is configured to apply to messages between internal recipients. For more information, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this topic.|
+|In Lee's organization, `https://tailspintoys.com` is configured in the **Block the following URLs** list in the global settings for Safe Links. A Safe Links policy that includes Lee already exists. Lee receives an email message that contains the URL `https://tailspintoys.com/aboutus/trythispage`. Lee clicks the URL.|The URL might be automatically blocked for Lee; it depends on the URL entry in the list and the email client Lee used. For more information, see the ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links) section later in this article.|
+|Jamie and Julia both work for contoso.com. A long time ago, admins configured Safe Links policies that apply to both of Jamie and Julia. Jamie sends an email to Julia, not knowing that the email contains a malicious URL.|Julia is protected by Safe Links **if** the Safe Links policy that applies to her is configured to apply to messages between internal recipients. For more information, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.|
 
 ## Safe Links settings for email messages
 
@@ -246,7 +248,7 @@ You configure the list of URLs in the global settings for Safe Links. For instru
 
 **Notes**:
 
-- For a truly universal list of URLs that are blocked everywhere, see [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md).
+- For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
 - Limits:
   - The maximum number of entries is 500.
@@ -269,7 +271,7 @@ Examples of the values that you can enter and their results are described in the
 
 |Value|Result|
 |---|---|
-|`contoso.com` <br/> or <br/> `*contoso.com*`|Blocks the domain, subdomains, and paths. For example, `https://www.contoso.com`, `https://sub.contoso.com`, and `https://contoso.com/abc` are blocked.|
+|`contoso.com` <p> or <p> `*contoso.com*`|Blocks the domain, subdomains, and paths. For example, `https://www.contoso.com`, `https://sub.contoso.com`, and `https://contoso.com/abc` are blocked.|
 |`https://contoso.com/a`|Blocks `https://contoso.com/a` but not additional subpaths like `https://contoso.com/a/b`.|
 |`https://contoso.com/a*`|Blocks `https://contoso.com/a` and additional subpaths like `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Blocks a subdomain (`toys` in this example) but allow clicks to other domain URLs (like `https://contoso.com` or `https://home.contoso.com`).|
@@ -291,7 +293,7 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
   - Microsoft Teams
   - Office web apps
 
-  For a truly universal list of URLs that are allowed everywhere, see [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md).
+  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
 - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
 

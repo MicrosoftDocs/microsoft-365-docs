@@ -70,11 +70,13 @@
           items: 
             - name: Working with Microsoft Consulting Services
               href: get-ready/apps-MCS.md
-        - name: Use the Readiness assessment tool
+        - name: Use readiness assessment tools
           href: get-ready/readiness-assessment-tool.md
           items:
-            - name: Fix issues found by the readiness assessment tool
+            - name: Fix issues found by the online readiness assessment tool
               href: get-ready/readiness-assessment-fix.md
+            - name: Downloadable readiness assessment checker
+              href: get-ready/readiness-assessment-downloadable.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
@@ -125,9 +127,6 @@
           items:
             - name: Device inventory report
               href: working-with-managed-desktop/device-inventory-report.md
-        - name: Work with insights
-          href: working-with-managed-desktop/insights.md
-          items: 
             - name: Usage insights
               href: working-with-managed-desktop/usage-insights.md
             - name: Reliability insights

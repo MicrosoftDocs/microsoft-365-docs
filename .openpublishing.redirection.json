@@ -336,6 +336,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/overview-data-investigations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/manage-data-spillage-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/data-spillage-scenariosearch-and-purge",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/delete-items-from-original-locations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/office-365-advanced-ediscovery.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/quick-setup-for-advanced-ediscovery.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/get-started-with-advanced-ediscovery",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Windows.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
       "redirect_document_id": false
@@ -1686,6 +1711,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/compliance/custom-sensitive-info-types.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/compliance/offering-23-NYCRR-Part-500.md",
       "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-23-NYCRR-Part-500",
       "redirect_document_id": false
@@ -2551,9 +2581,74 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/compliance/get-started-with-dlp-policy.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies",
+      "source_path": "microsoft-365/knowledge/knowledge-management-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-overview",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/knowledge/work-with-topics.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/manage-topics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/index.md",
+      "redirect_url": "move-from-google-workspace-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/knowledge/give-user-permissions-to-the-topic-center.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/solutions/industry-specific-guidance-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/solutions/foundation-solutions-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/solutions/workload-solutions-scenarios-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/solutions/solution-architecture-center.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/solutions/productivity-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitoring-and-reporting.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitor-and-report-identities.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitor-data.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitor-devices.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/monitor-apps.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+      "redirect_document_id": false
     }
   ]
 }

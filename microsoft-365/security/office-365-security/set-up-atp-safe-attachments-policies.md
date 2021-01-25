@@ -1,22 +1,24 @@
 ---
-title: "Set up Safe Attachments policies in Microsoft Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: Set up Safe Attachments policies in Microsoft Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
 description: Learn about how to define Safe Attachments policies to protect your organization from malicious files in email.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Set up Safe Attachments policies in Microsoft Defender for Office 365
@@ -46,7 +48,7 @@ The difference between these two elements isn't obvious when you manage Safe Att
 In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) section later in this article.
 
 > [!NOTE]
-> In the global settings area of Safe Attachments settings, you configure features that are not dependent on Safe Attachments policies. For instructions see [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) and [Safe Documents in Microsoft 365 E5](safe-docs.md).
+> In the global settings area of Safe Attachments settings, you configure features that are not dependent on Safe Attachments policies. For instructions see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) and [Safe Documents in Microsoft 365 E5](safe-docs.md).
 
 ## What do you need to know before you begin?
 
@@ -54,10 +56,16 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- To view, create, modify, and delete Safe Attachments policies, you need to be a member of one of the following role groups:
+- You need to be assigned permissions before you can do the procedures in this article:
+  - To create, modify, and delete Safe Links policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center **and** a member of the **Organization Management** role group in Exchange Online.
+  - For read-only access to Safe Links policies, you need to be a member of the **Global Reader** or **Security Reader** role groups in the Security & Compliance Center.
 
-  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+
+  **Notes**:
+
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 - For our recommended settings for Safe Attachments policies, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -155,7 +163,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
    - Move the toggle to the left ![Turn policy off](../../media/scc-toggle-off.png) to disable the policy.
 
-   - Move the toggle to the right ![Turn policy on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to enable the policy.
+   - Move the toggle to the right ![Turn policy on](../../media/scc-toggle-on.png) to enable the policy.
 
 ### Set the priority of Safe Attachments policies
 
