@@ -1,23 +1,24 @@
 ---
-title: "View the results of an automated investigation in Microsoft 365"
+title: View the results of an automated investigation in Microsoft 365
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "During and after an automated investigation in Microsoft 365, you can view the results and key findings."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: During and after an automated investigation in Microsoft 365, you can view the results and key findings.
 ms.date: 11/05/2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Details and results of an automated investigation in Microsoft 365
