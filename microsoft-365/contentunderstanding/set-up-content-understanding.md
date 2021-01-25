@@ -21,15 +21,15 @@ Admins can use the Microsoft 365 admin center to set up [Microsoft SharePoint Sy
 
 Consider the following before you start:
 
-- Which SharePoint sites will you enable form processing? All of them, some, or select sites?
-- What will you name of your default content center?
+- In which SharePoint sites will you enable form processing? All of them, some, or select sites?
+- What will you name your default content center?
 
 You can change your settings after initial setup in the Microsoft 365 admin center.
 
-Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
+Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
-- The SharePoint sites that you want to enable form processing - all of them, some, or selected sites
-- Your content center and the name of the primary site admin
+- The SharePoint sites in which you want to enable form processing - all of them, some, or selected sites
+- The name and admins or your content center
 
 ## Requirements 
 
@@ -52,8 +52,8 @@ As an admin, you can also make changes to your selected settings anytime after s
 4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
      For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
-      - **All SharePoint libraries** to make it available to all SharePoint libraries in your organization.</br>
-      - **Only libraries in selected sites**, and then select the sites in which you want to make it available or upload a list of up to 50 sites.</br>
+      - **Libraries in all SharePoint sites** to make it available to all SharePoint libraries in your organization.</br>
+      - **Libraries in selected SharePoint sites**, and then select the sites in which you want to make it available or upload a list of up to 50 sites.</br>
       - **No SharePoint libraries** if you don't want to make it available to any sites (you can change this after setup).
 
    > [!div class="mx-imgBorder"]
@@ -111,4 +111,3 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 [Overview of the form processing model](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
 [Step-by-Step: How to Build a Document Understanding Model (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
-
