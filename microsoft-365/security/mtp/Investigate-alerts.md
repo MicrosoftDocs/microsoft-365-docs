@@ -39,7 +39,7 @@ The alerts queue provides unparalleled visibility into alerts across identities,
 
 From the Alerts tab of any incident page, selecting an alert brings you to the individual alert pages. An alert page is composed of three sections: impacted assets, alert story, and the details pane.
 
-![Image of sample alert page](../../media/newalertpage2.png)
+![Image of example alert page](../../media/newalertpage2.png)
 
 Throughout an alert page, you can select the three-dot icon (**...**) beside any of the assets or entities so you can see available actions like opening the specific asset page or doing specific remediation steps.
 
