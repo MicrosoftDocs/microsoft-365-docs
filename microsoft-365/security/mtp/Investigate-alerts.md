@@ -34,7 +34,7 @@ Alerts are the basis of all incidents and indicate the occurrence of malicious o
 
 In Microsoft 365 Defender, related alerts are aggregated together to form incidents. Incidents will always provide the broader context of an attack, however, investigating alerts can be valuable when deeper analysis is required or when specific remediation action is needed. 
 
-The alerts queue provides unparalleled visibility into alerts across identities, endpoints, data, apps, email, and collaboration tools.
+The unified alerts queue in Microsoft 365 Defender provides unparalleled visibility into alerts across identities, endpoints, data, apps, email, and collaboration tools.
 
 
 ## Using alert pages in investigations
