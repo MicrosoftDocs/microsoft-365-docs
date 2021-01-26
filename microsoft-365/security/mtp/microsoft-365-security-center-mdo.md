@@ -25,11 +25,11 @@ ms.technology: m365d
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-The new [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center.
+The improved [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center.
 
-If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the new Microsoft 365 security center.
+If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the Microsoft 365 security center.
 
-Take a look at the new security center: [https://security.microsoft.com](https://security.microsoft.com).
+Take a look at the improved Microsoft 365 security center: [https://security.microsoft.com](https://security.microsoft.com).
 
 Learn more about the benefits: [Overview of the Microsoft 365 security center](overview-security-center.md)
 
@@ -56,7 +56,7 @@ Also, check the **Related Information** section at the bottom of this article.
 
 ## Microsoft 365 security center Home page
 
-The new Home page of the new portal surfaces:
+The Home page of the portal surfaces:
 
 - Secure Score ratings
 - the number of users and devices at risk
@@ -68,7 +68,7 @@ The new Home page of the new portal surfaces:
 
 ![Welcome screen "Meet your improved security center"](../../media/m3d-welcome.png)
 
-The Home page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
+The Home page welcomes you to the Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
 ![Welcome screen showing the Home page and links to Intro, Next steps, and to Give feedback.](../../media/m3d-welcome-security-center.png)
 
@@ -81,7 +81,7 @@ The **Guided tour** will remain on the page and you can choose a tour of Endpoin
 
 Also included is a link to the **Office 365 Security and Compliance center** for comparison. The last link is to the **What's New** page that describes recent updates.
 
-## New navigation
+## Improved navigation
 
 The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
 
@@ -156,7 +156,7 @@ The data from this query will appear in the results panel below the query itself
 ## Related information
 - [Microsoft 365 security center](overview-security-center.md)
 - [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
-- [Redirecting accounts from Microsoft Defender for Office 365 to the new Microsoft 365 security center](microsoft-365-security-mdo-redirection.md)
+- [Redirecting accounts from Microsoft Defender for Office 365 to the Microsoft 365 security center](microsoft-365-security-mdo-redirection.md)
 - [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
 - [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)

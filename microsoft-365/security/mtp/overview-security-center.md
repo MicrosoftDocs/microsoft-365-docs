@@ -1,6 +1,6 @@
 ---
 title: Overview - Microsoft 365 security center
-description: Advantages in the new Microsoft 365 security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE), with elements of Microsoft Defender for Identity (MDI) and Microsoft Cloud App Security (MCAS). This article outlines Microsoft 365 security center advances for administrators.
+description: Advantages in the Microsoft 365 security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE), with elements of Microsoft Defender for Identity (MDI) and Microsoft Cloud App Security (MCAS). This article outlines Microsoft 365 security center advances for administrators.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -31,7 +31,7 @@ ms.technology: m365d
 
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 
-The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com) integrates Microsoft 365 services and endpoints, so that devices, email, identities, and app security can be managed from a single location. This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
+The improved Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com) integrates Microsoft 365 services and endpoints, so that devices, email, identities, and app security can be managed from a single location. This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
 
 The Microsoft 365 security center combines these centers into one:
 
@@ -116,7 +116,7 @@ Reports are also unified in the Microsoft 365 security center. Admins can start 
 
 ## Office 365 Cloud App Security and other security integrations
 
-As admins and operations teams work, they will find other points where features from different security centers have merged. It's important to explore the new portal to build familiarity and highlight any issues that can be reported through giving feedback on the home page. You can also quickly access self-help, and Microsoft for help, if assistance is called for. Just click the question mark (?).
+As admins and operations teams work, they will find other points where features from different security centers have merged. It's important to explore the portal to build familiarity and highlight any issues that can be reported by giving feedback on the home page. You can also quickly access self-help, and Microsoft for help, if assistance is called for. Click the question mark (?).
 
  If you use **Office 365 Cloud App Security**, you can use its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**.
 
@@ -141,5 +141,5 @@ Keep exploring the features and capabilities in the Microsoft 365 security cente
 - [Microsoft 365 security center](overview-security-center.md)
 - [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
-- [Redirecting accounts from Microsoft Defender for Office 365 to the new Microsoft 365 security center](microsoft-365-security-mdo-redirection.md)
-- [Redirecting accounts from Microsoft Defender for Endpoint to the new Microsoft 365 security center](microsoft-365-security-mde-redirection.md)
+- [Redirecting accounts from Microsoft Defender for Office 365 to the Microsoft 365 security center](microsoft-365-security-mdo-redirection.md)
+- [Redirecting accounts from Microsoft Defender for Endpoint to the Microsoft 365 security center](microsoft-365-security-mde-redirection.md)

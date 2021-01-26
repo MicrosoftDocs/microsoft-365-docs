@@ -1,6 +1,6 @@
 ---
-title: Redirecting accounts from Microsoft Defender for Endpoint to the new Microsoft 365 security center
-description: How to redirect accounts and sessions from the Defender for Endpoint to the new Microsoft 365 security center.
+title: Redirecting accounts from Microsoft Defender for Endpoint to the Microsoft 365 security center
+description: How to redirect accounts and sessions from the Defender for Endpoint to the Microsoft 365 security center.
 keywords: Microsoft 365 security center, Getting started with the Microsoft 365 security center, security center redirection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,7 +21,7 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ---
-# Redirecting accounts from Microsoft Defender for Endpoint to the new Microsoft 365 security center
+# Redirecting accounts from Microsoft Defender for Endpoint to the Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -31,18 +31,18 @@ ms.technology: m365d
 
 In alignment with Microsoft’s cross-domain approach to threat protection with SIEM and Extended detection and response (XDR), we’ve rebranded Microsoft Defender Advanced Threat Protection as Microsoft Defender for Endpoint and unified it into a single integrated portal - the Microsoft 365 security center.
 
-This guide explains how to route accounts to the new portal by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to the newMicrosoft 365 security center portal (security.microsoft.com).
+This guide explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to the Microsoft 365 security center portal (security.microsoft.com).
 
 ## What to expect
-Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Endpoint portal at securitycenter.windows.com or securitycenter.microsoft.com, will be automatically routed to the new and integrated Microsoft 365 security center portal at security.microsoft.com.
+Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Endpoint portal at securitycenter.windows.com or securitycenter.microsoft.com, will be automatically routed to the Microsoft 365 security center portal at security.microsoft.com.
  
 Learn more about what’s changed: [Microsoft Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md).
 
 This includes redirection for direct access to the former portal via browser, including links pointing towards the former securitycenter.windows.com portal - such as links in email notifications, and links returned by SIEM API calls.  
 
- External links from email notifications or SIEM APIs currently contain links to both portals. Once redirection is enabled, both links will point to the new portal until the old link is eventually removed. As such, we encourage you to adopt the new link pointing to the new portal.
+ External links from email notifications or SIEM APIs currently contain links to both portals. Once redirection is enabled, both links will point to the Microsoft 365 security center until the old link is eventually removed. We encourage you to adopt the new link pointing to the Microsoft 365 security center.
 
-Refer to the table below for more on links and routing. 
+Refer to the table below for more on links and routing.
 ## SIEM API routing
 
 |**Property**  |**Destination when redirection is OFF**  |**Destination when redirection is ON** | 
@@ -62,10 +62,10 @@ Refer to the table below for more on links and routing.
 | Incident page in security center portal | Incident page in security.microsoft.com  | Incident page in security.microsoft.com  |
 
 ## When does this take effect? 
-Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to the new portal after ending their current session and signing back in again.  
+Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to the Microsoft 365 security center after ending their current session and signing back in again.  
 
 ### Set up portal redirection
-To start routing accounts to the new security center portal at security.microsoft.com:
+To start routing accounts to the Microsoft 365 security center:
 1. Make sure you’re a global administrator or have security administrator permissions in Azure Active directory 
 
 2. [Sign in](https://security.microsoft.com/) to the Microsoft 365 security center.
@@ -77,13 +77,13 @@ To start routing accounts to the new security center portal at security.microsof
 5. Click **Enable** to apply automatic redirection to the Microsoft 365 security center portal.
 
 >[!IMPORTANT]
->Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to the new portal after ending their current session and signing in again.
+>Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to the Microsoft 365 security center after ending their current session and signing in again.
 
 >[!NOTE]
 >You must be a global administrator or have security administrator permissions in Azure Active Directory to enable or disable this setting.  
 
 ## Can I go back to using the former portal?
-If something isn’t working for you or if there’s anything you’re unable to complete through the new Microsoft 365 security center portal, we want to hear about it. If you’ve encountered any issues with redirection, we encourage you to reach out to your PM buddy directly through private preview or let us know via the Give feedback submission form. 
+If something isn’t working for you or if there’s anything you’re unable to complete through the Microsoft 365 security center portal, we want to hear about it. If you’ve encountered any issues with redirection, we encourage you to reach out to your PM buddy directly through private preview or let us know via the Give feedback submission form. 
 
 To revert to the former Microsoft Defender for Endpoint portal: 
 

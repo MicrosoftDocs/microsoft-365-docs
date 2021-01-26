@@ -1,6 +1,6 @@
 ---
 title: Redirecting accounts from Microsoft Defender for Office 365 to the new Microsoft 365 security center
-description: How to redirect from the Defender for Office 365 to the new Microsoft 365 security center.
+description: How to redirect from the Defender for Office 365 to the Microsoft 365 security center.
 keywords: Microsoft 365 security center, Getting started with the Microsoft 365 security center, security center redirection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,7 +21,7 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ---
-# Redirecting accounts from Microsoft Defender for Office 365 to the new Microsoft 365 security center
+# Redirecting accounts from Microsoft Defender for Office 365 to the Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.technology: m365d
 
 In alignment with Microsoft’s cross-domain approach to threat protection with SIEM and Extended detection and response (XDR), we’ve rebranded Microsoft Defender Advanced Threat Protection as Microsoft Defender for Endpoint and unified it into a single integrated portal - the Microsoft 365 security center.
 
-This guide explains how to route accounts to the new portal by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to the newMicrosoft 365 security center portal (security.microsoft.com).
+This guide explains how to route accounts to the Microsot 365 security center by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to the Microsoft 365 security center (security.microsoft.com).
 
 >[!NOTE]
 >Portal redirection capability is available for Office 365 E5 and Microsoft Defender for Office P2 customers exclusively.
@@ -51,7 +51,7 @@ Compliance-related items can be found in the Microsoft 365 compliance center, an
 All other capabilities, whether compliance-related or capabilities that serve both are not affected by redirection. Office 365 security alerts appear in both the Microsoft 365 security center and the Office 365 Security and Compliance center, without redirection.  
 
 ### Set up portal redirection
-To start routing accounts to the new security center portal at security.microsoft.com:
+To start routing accounts to the Microsoft 365 security center at security.microsoft.com:
 
 1. Make sure you’re a global administrator or have security administrator permissions in Azure Active directory.
 2. [Sign in](https://security.microsoft.com/) to the Microsoft 365 security center.
@@ -60,10 +60,10 @@ To start routing accounts to the new security center portal at security.microsof
 5. Click **Enable** to apply automatic redirection to the Microsoft 365 security center portal.
 
 > [!NOTE]
-> After redirection is enabled, accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to the new security portal after ending their current session and signing back in again.
+> After redirection is enabled, accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to the Microsoft 365 security center after ending their current session and signing back in again.
 
 ## Can I go back to using the former portal?
-If something isn’t working for you or if there’s anything you’re unable to complete through the new Microsoft 365 security center portal, we want to hear about it. If you’ve encountered any issues with redirection, we encourage you to reach out to your PM buddy directly through private preview or let us know via the Give feedback submission form.
+If something isn’t working for you or if there’s anything you’re unable to complete through the Microsoft 365 security center portal, we want to hear about it. If you’ve encountered any issues with redirection, we encourage you to reach out to your PM buddy directly through private preview or let us know via the Give feedback submission form.
 
 To revert to the former Microsoft Defender for Endpoint portal:
 
