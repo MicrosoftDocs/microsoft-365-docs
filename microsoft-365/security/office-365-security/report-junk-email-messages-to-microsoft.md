@@ -1,21 +1,23 @@
 ---
-title: "Report spam, non-spam, and phishing messages to Microsoft"
-f1.keywords:
-- NOCSH
+title: Report spam, non-spam, and phishing messages to Microsoft
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about the different ways to report good and bad messages and files to Microsoft for analysis."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the different ways to report good and bad messages and files to Microsoft for analysis.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Report messages and files to Microsoft

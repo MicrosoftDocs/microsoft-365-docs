@@ -4,22 +4,23 @@ description: Learn about advanced hunting queries in Microsoft 365 and how to us
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: m365d
 ---
 
 # Proactively hunt for threats with advanced hunting in Microsoft 365 Defender

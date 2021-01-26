@@ -1,25 +1,26 @@
 ---
-title: "Using custom reporting solutions with automated investigation and response"
+title: Using custom reporting solutions with automated investigation and response
 keywords: SIEM, API, AIR, autoIR, ATP, automated investigation, integration, custom report
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
-description: "Learn how to integrate automated investigation and response with a custom or third-party reporting solution."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Learn how to integrate automated investigation and response with a custom or third-party reporting solution.
 ms.date: 09/29/2020
 ms.custom: 
-- air
+  - air
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use the Management Activity API for custom or third-party reporting solutions

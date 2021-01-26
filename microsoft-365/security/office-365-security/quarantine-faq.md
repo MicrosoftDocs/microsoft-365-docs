@@ -1,23 +1,25 @@
 ---
-title: "Quarantined messages FAQ"
-f1.keywords:
-- NOCSH
+title: Quarantined messages FAQ
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP)."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Quarantined messages FAQ

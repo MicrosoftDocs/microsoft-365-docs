@@ -245,7 +245,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 2 – Asia Pacific |
 | SharePoint Online | Global Geography 2 – Asia Pacific |
 | Skype for Business | Global Geography 2 – Asia Pacific |
-| Microsoft Teams | United States |
+| Microsoft Teams | Global Geography 2 – Asia Pacific |
 | Office Online &amp; Mobile | Global Geography 2 – Asia Pacific |
 | EOP | Global Geography 2 – Asia Pacific |
 | Intune | Global Geography 2 – Asia Pacific |
@@ -413,7 +413,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -509,7 +509,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -2117,7 +2117,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -2909,7 +2909,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -3053,7 +3053,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -4445,7 +4445,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -5309,7 +5309,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -5549,7 +5549,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -5813,7 +5813,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |

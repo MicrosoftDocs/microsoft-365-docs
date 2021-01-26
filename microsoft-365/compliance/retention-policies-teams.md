@@ -33,7 +33,10 @@ For other workloads, see:
 
 ## What's included for retention and deletion
 
-The following Teams items can be retained and deleted by using retention policies for Teams: Chat messages and channel messages, including embedded images, tables, hypertext links and links to other Teams messages and files. Chat messages include all the names of the people in the chat, and channel messages include the team name and the message title (if supplied). 
+The following Teams items can be retained and deleted by using retention policies for Teams: Chat messages and channel messages, including embedded images, tables, hypertext links and links to other Teams messages and files, and [card content](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages include all the names of the people in the chat, and channel messages include the team name and the message title (if supplied). 
+
+> [!NOTE]
+> Including card content is a recent addition. For more information, see [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Teams messages in private channels are not included, and reactions from others in the form of emoticons are not included.
 
