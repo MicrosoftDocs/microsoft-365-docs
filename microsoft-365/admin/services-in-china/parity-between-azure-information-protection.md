@@ -57,7 +57,7 @@ To configure AIP for customers in China:
 
 4. [Configure AIP apps on Windows](#step-4-configure-aip-apps-on-windows).
 
-5. [Manage content scan jobs for the AIP on-premises scanner](#step-5-manage-content-scan-jobs-for-the-aip-on-premises-scanner). 
+5. [Install the AIP on-premises scanner and manage content scan jobs](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs). 
 
 ### Step 1: Enable Rights Management for the tenant
 
@@ -137,11 +137,11 @@ AIP apps on Windows need the following registry key to point them to the correct
 > [!IMPORTANT]
 > Make sure you don't delete the registry key after an uninstall. If the key is empty, incorrect, or non-existent, the functionality will behave as the default value (default value = 0 for the commercial cloud). If the key is empty or incorrect, a print error is also added to the log.
 
-### Step 5: Manage content scan jobs for the AIP on-premises scanner
+### Step 5: Install the AIP on-premises scanner and manage content scan jobs
 
 Install the AIP on-premises scanner to scan your network and content shares for sensitive data, and apply classification and protection labels as configured in your organization's policy.
 
-When installing the scanner and managing your content scan jobs, use the following cmdlets instead of the Azure portal interface that the commercial offering uses:<br><br>
+When installing the scanner and managing your content scan jobs, use the following cmdlets instead of the Azure portal interface that's used by the commercial offering:<br><br>
 
 | Cmdlet | Description |
 |--|--|
