@@ -107,10 +107,18 @@ In the **Analyst report** section, read through the detailed expert write-up. Mo
 ### Related incidents: View and manage related incidents
 The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident. 
 
+![Image of the related incidents section of a threat analytics report](../../media/threat-analytics/ta-related_incidents.png)
+
+_Related incidents section of a threat analytics report_
+
 ### Impacted assets: Get list of impacted devices and mailboxes
 An asset is considered impacted if it is affected by an active, unresolved alert. The **Impacted assets** tab lists the following types of impacted assets:
 - **Impacted devices**—endpoints that have unresolved Microsoft Defender for Endpoint alerts. These alerts typically fire on sightings of known threat indicators and activities.
 - **Impacted mailboxes**—mailboxes that have received email messages that have triggered Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
+
+![Image of the impacted assets section of a threat analytics report](../../media/threat-analytics/ta-impacted_assets.png)
+
+_Impacted assets section of a threat analytics report_
 
 ### Prevented email attempts: View blocked or junked threat emails
 Office 365 typically blocks emails with known threat indicators, including malicious links or attachments. In some cases, proactive filtering mechanisms that check for suspicious content will instead send threat emails to the junk mail folder. In either case, the chances of the threat launching malware code on the device is reduced.
@@ -120,22 +128,30 @@ The **Prevented email attempts** tab lists all the emails that have either been 
 ### Mitigations: Review list of mitigations and the status of your devices
 In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
 
-- **Security updates**—deployment of security updates for Microsoft vulnerabilities on onboarded devices
-- **Microsoft Defender Antivirus settings**
+- **Security updates**—deployment of supported software security updates for vulnerabilities found on onboarded devices
+- **Supported security configurations**
   - Cloud-delivered protection  
   - Potentially unwanted application (PUA) protection
   - Real-time protection
  
 Mitigation information in this section incorporates data from [threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
 
-![Image of the mitigations section of a threat analytics report](../../media/threat-analytics/ta-mitigations-mtp.png)
+![Image of the mitigations section of a threat analytics report showing secure configuration details](../../media/threat-analytics/ta-mitigations-mtp.png)
+![Image of the mitigations section of a threat analytics report showing vulnerability details](../../media/threat-analytics/ta-mitigations-mtp2.png)
 
 _Mitigations section of a threat analytics report_
 
 ## Additional report details and limitations
+>[!NOTE]
+>As part of the unified security experience, threat analytics is now available for everyone with E5 license, not just Microsoft Defender for Endpoint, but also for Microsoft Defender for Office license holders.
+>If you are not using the Microsoft 365 security portal (Microsoft 365 Defender), you can also see the report details (without the Microsoft Defender for Office data) in the Microsoft Defender Security Center portal (Microsoft Defender for Endpoint). 
+
 When using the reports, keep these in mind: 
 
 - Data is scoped based on your role-based access control (RBAC) scope. You'll see the status of devices in [groups that you can access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups).
+  -	To view alert data, you need permissions to either Microsoft Defender for Office, or Microsoft Defender for Endpoint, or both.
+  -	To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data. 
+  -	To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
 - Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not shown in the charts.
 - Mitigations don't guarantee complete resilience. The provided mitigations reflect the best possible actions needed to improve resiliency.
 - Devices are counted as "unavailable" if they have not transmitted data to the service.
