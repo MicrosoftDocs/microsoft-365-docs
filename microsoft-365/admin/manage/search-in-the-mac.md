@@ -23,7 +23,7 @@ description: "Learn how to use the search feature in the admin center for better
 
 As the administrator of a Microsoft 365 organization, you can use search to find users, perform actions, navigate to different settings, and read documentation. With new search functionality, search speed has improved, and you can now search from every page in the admin center. The search box has moved to the banner area at the top of the admin center. You can use the **Alt+S shortcut** to use search from any page.
 
-:::image type="content" source="../../media/search-bar-extra-large.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
+:::image type="content" source="../../media/search-bar.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
 
 Search results are organized into different categories. Most of the categories are items in the admin center. For example, users, groups, shared mailboxes or domains. Other categories show you places you can navigate to, actions you can take or app level settings that you can change. And there's also a category related to documentation.
 
