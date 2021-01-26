@@ -62,7 +62,7 @@ The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https:
 
 Select a threat from the dashboard to view the report for that threat.
 
-![Image of a threat analytics dashboard](../../media/threat-analytics/ta-dashboard-mtp-small.png)
+![Image of a threat analytics dashboard](../../media/threat-analytics/ta_dashboard_mtp_small.png)
 
 _Threat analytics dashboard_ 
 
@@ -81,7 +81,7 @@ Each threat analytics report provides information in several sections:
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
-![Image of the overview section of a threat analytics report](../../media/threat-analytics/ta-overview-mtp_small.png)
+![Image of the overview section of a threat analytics report](../../media/threat-analytics/ta_overview_mtp_small.png)
 
 _Overview section of a threat analytics report_
 
@@ -107,7 +107,7 @@ In the **Analyst report** section, read through the detailed expert write-up. Mo
 ### Related incidents: View and manage related incidents
 The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident. 
 
-![Image of the related incidents section of a threat analytics report](../../media/threat-analytics/ta-related_incidents.png)
+![Image of the related incidents section of a threat analytics report](../../media/threat-analytics/ta_related_incidents.png)
 
 _Related incidents section of a threat analytics report_
 
@@ -116,7 +116,7 @@ An asset is considered impacted if it is affected by an active, unresolved alert
 - **Impacted devices**—endpoints that have unresolved Microsoft Defender for Endpoint alerts. These alerts typically fire on sightings of known threat indicators and activities.
 - **Impacted mailboxes**—mailboxes that have received email messages that have triggered Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
 
-![Image of the impacted assets section of a threat analytics report](../../media/threat-analytics/ta-impacted_assets.png)
+![Image of the impacted assets section of a threat analytics report](../../media/threat-analytics/ta_impacted_assets.png)
 
 _Impacted assets section of a threat analytics report_
 
@@ -136,8 +136,8 @@ In the **Mitigations** section, review the list of specific actionable recommend
  
 Mitigation information in this section incorporates data from [threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
 
-![Image of the mitigations section of a threat analytics report showing secure configuration details](../../media/threat-analytics/ta-mitigations-mtp.png)
-![Image of the mitigations section of a threat analytics report showing vulnerability details](../../media/threat-analytics/ta-mitigations-mtp2.png)
+![Image of the mitigations section of a threat analytics report showing secure configuration details](../../media/threat-analytics/ta_mitigations_mtp.png)
+![Image of the mitigations section of a threat analytics report showing vulnerability details](../../media/threat-analytics/ta_mitigations_mtp2.png)
 
 _Mitigations section of a threat analytics report_
 
