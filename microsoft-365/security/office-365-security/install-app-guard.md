@@ -42,7 +42,7 @@ information about system requirements and installation steps to enable Applicati
 * **Office**: Office Current Channel Build version 2011 16.0.13530.10000 or later
 * **Update package**: Windows 10 cumulative monthly security updates [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office update channels, see [Overview of update channels for Microsoft 365](https://docs.microsoft.com/en-us/deployoffice/overview-update-channels).
+For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office update channels, see [Overview of update channels for Microsoft 365](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 ### Licensing requirements
 
