@@ -65,9 +65,10 @@ A timer job periodically cleans up the Preservation Hold library. This job compa
   
 This behavior applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site collection after it was included in the policy will be retained after deletion. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, you must turn on [versioning](#how-retention-works-with-document-versions).
   
-Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. A user can delete a folder if they first move or delete any files in the folder that are subject to the policy. 
+Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. They can delete a folder if they first move or delete any files in the folder that are subject to retention.
 
-Because the Preservation Hold library is created only when it's needed, and not when you create a retention policy or apply a retention label, to see this working, you must first edit or delete an item that's subject to retention, and then browse to the Preservation Hold library to view the retained copy.
+> [!NOTE]
+> Because the Preservation Hold library is created only when it's needed, and not when you apply a retention policy or retention label, to see this working, you must first edit or delete an item that's subject to retention. Then browse to the Preservation Hold library to view the retained copy.
   
 After retention settings are assigned to content in a OneDrive account or SharePoint site, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
 
