@@ -23,13 +23,10 @@ description: Microsoft Defender for Office 365 E5 and ATP P1 and ATP P2 customer
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **In this article:**
-[Reach the email entity page](#reach-the-email-entity-page)
-
-[Read the email entity page](#read-the-email-entity-page)
-
-[Use email entity page tabs](#use-email-entity-page-tabs)
-
-[New to the email entity page](#new-to-the-email-entity-page)
+- [Reach the email entity page](#reach-the-email-entity-page)
+- [Read the email entity page](#read-the-email-entity-page)
+- [Use email entity page tabs](#use-email-entity-page-tabs)
+- [New to the email entity page](#new-to-the-email-entity-page)
 
 Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 admins have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered on the [Threat Explorer 'email details' fly-out](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer-views?view=o365-worldwide).
 
