@@ -1,5 +1,5 @@
 ---
-title: Application Guard for Office 365 (public preview) for admins
+title: Application Guard for Office 365 for admins
 keywords: application guard, protection, isolation, isolated container, hardware isolation
 f1.keywords: 
   - NOCSH
@@ -19,10 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Application Guard for Office (public preview) for admins
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
+# Application Guard for Office for admins
 
 **Applies to:** Word, Excel, and PowerPoint for Microsoft 365, Windows 10
 Enterprise

@@ -435,31 +435,12 @@
               href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: Add support for anonymous inbound email over IPv6
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
+            - name: Install Application Guard for Office
+              href: ./install-app-guard.md
             - name: Configure groups and users for a political campaign dev/test environment
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Create team sites in a political campaign dev/test environment
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: S/MIME
-              href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
-              items: 
-                - name: S/MIME for message signing and encryption
-                  href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
-                - name: Configure S/MIME settings for Outlook on the web
-                  href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
-                - name: Send and receive S/MIME signed and encrypted email
-                  href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
-                - name: Sync user certificates to Microsoft 365 for S/MIME
-                  href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
-                - name: Set up virtual certificate collection to validate S/MIME
-                  href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
-                - name: Configure groups and users for a political campaign dev/test environment
-                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-                - name: Create team sites in a political campaign dev/test environment
-                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-                - name: Move domains and settings from one EOP organization to another
-                  href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
-                - name: Manage role groups in standalone EOP
-                  href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
         - name: Migrate
           items: 
             - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
@@ -672,6 +653,28 @@
               href: ./office-365-security/virus-detection-in-spo.md
             - name: What's the difference between junk email and bulk email?
               href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
+            - name: S/MIME
+              href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+              items: 
+                - name: S/MIME for message signing and encryption
+                  href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+                - name: Configure S/MIME settings for Outlook on the web
+                  href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
+                - name: Send and receive S/MIME signed and encrypted email
+                  href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
+                - name: Sync user certificates to Microsoft 365 for S/MIME
+                  href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
+                - name: Set up virtual certificate collection to validate S/MIME
+                  href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
+                - name: Configure groups and users for a political campaign dev/test environment
+                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+                - name: Create team sites in a political campaign dev/test environment
+                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+                - name: Move domains and settings from one EOP organization to another
+                  href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
+                - name: Manage role groups in standalone EOP
+                  href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
+
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
     - name: Microsoft 365 for Business
