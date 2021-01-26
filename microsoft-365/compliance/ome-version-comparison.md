@@ -25,9 +25,29 @@ This article compares legacy Office 365 Message Encryption (OME) to the new OME 
 
 This article is part of a larger series of articles about Office 365 Message Encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) and locate the article that best fits your needs.
 
+> [!IMPORTANT]
+> On February 28, 2021, Microsoft will deprecate support for AD RMS in Exchange Online. 
+Organizations that have deployed into our GCC Moderate environment are also affected.
+
+## Overview of AD RMS deprecation in Exchange Online
+
+Exchange Online includes Information Rights Management (IRM) functionality that provides online and offline protection of email messages and attachments. By default, Exchange Online uses Azure Rights Management Service (Azure RMS). However, your organization may have configured Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS). AD RMS support in Exchange Online is retiring. Instead, Azure RMS will replace AD RMS entirely. If you encrypt your email using Exchange mail flow rules, for example using Office 365 Message Encryption, you won't have to change your secure email. Before you begin, review and assess the impact for your organization. If your organization is already using Azure RMS to encrypt email in Exchange Online, there is nothing for you to do. Otherwise, you'll need to prepare for AD RMS deprecation by switching to Azure RMS.
+
+### Prepare for AD RMS deprecation:
+
+If you've already set up Azure RMS but you're not using it, enable the service using Exchange Online PowerShell. On your local computer, using a work or school account that has global administrator permissions in your organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+
+   To enable Azure RMS, use the Set-IrmConfiguration cmdlet by typing the following command.
+
+     ```powershell
+     Set-IrmConfiguration -AzureRMSLicensingEnabled $true
+     ```
+
+If your organization has not yet set up Azure RMS, you'll need to migrate from AD RMS to Azure RMS. For instructions, see https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms
+
 ## Side-by-side comparison of features and capabilities
 
-|           **Situation**           | **Legacy OME**    | **IRM**           | **New OME capabilities** |
+|           **Situation**           | **Legacy OME**    | **IRM in AD RMS**        | **New OME capabilities** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |*Sending an encrypted mail*        |Through Exchange mail flow rules|End-user initiated from Outlook desktop or Outlook on the Web; or through Exchange mail flow rules|End-user initiated from Outlook desktop, Outlook for Mac, or Outlook on the Web; through Exchange mail flow rules (also known as transport rules) and Data Loss Prevention (DLP)|
 |*Rights management template*       |   N/A      |Do Not Forward option and custom templates|Do Not Forward option, Encrypt-Only option, and custom templates|
