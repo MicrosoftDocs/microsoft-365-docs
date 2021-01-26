@@ -33,19 +33,21 @@ ms.custom: seo-marvel-apr2020
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 >
 
-With more sophisticated adversaries and new threats emerging frequently and prevalently, it's critical to be able to quickly:
-
-- Assess the impact of new threats
-- Review your resilience against or exposure to the threats
-- Identify the actions you can take to stop or contain the threats
-
-Threat analytics is a set of reports from expert Microsoft security researchers covering the most relevant threats, including:
+Threat analytics is our in-product threat intelligence solution from expert Microsoft security researchers, designed to assist security teams be as efficient as possible while facing emerging threats, including:
 
 - Active threat actors and their campaigns
 - Popular and new attack techniques
 - Critical vulnerabilities
 - Common attack surfaces
 - Prevalent malware
+
+With more sophisticated adversaries and new threats emerging frequently and prevalently, it's critical to be able to quickly:
+
+- Identify and react to emerging threats 
+- Learn if you are currently under attack
+- Assess the impact of the threat to your assets
+- Review your resilience against or exposure to the threats
+- Identify the mitigation, recovery, or prevention actions you can take to stop or contain the threats
 
 Each report provides an analysis of a tracked threat and extensive guidance on how to defend against that threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable protections in place.
 
