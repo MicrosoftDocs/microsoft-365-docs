@@ -18,6 +18,12 @@ description: Microsoft Defender for Office 365 E5 and ATP P1 and ATP P2 customer
 ---
 # The Email entity page
 
+**In this article:**
+[Reach the email entity page](#reach-the-email-entity-page)
+[Read the email entity page](#read-the-email-entity-page)
+[Use email entity page tabs](#use-email-entity-page-tabs)
+[New to the email entity page](#new-to-the-email-entity-page)
+
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
