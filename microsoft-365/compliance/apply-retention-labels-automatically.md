@@ -242,10 +242,10 @@ When you choose the option for a trainable classifier, you can select one of the
 
 To automatically apply a label by using this option, SharePoint sites and mailboxes must have at least 10 MB of data.
 
-For more information about trainable classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
+For more information about trainable classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
 > [!TIP]
-> If you use trainable classifiers for Exchange, see the recently released [How to retrain a classifier in content explorer (preview)](classifier-how-to-retrain-content-explorer.md).
+> If you use trainable classifiers for Exchange, see [How to retrain a classifier in content explorer](classifier-how-to-retrain-content-explorer.md).
 
 To consider when using trainable classifiers to auto-apply retention labels:
 

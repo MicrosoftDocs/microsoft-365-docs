@@ -1,19 +1,21 @@
 ---
-title: "Delegated administration FAQ"
-f1.keywords:
-- NOCSH
+title: Delegated administration FAQ
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can view frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can view frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Delegated administration FAQ

@@ -4,7 +4,7 @@ description: Lists the new features and functionality in Microsoft 365 Defender
 keywords: what's new in microsoft threat protection, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
+ms.technology: m365d
 ---
 
 # What's new in Microsoft 365 Defender

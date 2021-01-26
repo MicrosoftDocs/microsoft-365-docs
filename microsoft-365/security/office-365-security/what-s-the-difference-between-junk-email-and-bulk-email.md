@@ -1,23 +1,25 @@
 ---
-title: "What&apos;s the difference between junk email and bulk email?"
-f1.keywords:
-- NOCSH
+title: What&apos;s the difference between junk email and bulk email?
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about the differences between junk email (spam) and bulk email (gray mail) in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the differences between junk email (spam) and bulk email (gray mail) in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # What's the difference between junk email and bulk email in EOP?

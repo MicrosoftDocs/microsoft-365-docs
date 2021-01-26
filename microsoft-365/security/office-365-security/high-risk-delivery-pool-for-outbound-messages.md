@@ -1,21 +1,23 @@
 ---
-title: "Outbound delivery pools"
-f1.keywords:
-- NOCSH
+title: Outbound delivery pools
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
-ms.collection:
-- M365-security-compliance
-description: "Learn how the delivery pools are used to protect the reputation of email servers in the Microsoft 365 datacenters."
+ms.collection: 
+  - M365-security-compliance
+description: Learn how the delivery pools are used to protect the reputation of email servers in the Microsoft 365 datacenters.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Outbound delivery pools

@@ -4,21 +4,22 @@ description: Learn about events associated with Microsoft 365 emails in the Emai
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailEvents, network message id, sender, recipient, attachment id, attachment name, malware verdict, phishing verdict, attachment count, link count, url count
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
+ms.technology: m365d
 ---
 
 # EmailEvents
@@ -60,9 +61,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `PhishDetectionMethod` | string | Method used to detect the email as a phish: Malicious URL reputation, Safe Links URL Detonation, Advanced phish filter, General phish filter, Anti-Spoof: Intra-org, Anti-spoof: external domain, Domain impersonation, User impersonation, Brand impersonation |
 | `MalwareFilterVerdict` | string | Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware |
 | `MalwareDetectionMethod` | string | Method used to detect malware in the email: Antimalware engine, File reputation, Safe Attachments |
-| `FinalEmailAction` | string | Final action taken on the email based on filter verdict, policies, and user actions:  Move message to junk mail folder, Add X-header, Modify subject, Redirect message, Delete message, send to quarantine, No action taken, Bcc message |
-| `FinalEmailActionPolicy` | string | Action policy that took effect: Antispam high-confidence, Antispam, Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Safe Attachments, Enterprise Transport Rules (ETR) |
-| `FinalEmailActionPolicyGuid` | string | Unique identifier for the policy that determined the final mail action |
+| `EmailAction` | string | Final action taken on the email based on filter verdict, policies, and user actions:  Move message to junk mail folder, Add X-header, Modify subject, Redirect message, Delete message, send to quarantine, No action taken, Bcc message |
+| `EmailActionPolicy` | string | Action policy that took effect: Antispam high-confidence, Antispam, Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Safe Attachments, Enterprise Transport Rules (ETR) |
+| `EmailActionPolicyGuid` | string | Unique identifier for the policy that determined the final mail action |
 | `AttachmentCount` | int | Number of attachments in the email |
 | `UrlCount` | int | Number of embedded URLs in the email |
 | `EmailLanguage` | string | Detected language of the email content |

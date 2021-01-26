@@ -1,23 +1,25 @@
 ---
 title: Permissions - Security & Compliance Center
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
-- 'ms.o365.cc.AdminRoleGroups'
-ms.service: O365-seccomp
+f1_keywords: 
+  - 'ms.o365.cc.AdminRoleGroups'
+
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
-description: "Admins can learn about the permissions that are available in the Security & Compliance Center in Microsoft 365."
+search.appverid: 
+  - MOE150
+  - MET150
+description: Admins can learn about the permissions that are available in the Security & Compliance Center in Microsoft 365.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Permissions in the Security & Compliance Center
@@ -48,6 +50,11 @@ The following table lists the default role groups that are available in the Secu
 Managing permissions in the Security & Compliance Center only gives users access to the compliance features that are available within the Security & Compliance Center itself. If you want to grant permissions to other compliance features that aren't in the Security & Compliance Center, such as Exchange mail flow rules (also known as transport rules), you need to use the Exchange admin center.
 
 To see how to grant access to the Security & Compliance Center, check out [Give users access to Microsoft 365 Compliance admin center](grant-access-to-the-security-and-compliance-center.md).
+
+> [!NOTE]
+> To view the **Permissions** tab in the Security & Compliance Center, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group in the Security & Compliance Center by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
+
+<br><br>
 
 ****
 
@@ -84,7 +91,7 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 |**Privacy Management Investigators**|Analysts of privacy management solution that can investigate policy matches, view message content, and take remediation actions.|Privacy Management Investigation|
 |**Privacy Management Viewers**|Viewer of privacy management solution that can access the available dashboards and widgets.|Privacy Management Viewer|
 |**Records Management**|Members can configure all aspects of records management, including retention labels and disposition reviews.|Disposition Management <p> RecordManagement <p> Retention Management|
-|**Reviewer**|Members can only view the list of cases on the eDiscovery cases page in the Security & Compliance Center. They can't create, open, or manage an eDiscovery case. The primary purpose of this role group is to allow members to view and access case data in [Advanced eDiscovery (classic)](../../compliance/office-365-advanced-ediscovery.md) (also known as *Advanced eDiscovery v1*). <p> This role group has the most restrictive eDiscovery-related permissions. <p> **Note:** At this time, users who are a member of the Reviewer role group can't access data in [Advanced eDiscovery in Microsoft 365](../../compliance/overview-ediscovery-20.md) (also known as *Advanced eDiscovery v2*). To add members to a case in Advanced eDiscovery v2 so that they can review case data, a user must be a member of the eDiscovery Manager role group.|Review|
+|**Reviewer**|Members can access review sets in [Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) cases. Members of this role group can see and open the list of cases on the **eDiscovery > Advanced** page in the Microsoft 365 compliance center that they're members of. After the user accesses an Advanced eDiscovery case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Members of this role group can only access the data in a review set.|Review|
 |**Security Administrator**|Members have access to a number of security features of Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center. <p> By default, this role group may not appear to have any members. However, the Security Administrator role from Azure Active Directory is assigned to this role group. Therefore, this role group inherits the capabilities and membership of the Security Administrator role from Azure Active Directory. <p> To manage permissions centrally, add and remove group members in the Azure Active Directory admin center. For more information, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). If you edit this role group in the Security & Compliance Center (membership or roles), those changes apply only to the Security & Compliance Center and not to any other services. <p> This role group includes all of the read-only permissions of the Security reader role, plus a number of additional administrative permissions for the same services: Azure Information Protection, Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center.|Audit Logs <p> Device Management <p> DLP Compliance Management <p> IB Compliance Management <p> Manage Alerts <p> Quarantine <p> Security Administrator <p> Sensitivity Label Administrator <p> Tag Contributor <p> Tag Manager <p> Tag Reader <p> View-Only Audit Logs <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
 |**Security Operator**|Members can manage security alerts, and also view reports and settings of security features.|Compliance Search <p> Manage Alerts <p> Security Reader <p> Tag Contributor <p> Tag Reader <p> View-Only Audit Logs <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
 |**Security Reader**|Members have read-only access to a number of security features of Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center. <p> By default, this role group may not appear to have any members. However, the Security Reader role from Azure Active Directory is assigned to this role group. Therefore, this role group inherits the capabilities and membership of the Security Reader role from Azure Active Directory. <p> To manage permissions centrally, add and remove group members in the Azure Active Directory admin center. For more information, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). If you edit this role group in the Security & Compliance Center (membership or roles), those changes apply only to the Security & Compliance Center and not to any other services.|Security Reader <p> Sensitivity Label Reader <p> Tag Reader <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
@@ -137,6 +144,8 @@ Note that the following roles aren't assigned to the Organization Management rol
 - RMS Decrypt
 - Supervisory Review Administrator
 
+<br><br>
+
 ****
 
 |Role|Description|Default role group assignments|
@@ -186,7 +195,7 @@ Note that the following roles aren't assigned to the Organization Management rol
 |**Quarantine**|Allows viewing and releasing quarantined email.|Quarantine Administrator <p> Security Administrator <p> Organization Management|
 |**RecordManagement**|View and edit the configuration of the records management feature.|Compliance Administrator <p> Compliance Data Administrator <p> Organization Management <p> Records Management|
 |**Retention Management**|Manage retention policies, retention labels, and retention label policies.|Compliance Administrator <p> Compliance Data Administrator <p> Organization Management <p> Records Management|
-|**Review**|Use Advanced eDiscovery to track, tag, analyze, and test documents that are assigned to them.|eDiscovery Manager <p> Reviewer|
+|**Review**|This role lets users access review sets in Advanced eDiscovery cases. Users who are assigned this role can see and open the list of cases on the **eDiscovery > Advanced** page in the Microsoft 365 compliance center that they're members of. After the user accesses an Advanced eDiscovery case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Users with this role can only access the data in a review set.|eDiscovery Manager <p> Reviewer|
 |**RMS Decrypt**|Decrypt RMS-protected content when exporting search results.|eDiscovery Manager|
 |**Role Management**|Manage role group membership and create or delete custom role groups.|Organization Management|
 |**Search And Purge**|Lets people bulk-remove data that matches the criteria of a content search.|Organization Management|

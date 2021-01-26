@@ -3,23 +3,25 @@ title: What's new in Microsoft Defender for Office 365
 description: Learn about the new features and functionality available in the latest release of Microsoft Defender for Office 365.
 keywords: what's new in Office 365 atp, ga, generally available, capabilities, available, new
 search.appverid: met150
-ms.service: O365-seccomp
+
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 01/12/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # What's new in Microsoft Defender for Office 365
@@ -36,6 +38,10 @@ This article lists new features in the latest release of Microsoft Defender for 
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## December 2020
+
+- [Secure by default in Office 365](secure-by-default.md)
+
 ## November 2020
 
 - Updated export limits in Review > Action Center > Remediation from Mail Submission and Action Log (Defender for Office 365 Plan 2)
@@ -43,7 +49,6 @@ This article lists new features in the latest release of Microsoft Defender for 
 ## September/October 2020
 
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
-- [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
 - [Extended capabilities in Threat Explorer including top targeted users, transport rules, and connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender for Office 365 information in [Threat Explorer](threat-explorer.md) (email was allowed/blocked by tenant/user policy) (Defender for Office 365 Plan 2)
 - Surfacing URL threats in [Threat Explorer](threat-explorer.md#threats-in-urls) (malware, phish, spam, or none) (Defender for Office 365 Plan 2)
 - [Improvements to Hunting Experience Threat Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) with updates around Threats, Additional Actions, Delivery locations and Updated timeline view (Defender for Office 365 Plan 2)
