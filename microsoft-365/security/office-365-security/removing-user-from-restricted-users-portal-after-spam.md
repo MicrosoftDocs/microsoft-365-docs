@@ -70,7 +70,7 @@ Admins can remove users from the Restricted Senders portal in the Security & Com
 5. Click **Yes** to confirm the change.
 
    > [!NOTE]
-   > It may take 30 minutes or more before restrictions are removed.
+   > It might take up to 24 hours for all restrictions to be removed from the user.
 
 ## Verify the alert settings for restricted users
 
@@ -81,7 +81,7 @@ The default alert policy named **User restricted from sending email** will autom
 
 1. In the Security & Compliance Center, go to **Alerts** \> **Alert policies**.
 
-2. Find an select the **User restricted from sending email** alert.
+2. Find and select the **User restricted from sending email** alert.
 
 3. In the flyout that appears, verify or configure the following settings:
 
