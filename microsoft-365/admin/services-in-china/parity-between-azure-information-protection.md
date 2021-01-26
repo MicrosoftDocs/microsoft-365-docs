@@ -24,7 +24,7 @@ monikerRange: 'o365-21vianet'
 
 # Azure Information Protection support for Office 365 operated by 21Vianet
 
-This article covers the differences between Azure Information Protection (AIP) support for Office 365 operated by 21Vianet and commercial offerings, as well as specific instructions for configuring AIP for customers in China&mdash;including how to manage content scan jobs for the AIP on-premises scanner.
+This article covers the differences between Azure Information Protection (AIP) support for Office 365 operated by 21Vianet and commercial offerings, as well as specific instructions for configuring AIP for customers in China&mdash;including how to install the AIP on-premises scanner and manage content scan jobs.
 
 ## Differences between AIP for Office 365 operated by 21Vianet and commercial offerings
 
