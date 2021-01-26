@@ -103,7 +103,7 @@ Creating a custom Safe Attachments policy in the Security & Compliance Center cr
 
      The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-   - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enabled redirect**. Otherwise, messages might be lost.
+   - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. If you selected this option, always select **Enabled redirect**. Otherwise, messages might be lost.
 
    When you're finished, click **Next**.
 
