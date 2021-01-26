@@ -62,10 +62,52 @@ The account that you use to run the migration wizard must have access to both th
 1. If you are unfamiliar with DLP, the Compliance center DLP console, or the Exchange Admin center DLP console, you should familiarize yourself before attempting a policy migration.
     1. [Exchange Online data loss prevention (DLP) policies](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
     1. [Overview of Data Loss Prevention](data-loss-prevention-policies.md)
-    1. [Create, Test, and Tune a DLP policy](creat-test-tune-dlp-policy.md)
+    1. [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
+1. Evaluate your Exchange DLP and Compliance center policies by asking these questions:
+
+
+|Question  |Action  | Migration procedure|
+|---------|---------|---------|
+|Is the policy still needed?    |If not, delete or deactivate it |don't migrate|
+|Does it overlap with any other Exchange or Compliance center DLP policies?     |If yes, can you consolidate the overlapping policies?         |don't use the migration wizard, manually create the consolidated DLP policy in the Compliance center. See, [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md) and [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+|Is the Exchange DLP policy tightly scoped and does it have well defined conditions, actions, inclusions and exclusions?     |If yes, this is a good candidate to migrate with the wizard, make note of the policy so that you remember to come back to delete it later         | migrate with the wizard|
 
 ## Migration
 
+After you have evaluated all your Exchange Online DLP and Compliance center DLP polices for need and compatability, you can use the migration wizard.
+
+1. Open the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console.
+2. If there are Exchange DLP policies that can be migrated, a banner will appear at the top of the page letting you know.
+3. Choose **Migrate policies** in the banner to open the migration wizard. All the Exchange DLP policies are listed. Previously migrated policies cannot be selected.
+4.  Select the policies you want to migrate. You can migrate them individually or in groups. Select **Next**.
+5. Review the flyout pane for any warnings or messages. Resolve any issues before proceeding.
+6. Select the mode you want the new Compliance center policy created in, **Active**, **Test**, or **Disabled**.  The default is **Test**. Select **Next**.
+7.  Review the migration wizard session settings. Select **Next**.
+8. Review the migration report.
+
+The migrated polices will now appear in the list of DLP policies in the Compliance center DLP console. 
+
 ## Testing and validation
 
+Test and review your policies.
+
+1. Follow the [Test a DLP policy](create-test-tune-dlp-policy.md#test-a-dlp-policy) procedures.
+2. Review the events created by the policy in [Activity explorer](data-classification-activity-explorer.md). 
+
 ## Activate your migrated polices
+
+Once you are satisfied with how your migrated policies are functioning, you can set them to **Enforce**.
+
+1. Open the Exchange Admin Center DLP console (GET LINK).
+2. Deactivate or delete the source policy.
+3. Open the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console and select the policy you want to make active to edit it.
+4. Change the status to **Turn on**.
+
+## Related articles
+
+- [Exchange Online data loss prevention (DLP) policies](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+- [Overview of DLP](data-loss-prevention-policies.md)
+- [Get started with Activity explorer](data-classification-activity-explorer.md)
+- [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Exchange Online data loss prevention (DLP) policies](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
