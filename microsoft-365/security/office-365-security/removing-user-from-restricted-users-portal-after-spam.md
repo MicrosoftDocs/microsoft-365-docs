@@ -70,7 +70,7 @@ Admins can remove users from the Restricted Senders portal in the Security & Com
 5. Click **Yes** to confirm the change.
 
    > [!NOTE]
-   > It may take 30 minutes or more before restrictions are removed.
+   > It might take up to 24 hours for all restrictions to be removed from the user.
 
 ## Verify the alert settings for restricted users
 
