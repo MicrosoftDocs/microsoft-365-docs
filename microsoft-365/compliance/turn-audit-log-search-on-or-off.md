@@ -48,7 +48,7 @@ Audit logging is turned on by default for Microsoft 365 and Office 365 enterpris
     
 ## Turn on audit log search
 
-If audit log search is not turned on for your orgnanization, you can turn it on in the compliance center or by using Exchange Online PowerShell. It may take several hours after you turn on audit log search before you can return results when you search the audit log.
+If audit log search is not turned on for your organization, you can turn it on in the compliance center or by using Exchange Online PowerShell. It may take several hours after you turn on audit log search before you can return results when you search the audit log.
   
 ### Use the compliance center to turn on audit log search
 
@@ -56,7 +56,7 @@ If audit log search is not turned on for your orgnanization, you can turn it on 
 
 2. In the compliance center, go to **Search** > **Audit log search**.
 
-   If audit log search is not turned on for your orgnanization, a banner is displayed saying that auditing has to be turned on to record user and admin activity.
+   If audit log search is not turned on for your organization, a banner is displayed saying that auditing has to be turned on to record user and admin activity.
 
 3. Click **Turn on auditing**.
 
@@ -92,9 +92,9 @@ You have to use Exchange Online PowerShell to turn off audit log search.
 
     - In Exchange Online PowerShell, run the following command:
 
-    ```powershell
-    Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-    ```
+      ```powershell
+      Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+      ```
 
       The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
 

@@ -8,7 +8,9 @@ audience:
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: "Learn how to find resources for Topic Experiences."
