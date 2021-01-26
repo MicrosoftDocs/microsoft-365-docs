@@ -50,8 +50,9 @@ As you navigate through the sample documents and label string values, Narrator w
 - When you use the keyboard to navigate through the document viewer, Narrator audio will state the selected string.
 - Within a selected string, Narrator audio will state each character in the string as you select them by using the forward or backward arrow.
 - If you select a string that has been labeled, Narrator will state the value and then "labeled".  For example, if the label value is "Contoso", it will state "Costoso labeled". 
-- In the training tab, if you select a string in the document viewer that has been labeled and predicted, Narrator audio will state the value, and then "labeled and predicted". This is associated when training is successful and there is a match between a predicted value and the user label.
-- In the training tab, if you select a string in the document viewer that has only been predicted, Narrator audio will state the value, and then "predicted". This is associated when training is unsuccessful and predicts a value in the file that has not been labeled by the user.
+- In the training tab, if you select a string in the document viewer that has only been predicted, Narrator audio will state the value, and then "predicted". This occurs when training predicts a value in the file that does not match what has been labeled by the user.
+- In the training tab, if you select a string in the document viewer that has been labeled and predicted, Narrator audio will state the value, and then "labeled and predicted". This occurs when training is successful and there is a match between a predicted value and the user label.
+
 
 
 After a string is labeled or a label has been removed in the viewer, Narrator audio will warn you to save your changes before you exit.
