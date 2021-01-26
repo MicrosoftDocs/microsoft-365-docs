@@ -47,7 +47,7 @@ If you select the "More actions" menu next to their name, you can reset their pa
 
 **Tips to improve user search results**
 
-- Make sure you spell the users'    names correctly as user searches are matched exactly against the earlier mentioned properties. For example, in the above example, Jus or Malz will work but misspelling like  for Jostin will not find this user.
+- Make sure you spell the users' names correctly as user searches are matched exactly against the earlier mentioned properties. For example, in the above example, Jus or Malz will work but a misspelling, like, Jostin instead of Justin will not find this user.
 - To get an exact match, search by primary email address or username.
 
 ## Groups
