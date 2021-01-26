@@ -229,3 +229,4 @@ When this heuristic is met, Office will pre-create an Application Guard containe
 * Selecting web links (`http` or `https`) doesn't open the browser.
 * Pasting rich text format (RTF) content or images in Office documents opened with Application Guard isn't supported at this time.
 * Updates to .NET cause files to fail to open in Application Guard. As a workaround, users can restart their device when they encounter this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+
