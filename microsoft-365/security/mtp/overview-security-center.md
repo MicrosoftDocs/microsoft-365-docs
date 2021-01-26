@@ -141,5 +141,4 @@ Keep exploring the features and capabilities in the Microsoft 365 security cente
 - [Microsoft 365 security center](overview-security-center.md)
 - [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
-- [Redirecting accounts from Microsoft Defender for Office 365 to the Microsoft 365 security center](microsoft-365-security-mdo-redirection.md)
 - [Redirecting accounts from Microsoft Defender for Endpoint to the Microsoft 365 security center](microsoft-365-security-mde-redirection.md)

@@ -51,8 +51,6 @@
               href: mtp/microsoft-365-security-center-mde.md
             - name: Defender for Office 365 in the Microsoft 365 security center
               href: mtp/microsoft-365-security-center-mdo.md  
-            - name: Redirecting Defender for Office 365 to Microsoft 365 security center
-              href: mtp/microsoft-365-security-mdo-redirection.md 
             - name: Redirecting Defender for Endpoint to Microsoft 365 security center
               href: mtp/microsoft-365-security-mde-redirection.md 
             - name: Preview features
@@ -340,7 +338,7 @@
               href: office-365-security/whats-new-in-office-365-atp.md
             - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
-            - name: New Microsoft 365 security center
+            - name: Microsoft 365 security center overview
               href: ./mtp/overview-security-center.md
             - name: Threat Explorer (and real-time detections)
               href: ./office-365-security/threat-explorer.md

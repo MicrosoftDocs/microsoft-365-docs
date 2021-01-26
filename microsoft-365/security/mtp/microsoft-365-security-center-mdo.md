@@ -156,7 +156,6 @@ The data from this query will appear in the results panel below the query itself
 ## Related information
 - [Microsoft 365 security center](overview-security-center.md)
 - [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
-- [Redirecting accounts from Microsoft Defender for Office 365 to the Microsoft 365 security center](microsoft-365-security-mdo-redirection.md)
 - [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
 - [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
