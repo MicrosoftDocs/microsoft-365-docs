@@ -14,7 +14,7 @@ description: "Learn how to use accessibility mode when training a model in Share
 
 # SharePoint Syntex accessibility mode
 
-In SharePoint Syntex, users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboarding accessibility as they navigate and label items in the document viewer.
+In [SharePoint Syntex](index.md), users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboarding accessibility as they navigate and label items in the document viewer.
 
 This helps users to use their keyboards to navigate through text in the document viewer and to hear a narration of not only the selected values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional example documents. 
 
@@ -50,13 +50,19 @@ As you navigate through the sample documents and label string values, Narrator w
 - When you use the keyboard to navigate through the document viewer, Narrator audio will state the selected string.
 - Within a selected string, Narrator audio will state each character in the string as you select them by using the forward or backward arrow.
 - If you select a string that has been labeled, Narrator will state the value and then "labeled".  For example, if the label value is "Contoso", it will state "Costoso labeled". 
-- In the training tab, if you select a string in the document viewer that has been labeled and predicted, Narrator audio will state the value, and then "labeled and predicted". This is associated with a successful match between predicted value and the user label.
-- In the training tab, if you select a string in the document viewer that has only been predicted, Narrator audio will state the value, and then "predicted".  This is associated when training is unsuccessful and the machine predicts a value in the file that has not been labeled by the user.
+- In the training tab, if you select a string in the document viewer that has been labeled and predicted, Narrator audio will state the value, and then "labeled and predicted". This is associated when training is successful and there is a match between a predicted value and the user label.
+- In the training tab, if you select a string in the document viewer that has only been predicted, Narrator audio will state the value, and then "predicted". This is associated when training is unsuccessful and predicts a value in the file that has not been labeled by the user.
 
 
-After a string is labeled or a label is removed, Narrator audio will warn you to save your changes before you exit.
+After a string is labeled or a label has been removed in the viewer, Narrator audio will warn you to save your changes before you exit.
 
+## See Also
 
+[Create an extractor](create-an-extractor.md)</br>
+
+[Create a classifier](create-a-classifier.md)</br>
+
+[Intro to SharePoint Syntex](index.md)
 
 
 
