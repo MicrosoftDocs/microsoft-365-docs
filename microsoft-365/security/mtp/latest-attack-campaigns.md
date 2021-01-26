@@ -4,7 +4,7 @@ description: Use threat analytics interactive reports in Microsoft 365 to assess
 keywords: security, malware, Microsoft 365, M365, security center, threat analytics, Microsoft Defender ATP, cyber, security posture, emerging threats
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
-ms.localizationpriority: medium
+localization_priority: Normal
 f1.keywords:
 - NOCSH
 ms.author: ellevin

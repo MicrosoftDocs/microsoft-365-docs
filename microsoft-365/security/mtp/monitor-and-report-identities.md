@@ -4,7 +4,7 @@ description: Describes how you can monitor the users in your organization and ke
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identity, users
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
-ms.localizationpriority: medium
+localization_priority: Normal
 f1.keywords:
 - NOCSH
 ms.author: ellevin

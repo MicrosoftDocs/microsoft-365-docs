@@ -4,7 +4,7 @@ description: Learn how to create and track tickets in ServiceNow from Microsoft 
 keywords: security, Microsoft 365, M365, secure score, security center, ServiceNow, tickets, tasks
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: medium
+localization_priority: Normal
 f1.keywords:
 - NOCSH
 ms.author: ellevin
