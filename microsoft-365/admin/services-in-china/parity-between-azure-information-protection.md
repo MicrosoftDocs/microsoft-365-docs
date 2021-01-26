@@ -141,7 +141,7 @@ AIP apps on Windows need the following registry key to point them to the correct
 
 Install the AIP on-premises scanner to scan your network and content shares for sensitive data, and apply classification and protection labels as configured in your organization's policy.
 
-When installing the scanner and managing your content scan jobs, use the following cmdlets instead of the Azure portal interface that the commercial offering uses:
+When installing the scanner and managing your content scan jobs, use the following cmdlets instead of the Azure portal interface that the commercial offering uses:<br><br>
 
 | Cmdlet | Description |
 |--|--|
