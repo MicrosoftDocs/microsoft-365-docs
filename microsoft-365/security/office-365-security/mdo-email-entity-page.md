@@ -129,6 +129,7 @@ Users will see enriched detonation details for known malicious attachments or hy
 - *Domain Created Date*: Specifies the date of creation of the sending domain. A newly created domain is something you could be cautious of if other signals indicate some suspicious behavior.
 
 *Email Authentication*: Email authentication methods used by Microsoft 365 include SPF, DKIM, and DMARC.
+
 - Sender Policy Framework (**SPF**):  Describes results for SPF check for the message. Possible values can be:
     - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
     - Fail (IP address): The SPF check for the message failed and includes the sender's IP address. This is sometimes called hard fail.
@@ -138,15 +139,15 @@ Users will see enriched detonation details for known malicious attachments or hy
     - Temperror: A temporary error has occurred. For example, a DNS error. The same check later might succeed.
     - Permerror: A permanent error has occurred. For example, the domain has a badly formatted SPF record.
 
-- DomainKeys Identified Mail (**DKIM**): 
+- DomainKeys Identified Mail (**DKIM**):
     - Pass: Indicates the DKIM check for the message passed.
     - Fail (reason): Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.
-    - None: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed
+    - None: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed.
 
-- Domain-based Message Authentication, Reporting and Conformance (**DMARC**): 
+- Domain-based Message Authentication, Reporting and Conformance (**DMARC**):
     - Pass: Indicates the DMARC check for the message passed.
     - Fail: Indicates the DMARC check for the message failed.
-    - Bestguesspass: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed. 
-    - None: Indicates that no DMARC TXT record exists for the sending domain in DNS
+    - Bestguesspass: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed.
+    - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
 *Composite Authentication*: This is a value is used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
