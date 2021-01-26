@@ -45,7 +45,7 @@ information about system requirements and installation steps to enable Applicati
 * **Office**: Office Current Channel Build version 2011 16.0.13530.10000 or later
 * **Update package**: Windows 10 cumulative monthly security updates [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
+For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office update channels, see [Overview of update channels for Microsoft 365](https://docs.microsoft.com/en-us/deployoffice/overview-update-channels).
 
 ### Licensing requirements
 
@@ -127,21 +127,21 @@ Office supports the following policies to enable you to configure the capabiliti
 |Policy|Description|
 |---|---|
 |Don't use Application Guard for Office|Enabling this policy will force Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard for Office. This policy can be used to temporarily disable Application Guard for Office when there are issues in leaving it enabled for Edge.|
-|Configure Application Guard container pre-creation|This policy determines if the Application Guard container, for isolating untrusted files, is pre-created for improved run-time performance. If you enable this setting, you can specify the number of days to continue pre-creating an Application Guard container or let Office built-in heuristic pre-create the container.
-|Don't allow copy/paste for Office documents opened in Application Guard|Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard for Office to a document opened outside it.|
-|Disable hardware accelaration for Office in Application Guard|This policy controls whether Office in Application Guard uses hardware accelaration to render graphics. If you enable this setting, Application Guard uses software based (CPU) rendering and won't load any third-party graphics drivers or interact with any connected graphics hardware.
+|Configure Application Guard for Office container pre-creation|This policy determines if the Application Guard for Office container, for isolating untrusted files, is pre-created for improved run-time performance. If you enable this setting, you can specify the number of days to continue pre-creating an Application Guard for Office container or let Office built-in heuristic pre-create the container.
+|Don't allow copy/paste for Office documents opened in Application Guard for Office|Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard for Office to a document opened outside it.|
+|Disable hardware accelaration in Application Guard for Office|This policy controls whether Application Guard for Office uses hardware accelaration to render graphics. If you enable this setting, Application Guard for Office uses software based (CPU) rendering and won't load any third-party graphics drivers or interact with any connected graphics hardware.
 |Disable unsupported file types protection in Application Guard for Office|This policy controls whether Application Guard for Office will block unsupported file types from being oopened or if it will enable the redirection to Protected View.
-|Turn off camera and microphone access for documents opened in Application Guard|Enabling this policy will remove Office access to Camera and Microphone inside Application Guard for Office.|
-|Restrict printing from documents opened in Application Guard|Enabling this policy will limit printers a user can print to from a file opened in Application Guard for Office. For example, you can use this policy to restrict users to only print to PDF.|
-|Prevent users from removing Application Guard protection on files|Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <p> **Note:** Users can still bypass this policy by manually removing the mark-of-the-web property from the file or by moving a document to a Trusted location.|
+|Turn off camera and microphone access for documents opened in Application Guard for Office|Enabling this policy will remove Office access to Camera and Microphone inside Application Guard for Office.|
+|Restrict printing from documents opened in Application Guard for Office|Enabling this policy will limit printers a user can print to from a file opened in Application Guard for Office. For example, you can use this policy to restrict users to only print to PDF.|
+|Prevent users from removing Application Guard for Office protection on files|Enabling this policy will remove the option (within the Office application experience) to disable Application Guard for Office protection or open a file outside Application Guard for Office. <p> **Note:** Users can still bypass this policy by manually removing the mark-of-the-web property from the file or by moving a document to a Trusted location.|
 |
 
 > [!NOTE]
 > The following policies will require the user to log off and re-login to Windows to take effect:
 >
-> * Disable copy/paste for documents opened in Application Guard
-> * Restrict printing for documents opened in Application Guard
-> * Turn off camera and mic access to documents opened in Application Guard
+> * Disable copy/paste for documents opened in Application Guard for Office
+> * Restrict printing for documents opened in Application Guard for Office
+> * Turn off camera and mic access to documents opened in Application Guard for Office
 
 ## Submit feedback
 
@@ -215,7 +215,7 @@ You can also configure Microsoft Defender for Office 365 to work with Defender f
 
 * In the document's info section, the *Last Modified By* property may display WDAGUtilityAccount as the user. This is the anonymous user configured in Application Guard given that the desktop user's identity is not shared inside the Application Guard container.
 
-## Performance optimizations for Application Guard
+## Performance optimizations for Application Guard for Office
 
 This section provides an overview of the performance optimizations used in Application Guard for Office. This information can help administrators diagnose reports from users related to the performance of Office or the overall system when Application Guard is enabled.
 
