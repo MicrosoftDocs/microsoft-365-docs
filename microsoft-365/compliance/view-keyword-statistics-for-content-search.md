@@ -29,11 +29,11 @@ You can also download the search statistics and keyword statistics to a CSV file
   
 ## Get statistics for Content Searches
 
-To display statistics for Content Searches:
+To display statistics for Content searches:
   
-1. In the Security & Compliance Center, go to **Search** \> **Content search**.
-    
-2. In the list of searches, select one or more searches, and then click **Search statistics**![Search Statistics button](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png).
+1. In the Microsoft 365 compliance center, go to **Show all** > **Content search**.
+
+2. In the list of searches, select two or more searches, and then click **Search statistics** on the **Bulk actions** flyout page.
     
     ![Select multiple searches and then click Search statistics](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
@@ -100,12 +100,11 @@ To display statistics for Content Searches:
 
 As previous explained, the **Queries** page shows the search query and the number (and size) of items that match the query. If you use a keyword list when you create or edit a search query, you can get enhanced statistics that show how many items match each keyword or keyword phrase. This can help you quickly identify which parts of the query are the most (and least) effective. For example, if a keyword returns a large number of items, you might choose to refine the keyword query to narrow the search results. You can set up a keyword list when you create or edit a Content Search. 
 
-
 To create a keyword list and view keyword statistics for a Content Search:
   
-1. In the Security & Compliance Center, go to **Search** \> **Content search**.
+1. In the Microsoft 365 compliance center, go to **Show all** > **Content search**.
     
-2. In the list of Content Searches, click and a search, and then click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+2. In the list of content searches, click and a search, and then click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
     
 3. Click **Query** and then do the following things: 
     
