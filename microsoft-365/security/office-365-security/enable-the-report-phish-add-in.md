@@ -1,21 +1,23 @@
 ---
-title: "Enable the Report Phish add-in"
-f1.keywords:
-- NOCSH
+title: Enable the Report Phish add-in
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
-ms.collection:
-- M365-security-compliance
-description: "Learn how to enable the Report Phishing add-in for Outlook and Outlook on the web, for individual users or your entire organization."
+ms.collection: 
+  - M365-security-compliance
+description: Learn how to enable the Report Phishing add-in for Outlook and Outlook on the web, for individual users or your entire organization.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Enable the Report Phishing add-in
