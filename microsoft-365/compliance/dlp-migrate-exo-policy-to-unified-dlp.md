@@ -1,5 +1,5 @@
 ---
-title: "Migrate Exchange Online DLP policies to Compliance center DLP (preview)"
+title: "Migrate Exchange Online data loss prevention policies to Compliance center (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,11 +20,11 @@ search.appverid:
 description: "Learn how to plan for and migrate your Exchange online data loss prevention policies into Microsoft 365 DLP."
 ---
 
-# Migrate Exchange Online DLP policies to Compliance center DLP (preview)
+# Migrate Exchange Online data loss prevention policies to Compliance center (preview)
 
 [Exchange Online data loss prevention (DLP) policies](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) are being deprecated. All [DLP functionality](data-loss-prevention-policies.md), including Exchange Online DLP, is offered in the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies). You can use the DLP policy migration wizard to help you bring your Exchange Online DLP policies over to the Compliance center where you'll manage them.
 
-The migration wizard <!--NEED LINK to the wizard in the UI --> works by reading the configuration of your DLP polices in Exchange Online and then creating duplicate polices in the Compliance center. By default the wizard creates the new versions of the polices in **Test** mode, so you can see what impact they'd have in your environment without enforcing any of the actions. Once you're ready to fully transition to the Compliance center versions ***you must***:
+The migration wizard <!--NEED LINK to the wizard in the UI --> works by reading the configuration of your DLP policies in Exchange Online and then creating duplicate policies in the Compliance center. By default the wizard creates the new versions of the policies in **Test** mode, so you can see what impact they'd have in your environment without enforcing any of the actions. Once you're ready to fully transition to the Compliance center versions, ***you must***:
 
 1. Deactivate or delete the source policy in the Exchange Admin Center (EAC).
 1. Edit the Compliance center version of the policy and change its status from **Test** to **Enforce**. 
@@ -70,11 +70,11 @@ The account that you use to run the migration wizard must have access to both th
 |---------|---------|---------|
 |Is the policy still needed?    |If not, delete or deactivate it |don't migrate|
 |Does it overlap with any other Exchange or Compliance center DLP policies?     |If yes, can you consolidate the overlapping policies?         |don't use the migration wizard, manually create the consolidated DLP policy in the Compliance center. See, [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md) and [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
-|Is the Exchange DLP policy tightly scoped and does it have well defined conditions, actions, inclusions and exclusions?     |If yes, this is a good candidate to migrate with the wizard, make note of the policy so that you remember to come back to delete it later         | migrate with the wizard|
+|Is the Exchange DLP policy tightly scoped and does it have well-defined conditions, actions, inclusions, and exclusions?     |If yes, this is a good candidate to migrate with the wizard, make note of the policy so that you remember to come back to delete it later         | migrate with the wizard|
 
 ## Migration
 
-After you have evaluated all your Exchange Online DLP and Compliance center DLP polices for need and compatability, you can use the migration wizard.
+After you have evaluated all your Exchange Online DLP and Compliance center DLP policies for need and compatibility, you can use the migration wizard.
 
 1. Open the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console.
 2. If there are Exchange DLP policies that can be migrated, a banner will appear at the top of the page letting you know.
@@ -85,7 +85,7 @@ After you have evaluated all your Exchange Online DLP and Compliance center DLP 
 7.  Review the migration wizard session settings. Select **Next**.
 8. Review the migration report.
 
-The migrated polices will now appear in the list of DLP policies in the Compliance center DLP console. 
+The migrated policies will now appear in the list of DLP policies in the Compliance center DLP console. 
 
 ## Testing and validation
 
@@ -94,7 +94,7 @@ Test and review your policies.
 1. Follow the [Test a DLP policy](create-test-tune-dlp-policy.md#test-a-dlp-policy) procedures.
 2. Review the events created by the policy in [Activity explorer](data-classification-activity-explorer.md). 
 
-## Activate your migrated polices
+## Activate your migrated policies
 
 Once you are satisfied with how your migrated policies are functioning, you can set them to **Enforce**.
 
