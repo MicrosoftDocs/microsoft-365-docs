@@ -52,9 +52,14 @@ For retention policies and auto-apply label policies: SharePoint sites must be i
 
 ## How retention works for SharePoint and OneDrive
 
-To support retention, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist. You can view this library on the **Site contents** page in the top-level site of the site collection. Most users can't view the Preservation Hold library because it's visible only to site collection administrators.
-  
-If somebody attempts to change or delete a document that's subject to retain the content, a check is made whether the content's been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the person to change or delete the original content. Any content in a site collection can be copied to the Preservation Hold library, independently from retention settings.
+To store content that needs to be retained, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist. You can view this library on the **Site contents** page in the top-level site of the site collection. Most users can't view the Preservation Hold library because it's visible only to site collection administrators.
+
+Items in SharePoint that have a standard retention label (doesn't declare the item to be a record) don't need the Preservation Hold library because they remain in their original location. SharePoint prevents users from deleting items when a retention label is configured to retain the content. But users can delete other items when the applied label settings are to retain it:
+- Items in OneDrive that have standard retention labels
+- Items in SharePoint or OneDrive that have retention label applied that declares them a record, and the item is unlocked for editing
+- Items that have retention policies applied
+
+To retain this content when a user attempts to change or delete it, a check is made whether the content's been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the person to change or delete the original content. Any content in a site collection can be copied to the Preservation Hold library, independently from retention settings.
   
 A timer job periodically cleans up the Preservation Hold library. This job compares all content in the Preservation Hold library to all queries used by the retention settings for that content. Content that is older than their configured retention period is deleted from the Preservation Hold library, and the original location if it is still there. This timer job runs every seven days, which means that it can take up to seven days for content to be deleted.
   
