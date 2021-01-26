@@ -33,7 +33,7 @@ ms.custom: seo-marvel-apr2020
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 >
 
-Threat analytics is our in-product threat intelligence solution from expert Microsoft security researchers, designed to assist security teams be as efficient as possible while facing emerging threats, including:
+Threat analytics is our in-product threat intelligence solution from expert Microsoft security researchers, designed to assist security teams to be as efficient as possible while facing emerging threats, including:
 
 - Active threat actors and their campaigns
 - Popular and new attack techniques
