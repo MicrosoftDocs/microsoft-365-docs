@@ -14,9 +14,9 @@ description: "Learn how to use accessibility mode when training a model in Share
 
 # SharePoint Syntex accessibility mode
 
-In SharePoint Syntex, users can turn on accessibility mode when they are training a document understanding model to extract data from sample documents. Using accessibility mode can help low-sight users to have easier keyboarding accessibility as they navigate and label items in the document viewer.
+In SharePoint Syntex, users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboarding accessibility as they navigate and label items in the document viewer.
 
-This helps users to use their keyboards to navigate through text in the document viewer and to hear a narration of not only the selected values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional sample documents. 
+This helps users to use their keyboards to navigate through text in the document viewer and to hear a narration of not only the selected values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional example documents. 
 
 
 ![Accessibility mode](../media/content-understanding/accessibility-mode.png)
@@ -37,7 +37,8 @@ For keyboard users using accessibility mode, if you are labeling text in a sampl
 - Forward arrow: Moves you forward through individual characters in a selected word.
 - Backward arrow: Moves you backward through individual characters in a selected word.
 
-Note: If you need to label more than one word, you need to label each word.
+> [!NOTE]
+> If your are labeling multiple words for a single label, you need to label each word.
 
 
 ## Narration
@@ -47,10 +48,11 @@ For Narrator users using accessibility mode, use the same keyboard navigation de
 As you navigate through the sample documents and label string values, Narrator will give user the following audio prompts:
 
 - When you use the keyboard to navigate through the document viewer, Narrator audio will state the selected string.
-- Within a selected string, Narrator audio will state each character in the string as you select them using the forward or backward arrow.
+- Within a selected string, Narrator audio will state each character in the string as you select them by using the forward or backward arrow.
 - If you select a string that has been labeled, Narrator will state the value and then "labeled".  For example, if the label value is "Contoso", it will state "Costoso labeled". 
-- If the model is trained and predicts the label value in a new sample document that displays in the viewer, Narrator audio will state the value, and then "labelled and predicted". For example, if the trained model predicts that the next sample document will have a value of <b>982174</b> for the <b>PO Number</b> label, Narrator audio will state "982174 labeled and predicted".
-- If the word is only predicted, Narrator audio will announce the value and "predicted". Question: not sure what this means. Can you provide an example?
+- In the training tab, if you select a string in the document viewer that has been labeled and predicted, Narrator audio will state the value, and then "labeled and predicted". This is associated with a successful match between predicted value and the user label.
+- In the training tab, if you select a string in the document viewer that has only been predicted, Narrator audio will state the value, and then "predicted".  This is associated when training is unsuccessful and the machine predicts a value in the file that has not been labeled by the user.
+
 
 After a string is labeled or a label is removed, Narrator audio will warn you to save your changes before you exit.
 
