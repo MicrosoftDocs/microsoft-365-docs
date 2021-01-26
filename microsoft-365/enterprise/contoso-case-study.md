@@ -19,7 +19,7 @@ description: How a fictional but representative global organization adopted Micr
 
 # Microsoft 365 for enterprise for the Contoso Corporation
 
-Microsoft 365 for enterprise is the Microsoft premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features. It's a complete, intelligent solution that that enables everyone to work together creatively and securely.
+Microsoft 365 for enterprise is the Microsoft premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features. It's a complete, intelligent solution that enables everyone to work together creatively and securely.
 
 Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris. The company deployed Microsoft 365 for enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security.
 
@@ -62,6 +62,12 @@ See these articles for the details:
 - [Summary of Microsoft 365 for enterprise security](contoso-security-summary.md)
 
   Contoso uses the full spectrum of Microsoft 365 for enterprise security features for identity and access management, threat protection, information protection, and security management.
+
+See these additional IT scenarios and configurations:
+
+- [COVID-19 response and infrastructure for remote and onsite work](../solutions/contoso-remote-onsite-work.md)
+
+  Learn how Contoso updated their remote access infrastructure for the COVID-19 pandemic and their new installs and updates infrastructure for remote and onsite work.
 
 - [Team for a top-secret project](../solutions/contoso-team-for-top-secret-project.md)
 

@@ -31,7 +31,7 @@ This article applies to Microsoft 365 Business Premium.
 
 After you have [set up](set-up.md) Microsoft 365 Business Premium, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
 
-## To secure your Windows 10 PCs
+## To secure your Windows 10 computers
 
 1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials. 
 2. On the left nav, select **Setup** and then, under **Sign-in and security**, choose **Secure your Windows 10 computers**. Choose **View** to get started.

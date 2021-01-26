@@ -1,6 +1,6 @@
 ---
 title: Microsoft Managed Desktop technologies
-description:  This topic lists the technologies and apps used in Microsoft Managed Desktop.
+description:  This article lists the technologies and apps used in Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -13,33 +13,37 @@ ms.topic: article
 
 # Microsoft Managed Desktop technologies
 
-This topic lists the technologies and apps used in Microsoft Managed Desktop.
+This article lists the technologies and apps used in Microsoft Managed Desktop.
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
 Microsoft 365 Enterprise licensing is required for all Microsoft Managed Desktop users. For more information on licensing requirements for the service, see [Prerequisites for Microsoft Managed Desktop](../get-ready/prerequisites.md).
 
-This topic summarizes the components included in the required Enterprise licenses, with a description of how the service uses each component with Microsoft Managed Desktop devices. Specific roles and responsibilities for each area are detailed throughout Microsoft Managed Desktop documentation. 
+This article summarizes the components included in the required Enterprise licenses, with a description of how the service uses each component with Microsoft Managed Desktop devices. Specific roles and responsibilities for each area are detailed throughout Microsoft Managed Desktop documentation. 
 
 ## Office 365 E3 or E5
  |
  --- | ---
-Microsoft 365 Apps for enterprise (64-bit) | These Office applications will be shipped with the device: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>The 64-bit full versions of Microsoft Project and Microsoft Visio are not included. However, since the installation of these applications depends on the Microsoft 365 Apps for enterprise installation, Microsoft Managed Desktop has created default Microsoft Intune deployments and security groups that you can then use to deploy these applications to licensed users. For more information, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
-OneDrive for Business |Azure Active Directory Single Sign On is enabled for users upon first sign in to OneDrive for Business.<br><br>Known Folder Redirection for "Desktop", "Document", and "Pictures" folders is included; enabled and configured by Microsoft Managed Desktop. 
-Store Apps |	Microsoft Sway and Power BI are not shipped with the device. These apps are available for download from Microsoft Store.
-Win32 Applications |	Teams is not shipped with the device, but is packaged and provided by Microsoft for Microsoft Managed Desktop devices. Azure Information Protection Client is not shipped with the device, but you can have this packaged for deployment. 
-Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner are not shipped with the device. Users can access the web version of these applications with a browser.
+Microsoft 365 Apps for enterprise (64-bit) | These Office applications will be shipped with the device: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>The 64-bit full versions of Microsoft Project and Microsoft Visio aren't included. However, since the installation of these applications depends on the Microsoft 365 Apps for enterprise installation, Microsoft Managed Desktop has created default Microsoft Intune deployments and security groups that you can then use to deploy these applications to licensed users. For more information, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
+OneDrive |Azure Active Directory Single Sign On is enabled for users when they first sign in to OneDrive.<br><br>Known Folder Redirection for "Desktop", "Document", and "Pictures" folders is included; enabled and configured by Microsoft Managed Desktop.
+Store Apps |	Microsoft Sway and Power BI aren't shipped with the device. These apps are available for download from Microsoft Store.
+Win32 Applications |	Teams isn't shipped with the device, but is packaged and provided by Microsoft for Microsoft Managed Desktop devices. Azure Information Protection Client isn't shipped with the device, but you can have it packaged for deployment.
+Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner aren't shipped with the device. Users can access the web version of these applications with a browser.
+
 
 
 ## Windows 10 Enterprise E3, E5 and Microsoft Defender for Endpoint
- --- | --- 
+ |
+ --- | ---
 Recommended
 [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) | Customers are recommended to implement Windows Hello for Business to replace passwords with strong two-factor authentication used on Microsoft Managed Desktop devices.
 [Application Virtualization](https://docs.microsoft.com/windows/application-management/app-v/appv-technical-reference) | Customers can deploy Application Virtualization (App-V) packages using the Intune Win32 app management client.
 [Microsoft 365 data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about) | Customers are recommend to implement Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items.   
 
-Included in the service plan
+Included and managed in the service
+ |
+ --- | ---
 [BitLocker Drive Encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) | BitLocker Drive Encryption is used to encrypt all system drives. 
 [Windows Defender System Guard]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) | Protects the integrity of the system at start up and validates that system integrity has truly been maintained.
 [Windows Defender Credential Guard]( https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) | Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.

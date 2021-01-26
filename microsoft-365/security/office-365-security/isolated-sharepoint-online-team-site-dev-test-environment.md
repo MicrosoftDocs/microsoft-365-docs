@@ -1,21 +1,23 @@
 ---
-title: "Isolated SharePoint Online team site dev/test environment"
-f1.keywords:
-- NOCSH
+title: Isolated SharePoint Online team site dev/test environment
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- TLG
-- Ent_TLGs
+ms.custom: 
+  - TLG
+  - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "Summary: Configure a SharePoint Online team site that is isolated from the rest of the organization in your Microsoft 365 dev/test environment."
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Isolated SharePoint Online team site dev/test environment
@@ -30,9 +32,7 @@ SharePoint Online team sites in Microsoft 365 are locations for collaboration us
 Access to SharePoint Online team sites and what users can do is controlled by SharePoint groups and permission levels. By default, SharePoint Online sites have three levels of access:
 
 - **Members**, who can view, create, and modify resources on the site.
-
 - **Owners**, who have complete control of the site, including the ability to change permissions.
-
 - **Visitors**, who only can view resources on the site.
 
 This article steps you through the configuration of an isolated SharePoint Online team site for a secret research project named ProjectX. The access requirements are:
@@ -138,7 +138,7 @@ Results:
 
 Figure 1 shows the access groups and their membership.
 
-**Figure 1**
+**Figure 1**:
 
 ![The Microsoft 365 groups and their membership for an isolated SharePoint Online Group site](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
@@ -146,7 +146,7 @@ Figure 1 shows the access groups and their membership.
 
 To create a SharePoint Online team site for ProjectX, do the following:
 
-1. Using a browser on either your local computer (lightweight configuration) or on CLIENT1 (simulated enterprise configuration), sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) using your global administrator account.
+1. Using a browser on either your local computer (lightweight configuration) or on CLIENT1 (simulated enterprise configuration), sign in to the Microsoft 365 admin center (<https://admin.microsoft.com>) using your global administrator account.
 
 2. In the list of tiles, click **SharePoint**.
 
@@ -214,7 +214,7 @@ Now let's demonstrate access using the Lead Designer user account:
 
 2. Click the name of your global administrator, and then click **Sign out**.
 
-3. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) using the Lead Designer account name and its password.
+3. Sign in to the Microsoft 365 admin center (<https://admin.microsoft.com>) using the Lead Designer account name and its password.
 
 4. In the list of tiles, click **SharePoint**.
 
@@ -244,7 +244,7 @@ Now let's demonstrate access using the Lead Designer user account:
 
 Now let's demonstrate access using the Development VP user account:
 
-1. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) using the Development VP account name and its password.
+1. Sign in to the Microsoft 365 admin center (<https://admin.microsoft.com>) using the Development VP account name and its password.
 
 2. In the list of tiles, click **SharePoint**.
 
@@ -260,7 +260,7 @@ Now let's demonstrate access using the Development VP user account:
 
 Now let's demonstrate access with a user account that has no permissions:
 
-1. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) using the User 3 account name and its password.
+1. Sign in to the Microsoft 365 admin center (<https://admin.microsoft.com>) using the User 3 account name and its password.
 
 2. In the list of tiles, click **SharePoint**.
 

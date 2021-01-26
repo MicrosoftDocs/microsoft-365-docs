@@ -1,25 +1,26 @@
 ---
-title: Summarizing your pilot Microsoft 365 Defender project results 
+title: Summarizing your pilot Microsoft 365 Defender project results
 description: Conclude your pilot Microsoft 365 Defender project by completing your scorecard, analyzing your report findings, and deciding how to move forward.
 keywords: Microsoft Threat Protection pilot, decide what to do next after pilot Microsoft Threat Protection project, what to do after evaluating Microsoft Threat Protection in production, transition from Microsoft Threat Protection pilot to deployment, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: dolmont
 author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
-- m365solution-pilotmtpproject
+  - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-pilotmtpproject
 ms.topic: conceptual
+ms.technology: m365d
 ---
 
 # Closing and summarizing your Microsoft 365 Defender pilot  
@@ -30,45 +31,12 @@ ms.topic: conceptual
 **Applies to:**
 - Microsoft 365 Defender
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Plan your pilot Microsoft 365 Defender project" />
-      <br/>Plan </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Prepare your Microsoft 365 Defender trial lab or pilot environment" />
-      <br/>Prepare </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Run your Microsoft 365 Defender attack simulations" />
-      <br/>Simulate attack </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Close and summarize your Microsoft 365 Defender pilot" />
-      <br/>Close and summarize </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
 
-</td>
-  </tr>
-</table>
+|[![Planning](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planning](mtp-pilot-plan.md) |[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparation](prepare-mtpeval.md) | [![Simulate attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simulate attack](mtp-pilot-simulate.md) | ![Close and summarize](../../media/phase-diagrams/4-summary.png)<br/>Close and summarize|
+|--|--|--|--|
+|| | |*You are here!*|
+
 
 You're currently in the closing and summarizing phase.
 

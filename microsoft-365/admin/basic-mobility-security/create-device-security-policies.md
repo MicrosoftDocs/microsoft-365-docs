@@ -34,8 +34,8 @@ You can use Basic Mobility and Security to create device policies that help prot
 - To create and deploy Basic Mobility and Security policies in Microsoft 365, you need to be a Microsoft 365 global admin. For more info, see [Permissions in the Security & Compliance Center](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1).
 - Before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, noncompliant devices can be blocked from accessing Microsoft 365 and data, including installed applications, photos, and personal information on an enrolled device, and data can be deleted.
 
-> [!NOTE]
-> Policies and access rules created in MDM for Microsoft 365 Business Standard override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in MDM for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
+>[!NOTE]
+>Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
 
 ## Step 1: Create a device policy and deploy to a test group
 
@@ -86,7 +86,7 @@ To help secure your organization information, you should block app access to Mic
 
 1. From your browser, type [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
 2. Select **Manage organization-wide device access settings**.
-3. To block unsupported devices, choose **Block** under **If a device isn't supported by MDM for Microsoft 365**, and then select **Save**.
+3. To block unsupported devices, choose **Block** under **If a device isn't supported by Basic Mobility and Security for Microsoft 365**, and then select **Save**.
 
    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access option":::
 
