@@ -24,7 +24,7 @@ monikerRange: 'o365-21vianet'
 
 # Azure Information Protection support for Office 365 operated by 21Vianet
 
-This article covers the differences between Azure Information Protection (AIP) support for Office 365 operated by 21Vianet and commercial offerings, as well as specific instructions for configuring AIP for customers in China.
+This article covers the differences between Azure Information Protection (AIP) support for Office 365 operated by 21Vianet and commercial offerings, as well as specific instructions for configuring AIP for customers in China&mdash;including how to manage content scan jobs for the AIP on-premises scanner.
 
 ## Differences between AIP for Office 365 operated by 21Vianet and commercial offerings
 
@@ -56,6 +56,8 @@ To configure AIP for customers in China:
 3. [Install and configure the AIP unified labeling client](#step-3-install-and-configure-the-aip-unified-labeling-client).
 
 4. [Configure AIP apps on Windows](#step-4-configure-aip-apps-on-windows).
+
+5. [Manage content scan jobs for the AIP on-premises scanner](#step-5-manage-content-scan-jobs-for-the-aip-on-premises-scanner). 
 
 ### Step 1: Enable Rights Management for the tenant
 
@@ -135,9 +137,11 @@ AIP apps on Windows need the following registry key to point them to the correct
 > [!IMPORTANT]
 > Make sure you don't delete the registry key after an uninstall. If the key is empty, incorrect, or non-existent, the functionality will behave as the default value (default value = 0 for the commercial cloud). If the key is empty or incorrect, a print error is also added to the log.
 
-## Manage content scan jobs for the AIP on-premises scanner
+### Step 5: Manage content scan jobs for the AIP on-premises scanner
 
-To manage your AIP content scan jobs with an Azure China scanner server, use the following cmdlets instead of the Azure portal interface that the commercial offering uses:
+Install the AIP on-premises scanner to scan your network and content shares for sensitive data, and apply classification and protection labels as configured in your organization's policy.
+
+When installing the scanner and managing your content scan jobs, use the following cmdlets instead of the Azure portal interface that the commercial offering uses:
 
 | Cmdlet | Description |
 |--|--|
