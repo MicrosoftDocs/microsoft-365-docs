@@ -44,6 +44,17 @@ In general, you'll need to take the following steps to get started:
     After completing the intital steps, you'll need to deploy the supported services that come with Microsoft 365 Defender. Deploying services effectively increases your visibility in the signals from assets across your network.
 
 
+## Key capabilities
+Turning on Microsoft 365 Defender and deploying services will give you access to the following key capabilities:
+
+
+| Capability | Description |
+| ------ | ------ |
+| Microsoft Defender for Endpoint | Endpoint protection suite built around powerful behavioral sensors, cloud analytics, and threat intelligence |
+|Microsoft Defender for Office 365 | Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
+| Microsoft Defender for Identity | Defend against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
+| Microsoft Cloud App Security | Identify and combat cyberthreats across your Microsoft and third-party cloud services |
+
 
 
 
