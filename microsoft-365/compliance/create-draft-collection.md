@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "A draft collection is an eDiscovery search of custodial and non-custodial data sources in an Advanced eDiscovery case that returns an search estimate that match the search query of the collection. You can review search statistics, preview a sampling of items, and revise and rerun the collection before you commit the results to a review set."
+description: "A draft collection is an eDiscovery search of custodial and non-custodial data sources in an Advanced eDiscovery case that returns a search estimate that matches the search query of the collection. You can review search statistics, preview a sampling of items, and revise and rerun the collection before you commit the results to a review set."
 ---
 
 # Create a draft collection in Advanced eDiscovery
 
-After you've identified custodians and any non-custodian data sources for the case, you're ready to identify and locate a set of documents that are relevant. You do this by using the Collections tool to search data sources for relevant content. You do this by creating a collection that searches specified data sources for content that matches your search criteria. You have the option to create a *draft collection*, which is an estimate of the items are found or you can create a collection that automatically adds the items to a review set. When you create a draft collection, you can views information about the estimated results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of 25 items that were returned by the search. Using these statistics, you can change the search query and rerun the draft collection to narrow your results. Once you're satisfied with the collection results, you can commit the collection to a review set. When you commit a draft collection, the items returned by the collection are added to a review set for further review and analysis.
+After you've identified custodians and any non-custodian data sources for the case, you're ready to identify and locate a set of documents that are relevant. You do this by using the Collections tool to search data sources for relevant content. You do this by creating a collection that searches specified data sources for content that matches your search criteria. You have the option to create a *draft collection*, which is an estimate of the items are found or you can create a collection that automatically adds the items to a review set. When you create a draft collection, you can views information about the estimated results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the draft collection to narrow your results. Once you're satisfied with the collection results, you can commit the collection to a review set. When you commit a draft collection, the items returned by the collection are added to a review set for review, analysis, and export.
 
 ## Before you create a draft collection
 
@@ -30,7 +30,7 @@ After you've identified custodians and any non-custodian data sources for the ca
 
   - [Add non-custodial data sources to a case](non-custodial-data-sources.md)
 
-- You can search additional data sources (ones that haven't been added to the case as custodial or non-custodial locations) in a draft collection for content that may be relevant to the case. These data sources might include mailboxes, SharePoint sites, and Teams. If this is applicable to your case, compile a list of these data sources so you can add them to the collection.
+- You can search additional data sources (ones that haven't been added to the case as custodial or non-custodial locations) in a draft collection for content that may be relevant to the case. These data sources might include mailboxes, SharePoint sites, and Teams. If this situation is applicable to your case, compile a list of these data sources so you can add them to the collection.
 
 ## Create a draft collection
 
@@ -42,7 +42,7 @@ After you've identified custodians and any non-custodian data sources for the ca
 
 4. On the **Custodial data sources** page, do one of the following things to identify the custodial data sources to collect content from:
 
-   - Click **Select custodians** to search specific custodians that were added to the case. If you use this option, a list of the case custodians is displayed. Select one or more custodians. After you select and add the custodians, you also have the option to select the specific data sources to search for each custodian. These data sources that are displayed were specified when the custodian was added to the case.
+   - Click **Select custodians** to search specific custodians that were added to the case. If you use this option, a list of the case custodians is displayed. Select one or more custodians. After you select and add the custodians, you can also select the specific data sources to search for each custodian. These data sources that are displayed were specified when the custodian was added to the case.
 
    - Click the **Select all** toggle to search all custodians that were added to the case. When you select this option, all data sources for all custodians are searched.
 
@@ -89,24 +89,17 @@ During the draft collection process, Advanced eDiscovery performs a search estim
 
 ## Next steps after draft collection is complete
 
-After the draft collection is successfully completed, you can perform a variety of tasks. To perform most of these tasks, just go the **Collections** tab and click the name of the draft collection to display the flyout page.
+After the draft collection is successfully completed, you can perform various tasks. To perform most of these tasks, just go the **Collections** tab and click the name of the draft collection to display the flyout page.
 
 Here's a list of things you can do from the collection flyout page:
 
 - Select the **Summary** tab to view summary information about the collection and the estimated search results returned by the collection. This includes that total number of items and size of the estimated search results, the number of mailboxes and sites that were searched, and the search conditions (if used) used to scope the collection. 
 
-- Select the **Data sources** tab to view a list of all data sources (custodians, non-custodial, and additional) that were searched in the collection.
+- Select the **Data sources** tab to view a list of all data sources (custodians, non-custodial, and additional data sources) that were searched in the collection.
 
 - Select the **Search statistics** tab to view statistics about the collection. This includes the total number and size of items found in each service (for example, Exchange mailboxes or SharePoint sites) and a condition report that displays statistics about the number of items returned by different components of the search query used by the collection. For more information, see [Collection statistics and reports](collection-statistics-reports.md).
 
-- Click **Review sample** (located at the bottom of the flyout page) to preview items a sampling of the items returned by the collection. Up to 300 items (for large collections) are available for preview. 
+- Click **Review sample** (located at the bottom of the flyout page) to preview a sample of the items returned by the collection.
 
-
-
-
-
-
-
-
-
+- Commit the draft collection to a review set. This means that you rerun the search (using the current settings for the draft collection) and the items returned by the collection are added to a review. As previously explained, you can also configure additional settings (such as conversation threading and cloud-based attachments) when you add the collection to a review set. For more information and step-by-step instructions, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
