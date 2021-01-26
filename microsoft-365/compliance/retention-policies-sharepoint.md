@@ -54,7 +54,7 @@ For retention policies and auto-apply label policies: SharePoint sites must be i
 
 To store content that needs to be retained, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist. You can view this library on the **Site contents** page in the top-level site of the site collection. Most users can't view the Preservation Hold library because it's visible only to site collection administrators.
 
-Items in SharePoint that have a standard retention label (doesn't declare the item to be a record) don't need the Preservation Hold library because they remain in their original location. SharePoint prevents users from deleting items when a retention label is configured to retain the content. But users can delete other items when the applied label settings are to retain it:
+Items in SharePoint that have a standard retention label (doesn't declare the item to be a record) don't need the Preservation Hold library because they remain in their original location. SharePoint [versioning](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247) preserves items that are edited, and specific to retention labels,  users are prevented from deleting these items when the retention label is configured to retain the content. But users can delete other items when the applied label settings are to retain it:
 - Items in OneDrive that have standard retention labels
 - Items in SharePoint or OneDrive that have retention label applied that declares them a record, and the item is unlocked for editing
 - Items that have retention policies applied
