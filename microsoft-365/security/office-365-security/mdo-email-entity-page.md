@@ -24,8 +24,11 @@ description: Microsoft Defender for Office 365 E5 and ATP P1 and ATP P2 customer
 
 **In this article:**
 [Reach the email entity page](#reach-the-email-entity-page)
+
 [Read the email entity page](#read-the-email-entity-page)
+
 [Use email entity page tabs](#use-email-entity-page-tabs)
+
 [New to the email entity page](#new-to-the-email-entity-page)
 
 Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 admins have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered on the [Threat Explorer 'email details' fly-out](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer-views?view=o365-worldwide).
@@ -113,7 +116,7 @@ Users will see enriched detonation details for known malicious attachments or hy
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
     
 - *Junk Mailbox Rule*: 'Junk' is hidden Inbox rule that's enabled by default in every mailbox.
-    - When the Junk email rule is enabled on the mailbox, Exchange Online Protection (EOP) is able to move messages to Junk according to some criteria. The move can be based on spam filtering verdict action *Move message to Junk Email folder*, or on the Blocked Senders list on the mailbox. This prevents the delivery of messages to the Junk Email folder based on the Safe Senders list on the mailbox.
+    - When the Junk email rule is enabled on the mailbox, Exchange Online Protection (EOP) is able to move messages to Junk according to some criteria. The move can be based on spam filtering verdict action *Move message to Junk Email folder*, or on the Blocked Senders list on the mailbox. Disabling the Junk email rule prevents the delivery of messages to the Junk email folder based on the *Safe Senders* list on the mailbox.
     - When the junk email rule is *disabled* on the mailbox, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action *Move message to Junk Email folder*, or the safe list collection on the mailbox.
     
 - *Bulk Compliant Level (BCL)*: The Bulk Complaint Level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
