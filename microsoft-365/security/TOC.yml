@@ -436,7 +436,7 @@
             - name: Add support for anonymous inbound email over IPv6
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: Install Application Guard for Office
-              href: ./install-app-guard.md
+              href: ./office-365-security/install-app-guard.md
             - name: Configure groups and users for a political campaign dev/test environment
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Create team sites in a political campaign dev/test environment
