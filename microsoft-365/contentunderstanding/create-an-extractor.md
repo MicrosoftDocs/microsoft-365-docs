@@ -51,6 +51,14 @@ Creating the extractor opens the extractor page. Here you see a list of your sam
  
 Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
 
+### Use Find to search your file
+You can use the <b>Find</b> feature to search for an entity in your document that you want to label.
+
+   ![Find in file](../media/content-understanding/find-feature.png) 
+
+The Find feature is useful if you are searching a large document or if there are multiple instances of the entity in the document. If you find multiple instances, you can select the one you need in the search results to go to that location in the viewer to label it.
+
+
 ## Add an explanation
 
 For our example, we are going to create an explanation that provides a hint about the entity format itself and variations it may have in the sample documents. For example, a date value can be in a number of different formats, such as:
