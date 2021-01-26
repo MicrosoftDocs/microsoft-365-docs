@@ -39,7 +39,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
 
 - Set up mailbox features such as the mailbox sharing policy: how users can share calendar and contacts information with others outside of your organization.
 
-- Set up "[Send as](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" and "[Send on abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" delegates for someone's mailbox. For example, an executive may want their assistant to have the ability to send mail on their behalf.
+- Set up "[Send as](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" and "[Send on behalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" delegates for someone's mailbox. For example, an executive may want their assistant to have the ability to send mail on their behalf.
 
 - [Create a shared mailbox](../email/create-a-shared-mailbox.md) so a group of people can monitor and send email from a common email address.
 
@@ -53,7 +53,7 @@ If you have a large organization, the Exchange admin might want to assign users 
   
  For example, the Exchange admin might assign someone to the Discovery Management role group so they can perform searches of mailboxes for data that meets certain criteria. To learn more, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) and [Manage Role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## Learn about other admin role
+## Learn about other admin roles
 
 - [About Microsoft 365 admin roles](about-admin-roles.md)
 

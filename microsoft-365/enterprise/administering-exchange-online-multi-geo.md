@@ -32,7 +32,9 @@ Specifically, you need to add the `?email=<emailaddress>` value to end of the _C
 
 Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _ConnectionUri_ parameter to connect to Exchange Online PowerShell. But, to connect to a specific geo location, you do need to use _ConnectionUri_ parameter so you can use `?email=<emailaddress>` in the value.
 
-### Connect to a geo location in Exchange Online PowerShell using multi-factor authentication (MFA)
+### Connect to a geo location in Exchange Online PowerShell
+
+The following connection instructions work for accounts that are or aren't configured for multi-factor authentication (MFA).
 
 1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
 
@@ -42,31 +44,11 @@ Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _Co
 
 2. In the following example, admin@contoso.onmicrosoft.com is the admin account, and the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
 
-  ```powershell
-  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-  ```
-
-### Connect to a geo location in Exchange Online PowerShell without using MFA
-
-1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
-
    ```powershell
-   Import-Module ExchangeOnlineManagement
+   Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-2. Run the following command:
-
-   ```powershell
-   $UserCredential = Get-Credential
-   ```
-
-   In the **Windows PowerShell Credential Request** dialog box that appears, type your work or school account and password, and then click **OK**.
-
-3. In the following example, the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
-
-   ```powershell
-   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-   ```
+3. Enter the password for the admin@contoso.onmicrosoft.com in the prompt that appears. If the account is configured for MFA, you also need to enter the security code.
 
 ## View the available geo locations that are configured in your Exchange Online organization
 

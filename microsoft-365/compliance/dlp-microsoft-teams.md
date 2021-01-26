@@ -20,9 +20,12 @@ description: "You can now apply DLP policies to Microsoft Teams chats and channe
 # Data loss prevention and Microsoft Teams
 
 > [!NOTE]
-> Data loss prevention capabilities were recently added to Microsoft Teams chat and channel messages for users licensed for Office 365 Advanced Compliance, which is available as a standalone option and is included in Office 365 E5 and Microsoft 365 E5 Compliance. Office 365 and Microsoft 365 E3 include DLP protection for SharePoint Online, OneDrive, and Exchange Online. This also includes files that are shared through Teams because Teams uses SharePoint Online and OneDrive to share files.
+> Data loss prevention capabilities were recently added to Microsoft Teams chat and channel messages for users licensed for Office 365 E5/A5, Microsoft 365 E5/A5, Microsoft 365 Information Protection and Governance or Office 365 Advanced Compliance. Office 365 and Microsoft 365 E3 include DLP protection for SharePoint Online, OneDrive, and Exchange Online. This also includes files that are shared through Teams because Teams uses SharePoint Online and OneDrive to share files.
 Support for DLP protection in Teams Chat requires E5.
 To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+
+> [!IMPORTANT]
+> DLP for Teams is only supported when the user has a mailbox that is in Exchange Online
 
 ## Overview of DLP for Microsoft Teams
 
@@ -76,6 +79,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 Allow approximately one hour for your changes to work their way through your data center and sync to user accounts.
  <!-- why are these syncing to user accounts? -->
+
 ## Add Microsoft Teams as a location to existing DLP policies
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
@@ -88,12 +92,13 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 4. In the **Status** column, turn the policy on for **Teams chat and channel messages**.<br/>![DLP for Teams chats and channels](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. Keep the default settings of all accounts, or specify which accounts to include or exclude.
+5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts to include or exclude. Then choose **Next**.
 
 6. Click **Save**.
 
 Allow approximately one hour for your changes to work their way through your data center and sync to user accounts.
 <!-- again, why user accounts? -->
+
 ## Define a new DLP policy for Microsoft Teams
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
@@ -106,11 +111,13 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 4. On the **Name your policy** tab, specify a name and description for the policy, and then choose **Next**.
 
-5. On the **Choose locations** tab, keep the default setting of all locations, or select **Let me choose specific locations**, and then choose **Next**.<br/>If you chose specific locations, select them for your DLP policy, and then choose **Next**.<br/>![DLP policy locations](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
-    > [!NOTE]
-    > If you want to make sure documents that contain sensitive information are not shared inappropriately in Teams, make sure **SharePoint sites** and **OneDrive accounts** are turned on, along with **Teams chat and channel messages**.
+5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts to include or exclude. Then choose **Next**.
 
-<br/>
+![DLP policy locations](../media/dlp-teams-selectlocationsnewpolicy.png)
+
+> [!NOTE]
+> If you want to make sure documents that contain sensitive information are not shared inappropriately in Teams, make sure **SharePoint sites** and **OneDrive accounts** are turned on, along with **Teams chat and channel messages**.
+
 
 6. On the **Policy settings** tab, under **Customize the type of content you want to protect**, keep the default simple settings, or choose **Use advanced settings**, and then choose **Next**. If you choose advanced settings, you can create or edit rules for your policy. (To get help with this, see [Simple settings vs. advanced settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)
 

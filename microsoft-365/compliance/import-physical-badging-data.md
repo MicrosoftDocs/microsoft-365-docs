@@ -34,8 +34,6 @@ Setting up a physical badging connector consists of the following tasks:
 
 ## Before you set up the connector
 
-- Your organization must consent to allow the Office 365 Import service to access data in your organization. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of a Microsoft 365 global admin, and then accept the request. You have to complete this step before you can successfully create the physical badging connector in Step 3.
-
 - The user who creates the physical badging connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 - You need to determine how to retrieve or export the data from your organization's physical badging system (on a daily basis) and create a JSON file that's described in Step 2. The script that you run in Step 4 will push the data in the JSON file to the API endpoint.

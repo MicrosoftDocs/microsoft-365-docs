@@ -30,6 +30,8 @@ Here are the requirements and limitations for enabling cloud-based storage for o
 
 - The user whose primary mailbox is located in the on-premises organization must be assigned a Microsoft Teams license and a minimum of an Exchange Online Plan 1 license.
 
+- If your organization doesn't have an Exchange hybrid deployment, you must synchronize your on-premises Exchange schema to Azure Active Directory. If you don't do this, you might risk creating duplicate cloud-based mailboxes in Exchange Online for users that have a mailbox in your on-premises Exchange organization.
+
 - Only Teams chat data associated with an on-premises user is stored in the cloud-based storage area. An on-premises user can't access this storage area in any way.
 
 - You have to submit a request to Microsoft Support to enable your organization to search for Teams chat data for on-premises users. See [Filing a request with Microsoft Support to enable this feature](#filing-a-request-with-microsoft-support-to-enable-this-feature) in this article.
@@ -137,13 +139,13 @@ For more information using these cmdlets, see:
 
 ## Frequently asked questions
 
- **Where is the cloud-based storage for on-premises users located?**
+**Where is the cloud-based storage for on-premises users located?**
   
-Cloud-based storage is provisioned in the same datacenter as your organization.
+Teams chat data is stored in the Preferred Data Location (PDL) for an on-premises user. The PDL is honored in both Single-Geo and Multi-Geo environments. For more information, see [Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo).
   
  **Are there any other requirements other than submitting a support request?**
   
- As previously explained, the identities of users with on-prem mailboxes must be synchronized to your cloud-based organization so that a corresponding mail user account is created for each on-premises user account in Office 365. Your organization must also have an Office 365 enterprise subscription, such as an Office 365 Enterprise E1, E3, or E5 subscription.
+As previously explained, the identities of users with on-prem mailboxes must be synchronized to your cloud-based organization so that a corresponding mail user account is created for each on-premises user account in Office 365. Your organization must also have an Office 365 enterprise subscription, such as an Office 365 Enterprise E1, E3, or E5 subscription.
   
  **Is there a risk of losing the Teams chat data if the user's on-premises mailbox is migrated to the cloud?**
   

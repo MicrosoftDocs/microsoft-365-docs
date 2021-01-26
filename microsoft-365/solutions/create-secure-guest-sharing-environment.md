@@ -61,7 +61,7 @@ Now, guest will be required to enroll in multi-factor authentication before they
 
 ### More information
 
-[Planning an Azure Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planning an Azure AD Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## Set up a terms of use for guests
 
@@ -157,7 +157,7 @@ You can reduce your attack surface and ease administration by requiring guest us
 
 For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
 
-To restrict guests to web-ony access for groups and teams
+To restrict guests to web-only access for Groups and Teams:
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. On the **Conditional Access - Policies** blade, click **New policy**.

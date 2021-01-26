@@ -1,23 +1,25 @@
 ---
 title: View mail flow reports in the Reports dashboard
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center."
-ms.custom:
+search.appverid: 
+  - MET150
+  - MOE150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
+ms.custom: 
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # View mail flow reports in the Reports dashboard in Security & Compliance Center
@@ -530,24 +532,16 @@ To go back to the report view, click **View report**.
 
 ## What permissions are needed to view these reports?
 
-To view and use the reports, you need to be a member of the specified role group in the Security & Compliance Center **and** in Exchange Online.
+In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Security & Compliance Center:
 
-- In the Security & Compliance Center, you need to be a member of one of the following role groups:
+- **Organization Management**
+- **Security Administrator**
+- **Security Reader**
+- **Global Reader**
 
-  -Organization Management
-  -Security Administrator (you can also do this in the [Azure Active Directory admin center](https://aad.portal.azure.com)
-  -Security Reader
+For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-
-- In Exchange Online, you need to be a member of one of the following role groups:
-
-  -Organization Management
-  -View-only Organization Management
-  -View-Only Recipients
-  -Compliance Management
-
-For more information, see [Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) and [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Related topics
 

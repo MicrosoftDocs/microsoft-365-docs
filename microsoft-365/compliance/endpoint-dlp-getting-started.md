@@ -79,7 +79,11 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 
 1. Must be running Windows 10 x64 build 1809 or later.
 
-2. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623. Note: None of Windows Security components need to be active, you can run Endpoint DLP independent of Windows Security status.
+2. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623. 
+
+> [!NOTE]
+> None of Windows Security components need to be active, you can run Endpoint DLP independent of Windows Security status, but the [Real-time protection and Behavior monitor](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
+ 
 
 3. The following Windows Updates are installed. Note: These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
 
@@ -93,6 +97,8 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 6. If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, there is a known issue with Endpoint DLP classifying Office content and you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about this issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
+
+7. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md).
 
 ## Onboarding devices into device management
 
@@ -191,8 +197,8 @@ Now that you have onboarded devices and can view the activity data in Activity e
 
 ## See also
 
-- [Learn about Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)
-- [Using Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+- [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
+- [Using Endpoint data loss prevention ](endpoint-dlp-using.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)

@@ -29,19 +29,7 @@ description: "Learn how to set up your Microsoft 365 Business Standard subscript
 
 # Set up Microsoft Business Standard
 
-Watch a short video about setting up Microsoft 365 Business Standard.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-  
- *These steps are for businesses and [nonprofits](https://go.microsoft.com/fwlink/p/?LinkId=627221) that have the **[Microsoft 365 Business Standard plan.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
-
-Watch a short video about setting up Microsoft 365 Business Standard (formerly known as Office 365 Business Premium).<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## Add your domain to personalize sign-in
 

@@ -1,22 +1,24 @@
 ---
-title: "Configuration analyzer for security policies"
-f1.keywords:
-- NOCSH
+title: Configuration analyzer for security policies
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer:
-ms.date:
+ms.reviewer: 
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to use the configuration analyzer to find and fix security policies that are below the Standard protection and Strict protection preset security policies."
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the Standard protection and Strict protection preset security policies.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365
@@ -25,14 +27,14 @@ description: "Admins can learn how to use the configuration analyzer to find and
 
 
 > [!NOTE]
-> The features described in this topic are in Preview, aren't available in all organizations, and are subject to change. For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
+> The features described in this article are in Preview, aren't available in all organizations, and are subject to change. For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
 
 Configuration analyzer in the Security & Compliance center provides a central location to find and fix security policies where the settings are below the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
 
 The following types of policies are analyzed by the configuration analyzer:
 
 - **Exchange Online Protection (EOP) policies**: This includes Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
-  
+
   - [Anti-spam policies](configure-your-spam-filter-policies.md).
   - [Anti-malware policies](configure-anti-malware-policies.md).
   - [EOP Anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
@@ -57,17 +59,16 @@ The **Standard** and **Strict** policy setting values that are used as baselines
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can do the procedures in this article:
+- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+  - To use the configuration analyzer **and** make updates to security policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - For read-only access to the configuration analyzer, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  - To use the configuration analyzer **and** make updates to security policies, you need to be a member of one of the following role groups:
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Notes**:
 
-  - For read-only access to the configuration analyzer, you need to be a member of one of the following role groups:
-
-    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 ## Use the configuration analyzer in the Security & Compliance Center
 

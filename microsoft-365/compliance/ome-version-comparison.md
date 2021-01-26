@@ -23,16 +23,12 @@ ms.custom: seo-marvel-apr2020
 
 This article compares legacy Office 365 Message Encryption (OME) to the new OME capabilities and Office 365 Advanced Message Encryption. The new capabilities are a merger and newer version of both OME and Information Rights Management (IRM). Unique characteristics of deploying into GCC High are also outlined. The two can coexist in your organization. For information on how the new capabilities work, see [Office 365 Message Encryption (OME)](ome.md).
 
-||
-|:-----|
-|This article is part of a larger series of articles about Office 365 Message Encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) and locate the article that best fits your needs. |
-||
+This article is part of a larger series of articles about Office 365 Message Encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) and locate the article that best fits your needs.
 
 ## Side-by-side comparison of features and capabilities
 
-|                                   |Old features       |                   |New features              |
+|           **Situation**           | **Legacy OME**    | **IRM**           | **New OME capabilities** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|**Capability**                     | **Legacy OME**    | **IRM**           | **New OME capabilities** |
 |*Sending an encrypted mail*        |Through Exchange mail flow rules|End-user initiated from Outlook desktop or Outlook on the Web; or through Exchange mail flow rules|End-user initiated from Outlook desktop, Outlook for Mac, or Outlook on the Web; through Exchange mail flow rules (also known as transport rules) and Data Loss Prevention (DLP)|
 |*Rights management template*       |   N/A      |Do Not Forward option and custom templates|Do Not Forward option, Encrypt-Only option, and custom templates|
 |*Recipient type*                   |Internal and external recipients|Internal recipients only         |Internal and external recipients|

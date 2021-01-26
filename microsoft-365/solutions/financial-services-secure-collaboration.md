@@ -116,7 +116,7 @@ As employees work, they may move from application to application or between mult
 
 Microsoft 365 provides a secure identity platform in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/), where identities are centrally stored and securely managed. Azure AD, along with a host of related Microsoft 365 security services, forms the basis for providing employees with the access they need to work securely while also protecting the organization from threats.
 
-[Azure Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
+[Azure AD Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
 
 - The Microsoft Authenticator app
 - A one-time passcode delivered via SMS

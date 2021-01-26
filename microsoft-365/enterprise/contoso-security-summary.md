@@ -52,7 +52,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Dedicated global administrator accounts with MFA and PIM
 
-  Rather than assign the global admin role to everyday user accounts, Contoso created three dedicated global administrator accounts with strong passwords. The accounts are protected by Azure Multi-Factor Authentication (MFA) and Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM is only available with Microsoft 365 E5.*
+  Rather than assign the global admin role to everyday user accounts, Contoso created three dedicated global administrator accounts with strong passwords. The accounts are protected by Azure AD Multi-Factor Authentication (MFA) and Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM is only available with Microsoft 365 E5.*
 
   Signing in with a global administrator account is only done for specific administrative tasks. The passwords are only known to designated staff and can only be used within a time period that's configured in Azure AD PIM.
 

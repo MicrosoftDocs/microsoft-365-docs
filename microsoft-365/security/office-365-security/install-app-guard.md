@@ -1,20 +1,22 @@
 ---
 title: Application Guard for Office 365 (public preview) for admins
 keywords: application guard, protection, isolation, isolated container, hardware isolation
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: maccruz
 author: schmurky
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: M365-security-compliance
-description: "Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security."
+description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Application Guard for Office (public preview) for admins
@@ -25,8 +27,8 @@ description: "Get the latest in hardware-based isolation. Prevent current and em
 **Applies to:** Word, Excel, and PowerPoint for Microsoft 365, Windows 10
 Enterprise
 
->[!IMPORTANT]
->Some information relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> [!IMPORTANT]
+> Some information relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Microsoft Defender Application Guard for Office (Application Guard for Office) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up devices for a preview of Application Guard for Office. It provides
 information about system requirements and installation steps to enable Application Guard for Office on a device.
@@ -74,9 +76,7 @@ For detailed system requirements, refer to [System requirements for Microsoft De
 
    Alternatively, you can set the corresponding CSP policy:
 
-   OMA-URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard**<br/>
-   Data type: **Integer**<br/>
-   Value: **2**
+   > OMA-URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> Data type: **Integer** <br> Value: **2**
 
 4. Reboot the system.
 
@@ -152,7 +152,7 @@ If you encounter any issues when launching Application Guard for Office, you are
 
 1. Open the **Feedback Hub app** and sign in.
 
-2. If you get an error dialog while launching Application Guard, select **Report to Microsoft** in the error dialog to start a new feedback submission. Otherwise, navigate to <https://aka.ms/wdagoffice-fb> to select the correct category for Application Guard, then select **+ Add new feedback** near the top right.
+2. If you get an error dialog while launching Application Guard, select **Report to Microsoft** in the error dialog to start a new feedback submission. Otherwise, navigate to <https://aka.ms/mdagoffice-fb> to select the correct category for Application Guard, then select **+ Add new feedback** near the top right.
 
 3. Fill in the **Summarize your feedback** box if it isn't already filled in for you.
 

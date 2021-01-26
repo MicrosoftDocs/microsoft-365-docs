@@ -1,24 +1,26 @@
 ---
-title: "Safe Attachments"
-f1.keywords:
-- NOCSH
+title: Safe Attachments
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date:
+ms.date: 
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
-- seo-marvel-apr2020
-description: "Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  - seo-marvel-apr2020
+description: Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Safe Attachments in Microsoft Defender for Office 365
@@ -46,7 +48,7 @@ Safe Attachments scanning takes place in the same region where your Microsoft 36
 > [!NOTE]
 > The following features are located in the global settings are of Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
-> - [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+> - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 >
 > - [Safe Documents in Microsoft 365 E5](safe-docs.md)
 
@@ -64,7 +66,7 @@ This section describes the settings in Safe Attachments policies:
   |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|See where detected malware goes in your organization.|
   |**Block**|Prevents messages with detected malware attachments from being delivered. <p> Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <p> Automatically blocks future instances of the messages and attachments. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <p> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
   |**Replace**|Removes detected malware attachments. <p> Notifies recipients that attachments have been removed. <p>  Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
-  |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <p> For details, see the [Dynamic Delivery in Safe Attachments policies](#dynamic-delivery-in-safe-attachments-policies) section later in this topic.|Avoid message delays while protecting recipients from malicious files. <p> Enable recipients to preview attachments in safe mode while scanning is taking place.|
+  |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <p> For details, see the [Dynamic Delivery in Safe Attachments policies](#dynamic-delivery-in-safe-attachments-policies) section later in this article.|Avoid message delays while protecting recipients from malicious files. <p> Enable recipients to preview attachments in safe mode while scanning is taking place.|
   |
 
 - **Redirect attachment on detection: Enable redirect** and **Send the attachment to the following email address**: For **Block**, **Monitor**, or **Replace** actions, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
