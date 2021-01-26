@@ -144,7 +144,7 @@ Office supports the following policies to enable you to configure the capabiliti
 
 ### Submit feedback via Feedback Hub
 
-If you encounter any issues when launching Application Guard for Office, you are encouraged to submit your feedback via Feedback Hub:
+If you encounter any issues when launching Application Guard for Office, you're encouraged to submit your feedback via Feedback Hub:
 
 1. Open the **Feedback Hub app** and sign in.
 
@@ -186,11 +186,11 @@ Application Guard for Office is integrated with Microsoft Defender for Endpoint 
 
 Microsoft Defender for Endpoint is a security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. For more details about this platform, see [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). To learn more about onboarding devices to this platform, see [Onboard devices to the Microsoft Defender for Endpoint service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
-You can also configure Microsoft Defender for Office 365 to work with Defender for Endpoint; for more info, refer to [Integrate Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
+You can also configure Microsoft Defender for Office 365 to work with Defender for Endpoint. For more info, refer to [Integrate Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
 
 ## Limitations and considerations
 
-* Application Guard for Office is a restricted mode that isolates untrusted documents so that they cannot access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access—for example, inserting a picture from a local file on disk—the access will fail and produce a prompt like the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
+* Application Guard for Office is a restricted mode that isolates untrusted documents so that they can't access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access—for example, inserting a picture from a local file on disk—the access will fail and produce a prompt like the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
 
   ![Dialog box saying To help you keep safe, this feature is not available](../../media/ag10-limitations.png)
 
@@ -199,11 +199,11 @@ You can also configure Microsoft Defender for Office 365 to work with Defender f
 
 * Active content in documents like macros and ActiveX controls are disabled in Application Guard for Office. Users need to remove Application Guard protection to enable active content.
 
-* Untrusted files that are opened from network shares or files shared from OneDrive, OneDrive for Business, or SharePoint Online from a different organization open as read-only in Application Guard. Users can save a local copy of such files to continue working in the container or remove protection to directly work with the original file.
+* Untrusted files from network shares or files shared from OneDrive, OneDrive for Business, or SharePoint Online from a different organization open as read-only in Application Guard. Users can save a local copy of such files to continue working in the container or remove protection to directly work with the original file.
 
-* Files that are protected by Information Rights Management (IRM) are blocked by default. If you want to open such files in Protected View, your administrator must configure policy settings for unsupported file types for your organization.
+* Files that are protected by Information Rights Management (IRM) are blocked by default. If users want to open such files in Protected View, an administrator must configure policy settings for unsupported file types for the organization.
 
-* Any customizations to Office applications in Application Guard for Office will not persist after a user signs out and signs in again or after the device restarts.
+* Any customizations to Office applications in Application Guard for Office won't persist after a user signs out and signs in again or after the device restarts.
 
 * Only Accessibility tools that use the UIA framework can provide an accessible experience for files opened in Application Guard for Office.
 
@@ -228,4 +228,4 @@ When this heuristic is met, Office will pre-create an Application Guard containe
 
 * Selecting web links (`http` or `https`) doesn't open the browser.
 * Pasting rich text format (RTF) content or images in Office documents opened with Application Guard isn't supported at this time.
-* Updates to .NET cause files to fail to open in Application Guard. As a workaround, users can restart their device when they encounter this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Updates to .NET cause files to fail to open in Application Guard. As a workaround, users can restart their device when they come across this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
