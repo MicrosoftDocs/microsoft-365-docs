@@ -42,4 +42,4 @@ You can find relevant information, including control and technical requirements,
 
 ## Shared responsibility
 
-Compliance for cloud services is a shared responsibility between cloud service providers and their customers. For more, see [Shared Responsibilities for Cloud Computing](https://docs.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility).
+Compliance for cloud services is a shared responsibility between cloud service providers and their customers. For more information, see [Shared responsibility in the cloud](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).
