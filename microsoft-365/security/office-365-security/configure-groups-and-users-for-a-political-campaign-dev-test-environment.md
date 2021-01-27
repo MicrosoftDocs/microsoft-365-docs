@@ -1,23 +1,25 @@
 ---
 title: Configure groups & users - Political campaign dev/test environment
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
-ms.service: O365-seccomp
+ms.collection: 
+  - Ent_O365
+  - Strat_O365_Enterprise
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Summary: Create Office 365 and Enterprise Mobility + Security (EMS) trial subscriptions with users and groups for a political campaign dev/test environment."
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure groups and users for a political campaign dev/test environment

@@ -48,7 +48,7 @@ Both Basic Mobility and Security and Intune are included in a variety of plans, 
 |Enterprise Mobility & Security E5 |No|Yes|
 
 >[!NOTE]
->You can't begin using Basic Mobility and Security if you're already using Microsoft Intune.
+>You can't start using Basic Mobility and Security if you're already using Microsoft Intune.
 
  For details, see [Microsoft 365 and Office 365 platform service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). 
 
@@ -64,12 +64,13 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |Device types|Managing different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
 |Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
 |Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |Yes |
-|Device configuration  |Configure device settings (for example, disabling the camera)|Limited set of settings.|Yes|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
+|Device configuration  |Configure device settings (for example, disabling the camera)|Limited set of settings.|Yes|
+|Device compliance  |Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
-|MDM application management |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
-|MAM |Ensure your users can securely access corporate information using the Office mobile and line-of-business apps, by helping to restrict actions like copy, cut, paste, and save as, to only those apps approved for corporate data. |No|Yes|
+|Basic Mobility and Security application management  |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
+|Mobile application protection  |Enable your users to securely access corporate information using the Office mobile and line-of-business apps they know, while ensuring security of data by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. Works even if the devices are not enrolled to Basic Mobility and Security. See Protect app data using MAM policies. |No|Yes|
 |Managed browser  |Enable more secure web browsing using the Edge app. |No|Yes|
 |Zero touch enrollment programs Autopilot) |Enroll large numbers of corporate-owned devices, while simplifying user setup. |No|Yes|
 |||

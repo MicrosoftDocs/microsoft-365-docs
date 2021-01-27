@@ -1,24 +1,25 @@
 ---
-title: Hello World for Microsoft 365 Defender REST API 
+title: Hello World for Microsoft 365 Defender REST API
 description: Learn how to create an app and use a token to access the Microsoft 365 Defender APIs
 keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 search.appverid: 
-- MOE150
-- MET150
+  - MOE150
+  - MET150
+ms.technology: m365d
 ---
 
 # Hello World for Microsoft 365 Defender REST API
