@@ -44,9 +44,6 @@ If you need information about what's changed from the Office 365 Security & Comp
 - [Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 - [Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
 
-> [!NOTE]
-> For Defender for Office 365 users, you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 security center: https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
-
 ## What to expect
 
 The Microsoft 365 security center emphasizes *unity, clarity, and common goals* as it merges Microsoft Defender for Office 365 and Microsoft Defender for Endpoint. The merge was based on the priorities listed below, and made without sacrificing the capabilities that each security suite brought to the combination:

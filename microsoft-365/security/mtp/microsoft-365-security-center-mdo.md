@@ -35,6 +35,9 @@ Learn more about the benefits: [Overview of the Microsoft 365 security center](o
 
 If you are looking for compliance-related items, visit the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage).
 
+> [!NOTE]
+> For Defender for Office 365 users, you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 security center: https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
+
 ## What's changed
 
 This table is a quick reference of Email & Collaboration areas where change has occurred between the **Security & Compliance center** and the **Microsoft 365 Security** portal. Click the links to read more about these areas.
@@ -75,7 +78,7 @@ The Home page welcomes you to the Microsoft 365 security center experience with 
 - The links under **Next steps** will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
 - **Give feedback** allows you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
 
-The **Guided tour** will remain on the page and you can choose a tour of Endpoint or Email & collaboration pages.  
+The **Guided tour** will remain on the page and you can choose a tour of Endpoint or Email & collaboration pages. Note that what you see here will depend on if you have license for Defender for Office 365 and/or Defender for Endpoint.  
 
 :::image type="content" source="../../media/converge-12-home-page-guided-tour-bar.png" alt-text="The security center's Home page with the Guided Tour selected shows you can tour Endpoint MSDE), or Email & Collaboration (MSDO).":::
 
