@@ -8,19 +8,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/14/2021
+ms.date: 01/27/2021
 ---
 
 # The Action center
@@ -31,7 +31,7 @@ ms.date: 01/14/2021
 **Applies to:**
 - Microsoft 365 Defender
 
-The new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together the results of current and past investigations across your organization's devices, email & collaboration content, and identities. As [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) are taken or are pending approval, such actions are consolidated in a single Action center, providing your security operations team with a "single pane of glass" experience.  
+The improved Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together the results of current and past investigations across your organization's devices, email & collaboration content, and identities. As [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) are taken or are pending approval, such actions are consolidated in a single Action center, providing your security operations team with a "single pane of glass" experience.  
 
 ![Action Center](../../media/air-actioncenter.png)
 

@@ -8,15 +8,15 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
@@ -34,7 +34,7 @@ ms.technology: m365d
 
 When an automated investigation runs, it can result in one or more [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
-In the new, unified Microsoft 365 security center, the Action center brings together pending and completed actions across
+In the improved, unified Microsoft 365 security center, the Action center brings together pending and completed actions across
 - Microsoft Defender for Endpoint;
 - Microsoft Defender for Office 365; and 
 - Microsoft Defender for Identity
