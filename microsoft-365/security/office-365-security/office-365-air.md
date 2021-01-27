@@ -2,25 +2,24 @@
 title: Automated investigation and response in Microsoft Defender for Office 365
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 01/21/2021
-
+ms.date: 01/27/2021
 localization_priority: Normal
 search.appverid: 
-  - MET150
-  - MOE150
+- MET150
+- MOE150
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-defender-office365
+- M365-security-compliance
+- m365initiative-defender-office365
 description: Get started using automated investigation and response capabilities in Microsoft Defender for Office 365.
 ms.custom: 
-  - air
-  - seo-marvel-mar2020
+- air
+- seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -57,7 +56,7 @@ An alert is triggered, and a security playbook starts an automated investigation
 
 2. While an automated investigation runs, it gathers additional data about the email in question and entities related to that email. Such entities can include files, URLs, and recipients.  The investigation's scope can increase as new and related alerts are triggered.
 
-3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any threats that were found. In addition, a [playbook log](air-view-investigation-results.md#playbook-log) is available that tracks all investigation activity.
+3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any threats that were found.
 
 4. Your security operations team reviews the [investigation results and recommendations](air-view-investigation-results.md), and [approves or rejects remediation actions](air-review-approve-pending-completed-actions.md).
 
