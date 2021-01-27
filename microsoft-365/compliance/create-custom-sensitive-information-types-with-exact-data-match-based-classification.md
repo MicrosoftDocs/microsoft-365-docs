@@ -204,13 +204,16 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
 
       - **idMatch**: This field points to the primary element for EDM.
         - Matches: Specifies the field to be used in exact lookup. You provide a searchable field name in EDM Schema for the DataStore.
-        - Classification: This field specifies the sensitive type match that triggers EDM lookup. You can provide Name or GUID of an existing built-in or custom classification.
+        - Classification: This field specifies the sensitive type match that triggers EDM lookup. Any time content matching this sensitive type is found in a document or email, that content will be hashed and looked up in the table of sensitive data you provided to see if there's a match. You can provide Name or GUID of an existing built-in or custom sensitive information type for the Classification attribute.
 
       - **Match:** This field points to additional evidence found in proximity of idMatch.
         - Matches: You provide any field name in EDM Schema for DataStore.
       - **Resource:** This section specifies the name and description for sensitive type in multiple locales.
         - idRef: You provide GUID for ExactMatch ID.
         - Name & descriptions: customize as required.
+
+> [!NOTE]
+> If you use a custom sensitive information type for the Classification attribute, make sure its definition is narrow enough that it won’t cause a large volume of unnecessary matches. While the EDM lookup will eliminate false positives found by the sensitive info type, hashing and lookup are a computationally intensive operations and having too many possible candidates passed for lookup can cause the system to reach processing limits and potentially cause actual matches to be ignored. For example, using a regular expression that will match any possible word would cause thousands of lookups for a typical document or email. Adding conditions to the Match element of the EDM sensitive type will not prevent this from happening since that evidence will be evaluated only after the EDM lookup has been performed and a match has been found. You can prevent this by using for the idMatch element a sensitive type that only matches content likely to be the type of information in the EDM sensitive data table, for example by using regular expression that only looks for formatted data or only matches values within the valid ranges, or by including requirements for additional evidence such as the presence of related keywords (as indicated above, adding requirements for additional evidence using the Match element of the EDM sensitive type would not help reduce the number of strings that are evaluated for an EDM match since those conditions would only be evaluated after the lookup has been done). 
 
       ```xml
       <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -288,7 +291,7 @@ In this example, note that:
 
 - The idMatch value references a searchable field that is listed in the database schema file: **idMatch matches = "SSN"**.
 
-- The classification value references an existing or custom sensitive information type: **classification = "U.S. Social Security Number (SSN)"**. (In this case, we use the existing sensitive information type of U.S. Social Security Number.)
+- The classification value references an existing or custom sensitive information type: **classification = "U.S. Social Security Number (SSN)"**. (In this case, we use the existing sensitive information type of U.S. Social Security Number.) See notes above in the definition of the idMatch element for guidance on configuring this element to avoid overloading the system with excess matches. 
 
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
