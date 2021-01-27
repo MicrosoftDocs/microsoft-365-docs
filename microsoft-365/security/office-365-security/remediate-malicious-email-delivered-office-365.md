@@ -125,8 +125,13 @@ Open any remediation item to view details about it, including its name, creation
 
   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
 
+    **NEW**: Addition of column "Already in destination" in Action Log: Since we got the latest delivery location in Explorer and we want to utilize it for making smarter moves across the experiences, now, we are utilizing the latest delivery location in remediation by not sending signals to remediate if the message has already been remediated. This will help you understand the exact number of messages which need to be remediated. As we will not be remediating already remediated messages with same actions, we are introducing another column named "Already in destination". This means that the action you wish to perform was taken previously on the email, hence the email is already present in the destination folder. Since actions can only be taken on messages in inbox, junk, deleted folder and soft deleted folder from Explorer, these are remediable messages. So this column shows only for messages which are remediable. For instance, soft delete action is performed on the message present in inbox, then the message will get successfully actioned. Next time, when soft delete is performed on the same message again, it will show under the column "Already in destination".
+Already in destination" count is a part of remediable count. So,
+    Remediable = Successful + Failed + Already in destination 
+For most of the cases, unless there are ingestion delays where signals tend to get delayed/ lost sometimes.
+
   Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
 
-  In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100k records.
+  In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100,000 records.
 
   Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.
