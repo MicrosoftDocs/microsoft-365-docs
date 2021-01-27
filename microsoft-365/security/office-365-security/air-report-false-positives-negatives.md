@@ -28,7 +28,6 @@ ms.technology: mdo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 **Applies to:**
 - Microsoft Defender for Office 365
 
@@ -54,7 +53,7 @@ If your organization is using [Microsoft Defender for Endpoint](https://docs.mic
 
 ## Undo a remediation action
 
-In most cases, if a remediation action was taken on an email message, email attachment, or URL, and the item is actually not a threat, your security operations team can undo the remediation action and take steps to prevent the false positive from recurring. You can either use [Threat Explorer](#undo-an-action-using-threat-explorer) or the [Actions tab for an investigation](#undo-an-action-using-the-actions-tab-for-an-investigation) to undo an action.
+In most cases, if a remediation action was taken on an email message, email attachment, or URL, and the item is actually not a threat, your security operations team can undo the remediation action and take steps to prevent the false positive from recurring. You can either use [Threat Explorer](#undo-an-action-using-threat-explorer) or the [Actions tab for an investigation](#undo-an-action-in-the-action-center) to undo an action.
 
 > [!IMPORTANT]
 > Make sure you have the necessary permissions before attempting to perform the following tasks.
@@ -69,20 +68,15 @@ With Threat Explorer, your security operations team can find an email affected b
 |An email message or a file was quarantined|- Release the email or file<br/>- Delete the email or file|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
 |
 
-### Undo an action using the Actions tab for an investigation
+### Undo an action in the Action center
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to <https://protection.office.com> and sign in. This takes you to the Security & Compliance Center.
-
-2. Go to **Threat management** \> **Investigations**.
-
+1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
+2. In the navigation pane, select **Action center**. 
 3. In the list of investigations, select the **Open in new window** icon next to an item's ID.
-
 4. Select the **Actions** tab.
-
 5. Select an item that has status of **Completed**, and look for a link, such as **Approved**, in the **Decision** column. This opens a flyout with more details about the action.
-
 6. To undo the action, select **Delete remediation**.
 
 ## See also
