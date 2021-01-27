@@ -468,6 +468,14 @@
   items: 
     - name: Protect and govern your apps
       href: manage-app-protection-governance.md
+    - name:Get visibility and insights
+      items:
+        - name: Learn about visibility and insights
+          href: mapg-placeholder.md
+        - name: Get started
+          href: mapg-placeholder.md
+        - name: Manage app metadata
+          href: mapg-placeholder.md
 - name: Manage eDiscovery
   items:
     - name: Microsoft 365 eDiscovery solutions
