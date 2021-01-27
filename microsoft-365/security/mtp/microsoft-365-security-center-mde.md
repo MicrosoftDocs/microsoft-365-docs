@@ -54,14 +54,14 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 | [Incidents & alerts](incidents-overview.md)  | In the Microsoft 365 security center, you can manage incidents and alerts across all of your endpoints, email, and identities. We've converged the experience to help you find related events more easily. For more information, see [Incidents Overview](incidents-overview.md).   |
 | [Hunting](advanced-hunting-overview.md)  |  Modifying custom detection rules created in Microsoft Defender for Endpoint to include identity and email tables automatically moves them to Microsoft 365 Defender. Their corresponding alerts will also appear in Microsoft 365 Defender. For more details about these changes, read [Migrate custom detection rules](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp#migrate-custom-detection-rules). The `DeviceAlertEvents` table for advanced hunting is not available in Microsoft 365 Defender. To query device-specific alert information in Microsoft 365 Defender, you can use the `AlertInfo` and `AlertEvidence` tables which can accommodate even more information from a diverse set of sources. Craft your next device-related query by following [Write queries without DeviceAlertEvents](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp#write-queries-without-devicealertevents).|
 |[Action center](mtp-action-center.md)    | Lists pending and completed actions that were taken following automated investigations and remediation actions. Formerly, the Action center in the Microsoft Defender Security Center listed pending and completed actions for remediation actions taken on devices only, while Automated investigations listed alerts and status. In the  improved Microsoft 365 security center, the Action center brings together remediation actions and investigations across email, devices, and users—all in one location.  |
-| [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) |  Moved from under the "Dashboards" section.   |
+| [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) |  Moved to the top of the navigation bar for easier discovery and use. Now includes threat information for both endpoints and email and collaboration.    |
 
 ### Endpoints
 
 |**Area**  |**Description of change**  |
 |---------|---------|
 |Search   |  Instead of being in the heading, Microsoft Defender for Endpoint search bar is moving under the Endpoints section. You can continue to search for devices, files, users, URLs, IPs, vulnerabilities, software, and recommendations.  |
-|[Dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  This is your security operations dashboard. It tells you at a glance how many active alerts were triggered, which devices are at risk, which users are at risk, and severity level for alerts, devices, and users. You can also see if any devices have sensor issues, your overall service health, and how any unresolved alerts were detected.  <br> <br> Formerly, the security operations dashboard that was in the Microsoft Defender Security Center also listed the number and status of any automated investigations. In the improved Microsoft 365 security center, details about automated investigations are found in the Incidents view. In the navigation pane, go to Incidents & alerts > Incidents. Select an incident, then choose the Investigations tab to view details about an automated investigation. <br> <br> The threat analytics dashboard is now in the top alerts and actions navigation section.   |
+|[Dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  All of your Defender for Endpoint cards are now available in the Microsoft 365 security center. You can find this information in the **Home** page.   |
 |Device inventory | No changes. |
 |[Vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Name was shortened to fit in the navigation pane. It is the same as the threat and vulnerability management section, with all the pages underneath.     |
 | Partners and APIs | No changes. |
@@ -119,23 +119,14 @@ View and manage the security of endpoints in your organization. If you've used t
 
 ![The Endpoints quick launch bar](../../media/converge-2-endpoints.png)
 
-### Email & collaboration
-
-Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will look familiar. 
-
-![The Emails and Collaboration quick launch bar](../../media/converge-3-email-and-collab.png)
-
 ### Access and reports
 
 View reports, change your settings, and modify user roles.
 
 ![The Access and Reporting quicklaunch bar](../../media/converge-4-access-and-reporting-new.png)
 
-## Microsoft Defender Security Center navigation
-
-This what the current Microsoft Defender Security Center navigation pane looks like, for comparison.
-
-![Endpoints left navigation.](../../media/m365-security-old-nav.png)
+### SIEM and API connection
+TBD
 
 ## Related information
 

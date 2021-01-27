@@ -44,14 +44,19 @@ If you are looking for compliance-related items, visit the [Microsoft 365 compli
 
 This table is a quick reference of Email & Collaboration areas where change has occurred between the **Security & Compliance center** and the **Microsoft 365 Security** portal. Click the links to read more about these areas.
 
-
-|**Changed**  |**Unchanged**  |
+|**Area**  |**Description of change**  |
 |---------|---------|
-|[Dashboard](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-365-security-center-dashboard) | [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)       |
-[Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) | [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns) |
-[Attack Simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights)   |  [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission) | 
-|[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center) | [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-|     |    [Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)    |
+[Dashboard](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-365-security-center-dashboard) | TBD |
+[Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) | TBD|
+[Attack Simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights)   | TBD |
+|[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center) | TBD | 
+
+No changes to these areas:
+- [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns)
+- [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)
+- [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
+- [Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)
 
 Also, check the **Related Information** section at the bottom of this article.
 
@@ -70,18 +75,7 @@ The Home page of the portal surfaces:
 - tweets from Microsoft’s security intelligence twitter feed
 - and more summary information
 
-![Welcome screen "Meet your improved security center"](../../media/m3d-welcome.png)
-
-The Home page welcomes you to the Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
-
-![Welcome screen showing the Home page and links to Intro, Next steps, and to Give feedback.](../../media/m3d-welcome-security-center.png)
-
-- The links under **Next steps** will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
-- **Give feedback** allows you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
-
-The **Guided tour** will remain on the page and you can choose a tour of Endpoint or Email & collaboration pages. Note that what you see here will depend on if you have license for Defender for Office 365 and/or Defender for Endpoint.  
-
-:::image type="content" source="../../media/converge-12-home-page-guided-tour-bar.png" alt-text="The security center's Home page with the Guided Tour selected shows you can tour Endpoint MSDE), or Email & Collaboration (MSDO).":::
+Using the **Guided tour** you can take a quick tour of Endpoint or Email & collaboration pages. Note that what you see here will depend on if you have license for Defender for Office 365 and/or Defender for Endpoint.  
 
 Also included is a link to the **Office 365 Security and Compliance center** for comparison. The last link is to the **What's New** page that describes recent updates.
 
@@ -89,17 +83,15 @@ Also included is a link to the **Office 365 Security and Compliance center** for
 
 The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
 
-### Alerts & Actions
-
-Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries.
+### Incidents & Alerts, and Actions
+Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries. The new unified Alert queue helps pull together alerts from different sources, giving you one place to review all alerts. 
 
 ![The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.](../../media/m3d-nav1.png)
 
-### Endpoints
+### Threat Analytics
+Threat Analytics provides a summary of the latest threats that could be affecting your organization. With this information, security teams can learn the specifics about each individual threat in the Threat Analytics reports as well as see how these threats might be impacting your organization. New in the Microsoft 365 security center is a combined view of threats that include signals from both Defender for Endpoint as well as Defender for Office 365.
 
-View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
-
-:::image type="content" source="../../media/converge-2-endpoints_new.png" alt-text="The quick launch menu for Endpoints (or MSDE) on the left hand side of the Microsoft 365 security center.":::
+[Learn more about Threat Analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
 
 ### Email & collaboration
 
@@ -112,6 +104,15 @@ Track and investigate threats to your users' email, track campaigns, and more. I
 View reports, change your settings, and modify user roles.
 
 :::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 security center permissions and reporting, on the left side of the security center.":::
+
+### SIEM and API 
+TBD
+
+### Endpoints
+
+View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
+
+:::image type="content" source="../../media/converge-2-endpoints_new.png" alt-text="The quick launch menu for Endpoints (or MSDE) on the left hand side of the Microsoft 365 security center.":::
 
 ## Advanced Hunting example for Microsoft Defender for Office 365
 Want to get started searching for email threats using advanced hunting? Try this:

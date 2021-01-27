@@ -25,6 +25,8 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
           href: ./office-365-security/sharepoint-file-access-policies.md
+    - name: Microsoft 365 security center
+      href: mtp/overview-security-center.md  
     - name: Microsoft Secure Score
       items: 
         - name: Secure Score overview
@@ -45,8 +47,6 @@
               href: mtp/microsoft-threat-protection.md
             - name: What's new in Microsoft 365 Defender
               href: mtp/whats-new.md
-            - name: Microsoft 365 security center
-              href: mtp/overview-security-center.md             
             - name: Defender for Endpoint in the Microsoft 365 security center
               href: mtp/microsoft-365-security-center-mde.md
             - name: Defender for Office 365 in the Microsoft 365 security center

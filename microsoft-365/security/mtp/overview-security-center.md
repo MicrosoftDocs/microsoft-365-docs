@@ -35,11 +35,13 @@ ms.technology: m365d
 
 The improved Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com) integrates Microsoft 365 services and endpoints, so that devices, email, identities, and app security can be managed from a single location. This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
 
-The Microsoft 365 security center combines these centers into one:
+The Microsoft 365 security center is your home for security information and includes:
 
-1. **Microsoft Defender for Office 365**
-2. **Microsoft Defender for Endpoint**
-3. **Microsoft 365 Defender**
+- **[Microsoft Defender for Office 365](office-365-atp.md)** 
+ helps organizations secure their enterprise by offering a comprehensive slate of prevention, detection, investigation and hunting, response and remediation, awareness and training, and secure posture features.
+- **[Microsoft Defender for Endpoint](windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
+- **[Microsoft 365 Defender](microsoft-threat-protection.md)**
+is part of Microsoft’s XDR solution and leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, building a complete picture of each attack in a single dashboard. With this breadth and depth of clarity defenders can now focus on critical threats and hunt for sophisticated breaches, trusting that the powerful automation in Microsoft 365 Defender detects and stops attacks anywhere in the kill chain and returns the organization to a secure state.
 
 If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft Defender Security Center, see:
 
@@ -55,17 +57,6 @@ The Microsoft 365 security center emphasizes *unity, clarity, and common goals* 
 - common entities
 - parity
 
-### At-a-glance view of your Microsoft 365 environment
-The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
-
-This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
-
-The cards fall into these categories:
-
-- **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-- **Data** - Help track user activity that could lead to unauthorized data disclosure.
-- **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
-- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
 
 ## Efficiency gains
 
@@ -93,25 +84,32 @@ The layout has been merged wherever centers overlap. Common controls and content
 
 ### Unified settings
 
-![Settings page covers everything in Microsoft Defender for Endpoints and for Microsoft Defender for Office 365](../../media/converged-settings-4.png)
+![clicked 'Roles' and opened the Settings page, which includes General settings, Permissions, APIs and Rules. Open Permissions and then Roles. Shows all roles](../../media/converged-add-role-9.png)
 
 ### Integrated permissions & roles
 
 ![Permissions & Roles page showing Endpoints roles & groups, Roles, and Device groups.](../../media/converged-roles-5.png)
 
- Selecting either of **Roles** or **Device groups** drops admins deeper into the **Permissions** section (but take a second to look at the other nodes here).
-
-![clicked 'Roles' and opened the Settings page, which includes General settings, Permissions, APIs and Rules. Open Permissions and then Roles. Shows all roles](../../media/converged-add-role-9.png)
-
-- **Roles** allow admins to create and bundle permissions, and then add user groups to them. Role creation is done on the General tab. Members of the security team can access parts of the center to do work, once they're added here. After creation, the Role wizard also reminds you that user groups can be added to this Role 'at a later phase' using the **Assigned user groups** tab.
-
-- **Device Groups** work the same way. On the same **General** flyout where you create the Device Group, you can select the **User access** tab to grant Azure AD user groups access to a device group.
+ Roles and groups are inherited from your existing products, so if you have specific roles and groups, you can manage those here. Selecting either of **Roles** or **Device groups** drops admins deeper into the **Permissions** section (but take a second to look at the other nodes here).
 
 :::image type="content" source="../../media/converged-add-role-7a.png" alt-text="Add the Role via the General tab, and then add users / groups to it on the Assigned user groups tab.":::
 
 ### Integrated reports
 
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
+
+### At-a-glance view of your Microsoft 365 environment
+The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
+
+This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
+
+The cards fall into these categories:
+
+- **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Data** - Help track user activity that could lead to unauthorized data disclosure.
+- **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
+- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+
 
 ## Office 365 Cloud App Security and other security integrations
 
@@ -123,7 +121,10 @@ As admins and operations teams work, they will find other points where features 
 
 ![Office 365 Cloud App Security page in the Microsoft 365 security center](../../media/converged-advanced-alerts-1.png)
 
-## Feedback
+## User Page
+Us
+
+## Send us your feedback
 We need your feedback. We're always looking to improve, so if there's something you'd like to see, [send us your Microsoft 365 Defender feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
 
 ## Explore what the security center has to offer
