@@ -8,18 +8,18 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/14/2021 
+ms.date: 01/27/2021 
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ---
