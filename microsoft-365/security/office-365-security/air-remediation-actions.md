@@ -60,15 +60,12 @@ The following table summarizes threats and appropriate remediation actions in Mi
 |User|Data exfiltration <br> (A user violated email or file-sharing [DLP policies](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).)|Automated investigation does not result in a specific pending action. <p> [View DLP reports and take action](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).|
 |User|Anomalous email sending <br> (A user recently sent more email than during the previous 7-10 days.)|Automated investigation does not result in a specific pending action. <p> Sending a large volume of email isn't malicious by itself; the user might just have sent email to a large group of recipients for an event. To investigate, use [mail flow insights](mail-flow-insights-v2.md), including the [mail flow map report](mfi-mail-flow-map-report.md) to determine what's going on and take action.|
 
-
 ## Next steps
 
 - [View details and results of an automated investigation in Microsoft Defender for Office 365](air-view-investigation-results.md)
-
 - [View pending or completed remediation actions following an automated investigation in Microsoft Defender for Office 365](air-review-approve-pending-completed-actions.md)
 
 ## Related articles
 
 - [Learn about automated investigation in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-
 - [Learn about capabilities in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)

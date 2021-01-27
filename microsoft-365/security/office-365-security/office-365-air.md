@@ -46,26 +46,16 @@ This article also includes [next steps](#next-steps), and resources to learn mor
 
 An alert is triggered, and a security playbook starts an automated investigation, which results in findings and recommended actions. Here's the overall flow of AIR, step by step:
 
-1. An automated investigation is initiated in one of the following ways:
-
-   - An [alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins.
-
-     --- or ---
-
+1. An automated investigation is initiated in one of the following ways: 
+   - Either [an alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins; or
    - A security analyst [starts an automated investigation](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Threat Explorer](threat-explorer.md).
-
 2. While an automated investigation runs, it gathers additional data about the email in question and entities related to that email. Such entities can include files, URLs, and recipients.  The investigation's scope can increase as new and related alerts are triggered.
-
 3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any threats that were found.
-
 4. Your security operations team reviews the [investigation results and recommendations](air-view-investigation-results.md), and [approves or rejects remediation actions](air-review-approve-pending-completed-actions.md).
-
 5. As pending remediation actions are approved (or rejected), the automated investigation completes.
 
 > [!IMPORTANT]
-> In Microsoft Defender for Office 365, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team.
->
-> AIR capabilities save your security operations team time by identifying remediation actions and providing the details needed to make an informed decision.
+> In Microsoft Defender for Office 365, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. AIR capabilities save your security operations team time by identifying remediation actions and providing the details needed to make an informed decision.
 
 During and after each automated investigation, your security operations team can:
 
