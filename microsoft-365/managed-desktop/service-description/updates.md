@@ -33,7 +33,7 @@ Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 - **Broad**: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
 
 ### Moving Devices between Update Groups
-You may want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate Update Group [submit an administrator support request](https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) and we will move the devices for you. 
+You may want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, [submit an administrator support request](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) and we will move the devices for you. 
 
 > [!NOTE]
 > If you need to move a user to a different update group, submit a support request. Do not move devices between update groups yourself, there are serious consequences if a device is moved incorrectly: the device may update unexpectedly and policies may conflict, changing the device configuration.
@@ -81,5 +81,4 @@ Any devices found with Windows Insider builds might be put into the Test group a
 ## Bandwidth management
 
 We use [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) for all operating system and driver updates. This minimizes the download size from the Windows Update service by seeking updates from peers within the corporate network.
-
 
