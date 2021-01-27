@@ -35,7 +35,7 @@ Released January 2021, this report has been produced in partnership with Microso
 
 - New Zealand Public Records Act 2005, which sets guidelines for preservation of public archives and local authority archives in New Zealand.
 
-The purpose of this report is to help customers understand that the system aspects of New Zealand's Public Records Act compliance are achievable when using Microsoft 365.
+The purpose of this report is to help customers understand that the system aspects of New Zealand Public Records Act compliance are achievable when using Microsoft 365.
 
 ## SEC 17a-4(f), FINRA 4511(c), and CFTC 1.31(c)-(d)
 
