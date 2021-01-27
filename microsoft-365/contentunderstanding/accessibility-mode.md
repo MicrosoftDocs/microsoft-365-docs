@@ -29,7 +29,7 @@ To hear the audio of the narration, make sure to turn on the [Narrator App](http
 
 ## Labeling for keyboard users
 
-For keyboard users using accessibility mode, if you are labeling text in a sample document in the viewer, you can use the following keys:
+For keyboard users using accessibility mode, if you are labeling text in an example document in the viewer, you can use the following keys:
 
 - Tab: Moves you forward and selects the next word.
 - Tab + Shift: Moves you backwards and selects the previous word.
@@ -43,7 +43,7 @@ For keyboard users using accessibility mode, if you are labeling text in a sampl
 
 ## Narration
 
-For Narrator users using accessibility mode, use the same keyboard navigation described for keyboard users to go through the sample document in the viewer.
+For Narrator users using accessibility mode, use the same keyboard navigation described for keyboard users to go through the example document in the viewer.
 
 As you navigate through the sample documents and label string values, Narrator will give user the following audio prompts:
 
