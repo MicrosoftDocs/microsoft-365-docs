@@ -46,17 +46,16 @@ This table is a quick reference of Email & Collaboration areas where change has 
 
 |**Area**  |**Description of change**  |
 |---------|---------|
-[Dashboard](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-365-security-center-dashboard) | TBD |
-[Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) | TBD|
-[Attack Simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights)   | TBD |
-|[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center) | TBD | 
+[Explorer](/microsoft-365/security/office-365-security/threat-explorer) | Threat Explorer helps security teams review and assess the latest email-based threats to their organization. |
+[Attack Simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights)   | Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.  |
+|[Investigation](/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center) | Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) and [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.  | 
 
 No changes to these areas:
-- [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
-- [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns)
-- [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)
-- [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-- [Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)
+- [Policies & Rules](/microsoft-365/compliance/alert-policies)
+- [Campaign](/microsoft-365/security/office-365-security/campaigns)
+- [Submissions](/microsoft-365/security/office-365-security/admin-submission)
+- [Review](/microsoft-365/security/mtp-action-center)
+- [Threat Tracker](/microsoft-365/security/office-365-security/threat-trackers)
 
 Also, check the **Related Information** section at the bottom of this article.
 
