@@ -8,19 +8,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/14/2021
+ms.date: 01/27/2021
 
 ---
 
@@ -76,7 +76,9 @@ In the Investigation details view, you can see information on the **Investigatio
 | **Investigation graph**	| Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, clicking the **Threats found** icon takes you to the **Key findings** tab. |
 | **Alerts**	| Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Cloud App Security, and other Microsoft 365 Defender features.|
 | **Devices** | Lists machines included in the investigation along with remediation level.|
-| **Key findings**	| Lists results from the investigation along with status and actions taken or pending. You can approve pending actions for devices and identities in on this tab.|
+| **Mailboxes** |Lists mailboxes that are impacted by detected threats.  |
+| **Users**  | Lists user accounts that are impacted by detected threats. |
+| **Evidence** | Lists pieces of evidence raised by alerts/investigations. Includes verdicts (*Malicious*, *Suspicious*, or *No threats found*) and remediation status. |
 | **Entities**	| Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation, along with status and actions taken.|
 |**Log**	| Provides a detailed view of all steps taken during the investigation, along with status.|
 | **Pending actions** | Lists items that require approval to proceed.|
