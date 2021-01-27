@@ -31,7 +31,7 @@ Microsoft Managed Desktop has achieved the following certifications:
 - [Service Organization Controls (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 - [Health Insurance Portability and Accountability Act (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/en-us/compliance/regulatory/offering-ccsl-irap-australia)
+- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 
 ## Auditor reports and compliance certificates
 
