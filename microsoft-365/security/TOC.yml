@@ -120,7 +120,7 @@
                     - name: Investigate alerts
                       href: mtp/investigate-alerts.md    
                     - name: Investigate users in Microsoft 365 security center 
-                      href: investigate-users.md                  
+                      href: mtp/investigate-users.md                  
                 - name: Get email notifications
                   href: mtp/get-incident-notifications.md
             - name: Automated investigation and response
