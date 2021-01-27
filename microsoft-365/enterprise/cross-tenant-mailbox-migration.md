@@ -171,7 +171,7 @@ The target admin setup is now complete!
 
 3. In either the Microsoft 365 admin center or a Remote PowerShell session, create one or more mail-enabled security groups to control the list of mailboxes allowed by the target tenant to pull (move) from the source tenant to the target tenant. You do not need to populate this group in advance, but at least one group must be provided to run the setup steps (script). Nest groups are not supported. 
 
-4. Download the SetupCrossTenantRelationshipForTargetResource.ps1 script for the source tenant setup from the GitHub repository here: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
+4. Download the SetupCrossTenantRelationshipForResourceTenant.ps1 script for the source tenant setup from the GitHub repository here: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
 
 5. Create a Remote PowerShell connection to the source tenant with your Exchange Administrator permissions. Global Admin permissions are not required to configure the source tenant, only the target tenant because of the Azure application creation process.
 

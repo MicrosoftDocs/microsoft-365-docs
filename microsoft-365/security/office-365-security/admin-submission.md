@@ -3,7 +3,7 @@ title: Admin submissions
 f1.keywords: 
   - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: 
 audience: ITPro
