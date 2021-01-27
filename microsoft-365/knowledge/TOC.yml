@@ -14,11 +14,11 @@
     - name: Setup and administration
       items:
 
-        - name: Topic security
+        - name: Topics security
           href: topic-experiences-security-privacy.md
-        - name: Plan topic experiences
+        - name: Plan for Topics
           href: plan-topic-experiences.md
-        - name: Set up topic experiences
+        - name: Set up Topics
           href: set-up-topic-experiences.md
         - name: Manage topic discovery
           href: topic-experiences-discovery.md
