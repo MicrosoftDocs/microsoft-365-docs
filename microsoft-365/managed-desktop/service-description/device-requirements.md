@@ -40,7 +40,7 @@ The device must have been made by one of these manufacturers:
 
 The device must have this software preinstalled:
 
-- Windows 10 {ANY PARTICULAR EDITON?}
+- Windows 10 Enterprise, Pro, or Pro Workstation
 - {the 64-bit version of Office click-to-run {I will double-check name w/ Office colleagues]}
 - All applicable device drivers
 
@@ -55,6 +55,9 @@ Devices must have these capabilities:
 - Supports Hypervisor-protected code integrity 
 
 For more about these capabilities and the technologies related to them that the service uses, see [Microsoft Managed Desktop technologies](../intro/technologies.md).
+
+> [!NOTE]
+> ARM processors are not supported.
 
 Devices should meet or exceed following limits for storage and memory:
 
