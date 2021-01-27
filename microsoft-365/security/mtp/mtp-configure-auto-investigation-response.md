@@ -10,8 +10,9 @@ ms.topic: article
 ms.prod: m365-security
 localization_priority: Normal
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
+ms.date: 01/27/2021
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
@@ -21,7 +22,6 @@ ms.technology: m365d
 # Configure automated investigation and response capabilities in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 Microsoft 365 Defender includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. With [self-healing](mtp-autoir.md#how-automated-investigation-and-self-healing-works), these capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure automated investigation and response in Microsoft 365 Defender.
 
@@ -38,9 +38,9 @@ Then, after you're all set up, [review pending and completed actions in the Acti
 
 |Requirement |Details |
 |:----|:----|
-|Subscription requirements |One of the subscriptions: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E5 Security</li><li>Microsoft 365 A5 Security</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul><p> See [Microsoft 365 Defender licensing requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
-|Network requirements |<ul><li>[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) enabled</li><li>[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) configured</li><li>[Microsoft Defender for Identity integration](https://docs.microsoft.com/cloud-app-security/mdi-integration)</li></ul>|
-|Windows machine requirements |Windows 10, version 1709 or later installed (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/)) with the following threat protection services configured:<ul><li>[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)</li><li>[Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul>|
+|Subscription requirements |One of the subscriptions: <br/>- Microsoft 365 E5<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- Microsoft 365 A5 Security<br/>- Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<p> See [Microsoft 365 Defender licensing requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
+|Network requirements |- [Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) enabled<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) configured<br/>- [Microsoft Defender for Identity integration](https://docs.microsoft.com/cloud-app-security/mdi-integration) |
+|Windows machine requirements |Windows 10, version 1709 or later installed (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/)) with the following threat protection services configured:<br/>- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)<br/>- [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
 |Protection for email content and Office files |[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) configured |
 |Permissions |<ul><li>To configure automated investigation and response capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).</li><p><li>To get the permissions needed to work with automated investigation and response capabilities, such as reviewing, approving, or rejecting pending actions, see [Required permissions for Action center tasks](mtp-action-center.md#required-permissions-for-action-center-tasks).</li></ul>|
 
