@@ -216,7 +216,7 @@ There are currently two known limitations:
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
    
- ## Can I open encrypted messages sent to another user mailbox with Fullaccess?
+ ## Can I open encrypted messages sent to another user's mailbox with Fullaccess?
 
 Users can open encrypted messages as long as they are given direct access and automapping is turned ON. We don't support if the access to granted via an email enabled security group.
 
