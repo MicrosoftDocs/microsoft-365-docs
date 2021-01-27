@@ -40,7 +40,7 @@ The device must have been made by one of these manufacturers:
 
 The device must have this software preinstalled:
 
-- Windows 10 Enterprise, Pro, or Pro Workstation
+- Windows 10 Enterprise, Pro, or Pro Workstation edition
 - {the 64-bit version of Office click-to-run {I will double-check name w/ Office colleagues]}
 - All applicable device drivers
 
