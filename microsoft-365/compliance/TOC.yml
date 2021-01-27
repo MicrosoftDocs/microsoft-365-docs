@@ -467,7 +467,7 @@
   items: 
     - name: Protect and govern your apps
       href: manage-app-protection-governance.md
-    - name:Get visibility and insights
+    - name: Get visibility and insights
       items:
         - name: Learn about visibility and insights
           href: mapg-placeholder.md
