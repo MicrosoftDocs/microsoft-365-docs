@@ -1,24 +1,26 @@
 ---
-title: "Responding to a Compromised Email Account"
-f1.keywords:
-- NOCSH
+title: Responding to a Compromised Email Account
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.collection:
-- o365_security_incident_response
-- M365-security-compliance
-- m365solution-smb
+ms.collection: 
+  - o365_security_incident_response
+  - M365-security-compliance
+  - m365solution-smb
 ms.custom: 
- - TopSMBIssues
- - seo-marvel-apr2020
-ms.service: O365-seccomp
+  - TopSMBIssues
+  - seo-marvel-apr2020
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 # Responding to a Compromised Email Account
 

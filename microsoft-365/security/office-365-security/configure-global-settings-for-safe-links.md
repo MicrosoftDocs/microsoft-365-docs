@@ -1,22 +1,24 @@
 ---
-title: "Configure global settings for Safe Links settings in Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: Configure global settings for Safe Links settings in Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date:
-ms.service: O365-seccomp
+ms.date: 
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to view and configure global settings (the 'Block the following URLs' list and protection for Office 365 apps) for Safe Links in Microsoft Defender for Office 365."
+search.appverid: 
+  - MET150
+  - MOE150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to view and configure global settings (the 'Block the following URLs' list and protection for Office 365 apps) for Safe Links in Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure global settings for Safe Links in Microsoft Defender for Office 365

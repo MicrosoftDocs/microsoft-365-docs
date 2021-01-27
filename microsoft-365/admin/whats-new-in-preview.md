@@ -52,7 +52,7 @@ Welcome to Microsoft Ignite - our first online-only Ignite. We hope to see you i
 
 ### Multi-tenant management
 
-We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently.
+We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently. For more information, see [Manage multiple tenants](multi-tenant/manage.md).
 
 - **Your tenants**: Quickly switch between the tenants you manage.
 - **All tenants**: A new page where you can quickly see the health of all your tenants' services, any open service requests, your products and billing, recommended setup tasks, and the number of users in that tenant.

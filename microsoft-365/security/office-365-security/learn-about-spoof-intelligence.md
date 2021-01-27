@@ -1,24 +1,26 @@
 ---
-title: "Configure spoof intelligence"
-f1.keywords:
-- NOCSH
+title: Configure spoof intelligence
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: 
+  - MOE150
+  - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about spoof intelligence in Exchange Online Protection (EOP), where you can allow or block specific spoofed senders."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about spoof intelligence in Exchange Online Protection (EOP), where you can allow or block specific spoofed senders.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure spoof intelligence in EOP
@@ -202,7 +204,7 @@ To verify that you've configured spoof intelligence with senders who are allowed
 - In Exchange Online PowerShell, replace \<Name\> with Office365 AntiPhish Default or the name of a custom policy, and run the following command to verify the settings:
 
   ```PowerShell
-  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableSpoofIntelligence,EnableUnauthenticatedSender,AuthenticationFailAction
   ```
 
 ## Other ways to manage spoofing and phishing

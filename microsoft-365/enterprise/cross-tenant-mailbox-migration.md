@@ -354,7 +354,7 @@ You must ensure the following objects and attributes are set in the target organ
     Find objects that were previously mailboxes using this command.
 
     ```powershell
-    Get-User <identity> | select Name, *recipient* | ft -a**.
+    Get-User <identity> | select Name, *recipient* | ft -AutoSize
     ```
 
     Here is an example. 

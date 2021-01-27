@@ -123,11 +123,13 @@ When you select the **Sensitive info types** option, you see the same list of se
 
 ![Sensitive info types for auto-labeling in Office apps](../media/sensitivity-labels-sensitive-info-types.png)
 
-After you select your sensitive information types, you can refine your condition by changing the instance count or match accuracy. For more information, see [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+Similarly to when you configure DLP policies, you can then refine your condition by changing the instance count and match accuracy. For example:
 
-Further, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add groups and use logical operators between the groups. For more information, see [Grouping and logical operators](data-loss-prevention-policies.md#grouping-and-logical-operators).
+![Options for match accuracy and instance count](../media/sensitivity-labels-instance-count-match-accuracy.png)
 
-![Options for instance count and match accuracy](../media/Sensitivity-labels-instance-count-match-accuracy.png)
+You can learn more about these configuration options from the DLP documentation: [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+
+Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 ### Configuring trainable classifiers for a label
 
@@ -140,7 +142,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 > [!CAUTION]
 > We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
 
-For more information about these classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
+For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
 During the preview period for this option, the following apps support trainable classifiers for sensitivity labels:
 
@@ -203,7 +205,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
     - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
 
-- If you plan to use [custom sensitive information types](custom-sensitive-info-types.md) rather than the built-in sensitivity types: 
+- If you plan to use [custom sensitive information types](sensitive-information-type-learn-about.md) rather than the built-in sensitivity types: 
     - Custom sensitivity information types are evaluated for content that is added to SharePoint or OneDrive after the custom sensitivity information types are saved. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 

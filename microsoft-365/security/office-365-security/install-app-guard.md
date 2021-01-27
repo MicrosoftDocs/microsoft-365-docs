@@ -1,20 +1,22 @@
 ---
 title: Application Guard for Office 365 (public preview) for admins
 keywords: application guard, protection, isolation, isolated container, hardware isolation
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: maccruz
 author: schmurky
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: M365-security-compliance
-description: "Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security."
+description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Application Guard for Office (public preview) for admins
@@ -150,7 +152,7 @@ If you encounter any issues when launching Application Guard for Office, you are
 
 1. Open the **Feedback Hub app** and sign in.
 
-2. If you get an error dialog while launching Application Guard, select **Report to Microsoft** in the error dialog to start a new feedback submission. Otherwise, navigate to <https://aka.ms/wdagoffice-fb> to select the correct category for Application Guard, then select **+ Add new feedback** near the top right.
+2. If you get an error dialog while launching Application Guard, select **Report to Microsoft** in the error dialog to start a new feedback submission. Otherwise, navigate to <https://aka.ms/mdagoffice-fb> to select the correct category for Application Guard, then select **+ Add new feedback** near the top right.
 
 3. Fill in the **Summarize your feedback** box if it isn't already filled in for you.
 

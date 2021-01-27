@@ -1,10 +1,10 @@
 ---
-title: Set up your Microsoft 365 Defender trial lab or pilot environment 
+title: Set up your Microsoft 365 Defender trial lab or pilot environment
 description: Access Microsoft 365 Security Center then set up your Microsoft 365 Defender trial lab environment
-keywords:  Microsoft Threat Protection trial setup, Microsoft Threat Protection pilot setup, try Microsoft Threat Protection, Microsoft Threat Protection evaluation lab setup  
+keywords: Microsoft Threat Protection trial setup, Microsoft Threat Protection pilot setup, try Microsoft Threat Protection, Microsoft Threat Protection evaluation lab setup
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
-- m365solution-evalutatemtp 
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-evalutatemtp
+ms.topic: article
+ms.technology: m365d
 ---
 
 # Set up your Microsoft 365 Defender trial lab environment 
