@@ -16,7 +16,7 @@ search.appverid:
 description: "Implement Microsoft Application and Protection Governance capabilities to govern your apps."
 ---
 
-# Microsoft Application and Protection Governance in Microsoft 365
+# Microsoft Application and Protection Governance in Microsoft 365srsr
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
  

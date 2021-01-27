@@ -466,7 +466,7 @@
 - name: Manage app protection and governance
   items: 
     - name: Protect and govern your apps
-      href: manage-app-protection-governance2.md
+      href: manage-app-protection-governance.md
     - name: Get visibility and insights
       items:
         - name: Learn about visibility and insights
