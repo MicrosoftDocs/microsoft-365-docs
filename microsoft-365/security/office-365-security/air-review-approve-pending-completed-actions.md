@@ -25,13 +25,17 @@ ms.date: 01/27/2021
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-
 ![AIR investigations action page](../../media/air-investigationactionspage.png)
 
 ## Approve (or reject) pending actions
 
-While viewing the [details of an investigation](air-view-investigation-results.md), you can approve or reject any pending remediation actions. We recommend doing this as soon as possible so that your automated investigations complete.
+As automated investigations on email & collaboration content result in verdicts, such as *Malicious* or *Suspicious*, certain remediation actions are created. In Microsoft Defender for Office 365, remediation actions can include:
+- Blocking a URL (time-of-click)
+- Soft deleting email messages or clusters
+- Quarantining email or email attachments
+- Turning off external mail forwarding
+
+These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner.
 
 > [!IMPORTANT]
 > Appropriate permissions are required to approve or reject remediation actions. See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
