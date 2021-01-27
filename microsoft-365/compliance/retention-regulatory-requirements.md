@@ -35,6 +35,8 @@ Released January 2021, this report has been produced in partnership with Microso
 
 - New Zealand Public Records Act 2005, which sets guidelines for preservation of public archives and local authority archives in New Zealand.
 
+The purpose of this report is to help customers understand that the system aspects of New Zealand's Public Records Act compliance are achievable when using Microsoft 365.
+
 ## SEC 17a-4(f), FINRA 4511(c), and CFTC 1.31(c)-(d)
 
 **Cohasset Assessment - Microsoft 365 - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Teams, Exchange, and Skype** - [Download assessment](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
