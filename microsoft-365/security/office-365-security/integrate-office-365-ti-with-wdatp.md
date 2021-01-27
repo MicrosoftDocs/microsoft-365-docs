@@ -6,7 +6,7 @@ keywords: integrate, Microsoft Defender, ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/29/2020
+ms.date: 01/21/2021
 audience: ITPro
 ms.topic: article
 
@@ -58,7 +58,7 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
    ![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)
 
-3. In the upper right corner of the screen, choose **Defender for Endpoint Settings**.
+3. In the upper right corner of the screen, choose **Defender for Endpoint Settings (MDE Settings)**.
 
 4. In the Microsoft Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.
 
