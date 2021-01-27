@@ -20,7 +20,7 @@
         - name: Product lifecycle
           href: service-description/device-lifecycle.md
         - name: Device requirements
-          href: service-description/devicereq.md
+          href: service-description/device-requirements.md
         - name: Program devices
           href: service-description/device-list.md
           items: 
