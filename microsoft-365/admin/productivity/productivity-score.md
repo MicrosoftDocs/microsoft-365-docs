@@ -75,13 +75,14 @@ For people experiences data, you need a Microsoft 365 for business or Office 365
 
 Productivity Score is only available in the Microsoft 365 Admin Center and can only be accessed by IT professionals who have one of the following roles:  
 
-- Global admin 
+- Global admin
 - Exchange admins
-- SharePoint admin 
-- Skype for Business admin 
-- Teams admin 
-- Global Reader 
-- Reports Reader 
+- SharePoint admin
+- Skype for Business admin
+- Teams admin
+- Global Reader
+- Reports Reader
+- Usage Summary Reports Reader
 
 > [!NOTE]
 > Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Productivity Score.
