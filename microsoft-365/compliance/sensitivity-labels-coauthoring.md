@@ -85,7 +85,10 @@ Make sure you understand the following prerequisites before you turn on this fea
         - Android: Not yet supported
     - Azure Information Protection unified labeling client and scanner: Version 2.10.xx that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
     - OneDrive sync app for Windows or macOS: Minimum version of 19.002.0121.0008
-    - Endpoint data loss prevention (Endpoint DLP): xx
+    - Endpoint data loss prevention (Endpoint DLP):
+        - Windows 10 1809 with KB 4601380
+        - Windows 10 1903 with KB 4601382
+        - Windows 10 2004 with KB 4601383
     - Apps and services that use the Microsoft Information Protection SDK: Minimum version of 1.7 
 
 Microsoft 365 services automatically support the new labeling metadata when you turn on this feature. For example:
@@ -114,7 +117,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
 
-- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 350 MB. For these files, use the Office desktop apps.
+- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 500 MB. For these files, use the Office desktop apps.
 
 - Office apps for iOS and Android are not supported.
 

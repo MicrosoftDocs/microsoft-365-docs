@@ -1,18 +1,17 @@
 ---
 title: "Troubleshooting information barriers"
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: Use this article as a guide for troubleshooting information barriers.
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: Use this article as a guide for troubleshooting information barriers.
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -27,7 +26,8 @@ In the event that people run into unexpected issues after information barriers a
 
 ## Issue: Users are unexpectedly blocked from communicating with others in Microsoft Teams 
 
-In this case, people are reporting unexpected issues communicating with others in Microsoft Teams. Examples:
+In this case, people are reporting unexpected issues communicating with others in Microsoft Teams. Some examples are:
+
 - A user searches for, but is unable to find, another user in Microsoft Teams.
 - A user can find, but cannot select, another user in Microsoft Teams.
 - A user can see another user, but cannot send messages to that other user in Microsoft Teams.
@@ -38,36 +38,37 @@ Determine whether the users are affected by an information barrier policy. Depen
 
 1. Use the **Get-InformationBarrierRecipientStatus** cmdlet with the Identity parameter. 
 
-    |Syntax  |Example  |
-    |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>You can use any identity value that uniquely identifies each recipient, such as Name, Alias, Distinguished name (DN), Canonical DN, Email address, or GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>In this example, we are using an alias (*meganb*) for the Identity parameter. This cmdlet will return information that indicates whether the user is affected by an information barrier policy. (Look for *ExoPolicyId: \<GUID>.)         |
+    |**Syntax**|**Example**|
+    |:---------|:----------|
+    | `Get-InformationBarrierRecipientStatus -Identity` <p> You can use any identity value that uniquely identifies each recipient, such as Name, Alias, Distinguished name (DN), Canonical DN, Email address, or GUID. |`Get-InformationBarrierRecipientStatus -Identity meganb` <p> In this example, we are using an alias (*meganb*) for the Identity parameter. This cmdlet will return information that indicates whether the user is affected by an information barrier policy. (Look for *ExoPolicyId: \<GUID>.) |
 
     **If the users are not included in information barrier policies, contact support**. Otherwise, proceed to the next step.
 
 2. Find out which segments are included in an information barrier policy. To do this, use the `Get-InformationBarrierPolicy` cmdlet with the Identity parameter. 
 
-    |Syntax  |Example  |
-    |---------|---------|
-    |`Get-InformationBarrierPolicy` <p>Use details, such as the policy GUID (ExoPolicyId) you received during the previous step, as an identity value.     | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p>In this example, we are getting detailed information about the information barrier policy that has ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f*.         |
+    |**Syntax**|**Example**|
+    |:---------|:----------|
+    | `Get-InformationBarrierPolicy` <p> Use details, such as the policy GUID (ExoPolicyId) you received during the previous step, as an identity value. | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p> In this example, we are getting detailed information about the information barrier policy that has ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f*. |
 
     After you run the cmdlet, in the results, look for **AssignedSegment**, **SegmentsAllowed**, and **SegmentsBlocked** values.
 
     For example, after running the `Get-InformationBarrierPolicy` cmdlet, we saw the following in our list of results:
 
     ```powershell
-        AssignedSegment      : Sales
-        SegmentsAllowed      : {}
-        SegmentsBlocked      : {Research}
+    AssignedSegment : Sales
+    SegmentsAllowed : {}
+    SegmentsBlocked : {Research}
     ```
-    In this case, we can see that an information barrier policy affects people who are in the Sales and Research segments. In this case, people in Sales are prevented from communicating with people in Research. 
-    
+
+    In this case, we can see that an information barrier policy affects people who are in the Sales and Research segments. In this case, people in Sales are prevented from communicating with people in Research.
+
     If this seems correct, then information barriers are working as expected. If not, proceed to the next step.
 
-4. Make sure your segments are defined correctly. To do this, use the `Get-OrganizationSegment` cmdlet, and review the list of results. 
+3. Make sure your segments are defined correctly. To do this, use the `Get-OrganizationSegment` cmdlet, and review the list of results.
 
-    |Syntax  |Example  |
-    |---------|---------|
-    |`Get-OrganizationSegment`<p>Use this cmdlet with an Identity parameter.     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>In this example, we are getting information about the segment that has GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*.         |
+    |**Syntax**|**Example**|
+    |:---------|:----------|
+    | `Get-OrganizationSegment`<p> Use this cmdlet with an Identity parameter. | `Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p> In this example, we are getting information about the segment that has GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*. |
 
     Review the details for the segment. If necessary, [edit a segment](information-barriers-edit-segments-policies.md#edit-a-segment), and then re-use the `Start-InformationBarrierPoliciesApplication` cmdlet.
 
@@ -83,28 +84,26 @@ Verify that the users in question are included in an information barrier policy.
 
 1. Use the **Get-InformationBarrierRecipientStatus** cmdlet with Identity parameters.
 
-    |Syntax  |Example  |
-    |---------|---------|
-    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>You can use any value that uniquely identifies each user, such as name, alias, distinguished name, canonical domain name, email address, or GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In this example, we refer to two user accounts in Office 365: *meganb* for *Megan*, and *alexw* for *Alex*.          |
+    |**Syntax***|**Example**|
+    |:----------|:----------|
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> You can use any value that uniquely identifies each user, such as name, alias, distinguished name, canonical domain name, email address, or GUID. |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In this example, we refer to two user accounts in Office 365: *meganb* for *Megan*, and *alexw* for *Alex*. |
 
-    
     > [!TIP]
     > You can also use this cmdlet for a single user: `Get-InformationBarrierRecipientStatus -Identity <value>`
-    
-2. Review the findings. The **Get-InformationBarrierRecipientStatus** cmdlet returns information about users, such as attribute values and any information barrier policies that are applied. 
+
+2. Review the findings. The **Get-InformationBarrierRecipientStatus** cmdlet returns information about users, such as attribute values and any information barrier policies that are applied.
 
     Review the results, and then take your next steps, as described in the following table:
-    
-    |Results  |What to do next  |
-    |---------|---------|
-    |No segments are listed for the selected user(s)     |Do one of the following:<br/>- Assign users to an existing segment by editing their user profiles in Azure Active Directory. (See [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).)<br/>- Define a segment using a [supported attribute for information barriers](information-barriers-attributes.md). Then, either [define a new policy](information-barriers-policies.md#part-2-define-information-barrier-policies) or [edit an existing policy](information-barriers-edit-segments-policies.md#edit-a-policy) to include that segment.  |
-    |Segments are listed but no information barrier policies are assigned to those segments     |Do one of the following:<br/>- [Define a new information barrier policy](information-barriers-policies.md#part-2-define-information-barrier-policies) for each segment in question<br/>- [Edit an existing information barrier policy](information-barriers-edit-segments-policies.md#edit-a-policy) to assign it to the correct segment         |
-    |Segments are listed and each is included in an information barrier policy     |- Run the `Get-InformationBarrierPolicy` cmdlet to verify that information barrier policies are active<br/>- Run the `Get-InformationBarrierPoliciesApplicationStatus` cmdlet to confirm the policies are applied<br/>- Run the `Start-InformationBarrierPoliciesApplication` cmdlet to apply all active information barrier policies          |
-    
+
+    |**Results**|**What to do next**|
+    |:----------|:------------------|
+    | No segments are listed for the selected user(s) | Do one of the following:<br/>- Assign users to an existing segment by editing their user profiles in Azure Active Directory. (See [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).)<br/>- Define a segment using a [supported attribute for information barriers](information-barriers-attributes.md). Then, either [define a new policy](information-barriers-policies.md#part-2-define-information-barrier-policies) or [edit an existing policy](information-barriers-edit-segments-policies.md#edit-a-policy) to include that segment. |
+    | Segments are listed but no information barrier policies are assigned to those segments | Do one of the following:<br/>- [Define a new information barrier policy](information-barriers-policies.md#part-2-define-information-barrier-policies) for each segment in question <br/>- [Edit an existing information barrier policy](information-barriers-edit-segments-policies.md#edit-a-policy) to assign it to the correct segment |
+    | Segments are listed and each is included in an information barrier policy | - Run the `Get-InformationBarrierPolicy` cmdlet to verify that information barrier policies are active<br/>- Run the `Get-InformationBarrierPoliciesApplicationStatus` cmdlet to confirm the policies are applied<br/>- Run the `Start-InformationBarrierPoliciesApplication` cmdlet to apply all active information barrier policies |
 
 ## Issue: I need to remove a single user from an information barrier policy
 
-In this case, information barrier policies are in effect, and a one or more users are unexpectedly blocked from communicating with others in Microsoft Teams. Rather than remove information barrier policies altogether, you can remove one or more individual users from information barrier policies. 
+In this case, information barrier policies are in effect, and a one or more users are unexpectedly blocked from communicating with others in Microsoft Teams. Rather than remove information barrier policies altogether, you can remove one or more individual users from information barrier policies.
 
 ### What to do
 
@@ -112,12 +111,12 @@ Information barrier policies are assigned to segments of users. Segments are def
 
 1. Use the **Get-InformationBarrierRecipientStatus** cmdlet with Identity parameters. This cmdlet returns information about users, such as attribute values and any information barrier policies that are applied.
 
-    |Syntax  |Example  |
-    |---------|---------|
-    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>`<p>You can use any value that uniquely identifies each user, such as name, alias, distinguished name, canonical domain name, email address, or GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In this example, we refer to two user accounts in Office 365: *meganb* for *Megan*, and *alexw* for *Alex*.          |
-    |`Get-InformationBarrierRecipientStatus -Identity <value>` <p>You can use any value that uniquely identifies the user, such as name, alias, distinguished name, canonical domain name, email address, or GUID.|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p>In this example, we refer to a single account in Office 365: *jeanp*. |
+    |**Syntax**|**Example**|
+    |:---------|:----------|
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> You can use any value that uniquely identifies each user, such as name, alias, distinguished name, canonical domain name, email address, or GUID. | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In this example, we refer to two user accounts in Office 365: *meganb* for *Megan*, and *alexw* for *Alex*.          |
+    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> You can use any value that uniquely identifies the user, such as name, alias, distinguished name, canonical domain name, email address, or GUID.|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> In this example, we refer to a single account in Office 365: *jeanp*. |
 
-2. Review the results to see if information barrier policies are assigned, and to which segment(s) the user(s) belong. 
+2. Review the results to see if information barrier policies are assigned, and to which segment(s) the user(s) belong.
 
 3. To remove a user from a segment affected by information barriers, [update the user's profile information in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
@@ -133,20 +132,19 @@ Keep in mind that when you run the policy application cmdlet, information barrie
 
 1. Use the **Get-InformationBarrierPoliciesApplicationStatus** cmdlet to verify status of the most recent policy application.
 
-    |To view the most recent policy application  |To view status for all policy applications  |
-    |---------|---------|
-    |`Get-InformationBarrierPoliciesApplicationStatus`     |`Get-InformationBarrierPoliciesApplicationStatus -All $true`         |
-
+    |**To view the most recent policy application**|**To view status for all policy applications**|
+    |:---------------------------------------------|:---------------------------------------------|
+    | `Get-InformationBarrierPoliciesApplicationStatus` | `Get-InformationBarrierPoliciesApplicationStatus -All $true` |
 
     This will display information about whether policy application completed, failed, or is in progress.
 
 2. Depending on the results of the previous step, take one of the following steps:
   
-    |Status  |Next step  |
-    |---------|---------|
-    |**Not started**     |If it has been more than 45 minutes since the **Start-InformationBarrierPoliciesApplication** cmdlet has been run, review your audit log to see if there are any errors in policy definitions, or some other reason why the application has not started. |
-    |**Failed**     |If the application has failed, review your audit log. Also review your segments and policies. Are any users assigned to more than one segment? Are any segments assigned more than one poliicy? If necessary, [edit segments](information-barriers-edit-segments-policies.md#edit-a-segment) and/or [edit policies](information-barriers-edit-segments-policies.md#edit-a-policy), and then run the **Start-InformationBarrierPoliciesApplication** cmdlet again.  |
-    |**In progress**     |If the application is still in progress, allow more time for it to complete. If it has been several days, gather your audit logs, and then contact support. |
+    |**Status**|**Next step**|
+    |:---------|:------------|
+    | **Not started** | If it has been more than 45 minutes since the **Start-InformationBarrierPoliciesApplication** cmdlet has been run, review your audit log to see if there are any errors in policy definitions, or some other reason why the application has not started. |
+    | **Failed** | If the application has failed, review your audit log. Also review your segments and policies. Are any users assigned to more than one segment? Are any segments assigned more than one poliicy? If necessary, [edit segments](information-barriers-edit-segments-policies.md#edit-a-segment) and/or [edit policies](information-barriers-edit-segments-policies.md#edit-a-policy), and then run the **Start-InformationBarrierPoliciesApplication** cmdlet again. |
+    | **In progress** | If the application is still in progress, allow more time for it to complete. If it has been several days, gather your audit logs, and then contact support. |
 
 ## Issue: Information barrier policies are not being applied at all
 
@@ -156,14 +154,14 @@ In this case, you have defined segments, defined information barrier policies, a
 
 Make sure that your organization does not have [Exchange address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in place. Such policies will prevent information barrier policies from being applied.
 
-1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). 
+1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy) cmdlet, and review the results.
 
-    |Results  |Next step  |
-    |---------|---------|
-    |Exchange address book policies are listed     |[Remove address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
-    |No address book policies exist |Review your audit logs to find out why policy application is failing |
+    |**Results**|**Next step**|
+    |:----------|:------------|
+    | Exchange address book policies are listed | [Remove address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | No address book policies exist |Review your audit logs to find out why policy application is failing |
 
 3. [View status of user accounts, segments, policies, or policy application](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
 
@@ -195,18 +193,18 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 ```powershell
    $DetailedLogs[1] |fl
 ```
- For example:
+
+For example:
 
 > "UserId":  User1
-> 
->"ErrorDetails":"Status: IBPolicyConflict. Error: IB  segment               "segment id1" and IB segment "segment id2" has conflict and cannot be assigned to the recipient. 
+>
+>"ErrorDetails":"Status: IBPolicyConflict. Error: IB  segment "segment id1" and IB segment "segment id2" has conflict and cannot be assigned to the recipient.
 
 3. Usually, you will find that a user has been included in more than one segment. You can fix this by updating the `-UserGroupFilter` value in `OrganizationSegments`.
 
 4. Re-apply information barrier policies using these procedures [Information Barriers policies](information-barriers-policies.md#part-3-apply-information-barrier-policies).
 
-## Related topics
+## Resources
 
-[Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
-
-[Information barriers](information-barriers.md)
+- [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
+- [Information barriers](information-barriers.md)
