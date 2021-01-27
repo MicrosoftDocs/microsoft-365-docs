@@ -30,9 +30,9 @@ This article is part of a larger series of articles about Office 365 Message Enc
 
 ## Overview of AD RMS deprecation in Exchange Online
 
-Exchange Online includes Information Rights Management (IRM) functionality that provides online and offline protection of email messages and attachments. By default, Exchange Online uses Azure Azure Information Protection. However, your organization may have configured Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS). AD RMS support in Exchange Online is retiring. Instead, Azure Information Protection will replace AD RMS entirely. 
+Exchange Online includes Information Rights Management (IRM) functionality that provides online and offline protection of email messages and attachments. By default, Exchange Online uses Azure Azure Information Protection. However, your organization may have configured Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS). AD RMS support in Exchange Online is retiring. Instead, Azure Information Protection will replace AD RMS entirely.
 
- Before you begin, review and assess the impact for your organization. If your organization is already using Azure Information Protection to encrypt email in Exchange Online, there is nothing for you to do. If you encrypt your email using Exchange mail flow rules, for example using Office 365 Message Encryption, you won't have to change your secure email. Otherwise, you'll need to prepare for AD RMS deprecation by switching to Azure Information Protection.
+Before you begin, review and assess the impact for your organization. If your organization is already using Azure Information Protection to encrypt email in Exchange Online, there is nothing for you to do. If you encrypt your email using Exchange mail flow rules, for example using Office 365 Message Encryption, you won't have to change your secure email. Otherwise, you'll need to prepare for AD RMS deprecation by switching to Azure Information Protection.
 
 ### Prepare for AD RMS deprecation
 
