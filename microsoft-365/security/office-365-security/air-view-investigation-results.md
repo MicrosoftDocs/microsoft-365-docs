@@ -2,7 +2,7 @@
 title: View the results of an automated investigation in Microsoft 365
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -10,13 +10,13 @@ audience: ITPro
 ms.topic: article
 localization_priority: Normal
 search.appverid: 
-  - MET150
-  - MOE150
+- MET150
+- MOE150
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-defender-office365
+- M365-security-compliance
+- m365initiative-defender-office365
 description: During and after an automated investigation in Microsoft 365, you can view the results and key findings.
-ms.date: 11/05/2020
+ms.date: 01/27/2021
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -24,7 +24,6 @@ ms.prod: m365-security
 # Details and results of an automated investigation in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 When an [automated investigation](office-365-air.md) occurs in [Microsoft Defender for Office 365](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 security center. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
 
@@ -49,23 +48,13 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details of an investigation
 
-1. Go to the Security & Compliance Center (<https://protection.office.com>) and sign in.
+![Main investigation page for AIR](../../media/air-maininvestigationpage.png)
 
-2. Do one of the following actions:
-
-    - Go to **Threat management** \> **Dashboard**. This takes you to the [Security Dashboard](security-dashboard.md). Your AIR widgets appear across the top of the [Security Dashboard](security-dashboard.md). Select a widget, such as **Investigations summary**.
-
-    - Go to **Threat management** \> **Investigations**.
-
-    Either method takes you to a list of investigations.
-
-    ![Main investigation page for AIR](../../media/air-maininvestigationpage.png)
-
-3. In the list of investigations, select an item in the **ID** column. This opens investigation details page, starting with the investigation graph in view.
-
-    ![AIR investigation graph page](../../media/air-investigationgraphpage.png)
-
-   Use the various tabs to learn more about the investigation.
+1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+2. In the navigation pane, select **Action center**.
+3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
+4. In the flyout pane, select **Open investigation page**. 
+5. Use the various tabs to learn more about the investigation.
 
 ## View details about an alert related to an investigation
 
