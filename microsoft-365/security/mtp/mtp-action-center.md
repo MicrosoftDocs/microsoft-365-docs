@@ -49,18 +49,12 @@ Your security operations team can operate more effectively and efficiently, beca
 ## Go to the Action center
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
-
 2. In the navigation pane, choose **Action center**. 
-
 3. In the Action center, you'll see two tabs: **Pending** and **History**.
-
     - The **Pending** tab lists investigations that require review and approval by someone in your security operations team to continue. Make sure to review and take action on pending items you see here.
-
     - The **History** tab lists past investigations and remediation actions that were taken automatically. You can view data for the past day, week, month, or six months.
-
-4. To show only the columns you want to see, select **Customize columns**.<br/>![Action Center in Microsoft 365 Defender](../../media/mtp-action-center.png)
-
-5. Select an item in the list to view more details about an investigation. The investigation details view opens.<br/>![Investigation details](../../media/mtp-air-investdetails.png)
+4. To show only the columns you want to see, select **Customize columns**.
+5. Select an item in the list to view more details about an investigation. The investigation details view opens.
 
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft 365 Defender, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
@@ -84,7 +78,7 @@ As remediation actions are taken, they're listed on the **History** tab in the A
 
 ## Action source
 
-(**NEW!**) As you know, Microsoft 365 Defender brings together automated investigation and response capabilities across multiple services, such as [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). The new and improved Action center now includes an **Action source** column that tells you where each remediation action came from. 
+(**NEW!**) As you know, Microsoft 365 Defender brings together automated investigation and response capabilities across multiple services, such as [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). The improved Action center now includes an **Action source** column that tells you where each remediation action came from. 
 
 The following table describes possible **Action source** values:
 
