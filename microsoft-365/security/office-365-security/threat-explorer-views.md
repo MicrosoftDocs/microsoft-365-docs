@@ -1,21 +1,23 @@
 ---
-title: "Views in Threat Explorer and real-time detections"
-f1.keywords:
-- NOCSH
+title: Views in Threat Explorer and real-time detections
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
+search.appverid: 
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Views in Threat Explorer and real-time detections
@@ -51,7 +53,7 @@ Once you have selected a view, you can apply filters and set up queries to condu
 
 ## Email > Malware
 
-To view this report, in Explorer (or real-time detections), choose **View** > **Email** > **Malware**. This view shows information about email messages that were identified as containing malware.
+To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Malware**. This view shows information about email messages that were identified as containing malware.
 
 ![View data about email identified as malware](../../media/ExplorerEmailMalwareMenu.png)
 
@@ -67,7 +69,7 @@ Below the chart, view more details about specific messages. When you select an i
 
 ## Email > Phish
 
-To view this report, in Explorer (or real-time detections), choose **View** > **Email** > **Phish**. This view shows email messages identified as phishing attempts.
+To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Phish**. This view shows email messages identified as phishing attempts.
 
 ![View data about email identified as phishing attempts](../../media/ThreatExplorerEmailPhish.png)
 
@@ -87,13 +89,13 @@ When you select an item in the list, such as a URL that was detected, a fly-out 
 
 ## Email > Submissions
 
-To view this report, in Explorer (or real-time detections), choose **View** > **Email** > **Submissions**. This view shows email that users have reported as junk, not junk, or phishing email.
+To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Submissions**. This view shows email that users have reported as junk, not junk, or phishing email.
 
 ![Email messages reported by users](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
 Click **Sender** to open your list of viewing options. Use this list to view information by sender, recipients, report type (the user's determination that the email was junk, not junk, or phish), and more.
 
-For example, to view information about email messages that were reported as phishing attempts, click **Sender** > **Report type**, select **Phish**, and then click the Refresh button.
+For example, to view information about email messages that were reported as phishing attempts, click **Sender** \> **Report type**, select **Phish**, and then click the Refresh button.
 
 ![Phish selected for Report Type filter](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -105,7 +107,7 @@ Select an item in the list to view additional details.
 
 ## Email > All email
 
-To view this report, in Explorer, choose **View** > **Email** > **All mail**. This views shows an all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).
+To view this report, in Explorer, choose **View** \> **Email** \> **All mail**. This views shows an all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).
 
 > [!NOTE]
 > If you get an error that reads **Too much data to display**, add a filter and, if necessary, narrow the date range you're viewing.
@@ -118,7 +120,7 @@ Below the chart, view more details about specific email messages, such as subjec
 
 ## Content > Malware
 
-To view this report, in Explorer (or real-time detections), choose **View** > **Content** > **Malware**. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+To view this report, in Explorer (or real-time detections), choose **View** \> **Content** \> **Malware**. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 View information by malware family, detection technology (how the malware was detected), and workload (OneDrive, SharePoint, or Teams).
 

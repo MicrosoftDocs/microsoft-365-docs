@@ -64,7 +64,6 @@ The **Discovery & response** section on the home page shows you at a glance how 
 From here, you'll see cards for the following solutions:
 
 - [Audit](search-the-audit-log-in-security-and-compliance.md): Records user and admin activity from your organization so you can search the audit log and investigate a comprehensive list of activities across all locations and services.
-- [Data investigations](overview-data-investigations.md): Searches across content locations to identify sensitive, malicious, or misplaced data across Microsoft 365 locations so you can investigate and remediate any incidents, such as data spillage.
 - [Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): Finds and exports a user's personal data to help you respond to data subject requests for GDPR.
 - [eDiscovery](manage-legal-investigations.md)
     - [Core eDiscovery](ediscovery-cases.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests and eDiscovery cases.

@@ -25,7 +25,7 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
-        - name: Configure M365E endpoint whitelisting
+        - name: Configure endpoints to bypass
           items: 
             - name: Office 365 IP Address and URL Web service
               href: microsoft-365-ip-web-service.md
@@ -276,20 +276,20 @@
             href: ms-cloud-germany-transition.md
           - name: Opt-in for migration
             href: ms-cloud-germany-migration-opt-in.md
-          - name: Customer experience
+          - name: What has changed
             href: ms-cloud-germany-transition-experience.md
-          - name: Migration phases actions and impacts
+          - name: Pre-work
+            href: ms-cloud-germany-transition-add-pre-work.md
+          - name: Migration phases actions and impacts (general)
             href: ms-cloud-germany-transition-phases.md
+          - name: Migration phases actions and impacts (advanced)
+            href: ms-cloud-germany-transition-add-experience.md
           - name: Additional information
             items: 
-            - name: General
-              href: ms-cloud-germany-transition-add-general.md
+            - name: Azure AD
+              href: ms-cloud-germany-transition-azure-ad.md
             - name: Devices
               href: ms-cloud-germany-transition-add-devices.md
-            - name: Pre-work
-              href: ms-cloud-germany-transition-add-pre-work.md
-            - name: Experience
-              href: ms-cloud-germany-transition-add-experience.md
             - name: AD FS migration steps
               href: ms-cloud-germany-transition-add-adfs.md
 

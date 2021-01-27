@@ -62,7 +62,7 @@ The [Prepare your environment](https://aka.ms/prepareyourenvironment) guide help
 
 The [Email setup advisor](https://aka.ms/office365setup) provides you with the step-by-step guidance needed for configuring Exchange Online for your organization. This includes setting up new email accounts, migrating email, and configuring email protection. For a successful email set up, use this advisor and you'll receive the recommended migration method based on your organization's current mail system, the number of mailboxes being migrated, and how you want to manage users and their access.
 
-### Gmail contacts and calendar advisor
+### Migrate Gmail contacts and calendar items
 
 When you migrate a Gmail user's mailbox to Microsoft 365, email messages are migrated, but contacts and calendar items are not. The [Gmail contacts and calendar advisor](https://aka.ms/gmailcontactscalendar) provides steps for importing Google contacts and Google calendar items to Microsoft 365 using import and export methods with Outlook.com, the Outlook client, or PowerShell.
 
@@ -85,12 +85,17 @@ Windows Virtual Desktop is a comprehensive desktop and app virtualization servic
 
 The [Windows Virtual Desktop setup guide](https://aka.ms/wvdsetupguide) provides administrators with planning resources and the prerequisites for deployment, setup guidance, and additional resources. 
 
-### Microsoft Edge deployment advisor
+### Microsoft Edge setup guide
 
 Microsoft Edge has been rebuilt from the ground up to bring you world-class compatibility and performance, the security and privacy you deserve, and new features designed to bring you the best of the web.
 
-The [Microsoft Edge deployment advisor](https://aka.ms/edgeadvisor) will help you configure Enterprise Site Discovery to see which sites accessed in your org might need to use IE mode, review and configure important security features, configure privacy policies and additional policies to meet your org's requirements, and manage web access on your devices. You can download Microsoft Edge to individual devices, or we'll show you how to deploy to multiple users in your org with Configuration Manager or Microsoft Intune.
-Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It's the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Microsoft 365 Apps, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps to Azure in minutes and get built-in security and compliance features. 
+The [Microsoft Edge setup guide](https://aka.ms/edgeadvisor) will help you configure Enterprise Site Discovery to see which sites accessed in your org might need to use IE mode, review and configure important security features, configure privacy policies and additional policies to meet your org's requirements, and manage web access on your devices. You can download Microsoft Edge to individual devices, or we'll show you how to deploy to multiple users in your org with Configuration Manager or Microsoft Intune. 
+
+### Microsoft Search setup guide
+
+Microsoft Search helps your organization find what they need to complete what they're working on. Whether it's searching for people, files, org charts, sites, or answers to common questions, your org can use Microsoft Search throughout their workday to get answers.
+
+The [Microsoft Search setup guide](https://aka.ms/MicrosoftSearchSetup) helps you configure Microsoft Search whether you want to pilot it to a group of users or roll it out to everyone in your org. You'll assign Search admins and Search editors and then customize the search experience for your users with answers and additional options, like adding the Bing extension to Chrome or setting Bing as your default search engine.
 
 ### Intune Configuration Manager co-management setup guide
 
@@ -130,6 +135,12 @@ The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with st
 
 ## Guides for security and compliance
 
+### Microsoft Intune setup guide 
+
+Set up Microsoft Intune to manage devices in your organization. For full control of corporate devices, you’ll use Intune’s mobile device management (MDM) features. To manage your organization's data on shared and personal devices, you can use Intune’s mobile application management (MAM) features. 
+
+With the [Microsoft Intune setup guide](https://aka.ms/intunesetupguide), you'll set up device and app compliance policies, assign app protection policies, and monitor the device and app protection status. 
+
 ### Microsoft Defender for Endpoint advisor
 
 The [Microsoft Defender for Endpoint advisor](https://aka.ms/mdatpsetup) provides instructions that will help your enterprise network prevent, detect, investigate, and respond to advanced threats. Make an informed assessment of your organization's vulnerability and decide which deployment package and configuration methods are best. 
@@ -161,9 +172,9 @@ The [Microsoft Information governance setup guide](https://aka.ms/migsetupguide)
 
 The [Microsoft 365 Apps deployment advisor](https://aka.ms/OPPquickstartguide) helps you get your users' devices running the latest version of Office products like Word, Excel, PowerPoint, and OneNote. You'll get guidance on the various deployment methods that include easy self-install options to enterprise deployments with management tools. The instructions will help you assess your environment, figure out your specific deployment requirements, and implement the necessary support tools to ensure a successful install. 
 
-### Office mobile apps setup assistant
+### Mobile apps setup guide
 
-The [Office mobile apps setup assistant](https://aka.ms/officeappguidance) provides instructions for the download and installation of Office apps on your Windows, iOS, and Android mobile devices. This guide provides you with step-by-step information to download and install Microsoft 365 and Office 365 apps on your phone and tablet devices.
+The [Mobile apps setup guide](https://aka.ms/officeappguidance) provides instructions for the download and installation of Office apps on your Windows, iOS, and Android mobile devices. This guide provides you with step-by-step information to download and install Microsoft 365 and Office 365 apps on your phone and tablet devices.
 
 ### Microsoft Teams setup guide
 

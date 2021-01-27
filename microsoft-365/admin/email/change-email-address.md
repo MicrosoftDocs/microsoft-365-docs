@@ -37,7 +37,7 @@ description: "Change your initial email address to a friendly email address like
 
 ::: moniker-end
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 ::: moniker range="o365-worldwide"
 

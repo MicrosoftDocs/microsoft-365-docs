@@ -115,4 +115,8 @@ There are a few more things to know:
     
 ## Related articles
 
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
+
 [Create an Microsoft 365 group in the admin center](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)

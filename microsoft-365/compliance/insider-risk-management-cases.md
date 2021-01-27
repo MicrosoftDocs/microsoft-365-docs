@@ -154,15 +154,13 @@ To add a note to a case:
 
 ### Contributors
 
-The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case.
+The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case. Only users assigned the **Insider Risk Management Investigators** role have permission to view files and messages in the Content Explorer.
 
-All insider risk management cases must be managed with appropriate access controls in place to maintain confidentiality and integrity of the investigation. To help maintain access control of cases, users are assigned one of two types of access to cases:
+Temporary access to a case can be granted by adding a user as a contributor. Contributors have all case management control on the specific case except:
 
-- **Permanent access**: Permanent access is automatically granted to users with the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles when the case is created from an alert. Permanent access grants full control of the case for the lifetime of the case and grants the ability to add other case contributors.
-- **Temporary access**: Temporary access is only granted to users by contributors that have permanent access for the case. Typically, this access level is granted to user that needs to add notes to a case. Contributors with temporary access have all case management control except:
-    - Permission to confirm or dismiss alerts
-    - Permission to edit the contributors for cases
-    - Permission to view files and messages in the Content Explorer
+- Permission to confirm or dismiss alerts
+- Permission to edit the contributors for cases
+- Permission to view files and messages in the Content Explorer
 
 To add a contributor to a case:
 
@@ -170,8 +168,7 @@ To add a contributor to a case:
 2. Select a case, then select the **Contributors** tab.
 3. Select **Add contributor**.
 4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list. This list is generated from the Azure Active Directory of your tenant subscription.
-5. On the **Add contributor** dialog, select the access level for the contributor. You can select **Permanent** or **Temporary**.
-6. Select **Add** to add the user as a contributor or select **Cancel** close the dialog without adding the user as a contributor.
+5. Select **Add** to add the user as a contributor or select **Cancel** close the dialog without adding the user as a contributor.
 
 ## Case actions
 
@@ -179,9 +176,9 @@ Risk analysts and investigators can take action on a case in one of several meth
 
 ### Send email notice
 
-In most cases, user actions that create insider risk alerts are inadvertent or accidental. Sending a reminder notice to the user via email is an effective method for documenting case review and action, as well as a method to remind users of corporate policies or point them to refresher training. Notices are generated from [notice templates that you create](insider-risk-management-notices.md) for your insider risk management infrastructure.
+In most cases, user actions that create insider risk alerts are inadvertent or accidental. Sending a reminder notice to the user via email is an effective method for documenting case review and action, and is a method to remind users of corporate policies or point them to refresher training. Notices are generated from [notice templates that you create](insider-risk-management-notices.md) for your insider risk management infrastructure.
 
-It's important to remember that sending an email notice to a user ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to a user to look for additional risk activities without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step after sending a notice.
+It's important to remember that sending an email notice to a user ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to a user to look for more risk activities without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step after sending a notice.
 
 To send a notice to the user assigned to a case:
 
@@ -212,6 +209,7 @@ Using recommended Power Automate flows, risk investigators and analysts can quic
 - Request information from HR or business about a user in an insider risk case
 - Notify manager when a user has an insider risk alert
 - Add calendar reminder to follow up on an insider risk case
+- Create a record for an insider risk management case in ServiceNow
 
 To run, manage, or create Power Automate flows for an insider risk management case:
 

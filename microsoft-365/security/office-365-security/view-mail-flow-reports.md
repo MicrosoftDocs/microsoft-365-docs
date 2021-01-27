@@ -1,23 +1,25 @@
 ---
 title: View mail flow reports in the Reports dashboard
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center."
-ms.custom:
+search.appverid: 
+  - MET150
+  - MOE150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
+ms.custom: 
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # View mail flow reports in the Reports dashboard in Security & Compliance Center
@@ -27,7 +29,7 @@ ms.custom:
 
 In addition to the mail flow reports that are available in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center, a variety of additional mail flow reports are available in the Reports dashboard to help you monitor your Microsoft 365 organization.
 
-If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the [Security & Compliance Center](https://office.protection.com) by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
+If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the [Security & Compliance Center](https://protection.office.com) by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
 ![Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -530,7 +532,7 @@ To go back to the report view, click **View report**.
 
 ## What permissions are needed to view these reports?
 
-In order to view and use the reports described in this topic, you need to be a member of one of the following role groups in the Security & Compliance Center:
+In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Security & Compliance Center:
 
 - **Organization Management**
 - **Security Administrator**
@@ -539,7 +541,8 @@ In order to view and use the reports described in this topic, you need to be a m
 
 For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+> [!NOTE]
+> Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Related topics
 
