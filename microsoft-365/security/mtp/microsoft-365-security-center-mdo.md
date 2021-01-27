@@ -42,15 +42,14 @@ If you are looking for compliance-related items, visit the [Microsoft 365 compli
 
 This table is a quick reference of Email & Collaboration areas where change has occurred between the **Security & Compliance center** and the **Microsoft 365 Security** portal. Click the links to read more about these areas.
 
+
 |**Changed**  |**Unchanged**  |
 |---------|---------|
-|[Dashboard](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-365-security-center-dashboard)     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)       |
-|[Attack Simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights)   |  [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)       |
-|[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center)    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns)     |
-|     |    [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)     |
-|     |    [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)     |
+|[Dashboard](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-365-security-center-dashboard) | [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)       |
+[Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) | [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns) |
+[Attack Simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights)   |  [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission) | 
+|[Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center) | [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 |     |    [Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)    |
-|     |          |
 
 Also, check the **Related Information** section at the bottom of this article.
 
