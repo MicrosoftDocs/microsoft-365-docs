@@ -53,9 +53,6 @@ To get the best protection and optimize Microsoft 365 Defender, we recommend dep
 ## Onboarding to the service
 Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select any item under the Endpoints section, such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process. 
 
-
-INSERT IMAGE HERE THAT MATIKA WILL PROVIDE
-
 ### Data center location
 
 Microsoft 365 Defender will store and process data in the [same location used by Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender for Endpoint, a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown in the screen.
@@ -78,10 +75,7 @@ Once the service is provisioned, it adds:
 ![Image of Microsoft 365 security center navigation pane with Microsoft 365 Defender features](../../media/mtp-enable/mtp-on.png)
 *Microsoft 365 security center with incidents management and other Microsoft 365 Defender capabilities*
 
-### Getting Microsoft Defender for Identity data - Matika to check if this section is still relevant
-
-To share Microsoft Defender for Identity data with Microsoft 365 Defender, ensure that Microsoft Cloud App Security and Microsoft Defender for Identity integration is turned on. [Learn more about this integration](https://docs.microsoft.com/cloud-app-security/mdi-integration).
-
+### Getting Microsoft Defender for Identity data 
 To enable the integration with Microsoft Cloud App Security, you'll need to login to the Microsoft Cloud App Security at least once.
 
 ## Get assistance
