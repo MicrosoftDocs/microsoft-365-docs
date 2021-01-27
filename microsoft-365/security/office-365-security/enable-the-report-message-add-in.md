@@ -88,23 +88,25 @@ To learn how to use the add-in, see [Use the Report Message add-in](https://supp
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center, go to the **Settings, integrated Apps & Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, and then click **Deploy Add-In**.
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
+
+2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 
    ![Services and add-ins page in the Microsoft 365 admin center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.
+3. In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.
 
-3. On the next page, click **Choose from the Store**.
+4. On the next page, click **Choose from the Store**.
 
    ![Deploy a new add-in page](../../media/NewAddInScreen2.png)
 
-4. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Message** and then click **Add**.
+5. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Message** and then click **Add**.
 
    ![Select add-in search results](../../media/NewAddInScreen3.png)
 
-5. In the dialog that appears, review the licensing and privacy information, and then click **Continue**.
+6. In the dialog that appears, review the licensing and privacy information, and then click **Continue**.
 
-6. In the **Configure add-in** page that appears, configure the following settings:
+7. In the **Configure add-in** page that appears, configure the following settings:
 
    - **Assigned users**: Select one of the following values:
 
@@ -122,11 +124,11 @@ To learn how to use the add-in, see [Use the Report Message add-in](https://supp
 
    When you're finished, click **Deploy**.
 
-7. In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed. After you read the information, click **Next**.
+8. In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed. After you read the information, click **Next**.
 
    ![Deploy Report Message page](../../media/deploy-report-message-page.png)
 
-8. On the **Announce add-in** page that appears, review the information, and then click **Close**.
+9. On the **Announce add-in** page that appears, review the information, and then click **Close**.
 
    ![Announce add-in page](../../media/announce-add-in-page.png)
 
@@ -146,7 +148,7 @@ When you notify users about the Report Message add-in, include a link to [Use th
 
 ## Review or edit settings for the Report Message add-in
 
-1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
 
    ![Services and Add-Ins page in the new Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
