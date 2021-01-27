@@ -109,7 +109,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     - **User access to content expires** is set to a value other than **Never**.
     - **Double Key Encryption** is selected.
     
-    For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they are warned that if they apply the label, co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
+    For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they are warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
 - If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [additional requirements or limitations](https://docs.microsoft.com/azure/information-protection/known-issues#co-authoring-public-preview). 
 
