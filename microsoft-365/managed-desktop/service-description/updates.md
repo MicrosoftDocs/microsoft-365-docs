@@ -38,7 +38,7 @@ You might want some devices to receive updates last and others that you want to 
 > [!NOTE]
 > If you need to move a user to a different update group, submit a support request. Do not move devices between update groups yourself. There are serious consequences if a device is moved incorrectly. The device could update unexpectedly and policies might conflict, changing the device configuration.
 
-For more information roles and responsibilities with these deployment groups, see [Microsoft Managed Desktop Roles and responsibilities](../intro/roles-and-responsibilities.md)
+For more information on roles and responsibilities within these deployment groups, see [Microsoft Managed Desktop Roles and responsibilities](../intro/roles-and-responsibilities.md)
 
 ### Using Microsoft Managed Desktop update groups 
 There are parts of the service that you manage, like app deployment, where it might be necessary to target all managed devices. In these instances, it makes sense to use update groups to reach those users with the understanding that you cannot add, remove, or change the membership of those groups. 
