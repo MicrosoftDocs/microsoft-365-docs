@@ -2,7 +2,7 @@
 title: Review and approve pending remediation actions in automated investigation and response
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -10,14 +10,15 @@ audience: ITPro
 ms.topic: article
 localization_priority: Normal
 search.appverid: 
-  - MET150
-  - MOE150
+- MET150
+- MOE150
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-defender-office365
+- M365-security-compliance
+- m365initiative-defender-office365
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
+ms.date: 01/27/2021
 ---
 
 # View pending or completed remediation actions following an automated investigation in Office 365

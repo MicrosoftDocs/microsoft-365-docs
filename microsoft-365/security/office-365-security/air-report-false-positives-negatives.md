@@ -74,10 +74,9 @@ In the Action center, you can see remediation actions that were taken and potent
 
 1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
 2. In the navigation pane, select **Action center**. 
-3. In the list of investigations, select the **Open in new window** icon next to an item's ID.
-4. Select the **Actions** tab.
-5. Select an item that has status of **Completed**, and look for a link, such as **Approved**, in the **Decision** column. This opens a flyout with more details about the action.
-6. To undo the action, select **Delete remediation**.
+3. Select the **History** tab to view the list of completed actions.
+4. Select an item. Its flyout pane opens. 
+5. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
 
 ## See also
 
