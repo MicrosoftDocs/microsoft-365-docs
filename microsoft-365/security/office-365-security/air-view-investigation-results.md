@@ -60,25 +60,12 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [alert policies that trigger automated investigations](office-365-air.md#which-alert-policies-trigger-automated-investigations).
 
-Use the following procedure to view details about an alert that is associated with an automated investigation.
-
-1. Go to the Security & Compliance Center (<https://protection.office.com>) and sign in.
-
-2. Go to **Threat management** \> **Investigations**.
-
-3. In the list of investigations, select an item in the **ID** column.
-
-4. With details of an investigation open, select the **Alerts** tab. Any alerts that triggered the investigation are listed here.
-
-5. Select an item in the list. A flyout opens, with details about the alert and links to additional information and actions.
-
-6. Review the information on the flyout, and, depending on the particular alert, take an action, such as **Resolve**, **Suppress**, or **Notify users**.
-
-    - **Resolve** is equivalent to closing an alert
-
-    - **Suppress** causes a policy to not trigger alerts for a specified period of time
-
-    - **Notify users** starts an email with users' email addresses already entered, and enables your security operations team to type a message to those users. (This is similar to sending a message to recipients using [Threat Explorer](threat-explorer.md).)
+1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+2. In the navigation pane, select **Action center**.
+3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
+4. In the flyout pane, select **Open investigation page**. 
+5. Select the **Alerts** tab to view a list of all of the alerts associated with that investigation.
+6. Select an item in the list to open its flyout pane. There, you can view more information about the alert.
 
 ## How to use the various tabs
 
