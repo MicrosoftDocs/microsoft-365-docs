@@ -218,7 +218,7 @@ There are currently two known limitations:
    
  ## Can I open encrypted messages sent to another user's mailbox with Fullaccess?
 
-Users can open encrypted messages as long as they are given direct access and automapping is turned ON. We don't support if the access to granted via an email enabled security group.
+Users can open encrypted messages as long as they are given direct access and automapping is turned ON. Access is not allowed if the access is granted via an email-enabled security group.
 
 ## What do I do if I don’t receive the one-time pass code after I requested it?
 
