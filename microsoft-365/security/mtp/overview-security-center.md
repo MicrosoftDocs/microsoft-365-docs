@@ -57,7 +57,6 @@ The Microsoft 365 security center emphasizes *unity, clarity, and common goals* 
 - common entities
 - parity
 
-
 ## Efficiency gains
 
 Streamlining security centers creates a single pane for investigating any incidents taking place in Office 365. A primary example is the **Incidents** node on the quick launch of the Microsoft 365 security center.
@@ -69,7 +68,7 @@ As an example, double-clicking on an incident name with **High** severity brings
 ![Multi-stage incident involving privilege escalation on multiple endpoints, showing see 16 impacted devices and 9 impacted users.](../../media/converged-incident-info-3.png)
 
 > [!TIP]
-> The converged **Users** tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and MCAS, if you leverage it) and a range of sources such as on-premises Active Directory, Azure Active Directory, synced, local, and third-party users.
+> The converged **Users** tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and MCAS, if you leverage it) and a range of sources such as on-premises Active Directory, Azure Active Directory, synced, local, and third-party users. Learn more about [the new Users experience](investigate-users.md)
 
 Incident information shows user/identity specifics and at-risk devices, beside affected mailboxes. It also relates any **Investigation information** and gathered **Evidence**. This makes it easier for admins and security operation teams to pivot from one high-risk alert to the affected users and mailboxes. Looking at the **Incident** tabs at the top of this page, there are other key security pivots available from this single location.
 
@@ -86,11 +85,11 @@ The layout has been merged wherever centers overlap. Common controls and content
 
 ![clicked 'Roles' and opened the Settings page, which includes General settings, Permissions, APIs and Rules. Open Permissions and then Roles. Shows all roles](../../media/converged-add-role-9.png)
 
-### Integrated permissions & roles
+### Permissions & roles
 
 ![Permissions & Roles page showing Endpoints roles & groups, Roles, and Device groups.](../../media/converged-roles-5.png)
 
- Roles and groups are inherited from your existing products, so if you have specific roles and groups, you can manage those here. Selecting either of **Roles** or **Device groups** drops admins deeper into the **Permissions** section (but take a second to look at the other nodes here).
+ Roles and groups are inherited from your existing products, so if you have specific roles and groups, you can manage those here. Selecting either of **Roles** or **Device groups** drops admins deeper into the **Permissions** section. New capabilities help you manage specific access. [Learn more about creating custom roles](custom-roles.md).
 
 :::image type="content" source="../../media/converged-add-role-7a.png" alt-text="Add the Role via the General tab, and then add users / groups to it on the Assigned user groups tab.":::
 
@@ -111,18 +110,6 @@ The cards fall into these categories:
 - **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
 
 
-## Office 365 Cloud App Security and other security integrations
-
-As admins and operations teams work, they will find other points where features from different security centers have merged. It's important to explore the portal to build familiarity and highlight any issues that can be reported by giving feedback on the home page. You can also quickly access self-help, and Microsoft for help, if assistance is called for. Click the question mark (?).
-
- If you use **Office 365 Cloud App Security**, you can use its features for discovering Shadow IT apps, controlling app permissions to Office 365, and more by going to **Policies & rules > Manage advanced alerts**.
-
-**Microsoft 365 security center** now shows analysis from Office 365 Cloud App Security in the new **Incidents & Alerts** section. Because this info is included in the converged analysis, it creates a more complete narrative for admins and operations teams.
-
-![Office 365 Cloud App Security page in the Microsoft 365 security center](../../media/converged-advanced-alerts-1.png)
-
-## User Page
-Us
 
 ## Send us your feedback
 We need your feedback. We're always looking to improve, so if there's something you'd like to see, [send us your Microsoft 365 Defender feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
