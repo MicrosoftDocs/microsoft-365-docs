@@ -58,9 +58,9 @@ Pending actions require approval before steps are taken to remediate detected en
 
 ![Investigation details](../../media/mtp-air-investdetails.png)
 
-1. On an [investigation details](mtp-autoir-results.md) page, select the **Pending actions** (or **Actions**) tab. Items that are pending approval are listed here.
-
-2. Select an item in the list, and then choose **Approve** or **Reject**.
+1. On an [investigation details](mtp-autoir-results.md) page, select the **Pending actions** tab. Items that are pending approval are listed here.
+2. Select an item in the list to open its flyout pane.
+3. In the flyout pane, choose **Approve** or **Reject**.
 
 ## Undo completed actions
 
@@ -73,21 +73,16 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 ### To undo a remediation action
 
 1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
-
 2. On the **History** tab, select an action that you want to undo.
-
 3. In the pane on the right side of the screen, select **Undo**.
 
 ### To remove a file from quarantine across multiple devices 
 
 1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
-
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
-
 3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
 
 ## Next steps
 
 - [View the details and results of an automated investigation](mtp-autoir-results.md)
-
 - [Learn how to handle false positives/negatives (if you get one)](mtp-autoir-report-false-positives-negatives.md)
