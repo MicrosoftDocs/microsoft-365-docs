@@ -64,7 +64,7 @@ There are parts of the service, like app deployment, which you manage where it m
     <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
     <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Learn more</a></td></tr>
     <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Learn more</a></td></tr>
-    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/get-started/teams#updates">Learn more</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">Learn more</a></td></tr>
 </table>
 
 >[!NOTE]
