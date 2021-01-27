@@ -1,5 +1,5 @@
 ---
-title: "Download perpetual software and product license keys"
+title: "Download perpetual software and product license keys bought through the Cloud Solution Provider (CSP) program"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
