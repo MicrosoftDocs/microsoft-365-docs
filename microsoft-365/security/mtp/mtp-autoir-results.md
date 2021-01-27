@@ -43,25 +43,31 @@ You can open the investigation details view by using one of the following method
 
 ### Select an item in the Action center
 
-The [Action center](mtp-action-center.md) ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together [remediation actions](mtp-remediation-actions.md) across your devices, email & collaboration content, and identities. In the Action center, you can view actions that are awaiting approval and actions that were already approved or completed.
+The improved [Action center](mtp-action-center.md) ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together [remediation actions](mtp-remediation-actions.md) across your devices, email & collaboration content, and identities. Listed actions include remediation actions that were taken automatically or manually. In the Action center, you can view actions that are awaiting approval and actions that were already approved or completed. You can also navigate to more details, such as an investigation page.
+
+> [!TIP]
+> You must have [certain permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve, reject, or undo actions.
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
-
 2. In the navigation pane, choose **Action center**. 
-
-3. On either the **Pending** or **History** tab, select an item. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can approve (or reject) pending actions.
+3. On either the **Pending** or **History** tab, select an item. Its flyout pane opens.
+4. Review the information in the flyout pane, and then take one of the following steps:
+   - Select **Open investigation page** to view more details about the investigation.
+   - Select **Approve** to initiate a pending action.
+   - Select **Reject** to prevent a pending action from being taken.
+   - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md).
 
 ### Open an investigation from an incident details page
 
 Use an incident details page to view detailed information about an incident, including alerts that were triggered information about any affected devices, user accounts, or mailboxes.
 
+![Incident details](../../media/mtp-incidentdetails-tabs.png)
+
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
-
-2. In the navigation pane, choose **Incidents**. 
-
-3. Select an item in the list to open the incident details view.<br/>![Incident details](../../media/mtp-incidentdetails-tabs.png)
-
-4. On the **Investigations** tab, select an investigation in the list.
+2. In the navigation pane, choose **Incidents & alerts** > **Incidents**. 
+3. Select an item in the list, and then choose **Open incident page**.
+4. Select the **Investigations** tab, and then select an investigation in the list. Its flyout pane opens.
+5. Select **Open investigation page**. 
 
 ## Investigation details
 
@@ -71,17 +77,21 @@ Use the investigation details view to see past, current, and pending activity pe
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
+> [!NOTE]
+> The specific tabs you see in an investigation details page depends on what your subscription includes. For example, if your subscription does not include Microsoft Defender for Office 365 Plan 2, you won't see a **Mailboxes** tab.
+
 | Tab | Description |
 |:--------|:--------|
-| **Investigation graph**	| Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, clicking the **Threats found** icon takes you to the **Key findings** tab. |
+| **Investigation graph**	| Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts. |
 | **Alerts**	| Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Cloud App Security, and other Microsoft 365 Defender features.|
-| **Devices** | Lists machines included in the investigation along with remediation level.|
+| **Devices** | Lists devices included in the investigation along with their remediation level. (Remediation levels correspond to [the automation level for device groups](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Mailboxes** |Lists mailboxes that are impacted by detected threats.  |
 | **Users**  | Lists user accounts that are impacted by detected threats. |
 | **Evidence** | Lists pieces of evidence raised by alerts/investigations. Includes verdicts (*Malicious*, *Suspicious*, or *No threats found*) and remediation status. |
-| **Entities**	| Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation, along with status and actions taken.|
-|**Log**	| Provides a detailed view of all steps taken during the investigation, along with status.|
-| **Pending actions** | Lists items that require approval to proceed.|
+| **Entities**	| Provides details about each analyzed entity, including a verdict for each 
+entity type (*Malicious*, *Suspicious*, or *No threats found*).|
+|**Log**	| Provides a chronological, detailed view of all the investigation actions taken after an alert was triggered.|
+| **Pending actions** | Lists items that require approval to proceed. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to approve pending actions. |
 
 ## Next steps
 
