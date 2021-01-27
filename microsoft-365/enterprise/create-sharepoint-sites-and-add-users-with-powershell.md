@@ -39,6 +39,9 @@ The PowerShell cmdlet imports the .csv file and pipes it to a loop inside the cu
 
 ### Create a .csv file
 
+> [!NOTE]
+> The resource quota parameter works only on classic sites. If you use this parameter on a modern site, you may receive a warning message that it has been deprecated. 
+
 1. Open Notepad, and paste the following text block into it:<br/>
 
 ```powershell
@@ -159,4 +162,3 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

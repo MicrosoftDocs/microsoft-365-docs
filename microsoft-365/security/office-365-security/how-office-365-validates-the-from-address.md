@@ -1,23 +1,25 @@
 ---
-title: "How EOP validates the From address to prevent phishing"
-f1.keywords:
-- NOCSH
+title: How EOP validates the From address to prevent phishing
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- OWC150
-- MET150
+search.appverid: 
+  - OWC150
+  - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about the types of email addresses that are accepted or rejected by Exchange Online Protection (EOP) and Outlook.com to help prevent phishing."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the types of email addresses that are accepted or rejected by Exchange Online Protection (EOP) and Outlook.com to help prevent phishing.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # How EOP validates the From address to prevent phishing
@@ -25,11 +27,11 @@ ms.custom: seo-marvel-apr2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November 2017.
+Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this article. This enforcement was enabled in November 2017.
 
 **Notes**:
 
-- If you regularly receive email from organizations that have malformed From addresses as described in this topic, encourage these organizations to update their email servers to comply with modern security standards.
+- If you regularly receive email from organizations that have malformed From addresses as described in this article, encourage these organizations to update their email servers to comply with modern security standards.
 
 - The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements. For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
@@ -39,7 +41,7 @@ A standard SMTP email message consists of a *message envelope* and message conte
 
 - The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message. This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address).
 
-- The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this topic.
+- The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this article.
 
 The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)). There are many variations on addressing and what's considered valid or invalid. To keep it simple, we recommend the following format and definitions:
 

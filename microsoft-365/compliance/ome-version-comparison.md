@@ -23,16 +23,12 @@ ms.custom: seo-marvel-apr2020
 
 This article compares legacy Office 365 Message Encryption (OME) to the new OME capabilities and Office 365 Advanced Message Encryption. The new capabilities are a merger and newer version of both OME and Information Rights Management (IRM). Unique characteristics of deploying into GCC High are also outlined. The two can coexist in your organization. For information on how the new capabilities work, see [Office 365 Message Encryption (OME)](ome.md).
 
-||
-|:-----|
-|This article is part of a larger series of articles about Office 365 Message Encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) and locate the article that best fits your needs. |
-||
+This article is part of a larger series of articles about Office 365 Message Encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) and locate the article that best fits your needs.
 
 ## Side-by-side comparison of features and capabilities
 
-|                                   |Old features       |                   |New features              |
+|           **Situation**           | **Legacy OME**    | **IRM**           | **New OME capabilities** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|**Capability**                     | **Legacy OME**    | **IRM**           | **New OME capabilities** |
 |*Sending an encrypted mail*        |Through Exchange mail flow rules|End-user initiated from Outlook desktop or Outlook on the Web; or through Exchange mail flow rules|End-user initiated from Outlook desktop, Outlook for Mac, or Outlook on the Web; through Exchange mail flow rules (also known as transport rules) and Data Loss Prevention (DLP)|
 |*Rights management template*       |   N/A      |Do Not Forward option and custom templates|Do Not Forward option, Encrypt-Only option, and custom templates|
 |*Recipient type*                   |Internal and external recipients|Internal recipients only         |Internal and external recipients|
@@ -70,21 +66,19 @@ For information on using Advanced Message Encryption, see [Office 365 Advanced M
 
 ## Unique characteristics of Office 365 Message Encryption in a GCC High deployment
 
-Office 365 Advanced Message Encryption is not available in a GCC High environment. You can still use and customize a single brand template in a GCC High environment.
+If you plan to use Office 365 Message Encryption in a GCC High environment, there are some unique characteristics regarding the recipient experience.
 
-In addition, if you plan to use Office 365 Message Encryption in a GCC High environment, there are some unique characteristics about the recipient experience.
-
-### Encrypted email from GCC High to GCC High recipients
+### Encrypted email between GCC High and GCC High recipients
 
 Senders can manually encrypt emails in Outlook for PC and Mac and Outlook on the web, or organizations can set up a policy to encrypt emails using Exchange mail flow rules.
 
 Recipients inside GCC High receive the same inline reading experience in Outlook for PC and Mac and Outlook on the web as all other users.
 
-### Encrypted email from GCC High to Non-GCC High recipients
+### Encrypted email between GCC High and Non-GCC High recipients
 
-Senders inside GCC High can send encrypted email outside of the GCC High boundary.
+Senders inside GCC High can send encrypted email outside of the GCC High boundary and vice versa.
 
-All recipients outside GCC High, including commercial Microsoft 365 users, Outlook.com users, and other users of other email providers such as Gmail and Yahoo, receive a wrapper mail. This wrapper mail redirects the recipient to the OME Portal where the recipient can read and reply to message.
+All recipients outside GCC High, including commercial Microsoft 365 users, Outlook.com users, and other users of other email providers such as Gmail and Yahoo, receive a wrapper mail. This wrapper mail redirects the recipient to the OME Portal where the recipient can read and reply to the message. This is also true for senders outside GCC High sending OME encrypted mail to GCC High.
 
 ## Coexistence of legacy OME and the new capabilities in the same tenant
 

@@ -3,21 +3,26 @@ title: "Create a form processing model"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
+localization_priority: Priority
 description: "Create a form processing model in Microsoft SharePoint Syntex."
 ---
 
 # Create a form processing model in Microsoft SharePoint Syntex
 
-The content in this article is for the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+</br>
 
-Using [AI Builder](https://docs.microsoft.com/ai-builder/overview) - a feature in Microsoft PowerApps - Project Cortex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
+
+Using [AI Builder](https://docs.microsoft.com/ai-builder/overview) - a feature in Microsoft PowerApps - SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 
 Creating a form processing model involves the following:
  - Step 1: Create the from processing model to create the content type
@@ -33,7 +38,7 @@ You can only create a form processing model in SharePoint document libraries for
 
  ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model.png)</br>
 
-## Step 1: Create a form Processing model
+## Step 1: Create a form processing model
 
 The first step in creating a form processing model is to name it and create the define the new content type and create a new document library view for it.
 
@@ -138,5 +143,6 @@ After publishing your model and creating it's PowerAutomate flow, you can use yo
 
 ## See Also
   
-[Power Automate documentation](https://docs.microsoft.com/power-automate/)</br>
-[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
+[Power Automate documentation](https://docs.microsoft.com/power-automate/)
+
+[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

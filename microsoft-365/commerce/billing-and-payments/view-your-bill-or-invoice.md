@@ -18,7 +18,7 @@ ms.collection:
 - commerce
 ms.custom:
 - TopSMBIssues
-- okr_SMB
+- okr_smb
 - BCS160
 - MET150
 - MOE150

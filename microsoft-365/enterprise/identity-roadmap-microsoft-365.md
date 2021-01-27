@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
+- m365initiative-coredeploy
 ms.custom:
 description: The roadmap to identity for Microsoft 365.
 ---
@@ -21,7 +22,7 @@ description: The roadmap to identity for Microsoft 365.
 
 In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security, including restricting access to your productivity workloads and their data to only authenticated users and devices.
 
-For an overview of identity models and authentication for Microsoft 365 for enterprise, watch this video:
+For an overview of identity models and authentication for Microsoft 365 for enterprise, watch this video.
 
 <p> </p>
 
@@ -33,7 +34,7 @@ For information about the identity features of each Microsoft 365 for enterprise
 
 Review this two-page poster to quickly ramp up on identity concepts and configurations for Microsoft 365 for enterprise.
 
-You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf). You can print it in letter, legal, or tabloid (11 x 17) format.
+You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) and can print it in letter, legal, or tabloid (11 x 17) format.
 
 ## Plan
 
@@ -54,17 +55,21 @@ To deploy your identity implementation:
 
 ### Identity and device access recommendations
 
-To help ensure a secure and productive workforce, Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md). For identity, use the recommendations and settings in these articles:
+To help ensure a secure and productive workforce, Microsoft provides a set of recommendations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md). For identity, use the recommendations and settings in these articles:
 
-- [Prerequisites](identity-access-prerequisites.md)
-- [Common identity and device access policies](identity-access-policies.md)
+- [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
+- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 
 ## Manage
 
-To manage your identity implementation:
+To manage your Microsoft 365 identity deployment, see:
 
-- [Assign licenses and manage user accounts](assign-licenses-to-user-accounts.md)
-- [Monitor directory synchronization](view-directory-synchronization-status.md)
+- [User accounts](manage-microsoft-365-accounts.md)
+- [Licenses](assign-licenses-to-user-accounts.md)
+- [Passwords](manage-microsoft-365-passwords.md)
+- [Groups](manage-microsoft-365-groups.md)
+- [Governance](manage-microsoft-365-identity-governance.md)
+- [Directory synchronization](view-directory-synchronization-status.md)
 
 ## How Microsoft does identity for Microsoft 365
 

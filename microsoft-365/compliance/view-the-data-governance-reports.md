@@ -32,7 +32,7 @@ After you create your labels, you'll want to verify that they're being applied t
     
 All these reports show labeled content from Exchange, SharePoint, and OneDrive for Business.
   
-You can find these reports in the Security &amp; Compliance Center \> **Information governance** \> **Dashboard**.
+You can find these reports in the Security &amp; Compliance Center \> **Information governance** \> [**Dashboard**](https://protection.office.com/datamanagement/dashboard).
   
 ![Chart showing label trends over past 90 days](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   

@@ -1,26 +1,28 @@
 ---
 title: Protect on-premises mailboxes in China with standalone EOP
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- GEU150
-- GMA150
-- GPA150
-- MET150
+search.appverid: 
+  - GEU150
+  - GMA150
+  - GPA150
+  - MET150
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins in China using Office 365 operated by 21Vianet can learn how to use standalone Exchange Online Protection (EOP) to protect their on-premises mailboxes."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins in China using Office 365 operated by 21Vianet can learn how to use standalone Exchange Online Protection (EOP) to protect their on-premises mailboxes.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Protect on-premises mailboxes in China with standalone EOP
@@ -31,7 +33,7 @@ description: "Admins in China using Office 365 operated by 21Vianet can learn ho
 > [!NOTE]
 > This article applies only to Office 365 operated by 21Vianet in China.
 
-Even if you plan to host some or all of your mailboxes on-premises, you can still protect the mailboxes with Exchange Online Protection (EOP). To configure connectors, your account must be a global admin, or an Exchange Company Administrator (the Organization Management role group). For information about how Office 365 permissions relate to Exchange permissions, see [Assigning admin roles in Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet). If all of your Exchange mailboxes are on-premise, follow these steps to set up your EOP service.
+Even if you plan to host some or all of your mailboxes on-premises, you can still protect the mailboxes with Exchange Online Protection (EOP). To configure connectors, your account must be a global admin, or an Exchange Company Administrator (the Organization Management role group). For information about how Office 365 permissions relate to Exchange permissions, see [Assigning admin roles in Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet&preserve-view=true). If all of your Exchange mailboxes are on-premise, follow these steps to set up your EOP service.
 
 ## Step 1: Use the Microsoft 365 admin center to add and verify your domain
 
@@ -40,7 +42,7 @@ Even if you plan to host some or all of your mailboxes on-premises, you can stil
 2. Follow the steps in the portal to add the applicable DNS records to your DNS-hosting provider in order to verify domain ownership.
 
 > [!TIP]
-> [Add your domain and users to Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) and [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) are helpful resources to reference as you add your domain to the service and configure DNS.
+> [Add your domain and users to Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet&preserve-view=true) and [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet&preserve-view=true) are helpful resources to reference as you add your domain to the service and configure DNS.
 
 ### Step 2: Add recipients and configure the domain type
 

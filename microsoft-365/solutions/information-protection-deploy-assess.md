@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: 
 description: Determine the data privacy regulations, the relevant scenarios, your readiness, and the sensitive information types that are in your Microsoft 365 environment.
 ---
@@ -206,7 +207,7 @@ You can also customize an existing, built-in sensitive information type.
 See these articles for more information:
 
 - [Customize a built-in sensitive information type](../compliance/customize-a-built-in-sensitive-information-type.md)
-- [Custom sensitive information types](../compliance/custom-sensitive-info-types.md)
+- [Learn about sensitive information types](../compliance/sensitive-information-type-learn-about.md)
 - [Create a custom sensitive information type in the Security & Compliance Center](../compliance/create-a-custom-sensitive-information-type.md)
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Create custom sensitive information types with Exact Data Match based classification](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
@@ -226,3 +227,7 @@ In addition to the Content Explorer, organizations have access to the Content Se
 Detailed guidance on the use of Content Search for discovery of personal data is provided in [this article](../compliance/search-for-and-find-personal-data.md). Content Search and other discovery techniques are also explored in [DSRs for the GDPR and CCPA](../compliance/gdpr-dsr-office365.md#introduction-to-dsrs).
 
 Additional insights on investigative and remediation techniques for personal data in Microsoft 365 are provided in the [monitor and respond article](information-protection-deploy-monitor-respond.md).
+
+> [!NOTE]
+> To Find what sensitive information you have in files stored on-premises, please refer to [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo).
+

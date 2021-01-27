@@ -35,8 +35,8 @@ Microsoft 365 for Campaigns makes it much harder for hackers to gain access to y
 ## Use secure email practices
 All users should be aware of and use these email practices to help keep their email secure:
 - Set up email to use multi-factor authentication with the authenticator app.
-- Verify legitimate emails and look for safety tips from ATP Advanced Phishing Protection.
-- Open only safe links and attachments, as verified by ATP Safe Links and ATP Safe Attachments.
+- Verify legitimate emails and look for safety tips from Advanced Phishing in Defender for Office 365 Protection.
+- Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
 
 Learn more about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md). 
 

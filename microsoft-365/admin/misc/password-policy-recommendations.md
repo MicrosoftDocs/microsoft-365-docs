@@ -12,7 +12,9 @@ localization_priority: Priority
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -97,7 +99,7 @@ In contrast, here are some recommendations in encouraging password diversity.
   
 ### Ban common passwords
 
-The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abdcefg**, **password**, **monkey**.
+The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abcdefg**, **password**, **monkey**.
   
 ### Educate users to not re-use organization passwords anywhere else
 

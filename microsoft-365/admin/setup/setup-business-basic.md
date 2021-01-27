@@ -3,8 +3,8 @@ title: "Set up Microsoft 365 Business Basic"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
-author: sirkkuw
-manager: mnirkhe
+author: Sirkkuw
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration

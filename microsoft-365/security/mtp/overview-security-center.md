@@ -1,26 +1,31 @@
 ---
-title: Overview of the Microsoft 365 security center
-description: Describes the new home for monitoring and managing security across your Microsoft identities, data, devices, and apps.
+title: Overview - Microsoft 365 security center
+description: Describes monitoring and managing security across your Microsoft identities, data, devices, and apps with Microsoft 365 security.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
+ms.custom: seo-marvel-jun2020
+ms.technology: m365d
 ---
 
 # Overview of the Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+>
 Managing the security of your business to protect against an ever-evolving threat landscape brings many challenges. You might have too many security solutions with various places to configure lots of controls. You may struggle with knowing which controls are the most effective and which will introduce new challenges for your workforce. It can be difficult for security teams to find the right balance of security and productivity.
 
 Enter Microsoft 365 security center - the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is intended to help security admins and security operations teams manage and protect their organization.
@@ -34,18 +39,26 @@ Visit the Microsoft 365 security center at [https://security.microsoft.com](http
 > [!NOTE]
 > You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center.
 
-
-## Let's take a closer look
+## At-a-glance view of your Microsoft 365 environment
 
 The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
 This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
 
+Loosely, the cards fall into these categories:
+
+- **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Data** - Help track user activity that could lead to unauthorized data disclosure.
+- **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
+- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+
+## Explore what the security center has to offer
+
 The Microsoft 365 security center includes:
 
 * **Home** – Get at-a-glance view of the overall security health of your organization.
 * **Incidents** - See the broader story of an attack by connecting the dots seen on individual alerts on entities. You'll know exactly where an attack started, what devices are impacted, who was affected, and where the threat has gone.
-* **Alerts** – Have greater visibility into all the alerts across your Microsoft 365 environment. Includes alerts from Microsoft Cloud App Security, Office 365 ATP, Azure Active Directory, Azure ATP, and Microsoft Defender ATP. Available to E3 and E5 customers.  
+* **Alerts** – Have greater visibility into all the alerts across your Microsoft 365 environment. Includes alerts from Microsoft Cloud App Security, Microsoft Defender for Office 365, Azure Active Directory, Microsoft Defender for Identity, and Microsoft Defender for Endpoint. Available to E3 and E5 customers.  
 * **Action center** - Reduce the volume of alerts your security team must address manually, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives.
 * **Reports** – Get the detail and information you need to better protect your users, devices, apps, and more.
 * **Secure score** – Improve your overall security posture with Microsoft Secure Score. This page provides an all up summary of the different security features and capabilities you've enabled and includes recommendations for areas to improve.
