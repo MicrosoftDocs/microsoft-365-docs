@@ -125,8 +125,11 @@ View reports, change your settings, and modify user roles.
 
 ![The Access and Reporting quicklaunch bar](../../media/converge-4-access-and-reporting-new.png)
 
-### SIEM and API connection
-TBD
+### SIEM/API connections
+If you use the [Defender for Endpoint SIEM API](windows/security/threat-protection/microsoft-defender-atp/enable-siem-integration.md) you can continue to do so. We've added new links on the emails that point to the alert page or the incident page in the Microsoft 365 security center portal. New API fields include LinkToMTP and IncidentLinkToMTP.  
+
+### Email alerts
+You can continue to use email alerts for Defender for Endpoint. We've added new links in the emails that point to the alert page or the incident page in the Microsoft 365 security center. 
 
 ## Related information
 

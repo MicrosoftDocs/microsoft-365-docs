@@ -22,7 +22,19 @@ search.appverid:
 ms.technology: m365d
 ---
 # Custom roles in role-based access control
-In addition to [global roles in Azure Active Directory (AAD)](mtp-permissions.md), access to Microsoft Defender 365 can now be managed through the creation of custom role-based access (RBAC) roles. Custom roles allow admins to manage permissions according to specific workloads within Microsoft 365 Defender, with the ability to assign dedicated teams per product. 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
+
+**Applies to:**
+
+- Microsoft 365 Defender
+ 
+You can manage role-based access to Microsoft 365 Defender using either [global roles in Azure Active Directory (AAD)](mtp-permissions.md), or through creation of custom role-based access (RBAC) roles. 
+Custom roles allow admins to manage permissions according to specific workloads within Microsoft 365 Defender, with the ability to assign dedicated teams per product. 
+
+>![NOTE] you can create custom RBAC roles for Defender for Office and Defender for Endpoint. Microsoft Cloud App Security and Defender for Identity requires setting roles in their respective portals.]
 
 By allowing admins to manage access to specific data, tasks, and capabilities in Microsoft Defender 365, custom roles offer more fine-grained control than global Azure AD roles do, to grant users only the level of access they need with the least-permissive roles necessary.
 
@@ -60,4 +72,6 @@ Roles defined in the table below refer to custom roles in individual portals and
 | Managing alerts and incidents | Alerts investigation | <ul><li>Manage alerts</li> <li>Security admin</li> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li></ul> |
 | Action center remediation | Active remediation actions – security operations | Search and purge | |
 | Setting custom detections | Manage security settings |<ul><li>Manage alerts</li> <li>Security admin</li></ul> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul> |
+| Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>TVM mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only Manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for MCAS or MDI users |
+
 

@@ -21,6 +21,15 @@ ms.custom: seo-marvel-jun2020
 ms.technology: m365d
 ---
 # Investigate users in Microsoft 365 security center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
+
+**Applies to:**
+
+- Microsoft 365 Defender
+
 As part of your investigation, you might find that a user has been compromised.
 
 The Microsoft 365 security center user page combines information from Defender for Endpoint, Defender for Identity, and MCAS (depending on what licenses you have). This page is the ideal starting place for investigating users and potential incidents.
