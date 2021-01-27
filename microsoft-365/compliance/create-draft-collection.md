@@ -87,19 +87,24 @@ During the draft collection process, Advanced eDiscovery performs a search estim
 
 - **Preview status**: Indicates the status of the sample items that you can preview. A value of **Successful** indicates the items are ready for preview. After you first submit a draft collection, a value of **In progress** is displayed to indicate that the collection is still running.
 
-## Next steps after draft collection is complete
+## Next steps after a draft collection is complete
 
 After the draft collection is successfully completed, you can perform various tasks. To perform most of these tasks, just go the **Collections** tab and click the name of the draft collection to display the flyout page.
 
+![Flyout page for a draft collection](../media/DraftCollectionFlyoutPage.png)
+
 Here's a list of things you can do from the collection flyout page:
 
-- Select the **Summary** tab to view summary information about the collection and the estimated search results returned by the collection. This includes that total number of items and size of the estimated search results, the number of mailboxes and sites that were searched, and the search conditions (if used) used to scope the collection. 
+- Select the **Summary** tab to view summary information about the collection and the estimated search results returned by the collection. This includes that total number of items and size of the estimated search results, the number of mailboxes and sites contained search results, and the search conditions (if used) used to scope the collection.
 
-- Select the **Data sources** tab to view a list of all data sources (custodians, non-custodial, and additional data sources) that were searched in the collection.
+- Select the **Data sources** tab to view a list of custodians and non-custodial data sources) that were searched in the collection. Any additional content locations that were search are listed under **Locations** on the **Summary** tab.
 
 - Select the **Search statistics** tab to view statistics about the collection. This includes the total number and size of items found in each service (for example, Exchange mailboxes or SharePoint sites) and a condition report that displays statistics about the number of items returned by different components of the search query used by the collection. For more information, see [Collection statistics and reports](collection-statistics-reports.md).
 
 - Click **Review sample** (located at the bottom of the flyout page) to preview a sample of the items returned by the collection.
 
-- Commit the draft collection to a review set. This means that you rerun the search (using the current settings for the draft collection) and the items returned by the collection are added to a review. As previously explained, you can also configure additional settings (such as conversation threading and cloud-based attachments) when you add the collection to a review set. For more information and step-by-step instructions, see [Commit a draft collection to a review set](commit-draft-collection.md).
+- Commit the draft collection to a review set (by clicking **Actions** > **Edit collection**). This means that you rerun the search (using the current settings for the draft collection) and the items returned by the collection are added to a review. As previously explained, you can also configure additional settings (such as conversation threading and cloud-based attachments) when you add the collection to a review set. For more information and step-by-step instructions, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
+## Manage a draft collection
+
+![Options on Actions menu for draft collection](../media/DraftCollectionActionsMenu.png)
