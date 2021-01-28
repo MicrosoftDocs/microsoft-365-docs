@@ -2,25 +2,24 @@
 title: Automated investigation and response in Microsoft Defender for Office 365
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 01/21/2021
-
+ms.date: 01/28/2021
 localization_priority: Normal
 search.appverid: 
-  - MET150
-  - MOE150
+- MET150
+- MOE150
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-defender-office365
+- M365-security-compliance
+- m365initiative-defender-office365
 description: Get started using automated investigation and response capabilities in Microsoft Defender for Office 365.
 ms.custom: 
-  - air
-  - seo-marvel-mar2020
+- air
+- seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
