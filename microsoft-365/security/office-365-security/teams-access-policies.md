@@ -3,22 +3,22 @@ title: Recommended Teams policies - Microsoft 365 for enterprise | Microsoft Doc
 description: Describes the policies for Microsoft recommendations about how to secure Teams communication and file access.
 author: MicrosoftHeidi
 manager: serdars
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: heidip
 ms.date: 09/30/2020
 ms.reviewer: anmorgan
 ms.custom: 
-- it-pro
-- goldenconfig
+  - it-pro
+  - goldenconfig
 ms.collection: 
-- M365-identity-device-management
-- M365-security-compliance
-- m365solution-identitydevice
-- m365solution-scenario
-
+  - M365-identity-device-management
+  - M365-security-compliance
+  - m365solution-identitydevice
+  - m365solution-scenario
+ms.technology: mdo
 ---
 
 # Policy recommendations for securing Teams chats, groups, and files

@@ -45,13 +45,12 @@ The following table lists the important terms that you see in the **Billing acco
 | Billing profiles | A billing profile defines properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and a PO number. To distribute billing across your organization, you can create multiple billing profiles and identify the appropriate billing profile at the time of purchase. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, [Manage billing profiles](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> If you want to change the **Sold-to** name or address, but don't see an **Edit** link, you must  [contact support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) to change it. Requests for a **Sold-to** name change will require a credit check. When you contact support, have one of the following documents ready:
+> If you want to change the **Sold-to** name or address, but don't see an **Edit** link, you must  [contact support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) to change it. Requests for a **Sold-to** name change will require a credit check. Be ready to share one of following documents with Microsoft when you contact Support: 
 >
-> - External announcement document that indicates any change in the company's name or corporate structure
 > - Government issued document or registration letter
 > - Print out of the local company's registry
 >
-> Support can help with name and address changes where only the customer name changes, but the entity remains the same. Documentation provided should clearly indicate that only the entity's name has changed. If the change is related to any transaction, like a sale of business, or a divestiture or "spinoff" of a Customer Affiliate, please contact your Microsoft Seller.
+> Support can help with name and address changes where only the customer name changes, but the entity remains the same. Documentation provided should clearly show that only the entity's name has changed. If the change is the result of a transaction, including the sale of business, a change of controls, or a divestiture or "spinoff" of a Customer Affiliate, please contact your Microsoft Seller.
 
 ## Shipping addresses
 
