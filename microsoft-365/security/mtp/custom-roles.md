@@ -31,16 +31,20 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
  
-There are two ways to manage access to Microsoft 365 Defender
-- **Global Azure Active Directory (AD) roles**
+There are two roles that can be used to access to Microsoft 365 Defender:
+- **Global Azure Active Directory (AD) roles** 
 - **Custom role access**
-The five You can continue to manage access to Microsoft 365 Defender using existing [global roles in Azure Active Directory (AAD)](mtp-permissions.md). But the disadvantage of this is that global Azure AD roles might be more access than what's needed for your users. With custom role-based access (RBAC) roles, you can tailor specific access for specific roles. Custom roles allow admins to manage permissions according to specific workloads within Microsoft 365 Defender, with the ability to assign dedicated teams per product.
 
->![NOTE] you can create custom RBAC roles for Defender for Office and Defender for Endpoint. However, Microsoft Cloud App Security and Defender for Identity requires setting roles in their respective portals.]
 
-By allowing admins to manage access to specific data, tasks, and capabilities in Microsoft Defender 365, custom roles offer more fine-grained control than global Azure AD roles do, to grant users only the level of access they need with the least-permissive roles necessary.
+You can continue to manage access to Microsoft 365 Defender using existing [Global roles in Azure Active Directory (AAD)](mtp-permissions.md). But the disadvantage of this is that users with Global admin Azure AD roles might have more access than what's needed for your users. 
 
-Custom roles are managed per individual workload and control access to workload data within the Microsoft 365 security center. For example, permissions granted through Microsoft Defender for **Endpoint** will allow a user to access Endpoint data in the Microsoft 365 security center. Permissions granted through Defender for Office 365 allows access to the corresponding **Email & collaboration** data in the Microsoft 365 security center.
+With custom role-based access (RBAC) roles, you can tailor specific access for specific roles. Custom roles allow admins to manage permissions according to specific workloads within Microsoft 365 Defender, with the ability to assign dedicated teams for each product. 
+
+>![NOTE] You can create custom RBAC roles for Defender for Office and Defender for Endpoint. However, Microsoft Cloud App Security and Defender for Identity requires setting roles in their respective portals.
+
+Admins can manage user access to specific data, tasks, and capabilities in Microsoft 365 Defender with custom roles. Users are assigned with the least-permissive role necessary and only with the level of access that is required for their role.
+
+Custom roles are managed for each individual workload and control access to workload data within the Microsoft 365 security center. For example, permissions granted through Microsoft Defender for **Endpoint** will allow a user to access Endpoint data in the Microsoft 365 security center. Permissions granted through Defender for Office 365 allows access to the corresponding **Email & collaboration** data in the Microsoft 365 security center.
 
 >![NOTE] If you've set up roles for Defender for Endpoint or Defender for Office 365, these access settings will be available in Microsoft 365 Defender.
 
@@ -54,7 +58,7 @@ Custom roles and permissions can be created and individually managed through eac
 Each custom role created through an individual portal allows access to the data of the relevant product portal. For example, a custom role created through Microsoft Defender for Endpoint will only allow access to Defender for Endpoint data. 
 
 > [!NOTE]
-> Custom roles created in Microsoft Cloud App Security have access to Microsoft Defender for Identity data as well. Users with User group admin, or App/instance admin MCAS roles are not able to access MCAS data through the Microsoft 365 security center.
+> Custom roles created in Microsoft Cloud App Security have access to Microsoft Defender for Identity data as well. Users with User group admin, or App/instance admin Microsoft Cloud App Security roles are not able to access Microsoft Cloud App Security data through the Microsoft 365 security center.
 
 ## Manage permissions and roles in the Microsoft 365 security center
 Permissions and roles can also be managed in the Microsoft 365 security center:
