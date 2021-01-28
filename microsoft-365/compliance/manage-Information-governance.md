@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Information Governance in Microsoft 365"
+title: "Microsoft Application and Protection Governance in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: josephd
+author: Josephd-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -13,35 +13,36 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Implement Microsoft Information Governance capabilities to govern your data for compliance or regulatory requirements."
+description: "Implement Microsoft Application and Protection Governance capabilities to govern your apps."
 ---
 
-# Microsoft Information Governance in Microsoft 365
+# Microsoft Application and Protection Governance in Microsoft 365
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
-
-Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities to govern your data for compliance or regulatory requirements.
-
-![Govern your data - information governance and records management](../media/information-governance-records-management.png)
-
-Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](information-protection.md).
-
-## Information governance
-
-To keep what you need and delete what you don't:
  
-|Capability|What problems does it solve?|Get started|
-|:------|:------------|:--------------------|:-----------------------------|
-|[Retention policies and retention labels](retention.md)| Retain or delete content with policy management and a deletion workflow for email, documents, instant messages, and more <br /><br />Example scenario: [Apply a retention label to content automatically](apply-retention-labels-automatically.md) | [Get started with retention policies and retention labels](get-started-with-retention.md)|
-|[Import service](importing-pst-files-to-office-365.md)| Bulk-import PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements | [Use network upload to import your organization's PST files to Microsoft 365](use-network-upload-to-import-pst-files.md)|
-|[Archive third-party data](archiving-third-party-data.md)| Import, archive, and apply compliance solutions to third-party data from social media platforms, instant messaging platforms, and document collaboration platforms| [Third-party connectors](archiving-third-party-data.md#third-party-data-connectors)|
-|[Inactive mailboxes](inactive-mailboxes-in-office-365.md)| Retain mailbox content after employees leave the organization | [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
+Microsoft Application Protection and Governance (MAPG) is a solution for Microsoft 365 applications that provides you with comprehensive: 
 
-## Records management
+- **Insights**: See a view of all of your Microsoft 365 applications in your tenant in a single dashboard. You can see all the applications’ activities and react or respond to them.
+- **Governance**: Create proactive or reactive policies for application and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting access to data through risky apps.
+- **Detection**: Be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used. 
+- **Remediation**: Along with automatic remediation capabilities, use remediation tools and controls in a timely manner to respond to anomalous app activity detections.
 
-To manage high-value content for legal, business, or regulatory obligations:
+Unlike other application governance products in the marketplace, MAPG is a platform-based solution that is an integral part of the Microsoft 365 app ecosystem. Today, Microsoft allows developers to build cloud applications using Azure AD, Microsoft’s cloud identity platform, and other resources and access to tenant data through the Microsoft Graph. With MAPG, developers can build high-quality productivity apps that are secure and compliant.
 
-|Capability|What problems does it solve?|Get started|
-|:------|:------------|---------------------|:----------------------------|
-|[Records management](records-management.md)| A single solution for email and documents that incorporates retention schedules and requirements into a file plan that supports the full lifecycle of your content with records declaration, retention, and disposition <br /><br />Example scenario: [Disposition of records](disposition.md#disposition-of-records)|[Get started with records management](get-started-with-records-management.md) |
+With MAPG, Microsoft 365 provides a comprehensive level of protection from malicious actors that use apps to access your tenant data:
 
+- App access and restrictions based on user and device identity
+
+  With Azure AD and Intune, you can configure identity and device access policies to enforce secure sign-ins and to allow and restrict app access. With Azure AD Identity Protection, you can monitor user and device access and respond to anomalous behavior.
+
+- User activity within apps
+
+  With Microsoft Cloud App Security, you can monitor user activity and respond to anomalous behavior.
+
+- App activity within a Microsoft 365 tenant
+ 
+  With MAPG, you can monitor what apps are doing and respond to anomalous behavior.
+
+This figure shows the three levels of protection and governance for apps in Microsoft 365 with MAPG.
+
+![The three levels of protection and governance for apps in Microsoft 365](../media/manage-Information-governance/three-levels-for-apps.png)
