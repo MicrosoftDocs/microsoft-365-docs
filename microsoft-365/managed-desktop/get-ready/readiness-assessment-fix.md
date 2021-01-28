@@ -21,7 +21,7 @@ For each check, the tool will report one of four possible results:
 |Ready     | No action is required before completing enrollment.        |
 |Advisory    | Follow the steps in the tool or this article for the best experience with enrollment and for users. You *can* complete enrollment, but you must fix these issues before you deploy your first device.        |
 |Not ready | *Enrollment will fail if you don't fix these issues.* Follow the steps in the tool or this article to resolve them.        |
-|Error | The Azure Active Director (AD) role you're using doesn't have sufficient permission to run this check. |
+|Error | The Azure Active Directory (AD) role you're using doesn't have sufficient permission to run this check. |
 
 > [!NOTE]
 > The results reported by this tool reflect the status of your settings only at the specific point in time that you ran it. If you later make any changes to policies in Microsoft Intune, Azure Active Directory, or Microsoft 365, items that were "Ready" can become "Not ready." To avoid problems with Microsoft Managed Desktop operations, check the specific settings described in this article before you change any policies.
@@ -65,15 +65,15 @@ You have at least one certificate connector and no errors are reported. However,
 
 ### Conditional access policies
 
-Conditional access policies in your Azure AD organization must not prevent Microsoft Managed Desktop from managing your tenant in Intune and Azure AD.
+Conditional access policies must not prevent Microsoft Managed Desktop from managing your Azure AD organization (tenant) in Intune and Azure AD.
 
 **Not ready**
 
-You have at least one conditional access policy that targets all users. During Microsoft Managed Desktop enrollment, Microsoft Managed Desktop will modify conditional access policies that prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. After enrollment, you can review the Microsoft Managed Desktop conditional access policy in Microsoft Endpoint Manager. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
+You have at least one conditional access policy that targets all users. During enrollment, we will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply new conditional access policies to restrict access to these accounts. After enrollment, you can review the Microsoft Managed Desktop conditional access policy in Microsoft Endpoint Manager. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Advisory**
 
-You have conditional access policies that may prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
+You have conditional access policies that could prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, we will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply new conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Error**
 
@@ -145,16 +145,16 @@ Microsoft Store for Business either isn't enabled or isn't synced with Intune. F
 
 ### Multifactor authentication
 
-Multifactor authentication must not prevent Microsoft Managed Desktop from managing your tenant in Intune and Azure AD.
+Multifactor authentication must not prevent Microsoft Managed Desktop from managing your Azure AD organization (tenant) in Intune and Azure AD.
 
 
 **Not ready**
 
-You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. At Microsoft Managed Desktop enrollment, Microsoft Managed Desktop will modify conditional access policies that prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
+You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. During enrollment, we will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply new conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Advisory**
 
-You have multifactor authentication required on conditional access policies that may prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
+You have multifactor authentication required on conditional access policies that could prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, we will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply new conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Error**
 
