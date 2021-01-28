@@ -86,16 +86,16 @@ EDR alerts are raised for [devices onboarded to Microsoft Defender for Endpoint]
 Like the list of antivirus detections, some EDR alerts are designed to generically flag suspicious behavior that might not be associated with the tracked threat. In such cases, the report will clearly identify the alert as "generic" and that it doesn't influence any of the charts in the report.
 
 ### Email related detections and mitigations
-Email-related detections and mitigations from Microsoft Defender for Office 365, are included in threat analytics reports in addition to the endpoint data already available from Microsoft Defender for Endpoint. 
+Email-related detections and mitigations from Microsoft Defender for Office 365, are included in analyst reports in addition to the endpoint data already available from Microsoft Defender for Endpoint. 
 
-Prevented email attempt information gives you insights on whether your organization were a target of the threat tackled in the analytics report even if the attack has been effectively prevented from reaching your inbox.
+Prevented email attempt information gives you insights on whether your organization were a target of the threat tackled in the analyst report even if the attack has been effectively prevented from reaching your inbox.
 
 ## Find subtle threat artifacts using advanced hunting
 While detections allow you to identify and stop the tracked threat automatically, many attack activities leave subtle traces that require additional inspection. Some attack activities exhibit behaviors that can also be normal, so detecting them dynamically can result in operational noise or even false positives.
 
 [Advanced hunting](advanced-hunting-overview.md) provides a query interface based on Kusto Query Language that simplifies locating subtle indicators of threat activity. It also allows you to surface contextual information and verify whether indicators are connected to a threat.
 
-Advanced hunting queries in the analyst reports have been vetted by Microsoft analysts and are ready for you to run in the [advanced hunting query editor](https://securitycenter.windows.com/advanced-hunting). You can also use the queries to create [custom detection rules](custom-detection-rules.md) that trigger alerts for future matches.
+Advanced hunting queries in the analyst reports have been vetted by Microsoft analysts and are ready for you to run in the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). You can also use the queries to create [custom detection rules](custom-detection-rules.md) that trigger alerts for future matches.
 
 
 >[!NOTE]
