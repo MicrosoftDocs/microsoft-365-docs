@@ -150,7 +150,7 @@ Multifactor authentication must not prevent Microsoft Managed Desktop from manag
 
 **Not ready**
 
-You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. At Microsoft Managed Desktop enrollment, Microsoft Managed Desktop will modify conditional access policies that prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service.  During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
+You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. At Microsoft Managed Desktop enrollment, Microsoft Managed Desktop will modify conditional access policies that prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, Microsoft Managed Desktop will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply Microsoft Managed Desktop managed conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Advisory**
 
@@ -334,4 +334,3 @@ The **Allow syncing only on PCs joined to specific domains** setting will confli
 **Advisory**
 
 You're using the **Allow syncing only on PCs joined to specific domains** setting. This setting won't work with Microsoft Managed Desktop. Disable this setting, and instead set up OneDrive to use a conditional access policy. See [Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) for help.
-
