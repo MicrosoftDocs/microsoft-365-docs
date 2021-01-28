@@ -1,6 +1,6 @@
 ---
-title: Overview - Microsoft 365 security center
-description: Advantages in the Microsoft 365 security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE), with elements of Microsoft Defender for Identity (MDI) and Microsoft Cloud App Security (MCAS). This article outlines Microsoft 365 security center advances for administrators.
+title: Microsoft 365 security center overview
+description: Advantages in the Microsoft 365 security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE), with Microsoft Defender for Identity (MDI) and Microsoft Cloud App Security (MCAS). This article outlines Microsoft 365 security center advances for administrators.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 01/12/2021
+ms.date: 
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
@@ -116,10 +116,10 @@ This at-a-glance information helps you keep up with the latest activities in you
 
 The cards fall into these categories:
 
-- **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 - **Data** - Help track user activity that could lead to unauthorized data disclosure.
 - **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
-- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).
 
 ## Send us your feedback
 We need your feedback. We're always looking to improve, so if there's something you'd like to see, [send us your Microsoft 365 Defender feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
@@ -128,11 +128,12 @@ We need your feedback. We're always looking to improve, so if there's something 
 
 Keep exploring the features and capabilities in the Microsoft 365 security center:
 
+- [Manage incidents and alerts](security\mtp\manage-incidents.md)
+- [Track and respond to emerging threats with threat analytics](\microsoft-365-docs-pr\microsoft-365\security\mtp\threat-analytics.md)
 - [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-- [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
 - [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
 - [Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
-- [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) and [create a payload for training your teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)- [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) and [create a payload for training your teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
 ## Related information
 - [Microsoft 365 security center](overview-security-center.md)

@@ -43,9 +43,10 @@ This table is a quick reference of Email & Collaboration areas where change has 
 
 |**Area**  |**Description of change**  |
 |---------|---------|
-[Attack Simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights)   | Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.  |
-|[Investigation](/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center) | Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) and [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.  | 
-| [Alert view](/microsoft-365/compliance/alert-policies) | The **View alerts** flyout pane in the Office Security and Compliance center now includes links to the Microsoft 365 security center. Click on the **Open Alert Page** link and the Microsoft 365 security center opens.
+| [Threat Explorer] | TBD
+| [Investigation](/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center) | Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) and [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.  | 
+| [Alert view](/microsoft-365/compliance/alert-policies) | The **View alerts** flyout pane in the Office Security and Compliance center now includes links to the Microsoft 365 security center. Click on the **Open Alert Page** link and the Microsoft 365 security center opens. |
+| [Attack Simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights)   | Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.  |
 
 No changes to these areas:
 - [Explorer](/microsoft-365/security/office-365-security/threat-explorer)
@@ -108,7 +109,7 @@ Get threat intelligence from expert Microsoft security researchers. Threat Analy
 - Enhanced experience for quickly identifying and using actionable information in the reports. 
 You can access Threat analytics either from the upper left navigation bar in the Microsoft 365 security center, or from a dedicated dashboard card that shows the top threats for your organization. 
 
-[Learn more about Threat Analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
+Learn more about how to [track and respond to emerging threats with threat analytics](\microsoft-365-docs-pr\microsoft-365\security\mtp\threat-analytics.md)
 
 ### Email & collaboration
 
