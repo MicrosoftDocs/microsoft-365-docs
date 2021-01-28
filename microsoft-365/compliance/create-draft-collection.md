@@ -103,7 +103,7 @@ Here's a list of things you can do from the collection flyout page:
 
 - Click **Review sample** (located at the bottom of the flyout page) to preview a sample of the items returned by the collection.
 
-- Commit the draft collection to a review set (by clicking **Actions** > **Edit collection**). This means that you rerun the search (using the current settings for the draft collection) and the items returned by the collection are added to a review. As previously explained, you can also configure additional settings (such as conversation threading and cloud-based attachments) when you add the collection to a review set. For more information and step-by-step instructions, see [Commit a draft collection to a review set](commit-draft-collection.md).
+- Commit the draft collection to a review set (by clicking **Actions** > **Edit collection**). This means that you rerun the collection (using the current settings) and add the items returned by the collection to a review set. As previously explained, you can also configure additional settings (such as conversation threading and cloud-based attachments) when you add the collection to a review set. For more information and step-by-step instructions, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
 ## Manage a draft collection
 
