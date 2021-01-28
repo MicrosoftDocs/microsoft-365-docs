@@ -92,6 +92,10 @@ While detections allow you to identify and stop the tracked threat automatically
 
 Advanced hunting queries in the analyst reports have been vetted by Microsoft analysts and are ready for you to run in the [advanced hunting query editor](https://securitycenter.windows.com/advanced-hunting). You can also use the queries to create [custom detection rules](custom-detection-rules.md) that trigger alerts for future matches.
 
+### Email related detections and mitigations
+Email-related detections and mitigations from Microsoft Defender for Office 365, are included in threat analytics reports in addition to the endpoint data already available from Microsoft Defender for Endpoint. 
+
+Prevented email attempt information gives you insights on whether your organization were a target of the threat tackled in the analytics report even if the attack has been effectively prevented from reaching your inbox.
 
 >[!NOTE]
 > Threat analytics is also available in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office and Microsoft Defender for Endpoint that M365 Defender Threat analytics has.
