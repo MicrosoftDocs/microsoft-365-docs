@@ -41,9 +41,9 @@ Either of the existing Office Security and Compliance center (protection.office.
 
 In Threat Explorer, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Click to view the new page.
 
-:::image type="content" source="../../media/email-entitypage-banner.png" alt-text="You will see a gold banner with the words *Try out our new email entity page with enriched data*, to click and navigate to the new experience.":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="You will see a gold banner with the words *Try out our new email entity page with enriched data*, to click and navigate to the new experience.":::
 
-:::image type="content" source="../../media/email-entitypage-flyout.png" alt-text="This graphic of the email entity page focuses on headings that you'll see. Note that the email header is displayed here.":::
+:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="This graphic of the email entity page focuses on headings that you'll see. Note that the email header is displayed here.":::
 
 > [!NOTE]
 > The permissions needed to view and use this page are the same as to view Threat Explorer. The admin must be a member of Global admin or global reader, or Security admin or security reader.
@@ -54,15 +54,15 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
 1. The most required fields are on the left side of the fly-out. These details are 'sticky', meaning they're anchored to the left no matter the tab you navigate to in the rest of the fly-out.
 
-:::image type="content" source="../../media/email-entitypage-panel1.png" alt-text="Graphic of the email entity page with the left side highlighted. The title and facts about the mail delivery are over here.":::
+    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Graphic of the email entity page with the left side highlighted. The title and facts about the mail delivery are over here.":::
 
 2. On the top right corner are the actions that can be taken on an email. Any actions that can be taken through Explorer will also be available through email entity page.
 
-:::image type="content" source="../../media/email-entitypage-panel2.png" alt-text="Graphic of the email entity page with the *right* side highlighted, this time. Actions like 'Email preview' and 'Go to quarantine' are here.":::
+    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Graphic of the email entity page with the *right* side highlighted, this time. Actions like 'Email preview' and 'Go to quarantine' are here.":::
 
 3. Deeper analysis can be done by sorting through the rest of the page, including the email detection details, email authentication status, and header. This area should be looked on a case-by-case basis, but the info in these tabs is available for any email.
 
-:::image type="content" source="../../media/email-entitypage-panel3png.png" alt-text="The main panel of this page includes the email header, and will tell you if email authentication methods are Pass or Fail. No more guess work.":::
+    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of this page includes the email header, and will tell you if email authentication methods are Pass or Fail. No more guess work.":::
 
 ### Use email entity page tabs
 
@@ -98,7 +98,9 @@ Users will see enriched detonation details for known malicious attachments or hy
 - *Detonation screenshot*: This shows screenshot(s) taken during detonation process.
 - *Detonation details*: These are the exact behavior details of each process that took place during the detonation.
 
-:::image type="content" source="../../media/email-entitypage-panelNew1.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
+:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
+
+<!--:::image type="content" source="../../media/email-entitypage-panelNew1.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*."::: -->
 
 ### Other innovations
 
