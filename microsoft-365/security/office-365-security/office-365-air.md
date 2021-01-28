@@ -8,7 +8,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 01/27/2021
+ms.date: 01/28/2021
 localization_priority: Normal
 search.appverid: 
 - MET150
@@ -119,9 +119,8 @@ Permissions are granted through certain roles, such as those that are described 
 
 |Task|Role(s) required|
 |---|---|
-|Set up AIR features|One of the following roles: <br/>- Global Administrator<br/>- Security Administrator <br/><br/> These roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).|
-|Start an automated investigation <br/> --- or --- <br/> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md): <br/>- Global Administrator<br/>- Security Administrator<br/>- Security Reader <br> --- and --- <br/>- Search and Purge (this role is assigned only in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). You might have to create a new role group there and add the Search and Purge role to that new role group.|
-|
+|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <p> These roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).|
+|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). You might have to create a new role group there and add the Search and Purge role to that new role group.</li></ul>|
 
 ## Required licenses
 
