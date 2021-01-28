@@ -47,3 +47,44 @@ This figure shows the three levels of protection and governance for apps in Micr
 
 ![The three levels of protection and governance for apps in Microsoft 365](../media/manage-Information-governance/three-levels-for-apps.png)
 
+In this illustration:
+
+- Identity and device access configurations with Intune and Azure AD provide a first layer of defense by enforcing secure sign-ins and restricted access to apps in your tenant.
+- Microsoft Cloud App Security, included with Microsoft 365 E3 or Microsoft 365 E3 with the Identity & Threat Protection add-on, collects signals on user activity in Microsoft 365 apps and can detect and remediate anomalous user behavior.
+- MAPG collects signals on Microsoft 365 app activity within a tenant and can detect and remediate anomalous app behavior.
+
+## Licensing
+
+MAPG has the following levels of functionality:
+
+- Basic: Provided with all  Microsoft 365 products, from Microsoft 365 Business Premium to Microsoft 365 E5.
+- Premium: Provided with Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Compliance add-on.
+- Security: Provided with Microsoft Cloud App Security in Microsoft 365 E3 or Microsoft 365 E3 with the Identity & Threat Protection add-on.
+
+
+## Administrator roles
+
+The following administration roles are required to see MAPG pages and manage policies and settings:
+
+- Security Administrator 
+- Security Reader (read-only) 
+- Security Operator 
+- Compliance Administrator 
+- Compliance Reader (read-only) 
+- Global Administrator 
+- Global Reader
+
+REVIEWERS: I have plans to add the role/capabilities table from the onboarding guide.
+
+## Using MAPG
+
+Using MAPG to protect your tenant and its data from potentially malicious or ill-behaved apps falls into these three areas:
+
+| Area | Description |
+|:-------|:-----|
+| App visibility and insights (add link to first article in **Visibility and insights** node) | Get a 360° view on traffic and activity of the Microsoft 365 applications in your tenant. |
+| App policies for reinforced governance (add link to first article in **App policies** node) | Create proactive or reactive app policies, which will allow you to enforce governance for your Microsoft 3635 apps. |
+| Detection and remediation (add link to first article in **Detection and remediation** node) | Based on the alerts generated through the settings on your app policies, monitor your apps for anomalous app behavior and remediate them, either automatically based on app policy settings or manually. |
+|||
+
+
