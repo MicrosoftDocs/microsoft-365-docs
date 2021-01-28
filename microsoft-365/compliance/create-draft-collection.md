@@ -107,4 +107,29 @@ Here's a list of things you can do from the collection flyout page:
 
 ## Manage a draft collection
 
+You can use the options in the **Actions** menu on the flyout page of a draft collection to perform various management tasks.
+
 ![Options on Actions menu for draft collection](../media/DraftCollectionActionsMenu.png)
+
+Here's are descriptions of the management options.
+
+- **Edit collection**: Change the settings of the draft collection. After you make changes, you can rerun the collection and update the search estimates and statistics. As previously explained, you use this option to commit a draft collection to a review set.  
+
+- **Delete collection**: Delete a draft collection. Note that after a draft collection is committed to a review set, it can't be deleted.
+
+- **Refresh estimates**: Rerun the query (against the data sources) specified in the draft collection to update the search estimates and statistics.
+
+- **Export as report**: Exports information about the draft collection to a CSV file that you can download to your local computer. The export report contains the following information:
+
+  - The identity of each content location that contains items that match the search query in the draft collection. These locations are typically mailboxes or sites.
+  
+  - The total number of items in each content location.
+  
+  - The total size (in bytes) of the items in each content location.
+
+  - The service (such as Exchange or SharePoint) in which the content location is located.
+
+- **Copy collection**: Create a new draft collection by copying the settings from an existing collection. You have to use a different name for the new collection. You also have the option to modify the settings before you submit the new collection. After you submit it, the search query is run and new estimates and statistics are generated. The is a good way to quickly create additional draft collection and then modify selected settings as necessary while still preserving information in the original collection. This also lets you easily compare the results of two similar collections.
+
+> [!NOTE]
+> After a draft collection is committed to a review set, you can only copy the collection and export a report.
