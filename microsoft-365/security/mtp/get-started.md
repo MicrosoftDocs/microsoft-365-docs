@@ -28,7 +28,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-[!includePrerelease information](../includes/prerelease.md)
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft 365 Defender is a unified experience where you can monitor and manage security across your enterprise. With the integrated alerts across identities, endpoints, data, apps, email and collaboration tools - investigating and responding to threats now happen in a central location. 
 

@@ -30,7 +30,8 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-[!includePrerelease information](../includes/prerelease.md)
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
+
 
 Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. Alerts are typically part of a broader attack and provide pieces of clues about an incident.
 
