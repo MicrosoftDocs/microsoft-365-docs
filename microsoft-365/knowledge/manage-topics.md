@@ -1,5 +1,5 @@
 ---
-title: 'Manage topics in the Topic center in Topic Experiences (Preview) '
+title: 'Manage topics in the Topic center in Microsoft Viva '
 description: 'How to manage topics in the Topic Center.'
 author: efrene
 ms.author: efrene
@@ -15,10 +15,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 
 ---
-# Manage topics in the Topic center (Preview)
-
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+# Manage topics in the Topic center 
 
 </br>
 
@@ -55,7 +52,9 @@ In the topic center, a knowledge manager can review topics that have been identi
 
 ## Review suggested topics
 
-On the Topic center Manage Topics page, topics that were discovered in your specified SharePoint source locations will be listed in the **Suggested** tab. A knowledge manager can review unconfirmed topics and choose to confirm or reject them.
+On the Topic center Manage Topics page, topics that were discovered in your specified SharePoint source locations will be listed in the **Suggested** tab. If needed, a knowledge manager can review unconfirmed topics and choose to confirm or reject them.
+
+   ![Suggested Topics](../media/knowledge-management/quality-score.png) </br> 
 
 To review a suggested topic:
 
@@ -88,7 +87,9 @@ To review a confirmed topic:
 Note that you can still chose to reject a confirmed topic.  To do this, go to the selected topic in the Confirmed list, and select the **x** if you want to reject the topic.
 
 ## Published topics
-Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here.
+Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
+
+   ![Manage Topics](../media/knowledge-management/manage-topics-new.png) </br> 
 
 
 

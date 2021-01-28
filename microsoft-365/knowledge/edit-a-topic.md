@@ -1,6 +1,6 @@
 ---
-title: 'Edit an existing topic in Topic Experiences (Preview) '
-description: 'How to edit an existing topic in Topic Experiences.'
+title: 'Edit an existing topic in Microsoft Viva '
+description: 'How to edit an existing topic in Microsoft Viva.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -16,10 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
-# Edit an existing topic (Preview)
-
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+# Edit an existing topic 
 
 </br>
 
@@ -27,7 +24,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 </br>
 
-In Topic experiences, you can edit an existing topic. You may need to do this if you want to correct or add additional information to an existing topic page. 
+In Microsoft Viva, you can edit an existing topic. You may need to do this if you want to correct or add additional information to an existing topic page. 
+
+When you edit a topic, the information that you add to a topic (instead of added by AI) will be visible to all users who have permission to view the topic.
 
 ## Requirements
 
@@ -38,25 +37,67 @@ To edit an existing topic, you need to:
 > [!Note] 
 > Users who have permission to manage topics in the Topic center (knowledge managers) already have permissions to create and edit topics.
 
+## Ways to edit 
+
+Users who have the **Who can create or edit topics** permission can edit a topic by opening the topic page from a topic highlight, and then selecting the <b>Edit</b> button on the top right of the topic page.
+
+   ![Edit button](../media/knowledge-management/edit-button.png) </br> 
+
+Knowledge managers can also topics directly from the Manage Topics page by selecting the topic, and then selecting <b>Edit</b> in the toobar.
+
+   ![Edit topic in Manage Topics](../media/knowledge-management/manage-topics-edit.png) </br> 
+
 ## Edit a topic page
 
-If you have permissions to edit a topic page, after opening the topic, you will be able to see **Edit** on the top right of the page.
+If you have permissions to edit a topic, after opening the topic page, you will be able to see **Edit** on the top right of the page.
 
    ![Edit control](../media/knowledge-management/topic-page-edit.png) </br> 
 
-1. On the topic page, select **Edit**.
+1. On the topic page, select **Edit**. This allows you to make changes as you need to the topic page.
 
-2. Make the changes you need to the page. This includes updates to the following fields:
+2. In the <b>Alternate Names</b> section, type any other names that the topic might be referred to. 
 
-    -  Alternate names
-    -  Description
-    -  Pinned people
-    -  Files and pages
-    -  Sites
+    ![Alternate names](../media/knowledge-management/alt-names.png) </br> 
+3. In the <b>Description</b> section, type a couple of sentences that describes the topic. Or if a description already exists, update it if needed.
 
-    You can also add static items to the page—such as text, images, or links by selecting the canvas icon.
+    ![Description](../media/knowledge-management/description.png)</br>
 
-3. Select **Republish** to save your changes.
+4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the add a new user box, and then selecting the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
+ 
+    ![Pinned people](../media/knowledge-management/pinned-people.png)</br>
+
+    The <b>Suggested people</b> section shows users that AI thinks might be subject matter experts on the topic from their connection to resources about the topic. You can change their status from Suggested to Pinned by selecting the pin icon on the user card.
+
+   ![Suggested people](../media/knowledge-management/suggested-people.png)</br>
+
+5. In the <b>Pinned files and pages</b> section, you can add or "pin" a file or SharePoint site page that is associated to the topic.
+
+   ![Pinned files and pages](../media/knowledge-management/pinned-files-and-pages.png)</br>
+ 
+    To add a new file, select <b>Add</b>, select the SharePoint site from your Frequent or Followed sites, and then select the file from the site's document library.
+
+    You can also use the <b>From a link</b> option to add a file or page by providing the URL. 
+
+6. The <b>Suggested files and pages</b> section shows files and pages that AI suggested to be associated to the topic.
+
+   ![Suggested files and pages](../media/knowledge-management/suggested-files-and-pages.png)</br>
+
+    You can make a suggested file or page to a pinned file or page by selecting the pinned icon.
+
+7.  The <b>Related sites</b> section shows sites that have information about the topic. 
+
+    ![Related sites](../media/knowledge-management/related-sites.png)</br>
+
+    You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
+    
+    ![Related sites](../media/knowledge-management/sites.png)</br>
+
+8. You can also add static items to the page — such as text, images, or links - by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
+
+   ![Canvas icon](../media/knowledge-management/webpart-library.png)</br> 
+
+
+9. Select **Publish** or **Republish** to save your changes. **Republish** will be your available option if the topic has been published previously.
 
 
 ## See also
