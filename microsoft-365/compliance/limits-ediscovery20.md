@@ -56,20 +56,20 @@ The limits described in this section are related to using the search tool on the
 
 | Description of limit | Limit |
 |:-----|:-----|
-|Maximum number of mailboxes or sites that can be searched in a single search.  <br/> |No limit  <br/> |
-|Maximum number of searches that can run at the same time.  <br/> |No limit  <br/> | 
-|Maximum number of searches that a single user can start at the same time.  <br/> |10  <br/> | 
-|Maximum number of characters for a search query (including operators and conditions). |10,000 <sup>2</sup> <br/>|
-|Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***. <br/> |3  <br/> |  
-|Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator.  <br/> |10,000 <sup>3</sup> <br/> |
-|Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed.   <br/> |100  <br/> |
-|Maximum number of items from all mailboxes displayed on preview page for searches.  <br/> |1,000  <br/> |
-|Maximum number of mailboxes that can be previewed for search results.  If there are more than 1000 mailboxes that contain items that match the search query, only the top 1,000 mailboxes with the most results are available for preview.<br/> |1,000  <br/> |
-|Maximum number of items from SharePoint and OneDrive for Business sites displayed on preview page for searches. The newest items are displayed.  <br/> |200  <br/> |
-|Maximum number of SharePoint and OneDrive for Business sites that can be previewed for search results. If there are more than 200 sites that contain items that match the search query, only the top 200 sites with the most results are available for preview.  <br/> |200  <br/> |
-|Maximum number of items per public folder mailbox displayed on preview page for searches.  <br/> |100  <br/> |
-|Maximum number of items found in all public folder mailbox items displayed on preview page for searches.  <br/> |200  <br/> |
-|Maximum number of public folder mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain items that match the search query, only the top 500 mailboxes with the most results are available for preview.  <br/> |500  <br/> |
+|Maximum number of mailboxes or sites that can be searched in a single search. |No limit|
+|Maximum number of searches that can run at the same time. |No limit |
+|Maximum number of searches that a single user can start at the same time. |10 | 
+|Maximum number of characters for a search query (including operators and conditions). |10,000&nbsp;<sup>2</sup>|
+|Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***.|3 |  
+|Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator. |10,000&nbsp;<sup>3</sup>|
+|Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed. |100|
+|Maximum number of items from all mailboxes displayed on preview page for searches.|1,000|
+|Maximum number of mailboxes that can be previewed for search results.  If there are more than 1000 mailboxes that contain items that match the search query, only the top 1,000 mailboxes with the most results are available for preview.|1,000|
+|Maximum number of items from SharePoint and OneDrive for Business sites displayed on preview page for searches. The newest items are displayed. |200|
+|Maximum number of SharePoint and OneDrive for Business sites that can be previewed for search results. If there are more than 200 sites that contain items that match the search query, only the top 200 sites with the most results are available for preview.|200|
+|Maximum number of items per public folder mailbox displayed on preview page for searches. |100|
+|Maximum number of items found in all public folder mailbox items displayed on preview page for searches. |200|
+|Maximum number of public folder mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain items that match the search query, only the top 500 mailboxes with the most results are available for preview.|500|
 |||
 
 ## Viewer limits
