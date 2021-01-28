@@ -99,7 +99,7 @@ The **Overview** section provides a preview of the detailed analyst report. It a
 
 _Overview section of a threat analytics report_
 
-#### Assess impact to your organization
+#### Assess impact on your organization
 Each report includes charts designed to provide information about the organizational impact of a threat:
 - **Related incidents**—provides an overview of the impact of the tracked threat to your organization with the following data:
   - Number of active alerts and the number of active incidents they are associated with
