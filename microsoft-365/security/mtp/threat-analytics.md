@@ -64,7 +64,7 @@ The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https:
 
 Select a threat from the dashboard to view the report for that threat.
 
-![Image of a threat analytics dashboard](../../media/threat-analytics/ta_dashboard_mtp_small.png)
+![Image of a threat analytics dashboard](../../media/threat-analytics/ta_dashboard_mtp.png)
 
 _Threat analytics dashboard_ 
 
@@ -83,7 +83,7 @@ Each threat analytics report provides information in several sections:
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
-![Image of the overview section of a threat analytics report](../../media/threat-analytics/ta_overview_mtp_small.png)
+![Image of the overview section of a threat analytics report](../../media/threat-analytics/ta_overview_mtp.png)
 
 _Overview section of a threat analytics report_
 
@@ -109,7 +109,7 @@ In the **Analyst report** section, read through the detailed expert write-up. Mo
 ### Related incidents: View and manage related incidents
 The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident. 
 
-![Image of the related incidents section of a threat analytics report](../../media/threat-analytics/ta_related_incidents.png)
+![Image of the related incidents section of a threat analytics report](../../media/threat-analytics/ta_related_incidents_mtp.png)
 
 _Related incidents section of a threat analytics report_
 
@@ -118,7 +118,7 @@ An asset is considered impacted if it is affected by an active, unresolved alert
 - **Impacted devices**—endpoints that have unresolved Microsoft Defender for Endpoint alerts. These alerts typically fire on sightings of known threat indicators and activities.
 - **Impacted mailboxes**—mailboxes that have received email messages that have triggered Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
 
-![Image of the impacted assets section of a threat analytics report](../../media/threat-analytics/ta_impacted_assets.png)
+![Image of the impacted assets section of a threat analytics report](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
 _Impacted assets section of a threat analytics report_
 
@@ -126,6 +126,8 @@ _Impacted assets section of a threat analytics report_
 Office 365 typically blocks emails with known threat indicators, including malicious links or attachments. In some cases, proactive filtering mechanisms that check for suspicious content will instead send threat emails to the junk mail folder. In either case, the chances of the threat launching malware code on the device is reduced.
 
 The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Office 365. 
+
+![Image of the prevented email attempts section of a threat analytics report](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
 ### Mitigations: Review list of mitigations and the status of your devices
 In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
