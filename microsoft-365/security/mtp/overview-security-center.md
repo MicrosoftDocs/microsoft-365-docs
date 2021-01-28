@@ -35,7 +35,9 @@ ms.technology: m365d
 
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 
-The improved Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com) integrates Microsoft 365 services and endpoints, so that devices, email, identities, and app security can be managed from a single location. This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
+The improved Microsoft 365 security center at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center. All of the existing features in Microsoft 365 Defender are all still there, but are bolstered with more signals and information from other workloads, in an easier-to-use interface.
+
+This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
 
 The Microsoft 365 security center is your home for security information and management for security teams and includes:
 
@@ -99,11 +101,12 @@ Common controls and content either appear in the same place, or are condensed in
 
 ![Permissions & Roles page showing Endpoints roles & groups, Roles, and Device groups.](../../media/converged-roles-5.png)
 
- Roles and groups are inherited from your existing products, so if you have specific roles and groups, you can manage those here. Selecting either of **Roles** or **Device groups** drops admins deeper into the **Permissions** section. New capabilities help you manage specific access. [Learn more about creating custom roles](custom-roles.md).
+ Access the Microsoft 365 security center is configured with Azure Active Directory global roles or by using custom roles. For Defender for Endpoint, see [Assign user access to Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access.md). For Defender for Office 365, see [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security).
 
+- Learn more about how to [manage access to Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-permissions.md)
+- Learn more about how to [create custom roles](/microsoft-365/security/mtp/custom-roles.md) in Microsoft 365 security center
 
 ### Integrated reports
-
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
 
 ### At-a-glance view of your Microsoft 365 environment

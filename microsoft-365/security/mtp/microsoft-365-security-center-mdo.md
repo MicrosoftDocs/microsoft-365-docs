@@ -43,11 +43,11 @@ This table is a quick reference of Email & Collaboration areas where change has 
 
 |**Area**  |**Description of change**  |
 |---------|---------|
-[Explorer](/microsoft-365/security/office-365-security/threat-explorer) | Threat Explorer helps security teams review and assess the latest email-based threats to their organization. |
 [Attack Simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights)   | Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.  |
 |[Investigation](/microsoft-365/security/office-365-security/office-365-air#changes-are-coming-soon-in-your-security-center) | Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) and [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.  | 
 
 No changes to these areas:
+- [Explorer](/microsoft-365/security/office-365-security/threat-explorer)
 - [Policies & Rules](/microsoft-365/compliance/alert-policies)
 - [Campaign](/microsoft-365/security/office-365-security/campaigns)
 - [Submissions](/microsoft-365/security/office-365-security/admin-submission)
@@ -75,17 +75,37 @@ Using the **Guided tour** you can take a quick tour of Endpoint or Email & colla
 
 Also included is a link to the **Office 365 Security and Compliance center** for comparison. The last link is to the **What's New** page that describes recent updates.
 
-## Improved navigation
+## Improved capabilities
 
 The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
 
-### Incidents & Alerts, and Actions
-Brings together incident and alert management across your email, devices, and identities. You can also hunt for security threats using hunting queries. The new unified Alert queue helps pull together alerts from different sources, giving you one place to review all alerts. 
+### Incidents and alerts
+Brings together incident and alert management across your email, devices, and identities. Alerts are now available under the Investigation node, and help provide a broader view of an attack. The alert page provides full context to the alert, by combining attack signals to construct a detailed story. Previously, alerts were specific to different workloads. A new, unified experience now brings together a consistent view of alerts across workloads. You can quickly triage, investigate, and take effective action.
 
-![The Alerts and Actions quick launch on the left of the Microsoft 365 security center screen with menu options.](../../media/m3d-nav1.png)
+- [Learn more about Investigations](incidents-overview.md)
+- [Learn more about managing alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-### Threat Analytics
-Threat Analytics provides a summary of the latest threats that could be affecting your organization. With this information, security teams can learn the specifics about each individual threat in the Threat Analytics reports as well as see how these threats might be impacting your organization. New in the Microsoft 365 security center is a combined view of threats that include signals from both Defender for Endpoint as well as Defender for Office 365.
+![The Alerts and Actions quick launch bar](../../media/converge-1-alertsandactions.png)
+
+
+### Hunting
+Proactively search for threats, malware, and malicious activity across your endpoints, Office 365 mailboxes, and more by using [advanced hunting queries](advanced-hunting-overview.md). These powerful queries can be used to  locate and review threat indicators and entities for both known and potential threats.
+
+[Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)  can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
+
+### Action center
+
+Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
+
+[Learn more about Action Center](mtp-action-center.md)
+
+#### Threat Analytics
+Get threat intelligence from expert Microsoft security researchers. Threat Analytics helps security teams be more efficient when facing emerging threats. Threat Analytics includes:
+
+- Email-related detections and mitigations from Microsoft Defender for Office 365. This is in addition to the endpoint data already available from Microsoft Defender for Endpoint.
+- Incidents view related to the threats. 
+- Enhanced experience for quickly identifying and using actionable information in the reports. 
+You can access Threat analytics either from the upper left navigation bar in the Microsoft 365 security center, or from a dedicated dashboard card that shows the top threats for your organization. 
 
 [Learn more about Threat Analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)
 
