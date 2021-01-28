@@ -7,7 +7,9 @@ manager: pamgreen
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-topics
 ms.service: 
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
