@@ -268,15 +268,15 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 #### Verify Setup Script
 
-If you receive any errors during the configuration of the source or target tenants you can run the VerifySetup.ps1 script located [on GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) and review the output.
+If you receive any errors during the configuration of the source or target tenants, you can run the VerifySetup.ps1 script located [on GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) and review the output.
 
-Example of VerifySetup.ps1 on the Target Tenant
+Here's an example of running VerifySetup.ps1 on the target tenant:
 
 ```powershell
 VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
 ```
 
-Example of VerifySetup.ps1 on the Source Tenant
+Here's an example of VerifySetup.ps1 on the source tenant:
 
 ```powershell
 VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
@@ -565,13 +565,13 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 Start by running the VerifySetup.ps1 script located [on GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) and review the output.
 
-Example of VerifySetup.ps1 on the Target Tenant
+Here's an example of running VerifySetup.ps1 on the target tenant:
 
 ```powershell
 VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
 ```
 
-Example of VerifySetup.ps1 on the Source Tenant
+Here's an eExample of running VerifySetup.ps1 on the source tenant:
 
 ```powershell
 VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
@@ -579,10 +579,11 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 **Can the source and target tenant utilize the same domain name?**  
 
-No. The source and target tenant domain names must be unique.  For example, source would be contoso.com and the target would be fourthcoffee.com.
+No. The source and target tenant domain names must be unique. For example, a source domain of contoso.com and the target domain of fourthcoffee.com.
 
-**Will shared mailboxes move and still work?**  
-Yes, however we only keep the store permissions as documented below:
+**Will shared mailboxes move and still work?**
+
+Yes, however we only keep the store permissions as described in these articles:
 
 - [Microsoft Docs | Manage permissions for recipients in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
@@ -608,7 +609,7 @@ Do remember that this feature is currently in preview and the SLA and any applic
 
 ## Known issues  
 
--  **Issue: Auto Expanded archives cannot be migrated.** The cross-tenant migration feature support migrations of the primary mailbox and archive mailbox for a specific user. If the user in the source however has an auto expanded archive – meaning more than one archive mailbox, the feature is unable to migrate the additional archives and  should fail.
+-  **Issue: Auto Expanded archives cannot be migrated.** The cross-tenant migration feature support migrations of the primary mailbox and archive mailbox for a specific user. If the user in the source however has an auto expanded archive – meaning more than one archive mailbox, the feature is unable to migrate the additional archives and should fail.
 
 - **Issue: Cloud MailUsers with non-owned smtp proxyAddress block MRS moves background.** When creating target tenant MailUser objects, you must ensure that all SMTP proxy addresses belong to the target tenant organization. If an SMTP proxyAddress exists on the target mail user that does not belong to the local tenant, the conversion of the MailUser to Mailbox is prevented. This is due to our assurance that mailbox objects can only send mail from domains for which the tenant is authoritative (domains claimed by the tenant): 
 
