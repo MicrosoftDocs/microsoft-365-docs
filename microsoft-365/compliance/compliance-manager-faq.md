@@ -77,3 +77,9 @@ No. Your compliance score measures your progress in completing recommended actio
 ## Can I use Compliance Manager for non-Microsoft products?
 
 While Compliance Manager provides continuous monitoring and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your third-party services. In this way, you can use Microsoft Compliance Manager as a SaaS compliance management tool to help you manage all the controls across your digital assets.
+
+## What’s happening to Compliance Manager (classic) in the Service Trust Portal?
+
+The classic version of Compliance Manager, which resides in the Microsoft Service Trust Portal, will soon be removed. A Microsoft 365 Message Center notice will go out at least 60 days before the final retirement of Compliance Manger (classic). Customers who are managing their compliance activities in Compliance Manger (classic) will need to move their data, including assessments and controls, over to the new Compliance Manager solution in the Microsoft 365 compliance center. No data will be automatically transferred over to the new Compliance Manager solution once Compliance Manager (classic) is retired.
+
+To learn how you can quickly set up the new Compliance Manager, read our [Compliance Manager quickstart](compliance-manager-quickstart.md) guide
