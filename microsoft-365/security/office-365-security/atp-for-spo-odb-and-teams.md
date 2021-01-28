@@ -1,27 +1,29 @@
 ---
-title: "Safe Attachments for SharePoint, OneDrive, and Microsoft Teams"
-f1.keywords:
-- NOCSH
+title: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date:
+ms.date: 
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
-ms.collection:
-- M365-security-compliance
-- SPO_Content
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-- seo-marvel-jun2020
-description: "Learn about Microsoft Defender for Office 365 for files in SharePoint Online, OneDrive for Business, and Microsoft Teams."
+ms.collection: 
+  - M365-security-compliance
+  - SPO_Content
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+  - seo-marvel-jun2020
+description: Learn about Microsoft Defender for Office 365 for files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Safe Attachments for SharePoint, OneDrive, and Microsoft Teams

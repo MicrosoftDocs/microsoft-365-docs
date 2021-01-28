@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150

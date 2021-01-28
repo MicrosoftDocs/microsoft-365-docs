@@ -1,18 +1,20 @@
 ---
-title: "Non-accepted domain report in the Mail flow dashboard"
-f1.keywords:
-- NOCSH
+title: Non-accepted domain report in the Mail flow dashboard
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-ms.assetid:
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use the Non-accepted domain report in the Mail flow dashboard in the Security & Compliance Center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365."
+ms.assetid: 
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use the Non-accepted domain report in the Mail flow dashboard in the Security & Compliance Center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Non-accepted domain report in the Security & Compliance Center

@@ -6,7 +6,8 @@ author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
+ms.technology: m365d
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance

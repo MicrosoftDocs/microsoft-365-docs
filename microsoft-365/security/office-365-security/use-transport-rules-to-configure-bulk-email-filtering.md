@@ -1,21 +1,23 @@
 ---
-title: "Use mail flow rules to filter bulk email"
-f1.keywords:
-- NOCSH
+title: Use mail flow rules to filter bulk email
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to use mail flow rules (transport rules) to identify and filter bulk mail (gray mail) in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to use mail flow rules (transport rules) to identify and filter bulk mail (gray mail) in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use mail flow rules to filter bulk email in EOP
