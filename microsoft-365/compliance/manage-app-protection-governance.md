@@ -29,40 +29,10 @@ Microsoft Application Protection and Governance (MAPG) is a solution for Microso
 
 Unlike other application governance products in the marketplace, MAPG is a platform-based solution that is an integral part of the Microsoft 365 app ecosystem. Today, Microsoft allows developers to build cloud applications using Azure AD, Microsoft’s cloud identity platform, and other resources and access to tenant data through the Microsoft Graph. With MAPG, developers can build high-quality productivity apps that are secure and compliant.
 
-MAPG in Microsoft 365 provides a comprehensive level of protection from malicious actors that use apps to access your tenant data:
 
-- App access and restrictions based on user and device identity
+## Licensing for MAPG
 
-  With Azure AD and Intune, you can configure identity and device access policies to enforce secure sign-ins and to allow and restrict app access. With Azure AD Identity Protection, you can monitor user and device access and respond to anomalous behavior.
-
-- User activity within apps
-
-  With Microsoft Cloud App Security, you can monitor user activity and respond to anomalous behavior.
-
-- App activity within a Microsoft 365 tenant
- 
-  With MAPG, you can monitor what apps are doing and respond to anomalous behavior.
-
-This figure shows the three levels of protection and governance for apps in Microsoft 365 with MAPG.
-
-![The three levels of protection and governance for apps in Microsoft 365](../media/manage-Information-governance/three-levels-for-apps.png)
-
-In this illustration:
-
-- Identity and device access configurations with Intune and Azure AD provide a first layer of defense by enforcing secure sign-ins and restricted access to apps in your tenant.
-- Microsoft Cloud App Security, included with Microsoft 365 E3 or Microsoft 365 E3 with the Identity & Threat Protection add-on, collects signals on user activity in Microsoft 365 apps and can detect and remediate anomalous user behavior.
-- MAPG collects signals on Microsoft 365 app activity within a tenant and can detect and remediate anomalous app behavior.
-
-## Licensing
-
-MAPG has the following levels of functionality:
-
-| Level | Provided with: |
-|:-------|:-----|
-| Basic | All  Microsoft 365 products, from Microsoft 365 Business Premium to Microsoft 365 E5. |
-| Premium | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Compliance add-on. |
-| Security | Microsoft Cloud App Security in Microsoft 365 E3 or Microsoft 365 E3 with the Identity & Threat Protection add-on. |
-|||
+TBD
 
 ## Administrator roles
 
@@ -88,5 +58,4 @@ Using MAPG to protect your tenant and its data from potentially malicious or ill
 | App policies for reinforced governance (add link to first article in **App policies** node) | Create proactive or reactive app policies, which will allow you to enforce governance for your Microsoft 3635 apps. |
 | Detection and remediation (add link to first article in **Detection and remediation** node) | Based on the alerts generated through the settings on your app policies, monitor your apps for anomalous app behavior and remediate them, either automatically based on app policy settings or manually. |
 |||
-
 
