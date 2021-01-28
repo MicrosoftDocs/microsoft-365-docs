@@ -59,7 +59,7 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of mailboxes or sites that can be searched in a single search.  <br/> |No limit  <br/> |
 |Maximum number of searches that can run at the same time.  <br/> |No limit  <br/> | 
 |Maximum number of searches that a single user can start at the same time.  <br/> |10  <br/> | 
-|Maximum number of characters for a search query (including operators and conditions).  <br/> |**Mailboxes**: 10,000<br/>**Sites**: 4,000 when searching all sites or 2,000 when searching up to 20 sites <sup>2</sup> <br/> |
+|Maximum number of characters for a search query (including operators and conditions). |10,000 <sup>2</sup> <br/>|
 |Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***. <br/> |3  <br/> |  
 |Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator.  <br/> |10,000 <sup>3</sup> <br/> |
 |Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed.   <br/> |100  <br/> |
