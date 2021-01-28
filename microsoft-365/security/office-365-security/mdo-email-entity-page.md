@@ -62,7 +62,7 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
 3. Deeper analysis can be done by sorting through the rest of the page, including the email detection details, email authentication status, and header. This area should be looked on a case-by-case basis, but the info in these tabs is available for any email.
 
-    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of this page includes the email header, and will tell you if email authentication methods are Pass or Fail. No more guess work.":::
+    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of this page includes the email header and authentication status.":::
 
 ### Use email entity page tabs
 
@@ -99,8 +99,6 @@ Users will see enriched detonation details for known malicious attachments or hy
 - *Detonation details*: These are the exact behavior details of each process that took place during the detonation.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
-
-<!--:::image type="content" source="../../media/email-entitypage-panelNew1.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*."::: -->
 
 ### Other innovations
 
