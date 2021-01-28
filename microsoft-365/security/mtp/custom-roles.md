@@ -33,7 +33,7 @@ ms.technology: m365d
  
 There are two roles that can be used to access to Microsoft 365 Defender:
 - **Global Azure Active Directory (AD) roles** 
-- **Custom role access**
+- **Custom roles**
 
 
 You can continue to manage access to Microsoft 365 Defender using existing [Global roles in Azure Active Directory (AAD)](mtp-permissions.md). But the disadvantage of this is that users with Global admin Azure AD roles might have more access than what's needed for your users. 
