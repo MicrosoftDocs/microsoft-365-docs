@@ -2,21 +2,22 @@
 title: Overview - Microsoft 365 security center
 description: Describes monitoring and managing security across your Microsoft identities, data, devices, and apps with Microsoft 365 security.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
+ms.technology: m365d
 ---
 
 # Overview of the Microsoft 365 security center
@@ -38,12 +39,20 @@ Visit the Microsoft 365 security center at [https://security.microsoft.com](http
 > [!NOTE]
 > You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center.
 
-
-## Let's take a closer look
+## At-a-glance view of your Microsoft 365 environment
 
 The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
 This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
+
+Loosely, the cards fall into these categories:
+
+- **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Data** - Help track user activity that could lead to unauthorized data disclosure.
+- **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
+- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+
+## Explore what the security center has to offer
 
 The Microsoft 365 security center includes:
 

@@ -8,7 +8,9 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
 localization_priority: Normal

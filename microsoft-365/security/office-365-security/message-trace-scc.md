@@ -1,18 +1,20 @@
 ---
-title: "Message trace in the Security & Compliance Center"
-f1.keywords:
-- NOCSH
+title: Message trace in the Security & Compliance Center
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can use message trace in the Security & Compliance Center to find out what happened to messages."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can use message trace in the Security & Compliance Center to find out what happened to messages.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Message trace in the Security & Compliance Center

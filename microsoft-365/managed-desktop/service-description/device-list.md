@@ -12,7 +12,7 @@ ms.topic: article
 
 # Microsoft Managed Desktop devices 
 
-Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article outlines the requirements for a device to be enrolled in Microsoft Managed Desktop and lists the specific devices that are currently supported.
+Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article lists the specific devices that are currently supported. For a more general statement of device requirements, see [Device requirements](device-requirements.md).
 
 For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
 
@@ -66,6 +66,7 @@ The links to devices here are for your reference only. If you want to order devi
 | [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 12, 2022 | Oct 12, 2025 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | None | Jan 15, 2022 | Jan 15, 2025 |
 
 In addition, the device must also meet these criteria:     
 

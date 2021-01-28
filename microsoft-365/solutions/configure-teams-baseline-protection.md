@@ -82,7 +82,7 @@ To update the site sharing settings
 1. In the tool bar for the team, click **Files**.
 2. Click **Open in SharePoint**.
 3. In the tool bar of the SharePoint site, click the settings icon, and then click **Site permissions**.
-4. In the **Site permissions** pane, under **Sharing settings**, click **Change sharing settings**.
+4. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
 5. Under **Sharing permissions**, choose **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**, and then click **Save**.
 
 ## Additional protections
