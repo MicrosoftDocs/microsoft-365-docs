@@ -54,7 +54,7 @@ The following table identifies the supported tasks that can be performed in Micr
 
 For more information about these settings, see the "Configure encryption settings" section in [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md#configure-encryption-settings).
 
-Documents encrypted with the previous settings can still be returned by an eDiscovery search. This may happen when a document property (such as the title, author, or modified date) matches the search criteria. Although these documents might be included in search results, they can't be previewed, reviewed, or exported in Advanced eDiscovery.
+Documents encrypted with the previous settings can still be returned by an eDiscovery search. This may happen when a document property (such as the title, author, or modified date) matches the search criteria. Although these documents might be included in search results, they can't be previewed or reviewed. These documents will also remain encrypted when they're exported in Advanced eDiscovery.
 
 ## Requirements for decryption in eDiscovery
 
