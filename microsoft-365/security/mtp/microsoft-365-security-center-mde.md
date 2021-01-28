@@ -28,6 +28,8 @@ ms.collection:
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 The improved [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
 
@@ -125,8 +127,8 @@ View reports, change your settings, and modify user roles.
 
 ![The Access and Reporting quicklaunch bar](../../media/converge-4-access-and-reporting-new.png)
 
-### SIEM/API connections
-If you use the [Defender for Endpoint SIEM API](/windows/security/threat-protection/microsoft-defender-atp/enable-siem-integration.md) you can continue to do so. We've added new links on the emails that point to the alert page or the incident page in the Microsoft 365 security center portal. New API fields include LinkToMTP and IncidentLinkToMTP.  For more information, see [Redirecting accounts from Microsoft Defender for Endpoint to the Microsoft 365 security center](/microsoft-365/security/mtp/microsoft-365-security-mde-redirection.md).
+### SIEM API connections
+If you use the [Defender for Endpoint SIEM API](/windows/security/threat-protection/microsoft-defender-atp/enable-siem-integration.md) you can continue to do so. we’ve added new links on the API payload that point to the alert page or the incident page in the Microsoft 365 security center portal. New API fields include LinkToMTP and IncidentLinkToMTP.  For more information, see [Redirecting accounts from Microsoft Defender for Endpoint to the Microsoft 365 security center](/microsoft-365/security/mtp/microsoft-365-security-mde-redirection.md).
 
 ### Email alerts
 You can continue to use email alerts for Defender for Endpoint. We've added new links in the emails that point to the alert page or the incident page in the Microsoft 365 security center. 

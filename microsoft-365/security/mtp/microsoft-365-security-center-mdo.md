@@ -26,19 +26,16 @@ ms.technology: m365d
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 
-The improved [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center.
+The improved [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
-If you are familiar with the Office 365 Security and Compliance portal, this article helps describe some of the changes and improvements in the Microsoft 365 security center.
-
-Take a look at the improved Microsoft 365 security center: [https://security.microsoft.com](https://security.microsoft.com).
+If you are familiar with the Office 365 Security and Compliance portal (protection.office.com), this article describes some of the changes and improvements in the Microsoft 365 security center.
 
 Learn more about the benefits: [Overview of the Microsoft 365 security center](overview-security-center.md)
 
 If you are looking for compliance-related items, visit the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage).
-
-> [!NOTE]
-> For Defender for Office 365 users, you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 security center: https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
 
 ## What's changed
 
@@ -60,7 +57,7 @@ No changes to these areas:
 Also, check the **Related Information** section at the bottom of this article.
 
 > [!IMPORTANT]
-> The Microsoft 365 Security portal (https://security.microsoft.com) combines security features in https://securitycenter.windows.com, and https://protection.office.com. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
+> The Microsoft 365 Security portal (https://security.microsoft.com) combines security features in https://securitycenter.windows.com, and https://protection.office.com. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints and Defender for Office Plan 1 customers won't see items such as Threat Analytics.
 
 ## Microsoft 365 security center Home page
 
@@ -104,14 +101,9 @@ View reports, change your settings, and modify user roles.
 
 :::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 security center permissions and reporting, on the left side of the security center.":::
 
-### SIEM and API 
-TBD
 
-### Endpoints
-
-View and manage the security of endpoints in your organization. If you've used the Microsoft Defender security center, this will look familiar.
-
-:::image type="content" source="../../media/converge-2-endpoints_new.png" alt-text="The quick launch menu for Endpoints (or MSDE) on the left hand side of the Microsoft 365 security center.":::
+> [!NOTE]
+> For Defender for Office 365 users, you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 security center: https://security.microsoft.com/threatpolicy, or navigate to **Policy & rules > Threat policies > DKIM**.
 
 ## Advanced Hunting example for Microsoft Defender for Office 365
 Want to get started searching for email threats using advanced hunting? Try this:
