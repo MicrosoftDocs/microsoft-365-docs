@@ -3,7 +3,7 @@ title: Top domain mail flow status insight in the Mail flow dashboard
 f1.keywords: 
   - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
