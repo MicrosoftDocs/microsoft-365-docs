@@ -266,6 +266,22 @@ MailboxMovePublishedScopes : {MigScope}
 OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 ```
 
+#### Verify Setup Script
+
+If you receive any errors during the configuration of the source or target tenants you can run the VerifySetup.ps1 script located [on GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) and review the output.
+
+Example of VerifySetup.ps1 on the Target Tenant
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
+```
+
+Example of VerifySetup.ps1 on the Source Tenant
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
+```
+
 ### Move mailboxes back to the original source
 
 If a mailbox move back to the original source tenant is required, the same set of steps and scripts will need to be run in both new source and new target tenants. The existing Organization Relationship object will be updated or appended, not recreated.
@@ -545,6 +561,33 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > [!Note]  
 > In addition to this X500 proxy, you will need to copy all X500 proxies from the mailbox in the source to the mailbox in the target.  
 
+**Where do I start troubleshooting if moves do not work?**  
+
+Start by running the VerifySetup.ps1 script located [on GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) and review the output.
+
+Example of VerifySetup.ps1 on the Target Tenant
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
+```
+
+Example of VerifySetup.ps1 on the Source Tenant
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
+```
+
+**Can the source and target tenant utilize the same domain name?**  
+
+No. The source and target tenant domain names must be unique.  For example, source would be contoso.com and the target would be fourthcoffee.com.
+
+**Will shared mailboxes move and still work?**  
+Yes, however we only keep the store permissions as documented below:
+
+- [Microsoft Docs | Manage permissions for recipients in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+
+- [Microsoft Support | How to grant Exchange and Outlook mailbox permissions in Office 365 dedicated](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+
 **Is Azure Key Vault required and when are transactions made?**  
 
 Yes, an Azure subscription is required to use Key Vault to store the certificate to authorize migration. Unlike onboarding migrations which use username & password to authenticate to the source, cross-tenant mailbox migrations use OAuth and this certificate as the secret/credential. Access to the Key Vault must be maintained throughout all mailbox migrations as it is accessed once at the beginning and once end of migration, as well as once every 24 hours during incremental sync times. You can review AKV costing details [here]( https://azure.microsoft.com/en-us/pricing/details/key-vault/).  
@@ -565,7 +608,7 @@ Do remember that this feature is currently in preview and the SLA and any applic
 
 ## Known issues  
 
--  **Issue: Auto Expanded archives cannot be migrated.** The cross-tenant migration feature support migrations of the primary mailbox and archive mailbox for a specific user. If the user in the source however has an auto expanded archive – meaning more than one archive mailbox, the feature is unable to migrate the additional archives.
+-  **Issue: Auto Expanded archives cannot be migrated.** The cross-tenant migration feature support migrations of the primary mailbox and archive mailbox for a specific user. If the user in the source however has an auto expanded archive – meaning more than one archive mailbox, the feature is unable to migrate the additional archives and  should fail.
 
 - **Issue: Cloud MailUsers with non-owned smtp proxyAddress block MRS moves background.** When creating target tenant MailUser objects, you must ensure that all SMTP proxy addresses belong to the target tenant organization. If an SMTP proxyAddress exists on the target mail user that does not belong to the local tenant, the conversion of the MailUser to Mailbox is prevented. This is due to our assurance that mailbox objects can only send mail from domains for which the tenant is authoritative (domains claimed by the tenant): 
 
