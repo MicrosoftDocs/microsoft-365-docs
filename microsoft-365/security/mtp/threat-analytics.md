@@ -63,9 +63,6 @@ With more sophisticated adversaries and new threats emerging frequently and prev
 
 Each report provides an analysis of a tracked threat and extensive guidance on how to defend against that threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable protections in place.
 
-Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
-<p></p>
-
 ## View the threat analytics dashboard
 
 The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https://security.microsoft.com/threatanalytics3)) highlights the reports that are most relevant to your organization. It summarizes the threats in the following sections:
