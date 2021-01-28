@@ -33,6 +33,12 @@ ms.custom: seo-marvel-apr2020
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 >
 
+> [!IMPORTANT]
+> **Microsoft 365 Defender Threat analytics is currently in public preview**<br>
+> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain capabilities might not be supported or might have limitations.<br> 
+> For more information, see [Preview features in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/preview).
+
+
 Each [threat analytics report](threat-analytics.md) includes dynamic sections and a comprehensive written section called the _analyst report_. To access this section, open the report about the tracked threat and select the **Analyst report** tab.
 
 ![Image of the analyst report section of a threat analytics report](../../media/threat-analytics/ta_analystreport_mtp.png)
