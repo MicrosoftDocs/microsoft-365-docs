@@ -40,7 +40,8 @@ You can continue to manage access to Microsoft 365 Defender using existing [Glob
 
 With custom role-based access (RBAC) roles, you can tailor specific access for specific roles. Custom roles allow admins to manage permissions according to specific workloads within Microsoft 365 Defender, with the ability to assign dedicated teams for each product. 
 
->![NOTE] You can create custom RBAC roles for Defender for Office and Defender for Endpoint. However, Microsoft Cloud App Security and Defender for Identity requires setting roles in their respective portals.
+> ![NOTE]
+> You can create custom RBAC roles for Defender for Office and Defender for Endpoint. However, Microsoft Cloud App Security and Defender for Identity requires setting roles in their respective portals.
 
 Admins can manage user access to specific data, tasks, and capabilities in Microsoft 365 Defender with custom roles. Users are assigned with the least-permissive role necessary and only with the level of access that is required for their role.
 
