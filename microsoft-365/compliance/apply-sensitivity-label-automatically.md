@@ -133,7 +133,7 @@ Also similarly to DLP policy configuration, you can choose whether a condition m
 
 ### Configuring trainable classifiers for a label
 
-This option is currently in preview. If you use this option, make sure you have at least one other sensitivity label that's configured and published in your tenant for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
+This option is currently in preview. If you use this option, make sure you have published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
 
 When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
