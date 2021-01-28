@@ -7,7 +7,9 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Learn about image tagging in SharePoint Syntex'

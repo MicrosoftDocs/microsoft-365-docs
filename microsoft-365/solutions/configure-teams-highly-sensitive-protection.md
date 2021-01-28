@@ -148,7 +148,7 @@ To configure owners-only site sharing
 2. In the tool bar for the team, click **Files**.
 3. Click the ellipsis, and then click **Open in SharePoint**.
 4. In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
-5. In the Site permissions pane, under **Sharing Settings**, click **Change sharing settings**.
+5. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
 6. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
 7. Set **Allow access requests** to **Off**, and then click **Save**.
 

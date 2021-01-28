@@ -32,19 +32,26 @@ Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 - **Fast**: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. This group serves as a next layer of validation but is typically more stable than the Test and First groups. 
 - **Broad**: Last group to have feature and quality updates available. This group contains most of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
 
+### Moving devices between update groups
+You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, [submit an administrator support request](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) and we will move the devices for you. 
+
 > [!NOTE]
-> If you need to move a user to a different update group, submit a support request. See [Support for Microsoft Managed Desktop](support.md) for more information on submitting support requests. If you move a user yourself, the move will be reverted.
+> If you need to move a user to a different update group, submit a support request. Do not move devices between update groups yourself. There are serious consequences if a device is moved incorrectly. The device could update unexpectedly and policies might conflict, changing the device configuration.
 
-For more information roles and responsibilities with these deployment groups, see [Microsoft Managed Desktop Roles and responsibilities](../intro/roles-and-responsibilities.md)
+For more information on roles and responsibilities within these deployment groups, see [Microsoft Managed Desktop Roles and responsibilities](../intro/roles-and-responsibilities.md)
 
-How update deployment works:
-- Microsoft Managed Desktop deploys a new feature or quality update according the the schedule specified in the table.
-- During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption (based on diagnostic data and the user support system). If any are detected, then the deployment to all current and future groups is immediately paused.
+### Using Microsoft Managed Desktop update groups 
+There are parts of the service that you manage, like app deployment, where it might be necessary to target all managed devices. In these instances, it makes sense to use update groups to reach those users with the understanding that you cannot add, remove, or change the membership of those groups. 
+
+## How update deployment works:
+1. Microsoft Managed Desktop deploys a new feature or quality update according the schedule specified in the following table.
+2. During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption based on diagnostic data and the user support system. If any are detected, we immediately pause the deployment to all current and future groups.
     - Example: if an issue is discovered while deploying a quality update to the First group, then update deployments to First, Fast, and Broad will all be paused until the issue is resolved.
-    - Compatibility issues can be reported by filing a ticket in the Microsoft Managed Desktop Admin portal.
-- Feature and quality updates are paused independently. Pause is in effect for 35 days by default, but can be reduced or extended depending on whether the issue is remediated.
-- Once the groups are unpaused, deployment resumes according to the schedule in the table.
-- This deployment process applies to both feature and quality updates, though the timeline varies for each.
+    - You can report compatibility issues by filing a ticket in the Microsoft Managed Desktop Admin portal.
+    - Feature and quality updates are paused independently. Pause is in effect for 35 days by default, but can be reduced or extended depending on whether the issue is remediated.
+3. Once the groups are un-paused, deployment resumes according to the schedule in the table.
+
+This deployment process applies to both feature and quality updates, though the timeline varies for each.
 
 
 
@@ -58,6 +65,7 @@ How update deployment works:
     <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
     <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Learn more</a></td></tr>
     <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Learn more</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">Learn more</a></td></tr>
 </table>
 
 >[!NOTE]
@@ -73,6 +81,5 @@ Any devices found with Windows Insider builds might be put into the Test group a
 
 ## Bandwidth management
 
-We use [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) for all operating system and driver updates. This feature minimizes the download size from the Windows Update service by seeking updates from peers within the corporate network.
-
+We use [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) for all operating system and driver updates. This minimizes the download size from the Windows Update service by seeking updates from peers within the corporate network.
 
