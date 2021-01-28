@@ -59,7 +59,7 @@ Watch this short video to learn more about how threat analytics can help you tra
 The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https://security.microsoft.com/threatanalytics3)) highlights the reports that are most relevant to your organization. It summarizes the threats in the following sections:
 
 - **Latest threats**—lists the most recently published or updated threat reports, along with the number of active and resolved alerts.
-- **High-impact threats**—lists the threats that have had the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
+- **High-impact threats**—lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
 - **Threat summary**—provides the overall impact of all tracked threats by showing the number of threats with active and resolved alerts.
 
 Select a threat from the dashboard to view the report for that threat.
@@ -94,7 +94,7 @@ Each report includes charts designed to provide information about the organizati
   - Severity of active incidents
 - **Alerts over time**—shows the number of related **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
 - **Impacted assets**—shows the number of distinct devices and email accounts (mailboxes) that currently have at least one active alert associated with the tracked threat. Alerts are triggered for mailboxes that received threat emails. Review both org- and user-level policies for overrides that cause the delivery of threat emails.
-- **Prevented email attempts**—shows the number of emails that were either blocked before delivery or delivered to the junk mail folder. These attacks are considered to have been stopped before they arrived.
+- **Prevented email attempts**—shows the number of emails from the past seven days that were either blocked before delivery or delivered to the junk mail folder.
 
 #### Review security resilience and posture
 Each report includes charts that provide an overview of how resilient your organization is against a given threat:
@@ -129,6 +129,8 @@ The **Prevented email attempts** tab lists all the emails that have either been 
 
 ![Image of the prevented email attempts section of a threat analytics report](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
+_Prevented email attempts section of a threat analytics report_
+
 ### Mitigations: Review list of mitigations and the status of your devices
 In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
 
@@ -147,13 +149,13 @@ _Mitigations section of a threat analytics report_
 
 ## Additional report details and limitations
 >[!NOTE]
->As part of the unified security experience, threat analytics is now available for everyone with E5 license, not just Microsoft Defender for Endpoint, but also for Microsoft Defender for Office license holders.
+>As part of the unified security experience, threat analytics is now available not just for Microsoft Defender for Endpoint, but also for Microsoft Defender for Office E5 license holders.
 >If you are not using the Microsoft 365 security portal (Microsoft 365 Defender), you can also see the report details (without the Microsoft Defender for Office data) in the Microsoft Defender Security Center portal (Microsoft Defender for Endpoint). 
 
 When using the reports, keep these in mind: 
 
 - Data is scoped based on your role-based access control (RBAC) scope. You'll see the status of devices in [groups that you can access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups).
-  -	To view alert data, you need permissions to either Microsoft Defender for Office, or Microsoft Defender for Endpoint, or both.
+  -	To view alerts, incidents, or impacted assets data, you need access to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
   -	To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data. 
   -	To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
 - Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not shown in the charts.
