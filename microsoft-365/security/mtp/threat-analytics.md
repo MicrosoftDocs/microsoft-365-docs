@@ -35,6 +35,7 @@ ms.custom: seo-marvel-apr2020
 
 >[!IMPORTANT]
 >**Microsoft 365 Defender Threat analytics is currently in public preview**
+<br></br>
 >This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain capabilities might not be supported or might have limitations. For more information, see [Preview features in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/preview).
 
 
