@@ -2,7 +2,7 @@
 title: Track and respond to emerging threats with threat analytics
 ms.reviewer: 
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
-keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration 
+keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft 365 Defender threat analytics   
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -128,16 +128,16 @@ _Related incidents section of a threat analytics report_
 ### Impacted assets: Get list of impacted devices and mailboxes
 An asset is considered impacted if it is affected by an active, unresolved alert. The **Impacted assets** tab lists the following types of impacted assets:
 - **Impacted devices**—endpoints that have unresolved Microsoft Defender for Endpoint alerts. These alerts typically fire on sightings of known threat indicators and activities.
-- **Impacted mailboxes**—mailboxes that have received email messages that have triggered Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
+- **Impacted mailboxes**—mailboxes that have received email messages that have triggered Microsoft Defender for Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
 
 ![Image of the impacted assets section of a threat analytics report](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
 _Impacted assets section of a threat analytics report_
 
 ### Prevented email attempts: View blocked or junked threat emails
-Office 365 typically blocks emails with known threat indicators, including malicious links or attachments. In some cases, proactive filtering mechanisms that check for suspicious content will instead send threat emails to the junk mail folder. In either case, the chances of the threat launching malware code on the device is reduced.
+Microsoft Defender for Office 365 typically blocks emails with known threat indicators, including malicious links or attachments. In some cases, proactive filtering mechanisms that check for suspicious content will instead send threat emails to the junk mail folder. In either case, the chances of the threat launching malware code on the device is reduced.
 
-The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Office 365. 
+The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Microsoft Defender for Office 365. 
 
 ![Image of the prevented email attempts section of a threat analytics report](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
