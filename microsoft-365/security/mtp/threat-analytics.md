@@ -41,6 +41,12 @@ Threat analytics is our in-product threat intelligence solution from expert Micr
 - Common attack surfaces
 - Prevalent malware
 
+You can access Threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card which shows the top threats in your org.
+
+![Image of a threat analytics dashboard](../../media/threat-analytics/ta_inlandingpage_mtp.png)
+
+_Where to access Threat analytics_
+
 With more sophisticated adversaries and new threats emerging frequently and prevalently, it's critical to be able to quickly:
 
 - Identify and react to emerging threats 
