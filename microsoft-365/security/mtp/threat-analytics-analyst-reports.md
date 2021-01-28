@@ -85,7 +85,7 @@ EDR alerts are raised for [devices onboarded to Microsoft Defender for Endpoint]
 
 Like the list of antivirus detections, some EDR alerts are designed to generically flag suspicious behavior that might not be associated with the tracked threat. In such cases, the report will clearly identify the alert as "generic" and that it doesn't influence any of the charts in the report.
 
-### Email related detections and mitigations
+### Email-related detections and mitigations
 Email-related detections and mitigations from Microsoft Defender for Office 365, are included in analyst reports in addition to the endpoint data already available from Microsoft Defender for Endpoint. 
 
 Prevented email attempt information gives you insights on whether your organization were a target of the threat tackled in the analyst report even if the attack has been effectively blocked before delivery or delivered to the junk mail folder.
