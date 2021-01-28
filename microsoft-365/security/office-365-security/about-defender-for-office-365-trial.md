@@ -102,7 +102,7 @@ Admins can disable the trial at any point by going to the <> card.
 
 ## Availability
 
-The Defender for Office 365 trial feature is currently in Public Preview. It's rolling out to existing Microsoft 365 organizations in specific geographies that meet certain requirements (first and foremost, they don't have existing Defender for Office 365 Plan 1 or Plan 2 licenses included in the subscription or as an add-on).
+The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan 1 or Plan 2 licenses (included in their subscription or as an add-on).
 
 ## Give feedback
 
