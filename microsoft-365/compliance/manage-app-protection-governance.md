@@ -29,7 +29,7 @@ Microsoft Application Protection and Governance (MAPG) is a solution for Microso
 
 Unlike other application governance products in the marketplace, MAPG is a platform-based solution that is an integral part of the Microsoft 365 app ecosystem. Today, Microsoft allows developers to build cloud applications using Azure AD, Microsoft’s cloud identity platform, and other resources and access to tenant data through the Microsoft Graph. With MAPG, developers can build high-quality productivity apps that are secure and compliant.
 
-With MAPG, Microsoft 365 provides a comprehensive level of protection from malicious actors that use apps to access your tenant data:
+MAPG in Microsoft 365 provides a comprehensive level of protection from malicious actors that use apps to access your tenant data:
 
 - App access and restrictions based on user and device identity
 
@@ -57,10 +57,12 @@ In this illustration:
 
 MAPG has the following levels of functionality:
 
-- Basic: Provided with all  Microsoft 365 products, from Microsoft 365 Business Premium to Microsoft 365 E5.
-- Premium: Provided with Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Compliance add-on.
-- Security: Provided with Microsoft Cloud App Security in Microsoft 365 E3 or Microsoft 365 E3 with the Identity & Threat Protection add-on.
-
+| Level | Provided with: |
+|:-------|:-----|
+| Basic | All  Microsoft 365 products, from Microsoft 365 Business Premium to Microsoft 365 E5. |
+| Premium | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Compliance add-on. |
+| Security | Microsoft Cloud App Security in Microsoft 365 E3 or Microsoft 365 E3 with the Identity & Threat Protection add-on. |
+|||
 
 ## Administrator roles
 
