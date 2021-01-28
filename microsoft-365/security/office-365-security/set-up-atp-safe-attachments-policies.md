@@ -1,22 +1,24 @@
 ---
-title: "Set up Safe Attachments policies in Microsoft Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: Set up Safe Attachments policies in Microsoft Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
 description: Learn about how to define Safe Attachments policies to protect your organization from malicious files in email.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Set up Safe Attachments policies in Microsoft Defender for Office 365
@@ -101,7 +103,7 @@ Creating a custom Safe Attachments policy in the Security & Compliance Center cr
 
      The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-   - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enabled redirect**. Otherwise, messages might be lost.
+   - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. If you selected this option, always select **Enabled redirect**. Otherwise, messages might be lost.
 
    When you're finished, click **Next**.
 

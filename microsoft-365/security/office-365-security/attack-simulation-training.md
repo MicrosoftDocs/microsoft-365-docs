@@ -1,16 +1,17 @@
 ---
-title: "Simulate a phishing attack with Microsoft Defender for Office 365"
+title: Simulate a phishing attack with Microsoft Defender for Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365.
+ms.technology: mdo
 ---
 
 # Simulate a phishing attack

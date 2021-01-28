@@ -1,23 +1,25 @@
 ---
-title: "Anti-spam protection FAQ"
-f1.keywords:
-- NOCSH
+title: Anti-spam protection FAQ
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP)."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Anti-spam protection FAQ

@@ -1,20 +1,22 @@
 ---
-title: "User tags in Microsoft Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: User tags in Microsoft Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users."
+search.appverid: 
+  - MET150
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # User tags in Microsoft Defender for Office 365

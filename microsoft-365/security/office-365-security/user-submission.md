@@ -1,21 +1,23 @@
 ---
-title: "User submissions policy"
-f1.keywords:
-- NOCSH
+title: User submissions policy
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # User submissions policy
@@ -66,6 +68,15 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
 
   - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
   - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+- You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specify the submissions mailbox:
+
+  > Specify an email address in your domain
+
+  For more information about enabling or disabling access to Exchange Online PowerShell, see the following topics:
+
+  - [Enable or disable access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Client Access Rules in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## Use the Security & Compliance Center to configure the user submissions mailbox
 

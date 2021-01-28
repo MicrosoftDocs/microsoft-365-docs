@@ -7,9 +7,11 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 localization_priority: Priority
-description: "Leverage term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex."
+description: "Use term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex."
 ---
 
 # Leverage term store taxonomy when creating an extractor
@@ -28,13 +30,13 @@ As an example, your model identifies and classifies all **Contract** documents t
 
 ## Use a Managed metadata column in your extractor
 
-Term sets are configured in the Managed Metadata services (MMS) term store in the SharePoint admin center. In the the example below, the *Contract Services* [term set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) is configured to include a number of terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*. 
+Term sets are configured in the Managed Metadata services (MMS) term store in the SharePoint admin center. In the example below, the *Contract Services* [term set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) is configured to include several terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*. 
 
    ![Term set](../media/content-understanding/term-store.png)</br>
 
-There could be a number of reasons why you might want to use a synonym in your term set. For example, there could be outdated terms, renamed terms, or variations between your organizations departments on naming.
+There could be many reasons why you might want to use a synonym in your term set. For example, there could be outdated terms, renamed terms, or variations between your organizations departments on naming.
 
-To make the managed metadata field available for you to select when you create your extractor in your model, you need to [add it as a managed-metadata site column](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). After you add the site column, it will be available for you to select when you create the extractor for your model.
+To make the managed metadata field available to select when you create your extractor in your model, you need to [add it as a managed-metadata site column](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). After you add the site column, you can select it when you create the extractor for your model.
 
    ![Contract service](../media/content-understanding/contract-services.png)</br>
 

@@ -4,20 +4,21 @@ description: Describes the recommended common identity and device access policie
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.reviewer: martincoetzer
 ms.custom: 
-- it-pro
-- goldenconfig
+  - it-pro
+  - goldenconfig
 ms.collection: 
-- M365-identity-device-management
-- M365-security-compliance
-- remotework
-- m365solution-identitydevice
-- m365solution-scenario
+  - M365-identity-device-management
+  - M365-security-compliance
+  - remotework
+  - m365solution-identitydevice
+  - m365solution-scenario
+ms.technology: mdo
 ---
 
 # Common identity and device access policies
@@ -237,6 +238,8 @@ To create the Conditional Access policy that requires approved apps and APP prot
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
 
 If you are enabling mobile access to Exchange Online, implement [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. This policy is not pictured in the illustration at the top of this article. It is described and pictured in [Policy recommendations for securing email](secure-email-recommended-policies.md).
+
+To create the Conditional Access policy that requires Edge for iOS and Android, follow "Step 2: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 2: Browser apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies), which allows Edge for iOS and Android, but blocks other mobile device web browsers from connecting to Microsoft 365 endpoints.
 
  These policies leverage the grant controls [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 

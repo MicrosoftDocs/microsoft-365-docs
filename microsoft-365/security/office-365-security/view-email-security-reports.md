@@ -1,23 +1,25 @@
 ---
 title: View email security reports in the Security & Compliance Center
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
-ms.collection:
-- M365-security-compliance
-description: "Learn how to find and use email security reports for your organization. Email security reports are available in the Security & Compliance Center."
+ms.collection: 
+  - M365-security-compliance
+description: Learn how to find and use email security reports for your organization. Email security reports are available in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # View email security reports in the Security & Compliance Center

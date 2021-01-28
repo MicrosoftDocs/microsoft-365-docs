@@ -2,21 +2,23 @@
 title: Evaluate Microsoft Defender for Office 365
 description: Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don't act on messages.
 keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, ATP
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance
+  - M365-security-compliance
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Evaluate Microsoft Defender for Office 365
@@ -99,7 +101,7 @@ Enhanced filtering for connectors will allow tenants to use anti-spoofing protec
 
 ### URLs
 
-URLs will be detonated during mail flow. If you don't want specific URLs detonated, manage your list of allowed URLs appropriately. See [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md) for details.
+URLs will be detonated during mail flow. If you don't want specific URLs detonated, manage your list of allowed URLs appropriately. See [Manage the Tenant Allow/Block List](tenant-allow-block-list.md) for details.
 
 URL links in the email message bodies won't wrap, to lessen customer impact.
 

@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - MET150
 description: "Learn about Microsoft 365 Business Premium features."
