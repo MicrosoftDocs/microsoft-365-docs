@@ -37,7 +37,7 @@ To edit an existing topic, you need to:
 > [!Note] 
 > Users who have permission to manage topics in the Topic center (knowledge managers) already have permissions to create and edit topics.
 
-## Ways to edit 
+## How to edit a topic page
 
 Users who have the **Who can create or edit topics** permission can edit a topic by opening the topic page from a topic highlight, and then selecting the <b>Edit</b> button on the top right of the topic page.
 
@@ -47,13 +47,12 @@ Knowledge managers can also topics directly from the Manage Topics page by selec
 
    ![Edit topic in Manage Topics](../media/knowledge-management/manage-topics-edit.png) </br> 
 
-## Edit a topic page
-
-If you have permissions to edit a topic, after opening the topic page, you will be able to see **Edit** on the top right of the page.
-
-   ![Edit control](../media/knowledge-management/topic-page-edit.png) </br> 
+### Edit a topic page
 
 1. On the topic page, select **Edit**. This allows you to make changes as you need to the topic page.
+
+   ![Edit control](../media/knowledge-management/topic-page-edit.png) </br>  
+
 
 2. In the <b>Alternate Names</b> section, type any other names that the topic might be referred to. 
 
