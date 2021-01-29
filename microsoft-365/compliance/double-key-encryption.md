@@ -143,7 +143,7 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
 3. In Visual Studio Code, select **View** \> **Command Palette** and select **Git: Clone**. To jump to the option in the list, start typing `git: clone` to filter the entries and then select it from the drop-down. For example:
 
-   ![Visual Studio Code GIT:Clone option](../media/dke-vscode-clone.jpg)
+   ![Visual Studio Code GIT:Clone option](../media/dke-vscode-clone.png)
 
 4. In the text box, paste the URL that you copied from Git and select **Clone from GitHub**.
 
@@ -151,7 +151,7 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
     The repository opens in Visual Studio Code, and displays the current Git branch at the bottom left. For example,  The branch should be **main**. For example:
 
-   ![Screenshot of the DKE repo in Visual Studio Code displaying the main branch](../media/dke-vscode-main-branch.png)
+   ![Screenshot of the DKE repo in Visual Studio Code displaying the main branch](../media/dke-vscode-main-branch.jpg)
 
 6. If you're not on the main branch, you'll need to select it. In Visual Studio Code, select the branch and choose **main** from the list of branches that displays.
 
