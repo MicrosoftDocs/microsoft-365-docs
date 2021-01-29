@@ -19,7 +19,7 @@ ms.collection:
   - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/14/2021 
+ms.date: 01/29/2021 
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ---
@@ -78,5 +78,5 @@ In addition to remediation actions that follow automated investigations, your se
 ## Next steps
 
 - [Visit the Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-- [Approve or reject pending actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
+- [View and manage remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
 - [Handle false positives/negatives in automated investigation and response capabilities](mtp-autoir-report-false-positives-negatives.md)
