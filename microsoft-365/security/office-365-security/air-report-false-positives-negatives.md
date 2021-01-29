@@ -11,22 +11,20 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/27/2021
+ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
 - autoir
 ms.technology: mdo
 ---
 
 # How to report false positives/negatives in automated investigation and response capabilities
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to:**
 - Microsoft Defender for Office 365
@@ -80,6 +78,5 @@ In the Action center, you can see remediation actions that were taken and potent
 
 ## See also
 
-[Microsoft Defender for Office 365](office-365-atp.md)
-
-[AIR in Microsoft Defender for Office 365](office-365-air.md)
+- [Microsoft Defender for Office 365](office-365-atp.md)
+- [Automated investigations in Microsoft Defender for Office 365](office-365-air.md)
