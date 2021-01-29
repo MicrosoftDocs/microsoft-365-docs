@@ -63,11 +63,17 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 |:---|:---|
 | - Automated investigation <br/>- Microsoft Defender Antivirus <br/>- Manual response actions | - Isolate device <br/>- Restrict code execution <br/>- Quarantine a file <br/>- Remove a registry key <br/>- Stop a service <br/>- Disable a driver <br/>- Remove a scheduled task |
 
-### To undo a remediation action
+### Undo one remediation action
 
 1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
 2. On the **History** tab, select an action that you want to undo.
 3. In the pane on the right side of the screen, select **Undo**.
+
+### Undo multiple remediation actions
+
+1. Go to the Action center (https://security.microsoft.com/action-center) and sign in.
+2. On the **History** tab, select the actions that you want to undo. Make sure to select items that have the same Action type. A flyout pane opens.
+3. In the flyout pane, select **Undo**.
 
 ### To remove a file from quarantine across multiple devices 
 
