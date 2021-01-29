@@ -101,10 +101,10 @@ Common controls and content either appear in the same place, or are condensed in
 
 ![Permissions & Roles page showing Endpoints roles & groups, Roles, and Device groups.](../../media/converged-roles-5.png)
 
- Access the Microsoft 365 security center is configured with Azure Active Directory global roles or by using custom roles. For Defender for Endpoint, see [Assign user access to Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access.md). For Defender for Office 365, see [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security).
+ Access the Microsoft 365 security center is configured with Azure Active Directory global roles or by using custom roles. For Defender for Endpoint, see [Assign user access to Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access). For Defender for Office 365, see [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](../office-365-security/permissions-microsoft-365-compliance-security).
 
-- Learn more about how to [manage access to Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-permissions.md)
-- Learn more about how to [create custom roles](/microsoft-365/security/mtp/custom-roles.md) in Microsoft 365 security center
+- Learn more about how to [manage access to Microsoft 365 Defender](mtp-permissions.md)
+- Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 security center
 
 ### Integrated reports
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
