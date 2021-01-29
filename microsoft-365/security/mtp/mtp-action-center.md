@@ -31,9 +31,11 @@ ms.date: 01/29/2021
 **Applies to:**
 - Microsoft 365 Defender
 
-The improved Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together the results of current and past investigations across your organization's devices, email & collaboration content, and identities. As [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) are taken or are pending approval, such actions are consolidated in a single Action center, providing your security operations team with a "single pane of glass" experience.  
+We are pleased to announce a new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))! 
 
-![Action Center](../../media/air-actioncenter.png)
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender":::
+
+The improved Action center lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location. The Action center provides your security operations team with a "single pane of glass" experience to view and manage remediation actions.  
 
 Read this article to get an overview of the Action center, including available actions, required permissions, and next steps.
 
