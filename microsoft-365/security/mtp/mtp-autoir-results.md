@@ -88,8 +88,7 @@ In the Investigation details view, you can see information on the **Investigatio
 | **Mailboxes** |Lists mailboxes that are impacted by detected threats.  |
 | **Users**  | Lists user accounts that are impacted by detected threats. |
 | **Evidence** | Lists pieces of evidence raised by alerts/investigations. Includes verdicts (*Malicious*, *Suspicious*, or *No threats found*) and remediation status. |
-| **Entities**	| Provides details about each analyzed entity, including a verdict for each 
-entity type (*Malicious*, *Suspicious*, or *No threats found*).|
+| **Entities**	| Provides details about each analyzed entity, including a verdict for each entity type (*Malicious*, *Suspicious*, or *No threats found*).|
 |**Log**	| Provides a chronological, detailed view of all the investigation actions taken after an alert was triggered.|
 | **Pending actions** | Lists items that require approval to proceed. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to approve pending actions. |
 
