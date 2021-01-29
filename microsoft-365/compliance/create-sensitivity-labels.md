@@ -83,7 +83,7 @@ This button starts the **Edit sensitivity label** wizard, which lets you change 
 Don't delete a label unless you understand the impact for users. For more information, see the [Removing and deleting labels](#removing-and-deleting-labels) section. 
 
 > [!NOTE]
-> If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to users and services.
+> If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to all apps and services.
 
 Until you publish your labels, they won't be available to select in apps or for services. To publish the labels, they must be [added to a label policy](#publish-sensitivity-labels-by-creating-a-label-policy).
 
@@ -179,7 +179,7 @@ To edit an existing label policy, select it, and then select the **Edit Policy**
 
 This button starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
 
-Users see new labels in their Office apps within one hour. However, allow up to 24 hours for changes to existing labels to replicate to all users and services.
+When you use built-in labeling for Windows, macOS, iOS and Android, users see new labels in their Office apps within four hours, and within one hour for Office on the web. However, allow up to 24 hours for changes to replicate to all apps and services.
 
 ### Additional label policy settings with Security & Compliance Center PowerShell
 
