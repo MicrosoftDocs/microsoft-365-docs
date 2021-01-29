@@ -8,7 +8,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 01/28/2021
+ms.date: 01/29/2021
 localization_priority: Normal
 search.appverid: 
 - MET150
@@ -26,8 +26,6 @@ ms.prod: m365-security
 
 # Automated investigation and response (AIR) in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 [Microsoft Defender for Office 365](office-365-atp.md) includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. As alerts are triggered, it's up to your security operations team to review, prioritize, and respond to those alerts. Keeping up with the volume of incoming alerts can be overwhelming. Automating some of those tasks can help.
 
 AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well-known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond effectively to detected threats. With AIR, your security operations team can focus on higher-priority tasks without losing sight of important alerts that are triggered.
@@ -38,7 +36,6 @@ This article describes:
 - [How to get AIR](#how-to-get-air); and 
 - The [required permissions](#required-permissions-to-use-air-capabilities) to configure or use AIR capabilities. 
 - Changes that are coming soon to your security center
-
 
 This article also includes [next steps](#next-steps), and resources to learn more.
 
@@ -54,15 +51,12 @@ An alert is triggered, and a security playbook starts an automated investigation
 4. Your security operations team reviews the [investigation results and recommendations](air-view-investigation-results.md), and [approves or rejects remediation actions](air-review-approve-pending-completed-actions.md).
 5. As pending remediation actions are approved (or rejected), the automated investigation completes.
 
-> [!IMPORTANT]
-> In Microsoft Defender for Office 365, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. AIR capabilities save your security operations team time by identifying remediation actions and providing the details needed to make an informed decision.
+In Microsoft Defender for Office 365, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. AIR capabilities save your security operations team time by identifying remediation actions and providing the details needed to make an informed decision.
 
 During and after each automated investigation, your security operations team can:
 
 - [View details about an alert related to an investigation](air-view-investigation-results.md#view-details-about-an-alert-related-to-an-investigation)
-
 - [View the results details of an investigation](air-view-investigation-results.md#view-details-of-an-investigation)
-
 - [Review and approve actions as a result of an investigation](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
@@ -72,27 +66,17 @@ During and after each automated investigation, your security operations team can
 
 AIR capabilities are included in [Microsoft Defender for Office 365](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. If you would like some help with this, follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
 
-1. [Audit logging](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) (should be turned on)
-
-2. [Antimalware policies](protect-against-threats.md#part-1---anti-malware-protection)
-
-3. [Antiphishing protection](protect-against-threats.md#part-2---anti-phishing-protection)
-
-4. [Antispam protection](protect-against-threats.md#part-3---anti-spam-protection).
-
-3. [Antiphishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-2---anti-phishing-protection)
-   
-4. [Antispam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-3---anti-spam-protection)
-   
-5. [Safe Links and Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-   
-6. [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-   
-7. [Zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?zero-hour-auto-purge-for-email-in-eop)
-
-6. [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on).
-
-7. [Zero-hour auto purge for email](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop).
+- [Audit logging](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) (should be turned on)
+- [Antimalware policies](protect-against-threats.md#part-1---anti-malware-protection)
+- [Antiphishing protection](protect-against-threats.md#part-2---anti-phishing-protection)
+- [Antispam protection](protect-against-threats.md#part-3---anti-spam-protection)
+- [Antiphishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-2---anti-phishing-protection)
+- [Antispam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-3---anti-spam-protection)
+- [Safe Links and Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [Zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?zero-hour-auto-purge-for-email-in-eop)
+- [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [Zero-hour auto purge for email](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop).
 
 In addition, make sure to [review your organization's alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies), especially the [default policies in the Threat management category](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?default-alert-policies).
 
@@ -133,7 +117,9 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Changes are coming soon in your security center
 
-If you’re already using AIR capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [new and improved Microsoft 365 security center](../mtp/overview-security-center.md). 
+If you’re already using AIR capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [improved Microsoft 365 security center](../mtp/overview-security-center.md). 
+
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center":::
 
 The new and improved security center brings together AIR capabilities in [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) and in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
 
