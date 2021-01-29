@@ -175,7 +175,6 @@ Admins can set up a mail flow rule to remove encryption from outgoing mail. You 
 
 Not at this time.
 
-
 ## Can I send as a shared mailbox and encrypt emails?
 
 When someone sends an email message that matches an encryption mail flow rule, the message is encrypted before it's sent.
@@ -204,7 +203,6 @@ There are currently two known limitations:
 - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
 
 - We don't support assignment through an email enabled security group. We only support access provided by direct user assignment to the shared mailbox and that automapping is enabled for Exchange Online. Automapping is enabled by default for Exchange Online.
-
 
 **To assign a user to the shared mailbox**
 
