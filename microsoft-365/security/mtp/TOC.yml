@@ -27,9 +27,9 @@
             - name: Microsoft 365 security center
               href: overview-security-center.md
             - name: Troubleshoot issues
-              href: ./mtp/troubleshoot.md
+              href: troubleshoot.md
             - name: Industry tests
-              href: ./mtp/top-scoring-industry-tests.md
+              href: top-scoring-industry-tests.md
         - name: Plan
           items: 
             - name: Prerequisites
@@ -41,9 +41,9 @@
         - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
-              href: mtp/mtp-evaluation.md
+              href: m365d-evaluation.md
             - name: Prepare
-              href: mtp/prepare-m365d-eval.md
+              href: prepare-m365d-eval.md
             - name: Setup
               href: setup-m365deval.md
             - name: Configure and onboard
@@ -76,7 +76,7 @@
             - name: Create a trial lab or pilot environment
               href: m365d-evaluation.md
             - name: Run pilot playbook
-              href: mtp/mtp-pilot.md
+              href: m365d-pilot.md
 
 
             - name: Turn on FAQ
@@ -248,9 +248,9 @@
                 - name: Create ServiceNow tickets and tasks
                   items: 
                     - name: ServiceNow integration overview
-                      href: ./mtp/tickets.md
+                      href: tickets.md
                     - name: ServiceNow tickets in the security center
-                      href: ./mtp/tickets-security-center.md
+                      href: tickets-security-center.md
             - name: Microsoft 365 Defender APIs (Preview)
               items: 
                 - name: Overview of Microsoft 365 Defender APIs (Preview)
@@ -288,4 +288,9 @@
                         - name: Update incident
                           href: api-update-incidents.md
             - name: New Microsoft 365 security center
-              href: ./mtp/overview-security-center.md
+              href: overview-security-center.md
+      - name: References
+        items: 
+        - name: Understand the latest attack techniques
+          href: latest-attack-campaigns.md   
+              
