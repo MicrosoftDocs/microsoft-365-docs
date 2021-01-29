@@ -143,7 +143,7 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
 3. In Visual Studio Code, select **View** \> **Command Palette** and select **Git: Clone**. To jump to the option in the list, start typing `git: clone` to filter the entries and then select it from the drop-down. For example:
 
-   ![Visual Studio Code GIT:Clone option](../media/dke-vscode-clone.png)
+   ![Visual Studio Code GIT:Clone option](../media/dke-vscode-clone.jpg)
 
 4. In the text box, paste the URL that you copied from Git and select **Clone from GitHub**.
 
