@@ -1,7 +1,7 @@
 ---
 title: Handle false positives or false negatives in AIR in Microsoft 365 Defender
 description: Was something missed or wrongly detected by AIR in Microsoft 365 Defender? Learn how to submit false positives or false negatives to Microsoft for analysis.
-keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
+keywords: automated, investigation, alert, remediation, false positive, false negative
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/27/2021
+ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
