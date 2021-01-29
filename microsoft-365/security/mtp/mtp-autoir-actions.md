@@ -37,10 +37,12 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 - Antivirus, antimalware, and other threat protection features can result in remediation actions, such as blocking a file, URL, or process, or sending an artifact to quarantine.
 - Your security operations team can take remediation actions manually, such as during advanced hunting or while investigating detected threats.
 
+> [!NOTE]
+> You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see [Prerequisites for automated investigation and response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
+
 ## Review a pending action in the Action center
 
 It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
-
 
 ![Approve or reject an action](../../media/air-actioncenter-itemselected.png)
 
@@ -52,14 +54,6 @@ It's important to approve (or reject) pending actions as soon as possible so tha
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
    - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md). 
-
-## Review a pending action in the investigation details view
-
-![Investigation details](../../media/mtp-air-investdetails.png)
-
-1. On an [investigation details](mtp-autoir-results.md) page, select the **Pending actions** tab. Items that are pending approval are listed here.
-2. Select an item in the list to open its flyout pane.
-3. In the flyout pane, choose **Approve** or **Reject**.
 
 ## Undo completed actions
 
