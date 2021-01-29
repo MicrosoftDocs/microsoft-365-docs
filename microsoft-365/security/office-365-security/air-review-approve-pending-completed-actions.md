@@ -7,7 +7,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 localization_priority: Normal
 search.appverid: 
 - MET150
@@ -18,14 +18,11 @@ ms.collection:
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.date: 01/27/2021
+ms.date: 01/29/2021
 ---
 
 # View pending or completed remediation actions following an automated investigation in Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-![AIR investigations action page](../../media/air-investigationactionspage.png)
 
 ## Approve (or reject) pending actions
 

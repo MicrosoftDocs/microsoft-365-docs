@@ -90,4 +90,4 @@ Security settings in Office 365 help protect email and content. To view or chang
 ## Next steps
 
 - [Remediation actions in Microsoft 365 Defender](mtp-remediation-actions.md)
-- [Visit the Action center](mtp-action-center.md).
+- [Visit the Action center](mtp-action-center.md)

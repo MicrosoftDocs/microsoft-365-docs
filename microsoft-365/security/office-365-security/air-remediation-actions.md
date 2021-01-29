@@ -25,9 +25,6 @@ ms.prod: m365-security
 
 # Remediation actions in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-
 ## Remediation actions
 
 Threat protection features in [Microsoft Defender for Office 365](office-365-atp.md) include certain remediation actions. Such remediation actions can include:
