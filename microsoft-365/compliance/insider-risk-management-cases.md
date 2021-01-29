@@ -154,15 +154,13 @@ To add a note to a case:
 
 ### Contributors
 
-The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case.
+The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case. Only users assigned the **Insider Risk Management Investigators** role have permission to view files and messages in the Content Explorer.
 
-All insider risk management cases must be managed with appropriate access controls in place to maintain confidentiality and integrity of the investigation. To help maintain access control of cases, users are assigned one of two types of access to cases:
+Temporary access to a case can be granted by adding a user as a contributor. Contributors have all case management control on the specific case except:
 
-- **Permanent access**: Permanent access is automatically granted to users with the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles when the case is created from an alert. Permanent access grants full control of the case for the lifetime of the case and grants the ability to add other case contributors.
-- **Temporary access**: Temporary access is only granted to users by contributors that have permanent access for the case. Typically, this access level is granted to user that needs to add notes to a case. Contributors with temporary access have all case management control except:
-    - Permission to confirm or dismiss alerts
-    - Permission to edit the contributors for cases
-    - Permission to view files and messages in the Content Explorer
+- Permission to confirm or dismiss alerts
+- Permission to edit the contributors for cases
+- Permission to view files and messages in the Content Explorer
 
 To add a contributor to a case:
 
