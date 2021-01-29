@@ -237,6 +237,8 @@
           href: data-loss-prevention-policies.md
         - name: DLP and Microsoft Teams
           href: dlp-microsoft-teams.md
+        - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)
+          href: dlp-teams-default-policy.md  
         - name: Learn about Endpoint data loss prevention
           href: endpoint-dlp-learn-about.md
         - name: Get started with Endpoint data loss prevention
