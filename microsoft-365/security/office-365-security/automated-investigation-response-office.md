@@ -1,26 +1,25 @@
 ---
 title: How automated investigation and response works in Microsoft Defender for Office 365
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-
 localization_priority: Normal
 search.appverid: 
-  - MET150
-  - MOE150
+- MET150
+- MOE150
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-defender-office365
+- M365-security-compliance
+- m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
-ms.date: 11/05/2020
+ms.date: 01/29/2021
 description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
 ms.custom: 
-  - air
-  - seo-marvel-mar2020
+- air
+- seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -90,7 +89,4 @@ For example, recently, an organization set up a way for their security operation
 ## Next steps
 
 - [Get started using AIR](office-365-air.md)
-
-- [Visit the Microsoft 365 Roadmap to see what's planned and releasing soon](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
-- [Learn about automated investigation and response capabilities in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- 
