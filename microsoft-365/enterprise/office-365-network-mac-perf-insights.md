@@ -25,6 +25,7 @@ Insights are intended to help in designing network perimeters for your office lo
 There are six specific network insights that may be shown for each office location:
 
 - [Backhauled network egress](#backhauled-network-egress)
+- [Network intermediary device](#network-intermediary-device)
 - [Better performance detected for customers near you](#better-performance-detected-for-customers-near-you)
 - [Use of a non-optimal Exchange Online service front door](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Use of a non-optimal SharePoint Online service front door](#use-of-a-non-optimal-sharepoint-online-service-front-door)
@@ -58,6 +59,18 @@ Details for this insight include the office location, estimated percentage of to
 For this insight, we would recommend network egress closer to the office location so that connectivity can route optimally to Microsoft's global network and to the nearest Microsoft 365 service front door. Having close network egress to users office locations also allows for improved performance in the future as Microsoft expands both network points of presence and Microsoft 365 service front doors in the future.
 
 For more information about how to resolve this issue, see [Egress network connections locally](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) in [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+
+## Network intermediary device
+
+This insight will be displayed if we detected devices between your users and Microsoft's network which may impact the Office 365 user experience. It is recommended that these be bypassed for specific Office 365 network traffic that is destined for Microsoft datacenters. This recommendation is additionally described in [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-printicples.md)
+
+### What does this mean?
+
+Network intermediary devices such as proxy servers, VPNs, and data loss prevention devices can affect performance and stability of Office 365 clients where traffic is intermediated.
+
+### What should I do?
+
+Configure the network intermediary device that was detected to bypass processing for Office 365 network traffic.
 
 ## Better performance detected for customers near you
 
