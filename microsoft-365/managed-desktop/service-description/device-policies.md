@@ -18,7 +18,7 @@ ms.topic: article
 
 <!-- Device configuration and Security Addendum-->
 
-When a new Microsoft Managed Desktop device is being set up, we ensure that it has the right configuration optimized for Microsoft Managed Desktop. This includes a set of default policies that are set as part of the onboarding process. These policies are delivered using Mobile Device Management (MDM) whenever possible. For more information, see [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/). 
+When a new Microsoft Managed Desktop device is being set up, we ensure that it has the right configuration optimized for Microsoft Managed Desktop. That configuration includes a set of default policies that are set as part of the onboarding process. These policies are delivered using Mobile Device Management (MDM) whenever possible. For more information, see [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/). 
 
 >[!NOTE]
 >To avoid conflicts, do not alter these policies.
@@ -39,7 +39,7 @@ Metered connections | By default, updates over metered connections (such as LTE 
 
 ## Windows diagnostic data
 
- Devices will be set to provide enhanced diagnostic data to Microsoft under a known commercial identifier. As part of Microsoft Managed Desktop, IT admins can not change these settings. For customers in General Data Protection Regulation (GDPR) regions, users can reduce the level of diagnostic data that is provided, but there will be a reduction in service. For example, Microsoft Managed Desktop will be unable to collect the data necessary to iterate on settings and policies to best serve performance and security needs. For more information, see [Configure Windows diagnostic data in your organization.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+ Devices will be set to provide enhanced diagnostic data to Microsoft under a known commercial identifier. As part of Microsoft Managed Desktop, IT admins cannot change these settings. For customers in General Data Protection Regulation (GDPR) regions, users can reduce the level of diagnostic data that is provided, but there will be a reduction in service. For example, Microsoft Managed Desktop will be unable to collect the data necessary to iterate on settings and policies to best serve performance and security needs. For more information, see [Configure Windows diagnostic data in your organization.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
 ## Security addendum
 

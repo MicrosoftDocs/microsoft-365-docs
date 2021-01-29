@@ -35,7 +35,7 @@ highlightedContent:
       url: /learn/m365/
     - title: Get your small business started with Microsoft 365
       itemType: quickstart
-      url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+      url: business-video/index.yml
 
 # productDirectory section (optional)
 productDirectory:

@@ -15,14 +15,14 @@ ms.topic: article
 
 # Microsoft Managed Desktop archived devices
 
-To assure the best user experience, Microsoft Managed Desktop retires support for devices at a certain point. This topic lists devices that are nearing retirement in the next few years, which we call "archived." If you're getting started with Microsoft Managed Desktop by using devices you already have, you should check this list carefully.
+To assure the best user experience, Microsoft Managed Desktop retires support for devices at a certain point. This article lists devices that are nearing retirement in the next few years, which we call "archived." If you're getting started with Microsoft Managed Desktop by using devices you already have, you should check this list carefully.
 
 >[!IMPORTANT]
 >You can still enroll these devices today, but they will have a shorter service life with Microsoft Managed Desktop. If you are buying new devices, you should use models from the [list of active devices](./device-list.md).
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. No other customization is supported.
+To be enrolled in Microsoft Managed Desktop, a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. No other customization is supported.
 
 
 
@@ -65,7 +65,7 @@ In addition, the device must also:
 - Not have completed the Windows first-run experience.
 - Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
 
-#### Additional help
+#### More help
 
 These resources can help answer questions that you might have about specific devices:
 

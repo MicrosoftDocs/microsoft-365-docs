@@ -46,18 +46,18 @@ For more info on these steps, see [Connect to Microsoft 365 with PowerShell](h
 
 1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://www.microsoft.com/download/details.aspx?id=41950) and select  **Download for Microsoft Online Services Sign-in Assistant**.   
 
-2. Install the Microsoft Azure Active Directory Module for Windows PowerShell with these steps:   
+2. Install the Microsoft Azure Active Directory Module for Windows PowerShell with these steps:
 
     1. Open an administrator-level PowerShell command prompt.  
 
     2. Run the Install-Module MSOnline command.
-    
-    3. If prompted to install the NuGet provider, type Y and press ENTER.   
 
-    4. If prompted to install the module from PSGallery, type Y and press ENTER.   
+    3. If prompted to install the NuGet provider, type Y and press ENTER.
+
+    4. If prompted to install the module from PSGallery, type Y and press ENTER.
 
     5. After installation, close the PowerShell command window.
-    
+
 ### Step 2: Connect to your Microsoft 365 subscription
 
 1. In the Windows Azure Active Directory Module for Windows PowerShell, run the following command.  
@@ -65,9 +65,9 @@ For more info on these steps, see [Connect to Microsoft 365 with PowerShell](h
     $UserCredential = Get-Credential
 
 2. In the Windows PowerShell Credential Request dialog box, type the user name and password for your Microsoft 365 global admin account, and then select **OK**.
-    
+
 3. Run the following command.
-    
+
     Connect-MsolService -Credential $UserCredential
 
 ### Step 3: Make sure you’re able to run PowerShell scripts
@@ -80,17 +80,17 @@ To run the Get-MsolUserDeviceComplianceStatus.ps1 script, you need to enable
 1. From your Windows Desktop, select **Start**, and then type Windows PowerShell. Right-click Windows PowerShell, and then select **Run as administrator**.
 
 2. Run the following command.
-    
+
     Set-ExecutionPolicy  RemoteSigned
 
 3. When prompted, type Y and then press Enter.
-    
+
 **Run the Get-MsolDevice cmdlet to display details for all devices in your organization**
 
 1. Open the Microsoft Azure Active Directory Module for Windows PowerShell.  
 
 2. Run the following command.
-    
+
     Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
 
 For more examples, see  [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721).
@@ -102,55 +102,38 @@ First, save the script to your computer.
 1. Copy and paste the following text into Notepad.  
 
 2.  param (
-    
 
 3.  [PSObject[]]$users = @(),
-    
 
 4.  [Switch]$export,
-    
 
 5.  [String]$exportFileName = "UserDeviceComplianceStatus_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",
-    
 
 6.  [String]$exportPath = [Environment]::GetFolderPath("Desktop")
-    
 
 7.  )
-    
 
 9.  [System.Collections.IDictionary]$script:schema = @{
-    
 
 11.  DeviceId = ''
-    
 
 12.  DeviceOSType = ''
-    
 
 13.  DeviceOSVersion = ''
-    
 
 14.  DeviceTrustLevel = ''
-    
 
 15.  DisplayName = ''
-    
 
 16.  IsCompliant = ''
-    
 
 17.  IsManaged = ''
-    
 
 18.  ApproximateLastLogonTimestamp = ''
-    
 
 19.  DeviceObjectId = ''
-    
 
 20.  RegisteredOwnerUpn = ''
-    
 
 21.  RegisteredOwnerObjectId = ''
     

@@ -1,21 +1,23 @@
 ---
-title: "Configure spam filter policies"
-f1.keywords:
-- NOCSH
+title: Configure spam filter policies
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure anti-spam policies in EOP

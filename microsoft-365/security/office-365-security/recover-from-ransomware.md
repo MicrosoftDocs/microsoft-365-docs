@@ -1,19 +1,21 @@
 ---
-title: "Recover from a ransomware attack"
+title: Recover from a ransomware attack
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.article: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
-description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Microsoft 365 admins can learn how to recover from a ransomware attack.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Recover from a ransomware attack in Microsoft 365

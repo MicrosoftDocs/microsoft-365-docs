@@ -22,15 +22,60 @@ ms.custom: seo-marvel-mar2020
 
 # What's new in Microsoft 365 compliance
 
-Whether it be adding new solutions to the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft 365 compliance today. 
+Whether it be adding new solutions to the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft 365 compliance today.
 
 > [!NOTE]
 > Some compliance features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, try adding yourself to [targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
 
-
 > [!TIP]
 > Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[What's new in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
+
+## December 2020
+
+### Spotlight: New content for insider risk solutions
+
+The Microsoft 365 compliance content team is hard at work creating ‘content solution’ docs to promote how compliance capabilities can be used together to help meet your compliance goals.
+
+First up is content that ties together our insider risk solutions: communication compliance, insider risk management, information barriers, and privileged access management. Here’s a peek at what you’ll find:
+
+- [New landing page for insider risk solutions](insider-risk-solution-overview.md). Includes details about risks that the solutions can help mitigate, licensing requirements, deployment sequence, architecture illustrations, training resources, and more.
+- New overview articles for each insider risk solution. Guidance and links to articles that help you learn about, plan, deploy, and manage each solution:
+  - [Communication compliance](communication-compliance-solution-overview.md)
+  - [Insider risk management](insider-risk-management-solution-overview.md)
+  - [Information barriers](information-barriers-solution-overview.md)
+  - [Privileged access management](privileged-access-management-solution-overview.md)
+  
+More content solution docs coming soon!
+
+### Advanced eDiscovery
+
+Improved workflow and functionality for [adding custodians](add-custodians-to-case.md) and [non-custodial data sources](non-custodial-data-sources.md) to an Advanced eDiscovery case.
+
+### Data connectors
+
+[Four new Globanet connectors released](archiving-third-party-data.md#third-party-data-connectors): Redtail Speak, Salesforce Chatter, ServiceNow, and Yieldbroker.
+
+### Encryption
+
+Introducing [Customer Key for Microsoft 365 at the tenant level](customer-key-tenant-level.md). Using keys you provide, you can create a data encryption policy (DEP) and assign it to the tenant. The DEP encrypts data across the tenant for these workloads:
+
+- Teams chat messages (1:1 chats, group chats, meeting chats and channel conversations)
+- Teams media messages (images, code snippets, videos, wiki images)
+- Teams call and meeting recordings stored in Teams storage
+- Teams chat notifications
+- Teams chat suggestions by Cortana
+- Teams status messages
+- User and signal information for Exchange Online
+
+### Records management
+
+The [Records Management admin role group](get-started-with-records-management.md#permissions-required-for-records-management) now grants permissions for all records management features, including disposition review.
+
+### Sensitivity labels
+
+- [Automatically label data in Azure Purview (preview)](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label). You can now create and automatically apply sensitivity labels to assets in Azure Purview, such as files in Azure Blob storage and database columns in SQL Server.
+- [Require users to apply a label to items](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents). Also known as ‘mandatory labeling’, this new option requires users to choose and apply a sensitivity label under the specific scenarios.
 
 ## November 2020
 Just a reminder that we often release new and updated features in a preview state to learn how they're being used so we can hone and improve them before releasing to general availability. Your feedback is critical during preview (and beyond), so be sure to let us know what you think by opening the Feedback card at the bottom right of the compliance center.
@@ -95,7 +140,7 @@ Watch the video below to learn how Compliance Manager can help simplify how your
 
 - [Updated role groups](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance). Communication compliance role groups now match the role group structure available for the insider risk management solution.
 - [Reports dashboard](communication-compliance-feature-reference.md#reports-preview). Your central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities.
-- [Power Automate flows](communication-compliance-feature-reference.md#power-automate-flows-preview). Set up flows to automate tasks for alerts and users, notify managers when users trigger an alert, and more.
+- [Power Automate flows](communication-compliance-feature-reference.md#power-automate-flows). Set up flows to automate tasks for alerts and users, notify managers when users trigger an alerts, and more.
 - [‘Improve classification’ remediation action](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action). Alerts containing items that match trainable classifiers might benefit from feedback to help minimize false positives in your organization. The **Improve classification** option lets you provide feedback whether detected items match the classifier configured in the related communication compliance policy. You can even suggest other classifiers to associate with the item to improve match accuracy for future alerts.
 
 ### Data connectors
@@ -165,7 +210,7 @@ Several new and improved features hit public preview this month:
 
 - When [reviewing messages in an alert](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action), you can now remove inappropriate messages in Microsoft Teams channels, 1:1, and group chats. Removed messages and content are replaced with a policy tip that explains that it was removed due to sensitive content.
 - New [communication roles](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (these will also be included in new communication compliance role groups releasing in September).
-- New communication compliance settings experience that includes settings for [privacy](communication-compliance-feature-reference.md#privacy-preview) and [notice templates](communication-compliance-feature-reference.md#notice-templates).
+- New communication compliance settings experience that includes settings for [privacy](communication-compliance-feature-reference.md#privacy) and [notice templates](communication-compliance-feature-reference.md#notice-templates).
 - New [classifiers](communication-compliance-feature-reference.md#classifiers) to help detect adult, racy, and gory images.
 - New ‘Pattern detected’ notification that appears when [reviewing messages in an alert](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) lets you know about reoccurring instances of the same behavior by a user.
 

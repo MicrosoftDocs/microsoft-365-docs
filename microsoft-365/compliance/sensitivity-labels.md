@@ -38,11 +38,6 @@ Example showing available sensitivity labels in Excel, from the **Home** tab on 
 
 To apply sensitivity labels, users must be signed in with their Microsoft 365 work or school account.
 
-> [!NOTE]
-> For US Government tenants (GCC, GCC-H, and DoD), sensitivity labels are currently supported only for the Azure Information Protection unified labeling client and scanner. 
-> 
-> For more information, see [Azure Information Protection Premium Government Service Description](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
-
 You can use sensitivity labels to:
   
 - **Provide protection settings that include encryption and content markings.** For example, apply a "Confidential" label to a document or email, and that label encrypts the content and applies a "Confidential" watermark. Content markings include headers and footers as well as watermarks, and encryption can also restrict what actions authorized people can take on the content.
