@@ -254,5 +254,5 @@ You can also learn about [partner solutions that are integrated with Microsoft I
 
 ## Deployment guidance
 
-For deployment planning and guidance that includes licensing information, permissions, deployment strategy, and a list of resources for supported scenarios and end user documentation, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+For deployment planning and guidance that includes licensing information, permissions, deployment strategy, and a list of resources for supported scenarios and end-user documentation, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
 
