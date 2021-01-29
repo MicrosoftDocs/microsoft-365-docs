@@ -55,15 +55,25 @@ Your security operations team can operate more effectively and efficiently, beca
 
 When you visit the Action center, you see two tabs: Pending actions and History. The following table summarizes what you'll see on each tab:
 
-
 |Tab  |Description  |
 |---------|---------|
 |**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as Quarantine file). <p>**TIP**: Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner.       |
 |**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br/>- Remediation actions that were taken on suspicious or malicious email messages, files, or URLs<br/>- Remediation actions that were approved by your security operations team <br/>- Commands that were run and remediation actions that were applied during Live Response sessions<br/>- Remediation actions that were taken by your antivirus protection <p>Provides a way to undo certain actions (see [Undo completed actions](mtp-autoir-actions.md#undo-completed-actions)).        |
 
-## Available actions
+You can customize, sort, filter, and export data in the Action center.
 
-As remediation actions are taken, they're listed on the **History** tab in the Action center. Such actions include the following:
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="The Action center enables you to sort, filter, and customize your list of actions":::
+
+- Select a column heading to sort items in ascending or descending order.
+- Use the time period filter to view data for the past day, week, 30 days, or 6 months.
+- Choose the columns that you want to view.
+- Specify how many items to include on each page of data.
+- Use filters to view just the items you want to see.
+- Select **Export** to export results to a .csv file.
+
+## Actions tracked in the Action center
+
+All actions, whether they're pending approval or were already taken, are tracked in the Action center. Available actions include the following:
 
 - Collect investigation package 
 - Isolate device (this action can be undone) 
@@ -75,14 +85,11 @@ As remediation actions are taken, they're listed on the **History** tab in the A
 - Run antivirus scan 
 - Stop and quarantine 
 
-> [!NOTE]
-> In addition to remediation actions that are taken automatically, your security operations team can take manual actions to address detected threats. For more information about automatic and manual remediation actions, see [Remediation actions](mtp-remediation-actions.md).
+In addition to remediation actions that are taken automatically as a result of [automated investigations](mtp-autoir.md), the Action center also tracks actions your security team has taken to address detected threats, and actions that were taken as a result of threat protection features in Microsoft 365 Defender. For more information about automatic and manual remediation actions, see [Remediation actions](mtp-remediation-actions.md).
 
-## Action source
+## Viewing action source details
 
-(**NEW!**) Microsoft 365 Defender brings together automated investigation and response capabilities across multiple services, such as [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). The improved Action center now includes an **Action source** column that tells you where each remediation action came from. 
-
-The following table describes possible **Action source** values:
+(**NEW!**) The improved Action center now includes an **Action source** column that tells you where each action came from. The following table describes possible **Action source** values:
 
 | Action source value | Description |
 |:-----|:---|
@@ -97,7 +104,7 @@ The following table describes possible **Action source** values:
 
 ## Required permissions for Action center tasks
 
-To approve or reject pending actions in the Action center, you must have permissions assigned as listed in the following table:
+To perform tasks, such as approving or rejecting pending actions in the Action center, you must have permissions assigned as listed in the following table:
 
 |Remediation action |Required roles and permissions |
 |--|----|
