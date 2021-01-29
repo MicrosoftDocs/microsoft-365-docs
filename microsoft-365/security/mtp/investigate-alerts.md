@@ -42,7 +42,7 @@ In Microsoft 365 Defender, related alerts are aggregated together to form incide
 
 From the Alerts tab of any incident page, selecting an alert brings you to the individual alert pages. An alert page is composed of three sections: affected assets, alert story, and the details pane.
 
-![Image of example alert page](../../media/newalertpage2.png)
+![Image of example alert page](../../media/new-alert-page2.png)
 
 Throughout an alert page, you can select the three-dot icon (**...**) beside any entity so you can see available actions like opening the specific asset page or doing specific remediation steps.
 
@@ -71,7 +71,7 @@ Once you're done investigating the alerts, you can go back to the alert you star
 
 Selecting Alerts under Incidents & Alerts in the Microsoft 365 security center navigation pane brings you to the unified alert queue. Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft 365 Defender appear in this section. 
 
-![Image of sample alert page](../../media/unifiedalertqueue.png)
+![Image of sample alert page](../../media/unified-alert-queue.png)
 
 The Alerts queue shows a list of alerts that were flagged in your network. By default, the queue displays alerts seen in the last 30 days. The most recent alerts are shown at the top of the list helping you see the most recent alerts first.
 
