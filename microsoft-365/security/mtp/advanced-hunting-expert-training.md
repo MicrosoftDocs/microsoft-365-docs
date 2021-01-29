@@ -41,7 +41,7 @@ Boost your knowledge of advanced hunting quickly with _Tracking the adversary_, 
 | Episode 4: Let’s hunt! Applying KQL to incident tracking | In this episode, you learn to track some attacker activity. We use our improved understanding of Kusto and advanced hunting to track an attack. Learn actual tricks used in the field, including the ABCs of cybersecurity and how to apply them to incident response. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL file](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) 
 
 
-Get more expert training with *l33tSpeak: Advanced hunting in Microsoft 365 Defender*, a webcast series for analysts looking to expand their technical knowledge and practical skills in conducting security investigations using advanced hunting in Microsoft 365 Defender. 
+Get more expert training with *L33TSP3AK: Advanced hunting in Microsoft 365 Defender*, a webcast series for analysts looking to expand their technical knowledge and practical skills in conducting security investigations using advanced hunting in Microsoft 365 Defender. 
 
 | Title | Description | Watch | Queries | 
 |--|--|--|--|
