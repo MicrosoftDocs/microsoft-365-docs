@@ -34,7 +34,7 @@ Microsoft eDiscovery tools support items encrypted with Microsoft encryption tec
 
 ## eDiscovery activities that support encrypted items
 
-The following table identifies the supported tasks that can be performed in Microsoft 365 eDiscovery tools on encrypted files attached to email massages and encrypted documents in SharePoint and OneDrive. These supported tasks can be performed on an encrypted files that match the criteria of a search. A value of "N/A" indicates the functionality isn't available in the corresponding eDiscovery tool.
+The following table identifies the supported tasks that can be performed in Microsoft 365 eDiscovery tools on encrypted files attached to email massages and encrypted documents in SharePoint and OneDrive. These supported tasks can be performed on encrypted files that match the criteria of a search. A value of `N/A` indicates the functionality isn't available in the corresponding eDiscovery tool.
 
 |eDiscovery task  |Content search  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
@@ -45,6 +45,16 @@ The following table identifies the supported tasks that can be performed in Micr
 |Export encrypted files attached to email    |Yes       |Yes  |Yes    |
 |Export encrypted documents in SharePoint and OneDrive    |No       |No  |Yes    |
 |||||
+
+**Note:** eDiscovery doesn't support encrypted files in SharePoint and OneDrive when a sensitivity label that applied the encryption is configured with either of the following settings:
+
+- Users can assign permissions when they manually apply the label to a document. This is sometimes referred to as *user-defined permissions*.<br/>
+
+- User access to the document has an expiration setting that is set to a value other than **Never**.
+
+For more information about these settings, see the "Configure encryption settings" section in [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md#configure-encryption-settings).
+
+Documents encrypted with the previous settings can still be returned by an eDiscovery search. This may happen when a document property (such as the title, author, or modified date) matches the search criteria. Although these documents might be included in search results, they can't be previewed or reviewed. These documents will also remain encrypted when they're exported in Advanced eDiscovery.
 
 ## Requirements for decryption in eDiscovery
 
