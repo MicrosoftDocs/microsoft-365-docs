@@ -29,7 +29,7 @@ description: "Set up online meetings with Microsoft Teams."
 
 # Set up meetings
 
-Meetings in Microsoft Teams include audio, video, and sharing. And because they're online, you'll always have a meeting space and never need a room or projector for your campaign. Microsoft Teams meetings are a great way to come together with your staff and volunteers both inside and outside of your organization. You don’t need to be a member of your organization or even have an account to join a meeting. For your political campaign, you can schedule and run online meetings using Microsoft Teams. You can include staff, volunteers, and guests outside your organization. During a meeting, you can share your screen, share files, assign tasks, and more.
+Meetings in Microsoft Teams include audio, video, and sharing. And because they're online, you'll always have a meeting space (without needing a room or projector!), even if your staff is geographically distributed or working remotely. Microsoft Teams meetings are a great way to come together with your staff both inside and outside of your organization. You don’t need to be a member of your organization or even have an account to join a meeting. You can schedule and run online meetings using Microsoft Teams. During a meeting, you can share your screen, share files, assign tasks, and more. Political campaigns can include staff, volunteers, and guests outside your organization in the meeting. Small firms or practices can meet with their staff, or meet with clients or partners over Microsoft Teams.
 
 [![An illustration of two users in a meeting](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
@@ -38,9 +38,9 @@ Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712
 ## Best practices
 
 Follow these best practices for your online meetings:
-- Schedule your online meetings right in Microsoft Teams. You can choose a team and channel, and Teams will invite the participants in that team or channel automatically.
-- Need an impromptu meeting? If you're in a one-on-one chat, choose **Meet now** to start a video or audio call with the person you're chatting with. 
 
+- Schedule your online meetings right in Microsoft Teams. You can choose a team and channel, and Teams will invite the participants in that team or channel automatically.
+- Need an impromptu meeting? If you're in a one-on-one chat, choose **Meet now** to start a video or audio call with the person you're chatting with.
 
 ## Schedule a meeting
 
