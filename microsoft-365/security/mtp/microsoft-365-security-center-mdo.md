@@ -87,7 +87,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about Investigations](incidents-overview.md)
 - [Learn more about managing alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-![The Alerts and Actions quick launch bar](../../media/converge-1-alertsandactions.png)
+![The Alerts and Actions quick launch bar](../../media/converge-1-alerts-and-actions.png)
 
 
 ### Hunting
