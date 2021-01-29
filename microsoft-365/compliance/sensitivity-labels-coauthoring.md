@@ -126,27 +126,15 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 > [!IMPORTANT]
 > Turning on this setting is a one-way action. While the feature is in preview, test it only in a non-production environment and only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
 
-During the preview, you must first use PowerShell before you can enable co-authoring for files with sensitivity labels. This setting in the Microsoft 365 compliance center isn't visible by default.
+During the preview, you must use a specific URL to access this setting in the Microsoft 365 compliance center.
 
-1. In a PowerShell session that you run as administrator, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
-   
-    Sign in to your test tenant with a global administrator account.
-
-2. Run the [Enable-MipCoauthConfiguration](https://docs.microsoft.com/powershell/module/exchange/enable-mipcoauthconfiguration) cmdlet to display the UI in the compliance center that lets you enable co-authoring for files with sensitivity labels:	
+1. Sign in to the Microsoft 365 compliance center as a global admin for your test tenant, using the following URL:
     
-    ```powershell
-    Enable-MipCoauthConfiguration $True
-    ```
+    https://compliance.microsoft.com/compliancesettings/Co-authoring_for_files_with_sensitivity_labels 
     
-    To confirm that you want this UI visible, press **Y**.
-    
-    If you change your mind about seeing the UI to enable co-authoring, you can hide it again by running the same cmdlet with the **False** value: `Enable-MipCoauthConfiguration $False`
+2. Select **Settings** > **Co-authoring for files with sensitivity labels**.
 
-3. Sign in the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your test tenant.
-
-4. Select **Settings** > **Co-authoring for files with sensitivity labels**.
-
-5. After you have read the summary description, prerequisites, what to expect, and the warning that you can't turn it off,  select **Turn on co-authoring for files with sensitivity labels**, and then **Apply**:
+3. After you have read the summary description, prerequisites, what to expect, and the warning that you can't turn it off,  select **Turn on co-authoring for files with sensitivity labels**, and then **Apply**:
     
     ![Option to turn on co-authoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
