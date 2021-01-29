@@ -114,6 +114,6 @@ To perform tasks, such as approving or rejecting pending actions in the Action c
 > [!TIP]
 > Users who have the **Global Administrator** role assigned in Azure Active Directory can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the **Global Administrator** role assigned. We recommend using the **Security Administrator**, **Active remediation actions**, and **Search and Purge** roles listed in the preceding table for Action center permissions.
 
-## Next steps 
+## Next step 
 
-- [View and manage actions in the Action center](mtp-autoir-actions.md)
+- [Review and manage remediation actions](mtp-autoir-actions.md)
