@@ -23,20 +23,20 @@ description: "Learn about the default data loss prevention policy in Microsoft T
 
 ## Applies to
 
-Any tenant who are licensed with one or more of the below licenses and have active Teams users
+Any tenant who is licensed with one or more of the below licenses and have active Teams users
  
 - ME5, 
 - MA5, 
 - E5/A5 Compliance, 
 - IP+G, 
 - OE5, 
-- O365 Adv Compliance and 
+- O365 Advanced Compliance 
 - EMS E5
 
 
 ## What does the default policy do?
 
-The default DLP policy, which is on by default on all users of the tenant, tracks all the credit card numbers shared internally and externally to the organization. It does not generate any policy tips for end users but does generate an Alert event and also triggers a low severity email to the admin (added in the policy). Administrator can view the activities and edit the policies details by logging into the Compliance center.
+The default DLP policy tracks all the credit card numbers shared internally and externally to the organization. This policy is on by default for all users of the tenant. It does not generate any policy tips for end users but does generate an Alert event and also triggers a low severity email to the admin (added in the policy). Administrator can view the activities and edit the policies details by logging into the Compliance center.
 
 Admins can view this policy in the [Compliance center](https://compliance.microsoft.com/compliancesettings) > Data Loss prevention policies page.
 
