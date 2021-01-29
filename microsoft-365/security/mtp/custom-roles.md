@@ -47,14 +47,15 @@ Admins can manage user access to specific data, tasks, and capabilities in Micro
 
 Custom roles are managed for each individual workload and control access to workload data within the Microsoft 365 security center. For example, permissions granted through Microsoft Defender for **Endpoint** will allow a user to access Endpoint data in the Microsoft 365 security center. Permissions granted through Defender for Office 365 allows access to the corresponding **Email & collaboration** data in the Microsoft 365 security center.
 
->![NOTE] If you've set up roles for Defender for Endpoint or Defender for Office 365, these access settings will be available in Microsoft 365 Defender.
+> ![NOTE] 
+> If you've set up roles for Defender for Endpoint or Defender for Office 365, these access settings will be available in Microsoft 365 Defender.
 
 ## Create and manage custom roles
 Custom roles and permissions can be created and individually managed through each of the following security portals: 
 
-- Microsoft Defender for Endpoint – [Edit roles in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/user-roles.md)
-- Microsoft Defender for Office 365 – [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center.md)
-- Microsoft Cloud App Security – [Manage admin access](/cloud-app-security/manage-admins.md)
+- Microsoft Defender for Endpoint – [Edit roles in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
+- Microsoft Defender for Office 365 – [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-worldwide)
+- Microsoft Cloud App Security – [Manage admin access](https://docs.microsoft.com/cloud-app-security/manage-admins)
 
 Each custom role created through an individual portal allows access to the data of the relevant product portal. For example, a custom role created through Microsoft Defender for Endpoint will only allow access to Defender for Endpoint data. 
 
