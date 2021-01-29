@@ -1,16 +1,17 @@
 ---
-title: "New domains being forwarded email insight"
-f1.keywords:
-- NOCSH
+title: New domains being forwarded email insight
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid:
-description: "Admins can learn how to use the New domains being forwarded email insight in the Mail flow dashboard in the Security & Compliance Center to investigate when their users are forwarding messages to external domains that have never been been forwarded to."
+ms.assetid: 
+description: Admins can learn how to use the New domains being forwarded email insight in the Mail flow dashboard in the Security & Compliance Center to investigate when their users are forwarding messages to external domains that have never been been forwarded to.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # New domains being forwarded email insight in the Security & Compliance Center
@@ -20,7 +21,7 @@ description: "Admins can learn how to use the New domains being forwarded email 
 
 There are valid business reasons to forward email messages to external recipients in specific domains. However, it's suspicious when users in your organization suddenly start forwarding messages to a domain where no one in your organization has ever forwarded messages to (a new domain).
 
-This condition might indicate that the user accounts are compromised. If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+This condition might indicate that the user accounts are compromised. If you suspect the accounts have been compromised, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
 The **New domains being forwarded email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when users in your organization are forwarding messages to new domains.
 

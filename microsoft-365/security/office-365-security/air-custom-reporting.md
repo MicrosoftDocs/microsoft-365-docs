@@ -1,25 +1,26 @@
 ---
-title: "Using custom reporting solutions with automated investigation and response"
+title: Using custom reporting solutions with automated investigation and response
 keywords: SIEM, API, AIR, autoIR, ATP, automated investigation, integration, custom report
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
-description: "Learn how to integrate automated investigation and response with a custom or third-party reporting solution."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Learn how to integrate automated investigation and response with a custom or third-party reporting solution.
 ms.date: 09/29/2020
 ms.custom: 
-- air
+  - air
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use the Management Activity API for custom or third-party reporting solutions
@@ -27,7 +28,7 @@ ms.custom:
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-With [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about automated investigations with such a solution, you can use the Office 365 Management Activity API.
+With [Microsoft Defender for Office 365](office-365-atp.md), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about automated investigations with such a solution, you can use the Office 365 Management Activity API.
 
 Use the following resources to set this up:
 

@@ -28,7 +28,7 @@ PowerShell for Microsoft 365 enables you to manage your Microsoft 365 settings f
 There are two versions of the PowerShell module that you can use to connect to Microsoft 365 and administer user accounts, groups, and licenses:
 
 - Azure Active Directory PowerShell for Graph, whose cmdlets include *AzureAD* in their name
-- Microsoft Azure Active Directory Module for Windows PowerShell, whose cmdlets include *Sol* in their name
+- Microsoft Azure Active Directory Module for Windows PowerShell, whose cmdlets include *Msol* in their name
 
 Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Microsoft Azure Active Directory Module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
 

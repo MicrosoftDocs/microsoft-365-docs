@@ -6,7 +6,7 @@ description: DKE enables you to protect highly sensitive data while maintaining 
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 09/22/2020
+ms.date: 01/29/2021
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -33,19 +33,19 @@ For more information about the default, cloud-based tenant root keys, see [Plann
 
 ## When your organization should adopt DKE
 
-Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE is not intended for all data. In general, you'll be using Double Key Encryption to protect only a very small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and make use of other solutions for the majority of your data such as Microsoft Information Protection with Microsoft-managed keys or BYOK. These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements. Also, these solutions enable you to use the most powerful Office 365 services; services that you can't use with DKE encrypted content. For example:
+Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE is not intended for all data. In general, you'll be using Double Key Encryption to protect only a small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and make use of other solutions for most your data such as Microsoft Information Protection with Microsoft-managed keys or BYOK. These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements. Also, these solutions enable you to use the most powerful Office 365 services; services that you can't use with DKE encrypted content. For example:
 
 - Transport rules including anti-malware and spam that require visibility into the attachment
 - Microsoft Delve
 - eDiscovery
 - Content search and indexing
-- Office Web Apps including co-authoring functionality
+- Office Web Apps including coauthoring functionality
 
 Any external applications or services that are not integrated with DKE through the MIP SDK will be unable to perform actions on the encrypted data.
 
 The Microsoft Information Protection SDK 1.7+ supports Double Key Encryption; applications that integrate with our SDK will be able to reason over this data with sufficient permissions and integrations in place.
 
-We recommend organizations use Microsoft Information protection capabilities (classification and labeling) to protect most of their sensitive data and only use DKE for their mission-critical data. Double Key Encryption is particularly relevant for extremely sensitive data in highly regulated industries such as Financial services and Healthcare.
+We recommend organizations use Microsoft Information protection capabilities (classification and labeling) to protect most of their sensitive data and only use DKE for their mission-critical data. Double Key Encryption is relevant for sensitive data in highly regulated industries such as Financial services and Healthcare.
 
 If your organizations have any of the following requirements, you can use DKE to help secure your content:
 
@@ -55,11 +55,11 @@ If your organizations have any of the following requirements, you can use DKE to
 
 ## System and licensing requirements for DKE
 
-**Double Key Encryption for Microsoft 365** comes with Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**Double Key Encryption for Microsoft 365** comes with Microsoft 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
-DKE sensitivity labels are made available to end-users through the sensitivity ribbon in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
+DKE sensitivity labels are made available to end users through the sensitivity ribbon in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
 **Microsoft Office Apps for enterprise** version *.12711 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
 
@@ -73,7 +73,7 @@ DKE sensitivity labels are made available to end-users through the sensitivity r
 
 ## Overview of deploying DKE
 
-You'll follow these general steps to set up DKE. Once you've completed these steps, your end users will be able to protect your highly sensitive data with Double Key Encryption.
+You'll follow these general steps to set up DKE. Once you've completed these steps, your end users will can protect your highly sensitive data with Double Key Encryption.
 
 1. Deploy the DKE service as described in this article.
 
@@ -149,16 +149,14 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
 5. In the **Select Folder** dialog that appears, browse to and select a location to store the repository. At the prompt, select **Open**.
 
-    The repository opens in Visual Studio Code, and displays the current Git branch at the bottom left. The branch should be **master**.
+    The repository opens in Visual Studio Code, and displays the current Git branch at the bottom left. For example,  The branch should be **main**. For example:
 
-    For example:
+   ![Screenshot of the DKE repo in Visual Studio Code displaying the main branch](../media/dke-vscode-main-branch.jpg)
 
-   ![Visual Studio Code master branch](../media/dke-vscode-master.png)
-
-6. Select the word **master** from the list of branches.
+6. If you're not on the main branch, you'll need to select it. In Visual Studio Code, select the branch and choose **main** from the list of branches that displays.
 
    > [!IMPORTANT]
-   > Selecting the master branch ensures that you have the correct files to build the project. If you do not choose the correct branch your deployment will fail.
+   > Selecting the main branch ensures that you have the correct files to build the project. If you don't choose the correct branch your deployment will fail.
 
 You now have your DKE source repository set up locally. Next, [modify application settings](#modify-application-settings) for your organization.
 

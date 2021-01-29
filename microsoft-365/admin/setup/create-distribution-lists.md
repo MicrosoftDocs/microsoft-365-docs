@@ -21,6 +21,7 @@ ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- okr_smb
 description: Learn how to create distribution groups or lists in the Microsoft 365 admin center so you can send emails to a group without having to type each recipient's name.
 ---
 

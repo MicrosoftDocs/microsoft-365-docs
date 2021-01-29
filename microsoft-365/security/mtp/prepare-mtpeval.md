@@ -4,7 +4,7 @@ description: Prepare stakeholder sign-off, timelines, environment considerations
 keywords: MTP trial prep, MTP pilot prep, prep for running an MTP pilot project, run a pilot MTP project, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
-- m365solution-evalutatemtp
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-evalutatemtp
+ms.topic: article
+ms.technology: m365d
 ---
 
 # Prepare your Microsoft 365 Defender trial lab or pilot environment
@@ -30,37 +31,9 @@ ms.topic: article
 
 Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab environment" title="Prepare your Microsoft 365 Defender trial lab or pilot environment" />
-      <br/>Phase 1: Prepare </a><br>
-    </td>
-     <td align="center"  >
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab environment" title="Setup your Microsoft 365 Defender trial lab or pilot environment" />
-      <br/>Phase 2: Setup </a><br>
-        </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
-        <img src="../../media/config-onboard.png" alt="Configure each Microsoft 365 Defender pillar" title="Configure each Microsoft 365 Defender pillar and onboard your endpoints" />
-      <br/>Phase 3: Configure & Onboard</a><br>
-</td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-  </tr>
-</table>
+|![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Phase 2: Set up](setup-mtpeval.md) |[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Phase 3: Onboard](config-mtpeval.md) | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Back to pilot playbook](mtp-pilot.md) |
+|--|--|--|--|
+|*You are here!* | || |
 
 You're currently in the preparation phase.
 

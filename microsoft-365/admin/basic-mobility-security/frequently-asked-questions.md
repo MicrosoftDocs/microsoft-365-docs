@@ -26,19 +26,19 @@ This article contains frequently asked questions about Basic Mobility and Securi
 
 ## How can I get Basic Mobility and Security? I don't see it in the Microsoft 365 admin center
 
-1.  Activate Basic Mobility and Security by going to the [Office 365 Security & Compliance](https://protection.office.com/) page.   
+1.  Activate Basic Mobility and Security by going to the [Office 365 Security & Compliance](https://protection.office.com/) page.
 
-2.  Go to Data loss prevention > Device management.   
+2.  Go to Data loss prevention > Device management.
 
 ## How can I get started with device management in Basic Mobility and Security?
 
 There are four steps to getting started with Basic Mobility and Security: 
 
 1. Activate Basic Mobility and Security by going to the [Office 365 Security & Compliance](https://protection.office.com/).
-    
+
 2. Go to Data loss prevention > Device management > Device policies.
     
-3. Create device management policies, and apply them to groups of users that are set up in security groups. We recommend that you start by deploying the policies to a small test group. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).      
+3. Create device management policies, and apply them to groups of users that are set up in security groups. We recommend that you start by deploying the policies to a small test group. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
 
 4. Users who have had a policy applied to them are prompted to enroll their devices when they try to access Microsoft 365 data. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md).
 
@@ -46,18 +46,18 @@ For more details, see [Set up Basic Mobility and Security](set-up.md).
 
 ## I’m trying to set up Basic Mobility and Security but it seems stuck. The Microsoft 365 Service Health has been showing “provisioning” for a while. What can I do?
 
-It may take some time to get the service ready for you. When provisioning is complete, you'll see the Mobile Device Management for Microsoft 365 page. If you've waited 24 hours and the status is still provisioning, please contact Support and we'll help figure out what the issue is. For support options, see [Still need help?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp) 
+It may take some time to get the service ready for you. When provisioning is complete, you'll see the Basic Mobility and Security page. If you've waited 24 hours and the status is still provisioning, please contact Support and we'll help figure out what the issue is. For support options, see [Still need help?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
 
 ## What can I do if device enrollment fails?
 
 If you're having trouble getting a device enrolled, first check the following:
 
 - Make sure that the device isn't already enrolled with another mobile device management provider, such as Intune.
-    
+
 - Make sure that the device is set to the correct date and time.
-    
+
 - Switch to a different WIFI or cellular network on the device.
-    
+
 - For Android or iOS devices, uninstall and reinstall the Intune Company Portal app on the device.
     
 If enrollment still isn't working, see [Troubleshoot Basic Mobility and Security](troubleshoot.md).
@@ -85,4 +85,3 @@ After a device is enrolled in Basic Mobility and Security, any Exchange ActiveSy
 ## I  set up Basic Mobility and Security but now I want to remove it. What are the steps?
 
 Unfortunately, you can't simply "unprovision" Basic Mobility and Security after you've set it up. But you can remove it for groups of users by removing user security groups from the device policies you've created. Or, you can disable it for everyone by removing the device policies so they aren't in place and aren't enforced. For more info, see [Turn off Basic Mobility and Security](turn-off.md).
-

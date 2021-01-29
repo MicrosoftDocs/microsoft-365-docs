@@ -35,9 +35,9 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Evaluate Microsoft Threat Protection
+          - text: Evaluate Microsoft 365 Defender
             url: mtp/mtp-evaluation.md
-          - text: Microsoft Threat Protection pilot playbook
+          - text: Microsoft 365 Defender pilot playbook
             url: mtp/mtp-pilot.md
   # Card
   - title: Secure your remote workforce
