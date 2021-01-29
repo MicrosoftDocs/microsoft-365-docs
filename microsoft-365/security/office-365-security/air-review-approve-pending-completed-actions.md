@@ -62,10 +62,9 @@ These remediation actions are not taken unless and until your security operation
 
 ## Next steps
 
-- [View details and results of an automated investigation in Office 365](air-view-investigation-results.md)
 - [Use Threat Explorer](threat-explorer.md)
+- [How to report false positives/negatives in automated investigation and response capabilities](air-report-false-positives-negatives.md)
 
 ## See also
 
-- [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities)
-- [How automated investigation and response works in Microsoft Defender for Office 365](automated-investigation-response-office.md)
+- [View details and results of an automated investigation in Office 365](air-view-investigation-results.md)
