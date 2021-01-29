@@ -156,7 +156,7 @@ Quickly navigating to Kusto query language to hunt for issues is an advantage of
 ```kusto
 EmailPostDeliveryEvents 
 | where Timestamp > ago(7d)
-//List malicious emails that were not zapped successfully
+//List malicious emails that were not zapped successfullyconverge-2-endpoints-new.png
 | where ActionType has "ZAP" and ActionResult == "Error"
 | project ZapTime = Timestamp, ActionType, NetworkMessageId , RecipientEmailAddress 
 //Get logon activity of recipients using RecipientEmailAddress and AccountUpn
