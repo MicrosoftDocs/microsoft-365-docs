@@ -23,7 +23,7 @@ description: "Learn how to manage who receives billing notification emails and i
 
 # Manage billing notifications and invoice attachments
 
-The **Billing notifications** page lets you manage who receives billing notification emails for your organization. The page also provides the option to [receive invoices as attachments to invoice notification emails](#receive-a-copy-of-your-invoice-as-an-email-attachment).
+The **Billing notifications** page lets you manage who receives billing notification emails for your organization. The page also provides the option to [receive your organization's invoices as email attachments](#receive-your-organizations-invoices-as-email-attachments).
 
 ## Before you begin
 
