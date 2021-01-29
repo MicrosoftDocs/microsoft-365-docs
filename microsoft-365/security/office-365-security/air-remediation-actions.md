@@ -42,7 +42,7 @@ ms.prod: m365-security
 
 ## Threats and remediation actions
 
-Microsoft Defender for Office 365 includes threat protection features with appropriate remediation actions. In some cases, an automated investigation does not result in a specific remediation action. To further investigate and take appropriate actions, use the guidance in the following table.
+Microsoft Defender for Office 365 includes remediation actions to address various threats. In some cases, an automated investigation does not result in a specific remediation action. To further investigate and take appropriate actions, use the guidance in the following table.
 
 |Category|Threat/risk|Remediation action(s)|
 |:---|:---|:---|
