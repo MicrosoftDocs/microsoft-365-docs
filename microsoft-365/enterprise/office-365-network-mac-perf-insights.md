@@ -25,6 +25,7 @@ Insights are intended to help in designing network perimeters for your office lo
 There are six specific network insights that may be shown for each office location:
 
 - [Backhauled network egress](#backhauled-network-egress)
+- [Network intermediary device](#network-intermediary-device)
 - [Better performance detected for customers near you](#better-performance-detected-for-customers-near-you)
 - [Use of a non-optimal Exchange Online service front door](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Use of a non-optimal SharePoint Online service front door](#use-of-a-non-optimal-sharepoint-online-service-front-door)
@@ -59,6 +60,18 @@ For this insight, we would recommend network egress closer to the office locatio
 
 For more information about how to resolve this issue, see [Egress network connections locally](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) in [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
+## Network intermediary device
+
+This insight will be displayed if we detected devices between your users and Microsoft's network which may impact the Office 365 user experience. It is recommended that these be bypassed for specific Microsoft 365 network traffic that is destined for Microsoft datacenters. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
+
+### What does this mean?
+
+Network intermediary devices such as proxy servers, VPNs, and data loss prevention devices can affect performance and stability of Microsoft 365 clients where traffic is intermediated.
+
+### What should I do?
+
+Configure the network intermediary device that was detected to bypass processing for Microsoft 365 network traffic.
+
 ## Better performance detected for customers near you
 
 This insight will be displayed if the network insights service detects that a significant number of customers in your metro area have better performance than users in your organization at this office location.
@@ -73,7 +86,7 @@ This insight examines the aggregate performance of Microsoft 365 customers in th
 
 ### What should I do?
 
-There could be many reasons for this condition, including latency in your corporate network or ISP, bottlenecks, or architecture design issues. Examine the latency between each hop in the route between your office network and the current Microsoft 365 front door. For more information, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+There could be many reasons for this condition, including latency in your corporate network or ISP, bottlenecks, or architecture design issues. Examine the latency between each hop in the route between your office network and the current Microsoft 365 front door. For more information, see [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ## Use of a non-optimal Exchange Online service front door
 
@@ -140,7 +153,7 @@ Internet egress further away from users than these locations will reduce perform
 
 ### What should I do?
 
-For more information about how to mitigate performance issues related to this insight, see [Office 365 global tenant performance optimization for China users](microsoft-365-networking-china.md).
+For more information about how to mitigate performance issues related to this insight, see [Microsoft 365 global tenant performance optimization for China users](microsoft-365-networking-china.md).
 
 ## Exchange sampled connections impacted by connectivity issues
 
