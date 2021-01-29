@@ -1,23 +1,25 @@
 ---
-title: "Walkthrough - Spoof intelligence insight"
-f1.keywords:
-- NOCSH
+title: Walkthrough - Spoof intelligence insight
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how the Spoof intelligence insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC)."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how the Spoof intelligence insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Walkthrough - Spoof intelligence insight in Microsoft Defender for Office 365

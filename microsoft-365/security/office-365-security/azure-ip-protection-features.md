@@ -1,23 +1,25 @@
 ---
-title: "Protection features in Azure Information Protection rolling out to existing tenants"
-f1.keywords:
-- NOCSH
+title: Protection features in Azure Information Protection rolling out to existing tenants
+f1.keywords: 
+  - NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "This article explains the changes being rolled out to the protection features in Azure Information Protection"
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: This article explains the changes being rolled out to the protection features in Azure Information Protection
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Protection features in Azure Information Protection rolling out to existing tenants

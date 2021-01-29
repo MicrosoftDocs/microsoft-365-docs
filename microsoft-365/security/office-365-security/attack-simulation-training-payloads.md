@@ -1,16 +1,17 @@
 ---
-title: "Create a payload for Attack simulation training"
+title: Create a payload for Attack simulation training
 ms.author: daniha
 author: danihalfin
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Admins can learn how to create custom payloads for Attack simulation training in Microsoft Defender for Office 365."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn how to create custom payloads for Attack simulation training in Microsoft Defender for Office 365.
+ms.technology: mdo
 ---
 
 # Create a custom payload for Attack simulation training
