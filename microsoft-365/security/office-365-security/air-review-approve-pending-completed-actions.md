@@ -1,5 +1,5 @@
 ---
-title: Review and approve pending remediation actions in automated investigation and response
+title: Review and manage remediation actions in Microsoft Defender for Office 365
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
 - NOCSH
@@ -21,7 +21,7 @@ ms.prod: m365-security
 ms.date: 01/29/2021
 ---
 
-# View pending or completed remediation actions following an automated investigation in Office 365
+# Review and manage remediation actions in Office 365
 
 As automated investigations on email & collaboration content result in verdicts, such as *Malicious* or *Suspicious*, certain remediation actions are created. In Microsoft Defender for Office 365, remediation actions can include:
 - Blocking a URL (time-of-click)
@@ -29,7 +29,7 @@ As automated investigations on email & collaboration content result in verdicts,
 - Quarantining email or email attachments
 - Turning off external mail forwarding
 
-These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner.
+These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can undo a remediation action.
 
 ## Approve (or reject) pending actions
 
@@ -37,9 +37,28 @@ These remediation actions are not taken unless and until your security operation
 2. In the navigation pane, select **Action center**.
 3. On the **Pending** tab, review the list of actions that are awaiting approval.
 4. Select an item in the list. Its flyout pane opens. 
-5. In the flyout pane, review available information for the item(s) you selected, and then either approve or reject the action(s).
-   - **Approve** allows remediation to begin.
-   - **Reject** takes no further action
+5. Review the information in the flyout pane, and then take one of the following steps:
+   - Select **Open investigation page** to view more details about the investigation.
+   - Select **Approve** to initiate a pending action.
+   - Select **Reject** to prevent a pending action from being taken.
+
+## Undo one remediation action
+
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+2. On the **History** tab, select an action that you want to undo.
+3. In the pane on the right side of the screen, select **Undo**.
+
+## Undo multiple remediation actions
+
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+2. On the **History** tab, select the actions that you want to undo. Make sure to select items that have the same Action type. A flyout pane opens.
+3. In the flyout pane, select Undo.
+
+## To remove a file from quarantine across multiple devices
+
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+2. On the **History** tab, select a file that has the Action type **Quarantine file**.
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
 
 ## Next steps
 

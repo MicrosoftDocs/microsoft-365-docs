@@ -89,4 +89,4 @@ For example, recently, an organization set up a way for their security operation
 ## Next steps
 
 - [Get started using AIR](office-365-air.md)
-- 
+- [View pending or completed remediation actions following an automated investigation in Office 365](air-review-approve-pending-completed-actions.md)
