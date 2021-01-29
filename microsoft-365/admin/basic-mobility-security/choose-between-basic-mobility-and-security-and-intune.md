@@ -22,10 +22,10 @@ description: "Basic Mobility and Security are part of the Microsoft 365 plans."
 
 # Choose between Basic Mobility and Security or Intune
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) is a standalone product included with certain Microsoft 365 plans, while Basic Mobility and Security is part of the Microsoft 365 plans. 
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/) is a standalone product included with certain Microsoft 365 plans, while Basic Mobility and Security is part of the Microsoft 365 plans.
 
  ## Availability of Basic Mobility and Security and Intune
- 
+
 Both Basic Mobility and Security and Intune are included in a variety of plans, described in the following table.
 
 | Plan | Basic Mobility and Security | Microsoft Intune |
