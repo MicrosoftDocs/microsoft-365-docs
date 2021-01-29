@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: "Learn about remediation actions following automated investigation in Microsoft Defender for Office 365."
-ms.date: 01/27/2021
+ms.date: 01/29/2021
 ms.custom: 
 - air
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Remediation actions following automated investigation in Microsoft Defender for Office 365
+# Remediation actions in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -42,7 +42,7 @@ ms.prod: m365-security
 
 ## Threats and remediation actions
 
-The following table summarizes threats and appropriate remediation actions in Microsoft Defender for Office 365. In some cases, an automated investigation does not result in a specific remediation action. Your security operations team can further investigate and take appropriate actions as described in the table.
+Microsoft Defender for Office 365 includes threat protection features with appropriate remediation actions. In some cases, an automated investigation does not result in a specific remediation action. To further investigate and take appropriate actions, use the guidance in the following table.
 
 |Category|Threat/risk|Remediation action(s)|
 |:---|:---|:---|
