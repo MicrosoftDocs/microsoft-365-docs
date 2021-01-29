@@ -32,7 +32,7 @@ To configure automated investigation and response capabilities, follow these ste
 3. [Review your security and alert policies in Office 365](#review-your-security-and-alert-policies-in-office-365).
 4. [Make sure Microsoft 365 Defender is turned on](#make-sure-microsoft-365-defender-is-turned-on).
 
-Then, after you're all set up, [review pending and completed actions in the Action center](#review-pending-and-completed-actions-in-the-action-center).
+Then, after you're all set up, [View and manage actions in the Action center](mtp-autoir-actions.md).
 
 ## Prerequisites for automated investigation and response in Microsoft 365 Defender
 
@@ -80,8 +80,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 2. In the navigation pane, look for **Incidents**, **Action center**, and **Hunting**, as shown in the following image:
    - If you see **Incidents**, **Action center**, and **Hunting**, Microsoft 365 Defender is turned on. See the procedure, [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) (in this article).
-   - If you do *not* see **Incidents**, **Action center**, or **Hunting**, then Microsoft 365 Defender might not be turned on. In this case, proceed to the next step ([Review pending and completed actions](#review-pending-and-completed-actions-in-the-action-center), in this article).
-
+   - If you do *not* see **Incidents**, **Action center**, or **Hunting**, then Microsoft 365 Defender might not be turned on. In this case, proceed to [Visit the Action center](mtp-action-center.md)).
 3. In the navigation pane, choose **Settings** > **Microsoft 365 Defender**. Confirm that Microsoft 365 Defender is turned on. 
 
 > [!TIP]
