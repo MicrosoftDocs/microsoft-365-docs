@@ -53,7 +53,7 @@ No changes to these areas:
 - [Policies & Rules](/microsoft-365/compliance/alert-policies)
 - [Campaign](/microsoft-365/security/office-365-security/campaigns)
 - [Submissions](/microsoft-365/security/office-365-security/admin-submission)
-- [Review](/microsoft-365/security/mtp-action-center)
+- [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)
 - [Threat Tracker](/microsoft-365/security/office-365-security/threat-trackers)
 
 Also, check the **Related Information** section at the bottom of this article.
@@ -113,7 +113,7 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 ### Email & collaboration
 
-Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will familiar.
+Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will be familiar.
 
 :::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left side of the Microsoft 365 security center.":::
 
@@ -142,7 +142,7 @@ The [Getting Started](https://docs.microsoft.com/microsoft-365/security/office-3
 3. Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
 4. Protect with Zero-Hour auto purge
 
-Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats&preserve-view=true) to jump right in and get configuration going on Day 1.
+Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide) to jump right in and get configuration going on Day 1.
 
 The last step in **Getting Started** is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
 
@@ -156,7 +156,7 @@ Quickly navigating to Kusto query language to hunt for issues is an advantage of
 ```kusto
 EmailPostDeliveryEvents 
 | where Timestamp > ago(7d)
-//List malicious emails that were not zapped successfully
+//List malicious emails that were not zapped successfullyconverge-2-endpoints-new.png
 | where ActionType has "ZAP" and ActionResult == "Error"
 | project ZapTime = Timestamp, ActionType, NetworkMessageId , RecipientEmailAddress 
 //Get logon activity of recipients using RecipientEmailAddress and AccountUpn
@@ -172,7 +172,6 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 The data from this query will appear in the results panel below the query itself. Results include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set. Results can also be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries.
 
 ## Related information
-- [Microsoft 365 security center](overview-security-center.md)
 - [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 - [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
