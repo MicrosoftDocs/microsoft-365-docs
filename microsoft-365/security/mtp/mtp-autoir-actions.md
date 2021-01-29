@@ -1,6 +1,6 @@
 ---
 title: View and manage actions in the Action center
-description: Use the Action Center to manage actions related to automated investigation and response
+description: Use the Action Center to view and manage remediation actions
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
 ms.prod: m365-security
@@ -32,7 +32,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Threat protection features in Microsoft 365 Defender can result in certain remediation actions.
+Threat protection features in Microsoft 365 Defender can result in certain remediation actions. Here are some examples:
 - Automated investigations can result in remediation actions that are taken automatically or await approval.
 - Antivirus, antimalware, and other threat protection features can result in remediation actions, such as blocking a file, URL, or process, or sending an artifact to quarantine.
 - Your security operations team can take remediation actions manually, such as during advanced hunting or while investigating detected threats.
@@ -40,7 +40,7 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 > [!NOTE]
 > You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see [Prerequisites for automated investigation and response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
-## Review a pending action in the Action center
+## Review pending actions in the Action center
 
 It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
