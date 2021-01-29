@@ -6,13 +6,13 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.prod: m365-security
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.date: 01/27/2021
+ms.date: 01/29/2021
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
