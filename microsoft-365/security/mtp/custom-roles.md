@@ -86,4 +86,4 @@ The following table describes the different mapping of what roles are required t
 
 ## Related topics
 - [Manage access to Microsoft 365 Defender](mtp-permissions.md)
-- [Manage admin access for MCAS](/cloud-app-security/manage-admins.md)
+- [Manage admin access for MCAS](https://docs.microsoft.com/cloud-app-security/manage-admins)
