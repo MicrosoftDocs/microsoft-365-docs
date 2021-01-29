@@ -1,5 +1,5 @@
 ---
-title: Using custom reporting solutions with automated investigation and response
+title: Custom reporting solutions with automated investigation and response
 keywords: SIEM, API, AIR, autoIR, ATP, automated investigation, integration, custom report
 f1.keywords: 
 - NOCSH
@@ -23,7 +23,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Use the Management Activity API for custom or third-party reporting solutions
+# Custom or third-party reporting solutions for Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
