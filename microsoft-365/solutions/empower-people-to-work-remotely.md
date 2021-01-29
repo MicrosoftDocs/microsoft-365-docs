@@ -41,7 +41,7 @@ Watch this video for an overview of the deployment process.
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-For IT professionals managing onsite and cloud-based infrastructure and enabling worker productivity, this solution provides these key capabilities.
+For IT professionals managing onsite and cloud-based infrastructure to enable worker productivity, this solution provides these key capabilities:
 
 - Connected
 
