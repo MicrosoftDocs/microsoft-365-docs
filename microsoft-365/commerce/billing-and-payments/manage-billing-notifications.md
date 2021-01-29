@@ -1,7 +1,7 @@
 ---
 title: "Manage billing notifications and invoice attachments"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -23,15 +23,18 @@ description: "Learn how to manage who receives billing notification emails and i
 
 # Manage billing notifications and invoice attachments
 
-The **Billing notifications** page lets you manage who receives billing notification emails for your organization. The page also provides the option to [receive a copy of your invoice as an email attachment](#receive-a-copy-of-your-invoice-as-an-email-attachment).
+The **Billing notifications** page lets you manage who receives billing notification emails for your organization. The page also provides the option to [receive invoices as attachments to invoice notification emails](#receive-a-copy-of-your-invoice-as-an-email-attachment).
 
 ## Before you begin
 
-You must be a Global admin to do the steps described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global admin to do the steps described in this article. Billing admins can make some of these changes, as noted in the sections below. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Change your organization’s preferred language
+## Change the language you receive email in
 
-Billing notification emails are sent in your organization’s preferred language. To view or change your organization’s preferred language, use the following steps.
+> [!NOTE]
+> Billing admins can also do the steps in this section.
+
+Billing notification emails are sent in your organization’s preferred language. To change the preferred language, use the following steps.
 
 1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 2. In the **Billing notification settings** section, select **Edit notification settings**.
@@ -39,7 +42,7 @@ Billing notification emails are sent in your organization’s preferred language
 
 ## Change who receives billing notifications
 
-Your organization's billing notifications are sent to the primary and alternate email address of every Global and Billing admin. To change which users have the Global or Billing admin role, use the following steps, or follow the steps in [Assign admin roles](../../admin/add-users/assign-admin-roles.md).
+Your organization's billing notifications are sent to the primary and alternate email address of every Global and Billing admin. To change which users have the Global or Billing admin role, use the following steps.
 
 ### Assign admin roles by using the Billing notifications page
 
@@ -57,35 +60,41 @@ Your organization's billing notifications are sent to the primary and alternate 
 3. In the right pane, on the **Assigned admins** tab, select the users to remove from the role, and then select **Remove**.
 4. In the confirmation box, select **Remove**. The user is removed from the list of assigned admins.
 
-## Change the organization contact who receives billing notifications
-
-In addition to your admins, we send billing notifications to your organization contact. To change the email address of your organization contact, use the following steps.
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. Under **Organization contact receiving billing notifications**, select the organization contact.
-3. In the right pane, type the email address that you want to use, then select **Save**.
-
 ## Change the email addresses for admins
 
 To change the primary and alternate email address of other admins in your organization, use the following steps.
+
+> [!NOTE]
+> Billing admins can change their own primary and alternate email addresses, but not for other admins.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 2. In the **Admins receiving billing notifications** section, select a name.
 3. In the right pane, add or update the primary and alternate email address as needed, then select **Save**.
 
-## Receive a copy of your invoice as an email attachment
+## Change your organization's contact email
 
-You can choose to receive a copy of your invoice as an attachment to your invoice notification email when your new invoice is ready. Use the following steps to receive your invoice as an attachment.
+In addition to your Global and Billing admins, we send billing notifications to your organization's contact email address. To change the email address, use the following steps.
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
+2. Under **Organization contact receiving billing notifications**, select the organization contact.
+3. In the right pane, type the email address that you want to use, then select **Save**.
+
+## Receive your organization's invoices as email attachments
+
+> [!NOTE]
+> Billing admins can also do the steps in this section.
+
+You can choose to have a copy of your organization's invoice attached as a PDF file to invoice notification emails when a new invoice is ready. Use the following steps to receive invoices as attachments.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 2. Under **Billing notification settings**, select **Edit notification settings**.
-3. In the **Billing notification settings** pane, under **Attach an invoice to email notifications**, check the checkbox, then select **Save**.
+3. In the **Billing notification settings** pane, under **Attach a PDF to your invoice emails**, check the checkbox, then select **Save**.
 
-To stop receiving the invoice attachment at any time, follow the steps above and clear the **Attach an invoice to email notifications** checkbox in step 3.
+To stop receiving the invoice attachment at any time, follow the steps above and clear the **Attach a PDF to your invoice  emails** checkbox in step 3.
 
 ## What if I have a billing profile?
 
-If you have a billing profile, some of the steps described in this article might be slightly different. This section describes those differences.
+If you have a billing profile, some of the steps described in this article might be slightly different for some of your subscriptions. This section describes those differences. [How do I know if I have a billing profile?](manage-billing-profiles.md)
 
 ### Who receives Billing notifications?
 
