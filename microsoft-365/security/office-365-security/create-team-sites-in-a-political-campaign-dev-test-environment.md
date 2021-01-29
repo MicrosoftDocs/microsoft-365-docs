@@ -1,7 +1,7 @@
 ---
 title: Create team sites - Political campaign dev environment
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,15 +9,17 @@ ms.date: 05/21/2018
 audience: ITPro
 ms.topic: article
 ms.collection: 
-- Ent_O365
-- Strat_O365_Enterprise
-ms.service: O365-seccomp
+  - Ent_O365
+  - Strat_O365_Enterprise
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Summary: Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment."
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Create team sites in a political campaign dev/test environment

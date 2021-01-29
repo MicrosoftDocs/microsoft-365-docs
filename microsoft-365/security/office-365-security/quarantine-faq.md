@@ -1,23 +1,25 @@
 ---
-title: "Quarantined messages FAQ"
-f1.keywords:
-- NOCSH
+title: Quarantined messages FAQ
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP)."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Quarantined messages FAQ
@@ -67,16 +69,39 @@ Admins can use the the [Get-QuarantineMessage](https://docs.microsoft.com/powers
 
 Wildcards aren't supported in the Security & Compliance Center. For example, when searching for a sender, you need to specify the full email address. But, you can use wildcards in Exchange Online PowerShell or standalone EOP PowerShell.
 
-For example, run the following command to find spam quarantined messages from all senders in the domain contoso.com:
+For example, copy the following PowerShell code into NotePad and save the file as .ps1 in a location that's easy for you to find (for example, C:\Data\QuarantineRelease.ps1).
+
+Then, after you connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) or [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell), run the following command to run the script:
 
 ```powershell
-$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
+& C:\Data\QuarantineRelease.ps1
 ```
 
-Then, run the following command to release those messages to all original recipients:
+The script does the following actions:
+
+- Find unreleased messages that were quarantined as spam from all senders in the fabrikam domain. The maximum number of results is 50,000 (50 pages of 1000 results).
+- Save the results to a CSV file.
+- Release the matching quarantined messages to all original recipients.
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+$Page = 1
+$List = $null
+
+Do
+{
+Write-Host "Getting Page " $Page
+
+$List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+Write-Host "                     " $List.count " rows in this page match"
+Write-Host "                                                             Exporting list to appended CSV for logging"
+$List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+Write-Host "Releasing page " $Page
+$List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+$Page = $Page + 1
+
+} Until ($Page -eq 50)
 ```
 
 After you release a message, you can't release it again.

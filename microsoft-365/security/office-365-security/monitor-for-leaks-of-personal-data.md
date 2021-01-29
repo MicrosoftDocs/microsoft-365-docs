@@ -1,23 +1,25 @@
 ---
-title: "Monitor for leaks of personal data"
-f1.keywords:
-- NOCSH
+title: Monitor for leaks of personal data
+f1.keywords: 
+  - NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 02/07/2018
 audience: ITPro
 ms.topic: overview
-ms.collection:
-- Strat_O365_Enterprise
-- Ent_O365
-- GDPR
-- M365-security-compliance
-ms.service: O365-seccomp
+ms.collection: 
+  - Strat_O365_Enterprise
+  - Ent_O365
+  - GDPR
+  - M365-security-compliance
+
 localization_priority: Priority
-search.appverid:
-- MET150
-description: "Learn about three tools you can use to monitor for leaks of personal data."
+search.appverid: 
+  - MET150
+description: Learn about three tools you can use to monitor for leaks of personal data.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 # Monitor for leaks of personal data
 
