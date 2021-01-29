@@ -1,5 +1,5 @@
 ---
-title: "Learn about the default data loss prevention policy in Microsoft Teams"
+title: "Learn about the default data loss prevention policy in Microsoft Teams (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,7 +17,7 @@ search.appverid:
 description: "Learn about the default data loss prevention policy in Microsoft Teams"
 ---
 
-# Learn about the default data loss prevention policy in Microsoft Teams
+# Learn about the default data loss prevention policy in Microsoft Teams (preview)
 
 [Data loss prevention](data-loss-prevention-policies.md) (DLP) capabilities have been extended to include Microsoft Teams chat and channel messages, including private channel messages. As a part of this release, we created a default DLP policy for first time customers to Compliance center.
 
@@ -40,4 +40,11 @@ The default DLP policy, which is on by default on all users of the tenant, track
 
 Admins can view this policy in the [Compliance center](https://compliance.microsoft.com/compliancesettings) > Data Loss prevention policies page.
 
+
+> [!div class="mx-imgBorder"]
+> ![default Teams DLP policy](../media/default-teams-dlp-policy.png)
+
+## Edit or delete the default policy
+
+To [edit or delete](create-test-tune-dlp-policy.md#tune-a-dlp-policy) the default policy, just use an account with **DLP Compliance Management** permissions. See, [Permissions](create-test-tune-dlp-policy.md#permissions) for more information.
 
