@@ -41,9 +41,9 @@ This center emphasizes quick access to information, simpler layouts, and clarity
 
 The Microsoft 365 security center is your home for security information and management for security teams and includes:
 
-- **[Microsoft Defender for Office 365](\office-365-security\office-365-atp.md)** 
+- **[Microsoft Defender for Office 365](../office-365-security/office-365-atp.md)** 
  helps organizations secure their enterprise with a comprehensive set of prevention, detection, investigation and hunting features to protect email and other Office 365 resources. 
-- **[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
+- **[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
 - **[Microsoft 365 Defender](microsoft-threat-protection.md)**
 is part of Microsoft’s XDR solution and leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, building a complete picture of each attack in a single dashboard. With this breadth and depth of clarity defenders can now focus on critical threats and hunt for sophisticated breaches, trusting that the powerful automation in Microsoft 365 Defender detects and stops attacks anywhere in the kill chain and returns the organization to a secure state.
 
