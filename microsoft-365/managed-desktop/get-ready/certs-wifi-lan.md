@@ -23,7 +23,7 @@ Because Microsoft Managed Desktop devices are joined to Azure Active Directory (
  
 Root certificates are required to deploy certificates through a SCEP or PKCS infrastructure. Other applications and services in your organization might require root certificates to be deployed to your Microsoft Managed Desktop devices.    
  
-Before you deploy SCEP or PKCS certificates to Microsoft Managed Desktop, you should gather requirements for each service that requires a user or device certificate in your organization. To make this easier, you can use one of the following planning templates:  
+Before you deploy SCEP or PKCS certificates to Microsoft Managed Desktop, you should gather requirements for each service that requires a user or device certificate in your organization. To make this activity easier, you can use one of the following planning templates:  
  
 - [PKCS certificate template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [SCEP certificate template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
@@ -33,12 +33,12 @@ Before you deploy SCEP or PKCS certificates to Microsoft Managed Desktop, you sh
 
 To allow a device to be automatically provided with the required Wi-Fi configuration for your enterprise network, you might need a Wi-Fi configuration profile. You can configure Microsoft Managed Desktop to deploy these profiles to your devices. If your network security requires devices to be part of the local domain, you might also need to evaluate your Wi-Fi network infrastructure to make sure it's compatible with Microsoft Managed Desktop devices (Microsoft Managed Desktop devices are Azure AD-joined only). 
  
-Before you deploy a Wi-Fi configuration to Microsoft Managed Desktop devices, you will be required to gather your organization’s requirements for each Wi-Fi network. To make this easier, you can use this [WiFi profile template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx).
+Before you deploy a Wi-Fi configuration to Microsoft Managed Desktop devices, you will be required to gather your organization’s requirements for each Wi-Fi network. To make this activity easier, you can use this [WiFi profile template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx).
  
  
 ## Wired connectivity requirements and 802.1x authentication 
  
-If you use 802.1x authentication to secure access from devices to your local area network (LAN) you will need to push the required configuration details to your Microsoft Managed Desktop devices. Microsoft Managed Desktop devices running Windows 10, version 1809 or later support deploying an 802.1x configuration through the WiredNetwork configuration service provider (CSP). For more information, see [WiredNetwork CSP](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) documentation. 
+If you use 802.1x authentication to secure access from devices to your local area network (LAN), you will need to push the required configuration details to your Microsoft Managed Desktop devices. Microsoft Managed Desktop devices running Windows 10, version 1809 or later support deploying an 802.1x configuration through the WiredNetwork configuration service provider (CSP). For more information, see [WiredNetwork CSP](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) documentation. 
  
 Before you deploy a wired network configuration profile to Microsoft Managed Desktop devices, gather your organization’s requirements for your wired corporate network. To do so, follow these steps: 
  
@@ -52,7 +52,7 @@ Before you deploy a wired network configuration profile to Microsoft Managed Des
  
 ## Deploy certificate infrastructure  
  
-If you already have an existing SCEP or PKCS infrastructure with Intune and this meets your requirements, you can also use it for Microsoft Managed Desktop. If no SCEP or PKCS infrastructure already exists, you'll have to prepare one.  
+If you already have an existing SCEP or PKCS infrastructure with Intune and this approach meets your requirements, you can also use it for Microsoft Managed Desktop. If no SCEP or PKCS infrastructure already exists, you'll have to prepare one.  
  
 For more information, see [Configure a certificate profile for your devices in Microsoft Intune](https://docs.microsoft.com/intune/certificates-configure). 
  

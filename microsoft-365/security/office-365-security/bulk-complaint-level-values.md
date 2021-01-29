@@ -1,21 +1,23 @@
 ---
 title: Bulk complaint level values
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about bulk compliance level (BCL) values that are used in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about bulk compliance level (BCL) values that are used in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Bulk complaint level (BCL) in EOP

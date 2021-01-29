@@ -8,7 +8,9 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 
@@ -41,6 +43,13 @@ The Topic center is created during Topic Experiences setup. After setup complete
 
 
 ## Home page
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]  
+
+</br>
+
 
 On the Topic center home page, you can see the topics in your organization to which you have a connection.
 

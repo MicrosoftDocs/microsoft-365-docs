@@ -1,21 +1,23 @@
 ---
-title: "Report spam, non-spam, and phishing messages to Microsoft"
-f1.keywords:
-- NOCSH
+title: Report spam, non-spam, and phishing messages to Microsoft
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about the different ways to report good and bad messages and files to Microsoft for analysis."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the different ways to report good and bad messages and files to Microsoft for analysis.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Report messages and files to Microsoft
@@ -29,7 +31,8 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 |Method|Description|
 |---|---|
 |[Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md)|The recommended reporting method for admins in organizations with Exchange Online mailboxes (not available in standalone EOP).|
-|[Enable the Report Message add-in](enable-the-report-message-add-in.md)|Works with Outlook, Outlook for Mac, and Outlook on the web (formerly known as Outlook Web App), and is the recommended add-in. <p> Depending on your subscription, messages that users reported with the add-in are available in [the Admin Submissions portal](admin-submission.md), [Automated investigation and response (AIR) results](air-view-investigation-results.md), the [User-reported messages report](view-email-security-reports.md#user-reported-messages-report), and [Threat Explorer](threat-explorer-views.md#email--submissions). <p> You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).|
+|[Enable the Report Message add-in](enable-the-report-message-add-in.md)|Works with Outlook and Outlook on the web (formerly known as Outlook Web App). <p> Depending on your subscription, messages that users reported with the add-in are available in [the Admin Submissions portal](admin-submission.md), [Automated investigation and response (AIR) results](air-view-investigation-results.md), the [User-reported messages report](view-email-security-reports.md#user-reported-messages-report), and [Threat Explorer](threat-explorer-views.md#email--submissions). <p> You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
+|[Enable the Report Phishing add-in](enable-the-report-phish-add-in.md)|Works with Outlook and Outlook on the web (formerly known as Outlook Web App). <p> Depending on your subscription, messages that users reported with the add-in are available in [the Admin Submissions portal](admin-submission.md), [Automated investigation and response (AIR) results](air-view-investigation-results.md), the [User-reported messages report](view-email-security-reports.md#user-reported-messages-report), and [Threat Explorer](threat-explorer-views.md#email--submissions). <p> You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).|
 |[Install and use the Junk Email Reporting add-in for Microsoft Outlook](junk-email-reporting-add-in-for-microsoft-outlook.md)|Only works in Outlook.|
 |[Report junk and phishing email in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Use the built-in capabilities in Outlook on the web for organizations with Exchange Online mailboxes (not available in standalone EOP). <p> Messages that users report are available in [the Admin Submissions portal](admin-submission.md). <p> You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).|
 |[Report junk and phishing email in Outlook for iOS and Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Use the built-in capabilities in Outlook for iOS and Android for organizations with Exchange Online mailboxes (not available in standalone EOP). <p> Messages that users report are available in [the Admin Submissions portal](admin-submission.md). <p> You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).|

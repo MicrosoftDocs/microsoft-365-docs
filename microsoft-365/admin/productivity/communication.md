@@ -25,6 +25,18 @@ description: "Details of the Communication - People experience Productivity Scor
 
 Productivity   Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. The communication category is part of the people experiences measures. To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
+## Prerequisites
+
+To get started with Communication insights, people in your organization need to be licensed for:
+
+- Microsoft Teams
+- Yammer
+- Exchange Online
+
+For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).
+
+After people have been active in the above products at least once in the last 28 days, you will start to see the insights.
+
 ## Why your organization’s Communication score matters 
 
 Microsoft understands that people have different communication needs. To get a quick response to a question, you might choose to send an instant message. If you want to send status updates to your leadership, you may choose an email message. To reach a broader audience, you may choose to post a community message. Microsoft 365 enables this flexibility in communication modes to fit everyone's needs. Research shows that using real-time communication tools creates a more unified organization and builds morale, regardless of location. [See the evidence](https://go.microsoft.com/fwlink/?linkid=2127669).

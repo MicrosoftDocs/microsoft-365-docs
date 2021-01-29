@@ -21,6 +21,16 @@ It is important to plan the best way to set up and configure topics in your envi
 
 You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up topic experiences.
 
+## Video demonstration
+
+This video shows the process for setting up topic experiences in Microsoft 365.
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
+
+<br>
+
 ## Set up topic experiences
 
 To set up topic experiences in Microsoft 365

@@ -8,7 +8,9 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic 
+ms.collection: 
+    - enabler-strategic 
+    - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 
@@ -17,6 +19,13 @@ localization_priority: None
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LxDx]  
+
+</br>
+
 
 In the Topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in SharePoint source locations as specified by your knowledge admin.  
 

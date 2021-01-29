@@ -187,9 +187,8 @@ The color names that you can use for the background color are limited. Instead o
 
 The available background color names and their corresponding hex code values are described in the following table.
 
-|||
-|---|---|
 |**Color name**|**Color code**|
+|---|---|
 |`aliceblue`|#f0f8ff|
 |`antiquewhite`|#faebd7|
 |`aqua`|#00ffff|

@@ -7,7 +7,9 @@ manager: pamgreen
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-topics
 ms.service: 
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
@@ -18,6 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LA4n]  
+
+</br>
 
 In Topic experiences, you can edit an existing topic. You may need to do this if you want to correct or add additional information to an existing topic page. 
 
