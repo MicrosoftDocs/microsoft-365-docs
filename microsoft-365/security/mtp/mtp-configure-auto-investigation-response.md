@@ -62,7 +62,7 @@ Although certain alerts and security policies can trigger automated investigatio
 
 Security settings in Office 365 help protect email and content. To view or change these settings, follow the guidance in [Protect against threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
-1. In the Microsoft 365 security center ([https://security.microsoft.com/](https://security.microsoft.com/)), go to **Policies** > **Threat protection**.
+1. In the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), go to **Policies** > **Threat protection**.
 2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
    - [Anti-malware (Office 365)](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-1---anti-malware-protection)
    - [Anti-phishing in Defender for Office 365)](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection)
@@ -87,8 +87,6 @@ Security settings in Office 365 help protect email and content. To view or chang
 > [!TIP]
 > Need help? See [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
 
-## Review pending and completed actions in the Action center
+## Next steps
 
-After you have configured automated investigation and response in Microsoft 365 Defender, your next step is to visit the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). There, you can review and approve pending actions, and see remediation actions that were taken automatically or manually.
-
-[Visit the Action center](mtp-action-center.md).
+- [Visit the Action center](mtp-action-center.md).
