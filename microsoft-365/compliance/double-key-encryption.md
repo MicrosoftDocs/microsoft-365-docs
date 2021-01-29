@@ -6,7 +6,7 @@ description: DKE enables you to protect highly sensitive data while maintaining 
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 09/22/2020
+ms.date: 01/29/2021
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -149,16 +149,12 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
 5. In the **Select Folder** dialog that appears, browse to and select a location to store the repository. At the prompt, select **Open**.
 
-    The repository opens in Visual Studio Code, and displays the current Git branch at the bottom left. The branch should be **master**.
+    The repository opens in Visual Studio Code, and displays the current Git branch at the bottom left. The branch should be **main**. If you're not on the main branch, you'll need to select it.
 
-    For example:
-
-   ![Visual Studio Code master branch](../media/dke-vscode-master.png)
-
-6. Select the word **master** from the list of branches.
+6. Select **main** from the list of branches.
 
    > [!IMPORTANT]
-   > Selecting the master branch ensures that you have the correct files to build the project. If you do not choose the correct branch your deployment will fail.
+   > Selecting the main branch ensures that you have the correct files to build the project. If you do not choose the correct branch your deployment will fail.
 
 You now have your DKE source repository set up locally. Next, [modify application settings](#modify-application-settings) for your organization.
 
