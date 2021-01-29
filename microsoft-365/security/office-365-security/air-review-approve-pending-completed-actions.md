@@ -23,9 +23,6 @@ ms.date: 01/29/2021
 
 # View pending or completed remediation actions following an automated investigation in Office 365
 
-
-## Approve (or reject) pending actions
-
 As automated investigations on email & collaboration content result in verdicts, such as *Malicious* or *Suspicious*, certain remediation actions are created. In Microsoft Defender for Office 365, remediation actions can include:
 - Blocking a URL (time-of-click)
 - Soft deleting email messages or clusters
@@ -33,6 +30,8 @@ As automated investigations on email & collaboration content result in verdicts,
 - Turning off external mail forwarding
 
 These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner.
+
+## Approve (or reject) pending actions
 
 1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 2. In the navigation pane, select **Action center**.
