@@ -41,11 +41,11 @@ Boost your knowledge of advanced hunting quickly with _Tracking the adversary_, 
 | Episode 4: Let’s hunt! Applying KQL to incident tracking | In this episode, you learn to track some attacker activity. We use our improved understanding of Kusto and advanced hunting to track an attack. Learn actual tricks used in the field, including the ABCs of cybersecurity and how to apply them to incident response. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL file](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) 
 
 
-Get more expert training with *l33tSpeak*, a webcast series for analysts looking to expand their knowledge and practical skills in advanced hunting in Microsoft 365 Defender. 
+Get more expert training with *l33tSpeak: Advanced hunting in Microsoft 365 Defender*, a webcast series for analysts looking to expand their technical knowledge and practical skills in conducting security investigations using advanced hunting in Microsoft 365 Defender. 
 
 | Title | Description | Watch | Queries | 
 |--|--|--|--|
-| Episode 1: Advanced hunting in Microsoft 365 Defender | In this webcast, you will learn different best practices in running advanced hunting queries. Among the topics covered are how to optimize your queries, use advanced hunting for ransomware, handle JSON as a dynamic type, and work with external data operators. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [CSL file](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
+| Episode 1  | In this episode, you will learn different best practices in running advanced hunting queries. Among the topics covered are: how to optimize your queries, use advanced hunting for ransomware, handle JSON as a dynamic type, and work with external data operators. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [CSL file](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
 
 
 ## How to use the CSL file
