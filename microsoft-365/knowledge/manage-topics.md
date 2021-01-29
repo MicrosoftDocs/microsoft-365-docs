@@ -87,7 +87,7 @@ The Quality score could range from 1 to 100. A newly discovered topic will have 
 
 ### Impressions
 
-The <b>Impressions</b> column displays the number of times a topic has been shown to end users. This includes views through topic cards in search, through topic highlights, and through Topic center views. It does not reflect the click-through on these topics, but that the topic has been displayed. The Impressions column will show for topics in the Suggested, Confirmed, Published, and Removed tabs.
+The <b>Impressions</b> column displays the number of times a topic has been shown to end users. This includes views through topic cards in search, through topic highlights, and through Topic center views. It does not reflect the click-through on these topics, but that the topic has been displayed. The Impressions column will show for topics in the Suggested, Confirmed, Published, and Removed tabs in the Manage Topics page.
 
 
 ## Confirmed topics
