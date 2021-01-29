@@ -34,8 +34,7 @@ Threat protection features in [Microsoft Defender for Office 365](office-365-atp
 - Turn off external mail forwarding
 - Turn off delegation
 
-> [!NOTE]
-> In Microsoft Defender for Office 365, remediation actions are not taken automatically. Instead, remediation actions are taken only upon approval by your organization's security operations team.
+In Microsoft Defender for Office 365, remediation actions are not taken automatically. Instead, remediation actions are taken only upon approval by your organization's security operations team.
 
 ## Threats and remediation actions
 
