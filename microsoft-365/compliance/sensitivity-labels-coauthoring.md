@@ -128,10 +128,12 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 
 During the preview, you must use a specific URL to access this setting in the Microsoft 365 compliance center.
 
-1. Sign in to the Microsoft 365 compliance center as a global admin for your test tenant, using the following URL:
+1. Sign in to the Microsoft 365 compliance center as a global admin for your test tenant, using the following link:
     
-    https://compliance.microsoft.com/compliancesettings/Co-authoring_for_files_with_sensitivity_labels 
-    
+    ````
+    https://compliance.microsoft.com/compliancesettings/co-authoring_for_files_with_sensitivity_labels
+    ````
+
 2. Select **Settings** > **Co-authoring for files with sensitivity labels**.
 
 3. After you have read the summary description, prerequisites, what to expect, and the warning that you can't turn it off,  select **Turn on co-authoring for files with sensitivity labels**, and then **Apply**:
