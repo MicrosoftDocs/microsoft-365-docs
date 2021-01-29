@@ -53,7 +53,6 @@ The following sections describe how to perform these tasks.
 |- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
 |A file, IP address, URL, or domain is treated as malware on a device, even though it's safe|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
-
 ## Undo a remediation action that was taken on a device
 
 If a remediation action was taken on an entity (such as a device or an email message) and the affected entity is not actually a threat, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
@@ -63,7 +62,11 @@ If a remediation action was taken on an entity (such as a device or an email mes
 3. On the **History** tab, select an action that you want to undo. Its flyout pane opens.
 4. In the flyout pane, select **Undo**.
 
+> [!TIP]
+> See [Undo completed actions](mtp-autoir-actions.md#undo-completed-actions).
+
 ## See also
 
 - [View the details and results of an automated investigation](mtp-autoir-results.md)
 - [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
+- [Address false positives/negatives in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
