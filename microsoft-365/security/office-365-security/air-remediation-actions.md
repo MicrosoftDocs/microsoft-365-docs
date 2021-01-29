@@ -30,7 +30,7 @@ ms.prod: m365-security
 
 ## Remediation actions
 
-[Automated investigation and response capabilities](office-365-air.md) (AIR) in [Microsoft Defender for Office 365](office-365-atp.md) include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. Such remediation actions can include:
+Threat protection features in [Microsoft Defender for Office 365](office-365-atp.md) include certain remediation actions. Such remediation actions can include:
 
 - Soft delete email messages or clusters
 - Block URL (time-of-click)
@@ -38,17 +38,17 @@ ms.prod: m365-security
 - Turn off delegation
 
 > [!NOTE]
-> In Microsoft Defender for Office 365, automated investigations do not result in remediation actions that are taken automatically. Remediation actions are taken only upon approval by your organization's security operations team.
+> In Microsoft Defender for Office 365, remediation actions are not taken automatically. Instead, remediation actions are taken only upon approval by your organization's security operations team.
 
 ## Threats and remediation actions
 
-Microsoft Defender for Office 365 includes remediation actions to address various threats. In some cases, an automated investigation does not result in a specific remediation action. To further investigate and take appropriate actions, use the guidance in the following table.
+Microsoft Defender for Office 365 includes remediation actions to address various threats. Automated investigations often result in one or more remediation actions to review and approve. In some cases, an automated investigation does not result in a specific remediation action. To further investigate and take appropriate actions, use the guidance in the following table.
 
 |Category|Threat/risk|Remediation action(s)|
 |:---|:---|:---|
 |Email|Malware|Soft delete email/cluster​ <p> If more than a handful of email messages in a cluster contain malware, the cluster is considered to be malicious.​|
 |Email|Malicious URL​<br/>(A malicious URL was detected by [Safe Links](atp-safe-links.md).)|Soft delete email/cluster​ <p>Email that contains a malicious URL is considered to be malicious​.|
-|Email|Phish|Soft delete email/cluster​ <p> If more than a handful of email messages in a cluster contain phishing attempts, the cluster is considered to be phish.​|
+|Email|Phish|Soft delete email/cluster​ <p> If more than a handful of email messages in a cluster contain phishing attempts, the whole cluster is considered a phishing attempt.​|
 |Email|Zapped phish​ <br>(Email messages were delivered and then [zapped​](zero-hour-auto-purge.md).)|Soft delete email/cluster​ <p>Reports are available to view zapped messages. [See if ZAP moved a message and FAQs](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message).|
 |Email|Missed phish email [reported](enable-the-report-message-add-in.md) by a user|[Automated investigation triggered by the user's report](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |Email|Volume anomaly​ <br> (Recent email quantities exceed the previous 7-10 days for matching criteria.​)|Automated investigation does not result in a specific pending action. <p>Volume anomaly is not a clear threat, but is merely an indication of larger email volumes in recent days compared to the last 7-10 days. <p>Although a high volume of email can indicate potential issues, confirmation is needed in terms of either malicious verdicts or a manual review of email messages/clusters. See [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered).|
