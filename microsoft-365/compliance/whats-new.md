@@ -236,7 +236,6 @@ Retention-related admin activity is now recorded and available to review in the 
 - When [adding a collection to a review set](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review), you can now include modern attachments (also called “cloud attachments”) and SharePoint document versions.
 - New [direct download export experience](export-documents-from-review-set.md), eliminating the need to use Azure Storage Explorer to download case content.
 
-
 ## July 2020
 
 ### Spotlight on help docs
