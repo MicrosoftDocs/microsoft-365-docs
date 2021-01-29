@@ -17,10 +17,10 @@ audience: ITPro
 ms.collection: 
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/27/2021
+ms.date: 01/29/2021
 ---
 
 # The Action center
@@ -50,14 +50,14 @@ Your security operations team can operate more effectively and efficiently, beca
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 2. In the navigation pane, choose **Action center**. 
-3. In the Action center, you'll see two tabs: **Pending** and **History**.
-    - The **Pending** tab lists investigations that require review and approval by someone in your security operations team to continue. Make sure to review and take action on pending items you see here.
-    - The **History** tab lists past investigations and remediation actions that were taken automatically. You can view data for the past day, week, month, or six months.
-4. To show only the columns you want to see, select **Customize columns**.
-5. Select an item in the list to view more details about an investigation. The investigation details view opens.
 
-> [!TIP]
-> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft 365 Defender, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
+When you visit the Action center, you see two tabs: Pending actions and History. The following table summarizes what you'll see on each tab:
+
+
+|Tab  |Description  |
+|---------|---------|
+|**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as Quarantine file). <p>TIP: Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner.       |
+|**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br/>- Remediation actions that were taken on suspicious or malicious email messages, files, or URLs<br/>- Remediation actions that were approved by your security operations team <br/>- Commands that were run and remediation actions that were applied during Live Response sessions<br/>- Remediation actions that were taken by your antivirus protection <p>Provides a way to undo certain actions (see [Undo completed actions](mtp-autoir-actions.md#undo-completed-actions)).        |
 
 ## Available actions
 
