@@ -19,7 +19,7 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/27/2021 
+ms.date: 01/29/2021 
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ---
@@ -31,11 +31,14 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+If your organization is using [Microsoft 365 Defender](microsoft-threat-protection.md), your security operations team receives an alert whenever a malicious or suspicious artifact is detected. Given the seemingly never-ending flow of threats that come in, security teams often face challenges in addressing the high volume of alerts. Fortunately, Microsoft 365 Defender includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
+
+The technology in automated investigation uses various inspection algorithms and is based on processes that are used by security analysts. AIR capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing security operations to focus on more sophisticated threats and other high-value initiatives. All remediation actions, whether pending or completed, are tracked in the Action center. In the Action center, pending actions are approved (or rejected), and completed actions can be undone if needed.
+
+This article provides an overview of AIR and includes links to next steps and additional resources.
+
+> [!TIP]
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
-
-Microsoft 365 Defender includes automated investigation and response capabilities for your organization's devices, email & collaboration content, and identities. These capabilities are brought together in the [new, unified Microsoft 365 security center](overview-security-center.md). Your security team can view details about investigations, including any pending or completed remediation actions, in a single location: the [Action center](mtp-action-center.md). 
-
-Read this article to see how automated investigation and response capabilities work, and then take your next steps.
 
 ## How automated investigation and self-healing works
 
@@ -54,7 +57,7 @@ In Microsoft 365 Defender, automated investigation and response with self-healin
 
 Imagine having a virtual analyst in your Tier 1 / Tier 2 security operations team. The virtual analyst mimics the ideal steps that security operations would take to investigate and remediate threats. The virtual assistant could work 24x7, with unlimited capacity, and take on a significant load of investigations and threat remediation. Such a virtual assistant could significantly reduce the time to respond, freeing up your security operations team for other important strategic projects. If this scenario sounds like science fiction, it's not! Such a virtual analyst is part of your Microsoft 365 Defender suite, and its name is *automated investigation and response*.
 
-Automated investigation and response capabilities enable your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With automated investigation and response, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. Automated investigation and response helps your security operations team by:
+Automated investigation and response capabilities enable your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With automated investigation and response, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. Automated investigation and response capabilities help your security operations team by:
 
 1. Determining whether a threat requires action;
 2. Taking (or recommending) any necessary remediation actions;
