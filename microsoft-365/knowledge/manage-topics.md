@@ -39,11 +39,14 @@ Knowledge managers help to guide discovered topics through the topic lifecycle i
 
    ![Topic Lifecycle chart](../media/knowledge-management/topic-lifecycle.png) </br> 
 
+> [!Note] 
+> In the Manage Topics page, each knowledge manager will only be able to see topics that they have permission to view. This will be reflected in the topics that are listed under the Suggested, Confirmed, Removed, and Published pages, as well as the topic counts for each.
+
 ## Requirements
 
 To manage topics in the Topic center, you need to:
 - Have a Topic Experiences license.
-- Have permissions to [**Who can manage topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Knowledge Network topic permissions settings. 
+- Have the [**Who can manage topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) permission. Knowledge admins can give users this permission in the Knowledge Network topic permissions settings. 
 
 You will not be able to view the Manage Topics page in the Topic Center unless you have the **Who can manage topics** permission.
 
@@ -73,6 +76,19 @@ To review a suggested topic:
     Rejected topics will be removed from the **Suggested** list and will now display in the **Removed** tab.
 
    </br> 
+
+### Quality score
+
+Each topic that appears in your Suggested Topics page has a <b>Quality</b> score assigned to it. The Quality score is a  reflection of the information that the average user will see for the information on the topic, keeping in mind that each user may see more or less information because of the permissions they may or may not have on the information in a topic. 
+
+The Quality score can help give insight to the topics with the most information and can be useful for finding topics that may need to be manually edited.  For example, a topic with a low quality score may be the result of some users not having SharePoint permissions to pertinent files or sites that AI has included in the topic. A contributor could then edit the topic to include the information (when appropriate), which will then be viewable to all users who can view the topic.
+
+The Quality score could range from 1 to 100. A newly discovered topic will have a quality score of 0 until two or more users have viewed it. Each users quality score is determined by a number of factors, such as the amount of content displayed for the specific user, which is controlled the user's permissions as each topic page has security trimming in place for AI-generated content. The Quality score shown on the Suggested topics tab is an average of each users individual score.
+
+### Impressions
+
+The <b>Impressions</b> column displays the number of times a topic has been shown to end users. This includes views through topic cards in search, through topic highlights, and through Topic center views. It does not reflect the click-through on these topics, but that the topic has been displayed. The Impressions column will show for topics in the Suggested, Confirmed, Published, and Removed tabs.
+
 
 ## Confirmed topics
 
