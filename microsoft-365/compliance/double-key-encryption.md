@@ -149,9 +149,11 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
 5. In the **Select Folder** dialog that appears, browse to and select a location to store the repository. At the prompt, select **Open**.
 
-    The repository opens in Visual Studio Code, and displays the current Git branch at the bottom left. The branch should be **main**. If you're not on the main branch, you'll need to select it.
+    The repository opens in Visual Studio Code, and displays the current Git branch at the bottom left. For example,  The branch should be **main**. For example:
 
-6. Select **main** from the list of branches.
+   ![Screenshot of the DKE repo in Visual Studio Code displaying the main branch](../media/dke-vscode-main-branch.png)
+
+6. If you're not on the main branch, you'll need to select it. In Visual Studio Code, select the branch and choose **main** from the list of branches that displays.
 
    > [!IMPORTANT]
    > Selecting the main branch ensures that you have the correct files to build the project. If you do not choose the correct branch your deployment will fail.
