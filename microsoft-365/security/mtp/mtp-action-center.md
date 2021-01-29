@@ -48,7 +48,7 @@ The Action center provides a "single pane of glass" experience for tasks, such a
 
 Your security operations team can operate more effectively and efficiently, because the Action center provides a comprehensive view of Microsoft 365 Defender at work.
 
-## Go to the Action center
+## Using the Action center
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 2. In the navigation pane, choose **Action center**. 
