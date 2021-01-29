@@ -44,7 +44,7 @@ The Microsoft 365 security center is your home for security information and mana
 - **[Microsoft Defender for Office 365](\office-365-security\office-365-atp.md)** 
  helps organizations secure their enterprise with a comprehensive set of prevention, detection, investigation and hunting features to protect email and other Office 365 resources. 
 - **[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
-- **[Microsoft 365 Defender](\microsoft-365\security\mtp\microsoft-threat-protection.md)**
+- **[Microsoft 365 Defender](microsoft-threat-protection.md)**
 is part of Microsoft’s XDR solution and leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, building a complete picture of each attack in a single dashboard. With this breadth and depth of clarity defenders can now focus on critical threats and hunt for sophisticated breaches, trusting that the powerful automation in Microsoft 365 Defender detects and stops attacks anywhere in the kill chain and returns the organization to a secure state.
 
 If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft Defender Security Center, see:
@@ -128,8 +128,8 @@ We need your feedback. We're always looking to improve, so if there's something 
 
 Keep exploring the features and capabilities in the Microsoft 365 security center:
 
-- [Manage incidents and alerts](security\mtp\manage-incidents.md)
-- [Track and respond to emerging threats with threat analytics](\microsoft-365-docs-pr\microsoft-365\security\mtp\threat-analytics.md)
+- [Manage incidents and alerts](manage-incidents.md)
+- [Track and respond to emerging threats with threat analytics](threat-analytics.md)
 - [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
 - [Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
