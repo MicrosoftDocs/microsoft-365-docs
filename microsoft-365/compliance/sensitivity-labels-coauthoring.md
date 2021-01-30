@@ -145,7 +145,7 @@ During the preview, you must use a specific URL to access this setting in the Mi
 
     > [!IMPORTANT]
     > Before you continue, check you're signed in to a test tenant that won't affect your users: 
-    
+    >
     > Select the circle with your account initials in the top right of the compliance center, and confirm that the tenant name does display your intended test tenant.
     
 2. Read the summary description, prerequisites, what to expect, and the warning that you can't turn off this setting after you've turned it on. Then select **Turn on co-authoring for files with sensitivity labels**, and **Apply**:
