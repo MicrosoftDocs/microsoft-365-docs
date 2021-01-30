@@ -71,6 +71,7 @@ Each model in the model usage list will show the usage data:
 - Average confidence score:
 - Target list URL:
 
+ ![Model usage](../media/content-understanding/model-usage.png) </br>
 
 ## See Also
 [Create a classifier](create-a-classifier.md)
