@@ -300,7 +300,7 @@ Your users type the Gmail email address in the **To** box.  Then, they select th
 
 This label is suitable for sharing very sensitive documents as read-only, and the documents always require an internet connection to view them.
 
-This label is not suitable for emails.
+This label is not suitable for emails and this label requires that the Azure Information Protection app is not blocked or requires MFA/device restrictions in any Conditional Access policy on the source tenant.
 
 1. On the **Encryption** page: For **Assign permissions now or let users decide?** select **Assign permissions now**.
 
@@ -323,6 +323,8 @@ This label is not suitable for emails.
 ### Example 3: Add external users to an existing label that encrypts content
 
 The new users that you add will be able open documents and emails that have already been protected with this label. The permissions that you grant these users can be different from the permissions that the existing users have.
+
+This label requires that the Azure Information Protection app is not blocked or requires MFA/device restrictions in any Conditional Access policy on the source tenant. If the Azure Information Protection app requires MFA in a Conditional Access rule then opening the document by an allowed external user will result in error code AADSTS90072. This indicates that the external user does not having an account in the source tenant.
 
 1. On the **Encryption** page: For **Assign permissions now or let users decide?** make sure **Assign permissions now** is selected.
 
