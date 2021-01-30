@@ -380,7 +380,8 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
    For example:
 
-   ![Add your App Service](../media/dke-azure-add-app-service.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add your App Service](../media/dke-azure-add-app-service.png)
 
 3. At the bottom of the page, select **Review + create**, and then select **Add**.
 
@@ -474,7 +475,8 @@ To register the DKE service:
 
    For example:
 
-   ![New App Registration](../media/dke-app-registration.png)
+   > [!div class="mx-imgBorder"]
+   > ![New App Registration](../media/dke-app-registration.png)
 
 4. At the bottom of the page, select **Register** to create the new App Registration.
 
@@ -532,7 +534,8 @@ In the Microsoft 365 compliance center, create a new sensitivity label and apply
 
 For example:
 
-![Select Use Double Key Encryption in the Microsoft 365 compliance center](../media/dke-use-dke.png)
+> [!div class="mx-imgBorder"]
+> ![Select Use Double Key Encryption in the Microsoft 365 compliance center](../media/dke-use-dke.png)
 
 Any DKE labels you add will start appearing for users in the latest versions of Microsoft 365 Apps for enterprise.
 
