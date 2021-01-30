@@ -78,18 +78,21 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
-    - Microsoft 365 Apps for enterprise:
+    - **Microsoft 365 Apps for enterprise:**
         - Windows: Preview: [Current Channel (Preview)](https://office.com/insider) or [Beta Channel](https://office.com/insider)
         - macOS: Preview: [Current Channel (Preview)](https://office.com/insider) or [Beta Channel](https://office.com/insider)
         - iOS: Not yet supported
         - Android: Not yet supported
-    - Azure Information Protection unified labeling client and scanner: Version 2.10.xx that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
-    - OneDrive sync app for Windows or macOS: Minimum version of 19.002.0121.0008
-    - Endpoint data loss prevention (Endpoint DLP):
+    - **Azure Information Protection unified labeling client and scanner:** 
+        - Version 2.10.xx that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
+    - **OneDrive sync app for Windows or macOS: **
+        - Minimum version of 19.002.0121.0008
+    - **Endpoint data loss prevention (Endpoint DLP):**
         - Windows 10 1809 with KB 4601380
         - Windows 10 1903 with KB 4601382
         - Windows 10 2004 with KB 4601383
-    - Apps and services that use the Microsoft Information Protection SDK: Minimum version of 1.7 
+    - **Apps and services that use the Microsoft Information Protection SDK:** 
+        - Minimum version of 1.7 
 
 Microsoft 365 services automatically support the new labeling metadata when you turn on this feature. For example:
 
