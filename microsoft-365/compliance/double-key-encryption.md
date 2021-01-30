@@ -139,11 +139,13 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
     For example:
 
-   ![Clone the Double Key Encryption service repository from GitHub](../media/dke-clone.png)
+   > [!div class="mx-imgBorder"]
+   > ![Clone the Double Key Encryption service repository from GitHub](../media/dke-clone.png)
 
 3. In Visual Studio Code, select **View** \> **Command Palette** and select **Git: Clone**. To jump to the option in the list, start typing `git: clone` to filter the entries and then select it from the drop-down. For example:
 
-   ![Visual Studio Code GIT:Clone option](../media/dke-vscode-clone.png)
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio Code GIT:Clone option](../media/dke-vscode-clone.png)
 
 4. In the text box, paste the URL that you copied from Git and select **Clone from GitHub**.
 
@@ -263,19 +265,19 @@ To generate keys:
 
 3. Generate the new test key.
 
-   ```dos
+   ```console
    openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
    ```
 
 4. Generate the private key.
 
-   ```dos
+   ```console
    openssl rsa -in key.pem -out privkeynopass.pem
    ```
 
 5. Generate the public key.
 
-   ```dos
+   ```console
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
@@ -292,23 +294,23 @@ To generate keys:
 
 10. Locate the following lines:
 
-   ```c#
+    ```csharp
         #if USE_TEST_KEYS
         #error !!!!!!!!!!!!!!!!!!!!!! Use of test keys is only supported for testing,
         DO NOT USE FOR PRODUCTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
         #endif
-   ```
+    ```
 
 11. Replace these lines with the following text:
 
-   ```csharp
-   services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
-   ```
+    ```csharp
+    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
+    ```
 
-   The end results should look similar to the following.
+    The end results should look similar to the following.
 
-   ![startup.cs file for public preview](../media/dke-startupcs-usetestkeys.png)
+    ![startup.cs file for public preview](../media/dke-startupcs-usetestkeys.png)
 
 Now you're ready to [build your DKE project](#build-the-project).
 
@@ -346,13 +348,13 @@ Use the following instructions to build the DKE project locally:
 
 4. Select **Run** \> **Start Debugging** to debug the process. If you're prompted to select an environment, select **.NET core**.
 
-The .NET core debugger typically launches to `https://localhost:5001`. To view your test key, go to `https://localhost:5001` and append a forward slash (/) and the name of your key. For example:
+   The .NET core debugger typically launches to `https://localhost:5001`. To view your test key, go to `https://localhost:5001` and append a forward slash (/) and the name of your key. For example:
 
-```https
-https://localhost:5001/TestKey1
-```
+   ```https
+   https://localhost:5001/TestKey1
+   ```
 
-The key should display in JSON format.
+   The key should display in JSON format.
 
 Your setup is now complete. Before you publish the keystore, in appsettings.json, for the JwtAudience setting, ensure the value for hostname exactly matches your App Service host name. You may have changed it to localhost to troubleshoot the build.
 
@@ -372,11 +374,11 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
 2. Select your subscription and resource group and define your instance details.
 
-    - Enter the hostname of the computer where you want to install the DKE service. Make sure it's the same name as the one defined for the JwtAudience setting in the [**appsettings.json**](#tenant-and-key-settings) file. The value you provide for the name is also the WebAppInstanceName.
+   - Enter the hostname of the computer where you want to install the DKE service. Make sure it's the same name as the one defined for the JwtAudience setting in the [**appsettings.json**](#tenant-and-key-settings) file. The value you provide for the name is also the WebAppInstanceName.
 
-    - For **Publish**, select **code**, and for **Runtime stack**, select **.NET Core 3.1**.
+   - For **Publish**, select **code**, and for **Runtime stack**, select **.NET Core 3.1**.
 
-    For example:
+   For example:
 
    ![Add your App Service](../media/dke-azure-add-app-service.png)
 
@@ -384,23 +386,23 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
 4. Do one of the following to publish your generated keys:
 
-    - [Publish via ZipDeployUI](#publish-via-zipdeployui)
-    - [Publish via FTP](#publish-via-ftp)
-    - [Publish via Visual Studio 2019 or later](https://docs.microsoft.com/aspnet/core/tutorials/)
+   - [Publish via ZipDeployUI](#publish-via-zipdeployui)
+   - [Publish via FTP](#publish-via-ftp)
+   - [Publish via Visual Studio 2019 or later](https://docs.microsoft.com/aspnet/core/tutorials/)
 
 #### Publish via ZipDeployUI
 
 1. Go to `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
 
-    For example: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
+   For example: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
 2. In the codebase for the key store, go to the **customer-key-store\src\customer-key-store** folder, and verify that this folder contains the **customerkeystore.csproj** file.
 
 3. Run: **dotnet publish**
 
-     The output window displays the directory where the publish was deployed.
+   The output window displays the directory where the publish was deployed.
 
-    For example: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
+   For example: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
 4. Send all files in the publish directory to a .zip file. When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
 
@@ -412,11 +414,11 @@ DKE is deployed and you can browse to the test keys you've created. Continue to 
 
 1. Connect to the App Service you created [above](#deploy-the-dke-service-and-publish-the-key-store).
 
-    In your browser, go to: **Azure portal** > **App Service** > **Deployment Center** > **Manual Deployment** > **FTP** > **Dashboard**.
+   In your browser, go to: **Azure portal** > **App Service** > **Deployment Center** > **Manual Deployment** > **FTP** > **Dashboard**.
 
 2. Copy the connection strings displayed to a local file. You'll use these strings to connect to the Web App Service and upload files via FTP.
 
-    For example:
+   For example:
 
    ![Copy connection strings from the FTP dashboard](../media/dke-ftp-dashboard.png)
 
@@ -426,9 +428,9 @@ DKE is deployed and you can browse to the test keys you've created. Continue to 
 
 5. Run: **dotnet publish**
 
-    The output contains the directory where the publish was deployed.
+   The output contains the directory where the publish was deployed.
 
-    For example: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
+   For example: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
 6. Send all files in the publish directory to a zip file. When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
 
@@ -442,11 +444,15 @@ After deploying DKE using one of the methods described above, validate the deplo
 
 Run:
 
+```powershell
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
+```
 
 For example:
 
+```powershell
 key_store_tester.ps1 https://mydkeservice.com/mykey
+```
 
 Ensure that no errors appear in the output. When you're ready, [register your key store](#register-your-key-store).
 
@@ -464,9 +470,9 @@ To register the DKE service:
 
 3. Select an account type from the options displayed.
 
-    If you're using Microsoft Azure with a non-custom domain, such as **onmicrosoft.com**, select **Accounts in this organizational directory only (Microsoft only - Single tenant).**
+   If you're using Microsoft Azure with a non-custom domain, such as **onmicrosoft.com**, select **Accounts in this organizational directory only (Microsoft only - Single tenant).**
 
-    For example:
+   For example:
 
    ![New App Registration](../media/dke-app-registration.png)
 
@@ -480,13 +486,13 @@ To register the DKE service:
 
 8. Under **Redirect URIs**, enter the URI of your double key encryption service. Enter the App Service URL, including both the hostname and domain.
 
-    For example: https://mydkeservicetest.com
+   For example: https://mydkeservicetest.com
 
-    - The URL you enter must match the hostname where your DKE service is deployed.
-    - If you're testing locally with Visual Studio, use **https://localhost:5001**.
-    - In all cases, the scheme must be **https**.
+   - The URL you enter must match the hostname where your DKE service is deployed.
+   - If you're testing locally with Visual Studio, use **https://localhost:5001**.
+   - In all cases, the scheme must be **https**.
 
-    Ensure the hostname exactly matches your App Service hostname. You may have changed it to `localhost` to troubleshoot the build. In **appsettings.json**, this value is the hostname you set for `JwtAudience`.
+   Ensure the hostname exactly matches your App Service hostname. You may have changed it to `localhost` to troubleshoot the build. In **appsettings.json**, this value is the hostname you set for `JwtAudience`.
 
 9. Under **Implicit grant**, select the **ID tokens** checkbox.
 
@@ -537,12 +543,12 @@ Any DKE labels you add will start appearing for users in the latest versions of 
 
 If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for your client by adding the following registry keys:
 
-```properties
-    [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
-    "DoubleKeyProtection"=dword:00000001
+```console
+   [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
+   "DoubleKeyProtection"=dword:00000001
 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
-    "DoubleKeyProtection"=dword:00000001
+   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
+   "DoubleKeyProtection"=dword:00000001
 ```
 
 ## Migrate protected files from HYOK labels to DKE labels
