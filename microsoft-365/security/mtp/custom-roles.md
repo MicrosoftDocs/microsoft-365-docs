@@ -31,24 +31,15 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
  
-There are two roles that can be used to access to Microsoft 365 Defender:
+There are two types of roles that can be used to access to Microsoft 365 Defender:
 - **Global Azure Active Directory (AD) roles** 
 - **Custom roles**
 
+You can continue to manage access to Microsoft 365 Defender using existing [Global roles in Azure Active Directory (AAD)](mtp-permissions.md). However, Global admin Azure AD roles might have more access than what's needed.
 
-You can continue to manage access to Microsoft 365 Defender using existing [Global roles in Azure Active Directory (AAD)](mtp-permissions.md). But the disadvantage of this is that users with Global admin Azure AD roles might have more access than what's needed for your users. 
+Custom role-based access is a new capability that allows you to manage permissions according to specific unified experiences in each workload in the Microsoft 365 security center. Microsoft Cloud App Security and Defender for Identity requires setting roles in their respective portals.
 
-With custom role-based access (RBAC) roles, you can tailor specific access for specific roles. Custom roles allow admins to manage permissions according to specific workloads within Microsoft 365 Defender, with the ability to assign dedicated teams for each product. 
-
-> ![NOTE]
-> You can create custom RBAC roles for Defender for Office and Defender for Endpoint. However, Microsoft Cloud App Security and Defender for Identity requires setting roles in their respective portals.
-
-Admins can manage user access to specific data, tasks, and capabilities in Microsoft 365 Defender with custom roles. Users are assigned with the least-permissive role necessary and only with the level of access that is required for their role.
-
-Custom roles are managed for each individual workload and control access to workload data within the Microsoft 365 security center. For example, permissions granted through Microsoft Defender for **Endpoint** will allow a user to access Endpoint data in the Microsoft 365 security center. Permissions granted through Defender for Office 365 allows access to the corresponding **Email & collaboration** data in the Microsoft 365 security center.
-
-> ![NOTE] 
-> If you've set up roles for Defender for Endpoint or Defender for Office 365, these access settings will be available in Microsoft 365 Defender.
+Custom roles that are created and managed in their relevant portals are valid in the Microsoft 365 security center.
 
 ## Create and manage custom roles
 Custom roles and permissions can be created and individually managed through each of the following security portals: 
@@ -69,8 +60,11 @@ Permissions and roles can also be managed in the Microsoft 365 security center:
 2. In the navigation pane, select **Permissions & roles**.
 3. Under the **Permissions** header, select **Roles**.
 
+> ![Note] This only applies to Defender for Office 365 and Defender for Endpoint. Access for other workloads must be done in their relevant portals. 
+
+
 ## Required roles and permissions 
-The following table describes the different mapping of what roles are required to access each workload in Microsoft 365 Defender. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.  
+The following table describes the different mapping of what roles are required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.  
 
 > [!NOTE]
 > Incident management requires management permissions for all products that are part of the incident.
@@ -83,6 +77,8 @@ The following table describes the different mapping of what roles are required t
 | Action center remediation | Active remediation actions – security operations | Search and purge | |
 | Setting custom detections | Manage security settings |<ul><li>Manage alerts</li> <li>Security admin</li></ul> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul> |
 | Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>TVM mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only Manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for MCAS or MDI users |
+
+An example: permissions granted through Microsoft Defender for **Endpoint** will allow a user to access Endpoint data in the Microsoft 365 security center. Permissions granted through Defender for Office 365 allows access to the corresponding **Email & collaboration** data in the Microsoft 365 security center.
 
 ## Related topics
 - [Manage access to Microsoft 365 Defender](mtp-permissions.md)
