@@ -60,7 +60,8 @@ Permissions and roles can also be managed in the Microsoft 365 security center:
 2. In the navigation pane, select **Permissions & roles**.
 3. Under the **Permissions** header, select **Roles**.
 
-> ![Note] This only applies to Defender for Office 365 and Defender for Endpoint. Access for other workloads must be done in their relevant portals. 
+> [!NOTE] 
+> This only applies to Defender for Office 365 and Defender for Endpoint. Access for other workloads must be done in their relevant portals. 
 
 
 ## Required roles and permissions 
