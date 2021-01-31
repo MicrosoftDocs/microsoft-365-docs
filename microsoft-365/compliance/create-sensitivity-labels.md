@@ -54,7 +54,8 @@ The global admin for your organization has full permissions to create and manage
     
     ![Create a sensitivity label](../media/create-sensitivity-label-full.png)
     
-    Note: By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+    > [!NOTE]
+	> By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 3. On the **Define the scope for this label** page, the options selected determine the label's scope for the settings that you can configure and where they will be visible when they are published:
     
@@ -150,7 +151,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         
     ![Publish labels](../media/publish-sensitivity-labels-full.png)
     
-    Note: By default, tenants don't have any label policies and you must create them. 
+    > [!NOTE]
+	> By default, tenants don't have any label policies and you must create them. 
 
 3. In the wizard, select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
     
