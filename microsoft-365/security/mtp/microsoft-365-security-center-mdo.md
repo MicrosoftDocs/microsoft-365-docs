@@ -53,7 +53,7 @@ No changes to these areas:
 - [Policies & Rules](/microsoft-365/compliance/alert-policies)
 - [Campaign](/microsoft-365/security/office-365-security/campaigns)
 - [Submissions](/microsoft-365/security/office-365-security/admin-submission)
-- [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)
+- [Review](/microsoft-365/security/mtp/mtp-action-center)
 - [Threat Tracker](/microsoft-365/security/office-365-security/threat-trackers)
 
 Also, check the **Related Information** section at the bottom of this article.
@@ -142,7 +142,7 @@ The [Getting Started](https://docs.microsoft.com/microsoft-365/security/office-3
 3. Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
 4. Protect with Zero-Hour auto purge
 
-Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide) to jump right in and get configuration going on Day 1.
+Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) to jump right in and get configuration going on Day 1.
 
 The last step in **Getting Started** is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
 
