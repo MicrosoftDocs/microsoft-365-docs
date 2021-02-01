@@ -127,7 +127,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
 
-- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 500 MB. For these files, you can use the Office desktop apps to apply a label but you must the only person who has the file open.
+- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 500 MB. For these files, you can use the Office desktop apps to apply a label but you must be the only person who has the file open.
 
 - Office apps for iOS and Android are not supported.
 
