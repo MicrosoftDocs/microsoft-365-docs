@@ -65,7 +65,7 @@ The new capabilities for Office 365 Message Encryption are an evolution of the e
   
 **Comparison of legacy OME, IRM, and new OME capabilities**
 
-|**Capability**|**Previous versions of OME**|**IRM**|**New OME capabilities**|
+| Capability | Previous versions of OME | IRM | New OME capabilities |
 |:-----|:-----|:-----|:-----|
 |**Sending an encrypted email**|Only through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through mail flow rules|
 |**Rights management**|-|Do Not Forward option and custom templates|Do Not Forward option, encrypt-only option, default and custom templates|
