@@ -42,7 +42,7 @@ If you need help with assigning Azure Active Directory roles, see [Administrator
 > [!IMPORTANT]
 > Only the Global Administrator role has the necessary permissions to *enroll* your organization in Microsoft Managed Desktop. Be aware that Azure Active Directory roles will give user accounts privileges across a variety of Microsoft services. After completing enrollment with Microsoft Managed Desktop, you should always use the role with the *least* privileges necessary to accomplish your other tasks.
 
-## Built-in roles provided by Mircosoft Managed Desktop
+## Built-in roles provided by Microsoft Managed Desktop
 
 
 |Built-in role  |Microsoft Managed Desktop permissions  |
