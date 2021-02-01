@@ -38,6 +38,11 @@ Example showing available sensitivity labels in Excel, from the **Home** tab on 
 
 To apply sensitivity labels, users must be signed in with their Microsoft 365 work or school account.
 
+> [!NOTE]
+> Sensitivity labels are newly supported For US Government tenants (GCC and GCC-H). For more information, see the release notes for Microsoft 365 Apps for enterprise, [Version 2101: January 26](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26).
+>
+> For the Azure Information Protection unified labeling client and scanner, see [Azure Information Protection Premium Government Service Description](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+
 You can use sensitivity labels to:
   
 - **Provide protection settings that include encryption and content markings.** For example, apply a "Confidential" label to a document or email, and that label encrypts the content and applies a "Confidential" watermark. Content markings include headers and footers as well as watermarks, and encryption can also restrict what actions authorized people can take on the content.
@@ -190,7 +195,7 @@ When you configure a label policy, you can:
 
     ![Learn more link on Sensitivity button on Ribbon](../media/Sensitivity-label-learn-more.png)
 
-After you create a label policy that assigns new sensitivity labels to users and groups, users see those labels in their Office apps within 30 minutes. However, allow up to 24 hours for changes to those labels.
+After you create a label policy that assigns new sensitivity labels to users and groups, users start to see those labels in their Office apps. Allow up to 24 hours for the latest changes to replicate throughout your organization.
 
 There is no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption, there is a maximum of 500 labels that you can create. However, as a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label.
 
@@ -263,4 +268,4 @@ You can also learn about [partner solutions that are integrated with Microsoft I
 
 ## Deployment guidance
 
-For deployment planning and guidance that includes licensing information, permissions, deployment strategy, a list of supported scenarios, and end user documentation, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+For deployment planning and guidance that includes licensing information, permissions, deployment strategy, a list of supported scenarios, and end-user documentation, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
