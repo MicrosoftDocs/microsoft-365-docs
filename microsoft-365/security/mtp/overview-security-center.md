@@ -139,7 +139,7 @@ After clicking through to the content, it may be useful to bookmark this site an
 ## Send us your feedback
 We need your feedback. We're always looking to improve, so if there's something you'd like to see, [send us your Microsoft 365 Defender feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
 
-You can leave feedback from this article. In the 'Feedback' section at the end under 'Submit and view feedback for', the options are *This product*, or *This page*.
+You can also leave feedback from this article. In the 'Feedback' section at the end under 'Submit and view feedback for', the options are *This product*, or *This page*.
 
 Use the **This product** button for *product* feedback:
 
@@ -149,6 +149,8 @@ Use the **This product** button for *product* feedback:
 3. You have 2 options:
     1. Scroll down to the text box *How can we improve compliance or protect your users better in Office 365?* and paste in *Microsoft 365 security center*. You can search the results for an idea like yours and up-vote it, or use the button for **Post a new idea**.
     1. If you feel certain this issue is already reported, and want to raise its profile with a vote (or votes), use the *Give Feedback* box on the right side of UserVoice. Search for *Microsoft 365 security center*, **find the issue, and use the vote button** to raise its status.
+
+Use *This page* for feedback on the article itself. Thanks for your feedback. Your voice helps us improve products.
 
 ### Explore what the security center has to offer
 
