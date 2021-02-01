@@ -731,6 +731,8 @@
       items:
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Use a PowerShell script to search the audit log
+          href: audit-log-search-script.md
         - name: Turn audit log search on or off
           href: turn-audit-log-search-on-or-off.md
         - name: Detailed properties in the audit log
