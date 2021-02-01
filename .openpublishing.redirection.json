@@ -2649,6 +2649,11 @@
       "source_path": "microsoft-365/security/mtp/monitor-apps.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/label_analytics.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview",
+      "redirect_document_id": true
     }
   ]
 }
