@@ -488,17 +488,23 @@
 - name: Microsoft 365 Apps for enterprise
   href: https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps
 
+- name: Surface devices
+  href: https://docs.microsoft.com/surface/deploy
+
+- name: Device management
+  items:
+    - name: Roadmap
+      href: device-management-roadmap-microsoft-365.md
+
+- name: Microsoft Edge
+  href: https://docs.microsoft.com/deployedge/deploy-edge-plan-deployment
+
 - name: Deployment and update channel example configurations
   items:
     - name: Overview
       href: deploy-update-channels-examples.md
     - name: Broad deployment of the latest releases
       href: deploy-update-channels-examples-rapid-deploy.md
-
-- name: Device management
-  items:
-    - name: Roadmap
-      href: device-management-roadmap-microsoft-365.md
 
 - name: Manage Microsoft 365 with PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
