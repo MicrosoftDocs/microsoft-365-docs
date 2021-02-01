@@ -129,12 +129,12 @@ For an example of how a fictional but representative multinational organization 
 
 ## Best together with Surface and the Edge browser
 
-Optimize your user’s productivity with integration and comprehensive security with the best-together combination of Microsoft 365 with Microsoft Surface devices and the Microsoft Edge browser. The cross-product integration includes:
+Optimize your user’s integrated and secure productivity with the best-together combination of Microsoft 365 for enterprise, Microsoft Surface devices, and the Microsoft Edge browser. This cross-product integration provides:
 
-- A common identity and sign-in security infrastructure
-- Integrated local and cloud apps for search, collaboration, productivity, and compliance
-- Comprehensive and integrated security for hardware, browser, local app, and cloud apps
-- IT management of installs and updates
+- A common identity and sign-in security infrastructure.
+- Integrated local and cloud apps for search, collaboration, productivity, and compliance.
+- Comprehensive and integrated security for hardware, browser, local app, and cloud apps.
+- A common infrastructure for IT management of installs and updates.
 
 Here is an example for an enterprise organization.
 
