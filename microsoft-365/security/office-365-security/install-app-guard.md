@@ -39,7 +39,7 @@ information about system requirements and installation steps to enable Applicati
 ### Minimum software requirements
 
 * **Windows 10**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041 or later
-* **Office**: Office Current Channel Build version 2011 16.0.13530.10000 or later. Both 32-bit and 64-bit versions of office are supported.
+* **Office**: Office Current Channel Build version 2011 16.0.13530.10000 or later. Both 32-bit and 64-bit versions of Office are supported.
 * **Update package**: Windows 10 cumulative monthly security update [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office update channels, see [Overview of update channels for Microsoft 365](https://docs.microsoft.com/deployoffice/overview-update-channels).
