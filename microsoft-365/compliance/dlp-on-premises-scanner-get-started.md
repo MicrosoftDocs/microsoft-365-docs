@@ -34,8 +34,7 @@ Before you get started with DLP on-premises scanner, you should confirm your [Mi
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance
 - Microsoft 365 E5 Information Protection & Governance 
-- EMS E5
-- Azure Information Protection P2
+
 
 For full licensing details see: [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
