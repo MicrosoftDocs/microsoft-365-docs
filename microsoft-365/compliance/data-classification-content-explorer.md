@@ -42,8 +42,6 @@ Every account that accesses and uses data classification must have a license ass
 
 In order to get access to the content explorer tab, an account must be assigned membership in any one of these roles or role groups. 
 
-A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
-
 **Microsoft 365 role groups**
 
 - Global administrator
