@@ -33,8 +33,8 @@ Here are the steps to complete any unfinished models:
 
    ![Screenshot of model ready for Batch calculation](../media/ReadyForBatchCalculation.png)
 
-2. Run the Batch calculation. See [Performing Batch calculation](track-relevance-analysis-in-advanced-ediscovery#performing-batch-calculation).
+2. Run the Batch calculation. See [Performing Batch calculation](track-relevance-analysis-in-advanced-ediscovery.md#performing-batch-calculation).
 
-3. Verify that Batch calculation was successful. See [Batch calculation results](track-relevance-analysis-in-advanced-ediscovery#batch-calculation-results).
+3. Verify that Batch calculation was successful. See [Batch calculation results](track-relevance-analysis-in-advanced-ediscovery.md#batch-calculation-results).
 
 For help with completing unfinished Relevance models, contact Microsoft Support.
