@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/29/2021
+ms.date: 02/01/2021
 ---
 
 # The Action center
@@ -31,14 +31,6 @@ ms.date: 01/29/2021
 **Applies to:**
 - Microsoft 365 Defender
 
-We are pleased to announce a new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))! 
-
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender":::
-
-The improved Action center lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location. The Action center provides your security operations team with a "single pane of glass" experience to view and manage remediation actions.  
-
-Read this article to get an overview of the Action center, including available actions, required permissions, and next steps.
-
 ## A "single pane of glass" experience
 
 The Action center provides a "single pane of glass" experience for tasks, such as:
@@ -47,6 +39,29 @@ The Action center provides a "single pane of glass" experience for tasks, such a
 - Reviewing completed remediation actions.
 
 Your security operations team can operate more effectively and efficiently, because the Action center provides a comprehensive view of Microsoft 365 Defender at work.
+
+## A new, unified Action center
+
+We are pleased to announce a new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))! 
+
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender":::
+
+The improved Action center lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
+- If you were previously using the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), try the new, unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+- If you were using the Action Center in the Microsoft Defender Security Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), try the new, unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+- If you were already using the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), you'll see several improvements in the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+
+
+The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. The Action center provides your security operations team with a "single pane of glass" experience to view and manage remediation actions.  
+
+You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
+
+- [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+
+> [!TIP]
+> To learn more, see [Requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
 
 ## Using the Action center
 
