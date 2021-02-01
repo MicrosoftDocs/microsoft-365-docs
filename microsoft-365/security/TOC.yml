@@ -104,9 +104,6 @@
             - name: Turn on FAQ
               href: mtp/mtp-enable-faq.md              
         - name: How-to guides
-          items:     
-            
-        - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
               href: mtp/mtp-evaluation.md
