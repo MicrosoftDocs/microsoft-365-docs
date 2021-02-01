@@ -21,7 +21,7 @@ ms.custom: seo-marvel-jun2020
 ms.technology: m365d
 ---
 
-# Microsoft 365 security center overview
+# The unified Microsoft 365 security center overview
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -69,7 +69,7 @@ The Microsoft 365 security center emphasizes *unity, clarity, and common goals* 
 - common entities
 - feature parity with other workloads
 
-## Efficient investigation across workloads
+## Unified investigations
 
 Streamlining security centers creates a single pane for investigating any incidents across a Microsoft 365 organization. A primary example is the **Incidents** node on the quick launch of the Microsoft 365 security center.
 
@@ -80,7 +80,7 @@ As an example, double-clicking on an incident name with **High** severity brings
 ![Multi-stage incident involving privilege escalation on multiple endpoints, showing see 16 impacted devices and 9 impacted users.](../../media/converged-incident-info-3.png)
 
 > [!TIP]
-> The converged **Users** tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and MCAS, if you leverage it) and a range of sources such as on-premises Active Directory, Azure Active Directory, synced, local, and third-party users. Learn more about [the new Users experience](investigate-users.md)
+> The converged **Users** tab is a good place to begin your inquiries. This single page surfaces information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and MCAS, if you leverage it) and a range of sources such as on-premises Active Directory, Azure Active Directory, synced, local, and third-party users. Learn more about [the new Users experience](investigate-users.md).
 
 Incident information shows user/identity specifics and at-risk devices, beside affected mailboxes. It also relates any **Investigation information** and gathered **Evidence**. This makes it easier for admins and security operation teams to pivot from one high-risk alert to the affected users and mailboxes. Looking at the **Incident** tabs at the top of this page, there are other key security pivots available from this single location.
 
@@ -109,7 +109,7 @@ Common controls and content either appear in the same place, or are condensed in
 ### Integrated reports
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
 
-### At-a-glance view of your Microsoft 365 environment
+### Quickly view your Microsoft 365 environment
 The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
 This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
@@ -121,10 +121,36 @@ The cards fall into these categories:
 - **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
 - **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).
 
+## A centralized Learning Hub
+
+The Microsoft 365 security center includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation at docs.microsoft.com.
+
+Inside the learning hub, Email & Collaboration (Microsoft Defender for Office 365 or MDO) guidance is side-by-side with Endpoint (Microsoft Defender for Endpoint or MDE), and Microsoft 365 Defender learning resources.
+
+The learning hub opens with Learning paths organized around topics such as “How to Investigate Using Microsoft 365 Defender?” and “Microsoft Defender for Office 365 Best Practices”. This section is currently curated by the security Product Group inside Microsoft. Each Learning path reflects a projected time it takes to get through the concepts. For example 'Steps to take when a Microsoft Defender for Office 365 user account is compromised' is projected to take 8 minutes, and is valuable learning on the fly.
+
+After clicking through to the content, it may be useful to bookmark this site and organize bookmarks into a 'Security' or 'Critical' folder. To see all Learning paths, click the Show all link in the main panel.
+
+> [!NOTE]
+> There are helpful **filters** along the top of the Microsoft 365 security center learning hub that will let you choose between products (currently Microsoft 365 Defender, Microsoft Defender for Endpoint, and Microsoft Defender for Office 365). Notice that the number of learning resources for each section is listed, which can help learners keep track of how many resources they have at hand for training and learning.
+>
+> Along with the Product filter, current topics, types of resources (from videos to webinars), levels of familiarity or experience with security areas, security roles, and product features are listed.
+
 ## Send us your feedback
 We need your feedback. We're always looking to improve, so if there's something you'd like to see, [send us your Microsoft 365 Defender feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
 
-## Explore what the security center has to offer
+You can leave feedback from this article. In the 'Feedback' section at the end under 'Submit and view feedback for', the options are *This product*, or *This page*.
+
+Use the **This product** button for *product* feedback:
+
+1. Select *This product* at the bottom of the article.
+    1. Right-click the button and 'Open in a new tab' if you want to keep reading these directions.
+2. This will navigate to the **UserVoice forum**.
+3. You have 2 options:
+    1. Scroll down to the text box *How can we improve compliance or protect your users better in Office 365?* and paste in *Microsoft 365 security center*. You can search the results for an idea like yours and up-vote it, or use the button for **Post a new idea**.
+    1. If you feel certain this issue is already reported, and want to raise its profile with a vote (or votes), use the *Give Feedback* box on the right side of UserVoice. Search for *Microsoft 365 security center*, **find the issue, and use the vote button** to raise its status.
+
+### Explore what the security center has to offer
 
 Keep exploring the features and capabilities in the Microsoft 365 security center:
 
@@ -135,7 +161,7 @@ Keep exploring the features and capabilities in the Microsoft 365 security cente
 - [Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
 - [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)- [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) and [create a payload for training your teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
-## Related information
+### Related information
 - [Microsoft 365 security center](overview-security-center.md)
 - [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
