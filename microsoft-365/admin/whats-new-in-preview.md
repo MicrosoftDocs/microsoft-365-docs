@@ -40,7 +40,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
 - [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [What's new in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [What's new in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
 
@@ -52,7 +52,7 @@ Welcome to Microsoft Ignite - our first online-only Ignite. We hope to see you i
 
 ### Multi-tenant management
 
-We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently.
+We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently. For more information, see [Manage multiple tenants](multi-tenant/manage.md).
 
 - **Your tenants**: Quickly switch between the tenants you manage.
 - **All tenants**: A new page where you can quickly see the health of all your tenants' services, any open service requests, your products and billing, recommended setup tasks, and the number of users in that tenant.
@@ -79,7 +79,7 @@ There are two ways to get started:
 - Go to **Users**, and then in the "more actions" menu select **Manage priority accounts** to add users to the list.
 - Go to **Setup**, find the setup task **Monitor your most important accounts**, and then select **Get started**.
 
-For more info on priority accounts, check out [Monitoring priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) and [Email issues for priority accounts](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts).
+For more info on priority accounts, check out [Monitoring priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ### Search faster and get better results from any page
 
@@ -464,7 +464,7 @@ In November, we released quite a few learning paths to [Microsoft Learn](https:/
 - [Protect identity and access with Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Protect enterprise information with Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
 - [Manage security with Microsoft 365](https://docs.microsoft.com/learn/paths/m365-security-management/)
-- [Defend against threats with Microsoft 365 and Microsoft threat protection](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
+- [Defend against threats with Microsoft 365 Defender](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
 - [Manage team collaboration with Microsoft Teams](https://docs.microsoft.com/learn/paths/m365-manage-team-collaboration/)
 - [Collaborate with SharePoint in Microsoft 365](https://docs.microsoft.com/learn/paths/m365-teams-sharepoint/)
 
@@ -547,7 +547,7 @@ We've got some updates for billing and subscriptions this month:
 
 Setup now has categories and sections, including a **Recommended for you** section where we intelligently suggest your next step in turning on features and setting up your organization. We've also added a new feature to set up:
 
-- **Office Advanced Threat Protection** - If your org is licensed to use Office ATP and you haven't configured it or turned it on yet, you'll see this page. Go to **Setup** to try it out.
+- **Microsoft Defender for Office 365** - If your org is licensed to use Microsoft Defender for Office 365 and you haven't configured it or turned it on yet, you'll see this page. Go to **Setup** to try it out.
 
 ### Report an issue (August)
 

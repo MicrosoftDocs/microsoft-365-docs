@@ -1,16 +1,18 @@
 ---
-title: "Auto-forwarded messages insight"
-f1.keywords:
-- NOCSH
-ms.author: chrisda
-author: chrisda
+title: Auto-forwarded messages insight
+f1.keywords: 
+  - NOCSH
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: "Admins can learn about the Auto-forwarded messages report in the Mail flow dashboard in the Security & Compliance Center."
+description: Admins can learn about the Auto-forwarded messages report in the Mail flow dashboard in the Security & Compliance Center.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Auto-forwarded messages insight in the Security & Compliance Center
@@ -30,7 +32,7 @@ When you click the number of messages in the widget, a flyout pane appears that 
 
   - **By mail flow rules**
   - **By Inbox rules**
-  - **By SMTP forwarding**: This is automatic forwarding that admins can configure on a mailbox as described in [Configure email forwarding for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
+  - **By SMTP forwarding**: This method indicates automatic forwarding that admins can configure on a mailbox as described in [Configure email forwarding for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
   - A link to the [Forwarding report](view-mail-flow-reports.md#forwarding-report) for more details.
 
 - **Auto-forwarded messages by domains and users**:

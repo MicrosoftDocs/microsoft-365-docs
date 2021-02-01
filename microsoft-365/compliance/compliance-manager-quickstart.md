@@ -20,7 +20,7 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 
 **In this article:** Use this quickstart guide to help you along your journey of using Microsoft Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
 
-Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. All customers can use the [Data Protection Baseline assessment](compliance-manager-assessments.md#data-protection-baseline-default-assessment) to ensure you're protecting critical data. With Microsoft 365 E5, you can use over 150 pre-built assessments to help you comply with regulations across your industry and region, and use custom assessments to extend Compliance Manager across all of your assets.
+Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. Available assessments depend on your licensing agreement; [learn more](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
 
@@ -38,6 +38,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
+- [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 

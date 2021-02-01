@@ -1,22 +1,24 @@
 ---
-title: "Anti-spoofing protection FAQ"
-f1.keywords:
-- NOCSH
+title: Anti-spoofing protection FAQ
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
+search.appverid: 
+  - MET150
+ms.assetid: 
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
-description: "Admins can view frequently asked questions and answers about anti-spoofing protection in Exchange Online Protection (EOP)."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can view frequently asked questions and answers about anti-spoofing protection in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Anti-spoofing protection FAQ
@@ -40,11 +42,9 @@ When Microsoft enabled this feature in 2018, some false positives happened (good
 
 Microsoft itself first adopted the new email authentication requirements several weeks before deploying it to customers. While there was disruption at first, it gradually declined.
 
-## Is spoof intelligence available to Microsoft 365 customers without ATP?
+## Is spoof intelligence available to Microsoft 365 customers without Defender for Office 365?
 
 Yes. As of October 2018, spoof intelligence is available to all organizations with mailboxes in Exchange Online, and standalone EOP organizations without Exchange Online mailboxes.
-
-Anti-spoofing technology was initially only available in Office 365 Advanced Threat Protection. For example, Microsoft E5 subscriptions or ATP add-ons.
 
 ## How can I report spam or non-spam messages back to Microsoft?
 

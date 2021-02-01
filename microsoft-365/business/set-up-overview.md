@@ -56,7 +56,7 @@ Most of the setup steps can be done in the guided setup, but the other options a
   In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
 - **Email malware protection**
-- **ATP anti-phishing**
+- **Anti-phishing in Defender for Office 365**
 - **Exchange Online Archiving**
 - **Azure Information Protection (Plan1**)
 

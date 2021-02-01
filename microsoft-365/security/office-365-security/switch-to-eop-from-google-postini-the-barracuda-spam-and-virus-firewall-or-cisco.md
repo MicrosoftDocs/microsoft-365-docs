@@ -1,19 +1,21 @@
 ---
 title: Switch to EOP from another protection service
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
-ms.custom:
-- seo-marvel-apr2020
-description: "In this article, you'll learn how to switch to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service."
+ms.custom: 
+  - seo-marvel-apr2020
+description: In this article, you'll learn how to switch to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
@@ -39,7 +41,7 @@ If you currently host your mailboxes on premises and use an on-premises protecti
 
 ## Switch to Exchange Online
 
-Perhaps you have on-premises mailboxes protected by an on-premises appliance, and you want to jump to Exchange Online cloud-hosted mailboxes and EOP protection to take advantage of Microsoft 365 cloud messaging and protection features. To get started, you can sign up for Microsoft 365 and add your domain. This scenario doesn't require you to setup connectors, because there isn't any routing to on-premises mailboxes. Begin at [Get the latest advanced features with Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) to sign-up and get familiar with its features.
+Perhaps you have on-premises mailboxes protected by an on-premises appliance, and you want to jump to Exchange Online cloud-hosted mailboxes and EOP protection to take advantage of Microsoft 365 cloud messaging and protection features. To get started, you can sign up for Microsoft 365 and add your domain. This scenario doesn't require you to set up connectors, because there isn't any routing to on-premises mailboxes. Begin at [Get the latest advanced features with Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) to sign-up and get familiar with its features.
 
 During the Microsoft 365 setup process, you will create your cloud-based mailbox users.
 

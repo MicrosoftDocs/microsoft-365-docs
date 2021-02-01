@@ -68,7 +68,7 @@ If your users are synchronized from an on-premises Active Directory system to Az
 
 The administration of a multi-geo tenant can differ from a non-multi-geo tenant, as many of the SharePoint and OneDrive settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 
-Read [User experience in a mult-geo environment](multi-geo-user-experience.md) for details about your end users' experience in a multi-geo environment.
+Read [User experience in a multi-geo environment](multi-geo-user-experience.md) for details about your end users' experience in a multi-geo environment.
 
 For details about the Teams experience in a Microsoft 365 Multi-Geo tenancy, see [Teams experience in a Microsoft 365 OneDrive and SharePoint Online Multi-Geo-enabled tenancy](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 

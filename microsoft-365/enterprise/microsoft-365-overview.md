@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/15/2019
+ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -39,7 +39,7 @@ Microsoft 365 for enterprise is available in three plans.
 |Plan name|Capabilities|
 |---|---|
 |E3|Access the Microsoft 365 core products and features to securely enhance workplace productivity and drive innovation.|
-|E5|Access the Microsoft 365 latest products and features. These include advanced threat protection, security tools, and collaboration tools. This plan includes all E3 capabilities, plus advanced security, voice, and data analysis tools.|
+|E5|Access the Microsoft 365 latest products and features. These include Defender for Office 365, security tools, and collaboration tools. This plan includes all E3 capabilities, plus advanced security, voice, and data analysis tools.|
 |F3|Connect with your first-line workers through purpose-built tools and resources that they can use to help them do their best work.|
 |||
 
@@ -126,6 +126,24 @@ For an example of how a fictional but representative multinational organization 
 - [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
 
   Empower United States public sector employees to work together, securely.
+
+## Best together with Surface and the Edge browser
+
+Optimize your user’s integrated and secure productivity with the best-together combination of Microsoft 365 for enterprise, Microsoft Surface devices, and the Microsoft Edge browser. This cross-product integration provides:
+
+- A common identity and sign-in security infrastructure.
+- Integrated local and cloud apps for search, collaboration, productivity, and compliance.
+- Comprehensive and integrated security for hardware, browser, local app, and cloud apps.
+- A common infrastructure for IT management of installs and updates.
+
+Here is an example for an enterprise organization.
+
+![An enterprise organization with Microsoft 365, Surface devices, and the Edge browser](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+
+For more information and configuration examples for a small and medium business and an educational institution, download the [Best together poster](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf).
+
+[![Image for the Best together with Surface and the Edge browser poster](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+
 
 ## Microsoft 365 training
 

@@ -42,8 +42,6 @@ Some of the implementation steps required to archive Enterprise Number Archiver 
 
 - Install and activate the TeleMessage Enterprise Number Archiver app on the mobile phones of your employees.
 
-- Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. You will need to provide this consent when you create the connector. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of Microsoft 365 global admin, and then accept the request. You have to complete this step before you can successfully create a Bell Network connector.
-
 - The user who creates a Enterprise Number Archiver connector must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the Microsoft 365 compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Create an Enterprise Number Archiver connector
@@ -66,13 +64,9 @@ After you've completed the prerequisites described in the previous section, you 
 
 6. On the **User mapping** page, enable automatic user mapping. To enable custom mapping, upload a CSV file that contains the user mapping information, and then click **Next**.
 
-7. Provide admin consent and then click **Next**.
+7. Review your settings, and then click **Finish** to create the connector.
 
-   To provide admin consent, you must be signed in with the credentials of an Office 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using global admin credentials to accept the request.
-
-8. Review your settings, and then click **Finish** to create the connector.
-
-9. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
+8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Known issues
 

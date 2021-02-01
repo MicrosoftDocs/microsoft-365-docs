@@ -25,7 +25,7 @@ description: "Set Microsoft Compliance Manager user permissions and roles, and c
 
 ## Who can access Compliance Manager
 
-Compliance Manager is available to organizations with Office 365 and Microsoft 365 licenses. Assessment availability and management capabilities depend on your licensing agreement.  [View service description details](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance Manager is available to organizations with Office 365 and Microsoft 365 licenses, and to US Government Community Cloud (GCC) Moderate and GCC High customers. Assessment availability and management capabilities depend on your licensing agreement.  [View service description details](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 ## Before you begin
 
@@ -44,27 +44,28 @@ Compliance Manager uses a role-based access control (RBAC) permission model. Onl
 
 ### Where to set permissions
 
-The person holding the global admin role for your organization can set user permissions in the Microsoft 365 compliance center, as well as in Azure Active Directory (Azure AD).
+The person holding the global admin role for your organization can set user permissions for COmpliance Manager. Permissions can be set in the Office 365 Security & Compliance center as well as in Azure Active Directory (Azure AD).
 
-To set permissions and assign roles from within the Microsoft 365 compliance center, follow the steps below:
+> [!NOTE]
+> Customers in US Government Community (GCC) High environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
 
-1. Select **Permissions** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+To set permissions and assign roles in the Office 365 Security & Compliance center, follow the steps below:
 
-2. Near the top, select the link at **“To view and manage roles in Office 365, please go here.”** A new tab will open to the Office 365 Security & Compliance Center ([learn why you’re redirected](microsoft-365-compliance-center.md#frequently-asked-questions)).
+1. Go to the [Office 365 Security & Compliance Center](https://protection.office.com/) and select **Permissions** on the left navigation.
 
-3. Find the role group to which you want to add one or more users, and check the box to the left of the group name. (See the [list of roles and related functions below](#role-types). The role group names mimic the role name.)
+2. Find the role group to which you want to add one or more users, and check the box to the left of the group name. (See the [list of roles and related functions below](#role-types). The role group names mimic the role name.)
 
-4. On the flyout pane for that group, select **Edit** under the **Members** header.
+3. On the flyout pane for that group, select **Edit** under the **Members** header.
 
-5. Select **Choose members**. Another flyout window will appear.
+4. Select **Choose members**. Another flyout window will appear.
 
-6. Select **+ Add** to choose one or more users to add to the group.
+5. Select **+ Add** to choose one or more users to add to the group.
 
-7. Select the checkbox next to the names you want to add, then select the **Add** button at the bottom.
+6. Select the checkbox next to the names you want to add, then select the **Add** button at the bottom.
 
-8. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
+7. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
 
-##### More about the Office 365 Secruity & Compliance Center
+##### More about the Office 365 Security & Compliance Center
 
 Learn more about [permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
@@ -92,6 +93,9 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 ## Settings for automated testing and user history
 
 The Compliance Manager settings in the Microsoft 365 compliance center allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
+
+> [!NOTE]
+> The automated testing feature is not available to customers in GCC High environments because Secure Score isn't available in these environments. GCC High customers will need to manually implement and test their improvement actions.
 
 ### Set up automated testing
 

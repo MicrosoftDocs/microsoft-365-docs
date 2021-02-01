@@ -70,7 +70,7 @@ Azure AD Identity Protection requires Azure AD Premium P2 licenses, which are in
 
 For more information, see [Risk-based Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
-With Azure AD Identity Protection, you can also create a policy to require your users to register for MFA. For more information, see [Configure the Azure Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+With Azure AD Identity Protection, you can also create a policy to require your users to register for MFA. For more information, see [Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 
 
 ## Using these methods together

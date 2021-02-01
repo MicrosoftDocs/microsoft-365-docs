@@ -1,5 +1,5 @@
 ---
-title: Onboarding tools and methods for Windows 10 devices (preview)
+title: Onboarding tools and methods for Windows 10 devices
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -19,7 +19,7 @@ search.appverid:
 description: Onboard Windows 10 devices so that they can send sensor data to the Microsoft 365 Compliance solutions
 ---
 
-# Onboarding tools and methods for Windows 10 devices (preview)
+# Onboarding tools and methods for Windows 10 devices
 
 **Applies to:**
 - [Microsoft 365 Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
