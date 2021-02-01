@@ -111,6 +111,8 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 Before you enable the tenant setting for co-authoring for files encrypted with sensitivity labels, make sure you understand the following limitations of this feature.
 
 - Because of the [labeling metadata changes](#metadata-changes-for-sensitivity-labels), all apps, services, and operational tools in your tenant must support the new labeling metadata for a consistent and reliable labeling experience.
+    
+    Specific to Excel: Metadata for a sensitivity label that doesn't apply encryption can be deleted from a file if somebody edits and saves that file by using a version of Excel that doesn't support the metadata changes for sensitivity labels.
 
 - Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This configuration is sometimes referred to as "user-defined permissions".
@@ -125,7 +127,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
 
-- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 500 MB. For these files, use the Office desktop apps.
+- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 500 MB. For these files, you can use the Office desktop apps to apply a label but you must the only person who has the file open.
 
 - Office apps for iOS and Android are not supported.
 
