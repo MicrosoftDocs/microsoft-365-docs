@@ -35,11 +35,9 @@ ms.technology: m365d
 
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 
-The improved Microsoft 365 security center at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center. All of the existing features in Microsoft 365 Defender are all still there, but are bolstered with more signals and information from other workloads, in an easier-to-use interface.
+The improved **Microsoft 365 security center** ([https://security.microsoft.com](https://security.microsoft.com)) combines protection, detection, investigation, and response to *email*, *collaboration*, *identity*, and *device* threats, in a central portal.
 
-This center emphasizes quick access to information, simpler layouts, and clarity across a single security center.
-
-The Microsoft 365 security center is your home for security information and management for security teams and includes:
+Microsoft 365 security center brings together functionality from existing Microsoft security portals, like Microsoft Defender Security Center and the Office 365 Security & Compliance center. The security center emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. This center includes:
 
 - **[Microsoft Defender for Office 365](../office-365-security/office-365-atp.md)** 
  helps organizations secure their enterprise with a comprehensive set of prevention, detection, investigation and hunting features to protect email and other Office 365 resources. 
