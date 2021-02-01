@@ -95,7 +95,7 @@ Watch the video below to learn how Compliance Manager can help simplify how your
 
 - [Updated role groups](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance). Communication compliance role groups now match the role group structure available for the insider risk management solution.
 - [Reports dashboard](communication-compliance-feature-reference.md#reports-preview). Your central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities.
-- [Power Automate flows](communication-compliance-feature-reference.md#power-automate-flows-preview). Set up flows to automate tasks for alerts and users, notify managers when users trigger an alerts, and more.
+- [Power Automate flows](communication-compliance-feature-reference.md#power-automate-flows). Set up flows to automate tasks for alerts and users, notify managers when users trigger an alerts, and more.
 - [‘Improve classification’ remediation action](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action). Alerts containing items that match trainable classifiers might benefit from feedback to help minimize false positives in your organization. The **Improve classification** option lets you provide feedback whether detected items match the classifier configured in the related communication compliance policy. You can even suggest other classifiers to associate with the item to improve match accuracy for future alerts.
 
 ### Data connectors
@@ -165,7 +165,7 @@ Several new and improved features hit public preview this month:
 
 - When [reviewing messages in an alert](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action), you can now remove inappropriate messages in Microsoft Teams channels, 1:1, and group chats. Removed messages and content are replaced with a policy tip that explains that it was removed due to sensitive content.
 - New [communication roles](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (these will also be included in new communication compliance role groups releasing in September).
-- New communication compliance settings experience that includes settings for [privacy](communication-compliance-feature-reference.md#privacy-preview) and [notice templates](communication-compliance-feature-reference.md#notice-templates).
+- New communication compliance settings experience that includes settings for [privacy](communication-compliance-feature-reference.md#privacy) and [notice templates](communication-compliance-feature-reference.md#notice-templates).
 - New [classifiers](communication-compliance-feature-reference.md#classifiers) to help detect adult, racy, and gory images.
 - New ‘Pattern detected’ notification that appears when [reviewing messages in an alert](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) lets you know about reoccurring instances of the same behavior by a user.
 

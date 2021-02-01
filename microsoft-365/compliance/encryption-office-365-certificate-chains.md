@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/16/2020
+ms.date: 2/1/2021
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -183,23 +183,21 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-256)** | 6DC47172E01CBCB0BF62580D895FE2B8AC9AD4F873801E0C10B9C837D21EB177 |
 | **Pin (SHA-256)** | HqPF5D7WbC2imDpCpKebHpBnhs6fG1hiFBmgBGOofTg= |
 
-### **GlobalSign**
+### **GlobalSign Root CA - R1**
 
-| **Subject** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R2 |
+| **Subject** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Serial Number** | 04:00:00:00:00:01:0F:86:26:E6:0D |
+| **Serial Number** | 04:00:00:00:00:01:15:4B:5A:C3:94 |
 | **Public Key Length** | RSA 2048 bits (e 65537) |
 | **Signature Algorithm** | sha1RSA |
-| **Validity Not Before** | Dec 15 08:00:00 2006 UTC |
-| **Validity Not After** | Dec 15 08:00:00 2021 UTC |
-| **Subject Key Identifier** | 9b:e2:07:57:67:1c:1e:c0:6a:06:de:59:b4:9a:2d:df:dc:19:86:2e |
-| **Authority Key Identifier** | keyid:9b:e2:07:57:67:1c:1e:c0:6a:06:de:59:b4:9a:2d:df:dc:19:86:2e |
-| **Thumbprint (SHA-1)** | 75E0ABB6138512271C04F85FDDDE38E4B7242EFE |
-| **Thumbprint (SHA-256)** | CA42DD41745FD0B81EB902362CF9D8BF719DA1BD1B1EFC946F5B4C99F42C1B9E |
-| **Pin (SHA-256)** | iie1VXtL7HzAMF+/PVPR9xzT80kQxdZeJ+zduCB3uj0= |
-| **CRL URLs** | http://crl.globalsign.net/root-r2.crl |
+| **Validity Not Before** | Sep 01 12:00:00 1998 UTC |
+| **Validity Not After** | Jan 28 12:00:00 2028 UTC |
+| **Subject Key Identifier** | 60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
+| **Thumbprint (SHA-1)** | B1BC968BD4F49D622AA89A81F2150152A41D829C |
+| **Thumbprint (SHA-256)** | EBD41040E4BB3EC742C9E381D31EF2A41A48B6685C96E7CEF3C1DF6CD4331C99 |
+| **Pin (SHA-256)** | K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q= |
 
-### **GlobalSign**
+### **GlobalSign Root CA - R3**
 
 | **Subject** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
 | --- | --- |
@@ -213,20 +211,6 @@ Expand the root and intermediate sections below to see additional details about 
 | **Authority Key Identifier** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Thumbprint (SHA-1)** | D69B561148F01C77C54578C10926DF5B856976AD |
 | **Thumbprint (SHA-256)** | CBB522D7B7F127AD6A0113865BDF1CD4102E7D0759AF635A7CF4720DC963C53B |
-
-### **GlobalSign Root CA**
-
-| **Subject** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
-| --- | --- |
-| **Serial Number** | 04:00:00:00:00:01:15:4B:5A:C3:94 |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha1RSA |
-| **Validity Not Before** | Sep 01 12:00:00 1998 UTC |
-| **Validity Not After** | Jan 28 12:00:00 2028 UTC |
-| **Subject Key Identifier** | 60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
-| **Thumbprint (SHA-1)** | B1BC968BD4F49D622AA89A81F2150152A41D829C |
-| **Thumbprint (SHA-256)** | EBD41040E4BB3EC742C9E381D31EF2A41A48B6685C96E7CEF3C1DF6CD4331C99 |
-| **Pin (SHA-256)** | K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q= |
 
 ### **thawte Primary Root CA - G3**
 

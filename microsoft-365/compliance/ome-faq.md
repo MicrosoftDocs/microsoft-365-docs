@@ -175,6 +175,10 @@ Admins can set up a mail flow rule to remove encryption from outgoing mail. You 
 
 Not at this time.
 
+## Can I send as a shared mailbox and encrypt emails?
+
+When someone sends an email message that matches an encryption mail flow rule, the message is encrypted before it's sent.
+
 ## Can I open encrypted messages sent to a shared mailbox?
 
 Yes! Encrypted messages are supported for a shared mailbox.
@@ -209,6 +213,10 @@ There are currently two known limitations:
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
+   
+ ## Can I open encrypted messages sent to another user's mailbox with Fullaccess?
+
+Users can open encrypted messages as long as they are given direct access and automapping is turned ON. Access is not allowed if the access is granted via an email-enabled security group.
 
 ## What do I do if I don’t receive the one-time pass code after I requested it?
 
