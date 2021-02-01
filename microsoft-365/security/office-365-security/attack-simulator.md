@@ -1,24 +1,26 @@
 ---
-title: "Attack Simulator in Microsoft Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: Attack Simulator in Microsoft Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use Attack Simulator to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use Attack Simulator to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Attack Simulator in Microsoft Defender for Office 365
@@ -150,7 +152,8 @@ If you're going to use one of the built-in templates or create the email message
 
    - Click **Use Template** and select a built-in or custom email template. After you select the template, the **Name** box is automatically filled based on the template, but you can change the name.
 
-   ![Phishing Start Page](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Phishing Start Page](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    When you're finished, click **Next**.
 
@@ -213,7 +216,8 @@ If you're going to use one of the built-in templates or create the email message
 
    For **Spear Phishing (Attachment)** campaigns, you should remove the link from the body of the message (otherwise, the message will contain both a link **and** an attachment, and link clicks aren't tracked in an attachment campaign).
 
-   ![Compose Email Body](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Compose Email Body](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    When you're finished, click **Next**.
 

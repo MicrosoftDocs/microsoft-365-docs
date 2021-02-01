@@ -1,22 +1,24 @@
 ---
-title: "Add support for anonymous inbound email over IPv6"
-f1.keywords:
-- NOCSH
+title: Add support for anonymous inbound email over IPv6
+f1.keywords: 
+  - NOCSH
 author: chrisda
 ms.author: chrisda
 manager: chrisda
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admin can learn how to configure support for anonymous inbound email from IPv6 sources in Exchange Online and Exchange Online Protection."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admin can learn how to configure support for anonymous inbound email from IPv6 sources in Exchange Online and Exchange Online Protection.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Add support for anonymous inbound email over IPv6 in Microsoft 365
