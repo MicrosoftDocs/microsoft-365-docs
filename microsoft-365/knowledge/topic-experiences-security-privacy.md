@@ -27,12 +27,12 @@ You should be familiar with [what Topics is](topic-experiences-overview.md), the
 
 To see topics, a user must:
 
-- Have a Topic Experiences license
+- Have a Viva Topics license
 - Be a [topic viewer](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization), [contributor, or knowledge manager](topic-experiences-user-permissions.md)
 
 These two things give users view access to the topic center and allow them to see highlights and topic cards.
 
-Topic contributors additionally have [create and edit](topic-experiences-user-permissions.md#change-who-has permissions-to-update-topic-details) permissions for topics, and knowledge managers can confirm or remove topics.
+Topic contributors additionally have [create and edit](topic-experiences-user-permissions.md) permissions for topics, and knowledge managers can confirm or remove topics.
 
 When a topic is first discovered, knowledge managers can see it in the topic center. Depending on the completeness and relevance of the topic, topic viewers may or may not see the topic presented in topic cards.
 
