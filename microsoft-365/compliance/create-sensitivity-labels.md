@@ -234,4 +234,4 @@ To configure and use your sensitivity labels for specific scenarios, use the fol
 
 - [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 
-To monitor how your labels are being used, see [View label usage with label analytics](label-analytics.md).
+To monitor how your labels are being used, see [Get started with data classification](data-classification-overview.md).
