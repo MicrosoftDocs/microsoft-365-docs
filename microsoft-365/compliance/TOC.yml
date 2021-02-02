@@ -469,11 +469,40 @@
     - name: Get visibility and insights
       items:
         - name: Learn about visibility and insights
-          href: mapg-placeholder.md
+          href: mapg-visibility-insights-overview.md
         - name: Get started
-          href: mapg-placeholder.md
+          href: mapg-visibility-insights-get-started.md
+        - name: View your apps
+          href: mapg-visibility-insights-view-apps.md
         - name: Manage app metadata
-          href: mapg-placeholder.md
+          href: mapg-visibility-insights-app-metadata.md
+        - name: Determine compliance posture
+          href: mapg-visibility-insights-compliance-posture.md
+    - name: Implement app policies
+      items:
+        - name: Learn about app policies
+          href: mapg-app-policies-overview.md
+        - name: Get started
+          href: mapg-app-policies-get-started.md
+        - name: Plan for app policies
+          href: mapg-app-policies-plan.md
+        - name: View app policies
+          href: mapg-app-policies-view.md
+        - name: Create app policies
+          href: mapg-app-policies-create.md
+        - name: Manage app policies
+          href: mapg-app-policies-manage.md
+    - name: Detect and remediate app threats
+      items:
+        - name: Learn about app threat detection and remediation
+          href: mapg-detect-remediate-overview.md
+        - name: Get started
+          href: mapg-detect-remediate-get-started.md
+        - name: Detecting app threats
+          href: mapg-detect-remediate-detect-threats.md
+        - name: Remediating app threats
+          href: mapg-detect-remediate-detect-threats.md
+
 - name: Manage eDiscovery
   items:
     - name: Microsoft 365 eDiscovery solutions
