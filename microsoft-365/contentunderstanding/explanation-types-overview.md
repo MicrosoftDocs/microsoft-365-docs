@@ -132,14 +132,14 @@ You can choose the following options for this setting:
 - Beginning of the file:  The document is searched from the beginning to the phrase location.</br> 
    ![Beginning of file](../media/content-understanding/beginning-of-file.png)</br>
 In the viewer, you can manually adjust the select box to include the location where the phase occurs. The <b>End position</b> value will update to show the number of tokens your selected area includes. Note that you can update the End position value as well to adjust the selected area.</br>
-   ![Beginning of file](../media/content-understanding/beginning-box.png)</br>
+   ![Beginning of file position box](../media/content-understanding/beginning-box.png)</br>
 
 - End of the file:  The document is searched from the end to the phrase location.</br> 
    ![End of file](../media/content-understanding/end-of-file.png)</br>
 In the viewer, you can manually adjust the select box to include the location where the phase occurs. The <b>Starting position</b> value will update to show the number of tokens your selected area includes. Note that you can update the Starting position value as well to adjust the selected area.</br> 
-   ![End of file](../media/content-understanding/end-box.png)</br>
+   ![End of file end box](../media/content-understanding/end-box.png)</br>
 - Custom range:  The document is searched in a specified range within the it for the phrase location.</br> 
-   ![End of file](../media/content-understanding/custom-file.png)</br>
+   ![Custom range](../media/content-understanding/custom-file.png)</br>
 In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a <b>Start</b> and an <b>End</b> position. These values represent the number of tokens from the begging of the document. While you can manually enter in these values, it is easier to manually adjust the select box in the viewer.</br> 
    
 
