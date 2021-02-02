@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid:
 ms.collection: 
   - M365-security-compliance
-description: Admins can learn how the Spoof intelligence insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
+description: Admins can learn how the poof intelligence insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -24,9 +24,12 @@ ms.prod: m365-security
 
 # Spoof intelligence insight
 
-You can use the Spoof intelligence insight to quickly determine which external senders are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks).
+You can use the spoof intelligence insight to quickly determine which external senders are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks).
 
-By allowing known external senders to send spoofed messages from known locations, you can reduce false positives (good email marked as bad). By monitoring the allowed spoofed senders, you provide an additional layer of security to prevent unsafe messages from arriving in your organization.
+By allowing known senders to send spoofed messages from known locations, you can reduce false positives (good email marked as bad). By monitoring the allowed spoofed senders, you provide an additional layer of security to prevent unsafe messages from arriving in your organization.
+
+> [!NOTE]
+> Only spoofed senders that have been allowed or blocked by spoof intelligence appear in the spoof intelligence insight. If you manually allow or block a detected spoofed sender from the insight, the entry disappears from the insight and is moved into the list of allowed or blocked spoofed senders in the [Tenant Allow/Block List](tenant-allow-block-list.md#use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list). Likewise, if you [remove the allowed or blocked spoofed sender entry](tenant-allow-block-list.md#use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list) from the Tenant Allow/Block List, future allowed or blocked messages from the spoofed sender will appear back in the spoof intelligence insight.
 
 ## What do you need to know before you begin?
 
@@ -69,42 +72,57 @@ By allowing known external senders to send spoofed messages from known locations
 
    **Non-suspicious domains**: The domain failed explicit email authentication checks [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)). However, the domain passed our implicit email authentication checks ([composite authentication](email-validation-and-authentication.md#composite-authentication)). As a result, no anti-spoofing action was taken on the message.
 
-### View detailed information about suspicious domains from the Spoof intelligence insight
+### View information about spoofed messages
 
-1. On the Spoof intelligence insight, click **Suspicious domains** or **Non-suspicious domains** to go to the **Spoof intelligence insight** page. The **Spoof Intelligence insight** page contains the following information:
+On the spoof intelligence insight, click **Suspicious domains** or **Non-suspicious domains** to go to the **Spoof intelligence insight** page. The **Spoof Intelligence insight** page contains the following information:
 
-   - **Spoofed domain**: The domain of the spoofed user that's displayed in the **From** box in email clients. This address is also known as the `5322.From` address.
-   - **Infrastructure**: Also known as the _sending infrastructure_. The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address. If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
-   - **Message count**: The number of messages from the sending infrastructure to your organization that contain the specified spoofed domain within the last 7 days.
-   - **Last seen**: The last date when a message was received from the sending infrastructure that contains the spoofed domain.
-   - **Spoof type**: This value is **External**.
-   - **Allowed to spoof?**: The values that you see here are:
-     - **Yes**: Messages from the combination of spoofed user's domain and sending infrastructure are allowed and not treated as spoofed email.
-     - **No**: Messages from the combination of spoofed user's domain and sending infrastructure are marked as spoofed. The action is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**).
+- **Spoofed domain**: The domain of the spoofed user that's displayed in the **From** box in email clients. This address is also known as the `5322.From` address.
+- **Infrastructure**: Also known as the _sending infrastructure_. This will be one of the following values:
+  - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address.
+  - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
+- **Message count**: The number of messages from the combination of the spoofed domain _and_ the sending infrastructure to your organization within the last 7 days.
+- **Last seen**: The last date when a message was received from the sending infrastructure that contains the spoofed domain.
+- **Spoof type**: One of the following values:
+  - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
+  - **External**: The spoofed sender is in an external domain.
+- **Allowed to spoof**: The value depends on whether you clicked **Suspicious domains** or **Non-suspicious domains** on the insight:
+  - **Suspicious domains**: The **Allowed to spoof** value is always **No**. Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+  - **Non-suspicious domains**: The **Allowed to spoof** value is always **Yes**. Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as good by spoof intelligence.
 
-     For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+You can click the column headings to sort the results.
 
-2. Select an item in the list to view details about the domain/sending infrastructure pair in a flyout. The information includes:
-   - Why we caught this.
-   - What you need to do.
-   - A domain summary.
-   - WhoIs data about the sender.
-   - Similar messages we have seen in your tenant from the same sender.
+To filter the results, you have the following options:
 
-   From here, you can also choose to add or remove the domain/sending infrastructure pair from the **Allowed to spoof** sender allow list. Simply set the toggle accordingly.
+- Use the **Filter spoofed domain** box to enter a comma-separated list of spoofed domain values to filter the results.
+- Use the **Filter infrastructure** box to enter a comma-separated list of infrastructure values to filter the results.
+- Click the **Filter** button to filter the results by **Spoof type**.
 
-   ![Screenshot of a domain in the Spoof intelligence insight details pane](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+### View details about spoofed messages
 
-### Adding a domain to the Allowed to spoof list
+Select an item in the list to view details. A flyout appears with the following information and features:
 
-Adding a domain to the Allowed to spoof list from the spoof intelligence insight only allows the combination of the spoofed domain *and* the sending infrastructure. It does not allow email from the spoofed domain from any source, nor does it allow email from the sending infrastructure for any domain.
+- **Allowed to spoof**: Use this toggle to override the spoof intelligence verdict:
+  - If you originally selected **Suspicious domains** in the insight, **Allowed to spoof** is turned off. To turn it on, which moves the entry from the spoof intelligence insight to the Tenant Allow/Block List as an allow entry for spoof, slide the toggle to on: ![Toggle on](../../media/scc-toggle-on.png).
+  - If you originally selected **Non-suspicious domains** in the insight, **Allowed to spoof** is turned on. To turn it off, which moves the entry from the spoof intelligence insight to the Tenant Allow/Block List as a block entry for spoof, slide the toggle to off: ![Toggle off](../../media/scc-toggle-off.png).
 
-For example, you allow the following domain to the Allowed to spoof list:
+- Why we caught this.
+- What you need to do.
+- A domain summary that includes most of the same information from the main spoof intelligence page.
+- WhoIs data about the sender.
+- Similar messages we have seen in your tenant from the same sender.
+
+   ![Screenshot of a domain in the spoof intelligence insight details pane](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+
+### About allowed spoofed senders
+
+An allowed spoofed sender in **Non-suspicious domains** in the spoof intelligence insight or a blocked sender in **Suspicious domains** that you manually changed to **Allowed to spoof** only allows messages from the combination of the spoofed domain *and* the sending infrastructure. It does not allow email from the spoofed domain from any source, nor does it allow email from the sending infrastructure for any domain.
+
+For example, the following spoofed sender is allowed to spoof:
 
 - **Domain**: gmail.com
 - **Infrastructure**: tms.mx.com
 
-Only email from that domain/sending infrastructure pair will be allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages in other domains from tms.mx.com are checked by spoof intelligence.
+Only email from that domain/sending infrastructure pair will be allowed to spoof. Other senders attempting to spoof gmail.com aren't automatically allowed. Messages from senders in other domains that originate from tms.mx.com are still checked by spoof intelligence, and might be blocked.
 
 ## Related topics
 

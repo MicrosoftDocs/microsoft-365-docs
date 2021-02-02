@@ -259,7 +259,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 4. When you're finished, click **Save**.
 
-## Use the Security & Compliance Center to remove block URL or file entries from the Tenant Allow/Block List
+## Use the Security & Compliance Center to remove entries from the Tenant Allow/Block List
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
