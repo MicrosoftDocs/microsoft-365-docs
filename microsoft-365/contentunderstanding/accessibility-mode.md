@@ -8,7 +8,6 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to use accessibility mode when training a model in SharePoint Syntex."
 ---
 
@@ -63,7 +62,6 @@ After a string is labeled or a label has been removed in the viewer, Narrator au
 
 [Create a classifier](create-a-classifier.md)</br>
 
-[Intro to SharePoint Syntex](index.md)
 
 
 
