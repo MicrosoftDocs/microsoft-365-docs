@@ -33,9 +33,9 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 Threat protection features in Microsoft 365 Defender can result in certain remediation actions. Here are some examples:
-- Automated investigations can result in remediation actions that are taken automatically or await approval.
+- [Automated investigations](mtp-autoir.md) can result in remediation actions that are taken automatically or await approval.
 - Antivirus, antimalware, and other threat protection features can result in remediation actions, such as blocking a file, URL, or process, or sending an artifact to quarantine.
-- Your security operations team can take remediation actions manually, such as during advanced hunting or while investigating detected threats.
+- Your security operations team can take remediation actions manually, such as during [advanced hunting](advanced-hunting-overview.md) or while investigating [alerts](investigate-alerts.md) or [incidents](investigate-incidents.md).
 
 > [!NOTE]
 > You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see [Prerequisites for automated investigation and response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
