@@ -4,6 +4,7 @@ description: During and after an automated investigation, you can view the resul
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
 ms.prod: m365-security
+ms.technology: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,8 +21,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/29/2021
-
+ms.date: 02/02/2021
 ---
 
 # Details and results of an automated investigation
