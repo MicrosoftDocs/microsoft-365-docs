@@ -48,6 +48,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
   - Outlook included with Microsoft 365 apps for Enterprise
+  - Outlook Mobile
 
 - The Report Message add-in is not available for mailboxes in on-premises Exchange organizations.
 
