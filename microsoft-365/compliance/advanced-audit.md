@@ -112,6 +112,9 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExc
 
 > [!NOTE]
 > You must run the following command in Exchange Online PowerShell so that SearchQueryInitiatedExchange events (performed by the specified E5 user) are included in audit log search results: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+For multi-geo tenants, the Set-mailbox command must be run in the forest where the users mailbox is located. To find out the users mailbox location the following command can be run:-  Get-Mailbox <userid> | fl MailboxLocations.
+If the opt-in command has already been run for multi-geo tenants from a different forest than the users forest, then one must re-optin (i.e. remove SearchQueryInitiated and add) from users forest.
+
 
 ### SearchQueryInitiatedSharePoint
 
@@ -125,6 +128,8 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSha
 
 > [!NOTE]
 > You must run the following command in Exchange Online PowerShell so that SearchQueryInitiatedSharePoint events (performed by the specified E5 user) are included in audit log search results: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+For multi-geo tenants, the Set-mailbox command must be run in the forest where the users mailbox is located. To find out the users mailbox location the following command can be run:-  Get-Mailbox <userid> | fl MailboxLocations.
+If the opt-in command has already been run for multi-geo tenants from a different forest than the users forest, then one must re-optin (i.e. remove SearchQueryInitiated and add) from users forest.
 
 ## High-bandwidth access to the Office 365 Management Activity API
 
