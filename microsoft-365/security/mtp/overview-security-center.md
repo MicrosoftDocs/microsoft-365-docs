@@ -50,7 +50,7 @@ If you need information about what's changed from the Office 365 Security & Comp
 - [Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
 
 ## What to expect
-All the security content that you use in the Office 365 Security and Compliance Center (protection.office.com) and the Microsoft Defender security center (securitycenter.microsoft.com/) can now be found in the Microsoft 365 security center (security.microsoft.com).
+All the security content that you use in the Office 365 Security and Compliance Center (protection.office.com) and the Microsoft Defender security center (securitycenter.microsoft.com) can now be found in the *Microsoft 365 security center*.
 
 Microsoft 365 security center helps security teams investigate and respond to attacks by brining in signals from different workloads into a single, unified experiences:
 
