@@ -100,6 +100,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
+   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
    Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $Credential
    ```
 
@@ -117,7 +118,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
     
    ```powershell
    Import-Module ExchangeOnlineManagement
-   Connect-ExchangeOnline -Credential $credential -ShowProgress $true
+   Connect-ExchangeOnline -ShowProgress $true
    ```
 
    > [!Note]
@@ -127,7 +128,6 @@ Follow these steps to connect to all the services in a single PowerShell window 
     
    ```powershell
    $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-   Import-Module ExchangeOnlineManagement
    Connect-IPPSSession -UserPrincipalName $acctName
    ```
 
@@ -138,7 +138,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
     
    ```powershell
    Import-Module MicrosoftTeams
-   Connect-MicrosoftTeams -Credential $credential
+   Connect-MicrosoftTeams
    ```
   
    > [!Note]
@@ -166,8 +166,8 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
 #Security & Compliance Center
 Connect-IPPSSession -UserPrincipalName $acctName
-Import-Module MicrosoftTeams
 #Teams
+Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
@@ -192,8 +192,8 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
 #Security & Compliance Center
 Connect-IPPSSession -UserPrincipalName $acctName
-Import-Module MicrosoftTeams
 #Teams
+Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
