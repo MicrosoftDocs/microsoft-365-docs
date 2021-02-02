@@ -154,7 +154,7 @@ Your Microsoft Defender for Office 365 evaluation report is generated once per d
 
 ### Exchange rules (optional)
 
-If you have an existing gateway, you might want to bypass filtering because it will activate enhanced filtering for connectors and alter the incoming sender IP address. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don't already have one). For details on the rule components and how they work, see Mail flow rules (transport rules) in Exchange Online.
+If you have an existing gateway, enabling evaluation mode will activate enhanced filtering for connectors. This improves filtering accuracy by altering the incoming sender IP address. This may change the filter verdicts and if you are not bypassing Exchange Online Protection this may alter deliverability for certain messages. In this case you might want to temporarily bypass filtering to analyze impact. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don't already have one). For details on the rule components and how they work, see Mail flow rules (transport rules) in Exchange Online.
 
 ## Evaluate capabilities
 
