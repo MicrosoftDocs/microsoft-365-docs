@@ -33,7 +33,7 @@ Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps
 
 
 
-## Windows 10 Enterprise E3, E5 and Microsoft Defender for Endpoint
+## Windows 10 Enterprise E5 or E3 with Microsoft Defender for Endpoint
  |
  --- | ---
 Recommended
