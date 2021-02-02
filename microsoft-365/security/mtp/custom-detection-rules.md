@@ -202,7 +202,8 @@ In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]*
 >[!TIP]
 >To quickly view information and take action on an item in a table, use the selection column [&#10003;] at the left of the table.
 
-## Related topic
+## See also
 - [Custom detections overview](custom-detections-overview.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the advanced hunting query language](advanced-hunting-query-language.md)
+- [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mdatp.md)
