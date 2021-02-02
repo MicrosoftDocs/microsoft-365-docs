@@ -18,7 +18,7 @@ ms.collection:
 - m365initiative-compliance
 search.appverid: 
 - MET150
-description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file activities and implement protective actions for those file to endpoints."
+description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file activities and implement protective actions for those files to endpoints."
 ---
 
 # Get started with Endpoint data loss prevention
@@ -84,11 +84,13 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 
 2. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623. 
 
-> [!NOTE]
-> None of Windows Security components need to be active, you can run Endpoint DLP independent of Windows Security status, but the [Real-time protection and Behavior monitor](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
+   > [!NOTE]
+   > None of Windows Security components need to be active, you can run Endpoint DLP independent of Windows Security status, but the [Real-time protection and Behavior monitor](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
  
-
-3. The following Windows Updates are installed. Note: These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
+3. The following Windows Updates are installed. 
+ 
+   > [!NOTE]
+   > These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
 
 	- For Windows 10 1809 - KB4559003, KB4577069, KB4580390
 	- For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
@@ -134,7 +136,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
    > [!div class="mx-imgBorder"]
    > ![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
    
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
 
     - Onboard Windows 10 machines using Group Policy
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
@@ -164,7 +166,7 @@ In this scenario, Microsoft Defender for Endpoint is already deployed and there 
 
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
 
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
 
     - Onboard Windows 10 machines using Group Policy
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
