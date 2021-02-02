@@ -34,9 +34,9 @@ Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps
 
 
 ## Windows 10 Enterprise E5 or E3 with Microsoft Defender for Endpoint
+Recommended
  |
  --- | ---
-Recommended
 [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) | Customers are recommended to implement Windows Hello for Business to replace passwords with strong two-factor authentication used on Microsoft Managed Desktop devices.
 [Application Virtualization](https://docs.microsoft.com/windows/application-management/app-v/appv-technical-reference) | Customers can deploy Application Virtualization (App-V) packages using the Intune Win32 app management client.
 [Microsoft 365 data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about) | Customers are recommend to implement Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items.   
