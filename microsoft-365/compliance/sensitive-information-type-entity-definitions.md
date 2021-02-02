@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
+description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
 # Sensitive information type entity definitions
 
-Data loss prevention (DLP) in the Compliance Center includes many sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
+Data loss prevention (DLP) in the Compliance Center includes many sensitive information types that are ready to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. Corroborative evidence, like keywords and checksums, can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
 
 Sensitive information types require one of these subscriptions:
 - Microsoft 365 E3
@@ -32,7 +32,7 @@ Sensitive information types require one of these subscriptions:
 
 ### Format
 
-nine digits which may be in a formatted or unformatted pattern
+nine digits that may be in a formatted or unformatted pattern
 
 ### Pattern
 
@@ -146,7 +146,7 @@ six to twn digits with or without a bank state branch number
 
 ### Pattern
 
-Account number is six to ten digits.
+Account number is 6 to 10 digits.
 
 Australia bank state branch number:
 - three digits 
@@ -160,12 +160,12 @@ No
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_australia_bank_account_number finds content that matches the pattern..
+- The regular expression Regex_australia_bank_account_number finds content that matches the pattern.
 - A keyword from Keyword_australia_bank_account_number is found.
 - The regular expression Regex_australia_bank_account_number_bsb finds content that matches the pattern.
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_australia_bank_account_number finds content that matches the pattern..
+- The regular expression Regex_australia_bank_account_number finds content that matches the pattern.
 - A keyword from Keyword_australia_bank_account_number is found.
 
 ```xml
@@ -483,10 +483,10 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Pattern
 
 10-11 digits:
-- first digit is in the range 2-6
-- ninth digit is a check digit
-- tenth digit is the issue digit
-- eleventh digit (optional) is the individual number
+- 1st digit is in the range 2-6
+- 9th digit is a check digit
+- 10th digit is the issue digit
+- 11th digit (optional) is the individual number
 
 ### Checksum
 
@@ -1031,7 +1031,7 @@ No
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_AzureDocumentDBAuthKey finds content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords does **not** find content that matches the pattern.
+- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -1049,7 +1049,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 #### CEP_CommonExampleKeywords
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
 
 - contoso
 - fabrikam
@@ -1080,7 +1080,7 @@ The string "Server", "server", or "data source" followed by the characters and s
 - zero to two whitespace characters
 - an equal sign (=)
 - zero to two whitespace characters
-- one or more characters that is not a semicolon (;), quotation mark ("), or apostrophe (')
+- one or more characters that aren't a semicolon (;), quotation mark ("), or apostrophe (')
 - a semicolon (;), quotation mark ("), or apostrophe (')
 
 ### Checksum
@@ -1091,7 +1091,7 @@ No
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_AzureConnectionString finds content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords does **not** find content that matches the pattern.
+- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -1109,7 +1109,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 #### CEP_common_example_keywords
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
 
 - contoso
 - fabrikam
@@ -1151,7 +1151,7 @@ No
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_AzureIoTConnectionString finds content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords does **not** find content that matches the pattern.
+- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1169,7 +1169,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 #### CEP_common_example_keywords
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
 
 - contoso
 - fabrikam
@@ -1201,7 +1201,7 @@ No
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_AzurePublishSettingPasswords finds content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords does **not** find content that matches the pattern.
+- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
 
 ```xml
@@ -1220,7 +1220,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 #### CEP_common_example_keywords
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
 
 - contoso
 - fabrikam
@@ -1256,8 +1256,8 @@ No
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression CEP_Regex_AzureRedisCacheConnectionString finds content that matches the pattern..
-- The regular expression CEP_CommonExampleKeywords does **not** find content that matches the pattern.
+- The regular expression CEP_Regex_AzureRedisCacheConnectionString finds content that matches the pattern.
+- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1275,7 +1275,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 #### CEP_common_example_keywords
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
 
 - contoso
 - fabrikam
@@ -1301,7 +1301,7 @@ The string "sig" followed by the characters and strings outlined in the pattern 
 - zero to two whitespace characters
 - any combination of between 43-53 characters that are lower- or uppercase letters, digits, or the percent sign (%)
 - the string "%3d"
-- any character that is not a lower- or uppercase letter, digit, or percent sign (%)
+- any character that isn't a lower- or uppercase letter, digit, or percent sign (%)
 
 ### Checksum
 
@@ -1350,8 +1350,8 @@ No
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression CEP_Regex_AzureServiceBusConnectionString finds content that matches the pattern..
-- The regular expression CEP_CommonExampleKeywords does **not** find content that matches the pattern.
+- The regular expression CEP_Regex_AzureServiceBusConnectionString finds content that matches the pattern.
+- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -1369,7 +1369,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 #### CEP_common_example_keywords
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
 
 - contoso
 - fabrikam
@@ -1409,8 +1409,8 @@ No
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_AzureStorageAccountKey finds content that matches the pattern.
-- The regular expression CEP_AzureEmulatorStorageAccountFilter does **not** find content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords does **not** find content that matches the pattern.
+- The regular expression CEP_AzureEmulatorStorageAccountFilter doesn't find content that matches the pattern.
+- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1429,13 +1429,13 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 #### CEP_azure_emulator_storage_account_filter
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### CEP_common_example_keywords
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
 
 - contoso
 - fabrikam
@@ -1481,11 +1481,11 @@ This sensitive information type entity is only available in the EU Driver's Lice
 
 ### Format
 
-ten digits without spaces and delimiters
+10 digits without spaces and delimiters
   
 ### Pattern
 
-ten digits
+10 digits
   
 ### Checksum
 
@@ -1841,7 +1841,7 @@ Formatted:
 - a period
 - three digits
 - a hyphen
-- two digits which are check digits
+- two digits that are check digits
 
 Unformatted:
 - 11 digits where the last two digits are check digits
@@ -1907,7 +1907,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - a forward slash 
 - four-digit branch number 
 - a hyphen 
-- two digits which are check digits
+- two digits that are check digits
 
 ### Checksum
 
@@ -1979,12 +1979,12 @@ Registro Geral (old format):
 - a period 
 - three digits 
 - a hyphen 
-- one digit which is a check digit
+- one digit that is a check digit
 
 Registro de Identidade (RIC) (new format):
-- ten digits 
+- 10 digits 
 - a hyphen 
-- one digit which is a check digit
+- one digit that is a check digit
 
 ### Checksum
 
@@ -2090,11 +2090,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-ten digits without spaces and delimiters
+10 digits without spaces and delimiters
   
 ### Pattern
 
-ten digits without spaces and delimiters
+10 digits without spaces and delimiters
   
 - six digits that correspond to the birth date (YYMMDD) 
 - two digits that correspond to the birth order
@@ -2237,11 +2237,11 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-seven or twelve digits
+7 or 12 digits
 
 ### Pattern
 
-A Canada Bank Account Number is seven or twelve digits.
+A Canada Bank Account Number is 7 or 12 digits.
 
 A Canada bank account transit number is:
 - five digits 
@@ -2530,11 +2530,11 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-ten digits
+ 10 digits
 
 ### Pattern
 
-ten digits
+10 digits
 
 ### Checksum
 
@@ -2868,10 +2868,10 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Pattern
 
 18 digits:
-- six digits which are an address code 
-- eight digits in the form YYYYMMDD which are the date of birth 
-- three digits which are an order code 
-- one digit which is a check digit
+- six digits that are an address code 
+- eight digits in the form YYYYMMDD, which are the date of birth 
+- three digits that are an order code 
+- one digit that is a check digit
 
 ### Checksum
 
@@ -2921,11 +2921,11 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-14 to 16 digits which can be formatted or unformatted (dddddddddddddddd) and which must pass the Luhn test.
+14 to 16 digits that can be formatted or unformatted (dddddddddddddddd) and that must pass the Luhn test.
 
 ### Pattern
 
-Very complex and robust pattern that detects cards from all major brands worldwide, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, and diner cards.
+Complex and robust pattern that detects cards from all major brands worldwide, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, and diner cards.
 
 ### Checksum
 
@@ -3267,7 +3267,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Croatia identity card number
-This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU National Identification Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -3394,7 +3394,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Pattern
 
 11 digits:
-- ten digits 
+- 10 digits 
 - final digit is a check digit
 
 ### Checksum
@@ -3469,7 +3469,7 @@ This sensitive information type entity is only available in the EU Social Securi
 
 11 digits:
   
-- ten digits
+- 10 digits
 - one check digit
     
 ### Checksum
@@ -3579,11 +3579,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-ten digits without spaces and delimiters
+10 digits without spaces and delimiters
   
 ### Pattern
 
-ten digits 
+10 digits 
   
 ### Checksum
 
@@ -3876,7 +3876,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Format
 
 nine digits with optional forward slash (old format)
-ten digits with optional forward slash (new format)
+10 digits with optional forward slash (new format)
 
 ### Pattern
 
@@ -3885,7 +3885,7 @@ nine digits (old format):
 - an optional forward slash
 - three digits
 
-ten digits (new format):
+10 digits (new format):
 - six digits that represent date of birth
 - an optional forward slash 
 - four digits where last digit is a check digit
@@ -3978,11 +3978,11 @@ This sensitive information type entity is only available in the EU Social Securi
 
 ### Format
 
-ten digits and a backslash in the specified pattern
+10 digits and a backslash in the specified pattern
   
 ### Pattern
 
-ten digits and a backslash:
+10 digits and a backslash:
   
 - six digits that correspond to the birth date (YYMMDD): 
 - a backslash
@@ -4145,12 +4145,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-ten digits containing a hyphen
+10 digits containing a hyphen
 
 ### Pattern
 
-ten digits:
-- six digits in the format DDMMYY which are the date of birth 
+10 digits:
+- six digits in the format DDMMYY, which are the date of birth 
 - a hyphen 
 - four digits where the final digit is a check digit
 
@@ -4263,11 +4263,11 @@ This sensitive information type entity is only available the EU Social Security 
 
 ### Format
 
-ten digits and a hyphen in the specified pattern
+10 digits and a hyphen in the specified pattern
   
 ### Pattern
 
-ten digits and a hyphen:
+10 digits and a hyphen:
   
 - six digits that correspond to the birth date (DDMMYY) 
 - a hyphen
@@ -4559,7 +4559,7 @@ dokumendi nr
 
 ### Pattern
 
-Very complex and robust pattern
+Complex and robust pattern
 
 ### Checksum
 
@@ -4903,7 +4903,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 ## EU driver's license number
 
-These are the entities in the EU Driver's License Number sensitive information type.
+These entities are in the EU Driver's License Number and are sensitive information types.
 
 - [Austria](#austria-drivers-license-number) 
 - [Belgium](#belgium-drivers-license-number)
@@ -4937,7 +4937,7 @@ These are the entities in the EU Driver's License Number sensitive information t
 
 ## EU national identification number
 
-These are the entities in the EU National Identification Number sensitive information type.
+These entities are in the EU National Identification Number and are sensitive information types.
 
 - [Austria](#austria-identity-card)
 - [Belgium](#belgium-national-number)
@@ -4970,7 +4970,7 @@ These are the entities in the EU National Identification Number sensitive inform
 
 ## EU passport number 
 
-These are the entities in the EU passport number sensitive information typeThese are the entities in the EU passport number bundle.
+These entities are in the EU passport number and are sensitive information types. These entities are in the EU passport number bundle.
 
 - [Austria](#austria-passport-number)
 - [Belgium](#belgium-passport-number)
@@ -5004,7 +5004,7 @@ These are the entities in the EU passport number sensitive information typeThese
 
 ## EU social security number or equivalent identification
 
-These are the entities that are in the EU Social Security Number or equivalent identification sensitive information type.
+These entities that are in the EU Social Security Number or equivalent identification and are sensitive information types.
 
 - [Austria](#austria-social-security-number-or-equivalent-identification)
 - [Belgium](#belgium-social-security-number-or-equivalent-identification)
@@ -5060,11 +5060,11 @@ This sensitive information type entity is only available in the EU Driver's Lice
 
 ### Format
 
-ten digits containing a hyphen
+10 digits containing a hyphen
   
 ### Pattern
 
-ten digits containing a hyphen:
+10 digits containing a hyphen:
   
 - six digits 
 - a hyphen
@@ -5119,15 +5119,15 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-20 digit number
+20-digit number
 
 ### Pattern
 
 20-digit number:
 
-- ten digits - 8024680246
+- 10 digits - 8024680246
 - an optional space or hyphen
-- ten digits
+- 10 digits
 
 ### Checksum
 
@@ -5178,7 +5178,7 @@ six digits plus a character indicating a century plus three digits plus a check 
 ### Pattern
 
 Pattern must include all of the following:
-- six digits in the format format DDMMYY which are a date of birth 
+- six digits in the format DDMMYY, which are a date of birth 
 - century marker (either '-', '+' or 'a') 
 - three-digit personal identification number 
 - a digit or letter (case insensitive) which is a check digit
@@ -5263,7 +5263,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Finland passport number
-This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 combination of nine letters and digits
@@ -5394,7 +5394,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## France driver's license number
-This sensitive information type entity is available in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is available in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -5454,15 +5454,15 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-21 digit number
+21-digit number
 
 ### Pattern
 
-21 digit number:
+21-digit number:
 
-- ten digits
+- 10 digits
 - an optional space
-- ten digits
+- 10 digits
 - an optional space
 - a digit
 
@@ -5543,7 +5543,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
    
 ## France passport number
-This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is available in the EU Passport Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -5601,7 +5601,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
       
 ## France social security number (INSEE) or equivalent identification
-This sensitive information type entity is included in the EU Social Security Number and Equivalent ID sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU Social Security Number and Equivalent ID sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -5687,15 +5687,15 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 13 digits
   
 - One digit that must be 0, 1, 2, or 3
-- 1 digit
+- One digit
 - A space (optional)
-- 2 digits 
+- Two digits 
 - A space (optional)
-- 3 digits 
+- Three digits 
 - A space (optional)
-- 3 digits 
+- Three digits 
 - A space (optional)
-- 3 check digits 
+- Three check digits 
 
   
 ### Checksum
@@ -5771,11 +5771,11 @@ This sensitive information type is only available for use in:
 - two letters  - FR (case insensitive)
 - an optional space or hyphen
 - two letters or digits
-- an optional space, dot, hyphen or comma
+- an optional space, dot, hyphen, or comma
 - three digits
-- an optional space, dot, hyphen or comma
+- an optional space, dot, hyphen, or comma
 - three digits
-- an optional space, dot, hyphen or comma
+- an optional space, dot, hyphen, or comma
 - three digits
 
 ### Checksum
@@ -5820,7 +5820,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Germany driver's license number
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU Driver's License Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -5978,7 +5978,7 @@ since 1 November 2010:
 - eight digits
 
 from 1 April 1987 until 31 October 2010:
-- ten digits
+- 10 digits
 
 ### Checksum
 
@@ -6020,11 +6020,11 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Germany passport number
-This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
-ten digits or letters
+10 digits or letters
 
 ### Pattern
 
@@ -6086,7 +6086,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
   
 ### Pattern
 
-11 digits :
+11 digits
   
 - Two digits 
 - An optional space
@@ -6216,7 +6216,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Greece driver's license number
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -6784,11 +6784,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-Ten digits with no spaces or delimiters
+10 digits with no spaces or delimiters
   
 ### Pattern
 
-Ten digits:
+10 digits:
   
 - One digit that must be "8" 
 - Eight digits
@@ -6871,9 +6871,9 @@ This sensitive information type is only available for use in:
 
 10 character alphanumeric pattern:
 
-- 2 letters - HU or hu
+- two letters - HU or hu
 - optional space
-- 8 digits
+- eight digits
 
 ### Checksum
 
@@ -6931,7 +6931,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 10 letters or digits:
 - Five letters (not case sensitive) 
 - Four digits 
-- A letter which is an alphabetic check digit
+- A letter that is an alphabetic check digit
 
 ### Checksum
 
@@ -6974,7 +6974,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - An optional space or dash 
 - Four digits 
 - An optional space or dash 
-- The final digit which is the check digit
+- The final digit, which is the check digit
 
 ### Checksum
 
@@ -7026,7 +7026,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Two-digit regency or city code 
 - Two-digit subdistrict code 
 - A period (optional) 
-- Six digits in the format DDMMYY which are the date of birth 
+- Six digits in the format DDMMYY, which are the date of birth 
 - A period (optional) 
 - Four digits
 
@@ -7189,10 +7189,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### Format
 
 #### IPv4:
-Complex pattern which accounts for formatted (periods) and unformatted (no periods) versions of the IPv4 addresses
+Complex pattern that accounts for formatted (periods) and unformatted (no periods) versions of the IPv4 addresses
 
 #### IPv6:
-Complex pattern which accounts for formatted IPv6 numbers (which include colons)
+Complex pattern that accounts for formatted IPv6 numbers (which include colons)
 
 ### Pattern
 
@@ -7371,19 +7371,19 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-Old format (until 31 Dec 2012):
+Old format (until 31 December 2012):
 - seven digits followed by 1-2 letters 
 
-New format (1 Jan 2013 and after):
+New format (1 January 2013 and after):
 - seven digits followed by two letters
 
 ### Pattern
 
-Old format (until 31 Dec 2012):
+Old format (until 31 December 2012):
 - seven digits 
 - one to two letters (not case sensitive) 
 
-New format (1 Jan 2013 and after):
+New format (1 January 2013 and after):
 - seven digits 
 - a letter (not case sensitive) which is an alphabetic check digit 
 - An optional letter in the range A-I, or “W”
@@ -7554,7 +7554,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - National ID Number
    
 ## Italy driver's license number
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -7615,9 +7615,9 @@ A 16-character combination of letters and digits:
 - three letters that correspond to the first three consonants in the family name
 - three letters that correspond to the first, third, and fourth consonants in the first name
 - two digits that correspond to the last digits of the birth year
-- one letter that corresponds to the letter for the month of birth—letters are used in alphabetical order, but only the letters A to E, H, L, M, P, R to T are used (thus, January is A and October is R)
+- one letter that corresponds to the letter for the month of birth—letters are used in alphabetical order, but only the letters A to E, H, L, M, P, R to T are used (so, January is A and October is R)
 - two digits that correspond to the day of the month of birth—in order to differentiate between genders, 40 is added to the day of birth for women
-- four digits that corresponds to the area code specific to the municipality where the person was born (country-wide codes are used for foreign countries)
+- four digits that correspond to the area code specific to the municipality where the person was born (country-wide codes are used for foreign countries)
 - one parity digit
     
 ### Checksum
@@ -7764,7 +7764,7 @@ This sensitive information type is only available for use in:
 
 - I or i
 - T or t
-- optional space, dot, hyphen or comma
+- optional space, dot, hyphen, or comma
 - 11 digits
 
 ### Checksum
@@ -7990,11 +7990,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-13 digit number
+13-digit number
 
 ### Pattern
 
-13 digit number:
+13-digit number:
 
 - one digit from one to nine
 - 12 digits
@@ -8051,16 +8051,16 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-12 digit number
+12-digit number
 
 ### Pattern
 
-12 digit number:
+12-digit number:
 
 - four digits
-- an optional space, dot or hyphen
+- an optional space, dot, or hyphen
 - four digits
-- an optional space, dot or hyphen
+- an optional space, dot, or hyphen
 - four digits
 
 ### Checksum
@@ -8886,7 +8886,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - passport no
 - passnummer
 
-## Luxemburg national identification number (non natural persons)
+## Luxemburg national identification number (non-natural persons)
 
 ### Format
 
@@ -8987,7 +8987,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Pattern
 
 12 digits:
-- six digits in the format YYMMDD which are the date of birth 
+- six digits in the format YYMMDD, which are the date of birth 
 - a dash (optional) 
 - two-letter place-of-birth code 
 - a dash (optional) 
@@ -9312,7 +9312,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 ### Format
 
-eight-nine digits containing optional spaces
+eight or nine digits containing optional spaces
 
 ### Pattern
 
@@ -9566,9 +9566,9 @@ This sensitive information type is only available for use in:
 
 - N or n
 - L or l
-- optional space, dot or hyphen
+- optional space, dot, or hyphen
 - nine digits
-- optional space, dot or hyphen
+- optional space, dot, or hyphen
 - B or b
 - two digits
 
@@ -9620,11 +9620,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-14 to 16 digit pattern with optional delimiter
+14-digit to 16-digit pattern with optional delimiter
 
 ### Pattern
 
-14 to 16 digit pattern with optional delimiter:
+14-digit to 16-digit pattern with optional delimiter:
 
 - two digits
 - an optional hyphen or space
@@ -10154,9 +10154,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Pattern
 
-- 6 digits representing date of birth in the format YYMMDD
-- 4 digits
-- 1 check digit
+- six digits representing date of birth in the format YYMMDD
+- four digits
+- one check digit
 
 ### Checksum
 
@@ -10202,7 +10202,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
    
 ## Poland passport number
-This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU Passport Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -10252,7 +10252,7 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-nine digit or 14 digit number
+9-digit or 14-digit number
 
 ### Pattern
 
@@ -10560,11 +10560,11 @@ nine digits with optional spaces
   
 ### Pattern
 
-- 3 digits
+- three digits
 - an optional space
-- 3 digits
+- three digits
 - an optional space
-- 3 digits
+- three digits
   
 ### Checksum
 
@@ -10686,10 +10686,10 @@ This sensitive information type is only available for use in:
   
 ### Pattern
 
-- 1 digit from 1-9
-- 6 digits representing date of birth (YYMMDD)
-- 2 digits which can be 01-52 or 99
-- 4 digits
+- one digit from 1-9
+- six digits representing date of birth (YYMMDD)
+- two digits, which can be 01-52 or 99
+- four digits
 
 ### Checksum
 
@@ -10836,11 +10836,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-ten digit number
+10-digit number
 
 ### Pattern
 
-ten digit number:
+10-digit number:
 
 - two digits
 - an optional space or hyphen
@@ -10898,11 +10898,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-nine digit number
+nine-digit number
 
 ### Pattern
 
-nine digit number:
+nine-digit number:
 
 - two digits
 - an optional space or hyphen
@@ -10952,11 +10952,11 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-ten digits
+10 digits
 
 ### Pattern
 
-ten consecutive digits
+10 consecutive digits
 
 ### Checksum
 
@@ -11110,10 +11110,10 @@ nine or ten digits containing optional backslash
   
 ### Pattern
 
-- 6 digits representing date of birth
+- six digits representing date of birth
 - optional slash (/)
-- 3 digits
-- 1 optional check digit
+- three digits
+- one optional check digit
   
 ### Checksum
 
@@ -11516,11 +11516,11 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 ### Pattern
 
 13 digits:
-- six digits in the format YYMMDD which are the date of birth 
+- six digits in the format YYMMDD, which are the date of birth 
 - four digits 
 - a single-digit citizenship indicator 
 - the digit "8" or "9" 
-- one digit which is a checksum digit
+- one digit, which is a checksum digit
 
 ### Checksum
 
@@ -11560,7 +11560,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 ### Pattern
 
 13 digits:
-- six digits in the format YYMMDD which are the date of birth 
+- six digits in the format YYMMDD, which are the date of birth 
 - a hyphen 
 - one digit determined by the century and gender 
 - four-digit region-of-birth code 
@@ -11828,7 +11828,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Spain social security number (SSN)
-This sensitive information type entity is included in the EU Social Security Number or Equivalent ID sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU Social Security Number or Equivalent ID sensitive information type. It's  available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -11891,9 +11891,9 @@ Non-resident Spaniards without a Spain National Identity Card
 - seven digits
 - one uppercase letter (case-sensitive) 
     
-Resident Spaniards under the age of 14 years without a Spain National Identity Card :
+Resident Spaniards under the age of 14 years without a Spain National Identity Card:
   
-- one uppercase letter"K" (case-sensitive)
+- one uppercase letter "K" (case-sensitive)
 - seven digits 
 - one uppercase letter (case-sensitive)
     
@@ -11986,9 +11986,9 @@ The string "User Id", "User ID", "uid", or "UserId" followed by the characters a
 
 - the string "User Id", "User ID", "uid", or "UserId"
 - any combination of between 1-200 lower- or uppercase letters, digits, symbols, special characters, or spaces
-- the string "Password" or "pwd" where "pwd" is not preceded by a lowercase letter
+- the string "Password" or "pwd" where "pwd" isn't preceded by a lowercase letter
 - an equal sign (=)
-- any character that is not a dollar sign ($), percent symbol (%), greater than symbol (>), at symbol (@), quotation mark ("), semicolon (;), left brace([), or left bracket ({)
+- any character that isn't a dollar sign ($), percent symbol (%), greater than symbol (>), at symbol (@), quotation mark ("), semicolon (;), left brace([), or left bracket ({)
 - any combination of 7-128 characters that are not a semicolon (;), forward slash (/), or quotation mark (")
 - a semicolon (;) or quotation mark (")
 
@@ -12000,9 +12000,9 @@ No
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_SQLServerConnectionString finds content that matches the pattern.
-- A keyword from CEP_GlobalFilter is **not** found.
-- The regular expression CEP_PasswordPlaceHolder does **not** find content that matches the pattern.
-- The regular expression CEP_CommonExampleKeywords does **not** find content that matches the pattern.
+- A keyword from CEP_GlobalFilter isn't found.
+- The regular expression CEP_PasswordPlaceHolder doesn't find content that matches the pattern.
+- The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
 ```sql
 <!---SQL Server Connection String>
@@ -12032,7 +12032,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 (Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
 
 - Password or pwd followed by 0-2 spaces, an equal sign (=), 0-2 spaces, and an asterisk (*)
---OR--
+-OR-
 - Password or pwd followed by:
     - Equal sign (=)
     - Less than symbol (<)
@@ -12110,11 +12110,11 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-ten or 12 digits and an optional delimiter
+10 or 12 digits and an optional delimiter
 
 ### Pattern
 
-ten or 12 digits and an optional delimiter:
+10 or 12 digits and an optional delimiter:
 - two digits (optional) 
 - Six digits in date format YYMMDD 
 - delimiter of "-" or "+" (optional)
@@ -12255,7 +12255,7 @@ This sensitive information type entity is only available in the EU Social Securi
 - eight digits that correspond to the birth date (YYYYMMDD) 
 - three digits that correspond to a serial number where: 
   - the last digit in the serial number indicates gender by the assignment of an odd number for male and an even number for female
-  - up to 1990, the assignment of serial number corresponded to the county where the bearer of the number was born or (if born before 1947) where he/she had been living, according to tax records, on January 1, 1947, with a special code (usually 9 as the 7th digit) for immigrants 
+  - Before 1990, the assignment of a serial number corresponded to the county where the bearer of the number was born. Or (if born before 1947) where they had been living, according to tax records, on January 1, 1947, with a special code (usually 9 as the seventh digit) for immigrants.
 - one check digit
     
 ### Checksum
@@ -12312,11 +12312,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-ten digits and a symbol in the specified pattern
+10 digits and a symbol in the specified pattern
   
 ### Pattern
 
-ten digits and a symbol:
+10 digits and a symbol:
   
 - six digits that correspond to the birth date (YYMMDD) 
 - a plus sign or minus sign
@@ -12641,11 +12641,11 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-ten letters and digits
+10 letters and digits
 
 ### Pattern
 
-ten letters and digits:
+10 letters and digits:
 - two letters (not case sensitive) 
 - eight digits
 
@@ -12694,7 +12694,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Pattern
 
 13 digits:
-- first digit is not zero  or nine 
+- first digit isn't zero or nine 
 - 12 digits
 
 ### Checksum
@@ -12780,7 +12780,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Vatandaşlık no
 
 ## U.K. driver's license number
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU Driver's License Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -12789,11 +12789,11 @@ Combination of 18 letters and digits in the specified format
 ### Pattern
 
 18 letters and digits:
-- five letters (not case sensitive) or the digit "9" in place of a letter 
-- one digit 
-- five digits in the date format MMDDY for date of birth (7th character is incremented by 50 if driver is female, i.e. 51 to 62 instead of 01 to 12)
-- two letters (not case sensitive) or the digit "9" in place of a letter 
-- five digits
+- Five letters (not case sensitive) or the digit "9" in place of a letter. 
+- One digit.
+- Five digits in the date format MMDDY for date of birth. The seventh character is incremented by 50 if driver is female; for exampe, 51 to 62 instead of 01 to 12.
+- Two letters (not case sensitive) or the digit "9" in place of a letter. 
+- Five digits.
 
 ### Checksum
 
@@ -12887,7 +12887,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Pattern
 
 10-17 digits:
-- either three or ten digits 
+- either 3 or 10 digits 
 - a space 
 - three digits 
 - a space 
@@ -12946,7 +12946,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - Birth Date 
    
 ## U.K. national insurance number (NINO)
-This sensitive information type entity is included in the EU National Identificaiton Number sensitive information type and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU National Identification Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -13158,7 +13158,7 @@ Depends on the state
 
 ### Pattern
 
-depends on the state -- for example, New York:
+depends on the state - for example, New York:
 - nine digits formatted like ddd ddd ddd will match.
 - nine digits like ddddddddd will not match.
 
@@ -13476,7 +13476,7 @@ A DLP policy is 55% confident that it's detected this type of sensitive informat
 - SSID
    
 ## U.S. / U.K. passport number
-The U.K. passport number sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
+The U.K. passport number sensitive information type entity is available in the EU Passport Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
