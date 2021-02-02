@@ -238,20 +238,12 @@
             href: data-loss-prevention-policies.md
           - name: Learn about Endpoint data loss prevention
             href: endpoint-dlp-learn-about.md
-        - name: Plan for DLP
-          items:
-            - name: Plan for DLP
-              href: dlp-plan-for-dlp.md
         - name: Get started with DLP
           items:
-            - name: Get started with DLP
-              href: dlp-get-started-with-dlp.md
             - name: Get started with Endpoint data loss prevention
               href: endpoint-dlp-getting-started.md
             - name: Configure device proxy and internet connection settings for Endpoint DLP
               href: endpoint-dlp-configure-proxy.md
-            - name: Get started with DLP policy recommendations
-              href: get-started-with-dlp-policy-recommendations.md
             - name: Get started with the default DLP policy
               href: get-started-with-the-default-dlp-policy.md
             - name: Create a DLP policy from a template
@@ -274,8 +266,6 @@
                   href: dlp-configure-endpoints-vdi.md
         - name: Use DLP
           items:
-            - name: Use DLP
-              href: dlp-use-dlp.md
             - name: DLP and Microsoft Teams
               href: dlp-microsoft-teams.md
             - name: Using Endpoint data loss prevention
