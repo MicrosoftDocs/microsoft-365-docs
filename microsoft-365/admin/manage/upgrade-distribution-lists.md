@@ -30,7 +30,7 @@ You can upgrade DLs one at a time, or several at the same time.
 
 ## Upgrade one or many distribution lists to Microsoft 365 Groups in Outlook
 
-You must be a global admin or Exchange admin to upgrade a distribution list. To upgrade to Microsoft 365 Groups, a distribution group must have an owner with a mailbox. 
+You must be a global admin or Exchange admin to upgrade a distribution list. To upgrade to Microsoft 365 Groups, a distribution group must have an owner with a mailbox.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
@@ -48,7 +48,6 @@ You must be a global admin or Exchange admin to upgrade a distribution list. To 
 
 > [!NOTE]
 > If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) for more information about digest emails.
-
 
 ## What to do if the upgrade doesn't work
 
@@ -117,7 +116,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ## FAQ about upgrading distribution lists to Microsoft 365 Groups in Outlook
 
-### Which distribution lists cannot be upgraded?
+### Which distribution lists can't be upgraded?
 
 You can only upgrade cloud-managed, simple, non-nested distribution lists. The table below lists distribution lists that **CANNOT** be upgraded.
 
@@ -136,7 +135,7 @@ You can only upgrade cloud-managed, simple, non-nested distribution lists. The t
 |Distribution lists which were converted to **RoomLists**  <br/> |No  <br/> |
 |Distribution lists where **MemberJoinRestriction** and/or **MemberDepartRestriction** is **Closed**  <br/> |No  <br/> |
 
-### How do I check which DLs are eligible for upgrade?
+### Check which DLs are eligible for upgrade
 
 If you want to check whether a DL is eligible or not, you can run the below command:
 
@@ -171,5 +170,3 @@ There are some cases in which though DL is eligible but could not be upgraded. T
 ### What happens to the DL if the upgrade from EAC fails?
 
 The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your DLs will be intact. They will work like they used to.
-
-
