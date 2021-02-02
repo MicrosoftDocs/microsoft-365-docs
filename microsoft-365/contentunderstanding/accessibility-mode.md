@@ -13,7 +13,7 @@ description: "Learn how to use accessibility mode when training a model in Share
 
 # SharePoint Syntex accessibility mode
 
-In [SharePoint Syntex](index.md), users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboarding accessibility as they navigate and label items in the document viewer.
+In [SharePoint Syntex](index.md), users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboard accessibility as they navigate and label items in the document viewer.
 
 This helps users to use their keyboards to navigate through text in the document viewer and to hear a narration of not only the selected values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional example documents. 
 
@@ -37,7 +37,7 @@ For keyboard users using accessibility mode, if you are labeling text in an exam
 - Backward arrow: Moves you backward through individual characters in a selected word.
 
 > [!NOTE]
-> If your are labeling multiple words for a single label, you need to label each word.
+> If you are labeling multiple words for a single label, you need to label each word.
 
 
 ## Narration
