@@ -23,3 +23,5 @@ description: "Learn about app threat detection and remediation."
 Content TBD.
 
 
+Feedback from Anand: We should add some details on how MAPG works with M365 Defender (previously MTP). Also, we should highlight the integration with MCAS and AAD.
+

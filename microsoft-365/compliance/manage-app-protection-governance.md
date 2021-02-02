@@ -20,11 +20,11 @@ description: "Implement Microsoft Application and Protection Governance capabili
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Microsoft Application Protection and Governance (MAPG) is a security and compliance solution for business productivity applications built by third-party vendors and published on Microsoft 365 application platform. It delivers full visibility, oversight, and governance into how these publishers and apps access, use, and share customer data in the Microsoft 365 platform through automated app-specific services and open authentication Internet protocols.
+Microsoft Application Protection and Governance (MAPG) is a security and compliance solution for business productivity applications built by third-party vendors and published on the Microsoft 365 application platform. MAPG delivers full visibility, oversight, and governance into how these publishers and their apps access, use, and share customer data in Microsoft 365 through automated app-specific services and open authentication Internet protocols.
 
-The scale of ongoing cyber-attacks incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every large company. Accelerated cloud adoption and rich application ecosystem are in constant growth. Attackers are gaining organizational footholds through applications and users are generally unaware of the risks when consenting to applications.
+The scale of ongoing cybersecurity incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every large company. Accelerated cloud adoption with Microsoft 365 and its rich application ecosystem are in constant growth. Attackers are gaining organizational footholds through applications and users are generally unaware of the risks when consenting to applications.
 
-At the same time, app developers and ISVs have not gained yet substantial Security Development Lifecycle (SDL) practices to address attacker techniques.
+At the same time, app developers and ISVs have not gained yet substantial Security Development Lifecycle (SDL) best practices to address attacker techniques.
 
 MAPG provides you with comprehensive:
 
@@ -33,7 +33,7 @@ MAPG provides you with comprehensive:
 - **Detection**: Be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used. 
 - **Remediation**: Along with automatic remediation capabilities, use remediation tools and controls in a timely manner to respond to anomalous app activity detections.
 
-Unlike other application governance products in the marketplace, MAPG is a platform-based solution that is an integral part of the Microsoft 365 app ecosystem. MAPG’s service initial focus is on published to Microsoft 365 platform OAuth-enabled apps registered with Azure AD that access data with the Graph API.  For the initial release, MAPG does not support other, non-OAuth-enabled M365 Apps, add-ins (PowerBI), or other App vendor ecosystems such as Google, Facebook, Amazon Web Services, Workplace, and Salesforce. Its focus is on M365 application platform with 3rd party published Apps.
+Unlike other application governance products in the marketplace, MAPG is a platform-based solution that is an integral part of the Microsoft 365 app ecosystem. MAPG's initial focus is on OAuth-enabled apps published to the Microsoft 365 platform that re registered with Azure AD and access data through the Graph API. For it's initial release, MAPG does not support other, non-OAuth-enabled M365 apps, add-ins (such as PowerBI), or other app vendor ecosystems such as Google, Facebook, Amazon Web Services, Workplace, and Salesforce. Its focus is on M365 application platform with 3rd party published Apps.
 
 Today, Microsoft allows developers to build cloud applications using Azure AD, Microsoft’s cloud identity platform, and other resources and access to tenant data through the Microsoft Graph. Because of MAPG's visibility, insights, and control capabilities over apps, developers have incentive to comply with publisher verification, self-attestation and Microsoft certification, and can build high-quality productivity apps that are secure and compliant.
 
@@ -62,7 +62,7 @@ Using MAPG to protect your tenant and its data from potentially malicious or ill
 
 | Capability | Description |
 |:-------|:-----|
-| App visibility and insights (add link to first article in **Visibility and insights** node) | Get a 360° view on traffic and activity of the Microsoft 365 applications in your tenant. |
-| App policies for reinforced governance (add link to first article in **App policies** node) | Create proactive or reactive app policies, which will allow you to enforce governance for your Microsoft 3635 apps. |
-| Detection and remediation (add link to first article in **Detection and remediation** node) | Based on the alerts generated through the settings on your app policies, monitor your apps for anomalous app behavior and remediate them, either automatically based on app policy settings or manually. |
+| [App visibility and insights](mapg-visibility-insights-overview.md) | Get a 360° view on traffic and activity of the Microsoft 365 applications in your tenant. |
+| [App policies for reinforced governance](mapg-app-policies-overview.md) | Create proactive or reactive app policies, which will allow you to enforce governance for your Microsoft 3635 apps. |
+| [Detection and remediation](mapg-detect-remediate-overview.md) | Based on the alerts generated through the settings on your app policies, monitor your apps for anomalous app behavior and remediate them, either automatically based on app policy settings or manually. |
 |||
