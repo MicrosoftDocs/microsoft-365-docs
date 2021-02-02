@@ -646,7 +646,8 @@
               href: collection-statistics-reports.md        
             - name: Build search queries for collections
               href: building-search-queries.md
-        
+            - name: Keyword queries and search conditions
+              href: keyword-queries-and-search-conditions.md
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
