@@ -154,7 +154,7 @@ During the preview, you must use a specific URL to access this setting in the Mi
     
     ![Option to turn on co-authoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-## How to disable co-authoring for files with sensitivity labels by contacting Support
+## Contact Support if you need to disable co-authoring for files with sensitivity labels
 
 After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test this feature with a test tenant rather than a production tenant.
 
