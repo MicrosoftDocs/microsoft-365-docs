@@ -1,5 +1,5 @@
 ---
-title: "Using Microsoft Search with Microsoft Viva"
+title: "Use Microsoft Search to find topics in Microsoft Viva"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,7 +11,7 @@ localization_priority: None
 description: "Learn how you can search for topics in Microsoft Viva."
 ---
 
-# Using Microsoft Search with Microsoft Viva
+# Use Microsoft Search to find topics in Microsoft Viva
 
 While Microsoft Viva users can find topics through topic highlights in their SharePoint sites, they can also find them through Microsoft Search. 
 

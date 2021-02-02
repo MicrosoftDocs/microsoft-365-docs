@@ -91,12 +91,25 @@ Knowledge managers can also topics directly from the Manage Topics page by selec
     
     ![Related sites](../media/knowledge-management/sites.png)</br>
 
-8. You can also add static items to the page — such as text, images, or links - by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
+8. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
+
+   ![Related topics](../media/knowledge-management/related-topic.png)</br>  
+
+    You can then give a description of how the topics are related, and select <b>Update</b>.</br>
+
+   ![Related topics description](../media/knowledge-management/related-topics-update.png)</br> 
+
+   The related topic you added will display as a connected topic.
+
+   ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
+
+
+9. You can also add static items to the page — such as text, images, or links - by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
 
    ![Canvas icon](../media/knowledge-management/webpart-library.png)</br> 
 
 
-9. Select **Publish** or **Republish** to save your changes. **Republish** will be your available option if the topic has been published previously.
+10. Select **Publish** or **Republish** to save your changes. **Republish** will be your available option if the topic has been published previously.
 
 
 ## See also
