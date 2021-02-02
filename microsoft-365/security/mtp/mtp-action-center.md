@@ -51,7 +51,6 @@ The improved Action center lists pending and completed remediation actions for y
 - If you were using the Action Center in the Microsoft Defender Security Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), try the new, unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 - If you were already using the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), you'll see several improvements in the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 
-
 The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. The Action center provides your security operations team with a "single pane of glass" experience to view and manage remediation actions.  
 
 You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
