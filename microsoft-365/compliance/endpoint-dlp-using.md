@@ -81,6 +81,16 @@ If the list mode is set to **Allow**, then users will be able to upload sensitiv
 
 You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
 
+### Additional settings for endpoint DLP
+
+#### Business justification in policy tips
+
+You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the "Block with override" setting in a DLP policy. You can choose from one the following options:
+
+- Users can either choose a built-in justificaiton, or entier their own text. (This is the default)
+- Users must choose a built-in justification. They can't enter their own.
+- Users must enter their own justification. They won't see any built-in options.
+
 
 ## Tying DLP settings together
 
