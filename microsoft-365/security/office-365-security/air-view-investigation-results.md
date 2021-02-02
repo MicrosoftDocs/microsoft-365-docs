@@ -23,7 +23,10 @@ ms.prod: m365-security
 
 # Details and results of an automated investigation in Microsoft 365
 
-When an [automated investigation](office-365-air.md) occurs in [Microsoft Defender for Office 365](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 security center. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
+When an [automated investigation](office-365-air.md) occurs in [Microsoft Defender for Office 365](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in your security center. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
+
+> [!TIP]
+> Check out the new, unified investigation page in the Microsoft 365 security center. To learn more, see [(NEW!) Unified investigation page](../mtp/mtp-autoir-results.md#new-unified-investigation-page).
 
 ## Investigation status
 
