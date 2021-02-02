@@ -110,7 +110,7 @@ Get threat intelligence from expert Microsoft security researchers. Threat Analy
 - Enhanced experience for quickly identifying and using actionable information in the reports. 
 You can access Threat analytics either from the upper left navigation bar in the Microsoft 365 security center, or from a dedicated dashboard card that shows the top threats for your organization. 
 
-Learn more about how to [track and respond to emerging threats with threat analytics](..\..\microsoft-365\security\mtp\threat-analytics.md)
+Learn more about how to [track and respond to emerging threats with threat analytics](https://docs.microsoft.com/microsoft-365/security/mtp/threat-analytics)
 
 ### Email & collaboration
 
