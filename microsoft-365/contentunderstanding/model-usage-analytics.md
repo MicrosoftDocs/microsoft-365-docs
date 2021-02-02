@@ -23,10 +23,10 @@ description: "Learn how to apply a retention label to a document understanding m
 </br>
 
 
-Your Microsoft SharePoint Syntex content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. This includes a roll-up of the following information:
+Your Microsoft SharePoint Syntex content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The <b>How your models are performing in the last 30 days</b> section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
 
-- Where your models are being applied
-- How many files are being processed over time
+- Classification by model
+- Classification by library
 - Model usage 
 
  ![Model analytics](../media/content-understanding/model-analytics.png) </br>
@@ -41,21 +41,20 @@ In regards to model usage analytics, note that:
 - Other content centers will only show model usage analytics for the models that were created in them. This gives content managers insights into usage data for only the models they are concerned with.
 
 
-## Total model percentage
+## Classification by model
 
    ![Total model percentage](../media/content-understanding/total-model-percentage.png) </br>
 
-The **Total model percentage** pie chart displays each published model as a percentage of the total files processed by all published models on the content center.
+The **Classification by model** pie chart displays which models have classified the most files. It shows each published model as a percentage of the total files processed by all published models on the content center.
 
 Each model also shows the **Completeness Rate**, the percentage of uploaded files that were successfully analyzed by the model. A low completeness rate may mean that there are issues with either the model or the files that are being analyzed.
 
-## Files processed over time
+## Classification by library
 
    ![Files processed](../media/content-understanding/files-processed-over-time.png) </br>
 
-The **Files processed over time** bar chart shows you not only the number of files processed over time for each model, but also shows you the document libraries to which the model was applied.
+The **Classification by library** bar chart helps you determine the effectiveness of content understanding in your organization.  It shows you not only the number of files processed over time for each model, but by selecting a column in chart, it will also show you the document libraries to which the model was applied.
 
-   ![Bar chart](../media/content-understanding/bar-chart-models.png) </br>
 
 ## Model usage
 
@@ -66,12 +65,11 @@ The Model Usage list will show usage analytics for the models created through th
 
 Each model in the model usage list will show the usage data:
 
-- Classified item count:
-- Not processed item count:
-- Average confidence score:
-- Target list URL:
+- Classified item count: Number of files processed by the model.
+- Average confidence score: Average accuracy score of the model when run against files.
+- Target list URL: The SharePoint document library to which the model is applied.
 
- ![Model usage](../media/content-understanding/model-usage.png) </br>
+
 
 ## See Also
 [Create a classifier](create-a-classifier.md)
