@@ -2227,21 +2227,15 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - A keyword from Keyword_brazil_rg is found.
 - The checksum passes.
 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_brazil_rg finds content that matches the pattern.
-- The checksum passes.
 
 ```xml
-<!-- Brazil National ID Card (RG) -->
-<Entity id="486de900-db70-41b3-a886-abdf25af119c" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_brazil_rg"/>
-     <Match idRef="Keyword_brazil_rg"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Func_brazil_rg"/>
-  </Pattern>
-</Entity>
+      <!-- Brazil National ID Card (RG) -->
+      <Entity id="486de900-db70-41b3-a886-abdf25af119c" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_brazil_rg" />
+          <Match idRef="Keyword_brazil_rg" />
+        </Pattern>
+      </Entity>
 ```
 
 ### Keywords
@@ -8403,6 +8397,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - An optional space or dash 
 - Four digits 
 - An optional space or dash 
+- Three digits
 - The final digit which is the check digit
 
 ### Checksum
