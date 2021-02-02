@@ -1,9 +1,10 @@
 ---
-title: 'Manage topics in the Topic center in Microsoft Viva '
+title: 'Manage topics in the Topic center in Microsoft Viva Topics'
 description: 'How to manage topics in the Topic Center.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,7 +12,6 @@ search.appverid:
 ms.collection: 
     - enabler-strategic 
     - m365initiative-topics
-ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 
 ---
@@ -24,7 +24,7 @@ localization_priority: None
 </br>
 
 
-In the Topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in SharePoint source locations as specified by your knowledge admin.  
+In the Viva Topics Topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in SharePoint source locations as specified by your knowledge admin.  
 
    ![Topic Center](../media/knowledge-management/topic-center.png) </br> 
 

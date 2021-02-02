@@ -1,9 +1,10 @@
 ---
-title: 'Create a new topic in Microsoft Viva'
-description: 'How to create a new topic in Microsoft Viva.'
+title: 'Create a new topic in Microsoft Viva Topics'
+description: 'How to create a new topic in Microsoft Viva Topics.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -19,7 +20,7 @@ localization_priority: Normal
 
 # Create a new topic 
 
-In Microsoft Viva, you can create a new topic if one was not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
+In Viva Topics, you can create a new topic if one was not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
 
 > [!Note] 
 > While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that information in a manually created topic is visible to all users who have permissions to view the topic. 
@@ -32,7 +33,7 @@ To create a new topic, you need to:
 - Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Knowledge Network topic permissions settings. 
 
 > [!Note] 
-> Users who have permission to manage topics in the Topic center (knowledge managers) already have permissions to create and edit topics.
+> Users who have permission to manage topics in the topic center (knowledge managers) already have permissions to create and edit topics.
 
 ## To create a new topic:
 

@@ -1,8 +1,9 @@
 ---
-title: "Topic Experiences security trimming (Preview)"
+title: "Microsoft Viva Topics security trimming"
 ms.author: efrene
 author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: 
@@ -10,16 +11,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: enabler-strategic
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Overview of how security is used to view topics."
 ---
 
-# Topic Experiences security trimming (Preview)
+# Microsoft Viva Topics security trimming 
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
-
-Topic experiences users will not be able to view information in topics that their existing Office 365 permissions prevents them from seeing. Everything a user sees on a topic page (for example, SharePoint sites, documents, files) will be information they are already allowed to see. Topic experiences does not make changes to any existing permissions.
+Viva Topics users will not be able to view information in topics that their existing Office 365 permissions prevents them from seeing. Everything a user sees on a topic page (for example, SharePoint sites, documents, files) will be information they are already allowed to see. Viva Topics does not make changes to any existing permissions.
 
 ## Why two users may have different views of the same topic
 
@@ -33,7 +30,7 @@ However, when User 2 looks at the same Neptune topic page, her view differs from
 
 ![Neptune topic for user 2](../media/knowledge-management/user1-topic-view.png) </br> 
 
-The difference in what users may see on the same topic is because users may not have the Office 365 permissions to view a related site or file.  Topic experiences respects the permissions that are set on items in a topic, and cannot change access to them. In our example, User 1 is not able to view the *DG-2000 Product Overview* file in their topic page for Neptune because User 1 does not have Office 365 permissions to view the file.
+The difference in what users may see on the same topic is because users may not have the Office 365 permissions to view a related site or file.  Viva Topics respects the permissions that are set on items in a topic, and cannot change access to them. In our example, User 1 is not able to view the *DG-2000 Product Overview* file in their topic page for Neptune because User 1 does not have Office 365 permissions to view the file.
 
 If a user is not able to see enough information in a topic for it to be useful, the topic will not be available to the user. In this instance, the user will not see the highlighted topic. However, a different user who has permissions to more information in the topic for it to be useful, will be able to see the topic.
 

@@ -1,9 +1,10 @@
 ---
-title: 'Edit an existing topic in Microsoft Viva '
-description: 'How to edit an existing topic in Microsoft Viva.'
+title: 'Edit an existing topic in Microsoft Viva Topics '
+description: 'How to edit an existing topic in Microsoft Viva Topics.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
@@ -12,7 +13,7 @@ ms.collection:
     - m365initiative-topics
 ms.service: 
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
+
 
 ---
 
@@ -24,14 +25,15 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 </br>
 
-In Microsoft Viva, you can edit an existing topic. You may need to do this if you want to correct or add additional information to an existing topic page. 
+In Viva Topics, you can edit an existing topic. You may need to do this if you want to correct or add additional information to an existing topic page. 
 
-When you edit a topic, the information that you add to a topic (instead of added by AI) will be visible to all users who have permission to view the topic.
+> [!Note] 
+> While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that information that you manually add when editing an existing topic is visible to all users who have permissions to view the topic. 
 
 ## Requirements
 
 To edit an existing topic, you need to:
-- Have a Topic Experiences license.
+- Have a Viva license.
 - Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Knowledge Network topic permissions settings. 
 
 > [!Note] 
@@ -47,7 +49,7 @@ Knowledge managers can also topics directly from the Manage Topics page by selec
 
    ![Edit topic in Manage Topics](../media/knowledge-management/manage-topics-edit.png) </br> 
 
-### Edit a topic page
+### To edit a topic page
 
 1. On the topic page, select **Edit**. This allows you to make changes as you need to the topic page.
 

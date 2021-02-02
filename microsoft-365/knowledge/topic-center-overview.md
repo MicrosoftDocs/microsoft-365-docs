@@ -1,9 +1,10 @@
 ---
-title: 'Topic center overview (Preview) '
+title: 'Topic center overview '
 description: 'Learn about the Topic Center.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,20 +16,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 
 ---
-# Topic center overview (Preview)
+# Topic center overview
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-The topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Topic Experiences setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
+In Viva Topics, the topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Topic Experiences setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
 
-The Topic center has a default home page (My topics) where all Topic Experience users can see the topics to which they have a connection. 
+The topic center has a default home page (My topics) where all Topic Experience users can see the topics to which they have a connection. 
 
-While all licensed users who can view topics will have access to the Topic center, knowledge managers will also be able to manage topics through the **Manage topics** page. The Manage topics tab will only display to users who have the **Manage topics** permissions. 
+While all licensed users who can view topics will have access to the topic center, knowledge managers will also be able to manage topics through the **Manage topics** page. The Manage topics tab will only display to users who have the **Manage topics** permissions. 
 
 ## Where is my Topic center
 
-The Topic center is created during Topic Experiences setup. After setup completes, an admin can find the URL on the [Topic center management page](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings).
+The topic center is created during Viva Topics setup. After setup completes, an admin can find the URL on the [Topic center management page](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings).
 
 
 1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
@@ -51,7 +50,7 @@ The Topic center is created during Topic Experiences setup. After setup complete
 </br>
 
 
-On the Topic center home page, you can see the topics in your organization to which you have a connection.
+On the topic center home page, you can see the topics in your organization to which you have a connection.
 
 - Suggested connections - You will see suggested topics listed under **We've listed you on these topics. Did we get it right?**. These are topics where your connection to the topic has been suggested through AI. For example, you may be the owner of a related file or site. Suggested topics will ask you to confirm you connection to the topic.
 
