@@ -39,11 +39,10 @@ The improved **Microsoft 365 security center** ([https://security.microsoft.com]
 
 Microsoft 365 security center brings together functionality from existing Microsoft security portals, like Microsoft Defender Security Center and the Office 365 Security & Compliance center. The security center emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. This center includes:
 
-- **[Microsoft Defender for Office 365](../office-365-security/office-365-atp.md)** 
- helps organizations secure their enterprise with a comprehensive set of prevention, detection, investigation and hunting features to protect email and other Office 365 resources. 
+- **[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
 - **[Microsoft 365 Defender](microsoft-threat-protection.md)**
-is part of Microsoft’s XDR solution and leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, building a complete picture of each attack in a single dashboard. With this breadth and depth of clarity defenders can now focus on critical threats and hunt for sophisticated breaches, trusting that the powerful automation in Microsoft 365 Defender detects and stops attacks anywhere in the kill chain and returns the organization to a secure state.
+is part of Microsoft’s *Extended Detection and Response* (XDR) solution that leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, and build a picture of an attack on a single dashboard.
 
 If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft Defender Security Center, see:
 
@@ -159,7 +158,8 @@ Keep exploring the features and capabilities in the Microsoft 365 security cente
 - [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
 - [Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
-- [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)- [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) and [create a payload for training your teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
+- [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) and [create a payload for training your teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
 ### Related information
 - [Microsoft 365 security center](overview-security-center.md)
