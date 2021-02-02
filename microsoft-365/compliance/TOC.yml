@@ -154,8 +154,7 @@
           href: sensitivity-labels-coauthoring.md
         - name: Apply a sensitivity label to content automatically
           href: apply-sensitivity-label-automatically.md
-        - name: View label usage with label analytics
-          href: label-analytics.md
+
         - name: Use sensitivity labels with teams, groups, and sites
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
