@@ -46,7 +46,7 @@ The following table lists email message properties that can be searched by using
 > [!NOTE]
 > When searching email properties, it's not possible to search for items in which the specified property is empty or blank. For example, using the *property:value* pair of **subject:""** to search for email messages with an empty subject line will return zero results. This also applies when searching site and contact properties.
   
-|**Property**|**Property description**|**Examples**|**Search results returned by the examples**|
+| Property | Property description | Examples | Search results returned by the examples |
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|The names of files attached to an email message.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |Messages that have an attached file named annualreport.ppt. In the second example, using the wildcard returns messages with the word "annual" in the file name of an attachment. The third example returns all attachments with the pptx file extension.|
 |Bcc|The Bcc field of an email message.<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|All examples return messages with Pilar Pinilla included in the Bcc field.|
@@ -88,7 +88,7 @@ The following table lists some of the SharePoint and OneDrive for Business prope
   
 For a complete list of SharePoint properties that can be searched, see [Overview of crawled and managed properties in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Properties marked with a **Yes** in the **Queryable** column can be searched. 
   
-|**Property**|**Property description**|**Example**|**Search results returned by the examples**|
+| Property | Property description | Example | Search results returned by the examples |
 |:-----|:-----|:-----|:-----|
 |Author|The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author. Be sure to use the user's display name for this property.|`author:"Garth Fort"`|All documents that are authored by Garth Fort.|
 |ContentType|The SharePoint content type of an item, such as Item, Document, or Video.|`contenttype:document`|All documents would be returned.|
@@ -114,7 +114,7 @@ The following table lists the contact properties that are indexed and that you c
 > [!TIP]
 > To search for values that contain spaces or special characters, use double quotation marks ("  ") to contain the phrase; for example, `businessaddress:"123 Main Street"`.
   
-|**Property**|**Property description**|
+| Property | Property description |
 |:-----|:-----|
 |BusinessAddress|The address in the **Business Address** property. The property is also called the **Work** address on the contact properties page.|
 |BusinessPhone|The phone number in any of the **Business Phone** number properties.|
@@ -162,7 +162,7 @@ For more information about creating queries using the `SensitiveType` property, 
 
 Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define more-precise searches by including or excluding specific words in the search query. Other techniques, such as using property operators (such as `>=` or `..`), quotation marks, parentheses, and wildcards, help you refine a search query. The following table lists the operators that you can use to narrow or broaden search results. 
   
-|**Operator**|**Usage**|**Description**|
+| Operator | Usage | Description |
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|Returns items that include all of the specified keywords or  `property:value` expressions. For example,  `from:"Ann Beebe" AND subject:northwind` would return all messages sent by Ann Beebe that contained the word northwind in the subject line. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> The query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
@@ -205,7 +205,7 @@ You can add conditions to a search query to narrow a search and return a more re
 
 Create a condition using common properties when searching mailboxes and sites in the same search. The following table lists the available properties to use when adding a condition.
   
-|**Condition**|**Description**|
+| Condition | Description |
 |:-----|:-----|
 |Date|For email, the date a message was received by a recipient or sent by the sender. For documents, the date a document was last modified.|
 |Sender/Author|For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the **OR** operator.|
@@ -218,7 +218,7 @@ Create a condition using common properties when searching mailboxes and sites in
 
 Create a condition using mail properties when searching mailboxes or public folders. The following table lists the email properties that you can use for a condition. These properties are a subset of the email properties that were previously described. These descriptions are repeated for your convenience.
   
-|**Condition**|**Description**|
+| Condition | Description |
 |:-----|:-----|
 |Message kind| The message type to search. This is the same property as the Kind email property. Possible values:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |Participants|All the people fields in an email message. These fields are From, To, Cc, and Bcc.|
@@ -235,7 +235,7 @@ Create a condition using mail properties when searching mailboxes or public fold
 
 Create a condition using document properties when searching for documents on SharePoint and OneDrive for Business sites. The following table lists the document properties that you can use for a condition. These properties are a subset of the site properties that were previously described. These descriptions are repeated for your convenience.
   
-|**Condition**|**Description**|
+| Condition | Description |
 |:-----|:-----|
 |Author|The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author.|
 |Title|The title of the document. The Title property is metadata that's specified in Office documents. It's different than the file name of the document.|
@@ -248,7 +248,7 @@ Create a condition using document properties when searching for documents on Sha
 
 When you add a condition, you can select an operator that is relevant to type of property for the condition. The following table describes the operators that are used with conditions and lists the equivalent that is used in the search query.
   
-|**Operator**|**Query equivalent**|**Description**|
+| Operator | Query equivalent | Description |
 |:-----|:-----|:-----|
 |After|`property>date`|Used with date conditions. Returns items that were sent, received, or modified after the specified date.|
 |Before|`property<date`|Used with date conditions. Returns items that were sent, received, or modified before the specified date.|
