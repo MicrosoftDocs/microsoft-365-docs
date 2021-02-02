@@ -31,8 +31,6 @@ Used when you want to send email to group of people without having to type each 
 
 Distribution groups are sometimes called distribution lists.
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/e8747233-4f1c-4bf4-81cf-2a4ea9ccd80d?autoplay=false]
-  
 ## Create a distribution group (list)
 
 ::: moniker range="o365-worldwide"
