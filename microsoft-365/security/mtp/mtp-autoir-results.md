@@ -45,7 +45,6 @@ The investigation page has recently been updated to include information across y
 | The **Automated Investigations** list in the Microsoft Defender Security Center ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) |  Visit the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), and then open an investigation details view from an [incident](#open-an-investigation-from-an-incident-details-page) or the [Action center](#select-an-item-in-the-action-center). |
 | The Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) | Try the new, unified investigation details view from an [incident](#open-an-investigation-from-an-incident-details-page) or the [Action center](#select-an-item-in-the-action-center). |
 
-The unified investigation page provides details for an automated investigation, including its triggering alerts, impacted assets, pieces of evidences and their resulting verdicts, and remediation status, entities, investigation log as well as allows approving pending remediation actions for incriminated evidence.
 
 ## Open the investigation details view
 
