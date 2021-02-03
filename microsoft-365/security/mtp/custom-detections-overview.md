@@ -36,6 +36,7 @@ Custom detections provide:
 - Alerts for rule-based detections built from advanced hunting queries
 - Automatic response actions
 
-## Related topic
+## See also
 - [Create and manage custom detection rules](custom-detection-rules.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
+- [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mdatp.md)
