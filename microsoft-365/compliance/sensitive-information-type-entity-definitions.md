@@ -347,18 +347,18 @@ nine letters and digits
 
 nine letters and digits: 
 
-- two digits or letters (not case sensitive) 
+- two digits or letters (not case-sensitive) 
 - two digits 
-- five digits or letters (not case sensitive)
+- five digits or letters (not case-sensitive)
 
 OR
 
-- one to two optional letters (not case sensitive) 
+- one to two optional letters (not case-sensitive) 
 - four to nine digits
 
 OR
 
-- nine digits or letters (not case sensitive)
+- nine digits or letters (not case-sensitive)
 
 ### Checksum
 
@@ -547,7 +547,7 @@ A letter followed by seven digits
 
 ### Pattern
 
-A letter (not case sensitive) followed by seven digits
+A letter (not case-sensitive) followed by seven digits
 
 ### Checksum
 
@@ -885,7 +885,7 @@ One letter followed by an optional space and seven digits
 
 A combination of one letter, seven digits, and one space:
   
-- one letter (not case sensitive)
+- one letter (not case-sensitive)
 - one space (optional)
 - seven digits
     
@@ -974,7 +974,7 @@ Yes
   
 ### Definition
 
-A DLP policy is has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern. 
 - a keyword from  `Keywords_austria_eu_ssn_or_equivalent` is found. 
     
@@ -2249,8 +2249,8 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - número de rregistro
 - registro de Iidentidade 
 - registro geral
-- RG (this keyword is case sensitive) 
-- RIC (this keyword is case sensitive) 
+- RG (this keyword is case-sensitive) 
+- RIC (this keyword is case-sensitive) 
 
 
 ## Bulgaria driver's license number
@@ -3169,7 +3169,7 @@ seven to eight digits plus delimiters:
 - an optional period 
 - three digits 
 - a dash 
-- one digit or letter (not case sensitive) which is a check digit
+- one digit or letter (not case-sensitive) which is a check digit
 
 ### Checksum
 
@@ -5228,8 +5228,8 @@ two letters followed by seven digits
 ### Pattern
 
 Pattern must include all of the following:
-- one letter (not case sensitive) from this set of possible letters: abcdefghjklmnprstux, which is a registrant code 
-- one letter (not case sensitive), which is the first letter of the registrant's last name or digit '9'
+- one letter (not case-sensitive) from this set of possible letters: abcdefghjklmnprstux, which is a registrant code 
+- one letter (not case-sensitive), which is the first letter of the registrant's last name or digit '9'
 - seven digits, the last of which is the check digit
 
 ### Checksum
@@ -6451,7 +6451,7 @@ combination of nine letters and digits
 
 ### Pattern
 combination of nine letters and digits:
-- two letters (not case sensitive) 
+- two letters (not case-sensitive) 
 - seven digits
 
 ### Checksum
@@ -6773,7 +6773,7 @@ nine digits and letters
 
 nine digits and letters:
 - two digits 
-- two letters (not case sensitive) 
+- two letters (not case-sensitive) 
 - five digits
 
 ### Checksum
@@ -7049,7 +7049,7 @@ combination of 11 digits and letters
 
 ### Pattern
 
-11 digits and letters (not case sensitive):
+11 digits and letters (not case-sensitive):
 - a digit or letter 
 - two digits 
 - six digits or letters 
@@ -7240,7 +7240,7 @@ from 1 April 1987 until 31 October 2010: 10 digits
 ### Pattern
 
 since 1 November 2010:
-- one letter (not case sensitive) 
+- one letter (not case-sensitive) 
 - eight digits
 
 from 1 April 1987 until 31 October 2010:
@@ -7934,7 +7934,7 @@ Combination of 8-9 letters and numbers plus optional parentheses around the fina
 ### Pattern
 
 Combination of 8-9 letters:
-- 1-2 letters (not case sensitive) 
+- 1-2 letters (not case-sensitive) 
 - Six digits 
 - The final character (any digit or the letter A), which is the check digit and is optionally enclosed in parentheses.
 
@@ -8528,8 +8528,8 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10 letters or digits:
-- Three letters (not case sensitive) 
-- A letter in C, P, H, F, A, T, B, L, J, G (not case sensitive)
+- Three letters (not case-sensitive) 
+- A letter in C, P, H, F, A, T, B, L, J, G (not case-sensitive)
 - A letter
 - Four digits 
 - A letter that is an alphabetic check digit
@@ -8854,7 +8854,7 @@ For IPv6, a DLP policy is 95% confident that it's detected this type of sensitiv
 
 #### Keyword_ipaddress
 
-- IP (this keyword is case sensitive)
+- IP (this keyword is case-sensitive)
 - ip address 
 - ip addresses
 - internet protocol
@@ -9036,7 +9036,7 @@ Two letters or digits followed by seven digits with no spaces or delimiters
 
 Two letters or digits followed by seven digits:
   
-- Two digits or letters (not case sensitive)
+- Two digits or letters (not case-sensitive)
 - Seven digits
     
 ### Checksum
@@ -9123,11 +9123,11 @@ New format (1 January 2013 and after):
 
 Old format (until 31 December 2012):
 - seven digits 
-- one to two letters (not case sensitive) 
+- one to two letters (not case-sensitive) 
 
 New format (1 January 2013 and after):
 - seven digits 
-- a letter (not case sensitive) which is an alphabetic check digit 
+- a letter (not case-sensitive) which is an alphabetic check digit 
 - An optional letter in the range A-I, or “W”
 
 ### Checksum
@@ -9321,10 +9321,10 @@ a combination of 10 letters and digits
 ### Pattern
 
 a combination of 10 letters and digits:
-- one letter (not case sensitive) 
-- the letter "A" or "V" (not case sensitive) 
+- one letter (not case-sensitive) 
+- the letter "A" or "V" (not case-sensitive) 
 - seven digits
-- one letter (not case sensitive)
+- one letter (not case-sensitive)
 
 ### Checksum
 
@@ -9455,7 +9455,7 @@ two letters or digits followed by seven digits with no spaces or delimiters
 
 two letters or digits followed by seven digits:
   
-- two digits or letters (not case sensitive)
+- two digits or letters (not case-sensitive)
 - seven digits
     
 ### Checksum
@@ -9893,7 +9893,7 @@ two letters followed by seven digits
 
 ### Pattern
 
-two letters (not case sensitive) followed by seven digits
+two letters (not case-sensitive) followed by seven digits
 
 ### Checksum
 
@@ -9944,9 +9944,9 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 12 letters and digits:
-- two letters (not case sensitive)
+- two letters (not case-sensitive)
 - eight digits 
-- two letters (not case sensitive)
+- two letters (not case-sensitive)
 
 ### Checksum
 
@@ -10399,7 +10399,7 @@ two letters or digits followed by seven digits with no spaces or delimiters
 
 two letters or digits followed by seven digits:
   
-- two digits or letters (not case sensitive)
+- two digits or letters (not case-sensitive)
 - seven digits
     
 ### Checksum
@@ -10730,7 +10730,7 @@ eight digits or letters with no spaces or delimiters
   
 ### Pattern
 
-eight digits or letters (not case sensitive)
+eight digits or letters (not case-sensitive)
   
 ### Checksum
 
@@ -11043,7 +11043,7 @@ eight digits or letters with no spaces or delimiters
   
 ### Pattern
 
-eight digits or letters (not case sensitive)
+eight digits or letters (not case-sensitive)
   
 ### Checksum
 
@@ -12363,7 +12363,7 @@ three letters, a space (optional), and four digits
 
 ### Pattern
 
-- three letters (not case sensitive) except 'I' and 'O'
+- three letters (not case-sensitive) except 'I' and 'O'
 - a space (optional) 
 - four digits
 
@@ -12745,7 +12745,7 @@ three letters and six digits
 
 ### Pattern
 
-three letters (not case sensitive) followed by six digits
+three letters (not case-sensitive) followed by six digits
 
 ### Checksum
 
@@ -12845,7 +12845,7 @@ two letters and seven digits
 
 ### Pattern
 
-Two letters (not case sensitive) followed by seven digits
+Two letters (not case-sensitive) followed by seven digits
 
 ### Checksum
 
@@ -13262,7 +13262,7 @@ one letter followed by six digits with no spaces or delimiters
 
 one letter followed by six digits:
   
-- one letter (not case sensitive)
+- one letter (not case-sensitive)
 - six digits
     
 ### Checksum
@@ -13922,7 +13922,7 @@ nine letters and digits
 ### Pattern
 
 - nine letters and digits:
-- the letter "F", "G", "S", or "T" (not case sensitive) 
+- the letter "F", "G", "S", or "T" (not case-sensitive) 
 - seven digits 
 - an alphabetic check digit
 
@@ -14237,7 +14237,7 @@ one digit or letter followed by seven digits with no spaces or delimiters
   
 ### Pattern
 
-one digit or letter (not case sensitive) followed by seven digits
+one digit or letter (not case-sensitive) followed by seven digits
   
 ### Checksum
 
@@ -15850,7 +15850,7 @@ four letters followed by 5-31 letters or digits
 ### Pattern
 
 four letters followed by 5-31 letters or digits:
-- four-letter bank code (not case sensitive) 
+- four-letter bank code (not case-sensitive) 
 - an optional space 
 - 4-28 letters or digits (the Basic Bank Account Number (BBAN)) 
 - an optional space 
@@ -15997,7 +15997,7 @@ one letter (in English) followed by nine digits
 ### Pattern
 
 one letter (in English) followed by nine digits:
-- one letter (in English, not case sensitive) 
+- one letter (in English, not case-sensitive) 
 - the digit "1" or "2" 
 - eight digits
 
@@ -16105,7 +16105,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10 letters and digits:
-- two letters (not case sensitive) 
+- two letters (not case-sensitive) 
 - eight digits
 
 ### Checksum
@@ -16248,10 +16248,10 @@ Combination of 18 letters and digits in the specified format
 ### Pattern
 
 18 letters and digits:
-- Five letters (not case sensitive) or the digit "9" in place of a letter. 
+- Five letters (not case-sensitive) or the digit "9" in place of a letter. 
 - One digit.
 - Five digits in the date format MMDDY for date of birth. The seventh character is incremented by 50 if driver is female; for exampe, 51 to 62 instead of 01 to 12.
-- Two letters (not case sensitive) or the digit "9" in place of a letter. 
+- Two letters (not case-sensitive) or the digit "9" in place of a letter. 
 - Five digits.
 
 ### Checksum
@@ -16303,7 +16303,7 @@ two letters followed by 1-4 digits
 
 ### Pattern
 
-two letters (not case sensitive) followed by 1-4 numbers
+two letters (not case-sensitive) followed by 1-4 numbers
 
 ### Checksum
 
@@ -16415,9 +16415,9 @@ seven characters or nine characters separated by spaces or dashes
 
 two possible patterns:
 
-- two letters (valid NINOs use only certain characters in this prefix, which this pattern validates; not case sensitive)
+- two letters (valid NINOs use only certain characters in this prefix, which this pattern validates; not case-sensitive)
 - six digits
-- either 'A', 'B', 'C', or 'D' (like the prefix, only certain characters are allowed in the suffix; not case sensitive)
+- either 'A', 'B', 'C', or 'D' (like the prefix, only certain characters are allowed in the suffix; not case-sensitive)
 
 OR
 
