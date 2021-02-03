@@ -22,7 +22,7 @@ Viva Topics users can't view information in topics that their existing Office 36
 
 When a topic is created through AI or manual curation, it can contain a description of the topic, alternative names, people associated with the topic, as well as sites, pages, and files related to the topic. When this information is viewed on a topic page, it is possible that two users who are viewing the same topic my not see the same information.
   
-For example, when User 1 views the Neptune topic page, the following is what they might see.
+For example, when User 1 views the Neptune topic page, they might see this view of the topic page.
 
 ![Neptune topic for user 1](../media/knowledge-management/user2-topic-view.png) </br> 
 

@@ -30,7 +30,7 @@ Topic viewers are users in your organization who can view highlighted topics in 
 
 For topic highlights and their topic pages to be visible to a topic viewer, the user must:
 -	[Be assigned a Viva Topics license](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) by their Microsoft 365 admin.
--	Be allowed to have visibility to topics. This is done by the knowledge admin in the Viva Topics settings page in the Microsoft 365 admin center.
+-	Be allowed to have visibility to topics. This task is done by the knowledge admin in the Viva Topics settings page in the Microsoft 365 admin center.
 
 
 ## Topic contributors
@@ -41,33 +41,33 @@ Users who have topic contributor permissions will see an **Edit** button display
 
 A topic contributor can also create and publish a new topic through their Topic Center site.
 
-To be able to create and edit a topic, the user must:
+To create and edit a topic, the user must:
 
 -	[Be assigned a Viva Topics license](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) by their Microsoft 365 admin.
--	[Be assigned permissions to create and edit topics](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center). This is done by the knowledge admin in the Viva Topics settings page in the Microsoft 365 admin center.
+-	[Be assigned permissions to create and edit topics](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center). This task is done by the knowledge admin in the Viva Topics settings page in the Microsoft 365 admin center.
 
 ## Knowledge managers
 
-Knowledge managers are users who manage topics in your organization.  Topic management is done through the Manage Topics page in the topic center, and it is only visible to Knowledge managers.
+Knowledge managers are users who manage topics in your organization.  Topic management is done through the Manage Topics page in the topic center, and it's only visible to Knowledge managers.
 
-In the Manage Topics page, a knowledge managers can do the following tasks:
+In the Manage Topics page, knowledge managers can do the following tasks:
 -	View all AI-suggested topics.
--	Review topics to confirm that they are valid.
+-	Review topics to confirm that they're valid.
 -	Remove topics that you don’t want to make visible to your users.
 
 
 Additionally, a knowledge manager can edit existing topics or create new ones.
 
-To be able to manage topics, the user must:
+To manage topics, the user must:
 -	[Be assigned a Viva Topics license](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) by their Microsoft 365 admin.
--	[Be assigned permissions to manage topics](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)). This is done by the knowledge admin in the Viva Topics settings page in the Microsoft 365 admin center.
+-	[Be assigned permissions to manage topics](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)). This task is done by the knowledge admin in the Viva Topics settings page in the Microsoft 365 admin center.
 
 Users who have a good overall knowledge of your business can be good candidates for the knowledge manager role. Such people might not only have the knowledge to know if topics are valid or not, but might also know people within the company who are related to those topics.
 
 
 ## Knowledge admins
 
-Knowledge admins are admins who set up and configure Viva Topics in your Microsoft 365 environment. They also manage the Viva Topics settings after set up has completed. The knowledge admin role requires you to be a Microsoft 365 global or SharePoint admin since setup and management is done in the Microsoft 365 admin center.
+Knowledge admins are admins who set up and configure Viva Topics in your Microsoft 365 environment. They also manage the Viva Topics settings after set up has completed. The knowledge admin role requires you to be a Microsoft 365 global or SharePoint admin since setup and management are done in the Microsoft 365 admin center.
 During setup, knowledge admins can configure Viva Topics to do the following:
 
 -	Select which SharePoint sites will be crawled for topics.
