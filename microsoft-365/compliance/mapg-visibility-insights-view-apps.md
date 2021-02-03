@@ -34,3 +34,8 @@ The MAPG dashboard has the following sections:
 - Top apps: displays a list of the top apps in key app categories (reference Table 2:  Top Apps Categories and their explanation)
 - Improve your app protection and governance:  Highlights recommended actions such as policy creation or shortcut to view apps in MCAS.
 
+## Key tasks
+
+- Admins can quickly gain meaningful insights on their M365 application ecosystem and efficiently navigate to top tasks
+- Admins can gain deep insights on M365 apps in their environment
+
