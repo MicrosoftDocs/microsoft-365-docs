@@ -16,7 +16,7 @@ ROBOTS: NOINDEX
 
 # Get started driving adoption of Microsoft Viva Topics
 
-Before you get started with adoption, you need to understand the concepts involved in knowledge management and Viva Topics. The following diagram shows what happens during topic discovery and curation: 
+Before you get started with adoption, you need to understand the concepts involved in knowledge management and Viva Topics. The following diagram shows what happens during topic discovery and curation:
 
 ![Viva Topics architecture](../media/knowledge-management/topic-management-architecture.png)
 
