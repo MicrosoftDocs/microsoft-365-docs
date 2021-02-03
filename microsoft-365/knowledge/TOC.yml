@@ -1,21 +1,49 @@
-    - name: Get started with knowledge management
+    - name: Get started with Topic experiences
       items: 
-        - name: Knowledge management overview
-          href: knowledge-management-overview.md 
-        - name: Topic center overview 
-          href: topic-center-overview.md 
-        - name: Work with topics in the topic center
-          href: work-with-topics.md   
-        - name: Give users permissions to the topic center
-          href: give-user-permissions-to-the-topic-center.md 
- 
+        - name: Introduction to Topic experiences 
+          href: index.md         
+        - name: Topic experiences overview
+          href: topic-experiences-overview.md 
+        - name: Topic experiences discovery and curation
+          href: topic-experiences-discovery-curation.md           
+        - name: Topic experiences roles 
+          href: topic-experiences-roles.md 
+        - name: Get your environment ready 
+          href: topic-experiences-get-ready.md           
 
-    
-    - name: Get started with setup
+    - name: Setup and administration
       items:
 
-        - name: Set up knowledge management
-          href: set-up-knowledge-network.md
-        - name: Manage your knowledge management network
-          href: manage-knowledge-network.md
+        - name: Topic security
+          href: topic-experiences-security-privacy.md
+        - name: Plan topic experiences
+          href: plan-topic-experiences.md
+        - name: Set up topic experiences
+          href: set-up-topic-experiences.md
+        - name: Manage topic discovery
+          href: topic-experiences-discovery.md
+        - name: Manage topic visibility
+          href: topic-experiences-knowledge-rules.md
+        - name: Manage topic permissions
+          href: topic-experiences-user-permissions.md
+        - name: Change the topic center name
+          href: topic-experiences-administration.md
     
+    
+    - name: Work with topics
+      items:
+        - name: Topic center overview
+          href: topic-center-overview.md    
+        - name: Manage topics in the topic center
+          href: manage-topics.md 
+        - name: Create a new topic
+          href: create-a-topic.md   
+        - name: Edit a topic
+          href: edit-a-topic.md                   
+        - name: Security trimming 
+          href: topic-experiences-security-trimming.md  
+
+    - name: Adoption
+      items: 
+        - name: Get started driving adoption
+          href: topics-adoption-getstarted.md

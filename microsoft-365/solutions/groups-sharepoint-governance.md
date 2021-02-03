@@ -10,6 +10,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
@@ -42,6 +43,10 @@ Some settings for Microsoft 365 Groups and SharePoint in Microsoft 365, particul
 |Group expiration policy|Specifies a time period after which groups that are not actively used will be automatically deleted.|When the group is deleted, the associated SharePoint site is also deleted. Content protected by retention policies is retained.|Use expiration policies to avoid sprawl of unused groups and sites.|
 
 ## Related topics
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
 
 [Collaborating with people outside your organization](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 

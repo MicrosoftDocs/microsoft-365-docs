@@ -2,9 +2,9 @@
 title: "Configure shared mailbox settings"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -77,7 +78,7 @@ You do not need to assign a license to the shared mailbox in order to forward em
 
 2. Select the shared mailbox you want to edit, then select **Email forwarding** \> **Edit**.
     
-3. Set the toggle to **On**, and enter one email address to forward the messages to. It can be any valid email address. To forward to multiple addresses, you need to [create a distribution group](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) for the addresses, and then enter the name of the group in this box.
+3. Set the toggle to **On**, and enter one email address to forward the messages to. It can be any valid email address. To forward to multiple addresses, you need to [create a distribution group](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) for the addresses, and then enter the name of the group in this box.
     
 4. Select **Save**.
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,7 +24,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
 # Create DNS records at easyDNS for Microsoft
 
-[Check the Domains FAQ ](../setup/domains-faq.md) if you don't find what you're looking for. 
+[Check the Domains FAQ ](../setup/domains-faq.yml) if you don't find what you're looking for. 
   
 You'll need to add all of the following DNS records at your registrar's website to route mail to Microsoft, use your domain for Teams and Skype for Business, and so on.
   

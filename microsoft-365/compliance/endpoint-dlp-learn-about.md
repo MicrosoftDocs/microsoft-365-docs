@@ -1,5 +1,5 @@
 ---
-title: "Learn about Microsoft 365 Endpoint data loss prevention (preview)"
+title: "Learn about Microsoft 365 Endpoint data loss prevention"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,13 +14,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
-- SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MET150
-description: "Microsoft 365 Endpoint data loss prevention extends monitoring of file activities and protective actions for those file to endpoints. Files are made visible in the Microsoft 365 compliance solutions "
+description: "Microsoft 365 Endpoint data loss prevention extends monitoring of file activities and protective actions for those files to endpoints. Files are made visible in the Microsoft 365 compliance solutions "
 ---
 
-# Learn about Microsoft 365 Endpoint data loss prevention (preview)
+# Learn about Microsoft 365 Endpoint data loss prevention
 
 You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Overview of data loss prevention](data-loss-prevention-policies.md).
 
@@ -28,18 +29,19 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 ## Endpoint activities you can monitor and take action on
 
-Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10. This includes:
+Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
 
 
-|activity on item |auditable/restrictable  |
-|---------|---------|
-|created    | auditable      |
-|renamed    |  auditable       |
-|copied to or created on removable media     |     auditable and restrictable|
-|copied to network share, e.g. \\my-server\fileshare   |     auditable and restrictable    |
-|printed |    auditable and restrictable       |
-|copied to cloud via Chromium Edge    |   auditable and restrictable        |
-|accessed by unallowed apps and browsers    |  auditable and restrictable       |
+|activity |description  | auditable/restictable|
+|---------|---------|---------|
+|upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an being an unallowed browser, the upload activity will be blocked and the user is redirected to use Edge Chromium. Edge Chromium will then either allow or block the upload or access based on the DLP policy configuration         |auditable and restrictable|
+|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.         | auditable and restrictable|
+|copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.         | auditable and restrictable|
+|copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive         |auditable and restrictable|
+|print a document    |Detects when a user attempts to print a protected item to a local or network printer.| auditable and restrictable         |
+|create an item|Detects when a user creates an item| auditable|
+|rename an item|Detects when a user renames an item| auditable|
+
 
 ## What's different in Endpoint DLP
 
@@ -49,7 +51,8 @@ There are a few extra concepts that you need to be aware of before you dig into 
 
 Device management is the functionality that enables the collection of telemetry from devices and brings it into Microsoft 365 compliance solutions like Endpoint DLP and [Insider Risk management](insider-risk-management.md). You'll need to onboard all devices you want to use as locations in DLP policies.
 
-![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> [!div class="mx-imgBorder"]
+> ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
 Onboarding and offboarding are handled via scripts you download from the Device management center. The center has custom scripts for each of these deployment methods:
 
@@ -59,17 +62,19 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 - Mobile Device Management/Microsoft Intune
 - VDI onboarding scripts for non-persistent machines
 
-![device onboarding page](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> [!div class="mx-imgBorder"]
+> ![device onboarding page](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
+If you have onboarded devices through [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
 
-![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
+> [!div class="mx-imgBorder"]
+> ![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
 
 ### Viewing Endpoint DLP data
 
- Endpoint DLP monitors activity based om MIME type, so activities will be captured even if the file extension is changed. At public preview it watches all:
+ Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed. At this time the following file types are supported:
 
 - Word files
 - PowerPoint files
@@ -77,19 +82,30 @@ If you have onboarded devices through [Microsoft Defender Advanced Threat Protec
 - PDF files
 - .csv files
 - .tsv files
-- c files
-- class files
-- cpp files
-- cs files
-- h files
-- java files
+- .txt files
+- .rtf files
+- .c files
+- .class files
+- .cpp files
+- .cs files
+- .h files
+- .java files
 
 > [!NOTE]
-> .txt and source code files are not audited by default, DLP evaluates them against the applied policies and then user actions are audited or blocked accordingly.
+> Endpoint DLP evaluates files of all the above types against the DLP policy and applies protection actions accordingly. All files that match a DLP policy are audited for all supported actions, even if they aren't blocked. In addition, file activity performed on any Word, PowerPoint, Excel, PDF, and .csv file is audited by default, independent of whether a DLP policy exists or matches these files.
+
+You can view alerts related to DLP policies enforced on endpoint devices by going to the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md).
+
+![Alert info](../media/Alert-info-1.png)
+
+You can also view details of the associated event with rich metadata in the same dashboard
+
+![event info](../media/Event-info-1.png)
 
 Once a device is onboarded, information about audited activities flows into Activity explorer even before you configure and deploy any DLP policies that have devices as a location.
 
-![endpoint dlp events in activity explorer](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> [!div class="mx-imgBorder"]
+> ![endpoint dlp events in activity explorer](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
 Endpoint DLP collects extensive information on audited activity.
 
@@ -120,21 +136,22 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 - removable media device model
 - removable media device serial number
 
-![copy to usb activity attributes](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> [!div class="mx-imgBorder"]
+> ![copy to usb activity attributes](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
 ## Next steps
 
 Now that you've learned about Endpoint DLP, your next steps are:
 
-1) [Getting started with Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)
-2) [Using Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+1) [Getting started with Microsoft Endpoint data loss prevention ](endpoint-dlp-getting-started.md)
+2) [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
 
-- [Getting started with Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)
-- [Using Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+- [Getting started with Microsoft Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+- [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Insider Risk management](insider-risk-management.md)

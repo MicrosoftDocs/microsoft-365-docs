@@ -1,24 +1,26 @@
 ---
-title: "Outbound spam protection"
-f1.keywords:
-- NOCSH
+title: Outbound spam protection
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about the outbound spam controls in Exchange Online Protection (EOP), and what to do if you need to send mass mailings."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the outbound spam controls in Exchange Online Protection (EOP), and what to do if you need to send mass mailings.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Outbound spam protection in EOP

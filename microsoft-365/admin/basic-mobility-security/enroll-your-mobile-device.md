@@ -34,15 +34,15 @@ Organizations choose Basic Mobility and Security so that employees can use their
 Basic Mobility and Security for Microsoft 365 hosted by the Intune service works with most, but not all, mobile devices. The following are supported with Basic Mobility and Security:
 
 - iOS 10.0 or later
-    
+
 - Android 4.4 or later
-    
+
 - Windows 8.1 and Windows 10 (Phone and PC)
-    
+
 If your device is not listed above, and you need to use it with Basic Mobility and Security, contact your work or school administrator.
 
->[!TIP] 
->If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](troubleshoot.md).
+>[!TIP]
+>If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](/basic-mobility-security/troubleshoot.md).
 
 ## Set up your mobile device with Intune and Basic Mobility and Security
 

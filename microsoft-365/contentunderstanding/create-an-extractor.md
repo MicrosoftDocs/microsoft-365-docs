@@ -7,11 +7,14 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 localization_priority: Priority
 description: "Learn how to create an extractor in Microsoft SharePoint Syntex."
 ---
 
-# Create an extractor (Preview)
+# Create an extractor in Microsoft SharePoint Syntex
 
 
 </br>
@@ -31,7 +34,9 @@ You need to create an extractor for each entity in the document that you want to
 
 1. From the model home page, in the **Create and train extractors** tile, click **Train extractor**.
 2. On the **New entity extractor** screen, type the name of your extractor in the **New extractor name** field. For example, name it **Service Start Date** if you want to extract the service start date from each Contract Renewal document. You can also choose to reuse a previously created column (for example, a managed metadata column).
-3. Click **Create**.
+> [!NOTE]
+> If you create a new extractor, then select **New column type** and choose **Single line of text**, the maximum character limit is 255. Any characters that you type exceeding the limit get truncated. 
+3. When you're done, click **Create**.
 
 ## Add a label
 
@@ -47,6 +52,14 @@ Creating the extractor opens the extractor page. Here you see a list of your sam
 
  
 Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
+
+### Use Find to search your file
+You can use the <b>Find</b> feature to search for an entity in your document that you want to label.
+
+   ![Find in file](../media/content-understanding/find-feature.png) 
+
+The Find feature is useful if you are searching a large document or if there are multiple instances of the entity in the document. If you find multiple instances, you can select the one you need in the search results to go to that location in the viewer to label it.
+
 
 ## Add an explanation
 
@@ -117,9 +130,20 @@ If you again receive a **Mismatch** on your labeled files, you likely need to cr
 
 ## Test your model
 
-If you receive a match on your labeled sample files, you can now test your model on the remaining unlabeled example files. This is a useful step to evaluate the “fitness” or readiness of the model before using it, by testing it on files the model hasn’t seen before.
+If you receive a match on your labeled sample files, you can now test your model on the remaining unlabeled example files. This is optional, but a useful step to evaluate the “fitness” or readiness of the model before using it, by testing it on files the model hasn’t seen before.
 
 1. From the model home page, click the **Test** tab.  This runs the model on your unlabeled sample files.
 2. In the **Test files** list, your example files display to show if the model is able to extract the information you need. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
     ![Test on your files](../media/content-understanding/test-filies-extractor.png) 
+
+## See Also
+[Create a classifier](create-a-classifier.md)
+
+[Explanation types](explanation-types-overview.md)
+
+[Leverage term store taxonomy when creating an extractor](leverage-term-store-taxonomy.md)
+
+[Document Understanding overview](document-understanding-overview.md)
+
+[Apply a model](apply-a-model.md) 

@@ -1,22 +1,24 @@
 ---
-title: "Configure EOP to junk spam in hybrid environments"
-f1.keywords:
-- NOCSH
+title: Configure EOP to junk spam in hybrid environments
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: MSFTTracyP
 manager: chrisda
-ms.date:
+ms.date: 
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
+ms.topic: how-to
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to route spam to user Junk Email folders in an Exchange Online Protection hybrid environment."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to route spam to user Junk Email folders in an Exchange Online Protection hybrid environment.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments
@@ -46,7 +48,7 @@ This topic describes how to create these mail flow rules the Exchange admin cent
 
 ## What do you need to know before you begin?
 
-- You need to be assigned permissions in the on-premises Exchange environment before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).
+- You need to be assigned permissions in the on-premises Exchange environment before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group).
 
 - If and when a message is delivered to the Junk Email folder in an on-premises Exchange organization is controlled by a combination of the following settings:
 

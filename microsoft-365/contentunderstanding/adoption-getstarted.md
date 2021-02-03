@@ -8,6 +8,9 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
 localization_priority: Normal
@@ -15,40 +18,34 @@ localization_priority: Normal
 
 # Microsoft SharePoint Syntex adoption: Get started
 
-Think of the intelligent content services available in Microsoft SharePoint Syntex as having three parts:
+Think of the intelligent content services available in SharePoint Syntex as having three parts:
 
 - **Content understanding:** create no-code AI models to classify and extract information from content to automatically apply metadata for knowledge discovery and reuse. Learn more about [content understanding](document-understanding-overview.md).
 - **Content processing:** Automate capture, ingestion and categorization of content and streamline content-centric processes using Power Automate. Learn more about [content processing](form-processing-overview.md).
 - **Content compliance:** Control and manage content to improve security and governance with integration to Microsoft Information Protection.
 
-With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using Microsoft SharePoint Syntex:
-
-|Manual entry| Form processing | Document understanding |
-|:-------|:--------|:--------|
-| Data entry and labor-intensive on any content | Process digital content - photos, scans, receipts, business cards, videos with OCR & text |  Capture content types and  metadata from contracts, resumes, and other structured documents |
-| Interactive   | Pre-built, automated   | Custom, assisted   | Custom, compliant |
-| People doing the work | Taught by your subject matter experts (SMEs). Capture content types and  metadata from contracts, resumes, other unstructured documents. | SMEs are less involved. from purchase orders, applications, other semi structured and structured documents |
-
-The following table explains what you get when you use Microsoft SharePoint Syntex:
+With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using SharePoint Syntex. There are two different ways of understanding your content. The model type you use is based on file format and use case:
 
 | Form processing | Document understanding |
 |:-------|:-------|
-| Available in APAC, Australia, Canada, EU, JP, LATAM, UK, US | Available in all regions |
-| Uses AI Builder credits - 1M credits = 2000 pages; Consumption is about 2000 invoices=2 units. Power Automate is required - if you need more you can add it. 1M credits allocated for 300+ licenses purchased. You can also purchase credits separately. | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. |
-| Provisioned against the default common data service environment| Does not have capacity restrictions. |
+| Created from document library. | Created in the content center, part of SharePoint Syntex. |
+| Model created in AI builder. | Model created in native interface. |
+| Used for semi-structured file formats. | Used for unstructured file formats. |
+| Settable classifier. | Trainable classifier with optional extractors. |
+| Restricted to a single library. | Can be applied to multiple libraries. |
+| Train on PDF, JPG, PNG format, total 50 MB/500 pp. | Train on 5-10 PDF, Office, or email files, including negative examples. |
 
-There are two different ways of understanding your content. The model type you use is based on file format and use case:
+The following table explains availability and licensing for SharePoint Syntex:
 
 | Form processing | Document understanding |
 |:-------|:-------|
-| Created from document library | Created in the content center, part of Microsoft SharePoint Syntex |
-| Model created in AI builder | Model created in native interface |
-| Used for semi-structured file formats | Used for unstructured file formats |
-| Settable classifier | Trainable classifier with optional extractors |
-| Restricted to a single library | Can be applied to multiple libraries |
-| Train on PDF, JPG, PNG format, total 50 MB/500 pp | Train on 5-10 PDF, Office, or email files, including negative examples |
+| Form processing relies on Power Platform. <br>For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions. |
+| Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2000 file pages. | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. |
+| Provisioned against the default common data service environment. | Does not have capacity restrictions. |
 
-Microsoft SharePoint Syntex integrates with Microsoft 365 compliance features like:
+For more information about AI Builder credits and units, see [AI Builder licensing](https://docs.microsoft.com/ai-builder/administer-licensing).
+
+SharePoint Syntex integrates with Microsoft 365 compliance features like:
 
 - Retention labels that define records policy based on document age or external events.
 - Sensitivity labels that set DLP, encryption, sharing, and conditional access policies.
@@ -57,12 +54,12 @@ Users can apply labels, or they can be applied automatically by SharePoint Synte
 
 ## Identify pilot business scenarios to optimize
 
-To prepare for using Microsoft SharePoint Syntex in your organization, you first need to understand the scenarios in which it will be useful. The why helps determine what model will be needed, and how to structure your org based on where the model will be applied. Here are a few scenarios where document understanding can help your organization:
+To prepare for using SharePoint Syntex in your organization, you first need to understand the scenarios in which it will be useful. The why helps determine what model will be needed, and how to structure your org based on where the model will be applied. Here are a few scenarios where document understanding can help your organization:
 
 - Content processing: Process contracts, statements of work, and other form-like documents. Intake the forms, train the model to understand and map the fields, and then run your forms through to automatically collect the data. For more information, see [Form processing overview](form-processing-overview.md).
 - Invoice analysis: Pull out the relevant details from your invoices and make sure they're complying with policy or are being processed appropriately.
 
-Think about ways that Microsoft SharePoint Syntex can help your organization:
+Think about ways that SharePoint Syntex can help your organization:
 
 - Automate business processes
 - Improve search accuracy
@@ -70,7 +67,7 @@ Think about ways that Microsoft SharePoint Syntex can help your organization:
 
 ### Form processing scenario example
 
-For example, you can set up a process using Microsoft SharePoint Syntex and Power Automate features to track and monitor invoices.
+For example, you can set up a process using SharePoint Syntex and Power Automate features to track and monitor invoices.
 
 1. Set up a library to store the invoice documents.
 1. Train the model to recognize fields in the documents.
@@ -80,7 +77,7 @@ For example, you can set up a process using Microsoft SharePoint Syntex and Powe
     - An invoice is past its due date.
     - An invoice is for an amount that's larger than your automatic approval amount.
 
-![Track and monitor invoices with Microsoft SharePoint Syntex and Power Automate](../media/content-understanding/process-invoices-flow.png)
+![Track and monitor invoices with SharePoint Syntex and Power Automate](../media/content-understanding/process-invoices-flow.png)
 
 When you automate this scenario, you can:
 
@@ -97,7 +94,7 @@ As another example, you can set up a process to identify contracts that your com
 1. When the model is complete, apply the model to a library where you can upload contracts.
 1. Apply a retention label to the date field, so that contracts are retained in the library for the length of time your organization requires for contracts.
 
-![Track and monitor contracts with Microsoft SharePoint Syntex and retention labels](../media/content-understanding/process-contracts-flow.png)
+![Track and monitor contracts with SharePoint Syntex and retention labels](../media/content-understanding/process-contracts-flow.png)
 
 When you automate this scenario, you can:
 
@@ -135,7 +132,7 @@ Where will they build and apply the models? Are there existing processes or repo
 
 ## Strategic positioning
 
-Work with stakeholders to make sure they are aligned on the strategy for using Microsoft SharePoint Syntex. Research and provide the following resources to help with this positioning:
+Work with stakeholders to make sure they are aligned on the strategy for using SharePoint Syntex. Research and provide the following resources to help with this positioning:
 
 - Business outcomes:
   - Potential fiscal outcomes
@@ -165,7 +162,7 @@ Identify the stakeholders for your project.
 
 ## Readiness checklist
 
-To get ready for implementing Microsoft SharePoint Syntex (Preview), you need to:
+To get ready for implementing SharePoint Syntex, you need to:
 
 ![Readiness for Content Understanding](../media/content-understanding/cu-adoption-readinesschecklist.png)
 

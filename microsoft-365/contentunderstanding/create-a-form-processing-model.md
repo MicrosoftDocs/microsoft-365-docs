@@ -7,12 +7,20 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 localization_priority: Priority
 description: "Create a form processing model in Microsoft SharePoint Syntex."
 ---
 
 # Create a form processing model in Microsoft SharePoint Syntex
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
 
 Using [AI Builder](https://docs.microsoft.com/ai-builder/overview) - a feature in Microsoft PowerApps - SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 
@@ -30,7 +38,7 @@ You can only create a form processing model in SharePoint document libraries for
 
  ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model.png)</br>
 
-## Step 1: Create a form Processing model
+## Step 1: Create a form processing model
 
 The first step in creating a form processing model is to name it and create the define the new content type and create a new document library view for it.
 
