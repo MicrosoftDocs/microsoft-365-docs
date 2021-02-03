@@ -29,12 +29,12 @@ You can change your settings after initial setup in the Microsoft 365 admin cent
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
 - The SharePoint sites in which you want to enable form processing - all of them, some, or selected sites
-- The name and admins or your content center
+- The name and admins for your content center
 
 ## Requirements 
 
 > [!NOTE]
-> You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content understanding.
+> You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint Syntex.
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the Microsoft 365 Admin Center.
 
