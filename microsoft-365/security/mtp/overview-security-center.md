@@ -51,6 +51,7 @@ If you need information about what's changed from the Office 365 Security & Comp
 - [Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
 
 ## What to expect
+
 All the security content that you use in the Office 365 Security and Compliance Center (protection.office.com) and the Microsoft Defender security center (securitycenter.microsoft.com) can now be found in the *Microsoft 365 security center*.
 
 Microsoft 365 security center helps security teams investigate and respond to attacks by brining in signals from different workloads into a single, unified experiences:
@@ -105,9 +106,11 @@ Common controls and content either appear in the same place, or are condensed in
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 security center
 
 ### Integrated reports
+
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
 
 ### Quickly view your Microsoft 365 environment
+
 The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
 This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
@@ -135,6 +138,7 @@ After clicking through to the content, it may be useful to bookmark this site an
 > Along with the Product filter, current topics, types of resources (from videos to webinars), levels of familiarity or experience with security areas, security roles, and product features are listed.
 
 ## Send us your feedback
+
 We need your feedback. We're always looking to improve, so if there's something you'd like to see, [send us your Microsoft 365 Defender feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
 
 You can also leave feedback from this article. In the 'Feedback' section at the end under 'Submit and view feedback for', the options are *This product*, or *This page*.
