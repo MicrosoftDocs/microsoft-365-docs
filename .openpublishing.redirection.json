@@ -2659,6 +2659,11 @@
       "source_path": "microsoft-365/email/email-collaboration.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/work-with-customers",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/microsoft-365-client-support-modern-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/microsoft-365-client-support-multi-factor-authentication",
+      "redirect_document_id": false
     }
   ]
 }

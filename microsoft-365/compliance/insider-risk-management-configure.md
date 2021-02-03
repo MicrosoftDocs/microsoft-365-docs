@@ -156,7 +156,6 @@ Before configuring a policy, define the following insider risk settings:
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
     - [Anomaly detections](insider-risk-management-settings.md#anomaly-detections)
-    - [Offensive language detections](insider-risk-management-settings.md#offensive-language-detections)
     - [Alert volume level](insider-risk-management-settings.md#alert-volume)
     - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Domain settings](insider-risk-management-settings.md#domains-preview)
@@ -180,9 +179,6 @@ Insider risk management policies include assigned users and define which types o
 
     >[!IMPORTANT]
     >Most policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 3** above.
-
-    >[!CAUTION]
-    >Starting October 16, 2020, you will no longer be able to create policies using the Offensive language in email template. Any active policies that use this template will work until they are permanently removed in January 2021.
 
 4. Select **Next** to continue.
 5. On the **Users** page, select **Add user or group** or **Choose Priority user groups** to define which users or priority user groups are included in the policy, depending on the policy template you've selected. Select **All users and mail-enabled groups** checkbox if applicable (if you haven't selected a priority user-based template). Select **Next** to continue.
