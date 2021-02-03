@@ -160,7 +160,7 @@ _Mitigations section of a threat analytics report_
 
 When using the reports, keep these in mind: 
 
-- Data is scoped based on your role-based access control (RBAC) scope. See [Custom roles in role-based access control for Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/custom-roles).
+- Data is scoped based on your role-based access control (RBAC) scope. See [Custom roles in role-based access control for Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/custom-roles) for details.
   -	To view alerts, incidents, or impacted assets data, you need access to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
   -	To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data. 
   -	To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
