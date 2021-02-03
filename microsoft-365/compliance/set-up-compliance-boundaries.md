@@ -166,6 +166,9 @@ The final step is to create a eDiscovery case in the Security & Compliance Cente
   
 - Only members of the role group added to the case will be able to see and access the case in the Security & Compliance Center. For example, if the Fourth Coffee Investigators role group is the only member of a case, then members of the Fourth Coffee eDiscovery Managers role group (or members of any other role group) won't be able to see or access the case.
 
+
+UHHHHHHH!
+
 - When a member of the role group assigned to a case runs a search associated with the case, they will only be able to search the content locations within their agency (which is defined by the search permissions filter that you created in Step 4.)
 
 To create a case and assign members:
