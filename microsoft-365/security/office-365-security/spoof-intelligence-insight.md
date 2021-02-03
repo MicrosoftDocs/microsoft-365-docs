@@ -16,15 +16,28 @@ search.appverid:
 ms.assetid:
 ms.collection: 
   - M365-security-compliance
-description: Admins can learn how the poof intelligence insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
+description: Admins can learn how the spoof intelligence insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC, or composite authentication).
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Spoof intelligence insight
+# Spoof intelligence insight in EOP
 
-You can use the spoof intelligence insight to quickly determine which external senders are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spoofing by EOP as of October 2018. EOP uses spoof intelligence as part of your organization's overall defense against phishing. For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
+
+When a sender spoofs an email address, they appear to be a user in one of your organization's domains, or a user in an external domain that sends email to your organization. Attackers who spoof senders to send spam or phishing email need to be blocked. But there are scenarios where legitimate senders are spoofing. For example:
+
+- Legitimate scenarios for spoofing internal domains:
+  - Third-party senders use your domain to send bulk mail to your own employees for company polls.
+  - An external company generates and sends advertising or product updates on your behalf.
+  - An assistant regularly needs to send email for another person within your organization.
+  - An internal application sends email notifications.
+- Legitimate scenarios for spoofing external domains:
+  - The sender is on a mailing list (also known as a discussion list), and the mailing list relays email from the original sender to all the participants on the mailing list.
+  - An external company sends email on behalf of another company (for example, an automated report or a software-as-a-service company).
+
+You can use the spoof intelligence insight to quickly identify senders who are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks).
 
 By allowing known senders to send spoofed messages from known locations, you can reduce false positives (good email marked as bad). By monitoring the allowed spoofed senders, you provide an additional layer of security to prevent unsafe messages from arriving in your organization.
 
@@ -74,7 +87,7 @@ By allowing known senders to send spoofed messages from known locations, you can
 
 ### View information about spoofed messages
 
-On the spoof intelligence insight, click **Suspicious domains** or **Non-suspicious domains** to go to the **Spoof intelligence insight** page. The **Spoof Intelligence insight** page contains the following information:
+On the spoof intelligence insight, click **Suspicious domains** or **Non-suspicious domains** to go to the **Spoof intelligence insight** page. The page contains the following information:
 
 - **Spoofed domain**: The domain of the spoofed user that's displayed in the **From** box in email clients. This address is also known as the `5322.From` address.
 - **Infrastructure**: Also known as the _sending infrastructure_. This will be one of the following values:
@@ -89,7 +102,7 @@ On the spoof intelligence insight, click **Suspicious domains** or **Non-suspici
   - **Suspicious domains**: The **Allowed to spoof** value is always **No**. Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
   - **Non-suspicious domains**: The **Allowed to spoof** value is always **Yes**. Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as good by spoof intelligence.
 
-You can click the column headings to sort the results.
+You can click selected column headings to sort the results.
 
 To filter the results, you have the following options:
 
