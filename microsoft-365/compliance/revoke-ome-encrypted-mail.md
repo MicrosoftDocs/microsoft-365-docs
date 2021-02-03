@@ -44,7 +44,9 @@ Once an email has been revoked, the recipient receives an error when they access
 
 ## How to revoke an encrypted message that you sent
 
-You can only revoke a mail if it is sent to a single recipient, such as Gmail and Yahoo recipients, that gets a link-based experience.  You cannot revoke a mail sent to Office 365 and Microsoft account recipients (for example, outlook.com users). 
+You can revoke a mail that you sent to a single recipient that uses a social account such as gmail.com or yahoo.com. In other words, you can revoke an email sent to a single recipient that received the link-based experience.
+
+You can't revoke a mail that you sent to a recipient that uses a work or school account from Office 365 or Microsoft 365 or a user that uses a Microsoft account, for example, an outlook.com account. 
 
 To revoke an encrypted message that you sent, complete these steps
 
