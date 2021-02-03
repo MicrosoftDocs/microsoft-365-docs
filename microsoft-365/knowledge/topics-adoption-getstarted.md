@@ -1,6 +1,6 @@
 ---
-title: "Get started driving adoption of Topic Experiences (Preview)"
-description: "Learn how to drive adoption of Topic Experiences in your organization."
+title: "Get started driving adoption of Microsoft Viva Topics"
+description: "Learn how to drive adoption of Microsoft Viva Topics in your organization."
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -14,14 +14,11 @@ localization_priority: Normal
 ROBOTS: NOINDEX
 ---
 
-# Get started driving adoption of Topic Experiences (Preview)
+# Get started driving adoption of Microsoft Viva Topics
 
-> [!Note]
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+Before you get started with adoption, you need to understand the concepts involved in knowledge management and Topics. The following diagram shows what happens during topic discovery and curation:
 
-Before you get started with adoption, you need to understand the concepts involved in knowledge management and topic experiences. The following diagram shows what happens during topic discovery and curation:
-
-![Topic experiences architecture](../media/knowledge-management/topic-management-architecture.png)
+![Microsoft Viva Topics architecture](../media/knowledge-management/topic-management-architecture.png)
 
 - **Discovery**: Users can discover knowledge in the apps they use every day through topic cards - they can also discover topics in Microsoft Search.
 - **Curation**: Subject matter experts (SMEs) refine topics through topic pages, and AI learns from their input. The Topic center contains topic pages that users can explore and experts can manage.
@@ -34,7 +31,7 @@ Keep in mind that:
 
 - Topic discovery is improved when more content is available.
 - The security, privacy, and location of your data is preserved even though the information is presented in a new experience.
-- Users need a license to view topic experiences.
+- Users need a license to view Microsoft Viva Topics.
 - Discovery is initially on English language content.
 
 To help prepare, think through these questions:
@@ -44,7 +41,7 @@ To help prepare, think through these questions:
 - Who will see topic cards and highlights?
 - Which topics are expected?
 
-Review this list of prerequisites for getting the most out of topic experiences:
+Review this list of prerequisites for getting the most out of Topics:
 
 |Product or feature |Description |
 |:-------|:--------|
@@ -53,7 +50,7 @@ Review this list of prerequisites for getting the most out of topic experiences:
 
 ## Plan for adoption
 
-To plan for adoption of Topic Experiences, you need to:
+To plan for adoption of Topics, you need to:
 
 ![Steps to plan for adoption](../media/knowledge-management/km-adoption-plan-adoption.png)
 
@@ -65,9 +62,9 @@ To plan for adoption of Topic Experiences, you need to:
 2. Engage your organization:
     - Identify the business groups and business teams that need to be involved and gain alignment across those and the scenarios that you're planning.
     - Start thinking about how to engage some early adopters to get critical, early feedback so you can iterate to get to the best solution.
-    - Start building the community and think about how Topic Experiences can be used across your organization by these different groups.
+    - Start building the community and think about how Topics can be used across your organization by these different groups.
 
-3. Train your organization: Most people will intuitively understand the concept of topics and how topic cards compile relevant information, and understand and see the value. But you might want to create training that is tailored to your own culture and organization, to show how you want Topic Experiences to be used in your org. Some training resources:
+3. Train your organization: Most people will intuitively understand the concept of topics and how topic cards compile relevant information, and understand and see the value. But you might want to create training that is tailored to your own culture and organization, to show how you want Topics to be used in your org. Some training resources:
     - [Project Cortex Resource Center](https://aka.ms/projectcortex). Includes overviews and feature information, recorded office hour videos and presentations, and information about partners and their offerings.
     - Coming soon, training videos and help for end users.
 
@@ -88,7 +85,7 @@ For example, here's a scenario for role onboarding:
 - A colleague (Kim) who was in the role before Jordan created topic pages that can help out new employees and anyone else looking for that information.
 - Kim was an SME and had permissions to look at unconfirmed topic pages. Unconfirmed topic pages are great starting points for what the AI has discovered and created, and Kim was able to edit them to add expert resources, definitions, and pin other resources.
 - As Jordan reads through a new post on SharePoint, Jordan sees a topic highlight, and hovers over it to quickly get a definition of the term and who to contact with more questions. Before, Jordan might have had to hunt around for this information and contact colleagues to see who to ask about something.
-- Exposing this information through Topic Experiences can be powerful, because although this information may have been available before, it might have been siloed and hard to find. Bringing it into the applications that Jordan is using and helping Jordan find these experts can also drive a sense of engagement and community. It can also help Jordan feel more empowered when dealing with the new role.
+- Exposing this information through Topics can be powerful, because although this information may have been available before, it might have been siloed and hard to find. Bringing it into the applications that Jordan is using and helping Jordan find these experts can also drive a sense of engagement and community. It can also help Jordan feel more empowered when dealing with the new role.
 
 After you identify your scenarios, you can prioritize the scenarios:
 
@@ -106,7 +103,7 @@ Identify the stakeholders for your project. The key roles are the Executive spon
 |:-------|:-------|:--------|
 | Executive sponsor(s)   | Communicate high-level vision and values to the company   |  Executive leadership   |
 | Project lead(s) | Oversee the entire launch execution and rollout process | Project management |
-| Knowledge administrators| Set up and configure Topic experiences | IT department |
+| Knowledge administrators| Set up and configure Topics | IT department |
 | Knowledge managers | Manage topics and oversee the taxonomy | Any department |
 | Taxonomy managers | Oversee the taxonomy | Any department |
 | Subject-matter experts and topic contributors | Generate or review topics and descriptions | Any department |
@@ -121,7 +118,7 @@ Though we recommend having each of these roles fulfilled throughout your rollout
 
 ### Create a success plan
 
-Use these indicators to measure the success of Topic Experiences in your organization. Look at:
+Use these indicators to measure the success of Topics in your organization. Look at:
 
 1. Topic usage:
       - Topic impressions
@@ -140,7 +137,7 @@ Build a champion network in your organization. Champions are important because t
 
 You can recruit champions from different roles – Knowledge Managers and subject-matter experts.
 
-Lots of champion networks leverage Yammer as their platform. In Yammer, people can post questions and get answers, and share success stories. It's hard to get the word out alone, so you can rely on the network of people throughout your company to offer advice to their peers and show how their team is using Topic Experiences so other teams can think about their own scenarios.
+Lots of champion networks leverage Yammer as their platform. In Yammer, people can post questions and get answers, and share success stories. It's hard to get the word out alone, so you can rely on the network of people throughout your company to offer advice to their peers and show how their team is using Topics so other teams can think about their own scenarios.
 
 Some organizations are using hackathons (formal or informal, virtual or in person) to gather groups of people to work on a specific project. For example, you could gather your subject-matter experts and have them work together to curate a set of topic pages.
 
@@ -155,7 +152,7 @@ Now that you're ready to roll out, you want to make sure that you're encouraging
 
 ## Next steps
 
-When you're ready to roll out Topic Experiences, you'll need to get people involved.
+When you're ready to roll out Topics, you'll need to get people involved.
 
 - Start introducing the feature set and getting them to think about their scenarios.
 - Gather the stakeholders and create scenarios.
