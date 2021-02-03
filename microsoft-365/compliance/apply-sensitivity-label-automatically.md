@@ -222,9 +222,9 @@ Workflow for an auto-labeling policy:
 
 1. Create and configure an auto-labeling policy.
 
-2. Run the policy in simulation mode and wait 24 hours, or until the simulation is complete.
+2. Run the policy in simulation mode, which can take 48 hours to complete.
 
-3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait another 24 hours, or until the simulation is complete.
+3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
 
 4. Repeat step 3 as needed.
 
