@@ -16,7 +16,7 @@ ROBOTS: NOINDEX
 
 # Get started driving adoption of Topic Experiences (Preview)
 
-Before you get started with adoption, you need to understand the concepts involved in knowledge management and Viva Topics. The following diagram shows what happens during topic discovery and curation: 
+Before you get started with adoption, you need to understand the concepts involved in knowledge management and Viva Topics. The following diagram shows what happens during topic discovery and curation:
 
 Before you get started with adoption, you need to understand the concepts involved in knowledge management and topic experiences. The following diagram shows what happens during topic discovery and curation:
 
