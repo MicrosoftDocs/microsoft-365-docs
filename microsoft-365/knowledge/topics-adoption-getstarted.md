@@ -22,7 +22,7 @@ Before you get started with adoption, you need to understand the concepts involv
 
 - **Discovery**: Users can discover knowledge in the apps they use every day through topic cards - they can also discover topics in Microsoft Search.
 - **Curation**: Subject matter experts (SMEs) refine topics through topic pages, and AI learns from their input. The Topic center contains topic pages that users can explore and experts can manage.
-- **Identification**: With Microsoft Graph and Artificial Intelligence (AI) knowledge and people (topics, skills, an so on) are identified and automatically organized into related topics. SharePoint content is indexed with security content.
+- **Identification**: With Microsoft Graph and Artificial Intelligence (AI) knowledge and people (topics, skills, and so on) are identified and automatically organized into related topics. SharePoint content is indexed with security content.
 - **Extension**: With Microsoft Graph content connectors (coming soon), you can ingest knowledge from external services and data repositories.
 
 For more information, you can review the [overview](topic-experiences-overview.md) for an introduction.
@@ -64,7 +64,7 @@ To plan for adoption of Viva Topics, you need to:
     - Start thinking about how to engage some early adopters to get critical, early feedback so you can iterate to get to the best solution.
     - Start building the community and think about how Viva Topics can be used across your organization by these different groups.
 
-3. Train your organization: Most people will intuitively understand the concept of topics and how topic cards compile relevant information, and understand and see the value. But you might want to create training that is tailored to your own culture and organization, to show how you want Viva Topics to be used in your org. Some training resources:
+3. Train your organization: Most people will intuitively understand the concept of topics and how topic cards compile relevant information, and understand and see the value. But you might want to create training that is tailored to your own culture and organization, to show how you want Viva Topics to be used. Some training resources:
     - [Project Cortex Resource Center](https://aka.ms/projectcortex). Includes overviews and feature information, recorded office hour videos and presentations, and information about partners and their offerings.
     - Coming soon, training videos and help for end users.
 
@@ -73,23 +73,23 @@ To plan for adoption of Viva Topics, you need to:
 
 ### Target scenarios
 
-The why helps determine what model will be needed, and how to structure your org based on where the model will be applied. Here are a few scenarios where knowledge management can help your organization:
+You need to determine how you want to use Viva Topics in your organization before you can have success with topics. Here are a few scenarios where knowledge management and topics can help your organization:
 
-- Role onboarding & training: Understanding a new organization's terminology, key projects, and culture are important steps in onboarding. Easy discovery of topics can help new employees get up to speed on new job, roles, or projects quickly.
+- Role onboarding & training: Understanding a new organization's terminology, key projects, and culture are important steps in onboarding. Easy discovery of topics can help new employees ramp up on new job, roles, or projects quickly.
 - Expertise finding and information sharing: When topics are managed and shared, people in your organizations can more easily find information and experts to help them in their day to day work.
 - Expanded decision making and improved time to market: When information and experts are easy to reach, you can make decisions more easily and shave time off projects.
 
 For example, here's a scenario for role onboarding:
 
-- An employee (Jordan) is taking on a new role, or has been newly hired and is just starting with a role. Jordan wants to get involved and productive as quickly as possible. But Jordan also need help finding a starting place.
+- An employee (Jordan) is taking on a new role, or has been newly hired and is just starting with a role. Jordan wants to get involved and productive as quickly as possible. But Jordan also needs help with finding a starting place.
 - A colleague (Kim) who was in the role before Jordan created topic pages that can help out new employees and anyone else looking for that information.
 - Kim was an SME and had permissions to look at unconfirmed topic pages. Unconfirmed topic pages are great starting points for what the AI has discovered and created, and Kim was able to edit them to add expert resources, definitions, and pin other resources.
-- As Jordan reads through a new post on SharePoint, Jordan sees a topic highlight, and hovers over it to quickly get a definition of the term and who to contact with more questions. Before, Jordan might have had to hunt around for this information and contact colleagues to see who to ask about something.
-- Exposing this information through topics can be powerful, because although this information may have been available before, it might have been siloed and hard to find. Bringing it into the applications that Jordan is using and helping Jordan find these experts can also drive a sense of engagement and community. It can also help Jordan feel more empowered when dealing with the new role.
+- As Jordan reads through a new post on SharePoint, they see a topic highlight, and hover over it to quickly get a definition of the term and who to contact with more questions. Before, Jordan might have had to hunt around for this information and contact colleagues to see who to ask about something.
+- Exposing this information through topics can be powerful, because although this information may have been available before, it might have been siloed and hard to find. Bringing it into the applications that Jordan is using and helping them find these experts can also drive a sense of engagement and community. It can also help them feel more empowered when dealing with the new role.
 
 After you identify your scenarios, you can prioritize the scenarios:
 
-One way to prioritize it is to plot your scenarios out in a grid showing impact vs. ease of implementation. Look for scenarios that have both high impact and are easy to implement. Make those your top priority. Low impact and hard to implement scenarios are your lowest priority. When you have a quick win with a high impact, easy to implement scenario, it helps people get excited and see the possibilities of using topics.
+One way to prioritize them is to plot out your scenarios in a grid showing impact vs. ease of implementation. Look for scenarios that have both high impact and are easy to implement and make those ones your top priority. Low impact and hard-to-implement scenarios are your lowest priority. When you have a quick win with a high impact, easy-to-implement scenario, it helps people get excited and see the possibilities of using topics.
 
 ![High impact, easy to implement scenarios are high priority](../media/knowledge-management/topics-prioritize-scenarios.png)
 
@@ -112,7 +112,7 @@ Identify the stakeholders for your project. The key roles are the Executive spon
 | Power Platform administrator| Configure common data services environment | IT department |
 | Search administrator or manager | Configure search settings | IT department |
 
-In a larger organization, you might also have multiple people in these roles, and you'll need to drive coordination amongst them. In a smaller company, a single person might perform several of these roles. Different roles might be more involved in different phases of the project. For example, some people are more involved in setting up the features (Tenant administrators), while others don't get involved until you start defining topics ore are more involved in sustainment (Subject-matter experts and Champions).
+In a larger organization, you might also have multiple people in these roles, and you'll need to drive coordination amongst them. In a smaller company, a single person might perform several of these roles. Different roles might be more involved in different phases of the project. For example, Tenant administrators are more involved in setting up the features, while Subject-matter experts and Champions don't get involved until you start defining topics.
  
 Though we recommend having each of these roles fulfilled throughout your rollout, you may find that you don't require them all to get started with your identified solution.
 
@@ -124,30 +124,30 @@ Use these indicators to measure the success of Viva Topics in your organization.
       - Topic impressions
       - Quantity of topics – both confirmed and unconfirmed in your curated topic list.
       - Number of published topic pages.
-1. End user feedback from topic cards.
-1. Do employee satisfaction surveys. Viva Topics should improve employees' ability to find information, so find ways to gather their input and feedback on that.
+1. End-user feedback from topic cards.
+1. Do employee satisfaction surveys. Viva Topics should improve employees' ability to find information, so find ways to gather their input and feedback on that experience.
 1. Positive impact to search analytics. Because topics appear in the search experience, over time you might see lowered rates of abandoned searches because people are more easily able to find the topics in search. 
 
 ### Build a champion network
 
 Build a champion network in your organization. Champions are important because they can:
 
-- Create a circle of influence amongst their teams
+- Create a circle of influence within their teams
 - Drive topic management & maintenance
 
 You can recruit champions from different roles – Knowledge Managers and subject-matter experts.
 
-Lots of champion networks leverage Yammer as their platform. In Yammer, people can post questions and get answers, and share success stories. It's hard to get the word out alone, so you can rely on the network of people throughout your company to offer advice to their peers and show how their team is using Viva Topics so other teams can think about their own scenarios.
+Lots of champion networks use Yammer as their platform. In Yammer, people can post questions and get answers, and share success stories. It's hard to get the word out alone, so you can rely on the network of people throughout your company to offer advice to their peers and show how their team is using Viva Topics so other teams can think about their own scenarios.
 
 Some organizations are using hackathons (formal or informal, virtual or in person) to gather groups of people to work on a specific project. For example, you could gather your subject-matter experts and have them work together to curate a set of topic pages.
 
-Think about how you can recognize your champions. Reward their activities, give them some recognition, and generate a visible community feeling and engagement so that they feel like they're contributing to something and they're also getting something back from it.
+Think about how you can recognize your champions. Reward their activities, give them some recognition, and generate a visible community feeling and engagement so that they feel like they're contributing to something and they're also getting something back from their investments.
 
 Now that you're ready to roll out, you want to make sure that you're encouraging ongoing engagement.
 
 - Maintain active Yammer groups for your champions.
 - Share success stories.
-- Periodically host additional engagement events to share stories or introduce new features.
+- Periodically host engagement events to share stories or introduce new features.
 - Set challenges for people and run competitions.
 
 ## Next steps
