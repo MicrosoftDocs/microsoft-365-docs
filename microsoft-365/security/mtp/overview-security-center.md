@@ -11,7 +11,6 @@ ms.date: 02/02/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
