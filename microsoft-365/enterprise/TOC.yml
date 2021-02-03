@@ -115,14 +115,16 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-        - name: Client app support
+        - name: Client and services app support
           items: 
+            - name: Client and services app support
+              href: microsoft-365-client-services-app-support.md
             - name: Certificate-based authentication
               href: microsoft-365-client-support-certificate-based-authentication.md
             - name: Conditional Access
               href: microsoft-365-client-support-conditional-access.md
-            - name: Modern authentication
-              href: microsoft-365-client-support-modern-authentication.md
+            - name: Multi-factor authentication
+              href: microsoft-365-client-support-multi-factor-authentication.md
             - name: Single sign-on
               href: microsoft-365-client-support-single-sign-on.md
             - name: Choose between Basic Mobility Security and Intune
@@ -488,17 +490,23 @@
 - name: Microsoft 365 Apps for enterprise
   href: https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps
 
+- name: Surface devices
+  href: https://docs.microsoft.com/surface/deploy
+
+- name: Device management
+  items:
+    - name: Roadmap
+      href: device-management-roadmap-microsoft-365.md
+
+- name: Microsoft Edge
+  href: https://docs.microsoft.com/deployedge/deploy-edge-plan-deployment
+
 - name: Deployment and update channel example configurations
   items:
     - name: Overview
       href: deploy-update-channels-examples.md
     - name: Broad deployment of the latest releases
       href: deploy-update-channels-examples-rapid-deploy.md
-
-- name: Device management
-  items:
-    - name: Roadmap
-      href: device-management-roadmap-microsoft-365.md
 
 - name: Manage Microsoft 365 with PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md

@@ -46,7 +46,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 4. If you previously turned off Office Scripts for your organization and you want to turn it back on, select **Let users automate their tasks in Excel on the web**, and then specify who can access and use the feature:
 
-    - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected. 
+    - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected.
 
     - To allow only members of a specific group to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
         - Microsoft 365 group
@@ -73,7 +73,21 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
     
         To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
 
-7. Select **Save**.
+7. To allow users to run their Office Scripts inside Power Automate flows, select **Let users with access to Office Scripts run their scripts with Power Automate**. This allows users to add flow steps with the [Excel Online (Business) Connector's](/connectors/excelonlinebusiness) **Run script** option.
+
+    - To allow all users with access to Office Scripts to use their scripts in flows, leave **Everyone** (the default) selected.
+
+    - To allow only members of a specific group with access to Office Scripts to use their scripts in flows, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
+        - Microsoft 365 group
+        - Distribution group
+        - Security group
+        - Mail-enabled security group
+
+        To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
+
+    - To learn more about using Office Scripts with Power Automate, including how your data loss prevention policies may be impacted, see [Run Office Scripts with Power Automate](/office/dev/scripts/develop/power-automate-integration).
+
+8. Select **Save**.
 
     It can take up to 48 hours for changes to Office Scripts settings to take effect.
 
