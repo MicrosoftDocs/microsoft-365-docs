@@ -59,7 +59,7 @@ As an administrator, you can:
 
 If you prefer a more automated way to manage the lifecycle of your Microsoft 365 groups, you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15, and 1 day before the group expiration that allows them to renew the group if it's still needed. See: [Microsoft 365 group Expiration Policy](office-365-groups-expiration-policy.md).
 
-You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel).
+You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell).
 
 If you have many users, such as in a large corporation or enterprise, you may have many users who create groups for various purposes. We highly recommend that you review [Plan for governance in Microsoft 365 groups](plan-for-groups-governance.md) for best practices.
 
