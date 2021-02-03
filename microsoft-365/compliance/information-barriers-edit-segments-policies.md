@@ -161,6 +161,8 @@ After you have started applying information barrier policies, if you want to sto
 
 - [Get an overview of information barriers](information-barriers.md)
 - [Define policies for information barriers](information-barriers-policies.md)
-- [Learn more about information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
+- [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
 - [Attributes for information barrier policies](information-barriers-attributes.md)
 - [Troubleshooting information barriers](information-barriers-troubleshooting.md)

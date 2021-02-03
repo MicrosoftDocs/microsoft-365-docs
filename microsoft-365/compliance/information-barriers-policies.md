@@ -317,4 +317,6 @@ When the cmdlet finishes, Contoso is compliant with legal and industry requireme
 ## Resources
 
 - [Get an overview of information barriers](information-barriers.md)
-- [Information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
+- [Learn more about information barriers in OneDrive](/onedrive/information-barriers)

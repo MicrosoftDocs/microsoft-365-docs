@@ -133,7 +133,7 @@ Also similarly to DLP policy configuration, you can choose whether a condition m
 
 ### Configuring trainable classifiers for a label
 
-This option is currently in preview.
+This option is currently in preview. If you use this option, make sure you have published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
 
 When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
@@ -222,9 +222,9 @@ Workflow for an auto-labeling policy:
 
 1. Create and configure an auto-labeling policy.
 
-2. Run the policy in simulation mode and wait 24 hours, or until the simulation is complete.
+2. Run the policy in simulation mode, which can take 48 hours to complete.
 
-3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait another 24 hours, or until the simulation is complete.
+3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
 
 4. Repeat step 3 as needed.
 

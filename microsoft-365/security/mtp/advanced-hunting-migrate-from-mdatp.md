@@ -109,7 +109,9 @@ AlertInfo
 | where FileName == "powershell.exe"
 ```
 
-## Related topics
+
+
+## See also
 - [Turn on Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)

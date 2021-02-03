@@ -21,14 +21,14 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Customize your sign-in page with a privacy and consent notice for Microsoft 365 for campaigns."
+description: "Customize your sign-in page with a privacy and consent notice for Microsoft 365."
 ---
 
 # Customize your sign-in page with a privacy and consent notice
 
-Your political campaign can make it easier for law enforcement agencies to file legal charges against online criminals by adding a privacy and consent notice to your sign-in page.
+Your business or campaign can make it easier for law enforcement agencies to file legal charges against online criminals by adding a privacy and consent notice to your sign-in page.
 
-You can customize your sign-in page with your branding. You can also add text to help your users sign in, or to point out legal requirements or restrictions for getting access to Microsoft 365 for campaigns resources.
+You can customize your sign-in page with your branding. You can also add text to help your users sign in, or to point out legal requirements or restrictions for getting access to Microsoft 365 resources.
 
 ## Design customization the text on your sign-in page
 
@@ -37,7 +37,6 @@ To update the customizable elements on the sign-in page, you have to be a global
 The elements you can update are:
 
 - **Sign-in page text**
-
      An easy place to add the privacy and consent statement.
 - Sign-in page background image
 - Banner logo
