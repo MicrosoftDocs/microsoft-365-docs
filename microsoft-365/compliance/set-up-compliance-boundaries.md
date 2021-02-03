@@ -182,6 +182,9 @@ To create a case and assign members:
 
 5. Click **Save** on the **Manage this case** flyout to save the change.
 
+> [!NOTE]
+When adding a role group to a case, a user can only assign the role groups that you are a member of to a case.
+
 ## Searching and exporting content in Multi-Geo environments
 
 Search permissions filters also let you control where content is routed for export and which datacenter can be searched when searching content locations in a [SharePoint Multi-Geo environment](https://go.microsoft.com/fwlink/?linkid=860840).
