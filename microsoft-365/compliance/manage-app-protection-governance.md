@@ -21,6 +21,7 @@ description: "Implement Microsoft Application and Protection Governance capabili
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 Microsoft Application Protection and Governance (MAPG) is a security and compliance solution for business productivity apps built by third-party vendors and published for the Microsoft 365 application platform. MAPG delivers full visibility, oversight, and governance into how these apps access, use, and share your data in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
+
 The scale of ongoing cybersecurity incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every organization. Accelerated cloud adoption with Microsoft 365 and its rich application ecosystem are constantly growing. Attackers are gaining organizational footholds through applications because:
 
 - Users are typically unaware of the risks when consenting to the use of applications. 
@@ -44,7 +45,7 @@ TBD
 
 ## Administrator roles
 
-One of the following administration roles are required to see MAPG pages and manage policies and settings:
+One of the following administration roles are required to see MAPG pages or manage policies and settings:
 
 - Security Administrator 
 - Security Reader (read-only) 
@@ -66,6 +67,8 @@ Here are the capabilities for each role.
 | Security Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  |
 | Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
 ||||||||||
+
+For additional information about each role, see [Administrator role permissions](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference). 
 
 ## Using MAPG
 
