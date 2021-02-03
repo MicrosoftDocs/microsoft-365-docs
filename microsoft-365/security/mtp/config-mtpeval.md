@@ -158,14 +158,14 @@ There's a PowerShell Module called the *Office 365 Advanced Threat Protection Re
 
     ![Image of_the Microsoft Defender for Identity settings page where you should turn the Microsoft Defender for Endpoint  toggle on](../../media/mtp-eval-52.png)
 
->[!NOTE]
->Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint. Rebranding changes across all of our portals are being rolled out the for consistency.
+> [!NOTE]
+> Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint. Rebranding changes across all of our portals are being rolled out the for consistency.
 
 
 ## Configure Microsoft Cloud App Security
 
->[!NOTE]
->Skip this step if you've already enabled Microsoft Cloud App Security. 
+> [!NOTE]
+> Skip this step if you've already enabled Microsoft Cloud App Security. 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.
 

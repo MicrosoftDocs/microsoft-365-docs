@@ -44,6 +44,10 @@ Threat analytics is our in-product threat intelligence solution from expert Micr
 - Common attack surfaces
 - Prevalent malware
 
+Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
+
 You can access Threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card which shows the top threats in your org. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team with informed decisions. 
 
 ![Image of the threat analytics dashboard](../../media/threat-analytics/ta_inlandingpage_mtp.png)
@@ -158,10 +162,12 @@ _Mitigations section of a threat analytics report_
 >As part of the unified security experience, threat analytics is now available not just for Microsoft Defender for Endpoint, but also for Microsoft Defender for Office E5 license holders.
 >If you are not using the Microsoft 365 security portal (Microsoft 365 Defender), you can also see the report details (without the Microsoft Defender for Office data) in the Microsoft Defender Security Center portal (Microsoft Defender for Endpoint). 
 
-To access threat analytics report you need certain roles and permissions. See [Custom roles in role-based access control for Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/custom-roles) for details.
+To access threat analytics report you need certain roles and permissions. See [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md) for details.
   -	To view alerts, incidents, or impacted assets data, you need to have permissions to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
   -	To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data. 
   -	To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
+
+When looking at the threat analytics data, remember the following factors:
 - Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not shown in the charts.
 - Mitigations don't guarantee complete resilience. The provided mitigations reflect the best possible actions needed to improve resiliency.
 - Devices are counted as "unavailable" if they have not transmitted data to the service.
