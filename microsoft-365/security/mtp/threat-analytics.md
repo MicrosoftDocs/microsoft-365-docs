@@ -33,10 +33,7 @@ ms.custom: seo-marvel-apr2020
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
 >
 
-> [!IMPORTANT]
-> **Microsoft 365 Defender Threat analytics is currently in public preview**<br>
-> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain capabilities might not be supported or might have limitations.<br> 
-> For more information, see [Preview features in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/preview).
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 
 Threat analytics is our in-product threat intelligence solution from expert Microsoft security researchers, designed to assist security teams to be as efficient as possible while facing emerging threats, including:
@@ -163,8 +160,8 @@ _Mitigations section of a threat analytics report_
 
 When using the reports, keep these in mind: 
 
-- Data is scoped based on your role-based access control (RBAC) scope. You'll see the status of devices in [groups that you can access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups).
-  -	To view alerts, incidents, or impacted assets data, you need access to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
+- Your threat analytics report experience requires certain roles and permissions. See [Custom roles in role-based access control for Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/custom-roles) for details.
+  -	To view alerts, incidents, or impacted assets data, you need to have permissions to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
   -	To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data. 
   -	To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
 - Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not shown in the charts.
