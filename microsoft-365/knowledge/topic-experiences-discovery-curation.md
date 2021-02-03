@@ -37,7 +37,7 @@ AI identifies people and content connected to the topic, and if enough is discov
 - People who might be knowledgeable about the topic.
 - Files, pages, and sites that are related to the topic.
 
-The properties are identified from the files and pages that are part of the evidence for identifying the topic. Alternate names and acronyms are sourced from these files and pages. The short description is sourced from these files and pages, or from the internet through Wikipedia. The source file, page or Wikipedia article is referenced alongside the suggested properties. People are suggested based on their active contributions (e.g. edits) to the files and pages. A reference to the amount of contributions from a particular person provides a hint as to why the person has been identified. Files, pages and sites are ranked based on whether they are central to the topic, whether they can give an overview or introduction to the topic. 
+The properties are identified from the files and pages that are part of the evidence for identifying the topic. Alternate names and acronyms are sourced from these files and pages. The short description is sourced from these files and pages, or from the internet through Wikipedia. The source file, page, or Wikipedia article is referenced alongside the suggested properties. People are suggested based on their active contributions (like edits) to the files and pages. A reference to the amount of contributions from a particular person provides a hint as to why the person has been identified. Files, pages, and sites are ranked based on whether they are central to the topic, whether they can give an overview or introduction to the topic. 
 
 Not every identified topic will be useful to your organization or have identified any or the correct alternate names or a description, the appropriate people or content, so the ability to add topics that were not identified, keep suggested topics, and curate topics is critical to improving the quality of the topics that are discoverable in your organization.
 
@@ -58,7 +58,7 @@ Topic Experiences welcomes human contribution to improve the quality of your top
 - Even users who only have read access to topic (topic viewers) will be asked to verify the usefulness of specific topics. Feedback questions are asked on the **Topic summary** card to improve the value of the topic and its information. Questions about the quality and usefulness of the AI suggestions are presented to users one at a time. Questions include:
 1. Whether identifying the topic in the SharePoint page was helpful. There's an opportunity to remove the highlight if it's not accurate or helpful. If enough people indicate that a topic is not correctly identified on a particular page, this highlight will eventually be removed for all users. 
 
-2. Whether the suggested topic is valuable to the organization. If enough people indicate that the suggested topic is valuable, the topic is automatically confirmed. Alternateively, if the suggestd topic is not valuable, the topic is automatically rejected. The Knowledge Manager can observe this activity in the Manage Topics view.
+2. Whether the suggested topic is valuable to the organization. If enough people indicate that the suggested topic is valuable, the topic is automatically confirmed. Alternatively, if the suggested topic is not valuable, the topic is automatically rejected. The Knowledge Manager can observe this activity in the Manage Topics view.
 
 3. Whether the people and resource suggestions are helpful.
 
