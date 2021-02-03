@@ -37,7 +37,7 @@ AI identifies people and content connected to the topic, and if enough is discov
 - People who might be knowledgeable about the topic.
 - Files, pages, and sites that are related to the topic.
 
-The properties are identified from the files and pages that are part of the evidence for identifying the topic. Alternate names and acronyms are sourced from these files and pages. The short description is sourced from these files and pages, or from the internet through Wikipedia. The source file, page or Wikipedia article is referenced alongside the suggested properties. People are suggested based on their active contributions (e.g. edits) to the files and pages. A reference to the amount of contributions from a particular person provides a hint as to why the person has been identified. Files, pages and sites are ranked based on whether they are central to the topic, whether they can give an overview or introduction to the topic. 
+The properties are identified from the files and pages that are part of the evidence for identifying the topic. Alternate names and acronyms are sourced from these files and pages. The short description is sourced from these files and pages, or from the internet through Wikipedia. The source file, page, or Wikipedia article is referenced alongside the suggested properties. People are suggested based on their active contributions (like edits) to the files and pages. A reference to the amount of contributions from a particular person provides a hint as to why the person has been identified. Files, pages, and sites are ranked based on whether they are central to the topic, whether they can give an overview or introduction to the topic. 
 
 Not every identified topic will be useful to your organization or have identified any or the correct alternate names or a description, the appropriate people or content, so the ability to add topics that were not identified, keep suggested topics, and curate topics is critical to improving the quality of the topics that are discoverable in your organization.
 
@@ -47,25 +47,22 @@ Topic experiences then, when the context is appropriate, suggests these topics t
 
 Additionally, users will also be able to find topics through Microsoft Search.
 
-![Microsoft Search topic answer](../EfrenCanWeAddAnImageOfSearchHere) </br>
-
-
 ## Topic curation and feedback
 
 Topic Experiences welcomes human contribution to improve the quality of your topics. While AI initially identifies and suggests topics, manually made edits to content from contributors, manually added topics, confirmation from users for AI discovered properties and content, and feedback on the usefulness of topics are all essential.
 
 - Topics can be reviewed by **knowledge managers** in your organization. The knowledge manager can review topics that they have permissions to see. In the Manage Topics page in the Topic Center, they can choose to confirm AI generated topics ("suggested topics") as valid, reject topics to prevent the content from being viewed as a topic, create topics that were not discovered by AI, or identify topics that could benefit from a few edits by subject matter experts to be more helpful or accurate. See [Manage topics in the Topic center](manage-topics.md) for more information.
 
-- You can assign *Create and edit topics* permissions to any of your licensed users so that they can make changes to existing topics or create new topics. This allows users that are knowledgeable about the topic to update the topic page directly to make corrections or add additional information. They can also add new topics that AI wasn't able to identify. If there is enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI may enhance these manually added topics. Together, humans and AI can keep knowledge accurate over time and not have this rest on a single person. See [Create a new topic](https://docs.microsoft.com/en-us/microsoft-365/knowledge/create-a-topic) and [Edit a topic](https://docs.microsoft.com/en-us/microsoft-365/knowledge/edit-a-topic) for more information.
+- You can assign *Create and edit topics* permissions to any of your licensed users so that they can make changes to existing topics or create new topics. This allows users that are knowledgeable about the topic to update the topic page directly to make corrections or add additional information. They can also add new topics that AI wasn't able to identify. If there is enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI may enhance these manually added topics. Together, humans and AI can keep knowledge accurate over time and not have this rest on a single person. See [Create a new topic](https://docs.microsoft.com/microsoft-365/knowledge/create-a-topic) and [Edit a topic](https://docs.microsoft.com/microsoft-365/knowledge/edit-a-topic) for more information.
 
 - Even users who only have read access to topic (topic viewers) will be asked to verify the usefulness of specific topics. Feedback questions are asked on the **Topic summary** card to improve the value of the topic and its information. Questions about the quality and usefulness of the AI suggestions are presented to users one at a time. Questions include:
 1. Whether identifying the topic in the SharePoint page was helpful. There's an opportunity to remove the highlight if it's not accurate or helpful. If enough people indicate that a topic is not correctly identified on a particular page, this highlight will eventually be removed for all users. 
 
-2. Whether the suggested topic is valuable to the organization. If enough people indicate that the suggested topic is valuable, the topic is automatically confirmed. Alternateively, if the suggestd topic is not valuable, the topic is automatically rejected. The Knowledge Manager can observe this activity in the Manage Topics view.
+2. Whether the suggested topic is valuable to the organization. If enough people indicate that the suggested topic is valuable, the topic is automatically confirmed. Alternatively, if the suggested topic is not valuable, the topic is automatically rejected. The Knowledge Manager can observe this activity in the Manage Topics view.
 
 3. Whether the people and resource suggestions are helpful.
 
-4. On the Topic Center home page, you can see the topics in your organization to which you have a connection. You can choose to remain listed on the topic or remove yourself. This feedback is reflected to everyone who discovers this topic. See [Topic center overview](https://docs.microsoft.com/en-us/microsoft-365/knowledge/topic-center-overview) for more details on the topic center home page.
+4. On the Topic Center home page, you can see the topics in your organization to which you have a connection. You can choose to remain listed on the topic or remove yourself. This feedback is reflected to everyone who discovers this topic. See [Topic center overview](https://docs.microsoft.com/microsoft-365/knowledge/topic-center-overview) for more details on the topic center home page.
 
 Even with human edits, AI will continually look for more information about topics, and will look for human verification. For example, if AI thinks you are a person that should be listed as an expert on a topic, it will ask you to confirm this. 
 
