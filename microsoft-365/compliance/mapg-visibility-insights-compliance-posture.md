@@ -22,4 +22,5 @@ description: "Determine your app compliance posture."
 
 Content TBD.
 
+Describe summarizing the compilance of M365 apps with MAPG in the larger compliance posture of an M365 tenant
 

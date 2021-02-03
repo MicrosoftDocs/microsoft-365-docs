@@ -24,7 +24,26 @@ description: "Learn about visibility and insights."
 >REVIEWERS: This content is in progress and not ready for review.
 >
 
+Overview of visibility and insights capabilities and value
+
 With MAPG insights, you can see a view of all the Microsoft 365 apps in your tenant in a single dashboard. You can see all the apps’ activities and react or respond to them.
+
+
+Admins can quickly gain meaningful insights on their M365 application ecosystem and efficiently navigate to top tasks
+
+Review of required administrator roles for visibility and insights
+
+| Role | Read the dashboard | Read all apps | Read policies | Create, update, or delete policies | Read alerts | Update alerts | Read settings | Update settings |
+|:-------|:-----|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Compliance Reader | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  |
+| Global Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Global Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  |
+| Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Security Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  |
+| Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+||||||||||
+
 
 
 See:
@@ -54,4 +73,7 @@ Also:
 - Customize the dashboard to select the insights they want to view
 - Have a ‘drill-down’ view of a single app (app page) with all associated insights
 - Have a ‘drill-down’ view for users   
+
+## Key tasks
+
 

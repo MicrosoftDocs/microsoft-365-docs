@@ -39,3 +39,24 @@ The MAPG dashboard has the following sections:
 - Admins can quickly gain meaningful insights on their M365 application ecosystem and efficiently navigate to top tasks
 - Admins can gain deep insights on M365 apps in their environment
 
+
+### Getting a list of all the apps in the tenant
+
+M365 Compliance Center > App protection & governance > All apps page
+
+Summary of apps in the tenant
+
+### Getting detailed information on an app
+
+M365 Compliance Center > App protection & governance > All apps page > app
+
+Detailed app metadata, app usage information, permissions data, and a list of users who have given consent to that app.
+
+Usage tab
+
+Users tab
+
+Permissions tab
+
+Alert tab
+

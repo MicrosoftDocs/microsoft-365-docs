@@ -22,4 +22,11 @@ description: "Plan for app policies."
 
 Content TBD.
 
+## Using app policy templates
+
+## Using custom app policies
+
+Conditions
+
+Auto-remediation
 

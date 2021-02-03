@@ -22,4 +22,14 @@ description: "Manage app policies."
 
 Content TBD.
 
+Managing policies process:
+
+Create > test > monitor alerts > adjust > back to test
+
+## Editing a policy configuration
+
+## Adjusting policy evaluation order
+
+## Deleting a policy
+
 

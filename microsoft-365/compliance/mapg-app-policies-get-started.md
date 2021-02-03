@@ -22,4 +22,11 @@ description: "Get started with Learn about app policies."
 
 Content TBD.
 
+## Viewing the policies page
+
+M365 Compliance Center > App protection & governance > Overview page > Policies
+
+## What’s available in the dashboard
+
+Describe the information on the dashboard page
 

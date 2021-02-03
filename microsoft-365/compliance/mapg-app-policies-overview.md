@@ -25,3 +25,14 @@ description: "Learn about app policies."
 >
 
 Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting the access of risky apps to your data.
+
+How app policies are the method by which MAPG detects app anomolies resulting in detection (alerts) and remediation (manual or automatic) 
+
+Review of required administrator roles for app policy management
+
+App policy templates
+
+- Basic info
+- Policy settings and conditions
+- Actions
+- Status

@@ -25,7 +25,10 @@ description: "Learn about app threat detection and remediation."
 >REVIEWERS: This content is in progress and not ready for review.
 >
 
+Review of required administrator roles for visibility and insights
+
 With MAPG detection, be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used. 
+
 With MAPG remediation, along with automatic remediation capabilities, use remediation tools and controls in a timely manner to respond to anomalous app activity detections.
 
 

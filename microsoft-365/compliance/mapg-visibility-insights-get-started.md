@@ -22,4 +22,21 @@ description: "Get started with visibility and insights."
 
 Content TBD.
 
+## Viewing the dashboard
+
+M365 Compliance Center > App protection & governance > Overview page
+
+## What’s available in the dashboard
+
+Describe the information on the dashboard page
+
+Components of the M365 app ecosystem in the tenant
+
+## Viewing top apps by categories
+
+M365 Compliance Center > App protection & governance > Top apps by categories
+
+Category meanings
+
+
 

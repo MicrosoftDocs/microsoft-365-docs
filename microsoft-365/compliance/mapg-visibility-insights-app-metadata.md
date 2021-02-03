@@ -22,4 +22,4 @@ description: "Manage app metadata."
 
 Content TBD.
 
-
+Viewing and modifying app metadata

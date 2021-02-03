@@ -22,4 +22,9 @@ description: "View app policies."
 
 Content TBD.
 
+## Getting a list of all the app policies in the tenant
+
+M365 Compliance Center > App protection & governance > Policies page
+
+See all app governance policies in the tenant, together with relevant data like the number of active alerts and the severity. You can see deeper insights and information about the policy by clicking a policy in the list.
 
