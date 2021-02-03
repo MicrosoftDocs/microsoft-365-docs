@@ -20,6 +20,10 @@ description: "Learn about visibility and insights."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Content TBD.
+>[!Note]
+>REVIEWERS: This content is in progress and not ready for review.
+>
+
+With MAPG insights, you can see a view of all the Microsoft 365 apps in your tenant in a single dashboard. You can see all the apps’ activities and react or respond to them.
 
 

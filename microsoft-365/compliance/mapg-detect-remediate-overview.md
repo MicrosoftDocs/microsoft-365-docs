@@ -20,8 +20,14 @@ description: "Learn about app threat detection and remediation."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Content TBD.
+
+>[!Note]
+>REVIEWERS: This content is in progress and not ready for review.
+>
+
+With MAPG detection, be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used. 
+With MAPG remediation, along with automatic remediation capabilities, use remediation tools and controls in a timely manner to respond to anomalous app activity detections.
 
 
-Feedback from Anand: We should add some details on how MAPG works with M365 Defender (previously MTP). Also, we should highlight the integration with MCAS and AAD.
+**Feedback from Anand:** We should add some details on how MAPG works with M365 Defender (previously MTP). Also, we should highlight the integration with MCAS and AAD.
 
