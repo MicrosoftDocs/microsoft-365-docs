@@ -85,8 +85,8 @@ To set up Topics
 
     ![Who can see topics](../media/ksetup2.png)  
 
- > [!Note] 
- > While this setting allows you to select any user in your organization, only users who have Topic Experiences licenses assigned to them will be able to view topics.
+    > [!Note] 
+    > While this setting allows you to select any user in your organization, only users who have Topic Experiences licenses assigned to them will be able to view topics.
 
 7. In the **Permissions for topic management** page, you choose who will be able to create, edit, or manage topics. In the **Who can create and edit topics** section, you can select:
     - **Everyone in my organization**
@@ -105,7 +105,7 @@ To set up Topics
 
 9. On the **Create topic center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed. In the **Site name** box, type a name for your topic center. You can optionally type a short description in the **Description** box. 
 
-Select **Next**.
+   Select **Next**.
 
    ![Create Knowledge Center](../media/ksetup4.png)  
 
