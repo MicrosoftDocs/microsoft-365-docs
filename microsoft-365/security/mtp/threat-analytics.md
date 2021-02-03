@@ -158,9 +158,7 @@ _Mitigations section of a threat analytics report_
 >As part of the unified security experience, threat analytics is now available not just for Microsoft Defender for Endpoint, but also for Microsoft Defender for Office E5 license holders.
 >If you are not using the Microsoft 365 security portal (Microsoft 365 Defender), you can also see the report details (without the Microsoft Defender for Office data) in the Microsoft Defender Security Center portal (Microsoft Defender for Endpoint). 
 
-When using the reports, keep these in mind: 
-
-- Your threat analytics report experience requires certain roles and permissions. See [Custom roles in role-based access control for Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/custom-roles) for details.
+To access threat analytics report you need certain roles and permissions. See [Custom roles in role-based access control for Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/custom-roles) for details.
   -	To view alerts, incidents, or impacted assets data, you need to have permissions to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
   -	To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data. 
   -	To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
