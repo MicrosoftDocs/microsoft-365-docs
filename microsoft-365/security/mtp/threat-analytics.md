@@ -162,6 +162,8 @@ To access threat analytics report you need certain roles and permissions. See [C
   -	To view alerts, incidents, or impacted assets data, you need to have permissions to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
   -	To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data. 
   -	To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
+
+When looking at the threat analytics data, remember the following factors:
 - Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not shown in the charts.
 - Mitigations don't guarantee complete resilience. The provided mitigations reflect the best possible actions needed to improve resiliency.
 - Devices are counted as "unavailable" if they have not transmitted data to the service.
