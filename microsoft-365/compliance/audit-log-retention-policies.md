@@ -52,7 +52,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 2. In the left pane of the Microsoft 365 compliance center, click **Show all**, and then click **Audit**.
 
-    The **Audit** page is displayed.
+    The **Audit** page is displayed. Click the **Audit retention policies** tab.
 
     ![The Audit log search page in the compliance center](../media/AuditLogRetentionPolicy1.png)
 
