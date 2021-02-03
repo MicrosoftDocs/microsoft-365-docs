@@ -57,14 +57,14 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 ## Deploy the DLP on-premises scanner
 
 1. Follow the procedures in [Install the AIP unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
-2 Follow the procedures in [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install) to complete the scanner installation.
+2. Follow the procedures in [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install) to complete the scanner installation.
     1. Network discovery jobs configuration is an optional step. You can skip it and define specific repositories to be scanned in your content scan job.
     2. You must create content scan job and specify the repositories that host files that need to be evaluated by the DLP engine.
     3. Enable DLP rules in the created Content scan job, and set the **Enforce** option to **Off**, unless you want to proceed directly to the DLP enforcement stage.
 3. Verify that you content scan job is assigned to the right cluster. If you still did not create a content scan job create a new one and assign it to the cluster that contains the scanner nodes that run the public preview version.
 4. Connect to the [Azure Information Protection extension in Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) and add your repositories to the content scan job that will perform the scan.
 
-6. Do one of the following to run your scan:
+5. Do one of the following to run your scan:
     1. set the scanner schedule
     1. use the manual **Scan Now** option in the portal
     1. or run **Start-AIPScan** PowerShell cmdlet
