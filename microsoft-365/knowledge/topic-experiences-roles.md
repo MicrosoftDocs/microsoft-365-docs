@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-topics
 localization_priority: None
-description: "Learn about user roles in Topic Experiences."
+description: "Learn about user roles in Viva Topics."
 ---
 
 # Microsoft Viva Topics roles 
@@ -29,7 +29,7 @@ When you use Viva Topics in your Microsoft 365 environment, your users can have 
 Topic viewers are users in your organization who can view highlighted topics in their SharePoint modern site and in SharePoint Search. They can select highlighted topics to view more details in about them in a topic page. 
 
 For topic highlights and their topic pages to be visible to a topic viewer, the user must:
--	[Be assigned a Topic experiences license](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) by their Microsoft 365 admin.
+-	[Be assigned a Viva Topics license](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) by their Microsoft 365 admin.
 -	Be allowed to have visibility to topics. This is done by the knowledge admin in the Viva Topics settings page in the Microsoft 365 admin center.
 
 

@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-topics
 localization_priority: None
-description: "Overview of Topic experiences."
+description: "Overview of Viva Topics."
 ---
 
 # Microsoft Viva Topics overview 

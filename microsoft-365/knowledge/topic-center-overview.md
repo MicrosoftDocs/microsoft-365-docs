@@ -19,7 +19,7 @@ localization_priority: None
 # Topic center overview
 
 
-In Viva Topics, the topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Topic Experiences setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
+In Viva Topics, the topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Viva Topics setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
 
 The topic center has a default home page (My topics) where all Topic Experience users can see the topics to which they have a connection. 
 

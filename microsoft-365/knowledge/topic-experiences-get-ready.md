@@ -1,27 +1,23 @@
 ---
-title: "Get your environment ready for Topic Experiences (Preview)"
-description: "Get your environment ready so you can provide as much content as possible for your users with Topic Experiences (Preview)."
+title: "Get your environment ready for Microsoft Viva Topics"
+description: "Get your environment ready so you can provide as much content as possible for your users with Microsoft Viva Topics."
 ms.author: samanro
 author: samanro
 manager: pamgreen
-ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: 
 localization_priority: Normal
-ROBOTS: NOINDEX
+
 ---
 
-# Get your environment ready for Topic Experiences (Preview)
+# Get your environment ready for Microsoft Viva Topics
 
-> [!Note]
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+To make the most of Viva Topics, you want to have as much content as possible included for topic discovery, so that you can have a rich set of topics for your users. But what content should be used for topic discovery? How do you maximize the content that is indexed, while staying in control? The more content is in scope, the better the insights the artificial intelligence can generate. This article walks you through planning steps to ensure that you are including the appropriate content, and that you have the right people and resources to make a good experience for your users.
 
-To make the most of Topic Experiences, you want to have as much content as possible included for topic discovery, so that you can have a rich set of topics for your users. But what content should be used for topic discovery? How do you maximize the content that is indexed, while staying in control? The more content is in scope, the better the insights the artificial intelligence can generate. This article walks you through planning steps to ensure that you are including the appropriate content, and that you have the right people and resources to make a good experience for your users.
-
-To plan for Topic experiences (Preview), you need to:
+To plan for Viva Topics, you need to:
 
 ![Migrate, connect, modernize, secure, and identify steps for onboarding to knowledge management](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
@@ -74,11 +70,11 @@ Make the most of your migration:
 If you can’t migrate some content, then connect it with the Microsoft Graph:
 
 - Consider implementing [Graph Content Connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview). Using connectors, external content can be indexed into the Microsoft Graph, where users can then discover it through Microsoft Search.
-- Future developments will bring external data into topic experiences.
+- Future developments will bring external data into Viva Topics.
 
 ## 3. Modernize SharePoint pages
 
-Because topic cards and highlights can only appear on modern pages, update any pages you want to include in topic experiences from classic to modern. See [Modernize your classic SharePoint sites](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites). You can use the [SharePoint Modernization scanner](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) to prepare your classic sites for modernization.
+Because topic cards and highlights can only appear on modern pages, update any pages you want to include in Viva Topics from classic to modern. See [Modernize your classic SharePoint sites](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites). You can use the [SharePoint Modernization scanner](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) to prepare your classic sites for modernization.
 
 If you have a lot of classic sites, prioritize high profile pages to convert to modern.
 
@@ -115,7 +111,7 @@ At the content level, you can also control what is discoverable. Any configurati
 
 Managing topics involves three key roles, including two new Azure Active Directory (AAD) roles: Knowledge administrator and Knowledge manager:
 
-- The Knowledge administrator (KA) is a technical role, typically in IT. This role allows the setup of the topic experiences in the M365 admin center, as well as the configuration of topic discovery and visibility.
+- The Knowledge administrator (KA) is a technical role, typically in IT. This role allows the setup of the Viva Topics in the M365 admin center, as well as the configuration of topic discovery and visibility.
 - The Knowledge manager (KM) works with the topics themselves and oversees their quality and completeness.
 - Topic contributors (TCs) are not based on an AAD role, but permissions in the admin center. They are subject-matter experts able to curate the content on topics, adding resources and people.
 
@@ -125,14 +121,14 @@ Depending on your organization you may have few or many people acting in these r
 |:-------|:-------|:-------|:-------|
 | AAD role | AAD role | SME |
 | Has access to the admin center | Has access to the admin center | No access to the admin center |
-| Sets up Topic experiences | Owns management and quality of topics | Contributes to topics based on their expertise. |
+| Sets up Viva Topics | Owns management and quality of topics | Contributes to topics based on their expertise. |
 | Ensures that security and compliance standards are enforced and understands licensing agreement.| Performs topic management tasks such as create, edit, delete, and reject topics. Supports Topic contributors with their tasks. | Curates the information and content on topic pages, including which people and resources are pinned to that topic. |
 
 Highlights and cards will appear to users in the context of their work, for example as they browse modern pages in SharePoint. You control the end user experience for topics.
 
 - Who can see Topics? Topic visibility is configured in the Microsoft 365 Admin Center. Choose which groups to allow to see topics:
   - Everyone in my organization. "Everyone" does not include guests, it is all internal users in your directory
-  - Only Selected people or security groups (this option is good while you are still rolling out topic experiences, so you can test with a subset of users). If you want guests to view Topics, you will need to use the “selected people or security groups” option, and grant them a license.
+  - Only Selected people or security groups (this option is good while you are still rolling out Viva Topics, so you can test with a subset of users). If you want guests to view Topics, you will need to use the “selected people or security groups” option, and grant them a license.
   - No one.
 
     All users, even guest users, will need to have a license applied in order to view the topic experience. And remember that permissions always control what can be seen.
