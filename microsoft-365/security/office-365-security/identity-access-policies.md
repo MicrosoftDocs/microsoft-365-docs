@@ -143,11 +143,11 @@ Finally, select **On** for **Enable policy**, and then choose **Create**.
 
 Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
 
-## Block clients that don't support modern authentication
+## Block clients that don't support multi-factor
 
-Use the settings in these tables for a Conditional Access policy to block clients that don't support modern authentication.
+Use the settings in these tables for a Conditional Access policy to block clients that don't support multi-factor authentication.
 
-See [this article](../../enterprise/microsoft-365-client-support-modern-authentication.md) for a list of clients in Microsoft 365 that do suppport modern authentication.
+See [this article](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) for a list of clients in Microsoft 365 that do support multi-factor authentication.
 
 In the **Assignments** section:
 
