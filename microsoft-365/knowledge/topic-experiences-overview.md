@@ -44,16 +44,26 @@ When a topic is mentioned in content on SharePoint news and pages, you'll see it
 
 Viva Topics uses Microsoft AI technology to identify **topics** in your Microsoft 365 environment.
 
-A topic is a phrase or term that is organizationally significant or important. It has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it.
+A topic is a phrase or term that is organizationally significant or important. It has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it. There are lots of different types of topics that will be important to your organization. Initially, the Microsoft AI technology focuses on the following types:
+- Project
+- Event
+- Organization
+- Location
+- Product
+- Creative work
+- Field of study
 
-When a topic is identified and AI determines that it has enough information for it to be a suggested topic, a **topic page** is created for it that contains information that was gathered through topic indexing, such as:
+
+When a topic is identified and AI determines that it has enough information for it to be a suggested topic, a **topic page** displays the information that was gathered through topic indexing, such as:
 
 - Alternate names and/or acronyms.
 - A short description of the topic.
-- Users who might be knowledgeable about the topic.
+- People who might be knowledgeable about the topic.
 - Files, pages, and sites that are related to the topic.
 
 Your knowledge admins can choose to crawl all SharePoint sites in your tenant for topics, or to just select certain ones.
+
+See [Topic discovery and curation](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 ## Roles
 
@@ -89,10 +99,10 @@ See [Manage topics in the Topic center](manage-topics.md) for more information.
 Admin controls in the Microsoft 365 admin center allow you to manage your knowledge network. They allow a Microsoft 365 global or SharePoint administrator to:
 
 - Control which users in your organization are allowed to see topics in SharePoint modern pages or in SharePoint search results.
-- Control which SharePoint sites will be crawled to search for topics.
-- Configure topic discovery to exclude specific topics from being found.
+- Control which SharePoint sites will be crawled to identify topics.
+- Exclude specific topics from being found.
 - Control which users can manage topics in the topic center.
-- Control which users can create and edit topics in the topic center.
+- Control which users can create and edit topics.
 - Control which user will be able to view topics.
 
 See [assign user permissions](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions), [manage topic visibility](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules), and [manage topic discovery](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) for more information about admin controls.
@@ -101,11 +111,13 @@ See [assign user permissions](https://docs.microsoft.com/microsoft-365/knowledge
 
 AI will continually work to provide you suggestions to improve your topics as changes occur in your environment. 
 
-Users who you allow access to see topics in their daily work might be asked if the topic was useful to them. The system looks at these responses and uses them to help determine what's shown on topic summaries and in topic details.
+Users with edit or create topics permissions can make updates to topic pages directly if they want to make corrections or add additional information. They can also add new topics that AI wasn't able to identify. If there is enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI may enhance these manually added topics 
 
-Users with edit or create topics permissions can make updates to topic pages directly if they want to make corrections or add additional information. 
+Users who you allow access to see topics in their daily work might be asked if the topic was useful to them. The system looks at these responses and uses them to improve the topic highlight, and help determine what's shown on topic summaries and in topic details.
 
 Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic. 
+
+See [Topic discovery and curation](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 
 ## See also
