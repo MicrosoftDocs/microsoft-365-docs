@@ -175,6 +175,11 @@ Examples of label inheritance, where the label **Confidential** applies encrypti
 
 - A user creates a new email message and applies the **Confidential** label to this message. They then add an Office attachment that is labeled **General** and this file isn't encrypted. As a result of inheritance, the attachment gets relabeled as **Confidential** and now has encryption applied from that label.
 
+Examples where labels are not inherited:
+
+- The label applied to the email message doesn't apply encryption
+- The attachment is already encrypted 
+
 
 ## Sensitivity label compatibility
 
