@@ -51,6 +51,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileOriginUrl` | string | URL where the file was downloaded from |
 | `FileOriginReferrerUrl` | string | URL of the web page that links to the downloaded file |
 | `FileOriginIP` | string | IP address where the file was downloaded from |
+| `FileSize` | int | Size of the file in bytes |
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
