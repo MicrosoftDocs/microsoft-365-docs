@@ -68,7 +68,7 @@ Contoso IT administrators take the following steps to verify the licensing suppo
 
 1. IT administrators sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Billing** > **Licenses**.
 
-2. Here they confirm that they have one of the [license options](communication-compliance-configure.md#before-you-begin) that includes support for communication compliance.
+2. Here they confirm that they have one of the [license options](communication-compliance-configure.md#subscriptions-and-licensing) that includes support for communication compliance.
 
 ![Communication compliance licensing](../media/communication-compliance-case-licenses.png)
 
