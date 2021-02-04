@@ -169,13 +169,18 @@ Users can apply just one label at a time for each document or email.
 
 When you label an email message that has attachments, the attachments don't inherit the label with one exception:
 
-- The attachment is an Office document with a label that doesn't apply encryption, and the label you apply to the email message applies encryption. In this case, the emailed Office document inherits the email's label with its encryption settings.
+- The label that you apply to the email message applies encryption, and the attachment is an Office document that is either not labeled, or has a label that doesn't apply encryption.
 
-Otherwise: 
+If you need to check the outcome for different scenarios, use the following table:
 
-- If the attachments have a label, they keep their originally applied label.
-- If the attachments are encrypted without a label, the encryption remains but they aren't labeled.
-- If the attachments don't have a label, they remain unlabeled.
+|Email label configuration|Office attachment|Label inherited|
+|:------------------------|:----------------|:--------------|
+|Applies encryption| No label or encryption| Yes|
+|Applies encryption| Label and no encryption| Yes|
+|Applies encryption| Label that applies encryption| No|
+|Applies encryption| No label but encryption| No|
+|Doesn't apply encryption| No label and no encryption| No|
+|Doesn't apply encryption| No label but encrypted| No|
 
 ## Sensitivity label compatibility
 
