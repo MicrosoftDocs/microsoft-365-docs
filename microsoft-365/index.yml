@@ -76,8 +76,8 @@ productDirectory:
       links:
         - url: solutions/collaborate-with-people-outside-your-organization.md
           text: Configure external sharing
-        - url: /sharepoint/plan-intranet
-          text: Plan an intelligent SharePoint intranet
+        - url: /sharepoint/intelligent-internet-overview
+          text: Build an intelligent SharePoint intranet
         - url: /sharepoint/deploy-file-collaboration
           text: File collaboration in SharePoint
         - url: /onedrive/plan-onedrive-enterprise

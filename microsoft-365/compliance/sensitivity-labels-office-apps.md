@@ -59,8 +59,8 @@ The numbers listed are the minimum Office application version required for each 
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Under review |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under review   | Under review         | Under review                                                        |
-|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Preview: [Current Channel (Preview)](https://office.com/insider)            | Preview: [Current Channel (Preview)](https://office.com/insider)        | Under review   | Under review         | Yes <sup>\*</sup>                                                        |
-|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider)             | Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider)         | Under review   | Preview: [Beta Channel](https://office.com/insider)         | Under review                                            
+|[Get started with data classification](data-classification-overview.md) and send data for administrators                      | 2011+ | 16.43+ | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: [Current Channel (Preview)](https://office.com/insider) | Yes <sup>\*</sup>                                                        |
+|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Preview: [Current Channel (Preview)](https://office.com/insider)             | Preview: [Current Channel (Preview)](https://office.com/insider)         | Under review   | Rolling out: 16.0.13628+ | Under review                                            
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Rolling out: 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and encrypted documents | Under review | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -85,7 +85,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Preview: [Current Channel (Preview)](https://office.com/insider))                        | 16.43+                     | Under review            | Under review                | Yes                |
-|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Preview: [Current Channel (Preview)](https://office.com/insider)                       | Preview: [Current Channel (Preview)](https://office.com/insider)                    | Under review           | Under review               | Yes               |
+|[Get started with data classification](data-classification-overview.md) and send data for administrators                      | 2011+ | Under review | Under review           | Under review               | Under review |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+                    | Under review           | Under review               | Yes |
 |
 
@@ -167,15 +167,20 @@ For a more consistent label experience with meaningful reporting, provide approp
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments don't inherit the label with one exception:
+When you label an email message that has attachments, the attachments can inherit the label only if the label that you apply to the email message applies encryption, and the attachment is an Office document that isn't already encrypted. Because the inherited label applies encryption, the attachment becomes encrypted.
 
-- The attachment is an Office document with a label that doesn't apply encryption, and the label you apply to the email message applies encryption. In this case, the emailed Office document inherits the email's label with its encryption settings.
+|Email label configuration|Office attachment|Label inherited|
+|:------------------------|:----------------|:--------------|
+|Applies encryption| No label or encryption| ![yes](../media/yes-icon.png)|
+|Applies encryption| Label and no encryption| ![yes](../media/yes-icon.png)|
+|Applies encryption| Label that applies encryption| ![no](../media/no-icon.png)|
+|Applies encryption| No label but encryption| ![no](../media/no-icon.png)|
+|Doesn't apply encryption| No label or encryption| ![no](../media/no-icon.png)|
+|Doesn't apply encryption| No label but encrypted| ![no](../media/no-icon.png)|
+|Doesn't apply encryption| Label that applies encryption| ![no](../media/no-icon.png)|
+|Doesn't apply encryption| No label but encryption| ![no](../media/no-icon.png)|
 
-Otherwise: 
-
-- If the attachments have a label, they keep their originally applied label.
-- If the attachments are encrypted without a label, the encryption remains but they aren't labeled.
-- If the attachments don't have a label, they remain unlabeled.
+For the scenarios where the original attachment is encrypted without a label, this encryption always remains when a label is applied to the email message.
 
 ## Sensitivity label compatibility
 
