@@ -127,7 +127,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
 
-- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 500 MB. For these files, you can use the Office desktop apps to apply a label but you must be the only person who has the file open.
+- Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 300 MB. For these files, you can use the Office desktop apps to apply a label but you must be the only person who has the file open.
 
 - Office apps for iOS and Android are not supported.
 
@@ -155,6 +155,9 @@ During the preview, you must use a specific URL to access this setting in the Mi
     ![Option to turn on co-authoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
 ## Contact Support if you need to disable this feature
+
+> [!CAUTION]
+> If you do need to disable this feature, be aware that labeling information can be lost.
 
 After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test this feature with a test tenant rather than a production tenant.
 
