@@ -167,11 +167,7 @@ For a more consistent label experience with meaningful reporting, provide approp
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments don't inherit the label with one exception:
-
-- The label that you apply to the email message applies encryption, and the attachment is an Office document that is either not labeled, or has a label that doesn't apply encryption.
-
-If you need to check the outcome for different scenarios, use the following table:
+When you label an email message that has attachments, the attachments can inherit the label only if the label that you apply to the email message applies encryption, and the attachment is an Office document that isn't already encrypted:
 
 |Email label configuration|Office attachment|Label inherited|
 |:------------------------|:----------------|:--------------|
