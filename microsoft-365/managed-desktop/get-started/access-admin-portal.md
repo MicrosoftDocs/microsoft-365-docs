@@ -69,13 +69,13 @@ For easy management of built-in roles, there is a security group for each custom
 
 ### Assigning built-in roles to groups
 
-If you need to assign one or more of the built-in roles to a existing group you will need to follow these steps:
-1. Go to [portal.azure.com](https://portal.azure.com/)
-2. Search for and open **Enterprise applications**
-3. Change the **Application type** filter to _Microsoft Applications_ and select **Apply**
-4. Search for and _Modern Workplace Customer APIs_
-5. Select **Users and groups** from the navigation, then **Add user/group**
-6. Search for the group you want from **Users and groups**
-7. Search the applicable role from **Select a role**
-8. Select **Assign**
+If you need to assign one or more of the built-in roles to a existing group, follow these steps:
+1. Go to [portal.azure.com](https://portal.azure.com/).
+2. Search for and open **Enterprise applications**.
+3. Change the **Application type** filter to _Microsoft Applications_ and, then select **Apply**.
+4. Search for and select _Modern Workplace Customer APIs_.
+5. Select **Users and groups** from the pane on the left side, and then select **+ Add user/group**.
+6. Search for the group you want from **Users and groups**.
+7. Search for the applicable role from **Select a role**, and then select it.
+8. Select **Assign**.
  
