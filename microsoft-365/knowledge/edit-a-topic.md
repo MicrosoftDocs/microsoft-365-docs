@@ -28,24 +28,24 @@ localization_priority: Normal
 In Viva Topics, you can edit an existing topic. You may need to do this if you want to correct or add additional information to an existing topic page. 
 
 > [!Note] 
-> While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that information that you manually add when editing an existing topic is visible to all users who have permissions to view the topic. 
+> While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that information that you manually add when editing an existing topic is visible to all users who have permissions to view topics. 
 
 ## Requirements
 
 To edit an existing topic, you need to:
 - Have a Viva license.
-- Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Knowledge Network topic permissions settings. 
+- Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Users who have permission to manage topics in the Topic center (knowledge managers) already have permissions to create and edit topics.
 
 ## How to edit a topic page
 
-Users who have the **Who can create or edit topics** permission can edit a topic by opening the topic page from a topic highlight, and then selecting the <b>Edit</b> button on the top right of the topic page.
+Users who have the **Who can create or edit topics** permission can edit a topic by opening the topic page from a topic highlight, and then selecting the <b>Edit</b> button on the top right of the topic page. The topic page can also be opened from the topic center home page where you can find all the topics that you have a connection to.
 
    ![Edit button](../media/knowledge-management/edit-button.png) </br> 
 
-Knowledge managers can also topics directly from the Manage Topics page by selecting the topic, and then selecting <b>Edit</b> in the toobar.
+Knowledge managers can also topics directly from the Manage Topics page by selecting the topic, and then selecting <b>Edit</b> in the toolbar.
 
    ![Edit topic in Manage Topics](../media/knowledge-management/manage-topics-edit.png) </br> 
 
