@@ -51,7 +51,9 @@ There are four phases to migrating DLP policies from Exchange into the Unified D
 
 ### Licensing and versions
 
-***WATING ON AAKASH AND ARJUN TO SUPPLY THE ANSWER TO What SKU's, licensing and add-ons will the migration wizard be available in?***
+Before you get started with migrating DLP policies, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. 
+
+To access and use the policy migration wizard, you must have one of these subscriptions or add-ons listed in [Microsoft 365 Licensing guidance for security & compliance, Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 ### Permissions
 
