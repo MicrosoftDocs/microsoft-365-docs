@@ -72,6 +72,8 @@ Permissions and roles can also be managed in the Microsoft 365 security center:
 ## Required roles and permissions
 The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
 
+Users don't need to have all of the roles listed below, only one of the roles is necessary to get the appropriate permissions for the unified experiences. 
+
 > [!NOTE]
 > Incident management requires management permissions for all products that are part of the incident.
  
