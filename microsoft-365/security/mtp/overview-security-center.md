@@ -4,8 +4,8 @@ description: Describes monitoring and managing security across your Microsoft id
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-ms.localizationpriority: medium
-f1.keywords: 
+localization_priority: Normal
+f1.keywords:
   - NOCSH
 ms.author: ellevin
 author: levinec
