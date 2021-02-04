@@ -167,9 +167,14 @@ For a more consistent label experience with meaningful reporting, provide approp
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments inherit the label only if the label that you apply to the email message applies encryption and the Office document that isn't already encrypted
+When you label an email message that has attachments, the attachments inherit the label only if the label that you apply to the email message applies encryption and the Office document isn't already encrypted.
 
 Because the inherited label applies encryption, the attachment becomes encrypted.
+
+For example, a user adds an attachment that isn't labeled or encrypted. The **Confidential** label applies encryption and this user adds the **Confidential** label to the email message. As a result of inheritance, the attachment becomes labeled **Confidential** with encryption from that label.
+
+Note that this inheritance can change an existing label on an attachment. For example, a user adds an attachment that has the **General** label, a label that doesn't apply encryption. When they add the **Confidential** label to the email message, the original label of **General** on the attachment changes to **Confidential**.
+
 
 ## Sensitivity label compatibility
 
