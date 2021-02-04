@@ -49,6 +49,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Protocol` | string | Network protocol used |
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
+| `AccountSid` | string | Security Identifier (SID) of the account |
 | `AccountUpn` | string | User principal name (UPN) of the account |
 | `AccountObjectId` | string | Unique identifier for the account in Azure AD |
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
@@ -56,8 +57,10 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeviceType` | string | Type of device | 
 | `OSPlatform` | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `Port` | string |  |
 | `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
 | `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
+| `DestinationPort` | string | Destination port of related network communications |
 | `Location` | string | City, country, or other geographic location associated with the event |
 | `Isp` | string | Internet service provider (ISP) associated with the endpoint IP address |
 | `ReportId` | long | Unique identifier for the event |
