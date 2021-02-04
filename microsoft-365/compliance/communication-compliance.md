@@ -81,7 +81,8 @@ Built-in remediation workflows allow you to quickly identify and take action on 
 - **New filters**: Investigate and remediate policy alerts faster with message filters for several fields, including sender, recipient, date, domains, and many more.
 - **Improved message views**: Investigation and remediation actions are now quicker with new message source, text, and annotation views. Message attachments are now viewable to provide complete context when taking remediation actions.
 - **User history view**: Historical view of all user message remediation activities, such as past notifications and escalations for policy matches, now provides reviewers with more context during the remediation workflow process. First-time or repeat instances of policy matches for users are now archived and easily viewable.
-- **Pattern detected notification (preview)**: Many harassing and bullying actions take place over time and involve reoccurring instances of the same behavior by a user. The new Pattern detected notification displayed in alert details helps raise attention to these alerts and this type of behavior.
+- **Pattern detected notification**: Many harassing and bullying actions take place over time and involve reoccurring instances of the same behavior by a user. The new Pattern detected notification displayed in alert details helps raise attention to these alerts and this type of behavior.
+- **Show Translate view**: Quickly investigate message details in other languages using translate support in the remediation workflow. Messages in other languages are automatically converted to the display language of the reviewer.
 
 ### Actionable insights
 
