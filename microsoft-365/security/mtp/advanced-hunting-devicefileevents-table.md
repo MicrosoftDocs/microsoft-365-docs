@@ -78,7 +78,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | string | Additional information about the entity or event |
-| `InitiatingProcessFileSize` | string | Size of the file that ran the process responsible for the event |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 | `SensitivityLabel` | string | Label applied to an email, file, or other content to classify it for information protection |
 | `SensitivitySubLabel` | string | Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently |
 | `IsAzureInfoProtectionApplied` | boolean | Indicates whether the file is encrypted by Azure Information Protection |
