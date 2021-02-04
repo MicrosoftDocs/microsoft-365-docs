@@ -9,7 +9,6 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to set up Microsoft Viva Topics"
 ---
 
@@ -44,7 +43,7 @@ To set up Topics
 
     ![Get started](../media/k-get-started.png) 
 
-4. On the **Choose how Viva Topics discovers knowledge** page, you will configure topic discovery. In the **Select SharePoint topic sources** section, select which SharePoint sites will be crawled as sources for your topics during discovery. Choose from:
+4. On the **Choose how Viva Topics can find topics** page, you will configure topic discovery. In the **Select SharePoint topic sources** section, select which SharePoint sites will be crawled as sources for your topics during discovery. Choose from:
     - **All sites**: All SharePoint sites in your organization. This includes current and future sites.
     - **All, except selected sites**: Type the names of the sites you want to exclude.  You can also upload a list of sites that you want to opt out from discovery. Sites created in future will be included as sources for topic discovery. 
     - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
@@ -125,18 +124,11 @@ To assign licenses:
 
 1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
 
-2. Select the users that you want to license, and click **Manage product licenses**.
+2. Select the users that you want to license, and click **Licenses and apps**.
 
-3. Select **Assign more**.
+3. Under **Apps**, make sure **Graph Connectors Search with Index** and **Viva Topics** are both selected.
 
-4. Under **Licenses**, select **Topic Experiences**.
-
-5. Under **Apps**, make sure **Graph Connectors Search with Index** and **Topic Experiences** are both selected.
-
-    > [!div class="mx-imgBorder"]
-    > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
-
-6. Click **Save changes**.
+4. Click **Save changes**.
 
 ## Manage topic experiences
 
