@@ -66,6 +66,12 @@ Once you've selected an entity of interest, the details pane changes to display 
 
 Once you're done investigating the alerts, you can go back to the alert you started with, mark the alert's status as Resolved and classify it as either a False alert or True alert. Classifying alerts helps tune your product to provide more true alerts and less false alerts.
 
+> [!NOTE]
+> One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 in incrementally being rolled out and is currently in preview. <br>
+> Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated prior to the tag update will not reflect the updated tag name. 
+> If you update a tag name, only alerts that are generated after the modification will have the new tag name. Prior alerts will not be updated with the modified tag name. / Alerts generated prior to the modification will not be updated with the new tag name. 
+
+
 
 ## Manage the unified alert queue
 
@@ -74,6 +80,10 @@ Selecting Alerts under Incidents & Alerts in the Microsoft 365 security center n
 ![Image of sample alert page](../../media/unified-alert-queue.png)
 
 The Alerts queue shows a list of alerts that were flagged in your network. By default, the queue displays alerts seen in the last 30 days. The most recent alerts are shown at the top of the list helping you see the most recent alerts first.
+
+> [!NOTE]
+> Currently, alerts from Microsoft Defender for Office 365 is limited to the last 7 days. If you need to triage alerts older than 7 days, use the alerts queue in the [Security and Compliance Center](https://protection.office.com/viewalerts).
+
 
 On the top navigation, you can:
 
