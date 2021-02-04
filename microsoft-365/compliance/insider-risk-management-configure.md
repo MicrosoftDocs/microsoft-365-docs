@@ -36,10 +36,13 @@ Before you get started with insider risk management, you should confirm your [Mi
 - Microsoft 365 A5 subscription (paid or trial version)
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
 
 Users included in insider risk management policies must be assigned one of the licenses above.
 
-If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
+If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
 ## Step 1: Enable permissions for insider risk management
 
@@ -58,7 +61,7 @@ Depending on the structure of your compliance management team, you have options 
 | **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access all insider risk management alerts, cases, notices templates, and the Content Explorer. |
 
 > [!NOTE]
-> These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
+> These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
 ### Add users to an insider risk management role group
 
