@@ -75,7 +75,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RequestAccountName` | string | User name of account used to remotely initiate the activity |
 | `RequestAccountDomain` | string | Domain of the account used to remotely initiate the activity |
 | `RequestAccountSid` | string | Security Identifier (SID) of the account used to remotely initiate the activity |
-| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | string | Additional information about the entity or event |
 | `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
