@@ -57,7 +57,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RemoteIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `RemotePort` | int | TCP port on the remote device that was being connected to |
 | `AdditionalFields` | string | Additional information about the event in JSON array format |
-| `InitiatingProcessFileSize` | string | Size of the file that ran the process responsible for the event |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
