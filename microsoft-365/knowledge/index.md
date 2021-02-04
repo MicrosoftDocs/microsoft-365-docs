@@ -11,7 +11,6 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-topics
-ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: "Learn how to find resources for Microsoft Viva Topics."
 ---
