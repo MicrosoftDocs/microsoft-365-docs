@@ -90,7 +90,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessLogonId` | string | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
-| `InitiatingProcessFileSize` | string | Size of the file that ran the process responsible for the event |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 | `FileSize` | int | Size of the file in bytes |
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
