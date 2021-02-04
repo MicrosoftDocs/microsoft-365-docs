@@ -33,7 +33,7 @@ In Viva Topics, you can edit an existing topic. You may need to do this if you w
 ## Requirements
 
 To edit an existing topic, you need to:
-- Have a Viva license.
+- Have a Viva Topics license.
 - Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
@@ -45,7 +45,7 @@ Users who have the **Who can create or edit topics** permission can edit a topic
 
    ![Edit button](../media/knowledge-management/edit-button.png) </br> 
 
-Knowledge managers can also topics directly from the Manage Topics page by selecting the topic, and then selecting <b>Edit</b> in the toolbar.
+Knowledge managers can also edit topics directly from the Manage Topics page by selecting the topic, and then selecting <b>Edit</b> in the toolbar.
 
    ![Edit topic in Manage Topics](../media/knowledge-management/manage-topics-edit.png) </br> 
 
@@ -63,7 +63,7 @@ Knowledge managers can also topics directly from the Manage Topics page by selec
 
     ![Description section](../media/knowledge-management/description.png)</br>
 
-4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the add a new user box, and then selecting the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
+4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the <b>Add a new user</b> box, and then selecting the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
  
     ![Add pinned people](../media/knowledge-management/pinned-people.png)</br>
 
@@ -79,7 +79,7 @@ Knowledge managers can also topics directly from the Manage Topics page by selec
 
     You can also use the <b>From a link</b> option to add a file or page by providing the URL. 
 
-6. The <b>Suggested files and pages</b> section shows files and pages that AI suggested to be associated to the topic.
+6. The <b>Suggested files and pages</b> section shows files and pages that AI suggests to be associated to the topic.
 
    ![Suggested files and pages section](../media/knowledge-management/suggested-files-and-pages.png)</br>
 

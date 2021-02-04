@@ -19,11 +19,11 @@ localization_priority: None
 # Topic center overview
 
 
-In Microsoft Viva Topics, the topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Viva Topics setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
+In Microsoft Viva Topics, the topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It's created during [Viva Topics setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
 
 The topic center has a default home page with the Topics web part where all licensed users can see the topics to which they have a connection. 
 
-While all licensed users who can view topics will have access to the topic center, knowledge managers will also be able to manage topics through the **Manage topics** page. The Manage topics tab will only display to users who have the **Manage topics** permissions. 
+While all licensed users who can view topics will have access to the topic center, knowledge managers can al manage topics through the **Manage topics** page. The Manage topics tab will only display to users who have the **Manage topics** permissions. 
 
 ## Where is my Topic center
 
@@ -52,11 +52,11 @@ The topic center is created during Viva Topics setup. After setup completes, an 
 
 On the topic center home page, you can see the topics in your organization to which you have a connection.
 
-- Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?**. These are topics where your connection to the topic has been suggested through AI. For example, you may be an author of a related file or site. You are asked to confirm that you should stay listed as a related person for the topic.
+- Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?**. These are topics in which your connection to the topic has been suggested through AI. For example, you may be an author of a related file or site. You are asked to confirm that you should stay listed as a related person for the topic.
 
    ![Suggested connections](../media/knowledge-management/my-topics.png) </br>
  
-- Confirmed connections - These are topics where you are pinned on the topic page or you've confirmed a suggested connection to the topic. Topics will move from the suggested to confirmed section when you confirm a suggested connection.
+- Confirmed connections - These are topics in which you are pinned on the topic page or you've confirmed a suggested connection to the topic. Topics will move from the suggested to confirmed section when you confirm a suggested connection.
  
    ![Confirmed topics](../media/knowledge-management/my-topics-confirmed.png) </br>
 
@@ -78,7 +78,7 @@ On the Manage Topics page, the topic dashboard shows all the topics, you have ac
 
 ## Create or edit a topic
 
-If you have **Create and edit topics** permissions, you will be able to:
+If you have **Create and edit topics** permissions, you can:
 
 - [Edit existing topics](edit-a-topic.md): You can make changes to existing topic pages that were created through discovery.
 - [Create new topics](create-a-topic.md): You can create new topics for ones that were not found through discovery, or if AI tools did not find enough evidence to create a topic.

@@ -67,13 +67,13 @@ Users who have a good overall knowledge of your business can be good candidates 
 ## Knowledge admins
 
 Knowledge admins are admins who set up and configure Viva Topics in your Microsoft 365 environment. They also manage the Viva Topics settings after set up has completed. The knowledge admin role requires you to be a Microsoft 365 global or SharePoint admin since setup and management are done in the Microsoft 365 admin center.
-During setup, knowledge admins can configure Viva Topics to do the following:
+During setup, knowledge admins can configure Viva Topics to:
 
 -	Select which SharePoint sites will be crawled for topics.
--	Select which licensed users will be able to view topics (topic viewers).
+-	Select which licensed users who can view topics (topic viewers).
 -	Select which topics will be excluded from being identified.
--	Select which licensed users will be able to create and edit topics (topic contributors).
--	Select which licensed users will be able to manage topics (knowledge managers).
+-	Select which licensed users who can create and edit topics (topic contributors).
+-	Select which licensed users who can manage topics (knowledge managers).
 -	Name the topic center.
 
 Knowledge managers need to be able to coordinate with all Viva Topics stakeholders in their organization to know how to configure it. For example, if a new project has sensitive information, the knowledge manager needs to be informed so that they can make sure that the SharePoint site is not crawled for topics, or specific topic names need to be excluded.
