@@ -47,7 +47,7 @@ To create a new topic, you need to:
     ![Alternate names](../media/knowledge-management/alt-names.png) </br> 
 3. In the <b>Description</b> section, type a couple of sentences that describes the topic. 
 
-    ![Description](../media/knowledge-management/description.png)</br>
+    ![Description of the topic](../media/knowledge-management/description.png)</br>
 
 4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the add a new user box, and then selecting the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
  
@@ -65,11 +65,11 @@ To create a new topic, you need to:
 
 6.  The <b>Related sites</b> section shows sites that have information about the topic. 
 
-    ![Related sites](../media/knowledge-management/related-sites.png)</br>
+    ![Related sites section](../media/knowledge-management/related-sites.png)</br>
 
     You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
     
-    ![Related sites](../media/knowledge-management/sites.png)</br>
+    ![Select site](../media/knowledge-management/sites.png)</br>
 
 7. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
 
