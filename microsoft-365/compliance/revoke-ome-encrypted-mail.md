@@ -108,7 +108,7 @@ To verify whether you can revoke a particular email message by using Windows Pow
 
    This command returns the subject of the message and whether the message is revocable. For example,
 
-     ```text
+     ```console
      Subject        IsRevocable
      -------        -----------
      "Test message" True
@@ -142,7 +142,7 @@ To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation
 
     If revocation was successful, the cmdlet returns the following result:  
 
-     ```text
+     ```console
      Revoked: True
      ```
 
