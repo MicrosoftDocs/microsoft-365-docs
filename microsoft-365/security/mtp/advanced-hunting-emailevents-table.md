@@ -66,7 +66,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AttachmentCount` | int | Number of attachments in the email |
 | `UrlCount` | int | Number of embedded URLs in the email |
 | `EmailLanguage` | string | Detected language of the email content |
-| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `OrgLevelAction` | string | Action taken on the email in response to matches to a policy defined at the organizational level |
 | `OrgLevelPolicy` | string | Organizational policy that triggered the action taken on the email |
 | `UserLevelAction` | string | Action taken on the email in response to matches to a mailbox policy defined by the recipient |
