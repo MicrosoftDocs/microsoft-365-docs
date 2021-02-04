@@ -180,7 +180,7 @@ When you label an email message that has attachments, the attachments can inheri
 |Doesn't apply encryption| Label that applies encryption| ![no](../media/no-icon.png)|
 |Doesn't apply encryption| No label but encryption| ![no](../media/no-icon.png)|
 
-For the scenarios where the attachment is encrypted without a label, this encryption always remains.
+For the scenarios where the original attachment is encrypted without a label, this encryption always remains when a label is applied to the email message.
 
 ## Sensitivity label compatibility
 
