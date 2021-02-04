@@ -48,7 +48,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 ## Create an audit log retention policy
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with a user account that's assigned the Organization Configuration role in the Security & Compliance Center.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with a user account that's assigned the Organization Configuration role on the Permissions page in the Security & Compliance Center.
 
 2. In the left pane of the Microsoft 365 compliance center, click **Show all**, and then click **Audit**.
 
@@ -58,7 +58,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
     ![New audit retention policy flyout page](../media/AuditLogRetentionPolicy2.png)
 
-   1. **Policy name:** The name of the audit log retention policy. This name must be unique in your organization.
+   1. **Policy name:** The name of the audit log retention policy. This name must be unique in your organization, and it can't be change after the policy is created.
 
    2. **Description:** Optional, but helpful to provide information about the policy, such as the record type or workload, users specified in the policy, and the duration.
 
@@ -76,6 +76,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 5. Click **Save** to create the new audit log retention policy.
 
+   The new policy is displayed in the list on the **Audit retention policies** tab.
 
 ## Manage audit log retention policies
 
@@ -83,21 +84,32 @@ Audit log retention policies are listed on the **Audit retention policies** tab 
 
 ### View policies in the dashboard
 
+Audit log retention policies are listed in the dashboard. One advantage of viewing policies in the dashboard is that you can click the **Priority** column to list the policies in the priority in which they are applied. As previously explained, a higher value indicates a higher priority.
+
+![Priority column in the Audit retention policies dashboard](../media/AuditLogRetentionDashboardPriority.png)
+
+You can also select a policy to display its settings on the flyout page.
+
+> [!NOTE]
+> The default audit log retention policy for your organization isn't displayed in the dashboard.
 
 ### Edit policies in the dashboard
 
+To edit a policy, select it to display the flyout page. You can modify one or more setting and then save your changes.
+
+
+> [!IMPORTANT]
+> If you use the **New-UnifiedAuditLogRetentionPolicy** cmdlet, it's possible to create an audit log retention policy for record types or activities that aren't available in the **Create audit retention policy** tool in the dashboard. In this case, you won't be able to edit the policy (for example, change the retention duration or add and remove activities) from the **Audit retention policies** dashboard. You'll only be able to view and delete the policy in the compliance center. To edit the policy, you'll have to use the [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet in Security & Compliance Center PowerShell.<br/><br/>**Tip:** A message is displayed at the top of the flyout page for policies that have to be edited using PowerShell.
 
 ### Delete policies in the dashboard
 
-
-
-
+To delete a policy, click the **Delete** ![Delete icon](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) icon and then confirm that you want to delete the policy.
 
 ## Create and manage audit log retention policies in PowerShell
 
 You can also use Security & Compliance Center PowerShell to create and manage audit log retention policies. One reason to use PowerShell is to create a policy for a record type or activity that isn't available in the UI.
 
-### Create policies in PowerShell
+### Create an audit log retention policy in PowerShell
 
 Follow these steps to create an audit log retention policy in PowerShell:
 
@@ -129,7 +141,7 @@ For more information, see [New-UnifiedAuditLogRetentionPolicy](https://docs.micr
 
 ### View policies in PowerShell
 
-Use the [Get-UnifiedAuditRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) cmdlet in Security & Compliance Center PowerShell to view audit log retention policies.
+Use the [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) cmdlet in Security & Compliance Center PowerShell to view audit log retention policies.
 
 Here's a sample command to display the settings for all audit log retention policies in your organization. This command sorts the policies from the highest to lowest priority.
 
@@ -138,7 +150,7 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 ```
 
 > [!NOTE]
-> The **Get-UnifiedAuditLogRetentionPolicy** cmdlet doesn't return the default audit log policy for your organization.
+> The **Get-UnifiedAuditLogRetentionPolicy** cmdlet doesn't return the default audit log retention policy for your organization.
 
 ### Edit policies in PowerShell
 
@@ -146,11 +158,7 @@ Use the [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershe
 
 ### Delete policies in PowerShell
 
-Use the [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) cmdlet in Security & Compliance Center PowerShell to delete an audit log retention policy. It might take up to 30 minutes for the policy to be removed.
-
-## Some audit log retention policies not supported in the dashboard
-
-If you use the **New-UnifiedAuditLogRetentionPolicy** cmdlet, it's possible to create an audit log retention policy for record types or activities that aren't available in the **Create audit retention policy** tool in the dashboard. In this case, you won't be able to edit the policy (for example, change the retention duration or add and remove activities) from the **Audit retention policies** dashboard. You'll only be able to view and delete the policy in the compliance center. To edit the policy, you'll have to use the **Set-UnifiedAuditLogRetentionPolicy** cmdlet in Security & Compliance Center PowerShell.
+Use the [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) cmdlet in Security & Compliance Center PowerShell to delete an audit log retention policy. The policy is removed from the dashboard, but it might take up to 30 minutes for the policy to be removed from your organization.
 
 ## More information
 
