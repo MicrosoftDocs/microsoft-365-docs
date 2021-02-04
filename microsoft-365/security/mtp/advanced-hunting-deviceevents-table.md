@@ -71,6 +71,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileOriginUrl` | string | URL where the file was downloaded from |
 | `FileOriginIP` | string | IP address where the file was downloaded from |
 | `AdditionalFields` | string | Additional information about the event in JSON array format |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
+| `FileSize` | int | Size of the file in bytes |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
 | `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
@@ -90,8 +92,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessLogonId` | string | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
-| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
-| `FileSize` | int | Size of the file in bytes |
+
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
