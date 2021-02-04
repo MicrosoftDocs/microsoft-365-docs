@@ -277,13 +277,13 @@ A number of licenses are required to use Microsoft Managed Desktop.
 You don't have all the licenses you need to use Microsoft Managed Desktop. For more information, see [Microsoft Managed Desktop technologies](../intro/technologies.md) and [More about licenses](prerequisites.md#more-about-licenses).
 
 
-### Security account names
+### Microsoft Managed Desktop service accounts
 
-Certain security account names could conflict with ones created by Microsoft Managed Desktop.
+Certain accounts names could conflict with ones created by Microsoft Managed Desktop to manage the Microsoft Managed Desktop service.
 
 **Not ready**
 
-You have at least one account name that will conflict with ones created by Microsoft Managed Desktop. Work with your Microsoft account representative to exclude these account names.
+You have at least one account name that will conflict with ones created by Microsoft Managed Desktop. Work with your Microsoft account representative to exclude these account names as we don't list the accounts names publicly to minimiize security risk. 
 
 
 ### Security administrator roles
