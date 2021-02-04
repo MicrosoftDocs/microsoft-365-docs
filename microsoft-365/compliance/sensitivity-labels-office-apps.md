@@ -175,12 +175,16 @@ If you need to check the outcome for different scenarios, use the following tabl
 
 |Email label configuration|Office attachment|Label inherited|
 |:------------------------|:----------------|:--------------|
-|Applies encryption| No label or encryption| Yes|
-|Applies encryption| Label and no encryption| Yes|
-|Applies encryption| Label that applies encryption| No|
-|Applies encryption| No label but encryption| No|
-|Doesn't apply encryption| No label and no encryption| No|
-|Doesn't apply encryption| No label but encrypted| No|
+|Applies encryption| No label or encryption| ![yes](../media/yes-icon.png)|
+|Applies encryption| Label and no encryption| ![yes](../media/yes-icon.png)|
+|Applies encryption| Label that applies encryption| ![no](../media/no-icon.png)|
+|Applies encryption| No label but encryption| ![no](../media/no-icon.png)|
+|Doesn't apply encryption| No label or encryption| ![no](../media/no-icon.png)|
+|Doesn't apply encryption| No label but encrypted| ![no](../media/no-icon.png)|
+|Doesn't apply encryption| Label that applies encryption| ![no](../media/no-icon.png)|
+|Doesn't apply encryption| No label but encryption| ![no](../media/no-icon.png)|
+
+For the scenarios where the attachment is encrypted without a label, this encryption always remains.
 
 ## Sensitivity label compatibility
 
