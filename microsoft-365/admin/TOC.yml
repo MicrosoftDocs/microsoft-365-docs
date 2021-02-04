@@ -66,6 +66,8 @@
           href: admin-overview/admin-mobile-app.md
         - name: What's new in the admin center
           href: whats-new-in-preview.md
+        - name: Search in the Microsoft 365 admin center
+          href: manage/search-in-the-mac.md
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
         - name: Manage multiple tenants
@@ -84,7 +86,7 @@
           href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: Apply for a Fapiao
           href: services-in-china/apply-for-a-fapiao.md
-        - name: Azure Information Protection parity
+        - name: Azure Information Protection support
           href: services-in-china/parity-between-azure-information-protection.md      
     - name: Manage users, groups, and passwords
       href: add-users/index.yml
@@ -182,8 +184,6 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: Set up Focused Inbox
           href: setup/configure-focused-inbox.md
-        - name: About email collaboration
-          href: email/email-collaboration.md
         - name: Add user or contact to distribution group
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Manage clutter for your organization
@@ -236,8 +236,6 @@
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
            href: manage/update-phone-number-and-email-address.md
-         - name: Set password expiration policy
-           href: manage/set-password-expiration-policy.md
          - name: Customize the app launcher
            href: manage/customize-the-app-launcher.md
          - name: Pin apps to users' app launcher

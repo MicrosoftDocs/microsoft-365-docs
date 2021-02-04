@@ -129,7 +129,7 @@ For country/region specific data centers, the following defines the cities where
 | France | Paris, Marseille |
 | Germany | Frankfurt, Berlin |
 | India | Chennai, Mumbai, Pune |
-| Japan | Osaka, Tokyo, Saitama |
+| Japan | Osaka, Tokyo |
 | South Korea | Busan, Seoul |
 | Norway | Oslo, Stavanger |
 | South Africa | Cape Town, Johannesburg |
