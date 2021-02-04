@@ -79,7 +79,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 ## Manage audit log retention policies
 
-Audit log retention polices are listed on the **Audit retention policies** tab (also called the *dashboard*). You can use the dashboard to view, edit, and delete audit retention policies.
+Audit log retention policies are listed on the **Audit retention policies** tab (also called the *dashboard*). You can use the dashboard to view, edit, and delete audit retention policies.
 
 ### View policies in the dashboard
 
