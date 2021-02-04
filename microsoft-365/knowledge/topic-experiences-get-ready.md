@@ -15,14 +15,14 @@ localization_priority: Normal
 
 # Get your environment ready for Microsoft Viva Topics
 
-To make the most of Viva Topics, you want to have as much content as possible included for topic discovery, so that you can have a rich set of topics for your users. But what content should be used for topic discovery? How do you maximize the content that is indexed, while staying in control? The more content is in scope, the better the insights the artificial intelligence can generate. This article walks you through planning steps to ensure that you are including the appropriate content, and that you have the right people and resources to make a good experience for your users.
+To make the most of Viva Topics, you want to have as much content as possible included for topic discovery, so that you can have a rich set of topics for your users. But what content should be used for topic discovery? How do you maximize the content that is indexed, while staying in control? The more content is in scope, the better the insights the artificial intelligence can discover. This article walks you through planning steps to ensure that you are including the appropriate content, and that you have the right people and resources to make a good experience for your users.
 
 To plan for Viva Topics, you need to:
 
 ![Migrate, connect, modernize, secure, and identify steps for onboarding to knowledge management](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [Migrate content to SharePoint](#1-migrate-content-to-microsoft-365)
-    - Topic mining only includes content on SharePoint sites.
+    - Topic indexing only includes content on SharePoint sites.
       - Where possible, migrate valuable content into SharePoint Online from external sources.
       - Prioritize content sources with high potential for tacit knowledge.
       - Highlight the benefits of knowledge management to encourage users to move content from OneDrive to SharePoint sites.
@@ -42,10 +42,10 @@ To plan for Viva Topics, you need to:
       - Have admins audit broadly shared content using Search
       - Encourage content owners to share content that is not sensitive and may have broader benefit to the organization.
     - Review your Microsoft Graph configuration on users and content:
-      - Topic mining honors configuration excluding content from Search or Delve. Review whether these configurations are still relevant.
+      - Topic indexing honors configuration excluding content from Search or Delve (for example, NOINDEX). Review whether these configurations are still relevant.
 
 5. [Identify knowledge managers and topics](#5-identify-knowledge-managers-and-topics)
-    - Use existing taxonomies to manually create topics.
+    - Use existing taxonomies to manually create topics, or help to confirm AI-suggested topics.
     - Identify subject matter experts (SMEs) for anticipated or seeded topics.
     - Identify sites that cover a large body of valuable data that can be used to pilot topic mining.
     - Engage Knowledge Managers and communities of practice.

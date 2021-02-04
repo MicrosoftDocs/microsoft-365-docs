@@ -18,14 +18,14 @@ While Viva Topics users can find topics through topic highlights in their ShareP
 
 ## Topic Answer
 
-When you search for a specific topic in Microsoft Search (for example, "Contoso Innovation"), if a topic exists and is found, it will display the result in the Answers suggestion format.
+When you search for a specific topic in Microsoft Search (for example, "Saturn"), if a topic exists and is found, it will display the result in the Answers suggestion format.
 
 The topic answer will display:
 - Topic name
+- Alternate names: Alternate names or acronyms for the topic.
 - Definition: Description of the topic provided by AI or manually added by a person.
-- Suggested or Pinned people: Subject matters expert suggested by AI or pinned to the topic by a person
+- Suggested or Pinned people: People suggested by AI or pinned to the topic by a person
 - Suggested or Pinned resources: Files, pages, or sites either suggested by AI or pinned to the topic by a person. 
-- Synonyms: Alternate names or acronym for the topic.
 
    ![Topic in Search](../media/knowledge-management/search-topic-answer.png) 
 

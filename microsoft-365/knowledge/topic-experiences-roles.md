@@ -26,7 +26,7 @@ When you use Viva Topics in your Microsoft 365 environment, your users can have 
 
 ## Topic viewer
 
-Topic viewers are users in your organization who can view highlighted topics in their SharePoint modern site and in SharePoint Search. They can select highlighted topics to view more details in about them in a topic page. 
+Topic viewers are users in your organization who can view topics highlighted in their SharePoint modern site, Microsoft Search through SharePoint and Office.com and the topic center. They can view more details about a topic on the topic page. 
 
 For topic highlights and their topic pages to be visible to a topic viewer, the user must:
 -	[Be assigned a Viva Topics license](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) by their Microsoft 365 admin.
@@ -39,7 +39,7 @@ Topic contributors are users in your organization that not only have topic viewe
 
 Users who have topic contributor permissions will see an **Edit** button displayed on Topic pages, which allows them to make updates to and publish a topic.
 
-A topic contributor can also create and publish a new topic through their Topic Center site.
+A topic contributor can also create and publish a new topic through their topic center.
 
 To create and edit a topic, the user must:
 
@@ -51,10 +51,9 @@ To create and edit a topic, the user must:
 Knowledge managers are users who manage topics in your organization.  Topic management is done through the Manage Topics page in the topic center, and it's only visible to Knowledge managers.
 
 In the Manage Topics page, knowledge managers can do the following tasks:
--	View all AI-suggested topics.
+-	View AI-suggested topics.
 -	Review topics to confirm that they're valid.
--	Remove topics that you don’t want to make visible to your users.
-
+-	Remove topics that you don’t want visible to your users.
 
 Additionally, a knowledge manager can edit existing topics or create new ones.
 

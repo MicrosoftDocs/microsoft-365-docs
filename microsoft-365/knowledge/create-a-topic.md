@@ -30,7 +30,7 @@ In Viva Topics, you can create a new topic if one is not discovered through inde
 
 To create a new topic, you need to:
 - Have a Viva Topics license.
-- Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Knowledge Network topic permissions settings. 
+- Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Users who have permission to manage topics in the topic center (knowledge managers) already have permissions to create and edit topics.
@@ -45,11 +45,11 @@ To create a new topic, you need to:
 2. In the <b>Alternate Names</b> section, type any other names that the topic might be referred to. 
 
     ![Alternate names](../media/knowledge-management/alt-names.png) </br> 
-3. In the <b>Description</b> section, type a couple of sentences that describes the topic. 
+3. In the <b>Description</b> section, type a couple of sentences that describe the topic. 
 
     ![Description of the topic](../media/knowledge-management/description.png)</br>
 
-4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the <b>add a new user</b> box, and then select the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
+4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the <b>add a new user</b> box, and then select the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card. You can also drag the person to change the order that the list of people appear.
  
     ![Pinned people](../media/knowledge-management/pinned-people.png)</br>
 
@@ -91,7 +91,7 @@ To create a new topic, you need to:
 
 9. Select **Publish** to save your changes. 
 
-After you publish the article, the topic name, alternate name, description, and pinned people will display to all licensed users who view the article. Specific files, pages, and sites will only appear in the topic page if the viewer has Office 365 permissions to the item. 
+After you publish the page, the topic name, alternate name, description, and pinned people will display to all licensed users who view the topic. Specific files, pages, and sites will only appear on the topic page if the viewer has Office 365 permissions to the item. 
 
 
 

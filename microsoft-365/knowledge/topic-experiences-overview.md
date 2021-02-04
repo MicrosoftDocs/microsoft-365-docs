@@ -18,7 +18,7 @@ description: "Overview of Viva Topics."
 
 # Microsoft Viva Topics overview 
 
-Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to build a knowledge network in your Microsoft 365 environment. 
+Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in Microsoft 365 apps they use everyday, starting with SharePoint modern pages and Microsoft Search.
 
 </br>
 
@@ -26,9 +26,7 @@ Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search
 
 </br>
 
-Its goal is to convert information into knowledge and deliver it to your users in apps they use everyday, such as SharePoint modern pages and Microsoft Search.
-
-Viva Topics helps to address a key business issue in many companies - providing the information to users when they need it. For example, new employees need to learn a lot of new information quickly, and come across terms they know nothing about when reading through company information. To learn more, the user might need to step away from what they're doing and spend valuable time searching for details, such as information about what the term is, who in the organization is a subject matter expert, and maybe sites and documents that are related to the term.
+Viva Topics helps to address a key business issue in many companies - providing the information to users when they need it. For example, new employees need to learn a lot of new information quickly, and encounter terms they know nothing about when reading through company information. To learn more, the user might need to step away from what they are doing and spend valuable time searching for details, such as information about what the term is, who in the organization is a subject matter expert, and maybe sites and documents that are related to the term.
 
 Viva Topics uses AI to automatically search for and identify **topics** in your organization. It compiles information about them, such as a short description, people working on the topic, and sites, files, and pages that are related to it. A knowledge manager or contributor can choose to update the topic information as needed. The topics are available to your users, which means that for every instance of the topic that appears in a modern SharePoint site in news and pages, the text will be highlighted. Users can choose to select the topic to learn more about it through the topic details. Topics can also be found in SharePoint Search.
 
