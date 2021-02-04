@@ -25,6 +25,8 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
+
 **Applies to:**
 - Microsoft 365 Defender
 - Defender for Endpoint
@@ -47,8 +49,8 @@ Refer to the table below for more on links and routing.
 
 |**Property**  |**Destination when redirection is OFF**  |**Destination when redirection is ON** | 
 |---------|---------|---------|
-| LinkToWDATP | Alert page in securitycenter.windows.com | Redirected to the equivalent alert page in security.microsoft.com  |
-| IncidentLinkToWDATP | Incident page in securitycenter.windows.com  | Redirected to the equivalent incident page in security.microsoft.com  |
+| LinkToWDATP | Alert page in securitycenter.windows.com | Alert page in security.microsoft.com  |
+| IncidentLinkToWDATP | Incident page in securitycenter.windows.com  | Incident page in security.microsoft.com  |
 | LinkToMTP | Alert page in security.microsoft.com | Alert page in security.microsoft.com  |
 | IncidentLinkToMTP | Incident page in security.microsoft.com  | Incident page in security.microsoft.com  
 
@@ -56,8 +58,8 @@ Refer to the table below for more on links and routing.
 
 |**Property**  |**Destination when redirection is OFF**  |**Destination when redirection is ON** |
 |---------|---------|---------|
-| Alert page  | Alert page in securitycenter.windows.com  | Redirected to the equivalent alert page in security.microsoft.com  |
-| Incident page  |Incident page in securitycenter.windows.com  | Redirected to the equivalent incident page in security.microsoft.com  
+| Alert page  | Alert page in securitycenter.windows.com  | Alert page in security.microsoft.com  |
+| Incident page  |Incident page in securitycenter.windows.com  | Incident page in security.microsoft.com  
 | Alert page in security center portal | Alert page in security.microsoft.com | Alert page in security.microsoft.com | 
 | Incident page in security center portal | Incident page in security.microsoft.com  | Incident page in security.microsoft.com  |
 
@@ -83,11 +85,11 @@ To start routing accounts to the Microsoft 365 security center:
 >You must be a global administrator or have security administrator permissions in Azure Active Directory to enable or disable this setting.  
 
 ## Can I go back to using the former portal?
-If something isn’t working for you or if there’s anything you’re unable to complete through the Microsoft 365 security center portal, we want to hear about it. If you’ve encountered any issues with redirection, we encourage you to reach out to your PM buddy directly through private preview or let us know via the Give feedback submission form. 
+If something isn’t working for you or if there’s anything you’re unable to complete through the Microsoft 365 security center portal, we want to hear about it. If you’ve encountered any issues with redirection, we encourage you to let us know by using the Give feedback submission form.
 
-To revert to the former Microsoft Defender for Endpoint portal: 
+To revert to the former Microsoft Defender for Endpoint portal:
 
-1. [Sign in](https://security.microsoft.com/) to the Microsoft 365 security center as a global administrator or using and account with security administrator permissions in Azure Active directory. 
+1. [Sign in](https://security.microsoft.com/) to the Microsoft 365 security center as a global administrator or using and account with security administrator permissions in Azure Active directory.
 
 2. Navigate to **Settings** > **Endpoints** > **General** > **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).  
 
