@@ -68,9 +68,7 @@ Once you're done investigating the alerts, you can go back to the alert you star
 
 > [!NOTE]
 > One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 in incrementally being rolled out and is currently in preview. <br>
-> Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated prior to the tag update will not reflect the updated tag name. 
-> If you update a tag name, only alerts that are generated after the modification will have the new tag name. Prior alerts will not be updated with the modified tag name. / Alerts generated prior to the modification will not be updated with the new tag name. 
-
+> Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated prior to the modification will not reflect the updated tag name. 
 
 
 ## Manage the unified alert queue
