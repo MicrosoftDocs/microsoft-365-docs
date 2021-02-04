@@ -54,6 +54,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountUpn` | string | User principal name (UPN) of the account that ran the process responsible for the event |
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
 | `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
@@ -76,6 +77,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RequestAccountSid` | string | Security Identifier (SID) of the account used to remotely initiate the activity |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
+| `AdditionalFields` | string | Additional information about the entity or event |
+| `InitiatingProcessFileSize` | string | Size of the file that ran the process responsible for the event |
 | `SensitivityLabel` | string | Label applied to an email, file, or other content to classify it for information protection |
 | `SensitivitySubLabel` | string | Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently |
 | `IsAzureInfoProtectionApplied` | boolean | Indicates whether the file is encrypted by Azure Information Protection |
