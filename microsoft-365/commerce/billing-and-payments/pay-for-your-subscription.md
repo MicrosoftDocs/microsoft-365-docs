@@ -40,7 +40,6 @@ You can use a credit or debit card, or bank account to pay for your subscription
 ## Before you begin
 
 - You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-
 - The payment method that you choose during checkout is the payment method that we use for all future billing periods. You can change it at any time.
 
 ## Paying by credit or debit card, or bank account
