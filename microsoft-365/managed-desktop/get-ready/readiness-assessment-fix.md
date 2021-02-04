@@ -194,7 +194,7 @@ Security baseline policies should not target any Microsoft Managed Desktop devic
 
 **Not ready**
 
-You have a security baseline profile that targets all users, all devices or both. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines). During enrollment, we apply a new security baseline to all Microsoft Managed Desktop devices. After enrollment, you can review the Microsoft Managed Desktop security baseline policy in Microsoft Endpoint Manager in Configuration Policy
+You have a security baseline profile that targets all users, all devices, or both. Change the policy to use an assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines). During enrollment, we apply a new security baseline to all Microsoft Managed Desktop devices. After enrollment, you can review the Microsoft Managed Desktop security baseline policy in the **Configuration policy** area of Microsoft Endpoint Manager.
 
 **Advisory**
 
