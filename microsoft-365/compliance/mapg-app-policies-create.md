@@ -61,6 +61,31 @@ MAPG has three categories of built-in app policy templates.
 ## Custom app policies
 
 
+Custom conditions for an app policy
+
+|Condition | Condition values accepted | More information |
+|:-------|:-----|:-------|
+| App registration age | Within last X days |  |
+| App certification | Yes or No | What is Microsoft 365 Certification |
+| App certification changed | Yes or No |  |
+| Publisher verification | Yes or No | What is Publisher Verification? |
+| Permission granted | Select one or more API permission from list | Microsoft Graph permissions reference |
+| Has high scoped permission | Yes or No | This is an internal designation based on the same logic used by MCAS. |
+| Overprivileged app | Yes or No | Apps with more granted permissions than are being used by those apps. |
+| Unused App | Yes or No | Apps with no API activity in last 90 days. |
+| Last used | Within last X days |  |
+| App data access | Greater than X GB data access per hour |  |
+| App data access trend | X% increase in data usage in last 7 days |  |
+| App API Access | Greater than X API calls per hour |  |
+| App API Access trend | X% increase in API Calls in last 7 days	 |  |
+| Users consented | (Greater than or Less than) X consented users |  |
+| Users consented trend | X% increase in last 90 days |  |
+| HVE user consented | Yes or No | A High Value Entity (HVE) user is one that is tagged as a priority account. |
+| Delegating user | Select user(s) from list |  |
+| Delegating user’s role | Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator	| Multiple selections allowed. <br><br> Any Azure AD role with assigned member should be made available in this list. |
+| Workload accessed | OneDrive and/or SharePoint and/or Exchange | Multiple selections allowed. |
+| Error rate | Error rate is greater than X% |  |
+||||
 
 
 ## Configure a user-based policy

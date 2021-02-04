@@ -30,3 +30,45 @@ Conditions
 
 Auto-remediation
 
+
+## Policy settings
+
+**Name and description**
+
+Policy Name
+
+Policy Description
+
+Choose Policy severity
+
+**Choose Policy settings and conditions**
+
+Choose which apps:
+
+All Apps
+
+Choose specific apps
+
+**Choose Policy settings and conditions**
+
+Choose policy conditions for selected apps
+
+- Use default behavior of policy
+- Set new conditions for policy
+
+
+**Define Policy Actions**
+
+Disable app
+
+
+**Define Policy Status**
+
+- Audit mode
+- Active
+- Inactive
+
+
+
+
+
