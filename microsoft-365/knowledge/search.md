@@ -18,7 +18,7 @@ While Viva Topics users can find topics through topic highlights in their ShareP
 
 ## Topic Answer
 
-When you search for a specific topic in Microsoft Search (for example, "Contoso Innovation"), if a Viva topic exists and is found, it will display the result in the Answers suggestion format.
+When you search for a specific topic in Microsoft Search (for example, "Contoso Innovation"), if a topic exists and is found, it will display the result in the Answers suggestion format.
 
 The topic answer will display:
 - Topic name
@@ -29,22 +29,22 @@ The topic answer will display:
 
    ![Topic in Search](../media/knowledge-management/search-topic-answer.png) 
 
-Note that the topic page can display in the search results even if the topic answer card does not appear.
+The topic page can display in the search results even if the topic answer card doesn't appear.
 
 
 ## Acronyms
 
-In Viva, you can manually edit a topic to include an acronym for it as an <b>Alternate Name</b>. This allows a user who is searching by only the topic's acronym to find the topic answer through Microsoft Search.
+In Viva Topics, you can manually edit a topic to include an acronym for it as an <b>Alternate Name</b>. This allows a user who is searching by only the topic's acronym to find the topic answer through Microsoft Search.
 
-[Acronym Answers](https://docs.microsoft.com/microsoftsearch/manage-acronyms) is a feature provided though Microsoft Search and is managed separately from Viva.
+[Acronym Answers](https://docs.microsoft.com/microsoftsearch/manage-acronyms) is a feature provided though Microsoft Search and is managed separately from Viva Topics.
 
 ## Bookmarks and topics
 
-[Bookmarks](https://docs.microsoft.com/microsoftsearch/manage-bookmarks) are a Microsoft Search feature that help people quickly find important sites and tools with just a search (for example, a travel booking tool on an external site outside of their Microsoft 365 tenant). They are created by search admins in the Microsoft 365 admin center. 
+[Bookmarks](https://docs.microsoft.com/microsoftsearch/manage-bookmarks) are a Microsoft Search feature that help people quickly find important sites and tools with just a search (for example, a travel booking tool on an external site outside of their Microsoft 365 tenant). They're created by search admins in the Microsoft 365 admin center. 
 
 For users who are looking for information about booking a trip for work:
 
-- If some users know the travel tool name (for example, "Concur"), it is easier to create a bookmark to go directly to the external site.
+- If some users know the travel tool name (for example, "Concur"), it's easier to create a bookmark to go directly to the external site.
 - For users who search generally for "travel", create a topic on "Travel" that has the information they expect to see. Consider adding a link to the Concur external site in the description of the topic. If the link is instead to an internal travel booking site hosted on the Microsoft 365 tenant, you can add it to the “Pinned Resources”.
  
 ### Search results priority 
