@@ -58,8 +58,10 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeviceType` | string | Type of device |
 | `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `Port` | string | TCP port used during communication |
 | `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
 | `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
+| `DestinationPort` | string | Destination port of related network communications |
 | `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |
 | `Location` | string | City, country, or other geographic location associated with the event |
