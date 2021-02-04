@@ -69,7 +69,7 @@ If you pay by invoice for your subscription, you get an email when your billing 
 
 ## What if I have an outstanding balance?
 
-If we’re unable to charge the payment method on file, we send an email that lets you know there’s a problem. The email briefly states what the problem is, and includes a link where you can check the outstanding balance. We continue to retry the transaction every few days for 30 days, during which time the subscription is in a grace period. Every time a transaction fails, you receive an email alert about the failure.
+If we’re unable to charge the payment method on file, we send an email that lets you know there’s a problem. The email briefly states what the problem is and includes a link where you can check the outstanding balance. We continue to retry the transaction every few days for 30 days, during which time the subscription is in a grace period. Every time a transaction fails, you receive an email alert about the failure.
 
 If you personally added the payment method that has a past due amount, you can use **Settle balance** to make a payment. The payment method that you use to pay the overdue amount becomes the new payment method for all subscriptions that used the declined payment method.
 
