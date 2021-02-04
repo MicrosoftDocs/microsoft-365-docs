@@ -54,7 +54,7 @@ A topic is a phrase or term that is organizationally significant or important. I
 
 When a topic is identified and AI determines that it has enough information for it to be a suggested topic, a **topic page** displays the information that was gathered through topic indexing, such as:
 
-- Alternate names and/or acronyms.
+- Alternate names and acronyms.
 - A short description of the topic.
 - People who might be knowledgeable about the topic.
 - Files, pages, and sites that are related to the topic.
@@ -67,7 +67,7 @@ See [Topic discovery and curation](https://docs.microsoft.com/microsoft-365/know
 
 When you use Viva Topics in your Microsoft 365 environment, your users will have the following roles:
 
-- Topic viewers: Users who will be able to see topic highlights on SharePoint modern sites that they have at least *Read* access to, and in Microsoft Search. They will be able to select topic highlights to see topic details in topic pages. Topic viewers will be able to provide feedback on how useful a topic is to them.
+- Topic viewers: Users who can see topic highlights on SharePoint modern sites that they have at least *Read* access to, and in Microsoft Search. They can select topic highlights to see topic details in topic pages. Topic viewers can provide feedback on how useful a topic is to them.
 
 - Contributors: Users who have rights to edit existing topics or create new ones. Knowledge admins assign contributor permissions to users through the Viva Topics settings in the Microsoft 365 admin center. Note that you can also choose to give all topic viewers the permission to edit and create topics so that everyone can contribute to topics that they see.
 
@@ -81,9 +81,9 @@ See [Viva Topics roles](topic-experiences-roles.md) for more information.
 
 Topic management is done in the **Manage topics** page in your organization's **Topic center**. The Topic center is created during setup and serves as your center of knowledge for your organization. 
 
-While all licensed users will be able to see topics they are connected with in the Topic center, only users with *Manage topics* permissions (knowledge managers) will be able to view and use the Manage topics page.
+While all licensed users can see topics they're connected with in the Topic center, only users with *Manage topics* permissions (knowledge managers) can view and use the Manage topics page.
 
-Knowledge managers will be able to:
+Knowledge managers can:
 
 - Confirm or remove topics that were discovered in your tenant.
 - Create new topics manually as needed (for example, if not enough information was provided for it to be discovered through AI).
@@ -101,7 +101,7 @@ Admin controls in the Microsoft 365 admin center allow you to manage your knowle
 - Exclude specific topics from being found.
 - Control which users can manage topics in the topic center.
 - Control which users can create and edit topics.
-- Control which user will be able to view topics.
+- Control which user can view topics.
 
 See [assign user permissions](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions), [manage topic visibility](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules), and [manage topic discovery](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) for more information about admin controls.
 
@@ -109,9 +109,9 @@ See [assign user permissions](https://docs.microsoft.com/microsoft-365/knowledge
 
 AI will continually work to provide you suggestions to improve your topics as changes occur in your environment. 
 
-Users with edit or create topics permissions can make updates to topic pages directly if they want to make corrections or add additional information. They can also add new topics that AI wasn't able to identify. If there is enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI may enhance these manually added topics 
+Users with edit or create topics permissions can make updates to topic pages directly if they want to make corrections or add additional information. They can also add new topics that AI wasn't able to identify. If there's enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI may enhance these manually added topics 
 
-Users who you allow access to see topics in their daily work might be asked if the topic was useful to them. The system looks at these responses and uses them to improve the topic highlight, and help determine what's shown on topic summaries and in topic details.
+Users that you allow access to see topics in their daily work might be asked if the topic was useful to them. The system looks at these responses and uses them to improve the topic highlight, and help determine what's shown on topic summaries and in topic details.
 
 Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic. 
 
