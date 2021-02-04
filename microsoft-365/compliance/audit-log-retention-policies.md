@@ -103,7 +103,7 @@ To edit a policy, select it to display the flyout page. You can modify one or mo
 
 ### Delete policies in the dashboard
 
-To delete a policy, click the **Delete** ![Delete icon](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) icon and then confirm that you want to delete the policy.
+To delete a policy, click the **Delete** ![Delete icon](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) icon and then confirm that you want to delete the policy. The policy is removed from the dashboard, but it might take up to 30 minutes for the policy to be removed from your organization.
 
 ## Create and manage audit log retention policies in PowerShell
 
@@ -158,7 +158,7 @@ Use the [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershe
 
 ### Delete policies in PowerShell
 
-Use the [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) cmdlet in Security & Compliance Center PowerShell to delete an audit log retention policy. The policy is removed from the dashboard, but it might take up to 30 minutes for the policy to be removed from your organization.
+Use the [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) cmdlet in Security & Compliance Center PowerShell to delete an audit log retention policy. It might take up to 30 minutes for the policy to be removed from your organization.
 
 ## More information
 
