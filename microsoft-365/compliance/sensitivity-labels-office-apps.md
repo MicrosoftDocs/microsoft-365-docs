@@ -180,7 +180,6 @@ Examples where labels are not inherited:
 - The label applied to the email message doesn't apply encryption
 - The attachment is already encrypted 
 
-
 ## Sensitivity label compatibility
 
 **With RMS-enlightened apps**: If you open a labeled and encrypted document or email in an [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) that doesn't support sensitivity labels, the app still enforces encryption and rights management.
