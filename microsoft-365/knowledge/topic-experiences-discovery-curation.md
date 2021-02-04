@@ -15,11 +15,9 @@ ms.collection:
 localization_priority: None
 
 ---
-# Microsoft Viva Topics discovery and curation (Preview)
+# Microsoft Viva Topics discovery and curation 
 
-Viva Topics converts knowledge information to knowledge in your Microsoft 365 environment. We've all experienced reading through documents and site pages where we encounter terms we are unfamiliar with. Many times we stop what we are doing to spend precious time searching for more information.
-
-Viva Topics converts knowledge information to knowledge in your Microsoft 365 environment. We've all experienced reading through documents and site pages where we encounter terms we are unfamiliar with. Many times we stop what we are doing to spend precious time searching for more information.
+Viva Topics organizes information to knowledge in your Microsoft 365 environment. We've all experienced reading through documents and site pages where we encounter terms we are unfamiliar with. Many times we stop what we are doing to spend precious time searching for more information.
 
 Viva Topics uses Microsoft Graph and AI to identify **topics** in your organization.  A topic is a phrase or term that has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it. There are lots of different types of topics that will be important to your organization. Initially, the following types of topics can be identified:
 - Project
@@ -36,7 +34,7 @@ AI identifies people and content connected to the topic, and if enough is discov
 - People who might be knowledgeable about the topic.
 - Files, pages, and sites that are related to the topic.
 
-The properties are identified from the files and pages that are part of the evidence for identifying the topic. Alternate names and acronyms are sourced from these files and pages. The short description is sourced from these files and pages, or from the internet through Wikipedia. The source file, page, or Wikipedia article is referenced alongside the suggested properties. People are suggested based on their active contributions (like edits) to the files and pages. A reference to the amount of contributions from a particular person provides a hint as to why the person has been identified. Files, pages, and sites are ranked based on whether they are central to the topic, or whether they can give an overview or introduction to the topic. 
+The properties are identified from the files and pages that are part of the evidence for identifying the topic. Alternate names and acronyms are sourced from these files and pages. The short description is sourced from these files and pages, or from the internet through Wikipedia. The source file, page, or Wikipedia article is referenced alongside the suggested properties. People are suggested based on their active contributions (for example, edits) to the files and pages. A reference to the amount of contributions from a particular person provides a hint as to why the person has been identified. Files, pages, and sites are ranked based on whether they are central to the topic, whether they can give an overview or introduction to the topic. 
 
 Not every identified topic will be useful to your organization. It may not have identified any of the correct alternate names, descriptions, the appropriate people, or content. So the ability to add topics that aren't identified, keep suggested topics, and curate topics is critical to improving the quality of the topics that are discoverable in your organization.
 
