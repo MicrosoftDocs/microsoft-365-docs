@@ -20,7 +20,7 @@ localization_priority: Normal
 
 # Create a new topic 
 
-In Viva Topics, you can create a new topic if one was not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
+In Viva Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
 
 > [!Note] 
 > While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that information in a manually created topic is visible to all users who have permissions to view the topic. 
@@ -29,7 +29,7 @@ In Viva Topics, you can create a new topic if one was not discovered through ind
 ## Requirements
 
 To create a new topic, you need to:
-- Have a Viva license.
+- Have a Viva Topics license.
 - Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Knowledge Network topic permissions settings. 
 
 > [!Note] 
@@ -37,7 +37,7 @@ To create a new topic, you need to:
 
 ## To create a new topic:
 
-1. In the the **Name this topic** section, type the name of the new topic.
+1. In the **Name this topic** section, type the name of the new topic.
 
     ![Name this topic](../media/knowledge-management/k-new-topic-page.png) </br> 
 
@@ -47,9 +47,9 @@ To create a new topic, you need to:
     ![Alternate names](../media/knowledge-management/alt-names.png) </br> 
 3. In the <b>Description</b> section, type a couple of sentences that describes the topic. 
 
-    ![Description](../media/knowledge-management/description.png)</br>
+    ![Description of the topic](../media/knowledge-management/description.png)</br>
 
-4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the add a new user box, and then selecting the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
+4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the <b>add a new user</b> box, and then select the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
  
     ![Pinned people](../media/knowledge-management/pinned-people.png)</br>
 
@@ -65,13 +65,13 @@ To create a new topic, you need to:
 
 6.  The <b>Related sites</b> section shows sites that have information about the topic. 
 
-    ![Related sites](../media/knowledge-management/related-sites.png)</br>
+    ![Related sites section](../media/knowledge-management/related-sites.png)</br>
 
     You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
     
-    ![Related sites](../media/knowledge-management/sites.png)</br>
+    ![Select site](../media/knowledge-management/sites.png)</br>
 
-7. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
+7. The <b>Related topics</b> section shows connections that exist between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
 
    ![Related topics](../media/knowledge-management/related-topic.png)</br>  
 
@@ -84,7 +84,7 @@ To create a new topic, you need to:
    ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
 
 
-8. You can also add static items to the page — such as text, images, or links - by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
+8. You can also add static items to the page (such as text, images, or links) by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
 
    ![Canvas icon](../media/knowledge-management/webpart-library.png)</br> 
 

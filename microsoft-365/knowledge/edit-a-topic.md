@@ -61,19 +61,19 @@ Knowledge managers can also topics directly from the Manage Topics page by selec
     ![Alternate names](../media/knowledge-management/alt-names.png) </br> 
 3. In the <b>Description</b> section, type a couple of sentences that describes the topic. Or if a description already exists, update it if needed.
 
-    ![Description](../media/knowledge-management/description.png)</br>
+    ![Description section](../media/knowledge-management/description.png)</br>
 
 4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the add a new user box, and then selecting the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
  
-    ![Pinned people](../media/knowledge-management/pinned-people.png)</br>
+    ![Add pinned people](../media/knowledge-management/pinned-people.png)</br>
 
     The <b>Suggested people</b> section shows users that AI thinks might be subject matter experts on the topic from their connection to resources about the topic. You can change their status from Suggested to Pinned by selecting the pin icon on the user card.
 
-   ![Suggested people](../media/knowledge-management/suggested-people.png)</br>
+   ![Pin a suggested people](../media/knowledge-management/suggested-people.png)</br>
 
 5. In the <b>Pinned files and pages</b> section, you can add or "pin" a file or SharePoint site page that is associated to the topic.
 
-   ![Pinned files and pages](../media/knowledge-management/pinned-files-and-pages.png)</br>
+   ![Pinned files and pages section](../media/knowledge-management/pinned-files-and-pages.png)</br>
  
     To add a new file, select <b>Add</b>, select the SharePoint site from your Frequent or Followed sites, and then select the file from the site's document library.
 
@@ -81,21 +81,21 @@ Knowledge managers can also topics directly from the Manage Topics page by selec
 
 6. The <b>Suggested files and pages</b> section shows files and pages that AI suggested to be associated to the topic.
 
-   ![Suggested files and pages](../media/knowledge-management/suggested-files-and-pages.png)</br>
+   ![Suggested files and pages section](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
     You can make a suggested file or page to a pinned file or page by selecting the pinned icon.
 
 7.  The <b>Related sites</b> section shows sites that have information about the topic. 
 
-    ![Related sites](../media/knowledge-management/related-sites.png)</br>
+    ![Related sites section](../media/knowledge-management/related-sites.png)</br>
 
     You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
     
-    ![Related sites](../media/knowledge-management/sites.png)</br>
+    ![Select a site](../media/knowledge-management/sites.png)</br>
 
 8. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
 
-   ![Related topics](../media/knowledge-management/related-topic.png)</br>  
+   ![Related topics section](../media/knowledge-management/related-topic.png)</br>  
 
     You can then give a description of how the topics are related, and select <b>Update</b>.</br>
 
