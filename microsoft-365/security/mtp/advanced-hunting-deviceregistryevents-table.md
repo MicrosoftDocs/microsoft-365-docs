@@ -47,11 +47,14 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RegistryValueType` | string | Data type, such as binary or string, of the registry value that the recorded action was applied to |
 | `RegistryValueName` | string | Name of the registry value that the recorded action was applied to |
 | `RegistryValueData` | string | Data of the registry value that the recorded action was applied to |
+| `PreviousRegistryKey` | string | Original registry key of the registry value before it was modified |
 | `PreviousRegistryValueName` | string | Original name of the registry value before it was modified |
 | `PreviousRegistryValueData` | string | Original data of the registry value before it was modified |
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountUpn` | string | User principal name (UPN) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountObjectId` | string | Azure AD object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
 | `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
@@ -67,6 +70,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
