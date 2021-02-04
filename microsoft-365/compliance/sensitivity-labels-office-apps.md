@@ -167,13 +167,13 @@ For a more consistent label experience with meaningful reporting, provide approp
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments inherit the label only if the label that you apply to the email message applies encryption and the Office document isn't already encrypted.
+When you label an email message that has attachments, the attachments inherit the label only if the label that you apply to the email message applies encryption and the Office document isn't already encrypted. Because the inherited label applies encryption, the attachment becomes newly encrypted.
 
-Because the inherited label applies encryption, the attachment becomes encrypted.
+Examples of label inheritance, where the label **Confidential** applies encryption and the label **General** doesn't apply encryption:
 
-For example, a user adds an attachment that isn't labeled or encrypted. The **Confidential** label applies encryption and this user adds the **Confidential** label to the email message. As a result of inheritance, the attachment becomes labeled **Confidential** with encryption from that label.
+- A user creates a new email message and applies the **Confidential** label to this message. They then add an Office attachment that isn't labeled or encrypted. As a result of inheritance, the attachment is newly labeled **Confidential** and now has encryption applied from that label.
 
-Note that this inheritance can change an existing label on an attachment. For example, a user adds an attachment that has the **General** label, a label that doesn't apply encryption. When they add the **Confidential** label to the email message, the original label of **General** on the attachment changes to **Confidential**.
+- A user creates a new email message and applies the **Confidential** label to this message. They then add an Office attachment that is labeled **General** and this file isn't encrypted. As a result of inheritance, the attachment gets relabeled as **Confidential** and now has encryption applied from that label.
 
 
 ## Sensitivity label compatibility
