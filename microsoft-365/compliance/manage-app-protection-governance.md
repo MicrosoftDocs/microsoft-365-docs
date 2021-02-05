@@ -70,6 +70,10 @@ Here are the capabilities for each role.
 
 For additional information about each role, see [Administrator role permissions](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference). 
 
+## A first glipmse at MAPG
+
+To see the MAPG dashboard, go to [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
+
 ## Using MAPG
 
 Using MAPG to protect your tenant and its data from potentially malicious or ill-behaved apps falls into these three core capabilities:

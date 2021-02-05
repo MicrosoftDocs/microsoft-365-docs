@@ -24,20 +24,12 @@ description: "View your apps."
 >REVIEWERS: This content is in progress and not ready for review.
 >
 
-To see the MAPG dashboard, go to [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
-
-
-With MAPG, you can quickly gain deep insights on the M365 apps in your tenant. 
+MAPG allows you to quickly gain deep insights on the M365 apps in your tenant.
 
 - You can see a list of all OAuth-enabled M365 apps in the tenant, together with relevant app metadata and usage data. 
-- You can see app details with deeper insights and information by clicking an app in the list:  
+- You can see app details with deeper insights and information by clicking an app in the list.
 
-## Key tasks
-
-- Admins can gain deep insights on M365 apps in their environment
-
-
-### Getting a list of all the apps in your tenant
+## Getting a list of all the apps in your tenant
 
 For a summary of apps in your tenant, go to **Microsoft 365 Compliance Center > App protection & governance > All apps**.
 
@@ -45,7 +37,10 @@ You will see a list of apps and this information:
 
 - App Name
 - Publisher
-- App Certification: Whether the app is compatible with Microsoft technologies, compliant with cloud app security best practices, and supported by Microsoft.
+- App Certification
+
+  Whether the app is compatible with Microsoft technologies, compliant with cloud app security best practices, and supported by Microsoft.
+
 - Last Modified
 - Date Installed
 - Permission Privilege

@@ -20,12 +20,15 @@ description: "Get started with visibility and insights."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Content TBD.
+>[!Note]
+>REVIEWERS: This content is in progress and not ready for review.
+>
+
+Add intro.
 
 ## Viewing the dashboard
 
 To see the MAPG dashboard, use **Microsoft 365 Compliance Center > App protection & governance > Overview page**.
-
 
 ## What’s available in the dashboard
 
