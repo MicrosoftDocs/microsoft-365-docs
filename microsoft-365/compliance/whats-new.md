@@ -74,7 +74,7 @@ The [Records Management admin role group](get-started-with-records-management.md
 
 ### Sensitivity labels
 
-- [Automatically label data in Azure Purview (preview)](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label). You can now create and automatically apply sensitivity labels to assets in Azure Purview, such as files in Azure Blob storage and database columns in SQL Server.
+- [Automatically label data in Azure Purview (preview)](https://docs.microsoft.com/azure/purview/create-sensitivity-label). You can now create and automatically apply sensitivity labels to assets in Azure Purview, such as files in Azure Blob storage and database columns in SQL Server.
 - [Require users to apply a label to items](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents). Also known as ‘mandatory labeling’, this new option requires users to choose and apply a sensitivity label under the specific scenarios.
 
 ## November 2020
