@@ -33,10 +33,16 @@ Microsoft Teams, SharePoint Online, and OneDrive for Business support informatio
 > [!IMPORTANT]
 > Information barriers ***only supports*** two way restrictions. One way restrictions, such as marketing can communicate and collaborate with day traders, but day traders cannot communicate and collaborate with marketing ***is not supported***.
 
-For all of these example scenarios (and more), information barrier policies can be defined to prevent or allow communications and collaboration in Microsoft Teams, SharePoint Online and OneDrive. Such policies can prevent people from calling or chatting with those they shouldn't, or enable people to communicate only with specific groups in Microsoft Teams. With information barrier policies in effect, whenever users who are covered by those policies attempt to communicate and collaborate with others in Microsoft Teams, SharePoint Online or OneDrive checks are done to prevent (or allow) communication and collaboration (as defined by information barrier policies). To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams) and [information barriers in SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
+For all of these example scenarios (and more), information barrier policies can be defined to prevent or allow communications and collaboration in Microsoft Teams, SharePoint Online and OneDrive. Such policies can prevent people from calling or chatting with those they shouldn't, or enable people to communicate only with specific groups in Microsoft Teams. With information barrier policies in effect, whenever users who are covered by those policies attempt to communicate and collaborate with others in Microsoft Teams, SharePoint Online or OneDrive checks are done to prevent (or allow) communication and collaboration (as defined by information barrier policies).
+
+To learn more about the user experience with information barriers, see:
+
+- [Information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Information barriers in SharePoint Online](/sharepoint/information-barriers)
+- [Information barriers in OneDrive](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> Currently, information barriers do not apply to email communications. In addition, information barriers are independent from [compliance boundaries](set-up-compliance-boundaries.md).<p> Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.)
+> Currently, information barriers do not apply to email communications. In addition, information barriers are independent from [compliance boundaries](set-up-compliance-boundaries.md).<p> Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.)
 
 ## What happens with information barriers
 
@@ -57,16 +63,16 @@ In Microsoft Teams, information barrier policies determine and prevent the follo
 
 If the people involved are included in an information barrier policy to prevent the activity, they will not be able to proceed. In addition, potentially, everyone included in an information barrier policy can be blocked from communicating with others in Microsoft Teams. When people affected by information barrier policies are part of the same team or group chat, they might be removed from those chat sessions and further communication with the group might not be allowed.
 
-To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
+To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams).
 
 In SharePoint Online and OneDrive, information barrier policies determine and prevent the following kinds of unauthorized collaborations:
 
 - Adding a member to a site
 - Accessing site or content by a user
 - Sharing site or content with another user
-- Searching a site 
+- Searching a site
 
-To learn more about the user experience with information barriers, see [information barriers in SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
+To learn more about the user experience with information barriers, see [information barriers in SharePoint Online](/sharepoint/information-barriers)
 
 ## Required licenses and permissions
 
@@ -78,7 +84,7 @@ Information barriers are rolling out now, and are included in subscriptions, suc
 - Microsoft 365 Compliance E5/A5
 - Microsoft 365 Insider Risk Management
 
-For more information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 To [define or edit information barrier policies](information-barriers-policies.md), you must be assigned one of the following roles:
 
@@ -93,9 +99,9 @@ You must be familiar with PowerShell cmdlets in order to define, validate, or ed
 
 ## Next steps
 
-- [Learn more about information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
+- [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
 - [See the attributes that can be used for information barrier policies](information-barriers-attributes.md)
 - [Define policies for information barriers](information-barriers-policies.md)
 - [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md)
-- [Learn more about Information barriers in SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
-- [Learn more about Information barriers in OneDrive for Business](https://docs.microsoft.com/onedrive/information-barriers)

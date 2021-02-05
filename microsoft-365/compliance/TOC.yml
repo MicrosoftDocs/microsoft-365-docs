@@ -152,8 +152,7 @@
           href: encryption-sensitivity-labels.md
         - name: Apply a sensitivity label to content automatically
           href: apply-sensitivity-label-automatically.md
-        - name: View label usage with label analytics
-          href: label-analytics.md
+
         - name: Use sensitivity labels with teams, groups, and sites
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
@@ -234,57 +233,63 @@
     - name: Data loss prevention (DLP)
       items: 
         - name: Learn about DLP
-          href: data-loss-prevention-policies.md
-        - name: DLP and Microsoft Teams
-          href: dlp-microsoft-teams.md
-        - name: Learn about Endpoint data loss prevention
-          href: endpoint-dlp-learn-about.md
-        - name: Get started with Endpoint data loss prevention
-          href: endpoint-dlp-getting-started.md
-        - name: Configure device proxy and internet connection settings for Endpoint DLP
-          href: endpoint-dlp-configure-proxy.md
-        - name: Using Endpoint data loss prevention
-          href: endpoint-dlp-using.md
-        - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
           items:
-            - name: Onboarding tools and methods for Windows 10 devices   
-              href: dlp-configure-endpoints.md
-            - name: Onboard Windows 10 devices via Group Policy
-              href: dlp-configure-endpoints-gp.md
-            - name: Onboard Windows 10 devices using Mobile Device Management tools
-              href: dlp-configure-endpoints-mdm.md
-            - name: Onboard Windows 10 devices using Configuration Manager
-              href: dlp-configure-endpoints-sccm.md
-            - name: Onboard Windows 10 devices using a local script
-              href: dlp-configure-endpoints-script.md
-            - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
-              href: dlp-configure-endpoints-vdi.md
-        - name: Get started with the default DLP policy
-          href: get-started-with-the-default-dlp-policy.md
-        - name: Create a DLP policy from a template
-          href: create-a-dlp-policy-from-a-template.md
-        - name: Create, test, and tune a DLP policy
-          href: create-test-tune-dlp-policy.md
-        - name: Use notifications and policy tips in DLP policies
-          href: use-notifications-and-policy-tips.md
-        - name: Configure and view alerts for DLP policies (preview)
-          href: dlp-configure-view-alerts-policies.md
-        - name: What the DLP policy templates include
-          href: what-the-dlp-policy-templates-include.md
-        - name: Create a DLP policy to protect documents with FCI or other properties
-          href: protect-documents-that-have-fci-or-other-properties.md
-        - name: View the DLP reports
-          href: view-the-dlp-reports.md
-        - name: Form a query to find sensitive data stored on sites
-          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-        - name: How DLP works between the Security & Compliance Center and Exchange admin center
-          href: how-dlp-works-between-admin-centers.md
-        - name: Use sensitivity labels as a condition in DLP policies (preview)
-          href: dlp-sensitivity-label-as-condition.md
-        - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
-          href: dlp-use-policies-non-microsoft-cloud-apps.md
-        - name: DLP policy conditions and exceptions (preview)
-          href: dlp-conditions-and-exceptions.md
+          - name: Learn about DLP
+            href: data-loss-prevention-policies.md
+          - name: Learn about Endpoint data loss prevention
+            href: endpoint-dlp-learn-about.md
+        - name: Get started with DLP
+          items:
+          - name: Get started with the default DLP policy
+            href: get-started-with-the-default-dlp-policy.md
+          - name: Create a DLP policy from a template
+            href: create-a-dlp-policy-from-a-template.md
+          - name: Create, test, and tune a DLP policy
+            href: create-test-tune-dlp-policy.md
+          - name: Get started with Endpoint data loss prevention
+            href: endpoint-dlp-getting-started.md
+          - name: Configure device proxy and internet connection settings for Endpoint DLP
+            href: endpoint-dlp-configure-proxy.md
+          - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
+            items:
+              - name: Onboarding tools and methods for Windows 10 devices   
+                href: dlp-configure-endpoints.md
+              - name: Onboard Windows 10 devices via Group Policy
+                href: dlp-configure-endpoints-gp.md
+              - name: Onboard Windows 10 devices using Mobile Device Management tools
+                href: dlp-configure-endpoints-mdm.md
+              - name: Onboard Windows 10 devices using Configuration Manager
+                href: dlp-configure-endpoints-sccm.md
+              - name: Onboard Windows 10 devices using a local script
+                href: dlp-configure-endpoints-script.md
+              - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+                href: dlp-configure-endpoints-vdi.md
+        - name: Use DLP
+          items:
+            - name: DLP and Microsoft Teams
+              href: dlp-microsoft-teams.md
+            - name: Using Endpoint data loss prevention
+              href: endpoint-dlp-using.md
+            - name: Use notifications and policy tips in DLP policies
+              href: use-notifications-and-policy-tips.md
+            - name: What the DLP policy templates include
+              href: what-the-dlp-policy-templates-include.md
+            - name: Create a DLP policy to protect documents with FCI or other properties
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: View the DLP reports
+              href: view-the-dlp-reports.md
+            - name: Form a query to find sensitive data stored on sites
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: How DLP works between the Security & Compliance Center and Exchange admin center
+              href: how-dlp-works-between-admin-centers.md
+            - name: Configure and view alerts for DLP policies (preview)
+              href: dlp-configure-view-alerts-policies.md
+            - name: Use sensitivity labels as a condition in DLP policies (preview)
+              href: dlp-sensitivity-label-as-condition.md
+            - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
+              href: dlp-use-policies-non-microsoft-cloud-apps.md
+            - name: DLP policy conditions and exceptions (preview)
+              href: dlp-conditions-and-exceptions.md
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -662,6 +667,8 @@
               href: themes-in-advanced-ediscovery.md
             - name: Use the Relevance module to analyze data
               href: using-relevance.md
+            - name: Retirement of the Relevance module
+              href: relevance-module-retirement.md  
         - name: Export case data
           href: exporting-data-ediscover20.md
           items: 
@@ -731,6 +738,8 @@
       items:
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Use a PowerShell script to search the audit log
+          href: audit-log-search-script.md
         - name: Turn audit log search on or off
           href: turn-audit-log-search-on-or-off.md
         - name: Detailed properties in the audit log
