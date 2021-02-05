@@ -148,7 +148,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
    When you're finished, click **Save** on any page.
 
-5. **Impersonation**: Click **Edit** to modify the protected senders and protected domains in the policy. These settings are a condition for the policy that identifies spoofed senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+5. **Impersonation**: Click **Edit** to modify the protected senders and protected sender domains in the policy. These settings are a condition for the policy that identifies specific senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
    - **Add users to protect**: The default value is **Off**. To turn it on, slide the toggle to **On**, and then click the **Add user** button that appears.
 
@@ -182,7 +182,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
    - **Actions**: Click **Edit**
 
-     - **If email is sent by an impersonated user**: Configure one of the following actions for messages where the spoofed sender is one of the protected users you specified in **Add users to protect**:
+     - **If email is sent by an impersonated user**: Configure one of the following actions for messages where the sender is one of the protected users you specified in **Add users to protect**:
 
        - **Don't apply any action**
        - **Redirect message to other email addresses**
@@ -191,7 +191,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 
-     - **If email is sent by an impersonated domain**: Configure one of the following actions for messages where the spoofed sender is in one of the protected domains you specified in **Add domains to protect**:
+     - **If email is sent by an impersonated domain**: Configure one of the following actions for messages where the sender's domain is in one of the protected domains you specified in **Add domains to protect**:
 
        - **Don't apply any action**
        - **Redirect message to other email addresses**
@@ -245,18 +245,18 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
    When you're finished, click **Save** on any page.
 
-6. **Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
+6. **Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders. For more information about these settings, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
    Note that these same settings are also available in anti-phishing policies in EOP.
 
-   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
+   - **Spoofing filter settings**: This setting turns spoof intelligence on or off. The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**.
 
      > [!NOTE]
-     > You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > You don't need to turn off spoof intelligence if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    - **Enable Unauthenticated Sender feature**: The default value is **On**. To turn it off, slide the toggle to **Off**.
 
-   - **Actions**: Specify the action to take on messages that fail spoof intelligence:
+   - **Actions**: Specify the action to take on messages from blocked spoofed senders:
 
      **If email is sent by someone who's not allowed to spoof your domain**:
 

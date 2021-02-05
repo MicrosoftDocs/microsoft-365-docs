@@ -1,6 +1,6 @@
 ---
 title: Set up SPF to help prevent spoofing
-f1.keywords: 
+f1.keywords:
   - CSH
 ms.author: tracyp
 author: MSFTTracyP
@@ -10,12 +10,12 @@ audience: ITPro
 ms.topic: how-to
 
 localization_priority: Priority
-search.appverid: 
+search.appverid:
   - MET150
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
-ms.collection: 
+ms.collection:
   - M365-security-compliance
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Learn how to update a Domain Name Service (DNS) record to use Sender Policy Framework (SPF) with your custom domain in Office 365.
 ms.technology: mdo
@@ -27,10 +27,10 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 - [Prerequisites](#prerequisites)
-- [Create or update your SPF TXT record](#create-or-update-your-spf-txt-record)   
+- [Create or update your SPF TXT record](#create-or-update-your-spf-txt-record)
   - [How to handle subdomains?](#how-to-handle-subdomains)
-- [What does SPF email authentication actually do?](#what-does-spf-email-authentication-actually-do)   
-   - [Troubleshooting SPF](#troubleshooting-spf)
+- [What does SPF email authentication actually do?](#what-does-spf-email-authentication-actually-do)
+  - [Troubleshooting SPF](#troubleshooting-spf)
 - [More information about SPF](#more-information-about-spf)
 
 This article describes how to update an Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF)  email authentication with your custom domain in Office 365.
@@ -40,7 +40,7 @@ Using SPF helps to validate outbound email sent from your custom domain. It's a 
 ## Prerequisites
 
 > [!IMPORTANT]
-> If you are a **small business**, or are unfamiliar with IP addresses or DNS configuration, call your Internet domain registrar (ex. GoDaddy, Bluehost, web.com) to ask for help with DNS configuration of SPF (and any other email authentication method). *Also*, if you haven't bought, or don't use a custom URL (in other words the URL you and your customers browse to reach Office 365 ends in **onmicrosoft.com**), SPF has been set up for you in the Office 365 service. No further steps are required in that case. Thanks for reading.
+> If you are a **small business**, or are unfamiliar with IP addresses or DNS configuration, call your internet domain registrar (i.e., GoDaddy, Bluehost, web.com, etc.) to ask for help with DNS configuration of SPF (and any other email authentication method). *Also*, if you haven't bought, or don't use a custom URL (in other words the URL you and your customers browse to reach Office 365 ends in **onmicrosoft.com**), SPF has already been set up for you in the Office 365 service. No further steps are required in that case. Thanks for reading.
 
 Before you create or update the SPF TXT record for Office 365 in external DNS, you need to gather some information needed to make the record. For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
@@ -109,7 +109,6 @@ An additional wildcard SPF record (`*.`) is required for every domain and subdom
 ## Troubleshooting SPF
 
 Having trouble with your SPF TXT record? Read [Troubleshooting: Best practices for SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
-
 
 ## What does SPF email authentication actually do?
 
