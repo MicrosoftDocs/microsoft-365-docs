@@ -37,15 +37,20 @@ landingContent:
           - text: Overview video
             url:  https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
   # Card
-  - title: Start with free trials
+  - title: Get started
     linkLists:
       - linkListType: get-started
         links:
-          - text: Evaluate Microsoft 365 Defender
-            url: mtp/mtp-evaluation.md
-          - text: Microsoft 365 Defender pilot playbook
-            url: mtp/mtp-pilot.md
-  
+          - text: Evaluate Microsoft Defender for Endpoint
+            url:  defender-endpoint/evaluation-lab.md
+          - text: Plan your deployment
+            url: defender-endpoint/deployment-strategy.md
+	  - linkListType: how-to
+		links:
+          - text: Migrate to Microsoft Defender for Endpoint
+            url:  defender-endpoint/migration-guides.md
+			
+
   # Card
   - title: Secure your remote workforce
     linkLists:
