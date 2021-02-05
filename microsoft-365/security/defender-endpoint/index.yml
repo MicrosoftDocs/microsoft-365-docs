@@ -1,0 +1,24 @@
+### YamlMime:Landing
+
+title: Microsoft Defender for Endpoint # < 60 chars
+summary: Microsoft Defender for Endpoint is a unified platform for preventative protection, post-breach detection automated investigation, and response. # < 160 chars
+
+metadata:
+  title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft Defender for Endpoint - how it protects endpoints from cyber threats and provides security operation teams with capabilities to remediate threats. # Required; article description that is displayed in search results. < 160 chars.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: m365-security-compliance
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
