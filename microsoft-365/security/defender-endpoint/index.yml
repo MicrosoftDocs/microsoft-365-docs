@@ -53,6 +53,10 @@ landingContent:
             url: deployment-phases.md
           - text: Onboard supported devices
             url: onboard-configure.md
+      - linkListType: how-to-guide
+        links:
+          - text: Migration guide
+            url: migration-guides.md
       - linkListType: video
         links:
           - text: Onboarding video
