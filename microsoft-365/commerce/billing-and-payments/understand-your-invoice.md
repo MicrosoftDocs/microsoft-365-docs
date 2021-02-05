@@ -15,7 +15,6 @@ ms.collection:
 - commerce
 ms.custom: 
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
