@@ -26,54 +26,58 @@ description: "Learn about visibility and insights."
 
 Overview of visibility and insights capabilities and value
 
-With MAPG insights, you can see a view of all the Microsoft 365 apps in your tenant in a single dashboard. You can see all the apps’ activities and react or respond to them.
+With MAPG insights, you can see 
 
+- A view of all the Microsoft 365 apps in your tenant in a single dashboard. 
+- All the apps’ activities and react or respond to them.
 
-Admins can quickly gain meaningful insights on their M365 application ecosystem and efficiently navigate to top tasks
+You can quickly gain meaningful insights on your Microsoft 365 application ecosystem and efficiently navigate to top tasks.
 
-Review of required administrator roles for visibility and insights
+Here's a quick review of required administrator roles for visibility and insights.
 
-| Role | Read the dashboard | Read all apps | Read policies | Create, update, or delete policies | Read alerts | Update alerts | Read settings | Update settings |
-|:-------|:-----|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-| Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Compliance Reader | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  |
-| Global Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Global Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  |
-| Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Security Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |  |
-| Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-||||||||||
+| Role | Read the dashboard | Read all apps |
+|:-------|:-----|:-------|
+| Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Compliance Reader | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Global Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Global Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Security Reader  | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+||||
 
+You can see:
 
+- A dashboard of all insights.
+- Network insights of single and all apps with workload and user level insights.
+- Data insights of single and all apps with workload and user level insights.
+- App information and metadata, such as permissions, registration date, and certification.
+- Publisher information and metadata, such as name and verification status.
+- Insights on:
 
-See:
+  - High-privileged apps.
+  - Overprivileged apps.
+  - Unused apps.
+  - High-usage apps.
+  - Users whose data a specific app can access.
+  - HVE users who data a specific app can access.
 
-- A dashboard of all insights
-- Network insights of single and all apps with workload and user level insights  
-- Data insights of single and all apps with workload and user level insights  
-- App information and metadata, such as permissions, registration date, and certification
-- Publisher information and metadata, such as name and verification status
-- Insights on high-privileged apps
-- Insights on overprivileged apps
-- Insights on unused apps
-- Insights on high-usage apps
-- Insights on users whose data a specific app can access
-- Insights on HVE users who data a specific app can access
-- A cumulative view of users accessing apps
-- Error insights for a single or all apps
-- Alerts insights
-- Policy list insights
-- Policy hit and success rates insight
-- Insights from MCAS
-- Policies created in MCAS in MAPG portal
-- Alerts for OAuth apps generated in MCAS, in MAPG portal
+- A cumulative view of users accessing apps.
+- Error insights for a single or all apps.
+- Alerts insights.
+- Policy list insights.
+- Policy hit and success rates insight.
+- Insights from Microsoft Cloud App Security (MCAS).
+- Policies created in MCAS in MAPG portal.
+- Alerts for OAuth apps generated in MCAS, in MAPG portal.
 
-Also:
+You can also:
 
-- Customize the dashboard to select the insights they want to view
-- Have a ‘drill-down’ view of a single app (app page) with all associated insights
-- Have a ‘drill-down’ view for users   
+- Customize the dashboard to select the insights they want to view.
+- Have a ‘drill-down’ view of a single app (app page) with all associated insights.
+- Have a ‘drill-down’ view for users.
 
-## Key tasks
+## Next step
 
+[Get started](mapg-visibility-insights-get-started.md) with application insights.
 

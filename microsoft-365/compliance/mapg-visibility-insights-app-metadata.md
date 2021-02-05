@@ -23,3 +23,7 @@ description: "Manage app metadata."
 Content TBD.
 
 Viewing and modifying app metadata
+
+## Next step
+
+[Determine your overall app compliance posture](mapg-visibility-insights-compliance-posture.md).

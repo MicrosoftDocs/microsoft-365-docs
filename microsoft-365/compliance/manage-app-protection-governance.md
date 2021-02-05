@@ -25,7 +25,7 @@ Microsoft Application Protection and Governance (MAPG) is a security and complia
 The scale of ongoing cybersecurity incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every organization. Accelerated cloud adoption with Microsoft 365 and its rich application ecosystem are constantly growing. Attackers are gaining organizational footholds through applications because:
 
 - Users are typically unaware of the risks when consenting to the use of applications. 
-- App developers and independent software vendors ISVs do not yet have Security Development Lifecycle (SDL) best practices in place to address attacker techniques.
+- App developers and independent software vendors (ISVs) do not yet have Security Development Lifecycle (SDL) best practices in place to address attacker techniques.
 
 MAPG provides you with comprehensive:
 
