@@ -26,11 +26,9 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+
 - Microsoft 365 Defender
-
-
 
 The `EmailEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving the processing of emails on Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table.
 
@@ -72,15 +70,15 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `UserLevelAction` | string | Action taken on the email in response to matches to a mailbox policy defined by the recipient |
 | `UserLevelPolicy` | string | End-user mailbox policy that triggered the action taken on the email |
 | `Connectors` | string | Custom instructions that define organizational mail flow and how the email was routed |
-| `ConfidenceLevel` | string |  |
+| `ConfidenceLevel` | string | List of confidence levels of any spam or phishing verdicts. For spam, this column shows the spam confidence level (SCL), indicating if the email was skipped (-1), found to be not spam (0,1), found to be spam with moderate confidence (5,6), or found to be spam with high confidence (9). For phishing, this column displays whether the confidence level is "High" or "Low". |
 | `SenderDisplayName` | string | Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname |
 | `SenderObjectId` | string |Unique identifier for the sender’s account in Azure AD |
 | `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | `ThreatNames` | string |Detection name for malware or other threats found |
 | `DetectionMethods` | string | Methods used to detect malware, phishing, or other threats found in the email |
 
-
 ## Related topics
+
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
