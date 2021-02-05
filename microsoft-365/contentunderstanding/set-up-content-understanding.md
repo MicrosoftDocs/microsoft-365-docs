@@ -87,7 +87,7 @@ To assign licenses:
 
 1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
 
-2. Select the users that you want to license, and click **Manage product licenses**.
+2. Select the users that you want to license, and choose **Manage product licenses**.
 
 3. Choose **Apps** from the drop-down menu.
 
