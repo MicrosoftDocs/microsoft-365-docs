@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Microsoft Defender for Endpoint # < 60 chars
-summary: Microsoft Defender for Endpoint is a unified platform for preventative protection, post-breach detection automated investigation, and response. # < 160 chars
+title: Microsoft 365 security documentation # < 60 chars
+summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces.  # < 160 chars
 
 metadata:
   title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -36,29 +36,26 @@ landingContent:
         links:
           - text: Overview video
             url:  https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
-  # Card
+ 
+  
+# Card
   - title: Plan & deploy the service
     linkLists:
       - linkListType: get-started
         links:
-          - text: Evaluate Microsoft Defender for Endpoint
-            url:  evaluation-lab.md
-          - text: Plan your deployment
-            url: deployment-strategy.md
+        - text: Evaluate Microsoft Defender for Endpoint
+          url: evaluation-lab.md 
+        - text: Plan your deployment
+          url: deployment-strategy.md
       - linkListType: deploy
         links:
           - text: Deployment phases
-            url:  deployment-phases.md
-          - text: Onboard devices to the service 
-            url: deployment-phases.md
-       - linkListType: video
+            url: whats-new-in-microsoft-defender-atp.md
+      - linkListType: video
         links:
-          - text: Onboarding clients
-            url:  https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
- - linkListType: how-to-guide
-        links:
-          - text: Migrate to Microsoft Defender for Endpoint
-            url:  migration-guides.md
+          - text: Overview video
+            url:  https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0 
+ 
 # Card
   - title: Security administration
     linkLists:
