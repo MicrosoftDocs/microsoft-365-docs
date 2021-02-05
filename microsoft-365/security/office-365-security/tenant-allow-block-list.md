@@ -75,7 +75,7 @@ For details about the syntax for URL entries, see the [URL syntax for the Tenant
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
-2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click **Add**
+2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click **Block**
 
 3. In the **Block URLs** flyout that appears, configure the following settings:
 
@@ -97,7 +97,7 @@ For details about the syntax for URL entries, see the [URL syntax for the Tenant
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
-2. On the **Tenant Allow/Block List** page, select **Files** tab, and then click **Add**.
+2. On the **Tenant Allow/Block List** page, select **Files** tab, and then click **Block**.
 
 3. In the **Add files to block** flyout that appears, configure the following settings:
 
