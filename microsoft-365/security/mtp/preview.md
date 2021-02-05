@@ -38,6 +38,15 @@ Learn about new features in the Microsoft 365 Defender preview release and be am
 
 For more information on new capabilities that are generally available, see [What's new in Microsoft 365 Defender](whats-new.md).
 
+## Required permissions
+
+Accounts assigned the following Azure Active Directory (AD) roles can Turn On  Microsoft 365 Defender Preview features
+
+- Global administrator
+- Security administrator
+- Security Operator
+- Global Reader
+
 ## Turn on preview features
 You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.
 
