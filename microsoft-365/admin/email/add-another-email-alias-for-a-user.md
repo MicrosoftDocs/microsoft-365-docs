@@ -15,7 +15,6 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
