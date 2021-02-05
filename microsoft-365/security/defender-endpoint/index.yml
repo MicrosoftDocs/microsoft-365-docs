@@ -37,7 +37,7 @@ landingContent:
           - text: Overview video
             url:  https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
   # Card
-  - title: Get started
+  - title: Plan & deploy the service
     linkLists:
       - linkListType: get-started
         links:
@@ -67,4 +67,13 @@ landingContent:
           url: microsoft-defender-atp-android.md          
   
  
-
+# Card
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Management and APIs
+          url: management-apis.md  
+        - text: Partner integration
+          url: partner-integration.md
+         
