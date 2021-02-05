@@ -45,7 +45,7 @@ landingContent:
             url:  defender-endpoint/evaluation-lab.md
           - text: Plan your deployment
             url: defender-endpoint/deployment-strategy.md
-      - linkListType: how-to
+      - linkListType: how-to-guide
         links:
           - text: Migrate to Microsoft Defender for Endpoint
             url:  defender-endpoint/migration-guides.md
