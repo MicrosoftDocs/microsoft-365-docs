@@ -53,13 +53,18 @@ landingContent:
             url:  migration-guides.md
 
   # Card
-  - title: Secure your remote workforce
+  - title: Use Microsoft Defender for Endpoint on other platforms
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
-        - text: Secure your remote workforce
-          url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/     
-
+        - text: Microsoft Defender for Mac
+          url: microsoft-defender-atp-mac.md  
+        - text: Microsoft Defender for iOS
+          url: microsoft-defender-atp-ios.md
+        - text: Microsoft Defender for Linux
+          url: microsoft-defender-atp-linux.md
+        - text: Microsoft Defender for Android
+          url: microsoft-defender-atp-android.md          
   # Card
   - title: Microsoft Defender for Office 365
     linkLists:
