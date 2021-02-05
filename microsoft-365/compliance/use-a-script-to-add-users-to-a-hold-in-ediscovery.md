@@ -117,7 +117,7 @@ if (!$SccSession)
   Connect-IPPSSession
 }
 
-# Get the organization's domain name. We use this to create the admin URL and root URL for OneDrive for Business.
+# Get the organization's domain name. We use this to create the SharePoint admin URL and root URL for OneDrive for Business.
 ""
 $mySiteDomain = Read-Host "Enter the domain name for your SharePoint organization. We use this name to connect to SharePoint admin center and for the OneDrive URLs in your organization. For example, 'contoso' in 'https://contoso-admin.sharepoint.com' and 'https://contoso-my.sharepoint.com'"
 ""
