@@ -56,7 +56,7 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 ::: moniker range="o365-germany"
 
-To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill orinvoice](understand-your-invoice2.md).
+To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill or invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
