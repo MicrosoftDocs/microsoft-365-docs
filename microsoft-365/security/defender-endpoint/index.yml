@@ -39,7 +39,7 @@ landingContent:
  
   
 # Card
-  - title: Plan & deploy the service
+  - title: Evaluate & deploy the service
     linkLists:
       - linkListType: get-started
         links:
