@@ -93,7 +93,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 
   When spoof intelligence is enabled, the **spoof intelligence insight** shows spoofed senders that were automatically detected and allowed or blocked by spoof intelligence. You can manually override the spoof intelligence verdict to allow or block the detected spoofed senders from within the insight. But when you do, the spoofed sender disappears from the spoof intelligence insight, and is now visible only on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders in the Tenant Allow/Block List. For more information, see the following topics:
 
-  - [Spoof intelligence in EOP](learn-about-spoof-intelligence.md)
+  - [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)
   - [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md)
 
   > [!NOTE]
@@ -130,7 +130,7 @@ The **Unauthenticated Sender** setting enables or disables unauthenticated sende
 
 To prevent the question mark or via tag from being added to messages from specific senders, you have the following options:
 
-- Allow the sender to spoof in the spoof intelligence policy. This action will prevent the via tag from appearing in messages from the sender when unauthenticated sender identification is disabled. For instructions, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- Allow the spoofed sender in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually in the [Tenant Allow/Block List](tenant-allow-block-list.md). Allowing the spoofed sender will prevent the via tag from appearing in messages from the sender when unauthenticated sender identification is disabled.
 
 - [Configure email authentication](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) for the sender domain.
   - For the question mark in the sender's photo, SPF or DKIM are the most important.

@@ -54,7 +54,7 @@ These settings cover a range of features that are outside of security policies.
 |Authenticated SMTP submission|Disabled|Disabled|Authenticated client SMTP submission (also known as client SMTP submission or SMTP AUTH) is required for POP3 and IMAP4 clients to send email.|
 |EWS connectivity to mailbox|Disabled|Disabled||
 |[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) cmdlet).|
-|Use [spoof intelligence](learn-about-spoof-intelligence.md) to add senders to your allow list|Yes|Yes||
+|Use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md)to add spoofed senders to your allow list|Yes|Yes||
 |[Directory-Based Edge Blocking (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Enabled|Enabled|Domain Type = Authoritative|
 |[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
 |

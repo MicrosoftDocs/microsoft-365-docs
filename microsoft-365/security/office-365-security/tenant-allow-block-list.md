@@ -37,7 +37,7 @@ The Tenant Allow/Block List in the Security & Compliance Center gives you a way 
 - URLs to block.
 - Files to block.
 - Bulk mail sender domains to allow. For more information about bulk mail, the bulk confidence level (BCL), and bulk mail filtering by anti-spam policies, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).
-- Spoofed senders to allow or block.
+- Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -118,7 +118,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 4. When you're finished, click **Add**.
 
-## Use the Security & Compliance Center to create bulk mail sender allow entries in the Tenant Allow/Block List
+## Use the Security & Compliance Center to create allow bulk mail sender domain entries in the Tenant Allow/Block List
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
@@ -230,8 +230,6 @@ This article describes how to configure entries in the Tenant Allow/Block List i
    When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
 
 ## Use the Security & Compliance Center to modify entries in the Tenant Allow/Block List
-
-**Note**: You can't modify the existing blocked URL or file _values_ within an entry. To modify these values, you need to delete and recreate the entry.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 

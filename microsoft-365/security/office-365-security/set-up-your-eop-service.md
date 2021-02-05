@@ -60,7 +60,7 @@ Before configuring your mail to flow to and from the EOP service, we recommend a
 
 Create connectors in the Exchange admin center (EAC) that enable mail flow between EOP and your on-premises mail servers. For detailed instructions, see [Set up connectors to route mail between Microsoft 365 and your own email servers](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
 
-### How do you know this task worked?
+### How do you know this worked?
 
 Check mail flow between the service and your environment. For more information, see [Test mail flow by validating your Microsoft 365 connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
@@ -95,6 +95,6 @@ At this point, you've verified service delivery for a properly configured Outbou
 - If you want to run an outbound email test, you can send an email message from a user in your organization to a web-based email account and confirm that the message is received.
 
 > [!TIP]
-> When you've completed your setup, you don't have to perform extra steps to make EOP remove spam and malware. EOP removes spam and malware automatically. However, you can fine tune your settings based on your business requirements. For more information, see [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md) and [Configure spoof intelligence](learn-about-spoof-intelligence.md).
+> When you've completed your setup, you don't have to perform extra steps to make EOP remove spam and malware. EOP removes spam and malware automatically. However, you can fine tune your settings based on your business requirements. For more information, see [Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md) and [Anti-phishing protection in Microsoft 365](anti-phishing-protection.md).
 >
 > Now that your service is running, we recommend reading [Best practices for configuring EOP](best-practices-for-configuring-eop.md), which describes recommended settings and considerations for after you set up EOP.

@@ -238,9 +238,9 @@ To go back to the report view, click **View report**.
 
 ## Spoof detections report
 
-The **Spoof detections** report shows how many spoof mail messages were detected, and of those, which ones were considered "good" (spoof mail done for legitimate business reasons). For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
+The **Spoof detections** report shows how many messages from spoofed senders were detected, and of those, which ones were considered "good" (spoof mail done for legitimate business reasons). For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
-The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
+The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for 10 days of filtering.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Spoof detections**. To go directly to the report, open <https://protection.office.com/reportv2?id=SpoofMailReport>.
 
@@ -251,9 +251,7 @@ When you hover over a day (data point) in the chart, you can see how many spoof 
 You can filter both the chart and the details table by clicking **Filters** and selecting one or more of the following values:
 
 - **Start date** and **End date**
-
 - **Good mail**
-
 - **Caught as spam**
 
 ![Report view in the Spoof detections report](../../media/spoof-detections-report-view.png)

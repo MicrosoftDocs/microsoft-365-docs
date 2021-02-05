@@ -213,9 +213,9 @@ Microsoft 365 is configured like this because some legitimate email may fail DMA
 
 - Users add safe senders individually by using their email client.
 
-- Administrators can update the [Spoof Intelligence](learn-about-spoof-intelligence.md) reporting to allow the spoof.
+- Admins can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) or the [Tenant Allow/Block List](tenant-allow-block-list.md) to allow messages from the spoofed sender.
 
-- Administrators create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
+- Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 
 For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 

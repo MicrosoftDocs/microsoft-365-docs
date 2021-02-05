@@ -158,17 +158,11 @@ Microsoft 365 will treat inbound email from your corporate infrastructure as aut
 
 Once you've gotten started with an SPF fallback policy of `?all`, you can gradually discover and include more email sources for your messages, and then update your SPF record with a stricter policy.
 
-### Use spoof intelligence to configure permitted senders of unauthenticated email
+### Configure permitted senders of unauthenticated email
 
-You can also use [spoof intelligence](learn-about-spoof-intelligence.md) to permit senders to transmit unauthenticated messages to your organization.
+You can also use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
 
 For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is either the source IP address (divided up into /24 CIDR ranges), or the organizational domain of the reverse DNS (PTR) record.
-
-In the screenshot below, the source IP might be 131.107.18.4 with the PTR record outbound.mail.protection.outlook.com. This would show up as outlook.com for the sending infrastructure.
-
-To permit this sender to send unauthenticated email, change the **No** to a **Yes**.
-
-![Setting up anti-spoofing allowed senders](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 ### Create an allow entry for the sender/recipient pair
 

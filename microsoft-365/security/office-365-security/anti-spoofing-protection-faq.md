@@ -56,7 +56,7 @@ See [You don't know all sources for your email](email-validation-and-authenticat
 
 ## What happens if I disable anti-spoofing protection for my organization?
 
-We do not recommend disabling anti-spoofing protection. Disabling the protection will allow more phishing and spam messages to be delivered in your organization. Not all phishing is spoofing, and not all spoofed messages will be missed. However, your risk will be higher.
+We do not recommend disabling anti-spoofing protection. Disabling the protection will allow more phishing and spam messages to be delivered in your organization. Not all phishing uses spoofed senders, so disabling anti-spoofing protection doesn't mean you're disabling anti-phishing protection. However, your risk will be higher.
 
 Now that [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) is available, we no longer recommended turning off anti-spoofing protection when your email is routed through another service before EOP.
 
