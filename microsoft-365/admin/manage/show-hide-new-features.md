@@ -3,7 +3,7 @@ title: "Manage which ‎Office‎ features appear in What's New"
 f1.keywords:
 - NOCSH
 ms.author: danbrown
-author: DHB_MSFT
+author: DHB-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -28,10 +28,8 @@ When an important ‎Office‎ feature is released, users will get a message abo
 You can control which of these feature messages your users are shown by using the **What's new in Office** feature in the Microsoft 365 admin center. If you decide to hide a feature message to your users, you can always come back later and decide to show it to them.
 
 > [!NOTE]
-> - Hiding a feature message doesn't disable the feature in the Office app.
+> - Hiding a feature message from your users doesn't disable the feature in the Office app.
 > - You must be assigned either the Global admin role or the Office apps admin role to use the **What's new in Office** feature.
-> - You can also use the Microsoft 365 Apps center ([https://config.office.com](https://config.office.com)), under **Customization** > **What's New Management**.
-
 
 ## Show or hide new features 
 
@@ -44,16 +42,16 @@ You can control which of these feature messages your users are shown by using th
      - The first version (release) that the feature is available in for that channel.
 4. Choose **Hide from users**. Or, if you previously hid the feature, choose **Show to users**.
 
-You can also select multiple features on the **Manage which ‎Office‎ features appear in What's New** page and then choose either **Hide** or **Show**.
+You can also select multiple features on the **Manage which ‎Office‎ features appear in What's New** page, and then choose either **Hide** or **Show**.
 
 > [!NOTE]
 > - If a feature is available in multiple Office apps, setting the feature to **Hidden** hides the feature message in all of those Office apps.
-> - All feature messages are shown to users by default. This is the default status for all features, and the status listed only changes if you have chosen to hide or show a feature message.
-> - You can also get to the **What's new in Office** feature from the Microsoft 365 Apps center ([https://config.office.com](https://config.office.com)). The feature is found under **Customization** > **What's New Management**.
+> - All feature messages are shown to users by default. This is the default status for all features, and the status only changes if you have chosen to hide or show a feature message.
+> - You can also get to the **What's new in Office** feature from the Microsoft 365 Apps admin center ([https://config.office.com](https://config.office.com)). The feature is found under **Customization** > **What's New Management**.
 
 ## List of features
 
-You can filter which features appear on the **Manage which ‎Office‎ features appear in What's New** page. You can filter by channel, application, or status, or some combination of them.
+You can filter which features appear on the **Manage which ‎Office‎ features appear in What's New** page. You can filter by channel, application, or status, or by some combination of them.
 
 New features appear on the **Manage which ‎Office‎ features appear in What's New** page based on the following schedule:
 
