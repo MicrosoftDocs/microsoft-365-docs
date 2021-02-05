@@ -16,22 +16,26 @@ metadata:
   ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
   localization_priority: Priority
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Microsoft 365 Defender
+  - title: Microsoft Defender for Endpoint
     linkLists:
       - linkListType: overview
         links:
-        - text: What is Microsoft 365 Defender?
-          url:  mtp/microsoft-threat-protection.md
-        - text: Microsoft 365 security center
-          url:  mtp/overview-security-center.md
+        - text: What is Microsoft Defender for Endpoint?
+          url:  defender-endpoint/microsoft-defender-advanced-threat-protection.md
+      - linkListType: whats-new
+        links:
+          - text: What's new in Microsoft Defender for Endpoint
+            url: whats-new-in-microsoft-defender-atp.md
+      - linkListType: video
+        links:
+          - text: Overview video
+            url:  https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
   # Card
   - title: Start with free trials
     linkLists:
