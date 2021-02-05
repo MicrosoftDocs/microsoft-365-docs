@@ -283,7 +283,7 @@ Certain account names could conflict with account names created by Microsoft Man
 
 **Not ready**
 
-You have at least one account name that will conflict with ones created by Microsoft Managed Desktop. Work with your Microsoft account representative to exclude these account names as we don't list the accounts names publicly to minimiize security risk. 
+You have at least one account name that will conflict with account names created by Microsoft Managed Desktop. Work with your Microsoft account representative to exclude these account names as we don't list the account names publicly to minimize security risk. 
 
 
 ### Security administrator roles
