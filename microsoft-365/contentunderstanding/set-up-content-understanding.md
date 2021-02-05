@@ -89,7 +89,7 @@ To assign licenses:
 
 2. Select the users that you want to license, and click **Manage product licenses**.
 
-3. Click on **Apps** drop down.
+3. Choose **Apps** from the drop-down menu.
 
 4. Select **Show apps for  SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
