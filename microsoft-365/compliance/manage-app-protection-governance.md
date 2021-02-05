@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Application and Protection Governance in Microsoft 365"
+title: "Microsoft Application Protection and Governance in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,10 +13,10 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Implement Microsoft Application and Protection Governance capabilities to govern your apps."
+description: "Implement Microsoft Application Protection and Governance capabilities to govern your apps."
 ---
 
-# Microsoft Application and Protection Governance in Microsoft 365 (in preview)
+# Microsoft Application Protection and Governance in Microsoft 365 (in preview)
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
