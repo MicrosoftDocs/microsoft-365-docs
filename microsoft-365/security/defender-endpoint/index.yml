@@ -4,7 +4,7 @@ title: Microsoft Defender for Endpoint documentation # < 60 chars
 summary: Microsoft Defender for Endpoint delivers preventative protection, post-breach detection, automated investigation, and response. # < 160 chars
 
 metadata:
-  title: Microsoft Defender for Endpoint security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Microsoft Defender for Endpoint documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about Microsoft Defender for Endpoint and maximize the built-in security capabilities to protect devices, detect malicious activity, and remediate threats# Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
