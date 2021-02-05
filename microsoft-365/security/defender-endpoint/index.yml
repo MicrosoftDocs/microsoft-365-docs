@@ -115,4 +115,4 @@ landingContent:
         - text: Attack surface reduction
           url: overview-attack-surface-reduction.md
         - text: Next-generation protection
-          url: microsoft-defender-antivirus-in-windows-10.md         
+          url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10         
