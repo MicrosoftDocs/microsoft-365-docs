@@ -45,12 +45,31 @@ landingContent:
             url:  evaluation-lab.md
           - text: Plan your deployment
             url: deployment-strategy.md
-          - text: Deploy
+      - linkListType: deploy
+        links:
+          - text: Deployment phases
+            url:  deployment-phases.md
+          - text: Onboard devices to the service 
             url: deployment-phases.md
-      - linkListType: how-to-guide
+       - linkListType: video
+        links:
+          - text: Onboarding clients
+            url:  https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
+ - linkListType: how-to-guide
         links:
           - text: Migrate to Microsoft Defender for Endpoint
             url:  migration-guides.md
+# Card
+  - title: Security administration
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Threat & vulnerability management
+          url: next-gen-threat-and-vuln-mgt.md  
+        - text: Partner integration
+          url: partner-integration.md
+
+
 
   # Card
   - title: Use Microsoft Defender for Endpoint on other platforms
