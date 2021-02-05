@@ -27,7 +27,7 @@ landingContent:
       - linkListType: overview
         links:
         - text: What is Microsoft Defender for Endpoint?
-          url:  defender-endpoint/microsoft-defender-advanced-threat-protection.md
+          url:  microsoft-defender-advanced-threat-protection.md
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Defender for Endpoint
@@ -42,15 +42,15 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Evaluate Microsoft Defender for Endpoint
-            url:  defender-endpoint/evaluation-lab.md
+            url:  evaluation-lab.md
           - text: Plan your deployment
-            url: defender-endpoint/deployment-strategy.md
+            url: deployment-strategy.md
           - text: Deploy
-            url: defender-endpoint/deployment-phases.md
+            url: deployment-phases.md
       - linkListType: how-to-guide
         links:
           - text: Migrate to Microsoft Defender for Endpoint
-            url:  defender-endpoint/migration-guides.md
+            url:  migration-guides.md
 
   # Card
   - title: Secure your remote workforce
