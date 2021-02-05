@@ -116,9 +116,16 @@ if (!$SccSession)
   Import-Module ExchangeOnlineManagement
   Connect-IPPSSession
 }
+
+# Get the organization's domain name. We use this to create the admin URL and root URL for OneDrive for Business.
+""
+$mySiteDomain = Read-Host "Enter the domain name for your SharePoint organization. We use this name to connect to SharePoint admin center and for the OneDrive URLs in your organization. For example, 'contoso' in 'https://contoso-admin.sharepoint.com' and 'https://contoso-my.sharepoint.com'"
+""
+
 # Connect to PnP Online using modern authentication
 Import-Module PnP.PowerShell
-Connect-PnPOnline -Url https://alpinehouse-admin.sharepoint.com -UseWebLogin
+Connect-PnPOnline -Url https://$mySiteDomain-admin.sharepoint.com -UseWebLogin
+
 # Load the SharePoint assemblies from the SharePoint Online Management Shell
 # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
 if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
@@ -132,10 +139,7 @@ if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
         return;
     }
 }
-# Get the organization's MySite domain name. We use this to create the admin URL and root URL for OneDrive for Business
-""
-$mySiteDomain = Read-Host "Enter the name of your organization's MySite domain. For example, 'contoso' for 'https://contoso-my.sharepoint.com'"
-""
+
 # Get other required information
 do{
 $casename = Read-Host "Enter the name of the case"
