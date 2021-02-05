@@ -53,7 +53,7 @@ You can also select multiple features on the **Manage which ‎Office‎ feature
 
 You can filter which features appear on the **Manage which ‎Office‎ features appear in What's New** page. You can filter by channel, application, or status, or by some combination of them.
 
-New features appear on the **Manage which ‎Office‎ features appear in What's New** page based on the following schedule:
+New features appear on the page based on the following schedule:
 
 ||||
 |:-----|:-----|:-----|
