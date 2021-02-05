@@ -53,9 +53,9 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Defender for Office 365?
+          - text: What is Microsoft Defender for Office 365?
             url: office-365-security/office-365-atp.md
-          - text: Defender for Office 365 service description
+          - text: Microsoft Defender for Office 365 service description
             url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
             
   # Card
