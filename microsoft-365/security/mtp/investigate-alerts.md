@@ -80,7 +80,8 @@ Selecting Alerts under Incidents & Alerts in the Microsoft 365 security center n
 The Alerts queue shows a list of alerts that were flagged in your network. By default, the queue displays alerts seen in the last 30 days. The most recent alerts are shown at the top of the list helping you see the most recent alerts first.
 
 > [!NOTE]
-> Currently, alerts from Microsoft Defender for Office 365 is limited to the last 7 days. If you need to triage alerts older than 7 days, use the alerts queue in the [Security and Compliance Center](https://protection.office.com/viewalerts).
+> At the time of launch, the unified alerts queue will only have 7 days’ worth of Microsoft Defender for Office 365 alerts available. 
+The queue will continue to build over time. If you need to triage alerts prior to the launch of the unified alerts queue, use the alerts queue in the [Security and Compliance Center](https://protection.office.com/viewalerts).
 
 
 On the top navigation, you can:
