@@ -139,9 +139,9 @@ To create an anti-phishing policy in Defender for Office 365, watch [this short 
 
 |Setting or option|Recommended setting|
 |---|---|
-|Name|Domain and most valuable campaign staff|
+|Name|Domain and most valuable staff|
 |Description|Ensure most important staff and our domain are not being impersonated.|
-|Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the candidate, campaign manager, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
+|Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the business owners, partners, or candidate, managers, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
 |Add domains to protect|Select **+ Add a condition, The recipient domain is**. Enter the custom domain associated with your Microsoft 365 subscription, if you defined one. You can enter more than one domain.|
 |Choose actions|If email is sent by an impersonated user: Choose **Redirect message to another email address**, and then type the email address of the security administrator; for example, *Alice<span><span>@contoso.com*. <br/> If email is sent by an impersonated domain: Choose **Quarantine message**.|
 |Mailbox intelligence|By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.|
@@ -253,8 +253,8 @@ After you turn on the audit log search in the Security & Compliance Center, you 
 
 You must be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. Global admins in Microsoft 365 are members of this group by default.
 
-1. To turn on the audit log search on, go to the admin center at <https://admin.microsoft.com> and then choose **Compliance** under **Admin centers** in the left nav.
-2. On the **Microsoft 365 compliance** page, choose **More resources**, and then **Open** on the **Office 365 security & center** card.
+1. To turn on the audit log search, go to the admin center at <https://admin.microsoft.com> and then choose **Security** under **Admin centers** in the left nav.
+2. On the **Microsoft 365 Security** page, choose **More resources**, and then **Open** on the **Office 365 Security & Compliance Center** card.
 
     ![Choose Open on the security & compliance cars.](../media/gotosecandcomp.png)
 3. On the security and compliance page, choose **Search** and then **Audit log search**.
@@ -285,8 +285,8 @@ The following figure shows the default policies that are included with Microsoft
 
 You can prevent people in your organization from sharing their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
 
-1. Go to the admin center at <https://admin.microsoft.com> and choose **Settings** \> **Services & add-ins**.
-2. On the **Services & add-ins** page, choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
+1. Go to the admin center at <https://admin.microsoft.com> and choose **Settings** \> **Org Settings**.
+2. On the **Services** page, choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
 
    If you choose the share with anyone option, you can decide to also only share free/busy information.
 

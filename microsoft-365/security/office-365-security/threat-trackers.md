@@ -1,22 +1,24 @@
 ---
-title: "Threat Trackers - New and Noteworthy"
-f1.keywords:
-- NOCSH
+title: Threat Trackers - New and Noteworthy
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns."
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Threat Trackers - New and Noteworthy
@@ -41,7 +43,7 @@ Most tracker pages include trending numbers that are updated periodically, widge
 
 Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
 
-To view and use your Threat Trackers for your organization, go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and choose **Threat management** \> **Threat tracker**.
+To view and use your Threat Trackers for your organization, go to the Security & Compliance Center (<https://protection.office.com>) and choose **Threat management** \> **Threat tracker**.
 
 > [!NOTE]
 > To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).

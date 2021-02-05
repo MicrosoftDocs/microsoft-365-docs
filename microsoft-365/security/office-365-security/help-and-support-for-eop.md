@@ -1,17 +1,19 @@
 ---
-title: "Help and support for EOP"
-f1.keywords:
-- NOCSH
+title: Help and support for EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
-description: "Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support."
+description: Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Help and support for EOP
@@ -19,7 +21,7 @@ description: "Microsoft provides help for EOP in a variety of places and methods
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this topic will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this article will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
 
 ## Self-support options
 
@@ -71,13 +73,13 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 
 |Country or region|Pre-purchase and billing questions|Technical Support questions|
 |---|---|---|
-|Brazil|Toll-free: 08007621146 <br/> Local: 1147001999|Same|
-|France|Toll-free: 0805 540 594 <br/> Local: 01 57 32 42 97|Same|
-|Germany|Toll-free: 0800 589 2332 <br/>  Local: 069 380 789 508|Same|
-|Japan|Toll-free: 0120-628860 <br/> Local: 343326257|Toll-free: 0120-996680 <br/> Local: 357679793|
-|Korea|Toll-free: 080-495-0880 <br/> Local: 234831937|Same|
-|Spain|Toll-free: 900 814 197 <br/> Local: 912 718 160|Same|
-|United Kingdom|Toll-free: 0800 032 6417 <br/> Local: 0203 450 6455|Same|
+|Brazil|Toll-free: 08007621146 <br> Local: 1147001999|Same|
+|France|Toll-free: 0805 540 594 <br> Local: 01 57 32 42 97|Same|
+|Germany|Toll-free: 0800 589 2332 <br>  Local: 069 380 789 508|Same|
+|Japan|Toll-free: 0120-628860 <br> Local: 343326257|Toll-free: 0120-996680 <br> Local: 357679793|
+|Korea|Toll-free: 080-495-0880 <br> Local: 234831937|Same|
+|Spain|Toll-free: 900 814 197 <br> Local: 912 718 160|Same|
+|United Kingdom|Toll-free: 0800 032 6417 <br> Local: 0203 450 6455|Same|
 |United States|Toll-free: 1-877-913-2707|Toll-free: 1-800-865-9408|
 |
 

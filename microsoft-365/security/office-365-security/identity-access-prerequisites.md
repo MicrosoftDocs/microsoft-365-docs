@@ -1,39 +1,40 @@
 ---
 title: Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
-description: Describes the prerequisites prior to implementing identity and device access policies and configurations.
+description: This article describes the prerequisites you need to meet to use identity and device access policies and configurations.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 ms.date: 09/01/2020
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.reviewer: martincoetzer
 ms.custom: 
-- it-pro
-- goldenconfig
+  - it-pro
+  - goldenconfig
 ms.collection: 
-- M365-identity-device-management
-- M365-security-compliance
-- m365solution-identitydevice
-- m365solution-scenario
+  - M365-identity-device-management
+  - M365-security-compliance
+  - m365solution-identitydevice
+  - m365solution-scenario
+ms.technology: mdo
 ---
 
 # Prerequisite work for implementing identity and device access policies
 
-This article describes prerequisites that need to be implemented before you can deploy the recommended identity and device access policies. This article also discusses the recommended default platform client configurations to provide the best single sign-on (SSO) experience to your users, as well as the technical prerequisites for Conditional Access.
+This article describes the prerequisites admins must meet to use recommended identity and device access policies, and to use Conditional Access. It also discusses the recommended defaults for configuring client platforms for the best single sign-on (SSO) experience.
 
 ## Prerequisites
 
-Before implementing the recommended identity and device access policies, there are several prerequisites that your organization must meet for these identity and authentication models for Microsoft 365 and Office 365:
+Before using the identity and device access policies that are recommended, your organization needs to meet prerequisites. The requirements are different for the various identity and authentication models listed:
 
 - Cloud-only
 - Hybrid with password hash sync (PHS) authentication
 - Hybrid with pass-through authentication (PTA)
 - Federated
 
-The following table details the prerequisite features and their configuration that apply to all identity models, except where noted. 
+The following table details the prerequisite features and their configuration that apply to all identity models, except where noted.
 
 |Configuration|Exceptions|
 |---|:---:|
@@ -71,7 +72,7 @@ We also recommend that organization-owned devices are standardized on OEMs and v
 
 ### Recommended email clients
 
-The following email clients support modern authentication and Conditional Access. 
+The following email clients support modern authentication and Conditional Access.
 
 |Platform|Client|Version/Notes|
 |---|---|---|
@@ -101,7 +102,7 @@ The following clients are recommended when a secure documents policy has been ap
 For more information about client support in Microsoft 365, see the following articles:
 
 - [Microsoft 365 Client App Support - Conditional Access](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 Client App Support - Modern Authentication](../../enterprise/microsoft-365-client-support-modern-authentication.md)
+- [Microsoft 365 Client App Support - Multi-factor authentication](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## Protecting administrator accounts
 
@@ -111,9 +112,9 @@ For editions of Microsoft 365 or Office 365 that do not support Conditional Acce
 
 Here are some additional recommendations:
 
-- Use [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts. 
-- [Use privileged access management](../../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
-- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function. 
+- Use [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts.
+- [Use privileged access management](../../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
+- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
 - Follow [best practices](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) for securing privileged accounts in Azure AD.
 
 ## Next step

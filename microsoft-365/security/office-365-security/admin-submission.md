@@ -1,23 +1,24 @@
 ---
 title: Admin submissions
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use the Submissions portal in the Security & Compliance Center to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use the Submissions portal in the Security & Compliance Center to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
@@ -27,7 +28,15 @@ description: "Admins can learn how to use the Submissions portal in the Security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, admins can use the Submissions portal in the Security & Compliance Center to submit email messages, URLs, and attachments to Microsoft for scanning.
 
-When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange mail flow rules (also known as transport rules).
+When you submit an email message, you will get:
+
+1. **Email authentication check**: Details on whether email authentication passed or failed when it was delivered.
+2. **Policy hits**: Information about any policies that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts.
+3. **Payload reputation/detonation**: Examination of any URLs and attachments in the message.
+4. **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
+
+> [!IMPORTANT]
+> Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes.
 
 For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -41,7 +50,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
   - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-    Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-the-custom-mailbox) as described later in this topic.
+    Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-the-custom-mailbox) as described later in this article.
 
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -72,7 +81,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-![URL submission example](../../media/submission-flyout-email.PNG)
+   ![URL submission example](../../media/submission-flyout-email.PNG)
 
 ### Send a suspect URL to Microsoft
 
@@ -86,7 +95,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 3. When you're finished, click the **Submit** button.
 
-![Email submission example](../../media/submission-url-flyout.png)
+   ![Email submission example](../../media/submission-url-flyout.png)
 
 ### Submit a suspected file to Microsoft
 
@@ -102,7 +111,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-![Attachment submission example](../../media/submission-file-flyout.PNG)
+   ![Attachment submission example](../../media/submission-file-flyout.PNG)
 
 ## View admin submissions
 
@@ -185,7 +194,7 @@ You can click the **Column options** button near the bottom of the page to add o
 
 ## View user submissions to Microsoft
 
-If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User submissions** tab.
+If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User submissions** tab.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Submissions**.
 

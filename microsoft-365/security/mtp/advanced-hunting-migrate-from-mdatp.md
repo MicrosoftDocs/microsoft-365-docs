@@ -4,22 +4,23 @@ description: Learn how to adjust your Microsoft Defender for Endpoint queries so
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, microsoft defender atp, mdatp, search, query, telemetry, custom detections, schema, kusto, microsoft 365, mapping
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: m365d
 ---
 
 # Migrate advanced hunting queries from Microsoft Defender for Endpoint
@@ -108,7 +109,9 @@ AlertInfo
 | where FileName == "powershell.exe"
 ```
 
-## Related topics
+
+
+## See also
 - [Turn on Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
