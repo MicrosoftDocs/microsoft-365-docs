@@ -46,5 +46,5 @@ Admins can view this policy in the [Compliance center](https://compliance.micros
 
 ## Edit or delete the default policy
 
-To [edit or delete](create-test-tune-dlp-policy.md#tune-a-dlp-policy) the default policy, just use an account with **DLP Compliance Management** permissions. See, [Permissions](create-test-tune-dlp-policy.md#permissions) for more information.
+To [edit the default policy for better performance or to delete it](create-test-tune-dlp-policy.md#tune-a-dlp-policy), just use an account with **DLP Compliance Management** permissions. See, [Permissions](create-test-tune-dlp-policy.md#permissions) for more information.
 
