@@ -279,7 +279,7 @@ You don't have all the licenses you need to use Microsoft Managed Desktop. For m
 
 ### Microsoft Managed Desktop service accounts
 
-Certain accounts names could conflict with ones created by Microsoft Managed Desktop to manage the Microsoft Managed Desktop service.
+Certain account names could conflict with account names created by Microsoft Managed Desktop to manage the Microsoft Managed Desktop service.
 
 **Not ready**
 
