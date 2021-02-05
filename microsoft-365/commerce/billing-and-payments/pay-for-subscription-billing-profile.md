@@ -33,13 +33,13 @@ ms.custom:
 
 When you buy a subscription, you pay for it with a billing profile. The billing profile is linked to a specific payment method and can be a credit or debit card, or an invoice, but not a bank account.
 
-If you’re not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md). If you don’t have a billing profile, see [How to paying for your subscription](pay-for-your-subscription.md).
+If you’re not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md). If you don’t have a billing profile, see [How to pay for your subscription](pay-for-your-subscription.md).
 
 ## Paying with recurring billing turned on or off
 
 By default, recurring billing is automatically turned on for all paid subscriptions that use recurring billing. Every billing period, we automatically charge the payment method associated with the billing profile to pay for any subscriptions that use that billing profile. If your payment method is declined, you can use the **Pay now** button on your invoice to make a one-time payment for your subscription.
 
-If recurring billing is turned off for a billing profile, you can use the **Pay now** button on your invoice to pay for it every billing period, regardless of what payment method is linked with the billing profile. You can also pay by check or EFT. Instructions for how to do that are included on the PDF copy of your invoice.
+If recurring billing is turned off for a billing profile, you can use the **Pay now** button on your invoice to pay for it every billing period, regardless of what payment method is linked with the billing profile. You can also pay by check or electronic funds transfer (EFT). Instructions for how to do that are included on the PDF copy of your invoice.
 
 ## Paying by invoice
 
@@ -53,7 +53,7 @@ To be eligible to pay by invoice, you must:
 
 If a credit check is required, you’re notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
 
-If your billing profile is backed by an invoice, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to receive a copy of your billing statement in email. Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number in your billing profile, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
+If your billing profile is backed by an invoice, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number in your billing profile, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ## Where do I send my check or EFT payment?
 
