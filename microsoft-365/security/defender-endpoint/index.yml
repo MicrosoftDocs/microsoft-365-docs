@@ -45,11 +45,10 @@ landingContent:
             url:  defender-endpoint/evaluation-lab.md
           - text: Plan your deployment
             url: defender-endpoint/deployment-strategy.md
-	  - linkListType: how-to
-		links:
+      - linkListType: how-to
+        links:
           - text: Migrate to Microsoft Defender for Endpoint
             url:  defender-endpoint/migration-guides.md
-			
 
   # Card
   - title: Secure your remote workforce
