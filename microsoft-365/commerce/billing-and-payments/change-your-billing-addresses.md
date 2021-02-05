@@ -118,7 +118,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
   
 3. On the **Change payment details** page, update your billing address, and then select **Submit**.
 
-    You can [Change your payment method for Office 365 operated by 21Vianet](change-payment-method.md) from Invoice to Online payment using Alipay or China UnionPay, or vice versa.
+    You can change your payment method for Office 365 operated by 21Vianet from Invoice to Online payment using Alipay or China UnionPay, or vice versa.
 
 ::: moniker-end
 
