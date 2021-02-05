@@ -120,7 +120,7 @@ If a payment method is attached to any subscriptions or billing profiles, first 
 
 ## Troubleshoot payment methods
 
-|**Issue**|**Troubleshooting steps**|
+| Issue | Troubleshooting steps |
 |:----------|:-----|
 |**I get an error message that says, "The browser is currently set to block cookies."** |Set your browser to allow third-party cookies and try again. |
 |**My credit or debit card was declined.** |If you pay by credit or debit card, and your card is declined, you receive an email that says Microsoft was unable to process the payment. Double-check that the card details&mdash;card number, expiration date, name on the card, and address, including city, state, and ZIP code&mdash;appear exactly as they do on the card and your statement. You can update your card information and immediately submit the payment by using the **Settle balance** link in the **Billing** section of the subscription details page. For more information, see [What if I have an outstanding balance?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  If you continue to see the "declined" message, contact your bank. It's possible that your card isn't active. If you recently received the card in the mail with an updated expiration date, make sure it's activated. Your bank can also tell you whether your card isn't approved for online, international, or recurring transactions. |
