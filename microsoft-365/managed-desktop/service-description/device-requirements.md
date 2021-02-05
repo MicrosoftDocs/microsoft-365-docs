@@ -16,7 +16,7 @@ ms.topic: article
 Microsoft Managed Desktop regularly evaluates device requirements to be included in the service. This article describes the hardware and software requirements a device must meet in order to work with Microsoft Managed Desktop. You can review a list of specific [devices already approved](device-list.md) for use with the service based on these requirements.
 
 > [!NOTE]
-> These requirements can change at any time, but we will provide 90 days notice of any such changes. The requirements most recently changed are marked with **\***. 
+> These requirements can change at any time, but we will provide 30 days notice of any hardware requirement changes. The requirements most recently changed are marked with **\***. 
 
 ## Check hardware requirements
 
@@ -41,7 +41,7 @@ The device must have been made by one of these manufacturers:
 The device must have this software preinstalled:
 
 - Windows 10 Enterprise, Pro, or Pro Workstation edition
-- {the 64-bit version of Office click-to-run {I will double-check name w/ Office colleagues]}
+- the 64-bit version of Microsoft Office click-to-run 
 - All applicable device drivers
 
 
