@@ -81,7 +81,9 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 
 Depending on your subscription, here are the available reports.
   
-- [Email activity](email-activity.md)
+- [Email activity](email-activity-ww.md)
+
+- [Email activity for US Government](email-activity.md)
     
 - [Mailbox usage](mailbox-usage.md)
     
@@ -93,7 +95,9 @@ Depending on your subscription, here are the available reports.
 
 - [Active Users for US Government](active-users.md)
   
-- [Email apps usage](email-apps-usage.md)
+- [Email apps usage](email-apps-usage-ww.md)
+
+- [Email apps usage for US Government](email-apps-usage.md)
 
 - [Forms activity](forms-activity-ww.md)
 

@@ -1,23 +1,25 @@
 ---
-title: "Security dashboard overview"
-f1.keywords:
-- NOCSH
+title: Security dashboard overview
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Use the new Security Dashboard to review Office 365 Threat Protection Status, and view and act on security alerts."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Use the new Security Dashboard to review Office 365 Threat Protection Status, and view and act on security alerts.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Security Dashboard

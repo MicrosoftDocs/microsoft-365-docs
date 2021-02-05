@@ -1,19 +1,20 @@
 ---
-title: "Address compromised user accounts with automated investigation and response"
+title: Address compromised user accounts with automated investigation and response
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection, compromised
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: "Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2."
+description: Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Address compromised user accounts with automated investigation and response

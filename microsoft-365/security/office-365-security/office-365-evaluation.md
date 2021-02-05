@@ -2,21 +2,23 @@
 title: Evaluate Microsoft Defender for Office 365
 description: Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don't act on messages.
 keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, ATP
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance
+  - M365-security-compliance
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Evaluate Microsoft Defender for Office 365
@@ -24,7 +26,7 @@ ms.custom: seo-marvel-apr2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Evaluate Microsoft Defender for Office 365 will soon be in public preview. This preview version is provided without a service level agreement. Certain features might not be supported or might have constrained capabilities.
+> Microsoft Defender for Office 365 evaluation is in public preview. This preview version is provided without a service level agreement. Certain features might not be supported or might have constrained capabilities.
 
 Conducting a comprehensive security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product's capabilities to assess how it can help your security operations team in their daily tasks.
 
@@ -99,7 +101,7 @@ Enhanced filtering for connectors will allow tenants to use anti-spoofing protec
 
 ### URLs
 
-URLs will be detonated during mail flow. If you don't want specific URLs detonated, manage your list of allowed URLs appropriately. See [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md) for details.
+URLs will be detonated during mail flow. If you don't want specific URLs detonated, manage your list of allowed URLs appropriately. See [Manage the Tenant Allow/Block List](tenant-allow-block-list.md) for details.
 
 URL links in the email message bodies won't wrap, to lessen customer impact.
 
@@ -152,7 +154,7 @@ Your Microsoft Defender for Office 365 evaluation report is generated once per d
 
 ### Exchange rules (optional)
 
-If you have an existing gateway, you might want to bypass filtering because it will activate enhanced filtering for connectors and alter the incoming sender IP address. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don't already have one). For details on the rule components and how they work, see Mail flow rules (transport rules) in Exchange Online.
+If you have an existing gateway, enabling evaluation mode will activate enhanced filtering for connectors. This improves filtering accuracy by altering the incoming sender IP address. This may change the filter verdicts and if you are not bypassing Exchange Online Protection this may alter deliverability for certain messages. In this case you might want to temporarily bypass filtering to analyze impact. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don't already have one). For details on the rule components and how they work, see Mail flow rules (transport rules) in Exchange Online.
 
 ## Evaluate capabilities
 

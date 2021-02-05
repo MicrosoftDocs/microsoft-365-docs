@@ -80,7 +80,7 @@ A standard retention label has retention settings and actions but doesn't mark c
 |Delete|Allowed <sup>1</sup> |**Blocked** |**Blocked**| **Blocked**|
 |Copy|Allowed |Allowed | Allowed| Allowed|
 |Move within container <sup>2</sup>|Allowed |Allowed | Allowed| Allowed|
-|Move across containers <sup>2</sup>|Allowed |Allowed if never unlocked | Allowed| **Blocked**|
+|Move across containers <sup>2</sup>|Allowed |Allowed if never unlocked | **Blocked** | **Blocked**|
 |Open/Read|Allowed |Allowed | Allowed| Allowed|
 |Change label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
 |Remove label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**

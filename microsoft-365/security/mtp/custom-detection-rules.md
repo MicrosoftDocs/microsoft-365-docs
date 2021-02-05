@@ -4,21 +4,22 @@ description: Learn how to create and manage custom detections rules based on adv
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, rules, schema, kusto, microsoft 365, Microsoft Threat Protection, RBAC, permissions, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
-ms.localizationpriority: medium
+localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
+ms.technology: m365d
 ---
 
 # Create and manage custom detections rules
@@ -201,7 +202,8 @@ In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]*
 >[!TIP]
 >To quickly view information and take action on an item in a table, use the selection column [&#10003;] at the left of the table.
 
-## Related topic
+## See also
 - [Custom detections overview](custom-detections-overview.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the advanced hunting query language](advanced-hunting-query-language.md)
+- [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mdatp.md)

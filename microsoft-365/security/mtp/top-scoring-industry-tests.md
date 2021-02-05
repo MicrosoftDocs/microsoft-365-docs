@@ -3,17 +3,18 @@ title: Top scoring in industry tests - Microsoft 365 Defender
 ms.reviewer: 
 description: View the latest scores and analysis of Microsoft 365 Defender. It consistently achieves high scores in independent tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). View the latest scores and analysis.
 keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, security, malware, av, antivirus, scores, scoring, next generation protection, ranking, success
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
-ms.localizationpriority: high
+localization_priority: Priority
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: m365d
 ---
 
 # Top scoring in industry tests
@@ -49,11 +50,11 @@ Microsoft Defender Antivirus is the [next generation protection](https://www.you
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The following scores are for the Protection category that has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
-**Download the latest transparency report: [Examining AV-TEST results, January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
+- November - December 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**Latest**</sup>
 
-- September - October 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/) <sup>**Latest**</sup>
+    Microsoft Defender Antivirus achieved a perfect Protection score of 6.0/6.0, with 100% in November and December. 11,382 malware samples were used.
 
-    Microsoft Defender Antivirus achieved a perfect Protection score of 6.0/6.0, with 100% in September and October. 12,650 malware samples were used.
+- September - October 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
 
 - July - August 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
 
@@ -63,17 +64,15 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 - January - February 2020 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
-- November - December 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
-
-- September - October 2019 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
-
-### AV-Comparatives: Protection rating of 99.7% in the latest test
+### AV-Comparatives: Protection rating of 99.8% in the latest test
 
 Business Security Test consists of three main parts: the Real-World Protection Test that mimics online malware attacks, the Malware Protection Test where the malware enters the system from outside the internet (for example by USB), and the Performance Test that looks at the impact on the system's performance.
 
-- Business Security Test 2020 (March - June): [Real-World Protection Rate 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**Latest**</sup>
+- Business Security Test 2020 (August - November): [Real-World Protection Rate 99.8%](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/) <sup>**Latest**</sup>
 
-    Microsoft Defender Antivirus has scored consistently high in Real-World Protection Rates over the past year, with 99.7% in the latest test.
+    Microsoft Defender Antivirus has scored consistently high in Real-World Protection Rates over the past year, with 99.8% in the latest test.
+
+- Business Security Test 2020 (March - June): [Real-World Protection Rate 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
 
 - Business Security Test 2019 (August - November): [Real-World Protection Rate 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
@@ -83,21 +82,15 @@ Business Security Test consists of three main parts: the Real-World Protection T
 
 SE Labs test a range of solutions used by products and services to detect and/or protect against attacks. It includes endpoint software, network appliances, and cloud services.
 
-**Download the latest transparency report: [Examining SE Labs test results, January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+- Enterprise Endpoint Protection October - December 2020: [AAA award](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**Latest**</sup>
 
-- Enterprise Endpoint Protection July - September 2020: [AAA award](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/) <sup>**Latest**</sup>
+    Microsoft's next-gen protection product stopped all public and targeted attacks. Microsoft Defender Antivirus achieved such good results with it's ability to block malicious URLs, handle exploits, and correctly classify legitimate applications and websites.
 
-    Microsoft's next-gen protection product stopped all targeted attacks
-    but missed a handful of public threats.
+- Enterprise Endpoint Protection July - September 2020: [AAA award](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 
 - Enterprise Endpoint Protection April - June 2020: [AAA award](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
 
 - Enterprise Endpoint Protection January - March 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
-
-- Enterprise Endpoint Protection October - December 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup>
-
-- Enterprise Endpoint Protection July - September 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
-
 
 ## Endpoint detection & response
 
@@ -119,6 +112,6 @@ Independent security industry tests aim to evaluate the best antivirus and secur
 
 The capabilities within Microsoft Defender for Endpoint provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses) that aren't factored into industry antivirus tests, and address some of the latest and most sophisticated threats. Isolating AV from the rest of Defender for Endpoint creates a partial picture of how Microsoft's security stack operates in the real world. For example, attack surface reduction and endpoint detection & response capabilities can help prevent malware from getting onto devices in the first place. We've proven that [Microsoft Defender for Endpoint components catch samples](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA) that Microsoft Defender Antivirus missed in these industry tests. It's more representative of how effectively Microsoft's security suite protects customers in the real world.
 
-[Learn more about Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and evaluate it in your own network by signing up for a [90-day trial of Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview).
+[Learn more about Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and evaluate it in your own network by signing up for a [90-day trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview).
 
 [Learn more about Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
