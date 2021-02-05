@@ -40,7 +40,7 @@ For more information on new capabilities that are generally available, see [What
 
 ## Required permissions
 
-Accounts assigned the following Azure Active Directory (AD) roles can Turn On  Microsoft 365 Defender Preview features
+Accounts assigned the following Azure Active Directory (Azure AD) roles can turn on  Microsoft 365 Defender Preview features:
 
 - Global administrator
 - Security administrator
@@ -70,5 +70,4 @@ The following features and enhancements are currently available on preview:
 - **[Take action in advanced hunting](advanced-hunting-take-action.md)**—Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
 - **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—Get information about advanced hunting schema tables directly in the security center. In addition to table and column descriptions, this reference includes supported event types (`ActionType` values) and sample queries.
 - **[DeviceFromIP() function](advanced-hunting-devicefromip-function.md)**—Get information about which devices have been assigned a specific IP address or addresses at a given time range.
-
 
