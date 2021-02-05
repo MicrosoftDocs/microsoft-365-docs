@@ -80,21 +80,6 @@ landingContent:
         - text: Threat analytics
           url: threat-analytics.md
 
-
-# Card
-  - title: Security administration
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Threat & vulnerability management
-          url: next-gen-threat-and-vuln-mgt.md  
-        - text: Attack surface reduction
-          url: overview-attack-surface-reduction.md
-        - text: Next-generation protection
-          url: microsoft-defender-antivirus-in-windows-10.md
-
-
-
   # Card
   - title: Use Microsoft Defender for Endpoint on other platforms
     linkLists:
@@ -119,4 +104,15 @@ landingContent:
           url: management-apis.md  
         - text: Partner integration
           url: partner-integration.md
-         
+
+# Card
+  - title: Security administration
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Threat & vulnerability management
+          url: next-gen-threat-and-vuln-mgt.md  
+        - text: Attack surface reduction
+          url: overview-attack-surface-reduction.md
+        - text: Next-generation protection
+          url: microsoft-defender-antivirus-in-windows-10.md         
