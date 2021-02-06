@@ -41,7 +41,7 @@ This article lists new features in the latest release of Microsoft Defender for 
 ## December 2020
 
 - [Secure by default in Office 365](secure-by-default.md)
-- Automated investigation improvements to:  general alerts for manually triggered email investigations, treat mailbox changes as a separate entity category, remove redundant URL block actions, and create outbound email clusters for user compromise invesetigations.
+- Automated investigation improvements to: general alerts for manually triggered email investigations, treat mailbox changes as a separate entity category, remove redundant URL block actions, and create outbound email clusters for user compromised investigations.
 
 ## November 2020
 
