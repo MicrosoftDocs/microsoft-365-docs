@@ -47,19 +47,16 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 2. Select **Microsoft 365 Defender**.
 
-
 3. Select **Preview features** > **Turn on preview features**. 
 
-3. Select **Save**.
+4. Select **Save**.
 
 You'll know you have preview features turned on when you see that the **Turn on preview features** check box is selected. 
 
 ## Preview features
 The following features and enhancements are currently available on preview:
-- **[Microsoft 365 Defender threat analytics report](threat-analytics.md)** - Threat analytics helps you respond to and minimize the impact of active attacks. You can also learn about attack attempts blocked by Microsoft 365 Defender solutions and take preventive actions that mitigate the risk of further exposure and increase resiliency. As part of the unified security experience, threat analytics is now available for Microsoft Defender for Endpoint and Microsoft Defender for Office E5 license holders.
-- **[Microsoft 365 Defender APIs](api-overview.md)** - The top-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables. 
-- **[Take action in advanced hunting](advanced-hunting-take-action.md)**—Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
-- **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—Get information about advanced hunting schema tables directly in the security center. In addition to table and column descriptions, this reference includes supported event types (`ActionType` values) and sample queries.
-- **[DeviceFromIP() function](advanced-hunting-devicefromip-function.md)**—Get information about which devices have been assigned a specific IP address or addresses at a given time range.
 
+The improved [Microsoft 365 security center](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into the Microsoft 365 security center. This is the new home to manage your security controls. [Learn what's new](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
 
+> [!NOTE]
+> If you use custom detection rules in Microsoft Defender for Endpoint, these rules are automatically moved to Microsoft 365 Defender. Modified custom detection rules created in Microsoft Defender for Endpoint can include identity and email tables. The corresponding alerts will also appear in Microsoft 365 Defender. For more information, see [Migrate custom detection rules](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp). The **DeviceAlertEvents** table for advanced hunting is not available in Microsoft 365 Defender. To query device-specific alert information in Microsoft 365 Defender, you can use the **AlertInfo** and **AlertEvidence** tables which can accommodate even more information from a diverse set of sources. Craft your next device-related query by using the following article: [Write queries without **DeviceAlertEvents**](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp).
