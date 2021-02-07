@@ -7,5 +7,5 @@ ms.topic: include
 ---
 
 > [!IMPORTANT]
-> The improved [Microsoft 365 security center](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into  the Microsoft 365 security center. This is the new home to manage your security controls. [Learn what's new](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
+> The improved [Microsoft 365 security center](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into  the Microsoft 365 security center. Security teams can now manage all endpoint, email and cross product investigations, configuration and remediation without the need to navigate to separate product portals. [Learn what's new](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
 

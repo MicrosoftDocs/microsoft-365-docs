@@ -100,6 +100,9 @@ Proactively search for threats, malware, and malicious activity across your endp
 
 [Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
 
+> [!NOTE]
+> If you use custom detection rules in Microsoft Defender for Endpoint, these rules are automatically moved to Microsoft 365 Defender. Modified custom detection rules created in Microsoft Defender for Endpoint can include identity and email tables. The corresponding alerts will also appear in Microsoft 365 Defender. For more information, see [Migrate custom detection rules](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp). The **DeviceAlertEvents** table for advanced hunting is not available in Microsoft 365 Defender. To query device-specific alert information in Microsoft 365 Defender, you can use the **AlertInfo** and **AlertEvidence** tables which can accommodate even more information from a diverse set of sources. Craft your next device-related query by using the following article: [Write queries without **DeviceAlertEvents**](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp).
+
 ### Action center
 
 Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
