@@ -54,6 +54,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDomain` | string | Domain of the account |
 | `AccountSid` | string | Security Identifier (SID) of the account |
 | `AccountObjectId` | string | Unique identifier for the account in Azure Active Directory |
+| `AccountUpn` | string | User principal name (UPN) of the account |
 | `DeviceId` | string | Unique identifier for the device in the service |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
 | `LocalIP` | string | IP address assigned to the local device used during communication |
@@ -63,6 +64,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Application` | string | Application that performed the recorded action |
 | `ProcessCommandLine` | string | Command line used to create the new process |
 | `AdditionalFields` | string | Additional information about the event in JSON array format |
+| `RegistryKey` |string | Registry key that the recorded action was applied to |
+| `RegistryValueName` |string | Name of the registry value that the recorded action was applied to |
+| `RegistryValueData` |string | Data of the registry value that the recorded action was applied to |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
