@@ -42,7 +42,7 @@ All the users should have signed in to Microsoft 365 for business and set up the
 
 1. Sign in to your Google Workspace admin console at [admin.google.com](https://admin.google.com).
 
-1. Choose **Apps**, **Google Workspace Marketplace apps**, Then **Add app to Domain Install list**.
+1. Choose **Apps** > **Google Workspace Marketplace apps** > **Add app to Domain Install list**.
 
 1. Search for Mover and select it.
 
