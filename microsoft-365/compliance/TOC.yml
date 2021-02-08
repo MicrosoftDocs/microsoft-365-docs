@@ -708,6 +708,8 @@
               href: themes-in-advanced-ediscovery.md
             - name: Use the Relevance module to analyze data
               href: using-relevance.md
+            - name: Retirement of the Relevance module
+              href: relevance-module-retirement.md  
         - name: Export case data
           href: exporting-data-ediscover20.md
           items: 

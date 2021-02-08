@@ -24,11 +24,11 @@ ms.custom: seo-marvel-apr2020
 
 Single sign-on (SSO) adds security and convenience when your users sign-on to applications in Azure Active Directory. With single sign-on, users sign in once with one account to access on-premises Active Directory Domain Services (AD DS) domain-joined devices, software as a service (SaaS) applications, and web applications.
 
-Learn more about [single sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
+Learn more about [single sign-on](/azure/active-directory/manage-apps/what-is-single-sign-on).
 
 ## Supported clients & platforms
 
-The latest versions of the following clients and platforms support single sign-on. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://products.office.com/office-system-requirements).
+The latest versions of the following clients and platforms support single sign-on. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 
@@ -68,6 +68,6 @@ The latest versions of the following clients and platforms support single sign-o
 
 ## Supported PowerShell modules
 
-- [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
-- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
-- [SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

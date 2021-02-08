@@ -24,6 +24,11 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1](https://go.microsoft.com/fwlink/?linkid=2148715)
+- SharePoint Online 
+
 
  **Summary:** Configure a SharePoint Online team site that is isolated from the rest of the organization in your Microsoft 365 dev/test environment.
 
@@ -290,4 +295,4 @@ When you are ready to deploy an isolated SharePoint Online team site in producti
 
 [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
 
-[Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions.)
