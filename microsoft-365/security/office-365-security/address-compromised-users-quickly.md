@@ -1,19 +1,20 @@
 ---
-title: "Address compromised user accounts with automated investigation and response"
+title: Address compromised user accounts with automated investigation and response
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection, compromised
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: "Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2."
+description: Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Address compromised user accounts with automated investigation and response
@@ -63,11 +64,11 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 
 ### View and investigate restricted users
 
-You have a few options for navigating to a list of restricted users. For example, in the Security & Compliance Center, you can go to **Threat management** > **Review** > **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
+You have a few options for navigating to a list of restricted users. For example, in the Security & Compliance Center, you can go to **Threat management** \> **Review** \> **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in.
+1. Go to <https://protection.office.com> and sign in.
 
-2. In the navigation pane, choose **Alerts** > **Dashboard**.
+2. In the navigation pane, choose **Alerts** \> **Dashboard**.
 
 3. In the **Other alerts** widget, choose **Restricted Users**.
 
@@ -81,7 +82,7 @@ You have a few options for navigating to a list of restricted users. For example
 
 ### View details about automated investigations
 
-When an automated investigation has begun, you can see its details and results in the Security & Compliance Center. Go to **Threat management** > **Investigations**, and then select an investigation to view its details.
+When an automated investigation has begun, you can see its details and results in the Security & Compliance Center. Go to **Threat management** \> **Investigations**, and then select an investigation to view its details.
 
 To learn more, see [View details of an investigation](air-view-investigation-results.md).
 

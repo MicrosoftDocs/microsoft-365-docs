@@ -63,6 +63,10 @@ Communication compliance in Microsoft 365 allows you to examine communications f
 
 ## Related topics
 
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
+
 [Manage Microsoft Teams settings for your organization](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 
 [Manage Yammer data compliance](https://docs.microsoft.com/yammer/manage-security-and-compliance/manage-data-compliance)

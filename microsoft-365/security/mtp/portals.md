@@ -2,20 +2,21 @@
 title: Microsoft security portals and admin centers
 description: Find the right Microsoft admin center or portal for managing various services related to Microsoft 365 security
 keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, MTP, Microsoft Defender ATP, Microsoft Defender Security Center, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, OATP, AATP, Cloud App Security , Azure AD, security & compliance center
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender  
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
+ms.technology: m365d
 ---
 
 # Microsoft security portals and admin centers

@@ -3,19 +3,21 @@ title: Quarantine tags
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer:
-ms.date:
+ms.reviewer: 
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
 ROBOTS: NOINDEX
-description: "Admins can learn how to use quarantine tags to control what users are able to do to their quarantined messages."
+description: Admins can learn how to use quarantine tags to control what users are able to do to their quarantined messages.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Quarantine tags
@@ -39,12 +41,12 @@ The available individual permissions and what's included or not included in the 
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
-|**Allow sender** (_PermissionToAllowSender_)|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Delete** (_PermissionToDelete_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Preview** (_PermissionToPreview_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Allow sender** (_PermissionToAllowSender_)|||![Check mark](../../media/checkmark.png)|
+|**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Preview** (_PermissionToPreview_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/checkmark.png)|
+|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/checkmark.png)||
 |
 
 If you don't like the default permissions in the preset permission groups, you can use custom permissions when you create or modify custom quarantine tags. For more information about what each permission does, see the [Quarantine tag permission details](#quarantine-tag-permission-details) section later in this article.
@@ -156,7 +158,9 @@ For detailed syntax and parameter information, see [New-QuarantineTag](https://d
 To create a quarantine tag using the _EndUserQuarantinePermissionsValue_ parameter, do the following steps:
 
 A. Store a quarantine permissions object in a variable using the **New-QuarantinePermissions** cmdlet.
-<br/>
+
+<p>
+
 B. Use the variable as the _EndUserQuarantinePermissions_ value in the **New-QuarantineTag** command.
 
 ##### Step A: Store a quarantine permissions object in a variable
@@ -224,7 +228,7 @@ In _supported_ protection features that quarantine messages or files (automatica
 |[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing email** (_PhishSpamAction_)</li><li>**High confidence phishing email** (_HighConfidencePhishAction_)</li><li>**Bulk email** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultSpamTag (Full access)</li><li>DefaultHighConfSpamTag (Full access)</li><li>DefaultPhishTag (Full access)</li><li>DefaultHighConfPhishTag (No access)</li><li>DefaultBulkTag (Full access)</li></ul>
 |Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**If email is sent by an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If email is sent by an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**Mailbox intelligence** \> **If email is sent by an impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|n/a|
 |[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|No|n/a|
-|[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|n/a|
+|[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|n/a|
 |[Mail flow rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
 |
 
@@ -241,11 +245,11 @@ Full instructions for creating and modifying anti-spam policies are described in
 2. Find and select an existing anti-spam policy to edit, or create a new anti-spam policy.
 
 3. In the policy details flyout, expand the **Spam and bulk actions** section.
-  
+
 4. If you've selected **Quarantine message** for the action of an available spam filtering verdict, the **Apply quarantine policy tag** box is available for you to select the quarantine tag for that verdict.
 
    **Note**: When you create a new policy, a blank quarantine tag value for a spam filtering verdict indicates the default quarantine tag for that verdict is used. When you later edit the policy, the blank values are replaced by the actual default quarantine tag names as described in the previous table.
-  
+
    ![Quarantine tag selections in an anti-spam policy](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. When you're finished, click **Save**.
@@ -511,7 +515,7 @@ The **Allow recipients to release a message from quarantine** permission (_Permi
 - **Quarantined message details**:
   - Permission enabled: The **Release message** button is available.
   - Permission disabled: The **Release message** button is not available.
-  
+
 - **End-user spam notifications**:
   - Permission enabled: The **Release** button is available.
   - Permission disabled: The **Release** button is not available.

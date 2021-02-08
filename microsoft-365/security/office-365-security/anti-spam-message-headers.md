@@ -1,22 +1,24 @@
 ---
-title: "Anti-spam message headers"
-f1.keywords:
-- NOCSH
+title: Anti-spam message headers
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
-description: "Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP). These header fields provide information about the message and how it was processed."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP). These header fields provide information about the message and how it was processed.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Anti-spam message headers in Microsoft 365
@@ -59,7 +61,7 @@ The individual fields and values are described in the following table.
 |Field|Description|
 |---|---|
 |`ARC`|The `ARC` protocol has the following fields: <ul><li>`AAR`: Records the content of the **Authentication-results** header from DMARC.</li><li>`AMS`: Includes cryptographic signatures of the message.</li><li>`AS`: Includes cryptographic signatures of the message headers. This field contains a tag of a chain validation called `"cv="`, which includes the outcome of the chain validation as **none**, **pass**, or **fail**.</li></ul>|
-|`CAT:`|The category of protection policy, applied to the message: <ul><li>`BULK`: Bulk</li><li>`DIMP`: Domain Impersonation</li><li>`GIMP`: [Mailbox intelligence based impersonation](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` or `HPHISH` : High confidence phishing</li><li>`HSPM`: High confidence spam</li><li>`MALW`: Malware</li><li>`PHSH`: Phishing</li><li>`SPM`: Spam</li><li>`SPOOF`: Spoofing</li><li>`UIMP`: User Impersonation</li><li>`AMP`: Anti-malware</li><li>`SAP`: Safe attachments</li><li>`OSPM`: Outbound spam</li></ul><br/>An inbound message may be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
+|`CAT:`|The category of protection policy, applied to the message: <ul><li>`BULK`: Bulk</li><li>`DIMP`: Domain Impersonation</li><li>`GIMP`: [Mailbox intelligence based impersonation](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` or `HPHISH` : High confidence phishing</li><li>`HSPM`: High confidence spam</li><li>`MALW`: Malware</li><li>`PHSH`: Phishing</li><li>`SPM`: Spam</li><li>`SPOOF`: Spoofing</li><li>`UIMP`: User Impersonation</li><li>`AMP`: Anti-malware</li><li>`SAP`: Safe attachments</li><li>`OSPM`: Outbound spam</li></ul> <p> An inbound message may be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
 |`CIP:[IP address]`|The connecting IP address. You can use this IP address in the IP Allow List or the IP Block List. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).|
 |`CTRY`|The source country as determined by the connecting IP address, which may not be the same as the originating sending IP address.|
 |`H:[helostring]`|The HELO or EHLO string of the connecting email server.|
@@ -69,9 +71,9 @@ The individual fields and values are described in the following table.
 |`PTR:[ReverseDNS]`|The PTR record (also known as the reverse DNS lookup) of the source IP address.|
 |`SCL`|The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam. For more information, see [Spam confidence level (SCL)](spam-confidence-levels.md).|
 |`SFTY`|The message was identified as phishing and will also be marked with one of the following values: <ul><li>9.1: Default value. The message contains some or all of the following elements: a phishing URL, other phishing content, or was marked as phishing by on-premises Exchange.</li><li>9.11: [Intra-org or self-to-self spoofing](anti-spoofing-protection.md#different-types-of-spoofing). The safety tip for intra-org spoofing will be added to the message.</li><li>9.19: Domain impersonation. The sending domain is attempting to [impersonate a protected domain](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). The safety tip for domain impersonation is added to the message (if it's enabled).</li><li>9.20: User impersonation. The sending user is attempting to impersonate a user in the recipient's organization, or a protected user that's specified in an anti-phishing policy in Microsoft Defender for office 365. The safety tip for user impersonation is added to the message (if it's enabled).</li><li>9.21: [Cross-domain spoofing](anti-spoofing-protection.md#different-types-of-spoofing). The message failed anti-spoofing checks. The sender's email domain in the From header does not authenticate and is an external domain. Used in combination with [composite authentication](#authentication-results-message-header-fields).</li><li>9.22: Same as 9.21, except that the user has a safe sender that was overridden.</li><li>9.23: Same as 9.22, except that the organization has an allowed sender or domain that was overridden.</li><li>9.24: Same as 9.23, except that the user has an Exchange mail flow rule (also known as a transport rule) that was overridden.</li></ul>|
-|`SFV:BLK`|Filtering was skipped and the message was blocked because it was sent from an address in a user's Blocked Senders list.<br/></br> For more information about how admins can manage a user's Blocked Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
+|`SFV:BLK`|Filtering was skipped and the message was blocked because it was sent from an address in a user's Blocked Senders list. <p> For more information about how admins can manage a user's Blocked Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:NSPM`|Spam filtering marked the message as non-spam and the message was sent to the intended recipients.|
-|`SFV:SFE`|Filtering was skipped and the message was allowed because it was sent from an address in a user's Safe Senders list.<br/></br> For more information about how admins can manage a user's Safe Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
+|`SFV:SFE`|Filtering was skipped and the message was allowed because it was sent from an address in a user's Safe Senders list. <p> For more information about how admins can manage a user's Safe Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:SKA`|The message skipped spam filtering and was delivered to the Inbox because the sender was in the allowed senders list or allowed domains list in an anti-spam policy. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
 |`SFV:SKB`|The message was marked as spam because it matched a sender in the blocked senders list or blocked domains list in an anti-spam policy. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
 |`SFV:SKI`|Similar to SFV:SKN, the message skipped spam filtering for another reason (for example, an intra-organizational email within a tenant).|

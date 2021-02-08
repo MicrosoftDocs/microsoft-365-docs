@@ -1,25 +1,32 @@
 ---
 title: SIEM server integration with Microsoft 365 services and applications
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 11/18/2019
-ms.service: O365-seccomp
+
 localization_priority: Normal
-ms.collection:
-- M365-security-compliance
-ms.custom:
- - Ent_Solutions
- - SIEM
- - seo-marvel-apr2020
-description: "Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications"
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - Ent_Solutions
+  - SIEM
+  - seo-marvel-apr2020
+description: Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Security Information and Event Management (SIEM) server integration with Microsoft 365 services and applications
+
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -48,7 +55,7 @@ A SIEM server can receive data from a wide variety of Microsoft 365 services and
 |Microsoft 365 Service or Application|SIEM server inputs/methods|Resources to learn more|
 |---|---|---|
 |[Microsoft Defender for Office 365](office-365-atp.md)|Audit logs|[SIEM integration with Microsoft Defender for Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS endpoint hosted in Azure <br/>REST API|[Pull alerts to your SIEM tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS endpoint hosted in Azure <p> REST API|[Pull alerts to your SIEM tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Log integration|[SIEM integration with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 

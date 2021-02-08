@@ -1,23 +1,25 @@
 ---
 title: Configure the default connection filter policy
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to configure connection filtering in Exchange Online Protection (EOP) to allow or block emails from email servers."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to configure connection filtering in Exchange Online Protection (EOP) to allow or block emails from email servers.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure connection filtering
@@ -27,7 +29,7 @@ description: "Admins can learn how to configure connection filtering in Exchange
 
 If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, you use connection filtering in EOP (specifically, the default connection filter policy) to identify good or bad source email servers by their IP addresses. The key components of the default connection filter policy are:
 
-- **IP Allow List**: Skip spam filtering for all incoming messages from the source email servers that you specify by IP address or IP address range. For scenarios where spam filtering might still occur on messages from these sources, see the [Scenarios where messages from sources in the IP Allow List are still filtered](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) section later in this topic. For more information about how the IP Allow List should fit into your overall safe senders strategy, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
+- **IP Allow List**: Skip spam filtering for all incoming messages from the source email servers that you specify by IP address or IP address range. For scenarios where spam filtering might still occur on messages from these sources, see the [Scenarios where messages from sources in the IP Allow List are still filtered](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) section later in this article. For more information about how the IP Allow List should fit into your overall safe senders strategy, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
 
 - **IP Block List**: Block all incoming messages from the source email servers that you specify by IP address or IP address range. The incoming messages are rejected, are not marked as spam, and no additional filtering occurs. For more information about how the IP Block List should fit into your overall blocked senders strategy, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
@@ -77,7 +79,7 @@ This topic describes how to configure the default connection filter policy in th
 
      - IP range: For example, 192.168.0.1-192.168.0.254.
 
-     - CIDR IP: For example, 192.168.0.1/25. Valid network mask values are /24 through /32. To skip spam filtering for CIDR IP mask values /1 to /23, see the [Skip spam filtering for a CIDR IP outside of the available range](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) section later in this topic.
+     - CIDR IP: For example, 192.168.0.1/25. Valid network mask values are /24 through /32. To skip spam filtering for CIDR IP mask values /1 to /23, see the [Skip spam filtering for a CIDR IP outside of the available range](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) section later in this article.
 
      To add the IP address or address range, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Allowed IP Address** and then click **Remove** ![Remove](../../media/scc-remove-icon.png). When you're finished, click **Save**.
 
@@ -155,7 +157,7 @@ The following sections identify additional items that you need to know about whe
 
 ### Skip spam filtering for a CIDR IP outside of the available range
 
-As described earlier in this topic, you can only use a CIDR IP with the network mask /24 to /32 in the IP Allow List. To skip spam filtering on messages from source email servers in the /1 to /23 range, you need to use Exchange mail flow rules (also known as transport rules). But, we recommend that you don't do this if at all possible, because the messages will be blocked if an IP address in the /1 to /23 CIDR IP range appears on any of Microsoft's proprietary or third-party block lists.
+As described earlier in this article, you can only use a CIDR IP with the network mask /24 to /32 in the IP Allow List. To skip spam filtering on messages from source email servers in the /1 to /23 range, you need to use Exchange mail flow rules (also known as transport rules). But, we recommend that you don't do this if at all possible, because the messages will be blocked if an IP address in the /1 to /23 CIDR IP range appears on any of Microsoft's proprietary or third-party block lists.
 
 Now that you're fully aware of the potential issues, you can create a mail flow rule with the following settings (at a minimum) to ensure that messages from these IP addresses will skip spam filtering:
 

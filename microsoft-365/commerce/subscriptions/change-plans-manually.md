@@ -86,7 +86,7 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 2. On the **Active users** page, select the user to whom you want to assign a license.
 
-3. On te **Licenses and Apps** tab, expand **Licenses**, select the boxes for the licenses that you want to assign, then select **Save changes**.
+3. On the **Licenses and Apps** tab, expand **Licenses**, select the boxes for the licenses that you want to assign, then select **Save changes**.
 
 ### Reassign licenses for multiple users at once
 

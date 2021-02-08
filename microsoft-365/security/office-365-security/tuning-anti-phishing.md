@@ -1,26 +1,32 @@
 ---
-title: "Tune anti-phishing protection"
-f1.keywords:
-- NOCSH
+title: Tune anti-phishing protection
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
+search.appverid: 
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
-- MET150
-description: "Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  - MET150
+description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Tune anti-phishing protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Although Microsoft 365 comes with a variety of anti-phishing features that are enabled by default, it's possible that some phishing messages could still get through to your mailboxes. This topic describes what you can do to discover why a phishing message got through, and what you can do to adjust the anti-phishing settings in your Microsoft 365 organization _without accidentally making things worse_.
 
@@ -78,7 +84,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365. In other words, point your Microsoft 365 domain's MX record to Microsoft 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Microsoft 365. If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Users should [report messages](enable-the-report-message-add-in.md) to Microsoft, which can train our system. Admins should also take advantage of [Admin Submission](admin-submission.md) capabilities.
+- Users should use the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) to report messages to Microsoft, which can train our system. Admins should also take advantage of [Admin Submission](admin-submission.md) capabilities.
 
 - Multi factor authentication (MFA) is a good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 

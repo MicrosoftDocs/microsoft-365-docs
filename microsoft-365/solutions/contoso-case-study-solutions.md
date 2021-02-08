@@ -33,3 +33,4 @@ Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
 
 - [Migration of their on-premises users to Teams for unified communication, collaboration, and voice](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 
+- [Configure an offensive language policy for Microsoft Teams, Exchange, and Yammer communications](../compliance/communication-compliance-case-study.md)

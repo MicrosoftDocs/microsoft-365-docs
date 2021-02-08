@@ -25,7 +25,7 @@ When users enroll corporate devices into Microsoft Managed Desktop, data collect
 Microsoft Managed Desktop does not collect data by itself to provide its service (except for [IT Admin contact information](#it-admin-contact-information). Instead, Microsoft Managed Desktop reuses data that other sources, such as Windows and Microsoft Intune, have already collected. Microsoft Managed Desktop uses data these services collect from enrolled devices:
 
 - Windows diagnostic data from devices managed by Microsoft Managed Desktop is sent to Microsoft's Windows diagnostic data stores.
-- Microsoft Managed Desktop uses [modern management](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) for managing the enrolled devices. As part of that, the devices must be enrolled in the tenant’s Azure Active Directory.
+- Microsoft Managed Desktop uses [modern management](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) for managing the enrolled devices. As part of "modern management," the devices must be enrolled in the tenant’s Azure Active Directory.
 - For distributing its highly optimized and secure configuration to enrolled devices, Microsoft Managed Desktop uses Microsoft Intune.
 - Microsoft Managed Desktop uses security intelligence data from Microsoft Defender Advanced Thread Protection for those customers that use that service.
 
@@ -42,6 +42,10 @@ Microsoft Managed Desktop stores its data in one or more of the following Micros
 
 Microsoft Managed Desktop stores its data in the United States. Personal data is retained by Microsoft Managed Desktop for a maximum of 30 days.
 
+### Staff location
+
+The MMD Operations and MMD Security Operations teams are located in the United States and India.
+
 ## Data usage of Microsoft Managed Desktop
 
 Microsoft Managed Desktop uses this data:
@@ -52,7 +56,7 @@ Microsoft Managed Desktop uses this data:
 |Azure Active Directory data     | Used in reports created for tenant admins, which are available in the Microsoft Managed Desktop Admin portal.        |
 |Intune data     | Used in reports created for tenant admins, which are available in the Microsoft Managed Desktop Admin portal.        |
 |Microsoft Defender for Endpoint     |  Used for addressing security threats detected on enrolled devices by Microsoft Managed Desktop’s Security Operations Center (SOC).  |
-|Windows diagnostic data     |Used to determine the update status of managed devices as well as to provide and improve Microsoft Managed Desktop’s IT-as-a-Service (ITaaS) offering.         |
+|Windows diagnostic data     |Used to determine the update status of managed devices and to provide and improve Microsoft Managed Desktop’s IT-as-a-Service (ITaaS) offering.         |
 |Admin contact data     | Used by Microsoft Managed Desktop to communicate with tenant administrators.        |
 
 
