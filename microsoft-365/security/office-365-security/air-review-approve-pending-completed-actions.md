@@ -1,55 +1,70 @@
 ---
-title: "Review and approve pending remediation actions in automated investigation and response"
+title: Review and manage remediation actions in Microsoft Defender for Office 365
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
-f1.keywords:
+f1.keywords: 
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
+ms.topic: how-to
 localization_priority: Normal
-search.appverid:
+search.appverid: 
 - MET150
 - MOE150
 ms.collection: 
-- M365-security-compliance 
+- M365-security-compliance
 - m365initiative-defender-office365
-description: "Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2."
+description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
+ms.technology: mdo
+ms.prod: m365-security
+ms.date: 01/29/2021
 ---
 
-# View pending or completed remediation actions following an automated investigation in Office 365
+# Review and manage remediation actions in Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+As automated investigations on email & collaboration content result in verdicts, such as *Malicious* or *Suspicious*, certain remediation actions are created. In Microsoft Defender for Office 365, remediation actions can include:
+- Blocking a URL (time-of-click)
+- Soft deleting email messages or clusters
+- Quarantining email or email attachments
+- Turning off external mail forwarding
 
-
-
-![AIR investigations action page](../../media/air-investigationactionspage.png)
+These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can undo a remediation action.
 
 ## Approve (or reject) pending actions
 
-While viewing the [details of an investigation](air-view-investigation-results.md), you can approve or reject any pending remediation actions. We recommend doing this as soon as possible so that your automated investigations complete.
+1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+2. In the navigation pane, select **Action center**.
+3. On the **Pending** tab, review the list of actions that are awaiting approval.
+4. Select an item in the list. Its flyout pane opens. 
+5. Review the information in the flyout pane, and then take one of the following steps:
+   - Select **Open investigation page** to view more details about the investigation.
+   - Select **Approve** to initiate a pending action.
+   - Select **Reject** to prevent a pending action from being taken.
 
-> [!IMPORTANT]
-> Appropriate permissions are required to approve or reject remediation actions. See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
+## Undo one remediation action
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the the Security & Compliance Center.
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+2. On the **History** tab, select an action that you want to undo.
+3. In the pane on the right side of the screen, select **Undo**.
 
-2. Go to **Threat management** > **Investigations**.
+## Undo multiple remediation actions
 
-3. In the list of investigations, select an item in the **ID** column. 
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+2. On the **History** tab, select the actions that you want to undo. Make sure to select items that have the same Action type. A flyout pane opens.
+3. In the flyout pane, select Undo.
 
-4. Select the **Actions** tab.
+## To remove a file from quarantine across multiple devices
 
-5. Select an item in the list. (This activates the Approve and Reject buttons.)
-
-6. Review available information for the item(s) you selected, and then either approve or reject the action(s). 
-   - **Approve** allows remediation to begin.
-   - **Reject** takes no further action
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+2. On the **History** tab, select a file that has the Action type **Quarantine file**.
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
 
 ## Next steps
 
-- [Details and results of an automated investigation in Office 365](air-view-investigation-results.md)
-
 - [Use Threat Explorer](threat-explorer.md)
+- [How to report false positives/negatives in automated investigation and response capabilities](air-report-false-positives-negatives.md)
+
+## See also
+
+- [View details and results of an automated investigation in Office 365](air-view-investigation-results.md)

@@ -1,24 +1,26 @@
 ---
 title: Remove blocked users from the Restricted Users portal
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-f1_keywords:
-- 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
-ms.service: O365-seccomp
+f1_keywords: 
+  - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to remove users from the Restricted Users portal in Office 365. Users are added to the Restricted Users portal for sending outbound spam, typically as a result of account compromise."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to remove users from the Restricted Users portal in Office 365. Users are added to the Restricted Users portal for sending outbound spam, typically as a result of account compromise.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Remove blocked users from the Restricted Users portal in Office 365
@@ -72,7 +74,7 @@ Admins can remove users from the Restricted Senders portal in the Security & Com
 5. Click **Yes** to confirm the change.
 
    > [!NOTE]
-   > It may take 30 minutes or more before restrictions are removed.
+   > It might take up to 24 hours for all restrictions to be removed from the user.
 
 ## Verify the alert settings for restricted users
 
@@ -83,11 +85,11 @@ The default alert policy named **User restricted from sending email** will autom
 
 1. In the Security & Compliance Center, go to **Alerts** \> **Alert policies**.
 
-2. Find an select the **User restricted from sending email** alert.
+2. Find and select the **User restricted from sending email** alert.
 
 3. In the flyout that appears, verify or configure the following settings:
 
-   - **Status**: Verify the alert is turned on ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - **Status**: Verify the alert is turned on ![Toggle on](../../media/scc-toggle-on.png).
 
    - **Email recipients**: Click **Edit** and verify or configure the following settings in the **Edit recipients** flyout that appears:
 

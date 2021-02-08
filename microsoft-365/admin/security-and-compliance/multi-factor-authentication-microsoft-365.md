@@ -2,8 +2,8 @@
 title: "Multi-factor authentication for Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -166,3 +168,9 @@ In the Microsoft 365 admin center, you can configure per-user and service MFA se
 ## Your next step
 
 [Set up MFA for Microsoft 365](set-up-multi-factor-authentication.md)
+
+## Related topics
+
+[Video: Turn on multi-factor authentication](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+
+[Video: Turn on multi-factor authentication for your phone](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)

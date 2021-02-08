@@ -1,19 +1,21 @@
 ---
-title: "Configure anti-phishing policies in EOP"
-f1.keywords:
-- NOCSH
+title: Configure anti-phishing policies in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
-ms.service: O365-seccomp
+ms.date: 
+
 localization_priority: Normal
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to create, modify, and delete the anti-phishing policies that are available in Exchange Online Protection (EOP) organizations with or without Exchange Online mailboxes."
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to create, modify, and delete the anti-phishing policies that are available in Exchange Online Protection (EOP) organizations with or without Exchange Online mailboxes.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure anti-phishing policies in EOP
@@ -301,7 +303,7 @@ Creating an anti-phishing policy in PowerShell is a two-step process:
 To create an anti-phish policy, use this syntax:
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableAntiSpoofEnforcement <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
 This example creates an anti-phish policy named Research Quarantine with the following settings:

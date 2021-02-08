@@ -1,21 +1,23 @@
 ---
-title: "Anti-phishing policies"
-f1.keywords:
-- NOCSH
+title: Anti-phishing policies
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
-ms.service: O365-seccomp
+ms.date: 
+
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about the anti-phishing policies that are available in Exchange Online Protection (EOP) and Microsoft Defender for Office 365."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the anti-phishing policies that are available in Exchange Online Protection (EOP) and Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Anti-phishing policies in Microsoft 365
@@ -42,12 +44,12 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 
 |Feature|Anti-phishing policies in EOP|Anti-phishing policies in Microsoft Defender for Office 365|
 |---|:---:|:---:|
-|Automatically created default policy|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Create custom policies|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Policy settings<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Impersonation settings||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Spoof settings|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Advanced phishing thresholds||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Automatically created default policy|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|Create custom policies|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|Policy settings<sup>\*</sup>|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|Impersonation settings||![Check mark](../../media/checkmark.png)|
+|Spoof settings|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|Advanced phishing thresholds||![Check mark](../../media/checkmark.png)|
 |
 
 <sup>\*</sup> In the default policy, the policy name and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
@@ -83,7 +85,7 @@ The following policy settings are available in anti-phishing policies in EOP and
     - **The recipient domain is**
 
   > [!NOTE]
-  > The **Applied to** setting is required in custom anti-phishing policies to identify the message **recipients** <u>that the policy applies to</u>. Anti-phishing policies in Microsoft Defender for Office 365 also have [impersonation settings](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) where you can specify individual sender email addresses or sender domains <u>that will receive impersonation protection</u> as described later in this topic.
+  > The **Applied to** setting is required in custom anti-phishing policies to identify the message **recipients** <u>that the policy applies to</u>. Anti-phishing policies in Microsoft Defender for Office 365 also have [impersonation settings](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) where you can specify individual sender email addresses or sender domains <u>that will receive impersonation protection</u> as described later in this article.
 
 ## Spoof settings
 
@@ -98,6 +100,8 @@ The following spoof settings are available in anti-phishing policies in EOP and 
   > - Anti-spoofing protection is enabled by default in the default anti-phishing policy and in any new custom anti-phishing policies that you create.
   >
   > - You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  >
+  > - Disabling anti-spoofing protection only disables implicit spoofing protection from [composite authentication](email-validation-and-authentication.md#composite-authentication) checks. If the sender fails explicit [DMARC](use-dmarc-to-validate-email.md) checks where the policy is set to quarantine or reject, the message is still quarantined or rejected.
 
   For messages from blocked spoofed senders, you can also specify the action to take on the messages:
 
@@ -119,7 +123,7 @@ The **Unauthenticated Sender** setting enables or disables unauthenticated sende
 
 - A question mark (?) is added to the sender's photo if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). Disabling unauthenticated sender identification prevents the question mark from being added to the sender's photo.
 
-- The via tag (chris@contoso.com <u>via</u> michelle@fabrikam.com) is added if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+- The via tag (chris@contoso.com <u>via</u> fabrikam.com) is added if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
   Disabling unauthenticated sender identification does not prevent the via tag from being added if the domain in the From address is different from the domain in the DKIM signature or the MAIL FROM address.
 
@@ -128,7 +132,6 @@ To prevent the question mark or via tag from being added to messages from specif
 - Allow the sender to spoof in the spoof intelligence policy. This action will prevent the via tag from appearing in messages from the sender when unauthenticated sender identification is disabled. For instructions, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Configure email authentication](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) for the sender domain.
-  
   - For the question mark in the sender's photo, SPF or DKIM are the most important.
   - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
 
@@ -158,7 +161,7 @@ The following impersonation settings are only available in anti-phishing policie
 
   > [!NOTE]
   >
-  > - In each anti-phishing policy, you can specify a maximum of 60 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
+  > - In each anti-phishing policy, you can specify a maximum of 60 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 60. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
   >
   > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
 

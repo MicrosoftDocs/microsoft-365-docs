@@ -83,7 +83,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
    The export job folder contains the following items. The actual items in the export folder are determined by the export options configured when the export job was created. For more information, see [Export documents from a review set](export-documents-from-review-set.md).
 
-    - Export_load_file.csv: This CSV file is a detail export report that contains information about each exported document. The file consists of a column for each metadata property for a document. For a list and description of the metadata that's included in this report, see the **Exported field name** column in the table in [Document metadata fields in Advanced eDiscovery](document-metadata-fields.md).
+    - Export_load_file.csv: This CSV file is a detail export report that contains information about each exported document. The file consists of a column for each metadata property for a document. For a list and description of the metadata that's included in this report, see the **Exported field name** column in the table in [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-advanced-ediscovery.md).
     
     - Summary.txt: A text file that contains a summary of the export including export statistics.
     

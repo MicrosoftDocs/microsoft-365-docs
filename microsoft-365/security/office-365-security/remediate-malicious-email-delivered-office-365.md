@@ -4,16 +4,18 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: O365-seccomp
+
 audience: admin
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 localization_priority: Normal
 MS.collection: 
 search.appverid: MET150
 description: Threat remediation
 appliesto: 
-- Microsoft 365 Defender
+  - Microsoft 365 Defender
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Remediate malicious email delivered in Office 365
@@ -30,14 +32,14 @@ Remediation means taking a prescribed action against a threat. Malicious email s
 
 ## What you need to know before you begin
 
-Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Security & Compliance Center** \> **Permissions**. Without the "search and purge" role added to one of the role-groups, they wont be able to execute the action.
+Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Security & Compliance Center** \> **Permissions**. Without the "search and purge" role added to one of the role-groups, they won't be able to execute the action.
 
 ## Manual and automated remediation
 
 *Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Threat Explorer. Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
 
 > [!div class="mx-imgBorder"]
-> [ ![Manual hunting in Office 365 Threat Explorer by date.](../../media/tp-RemediationArticle1.png) ](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Manual hunting in Office 365 Threat Explorer by date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Security teams can use Threat Explorer to select emails in several ways:
 
@@ -56,12 +58,12 @@ Once emails are selected through Threat Explorer, you can start remediation by t
 **Automated investigation and response** actions are triggered by alerts or by security operations teams from Threat Explorer. These may include recommended remediation actions that must be approved by a security operations team. These actions are included on the **Action** tab in the automated investigation.
 
 > [!div class="mx-imgBorder"]
-> [ ![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png) ](../../media/tp-RemediationArticle3.png#lightbox)
+> [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-All remediations (either direct approval or two-step approval) that were created in Threat Explorer as well as approved actions coming from automated investigations are displayed in the Action Center. Access these via the left navigation panel under **Review** > **Action Center**.
+All remediations (either direct approval or two-step approval) that were created in Threat Explorer as well as approved actions coming from automated investigations are displayed in the Action Center. Access these via the left navigation panel under **Review** \> **Action Center**.
 
 > [!div class="mx-imgBorder"]
-> [ ![The action center with a list of threats by date and severity.](../../media/tp-RemediationArticle4.png) ](../../media/tp-RemediationArticle4.png#lightbox)
+> [![The action center with a list of threats by date and severity.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
 Action Center shows all remediation actions for the past 30 days. Actions taken through Threat Explorer are listed by the name that the security operations team provided when the remediation was created. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster... ."
 
@@ -70,7 +72,7 @@ Open any remediation item to view details about it, including its name, creation
 - **Mail submission** tab: Displays the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be actionable or not actionable.
 
   > [!div class="mx-imgBorder"]
-  > [ ![The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png) ](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
   - **Actionable**: Emails in the following cloud mailbox locations can be acted on and moved:
     - Inbox
@@ -105,7 +107,7 @@ Open any remediation item to view details about it, including its name, creation
   The following image shows how a submission looks in Action Center. A remediation can contain multiple submissions. If multiple actions get approved through one automated investigation, each email or email cluster action appears in the same remediation as a different submission.
 
   > [!div class="mx-imgBorder"]
-  > [ ![ZAP email cluster flyout panel.](../../media/tp-RemediationArticle6.png) ](../../media/tp-RemediationArticle6.png#lightbox)
+  > [![ZAP email cluster flyout panel.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
   Select a mail submission item to show the details of that remediation, such as the query (when remediation is triggered through automated investigations or Threat Explorer through selecting a query) and the start and end times of remediation. It also displays a list of messages that were submitted for remediation. As messages move out of the Threat Explorer retention period, the messages disappear from this list. The list also shows individual messages that are remediable.
 
@@ -126,7 +128,7 @@ Open any remediation item to view details about it, including its name, creation
   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
 
   Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
-  
+
   In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100k records.
 
   Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.

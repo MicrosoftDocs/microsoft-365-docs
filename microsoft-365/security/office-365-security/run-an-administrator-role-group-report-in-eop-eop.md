@@ -1,19 +1,21 @@
 ---
-title: "Run an administrator role group report in standalone EOP"
-f1.keywords:
-- NOCSH
+title: Run an administrator role group report in standalone EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to run an administrator role group report in standalone Exchange Online Protection (EOP). This report logs when an admin adds members to or removes members from administrator role groups."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to run an administrator role group report in standalone Exchange Online Protection (EOP). This report logs when an admin adds members to or removes members from administrator role groups.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Run an administrator role group report in standalone EOP
@@ -31,7 +33,7 @@ When you run an administrator role group report in the Exchange admin center (EA
 
 - To open the Exchange admin center, see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- You need to be assigned permissions before you can perform these procedures. Specifically, you need the Audit Logs or View-Only Audit Logs role, which are assigned to the ComplianceManagement, OrganizationManagement (global admins), and SecurityAdministrator role groups by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- You need to be assigned permissions in Exchange Online Protection before you can do the procedures in this article. Specifically, you need the **Audit Logs** or **View-Only Audit Logs** role, which are assigned to the **Organization Management**, **Compliance Management**, and **Security Administrator** role groups by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 

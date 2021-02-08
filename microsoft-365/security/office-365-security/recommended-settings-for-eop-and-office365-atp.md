@@ -1,22 +1,25 @@
 ---
-title: "Microsoft recommendations for EOP and Defender for Office 365 security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365 , set up Defender for Office 365 , set up EOP, configure Defender for Office 365, configure EOP, security configuration"
-f1.keywords:
-- NOCSH
+title: Microsoft recommendations for EOP and Defender for Office 365 security settings
+keywords: Office 365 security recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365 , set up Defender for Office 365 , set up EOP, configure Defender for Office 365, configure EOP, security configuration
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date:
+ms.date: 
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
-description: "What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?"
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
@@ -137,7 +140,7 @@ For more information about these settings, see [Spoof settings](set-up-anti-phis
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Enable anti-spoofing protection** <p> _EnableAntispoofEnforcement_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
+|**Enable anti-spoofing protection** <p> _EnableSpoofIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
 |**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
 |**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
 |
@@ -152,7 +155,7 @@ Additional security benefits come with a Microsoft Defender for Office 365 subsc
 >
 > - There are no default Safe Links policies or Safe Attachments policies that automatically protect all recipients in the organization. To get the protections, you need to create at least one Safe Links Policy and Safe Attachments policy.
 >
-> - [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protection and [Safe Documents](safe-docs.md) protection have no dependencies on Safe Links policies.
+> - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protection and [Safe Documents](safe-docs.md) protection have no dependencies on Safe Links policies.
 
 If your subscription includes Microsoft Defender for Office 365 or if you've purchased Defender for Office 365 as an add-on, set the following Standard or Strict configurations.
 
@@ -191,7 +194,7 @@ Note that these are the same settings that are available in [anti-spam policy se
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|---|---|---|---|
-|**Enable anti-spoofing protection** <p> _EnableAntispoofEnforcement_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
+|**Enable anti-spoofing protection** <p> _EnableSpoofIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
 |**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
 |**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
 |
@@ -254,7 +257,7 @@ Safe Attachments in Microsoft Defender for Office 365 includes global settings t
 
 #### Global settings for Safe Attachments
 
-To configure these settings, see [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) and [Safe Documents in Microsoft 365 E5](safe-docs.md).
+To configure these settings, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) and [Safe Documents in Microsoft 365 E5](safe-docs.md).
 
 In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
@@ -262,9 +265,9 @@ In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/pow
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|On <p> `$true`|On <p> `$true`||
-|**Turn on Safe Documents for Office clients** <bt/><br/> _EnableSafeDocs_|On <p> `$true`|On <p> `$true`|This setting is only available with Microsoft 365 E5 or Microsoft 365 E5 Security licenses. For more information, see [Safe Documents in Microsoft Defender for Office 365](safe-docs.md).|
-|**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <bt/><br/> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|This setting is related to Safe Documents.|
+|**Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|On <p> `$true`|On <p> `$true`||
+|**Turn on Safe Documents for Office clients** <p> _EnableSafeDocs_|On <p> `$true`|On <p> `$true`|This setting is only available with Microsoft 365 E5 or Microsoft 365 E5 Security licenses. For more information, see [Safe Documents in Microsoft Defender for Office 365](safe-docs.md).|
+|**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <p> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|This setting is related to Safe Documents.|
 |
 
 #### Safe Attachments policy settings

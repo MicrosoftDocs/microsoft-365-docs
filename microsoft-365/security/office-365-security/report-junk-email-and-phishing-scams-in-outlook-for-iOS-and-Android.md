@@ -1,21 +1,23 @@
 ---
 title: Report junk and phishing email in Outlook for iOS and Android
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about the built-in junk, not junk, and phishing email reporting options in Outlook for iOS and Android."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the built-in junk, not junk, and phishing email reporting options in Outlook for iOS and Android.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Report junk and phishing email in Outlook for iOS and Android in Exchange Online

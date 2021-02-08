@@ -1,29 +1,34 @@
 ---
-title: "Walkthrough - Spoof intelligence insight"
-f1.keywords:
-- NOCSH
+title: Walkthrough - Spoof intelligence insight
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how the Spoof intelligence insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC)."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how the Spoof intelligence insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Walkthrough - Spoof intelligence insight in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 In Microsoft 365 organizations with Defender for Office 365, you can use the Spoof intelligence insight to quickly determine which external senders are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks).
 
@@ -37,13 +42,15 @@ This walkthrough is one of several for the Security & Compliance Center. To abou
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Security dashboard** page, use <https://protection.office.com/searchandinvestigation/dashboard>.
 
-  You can view the Spoof intelligence insight from more than one dashboard in the Security & Compliance Center. Regardless of which dashboard you're looking at, the insight provides the same details and allows you to quickly perform the same tasks.
+  You can view the Spoof intelligence insight from more than one dashboard in the Security & Compliance Center. Regardless of which dashboard you're looking at, the insight provides the same details and allows you to quickly do the same tasks.
 
 - You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
   - **Organization Management**
   - **Security Administrator**
   - **Security Reader**
   - **Global Reader**
+
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
   **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 

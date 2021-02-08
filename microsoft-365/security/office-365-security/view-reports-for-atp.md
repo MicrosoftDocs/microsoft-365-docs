@@ -1,30 +1,35 @@
 ---
 title: View Defender for Office 365 reports in the Reports dashboard
-f1.keywords:
-- CSH
+f1.keywords: 
+  - CSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
-description: "Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # View Defender for Office 365 reports in the Reports dashboard in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
@@ -317,7 +322,7 @@ To get back to the reports view, click **View report**.
 
 ## Additional reports to view
 
-In addition to the reports described in this topic, several other reports are available, as described in the following table:
+In addition to the reports described in this article, several other reports are available, as described in the following table:
 
 ****
 
@@ -333,7 +338,7 @@ In addition to the reports described in this topic, several other reports are av
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
-In order to view and use the reports described in this topic, you need to be a member of one of the following role groups in the Security & Compliance Center:
+In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Security & Compliance Center:
 
 - **Organization Management**
 - **Security Administrator**
@@ -351,5 +356,5 @@ If you are not seeing data in your Defender for Office 365 reports, double-check
 ## Related topics
 
 [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
-  
+
 [Role permissions (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

@@ -4,21 +4,22 @@ description: Learn about Active Directory query events in the IdentityQueryEvent
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, IdentityQueryEvents, Azure AD, Active Directory, Azure ATP, identities, LDAP queries
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
+ms.technology: m365d
 ---
 
 # IdentityQueryEvents
@@ -53,8 +54,10 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the endpoint |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `Port` | string | TCP port used during communication |
 | `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
 | `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
+| `DestinationPort` | string | Destination port of related network communications |
 | `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountUpn` | string | User principal name (UPN) of the account that the recorded action was applied to |
 | `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |

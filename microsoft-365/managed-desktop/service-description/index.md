@@ -24,13 +24,13 @@ Microsoft Managed Desktop is a service that provides your users with a secure mo
 - IT support for your users
 - Operational support for IT pros
 
-For details about the specific services included with Microsoft Managed Desktop, see the other topics in this section. If you've already decided that Microsoft Managed Desktop is for you, the topics in [Get ready for enrollment in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) provide you with the steps to prepare to join the service.
+For details about the specific services included with Microsoft Managed Desktop, see the other articles in this section. If you've already decided that Microsoft Managed Desktop is for you, the articles in [Get ready for enrollment in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) provide you with the steps to prepare to join the service.
 
 - [Microsoft Managed Desktop supported regions and languages](regions-languages.md) explains which regions and languages are supported with the service.
 - To guarantee the best experience for your users, only certain devices are supported by Microsoft Managed Desktop. [Program devices](device-list.md) specifies the exact device models and configurations you can use with the service, whether you provide them or work with a partner.
 - [Device services](device-services.md) specifies the device-related services that Microsoft will provide to subscribers.
 - [Device configuration](device-policies.md) clarifies the default and security-related Mobile Device Management policies that the service will apply to enrolled devices.
-- [Security](security.md) specifies the data collected from enrolled devices, as well as the features and policies related to device security, identity and access management, network security, and information security.
+- [Security](security.md) specifies the data collected from enrolled devices, and the features and policies related to device security, identity and access management, network security, and information security.
 - [Updates](updates.md) describes the various update groups that Microsoft Managed Desktop uses to roll out updates to your devices.
 - [Support](support.md) clarifies the support Microsoft provides for your organization and users.
 - [Operations and monitoring](operations-and-monitoring.md) explains how change management works with Microsoft Managed Desktop, including standard procedures for requesting and preparing for changes in the deployment.

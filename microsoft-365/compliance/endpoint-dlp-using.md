@@ -81,12 +81,13 @@ If the list mode is set to **Allow**, then users will be able to upload sensitiv
 
 You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
 
-### Always audit file activity from onboarded devices
+### Business justification in policy tips
 
-Control whether DLP activity for Office, PDF, and CSV files is automatically audited and available for review in the audit telemetry and the Activity Explorer from onboarded devices. 
+You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. You can choose from one the following options:
 
-If this is turned On (the default), file activity is always audited for onboarded devices, regardless of whether or not they are included in an active DLP policy.
-If this is turned off, file activity is audited for onboarded devices only when they are included in an active DLP policy. 
+- By default, users can select either a built-in justification, or enter their own text.
+- Users can only select a built-in justification.
+- Users can only enter their own justification.
 
 
 ## Tying DLP settings together
