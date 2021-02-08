@@ -16,10 +16,6 @@ ms.technology: mdo
 
 # Gain insights through Attack simulation training
 
-<<<<<<< HEAD
-
-Within Attack simulation training, Microsoft provides you with insights based on outcomes of simulations and training employees went through. These insights will help inform you on progress your employees are doing on threat readiness, as well as recommend next steps to better prepare your employees and your environment for attacks.
-=======
 Within Attack simulation training, Microsoft provides you with insights based on outcomes of simulations and trainings that employees went through. These insights will help keep you informed on the threat readiness progress of your employees, as well as recommend next steps to better prepare your employees and your environment for attacks.
 >>>>>>> master
 
