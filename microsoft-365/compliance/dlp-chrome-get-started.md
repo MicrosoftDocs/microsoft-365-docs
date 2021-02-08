@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -23,13 +23,17 @@ description: "Prepare for and deploy the Google Chrome extension for endpoint da
 
 # Get started with the Google Chrome extension for endpoint data loss prevention (preview)
 
+[Endpoint data loss prevention](endpoint-dlp-learn-about.md) (Endpoint DLP) extends the activity monitoring and protection capabilities of data loss prevention (DLP) to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 
+Once the Google Chrome browser extension is installed you can monitor activities and enforce DLP policy restrictions on sensitive items through Chrome.
 
 ## Before you begin
+ 
+kjkjk
 
 ### SKU/subscriptions licensing
 
-Before you get started with Endpoint DLP, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. To access and use Endpoint DLP functionality, you must have one of these subscriptions or add-ons.
+Before you get started, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. To access and use Endpoint DLP functionality, you must have one of these subscriptions or add-ons.
 
 - Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
@@ -38,31 +42,9 @@ Before you get started with Endpoint DLP, you should confirm your [Microsoft 365
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
 
+See, [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 ### Permissions
-
-To enable device management, the account you use must be a member of any one of these roles:
-
-- Global admin
-- Security admin
-- Compliance admin
-
-If you want to use a custom account to view the device management settings, it must be in one of these roles:
-
-- Global admin
-- Compliance admin
-- Compliance data admin
-- Global reader
-
-If you want to use a custom account to access the onboarding/offboarding page, it must be in one of these roles:
-
-- Global admin
-- Compliance admin
-
-If you want to use a custom account to turn on/off device monitoring, it must be in one of these roles:
-
-- Global admin
-- Compliance admin
 
 Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
 
@@ -74,117 +56,114 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Security reader
 - Reports reader
 
-### Prepare your endpoints
+### Infrastructure
 
-Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to meet these requirements.
+Make sure that you've onboarded devices into the Microsoft 365 compliance solutions. See [Get started with Microsoft 365 Endpoint data loss prevention](endpoint-dlp-getting-started.md) 
 
-1. Must be running Windows 10 x64 build 1809 or later.
+### Basic Setup (Single Machine Selfhost) - Recommended 
 
-2. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623. 
 
-   > [!NOTE]
-   > None of Windows Security components need to be active, you can run Endpoint DLP independent of Windows Security status, but the [Real-time protection and Behavior monitor](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
- 
-3. The following Windows Updates are installed. 
- 
-   > [!NOTE]
-   > These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
+Enabling Required Registry Key via PowerShell
+1.	Run the following script in PowerShell as an administrator: Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+Install the Extension
+1.	Navigate to Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com).
+2.	Install the extension.
 
-	- For Windows 10 1809 - KB4559003, KB4577069, KB4580390
-	- For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
-	- For Windows 10 2004 - KB4568831, KB4577063
-	- For devices running Office 2016 (and not any other Office version) - KB4577063 
+Intune Setup (Organization Wide) - Optional 
+Enabling Required Registry Key via Intune
+1.	Create a PowerShell script with the following contents:
+Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+2.	Sign-in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com)
+3.	Navigate to Devices > Scripts and click Add.
+4.	Browse to the location of the script created when prompted.
+5.	Select the following settings:
+a.	Run this script using the logged-on credentials: YES
+b.	Enforce script signature check: NO
+c.	Run script in 64-bit PowerShell Host: YES
+6.	Select the proper device groups and apply the policy.
+Intune Force Install Steps
+Before adding the Microsoft DLP Chrome extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Intune are documented by Google: Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help. After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
+1.	Sign-in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com)
+2.	Navigate to Configuration Profiles.
+3.	Click Create Profile.
+4.	Choose Windows 10 as the platform.
+5.	Choose Custom as Profile type
+6.	Click the Settings tab
+7.	Click Add
+8.	Enter the following policy information and click create.
+OMA-URI: ./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist
+Data type: String
+Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx″/>
 
-4. All devices must be [Azure Active Directory (Azure AD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
+9.	Click create.
 
-5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+Group Policy  Setup (Organization Wide) - Optional
+Import the Chrome ADMX
+Your devices must be manageable via Group Policy, and all Chrome ADMX’s needed will need to be imported into the Group Policy Central Store. Please see the following Microsoft documentation on How to create and manage the Central Store for Group Policy Administrative Templates in Windows.
+Enabling Required Registry Key via Powershell
+1.	Create a PowerShell script with the following contents:
+Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+2.	Open the Group Policy Management Console and navigate to your organizational unit (OU).
+3.	Right-click and select "Create a GPO in this domain and Link it here." When prompted, assign a descriptive name to this GPO (e.g., DLP Chrome Immediate PowerShell Script).
+4.	After creating the GPO, right click and select Edit. This will take you to the Group Policy Object.
+5.	Navigate to Computer Configuration > Preferences > Control Panel Settings > Scheduled Tasks.
+6.	Right-click on the blank area under ‘Scheduled Tasks’ and click New > Immediate Task (At least Windows 7)
+7.	Give the task a name & description.
+8.	Choose the corresponding account to run the immediate task (e.g., NT Authority)
+9.	Select Run with highest privileges.
+10.	Configure the policy for Windows 10.
+11.	In the Actions tab, choose the action ‘Start a program’
+12.	Enter the path to the Program/Script created in Step 1.
+13.	Click Apply.
+Adding the Chrome Extension to the ForceInstall List
+1.	In the Group Policy Management Editor, navigate to your OU.
+2.	Expand the following path “Computer/User configuration > Policies > Administrative templates > Classic administrative templates > Google > Google Chrome > Extensions” (may vary depending on configuration).
+3.	Select “Configure the list of force-installed extensions.”
+4.	Right click and select Edit.
+5.	Check the ‘Enabled’ radio button.
+6.	Click ‘Show’.
+7.	Under ‘Value’, add the following entry: echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx
+8.	Click ‘OK’ and Click ‘Apply’
 
-6. If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, there is a known issue with Endpoint DLP classifying Office content and you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about this issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
+Testing the Extension
+1.	Upload to cloud service, or access by unallowed browsers Cloud Egress  
+To test when detection and protection of sensitive data when its uploaded to a service domain, try to upload a file to one of your organization’s restricted service domains with a file that has sensitive data. The sensitive data must match one of our built in Sensitive Info Types (see more info at https://aka.ms/SensitiveInfoTypes), and/or one of your organization’s sensitive information types. 
+Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
-7. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md).
+Testing other DLP scenarios in Chrome 
+Now that you’ve unblocked Chrome as an app that’s allowed to access sensitive data when it adheres to your organization’s policy, you can test the scenarios below to confirm the behavior meets your organization’s requirements:
+2.	Copy data from a sensitive document to another document using the Clipboard
+To test the copy to clipboard block, simply open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
+Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+3.	Print a document
+To test the print block, simply open a file that is protected against print actions in the Chrome browser and attempt to print the file.
+Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+4.	Copy to USB Removeable Media
+To test the save to removeable media block, try to save the file to a removeable media storage.
+Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+5.	Copy to Network Share
+To test the save to removeable media block, try to save the file to a network share.
+Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
-## Onboarding devices into device management
 
-You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
 
-When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
-If you already have devices onboarded into [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow the [With devices onboarded into Microsoft Defender for Endpoint procedure](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint).
+### scenario Onboarding devices
 
-### Onboarding devices
 
-In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 devices.
 
-1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+### scenario With devices onboarded into Microsoft Defender for Endpoint
 
-2. Open the Compliance Center settings page and choose **Onboard devices**. 
+In this scenario, 
 
-   > [!div class="mx-imgBorder"]
-   > ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
-
-   > [!NOTE]
-   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
-
-3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
-
-4. Choose **Onboarding** to begin the onboarding process.
-
-5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
-
-   > [!div class="mx-imgBorder"]
-   > ![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-   
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
-
-    - Onboard Windows 10 machines using Group Policy
-    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
-    - Onboard Windows 10 machines using Mobile Device Management tools
-    - Onboard Windows 10 machines using a local script
-    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
-
-Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
-
-> [!NOTE]
-> This experience is under license enforcement. Without the required license, data will not be visible or accessible.
-
-### With devices onboarded into Microsoft Defender for Endpoint
-
-In this scenario, Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into Endpoint DLP to expand coverage by using the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
-
-1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
-
-2. Open the Compliance Center settings page and choose **Enable device monitoring**.
-
-3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint.
-
-   > [!div class="mx-imgBorder"]
-   > ![device management](../media/endpoint-dlp-getting-started-2-device-management.png)
-   
-4. Choose **Onboarding** if you need to onboard additional devices.
-
-5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
-
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
-
-    - Onboard Windows 10 machines using Group Policy
-    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
-    - Onboard Windows 10 machines using Mobile Device Management tools
-    - Onboard Windows 10 machines using a local script
-    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
-
-Once done and endpoint is onboarded, it should be visible under the **Devices** table and also start reporting audit logs to the **Activity Explorer**.
-
-> [!NOTE]
->This experience is under license enforcement. Without the required license, data will not be visible or accessible.
-
-### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
+### Viewing Chrome DLP alerts in DLP Alerts Management dashboard
 
 1. Open the Data loss prevention page in the Microsoft 365 Compliance center and choose Alerts.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
 
-### Viewing Endpoint DLP data in activity explorer
+### Viewing Chrome DLP data in activity explorer
 
 1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
 
