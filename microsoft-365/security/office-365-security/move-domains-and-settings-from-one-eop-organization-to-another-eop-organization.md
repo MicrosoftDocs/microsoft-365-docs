@@ -1,19 +1,21 @@
 ---
 title: Move domains & settings from one EOP organization to another
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
-ms.custom:
-- seo-marvel-apr2020
-description: "In this article, you'll learn how to move domains and settings from one Microsoft Exchange Online Protection (EOP) organization (tenant) to another."
+ms.custom: 
+  - seo-marvel-apr2020
+description: In this article, you'll learn how to move domains and settings from one Microsoft Exchange Online Protection (EOP) organization (tenant) to another.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Move domains and settings from one EOP organization to another
@@ -245,7 +247,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## Step 5: Verify domains for the target organization
 
-1. Sign in to the admin center at [https://portal.office.com](https://portal.office.com).
+1. Sign in to the admin center at <https://portal.office.com>.
 
 2. Click **Domains**.
 

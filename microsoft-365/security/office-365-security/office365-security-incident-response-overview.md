@@ -1,23 +1,25 @@
 ---
-title: "Security Incident Response"
-f1.keywords:
-- NOCSH
+title: Security Incident Response
+f1.keywords: 
+  - NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 04/27/2018
 audience: ITPro
 ms.topic: overview
-ms.collection:
-- o365_security_incident_response
-- M365-security-compliance
-ms.service: O365-seccomp
+ms.collection: 
+  - o365_security_incident_response
+  - M365-security-compliance
+
 localization_priority: Normal
-search.appverid:
-- MET150
-description: "This solution tells you what the most common cybersecurity attacks might look like in Microsoft 365 and how to respond to them"
-ms.custom:
-- seo-marvel-apr2020
+search.appverid: 
+  - MET150
+description: This solution tells you what the most common cybersecurity attacks might look like in Microsoft 365 and how to respond to them
+ms.custom: 
+  - seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Security Incident Response

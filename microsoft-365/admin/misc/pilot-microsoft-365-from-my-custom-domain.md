@@ -35,6 +35,8 @@ You can pilot Microsoft 365 with these requirements and limitations:
 
 - Users might not be able to use Microsoft 365 spam filtering.
 
+- This is recommended for a very small number of users and only applies to the use of email for a pilot.
+
 ## Set up a Microsoft 365 pilot
 
 Follow these steps to set up a Microsoft 365 pilot:
@@ -184,4 +186,3 @@ Because you are moving only two test users, and User A and User B are both using
 
 After they’re imported to the appropriate locations in the Microsoft 365 mailbox, the items can be accessed from any device, anywhere.
 
-When more mailboxes are involved, or if employees are not using Outlook, you can use the migration tools available in the Exchange admin center. To get started, go to Exchange admin center, and follow the directions in [Migrate Email from an IMAP Server to Exchange Online Mailboxes](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).

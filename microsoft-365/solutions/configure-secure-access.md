@@ -1,6 +1,6 @@
 ---
 title: Configure secure access to Microsoft 365 services
-description: Description.
+description: Find prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection - baseline, sensitive, highly sensitive.
 ms.author: samanro
 author: samanro
 manager: bcarter

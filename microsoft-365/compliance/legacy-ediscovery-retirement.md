@@ -106,7 +106,7 @@ The following table describes other tools that you can use to replace the existi
 </li>
 <li>
 <p>Searching for content in for Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, Yammer Groups, Microsoft 365 Groups, and other content stored in Office 365 applications</p></li></ul>
-<p>For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations"> Manage legal investigations in Office 365</a>.</td>
+</td>
 </tr>
 <tr class="even">
 <td>Hold for retention purposes</td>

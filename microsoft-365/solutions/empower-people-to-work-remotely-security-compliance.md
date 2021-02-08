@@ -42,12 +42,12 @@ Here are the features of Microsoft 365 that provide security and compliance serv
 
 Protect your applications and data with these security features of Microsoft 365.
 
-| Capability or feature | Description | Licensing |
+| Capability or feature | Why I need it | Licensing |
 |:-------|:-----|:-------|
-| Microsoft Defender for Office 365 | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br><br> Microsoft Defender for Office 365 collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. | Microsoft 365 E3 or E5 | 
+| Microsoft Defender for Office 365 | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br><br> Microsoft Defender for Office 365 collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It also provides automated tenant configuration assessment and configuration tooling for standard and strict security postures. | Microsoft 365 E3 or E5 | 
 | Malware protection | ‎Microsoft Defender Antivirus and Device Guard provides device-based malware protection. <br><br> SharePoint‎ Online automatically scans file uploads for known malware. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) secures cloud mailboxes. | Microsoft 365 E3 or E5 |
 | Microsoft Defender for Endpoint | Protect your organization’s devices from cyber threats and data breaches and detect, investigate, and respond to advanced threats. | Microsoft 365 E5 |
-| Cloud App Security | Protect your cloud-based services—both Microsoft 365 and other SaaS apps— from attack. | Microsoft 365 E5 or individual Cloud App Security licenses |
+| Cloud App Security | Protect your cloud-based services—both Microsoft 365 and other SaaS apps—from attack. | Microsoft 365 E5 or individual Cloud App Security licenses |
 | Azure AD Identity Protection	| Automate detection and remediation of identity-based risks. <br><br>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
 ||||
 
@@ -57,7 +57,7 @@ See [Top 12 tasks for security teams to support working from home](../security/t
 
 Comply with internal policies or regulatory requirements with these compliance features of Microsoft 365.
 
-| Capability or feature | Description | Licensing |
+| Capability or feature | Why I need it | Licensing |
 |:-------|:-----|:-------|
 | Sensitivity labels | Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate by placing labels with various levels of protection on email, files, or sites. | Microsoft 365 E3 or E5 |
 | Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 or E5 | 

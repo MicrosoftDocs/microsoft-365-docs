@@ -1,19 +1,21 @@
 ---
-title: "Fix slow mail flow rules insight"
-f1.keywords:
-- NOCSH
+title: Fix slow mail flow rules insight
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use the Fix slow mail flow rules insight in the Security & Compliance Center to identify and fix inefficient or broken mail flow rules (also known as transport rules) in their organization."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use the Fix slow mail flow rules insight in the Security & Compliance Center to identify and fix inefficient or broken mail flow rules (also known as transport rules) in their organization.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Fix slow mail flow rules insight in the Security & Compliance Center
