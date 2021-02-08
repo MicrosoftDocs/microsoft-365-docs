@@ -295,4 +295,4 @@ When you are ready to deploy an isolated SharePoint Online team site in producti
 
 [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
 
-[Microsoft 365 solution and architecture center](https://docs.microsoft.com/en-us/microsoft-365/solutions.)
+[Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions.)
