@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Decide which Office features to show or hide when a user chooses Help > What's New in their Office app on Windows by using the "What's new in Office" feature in the Microsoft 365 admin center."
+description: "Decide which Office features to show or hide when a user chooses Help > What's New in their Office app on Windows by using the 'What's new in Office' feature in the Microsoft 365 admin center."
 ---
 
 # Manage which Office‎ features appear in What's New
