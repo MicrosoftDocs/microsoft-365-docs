@@ -480,8 +480,6 @@
           href: mapg-visibility-insights-get-started.md
         - name: View your apps
           href: mapg-visibility-insights-view-apps.md
-        - name: Manage app metadata
-          href: mapg-visibility-insights-app-metadata.md
         - name: Determine compliance posture
           href: mapg-visibility-insights-compliance-posture.md
     - name: Implement app policies
@@ -490,10 +488,6 @@
           href: mapg-app-policies-overview.md
         - name: Get started
           href: mapg-app-policies-get-started.md
-        - name: Plan for app policies
-          href: mapg-app-policies-plan.md
-        - name: View app policies
-          href: mapg-app-policies-view.md
         - name: Create app policies
           href: mapg-app-policies-create.md
         - name: Manage app policies

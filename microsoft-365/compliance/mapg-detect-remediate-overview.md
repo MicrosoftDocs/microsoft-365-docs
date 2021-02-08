@@ -6,7 +6,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 localization_priority: Priority
@@ -19,7 +19,6 @@ description: "Learn about app threat detection and remediation."
 # Learn about app threat detection and remediation
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
-
 
 >[!Note]
 >REVIEWERS: This content is in progress and not ready for review.

@@ -34,6 +34,7 @@ With MAPG visibility and insights, you can see
 >[!Note]
 >Azure-only apps that are not granted permissions to access Microsoft 365 resources are not displayed in MAPG.
 >
+
 Here's a quick review of required administrator roles for visibility and insights.
 
 | Role | Read the dashboard | Read all apps |

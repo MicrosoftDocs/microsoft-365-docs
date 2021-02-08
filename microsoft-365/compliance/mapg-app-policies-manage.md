@@ -6,7 +6,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 localization_priority: Priority
@@ -20,6 +20,10 @@ description: "Manage app policies."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+>[!Note]
+>REVIEWERS: This content is in progress and not ready for review.
+>
+
 Content TBD.
 
 Managing policies process:
@@ -27,8 +31,6 @@ Managing policies process:
 Create > test > monitor alerts > adjust > back to test
 
 ## Editing a policy configuration
-
-## Adjusting policy evaluation order
 
 ## Deleting a policy
 

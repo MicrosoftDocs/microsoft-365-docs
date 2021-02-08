@@ -6,7 +6,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 localization_priority: Priority
@@ -26,12 +26,17 @@ description: "Create app policies."
 
 You can create app policies from built-in templates that can be customized or you can create a custom app policy.
 
-## Built-in policies
+To create a new app policy, go to **M365 Compliance Center > App protection & governance > Overview page > Policies > Create New**. From here, you can create a new app policy based on a set of policy templates or a custom app policy.
+
+## App policy templates
+
+To create a new app policy based on an app policy template, on the **Choose App policy template page**, select a category or app template, the name of the template, and then click **Next**.
 
 MAPG has three categories of built-in app policy templates.
 
 ### App usage
 
+MAPG includes these templates to generate alerts for app usage.
 
 | Template name | Description |
 |:-------|:-----|
@@ -42,6 +47,8 @@ MAPG has three categories of built-in app policy templates.
 
 ### App Permissions
 
+MAPG includes these templates to generate alerts for app permissions.
+
 | Template name | Description |
 |:-------|:-----|
 | Overpermissioned apps | Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <br><br> By default, this policy will flag all apps that are marked as overpermissioned and can be customized with additional conditions and actions. |
@@ -51,17 +58,62 @@ MAPG has three categories of built-in app policy templates.
 
 ### App certification
 
+MAPG includes these templates to generate alerts for app certification.
+
 | Template name | Description |
 |:-------|:-----|
 | App certification loss | Highlights all previously certified apps that recently lost their app certification, which allows you to ensure that this status change is expected. <br><br> By default, this policy will flag all apps that are uncertified and have had their app certification changed in the last 7 days. |
 | New uncertified app | Highlights new apps that have not been through the app certification process to ensure that they are expected in the tenant. <br><br> By default, this policy will flag all apps that were registered in the last 7 days and are uncertified. |
 |||
 
-
 ## Custom app policies
 
+Use a custom app policy when you need to do something not already done by one of the built-in templates
 
-Custom conditions for an app policy
+To create a new app policy based on an app policy template, on the **Choose App policy template page**, select the **Custom** category, the **Custom policy** template, and then click **Next**.
+
+
+### **Name and description** page
+
+Policy Name
+
+Policy Description
+
+Choose Policy severity (tied to alert?)
+
+- High
+- Medium
+- Low
+
+Click **Next**.
+
+### **Choose Policy settings and conditions** page
+
+For Choose which apps this policy is applicable for:
+
+- All Apps
+- Choose specific apps
+
+  Flyout pane allows you to select one or more apps.
+  Click Add.
+
+Click **Next**.
+
+### **Choose Policy settings and conditions** page
+
+Choose policy conditions for selected apps:
+
+Use default behavior of policy (unavailable)
+
+Select **Set new conditions for policy**, and then click **Next**.
+
+**Create rule** flyout pane allows you to select conditions for a new rule.
+
+Click **Add condition**
+
+Select from the list of conditions, and then specify the valuse of the condition.
+
+Here are the available conditions for a custom app policy.
 
 |Condition | Condition values accepted | More information |
 |:-------|:-----|:-------|
@@ -87,6 +139,78 @@ Custom conditions for an app policy
 | Error rate | Error rate is greater than X% |  |
 ||||
 
+All of the specified conditions must be met for this app policy to apply.
+
+
+Click **Save**.
+
+Click **Next**.
+
+
+
+### **Define Policy Actions** page
+
+
+Disable app is the only option.
+
+Click **Next**.
+
+### **Define Policy Status** page
+
+
+
+- Audit mode: Policies will be evaluated but the configured actions will not occur.
+- Active: Policies will be evaluated and configured actions will occur.
+- Inactive: Policies will not be evaluated and the configured actions will not occur.
+
+
+
+
+
+
+## Using custom app policies
+
+Conditions
+
+Auto-remediation
+
+
+## Policy settings
+
+**Name and description**
+
+Policy Name
+
+Policy Description
+
+Choose Policy severity
+
+**Choose Policy settings and conditions**
+
+Choose which apps:
+
+All Apps
+
+Choose specific apps
+
+**Choose Policy settings and conditions**
+
+Choose policy conditions for selected apps
+
+- Use default behavior of policy
+- Set new conditions for policy
+
+
+**Define Policy Actions**
+
+Disable app
+
+
+**Define Policy Status**
+
+
+
+
 
 ## Configure a user-based policy
 
@@ -97,3 +221,6 @@ Publish metadata-based policies
 ## Configure access permissions
 
 
+## Next step
+
+[Manage your app policies](mapg-app-policies-manage.md)

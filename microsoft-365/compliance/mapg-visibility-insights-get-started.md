@@ -43,8 +43,8 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
   - **All categories**: Sorts across all available categories.
   - **High privilege**: High privilege is an internally determined category based on platform ML and signals.
   - **Overpermissioned**: When MAPG receives telemetry that indicates a permission granted to an application is not being used in the last 90 days, that application is overpermissioned. MAPG must be operating for at least 90 days to determine if any app is overpermissioned.  
-  - **Unverified**: Applications that have not received[ Microsoft 365 certification](https://docs.microsoft.com/en-us/microsoft-365-app-certification/overview#microsoft-365-certification) are considered unverified.
-  - **App only**: [Application permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant, which are potentially a higher risk set of permissions.
+  - **Unverified**: Applications that have not received[ Microsoft 365 certification](https://docs.microsoft.com/microsoft-365-app-certification/overview#microsoft-365-certification) are considered unverified.
+  - **App only**: [Application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant, which are potentially a higher risk set of permissions.
   - **New apps**: New Microsoft 365 apps that have been registered in the last 7 days.  
 
 ## Next step
