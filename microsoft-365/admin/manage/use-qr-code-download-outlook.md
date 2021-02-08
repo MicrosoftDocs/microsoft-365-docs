@@ -37,7 +37,7 @@ This experience is on by default. To disable this feature, follow the steps belo
 2. Using PowerShell, you can disable the notifications informing your users about the Outlook mobile apps. This will also prevent the QR code sign-in flow from being shown.
 
 ```powershell
-Set-Organization -MobileAppEducationEnabled <Boolean>
+Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
 Related topics
