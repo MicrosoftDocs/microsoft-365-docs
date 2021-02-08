@@ -21,7 +21,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/02/2021
+ms.date: 02/08/2021
 ---
 
 # Details and results of an automated investigation
@@ -38,13 +38,6 @@ With Microsoft 365 Defender, when an [automated investigation](mtp-autoir.md) ru
 ## (NEW!) Unified investigation page
 
 The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](../office-365-security/office-365-atp.md). 
-
-| If you've been using this... | Try this... |
-|:---|:---|
-| The **Investigations** view in the Office 365 Security & Compliance Center ([https://protection.office.com/airinvestigation](https://protection.office.com/airinvestigation)) | Visit the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), and then open an investigation details view from an [incident](#open-an-investigation-from-an-incident-details-page) or the [Action center](#select-an-item-in-the-action-center). |
-| The **Automated Investigations** list in the Microsoft Defender Security Center ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) |  Visit the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), and then open an investigation details view from an [incident](#open-an-investigation-from-an-incident-details-page) or the [Action center](#select-an-item-in-the-action-center). |
-| The Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) | Try the new, unified investigation details view from an [incident](#open-an-investigation-from-an-incident-details-page) or the [Action center](#select-an-item-in-the-action-center). |
-
 
 ## Open the investigation details view
 
