@@ -45,6 +45,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SenderMailFromAddress` | string | Sender email address in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
 | `SenderFromAddress` | string | Sender email address in the FROM header, which is visible to email recipients on their email clients |
 | `SenderDisplayName` | string | Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname |
+| `SenderObjectId` | string |Unique identifier for the sender’s account in Azure AD |
 | `SenderMailFromDomain` | string | Sender domain in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
 | `SenderFromDomain` | string | Sender domain in the FROM header, which is visible to email recipients on their email clients |
 | `SenderIPv4` | string | IPv4 address of the last detected mail server that relayed the message |
@@ -72,7 +73,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `UserLevelPolicy` | string | End-user mailbox policy that triggered the action taken on the email |
 | `Connectors` | string | Custom instructions that define organizational mail flow and how the email was routed |
 | `ConfidenceLevel` | string | List of confidence levels of any spam or phishing verdicts. For spam, this column shows the spam confidence level (SCL), indicating if the email was skipped (-1), found to be not spam (0,1), found to be spam with moderate confidence (5,6), or found to be spam with high confidence (9). For phishing, this column displays whether the confidence level is "High" or "Low". |
-| `SenderObjectId` | string |Unique identifier for the sender’s account in Azure AD |
 | `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | `ThreatNames` | string |Detection name for malware or other threats found |
 | `DetectionMethods` | string | Methods used to detect malware, phishing, or other threats found in the email |
