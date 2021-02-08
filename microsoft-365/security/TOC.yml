@@ -101,7 +101,7 @@
               href: mtp/mtp-enable.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
-            - name: Turn on FAQ
+            - name: Turning on Microsoft 365 Defender FAQs
               href: mtp/mtp-enable-faq.md              
         - name: How-to guides
           items: 
