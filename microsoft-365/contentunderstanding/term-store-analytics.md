@@ -17,7 +17,9 @@ localization_priority: Priority
 ---
 # Term store reports
 
-You can access reports for the term store in the SharePoint admin center. Expand **Reports**, and then click **Content services**.
+You can access reports for the term store in the SharePoint admin center. This feature requires a [SharePoint Syntex](index.md) license.
+
+Expand **Reports**, and then click **Content services**.
 
 The following reports are available:
 

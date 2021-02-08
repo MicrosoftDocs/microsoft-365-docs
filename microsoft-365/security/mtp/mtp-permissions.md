@@ -22,7 +22,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Manage access to Microsoft 365 Defender
+# Manage access to Microsoft 365 Defender with Azure Active Directory global roles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -30,7 +30,11 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Accounts assigned the following Azure Active Directory (AD) roles can access Microsoft 365 Defender functionality and data:
+There are two ways to manage access to Microsoft 365 Defender
+- **Global Azure Active Directory (AD) roles**
+- **Custom role access**
+
+Accounts assigned the following **Global Azure Active Directory (AD) roles** can access Microsoft 365 Defender functionality and data:
 - Global administrator
 - Security administrator
 - Security Operator
@@ -38,6 +42,11 @@ Accounts assigned the following Azure Active Directory (AD) roles can access Mic
 - Security Reader
 
 To review accounts with these roles, [view Permissions in the Microsoft 365 security center](https://security.microsoft.com/permissions).
+
+**Custom role** access is a new capability in Microsoft 365 Defender and allows you to manage access to specific data, tasks, and capabilities in Microsoft Defender 365. Custom roles offer more control than global Azure AD roles, providing users only the access they need with the least-permissive roles necessary.  Custom roles can be created in addition to global Azure AD roles. [Learn more about custom roles](custom-roles.md).
+
+> ![NOTE]
+> This article applies only to managing global Azure Active Directory roles. For more information about using custom role-based access control, see [Custom roles for role-based access control](custom-roles.md)
 
 ## Access to functionality
 Access to specific functionality is determined by your [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
@@ -54,7 +63,7 @@ For example, if you belong to only one user group with a Microsoft Defender for 
 During the preview, Microsoft 365 Defender does not enforce access controls based on  Cloud App Security settings. Access to Microsoft 365 Defender data is not affected by these settings.
 
 ## Related topics
-
-- [Azure AD roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+- [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md)
+- [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 - [Microsoft Defender for Endpoint RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Cloud App Security roles](https://docs.microsoft.com/cloud-app-security/manage-admins)
