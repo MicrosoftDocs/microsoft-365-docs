@@ -4,17 +4,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: kshi
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security."
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Safe Documents in Microsoft 365 E5
@@ -57,7 +59,7 @@ Files sent by Safe Documents are not retained in Defender beyond the time needed
 
 2. In the **Global settings** fly out that appears, configure the following settings:
 
-   - **Turn on Safe Documents for Office clients**: Move the toggle to the right to turn on the feature: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - **Turn on Safe Documents for Office clients**: Move the toggle to the right to turn on the feature: ![Toggle on](../../media/scc-toggle-on.png).
 
    - **Allow people to click through Protected View even if Safe Documents identifies the file as malicious**: We recommend that you leave this option turned off (leave the toggle to the left: ![Toggle off](../../media/scc-toggle-off.png)).
 

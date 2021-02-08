@@ -1,23 +1,25 @@
 ---
 title: Configure the default connection filter policy
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to configure connection filtering in Exchange Online Protection (EOP) to allow or block emails from email servers."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to configure connection filtering in Exchange Online Protection (EOP) to allow or block emails from email servers.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure connection filtering

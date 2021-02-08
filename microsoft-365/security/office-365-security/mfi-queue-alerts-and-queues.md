@@ -1,16 +1,18 @@
 ---
-title: "Queues insight in the Mail flow dashboard"
-f1.keywords:
-- NOCSH
+title: Queues insight in the Mail flow dashboard
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: "Admins can learn how to use the Queues widget in the Mail flow dashboard in the Security & Compliance Center to monitor unsuccessful mail flow to their on-premises or partner organizations over outbound connectors."
+description: Admins can learn how to use the Queues widget in the Mail flow dashboard in the Security & Compliance Center to monitor unsuccessful mail flow to their on-premises or partner organizations over outbound connectors.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Queues insight in the Security & Compliance Center

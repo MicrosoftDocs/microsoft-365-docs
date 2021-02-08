@@ -1,16 +1,17 @@
 ---
-title: "New domains being forwarded email insight"
-f1.keywords:
-- NOCSH
+title: New domains being forwarded email insight
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid:
-description: "Admins can learn how to use the New domains being forwarded email insight in the Mail flow dashboard in the Security & Compliance Center to investigate when their users are forwarding messages to external domains that have never been been forwarded to."
+ms.assetid: 
+description: Admins can learn how to use the New domains being forwarded email insight in the Mail flow dashboard in the Security & Compliance Center to investigate when their users are forwarding messages to external domains that have never been been forwarded to.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # New domains being forwarded email insight in the Security & Compliance Center

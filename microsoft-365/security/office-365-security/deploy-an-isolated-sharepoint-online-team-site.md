@@ -1,21 +1,23 @@
 ---
-title: "Deploy an isolated SharePoint Online team site"
-f1.keywords:
-- NOCSH
+title: Deploy an isolated SharePoint Online team site
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: 
- - Ent_Solutions
- - seo-marvel-apr2020
+  - Ent_Solutions
+  - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Use this step-by-step deployment guide to create and configure an isolated SharePoint Online team site in Microsoft Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Deploy an isolated SharePoint Online team site

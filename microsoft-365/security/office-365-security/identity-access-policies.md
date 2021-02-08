@@ -4,23 +4,29 @@ description: Describes the recommended common identity and device access policie
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.reviewer: martincoetzer
 ms.custom: 
-- it-pro
-- goldenconfig
+  - it-pro
+  - goldenconfig
 ms.collection: 
-- M365-identity-device-management
-- M365-security-compliance
-- remotework
-- m365solution-identitydevice
-- m365solution-scenario
+  - M365-identity-device-management
+  - M365-security-compliance
+  - remotework
+  - m365solution-identitydevice
+  - m365solution-scenario
+ms.technology: mdo
 ---
 
 # Common identity and device access policies
+
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- Azure
 
 This article describes the common recommended policies for securing access to Microsoft 365 cloud services, including on-premises applications published with Azure Active Directory (Azure AD) Application Proxy.
 
@@ -48,7 +54,7 @@ To give you time to accomplish these tasks, we recommend implementing the baseli
 |Protection level|Policies|More information|
 |---|---|---|
 |**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)||
-||[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass Conditional Access policies, so it's important to block these.|
+||[Block clients that don't support modern authentication](#block-clients-that-dont-support-multi-factor)|Clients that do not use modern authentication can bypass Conditional Access policies, so it's important to block these.|
 ||[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|
 ||[Apply app data protection policies](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|
 ||[Require approved apps and app protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.|
@@ -137,11 +143,11 @@ Finally, select **On** for **Enable policy**, and then choose **Create**.
 
 Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
 
-## Block clients that don't support modern authentication
+## Block clients that don't support multi-factor
 
-Use the settings in these tables for a Conditional Access policy to block clients that don't support modern authentication.
+Use the settings in these tables for a Conditional Access policy to block clients that don't support multi-factor authentication.
 
-See [this article](../../enterprise/microsoft-365-client-support-modern-authentication.md) for a list of clients in Microsoft 365 that do suppport modern authentication.
+See [this article](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) for a list of clients in Microsoft 365 that do support multi-factor authentication.
 
 In the **Assignments** section:
 
@@ -238,9 +244,11 @@ To create the Conditional Access policy that requires approved apps and APP prot
 
 If you are enabling mobile access to Exchange Online, implement [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. This policy is not pictured in the illustration at the top of this article. It is described and pictured in [Policy recommendations for securing email](secure-email-recommended-policies.md).
 
+To create the Conditional Access policy that requires Edge for iOS and Android, follow "Step 2: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 2: Browser apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies), which allows Edge for iOS and Android, but blocks other mobile device web browsers from connecting to Microsoft 365 endpoints.
+
  These policies leverage the grant controls [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-Finally, blocking legacy authentication for other client apps on iOS and Android devices ensures that these clients cannot bypass Conditional Access policies. If you're following the guidance in this article, you've already configured [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
+Finally, blocking legacy authentication for other client apps on iOS and Android devices ensures that these clients cannot bypass Conditional Access policies. If you're following the guidance in this article, you've already configured [Block clients that don't support modern authentication](#block-clients-that-dont-support-multi-factor).
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).

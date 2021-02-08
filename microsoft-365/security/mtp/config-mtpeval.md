@@ -1,25 +1,26 @@
 ---
 title: Configure Microsoft 365 Defender pillars for the trial lab or pilot environment
 description: Configure Microsoft 365 Defender pillars, such as Microsoft Defender for Office 365 , Microsoft Defender for Identity, Microsoft Cloud App Security, and Microsoft Defender for Endpoint, for your trial lab or pilot environment.
-keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars 
+keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
-ms.author: dolmont  
+f1.keywords: 
+  - NOCSH
+ms.author: dolmont
 author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
-- m365solution-evalutatemtp
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-evalutatemtp
+ms.topic: article
+ms.technology: m365d
 ---
 
 # Configure Microsoft 365 Defender pillars for your trial lab or pilot environment
@@ -157,14 +158,14 @@ There's a PowerShell Module called the *Office 365 Advanced Threat Protection Re
 
     ![Image of_the Microsoft Defender for Identity settings page where you should turn the Microsoft Defender for Endpoint  toggle on](../../media/mtp-eval-52.png)
 
->[!NOTE]
->Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint. Rebranding changes across all of our portals are being rolled out the for consistency.
+> [!NOTE]
+> Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint. Rebranding changes across all of our portals are being rolled out the for consistency.
 
 
 ## Configure Microsoft Cloud App Security
 
->[!NOTE]
->Skip this step if you've already enabled Microsoft Cloud App Security. 
+> [!NOTE]
+> Skip this step if you've already enabled Microsoft Cloud App Security. 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.
 
@@ -285,5 +286,6 @@ Congratulations! You've just created your Microsoft 365 Defender trial lab or pi
 Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
 ## Next step
-|[Attack simulation phase](mtp-pilot-simulate.md) | Run the attack simulation for your Microsoft 365 Defender pilot environment.
-|:-------|:-----|
+
+- [Generate a test alert](generate-test-alert.md) - Run an attack simulation in your Microsoft 365 Defender trial lab.
+

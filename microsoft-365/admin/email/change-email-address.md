@@ -33,11 +33,11 @@ description: "Change your initial email address to a friendly email address like
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 ::: moniker range="o365-worldwide"
 

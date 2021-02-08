@@ -1,22 +1,24 @@
 ---
 title: Evaluate Microsoft Defender for Office 365
-description: Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don’t act on messages.
+description: Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don't act on messages.
 keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, ATP
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance
+  - M365-security-compliance
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Evaluate Microsoft Defender for Office 365
@@ -24,9 +26,9 @@ ms.custom: seo-marvel-apr2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Evaluate Microsoft Defender for Office 365 will soon be in public preview. This preview version is provided without a service level agreement. Certain features might not be supported or might have constrained capabilities.
+> Microsoft Defender for Office 365 evaluation is in public preview. This preview version is provided without a service level agreement. Certain features might not be supported or might have constrained capabilities.
 
-Conducting a comprehensive security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product’s capabilities to assess how it can help your security operations team in their daily tasks.
+Conducting a comprehensive security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product's capabilities to assess how it can help your security operations team in their daily tasks.
 
 The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients, or Teams.
 
@@ -34,15 +36,15 @@ If you don't already have a license that supports Microsoft Defender for Office 
 
 ## How the evaluation works
 
-Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don’t act on messages. You are not required to change your MX record configuration.
+Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don't act on messages. You are not required to change your MX record configuration.
 
-With evaluation mode, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [anti-phishing impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are setup on your behalf. All Defender for Office 365 policies are created in non-enforcement mode in the background and are not visible to you.
+With evaluation mode, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [anti-phishing impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are set up on your behalf. All Defender for Office 365 policies are created in non-enforcement mode in the background and are not visible to you.
 
-As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). It improves filtering accuracy by preserving IP address and sender information, which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. This also improves the filtering accuracy for your Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
+As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). It improves filtering accuracy by preserving IP address and sender information, which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. Enhanced Filtering also improves the filtering accuracy for your Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
 
 To minimize potential production impact on some unsupported scenarios, you can bypass all EOP filtering by creating a transport rule to set the Spam Confidence Level (SCL) to -1. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) for details.
 
-When the evaluation mode is set up, you will have a report updated daily with up to 90 days of data quantifying the messages that would have been blocked had the policies been made and implemented (for example, delete, send to junk, quarantine). Reports are generated for all Defender for Office 365 and EOP detections. They are aggregated per detection technology (for example, impersonation) and can be filtered by time range. Additionally, message reports can be created on-demand to create custom pivots or to deep dive messages using Threat Explorer.
+When the evaluation mode is set up, you will have a report updated daily with up to 90 days of data quantifying the messages that would have been blocked if the policies were implemented (for example, delete, send to junk, quarantine). Reports are generated for all Defender for Office 365 and EOP detections. They are aggregated per detection technology (for example, impersonation) and can be filtered by time range. Additionally, message reports can be created on-demand to create custom pivots or to deep dive messages using Threat Explorer.
 
 With the simplified set-up experience, you can focus on:
 
@@ -74,7 +76,12 @@ You'll have a 30-day window with the evaluation to monitor and report on advance
 
 ### Roles
 
-Exchange Online roles are required to set up Defender for Office 365 in evaluation mode. The following roles are needed:
+Exchange Online roles are required to set up Defender for Office 365 in evaluation mode.
+
+- [Learn about permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [Learn about assigning admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+
+The following roles are needed:
 
 |Task|Role|
 |---|---|
@@ -85,30 +92,31 @@ Exchange Online roles are required to set up Defender for Office 365 in evaluati
 |View evaluation report|Security admin role OR Security reader role|
 |
 
+
 ### Enhanced filtering
 
-Your Exchange Online Protection policies, such as bulk and spam protection, will remain the same. Message delivery will also remain the same. However, the evaluation turns on enhanced filtering for connectors, which will impact your mailflow and Exchange Online Protection policies unless bypassed.
+Your Exchange Online Protection policies, such as bulk and spam protection, will remain the same. Message delivery will also remain the same. However, the evaluation turns on enhanced filtering for connectors, which will impact your mail flow and Exchange Online Protection policies unless bypassed.
 
-Enhanced filtering for connectors will allow tenants to use anti-spoofing protection. Anti-spoofing is not supported if you’re using an email security gateway (ESG) without having turned on Enhanced filtering for connectors.
+Enhanced filtering for connectors will allow tenants to use anti-spoofing protection. Anti-spoofing is not supported if you're using an email security gateway (ESG) without having turned on Enhanced filtering for connectors.
 
 ### URLs
 
-URLs will be detonated during mail flow. If you don’t want specific URLs detonated, manage your list of allowed URLs appropriately. See [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md) for details.
+URLs will be detonated during mail flow. If you don't want specific URLs detonated, manage your list of allowed URLs appropriately. See [Manage the Tenant Allow/Block List](tenant-allow-block-list.md) for details.
 
 URL links in the email message bodies won't wrap, to lessen customer impact.
 
 ### Email routing
 
-You need to prepare the corresponding details that you will need to set up how your email is currently routed, including the name of the inbound connector that routes your mail. If you are just using Exchange Online Protection, you won’t have a connector. [Learn about mail flow and email routing](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Prepare the corresponding details that you will need to set up how your email is currently routed, including the name of the inbound connector that routes your mail. If you are just using Exchange Online Protection, you won’t have a connector. [Learn about mail flow and email routing](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Supported email routing scenarios include:
 
-- **Third-party partner and/or on-premises service provider**: The inbound connector that you want to evaluate uses a third-party provider and/or you’re using a solution for email security on-premises.
+- **Third-party partner and/or on-premises service provider**: The inbound connector that you want to evaluate uses a third-party provider and/or you're using a solution for email security on-premises.
 - **Microsoft Exchange Online Protection only**: The tenant that you want to evaluate uses Office 365 for email security and the Mail Exchange (MX) record points to Microsoft.
 
 ### Email security gateway
 
-If you’re using a third-party email security gateway (ESG), you’ll need to know the provider’s name. If you’re using an ESG on-premises or non-supported vendors, you’ll need to know the public IP address(es) for the devices.
+If you're using a third-party email security gateway (ESG), you'll need to know the provider's name. If you're using an ESG on-premises or non-supported vendors, you'll need to know the public IP address(es) for the devices.
 
 Supported third-party partners include:
 
@@ -134,7 +142,7 @@ Find the Microsoft Defender for Office 365 evaluation set-up card in the Office 
 
 ## Setting up the evaluation
 
-Once you start the set-up flow for your evaluation, you'll be given two routing options. Depending on your organization’s mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online.
+Once you start the set-up flow for your evaluation, you'll be given two routing options. Depending on your organization's mail routing setup and evaluation needs, you can select whether you are using a third-party and/or on-premises service provider or only Microsoft Exchange Online.
 
 - If you are using a third-party partner and/or on-premises service provider, you'll need to select the name of the vendor from the drop-down menu. Provide the other connector-related details.
 
@@ -146,13 +154,13 @@ Your Microsoft Defender for Office 365 evaluation report is generated once per d
 
 ### Exchange rules (optional)
 
-If you have an existing gateway, you might want to bypass filtering because it will activate enhanced filtering for connectors and alter the incoming sender IP address. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don’t already have one). For details on the rule components and how they work, see Mail flow rules (transport rules) in Exchange Online.
+If you have an existing gateway, enabling evaluation mode will activate enhanced filtering for connectors. This improves filtering accuracy by altering the incoming sender IP address. This may change the filter verdicts and if you are not bypassing Exchange Online Protection this may alter deliverability for certain messages. In this case you might want to temporarily bypass filtering to analyze impact. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don't already have one). For details on the rule components and how they work, see Mail flow rules (transport rules) in Exchange Online.
 
 ## Evaluate capabilities
 
 After the evaluation report has been generated, see how many advanced threat links, advanced threat attachments, and potential impersonations were identified in the emails and collaboration workspaces in your organization.
 
-Once the trial has expired, you can continue to access the report for 90 days. However, it won’t collect any more information. If you want to continue using Microsoft Defender for Office 365 after your trial has expired, make sure you [buy a paid subscription for Microsoft Defender for Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
+Once the trial has expired, you can continue to access the report for 90 days. However, it won't collect any more information. If you want to continue using Microsoft Defender for Office 365 after your trial has expired, make sure you [buy a paid subscription for Microsoft Defender for Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
 You can go to **Settings** to update your routing or turn off your evaluation at any time. However, you need to go through the same set-up process again should you decide to continue your evaluation after having turned it off.
 

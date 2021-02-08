@@ -140,9 +140,7 @@ Microsoft 365 Business Premium includes Windows 10 Business, which you can insta
 
 Your Microsoft 365 Apps for business client installed on your devices will automatically begin to use the features of Microsoft 365 Apps for enterprise. After migration, you can now use:
 
- - Volume activation through Group Policy
- - App telemetry
- - Update controls
+ - Group Policy support
  - Spreadsheet compare and inquire
  - Business intelligence
 

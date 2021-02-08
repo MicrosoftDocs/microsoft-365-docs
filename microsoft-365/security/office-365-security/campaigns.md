@@ -1,23 +1,25 @@
 ---
-title: "Campaign Views in Microsoft Defender for Office 365 Plan"
-f1.keywords:
-- NOCSH
+title: Campaign Views in Microsoft Defender for Office 365 Plan
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: mcostea
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
-description: "Learn about Campaign Views in Microsoft Defender for Office 365."
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Learn about Campaign Views in Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Campaign Views in Microsoft Defender for Office 365
@@ -162,7 +164,7 @@ After you create a basic or advanced filter, you can save it by using **Save que
 
 To export the graph or the list of campaigns, click **Export** and select **Export chart data** or **Export campaign list**.
 
-If you have a Microsoft Defender for Endpoint subscription, you can click **WDATP** to connect or disconnect the campaigns information with Microsoft Defender for Endpoint. For more information, see [Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
+If you have a Microsoft Defender for Endpoint subscription, you can click **MDE Settings** to connect or disconnect the campaigns information with Microsoft Defender for Endpoint. For more information, see [Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
 
 ## Campaign details
 

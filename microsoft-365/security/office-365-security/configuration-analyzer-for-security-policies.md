@@ -1,22 +1,24 @@
 ---
-title: "Configuration analyzer for security policies"
-f1.keywords:
-- NOCSH
+title: Configuration analyzer for security policies
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer:
-ms.date:
+ms.reviewer: 
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to use the configuration analyzer to find and fix security policies that are below the Standard protection and Strict protection preset security policies."
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the Standard protection and Strict protection preset security policies.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365
@@ -27,9 +29,6 @@ description: "Admins can learn how to use the configuration analyzer to find and
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-> [!NOTE]
-> The features described in this article are in Preview, aren't available in all organizations, and are subject to change. For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
 
 Configuration analyzer in the Security & Compliance center provides a central location to find and fix security policies where the settings are below the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
 
@@ -67,10 +66,11 @@ The **Standard** and **Strict** policy setting values that are used as baselines
 
   For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+  > [!NOTE]
+  >  
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  > 
+  > - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 ## Use the configuration analyzer in the Security & Compliance Center
 

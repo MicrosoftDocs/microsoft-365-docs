@@ -1,23 +1,25 @@
 ---
-title: "Email authentication in Microsoft 365"
-f1.keywords:
-- NOCSH
+title: Email authentication in Microsoft 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+  - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: "Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam."
+description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Email authentication in EOP
@@ -145,7 +147,7 @@ You can use this method to resolve intra-org spoofing and cross-domain spoofing 
 
 - [Consider setting up DMARC records](use-dmarc-to-validate-email.md) for your domain to determine your legitimate senders.
 
-Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's many information available online. There are also third party companies dedicated to helping your organization setup email authentication records.
+Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's many information available online. There are also third party companies dedicated to helping your organization set up email authentication records.
 
 #### You don't know all sources for your email
 

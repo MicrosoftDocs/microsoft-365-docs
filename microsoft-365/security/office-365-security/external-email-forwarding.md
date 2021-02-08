@@ -1,26 +1,28 @@
 ---
-title: "Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy"
-f1.keywords:
-- NOCSH
+title: Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 
-ms.custom:
-- seo-marvel-apr2020
-description: "."
+ms.custom: 
+  - seo-marvel-apr2020
+description: .
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Control automatic external email forwarding in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-As an admin, you might have company requirements to restrict or control automatically forwarded messages to external recipients (recipients outside of your organization). Email forwarding can be a useful, but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or partners.
+As an admin, you might have company requirements to restrict or control automatically forwarded messages to external recipients (recipients outside of your organization). Email forwarding can be a useful feature, but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or partners.
 
 The following types of automatic forwarding are available in Microsoft 365:
 

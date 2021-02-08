@@ -1,21 +1,23 @@
 ---
-title: "Configure spam filter policies"
-f1.keywords:
-- NOCSH
+title: Configure spam filter policies
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure anti-spam policies in EOP
@@ -101,20 +103,20 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
      The available actions for spam filtering verdicts are described in the following table.
 
-     - A check mark ( ![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) indicates the action is available (not all actions are available for all spam filtering verdicts).
+     - A check mark ( ![Check mark](../../media/checkmark.png)) indicates the action is available (not all actions are available for all spam filtering verdicts).
      - An asterisk ( <sup>\*</sup> ) after the check mark indicates the default action for the spam filtering verdict.
 
      ****
 
      |Action|Spam|High<br>confidence<br>spam|Phishing<br>email|High<br>confidence<br>phishing<br>email|Bulk<br>email|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**Add X-header**: Adds an X-header to the message header and delivers the message to the mailbox. <p> You enter the X-header field name (not the value) later in the **Add this X-header text** box. <p> For **Spam** and **High confidence spam** verdicts, the message is moved to the Junk Email folder.<sup>1,2</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.<sup>1,2</sup> <p> You enter the text later in the **Prefix subject line with this text** box.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <p> You specify the recipients later in the **Redirect to this email address** box.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Delete message**: Silently deletes the entire message, including all attachments.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <p> You specify how long the message should be held in quarantine later in the **Quarantine** box.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**No action**|||||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|
+     |**Add X-header**: Adds an X-header to the message header and delivers the message to the mailbox. <p> You enter the X-header field name (not the value) later in the **Add this X-header text** box. <p> For **Spam** and **High confidence spam** verdicts, the message is moved to the Junk Email folder.<sup>1,2</sup>|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)<sup>\*</sup>|
+     |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.<sup>1,2</sup> <p> You enter the text later in the **Prefix subject line with this text** box.|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
+     |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <p> You specify the recipients later in the **Redirect to this email address** box.|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+     |**Delete message**: Silently deletes the entire message, including all attachments.|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
+     |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <p> You specify how long the message should be held in quarantine later in the **Quarantine** box.|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+     |**No action**|||||![Check mark](../../media/checkmark.png)|
      |
 
      > <sup>1</sup> In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
@@ -300,7 +302,7 @@ To enable or disable a policy, set the policy priority order, or configure the e
 
    Move the toggle to the left to disable the policy: ![Toggle off](../../media/scc-toggle-off.png)
 
-   Move the toggle to the right to enable the policy: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Move the toggle to the right to enable the policy: ![Toggle on](../../media/scc-toggle-on.png)
 
 You can't disable the default anti-spam policy.
 

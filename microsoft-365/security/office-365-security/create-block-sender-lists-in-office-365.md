@@ -1,18 +1,20 @@
 ---
-title: "Create blocked sender lists"
-f1.keywords:
-- NOCSH
+title: Create blocked sender lists
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150s
-description: "Admins can learn about the available and preferred options to block inbound messages in Exchange Online Protection (EOP)."
+search.appverid: 
+  - MET150s
+description: Admins can learn about the available and preferred options to block inbound messages in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Create blocked sender lists in EOP

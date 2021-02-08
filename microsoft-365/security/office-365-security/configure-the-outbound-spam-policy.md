@@ -1,23 +1,25 @@
 ---
-title: "Configure outbound spam filtering"
-f1.keywords:
-- NOCSH
+title: Configure outbound spam filtering
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure outbound spam filtering in EOP
@@ -229,7 +231,7 @@ To enable or disable a policy, set the policy priority order, or configure the e
 
    Move the toggle to the left to disable the policy: ![Toggle off](../../media/scc-toggle-off.png)
 
-   Move the toggle to the right to enable the policy: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Move the toggle to the right to enable the policy: ![Toggle on](../../media/scc-toggle-on.png)
 
 You can't disable the default outbound spam policy.
 
