@@ -24,34 +24,28 @@ description: "Get started with visibility and insights."
 >REVIEWERS: This content is in progress and not ready for review.
 >
 
-Add intro.
+The first place to get started is the Microsoft Application Protection and Governance (MAPG) dashboard at [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
 
-## Viewing the dashboard
+\[Placeholder for MAPG Overview page screenshot]
 
-To see the MAPG dashboard, use **Microsoft 365 Compliance Center > App protection & governance > Overview page**.
+Alternatively, you can access the MAPG dashboard from **Microsoft 365 admin center > Microsoft 365 Compliance Center > App protection & governance > Overview page**.
 
 ## What’s available in the dashboard
 
 The dashboard contains a summary of the components of the Microsoft 365 app ecosystem in the tenant:
 
-- Tenant Summary: The count of key app categories.
-- Security and compliance alerts: All active alerts in the tenant
-- Data and resource access: Aggregate app usage in the tenant.
-- Improve your app protection and governance: Recommendeded actions such as policy creation and a shortcut to view apps in Microsoft Cloud App Security (MCAS).
-- Top apps: The top apps in key app categories.
-
-
-## Viewing top apps by categories
-
-Use **Microsoft 365 Compliance Center > App protection & governance > Overview page >Top apps by categories pane** to see the top apps, which you can sort by these categories:
-
-- All Categories: Sorts across all available categories.
-- High privilege: High privilege is an internally determined category based on platform ML and signals.
-- Overpermissioned: When MAPG receives telemetry that indicates a permission granted to an application is not being used, that application is “overpermissioned”.  Note this requires MAPG be operating for at least 90 days, as “not being used” here means the permission has not been used in the last 90 days.  
-- Unverified: Applications that have not received[ Microsoft 365 certification](https://docs.microsoft.com/en-us/microsoft-365-app-certification/overview#microsoft-365-certification) are considered unverified.
-- App only: [Application permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant, which are potentially a higher risk set of permissions.
-- Unused: Applications that have no API activity in the last 90 days.  
-- New apps: New Microsoft 365 apps that have been registered in the last 7 days.  
+- **Tenant Summary**: The count of key app categories.
+- **Security and compliance alerts**: All active alerts in the tenant
+- **Data and resource access**: Aggregate API app usage and overall useage of top resourece in the tenant.
+- **Improve your app protection and governance**: Recommended actions such as policy creation and a shortcut to view apps in Microsoft Cloud App Security (MCAS).
+- **Top apps by categories**: The top apps in key app categories, which you can sort by:
+  
+  - **All categories**: Sorts across all available categories.
+  - **High privilege**: High privilege is an internally determined category based on platform ML and signals.
+  - **Overpermissioned**: When MAPG receives telemetry that indicates a permission granted to an application is not being used in the last 90 days, that application is overpermissioned. MAPG must be operating for at least 90 days to determine if any app is overpermissioned.  
+  - **Unverified**: Applications that have not received[ Microsoft 365 certification](https://docs.microsoft.com/en-us/microsoft-365-app-certification/overview#microsoft-365-certification) are considered unverified.
+  - **App only**: [Application permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant, which are potentially a higher risk set of permissions.
+  - **New apps**: New Microsoft 365 apps that have been registered in the last 7 days.  
 
 ## Next step
 

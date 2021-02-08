@@ -24,15 +24,16 @@ description: "Learn about visibility and insights."
 >REVIEWERS: This content is in progress and not ready for review.
 >
 
-ADD: Overview of visibility and insights capabilities and value
+With MAPG, you can quickly gain visibility into and  meaningful insights on your Microsoft 365 application ecosystem. You start from the MAPG dashboard that provides a high-level summary of the apps in your tenant and from there you can efficiently navigate to top tasks.
 
-With MAPG insights, you can see 
+With MAPG visibility and insights, you can see 
 
 - A view of all the Microsoft 365 apps in your tenant in a single dashboard. 
-- All the apps’ activities and react or respond to them.
+- All the apps’ activities so that you can react or respond to them.
 
-You can quickly gain meaningful insights on your Microsoft 365 application ecosystem and efficiently navigate to top tasks.
-
+>[!Note]
+>Azure-only apps that are not granted permissions to access Microsoft 365 resources are not displayed in MAPG.
+>
 Here's a quick review of required administrator roles for visibility and insights.
 
 | Role | Read the dashboard | Read all apps |
@@ -46,7 +47,23 @@ Here's a quick review of required administrator roles for visibility and insight
 | Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
 ||||
 
-You can see:
+<!--
+From messaging doc, page 21:
+
+View M365 App List & Metadata
+View M365 App List of Consented Users
+View M365 App Permissions
+View M365 App Permission Usage
+View Over permissioned Apps
+Aggregate M365 API Usage Data by Workload (count, download/upload)
+Per-App M365 API Usage Data by Workload (count, download/upload)
+Per-User M365 API Usage Data by Workload (count, download/upload)
+M365 API Usage Data For High-Value/Classified Assets (count, download/upload)
+M365 API Error Analysis per App
+
+--> 
+
+With MAPG, you can see:
 
 - A dashboard of all insights.
 - Network insights of single and all apps with workload and user level insights.
@@ -57,7 +74,6 @@ You can see:
 
   - High-privileged apps.
   - Overprivileged apps.
-  - Unused apps.
   - High-usage apps.
   - Users whose data a specific app can access.
   - HVE users who data a specific app can access.
@@ -74,8 +90,8 @@ You can see:
 You can also:
 
 - Customize the dashboard to select the insights they want to view.
-- Have a ‘drill-down’ view of a single app (app page) with all associated insights.
-- Have a ‘drill-down’ view for users.
+- Drill down to a single app (app page) with all associated insights.
+- Drill-down into users.
 
 ## Next step
 

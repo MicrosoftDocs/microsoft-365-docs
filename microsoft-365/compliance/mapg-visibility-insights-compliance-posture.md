@@ -20,7 +20,34 @@ description: "Determine your app compliance posture."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Content TBD.
+Microsoft Application Protection and Governance (MAPG) allows you to quickly assess the compliance posture of the apps in your Microsoft 365 tenant and their access to data in your Microsoft 365 tenant from the MAPG Overview page in the [https://compliance.microsoft.com/m365appprotection](Microsoft 365 Compliance Center). 
 
-Describe summarizing the compilance of M365 apps with MAPG in the larger compliance posture of an M365 tenant
+\[Placeholder for MAPG Overview page screenshot]
+
+From this page, you can see:
+
+- For apps:
+
+  - How many are in your tenant.
+  - How many might be overpermissioned.
+  - How many are high privilege.
+
+  From this information, you can determine the level of risk to your organization by overpermissioned and high privilege apps.
+
+- For alerts:
+
+  - How many alerts your tenant has.
+  - How many are based on MAPG detections.
+  - How many are based on app policies you have in place.
+  - The ten latest alerts.
+
+  From this information, you can determine how quickly alerts are being generated and the relative number of automated and policy-based detections.
+
+
+- For data and resource access:
+
+  - The application API data access over the last 90 days
+  - The usage of the top resources
+
+  From this information, you can determine if there are anomalous spikes in access to the data in your Microsoft 365 tenant.
 
