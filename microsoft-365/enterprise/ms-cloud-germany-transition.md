@@ -286,7 +286,7 @@ No, there is no tenant merge capability. Tenants will remain separate and unique
 ### What actions are required to be done by most end users as part of the migration?
 The migration is designed to have minimal impact to end users/customers.
 •	Ensure that Office applications are running latest available versions. 
-•	Customers using Skype for Business will transition to Teams as part of the migration and may need to [download and install Teams] (https://docs.microsoft.com/en-us/deployoffice/teams-install) on devices.
+•	Customers using Skype for Business will transition to Teams as part of the migration and may need to [download and install Teams] (https://docs.microsoft.com/deployoffice/teams-install) on devices.
 •	End users may need to log out of the Office applications and log back in once the migration is complete. 
 •	Customers running the OneDrive Sync client need to log out of their workstation and log in again to allow OneDrive Sync client to log in to the global Azure Active Directory service.
 •	Be aware of new global URLs once migration is complete, notably Outlook Web Access (example: use outlook.office365.com). SharePoint Online clients will continue to successfully connect to the MCD namespace using the existing URL (example: contoso.sharepoint.de).
