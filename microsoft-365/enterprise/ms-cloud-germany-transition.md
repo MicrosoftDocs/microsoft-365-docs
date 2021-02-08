@@ -302,7 +302,7 @@ All customers of Office365 depend on Azure Active Directory to authenticate and 
 The initial migration of Azure Active Directory in the early phase has no impact to the customer experience. After the final migration stage all services for the customer tenant are fully in the global service. After this final stage the Azure Active Directory service in Microsoft Cloud Deutschland may no longer accept authorization requests or provide access tokens to Office services.
 
 
-### What does it mean to ensure network connectivity to [Office 365 services URLs and IP addresses] (https://aka.ms/o365urls)?
+### What does it mean to ensure network connectivity to [Office 365 services URLs and IP addresses](https://aka.ms/o365urls)?
 
 This article describes the necessary URLs and IP addresses required for proper function of the global service to ensure a good customer experience. In relatively rare cases, some customers attempt to configure network perimeter security in such a way to minimize traffic flows and have restricted access to services to those only as part of the Microsoft Cloud Deutschland service IP ranges.
 
