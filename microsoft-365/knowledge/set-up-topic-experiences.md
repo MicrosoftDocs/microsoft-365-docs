@@ -126,7 +126,7 @@ To assign licenses:
 
 2. Select the users that you want to license, and click **Licenses and apps**.
 
-3. Under **Apps**, make sure **Graph Connectors Search with Index** and **Viva Topics** are both selected.
+3. Under **Apps**, make sure **Graph Connectors Search with Index** and **Topic Experiences** are both selected.
 
 4. Click **Save changes**.
 
