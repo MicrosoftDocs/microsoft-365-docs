@@ -53,7 +53,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ProcessId` | int | Process ID (PID) of the newly created process |
 | `ProcessCommandLine` | string | Command line used to create the new process |
 | `ProcessIntegrityLevel` | string | Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources |
-| `ProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the newly created process |
+| `ProcessTokenElevation` | string | Indicates the type of token elevation applied to the newly created process. Possible values: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (standard), and TokenElevationTypeFull (elevated) |
 | `ProcessCreationTime` | datetime | Date and time the process was created |
 | `AccountDomain` | string | Domain of the account |
 | `AccountName` | string | User name of the account |
