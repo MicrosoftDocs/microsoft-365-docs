@@ -51,6 +51,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileOriginUrl` | string | URL where the file was downloaded from |
 | `FileOriginReferrerUrl` | string | URL of the web page that links to the downloaded file |
 | `FileOriginIP` | string | IP address where the file was downloaded from |
+| `PreviousFolderPath` | string | Original folder containing the file before the recorded action was applied |
+| `PreviousFileName` | string | Original name of the file that was renamed as a result of the action |
 | `FileSize` | long | Size of the file in bytes |
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
