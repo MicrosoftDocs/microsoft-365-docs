@@ -47,19 +47,15 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 2. Select **Microsoft 365 Defender**.
 
-
 3. Select **Preview features** > **Turn on preview features**. 
 
-3. Select **Save**.
+4. Select **Save**.
 
 You'll know you have preview features turned on when you see that the **Turn on preview features** check box is selected. 
 
 ## Preview features
 The following features and enhancements are currently available on preview:
 
-- **[Microsoft 365 Defender APIs](api-overview.md)** - The lop-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables. 
-- **[Take action in advanced hunting](advanced-hunting-take-action.md)**—Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
-- **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—Get information about advanced hunting schema tables directly in the security center. In addition to table and column descriptions, this reference includes supported event types (`ActionType` values) and sample queries.
-- **[DeviceFromIP() function](advanced-hunting-devicefromip-function.md)**—Get information about which devices have been assigned a specific IP address or addresses at a given time range.
-
+### Improved Microsoft 365 security center
+The improved [Microsoft 365 security center](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into the Microsoft 365 security center. This is the new home to manage your security controls. [Learn what's new](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
 
