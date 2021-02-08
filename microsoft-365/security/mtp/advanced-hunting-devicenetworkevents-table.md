@@ -57,6 +57,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
 | `InitiatingProcessCommandLine` | string | Command line used to run the process that initiated the event |
 | `InitiatingProcessCreationTime` | datetime | Date and time when the process that initiated the event was started |
@@ -73,7 +74,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | string | Additional information about the event in JSON array format |
-| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
