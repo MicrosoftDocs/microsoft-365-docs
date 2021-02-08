@@ -30,7 +30,9 @@ Managing policies process:
 
 Create > test > monitor alerts > adjust > back to test
 
-## Editing a policy configuration
+## Editing an app policy configuration
+
+
 
 ## Deleting a policy
 

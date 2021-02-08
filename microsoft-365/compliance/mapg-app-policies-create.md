@@ -26,11 +26,11 @@ description: "Create app policies."
 
 You can create app policies from built-in templates that can be customized or you can create a custom app policy.
 
-To create a new app policy, go to **M365 Compliance Center > App protection & governance > Overview page > Policies > Create New**. From here, you can create a new app policy based on a set of policy templates or a custom app policy.
+To create a new app policy, go to **M365 Compliance Center > App protection & governance > Overview page > Policies > Create New**.
 
 ## App policy templates
 
-To create a new app policy based on an app policy template, on the **Choose App policy template page**, select a category or app template, the name of the template, and then click **Next**.
+To create a new app policy based on an app policy template, on the **Choose App policy template page**, select a category of app template, the name of the template, and then click **Next**.
 
 MAPG has three categories of built-in app policy templates.
 
@@ -73,45 +73,33 @@ Use a custom app policy when you need to do something not already done by one of
 To create a new app policy based on an app policy template, on the **Choose App policy template page**, select the **Custom** category, the **Custom policy** template, and then click **Next**.
 
 
-### **Name and description** page
+On the **Name and description** page, configure the following:
 
-Policy Name
+- Policy Name
 
-Policy Description
+- Policy Description
 
-Choose Policy severity (tied to alert?)
+- Choose Policy severity (tied to alert?)
 
-- High
-- Medium
-- Low
+  - High
+  - Medium
+  - Low
 
-Click **Next**.
+On the **Choose Policy settings and conditions** page, configure the following:
 
-### **Choose Policy settings and conditions** page
-
-For Choose which apps this policy is applicable for:
+For Choose which apps this policy is applicable for, select:
 
 - All Apps
 - Choose specific apps
 
-  Flyout pane allows you to select one or more apps.
-  Click Add.
+  A pane allows you to select one or more apps.
+  Click **Add**.
 
 Click **Next**.
 
-### **Choose Policy settings and conditions** page
+On the **Choose Policy settings and conditions** page, select **Set new conditions for policy**, and then click **Next**.
 
-Choose policy conditions for selected apps:
-
-Use default behavior of policy (unavailable)
-
-Select **Set new conditions for policy**, and then click **Next**.
-
-**Create rule** flyout pane allows you to select conditions for a new rule.
-
-Click **Add condition**
-
-Select from the list of conditions, and then specify the valuse of the condition.
+The **Create rule** pane allows you to select conditions for a new rule. Click **Add condition** and select from the list of conditions, and then specify the value of the condition. You can add multiple conditions.
 
 Here are the available conditions for a custom app policy.
 
@@ -141,77 +129,18 @@ Here are the available conditions for a custom app policy.
 
 All of the specified conditions must be met for this app policy to apply.
 
+When you are done specifying the conditions, select **Save**, and then select **Next**.
 
-Click **Save**.
+On the **Define Policy Actions** page, select **Disable app**, and then click **Next**.
 
-Click **Next**.
+On the **Define Policy Status** page, select one of these options:
 
-
-
-### **Define Policy Actions** page
-
-
-Disable app is the only option.
-
-Click **Next**.
-
-### **Define Policy Status** page
+- **Audit mode**: Policies will be evaluated but the configured actions will not occur.
+- **Active**: Policies will be evaluated and configured actions will occur.
+- **Inactive**: Policies will not be evaluated and the configured actions will not occur.
 
 
-
-- Audit mode: Policies will be evaluated but the configured actions will not occur.
-- Active: Policies will be evaluated and configured actions will occur.
-- Inactive: Policies will not be evaluated and the configured actions will not occur.
-
-
-
-
-
-
-## Using custom app policies
-
-Conditions
-
-Auto-remediation
-
-
-## Policy settings
-
-**Name and description**
-
-Policy Name
-
-Policy Description
-
-Choose Policy severity
-
-**Choose Policy settings and conditions**
-
-Choose which apps:
-
-All Apps
-
-Choose specific apps
-
-**Choose Policy settings and conditions**
-
-Choose policy conditions for selected apps
-
-- Use default behavior of policy
-- Set new conditions for policy
-
-
-**Define Policy Actions**
-
-Disable app
-
-
-**Define Policy Status**
-
-
-
-
-
+<!--
 ## Configure a user-based policy
 
 ## Ceate an app metadata-based policy
@@ -219,6 +148,15 @@ Disable app
 Publish metadata-based policies
 
 ## Configure access permissions
+--> 
+
+## Test and monitor your new app policy
+
+Now that your app policy is created, you should monitor it in the **Policies** page to ensure it is registering an expected number of active alerts and total alerts during testing. 
+
+\[Placeholder: Screenshot of Policies page with policy and alerts info highlighted]
+
+If the number of alerts is an unexpectedly low value, edit the settings of the app policy to ensure you've configured it correctly.
 
 
 ## Next step
