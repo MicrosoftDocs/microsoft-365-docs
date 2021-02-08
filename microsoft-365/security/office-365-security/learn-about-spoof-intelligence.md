@@ -1,24 +1,26 @@
 ---
-title: "Configure spoof intelligence"
-f1.keywords:
-- NOCSH
+title: Configure spoof intelligence
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: 
+  - MOE150
+  - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about spoof intelligence in Exchange Online Protection (EOP), where you can allow or block specific spoofed senders."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about spoof intelligence in Exchange Online Protection (EOP), where you can allow or block specific spoofed senders.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure spoof intelligence in EOP
@@ -102,7 +104,7 @@ You can manage spoof intelligence in the Security & Compliance Center, or in Pow
 
      - On the **External Domains** tab, the value contains the domain of the spoofed user, not the full email address.
 
-   - **Sending Infrastructure**: The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address, or the IP address if the source has no PTR record.
+   - **Sending Infrastructure**: The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address. If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
 
      For more information about message sources and message senders, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
@@ -111,22 +113,18 @@ You can manage spoof intelligence in the Security & Compliance Center, or in Pow
    - **# of user complaints**: Complaints filed by your users against this sender within the last 30 days. Complaints are usually in the form of junk submissions to Microsoft.
 
    - **Authentication result**: One of the following values:
-
       - **Passed**: The sender passed sender email authentication checks (SPF or DKIM).
       - **Failed**: The sender failed EOP sender authentication checks.
       - **Unknown**: The result of these checks isn't known.
 
    - **Decision set by**: Shows who determined if the sending infrastructure is allowed to spoof the user:
-
        - **Spoof intelligence policy** (automatic)
        - **Admin** (manual)
 
    - **Last seen**: The last date when a message was received from the sending infrastructure that contains the spoofed user.
 
    - **Allowed to spoof?**: The values that you see here are:
-
      - **Yes**: Messages from the combination of spoofed user and sending infrastructure are allowed and not treated as spoofed email.
-
      - **No**: Messages from the combination of spoofed user and sending infrastructure are marked as spoofed. The action is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). See the next section for more information.
 
      - **Some users** (**Your Domains** tab only): A sending infrastructure is spoofing multiple users, where some spoofed users are allowed and others are not. Use the **Detailed** tab to see the specific addresses.
@@ -210,7 +208,7 @@ To verify that you've configured spoof intelligence with senders who are allowed
 - In Exchange Online PowerShell, replace \<Name\> with Office365 AntiPhish Default or the name of a custom policy, and run the following command to verify the settings:
 
   ```PowerShell
-  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableSpoofIntelligence,EnableUnauthenticatedSender,AuthenticationFailAction
   ```
 
 ## Other ways to manage spoofing and phishing

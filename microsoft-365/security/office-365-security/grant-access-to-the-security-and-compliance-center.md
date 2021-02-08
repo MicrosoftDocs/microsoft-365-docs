@@ -1,24 +1,26 @@
 ---
-title: "Give users access to the Security & Compliance Center"
-f1.keywords:
-- NOCSH
+title: Give users access to the Security & Compliance Center
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: how-to
-f1_keywords:
-- 'ms.o365.cc.PermissionsHelp'
-ms.service: O365-seccomp
+f1_keywords: 
+  - 'ms.o365.cc.PermissionsHelp'
+
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: 
+  - MOE150
+  - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: "Users need to be assigned permissions in the Microsoft 365 Security & Compliance Center before they can manage any of its security or compliance features."
+description: Users need to be assigned permissions in the Microsoft 365 Security & Compliance Center before they can manage any of its security or compliance features.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Give users access to the Security & Compliance Center
@@ -80,7 +82,7 @@ For detailed syntax and parameter issues, see [Add-RoleGroupMember](https://docs
 
 To verify that you've successfully granted access to the Security & Compliance Center, do either of the following steps:
 
-- In the Security & Compliance Center, go to **Permissions** and select the role group. In the details flyout that opens, verify the members of the role group. 
+- In the Security & Compliance Center, go to **Permissions** and select the role group. In the details flyout that opens, verify the members of the role group.
 
 - In Security & Compliance Center PowerShell, replace \<RoleGroupName\> with the name of the role group, and run the following command:
 

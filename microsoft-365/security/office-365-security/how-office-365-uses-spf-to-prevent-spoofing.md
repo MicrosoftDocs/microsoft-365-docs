@@ -1,23 +1,25 @@
 ---
 title: How Sender Policy Framework (SPF) prevents spoofing
-f1.keywords:
-- CSH
+f1.keywords: 
+  - CSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 ms.date: 12/15/2016
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Learn how Microsoft 365 uses the Sender Policy Framework (SPF) TXT record in DNS to ensure that destination email systems trust messages sent from your custom domain."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Learn how Microsoft 365 uses the Sender Policy Framework (SPF) TXT record in DNS to ensure that destination email systems trust messages sent from your custom domain.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing

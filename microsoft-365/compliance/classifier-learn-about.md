@@ -1,5 +1,5 @@
 ---
-title: "Learn about trainable classifiers (preview)"
+title: "Learn about trainable classifiers"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,7 +20,7 @@ search.appverid:
 description: "A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it positive and negative samples to look at. Once the classifier is trained, you confirm that its results are accurate. Then you use it to search through your organization's content and classify it to apply retention or sensitivity labels or include it in data loss prevention (DLP) or retention policies."
 ---
 
-# Learn about classifiers (preview)
+# Learn about trainable classifiers
 
 Classifying and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content.
 
@@ -98,7 +98,7 @@ Microsoft 365 comes with five pre-trained classifiers:
 - **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people
 - **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
 
-These appear in the **Microsoft 365 compliance center** > **Data classification (preview)** > **Trainable classifiers** view with the status of `Ready to use`.
+These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 
 ![classifiers-pre-trained-classifiers](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -107,7 +107,14 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 ### Custom classifiers
 
-When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs.
+When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. 
+
+For example you could create trainable classifiers for:
+ 
+- Legal documents - such as attorney client privilege, closing sets, statement of work
+- Strategic business documents - like press releases, merger and acquisition, deals, business or marketing plans, intellectual property, patents, design docs
+- Pricing information - like invoices, price quotes, work orders, bidding documents 
+- Financial information - such as organizational investments, quarterly or annual results    
 
 #### Process flow for creating custom classifiers
 

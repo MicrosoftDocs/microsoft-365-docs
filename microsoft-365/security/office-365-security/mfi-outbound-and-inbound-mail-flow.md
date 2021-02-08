@@ -1,17 +1,19 @@
 ---
-title: "Outbound and inbound mail flow insight in the Mail flow dashboard"
-f1.keywords:
-- NOCSH
+title: Outbound and inbound mail flow insight in the Mail flow dashboard
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: "Admins can learn about the Outbound and inbound mail flow insight in the Mail flow dashboard in the Security & Compliance Center."
+description: Admins can learn about the Outbound and inbound mail flow insight in the Mail flow dashboard in the Security & Compliance Center.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Outbound and inbound mail flow insight in the Security & Compliance Center

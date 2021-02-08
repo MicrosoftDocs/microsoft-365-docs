@@ -1,29 +1,34 @@
 ---
-title: "Troubleshooting mail sent to Microsoft 365"
-f1.keywords:
-- NOCSH
+title: Troubleshooting mail sent to Microsoft 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "This article provides troubleshooting information for issues with sending email to inboxes in Microsoft 365 & best practices for bulk mailing to Microsoft 365 customers."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: This article provides troubleshooting information for issues with sending email to inboxes in Microsoft 365 & best practices for bulk mailing to Microsoft 365 customers.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Troubleshooting mail sent to Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Microsoft 365 and best practices for bulk mailing to customers.
 
@@ -87,11 +92,11 @@ The Subject should be a brief summary of what the message is about, and the mess
 
 Correct:
 
-> From: marketing@shoppershandbag.com <br/> Subject: Updated catalog for the Christmas season!
+> From: marketing@shoppershandbag.com <br> Subject: Updated catalog for the Christmas season!
 
 Incorrect:
 
-> From: someone@outlook.com <br/> Subject: Catalogs
+> From: someone@outlook.com <br> Subject: Catalogs
 
 The easier you make it for people to know who you are and what you are doing, the less difficulty you will have delivering through most spam filters.
 
@@ -123,7 +128,7 @@ Just as important as the way the emails are sent is the content they contain. Wh
 
 - Redirects included in the body of the message should be similar and consistent, and not multiple and varied. A redirect in this context is anything that points away from the message, such as links and documents. If you have a lot of advertising or Unsubscribe links or Update the Profile links, they should all point to the same domain. For example:
 
-  Correct:
+  Correct (all domains are the same):
 
   `unsubscribe.bulkmailer.com`
 
@@ -131,7 +136,7 @@ Just as important as the way the emails are sent is the content they contain. Wh
 
   `options.bulkmailer.com`
 
-  Incorrect:
+  Incorrect (all domains are different):
 
   `unsubscribe.bulkmailer.com`
 

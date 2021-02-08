@@ -80,7 +80,7 @@ A standard retention label has retention settings and actions but doesn't mark c
 |Delete|Allowed <sup>1</sup> |**Blocked** |**Blocked**| **Blocked**|
 |Copy|Allowed |Allowed | Allowed| Allowed|
 |Move within container <sup>2</sup>|Allowed |Allowed | Allowed| Allowed|
-|Move across containers <sup>2</sup>|Allowed |Allowed if never unlocked | Allowed| **Blocked**|
+|Move across containers <sup>2</sup>|Allowed |Allowed if never unlocked | **Blocked** | **Blocked**|
 |Open/Read|Allowed |Allowed | Allowed| Allowed|
 |Change label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
 |Remove label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
@@ -100,13 +100,15 @@ Containers include SharePoint document libraries and Exchange mailboxes.
 >[!IMPORTANT] 
 > The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label. 
 >
-> In addition, retention labels configured for regulatory records have the following admin restrictions:
+> Retention labels configured for regulatory records also have the following admin restrictions:
 > - The retention period can't be made shorter after the label is saved, only extended.
 > - These labels aren't supported by auto-labeling policies, and must be applied by using [retention label policies](create-apply-retention-labels.md). 
+>
+> In addition, a regulatory label can't be applied to a document that's checked out in SharePoint.
 > 
-> Because of these irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
+> Because of the restrictions and irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 
-## Next steps
+## Configuration guidance
 
 See [Get started with records management](get-started-with-records-management.md).
 

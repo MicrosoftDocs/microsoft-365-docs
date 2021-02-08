@@ -137,7 +137,7 @@ To get started with records management, see [Get started with records management
 
 ### Identify and define sensitive information types
 
-Define sensitive information types based on the pattern contained in information in your organization’s data. Use [built-in sensitive information types](what-the-sensitive-information-types-look-for.md) help identify and protect credit card numbers, bank account numbers, passport numbers, and more. Or create your own [custom sensitivity information types](custom-sensitive-info-types.md) specific to your organization.
+Define sensitive information types based on the pattern contained in information in your organization’s data. Use [built-in sensitive information types](what-the-sensitive-information-types-look-for.md) help identify and protect credit card numbers, bank account numbers, passport numbers, and more. Or create your own [custom sensitivity information types](create-a-custom-sensitive-information-type.md) specific to your organization.
 
 For step-by-step guidance to define custom sensitive information types, see [Create a custom sensitive information type in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type).
 

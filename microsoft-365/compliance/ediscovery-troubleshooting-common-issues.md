@@ -53,8 +53,7 @@ Check for duplicate users or distribution list with the same user ID.
 
 ## Error/issue: Search fails on specific locations
 
-An eDiscovery or content search may yield the following error:
->This search completed with (#) errors.  Would you like to retry the search on the failed locations?
+An eDiscovery or content search may yield the following error: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![Search-specific location fails error screenshot](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -191,6 +190,30 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
 4. Contact Microsoft Support.
 
-## See Also
+## Error: "The condition specified using HTTP conditional header(s) is not met"
 
-- [Tips to avoid content location errors](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
+When downloading search results using the eDiscovery Export Tool, it's possible you might receive the following error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` This is transient error, which typically occurs in the Azure Storage location.
+
+### Resolution
+
+To resolve this issue, retry [downloading the search results](export-search-results.md#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
+
+## Error/issue: Downloaded export shows no results
+
+After a successful export, the completed download via the export tool shows zero files in the results.
+
+### Resolution
+
+This is a client-side issue and in order to remediate it, please attempt the following steps:
+
+1. Try using another client/machine to download.
+
+2. Make sure to download to a local drive.
+
+3. Make sure the virus scanner is not running.
+
+4. Make sure that no other export is downloading to the same folder or any parent folder.
+
+5. If the previous steps did not work, disable zipping and de-duplication.
+
+6. If this works then the issue is due to a local virus scanner or a disk issue.
