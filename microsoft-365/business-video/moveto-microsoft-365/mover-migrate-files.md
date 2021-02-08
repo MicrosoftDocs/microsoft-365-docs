@@ -34,7 +34,7 @@ When you move to Microsoft 365 for business, you'll want to migrate your files f
 
 ## Before you start
 
-All the users should have signed in to Microsoft 365 for business and set up their OneDrive for Business. To do this, go to [office.com](https://office.com), sign in with you Microsoft 365 for business credentials, and then choose OneDrive.
+All the users should have signed in to Microsoft 365 for business and set up their OneDrive for Business. To do this, go to [office.com](https://office.com), sign in with your Microsoft 365 for business credentials, and then choose OneDrive.
 
 ## Try it!
 
