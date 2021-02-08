@@ -25,6 +25,8 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
           href: ./office-365-security/sharepoint-file-access-policies.md
+    - name: Microsoft 365 security center
+      href: mtp/overview-security-center.md  
     - name: Microsoft Secure Score
       items: 
         - name: Secure Score overview
@@ -45,10 +47,14 @@
               href: mtp/microsoft-threat-protection.md
             - name: What's new in Microsoft 365 Defender
               href: mtp/whats-new.md
+            - name: Defender for Endpoint in the Microsoft 365 security center
+              href: mtp/microsoft-365-security-center-mde.md
+            - name: Defender for Office 365 in the Microsoft 365 security center
+              href: mtp/microsoft-365-security-center-mdo.md  
+            - name: Redirecting Defender for Endpoint to Microsoft 365 security center
+              href: mtp/microsoft-365-security-mde-redirection.md 
             - name: Preview features
               href: mtp/preview.md
-            - name: Microsoft 365 security center
-              href: mtp/overview-security-center.md
             - name: Troubleshoot issues
               href: ./mtp/troubleshoot.md
             - name: Industry tests
@@ -63,22 +69,18 @@
               href: mtp/portals.md
         - name: Evaluate capabilities
           items: 
-            - name: Trial lab overview
-              href: mtp/mtp-evaluation.md
-            - name: Prepare
-              href: mtp/prepare-mtpeval.md
-            - name: Setup
-              href: mtp/setup-mtpeval.md
-            - name: Configure and onboard
-              href: mtp/config-mtpeval.md
-            - name: Start the Microsoft 365 Defender service
-              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
-            - name: Generate a test alert
-              href: mtp/generate-test-alert.md
-        - name: Deploy
-          items:
-            - name: Turn on Microsoft Threat Protection
-              href: mtp/mtp-enable.md
+            - name: Create a trial lab
+              items:
+                - name: Trial lab overview
+                  href: mtp/mtp-evaluation.md
+                - name: Prepare
+                  href: mtp/prepare-mtpeval.md
+                - name: Setup
+                  href: mtp/setup-mtpeval.md
+                - name: Configure Microsoft 365 Defender pillars and onboard
+                  href: mtp/config-mtpeval.md
+                - name: Generate a test alert
+                  href: mtp/generate-test-alert.md                       
             - name: Run your pilot project in production
               items: 
                 - name: Pilot overview
@@ -90,20 +92,31 @@
                 - name: Simulate attack
                   href: mtp/mtp-pilot-simulate.md
                 - name: Close and summarize
-                  href: mtp/mtp-pilot-close.md
+                  href: mtp/mtp-pilot-close.md                           
+        - name: Get started
+          items:
+            - name: Overview
+              href: mtp/get-started.md
+            - name: Turn on Microsoft Threat Protection
+              href: mtp/mtp-enable.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
-            
+            - name: Turn on FAQ
+              href: mtp/mtp-enable-faq.md              
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
               href: mtp/mtp-evaluation.md
             - name: Run pilot playbook
               href: mtp/mtp-pilot.md
-
-
             - name: Turn on FAQ
               href: mtp/mtp-enable-faq.md
+            - name: Threat analytics
+              items:  
+                - name: Threat analytics overview
+                  href: mtp/threat-analytics.md
+                - name: Read the analyst report
+                  href: mtp/threat-analytics-analyst-reports.md
             - name: Incidents
               items: 
                 - name: Overview
@@ -116,6 +129,10 @@
                       href: mtp/investigate-incidents.md
                     - name: Manage incidents
                       href: mtp/manage-incidents.md
+                    - name: Investigate alerts
+                      href: mtp/investigate-alerts.md    
+                    - name: Investigate users in Microsoft 365 security center 
+                      href: mtp/investigate-users.md                  
                 - name: Get email notifications
                   href: mtp/get-incident-notifications.md
             - name: Automated investigation and response
@@ -250,6 +267,8 @@
               items: 
                 - name: Manage access
                   href: mtp/mtp-permissions.md
+                - name: Custom roles in role-based access 
+                  href: mtp/custom-roles.md
                 - name: Set time zone
                   href: mtp/mtp-time-zone.md
                 - name: View device profiles
@@ -305,6 +324,8 @@
           items:
             - name: Security roadmap
               href: ./office-365-security/security-roadmap.md
+            - name: Defender for Office 365 in the Microsoft 365 security center
+              href: mtp/microsoft-365-security-center-mdo.md 
             - name: Exchange Online Protection
               items: 
                 - name: Exchange Online Protection overview
@@ -331,7 +352,7 @@
               href: office-365-security/whats-new-in-office-365-atp.md
             - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
-            - name: New Microsoft 365 security center
+            - name: Microsoft 365 security center overview
               href: ./mtp/overview-security-center.md
             - name: Threat Explorer (and real-time detections)
               href: ./office-365-security/threat-explorer.md
