@@ -81,7 +81,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 | Health  |  Currently links out to the "Service health" page in the [Microsoft 365 admin center](https://admin.microsoft.com/). |
 | Settings |  Manage your settings for the Microsoft 365 security center, Microsoft 365 Defender, Endpoints, Email & collaboration, Identities, and Device discovery.   |
 
-## Microsoft 365 security navigation description
+## Microsoft 365 security navigation and capabilities
 
 The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
 
@@ -100,8 +100,6 @@ Proactively search for threats, malware, and malicious activity across your endp
 
 [Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
 
-> [!NOTE]
-> If you use custom detection rules in Microsoft Defender for Endpoint, these rules are automatically moved to Microsoft 365 Defender. Modified custom detection rules created in Microsoft Defender for Endpoint can include identity and email tables. The corresponding alerts will also appear in Microsoft 365 Defender. For more information, see [Migrate custom detection rules](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp). The **DeviceAlertEvents** table for advanced hunting is not available in Microsoft 365 Defender. To query device-specific alert information in Microsoft 365 Defender, you can use the **AlertInfo** and **AlertEvidence** tables which can accommodate even more information from a diverse set of sources. Craft your next device-related query by using the following article: [Write queries without **DeviceAlertEvents**](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp).
 
 ### Action center
 

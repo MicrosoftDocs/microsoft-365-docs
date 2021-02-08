@@ -72,12 +72,10 @@ Permissions and roles can also be managed in the Microsoft 365 security center:
 ## Required roles and permissions
 The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
 
-Users don't need to have all of the roles listed below, only one of the roles is necessary to get the appropriate permissions for the unified experiences. 
-
 > [!NOTE]
 > Incident management requires management permissions for all products that are part of the incident.
  
-| **Microsoft 365 Defender**  | **Required Defender for Endpoint permissions**  | **Required Defender for Office 365 roles** | **Required Cloud App Security roles** | 
+| **One of the following roles are required for Microsoft 365 Defender**  | **One of the following roles are required for Defender for Endpoint**  | **One of the following roles are required for Defender for Office 365** | **One of the following roles are required for Cloud App Security** | 
 |---------|---------|---------|---------|
 | Viewing investigation data: <ul><li>Alert page</li> <li>Alerts queue</li> <li>Incidents</li>  <li>Incident queue</li> <li>Action center</li></ul>| View data- security operations | <ul><li>View-only Manage alerts </li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li> <li>Security reader</li> <li>Security admin</li><li>View-only recipients</li></ul>  | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul> |
 | Viewing hunting data | View data- security operations | <ul><li>Security reader</li> <li>Security admin</li> <li>View-only recipients</li> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul> |
