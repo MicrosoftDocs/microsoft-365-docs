@@ -154,6 +154,8 @@ During the preview, you must use a specific URL to access this setting in the Mi
     
     ![Option to turn on co-authoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
+3. Wait 24 hours for this setting to replicate across your environment before you test this new feature for co-authoring, or opening or saving labeled Office documents that are unencrypted.
+
 ## Contact Support if you need to disable this feature
 
 > [!CAUTION]
