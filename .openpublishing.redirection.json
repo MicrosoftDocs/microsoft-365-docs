@@ -11,6 +11,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/commerce/billing-and-payments/e-invoice-of-your-subscription-in-taiwan.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/view-your-bill-or-invoice",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/manage-payment-methods",
       "redirect_document_id": false
@@ -31,7 +36,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/commerce/billing-and-payments/top-billing-questions",
+      "source_path": "microsoft-365/commerce/billing-and-payments/top-billing-questions.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/index",
       "redirect_document_id": true
     },
