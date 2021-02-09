@@ -82,7 +82,7 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 ## Teams chat or calls for guest users and external users
 
-All Teams chats and calls are stored as compliance records in the Guest users shadow mailbox. However, Federated users in a call or chat would retain the compliance records in their own tenant.
+All Teams chats and calls are stored as compliance records in the guest user's shadow mailbox. However, federated users in a call or chat would retain the compliance records in their own tenant.
 
 ### Content paths for retain-only retention policy
 
