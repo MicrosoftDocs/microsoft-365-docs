@@ -27,6 +27,10 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
  **Summary:** This article describes how you use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure that destination email systems trust messages sent outbound from your custom domain.
 
@@ -347,6 +351,7 @@ For example, the DKIM record would look like this:
 ```console
 *._domainkey.SubDomainThatShouldntSendMail.contoso.com. TXT "v=DKIM1; p="
 ```
+`
 
 ## Next steps: After you set up DKIM for Microsoft 365
 <a name="DKIMNextSteps"> </a>

@@ -29,7 +29,7 @@ Security and privacy of your data is respected, and topic experiences does not g
 
 ## Requirements
 
-You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
+You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
 
 All users who are going to use Topics require a **Topic Experiences** license. Assigning licenses is covered in [Set up Microsoft Viva Topics](set-up-topic-experiences.md).
 
