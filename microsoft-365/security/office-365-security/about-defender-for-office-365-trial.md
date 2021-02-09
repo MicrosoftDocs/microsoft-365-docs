@@ -36,7 +36,7 @@ A Microsoft Defender for Office 365 trial is the easiest way to try the capabili
 
 ## Terms and conditions
 
-The Defender for Office 365 trial is available for 90 days and can initiated for all of your users. For more information, see [Terms of use for the Microsoft Defender for Office 365 trial](terms-of-use-defender-for-office-365-trial.md).
+The Defender for Office 365 trial is available for 90 days and can initiated for all of your users. For more information, see [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
 
 ## Set up a Defender for Office 365 trial
 
