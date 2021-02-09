@@ -43,7 +43,7 @@ Microsoft Defender for Office 365 includes remediation actions to address variou
 |Category|Threat/risk|Remediation action(s)|
 |:---|:---|:---|
 |Email|Malware|Soft delete email/cluster​ <p> If more than a handful of email messages in a cluster contain malware, the cluster is considered to be malicious.​|
-|Email|Malicious URL​<br/>(A malicious URL was detected by [Safe Links](atp-safe-links.md).)|Soft delete email/cluster​ <p>Block URL (time-of-click)<p> Email that contains a malicious URL is considered to be malicious​.|
+|Email|Malicious URL​<br/>(A malicious URL was detected by [Safe Links](atp-safe-links.md).)|Soft delete email/cluster​ <br/>Block URL (time-of-click)<p> Email that contains a malicious URL is considered to be malicious​.|
 |Email|Phish|Soft delete email/cluster​ <p> If more than a handful of email messages in a cluster contain phishing attempts, the whole cluster is considered a phishing attempt.​|
 |Email|Zapped phish​ <br>(Email messages were delivered and then [zapped​](zero-hour-auto-purge.md).)|Soft delete email/cluster​ <p>Reports are available to view zapped messages. [See if ZAP moved a message and FAQs](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message).|
 |Email|Missed phish email [reported](enable-the-report-message-add-in.md) by a user|[Automated investigation triggered by the user's report](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
