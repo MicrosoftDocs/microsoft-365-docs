@@ -24,7 +24,7 @@ description: "Learn about visibility and insights."
 >REVIEWERS: This content is in progress and not ready for review.
 >
 
-With MAPG, you can quickly gain visibility into and  meaningful insights on your Microsoft 365 application ecosystem. You start from the MAPG dashboard that provides a high-level summary of the apps in your tenant and from there you can efficiently navigate to top tasks.
+With Microsoft Application Protection and Governance (MAPG), you can quickly gain visibility into and meaningful insights on your Microsoft 365 application ecosystem. You start from the MAPG dashboard that provides a high-level summary of the apps in your tenant and from there you can efficiently navigate to top tasks.
 
 With MAPG visibility and insights, you can see 
 
