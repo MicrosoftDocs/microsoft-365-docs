@@ -1,5 +1,5 @@
 ---
-title: Remediation actions following automated investigation in Microsoft Defender for Office 365
+title: Remediation actions in Microsoft Defender for Office 365
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
 - NOCSH
@@ -24,6 +24,12 @@ ms.prod: m365-security
 ---
 
 # Remediation actions in Microsoft Defender for Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Remediation actions
 
