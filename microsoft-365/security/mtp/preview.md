@@ -45,7 +45,6 @@ Accounts assigned the following Azure Active Directory (Azure AD) roles can turn
 - Global administrator
 - Security administrator
 - Security Operator
-- Global Reader
 
 ## Turn on preview features
 You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.
