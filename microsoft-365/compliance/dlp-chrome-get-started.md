@@ -23,13 +23,22 @@ description: "Prepare for and deploy the Google Chrome extension for endpoint da
 
 # Get started with the Google Chrome extension for endpoint data loss prevention (preview)
 
-[Endpoint data loss prevention](endpoint-dlp-learn-about.md) (Endpoint DLP) extends the activity monitoring and protection capabilities of data loss prevention (DLP) to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
+[Endpoint data loss prevention](endpoint-dlp-learn-about.md) (Endpoint DLP) extends the activity monitoring and protection capabilities of data loss prevention (DLP) to sensitive items that are on Windows 10 devices. When devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 
 Once the Google Chrome browser extension is installed you can monitor activities and enforce DLP policy restrictions on sensitive items through Chrome.
 
 ## Before you begin
- 
-kjkjk
+
+To use the Google Chrome extension the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+
+- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+- [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
+- [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ### SKU/subscriptions licensing
 
@@ -42,7 +51,7 @@ Before you get started, you should confirm your [Microsoft 365 subscription](htt
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
 
-See, [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+For detailed licensing guidance, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 ### Permissions
 
@@ -56,21 +65,27 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Security reader
 - Reports reader
 
-### Infrastructure
+### Prepare your devices
 
-Make sure that you've onboarded devices into the Microsoft 365 compliance solutions. See [Get started with Microsoft 365 Endpoint data loss prevention](endpoint-dlp-getting-started.md) 
+1. Use the procedures in these topics to onboard your devices:
+    1. [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+    1. [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
+    1. [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md)
 
 ### Basic Setup (Single Machine Selfhost) - Recommended 
 
 
-Enabling Required Registry Key via PowerShell
+#### Enabling Required Registry Key via PowerShell
+
 1.	Run the following script in PowerShell as an administrator: Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 Install the Extension
 1.	Navigate to Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com).
 2.	Install the extension.
 
-Intune Setup (Organization Wide) - Optional 
-Enabling Required Registry Key via Intune
+#### Intune Setup (Organization Wide) - Optional 
+
+##### Enabling Required Registry Key via Intune
+
 1.	Create a PowerShell script with the following contents:
 Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 2.	Sign-in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com)
@@ -81,8 +96,11 @@ a.	Run this script using the logged-on credentials: YES
 b.	Enforce script signature check: NO
 c.	Run script in 64-bit PowerShell Host: YES
 6.	Select the proper device groups and apply the policy.
-Intune Force Install Steps
+
+#### Intune Force Install Steps
+
 Before adding the Microsoft DLP Chrome extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Intune are documented by Google: Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help. After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
+
 1.	Sign-in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com)
 2.	Navigate to Configuration Profiles.
 3.	Click Create Profile.
@@ -97,10 +115,14 @@ Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000;
 
 9.	Click create.
 
-Group Policy  Setup (Organization Wide) - Optional
-Import the Chrome ADMX
+#### Group Policy  Setup (Organization Wide) - Optional
+
+#### Import the Chrome ADMX
+
 Your devices must be manageable via Group Policy, and all Chrome ADMX’s needed will need to be imported into the Group Policy Central Store. Please see the following Microsoft documentation on How to create and manage the Central Store for Group Policy Administrative Templates in Windows.
+
 Enabling Required Registry Key via Powershell
+
 1.	Create a PowerShell script with the following contents:
 Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 2.	Open the Group Policy Management Console and navigate to your organizational unit (OU).
@@ -115,7 +137,9 @@ Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configur
 11.	In the Actions tab, choose the action ‘Start a program’
 12.	Enter the path to the Program/Script created in Step 1.
 13.	Click Apply.
-Adding the Chrome Extension to the ForceInstall List
+
+#### Adding the Chrome Extension to the ForceInstall List
+
 1.	In the Group Policy Management Editor, navigate to your OU.
 2.	Expand the following path “Computer/User configuration > Policies > Administrative templates > Classic administrative templates > Google > Google Chrome > Extensions” (may vary depending on configuration).
 3.	Select “Configure the list of force-installed extensions.”
@@ -125,12 +149,14 @@ Adding the Chrome Extension to the ForceInstall List
 7.	Under ‘Value’, add the following entry: echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx
 8.	Click ‘OK’ and Click ‘Apply’
 
-Testing the Extension
+#### Testing the Extension
+
 1.	Upload to cloud service, or access by unallowed browsers Cloud Egress  
 To test when detection and protection of sensitive data when its uploaded to a service domain, try to upload a file to one of your organization’s restricted service domains with a file that has sensitive data. The sensitive data must match one of our built in Sensitive Info Types (see more info at https://aka.ms/SensitiveInfoTypes), and/or one of your organization’s sensitive information types. 
 Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
-Testing other DLP scenarios in Chrome 
+#### Testing other DLP scenarios in Chrome 
+
 Now that you’ve unblocked Chrome as an app that’s allowed to access sensitive data when it adheres to your organization’s policy, you can test the scenarios below to confirm the behavior meets your organization’s requirements:
 2.	Copy data from a sensitive document to another document using the Clipboard
 To test the copy to clipboard block, simply open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
