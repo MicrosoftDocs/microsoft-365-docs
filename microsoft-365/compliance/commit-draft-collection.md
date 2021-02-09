@@ -31,7 +31,10 @@ When you're satisfied with the items you've collected in a draft collection and 
 
 ## Commit a draft collection to a review set
 
-1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, and then select the **Collections** tab.
+1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, and then select the **Collections** tab to display a list of the collections in the case.
+
+   > [!TIP]
+   > A value of `Estimated` in the **Status** column identifies the draft collections that can be added to a review set. A status of `Committed` indicates that a collection has already been added to a review set.
 
 2. On the **Collections** page, select the draft collection that you want to commit to a review set.
 
