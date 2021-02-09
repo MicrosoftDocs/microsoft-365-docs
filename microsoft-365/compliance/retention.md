@@ -342,6 +342,18 @@ More complex examples that combine retain and delete actions:
     
     **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels takes precedence over deletion from all retention policies. In this example, all conflicts are resolved by the third level.
 
+## Limits for policies
+
+Whether you use retention policies or retention label policies, there are some maximum numbers of policies per tenant to be aware of:
+
+- Exchange Online (any configuration): 1,800
+- SharePoint or OneDrive: (all sites): 13
+- SharePoint or OneDrive (specific locations included or excluded): 2,600
+
+A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes retention policies, retention label policies, and auto-apply retention policies.
+
+If you configure a policy for specific inclusions or exclusions, there are additional limitations. For more information, see [A policy with specific inclusions or exclusions](retention.md#a-policy-with-specific-inclusions-or-exclusions).
+
 ## Use Preservation Lock to restrict changes to policies
 
 Some organizations might need to comply with rules defined by regulatory bodies such as the Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a policy for retention is turned on, it cannot be turned off or made less restrictive. 

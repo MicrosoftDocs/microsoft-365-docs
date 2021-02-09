@@ -252,7 +252,7 @@ For example, if a policy includes all Exchange email and all SharePoint sites, a
 
 ### A policy with specific inclusions or exclusions
 
-Only if you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of: 
+If you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of: 
 
 - Maximum numbers for a retention policy:
   - 1,000 mailboxes (user mailboxes or group mailboxes)
@@ -264,14 +264,6 @@ These limitations are per policy, so if you need to use specific inclusions or e
 
 > [!TIP]
 > If do you need to create and maintain multiple retention policies for this scenario, consider using [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) for more efficient configuration.
-
-There are also some maximum number of policies per tenant to be aware of:
-
-- Exchange Online (any configuration): 1,800
-- SharePoint (all sites): 13
-- SharePoint (specific locations included or excluded): 2,600
-
-A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes retention policies, retention label policies, and auto-apply retention policies.
 
 To use the optional configuration to scope your retention settings, make sure the **Status** of that location is **On**, and then use the links to include or exclude specific users, Microsoft 365 groups, or sites.
 
