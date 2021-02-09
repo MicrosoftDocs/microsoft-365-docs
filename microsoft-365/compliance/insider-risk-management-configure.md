@@ -37,8 +37,8 @@ Before you get started with insider risk management, you should confirm your [Mi
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
 - Microsoft 365 G5 subscription (paid or trial version)
-- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
-- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
+- Microsoft 365 G3 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G3 subscription + the Microsoft 365 G5 Insider Risk Management add-on
 
 Users included in insider risk management policies must be assigned one of the licenses above.
 
