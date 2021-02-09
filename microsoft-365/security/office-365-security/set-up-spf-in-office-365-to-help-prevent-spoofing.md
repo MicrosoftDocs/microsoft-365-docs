@@ -26,12 +26,10 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [Prerequisites](#prerequisites)
-- [Create or update your SPF TXT record](#create-or-update-your-spf-txt-record)   
-  - [How to handle subdomains?](#how-to-handle-subdomains)
-- [What does SPF email authentication actually do?](#what-does-spf-email-authentication-actually-do)   
-   - [Troubleshooting SPF](#troubleshooting-spf)
-- [More information about SPF](#more-information-about-spf)
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 This article describes how to update an Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF)  email authentication with your custom domain in Office 365.
 
