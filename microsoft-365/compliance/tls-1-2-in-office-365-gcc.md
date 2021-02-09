@@ -1,6 +1,6 @@
 ---
-title: Deprecating TLS 1.0 and 1.1 in Office 365 GCC High and DoD
-description: Discusses how Microsoft is moving the date forward to discontinue support for TLS 1.1 and 1.0 in GCC High and DoD environments in Office 365 and preparing to use TLS 1.2.
+title: Disabling TLS 1.0 and 1.1 in Office 365 GCC High and DoD
+description: Discusses how Microsoft is disabling support for TLS 1.1 and 1.0 in GCC High and DoD environments in Microsoft 365.
 author: workshay
 manager: laurawi
 localization_priority: Normal
@@ -16,19 +16,21 @@ appliesto:
 - Office 365 Business
 ---
 
-# Deprecating TLS 1.0 and 1.1 in Office 365 GCC High and DoD
+# Disabling TLS 1.0 and 1.1 in Office 365 GCC High and DoD
 
 ## Summary
 
-In order to comply with the latest compliance standards for the Federal Risk and Authorization Management Program (FedRAMP), we are deprecating Transport Layer Security (TLS) versions 1.1 and 1.0 in Microsoft Office 365 for GCC High and DoD environments. This change was previously announced through Microsoft Support in [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+In order to comply with the latest compliance standards for the Federal Risk and Authorization Management Program (FedRAMP), we are disabling Transport Layer Security (TLS) versions 1.1 and 1.0 in Microsoft 365 for GCC High and DoD environments. This change was previously announced through Microsoft Support in [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
 
 The security of your data is important, and we are committed to transparency about changes that could affect your use of the service.
 
-Although the [Microsoft TLS 1.0 implementation](https://support.microsoft.com/help/3117336) has no known security vulnerabilities, we remain committed to the FedRAMP compliance standards. Therefore, we will deprecate TLS 1.1 and 1.0 in Office 365 in GCC High and DoD environments starting on January 15, 2020. For information about how to remove TLS 1.1 and 1.0 dependencies, see the following white paper:
+Although the [Microsoft TLS 1.0 implementation](https://support.microsoft.com/help/3117336) has no known security vulnerabilities, we remain committed to the FedRAMP compliance standards. Therefore, we disabled TLS 1.1 and 1.0 in Office 365 in GCC High and DoD environments on January 15, 2020. For information about how to remove TLS 1.1 and 1.0 dependencies, see the following white paper:
 
 [Solving the TLS 1.0 problem](https://www.microsoft.com/download/details.aspx?id=55266)
 
-In preparing for this change for TLS 1.1 and 1.0, we recommend that you use TLS version 1.2 instead. For more information, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+You must use TLS version 1.2 instead. For more information, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+
+For SharePoint and OneDrive, you'll need to update and configure .NET to support TLS 1.2. For information, see [How to enable TLS 1.2 on clients](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
 ## More information
 
