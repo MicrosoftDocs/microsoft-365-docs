@@ -53,6 +53,8 @@ Before you get started, you should confirm your [Microsoft 365 subscription](htt
 
 For detailed licensing guidance, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
+
+
 ### Permissions
 
 Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
@@ -64,6 +66,15 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Global reader
 - Security reader
 - Reports reader
+
+### Overall workflow
+
+Deploying the Google Chrome extension is a multi-phase process. You can choose to install on one machine at a time, or use Intune or Group Policy for organization wide deployments.
+
+1. [Prepare your devices](#prepare-your-devices).
+1. 
+
+
 
 ### Prepare your devices
 
@@ -78,8 +89,9 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 #### Enabling Required Registry Key via PowerShell
 
 1.	Run the following script in PowerShell as an administrator: Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+
 Install the Extension
-1.	Navigate to Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com).
+1.	Navigate to [Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-data-loss-preve/echcggldkblhodogklpincgchnpgcdco).
 2.	Install the extension.
 
 #### Intune Setup (Organization Wide) - Optional 
@@ -88,7 +100,7 @@ Install the Extension
 
 1.	Create a PowerShell script with the following contents:
 Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-2.	Sign-in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com)
+2.	Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
 3.	Navigate to Devices > Scripts and click Add.
 4.	Browse to the location of the script created when prompted.
 5.	Select the following settings:
@@ -99,7 +111,9 @@ c.	Run script in 64-bit PowerShell Host: YES
 
 #### Intune Force Install Steps
 
-Before adding the Microsoft DLP Chrome extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Intune are documented by Google: Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help. After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
+Before adding the Microsoft DLP Chrome extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Intune are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+
+ After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
 1.	Sign-in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com)
 2.	Navigate to Configuration Profiles.
