@@ -31,15 +31,15 @@ These proactive or reactive policies for app and user patterns and behaviors can
 Here's a quick review of required administrator roles for app policy management.
 
 | Role | Read policies | Create, update, or delete policies |
-|:-------|:-----|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+|:-------|:-----|:-------|
 | Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Compliance Reader | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |
+| Compliance Reader | ![Check mark](..\media\checkmark.png) |  |
 | Global Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Global Reader  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |
+| Global Reader  | ![Check mark](..\media\checkmark.png) |  |
 | Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Security Reader  | ![Check mark](..\media\checkmark.png) |  | ![Check mark](..\media\checkmark.png) |
+| Security Reader  | ![Check mark](..\media\checkmark.png) |  |
 | Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-||||||||||
+||||
 
 
 <!--

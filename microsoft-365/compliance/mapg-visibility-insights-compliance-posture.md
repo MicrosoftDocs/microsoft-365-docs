@@ -20,7 +20,7 @@ description: "Determine your app compliance posture."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Microsoft Application Protection and Governance (MAPG) allows you to quickly assess the compliance posture of the apps in your Microsoft 365 tenant and their access to data in your Microsoft 365 tenant from the MAPG Overview page in the [https://compliance.microsoft.com/m365appprotection](Microsoft 365 Compliance Center). 
+Microsoft Application Protection and Governance (MAPG) allows you to quickly assess the compliance posture of the apps in your Microsoft 365 tenant and their access to data in your Microsoft 365 tenant from the MAPG Overview page in the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/m365appprotection). 
 
 \[Placeholder for MAPG Overview page screenshot]
 
