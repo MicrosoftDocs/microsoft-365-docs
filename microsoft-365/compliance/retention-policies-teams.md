@@ -80,6 +80,10 @@ For the two paths in the diagram:
 
 When the retention policy is retain-only, or delete-only, the content's paths are variations of retain and delete.
 
+## Teams chat or calls for guest users and external users
+
+All Teams chats and calls are stored as compliance records in the Guest users shadow mailbox. However, Federated users in a call or chat would retain the compliance records in their own tenant.
+
 ### Content paths for retain-only retention policy
 
 1. **If a chat or channel message is edited or deleted**: A copy of the original message is created in the SubstrateHolds folder within 21 days, and retained there until the retention period expires. Then the message is permanently deleted from the SubstrateHolds folder within 24 hours.
