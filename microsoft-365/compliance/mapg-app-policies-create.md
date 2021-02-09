@@ -24,15 +24,20 @@ description: "Create app policies."
 >REVIEWERS: This content is in progress and not ready for review.
 >
 
-You can create app policies from built-in templates that can be customized or you can create a custom app policy.
+Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts, app policies in Microsoft Application Protection and Governance (MAPG) are a way for you to create additional methods to:
 
-To create a new app policy, go to **M365 Compliance Center > App protection & governance > Overview page > Policies > Create New**.
+- Specify additional conditions by which MAPG can alert you to app behavior for automatic or manual mitigation.
+- Implement the app compliance policies for your organization.
+
+You can create app policies from provided templates that can be customized or you can create a custom app policy.
+
+To create a new app policy, go to **Microsoft 365 Compliance Center > App protection & governance > Overview page > Policies > Create New**.
 
 ## App policy templates
 
 To create a new app policy based on an app policy template, on the **Choose App policy template page**, select a category of app template, the name of the template, and then click **Next**.
 
-MAPG has three categories of built-in app policy templates.
+MAPG has three categories of app policy templates.
 
 ### App usage
 
@@ -131,11 +136,11 @@ All of the specified conditions must be met for this app policy to apply.
 
 When you are done specifying the conditions, select **Save**, and then select **Next**.
 
-On the **Define Policy Actions** page, select **Disable app**, and then click **Next**.
+On the **Define Policy Actions** page, select **Disable app** if you want MAPG to disable the app when an alert based on this policy is generated, and then click **Next**.
 
 On the **Define Policy Status** page, select one of these options:
 
-- **Audit mode**: Policies will be evaluated but the configured actions will not occur.
+- **Audit mode**: Policies will be evaluated but the configured actions will not occur. Audit mode policies appear as "Test" in the list of policies.
 - **Active**: Policies will be evaluated and configured actions will occur.
 - **Inactive**: Policies will not be evaluated and the configured actions will not occur.
 
@@ -156,8 +161,17 @@ Now that your app policy is created, you should monitor it in the **Policies** p
 
 \[Placeholder: Screenshot of Policies page with policy and alerts info highlighted]
 
-If the number of alerts is an unexpectedly low value, edit the settings of the app policy to ensure you've configured it correctly.
+If the number of alerts is an unexpectedly low value, edit the settings of the app policy to ensure you've configured it correctly before setting its status.
 
+Here is an example of a process for creating a new policy, testing it, and then making it active:
+
+1. Create the new policy with severity, apps, conditions, and actions set to initial values, and status set to audit mode.
+2. Check for expected behavior, such as alerts generated.
+3. If the behavior is not expected, edit the policy apps, conditions, and action settings as needed and go back to step 2.
+4. If the behavior is expected, edit the policy and change its status to active.
+
+
+\[Placeholder for create app policy workflow]
 
 ## Next step
 

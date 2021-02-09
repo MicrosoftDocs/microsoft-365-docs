@@ -6,7 +6,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 localization_priority: Priority
@@ -42,7 +42,6 @@ From this page, you can see:
   - The ten latest alerts.
 
   From this information, you can determine how quickly alerts are being generated and the relative number of automated and policy-based detections.
-
 
 - For data and resource access:
 

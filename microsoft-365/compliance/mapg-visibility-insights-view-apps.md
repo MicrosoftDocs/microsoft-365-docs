@@ -6,7 +6,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 localization_priority: Priority
@@ -74,4 +74,4 @@ There is also a **Disable App** control to disable the use of the selected app, 
 
 ## Next step
 
-[Manage the metadata of an app](mapg-visibility-insights-app-metadata.md).
+[Determine your overall app compliance posture](mapg-visibility-insights-compliance-posture.md).

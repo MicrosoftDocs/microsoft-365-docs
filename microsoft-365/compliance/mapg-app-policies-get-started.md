@@ -24,19 +24,40 @@ description: "Get started with Learn about app policies."
 >REVIEWERS: This content is in progress and not ready for review.
 >
 
-## Viewing the policies page
+App policies for Microsoft Application Protection and Governance (MAPG) are the way that you can implement your specific needs for app compliance in your organization.
 
+To see the list of current app policies, go to **Microsoft 365 Compliance Center > App protection & governance > Policies**.
 
-M365 Compliance Center > App protection & governance > Policies page
+\[Placeholder for MAPG Policies page screenshot]
 
-See all app governance policies in the tenant, together with relevant data like the number of active alerts and the severity. You can see deeper insights and information about the policy by clicking a policy in the list.
-
-M365 Compliance Center > App protection & governance > Overview page > Policies
-
-## What’s available in the dashboard
+## What’s available in the app policies dashboard
 
 Describe the information on the dashboard page
 
+You can see the number of active, inactive, and test policies, and the following information for each policy:
+
+- **Status**
+
+  -	Active:  All policy evaluation and actions are active. 
+  - Inactive: All policy evaluation and actions are disabled. 
+  - Test: Evaluation is in audit mode: active but policy actions are disabled.
+
+- **Severity**: This will be the severity level set on any alerts triggered due to this policy being evaluated as true (set by you upon creation of any template or custom policy).
+- **Number of active alerts**: Alerts that are open due to this policy’s conditions being met.
+- **Number of total alerts**: Both active alerts and past alerts (includes those that were triggered in the past and actioned on) for this policy.
+- **Last Alert Date**: Date of last triggered alert due to this policy.
+- **Last Modified**: Date when this policy was last changed.
+- **Source**: Where the policy was created.
+- **Created by**: Universal Principal Name (UPN) of the account that created the policy.
+
+You can edit or delete each policy by selecting the policy or through the vertical ellipses.
+
+You can also:
+
+- Create a new policy.
+- Export the policy list to a comma separated value (CSV) file.
+- Search the policy list.
+
 ## Next step
 
-[Plan an app policy](mapg-app-policies-plan.md).
+[Create an app policy](mapg-app-policies-create.md).

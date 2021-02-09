@@ -6,7 +6,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 localization_priority: Priority
