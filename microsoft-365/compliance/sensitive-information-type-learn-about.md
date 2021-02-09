@@ -132,6 +132,8 @@ To create custom sensitive information types in the Security & Compliance Center
 
 
 > [!NOTE]
+> Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management.
+
 > Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
