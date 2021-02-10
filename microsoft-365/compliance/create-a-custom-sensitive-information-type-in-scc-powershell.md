@@ -434,7 +434,7 @@ When you upload your rule package XML file, the system validates the XML and che
 
 - When using the PowerShell Cmdlet there is a maximum return size of the Deserialized Data of approximately 1 megabyte.   This will affect the size of your rule pack XML file. Keep the uploaded file limited to a 770 kilobyte maximum as a suggested limit for consistent results without error when processing.
 
-- The XML structure does not require formatting characters such as Spaces, Tabs or Carriage Return / Linefeed entries.  Take note of this when optimizing for space on uploads. Tools such as Microsoft Visual Code provide join line features to compact the XML file.
+- The XML structure does not require formatting characters such as spaces, tabs, or carriage return/linefeed entries.  Take note of this when optimizing for space on uploads. Tools such as Microsoft Visual Code provide join line features to compact the XML file.
     
 If a custom sensitive information type contains an issue that may affect performance, it won't be uploaded and you may see one of these error messages:
   
