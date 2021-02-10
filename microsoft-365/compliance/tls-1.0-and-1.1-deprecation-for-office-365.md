@@ -1,7 +1,7 @@
 ---
-title: TLS 1.0 and 1.1 deprecation for Office 365
-description: Describes TLS 1.0 and 1.1 deprecation for Office 365.
-author: workshay
+title: TLS 1.0 and 1.1 deprecation for Microsoft 365
+description: Describes disabling TLS 1.0 and 1.1 for Microsoft 365.
+author: kccross
 manager: laurawi
 localization_priority: Normal
 search.appverid: 
@@ -9,7 +9,7 @@ search.appverid:
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: shmehta
+ms.author: fasqiu
 ms.reviewer: krowley
 appliesto:
 - Microsoft 365 Apps for enterprise
@@ -19,9 +19,9 @@ appliesto:
 - Office Web Apps
 ---
 
-# TLS 1.0 and 1.1 deprecation for Office 365
+# Disabling TLS 1.0 and 1.1 for Microsoft 365
 > [!IMPORTANT]
-> We temporarily halted deprecation enforcement of TLS 1.0 and 1.1 for commercial customers due to COVID-19, but as supply chains have adjusted and certain countries open back up, we are resetting the TLS enforcement to begin October 15, 2020, and rollout will continue over the following weeks and months. 
+> We temporarily halted deprecation enforcement of TLS 1.0 and 1.1 for commercial customers due to COVID-19, but as supply chains have adjusted and certain countries open back up, we are resetting the TLS enforcement to begin October 15, 2020, and rollout will continue over the following weeks and months.
 
 As of October 31, 2018, the Transport Layer Security (TLS) 1.0 and 1.1 protocols are deprecated for the Office 365 service. The effect for end-users is expected to be minimal. This change has been publicized for over two years, with the first public announcement made in December 2017. This article is only intended to cover the Office 365 local client in relation to the Office 365 service but can also apply to on-premises TLS issues with Office and Office Online Server/Office Web Apps.
 
@@ -75,3 +75,11 @@ The following table shows the appropriate registry key values in Office 365 clie
 You can use the default Windows Calculator in Programmer mode to set up the same reference registry key values. For more information, see [KB 3140245 Update to enable TLS 1.1 and TLS 1.2 as a default secure protocols in WinHTTP in Windows](https://support.microsoft.com/help/3140245).
 
 Regardless if the Windows 7 update ([KB 3140245](https://support.microsoft.com/help/3140245)) is installed or not, the DefaultSecureProtocols registry sub key isn't present and must be added manually or through a group policy object (GPO). That is, unless you have to customize what secure protocols are enabled or restricted, this key is not required. You only need the Windows 7 SP1 ([KB 3140245](https://support.microsoft.com/help/3140245)) update.
+
+## Update and configure the .NET Framework to support TLS 1.2
+
+You'll need to update applications that call Microsoft 365 APIs over TLS 1.0 or TLS 1.1 to use TLS 1.2. .NET 4.5 defaults to TLS 1.1. To update your .NET configuration, see [How to enable Transport Layer Security (TLS) 1.2 on clients](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+
+## More information
+
+For more information, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
