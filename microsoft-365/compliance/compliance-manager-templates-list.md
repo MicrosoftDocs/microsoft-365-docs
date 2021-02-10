@@ -296,7 +296,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Russia - Federal Law 149-FZ On Information, Information Technology and Information Security
 - [Russian Federation Federal Law Regarding Personal Data](https://docs.microsoft.com/compliance/regulatory/offering-russia-data-localization) (Microsoft 365)
 - Saint Lucia Data Protection Act (Microsoft 365)
-- Sarbanes-Oxley Act (Microsoft 365)
+- [Sarbanes-Oxley Act](offering-sox) (Microsoft 365)
 - [SEC 17-4(a)](https://docs.microsoft.com/compliance/regulatory/offering-sec-17a-4) (Microsoft 365)
 - SIG (Microsoft 365)
 - Singapore - Banking Act (Cap.19)
