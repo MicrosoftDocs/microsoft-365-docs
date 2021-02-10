@@ -53,15 +53,19 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ProcessId` | int | Process ID (PID) of the newly created process |
 | `ProcessCommandLine` | string | Command line used to create the new process |
 | `ProcessIntegrityLevel` | string | Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources |
-| `ProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the newly created process |
+| `ProcessTokenElevation` | string | Indicates the type of token elevation applied to the newly created process. Possible values: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (standard), and TokenElevationTypeFull (elevated) |
 | `ProcessCreationTime` | datetime | Date and time the process was created |
 | `AccountDomain` | string | Domain of the account |
 | `AccountName` | string | User name of the account |
 | `AccountSid` | string | Security Identifier (SID) of the account |
+| `AccountUpn` | string | User principal name (UPN) of the account |
+| `AccountObjectId` | string | Unique identifier for the account in Azure AD |
 | `LogonId` | string | Identifier for a logon session. This identifier is unique on the same machine only between restarts |
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountUpn` | string | User principal name (UPN) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountObjectId` | string | Azure AD object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessLogonId` | string | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts. |
 | `InitiatingProcessIntegrityLevel` | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | `InitiatingProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
@@ -69,6 +73,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
 | `InitiatingProcessCommandLine` | string | Command line used to run the process that initiated the event |
 | `InitiatingProcessCreationTime` | datetime | Date and time when the process that initiated the event was started |
@@ -78,6 +83,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessParentCreationTime` | datetime | Date and time when the parent of the process responsible for the event was started |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
+| `AdditionalFields` | string | Additional information about the event in JSON array format |
+| `FileSize` | long | Size of the file in bytes |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

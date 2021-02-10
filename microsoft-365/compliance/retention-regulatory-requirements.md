@@ -29,7 +29,7 @@ These resources are available to download from the [Data Protection Resources, F
 
 **Supporting New Zealand's Public Records Act compliance obligations with Microsoft 365** - [Download assessment](https://aka.ms/NZPRA)
 
-Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Skype for Business
+Applicable workloads: SharePoint, OneDrive, Teams, and Exchange
 
 Released January 2021, this report has been produced in partnership with Microsoft New Zealand to assess the capabilities of Microsoft 365 services for recording, storing, and managing requirements for electronic records, as specified by: 
 
