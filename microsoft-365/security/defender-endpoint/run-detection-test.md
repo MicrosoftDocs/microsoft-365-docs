@@ -55,4 +55,4 @@ The Command Prompt window will close automatically. If successful, the detection
 ## Related topics
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
-- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
