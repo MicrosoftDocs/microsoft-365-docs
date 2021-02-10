@@ -174,11 +174,15 @@ To turn off *Anyone* links for a site
 
 By default, members of a site can share files and folders with other people in your organization by using a *People in your organization* link. You can disable *People in your organization* links by using PowerShell:
 
-`Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks`
+```powershell
+Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
+```
 
 For example:
 
-`Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks`
+```powershell
+Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks
+```
 
 ## Create sites, groups, and teams
 
