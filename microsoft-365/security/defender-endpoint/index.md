@@ -47,28 +47,28 @@ ms.topic: conceptual
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
-**[Threat & vulnerability management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)**<br>
+**[Threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
 
-- [Threat & vulnerability management overview](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
-- [Get started](microsoft-defender-atp/tvm-prerequisites.md)
-- [Access your security posture](microsoft-defender-atp/tvm-dashboard-insights.md)
-- [Improve your security posture and reduce risk](microsoft-defender-atp/tvm-security-recommendation.md)
-- [Understand vulnerabilities on your devices](microsoft-defender-atp/tvm-software-inventory.md)
+- [Threat & vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
+- [Get started](tvm-prerequisites.md)
+- [Access your security posture](tvm-dashboard-insights.md)
+- [Improve your security posture and reduce risk](tvm-security-recommendation.md)
+- [Understand vulnerabilities on your devices](tvm-software-inventory.md)
 
 <a name="asr"></a>
 
-**[Attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)**<br>
+**[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation.
 
-- [Hardware based isolation](microsoft-defender-atp/overview-hardware-based-isolation.md)
+- [Hardware based isolation](overview-hardware-based-isolation.md)
 - [Application control](windows-defender-application-control/windows-defender-application-control.md)
 - [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-- [Exploit protection](microsoft-defender-atp/exploit-protection.md)
-- [Network protection](microsoft-defender-atp/network-protection.md), [web protection](microsoft-defender-atp/web-protection-overview.md)
-- [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
+- [Exploit protection](exploit-protection.md)
+- [Network protection](network-protection.md), [web protection](web-protection-overview.md)
+- [Controlled folder access](controlled-folders.md)
 - [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
-- [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
+- [Attack surface reduction rules](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
@@ -83,48 +83,48 @@ To further reinforce the security perimeter of your network, Microsoft Defender 
 
 <a name="edr"></a>
 
-**[Endpoint detection and response](microsoft-defender-atp/overview-endpoint-detection-response.md)**<br>
+**[Endpoint detection and response](overview-endpoint-detection-response.md)**<br>
 Endpoint detection and response capabilities are put in place to detect, investigate, and respond to intrusion attempts and active breaches. With Advanced hunting, you have a query-based threat-hunting tool that lets your proactively find breaches and create custom detections.
 
-- [Alerts](microsoft-defender-atp/alerts-queue.md)
-- [Historical endpoint data](microsoft-defender-atp/investigate-machines.md#timeline)
-- [Response orchestration](microsoft-defender-atp/response-actions.md)
-- [Forensic collection](microsoft-defender-atp/respond-machine-alerts.md#collect-investigation-package-from-devices)
-- [Threat intelligence](microsoft-defender-atp/threat-indicator-concepts.md)
-- [Advanced detonation and analysis service](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
-- [Advanced hunting](microsoft-defender-atp/advanced-hunting-overview.md)
-    - [Custom detections](microsoft-defender-atp/overview-custom-detections.md)
+- [Alerts](alerts-queue.md)
+- [Historical endpoint data](investigate-machines.md#timeline)
+- [Response orchestration](response-actions.md)
+- [Forensic collection](respond-machine-alerts.md#collect-investigation-package-from-devices)
+- [Threat intelligence](threat-indicator-concepts.md)
+- [Advanced detonation and analysis service](respond-file-alerts.md#deep-analysis)
+- [Advanced hunting](advanced-hunting-overview.md)
+    - [Custom detections](overview-custom-detections.md)
 
 <a name="ai"></a>
 
-**[Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)**<br>
+**[Automated investigation and remediation](automated-investigations.md)**<br>
 In addition to quickly responding to advanced attacks, Microsoft Defender for Endpoint offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale.
 
-- [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
-- [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
-- [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
+- [Automated investigation and remediation](automated-investigations.md)
+- [View details and results of automated investigations](auto-investigation-action-center.md)
+- [View and approve remediation actions](manage-auto-investigation.md)
 
 <a name="mte"></a>
 
-**[Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)**<br>
+**[Microsoft Threat Experts](microsoft-threat-experts.md)**<br>
 Microsoft Defender for Endpoint's new managed threat hunting service provides proactive hunting, prioritization, and additional context and insights. Microsoft Threat Experts further empowers Security Operation Centers (SOCs) to identify and respond to threats quickly and accurately.
 
-- [Targeted attack notification](microsoft-defender-atp/microsoft-threat-experts.md)
-- [Experts-on-demand](microsoft-defender-atp/microsoft-threat-experts.md)
-- [Configure your Microsoft 365 Defender managed hunting service](microsoft-defender-atp/configure-microsoft-threat-experts.md)
+- [Targeted attack notification](microsoft-threat-experts.md)
+- [Experts-on-demand](microsoft-threat-experts.md)
+- [Configure your Microsoft 365 Defender managed hunting service](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
-**[Centralized configuration and administration, APIs](microsoft-defender-atp/management-apis.md)**<br>
+**[Centralized configuration and administration, APIs](management-apis.md)**<br>
 Integrate Microsoft Defender for Endpoint into your existing workflows.
-- [Onboarding](microsoft-defender-atp/onboard-configure.md)
-- [API and SIEM integration](microsoft-defender-atp/configure-siem.md)
-- [Exposed APIs](microsoft-defender-atp/apis-intro.md)
-- [Role-based access control (RBAC)](microsoft-defender-atp/rbac.md)
-- [Reporting and trends](microsoft-defender-atp/threat-protection-reports.md)
+- [Onboarding](onboard-configure.md)
+- [API and SIEM integration](configure-siem.md)
+- [Exposed APIs](apis-intro.md)
+- [Role-based access control (RBAC)](rbac.md)
+- [Reporting and trends](threat-protection-reports.md)
 
 <a name="integration"></a>
-**[Integration with Microsoft solutions](microsoft-defender-atp/threat-protection-integration.md)** <br>
+**[Integration with Microsoft solutions](threat-protection-integration.md)** <br>
  Microsoft Defender for Endpoint directly integrates with various Microsoft solutions, including:
 - Intune
 - Microsoft Defender for Office 365
