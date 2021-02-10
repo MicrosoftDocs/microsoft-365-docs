@@ -1,5 +1,5 @@
 ---
-title: "Learn about sensitive information types"
+title: "Use named entities in your data loss prevention policies (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -15,20 +15,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-description: ""
+description: "Use these procedures to take advantage of named entities in your data loss prevention policies"
 ---
 
-# Learn about sensitive information types
+# Use named entities in your data loss prevention policies (preview)
 
-Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](protect-information.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
 
-- manually by users
-- automated pattern recognition, like sensitive information types
-- [machine learning](classifier-learn-about.md)
 
-Sensitive information types are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)
-
-## Sensitive information types are used in
+## Named entities are used in
 
 - [Data loss prevention policies](data-loss-prevention-policies.md) 
 - [Sensitivity labels](sensitivity-labels.md)
