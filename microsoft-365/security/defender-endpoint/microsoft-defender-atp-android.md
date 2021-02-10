@@ -37,7 +37,7 @@ This topic describes how to install, configure, update, and use Defender for End
 
 -   **For end users**
 
-    -   Microsoft Defender for Endpoint license assigned to the end user(s) of the app. See [Microsoft Defender for Endpoint licensing requirements](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#licensing-requirements)
+    -   Microsoft Defender for Endpoint license assigned to the end user(s) of the app. See [Microsoft Defender for Endpoint licensing requirements](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
 
     -   Intune Company Portal app can be downloaded from [Google
         Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)

@@ -108,7 +108,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 
 > [!NOTE]
-> For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+> For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 Defender for Endpoint can discover a proxy server by using the following discovery methods:
 - Transparent proxy

@@ -30,7 +30,7 @@ ms.custom: asr
 Controlled folder access helps protect your valuable data from malicious apps and threats, such as ransomware. Controlled folder access protects your data by checking apps against a list of known, trusted apps. Supported on Windows Server 2019 and Windows 10 clients, controlled folder access can be turned on using the Windows Security App, Microsoft Endpoint Configuration Manager, or Intune (for managed devices). 
 
 > [!NOTE]
-> Scripting engines are not trusted and you cannot allow them access to controlled protected folders.  For example, PowerShell is not trusted by controlled folder access, even if you add it as an application you trust or allow with [certificate and file indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates). 
+> Scripting engines are not trusted and you cannot allow them access to controlled protected folders.  For example, PowerShell is not trusted by controlled folder access, even if you add it as an application you trust or allow with [certificate and file indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates). 
 
 Controlled folder access works best with [Microsoft Defender for Endpoint](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
@@ -80,7 +80,7 @@ Controlled folder access requires enabling [Microsoft Defender Antivirus real-ti
 
 Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
-You can query Microsoft Defender for Endpoint data by using [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection). If you're using [audit mode](audit-windows-defender.md), you can use [advanced hunting](advanced-hunting-overview.md) to see how controlled folder access settings would affect your environment if they were enabled.
+You can query Microsoft Defender for Endpoint data by using [Advanced hunting](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). If you're using [audit mode](audit-windows-defender.md), you can use [advanced hunting](advanced-hunting-overview.md) to see how controlled folder access settings would affect your environment if they were enabled.
 
 Example query:
 
