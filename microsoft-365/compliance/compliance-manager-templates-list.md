@@ -88,10 +88,10 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - California - Civil Code Section 1798
 - California - Database Breach Act (California SB 1386)
 - California - Education Code-EDC, Title 3, Division 14, Part 65, Chapter 2.5- Social Media Privacy
+- California - Privacy Rights Act (CPRA) (Microsoft 365)
 - California - SB-327 Information privacy: connected devices (Microsoft 365)
 - California Consumer Credit Reporting Agencies Act (Microsoft 365)
 - [California Consumer Privacy Act (CCPA)](https://docs.microsoft.com/compliance/regulatory/offering-ccpa) (Microsoft 365)
-- California - Privacy Rights Act (CPRA) (Microsoft 365)
 - Canada - Breach of Security Safeguards Regulations (Microsoft 365)
 - Canada - British Columbia - Information Privacy & Security - FOIPPA (Microsoft 365)
 - [Canada - Office of the Superintendent of Financial Institutions](https://docs.microsoft.com/compliance/regulatory/offering-osfi-canada) (Microsoft 365)
@@ -123,8 +123,8 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Connecticut General Statutes - General Provisions for state contractors who receive confidential information (Microsoft 365)
 - Connecticut Information Security Program to Safeguard Personal Information (Microsoft 365)
 - Connecticut State Law - Breach of security re computerized data containing personal information (Microsoft 365)
-- Content of Premarket Submissions for Management of Cybersecurity in Medical Devices (Microsoft 365)
 - Consumer Personal Information Security Breach Notification Act (Microsoft 365)
+- Content of Premarket Submissions for Management of Cybersecurity in Medical Devices (Microsoft 365)
 - [Criminal Justice Information Services (CJIS) Security Policy](https://docs.microsoft.com/compliance/regulatory/offering-cjis) (Microsoft 365)
 - Croatia - Personal Data Protection Act (Microsoft 365)
 - Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software - FDA (Microsoft 365)
