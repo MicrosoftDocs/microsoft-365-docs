@@ -27,6 +27,11 @@ This article describes the prerequisites admins must meet to use recommended ide
 
 ## Prerequisites
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- Azure
+
 Before using the identity and device access policies that are recommended, your organization needs to meet prerequisites. The requirements are different for the various identity and authentication models listed:
 
 - Cloud-only
@@ -102,7 +107,7 @@ The following clients are recommended when a secure documents policy has been ap
 For more information about client support in Microsoft 365, see the following articles:
 
 - [Microsoft 365 Client App Support - Conditional Access](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 Client App Support - Modern Authentication](../../enterprise/microsoft-365-client-support-modern-authentication.md)
+- [Microsoft 365 Client App Support - Multi-factor authentication](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## Protecting administrator accounts
 

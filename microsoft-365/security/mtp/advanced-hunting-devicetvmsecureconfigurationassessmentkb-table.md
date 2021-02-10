@@ -46,8 +46,8 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `ConfigurationCategory` | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls|
 | `ConfigurationSubcategory` | string |Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
 | `ConfigurationBenchmarks` | string | List of industry benchmarks recommending the same or similar configuration |
-| `RelatedMitreTechniques` | string | List of Mitre ATT&CK framework techniques related to the configuration |
-| `RelatedMitreTactics ` | string | List of Mitre ATT&CK framework tactics related to the configuration |
+| `Tags` | string | Labels representing various attributes used to identify or categorize a security configuration |
+| `RemediationOptions` | string | Recommended actions to reduce or address any associated risks |
 
 ## Related topics
 
