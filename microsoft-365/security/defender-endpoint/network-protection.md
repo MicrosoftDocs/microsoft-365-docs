@@ -38,7 +38,7 @@ For more details about how to enable network protection, see [Enable network pro
 > [!TIP]
 > You can visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
-Network protection works best with [Microsoft Defender for Endpoint](../microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into Windows Defender EG events and blocks as part of the usual [alert investigation scenarios](../investigate-alerts.md).
+Network protection works best with [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into Windows Defender EG events and blocks as part of the usual [alert investigation scenarios](investigate-alerts.md).
 
 When network protection blocks a connection, a notification will be displayed from the Action Center. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
 
@@ -59,7 +59,7 @@ After you have enabled the services, you may need to configure your network or f
 
 ## Review network protection events in the Microsoft Defender for Endpoint Security Center
 
-Microsoft Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](../investigate-alerts.md).
+Microsoft Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md).
 
 You can query Microsoft Defender for Endpoint data by using [Advanced hunting](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to see how network protection settings would affect your environment if they were enabled.
 
