@@ -38,21 +38,22 @@ The following Teams items can be retained and deleted by using retention policie
 > [!NOTE]
 > Including card content is a recent addition and currently rolling out to tenants. For more information, see [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Teams messages in private channels are not included, code snippets and reactions from others in the form of emoticons are not included.
+Teams messages in private channels are currently not supported. Code snippets, recorded voice memos from the Teams mobile client, and reactions from others in the form of emoticons are not included when you use retention policies for Teams.
 
 Emails and files that you use with Teams aren't included in retention policies for Teams. These items have their own retention policies.
-
-The following mailboxes by RecipientTypeDetails are supported for Teams retention policies:
-
-- MailUser
-- UserMailbox
-- GroupMailbox
-- ArbitrationMailbox
-- SharedMailbox
 
 ## How retention works with Microsoft Teams
 
 You can use a retention policy to retain and delete data from chats and channel messages in Teams. Behind the scenes, Exchange mailboxes are used to store these messages. Data from Teams chats is stored in a hidden folder in the mailbox of each user included in the chat, and a similar hidden folder in a group mailbox is used for Teams channel messages.
+
+These mailboxes are, listed by their RecipientTypeDetails attribute:
+
+- **UserMailbox**: Used to store messages for people who use Teams and they have a mailbox for Exchange Online.
+- **MailUser**: Used to store messages for people who use Teams, don’t have a mailbox for Exchange Online but do have a mailbox for Exchange on-premises.
+- **User**: Used to store messages for people who use Teams and don't have a mailbox for Exchange Online or a mailbox for Exchange on-premises.
+- **GroupMailbox**: Used to store messages for Teams channels.
+
+Other mailboxe types, such as RoomMailbox, are not supported for Teams retention policies.
 
 It's important to understand that Teams uses an Azure-powered chat service that also stores this data, and by default this service stores the data indefinitely. For this reason, if you need to delete Teams messages for compliance reasons, we recommend that you use retention policies for Teams that can permanently delete this data from both the Exchange mailboxes and the underlying Azure-powered chat service. For more information about the underlying architecture, see [Security and compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) and specifically, the [Information Protection Architecture](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture) section.
 
