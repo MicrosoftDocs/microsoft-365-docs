@@ -134,4 +134,4 @@ Use `Disabled` to turn off the feature.
 
 * [Protect important folders with controlled folder access](controlled-folders.md)
 * [Customize controlled folder access](customize-controlled-folders.md)
-* [Evaluate Microsoft Defender for Endpoint](../microsoft-defender-atp/evaluate-atp.md)
+* [Evaluate Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-atp)

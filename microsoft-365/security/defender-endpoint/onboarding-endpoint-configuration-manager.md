@@ -325,7 +325,7 @@ endpoints. (This may take few minutes)
     ![A screenshot of attack surface reduction rules reports](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
 See [Optimize ASR rule deployment and
-detections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-asr)   for more details.  
+detections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   for more details.  
 
 
 #### Set Network Protection rules in Audit mode:

@@ -30,7 +30,7 @@ Connected applications integrates with the Defender for Endpoint platform using 
 
 Applications use standard OAuth 2.0 protocol to authenticate and provide tokens for use with Microsoft Defender for Endpoint APIs.  In addition, Azure Active Directory (Azure AD) applications allow tenant admins to set explicit control over which APIs can be accessed using the corresponding app.
  
-You'll need to follow [these steps](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro) to use the APIs with the connected application.
+You'll need to follow [these steps](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) to use the APIs with the connected application.
  
 ## Access the connected application page
 From the left navigation menu, select **Partners & APIs** > **Connected AAD applications**.

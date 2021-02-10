@@ -17,7 +17,7 @@ ms.topic: conceptual
 ---
  
 # Threat Protection
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Defender for Endpoint protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Defender for Endpoint protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 
 > [!TIP]
 > Enable your users to access cloud services and on-premises applications with ease and enable modern management capabilities for all devices. For more information, see [Secure your remote workforce](https://docs.microsoft.com/enterprise-mobility-security/remote-work/). 
@@ -62,17 +62,17 @@ This built-in capability uses a game-changing risk-based approach to the discove
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation.
 
 - [Hardware based isolation](overview-hardware-based-isolation.md)
-- [Application control](windows-defender-application-control/windows-defender-application-control.md)
-- [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+- [Application control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [Device control](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Exploit protection](exploit-protection.md)
 - [Network protection](network-protection.md), [web protection](web-protection-overview.md)
 - [Controlled folder access](controlled-folders.md)
-- [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
+- [Network firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [Attack surface reduction rules](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
-**[Next-generation protection](microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)**<br>
+**[Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender for Endpoint uses next-generation protection designed to catch all types of emerging threats.
 
 - [Behavior monitoring](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
@@ -88,7 +88,7 @@ Endpoint detection and response capabilities are put in place to detect, investi
 
 - [Alerts](alerts-queue.md)
 - [Historical endpoint data](investigate-machines.md#timeline)
-- [Response orchestration](response-actions.md)
+- [Response orchestration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
 - [Forensic collection](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [Threat intelligence](threat-indicator-concepts.md)
 - [Advanced detonation and analysis service](respond-file-alerts.md#deep-analysis)

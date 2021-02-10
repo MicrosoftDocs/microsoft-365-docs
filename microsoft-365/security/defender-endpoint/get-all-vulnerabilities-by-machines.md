@@ -112,5 +112,5 @@ Here is an example of the response.
 
 ## See also
 
-- [Risk-based threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
-- [Vulnerabilities in your organization](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses)
+- [Risk-based threat and vulnerability management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnerabilities in your organization](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

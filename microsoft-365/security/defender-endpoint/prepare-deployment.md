@@ -119,7 +119,7 @@ Microsoft recommends leveraging RBAC to ensure that only users that have a
 business justification can access Defender for Endpoint.
 
 You can find details on permission guidelines
-[here](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
+[here](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
 
 The following example table serves to identify the Cyber Defense Operations
 Center structure in your environment that will help you determine the RBAC
