@@ -32,7 +32,7 @@ Controlled folder access helps protect your valuable data from malicious apps an
 > [!NOTE]
 > Scripting engines are not trusted and you cannot allow them access to controlled protected folders.  For example, PowerShell is not trusted by controlled folder access, even if you add it as an application you trust or allow with [certificate and file indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates). 
 
-Controlled folder access works best with [Microsoft Defender for Endpoint](../microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](investigate-alerts.md).
+Controlled folder access works best with [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](investigate-alerts.md).
 
 ## How does controlled folder access work?
 
