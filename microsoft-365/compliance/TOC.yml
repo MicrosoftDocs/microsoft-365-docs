@@ -498,9 +498,7 @@
           href: mapg-detect-remediate-overview.md
         - name: Get started
           href: mapg-detect-remediate-get-started.md
-        - name: Detecting app threats
-          href: mapg-detect-remediate-detect-threats.md
-        - name: Remediating app threats
+        - name: Detect and remediate app threats
           href: mapg-detect-remediate-detect-threats.md
 
 - name: Manage eDiscovery

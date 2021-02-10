@@ -62,4 +62,4 @@ App policy templates
 
 ## Next step
 
-[Get started](mapg-app-policies-get-started.md) with app policies.
+[Get started with app policies.](mapg-app-policies-get-started.md)

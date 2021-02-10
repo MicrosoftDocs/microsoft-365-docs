@@ -60,4 +60,4 @@ You can also:
 
 ## Next step
 
-[Create an app policy](mapg-app-policies-create.md).
+[Create an app policy.](mapg-app-policies-create.md)

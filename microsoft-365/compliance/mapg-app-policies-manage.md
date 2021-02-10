@@ -31,7 +31,7 @@ To keep up with the latest apps your organization is using, new app-based attack
 - Change the conditions of an existing policy
 - Change the actions of an existing policy for auto-remediation of alerts
 
-Here is an example of a process for managing an existing policy:
+Here's an example of a process for managing an existing policy:
 
 1. Edit the policy:
 
@@ -42,7 +42,7 @@ Here is an example of a process for managing an existing policy:
 3. If the behavior is not expected, go back to step 1.
 4. If the behavior is expected, edit the policy and change its status to active.
 
-\[Placeholder for manage app policy workflow]
+\[Placeholder for manage app policy workflow figure]
 
 ## Editing an app policy configuration
 

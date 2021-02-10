@@ -96,5 +96,5 @@ You can also:
 
 ## Next step
 
-[Get started](mapg-visibility-insights-get-started.md) with application insights.
+[Get started with application insights.](mapg-visibility-insights-get-started.md)
 
