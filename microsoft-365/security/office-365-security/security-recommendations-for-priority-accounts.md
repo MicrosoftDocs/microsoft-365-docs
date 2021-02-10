@@ -1,5 +1,5 @@
 ---
-title: Security recommendations for priority accounts in Microsoft 365
+title: Security recommendations for priority accounts in Microsoft 365, priority accounts, priority accounts in Office 365, priority accounts in Microsoft 365
 f1.keywords: 
   - NOCSH
 ms.author: chrisda

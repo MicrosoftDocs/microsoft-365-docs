@@ -167,15 +167,15 @@ For a more consistent label experience with meaningful reporting, provide approp
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments don't inherit the label with one exception:
+When you label an email message that has attachments, the attachments inherit the label only if the label that you apply to the email message applies encryption and the attachment is an Office document isn't already encrypted. Because the inherited label applies encryption, the attachment becomes newly encrypted.
 
-- The attachment is an Office document with a label that doesn't apply encryption, and the label you apply to the email message applies encryption. In this case, the emailed Office document inherits the email's label with its encryption settings.
+An attachment doesn't inherit the labels from the email message when the label applied to the email message doesn't apply encryption or the attachment is already encrypted.
 
-Otherwise: 
+Examples of label inheritance, where the label **Confidential** applies encryption and the label **General** doesn't apply encryption:
 
-- If the attachments have a label, they keep their originally applied label.
-- If the attachments are encrypted without a label, the encryption remains but they aren't labeled.
-- If the attachments don't have a label, they remain unlabeled.
+- A user creates a new email message and applies the **Confidential** label to this message. They then add a Word document that isn't labeled or encrypted. As a result of inheritance, the document is newly labeled **Confidential** and now has encryption applied from that label.
+
+- A user creates a new email message and applies the **Confidential** label to this message. They then add a Word document that is labeled **General** and this file isn't encrypted. As a result of inheritance, the document gets relabeled as **Confidential** and now has encryption applied from that label.
 
 ## Sensitivity label compatibility
 

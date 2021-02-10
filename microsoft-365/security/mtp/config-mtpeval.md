@@ -158,14 +158,14 @@ There's a PowerShell Module called the *Office 365 Advanced Threat Protection Re
 
     ![Image of_the Microsoft Defender for Identity settings page where you should turn the Microsoft Defender for Endpoint  toggle on](../../media/mtp-eval-52.png)
 
->[!NOTE]
->Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint. Rebranding changes across all of our portals are being rolled out the for consistency.
+> [!NOTE]
+> Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint. Rebranding changes across all of our portals are being rolled out the for consistency.
 
 
 ## Configure Microsoft Cloud App Security
 
->[!NOTE]
->Skip this step if you've already enabled Microsoft Cloud App Security. 
+> [!NOTE]
+> Skip this step if you've already enabled Microsoft Cloud App Security. 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.
 
@@ -286,5 +286,6 @@ Congratulations! You've just created your Microsoft 365 Defender trial lab or pi
 Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
 ## Next step
-|[Attack simulation phase](mtp-pilot-simulate.md) | Run the attack simulation for your Microsoft 365 Defender pilot environment.
-|:-------|:-----|
+
+- [Generate a test alert](generate-test-alert.md) - Run an attack simulation in your Microsoft 365 Defender trial lab.
+
