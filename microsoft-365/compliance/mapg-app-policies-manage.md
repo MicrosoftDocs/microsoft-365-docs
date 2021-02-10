@@ -35,14 +35,14 @@ Here's an example of a process for managing an existing policy:
 
 1. Edit the policy:
 
-  - Change the status to audit mode for testing
-  - Change the conditions or actions as needed
+  - Change the settings of the policy.
+  - If needed, change the status to **Audit mode** for testing.
 
 2. Check for expected behavior, such as alerts generated.
 3. If the behavior is not expected, go back to step 1.
 4. If the behavior is expected, edit the policy and change its status to active.
 
-\[Placeholder for manage app policy workflow figure]
+![The manage app policy workflow](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
 
 ## Editing an app policy configuration
 

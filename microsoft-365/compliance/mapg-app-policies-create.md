@@ -161,12 +161,12 @@ If the number of alerts is an unexpectedly low value, edit the settings of the a
 
 Here is an example of a process for creating a new policy, testing it, and then making it active:
 
-1. Create the new policy with severity, apps, conditions, and actions set to initial values and tye status set to **Audit mode**.
+1. Create the new policy with severity, apps, conditions, and actions set to initial values and the status set to **Audit mode**.
 2. Check for expected behavior, such as alerts generated.
 3. If the behavior is not expected, edit the policy apps, conditions, and action settings as needed and go back to step 2.
 4. If the behavior is expected, edit the policy and change its status to **Active**.
 
-\[Placeholder for create app policy workflow figure]
+![The create app policy workflow](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
 
 ## Next step
 

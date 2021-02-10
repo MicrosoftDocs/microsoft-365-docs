@@ -58,4 +58,4 @@ CFA #3 Scenario 3: As an admin, I can configure policies to perform automatic
 
 ## Next step
 
-[Get started with app threat detection and remediation.](mapg-detect-remediate-get-startedmd)
+[Get started with app threat detection and remediation.](mapg-detect-remediate-get-started.md)
