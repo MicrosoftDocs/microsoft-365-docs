@@ -187,7 +187,8 @@ By default, users can create new sites, groups, and teams from which they may be
 - [Manage site creation in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
 - [Manage who can create Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
 
-Note that restricting group creation restricts team creation.
+> [!NOTE]
+> Restricting group creation restricts team creation.
 
 ## Email
 
