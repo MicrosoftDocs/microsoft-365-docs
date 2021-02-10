@@ -19,7 +19,7 @@ ms.topic: article
 ---
 
 # Create indicators for files
-
+ 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
