@@ -20,17 +20,21 @@ description: "Get started with app threat detection and remediation."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+>[!Note]
+>REVIEWERS: This content is in progress and not ready for review.
+>
+
 The first place to view app alerts is the Microsoft Application Protection and Governance (MAPG) dashboard at [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
 
 \[Placeholder for MAPG Overview page screenshot with the Detection and policy alerts section highlighted]
 
-On this overview page, a Detection and policy alerts section lists the latest alerts. You can use this to quickly see the current app alert activity for your tenant.
+On this overview page, a **Detection and policy alerts** section lists the latest alerts. You can use this to quickly see the current app alert activity for your tenant.
 
 To see all of the alerts, select the **Alerts** tab.
 
 ## What’s available on the Alerts page
 
-The **Alerts** page lists all of the MAPG-based Alerts for your tenant.
+The **Alerts** page lists all of the MAPG-based alerts for your tenant.
 
 \[Placeholder for MAPG Alerts page screenshot]
 
@@ -46,7 +50,7 @@ Each listed alert has the following information:
 
 The alert list is sorted by **Date created** by default. To sort the list my another category, select the category name.
 
-You can also export the current alert list to a comma separated value (CSV) file.
+You can also export the current alert list to a comma separated value (CSV) file. For example, you could open the CVS file in Microsoft Excel and sort the list of alerts by **Severity** and then **Date Created**.
 
 ## Next step
 

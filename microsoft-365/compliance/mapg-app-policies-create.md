@@ -108,10 +108,10 @@ Here are the available conditions for a custom app policy.
 |Condition | Condition values accepted | More information |
 |:-------|:-----|:-------|
 | App registration age | Within last X days |  |
-| App certification | Yes or No | What is Microsoft 365 Certification |
+| App certification | Yes or No | [Microsoft 365 Certification](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
 | App certification changed | Yes or No |  |
-| Publisher verification | Yes or No | What is Publisher Verification? |
-| Permission granted | Select one or more API permission from list | Microsoft Graph permissions reference |
+| Publisher verification | Yes or No | [Publisher Verification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
+| Permission granted | Select one or more API permission from list | [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference) |
 | Has high scoped permission | Yes or No | This is an internal designation based on the same logic used by MCAS. |
 | Overprivileged app | Yes or No | Apps with more granted permissions than are being used by those apps. |
 | Unused App | Yes or No | Apps with no API activity in last 90 days. |
@@ -122,7 +122,7 @@ Here are the available conditions for a custom app policy.
 | App API Access trend | X% increase in API Calls in last 7 days	 |  |
 | Users consented | (Greater than or Less than) X consented users |  |
 | Users consented trend | X% increase in last 90 days |  |
-| HVE user consented | Yes or No | A High Value Entity (HVE) user is one that is tagged as a priority account. |
+| HVE user consented | Yes or No | A High Value Entity (HVE) user is one that is tagged as a [priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
 | Delegating user | Select user(s) from list |  |
 | Delegating user’s role | Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator	| Multiple selections allowed. <br><br> Any Azure AD role with assigned member should be made available in this list. |
 | Workload accessed | OneDrive and/or SharePoint and/or Exchange | Multiple selections allowed. |

@@ -60,9 +60,9 @@ For the **Edit policy** page, step through the pages and make the appropriate ch
 
 ## Deleting an app policy
 
-To delete an app policy:
+To delete an app policy, you can:
 
 - Select the policy in the policy list and select **Delete** on the app policy pane.
 - Select the vertical ellipses for the policy in the list, and then select **Delete**.
 
-An alternative to deleting an app policy is to change its status to inactive. Once inactive, it will not generate alerts. For example, rather than deleting an app policy for an app with a specific set of conditions that are useful, rename the app policy to indicate its usefulness and set its status to inactive. You can later return to the policy and modify it for a similar app and set its status to audit mode or inactive.
+An alternative to deleting an app policy is to change its status to inactive. Once inactive, it will not generate alerts. For example, rather than deleting an app policy for an app with a specific set of conditions that are useful for a future policy, rename the app policy to indicate its usefulness and set its status to inactive. You can later return to the policy and modify it for a similar app and set its status to audit mode or inactive.

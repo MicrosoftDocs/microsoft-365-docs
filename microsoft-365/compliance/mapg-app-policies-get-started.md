@@ -55,7 +55,7 @@ You can edit or delete each policy by selecting the policy or through the vertic
 You can also:
 
 - Create a new policy.
-- Export the policy list to a comma separated value (CSV) file.
+- Export the policy list to a comma separated value (CSV) file. For example, you could open the CVS file in Microsoft Excel and sort the policies by **Severity** and then **Number of Total Alerts**.
 - Search the policy list.
 
 ## Next step
