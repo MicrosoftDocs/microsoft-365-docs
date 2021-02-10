@@ -49,8 +49,8 @@ If you need to restrict OneDrive sync, we recommend that you control access with
 
 If you can't use an Azure AD conditional access policy in your organization, follow these steps:
 
-1. Look up your tenant ID, as described in [Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-2. File a service request with the Microsoft Managed Desktop Operations team. Provide the tenant ID and ask for it to be added in the **Allow syncing only on PCs joined to specific domains** section of the **Sync** setting in the OneDrive admin center. For more information, see [Allow syncing only on computers joined to specific domains](https://docs.microsoft.com/onedrive/allow-syncing-only-on-specific-domains)  
+1. If you don't already know it, look up your tenant ID, as described in [Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
+2. Sign in to the OneDrive admin center, and then select **Sync** in the left pane. Select the **Allow syncing only on PCs joined to specific domains** check box, and then add the tenant ID to the list of domains. For more information, see [Allow syncing only on computers joined to specific domains](https://docs.microsoft.com/onedrive/allow-syncing-only-on-specific-domains).
 
 > [!NOTE]
 > This guidance applies only to tenants in Microsoft Managed Desktop. There are other settings in use that aren't discussed in this article.
