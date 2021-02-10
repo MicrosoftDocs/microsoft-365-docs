@@ -32,7 +32,7 @@ The features won't block or prevent apps, scripts, or files from being modified.
 
 To find the audited entries, go to **Applications and Services** > **Microsoft** > **Windows** > **Windows Defender** > **Operational**.
 
-You can use Defender for Endpoint to get greater details for each event, especially for investigating attack surface reduction rules. Using the Defender for Endpoint console lets you [investigate issues as part of the alert timeline and investigation scenarios](../investigate-alerts.md).
+You can use Defender for Endpoint to get greater details for each event, especially for investigating attack surface reduction rules. Using the Defender for Endpoint console lets you [investigate issues as part of the alert timeline and investigation scenarios](investigate-alerts.md).
 
 This article provides links that describe how to enable the audit functionality for each feature and how to view events in the Windows Event Viewer.
 

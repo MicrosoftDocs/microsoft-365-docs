@@ -74,7 +74,7 @@ Windows system folders are protected by default, along with several other folder
 
 ## Requirements for controlled folder access
 
-Controlled folder access requires enabling [Microsoft Defender Antivirus real-time protection](microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md).
+Controlled folder access requires enabling [Microsoft Defender Antivirus real-time protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
 ## Review controlled folder access events in the Microsoft Defender Security Center
 
