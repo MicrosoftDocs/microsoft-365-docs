@@ -81,5 +81,5 @@ In the Action center, you can see remediation actions that were taken and potent
 
 ## See also
 
-- [Microsoft Defender for Office 365](office-365-atp.md)
-- [Automated investigations in Microsoft Defender for Office 365](defender-for-office-365.md)
+- [Microsoft Defender for Office 365](defender-for-office-365.md)
+- [Automated investigations in Microsoft Defender for Office 365](office-365-air.md)
