@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: "Use a PowerShell script, the runs the Search-UnifiedAuditLog cmdlet, to search the audit log. This script is optimized to return a large set (up to 50,000) audit records. The script exports these records to a CSV file that you can view or transform using Power Query in Excel."
+description: "Use a PowerShell script that runs the Search-UnifiedAuditLog cmdlet in Exchange Online to search the audit log. This script is optimized to return a large set (up to 50,000) of audit records. The script exports these records to a CSV file that you can view or transform using Power Query in Excel."
 ---
 
 # Use a PowerShell script to search the audit log
@@ -75,7 +75,7 @@ $intervalMinutes = 60
 
 Function Write-LogFile ([String]$Message)
 {
-    $final = [DateTime]::Now.ToString("s") + ":" + $Message
+    $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
     $final | Out-File $logFile -Append
 }
 
@@ -96,7 +96,7 @@ while ($true)
         break
     }
 
-    $sessionID = [DateTime]::Now.ToString("s")
+    $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
     Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     $currentCount = 0
@@ -132,14 +132,13 @@ while ($true)
 
 Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
 Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
-
 ```
 
 2. Modify the variables listed in the following table to configure the search criteria. The script includes sample values for these variables, but you should change them (unless stated otherwise) to meet your specific requirements.
 
    |Variable|Sample value|Description|
    |---|---|---|
-   |`$logFile`|"d:\temp\AuditSearchLog.txt"|Specifies the name and location for the log file that contains information about the progress of the audit log search performed by the script.|
+   |`$logFile`|"d:\temp\AuditSearchLog.txt"|Specifies the name and location for the log file that contains information about the progress of the audit log search performed by the script. The script writes UTC timestamps to the log file.|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|Specifies the name and location of the CSV file that contains the audit records returned by the script.|
    |`[DateTime]$start` and `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Specifies the date range for the audit log search. The script will return records for audit activities that occurred within the specified date range. For example, to return activities performed in January 2021, you can use a start date of `"2021-01-01"` and an end date of `"2021-01-31"` (be sure to surround the values in double-quotation marks) The sample value in the script returns records for activities performed in the previous 24 hours. If you don't include a timestamp in the value, the default timestamp is 12:00 AM (midnight) on the specified date.|
    |`$record`|"AzureActiveDirectory"|Specifies the record type of the audit activities (also called *operations*) to search for. This property indicates the service or feature that an activity was triggered in. For a list of record types that you can use for this variable, see [Audit log record type](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). You can use the record type name or ENUM value. <br/><br/>**Tip:** To return audit records for all record types, use the value `$null` (without double-quotations marks).|
