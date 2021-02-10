@@ -95,21 +95,6 @@ landingContent:
             url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
           - text: Get started with Microsoft Cloud App Security
             url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
-  # Card
-  - title: 
-    linkLists:
-      - linkListType: 
-        links:
-          - text: 
-            url:
-
-  # Card
-  - title: 
-    linkLists:
-      - linkListType: 
-        links:
-          - text: 
-            url: 
 
 
 

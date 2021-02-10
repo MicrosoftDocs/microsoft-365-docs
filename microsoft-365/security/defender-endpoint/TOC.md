@@ -1,4 +1,4 @@
-# [Threat protection](index.md)
+# [Microsoft Defender for Endpoint](index.yml)
 
 ## [Overview]()
 ### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-advanced-threat-protection.md)
