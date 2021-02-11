@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
-ms.date: 02/11/2021
 f1.keywords: 
   - NOCSH
 ms.reviewer: martincoetzer
