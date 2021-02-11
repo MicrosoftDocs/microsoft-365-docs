@@ -24,7 +24,7 @@ description: Create a Microsoft 365 environment to test identity and device acce
 
 This article describes how to configure a Microsoft 365 test environment that meets the requirements of the [cloud only prerequisite configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access.
 
-There are seven phases to setting up this test environment:
+There are eight phases to setting up this test environment:
 
 1. Build out your lightweight test environment
 2. Configure named locations
