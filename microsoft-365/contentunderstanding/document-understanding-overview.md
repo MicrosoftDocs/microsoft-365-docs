@@ -41,10 +41,20 @@ Add *classifiers* and *extractors* to your document understanding models to do t
 
 You can use example files to train and test your classifiers and extractors in your model. Example files provide your model examples of what to look for when trying to identify and extract data from files. For example, you would train your contract renewal classifiers and extractors with examples of contract renewal documents your company works with. You can also use example files to test the effectiveness of your model.
 
-> [!NOTE]
-> If you use optical character recognition (OCR) technology to scan documents, Syntex has a 15-page limit for model training.
-
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
+
+### Optical Character Recognition
+
+Document understanding models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files, both when you train a model with example files and when you run the model against files in a document library.
+
+Note the following differences in regards to Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF)):
+
+- Office files: We truncate at 64K characters (in training and when run against files in a document library).
+- OCR-scanned files: There is a 20 page limit.  
+
+
+
+
 
 ## See Also
 [Create a classifier](create-a-classifier.md)
@@ -60,3 +70,5 @@ After publishing your model, use the content center to apply it to any SharePoin
 [Difference between a document understanding and a form processing model](difference-between-document-understanding-and-form-processing-model.md)
   
 [Form processing overview](form-processing-overview.md)
+
+[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
