@@ -65,7 +65,7 @@ On your model's view page in your document library, a new **Retention label** co
 
 For example, all *Insurance notice* documents that your model identifies will also have the *Business* retention label applied to them, preventing them from being deleted from the document library for five months. If an attempt is made to delete the file from the document library, an error will display saying it is not allowed because of the applied retention label.
 
-## To add a retention label to the form processing model
+## To add a retention label to a form processing model
 
 > [!Important]
 > For retention labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
