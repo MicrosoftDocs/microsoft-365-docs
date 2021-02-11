@@ -26,6 +26,7 @@ description: "Learn how named entities help you detect sensitive items containin
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Communication compliance](communication-compliance.md)
+- [Inside risk management](insider-risk-management-solution-overview.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
 DLP makes special use of named entities in *enhanced policy templates*, which are pre-configured DLP policies that you can customize for your organizations needs. You can also [create your own DLP policies](create-test-tune-dlp-policy.md) from a [blank template](create-a-dlp-policy-from-a-template.md) 
