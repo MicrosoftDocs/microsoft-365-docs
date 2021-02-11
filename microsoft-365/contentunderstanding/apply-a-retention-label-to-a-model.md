@@ -70,7 +70,7 @@ For example, all *Insurance notice* documents that your model identifies will al
 > [!Important]
 > For retention labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
 
-You can either apply a retention label to a form processing model when you are creating a model, or afterwards through the model details.
+You can either apply a retention label to a form processing model when you are creating a model, or apply it to an existing model.
 
 ### To add a retention label when you create a form processing model
 
@@ -83,27 +83,7 @@ You can either apply a retention label to a form processing model when you are c
 
 ### To add a retention label to an existing form processing model
 
-You can add a retention label to an existing form processing model either by:
-
-- Adding it through the model details page in the content center.
-- Adding it through the active model settings in the SharePoint document library in which the model is applied.
-
-
-#### To add a retention label to an existing form processing model through the model details page in the content center
-
-1. In your content center, select the form processing model to which you want to apply the retention label.
-2. On the model settings page, select <b>Model settings</b>.
-3. On the <b>Model details</b> pane, in the <b>Retention Label</b> section, select the menu and then select the retention label you want to apply to the model.
-4. Select <b>Save</b>.
-
-   ![Sync model](../media/content-understanding/retention-label-model-details.png)</br>
-
-
-
-
-#### To add a retention label to an existing form processing model through Active model settings
-
-If you are the model owner, you can also choose to add a retention label to an existing form processing model.
+You can add a retention label to an existing form processing model that you own through the Active model settings in the document library in which the model is applied.
 
 1. In the SharePoint document library in which the model is applied, select the <b>View active models</b> icon, and then select <b>View active models</b>.</b>
 
@@ -111,7 +91,10 @@ If you are the model owner, you can also choose to add a retention label to an e
 
 2. In <b>Active models</b>, select the form processing model to which you want to apply the retention label.
 
-3. In the model details,  in the <b>Retention label</b> section, select the retention label you want to apply.  Then select <b>Save</b>.
+     ![Sync model](../media/content-understanding/retention-label-model-details.png)</br> 
+
+
+3. In the model details, in the <b>Retention Label</b> section, select the retention label you want to apply.  Then select <b>Save</b>.
 
 > [Note]
 > You must be the model owner for the model settings pane to be editable. 
