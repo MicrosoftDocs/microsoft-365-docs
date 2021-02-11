@@ -61,7 +61,7 @@ As part of this change, you will be able to search for, and filter email data ac
 This does not impact any production tenants for both P1 and P2/E5 customers, which already has the 30 day data retention and search capabilities. 
 
 ### Updated limits for Export of records for Threat Explorer (Preview) 
-As part of this update, the no. of rows for Email records that can be exported from Threat Explorer are being increased from 9990 to 200,000 records. The set of columns  that can be exported today will remain the same, but the no. of rows will increase from the current limit.
+As part of this update, the number of rows for Email records that can be exported from Threat Explorer is increased from 9990 to 200,000 records. The set of columns that can be exported currently will remain the same, but the number of rows will increase from the current limit.
 
 ### Updated Threat Information for Emails
 
