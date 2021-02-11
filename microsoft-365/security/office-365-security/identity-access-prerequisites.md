@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
-ms.date: 09/01/2020
 f1.keywords: 
   - NOCSH
 ms.reviewer: martincoetzer
@@ -23,14 +22,14 @@ ms.technology: mdo
 
 # Prerequisite work for implementing identity and device access policies
 
-This article describes the prerequisites admins must meet to use recommended identity and device access policies, and to use Conditional Access. It also discusses the recommended defaults for configuring client platforms for the best single sign-on (SSO) experience.
-
-## Prerequisites
-
 **Applies to**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - Azure
+
+This article describes the prerequisites admins must meet to use recommended identity and device access policies, and to use Conditional Access. It also discusses the recommended defaults for configuring client platforms for the best single sign-on (SSO) experience.
+
+## Prerequisites
 
 Before using the identity and device access policies that are recommended, your organization needs to meet prerequisites. The requirements are different for the various identity and authentication models listed:
 
