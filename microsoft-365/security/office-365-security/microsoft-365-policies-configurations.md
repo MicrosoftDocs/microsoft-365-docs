@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
-ms.date: 09/29/2020
+ms.date: 02/11/2021
 f1.keywords: 
   - NOCSH
 ms.reviewer: martincoetzer
@@ -41,6 +41,11 @@ These capabilities and their recommendations:
 - Will help you implement these [five steps to securing your identity infrastructure](https://docs.microsoft.com/azure/security/azure-ad-secure-steps).
 
 If your organization has unique environment requirements or complexities, use these recommendations as a starting point. However, most organizations can implement these recommendations as prescribed.
+
+Watch this video for a quick overview of identity and device access configurations for Microsoft 365 for enterprise.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
 > Microsoft also sells Enterprise Mobility + Security (EMS) licenses for Office 365 subscriptions. EMS E3 and EMS E5 capabilities are equivalent to those in Microsoft 365 E3 and Microsoft 365 E5. See [EMS plans](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) for the details.
