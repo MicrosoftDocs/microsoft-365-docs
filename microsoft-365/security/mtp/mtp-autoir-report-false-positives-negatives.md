@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 ms.date: 01/29/2021
-ms.localizationpriority: medium
+localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 

@@ -4,7 +4,7 @@ description: Advantages in the Microsoft 365 security center, combining Microsof
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-ms.localizationpriority: medium
+localization_priority: Normal
 f1.keywords:
 - NOCSH
 ms.date: 02/02/2021

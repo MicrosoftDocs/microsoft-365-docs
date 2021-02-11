@@ -4,8 +4,8 @@ description: Describes how to take action to improve your Microsoft Secure Score
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-ms.localizationpriority: medium
-f1.keywords: 
+localization_priority: Normal
+f1.keywords:
   - NOCSH
 ms.author: ellevin
 author: levinec
