@@ -31,7 +31,7 @@ The scale of ongoing cybersecurity incidents affecting large enterprises and sma
 
 MAPG provides you with comprehensive:
 
-- **Insights**: See a view of all the Microsoft 365 apps in your tenant in a single dashboard. You can see all the apps’ activities and react or respond to them.
+- **Insights**: See a view of all the Microsoft 365 apps in your tenant on a single dashboard. You can see all the apps’ activities and react or respond to them.
 - **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting the access of risky apps to your data.
 - **Detection**: Be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used. 
 - **Remediation**: Along with automatic remediation capabilities, use remediation tools and controls in a timely manner to respond to anomalous app activity detections.
@@ -50,7 +50,7 @@ TBD
 
 ## Administrator roles
 
-One of the following administration roles are required to see MAPG pages or manage policies and settings:
+One of the following administrator roles are required to see MAPG pages or manage policies and settings:
 
 - Security Administrator 
 - Security Reader (read-only) 
@@ -75,7 +75,7 @@ Here are the capabilities for each role.
 
 For additional information about each role, see [Administrator role permissions](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference). 
 
-## A first glipmse at MAPG
+## A first glimpse at MAPG
 
 To see the MAPG dashboard, go to [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
 
