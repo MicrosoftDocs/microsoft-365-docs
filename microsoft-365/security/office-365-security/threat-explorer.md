@@ -57,7 +57,7 @@ Alert ID is available within the URL, when you are viewing an individual alert, 
 
  
 ### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days (Preview)  
-As part of this change, you will be able to search for, and filter across email data across 30 days (increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants. 
+As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants. 
 This does not impact any production tenants for both P1 and P2/E5 customers, which already has the 30 day data retention and search capabilities. 
 
 ### Updated limits for Export of records for Threat Explorer (Preview) 
