@@ -60,8 +60,8 @@ Choose from these role group options when configuring communication compliance:
 |:-----|:-----|
 | **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that do not need separate permissions defined for separate groups of users. |
 | **Communication Compliance Admin** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group cannot view message alerts. |
-| **Communication Compliance Analyst** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
-| **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
+| **Communication Compliance Analyst** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to other reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
+| **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to other reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
 | **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
 
 ### For organizations using the original permissions and role groups
@@ -409,6 +409,8 @@ Complete the following steps to delete a Power Automate flow:
 
 The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing.
 
+![Communication compliance reports dashboard](../media/communication-compliance-reports-dashboard.png)
+
 The **Reports dashboard** contains the following report widgets and detailed reports links:
 
 - **Recent policy matches** widget: displays the number of matches by active policy over time.
@@ -416,9 +418,46 @@ The **Reports dashboard** contains the following report widgets and detailed rep
 - **Users with most policy match** widget: displays the users (or anonymized usernames) and number of policy matches for a given period.
 - **Policy with most matches** widget: displays the policies and the number of matches for a given period, ranked highest to lowest for matches.
 - **Escalations by policy** widget: displays the number of escalations per policy over a given time.
-- **Policy settings and status** detailed report: provides a detailed look at policy configuration and settings, as well as the general status for each of the policy (matches and actions) on messages. Use the *Export* option to create a .CSV file containing the report details.
-- **Items and actions per policy** detailed report: Review and export matching items and remediation actions per policy. Use the *Export* option to create a .CSV file containing the report details.
-- **Item and actions per location** detailed report: Review and export matching items and remediation actions per Microsoft 365 location. Use the *Export* option to create a .CSV file containing the report details.
+- **Policy settings and status** detailed report: provides a detailed look at policy configuration and settings, as well as the general status for each of the policy (matches and actions) on messages. Includes policy information and how policies are associated with users and groups, locations, review percentages, reviewers, status, and when the policy was last modified. Use the *Export* option to create a .CSV file containing the report details.
+- **Items and actions per policy** detailed report: Review and export matching items and remediation actions per policy. Includes policy information and how policies are associated with:
+
+    - Items matched
+    - Escalated items
+    - Resolved items
+    - Tagged as compliant
+    - Tagged as non-compliant
+    - Tagged as questionable
+    - Items pending review
+    - User notified
+    - Case created
+    
+    Use the *Export* option to create a .csv file containing the report details.
+- **Item and actions per location** detailed report: Review and export matching items and remediation actions per Microsoft 365 location. Includes information about how workload platforms are associated with:
+
+    - Items matched
+    - Escalated items
+    - Resolved items
+    - Tagged as compliant
+    - Tagged as non-compliant
+    - Tagged as questionable
+    - Items pending review
+    - User notified
+    - Case created
+
+    Use the *Export* option to create a .csv file containing the report details.
+- **Activity by user** detailed report: Review and export matching items and remediation actions per user. Includes information about how users are associated with:
+
+    - Items matched
+    - Escalated items
+    - Resolved items
+    - Tagged as compliant
+    - Tagged as non-compliant
+    - Tagged as questionable
+    - Items pending review
+    - User notified
+    - Case created
+
+    Use the *Export* option to create a .csv file containing the report details.
 
 ## Audit
 
