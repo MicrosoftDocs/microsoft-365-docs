@@ -54,7 +54,7 @@ Named entity SITs and enhanced policies are not supported for:
 
 ## Create and edit enhanced policies
 
-To create or edit a DLP policy, use the procedures in [Create, test, and tune a DLP policy](create-test-tune-a-dlp-policy.md) or [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md.)
+To create or edit a DLP policy, use the procedures in [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) or [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md.)
 
 ## Known issues 
 
@@ -69,5 +69,5 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 ## For further information
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->
 - [Learn about named entities (preview)](named-entities-learn.md).
-- [Create, test, and tune a DLP policy](create-test-tune-a-dlp-policy.md)
+- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md.)
