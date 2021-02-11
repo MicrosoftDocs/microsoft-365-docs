@@ -233,7 +233,7 @@ If your organization has implemented [Azure AD conditional access policies](http
 
 If you can't create and configure guest accounts in your tenant for external users who need to open documents that are encrypted by your labels, you must either remove Azure Information Protection from the conditional access policies, or exclude external users from the policies.
 
-For more information about conditional access polices and Azure Information Protection, the encryption service used by sensitivity labels, see [I see Azure Information Protection is listed as an available cloud app for conditional access—how does this work?](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+For more information about conditional access polices and Azure Information Protection, the encryption service used by sensitivity labels, see the frequently asked question, [I see Azure Information Protection is listed as an available cloud app for conditional access—how does this work?](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 ## When Office apps apply content marking and encryption
 
