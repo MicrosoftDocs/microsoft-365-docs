@@ -23,11 +23,11 @@ description: "Understand the maximum number of policies and items per policy for
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-When you use [retention policies and retention label policies](retention.md##retention-policies-and-retention-labels) to automatically retain or delete data for your organization, there are some maximum numbers to be aware of.
+When you use [retention policies and retention label policies](retention.md#retention-policies-and-retention-labels) to automatically retain or delete data for your organization, there are some maximum numbers to be aware of.
 
 ## Maximum number of policies per tenant
 
-A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes the different policies for retention as well as other policies for compliance, such as DLP policies.
+A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes the different policies for retention and other policies for compliance, such as DLP policies.
 
 Maximum number of policies for retention per workload:
 
@@ -46,7 +46,7 @@ Maximum numbers of items per policy for retention:
   - 1,000 users for Teams private chats
   - 100 sites (OneDrive or SharePoint)
 
-Because these limitations are per policy, if you need to use specific inclusions or exclusions that result in going over these numbers, you can create additional policies that have the same retention settings. See the next section for some [example scenarios and solutions](#examples-of-using-inclusions-and-exclusions) that use multiple retention policies for this reason.
+Because these limitations are per policy, if you need to use specific inclusions or exclusions that result in going over these numbers, you can create additional policies that have the same retention settings. See the next section for some [example scenarios and solutions](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) that use multiple retention policies for this reason.
 
 However, multiple policies result in higher administrative overheads, so always confirm whether you really need inclusions and exclusions. Remember that the default configuration that applies to the entire location doesn't have any limitations, and this configuration choice might be a better solution than creating and maintaining multiple policies.
 
