@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand the maximum number of polices and items per policy for retention policies and retention label policies"
+description: "Understand the maximum number of policies and items per policy for retention policies and retention label policies"
 ---
 
 # Limits for retention policies and retention label policies
@@ -65,7 +65,7 @@ Exchange example:
     
     In both cases, the number included and excluded is below the maximum number of specified mailboxes for a single policy, and the subset of users must be explicitly excluded from the first policy because it has a [longer retention period](retention.md#the-principles-of-retention-or-what-takes-precedence) than the second policy. If the subset of users required a longer retention policy, you wouldn't need to exclude them from the first policy.
      
-    With this solution, if anybody new joins the organization, their mailbox is automatically included in the first policy for 7 years and there is no impact to the maximum numbers supported. However, new users that require the 5 year retention period add to the include and exclude numbers, and this limit would be reached at 1,000.
+    With this solution, if anybody new joins the organization, their mailbox is automatically included in the first policy for 7 years and there is no impact to the maximum numbers supported. However, new users that require the 5-year retention period add to the include and exclude numbers, and this limit would be reached at 1,000.
 
 SharePoint example:
 
