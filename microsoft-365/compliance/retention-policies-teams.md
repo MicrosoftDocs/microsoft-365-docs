@@ -103,7 +103,7 @@ However, if conversation history is turned on for Skype for Business and from th
 
 Channel meeting messages are stored the same way as channel messages, so for this data, select the **Teams channel messages** location when you configure your retention policy.
 
-Impromptu meeting messages are stored in the same way as group chat messages, so for this data, select the **Teams chats** location when you configure your retention policy.
+Impromptu and scheduled meeting messages are stored in the same way as group chat messages, so for this data, select the **Teams chats** location when you configure your retention policy.
 
 When external users are included in a meeting that your organization hosts:
 
