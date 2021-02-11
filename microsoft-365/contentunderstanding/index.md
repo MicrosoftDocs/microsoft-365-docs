@@ -71,6 +71,7 @@ The resources in this section help your users learn how to create and configure 
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |Learn how to see data about your models|[Model usage analytics](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
+|Learn how to use accessibility mode when training a model|[SharePoint Syntex accessibility mode](https://docs.microsoft.com/microsoft-365/contentunderstanding/accessibility-mode)|
 
 ## Premium services
 
