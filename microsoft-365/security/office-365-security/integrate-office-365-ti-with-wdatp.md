@@ -31,7 +31,7 @@ ms.prod: m365-security
 
 Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint can help your security operations team monitor and take action quickly if users' devices are at risk. For example, once integration is enabled, your security operations team will be able to see the devices that are potentially affected by a detected email message, as well as how many recent alerts were generated for those devices in Microsoft Defender for Endpoint.
 
-The following image depicts what the **Devices** tab looks like have Microsoft Defender for Endpoint integration enabled:
+The following image depicts what the **Devices** tab looks like when you have Microsoft Defender for Endpoint integration enabled:
 
 ![When Microsoft Defender for Endpoint is enabled, you can see a list of devices with alerts.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 

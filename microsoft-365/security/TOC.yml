@@ -648,7 +648,7 @@
               href: ./office-365-security/set-up-anti-phishing-policies.md
             - name: Backscatter in EOP
               href: ./office-365-security/backscatter-messages-and-eop.md
-            - name: Bulk complaint level (SCL)
+            - name: Bulk complaint level (BCL)
               href: ./office-365-security/bulk-complaint-level-values.md
             - name: End-user spam notifications
               href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
