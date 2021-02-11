@@ -120,6 +120,10 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
+        - name: Learn about named entities (preview)
+          href: named-entities-learn.md
+        - name: Use named entities in your data loss prevention policies (preview)
+          href: named-entities-use.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
