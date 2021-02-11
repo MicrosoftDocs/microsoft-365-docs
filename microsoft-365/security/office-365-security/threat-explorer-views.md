@@ -40,7 +40,6 @@ When you first open Explorer (or the real-time detections report), the default v
 |ATP P1 paid testing ATP P2 trial|Threat Explorer|7|
 |ATP P2 trial|Threat Explorer|7|
 |ATP P2 paid|Threat Explorer|30|
-|
 
 > [!NOTE]
 > We will soon be extending the Explorer (and Real-time Detections) data retention and search limit for trial tenants from 7 to 30 days. This change is being tracked as part of roadmap item no. 70544,  and is currently in a roll-out phase. 
