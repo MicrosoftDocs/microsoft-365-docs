@@ -71,7 +71,6 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Australia Privacy Act (Microsoft 365)
 - Australia Privacy (Credit Reporting) Code 2014 (Version 2.1)
 - Australian Energy Sector Cyber Security Framework (AESCSF) (Microsoft 365)
-- [Australian Information Security Registered Assessor Program (IRAP) Version 2](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365)
 - [Australian Prudential Regulation Authority CPS](https://docs.microsoft.com/compliance/regulatory/offering-apra-australia) (Microsoft 365)
 - Austrian Telecommunications Act 2003 (Microsoft 365)
 - Bahamas -  Data Protection Act (Microsoft 365)
@@ -116,7 +115,6 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Colombia - Decree No. 1377/2013 (used to be the Colombia Law 1581/2012)
 - Colombia - External Circular Letter 007 of 2018 (Microsoft 365)
 - Colombia - Law 1266/2008- Habeas Data Act (Microsoft 365)
-- Colombia - Law 1581/2012 (Microsoft 365)
 - Commission Statement and Guidance on Public Company Cybersecurity Disclosures - US
 - Computer Fraud and Abuse Act (CFAA) (Microsoft 365)
 - Connecticut  - Display and Use of Social Security Numbers and Personal Information (Microsoft 365)
@@ -126,7 +124,6 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Consumer Personal Information Security Breach Notification Act (Microsoft 365)
 - Content of Premarket Submissions for Management of Cybersecurity in Medical Devices (Microsoft 365)
 - [Criminal Justice Information Services (CJIS) Security Policy](https://docs.microsoft.com/compliance/regulatory/offering-cjis) (Microsoft 365)
-- Croatia - Personal Data Protection Act (Microsoft 365)
 - Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software - FDA (Microsoft 365)
 - Cybersecurity Law of the People's Republic of China (Microsoft 365)
 - Cyprus The Processing of Personal Data Law (Microsoft 365)
@@ -169,7 +166,6 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Germany - Federal Data Protection Act (Microsoft 365)
 - Germany - Supervisory Requirements for IT in Financial Institutions (BAIT) (Microsoft 365)
 - [Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy](offering-glba.md) (Microsoft 365)
-- Greece - Law 2472/1997 on the Protection of individuals with regard to the processing of personal data (Microsoft 365)
 - Guam's Notification of Breaches of Personal Information (Microsoft 365)
 - Guidelines and Functional Requirements for Electronic Records Management Systems (ICA Module 2) (Microsoft 365)
 - Hawaii - Security Breach of Personal Information Chapter 487N
@@ -182,7 +178,6 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - India Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules
 - Indiana Disclosure of Security Breach (Microsoft 365)
 - Indonesia - Law 11/2008 (Microsoft 365)
-- Indonesia - Peraturan Pemerintah No.82 Tahun 2012 - Government Regulation - Data Protection Regulation (Microsoft 365)
 - Information Management Standard for Australian Government - National Archives of Australia (NAA) (Microsoft 365)
 - Iowa - Student Personal Information Protection Act (Microsoft 365)
 - Iowa Code. Title XVI. Chapter 715C. Personal Information Security Breach Protection (Microsoft 365)
@@ -240,7 +235,6 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Nebraska's Data Protection and Consumer Notification of Data Security Breach Act (Microsoft 365)
 - Nepal - Right to Information Act
 - [NERC CIP](https://docs.microsoft.com/compliance/regulatory/offering-nerc-cip) (Microsoft 365)
-- Netherlands - Personal Data Protection Act / 1999 (Microsoft 365)
 - Nevada Chapter 603A - Security and Privacy of Personal Information (Microsoft 365)
 - Nevada Senate Bill 220 Online Privacy Law (Microsoft 365)
 - New Mexico Chapter 57 - Privacy Protection (Article 57-12B-1 through 4) (Microsoft 365)
@@ -248,7 +242,6 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - New Mexico's Data Breach Notification Act (Microsoft 365)
 - New York City Administrative Code - Security Breach Notification (Microsoft 365)
 - New York General Business Law - Data Security Breach Notification and Data Security Protections (Microsoft 365)
-- New York Privacy Act - DRAFT (Microsoft 365)
 - New Zealand Health Data Retention Policy (Office 365)
 - New Zealand Health Information Privacy Code 1994 (Microsoft 365)
 - New Zealand Health Information Security Framework (HISF) -2015 (Microsoft 365)
@@ -270,7 +263,6 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - NIST Special Publication 1800-1 Securing Electronic Health Records on Mobile Devices (Microsoft 365)
 - NIST Special Publication 1800-5 IT Asset Management
 - North Carolina - Identity Theft Protection Act (Microsoft 365)
-- Norway - Personal Data Act (Microsoft 365)
 - NYDFS (Microsoft 365)
 - Ohio - Security Breach Notification (Microsoft 365)
 - Ohio Data Protection Act 2018 (Microsoft 365)
