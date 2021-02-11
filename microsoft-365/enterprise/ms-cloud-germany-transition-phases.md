@@ -92,7 +92,7 @@ Back-end Exchange Online Protection (EOP) features are copied to new Germany reg
 |||||
 
 
-## Office Apps (Phase 9 of 9)
+## Office Apps (Phase 8 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
