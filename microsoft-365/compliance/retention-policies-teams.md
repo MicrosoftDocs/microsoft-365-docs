@@ -48,7 +48,7 @@ You can use a retention policy to retain and delete data from chats and channel 
 
 These mailboxes are, listed by their RecipientTypeDetails attribute:
 
-- **UserMailbox**: These mailboxes store messages for Team users who have an Exchange Online mailbox.
+- **UserMailbox**: These mailboxes store messages for Teams users who have an Exchange Online mailbox.
 - **MailUser**: These mailboxes store messages for Teams users who have a mailbox for an on-premises Exchange server and not Exchange Online.
 - **User**: These mailboxes store messages for Teams users who don’t have a mailbox for Exchange Online or on-premise Exchange servers.
 - **GroupMailbox**: These mailboxes store messages for Teams channels.
