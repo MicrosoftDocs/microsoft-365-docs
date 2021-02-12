@@ -40,8 +40,8 @@ The resources in this section help you learn more about the two methods of data 
 |Learn more about document understanding|[Document understanding overview](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
 |Learn more about form processing|[Form processing overview](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
 |Understand the differences between the two methods|[Difference between document understanding and form processing models](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
-|See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://resources.techcommunity.microsoft.com/sharepoint-syntex/)|
-|SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/project-cortex-microsoft-365/faq/)|
+|See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
+|SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |How to get SharePoint Syntex |[SharePoint Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
 
 ## Adoption
@@ -71,6 +71,7 @@ The resources in this section help your users learn how to create and configure 
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |Learn how to see data about your models|[Model usage analytics](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
+|Learn how to use accessibility mode when training a model|[SharePoint Syntex accessibility mode](https://docs.microsoft.com/microsoft-365/contentunderstanding/accessibility-mode)|
 
 ## Premium services
 
