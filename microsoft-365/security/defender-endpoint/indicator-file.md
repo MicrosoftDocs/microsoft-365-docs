@@ -38,7 +38,7 @@ There are two ways you can create indicators for files:
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for files:
 
-- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 - The Antimalware client version must be 4.18.1901.x or later.
 - Supported on machines on Windows 10, version 1703 or later, Windows server 2016 and 2019.
 - To start blocking files, you first need to [turn the **Block or allow** feature on](advanced-features.md) in Settings.
