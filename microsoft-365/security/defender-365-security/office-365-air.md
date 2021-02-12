@@ -76,11 +76,11 @@ AIR capabilities are included in [Microsoft Defender for Office 365](defender-fo
 - [Antimalware policies](protect-against-threats.md#part-1---anti-malware-protection)
 - [Antiphishing protection](protect-against-threats.md#part-2---anti-phishing-protection)
 - [Antispam protection](protect-against-threats.md#part-3---anti-spam-protection)
-- [Antiphishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-2---anti-phishing-protection)
-- [Antispam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-3---anti-spam-protection)
-- [Safe Links and Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?zero-hour-auto-purge-for-email-in-eop)
+- [Antiphishing protection](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats?part-2---anti-phishing-protection)
+- [Antispam protection](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats?part-3---anti-spam-protection)
+- [Safe Links and Safe Attachments](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats?part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats?part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [Zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats?zero-hour-auto-purge-for-email-in-eop)
 - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [Zero-hour auto purge for email](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop).
 
@@ -127,7 +127,7 @@ If you’re already using AIR capabilities in Microsoft Defender for Office 365,
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center":::
 
-The new and improved security center brings together AIR capabilities in [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) and in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
+The new and improved security center brings together AIR capabilities in [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp) and in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
 
 > [!TIP]
 > The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) replaces the following centers:
@@ -145,7 +145,7 @@ The following table lists changes and improvements coming to AIR in Microsoft De
 |**Investigations** page     | The updated **Investigations** page is more consistent with what you see in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). You’ll see some general format and styling changes that align with the new, unified **Investigations** view. For example, the investigation graph has a more unified format.        |
 |**Users** tab |The **Users** tab is now the **Mailboxes** tab. Details about users are listed on the **Mailbox** tab. |
 |**Email** tab |The **Email** tab has been removed; visit the **Entities** tab to see a list of email and email cluster items. |
-|**Entities** tab |	The **Entities** tab has a tab-in-tab style that includes an all-summary view, and the ability to filter by entity type. The **Entities** tab now includes a **Go hunting** option in addition to the **Open in Explorer** option. You can now use either [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) or [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) to find entities and threats, and filter on results. | 
+|**Entities** tab |	The **Entities** tab has a tab-in-tab style that includes an all-summary view, and the ability to filter by entity type. The **Entities** tab now includes a **Go hunting** option in addition to the **Open in Explorer** option. You can now use either [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/defender-365-security/threat-explorer) or [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) to find entities and threats, and filter on results. | 
 |**Actions** tab |The updated **Actions** tab now includes a **Pending actions** tab and an **Actions history** tab. Actions can be approved (or rejected) in a side pane that opens when you select a pending action. |
 |**Evidence** tab |	A new **Evidence** tab shows the key entity findings related to actions. Actions related to each piece of evidence can be approved (or rejected) in a side pane that opens when you select a pending action. |
 |**Action center** |The updated **Action center** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together pending and completed actions across email, devices, and identities. To learn more, see Action center. (To learn more, see [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).)

@@ -91,7 +91,7 @@ Microsoft support staff can help provision or deprovision the service and relate
 - [Deploy supported services](deploy-supported-services.md)
 - [Microsoft 365 Defender overview](microsoft-threat-protection.md)
 - [Microsoft Defender for Endpoint overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Defender for Office 365 overview](../office-365-security/office-365-atp.md)
+- [Defender for Office 365 overview](../defender-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity overview](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 - [Microsoft Defender for Endpoint data storage](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

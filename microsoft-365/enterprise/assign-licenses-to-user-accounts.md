@@ -62,7 +62,7 @@ For more informaion, see [group-based licensing in Azure AD](https://docs.micros
 
 With the appropriate set of user accounts that have been assigned licenses, you are now ready to:
 
-- [Implement security](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+- [Implement security](https://docs.microsoft.com/microsoft-365/security/defender-365-security/security-roadmap)
 - [Deploy client software, such as Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Set up device management](device-management-roadmap-microsoft-365.md)
 - [Configure services and applications](configure-services-and-applications.md)

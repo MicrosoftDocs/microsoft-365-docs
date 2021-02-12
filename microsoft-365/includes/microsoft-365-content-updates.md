@@ -1,5 +1,6 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
+
+
 
 
 ## Week of February 01, 2021
@@ -38,7 +39,7 @@
 | 2/2/2021 | [Document understanding model usage analytics](/microsoft-365/contentunderstanding/model-usage-analytics) | modified |
 | 2/2/2021 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
 | 2/2/2021 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/mtp/custom-detection-rules?view=o365-21vianet) | modified |
-| 2/2/2021 | [Overview of custom detections in Microsoft 365 Defender](/microsoft-365/security/mtp/custom-detections-overview?view=o365-21vianet) | modified |
+| 2/2/2021 | [Overview of custom detections in Microsoft 365 Defender](/microsoft/defender-365-security/tom-detections-overview?view=o365-21vianet) | modified |
 | 2/2/2021 | [Evaluate Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-evaluation?view=o365-21vianet) | modified |
 | 2/2/2021 | [Use a PowerShell script to search the audit log](/microsoft-365/compliance/audit-log-search-script?view=o365-21vianet) | added |
 | 2/2/2021 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
@@ -48,7 +49,7 @@
 | 2/2/2021 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
 | 2/2/2021 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
 | 2/2/2021 | [Connect to all Microsoft 365 services in a single PowerShell window](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window?view=o365-21vianet) | modified |
-| 2/2/2021 | [Top scoring in industry tests - Microsoft 365 Defender](/microsoft-365/security/mtp/top-scoring-industry-tests?view=o365-21vianet) | modified |
+| 2/2/2021 | [Top scoring in industry tests - Microsoft 365 Defender](/microsoft-365/security/mtp/top-scorin/defender-365-security/=o365-21vianet) | modified |
 | 2/2/2021 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
 | 2/3/2021 | [Overview of Microsoft 365 Groups for administrators](/microsoft-365/admin/create-groups/office-365-groups?view=o365-21vianet) | modified |
 | 2/3/2021 | [About shared mailboxes](/microsoft-365/admin/email/about-shared-mailboxes?view=o365-21vianet) | modified |
@@ -65,20 +66,20 @@
 | 2/3/2021 | [Topic Experiences topic discovery and curation (Preview) ](/microsoft-365/knowledge/topic-experiences-discovery-curation) | modified |
 | 2/3/2021 | [Topic Experiences overview (Preview)](/microsoft-365/knowledge/topic-experiences-overview) | modified |
 | 2/3/2021 | [Microsoft Managed Desktop technologies](/microsoft-365/managed-desktop/intro/technologies?view=o365-21vianet) | modified |
-| 2/3/2021 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
-| 2/3/2021 | [Enable the Report Message add-in](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-21vianet) | modified |
-| 2/3/2021 | [Enable the Report Phish add-in](/microsoft-365/security/office-365-security/enable-the-report-phish-add-in?view=o365-21vianet) | modified |
+| 2/3/2021 | [Migrate advanced hunting queries from Microsoft Defender /defender-365-security/oft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
+| 2/3/2021 | [Enable the Report Message add-in](/microsoft-365/securi/defender-365-security/y/enable-the-report-message-add-in?view=o365-21vianet) | modified |
+| 2/3/2021 | [Enable the Report Phish add-in](/microsoft-365/security/office-365-s/defender-365-security/port-phish-add-in?view=o365-21vianet) | modified |
 | 2/3/2021 | [Application Guard for Office 365 for admins](/microsoft-365/security/office-365-security/install-app-guard?view=o365-21vianet) | modified |
 | 2/3/2021 | [Microsoft 365 client and services app support](/microsoft-365/enterprise/microsoft-365-client-services-app-support?view=o365-21vianet) | added |
 | 2/3/2021 | [Microsoft 365 Client App Support: Multi-factor authentication](/microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication?view=o365-21vianet) | renamed |
 | 2/3/2021 | [Hybrid Modern Authentication overview and prerequisites for use with on-premises Skype for Business and Exchange servers](/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-21vianet) | modified |
 | 2/3/2021 | [Microsoft 365 Client App Support: Certificate-based Authentication](/microsoft-365/enterprise/microsoft-365-client-support-certificate-based-authentication?view=o365-21vianet) | modified |
 | 2/3/2021 | [Microsoft 365 Client App Support: Conditional Access](/microsoft-365/enterprise/microsoft-365-client-support-conditional-access?view=o365-21vianet) | modified |
-| 2/3/2021 | [Microsoft 365 Client App Support: Single Sign-On](/microsoft-365/enterprise/microsoft-365-client-support-single-sign-on?view=o365-21vianet) | modified |
-| 2/3/2021 | [Common identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-policies?view=o365-21vianet) | modified |
-| 2/3/2021 | [Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-prerequisites?view=o365-21vianet) | modified |
-| 2/3/2021 | [Secure email recommended policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/secure-email-recommended-policies?view=o365-21vianet) | modified |
-| 2/3/2021 | [Recommended secure document policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/sharepoint-file-access-policies?view=o365-21vianet) | modified |
+| 2/3/2021 | [Microsoft 365 Client App Support: Single Sign-On](/microsoft-365/enterprise/microsoft-365-client-support-single-sign/defender-365-security/t) | modified |
+| 2/3/2021 | [Common identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identit/defender-365-security/w=o365-21vianet) | modified |
+| 2/3/2021 | [Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise \| Mi/defender-365-security/oft-365/security/office-365-security/identity-access-prerequisites?view=o365-21vianet) | modified |
+| 2/3/2021 | [Secure email recommended policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/of/defender-365-security/ure-email-recommended-policies?view=o365-21vianet) | modified |
+| 2/3/2021 | [Recommended secure document policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-36/defender-365-security/-security/sharepoint-file-access-policies?view=o365-21vianet) | modified |
 | 2/3/2021 | [Recommended Teams policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/teams-access-policies?view=o365-21vianet) | modified |
 | 2/3/2021 | [Top 12 tasks for security teams to support working from home](/microsoft-365/security/top-security-tasks-for-remote-work?view=o365-21vianet) | modified |
 | 2/3/2021 | [Step 1. Increase sign-in security for remote workers with MFA](/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in?view=o365-21vianet) | modified |
@@ -87,8 +88,8 @@
 | 2/3/2021 | [Use the step-by-step guide to add Autopilot devices and profile](/microsoft-365/business/add-autopilot-devices-and-profile?view=o365-21vianet) | modified |
 | 2/3/2021 | [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection?view=o365-21vianet) | modified |
 | 2/3/2021 | [Set up compliance boundaries for eDiscovery investigations](/microsoft-365/compliance/set-up-compliance-boundaries?view=o365-21vianet) | modified |
-| 2/3/2021 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-21vianet) | modified |
-| 2/3/2021 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
+| 2/3/2021 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-21vianet)/defender-365-security/
+| 2/3/2021 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365//defender-365-security/ecurity/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
 | 2/3/2021 | [About the Microsoft Defender for Office 365 trial](/microsoft-365/security/office-365-security/about-defender-for-office-365-trial?view=o365-21vianet) | added |
 | 2/4/2021 | [Multi-factor authentication for Microsoft 365](/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365?view=o365-21vianet) | modified |
 | 2/4/2021 | [Set up multi-factor authentication for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
@@ -126,7 +127,7 @@
 | 2/4/2021 | [Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (general)](/microsoft-365/enterprise/ms-cloud-germany-transition-phases?view=o365-21vianet) | modified |
 | 2/4/2021 | [Access the Admin portal](/microsoft-365/managed-desktop/get-started/access-admin-portal?view=o365-21vianet) | modified |
 | 2/4/2021 | [Device requirements](/microsoft-365/managed-desktop/service-description/device-requirements?view=o365-21vianet) | modified |
-| 2/4/2021 | [Microsoft 365 solution and architecture center # < 60 chars](/microsoft-365/solutions/index?view=o365-21vianet) | modified |
+| 2/4/2021 | [Microsoft 365 solution and architecture center # < 60 chars](/microsoft-365/solutions/defender-365-security/anet) | modified |
 | 2/4/2021 | [Terms of use for the Microsoft Defender for Office 365 trial](/microsoft-365/security/office-365-security/terms-of-use-defender-for-office-365-trial?view=o365-21vianet) | added |
 | 2/4/2021 | Change your payment method | removed |
 | 2/4/2021 | [Change your billing addresses](/microsoft-365/commerce/billing-and-payments/change-your-billing-addresses?view=o365-21vianet) | modified |
@@ -173,7 +174,7 @@
 | 2/4/2021 | [Renew Microsoft 365 for business](/microsoft-365/commerce/subscriptions/renew-your-subscription?view=o365-21vianet) | modified |
 | 2/4/2021 | [Upgrade to a different business plan](/microsoft-365/commerce/subscriptions/upgrade-to-different-plan?view=o365-21vianet) | modified |
 | 2/4/2021 | [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies?view=o365-21vianet) | modified |
-| 2/4/2021 | [What's new in Microsoft 365 compliance](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
+| 2/4/2021 | [What's new in Microsoft 365 compliance](/microsoft-365/compliance/whats-ne/defender-365-security/ | modified |
 | 2/4/2021 | [About the Microsoft Defender for Office 365 trial](/microsoft-365/security/office-365-security/about-defender-for-office-365-trial?view=o365-21vianet) | modified |
 | 2/4/2021 | [Manage which ‎Office‎ features appear in What's New](/microsoft-365/admin/manage/show-hide-new-features?view=o365-21vianet) | modified |
 | 2/5/2021 | [Manage which ‎Office‎ features appear in What's New](/microsoft-365/admin/manage/show-hide-new-features?view=o365-21vianet) | modified |
@@ -323,7 +324,7 @@
 | 1/25/2021 | [Topic center overview (Preview) ](/microsoft-365/knowledge/topic-center-overview) | modified |
 | 1/25/2021 | [Topic Experiences topic discovery and curation (Preview) ](/microsoft-365/knowledge/topic-experiences-discovery-curation) | modified |
 | 1/25/2021 | [Topic Experiences overview (Preview)](/microsoft-365/knowledge/topic-experiences-overview) | modified |
-| 1/25/2021 | [Topic Experiences roles (Preview)](/microsoft-365/knowledge/topic-experiences-roles) | modified |
+| 1/25/2021 | [Topic Experiences roles (Preview)](/micros/defender-365-security/ic-experiences-roles) | modified |
 | 1/25/2021 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
 | 1/25/2021 | [Attributes for information barrier policies](/microsoft-365/compliance/information-barriers-attributes?view=o365-21vianet) | modified |
 | 1/25/2021 | [Edit information barrier policies](/microsoft-365/compliance/information-barriers-edit-segments-policies?view=o365-21vianet) | modified |
@@ -343,14 +344,14 @@
 | 1/26/2021 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
 | 1/26/2021 | [View keyword statistics for Content Search results](/microsoft-365/compliance/view-keyword-statistics-for-content-search?view=o365-21vianet) | modified |
 | 1/26/2021 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-21vianet) | modified |
-| 1/26/2021 | [Microsoft 365 Defender advanced hunting API](/microsoft-365/security/mtp/api-advanced-hunting?view=o365-21vianet) | modified |
-| 1/26/2021 | [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
-| 1/26/2021 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
-| 1/26/2021 | [User submissions policy](/microsoft-365/security/office-365-security/user-submission?view=o365-21vianet) | modified |
+| 1/26/2021 | [Microsoft 365 Defender advanced hunting API](/microsoft-365/security/mtp/api-a/defender-365-security/o365-21vianet) | modified |
+| 1/26/2021 | [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-secu/defender-365-security/om-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
+| 1/26/2021 | [Set up Safe Attachments policies in Microsoft De/defender-365-security/](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
+| 1/26/2021 | [User submissions policy](/microsoft-365/security/office-365-security/use/defender-365-security/5-21vianet) | modified |
 | 1/26/2021 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?view=o365-21vianet) | modified |
 | 1/26/2021 | [Azure Information Protection support for Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet) | modified |
 | 1/26/2021 | [Microsoft 365 Business Premium resources # < 60 chars](/microsoft-365/business/index?view=o365-21vianet) | modified |
-| 1/26/2021 | [Insider risk management cases](/microsoft-365/compliance/insider-risk-management-cases?view=o365-21vianet) | modified |
+| 1/26/2021 | [Insider risk management cases](/microsoft-365/compliance/insider-risk-management-cases?view=o365-21vianet) | modifie/defender-365-security/
 | 1/26/2021 | [Common identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-policies?view=o365-21vianet) | modified |
 | 1/26/2021 | [Export Content Search results](/microsoft-365/compliance/export-search-results?view=o365-21vianet) | modified |
 | 1/26/2021 | [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-21vianet) | modified |
@@ -365,50 +366,50 @@
 | 1/27/2021 | [Introduction to Topic Experiences (Preview)](/microsoft-365/knowledge/index) | modified |
 | 1/27/2021 | [Topic Experiences topic discovery and curation (Preview) ](/microsoft-365/knowledge/topic-experiences-discovery-curation) | modified |
 | 1/27/2021 | [Topic Experiences overview (Preview)](/microsoft-365/knowledge/topic-experiences-overview) | modified |
-| 1/27/2021 | [EmailAttachmentInfo table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-emailattachmentinfo-table?view=o365-21vianet) | modified |
-| 1/27/2021 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
-| 1/27/2021 | [Configuration analyzer for security policies](/microsoft-365/security/office-365-security/configuration-analyzer-for-security-policies?view=o365-21vianet) | modified |
-| 1/27/2021 | [Enable the Report Message add-in](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-21vianet) | modified |
-| 1/27/2021 | [Enable the Report Phish add-in](/microsoft-365/security/office-365-security/enable-the-report-phish-add-in?view=o365-21vianet) | modified |
-| 1/27/2021 | [Application Guard for Office 365 for admins](/microsoft-365/security/office-365-security/install-app-guard?view=o365-21vianet) | modified |
-| 1/27/2021 | [Install and use the Junk Email Reporting add-in for Microsoft Outlook](/microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook?view=o365-21vianet) | modified |
-| 1/27/2021 | [Mail flow insights in the Mail flow dashboard](/microsoft-365/security/office-365-security/mail-flow-insights-v2?view=o365-21vianet) | modified |
-| 1/27/2021 | [Mail flow intelligence](/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365?view=o365-21vianet) | modified |
-| 1/27/2021 | [Auto-forwarded messages insight](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-21vianet) | modified |
-| 1/27/2021 | [Top domain mail flow status insight in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight?view=o365-21vianet) | modified |
-| 1/27/2021 | [Mail flow map](/microsoft-365/security/office-365-security/mfi-mail-flow-map-report?view=o365-21vianet) | modified |
-| 1/27/2021 | [Fix possible mail loop insight](/microsoft-365/security/office-365-security/mfi-mail-loop-insight?view=o365-21vianet) | modified |
-| 1/27/2021 | [New domains being forwarded email insight](/microsoft-365/security/office-365-security/mfi-new-domains-being-forwarded-email?view=o365-21vianet) | modified |
-| 1/27/2021 | [New users forwarding email insight](/microsoft-365/security/office-365-security/mfi-new-users-forwarding-email?view=o365-21vianet) | modified |
-| 1/27/2021 | [Non-accepted domain report in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-non-accepted-domain-report?view=o365-21vianet) | modified |
-| 1/27/2021 | [Non-delivery report in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-non-delivery-report?view=o365-21vianet) | modified |
-| 1/27/2021 | [Outbound and inbound mail flow insight in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow?view=o365-21vianet) | modified |
-| 1/27/2021 | [Queues insight in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues?view=o365-21vianet) | modified |
-| 1/27/2021 | [Fix slow mail flow rules insight](/microsoft-365/security/office-365-security/mfi-slow-mail-flow-rules-insight?view=o365-21vianet) | modified |
-| 1/27/2021 | [SMTP Auth clients insight and report in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report?view=o365-21vianet) | modified |
-| 1/27/2021 | [Report junk and phishing email in Outlook for iOS and Android](/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android?view=o365-21vianet) | modified |
-| 1/27/2021 | [Report junk and phishing email in Outlook on the web](/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop?view=o365-21vianet) | modified |
-| 1/27/2021 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
-| 1/27/2021 | [Manually submit messages to Microsoft for analysis](/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis?view=o365-21vianet) | modified |
-| 1/27/2021 | [Submit malware and non-malware to Microsoft for analysis](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis?view=o365-21vianet) | modified |
-| 1/27/2021 | [User submissions policy](/microsoft-365/security/office-365-security/user-submission?view=o365-21vianet) | modified |
+| 1/27/2021 | [EmailAttachmentInfo table in the advanced /defender-365-security/osoft-365/security/mtp/advanced-hunting-emailattachmentinfo-table?view=o365-21vianet) | modified |
+| 1/27/2021 | [Admin submissions](/microsoft-365/security/office-365-security/admin-/defender-365-security/21vianet) | modified |
+| 1/27/2021 | [Configuration analyzer for security policies](/microsoft-/defender-365-security/65-security/configuration-analyzer-for-security-policies?view=o365-21vianet) | modified |
+| 1/27/2021 | [Enable the Report Message add-in](/microsoft-365/securi/defender-365-security/y/enable-the-report-message-add-in?view=o365-21vianet) | modified |
+| 1/27/2021 | [Enable the Report Phish add-in](/microsoft-365/security/office-365-s/defender-365-security/port-phish-add-in?view=o365-21vianet) | modified |
+| 1/27/2021 | [Application Guard for Office 365 for admins](/microsoft-365/security/office-365-security/insta/defender-365-security/5-21vianet) | modified |
+| 1/27/2021 | [Install and use the Junk Email Reporting add-in for Microsoft Outlook]/defender-365-security/ity/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook?view=o365-21vianet) | modified |
+| 1/27/2021 | [Mail flow insights in the Mail flow dashboard](/defender-365-security/ty/office-365-security/mail-flow-insights-v2?view=o365-21vianet) | modified |
+| 1/27/2021 | [Mail flow intelligence](/microsoft-365/security/office-3/defender-365-security/-intelligence-in-office-365?view=o365-21vianet) | modified |
+| 1/27/2021 | [Auto-forwarded messages insight](/microsoft-365/security/office-365-security/mfi-auto-f/defender-365-security/ort?view=o365-21vianet) | modified |
+| 1/27/2021 | [Top domain mail flow status insight in/defender-365-security/ard](/microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight?view=o365-21vianet) | modified |
+| 1/27/2021 | [Mail flow map](/microsoft-365/security/office-365-secur/defender-365-security/-report?view=o365-21vianet) | modified |
+| 1/27/2021 | [Fix possible mail loop insight](/microsoft-365/security/office-365/defender-365-security/op-insight?view=o365-21vianet) | modified |
+| 1/27/2021 | [New domains being forwarded email insight](/microsoft-365/s/defender-365-security/curity/mfi-new-domains-being-forwarded-email?view=o365-21vianet) | modified |
+| 1/27/2021 | [New users forwarding email insight](/microsoft-365/security/office-365-securit/defender-365-security/rding-email?view=o365-21vianet) | modified |
+| 1/27/2021 | [Non-accepted domain report in the Mail flow dashboard](/microsoft-365/s/defender-365-security/curity/mfi-non-accepted-domain-report?view=o365-21vianet) | modified |
+| 1/27/2021 | [Non-delivery report in the Mail flow dashboard](/microsoft-365/security/office-365-securit/defender-365-security/port?view=o365-21vianet) | modified |
+| 1/27/2021 | [Outbound and inbound mail flow insight in the Mail flow dashboard]/defender-365-security/ity/office-365-security/mfi-outbound-and-inbound-mail-flow?view=o365-21vianet) | modified |
+| 1/27/2021 | [Queues insight in the Mail flow dashboard](/microsoft-365/defender-365-security/security/mfi-queue-alerts-and-queues?view=o365-21vianet) | modified |
+| 1/27/2021 | [Fix slow mail flow rules insight](/microsoft-365/security/office-365-security/mfi-slow-m/defender-365-security/t?view=o365-21vianet) | modified |
+| 1/27/2021 | [SMTP Auth clients insight and report in the Mail flow dashboard](/microsoft-365/securi/defender-365-security/y/mfi-smtp-auth-clients-report?view=o365-21vianet) | modified |
+| 1/27/2021 | [Report junk and phishing email in Outlook for iOS and Android](/microsoft-365/defender-365-security/security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android?view=o365-21vianet) | modified |
+| 1/27/2021 | [Report junk and phishing email in Outlook on the web](/microsoft-365/security/offi/defender-365-security/t-junk-email-and-phishing-scams-in-outlook-on-the-web-eop?view=o365-21vianet) | modified |
+| 1/27/2021 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365/s/defender-365-security/curity/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
+| 1/27/2021 | [Manually submit messages to Microsoft for analysis](/microsoft-365/security/offic/defender-365-security/-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis?view=o365-21vianet) | modified |
+| 1/27/2021 | [Submit malware and non-malware to Microsoft for /defender-365-security/365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis?view=o365-21vianet) | modified |
+| 1/27/2021 | [User submissions policy](/microsoft-365/security/office-365-security/use/defender-365-security/5-21vianet) | modified |
 | 1/27/2021 | [View mail flow reports in the Reports dashboard](/microsoft-365/security/office-365-security/view-mail-flow-reports?view=o365-21vianet) | modified |
 | 1/27/2021 | [Key compliance and security considerations for US banking and capital markets](/microsoft-365/solutions/financial-services-secure-collaboration?view=o365-21vianet) | modified |
 | 1/27/2021 | [Assess data privacy risks and identify sensitive items with Microsoft 365](/microsoft-365/solutions/information-protection-deploy-assess?view=o365-21vianet) | modified |
 | 1/27/2021 | [Compliance](/microsoft-365/managed-desktop/intro/compliance?view=o365-21vianet) | modified |
 | 1/27/2021 | [How updates are handled in Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/updates?view=o365-21vianet) | modified |
-| 1/27/2021 | [Device requirements](/microsoft-365/managed-desktop/service-description/device-requirements?view=o365-21vianet) | added |
+| 1/27/2021 | [Device requirements](/microsoft-365/managed-desktop/service-description/device-requirement/defender-365-security/ | added |
 | 1/27/2021 | [Microsoft Report Message and Report Phishing Add-In license terms](/microsoft-365/security/office-365-security/microsoft-message-phishing-report-terms?view=o365-21vianet) | added |
 | 1/27/2021 | [Set up Customer Key at the application level](/microsoft-365/compliance/customer-key-set-up?view=o365-21vianet) | modified |
 | 1/27/2021 | [Message Encryption (OME) version comparison](/microsoft-365/compliance/ome-version-comparison?view=o365-21vianet) | modified |
 | 1/27/2021 | [Resources to help you meet regulatory requirements for information governance and records management](/microsoft-365/compliance/retention-regulatory-requirements?view=o365-21vianet) | modified |
-| 1/27/2021 | [Microsoft Managed Desktop devices](/microsoft-365/managed-desktop/service-description/device-list?view=o365-21vianet) | modified |
-| 1/27/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
+| 1/27/2021 | [Microsoft Managed Desktop devices](/microsoft-365/managed-desktop/s/defender-365-security/vice-list?view=o365-21vianet) | modified |
+| 1/27/2021 | [Permissions - Security & Compliance Center](/micr/defender-365-security/fice-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
 | 1/27/2021 | [Quarantined messages FAQ](/microsoft-365/security/office-365-security/quarantine-faq?view=o365-21vianet) | modified |
 | 1/28/2021 | [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-21vianet) | modified |
 | 1/28/2021 | [Microsoft 365 Multi-Geo tenant configuration](/microsoft-365/enterprise/multi-geo-tenant-configuration?view=o365-21vianet) | modified |
-| 1/28/2021 | [Fix issues found by the readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readiness-assessment-fix?view=o365-21vianet) | modified |
-| 1/28/2021 | [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air?view=o365-21vianet) | modified |
+| 1/28/2021 | [Fix issues found by the readiness assessment tool](/microsoft-365/managed-desktop/get-ready/readin/defender-365-security/ew=o365-21vianet) | modified |
+| 1/28/2021 | [Automated investigation and response in Microsoft Defend/defender-365-security/icrosoft-365/security/office-365-security/office-365-air?view=o365-21vianet) | modified |
 | 1/28/2021 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-default?view=o365-21vianet) | modified |
 | 1/28/2021 | [Set up Microsoft 365 Business Premium](/microsoft-365/business/set-up?view=o365-21vianet) | modified |
 | 1/28/2021 | [Create a communications site](/microsoft-365/campaigns/create-communications-site?view=o365-21vianet) | modified |
@@ -703,205 +704,205 @@
 | 1/21/2021 | [Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center](/microsoft-365/security/mtp/tickets?view=o365-21vianet) | modified |
 | 1/21/2021 | [Top scoring in industry tests - Microsoft 365 Defender](/microsoft-365/security/mtp/top-scoring-industry-tests?view=o365-21vianet) | modified |
 | 1/21/2021 | [Troubleshoot Microsoft 365 Defender service issues](/microsoft-365/security/mtp/troubleshoot?view=o365-21vianet) | modified |
-| 1/21/2021 | [What's new in Microsoft 365 Defender](/microsoft-365/security/mtp/whats-new?view=o365-21vianet) | modified |
-| 1/21/2021 | [Address compromised user accounts with automated investigation and response](/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-21vianet) | modified |
-| 1/21/2021 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
-| 1/21/2021 | [ASF settings in EOP](/microsoft-365/security/office-365-security/advanced-spam-filtering-asf-options?view=o365-21vianet) | modified |
-| 1/21/2021 | [Using custom reporting solutions with automated investigation and response](/microsoft-365/security/office-365-security/air-custom-reporting?view=o365-21vianet) | modified |
-| 1/21/2021 | [Remediation actions following automated investigation in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-remediation-actions?view=o365-21vianet) | modified |
-| 1/21/2021 | [How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-report-false-positives-negatives?view=o365-21vianet) | modified |
-| 1/21/2021 | [Review and approve pending remediation actions in automated investigation and response](/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-21vianet) | modified |
-| 1/21/2021 | [View the results of an automated investigation in Microsoft 365](/microsoft-365/security/office-365-security/air-view-investigation-results?view=o365-21vianet) | modified |
-| 1/21/2021 | [Alerts in the Security & Compliance Center](/microsoft-365/security/office-365-security/alerts?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-malware protection FAQ](/microsoft-365/security/office-365-security/anti-malware-protection-faq-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-malware protection](/microsoft-365/security/office-365-security/anti-malware-protection?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-spam and anti-malware protection](/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-spam message headers](/microsoft-365/security/office-365-security/anti-spam-message-headers?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-spam protection FAQ](/microsoft-365/security/office-365-security/anti-spam-protection-faq?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-spam protection](/microsoft-365/security/office-365-security/anti-spam-protection?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-spoofing protection FAQ](/microsoft-365/security/office-365-security/anti-spoofing-protection-faq?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-spoofing protection](/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-21vianet) | modified |
-| 1/21/2021 | [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
-| 1/21/2021 | [Safe Attachments](/microsoft-365/security/office-365-security/atp-safe-attachments?view=o365-21vianet) | modified |
-| 1/21/2021 | [Safe Links](/microsoft-365/security/office-365-security/atp-safe-links?view=o365-21vianet) | modified |
-| 1/21/2021 | [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-21vianet) | modified |
-| 1/21/2021 | [Gain insights through Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-21vianet) | modified |
-| 1/21/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
-| 1/21/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-21vianet) | modified |
-| 1/21/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
-| 1/21/2021 | [Auditing reports in standalone EOP](/microsoft-365/security/office-365-security/auditing-reports-in-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [How automated investigation and response works in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/automated-investigation-response-office?view=o365-21vianet) | modified |
-| 1/21/2021 | [Protection features in Azure Information Protection rolling out to existing tenants](/microsoft-365/security/office-365-security/azure-ip-protection-features?view=o365-21vianet) | modified |
-| 1/21/2021 | [Backscatter in EOP](/microsoft-365/security/office-365-security/backscatter-messages-and-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Best practices for configuring EOP](/microsoft-365/security/office-365-security/best-practices-for-configuring-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Bulk complaint level values](/microsoft-365/security/office-365-security/bulk-complaint-level-values?view=o365-21vianet) | modified |
-| 1/21/2021 | [Campaign Views in Microsoft Defender for Office 365 Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configuration analyzer for security policies](/microsoft-365/security/office-365-security/configuration-analyzer-for-security-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure anti-malware policies](/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure anti-phishing policies in EOP](/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure anti-phishing policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure global settings for Safe Links settings in Defender for Office 365](/microsoft-365/security/office-365-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure groups & users - Political campaign dev/test environment](/microsoft-365/security/office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure junk email settings on Exchange Online mailboxes](/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure S/MIME settings - Exchange Online for Outlook on web](/microsoft-365/security/office-365-security/configure-s-mime-settings-for-outlook-web-app?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure the default connection filter policy](/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure outbound spam filtering](/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure spam filter policies](/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Create blocked sender lists](/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365?view=o365-21vianet) | modified |
-| 1/21/2021 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-21vianet) | modified |
-| 1/21/2021 | [Create team sites - Political campaign dev environment](/microsoft-365/security/office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment?view=o365-21vianet) | modified |
-| 1/21/2021 | [Delegated administration FAQ](/microsoft-365/security/office-365-security/delegated-administration-faq?view=o365-21vianet) | modified |
-| 1/21/2021 | [Deploy an isolated SharePoint Online team site](/microsoft-365/security/office-365-security/deploy-an-isolated-sharepoint-online-team-site?view=o365-21vianet) | modified |
-| 1/21/2021 | [Design an isolated SharePoint Online team site](/microsoft-365/security/office-365-security/design-an-isolated-sharepoint-online-team-site?view=o365-21vianet) | modified |
-| 1/21/2021 | [Detect and Remediate Illicit Consent Grants](/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-21vianet) | modified |
-| 1/21/2021 | [Detect and remediate the Outlook rules and custom forms injections attacks.](/microsoft-365/security/office-365-security/detect-and-remediate-outlook-rules-forms-attack?view=o365-21vianet) | modified |
-| 1/21/2021 | [Email authentication in Microsoft 365](/microsoft-365/security/office-365-security/email-validation-and-authentication?view=o365-21vianet) | modified |
-| 1/21/2021 | [Enable the Report Message add-in](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-21vianet) | modified |
-| 1/21/2021 | [Enable the Report Phish add-in](/microsoft-365/security/office-365-security/enable-the-report-phish-add-in?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure EOP to junk spam in hybrid environments](/microsoft-365/security/office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder?view=o365-21vianet) | modified |
-| 1/21/2021 | [EOP features](/microsoft-365/security/office-365-security/eop-features?view=o365-21vianet) | modified |
-| 1/21/2021 | [EOP general FAQ](/microsoft-365/security/office-365-security/eop-general-faq?view=o365-21vianet) | modified |
-| 1/21/2021 | [EOP queued, deferred, and bounced messages FAQ](/microsoft-365/security/office-365-security/eop-queued-deferred-and-bounced-messages-faq?view=o365-21vianet) | modified |
-| 1/21/2021 | [Exchange admin center in standalone EOP](/microsoft-365/security/office-365-security/exchange-admin-center-in-exchange-online-protection-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Exchange Online Protection (EOP) overview](/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-21vianet) | modified |
-| 1/21/2021 | [Feature permissions in EOP](/microsoft-365/security/office-365-security/feature-permissions-in-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Find and release quarantined messages as a user](/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user?view=o365-21vianet) | modified |
-| 1/21/2021 | [Give users access to the Security & Compliance Center](/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center?view=o365-21vianet) | modified |
-| 1/21/2021 | [Help and support for EOP](/microsoft-365/security/office-365-security/help-and-support-for-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Outbound delivery pools](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages?view=o365-21vianet) | modified |
-| 1/21/2021 | [How Sender Policy Framework (SPF) prevents spoofing](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing?view=o365-21vianet) | modified |
-| 1/21/2021 | [How EOP validates the From address to prevent phishing](/microsoft-365/security/office-365-security/how-office-365-validates-the-from-address?view=o365-21vianet) | modified |
-| 1/21/2021 | [Order and precedence of email protection](/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined?view=o365-21vianet) | modified |
-| 1/21/2021 | [Identity and device access policies for allowing guest and external user B2B access - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-policies-guest-access?view=o365-21vianet) | modified |
-| 1/21/2021 | [Common identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-prerequisites?view=o365-21vianet) | modified |
-| 1/21/2021 | [Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
-| 1/21/2021 | [Application Guard for Office 365 (public preview) for admins](/microsoft-365/security/office-365-security/install-app-guard?view=o365-21vianet) | modified |
-| 1/21/2021 | [Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-21vianet) | modified |
-| 1/21/2021 | [Investigate malicious email that was delivered in Office 365, Find and investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-21vianet) | modified |
-| 1/21/2021 | [Isolated SharePoint Online team site dev/test environment](/microsoft-365/security/office-365-security/isolated-sharepoint-online-team-site-dev-test-environment?view=o365-21vianet) | modified |
-| 1/21/2021 | [Isolated SharePoint Online team sites](/microsoft-365/security/office-365-security/isolated-sharepoint-online-team-sites?view=o365-21vianet) | modified |
-| 1/21/2021 | [Install and use the Junk Email Reporting add-in for Microsoft Outlook](/microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure spoof intelligence](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence?view=o365-21vianet) | modified |
-| 1/21/2021 | [Mail flow in EOP](/microsoft-365/security/office-365-security/mail-flow-in-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Mail flow insights in the Mail flow dashboard](/microsoft-365/security/office-365-security/mail-flow-insights-v2?view=o365-21vianet) | modified |
-| 1/21/2021 | [Mail flow intelligence](/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365?view=o365-21vianet) | modified |
-| 1/21/2021 | [Mail flow rules in EOP](/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manage role groups in EOP](/microsoft-365/security/office-365-security/manage-admin-role-group-permissions-in-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manage an isolated SharePoint Online team site](/microsoft-365/security/office-365-security/manage-an-isolated-sharepoint-online-team-site?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manage groups in EOP](/microsoft-365/security/office-365-security/manage-groups-in-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manage mail users in standalone EOP](/microsoft-365/security/office-365-security/manage-mail-users-in-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manage recipients in standalone EOP](/microsoft-365/security/office-365-security/manage-recipients-in-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Message trace in the Security & Compliance Center](/microsoft-365/security/office-365-security/message-trace-scc?view=o365-21vianet) | modified |
-| 1/21/2021 | [Auto-forwarded messages insight](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-21vianet) | modified |
-| 1/21/2021 | [Top domain mail flow status insight in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight?view=o365-21vianet) | modified |
-| 1/21/2021 | [Mail flow map](/microsoft-365/security/office-365-security/mfi-mail-flow-map-report?view=o365-21vianet) | modified |
-| 1/21/2021 | [Fix possible mail loop insight](/microsoft-365/security/office-365-security/mfi-mail-loop-insight?view=o365-21vianet) | modified |
-| 1/21/2021 | [New domains being forwarded email insight](/microsoft-365/security/office-365-security/mfi-new-domains-being-forwarded-email?view=o365-21vianet) | modified |
-| 1/21/2021 | [New users forwarding email insight](/microsoft-365/security/office-365-security/mfi-new-users-forwarding-email?view=o365-21vianet) | modified |
-| 1/21/2021 | [Non-accepted domain report in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-non-accepted-domain-report?view=o365-21vianet) | modified |
-| 1/21/2021 | [Non-delivery report in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-non-delivery-report?view=o365-21vianet) | modified |
-| 1/21/2021 | [Outbound and inbound mail flow insight in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow?view=o365-21vianet) | modified |
-| 1/21/2021 | [Queues insight in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues?view=o365-21vianet) | modified |
-| 1/21/2021 | [Fix slow mail flow rules insight](/microsoft-365/security/office-365-security/mfi-slow-mail-flow-rules-insight?view=o365-21vianet) | modified |
-| 1/21/2021 | [SMTP Auth clients insight and report in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report?view=o365-21vianet) | modified |
-| 1/21/2021 | [Identity and device access configurations - Microsoft 365 for enterprise](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft Security Guidance - Political campaigns & nonprofits](/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o?view=o365-21vianet) | modified |
-| 1/21/2021 | [Monitor for leaks of personal data](/microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data?view=o365-21vianet) | modified |
-| 1/21/2021 | [Move domains & settings from one EOP organization to another](/microsoft-365/security/office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization?view=o365-21vianet) | modified |
-| 1/21/2021 | [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-21vianet) | modified |
-| 1/21/2021 | [Evaluate Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-evaluation?view=o365-21vianet) | modified |
-| 1/21/2021 | [Threat investigation & response capabilities - Microsoft Defender for Office 365 Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
-| 1/21/2021 | [Security Incident Response](/microsoft-365/security/office-365-security/office365-security-incident-response-overview?view=o365-21vianet) | modified |
-| 1/21/2021 | [Outbound spam protection](/microsoft-365/security/office-365-security/outbound-spam-controls?view=o365-21vianet) | modified |
-| 1/21/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
-| 1/21/2021 | [Permissions in the Microsoft 365 security and compliance centers](/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security?view=o365-21vianet) | modified |
-| 1/21/2021 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats?view=o365-21vianet) | modified |
-| 1/21/2021 | [Protect on-premises mailboxes in China with standalone EOP](/microsoft-365/security/office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection?view=o365-21vianet) | modified |
-| 1/21/2021 | [Quarantined email messages](/microsoft-365/security/office-365-security/quarantine-email-messages?view=o365-21vianet) | modified |
-| 1/21/2021 | [Quarantined messages FAQ](/microsoft-365/security/office-365-security/quarantine-faq?view=o365-21vianet) | modified |
-| 1/21/2021 | [Quarantine tags](/microsoft-365/security/office-365-security/quarantine-tags?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
-| 1/21/2021 | [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware?view=o365-21vianet) | modified |
-| 1/21/2021 | [Use mail flow rules to block messages with executable attachments](/microsoft-365/security/office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro?view=o365-21vianet) | modified |
-| 1/21/2021 | [Reference Policies, practices, and guidelines](/microsoft-365/security/office-365-security/reference-policies-practices-and-guidelines?view=o365-21vianet) | modified |
-| 1/21/2021 | [Remediate malicious email that was delivered in Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-21vianet) | modified |
-| 1/21/2021 | [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
-| 1/21/2021 | [Report junk and phishing email in Outlook for iOS and Android](/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android?view=o365-21vianet) | modified |
-| 1/21/2021 | [Report junk and phishing email in Outlook on the web](/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
-| 1/21/2021 | [Reporting and message trace](/microsoft-365/security/office-365-security/reporting-and-message-trace-in-exchange-online-protection?view=o365-21vianet) | modified |
-| 1/21/2021 | [Smart reports, insights - Microsoft 365 Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance?view=o365-21vianet) | modified |
-| 1/21/2021 | [Responding to a Compromised Email Account](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account?view=o365-21vianet) | modified |
-| 1/21/2021 | [Run an administrator role group report in standalone EOP](/microsoft-365/security/office-365-security/run-an-administrator-role-group-report-in-eop-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [S/MIME for encryption in Exchange Online - Office 365](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption?view=o365-21vianet) | modified |
-| 1/21/2021 | [Safe Documents in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-docs?view=o365-21vianet) | modified |
-| 1/21/2021 | [Safety tips in email messages](/microsoft-365/security/office-365-security/safety-tips-in-office-365?view=o365-21vianet) | modified |
-| 1/21/2021 | [Sample script for EOP settings - multiple tenants](/microsoft-365/security/office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants?view=o365-21vianet) | modified |
-| 1/21/2021 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-default?view=o365-21vianet) | modified |
-| 1/21/2021 | [Secure email recommended policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/secure-email-recommended-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Security dashboard overview](/microsoft-365/security/office-365-security/security-dashboard?view=o365-21vianet) | modified |
-| 1/21/2021 | [Security recommendations for priority accounts in Microsoft 365](/microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft 365 security roadmap - Top priorities](/microsoft-365/security/office-365-security/security-roadmap?view=o365-21vianet) | modified |
-| 1/21/2021 | [Send & receive S/MIME encrypted email - Exchange Online](/microsoft-365/security/office-365-security/send-and-receive-s-mime-signed-and-encrypted-email?view=o365-21vianet) | modified |
-| 1/21/2021 | [Sending mail to Microsoft 365](/microsoft-365/security/office-365-security/sending-mail-to-office-365?view=o365-21vianet) | modified |
-| 1/21/2021 | [Services for non-customers sending mail to Microsoft 365](/microsoft-365/security/office-365-security/services-for-non-customers?view=o365-21vianet) | modified |
-| 1/21/2021 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-21vianet) | modified |
-| 1/21/2021 | [Set up virtual certificate collection - Exchange Online](/microsoft-365/security/office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime?view=o365-21vianet) | modified |
-| 1/21/2021 | [Set up your standalone EOP service](/microsoft-365/security/office-365-security/set-up-your-eop-service?view=o365-21vianet) | modified |
-| 1/21/2021 | [Recommended secure document policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/sharepoint-file-access-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [SIEM integration with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/siem-integration-with-office-365-ti?view=o365-21vianet) | modified |
-| 1/21/2021 | [SIEM server integration with Microsoft 365 services and applications](/microsoft-365/security/office-365-security/siem-server-integration?view=o365-21vianet) | modified |
-| 1/21/2021 | [Spam confidence level](/microsoft-365/security/office-365-security/spam-confidence-levels?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manually submit messages to Microsoft for analysis](/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis?view=o365-21vianet) | modified |
-| 1/21/2021 | [Submit malware and non-malware to Microsoft for analysis](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis?view=o365-21vianet) | modified |
-| 1/21/2021 | [Add support for anonymous inbound email over IPv6](/microsoft-365/security/office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6?view=o365-21vianet) | modified |
-| 1/21/2021 | [Support for validation of Domain Keys Identified Mail (DKIM) signed messages](/microsoft-365/security/office-365-security/support-for-validation-of-dkim-signed-messages?view=o365-21vianet) | modified |
-| 1/21/2021 | [Switch to EOP from another protection service](/microsoft-365/security/office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco?view=o365-21vianet) | modified |
-| 1/21/2021 | [Sync user certificates to Office 365 for S/MIME](/microsoft-365/security/office-365-security/sync-user-certificates-to-office-365-for-s-mime?view=o365-21vianet) | modified |
-| 1/21/2021 | [Recommended Teams policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/teams-access-policies?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manage your allows and blocks in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure your Microsoft 365 tenant for increased security](/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security?view=o365-21vianet) | modified |
-| 1/21/2021 | [Views in Threat Explorer and real-time detections](/microsoft-365/security/office-365-security/threat-explorer-views?view=o365-21vianet) | modified |
-| 1/21/2021 | [Threat Explorer and Real-time detections](/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet) | modified |
-| 1/21/2021 | [Threat Trackers - New and Noteworthy](/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet) | modified |
-| 1/21/2021 | [Troubleshooting mail sent to Microsoft 365](/microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365?view=o365-21vianet) | modified |
-| 1/21/2021 | [Tune anti-phishing protection](/microsoft-365/security/office-365-security/tuning-anti-phishing?view=o365-21vianet) | modified |
-| 1/21/2021 | [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
-| 1/21/2021 | [How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-21vianet) | modified |
-| 1/21/2021 | [Use DMARC to validate email](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-21vianet) | modified |
-| 1/21/2021 | [Use mail flow rules to see what your users are reporting to Microsoft](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft?view=o365-21vianet) | modified |
-| 1/21/2021 | [Use mail flow rules to the SCL in messages](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-21vianet) | modified |
-| 1/21/2021 | [End-user spam notifications in Microsoft 365](/microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages?view=o365-21vianet) | modified |
-| 1/21/2021 | [Remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis?view=o365-21vianet) | modified |
-| 1/21/2021 | [Use mail flow rules to filter bulk email](/microsoft-365/security/office-365-security/use-transport-rules-to-configure-bulk-email-filtering?view=o365-21vianet) | modified |
-| 1/21/2021 | [User submissions policy](/microsoft-365/security/office-365-security/user-submission?view=o365-21vianet) | modified |
-| 1/21/2021 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
-| 1/21/2021 | [View and release quarantined messages from shared mailboxes](/microsoft-365/security/office-365-security/view-and-release-quarantined-messages-from-shared-mailboxes?view=o365-21vianet) | modified |
-| 1/21/2021 | [View email security reports in the Security & Compliance Center](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
-| 1/21/2021 | [View mail flow reports in the Reports dashboard](/microsoft-365/security/office-365-security/view-mail-flow-reports?view=o365-21vianet) | modified |
-| 1/21/2021 | [View Defender for Office 365 reports in the Reports dashboard](/microsoft-365/security/office-365-security/view-reports-for-atp?view=o365-21vianet) | modified |
-| 1/21/2021 | [View the admin audit log in standalone EOP](/microsoft-365/security/office-365-security/view-the-admin-audit-log-eop?view=o365-21vianet) | modified |
-| 1/21/2021 | [Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/virus-detection-in-spo?view=o365-21vianet) | modified |
-| 1/21/2021 | [Walkthrough - Spoof intelligence insight](/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight?view=o365-21vianet) | modified |
-| 1/21/2021 | [What&apos;s the difference between junk email and bulk email?](/microsoft-365/security/office-365-security/what-s-the-difference-between-junk-email-and-bulk-email?view=o365-21vianet) | modified |
-| 1/21/2021 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?view=o365-21vianet) | modified |
+| 1/21/2021 | [What's new in Microsoft 365 Defender](/microsoft-365/security/mtp/whats-new?view=o365-21vianet) | mo/defender-365-security/
+| 1/21/2021 | [Address compromised user accounts with aut/defender-365-security/and response](/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-21vianet) | modified |
+| 1/21/2021 | [Admin submissions](/microsoft-365/security/o/defender-365-security/min-submission?view=o365-21vianet) | modified |
+| 1/21/2021 | [ASF settings in EOP](/microsoft-365/security/office-365-security/advanced-spam-filtering-asf-option/defender-365-security/ | modified |
+| 1/21/2021 | [Using custom reporting solutions with automated investigation and response](/microsoft-365/security/office-365-secu/defender-365-security/ting?view=o365-21vianet) | modified |
+| 1/21/2021 | [Remediation actions following automated investigation in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-reme/defender-365-security/o365-21vianet) | modified |
+| 1/21/2021 | [How to report false positives or false negatives following automated investigation in Microsoft Defender for Of/defender-365-security/365/security/office-365-security/air-report-false-positives-negatives?view=o365-21vianet) | modified |
+| 1/21/2021 | [Review and approve pending remediation actions in automated investigation and response](/defender-365-security/ty/office-365-security/air-review-approve-pending-completed-actions?view=o365-21vianet) | modified |
+| 1/21/2021 | [View the results of an automated investigation in Microsoft 365](/m/defender-365-security//office-365-security/air-view-investigation-results?view=o365-21vianet) | modified |
+| 1/21/2021 | [Alerts in the Security & Compliance Center](/microso/defender-365-security/e-365-security/alerts?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-malware protection FAQ](/microsoft-365/secu/defender-365-security/ity/anti-malware-protection-faq-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-malware protection](/microsoft-365/security//defender-365-security/nti-malware-protection?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-phishing protection](/microsoft-365/security/office-365-s/defender-365-security/-protection?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-spam and anti-malware protection](/microsoft-/defender-365-security/65-security/anti-spam-and-anti-malware-protection?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-spam message headers](/microsoft-365/securit/defender-365-security//anti-spam-message-headers?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-spam protection FAQ](/microsoft-365/secu/defender-365-security/ity/anti-spam-protection-faq?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-spam protection](/microsoft-365/security/office-/defender-365-security/m-protection?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-spoofing protection FAQ](/microsoft-365/secu/defender-365-security/ity/anti-spoofing-protection-faq?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-spoofing protection](/microsoft-365/security/office-365-security/anti-spoofing-pro/defender-365-security/ianet) | modified |
+| 1/21/2021 | [Safe Attachments for SharePoint, OneDrive/defender-365-security/](/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
+| 1/21/2021 | [Safe Attachments](/microsoft-365/se/defender-365-security/urity/atp-safe-attachments?view=o365-21vianet) | modified |
+| 1/21/2021 | [Safe Links](/microsoft-365/security/office-365-security/atp-safe-link/defender-365-security/ | modified |
+| 1/21/2021 | [Get started using Attack simulation training](/microsoft-365/security/off/defender-365-security/ck-simulation-training-get-started?view=o365-21vianet) | modified |
+| 1/21/2021 | [Gain insights through Attack simulation training](/microsoft-365/securit/defender-365-security//attack-simulation-training-insights?view=o365-21vianet) | modified |
+| 1/21/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-securi/defender-365-security/training-payloads?view=o365-21vianet) | modified |
+| 1/21/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-/defender-365-security/65-security/attack-simulation-training?view=o365-21vianet) | modified |
+| 1/21/2021 | [Attack Simulator in Microsoft Defender for Office 365](/mic/defender-365-security/ffice-365-security/attack-simulator?view=o365-21vianet) | modified |
+| 1/21/2021 | [Auditing reports in standalone EOP](/microsoft-365/security/office-365-security/auditing-reports-in-eop?view/defender-365-security/ified |
+| 1/21/2021 | [How automated investigation and response works in Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/automated-investigation-response-office?view=o365-21vianet) | modified |
+| 1/21/2021 | [Protection features in Azure Information Pr/defender-365-security/to existing tenants](/microsoft-365/security/office-365-security/azure-ip-protection-features?view=o365-21vianet) | modified |
+| 1/21/2021 | [Backscatter in EOP](/microsoft-365/security/office-365-secu/defender-365-security/ages-and-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Best practices for configuring EOP](/microsoft-365/s/defender-365-security/curity/best-practices-for-configuring-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Bulk complaint level values](/microsoft-365/security/office-365-security/bulk-com/defender-365-security/iew=o365-21vianet) | modified |
+| 1/21/2021 | [Campaign Views in Microsoft Defender for Office 365 Plan](/microsoft-/defender-365-security/65-security/campaigns?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configuration analyzer for security policies](/microsoft/defender-365-security/365-security/configuration-analyzer-for-security-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure anti-malware policies](/microsoft-365/security/office-/defender-365-security/e-anti-malware-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure anti-phishing policies in EOP](/microsoft-365/security/office-365-security/configure/defender-365-security/es-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure anti-phishing policies in Microsoft Defender for Office 365](/microsoft-365/security/office/defender-365-security/re-atp-anti-phishing-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure global settings for Safe Links settings in Defender for Office 365](/microsoft-36/defender-365-security/-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure groups & users - Political campaign dev/test environment](/microsoft-365//defender-365-security/ecurity/configure-groups-and-users-for-a-political-campaign-dev-test-environment?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure junk email settings on Exchange Online mailboxes](/microsoft-365/security/off/defender-365-security/igure-junk-email-settings-on-exo-mailboxes?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure S/MIME settings - Exchange Online for Outlook on web](/micros/defender-365-security/ce-365-security/configure-s-mime-settings-for-outlook-web-app?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure the default connection filter policy](/microsoft/defender-365-security/365-security/configure-the-connection-filter-policy?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure outbound spam filtering](/microsoft-365/secur/defender-365-security/ty/configure-the-outbound-spam-policy?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure spam filter policies](/microsoft-365/secur/defender-365-security/ty/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [Create blocked sender lists](/microsoft-365/secur/defender-365-security/ty/create-block-sender-lists-in-office-365?view=o365-21vianet) | modified |
+| 1/21/2021 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-sa/defender-365-security/fice-365?view=o365-21vianet) | modified |
+| 1/21/2021 | [Create team sites - Political campaign dev environmen/defender-365-security/urity/office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment?view=o365-21vianet) | modified |
+| 1/21/2021 | [Delegated administration FAQ](/microsoft-365/security/office-365-securi/defender-365-security/ration-faq?view=o365-21vianet) | modified |
+| 1/21/2021 | [Deploy an isolated SharePoint Online team site](/microsoft-365/security/defender-365-security/deploy-an-isolated-sharepoint-online-team-site?view=o365-21vianet) | modified |
+| 1/21/2021 | [Design an isolated SharePoint Online team site](/microsoft-365/secur/defender-365-security/ty/design-an-isolated-sharepoint-online-team-site?view=o365-21vianet) | modified |
+| 1/21/2021 | [Detect and Remediate Illicit Consent Grants](/microsoft-365/security/office-365-security/detect-and-/defender-365-security/sent-grants?view=o365-21vianet) | modified |
+| 1/21/2021 | [Detect and remediate the Outlook rules and custom forms inject/defender-365-security/soft-365/security/office-365-security/detect-and-remediate-outlook-rules-forms-attack?view=o365-21vianet) | modified |
+| 1/21/2021 | [Email authentication in Microsoft 365](/microsoft-365/sec/defender-365-security/rity/email-validation-and-authentication?view=o365-21vianet) | modified |
+| 1/21/2021 | [Enable the Report Message add-in](/microsoft-365/securi/defender-365-security/y/enable-the-report-message-add-in?view=o365-21vianet) | modified |
+| 1/21/2021 | [Enable the Report Phish add-in](/microsoft-365/security/office-365-securit/defender-365-security/hish-add-in?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure EOP to junk spam in hybrid /defender-365-security/oft-365/security/office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder?view=o365-21vianet) | modified |
+| 1/21/2021 | [EOP features](/microsoft-365/security/of/defender-365-security/-features?view=o365-21vianet) | modified |
+| 1/21/2021 | [EOP general FAQ](/microsoft-365/security/office-365-security/eop-genera/defender-365-security/net) | modified |
+| 1/21/2021 | [EOP queued, deferred, and bounced messages FAQ](/microsoft-365/s/defender-365-security/curity/eop-queued-deferred-and-bounced-messages-faq?view=o365-21vianet) | modified |
+| 1/21/2021 | [Exchange admin center in standalone EOP](/microsoft-365/security/o/defender-365-security/change-admin-center-in-exchange-online-protection-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Exchange Online Protection (EOP) overview](/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet) | modified |/defender-365-security/
+| 1/21/2021 | [Configuring and controlling external email forwardi/defender-365-security/ing, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-21vianet) | modified |
+| 1/21/2021 | [Feature permissions in EOP](/microsoft-365/security/office-365-security//defender-365-security/n-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Find and release quarantined messages as a user](/microsoft-365/security/offic/defender-365-security/nd-release-quarantined-messages-as-a-user?view=o365-21vianet) | modified |
+| 1/21/2021 | [Give users access to the Security & Compliance Ce/defender-365-security/security/office-365-security/grant-access-to-the-security-and-compliance-center?view=o365-21vianet) | modified |
+| 1/21/2021 | [Help and support for EOP](/microsoft-365/securit/defender-365-security//help-and-support-for-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Outbound delivery pools](/microsoft-365/security/office-365-security/high-ri/defender-365-security/outbound-messages?view=o365-21vianet) | modified |
+| 1/21/2021 | [How Sender Policy Framework (SPF) prevents spoofing](/microsoft-365/security/of/defender-365-security/-office-365-uses-spf-to-prevent-spoofing?view=o365-21vianet) | modified |
+| 1/21/2021 | [How EOP validates the From address to prevent phishing](/microsof/defender-365-security/-365-security/how-office-365-validates-the-from-address?view=o365-21vianet) | modified |
+| 1/21/2021 | [Order and precedence of email protection](/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined?view=o365-21vianet) | modifie/defender-365-security/
+| 1/21/2021 | [Identity and device access policies for allowing guest and external user B2B access - Microsoft 365 for enterprise \/defender-365-security/crosoft-365/security/office-365-security/identity-access-policies-guest-access?view=o365-21vianet) | modified |
+| 1/21/2021 | [Common identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identit/defender-365-security/w=o365-21vianet) | modified |
+| 1/21/2021 | [Prerequisite work for implementing identity and device access policies - Microsoft 365 for/defender-365-security/oft Docs](/microsoft-365/security/office-365-security/identity-access-prerequisites?view=o365-21vianet) | modified |
+| 1/21/2021 | [Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO](/microsoft-365/sec/defender-365-security/rity/index?view=o365-21vianet) | modified |
+| 1/21/2021 | [Application Guard for Office 365 (public preview) for admins](/microsoft-365/security/office-365-security/in/defender-365-security/o365-21vianet) | modified |
+| 1/21/2021 | [Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-sec/defender-365-security/e-365-ti-with-wdatp?view=o365-21vianet) | modified |
+| 1/21/2021 | [Investigate malicious email that was delivered in Office 365, Find and investigate/defender-365-security/crosoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-21vianet) | modified |
+| 1/21/2021 | [Isolated SharePoint Online team site dev/test environment](/mi/defender-365-security/office-365-security/isolated-sharepoint-online-team-site-dev-test-environment?view=o365-21vianet) | modified |
+| 1/21/2021 | [Isolated SharePoint Online team sites](/microsoft-365/security/office-365-security/isolated-sh/defender-365-security/sites?view=o365-21vianet) | modified |
+| 1/21/2021 | [Install and use the Junk Email Reporting add-in for M/defender-365-security/crosoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure spoof intelligence](/microsoft-/defender-365-security/65-security/learn-about-spoof-intelligence?view=o365-21vianet) | modified |
+| 1/21/2021 | [Mail flow in EOP](/microsoft-365/security/office-365-security/mail-flo/defender-365-security/vianet) | modified |
+| 1/21/2021 | [Mail flow insights in the Mail flow dashboard](/defender-365-security/ty/office-365-security/mail-flow-insights-v2?view=o365-21vianet) | modified |
+| 1/21/2021 | [Mail flow intelligence](/microsoft-365/security/defender-365-security/mail-flow-intelligence-in-office-365?view=o365-21vianet) | modified |
+| 1/21/2021 | [Mail flow rules in EOP](/microsoft-365/security/of/defender-365-security/l-flow-rules-transport-rules-0?view=o365-21vianet) | modified |
+| 1/21/2021 | [Manage role groups in EOP](/microsoft-365/security/office-365-security//defender-365-security/up-permissions-in-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Manage an isolated SharePoint Online team sit/defender-365-security/urity/office-365-security/manage-an-isolated-sharepoint-online-team-site?view=o365-21vianet) | modified |
+| 1/21/2021 | [Manage groups in EOP](/microsoft-365/security/office-365-sec/defender-365-security/n-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Manage mail users in standalone EOP](/microsoft-365/security/office-365-se/defender-365-security/ers-in-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Manage quarantined messages and files as an admin](/microsof/defender-365-security/-365-security/manage-quarantined-messages-and-files?view=o365-21vianet) | modified |
+| 1/21/2021 | [Manage recipients in standalone EOP](/microsoft-365/security/office-365-se/defender-365-security/nts-in-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Message trace in the Security & Compliance Center](/micr/defender-365-security/fice-365-security/message-trace-scc?view=o365-21vianet) | modified |
+| 1/21/2021 | [Auto-forwarded messages insight](/microsoft-365/security/office-365-security/mfi-auto-f/defender-365-security/ort?view=o365-21vianet) | modified |
+| 1/21/2021 | [Top domain mail flow status insight in/defender-365-security/ard](/microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight?view=o365-21vianet) | modified |
+| 1/21/2021 | [Mail flow map](/microsoft-365/security/office-365-secur/defender-365-security/-report?view=o365-21vianet) | modified |
+| 1/21/2021 | [Fix possible mail loop insight](/microsoft-365/security/office-365/defender-365-security/op-insight?view=o365-21vianet) | modified |
+| 1/21/2021 | [New domains being forwarded email insight](/microsoft-365/s/defender-365-security/curity/mfi-new-domains-being-forwarded-email?view=o365-21vianet) | modified |
+| 1/21/2021 | [New users forwarding email insight](/microsoft-365/security/office-365-securit/defender-365-security/rding-email?view=o365-21vianet) | modified |
+| 1/21/2021 | [Non-accepted domain report in the Mail flow dashboard](/microsoft-365/s/defender-365-security/curity/mfi-non-accepted-domain-report?view=o365-21vianet) | modified |
+| 1/21/2021 | [Non-delivery report in the Mail flow dashboard](/microsoft-365/security/office-365-securit/defender-365-security/port?view=o365-21vianet) | modified |
+| 1/21/2021 | [Outbound and inbound mail flow insight in the Mail flow dashboard]/defender-365-security/ity/office-365-security/mfi-outbound-and-inbound-mail-flow?view=o365-21vianet) | modified |
+| 1/21/2021 | [Queues insight in the Mail flow dashboard](/microsoft-365/defender-365-security/security/mfi-queue-alerts-and-queues?view=o365-21vianet) | modified |
+| 1/21/2021 | [Fix slow mail flow rules insight](/microsoft-365/security/office-365-security/mfi-slow-m/defender-365-security/t?view=o365-21vianet) | modified |
+| 1/21/2021 | [SMTP Auth clients insight and report in the Mail flow dashboard](/microsoft-365/security/office-3/defender-365-security/auth-clients-report?view=o365-21vianet) | modified |
+| 1/21/2021 | [Identity and device access configurations - Microsoft 365 for enterprise](/microsoft-36/defender-365-security/-security/microsoft-365-policies-configurations?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft Security Guidance - Political campaigns & nonprof/defender-365-security/ecurity/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o?view=o365-21vianet) | modified |
+| 1/21/2021 | [Monitor for leaks of personal data](/microsoft-365/security/office-365-security/monit/defender-365-security/nal-data?view=o365-21vianet) | modified |
+| 1/21/2021 | [Move domains & settings from one EOP organization to another](/microsoft-365/security/office-365-s/defender-365-security/and-settings-from-one-eop-organization-to-another-eop-organization?view=o365-21vianet) | modified |
+| 1/21/2021 | [Automated investigation and response in Microsoft Defender/defender-365-security/rosoft-365/security/office-365-security/office-365-air?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft Defender for Office 365](/microsoft-365/security/office-3/defender-365-security/5-atp?view=o365-21vianet) | modified |
+| 1/21/2021 | [Evaluate Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-evaluation?vi/defender-365-security/odified |
+| 1/21/2021 | [Threat investigation & response capabilities - Micr/defender-365-security/fice 365 Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
+| 1/21/2021 | [Security Incident Response](/microsoft-365/securi/defender-365-security/y/office365-security-incident-response-overview?view=o365-21vianet) | modified |
+| 1/21/2021 | [Outbound spam protection](/microsoft-365/security/office-365-securi/defender-365-security/rols?view=o365-21vianet) | modified |
+| 1/21/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/p/defender-365-security/urity-and-compliance-center?view=o365-21vianet) | modified |
+| 1/21/2021 | [Permissions in the Microsoft 365 security and com/defender-365-security/rosoft-365/security/office-365-security/permissions-microsoft-365-compliance-security?view=o365-21vianet) | modified |
+| 1/21/2021 | [Preset security policies](/microsoft-365/securit/defender-365-security//preset-security-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [Protect against threats](/microsoft-365/security/office-365-security/protect-agains/defender-365-security/1vianet) | modified |
+| 1/21/2021 | [Protect on-premises mailboxes in China with standal/defender-365-security/65/security/office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection?view=o365-21vianet) | modified |
+| 1/21/2021 | [Quarantined email messages](/microsoft-365/securi/defender-365-security/y/quarantine-email-messages?view=o365-21vianet) | modified |
+| 1/21/2021 | [Quarantined messages FAQ](/microsoft-365/defender-365-security/security/quarantine-faq?view=o365-21vianet) | modified |
+| 1/21/2021 | [Quarantine tags](/microsoft-365/security/office-365-security/quarantine-tags?view=o365-21vianet) | modif/defender-365-security/
+| 1/21/2021 | [Microsoft recommendations for EOP and Defender for Office/defender-365-security/s](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
+| 1/21/2021 | [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from/defender-365-security/-21vianet) | modified |
+| 1/21/2021 | [Use mail flow rules to block messages with executable attachments](/mi/defender-365-security/office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro?view=o365-21vianet) | modified |
+| 1/21/2021 | [Reference Policies, practices, and guidelines](/microsoft-365/security/office-365-s/defender-365-security/icies-practices-and-guidelines?view=o365-21vianet) | modified |
+| 1/21/2021 | [Remediate malicious email that was delivered in Office 365](/microsoft-365/sec/defender-365-security/rity/remediate-malicious-email-delivered-office-365?view=o365-21vianet) | modified |
+| 1/21/2021 | [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-/defender-365-security/-user-from-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
+| 1/21/2021 | [Report junk and phishing email in Outlook for iOS and Android](/microsoft-365/defender-365-security/security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android?view=o365-21vianet) | modified |
+| 1/21/2021 | [Report junk and phishing email in Outlook on the web](/microsoft-365/security/offi/defender-365-security/t-junk-email-and-phishing-scams-in-outlook-on-the-web-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [Report spam, non-spam, and phishing messages to Micr/defender-365-security//security/office-365-security/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
+| 1/21/2021 | [Reporting and message trace](/microsoft-365/security/office-365-security/reporting-and-messag/defender-365-security/nline-protection?view=o365-21vianet) | modified |
+| 1/21/2021 | [Smart reports, insights - Microsoft 365 Security & Compliance Cent/defender-365-security/curity/office-365-security/reports-and-insights-in-security-and-compliance?view=o365-21vianet) | modified |
+| 1/21/2021 | [Responding to a Compromised Email Account](/microsoft-365/security/office-365-sec/defender-365-security/-compromised-email-account?view=o365-21vianet) | modified |
+| 1/21/2021 | [Run an administrator role group report in standalone EOP](/microsoft-365/secur/defender-365-security/ty/run-an-administrator-role-group-report-in-eop-eop?view=o365-21vianet) | modified |
+| 1/21/2021 | [S/MIME for encryption in Exchange Online - Office 365](/microsoft-365/securi/defender-365-security/y/s-mime-for-message-signing-and-encryption?view=o365-21vianet) | modified |
+| 1/21/2021 | [Safe Documents in Microsoft Defender for Office 365](//defender-365-security/y/office-365-security/safe-docs?view=o365-21vianet) | modified |
+| 1/21/2021 | [Safety tips in email messages](/microsoft-365/security/office-365-security/defender-365-security/e-365?view=o365-21vianet) | modified |
+| 1/21/2021 | [Sample script for EOP settings - multiple tenants](/micr/defender-365-security/fice-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants?view=o365-21vianet) | modified |
+| 1/21/2021 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-default?view=o365-21/defender-365-security/
+| 1/21/2021 | [Secure email recommended policies - Microsoft 365 fo/defender-365-security/soft Docs](/microsoft-365/security/office-365-security/secure-email-recommended-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [Security dashboard overview](/microsoft-365/security/office-365-security/security-dashbo/defender-365-security/t) | modified |
+| 1/21/2021 | [Security recommendations for priority accounts in Microsoft 365](/micros/defender-365-security/ce-365-security/security-recommendations-for-priority-accounts?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft 365 security roadmap - Top priorities](/microsoft-365/security/office-/defender-365-security/-roadmap?view=o365-21vianet) | modified |
+| 1/21/2021 | [Send & receive S/MIME encrypted email - Exchange Onlin/defender-365-security/urity/office-365-security/send-and-receive-s-mime-signed-and-encrypted-email?view=o365-21vianet) | modified |
+| 1/21/2021 | [Sending mail to Microsoft 365](/microsoft-365/security/office-365-security/sendin/defender-365-security/view=o365-21vianet) | modified |
+| 1/21/2021 | [Services for non-customers sending mail to Micr/defender-365-security/-365/security/office-365-security/services-for-non-customers?view=o365-21vianet) | modified |
+| 1/21/2021 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-polic/defender-365-security/t) | modified |
+| 1/21/2021 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/se/defender-365-security/urity/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [Set up Safe Links policies in Microsoft Defender for Office /defender-365-security/ecurity/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/defender-365-security/-365-to-help-prevent-spoofing?view=o365-21vianet) | modified |
+| 1/21/2021 | [Set up virtual certificate collection - Exchange Online](/m/defender-365-security//office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime?view=o365-21vianet) | modified |
+| 1/21/2021 | [Set up your standalone EOP service](/microsoft-365/security/office-365-security/set-up-your-eop-service?view=o/defender-365-security/ied |
+| 1/21/2021 | [Recommended secure document policies - Microsoft 365 for enterprise \| Microsoft/defender-365-security//security/office-365-security/sharepoint-file-access-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [SIEM integration with Microsoft Defender for Office 365](/microsoft-365/security/office-365-s/defender-365-security/ion-with-office-365-ti?view=o365-21vianet) | modified |
+| 1/21/2021 | [SIEM server integration with Microsoft 365 ser/defender-365-security/s](/microsoft-365/security/office-365-security/siem-server-integration?view=o365-21vianet) | modified |
+| 1/21/2021 | [Spam confidence level](/microsoft-365/security/office-365-security/spam-con/defender-365-security/365-21vianet) | modified |
+| 1/21/2021 | [Manually submit messages to Microsoft for analysis](/microsoft-365/security/offic/defender-365-security/-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis?view=o365-21vianet) | modified |
+| 1/21/2021 | [Submit malware and non-malware to Microsoft for analysis](/microsoft-365/s/defender-365-security/curity/submitting-malware-and-non-malware-to-microsoft-for-analysis?view=o365-21vianet) | modified |
+| 1/21/2021 | [Add support for anonymous inbound email over IPv6](/microsoft-365/security/office-365-security/suppor/defender-365-security/nd-email-messages-over-ipv6?view=o365-21vianet) | modified |
+| 1/21/2021 | [Support for validation of Domain Keys Identified Mail (DKIM) signed me/defender-365-security/5/security/office-365-security/support-for-validation-of-dkim-signed-messages?view=o365-21vianet) | modified |
+| 1/21/2021 | [Switch to EOP from another protection service](/microsoft-365/security/o/defender-365-security/itch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco?view=o365-21vianet) | modified |
+| 1/21/2021 | [Sync user certificates to Office 365 for S/MIME](/microsoft-365/security/office-365-security/sync-us/defender-365-security/fice-365-for-s-mime?view=o365-21vianet) | modified |
+| 1/21/2021 | [Recommended Teams policies - Microsoft 365 for enterprise \| Microsoft Docs](/microso/defender-365-security/e-365-security/teams-access-policies?view=o365-21vianet) | modified |
+| 1/21/2021 | [Manage your allows and blocks in the Tenant Allow/Block List](/microsoft-365/securi/defender-365-security/y/tenant-allow-block-list?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure your Microsoft 365 tenant for increased security](/microsoft-365/defender-365-security/security/tenant-wide-setup-for-increased-security?view=o365-21vianet) | modified |
+| 1/21/2021 | [Views in Threat Explorer and real-time detections](/microsoft-365/defender-365-security/security/threat-explorer-views?view=o365-21vianet) | modified |
+| 1/21/2021 | [Threat Explorer and Real-time detections](/microsoft-365/secu/defender-365-security/ity/threat-explorer?view=o365-21vianet) | modified |
+| 1/21/2021 | [Threat Trackers - New and Noteworthy](/microsoft-365/security/offic/defender-365-security/-trackers?view=o365-21vianet) | modified |
+| 1/21/2021 | [Troubleshooting mail sent to Microsoft 365](/microsoft/defender-365-security/365-security/troubleshooting-mail-sent-to-office-365?view=o365-21vianet) | modified |
+| 1/21/2021 | [Tune anti-phishing protection](/microsoft-365/security/office-365-security/tuning-anti-phishing/defender-365-security/| modified |
+| 1/21/2021 | [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](/defender-365-security/ty/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
+| 1/21/2021 | [How to use DKIM for email in your custom domain](/mi/defender-365-security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-21vianet) | modified |
+| 1/21/2021 | [Use DMARC to validate email](/microsoft-365/security/office-365-security/use-dmarc-to-validate/defender-365-security/anet) | modified |
+| 1/21/2021 | [Use mail flow rules to see what your users are reporting to Microso/defender-365-security/curity/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft?view=o365-21vianet) | modified |
+| 1/21/2021 | [Use mail flow rules to the SCL in messages](/microsoft-365/security/o/defender-365-security/e-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-21vianet) | modified |
+| 1/21/2021 | [End-user spam notifications in Microsoft 365](/microsoft-365/security//defender-365-security/se-spam-notifications-to-release-and-report-quarantined-messages?view=o365-21vianet) | modified |
+| 1/21/2021 | [Remove yourself from the blocked senders list](/microsoft-365/sec/defender-365-security/rity/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis?view=o365-21vianet) | modified |
+| 1/21/2021 | [Use mail flow rules to filter bulk email](/micro/defender-365-security/ice-365-security/use-transport-rules-to-configure-bulk-email-filtering?view=o365-21vianet) | modified |
+| 1/21/2021 | [User submissions policy](/microsoft-365/security/office-365-security/us/defender-365-security/65-21vianet) | modified |
+| 1/21/2021 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-s/defender-365-security/w=o365-21vianet) | modified |
+| 1/21/2021 | [View and release quarantined messages from shared mailboxes](/microsoft-365/security/off/defender-365-security/-and-release-quarantined-messages-from-shared-mailboxes?view=o365-21vianet) | modified |
+| 1/21/2021 | [View email security reports in the Security & Compliance Center](/micros/defender-365-security/ce-365-security/view-email-security-reports?view=o365-21vianet) | modified |
+| 1/21/2021 | [View mail flow reports in the Reports dashboard](/microsoft-365/security/office-365-se/defender-365-security/-reports?view=o365-21vianet) | modified |
+| 1/21/2021 | [View Defender for Office 365 reports in the Reports dashboard](/mic/defender-365-security/ffice-365-security/view-reports-for-atp?view=o365-21vianet) | modified |
+| 1/21/2021 | [View the admin audit log in standalone EOP](/microsoft-365/security/office-365-security/view-the-admin/defender-365-security/365-21vianet) | modified |
+| 1/21/2021 | [Built-in virus protection in SharePoint Online, OneDrive, and Mic/defender-365-security/oft-365/security/office-365-security/virus-detection-in-spo?view=o365-21vianet) | modified |
+| 1/21/2021 | [Walkthrough - Spoof intelligence insight](/microsoft-365/security/office-365-security//defender-365-security/elligence-insight?view=o365-21vianet) | modified |
+| 1/21/2021 | [What&apos;s the difference between junk email and bulk email?](/microsof/defender-365-security/-365-security/what-s-the-difference-between-junk-email-and-bulk-email?view=o365-21vianet) | modified |
+| 1/21/2021 | [What's new in Microsoft Defender for Office 365](/m/defender-365-security//office-365-security/whats-new-in-office-365-atp?view=o365-21vianet) | modified |
 | 1/21/2021 | [Zero-hour auto purge (ZAP)](/microsoft-365/security/office-365-security/zero-hour-auto-purge?view=o365-21vianet) | modified |
 | 1/21/2021 | [Steps to configure threat protection capabilities across Microsoft 365](/microsoft-365/solutions/deploy-threat-protection-configure?view=o365-21vianet) | modified |
 | 1/21/2021 | [Deploy network security threat protection across Microsoft 365](/microsoft-365/solutions/deploy-threat-protection?view=o365-21vianet) | modified |
 | 1/21/2021 | [Assess data privacy risks and identify sensitive items with Microsoft 365](/microsoft-365/solutions/information-protection-deploy-assess?view=o365-21vianet) | modified |
 | 1/22/2021 | [Create DNS records at Cloudflare for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-cloudflare?view=o365-21vianet) | modified |
-| 1/22/2021 | [Install Intune Company Portal on devices](/microsoft-365/managed-desktop/get-started/company-portal?view=o365-21vianet) | modified |
-| 1/22/2021 | [Remediation actions following automated investigation in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-remediation-actions?view=o365-21vianet) | modified |
-| 1/22/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
+| 1/22/2021 | [Install Intune Company Portal on devices](/microsoft-365/managed-desktop/get-started/company-portal?view=o365-21via/defender-365-security/
+| 1/22/2021 | [Remediation actions following automated investigation in Microsoft Defender fo/defender-365-security/oft-365/security/office-365-security/air-remediation-actions?view=o365-21vianet) | modified |
+| 1/22/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-si/defender-365-security/ianet) | modified |
 | 1/22/2021 | [Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-21vianet) | modified |
 | 1/19/2021 | [Microsoft 365 encryption chains](/microsoft-365/compliance/encryption-office-365-certificate-chains?view=o365-21vianet) | modified |
 | 1/19/2021 | [Encryption Risks and Protections](/microsoft-365/compliance/office-365-encryption-risks-and-protections?view=o365-21vianet) | modified |
@@ -916,15 +917,15 @@
 | 1/19/2021 | [Learn about communication compliance](/microsoft-365/compliance/communication-compliance?view=o365-21vianet) | modified |
 | 1/19/2021 | [Restrict access to content using sensitivity labels to apply encryption](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-21vianet) | modified |
 | 1/19/2021 | [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-21vianet) | modified |
-| 1/19/2021 | [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-21vianet) | modified |
+| 1/19/2021 | [Enable sensitivity labels for Office files in SharePoint and/defender-365-security/-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-21vianet) | modified |
 | 1/19/2021 | [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-21vianet) | modified |
 | 1/19/2021 | [Step 5. Device and app management for your Microsoft 365 for enterprise tenants](/microsoft-365/solutions/tenant-management-device-management?view=o365-21vianet) | added |
 | 1/19/2021 | [Step 3. Identity for your Microsoft 365 for enterprise tenants](/microsoft-365/solutions/tenant-management-identity?view=o365-21vianet) | added |
 | 1/19/2021 | [Step 4. Migration for your Microsoft 365 for enterprise tenants](/microsoft-365/solutions/tenant-management-migration?view=o365-21vianet) | added |
 | 1/19/2021 | [Step 2. Optimal networking for your Microsoft 365 for enterprise tenants](/microsoft-365/solutions/tenant-management-networking?view=o365-21vianet) | added |
 | 1/19/2021 | [Tenant management for Microsoft 365 for enterprise](/microsoft-365/solutions/tenant-management-overview?view=o365-21vianet) | added |
-| 1/19/2021 | [Step 1. Your Microsoft 365 for enterprise tenants](/microsoft-365/solutions/tenant-management-tenants?view=o365-21vianet) | added |
-| 1/19/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
+| 1/19/2021 | [Step 1. Your Microsoft 365 for enterprise tenants](/microsoft-365/soluti/defender-365-security/-tenants?view=o365-21vianet) | added |
+| 1/19/2021 | [Create a payload for Attack simulation training/defender-365-security/rity/office-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
 | 1/19/2021 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
 | 1/19/2021 | [Step 2. Provide remote access to on-premises apps and services](/microsoft-365/solutions/empower-people-to-work-remotely-remote-access?view=o365-21vianet) | modified |
 | 1/22/2021 | [Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score?view=o365-21vianet) | modified |
@@ -1036,9 +1037,9 @@
 | 1/4/2021 | [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-21vianet) | modified |
 | 1/4/2021 | [URLs and IP address ranges for Office 365 operated by 21Vianet](/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-21vianet) | modified |
 | 1/4/2021 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
-| 1/4/2021 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-21vianet) | modified |
-| 1/4/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
-| 1/4/2021 | [Manually submit messages to Microsoft for analysis](/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis?view=o365-21vianet) | modified |
+| 1/4/2021 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view/defender-365-security/ified |
+| 1/4/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-/defender-365-security/ons-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
+| 1/4/2021 | [Manually submit messages to Microsoft for analysis](/microsoft-365/security/office-365-securit/defender-365-security/m-and-phishing-scam-messages-to-microsoft-for-analysis?view=o365-21vianet) | modified |
 | 1/4/2021 | [Use mail flow rules to see what your users are reporting to Microsoft](/microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft?view=o365-21vianet) | modified |
 | 1/4/2021 | [Configure teams with protection for highly sensitive data](/microsoft-365/solutions/configure-teams-highly-sensitive-protection?view=o365-21vianet) | modified |
 | 1/4/2021 | [Configure teams with protection for sensitive data](/microsoft-365/solutions/configure-teams-sensitive-protection?view=o365-21vianet) | modified |
@@ -1089,17 +1090,17 @@
 | 1/5/2021 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
 | 1/5/2021 | [Turn on Microsoft 365 Defender in the Microsoft 365 security center](/microsoft-365/security/mtp/mtp-enable?view=o365-21vianet) | modified |
 | 1/5/2021 | [Run your Microsoft 365 Defender attack simulations](/microsoft-365/security/mtp/mtp-pilot-simulate?view=o365-21vianet) | modified |
-| 1/5/2021 | [Troubleshoot Microsoft 365 Defender service issues](/microsoft-365/security/mtp/troubleshoot?view=o365-21vianet) | modified |
-| 1/5/2021 | [Configure anti-phishing policies in EOP](/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-21vianet) | modified |
-| 1/5/2021 | [Email authentication in Microsoft 365](/microsoft-365/security/office-365-security/email-validation-and-authentication?view=o365-21vianet) | modified |
-| 1/5/2021 | [Order and precedence of email protection](/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined?view=o365-21vianet) | modified |
-| 1/5/2021 | [Configure spoof intelligence](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence?view=o365-21vianet) | modified |
-| 1/5/2021 | [Monitor for leaks of personal data](/microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data?view=o365-21vianet) | modified |
-| 1/5/2021 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
-| 1/5/2021 | [S/MIME for encryption in Exchange Online - Office 365](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption?view=o365-21vianet) | modified |
-| 1/5/2021 | [Set up your standalone EOP service](/microsoft-365/security/office-365-security/set-up-your-eop-service?view=o365-21vianet) | modified |
-| 1/5/2021 | [Switch to EOP from another protection service](/microsoft-365/security/office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco?view=o365-21vianet) | modified |
-| 1/5/2021 | [Troubleshooting mail sent to Microsoft 365](/microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365?view=o365-21vianet) | modified |
+| 1/5/2021 | [Troubleshoot Microsoft 365 Defender service issues](/microsoft-3/defender-365-security/leshoot?view=o365-21vianet) | modified |
+| 1/5/2021 | [Configure anti-phishing policies in EOP](/microsoft-365/securi/defender-365-security/y/configure-anti-phishing-policies-eop?view=o365-21vianet) | modified |
+| 1/5/2021 | [Email authentication in Microsoft 365](/microsoft-365/security/of/defender-365-security/il-validation-and-authentication?view=o365-21vianet) | modified |
+| 1/5/2021 | [Order and precedence of email protection](/microsoft-/defender-365-security/65-security/how-policies-and-protections-are-combined?view=o365-21vianet) | modified |
+| 1/5/2021 | [Configure spoof intelligence](/microsoft-365/security/offic/defender-365-security/about-spoof-intelligence?view=o365-21vianet) | modified |
+| 1/5/2021 | [Monitor for leaks of personal data](/microsoft-365/security/office-365-security/monitor-for-leaks-of-per/defender-365-security/21vianet) | modified |
+| 1/5/2021 | [Microsoft recommendations for EOP and Defender for Office 365 security setting/defender-365-security/urity/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
+| 1/5/2021 | [S/MIME for encryption in Exchange Online - Office 365](/mic/defender-365-security/ffice-365-security/s-mime-for-message-signing-and-encryption?view=o365-21vianet) | modified |
+| 1/5/2021 | [Set up your standalone EOP service](/microsoft-365/security/office-365/defender-365-security/-eop-service?view=o365-21vianet) | modified |
+| 1/5/2021 | [Switch to EOP from another protection service](/microsoft-365/secur/defender-365-security/ty/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco?view=o365-21vianet) | modified |
+| 1/5/2021 | [Troubleshooting mail sent to Microsoft 365](/microso/defender-365-security/e-365-security/troubleshooting-mail-sent-to-office-365?view=o365-21vianet) | modified |
 | 1/5/2021 | [Use DMARC to validate email](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-21vianet) | modified |
 | 1/5/2021 | [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about?view=o365-21vianet) | modified |
 | 1/5/2021 | [Options for accessing email from your mobile device](/microsoft-365/admin/email/access-email-from-a-mobile-device?view=o365-21vianet) | modified |
@@ -1120,8 +1121,8 @@
 | 1/6/2021 | [Tagging and Relevance training in Advanced eDiscovery](/microsoft-365/compliance/tagging-and-relevance-training-in-advanced-ediscovery?view=o365-21vianet) | modified |
 | 1/6/2021 | [Test Relevance analysis in Advanced eDiscovery](/microsoft-365/compliance/test-relevance-analysis-in-advanced-ediscovery?view=o365-21vianet) | modified |
 | 1/6/2021 | [Track Relevance analysis in Advanced eDiscovery](/microsoft-365/compliance/track-relevance-analysis-in-advanced-ediscovery?view=o365-21vianet) | modified |
-| 1/6/2021 | [Use the communications editor](/microsoft-365/compliance/using-communications-editor?view=o365-21vianet) | modified |
-| 1/6/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
+| 1/6/2021 | [Use the communications editor](/microsoft-365/compliance/using-comm/defender-365-security/w=o365-21vianet) | modified |
+| 1/6/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security//defender-365-security/curity-and-compliance-center?view=o365-21vianet) | modified |
 | 1/6/2021 | [Security recommendations for priority accounts in Microsoft 365](/microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts?view=o365-21vianet) | modified |
 | 1/6/2021 | [Microsoft SharePoint Syntex adoption: Get started](/microsoft-365/contentunderstanding/adoption-getstarted) | modified |
 | 1/6/2021 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-21vianet) | modified |
@@ -1141,9 +1142,9 @@
 | 1/6/2021 | [Adjust settings after enrollment](/microsoft-365/managed-desktop/get-started/conditional-access?view=o365-21vianet) | modified |
 | 1/7/2021 | [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-21vianet) | modified |
 | 1/7/2021 | [Additional device information for the migration from Microsoft Cloud Deutschland](/microsoft-365/enterprise/ms-cloud-germany-transition-add-devices?view=o365-21vianet) | modified |
-| 1/7/2021 | [EmailEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-emailevents-table?view=o365-21vianet) | modified |
-| 1/7/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
-| 1/7/2021 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
+| 1/7/2021 | [EmailEvents table in the advanced hunting schema](/microsoft-365/securit/defender-365-security/g-emailevents-table?view=o365-21vianet) | modified |
+| 1/7/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-security/a/defender-365-security/ning-payloads?view=o365-21vianet) | modified |
+| 1/7/2021 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/se/defender-365-security/urity/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
 | 1/7/2021 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
 | 1/7/2021 | [Collaborate with guests in a team](/microsoft-365/solutions/collaborate-as-team?view=o365-21vianet) | modified |
 | 1/7/2021 | [Configure permissions filtering for Content Search](/microsoft-365/compliance/permissions-filtering-for-content-search?view=o365-21vianet) | modified |
@@ -1154,9 +1155,9 @@
 | 1/7/2021 | [Windows and Office deployment lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-21vianet) | modified |
 | 1/7/2021 | [How to opt-in for migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in?view=o365-21vianet) | modified |
 | 1/7/2021 | [Prepare a non-routable domain for directory synchronization](/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?view=o365-21vianet) | modified |
-| 1/7/2021 | [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-21vianet) | modified |
+| 1/7/2021 | [Microsoft 365 Defender](/microsoft-365/security/mtp/micros/defender-365-security/?view=o365-21vianet) | modified |
 | 1/7/2021 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-21vianet) | modified |
-| 1/7/2021 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
+| 1/7/2021 | [Learn about retention for Teams](/microsoft-365/compliance/retentio/defender-365-security/=o365-21vianet) | modified |
 | 1/7/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
 | 1/7/2021 | [Buy new licenses](/microsoft-365/business-video/buy-licenses?view=o365-worldwide) | modified |
 | 1/8/2021 | [Manage messages in Message center](/microsoft-365/admin/manage/manage-messages?view=o365-21vianet) | modified |
@@ -1173,12 +1174,12 @@
 | 1/8/2021 | [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-21vianet) | modified |
 | 1/8/2021 | [Networking roadmap for Microsoft 365](/microsoft-365/enterprise/networking-roadmap-microsoft-365?view=o365-21vianet) | modified |
 | 1/8/2021 | [URLs and IP address ranges for Office 365 operated by 21Vianet](/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-21vianet) | modified |
-| 1/8/2021 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
-| 1/8/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-21vianet) | modified |
-| 1/8/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
-| 1/8/2021 | [Campaign Views in Microsoft Defender for Office 365 Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
-| 1/8/2021 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-21vianet) | modified |
-| 1/8/2021 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-default?view=o365-21vianet) | modified |
+| 1/8/2021 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-range/defender-365-security/ | modified |
+| 1/8/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-/defender-365-security/65-security/attack-simulation-training?view=o365-21vianet) | modified |
+| 1/8/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/of/defender-365-security/ack-simulator?view=o365-21vianet) | modified |
+| 1/8/2021 | [Campaign Views in Microsoft Defender for Office 3/defender-365-security/65/security/office-365-security/campaigns?view=o365-21vianet) | modified |
+| 1/8/2021 | [Create safe sender lists](/microsoft-365/security/office/defender-365-security/safe-sender-lists-in-office-365?view=o365-21vianet) | modified |
+| 1/8/2021 | [Secure by default in Office 365](/microsoft-365/security/office-365-security/secure-by-d/defender-365-security/anet) | modified |
 | 1/8/2021 | [Security recommendations for priority accounts in Microsoft 365](/microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts?view=o365-21vianet) | modified |
 | 1/8/2021 | [Test and deploy Microsoft 365 Apps](/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-21vianet) | modified |
 | 1/8/2021 | [Set up a connector to archive Bloomberg Message data](/microsoft-365/compliance/archive-bloomberg-message-data?view=o365-21vianet) | modified |
@@ -1204,29 +1205,29 @@
 | 1/11/2021 | [Setup guides for Microsoft 365 and Office 365 services](/microsoft-365/enterprise/setup-guides-for-microsoft-365?view=o365-21vianet) | modified |
 | 1/11/2021 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
 | 1/11/2021 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-21vianet) | modified |
-| 1/11/2021 | [Adjust settings after enrollment](/microsoft-365/managed-desktop/get-started/conditional-access?view=o365-21vianet) | modified |
-| 1/11/2021 | [Gain insights through Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-21vianet) | modified |
-| 1/11/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
-| 1/11/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-21vianet) | modified |
-| 1/11/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
-| 1/11/2021 | [Campaign Views in Microsoft Defender for Office 365 Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
-| 1/11/2021 | [Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
-| 1/11/2021 | [Application Guard for Office 365 (public preview) for admins](/microsoft-365/security/office-365-security/install-app-guard?view=o365-21vianet) | modified |
-| 1/11/2021 | [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air?view=o365-21vianet) | modified |
-| 1/11/2021 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-21vianet) | modified |
-| 1/11/2021 | [Threat investigation & response capabilities - Microsoft Defender for Office 365 Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
-| 1/11/2021 | [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats?view=o365-21vianet) | modified |
-| 1/11/2021 | [Quarantined email messages](/microsoft-365/security/office-365-security/quarantine-email-messages?view=o365-21vianet) | modified |
-| 1/11/2021 | [Quarantined messages FAQ](/microsoft-365/security/office-365-security/quarantine-faq?view=o365-21vianet) | modified |
-| 1/11/2021 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
+| 1/11/2021 | [Adjust settings after enrollment](/microsoft-365/managed-desktop/get-star/defender-365-security/s?view=o365-21vianet) | modified |
+| 1/11/2021 | [Gain insights through Attack simulation training](/microsoft-365/securit/defender-365-security//attack-simulation-training-insights?view=o365-21vianet) | modified |
+| 1/11/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-securi/defender-365-security/training-payloads?view=o365-21vianet) | modified |
+| 1/11/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-/defender-365-security/65-security/attack-simulation-training?view=o365-21vianet) | modified |
+| 1/11/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/of/defender-365-security/ack-simulator?view=o365-21vianet) | modified |
+| 1/11/2021 | [Campaign Views in Microsoft Defender for Office 365 Plan](/microsoft-365/security/office-3/defender-365-security/?view=o365-21vianet) | modified |
+| 1/11/2021 | [Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO](/microsoft-365/sec/defender-365-security/rity/index?view=o365-21vianet) | modified |
+| 1/11/2021 | [Application Guard for Office 365 (public preview) for admins](/microsoft-365/security/office-365-s/defender-365-security/uard?view=o365-21vianet) | modified |
+| 1/11/2021 | [Automated investigation and response in Microsoft Defender/defender-365-security/rosoft-365/security/office-365-security/office-365-air?view=o365-21vianet) | modified |
+| 1/11/2021 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-21vianet/defender-365-security/
+| 1/11/2021 | [Threat investigation & response capabilities - M/defender-365-security/ Office 365 Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
+| 1/11/2021 | [Protect against threats](/microsoft-365/security/of/defender-365-security/tect-against-threats?view=o365-21vianet) | modified |
+| 1/11/2021 | [Quarantined email messages](/microsoft-365/securi/defender-365-security/y/quarantine-email-messages?view=o365-21vianet) | modified |
+| 1/11/2021 | [Quarantined messages FAQ](/microsoft-365/security/office-365-security/quarantine-faq?view=o365-21vianet)/defender-365-security/
+| 1/11/2021 | [Microsoft recommendations for EOP and Defender for Office/defender-365-security/s](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
 | 1/11/2021 | [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware?view=o365-21vianet) | modified |
 | 1/11/2021 | [Export Content Search results](/microsoft-365/compliance/export-search-results?view=o365-21vianet) | modified |
-| 1/11/2021 | [Advanced eDiscovery limits](/microsoft-365/compliance/limits-ediscovery20?view=o365-21vianet) | modified |
+| 1/11/2021 | [Advanced eDiscovery limits](/microsoft-365/comp/defender-365-security/ery20?view=o365-21vianet) | modified |
 | 1/11/2021 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
 | 1/12/2021 | [Apply Information Rights Management (IRM) to a list or library](/microsoft-365/compliance/apply-irm-to-a-list-or-library?view=o365-21vianet) | modified |
 | 1/12/2021 | [Export Content Search results](/microsoft-365/compliance/export-search-results?view=o365-21vianet) | modified |
 | 1/12/2021 | [Limits in core eDiscovery case](/microsoft-365/compliance/limits-core-ediscovery?view=o365-21vianet) | modified |
-| 1/12/2021 | [Limits for content search and Core eDiscovery in the compliance center](/microsoft-365/compliance/limits-for-content-search?view=o365-21vianet) | modified |
+| 1/12/2021 | [Limits for content search and Core eDiscovery in the compliance center](/microsoft-36/defender-365-security/or-content-search?view=o365-21vianet) | modified |
 | 1/12/2021 | [Manage your allows and blocks in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list?view=o365-21vianet) | modified |
 | 1/12/2021 | [Microsoft 365 Business Premium security and compliance features](/microsoft-365/business/security-features?view=o365-21vianet) | modified |
 | 1/12/2021 | [Insider risk management cases](/microsoft-365/compliance/insider-risk-management-cases?view=o365-21vianet) | modified |
@@ -1274,27 +1275,27 @@
 | 1/12/2021 | [Security technologies in Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/security?view=o365-21vianet) | modified |
 | 1/12/2021 | [How updates are handled in Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/updates?view=o365-21vianet) | modified |
 | 1/12/2021 | [Admin support for Microsoft Managed Desktop](/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-21vianet) | modified |
-| 1/12/2021 | [Get user support for Microsoft Managed Desktop](/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support?view=o365-21vianet) | modified |
-| 1/12/2021 | [Identity and device access policies for allowing guest and external user B2B access - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-policies-guest-access?view=o365-21vianet) | modified |
-| 1/12/2021 | [Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-prerequisites?view=o365-21vianet) | modified |
-| 1/12/2021 | [Isolated SharePoint Online team sites](/microsoft-365/security/office-365-security/isolated-sharepoint-online-team-sites?view=o365-21vianet) | modified |
+| 1/12/2021 | [Get user support for Microsoft Managed Desktop](/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support?view=o365-21vianet) | modified |/defender-365-security/
+| 1/12/2021 | [Identity and device access policies for allowing guest and external user B2B access - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft/defender-365-security/365-security/identity-access-policies-guest-access?view=o365-21vianet) | modified |
+| 1/12/2021 | [Prerequisite work for implementing identity and device access /defender-365-security/365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-prerequisites?view=o365-21vianet) | modified |
+| 1/12/2021 | [Isolated SharePoint Online team sites](/microsoft-365/security/office-365-security/isolated-sharepoin/defender-365-security/iew=o365-21vianet) | modified |
 | 1/12/2021 | [Support for validation of Domain Keys Identified Mail (DKIM) signed messages](/microsoft-365/security/office-365-security/support-for-validation-of-dkim-signed-messages?view=o365-21vianet) | modified |
 | 1/13/2021 | [Get incident notifications in Microsoft 365 Defender](/microsoft-365/security/mtp/get-incident-notifications?view=o365-21vianet) | modified |
 | 1/13/2021 | [Assign and complete improvement actions in Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-improvement-actions?view=o365-21vianet) | modified |
 | 1/13/2021 | [Working with assessment templates in Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-templates?view=o365-21vianet) | modified |
 | 1/13/2021 | [Connect to all Microsoft 365 services in a single PowerShell window](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window?view=o365-21vianet) | modified |
-| 1/13/2021 | [Launch your portal using the Portal Launch Scheduler](/microsoft-365/enterprise/portallaunchscheduler?view=o365-21vianet) | modified |
-| 1/13/2021 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
-| 1/13/2021 | [How automated investigation and response works in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/automated-investigation-response-office?view=o365-21vianet) | modified |
-| 1/13/2021 | [Best practices for configuring EOP](/microsoft-365/security/office-365-security/best-practices-for-configuring-eop?view=o365-21vianet) | modified |
-| 1/13/2021 | [Enable the Report Message add-in](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-21vianet) | modified |
-| 1/13/2021 | [Install and use the Junk Email Reporting add-in for Microsoft Outlook](/microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook?view=o365-21vianet) | modified |
-| 1/13/2021 | [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air?view=o365-21vianet) | modified |
-| 1/13/2021 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
-| 1/13/2021 | [Manually submit messages to Microsoft for analysis](/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis?view=o365-21vianet) | modified |
-| 1/13/2021 | [Threat Explorer and Real-time detections](/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet) | modified |
-| 1/13/2021 | [Tune anti-phishing protection](/microsoft-365/security/office-365-security/tuning-anti-phishing?view=o365-21vianet) | modified |
-| 1/13/2021 | [User submissions policy](/microsoft-365/security/office-365-security/user-submission?view=o365-21vianet) | modified |
+| 1/13/2021 | [Launch your portal using the Portal Launch/defender-365-security/t-365/enterprise/portallaunchscheduler?view=o365-21vianet) | modified |
+| 1/13/2021 | [Admin submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modifi/defender-365-security/
+| 1/13/2021 | [How automated investigation and response works in Microsoft/defender-365-security/365](/microsoft-365/security/office-365-security/automated-investigation-response-office?view=o365-21vianet) | modified |
+| 1/13/2021 | [Best practices for configuring EOP](/microsoft-365/securi/defender-365-security/y/best-practices-for-configuring-eop?view=o365-21vianet) | modified |
+| 1/13/2021 | [Enable the Report Message add-in](/microsoft-365/security/office-365-security/enable-the-repor/defender-365-security/=o365-21vianet) | modified |
+| 1/13/2021 | [Install and use the Junk Email Reporting add-in for Microsoft Outlook](/microsoft-365/security/off/defender-365-security/-email-reporting-add-in-for-microsoft-outlook?view=o365-21vianet) | modified |
+| 1/13/2021 | [Automated investigation and response in Microsoft Defender for Office 365](/micros/defender-365-security/ce-365-security/office-365-air?view=o365-21vianet) | modified |
+| 1/13/2021 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365/s/defender-365-security/curity/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
+| 1/13/2021 | [Manually submit messages to Microsoft for analysis](/microsoft-36/defender-365-security/-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis?view=o365-21vianet) | modified |
+| 1/13/2021 | [Threat Explorer and Real-time detections](/microsoft-3/defender-365-security/5-security/threat-explorer?view=o365-21vianet) | modified |
+| 1/13/2021 | [Tune anti-phishing protection](/microsoft-365/se/defender-365-security/urity/tuning-anti-phishing?view=o365-21vianet) | modified |
+| 1/13/2021 | [User submissions policy](/microsoft-365/security/office-365-security/user-submission?vie/defender-365-security/dified |
 | 1/13/2021 | [View email security reports in the Security & Compliance Center](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
 | 1/14/2021 | [Enable unlimited archiving - Admin Help](/microsoft-365/compliance/enable-unlimited-archiving?view=o365-21vianet) | modified |
 | 1/14/2021 | [Get started with Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-21vianet) | modified |
@@ -1305,12 +1306,12 @@
 | 1/14/2021 | [Adjust settings after enrollment](/microsoft-365/managed-desktop/get-started/conditional-access?view=o365-21vianet) | modified |
 | 1/14/2021 | [Threats detected by Microsoft Defender Antivirus](/microsoft-365/business/threats-detected-defender-av?view=o365-21vianet) | modified |
 | 1/14/2021 | [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies?view=o365-21vianet) | modified |
-| 1/14/2021 | [Get started with Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-setup?view=o365-21vianet) | modified |
-| 1/14/2021 | [Gain insights through Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-21vianet) | modified |
-| 1/14/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
-| 1/14/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-21vianet) | modified |
-| 1/14/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
-| 1/14/2021 | [Evaluate Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-evaluation?view=o365-21vianet) | modified |
+| 1/14/2021 | [Get started with Microsoft Compliance Manager](/microsoft-365/compliance//defender-365-security/tup?view=o365-21vianet) | modified |
+| 1/14/2021 | [Gain insights through Attack simulation training](/microsoft-365/securit/defender-365-security//attack-simulation-training-insights?view=o365-21vianet) | modified |
+| 1/14/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-securi/defender-365-security/training-payloads?view=o365-21vianet) | modified |
+| 1/14/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-/defender-365-security/65-security/attack-simulation-training?view=o365-21vianet) | modified |
+| 1/14/2021 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-3/defender-365-security/5-security/attack-simulator?view=o365-21vianet) | modified |
+| 1/14/2021 | [Evaluate Microsoft Defender for Office 365](/microsoft-365/security/offi/defender-365-security/e-365-evaluation?view=o365-21vianet) | modified |
 | 1/14/2021 | [How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-21vianet) | modified |
 | 1/14/2021 | [Configure teams with protection for highly sensitive data](/microsoft-365/solutions/configure-teams-highly-sensitive-protection?view=o365-21vianet) | modified |
 | 1/14/2021 | [Configure a team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation?view=o365-21vianet) | modified |
@@ -1329,16 +1330,16 @@
 | 1/15/2021 | [Turn off Basic Mobility and Security](/microsoft-365/admin/basic-mobility-security/turn-off?view=o365-21vianet) | modified |
 | 1/15/2021 | [Wipe a mobile device in Basic Mobility and Security](/microsoft-365/admin/basic-mobility-security/wipe-mobile-device?view=o365-21vianet) | modified |
 | 1/15/2021 | [Add several users at the same time to Microsoft 365 - Admin Help](/microsoft-365/enterprise/add-several-users-at-the-same-time?view=o365-21vianet) | modified |
-| 1/15/2021 | [Change history for Microsoft Managed Desktop documentation](/microsoft-365/managed-desktop/change-history-managed-desktop?view=o365-21vianet) | modified |
-| 1/15/2021 | [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-21vianet) | modified |
-| 1/15/2021 | [Gain insights through Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-21vianet) | modified |
-| 1/15/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
+| 1/15/2021 | [Change history for Microsoft Managed Desktop documentation](/microsof/defender-365-security//change-history-managed-desktop?view=o365-21vianet) | modified |
+| 1/15/2021 | [Get started using Attack simulation training](/microsoft-365/security/off/defender-365-security/ck-simulation-training-get-started?view=o365-21vianet) | modified |
+| 1/15/2021 | [Gain insights through Attack simulation training](/microsoft-365/securit/defender-365-security//attack-simulation-training-insights?view=o365-21vianet) | modified |
+| 1/15/2021 | [Create a payload for Attack simulation training](/microsoft-365/security/office-365-securi/defender-365-security/training-payloads?view=o365-21vianet) | modified |
 | 1/15/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-21vianet) | modified |
 | 1/15/2021 | [Message center](/microsoft-365/admin/manage/message-center?view=o365-21vianet) | modified |
 | 1/15/2021 | [Alert policies in the security and compliance centers](/microsoft-365/compliance/alert-policies?view=o365-21vianet) | modified |
 | 1/15/2021 | [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-21vianet) | modified |
-| 1/15/2021 | [Microsoft Managed Desktop devices](/microsoft-365/managed-desktop/service-description/device-list?view=o365-21vianet) | modified |
-| 1/15/2021 | [Security recommendations for priority accounts in Microsoft 365](/microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts?view=o365-21vianet) | modified |
+| 1/15/2021 | [Microsoft Managed Desktop devices](/microsoft-365/managed-desktop/service-description/de/defender-365-security/1vianet) | modified |
+| 1/15/2021 | [Security recommendations for priority accounts in Microsoft /defender-365-security/ecurity/office-365-security/security-recommendations-for-priority-accounts?view=o365-21vianet) | modified |
 | 1/15/2021 | [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-21vianet) | modified |
 | 1/15/2021 | [Configure a team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation?view=o365-21vianet) | modified |
 | 1/15/2021 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
@@ -1355,7 +1356,7 @@
 
 
 | Published On |Topic title | Change |
-|------|------------|--------|
+|------|------------|--------|/defender-365-security/
 | 12/14/2020 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
 | 12/15/2020 | [Alert policies in the security and compliance centers](/microsoft-365/compliance/alert-policies?view=o365-21vianet) | modified |
 | 12/15/2020 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
@@ -1373,18 +1374,18 @@
 | 12/15/2020 | [Details and results of an automated investigation](/microsoft-365/security/mtp/mtp-autoir-results?view=o365-21vianet) | modified |
 | 12/15/2020 | [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-autoir?view=o365-21vianet) | modified |
 | 12/15/2020 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
-| 12/15/2020 | [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-remediation-actions?view=o365-21vianet) | modified |
-| 12/15/2020 | [Configure global settings for Safe Links settings in Defender for Office 365](/microsoft-365/security/office-365-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
-| 12/15/2020 | [Configure outbound spam filtering](/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-21vianet) | modified |
-| 12/15/2020 | [Configure spam filter policies](/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
-| 12/15/2020 | [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats?view=o365-21vianet) | modified |
-| 12/15/2020 | [Quarantine tags](/microsoft-365/security/office-365-security/quarantine-tags?view=o365-21vianet) | modified |
-| 12/15/2020 | [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
-| 12/15/2020 | [Safe Documents in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-docs?view=o365-21vianet) | modified |
-| 12/15/2020 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
-| 12/15/2020 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
-| 12/15/2020 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
-| 12/15/2020 | [Manage your allowed and blocked URLs in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list?view=o365-21vianet) | modified |
+| 12/15/2020 | [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-remediation-actions?vi/defender-365-security/odified |
+| 12/15/2020 | [Configure global settings for Safe Links settings in Defen/defender-365-security/microsoft-365/security/office-365-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
+| 12/15/2020 | [Configure outbound spam filtering](/microsoft-365/secur/defender-365-security/ty/configure-the-outbound-spam-policy?view=o365-21vianet) | modified |
+| 12/15/2020 | [Configure spam filter policies](/microsoft-365/s/defender-365-security/curity/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
+| 12/15/2020 | [Protect against threats](/microsoft-365//defender-365-security/ecurity/protect-against-threats?view=o365-21vianet) | modified |
+| 12/15/2020 | [Quarantine tags](/microsoft-365/security/office-365-security/quarantine-tags?v/defender-365-security/modified |
+| 12/15/2020 | [Remove blocked users from the Restricted Users portal](/microsoft-365/securi/defender-365-security/y/removing-user-from-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
+| 12/15/2020 | [Safe Documents in Microsoft Defender for Office/defender-365-security/security/office-365-security/safe-docs?view=o365-21vianet) | modified |
+| 12/15/2020 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-polic/defender-365-security/t) | modified |
+| 12/15/2020 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/se/defender-365-security/urity/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
+| 12/15/2020 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/off/defender-365-security/up-atp-safe-links-policies?view=o365-21vianet) | modified |
+| 12/15/2020 | [Manage your allowed and blocked URLs in the Tenant Allow/Block List](/microsoft-365/security/offic/defender-365-security/-allow-block-list?view=o365-21vianet) | modified |
 | 12/15/2020 | [Turn on Microsoft Defender for Office 365 - SharePoint, OneDrive, & Teams](/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
 | 12/15/2020 | [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles?view=o365-21vianet) | modified |
 | 12/15/2020 | [Overview of data loss prevention](/microsoft-365/compliance/data-loss-prevention-policies?view=o365-21vianet) | modified |
@@ -1394,8 +1395,8 @@
 | 12/15/2020 | [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-21vianet) | modified |
 | 12/15/2020 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
 | 12/15/2020 | [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-improvement-actions?view=o365-21vianet) | modified |
-| 12/15/2020 | [Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score?view=o365-21vianet) | modified |
-| 12/15/2020 | [Identity and device access policies for allowing guest and external B2B access - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-policies-guest-access?view=o365-21vianet) | modified |
+| 12/15/2020 | [Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score?view=o365-21vianet) | modified |/defender-365-security/
+| 12/15/2020 | [Identity and device access policies for allowing guest and external/defender-365-security/ft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-policies-guest-access?view=o365-21vianet) | modified |
 | 12/15/2020 | [Permissions - Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
 | 12/15/2020 | [Microsoft 365 Reports in the admin center - SharePoint site usage](/microsoft-365/admin/activity-reports/sharepoint-site-usage?view=o365-21vianet) | modified |
 | 12/15/2020 | [Change nameservers to set up Microsoft 365 with any domain registrar](/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar?view=o365-21vianet) | modified |
@@ -1417,8 +1418,8 @@
 | 12/15/2020 | [Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (general)](/microsoft-365/enterprise/ms-cloud-germany-transition-phases?view=o365-21vianet) | modified |
 | 12/15/2020 | [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-transition?view=o365-21vianet) | modified |
 | 12/15/2020 | [What's coming to Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-coming?view=o365-21vianet) | modified |
-| 12/15/2020 | [What's new in Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-new?view=o365-21vianet) | modified |
-| 12/15/2020 | [Configure anti-malware policies](/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-21vianet) | modified |
+| 12/15/2020 | [What's new in Microsoft Secure Score](/microsoft-365/sec/defender-365-security/ecure-score-whats-new?view=o365-21vianet) | modified |
+| 12/15/2020 | [Configure anti-malware policies](/microsoft-365/security/office-365-security/configu/defender-365-security/ies?view=o365-21vianet) | modified |
 | 12/15/2020 | [View and release quarantined messages from shared mailboxes](/microsoft-365/security/office-365-security/view-and-release-quarantined-messages-from-shared-mailboxes?view=o365-21vianet) | modified |
 | 12/15/2020 | [Microsoft 365 solution and architecture center # < 60 chars](/microsoft-365/solutions/index?view=o365-21vianet) | modified |
 | 12/16/2020 | [Convert a user mailbox to a shared mailbox](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-21vianet) | modified |
@@ -1436,9 +1437,9 @@
 | 12/16/2020 | [Manage topic discovery in Microsoft 365](/microsoft-365/knowledge/topic-experiences-discovery) | modified |
 | 12/16/2020 | [Topic experiences security and privacy](/microsoft-365/knowledge/topic-experiences-security-privacy) | modified |
 | 12/16/2020 | [Get started driving adoption of Topic Experiences (Preview)](/microsoft-365/knowledge/topics-adoption-getstarted) | modified |
-| 12/16/2020 | Work with topics in the topic center(Preview)  | removed |
-| 12/16/2020 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-21vianet) | modified |
-| 12/16/2020 | [Investigate malicious email that was delivered in Office 365, Find and investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-21vianet) | modified |
+| 12/16/2020 | Work with topics in the topic center(Preview)  | r/defender-365-security/
+| 12/16/2020 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-21vi/defender-365-security/
+| 12/16/2020 | [Investigate malicious email that was delivered in Office 365, Find and investigate malicious email](/mic/defender-365-security/ffice-365-security/investigate-malicious-email-that-was-delivered?view=o365-21vianet) | modified |
 | 12/16/2020 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
 | 12/16/2020 | [Microsoft 365 groups naming policy](/microsoft-365/solutions/groups-naming-policy?view=o365-21vianet) | modified |
 | 12/16/2020 | [Microsoft Compliance Manager quickstart guide](/microsoft-365/compliance/compliance-manager-quickstart?view=o365-21vianet) | modified |
@@ -1448,13 +1449,13 @@
 | 12/16/2020 | [Apply a document understanding model to a document library](/microsoft-365/contentunderstanding/apply-a-model) | modified |
 | 12/16/2020 | [Create an extractor](/microsoft-365/contentunderstanding/create-an-extractor) | modified |
 | 12/16/2020 | [Document understanding overview](/microsoft-365/contentunderstanding/document-understanding-overview) | modified |
-| 12/16/2020 | [Leverage term store taxonomy when creating an extractor](/microsoft-365/contentunderstanding/leverage-term-store-taxonomy) | modified |
+| 12/16/2020 | [Leverage term store taxonomy when creating an extractor](/microsoft/defender-365-security/ding/leverage-term-store-taxonomy) | modified |
 | 12/16/2020 | [Evaluate Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-evaluation?view=o365-21vianet) | modified |
 | 12/17/2020 | [Data loss prevention and Microsoft Teams](/microsoft-365/compliance/dlp-microsoft-teams?view=o365-21vianet) | modified |
 | 12/17/2020 | [Get started with sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-21vianet) | modified |
 | 12/17/2020 | [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection?view=o365-21vianet) | modified |
 | 12/17/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
-| 12/17/2020 | [Leverage term store taxonomy when creating an extractor](/microsoft-365/contentunderstanding/leverage-term-store-taxonomy) | modified |
+| 12/17/2020 | [Leverage term store taxonomy when creating an e/defender-365-security/365/contentunderstanding/leverage-term-store-taxonomy) | modified |
 | 12/17/2020 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
 | 12/17/2020 | [Add your organization brand to your encrypted messages](/microsoft-365/compliance/add-your-organization-brand-to-encrypted-messages?view=o365-21vianet) | modified |
 | 12/17/2020 | [Service encryption with Customer Key](/microsoft-365/compliance/customer-key-overview?view=o365-21vianet) | modified |
@@ -1502,12 +1503,12 @@
 |------|------------|--------|
 | 12/21/2020 | [Set up a connector to archive CellTrust data in Microsoft 365](/microsoft-365/compliance/archive-celltrust-data?view=o365-21vianet) | modified |
 | 12/21/2020 | [Archive third-party data](/microsoft-365/compliance/archiving-third-party-data?view=o365-21vianet) | modified |
-| 12/21/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
-| 12/21/2020 | [Threat Explorer and Real-time detections](/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet) | modified |
+| 12/21/2020 | [Learn about retention policies & labels to automatically retain o/defender-365-security/crosoft-365/compliance/retention?view=o365-21vianet) | modified |
+| 12/21/2020 | [Threat Explorer and Real-time detections](/microsoft-365/security/office/defender-365-security/explorer?view=o365-21vianet) | modified |
 | 12/21/2020 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?view=o365-21vianet) | modified |
-| 12/21/2020 | [Give mailbox permissions to another user - Admin Help](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-21vianet) | modified |
+| 12/21/2020 | [Give mailbox permissions to another user - Admin Help](/microsoft-365/admin/add-users/give-mailbox-permissions-to-a/defender-365-security/-21vianet) | modified |
 | 12/21/2020 | [Remediation actions following automated investigation in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-remediation-actions?view=o365-21vianet) | modified |
-| 12/22/2020 | [Limits for Content Search in the Security & Compliance Center](/microsoft-365/compliance/limits-for-content-search?view=o365-21vianet) | modified |
+| 12/22/2020 | [Limits for Content Search in the Security & Compliance Center](/microsoft-365/compliance/limits-for-content-search?view=o365-21vianet) | modified |/defender-365-security/
 | 12/22/2020 | [Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-21vianet) | modified |
 | 12/23/2020 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-21vianet) | modified |
 | 12/23/2020 | [Records Management in Microsoft 365](/microsoft-365/compliance/records-management?view=o365-21vianet) | modified |
