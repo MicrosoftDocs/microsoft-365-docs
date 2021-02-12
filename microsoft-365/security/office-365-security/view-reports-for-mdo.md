@@ -37,7 +37,7 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 ## Defender for Office 365 file types report
 
-The **Defender for Office 365 file types report** report shows you the type of files detected as malicious by [Safe Attachments](atp-safe-attachments.md).
+The **Defender for Office 365 file types report** report shows you the type of files detected as malicious by [Safe Attachments](safe-attachments.md).
 
  The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for 10 days of filtering.
 
@@ -63,7 +63,7 @@ The following views are available:
   - **Malicious executable attachments**
   - **Others**
 
-  When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
+  When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
 
   ![File view in the Defender for Office 365 file types report](../../media/atp-file-types-report-file-view.png)
 
@@ -77,7 +77,7 @@ The following views are available:
   - **Block access**
   - **Messages replaced**
   - **Messages monitored**
-  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Message view in the Defender for Office 365 file types report](../../media/atp-file-types-report-message-view.png)
 
@@ -139,7 +139,7 @@ The following views are available:
   - **Block access**
   - **Messages replaced**
   - **Messages monitored**
-  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Message view in the Defender for Office 365 file types report](../../media/atp-file-types-report-message-view.png)
 
@@ -159,7 +159,7 @@ The following views are available:
   - **Malicious executable attachments**
   - **Others**
 
-  When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
+  When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
 
   ![File view in the Defender for Office 365 file types report](../../media/atp-file-types-report-file-view.png)
 
@@ -262,7 +262,7 @@ The **Threat protection status** report is a single view that brings together in
 
 ## URL threat protection report
 
-The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](atp-safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
+The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **URL protection report**. To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
 

@@ -48,11 +48,11 @@ The following types of policies are analyzed by the configuration analyzer:
     - [Impersonation settings](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Advanced phishing thresholds](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Safe Links policies](set-up-atp-safe-links-policies.md).
+  - [Safe Links policies](set-up-safe-links-policies.md).
 
-  - [Safe Attachments policies](set-up-atp-safe-attachments-policies.md).
+  - [Safe Attachments policies](set-up-safe-attachments-policies.md).
 
-The **Standard** and **Strict** policy setting values that are used as baselines are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
+The **Standard** and **Strict** policy setting values that are used as baselines are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 ## What do you need to know before you begin?
 

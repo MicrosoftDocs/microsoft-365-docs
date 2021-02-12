@@ -556,4 +556,4 @@ For more information, see [Permissions in the Security & Compliance Center](perm
 
 [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
 
-[View reports for Microsoft Defender for Office 365](view-reports-for-atp.md)
+[View reports for Microsoft Defender for Office 365](view-reports-for-mdo.md)

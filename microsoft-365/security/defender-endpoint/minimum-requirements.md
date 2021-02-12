@@ -189,7 +189,7 @@ Before you onboard devices, the diagnostic data service must be enabled. The ser
 ## Microsoft Defender Antivirus configuration requirement
 The Defender for Endpoint agent depends on the ability of Microsoft Defender Antivirus to scan files and provide information about them.
 
-Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
+Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples).
 
 When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode.
 
@@ -201,7 +201,7 @@ If you are onboarding servers and Microsoft Defender Antivirus is not the active
 > Your regular group policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on.
 
 
-For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+For more information, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 ## Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
 If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.
@@ -210,5 +210,5 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 
 
 ## Related topics
-- [Validate licensing and complete setup](licensing.md)
+- [Validate licensing and complete setup](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment)
 - [Onboard devices](onboard-configure.md)

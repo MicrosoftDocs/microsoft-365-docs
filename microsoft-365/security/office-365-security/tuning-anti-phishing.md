@@ -36,9 +36,9 @@ If a recipient's account was compromised as a result of the phishing message, fo
 
 If your subscription includes Microsoft Defender for Office 365, you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
-- [Safe Links in Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md)
+- [Safe Links in Microsoft Defender for Office 365](set-up-safe-links-policies.md)
 
-- [Safe Attachments in Microsoft Defender for Office 365](set-up-atp-safe-attachments-policies.md)
+- [Safe Attachments in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
 
 - [Anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
@@ -64,7 +64,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - You can repeat the above step for Impersonation (domain or user). The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 
-- Periodically review the [Threat Protection Status report](view-reports-for-atp.md#threat-protection-status-report).
+- Periodically review the [Threat Protection Status report](view-reports-for-mdo.md#threat-protection-status-report).
 
 - Some customers inadvertently allow phishing messages through by putting their own domains in the Allow sender or Allow domain list in anti-spam policies. Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the spam and/or phishing filters. Instead of allowing the domain, you should correct the underlying problem.
 
