@@ -38,7 +38,7 @@ The following Teams items can be retained and deleted by using retention policie
 > [!NOTE]
 > Including card content is a recent addition and currently rolling out to tenants. For more information, see [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Teams messages in private channels are currently not supported. Code snippets, recorded voice memos from the Teams mobile client, and reactions from others in the form of emoticons are not included when you use retention policies for Teams.
+Teams messages in private channels are currently not supported for retention policies. Code snippets, recorded voice memos from the Teams mobile client, and reactions from others in the form of emoticons are not included when you use retention policies for Teams.
 
 Emails and files that you use with Teams aren't included in retention policies for Teams. These items have their own retention policies.
 
@@ -48,10 +48,10 @@ You can use a retention policy to retain and delete data from chats and channel 
 
 These mailboxes are, listed by their RecipientTypeDetails attribute:
 
-- **UserMailbox**: Used to store messages for people who use Teams and they have a mailbox for Exchange Online.
-- **MailUser**: Used to store messages for people who use Teams, don’t have a mailbox for Exchange Online but do have a mailbox for Exchange on-premises.
-- **User**: Used to store messages for people who use Teams and don't have a mailbox for Exchange Online or a mailbox for Exchange on-premises.
-- **GroupMailbox**: Used to store messages for Teams channels.
+- **UserMailbox**: These mailboxes store messages for Team users who have an Exchange Online mailbox.
+- **MailUser**: These mailboxes store messages for Teams users who have a mailbox for an on-premises Exchange server and not Exchange Online.
+- **User**: These mailboxes store messages for Teams users who don’t have a mailbox for Exchange Online or on-premise Exchange servers.
+- **GroupMailbox**: These mailboxes store messages for Teams channels.
 
 Other mailboxe types, such as RoomMailbox that is used for conference rooms, are not supported for Teams retention policies.
 
