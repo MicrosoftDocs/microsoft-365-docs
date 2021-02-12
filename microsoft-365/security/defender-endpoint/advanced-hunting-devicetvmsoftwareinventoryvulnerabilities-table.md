@@ -33,7 +33,7 @@ ms.topic: article
 
 The `DeviceTvmSoftwareInventoryVulnerabilities` table in the advanced hunting schema contains the [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) inventory of software on your devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-reference.md).
+For information on other tables in the advanced hunting schema, see [the advanced hunting reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|

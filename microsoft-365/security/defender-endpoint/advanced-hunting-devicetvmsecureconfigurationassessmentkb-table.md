@@ -32,7 +32,7 @@ ms.topic: article
 
 The `DeviceTvmSecureConfigurationAssessmentKB` table in the advanced hunting schema contains information about the various secure configurations — such as whether a device has automatic updates on — checked by [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md). It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-reference.md).
+For information on other tables in the advanced hunting schema, see [the advanced hunting reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
