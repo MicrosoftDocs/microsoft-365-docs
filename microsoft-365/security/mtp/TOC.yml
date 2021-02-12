@@ -41,13 +41,13 @@
         - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
-              href: m365d-evaluation.md
+              href: mtp-evaluation.md
             - name: Prepare
-              href: prepare-m365d-eval.md
+              href: prepare-mtpeval.md
             - name: Setup
-              href: setup-m365deval.md
+              href: setup-mtpeval.md
             - name: Configure and onboard
-              href: config-m365d-eval.md
+              href: config-mtpeval.md
             - name: Start the Microsoft 365 Defender service
               href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
@@ -55,32 +55,32 @@
         - name: Deploy
           items:
             - name: Turn on Microsoft Threat Protection
-              href: m365d-enable.md
+              href: mtp-enable.md
             - name: Run your pilot project in production
               items: 
                 - name: Pilot overview
-                  href: m365d-pilot.md
+                  href: mtp-pilot.md
                 - name: Plan
-                  href: m365d-pilot-plan.md
+                  href: mtp-pilot-plan.md
                 - name: Prepare
                   href: prepare-mtpeval.md
                 - name: Simulate attack
-                  href: m365d-pilot-simulate.md
+                  href: mtp-pilot-simulate.md
                 - name: Close and summarize
-                  href: m365d-pilot-close.md
+                  href: mtp-pilot-close.md
             - name: Deploy supported services
               href: deploy-supported-services.md
             
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
-              href: m365d-evaluation.md
+              href: mtp-evaluation.md
             - name: Run pilot playbook
-              href: m365d-pilot.md
+              href: mtp-pilot.md
 
 
             - name: Turn on FAQ
-              href: m365d-enable-faq.md
+              href: mtp-enable-faq.md
             - name: Incidents
               items: 
                 - name: Overview
@@ -94,23 +94,23 @@
                     - name: Manage incidents
                       href: manage-incidents.md
                 - name: Get email notifications
-                  href: mtp/get-incident-notifications.md
+                  href: get-incident-notifications.md
             - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
-                  href: m365d-autoir.md
+                  href: mtp-autoir.md
                 - name: Configure automated investigation and response capabilities
-                  href: m365d-configure-auto-investigation-response.md
+                  href: mtp-configure-auto-investigation-response.md
                 - name: Remediation actions
-                  href: m365d-remediation-actions.md
+                  href: mtp-remediation-actions.md
                 - name: Visit the Action center
-                  href: m365d-action-center.md
+                  href: mtp-action-center.md
                 - name: Approve or reject pending remediation actions
-                  href: m365d-autoir-actions.md
+                  href: mtp-autoir-actions.md
                 - name: View details and results of automated investigations
-                  href: m365d-autoir-results.md
+                  href: mtp-autoir-results.md
                 - name: Report false positives/negatives
-                  href: m365d-autoir-report-false-positives-negatives.md
+                  href: mtp-autoir-report-false-positives-negatives.md
             - name: Advanced hunting
               items: 
                 - name: Advanced hunting overview
@@ -126,7 +126,7 @@
                     - name: Hunt across devices, emails, apps, and identities
                       href: advanced-hunting-query-emails-devices.md
                     - name: Hunt for ransomware
-                      href: mtp/advanced-hunting-find-ransomware.md
+                      href: advanced-hunting-find-ransomware.md
                     - name: Transition from Defender for Endpoint 
                       href: advanced-hunting-migrate-from-mde.md
                 - name: Work with query results
@@ -150,11 +150,11 @@
                     - name: Understand the schema
                       href: advanced-hunting-schema-tables.md
                     - name: AADSignInEventsBeta
-                      href: mtp/advanced-hunting-aadsignineventsbeta-table.md
+                      href: advanced-hunting-aadsignineventsbeta-table.md
                     - name: AADSpnSignInEventsBeta
-                      href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
+                      href: advanced-hunting-aadspnsignineventsbeta-table.md
                     - name: Schema naming changes
-                      href: mtp/advanced-hunting-schema-changes.md
+                      href: advanced-hunting-schema-changes.md
                     - name: AlertEvidence
                       href: advanced-hunting-alertevidence-table.md
                     - name: AlertInfo
@@ -212,7 +212,7 @@
                     - name: AssignedIPAddresses()
                       href: advanced-hunting-assignedipaddresses-function.md                    
                     - name: DeviceFromIP()
-                      href: mtp/advanced-hunting-devicefromip-function.md
+                      href: advanced-hunting-devicefromip-function.md
                     - name: FileProfile()
                       href: advanced-hunting-fileprofile-function.md
                 - name: Custom detections
@@ -238,9 +238,9 @@
             - name: Permissions & settings
               items: 
                 - name: Manage access
-                  href: m365d-permissions.md
+                  href: mtp-permissions.md
                 - name: Set time zone
-                  href: m365d-time-zone.md
+                  href: mtp-time-zone.md
                 - name: View device profiles
                   href: device-profile.md
                 - name: Provide feedback

@@ -50,7 +50,7 @@ Network protection requires Windows 10 Pro, Enterprise E3, E5 and Microsoft Defe
 
 Windows 10 version | Microsoft Defender Antivirus
 -|-
-Windows 10 version 1709 or later | [Microsoft Defender AV real-time protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) and [cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) must be enabled
+Windows 10 version 1709 or later | [Microsoft Defender AV real-time protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled
 
 After you have enabled the services, you may need to configure your network or firewall to allow the connections between the services and your endpoints.  
 

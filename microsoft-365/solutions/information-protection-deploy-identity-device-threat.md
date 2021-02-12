@@ -65,7 +65,7 @@ Use [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microso
 - Require mobile devices to lock upon inactivity.
 - Require mobile devices to wipe on multiple sign-in failures.
 
-Use [Exchange Online Protection and Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md) for the **Protect Against Threats** category, with which you can:
+Use [Exchange Online Protection and Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) for the **Protect Against Threats** category, with which you can:
 
 - Enable sender authentication (SPF, DMARC and DKIM).
 - Set up Microsoft Defender for Office 365 anti-phishing policies.

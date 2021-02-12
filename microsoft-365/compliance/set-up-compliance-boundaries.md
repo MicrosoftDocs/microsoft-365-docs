@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
@@ -31,13 +31,17 @@ We use the example in the following illustration to explain how compliance bound
   
 ![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
-In this example, Contoso LTD is an organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery mangers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Here's how compliance boundaries meet these requirements.
+In this example, Contoso LTD is an organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery mangers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Additionally in this scenario, investigators cannot place content locations on hold or export content from a case. Here's how compliance boundaries meet these requirements.
   
-- The search permissions filtering functionality in Content Search controls the content locations that eDiscovery managers and investigators can search. This means eDiscovery managers and investigators in the Fourth Coffee agency can only search content locations in the Fourth Coffee subsidiary. The same restriction applies to the Coho Winery subsidiary.
+- The search permissions filtering functionality in Content search controls the content locations that eDiscovery managers and investigators can search. This means eDiscovery managers and investigators in the Fourth Coffee agency can only search content locations in the Fourth Coffee subsidiary. The same restriction applies to the Coho Winery subsidiary.
 
-    Role groups control who can see the eDiscovery cases in the Security & Compliance Center. This means that eDiscovery managers and investigators can only see the eDiscovery cases in their agency.
+- Role groups provide the following functions for compliance boundaries:
 
-- Role groups also control who can assign members to an eDiscovery case. This means eDiscovery managers and investigators can only assign members to cases that they themselves are a member of.
+  - Control who can see the eDiscovery cases in the Security & Compliance Center. This means that eDiscovery managers and investigators can only see the eDiscovery cases in their agency.
+
+  - Control who can assign members to an eDiscovery case. This means eDiscovery managers and investigators can only assign members to cases that they themselves are a member of.
+
+  - Control the eDiscovery-related tasks that members can perform by adding or removing roles that assign specific permissions.
 
 Here's the process for setting up compliance boundaries:
   
@@ -115,6 +119,8 @@ Using the Contoso compliance boundaries scenario, four role groups need to be cr
 
 - Coho Winery Investigators
   
+To meet the requirements of the Contoso compliance boundaries scenario, you would also remove the **Hold** and **Export** roles from the investigators role groups to prevent investigators from placing holds on content locations and exporting content from a case.
+
 ## Step 4: Create a search permissions filter to enforce the compliance boundary
 
 After you've created role groups for each agency, the next step is to create the search permissions filters that associate each role group to its specific agency and defines the compliance boundary itself. You need to create one search permissions filter for each agency. For more information about creating security permissions filters, see [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md).
@@ -290,7 +296,7 @@ Keep the following limitations in mind when managing eDiscovery cases and invest
 
 - The compliance attribute is synchronized from a user's Exchange mailbox to their OneDrive account every seven days. As previously stated, this synchronization only occurs when the user is assigned both an Exchange Online and SharePoint Online license and the user's mailbox is at least 10 MB.
 
-- If compliance boundaries and search permissions filters implemented for both a user's mailbox and OneDrive account, then we recommend that you don't delete a user's mailbox and not their OneDrive account. In other words, if you delete a user's mailbox, you should also remove the user's OneDrive account.
+- If compliance boundaries and search permissions filters are implemented for both a user's mailbox and OneDrive account, then we recommend that you don't delete a user's mailbox and not their OneDrive account. In other words, if you delete a user's mailbox, you should also remove the user's OneDrive account.
 
 - There are situations (such as a returning employee) where a user might have two or more OneDrive accounts. In these cases, only the primary OneDrive account associated with the user in Azure AD will be synchronized.
 
