@@ -141,8 +141,6 @@ Select an item in the list to view details. A flyout appears with the following 
 - WhoIs data about the sender.
 - Similar messages we have seen in your tenant from the same sender.
 
-   ![Screenshot of a domain in the spoof intelligence insight details pane](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
-
 ### About allowed spoofed senders
 
 An allowed spoofed sender in **Non-suspicious domains** in the spoof intelligence insight or a blocked sender in **Suspicious domains** that you manually changed to **Allowed to spoof** only allows messages from the combination of the spoofed domain *and* the sending infrastructure. It does not allow email from the spoofed domain from any source, nor does it allow email from the sending infrastructure for any domain.
