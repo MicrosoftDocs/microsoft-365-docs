@@ -173,6 +173,6 @@ New features are added to Microsoft Defender for Office 365 continually. To lear
 
 ## See also
 
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft 365 Defender](../mtp/microsoft-365-defender.md)
 
 - [Automated investigation and response (AIR) in Microsoft 365 Defender](../mtp/mtp-autoir.md)
