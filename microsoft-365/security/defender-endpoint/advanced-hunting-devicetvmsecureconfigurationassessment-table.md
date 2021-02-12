@@ -32,7 +32,7 @@ ms.topic: article
 
 Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
-For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-reference.md).
+For information on other tables in the advanced hunting schema, see [the advanced hunting reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
