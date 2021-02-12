@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: Information for admins to manage sensitivity labels in Office apps for desktop, mobile, and the web.
+description: Information for IT administrators to manage sensitivity labels in Office apps for desktop, mobile, and the web.
 ms.custom: seo-marvel-apr2020
 ---
 
