@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -51,7 +50,7 @@ TLS version 1.3 (TLS 1.3) is currently not supported.
   
 ## Support for TLS 1.0 and 1.1 deprecation
 
-Office 365 stopped supporting TLS 1.0 and 1.1 on October 31, 2018. New issues found in clients, devices, or services that connect to Office 365 over TLS 1.0 and 1.1 won't be fixed. Official deprecation for GCC High and DoD environments began January 15, 2020. Deprecation of TLS 1.0 and 1.1 for Worldwide and GCC environments began October 15, 2020.
+Office 365 stopped supporting TLS 1.0 and 1.1 on October 31, 2018. We have completed disabling TLS 1.0 and 1.1 in GCC High and DoD environments. We began disabling TLS 1.0 and 1.1 for Worldwide and GCC environments beginning on October 15, 2020 and will continue with roll-out over the next weeks and months.
 
 To maintain a secure connection to Office 365 and Microsoft 365 services, all client-server and browser-server combinations use TLS 1.2 and modern cipher suites. You might have to update certain client-server and browser-server combinations. For information about how this change impacts you, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   
@@ -72,7 +71,7 @@ Office 365 responds to a connection request by first attempting to connect using
 > [!IMPORTANT]
 > Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. TLS 1.3 is currently not supported. If your legacy services do not require TLS 1.0 or 1.1 you should disable them.
 
-| Cipher suite | Key exchange algorithm/strength | Perfect Forward Secrecy | Cipher/strength | Authentication algorithm |
+| Cipher suite | Key exchange algorithm/strength | Forward Secrecy | Cipher/strength | Authentication algorithm |
 |:-----|:-----|:-----|:-----|:-----|
 |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
 |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
@@ -85,7 +84,7 @@ Office 365 responds to a connection request by first attempting to connect using
 
 These cipher suites supported TLS 1.0 and 1.1 protocols until their deprecation date. For GCC High and DoD environments that deprecation date was January 15, 2020, and for Worldwide and GCC environments that date was October 15, 2020.
 
-| Protocols | Cipher suite name | Key exchange algorithm/Strength | Perfect Forward Secrecy support | Authentication algorithm/Strength | Cipher/Strength |
+| Protocols | Cipher suite name | Key exchange algorithm/Strength | Forward Secrecy support | Authentication algorithm/Strength | Cipher/Strength |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |Yes  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Yes  <br/> |RSA/112  <br/> |AES/128  <br/> |
