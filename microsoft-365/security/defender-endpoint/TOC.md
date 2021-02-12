@@ -8,7 +8,7 @@
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
 ### [Portal overview](portal-overview.md)
-### [Microsoft Defender for Endpoint for US Government customers](gov.md)
+### [Microsoft Defender for Endpoint for US Government customers](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/gov)
 ### [Microsoft Defender ATP for non-Windows platforms](non-windows.md)
 
 ## [Evaluate capabilities](evaluation-lab.md)

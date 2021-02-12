@@ -93,17 +93,17 @@ Microsoft Defender for Office 365:
 - Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries.
 - Applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks.
 
-For an overview, including a summary of plans, see [Defender for Office 365](office-365-security/office-365-atp.md).
+For an overview, including a summary of plans, see [Defender for Office 365](./office-365-security/defender-for-office-365.md).
 
 Your Global Administrator can configure these protections:
 
-- [Set up Safe Links policies](office-365-security/set-up-atp-safe-links-policies.md)
+- [Set up Safe Links policies](office-365-security/set-up-safe-links-policies.md)
 - [Configure global settings for Safe Links](office-365-security/configure-global-settings-for-safe-links.md)
-- [Set up Safe Attachments policies](office-365-security/set-up-atp-safe-attachments-policies.md)
+- [Set up Safe Attachments policies](office-365-security/set-up-safe-attachments-policies.md)
 
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
 
-- [ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
+- [ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## 4: Configure Microsoft Defender for Identity
 

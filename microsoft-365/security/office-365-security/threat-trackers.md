@@ -89,7 +89,7 @@ And remember that you can always provide us feedback on this or other Microsoft 
 
 ## Trackers and Microsoft Defender for Office 365
 
-With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Safe Attachments](atp-safe-attachments.md). If you're an Office 365 Enterprise E5 customer and you're not using [Microsoft Defender for Office 365](office-365-atp.md), you should be - it's included in your subscription. Defender for Office 365 provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Safe Links](atp-safe-links.md) features work best when your main email security solution is through Office 365.
+With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Safe Attachments](safe-attachments.md). If you're an Office 365 Enterprise E5 customer and you're not using [Microsoft Defender for Office 365](defender-for-office-365.md), you should be - it's included in your subscription. Defender for Office 365 provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Safe Links](safe-links.md) features work best when your main email security solution is through Office 365.
 
 ![Microsoft Defender for Office 365 in the Security & Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
 
@@ -105,4 +105,4 @@ The new Noteworthy threat filter highlights items that were recently detected th
 
 - Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers [here](https://protection.office.com/). Go to **Threat management** \> **Threat trackers**.
 
-- If you haven't already done so, learn more about and configure [Microsoft Defender for Office 365](office-365-atp.md) for your organization, including [Safe links](atp-safe-links.md) and [Safe Attachments](atp-safe-attachments.md).
+- If you haven't already done so, learn more about and configure [Microsoft Defender for Office 365](defender-for-office-365.md) for your organization, including [Safe links](safe-links.md) and [Safe Attachments](safe-attachments.md).

@@ -76,7 +76,7 @@ The following table summarizes what's included in each plan.
 
 |Microsoft Defender for Office 365 Plan 1|Microsoft Defender for Office 365 Plan 2|
 |---|---|
-|Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](atp-safe-attachments.md)</li><li>[Safe Links](atp-safe-links.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender for Office 365 protection](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 Plan 1 capabilities <br>--- plus ---<br> Automation, investigation, remediation, and education capabilities:<ul><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](office-365-air.md)</li><li>[Attack Simulator](attack-simulator.md)</li><li>[Campaign Views](campaigns.md)</li></ul>|
+|Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](safe-attachments.md)</li><li>[Safe Links](safe-links.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender for Office 365 protection](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 Plan 1 capabilities <br>--- plus ---<br> Automation, investigation, remediation, and education capabilities:<ul><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](office-365-air.md)</li><li>[Attack Simulator](attack-simulator.md)</li><li>[Campaign Views](campaigns.md)</li></ul>|
 |
 
 - Microsoft Defender for Office 365 Plan 2 is included in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security, and Microsoft 365 E5.
@@ -100,27 +100,27 @@ With Microsoft Defender for Office 365, your organization's security team can co
 
 The policies that are defined for your organization determine the behavior and protection level for predefined threats. Policy options are extremely flexible. For example, your organization's security team can set fine-grained threat protection at the user, organization, recipient, and domain level. It is important to review your policies regularly because new threats and challenges emerge daily.
 
-- **[Safe Attachments](atp-safe-attachments.md)**: Provides zero-day protection to safeguard your messaging system, by checking email attachments for malicious content. It routes all messages and attachments that do not have a virus/malware signature to a special environment, and then uses machine learning and analysis techniques to detect malicious intent. If no suspicious activity is found, the message is forwarded to the mailbox. To learn more, see [Set up Safe Attachments policies](set-up-atp-safe-attachments-policies.md).
+- **[Safe Attachments](safe-attachments.md)**: Provides zero-day protection to safeguard your messaging system, by checking email attachments for malicious content. It routes all messages and attachments that do not have a virus/malware signature to a special environment, and then uses machine learning and analysis techniques to detect malicious intent. If no suspicious activity is found, the message is forwarded to the mailbox. To learn more, see [Set up Safe Attachments policies](set-up-safe-attachments-policies.md).
 
-- **[Safe Links](atp-safe-links.md)**: Provides time-of-click verification of URLs, for example, in emails messages and Office files. Protection is ongoing and applies across your messaging and Office environment. Links are scanned for each click: safe links remain accessible and malicious links are dynamically blocked. To learn more, see [Set up Safe Links policies](set-up-atp-safe-links-policies.md).
+- **[Safe Links](safe-links.md)**: Provides time-of-click verification of URLs, for example, in emails messages and Office files. Protection is ongoing and applies across your messaging and Office environment. Links are scanned for each click: safe links remain accessible and malicious links are dynamically blocked. To learn more, see [Set up Safe Links policies](set-up-safe-links-policies.md).
 
-- **[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)**: Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries. To learn more, see [Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+- **[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)**: Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries. To learn more, see [Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 - **[Anti-phishing protection in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: Detects attempts to impersonate your users and internal or custom domains. It applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks. To learn more, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ## View Microsoft Defender for Office 365 reports
 
-Microsoft Defender for Office 365 includes an advanced [reporting dashboard](view-reports-for-atp.md) to monitor your Defender for Office 365  performance. You can access it at **Reports** \> **Dashboard** in the Security & Compliance Center.
+Microsoft Defender for Office 365 includes an advanced [reporting dashboard](view-reports-for-mdo.md) to monitor your Defender for Office 365  performance. You can access it at **Reports** \> **Dashboard** in the Security & Compliance Center.
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 
 - [Threat Explorer (or real-time detections)](threat-explorer.md)
 
-- [Threat protection status report](view-reports-for-atp.md#threat-protection-status-report)
+- [Threat protection status report](view-reports-for-mdo.md#threat-protection-status-report)
 
-- [Defender for Office 365 file types report](view-reports-for-atp.md#defender-for-office-365-file-types-report)
+- [Defender for Office 365 file types report](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
 
-- [Defender for Office 365 message disposition report](view-reports-for-atp.md#defender-for-office-365-message-disposition-report)
+- [Defender for Office 365 message disposition report](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
 
 - ... and several more.
 
@@ -173,6 +173,6 @@ New features are added to Microsoft Defender for Office 365 continually. To lear
 
 ## See also
 
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 
 - [Automated investigation and response (AIR) in Microsoft 365 Defender](../mtp/mtp-autoir.md)

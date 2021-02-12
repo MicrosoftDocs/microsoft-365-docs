@@ -186,7 +186,7 @@ Application Guard for Office is integrated with Microsoft Defender for Endpoint 
 
 Microsoft Defender for Endpoint is a security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. For more details about this platform, see [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). To learn more about onboarding devices to this platform, see [Onboard devices to the Microsoft Defender for Endpoint service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
-You can also configure Microsoft Defender for Office 365 to work with Defender for Endpoint. For more info, refer to [Integrate Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
+You can also configure Microsoft Defender for Office 365 to work with Defender for Endpoint. For more info, refer to [Integrate Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md).
 
 ## Limitations and considerations
 

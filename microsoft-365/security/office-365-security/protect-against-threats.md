@@ -56,7 +56,7 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 |Anti-spam protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Zero-hour auto purge (for email)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365 ](atp-for-spo-odb-and-teams.md)|
+|Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365 ](mdo-for-spo-odb-and-teams.md)|
 |Advanced anti-phishing protection|[Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### Roles and permissions
@@ -152,11 +152,11 @@ To learn more about your anti-spam policy options, see [Configure anti-spam poli
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](atp-safe-attachments.md) and [Safe Links](atp-safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments.md) and [Safe Links](safe-links.md) policies.
 
 ### Safe Attachments policies in Microsoft Defender for Office 365
 
-To set up [Safe Attachments](atp-safe-attachments.md), create at least one Safe Links policy.
+To set up [Safe Attachments](safe-attachments.md), create at least one Safe Links policy.
 
 1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe Attachments**, and then click **Create**.
 
@@ -176,7 +176,7 @@ To set up [Safe Attachments](atp-safe-attachments.md), create at least one Safe 
 
 ### Safe Links policies in Microsoft Defender for Office 365
 
-To set up [Safe Links](atp-safe-links.md), review and edit your global settings for Safe Links, and create at least one Safe Links policy.
+To set up [Safe Links](safe-links.md), review and edit your global settings for Safe Links, and create at least one Safe Links policy.
 
 1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe Links**, and click **Global settings**, and then configure the following settings:
 
@@ -206,11 +206,11 @@ To set up [Safe Links](atp-safe-links.md), review and edit your global settings 
 
 5. Review your settings and then click **Finish**.
 
-To learn more, see [Set up Safe Links policies](set-up-atp-safe-links-policies.md).
+To learn more, see [Set up Safe Links policies](set-up-safe-links-policies.md).
 
 ## Part 5 - Verify Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is turned on
 
-Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Using Defender for Office 365 helps with blocking and detection of files that are identified as malicious in team sites and document libraries. You can read more about how that works [here](atp-for-spo-odb-and-teams.md).
+Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Using Defender for Office 365 helps with blocking and detection of files that are identified as malicious in team sites and document libraries. You can read more about how that works [here](mdo-for-spo-odb-and-teams.md).
 
 > [!IMPORTANT]
 > **Before you begin this procedure, make sure that audit logging is already turned on for your Microsoft 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)!
@@ -219,7 +219,7 @@ Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Usin
 
 2. Verify the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** toggle is to the right: ![Toggle on](../../media/scc-toggle-on.png), and then click **Save**.
 
-3. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) and [Safe Links policies](set-up-atp-safe-links-policies.md).
+3. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-safe-attachments-policies.md) and [Safe Links policies](set-up-safe-links-policies.md).
 
 4. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to `$true`.
 
@@ -285,7 +285,7 @@ After configuring the threat protection features, make sure to monitor how those
 
 |What to do|Resources to learn more|
 |---|---|
-|See how threat protection features are working for your organization by viewing reports|[Security dashboard](security-dashboard.md) <p> [Email security reports](view-email-security-reports.md) <p> [Reports for Microsoft Defender for Office 365](view-reports-for-atp.md) <p> [Threat Explorer](threat-explorer.md)|
+|See how threat protection features are working for your organization by viewing reports|[Security dashboard](security-dashboard.md) <p> [Email security reports](view-email-security-reports.md) <p> [Reports for Microsoft Defender for Office 365](view-reports-for-mdo.md) <p> [Threat Explorer](threat-explorer.md)|
 |Periodically review and revise your threat protection policies as needed|[Secure Score](../mtp/microsoft-secure-score.md) <p> [Smart reports and insights](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 threat investigation and response features](keep-users-safe-with-office-365-ti.md)|
 |Watch for new features and service updates|[Standard and Targeted release options](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [Message Center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|Learn the details about recommended Standard and Strict security configurations for EOP and Defender for Office 365|[Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md)|
+|Learn the details about recommended Standard and Strict security configurations for EOP and Defender for Office 365|[Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)|
