@@ -24,7 +24,7 @@ description: "View your apps."
 >REVIEWERS: This content is in progress and not ready for review.
 >
 
-Microsoft Application Protection and Governance (MAPG) allows you to quickly gain deep insights on the M365 apps in your tenant.
+Microsoft Application Protection and Governance (MAPG) allows you to quickly gain deep insights into the M365 apps in your tenant.
 
 - You can see a list of all OAuth-enabled M365 apps in the tenant, together with relevant app metadata and usage data. 
 - You can see app details with deeper insights and information by clicking an app in the list.

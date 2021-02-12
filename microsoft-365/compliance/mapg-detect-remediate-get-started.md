@@ -28,7 +28,7 @@ The first place to view app alerts is the Microsoft Application Protection and G
 
 \[Placeholder for MAPG Overview page screenshot with the Detection and policy alerts section highlighted]
 
-On this overview page, a **Detection and policy alerts** section lists the latest alerts. You can use this to quickly see the current app alert activity for your tenant.
+On this overview page, the **Detection and policy alerts** section lists the latest alerts. You can use this to quickly see the current app alert activity for your tenant.
 
 To see all of the alerts, select the **Alerts** tab.
 
@@ -41,7 +41,7 @@ The **Alerts** page lists all of the MAPG-based alerts for your tenant.
 Each listed alert has the following information:
 
 - **Alert name**: The type of anomalous behavior.
-- **App name**: The app generating the alert.
+- **App name**: The app that generated the alert.
 - **Severity**: The severity assigned by MAPG for alerts it creates or the severity of the app policy.
 - **Source**: Either MAPG with a source of **Detection** on an app policy with a source of **Policy**.
 - **Status**: **New** indicates an alert that has not been assigned a status, which is either **In progress** while being investigated or **Resolved** for alerts that have been addressed.

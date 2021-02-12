@@ -29,7 +29,7 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 - Specify additional conditions by which MAPG can alert you to app behavior for automatic or manual remediation.
 - Implement the app compliance policies for your organization.
 
-You can create app policies from provided templates that can be customized or you can create a custom app policy.
+You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
 
 To create a new app policy, go to **Microsoft 365 Compliance Center > App protection & governance > Overview page > Policies > Create New**.
 
@@ -137,9 +137,9 @@ On the **Define Policy Actions** page, select **Disable app** if you want MAPG t
 
 On the **Define Policy Status** page, select one of these options:
 
-- **Audit mode**: Policies will be evaluated but the configured actions will not occur. Audit mode policies appear as "Test" in the list of policies.
+- **Audit mode**: Policies will be evaluated but configured actions will not occur. Audit mode policies appear as "Test" in the list of policies.
 - **Active**: Policies will be evaluated and configured actions will occur.
-- **Inactive**: Policies will not be evaluated and the configured actions will not occur.
+- **Inactive**: Policies will not be evaluated and configured actions will not occur.
 
 <!--
 ## Configure a user-based policy
@@ -153,7 +153,7 @@ Publish metadata-based policies
 
 ## Test and monitor your new app policy
 
-Now that your app policy is created, you should monitor it in the **Policies** page to ensure it is registering an expected number of active alerts and total alerts during testing. 
+Now that your app policy is created, you should monitor it on the **Policies** page to ensure it is registering an expected number of active alerts and total alerts during testing. 
 
 \[Placeholder: Screenshot of Policies page with policy and alerts info highlighted]
 
