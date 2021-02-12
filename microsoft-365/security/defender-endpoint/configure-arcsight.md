@@ -204,6 +204,5 @@ Defender for Endpoint detections will appear as discrete events, with "Microsoft
 
 ## Related topics
 - [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)
-- [Configure Splunk to pull Defender for Endpoint detections](configure-splunk.md)
 - [Pull Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
