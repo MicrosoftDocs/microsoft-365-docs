@@ -91,6 +91,15 @@ Back-end Exchange Online Protection (EOP) features are copied to new Germany reg
 | Migration of Skype for Business to Teams. | Existing Skype for Business customers are migrated to Office 365 services in Europe and then transitioned to Microsoft Teams in the Germany region of Office 365 services. | Skype for Business customers | - Users won't be able to sign in to Skype for Business on the migration date. Ten days before migration, we'll post to the Admin center to let you know about when the migration will take place, and again when we begin the migration. <br><br> - Policy configuration is migrated. <br><br> - Users will be migrated to Teams and will no longer have Skype for Business after migration. <br><br> - Users must have the Teams desktop client installed. Installation will happen during the 10 days via policy on the Skype for Business infrastructure, but if this fails, users will still need to download the client or connect with a supported browser. <br><br> - Contacts and meetings will be migrated to Teams. <br><br> - Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed. <br><br> - Contacts and existing meetings will continue to function as Skype for Business meetings. |
 |||||
 
+
+## Office Apps (Phase 8 of 9)
+
+| Step(s) | Description | Applies to | Impact |
+|:-------|:-----|:-------|:-------|
+| Clients, Office Online during Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. | This configuration change enables Office clients to update and point to the Office 365 services endpoints. | All Office customers | - Notify users to close _all_ Office apps and then sign back in (or force clients to restart and users to sign in) to enable Office clients to pick up the change. <br><br> - Notify users and help desk staff that users *may* see an Office banner that prompts them to reactivate Office apps within 72 hours of the cutover. <br><br> - All Office applications on personal machines must be closed, and users must sign out then sign in again. In the Yellow activation bar, sign in to reactivate against Office 365 services. <br><br> - Shared machines will require actions that are similar to personal machines, and won't require a special procedure. <br><br> - On mobile devices, users must sign out of apps, close them, and then sign in again. |
+|||||
+
+
 ## Office Services
 
 The most recently used (MRU) service in Office is a cutover from the Germany service to Office 365 services, not a migration. Only MRU links from the Office 365 services side will be visible after migration from the Office.com portal. MRU links from the Germany service aren't visible as MRU links in Office 365 services. In Office 365, MRU links are accessible only after the tenant migration is complete.
