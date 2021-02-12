@@ -102,7 +102,7 @@ You can also run the [Search-UnifiedAuditLog -Operations Send](https://docs.micr
 
 ### SearchQueryInitiatedExchange
 
-The SearchQueryInitiatedExchange event is triggered when a person used Outlook to search for items in a mailbox. Events are triggered when searches are performed in the following Outlook environments:
+The SearchQueryInitiatedExchange event is triggered when a person uses Outlook to search for items in a mailbox. Events are triggered when searches are performed in the following Outlook environments:
 
 - Outlook (desktop client)
 
@@ -114,7 +114,7 @@ The SearchQueryInitiatedExchange event is triggered when a person used Outlook t
 
 - Mail app for Windows 10
 
-Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker who may have compromised an account looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual text of the search query. The audit record also indicates the Outlook environment. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent of the email data that was searched for.
+Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker who may have compromised an account looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual text of the search query. The audit record also indicates the Outlook environment the search was performed in. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent of the email data that was searched for.
 
 To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
 
