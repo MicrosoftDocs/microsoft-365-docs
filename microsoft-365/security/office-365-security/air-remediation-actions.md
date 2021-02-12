@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 ## Remediation actions
 
-Threat protection features in [Microsoft Defender for Office 365](office-365-atp.md) include certain remediation actions. Such remediation actions can include:
+Threat protection features in [Microsoft Defender for Office 365](defender-for-office-365.md) include certain remediation actions. Such remediation actions can include:
 
 - Soft delete email messages or clusters
 - Block URL (time-of-click)

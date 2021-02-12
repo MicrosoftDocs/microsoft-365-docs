@@ -62,7 +62,7 @@ The Threat Protection Status widget shows threat protection effectiveness with a
 
 ![Threat protection status widget](../../media/tpswidget.png)
 
-The details depend on whether your Microsoft 365 subscription includes [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) with or without [Microsoft Defender for Office 365](office-365-atp.md).
+The details depend on whether your Microsoft 365 subscription includes [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) with or without [Microsoft Defender for Office 365](defender-for-office-365.md).
 
 |If your subscription includes...|You'll see these details|
 |---|---|
@@ -83,7 +83,7 @@ The metrics are calculated as described in the following table:
 |---|---|
 |Messages scanned|Number of email messages scanned multiplied by the number of recipients|
 |Threats stopped|Number of email messages identified as containing malware multiplied by the number of recipients|
-|Blocked by [Defender for Office 365 ](office-365-atp.md)|Number of email messages blocked by Defender for Office 365 multiplied by the number of recipients|
+|Blocked by [Defender for Office 365 ](defender-for-office-365.md)|Number of email messages blocked by Defender for Office 365 multiplied by the number of recipients|
 |Removed after delivery|Number of messages removed by [zero-hour auto purge](zero-hour-auto-purge.md) multiplied by the number of recipients|
 
 ## Malware
@@ -124,6 +124,6 @@ To view or access the Recent Threat Management Alerts widget, you must have perm
 
 [View reports for Microsoft Defender for Office 365](view-reports-for-atp.md)
 
-[Defender for Office 365](office-365-atp.md)
+[Defender for Office 365](defender-for-office-365.md)
 
 [Office 365 Threat investigation and response](office-365-ti.md)

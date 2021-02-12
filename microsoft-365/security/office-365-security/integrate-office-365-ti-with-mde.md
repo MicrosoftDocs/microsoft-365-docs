@@ -27,7 +27,7 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender for Office 365](office-365-atp.md) can be configured to work with [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection).
+[Microsoft Defender for Office 365](defender-for-office-365.md) can be configured to work with [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection).
 
 Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint can help your security operations team monitor and take action quickly if users' devices are at risk. For example, once integration is enabled, your security operations team will be able to see the devices that are potentially affected by a detected email message, as well as how many recent alerts were generated for those devices in Microsoft Defender for Endpoint.
 
@@ -76,6 +76,6 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
 [Threat investigation and response capabilities in Office 365](office-365-ti.md)
 
-[Microsoft Defender for Office 365](office-365-atp.md)
+[Microsoft Defender for Office 365](defender-for-office-365.md)
 
 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)

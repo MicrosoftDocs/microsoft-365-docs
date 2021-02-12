@@ -73,7 +73,7 @@ If you have an Office 365 E3, or below, you have EOP, but with the option to buy
 ![EOP and Microsoft Defender for Office 365 and their security emphasis, going from Protect and Detect to Investigate and Respond. Email Authentication configuration (at least DKIM and DMARC) should be set up for EOP and up.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 > [!IMPORTANT]
-> Learn the details on these pages: [Exchange Online Protection](exchange-online-protection-overview.md), and [Defender for Office 365](office-365-atp.md).
+> Learn the details on these pages: [Exchange Online Protection](exchange-online-protection-overview.md), and [Defender for Office 365](defender-for-office-365.md).
 
 What makes adding Microsoft Defender for Office 365 plans an advantage to pure EOP threat management can be difficult to tell at first glance. To help sort out if an upgrade path is right for your organization, let's look at the capabilities of each product when it comes to:
 
@@ -115,7 +115,7 @@ So, Microsoft Defender for Office 365 P2 expands on the ***investigation and res
 
 In Microsoft Defender for Office 365 P2, the primary hunting tool is called **Threat Explorer** rather than Real-time detections. If you see Threat Explorer when you navigate to the Security center, you're in Microsoft Defender for Office 365 P2.
 
-To get into the details of Microsoft Defender for Office 365 P1 and P2, **[jump to this article](office-365-atp.md)**.
+To get into the details of Microsoft Defender for Office 365 P1 and P2, **[jump to this article](defender-for-office-365.md)**.
 
 > [!TIP]
 > EOP and Microsoft Defender for Office 365 are also different when it comes to end-users. In EOP and Defender for Office 365 P1, the focus is *awareness*, and so those two services include the *Report message Outlook add-in* so users can report emails they find suspicious, for further analysis. <p> In Defender for Office 365 P2 (which contains everything in EOP and P1), the focus shifts to *further training* for end-users, and so the Security Operations Center has access to a powerful *Threat Simulator* tool, and the end-user metrics it provides.
@@ -150,7 +150,7 @@ If you're a Security Admin, you may need to configure DKIM or DMARC for your mai
 
 [See the specific recommended 'golden' configs](recommended-settings-for-eop-and-office365-atp.md) and [use their recommended presets to configure security policies quickly](preset-security-policies.md)
 
-Catch up on [what's new in Microsoft Defender for Office 365 (including EOP developments)](whats-new-in-office-365-atp.md)
+Catch up on [what's new in Microsoft Defender for Office 365 (including EOP developments)](whats-new-in-defender-for-office-365.md)
 
 [Use Threat Explorer or Real-time detections](threat-explorer.md)
 
