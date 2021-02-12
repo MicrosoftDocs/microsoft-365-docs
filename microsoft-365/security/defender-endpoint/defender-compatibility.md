@@ -46,4 +46,4 @@ Microsoft Defender Antivirus will continue to receive updates, and the *mspeng.e
 
 The Microsoft Defender Antivirus interface will be disabled, and users on the device will not be able to use Microsoft Defender Antivirus to perform on-demand scans or configure most options.
 
-For more information, see the [Microsoft Defender Antivirus and Defender for Endpoint compatibility topic](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+For more information, see the [Microsoft Defender Antivirus and Defender for Endpoint compatibility topic](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
