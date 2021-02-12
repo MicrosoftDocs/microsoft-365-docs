@@ -53,7 +53,7 @@ These mailboxes are, listed by their RecipientTypeDetails attribute:
 - **User**: These mailboxes store messages for Teams users who don’t have a mailbox for Exchange Online or on-premise Exchange servers.
 - **GroupMailbox**: These mailboxes store messages for Teams channels.
 
-Other mailbox types are not supported for Teams retention policies. For example, mailboxes that store messages for Teams conference rooms (RoomMailbox) are not supported for Teams retention policies.
+Other mailbox types, such as RoomMailbox that is used for Teams conference rooms, are not supported for Teams retention policies.
 
 It's important to understand that Teams uses an Azure-powered chat service that also stores this data, and by default this service stores the data indefinitely. For this reason, if you need to delete Teams messages for compliance reasons, we recommend that you use retention policies for Teams that can permanently delete this data from both the Exchange mailboxes and the underlying Azure-powered chat service. For more information about the underlying architecture, see [Security and compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) and specifically, the [Information Protection Architecture](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture) section.
 
