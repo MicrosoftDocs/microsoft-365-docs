@@ -206,7 +206,7 @@ To set up [Safe Links](atp-safe-links.md), review and edit your global settings 
 
 5. Review your settings and then click **Finish**.
 
-To learn more, see [Set up Safe Links policies](set-up-atp-safe-links-policies.md).
+To learn more, see [Set up Safe Links policies](set-up-safe-links-policies.md).
 
 ## Part 5 - Verify Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is turned on
 
@@ -219,7 +219,7 @@ Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Usin
 
 2. Verify the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** toggle is to the right: ![Toggle on](../../media/scc-toggle-on.png), and then click **Save**.
 
-3. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-safe-attachments-policies.md) and [Safe Links policies](set-up-atp-safe-links-policies.md).
+3. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-safe-attachments-policies.md) and [Safe Links policies](set-up-safe-links-policies.md).
 
 4. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to `$true`.
 
