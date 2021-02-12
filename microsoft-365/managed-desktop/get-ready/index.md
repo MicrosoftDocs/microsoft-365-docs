@@ -21,4 +21,5 @@ These topics describe the steps you'll need to take in your organization to prep
 - [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
 - [Prepare printing resources for Microsoft Managed Desktop](printing.md)
 - [Apps in Microsoft Managed Desktop](apps.md)
+- [Use readiness assessment tools](readiness-assessment-tool.md)
 
