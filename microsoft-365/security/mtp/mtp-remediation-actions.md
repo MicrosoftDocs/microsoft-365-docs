@@ -19,7 +19,7 @@ ms.collection:
   - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 12/09/2020
+ms.date: 01/29/2021 
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ---
@@ -45,7 +45,7 @@ During and after an automated investigation in Microsoft 365 Defender, remediati
 The following table summarizes remediation actions that are currently supported in Microsoft 365 Defender: 
 
 |Device (endpoint) remediation actions  |Email remediation actions  |
-|---------|---------|
+|:---------|:---------|
 |- Collect investigation package <br/>- Isolate device (this action can be undone)<br/>- Offboard machine <br/>- Release code execution <br/>- Release from quarantine <br/>- Request sample <br/>- Restrict code execution (this action can be undone) <br/>- Run antivirus scan <br/>- Stop and quarantine      |- Block URL (time-of-click)<br/>- Soft delete email messages or clusters<br/>- Quarantine email<br/>- Quarantine an email attachment<br/>- Turn off external mail forwarding          |
 
 Remediation actions, whether pending approval or already complete, can be viewed in the [Action Center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
@@ -78,5 +78,5 @@ In addition to remediation actions that follow automated investigations, your se
 ## Next steps
 
 - [Visit the Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-- [Approve or reject pending actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
+- [View and manage remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
 - [Handle false positives/negatives in automated investigation and response capabilities](mtp-autoir-report-false-positives-negatives.md)

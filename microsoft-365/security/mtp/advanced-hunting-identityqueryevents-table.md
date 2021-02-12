@@ -54,8 +54,10 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the endpoint |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `Port` | string | TCP port used during communication |
 | `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
 | `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
+| `DestinationPort` | string | Destination port of related network communications |
 | `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountUpn` | string | User principal name (UPN) of the account that the recorded action was applied to |
 | `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |

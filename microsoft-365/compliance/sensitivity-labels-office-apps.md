@@ -80,7 +80,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
+|[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Under review                     | Under review                 | Under review         | Under review           | Under review               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
@@ -167,20 +167,15 @@ For a more consistent label experience with meaningful reporting, provide approp
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments can inherit the label only if the label that you apply to the email message applies encryption, and the attachment is an Office document that isn't already encrypted. Because the inherited label applies encryption, the attachment becomes encrypted.
+When you label an email message that has attachments, the attachments inherit the label only if the label that you apply to the email message applies encryption and the attachment is an Office document isn't already encrypted. Because the inherited label applies encryption, the attachment becomes newly encrypted.
 
-|Email label configuration|Office attachment|Label inherited|
-|:------------------------|:----------------|:--------------|
-|Applies encryption| No label or encryption| ![yes](../media/yes-icon.png)|
-|Applies encryption| Label and no encryption| ![yes](../media/yes-icon.png)|
-|Applies encryption| Label that applies encryption| ![no](../media/no-icon.png)|
-|Applies encryption| No label but encryption| ![no](../media/no-icon.png)|
-|Doesn't apply encryption| No label or encryption| ![no](../media/no-icon.png)|
-|Doesn't apply encryption| No label but encrypted| ![no](../media/no-icon.png)|
-|Doesn't apply encryption| Label that applies encryption| ![no](../media/no-icon.png)|
-|Doesn't apply encryption| No label but encryption| ![no](../media/no-icon.png)|
+An attachment doesn't inherit the labels from the email message when the label applied to the email message doesn't apply encryption or the attachment is already encrypted.
 
-For the scenarios where the original attachment is encrypted without a label, this encryption always remains when a label is applied to the email message.
+Examples of label inheritance, where the label **Confidential** applies encryption and the label **General** doesn't apply encryption:
+
+- A user creates a new email message and applies the **Confidential** label to this message. They then add a Word document that isn't labeled or encrypted. As a result of inheritance, the document is newly labeled **Confidential** and now has encryption applied from that label.
+
+- A user creates a new email message and applies the **Confidential** label to this message. They then add a Word document that is labeled **General** and this file isn't encrypted. As a result of inheritance, the document gets relabeled as **Confidential** and now has encryption applied from that label.
 
 ## Sensitivity label compatibility
 

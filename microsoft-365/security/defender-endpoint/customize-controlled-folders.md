@@ -81,7 +81,7 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
     ```
 3. Repeat step 2 until you have added all the folders you want to protect. Folders that are added are visible in the Windows Security app.
 
-   ![Screenshot of a PowerShell window with the cmdlet above entered](../../media/cfa-allow-folder-ps.png)
+   ![Screenshot of a PowerShell window with the cmdlet above entered](../images/cfa-allow-folder-ps.png)
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
@@ -111,7 +111,7 @@ An allowed application or service only has write access to a controlled folder a
 
 4. Select **Add an allowed app** and follow the prompts to add apps.
 
-    ![Screenshot of how to add an allowed app button](../../media/cfa-allow-app.png)
+    ![Screenshot of how to add an allowed app button](../images/cfa-allow-app.png)
 
 ### Use Group Policy to allow specific apps
 
@@ -140,7 +140,7 @@ An allowed application or service only has write access to a controlled folder a
 
    Continue to use `Add-MpPreference -ControlledFolderAccessAllowedApplications` to add more apps to the list. Apps added using this cmdlet will appear in the Windows Security app.
 
-![Screenshot of a PowerShell window with the above cmdlet entered](../../media/cfa-allow-app-ps.png)
+![Screenshot of a PowerShell window with the above cmdlet entered](../images/cfa-allow-app-ps.png)
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
@@ -151,11 +151,11 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications]
 
 ## Allow signed executable files to access protected folders
 
-Microsoft Defender for Endpoint certificate and file indicators can allow signed executable files to access protected folders. For implementation details, see [Create indicators based on certificates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates).
+Microsoft Defender for Endpoint certificate and file indicators can allow signed executable files to access protected folders. For implementation details, see [Create indicators based on certificates](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates).
 
 ## Customize the notification
 
-For more information about customizing the notification when a rule is triggered and blocks an app or file, see [Configure alert notifications in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications).
+For more information about customizing the notification when a rule is triggered and blocks an app or file, see [Configure alert notifications in Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-email-notifications).
 
 ## See also
 

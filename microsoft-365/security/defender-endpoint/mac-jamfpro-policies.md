@@ -50,7 +50,7 @@ You'll need to take the following steps:
 
 9. [Configure Network Extension](#step-9-configure-network-extension)
 
-10. [Schedule scans with Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [Schedule scans with Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-schedule-scan-atp)
 
 11. [Deploy Microsoft Defender for Endpoint for macOS](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
 
@@ -734,7 +734,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     ![Image of configuration settings](images/netext-final.png)
 
 ## Step 10: Schedule scans with Microsoft Defender for Endpoint for Mac
-Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-schedule-scan-atp).
 
 ## Step 11: Deploy Microsoft Defender for Endpoint for macOS
 

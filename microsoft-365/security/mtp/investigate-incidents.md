@@ -69,7 +69,7 @@ You can view all the alerts related to the incident and other information about 
 
 ![Image of the incident alerts page](../../media/incident-alerts.png)
 
-By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time. Clicking on each alert will lead you to the relevant alert page where you can conduct an in-depth investigation of that alert.
+By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time. Clicking on each alert will lead you to the relevant alert page where you can conduct an in-depth investigation of that alert. Learn how to use alert pages and the unified alert queue in [Investigate alerts](investigate-alerts.md)
 
 ## Devices
 

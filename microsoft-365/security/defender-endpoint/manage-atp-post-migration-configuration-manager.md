@@ -42,8 +42,8 @@ We recommend using We recommend using [Microsoft Endpoint Manager](https://docs.
 |**Use Configuration Manager to onboard devices** to Microsoft Defender for Endpoint <br/><br/> *If you have devices (or endpoints) not already onboarded to Microsoft Defender for Endpoint, you can do that with Configuration Manager.*   |[Onboard to Microsoft Defender for Endpoint with Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)      |
 |**Manage antimalware policies and Windows Firewall security** for client computers (endpoints)<br/><br/>*Configure endpoint protection features, including Microsoft Defender for Endpoint, exploit protection, application control, antimalware, firewall settings, and more.*  |[Configuration Manager: Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection)       |
 |**Choose methods for updating antimalware updates** on your organization's devices <br/><br/>*With Endpoint Protection in Configuration Manager, you can choose from several methods to keep antimalware definitions up to date on your organization's devices.* |[Configure definition updates for Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definition-updates) <br/><br/>[Use Configuration Manager to deliver definition updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-configmgr) |
-|**Enable Network Protection** to help prevent employees from using apps that malicious content on the Internet <br/><br/>*We recommend using [audit mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-network-protection) at first for network protection in a test environment to see which apps would be blocked before rolling out.* |[Turn on network protection with Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection#microsoft-endpoint-configuration-manager)  |
-|**Configure controlled folder access** to protect against ransomware <br/><br/>*Controlled folder access is also referred to as antiransomware protection.*   |[Endpoint protection: Controlled folder access](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/>[Enable controlled folder access in Microsoft Endpoint Configuration Manage](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders#microsoft-endpoint-configuration-manager) |
+|**Enable Network Protection** to help prevent employees from using apps that malicious content on the Internet <br/><br/>*We recommend using [audit mode](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-network-protection) at first for network protection in a test environment to see which apps would be blocked before rolling out.* |[Turn on network protection with Configuration Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)  |
+|**Configure controlled folder access** to protect against ransomware <br/><br/>*Controlled folder access is also referred to as antiransomware protection.*   |[Endpoint protection: Controlled folder access](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/>[Enable controlled folder access in Microsoft Endpoint Configuration Manage](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager) |
 
 ## Configure your Microsoft Defender Security Center
 
@@ -51,14 +51,14 @@ If you haven't already done so, **configure your Microsoft Defender Security Cen
 
 You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
 
-- [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)
+- [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
 
 - [Endpoint protection: Microsoft Defender Security Center](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 
-- [Get an overview of threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Get an overview of threat and vulnerability management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [Visit the Microsoft Defender Security Center security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)
+- [Visit the Microsoft Defender Security Center security operations dashboard](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [Manage Microsoft Defender for Endpoint with Intune](manage-atp-post-migration-intune.md)

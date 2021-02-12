@@ -57,7 +57,7 @@ Follow the steps below to create a compliance policy against jailbroken devices.
 
 ## Configure custom indicators
 
-Defender for Endpoint for iOS enables admins to configure custom indicators on iOS devices as well. Refer to [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) on how to configure custom indicators.
+Defender for Endpoint for iOS enables admins to configure custom indicators on iOS devices as well. Refer to [Manage indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators) on how to configure custom indicators.
 
 > [!NOTE]
 > Defender for Endpoint for iOS supports creating custom indicators only for IP addresses and URLs/domains.

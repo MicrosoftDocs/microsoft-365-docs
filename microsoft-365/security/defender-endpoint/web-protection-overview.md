@@ -43,7 +43,7 @@ The cards that comprise web content filtering are **Web activity by category**, 
 
 Web content filtering includes:
 - Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away
-- You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
 - You can access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## In this section

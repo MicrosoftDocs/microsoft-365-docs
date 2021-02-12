@@ -37,7 +37,7 @@ Web content filtering is available on the major web browsers, with blocks perfor
 Summarizing the benefits:
 
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away
-- Conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- Conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
 - Access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## User experience
@@ -58,7 +58,7 @@ If Windows Defender SmartScreen isn't turned on, Network Protection will take ov
 
 ## Data handling
 
-We will follow whichever region you have elected to use as part of your [Microsoft Defender for Endpoint data handling settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers. However, we may send them aggregate data (across users and organizations) to help them improve their feeds.
+We will follow whichever region you have elected to use as part of your [Microsoft Defender for Endpoint data handling settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/data-storage-privacy). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers. However, we may send them aggregate data (across users and organizations) to help them improve their feeds.
 
 ## Turn on web content filtering
 

@@ -1,26 +1,26 @@
 ---
-title: How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365
+title: "How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365"
 description: Was something missed or wrongly detected by AIR in Microsoft Defender for Office 365? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
 search.appverid: met150
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 09/29/2020
-localization_priority medium
+ms.prod: m365-security
+ms.date: 01/29/2021
+localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-defender-office365
-ms.topic: conceptual
+- M365-security-compliance
+- m365initiative-defender-office365
+ms.topic: how-to
 ms.custom: 
-  - autoir
+- autoir
 ms.technology: mdo
 ---
 
@@ -28,15 +28,15 @@ ms.technology: mdo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Applies to:**
-- Microsoft Defender for Office 365
+If [automated investigation and response (AIR) capabilities in Office 365](automated-investigation-response-office.md) missed or wrongly detected something, there are steps your security operations team can take to fix it. Such actions include:
 
-Did [automated investigation and response (AIR) capabilities in Office 365](automated-investigation-response-office.md) miss or wrongly detect something? There are steps you can take to fix it. You can:
-
-- [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
-- [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and
-- [Undo remediation actions that were taken](#undo-a-remediation-action).
+- [Reporting a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [Adjusting alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and
+- [Undoing remediation actions that were taken](#undo-a-remediation-action).
 
 Use this article as a guide.
 
@@ -54,7 +54,7 @@ If your organization is using [Microsoft Defender for Endpoint](https://docs.mic
 
 ## Undo a remediation action
 
-In most cases, if a remediation action was taken on an email message, email attachment, or URL, and the item is actually not a threat, your security operations team can undo the remediation action and take steps to prevent the false positive from recurring. You can either use [Threat Explorer](#undo-an-action-using-threat-explorer) or the [Actions tab for an investigation](#undo-an-action-using-the-actions-tab-for-an-investigation) to undo an action.
+In most cases, if a remediation action was taken on an email message, email attachment, or URL, and the item is actually not a threat, your security operations team can undo the remediation action and take steps to prevent the false positive from recurring. You can either use [Threat Explorer](#undo-an-action-using-threat-explorer) or the [Actions tab for an investigation](#undo-an-action-in-the-action-center) to undo an action.
 
 > [!IMPORTANT]
 > Make sure you have the necessary permissions before attempting to perform the following tasks.
@@ -63,32 +63,23 @@ In most cases, if a remediation action was taken on an email message, email atta
 
 With Threat Explorer, your security operations team can find an email affected by an action and potentially undo the action.
 
-****
-
 |Scenario|Undo Options|Learn more|
 |---|---|---|
-|An email message was routed to a user's Junk Email folder|<ul><li>Move the message to the user's Deleted Items folder</li><li>Move the message to the user's Inbox</li><li>Delete the message</li></ul>|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
-|An email message or a file was quarantined|<ul><li>Release the email or file</li><li>Delete the email or file</li></ul>|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
+|An email message was routed to a user's Junk Email folder|- Move the message to the user's Deleted Items folder<br/>- Move the message to the user's Inbox<br/>- Delete the message|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
+|An email message or a file was quarantined|- Release the email or file<br/>- Delete the email or file|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
 |
 
-### Undo an action using the Actions tab for an investigation
+### Undo an action in the Action center
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to <https://protection.office.com> and sign in. This takes you to the Security & Compliance Center.
+1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
+2. In the navigation pane, select **Action center**. 
+3. Select the **History** tab to view the list of completed actions.
+4. Select an item. Its flyout pane opens. 
+5. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
 
-2. Go to **Threat management** \> **Investigations**.
+## See also
 
-3. In the list of investigations, select the **Open in new window** icon next to an item's ID.
-
-4. Select the **Actions** tab.
-
-5. Select an item that has status of **Completed**, and look for a link, such as **Approved**, in the **Decision** column. This opens a flyout with more details about the action.
-
-6. To undo the action, select **Delete remediation**.
-
-## Related articles
-
-[Microsoft Defender for Office 365](office-365-atp.md)
-
-[AIR in Microsoft Defender for Office 365](office-365-air.md)
+- [Microsoft Defender for Office 365](defender-for-office-365.md)
+- [Automated investigations in Microsoft Defender for Office 365](office-365-air.md)

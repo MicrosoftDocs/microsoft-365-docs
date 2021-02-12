@@ -54,9 +54,9 @@ If you need help with assigning Azure Active Directory roles, see [Administrator
 > [!NOTE]
 > Security features include security-related communications, management of security contacts, management of security-related support requests, and access to security related reports. 
 
-### Assigning built-in roles to administrators
+### Assigning built-in roles to user
 
-To manage built-in roles, there is a security group for each custom role with the name "Modern Workplace Roles - _Role Name_"(for example, “Modern Workplace Roles – Security Manager”). To assign users to one of these security groups, follow these steps:
+For easy management of built-in roles, there is a security group for each custom role with the name "Modern Workplace Roles - _Role Name_"(for example, “Modern Workplace Roles – Security Manager”). To assign users to one of these security groups, follow these steps:
 1.	Go the Microsoft Endpoint Manager portal.
 2.	Select **Groups** on the left side.
 3.	Search for **Modern Workplace Roles**, and then select the group associated with the role you want to assign. 
@@ -66,3 +66,16 @@ To manage built-in roles, there is a security group for each custom role with th
 
 > [!NOTE]
 > Nesting security groups for role assignment is not currently supported. 
+
+### Assigning built-in roles to groups
+
+If you need to assign one or more of the built-in roles to a existing group, follow these steps:
+1. Go to [portal.azure.com](https://portal.azure.com/).
+2. Search for and open **Enterprise applications**.
+3. Change the **Application type** filter to _Microsoft Applications_ and, then select **Apply**.
+4. Search for and select _Modern Workplace Customer APIs_.
+5. Select **Users and groups** from the pane on the left side, and then select **+ Add user/group**.
+6. Search for the group you want from **Users and groups**.
+7. Search for the applicable role from **Select a role**, and then select it.
+8. Select **Assign**.
+ 
