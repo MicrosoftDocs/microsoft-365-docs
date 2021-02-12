@@ -81,7 +81,7 @@ All Microsoft 365 plans include a variety of threat protection features. Bumping
 - Anti-phishing protection
 - Anti-spam protection
 
-See [Protect against threats in Office 365](office-365-security/protect-against-threats.md) for guidance you can use as a starting point.
+See [Protect against threats in Office 365](defender-365-security/protect-against-threats.md) for guidance you can use as a starting point.
 
 ## 3: Configure Microsoft Defender for Office 365
 
@@ -97,13 +97,13 @@ For an overview, including a summary of plans, see [Defender for Office 365](./d
 
 Your Global Administrator can configure these protections:
 
-- [Set up Safe Links policies](office-365-security/set-up-safe-links-policies.md)
-- [Configure global settings for Safe Links](office-365-security/configure-global-settings-for-safe-links.md)
-- [Set up Safe Attachments policies](office-365-security/set-up-safe-attachments-policies.md)
+- [Set up Safe Links policies](defender-365-security/set-up-safe-links-policies.md)
+- [Configure global settings for Safe Links](defender-365-security/configure-global-settings-for-safe-links.md)
+- [Set up Safe Attachments policies](defender-365-security/set-up-safe-attachments-policies.md)
 
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
 
-- [ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [ATP for SharePoint, OneDrive, and Microsoft Teams](defender-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## 4: Configure Microsoft Defender for Identity
 
