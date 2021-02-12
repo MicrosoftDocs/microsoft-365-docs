@@ -178,17 +178,23 @@ The explanation library also includes three automatic template types that work w
 - Before label: The words or characters that occur before the labels in the example files.</br>
 - Labels: The first 10 labels from the example files.</br>
 
-For example:
+To give you an example of how automatic templates work, in the following example file, we will use the Before Label explanation template to help give the model more information to get a more accurate match.
 
-- You can use the After label template to - use case here
-- You can use the Before label template to - use case here
-- You can use the Labels template to - use case here
+   ![Example file](../media/content-understanding/before-label.png)</br>
+
+When you select the Before Label explanation template, it will look for the first set of words that appear before the label in your example files. In the example, the words that are identified in the first example file is "As of".
+
+   ![Before label template](../media/content-understanding/before-label-explanation.png)</br>
+
+You can select <b>Add</b> to create an explanation from the template.  As you add more example files, additional words will be identified and added to the phrase list.
+
+   ![Before label template](../media/content-understanding/before-label-add.png)</br>
  
 #### To use a template from the explanation library
 
 1. From the **Explanations** section of your model's **Train** page, select **New**, then select **From a template**.</br>
 
-   ![Create from template](../media/content-understanding/from-template.png)</br>
+   ![Add Before Label](../media/content-understanding/from-template.png)</br>
 
 2.  On the **Explanation templates** page, select the explanation you want to use, then select **Add**.</br>
 

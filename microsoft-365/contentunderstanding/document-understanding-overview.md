@@ -43,7 +43,7 @@ You can use example files to train and test your classifiers and extractors in y
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
-### Optical Character Recognition
+### File limitations
 
 Document understanding models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files, both when you train a model with example files and when you run the model against files in a document library.
 
@@ -52,7 +52,32 @@ Note the following differences in regards to Microsoft Office text-based files a
 - Office files: We truncate at 64K characters (in training and when run against files in a document library).
 - OCR-scanned files: There is a 20 page limit.  
 
+#### Supported file types
 
+Document understanding models support the following file types:
+
+- doc
+- docx
+- eml
+- heic
+- heif
+- htm
+- html
+- jpeg
+- jpg
+- markdown
+- md
+- msg
+- pdf
+- png
+- ppt
+- pptx
+- rtf
+- tif
+- tiff
+- txt
+- xls
+- xlsx
 
 
 
