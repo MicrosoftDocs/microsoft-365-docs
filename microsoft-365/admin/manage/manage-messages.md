@@ -144,7 +144,7 @@ You can also open a message and mark it as unread in the details panel.
 
 ## Archive and restore
 
-If you see a message that doesn't pertain to you, or maybe you've already acted on it, yYou can archive the message to remove it from Inbox. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins. There are two ways to archive a message.
+If you see a message that doesn't pertain to you, or maybe you've already acted on it, yYou can archive the message to remove it from Inbox. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins.
 
 ::: moniker range="o365-worldwide"
 
