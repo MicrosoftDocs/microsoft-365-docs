@@ -110,17 +110,17 @@ The policies that are defined for your organization determine the behavior and p
 
 ## View Microsoft Defender for Office 365 reports
 
-Microsoft Defender for Office 365 includes an advanced [reporting dashboard](view-reports-for-atp.md) to monitor your Defender for Office 365  performance. You can access it at **Reports** \> **Dashboard** in the Security & Compliance Center.
+Microsoft Defender for Office 365 includes an advanced [reporting dashboard](view-reports-for-mdo.md) to monitor your Defender for Office 365  performance. You can access it at **Reports** \> **Dashboard** in the Security & Compliance Center.
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 
 - [Threat Explorer (or real-time detections)](threat-explorer.md)
 
-- [Threat protection status report](view-reports-for-atp.md#threat-protection-status-report)
+- [Threat protection status report](view-reports-for-mdo.md#threat-protection-status-report)
 
-- [Defender for Office 365 file types report](view-reports-for-atp.md#defender-for-office-365-file-types-report)
+- [Defender for Office 365 file types report](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
 
-- [Defender for Office 365 message disposition report](view-reports-for-atp.md#defender-for-office-365-message-disposition-report)
+- [Defender for Office 365 message disposition report](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
 
 - ... and several more.
 

@@ -175,7 +175,7 @@ To go back to the report view, click **View report**.
 
 ## Mail latency report
 
-The **Mail latency report** contains information on the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](view-reports-for-atp.md#mail-latency-report).
+The **Mail latency report** contains information on the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](view-reports-for-mdo.md#mail-latency-report).
 
 ## Sent and received email report
 
@@ -476,7 +476,7 @@ If you click **Filters** in the report view or details table view, you can speci
 
 ## URL threat protection report
 
-The **URL threat protection report** is available in Microsoft Defender for Office 365. For more information, see [URL threat protection report](view-reports-for-atp.md#url-threat-protection-report).
+The **URL threat protection report** is available in Microsoft Defender for Office 365. For more information, see [URL threat protection report](view-reports-for-mdo.md#url-threat-protection-report).
 
 ## User-reported messages report
 
@@ -522,4 +522,4 @@ If you are not seeing data in your reports, double-check that your policies are 
 
 [View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)
 
-[View reports for Defender for Office 365](view-reports-for-atp.md)
+[View reports for Defender for Office 365](view-reports-for-mdo.md)

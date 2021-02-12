@@ -208,4 +208,4 @@ Delivery location shows the results of policies and detections that run post-del
 
 [Protect against threats in Office 365](protect-against-threats.md)
 
-[View reports for Defender for Office 365](view-reports-for-atp.md)
+[View reports for Defender for Office 365](view-reports-for-mdo.md)

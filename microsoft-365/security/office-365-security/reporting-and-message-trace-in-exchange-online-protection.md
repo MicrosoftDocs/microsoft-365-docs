@@ -57,7 +57,7 @@ These enhanced reports provide an interactive reporting experience for EOP admin
 
 **EOP**: View information about malware detections, spoofed mail, spam detections, and mail flow to and from your organization.
 
-[View reports for Defender for Office 365](view-reports-for-atp.md)
+[View reports for Defender for Office 365](view-reports-for-mdo.md)
 
 ## Custom reports using Microsoft Graph
 

@@ -64,7 +64,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - You can repeat the above step for Impersonation (domain or user). The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 
-- Periodically review the [Threat Protection Status report](view-reports-for-atp.md#threat-protection-status-report).
+- Periodically review the [Threat Protection Status report](view-reports-for-mdo.md#threat-protection-status-report).
 
 - Some customers inadvertently allow phishing messages through by putting their own domains in the Allow sender or Allow domain list in anti-spam policies. Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the spam and/or phishing filters. Instead of allowing the domain, you should correct the underlying problem.
 

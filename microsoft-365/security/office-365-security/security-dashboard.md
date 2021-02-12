@@ -54,7 +54,7 @@ The information you'll see in the Threat Management Summary depends on what you 
 |---|---|
 |Malware messages blocked<br>Phishing messages blocked<br>Messages reported by users<br><br><br><br>|Malware messages blocked<br>Phishing messages blocked<br>Messages reported by users<br>Zero-day malware blocked<br>Advanced phishing messages detected<br>Malicious URLs blocked|
 
-To view or access the Threat Management Summary widget, you must have permissions to view Defender for Office 365 reports. To learn more, see [What permissions are needed to view the Defender for Office 365 reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
+To view or access the Threat Management Summary widget, you must have permissions to view Defender for Office 365 reports. To learn more, see [What permissions are needed to view the Defender for Office 365 reports?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
 ## Threat Protection Status
 
@@ -67,9 +67,9 @@ The details depend on whether your Microsoft 365 subscription includes [Exchange
 |If your subscription includes...|You'll see these details|
 |---|---|
 |EOP but not Microsoft Defender for Office 365|Malicious email that was detected and blocked by EOP.<p> See [Threat Protection Status report (EOP)](view-email-security-reports.md#threat-protection-status-report).|
-|Microsoft Defender for Office 365|Malicious content and malicious email detected and blocked by EOP and Defender for Office 365 <p> Aggregated count of unique email messages with malicious content blocked by the anti-malware engine, [zero-hour auto purge](zero-hour-auto-purge.md), and Defender for Office 365 features (including [Safe Links](atp-safe-links.md), [Safe Attachments](atp-safe-attachments.md), and [Anti-phishing in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> See [Threat protection status report](view-reports-for-atp.md#threat-protection-status-report).|
+|Microsoft Defender for Office 365|Malicious content and malicious email detected and blocked by EOP and Defender for Office 365 <p> Aggregated count of unique email messages with malicious content blocked by the anti-malware engine, [zero-hour auto purge](zero-hour-auto-purge.md), and Defender for Office 365 features (including [Safe Links](atp-safe-links.md), [Safe Attachments](atp-safe-attachments.md), and [Anti-phishing in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> See [Threat protection status report](view-reports-for-mdo.md#threat-protection-status-report).|
 
-To view or access the Threat Protection Status widget, you must have permissions to view Defender for Office 365 reports. To learn more, see [What permissions are needed to view the Defender for Office 365 reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+To view or access the Threat Protection Status widget, you must have permissions to view Defender for Office 365 reports. To learn more, see [What permissions are needed to view the Defender for Office 365 reports?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
 ## Global Weekly Threat Detections
 
@@ -114,7 +114,7 @@ Near the bottom of the Security Dashboard is a **Trends** section, which summari
 
 And, if your organization's subscription includes [Defender for Office 365 Plan 2](office-365-ti.md), you will also have a **Recent threat management alerts** report in this section that enables your security team to view and take action on high-priority security alerts.
 
-To view or access the Sent and Received Email widget, you must have permissions to view Defender for Office 365 reports. To learn more, see [What permissions are needed to view the Defender for Office 365 reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
+To view or access the Sent and Received Email widget, you must have permissions to view Defender for Office 365 reports. To learn more, see [What permissions are needed to view the Defender for Office 365 reports?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
 To view or access the Recent Threat Management Alerts widget, you must have permissions to view alerts. To learn more, see [RBAC permissions required to view alerts](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 
@@ -122,7 +122,7 @@ To view or access the Recent Threat Management Alerts widget, you must have perm
 
 [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
 
-[View reports for Microsoft Defender for Office 365](view-reports-for-atp.md)
+[View reports for Microsoft Defender for Office 365](view-reports-for-mdo.md)
 
 [Defender for Office 365](defender-for-office-365.md)
 

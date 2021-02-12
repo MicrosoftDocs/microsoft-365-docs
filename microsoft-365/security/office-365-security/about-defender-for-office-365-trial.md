@@ -91,7 +91,7 @@ Industry-leading AI detects malicious and suspicious content and correlates atta
 Powerful experiences help identify, prioritize, and investigate threats, with advanced hunting capabilities to track attacks across Office 365.
 
 - [Threat Explorer and Real-time detections](threat-explorer.md)
-- [Real-time reports in Defender for Office 365](view-reports-for-atp.md)
+- [Real-time reports in Defender for Office 365](view-reports-for-mdo.md)
 - [Threat Trackers - New and Noteworthy](threat-trackers.md)
 - Integration with [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 
