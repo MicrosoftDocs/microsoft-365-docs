@@ -52,7 +52,7 @@ Safe Attachments scanning takes place in the same region where your Microsoft 36
 > [!NOTE]
 > The following features are located in the global settings are of Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
-> - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+> - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 >
 > - [Safe Documents in Microsoft 365 E5](safe-docs.md)
 

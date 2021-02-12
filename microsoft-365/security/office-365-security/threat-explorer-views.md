@@ -124,7 +124,7 @@ Below the chart, view more details about specific email messages, such as subjec
 
 ## Content > Malware
 
-To view this report, in Explorer (or real-time detections), choose **View** \> **Content** \> **Malware**. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+To view this report, in Explorer (or real-time detections), choose **View** \> **Content** \> **Malware**. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 View information by malware family, detection technology (how the malware was detected), and workload (OneDrive, SharePoint, or Teams).
 
