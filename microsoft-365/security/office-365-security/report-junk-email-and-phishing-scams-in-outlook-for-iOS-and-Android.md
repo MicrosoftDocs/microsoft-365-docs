@@ -40,4 +40,4 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 ## Report spam and phishing messages in Outlook for iOS and Android
 
-Admins should use the Report Message or the Report Phishing add-in experience to report messages: https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in
+Admins should use the Report Message or the Report Phishing add-in experience to report messages. See [Enable the Report Message add-in](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) for more information.
