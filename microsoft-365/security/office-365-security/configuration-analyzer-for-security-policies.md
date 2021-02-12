@@ -50,7 +50,7 @@ The following types of policies are analyzed by the configuration analyzer:
 
   - [Safe Links policies](set-up-atp-safe-links-policies.md).
 
-  - [Safe Attachments policies](set-up-atp-safe-attachments-policies.md).
+  - [Safe Attachments policies](set-up-safe-attachments-policies.md).
 
 The **Standard** and **Strict** policy setting values that are used as baselines are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 

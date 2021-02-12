@@ -78,7 +78,7 @@ Preset security policies use the corresponding policies from the various protect
 
   - [Safe Links policies](set-up-atp-safe-links-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
 
-  - [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
+  - [Safe Attachments policies](set-up-safe-attachments-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
 
 Note that you can apply EOP protections to different users than Microsoft Defender for Office 365 protections.
 
