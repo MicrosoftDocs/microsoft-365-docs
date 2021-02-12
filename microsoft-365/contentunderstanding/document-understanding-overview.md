@@ -47,7 +47,7 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 Document understanding models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files, both when you train a model with example files and when you run the model against files in a document library.
 
-Note the following differences in regards to Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF)):
+Note the following differences in regards to Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF):
 
 - Office files: We truncate at 64K characters (in training and when run against files in a document library).
 - OCR-scanned files: There is a 20 page limit.  

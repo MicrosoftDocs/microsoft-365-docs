@@ -176,7 +176,7 @@ The explanation library also includes three automatic template types that work w
 
 - After label: The words or characters that occur after the labels in the example files.</br>
 - Before label: The words or characters that occur before the labels in the example files.</br>
-- Labels: The first 10 labels from the example files.</br>
+- Labels: Up to the first 10 labels from the example files.</br>
 
 To give you an example of how automatic templates work, in the following example file, we will use the Before Label explanation template to help give the model more information to get a more accurate match.
 
