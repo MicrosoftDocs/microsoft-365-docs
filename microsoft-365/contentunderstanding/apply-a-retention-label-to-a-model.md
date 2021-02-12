@@ -78,7 +78,7 @@ You can either apply a retention label to a form processing model when you are c
 2. In <b>Advanced settings</b>, in the <b>Retention label</b> section, select the menu and then select the retention label you want to apply to the model.</b>
 
  
-     ![Sync model](../media/content-understanding/retention-label-forms.png)</br>
+     ![Add to a new form processing model](../media/content-understanding/retention-label-forms.png)</br>
 
 3.  After you've completed your remaining model settings, select <b>Create</b> to build your model.
 
@@ -96,11 +96,11 @@ You can add a retention label to an existing form processing model that you own 
 
 1. In your document library to which the form processing model is applied, select the <b>Automate</b> menu, select <b>AI Builder</b>, then select <b>View form processing model details</b>.
 
-   ![Sync model](../media/content-understanding/automate-menu.png)</br>
+   ![Automate menu](../media/content-understanding/automate-menu.png)</br>
 
 2. In the model details, in the <b>Retention Label</b> section, select the retention label you want to apply.  Then select <b>Save</b>.
 
-     ![Sync model](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![Add to an existing form processing model](../media/content-understanding/retention-label-model-details.png)</br> 
 
 #### To add a retention label to an existing form processing model in the active model settings
 
@@ -112,7 +112,7 @@ You can add a retention label to an existing form processing model that you own 
 
 2. In <b>Active models</b>, select the form processing model to which you want to apply the retention label.
 
-     ![Sync model](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![Model details](../media/content-understanding/retention-label-model-details.png)</br> 
 
 
 3. In the model details, in the <b>Retention Label</b> section, select the retention label you want to apply.  Then select <b>Save</b>.

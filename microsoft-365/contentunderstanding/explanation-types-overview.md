@@ -188,7 +188,7 @@ When you select the Before Label explanation template, it will look for the firs
 
 You can select <b>Add</b> to create an explanation from the template.  As you add more example files, additional words will be identified and added to the phrase list.
 
-   ![Before label template](../media/content-understanding/before-label-add.png)</br>
+   ![Add the label](../media/content-understanding/before-label-add.png)</br>
  
 #### To use a template from the explanation library
 
