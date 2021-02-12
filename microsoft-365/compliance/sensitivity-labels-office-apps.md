@@ -1,5 +1,5 @@
 ---
-title: "Use sensitivity labels in Office apps"
+title: "Manage sensitivity labels in Office apps"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,11 +14,11 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: Learn about how users work with sensitivity labels in Office apps for desktop, mobile, and the web, and which apps support sensitivity labels.
+description: Information for admins to manage sensitivity labels in Office apps for desktop, mobile, and the web.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Use sensitivity labels in Office apps
+# Manage sensitivity labels in Office apps
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
