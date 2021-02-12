@@ -84,7 +84,7 @@ Note that you can apply EOP protections to different users than Microsoft Defend
 
 ### Policy settings in preset security policies
 
-You can't modify the policy settings in the protection profiles. The **Standard** and **Strict** policy setting values are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
+You can't modify the policy settings in the protection profiles. The **Standard** and **Strict** policy setting values are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 ### Order of precedence for preset security policies and other policies
 

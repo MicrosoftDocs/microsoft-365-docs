@@ -75,7 +75,7 @@ This section describes the settings in Safe Attachments policies:
 
 - **Redirect attachment on detection: Enable redirect** and **Send the attachment to the following email address**: For **Block**, **Monitor**, or **Replace** actions, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
-  The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
+  The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
 - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enable redirect**. Otherwise, messages might be lost.
 

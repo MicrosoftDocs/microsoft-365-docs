@@ -148,7 +148,7 @@ If you're a Security Admin, you may need to configure DKIM or DMARC for your mai
 
 [Email Authentication, including SPF, DKIM, and DMARC (with links to setup of all three)](email-validation-and-authentication.md)
 
-[See the specific recommended 'golden' configs](recommended-settings-for-eop-and-office365-atp.md) and [use their recommended presets to configure security policies quickly](preset-security-policies.md)
+[See the specific recommended 'golden' configs](recommended-settings-for-eop-and-office365.md) and [use their recommended presets to configure security policies quickly](preset-security-policies.md)
 
 Catch up on [what's new in Microsoft Defender for Office 365 (including EOP developments)](whats-new-in-defender-for-office-365.md)
 

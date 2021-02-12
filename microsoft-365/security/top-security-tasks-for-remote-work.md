@@ -93,7 +93,7 @@ Microsoft Defender for Office 365:
 - Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries.
 - Applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks.
 
-For an overview, including a summary of plans, see [Defender for Office 365](office-365-security/office-365-atp.md).
+For an overview, including a summary of plans, see [Defender for Office 365](./office-365-security/defender-for-office-365.md).
 
 Your Global Administrator can configure these protections:
 

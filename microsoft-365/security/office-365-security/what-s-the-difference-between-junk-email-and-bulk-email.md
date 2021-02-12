@@ -51,6 +51,6 @@ Anti-spam polices have a default BCL threshold that's used to identify bulk emai
 
 - [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-- [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+- [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
 Another option that's easy to overlook: if a user complains about receiving bulk email, but the messages are from reputable senders that pass spam filtering in EOP, have the user check for a unsubscribe option in the bulk email message.
