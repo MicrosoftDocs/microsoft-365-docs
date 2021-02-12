@@ -253,7 +253,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powe
 
 ### Safe Attachments settings
 
-Safe Attachments in Microsoft Defender for Office 365 includes global settings that have no relationship to Safe Attachments policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Attachments in Defender for Office 365](atp-safe-attachments.md).
+Safe Attachments in Microsoft Defender for Office 365 includes global settings that have no relationship to Safe Attachments policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Attachments in Defender for Office 365](safe-attachments.md).
 
 #### Global settings for Safe Attachments
 

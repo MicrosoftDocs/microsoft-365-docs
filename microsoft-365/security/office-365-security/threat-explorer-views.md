@@ -36,7 +36,7 @@ ms.prod: m365-security
 - If you have [Microsoft Defender for Office 365](defender-for-office-365.md) Plan 2, then you have Explorer.
 - If you have Microsoft Defender for Office 365 Plan 1, then you have real-time detections.
 
-When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show Microsoft Defender for Office 365 detections, such as malicious URLs detected by [Safe Links](atp-safe-links.md), and malicious files detected by [Safe Attachments](atp-safe-attachments.md). This report can be modified to show data for the past 30 days (with a Microsoft Defender for Office 365 P2 paid subscription). Trial subscriptions will include data for the past seven days only.
+When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show Microsoft Defender for Office 365 detections, such as malicious URLs detected by [Safe Links](atp-safe-links.md), and malicious files detected by [Safe Attachments](safe-attachments.md). This report can be modified to show data for the past 30 days (with a Microsoft Defender for Office 365 P2 paid subscription). Trial subscriptions will include data for the past seven days only.
 
 ****
 
@@ -142,7 +142,7 @@ Clicking **ATP Detonation** in this chart results in a view like this:
 
 ![Explorer filtered to display only Defender for Office 365 Detonation results](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-In this view, we are now looking at data for files that were detonated by [Safe Attachments](atp-safe-attachments.md). Below the chart, we can see details about specific email messages that had attachments that were detected by Safe Attachments.
+In this view, we are now looking at data for files that were detonated by [Safe Attachments](safe-attachments.md). Below the chart, we can see details about specific email messages that had attachments that were detected by Safe Attachments.
 
 ![Specific details about email messages with detected attachments](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 
