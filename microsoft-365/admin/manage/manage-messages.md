@@ -46,7 +46,7 @@ You can select any column heading, except **Service** and **Tag**,  to sort mess
 
 ::: moniker range="o365-germany"
 
-Use the **Views** drop-down menu to select a filtered view of messages. 
+Use the **Views** drop-down menu to select a filtered view of messages.
 
 You can select any column heading to sort messages in ascending or descending order. For example, in this illustration the messages are sorted on the **Act by** date.
 

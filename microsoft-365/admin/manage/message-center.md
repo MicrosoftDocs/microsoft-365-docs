@@ -26,7 +26,7 @@ description: "Get an overview of Microsoft 365 Message center and its role in ch
 
 # Message center
 
-To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>. 
+To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
   
 To open Message center:
 
@@ -75,7 +75,7 @@ The Archive tab shows the messages you have archived. To archive a message, in t
 
 To choose columns, on the **Message center** page, on the far right, select **Choose columns**, and in the **Choose columns** pane, select the ones you want displayed.
 
-Here's a quick overview of the information you'll see in each column. 
+Here's a quick overview of the information you'll see in each column.
 
 #### Column information
 
