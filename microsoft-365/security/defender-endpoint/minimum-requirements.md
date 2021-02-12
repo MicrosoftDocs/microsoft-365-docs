@@ -189,7 +189,7 @@ Before you onboard devices, the diagnostic data service must be enabled. The ser
 ## Microsoft Defender Antivirus configuration requirement
 The Defender for Endpoint agent depends on the ability of Microsoft Defender Antivirus to scan files and provide information about them.
 
-Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
+Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples).
 
 When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode.
 
@@ -210,5 +210,5 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 
 
 ## Related topics
-- [Validate licensing and complete setup](licensing.md)
+- [Validate licensing and complete setup](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment)
 - [Onboard devices](onboard-configure.md)
