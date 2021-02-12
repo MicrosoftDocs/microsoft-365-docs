@@ -36,7 +36,7 @@ Select a message title to open it in the reading pane. Every message contains a 
 
 ::: moniker range="o365-worldwide"
 
-Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a filtered view of messages. For example, in this diagram the messages are tagged with the **Admin impact**.
+Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a filtered view of messages. For example, in this diagram the messages are tagged with the **Admin impact** tag.
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
@@ -144,7 +144,7 @@ You can also open a message and mark it as unread in the details panel.
 
 ## Archive and restore
 
-If you see a message that doesn't pertain to you, or maybe you've already acted on it, yYou can archive the message to remove it from Inbox. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins.
+If you see a message that doesn't pertain to you, or maybe you've already acted on it, yYou can archive the message to remove it from Inbox. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins. There are two ways to archive a message.
 
 ::: moniker range="o365-worldwide"
 

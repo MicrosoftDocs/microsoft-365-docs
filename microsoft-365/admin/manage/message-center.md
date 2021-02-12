@@ -67,7 +67,7 @@ You can also use the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/p
 
 ### Messages
 
-Message center presents a view of all active messages in a table format. By default, it shows the most recent message at the top of the list. You can select **Service** to see messages for various services, such as Microsoft 365 Apps, SharePoint Online, etc.   Under **Tag** you can select **Admin impact**, **Data privacy**, **Feature update**, **Major update**, **New feature**, or **User impact** messages. Under **Message state** you can select **Favorited**, **Unread**, or **Updated** messages.
+Message center presents a view of all active messages in a table format. By default, it shows the most recent message at the top of the list. You can select **Service** to see messages for various services, such as Microsoft 365 Apps, SharePoint Online, etc.   Under **Tag** you can select **Admin impact**, **Data privacy**, **Feature update**, **Major update**, **New feature**, or **User impact** messages. Under **Message state** you can select **Favorites**, **Unread**, or **Updated** messages.
 
 The Archive tab shows the messages you have archived. To archive a message, in the message pane, Select **Archive**.
 
