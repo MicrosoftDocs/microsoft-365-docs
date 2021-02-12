@@ -40,7 +40,7 @@ Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
-![Message center view sorted by Admin impact](../../media/messag-center-admin-impact.png)
+:::image type="content" source="../../media/messag-center-admin-impact.png" alt-text="Message center view sorted by Admin impact":::
 
 ::: moniker-end
 
