@@ -356,6 +356,11 @@ To apply different settings to emails, use the following policy settings:
 
 - **DisableMandatoryInOutlook**: Select this option if you want Outlook to be exempt from prompting users to select a label for unlabeled email messages.
 
+> [!NOTE]
+> If you have previously configured the PowerShell advanced settings OutlookDefaultLabel and DisableMandatoryInOutlook for the Azure Information Protection unified labeling client, these settings will automatically start to work for Outlook on the web and for other Outlook clients that use built-in labeling. Identify which versions of Outlook support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page.
+> 
+> For more information about these PowerShell settings, see the next section.
+
 ### PowerShell advanced settings OutlookDefaultLabel and DisableMandatoryInOutlook
 
 These settings are also supported by using PowerShell with the *AdvancedSettings* parameter and the [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) and [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell). Previously supported only by the Azure Information Protection unified labeling client, these two advanced settings are now supported for built-in labeling.
