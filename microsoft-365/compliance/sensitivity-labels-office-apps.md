@@ -376,7 +376,14 @@ PowerShell examples, where the label policy is named **Global**:
 
 To specify a different default label for Outlook, you need to specify the label GUID. To find this value, can you use the following command:
 
-````powershellGet-Label | Format-Table -Property DisplayName, Name, Guid
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
+
+To remove either of these advanced settings from a label policy, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
+
+````powershell
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
 ````
 
 > [!NOTE]
