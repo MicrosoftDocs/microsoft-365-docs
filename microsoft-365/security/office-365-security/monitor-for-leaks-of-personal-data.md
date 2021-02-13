@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
-![Tools to monitor the use and transport of personaal data](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+![Tools to monitor the use and transport of personal data](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 In the illustration:
 
