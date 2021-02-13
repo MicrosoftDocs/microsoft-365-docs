@@ -378,7 +378,7 @@ Currently, OutlookDefaultLabel and DisableMandatoryInOutlook are the only PowerS
 
 The other PowerShell advanced settings remain supported for the Azure Information Protection client only. For more information about using advanced settings for the Azure Information Protection client, see [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
 
-#### PowerShell tips for specifying these advanced settings
+#### PowerShell tips for specifying the advanced settings
 
 To specify a different default label for Outlook, you must specify the label GUID. To find this value, can you use the following command:
 
