@@ -87,7 +87,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Preview: [Current Channel (Preview)](https://office.com/insider))                        | 16.43+                     | Under review            | Under review                | Yes                |
 |[Get started with data classification](data-classification-overview.md) and send data for administrators                      | 2011+ | Under review | Under review           | Under review               | Under review |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+                    | Under review           | Under review               | Yes |
-|[OutlookDefaultLabel and DisableMandatoryInOutlook](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | xxx+                      | xxx+                    | Under review           | Under review               | Yes |
+|[OutlookDefaultLabel](#outlook-specific-options-for-default-label-and-mandatory-labeling) and [DisableMandatoryInOutlook](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | xxx+                      | xxx+                    | xxx+           | xxx+               | Yes |
 |
 
 
