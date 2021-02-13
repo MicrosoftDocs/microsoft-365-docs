@@ -356,7 +356,7 @@ To apply different settings to emails, use the following policy settings:
 
 - **DisableMandatoryInOutlook**: Select this option if you want Outlook to be exempt from prompting users to select a label for unlabeled email messages.
 
-### PowerShell advanced settings
+### PowerShell advanced settings OutlookDefaultLabel and DisableMandatoryInOutlook
 
 These settings are also supported by using PowerShell with the *AdvancedSettings* parameter and the [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) and [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell). Previously supported only by the Azure Information Protection unified labeling client, these two advanced settings are now supported for built-in labeling.
 
@@ -378,7 +378,7 @@ Currently, OutlookDefaultLabel and DisableMandatoryInOutlook are the only PowerS
 
 The other PowerShell advanced settings remain supported for the Azure Information Protection client only. For more information about using advanced settings for the Azure Information Protection client, see [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
 
-#### PowerShell tips
+#### PowerShell tips for specifying these advanced settings
 
 To specify a different default label for Outlook, you must specify the label GUID. To find this value, can you use the following command:
 
