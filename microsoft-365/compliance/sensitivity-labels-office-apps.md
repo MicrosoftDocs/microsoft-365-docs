@@ -87,6 +87,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Preview: [Current Channel (Preview)](https://office.com/insider))                        | 16.43+                     | Under review            | Under review                | Yes                |
 |[Get started with data classification](data-classification-overview.md) and send data for administrators                      | 2011+ | Under review | Under review           | Under review               | Under review |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+                    | Under review           | Under review               | Yes |
+|[OutlookDefaultLabel and DisableMandatoryInOutlook](#outlook-specific)                    | xxx+                      | xxx+                    | Under review           | Under review               | Yes |
 |
 
 
@@ -344,6 +345,44 @@ Additional information for built-in labeling:
 - When mandatory labeling is in effect, users can't remove sensitivity labels from documents, but can change an existing label.
 
 For guidance about when to use this setting, see the information about [policy settings](sensitivity-labels.md#what-label-policies-can-do).
+
+## Outlook-specifc options for default label and mandatory labeling
+
+By default, when you select the label policy settings **Apply this label by default to documents and email** and **Requires users to apply a label to their email or documents**, your configuration choice applies to documents and emails.
+
+To apply different settings to emails, use the following policy settings:
+
+- **OutlookDefaultLabel**: Select this option if you want Outlook to apply a different default label, or no label.
+
+- **DisableMandatoryInOutlook**: Select this option if you want Outlook to be exempt from prompting users to select a label for unlabeled email messages.
+
+### PowerShell advanced settings
+
+These settings are also supported by using PowerShell with the *AdvancedSettings* parameter and the [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) and [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps) cmdlets from [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell?view=exchange-ps). Previously supported only by the Azure Information Protection unified labeling client, these two advanced settings are now supported for built-in labeling.
+
+PowerShell examples, where the label policy is named **Global**:
+
+- To exempt Outlook from a default label:
+    
+    ````powershell
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
+    ````
+
+- To exempt Outlook from mandatory labeling:
+    
+    ````powershell
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
+    ````
+
+To specify a different default label for Outlook, you need to specify the label GUID. To find this value, can you use the following command:
+
+````powershellGet-Label | Format-Table -Property DisplayName, Name, Guid
+````
+
+> [!NOTE]
+> Currently, OutlookDefaultLabel and DisableMandatoryInOutlook are the only PowerShell advanced settings that are supported for built-in labeling. The other advanced settings remain supported for the Azure Information Protection client only.
+
+For more information about using PowerShell advanced settings for the Azure Information Protection client, see [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
 
 ## End-user documentation
 
