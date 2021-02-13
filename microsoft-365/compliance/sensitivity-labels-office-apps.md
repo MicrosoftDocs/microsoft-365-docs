@@ -358,7 +358,7 @@ To apply different settings to emails, use the following policy settings:
 
 ### PowerShell advanced settings
 
-These settings are also supported by using PowerShell with the *AdvancedSettings* parameter and the [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) and [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps) cmdlets from [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell?view=exchange-ps). Previously supported only by the Azure Information Protection unified labeling client, these two advanced settings are now supported for built-in labeling.
+These settings are also supported by using PowerShell with the *AdvancedSettings* parameter and the [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) and [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell). Previously supported only by the Azure Information Protection unified labeling client, these two advanced settings are now supported for built-in labeling.
 
 PowerShell examples, where the label policy is named **Global**:
 
