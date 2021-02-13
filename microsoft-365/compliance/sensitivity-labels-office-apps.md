@@ -358,8 +358,8 @@ To apply different settings to emails, use the following policy settings:
 
 > [!NOTE]
 > If you have previously configured the PowerShell advanced settings OutlookDefaultLabel and DisableMandatoryInOutlook for the Azure Information Protection unified labeling client, these settings will automatically start to work for Outlook on the web and for other Outlook clients that use built-in labeling. Identify which versions of Outlook support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page.
-> 
-> For more information about these PowerShell settings, see the next section.
+
+For more information about configuring these settings by using PowerShell, see the next section.
 
 ### PowerShell advanced settings OutlookDefaultLabel and DisableMandatoryInOutlook
 
