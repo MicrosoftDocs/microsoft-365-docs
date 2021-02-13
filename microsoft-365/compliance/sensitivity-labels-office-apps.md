@@ -374,6 +374,13 @@ PowerShell examples, where the label policy is named **Global**:
     Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
     ````
 
+> [!NOTE]
+> Currently, OutlookDefaultLabel and DisableMandatoryInOutlook are the only PowerShell advanced settings that are supported for built-in labeling. The other advanced settings remain supported for the Azure Information Protection client only.
+> 
+> For more information about using PowerShell advanced settings for the Azure Information Protection client, see [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
+
+#### PowerShell tips
+
 To specify a different default label for Outlook, you need to specify the label GUID. To find this value, can you use the following command:
 
 ````powershell
@@ -385,11 +392,6 @@ To remove either of these advanced settings from a label policy, use the same Ad
 ````powershell
     Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
 ````
-
-> [!NOTE]
-> Currently, OutlookDefaultLabel and DisableMandatoryInOutlook are the only PowerShell advanced settings that are supported for built-in labeling. The other advanced settings remain supported for the Azure Information Protection client only.
-
-For more information about using PowerShell advanced settings for the Azure Information Protection client, see [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
 
 ## End-user documentation
 
