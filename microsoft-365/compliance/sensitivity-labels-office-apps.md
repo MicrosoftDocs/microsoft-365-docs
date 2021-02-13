@@ -348,7 +348,7 @@ For guidance about when to use this setting, see the information about [policy s
 
 ## Outlook-specific options for default label and mandatory labeling
 
-By default, when you select the label policy settings **Apply this label by default to documents and email** and **Requires users to apply a label to their email or documents**, your configuration choice applies to documents and emails.
+By default, when you select the label policy settings **Apply this label by default to documents and email** and **Requires users to apply a label to their email or documents**, your configuration choice applies to emails as well as to documents.
 
 To apply different settings to emails, use the following policy settings:
 
