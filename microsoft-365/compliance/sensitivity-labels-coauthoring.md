@@ -133,7 +133,7 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 
 ## How to enable co-authoring for files with sensitivity labels
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Turning on this setting is a one-way action. While the feature is in preview, test it only in a non-production environment and only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
 
 During the preview, you must use a specific URL to access this setting in the Microsoft 365 compliance center.
@@ -158,7 +158,7 @@ During the preview, you must use a specific URL to access this setting in the Mi
 
 ## Contact Support if you need to disable this feature
 
-> [!CAUTION]
+> [!IMPORTANT]
 > If you do need to disable this feature, be aware that labeling information can be lost.
 
 After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test this feature with a test tenant rather than a production tenant.
