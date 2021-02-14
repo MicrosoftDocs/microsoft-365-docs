@@ -38,6 +38,9 @@ If you're familiar with the Microsoft Defender Security Center, this article hel
 
 Historically, the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and help responding to alerts of potential advanced persistent threat activity or data breaches. To help reduce the number of portals, the Microsoft 365 security center will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
+Microsoft Defender for Endpoint in the Microsoft 365 security center supports [granting access to managed security service providers (MSSPs)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same way [access is granted in the Microsoft Defender security center](mssp-access.md).
+
+
 > [!IMPORTANT]
 > What you see in the Microsoft 365 security center depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown.
 
@@ -90,7 +93,7 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 Brings together incident and alert management across your email, devices, and identities. The alert page provides full context to the alert by combining attack signals to construct a detailed story. A new, unified experience now brings together a consistent view of alerts across workloads. You can quickly triage, investigate, and take effective action.
 
 - [Learn more about incidents](incidents-overview.md)
-- [Learn more about managing alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
+- [Learn more about managing alerts](investigate-alerts.md)
 
 ![The Alerts and Actions quick launch bar](../../media/converge-1-alerts-and-actions.png)
 
@@ -98,7 +101,7 @@ Brings together incident and alert management across your email, devices, and id
 
 Proactively search for threats, malware, and malicious activity across your endpoints, Office 365 mailboxes, and more by using [advanced hunting queries](advanced-hunting-overview.md). These powerful queries can be used to locate and review threat indicators and entities for both known and potential threats.
 
-[Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
+[Custom detection rules](custom-detection-rules.md) can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
 
 
 ### Action center

@@ -101,7 +101,7 @@
               href: mtp/mtp-enable.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
-            - name: Turn on FAQ
+            - name: Turning on Microsoft 365 Defender FAQs
               href: mtp/mtp-enable-faq.md              
         - name: How-to guides
           items: 
@@ -275,6 +275,8 @@
                   href: mtp/device-profile.md
                 - name: Provide feedback
                   href: mtp/feedback.md
+                - name: Provide managed service provider (MSSP) access
+                  href: mtp/mssp-access.md
                 - name: Create ServiceNow tickets and tasks
                   items: 
                     - name: ServiceNow integration overview
@@ -648,7 +650,7 @@
               href: ./office-365-security/set-up-anti-phishing-policies.md
             - name: Backscatter in EOP
               href: ./office-365-security/backscatter-messages-and-eop.md
-            - name: Bulk complaint level (SCL)
+            - name: Bulk complaint level (BCL)
               href: ./office-365-security/bulk-complaint-level-values.md
             - name: End-user spam notifications
               href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md

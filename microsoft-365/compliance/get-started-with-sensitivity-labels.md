@@ -76,7 +76,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 
 |I want to ...|Documentation|
 |----------------|---------------|
-|Manage sensitivity labels for Office apps so that content is labeled as it's created—includes support for manual labeling on all platforms |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
+|Manage sensitivity labels for Office apps so that content is labeled as it's created—includes support for manual labeling on all platforms |[Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Enable users to label and protect files from Windows computers using Office apps, File Explorer, and PowerShell|[Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Encrypt documents and emails with sensitivity labels and restrict who can access that content and how it can be used |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
 |Enable sensitivity labels for Office on the web, with support for coauthoring, eDiscovery, data loss prevention, search—even when documents are encrypted | [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)

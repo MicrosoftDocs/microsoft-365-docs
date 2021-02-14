@@ -159,7 +159,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Use sensitivity labels in Office apps
+        - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Encryption
       items: 
