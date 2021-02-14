@@ -150,7 +150,7 @@
           href: create-sensitivity-labels.md
         - name: Restrict access to content by using sensitivity labels to apply encryption
           href: encryption-sensitivity-labels.md
-        - name: Enable co-authoring for documents encrypted by sensitivity labels
+        - name: Enable co-authoring for documents encrypted by sensitivity labels (Preview)
           href: sensitivity-labels-coauthoring.md
         - name: Apply a sensitivity label to content automatically
           href: apply-sensitivity-label-automatically.md
