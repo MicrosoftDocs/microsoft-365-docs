@@ -348,6 +348,8 @@ For guidance about when to use this setting, see the information about [policy s
 
 ## Outlook-specific options for default label and mandatory labeling
 
+Identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page.
+
 By default, when you select the label policy settings **Apply this label by default to documents and email** and **Requires users to apply a label to their email or documents**, your configuration choice applies to emails as well as to documents.
 
 To apply different settings to emails, use the following policy settings:
@@ -357,7 +359,9 @@ To apply different settings to emails, use the following policy settings:
 - **DisableMandatoryInOutlook**: Select this option if you want Outlook to be exempt from prompting users to select a label for unlabeled email messages.
 
 > [!NOTE]
-> If you have configured the PowerShell advanced settings OutlookDefaultLabel and DisableMandatoryInOutlook for the Azure Information Protection unified labeling client, these settings will automatically start to work for Outlook on the web and for other Outlook clients that use built-in labeling. Identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page.
+> If you use the Azure Information Protection unified labeling client and have configured the PowerShell advanced settings **OutlookDefaultLabel** and **DisableMandatoryInOutlook**:
+> 
+> These settings in the Microsoft 365 compliance center display your chosen PowerShell configuration and automatically start to work for Outlook on the web and for other Outlook clients that use built-in labeling.
 
 For more information about configuring these settings by using PowerShell, see the next section.
 
