@@ -76,7 +76,7 @@ For more information about the Azure AD P1 and P2, see [Azure Active Directory p
 
 ### Turn on Modern authentication for your organization
 
-For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription before August 2017, it is likely that you will need to turn on Modern Authentication in order to get features like Multi-Factor Authentication to work in Windows clients like Outlook
+For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription before August 2017, it is likely that you will need to turn on Modern Authentication in order to get features like Multi-Factor Authentication to work in Windows clients like Outlook.
 
 
 1. In the Microsoft 365 admin center, in the left nav choose **Settings** \> **Org settings**.
