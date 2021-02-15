@@ -80,7 +80,7 @@ For most subscriptions modern authentication is automatically turned on, but if 
 
 
 1. In the Microsoft 365 admin center, in the left nav choose **Settings** \> **Org settings**.
-2. Under **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
+2. Under the **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
 
 ### Turn off legacy per-user MFA
 
