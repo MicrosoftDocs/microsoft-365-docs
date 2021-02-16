@@ -48,9 +48,10 @@ If an extension is impacting page load time or there are too many extsnions on t
 Information available in the results includes:
 
 - **Name and ID** shows identifying information that can help you find the extension on the page
-- **Total** shows the total time for the extension to initialize and load
-- **Module Load** shows the time taken to fetch and load the extension
-- **Init** shows the time taken for the extension to initialize
+- **Total** shows the total time for the extension to module load and initialize. It is the total relative time taken by the extension to execute on the page, from beginning to the end.
+- **Module Load** shows the time taken to download, evaluate and load the extensions JavaScript and CSS files. It will then start the Init process.
+- **Init** shows the time taken for the extension to initialize the data.
+	It is an asynchronous call and init time is the calculation of time for the onInit function when the returned promise is resolved.
 
 This information is provided to help designers and developers troubleshoot issues. This information should be provided to your design and development team.
 
