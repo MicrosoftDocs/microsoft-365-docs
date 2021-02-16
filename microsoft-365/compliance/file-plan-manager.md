@@ -138,8 +138,13 @@ To import new retention labels and modify existing retention labels:
 
    ![Blank file plan template opens in Excel](../media/file-plan-blank-template.png)
 
-3. Fill out the template, using the following information that describes the properties and valid values for each property. For import, each value has a maximum length of 64 characters. <br/>
-
+3. Fill out the template, using the following information that describes the properties and valid values for each property. For import, some values have a maximum length:
+    
+    - **LabelName**: Maximum length of 64 characters
+    - **Comment** and **Notes**: Maximum length of 1024 characters
+    - All other values: Unlimited length
+    <br/>
+    
    |Property|Type|Valid values|
    |:-----|:-----|:-----|
    |LabelName|String|This property specifies the name of the retention label.|
