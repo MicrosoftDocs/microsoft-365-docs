@@ -26,8 +26,8 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
->The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
+> [!IMPORTANT]
+> The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
 
 **Applies to:**
 - Microsoft 365 Defender
@@ -40,33 +40,30 @@ For more information on new capabilities that are generally available, see [What
 
 ## Required permissions
 
-Accounts assigned the following Azure Active Directory (Azure AD) roles can turn on  Microsoft 365 Defender Preview features:
+Accounts assigned the following Azure Active Directory (Azure AD) roles can turn on Microsoft 365 Defender Preview features:
 
 - Global administrator
 - Security administrator
 - Security Operator
 
 ## Turn on preview features
+
 You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
 1. In the navigation pane, select **Settings**.
-
 2. Select **Microsoft 365 Defender**.
-
-
 3. Select **Preview features** > **Turn on preview features**. 
-
 3. Select **Save**.
 
 You'll know you have preview features turned on when you see that the **Turn on preview features** check box is selected. 
 
 ## Preview features
+
 The following features and enhancements are currently available on preview:
 
 - **[Microsoft 365 Defender APIs](api-overview.md)** - The lop-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables. 
 - **[Take action in advanced hunting](advanced-hunting-take-action.md)**—Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
 - **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—Get information about advanced hunting schema tables directly in the security center. In addition to table and column descriptions, this reference includes supported event types (`ActionType` values) and sample queries.
 - **[DeviceFromIP() function](advanced-hunting-devicefromip-function.md)**—Get information about which devices have been assigned a specific IP address or addresses at a given time range.
-
