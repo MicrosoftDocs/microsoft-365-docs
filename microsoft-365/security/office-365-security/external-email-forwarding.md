@@ -70,6 +70,6 @@ This feature independence allows you to (for example) allow automatic forwarding
 
 ## The blocked email forwarding message
 
-When a message is detected as automatically forwarded, and the Outbound spam filter policy (Threat management > Policy > Anti-spam) *blocks* that activity, the message is returned to the sender in an NDR that contains the following information:
+When a message is detected as automatically forwarded, and the [outbound spam filter](configure-the-outbound-spam-policy.md) policy *blocks* that activity, the message is returned to the sender in an NDR that contains the following information:
 
 `5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`
