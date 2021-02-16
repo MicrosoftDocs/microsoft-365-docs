@@ -50,7 +50,6 @@ These mailboxes are, listed by their RecipientTypeDetails attribute:
 
 - **UserMailbox**: These mailboxes store messages for Teams users who have an Exchange Online mailbox.
 - **MailUser**: These mailboxes store messages for Teams users who have a mailbox for an on-premises Exchange server and not Exchange Online.
-- **User**: These mailboxes store messages for Teams users who don’t have a mailbox for Exchange Online or on-premise Exchange servers.
 - **GroupMailbox**: These mailboxes store messages for Teams channels.
 
 Other mailbox types, such as RoomMailbox that is used for Teams conference rooms, are not supported for Teams retention policies.
