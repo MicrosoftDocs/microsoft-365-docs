@@ -52,6 +52,12 @@ For instructions on how to configure these settings, see [Configure outbound spa
 >
 > - You can see information about users that are automatically forwarding messages to external recipients in the [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md).
 
+## Blocked email forwarding messages
+
+When a message is detected as automatically forwarded, and the organizational policy *blocks* that activity, the message is returned to the sender in an NDR that contains the following information:
+
+`5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`
+
 ## How the outbound spam filter policy settings work with other automatic email forwarding controls
 
 As an admin, you might have already configured other controls to allow or block automatic email forwarding. For example:
@@ -67,9 +73,3 @@ Remote domain settings and mail flow rules are independent of the settings in ou
 - You allow automatic forwarding in outbound spam filter policies, but you use mail flow rules or remote domain settings to block automatically forwarded email. In this example, the mail flow rules or remote domain settings will block automatically forwarded messages.
 
 This feature independence allows you to (for example) allow automatic forwarding in outbound spam filter policies, but use remote domains to control the external domains that users can forward messages to.
-
-## The blocked email forwarding message
-
-When a message is detected as automatically forwarded, and the organizational policy *blocks* that activity, the message is returned to the sender in an NDR that contains the following information:
-
-`5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`
