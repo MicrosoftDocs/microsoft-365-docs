@@ -20,11 +20,7 @@ description: "Learn about app policies."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
->[!Note]
->REVIEWERS: This content is in progress and not ready for review.
->
-
-Microsoft Application Protection and Governance (MAPG) can detect anomalous app behavior in your Microsoft 365 tenant and generate alerts that you can see, investigate, and resolve. Beyond this built-in detection capability, you can use a set of default app policies and create your own that generate additional alerts.
+Microsoft Application Protection and Governance (MAPG) can detect anomalous app behavior in your Microsoft 365 tenant and generate alerts that you can see, investigate, and resolve. Beyond this built-in detection capability, you can use a set of default templates to create your own app policies that generate additional alerts.
 
 These proactive or reactive policies for app and user patterns and behaviors can protect your users from using non-compliant or malicious apps and limit the access of risky apps to your tenant data.
 
@@ -40,7 +36,6 @@ Here's a quick review of required administrator roles for app policy management.
 | Security Reader  | ![Check mark](..\media\checkmark.png) |  |
 | Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
 ||||
-
 
 <!--
 How app policies are the method by which MAPG detects app anomolies resulting in detection (alerts) and remediation (manual or automatic) 

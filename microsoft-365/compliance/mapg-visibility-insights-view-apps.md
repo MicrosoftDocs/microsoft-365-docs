@@ -20,20 +20,16 @@ description: "View your apps."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
->[!Note]
->REVIEWERS: This content is in progress and not ready for review.
->
+Microsoft Application Protection and Governance (MAPG) allows you to quickly gain deep insights into the Microsoft 365 apps in your tenant. For example, you can see:
 
-Microsoft Application Protection and Governance (MAPG) allows you to quickly gain deep insights into the M365 apps in your tenant.
-
-- You can see a list of all OAuth-enabled M365 apps in the tenant, together with relevant app metadata and usage data. 
-- You can see app details with deeper insights and information by clicking an app in the list.
+- A list of all OAuth-enabled Microsoft 365 apps in the tenant, together with relevant app metadata and usage data. 
+- App details with deeper insights and information by selecting an app in the list.
 
 ## Getting a list of all the apps in your tenant
 
-For a summary of apps in your tenant, go to **Microsoft 365 Compliance Center > App protection & governance > All apps**.
+For a summary of apps in your tenant, go to **Microsoft 365 Compliance Center > App protection & governance > Apps**.
 
-\[Placeholder for MAPG All apps page screenshot]
+\[Placeholder for MAPG Apps page screenshot]
 
 You will see a list of apps and this information:
 
@@ -47,15 +43,19 @@ You will see a list of apps and this information:
 - Date Installed
 - Permission Privilege
 - Number of Users
-- Data Access: The sum of the app’s data upload and download in the tenant over the last day, along with the change over the prior day.
+- Data Access
 
-You can also search by app name with a search box of the **All Apps** page.
+  The sum of the app’s data upload and download in the tenant over the last day, along with the change over the prior day.
+
+The app list is sorted by **Last Modified** by default. To sort the list by another category, select the category name.
+
+You can also select **Search** to search for an app by name.
 
 ## Getting detailed information on an app
 
-For detailed information on a specific app in your tenant, go to **Microsoft 365 Compliance Center > App protection & governance > All apps page > *app name***.
+For detailed information on a specific app in your tenant, go to **Microsoft 365 Compliance Center > App protection & governance > Apps page > *app name***.
 
-The app details pane provides additional information in these tabs:
+The app details pane provides additional information on these tabs:
 
 | Tab name | Description |
 |:-------|:-----|
@@ -65,7 +65,7 @@ The app details pane provides additional information in these tabs:
 | Permissions | See a summary of the permissions granted to and used by the app, the list of specific permissions, and their status and usage level. |
 |||
 
-There is also a **Disable App** control to disable the use of the selected app, but requires these roles:
+There is also a **Disable App** control to disable the use of the selected app, but requires these [administrator roles](manage-app-protection-governance.md#administrator-roles):
 
 - Compliance Administrator
 - Global Administrator

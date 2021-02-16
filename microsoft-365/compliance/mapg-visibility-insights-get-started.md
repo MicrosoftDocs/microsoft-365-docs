@@ -20,15 +20,15 @@ description: "Get started with visibility and insights."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
->[!Note]
->REVIEWERS: This content is in progress and not ready for review.
->
-
 The first place to get started is the Microsoft Application Protection and Governance (MAPG) dashboard at [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
 
 \[Placeholder for MAPG Overview page screenshot]
 
 Alternatively, you can access the MAPG dashboard from **Microsoft 365 admin center > Microsoft 365 Compliance Center > App protection & governance > Overview page**.
+
+>[!Note]
+>You must sign in with a user account with an appropriate [administrator role](manage-app-protection-governance.md#administrator-roles).
+>
 
 ## What’s available in the dashboard
 
