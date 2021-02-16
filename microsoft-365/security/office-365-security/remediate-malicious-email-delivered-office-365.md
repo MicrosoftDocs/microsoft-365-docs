@@ -130,7 +130,7 @@ Already in destination" count is a part of remediable count. So,
     Remediable = Successful + Failed + Already in destination 
 For most of the cases, unless there are ingestion delays where signals tend to get delayed/ lost sometimes.
 
-  Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
+  Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox", that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
 
   In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100,000 records.
 
