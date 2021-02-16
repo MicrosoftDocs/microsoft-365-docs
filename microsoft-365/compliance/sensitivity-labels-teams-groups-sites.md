@@ -266,6 +266,7 @@ The following apps and services support sensitivity labels configured for sites 
 
   - SharePoint admin center
   - Azure Active Directory portal
+  - Microsoft 365 admin center
   - Microsoft 365 compliance center, Microsoft 365 security center, Security & Compliance Center
 
 - User apps and services:
@@ -275,13 +276,12 @@ The following apps and services support sensitivity labels configured for sites 
   - Outlook on the web and for Windows, macOS, iOS, and Android
   - Forms
   - Stream
-  - Planner (rolling out) 
+  - Planner 
 
 The following apps and services don't currently support sensitivity labels configured for sites and group settings:
 
 - Admin centers:
 
-  - Microsoft 365 admin center
   - Teams admin center
   - Exchange admin center
 
