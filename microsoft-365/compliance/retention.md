@@ -50,7 +50,7 @@ These retention settings work with content in place that saves you the additiona
 
 ## How retention settings work with content in place
 
-When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically retained.
+When content has retention settings assigned to it, that content remains in its original location. Most of the time, people continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically retained.
   
 - For SharePoint and OneDrive sites: The copy is retained in the **Preservation Hold** library.
 
@@ -109,6 +109,32 @@ You can very efficiently apply a single policy to multiple locations, or to spec
 For the start of the retention period, you can choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups locations, when the content was last modified.
 
 Items inherit the retention settings from their container specified in the retention policy. If they are then moved outside that container when the policy is configured to retain content, a copy of that item is retained in the workload's secured location. However, the retention settings don't travel with the content in its new location. If that's required, use retention labels instead of retention policies.
+
+### Scopes for retention policies
+
+> [!NOTE]
+> Adaptive scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced.
+
+When you configure a policy for retention, you choose between an adaptive scope and a static scope to define assigning the policy.
+
+- An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by periodically running the query against the attributes that you specify for the selected locations.
+
+- A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes" and "excludes" respectively.
+
+Advantages of using adaptive scopes:
+
+- More powerful targeting for your retention policies. For example, you can assign different retention settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
+
+- Query-based membership provides more robust targeting to accommodate changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
+
+Advantages of using static scopes:
+
+- Simpler configuration if you want all instances automatically selected.
+    
+    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers you have to specify are low. However, when these numbers start to increase and you have frequent changes in your organization that require you to reconfigure your includes and excludes, adaptive policies can be simpler to configure and much easier to maintain.
+
+For more information, see [Configuring adaptive scopes](create-retention-policies.md#configuring-adaptive-scopes)
+
 
 ### Retention labels
 
@@ -302,17 +328,17 @@ Explanation for the four different levels:
         
         The document is deleted after seven years because the delete action from the retention label takes precedence.
     
-    2. When you have retention policies only: If a retention policy for a location is scoped to use an include configuration (such as specific users for Exchange email) that retention policy takes precedence over unscoped retention policies for the same location.
+    2. When you have retention policies only: If a retention policy for a location uses an adaptive scope or a static scope that includes specific instances (such as specific users for Exchange email) that retention policy takes precedence over a static scope that is configured for all instances for the same location.
         
-        An unscoped retention policy is where a location is selected without specifying specific instances. For example, **Exchange email** and the default setting of **All recipients** is an unscoped retention policy. Or, **SharePoint sites** and the default setting of **All sites**. When retention policies are scoped, they have equal precedence at this level.
+        A static scope that is configured for all instances for a location is sometimes referred to as an "org-wide policy". For example, **Exchange email** and the default setting of **All recipients**. Or, **SharePoint sites** and the default setting of **All sites**. When retention policies aren't org-wide but have been configured with an adaptive scope or a static scope that includes specific instances, they have equal precedence at this level.
         
-        Example 1: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
+        Example 1: An email message is subject to two retention policies. The first retention policy is org-wide and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
         
-        The email message is deleted after five years because the deletion action from the scoped retention policy takes precedence over the unscoped retention policy.
+        The email message is deleted after five years because the deletion action from the scoped retention policy takes precedence over the org-wide retention policy.
         
         Example 2: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
         
-        When this document will be deleted can't be determined at this level because both retention policies are scoped.
+        When this document will be deleted can't be determined at this level because both retention policies are scoped to include specific instances.
 
 4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies and the outcome couldn't be resolved from the previous level: Content is deleted at the end of the shortest retention period.
     
@@ -336,8 +362,8 @@ More complex examples that combine retain and delete actions:
 
 2.  An item has the following retention settings applied to it:
     
-    - An unscoped retention policy that deletes-only after ten years
-    - A scoped retention policy that retains for five years and then deletes
+    - An org-wide retention policy that deletes-only after ten years
+    - A retention policy scoped with specific instances that retains for five years and then deletes
     - A retention label that retains for three years and then deletes
     
     **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels takes precedence over deletion from all retention policies. In this example, all conflicts are resolved by the third level.
