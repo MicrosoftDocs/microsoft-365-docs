@@ -69,7 +69,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
     - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
     - [Install the Azure PowerShell module](/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- Admin consent for information barriers in Microsoft Teams -  When your policies are in place, information barriers can remove people from chat sessions they are not supposed to be in. This configuration helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams.
+- Admin consent for information barriers in Microsoft Teams -  When your IB policies are in place, they can remove non-IB compliance users from Groups (i.e. Teams channels, which are based on groups). This configuration helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams.
 
    1. Run the following PowerShell cmdlets:
 
