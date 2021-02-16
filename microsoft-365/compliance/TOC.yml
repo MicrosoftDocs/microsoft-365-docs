@@ -157,7 +157,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Use sensitivity labels in Office apps
+        - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Encryption
       items: 
@@ -308,6 +308,8 @@
               href: retention-policies-yammer.md
             - name: Retention for Exchange
               href: retention-policies-exchange.md
+            - name: Limits for Retention
+              href: retention-limits.md
         - name: Get started with retention
           href: get-started-with-retention.md
         - name: Create retention policies

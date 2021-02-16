@@ -1,5 +1,5 @@
 ---
-title: "Use sensitivity labels in Office apps"
+title: "Manage sensitivity labels in Office apps"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,11 +14,11 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: Learn about how users work with sensitivity labels in Office apps for desktop, mobile, and the web, and which apps support sensitivity labels.
+description: Information for IT administrators to manage sensitivity labels in Office apps for desktop, mobile, and the web.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Use sensitivity labels in Office apps
+# Manage sensitivity labels in Office apps
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -201,7 +201,7 @@ This means that if you share documents with another organization that uses diffe
 
 ### Sharing encrypted documents with external users
 
-In addition to restricting access to users in your own organization, you can extend access to any other user who has an account in Azure Active Directory. However, if your organization uses conditional access policies, see the [next section](#conditional-access-policies) for additional considerations.
+In addition to restricting access to users in your own organization, you can extend access to any other user who has an account in Azure Active Directory. However, if your organization uses Conditional Access policies, see the [next section](#conditional-access-policies) for additional considerations.
 
 All Office apps and other [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) can open encrypted documents after the user has successfully authenticated. 
 
@@ -227,15 +227,15 @@ However, the automatic guest account is not created immediately in this scenario
 > [!TIP]
 > Because you can't be sure that external users will be using a supported Office client app, sharing links from SharePoint and OneDrive after creating guest accounts (for specific users) or when you use [SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) (for any authenticated user) is a more reliable method to support secure collaboration with external users.
 
-### Conditional access policies
+### Conditional Access policies
 
-If your organization has implemented [Azure AD conditional access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include Azure Information Protection and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
+If your organization has implemented [Azure Active Directory Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include Azure Information Protection and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
 
-Without this guest account, they can't open the encrypted document and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction **Sign out and sign in again with a different Azure Active Directory user account**.
+Without this guest account, they can't open the encrypted document and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
 
-If you can't create and configure guest accounts in your tenant for external users who need to open documents that are encrypted by your labels, you must either remove Azure Information Protection from the conditional access policies, or exclude external users from the policies.
+If you can't create and configure guest accounts in your tenant for external users who need to open documents that are encrypted by your labels, you must either remove Azure Information Protection from the Conditional Access policies, or exclude external users from the policies.
 
-For more information about conditional access and Azure Information Protection, the encryption service used by sensitivity labels, see the frequently asked question, [I see Azure Information Protection is listed as an available cloud app for conditional access—how does this work?](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+For more information about Conditional Access and Azure Information Protection, the encryption service used by sensitivity labels, see the frequently asked question, [I see Azure Information Protection is listed as an available cloud app for conditional access—how does this work?](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 ## When Office apps apply content marking and encryption
 
