@@ -52,8 +52,7 @@ For instructions on how to configure these settings, see [Configure outbound spa
 >
 > - You can see information about users that are automatically forwarding messages to external recipients in the [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md).
 
-
-## The blocked email forwarding message
+## Blocked email forwarding messages
 
 When a message is detected as automatically forwarded, and the organizational policy *blocks* that activity, the message is returned to the sender in an NDR that contains the following information:
 
