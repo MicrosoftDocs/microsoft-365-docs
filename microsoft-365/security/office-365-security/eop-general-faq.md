@@ -1,25 +1,29 @@
 ---
-title: "EOP general FAQ"
-f1.keywords:
-- NOCSH
+title: EOP general FAQ
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
-ms.custom:
-- seo-marvel-apr2020
-description: "Get answers to the most common general questions about the Exchange Online Protection (EOP) cloud-hosted email filtering service."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Get answers to the most common general questions about the Exchange Online Protection (EOP) cloud-hosted email filtering service.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # EOP general FAQ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Here we answer the most common general questions about Exchange Online Protection (EOP) cloud-hosted email filtering service. For additional frequently asked questions (FAQ) topics, go to the following links:
 

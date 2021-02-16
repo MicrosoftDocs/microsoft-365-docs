@@ -36,10 +36,14 @@ Before you get started with insider risk management, you should confirm your [Mi
 - Microsoft 365 A5 subscription (paid or trial version)
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G3 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G3 subscription + the Microsoft 365 G5 Insider Risk Management add-on
+- Office 365 E3 subscription + Enterprise Mobility and Security E3 + the Microsoft 365 E5 Compliance add-on
 
 Users included in insider risk management policies must be assigned one of the licenses above.
 
-If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
+If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
 ## Step 1: Enable permissions for insider risk management
 
@@ -58,7 +62,7 @@ Depending on the structure of your compliance management team, you have options 
 | **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access all insider risk management alerts, cases, notices templates, and the Content Explorer. |
 
 > [!NOTE]
-> These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
+> These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
 ### Add users to an insider risk management role group
 
@@ -156,7 +160,6 @@ Before configuring a policy, define the following insider risk settings:
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
     - [Anomaly detections](insider-risk-management-settings.md#anomaly-detections)
-    - [Offensive language detections](insider-risk-management-settings.md#offensive-language-detections)
     - [Alert volume level](insider-risk-management-settings.md#alert-volume)
     - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Domain settings](insider-risk-management-settings.md#domains-preview)
@@ -180,9 +183,6 @@ Insider risk management policies include assigned users and define which types o
 
     >[!IMPORTANT]
     >Most policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 3** above.
-
-    >[!CAUTION]
-    >Starting October 16, 2020, you will no longer be able to create policies using the Offensive language in email template. Any active policies that use this template will work until they are permanently removed in January 2021.
 
 4. Select **Next** to continue.
 5. On the **Users** page, select **Add user or group** or **Choose Priority user groups** to define which users or priority user groups are included in the policy, depending on the policy template you've selected. Select **All users and mail-enabled groups** checkbox if applicable (if you haven't selected a priority user-based template). Select **Next** to continue.

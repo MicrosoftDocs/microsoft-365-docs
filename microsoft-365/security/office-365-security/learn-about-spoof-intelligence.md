@@ -1,30 +1,36 @@
 ---
-title: "Configure spoof intelligence"
-f1.keywords:
-- NOCSH
+title: Configure spoof intelligence
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: 
+  - MOE150
+  - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about spoof intelligence in Exchange Online Protection (EOP), where you can allow or block specific spoofed senders."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about spoof intelligence in Exchange Online Protection (EOP), where you can allow or block specific spoofed senders.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure spoof intelligence in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spoofing by EOP as of October 2018. EOP uses spoof intelligence as part of your organization's overall defense against phishing. For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 

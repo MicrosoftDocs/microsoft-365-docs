@@ -1,30 +1,36 @@
 ---
-title: "Protect against threats"
-f1.keywords:
-- NOCSH
+title: Protect against threats
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.date: 09/08/2020
-search.appverid:
-- MOE150
-- MET150
+search.appverid: 
+  - MOE150
+  - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
-description: "Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Protect against threats
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Here's a quick-start guide that breaks the configuration of Defender for Office 365 into chunks. If you're new to threat protection features in Office 365, not sure where to begin, or if you learn best by *doing*, use this guidance as a checklist and a starting point.
 
@@ -50,7 +56,7 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 |Anti-spam protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Zero-hour auto purge (for email)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Turn on ATP for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365 ](atp-for-spo-odb-and-teams.md)|
+|Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365 ](atp-for-spo-odb-and-teams.md)|
 |Advanced anti-phishing protection|[Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### Roles and permissions
@@ -202,7 +208,7 @@ To set up [Safe Links](atp-safe-links.md), review and edit your global settings 
 
 To learn more, see [Set up Safe Links policies](set-up-atp-safe-links-policies.md).
 
-## Part 5 - Verify ATP for SharePoint, OneDrive, and Microsoft Teams is turned on
+## Part 5 - Verify Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is turned on
 
 Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Using Defender for Office 365 helps with blocking and detection of files that are identified as malicious in team sites and document libraries. You can read more about how that works [here](atp-for-spo-odb-and-teams.md).
 
@@ -211,7 +217,7 @@ Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Usin
 
 1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe Attachments**, and then click **Global settings**.
 
-2. Verify the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** toggle is to the right: ![Toggle on](../../media/scc-toggle-on.png), and then click **Save**.
+2. Verify the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** toggle is to the right: ![Toggle on](../../media/scc-toggle-on.png), and then click **Save**.
 
 3. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) and [Safe Links policies](set-up-atp-safe-links-policies.md).
 

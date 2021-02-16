@@ -83,9 +83,9 @@ If you're working with a Microsoft partner, you can assign them admin roles. The
   
 A partner can assign these roles:
   
-- **Full administration** Privileges equivalent to a global admin, with the exception of managing multi-factor authentication through the Partner Center.
+- **Admin Agent** Privileges equivalent to a global admin, with the exception of managing multi-factor authentication through the Partner Center.
 
-- **Limited administration** Privileges equivalent to a helpdesk admin.
+- **Helpdesk Agent** Privileges equivalent to a helpdesk admin.
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
   

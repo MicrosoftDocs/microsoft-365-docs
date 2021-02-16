@@ -1,20 +1,22 @@
 ---
 title: S/MIME for encryption in Exchange Online - Office 365
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Admins can learn about using S/MIME (Secure/Multipurpose Internet Mail Extensions) in Exchange Online to encrypt emails and digitally sign them.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # S/MIME for message signing and encryption in Exchange Online

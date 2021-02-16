@@ -1,28 +1,34 @@
 ---
-title: "Design an isolated SharePoint Online team site"
-f1.keywords:
-- NOCSH
+title: Design an isolated SharePoint Online team site
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.collection: Ent_O365
-ms.custom:
- - Ent_Solutions
- - seo-marvel-apr2020
+ms.custom: 
+  - Ent_Solutions
+  - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Design isolated SharePoint Online team sites, including determine permission levels, assign permissions to users with access groups, and nested Azure AD groups.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Design an isolated SharePoint Online team site
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
  **Summary:** Step through the design process for isolated SharePoint Online team sites.

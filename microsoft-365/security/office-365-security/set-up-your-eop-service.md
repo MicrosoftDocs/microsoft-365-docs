@@ -1,25 +1,29 @@
 ---
-title: "Set up your standalone EOP service"
-f1.keywords:
-- NOCSH
+title: Set up your standalone EOP service
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
-ms.custom:
-- seo-marvel-apr2020
+
+ms.custom: 
+  - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: "Admins can learn how to set up standalone Exchange Online Protection (EOP) to protect on-premises email environments."
+description: Admins can learn how to set up standalone Exchange Online Protection (EOP) to protect on-premises email environments.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Set up your standalone EOP service
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 This topic explains how to set up standalone Exchange Online Protection (EOP). If you landed here from the Office 365 domains wizard, go back to the Office 365 domains wizard if you don't want to use Exchange Online Protection. If you're looking for more information on how to configure connectors, see [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 

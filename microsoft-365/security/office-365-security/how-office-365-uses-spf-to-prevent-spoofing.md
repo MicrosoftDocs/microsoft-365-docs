@@ -1,29 +1,35 @@
 ---
 title: How Sender Policy Framework (SPF) prevents spoofing
-f1.keywords:
-- CSH
+f1.keywords: 
+  - CSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 ms.date: 12/15/2016
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Learn how Microsoft 365 uses the Sender Policy Framework (SPF) TXT record in DNS to ensure that destination email systems trust messages sent from your custom domain."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Learn how Microsoft 365 uses the Sender Policy Framework (SPF) TXT record in DNS to ensure that destination email systems trust messages sent from your custom domain.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
  **Summary:** This article describes how Microsoft 365 uses the Sender Policy Framework (SPF) TXT record in DNS to ensure that destination email systems trust messages sent from your custom domain. This applies to outbound mail sent from Microsoft 365. Messages sent from Microsoft 365 to a recipient within Microsoft 365 will always pass SPF.
 

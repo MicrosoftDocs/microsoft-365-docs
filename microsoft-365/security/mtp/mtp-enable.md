@@ -1,14 +1,14 @@
 ---
 title: Turn on Microsoft 365 Defender in the Microsoft 365 security center
-description: Learn how to enable Microsoft 365 Defender and start integrating your security incident and response. 
+description: Learn how to enable Microsoft 365 Defender and start integrating your security incident and response.
 keywords: get started, enable MTP, Microsoft Threat Protection, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
@@ -17,8 +17,9 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 search.appverid: 
-- MOE150
-- MET150
+  - MOE150
+  - MET150
+ms.technology: m365d
 ---
 
 # Turn on Microsoft 365 Defender
@@ -49,19 +50,8 @@ Microsoft 365 Defender aggregates data from the various supported services that 
 
 To get the best protection and optimize Microsoft 365 Defender, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
 
-## Before starting the service
-
-Before you turn on the service, the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) shows the Microsoft 365 Defender settings page when you select **Incidents**, **Action center**, or **Hunting** from the navigation pane. These navigation items are not shown if you are not eligible to use Microsoft 365 Defender.
-
-![Image of the Microsoft 365 Defender settings page shown if Microsoft 365 Defender has not been turned on](../../media/mtp-enable/mtp-settings.png)
-*Microsoft 365 Defender settings in Microsoft 365 security center*
-
-## Starting the service
-
-To turn on Microsoft 365 Defender, simply select **Turn on Microsoft 365 Defender** and apply the change. You can also access this option by selecting **Settings** ([security.microsoft.com/settings](https://security.microsoft.com/settings)) in the navigation pane and then selecting **Microsoft 365 Defender**.
-
-> [!NOTE]
-> If you don't see **Settings** in the navigation pane or couldn't access the page, check your permissions and licenses.
+## Onboard to the service
+Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select any item under the Endpoints section, such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process. 
 
 ### Data center location
 
@@ -77,15 +67,16 @@ Select **Need help?** in the Microsoft 365 security center to contact Microsoft 
 Once the service is provisioned, it adds:
 
 - [Incidents management](incidents-overview.md)
+- [Alerts queue](investigate-alerts.md)
 - An action center for managing [automated investigation and response](mtp-autoir.md)
 - [Advanced hunting](advanced-hunting-overview.md) capabilities
+- Threat analytics
 
 ![Image of Microsoft 365 security center navigation pane with Microsoft 365 Defender features](../../media/mtp-enable/mtp-on.png)
 *Microsoft 365 security center with incidents management and other Microsoft 365 Defender capabilities*
 
-### Getting Microsoft Defender for Identity data
-
-To share Microsoft Defender for Identity data with Microsoft 365 Defender, ensure that Microsoft Cloud App Security and Microsoft Defender for Identity integration is turned on. [Learn more about this integration](https://docs.microsoft.com/cloud-app-security/mdi-integration).
+### Getting Microsoft Defender for Identity data 
+To enable the integration with Microsoft Cloud App Security, you'll need to login to the Microsoft Cloud App Security at least once.
 
 ## Get assistance
 

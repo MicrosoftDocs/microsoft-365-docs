@@ -1,27 +1,33 @@
 ---
 title: Report junk and phishing email in Outlook on the web
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about the built-in junk, not junk, and phishing email reporting options in Outlook on the web (Outlook Web App) in Exchange Online, and how to disable these reporting options for users."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the built-in junk, not junk, and phishing email reporting options in Outlook on the web (Outlook Web App) in Exchange Online, and how to disable these reporting options for users.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Report junk and phishing email in Outlook on the web in Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, you can use the built-in reporting options in Outlook on the web (formerly known as Outlook Web App) to submit false positives (good email marked as spam), false negatives (bad email allowed) and phishing messages to Exchange Online Protection (EOP).
 

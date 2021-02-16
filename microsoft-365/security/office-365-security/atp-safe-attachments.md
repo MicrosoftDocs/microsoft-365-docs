@@ -1,29 +1,35 @@
 ---
-title: "Safe Attachments"
-f1.keywords:
-- NOCSH
+title: Safe Attachments
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date:
+ms.date: 
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-- seo-marvel-apr2020
-description: "Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  - seo-marvel-apr2020
+description: Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Safe Attachments in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Safe Attachments in [Microsoft Defender for Office 365](office-365-atp.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
 
@@ -46,7 +52,7 @@ Safe Attachments scanning takes place in the same region where your Microsoft 36
 > [!NOTE]
 > The following features are located in the global settings are of Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
-> - [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+> - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 >
 > - [Safe Documents in Microsoft 365 E5](safe-docs.md)
 

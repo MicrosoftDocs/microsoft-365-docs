@@ -1,27 +1,33 @@
 ---
-title: "Configure junk email settings on Exchange Online mailboxes"
+title: Configure junk email settings on Exchange Online mailboxes
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MED150
-- MBS150
-- MET150
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web."
+search.appverid: 
+  - MOE150
+  - MED150
+  - MBS150
+  - MET150
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure junk email settings on Exchange Online mailboxes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, organizational anti-spam settings are controlled by Exchange Online Protection (EOP). For more information, see [Anti-spam protection in EOP](anti-spam-protection.md).
 

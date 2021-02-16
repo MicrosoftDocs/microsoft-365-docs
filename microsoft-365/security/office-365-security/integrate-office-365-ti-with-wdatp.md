@@ -1,23 +1,25 @@
 ---
 title: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 keywords: integrate, Microsoft Defender, ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/29/2020
+ms.date: 01/21/2021
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.collection: 
-- M365-security-compliance
+  - M365-security-compliance
 description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
@@ -29,7 +31,7 @@ ms.custom: seo-marvel-apr2020
 
 Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint can help your security operations team monitor and take action quickly if users' devices are at risk. For example, once integration is enabled, your security operations team will be able to see the devices that are potentially affected by a detected email message, as well as how many recent alerts were generated for those devices in Microsoft Defender for Endpoint.
 
-The following image depicts what the **Devices** tab looks like have Microsoft Defender for Endpoint integration enabled:
+The following image depicts what the **Devices** tab looks like when you have Microsoft Defender for Endpoint integration enabled:
 
 ![When Microsoft Defender for Endpoint is enabled, you can see a list of devices with alerts.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
@@ -56,7 +58,7 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
    ![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)
 
-3. In the upper right corner of the screen, choose **Defender for Endpoint Settings**.
+3. In the upper right corner of the screen, choose **Defender for Endpoint Settings (MDE Settings)**.
 
 4. In the Microsoft Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.
 

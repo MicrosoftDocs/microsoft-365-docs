@@ -1,26 +1,29 @@
 ---
 title: Identity and device access configurations - Microsoft 365 for enterprise
-description:  Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations.
+description: Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
-ms.date: 09/29/2020
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.reviewer: martincoetzer
 ms.custom: 
-- it-pro
-- goldenconfig
+  - it-pro
+  - goldenconfig
 ms.collection: 
-- M365-identity-device-management
-- M365-security-compliance
-- m365solution-identitydevice
-- m365solution-overview
-
+  - M365-identity-device-management
+  - M365-security-compliance
+  - m365solution-identitydevice
+  - m365solution-overview
+ms.technology: mdo
 ---
 # Identity and device access configurations
+
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 The modern security perimeter of your organization now extends beyond your network to include users accessing cloud-based apps from any location with a variety of devices. Your security infrastructure needs to determine whether a given access request should be granted and under what conditions.
 
@@ -37,6 +40,11 @@ These capabilities and their recommendations:
 - Will help you implement these [five steps to securing your identity infrastructure](https://docs.microsoft.com/azure/security/azure-ad-secure-steps).
 
 If your organization has unique environment requirements or complexities, use these recommendations as a starting point. However, most organizations can implement these recommendations as prescribed.
+
+Watch this video for a quick overview of identity and device access configurations for Microsoft 365 for enterprise.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
 > Microsoft also sells Enterprise Mobility + Security (EMS) licenses for Office 365 subscriptions. EMS E3 and EMS E5 capabilities are equivalent to those in Microsoft 365 E3 and Microsoft 365 E5. See [EMS plans](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) for the details.

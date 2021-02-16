@@ -1,7 +1,7 @@
 ---
 title: "Office 365 URLs and IP address ranges"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 01/04/2021
 audience: Admin
@@ -57,7 +57,7 @@ Data columns shown are:
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->For recommendations on Yammer IP addresses and URLs, see [this blog post](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
+>For recommendations on Yammer IP addresses and URLs, see [Using hard-coded IP addresses for Yammer is not recommended](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592) on the Yammer blog.
 >
 
 ## Related Topics
@@ -66,7 +66,7 @@ Data columns shown are:
 
 [General Microsoft Stream endpoints](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Monitor Microsoft 365 connectivity](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[Monitor Microsoft 365 connectivity](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
 
 [Root CA and the Intermediate CA bundle on the third-party application system](../compliance/encryption-office-365-certificate-chains.md)
   
@@ -74,6 +74,14 @@ Data columns shown are:
   
 [Content delivery networks](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
   
-[Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653)
+[Microsoft Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
+
+[Microsoft Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
+
+[Microsoft Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
+
+[Microsoft Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)

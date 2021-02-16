@@ -1,25 +1,29 @@
 ---
-title: "Run an administrator role group report in standalone EOP"
-f1.keywords:
-- NOCSH
+title: Run an administrator role group report in standalone EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to run an administrator role group report in standalone Exchange Online Protection (EOP). This report logs when an admin adds members to or removes members from administrator role groups."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to run an administrator role group report in standalone Exchange Online Protection (EOP). This report logs when an admin adds members to or removes members from administrator role groups.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Run an administrator role group report in standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, when an admin adds members to or removes members from administrative role groups, the service logs each occurrence. For more information about role groups in standalone EOP, see [Permissions in standalone EOP](feature-permissions-in-eop.md).
 

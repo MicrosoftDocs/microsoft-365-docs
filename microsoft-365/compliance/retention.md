@@ -72,7 +72,7 @@ For more detailed information about how retention settings work for different wo
 
 ## Retention policies and retention labels
 
-You can use both retention policies and retention labels with label policies to assign your retention settings to content. 
+To assign your retention settings to content, use **retention policies** and **retention labels with label policies**. You can use just one of these methods, or combine them.
 
 Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level (folder, document, email).
 
@@ -161,19 +161,15 @@ For more information, see [Using a retention label as a condition in a DLP polic
 
 #### Retention labels and policies that apply them
 
-Retention labels are independent, reusable building blocks. The primary purpose of a retention label policy is to group a set of retention labels and specify the locations where you want those labels to appear. Then, admins and users can apply those labels to content in those locations.
-  
-![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
-  
-When you publish retention labels, they're included in a retention label policy that make them available for admins and users to select:
+When you publish retention labels, they're included in a **retention label policy** that makes them available for admins and users to apply to content. As the following diagram shows:
 
-- A single retention label can be included in many retention label policies.
+1. A single retention label can be included in multiple retention label policies.
 
-- Retention label policies specify the locations to publish the retention labels.
+2. Retention label policies specify the locations to publish the retention labels. The same location can be included in multiple retention label policies.
 
-- A single location can also be included in many retention label policies.
+![How retention labels can be added to label policies that specify locations](../media/retention-labels-and-policies.png)
 
-In addition to retention label policies, you can also create one or more auto-apply policies, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met.
+You can also create one or more **auto-apply retention label policies**, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met.
 
 #### Retention label policies and locations
 
@@ -185,7 +181,7 @@ Different types of retention labels can be published to different locations, dep
 |Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
 |Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
    
-In Exchange, auto-apply retention labels are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types and trainable classifiers apply to all mailboxes; you can't select specific mailboxes.
+In Exchange, retention labels that you auto-apply are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types and trainable classifiers apply to all mailboxes; you can't select specific mailboxes.
   
 Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete contain from these locations, use retention policies instead.
 
@@ -223,7 +219,7 @@ You can then drill down into details by using [content explorer](data-classifica
 
 The Office 365 Security & Compliance Center has the equivalent overview information for retention labels from **Information governance** > **Dashboard**, and more detailed information from **Information governance** > **Label activity explorer**. For more information about monitoring retention labels from this older admin center, see the following documentation:
 - [View the data governance reports](view-the-data-governance-reports.md)
-- [View label usage with label analytics](label-analytics.md)
+- [Get started with data classification](data-classification-overview.md).
 - [View label activity for documents](view-label-activity-for-documents.md)
 
 #### Using Content Search to find all content with a specific retention label
@@ -282,7 +278,7 @@ Use the following flow to understand the retention and deletion outcomes for a s
 > [!IMPORTANT]
 > If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
 
-![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagram of the principles of retention](../media/principles-of-retention.png)
   
 Explanation for the four different levels:
   
@@ -448,7 +444,7 @@ If you currently use these older features, they will continue to work side-by-si
     
 - [Configuring in place records management](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retention only) 
     
-- [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (deletion only) 
+- [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (deletion only)
     
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
      

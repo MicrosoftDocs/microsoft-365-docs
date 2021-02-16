@@ -1,29 +1,35 @@
 ---
 title: Smart reports, insights - Microsoft 365 Security & Compliance Center
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: denisebmsft
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection: 
-- M365-security-compliance
+  - M365-security-compliance
 description: Learn about the smart reports and insights available in the Security & Compliance Center, and how to use them to view and explore data and take quick actions.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Smart reports and insights in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 If you are part of your organization's Microsoft for 365 for business security team and have the necessary [permissions assigned in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md), you can access a variety of reports, including smart reports and insights. Read this article to get an overview of these reports and insights, and where to go to learn more about specific reports.
 

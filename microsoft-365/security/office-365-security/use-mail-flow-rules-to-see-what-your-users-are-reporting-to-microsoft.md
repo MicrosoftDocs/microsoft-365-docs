@@ -1,26 +1,32 @@
 ---
-title: "Use mail flow rules to see what your users are reporting to Microsoft"
-f1.keywords:
-- NOCSH
+title: Use mail flow rules to see what your users are reporting to Microsoft
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to use mail flow rules (also known as transport rules) to receive copies of messages that users report to Microsoft."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to use mail flow rules (also known as transport rules) to receive copies of messages that users report to Microsoft.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use mail flow rules to see what your users are reporting to Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, there are multiple ways for users to report messages to Microsoft for analysis as described in [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 

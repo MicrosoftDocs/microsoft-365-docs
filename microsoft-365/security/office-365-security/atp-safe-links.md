@@ -1,36 +1,42 @@
 ---
-title: "Safe Links"
-f1.keywords:
-- NOCSH
+title: Safe Links
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
 ms.article: overview
-f1_keywords:
-- '197503'
-ms.service: O365-seccomp
+f1_keywords: 
+  - '197503'
+
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-search.appverid:
-- MET150
-- MOE150
-- ZVO160
-- ZXL160
-- ZPP160
-- ZWD160
+ms.collection: 
+  - Strat_O365_IP
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+search.appverid: 
+  - MET150
+  - MOE150
+  - ZVO160
+  - ZXL160
+  - ZPP160
+  - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: "In this article, admins can learn about Safe Links protection in Defender for Office 365 to protect their organization from phishing and other attacks that use malicious URLs."
+description: In this article, admins can learn about Safe Links protection in Defender for Office 365 to protect their organization from phishing and other attacks that use malicious URLs.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Safe Links in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](office-365-atp.md). If you're using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -82,7 +88,7 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 
 Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are rewritten using the Microsoft standard URL prefix: `https://nam01.safelinks.protection.outlook.com`. After the link is rewritten, it's analyzed for potentially malicious content.
 
-After Safe Links rewrites a URL, the URL remains rewritten, even if the message is forwarded or replied to. Additional links that are added to the forwarded or replied to message are not rewritten.
+After Safe Links rewrites a URL, the URL remains rewritten even if the message is *manually* forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied to message are not rewritten. However, in the case of *automatic* forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient *unless* that recipient is also protected by Safe Links or the URL had already been rewritten in a previous communication. 
 
 The settings in Safe Links policies that apply to email messages are described in the following list:
 
@@ -246,7 +252,7 @@ You configure the list of URLs in the global settings for Safe Links. For instru
 
 **Notes**:
 
-- For a truly universal list of URLs that are blocked everywhere, see [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md).
+- For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
 - Limits:
   - The maximum number of entries is 500.
@@ -291,7 +297,7 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
   - Microsoft Teams
   - Office web apps
 
-  For a truly universal list of URLs that are allowed everywhere, see [Manage URLs in the Tenant Allow/Block List](tenant-allow-block-list.md).
+  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
 - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
 

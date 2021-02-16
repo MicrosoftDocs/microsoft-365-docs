@@ -1,32 +1,37 @@
 ---
 title: Microsoft Security Guidance - Political campaigns & nonprofits
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: overview
-ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
-- M365-security-compliance
-ms.service: O365-seccomp
+ms.collection: 
+  - Ent_O365
+  - Strat_O365_Enterprise
+  - M365-security-compliance
+
 localization_priority: Priority
-search.appverid:
-- MET150
-ms.custom:
- - Strat_O365_Enterprise
- - seo-marvel-apr2020
+search.appverid: 
+  - MET150
+ms.custom: 
+  - Strat_O365_Enterprise
+  - seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "Summary: Planning and implementation guidance for fast-moving organizations that have an increased threat profile."
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
  **Summary:** Planning and implementation guidance for fast-moving organizations that have an increased threat profile.
 

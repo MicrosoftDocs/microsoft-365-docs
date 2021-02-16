@@ -1,25 +1,31 @@
 ---
-title: "Recover from a ransomware attack"
+title: Recover from a ransomware attack
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.article: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
-description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Microsoft 365 admins can learn how to recover from a ransomware attack.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Recover from a ransomware attack in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are very sophisticated.
 

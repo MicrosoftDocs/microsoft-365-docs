@@ -1,22 +1,27 @@
 ---
-title: "New users forwarding email insight"
-f1.keywords:
-- NOCSH
+title: New users forwarding email insight
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid:
-description: "Admins can learn how to use the New users forwarding email insight in the Security & Compliance Center to investigate when users in their organization are forwarding messages to new domains."
+ms.assetid: 
+description: Admins can learn how to use the New users forwarding email insight in the Security & Compliance Center to investigate when users in their organization are forwarding messages to new domains.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # New users forwarding email insight in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.
 

@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 # Apply Information Rights Management (IRM) to a list or library
 
-You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries.
+You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries. This feature is only supported in the Microsoft global cloud. IRM is not supported for SharePoint lists and libraries in national cloud deployments.
   
 ## Administrator preparations before applying IRM
 
@@ -116,8 +116,6 @@ IRM cannot protect restricted content from the following:
 - Copying through the use of third-party screen-capture programs
     
 - Copying of content metadata (column values) through the use of third-party screen-capture programs or copy-and-paste action
-    
-[Apply Information Rights Management to a list or library](https://support.office.com/article/6714cfe3-ef39-43b0-bb65-a887726bb63c)
   
 ## How IRM works for lists and libraries
 <a name="__toc256598178"> </a>

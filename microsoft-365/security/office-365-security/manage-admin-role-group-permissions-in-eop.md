@@ -1,23 +1,27 @@
 ---
-title: "Manage role groups in EOP"
-f1.keywords:
-- NOCSH
+title: Manage role groups in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
-description: "Admins can learn how to assign or remove permissions in the Exchange admin center (EAC) in Exchange Online Protection."
+description: Admins can learn how to assign or remove permissions in the Exchange admin center (EAC) in Exchange Online Protection.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Manage role groups in standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use the Exchange admin center (EAC) to add users to role groups. Adding a users to a role group gives the user permissions to do specific admin tasks. You can also remove users from role groups.
 
