@@ -149,7 +149,7 @@ Publish metadata-based policies
 
 Now that your app policy is created, you should monitor it on the **Policies** page to ensure it is registering an expected number of active alerts and total alerts during testing. 
 
-\[Placeholder: Screenshot of Policies page with policy and alerts info highlighted]
+![The MAPG policies summary page in the Microsoft 365 Compliance Center with a highlighted policy](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 
 If the number of alerts is an unexpectedly low value, edit the settings of the app policy to ensure you've configured it correctly before setting its status.
 

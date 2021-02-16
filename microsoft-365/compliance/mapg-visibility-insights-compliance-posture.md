@@ -22,7 +22,7 @@ description: "Determine your app compliance posture."
 
 Microsoft Application Protection and Governance (MAPG) allows you to quickly assess the compliance posture of the third-aprty apps and their access to data in your Microsoft 365 tenant from the MAPG Overview page in the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/m365appprotection). 
 
-\[Placeholder for MAPG Overview page screenshot]
+![The MAPG overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
 From this page, you can see:
 

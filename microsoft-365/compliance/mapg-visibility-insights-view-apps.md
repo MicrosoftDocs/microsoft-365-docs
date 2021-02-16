@@ -29,7 +29,7 @@ Microsoft Application Protection and Governance (MAPG) allows you to quickly gai
 
 For a summary of apps in your tenant, go to **Microsoft 365 Compliance Center > App protection & governance > Apps**.
 
-\[Placeholder for MAPG Apps page screenshot]
+![The MAPG app summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
 You will see a list of apps and this information:
 
@@ -54,6 +54,8 @@ You can also select **Search** to search for an app by name.
 ## Getting detailed information on an app
 
 For detailed information on a specific app in your tenant, go to **Microsoft 365 Compliance Center > App protection & governance > Apps page > *app name***.
+
+![The MAPG app details pane in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
 
 The app details pane provides additional information on these tabs:
 

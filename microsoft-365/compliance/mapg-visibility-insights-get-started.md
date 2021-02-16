@@ -22,7 +22,7 @@ description: "Get started with visibility and insights."
 
 The first place to get started is the Microsoft Application Protection and Governance (MAPG) dashboard at [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
 
-\[Placeholder for MAPG Overview page screenshot]
+![The MAPG overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
 Alternatively, you can access the MAPG dashboard from **Microsoft 365 admin center > Microsoft 365 Compliance Center > App protection & governance > Overview page**.
 

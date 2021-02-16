@@ -22,7 +22,7 @@ description: "Get started with app threat detection and remediation."
 
 The first place to view app alerts is the Microsoft Application Protection and Governance (MAPG) dashboard at [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
 
-\[Placeholder for MAPG Overview page screenshot with the Detection and policy alerts section highlighted]
+![The MAPG overview page in the Microsoft 365 Compliance Center with the Detection and policy alerts section highlighted](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 
 On this overview page, the **Detection and policy alerts** section lists the latest alerts. You can use this to quickly see the current app alert activity for your tenant.
 
@@ -32,7 +32,7 @@ To see all of the alerts, select the **Alerts** tab.
 
 The **Alerts** page lists all of the MAPG-based alerts for your tenant.
 
-\[Placeholder for MAPG Alerts page screenshot]
+![The MAPG alerts summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
 
 Each listed alert has the following information:
 

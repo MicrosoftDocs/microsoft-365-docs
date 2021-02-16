@@ -24,7 +24,7 @@ App policies for Microsoft Application Protection and Governance (MAPG) are the 
 
 To see the list of current app policies, go to **Microsoft 365 Compliance Center > App protection & governance > Policies**.
 
-\[Placeholder for MAPG Policies page screenshot]
+![The MAPG policies summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
 ## What’s available in the app policies dashboard
 
