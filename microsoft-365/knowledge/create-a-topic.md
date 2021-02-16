@@ -35,7 +35,19 @@ To create a new topic, you need to:
 > [!Note] 
 > Users who have permission to manage topics in the topic center (knowledge managers) already have permissions to create and edit topics.
 
-## To create a new topic:
+## To create a topic
+
+You can create a new topic from two locations:
+
+- Topic center home page: Any licensed user with the **Who can create or edit topics** permission (contributors) can create a new topic from the topic center by selecting the <b>New</b> menu and select <b>Topic page</b>.</br> 
+
+    ![New topic from topic center](../media/knowledge-management/new-topic.png) </br> 
+
+- Manage topics page:  Any licensed user who has **Who can manage topics** permission (knowledge managers) can create a new topic from the Manage topics page in the Topic Center by selecting <b>New topic page</b>.</br> 
+
+    ![New topic from manage topics](../media/knowledge-management/new-topic-topic-center.png) </br> 
+
+### To create a new topic:
 
 1. In the **Name this topic** section, type the name of the new topic.
 

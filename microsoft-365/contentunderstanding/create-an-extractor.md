@@ -147,3 +147,5 @@ If you receive a match on your labeled sample files, you can now test your model
 [Document Understanding overview](document-understanding-overview.md)
 
 [Apply a model](apply-a-model.md) 
+
+[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
