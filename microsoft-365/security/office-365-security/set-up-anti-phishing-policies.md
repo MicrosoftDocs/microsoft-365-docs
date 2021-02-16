@@ -203,7 +203,7 @@ The following impersonation settings are only available in anti-phishing policie
   - **Unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a protected sender or domain.
 
 
-    > [!IMPORTANT]
+  > [!IMPORTANT]
   >
   > **Recommendation for enabling a safety tip that will appear during the first-time contact between the sender and recipient(s)**:
   > Even when the impersonation safety tips are turned off, **we recommend** that you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** with value **enable** to messages. A safety tip will notify recipients the first time they get a message from the sender or if they don't often get messages from the sender. This capability adds an extra layer of security protection against potential impersonation attacks. 
