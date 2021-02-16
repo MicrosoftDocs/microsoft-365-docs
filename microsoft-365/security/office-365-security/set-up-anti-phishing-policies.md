@@ -205,7 +205,7 @@ The following impersonation settings are only available in anti-phishing policie
 
     > [!IMPORTANT]
   >
-  > **Recommendation for enabling safety tip that will appear based on first time contact between sender and recipient(s)**:
+  > **Recommendation for enabling a safety tip that will appear during the first-time contact between the sender and recipient(s)**:
   > Even when the impersonation safety tips are turned off, **we recommend** that you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** with value **enable** to messages. A safety tip will notify recipients the first time they get a message from the sender or if they don't often get messages from the sender. This capability adds an extra layer of security protection against potential impersonation attacks. 
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="The text of the safety tip for impersonation protection with multiple recipients.":::
 
