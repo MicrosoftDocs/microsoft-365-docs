@@ -33,8 +33,7 @@ Your organization recently got Microsoft 365, and now you need to use it so you 
 
 ****
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/7dbafb22-263b-4544-9774-508728c6e01b?autoplay=false]
-  
+
 ::: moniker-end
 
 ## Training resources for your users
