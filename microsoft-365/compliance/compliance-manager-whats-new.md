@@ -18,7 +18,14 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 # What's new in Microsoft Compliance Manager
 
-**In this article:** Learn about recent and planned updates in Compliance manager, including updated assessments, new assessment templates, new actions, and more.
+**In this article:** Learn about planned and recent updates in Compliance manager, including updated assessments, new assessment templates, new actions, and more.
+
+## Planned updates
+
+Here are some updates in the works for Compliance Manager.
+
+- Support for US Government DoD customers
+- another item...
 
 ## February 2021
 
