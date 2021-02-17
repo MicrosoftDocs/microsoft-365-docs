@@ -29,9 +29,10 @@ Microsoft Managed Desktop has achieved the following certifications:
 - [Cloud Security Alliance (CSA) STAR attestation](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
 - [Cloud Security Alliance (CSA) STAR certification](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [Service Organization Controls (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 - [Health Insurance Portability and Accountability Act (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+- [Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)](https://docs.microsoft.com/en-us/compliance/regulatory/offering-hitrust)
 
 
 ## Auditor reports and compliance certificates
