@@ -44,7 +44,7 @@ Whilst network connectivity can be evaluated across the organization, any networ
 
 ### 1. Enable Windows Location Services
 
-For this option you must have at least two computers running at each office location that support the pre-requisites. OneDrive for Windows version must be up-to-date and installed on each computer. For more information on OneDrive versions, see the [OneDrive release notes](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Network measurements are planned to be added in other Office 365 client applications in the near future.
+For this option, you must have at least two computers running at each office location that support the pre-requisites. OneDrive for Windows version must be up-to-date and installed on each computer. For more information on OneDrive versions, see the [OneDrive release notes](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Network measurements are planned to be added in other Office 365 client applications in the near future.
 
 Windows Location Service must be consented on the machines. You can test this by running the **Maps** app and locating yourself. It can be enabled on a single machine with **Settings | Privacy | Location** where the setting _Allow apps to access your location_ must be enabled. Windows Location Services consent can be deployed to PCs using MDM or Group Policy with the setting _LetAppsAccessLocation_.
 
@@ -56,7 +56,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 ### 2. Add locations and provide LAN subnet information
 
-For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version **20.161** or above installed on each computer at the location.
+For this option, neither Windows Location Services nor Wi-Fi are required. Your OneDrive for Windows version must be up-to-date and installed on each computer at the location.
 
 You also need to add locations in the Admin Center network connectivity page or to import those from a CSV file. The locations added must include your office LAN subnet information.
 
@@ -66,7 +66,7 @@ All test measurements from client machines include the LAN subnet information, w
 
 ### 3. Manually gather test reports with the Microsoft 365 network connectivity test tool
 
-For this option you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine on which they have administrative permissions. On the web site, they need to sign-in to their Office 365 account for the same organization that you want to see the results. Then they should click **Run test**. During the test there is a downloaded Connectivity test EXE. They need to open and execute that also. Once the tests are completed, the test result is uploaded to Office 365.
+For this option, you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine on which they have administrative permissions. On the web site, they need to sign-in to their Office 365 account for the same organization that you want to see the results. Then they should click **Run test**. During the test there is a downloaded Connectivity test EXE. They need to open and execute that also. Once the tests are completed, the test result is uploaded to Office 365.
 
 Test reports are linked to a location if it was added with LAN subnet information, otherwise they are shown at the city location only.
 
