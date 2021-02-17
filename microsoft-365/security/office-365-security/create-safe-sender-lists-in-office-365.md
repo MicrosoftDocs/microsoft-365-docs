@@ -1,27 +1,33 @@
 ---
-title: "Create safe sender lists"
-f1.keywords:
-- NOCSH
+title: Create safe sender lists
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150s
+search.appverid: 
+  - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about the available and preferred options to allow inbound messages in Exchange Online Protection (EOP)."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the available and preferred options to allow inbound messages in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Create safe sender lists in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP offers multiple ways of ensuring that users will receive email from trusted senders. These options include Exchange mail flow rules (also known as transport rules), Outlook Safe Senders, the IP Allow List (connection filtering), and allowed sender lists or allowed domain lists in anti-spam policies. Collectively, you can think of these options as _safe sender lists_.
 
@@ -36,13 +42,13 @@ Mail flow rules allow the most flexibility to ensure that only the right message
 
 > [!IMPORTANT]
 >
-> - Be careful to closely monitor *any* exceptions that you to spam filtering using safe sender lists.
+> - Be careful to closely monitor *any* exceptions that you make to spam filtering using safe sender lists.
 >
-> - While you can use safe sender lists to help with false positives (good email marked as spam), you should consider the use of safe sender lists as a temporary solution that should be avoided if possible. We don't recommend managing false positives by using safe sender lists, because exceptions to spam filtering can open your organization to spoofing and other attacks. If you insist on using safe sender lists to manage false positives, you need to be vigilant and keep the topic [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) at the ready.
+> - While you can use safe sender lists to help with false positives (good email marked as bad), you should consider the use of safe sender lists as a temporary solution that should be avoided if possible. We don't recommend managing false positives by using safe sender lists, because exceptions to spam filtering can open your organization to spoofing and other attacks. If you insist on using safe sender lists to manage false positives, you need to be vigilant and keep the topic [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) at the ready.
 >
 > - To allow a domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and anti-malware checks, you can add it to the [AllowedToSpoof safe sender list](walkthrough-spoof-intelligence-insight.md)
 >
-> - EOP and Outlook inspect different message properties to determine the sender of the message. For more information, see the [Considerations for bulk email](#considerations-for-bulk-email) section later in this topic.
+> - EOP and Outlook inspect different message properties to determine the sender of the message. For more information, see the [Considerations for bulk email](#considerations-for-bulk-email) section later in this article.
 
 In contrast, you also have several options to block email from specific sources using _blocked sender lists_. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
@@ -58,15 +64,15 @@ The following example assumes you need email from contoso.com to skip spam filte
 
    - **Mail flow rule condition**: **A message header** \> **includes any of these words** \> **Header name**: `Authentication-Results` \> **Header value**: `dmarc=pass` or `dmarc=bestguesspass`.
 
-     This condition checks the sender authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md).
+     This condition checks the email authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md).
 
    - **IP Allow List**: Specify the source IP address or address range in the connection filter policy.
-  
-     Use this setting if the sending domain does not have authentication. Be as restrictive as possible when it comes to the source IP addresses in the IP Allow List. We recommend an IP address range of /24 or less (less is better). Do not use IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures.
+
+     Use this setting if the sending domain does not use email authentication. Be as restrictive as possible when it comes to the source IP addresses in the IP Allow List. We recommend an IP address range of /24 or less (less is better). Do not use IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures.
 
    > [!IMPORTANT]
    >
-   > - Never configure configure mail flow rules with *only* the sender domain as the condition to skip spam filtering. Doing so will *significantly* increase the likelihood that attackers can spoof the sending domain (or impersonate the full email address), skip all spam filtering, and skip sender authentication checks so the message will arrive in the recipient's Inbox.
+   > - Never configure mail flow rules with *only* the sender domain as the condition to skip spam filtering. Doing so will *significantly* increase the likelihood that attackers can spoof the sending domain (or impersonate the full email address), skip all spam filtering, and skip sender authentication checks so the message will arrive in the recipient's Inbox.
    >
    > - Do not use domains you own (also known as accepted domains) or popular domains (for example, microsoft.com) as conditions in mail flow rules. Doing so is considered high risk because it creates opportunities for attackers to send email that would otherwise be filtered.
    >
@@ -82,7 +88,7 @@ The following example assumes you need email from contoso.com to skip spam filte
 
    a. **Modify the message properties** \> **set the spam confidence level (SCL)** \> **Bypass spam filtering**.
 
-   b. **A message header** \> **includes any of these words** \> **Header name**: \<CustomHeaderName\> **Header value**: \<CustomHeaderValue\>.
+   b. **Modify the message properties** \> **set a message header**: **Set the message header** \<CustomHeaderName\> **to the value** \<CustomHeaderValue\>.
 
       For example, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. If you have more than one domain in the rule, you can customize the header text as appropriate.
 
@@ -92,9 +98,12 @@ The following example assumes you need email from contoso.com to skip spam filte
 
 ## Use Outlook Safe Senders
 
-Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). This is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender cans still be compromised and can send malicious content. It is best that you let our filters do what is needed to check every message and then [report the false positive/negative to Microsoft](report-junk-email-messages-to-microsoft.md) if our filters got it wrong. Bypassing the filtering stack also interferes with [ZAP](zero-hour-auto-purge.md).
+> [!CAUTION]
+> This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, the user's Safe Senders or Safe Domains lists don't prevent malware or high confidence phishing messages from being filtered.
 
-When messages skip spam filtering due to a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that spam, spoof, and phish filtering were bypassed.
+Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). This is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. It is best that you let our filters do what is needed to check every message and then [report the false positive/negative to Microsoft](report-junk-email-messages-to-microsoft.md) if our filters got it wrong. Bypassing the filtering stack also interferes with [ZAP](zero-hour-auto-purge.md).
+
+When messages skip spam filtering due to a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that filtering for spam, spoof, and phishing were bypassed.
 
 ## Use the IP Allow List
 
@@ -109,17 +118,17 @@ If you can't use mail flow rules as previously described, the next best option i
 - Regularly review the entries in the IP Allow List and remove the entries that you no longer need.
 
 > [!CAUTION]
-> Without additional verification like mail flow rules, email from sources in the IP Allow List skips spam filtering and sender authentication (SPF, DKIM, DMARC) checks. This creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered.
+> Without additional verification like mail flow rules, email from sources in the IP Allow List skips spam filtering and sender authentication (SPF, DKIM, DMARC) checks. This creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, the IP Allow List doesn't prevent malware or high confidence phishing messages from being filtered.
 
 ## Use allowed sender lists or allowed domain lists
 
-The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option *if at all possible* because senders bypass all spam, spoof, and phish protection, and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md) topic.
+The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option *if at all possible* because senders bypass all spam, spoof, and phishing protection, and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md) topic.
 
 The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 
 > [!CAUTION]
 >
-> - This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered.
+> - This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, the allowed senders or allowed domains lists don't prevent malware or high confidence phishing messsages from being filtered.
 >
 > - Do not use domains you own (also known as accepted domains) or popular domains (for example, microsoft.com) in allowed domain lists.
 

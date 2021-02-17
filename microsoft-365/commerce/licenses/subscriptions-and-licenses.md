@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,7 +14,7 @@ ms.collection:
 - Adm_TOC
 - commerce
 ms.custom: 
-- okr_SMB
+- okr_smb
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid:

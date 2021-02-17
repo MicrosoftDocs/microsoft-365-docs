@@ -1,46 +1,54 @@
 ---
-title: "Attack Simulator in ATP"
-f1.keywords:
-- NOCSH
+title: Attack Simulator in Microsoft Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use Attack Simulator to run simulated phishing and password attacks in their Microsoft 365 E5 or ATP Plan 2 organizations."
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use Attack Simulator to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
-# Attack Simulator in ATP
+# Attack Simulator in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+ [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
-If your organization has Office 365 Advanced Threat Protection (ATP) Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
+If your organization has Microsoft Defender for Office 365 Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
 > [!NOTE]
-> Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
+> Attack Simulator v1 experience has been switched to read-only mode and replaced by Attack simulator training that's described in [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+> The ability to launch new simulations from this site has been disabled. However, you can still access reports for simulations run for a period of 90 days from January 24, 2021.
 
 ## What do you need to know before you begin?
 
 - To open the Security & Compliance Center, go to <https://protection.office.com/>. Attack simulator is available at **Threat management** \> **Attack simulator**. Go go directly to attack simulator, open <https://protection.office.com/attacksimulator>.
 
-- For more information about the availability of Attack Simulator across different Microsoft 365 subscriptions, see [Office 365 Advanced Threat Protection service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- For more information about the availability of Attack Simulator across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be a member of the **Organization Management** or **Security Administrator** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Your account needs to be configured for multi-factor authentication (MFA) to create and manage campaigns in Attack Simulator. For instructions, see [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 - Phishing campaigns will collect and process events for 30 days. Historical campaign data will be available for up to 90 days after you launch the campaign.
+
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
 
 - There are no corresponding PowerShell cmdlets for Attack Simulator.
 
@@ -110,9 +118,7 @@ If you're going to use one of the built-in templates or create the email message
 
      > [!NOTE]
      >
-     > - All of the URLs are intentionally http, not https.
-     >
-     > - A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.
+     > A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.
 
    - **Custom Landing Page URL**: Enter an optional landing page where users are taken if they click the phishing link and enter their credentials. This link replaces the default landing page. For example, if you have internal awareness training, you can specify that URL here.
 
@@ -150,7 +156,8 @@ If you're going to use one of the built-in templates or create the email message
 
    - Click **Use Template** and select a built-in or custom email template. After you select the template, the **Name** box is automatically filled based on the template, but you can change the name.
 
-   ![Phishing Start Page](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Phishing Start Page](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    When you're finished, click **Next**.
 
@@ -213,7 +220,8 @@ If you're going to use one of the built-in templates or create the email message
 
    For **Spear Phishing (Attachment)** campaigns, you should remove the link from the body of the message (otherwise, the message will contain both a link **and** an attachment, and link clicks aren't tracked in an attachment campaign).
 
-   ![Compose Email Body](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Compose Email Body](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    When you're finished, click **Next**.
 

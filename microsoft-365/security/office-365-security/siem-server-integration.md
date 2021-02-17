@@ -1,28 +1,34 @@
 ---
 title: SIEM server integration with Microsoft 365 services and applications
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 11/18/2019
-ms.service: O365-seccomp
+
 localization_priority: Normal
-ms.collection:
-- M365-security-compliance
-ms.custom:
- - Ent_Solutions
- - SIEM
- - seo-marvel-apr2020
-description: "Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications"
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - Ent_Solutions
+  - SIEM
+  - seo-marvel-apr2020
+description: Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Security Information and Event Management (SIEM) server integration with Microsoft 365 services and applications
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 ## Summary
 
@@ -47,13 +53,13 @@ A SIEM server can receive data from a wide variety of Microsoft 365 services and
 
 |Microsoft 365 Service or Application|SIEM server inputs/methods|Resources to learn more|
 |---|---|---|
-|[Office 365 Advanced Threat Protection](office-365-atp.md)|Audit logs|[SIEM integration with Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS endpoint hosted in Azure <br/>REST API|[Pull alerts to your SIEM tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender for Office 365](office-365-atp.md)|Audit logs|[SIEM integration with Microsoft Defender for Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS endpoint hosted in Azure <p> REST API|[Pull alerts to your SIEM tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Log integration|[SIEM integration with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 
 > [!TIP]
-> Take a look at [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel comes with connectors for Microsoft solutions. These connectors are available "out of the box" and provide for real-time integration. You can use Azure Sentinel with your Microsoft Threat Protection solutions and Microsoft 365 services, including Office 365, Azure AD, Azure ATP, Microsoft Cloud App Security, and more.
+> Take a look at [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel comes with connectors for Microsoft solutions. These connectors are available "out of the box" and provide for real-time integration. You can use Azure Sentinel with your Microsoft 365 Defender solutions and Microsoft 365 services, including Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security, and more.
 
 ### Audit logging must be turned on
 
@@ -65,6 +71,6 @@ Make sure that audit logging is turned on before you configure SIEM server integ
 
 ## More resources
 
-[Integrate security solutions in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Integrate security solutions in Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Integrate Microsoft Graph Security API alerts with a SIEM](https://docs.microsoft.com/graph/security-integration)

@@ -1,21 +1,23 @@
-﻿---
+---
 title: "Collaborating with people outside your organization"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-- m365solution-3tiersprotection
 - m365solution-securecollab
+- m365solution-scenario
+- m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Configure Microsoft 365 to enable sharing and additional security when you invite external users to collaborate in Teams and share Sharepoint sites."
+description: Learn how to configure Microsoft 365 apps like Teams, OneDrive, and SharePoint for collaboration with people outside your organization.
 ---
 
 # Collaborating with people outside your organization
@@ -29,7 +31,7 @@ Collaborating with people outside your organization consists of two major compon
 
 ## Enable sharing
 
-By default, in Microsoft 365, sharing with people outside your organization is enabled for SharePoint and OneDrive, but disabled for Teams. Many SharePoint and OneDrive external sharing scenarios work without further configuration. To confirm the settings for a scenario that you're using, or enable a new one, choose from the following options:
+By default, in Microsoft 365, sharing with people outside your organization is enabled. Many external sharing scenarios work without further configuration. To confirm the settings for a scenario that you're using, or enable a new one, choose from the following options:
 
 - [Collaborate on documents](collaborate-on-documents.md) - Learn how to configure Microsoft 365 to allow sharing and collaboration with people outside your organization (both guests and unauthenticated users) on files and folders.
 - [Collaborate in a site](collaborate-in-site.md) - Learn how to configure Microsoft 365 to enable sharing SharePoint sites with guests.

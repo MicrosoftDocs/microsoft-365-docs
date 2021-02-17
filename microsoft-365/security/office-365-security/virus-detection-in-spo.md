@@ -1,29 +1,35 @@
 ---
-title: "Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams"
-f1.keywords:
-- NOCSH
+title: Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: reference
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- SPO160
-- MOE150
-- MET150
+search.appverid: 
+  - SPO160
+  - MOE150
+  - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
 description: Learn about how SharePoint Online detects viruses in files that users upload and prevents users from downloading or syncing the files.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 Microsoft 365 uses a common virus detection engine for scanning files that users upload to SharePoint Online, OneDrive, and Microsoft Teams. This protection is included with all subscriptions that include SharePoint Online, OneDrive, and Microsoft Teams.
 
@@ -60,10 +66,12 @@ Here's what happens:
 
 OneDrive sync clients will not download files that contain viruses. The sync client will display a notification that the file can't be synced.
 
-## Extended capabilities with Office 365 Advanced Threat Protection
+## Extended capabilities with Microsoft Defender for Office 365
 
-Microsoft 365 organizations that have [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) included in their subscription or purchased as an add-on can enable ATP for SharePoint, OneDrive, and Microsoft Teams for enhanced reporting and protection. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](office-365-atp.md) included in their subscription or purchased as an add-on can enable Safe Attachments for SharePoint, OneDrive, and Microsoft Teams for enhanced reporting and protection. For more information, see [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-## More information
+## Related Articles
 
-For more information about anti-virus in SharePoint Online, OneDrive, and Microsoft Teams, see [Protect against threats](protect-against-threats.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+[Malware and ransomware protection in Microsoft 365](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)
+
+For more information about anti-virus in SharePoint Online, OneDrive, and Microsoft Teams, see [Protect against threats](protect-against-threats.md) and [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).

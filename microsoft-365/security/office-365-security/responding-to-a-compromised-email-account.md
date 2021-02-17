@@ -1,29 +1,35 @@
 ---
-title: "Responding to a Compromised Email Account"
-f1.keywords:
-- NOCSH
+title: Responding to a Compromised Email Account
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.collection:
-- o365_security_incident_response
-- M365-security-compliance
-- m365solution-smb
+ms.collection: 
+  - o365_security_incident_response
+  - M365-security-compliance
+  - m365solution-smb
 ms.custom: 
- - TopSMBIssues
- - seo-marvel-apr2020
-ms.service: O365-seccomp
+  - TopSMBIssues
+  - seo-marvel-apr2020
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 # Responding to a Compromised Email Account
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.
 
@@ -75,7 +81,7 @@ If a user reports any of the above symptoms, you should perform further investig
 
 Even after you've regained access to your account, the attacker may have added back-door entries that enable the attacker to resume control of the account.
 
-You must perform all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account. These steps help you remove any back-door entries that the hijacker may have added to your account. After you perform these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.
+You must do all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account. These steps help you remove any back-door entries that the hijacker may have added to your account. After you do these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.
 
 ### Step 1 Reset the user's password
 
@@ -175,7 +181,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 1. Make sure that you verify your sent items. You may have to inform people on your contacts list that your account was compromised. The attacker may have asked them for money, spoofing, for example, that you were stranded in a different country and needed money, or the attacker may send them a virus to also hijack their computers.
 
-2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, perform these steps for your Microsoft 365 subscription, and then perform these steps for your other accounts.
+2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, do these steps for your Microsoft 365 subscription, and then do these steps for your other accounts.
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
 

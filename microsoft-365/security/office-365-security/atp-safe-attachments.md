@@ -1,51 +1,58 @@
 ---
-title: "Safe Attachments"
-f1.keywords:
-- NOCSH
+title: Safe Attachments
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date:
+ms.date: 
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
-ms.collection:
-- M365-security-compliance
-- seo-marvel-apr2020
-description: "Admins can learn about the Safe Attachments feature in Office 365 Advanced Threat Protection (ATP)."
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  - seo-marvel-apr2020
+description: Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
-# Safe Attachments in Office 365 ATP
+# Safe Attachments in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Safe Attachments in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Safe Attachments protection for email messages is controlled by Safe Attachments policies. There is no default Safe Attachments policy, **so to get the protection of Safe Attachments, you need to create one or more Safe Attachments policies**. For instructions, see [Set up Safe Attachments policies in ATP](set-up-atp-safe-attachments-policies.md).
+Safe Attachments in [Microsoft Defender for Office 365](office-365-atp.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
 
-The following table describes scenarios for Safe Attachments in Microsoft 365 and Office 365 organizations that include ATP (in other words, lack of licensing is never an issue in the examples).
+Safe Attachments protection for email messages is controlled by Safe Attachments policies. There is no default Safe Attachments policy, **so to get the protection of Safe Attachments, you need to create one or more Safe Attachments policies**. For instructions, see [Set up Safe Attachments policies in Defender for Office 365](set-up-atp-safe-attachments-policies.md).
+
+The following table describes scenarios for Safe Attachments in Microsoft 365 and Office 365 organizations that include Microsoft Defender for Office 365 (in other words, lack of licensing is never an issue in the examples).
 
 ****
 
 |Scenario|Result|
 |---|---|
-|Pat's Microsoft 365 E5 organization has no Safe Attachments policies configured.|Pat is not protected by Safe Attachments. <br/><br/> An admin must create at least one Safe Attachments policy for Safe Attachments protection to be active. Furthermore, the conditions of the policy must include Pat if Pat is to be protected by Safe Attachments.|
-|Lee's organization has a Safe Attachments policy that applies only to finance employees. Lee is a member of the sales department.|Lee is not protected by Safe Attachments. <br/><br/> Finance employees are protected by Safe Attachments, but sales employees (and other employees) are not.|
-|Yesterday, an admin in Jean's organization created a Safe Attachments policy that applies to all employees. Earlier today, Jean received an email message that included an attachment.|Jean is protected by Safe Attachments. <br/><br/> Typically, it takes about 30 minutes for a new policy to take effect.|
-|Chris's organization has long-standing Safe Attachments policies for everyone in the organization. Chris receives an email that has an attachment, and then forwards the message to external recipients.|Chis is protected by Safe Attachments. <br/><br/> If the external recipients also have Safe Attachments policies in their organization, then the forwarded messages are subject to those policies.|
+|Pat's Microsoft 365 E5 organization has no Safe Attachments policies configured.|Pat is not protected by Safe Attachments. <p> An admin must create at least one Safe Attachments policy for Safe Attachments protection to be active. Furthermore, the conditions of the policy must include Pat if Pat is to be protected by Safe Attachments.|
+|Lee's organization has a Safe Attachments policy that applies only to finance employees. Lee is a member of the sales department.|Lee is not protected by Safe Attachments. <p> Finance employees are protected by Safe Attachments, but sales employees (and other employees) are not.|
+|Yesterday, an admin in Jean's organization created a Safe Attachments policy that applies to all employees. Earlier today, Jean received an email message that included an attachment.|Jean is protected by Safe Attachments. <p> Typically, it takes about 30 minutes for a new policy to take effect.|
+|Chris's organization has long-standing Safe Attachments policies for everyone in the organization. Chris receives an email that has an attachment, and then forwards the message to external recipients.|Chis is protected by Safe Attachments. <p> If the external recipients also have Safe Attachments policies in their organization, then the forwarded messages are subject to those policies.|
 |
 
 Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about datacenter geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> The following features are located in the global settings are of Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require Safe Attachments policies:
+> The following features are located in the global settings of Safe Attachments policies in the Security & Compliance Center. But, these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
-> - [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+> - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 >
 > - [Safe Documents in Microsoft 365 E5](safe-docs.md)
 
@@ -59,11 +66,11 @@ This section describes the settings in Safe Attachments policies:
 
   |Option|Effect|Use when you want to:|
   |---|---|---|
-  |**Off**|Attachments aren't scanned for malware by Safe Attachments. Messages are still scanned for malware by [anti-malware protection in EOP](anti-malware-protection.md).|Turn scanning off for selected recipients. <br/><br/> Prevent unnecessary delays in routing internal mail. <br/><br/> **This option is not recommended for most users. You should only use this option to turn off Safe Attachments scanning for recipients who only receive messages from trusted senders.**|
-  |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|See where detected malware goes in your organization.|
-  |**Block**|Prevents messages with detected malware attachments from being delivered. <br/><br/> Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <br/><br/> Automatically blocks future instances of the messages and attachments. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <br/><br/> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
-  |**Replace**|Removes detected malware attachments. <br/><br/> Notifies recipients that attachments have been removed. <br/><br/>  Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
-  |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <br/><br/> For details, see the [Dynamic Delivery in Safe Attachments policies](#dynamic-delivery-in-safe-attachments-policies) section later in this topic.|Avoid message delays while protecting recipients from malicious files <br/> <br/> Enable recipients to preview attachments in safe mode while scanning is taking place|
+  |**Off**|Attachments aren't scanned for malware by Safe Attachments. Messages are still scanned for malware by [anti-malware protection in EOP](anti-malware-protection.md).|Turn scanning off for selected recipients. <p> Prevent unnecessary delays in routing internal mail. <p> **This option is not recommended for most users. You should only use this option to turn off Safe Attachments scanning for recipients who only receive messages from trusted senders.**|
+  |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|See where detected malware goes in your organization.|
+  |**Block**|Prevents messages with detected malware attachments from being delivered. <p> Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <p> Automatically blocks future instances of the messages and attachments. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <p> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
+  |**Replace**|Removes detected malware attachments. <p> Notifies recipients that attachments have been removed. <p>  Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
+  |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <p> For details, see the [Dynamic Delivery in Safe Attachments policies](#dynamic-delivery-in-safe-attachments-policies) section later in this article.|Avoid message delays while protecting recipients from malicious files. <p> Enable recipients to preview attachments in safe mode while scanning is taking place.|
   |
 
 - **Redirect attachment on detection: Enable redirect** and **Send the attachment to the following email address**: For **Block**, **Monitor**, or **Replace** actions, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
@@ -119,7 +126,7 @@ There are scenarios where Dynamic Delivery is unable to replace attachments in m
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
 
-- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the [global settings for Safe Links](configure-global-settings-for-safe-links.md) are configured).
+- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the [global settings for Safe Links](configure-global-settings-for-safe-links.md) are configured).
 
 ## Submitting files for malware analysis
 

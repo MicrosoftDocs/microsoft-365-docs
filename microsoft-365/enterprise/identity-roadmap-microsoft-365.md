@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom:
 description: The roadmap to identity for Microsoft 365.
 ---
@@ -55,10 +55,10 @@ To deploy your identity implementation:
 
 ### Identity and device access recommendations
 
-To help ensure a secure and productive workforce, Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md). For identity, use the recommendations and settings in these articles:
+To help ensure a secure and productive workforce, Microsoft provides a set of recommendations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md). For identity, use the recommendations and settings in these articles:
 
-- [Prerequisites](identity-access-prerequisites.md)
-- [Common identity and device access policies](identity-access-policies.md)
+- [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
+- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 
 ## Manage
 

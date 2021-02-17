@@ -12,6 +12,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -42,12 +44,7 @@ Data classification will scan your sensitive content and labeled content before 
 
 ## Prerequisites
 
-Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
-
-- Microsoft 365 (E5/A5)
-- Office 365 (E5)
-- Advanced Compliance (E5) add-on
-- Advanced Threat Intelligence (E5) add-on
+A number of different subscriptions support Endpoint DLP. To see licensing options for Endpoint DLP see [Information Protection licensing for guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
 ### Permissions
 

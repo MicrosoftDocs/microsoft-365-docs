@@ -1,30 +1,36 @@
 ---
-title: "Outbound spam protection"
-f1.keywords:
-- NOCSH
+title: Outbound spam protection
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about the outbound spam controls in Exchange Online Protection (EOP), and what to do if you need to send mass mailings."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the outbound spam controls in Exchange Online Protection (EOP), and what to do if you need to send mass mailings.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Outbound spam protection in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, we take managing outbound spam seriously. One customer who intentionally or unintentionally sends spam from their organization can degrade the reputation of the whole service, and can affect email delivery for other customers.
 

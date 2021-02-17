@@ -1,25 +1,29 @@
 ---
-title: "Configure anti-phishing policies in EOP"
-f1.keywords:
-- NOCSH
+title: Configure anti-phishing policies in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
-ms.service: O365-seccomp
+ms.date: 
+
 localization_priority: Normal
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to create, modify, and delete the anti-phishing policies that are available in Exchange Online Protection (EOP) organizations with or without Exchange Online mailboxes."
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to create, modify, and delete the anti-phishing policies that are available in Exchange Online Protection (EOP) organizations with or without Exchange Online mailboxes.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure anti-phishing policies in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, there's a default anti-phishing policy that contains a limited number of anti-spoofing features that are enabled by default. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
@@ -27,7 +31,7 @@ Admins can view, edit, and configure (but not delete) the default anti-phishing 
 
 Organizations with Exchange Online mailboxes can configure anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell. Standalone EOP organizations can only use the Security & Compliance Center.
 
-For information about creating and modifying the more advanced ATP anti-phishing policies that are available in Office 365 Advanced Threat Protection (Office 365 ATP), see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
+For information about creating and modifying the more advanced anti-phishing policies in Microsoft Defender for Office 365 that are available in Defender for Office 365, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 The basic elements of an anti-phishing policy are:
 
@@ -58,17 +62,17 @@ To increase the effectiveness of anti-phishing protection, you can create custom
 
   You can't manage anti-phishing policies in standalone EOP PowerShell.
 
-- You need to be assigned permissions before you can do the procedures in this article:
+- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+  - To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - For read-only access to anti-phishing policies, you need to be a member of the **Global Reader** or **Security Reader** role groups<sup>\*</sup>.
 
-  - To add, modify, and delete anti-phishing policies, you need to be a member of one of the following role groups:
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Notes**:
 
-  - For read-only access to anti-phishing policies, you need to be a member of one of the following role groups:
-
-    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature<sup>\*</sup>.
+  - <sup>\*</sup> In the Security & Compliance Center, read-only access allows users to view the settings of custom anti-phishing policies. Read-only users can't see the settings in the default anti-phishing policy.
 
 - To create and modify anti-phishing policies in standalone EOP, you need to do something that requires _hydration_ for your tenant. For example, in the Exchange admin center (EAC), you can go to the **Permissions** tab, select an existing role group, click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and remove a role (which you'll ultimately add back). If your tenant has never been hydrated, you get a dialog named **Update Organization Settings** with a progress bar that should complete successfully. For more information about hydration, see the [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) cmdlet (which isn't available in standalone EOP PowerShell or in the Security & Compliance Center).
 
@@ -153,7 +157,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
 5. **Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-   Note that these same settings are also available in ATP anti-phishing policies.
+   Note that these same settings are also available in anti-phishing policies in Defender for Office 365.
 
    - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
 
@@ -301,7 +305,7 @@ Creating an anti-phishing policy in PowerShell is a two-step process:
 To create an anti-phish policy, use this syntax:
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableAntiSpoofEnforcement <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
 This example creates an anti-phish policy named Research Quarantine with the following settings:
@@ -503,7 +507,7 @@ For detailed syntax and parameter information, see [Remove-AntiPhishRule](https:
 
 ## How do you know these procedures worked?
 
-To verify that you've successfully configured ATP anti-phishing policies, do any of the following steps:
+To verify that you've successfully configured anti-phishing policies in Microsoft Defender for Office 365, do any of the following steps:
 
 - In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details do either of the following steps:
 

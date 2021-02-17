@@ -1,23 +1,27 @@
 ---
-title: "Feature permissions in EOP"
-f1.keywords:
-- NOCSH
+title: Feature permissions in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
-description: "Learn about the permission that are required for tasks in standalone Exchange Online Protection"
+description: Learn about the permission that are required for tasks in standalone Exchange Online Protection
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Permissions in standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Standalone Exchange Online Protection (EOP) without Exchange Online mailboxes uses the Role Based Access Control (RBAC) permissions model to easily grant permissions to your admins. You can use the permission features in standalone EOP to get your new organization up and running quickly.
 
@@ -45,20 +49,20 @@ The available role groups in standalone EOP are described in the following table
 
 |Role group|Description|Default roles assigned|
 |---|---|---|
-|ComplianceManagement|Configure and manage compliance settings within the organization, including data loss prevention (DLP) if your subscription has DLP capabilities. <br/><br/> Members of the [Compliance Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) role in Azure AD automatically get the permissions of this role group.|Audit Logs <br/><br/> Compliance Administration <br/><br/> Information Rights Management <br/><br/> Retention Management <br/><br/> View-Only Audit Logs <br/><br/> View-Only Configuration <br/><br/> View-Only Recipients|
+|ComplianceManagement|Configure and manage compliance settings within the organization, including data loss prevention (DLP) if your subscription has DLP capabilities. <p> Members of the [Compliance Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) role in Azure AD automatically get the permissions of this role group.|Audit Logs <p> Compliance Administration <p> Information Rights Management <p> Retention Management <p> View-Only Audit Logs <p> View-Only Configuration <p> View-Only Recipients|
 |ContentExplorerContentViewer|Not used.|Data Classification Content Viewer|
 |ContentExplorerListViewer|Not used.|Data Classification List Viewer|
-|HelpDesk|View and manage mail users.|Reset Password <br/><br/> User Options <br/><br/> View-Only Recipients|
-|HygieneManagement|Manage protection features (anti-spam, anti-malware, etc.).|Transport Hygiene <br/><br/> View-Only Configuration <br/><br/> View-Only Recipients|
-|MailFlowAdministrator|View and manage accepted domains and connectors|Remote and Accepted Domains <br/><br/> View-Only Recipients|
-|OrganizationManagement|Admin access to the entire organization and the ability to perform almost any task. <br/><br/> Members of the [Global Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) role in Azure AD automatically get the permissions of this role group. <br/><br/> **Important**: Because the OrganizationManagement role group is a powerful role, only users that perform organizational-level administrative tasks should be members of this role group.|AntiMalware <br/><br/> AntiSpam <br/><br/> Audit Logs <br/><br/> Compliance Administrator <br/><br/> Distribution Groups <br/><br/> Information Rights Management <br/><br/> Mail Recipient Creation <br/><br/> Mail Recipients <br/><br/> Message Tracking <br/><br/> Migration <br/><br/> Organization Client Access <br/><br/> Organization Configuration <br/><br/> Organization Transport Settings <br/><br/> Quarantine <br/><br/> Recipient Policies <br/><br/> Remote and Accepted Domains <br/><br/> Reset Password <br/><br/> Retention Management <br/><br/> Role Management <br/><br/> Security Administrator <br/><br/> Security Group Creation and Membership <br/><br/> Security Reader <br/><br/> Sensitivity Label Administrator <br/><br/> Supervision <br/><br/> Transport Hygiene <br/><br/> Transport Rules <br/><br/> User Options <br/><br/> View-Only AntiMalware <br/><br/> View-Only AntiSpam <br/><br/> View-Only Audit Logs <br/><br/> View-Only Configuration <br/><br/> View-Only Quarantine <br/><br/> View-Only Recipients <br/><br/> View-Only Threat Intelligence|
+|HelpDesk|View and manage mail users.|Reset Password <p> User Options <p> View-Only Recipients|
+|HygieneManagement|Manage protection features (anti-spam, anti-malware, etc.).|Transport Hygiene <p> View-Only Configuration <p> View-Only Recipients|
+|MailFlowAdministrator|View and manage accepted domains and connectors|Remote and Accepted Domains <p> View-Only Recipients|
+|OrganizationManagement|Admin access to the entire organization and the ability to perform almost any task. <p> Members of the [Global Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) role in Azure AD automatically get the permissions of this role group. <p> **Important**: Because the OrganizationManagement role group is a powerful role, only users that perform organizational-level administrative tasks should be members of this role group.|AntiMalware <p> AntiSpam <p> Audit Logs <p> Compliance Administrator <p> Distribution Groups <p> Information Rights Management <p> Mail Recipient Creation <p> Mail Recipients <p> Message Tracking <p> Migration <p> Organization Client Access <p> Organization Configuration <p> Organization Transport Settings <p> Quarantine <p> Recipient Policies <p> Remote and Accepted Domains <p> Reset Password <p> Retention Management <p> Role Management <p> Security Administrator <p> Security Group Creation and Membership <p> Security Reader <p> Sensitivity Label Administrator <p> Supervision <p> Transport Hygiene <p> Transport Rules <p> User Options <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only Audit Logs <p> View-Only Configuration <p> View-Only Quarantine <p> View-Only Recipients <p> View-Only Threat Intelligence|
 |QuarantineAdministrator|Manage quarantined messages for all recipients.|Quarantine|
-|RecipientManagement|Create, manage, and remove recipient objects in the organization.|Distribution Groups <br/><br/> Mail Recipient Creation <br/><br/> Mail Recipients <br/><br/> Message Tracking <br/><br/> Migration <br/><br/> Recipient Policies <br/><br/> Reset Password|
-|RecordsManagement|Configure compliance features, such as retention policy tags, message classifications, and mail flow rules (also known as transport rules).|Message Tracking <br/><br/> Retention Management <br/><br/> Transport Rules|
-|SecurityAdministrator|Configure all aspects of protection in the organization (anti-spam, anti-malware, anti-spoofing, quarantine, etc.). <br/><br/> Members of the [Security Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) role in Azure AD automatically get the permissions of this role group.|AntiMalware <br/><br/> AntiSpam <br/><br/> Audit Logs <br/><br/> Quarantine <br/><br/> Security Administrator <br/><br/> Sensitivity Label Administrator <br/><br/> View-Only AntiMalware <br/><br/> View-Only AntiSpam <br/><br/> View-Only Audit Logs <br/><br/> View-Only Quarantine <br/><br/> View-Only Threat Intelligence|
-|SecurityReader|View-only access to all aspects of protection in the organization (anti-spam, anti-malware, anti-spoofing, quarantine, etc.). <br/><br/> Members of the [Security Reader](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) role in Azure AD automatically get the permissions of this role group.|Security Reader <br/><br/> View-Only AntiMalware <br/><br/> View-Only AntiSpam <br/><br/> View-Only Quarantine <br/><br/> View-Only Threat Intelligence|
+|RecipientManagement|Create, manage, and remove recipient objects in the organization.|Distribution Groups <p> Mail Recipient Creation <p> Mail Recipients <p> Message Tracking <p> Migration <p> Recipient Policies <p> Reset Password|
+|RecordsManagement|Configure compliance features, such as retention policy tags, message classifications, and mail flow rules (also known as transport rules).|Message Tracking <p> Retention Management <p> Transport Rules|
+|SecurityAdministrator|Configure all aspects of protection in the organization (anti-spam, anti-malware, anti-spoofing, quarantine, etc.). <p> Members of the [Security Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) role in Azure AD automatically get the permissions of this role group.|AntiMalware <p> AntiSpam <p> Audit Logs <p> Quarantine <p> Security Administrator <p> Sensitivity Label Administrator <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only Audit Logs <p> View-Only Quarantine <p> View-Only Threat Intelligence|
+|SecurityReader|View-only access to all aspects of protection in the organization (anti-spam, anti-malware, anti-spoofing, quarantine, etc.). <p> Members of the [Security Reader](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) role in Azure AD automatically get the permissions of this role group.|Security Reader <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only Quarantine <p> View-Only Threat Intelligence|
 |TenantAdmins|Membership in this role group is synchronized across services and managed centrally. By default, this role group is not assigned any roles. However, it will be a member of the Organization Management role group and will inherit those permissions.|none|
-|ViewOnlyOrganizationManagement|View recipient, protection, and configuration objects and their properties in the organization.|Compliance Administrator <br/><br/> Security Administrator <br/><br/> Security Reader <br/><br/> Sensitivity Label Administrator <br/><br/> View-Only Configuration <br/><br/> View-Only Recipients|
+|ViewOnlyOrganizationManagement|View recipient, protection, and configuration objects and their properties in the organization.|Compliance Administrator <p> Security Administrator <p> Security Reader <p> Sensitivity Label Administrator <p> View-Only Configuration <p> View-Only Recipients|
 |
 
 If you work in a small organization that has only a few admins, you might need to add those users to the Organization Management role group only, and you may never need to use the other role groups. If you work in a larger organization, you might have admins who perform specific tasks, such as recipient configuration. In those cases, you might add one admin to the Recipient Management role group, and another admin to the Organization Management role group. Those admins can then manage their specific areas, but they won't have permissions to manage areas they're not responsible for.
@@ -73,43 +77,43 @@ The built-in roles that are available in standalone EOP are described in the fol
 
 |Role**|Description|Default role group assignments|
 |---|---|---|
-|AntiMalware|View and modify the configuration and reports for anti-malware features.|OrganizationManagement <br/><br/> SecurityAdministrator|
-|AntiSpam|View and modify the configuration and reports for anti-spam features.|OrganizationManagement <br/><br/> SecurityAdministrator|
-|Audit Logs|Search the administrator audit log and view the results.|ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> SecurityAdministrator|
-|Compliance Administrator<sup>\*</sup>||ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> ViewOnlyOrganizationManagement|
+|AntiMalware|View and modify the configuration and reports for anti-malware features.|OrganizationManagement <p> SecurityAdministrator|
+|AntiSpam|View and modify the configuration and reports for anti-spam features.|OrganizationManagement <p> SecurityAdministrator|
+|Audit Logs|Search the administrator audit log and view the results.|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
+|Compliance Administrator<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement <p> ViewOnlyOrganizationManagement|
 |Data Classification Content Viewer<sup>\*</sup>||ContentExplorerContentViewer|
 |Data Classification List Viewer<sup>\*</sup>||
-|Distribution Groups|Create and manage all distribution groups, mail-enabled security groups, and members.|OrganizationManagement <br/><br/> RecipientManagement|
-|Information Rights Management<sup>\*</sup>||ComplianceManagement <br/><br/> OrganizationManagement|
-|Mail Recipient Creation|Create and remove mail users.|OrganizationManagement <br/><br/> RecipientManagement|
-|Mail Recipients|Modify existing mail users.|OrganizationManagement <br/><br/> RecipientManagement|
-|Message Tracking<sup>\*</sup>||OrganizationManagement <br/><br/> RecipientManagement <br/><br/> Records Management|
-|Migration<sup>\*</sup>||OrganizationManagement <br/><br/> RecipientManagement|
-|MyBaseOptions|Allows users to view their own quarantined messages. <br/><br/> This role is automatically assigned to users, and you can't assign it manually.|none|
+|Distribution Groups|Create and manage all distribution groups, mail-enabled security groups, and members.|OrganizationManagement <p> RecipientManagement|
+|Information Rights Management<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement|
+|Mail Recipient Creation|Create and remove mail users.|OrganizationManagement <p> RecipientManagement|
+|Mail Recipients|Modify existing mail users.|OrganizationManagement <p> RecipientManagement|
+|Message Tracking<sup>\*</sup>||OrganizationManagement <p> RecipientManagement <p> Records Management|
+|Migration<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
+|MyBaseOptions|Allows users to view their own quarantined messages. <p> This role is automatically assigned to users, and you can't assign it manually.|none|
 |Organization Client Access<sup>\*</sup>||OrganizationManagement|
 |Organization Configuration|View reports.|OrganizationManagement|
 |Organization Transport Settings<sup>\*</sup>||OrganizationManagement|
-|Quarantine|Manage all types of quarantined message for all recipients.|OrganizationManagement <br/><br/> QuarantineAdministrator <br/><br/> SecurityAdministrator|
-|Recipient Policies<sup>\*</sup>||OrganizationManagement <br/><br/> RecipientManagement|
-|Remote and Accepted Domains|Manage remote domains, accepted domains, and connectors.|MailFlowAdministrator <br/><br/> OrganizationManagement|
-|Reset Password<sup>\*</sup>||HelpDesk <br/><br/> OrganizationManagement <br/><br/> RecipientManagement|
-|Retention Management<sup>\*</sup>||ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> RecordsManagement|
+|Quarantine|Manage all types of quarantined message for all recipients.|OrganizationManagement <p> QuarantineAdministrator <p> SecurityAdministrator|
+|Recipient Policies<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
+|Remote and Accepted Domains|Manage remote domains, accepted domains, and connectors.|MailFlowAdministrator <p> OrganizationManagement|
+|Reset Password<sup>\*</sup>||HelpDesk <p> OrganizationManagement <p> RecipientManagement|
+|Retention Management<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement <p> RecordsManagement|
 |Role Management|Create and manage role groups.|OrganizationManagement|
-|Security Administrator|Manage the configuration and reports for all security and protection features.|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> ViewOnlyOrganizationManagement|
+|Security Administrator|Manage the configuration and reports for all security and protection features.|OrganizationManagement <p> SecurityAdministrator <p> ViewOnlyOrganizationManagement|
 |Security Group Creation and Membership|Create and manage mail-enabled security groups.|OrganizationManagement|
-|Security Reader|View the configuration and reports for security and protection features.|Organization Management <br/><br/> SecurityReader <br/><br/> ViewOnlyOrganizationManagement|
-|Sensitivity Label Administrator<sup>\*</sup>||OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> ViewOnlyOrganizationManagement|
+|Security Reader|View the configuration and reports for security and protection features.|Organization Management <p> SecurityReader <p> ViewOnlyOrganizationManagement|
+|Sensitivity Label Administrator<sup>\*</sup>||OrganizationManagement <p> SecurityAdministrator <p> ViewOnlyOrganizationManagement|
 |Supervision<sup>\*</sup>||OrganizationManagement|
-|Transport Hygiene|Manage anti-malware, anti-spam features, and anti-spoofing features.|HygieneManagement <br/><br/> OrganizationManagement|
-|Transport Rules|Create and manage mail flow rules (also known as transport rules).|OrganizationManagement <br/><br/> RecordsManagement|
-|User Options|Modify existing mail users.|HelpDesk <br/><br/> OrganizationManagement|
-|View-Only AntiMalware|View the configuration and reports for anti-malware features.|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|View-Only AntiSpam|View the configuration and reports for anti-spam features.|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|View-Only Audit Logs|Search the administrator audit log and view the results.|ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> SecurityAdministrator|
-|View-Only Configuration|View all of the organization and mail flow (non-recipient) settings in the organization.|ComplianceManagement <br/><br/> HygieneManagement <br/><br/> OrganizationManagement <br/><br/> ViewOnlyOrganizationManagement|
-|View-Only Quarantine|View all quarantined messages for all recipients.|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|View-Only Recipients|View recipient properties and run message trace.|ComplianceManagement <br/><br/> HelpDesk <br/><br/> HygieneManagement <br/><br/> MailFlowAdministrator <br/><br/>  OrganizationManagement <br/><br/> ViewOnlyOrganizationManagement|
-|View-Only Threat Intelligence<sup>\*</sup>||OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
+|Transport Hygiene|Manage anti-malware, anti-spam features, and anti-spoofing features.|HygieneManagement <p> OrganizationManagement|
+|Transport Rules|Create and manage mail flow rules (also known as transport rules).|OrganizationManagement <p> RecordsManagement|
+|User Options|Modify existing mail users.|HelpDesk <p> OrganizationManagement|
+|View-Only AntiMalware|View the configuration and reports for anti-malware features.|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|View-Only AntiSpam|View the configuration and reports for anti-spam features.|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|View-Only Audit Logs|Search the administrator audit log and view the results.|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
+|View-Only Configuration|View all of the organization and mail flow (non-recipient) settings in the organization.|ComplianceManagement <p> HygieneManagement <p> OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|View-Only Quarantine|View all quarantined messages for all recipients.|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|View-Only Recipients|View recipient properties and run message trace.|ComplianceManagement <p> HelpDesk <p> HygieneManagement <p> MailFlowAdministrator <p>  OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|View-Only Threat Intelligence<sup>\*</sup>||OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
 |
 
 <sup>\*</sup> Although this role is available, it basically does nothing useful in standalone EOP.
@@ -128,7 +132,7 @@ The following table lists the Microsoft 365 roles and the standalone EOP role gr
 |Microsoft 365 role|EOP role group|
 |---|---|
 |Exchange admin|OrganizationManagement|
-|Global admin|OrganizationManagement <br/><br/> **Note**: The Global admin role and the OrganizationManagement role group are tied together using a special Company Administrator role group. The Company Administrator role group is managed internally and can't be modified directly.|
+|Global admin|OrganizationManagement <p> **Note**: The Global admin role and the OrganizationManagement role group are tied together using a special Company Administrator role group. The Company Administrator role group is managed internally and can't be modified directly.|
 |Password admin|HelpDesk|
 |Global reader|ViewOnlyOrganizationManagement|
 |Security admin|SecurityAdministrator|
@@ -147,6 +151,6 @@ To verify that you've successfully copied a role group, do either of the followi
 
 - In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the role group exists (or doesn't exist) and verify the settings:
 
-    ```PowerShell
-    Get-RoleGroup -Identity "<Role Group Name>" | Format-List
-    ```
+  ```PowerShell
+  Get-RoleGroup -Identity "<Role Group Name>" | Format-List
+  ```

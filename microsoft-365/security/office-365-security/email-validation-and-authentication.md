@@ -1,35 +1,42 @@
 ---
-title: "Email authentication in Microsoft 365"
-f1.keywords:
-- NOCSH
+title: Email authentication in Microsoft 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+  - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: "Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam."
+description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Email authentication in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 
 Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In all Microsoft 365 organizations, EOP uses these standards to verify inbound email:
 
-- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
+- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
+- [DKIM](use-dkim-to-validate-outbound-email.md)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -140,7 +147,7 @@ You can use this method to resolve intra-org spoofing and cross-domain spoofing 
 
 - [Consider setting up DMARC records](use-dmarc-to-validate-email.md) for your domain to determine your legitimate senders.
 
-Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's many information available online. There are also third party companies dedicated to helping your organization setup email authentication records.
+Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's many information available online. There are also third party companies dedicated to helping your organization set up email authentication records.
 
 #### You don't know all sources for your email
 
@@ -170,7 +177,7 @@ To permit this sender to send unauthenticated email, change the **No** to a **Ye
 
 ### Create an allow entry for the sender/recipient pair
 
-To bypass spam filtering, some parts of phish filtering, but not malware filtering for specific senders, see [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
+To bypass spam filtering, some parts of filtering for phishing, but not malware filtering for specific senders, see [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
 ### Ask the sender to configure email authentication for domains you don't own
 
@@ -183,7 +190,7 @@ Because of the problem of spam and phishing, Microsoft recommends email authenti
 - If they use bulk senders to send email on their behalf, verify that the domain in the From address (if it belongs to them) aligns with the domain that passes SPF or DMARC.
 
 - Verify the following locations (if they use them) are included in the SPF record:
-  
+
   - On-premises email servers.
   - Email sent from a software-as-a-service (SaaS) provider.
   - Email sent from a cloud-hosting service (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services, etc.).

@@ -1,30 +1,37 @@
 ---
-title: "Anti-phishing protection"
-f1.keywords:
-- NOCSH
+title: Anti-phishing protection
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- TopSMBIssues
-- seo-marvel-apr2020
-description: "Admins can learn about the anti-phishing protection features in Exchange Online Protection (EOP) and Office 365 Advanced Threat Protection (Office 365 ATP)."
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - TopSMBIssues
+  - seo-marvel-apr2020
+description: Admins can learn about the anti-phishing protection features in Exchange Online Protection (EOP) and Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Anti-phishing protection in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 *Phishing* is an email attack that tries to steal sensitive information in messages that appear to be from legitimate or trusted senders. There are specific categories of phishing. For example:
 
@@ -36,11 +43,11 @@ description: "Admins can learn about the anti-phishing protection features in Ex
 
 - **Ransomware** that encrypts your data and demands payment to decrypt it almost always starts out in phishing messages. Anti-phishing protection can't help you decrypt encrypted files, but it can help detect the initial phishing messages that are associated with the ransomware campaign. For more information about recovering from a ransomware attack, see [Recover from a ransomware attack in Microsoft 365](recover-from-ransomware.md).
 
-With the growing complexity of attacks, it's even difficult for trained users to identify sophisticated phishing messages. Fortunately, Exchange Online Protection (EOP) and the additional features in Office 365 Advanced Threat Protection (Office 365 ATP) can help.
+With the growing complexity of attacks, it's even difficult for trained users to identify sophisticated phishing messages. Fortunately, Exchange Online Protection (EOP) and the additional features in Microsoft Defender for Office 365 can help.
 
 ## Anti-phishing protection in EOP
 
-EOP (that is, Microsoft 365 organizations without ATP) contains features that can help protect your organization from phishing threats:
+EOP (that is, Microsoft 365 organizations without Microsoft Defender for Office 365) contains features that can help protect your organization from phishing threats:
 
 - **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
 
@@ -48,15 +55,15 @@ EOP (that is, Microsoft 365 organizations without ATP) contains features that ca
 
 - **Implicit email authentication**: EOP enhances standard email authentication checks for inbound email ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)) with sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques to help identify forged senders. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
 
-## Additional anti-phishing protection in Office 365 ATP
+## Additional anti-phishing protection in Microsoft Defender for Office 365
 
-Office 365 ATP contains additional and more advanced anti-phishing features:
+Microsoft Defender for Office 365 contains additional and more advanced anti-phishing features:
 
-- **ATP anti-phishing policies**: Create new custom policies, configure anti-impersonation settings (protect users and domains from impersonation), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md). For more information about the differences between anti-phishing policies and ATP anti-phishing policies, see [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
+- **Anti-phishing policies in Microsoft Defender for Office 365**: Create new custom policies, configure anti-impersonation settings (protect users and domains from impersonation), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). For more information about the differences between anti-phishing policies in EOP and anti-phishing policies in Defender for Office 365, see [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **Campaign Views**: Machine learning and other heuristics identify and analyze messages that are involved in coordinated phishing attacks against the entire service and your organization. For more information, see [Campaign Views in Office 365 ATP](campaigns.md).
+- **Campaign Views**: Machine learning and other heuristics identify and analyze messages that are involved in coordinated phishing attacks against the entire service and your organization. For more information, see [Campaign Views in Microsoft Defender for Office 365](campaigns.md).
 
-- **Attack simulator**: Admins can create fake phishing messages and send them to internal users as an education tool. For more information, see [Attack Simulator in Office 365 ATP](attack-simulator.md).
+- **Attack simulator**: Admins can create fake phishing messages and send them to internal users as an education tool. For more information, see [Attack Simulator in Microsoft Defender for Office 365](attack-simulator.md).
 
 ## Other anti-phishing resources
 

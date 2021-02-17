@@ -1,25 +1,31 @@
 ---
-title: "Exchange Online Protection (EOP) overview"
-f1.keywords:
-- NOCSH
+title: Exchange Online Protection (EOP) overview
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
-ms.custom:
-- seo-marvel-apr2020
-description: "Learn how Exchange Online Protection (EOP) can help protect your on-premises email organization in standalone and hybrid environments."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Learn how Exchange Online Protection (EOP) can help protect your on-premises email organization in standalone and hybrid environments.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Exchange Online Protection overview
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+-	 [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+-	 [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware. EOP is included in all Microsoft 365 organizations with Exchange Online mailboxes. However, EOP is also available in the following on-premises scenarios:
 
@@ -37,13 +43,13 @@ To understand how EOP works, it helps to see how it processes incoming email:
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphic of email from either the Internet or Customer feedback passing into EOP and through the Connection, Anti-malware, Mailflow Rules-slash-Policy Filtering, and Content Filtering, before the verdict of either junk mail or quarantine, or end user mail delivery.":::
 
-- When an incoming message enters EOP, it initially passes through connection filtering, which checks the sender's reputation. The majority of spam is stopped at this point and rejected by EOP. For more information, see [Configure connection filtering](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide).
+- When an incoming message enters EOP, it initially passes through connection filtering, which checks the sender's reputation. The majority of spam is stopped at this point and rejected by EOP. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).
 
-- Then the message is inspected for signs of malware. If malware is found in the message or the attachment(s) the message is routed to an admin only quarantine store. You can learn more about configuring anti-malware [here](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide).
+- Then the message is inspected for signs of malware. If malware is found in the message or the attachment(s) the message is routed to an admin only quarantine store. You can learn more about configuring anti-malware [here](configure-anti-malware-policies.md).
 
 - Messages continue through policy filtering, where they are evaluated against custom mail flow rules (also known as transport rules) that you create or enforce from a template. For example, you can have a rule that sends a notification to a manager when mail arrives from a specific sender. Data loss prevention (DLP) checks also happen at this point (Exchange Enterprise CAL with Services).
 
-- Next, the message passes through content filtering (also known as Anti-spam). A message that this filter determines to be spam *or phish* can be sent to quarantine, or a user's Junk Email folder, among other options. For more information see [Configure anti-spam policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide) and [Configure anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-worldwide).
+- Next, the message passes through content filtering (also known as Anti-spam). A message that this filter determines to be spam *or phish* can be sent to quarantine, or a user's Junk Email folder, among other options. For more information see [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies](configure-anti-phishing-policies-eop.md).
 
 Any message that passes all of these protection layers successfully is delivered to the recipient.
 
@@ -91,7 +97,7 @@ EOP performs load balancing between datacenters but only within a region. If you
 
 The Help content for EOP administrators consists of the following top-level categories:
 
-- [Configure EOP, Day 1, for Office 365 ATP admins](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Configuring EOP protection and detection tools at the core of Office 365 Advanced Threat Protection.
+- [Configure EOP, Day 1, for Microsoft Defender for Office 365 admins](protect-against-threats.md): Configuring EOP protection and detection tools at the core of Microsoft Defender for Office 365.
 
 - [EOP features](eop-features.md): Provides a list of features that are available in EOP.
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -23,7 +23,7 @@ ms.assetid: 88d337ab-e7b1-43eb-a25e-7d6204e91099
 ROBOTS: NOINDEX
 description: "Learn how to resolve the issues that you face when you enter your product key for Microsoft 365 for business. "
 ms.custom: 
-- okr_SMB
+- okr_smb
 - AdminSurgePortfolio
 ---
 

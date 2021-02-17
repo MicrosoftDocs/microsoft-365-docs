@@ -1,32 +1,43 @@
 ---
-title: "Recover from a ransomware attack"
+title: Recover from a ransomware attack
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
-ms.topic: how-to
-ms.service: O365-seccomp
+ms.article: how-to
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.collection:
-- M365-security-compliance
-description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
+search.appverid: 
+  - MET150
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Microsoft 365 admins can learn how to recover from a ransomware attack.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Recover from a ransomware attack in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are verify sophisticated.
+Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are very sophisticated.
 
-The steps in this topic will give you the best chance to recover data that was encrypted by the ransomware, and will help stop the spread of the infection in your organization. Before you get started, consider the following items:
+The steps in this article will give you the best chance to recover data and stop the internal spread of infection. Before you get started, consider the following items:
 
-- There's no guarantee that paying the ransom will return access to your files. In fact, paying the ransom can make you a target for more ransomware. If you've already paid, but you were able to successfully recover your files without having to use the attacker's resolution, you should call your bank to see if they can block the transaction. We also recommend that you report the ransomware attack to law enforcement, scam reporting websites and Microsoft as described later in this topic.
+- There's no guarantee that paying the ransom will return access to your files. In fact, paying the ransom can make you a target for more ransomware.
 
-- It's very important that you respond quickly to the attack and its consequences. The longer you wait, the less likely it is that you can recover the affected data.
+  If you already paid, but you recovered without using the attacker's solution, contact your bank to see if they can block the transaction.
+
+  We also recommend that you report the ransomware attack to law enforcement, scam reporting websites, and Microsoft as described later in this article.
+
+- It's important for you respond quickly to the attack and its consequences. The longer you wait, the less likely it is that you can recover the affected data.
 
 ## Step 1: Verify your backups
 
@@ -34,13 +45,13 @@ If you have offline backups, you can probably restore the encrypted data **after
 
 If you don't have backups, or if your backups were also affected by the ransomware, you can skip this step.
 
-## Step 2: Disable ActiveSync and OneDrive sync
+## Step 2: Disable Exchange ActiveSync and OneDrive sync
 
 The key point here is to stop the spread of data encryption by the ransomware.
 
-If you suspect that email is a target, you should temporarily disable user access to mailboxes. Exchange ActiveSync is used by mobile devices to synchronize data between the device and the Exchange Online mailbox.
+If you suspect email as a target of the ransomware encryption, temporarily disable user access to mailboxes. Exchange ActiveSync synchronizes data between devices and Exchange Online mailboxes.
 
-To disable ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303).
+To disable Exchange ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303).
 
 To disable other types of access to a mailbox, see:
 
@@ -52,7 +63,9 @@ Pausing OneDrive sync will help protect your cloud data from being updated by po
 
 ## Step 3: Remove the malware from the affected devices
 
-Run a full antivirus scan with the latest updates on all suspected computers and devices to detect and remove the payload that's associated with the ransomware. Don't forget devices that are synchronizing data, or the target of mapped network drives (those computers and devices need to be scanned, too).
+Run a full, current antivirus scan on all suspected computers and devices to detect and remove the payload that's associated with the ransomware.
+
+Don't forget to scan devices that are synchronizing data, or the targets of mapped network drives.
 
 You can use [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) or (for older clients) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
@@ -84,7 +97,7 @@ In the rare case that the ransomware deleted all your email, you can probably re
 
 ## Step 7: Re-enable Exchange ActiveSync and OneDrive sync
 
-After you've cleaned your computers and devices and recovered your data, you can re-enable ActiveSync and OneDrive sync that you previously disabled in [Step 2](#step-2-disable-activesync-and-onedrive-sync).
+After you've cleaned your computers and devices and recovered your data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in [Step 2](#step-2-disable-exchange-activesync-and-onedrive-sync).
 
 ## Step 8 (Optional): Block OneDrive sync for specific file extensions
 
@@ -120,7 +133,7 @@ If your country isn't listed, ask your local or federal law enforcement agencies
 
 ### Submit email messages to Microsoft
 
-You can report phishing message that contain ransomware by using one of several methods. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+You can report phishing messages that contain ransomware by using one of several methods. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## See also
 
@@ -136,7 +149,7 @@ You can report phishing message that contain ransomware by using one of several 
 
 - [Enable or disable macros in Office files](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [Recommended settings for EOP and Office 365 ATP security](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
+- [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md)
 
 - [A worthy upgrade: Next-gen security on Windows 10 proves resilient against ransomware outbreaks in 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 

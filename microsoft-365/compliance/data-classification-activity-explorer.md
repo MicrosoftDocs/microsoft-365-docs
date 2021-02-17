@@ -12,6 +12,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -44,6 +46,8 @@ Every account that accesses and uses data classification must have a license ass
 - Office 365 (E5)
 - Advanced Compliance (E5) add-on
 - Advanced Threat Intelligence (E5) add-on
+- Microsoft 365 E5/A5 Info Protection & Governance
+- Microsoft 365 E5/A5 Compliance
 
 ### Permissions
 

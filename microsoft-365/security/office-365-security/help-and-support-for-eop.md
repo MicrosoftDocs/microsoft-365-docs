@@ -1,29 +1,35 @@
 ---
-title: "Help and support for EOP"
-f1.keywords:
-- NOCSH
+title: Help and support for EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
-description: "Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support."
+description: Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Help and support for EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this topic will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this article will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
 
 ## Self-support options
 
-Upon logging in, the Microsoft 365 admin center provides information about the status of your organization's services. Also, the service health section shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Microsoft 365 admin center also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area, see [Service health and continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums and community sites listed here.
+Upon logging in, the Microsoft 365 admin center provides information about the status of your organization's services. Also, the service health section shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Microsoft 365 admin center also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area, see [Service health and continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums, and community sites listed here.
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -37,7 +43,7 @@ Upon logging in, the Microsoft 365 admin center provides information about the s
 
 ## Assisted support from Microsoft
 
-You can get help from Microsoft by starting a new service request within the Microsoft 365 admin center or by calling on the phone. Premier support subscribers have extra support options.
+You can get help from Microsoft by starting a new service request within the Microsoft 365 admin center or by calling on the phone. Premier Support subscribers have extra support options.
 
 ### Support for Microsoft Premier Support Subscribers
 
@@ -47,7 +53,7 @@ For more information about how Premier Support can help your organization maximi
 
 ### Ask for help on the web
 
-1. Login to the Microsoft 365 admin center.
+1. Log in to the Microsoft 365 admin center.
 
 2. Go to **Support** \> **Ask for Customer Support** \> **New Service Request**
 
@@ -55,9 +61,9 @@ For more information about how Premier Support can help your organization maximi
 
 ### Ask for help on the telephone
 
-1. Login to the Microsoft 365 admin center.
+1. Log in to the Microsoft 365 admin center.
 
-2. For general product issues go to **Support** \> **Ask for Customer Support** \> **Call technical support**.
+2. For general product issues, go to **Support** \> **Ask for Customer Support** \> **Call technical support**.
 
    For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
 
@@ -71,13 +77,13 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 
 |Country or region|Pre-purchase and billing questions|Technical Support questions|
 |---|---|---|
-|Brazil|Toll-free: 08007621146 <br/> Local: 1147001999|Same|
-|France|Toll-free: 0805 540 594 <br/> Local: 01 57 32 42 97|Same|
-|Germany|Toll-free: 0800 589 2332 <br/>  Local: 069 380 789 508|Same|
-|Japan|Toll-free: 0120-628860 <br/> Local: 343326257|Toll-free: 0120-996680 <br/> Local: 357679793|
-|Korea|Toll-free: 080-495-0880 <br/> Local: 234831937|Same|
-|Spain|Toll-free: 900 814 197 <br/> Local: 912 718 160|Same|
-|United Kingdom|Toll-free: 0800 032 6417 <br/> Local: 0203 450 6455|Same|
+|Brazil|Toll-free: 08007621146 <br> Local: 1147001999|Same|
+|France|Toll-free: 0805 540 594 <br> Local: 01 57 32 42 97|Same|
+|Germany|Toll-free: 0800 589 2332 <br>  Local: 069 380 789 508|Same|
+|Japan|Toll-free: 0120-628860 <br> Local: 343326257|Toll-free: 0120-996680 <br> Local: 357679793|
+|Korea|Toll-free: 080-495-0880 <br> Local: 234831937|Same|
+|Spain|Toll-free: 900 814 197 <br> Local: 912 718 160|Same|
+|United Kingdom|Toll-free: 0800 032 6417 <br> Local: 0203 450 6455|Same|
 |United States|Toll-free: 1-877-913-2707|Toll-free: 1-800-865-9408|
 |
 

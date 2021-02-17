@@ -1,35 +1,41 @@
 ---
-title: "Safety tips in email messages"
-f1.keywords:
-- NOCSH
+title: Safety tips in email messages
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- BCS160
+search.appverid: 
+  - MET150
+  - BCS160
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
 description: Learn about how EOP and Office 365 protect you with spam, phishing, and malware prevention by adding a safety tip to the top of emails.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Safety tips in email messages
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Exchange Online Protection (EOP) and Microsoft 365 protect you with spam, phishing, and malware prevention. Today, some of these attacks are so well crafted that they look legitimate. Sending messages to the Junk Email folder isn't always enough. Now, when you check your email in Outlook or Outlook on the web or any email client, EOP automatically checks the sender and adds a safety tip to the top of the email.
 
 Safety tips in Outlook do not depend on what version of Outlook you're using because the safety tip is cracked open and inserted directly into the message body. This means that the safety tip will show up in whatever email client you're using. It's done at the email filter level and not rendered at the mail client level, so not only does it show up in any version of Outlook, it also shows up in any email client.
 
-The safety tip—a color-coded message—will warn you about potentially harmful messages. Most messages in your inbox won't have a safety tip. You'll only see them when EOP and Microsoft 365 have information you need to help prevent spam, phishing, and malware attacks. If safety tips do show up on in your inbox, you can use the following examples to learn more about each type of safety tip.
+The safety tip -- a color-coded message -- will warn you about potentially harmful messages. Most messages in your inbox won't have a safety tip. You'll only see them when EOP and Microsoft 365 have information you need to help prevent spam, phishing, and malware attacks. If safety tips do show up on in your inbox, you can use the following examples to learn more about each type of safety tip.
 
 - Suspicious mail (red safety tip).
 
@@ -42,14 +48,6 @@ The safety tip—a color-coded message—will warn you about potentially harmful
     ![Screenshot that shows a green safety tip.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     In addition to unsafe messages, we'll also tell you about valid messages from senders we trust with a green safety tip. A green safety tip in an email means that we checked the sender of the message and verified that it's safe. Microsoft maintains this list of trusted senders which includes financial organizations and others that are frequently spoofed or impersonated.
-
-- Unfiltered mail (gray safety tip).
-
-    ![Screenshot that shows a gray safety tip.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
-
-    We'll also tell you when we skipped checking a mail because it's from a sender you trust on your Safe Senders list or if a mail flow rule exists to bypass filtering.
-
-    The gray safety tip also shows up when external images are blocked, that is, the message is in your inbox and doesn't appear to be spam, but contains external images that you haven't opted to download.
 
 ## Working with safety tips
 

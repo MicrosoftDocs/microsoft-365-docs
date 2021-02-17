@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,7 +14,6 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: 
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - MET150

@@ -1,28 +1,34 @@
 ---
-title: "Mail flow intelligence"
-f1.keywords:
-- NOCSH
-ms.author: chrisda
-author: chrisda
+title: Mail flow intelligence
+f1.keywords: 
+  - NOCSH
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
-description: "Admins can learn about the error codes that are associated with message delivery using connectors (also known as mail flow intelligence)."
+description: Admins can learn about the error codes that are associated with message delivery using connectors (also known as mail flow intelligence).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Mail flow intelligence in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you typically use a connector to route email messages from EOP to your on-premises email environment. You might also use a connector to route messages from Microsoft 365 to a partner organization. When Microsoft 365 can't deliver these messages via the connector, they're queued in Microsoft 365. Microsoft 365 will continue to retry delivery for each message for 24 hours. After 24 hours, the queued message will expire, and the message will be returned to the original sender in a non-delivery report (also known as an NDR or bounce message).
 
-Microsoft 365 generates an error when a message can't be delivered by using a connector. The most common errors and their solutions are described in this topic. Collectively, queuing and notification errors for undeliverable messages sent via connectors is known as _mail flow intelligence_.
+Microsoft 365 generates an error when a message can't be delivered by using a connector. The most common errors and their solutions are described in this article. Collectively, queuing and notification errors for undeliverable messages sent via connectors is known as _mail flow intelligence_.
 
 ## Error code: 450 4.4.312 DNS query failed
 

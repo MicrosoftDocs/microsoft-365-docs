@@ -1,24 +1,31 @@
 ---
-title: "New domains being forwarded email insight"
-f1.keywords:
-- NOCSH
-ms.author: chrisda
-author: chrisda
+title: New domains being forwarded email insight
+f1.keywords: 
+  - NOCSH
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid:
-description: "Admins can learn how to use the New domains being forwarded email insight in the modern Exchange admin center to investigate when users in their organization are forwarding messages to external domains that have never been been forwarded to."
+ms.assetid: 
+description: Admins can learn how to use the New domains being forwarded email insight in the Mail flow dashboard in the Security & Compliance Center to investigate when their users are forwarding messages to external domains that have never been been forwarded to.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # New domains being forwarded email insight in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Although you might have valid business reasons to forward email messages to external recipients in specific domains, it's suspicious when users in your organization suddenly start forwarding messages to external domains, and no one in the organization has ever forwarded messages to those domains before (new domains). This condition could indicate the user accounts are compromised. If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+There are valid business reasons to forward email messages to external recipients in specific domains. However, it's suspicious when users in your organization suddenly start forwarding messages to a domain where no one in your organization has ever forwarded messages to (a new domain).
+
+This condition might indicate that the user accounts are compromised. If you suspect the accounts have been compromised, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
 The **New domains being forwarded email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when users in your organization are forwarding messages to new domains.
 

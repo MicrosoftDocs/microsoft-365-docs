@@ -1,23 +1,29 @@
 ---
-title: "Outbound and inbound mail flow insight in the Mail flow dashboard"
-f1.keywords:
-- NOCSH
-ms.author: chrisda
-author: chrisda
+title: Outbound and inbound mail flow insight in the Mail flow dashboard
+f1.keywords: 
+  - NOCSH
+ms.author: siosulli
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: "Admins can learn about the Outbound and inbound mail flow insight in the Mail flow dashboard in the Security & Compliance Center."
+description: Admins can learn about the Outbound and inbound mail flow insight in the Mail flow dashboard in the Security & Compliance Center.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Outbound and inbound mail flow insight in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 The **Outbound and inbound mail flow** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) combines the information from the [Connector report](view-mail-flow-reports.md#connector-report) and the former **TLS overview report** in one place.
 

@@ -1,24 +1,30 @@
 ---
-title: "Message trace in the Security & Compliance Center"
-f1.keywords:
-- NOCSH
+title: Message trace in the Security & Compliance Center
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can use message trace in the Security & Compliance Center to find out what happened to messages."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can use message trace in the Security & Compliance Center to find out what happened to messages.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Message trace in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Message trace features
 
@@ -61,7 +67,10 @@ The default values are **All senders** and **All recipients**, but you can use t
 - **To these people**: Click in this field to select one or more recipients in your organization.
 
 > [!NOTE]
-> You can also type the email addresses of external senders and recipients. Wildcards are supported (for example, `*@contoso.com`), but you can't use multiple wildcard entries in the same field at the same time. <br/><br/> You can paste multiple senders or recipients lists separated by semicolons (`;`). spaces (`\s`), carriage returns (`\r`), or next lines (`\n`).
+>
+> - You can also type the email addresses of external senders and recipients. Wildcards are supported (for example, `*@contoso.com`), but you can't use multiple wildcard entries in the same field at the same time.
+>
+> - You can paste multiple senders or recipients lists separated by semicolons (`;`). spaces (`\s`), carriage returns (`\r`), or next lines (`\n`).
 
 ### Time range
 
@@ -77,9 +86,10 @@ The default value is **2 days**, but you can specify date/time ranges of up to 9
 
   For 10 days or less, the results are available instantly as a **Summary** report. If you specify a time range that's even slightly greater than 10 days, the results will be delayed as they are only available as a downloadable CSV file ( **Enhanced summary** or **Extended** reports).
 
-  For more information about the different report types, see the [Choose report type](#choose-report-type) section in this topic.
+  For more information about the different report types, see the [Choose report type](#choose-report-type) section in this article.
 
-  **Note**: Enhanced summary and Extended reports are prepared using archived message trace data, and it can take up to several hours before your report is available for download. Depending on how many other admins have also submitted report requests around the same time, you might also notice a delay before processing starts for your queued request.
+  > [!NOTE]
+  > Enhanced summary and Extended reports are prepared using archived message trace data, and it can take up to several hours before your report is available for download. Depending on how many other admins have also submitted report requests around the same time, you might also notice a delay before processing starts for your queued request.
 
 - Saving a query in **Slider** view saves the relative time range (for example, 3 days from today). Saving a query in **Custom** view saves the absolute date/time range (for example, 2018-05-06 13:00 to 2018-05-08 18:00).
 
@@ -103,7 +113,8 @@ You can leave the default value **All** selected, or you can select one of the f
 
 - **Getting status:** The message was recently received by Microsoft 365, but no other status data is yet available. Check back in a few minutes.
 
-**Note**: The values **Pending,** **Quarantined**, and **Filter as spam** are only available for searches less than 10 days. Also, there might be a 5 to 10 minute delay between the actual and reported delivery status.
+> [!NOTE]
+> The values **Pending,** **Quarantined**, and **Filter as spam** are only available for searches less than 10 days. Also, there might be a 5 to 10 minute delay between the actual and reported delivery status.
 
 #### Message ID
 
@@ -121,7 +132,8 @@ You can leave the default value **All** selected, or you can select **Inbound** 
 
 You can filer the results by client IP address to investigate hacked computers that are sending large amounts of spam or malware. Although the messages might appear to come from multiple senders, it's likely that the same computer is generating all of the messages.
 
-**Note**: The client IP address information is only available for 10 days, and is only available in the **Enhanced summary** or **Extended** reports (downloadable CSV files).
+> [!NOTE]
+> The client IP address information is only available for 10 days, and is only available in the **Enhanced summary** or **Extended** reports (downloadable CSV files).
 
 ### Choose report type
 
@@ -131,11 +143,11 @@ The available report types are:
 
 - **Enhanced summary** or **Extended**: These reports are only available as downloadable CSV files, and require one or more of the following filtering options regardless of the time range: **By these people**, **To these people**, or **Message ID**. You can use wildcards for the senders or the recipients (for example, \*@contoso.com). The Enhanced summary report returns up to 50000 results. The Extended report returns up to 1000 results.
 
-**Notes**:
-
-- Enhanced summary and Extended reports are prepared using archived message trace data, and it can take up to several hours before your report is available to download. Depending on how many other admins have also submitted report requests around the same time, you might also notice a delay before your queued request starts to be processed.
-
-- While you can select an Enhanced summary or Extended report for any date/time range, commonly the last four hours of archived data will not yet be available for these two types of reports.
+> [!NOTE]
+> 
+> - Enhanced summary and Extended reports are prepared using archived message trace data, and it can take up to several hours before your report is available to download. Depending on how many other admins have also submitted report requests around the same time, you might also notice a delay before your queued request starts to be processed.
+> 
+> - While you can select an Enhanced summary or Extended report for any date/time range, commonly the last four hours of archived data will not yet be available for these two types of reports.
 
 When you click **Next**, you're presented with a summary page that lists the filtering options that you selected, a unique (editable) title for the report, and the email address that receives the notification when the message trace completes (also editable, and must be in one of your organization's accepted domains). Click **Prepare report** to submit the message trace. On the main **Message trace** page, you can see the status of the report in the **Downloadable reports** section.
 
@@ -177,7 +189,7 @@ Related message records are records that shared the same Message ID. Remember, e
 
 After you select a row's check box, you can find related records for the message by clicking the **Find related** button that appears, or by selecting **More options** ![More](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Find related records for this message**).
 
-For more information about the Message ID, see the Message ID section earlier in this topic.
+For more information about the Message ID, see the Message ID section earlier in this article.
 
 #### Message trace details
 
@@ -209,15 +221,15 @@ The message trace details contain the following additional information that's no
 
   - **Resolved**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
 
-  Notes:
-
-  - An uneventful message that's successfully delivered will generate multiple **Event** entries in the message trace.
-
-  - This list is not meant to be exhaustive. For descriptions of more events, see [Event types in the message tracking log](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Note that this link is an Exchange Server (on-premises Exchange) topic.
+  > [!NOTE]
+  > 
+  > - An uneventful message that's successfully delivered will generate multiple **Event** entries in the message trace.
+  > 
+  > - This list is not meant to be exhaustive. For descriptions of more events, see [Event types in the message tracking log](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Note that this link is an Exchange Server (on-premises Exchange) topic.
 
 - **More information**: This section contains the following details:
 
-  - **Message ID**: This value is described in the [Message ID](#message-id) section earlier in this topic. For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **Message ID**: This value is described in the [Message ID](#message-id) section earlier in this article. For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
   - **Message size**
 
@@ -245,7 +257,7 @@ Available (completed) Enhanced summary reports are available in the **Downloadab
 
 - **total_bytes**: The size of the message in bytes, including attachments.
 
-- **message_id**: This value is described in the [Message ID](#message-id) section earlier in this topic. For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: This value is described in the [Message ID](#message-id) section earlier in this article. For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
 - **network_message_id**: A unique message ID value that persists across all copies of the message that might be created due to bifurcation or distribution group expansion. An example value is `1341ac7b13fb42ab4d4408cf7f55890f`.
 
@@ -257,7 +269,7 @@ Available (completed) Enhanced summary reports are available in the **Downloadab
 
 - **delivery_priority**<sup>*</sup>: Whether the message was sent with **High**, **Low**, or **Normal** priority.
 
-<sup>*</sup>These properties are only available in Enhanced summary reports.
+<sup>*</sup> These properties are only available in Enhanced summary reports.
 
 ### Extended reports
 

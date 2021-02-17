@@ -29,11 +29,11 @@ Explore the following list of error messages to get help with the most common is
     
 ## We are unable to process your request. You have to first subscribe to this data from the Microsoft 365 admin center
 
- **Error Code :** 422 
+ **Error Code:** 422 
   
  **Where you will see this message:** In Power BI when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
   
- **Cause:** Before you can connect to the app you have to subscribe to the data from the Microsoft 365 admin center. If this step isn't done first, you won't be able to connect to the template app, even if you provide your Microsoft 365 tenant id. 
+ **Cause:** Before you can connect to the app, you have to subscribe to the data from the Microsoft 365 admin center. If this step isn't done first, you won't be able to connect to the template app, even if you provide your Microsoft 365 tenant ID. 
   
  **To fix this error:** To subscribe to the data, go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. Select the **Get started** button and then in the **Reports** pane that opens, turn the **Make data available to Microsoft 365 usage analytics for Power BI** setting on and **Save**.
   
@@ -49,9 +49,9 @@ Explore the following list of error messages to get help with the most common is
 
  **Error Code:** 423 
   
- **Where you will see this message:** In Power BI when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
+ **Where you will see this message:** In Power BI, when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
   
- **Cause:** When you [opt in to seeing data in the template app](enable-usage-analytics.md) from the admin center, the Microsoft 365 system starts generating historical usage data for your organization. Depending on the size of your tenant, this step could take anywhere between 2 hours to 48 hours. 
+ **Cause:** When you [opt in to seeing data in the template app](enable-usage-analytics.md) from the admin center, the Microsoft 365 system starts generating historical usage data for your organization. Depending on the size of your tenant, this step could take anywhere between two hours to 48 hours. 
   
  **To fix this:** Just be patient, but if the message does not change to **Your data is ready** even 3 days since initiation, [contact Microsoft 365 for business support](../contact-support-for-business-products.md).
   
@@ -59,11 +59,11 @@ Explore the following list of error messages to get help with the most common is
 
  **Error Code:** 400 
   
- **Where you will see this message:** In Power BI when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
+ **Where you will see this message:** In Power BI, when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
   
- **Cause:** The tenant id is a guid and has to be in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. If you enter any other string in the tenant input box you will get this error. 
+ **Cause:** The tenant ID is a guid and has to be in the format of xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. If you enter any other string in the tenant input box, you will get this error. 
   
- **To fix this error:** Go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. The tenant id is listed on the tile. You can copy it from here and paste it in the dialog box for connecting to the template app. 
+ **To fix this error:** Go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. The tenant ID is listed on the tile. You can copy it from here and paste it in the dialog box for connecting to the template app. 
   
 ## The tenant ID you provided is not recognized by our system
 
@@ -71,9 +71,9 @@ Explore the following list of error messages to get help with the most common is
   
  **Where you will see this message:** In Power BI when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
   
- **Cause:** The tenant id you provided is not valid or does not exist. 
+ **Cause:** The tenant ID you provided is not valid or does not exist. 
   
- **To fix this error:** Go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. The tenant id is listed on the tile. You can copy it from here and paste it in the dialog box for connecting to the template app. 
+ **To fix this error:** Go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. The tenant ID is listed on the tile. You can copy it from here and paste it in the dialog box for connecting to the template app. 
   
 ## Please re-enter your credentials to sign in to Power BI again
 

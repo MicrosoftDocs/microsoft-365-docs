@@ -1,30 +1,36 @@
 ---
-title: "Configure your Microsoft 365 tenant for increased security"
-f1.keywords:
-- NOCSH
+title: Configure your Microsoft 365 tenant for increased security
+f1.keywords: 
+  - NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 ms.date: 10/11/2018
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection: 
+  - Ent_O365
+  - Strat_O365_IP
+  - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-ms.custom:
-- seo-marvel-apr2020
-description: "This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment."
+ms.custom: 
+  - seo-marvel-apr2020
+description: This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure your Microsoft 365 tenant for increased security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point.
 
@@ -40,12 +46,12 @@ The Microsoft 365 security center includes capabilities that protect your enviro
 
 |Area|Includes a default policy|Recommendation|
 |---|---|---|
-|**Anti-phishing**|Yes|If you have a custom domain, configure the default anti-phishing policy to protect the email accounts of your most valuable users, such as your CEO, and to protect your domain. Review [Anti-phishing policies in Office 365](set-up-anti-phishing-policies.md) and see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) or [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).|
-|**Anti-Malware Engine**|Yes| Edit the default policy: <br/> &ensp;&ensp;* Common Attachment Types Filter — Select On <br/><br/> You can also create custom malware filter policies and apply them to specified users, groups, or domains in your organization. <br/><br/> More information: <br/> &ensp;&ensp;* [Anti-malware protection](anti-malware-protection.md) <br/> &ensp;&ensp;* [Configure anti-malware policies](configure-anti-malware-policies.md)|
-|**Safe Attachments in Office 365 ATP**|No|On the main page for Safe Attachments, click **Global settings** and turn on this setting: <br/> &ensp;&ensp;**Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** <br/><br/> Create a Safe Attachments policy with these settings: <br/> &ensp;&ensp;* **Block**: Select **Block** as the unknown malware response. <br/> &ensp;&ensp;* **Enable redirect**: Check this box and enter an email address, such as an admin or quarantine account. <br/> &ensp;&ensp;* **Apply the above selection if malware scanning for attachments times out or error occurs**: Check this box. <br/> &ensp;&ensp;* **Applied to**: **The recipient domain is** \> select your domain. <br/><br/> More information: [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) and [Set up Safe Attachments policies](set-up-atp-safe-attachments-policies.md)|
-|**Safe Links in Office 365 ATP**|Yes|On the main page for Safe Links, click **Global settings**: <br/> &ensp;&ensp;* **Use Safe Links in: Office 365 applications**: Verify this setting is turned on. <br/> &ensp;&ensp;* **Do not track when users click Safe Links**: Turn this setting off to track user clicks.<br/><br/>Create a Safe Links policy with these settings: <br/> &ensp;&ensp;* **Select the action for unknown potentially malicious URLs in messages**: Verify this setting is **On**. <br/> &ensp;&ensp;* **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Verify this setting is **On**. <br/> &ensp;&ensp;* **Apply real-time URL scanning for suspicious links and links that point to files**: Check this box. <br/> &ensp;&ensp; &ensp;&ensp;* **Wait for URL scanning to complete before delivering the message**: Check this box. <br/> &ensp;&ensp;* **Apply safe links to email messages sent within the organization**: Check this box. <br/> &ensp;&ensp;* **Do not allow users to click through to original URL**: Check this box. <br/> &ensp;&ensp;* **Applied To**: **The recipient domain is** \> select your domain. <br/><br/> More information: [Set up Safe Links policies](set-up-atp-safe-links-policies.md).|
-|**Anti-Spam (Mail filtering)**|Yes| What to watch for: <br/> &ensp;&ensp;* Too much spam — Choose the Custom settings and edit the Default spam filter policy. <br/> &ensp;&ensp;* Spoof intelligence — Review senders that are spoofing your domain. Block or allow these senders. <br/><br/>More information: [Microsoft 365 Email Anti-Spam Protection](anti-spam-protection.md).|
-|***Email Authentication***|Yes|Email authentication uses a Domain Name System (DNS) to add verifiable information to email messages about the sender of an email. Microsoft 365 sets up email authentication for its default domain (onmicrosoft.com), but Microsoft 365 admins can also use email authentication for custom domains. Three authentication methods are used: <br/><br/> &ensp;&ensp;* Sender Policy Framework (or SPF).<br/>&ensp;&ensp;&ensp;&ensp;- For setup, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). <br/> &ensp;&ensp;* DomainKeys Identified Mail (DKIM). <br/> &ensp;&ensp;&ensp;&ensp;- See [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md). <br/>&ensp;&ensp;&ensp;&ensp;- After you've configured DKIM, enable it in the security center.<br/> &ensp;&ensp;* Domain-based Message Authentication, Reporting, and Conformance (DMARC). <br/> &ensp;&ensp;&ensp;&ensp;- For DMARC setup [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).|
+|**Anti-phishing**|Yes|If you have a custom domain, configure the default anti-phishing policy to protect the email accounts of your most valuable users, such as your CEO, and to protect your domain. <p> Review [Anti-phishing policies in Office 365](set-up-anti-phishing-policies.md) and see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) or [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).|
+|**Anti-Malware Engine**|Yes| Edit the default policy: <ul><li>Common Attachment Types Filter: Select On</li></ul> <p> You can also create custom malware filter policies and apply them to specified users, groups, or domains in your organization. <p> More information: <ul><li>[Anti-malware protection](anti-malware-protection.md)</li><li>[Configure anti-malware policies](configure-anti-malware-policies.md)</li></ul>|
+|**Safe Attachments in Microsoft Defender for Office 365**|No|On the main page for Safe Attachments, click **Global settings** and turn on this setting: <ul><li>**Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**</li></ul> <p> Create a Safe Attachments policy with these settings: <ul><li> **Block**: Select **Block** as the unknown malware response.</li><li>**Enable redirect**: Check this box and enter an email address, such as an admin or quarantine account.</li><li>**Apply the above selection if malware scanning for attachments times out or error occurs**: Check this box.</li><li>***Applied to**: **The recipient domain is** \> select your domain.</li></ul> <p> More information: [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) and [Set up Safe Attachments policies](set-up-atp-safe-attachments-policies.md)|
+|**Safe Links in Microsoft Defender for Office 365**|Yes|On the main page for Safe Links, click **Global settings**: <ul><li>**Use Safe Links in: Office 365 applications**: Verify this setting is turned on.</li><li>**Do not track when users click Safe Links**: Turn this setting off to track user clicks.</li></ul> <p> Create a Safe Links policy with these settings: <ul><li>**Select the action for unknown potentially malicious URLs in messages**: Verify this setting is **On**.</li><li>**Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Verify this setting is **On**.</li><li>**Apply real-time URL scanning for suspicious links and links that point to files**: Check this box.</li><li>**Wait for URL scanning to complete before delivering the message**: Check this box.</li><li>**Apply safe links to email messages sent within the organization**: Check this box</li><li>**Do not allow users to click through to original URL**: Check this box.</li><li>**Applied To**: **The recipient domain is** \> select your domain.</li></ul> <p> More information: [Set up Safe Links policies](set-up-atp-safe-links-policies.md).|
+|**Anti-Spam (Mail filtering)**|Yes| What to watch for: <ul><li>Too much spam — Choose the Custom settings and edit the Default spam filter policy.</li><li>Spoof intelligence — Review senders that are spoofing your domain. Block or allow these senders.</li></ul> <p> More information: [Microsoft 365 Email Anti-Spam Protection](anti-spam-protection.md).|
+|***Email Authentication***|Yes|Email authentication uses a Domain Name System (DNS) to add verifiable information to email messages about the sender of an email. Microsoft 365 sets up email authentication for its default domain (onmicrosoft.com), but Microsoft 365 admins can also use email authentication for custom domains. Three authentication methods are used: <ul><li>Sender Policy Framework (or SPF).</li><ul><li>For setup, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>DomainKeys Identified Mail (DKIM).</li><ul><li>See [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md).</li><li>After you've configured DKIM, enable it in the security center.</li></ul><li>Domain-based Message Authentication, Reporting, and Conformance (DMARC).</li><ul><li>For DMARC setup [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
 |
 
 > [!NOTE]
@@ -74,8 +80,8 @@ Many of the controls for security and protection in the Exchange admin center ar
 
 |Area|Includes a default policy|Recommendation|
 |---|---|---|
-|**Mail Flow** (mail flow rules, also known as transport rules)|No|Add a mail flow rule to help protect against ransomware by blocking executable file types and Office file types that contain macros. For more information, see [Use mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> See these additional topics: <br/>* [Protect against ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Malware and Ransomware Protection in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Recover from a ransomware attack in Office 365](recover-from-ransomware.md) <br/><br/> Create a mail flow rule to prevent auto-forwarding of email to external domains. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> More information: [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**Enable modern authentication**|No|Modern authentication is a prerequisite for using multi-factor authentication (MFA). MFA is recommended for securing access to cloud resources, including email. <br/><br/> See these topics: <br/>* [Enable or disable modern authentication in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype for Business Online: Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business. <br/><br/> More information: [How modern authentication works for Office 2013 and Office 2016 client apps](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)|
+|**Mail Flow** (mail flow rules, also known as transport rules)|No|Add a mail flow rule to help protect against ransomware by blocking executable file types and Office file types that contain macros. For more information, see [Use mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <p> See these additional topics: <ul><li>[Protect against ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)</li><li>[Malware and Ransomware Protection in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection)</li><li>[Recover from a ransomware attack in Office 365](recover-from-ransomware.md)</li></ul> <p> Create a mail flow rule to prevent auto-forwarding of email to external domains. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <p> More information: [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**Enable modern authentication**|No|Modern authentication is a prerequisite for using multi-factor authentication (MFA). MFA is recommended for securing access to cloud resources, including email. <p> See these topics: <ul><li>[Enable or disable modern authentication in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype for Business Online: Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business. <p> More information: [How modern authentication works for Office 2013 and Office 2016 client apps](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
 ## Configure tenant-wide sharing policies in SharePoint admin center
@@ -90,7 +96,7 @@ To support the goals for baseline protection, configure tenant-wide sharing poli
 
 |Area|Includes a default policy|Recommendation|
 |---|---|---|
-|**Sharing** (SharePoint Online and OneDrive for Business)|Yes|External sharing is enabled by default. These settings are recommended: <br/>* Allow sharing to authenticated external users and using anonymous access links (default setting). <br/> * Anonymous access links expire in this many days. Enter a number, if desired, such as 30 days. <br/>* Default link type — select Internal (people in the organization only). Users who wish to share using anonymous links must choose this option from the sharing menu. <br/><br/> More information: [External sharing overview](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
+|**Sharing** (SharePoint Online and OneDrive for Business)|Yes|External sharing is enabled by default. These settings are recommended: <ul><li>Allow sharing to authenticated external users and using anonymous access links (default setting).</li><li>Anonymous access links expire in this many days. Enter a number, if desired, such as 30 days.</li><li>Default link type — select Internal (people in the organization only). Users who wish to share using anonymous links must choose this option from the sharing menu.</li></ul> <p> More information: [External sharing overview](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
 |
 
 SharePoint admin center and OneDrive for Business admin center include the same settings. The settings in either admin center apply to both.
@@ -139,6 +145,6 @@ More information:
 
 These articles and guides provide additional prescriptive information for securing your Microsoft 365 environment:
 
-- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (you can use these recommendation in any environment, especially cloud-only environments)
+- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) (you can use these recommendation in any environment, especially cloud-only environments)
 
-- [Recommended security policies and configurations for identities and devices](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (these recommendations include help for AD FS environments)
+- [Recommended security policies and configurations for identities and devices](microsoft-365-policies-configurations.md) (these recommendations include help for AD FS environments)

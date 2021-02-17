@@ -103,9 +103,14 @@ Use the following instructions to assign roles to tens of users.
 
 ::: moniker range="o365-worldwide"
 
-## Check your permissions
+## Check admin roles in your organization
 
-You might not have the correct permissions to assign admin roles to other users. Check to make sure if you the correct permissions or ask another admin to assign roles for you.
+You might not have the correct permissions to assign admin roles to other users. Check to make sure you have the correct permissions or ask another admin to assign roles for you.
+
+You can check admin role permissions in 2 different ways:
+
+- You can go to the user's details and look under **Roles** on the **Account** page.
+- Or you can go to **Roles** and select the admin role, and select assigned admins to see which users are assigned.
 
 ::: moniker-end
 

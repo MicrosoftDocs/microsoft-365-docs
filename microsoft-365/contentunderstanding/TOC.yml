@@ -31,6 +31,8 @@
           href: model-usage-analytics.md
         - name: Leverage term store taxonomy when creating an extractor
           href: leverage-term-store-taxonomy.md
+        - name: SharePoint Syntex accessibility mode
+          href: accessibility-mode.md
     
     - name: Adoption
       items:
@@ -42,8 +44,6 @@
 
         - name: Set up content understanding
           href: set-up-content-understanding.md
-        - name: Image tagging
-          href: image-tagging.md
         
     - name: Content services
       items:

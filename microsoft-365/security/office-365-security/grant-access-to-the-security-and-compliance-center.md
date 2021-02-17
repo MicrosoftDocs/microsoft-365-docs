@@ -1,30 +1,36 @@
 ---
-title: "Give users access to the Security & Compliance Center"
-f1.keywords:
-- NOCSH
+title: Give users access to the Security & Compliance Center
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: how-to
-f1_keywords:
-- 'ms.o365.cc.PermissionsHelp'
-ms.service: O365-seccomp
+f1_keywords: 
+  - 'ms.o365.cc.PermissionsHelp'
+
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: 
+  - MOE150
+  - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: "Users need to be assigned permissions in the Microsoft 365 Security & Compliance Center before they can manage any of its security or compliance features."
+description: Users need to be assigned permissions in the Microsoft 365 Security & Compliance Center before they can manage any of its security or compliance features.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Give users access to the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Users need to be assigned permissions in the Security & Compliance Center before they can manage any of its security or compliance features. As a global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.
 
@@ -76,7 +82,7 @@ For detailed syntax and parameter issues, see [Add-RoleGroupMember](https://docs
 
 To verify that you've successfully granted access to the Security & Compliance Center, do either of the following steps:
 
-- In the Security & Compliance Center, go to **Permissions** and select the role group. In the details flyout that opens, verify the members of the role group. 
+- In the Security & Compliance Center, go to **Permissions** and select the role group. In the details flyout that opens, verify the members of the role group.
 
 - In Security & Compliance Center PowerShell, replace \<RoleGroupName\> with the name of the role group, and run the following command:
 

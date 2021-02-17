@@ -1,29 +1,36 @@
 ---
 title: How to use DKIM for email in your custom domain
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 ms.date: 10/8/2019
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems."
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use DKIM to validate outbound email sent from your custom domain
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
  **Summary:** This article describes how you use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure that destination email systems trust messages sent outbound from your custom domain.
 
@@ -84,7 +91,7 @@ Since both 1024 and 2048 bitness are supported for DKIM keys, these directions w
    1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.)
    1. Run the following command:
 
-      ```powershell 
+      ```powershell
       Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
       ```
 
@@ -123,6 +130,9 @@ To configure DKIM, you will complete these steps:
 <a name="Publish2CNAME"> </a>
 
 For each domain for which you want to add a DKIM signature in DNS, you need to publish two CNAME records.
+
+> [!NOTE]
+> If you haven't read the full article, you may have missed this time-saving PowerShell connection information: [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.)
 
 Run the following commands to create the selector records:
 
@@ -181,8 +191,6 @@ TTL:                3600
 > [!NOTE]
 > It's important to create the second record, but only one of the selectors may be available at the time of creation. In essence, the second selector might point to an address that hasn't been created yet. We still recommended that you create the second CNAME record, because your key rotation will be seamless.
 
-> [!CAUTION]
-> Automatic key rotation has been temporarily disabled as we implement some design changes in how we create keys. It's a good practice to have multiple keys so that you can rotate them periodically. Although it's hard to crack, it's still a practical mitigation strategy to protect against things like impersonation. You can follow the [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) document to help do this for your organization. We expect that automatic rotation will be enabled again by August 2020.
 
 ### Enable DKIM signing for your custom domain
 <a name="EnableDKIMinO365"> </a>
@@ -202,6 +210,10 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 5. Select the domain for which you want to enable DKIM and then, for **Sign messages for this domain with DKIM signatures**, choose **Enable**. Repeat this step for each custom domain.
 
 #### To enable DKIM signing for your custom domain by using PowerShell
+
+> [!IMPORTANT]
+>:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="The 'No DKIM keys saved for this domain.' error.":::
+> If you are configuring DKIM for the first time and see the error 'No DKIM keys saved for this domain.' complete the command in step 2, below (for example, *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) to see the key.
 
 1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -247,7 +259,7 @@ Wait a few minutes before you follow these steps to confirm that you have proper
 
 If at some point in the future you decide to add another custom domain and you want to enable DKIM for the new domain, you must complete the steps in this article for each domain. Specifically, complete all steps in [What you need to do to manually set up DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365).
 
-## Disabling the DKIM signing policy for a custom domain 
+## Disabling the DKIM signing policy for a custom domain
 <a name="DisableDKIMSigningPolicy"> </a>
 
 Disabling the signing policy does not completely disable DKIM. After a period of time, Microsoft 365 will automatically apply the default policy for your domain. For more information, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
@@ -305,7 +317,7 @@ In this example, the host name and domain contain the values to which the CNAME 
 ## Set up DKIM so that a third-party service can send, or spoof, email on behalf of your custom domain
 <a name="SetUp3rdPartyspoof"> </a>
 
-Some bulk email service providers, or software-as-a-service providers, let you set up DKIM keys for email that originates from their service. This requires coordination between yourself and the third-party in order to set up the necessary DNS records. No two organizations do it exactly the same way. Instead, the process depends entirely on the organization.
+Some bulk email service providers, or software-as-a-service providers, let you set up DKIM keys for email that originates from their service. This requires coordination between yourself and the third-party in order to set up the necessary DNS records. Some third-party servers can have their own CNAME records with different selectors. No two organizations do it exactly the same way. Instead, the process depends entirely on the organization.
 
 An example message showing a properly configured DKIM for contoso.com and bulkemailprovider.com might look like this:
 
@@ -329,7 +341,7 @@ In this example, in order to achieve this result:
    > sender@**contoso.com**
 
    > d=**contoso.com**
-   
+
 ## Identify domains that do not send email
 
 Organizations should explicitly state if a domain does not send email by specifying `v=DKIM1; p=` in the DKIM record for those domains. This advises receiving email servers that there are no valid public keys for the domain, and any email claiming to be from that domain should be rejected. You should do this for each domain and subdomain using a wildcard DKIM.
@@ -339,8 +351,14 @@ For example, the DKIM record would look like this:
 ```console
 *._domainkey.SubDomainThatShouldntSendMail.contoso.com. TXT "v=DKIM1; p="
 ```
+`
 
 ## Next steps: After you set up DKIM for Microsoft 365
 <a name="DKIMNextSteps"> </a>
 
 Although DKIM is designed to help prevent spoofing, DKIM works better with SPF and DMARC. Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). Next, see [Use DMARC to validate email](use-dmarc-to-validate-email.md). [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
+
+## More information
+
+Key rotation via PowerShell
+[Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)

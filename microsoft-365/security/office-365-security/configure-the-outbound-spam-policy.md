@@ -1,29 +1,35 @@
 ---
-title: "Configure outbound spam filtering"
-f1.keywords:
-- NOCSH
+title: Configure outbound spam filtering
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure outbound spam filtering in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, outbound email messages that are sent through EOP are automatically checked for spam and unusual sending activity.
 
@@ -46,7 +52,7 @@ The difference between these two elements isn't obvious when you manage outbound
 - When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the outbound spam filter rule. All other settings modify the associated outbound spam filter policy.
 - When you remove a policy, the outbound spam filter rule and the associated outbound spam filter policy are removed.
 
-In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure outbound spam policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) section later in this topic.
+In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure outbound spam policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) section later in this article.
 
 Every organization has a built-in outbound spam policy named Default that has these properties:
 
@@ -62,17 +68,16 @@ To increase the effectiveness of outbound spam filtering, you can create custom 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can do the procedures in this topic:
+- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+  - To add, modify, and delete outbound spam policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - For read-only access to outbound spam policies, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  - To add, modify, and delete outbound spam policies, you need to be a member of one of the following role groups:
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Notes**:
 
-  - For read-only access to outbound spam policies, you need to be a member of one of the following role groups:
-
-    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 - For our recommended settings for outbound spam policies, see [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
@@ -154,7 +159,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
      - **No action, alert only**: Email notifications are sent.
 
-6. (Optional) Expand **Automatic forwarding** section to control automatic email forwarding by users to external senders. For more information about automatic forwarding, see [Configure email forwarding](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
+6. (Optional) Expand **Automatic forwarding** section to control automatic email forwarding by users to external senders. For more information, see [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md).
 
    > [!NOTE]
    >
@@ -162,14 +167,12 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
    >
    > - These settings apply only to cloud-based mailboxes.
    >
-   > - Automatic forwarding to internal recipients is not affected by these setting.
+   > - When automatic forwarding is disabled, the recipient will receive a non-delivery report (also known as an NDR or bounce message) if external senders send email to a mailbox that has forwarding in place. If the message is sent by an internal sender **and** the forwarding method is [mailbox forwarding](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as _SMTP forwarding_), the internal sender will get the NDR. The internal sender does not get an NDR if the forwarding occurred due to an inbox rule.
 
    The available values are:
 
    - **Automatic - System-controlled**: Allows outbound spam filtering to control automatic external email forwarding. This is the default value.
-
    - **On**: Automatic external email forwarding is not disabled by the policy.
-
    - **Off**: All automatic external email forwarding is disabled by the policy.
 
 7. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
@@ -228,7 +231,7 @@ To enable or disable a policy, set the policy priority order, or configure the e
 
    Move the toggle to the left to disable the policy: ![Toggle off](../../media/scc-toggle-off.png)
 
-   Move the toggle to the right to enable the policy: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Move the toggle to the right to enable the policy: ![Toggle on](../../media/scc-toggle-on.png)
 
 You can't disable the default outbound spam policy.
 
@@ -394,7 +397,7 @@ For detailed syntax and parameter information, see [Get-HostedOutboundSpamFilter
 
 ### Use PowerShell to modify outbound spam filter policies
 
-The same settings are available when you modify a malware filter policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an outbound spam filter policy](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) section earlier in this topic.
+The same settings are available when you modify a malware filter policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an outbound spam filter policy](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) section earlier in this article.
 
 > [!NOTE]
 > You can't rename an outbound spam filter policy (the **Set-HostedOutboundSpamFilterPolicy** cmdlet has no _Name_ parameter). When you rename an outbound spam policy in the Security & Compliance Center, you're only renaming the outbound spam filter _rule_.
@@ -411,7 +414,7 @@ For detailed syntax and parameter information, see [Set-HostedOutboundSpamFilter
 
 The only setting that isn't available when you modify an outbound spam filter rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule. To enable or disable existing outbound spam filter rules, see the next section.
 
-Otherwise, no additional settings are available when you modify an outbound spam filter rule in PowerShell. The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an outbound spam filter rule](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) section earlier in this topic.
+Otherwise, no additional settings are available when you modify an outbound spam filter rule in PowerShell. The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an outbound spam filter rule](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) section earlier in this article.
 
 To modify an outbound spam filter rule, use this syntax:
 

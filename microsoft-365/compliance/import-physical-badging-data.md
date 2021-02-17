@@ -34,8 +34,6 @@ Setting up a physical badging connector consists of the following tasks:
 
 ## Before you set up the connector
 
-- Your organization must consent to allow the Office 365 Import service to access data in your organization. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of a Microsoft 365 global admin, and then accept the request. You have to complete this step before you can successfully create the physical badging connector in Step 3.
-
 - The user who creates the physical badging connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 - You need to determine how to retrieve or export the data from your organization's physical badging system (on a daily basis) and create a JSON file that's described in Step 2. The script that you run in Step 4 will push the data in the JSON file to the API endpoint.
@@ -60,7 +58,7 @@ The next step is to create a JSON file that contains information about employees
 
 The JSON file must conform to the schema definition required by the connector. Here are descriptions of the required schema properties for the JSON file:
 
-|**Property**|**Description**|**Data type**|
+| Property | Description | Data type |
 |:-----------|:--------------|:------------|
 |UserId|An employee can have multiple digital identities across the systems. The input needs to have the Azure AD ID already resolved by the source system. |UPN or email address|
 |AssetId|The reference ID of the physical asset or physical access point.| Alphanumeric string|
@@ -71,7 +69,7 @@ The JSON file must conform to the schema definition required by the connector. H
 
 Here's an example of a JSON file that conforms to the required schema:
 
-```text
+```json
 [
     {
         "UserId":"sarad@contoso.com"
@@ -185,7 +183,7 @@ After you run the script, the JSON file containing the physical badging data is 
 
    The following table describes the parameters to use with this script and their required values. Information you obtained in the previous steps is used in the values for these parameters.
 
-   | **Parameter**|**Description**|
+   | Parameter | Description |
    |:-------------|:--------------|
    |tenantId | This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenantId for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization. |
    |appId | This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.                    |
@@ -213,7 +211,7 @@ After you create the physical badging connector and push your physical badging d
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page, which contains the properties and information about the connector.
+2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page. This page contains the properties and information about the connector.
 
    ![Status flyout page for physical badging connector](..\media\PhysicalBadgingStatusFlyout.png)
 

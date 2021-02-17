@@ -2,9 +2,9 @@
 title: "Set an individual user's password to never expire"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: kwekua
+author: kwekua
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -101,6 +101,9 @@ Run one of the following commands:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
+> [!WARNING]
+> User accounts configured with the `-PasswordPolicies DisablePasswordExpiration` parameter still age based on the `pwdLastSet` attribute. Based on the `pwdLastSet` attribute, if you change the expiration to `-PasswordPolicies None`, all passwords that have a pwdLastSet older than 90 days require the user to change them the next time they sign in. This change can affect a large number of users.
+
 ### Set a password to expire
 
 Run one of the following commands:
@@ -116,9 +119,6 @@ Run one of the following commands:
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
-
-> [!WARNING]
-> User accounts configured with the `-PasswordPolicies DisablePasswordExpiration` parameter still age based on the `pwdLastSet` user account attribute. For example, if you set user passwords to never expire and then 90 or more days go by, the passwords still expire. Based on the `pwdLastSet` user account attribute, for user accounts configured with the `-PasswordPolicies None` parameter, all passwords that have a `pwdLastSet` older than 90 days require the user to change them the next time they sign in.This change can affect a large number of users.
 
 ## Related content
 

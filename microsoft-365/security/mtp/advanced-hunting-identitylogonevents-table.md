@@ -4,19 +4,22 @@ description: Learn about authentication events recorded by Active Directory in t
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, IdentityLogonEvents, Azure AD, Active Directory, Azure ATP, identities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
+ms.technology: m365d
 ---
 
 # IdentityLogonEvents
@@ -25,9 +28,9 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities made through your on-premises Active Directory captured by Azure ATP and authentication activities related to Microsoft online services captured by Microsoft Cloud App Security. Use this reference to construct queries that return information from this table.
+The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities made through your on-premises Active Directory captured by Microsoft Defender for Identity and authentication activities related to Microsoft online services captured by Microsoft Cloud App Security. Use this reference to construct queries that return information from this table.
 
 >[!TIP]
 > For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
@@ -55,8 +58,10 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeviceType` | string | Type of device |
 | `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `Port` | string | TCP port used during communication |
 | `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
 | `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
+| `DestinationPort` | string | Destination port of related network communications |
 | `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |
 | `Location` | string | City, country, or other geographic location associated with the event |
