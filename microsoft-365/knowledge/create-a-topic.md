@@ -74,6 +74,9 @@ You can create a new topic from two locations:
 
     You can also use the <b>From a link</b> option to add a file or page by providing the URL. 
 
+    > [!Note] 
+    > Files and pages that you add must be located within the same Microsoft 365 tenant. If you want to add a link to an external resource in the topic, you can add it through the canvas icon in step 8.
+
 
 6.  The <b>Related sites</b> section shows sites that have information about the topic. 
 
@@ -94,6 +97,16 @@ You can create a new topic from two locations:
    The related topic you added will display as a connected topic.
 
    ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
+
+   To remove a related topic, select the topic you want to remove, then select the <b>Remove topic</b> icon.</br>
+ 
+   ![Remove related topic](../media/knowledge-management/remove-related.png)</br>  
+
+   Then select <b>Remove</b>.</br>
+
+   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
+     
+ 
 
 
 8. You can also add static items to the page (such as text, images, or links) by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
