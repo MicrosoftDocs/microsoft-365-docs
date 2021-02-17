@@ -43,7 +43,7 @@ Here's the list of all the services you get with Business Assist.
 - Small business specialists: Rely on a team of experts who are specialized in helping businesses like yours reach their productivity goals. Reduce time spent on IT and focus on what you do best.
 - Fast collaboration: Our experts will pick up the conversation where you left it last. No tickets to track, no robots, no long waiting times.​
 - Proactive check-in and guidance: Periodic check-ups on service usage and guidance regarding adjustments to make based on your company’s needs.
-- Work together with Microsoft:  Get expert help on implementing best practices, learn about underutilized features, and get advice on ways to get more value out of your subscription​.
+- Get expert help on implementing best practices, learn about underutilized features, and get advice on ways to get more value out of your subscription​.
 
 ## Get Business Assist
 
