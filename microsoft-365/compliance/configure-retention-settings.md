@@ -19,13 +19,21 @@ search.appverid:
 description: "Understand the settings you can configure in a retention policy or retention label policy to keep what you want and get rid of what you don't."
 ---
 
-# Configuring settings for retention policies and retention label policies
+# Configuring common settings for retention policies and retention label policies
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use the following information to help you configure retention policies and retention label policies to proactively retain content, delete content, or both - retain and then delete the content.
+Many settings for retention are common to both retention policies and retention label policies. Use the following information to help you configure these settings to proactively retain content, delete content, or both - retain and then delete the content.
 
-For more information about policies for retention and how retention works in Microsoft 365, see [Learn about retention policies and retention labels](retention.md).
+For the scenarios that support these policies for retention, see:
+
+- [Create and configure retention policies](create-retention-policies.md).
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+
+Settings that are specific to each scenario are explained in their respective documentation. 
+
+For overview information about policies for retention and how retention works in Microsoft 365, see [Learn about retention policies and retention labels](retention.md).
 
 ## Scopes - adaptive and static
 
