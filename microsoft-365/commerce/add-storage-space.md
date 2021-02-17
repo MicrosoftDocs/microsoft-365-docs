@@ -64,9 +64,9 @@ For information about setting site collection storage limits, see [Manage site c
 If you haven't yet purchased extra storage for your subscription, you can do that.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. At the bottom of the **Purchase services** page, select **Add-ons**.
-3. Select **Office 365 Extra File Storage**.
-4. On the **Office 365 Extra File Storage** page, if shown, choose the base subscription, then enter the number of gigabytes of storage you want to add.
+2. At the bottom of the **Purchase services** page, in the **Add-ons** section, find **Office 365 Extra File Storage**, and select **Details**.
+3. On the product details page, select **Next**.
+4. If needed, choose the base subscription, then enter the number of gigabytes of storage you want to add.
 5. Select **Check out now**.
 6. On the **How does this look?** page, verify the number of gigabytes of storage you selected, review the pricing information, and then select **Next**.
 7. On the **Complete order** page, verify the total. If you need to make any changes, select **Edit order**. If the order requires a credit check, select the check box. When you're finished, select **Place order** \> **Go to Admin Home**.
