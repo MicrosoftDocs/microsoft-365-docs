@@ -34,15 +34,11 @@ Select a message title to open it in the reading pane. Every message contains a 
 
 ## Filter and sort
 
-::: moniker range="o365-worldwide"
-
 Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a filtered view of messages. For example, in this diagram the messages are tagged with the **Admin impact** tag.
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
-:::image type="content" source="../../media/messag-center-admin-impact.png" alt-text="Message center view sorted by Admin impact":::
-
-::: moniker-end
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact":::
 
 ::: moniker range="o365-germany"
 
@@ -144,9 +140,7 @@ You can also open a message and mark it as unread in the details panel.
 
 ## Archive and restore
 
-If you see a message that doesn't pertain to you, or maybe you've already acted on it, yYou can archive the message to remove it from Inbox. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins.
-
-::: moniker range="o365-worldwide"
+If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can archive the message to remove it from Inbox. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins. There are two ways to archive a message.
 
 - On the main page of the Message center, select a message, and then select **Archive** above the list of messages.
 
@@ -157,8 +151,6 @@ Need to get an archived message back? No problem.
 1. Select the **Archive** tab at the top of the Message center. A list of archived messages appears.
 
 2. Select the message, select **Restore**, and the message is restored to Inbox.
-
-::: moniker-end
 
 ::: moniker range="o365-germany"
 
