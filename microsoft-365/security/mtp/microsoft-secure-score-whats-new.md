@@ -74,9 +74,9 @@ The ability to create ServiceNow tickets through Secure Score by going to **Shar
 
 ## Incompatibility with Identity Secure Score and Graph API
 
-In the recent release of Microsoft Secure Score, an improved scoring model has been released. These changes allow for a more flexible and accurate view of your security posture. However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API.
+In the recent release of Microsoft Secure Score, an improved scoring model has been released. These changes allow for a more flexible and accurate view of your security posture. However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score.
 
-In time, Identity Secure Score and the Graph API will adopt the new scoring model. Until then, customers will see differences in the scores reported by Microsoft Secure Score, Identity Secure Score, and the Graph API. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
+In time, Identity Secure Score will adopt the new scoring model. Until then, customers will see differences in the scores reported by Microsoft Secure Score and the Identity Secure Score. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
 
 ## Updated improvement actions
 
