@@ -89,11 +89,11 @@ You can use the following permissions with a shared mailbox:
 
 ### Use the EAC to edit shared mailbox delegation
 
-1. In the EAC, go to **Recipients** \> **Shared**. Select the shared mailbox, and then select **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, go to **Recipients** \> **Shared**. Select the shared mailbox, and then select **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).
 
 2. Select **Mailbox delegation**.
 
-3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) or **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif) and then select the users you want to grant permissions to.
+3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
