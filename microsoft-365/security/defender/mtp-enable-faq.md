@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Read responses to the most commonly asked questions about turning on [Microsoft 365 Defender](microsoft-threat-protection.md), including required licenses and permissions, deploying support services, and initial settings.
+Read responses to the most commonly asked questions about turning on [Microsoft 365 Defender](microsoft-365-defender.md), including required licenses and permissions, deploying support services, and initial settings.
 
 For instructions on how to turn on the service, [read Turn on Microsoft 365 Defender](mtp-enable.md).
 
@@ -93,7 +93,7 @@ At the moment, it is not available.
 
 ## Related topics
 
-- [Microsoft 365 Defender overview](microsoft-threat-protection.md)
+- [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Turn on Microsoft 365 Defender](mtp-enable.md).
 - [Licensing requirements and other prerequisites](prerequisites.md)
 - [Deploy supported services](deploy-supported-services.md)

@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Learn about licensing and other requirements for provisioning and using [Microsoft 365 Defender](microsoft-threat-protection.md).
+Learn about licensing and other requirements for provisioning and using [Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## Licensing requirements
 Any of these licenses gives you access to Microsoft 365 Defender features in Microsoft 365 security center without additional cost:
@@ -72,6 +72,6 @@ Currently, Microsoft 365 Defender is *not* available to:
 - All US government institutions with commercial licenses
 
 ## Related topics
-- [Microsoft 365 Defender overview](microsoft-threat-protection.md)
+- [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Turn on Microsoft 365 Defender](mtp-enable.md)
 - [Manage access and permissions](mtp-permissions.md)

@@ -34,7 +34,7 @@ ms.technology: m365d
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Microsoft 365 Defender](microsoft-threat-protection.md) integrates various Microsoft security services to provide centralized detection, prevention, and investigation capabilities against sophisticated attacks. This article describes the supported services, their licensing requirements, the advantages and limitations associated with deploying one or more services, and links to how you can fully deploy them individually.
+[Microsoft 365 Defender](microsoft-365-defender.md) integrates various Microsoft security services to provide centralized detection, prevention, and investigation capabilities against sophisticated attacks. This article describes the supported services, their licensing requirements, the advantages and limitations associated with deploying one or more services, and links to how you can fully deploy them individually.
 
 ## Supported services
 A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses provides access to the following supported services and entitles you to use Microsoft 365 Defender in Microsoft 365 security center. [See licensing requirements](prerequisites.md#licensing-requirements)
@@ -81,7 +81,7 @@ Once you’ve deployed the supported services, [turn on Microsoft 365 Defender](
 
 ## Related topics
 
-- [Microsoft 365 Defender overview](microsoft-threat-protection.md)
+- [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Turn on Microsoft 365 Defender](mtp-enable.md)
 - [Microsoft Defender for Endpoint overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Microsoft Defender for Office 365 overview](../defender-365-security/office-365-atp.md)

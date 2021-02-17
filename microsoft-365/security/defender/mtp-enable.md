@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-threat-protection.md) unifies your incident response process by integrating key capabilities across Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft 365 security center.
+[Microsoft 365 Defender](microsoft-365-defender.md) unifies your incident response process by integrating key capabilities across Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft 365 security center.
 
 Microsoft 365 Defender automatically turns on when eligible customers with the required permissions visit Microsoft 365 security center. Read this article to understand various prerequisites and how Microsoft 365 Defender is provisioned.
 
@@ -89,7 +89,7 @@ Microsoft support staff can help provision or deprovision the service and relate
 - [Frequently asked questions](mtp-enable-faq.md)
 - [Licensing requirements and other prerequisites](prerequisites.md)
 - [Deploy supported services](deploy-supported-services.md)
-- [Microsoft 365 Defender overview](microsoft-threat-protection.md)
+- [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Defender for Office 365 overview](../defender-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
