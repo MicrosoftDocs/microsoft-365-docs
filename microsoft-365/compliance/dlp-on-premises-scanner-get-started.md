@@ -102,6 +102,9 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 ### Viewing DLP on-premises scanner in activity explorer and audit log
 
+> [!NOTE]
+> The on-premises scanner requires that auditing be enabled. In Microsoft 365 auditing is enabled by default.
+
 1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and select Activity explorer.
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your on-premises scanner locations.
