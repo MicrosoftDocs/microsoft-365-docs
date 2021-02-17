@@ -4,6 +4,7 @@ description: 'How to edit an existing topic in Microsoft Viva Topics.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
+audience: admin
 ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
