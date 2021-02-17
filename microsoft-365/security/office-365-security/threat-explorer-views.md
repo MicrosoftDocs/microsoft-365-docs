@@ -50,7 +50,6 @@ When you first open Explorer (or the real-time detections report), the default v
 |
  [!NOTE]
 > We will soon be extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days. This change is being tracked as part of roadmap item no. 70544, and is currently in a roll-out phase. 
->>>>>>> public
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
 
