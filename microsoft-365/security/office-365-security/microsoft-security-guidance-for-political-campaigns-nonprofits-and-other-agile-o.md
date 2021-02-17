@@ -30,8 +30,8 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
 
  **Summary:** Planning and implementation guidance for fast-moving organizations that have an increased threat profile.
 
@@ -65,6 +65,6 @@ For additional security features for demonstration or proof of concept, see [Off
 
 ## See Also
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Microsoft Cloud IT architecture resources](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+[Microsoft Cloud IT architecture resources](../../solutions/cloud-architecture-models.md)

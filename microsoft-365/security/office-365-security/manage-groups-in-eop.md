@@ -23,7 +23,7 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
--  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can create, modify, and remove the following types of groups:
 
@@ -52,7 +52,7 @@ You can manage groups in the Exchange admin center (EAC) and in standalone EOP P
 - For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Having problems? Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
+> Having problems? Ask for help in the [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) forum.
 
 ## Use the Exchange admin center to manage distribution groups
 
