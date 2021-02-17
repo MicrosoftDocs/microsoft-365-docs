@@ -108,9 +108,6 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 3. Open the [Audit log in the Compliance center](https://security.microsoft.com/auditlogsearch). During the public preview the DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 
 
-<!-->
-> [!TIP]
-> If you don't want events flowing into the Audit log, you can [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).-->
 
 ## Next steps
 Now that you have deployed a test policy for DLP on-premises locations and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
