@@ -55,13 +55,13 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
    > [!NOTE]
    > The storage used doesn't include changes made within the last 24-48 hours.
 
-After you've determined how much storage you're using, you can add or remove storage space for your subscription. To find out how much it will cost to add storage space, follow the steps in this article, and review the pricing information before you purchase.
+After you determine how much storage you're using, you can add or remove storage space for your subscription. To find out how much it will cost to add storage space, follow the steps in this article, and review the pricing information before you buy more.
   
 For information about setting site collection storage limits, see [Manage site collection storage limits](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits).
   
 ## Add storage to your subscription
 
-If you haven't yet purchased extra storage for your subscription, you can do that.
+If you haven't yet bought extra storage for your subscription, you can do that.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. At the bottom of the **Purchase services** page, in the **Add-ons** section, find **Office 365 Extra File Storage**, and select **Details**.
@@ -73,7 +73,7 @@ If you haven't yet purchased extra storage for your subscription, you can do tha
 
 ## Increase or decrease storage
 
-If you've already purchased extra file storage via the **Office 365 Extra File Storage** add-on, you can use these steps to increase or decrease the extra storage space for your subscription. You can reduce the storage to as low as 1 gigabyte. To remove all of the extra storage space, [contact support](../admin/contact-support-for-business-products.md).
+If you've already bought extra file storage via the **Office 365 Extra File Storage** add-on, you can use these steps to increase or decrease the extra storage space for your subscription. You can reduce the storage to as low as 1 gigabyte. To remove all of the extra storage space, [contact support](../admin/contact-support-for-business-products.md).
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the subscription that contains the **Office 365 Extra File Storage** add-on.

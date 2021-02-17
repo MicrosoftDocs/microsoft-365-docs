@@ -31,7 +31,7 @@ ms.custom:
 
 ::: moniker-end
 
-Many Microsoft 365 for business plans have add-ons that you can buy for your subscriptions. Add-ons provide additional features to enhance your subscription experience.
+Many Microsoft 365 for business plans have add-ons that you can buy for your subscriptions. Add-ons provide more features to enhance your subscription experience.
 
 There are two types of add-ons:
 
@@ -51,7 +51,7 @@ For information about Skype for Business add-ons, see [Skype for Business and Mi
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. At the bottom of the **Purchase services** page, in the **Add-ons** section, find the add-on that you want to buy, and select **Details**.
 3. On the product details page, select **Next**.
-4. If needed, complete any additional order information. This information might include selecting the subscription the add-on is for. When you’re finished, select **Check out now**.
+4. If needed, complete any other order information. This information might include selecting the subscription the add-on is for. When you’re finished, select **Check out now**.
 5. If needed, review the order and pricing information, then select **Next**.
 6. Choose a payment method, or add a new one, then select **Place order** > **Go to Admin Home**.
 
