@@ -26,7 +26,7 @@ Get the most out of your Microsoft 365 subscription with expert advice from smal
 
 Customers with current and eligible Microsoft 365 for business plan subscriptions can use Business Assist onboarding, migration, and management services.
 
-- Organizations with 5 or less seats
+- Organizations with 5 or less user licenses.
 - Business Assist is only available in the U.S.
 
 ## Business Assist services
