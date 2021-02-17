@@ -45,11 +45,11 @@ To see the options for licensing your users to benefit from Microsoft 365 compli
 
 ## Permissions required for records management
 
-Members of your compliance team who are responsible for records management need permissions to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group, which grants the **RecordManagement** role.
+Members of your compliance team who are responsible for records management need permissions to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group, which grants permissions for all features related to records management, including [disposition review and verification](disposition.md). 
 
-The permissions included in this role group don't include the permissions needed for [disposition review and verification](disposition.md), and even a global admin doesn't have this permission by default. To manage disposition, use the **Disposition Management** role, by creating a custom role group or by using a default role group that includes this role (such as **Compliance Administrator**).
+For a read-only role, you can create a new role group and add the **View-Only Record Management** role to this group. 
 
-For more information about these role groups and roles, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+For more information about role groups and roles, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
 
 For instructions to add users to role groups and assign roles, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 

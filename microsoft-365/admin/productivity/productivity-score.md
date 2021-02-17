@@ -35,7 +35,7 @@ We provide metrics, insights, and recommendations in two areas:
 
 - **People experiences:** Quantifies how the organization works using Microsoft 365 categories like content collaboration, mobility, communication, meetings, and teamwork.  
 
-    For each of the mentioned categories, we look at public research to identify some best practices and associated benefits in the form of organizational effectiveness . For example, [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf research    has shown that when people collaborate and share content in the cloud (instead of emailing attachments), they can save up to 100 minutes a week. Furthermore, we quantify the use of these best practices in your organization to help you see where you are on your digital transformation journey. 
+    For each of the mentioned categories, we look at public research to identify some best practices and associated benefits in the form of organizational effectiveness . For example, [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) research has shown that when people collaborate and share content in the cloud (instead of emailing attachments), they can save up to 100 minutes a week. Furthermore, we quantify the use of these best practices in your organization to help you see where you are on your digital transformation journey. 
 
 - **Technology experiences:** Your organization depends on reliable and well performing technology as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
 
@@ -75,13 +75,17 @@ For people experiences data, you need a Microsoft 365 for business or Office 365
 
 Productivity Score is only available in the Microsoft 365 Admin Center and can only be accessed by IT professionals who have one of the following roles:  
 
-- Global admin 
+- Global admin
 - Exchange admins
-- SharePoint admin 
-- Skype for Business admin 
-- Teams admin 
-- Global Reader 
-- Reports Reader 
+- SharePoint admin
+- Skype for Business admin
+- Teams admin
+- Global Reader
+- Reports Reader
+- Usage Summary Reports Reader
+
+> [!NOTE]
+> Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Productivity Score.
 
 Please note that the information is only intended to be used for furthering digital transformation using Microsoft 365, and should therefore be shared with discretion. 
 
@@ -136,6 +140,10 @@ This report helps organizations understand:
 [Learn more about the Business continuity report](https://aka.ms/bcrps)
 
 [Learn more about Microsoft Graph](https://docs.microsoft.com/graph/)
+
+> [!NOTE]
+> Users also have the option to get productivity insights from the [MyAnalytics dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+
 
 ## We want to hear from you
 

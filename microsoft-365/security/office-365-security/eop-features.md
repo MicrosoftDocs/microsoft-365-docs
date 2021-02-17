@@ -1,23 +1,27 @@
 ---
-title: "EOP features"
-f1.keywords:
-- NOCSH
+title: EOP features
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
-description: "The following table provides a list of features that are available in the Exchange Online Protection (EOP) hosted email filtering service."
+description: The following table provides a list of features that are available in the Exchange Online Protection (EOP) hosted email filtering service.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # EOP features
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 The following table provides a list of features that are available in the Exchange Online Protection (EOP) hosted email filtering service.
 

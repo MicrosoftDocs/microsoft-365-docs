@@ -18,6 +18,7 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150

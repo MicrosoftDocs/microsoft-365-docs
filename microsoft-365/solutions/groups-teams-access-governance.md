@@ -154,6 +154,10 @@ Additional resources:
 
 ## Related topics
 
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
+
 [Security and compliance in Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
 
 [Manage sharing settings in SharePoint](https://docs.microsoft.com/sharepoint/turn-external-sharing-on-or-off)

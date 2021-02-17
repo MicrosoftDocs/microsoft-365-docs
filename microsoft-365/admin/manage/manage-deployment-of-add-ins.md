@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -28,7 +30,7 @@ description: "Learn to deploy add-ins to users and groups in your organization b
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -134,7 +136,7 @@ Updates for add-ins happen as follows:
 
 [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md)
 
-[Building Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins-fundamentals).
+[Build your first Word task pane add-in](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator).
 
 [Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md)
   

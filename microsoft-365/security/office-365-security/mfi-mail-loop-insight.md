@@ -1,24 +1,30 @@
 ---
-title: "Fix possible mail loop insight"
-f1.keywords:
-- NOCSH
+title: Fix possible mail loop insight
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use the Fix possible mail loop insight in the Mail flow dashboard in the Security & Compliance Center to identify and fix mail loops in their organization."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use the Fix possible mail loop insight in the Mail flow dashboard in the Security & Compliance Center to identify and fix mail loops in their organization.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Fix possible mail loop insight in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Mail loops are bad because:
 

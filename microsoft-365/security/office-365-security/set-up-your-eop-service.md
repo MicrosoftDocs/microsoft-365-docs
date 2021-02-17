@@ -1,40 +1,46 @@
 ---
-title: "Set up your standalone EOP service"
-f1.keywords:
-- NOCSH
+title: Set up your standalone EOP service
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
-ms.custom:
-- seo-marvel-apr2020
+
+ms.custom: 
+  - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: "Admins can learn how to setup standalone Exchange Online Protection (EOP) to protect on-premises email environments."
+description: Admins can learn how to set up standalone Exchange Online Protection (EOP) to protect on-premises email environments.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Set up your standalone EOP service
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 This topic explains how to set up standalone Exchange Online Protection (EOP). If you landed here from the Office 365 domains wizard, go back to the Office 365 domains wizard if you don't want to use Exchange Online Protection. If you're looking for more information on how to configure connectors, see [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> This topic assumes you have on-premises mailboxes and you want to protect them with EOP, which is known as a standalone scenario. If you want to host all of your mailboxes in the cloud with Exchange Online, you don't have to complete all of the steps in this topic. Go to [Compare Exchange Online plans](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) to sign up and purchase cloud mailboxes. If you want to host some of your mailboxes on premises and some in the cloud, this is known as a hybrid scenario. It requires more advanced mail-flow settings. [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid) explains hybrid mail flow and has links to resources that show how to set it up.
+> This topic assumes you have on-premises mailboxes and you want to protect them with EOP, which is known as a standalone scenario. If you want to host all of your mailboxes in the cloud with Exchange Online, you don't have to complete all of the steps in this article. Go to [Compare Exchange Online plans](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) to sign up and purchase cloud mailboxes.
+>
+> If you want to host some of your mailboxes on premises and some in the cloud, this is known as a hybrid scenario. It requires more advanced mail-flow settings. [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid) explains hybrid mail flow and has links to resources that show how to set it up.
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete this task: 1 hour
 
-- You need to be assigned permissions before you can perform these procedures. Specifically, you need the Remote and Accepted Domains role, which is assigned to the MailFlowAdministrator and OrganizationManagement (global admins) role groups by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- You need to be assigned permissions in Exchange Online Protection before you can do the procedures in this article. Specifically, you need the **Remote and Accepted Domains** role, which is assigned to the **Organization Management** (global admins) and **Mail Flow Administrator** role groups by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - If you haven't signed up for EOP, visit [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) and choose to buy or try the service.
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Having problems? Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
@@ -91,4 +97,6 @@ At this point, you've verified service delivery for a properly configured Outbou
 - If you want to run an outbound email test, you can send an email message from a user in your organization to a web-based email account and confirm that the message is received.
 
 > [!TIP]
-> When you've completed your setup, you don't have to perform extra steps to make EOP remove spam and malware. EOP removes spam and malware automatically. However, you can fine tune your settings based on your business requirements. For more information, see [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md) and [Configure spoof intelligence](learn-about-spoof-intelligence.md). <br/><br/> Now that your service is running, we recommend reading [Best practices for configuring EOP](best-practices-for-configuring-eop.md), which describes recommended settings and considerations for after you set up EOP.
+> When you've completed your setup, you don't have to perform extra steps to make EOP remove spam and malware. EOP removes spam and malware automatically. However, you can fine tune your settings based on your business requirements. For more information, see [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md) and [Configure spoof intelligence](learn-about-spoof-intelligence.md).
+>
+> Now that your service is running, we recommend reading [Best practices for configuring EOP](best-practices-for-configuring-eop.md), which describes recommended settings and considerations for after you set up EOP.

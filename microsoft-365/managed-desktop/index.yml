@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Managed Desktop documentation # < 60 chars
-summary: Microsoft Managed Desktop brings together Microsoft 365 Enterprise, cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs. # < 160 chars
+summary: Microsoft Managed Desktop is a unique ITaaS solution that combines endpoint management and security monitoring in a way gives users a secure and productive device experience that IT pros can trust. # < 160 chars
 
 metadata:
   title: Microsoft Managed Desktop documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: jaimeo #Required; your GitHub user alias, with correct capitalization.
   ms.author: jaimeo #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/13/2020 #Required; mm/dd/yyyy format.
+  ms.date: 12/04/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -37,26 +37,39 @@ landingContent:
             url: /microsoft-365/managed-desktop/working-with-managed-desktop/
   
   # Card (optional)
-  - title: New articles and blog posts
+  - title: Articles and blog posts
     linkLists:
-      - linkListType: whats-new
+      - linkListType: learn
         links:
-          - text: "[Roadmap] Your Complete Roadmap to Microsoft Managed Desktop"
-            url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
-          - text: "[Whitepaper] Study: Rising Demand for Managed Desktop Services"
-            url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
-          - text: "[E-book] Delight your company with a modern workplace"
-            url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+          - text: "[Blog] Workplace devices are the new \"free snacks\""
+            url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/workplace-devices-are-the-new-free-snacks/ba-p/1675936
+          - text: "[Whitepaper] Study: Microsoft Managed Desktop saves time and costs"
+            url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/study-microsoft-managed-desktop-saves-time-and-costs/ba-p/1403408
+          - text: "[Whitepaper] Microsoft Managed Desktop Can Help Boost Engagement"
+            url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/microsoft-managed-desktop-can-help-boost-engagement/ba-p/1031932
+          - text: "[Whitepaper] SA Power Networks deploys Microsoft Managed Desktop to satisfy evolving user needs"
+            url: https://customers.microsoft.com/story/832888-sa-power-networks-case-study-energy-microsoft-managed-desktop
   
   # Card (optional)
-  - title: Videos
+  - title: Benefits and highlights
     linkLists:
       - linkListType: video
         links:
-          - text: Learn about the benefits of Microsoft Managed Desktop from the director of engineering at Lloyds Banking Group.
+          - text: Microsoft Managed Desktop - IT Admin experience
+            url: https://www.youtube.com/watch?v=UQ8VRSysUXw&feature=youtu.be
+          - text: What enterprises love about Microsoft Managed Desktop
+            url: https://www.microsoft.com/en-us/videoplayer/embed/RE4yjfL
+          - text: Microsoft Managed Desktop - Fantastic device experiences
+            url: https://www.microsoft.com/en-us/videoplayer/embed/RE41urx?autoplay=false
+          - text: Microsoft Managed Desktop - Security operations
+            url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+          - text: Microsoft Managed Desktop - Change and release process
+            url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+          - text: The Shiproom / IGM / Episode 29 - Prioritizing user experience with security
+            url: https://www.youtube.com/watch?v=im11J9C1MTA&feature=youtu.be
+          - text: The Shiproom / Lloyds Banking Group / Episode 25 - Leadership amid rapid transformation
             url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
-          - text: Highlights of Microsoft Managed Desktop in the annual Ignite conference
-            url: /microsoft-365/managed-desktop/service-description
+            
 
 
 

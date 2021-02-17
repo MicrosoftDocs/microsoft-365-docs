@@ -1,23 +1,27 @@
 ---
-title: "Feature permissions in EOP"
-f1.keywords:
-- NOCSH
+title: Feature permissions in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
-description: "Learn about the permission that are required for tasks in standalone Exchange Online Protection"
+description: Learn about the permission that are required for tasks in standalone Exchange Online Protection
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Permissions in standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Standalone Exchange Online Protection (EOP) without Exchange Online mailboxes uses the Role Based Access Control (RBAC) permissions model to easily grant permissions to your admins. You can use the permission features in standalone EOP to get your new organization up and running quickly.
 
