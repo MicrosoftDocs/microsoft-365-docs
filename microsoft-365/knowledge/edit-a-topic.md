@@ -80,8 +80,8 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
     You can also use the <b>From a link</b> option to add a file or page by providing the URL. 
 
-> [!Note] 
-> Files and pages that you add must be located within the same Microsoft 365 tenant. If you want to add a link to an external resource in the topic, you can add it through the canvas icon in step 9.
+   > [!Note] 
+   > Files and pages that you add must be located within the same Microsoft 365 tenant. If you want to add a link to an external resource in the topic, you can add it through the canvas icon in step 9.
 
 6. The <b>Suggested files and pages</b> section shows files and pages that AI suggests to be associated to the topic.
 
