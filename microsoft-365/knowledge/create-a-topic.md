@@ -49,15 +49,17 @@ You can create a new topic from two locations:
 
 ### To create a new topic:
 
-1. In the **Name this topic** section, type the name of the new topic.
+1. Select the option to create a new Topic Page from the ribbon on the Manage Topics page.
+
+2.   In the **Name this topic** section, type the name of the new topic.
 
     ![Name this topic](../media/knowledge-management/k-new-topic-page.png) </br> 
 
 
-2. In the <b>Alternate Names</b> section, type any other names that the topic might be referred to. 
+3. In the <b>Alternate Names</b> section, type any other names that the topic might be referred to. 
 
     ![Alternate names](../media/knowledge-management/alt-names.png) </br> 
-3. In the <b>Description</b> section, type a couple of sentences that describe the topic. 
+4. In the <b>Description</b> section, type a couple of sentences that describe the topic. 
 
     ![Description of the topic](../media/knowledge-management/description.png)</br>
 
