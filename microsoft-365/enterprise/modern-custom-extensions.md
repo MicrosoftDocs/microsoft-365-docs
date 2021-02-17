@@ -41,7 +41,7 @@ Additionally, if there are too many extensions on a page they can impact the pag
 - **Improvement Opportunities** (yellow) If **five** or more extensions are used they will be highlighted in this section as a warning until seven or more are used which will then be highlighted as Attention Required.
 - **No action required** (green): No extension is taking longer than one second to load.
 
-If an extension is impacting page load time or there are too many extsnions on the page, the result appears in the **Attention required** section of the results. Click the result to see details about which extension is loading slowly or too many extensions has been highlighted. Future updates to the Page Diagnostics for SharePoint tool may include updates to analysis rules, so please ensure you always have the latest version of the tool.
+If an extension is impacting page load time or there are too many extensions on the page, the result appears in the **Attention required** section of the results. Click the result to see details about which extension is loading slowly or too many extensions has been highlighted. Future updates to the Page Diagnostics for SharePoint tool may include updates to analysis rules, so please ensure you always have the latest version of the tool.
 
 ![Page load time results](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
