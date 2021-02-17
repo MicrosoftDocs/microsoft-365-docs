@@ -4,6 +4,7 @@ description: 'How to edit an existing topic in Microsoft Viva Topics.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
+audience: admin
 ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -28,7 +29,7 @@ localization_priority: Normal
 In Viva Topics, you can edit an existing topic. You may need to do this if you want to correct or add additional information to an existing topic page. 
 
 > [!Note] 
-> While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that information that you manually add when editing an existing topic is visible to all users who have permissions to view topics. 
+> While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that topic description and people information that you manually add when editing an existing topic is visible to all users who have permissions to view topics. 
 
 ## Requirements
 
@@ -79,11 +80,14 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
     You can also use the <b>From a link</b> option to add a file or page by providing the URL. 
 
+   > [!Note] 
+   > Files and pages that you add must be located within the same Microsoft 365 tenant. If you want to add a link to an external resource in the topic, you can add it through the canvas icon in step 9.
+
 6. The <b>Suggested files and pages</b> section shows files and pages that AI suggests to be associated to the topic.
 
    ![Suggested files and pages section](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    You can make a suggested file or page to a pinned file or page by selecting the pinned icon.
+    You can change a suggested file or page to a pinned file or page by selecting the pinned icon.
 
 7.  The <b>Related sites</b> section shows sites that have information about the topic. 
 
@@ -104,6 +108,14 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
    The related topic you added will display as a connected topic.
 
    ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
+
+   To remove a related topic, select the topic you want to remove, then select the <b>Remove topic</b> icon.</br>
+ 
+   ![Remove related topic](../media/knowledge-management/remove-related.png)</br>  
+
+   Then select <b>Remove</b>.</br>
+
+   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
 9. You can also add static items to the page — such as text, images, or links - by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
