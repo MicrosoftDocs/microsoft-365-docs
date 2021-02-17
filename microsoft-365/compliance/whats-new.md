@@ -31,6 +31,25 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 > Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[What's new in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## January 2021
+
+### Support for card content in Teams
+
+The following Microsoft 365 compliance solutions now support the detection of [card content](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards) generated through apps in Teams messages:
+
+- **Core and Advanced eDiscovery**. Card content can now be [placed on hold](create-ediscovery-holds.md#preserve-card-content) or included in [searches](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#search-for-card-content) (applies to content search as well).
+- **Audit**. Card activity is now [recorded to the audit log](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities).
+- **Retention policies**. Can now use retention policies to [retain and delete card content](retention-policies-teams.md#whats-included-for-retention-and-deletion).
+
+### Information governance and records management
+
+[New assessment](retention-regulatory-requirements.md#new-zealand-public-records-act) to address using information governance and records management to help meet compliance obligations for the New Zealand Public Records Act.
+
+### Sensitivity labels
+
+- Sensitivity labels are now supported for US Government tenants (GCC and GCC-H).
+- New [automatic labeling](sensitivity-labels-office-apps.md) support for macOS.
+
 ## December 2020
 
 ### Spotlight: New content for insider risk solutions
@@ -74,7 +93,7 @@ The [Records Management admin role group](get-started-with-records-management.md
 
 ### Sensitivity labels
 
-- [Automatically label data in Azure Purview (preview)](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label). You can now create and automatically apply sensitivity labels to assets in Azure Purview, such as files in Azure Blob storage and database columns in SQL Server.
+- [Automatically label data in Azure Purview (preview)](https://docs.microsoft.com/azure/purview/create-sensitivity-label). You can now create and automatically apply sensitivity labels to assets in Azure Purview, such as files in Azure Blob storage and database columns in SQL Server.
 - [Require users to apply a label to items](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents). Also known as ‘mandatory labeling’, this new option requires users to choose and apply a sensitivity label under the specific scenarios.
 
 ## November 2020
@@ -235,29 +254,3 @@ Retention-related admin activity is now recorded and available to review in the 
 
 - When [adding a collection to a review set](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review), you can now include modern attachments (also called “cloud attachments”) and SharePoint document versions.
 - New [direct download export experience](export-documents-from-review-set.md), eliminating the need to use Azure Storage Explorer to download case content.
-
-## July 2020
-
-### Spotlight on help docs
-
-To help you understand which compliance solutions are used to protect and govern your organization’s sensitive data, we created two new landing pages with overviews of how the solutions work together to achieve those goals, including links to related docs so you can dive in further.
-
-[Microsoft Information Protection in Microsoft 365](information-protection.md)<br>
-[Microsoft Information Governance in Microsoft 365](manage-Information-governance.md)
-
-### Advanced eDiscovery: Add non-custodial data sources to your cases
-
-Add data to a case without having to associate it with a custodian (known as [non-custodial data sources](non-custodial-data-sources.md)). And if you need to place this non-custodial data on hold, you’ll be able to do so using our new Advanced Indexing feature.
-
-### Data connectors: HR connector enhancements
-
-(In preview) A new version of the [HR connector](import-hr-data.md) lets you import data related to job level changes, performance reviews, and performance improvement plans. This data can then be used in several [insider risk policies](insider-risk-management-policies.md) to detect related activity.
-
-### Retention labels: New support for email
-
-You can now create a [retention label](retention.md#retention-labels) to start retaining email based on when messages were labeled. This doesn’t apply to calendar items, which will be retained based on when the item is sent.
-
-### Sensitivity labels: New feature and an improvement
-
-- (In preview) When configuring encryption settings for a label, look for the new option to use [Double Key Encryption](encryption-sensitivity-labels.md#double-key-encryption) to further protect labeled files and emails.
-- When creating or deleting sensitivity labels or creating, editing, or deleting their label policies, changes now synchronize within 1 hour to all users, apps, and services.

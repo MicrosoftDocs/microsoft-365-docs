@@ -24,6 +24,11 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, both users and admins have several different methods for reporting email messages and files to Microsoft.
 
 ****
@@ -37,8 +42,10 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 |[Report junk and phishing email in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Use the built-in capabilities in Outlook on the web for organizations with Exchange Online mailboxes (not available in standalone EOP). <p> Messages that users report are available in [the Admin Submissions portal](admin-submission.md). <p> You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).|
 |[Report junk and phishing email in Outlook for iOS and Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Use the built-in capabilities in Outlook for iOS and Android for organizations with Exchange Online mailboxes (not available in standalone EOP). <p> Messages that users report are available in [the Admin Submissions portal](admin-submission.md). <p> You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).|
 |[Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Manually send attached messages to specific Microsoft email addresses for spam, not spam, and phishing.|
-|[Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Learn how to create a mail flow rule (also known as a transport rule) that notifies you when users report messages to Microsoft for analysis.
-|||
+|[Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Learn how to create a mail flow rule (also known as a transport rule) that notifies you when users report messages to Microsoft for analysis.|
 |[Submit malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use the Microsoft Security Intelligence site to submit attachments and other files.|
 
 If the spam or phishing messages were quarantined instead of delivered, users can report the messages to Microsoft from the Quarantine portal in the Security & Compliance Center. For details, see [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).
+
+> [!NOTE]
+> Data from submissions to Microsoft resides in the Office 365 compliance boundary in North American data centers. The data is reviewed by analysts on the engineering team to help improve the effectiveness of the filters.

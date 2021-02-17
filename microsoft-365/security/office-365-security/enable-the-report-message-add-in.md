@@ -24,6 +24,10 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
@@ -48,6 +52,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
   - Outlook included with Microsoft 365 apps for Enterprise
+  - Outlook app for iOS and Android
 
 - The Report Message add-in is not available for mailboxes in on-premises Exchange organizations.
 

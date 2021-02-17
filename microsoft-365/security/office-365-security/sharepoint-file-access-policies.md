@@ -22,6 +22,12 @@ ms.technology: mdo
 
 # Policy recommendations for securing SharePoint sites and files
 
+**Applies to**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- SharePoint Online 
+
+
 This article describes how to implement the recommended identity and device-access policies to protect SharePoint and OneDrive for Business. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
 
 These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in [the overview](microsoft-365-policies-configurations.md).
@@ -45,7 +51,7 @@ The following table lists the policies you either need to review and update or c
 |Protection level|Policies|More information|
 |---|---|---|
 |**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
-||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include SharePoint in the assignment of cloud apps.|
+||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Include SharePoint in the assignment of cloud apps.|
 ||[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
 ||[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include SharePoint in list of cloud apps.|
 ||[Use app enforced restrictions in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Add this new policy. This tells Azure Active Directory (Azure AD) to use the settings specified in SharePoint. This policy applies to all users, but only affects access to sites included in SharePoint access policies.|
