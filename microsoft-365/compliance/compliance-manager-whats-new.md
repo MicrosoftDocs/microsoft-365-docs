@@ -18,7 +18,7 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 # What's new in Microsoft Compliance Manager
 
-**In this article:** Learn about planned and recent updates in Compliance manager, including updated assessments, new assessment templates, new actions, and more.
+**In this article:** Learn about planned and recent updates in Compliance Manager, including updated assessments, new assessment templates, new actions, and more.
 
 ## Planned updates
 
@@ -31,10 +31,12 @@ Here are some updates in the works for Compliance Manager.
 
 ### New assessment templates
 
-We published approximately 70 new assessment templates, including:
-- a
-- b
-- c
+We published 75 new assessment templates, including:
+- notable template a
+- notable template b
+- notable template c
+- notable template d
+- notable template e
 
 Check out the complete list of [assessment templates](compliance-manager-templates-list.md).
 
