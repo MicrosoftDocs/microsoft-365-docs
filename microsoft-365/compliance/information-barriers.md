@@ -42,7 +42,7 @@ To learn more about the user experience with information barriers, see:
 - [Information barriers in OneDrive](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> Currently, information barriers do not apply to email communications. In addition, information barriers are independent from [compliance boundaries](set-up-compliance-boundaries.md).<p> Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.)
+> Currently, information barriers do not apply to email communications. In addition, information barriers are independent from [compliance boundaries](set-up-compliance-boundaries.md).<p> Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.)
 
 ## What happens with information barriers
 
@@ -84,7 +84,7 @@ Information barriers are rolling out now, and are included in subscriptions, suc
 - Microsoft 365 Compliance E5/A5
 - Microsoft 365 Insider Risk Management
 
-For more information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 To [define or edit information barrier policies](information-barriers-policies.md), you must be assigned one of the following roles:
 

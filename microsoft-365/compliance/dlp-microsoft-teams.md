@@ -31,7 +31,6 @@ To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Serv
 
 Recently, [data loss prevention](data-loss-prevention-policies.md) (DLP) capabilities were extended to include Microsoft Teams chat and channel messages, **including private channel messages**.
 
-
 If your organization has DLP, you can now define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session. Here are some examples of how this protection works:
 
 - **Example 1: Protecting sensitive information in messages**. Suppose that someone attempts to share sensitive information in a Teams chat or channel with guests (external users). If you have a DLP policy defined to prevent this, messages with sensitive information that are sent to external users are deleted. This happens automatically, and within seconds, according to how your DLP policy is configured.
@@ -92,7 +91,14 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 4. In the **Status** column, turn the policy on for **Teams chat and channel messages**.<br/>![DLP for Teams chats and channels](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts to include or exclude. Then choose **Next**.
+5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations**. You can specify:
+    1. up to 1000 individual accounts to include or exclude
+    1. distribution lists and security groups to include or exclude. **This is a public preview feature.**
+    <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
+    
+6. Then choose **Next**.
+
+
 
 6. Click **Save**.
 
@@ -111,7 +117,10 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 4. On the **Name your policy** tab, specify a name and description for the policy, and then choose **Next**.
 
-5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations** and specify which accounts to include or exclude. Then choose **Next**.
+5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations**. You can specify:
+    1. up to 1000 individual accounts to include or exclude
+    1. distribution lists and security groups to include or exclude. **This is a public preview feature.**
+    <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
 ![DLP policy locations](../media/dlp-teams-selectlocationsnewpolicy.png)
 

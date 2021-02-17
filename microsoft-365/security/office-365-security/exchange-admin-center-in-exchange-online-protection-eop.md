@@ -24,6 +24,8 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 The Exchange admin center (EAC) is a web-based management console for standalone Exchange Online Protection (EOP).
 

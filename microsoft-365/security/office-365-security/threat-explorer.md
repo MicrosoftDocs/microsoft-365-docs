@@ -24,7 +24,13 @@ ms.prod: m365-security
 
 # Threat Explorer and Real-time detections
 
-If your organization has [Microsoft Defender for Office 365](office-365-atp.md) and you have the [necessary permissions](#required-licenses-and-permissions), you have access to *Explorer* or *Real-time detections*, which were formerly *Real-time reports*. ([See what's new.](#new-features-in-threat-explorer-and-real-time-detections)) In the Security & Compliance Center, go to **Threat management**, and then select **Explorer** _or_ **Real-time detections**.
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+
+If your organization has [Microsoft Defender for Office 365](office-365-atp.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
+
 
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
@@ -287,7 +293,7 @@ These new features are outlined below.
 
 ### Preview email header and download email body
 
-You can now preview an email header and download the email body in Threat Explorer Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
+You can now preview an email header and download the email body in Threat Explorer Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails in all-email messages view. However, viewing email header does not require any additional role (other than what is required to view messages in Threat Explorer).
 
 Explorer and Real-time detections will also get new fields that provide a more complete picture of where your email messages land. These changes  make hunting easier for Security Ops. But the main result is you can know the location of problem email messages at a glance.
 
@@ -452,7 +458,7 @@ In addition to the scenarios outlined in this article, you have many more report
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
-- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Automated investigation and response in Microsoft Threat Protection](../mtp/mtp-autoir.md)
 
 ## Required licenses and permissions
 

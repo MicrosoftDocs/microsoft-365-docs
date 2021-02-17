@@ -20,6 +20,10 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this article will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
 
@@ -29,7 +33,7 @@ Upon logging in, the Microsoft 365 admin center provides information about the s
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
+[Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md)
 
 [Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
