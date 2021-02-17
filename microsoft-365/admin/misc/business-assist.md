@@ -31,7 +31,7 @@ Customers with current and eligible Microsoft 365 for business plan subscription
 
 ## Business Assist services
 
-Here's the list of all the services you get with Business Assist
+Here's the list of all the services you get with Business Assist.
 
 - Pre-onboarding consultation: Create an onboarding plan tailored to your needs and receive expert advice on how to achieve your productivity goals.
 - Migration assistance: Get easy and fast assistance with moving all your current files​.
