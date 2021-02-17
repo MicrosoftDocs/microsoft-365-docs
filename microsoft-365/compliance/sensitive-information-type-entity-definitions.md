@@ -497,10 +497,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10-11 digits:
-- 1st digit is in the range 2-6
-- 9th digit is a check digit
-- 10th digit is the issue digit
-- 11th digit (optional) is the individual number
+- First digit is in the range 2-6
+- Nine digit is a check digit
+- Tenth digit is the issue digit
+- Eleventh digit (optional) is the individual number
 
 ### Checksum
 
@@ -12763,11 +12763,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-14 digits containing 2 forward slashes
+14 digits containing two forward slashes
   
 ### Pattern
 
-14 digits and 2 forward slashes:
+14 digits and two forward slashes:
   
 - five digits 
 - a forward slash
@@ -16198,11 +16198,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-13 digit number
+13-digit number
 
 ### Pattern
 
-13 digit number:
+13-digit number:
 
 - three digits - 756
 - an optional dot
@@ -16370,7 +16370,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
-## Taiwan resident certificate (ARC/TARC) number
+## Taiwan-resident certificate (ARC/TARC) number
 
 ### Format
 
