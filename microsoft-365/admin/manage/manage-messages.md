@@ -146,8 +146,6 @@ You can also open a message and mark it as unread in the details panel.
 
 If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can archive the message to remove it from Inbox. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins. There are two ways to archive a message.
 
-::: moniker range="o365-worldwide"
-
 - On the main page of the Message center, select a message, and then select **Archive** above the list of messages.
 
 - Open the message, and then select **Archive** on the top of the message pane.
@@ -157,40 +155,6 @@ Need to get an archived message back? No problem.
 1. Select the **Archive** tab at the top of the Message center. A list of archived messages appears.
 
 2. Select the message, select **Restore**, and the message is restored to Inbox.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-There are two ways to archive a message.
-  
-- Select the X that appears to the right of the Message ID. The message is removed from your list. Or,
-
-- Open the message, and then select **Archive** at the top of the message.
-
-Need to get a dismissed message back? No problem.
-  
-1. Select the **Archived messages** filter from the **Views** drop-down menu. A list of archived messages appears.
-
-2. Select **Restore** to the right of the Message ID, and the message is restored to active messages.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-There are two ways to archive a message.
-  
-- Select the X that appears to the right of the Message ID. The message is removed from your list. Or,
-
-- Open the message, and then select **Archive** at the top of the message.
-
-Need to get an archived message back? No problem.
-  
-1. Select the **Archived messages** filter from the **Views** drop-down menu. A list of archived messages appears.
-
-2. Select **Restore** to the right of the Message ID, and the message is restored to active messages.
-
-::: moniker-end
 
 ## Favorite messages
 
