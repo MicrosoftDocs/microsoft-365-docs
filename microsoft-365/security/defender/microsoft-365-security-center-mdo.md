@@ -30,7 +30,7 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 
-The improved [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
+The improved [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
 If you are familiar with the Office 365 Security and Compliance portal (protection.office.com), this article describes some of the changes and improvements in the Microsoft 365 security center.
 
@@ -54,7 +54,7 @@ No changes to these areas:
 - [Policies & Rules](/microsoft-365/compliance/alert-policies)
 - [Campaign](/microsoft-365/security/defender-365-security/campaigns)
 - [Submissions](/microsoft-365/security/defender-365-security/admin-submission)
-- [Review](/microsoft-365/security/mtp/mtp-action-center)
+- [Review](/microsoft-365/security/defender/mtp-action-center)
 - [Threat Tracker](/microsoft-365/security/defender-365-security/threat-trackers)
 
 Also, check the **Related Information** section at the bottom of this article.
@@ -110,7 +110,7 @@ Get threat intelligence from expert Microsoft security researchers. Threat Analy
 - Enhanced experience for quickly identifying and using actionable information in the reports. 
 You can access Threat analytics either from the upper left navigation bar in the Microsoft 365 security center, or from a dedicated dashboard card that shows the top threats for your organization. 
 
-Learn more about how to [track and respond to emerging threats with threat analytics](https://docs.microsoft.com/microsoft-365/security/mtp/threat-analytics)
+Learn more about how to [track and respond to emerging threats with threat analytics](https://docs.microsoft.com/microsoft-365/security/defender/threat-analytics)
 
 ### Email & collaboration
 
@@ -174,8 +174,8 @@ The data from this query will appear in the results panel below the query itself
 
 ## Related information
 - [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
-- [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
+- [The Action center](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center)
 - [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
-- [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
+- [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-emails-devices)
 - [Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
 - [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/defender-365-security/attack-simulation-training) and [create a payload for training your people](https://docs.microsoft.com/microsoft-365/security/defender-365-security/attack-simulation-training-payloads)

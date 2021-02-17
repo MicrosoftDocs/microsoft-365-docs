@@ -168,9 +168,9 @@ Keep exploring the features and capabilities in the Microsoft 365 security cente
 
 - [Manage incidents and alerts](manage-incidents.md)
 - [Track and respond to emerging threats with threat analytics](threat-analytics.md)
-- [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-- [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
-- [Custom detection rules](https://docs.microsoft.com/microsoft-365/security/mtp/custom-detection-rules)
+- [The Action center](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center)
+- [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-emails-devices)
+- [Custom detection rules](https://docs.microsoft.com/microsoft-365/security/defender/custom-detection-rules)
 - [Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
 - [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/defender-365-security/attack-simulation-training) and [create a payload for training your teams](https://docs.microsoft.com/microsoft-365/security/defender-365-security/attack-simulation-training-payloads)
  

@@ -71,7 +71,7 @@ Microsoft Defender for Identity enables security operations (SecOps) analysts an
 
 ## Step 3: Turn on Microsoft 365 Defender
 
-[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) combines signals and orchestrates capabilities into a single solution. With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
+[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection) combines signals and orchestrates capabilities into a single solution. With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
 
 Microsoft 365 Defender unifies alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, and Microsoft Cloud App Security) into a single pane of glass experience. After you have configured one or more of your Defender for Office 365 services, turn on Microsoft 365 Defender. New features are added continually to Microsoft 365 Defender; consider opting in to receive preview features.
 
@@ -79,14 +79,14 @@ Microsoft 365 Defender unifies alerts, incidents, automated investigation and re
 
 ![Process for deploying Microsoft 365 Defender](../media/solutions-architecture-center/deploy-mtp-steps.png) 
 
-1. [Review the prerequisites](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
-2. [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
-3. [Opt in for preview features](https://docs.microsoft.com/microsoft-365/security/mtp/preview).
+1. [Review the prerequisites](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites).
+2. [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable).
+3. [Opt in for preview features](https://docs.microsoft.com/microsoft-365/security/defender/preview).
 
 ### More information about Microsoft 365 Defender
 
-- [What is Microsoft 365 Defender?](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
-- [What's new in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [What is Microsoft 365 Defender?](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- [What's new in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/whats-new)
 
 ## Step 4: Configure Microsoft Defender for Office 365
 
@@ -156,19 +156,19 @@ After you have set up and deployed your threat protection services and capabilit
 ![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
 
 The Microsoft 365 security center is specifically intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
-- View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
-- [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting) on the status of your identities, data, devices, apps, and infrastructure.
-- Connect the dots on alerts through [incidents](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue).
-- Use [automated investigation and remediation](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir) to address threats.
-- [Proactively hunt for threats](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview), such as intrusion attempts or breach activity affecting your email, data, devices, and identities.
-- [Understand the latest attack campaigns](https://docs.microsoft.com/microsoft-365/security/mtp/latest-attack-campaigns) and techniques with threat analytics.
+- View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
+- [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) on the status of your identities, data, devices, apps, and infrastructure.
+- Connect the dots on alerts through [incidents](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue).
+- Use [automated investigation and remediation](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir) to address threats.
+- [Proactively hunt for threats](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview), such as intrusion attempts or breach activity affecting your email, data, devices, and identities.
+- [Understand the latest attack campaigns](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) and techniques with threat analytics.
 - ... and more!
 
 ### More information about the Microsoft 365 security center
 
-- [Get started with the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
-- [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting).
-- [See the security portals in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/portals).
+- [Get started with the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center).
+- [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting).
+- [See the security portals in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/defender/portals).
 
 ## Step 8: Train users
 

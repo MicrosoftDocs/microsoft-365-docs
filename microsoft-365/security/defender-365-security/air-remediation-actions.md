@@ -70,4 +70,4 @@ Microsoft Defender for Office 365 includes remediation actions to address variou
 ## Related articles
 
 - [Learn about automated investigation in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Learn about capabilities in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Learn about capabilities in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)

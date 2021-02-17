@@ -60,11 +60,11 @@ The Skype for Business integration provides a way for analysts to communicate wi
 ## Microsoft 365 Defender
 With Microsoft 365 Defender, Microsoft Defender for Endpoint and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks. 
  
-[Learn more about Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+[Learn more about Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
 
 
 ## Related topics
 - [Configure integration and other advanced features](advanced-features.md)
-- [Microsoft 365 Defender overview](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
-- [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)
+- [Microsoft 365 Defender overview](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
 - [Protect users, data, and devices with Conditional Access](conditional-access.md)

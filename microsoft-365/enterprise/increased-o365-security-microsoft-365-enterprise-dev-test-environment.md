@@ -106,7 +106,7 @@ Microsoft Secure Score shows your security posture as a number, which indicates 
 2. On the **Overview**  tab, note your current Secure Score and how it compares with the global average and subscriptions with a similar number of licenses.
 3. On the **Improvement actions** tab, read through the list of actions you can take to increase your score.
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
 
 ## Next steps
 

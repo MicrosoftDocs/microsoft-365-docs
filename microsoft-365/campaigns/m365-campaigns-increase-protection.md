@@ -31,7 +31,7 @@ This article helps you increase the protection in your Microsoft 365 subscriptio
 
 Before you begin, check your Microsoft Secure Score. Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal isn't to achieve the max score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
 
 ## Raise the level of protection against malware in mail
 

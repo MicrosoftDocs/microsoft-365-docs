@@ -458,7 +458,7 @@ In addition to the scenarios outlined in this article, you have many more report
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
-- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
 
 ## Required licenses and permissions
 

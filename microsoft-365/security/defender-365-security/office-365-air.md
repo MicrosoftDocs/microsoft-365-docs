@@ -123,7 +123,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Changes are coming soon in your security center
 
-If you’re already using AIR capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [improved Microsoft 365 security center](../mtp/overview-security-center.md). 
+If you’re already using AIR capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [improved Microsoft 365 security center](../defender/overview-security-center.md). 
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center":::
 
@@ -148,8 +148,8 @@ The following table lists changes and improvements coming to AIR in Microsoft De
 |**Entities** tab |	The **Entities** tab has a tab-in-tab style that includes an all-summary view, and the ability to filter by entity type. The **Entities** tab now includes a **Go hunting** option in addition to the **Open in Explorer** option. You can now use either [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/defender-365-security/threat-explorer) or [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) to find entities and threats, and filter on results. | 
 |**Actions** tab |The updated **Actions** tab now includes a **Pending actions** tab and an **Actions history** tab. Actions can be approved (or rejected) in a side pane that opens when you select a pending action. |
 |**Evidence** tab |	A new **Evidence** tab shows the key entity findings related to actions. Actions related to each piece of evidence can be approved (or rejected) in a side pane that opens when you select a pending action. |
-|**Action center** |The updated **Action center** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together pending and completed actions across email, devices, and identities. To learn more, see Action center. (To learn more, see [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).)
-|**Incidents** page |The **Incidents** page now correlates multiple investigations together to provide a better consolidated view of investigations. ([Learn more about Incidents](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview).)
+|**Action center** |The updated **Action center** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together pending and completed actions across email, devices, and identities. To learn more, see Action center. (To learn more, see [The Action center](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center).)
+|**Incidents** page |The **Incidents** page now correlates multiple investigations together to provide a better consolidated view of investigations. ([Learn more about Incidents](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview).)
 
 
 ## Next steps

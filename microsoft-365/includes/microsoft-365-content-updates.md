@@ -13,7 +13,7 @@
 | 2/1/2021 | [How Exchange Online uses TLS to secure email connections](/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections?view=o365-21vianet) | modified |
 | 2/1/2021 | [Message Encryption FAQ](/microsoft-365/compliance/ome-faq?view=o365-21vianet) | modified |
 | 2/1/2021 | [What's new in Microsoft 365 compliance](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
-| 2/1/2021 | [Naming changes in the Microsoft 365 Defender advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-schema-changes?view=o365-21vianet) | modified |
+| 2/1/2021 | [Naming changes in the Microsoft 365 Defender advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-changes?view=o365-21vianet) | modified |
 | 2/1/2021 | [Microsoft 365 encryption chains](/microsoft-365/compliance/encryption-office-365-certificate-chains?view=o365-21vianet) | modified |
 | 2/1/2021 | [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview?view=o365-21vianet) | modified |
 | 2/1/2021 | [Access the Admin portal](/microsoft-365/managed-desktop/get-started/access-admin-portal?view=o365-21vianet) | modified |
@@ -37,8 +37,8 @@
 | 2/2/2021 | [Create an extractor](/microsoft-365/contentunderstanding/create-an-extractor) | modified |
 | 2/2/2021 | [Explanation types](/microsoft-365/contentunderstanding/explanation-types-overview) | modified |
 | 2/2/2021 | [Document understanding model usage analytics](/microsoft-365/contentunderstanding/model-usage-analytics) | modified |
-| 2/2/2021 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
-| 2/2/2021 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/mtp/custom-detection-rules?view=o365-21vianet) | modified |
+| 2/2/2021 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
+| 2/2/2021 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules?view=o365-21vianet) | modified |
 | 2/2/2021 | [Overview of custom detections in Microsoft 365 Defender](/microsoft/defender-365-security/tom-detections-overview?view=o365-21vianet) | modified |
 | 2/2/2021 | [Evaluate Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/office-365-evaluation?view=o365-21vianet) | modified |
 | 2/2/2021 | [Use a PowerShell script to search the audit log](/microsoft-365/compliance/audit-log-search-script?view=o365-21vianet) | added |
@@ -49,7 +49,7 @@
 | 2/2/2021 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
 | 2/2/2021 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
 | 2/2/2021 | [Connect to all Microsoft 365 services in a single PowerShell window](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window?view=o365-21vianet) | modified |
-| 2/2/2021 | [Top scoring in industry tests - Microsoft 365 Defender](/microsoft-365/security/mtp/top-scorin/defender-365-security/=o365-21vianet) | modified |
+| 2/2/2021 | [Top scoring in industry tests - Microsoft 365 Defender](/microsoft-365/security/defender/top-scorin/defender-365-security/=o365-21vianet) | modified |
 | 2/2/2021 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
 | 2/3/2021 | [Overview of Microsoft 365 Groups for administrators](/microsoft-365/admin/create-groups/office-365-groups?view=o365-21vianet) | modified |
 | 2/3/2021 | [About shared mailboxes](/microsoft-365/admin/email/about-shared-mailboxes?view=o365-21vianet) | modified |
@@ -66,7 +66,7 @@
 | 2/3/2021 | [Topic Experiences topic discovery and curation (Preview) ](/microsoft-365/knowledge/topic-experiences-discovery-curation) | modified |
 | 2/3/2021 | [Topic Experiences overview (Preview)](/microsoft-365/knowledge/topic-experiences-overview) | modified |
 | 2/3/2021 | [Microsoft Managed Desktop technologies](/microsoft-365/managed-desktop/intro/technologies?view=o365-21vianet) | modified |
-| 2/3/2021 | [Migrate advanced hunting queries from Microsoft Defender /defender-365-security/oft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
+| 2/3/2021 | [Migrate advanced hunting queries from Microsoft Defender /defender-365-security/oft-365/security/defender/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
 | 2/3/2021 | [Enable the Report Message add-in](/microsoft-365/securi/defender-365-security/y/enable-the-report-message-add-in?view=o365-21vianet) | modified |
 | 2/3/2021 | [Enable the Report Phish add-in](/microsoft-365/security/office-365-s/defender-365-security/port-phish-add-in?view=o365-21vianet) | modified |
 | 2/3/2021 | [Application Guard for Office 365 for admins](/microsoft-365/security/defender-365-security/install-app-guard?view=o365-21vianet) | modified |
@@ -344,7 +344,7 @@
 | 1/26/2021 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
 | 1/26/2021 | [View keyword statistics for Content Search results](/microsoft-365/compliance/view-keyword-statistics-for-content-search?view=o365-21vianet) | modified |
 | 1/26/2021 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-21vianet) | modified |
-| 1/26/2021 | [Microsoft 365 Defender advanced hunting API](/microsoft-365/security/mtp/api-a/defender-365-security/o365-21vianet) | modified |
+| 1/26/2021 | [Microsoft 365 Defender advanced hunting API](/microsoft-365/security/defender/api-a/defender-365-security/o365-21vianet) | modified |
 | 1/26/2021 | [Remove blocked users from the Restricted Users portal](/microsoft-365/security/office-365-secu/defender-365-security/om-restricted-users-portal-after-spam?view=o365-21vianet) | modified |
 | 1/26/2021 | [Set up Safe Attachments policies in Microsoft De/defender-365-security/](/microsoft-365/security/defender-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
 | 1/26/2021 | [User submissions policy](/microsoft-365/security/defender-365-security/use/defender-365-security/5-21vianet) | modified |
@@ -366,7 +366,7 @@
 | 1/27/2021 | [Introduction to Topic Experiences (Preview)](/microsoft-365/knowledge/index) | modified |
 | 1/27/2021 | [Topic Experiences topic discovery and curation (Preview) ](/microsoft-365/knowledge/topic-experiences-discovery-curation) | modified |
 | 1/27/2021 | [Topic Experiences overview (Preview)](/microsoft-365/knowledge/topic-experiences-overview) | modified |
-| 1/27/2021 | [EmailAttachmentInfo table in the advanced /defender-365-security/osoft-365/security/mtp/advanced-hunting-emailattachmentinfo-table?view=o365-21vianet) | modified |
+| 1/27/2021 | [EmailAttachmentInfo table in the advanced /defender-365-security/osoft-365/security/defender/advanced-hunting-emailattachmentinfo-table?view=o365-21vianet) | modified |
 | 1/27/2021 | [Admin submissions](/microsoft-365/security/defender-365-security/admin-/defender-365-security/21vianet) | modified |
 | 1/27/2021 | [Configuration analyzer for security policies](/microsoft-/defender-365-security/65-security/configuration-analyzer-for-security-policies?view=o365-21vianet) | modified |
 | 1/27/2021 | [Enable the Report Message add-in](/microsoft-365/securi/defender-365-security/y/enable-the-report-message-add-in?view=o365-21vianet) | modified |
@@ -445,7 +445,7 @@
 | 1/29/2021 | [Double Key Encryption (DKE)](/microsoft-365/compliance/double-key-encryption?view=o365-21vianet) | modified |
 | 1/29/2021 | [Learn about information barriers in Microsoft 365](/microsoft-365/compliance/information-barriers?view=o365-21vianet) | modified |
 | 1/29/2021 | [Access the Admin portal](/microsoft-365/managed-desktop/get-started/access-admin-portal?view=o365-21vianet) | modified |
-| 1/29/2021 | [Get expert training on advanced hunting](/microsoft-365/security/mtp/advanced-hunting-expert-training?view=o365-21vianet) | modified |
+| 1/29/2021 | [Get expert training on advanced hunting](/microsoft-365/security/defender/advanced-hunting-expert-training?view=o365-21vianet) | modified |
 | 1/29/2021 | [Microsoft 365 Network Insights (preview)](/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-21vianet) | modified |
 | 1/29/2021 | [Communication compliance feature reference](/microsoft-365/compliance/communication-compliance-feature-reference?view=o365-21vianet) | modified |
 | 1/29/2021 | [Step 2. Provide remote access to on-premises apps and services](/microsoft-365/solutions/empower-people-to-work-remotely-remote-access?view=o365-21vianet) | modified |
@@ -590,121 +590,121 @@
 | 1/21/2021 | Custom sensitive information types for DLP | removed |
 | 1/21/2021 | [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-21vianet) | modified |
 | 1/21/2021 | [Use sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
-| 1/21/2021 | [AADSignInEventsBeta table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-aadsignineventsbeta-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [AADSpnSignInEventsBeta table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-aadspnsignineventsbeta-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [AlertEvidence table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-alertevidence-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [AlertInfo table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-alertinfo-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [AppFileEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-appfileevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [AssignedIPAddresses() function in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-assignedipaddresses-function?view=o365-21vianet) | modified |
-| 1/21/2021 | [Advanced hunting query best practices in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-best-practices?view=o365-21vianet) | modified |
-| 1/21/2021 | [CloudAppEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-cloudappevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-deviceevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceFileCertificateInfo table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicefilecertificateinfo-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceFileEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicefileevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceFromIP() function in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-devicefromip-function?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceImageLoadEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-deviceimageloadevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceInfo table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-deviceinfo-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceLogonEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicelogonevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceNetworkEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicenetworkevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceNetworkInfo table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicenetworkinfo-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceProcessEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-deviceprocessevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceRegistryEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-deviceregistryevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceTvmSecureConfigurationAssessment table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceTvmSecureConfigurationAssessmentKB table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceTvmSoftwareInventoryVulnerabilities table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [DeviceTvmSoftwareVulnerabilitiesKB  table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [EmailAttachmentInfo table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-emailattachmentinfo-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [EmailEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-emailevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [EmailPostDeliveryEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-emailpostdeliveryevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [EmailUrlInfo table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-emailurlinfo-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [Handle errors in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-errors?view=o365-21vianet) | modified |
-| 1/21/2021 | [Get expert training on advanced hunting](/microsoft-365/security/mtp/advanced-hunting-expert-training?view=o365-21vianet) | modified |
-| 1/21/2021 | [Extend advanced hunting coverage with the right settings](/microsoft-365/security/mtp/advanced-hunting-extend-data?view=o365-21vianet) | modified |
-| 1/21/2021 | [FileProfile() function in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-fileprofile-function?view=o365-21vianet) | modified |
-| 1/21/2021 | [Find ransomware with advanced hunting](/microsoft-365/security/mtp/advanced-hunting-find-ransomware?view=o365-21vianet) | modified |
-| 1/21/2021 | [Get relevant info about an entity with go hunt](/microsoft-365/security/mtp/advanced-hunting-go-hunt?view=o365-21vianet) | modified |
-| 1/21/2021 | [IdentityDirectoryEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-identitydirectoryevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [IdentityInfo table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-identityinfo-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [IdentityLogonEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-identitylogonevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [IdentityQueryEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-identityqueryevents-table?view=o365-21vianet) | modified |
-| 1/21/2021 | [Advanced hunting quotas and usage parameters in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-limits?view=o365-21vianet) | modified |
-| 1/21/2021 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
-| 1/21/2021 | [Overview - Advanced hunting](/microsoft-365/security/mtp/advanced-hunting-overview?view=o365-21vianet) | modified |
-| 1/21/2021 | [Hunt for threats across devices, emails, apps, and identities with advanced hunting](/microsoft-365/security/mtp/advanced-hunting-query-emails-devices?view=o365-21vianet) | modified |
-| 1/21/2021 | [Learn the advanced hunting query language in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-query-language?view=o365-21vianet) | modified |
-| 1/21/2021 | [Work with advanced hunting query results in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-query-results?view=o365-21vianet) | modified |
-| 1/21/2021 | [Naming changes in the Microsoft 365 Defender advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-schema-changes?view=o365-21vianet) | modified |
-| 1/21/2021 | [Data tables in the Microsoft 365 Defender advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-schema-tables?view=o365-21vianet) | modified |
-| 1/21/2021 | [Use shared queries in Microsoft 365 Defender advanced hunting](/microsoft-365/security/mtp/advanced-hunting-shared-queries?view=o365-21vianet) | modified |
-| 1/21/2021 | [Take action on advanced hunting query results in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-take-action?view=o365-21vianet) | modified |
-| 1/21/2021 | [Access the Microsoft 365 Defender APIs](/microsoft-365/security/mtp/api-access?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft 365 Defender advanced hunting API](/microsoft-365/security/mtp/api-advanced-hunting?view=o365-21vianet) | modified |
-| 1/21/2021 | [Other security and threat protection APIs](/microsoft-365/security/mtp/api-articles?view=o365-21vianet) | modified |
-| 1/21/2021 | [Create an app to access Microsoft 365 Defender APIs on behalf of a user](/microsoft-365/security/mtp/api-create-app-user-context?view=o365-21vianet) | modified |
-| 1/21/2021 | [Create an app to access Microsoft 365 Defender without a user](/microsoft-365/security/mtp/api-create-app-web?view=o365-21vianet) | modified |
-| 1/21/2021 | [Common Microsoft 365 Defender REST API error codes](/microsoft-365/security/mtp/api-error-codes?view=o365-21vianet) | modified |
-| 1/21/2021 | [Hello World for Microsoft 365 Defender REST API](/microsoft-365/security/mtp/api-hello-world?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft 365 Defender incidents APIs and the incident resource type](/microsoft-365/security/mtp/api-incident?view=o365-21vianet) | modified |
-| 1/21/2021 | [List incidents API in Microsoft 365 Defender](/microsoft-365/security/mtp/api-list-incidents?view=o365-21vianet) | modified |
-| 1/21/2021 | [Overview of Microsoft 365 Defender APIs](/microsoft-365/security/mtp/api-overview?view=o365-21vianet) | modified |
-| 1/21/2021 | [Partner access through Microsoft 365 Defender APIs](/microsoft-365/security/mtp/api-partner-access?view=o365-21vianet) | modified |
-| 1/21/2021 | [Supported Microsoft 365 Defender APIs](/microsoft-365/security/mtp/api-supported?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft 365 Defender APIs license and terms of use](/microsoft-365/security/mtp/api-terms?view=o365-21vianet) | modified |
-| 1/21/2021 | [Update incidents API](/microsoft-365/security/mtp/api-update-incidents?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure Microsoft 365 Defender pillars for the trial lab or pilot environment](/microsoft-365/security/mtp/config-mtpeval?view=o365-21vianet) | modified |
-| 1/21/2021 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/mtp/custom-detection-rules?view=o365-21vianet) | modified |
-| 1/21/2021 | [Overview of custom detections in Microsoft 365 Defender](/microsoft-365/security/mtp/custom-detections-overview?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft 365 Defender data security and privacy](/microsoft-365/security/mtp/data-privacy?view=o365-21vianet) | modified |
-| 1/21/2021 | [Deploy services supported by Microsoft 365 Defender](/microsoft-365/security/mtp/deploy-supported-services?view=o365-21vianet) | modified |
-| 1/21/2021 | [Device profile in Microsoft 365 security portal](/microsoft-365/security/mtp/device-profile?view=o365-21vianet) | modified |
-| 1/21/2021 | [Provide feedback on Microsoft 365 Defender](/microsoft-365/security/mtp/feedback?view=o365-21vianet) | modified |
-| 1/21/2021 | [Generate a test Microsoft 365 Defender alert](/microsoft-365/security/mtp/generate-test-alert?view=o365-21vianet) | modified |
-| 1/21/2021 | [Get incident notifications in Microsoft 365 Defender](/microsoft-365/security/mtp/get-incident-notifications?view=o365-21vianet) | modified |
-| 1/21/2021 | [Prioritize incidents in Microsoft 365 Defender](/microsoft-365/security/mtp/incident-queue?view=o365-21vianet) | modified |
-| 1/21/2021 | [Incidents overview in Microsoft 365 Defender](/microsoft-365/security/mtp/incidents-overview?view=o365-21vianet) | modified |
-| 1/21/2021 | [Investigate incidents in Microsoft 365 Defender](/microsoft-365/security/mtp/investigate-incidents?view=o365-21vianet) | modified |
-| 1/21/2021 | [Understand the latest attack campaigns and techniques with threat analytics](/microsoft-365/security/mtp/latest-attack-campaigns?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manage incidents in Microsoft 365 Defender](/microsoft-365/security/mtp/manage-incidents?view=o365-21vianet) | modified |
-| 1/21/2021 | [Track your Microsoft Secure Score history and meet goals](/microsoft-365/security/mtp/microsoft-secure-score-history-metrics-trends?view=o365-21vianet) | modified |
-| 1/21/2021 | [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-improvement-actions?view=o365-21vianet) | modified |
-| 1/21/2021 | [What's coming to Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-coming?view=o365-21vianet) | modified |
-| 1/21/2021 | [What's new in Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-new?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-21vianet) | modified |
-| 1/21/2021 | [Identity monitoring and reporting - Security center](/microsoft-365/security/mtp/monitor-and-report-identities?view=o365-21vianet) | modified |
-| 1/21/2021 | [App monitoring & reporting - Security center](/microsoft-365/security/mtp/monitor-apps?view=o365-21vianet) | modified |
-| 1/21/2021 | [Data monitoring & reporting - Security center](/microsoft-365/security/mtp/monitor-data?view=o365-21vianet) | modified |
-| 1/21/2021 | [Device monitoring & reporting - Security center](/microsoft-365/security/mtp/monitor-devices?view=o365-21vianet) | modified |
-| 1/21/2021 | [Monitor and view reports - Security center](/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-21vianet) | modified |
-| 1/21/2021 | [Go to the Action center to view and approve your automated investigation and remediation tasks](/microsoft-365/security/mtp/mtp-action-center?view=o365-21vianet) | modified |
-| 1/21/2021 | [Approve or reject pending actions following an automated investigation](/microsoft-365/security/mtp/mtp-autoir-actions?view=o365-21vianet) | modified |
-| 1/21/2021 | [Handle false positives or false negatives in AIR in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-autoir-report-false-positives-negatives?view=o365-21vianet) | modified |
-| 1/21/2021 | [Details and results of an automated investigation](/microsoft-365/security/mtp/mtp-autoir-results?view=o365-21vianet) | modified |
-| 1/21/2021 | [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-autoir?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
-| 1/21/2021 | [Frequently asked questions when turning on Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-enable-faq?view=o365-21vianet) | modified |
-| 1/21/2021 | [Turn on Microsoft 365 Defender in the Microsoft 365 security center](/microsoft-365/security/mtp/mtp-enable?view=o365-21vianet) | modified |
-| 1/21/2021 | [Evaluate Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-evaluation?view=o365-21vianet) | modified |
-| 1/21/2021 | [Manage access to Microsoft 365 Defender data in the Microsoft 365 security center](/microsoft-365/security/mtp/mtp-permissions?view=o365-21vianet) | modified |
-| 1/21/2021 | [Summarizing your pilot Microsoft 365 Defender project results](/microsoft-365/security/mtp/mtp-pilot-close?view=o365-21vianet) | modified |
-| 1/21/2021 | [Planning your pilot Microsoft 365 Defender project](/microsoft-365/security/mtp/mtp-pilot-plan?view=o365-21vianet) | modified |
-| 1/21/2021 | [Run your Microsoft 365 Defender attack simulations](/microsoft-365/security/mtp/mtp-pilot-simulate?view=o365-21vianet) | modified |
-| 1/21/2021 | [Run your pilot Microsoft 365 Defender project](/microsoft-365/security/mtp/mtp-pilot?view=o365-21vianet) | modified |
-| 1/21/2021 | [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-remediation-actions?view=o365-21vianet) | modified |
-| 1/21/2021 | [Set the time zone for Microsoft 365 Defender features](/microsoft-365/security/mtp/mtp-time-zone?view=o365-21vianet) | modified |
-| 1/21/2021 | [What's new in Microsoft 365 security](/microsoft-365/security/mtp/mtp-whats-new?view=o365-21vianet) | modified |
-| 1/21/2021 | [Configure and manage Microsoft Defender for Endpoint capabilities](/microsoft-365/security/mtp/onboard?view=o365-21vianet) | modified |
-| 1/21/2021 | [Overview - Microsoft 365 security center](/microsoft-365/security/mtp/overview-security-center?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft security portals and admin centers](/microsoft-365/security/mtp/portals?view=o365-21vianet) | modified |
-| 1/21/2021 | [Prepare your Microsoft 365 Defender trial lab environment](/microsoft-365/security/mtp/prepare-mtpeval?view=o365-21vianet) | modified |
-| 1/21/2021 | [Microsoft 365 Defender prerequisites](/microsoft-365/security/mtp/prerequisites?view=o365-21vianet) | modified |
-| 1/21/2021 | [Preview features in Microsoft 365 Defender](/microsoft-365/security/mtp/preview?view=o365-21vianet) | modified |
-| 1/21/2021 | [Set up your Microsoft 365 Defender trial lab or pilot environment](/microsoft-365/security/mtp/setup-mtpeval?view=o365-21vianet) | modified |
-| 1/21/2021 | [Create and track ServiceNow tickets in the Microsoft 365 security center](/microsoft-365/security/mtp/tickets-security-center?view=o365-21vianet) | modified |
-| 1/21/2021 | [Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center](/microsoft-365/security/mtp/tickets?view=o365-21vianet) | modified |
-| 1/21/2021 | [Top scoring in industry tests - Microsoft 365 Defender](/microsoft-365/security/mtp/top-scoring-industry-tests?view=o365-21vianet) | modified |
-| 1/21/2021 | [Troubleshoot Microsoft 365 Defender service issues](/microsoft-365/security/mtp/troubleshoot?view=o365-21vianet) | modified |
-| 1/21/2021 | [What's new in Microsoft 365 Defender](/microsoft-365/security/mtp/whats-new?view=o365-21vianet) | mo/defender-365-security/
+| 1/21/2021 | [AADSignInEventsBeta table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-aadsignineventsbeta-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [AADSpnSignInEventsBeta table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-aadspnsignineventsbeta-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [AlertEvidence table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-alertevidence-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [AlertInfo table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-alertinfo-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [AppFileEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-appfileevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [AssignedIPAddresses() function in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-assignedipaddresses-function?view=o365-21vianet) | modified |
+| 1/21/2021 | [Advanced hunting query best practices in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-best-practices?view=o365-21vianet) | modified |
+| 1/21/2021 | [CloudAppEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-deviceevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceFileCertificateInfo table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicefilecertificateinfo-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceFileEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicefileevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceFromIP() function in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-devicefromip-function?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceImageLoadEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-deviceimageloadevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceInfo table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-deviceinfo-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceLogonEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicelogonevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceNetworkEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicenetworkevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceNetworkInfo table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicenetworkinfo-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceProcessEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceRegistryEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-deviceregistryevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceTvmSecureConfigurationAssessment table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicetvmsecureconfigurationassessment-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceTvmSecureConfigurationAssessmentKB table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceTvmSoftwareInventoryVulnerabilities table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [DeviceTvmSoftwareVulnerabilitiesKB  table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [EmailAttachmentInfo table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-emailattachmentinfo-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [EmailEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-emailevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [EmailPostDeliveryEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-emailpostdeliveryevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [EmailUrlInfo table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-emailurlinfo-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [Handle errors in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-errors?view=o365-21vianet) | modified |
+| 1/21/2021 | [Get expert training on advanced hunting](/microsoft-365/security/defender/advanced-hunting-expert-training?view=o365-21vianet) | modified |
+| 1/21/2021 | [Extend advanced hunting coverage with the right settings](/microsoft-365/security/defender/advanced-hunting-extend-data?view=o365-21vianet) | modified |
+| 1/21/2021 | [FileProfile() function in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-fileprofile-function?view=o365-21vianet) | modified |
+| 1/21/2021 | [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware?view=o365-21vianet) | modified |
+| 1/21/2021 | [Get relevant info about an entity with go hunt](/microsoft-365/security/defender/advanced-hunting-go-hunt?view=o365-21vianet) | modified |
+| 1/21/2021 | [IdentityDirectoryEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-identitydirectoryevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [IdentityInfo table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-identityinfo-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [IdentityLogonEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-identitylogonevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [IdentityQueryEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-identityqueryevents-table?view=o365-21vianet) | modified |
+| 1/21/2021 | [Advanced hunting quotas and usage parameters in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-limits?view=o365-21vianet) | modified |
+| 1/21/2021 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
+| 1/21/2021 | [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview?view=o365-21vianet) | modified |
+| 1/21/2021 | [Hunt for threats across devices, emails, apps, and identities with advanced hunting](/microsoft-365/security/defender/advanced-hunting-query-emails-devices?view=o365-21vianet) | modified |
+| 1/21/2021 | [Learn the advanced hunting query language in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-query-language?view=o365-21vianet) | modified |
+| 1/21/2021 | [Work with advanced hunting query results in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-query-results?view=o365-21vianet) | modified |
+| 1/21/2021 | [Naming changes in the Microsoft 365 Defender advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-changes?view=o365-21vianet) | modified |
+| 1/21/2021 | [Data tables in the Microsoft 365 Defender advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-21vianet) | modified |
+| 1/21/2021 | [Use shared queries in Microsoft 365 Defender advanced hunting](/microsoft-365/security/defender/advanced-hunting-shared-queries?view=o365-21vianet) | modified |
+| 1/21/2021 | [Take action on advanced hunting query results in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-take-action?view=o365-21vianet) | modified |
+| 1/21/2021 | [Access the Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-access?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft 365 Defender advanced hunting API](/microsoft-365/security/defender/api-advanced-hunting?view=o365-21vianet) | modified |
+| 1/21/2021 | [Other security and threat protection APIs](/microsoft-365/security/defender/api-articles?view=o365-21vianet) | modified |
+| 1/21/2021 | [Create an app to access Microsoft 365 Defender APIs on behalf of a user](/microsoft-365/security/defender/api-create-app-user-context?view=o365-21vianet) | modified |
+| 1/21/2021 | [Create an app to access Microsoft 365 Defender without a user](/microsoft-365/security/defender/api-create-app-web?view=o365-21vianet) | modified |
+| 1/21/2021 | [Common Microsoft 365 Defender REST API error codes](/microsoft-365/security/defender/api-error-codes?view=o365-21vianet) | modified |
+| 1/21/2021 | [Hello World for Microsoft 365 Defender REST API](/microsoft-365/security/defender/api-hello-world?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft 365 Defender incidents APIs and the incident resource type](/microsoft-365/security/defender/api-incident?view=o365-21vianet) | modified |
+| 1/21/2021 | [List incidents API in Microsoft 365 Defender](/microsoft-365/security/defender/api-list-incidents?view=o365-21vianet) | modified |
+| 1/21/2021 | [Overview of Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-overview?view=o365-21vianet) | modified |
+| 1/21/2021 | [Partner access through Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-partner-access?view=o365-21vianet) | modified |
+| 1/21/2021 | [Supported Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-supported?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft 365 Defender APIs license and terms of use](/microsoft-365/security/defender/api-terms?view=o365-21vianet) | modified |
+| 1/21/2021 | [Update incidents API](/microsoft-365/security/defender/api-update-incidents?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure Microsoft 365 Defender pillars for the trial lab or pilot environment](/microsoft-365/security/defender/config-mtpeval?view=o365-21vianet) | modified |
+| 1/21/2021 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules?view=o365-21vianet) | modified |
+| 1/21/2021 | [Overview of custom detections in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detections-overview?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft 365 Defender data security and privacy](/microsoft-365/security/defender/data-privacy?view=o365-21vianet) | modified |
+| 1/21/2021 | [Deploy services supported by Microsoft 365 Defender](/microsoft-365/security/defender/deploy-supported-services?view=o365-21vianet) | modified |
+| 1/21/2021 | [Device profile in Microsoft 365 security portal](/microsoft-365/security/defender/device-profile?view=o365-21vianet) | modified |
+| 1/21/2021 | [Provide feedback on Microsoft 365 Defender](/microsoft-365/security/defender/feedback?view=o365-21vianet) | modified |
+| 1/21/2021 | [Generate a test Microsoft 365 Defender alert](/microsoft-365/security/defender/generate-test-alert?view=o365-21vianet) | modified |
+| 1/21/2021 | [Get incident notifications in Microsoft 365 Defender](/microsoft-365/security/defender/get-incident-notifications?view=o365-21vianet) | modified |
+| 1/21/2021 | [Prioritize incidents in Microsoft 365 Defender](/microsoft-365/security/defender/incident-queue?view=o365-21vianet) | modified |
+| 1/21/2021 | [Incidents overview in Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview?view=o365-21vianet) | modified |
+| 1/21/2021 | [Investigate incidents in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-incidents?view=o365-21vianet) | modified |
+| 1/21/2021 | [Understand the latest attack campaigns and techniques with threat analytics](/microsoft-365/security/defender/latest-attack-campaigns?view=o365-21vianet) | modified |
+| 1/21/2021 | [Manage incidents in Microsoft 365 Defender](/microsoft-365/security/defender/manage-incidents?view=o365-21vianet) | modified |
+| 1/21/2021 | [Track your Microsoft Secure Score history and meet goals](/microsoft-365/security/defender/microsoft-secure-score-history-metrics-trends?view=o365-21vianet) | modified |
+| 1/21/2021 | [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions?view=o365-21vianet) | modified |
+| 1/21/2021 | [What's coming to Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-whats-coming?view=o365-21vianet) | modified |
+| 1/21/2021 | [What's new in Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-whats-new?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection?view=o365-21vianet) | modified |
+| 1/21/2021 | [Identity monitoring and reporting - Security center](/microsoft-365/security/defender/monitor-and-report-identities?view=o365-21vianet) | modified |
+| 1/21/2021 | [App monitoring & reporting - Security center](/microsoft-365/security/defender/monitor-apps?view=o365-21vianet) | modified |
+| 1/21/2021 | [Data monitoring & reporting - Security center](/microsoft-365/security/defender/monitor-data?view=o365-21vianet) | modified |
+| 1/21/2021 | [Device monitoring & reporting - Security center](/microsoft-365/security/defender/monitor-devices?view=o365-21vianet) | modified |
+| 1/21/2021 | [Monitor and view reports - Security center](/microsoft-365/security/defender/monitoring-and-reporting?view=o365-21vianet) | modified |
+| 1/21/2021 | [Go to the Action center to view and approve your automated investigation and remediation tasks](/microsoft-365/security/defender/mtp-action-center?view=o365-21vianet) | modified |
+| 1/21/2021 | [Approve or reject pending actions following an automated investigation](/microsoft-365/security/defender/mtp-autoir-actions?view=o365-21vianet) | modified |
+| 1/21/2021 | [Handle false positives or false negatives in AIR in Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir-report-false-positives-negatives?view=o365-21vianet) | modified |
+| 1/21/2021 | [Details and results of an automated investigation](/microsoft-365/security/defender/mtp-autoir-results?view=o365-21vianet) | modified |
+| 1/21/2021 | [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/defender/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
+| 1/21/2021 | [Frequently asked questions when turning on Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable-faq?view=o365-21vianet) | modified |
+| 1/21/2021 | [Turn on Microsoft 365 Defender in the Microsoft 365 security center](/microsoft-365/security/defender/mtp-enable?view=o365-21vianet) | modified |
+| 1/21/2021 | [Evaluate Microsoft 365 Defender](/microsoft-365/security/defender/mtp-evaluation?view=o365-21vianet) | modified |
+| 1/21/2021 | [Manage access to Microsoft 365 Defender data in the Microsoft 365 security center](/microsoft-365/security/defender/mtp-permissions?view=o365-21vianet) | modified |
+| 1/21/2021 | [Summarizing your pilot Microsoft 365 Defender project results](/microsoft-365/security/defender/mtp-pilot-close?view=o365-21vianet) | modified |
+| 1/21/2021 | [Planning your pilot Microsoft 365 Defender project](/microsoft-365/security/defender/mtp-pilot-plan?view=o365-21vianet) | modified |
+| 1/21/2021 | [Run your Microsoft 365 Defender attack simulations](/microsoft-365/security/defender/mtp-pilot-simulate?view=o365-21vianet) | modified |
+| 1/21/2021 | [Run your pilot Microsoft 365 Defender project](/microsoft-365/security/defender/mtp-pilot?view=o365-21vianet) | modified |
+| 1/21/2021 | [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/defender/mtp-remediation-actions?view=o365-21vianet) | modified |
+| 1/21/2021 | [Set the time zone for Microsoft 365 Defender features](/microsoft-365/security/defender/mtp-time-zone?view=o365-21vianet) | modified |
+| 1/21/2021 | [What's new in Microsoft 365 security](/microsoft-365/security/defender/mtp-whats-new?view=o365-21vianet) | modified |
+| 1/21/2021 | [Configure and manage Microsoft Defender for Endpoint capabilities](/microsoft-365/security/defender/onboard?view=o365-21vianet) | modified |
+| 1/21/2021 | [Overview - Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft security portals and admin centers](/microsoft-365/security/defender/portals?view=o365-21vianet) | modified |
+| 1/21/2021 | [Prepare your Microsoft 365 Defender trial lab environment](/microsoft-365/security/defender/prepare-mtpeval?view=o365-21vianet) | modified |
+| 1/21/2021 | [Microsoft 365 Defender prerequisites](/microsoft-365/security/defender/prerequisites?view=o365-21vianet) | modified |
+| 1/21/2021 | [Preview features in Microsoft 365 Defender](/microsoft-365/security/defender/preview?view=o365-21vianet) | modified |
+| 1/21/2021 | [Set up your Microsoft 365 Defender trial lab or pilot environment](/microsoft-365/security/defender/setup-mtpeval?view=o365-21vianet) | modified |
+| 1/21/2021 | [Create and track ServiceNow tickets in the Microsoft 365 security center](/microsoft-365/security/defender/tickets-security-center?view=o365-21vianet) | modified |
+| 1/21/2021 | [Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center](/microsoft-365/security/defender/tickets?view=o365-21vianet) | modified |
+| 1/21/2021 | [Top scoring in industry tests - Microsoft 365 Defender](/microsoft-365/security/defender/top-scoring-industry-tests?view=o365-21vianet) | modified |
+| 1/21/2021 | [Troubleshoot Microsoft 365 Defender service issues](/microsoft-365/security/defender/troubleshoot?view=o365-21vianet) | modified |
+| 1/21/2021 | [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new?view=o365-21vianet) | mo/defender-365-security/
 | 1/21/2021 | [Address compromised user accounts with aut/defender-365-security/and response](/microsoft-365/security/defender-365-security/address-compromised-users-quickly?view=o365-21vianet) | modified |
 | 1/21/2021 | [Admin submissions](/microsoft-365/security/o/defender-365-security/min-submission?view=o365-21vianet) | modified |
 | 1/21/2021 | [ASF settings in EOP](/microsoft-365/security/defender-365-security/advanced-spam-filtering-asf-option/defender-365-security/ | modified |
@@ -928,13 +928,13 @@
 | 1/19/2021 | [Create a payload for Attack simulation training/defender-365-security/rity/defender-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
 | 1/19/2021 | [Anti-phishing policies](/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
 | 1/19/2021 | [Step 2. Provide remote access to on-premises apps and services](/microsoft-365/solutions/empower-people-to-work-remotely-remote-access?view=o365-21vianet) | modified |
-| 1/22/2021 | [Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score?view=o365-21vianet) | modified |
+| 1/22/2021 | [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score?view=o365-21vianet) | modified |
 | 1/22/2021 | Identity monitoring and reporting - Security center | removed |
 | 1/22/2021 | App monitoring & reporting - Security center | removed |
 | 1/22/2021 | Data monitoring & reporting - Security center | removed |
 | 1/22/2021 | Device monitoring & reporting - Security center | removed |
 | 1/22/2021 | Monitor and view reports - Security center | removed |
-| 1/22/2021 | [Overview - Microsoft 365 security center](/microsoft-365/security/mtp/overview-security-center?view=o365-21vianet) | modified |
+| 1/22/2021 | [Overview - Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center?view=o365-21vianet) | modified |
 | 1/21/2021 | [Microsoft 365 Reports in the admin center - Email activity](/microsoft-365/admin/activity-reports/email-activity-ww?view=o365-21vianet) | added |
 | 1/21/2021 | [Microsoft 365 Reports in the admin center - Email apps usage](/microsoft-365/admin/activity-reports/email-apps-usage-ww?view=o365-21vianet) | added |
 | 1/21/2021 | [Downloadable readiness assessment checker](/microsoft-365/managed-desktop/get-ready/readiness-assessment-downloadable?view=o365-21vianet) | added |
@@ -1087,9 +1087,9 @@
 | 1/5/2021 | View Analyze results in Advanced eDiscovery | removed |
 | 1/5/2021 | View batch history and export past results in Advanced eDiscovery | removed |
 | 1/5/2021 | View Process module results in Advanced eDiscovery | removed |
-| 1/5/2021 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
-| 1/5/2021 | [Turn on Microsoft 365 Defender in the Microsoft 365 security center](/microsoft-365/security/mtp/mtp-enable?view=o365-21vianet) | modified |
-| 1/5/2021 | [Run your Microsoft 365 Defender attack simulations](/microsoft-365/security/mtp/mtp-pilot-simulate?view=o365-21vianet) | modified |
+| 1/5/2021 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/defender/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
+| 1/5/2021 | [Turn on Microsoft 365 Defender in the Microsoft 365 security center](/microsoft-365/security/defender/mtp-enable?view=o365-21vianet) | modified |
+| 1/5/2021 | [Run your Microsoft 365 Defender attack simulations](/microsoft-365/security/defender/mtp-pilot-simulate?view=o365-21vianet) | modified |
 | 1/5/2021 | [Troubleshoot Microsoft 365 Defender service issues](/microsoft-3/defender-365-security/leshoot?view=o365-21vianet) | modified |
 | 1/5/2021 | [Configure anti-phishing policies in EOP](/microsoft-365/securi/defender-365-security/y/configure-anti-phishing-policies-eop?view=o365-21vianet) | modified |
 | 1/5/2021 | [Email authentication in Microsoft 365](/microsoft-365/security/of/defender-365-security/il-validation-and-authentication?view=o365-21vianet) | modified |
@@ -1126,7 +1126,7 @@
 | 1/6/2021 | [Security recommendations for priority accounts in Microsoft 365](/microsoft-365/security/defender-365-security/security-recommendations-for-priority-accounts?view=o365-21vianet) | modified |
 | 1/6/2021 | [Microsoft SharePoint Syntex adoption: Get started](/microsoft-365/contentunderstanding/adoption-getstarted) | modified |
 | 1/6/2021 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-21vianet) | modified |
-| 1/6/2021 | [DeviceFileEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-devicefileevents-table?view=o365-21vianet) | modified |
+| 1/6/2021 | [DeviceFileEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-devicefileevents-table?view=o365-21vianet) | modified |
 | 1/6/2021 | [Configure secure access to Microsoft 365 services](/microsoft-365/solutions/configure-secure-access?view=o365-21vianet) | modified |
 | 1/6/2021 | [Microsoft 365 Foundation Solutions Overview](/microsoft-365/solutions/foundation-solutions-overview?view=o365-21vianet) | modified |
 | 1/6/2021 | [Microsoft 365 enterprise resource planning - Security architecture](/microsoft-365/solutions/identity-design-principles?view=o365-21vianet) | modified |
@@ -1155,7 +1155,7 @@
 | 1/7/2021 | [Windows and Office deployment lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-21vianet) | modified |
 | 1/7/2021 | [How to opt-in for migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in?view=o365-21vianet) | modified |
 | 1/7/2021 | [Prepare a non-routable domain for directory synchronization](/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?view=o365-21vianet) | modified |
-| 1/7/2021 | [Microsoft 365 Defender](/microsoft-365/security/mtp/micros/defender-365-security/?view=o365-21vianet) | modified |
+| 1/7/2021 | [Microsoft 365 Defender](/microsoft-365/security/defender/micros/defender-365-security/?view=o365-21vianet) | modified |
 | 1/7/2021 | [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/office-365-atp?view=o365-21vianet) | modified |
 | 1/7/2021 | [Learn about retention for Teams](/microsoft-365/compliance/retentio/defender-365-security/=o365-21vianet) | modified |
 | 1/7/2021 | [Permissions - Security & Compliance Center](/microsoft-365/security/defender-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
@@ -1280,7 +1280,7 @@
 | 1/12/2021 | [Prerequisite work for implementing identity and device access /defender-365-security/365 for enterprise \| Microsoft Docs](/microsoft-365/security/defender-365-security/identity-access-prerequisites?view=o365-21vianet) | modified |
 | 1/12/2021 | [Isolated SharePoint Online team sites](/microsoft-365/security/defender-365-security/isolated-sharepoin/defender-365-security/iew=o365-21vianet) | modified |
 | 1/12/2021 | [Support for validation of Domain Keys Identified Mail (DKIM) signed messages](/microsoft-365/security/defender-365-security/support-for-validation-of-dkim-signed-messages?view=o365-21vianet) | modified |
-| 1/13/2021 | [Get incident notifications in Microsoft 365 Defender](/microsoft-365/security/mtp/get-incident-notifications?view=o365-21vianet) | modified |
+| 1/13/2021 | [Get incident notifications in Microsoft 365 Defender](/microsoft-365/security/defender/get-incident-notifications?view=o365-21vianet) | modified |
 | 1/13/2021 | [Assign and complete improvement actions in Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-improvement-actions?view=o365-21vianet) | modified |
 | 1/13/2021 | [Working with assessment templates in Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-templates?view=o365-21vianet) | modified |
 | 1/13/2021 | [Connect to all Microsoft 365 services in a single PowerShell window](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window?view=o365-21vianet) | modified |
@@ -1369,12 +1369,12 @@
 | 12/15/2020 | [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
 | 12/15/2020 | [Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-21vianet) | modified |
 | 12/15/2020 | [Network configuration for Microsoft Managed Desktop](/microsoft-365/managed-desktop/get-ready/network?view=o365-21vianet) | modified |
-| 12/15/2020 | [Go to the Action center to view and approve your automated investigation and remediation tasks](/microsoft-365/security/mtp/mtp-action-center?view=o365-21vianet) | modified |
-| 12/15/2020 | [Approve or reject pending actions following an automated investigation](/microsoft-365/security/mtp/mtp-autoir-actions?view=o365-21vianet) | modified |
-| 12/15/2020 | [Details and results of an automated investigation](/microsoft-365/security/mtp/mtp-autoir-results?view=o365-21vianet) | modified |
-| 12/15/2020 | [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-autoir?view=o365-21vianet) | modified |
-| 12/15/2020 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
-| 12/15/2020 | [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-remediation-actions?vi/defender-365-security/odified |
+| 12/15/2020 | [Go to the Action center to view and approve your automated investigation and remediation tasks](/microsoft-365/security/defender/mtp-action-center?view=o365-21vianet) | modified |
+| 12/15/2020 | [Approve or reject pending actions following an automated investigation](/microsoft-365/security/defender/mtp-autoir-actions?view=o365-21vianet) | modified |
+| 12/15/2020 | [Details and results of an automated investigation](/microsoft-365/security/defender/mtp-autoir-results?view=o365-21vianet) | modified |
+| 12/15/2020 | [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir?view=o365-21vianet) | modified |
+| 12/15/2020 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/defender/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
+| 12/15/2020 | [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/defender/mtp-remediation-actions?vi/defender-365-security/odified |
 | 12/15/2020 | [Configure global settings for Safe Links settings in Defen/defender-365-security/microsoft-365/security/defender-365-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
 | 12/15/2020 | [Configure outbound spam filtering](/microsoft-365/secur/defender-365-security/ty/configure-the-outbound-spam-policy?view=o365-21vianet) | modified |
 | 12/15/2020 | [Configure spam filter policies](/microsoft-365/s/defender-365-security/curity/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
@@ -1394,8 +1394,8 @@
 | 12/15/2020 | [Get started with retention policies and retention labels](/microsoft-365/compliance/get-started-with-retention?view=o365-21vianet) | modified |
 | 12/15/2020 | [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-21vianet) | modified |
 | 12/15/2020 | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-21vianet) | modified |
-| 12/15/2020 | [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-improvement-actions?view=o365-21vianet) | modified |
-| 12/15/2020 | [Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score?view=o365-21vianet) | modified |/defender-365-security/
+| 12/15/2020 | [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions?view=o365-21vianet) | modified |
+| 12/15/2020 | [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score?view=o365-21vianet) | modified |/defender-365-security/
 | 12/15/2020 | [Identity and device access policies for allowing guest and external/defender-365-security/ft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/defender-365-security/identity-access-policies-guest-access?view=o365-21vianet) | modified |
 | 12/15/2020 | [Permissions - Security & Compliance Center](/microsoft-365/security/defender-365-security/permissions-in-the-security-and-compliance-center?view=o365-21vianet) | modified |
 | 12/15/2020 | [Microsoft 365 Reports in the admin center - SharePoint site usage](/microsoft-365/admin/activity-reports/sharepoint-site-usage?view=o365-21vianet) | modified |
@@ -1417,7 +1417,7 @@
 | 12/15/2020 | [What has changed for the migration to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-transition-experience?view=o365-21vianet) | modified |
 | 12/15/2020 | [Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (general)](/microsoft-365/enterprise/ms-cloud-germany-transition-phases?view=o365-21vianet) | modified |
 | 12/15/2020 | [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](/microsoft-365/enterprise/ms-cloud-germany-transition?view=o365-21vianet) | modified |
-| 12/15/2020 | [What's coming to Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score-whats-coming?view=o365-21vianet) | modified |
+| 12/15/2020 | [What's coming to Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-whats-coming?view=o365-21vianet) | modified |
 | 12/15/2020 | [What's new in Microsoft Secure Score](/microsoft-365/sec/defender-365-security/ecure-score-whats-new?view=o365-21vianet) | modified |
 | 12/15/2020 | [Configure anti-malware policies](/microsoft-365/security/defender-365-security/configu/defender-365-security/ies?view=o365-21vianet) | modified |
 | 12/15/2020 | [View and release quarantined messages from shared mailboxes](/microsoft-365/security/defender-365-security/view-and-release-quarantined-messages-from-shared-mailboxes?view=o365-21vianet) | modified |
@@ -1480,20 +1480,20 @@
 | 12/18/2020 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
 | 12/18/2020 | [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-21vianet) | modified |
 | 12/18/2020 | [Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (general)](/microsoft-365/enterprise/ms-cloud-germany-transition-phases?view=o365-21vianet) | modified |
-| 12/18/2020 | [Access the Microsoft 365 Defender APIs](/microsoft-365/security/mtp/api-access?view=o365-21vianet) | modified |
-| 12/18/2020 | [Microsoft 365 Defender advanced hunting API](/microsoft-365/security/mtp/api-advanced-hunting?view=o365-21vianet) | modified |
-| 12/18/2020 | [Other security and threat protection APIs](/microsoft-365/security/mtp/api-articles?view=o365-21vianet) | modified |
-| 12/18/2020 | [Create an app to access Microsoft 365 Defender APIs on behalf of a user](/microsoft-365/security/mtp/api-create-app-user-context?view=o365-21vianet) | modified |
-| 12/18/2020 | [Create an app to access Microsoft 365 Defender without a user](/microsoft-365/security/mtp/api-create-app-web?view=o365-21vianet) | modified |
-| 12/18/2020 | [Common Microsoft 365 Defender REST API error codes](/microsoft-365/security/mtp/api-error-codes?view=o365-21vianet) | modified |
-| 12/18/2020 | [Hello World for Microsoft 365 Defender REST API](/microsoft-365/security/mtp/api-hello-world?view=o365-21vianet) | modified |
-| 12/18/2020 | [Microsoft 365 Defender incidents APIs and the incident resource type](/microsoft-365/security/mtp/api-incident?view=o365-21vianet) | modified |
-| 12/18/2020 | [List incidents API in Microsoft 365 Defender](/microsoft-365/security/mtp/api-list-incidents?view=o365-21vianet) | modified |
-| 12/18/2020 | [Overview of Microsoft 365 Defender APIs](/microsoft-365/security/mtp/api-overview?view=o365-21vianet) | modified |
-| 12/18/2020 | [Partner access through Microsoft 365 Defender APIs](/microsoft-365/security/mtp/api-partner-access?view=o365-21vianet) | modified |
-| 12/18/2020 | [Supported Microsoft 365 Defender APIs](/microsoft-365/security/mtp/api-supported?view=o365-21vianet) | modified |
-| 12/18/2020 | [Microsoft 365 Defender APIs license and terms of use](/microsoft-365/security/mtp/api-terms?view=o365-21vianet) | modified |
-| 12/18/2020 | [Update incidents API](/microsoft-365/security/mtp/api-update-incidents?view=o365-21vianet) | modified |
+| 12/18/2020 | [Access the Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-access?view=o365-21vianet) | modified |
+| 12/18/2020 | [Microsoft 365 Defender advanced hunting API](/microsoft-365/security/defender/api-advanced-hunting?view=o365-21vianet) | modified |
+| 12/18/2020 | [Other security and threat protection APIs](/microsoft-365/security/defender/api-articles?view=o365-21vianet) | modified |
+| 12/18/2020 | [Create an app to access Microsoft 365 Defender APIs on behalf of a user](/microsoft-365/security/defender/api-create-app-user-context?view=o365-21vianet) | modified |
+| 12/18/2020 | [Create an app to access Microsoft 365 Defender without a user](/microsoft-365/security/defender/api-create-app-web?view=o365-21vianet) | modified |
+| 12/18/2020 | [Common Microsoft 365 Defender REST API error codes](/microsoft-365/security/defender/api-error-codes?view=o365-21vianet) | modified |
+| 12/18/2020 | [Hello World for Microsoft 365 Defender REST API](/microsoft-365/security/defender/api-hello-world?view=o365-21vianet) | modified |
+| 12/18/2020 | [Microsoft 365 Defender incidents APIs and the incident resource type](/microsoft-365/security/defender/api-incident?view=o365-21vianet) | modified |
+| 12/18/2020 | [List incidents API in Microsoft 365 Defender](/microsoft-365/security/defender/api-list-incidents?view=o365-21vianet) | modified |
+| 12/18/2020 | [Overview of Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-overview?view=o365-21vianet) | modified |
+| 12/18/2020 | [Partner access through Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-partner-access?view=o365-21vianet) | modified |
+| 12/18/2020 | [Supported Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-supported?view=o365-21vianet) | modified |
+| 12/18/2020 | [Microsoft 365 Defender APIs license and terms of use](/microsoft-365/security/defender/api-terms?view=o365-21vianet) | modified |
+| 12/18/2020 | [Update incidents API](/microsoft-365/security/defender/api-update-incidents?view=o365-21vianet) | modified |
 
 
 ## Week of December 21, 2020

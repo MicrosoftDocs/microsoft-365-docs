@@ -92,7 +92,7 @@ This article explains how to:
 
    ![Image of created app id](../../media/app-and-tenant-ids.png)
 
-9. **For Microsoft 365 Defender Partners only**: [Follow these instructions](https://docs.microsoft.com/microsoft-365/security/mtp/api-partner-access) for partner access through the Microsoft 365 Defender APIs, set your app to be multi-tenant, so it can be available in all tenants once you receive admin consent. Partner access is **required** for third-party apps—for example, if you create an app that is intended to run in multiple customers' tenants. It is **not required** if you create a service that you want to run in your tenant only, such as an application for your own usage that will only interact with your own data. To set your app to be multi-tenant:
+9. **For Microsoft 365 Defender Partners only**: [Follow these instructions](https://docs.microsoft.com/microsoft-365/security/defender/api-partner-access) for partner access through the Microsoft 365 Defender APIs, set your app to be multi-tenant, so it can be available in all tenants once you receive admin consent. Partner access is **required** for third-party apps—for example, if you create an app that is intended to run in multiple customers' tenants. It is **not required** if you create a service that you want to run in your tenant only, such as an application for your own usage that will only interact with your own data. To set your app to be multi-tenant:
 
     - Go to **Authentication**, and add https://portal.azure.com as the **Redirect URI**.
 

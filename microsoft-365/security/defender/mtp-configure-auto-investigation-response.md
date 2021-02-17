@@ -38,7 +38,7 @@ Then, after you're all set up, [View and manage actions in the Action center](mt
 
 |Requirement |Details |
 |:----|:----|
-|Subscription requirements |One of these subscriptions: <br/>- Microsoft 365 E5<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- Microsoft 365 A5 Security<br/>- Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<p> See [Microsoft 365 Defender licensing requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
+|Subscription requirements |One of these subscriptions: <br/>- Microsoft 365 E5<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- Microsoft 365 A5 Security<br/>- Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<p> See [Microsoft 365 Defender licensing requirements](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites?#licensing-requirements).|
 |Network requirements |- [Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) enabled<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) configured<br/>- [Microsoft Defender for Identity integration](https://docs.microsoft.com/cloud-app-security/mdi-integration) |
 |Windows machine requirements |- Windows 10, version 1709 or later installed (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/)) <br/>- The following threat protection services configured:<br/>- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)<br/>- [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
 |Protection for email content and Office files |[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp#configure-atp-policies) configured |
@@ -84,7 +84,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 3. In the navigation pane, choose **Settings** > **Microsoft 365 Defender**. Confirm that Microsoft 365 Defender is turned on. 
 
 > [!TIP]
-> Need help? See [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
+> Need help? See [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable).
 
 ## Next steps
 

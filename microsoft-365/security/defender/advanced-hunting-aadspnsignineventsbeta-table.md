@@ -75,7 +75,7 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 
 ## Related articles
 
--   [AADSignInEventsBeta](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-aadsignineventsbeta-table)
+-   [AADSignInEventsBeta](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-aadsignineventsbeta-table)
 -   [Advanced hunting
     overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 -   [Learn the query

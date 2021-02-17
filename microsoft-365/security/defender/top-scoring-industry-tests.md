@@ -28,7 +28,7 @@ ms.technology: m365d
 
 ## Microsoft 365 Defender
 
-[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) is a unified pre- and post-breach enterprise defense suite. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection) is a unified pre- and post-breach enterprise defense suite. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
 Microsoft 365 Defender combines the capabilities of [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection), and [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) into a single solution.
 
@@ -114,4 +114,4 @@ The capabilities within Microsoft Defender for Endpoint provide [additional laye
 
 [Learn more about Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and evaluate it in your own network by signing up for a [90-day trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview).
 
-[Learn more about Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
+[Learn more about Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable).

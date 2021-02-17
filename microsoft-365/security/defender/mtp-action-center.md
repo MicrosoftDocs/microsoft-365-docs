@@ -57,10 +57,10 @@ You can use the unified Action center if you have appropriate permissions and on
 
 - [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
 
 > [!TIP]
-> To learn more, see [Requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
+> To learn more, see [Requirements](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites).
 
 ## Using the Action center
 
@@ -111,7 +111,7 @@ In addition to remediation actions that are taken automatically as a result of [
 | **Manual email action** | A manual action taken on email. An example includes soft-deleting email messages or [remediating an email message](https://docs.microsoft.com/microsoft-365/security/defender-365-security/remediate-malicious-email-delivered-office-365). |
 | **Automated device action** | An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. (See [Remediation actions in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions).) |
 | **Automated email action** | An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. (See [Remediation actions in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/air-remediation-actions).) |
-| **Advanced hunting action** | Actions taken on devices or email with [advanced hunting](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview). |
+| **Advanced hunting action** | Actions taken on devices or email with [advanced hunting](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview). |
 | **Explorer action** | Actions taken on email content with [Explorer](https://docs.microsoft.com/microsoft-365/security/defender-365-security/threat-explorer). |
 | **Manual live response action** | Actions taken on a device with [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response). Examples include deleting a file, stopping a process, and removing a scheduled task. |
 | **Live response action** | Actions taken on a device with [Microsoft Defender for Endpoint APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis). Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
