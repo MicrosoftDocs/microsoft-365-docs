@@ -422,4 +422,4 @@ To protect a document with Azure Information Protection and this new label, you 
 
 [Cloud adoption Test Lab Guides (TLGs)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Microsoft 365 solution and architecture center](../../solutions/index.yml)
