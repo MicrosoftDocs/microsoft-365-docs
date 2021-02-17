@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 ms.audience: Admin
 ms.topic: article
-
+audience: Admin
 localization_priority: Priority
 ms.collection: 
   - M365-security-compliance

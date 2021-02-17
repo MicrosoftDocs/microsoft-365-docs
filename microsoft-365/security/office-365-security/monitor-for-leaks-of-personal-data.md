@@ -84,7 +84,7 @@ More information about alert policies and searching the audit log:
 
 - [Alert policies in the Microsoft 365 security and compliance centers](../../compliance/alert-policies.md)
 
-- [Search the audit log for user and admin activity in Office 365](../../compliance/search-the-audit-log-in-security-and-compliance) (introduction)
+- [Search the audit log for user and admin activity in Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduction)
 
 - [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)
 

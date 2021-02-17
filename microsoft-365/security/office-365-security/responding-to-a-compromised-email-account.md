@@ -85,7 +85,7 @@ You must do all the following steps to regain access to your account the sooner 
 
 ### Step 1 Reset the user's password
 
-Follow the procedures in [Reset a business password for someone](../../admin/add-users/reset-passwords#reset-my-admin-password.md).
+Follow the procedures in [Reset a business password for someone](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
 
 > [!IMPORTANT]
 >

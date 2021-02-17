@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: 
 audience: ITPro
-ms.article: how-to
+ms.topic: article
 
 localization_priority: Normal
 search.appverid: 

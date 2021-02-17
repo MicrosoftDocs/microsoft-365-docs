@@ -80,7 +80,7 @@ AIR capabilities are included in [Microsoft Defender for Office 365](office-365-
 - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [Zero-hour auto purge for email](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop).
 
-In addition, make sure to [review your organization's alert policies](../../compliance/alert-policies.md), especially the [default policies in the Threat management category](../../compliance/alert-policies?default-alert-policies.md).
+In addition, make sure to [review your organization's alert policies](../../compliance/alert-policies.md), especially the [default policies in the Threat management category](../../compliance/alert-policies.md#default-alert-policies).
 
 ## Which alert policies trigger automated investigations?
 
