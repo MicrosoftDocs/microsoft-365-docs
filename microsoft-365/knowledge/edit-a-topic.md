@@ -28,7 +28,7 @@ localization_priority: Normal
 In Viva Topics, you can edit an existing topic. You may need to do this if you want to correct or add additional information to an existing topic page. 
 
 > [!Note] 
-> While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that information that you manually add when editing an existing topic is visible to all users who have permissions to view topics. 
+> While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that topic description and people information that you manually add when editing an existing topic is visible to all users who have permissions to view topics. 
 
 ## Requirements
 
