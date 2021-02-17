@@ -60,7 +60,7 @@ For this option, neither Windows Location Services nor Wi-Fi are required. Your 
 
 You also need to add locations in the Admin Center network connectivity page or to import those from a CSV file. The locations added must include your office LAN subnet information.
 
-Because you are adding the locations, you can have multiple offices defined within a city.
+Since you are adding the locations, you can have multiple offices defined within a city.
 
 All test measurements from client machines include the LAN subnet information, which is correlated with the office location details that you have entered. Measurement samples and office locations should start to appear 24 hours after these pre-requisites have been met.
 
