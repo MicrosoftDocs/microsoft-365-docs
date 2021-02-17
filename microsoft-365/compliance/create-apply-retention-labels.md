@@ -291,13 +291,9 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 You can delete retention labels that aren't included in any label policies or auto-labeling policies, and they aren't configured for event-based retention or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently in preview.
 
-If you try to delete a retention label that has been applied to items but is no longer in a label policy or auto-apply label policy:
+If you try to delete a retention label that has been applied to items:
 
-- For a retention label that doesn't mark items as a record: The deletion succeeds and the label remains on the item. Because you can no longer edit the label, the only way to change the retention settings applied to that item is to change or remove the retention label.
-
-- For a retention label that marks items as a record: The deletion fails and you see a link to content explorer to identify the items.
-
-After you delete a retention label, you can't create a new retention label with the same name, even if the original label was never applied to items.
+- For both retention labels that doesn't mark items as a record and the ones that mark items as a record: The deletion fails and you see a link to content explorer to identify the items. Note: It takes at most two days for the content explorer to show the contents that are labeled today. If you are labeling an item today and choose to delete the retention label within two days, the retention label will get deleted and you will not be shown a link to the content explorer.
 
 You can't delete retention labels under any of the following scenarios:
 
@@ -305,7 +301,7 @@ You can't delete retention labels under any of the following scenarios:
 
 - They are configured for event-based retention, or mark items as regulatory records
 
-- They mark items as records and have been applied to documents or emails
+- They have been applied to documents or emails
 
 ## Locking the policy to prevent changes
 
