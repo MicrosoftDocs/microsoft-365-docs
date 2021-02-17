@@ -129,6 +129,8 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 
 - Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 300 MB. For these files, you can use the Office desktop apps to apply a label but you must be the only person who has the file open.
 
+- When you use [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md), unencrypted attachments for emails are not supported.
+
 - Office apps for iOS and Android are not supported.
 
 ## How to enable co-authoring for files with sensitivity labels
