@@ -30,6 +30,12 @@ ms.technology: m365d
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
+    
+## February 2021
+
+### Compatibility with Graph API
+
+Microsoft Secure Score recommendations delivered via Graph API will look and be weighted the same as the recommendations you currently see in the Microsoft 365 security center.
 
 ## January 2021
 
@@ -72,7 +78,7 @@ The ability to create ServiceNow tickets through Secure Score by going to **Shar
 
 - Enable policy to block legacy authentication
 
-## Incompatibility with Identity Secure Score and Graph API
+## Incompatibility with Identity Secure Score
 
 In the recent release of Microsoft Secure Score, an improved scoring model has been released. These changes allow for a more flexible and accurate view of your security posture. However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score.
 
