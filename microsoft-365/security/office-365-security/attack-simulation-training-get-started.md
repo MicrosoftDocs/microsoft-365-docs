@@ -42,7 +42,7 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
   - **Attack Simulator Administrators**: Create and managed all aspects of attack simulation campaigns.
   - **Attack Simulator Payload Authors**: Create attack payloads that an admin can initiate later.
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) or [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
