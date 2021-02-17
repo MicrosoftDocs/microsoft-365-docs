@@ -63,11 +63,11 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 2. Go to **Device configuration** > **Profiles** > **Create profile**.
 
-3. Name the profile, choose **Windows 10 and later** and **Endpoint protection**. <br/> ![Create endpoint protection profile](../images/create-endpoint-protection-profile.png) <br/>
+3. Name the profile, choose **Windows 10 and later** and **Endpoint protection**. <br/> ![Create endpoint protection profile](../../media/create-endpoint-protection-profile.png) <br/>
 
 4. Go to **Configure** > **Windows Defender Exploit Guard** > **Controlled folder access** > **Enable**.
 
-5. Type the path to each application that has access to protected folders and the path to any additional folder that needs protection. Select **Add**.<br/> ![Enable controlled folder access in Intune](../images/enable-cfa-intune.png)<br/>
+5. Type the path to each application that has access to protected folders and the path to any additional folder that needs protection. Select **Add**.<br/> ![Enable controlled folder access in Intune](../../media/enable-cfa-intune.png)<br/>
 
    > [!NOTE]
    > Wilcard is supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
@@ -111,7 +111,7 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](htt
     * **Block disk modification only** - Attempts by untrusted apps to write to disk sectors will be logged in Windows Event log. These logs can be found in **Applications and Services Logs** > Microsoft > Windows > Windows Defender > Operational > ID 1123.
     * **Audit disk modification only** - Only attempts to write to protected disk sectors will be recorded in the Windows event log (under **Applications and Services Logs** > **Microsoft** > **Windows** > **Windows Defender** > **Operational** > **ID 1124**). Attempts to modify or delete files in protected folders won't be recorded.
 
-      ![Screenshot of the group policy option Enabled and Audit Mode selected in the drop-down](../images/cfa-gp-enable.png)
+      ![Screenshot of the group policy option Enabled and Audit Mode selected in the drop-down](../../media/cfa-gp-enable.png)
 
 > [!IMPORTANT]
 > To fully enable controlled folder access, you must set the Group Policy option to **Enabled** and select **Block** in the options drop-down menu.
