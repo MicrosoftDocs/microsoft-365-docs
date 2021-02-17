@@ -80,6 +80,8 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
     
     For labels with any of these encryption configurations, the labels aren't displayed to users in Office on the web. Additionally, the new capabilities can't be used with labeled documents that already have these encryption settings. For example, these documents won't be returned in search results, even if they are updated.
 
+- For encrypted documents, printing is not supported.
+
 - For an encrypted document that grants edit permissions to a user, copying can't be blocked in the web versions of the Office apps.
 
 - The Azure Information Protection document tracking site is not supported.
@@ -198,7 +200,7 @@ However, you can use both protection solutions together and the behavior is as f
 With this behavior, you can be assured that all Office and PDF files are protected from unauthorized access if they are downloaded, even if they aren't labeled. However, labeled files that are uploaded won't benefit from the new capabilities.
 
 
-## Search for documents by sensitivity label	
+## Search for documents by sensitivity label
 
 Use the managed property **InformationProtectionLabelId** to find all documents in SharePoint or OneDrive that have a specific sensitivity label. Use the following syntax: `InformationProtectionLabelId:<GUID>`
 
