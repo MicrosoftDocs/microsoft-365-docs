@@ -44,43 +44,43 @@
         - name: Overview
           items: 
             - name: What is Microsoft 365 Defender?
-              href: mtp/microsoft-threat-protection.md
+              href: defender/microsoft-threat-protection.md
             - name: What's new in Microsoft 365 Defender
-              href: mtp/whats-new.md
+              href: defender/whats-new.md
             - name: Defender for Endpoint in the Microsoft 365 security center
-              href: mtp/microsoft-365-security-center-mde.md
+              href: defender/microsoft-365-security-center-mde.md
             - name: Defender for Office 365 in the Microsoft 365 security center
-              href: mtp/microsoft-365-security-center-mdo.md  
+              href: defender/microsoft-365-security-center-mdo.md  
             - name: Redirecting Defender for Endpoint to Microsoft 365 security center
-              href: mtp/microsoft-365-security-mde-redirection.md 
+              href: defender/microsoft-365-security-mde-redirection.md 
             - name: Preview features
-              href: mtp/preview.md
+              href: defender/preview.md
             - name: Troubleshoot issues
-              href: ./mtp/troubleshoot.md
+              href: ./defender/troubleshoot.md
             - name: Industry tests
-              href: ./mtp/top-scoring-industry-tests.md
+              href: ./defender/top-scoring-industry-tests.md
         - name: Plan
           items: 
             - name: Prerequisites
-              href: mtp/prerequisites.md
+              href: defender/prerequisites.md
             - name: Data security and privacy
-              href: mtp/data-privacy.md
+              href: defender/data-privacy.md
             - name: Microsoft security portals
-              href: mtp/portals.md
+              href: defender/portals.md
         - name: Evaluate capabilities
           items: 
             - name: Create a trial lab
               items:
                 - name: Trial lab overview
-                  href: mtp/mtp-evaluation.md
+                  href: defender/mtp-evaluation.md
                 - name: Prepare
-                  href: mtp/prepare-mtpeval.md
+                  href: defender/prepare-mtpeval.md
                 - name: Setup
-                  href: mtp/setup-mtpeval.md
+                  href: defender/setup-mtpeval.md
                 - name: Configure Microsoft 365 Defender pillars and onboard
-                  href: mtp/config-mtpeval.md
+                  href: defender/config-mtpeval.md
                 - name: Generate a test alert
-                  href: mtp/generate-test-alert.md                       
+                  href: defender/generate-test-alert.md                       
             - name: Run your pilot project in production
               items: 
                 - name: Pilot overview
@@ -280,45 +280,45 @@
                 - name: Create ServiceNow tickets and tasks
                   items: 
                     - name: ServiceNow integration overview
-                      href: ./mtp/tickets.md
+                      href: ./defender/tickets.md
                     - name: ServiceNow tickets in the security center
-                      href: ./mtp/tickets-security-center.md
+                      href: ./defender/tickets-security-center.md
             - name: Microsoft 365 Defender APIs (Preview)
               items: 
                 - name: Overview of Microsoft 365 Defender APIs (Preview)
-                  href: mtp/api-overview.md
+                  href: defender/api-overview.md
                 - name: Get started with Microsoft 365 Defender APIs (Preview)
                   items: 
                     - name: Microsoft 365 Defender API license and terms of use
-                      href: mtp/api-terms.md
+                      href: defender/api-terms.md
                     - name: Access Microsoft 365 Defender APIs
-                      href: mtp/api-access.md
+                      href: defender/api-access.md
                     - name: Hello World example
-                      href: mtp/api-hello-world.md
+                      href: defender/api-hello-world.md
                     - name: Get access with application context
-                      href: mtp/api-create-app-web.md
+                      href: defender/api-create-app-web.md
                     - name: Get access with user context
-                      href: mtp/api-create-app-user-context.md
+                      href: defender/api-create-app-user-context.md
                     - name: Get partner application access
-                      href: mtp/api-partner-access.md
+                      href: defender/api-partner-access.md
                     - name: Other API resources
-                      href: mtp/api-articles.md
+                      href: defender/api-articles.md
                 - name: Microsoft 365 Defender APIs & schema (Preview)
                   items: 
                     - name: Supported Microsoft 365 Defender APIs
-                      href: mtp/api-supported.md
+                      href: defender/api-supported.md
                     - name: Common REST API error codes
-                      href: mtp/api-error-codes.md
+                      href: defender/api-error-codes.md
                     - name: Advanced Hunting API
-                      href: mtp/api-advanced-hunting.md
+                      href: defender/api-advanced-hunting.md
                     - name: Incident APIs
                       items: 
                         - name: Incident methods and properties
-                          href: mtp/api-incident.md
+                          href: defender/api-incident.md
                         - name: List incidents
-                          href: mtp/api-list-incidents.md
+                          href: defender/api-list-incidents.md
                         - name: Update incident
-                          href: mtp/api-update-incidents.md
+                          href: defender/api-update-incidents.md
     - name: Office 365 security
       href: ./defender-365-security/index.md
       items: 
@@ -327,7 +327,7 @@
             - name: Security roadmap
               href: ./defender-365-security/security-roadmap.md
             - name: Defender for Office 365 in the Microsoft 365 security center
-              href: mtp/microsoft-365-security-center-mdo.md 
+              href: defender/microsoft-365-security-center-mdo.md 
             - name: Exchange Online Protection
               items: 
                 - name: Exchange Online Protection overview
@@ -355,7 +355,7 @@
             - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
               href: ./defender-365-security/turn-on-mdo-for-spo-odb-and-teams.md
             - name: Microsoft 365 security center overview
-              href: ./mtp/overview-security-center.md
+              href: ./defender/overview-security-center.md
             - name: Threat Explorer (and real-time detections)
               href: ./defender-365-security/threat-explorer.md
             - name: AIR overview
@@ -633,7 +633,7 @@
         - name: Reference
           items: 
             - name: Understanding latest attacks with threat analytics
-              href: ./mtp/latest-attack-campaigns.md
+              href: ./defender/latest-attack-campaigns.md
             - name: Help and support for EOP
               href: ./defender-365-security/help-and-support-for-eop.md
             - name: Troubleshooting mail sent to Microsoft 365
