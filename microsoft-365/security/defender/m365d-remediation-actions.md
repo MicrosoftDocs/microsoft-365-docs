@@ -38,7 +38,7 @@ During and after an automated investigation in Microsoft 365 Defender, remediati
 
 > [!IMPORTANT]
 > Whether remediation actions are taken automatically or only upon approval depends on certain settings, such as how automation levels. To learn more, see the following articles:
-> - [Configure your automated investigation and response capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md)
+> - [Configure your automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
 > - [How threats are remediated on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 > - [Threats and remediation actions on email & collaboration content](https://docs.microsoft.com/microsoft-365/security/defender-365-security/air-remediation-actions#threats-and-remediation-actions)
 
@@ -52,13 +52,13 @@ Remediation actions, whether pending approval or already complete, can be viewed
 
 ## Remediation actions that follow automated investigations
 
-When an automated investigation completes, a verdict is reached for every piece of evidence involved. Depending on the verdict, remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions await approval. It all depends on how [automated investigation and response is configured](mtp-configure-auto-investigation-response.md).
+When an automated investigation completes, a verdict is reached for every piece of evidence involved. Depending on the verdict, remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions await approval. It all depends on how [automated investigation and response is configured](m365d-configure-auto-investigation-response.md).
 
 The following table lists possible verdicts and outcomes:
 
 | Verdict    | Area    | Outcomes|
 |------|------|------|
-| Malicious    | Devices (endpoints)    | Remediation actions are taken automatically (assuming your organization's [device groups](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) are set to **Full - remediate threats automatically**)|
+| Malicious    | Devices (endpoints)    | Remediation actions are taken automatically (assuming your organization's [device groups](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) are set to **Full - remediate threats automatically**)|
 | Malicious    | Email content (URLs or attachments) | Recommended remediation actions are pending approval|
 | Suspicious    | Devices or email content | Recommended remediation actions are pending approval|
 | No threats found    | Devices or email content    | No remediation actions are needed|
@@ -79,4 +79,4 @@ In addition to remediation actions that follow automated investigations, your se
 
 - [Visit the Action center](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center)
 - [View and manage remediation actions](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir-actions)
-- [Handle false positives/negatives in automated investigation and response capabilities](mtp-autoir-report-false-positives-negatives.md)
+- [Handle false positives/negatives in automated investigation and response capabilities](m365d-autoir-report-false-positives-negatives.md)

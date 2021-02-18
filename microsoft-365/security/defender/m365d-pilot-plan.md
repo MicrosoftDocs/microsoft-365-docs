@@ -31,7 +31,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-|![Planning](../../media/phase-diagrams/1-planning.png)<br/>Planning|[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparation](prepare-mtpeval.md) | [![Simulate attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simulate attack](mtp-pilot-simulate.md) | [![Close and summarize](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Close and summarize](mtp-pilot-close.md)|
+|![Planning](../../media/phase-diagrams/1-planning.png)<br/>Planning|[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-m365d-eval.md)<br/>[Preparation](prepare-m365d-eval.md) | [![Simulate attack](../../media/phase-diagrams/3-simluate.png)](m365d-pilot-simulate.md)<br/>[Simulate attack](m365d-pilot-simulate.md) | [![Close and summarize](../../media/phase-diagrams/4-summary.png)](m365d-pilot-close.md)<br/>[Close and summarize](m365d-pilot-close.md)|
 |--|--|--|--|
 |*You are here!*| | | |
 
@@ -83,12 +83,12 @@ One way to bring all elements of your plan together can be to create a scorecard
 
 | Use case | Requirements | Configuration requirements | Test plan | Expected outcome | Test status | Score | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Incident management|-	Microsoft 365 Defender	</br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint </br></br>- Microsoft Cloud App Security (optional)|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Investigate the incident](https://docs.microsoft.com/microsoft-365/security/defender/mtp-pilot-simulate#investigate-an-incident) |Investigators can understand the scope and impact of the incident and manage the incident||||
-|AutoIR|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Automated investigation](https://docs.microsoft.com/microsoft-365/security/defender/mtp-pilot-simulate#automated-investigation-and-remediation) |Alerts and incidents are automatically remediated by Microsoft 365 Defender||||
+|Incident management|-	Microsoft 365 Defender	</br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint </br></br>- Microsoft Cloud App Security (optional)|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details |[Simulate attack](m365d-pilot-simulate.md) <br></br>[Investigate the incident](https://docs.microsoft.com/microsoft-365/security/defender/mtp-pilot-simulate#investigate-an-incident) |Investigators can understand the scope and impact of the incident and manage the incident||||
+|AutoIR|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |[Simulate attack](m365d-pilot-simulate.md) <br></br>[Automated investigation](https://docs.microsoft.com/microsoft-365/security/defender/mtp-pilot-simulate#automated-investigation-and-remediation) |Alerts and incidents are automatically remediated by Microsoft 365 Defender||||
 |Advanced hunting|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Endpoint </br></br>-Microsoft Defender for Office 365	|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details|[Advanced hunting scenario](https://docs.microsoft.com/microsoft-365/security/defender/mtp-pilot-simulate#advanced-hunting-scenario) |Investigators can find data through advanced hunting, pivoting to impacted entities, and by creating custom detections||||
 
 
 
 ## Next step
-|![Preparation phase](../../media/mtp/prep.png) <br>[Preparation phase](prepare-mtpeval.md) | Prepare your Microsoft 365 Defender pilot environment
+|![Preparation phase](../../media/mtp/prep.png) <br>[Preparation phase](prepare-m365d-eval.md) | Prepare your Microsoft 365 Defender pilot environment
 |:-------|:-----|

@@ -28,7 +28,7 @@ ms.technology: m365d
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-|[![Planning](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planning](mtp-pilot-plan.md)|[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparation](prepare-mtpeval.md)|![Simulate attack](../../media/phase-diagrams/3-simluate.png)<br/>Simulate attack|[![Close and summarize](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Close and summarize](mtp-pilot-close.md)|
+|[![Planning](../../media/phase-diagrams/1-planning.png)](m365d-pilot-plan.md)<br/>[Planning](m365d-pilot-plan.md)|[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-m365d-eval.md)<br/>[Preparation](prepare-m365d-eval.md)|![Simulate attack](../../media/phase-diagrams/3-simluate.png)<br/>Simulate attack|[![Close and summarize](../../media/phase-diagrams/4-summary.png)](m365d-pilot-close.md)<br/>[Close and summarize](m365d-pilot-close.md)|
 |--|--|--|--|
 |||*You are here!*||
 
@@ -444,5 +444,5 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 
 ## Next step
 
-|![Closing and summary phase](../../media/mtp/close.png) <br>[Closing and summary phase](mtp-pilot-close.md)|Analyze your Microsoft 365 Defender pilot outcome, present them to your stakeholders, and take the next step.
+|![Closing and summary phase](../../media/mtp/close.png) <br>[Closing and summary phase](m365d-pilot-close.md)|Analyze your Microsoft 365 Defender pilot outcome, present them to your stakeholders, and take the next step.
 |:-----|:-----|

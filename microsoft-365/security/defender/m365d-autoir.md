@@ -49,7 +49,7 @@ Watch the following video to see how self-healing works: <p>
 In Microsoft 365 Defender, automated investigation and response with self-healing capabilities works across your devices, email & content, and identities.
  
 > [!TIP]
-> This article describes how automated investigation and response works. To configure these capabilities, see [Configure automated investigation and response capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
+> This article describes how automated investigation and response works. To configure these capabilities, see [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
 ## Your own virtual analyst
 
@@ -74,9 +74,9 @@ Remediation actions for malicious or suspicious entities are identified. Example
 - Stopping a process;
 - Isolating a device;
 - Blocking a URL; and 
-- other actions. (See [Remediation actions in Microsoft 365 Defender](mtp-remediation-actions.md).)
+- other actions. (See [Remediation actions in Microsoft 365 Defender](m365d-remediation-actions.md).)
 
-Depending on [how automated investigation and response capabilities are configured](mtp-configure-auto-investigation-response.md) for your organization, remediation actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](mtp-action-center.md).
+Depending on [how automated investigation and response capabilities are configured](m365d-configure-auto-investigation-response.md) for your organization, remediation actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](m365d-action-center.md).
 
 While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation expands its scope to include that entity, and the investigation process repeats. 
 
@@ -88,10 +88,10 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 |Email content (email messages that can contain files and URLs)     |[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)         |
 
 > [!NOTE]
-> Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; it depends on how automated investigation and response is configured for your organization. See [Configure automated investigation and response capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
+> Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; it depends on how automated investigation and response is configured for your organization. See [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
 ## Next steps
 
-- [See the prerequisites for automated investigation and response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
-- [Configure automated investigation and response for your organization](mtp-configure-auto-investigation-response.md)
-- [Learn more about the Action center](mtp-action-center.md)
+- [See the prerequisites for automated investigation and response in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
+- [Configure automated investigation and response for your organization](m365d-configure-auto-investigation-response.md)
+- [Learn more about the Action center](m365d-action-center.md)

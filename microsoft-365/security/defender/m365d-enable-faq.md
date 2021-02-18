@@ -32,7 +32,7 @@ ms.technology: m365d
 
 Read responses to the most commonly asked questions about turning on [Microsoft 365 Defender](microsoft-365-defender.md), including required licenses and permissions, deploying support services, and initial settings.
 
-For instructions on how to turn on the service, [read Turn on Microsoft 365 Defender](mtp-enable.md).
+For instructions on how to turn on the service, [read Turn on Microsoft 365 Defender](m365d-enable.md).
 
 ## I don’t have a Microsoft 365 E5 license. Can I still use Microsoft 365 Defender?
 
@@ -74,10 +74,10 @@ Accounts assigned the following Azure Active Directory (AD) roles can access Mic
 - Security Reader
 
 >[!NOTE]
->Role-based access control settings in Microsoft Defender for Endpoint influence access to data. For more information, read about [managing access to Microsoft 365 Defender](mtp-permissions.md).
+>Role-based access control settings in Microsoft Defender for Endpoint influence access to data. For more information, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
 
 ## What time zone does Microsoft 365 Defender default to?
-By default, Microsoft 365 Defender displays time information in the UTC time zone. You can change this setting to use your local time zone. [Learn about setting the time zone](mtp-time-zone.md)
+By default, Microsoft 365 Defender displays time information in the UTC time zone. You can change this setting to use your local time zone. [Learn about setting the time zone](m365d-time-zone.md)
 
 ## How can I learn about new Microsoft 365 Defender feature and UI updates?
 
@@ -94,7 +94,7 @@ At the moment, it is not available.
 ## Related topics
 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
-- [Turn on Microsoft 365 Defender](mtp-enable.md).
+- [Turn on Microsoft 365 Defender](m365d-enable.md).
 - [Licensing requirements and other prerequisites](prerequisites.md)
 - [Deploy supported services](deploy-supported-services.md)
 - [Turn on preview features](preview.md)

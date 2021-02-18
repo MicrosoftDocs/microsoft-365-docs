@@ -72,7 +72,7 @@ When you visit the Action center, you see two tabs: Pending actions and History.
 |Tab  |Description  |
 |---------|---------|
 |**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as Quarantine file). <p>**TIP**: Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner.       |
-|**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br/>- Remediation actions that were taken on suspicious or malicious email messages, files, or URLs<br/>- Remediation actions that were approved by your security operations team <br/>- Commands that were run and remediation actions that were applied during Live Response sessions<br/>- Remediation actions that were taken by your antivirus protection <p>Provides a way to undo certain actions (see [Undo completed actions](mtp-autoir-actions.md#undo-completed-actions)).        |
+|**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br/>- Remediation actions that were taken on suspicious or malicious email messages, files, or URLs<br/>- Remediation actions that were approved by your security operations team <br/>- Commands that were run and remediation actions that were applied during Live Response sessions<br/>- Remediation actions that were taken by your antivirus protection <p>Provides a way to undo certain actions (see [Undo completed actions](m365d-autoir-actions.md#undo-completed-actions)).        |
 
 You can customize, sort, filter, and export data in the Action center.
 
@@ -99,7 +99,7 @@ All actions, whether they're pending approval or were already taken, are tracked
 - Run antivirus scan 
 - Stop and quarantine 
 
-In addition to remediation actions that are taken automatically as a result of [automated investigations](mtp-autoir.md), the Action center also tracks actions your security team has taken to address detected threats, and actions that were taken as a result of threat protection features in Microsoft 365 Defender. For more information about automatic and manual remediation actions, see [Remediation actions](mtp-remediation-actions.md).
+In addition to remediation actions that are taken automatically as a result of [automated investigations](m365d-autoir.md), the Action center also tracks actions your security team has taken to address detected threats, and actions that were taken as a result of threat protection features in Microsoft 365 Defender. For more information about automatic and manual remediation actions, see [Remediation actions](m365d-remediation-actions.md).
 
 ## Viewing action source details
 
@@ -130,4 +130,4 @@ To perform tasks, such as approving or rejecting pending actions in the Action c
 
 ## Next step 
 
-- [Review and manage remediation actions](mtp-autoir-actions.md)
+- [Review and manage remediation actions](m365d-autoir-actions.md)

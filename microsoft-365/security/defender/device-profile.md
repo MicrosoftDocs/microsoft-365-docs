@@ -176,6 +176,6 @@ Selecting an item will open a flyout that links to the update.
 ## Related topics
 
 * [Microsoft 365 Defender overview](microsoft-365-defender.md)
-* [Turn on Microsoft 365 Defender](mtp-enable.md)
+* [Turn on Microsoft 365 Defender](m365d-enable.md)
 * [Investigate entities on devices, using live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Automated investigation and response (AIR) in Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-air)

@@ -59,7 +59,7 @@ Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.
 > You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information. If you encounter access problems, contact a global admin.
 
 ## Required permissions
-You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft 365 Defender. For the list of roles required to use Microsoft 365 Defender and information on how access to data is regulated, read about [managing access to Microsoft 365 Defender](mtp-permissions.md).
+You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft 365 Defender. For the list of roles required to use Microsoft 365 Defender and information on how access to data is regulated, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
 
 ## Browser requirements
 Access Microsoft 365 Defender in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.
@@ -73,5 +73,5 @@ Currently, Microsoft 365 Defender is *not* available to:
 
 ## Related topics
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
-- [Turn on Microsoft 365 Defender](mtp-enable.md)
-- [Manage access and permissions](mtp-permissions.md)
+- [Turn on Microsoft 365 Defender](m365d-enable.md)
+- [Manage access and permissions](m365d-permissions.md)

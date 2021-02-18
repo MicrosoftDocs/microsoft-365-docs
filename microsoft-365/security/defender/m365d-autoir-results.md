@@ -31,7 +31,7 @@ ms.date: 02/08/2021
 **Applies to:**
 - Microsoft 365 Defender
 
-With Microsoft 365 Defender, when an [automated investigation](mtp-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
+With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](m365d-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
 ![Investigation details](../../media/mtp-air-investdetails.png)
 
@@ -50,10 +50,10 @@ You can open the investigation details view by using one of the following method
 
 ### Select an item in the Action center
 
-The improved [Action center](mtp-action-center.md) ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together [remediation actions](mtp-remediation-actions.md) across your devices, email & collaboration content, and identities. Listed actions include remediation actions that were taken automatically or manually. In the Action center, you can view actions that are awaiting approval and actions that were already approved or completed. You can also navigate to more details, such as an investigation page.
+The improved [Action center](m365d-action-center.md) ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together [remediation actions](m365d-remediation-actions.md) across your devices, email & collaboration content, and identities. Listed actions include remediation actions that were taken automatically or manually. In the Action center, you can view actions that are awaiting approval and actions that were already approved or completed. You can also navigate to more details, such as an investigation page.
 
 > [!TIP]
-> You must have [certain permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve, reject, or undo actions.
+> You must have [certain permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve, reject, or undo actions.
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 2. In the navigation pane, choose **Action center**. 
@@ -91,7 +91,7 @@ In the Investigation details view, you can see information on the **Investigatio
 |:--------|:--------|
 | **Investigation graph**	| Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts. |
 | **Alerts**	| Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Cloud App Security, and other Microsoft 365 Defender features.|
-| **Devices** | Lists devices included in the investigation along with their remediation level. (Remediation levels correspond to [the automation level for device groups](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
+| **Devices** | Lists devices included in the investigation along with their remediation level. (Remediation levels correspond to [the automation level for device groups](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Mailboxes** |Lists mailboxes that are impacted by detected threats.  |
 | **Users**  | Lists user accounts that are impacted by detected threats. |
 | **Evidence** | Lists pieces of evidence raised by alerts/investigations. Includes verdicts (*Malicious*, *Suspicious*, or *No threats found*) and remediation status. |
@@ -101,5 +101,5 @@ In the Investigation details view, you can see information on the **Investigatio
 
 ## Next steps
 
-- [Approve or reject remediation actions following an automated investigation](mtp-autoir-actions.md)
-- [Learn more about remediation actions](mtp-remediation-actions.md)
+- [Approve or reject remediation actions following an automated investigation](m365d-autoir-actions.md)
+- [Learn more about remediation actions](m365d-remediation-actions.md)

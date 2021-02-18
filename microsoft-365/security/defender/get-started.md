@@ -38,7 +38,7 @@ Whether you're new to the Microsoft suite of security products or familiar with 
 
 In general, you'll need to take the following steps to get started:
 
-- **[Step 1: Turn on Microsoft 365 Defender](mtp-enable.md)** <br>
+- **[Step 1: Turn on Microsoft 365 Defender](m365d-enable.md)** <br>
     You'll first need to turn on the service by making sure you have the right license in place and roles are assigned so that you can access the portal. 
 
     You'll then go through some simple settings and then you can confirm that the service is on.

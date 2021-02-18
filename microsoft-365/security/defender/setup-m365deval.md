@@ -32,7 +32,7 @@ ms.technology: m365d
 
 Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:
 
-|[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Phase 1: Prepare](prepare-mtpeval.md) |![Phase 2: Set up](../../media/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Phase 3: Onboard](config-mtpeval.md) | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Back to pilot playbook](mtp-pilot.md) |
+|[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Phase 1: Prepare](prepare-m365d-eval.md) |![Phase 2: Set up](../../media/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Phase 3: Onboard](config-m365d-eval.md) | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Back to pilot playbook](m365d-pilot.md) |
 |--|--|--|--|
 ||*You are here!*  | | |
 
@@ -154,5 +154,5 @@ In this phase, you'll be guided to:
 
 
 ## Next step
-|[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints.
+|[Phase 3: Configure & Onboard](config-m365d-eval.md) | Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints.
 |:-------|:-----|

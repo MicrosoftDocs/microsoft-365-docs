@@ -34,7 +34,7 @@ ms.technology: m365d
 
 Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:
 
-|[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Phase 1: Prepare](prepare-mtpeval.md) |[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Phase 2: Set up](setup-mtpeval.md) |![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)<br/>Phase 3: Onboard | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Back to pilot playbook](mtp-pilot.md) |
+|[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Phase 1: Prepare](prepare-m365d-eval.md) |[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Phase 2: Set up](setup-m365deval.md) |![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)<br/>Phase 3: Onboard | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Back to pilot playbook](m365d-pilot.md) |
 |--|--|--|--|
 || |*You are here!* | |
 
@@ -276,7 +276,7 @@ Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage). 
 
 ![Image of_Microsoft 365 Defender option screenshot from the Microsoft 365 Security Center Settings page ](../../media/mtp-eval-72b.png) <br>
 
-For a more comprehensive guidance, see [Turn on Microsoft 365 Defender](mtp-enable.md). 
+For a more comprehensive guidance, see [Turn on Microsoft 365 Defender](m365d-enable.md). 
 
 Congratulations! You've just created your Microsoft 365 Defender trial lab or pilot environment! Now you can familiarize yourself with the Microsoft 365 Defender user interface! See what you can learn from the following Microsoft 365 Defender interactive guide and know how to use each dashboard for your day-to-day security operation tasks.
 

@@ -31,7 +31,7 @@ ms.technology: m365d
 
 Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:
 
-|![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Phase 2: Set up](setup-mtpeval.md) |[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Phase 3: Onboard](config-mtpeval.md) | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Back to pilot playbook](mtp-pilot.md) |
+|![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Phase 2: Set up](setup-m365deval.md) |[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Phase 3: Onboard](config-m365d-eval.md) | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Back to pilot playbook](m365d-pilot.md) |
 |--|--|--|--|
 |*You are here!* | || |
 
@@ -107,6 +107,6 @@ The following table indicates the order Microsoft recommends for configuring the
 |Microsoft Defender for Endpoint | Microsoft Defender for Endpoint endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats. <br> [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                   |                                                                                                                                                                                                                                    
 
 ## Next step
-|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md) | Set up your Microsoft 365 Defender trial lab or pilot environment
+|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-m365deval.md) | Set up your Microsoft 365 Defender trial lab or pilot environment
 |:-------|:-----|
 

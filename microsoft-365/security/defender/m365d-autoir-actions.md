@@ -33,12 +33,12 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 Threat protection features in Microsoft 365 Defender can result in certain remediation actions. Here are some examples:
-- [Automated investigations](mtp-autoir.md) can result in remediation actions that are taken automatically or await approval.
+- [Automated investigations](m365d-autoir.md) can result in remediation actions that are taken automatically or await approval.
 - Antivirus, antimalware, and other threat protection features can result in remediation actions, such as blocking a file, URL, or process, or sending an artifact to quarantine.
 - Your security operations team can take remediation actions manually, such as during [advanced hunting](advanced-hunting-overview.md) or while investigating [alerts](investigate-alerts.md) or [incidents](investigate-incidents.md).
 
 > [!NOTE]
-> You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see [Prerequisites for automated investigation and response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
+> You must have [appropriate permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see [Prerequisites for automated investigation and response in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
 ## Review pending actions in the Action center
 
@@ -83,5 +83,5 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 
 ## Next steps
 
-- [View the details and results of an automated investigation](mtp-autoir-results.md)
-- [Learn how to handle false positives/negatives (if you get one)](mtp-autoir-report-false-positives-negatives.md)
+- [View the details and results of an automated investigation](m365d-autoir-results.md)
+- [Learn how to handle false positives/negatives (if you get one)](m365d-autoir-report-false-positives-negatives.md)

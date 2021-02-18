@@ -77,12 +77,12 @@ Deploying each service typically requires provisioning to your tenant and some i
 | Microsoft Defender for Identity | [Quickstart: Create your Microsoft Defender for Identity instance](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *See provisioning instructions* |
 | Microsoft Cloud App Security | *None* | [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
 
-Once you’ve deployed the supported services, [turn on Microsoft 365 Defender](mtp-enable.md).
+Once you’ve deployed the supported services, [turn on Microsoft 365 Defender](m365d-enable.md).
 
 ## Related topics
 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
-- [Turn on Microsoft 365 Defender](mtp-enable.md)
+- [Turn on Microsoft 365 Defender](m365d-enable.md)
 - [Microsoft Defender for Endpoint overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Microsoft Defender for Office 365 overview](../defender-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)

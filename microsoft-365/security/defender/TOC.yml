@@ -43,11 +43,11 @@
             - name: Trial lab overview
               href: defender-evaluation.md
             - name: Prepare
-              href: prepare-mtpeval.md
+              href: prepare-m365d-eval.md
             - name: Setup
-              href: setup-mtpeval.md
+              href: setup-m365deval.md
             - name: Configure and onboard
-              href: config-mtpeval.md
+              href: config-m365d-eval.md
             - name: Start the Microsoft 365 Defender service
               href: https://docs.microsoft.com/microsoft-365/security/defender/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
@@ -63,7 +63,7 @@
                 - name: Plan
                   href: defender-pilot-plan.md
                 - name: Prepare
-                  href: prepare-mtpeval.md
+                  href: prepare-m365d-eval.md
                 - name: Simulate attack
                   href: defender-pilot-simulate.md
                 - name: Close and summarize

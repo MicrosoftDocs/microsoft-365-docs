@@ -31,7 +31,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-False positives/negatives can occasionally occur with any threat protection solution. If [automated investigation and response capabilities](mtp-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your security operations team can take:
+False positives/negatives can occasionally occur with any threat protection solution. If [automated investigation and response capabilities](m365d-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your security operations team can take:
 
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
@@ -55,7 +55,7 @@ The following sections describe how to perform these tasks.
 
 ## Undo a remediation action that was taken on a device
 
-If a remediation action was taken on an entity (such as a device or an email message) and the affected entity is not actually a threat, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
+If a remediation action was taken on an entity (such as a device or an email message) and the affected entity is not actually a threat, your security operations team can undo the remediation action in the [Action center](m365d-action-center.md).
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 2. In the navigation pane, choose **Action center**. 
@@ -63,10 +63,10 @@ If a remediation action was taken on an entity (such as a device or an email mes
 4. In the flyout pane, select **Undo**.
 
 > [!TIP]
-> See [Undo completed actions](mtp-autoir-actions.md#undo-completed-actions).
+> See [Undo completed actions](m365d-autoir-actions.md#undo-completed-actions).
 
 ## See also
 
-- [View the details and results of an automated investigation](mtp-autoir-results.md)
+- [View the details and results of an automated investigation](m365d-autoir-results.md)
 - [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
 - [Address false positives/negatives in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

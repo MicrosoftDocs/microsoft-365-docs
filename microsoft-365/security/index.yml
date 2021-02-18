@@ -36,9 +36,9 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Evaluate Microsoft 365 Defender
-            url: defender/mtp-evaluation.md
+            url: defender/m365d-evaluation.md
           - text: Microsoft 365 Defender pilot playbook
-            url: defender/mtp-pilot.md
+            url: defender/m365d-pilot.md
   
   # Card
   - title: Secure your remote workforce

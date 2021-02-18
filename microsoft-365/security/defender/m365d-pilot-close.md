@@ -33,7 +33,7 @@ ms.technology: m365d
 
 
 
-|[![Planning](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planning](mtp-pilot-plan.md) |[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparation](prepare-mtpeval.md) | [![Simulate attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simulate attack](mtp-pilot-simulate.md) | ![Close and summarize](../../media/phase-diagrams/4-summary.png)<br/>Close and summarize|
+|[![Planning](../../media/phase-diagrams/1-planning.png)](m365d-pilot-plan.md)<br/>[Planning](m365d-pilot-plan.md) |[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-m365d-eval.md)<br/>[Preparation](prepare-m365d-eval.md) | [![Simulate attack](../../media/phase-diagrams/3-simluate.png)](m365d-pilot-simulate.md)<br/>[Simulate attack](m365d-pilot-simulate.md) | ![Close and summarize](../../media/phase-diagrams/4-summary.png)<br/>Close and summarize|
 |--|--|--|--|
 || | |*You are here!*|
 

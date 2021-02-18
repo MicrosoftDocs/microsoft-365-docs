@@ -46,4 +46,4 @@ For more information, see [Microsoft Defender for Identity integration](https://
 
 ## Where is the settings page for turning the service on?
 
-To turn on Microsoft 365 Defender, access **Settings** from the navigation pane in the Microsoft 365 security center. This navigation item is visible only if you have the [prerequisite permissions and licenses](mtp-enable.md#check-license-eligibility-and-required-permissions).
+To turn on Microsoft 365 Defender, access **Settings** from the navigation pane in the Microsoft 365 security center. This navigation item is visible only if you have the [prerequisite permissions and licenses](m365d-enable.md#check-license-eligibility-and-required-permissions).

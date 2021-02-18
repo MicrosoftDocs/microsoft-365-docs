@@ -72,13 +72,13 @@
             - name: Create a trial lab
               items:
                 - name: Trial lab overview
-                  href: defender/mtp-evaluation.md
+                  href: defender/m365d-evaluation.md
                 - name: Prepare
-                  href: defender/prepare-mtpeval.md
+                  href: defender/prepare-m365d-eval.md
                 - name: Setup
-                  href: defender/setup-mtpeval.md
+                  href: defender/setup-m365deval.md
                 - name: Configure Microsoft 365 Defender pillars and onboard
-                  href: defender/config-mtpeval.md
+                  href: defender/config-m365d-eval.md
                 - name: Generate a test alert
                   href: defender/generate-test-alert.md                       
             - name: Run your pilot project in production

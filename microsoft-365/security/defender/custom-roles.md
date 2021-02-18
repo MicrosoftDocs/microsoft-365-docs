@@ -35,7 +35,7 @@ There are two types of roles that can be used to access to Microsoft 365 Defende
 - **Global Azure Active Directory (AD) roles**
 - **Custom roles**
 
-Access to Microsoft 365 Defender can be managed collectively by using [Global roles in Azure Active Directory (AAD)](mtp-permissions.md)
+Access to Microsoft 365 Defender can be managed collectively by using [Global roles in Azure Active Directory (AAD)](m365d-permissions.md)
 
 If you need greater flexibility and control over access to specific product data, Microsoft 365 Defender access can also be managed with the creation of Custom roles through each respective security portal.  
 
@@ -94,5 +94,5 @@ Similarly, to view hunting data from Microsoft Defender for Office 365, users wo
 - View-only recipients
 
 ## Related topics
-- [Manage access to Microsoft 365 Defender](mtp-permissions.md)
+- [Manage access to Microsoft 365 Defender](m365d-permissions.md)
 - [Manage admin access for MCAS](https://docs.microsoft.com/cloud-app-security/manage-admins)

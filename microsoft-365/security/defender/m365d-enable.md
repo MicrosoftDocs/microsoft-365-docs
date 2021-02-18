@@ -68,7 +68,7 @@ Once the service is provisioned, it adds:
 
 - [Incidents management](incidents-overview.md)
 - [Alerts queue](investigate-alerts.md)
-- An action center for managing [automated investigation and response](mtp-autoir.md)
+- An action center for managing [automated investigation and response](m365d-autoir.md)
 - [Advanced hunting](advanced-hunting-overview.md) capabilities
 - Threat analytics
 
@@ -80,13 +80,13 @@ To enable the integration with Microsoft Cloud App Security, you'll need to logi
 
 ## Get assistance
 
-To get answers to the most commonly asked questions about turning on Microsoft 365 Defender, [read the FAQ](mtp-enable-faq.md).
+To get answers to the most commonly asked questions about turning on Microsoft 365 Defender, [read the FAQ](m365d-enable-faq.md).
 
 Microsoft support staff can help provision or deprovision the service and related resources on your tenant. For assistance, select **Need help?** in the Microsoft 365 security center. When contacting support, mention Microsoft 365 Defender.
 
 ## Related topics
 
-- [Frequently asked questions](mtp-enable-faq.md)
+- [Frequently asked questions](m365d-enable-faq.md)
 - [Licensing requirements and other prerequisites](prerequisites.md)
 - [Deploy supported services](deploy-supported-services.md)
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)

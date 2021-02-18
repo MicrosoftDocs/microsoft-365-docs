@@ -72,11 +72,11 @@ To take any of the described actions, select one or more records in your query r
 ![Image of selected record with panel for inspecting the record](../../media/mtp-ah/ah-take-actions.png)
 
 ## Review actions taken
-Each action is individually recorded in the [action center](mtp-action-center.md) under **Action center** > **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Go to the action center to check the status of each action.
+Each action is individually recorded in the [action center](m365d-action-center.md) under **Action center** > **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Go to the action center to check the status of each action.
  
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Work with query results](advanced-hunting-query-results.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Action center overview](mtp-action-center.md)
+- [Action center overview](m365d-action-center.md)
