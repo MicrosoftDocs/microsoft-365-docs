@@ -226,13 +226,13 @@
                 - name: Monitor and view reports
                   href: overview-security-center.md
                 - name: Identity monitoring and reporting
-                  href: monitor-and-report-identities.md
+                  href: overview-security-center.md
                 - name: Data monitoring and reporting
-                  href: monitor-data.md
+                  href: overview-security-center.md
                 - name: Device monitoring and reporting
-                  href: monitor-devices.md
+                  href: overview-security-center.md
                 - name: App monitoring and reporting
-                  href: monitor-apps.md
+                  href: overview-security-center.md
         - name: Reference
           items: 
             - name: Permissions & settings
