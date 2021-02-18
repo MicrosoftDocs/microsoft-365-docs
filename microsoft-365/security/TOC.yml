@@ -114,15 +114,15 @@
             - name: Threat analytics
               items:  
                 - name: Threat analytics overview
-                  href: mtp/threat-analytics.md
+                  href: defender/threat-analytics.md
                 - name: Read the analyst report
-                  href: mtp/threat-analytics-analyst-reports.md
+                  href: defender/threat-analytics-analyst-reports.md
             - name: Incidents
               items: 
                 - name: Overview
-                  href: mtp/incidents-overview.md
+                  href: defender/incidents-overview.md
                 - name: Prioritize incidents
-                  href: mtp/incident-queue.md
+                  href: defender/incident-queue.md
                 - name: Investigate incidents
                   items: 
                     - name: Investigate incidents
