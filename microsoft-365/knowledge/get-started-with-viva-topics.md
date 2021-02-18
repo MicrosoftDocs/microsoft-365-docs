@@ -15,13 +15,13 @@ description: "Learn about Viva Topics."
 
 How do you find the people and resources important to your work? When you share important files with others, are they able to find them again later, when they need them? Viva Topics provides new ways to discover and explore information from your content in Microsoft 365.  
 
-Topics empowers you to do the following. 
+Viva Topics empowers you to: 
 
 1. Discover important topics highlighted in content.
 
 2. Find people and content connected to important topics.
 
-3. Improve the network by adding topic definitions, editing connections and more.
+3. Improve the network by adding topic definitions, editing connections, and more.
 
 
 ## Discover important topics highlighted in related content 
@@ -33,9 +33,9 @@ Topics will introduce topic highlights gradually across the service. At first, y
 
 ## Find people and content connected to important topics 
 
-Topic cards provide a summary of the information on a topic. The description, people and resources shown may have been automatically identified. Select the topic name to see the full information on the topic, including the associated people and resources.  
+Topic cards provide a summary of the information on a topic. The description, people, and resources shown may have been automatically identified. Select the topic name to see the full information on the topic, including the associated people and resources.  
 
-Only the resources that have been shared with you will be shown to you. Others may see a different summary or may not see the topic highlighted if the resources have not been shared with them. 
+Only the resources that have been shared with you will be shown to you. Others may see a different summary or may not see the topic highlighted if the resources haven't been shared with them. 
 
 
 
