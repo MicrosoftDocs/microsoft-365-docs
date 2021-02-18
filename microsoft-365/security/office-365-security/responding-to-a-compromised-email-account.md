@@ -199,7 +199,7 @@ Your Microsoft 365 subscription comes with a powerful set of security capabiliti
 
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
-- [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
+- [Internet Crime Complaint Center](hhttps://www.ic3.gov/Home/Ransomware)
 
 - [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 
