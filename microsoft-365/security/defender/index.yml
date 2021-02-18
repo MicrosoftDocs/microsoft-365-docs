@@ -27,6 +27,6 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft 365 Defender?
-            url:  defender/microsoft-365-defender.md
+            url:  ../defender/microsoft-365-defender.md
           - text: Microsoft 365 security center
-            url: defender/overview-security-center.md
+            url: ../defender/overview-security-center.md

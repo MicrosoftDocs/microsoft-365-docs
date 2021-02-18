@@ -41,7 +41,7 @@
         - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
-              href: defender-evaluation.md
+              href: m365d-evaluation.md
             - name: Prepare
               href: prepare-m365d-eval.md
             - name: Setup
@@ -55,32 +55,32 @@
         - name: Deploy
           items:
             - name: Turn on Microsoft Threat Protection
-              href: defender-enable.md
+              href: m365d-enable.md
             - name: Run your pilot project in production
               items: 
                 - name: Pilot overview
-                  href: defender-pilot.md
+                  href: m365d-pilot.md
                 - name: Plan
-                  href: defender-pilot-plan.md
+                  href: m365d-pilot-plan.md
                 - name: Prepare
                   href: prepare-m365d-eval.md
                 - name: Simulate attack
-                  href: defender-pilot-simulate.md
+                  href: m365d-pilot-simulate.md
                 - name: Close and summarize
-                  href: defender-pilot-close.md
+                  href: m365d-pilot-close.md
             - name: Deploy supported services
               href: deploy-supported-services.md
             
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
-              href: defender-evaluation.md
+              href: m365d-evaluation.md
             - name: Run pilot playbook
-              href: defender-pilot.md
+              href: m365d-pilot.md
 
 
             - name: Turn on FAQ
-              href: defender-enable-faq.md
+              href: m365d-enable-faq.md
             - name: Incidents
               items: 
                 - name: Overview
@@ -98,19 +98,19 @@
             - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
-                  href: defender-autoir.md
+                  href: m365d-autoir.md
                 - name: Configure automated investigation and response capabilities
-                  href: defender-configure-auto-investigation-response.md
+                  href: m365d-configure-auto-investigation-response.md
                 - name: Remediation actions
-                  href: defender-remediation-actions.md
+                  href: m365d-remediation-actions.md
                 - name: Visit the Action center
-                  href: defender-action-center.md
+                  href: m365d-action-center.md
                 - name: Approve or reject pending remediation actions
-                  href: defender-autoir-actions.md
+                  href: m365d-autoir-actions.md
                 - name: View details and results of automated investigations
-                  href: defender-autoir-results.md
+                  href: m365d-autoir-results.md
                 - name: Report false positives/negatives
-                  href: defender-autoir-report-false-positives-negatives.md
+                  href: m365d-autoir-report-false-positives-negatives.md
             - name: Advanced hunting
               items: 
                 - name: Advanced hunting overview
@@ -238,9 +238,9 @@
             - name: Permissions & settings
               items: 
                 - name: Manage access
-                  href: defender-permissions.md
+                  href: m365d-permissions.md
                 - name: Set time zone
-                  href: defender-time-zone.md
+                  href: m365d-time-zone.md
                 - name: View device profiles
                   href: device-profile.md
                 - name: Provide feedback
