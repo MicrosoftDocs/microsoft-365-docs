@@ -26,19 +26,19 @@
         - name: Recommended SharePoint Online access policies
           href: ./defender-365-security/sharepoint-file-access-policies.md
     - name: Microsoft 365 security center
-      href: mtp/overview-security-center.md  
+      href: defender/overview-security-center.md  
     - name: Microsoft Secure Score
       items: 
         - name: Secure Score overview
-          href: mtp/microsoft-secure-score.md
+          href: defender/microsoft-secure-score.md
         - name: Assess your security posture
-          href: mtp/microsoft-secure-score-improvement-actions.md
+          href: defender/microsoft-secure-score-improvement-actions.md
         - name: Track your score history and meet goals
-          href: mtp/microsoft-secure-score-history-metrics-trends.md
+          href: defender/microsoft-secure-score-history-metrics-trends.md
         - name: What's coming
-          href: mtp/microsoft-secure-score-whats-coming.md
+          href: defender/microsoft-secure-score-whats-coming.md
         - name: What's new
-          href: mtp/microsoft-secure-score-whats-new.md
+          href: defender/microsoft-secure-score-whats-new.md
     - name: Microsoft 365 Defender
       items: 
         - name: Overview
@@ -84,25 +84,25 @@
             - name: Run your pilot project in production
               items: 
                 - name: Pilot overview
-                  href: mtp/mtp-pilot.md
+                  href: defender/m365d-pilot.md
                 - name: Plan
-                  href: mtp/mtp-pilot-plan.md
+                  href: defender/m365d-pilot-plan.md
                 - name: Prepare
-                  href: mtp/prepare-mtpeval.md
+                  href: defender/prepare-m365d-eval.md
                 - name: Simulate attack
-                  href: mtp/mtp-pilot-simulate.md
+                  href: defender/m365d-pilot-simulate.md
                 - name: Close and summarize
-                  href: mtp/mtp-pilot-close.md                           
+                  href: defender/m365d-pilot-close.md                           
         - name: Get started
           items:
             - name: Overview
               href: mtp/get-started.md
             - name: Turn on Microsoft Threat Protection
-              href: mtp/mtp-enable.md
+              href: defender/m365d-enable.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turning on Microsoft 365 Defender FAQs
-              href: mtp/mtp-enable-faq.md              
+              href: defender/m365d-enable-faq.md              
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
