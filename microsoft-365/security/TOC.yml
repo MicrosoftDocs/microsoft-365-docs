@@ -168,7 +168,7 @@
                     - name: Hunt for ransomware
                       href: defender/advanced-hunting-find-ransomware.md
                     - name: Transition from Defender for Endpoint 
-                      href: defender/advanced-hunting-migrate-from-mdatp.md
+                      href: defender/advanced-hunting-migrate-from-mde.md
                 - name: Work with query results
                   href: defender/advanced-hunting-query-results.md
                 - name: Take action on query results
