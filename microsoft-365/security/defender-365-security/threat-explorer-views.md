@@ -25,8 +25,8 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
 ![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
@@ -48,6 +48,9 @@ When you first open Explorer (or the real-time detections report), the default v
 |Microsoft Defender for Office 365 P2 trial|Threat Explorer|7|
 |Microsoft Defender for Office 365 P2 paid|Threat Explorer|30|
 |
+
+> [!NOTE]
+> We will soon be extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days. This change is being tracked as part of roadmap item no. 70544, and is currently in a roll-out phase.
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
 
