@@ -154,113 +154,113 @@
             - name: Advanced hunting
               items: 
                 - name: Advanced hunting overview
-                  href: mtp/advanced-hunting-overview.md
+                  href: defender/advanced-hunting-overview.md
                 - name: Learn, train, & get examples
                   items: 
                     - name: Learn the query language
-                      href: mtp/advanced-hunting-query-language.md
+                      href: defender/advanced-hunting-query-language.md
                     - name: Get expert training
-                      href: mtp/advanced-hunting-expert-training.md
+                      href: defender/advanced-hunting-expert-training.md
                     - name: Use shared queries
-                      href: mtp/advanced-hunting-shared-queries.md
+                      href: defender/advanced-hunting-shared-queries.md
                     - name: Hunt across devices, emails, apps, and identities
-                      href: mtp/advanced-hunting-query-emails-devices.md
+                      href: defender/advanced-hunting-query-emails-devices.md
                     - name: Hunt for ransomware
-                      href: mtp/advanced-hunting-find-ransomware.md
+                      href: defender/advanced-hunting-find-ransomware.md
                     - name: Transition from Defender for Endpoint 
-                      href: mtp/advanced-hunting-migrate-from-mdatp.md
+                      href: defender/advanced-hunting-migrate-from-mdatp.md
                 - name: Work with query results
-                  href: mtp/advanced-hunting-query-results.md
+                  href: defender/advanced-hunting-query-results.md
                 - name: Take action on query results
-                  href: mtp/advanced-hunting-take-action.md
+                  href: defender/advanced-hunting-take-action.md
                 - name: Go hunt
-                  href: mtp/advanced-hunting-go-hunt.md
+                  href: defender/advanced-hunting-go-hunt.md
                 - name: Optimize & handle errors
                   items: 
                     - name: Apply query best practices
-                      href: mtp/advanced-hunting-best-practices.md
+                      href: defender/advanced-hunting-best-practices.md
                     - name: Handle errors
-                      href: mtp/advanced-hunting-errors.md
+                      href: defender/advanced-hunting-errors.md
                     - name: Quotas and usage parameters
-                      href: mtp/advanced-hunting-limits.md
+                      href: defender/advanced-hunting-limits.md
                 - name: Extend data coverage
-                  href: mtp/advanced-hunting-extend-data.md
+                  href: defender/advanced-hunting-extend-data.md
                 - name: Data schema
                   items: 
                     - name: Understand the schema
-                      href: mtp/advanced-hunting-schema-tables.md
+                      href: defender/advanced-hunting-schema-tables.md
                     - name: Schema naming changes
-                      href: mtp/advanced-hunting-schema-changes.md
+                      href: defender/advanced-hunting-schema-changes.md
                     - name: AADSignInEventsBeta
-                      href: mtp/advanced-hunting-aadsignineventsbeta-table.md
+                      href: defender/advanced-hunting-aadsignineventsbeta-table.md
                     - name: AADSpnSignInEventsBeta
-                      href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
+                      href: defender/advanced-hunting-aadspnsignineventsbeta-table.md
                     - name: AlertEvidence
-                      href: mtp/advanced-hunting-alertevidence-table.md
+                      href: defender/advanced-hunting-alertevidence-table.md
                     - name: AlertInfo
-                      href: mtp/advanced-hunting-alertinfo-table.md
+                      href: defender/advanced-hunting-alertinfo-table.md
                     - name: AppFileEvents
-                      href: mtp/advanced-hunting-appfileevents-table.md
+                      href: defender/advanced-hunting-appfileevents-table.md
                     - name: CloudAppEvents
-                      href: mtp/advanced-hunting-cloudappevents-table.md
+                      href: defender/advanced-hunting-cloudappevents-table.md
                     - name: DeviceEvents
-                      href: mtp/advanced-hunting-deviceevents-table.md
+                      href: defender/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfo
-                      href: mtp/advanced-hunting-devicefilecertificateinfo-table.md
+                      href: defender/advanced-hunting-devicefilecertificateinfo-table.md
                     - name: DeviceFileEvents
-                      href: mtp/advanced-hunting-devicefileevents-table.md
+                      href: defender/advanced-hunting-devicefileevents-table.md
                     - name: DeviceImageLoadEvents
-                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                      href: defender/advanced-hunting-deviceimageloadevents-table.md
                     - name: DeviceInfo
-                      href: mtp/advanced-hunting-deviceinfo-table.md
+                      href: defender/advanced-hunting-deviceinfo-table.md
                     - name: DeviceLogonEvents
-                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                      href: defender/advanced-hunting-devicelogonevents-table.md
                     - name: DeviceNetworkEvents
-                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                      href: defender/advanced-hunting-devicenetworkevents-table.md
                     - name: DeviceNetworkInfo
-                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                      href: defender/advanced-hunting-devicenetworkinfo-table.md
                     - name: DeviceProcessEvents
-                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                      href: defender/advanced-hunting-deviceprocessevents-table.md
                     - name: DeviceRegistryEvents
-                      href: mtp/advanced-hunting-deviceregistryevents-table.md
+                      href: defender/advanced-hunting-deviceregistryevents-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
-                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
+                      href: defender/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
-                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                      href: defender/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
                     - name: DeviceTvmSoftwareInventoryVulnerabilities
-                      href: mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
+                      href: defender/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
-                      href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
+                      href: defender/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
                     - name: EmailAttachmentInfo
-                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                      href: defender/advanced-hunting-emailattachmentinfo-table.md
                     - name: EmailEvents
-                      href: mtp/advanced-hunting-emailevents-table.md
+                      href: defender/advanced-hunting-emailevents-table.md
                     - name: EmailPostDeliveryEvents
-                      href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
+                      href: defender/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
-                      href: mtp/advanced-hunting-emailurlinfo-table.md
+                      href: defender/advanced-hunting-emailurlinfo-table.md
                     - name: IdentityDirectoryEvents
-                      href: mtp/advanced-hunting-identitydirectoryevents-table.md
+                      href: defender/advanced-hunting-identitydirectoryevents-table.md
                     - name: IdentityInfo
-                      href: mtp/advanced-hunting-identityinfo-table.md
+                      href: defender/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
-                      href: mtp/advanced-hunting-identitylogonevents-table.md
+                      href: defender/advanced-hunting-identitylogonevents-table.md
                     - name: IdentityQueryEvents
-                      href: mtp/advanced-hunting-identityqueryevents-table.md
+                      href: defender/advanced-hunting-identityqueryevents-table.md
                 - name: Functions
                   items: 
                     - name: AssignedIPAddresses()
-                      href: mtp/advanced-hunting-assignedipaddresses-function.md                    
+                      href: defender/advanced-hunting-assignedipaddresses-function.md                    
                     - name: DeviceFromIP()
-                      href: mtp/advanced-hunting-devicefromip-function.md
+                      href: defender/advanced-hunting-devicefromip-function.md
                     - name: FileProfile()
-                      href: mtp/advanced-hunting-fileprofile-function.md
+                      href: defender/advanced-hunting-fileprofile-function.md
                 - name: Custom detections
                   items: 
                     - name: Custom detections overview
-                      href: mtp/custom-detections-overview.md
+                      href: defender/custom-detections-overview.md
                     - name: Create & manage detection rules
-                      href: mtp/custom-detection-rules.md
+                      href: defender/custom-detection-rules.md
         - name: Reference
           items: 
             - name: Permissions & settings
