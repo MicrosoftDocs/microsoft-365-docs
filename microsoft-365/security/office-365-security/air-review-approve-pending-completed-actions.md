@@ -37,7 +37,7 @@ These remediation actions are not taken unless and until your security operation
 
 ## Approve (or reject) pending actions
 
-1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.
 3. On the **Pending** tab, review the list of actions that are awaiting approval.
 4. Select an item in the list. Its flyout pane opens. 
@@ -48,19 +48,19 @@ These remediation actions are not taken unless and until your security operation
 
 ## Undo one remediation action
 
-1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
 2. On the **History** tab, select an action that you want to undo.
 3. In the pane on the right side of the screen, select **Undo**.
 
 ## Undo multiple remediation actions
 
-1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
 2. On the **History** tab, select the actions that you want to undo. Make sure to select items that have the same Action type. A flyout pane opens.
 3. In the flyout pane, select Undo.
 
 ## To remove a file from quarantine across multiple devices
 
-1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
 
