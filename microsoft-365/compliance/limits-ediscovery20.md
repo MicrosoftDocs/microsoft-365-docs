@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn about the case limits, indexing limits, and search limits in effect for the Advanced eDiscovery solution in Microsoft 365.
+description: "Learn about the case limits, indexing limits, and search limits in effect for the Advanced eDiscovery solution in Microsoft 365."
 ---
 
 # Limits in Advanced eDiscovery
@@ -37,17 +37,26 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 |Maximum number of tags per case.  <br/> |1000 <br/> |
 |||
 
+## Hold limits
+
+The following table lists the limits for holds associated with an Advanced eDiscovery case.
+
+| Description of limit | Limit |
+|:-----|:-----|
+|Maximum number of mailboxes in a single case hold  <br/> |1,000  <br/> |
+|Maximum number of sites in a single case hold  <br/> |100  <br/> |
+
 ## Indexing limits
 
 The following table lists the indexing limits in Advanced eDiscovery.
 
 | Description of limit | Limit |
-  |:-----|:-----|
-  |Maximum number of characters extracted from a single file.  <br/> |10 million<sup>1</sup> <br/> |
-  |Maximum size of a single file.   <br/> |100 MB<sup>1</sup> <br/> |
-  |Maximum depth of embedded items in a document.  <br/> |25<sup>1</sup> <br/> |
-  |Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
-  |Maximum number of indexing jobs per organization per day. <br/> |10<sup>6</sup> <br/>|  
+|:-----|:-----|
+|Maximum number of characters extracted from a single file.  <br/> |10 million<sup>1</sup> <br/> |
+|Maximum size of a single file.   <br/> |100 MB<sup>1</sup> <br/> |
+|Maximum depth of embedded items in a document.  <br/> |25<sup>1</sup> <br/> |
+|Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
+|Maximum number of indexing jobs per organization per day. <br/> |10<sup>6</sup> <br/>|  
 |||
 
 ## Search limits
