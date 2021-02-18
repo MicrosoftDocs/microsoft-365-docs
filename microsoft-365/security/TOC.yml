@@ -266,17 +266,17 @@
             - name: Permissions & settings
               items: 
                 - name: Manage access
-                  href: mtp/mtp-permissions.md
+                  href: defender/m365d-permissions.md
                 - name: Custom roles in role-based access 
-                  href: mtp/custom-roles.md
+                  href: defender/custom-roles.md
                 - name: Set time zone
-                  href: mtp/mtp-time-zone.md
+                  href: defender/m365d-time-zone.md
                 - name: View device profiles
-                  href: mtp/device-profile.md
+                  href: defender/device-profile.md
                 - name: Provide feedback
-                  href: mtp/feedback.md
+                  href: defender/feedback.md
                 - name: Provide managed service provider (MSSP) access
-                  href: mtp/mssp-access.md
+                  href: defender/mssp-access.md
                 - name: Create ServiceNow tickets and tasks
                   items: 
                     - name: ServiceNow integration overview
