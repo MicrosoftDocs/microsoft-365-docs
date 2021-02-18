@@ -54,9 +54,17 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |Total meetings   <br/> |The number of online meetings that the user participated in during the specified time period.  <br/> |
 |1:1 calls   <br/> | The number of 1:1 calls that the user participated in during the specified time period.  <br/> |
 |Last activity date (UTC)  <br/> |The last date that the user participated in a Microsoft Teams activity.<br/> |
-|Meetings participated adhoc   <br/> | The number of meetings not scheduled on the calendar that the user participated in during the specified time period.  <br/> |
-|Meetings organized adhoc <br/> |The number of meetings not scheduled on the calendar that the user organized during the specified time period. <br/>|
-|Meetings organized scheduled  <br/> |The number of scheduled meetings  a user organized during the specified time period.  <br/> |
-|Is licensed |Selected if the user is licensed to use Teams.|
-|Other activity|The User is active but has performed other activities than exposed action types offered in the report (sending or replying to channel messages and chat messages, scheduling or participating in 1:1 calls and meetings). Examples actions are when a user changes the Teams status or the Teams status message or opens a Channel Message post but does not reply. |
+
+
+|Meetings participated ad hoc   <br/> | The number of ad hoc meetings a user participated in during the specified time period.  <br/> |
+|Meetings organized ad hoc <br/> |The number of ad hoc meetings a user organized during the specified time period. <br/>|
+|Total organized meetings  <br/> |The sum of one-time scheduled, Recurring, ad hoc and unclassified meetings a user organized during the specified time period.  <br/> |
+|Total participated meetings  <br/> |The sum of the one-time scheduled, recurring, ad hoc and unclassified meetings a user participated in during the specified time period.  <br/> |
+|Meetings organized scheduled one-time  <br/> |The number of one-time scheduled meetings a user organized during the specified time period.  <br/> |
+|Meetings organized scheduled recurring  <br/> |The number of recurring meetings a user organized during the specified time period.  <br/> |
+|Meetings participated scheduled one-time  <br/> |The number of the one-time scheduled meetings a user participated in during the specified time period.  <br/> |
+|Meetings participated scheduled recurring  <br/> |The number of the recurring meetings a user participated in during the specified time period.  <br/> |
+|Is licensed  <br/> |Selected if the user is licensed to use Teams. <br/>|
+|Other activity  <br/>|The User is active but has performed other activities than exposed action types offered in the report (sending or replying to channel messages and chat messages, scheduling or participating in 1:1 calls and meetings). Examples actions are when a user changes the Teams status or the Teams status message or opens a Channel Message post but does not reply.  <br/>|
+|unclassified meetings are the one which can not be classified as schedule or recurring or ad hoc. These are  short in number and mostly can't be identified because of tampered telemetry information. |
 |||
