@@ -31,7 +31,7 @@ If you're a Microsoft partner or reseller, and you've signed up to be a Microsof
 
 Delegated administration allows you to manage Microsoft 365  (including EOP settings) as if you were an admin within that organization. The steps to configure delegated administration are described in the following list:
 
-1. Sign up to be a [Microsoft Office 365 Advisor](https://aka.ms/cloudbenefits).
+1. Sign up to be a [Microsoft Office 365 Advisor](https://partner.microsoft.com/?cloudbenefits).
 
 2. Sign up for delegated administration. Before you can start administering a customer's tenant, they must authorize you as a delegated administrator. To obtain their approval, you first [send them an offer for delegated administration](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). You can also offer delegated administration to your customer at a later time.
 
