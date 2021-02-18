@@ -84,6 +84,6 @@ Once you’ve deployed the supported services, [turn on Microsoft 365 Defender](
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Turn on Microsoft 365 Defender](mtp-enable.md)
 - [Microsoft Defender for Endpoint overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender for Office 365 overview](../defender-365-security/office-365-atp.md)
+- [Microsoft Defender for Office 365 overview](../defender-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity overview](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)

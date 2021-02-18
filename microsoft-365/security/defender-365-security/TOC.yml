@@ -3,7 +3,7 @@
   expanded: true
   items:     
     - name: Office 365 security
-      href: index.md
+      href: index.yml
       items: 
         - name: Overview
           items:
