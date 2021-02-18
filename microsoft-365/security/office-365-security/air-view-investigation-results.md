@@ -53,7 +53,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details of an investigation
 
-1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.
 3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
 4. In the flyout pane, select **Open investigation page**. 
@@ -63,7 +63,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [alert policies that trigger automated investigations](office-365-air.md#which-alert-policies-trigger-automated-investigations).
 
-1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.
 3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
 4. In the flyout pane, select **Open investigation page**. 
