@@ -53,7 +53,8 @@ With this report, you can:
 ### Introduction of Alert ID for MDO alerts within Explorer/Real-time detections (Preview)
 Today, if you navigate from an alert to Threat Explorer, it opens a filtered view within the Explorer, with the view filtered by Alert policy ID (policy ID being a unique identifier for an Alert policy).
 We are making this integration more relevant by introducing the alert ID (see an example of alert ID below) in Threat Explorer and Real-time detections so that you see messages which are relevant to the specific alert, as well as a count of emails. You will also be able to see if a message was part of an alert, as well as navigate from that message to the specific alert.  
-Alert ID is available within the URL when you are viewing an individual alert; an example being https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1
+
+Alert ID is available within the URL when you are viewing an individual alert; an example being `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
 
 > [!div class="mx-imgBorder"]
 > ![Filtering for Alert ID](../../media/AlertID-Filter.png)
