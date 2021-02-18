@@ -67,7 +67,7 @@ The app details pane provides additional information on these tabs:
 | Permissions | See a summary of the permissions granted to and used by the app, the list of specific permissions, and their status and usage level. |
 |||
 
-There is also a **Disable App** control to disable the use of the selected app, but requires these [administrator roles](manage-app-protection-governance.md#administrator-roles):
+There is also a **Disable App** control to disable the use of the selected app and an **Enable App** control to enable the use of the disabled app, but these actions require these [administrator roles](manage-app-protection-governance.md#administrator-roles):
 
 - Compliance Administrator
 - Global Administrator
