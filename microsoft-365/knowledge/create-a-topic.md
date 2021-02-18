@@ -23,7 +23,7 @@ localization_priority: Normal
 In Viva Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
 
 > [!Note] 
-> While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that information in a manually created topic is visible to all users who have permissions to view the topic. 
+> While information in a topic that is gathered by AI is [security trimmed](topic-experiences-security-trimming.md), note that topic description and people information in a manually created topic is visible to all users who have permissions to view the topic. 
 
 
 ## Requirements
@@ -35,7 +35,19 @@ To create a new topic, you need to:
 > [!Note] 
 > Users who have permission to manage topics in the topic center (knowledge managers) already have permissions to create and edit topics.
 
-## To create a new topic:
+## To create a topic
+
+You can create a new topic from two locations:
+
+- Topic center home page: Any licensed user with the **Who can create or edit topics** permission (contributors) can create a new topic from the topic center by selecting the <b>New</b> menu and select <b>Topic page</b>.</br> 
+
+    ![New topic from topic center](../media/knowledge-management/new-topic.png) </br> 
+
+- Manage topics page:  Any licensed user who has **Who can manage topics** permission (knowledge managers) can create a new topic from the Manage topics page in the Topic Center by selecting <b>New topic page</b>.</br> 
+
+    ![New topic from manage topics](../media/knowledge-management/new-topic-topic-center.png) </br> 
+
+### To create a new topic:
 
 1. In the **Name this topic** section, type the name of the new topic.
 
@@ -62,6 +74,9 @@ To create a new topic, you need to:
 
     You can also use the <b>From a link</b> option to add a file or page by providing the URL. 
 
+    > [!Note] 
+    > Files and pages that you add must be located within the same Microsoft 365 tenant. If you want to add a link to an external resource in the topic, you can add it through the canvas icon in step 8.
+
 
 6.  The <b>Related sites</b> section shows sites that have information about the topic. 
 
@@ -82,6 +97,16 @@ To create a new topic, you need to:
    The related topic you added will display as a connected topic.
 
    ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
+
+   To remove a related topic, select the topic you want to remove, then select the <b>Remove topic</b> icon.</br>
+ 
+   ![Remove related topic](../media/knowledge-management/remove-related.png)</br>  
+
+   Then select <b>Remove</b>.</br>
+
+   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
+     
+ 
 
 
 8. You can also add static items to the page (such as text, images, or links) by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
