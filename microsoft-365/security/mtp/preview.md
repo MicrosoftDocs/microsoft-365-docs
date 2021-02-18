@@ -26,8 +26,8 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
->The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
+> [!IMPORTANT]
+> The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
 
 **Applies to:**
 - Microsoft 365 Defender
@@ -38,22 +38,29 @@ Learn about new features in the Microsoft 365 Defender preview release and be am
 
 For more information on new capabilities that are generally available, see [What's new in Microsoft 365 Defender](whats-new.md).
 
+## Required permissions
+
+Accounts assigned the following Azure Active Directory (Azure AD) roles can turn on Microsoft 365 Defender Preview features:
+
+- Global administrator
+- Security administrator
+- Security Operator
+
 ## Turn on preview features
+
 You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
 1. In the navigation pane, select **Settings**.
-
 2. Select **Microsoft 365 Defender**.
-
 3. Select **Preview features** > **Turn on preview features**. 
-
 4. Select **Save**.
 
 You'll know you have preview features turned on when you see that the **Turn on preview features** check box is selected. 
 
 ## Preview features
+
 The following features and enhancements are currently available on preview:
 
 ### Improved Microsoft 365 security center
