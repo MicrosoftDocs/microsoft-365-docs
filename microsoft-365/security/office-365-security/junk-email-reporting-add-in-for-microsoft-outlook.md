@@ -23,9 +23,9 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > If you aren't currently using the Junk E-mail Reporting add-in, we recommend the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) instead. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
