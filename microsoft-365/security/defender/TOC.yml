@@ -41,7 +41,7 @@
         - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
-              href: mtp-evaluation.md
+              href: defender-evaluation.md
             - name: Prepare
               href: prepare-mtpeval.md
             - name: Setup
@@ -55,32 +55,32 @@
         - name: Deploy
           items:
             - name: Turn on Microsoft Threat Protection
-              href: mtp-enable.md
+              href: defender-enable.md
             - name: Run your pilot project in production
               items: 
                 - name: Pilot overview
-                  href: mtp-pilot.md
+                  href: defender-pilot.md
                 - name: Plan
-                  href: mtp-pilot-plan.md
+                  href: defender-pilot-plan.md
                 - name: Prepare
                   href: prepare-mtpeval.md
                 - name: Simulate attack
-                  href: mtp-pilot-simulate.md
+                  href: defender-pilot-simulate.md
                 - name: Close and summarize
-                  href: mtp-pilot-close.md
+                  href: defender-pilot-close.md
             - name: Deploy supported services
               href: deploy-supported-services.md
             
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
-              href: mtp-evaluation.md
+              href: defender-evaluation.md
             - name: Run pilot playbook
-              href: mtp-pilot.md
+              href: defender-pilot.md
 
 
             - name: Turn on FAQ
-              href: mtp-enable-faq.md
+              href: defender-enable-faq.md
             - name: Incidents
               items: 
                 - name: Overview
@@ -98,19 +98,19 @@
             - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
-                  href: mtp-autoir.md
+                  href: defender-autoir.md
                 - name: Configure automated investigation and response capabilities
-                  href: mtp-configure-auto-investigation-response.md
+                  href: defender-configure-auto-investigation-response.md
                 - name: Remediation actions
-                  href: mtp-remediation-actions.md
+                  href: defender-remediation-actions.md
                 - name: Visit the Action center
-                  href: mtp-action-center.md
+                  href: defender-action-center.md
                 - name: Approve or reject pending remediation actions
-                  href: mtp-autoir-actions.md
+                  href: defender-autoir-actions.md
                 - name: View details and results of automated investigations
-                  href: mtp-autoir-results.md
+                  href: defender-autoir-results.md
                 - name: Report false positives/negatives
-                  href: mtp-autoir-report-false-positives-negatives.md
+                  href: defender-autoir-report-false-positives-negatives.md
             - name: Advanced hunting
               items: 
                 - name: Advanced hunting overview
@@ -238,9 +238,9 @@
             - name: Permissions & settings
               items: 
                 - name: Manage access
-                  href: mtp-permissions.md
+                  href: defender-permissions.md
                 - name: Set time zone
-                  href: mtp-time-zone.md
+                  href: defender-time-zone.md
                 - name: View device profiles
                   href: device-profile.md
                 - name: Provide feedback
