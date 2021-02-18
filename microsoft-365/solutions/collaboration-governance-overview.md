@@ -234,3 +234,9 @@ Learn how to set up your groups expiry lifecycle, naming policies, classificatio
 See a behind-the-scenes example of how Microsoft 365 Groups, SharePoint, Teams, and Yammer work together to provide a global collaboration platform.
 
 - [Finding your collaboration sweet spot with Office 365 Groups, SharePoint, Teams, and Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+
+## See also
+
+[Microsoft 365 security documentation](https://docs.microsoft.com/microsoft-365/security)
+
+[Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance)
