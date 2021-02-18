@@ -60,7 +60,7 @@ Below are answers to some frequently asked questions people ask about the app.
   
 ### What do I need to do to be able to use the app?
 
-To be able to sign in and use the app you need to have admin permissions and a valid subscription to one of the following:
+To use the app you need to have admin permissions and a valid subscription to one of the following Microsoft 365 subscriptions:
 
 - Microsoft 365 Apps for Enterprise
 - Microsoft 365 Apps for Business
