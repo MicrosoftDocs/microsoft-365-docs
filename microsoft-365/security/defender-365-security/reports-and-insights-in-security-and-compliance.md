@@ -47,7 +47,7 @@ A wide variety of reports are available in the Security & Compliance Center. (Go
 
 ****
 
-|Type of information|How to get there|Where to go to learn more|
+|Type of information|How to get there|Where to go to learn more| 
 |---|---|---|
 |**Security & Compliance Center reports** (all up) <p> Top insights and recommendations, and links to Security & Compliance reports, including data loss prevention reports, labels, email security reports, Defender for Office 365 reports, and more|In the Security & Compliance Center, go to **Reports** \> **Dashboard**|[Monitor and view reports in the Microsoft 365 security center](../defender/overview-security-center.md)|
 |**Data loss prevention** <p> Data loss prevention policy matches, false positives and overrides, and links to create or edit policies|In the Security & Compliance Center, go to **Data loss prevention** \> **Policy**|[View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md)|
