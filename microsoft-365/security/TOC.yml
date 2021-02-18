@@ -126,31 +126,31 @@
                 - name: Investigate incidents
                   items: 
                     - name: Investigate incidents
-                      href: mtp/investigate-incidents.md
+                      href: defender/investigate-incidents.md
                     - name: Manage incidents
-                      href: mtp/manage-incidents.md
+                      href: defender/manage-incidents.md
                     - name: Investigate alerts
-                      href: mtp/investigate-alerts.md    
+                      href: defender/investigate-alerts.md    
                     - name: Investigate users in Microsoft 365 security center 
-                      href: mtp/investigate-users.md                  
+                      href: defender/investigate-users.md                  
                 - name: Get email notifications
-                  href: mtp/get-incident-notifications.md
+                  href: defender/get-incident-notifications.md
             - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
-                  href: mtp/mtp-autoir.md
+                  href: defender/m365d-autoir.md
                 - name: Configure automated investigation and response capabilities
-                  href: mtp/mtp-configure-auto-investigation-response.md
+                  href: defender/m365d-configure-auto-investigation-response.md
                 - name: Remediation actions
-                  href: mtp/mtp-remediation-actions.md
+                  href: defender/m365d-remediation-actions.md
                 - name: Visit the Action center
-                  href: mtp/mtp-action-center.md
+                  href: defender/m365d-action-center.md
                 - name: Approve or reject pending remediation actions
-                  href: mtp/mtp-autoir-actions.md
+                  href: defender/m365d-autoir-actions.md
                 - name: View details and results of automated investigations
-                  href: mtp/mtp-autoir-results.md
+                  href: defender/m365d-autoir-results.md
                 - name: Report false positives/negatives
-                  href: mtp/mtp-autoir-report-false-positives-negatives.md
+                  href: defender/m365d-autoir-report-false-positives-negatives.md
             - name: Advanced hunting
               items: 
                 - name: Advanced hunting overview
