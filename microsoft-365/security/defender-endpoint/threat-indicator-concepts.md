@@ -59,7 +59,7 @@ Topic | Description
 :---|:---
 [Pull detections to your SIEM tools](configure-siem.md)| Learn about different ways to pull detections.
 [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)| Learn about enabling the SIEM integration feature in the **Settings** page in the portal so that you can use and generate the required information to configure supported SIEM tools.
-[Configure Splunk to pull Microsoft Defender for Endpoint detections](configure-splunk.md)| Learn about installing the REST API Modular Input App and other configuration settings to enable Splunk to pull Microsoft Defender for Endpoint detections.
+[Configure Splunk to pull Microsoft Defender for Endpoint detections](configure-siem.md)| Learn about installing the REST API Modular Input App and other configuration settings to enable Splunk to pull Microsoft Defender for Endpoint detections.
 [Configure HP ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)| Learn about installing the HP ArcSight REST FlexConnector package and the files you need to configure ArcSight to pull Microsoft Defender for Endpoint detections.
 [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md) | Understand what data fields are exposed as part of the alerts API and how they map to Microsoft Defender Security Center.
 [Pull Microsoft Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md) | Use the Client credentials OAuth 2.0 flow to pull detections from Microsoft Defender for Endpoint using REST API.

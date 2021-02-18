@@ -25,7 +25,7 @@ Microsoft 365 provides a number of identity, device, and threat protection capab
 
 ## How identity, device, and threat protection relate to data privacy regulation
 
-While the data privacy regulations vary in their specificity, the essence of what they call for is embodied in the GDPR’s Article 5(1)(f), which states that: 
+While the data privacy regulations vary in their specificity, the essence of what they call for is embodied in the GDPR’s Article 5(1)(f), which states that:
 
 - Personal data shall be processed in a manner that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organizational measures ('integrity and confidentiality').
 
@@ -78,6 +78,6 @@ Use [Exchange Online Protection and Microsoft Defender for Office 365](../securi
 
 - [Common identity and device access policies](../security/defender-365-security/identity-access-policies.md)
 - [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Safe Attachments](../security/defender-365-security/atp-safe-attachments.md)
-- [Safe Links](../security/defender-365-security/atp-safe-links.md)
+- [Safe Attachments](../security/defender-365-security/safe-attachments.md)
+- [Safe Links](../security/defender-365-security/safe-links.md)
 - [Safe Documents](../security/defender-365-security/safe-docs.md)

@@ -320,7 +320,7 @@
                         - name: Update incident
                           href: defender/api-update-incidents.md
     - name: Office 365 security
-      href: ./defender-365-security/index.md
+      href: ./defender-365-security/index.yml
       items: 
         - name: Overview
           items:
@@ -373,9 +373,9 @@
             - name: Anti-spoofing protection
               href: ./defender-365-security/anti-spoofing-protection.md
             - name: Safe Attachments in Defender for Office 365
-              href: ./defender-365-security/atp-safe-attachments.md
+              href: ./defender-365-security/safe-attachments.md
             - name: Safe Links in Defender for Office 365
-              href: ./defender-365-security/atp-safe-links.md
+              href: ./defender-365-security/safe-links.md
             - name: Outbound spam protection
               href: ./defender-365-security/outbound-spam-controls.md
             - name: Security Dashboard overview
