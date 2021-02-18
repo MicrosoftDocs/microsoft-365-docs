@@ -60,7 +60,7 @@ In addition, you can use the DLP reports to fine-tune your DLP policies as you r
 
 DLP reports are in the security center and the compliance center. Navigate to Reports \> View reports. Under Data loss prevention (DLP), go to either DLP policy and rule matches or DLP false positives and overrides.
 
-For more information, see [View the reports for data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
+For more information, see [View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md).
 
 ![Report showing DLP policy matches](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -82,17 +82,17 @@ Solutions are available that subscribe to the Unified Audit Logs through the Mic
 
 More information about alert policies and searching the audit log:
 
-- [Alert policies in the Microsoft 365 security and compliance centers](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Alert policies in the Microsoft 365 security and compliance centers](../../compliance/alert-policies.md)
 
-- [Search the audit log for user and admin activity in Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduction)
+- [Search the audit log for user and admin activity in Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduction)
 
-- [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- [Search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Search the audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
-- [Detailed properties in the audit log](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [Detailed properties in the audit log](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## Microsoft Cloud App Security
 
