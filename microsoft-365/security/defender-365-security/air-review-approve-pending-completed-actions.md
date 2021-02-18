@@ -33,7 +33,7 @@ These remediation actions are not taken unless and until your security operation
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## Approve (or reject) pending actions
 
