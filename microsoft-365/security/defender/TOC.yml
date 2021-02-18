@@ -224,7 +224,7 @@
             - name: Reports
               items: 
                 - name: Monitor and view reports
-                  href: monitoring-and-reporting.md
+                  href: overview-security-center.md
                 - name: Identity monitoring and reporting
                   href: monitor-and-report-identities.md
                 - name: Data monitoring and reporting

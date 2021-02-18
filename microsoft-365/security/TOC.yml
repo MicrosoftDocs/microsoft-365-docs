@@ -44,7 +44,7 @@
         - name: Overview
           items: 
             - name: What is Microsoft 365 Defender?
-              href: defender/microsoft-threat-protection.md
+              href: defender/microsoft-365-defender.md
             - name: What's new in Microsoft 365 Defender
               href: defender/whats-new.md
             - name: Defender for Endpoint in the Microsoft 365 security center

@@ -24,15 +24,13 @@ ms.prod: m365-security
 **Applies to:** Word, Excel, and PowerPoint for Microsoft 365, Windows 10
 Enterprise
 
-Microsoft Defender Application Guard for Office (Application Guard for Office) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up devices for a preview of Application Guard for Office. It provides
-information about system requirements and installation steps to enable Application Guard for Office on a device.
+Microsoft Defender Application Guard for Office (Application Guard for Office) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up devices for a preview of Application Guard for Office. It provides information about system requirements and installation steps to enable Application Guard for Office on a device.
 
 ## Prerequisites
 
 ### Minimum hardware requirements
 
-* **CPU**: 64-bit, 4 cores (physical or virtual), virtualization extensions
-    (Intel VT-x OR AMD-V), Core i5 equivalent or higher recommended
+* **CPU**: 64-bit, 4 cores (physical or virtual), virtualization extensions (Intel VT-x OR AMD-V), Core i5 equivalent or higher recommended
 * **Physical memory**: 8-GB RAM
 * **Hard disk**: 10 GB of free space on the system drive (SSD recommended)
 

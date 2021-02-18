@@ -34,6 +34,6 @@ ms.technology: m365d
 
 This topic will cover capabilities that are generally available (GA) in the latest release of Microsoft 365 Security. 
 
-For more information on preview features, see [Preview features](mtp-preview.md)
+For more information on preview features, see [Preview features](preview.md)
 
 

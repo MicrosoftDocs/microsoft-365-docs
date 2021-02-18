@@ -62,4 +62,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## March 2019
 - Advanced hunting <br> Landing page to various hunting capabilities that let you proactively find threats affecting email and data, devices, and identities.
 - [Microsoft Secure Score](microsoft-secure-score.md) <br> Measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. 
-- [Reports](monitoring-and-reporting.md) <br>  Features a host of cards covering a variety of areas that security analysts and administrators track as part of their day-to-day operations.
+- [Reports](overview-security-center.md) <br>  Features a host of cards covering a variety of areas that security analysts and administrators track as part of their day-to-day operations.
