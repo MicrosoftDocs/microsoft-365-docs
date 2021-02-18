@@ -51,13 +51,16 @@ If the **Web parts are impacting page load time** result appears in either the *
 
 Information available in the results includes:
 
-- **Made by** shows whether the web part is custom or Microsoft OOTB
-- **Name and ID** shows identifying information that can help you find the web part on the page
-- **Total** shows the total time for the web part to load
-- **Module Load** shows the time taken to fetch and load the web part components
-- **Lazy Load** shows the time for deferred loading of web parts not seen in the main section of the page
-- **Init** shows the time taken for web part initialization
-- **Render** shows the time taken for the web part to fetch and render results
+- **Made by** shows whether the web part is custom or Microsoft OOTB.
+- **Name and ID** shows identifying information that can help you find the web part on the page.
+- **Total** shows the total time for the web part to module load, initialize and render. It is the total relative time taken by the web part to render on the page, from beginning to the end.
+- **Module Load** shows the time taken to download, evaluate and load the extensions JavaScript and CSS files. It will then start the Init process.
+- **Lazy Load** shows the time for deferred loading of web parts not seen in the main section of the page. There are certain conditions where there are too many web parts to render, and they are queued to render to minimize the page load time.
+- **Init** shows the time taken for the web part to initialize the data.
+	It is an asynchronous call and init time is the calculation of time for the onInit function when the returned promise is resolved.
+- **Render** shows the time taken to render the UI (user interface) once the module load and Init are complete.
+	It is the JavaScript execution time to mount the DOM in the document (page).
+	Rendering of asynchronous resources, for example, images, might take additional time to complete.
 
 This information is provided to help designers and developers troubleshoot issues. This information should be provided to your design and development team.
 

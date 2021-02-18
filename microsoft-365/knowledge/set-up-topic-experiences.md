@@ -18,7 +18,9 @@ You can use the Microsoft 365 admin center to set up and configure [Topics](topi
 
 It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Microsoft Viva Topics](plan-topic-experiences.md) before you begin the procedures in this article.
 
-You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
+You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
+
+If you have configured SharePoint to [require managed devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices), be sure to set up Topics from a managed device.
 
 ## Video demonstration
 
@@ -126,7 +128,7 @@ To assign licenses:
 
 2. Select the users that you want to license, and click **Licenses and apps**.
 
-3. Under **Apps**, make sure **Graph Connectors Search with Index** and **Viva Topics** are both selected.
+3. Under **Apps**, make sure **Graph Connectors Search with Index** and **Topic Experiences** are both selected.
 
 4. Click **Save changes**.
 

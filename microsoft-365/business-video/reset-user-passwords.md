@@ -16,7 +16,6 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
