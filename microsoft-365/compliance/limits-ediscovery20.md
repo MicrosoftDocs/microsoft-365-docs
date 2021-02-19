@@ -43,8 +43,8 @@ The following table lists the limits for holds associated with an Advanced eDisc
 
 | Description of limit | Limit |
 |:-----|:-----|
-|Maximum number of mailboxes in a single case hold  <br/> |1,000  <br/> |
-|Maximum number of sites in a single case hold  <br/> |100  <br/> |
+|Maximum number of mailboxes in a single case hold. This limit includes the combined total of user mailboxes, mailboxes associated with Microsoft Teams, and mailboxes associated with Yammer Groups. <br/> |1,000  <br/> |
+|Maximum number of sites in a single case hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, sites associated with Microsoft Teams, and sites associated with Yammer Groups.  <br/> |100  <br/> |
 
 ## Indexing limits
 

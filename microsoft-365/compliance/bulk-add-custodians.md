@@ -61,7 +61,7 @@ After you download the CSV custodian template, you can add custodians and their 
 |||
 
 > [!NOTE]
-> <sup>1</sup> You can place a maximum of 1,000 mailboxes and 100 sites on hold by using the custodian import process and CSV file. You can use this process to add more than 1,000 custodians to a case, but the previous hold limits still apply.
+> <sup>1</sup> You can place a maximum of 1,000 mailboxes and 100 sites on hold by using the custodian import process and CSV file. You can use this process to add more than 1,000 custodians to a case, but the hold limits still apply. For more information about hold limits, see [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
 
 Here's an example of a CSV file with custodian information:<br/><br/>
 
