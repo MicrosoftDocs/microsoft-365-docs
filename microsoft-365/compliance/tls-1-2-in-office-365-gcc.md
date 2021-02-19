@@ -28,8 +28,6 @@ Although the [Microsoft TLS 1.0 implementation](https://support.microsoft.com/he
 
 [Solving the TLS 1.0 problem](https://www.microsoft.com/download/details.aspx?id=55266)
 
-You must use TLS version 1.2 instead. For more information, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
-
 ## More information
 
 Starting on January 15, 2020, Microsoft 365 in the GCC High and DoD environments will disable TLS 1.1 and 1.0.
@@ -38,9 +36,11 @@ By January 15, 2020, all combinations of client servers and browser servers shou
 
 For SharePoint and OneDrive, you'll need to update and configure .NET to support TLS 1.2. For information, see [How to enable TLS 1.2 on clients](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
-If you do not update to TLS version 1.2 (or a later version), you will experience issues when you try to connect to Microsoft 365. Also, .Net 4.5 compiled applications connecting to Microsoft 365 will fail. You will be required to update to TLS 1.2 (or a later version) as part of the resolution.
+You must update your client computers to make sure that you maintain uninterrupted access to Office 365 GCC High and DoD.
 
-The following clients can't use TLS 1.2:
+You'll need to update applications that call Microsoft 365 APIs over TLS 1.0 or TLS 1.1 to use TLS 1.2. .NET 4.5 defaults to TLS 1.1. To update your .NET configuration, see [How to enable Transport Layer Security (TLS) 1.2 on clients](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client). For more information, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+
+We know that the following client applications cannot use TLS 1.2:
 
 - Android 4.3 and earlier versions
 - Firefox version 5.0 and earlier versions
@@ -48,9 +48,7 @@ The following clients can't use TLS 1.2:
 - Internet Explorer 10 on Windows Phone 8.0
 - Safari 6.0.4/OS X 10.8.4 and earlier versions
 
-We recommend that you update your clients to make sure that you maintain uninterrupted access to Microsoft 365 GCC High and DoD.
-
-Although current analysis of connections to Microsoft Online services shows that most services and endpoints see very little TLS 1.1 and 1.0 usage, we are providing notice of this change so that you can update any affected clients or servers as necessary before support for TLS 1.1 and 1.0 ends. If you are using any on-premises infrastructure for hybrid scenarios or Active Directory Federation Services (AD FS), make sure that the infrastructure can support both inbound and outbound connections that use TLS 1.2 (or a later version).
+Although current analysis of connections to Microsoft Online services shows that most services and endpoints see very little TLS 1.1 and 1.0 usage, we're providing notice of this change so that you can update any affected clients or servers as necessary before support for TLS 1.1 and 1.0 ends. If you are using any on-premises infrastructure for hybrid scenarios or Active Directory Federation Services (AD FS), make sure that the infrastructure can support both inbound and outbound connections that use TLS 1.2 (or a later version).
 
 In addition to the outages that you might experience if you use the listed clients that cannot use TLS 1.2, removing TLS 1.1 and 1.0 will prevent you from being able to use the following Microsoft product:
 
