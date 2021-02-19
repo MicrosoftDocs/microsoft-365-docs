@@ -34,7 +34,7 @@ Starting on January 15, 2020, Microsoft 365 in the GCC High and DoD environment
 
 By January 15, 2020, all combinations of client servers and browser servers should use TLS version 1.2 (or a later version) to make sure that all connections can be made without issues to Microsoft 365. This may require updates to certain combinations of client servers and browser servers.
 
-For SharePoint and OneDrive, you'll need to update and configure .NET to support TLS 1.2. For information, see [How to enable TLS 1.2 on clients](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+For SharePoint and OneDrive, you'll need to update and configure .NET to support TLS 1.2. For information, see [How to enable TLS 1.2 on clients](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
 You must update your client computers to make sure that you maintain uninterrupted access to Office 365 GCC High and DoD.
 
