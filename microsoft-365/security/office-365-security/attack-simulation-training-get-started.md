@@ -12,7 +12,7 @@ localization_priority: Normal
 search.appverid: 
   - MET150
   - MOE150
-ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.assetid:
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
