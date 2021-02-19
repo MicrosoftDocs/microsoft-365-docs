@@ -69,6 +69,4 @@ You can track progress instantly:
 
 ## Related topics
 
-[More Microsoft Lists training](https://support.microsoft.com/office/track-information-for-your-business-1c552db2-5e33-43e2-b3b8-40b8098dac3a)
-
-[Create a list](https://support.microsoft.com/office/create-a-list-0d397414-d95f-41eb-addd-5e6eff41b083)
+[Create a list from the Lists app](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)
