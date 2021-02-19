@@ -22,8 +22,8 @@ ms.prod: m365-security
 # Office 365 Security overview
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
 
 
 This article will introduce you to your new security properties in the Cloud. Whether you're part of a Security Operations Center, you're a Security Administrator new to the space, or you want a refresher, let's get started.
@@ -137,10 +137,10 @@ This quick-reference will help you understand what capabilities come with each M
 
 - The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 E5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
 
-- If your current subscription doesn't include Microsoft Defender for Office 365 and you want it, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and find out how Microsoft Defender for Office 365 can work for in your organization.
+- If your current subscription doesn't include Microsoft Defender for Office 365 and you want it, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), and find out how Microsoft Defender for Office 365 can work for in your organization.
 
 > [!TIP]
-> ***Insider tip***. You can use the docs.microsoft.com table of contents to learn about EOP and Microsoft Defender for Office 365. Navigate back to this page, [Office 365 Security overview](https://docs.microsoft.com/microsoft-365/security/office-365-security), and you'll notice that table of contents organization in the side-bar. It begins with Deployment (including migration) and then continues into prevention, detection, investigation, and response. <p> This structure is divided so that **Security Administration** topics are followed by **Security Operations** topics. If you're a new member of either job role, use the link in this tip, and your knowledge of the table of contents, to help learn the space. Remember to use *feedback links* and *rate articles* as you go. Feedback helps us improve what we offer you.
+> ***Insider tip***. You can use the docs.microsoft.com table of contents to learn about EOP and Microsoft Defender for Office 365. Navigate back to this page, [Office 365 Security overview](index.md), and you'll notice that table of contents organization in the side-bar. It begins with Deployment (including migration) and then continues into prevention, detection, investigation, and response. <p> This structure is divided so that **Security Administration** topics are followed by **Security Operations** topics. If you're a new member of either job role, use the link in this tip, and your knowledge of the table of contents, to help learn the space. Remember to use *feedback links* and *rate articles* as you go. Feedback helps us improve what we offer you.
 
 ## Where to go next
 

@@ -28,8 +28,8 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safe Links or Safe Attachments in Outlook, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -87,7 +87,7 @@ The following table summarizes what's included in each plan.
 
 - The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 E5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
 
-- If your current subscription does not include Microsoft Defender for Office 365, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how Defender for Office 365 can work for your organization.
+- If your current subscription does not include Microsoft Defender for Office 365, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), and see how Defender for Office 365 can work for your organization.
 
 ## Configure Microsoft Defender for Office 365 policies
 
@@ -144,7 +144,7 @@ To access Microsoft Defender for Office 365 features in the Security & Complianc
 
 |Role or role group|Resources to learn more|
 |---|---|
-|global administrator (this can be assigned in either Azure Active Directory or in the Security & Compliance Center)|[About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|global administrator (this can be assigned in either Azure Active Directory or in the Security & Compliance Center)|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
 |Security Administrator (this can be assigned in either Azure Active Directory or the Security & Compliance Center)|[Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online Organization Management (this is assigned in Exchange Online)|[Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |Search and Purge (this is assigned only in the Security & Compliance Center)|[Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
