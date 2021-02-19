@@ -25,9 +25,9 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Policies to configure anti-phishing protection settings are available in Microsoft 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Microsoft Defender for Office 365 organizations.
 
@@ -207,9 +207,11 @@ The following impersonation settings are only available in anti-phishing policie
   - **Impersonated domains**: The From address contains a protected domain.
   - **Unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a protected sender or domain.
 
+
   > [!IMPORTANT]
   >
-  > Even when the impersonation safety tips are turned off, **we recommended** that you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** with value **enable** to messages. A safety tip will notify recipients the first time they get a message from the sender or if they don't often get messages from the sender.
+  > **Recommendation for enabling a safety tip that will appear during the first-time contact between the sender and recipient(s)**:
+  > Even when the impersonation safety tips are turned off, **we recommend** that you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** with value **enable** to messages. A safety tip will notify recipients the first time they get a message from the sender or if they don't often get messages from the sender. This capability adds an extra layer of security protection against potential impersonation attacks. 
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="The text of the safety tip for impersonation protection with multiple recipients.":::
 
 - **Mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between legitimate and spoofed email from those contacts. Mailbox intelligence is only available for Exchange Online mailboxes.
