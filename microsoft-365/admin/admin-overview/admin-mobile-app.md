@@ -2,8 +2,8 @@
 title: "About the Microsoft 365 Admin mobile app"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -22,7 +22,6 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: "Get the Microsoft 365 Admin app and learn to manage your online organization from your phone or tablet."
 ---
 
