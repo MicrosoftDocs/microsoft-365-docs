@@ -28,7 +28,7 @@ Impersonation is where the sender or the sender's email domain in a message look
 
 Impersonation protection is part of the anti-phishing policy settings) that are exclusive to Microsoft Defender for Office 365. For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-You can use the impersonation insight to quickly identify messages from impersonated senders or sender domains that's you configured for impersonation protection.
+You can use the impersonation insight to quickly identify messages from impersonated senders or sender domains that you've configured for impersonation protection.
 
 ## What do you need to know before you begin?
 
@@ -59,53 +59,70 @@ You can use the impersonation insight to quickly identify messages from imperson
 
    Either way, **Domains impersonated** shows the number of messages from senders in protected domains, while **Users impersonated** shows the number of messages from protected users.
 
-### View information about messages from impersonated domains or impersonated senders
+## View information about messages from senders in impersonated domains
 
-On the impersonation insight, click **Domains impersonated** or **Users impersonated** to go to the **Impersonation insight** page. The page contains the following information:
+On the impersonation insight, click **Domains impersonated**. The **Impersonation insight** page that opens contains the following information:
 
-- **Domains impersonated**:
-  - **Domain**
-  - **Message count**
-  - **Impersonation type**: The value is **Domain in Address**
-  - **Domain type**: This value is based on the impersonated domain settings in the anti-phishing policy:
-    - **Custom domain**
-  - **Policy**: The anti-phishing policy that detected the message. For more information about how policies are applied to users, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
-  - **Allowed to impersonate**:
-    - **Yes**: The sender's domain was configured as an domain exception to the impersonation protection settings in the previously identified anti-phishing policy.
-    - **No**: The sender's domain was not configured as a domain exception. The action for impersonated domains was applied to the message.
-
-- **Domain** (if you selected **Domains impersonated** on the widget) or **Sender** (if you selected **Users impersonated** on the widget)
-- **Message count**: The number of messages from the impersonated sender or sender domain within the last 7 days.
-- **Impersonation type**
-- **Domain type** (if you selected **Domains impersonated**) or **User type** (if you selected **Users impersonated**)
-- **Policy**: The anti-phishing policy that contains the affected impersonation protection settings.
-- **Allowed to impersonate**:
-  - The value **Yes** means the sender was configured as a user or domain exception to the impersonation protection settings in the anti-spam policy as defined in **Trusted senders and domains**. Messages from this user or domain were sent to recipients that are included in the policy.
-  - The value **No** means the sender was configured for user or domain impersonation protection in the anti-spam policy. Messages from this user or domain were sent to recipients that are included in the policy.
+- **Domain**: The impersonated domain, which should closely resemble the domain that's configured for impersonation protection in the anti-spam policy.
+- **Message count**: The number of messages from senders in the impersonated domain over the last 7 days.
+- **Impersonation type**: This value is **Domain in address**.
+- **Domain type**: This value is ??? for internal domains or **Custom domain** for custom domains.
+- **Policy**: The anti-phishing policy that detected the impersonated domain.
+- **Allowed to impersonate**: One of the following values:
+  - **Yes**: The domain was configured as trusted domain (an exception for impersonation protection) in the anti-spam policy. Messages from senders in the impersonated domain were detected, but allowed.
+  - **No**: The domain was configured for impersonation protection in the anti-spam policy. Messages from senders in the impersonated domain were detected and acted upon based on the action for impersonated domains in the anti-spam policy.
 
 You can click selected column headings to sort the results.
 
-To filter the results, you can use the **Filter domain** (if you selected **Domains impersonated** on the widget) or **Filter user** box (if you selected **Users impersonated** on the widget) to enter a comma-separated list of values to filter the results.
+To filter the results, you can use the **Filter domain** box to enter a comma-separated list of values to filter the results.
 
-### View details about messages from impersonated domains or impersonated senders
+### View details about messages from senders in impersonated domains
 
-Select an item in the list to view details. A flyout appears with the following information and features:
+On the **Impersonation insight** page, select one of the available rows. The details flyout that appears contains the following information and features:
 
-- **Selection impersonation policy to modify**: Select the affected anti-phishing policy that you want to modify. Only polices where the impersonated sender or domain is included in the impersonation settings of the policy are available to select. Refer to the previous page to see which policy was actually responsible for detecting the impersonated sender.
+- **Selection impersonation policy to modify**: Select the affected anti-phishing policy that you want to modify. Only polices where the impersonated domain is defined in the policy are available. Refer to the previous page to see which policy was actually responsible for detecting the impersonated domain (likely based on the recipient and the priority of the policy).
 
 - **Add to the allowed to impersonation list**: Use this toggle to add or remove the sender from the **Trusted senders and domains** (impersonation exceptions) for the anti-phishing policy that you selected:
-
-  - For impersonated domains:
-    - If the **Allowed to impersonate** value for this entry was **No**, the toggle is off. To exempt all senders in this domain from evaluation by impersonation protection, slide the toggle to on: ![Toggle on](../../media/scc-toggle-on.png). The domain is added to the **Trusted domains** list in the impersonation protection settings of the anti-phishing policy.
-    - If the **Allowed to impersonate** value for this entry was **Yes**, the toggle is on. To return all senders in this domain to evaluation by impersonation protection, slide the toggle to off: ![Toggle off](../../media/scc-toggle-off.png). The domain is removed from the **Trusted domains** list in the impersonation protection settings of the anti-phishing policy.
-
-  - For impersonated senders:
-    - If the **Allowed to impersonate** value for this entry was **No**, the toggle is off. To exempt this sender from evaluation by impersonation protection, slide the toggle to on: ![Toggle on](../../media/scc-toggle-on.png). The sender's email address is added to the **Trusted users** list in the impersonation protection settings of the anti-phishing policy.
-    - If the **Allowed to impersonate** value for this entry was **Yes**, the toggle is on. To return this sender to evaluation by impersonation protection, slide the toggle to off: ![Toggle off](../../media/scc-toggle-off.png). The sender's email address is removed from the **Trusted users** list in the impersonation protection settings of the anti-phishing policy.
+  - If the **Allowed to impersonate** value for this entry was **No**, the toggle is off. To exempt all senders in this domain from evaluation by impersonation protection, slide the toggle to on: ![Toggle on](../../media/scc-toggle-on.png). The domain is added to the **Trusted domains** list in the impersonation protection settings of the anti-phishing policy.
+  - If the **Allowed to impersonate** value for this entry was **Yes**, the toggle is on. To return all senders in this domain to evaluation by impersonation protection, slide the toggle to off: ![Toggle off](../../media/scc-toggle-off.png). The domain is removed from the **Trusted domains** list in the impersonation protection settings of the anti-phishing policy.
 
 - Why we caught this.
 - What you need to do.
 - A domain summary that list the impersonated domain.
 - WhoIs data about the sender.
 - A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender.
-- Similar messages we have seen in your tenant from the same sender.
+- Similar messages from the same sender that were delivered to your organization.
+
+## View information about messages from impersonated senders
+
+On the impersonation insight, click **Users impersonated**. The **Impersonation insight** page that opens contains the following information:
+
+- **Sender**: The email address of the impersonated sender, which should closely resemble the user that's configured for impersonation protection in the anti-spam policy.
+- **Message count**: The number of messages from the impersonated sender over the last 7 days.
+- **Impersonation type**: This value is **User in display name**.
+- **User type**: This value is **Protected user**.
+- **Policy**: The anti-phishing policy that detected the impersonated sender.
+- **Allowed to impersonate**: One of the following values:
+  - **Yes**: The sender was configured as trusted user (an exception for impersonation protection) in the anti-spam policy. Messages from the impersonated sender were detected, but allowed.
+  - **No**: The sender was configured for impersonation protection in the anti-spam policy. Messages from the impersonated sender were detected and acted upon based on the action for impersonated users in the anti-spam policy.
+
+You can click selected column headings to sort the results.
+
+To filter the results, you can use the **Filter sender** box to enter a comma-separated list of values to filter the results.
+
+### View details about messages from impersonated senders
+
+On the **Impersonation insight** page, select one of the available rows. The details flyout that appears contains the following information and features:
+
+- **Selection impersonation policy to modify**: Select the affected anti-phishing policy that you want to modify. Only polices where the impersonated sender is defined in the policy are available. Refer to the previous page to see which policy was actually responsible for detecting the impersonated sender (likely based on the recipient and the priority of the policy).
+
+- **Add to the allowed to impersonation list**: Use this toggle to add or remove the sender from the **Trusted senders and domains** (impersonation exceptions) for the anti-phishing policy that you selected:
+  - If the **Allowed to impersonate** value for this entry was **No**, the toggle is off. To exempt the sender from evaluation by impersonation protection, slide the toggle to on: ![Toggle on](../../media/scc-toggle-on.png). The sender is added to the **Trusted users** list in the impersonation protection settings of the anti-phishing policy.
+  - If the **Allowed to impersonate** value for this entry was **Yes**, the toggle is on. To return the sender to evaluation by impersonation protection, slide the toggle to off: ![Toggle off](../../media/scc-toggle-off.png). The sender is removed from the **Trusted users** list in the impersonation protection settings of the anti-phishing policy.
+
+- Why we caught this.
+- What you need to do.
+- A sender summary that list the impersonated sender.
+- WhoIs data about the sender.
+- A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender.
+- Similar messages from the same sender that were delivered to your organization.
