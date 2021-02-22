@@ -28,8 +28,8 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Safe Attachments in [Microsoft Defender for Office 365](office-365-atp.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
 
@@ -50,7 +50,7 @@ The following table describes scenarios for Safe Attachments in Microsoft 365 an
 Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about datacenter geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> The following features are located in the global settings are of Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require Safe Attachments policies:
+> The following features are located in the global settings of Safe Attachments policies in the Security & Compliance Center. But, these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
 > - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 >
