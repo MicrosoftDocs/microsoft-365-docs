@@ -289,9 +289,9 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, they aren't configured for event-based retention, or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently in preview.
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently in preview.
 
-For retention labels that you can delete, if they been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 
 However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
 
