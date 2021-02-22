@@ -622,27 +622,13 @@
         - name: Manage processing errors
           href: processing-data-for-case.md
           items: 
-            - name: Advanced indexing of custodian data
+            - name: Advanced indexing of custodian content
               href: indexing-custodian-data.md
-            - name: Error remediation when processing data
+            - name: Error remediation when processing content
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Single item error remediation
-              href: single-item-error-remediation.md
-        - name: Collect data for a case (old)
-          href: collecting-data-for-ediscovery.md
-          items: 
-            - name: Create a search
-              href: create-search-to-collect-data.md
-            - name: Build search queries
-              href: building-search-queries.md
-            - name: Keyword queries and search conditions
-              href: keyword-queries-and-search-conditions.md
-            - name: Search statistics
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: Add search results to a review set
-              href: add-data-to-review-set.md
-        
-        - name: Collect content for a case (new)
+              href: single-item-error-remediation.md        
+        - name: Collect content for a case
           items: 
             - name: Learn about collections
               href: collections-overview.md
@@ -663,7 +649,7 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: add-data-to-review-set-from-another-review-set.md
-        - name: Review case data
+        - name: Review case content
           items: 
             - name: Use the review set dashboard
               href: advanced-ediscovery-dashboard.md
@@ -673,7 +659,7 @@
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
-        - name: Analyze case data
+        - name: Analyze case content
           href: analyzing-data-in-review-set.md
           items: 
             - name: Near duplicate detection
@@ -682,11 +668,11 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Themes
               href: themes-in-advanced-ediscovery.md
-            - name: Use the Relevance module to analyze data
+            - name: Use the Relevance module to analyze content
               href: using-relevance.md
             - name: Retirement of the Relevance module
               href: relevance-module-retirement.md  
-        - name: Export case data
+        - name: Export case content
           href: exporting-data-ediscover20.md
           items: 
             - name: Download documents from a review set
