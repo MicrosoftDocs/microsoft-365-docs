@@ -126,10 +126,10 @@ If you’re already using AIR capabilities in Microsoft Defender for Office 365,
 The new and improved security center brings together AIR capabilities in [Microsoft Defender for Office 365](office-365-atp.md) and in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
 
 > [!TIP]
-> The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) replaces the following centers:
+> The new Microsoft 365 security center (<https://security.microsoft.com>) replaces the following centers:
 >
-> - Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com))
-> - Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))
+> - Office 365 Security & Compliance Center (<https://protection.office.com>)
+> - Microsoft Defender Security Center (<https://securitycenter.windows.com>)
 >
 > In addition to the URL changing, there’s a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place.
 
