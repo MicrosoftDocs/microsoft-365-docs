@@ -22,6 +22,8 @@ description: Learn how to set up secure content collaboration in Teams to protec
 
 Being able to easily share information with the right people while preventing oversharing is key to an organization's success. This includes being able to share sensitive data safely with only those who should have access to it. Depending on the project, this might include sharing sensitive data with people outside your organization.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
+
 This collaboration solution guidance includes two components to help you:
 - Deploy Microsoft Teams with the right level of protection for each project
 - Configure external sharing with appropriate security settings for each project
