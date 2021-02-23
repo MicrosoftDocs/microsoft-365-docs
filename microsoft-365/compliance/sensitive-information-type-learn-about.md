@@ -118,7 +118,8 @@ A high confidence level returns the fewest false positives but might result in m
 - **high confidence**: value of 85, matched items will contain the fewest false positives but the most false negatives.  
 
 You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.
-The counts for confidence levels for a sensitive information type follow a true funnel, i.e. the matches for medium confidence will include the matches for high confidence patterns of the sensitive information type and the matches for low confidence will include matches for both high confidence & medium confidence patterns of the low confidence. 
+The counts for confidence levels for a sensitive information type follow a true funnel, i.e. the matches for medium confidence will include the matches for high confidence patterns of the sensitive information type and the matches for low confidence will include matches for high confidence and medium confidence patterns of the sensitive information type.
+
 
 ## Creating custom sensitive information types
 
