@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use a retention policy to very efficiently keep control of the content that users generate with email, documents, and conversations. Keep what you want and get rid of what you don't."
+description: "Use a retention policy to efficiently keep control of the content that users generate with email, documents, and conversations. Keep what you want and get rid of what you don't."
 ---
 
 # Create and configure retention policies
@@ -25,9 +25,9 @@ description: "Use a retention policy to very efficiently keep control of the con
 
 Use a retention policy to manage the data for your organization by deciding proactively whether to retain content, delete content, or retain and then delete the content.
 
-A retention policy lets you do this very efficiently by assigning the same retention settings at the container level to be automatically inherited by content in that container. For example, all items in a SharePoint site, all email messages in an Exchange mailbox, all channel messages for a Teams team. If you're not sure whether to use a retention policy or a retention label, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
+A retention policy lets you do this very efficiently by assigning the same retention settings at the container level to be automatically inherited by content in that container. For example, all items in SharePoint sites, all email messages in users' Exchange mailboxes, all channel messages for teams that are used with Microsoft Teams. If you're not sure whether to use a retention policy at the container level or a retention label at the item level, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
 
-For more information about retention policies and how retention works, see [Learn about retention policies and retention labels](retention.md).
+For more information about retention policies and how retention works in Microsoft 365, see [Learn about retention policies and retention labels](retention.md).
 
 ## Before you begin
 
