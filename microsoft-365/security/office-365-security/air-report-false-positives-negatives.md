@@ -29,8 +29,8 @@ ms.technology: mdo
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 If [automated investigation and response (AIR) capabilities in Office 365](automated-investigation-response-office.md) missed or wrongly detected something, there are steps your security operations team can take to fix it. Such actions include:
 
@@ -73,10 +73,10 @@ With Threat Explorer, your security operations team can find an email affected b
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
-2. In the navigation pane, select **Action center**. 
+1. Go to the Microsoft 365 security center (<https://security.microsoft.com>).
+2. In the navigation pane, select **Action center**.
 3. Select the **History** tab to view the list of completed actions.
-4. Select an item. Its flyout pane opens. 
+4. Select an item. Its flyout pane opens.
 5. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
 
 ## See also
