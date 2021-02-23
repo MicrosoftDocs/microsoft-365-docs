@@ -214,6 +214,6 @@ For organizations using Configuration Manager, you can use the [Deploy and updat
 
 ### Integrate a third-party cloud app with Azure AD
 
-Improve the user experience and provide an additional layer of security by integrating your third-party app with ‎Azure Active Directory (Azure AD). With this end-to-end experience you can do most of the configuration directly from this wizard. Where appropriate, we'll redirect you to the corresponding configuration page.
+Improve the user experience and provide an additional layer of security by integrating your third-party app with ‎Azure Active Directory (Azure AD). With this end-to-end experience, you can do most of the configuration directly from this wizard. Where appropriate, we'll redirect you to the corresponding configuration page.
 
 Use the [Integrate third-party cloud app](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) wizard to integrate a third-party cloud app with Azure AD.
