@@ -53,7 +53,7 @@ Although a retention policy can support multiple services that are identified as
 - Yammer community messages
 - Yammer private messages
 
-If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This mean that the instructions to follow depend on whether you need to include the Teams or Yammer locations:
+If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations:
 
 - [Instructions for a retention policy for Teams locations](#retention-policy-for-teams-locations)
 - [Instructions for a retention policy for Yammer locations](#retention-policy-for-yammer-locations)
