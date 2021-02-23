@@ -143,7 +143,7 @@ During the preview, you must use a specific URL to access this setting in the Mi
 1. Sign in to the Microsoft 365 compliance center as a global admin for your test tenant, using the following link:
     
     ````
-    https://compliance.microsoft.com/compliancesettings/co-authoring_for_files_with_sensitivity_labels
+    https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
     ````
     This link takes you directly to the tenant setting, **Co-authoring for files with sensitivity labels**.
 
