@@ -43,7 +43,7 @@ The following Teams items can be retained and deleted by using retention policie
 > [!NOTE]
 > Including card content is a recent addition and currently rolling out to tenants. For more information, see [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Teams messages in private channels are currently not supported for retention policies. Code snippets, recorded voice memos from the Teams mobile client, and reactions from others in the form of emoticons are not included when you use retention policies for Teams.
+Teams messages in private channels are currently not supported for retention policies. Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons are not included when you use retention policies for Teams.
 
 Emails and files that you use with Teams aren't included in retention policies for Teams. These items have their own retention policies.
 
