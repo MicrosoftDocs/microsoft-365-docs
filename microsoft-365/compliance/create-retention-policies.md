@@ -23,9 +23,9 @@ description: "Use a retention policy to very efficiently keep control of the con
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content.
+Use a retention policy to manage the data for your organization by deciding proactively whether to retain content, delete content, or retain and then delete the content.
 
-A retention policy lets you do this very efficiently by assigning the same retention settings for content by location, at a site or mailbox level. If you're not sure whether to use a retention policy or a retention label, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
+A retention policy lets you do this very efficiently by assigning the same retention settings at the container level to be automatically inherited by content in that container. For example, all items in a SharePoint site, all email messages in an Exchange mailbox, all channel messages for a Teams team. If you're not sure whether to use a retention policy or a retention label, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
 
 For more information about retention policies and how retention works, see [Learn about retention policies and retention labels](retention.md).
 
@@ -35,7 +35,7 @@ The global admin for your organization has full permissions to create and edit r
 
 ## Create and configure a retention policy
 
-Although a retention policy can support multiple locations, you can't create a single retention policy that includes all the supported locations:
+Although a retention policy can support multiple services that are identified as "locations" in the retention policy, you can't create a single retention policy that includes all the supported locations:
 
 - Exchange email
 - SharePoint site
@@ -48,7 +48,7 @@ Although a retention policy can support multiple locations, you can't create a s
 - Yammer community messages
 - Yammer private messages
 
-If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. Therefore, which instructions to follow depend on whether you need to include the Teams or Yammer locations:
+If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This mean that the instructions to follow depend on whether you need to include the Teams or Yammer locations:
 
 - [Instructions for a retention policy for Teams locations](#retention-policy-for-teams-locations)
 - [Instructions for a retention policy for Yammer locations](#retention-policy-for-yammer-locations)
