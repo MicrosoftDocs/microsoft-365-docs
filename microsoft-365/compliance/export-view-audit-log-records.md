@@ -82,6 +82,9 @@ The next step is to use the JSON transform feature in the Power Query Editor in 
    > [!NOTE]
    > The JSON properties displayed in the previous screenshot (after you click **Load more**) are based on the properties found in the **AuditData** column from the first 1,000 rows in the CSV file. If there are different JSON properties in records after the first 1,000 rows, these properties (and a corresponding column) won't be included when the **AuditData** column is split into multiple columns. To help prevent this, consider re-running the audit log search and narrow the search criteria so that fewer records are returned. Another workaround is to filter items in the **Operations** column to reduce the number of rows (before you perform step 5 above) before transforming the JSON object in the **AuditData** column.
 
+   > [!TIP]
+   > To view an attribute within a list, such as AuditData.AffectedItems, click on the Expand Icon in the upper right corner of the column you want to pull an attribute from, then select Expand to New row.  From there it will be a Record and you can now, click the Expand Icon in the upper right corner of the column, see the atrributes, and select the one you would like to view or extract.
+
 8. Do one of the following things to format the title of the columns that are added for each JSON property that's selected.
 
     - Unselect the **Use original column name as prefix** checkbox to use the name of the JSON property as the column names; for example, **RecordType** or **SourceFileName**.
