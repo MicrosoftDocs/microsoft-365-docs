@@ -62,6 +62,9 @@ If you want to add a guest to the directory directly, you can [Add Azure Active 
 
 If you want to edit any of a guest's information, you can [Add or update a user's profile information using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
+> [!NOTE]
+> Dynamic membership is supported for Microsoft 365 Groups. If you want to add an external user to a M365 group using Dynamic membership rules, the option to "View all and manage members"  will not be available in the admin center. Instead you need to [create or update a dynamic group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-create-rule)
+
 ## See also
 
 [Block guest users from a specific group](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
