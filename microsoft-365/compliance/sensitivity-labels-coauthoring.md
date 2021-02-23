@@ -92,9 +92,9 @@ Make sure you understand the following prerequisites before you turn on this fea
         - Minimum version of 19.002.0121.0008
     
     - **Endpoint data loss prevention (Endpoint DLP):**
-        - Windows 10 1809 with KB 4601380
-        - Windows 10 1903 with KB 4601382
-        - Windows 10 2004 with KB 4601383
+        - Windows 10 1809 with KB 4601383
+        - Windows 10 1903 with KB 4601380
+        - Windows 10 2004 with KB 4601382
     
     - **Apps and services that use the Microsoft Information Protection SDK:** 
         - Minimum version of 1.7 
