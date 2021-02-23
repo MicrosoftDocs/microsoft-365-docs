@@ -23,6 +23,11 @@ description: "Learn about retention policies that apply to Microsoft Teams."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+> [!NOTE]
+> If you are a user who is seeing a message in Teams that your chats and messages have been deleted by a retention policy, see [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> 
+> The information on this page is for IT administrators who manage these retention policies.
+
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Microsoft Teams messages.
 
 For other workloads, see:
