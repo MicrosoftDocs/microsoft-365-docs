@@ -25,8 +25,12 @@ Microsoft security solutions are built into our products and services. Automatio
 
 
 Watch this video for an overview of the deployment process.
-
+<br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
+
+>[!Note]
+>This video uses the previous names of threat protection products and features, but the concepts are the same. An update to this video is in progress.
+>
 
 Use this article as a guide for implementing your threat protection solution.
 
@@ -36,15 +40,15 @@ Use this article as a guide for implementing your threat protection solution.
 
 In Microsoft 365 E5, threat protection capabilities are integrated by default. Signals from each capability add strength to the overall ability to detect and respond to threats. The combined set of capabilities offers the best protection for organizations, especially multi-national organizations, compared to running non-Microsoft products. The following image depicts the threat protection services and capabilities in Microsoft 365 E5 that are described in this article.
 
-![Overview of Microsoft 365 Defender](../media/solutions-architecture-center/deploy-threat-protection-across-m365-overview.png)
+![Overview of Microsoft 365 Defender](../media/deploy-threat-protection/deploy-threat-protection-across-m365-overview.png)
 
 As soon as you deploy any of the Defender for Office 365 capabilities, you can turn on Microsoft 365 Defender, which brings the signals and data together into one place. 
 
-![Conceptual illustration of Microsoft 365 Defender dashboard](../media/solutions-architecture-center/deploy-threat-protection-across-m365-mtp.png)
+![Conceptual illustration of Microsoft 365 Defender dashboard](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
 
 The following illustration depicts a recommended path for deploying these individual capabilities. 
 
-![M365 threat protection signals](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
+![M365 threat protection signals](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
 
 |Solution/capabilities  |Description  |
 |---------|---------|
@@ -72,4 +76,4 @@ To make sure your organization has the best protection possible, set up and depl
 
 Your threat protection features can be configured in parallel, so if you have multiple network security teams responsible for different services, they can configure your organization’s protection features at the same time. The following diagram illustrates the high-level process for deploying threat protection capabilities. 
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
+![Process for deploying threat protection capabilities](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png) 

@@ -34,7 +34,7 @@ Microsoft has tested and recommends a specific set of conditional access and rel
 
 ### To implement baseline protection for Microsoft 365
 
-![Process for deploying baseline protection](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
+![Process for deploying baseline protection](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
 1. [Configure prerequisites, including Azure Identity Protection](../security/office-365-security/identity-access-prerequisites.md).
 2. [Configure common identity and device access policies](../security/office-365-security/identity-access-policies.md) for baseline protection.
@@ -57,7 +57,7 @@ Microsoft Defender for Identity enables security operations (SecOps) analysts an
 
 ### To set up Microsoft Defender for Identity
 
-![Process for deploying Microsoft Defender for Identity](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
+![Process for deploying Microsoft Defender for Identity](../media/deploy-threat-protection/deploy-azure-atp-steps.png) 
 
 1. [Set up Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) to protect your primary environments.
 2. Protect all your [domain controllers](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) and [forests](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest).
@@ -77,7 +77,7 @@ Microsoft 365 Defender unifies alerts, incidents, automated investigation and re
 
 ### To set up Microsoft 365 Defender
 
-![Process for deploying Microsoft 365 Defender](../media/solutions-architecture-center/deploy-mtp-steps.png) 
+![Process for deploying Microsoft 365 Defender](../media/deploy-threat-protection/deploy-mtp-steps.png) 
 
 1. [Review the prerequisites](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
 2. [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
@@ -101,7 +101,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 ### To set up Microsoft Defender for Office 365
 
-![Process for deploying Microsoft Defender for Office 365](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
+![Process for deploying Microsoft Defender for Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
 1. [Set up and configure your Microsoft Defender for Office 365 policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 2. [View and use your Microsoft Defender for Office 365 reports](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).
@@ -119,7 +119,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 ### Set up Microsoft Defender for Endpoint
 
-![Process for deploying Microsoft Defender for Endpoint](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
+![Process for deploying Microsoft Defender for Endpoint](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
 1. [Prepare your Microsoft Defender for Endpoint deployment](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
 2. [Set up your Microsoft Defender for Endpoint deployment](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
@@ -137,7 +137,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 ### Set up Microsoft Cloud App Security
 
-![Process for deploying Microsoft Cloud App Security](../media/solutions-architecture-center/deploy-mcas-steps.png) 
+![Process for deploying Microsoft Cloud App Security](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [Set up the portal and other basic requirements](https://docs.microsoft.com/cloud-app-security/general-setup).
 2. [Set up cloud discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery) and [connect apps](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
@@ -153,7 +153,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 After you have set up and deployed your threat protection services and capabilities, your next step is to monitor threat detections, and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can monitor and managing security across your Microsoft identities, data, devices, apps, and infrastructure. 
 
-![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
+![Microsoft 365 security center](../media/deploy-threat-protection/m365-security-center.png)
 
 The Microsoft 365 security center is specifically intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
 - View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
