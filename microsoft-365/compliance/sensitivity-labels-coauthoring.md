@@ -80,8 +80,8 @@ Make sure you understand the following prerequisites before you turn on this fea
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
     
     - **Microsoft 365 Apps for enterprise:**
-        - Windows: [Current Channel (Preview)](https://office.com/insider) or [Beta Channel](https://office.com/insider)
-        - macOS: [Beta Channel](https://office.com/insider)
+        - Windows: [Current Channel (Preview)](https://office.com/insider) with minimum build 16.0.13801.20182, or [Beta Channel](https://office.com/insider) with minimum build 16.0.13819.20006
+        - macOS: [Beta Channel](https://office.com/insider) with minimal build 16.47.218.0
         - iOS: Not yet supported
         - Android: Not yet supported
     
