@@ -102,7 +102,6 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md)
 - [Microsoft Cloud App Security configured to apply sensitivity labels](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
-- [Content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md)
 
 ## Limitations
 
