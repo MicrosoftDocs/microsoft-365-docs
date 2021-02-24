@@ -21,13 +21,6 @@ description: "Use the import tool dto quickly add multiple custodians and their 
 
 For Advanced eDiscovery cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case.
 
-## Before you import custodians
-
-If you use the **OnHold**
-
-|Maximum number of mailboxes in a single case hold  <br/> |1,000  <br/> |
-  |Maximum number of SharePoint and OneDrive for Business sites in a single case hold  <br/> |100  <br/> |
-
 ## Import custodians
 
 1. Open the Advanced eDiscovery case and select the **Data sources** tab.
