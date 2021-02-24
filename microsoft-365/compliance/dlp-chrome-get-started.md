@@ -112,7 +112,7 @@ Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configur
 
 #### Intune Force Install Steps
 
-Before adding the Microsoft DLP Chrome extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Intune are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Before adding FOOBAR to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Intune are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
 
  After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
@@ -123,7 +123,7 @@ Before adding the Microsoft DLP Chrome extension to the list of force-installed 
 5.	Choose Custom as Profile type
 6.	Click the Settings tab
 7.	Click Add
-8.	Enter the following policy information and click create.
+8.	Enter the following policy information.
 OMA-URI: ./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist
 Data type: String
 Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx″/>
@@ -132,66 +132,64 @@ Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000;
 
 #### Group Policy  Setup (Organization Wide) - Optional
 
-#### Import the Chrome ADMX
+1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMX’s into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
+2.	Create a PowerShell script using this:
 
-Your devices must be manageable via Group Policy, and all Chrome ADMX’s needed will need to be imported into the Group Policy Central Store. Please see the following Microsoft documentation on How to create and manage the Central Store for Group Policy Administrative Templates in Windows.
+```powershell
+et-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+```
 
-Enabling Required Registry Key via Powershell
-
-1.	Create a PowerShell script with the following contents:
-Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-2.	Open the Group Policy Management Console and navigate to your organizational unit (OU).
-3.	Right-click and select "Create a GPO in this domain and Link it here." When prompted, assign a descriptive name to this GPO (e.g., DLP Chrome Immediate PowerShell Script).
-4.	After creating the GPO, right click and select Edit. This will take you to the Group Policy Object.
-5.	Navigate to Computer Configuration > Preferences > Control Panel Settings > Scheduled Tasks.
-6.	Right-click on the blank area under ‘Scheduled Tasks’ and click New > Immediate Task (At least Windows 7)
-7.	Give the task a name & description.
-8.	Choose the corresponding account to run the immediate task (e.g., NT Authority)
-9.	Select Run with highest privileges.
-10.	Configure the policy for Windows 10.
-11.	In the Actions tab, choose the action ‘Start a program’
-12.	Enter the path to the Program/Script created in Step 1.
-13.	Click Apply.
+3.	Open the **Group Policy Management Console** and navigate to your organizational unit (OU).
+4.	Right-click and select **Create a GPO in this domain and Link it here**. When prompted, assign a descriptive name to this group policy object (GPO) and finish creating it.
+5.	Right click the GPO and select **Edit**.
+6.	Go to **Computer Configuration** > **Preferences** > **Control Panel Settings** > **Scheduled Tasks**.
+7.	Create a new immediate task by selecting right clicking and selecting **New** > **Immediate Task (At least Windows 7)**.
+8.	Give the task a name & description.
+9.	Choose the corresponding account to run the immediate task, for example NT Authority
+10.	Select **Run with highest privileges**.
+11.	Configure the policy for Windows 10.
+12.	In the **Actions** tab, select the action **Start a program**.
+13.	Enter the path to the Program/Script created in Step 1.
+14.	Select **Apply**.
 
 #### Adding the Chrome Extension to the ForceInstall List
 
 1.	In the Group Policy Management Editor, navigate to your OU.
-2.	Expand the following path “Computer/User configuration > Policies > Administrative templates > Classic administrative templates > Google > Google Chrome > Extensions” (may vary depending on configuration).
-3.	Select “Configure the list of force-installed extensions.”
-4.	Right click and select Edit.
-5.	Check the ‘Enabled’ radio button.
-6.	Click ‘Show’.
-7.	Under ‘Value’, add the following entry: echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx
-8.	Click ‘OK’ and Click ‘Apply’
+2.	Expand the following path **Computer/User configuration** > **Policies** > **Administrative templates** > **Classic administrative templates** > **Google** > **Google Chrome** > **Extensions**. This path may vary depending on your configuration.
+3.	Select **Configure the list of force-installed extensions**.
+4.	Right click and select **Edit**.
+5.	Select **Enabled**.
+6.	Select **Show**.
+7.	Under **Value**, add the following entry: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+8.	Select **OK** and then **Apply**.
 
-#### Testing the Extension
+### Testing the Extension
 
-1.	Upload to cloud service, or access by unallowed browsers Cloud Egress  
-To test when detection and protection of sensitive data when its uploaded to a service domain, try to upload a file to one of your organization’s restricted service domains with a file that has sensitive data. The sensitive data must match one of our built in Sensitive Info Types (see more info at https://aka.ms/SensitiveInfoTypes), and/or one of your organization’s sensitive information types. 
-Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+#### Upload to cloud service, or access by unallowed browsers Cloud Egress  
+
+1. Create or get a sensitive item and, try to upload a file to one of your organization’s restricted service domains. The sensitive data must match one of our built in [Sensitive Info Types](sensitive-information-type-entity-definitions.md), or one of your organization’s sensitive information types. You should get a DLP toast notification on the device you are testing from that shows that this action is not allowed when the file is open.
 
 #### Testing other DLP scenarios in Chrome 
 
-Now that you’ve unblocked Chrome as an app that’s allowed to access sensitive data when it adheres to your organization’s policy, you can test the scenarios below to confirm the behavior meets your organization’s requirements:
-2.	Copy data from a sensitive document to another document using the Clipboard
-To test the copy to clipboard block, simply open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
-Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
-3.	Print a document
-To test the print block, simply open a file that is protected against print actions in the Chrome browser and attempt to print the file.
-Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
-4.	Copy to USB Removeable Media
-To test the save to removeable media block, try to save the file to a removeable media storage.
-Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
-5.	Copy to Network Share
-To test the save to removeable media block, try to save the file to a network share.
-Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+Now that you’ve removed Chrome from the disallowed browsers/apps list, you can test the scenarios below to confirm the behavior meets your organization’s requirements:
 
-
+- Copy data from a sensitive item to another document using the Clipboard
+    - To test, open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
+    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+- Print a document
+    - To test open a file that is protected against print actions in the Chrome browser and attempt to print the file.
+    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+- Copy to USB Removeable Media
+    - To test, try to save the file to a removeable media storage.
+    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
+- Copy to Network Share
+    - To test, try to save the file to a network share.
+    - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
 
 ### scenario Onboarding devices
 
-
+LEFT OFF HERE
 
 ### scenario With devices onboarded into Microsoft Defender for Endpoint
 
