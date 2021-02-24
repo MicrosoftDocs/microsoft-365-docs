@@ -30,7 +30,7 @@ This section describes the statistics that are available for draft collections. 
 
 ### Collection estimates
 
-This section displays a graphical summary of the estimated items returned by the collection. This indicates the number of items that match the search criteria of the collection.
+This section displays a graphical summary of the estimated items returned by the collection. This indicates the number of items that match the search criteria of the collection. This information gives you an idea about the estimated number of items returned by the collection.
 
 ![Collection estimates for a draft collection](../media/AeDCollectionEstimates.png)
 
@@ -73,19 +73,37 @@ This section displays statistics about the specific content locations with the m
 
 This section describes the statistics that are available after you commit a collection to a review set. These statistics (in addition to load set information) provide a historical information about content added to review sets.
 
+provide a detailed report of the content ingested to the review set; this enables reporting, analysis, and a way for customers to establish a predictable, repeatable process 
+
 
 
 
 ### Collection contents
 
+"This is the actual number of items that were collected and added to the review set.
+
+
+- **Parent items**. The number of items returned by the collection estimate. This number would correspond to the estimated number of items returned by the draft collection.
+
+- **Child items**. The number of child items added to the review set. Child items are attachments or other parts of a parent item. Child items include attached files, images, and email signatures. When you commit a collection to a review set, child items are extracted, indexed, and added to the review set as individual files.
+
+- **Unique items**. The number of unique items added to the review set. Unique items are unique to the review set. This means that when these items are added to the review set, there are no duplicates of these items already in the review set. For example, all items are unique the first item that a collection added to a review set or the first collection added to a new review set, because there were no previous items in the review set.
+
+- **Identified duplicate items**. The number of items from the collection that were not added to the review set because the same item already exists in the review set.
+
 
 
 ### Indexing
 
+**New indexed items**. The number of items that were newly indexed before they were added to the review set. An example of a newly indexed items are child items that are extracted from a parent item then indexed before they're added to the review set. Also, items that aren't located in custodial data sources and non-custodial content locations listed on the **Data sources** tab in the case are indexed before they're added to the review. For example, newly indexed items would include items collected from from additional locations.
+
+**Updated indexed items**. The number of partially indexed items that were successfully indexed and added to the review set. This would partially indexed items from custodial and non-custodial content locations **Data sources** tab that were successfully indexed when the collection was committed to the review set.
+
+**Indexing errors**. The number of partially indexed items that couldn't be indexed before they were added to the review set. These items might require error remediation.
 
 ### Collection parameters
 
-This section displays the collection information that was used to collect the items that were added to the review set. This tab displays the information about the actual collection results. You use the information on this tab and compare it to the information on the **Search statistics** tab, which are the statistics from the last time that draft collection was run. In other words, the **Collection parameters** section displays information about the actual collection results that were added to the review set. The information displayed on the **Search statistics** tab are the estimated statistics from the last time the draft collection was run before it was committed to the review set.
+This section displays the collection information that was used to collect the items that were added to the review set. This tab displays information that is similar to the information on the **Search statistics** tab. This section provides a quick snap shot of the search query used by the collection, the content locations that were searched, and an the estimated collection results.
 
 ### Search statistics tab
 
