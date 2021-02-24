@@ -77,8 +77,8 @@ You view DLP on-premises scanner data in the M365 Compliance Center [activity ex
 
 Now that you've learned about DLP on-premises scanner, your next steps are:
 
-1) [Get started with the DLP on-premises scanner](dlp-on-premises-scanner-get-started.md)
-2) [Use the DLP on-premises scanner](dlp-on-premises-scanner-use.md)
+1. [Get started with the DLP on-premises scanner](dlp-on-premises-scanner-get-started.md)
+2. [Use the DLP on-premises scanner](dlp-on-premises-scanner-use.md)
 
 ## See also
 
@@ -87,4 +87,3 @@ Now that you've learned about DLP on-premises scanner, your next steps are:
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-

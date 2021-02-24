@@ -68,8 +68,8 @@ If you want to enforce DLP rules on the scanned files, enforcement must be enabl
 #### Configure DLP to enforce policy actions
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) and select the DLP policy that is targeted to the on-premises location repositories you have configured in AIP. 
-1. Edit the policy.
-1. On the **Test or turn on the policy** page, select **Yes, turn it on right away**. 
+2. Edit the policy.
+3. On the **Test or turn on the policy** page, select **Yes, turn it on right away**. 
 
 ## See also
 
