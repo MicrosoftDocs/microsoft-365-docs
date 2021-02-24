@@ -68,7 +68,7 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 
 ### Overall workflow
 
-Deploying FOOBAR is a multi-phase process. You can choose to install on one machine at a time, or use Intune or Group Policy for organization wide deployments.
+Deploying FOOBAR is a multi-phase process. You can choose to install on one machine at a time, or use Intune or Group Policy for organization-wide deployments.
 
 1. [Prepare your devices](#prepare-your-devices).
 2. 
@@ -101,7 +101,7 @@ Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configur
 ```powershell
 Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ```
-2.	Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
+2.	Sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
 3.	Navigate to **Devices** > **Scripts** and select **Add**.
 4.	Browse to the location of the script created when prompted.
 5.	Select the following settings:
@@ -116,13 +116,13 @@ Before adding FOOBAR to the list of force-installed extensions, it is important 
 
  After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
-1.	Sign-in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com)
+1.	Sign in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com)
 2.	Navigate to Configuration Profiles.
-3.	Click Create Profile.
-4.	Choose Windows 10 as the platform.
-5.	Choose Custom as Profile type
-6.	Click the Settings tab
-7.	Click Add
+3.	Select **Create Profile**.
+4.	Select **Windows 10** as the platform.
+5.	Select **Custom** as profile type.
+6.	Select the **Settings** tab.
+7.	Select **Add**.
 8.	Enter the following policy information.
 OMA-URI: ./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist
 Data type: String
@@ -132,7 +132,7 @@ Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000;
 
 #### Group Policy  Setup (Organization Wide) - Optional
 
-1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMX’s into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
+1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMXs into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 2.	Create a PowerShell script using this:
 
 ```powershell
@@ -141,9 +141,9 @@ et-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configura
 
 3.	Open the **Group Policy Management Console** and navigate to your organizational unit (OU).
 4.	Right-click and select **Create a GPO in this domain and Link it here**. When prompted, assign a descriptive name to this group policy object (GPO) and finish creating it.
-5.	Right click the GPO and select **Edit**.
+5.	Right-click the GPO and select **Edit**.
 6.	Go to **Computer Configuration** > **Preferences** > **Control Panel Settings** > **Scheduled Tasks**.
-7.	Create a new immediate task by selecting right clicking and selecting **New** > **Immediate Task (At least Windows 7)**.
+7.	Create a new immediate task by selecting right-clicking and selecting **New** > **Immediate Task (At least Windows 7)**.
 8.	Give the task a name & description.
 9.	Choose the corresponding account to run the immediate task, for example NT Authority
 10.	Select **Run with highest privileges**.
@@ -167,7 +167,7 @@ et-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configura
 
 #### Upload to cloud service, or access by unallowed browsers Cloud Egress  
 
-1. Create or get a sensitive item and, try to upload a file to one of your organization’s restricted service domains. The sensitive data must match one of our built in [Sensitive Info Types](sensitive-information-type-entity-definitions.md), or one of your organization’s sensitive information types. You should get a DLP toast notification on the device you are testing from that shows that this action is not allowed when the file is open.
+1. Create or get a sensitive item and, try to upload a file to one of your organization’s restricted service domains. The sensitive data must match one of our built-in [Sensitive Info Types](sensitive-information-type-entity-definitions.md), or one of your organization’s sensitive information types. You should get a DLP toast notification on the device you are testing from that shows that this action is not allowed when the file is open.
 
 #### Testing other DLP scenarios in Chrome 
 
@@ -177,7 +177,7 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
     - To test, open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
     - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Print a document
-    - To test open a file that is protected against print actions in the Chrome browser and attempt to print the file.
+    - To test, open a file that is protected against print actions in the Chrome browser and attempt to print the file.
     - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Copy to USB Removeable Media
     - To test, try to save the file to a removeable media storage.
@@ -187,24 +187,16 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
     - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
 
-### scenario Onboarding devices
-
-LEFT OFF HERE
-
-### scenario With devices onboarded into Microsoft Defender for Endpoint
-
-In this scenario, 
-
 ### Viewing Chrome DLP alerts in DLP Alerts Management dashboard
 
-1. Open the Data loss prevention page in the Microsoft 365 Compliance center and choose Alerts.
+1. Open the **Data loss prevention** page in the [Microsoft 365 Compliance center](https://compliance.microsoft.com) and select **Alerts**.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
 
 ### Viewing Chrome DLP data in activity explorer
 
-1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose **Activity explorer**.
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 
