@@ -1,5 +1,5 @@
 ---
-title: "Get started with the Google Chrome extension for endpoint data loss prevention (preview)"
+title: "Get started with FOOBAR (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,19 +18,18 @@ ms.collection:
 - m365initiative-compliance
 search.appverid: 
 - MET150
-description: "Prepare for and deploy the Google Chrome extension for endpoint data loss prevention."
+description: "Prepare for and deploy FOOBAR."
 ---
 
-# Get started with the Google Chrome extension for endpoint data loss prevention (preview)
+# Get started with FOOBAR  (preview)
 
-[Endpoint data loss prevention](endpoint-dlp-learn-about.md) (Endpoint DLP) extends the activity monitoring and protection capabilities of data loss prevention (DLP) to sensitive items that are on Windows 10 devices. When devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
-
-Once the Google Chrome browser extension is installed you can monitor activities and enforce DLP policy restrictions on sensitive items through Chrome.
+Use these procedures to roll out FOOBAR.
 
 ## Before you begin
 
 To use the Google Chrome extension the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
+- [Learn about FOOBAR](dlp-chrome-learn-about.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
@@ -69,10 +68,10 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 
 ### Overall workflow
 
-Deploying the Google Chrome extension is a multi-phase process. You can choose to install on one machine at a time, or use Intune or Group Policy for organization wide deployments.
+Deploying FOOBAR is a multi-phase process. You can choose to install on one machine at a time, or use Intune or Group Policy for organization wide deployments.
 
 1. [Prepare your devices](#prepare-your-devices).
-1. 
+2. 
 
 
 
@@ -86,27 +85,29 @@ Deploying the Google Chrome extension is a multi-phase process. You can choose t
 ### Basic Setup (Single Machine Selfhost) - Recommended 
 
 
-#### Enabling Required Registry Key via PowerShell
+1. Run the following script in PowerShell as an administrator
 
-1.	Run the following script in PowerShell as an administrator: Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+```powershell
+Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+``` 
+2.	Navigate to [Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-data-loss-preve/echcggldkblhodogklpincgchnpgcdco).
+3.	Install the extension.
 
-Install the Extension
-1.	Navigate to [Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-data-loss-preve/echcggldkblhodogklpincgchnpgcdco).
-2.	Install the extension.
-
-#### Intune Setup (Organization Wide) - Optional 
+### Intune Setup (Organization Wide) - Optional 
 
 ##### Enabling Required Registry Key via Intune
 
 1.	Create a PowerShell script with the following contents:
+```powershell
 Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+```
 2.	Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
-3.	Navigate to Devices > Scripts and click Add.
+3.	Navigate to **Devices** > **Scripts** and select **Add**.
 4.	Browse to the location of the script created when prompted.
 5.	Select the following settings:
-a.	Run this script using the logged-on credentials: YES
-b.	Enforce script signature check: NO
-c.	Run script in 64-bit PowerShell Host: YES
+    1. Run this script using the logged-on credentials: YES
+    1. Enforce script signature check: NO
+    1. Run script in 64-bit PowerShell Host: YES
 6.	Select the proper device groups and apply the policy.
 
 #### Intune Force Install Steps
