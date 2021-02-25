@@ -134,7 +134,7 @@ To create custom sensitive information types in the Security & Compliance Center
 
 
 > [!NOTE]
-> Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management. We will be enabling the improved confidence levels for Microsoft Information Protection - Office clients, Microsoft 365 Endpoint Data Loss Prevention, Microsoft Cloud App Security, and AIP unified labeling client and on-premises scanner in the near future. 
+> Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management. We will be enabling the improved confidence levels for Microsoft Information Protection - Office clients, Microsoft 365 Endpoint Data Loss Prevention, Microsoft Cloud App Security, and AIP unified labeling client and on-premises scanner in the near future. Till then classification for these solutions will continue to work as it does today. 
 
 > Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
 > - Chinese (simplified)
