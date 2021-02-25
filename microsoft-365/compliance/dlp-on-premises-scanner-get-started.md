@@ -62,6 +62,7 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
     2. You must create content scan job and specify the repositories that host files that need to be evaluated by the DLP engine.
     3. Enable DLP rules in the created Content scan job, and set the **Enforce** option to **Off**, unless you want to proceed directly to the DLP enforcement stage.
 3. Verify that you content scan job is assigned to the right cluster. If you still did not create a content scan job create a new one and assign it to the cluster that contains the scanner nodes that run the public preview version.
+
 4. Connect to the [Azure Information Protection extension in Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) and add your repositories to the content scan job that will perform the scan.
 
 5. Do one of the following to run your scan:
@@ -69,27 +70,27 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
     1. use the manual **Scan Now** option in the portal
     1. or run **Start-AIPScan** PowerShell cmdlet
 
-> [!IMPORTANT]
-> Remember that the scanner runs a delta scan of the repository by default and the files that were already scanned in the previous scan cycle will be skipped unless the file was changed or you initiated a full rescan. Full rescan can be initiated by using **Rescan all files** option in the UI or by running **Start-AIPScan-Reset**.
+   > [!IMPORTANT]
+   > Remember that the scanner runs a delta scan of the repository by default and the files that were already scanned in the previous scan cycle will be skipped unless the file was changed or you initiated a full rescan. Full rescan can be initiated by using **Rescan all files** option in the UI or by running **Start-AIPScan-Reset**.
 
 6.  Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft 365 Compliance center.
 
 7. Choose **Create policy** and create a test DLP policy. See [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md) if you need help creating a policy. Be sure to run it in test until you are comfortable with this feature. Use these parameters for your policy:
     1. Scope the DLP on-premises scanner rule to specific locations if needed. If you scope **locations** to **All**, all files scanned by the scanner will be subject to the DLP rule matching and enforcement.
     1. When specifying the locations, you can use either exclusion or inclusion list. During public preview you cannot set both of them. You can either define that the rule is relevant only to paths matching one of the patterns listed in inclusion list or, all files, except the files matching the pattern listed in inclusion list. No local paths are supported. Here are some examples of valid paths:
-    - \\\server\share
-    - \\\server\share\folder1\subfolderabc
-    - \*\\folder1
-    - \*secret\*.docx
-    - \*secret\*.\*
-    - https:// sp2010.local/sites/HR
-    - https://\*/HR 
+      - \\\server\share
+      - \\\server\share\folder1\subfolderabc
+      - \*\\folder1
+      - \*secret\*.docx
+      - \*secret\*.\*
+      - https:// sp2010.local/sites/HR
+      - https://\*/HR 
     3. Here are some examples of unacceptable values use:
-    - \*
-    - \*\\a
-    - Aaa
-    - c:\
-    - C:\test
+      - \*
+      - \*\\a
+      - Aaa
+      - c:\
+      - C:\test
 
 > [!IMPORTANT]
 > The exclusion list takes precedence over the inclusions list.
