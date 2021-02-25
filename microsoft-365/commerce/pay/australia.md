@@ -23,7 +23,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 **Please pay in AUD and reference invoice number(s) on your payment remittance.**
 
-If you have an invoice billed by **Microsoft Regional Sales Pte Ltd**, please arrange for payments as follow:
+If you have an invoice billed by **Microsoft Regional Sales Pte Ltd**, use this bank information:
 
 Bank: Citibank, Sydney\
 SWIFT Code: CITIAU2X\

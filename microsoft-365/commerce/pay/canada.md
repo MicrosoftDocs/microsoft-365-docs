@@ -23,28 +23,28 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ## Check
 
-Payee: Microsoft Payments
-c/o T42912c
-P.O. Box 4286
-Postal STN A
+Payee: Microsoft Payments\
+c/o T42912c\
+P.O. Box 4286\
+Postal STN A\
 Toronto ON M5W 5W9
 
 ## Electronic Funds Transfer
 
-If you have an invoice billed by **Microsoft Corporation**, please arrange for payments as follow:
+If you have an invoice billed by **Microsoft Corporation**, use this bank information:
 
-Bank: Bank of America, Toronto
-SWIFT Code: BOFACATT
-Account Number: 45571239
-Account Name: MICROSOFT
-Bank ID: 241
-Branch: 56792
+Bank: Bank of America, Toronto\
+SWIFT Code: BOFACATT\
+Account Number: 45571239\
+Account Name: MICROSOFT\
+Bank ID: 241\
+Branch: 56792\
 Account Name: MICROSOFT
 
 If you have an invoice billed by **Microsoft Canada Inc.** for orders and consumption starting March 1, 2021, use this bank information:
 
-Bank: Citibank N.A., Canadian Branch​
-Routing Number: 032820012
-BIC/SWIFT Code: CITICATTBCH
-Account Number: 3003600001
+Bank: Citibank N.A., Canadian Branch​\
+Routing Number: 032820012\
+BIC/SWIFT Code: CITICATTBCH\
+Account Number: 3003600001\
 Account Name: MICROSOFT
