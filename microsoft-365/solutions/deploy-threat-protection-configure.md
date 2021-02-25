@@ -22,11 +22,11 @@ f1.keywords: NOCSH
 Follow these steps to configure threat protection across Microsoft 365.
 
 
-## Step 1: Set up multi-factor authentication and conditional access policies
+## Step 1: Set up multi-factor authentication and Conditional Access policies
 
-[Multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requires users to verify their identity with a phone call or authenticator app. [Conditional access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) define certain requirements that must be met in order for users to access apps and data in Microsoft 365. MFA and conditional access policies work together to protect your organization. For example, if someone attempts to sign in from a mobile device using an account that  is not enabled for MFA, and a conditional access policy requires MFA to be in effect, that user will be prevented from signing in.  
+[Multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requires users to verify their identity with a phone call or authenticator app. [Conditional access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) define certain requirements that must be met in order for users to access apps and data in Microsoft 365. MFA and Conditional Access policies work together to protect your organization. For example, if someone attempts to sign in from a mobile device using an account that  is not enabled for MFA, and a Conditional Access policy requires MFA to be in effect, that user will be prevented from signing in.  
 
-Microsoft has tested and recommends a specific set of conditional access and related policies for protecting access to all of your SaaS applications, especially Microsoft 365. Policies are recommended for baseline, sensitive, and highly regulated protection. Begin by implementing the policies for baseline protection. 
+Microsoft has tested and recommends a specific set of Conditional Access and related policies for protecting access to all of your SaaS applications, especially Microsoft 365. Policies are recommended for baseline, sensitive, and highly regulated protection. Begin by implementing the policies for baseline protection. 
 
 
 [![Common policies for configuring identity and device access](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
@@ -141,7 +141,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 1. [Set up the portal and other basic requirements](https://docs.microsoft.com/cloud-app-security/general-setup).
 2. [Set up cloud discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery) and [connect apps](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
-3. [Deploy conditional access app control for featured apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad).
+3. [Deploy Conditional Access app control for featured apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad).
 4. [Use the investigation tools and dashboards](https://docs.microsoft.com/cloud-app-security/investigate).
 
 ### More information about Microsoft Cloud App Security

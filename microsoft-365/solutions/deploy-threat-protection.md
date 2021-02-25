@@ -52,7 +52,7 @@ The following illustration depicts a recommended path for deploying these indivi
 
 |Solution/capabilities  |Description  |
 |---------|---------|
-|Multi-factor authentication and conditional access     |Protect against compromised identities and devices. Begin with this protection because it's foundational. The configuration recommended in this guidance includes Azure AD Identity Protection as a prerequisite.     |
+|Multi-factor authentication and Conditional Access     |Protect against compromised identities and devices. Begin with this protection because it's foundational. The configuration recommended in this guidance includes Azure AD Identity Protection as a prerequisite.     |
 |Microsoft Defender for Identity     |  A cloud-based security solution that leverages your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | 
 |Microsoft Defender for Office 365     | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protections for malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended next because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. <br><br>Note: Make sure to configure the threat protection capabilities that are included in all Office 365 subscriptions (Exchange Online Protection).       |
 |Microsoft Defender for Endpoint    | An endpoint protection platform that helps prevent, detect, investigate, and respond to advanced threats.  Defender for Endpoint can take some time to deploy, but configuration can be done in parallel with other capabilities.   |
@@ -65,7 +65,7 @@ The following illustration depicts a recommended path for deploying these indivi
 
 To make sure your organization has the best protection possible, set up and deploy your security solution to include the following steps:
 
-1. [Set up multi-factor authentication and conditional access policies](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
+1. [Set up multi-factor authentication and Conditional Access policies](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
 2. [Configure Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
 3. [Turn on Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
 4. [Configure Defender for Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
