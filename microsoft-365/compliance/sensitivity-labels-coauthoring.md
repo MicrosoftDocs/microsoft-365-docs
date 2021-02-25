@@ -84,7 +84,7 @@ Make sure you understand the following prerequisites before you turn on this fea
         - Android: Not yet supported
     
     - **Azure Information Protection unified labeling client and scanner:** 
-        - Version 2.10.xx that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
+        - A public preview version (minimum version of 2.10.45.0) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
