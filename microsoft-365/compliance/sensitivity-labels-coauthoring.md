@@ -118,11 +118,11 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they are warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
-- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [additional requirements or limitations](https://docs.microsoft.com/azure/information-protection/known-issues#co-authoring-public-preview). 
+- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [more requirements or limitations](https://docs.microsoft.com/azure/information-protection/known-issues#co-authoring-public-preview). 
 
 ## Known issues for this preview
 
-This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues that are expected to be addressed by the time the feature becomes generally available:
+This preview version of co-authoring for files encrypted with sensitivity labels has the following known issues:
 
 - Users won't be able to apply any labels in Office for the web for Word, Excel, and PowerPoint files that are bigger than 300 MB. For these files, you can use the Office desktop apps to apply a label but you must be the only person who has the file open.
 
