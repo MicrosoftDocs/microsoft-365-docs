@@ -420,6 +420,11 @@ For information about the availability key, see [Learn about the availability ke
 
 For information about rotating or rolling keys used with Customer Key, see [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). When you update the DEP to use the new version of the keys, you'll run the Set-M365DataAtRestEncryptionPolicy cmdlet as described earlier in this article.
 
+## Known Issues
+- We see that when Customer Key is enabled, creation of team from Microsoft Teams fails.
+
+## FAQs 
+<append the document attached in PR>
 ## Related articles:
 
 - [Service encryption with Customer Key](customer-key-overview.md)
