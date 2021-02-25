@@ -71,8 +71,12 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 Deploying FOOBAR is a multi-phase process. You can choose to install on one machine at a time, or use Intune or Group Policy for organization-wide deployments.
 
 1. [Prepare your devices](#prepare-your-devices).
-2. 
-
+2. [Basic Setup Single Machine Selfhost](#basic-setup-single-machine-selfhost)
+3. [Deploy using Intune](#deploy-using-intune)
+4. [Deploy using Group Policy](#deploy-using-group-policy)
+5. [Test the Extension](#test-the-extension)
+6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
+7. [Viewing Chrome DLP data in activity explorer](#viewing-chrome-dlp-data-in-activity-explorer) 
 
 
 ### Prepare your devices
@@ -82,7 +86,9 @@ Deploying FOOBAR is a multi-phase process. You can choose to install on one mach
     1. [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
     1. [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md)
 
-### Basic Setup (Single Machine Selfhost) - Recommended 
+### Basic Setup Single Machine Selfhost
+
+This is the recommended method. 
 
 
 1. Run the following script in PowerShell as an administrator
@@ -93,7 +99,9 @@ Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configur
 2.	Navigate to [Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-data-loss-preve/echcggldkblhodogklpincgchnpgcdco).
 3.	Install the extension.
 
-### Intune Setup (Organization Wide) - Optional 
+### Deploy using Intune
+
+Use this setup method for organization Wide deployments 
 
 ##### Enabling Required Registry Key via Intune
 
@@ -130,7 +138,9 @@ Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000;
 
 9.	Click create.
 
-#### Group Policy  Setup (Organization Wide) - Optional
+### Deploy using Group Policy
+
+If you don't want to use Intune, you can use group policies to deploy FOOBAR across your organization
 
 1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMXs into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 2.	Create a PowerShell script using this:
@@ -163,7 +173,7 @@ et-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configura
 7.	Under **Value**, add the following entry: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 8.	Select **OK** and then **Apply**.
 
-### Testing the Extension
+### Test the Extension
 
 #### Upload to cloud service, or access by unallowed browsers Cloud Egress  
 
@@ -187,7 +197,7 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
     - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
 
-### Viewing Chrome DLP alerts in DLP Alerts Management dashboard
+### Use the Alerts Management Dashboard to viewing Chrome DLP alerts
 
 1. Open the **Data loss prevention** page in the [Microsoft 365 Compliance center](https://compliance.microsoft.com) and select **Alerts**.
 
