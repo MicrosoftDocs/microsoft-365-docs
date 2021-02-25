@@ -118,8 +118,8 @@ A high confidence level returns the fewest false positives but might result in m
 - **high confidence**: value of 85, matched items will contain the fewest false positives but the most false negatives.  
 
 You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.
-The counts for confidence levels for a sensitive information type follow a true funnel, i.e. the matches for medium confidence will include the matches for high confidence patterns of the sensitive information type and the matches for low confidence will include matches for high confidence and medium confidence patterns of the sensitive information type.
 
+The counts for confidence levels for a sensitive information type follow a true funnel, i.e. the matches for medium confidence will include the matches for high confidence patterns of the sensitive information type and the matches for low confidence will include matches for high confidence and medium confidence patterns of the sensitive information type.
 
 ## Creating custom sensitive information types
 
@@ -134,18 +134,7 @@ To create custom sensitive information types in the Security & Compliance Center
 
 
 > [!NOTE]
-> Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management. We will be enabling the improved confidence levels for Microsoft Information Protection - Office clients, Microsoft 365 Endpoint Data Loss Prevention, Microsoft Cloud App Security, and AIP unified labeling client and on-premises scanner in the near future. Till then classification will continue to work as today.
-|Solutions|Availability|
-|:----------------------------|:------------|:------------|
-|Data Loss Prevention - Microsoft 365 services (Exchange, Teams, SharePoint & OneDrive)|Available|
-|Microsoft Information Protection - Microsoft 365 services (Exchange, Teams, SharePoint & OneDrive)|Available|
-|Data classification - Content explorer & Activity explorer|Available|
-|Microsoft Information Governance & Records Management|Available|
-|Communication Compliance|Available|
-|Microsoft Information Protection - Office clients|Coming soon|
-|Microsoft 365 Endpoint Data Loss Prevention|Coming soon|
-|Microsoft Cloud App Security|Coming soon|
-|AIP unified labeling client and on-premises scanner|Coming soon|
+> Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management. We will be enabling the improved confidence levels for Microsoft Information Protection - Office clients, Microsoft 365 Endpoint Data Loss Prevention, Microsoft Cloud App Security, and AIP unified labeling client and on-premises scanner in the near future. 
 
 > Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
 > - Chinese (simplified)
