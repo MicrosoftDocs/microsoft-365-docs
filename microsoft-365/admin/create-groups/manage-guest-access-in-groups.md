@@ -48,7 +48,7 @@ If you want to enable or disable guest access in groups, you can do so in the Mi
 
 ## Add guests to a Microsoft 365 group from the admin center
 
-If the guest already exists in your directory, you can add them to your groups from the Microsoft 365 admin center.
+If the guest already exists in your directory, you can add them to your groups from the Microsoft 365 admin center. (Groups with dynamic membership must be [managed in Azure Active Directory]((https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-create-rule).)
   
 1. In the admin center, go to the **Groups** > **Groups** page.
   
@@ -61,9 +61,6 @@ If the guest already exists in your directory, you can add them to your groups f
 If you want to add a guest to the directory directly, you can [Add Azure Active Directory B2B collaboration users in the Azure portal](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 If you want to edit any of a guest's information, you can [Add or update a user's profile information using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
-
-> [!NOTE]
-> Dynamic membership is supported for Microsoft 365 Groups. If you want to add an external user to a Microsoft 365 group using dynamic membership rules, the option to "View all and manage members"  will not be available in the admin center. Instead, you need to [create or update a dynamic group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-create-rule).
 
 ## See also
 
