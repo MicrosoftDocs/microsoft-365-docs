@@ -30,7 +30,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Defender for Office 365
 
-This article explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to the Microsoft 365 security center (security.microsoft.com).
+This article explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Microsoft Security and Compliance Center (protection.office.comv or securitycenter.microsoft.com), to the Microsoft 365 security center (security.microsoft.com).
 
 >[!NOTE]
 > Portal redirection capability is available for Office 365 E5 and Microsoft Defender for Office P2 customers only
@@ -53,7 +53,7 @@ To start routing accounts to the Microsoft 365 security center at security.micro
 
 1. Make sure you’re a global administrator or have security administrator permissions in Azure Active directory.
 2. [Sign in](https://security.microsoft.com/) to the Microsoft 365 security center.
-3. Navigate to **Settings** > **Endpoints** > **General** > **Portal redirection** or [Open the page here](https://security.microsoft.com/preferences2/portal_redirection).  
+3. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.  
 4. Toggle the Automatic redirection setting to **On**.
 5. Click **Enable** to apply automatic redirection to the Microsoft 365 security center portal.
 
@@ -63,7 +63,7 @@ To start routing accounts to the Microsoft 365 security center at security.micro
 ## Can I go back to using the former portal?
 If something isn’t working for you or if there’s anything you’re unable to complete through the Microsoft 365 security center portal, we want to hear about it. If you’ve encountered any issues with redirection, we encourage you to reach out to your PM buddy directly through private preview or let us know via the Give feedback submission form.
 
-To revert to the former Microsoft Defender for Endpoint portal:
+To revert to the former portal:
 
 1. [Sign in](https://security.microsoft.com/) to the Microsoft 365 security center as a global administrator or using and account with security administrator permissions in Azure Active directory.
 
@@ -79,10 +79,9 @@ Once disabled, accounts will no longer be routed to security.microsoft.com, and 
 
 ## Related information
 - [Microsoft 365 security center overview](overview-security-center.md)
-- [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
-- [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813)
+- [Microsoft Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
+- [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR versus SIEM infographic](https://afrait.com/blog/xdr-versus-siem/) 
 - [The New Defender](https://afrait.com/blog/the-new-defender/) 
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender) 
-- [Microsoft security portals and admin centers](portals.md) 
-- [Overview of the Microsoft 365 security center](overview-security-center.md)  
+- [Microsoft security portals and admin centers](portals.md)
