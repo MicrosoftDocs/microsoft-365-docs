@@ -90,7 +90,11 @@ Deploying FOOBAR is a multi-phase process. You can choose to install on one mach
 
 This is the recommended method. 
 
+<<<<<<< Updated upstream
 
+=======
+ <!-- CONNECT TO M365 USING THESE PROCEDURED -->
+>>>>>>> Stashed changes
 1. Run the following script in PowerShell as an administrator
 
 ```powershell
