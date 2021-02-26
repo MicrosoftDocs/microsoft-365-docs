@@ -75,7 +75,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
    2. Run the following PowerShell cmdlets:
 
       ```powershell
-      Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //e.g. Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
+      Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
