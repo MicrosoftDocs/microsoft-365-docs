@@ -71,6 +71,17 @@ Currently, Microsoft 365 Defender is *not* available to:
 - US Department of Defense
 - All US government institutions with commercial licenses
 
+## Mailbox Requirements
+
+The following are the primary ways you can use Microsoft 365 Defender for message protection:
+
+- In a Microsoft 365 Defender filtering-only scenario, Defender provides cloud-based email protection for your on-premises Exchange Server environment or any other on-premises SMTP email solution.
+
+- Microsoft 365 Defender can be enabled to protect Exchange Online cloud-hosted mailboxes. To learn more about Exchange Online, see the Exchange Online service description.
+
+- In a hybrid deployment, Microsoft 365 Defender can be configured to protect your messaging environment and control mail routing when you have a mix of on-premises and cloud mailboxes with Exchange Online Protection for inbound email filtering.
+
+
 ## Related topics
 - [Microsoft 365 Defender overview](microsoft-threat-protection.md)
 - [Turn on Microsoft 365 Defender](mtp-enable.md)
