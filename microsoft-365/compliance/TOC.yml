@@ -161,7 +161,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Use sensitivity labels in Office apps
+        - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Encryption
       items: 
@@ -242,6 +242,8 @@
             href: data-loss-prevention-policies.md
           - name: Learn about Endpoint data loss prevention
             href: endpoint-dlp-learn-about.md
+          - name: Learn about Microsoft 365 data loss prevention on-premises scanner (preview)
+            href: dlp-on-premises-scanner-learn.md  
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -250,6 +252,8 @@
             href: create-a-dlp-policy-from-a-template.md
           - name: Create, test, and tune a DLP policy
             href: create-test-tune-dlp-policy.md
+          - name: Get started with Microsoft 365 data loss prevention on-premises scanner (preview)
+            href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Endpoint DLP
@@ -274,6 +278,8 @@
               href: dlp-microsoft-teams.md
             - name: Using Endpoint data loss prevention
               href: endpoint-dlp-using.md
+            - name: Use Microsoft 365 data loss prevention on-premises scanner (preview)
+              href: dlp-on-premises-scanner-use.md  
             - name: Use notifications and policy tips in DLP policies
               href: use-notifications-and-policy-tips.md
             - name: What the DLP policy templates include
@@ -312,6 +318,8 @@
               href: retention-policies-yammer.md
             - name: Retention for Exchange
               href: retention-policies-exchange.md
+            - name: Limits for retention
+              href: retention-limits.md
         - name: Get started with retention
           href: get-started-with-retention.md
         - name: Create retention policies
