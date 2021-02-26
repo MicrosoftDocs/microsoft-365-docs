@@ -103,6 +103,12 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention polic
 
 For more information identifying organization-wide retention policies applied to an inactive mailbox and obtaining the GUID for a retention policy, see the "Get-OrganizationConfig" section in [How to identify the type of hold placed on a mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig).
 
+Alternatively, you can run the following command to remove the inactive mailbox from all organization-wide policies:
+
+```powershell
+Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
+```
+
 #### Remove an inactive mailbox from a specific location retention policy
 
 Run the following command in [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) to remove an inactive mailbox from an explicit retention policy.
