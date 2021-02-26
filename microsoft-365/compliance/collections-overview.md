@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "" 
+description: "Use collections in Advanced eDiscovery to search for and collect content that's relative to your case or investigation." 
 ---
 
 # Learn about collections in Advanced eDiscovery
@@ -36,21 +36,18 @@ With the release of collections in an Advanced eDiscovery, the **Searches** tab 
 
 To get started using collections in Advanced eDiscovery, here's a basic workflow and descriptions of each step in the process.
 
+![Collections workflow in Advanced eDiscovery](../media/CollectionsWorkflow.png)
 
+1. **Create and run a draft collection**. The first step is to create a draft collection and define the custodial and non-custodial data sources to search. You can also search other data sources that haven't been added to the case. After you add the data sources, you configure the search query to search the data sources for content relevant to the case. You can keywords, properties, and conditions to build search queries that return content that's likely most relevant to the case.
 
-1. **Create a draft collection**. The first step is to create a draft collection and define the custodial and non-custodial data sources to search. You can also search additional data sources that haven't been added to the case. After you add the data sources, you configure the search query to search the data sources for content relevant to the case. You can keywords, properties, and conditions to [build search queries](building-search-queries.md) that return content that's most likely relevant to the case.
+2. **Review estimates and statistics**. After you create a draft collection and run it, the next step is to view collection statistics to help you verify whether relevant content is being found and the content locations with the most hits. You can also preview a sample of the search results to further help you determine if the content is within scope of your investigation.
 
-2. **Get estimates and view statistics**. After you create a draft collection and run it, the next step is to view collection statistics to help you verify whether relevant content is being found and the content locations with the most hits. You can also preview a sample of the search results to further help you determine if the content is within scope of your investigation.
-
-3. **Edit a draft collection and rerun it**. Based on the estimates and statistics returned by the collection, you can edit the draft collection by changing the data sources that are searched and the search query to expand or narrow the collection. You can update and rerun the draft collection until you're confident that collection contains the content that's most relevant to your case.
+3. **Revise and rerun a draft collection**. Based on the estimates and statistics returned by the collection, you can edit the draft collection by changing the data sources that are searched and the search query to expand or narrow the collection. You can update and rerun the draft collection until you're confident that collection contains the content that's most relevant to your case.
 
 4. **Commit a draft collection to a review set**. When you're satisfied that the collection returns the type content that is relevant to the case, you can commit the collection to the review set. When you commit a collection, you have the option to add conversation threads, cloud attachments, and document versions to the review set, all of which might be relevant to the case. The following things happen when you commit a collection:
 
-   - Child items (such as email attachments, email signatures, and images) are extracted from the parent item (such as an email message or document), indexed, and added to the review set as separate files.
+   - Child items (such as email attachments, email signatures, and images) are extracted from a parent item (such as an email message, chat message, or document), indexed (in a process called *deep indexing*), and added to the review set as separate files.
 
-   - Deep indexing is performed on items from additional data sources (which are content locations other than custodial and non-custodial data sources previously added to the case).  
+   - Deep indexing is performed on items collected from additional data sources. These types of data sources are content locations other than the custodial and non-custodial data sources previously added to the case.
 
-   - Committed collections can't be edited or rerun. They can only be copied or deleted. This provides a historical record of the collected items that were added to a review set.
-
-5. **Review collection summary and statistics**.
-
+5. **Review collection summary and statistics**. After you commit a collection to a review set, information about the collection is retained, such as statistics about extracted items, deep indexing, the search query used for the collection, and the content locations that items were collected from. Also, committed collections can't be edited or rerun. You can only copy or delete them. Preserving collections provides a historical record of the collected items that were added to a review set.
