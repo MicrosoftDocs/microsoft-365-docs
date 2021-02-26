@@ -37,6 +37,12 @@ This article lists new features in the latest release of Microsoft Defender for 
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
+## February/March 2021 
+
+- Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer.md)
+- Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
+- Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer.md)
+
 ## December 2020
 
 - [Secure by default in Office 365](secure-by-default.md)
@@ -55,7 +61,7 @@ This article lists new features in the latest release of Microsoft Defender for 
 
 ## July/August 2020
 
-- [Experience improvements to the hunting experience](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- [Experience improvements to the hunting experience](threat-explorer.md#improvements-to-threat-hunting-experience) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 - [Easily apply recommended settings using preset security policies](preset-security-policies.md)
 
 ## March/April 2020

@@ -48,7 +48,27 @@ With this report, you can:
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (Defender for Office 365 Plan 2 only)
 - [Investigate malicious email, and more](#more-ways-to-use-explorer-and-real-time-detections)
 
-## Improvements to Threat Explorer and Real-time detections
+## Improvements to Threat Hunting Experience
+
+### Introduction of Alert ID for MDO alerts within Explorer/Real-time detections (Preview)
+Today, if you navigate from an alert to Threat Explorer, it opens a filtered view within the Explorer, with the view filtered by Alert policy ID (policy ID being a unique identifier for an Alert policy).
+We are making this integration more relevant by introducing the alert ID (see an example of alert ID below) in Threat Explorer and Real-time detections so that you see messages which are relevant to the specific alert, as well as a count of emails. You will also be able to see if a message was part of an alert, as well as navigate from that message to the specific alert.  
+
+Alert ID is available within the URL when you are viewing an individual alert; an example being `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+
+> [!div class="mx-imgBorder"]
+> ![Filtering for Alert ID](../../media/AlertID-Filter.png)
+
+> [!div class="mx-imgBorder"]
+> ![Alert ID in details flyout](../../media/AlertID-DetailsFlyout.png)
+
+ 
+### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days (Preview)  
+As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants. 
+This does not impact any production tenants for both P1 and P2/E5 customers, which already has the 30 day data retention and search capabilities. 
+
+### Updated limits for Export of records for Threat Explorer (Preview) 
+As part of this update, the number of rows for Email records that can be exported from Threat Explorer is increased from 9990 to 200,000 records. The set of columns that can be exported currently will remain the same, but the number of rows will increase from the current limit.
 
 ### Tags in Threat Explorer
 
@@ -83,6 +103,9 @@ The information about individual tags for sender and recipient also extends to e
 > ![Email Details tags](../../media/tags-flyout.png)
 
 Tags information is also shown in the URL clicks flyout. To view it, go to Phish or All Email view and then to the **URLs** or **URL Clicks** tab. Select an individual URL flyout to view additional details about clicks for that URL, including tags associated with that click.
+
+
+### Updated Timeline View
 
 > [!div class="mx-imgBorder"]
 > ![URL tags](../../media/tags-urls.png)
