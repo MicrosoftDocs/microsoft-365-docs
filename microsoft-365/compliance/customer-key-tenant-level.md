@@ -47,7 +47,7 @@ For Exchange Online, you can create a DEP that encrypts one or more user mailbox
 
 ## Set up Customer Key at the tenant level (public preview)
 
-These steps are similar but not identical to the steps for setting up Customer Key at the application level. You should only use this public preview with test data in test tenants. Do not use this release with production data or in your production environment. If you already have a production deployment of Customer Key, use these steps to set up Customer Key at the tenant level in a test environment. Once you have assigned a tenant level DEP to your tenant, you can start validation process and reachout to m365ck@microsoft.com with any questions or concerns. We have documented validation steps [here](https://aka.ms/CustomerKey/PublicPreviewValidation).
+These steps are similar but not identical to the steps for setting up Customer Key at the application level. You should only use this public preview with test data in test tenants. Do not use this release with production data or in your production environment. If you already have a production deployment of Customer Key, use these steps to set up Customer Key at the tenant level in a test environment. Once you have assigned a tenant level DEP to your tenant, you can start the validation process and reach out to m365ck@microsoft.com with any questions or concerns. You can also find documented validation steps in the public preview of [Validation Instructions for Data-at-rest Encryption for Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
 
 You'll complete most of these tasks by remotely connecting to Azure PowerShell. For best results, use version 4.4.0 or later of Azure PowerShell.
 
