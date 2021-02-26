@@ -16,17 +16,19 @@ search.appverid:
 description: "Understand how to use Microsoft Compliance Configuration Analyzer to get up and running quickly with Microsoft Compliance Manager."
 ---
 
-# Microsoft Compliance Configuration Analyzer for Compliance Manager
+# Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)
 
 **In this article:** Learn how to install and run the Microsoft Compliance Configure Analyzer tool to get quickly started with Microsoft Compliance Manger.
 
-## Microsoft Compliance Configuration Analyzer (MCCA) overview
+## Microsoft Compliance Configuration Analyzer (MCCA) (preview) overview
 
-The Microsoft Compliance Configuration Analyzer (MCCA) is a tool that can help you get started with [Microsoft Compliance Manager](compliance-manager.md). MCCA is a PowerShell-based utility that will fetch your organization’s current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and data governance.
+The Microsoft Compliance Configuration Analyzer (MCCA) is a preview tool that can help you get started with [Microsoft Compliance Manager](compliance-manager.md). MCCA is a PowerShell-based utility that will fetch your organization’s current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and data governance.
 
 MCCA can help you quickly see which improvement actions in Compliance Manger apply to your current Microsoft 365 environment. Each action identified by MCCA will give you recommendations for implementation, with direct links to Compliance Manager and the applicable solution to start taking corrective action.
 
 An additional resource for understanding MCCA is by visiting the [README instructions on GitHub](https://github.com/OfficeDev/MCCA#overview). This page provides detailed information about prerequisites and gives full installation instructions. You don’t need a GitHub account to access this page.
+
+**Availability**: MCCA is available to all organizations with Office 365 and Microsoft 365 licenses and US Government Community (GCC) Moderate customers, with plans underway to expand service to to GCC High customers.
 
 ## Install MCCA and run a report
 

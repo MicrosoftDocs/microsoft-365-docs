@@ -72,7 +72,7 @@ For more detailed information about how retention settings work for different wo
 
 ## Retention policies and retention labels
 
-You can use both retention policies and retention labels with label policies to assign your retention settings to content. 
+To assign your retention settings to content, use **retention policies** and **retention labels with label policies**. You can use just one of these methods, or combine them.
 
 Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level (folder, document, email).
 
@@ -219,7 +219,7 @@ You can then drill down into details by using [content explorer](data-classifica
 
 The Office 365 Security & Compliance Center has the equivalent overview information for retention labels from **Information governance** > **Dashboard**, and more detailed information from **Information governance** > **Label activity explorer**. For more information about monitoring retention labels from this older admin center, see the following documentation:
 - [View the data governance reports](view-the-data-governance-reports.md)
-- [View label usage with label analytics](label-analytics.md)
+- [Get started with data classification](data-classification-overview.md).
 - [View label activity for documents](view-label-activity-for-documents.md)
 
 #### Using Content Search to find all content with a specific retention label
@@ -444,7 +444,7 @@ If you currently use these older features, they will continue to work side-by-si
     
 - [Configuring in place records management](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retention only) 
     
-- [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (deletion only) 
+- [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (deletion only)
     
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
      

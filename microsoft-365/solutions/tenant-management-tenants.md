@@ -11,6 +11,8 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: "Deploy and manage single or multiple Microsoft 365 tenants, with options for multi-geo and moving locations."

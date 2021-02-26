@@ -11,6 +11,8 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- m365solution-overview
+- tenant-management
 ms.custom:
 - Ent_Solutions
 description: "An overview of the planning, deployment, and ongoing operation of your Microsoft 365 tenants."

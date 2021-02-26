@@ -119,41 +119,88 @@ Configure the proximity setting to have a range of 0 through 3.
 
    ![Proximity example](../media/content-understanding/proximity-example.png)</br>
 
+
+## Configure where phrases occur in the document
+
+When you create an explanation, by default the entire document is searched for the phrase you are trying to extract. However, you can use the <b>Where these phrases occur</b> advanced setting to help in isolating a specific location in the document that a phrase occurs. This is useful in situations where similar instances of a phrase might appear somewhere else in the document, and you want to make sure that the correct one is selected. Referring to our Medical Referral document example, the **Referring Doctor** is always mentioned in the first paragraph of the document. With the <b>Where these phrases occur</b> setting, in this example you can configure your explanation to search for this label only in the beginning section of the document, or any other location in which it might occur.
+
+   ![Where these phrases occur setting](../media/content-understanding/phrase-location.png)</br>
+
+You can choose the following options for this setting:
+
+- Anywhere in the file: The entire document is searched for the phrase.
+- Beginning of the file:  The document is searched from the beginning to the phrase location.</br> 
+   ![Beginning of file](../media/content-understanding/beginning-of-file.png)</br>
+In the viewer, you can manually adjust the select box to include the location where the phase occurs. The <b>End position</b> value will update to show the number of tokens your selected area includes. Note that you can update the End position value as well to adjust the selected area.</br>
+   ![Beginning of file position box](../media/content-understanding/beginning-box.png)</br>
+
+- End of the file:  The document is searched from the end to the phrase location.</br> 
+   ![End of file](../media/content-understanding/end-of-file.png)</br>
+In the viewer, you can manually adjust the select box to include the location where the phase occurs. The <b>Starting position</b> value will update to show the number of tokens your selected area includes. Note that you can update the Starting position value as well to adjust the selected area.</br> 
+   ![End of file end box](../media/content-understanding/end-box.png)</br>
+- Custom range:  The document is searched in a specified range within the it for the phrase location.</br> 
+   ![Custom range](../media/content-understanding/custom-file.png)</br>
+In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a <b>Start</b> and an <b>End</b> position. These values represent the number of tokens from the begging of the document. While you can manually enter in these values, it is easier to manually adjust the select box in the viewer.</br> 
+   
 ## Use explanation templates
 
-While you can manually add various pattern list values for your explanation, it can be easier to use the templates provided to you in the explanation library.
+While you can manually add various phrase list values for your explanation, it can be easier to use the templates provided to you in the explanation library.
 
-For example, instead of manually adding all the variations for *Date*, you can use the pattern list template for *Date* as it already includes a number of pattern lists values:</br>
+For example, instead of manually adding all the variations for *Date*, you can use the phrase list template for *Date* as it already includes a number of phrase lists values:</br>
 
    ![Explanation library](../media/content-understanding/explanation-template.png)</br>
  
-The explanation library includes commonly used pattern list explanations, including:</br>
+The explanation library includes commonly used phrase list explanations, including:</br>
 
 - Date</br>
 - Date (numeric)</br>
 - Time</br>
 - Number</br>
+- Percentage</br>
 - Phone number</br>
 - Zip code</br>
 - First word of sentence</br>
+- End of sentence</br>
 - Credit card</br>
 - Social security number</br>
+- Checkbox</br>
+- Currency</br>
+- Email CC</br>
+- Email date</br>
+- Email greeting</br>
+- Email recipient</br>
+- Email sender</br>
+- Email subject</br>
 
-Note that the explanation library also includes templates for phrase list explanations:
-- End of sentence
-- Currency
+The explanation library also includes three automatic template types that work with the data you've labeled in your example files:
 
+- After label: The words or characters that occur after the labels in the example files.</br>
+- Before label: The words or characters that occur before the labels in the example files.</br>
+- Labels: Up to the first 10 labels from the example files.</br>
+
+To give you an example of how automatic templates work, in the following example file, we will use the Before Label explanation template to help give the model more information to get a more accurate match.
+
+   ![Example file](../media/content-understanding/before-label.png)</br>
+
+When you select the Before Label explanation template, it will look for the first set of words that appear before the label in your example files. In the example, the words that are identified in the first example file is "As of".
+
+   ![Before label template](../media/content-understanding/before-label-explanation.png)</br>
+
+You can select <b>Add</b> to create an explanation from the template.  As you add more example files, additional words will be identified and added to the phrase list.
+
+   ![Add the label](../media/content-understanding/before-label-add.png)</br>
+ 
 #### To use a template from the explanation library
 
 1. From the **Explanations** section of your model's **Train** page, select **New**, then select **From a template**.</br>
 
-   ![Create from template](../media/content-understanding/from-template.png)</br>
+   ![Add Before Label](../media/content-understanding/from-template.png)</br>
 
 2.  On the **Explanation templates** page, select the explanation you want to use, then select **Add**.</br>
 
        ![Select a template](../media/content-understanding/phone-template.png)</br>
 
-3. The information for the template you selected displays on the **Create an explanation** page. If needed, edit the explanation name and add or remove items from the pattern list. </br> 
+3. The information for the template you selected displays on the **Create an explanation** page. If needed, edit the explanation name and add or remove items from the phrase list. </br> 
 
    ![Edit template](../media/content-understanding/phone-template-live.png)</br>
 

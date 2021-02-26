@@ -20,6 +20,8 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 The following table provides a list of features that are available in the Exchange Online Protection (EOP) hosted email filtering service.
 
