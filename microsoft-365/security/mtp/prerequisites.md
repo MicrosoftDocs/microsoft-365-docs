@@ -71,7 +71,7 @@ Currently, Microsoft 365 Defender is *not* available to:
 - US Department of Defense
 - All US government institutions with commercial licenses
 
-## Mailbox Requirements
+## Mailbox requirements
 
 The following are the primary ways you can use Microsoft 365 Defender for message protection:
 
