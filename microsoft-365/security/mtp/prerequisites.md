@@ -77,7 +77,7 @@ The following are the primary ways you can use Microsoft 365 Defender for messag
 
 - In a Microsoft 365 Defender filtering-only scenario, Defender provides cloud-based email protection for your on-premises Exchange Server environment or any other on-premises SMTP email solution.
 
-- Microsoft 365 Defender can be enabled to protect Exchange Online cloud-hosted mailboxes. To learn more about Exchange Online, see the Exchange Online service description.
+- Microsoft 365 Defender can be enabled to protect Exchange Online cloud-hosted mailboxes. To learn more about Exchange Online, see the [Exchange Online service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
 - In a hybrid deployment, Microsoft 365 Defender can be configured to protect your messaging environment and control mail routing when you have a mix of on-premises and cloud mailboxes with Exchange Online Protection for inbound email filtering.
 
