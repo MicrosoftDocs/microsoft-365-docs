@@ -43,7 +43,7 @@ You can get a view into your user's email activity by looking at the **Activity*
   
 ![Email activity report](../../media/2317f03d-2d71-46bf-a5c7-d94dbc8cfbe1.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **Email activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |

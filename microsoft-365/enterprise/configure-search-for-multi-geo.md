@@ -25,15 +25,11 @@ For example, a user in one geo location can search for content stored in another
 
 These clients can return results from all geo locations:
 
--   OneDrive for Business
-
--   Delve
-
--   The SharePoint home page
-
--   The Search Center
-
--   Custom search applications that use the SharePoint Search API
+- OneDrive for Business
+- Delve
+- The SharePoint home page
+- The Search Center
+- Custom search applications that use the SharePoint Search API
 
 ### OneDrive for Business
 
@@ -131,14 +127,12 @@ Some of the search features you might be familiar with, aren't supported in a mu
 
 All the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.
 
-<img src="../media/configure-search-for-multi-geo-image1-1.png" />
+![Diagram showing how SharePoint Search REST APIs interact with the search indexes](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.
 2. The query is sent to all geo locations in the tenant.
 3. Search results from each geo location are merged and ranked.
 4. The client gets unified search results.
-
-
 
 <span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Notice that we don't merge the search results until we've received results from all the geo locations. This means that multi-geo searches have additional latency compared to searches in an environment with only one geo location.
 
@@ -147,29 +141,32 @@ All the search clients use the existing SharePoint Search REST APIs to interact 
 
 Each Search Center has several verticals and you have to set up each vertical individually.
 
-1.  Ensure that you perform these steps with an account that has permission to edit the search results page and the Search Result Web Part.
+1. Ensure that you perform these steps with an account that has permission to edit the search results page and the Search Result Web Part.
 
-2.  Navigate to the search results page (see the [list](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) of search results pages)
+2. Navigate to the search results page (see the [list](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) of search results pages)
 
-3.  Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.
+3. Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.
 
-     ![](../media/configure-search-for-multi-geo-image2.png)
-1.  In the Search Results Web Part, move the pointer to the upper, right corner of the web part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page. ![](../media/configure-search-for-multi-geo-image3.png)
+   ![Edit page selection in Settings](../media/configure-search-for-multi-geo-image2.png)
 
-1.  In the Web Part tool pane, in the **Settings** section, under **Results control settings**, select **Show Multi-Geo results** to get the Search Results Web Part to show results from all geo locations.
+4. In the Search Results Web Part, move the pointer to the upper, right corner of the web part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page.
 
-2.  Click **OK** to save your change and close the Web Part tool pane.
+   ![Edit Web Part selection](../media/configure-search-for-multi-geo-image3.png)
 
-3.  Check your changes to the Search Results Web Part by clicking **Check-In** on the Page tab of the main menu.
+5. In the Web Part tool pane, in the **Settings** section, under **Results control settings**, select **Show Multi-Geo results** to get the Search Results Web Part to show results from all geo locations.
 
-4.  Publish the changes by using the link provided in the note at the top of the page.
+6. Click **OK** to save your change and close the Web Part tool pane.
+
+7. Check your changes to the Search Results Web Part by clicking **Check-In** on the Page tab of the main menu.
+
+8. Publish the changes by using the link provided in the note at the top of the page.
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## Get custom search applications to show results from all or some geo locations
 
 Custom search applications get results from all, or some, geo locations by specifying query parameters with the request to the SharePoint Search REST API. Depending on the query parameters, the query is fanned out to all geo locations, or to some geo locations. For example, if you only need to query a subset of geo locations to find relevant information, you can control the fan out to only these. If the request succeeds, the SharePoint Search REST API returns response data.
 
-**Requirement**
+### Requirement
 
 For each geo location, you must ensure that all users in the organization have been granted the **Read** permission level for the root website (for example contoso**APAC**.sharepoint.com/ and contoso**EU**.sharepoint.com/). [Learn about permissions](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
@@ -226,14 +223,12 @@ MultiGeoSearchStatus – This is a property that the SharePoint Search API retur
 <td align="left">Partial</td>
 <td align="left">Partial results from one or more geo locations. The results are incomplete due to a transient error.</td>
 </tr>
-
 </tbody>
 </table>
 
 ### Query using the REST service
 
 With a GET request, you specify the query parameters in the URL. With a POST request, you pass the query parameters in the body in JavaScript Object Notation (JSON) format.
-
 
 #### Request headers
 
@@ -265,8 +260,9 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 #### Sample POST request that's fanned out to **all** geo locations
 
+```text
     {
-        "request": {
+    "request": {
             "__metadata": {
             "type": "Microsoft.Office.Server.Search.REST.SearchRequest"
         },
@@ -285,11 +281,11 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
         "ClientType": "my_client_id"
         }
     }
-
+```
 
 #### Sample POST request that's fanned out to **some** geo locations
 
-
+```text
     {
         "request": {
             "Querytext": "SharePoint",
@@ -314,13 +310,15 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
             }
         }
     }
+```
 
 ### Query using CSOM
 
 Here's a sample CSOM query that's fanned out to **all** geo locations:
 
-    var keywordQuery = new KeywordQuery(ctx);
-    keywordQuery.QueryText = query.SearchQueryText;
-    keywordQuery.ClientType = <enter a string here>;
-    keywordQuery["EnableMultiGeoSearch"] = true;
-
+```text
+var keywordQuery = new KeywordQuery(ctx);
+keywordQuery.QueryText = query.SearchQueryText;
+keywordQuery.ClientType = <enter a string here>;
+keywordQuery["EnableMultiGeoSearch"] = true;
+```

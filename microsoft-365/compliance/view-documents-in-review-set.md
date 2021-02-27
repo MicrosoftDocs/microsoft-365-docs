@@ -1,23 +1,23 @@
 ---
-title: View documents in a review set - eDiscovery
+title: View documents in a review set in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
-description: Choose how you view content in Advanced eDiscovery, such as text, annotate, converted, or native view.
+description: "Choose how you view content in Advanced eDiscovery, such as text, annotate, converted, or native view."
 ms.custom: seo-marvel-mar2020
 ---
 
-# View documents in a review set
+# View documents in a review set in Advanced eDiscovery
 
 Advanced eDiscovery displays content via several viewers each with different purposes. The various viewers can be used by clicking on any document within a review set. The viewers currently provided are:
 

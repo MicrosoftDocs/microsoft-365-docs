@@ -4,6 +4,7 @@ description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
@@ -22,12 +23,12 @@ Customers can contact Microsoft Managed Desktop operations for:
 Microsoft Managed Desktop support includes:
 
 - A team of engineers dedicated to Microsoft Managed Desktop devices
-- Support options for end users with Microsoft Managed Desktop devices
+- Support options for users with Microsoft Managed Desktop devices
 - Grants limited administrative access to Microsoft Managed Desktop devices for engineers managing Microsoft Managed Desktop devices 
 
 Supported products:
 
-- Windows 10 with Microsoft Defender Advanced Threat Protection 
+- Windows 10 with Microsoft Defender for Endpoint
 - These Microsoft 365 Apps for enterprise apps: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store for Business 
 - OneDrive for Business client 
@@ -43,4 +44,4 @@ Support details:
 ## Related topics
 
 - [Learn how IT administrators can get support](../working-with-managed-desktop/admin-support.md)
-- [Learn how end users can get support](../working-with-managed-desktop/end-user-support.md)
+- [Learn how users can get support](../working-with-managed-desktop/end-user-support.md)

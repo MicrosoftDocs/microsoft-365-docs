@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,9 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: "Learn how to cancel your Microsoft 365 for business trial or paid subscription."
+ms.date: 
 ---
 
 # Cancel your subscription
@@ -30,16 +27,20 @@ description: "Learn how to cancel your Microsoft 365 for business trial or paid 
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-*Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Microsoft 365 for business trial or paid subscription online in the Microsoft 365 admin center at any time. If you have more than 25 licenses assigned to users, [call support to cancel your subscription](../../admin/contact-support-for-business-products.md).
+*Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Microsoft 365 for business trial or paid subscription online in the Microsoft 365 admin center at any time. If you have more than 25 licenses assigned to users, reduce it to less than 25 or [call support to cancel your subscription](../../admin/contact-support-for-business-products.md).
 
 *Refund:* Any prorated credit will be returned to you within the next billing cycle.
 
 > [!NOTE]
 > If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one of them will not impact the purchased licenses or services inside the other subscriptions.
+
+## Before you begin
+
+You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Steps to cancel your subscription
 
@@ -47,13 +48,12 @@ If you added your own domain name to use with your subscription, you must remove
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, then select the **Products** tab.
+2. Find the subscription that you want to cancel. Select **More actions** (three dots), then select **Cancel subscription**.
+3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
+4. Select **Save**.
 
-2. Find the subscription that you want to cancel, and under **Settings & Actions**, select **Cancel subscription**.
-
-3. Review the important dates, provide feedback about why you are canceling, then select **Cancel subscription**.
-
-    Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
+Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ If you added your own domain name to use with your subscription, you must remove
 
 4. Review the important dates, provide feedback about why you are canceling, then select **Cancel subscription**.
 
-    Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
+    Your subscription now appears in a **Disabled** state and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -91,7 +91,9 @@ If you added your own domain name to use with your subscription, you must remove
 
 ## What happens when you cancel a subscription
 
-If you cancel a subscription before the end of your term, the subscription moves directly into a disabled state. For most subscriptions, in most countries and regions, the disabled state lasts 90 days. Admins can still access and back up data for their organization while the subscription is in the disabled state, but we recommend that admins [back up their data](back-up-data-before-switching-plans.md) before they cancel a subscription, especially if it's their only subscription. Any data that you leave behind may be deleted after 90 days and will be deleted no later than 180 days after cancellation.
+If you cancel a subscription before the end of your term, the subscription status moves directly into a disabled state. For most subscriptions, in most countries and regions, the disabled state lasts 90 days. Admins can still access and back up data for their organization while the subscription is in the disabled state, but we recommend that admins [back up their data](back-up-data-before-switching-plans.md) before they cancel a subscription, especially if it's their only subscription. Admins can also reactivate the subscription while it's in the disabled state.
+
+After 90 says, the subscription moves into the deleted state. Any data that you leave behind may be deleted after those 90 days is deleted no later than 180 days after cancellation. You can't remove a payment method from a canceled subscription until after it reaches the deleted state.
 
 ### What to expect for you and your users if you cancel a subscription
   
@@ -142,10 +144,12 @@ When the cancellation becomes effective, your users lose access to their data. B
 
 If you canceled your subscription, and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 applications display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). To avoid any confusion, have your users [uninstall Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) from their machines.
 
-## Related articles
+## Next steps
 
-[Renew your subscription](renew-your-subscription.md)
+If you want to completely close your account with Microsoft, see [Close your account](../close-your-account.md).
 
-[Reactivate your subscription](reactivate-your-subscription.md)
+## Related content
 
-[Move users to a different subscription](move-users-different-subscription.md)
+[Renew your subscription](renew-your-subscription.md) (article)\
+[Reactivate your subscription](reactivate-your-subscription.md) (article)\
+[Move users to a different subscription](move-users-different-subscription.md) (article)

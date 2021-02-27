@@ -3,7 +3,7 @@ title: Insider risk management cases
 description: Learn about insider risk management cases in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -122,6 +122,15 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 4. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
 5. **Case actions**: Options for resolving the case are on the case action toolbar. You can resolve a case, send an email notice to the user, or escalate the case for a data or user investigation.
 
+### Activity explorer (preview)
+
+>[!IMPORTANT]
+>The Activity explorer tab is available in the case management area for users with triggering events after this feature is available in your organization.
+
+The **Activity explorer** tab allows risk analysts and investigators to review activity details associated with risk alerts. For example, as part of the case management actions, investigators and analysts may need to review all the risk activities associated with the case for more details. With the **Activity explorer**, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts.
+
+For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-alerts.md#activity-explorer-preview) article.
+
 ### Content Explorer
 
 The **Content Explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when a user downloads hundreds of files from SharePoint Online and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.
@@ -145,15 +154,13 @@ To add a note to a case:
 
 ### Contributors
 
-The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case.
+The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case. Only users assigned the **Insider Risk Management Investigators** role have permission to view files and messages in the Content Explorer.
 
-All insider risk management cases must be managed with appropriate access controls in place to maintain confidentiality and integrity of the investigation. To help maintain access control of cases, users are assigned one of two types of access to cases:
+Temporary access to a case can be granted by adding a user as a contributor. Contributors have all case management control on the specific case except:
 
-- **Permanent access**: Permanent access is automatically granted to users with the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles when the case is created from an alert. Permanent access grants full control of the case for the lifetime of the case and grants the ability to add other case contributors.
-- **Temporary access**: Temporary access is only granted to users by contributors that have permanent access for the case. Typically, this access level is granted to user that needs to add notes to a case. Contributors with temporary access have all case management control except:
-    - Permission to confirm or dismiss alerts
-    - Permission to edit the contributors for cases
-    - Permission to view files and messages in the Content Explorer
+- Permission to confirm or dismiss alerts
+- Permission to edit the contributors for cases
+- Permission to view files and messages in the Content Explorer
 
 To add a contributor to a case:
 
@@ -161,8 +168,7 @@ To add a contributor to a case:
 2. Select a case, then select the **Contributors** tab.
 3. Select **Add contributor**.
 4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list. This list is generated from the Azure Active Directory of your tenant subscription.
-5. On the **Add contributor** dialog, select the access level for the contributor. You can select **Permanent** or **Temporary**.
-6. Select **Add** to add the user as a contributor or select **Cancel** close the dialog without adding the user as a contributor.
+5. Select **Add** to add the user as a contributor or select **Cancel** close the dialog without adding the user as a contributor.
 
 ## Case actions
 
@@ -170,9 +176,9 @@ Risk analysts and investigators can take action on a case in one of several meth
 
 ### Send email notice
 
-In most cases, user actions that create insider risk alerts are inadvertent or accidental. Sending a reminder notice to the user via email is an effective method for documenting case review and action, as well as a method to remind users of corporate policies or point them to refresher training. Notices are generated from [notice templates that you create](insider-risk-management-notices.md) for your insider risk management infrastructure.
+In most cases, user actions that create insider risk alerts are inadvertent or accidental. Sending a reminder notice to the user via email is an effective method for documenting case review and action, and is a method to remind users of corporate policies or point them to refresher training. Notices are generated from [notice templates that you create](insider-risk-management-notices.md) for your insider risk management infrastructure.
 
-It's important to remember that sending an email notice to a user ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to a user to look for additional risk activities without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step after sending a notice.
+It's important to remember that sending an email notice to a user ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to a user to look for more risk activities without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step after sending a notice.
 
 To send a notice to the user assigned to a case:
 
@@ -191,15 +197,46 @@ To escalate a case to a user investigation:
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Escalate for investigation** button on the case action toolbar.
 3. On the **Escalate for investigation** dialog, enter a name for the new user investigation. If needed, enter notes about the case and select **Escalate**.
+4. Review the notice fields and update as appropriate. The values entered here will override the values on the template.
 5. Select **Confirm** to create the user investigation case or select **Cancel** to close the dialog without creating a new user investigation case.
 
 After the insider risk management case has been escalated to a new user investigation case, you can review the new case in the **eDiscovery** > **Advanced** area in the Microsoft 365 compliance center.
 
-### Share a case
+### Run automated tasks with Power Automate flows for the case
 
-Sharing an insider risk management case allows investigator and reviews to easily collaborate with other compliance stakeholders in your organization. You can quickly share a link to an insider risk management case with external stakeholders from the case management area. To access the insider risk management case from the link, stakeholders must be included in any of the insider risk management role groups.
+Using recommended Power Automate flows, risk investigators and analysts can quickly take action to:
 
-The following sharing options are available: 
+- Request information from HR or business about a user in an insider risk case
+- Notify manager when a user has an insider risk alert
+- Add calendar reminder to follow up on an insider risk case
+- Create a record for an insider risk management case in ServiceNow
+
+To run, manage, or create Power Automate flows for an insider risk management case:
+
+1. Select **Automate** on the case action toolbar. 
+2. Choose the Power Automate flow to run, then select **Run flow**. 
+3. After the flow has completed, select **Done**.
+
+To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).
+
+### View or create a Microsoft Teams team for the case
+
+When Microsoft Teams integration for insider risk management is enabled in settings, a Microsoft Teams team is automatically created every time an alert is confirmed and a case is created. Risk investigators and analysts can quickly open Microsoft Teams and navigate directly to the team for a case by selecting **View Microsoft Teams team** on the case action toolbar.
+
+For cases opened before enabling Microsoft Team integration, risk investigators and analysts can create a new Microsoft Teams team for a case by selecting **Create Microsoft Teams team** on the case action toolbar.
+
+When a case is resolved, the associated Microsoft Team will be automatically archive (hidden and turned to read-only).
+
+To learn more about Microsoft Teams for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview).
+
+### Share the case
+
+Sharing an insider risk management case allows risk investigators and analysts to easily collaborate with other compliance stakeholders in your organization. You can quickly share a link to an insider risk management case with external stakeholders from the case management area. To access the insider risk management case from the link, stakeholders must be included in any of the insider risk management role groups.
+
+>[!NOTE]
+>Thank you for your feedback and support during the preview of the ServiceNow connector. We've decided to end the preview of ServiceNow connector and discontinue support in insider risk management on November 30, 2020. We are actively evaluating alternative methods to provide customers with ServiceNow integration in insider risk management.
+
+The following sharing options are available:
 
 - **ServiceNow**: After configuring the Microsoft 365 ServiceNow connector for your Microsoft 365 organization, you can easily share a link to the case, open an incident, or request a change with your ServiceNow organization. To share the case with ServiceNow, select **Share** > **ServiceNow** from the case action. ServiceNow integration with insider risk management supports includes the following case information and actions:
     - **Task name**: The name for the new ServiceNow task.

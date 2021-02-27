@@ -1,75 +1,94 @@
 ---
 title: What's new in Microsoft Secure Score
-description:  Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
-ms.prod: microsoft-365-enterprise
+description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 security center.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance  
+  - M365-security-compliance
 ms.topic: article
 search.appverid: 
-- MOE150
-- MET150
-ms.custom:
-- seo-marvel-apr2020
-- seo-marvel-jun2020
+  - MOE150
+  - MET150
+ms.custom: 
+  - seo-marvel-apr2020
+  - seo-marvel-jun2020
+ms.technology: m365d
 ---
 
 # What's new in Microsoft Secure Score
 
-To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-## July 2020
+To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-### Adding improvement actions for Azure Advanced Threat Protection
+Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
+    
+## February 2021
 
-- Risky lateral movement paths
-- Unsecure account attributes
-- Enable security features on Active Directory trusts
-- Remove unsecure SID history attributes from entities
+### Compatibility with Graph API
 
-## June 2020
+Microsoft Secure Score recommendations delivered via Graph API will look and be weighted the same as the recommendations you currently see in the Microsoft 365 security center.
 
-### Removed improvement action for Microsoft Defender Advanced Threat Protection
+## January 2021
 
-* Turn on Attack Surface Reduction rules
+### Added our first security recommendation for Microsoft Teams
 
-### Added improvement actions for Microsoft Defender Advanced Threat Protection
+Microsoft Teams customers will see "Restrict anonymous users from joining meetings" as a new improvement action in Secure Score.
 
-* Block Adobe Reader from creating child processes
-* Use advanced protection against ransomware
-* Block all Office applications from creating child processes
-* Block Office applications from creating executable content
-* Block JavaScript or VBScript from launching downloaded executable content
-* Block execution of potentially obfuscated scripts
-* Block executable content from email client and webmail
-* Block Office communication application from creating child processes
-* Block untrusted and unsigned processes that run from USB
-* Block persistence through WMI event subscription
-* Block Office applications from injecting code into other processes
-* Block executable files from running unless they meet a prevalence, age, or trusted list criterion
-* Block process creations originating from PSExec and WMI commands
-* Block credential stealing from the Windows local security authority subsystem (lsass.exe)
-* Block Win32 API calls from Office macros
+## December 2020
 
-## Incompatibility with Identity Secure Score and Graph API
+### Added six accounts-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
-In the recent release of Microsoft Secure Score, an improved scoring model has been released. These changes allow for a more flexible and accurate view of your security posture. However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API.
+- Set 'Minimum password length' to '14 or more characters'
+- Set 'Enforce password history' to '24 or more password(s)'
+- Set 'Maximum password age' to '60 or fewer days, but not 0'
+- Set 'Minimum password age' to '1 or more day(s)'
+- Disable the built-in Administrator account
+- Disable the built-in Guest account
 
-In time, Identity Secure Score and the Graph API will adopt the new scoring model. Until then, customers will see differences in the scores reported by Microsoft Secure Score, Identity Secure Score, and the Graph API. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
+## November 2020
+
+### Removed the ability to create ServiceNow tickets through Secure Score 
+
+The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** is no longer available. Thank you for your feedback and continued support while we determine next steps.
+
+### Added three services-related improvement actions for Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
+
+- Fix unquoted service path for Windows services
+- Change service executable path to a common protected location
+- Change service account to avoid cached password in windows registry
+
+## October 2020
+
+### Remove improvement action related to Microsoft Defender for Endpoint
+
+- Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
+
+## August 2020
+
+### Updated improvement action for Azure Active Directory
+
+- Enable policy to block legacy authentication
+
+## Incompatibility with Identity Secure Score
+
+In the recent release of Microsoft Secure Score, an improved scoring model has been released. These changes allow for a more flexible and accurate view of your security posture. However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score.
+
+In time, Identity Secure Score will adopt the new scoring model. Until then, customers will see differences in the scores reported by Microsoft Secure Score and the Identity Secure Score. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
 
 ## Updated improvement actions
 
 - Added Azure Active Directory improvement actions
-- Added Azure Advanced Threat Protection improvement actions
-- Support for Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
+- Added Microsoft Defender for Identity improvement actions
+- Support for Microsoft Defender for Endpoint [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
     - All released security recommendations supplied by TVM are now available
 
 ## Updated interface and functionality
@@ -83,7 +102,7 @@ In time, Identity Secure Score and the Graph API will adopt the new scoring mode
 
 ## We want to hear from you
 
-If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
+If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
 
 ## Related resources
 

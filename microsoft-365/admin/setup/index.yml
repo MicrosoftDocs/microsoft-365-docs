@@ -28,14 +28,10 @@ landingContent:
             url: ../admin-overview/sign-up-for-office-365.md
       - linkListType: video
         links:
-          - text: Sign up and set up Microsoft Business Basic
-            url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-          - text: Sign up for Microsoft Business Standard
-            url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
           - text: Sign up for Microsoft Business Premium
             url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
   # Card (optional)
-  - title: Guided set up
+  - title: Guided setup
     linkLists:
       - linkListType: overview
         links:

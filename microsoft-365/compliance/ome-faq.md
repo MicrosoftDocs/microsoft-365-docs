@@ -65,7 +65,7 @@ The new capabilities for Office 365 Message Encryption are an evolution of the e
   
 **Comparison of legacy OME, IRM, and new OME capabilities**
 
-|**Capability**|**Previous versions of OME**|**IRM**|**New OME capabilities**|
+| Capability | Previous versions of OME | IRM | New OME capabilities |
 |:-----|:-----|:-----|:-----|
 |**Sending an encrypted email**|Only through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through mail flow rules|
 |**Rights management**|-|Do Not Forward option and custom templates|Do Not Forward option, encrypt-only option, default and custom templates|
@@ -91,15 +91,19 @@ On-premises users can send encrypted mail using Exchange Online mail flow rules.
   
 ## What email client do I need to use in order to create an OME encrypted message? What applications are supported for sending protected messages?
 
-You can create protected messages from Outlook 2016, and Outlook 2013 for Windows and Mac, and from Outlook on the web.
+You can create protected messages from Outlook 2016, Outlook 2013 for Windows and Mac, and from Outlook on the web. For more information on sending encrypted messages, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us).
   
 ## What email clients are supported to read and reply to protected emails?
 
 Microsoft 365 users can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS). You can also use the iOS native mail client if your organization allows it. If you are not a Microsoft 365 user, you can read and reply to encrypted messages on the web through your web browser.
-  
+
+## What email clients support the encrypt-only protected emails?
+
+Microsoft 365 users can use Outlook for PC versions 2019 and Microsoft 365 to create mail protected with the encrypt-only policy.  That means messages that have the new encrypt-only policy applied can be read directly in Outlook on the web, in Outlook for iOS and Android, and now Outlook for PC versions 2019 and Microsoft 365.
+
 ## Is there a size limit for messages you can send with OME?
 
-Yes. The maximum message size you can send with OME, including attachments, is 30 MB.
+Yes. The maximum message size you can send with OME, including attachments, is 25 MB. For more information, see [Message limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
 
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
@@ -115,7 +119,7 @@ For Outlook on the web, Outlook for iOS, and Outlook for Android, you can encryp
 
 Outlook desktop does not natively support encryption of PDF file attachments. Instead, you'll need to set up Exchange mail flow rules or DLP to apply encryption to PDF attachments first. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
 
-To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
@@ -133,6 +137,11 @@ Not yet. OneDrive for Business attachments are not supported and end-users can't
 ## What email clients support preview of encrypted attachments in protected emails?
 
 When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
+
+## What email clients support revocation of protected emails?
+
+Outlook on the web supports revocation of protected mail.  See [How to revoke an encrypted message that you sent](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) for details.
+
 
 ## Can I automatically encrypt messages by setting up policies?
 
@@ -165,6 +174,10 @@ Admins can set up a mail flow rule to remove encryption from outgoing mail. You 
 ## Is delegated access supported?
 
 Not at this time.
+
+## Can I send as a shared mailbox and encrypt emails?
+
+When someone sends an email message that matches an encryption mail flow rule, the message is encrypted before it's sent.
 
 ## Can I open encrypted messages sent to a shared mailbox?
 
@@ -200,6 +213,10 @@ There are currently two known limitations:
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
+   
+ ## Can I open encrypted messages sent to another user's mailbox with Fullaccess?
+
+Users can open encrypted messages as long as they are given direct access and automapping is turned ON. Access is not allowed if the access is granted via an email-enabled security group.
 
 ## What do I do if I don’t receive the one-time pass code after I requested it?
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -17,6 +17,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -74,7 +75,7 @@ Yes, but with reduced functionality. You'll be able to sign in and view service 
   
 ### What languages are supported by the app?
 
-The app supports all 39 languages that the web-based Microsoft 365 admin center supports. 
+The app supports all 39 languages that the web-based Microsoft 365 admin center supports. To change the language, select the app launch icon in the upper bar and choose **Settings** > **Language**.
   
 ### Why does the Messages tile on the Home screen show numbers even after I've read the new messages?
 
@@ -83,6 +84,10 @@ The numbers are the total messages from the last week, not unread messages.
 ### How can I share the Service Incidents and Messages with the rest of my organization?
 
 If you select a specific service incident or a message, the share option will be in the top right corner. We currently support email sharing.
+  
+### Can I use this app with multiple accounts or tenants?
+
+Yes, you can setup multiple accounts or tenants.
   
 ### My app is acting funny. What can I do to troubleshoot weird app behavior?
 

@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
@@ -114,5 +114,9 @@ There are a few more things to know:
 - A maximum limit of 100 email address policies can be configured for an organization.
     
 ## Related articles
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)
 
 [Create an Microsoft 365 group in the admin center](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)

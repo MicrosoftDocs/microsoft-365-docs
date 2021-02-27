@@ -32,8 +32,8 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
 
-    
-2. From the **Select a report** drop-down, select **Office 365** \> **Groups activity**.
+2. From the options, select **View more** under **Active users - Microsoft 365 Services**.
+3. From the **Select a report** drop-down, select **Office 365** \> **Groups activity**.
   
 ## Interpret the groups report
 
@@ -41,7 +41,7 @@ You can get a view into groups activity by looking at the **Groups**, **Activity
   
 ![Microsoft 365 reports - groups activities](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **Microsoft 365 groups** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |
@@ -56,4 +56,3 @@ You can get a view into groups activity by looking at the **Groups**, **Activity
 |11,  <br/> |You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data.  <br/> |
 |||
    
-

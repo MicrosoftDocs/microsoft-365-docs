@@ -1,5 +1,5 @@
 ---
-title: "Set device protection settings for Windows 10 PCs"
+title: "Edit or create device protection settings for Windows 10 PCs"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,27 +22,25 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: "Learn about default and other settings available in Microsoft 365 for business to secure Windows 10 devices."
+description: "Learn about settings available in Microsoft 365 for business to secure Windows 10 devices."
 ---
 
-# Set device protection settings for Windows 10 PCs
+# Edit or create device protection settings for Windows 10 PCs
 
 This article applies to Microsoft 365 Business Premium.
 
-## Secure Windows 10 devices
+After you have set set up default Windows protection settings on the Setup page, you can add new ones that apply to either all users, or a set of users. You can also edit any of the ones you have created.
 
-View a video on how to secure Windows 10 devices with Microsoft 365 for business:
+## Create protection settings for Windows 10 devices
+
+View a video on how to secure Windows 10 devices with Microsoft 365 Business Premium:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-    
 2. On the left nav, choose **Devices** \> **Policies** \> **Add**.
-  
 3. On the **Add policy** pane, enter a unique name for this policy. 
-    
 4. Under **Policy type**, choose **Windows 10 Device Configuration**.
-    
 5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. For more information, see [Available settings](#available-settings). 
     
     You can always use the **Reset default settings** link to return to the default setting. 
@@ -50,9 +48,15 @@ View a video on how to secure Windows 10 devices with Microsoft 365 for business
     ![Add policy pane with Windows 10 Device configuration selected](../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Next decide **Who will get these settings?** If you don't want to use the default **All users** security group, Choose **Change**, search for the security group who will get these settings \> **Select**.
-    
 7. Finally, choose **Done** to save the policy, and assign it to devices. 
-    
+
+## Edit Windows 10 protection settings
+ 
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
+2. On the left nav, choose **Devices** \> **Policies** .
+1. Choose an existing Windows device policy and then **Edit**.
+1. Choose **Edit** next to a setting you want to change and then **Save**.
+
 ## Available settings
 
 By default all settings are **On**. The following settings are available.

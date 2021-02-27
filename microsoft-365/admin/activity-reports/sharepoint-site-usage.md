@@ -34,15 +34,18 @@ Microsoft 365 Reports in the admin center is not supported for GCC High and DoD 
 ## How to get to the SharePoint site usage report
 
 1. In the admin center, go to **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a>.
-
     
-2. From the **Select a report** drop-down, select **SharePoint** \> **Site usage**.
+2. Under **SharePoint files** click **View more**. 
+
+3. Next to **SharePoint Activity**, click the down arrow to open the menu.
+
+4. Select **SharePoint** \> **Site usage**.
   
 ## Interpreting the SharePoint site usage report
 
 ![SharePoint Site Usage Report](../../media/4f88fb7d-9aa8-470e-9e23-e31caaf77d78.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **SharePoint Site usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours. <br/> |

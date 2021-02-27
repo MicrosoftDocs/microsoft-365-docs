@@ -100,5 +100,3 @@ As an alternative to exporting the results of a single search associated with a 
 - If you restart the export, any changes to the queries of the searches that make up the export job won't affect the search results that are retrieved. When you restart an export, the same combined search query job that was run when the export job was created will be run again.
 
 - Also, if you restart an export, the search results that are copied to the Azure Storage location overwrites the previous results. The previous results that were copied won't be available to be downloaded.
-
-- Preparing the results of multiple searches for analysis in Advanced eDiscovery (classic) isn't available. You can only prepare the results of a single search for analysis in Advanced eDiscovery (classic).

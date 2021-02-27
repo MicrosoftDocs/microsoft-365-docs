@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -128,7 +128,7 @@ In a conversation review set, you can use the following options to facilitate th
 
 In a conversation review set, you can set the following options to export conversations:
 
-![Export](../media/export.png)
+![Export options for conversations](../media/export.png)
 
 a. Metadata options
 

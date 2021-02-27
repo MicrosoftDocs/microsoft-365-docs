@@ -77,7 +77,7 @@ Sign in to [Microsoft 365 admin center](https://portal.office.com/adminportal/ho
     
     - If you also have an Exchange 2010, Exchange 2013, or Exchange 2016 server, you can [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). The minimal hybrid steps include a one-time sync of users to Azure AD, and email migration from on-premises to the cloud. After the email migration is complete, the directory synchronization is automatically turned off when you use this method.
     
-    - Use the directory sync wizard to synchronize your users to the cloud. Follow the steps in [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) to complete this process. After you synchronize your users to the cloud, you'll have to [Turn off directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
+    - Use the directory sync wizard to synchronize your users to the cloud. Follow the steps in [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) to complete this process. After you synchronize your users to the cloud, you'll have to [Turn off directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/turn-off-directory-synchronization).
     
     You'll also have to give each user that was added this way a license to Microsoft 365 for business. You can do this in the [setup wizard](set-up.md) or you can [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
     

@@ -13,6 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- m365initiative-coredeploy
 f1.keywords:
 - NOCSH
 description: "Discusses why network optimization is important for SaaS services, the goal of Microsoft 365 networking, and how SaaS requires different networking from other workloads."

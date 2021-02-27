@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -34,7 +34,7 @@ description: "Learn how to update your billing addresses for Microsoft 365 for b
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Your bill or invoice contains three addresses:
 
 - **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
-In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
+In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications and change the alternate email address for other admins.
   
 ::: moniker range="o365-worldwide"
 
@@ -56,7 +56,7 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 ::: moniker range="o365-germany"
 
-To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill orinvoice](understand-your-invoice2.md).
+To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill or invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -65,7 +65,6 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
-
 
 ## Change your Sold-To address
 
@@ -119,7 +118,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
   
 3. On the **Change payment details** page, update your billing address, and then select **Submit**.
 
-    You can [Change your payment method for Office 365 operated by 21Vianet](change-payment-method.md) from Invoice to Online payment using Alipay or China UnionPay, or vice versa.
+    You can change your payment method for Office 365 operated by 21Vianet from Invoice to Online payment using Alipay or China UnionPay, or vice versa.
 
 ::: moniker-end
 
@@ -128,10 +127,9 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-2. Find the subscription you want to change. In the **Settings & Actions** section, select **Edit service usage address**.
-
-3. In the **Edit your service usage address** pane, update your address, then select **Save**.
+2. On the **Products** tab, select the subscription that you want to change.
+3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
+4. In the **Edit service usage address** pane, update your address, then select **Save**.
 
 ::: moniker-end
 

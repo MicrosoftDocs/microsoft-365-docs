@@ -2,9 +2,9 @@
 title: "Difference between the setup wizard and the Setup page"
 f1.keywords:
 - NOCSH
-ms.author: v-sharos
-author: shars
-manager: mnirkhe
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration

@@ -31,15 +31,12 @@ Any Windows 10 device that is Azure Active Directory joined has access to all cl
 
 To learn more, see [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 The steps are also summarized in the following sections.
-
-> [!IMPORTANT]
-> This procedure is only applicable to OAuth and NTLM. Kerberos is not supported.
  
 ## Run Azure AD Connect
 
 Complete the following steps to enable your organization's Azure AD joined devices to access on-premises resources.
   
-1. To synchronize your users, groups, and contacts from local Active Directory into Azure Active Directory, run the Directory synchronization wizard and Azure AD Connect as described in [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization).
+1. To synchronize your users, groups, and contacts from local Active Directory into Azure Active Directory, run the Directory synchronization wizard and Azure AD Connect as described in [Set up directory synchronization for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization).
     
 2. After the directory synchronization is complete, make sure your organization's Windows 10 devices are Azure AD joined. This step is done individually on each Windows 10 device. See [Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md) for details. 
     
@@ -59,6 +56,6 @@ If the Windows device that you Azure-AD joined was previously domain-joined or i
 
 - If the device is using Group Policy Objects (GPO), some GPOs may not have a comparable [Configuration Service Provider](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) in Intune. Run the [MMAT tool](https://www.microsoft.com/download/details.aspx?id=45520) to find comparable CSPs for existing GPOs.
 
-- Users won't be able to authenticate to applications that depend on Active Directory authentication. Evaluate the legacy app and consider updating to an app that uses modern Auth, if possible.
+- Users might not be able to authenticate to applications that depend on Active Directory authentication. Evaluate the legacy app and consider updating to an app that uses modern Auth, if possible.
 
-- Active Directory printer discovery won't work. You can provide direct printer paths for all users or use [Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- Active Directory printer discovery won't work. You can provide direct printer paths for all users or use [Universal Print](https://aka.ms/UPDocs).

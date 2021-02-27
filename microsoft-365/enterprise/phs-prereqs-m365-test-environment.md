@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -21,24 +20,26 @@ description: Create a Microsoft 365 environment to test identity and device acce
 
 *This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-[Identity and device access configurations](microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 for enterprise that are integrated with Azure Active Directory (Azure AD).
+[Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 for enterprise that are integrated with Azure Active Directory (Azure AD).
 
-This article describes how to configure a Microsoft 365 test environment that meets the requirements of the [Active Directory with password hash sync prerequisite configuration](identity-access-prerequisites.md#prerequisites) for identity and device access.
+This article describes how to configure a Microsoft 365 test environment that meets the requirements of the [hybrid with password hash sync authentication prerequisite configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access.
 
-There are eight phases to setting up this test environment:
+There are ten phases to setting up this test environment:
 
-1.	Create a simulated enterprise with password hash sync test environment
-2.	Configure Azure AD seamless single sign-on
-3.	Configure named locations
-4.	Configure password writeback
-5.	Configure self-service password reset for all user accounts
-6.	Configure multifactor authentication for all user accounts
-7.	Enable Azure AD Identity Protection
-8.	Enable modern authentication for Exchange Online and Skype for Business Online
+1. Create a simulated enterprise with password hash sync test environment
+2. Configure Azure AD seamless single sign-on
+3. Configure named locations
+4. Configure password writeback
+5. Configure self-service password reset for all user accounts
+6. Configure multifactor authentication for all user accounts
+7. Enable automatic device registration of domain-joined Windows computers
+8. Configure Azure AD password protection 
+9. Enable Azure AD Identity Protection
+10. Enable modern authentication for Exchange Online and Skype for Business Online
 
 ## Phase 1: Build out your simulated enterprise with password hash sync Microsoft 365 test environment
 
-Follow the instructions in [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md).
+Follow the instructions in [the password hash synchronization](password-hash-sync-m365-ent-test-environment.md) Test Lab Guide.
 Here is the resulting configuration.
 
 ![The simulated enterprise with password hash synchronization test environment](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
@@ -81,11 +82,19 @@ Follow the instructions in [Phase 2 of the multi-factor authentication Test Lab 
 
 Test multi-factor authentication only for the User 2 account.
 
-## Phase 7: Enable Azure AD Identity Protection
+## Phase 7: Enable automatic device registration of domain-joined Windows computers 
+
+Follow [these instructions](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) to enable automatic device registration of domain-joined Windows computers.
+
+## Phase 8: Configure Azure AD password protection 
+
+Follow [these instructions](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) to block known weak passwords and their variants.
+
+## Phase 9: Enable Azure AD Identity Protection
 
 Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
-## Phase 8: Enable modern authentication for Exchange Online and Skype for Business Online
+## Phase 10: Enable modern authentication for Exchange Online and Skype for Business Online
 
 For Exchange Online, follow [these instructions](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 
@@ -105,7 +114,7 @@ For Skype for Business Online:
   Get-CsOAuthConfiguration
   ```
 
-The result is a test environment that meets the requirements of the [Active Directory with password hash sync prerequisite configuration](identity-access-prerequisites.md#prerequisites) for identity and device access. 
+The result is a test environment that meets the requirements of the [Active Directory with password hash sync prerequisite configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access. 
 
 ## Next step
 

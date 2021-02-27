@@ -2,9 +2,9 @@
 title: "Restore a user"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: kwekua
+author: kwekua
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -31,7 +31,7 @@ description: "Learn how to restore deleted user accounts and all associated data
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
    

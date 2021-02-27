@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,13 +18,10 @@ ms.custom:
 - TopSMBIssues
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: "Learn how to add licenses to your subscription."
+description: "Learn how to add licenses to or extend your subscription with a product key."
 ---
 
 # Add licenses to or extend a subscription paid for using a product key
@@ -39,17 +36,13 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-2. Find the subscription to which you want to add licenses. In the **Licenses** section, select **Add more licenses**.
-
-3. In the **Add more licenses pane**, select **Use a new and unused product key**, then select **Next**.
-
-4. Enter the product key, then select **Next**.
-
+2. On the **Products** tab, select the subscription to which you want to add licenses.
+3. On the subscription details page, in the **Licenses** section, select **Add more licenses**.
+4. In the **Add more licenses pane**, select **Use a new and unused product key**, then select **Next**.
+5. Enter the product key, then select **Next**.
     > [!NOTE]
     > If you have more than one product key, you can select **Add another product key** to enter them.
-  
-5. Review your order details, then select **Redeem**.
+6. Review your order details, then select **Redeem**.
 
 ::: moniker-end
 
@@ -96,17 +89,13 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-2. Find the subscription which you want to extend. In the **Billing** section, select **Extend end date**.
-
-3. In the **Extend subscription** pane, select **Use a new and unused product key**, then select **Next**.
-
-4. Enter the product key, then select **Next**.
-
+2. On the **Products** tab, select the subscription that you want to extend.
+3. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
+4. On the **renew or add user licenses** page, select **Use a new and unused product key**, then select **Next**.
+5. Enter the product key, then select **Next**.
     > [!NOTE]
     > If you have more than one product key, you can select **Add another product key** to enter them.
-  
-5. Review your order details, then select **Redeem**.
+6. Review your order details, then select **Redeem**.
 
 ::: moniker-end
 
