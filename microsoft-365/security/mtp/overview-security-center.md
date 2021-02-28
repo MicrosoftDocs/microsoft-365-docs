@@ -104,6 +104,9 @@ Common controls and content either appear in the same place, or are condensed in
 - Learn more about how to [manage access to Microsoft 365 Defender](mtp-permissions.md)
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 security center
 
+> [!NOTE]
+> Microsoft Defender for Endpoint in the Microsoft 365 security center supports [granting access to managed security service providers (MSSPs)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mssp-access).
+
 ### Integrated reports
 
 Reports are also unified in the Microsoft 365 security center. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
