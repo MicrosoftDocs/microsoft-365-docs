@@ -83,7 +83,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
     
     For labels with any of these encryption configurations, the labels aren't displayed to users in Office on the web. Additionally, the new capabilities can't be used with labeled documents that already have these encryption settings. For example, these documents won't be returned in search results, even if they are updated.
 
-- For encrypted documents, printing isn't supported.
+- For encrypted documents, printing is not supported.
 
 - For an encrypted document that grants edit permissions to a user, copying can't be blocked in the web versions of the Office apps.
 
