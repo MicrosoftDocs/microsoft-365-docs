@@ -16,18 +16,21 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use a retention policy to very efficiently keep control of the content that users generate with email, documents, and conversations. Keep what you want and get rid of what you don't."
+description: "Use a retention policy to efficiently keep control of the content that users generate with email, documents, and conversations. Keep what you want and get rid of what you don't."
 ---
 
 # Create and configure retention policies
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content.
+Use a retention policy to manage the data for your organization by deciding proactively whether to retain content, delete content, or retain and then delete the content.
 
-A retention policy lets you do this very efficiently by assigning the same retention settings for content by location, at a site or mailbox level. If you're not sure whether to use a retention policy or a retention label, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
+A retention policy lets you do this very efficiently by assigning the same retention settings at the container level to be automatically inherited by content in that container. For example, all items in SharePoint sites, all email messages in users' Exchange mailboxes, all channel messages for teams that are used with Microsoft Teams. If you're not sure whether to use a retention policy at the container level or a retention label at the item level, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
 
-For more information about retention policies and how retention works, see [Learn about retention policies and retention labels](retention.md).
+For more information about retention policies and how retention works in Microsoft 365, see [Learn about retention policies and retention labels](retention.md).
+
+> [!NOTE]
+> The information on this page is for compliance administrators. If you are not an administrator and want to understand how retention policies have been configured for the apps that you use, contact your help desk, IT department, or administrator. If you're seeing messages about retention policies in Teams chats and channel messages, you might find it helpful to review [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
 ## Before you begin
 
@@ -35,7 +38,7 @@ The global admin for your organization has full permissions to create and edit r
 
 ## Create and configure a retention policy
 
-Although a retention policy can support multiple locations, you can't create a single retention policy that includes all the supported locations:
+Although a retention policy can support multiple services that are identified as "locations" in the retention policy, you can't create a single retention policy that includes all the supported locations:
 
 - Exchange email
 - SharePoint site
@@ -48,7 +51,7 @@ Although a retention policy can support multiple locations, you can't create a s
 - Yammer community messages
 - Yammer private messages
 
-If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. Therefore, which instructions to follow depend on whether you need to include the Teams or Yammer locations:
+If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations:
 
 - [Instructions for a retention policy for Teams locations](#retention-policy-for-teams-locations)
 - [Instructions for a retention policy for Yammer locations](#retention-policy-for-yammer-locations)
