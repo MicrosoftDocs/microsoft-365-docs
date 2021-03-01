@@ -52,7 +52,7 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
 ### To edit a topic page
 
-1. On the topic page, select **Edit**. This allows you to make changes as you need to the topic page.
+1. On the topic page, select **Edit**. This lets you make changes as needed to the topic page.
 
    ![Edit control](../media/knowledge-management/topic-page-edit.png) </br>  
 
