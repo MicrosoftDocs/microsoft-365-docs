@@ -23,7 +23,7 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
--  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 This topic explains how to set up standalone Exchange Online Protection (EOP). If you landed here from the Office 365 domains wizard, go back to the Office 365 domains wizard if you don't want to use Exchange Online Protection. If you're looking for more information on how to configure connectors, see [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
@@ -43,16 +43,16 @@ This topic explains how to set up standalone Exchange Online Protection (EOP). I
 - For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Having problems? Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
+> Having problems? Ask for help in the [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) forum.
 
 ## Step 1: Use the Microsoft 365 admin center to add and verify your domain
 
-1. In the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center), go to **Setup** to add your domain to the service.
+1. In the [Microsoft 365 admin center](../../admin/admin-overview/about-the-admin-center.md), go to **Setup** to add your domain to the service.
 
 2. Follow the steps to add the applicable DNS records to your DNS-hosting provider in order to verify domain ownership.
 
 > [!TIP]
-> [Add a domain to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) and [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) are helpful resources to reference as you add your domain to the service and configure DNS.
+> [Add a domain to Office 365](../../admin/setup/add-domain.md) and [Create DNS records at any DNS hosting provider for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) are helpful resources to reference as you add your domain to the service and configure DNS.
 
 ## Step 2: Add recipients and optionally enable DBEB
 
@@ -68,7 +68,7 @@ Check mail flow between the service and your environment. For more information, 
 
 ## Step 4: Allow inbound port 25 SMTP access
 
-After you configured connectors, wait 72 hours to allow propagation of your DNS record updates. Following this, restrict inbound port-25 SMTP traffic on your firewall or mail servers to accept mail only from the EOP datacenters, specifically from the IP addresses listed at [Exchange Online Protection IP addresses](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges). This protects your on-premises environment by limiting the scope of inbound messages you can receive. Additionally, if you have settings on your mail server that control the IP addresses allowed to connect for mail relay, update those settings as well.
+After you configured connectors, wait 72 hours to allow propagation of your DNS record updates. Following this, restrict inbound port-25 SMTP traffic on your firewall or mail servers to accept mail only from the EOP datacenters, specifically from the IP addresses listed at [Exchange Online Protection IP addresses](../../enterprise/urls-and-ip-address-ranges.md). This protects your on-premises environment by limiting the scope of inbound messages you can receive. Additionally, if you have settings on your mail server that control the IP addresses allowed to connect for mail relay, update those settings as well.
 
 > [!TIP]
 > Configure settings on the SMTP server with a connection time out of 60 seconds. This setting is acceptable for most situations, allowing for some delay in the case of a message sent with a large attachment, for example.
@@ -81,7 +81,7 @@ If you don't want to move messages to each user's Junk Email folder, you may cho
 
 ## Step 6: Use the Microsoft 365 admin center to point your MX record to EOP
 
-Follow the domain configuration steps to update your MX record for your domain, so that your inbound email flows through EOP. Be sure to point your MX record directly to EOP as opposed to having a third-party filtering service relay email to EOP. For more information, you can again reference [Create DNS records for Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Follow the domain configuration steps to update your MX record for your domain, so that your inbound email flows through EOP. Be sure to point your MX record directly to EOP as opposed to having a third-party filtering service relay email to EOP. For more information, you can again reference [Create DNS records for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 > [!NOTE]
 > If you must point your MX record to another server or service that sits in front of EOP, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
