@@ -85,7 +85,8 @@ Reworked as text:
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
-| Uninstall previous versions of Hybrid Configuration wizard (HCW), and then install and execute the latest version, 17.0.5378.0, from [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard). | The latest version of the HCW includes necessary updates to support customers who are transitioning from Microsoft Cloud Deutschland to Office 365 Services. <br><br> Updates include changes to on-premises certificate settings for Send connector and Receive connector. | Exchange Online customers running Hybrid deployment | Required action. Failure to do so before Phase 5 of 9 (Exchange) may result in service or client failure. |
+| Update to latest version of Hybrid Configuration Wizard (HCW) before migration. 
+Germany cutomers must uninstall previous versions of HCW, and then install and execute the latest version (17.0.5378.0 or higher) from [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard). | The latest version of the HCW includes necessary updates to support customers who are transitioning from Microsoft Cloud Deutschland to Office 365 Services. <br><br> Updates include changes to on-premises certificate settings for Send connector and Receive connector. <br><br> Customers must re-install using Office 365 Germany settings before Phase 5 - Exchange Online migration begins. <br><br> NOTE: Upon completion of the migration to Office 365 services, you will remove and re-install again this time using Office 365 Worldwide settings to complete your Hybrid setup with the global service.| Exchange Online customers running Hybrid deployment | Required action. Failure to do so before Phase 5 of 9 (Exchange) may result in service or client failure. |
 |||||
 
 <!--
