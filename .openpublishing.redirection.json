@@ -2676,6 +2676,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/isolated-sharepoint-online-team-sites.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/design-an-isolated-sharepoint-online-team-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/deploy-an-isolated-sharepoint-online-team-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/manage-an-isolated-sharepoint-online-team-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/team-security-isolation-dev-test",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/microsoft-365-client-support-modern-authentication.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/microsoft-365-client-support-multi-factor-authentication",
       "redirect_document_id": false
