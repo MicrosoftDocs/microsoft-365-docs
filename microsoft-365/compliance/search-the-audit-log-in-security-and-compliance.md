@@ -57,6 +57,8 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
 
+- Admin activity in Briefing email and MyAnalytics
+
 ## Requirements to search the audit log
 
 Be sure to read the following items before you start searching the audit log.
@@ -414,7 +416,19 @@ Click one of the following links to go to a specific table.
         [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
     :::column-end:::
     :::column:::
+        [Briefing email activities](#briefing-email-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [MyAnalytics activities](#myanalytics-activities)
+    :::column-end:::
+    :::column:::
         [Exchange admin activities](#exchange-admin-audit-log)
+    :::column-end:::
+    :::column:::
+        []()
     :::column-end:::
 :::row-end:::
 
@@ -803,20 +817,6 @@ Workplace Analytics provides insight into how groups collaborate across your org
 |Viewed Explore|ViewedExplore|Analyst viewed visualizations in one or more Explore page tabs.|
 ||||
 
-### Briefing email activities
-
-The following table lists the activities in Briefing email that are logged in the Office 365 audit log. For more information about Briefing email, see:
-
-- [Overview of Briefing email](https://docs.microsoft.com/Briefing/be-overview)
-
-- [Configure Briefing email](https://docs.microsoft.com/Briefing/be-admin)
-
-|**Friendly name**|**Operation**|**Description**|
-|:-----|:-----|:-----|
-|Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
-|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
-||||
-
 ### Microsoft Teams activities
 
 You can search the audit log for user and admin activities in Microsoft Teams. Teams is a chat-centered workspace in Office 365. It brings a team's conversations, meetings, files, and notes together into a single place. For descriptions of the Teams activities that are audited, see [Search the audit log for events in Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities).
@@ -978,6 +978,31 @@ The following table lists events that result from labeling activities for ShareP
 | Updated settings for a retention policy | SetRetentionComplianceRule | Administrator changed the retention settings for an existing retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlet. |
 | Updated retention label |SetComplianceTag  | Administrator updated an existing retention label.|
 | Updated retention policy |SetRetentionCompliancePolicy |Administrator updated an existing a retention policy. Updates that trigger this event include adding or excluding content locations that the retention policy is applied to.|
+||||
+
+### Briefing email activities
+
+The following table lists the activities in Briefing email that are logged in the Office 365 audit log. For more information about Briefing email, see:
+
+- [Overview of Briefing email](https://docs.microsoft.com/Briefing/be-overview)
+
+- [Configure Briefing email](https://docs.microsoft.com/Briefing/be-admin)
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
+|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
+||||
+
+### MyAnalytics activities
+
+The following table lists the activities in MyAnalytics that are logged in the Office 365 audit log. For more information about MyAnalytics, see: [MyAnalytics for admins](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
+|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
+||||
 
 ### Exchange admin audit log
 
