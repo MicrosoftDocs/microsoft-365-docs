@@ -361,9 +361,9 @@ When you use a previously created and published [retention label](retention.md#r
   > [!IMPORTANT]
   > You'll get this error if you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location: **"Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location."** This is because Exchange transport does not evaluate the label metadata during message submission and delivery. 
 
-### Support for sensitivity labels is coming
+### Using a sensitivity label as a condition in a DLP policy
 
-You can currently use only a retention label as a condition, not a [sensitivity label](sensitivity-labels.md). We're currently working on support for using a sensitivity label in this condition.
+Sensitivity label as a condition in DLP policies is currently in preview. [Learn more](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition).
   
 ### How this feature relates to other features
 

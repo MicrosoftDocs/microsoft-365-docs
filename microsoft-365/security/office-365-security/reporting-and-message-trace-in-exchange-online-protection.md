@@ -1,25 +1,31 @@
 ---
-title: "Reporting and message trace"
-f1.keywords:
-- NOCSH
+title: Reporting and message trace
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
-ms.custom:
-- seo-marvel-apr2020
-description: "In this article, you'll learn about reports and troubleshooting tools available to Microsoft Exchange Online Protection (EOP) admins."
+ms.custom: 
+  - seo-marvel-apr2020
+description: In this article, you'll learn about reports and troubleshooting tools available to Microsoft Exchange Online Protection (EOP) admins.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Reporting and message trace in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP offers many different reports that can help you determine the overall status and health of your organization. There are also tools to help you troubleshoot specific events (such as a message not arriving to its intended recipients), and auditing reports to aid with compliance requirements.
 
@@ -35,13 +41,13 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 See the following resources for more information:
 
-- [Microsoft 365 Reports in the admin center - Microsoft 365 groups](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Microsoft 365 Reports in the admin center - Microsoft 365 groups](../../admin/activity-reports/office-365-groups.md)
 
-- [Microsoft 365 Reports in the admin center - Email activity](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
+- [Microsoft 365 Reports in the admin center - Email activity](../../admin/activity-reports/email-activity.md)
 
-- [Microsoft 365 Reports in the admin center - Email apps usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
+- [Microsoft 365 Reports in the admin center - Email apps usage](../../admin/activity-reports/email-apps-usage.md)
 
-- [Microsoft 365 Reports in the admin center - Mailbox usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
+- [Microsoft 365 Reports in the admin center - Mailbox usage](../../admin/activity-reports/mailbox-usage.md)
 
 ## Security & compliance reports in the Microsoft 365 admin center
 

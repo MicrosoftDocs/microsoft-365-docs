@@ -1,28 +1,34 @@
 ---
 title: Permissions in the Microsoft 365 security and compliance centers
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date: 
 ms.audience: Admin
 ms.topic: article
-ms.service: O365-seccomp
+audience: Admin
 localization_priority: Priority
 ms.collection: 
-- M365-security-compliance
+  - M365-security-compliance
 search.appverid: 
-- MOE150
-- MET150
-description: "By using the Microsoft 365 security center or Microsoft 365 compliance center, you can manage permissions centrally for all tasks related to security or compliance."
+  - MOE150
+  - MET150
+description: By using the Microsoft 365 security center or Microsoft 365 compliance center, you can manage permissions centrally for all tasks related to security or compliance.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Permissions in the Microsoft 365 compliance center and Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Your organization needs to manage security and compliance scenarios that span all the Microsoft 365 services. And you need the flexibility to give the right admin permissions to the right people in your organization's IT group. By using the Microsoft 365 security center or Microsoft 365 compliance center, you can manage permissions centrally for all tasks related to security or compliance.
 
@@ -75,11 +81,11 @@ By assigning a user to one of the Microsoft 365 compliance or security admin rol
 
 |Microsoft 365 service|Role info|
 |---|---|
-|Admin roles in Office 365 and Microsoft 365 for business plans|[Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Admin roles in Office 365 and Microsoft 365 for business plans|[Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
 |Azure Active Directory (Azure AD) and Azure AD Identity Protection|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Defender for Identity|[Microsoft Defender for Identity role groups](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Compliance Manager|[Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
+|Compliance Manager|[Compliance Manager](../../compliance/compliance-manager-setup.md#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Exchange role-based access control](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)|
 |Intune|[Intune role-based access control](https://docs.microsoft.com/intune/role-based-access-control)|
 |Managed Desktop|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

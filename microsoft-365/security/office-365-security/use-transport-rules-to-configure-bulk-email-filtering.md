@@ -1,27 +1,33 @@
 ---
-title: "Use mail flow rules to filter bulk email"
-f1.keywords:
-- NOCSH
+title: Use mail flow rules to filter bulk email
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to use mail flow rules (transport rules) to identify and filter bulk mail (gray mail) in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to use mail flow rules (transport rules) to identify and filter bulk mail (gray mail) in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Use mail flow rules to filter bulk email in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam and bulk mail (also known as gray mail). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 

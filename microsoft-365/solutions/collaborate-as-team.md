@@ -23,7 +23,7 @@ description: Learn about the Microsoft 365 configuration steps necessary to set 
 
 If you need to collaborate with guests across documents, tasks, and conversations, we recommend using Microsoft Teams. Teams provides all of the collaboration features available in Office and SharePoint with persistent chat and a customizable and extensible set of collaboration tools in a unified user experience.
 
-In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests.
+In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests. Once you have configured guest access, you can invite guests to teams by following the steps in [Add guests to a team in Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
 
 ## Video demonstration
 
@@ -183,3 +183,5 @@ To invite guests to a team
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
 [SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+
+[Sharing options are greyed out when sharing from SharePoint or OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

@@ -1,23 +1,22 @@
 ---
-title: "Gain insights through Attack simulation training"
+title: Gain insights through Attack simulation training
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
-description: "Admins can learn how Attack simulation training in the Microsoft 365 security center affects employees and can gain insights from simulation and training outcomes."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn how Attack simulation training in the Microsoft 365 security center affects employees and can gain insights from simulation and training outcomes.
+ms.technology: mdo
 ---
 
 # Gain insights through Attack simulation training
 
 Within Attack simulation training, Microsoft provides you with insights based on outcomes of simulations and trainings that employees went through. These insights will help keep you informed on the threat readiness progress of your employees, as well as recommend next steps to better prepare your employees and your environment for attacks.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 We are continuously working on expanding the insights that are available to you. Behavior impact and recommended actions are currently available. To start, head over to [Attack simulation training in the Microsoft 365 security center](https://security.microsoft.com/attacksimulator?viewid=overview).
 
@@ -41,11 +40,15 @@ To see a more detailed report, click **View simulations and training efficacy re
 
 On the [**Simulations** tab](https://security.microsoft.com/attacksimulator?viewid=simulations), selecting a simulation will take you to the simulation details, where you'll find the **Recommended actions** section.
 
-The recommended actions section details recommendations as available in [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score). These recommendations are based on the payload used in the simulation, and will help you protect your employees and your environment. Clicking on each improvement action will take you to its details.
+The recommended actions section details recommendations as available in [Microsoft Secure Score](../mtp/microsoft-secure-score.md). These recommendations are based on the payload used in the simulation, and will help you protect your employees and your environment. Clicking on each improvement action will take you to its details.
 
 > [!div class="mx-imgBorder"]
 > ![Recommendation actions section on Attack simulation training](../../media/attack-sim-preview-recommended-actions.png)
 
 ## Related Links
 
-**Attack Simulator** [Create a phishing attack simulation](attack-simulation-training.md) and [create a payload for training your people](attack-simulation-training-payloads.md)
+[Get started using Attack simulation training](attack-simulation-training-get-started.md)
+
+[Create a phishing attack simulation](attack-simulation-training.md)
+
+[create a payload for training your people](attack-simulation-training-payloads.md)
