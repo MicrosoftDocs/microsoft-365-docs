@@ -542,3 +542,7 @@ To learn more about roles and permissions, see the following resources:
 - The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it also provides additional details for a given attack.
 - An *All email* view is available in Threat Explorer but not in the Real-time detections report.
 - More filtering capabilities and available actions are included in Threat Explorer. For more information, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## Other articles
+
+[Investigate emails with the Email Entity Page](mdo-email-entity-page.md)
