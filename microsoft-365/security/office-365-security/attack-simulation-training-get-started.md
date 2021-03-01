@@ -12,7 +12,7 @@ localization_priority: Normal
 search.appverid: 
   - MET150
   - MOE150
-ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.assetid:
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
@@ -46,7 +46,7 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
-- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations). Attack simulation is currently not available in the following regions: SGP, NOR, UAE, ZAF, GER, BRA, and CHE.
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation is available in the following regions: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, and KOR.
 
 ## Simulations
 
