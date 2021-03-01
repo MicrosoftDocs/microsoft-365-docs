@@ -10,10 +10,12 @@ ms.localizationpriority: normal
 
 # Get started with Microsoft Managed Desktop
 
-Now that you've enrolled in the service, follow these steps to confirm admin contacts, adjust conditional access settings, assign licenses to users, enable Enterprise State Roaming,  obtain and set up devices, prepare users, and deploy apps to devices.
+Now that you’re ready to enroll, open [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to **Tenant Administration**. Select **Tenant enrollment** under the **Microsoft Managed Desktop** subsection then follow the wizard to enroll your tenant with Microsoft Managed Desktop.
 
 > [!NOTE]
-> This is the recommended order to follow, but you do have some flexibility in the sequence.
+> Remember you must be logged in as a General Administrator to complete enrollment, see our article on how to [access the admin portal](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/access-admin-portal) for more details.
+
+Once you’ve finished enrollment, follow the steps below to configure the service. This is the recommended order to follow, but you do have some flexibility in the sequence. 
 
 1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
 2. [Adjust conditional access](conditional-access.md)
