@@ -69,7 +69,7 @@ When you have more than one retention policy, and when you also use retention la
 
    For **Teams channel messages**, message from standard channels but not [private channels](https://docs.microsoft.com/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
 
-   By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](#a-policy-with-specific-inclusions-or-exclusions).
+   By default, [all teams and all users are selected](configure-retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](configure-retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
 4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
 
@@ -107,7 +107,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 
 3. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
     
-    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
     
     Do not select **Use advanced retention settings** because this option isn't supported for Yammer locations. 
 
@@ -152,14 +152,14 @@ Use the following instructions for retention policies that apply to any of these
 3. For the **Choose locations** page, toggle on or off any of the locations except the locations for Teams. For each location, you can leave it at the default to [apply the policy to the entire location](#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](#a-policy-with-specific-inclusions-or-exclusions).
 
     Information specific to locations:
-    - [Exchange email and Exchange public folders](#configuration-information-for-exchange-email-and-exchange-public-folders)
-    - [SharePoint sites and OneDrive accounts](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
-    - [Microsoft 365 Groups](#configuration-information-for-microsoft-365-groups)
-    - [Skype for Business](#configuration-information-for-skype-for-business)
+    - [Exchange email and Exchange public folders](configure-retention-settings.md#configuration-information-for-exchange-email-and-exchange-public-folders)
+    - [SharePoint sites and OneDrive accounts](configure-retention-settings.md#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
+    - [Microsoft 365 Groups](configure-retention-settings.md#configuration-information-for-microsoft-365-groups)
+    - [Skype for Business](configure-retention-settings.md#configuration-information-for-skype-for-business)
 
 4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
 
-    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
 5. Complete the wizard to save your settings.
 

@@ -133,7 +133,7 @@ Advantages of using static scopes:
     
     For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers you have to specify are low. However, when these numbers start to increase and you have frequent changes in your organization that require you to reconfigure your includes and excludes, adaptive policies can be simpler to configure and much easier to maintain.
 
-For more information, see [Configuring adaptive scopes](create-retention-policies.md#configuring-adaptive-scopes)
+For more information, see [Configuring adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes)
 
 
 ### Retention labels
