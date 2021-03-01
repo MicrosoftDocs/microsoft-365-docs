@@ -133,7 +133,11 @@ If administration is distributed across your organization, you may not want or n
 
 2. In the **Custom View** tab, make sure that the check box is selected for each service that you want to monitor. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**. <br/><br/>You can also enter up to two email addresses, separated by a semicolon. <br><br/>You can also choose the emails you want to get, as well as a weekly digest of services you select.
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**. 
+
+   You can also enter up to two email addresses, separated by a semicolon.
+
+   You can also choose the emails you want to get, as well as a weekly digest of services you select.
 
 4. Select **Save** to keep your changes.
   
@@ -145,7 +149,13 @@ If administration is distributed across your organization, you may not want or n
 
 2. Make sure that the toggle is set to **On** for each service that you want to monitor. Use the toggle to change the setting to **Off** for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, change the **Send a weekly digest of my messages** setting to **Off**. <br/><br/>Email notification for major updates is a separate control. If you want to receive email notices about major updates, verify that **Send me emails for major updates** is **On**. Change the setting to **Off** to stop getting email about major updates. <br/><br/>To receive email notices about data privacy messages, verify that **Send me emails for data privacy messages** is **On**. To stop receiving these notices, change the setting to **Off**. (Data privacy messages are not included in the weekly digest.)<br/><br/>You can select or clear your primary email address, but you can't change it. To specify other email addresses to which the weekly email summary is sent, verify that **Send a weekly digest of my messages** is **On**. Enter the email address for a Microsoft 365 group or a distribution list if more than two people should get the digest email.
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, change the **Send a weekly digest of my messages** setting to **Off**. 
+
+   Email notification for major updates is a separate control. If you want to receive email notices about major updates, verify that **Send me emails for major updates** is **On**. Change the setting to **Off** to stop getting email about major updates. 
+
+   To receive email notices about data privacy messages, verify that **Send me emails for data privacy messages** is **On**. To stop receiving these notices, change the setting to **Off**. (Data privacy messages are not included in the weekly digest.)
+
+   You can select or clear your primary email address, but you can't change it. To specify other email addresses to which the weekly email summary is sent, verify that **Send a weekly digest of my messages** is **On**. Enter the email address for a Microsoft 365 group or a distribution list if more than two people should get the digest email.
 
 4. Select **Save** to keep your changes.<br/>
 
@@ -157,7 +167,9 @@ If administration is distributed across your organization, you may not want or n
 
 2. In the **Custom View** tab, make sure that the check box is selected for each service that you want to monitor. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**. <br/><br/>You can also enter up to two email addresses, separated by a semicolon. <br><br/>You can also choose the emails you want to get, as well as a weekly digest of services you select.
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**. 
+
+   You can also enter up to two email addresses, separated by a semicolon. <br><br/>You can also choose the emails you want to get, as well as a weekly digest of services you select.
 
 4. Select **Save** to keep your changes.<br/>
 
