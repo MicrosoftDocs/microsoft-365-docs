@@ -323,10 +323,11 @@ This example uses Threat Explorer.
 
 2. In the View menu, choose Email > Phish.
 
-Here you can choose **impersonated domain** or **impersonated user**.
+   Here you can choose **impersonated domain** or **impersonated user**.
 
-3. **EITHER** Select **Impersonated domain**, and then type a protected domain in the textbox.
-    1. For example, search for protected domain names like *contoso*, *contoso.com*, or *contoso.com.au*.
+3. **EITHER** select **Impersonated domain**, and then type a protected domain in the textbox.
+
+   For example, search for protected domain names like *contoso*, *contoso.com*, or *contoso.com.au*.
 
 4. Select the Subject of any message under the Email tab > Details tab to see additional impersonation information like Impersonated Domain / Detected location.
 
