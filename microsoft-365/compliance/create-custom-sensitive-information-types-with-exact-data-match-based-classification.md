@@ -20,6 +20,9 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types with Exact Data Match based classification
 
+<!-- CMK Commercial cloud only (WW)
+E5 licensed tenants -->
+
 [Custom sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
 
 - patterns
