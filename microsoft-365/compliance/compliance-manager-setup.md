@@ -25,7 +25,7 @@ description: "Set Microsoft Compliance Manager user permissions and roles, and c
 
 ## Who can access Compliance Manager
 
-Compliance Manager is available to organizations with Office 365 and Microsoft 365 licenses, and to US Government Community Cloud (GCC) Moderate and GCC High customers. Assessment availability and management capabilities depend on your licensing agreement.  [View service description details](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance Manager is available to organizations with Office 365 and Microsoft 365 licenses, and to US Government Community Cloud (GCC) Moderate, GCC High, and Department of Defense (DOD) customers. Assessment availability and management capabilities depend on your licensing agreement.  [View service description details](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 ## Before you begin
 
@@ -47,7 +47,7 @@ Compliance Manager uses a role-based access control (RBAC) permission model. Onl
 The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in the Office 365 Security & Compliance center as well as in Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Customers in US Government Community (GCC) High environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
+> Customers in US Government Community (GCC) High and DOD environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
 
 To set permissions and assign roles in the Office 365 Security & Compliance center, follow the steps below:
 
@@ -95,7 +95,7 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 The Compliance Manager settings in the Microsoft 365 compliance center allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
 
 > [!NOTE]
-> The automated testing feature is not available to customers in GCC High environments because Secure Score isn't available in these environments. GCC High customers will need to manually implement and test their improvement actions.
+> The automated testing feature is not available to customers in GCC High and DOD environments because Secure Score isn't available in these environments. GCC High and DOD customers will need to manually implement and test their improvement actions.
 
 ### Set up automated testing
 
@@ -317,6 +317,8 @@ There are two ways you can take action from this screen:
 
 The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
 
+The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template type](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information.
+
 The assessments page summarizes key information about each assessment:
 
 - **Assessment**: name of the assessment
@@ -349,6 +351,8 @@ By default, you'll see the [Data Protection Baseline](compliance-manager-assessm
 ## Assessment templates page
 
 A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, and who created it.
+
+The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template type](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information.
 
 Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 
