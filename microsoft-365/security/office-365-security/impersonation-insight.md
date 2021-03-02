@@ -24,7 +24,7 @@ ms.prod: m365-security
 
 # Impersonation insight in Defender for Office 365
 
-Impersonation is where the sender or the sender's email domain in a message looks similar to a real sender or domain (for example, ćóntoso.com instead of contoso.com). Impersonation is different from [spoofing](anti-spoofing-protection.md), because the impersonated domain is typically a real, registered domain, so messages from senders in the impersonated domain can pass email authentication checks (SPF, DKIM, and DMARC).
+Impersonation is where the sender or the sender's email domain in a message looks similar to a real sender or domain (for example, ćóntoso.com instead of contoso.com which is referred to Domain impersonation or michelle@contoso.com instead of rnichell@contoso.com). Domain impersonation is different from [domain spoofing](anti-spoofing-protection.md), because the impersonated domain is typically a real, registered domain, so messages from senders in the impersonated domain can pass email authentication checks (SPF, DKIM, and DMARC).
 
 Impersonation protection is part of the anti-phishing policy settings) that are exclusive to Microsoft Defender for Office 365. For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
@@ -63,10 +63,11 @@ You can use the impersonation insight to quickly identify messages from imperson
 
 On the impersonation insight, click **Domains impersonated**. The **Impersonation insight** page that opens contains the following information:
 
-- **Domain**: The impersonated domain, which should closely resemble the domain that's configured for impersonation protection in the anti-spam policy.
-- **Message count**: The number of messages from senders in the impersonated domain over the last 7 days.
-- **Impersonation type**: This value is **Domain in address**.
-- **Domain type**: This value is ??? for internal domains or **Custom domain** for custom domains.
+- **Sender Domain**: The impersonating domain, which is the domain used to send the email. 
+- **Message count**: The number of messages from impersonating sender domain over the last 7 days.
+- **Impersonation type**: This value shows the detected location of the impersonation. E.g. **Domain in address**.
+- **Impersonated domain(s)**: The impersonated domain, which should closely resemble the domain that's configured for impersonation protection in the anti-phishing policy.
+- **Domain type**: This value is **Company domain** for internal domains or **Custom domain** for custom domains.
 - **Policy**: The anti-phishing policy that detected the impersonated domain.
 - **Allowed to impersonate**: One of the following values:
   - **Yes**: The domain was configured as trusted domain (an exception for impersonation protection) in the anti-spam policy. Messages from senders in the impersonated domain were detected, but allowed.
@@ -97,10 +98,11 @@ On the **Impersonation insight** page, select one of the available rows. The det
 
 On the impersonation insight, click **Users impersonated**. The **Impersonation insight** page that opens contains the following information:
 
-- **Sender**: The email address of the impersonated sender, which should closely resemble the user that's configured for impersonation protection in the anti-spam policy.
-- **Message count**: The number of messages from the impersonated sender over the last 7 days.
+- **Sender**: The email address of the impersonating sender that sent the email.
+- **Message count**: The number of messages from the impersonating sender over the last 7 days.
 - **Impersonation type**: This value is **User in display name**.
-- **User type**: This value is **Protected user**.
+- **Impersonated user(s)**: The email address of the impersonated sender, which should closely resemble the user that's configured for impersonation protection in the anti-phishing policy.
+- **User type**: This value shows the type of protection applied. E.g. **Protected user** or **Mailbox Intelligence**.
 - **Policy**: The anti-phishing policy that detected the impersonated sender.
 - **Allowed to impersonate**: One of the following values:
   - **Yes**: The sender was configured as trusted user (an exception for impersonation protection) in the anti-spam policy. Messages from the impersonated sender were detected, but allowed.
