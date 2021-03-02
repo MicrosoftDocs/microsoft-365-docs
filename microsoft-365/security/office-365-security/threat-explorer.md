@@ -313,7 +313,7 @@ The search for connectors is "contains" in nature, which means partial keyword s
 
 ### View phishing emails sent to impersonated users and domains
 
-To identify phishing attempts against users and domains that were impersonated, users and domains must be added to the list of *Users to protect* and *Domains to protect* in the Anti-Phishing policy page, under the Impersonation section.
+To identify phishing attempts against users and domains that are impersonated users must be added to the list of *Users to protect*. For domains, admins must either enable *Organization domains*, or add a domain name to *Domains to protect*. The domains to protect are found on the *Anti-Phishing policy page* in the *Impersonation* section.
 
 To review phish messages and search for impersonated users or domains, use the [Email > Phish view](threat-explorer-views.md) of Explorer.
 
@@ -337,7 +337,7 @@ Here you can choose **impersonated domain** or **impersonated user**.
 :::image type="content" source="../../media/threat-ex-views-mpersonated user-image.png" alt-text="The Threat Explorer details pane for a protected user showing the detection location, and the threat that was detected (here phish impersonation of a user).":::
 
 > [!TIP]
-> **For best results**, use *full email addresses and domain names* to search. You will find your protected user or domain quicker and more successfully if you search for *john.doe@contoso.com* when investigating user impersonation, or *contoso.com* for an impersonated domain.
+> **For best results**, use *full email addresses* to search protected users. You will find your protected user quicker and more successfully if you search for *firstname.lastname@contoso.com*, for example, when investigating user impersonation. When searching for a protected domain the search will take the root domain (contoso.com, for example), and the domain name (*contoso*). Searching for the root domain *contoso.com* will return both impersonations of *contoso.com* and the domain name *contoso*.
 
 ### Preview email header and download email body
 
