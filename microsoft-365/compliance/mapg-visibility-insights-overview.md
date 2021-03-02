@@ -20,12 +20,12 @@ description: "Learn about visibility and insights."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-With Microsoft Application Protection and Governance (MAPG), you can quickly gain visibility into and meaningful insights on your Microsoft 365 application ecosystem. You start from the MAPG dashboard that provides a high-level summary of the apps in your tenant and from there you can efficiently navigate to top tasks.
+With Microsoft Application Protection and Governance (MAPG), you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the MAPG dashboard that provides a high-level summary of the apps in your tenant and from there you can efficiently navigate to top tasks.
 
 With MAPG visibility and insights, you can see 
 
-- A view of all the Microsoft 365 apps in your tenant in a single dashboard. 
-- All the apps’ activities so that you can react or respond to them.
+- A list of all the third-party Microsoft 365 platform apps with their compliance status in your tenant on a single dashboard. 
+- A rich view on app activities so that you can react or respond to them.
 
 >[!Note]
 >Azure-only apps that are not granted permissions to access Microsoft 365 resources are not displayed in MAPG.

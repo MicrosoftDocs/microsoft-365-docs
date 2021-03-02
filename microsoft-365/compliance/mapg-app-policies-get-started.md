@@ -26,7 +26,7 @@ To see the list of current app policies, go to **Microsoft 365 Compliance Center
 
 ![The MAPG policies summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
-## What’s available in the app policies dashboard
+## What’s available on the app policies dashboard
 
 You can see the number of active, inactive, and test policies, and the following information for each policy:
 

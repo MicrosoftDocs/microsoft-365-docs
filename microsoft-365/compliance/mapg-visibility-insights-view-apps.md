@@ -62,7 +62,7 @@ The app details pane provides additional information on these tabs:
 | Tab name | Description |
 |:-------|:-----|
 | Details | See additional data on the app such as the date first consented and the App ID. |
-| Usage | See the data accessed by the app in the tenant, plot the data usage, and filter by High Value Entity (HVE) users to show usage by [priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
+| Usage | See the data accessed by the app in the tenant, plot the data usage, and show usage by the top \<x> users and users with [priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
 | Users | See a list of users who are using the app, whether they are a priority account, and the amount of data downloaded and uploaded. |
 | Permissions | See a summary of the permissions granted to and used by the app, the list of specific permissions, and their status and usage level. |
 |||

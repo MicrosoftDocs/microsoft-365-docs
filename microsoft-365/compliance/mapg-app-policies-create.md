@@ -51,7 +51,7 @@ MAPG includes these templates to generate alerts for app permissions.
 
 | Template name | Description |
 |:-------|:-----|
-| Overpermissioned apps | Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <br><br> By default, this policy will flag all apps that are marked as overpermissioned and can be customized with additional conditions and actions. |
+| Overpermissioned apps | Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <br><br> By default, this policy will flag all apps that are marked as overpermissioned if not used for 90 days. This time period filter can be customized with additional conditions and actions. |
 | New app with high-privilege permissions | Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <br><br> By default, this policy will flag all apps registered within the last 7 days that have high-scoped permissions. |
 | New app with app-only permissions | Highlights all new apps with permissions to access data across the tenant, which are potentially a higher risk set of permissions. <br><br> By default, this policy will flag all apps registered within the last 7 days that have app-only permissions. |
 |||
@@ -116,7 +116,7 @@ Here are the available conditions for a custom app policy.
 | App API Access trend | X% increase in API Calls in last 7 days	 |  |
 | Users consented | (Greater than or Less than) X consented users |  |
 | Users consented trend | X% increase in last 90 days |  |
-| HVE user consented | Yes or No | A High Value Entity (HVE) user is one that is tagged as a [priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
+| HVE user consented | Yes or No | A user with a [priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
 | Delegating user | Select user(s) from list |  |
 | Delegating user’s role | Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator	| Multiple selections allowed. <br><br> Any Azure AD role with assigned member should be made available in this list. |
 | Workload accessed | OneDrive and/or SharePoint and/or Exchange | Multiple selections allowed. |
@@ -131,9 +131,9 @@ On the **Define Policy Actions** page, select **Disable app** if you want MAPG t
 
 On the **Define Policy Status** page, select one of these options:
 
-- **Audit mode**: Policies will be evaluated but configured actions will not occur. Audit mode policies appear as "Test" in the list of policies.
-- **Active**: Policies will be evaluated and configured actions will occur.
-- **Inactive**: Policies will not be evaluated and configured actions will not occur.
+- **Audit mode**: Policies are evaluated but configured actions will not occur. Audit mode policies appear with the status of **Test** in the list of policies.
+- **Active**: Policies are evaluated and configured actions will occur.
+- **Inactive**: Policies are not evaluated and configured actions will not occur.
 
 <!--
 ## Configure a user-based policy

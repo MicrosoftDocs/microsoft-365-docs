@@ -20,7 +20,7 @@ description: "Implement Microsoft Application Protection and Governance capabili
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Microsoft Application Protection and Governance (MAPG) is a security and compliance solution for business productivity apps built by third-party vendors and published for the Microsoft 365 application platform. MAPG delivers full visibility, oversight, and governance into how these publishers and apps access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
+Microsoft Application Protection and Governance (MAPG) is a security and compliance solution for business productivity and line of business apps built by third-party vendors and published for the Microsoft 365 application platform. MAPG delivers full visibility, oversight, and governance into how these publishers and apps access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
 
 <!--
 The scale of ongoing cybersecurity incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every organization. Accelerated cloud adoption with Microsoft 365 and its rich application ecosystem are constantly growing. Attackers are gaining organizational footholds through applications because:
@@ -31,7 +31,7 @@ The scale of ongoing cybersecurity incidents affecting large enterprises and sma
 
 MAPG provides you with comprehensive:
 
-- **Insights**: See a view of all the Microsoft 365 apps in your tenant on a single dashboard. You can see all the apps’ activities and react or respond to them.
+- **Insights**: See a view of all the third-party apps for the Microsoft 365 platform in your tenant on a single dashboard. You can see all the apps’ status and alert activities and react or respond to them.
 - **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting the access of risky apps to your data.
 - **Detection**: Be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used. 
 - **Remediation**: Along with automatic remediation capabilities, use remediation tools and controls in a timely manner to respond to anomalous app activity detections.

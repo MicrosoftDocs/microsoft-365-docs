@@ -30,7 +30,7 @@ Alternatively, you can access the MAPG dashboard from **Microsoft 365 admin cent
 >You must sign in with a user account with an appropriate [administrator role](manage-app-protection-governance.md#administrator-roles).
 >
 
-## What’s available in the dashboard
+## What’s available on the dashboard
 
 The dashboard contains a summary of the components of the Microsoft 365 app ecosystem in the tenant:
 
@@ -43,7 +43,7 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
   - **All categories**: Sorts across all available categories.
   - **High privilege**: High privilege is an internally determined category based on platform ML and signals.
   - **Overpermissioned**: When MAPG receives telemetry that indicates that a permission granted to an application is not being used in the last 90 days, that application is overpermissioned. MAPG must be operating for at least 90 days to determine if any app is overpermissioned.  
-  - **Unverified**: Applications that have not received[ Microsoft 365 certification](https://docs.microsoft.com/microsoft-365-app-certification/overview#microsoft-365-certification) are considered unverified.
+  - **Unverified**: Applications that have not received [publisher certification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
   - **App only**: [Application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
   - **New apps**: New Microsoft 365 apps that have been registered in the last 7 days.  
 
