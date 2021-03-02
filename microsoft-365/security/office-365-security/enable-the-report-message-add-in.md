@@ -64,6 +64,11 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 - Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
+# Limitations for Report Message add-in
+
+If the mailbox is automatically mapped, you may not be able to view the Report message add-in on outlook. This  Add-in is only available when the mailbox is added as an additional account.
+
+
 ## Get the Report Message add-in for yourself
 
 1. Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in. To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180>.
