@@ -44,7 +44,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
   - Outlook on the web
   - Outlook 2013 SP1 or later
-  - Outlook 2016 for Mac
+  - Outlook 2016 for Mac or later
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
