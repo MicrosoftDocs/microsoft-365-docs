@@ -36,7 +36,7 @@ Microsoft 365 Groups is the foundational membership service that drives all team
 - Yammer (if the group was created from Yammer)
 - A Team (if the group was created from Teams)
 - Roadmap (if you have Project for the web)
-- A Stream (If the group was created from Stream)
+- Stream
 
 With a Microsoft 365 group, you don't have to manually assign permissions to each of these resources. Adding people to the group automatically gives them the permissions they need.
 
