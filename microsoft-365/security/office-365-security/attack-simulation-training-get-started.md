@@ -105,3 +105,5 @@ For step by step instructions on how to create a payload for use within a simula
 ### Gaining insights
 
 For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](attack-simulation-training-insights.md).
+
+Note: Attack Simulator uses ATP Safe Links to securely track click data for the URL in the payload mail that’s sent to targeted recipients of a phishing campaign, even if your organization has selected “Don’t track when users click ATP Safe Links” policy option. The policy will otherwise continue to take effect as defined.
