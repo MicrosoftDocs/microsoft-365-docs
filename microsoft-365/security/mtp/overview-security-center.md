@@ -105,7 +105,7 @@ Common controls and content either appear in the same place, or are condensed in
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 security center
 
 > [!NOTE]
-> Microsoft Defender for Endpoint in the Microsoft 365 security center supports [granting access to managed security service providers (MSSPs)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mssp-access).
+> Microsoft Defender for Endpoint in the Microsoft 365 security center supports [granting access to managed security service providers (MSSPs)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access).
 
 ### Integrated reports
 
