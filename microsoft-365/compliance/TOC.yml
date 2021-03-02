@@ -371,7 +371,7 @@
               href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: Globanet data connectors
+        - name: Veritas data connectors
           items:  
             - name: CellTrust
               href: archive-celltrust-data.md          
