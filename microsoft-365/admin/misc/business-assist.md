@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Learn about the Microsoft Business Assist program and how it can help your organization with improved help and usage with Microsoft 365 for business."
+description: "Learn about the Microsoft Business Assist program and how it can help your organization with improved help and usage for Microsoft 365 for business."
 ---
 
 # Business Assist for Microsoft 365 for business
@@ -36,14 +36,6 @@ Customers with current and eligible Microsoft 365 for business plan subscription
 - Organizations with 5 or less user licenses.
 - Business Assist is only available in the U.S.
 
-## Business Assist services
-
-|**Assist**|**Empower**|**Advise**|
-|:-----|:-----|:-----|
-|**Migration assistance** Get expert assistance with moving all your current files (email, storage, documents, and communication) to Microsoft 365. |**24/7 on-demand support**|**Periodic consultation** Regular check ups from experts that help you stay current as new service capabilities are added and your company’s needs evolve.|
-|**Onboarding plan** Receive advice on how to achieve your productivity goals, with a plan tailored to your needs.|**Direct employee access** All your employees can go directly to Microsoft experts for ongoing support.|**Untap business potential** Learn about underutilized features and get advice on ways to get more value out of your subscription.|
-|**Secure and professional set up** Get help setting up subscription features that protect your business and give it a professional look.|**Connect with small business specialists** Get professional support from a real human that takes time to know you and your business.| |
-
 ## Get Business Assist
 
 Only organizations that are eligible will see the option to purchase Business Assist. Business Assist costs $5 per user per month. There's a few ways to purchase Business Assist.
@@ -59,3 +51,11 @@ Only organizations that are eligible will see the option to purchase Business As
 - You can go to the Microsoft admin center add-on page, and select Buy now.
 
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Purchase Business Assist from the Add-ons section on the Purchase services page":::
+
+## Business Assist services
+
+|**Assist**|**Empower**|**Advise**|
+|:-----|:-----|:-----|
+|**Migration assistance** Get expert assistance with moving all your current files (email, storage, documents, and communication) to Microsoft 365. |**24/7 on-demand support**|**Periodic consultation** Regular check ups from experts that help you stay current as new service capabilities are added and your company’s needs evolve.|
+|**Onboarding plan** Receive advice on how to achieve your productivity goals, with a plan tailored to your needs.|**Direct employee access** All your employees can go directly to Microsoft experts for ongoing support.|**Untap business potential** Learn about underutilized features and get advice on ways to get more value out of your subscription.|
+|**Secure and professional set up** Get help setting up subscription features that protect your business and give it a professional look.|**Connect with small business specialists** Get professional support from a real human that takes time to know you and your business.| |
