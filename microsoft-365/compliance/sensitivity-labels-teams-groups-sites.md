@@ -237,7 +237,7 @@ Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Ma
 5. Run the following command to apply the label to these sites. Using our examples:
 
    ```powershell
-   $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
+   $sites | ForEach-Object {Set-SPOSite -Identity $_.url -SensitivityLabel $Id}
    ```
 
 To apply different labels to different sites, repeat the following command for each site: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
