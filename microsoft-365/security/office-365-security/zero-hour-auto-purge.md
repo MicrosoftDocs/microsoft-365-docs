@@ -59,11 +59,11 @@ Malware ZAP is enabled by default in anti-malware policies. For more information
 
 For **read or unread messages** that are identified as phishing after delivery, the ZAP outcome depends on the action that's configured for a **Phishing email** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for phishing and their possible ZAP outcomes are described in the following list:
 
-- **Add X-Header**, **Prepend subject line with text**: ZAP takes no action on the message.
+- **Add X-Header**, **Prepend subject line with text**, **Redirect message to email address**, **Delete message**: ZAP takes no action on the message.
 
 - **Move message to Junk Email**: ZAP moves the message to the Junk Email folder, as long as the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Redirect message to email address**, **Delete message**, **Quarantine message**: ZAP quarantines the message.
+- **Quarantine message**: ZAP quarantines the message.
 
 By default, phish ZAP is enabled in anti-spam policies, and the default action for the **Phishing email** filtering verdict is **Quarantine message**, which means phish ZAP quarantines the message by default.
 
@@ -73,11 +73,11 @@ For more information about configuring spam filtering verdicts, see [Configure a
 
 For **unread messages** that are identified as spam after delivery, the ZAP outcome depends on the action that's configured for the **Spam** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for spam and their possible ZAP outcomes are described in the following list:
 
-- **Add X-Header**, **Prepend subject line with text**: ZAP takes no action on the message.
+- **Add X-Header**, **Prepend subject line with text**, **Redirect message to email address**, **Delete message**: ZAP takes no action on the message.
 
 - **Move message to Junk Email**: ZAP moves the message to the Junk Email folder, as long as the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Redirect message to email address**, **Delete message**, **Quarantine message**: ZAP quarantines the message. End-users can view and manage their own spam quarantined messages.
+- **Quarantine message**: ZAP quarantines the message. End-users can view and manage their own spam quarantined messages.
 
 By default, spam ZAP is enabled in anti-spam policies, and the default action for the **Spam** filtering verdict is **Move message to Junk Email folder**, which means spam ZAP moves **unread** messages to the Junk Email folder by default.
 
