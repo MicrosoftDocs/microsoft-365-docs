@@ -54,7 +54,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
-- The Report Message add-in is not available for mailboxes in on-premises Exchange organizations.
+- The Report Message add-in is not available for shared mailboxes or mailboxes in on-premises Exchange organizations.
 
 - You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
@@ -63,11 +63,6 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
 - Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-
-# Limitations for Report Message add-in
-
-If the mailbox is automatically mapped, you may not be able to view the Report message add-in on outlook. This  Add-in is only available when the mailbox is added as an additional account.
-
 
 ## Get the Report Message add-in for yourself
 
