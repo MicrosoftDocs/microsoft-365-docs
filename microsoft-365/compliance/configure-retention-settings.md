@@ -31,7 +31,7 @@ For the scenarios that support these policies for retention, see:
 - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-Settings that are specific to each scenario are explained in their respective documentation. 
+Settings that are specific to each scenario are explained in their respective documentation.
 
 For overview information about policies for retention and how retention works in Microsoft 365, see [Learn about retention policies and retention labels](retention.md).
 
@@ -70,11 +70,9 @@ When you choose to use static scopes, you must then decide whether to apply the 
 
 #### A policy that applies to entire locations
 
-When you choose locations, with the exception of Skype for Business, the default setting is **All** when the status of the location is **On**. This default means that all instances, current and future, are automatically included in the policy without your having to specify them as included or excluded. 
+With the exception of Skype for Business, the default is that all instances for the selected locations are automatically included in the policy without your having to specify them as included or excluded.
 
-For example, all SharePoints sites for the SharePoint .
-
-For example, if a policy includes all Exchange email and all SharePoint sites, all sites and recipients will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
+For example, **All recipients **for the **Exchange email** location. With this default setting, all existing user mailboxes will be included in the policy, and any new mailboxes created after the policy is applied will automatically inherit the policy.
 
 #### A policy with specific inclusions or exclusions
 
@@ -83,11 +81,11 @@ Be aware that if you use the optional configuration to scope your retention sett
 To use the optional configuration to scope your retention settings, make sure the **Status** of that location is **On**, and then use the links to include or exclude specific users, Microsoft 365 groups, or sites.
 
 > [!WARNING]
-> If you configure includes and then remove the last one, the configuration reverts to **All** for the location.  Make sure this is the configuration that you intend before you save the policy.
+> If you configure instances to include and then remove the last one, the configuration reverts to **All** for the location.  Make sure this is the configuration that you intend before you save the policy.
 >
-> For example, if you specify one SharePoint site to include in your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data. The same applies to includes for Exchange recipients, OneDrive accounts, Teams chat users etc.
+> For example, if you specify one SharePoint site to include in your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data. The same applies to includes for Exchange recipients, OneDrive accounts, Teams chat users, and so on.
 >
-> In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify excludes to be exempt from the policy.
+> In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify exclude instances to be exempt from the policy.
 
 ## Locations
 
