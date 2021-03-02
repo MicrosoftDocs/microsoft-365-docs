@@ -109,6 +109,25 @@ This section displays the collection information that was used to collect the it
 
 The statistics displayed on the **Search statistics** tab are the same statistics from the last time that a draft collection was run. This information is preserved from the draft collection for historical reference, and can be compared to the actual collection that was committed to the review set.
 
+## Differences between draft collection estimates and the actual committed collection
+
+When you run a draft collection, an estimate of the number of items (and their total size) that meet the collection criteria is displayed on the **Summary** tab and on in **Collection estimates** section of the **Search statistics** tab. However after you commit the draft collection to a review set, the actual number of items (and their total size) added the review set are typically different from the estimates. In most cases, more items are added to the review set than were estimated from the draft collection. The following items describe the most common reasons for these differences and tips for identifying them:
+
+- **Child items**. Child items that are extracted from their parent items and added as individual files. The number of child items may significantly increase the items actually added to the review set. The number of parent items that are added to the review might be closer to the number of estimated items from the draft collection.
+
+- **Duplicate items**. Items from the draft collection that have already been added to the review in previous collection (called duplicate items) won't be added. As previously explained, the number of duplicate items in the collection is displayed on the **Summary** tab.
+
+- **Collection configuration options**. 
+
+Here are other reasons why the estimated results from a draft collection will be different that the actual committed results.
+
+- **The way results are estimated for draft collections**.
+
+- **Changes that happen between the time when estimating and committing draft collections**.
+
+- **Unindexed items**.
+
+- 
 
 
 
