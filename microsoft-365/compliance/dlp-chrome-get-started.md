@@ -27,7 +27,7 @@ Use these procedures to roll out FOOBAR.
 
 ## Before you begin
 
-To use the Google Chrome extension the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use FOOBAR extension the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
 - [Learn about FOOBAR](dlp-chrome-learn-about.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
@@ -52,6 +52,9 @@ Before you get started, you should confirm your [Microsoft 365 subscription](htt
 
 For detailed licensing guidance, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
+- Your org must be licensed for Endpoint DLP
+- Your devices must be running Windows 10 x64 build 1809 or later.
+- The device must have Antimalware Client Version is 4.18.2101.9 or later. Check your current version by opening **Windows Security** app, select the **Settings** icon, and then select **About**.
 
 
 ### Permissions
@@ -68,11 +71,11 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 
 ### Overall workflow
 
-Deploying FOOBAR is a multi-phase process. You can choose to install on one machine at a time, or use Intune or Group Policy for organization-wide deployments.
+Deploying FOOBAR is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
 
 1. [Prepare your devices](#prepare-your-devices).
 2. [Basic Setup Single Machine Selfhost](#basic-setup-single-machine-selfhost)
-3. [Deploy using Intune](#deploy-using-intune)
+3. [Deploy using Microsoft Endpoint Manager](#deploy-using-intune)
 4. [Deploy using Group Policy](#deploy-using-group-policy)
 5. [Test the Extension](#test-the-extension)
 6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
@@ -90,24 +93,20 @@ Deploying FOOBAR is a multi-phase process. You can choose to install on one mach
 
 This is the recommended method. 
 
-<<<<<<< Updated upstream
-
-=======
- <!-- CONNECT TO M365 USING THESE PROCEDURED -->
->>>>>>> Stashed changes
-1. Run the following script in PowerShell as an administrator
+1. Sign on to the Windows 10 computer that you want to install the FOOBAR on and run the this  PowerShell script as an administrator. 
 
 ```powershell
 Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ``` 
-2.	Navigate to [Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-data-loss-preve/echcggldkblhodogklpincgchnpgcdco).
-3.	Install the extension.
 
-### Deploy using Intune
+2.	Navigate to [Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-data-loss-preve/echcggldkblhodogklpincgchnpgcdco).
+3.	Install the extension using the instructions on the Chrome Web Store page.
+
+### Deploy using Microsoft Endpoint Manager
 
 Use this setup method for organization Wide deployments 
 
-##### Enabling Required Registry Key via Intune
+##### Enabling Required Registry Key via Microsoft Endpoint Manager
 
 1.	Create a PowerShell script with the following contents:
 ```powershell
@@ -122,9 +121,9 @@ Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configur
     1. Run script in 64-bit PowerShell Host: YES
 6.	Select the proper device groups and apply the policy.
 
-#### Intune Force Install Steps
+#### Microsoft Endpoint Manager Force Install Steps
 
-Before adding FOOBAR to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Intune are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Before adding FOOBAR to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Microsoft Endpoint Manager are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
 
  After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
@@ -144,7 +143,7 @@ Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000;
 
 ### Deploy using Group Policy
 
-If you don't want to use Intune, you can use group policies to deploy FOOBAR across your organization
+If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy FOOBAR across your organization
 
 1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMXs into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 2.	Create a PowerShell script using this:
