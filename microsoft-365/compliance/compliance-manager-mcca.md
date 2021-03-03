@@ -59,6 +59,14 @@ After you install MCCA, you can run MCCA and generate a report. To run a report:
     ```powershell
     Get-MCCAReport
     ```
+    If you are U.S. Government GCC High or U.S. Government DoD customer, you will have to provide an additional input parameter to run the report.
+    ```powershell
+    Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
+    ```
+    ```powershell
+    Get-MCCAReport -ExchangeEnvironmentName O365USGovDoD
+    ```
+
 3. Once MCCA runs, it does an initial version check and ask for credentials. At the Input the user name prompt, sign in with your Microsoft 365 account email address ([view the roles eligible to create reports](#role-based-reporting)). Then enter your password at the password prompt.
 
 Your report will then take approximately 2-5 minutes to generate. When it’s done, a browser window opens and displays your HTML report. Every time you run the tool, it will ask for your credentials and generate a new report. This report is stored locally in the following directory:
