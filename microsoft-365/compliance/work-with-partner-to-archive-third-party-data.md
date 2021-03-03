@@ -65,7 +65,7 @@ The following sections list the Microsoft partners (and the third-party data sou
   
 [ArchiveSocial](#archivesocial)
   
-[Veritas](#globanet)
+[Veritas](#veritas)
   
 [OpenText](#opentext)
   
