@@ -63,6 +63,7 @@ You can prioritize a list of orders in different ways:
 - To group orders by customer, select the Customer type column, and select Group by Customer type.
 
 ### Update an item's status
+
 You can track progress instantly:
 
 - Double-click an item to open it, and update the order's progress.
