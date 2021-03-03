@@ -11,6 +11,8 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: "Optimize the network access to your Microsoft 365 tenants."
