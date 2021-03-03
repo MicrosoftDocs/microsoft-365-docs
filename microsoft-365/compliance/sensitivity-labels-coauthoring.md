@@ -32,12 +32,14 @@ Without this setting enabled for your tenant, users must check out an encrypted 
 
 In addition, enabling this functionality results in the [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality being supported for these labeled and encrypted files.
 
+To read the release announcement, see the blog post [Announcing co-authoring on Microsoft Information Protection-encrypted documents and labeling updates](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+
 ## Metadata changes for sensitivity labels
 
 > [!IMPORTANT]
 > After you enable the setting for co-authoring, labeling information for unencrypted files is no longer saved in custom properties.
 > 
-> Do not enable this setting if you have any apps, services, scripts, or tools in your organization that reads or writes labeling metadata to the old location.
+> Do not enable this setting if you use any apps, services, scripts, or tools that reads or writes labeling metadata to the old location.
 
 Before you enable the setting to support co-authoring for Office desktop apps, it's important to understand that this action makes changes to the labeling metadata that is saved to and read from Office files.
 
@@ -75,7 +77,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
-- All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels):
+- All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions:
     
     - **Microsoft 365 Apps for enterprise:**
         - Windows: [Current Channel (Preview)](https://office.com/insider) with minimum build 16.0.13801.20182, or [Beta Channel](https://office.com/insider) with minimum build 16.0.13819.20006
