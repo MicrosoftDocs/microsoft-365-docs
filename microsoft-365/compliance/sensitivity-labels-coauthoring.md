@@ -86,7 +86,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
     - **Azure Information Protection unified labeling client and scanner:**
-        - A public preview version (installation name of AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+        - A public preview version (installation name of AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
