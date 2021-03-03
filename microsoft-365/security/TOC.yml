@@ -227,8 +227,10 @@
                       href: mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
                       href: mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
-                    - name: DeviceTvmSoftwareInventoryVulnerabilities
-                      href: mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
+                    - name: DeviceTvmSoftwareInventory
+                      href: mtp/advanced-hunting-devicetvmsoftwareinventory-table.md
+                    - name: DeviceTvmSoftwareVulnerabilities
+                      href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
                     - name: EmailAttachmentInfo
