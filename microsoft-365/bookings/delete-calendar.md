@@ -51,7 +51,7 @@ To perform these steps, you must be using an active Microsoft PowerShell command
    Import-Module ExchangeOnlineManagement
    ```
 
-   **Note**: If you've already [installed the EXO V2 module](exchange-online-powershell-v2.md#install-and-maintain-the-exo-v2-module), the previous command will work as written.
+   **Note**: If you've already [installed the EXO V2 module](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.
 2. The command that you need to run uses the following syntax:
 
    ```powershell
