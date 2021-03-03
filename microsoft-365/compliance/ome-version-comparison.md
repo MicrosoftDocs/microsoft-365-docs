@@ -34,7 +34,7 @@ Exchange Online includes Information Rights Management (IRM) functionality that 
 
 ### Instruction for AD RMS deprecation
 
-See [KB article 5001237]https://support.microsoft.com/help/5001237 to assess whether this impacts your organization.  The article provides recommendation on migation options.
+See the topic [How to migrate AD RMS to Azure RMS in Exchange Online](https://support.microsoft.com/help/5001237) to assess whether this deprecation impacts your organization. The article provides recommendations on migration options.
 
 ## Side-by-side comparison of features and capabilities
 
