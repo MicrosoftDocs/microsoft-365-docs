@@ -147,3 +147,7 @@ In the following example:
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Messages that do not follow this format will not display properly in the Submissions portal.
+
+## Customize the end-user confirmation message
+
+## Customize the end-user reporting options
