@@ -996,7 +996,7 @@ The following table lists the activities in Briefing email that are logged in th
 
 ### MyAnalytics activities
 
-The following table lists the activities in MyAnalytics that are logged in the Office 365 audit log. For more information about MyAnalytics, see: [MyAnalytics for admins](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
+The following table lists the activities in MyAnalytics that are logged in the Office 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
