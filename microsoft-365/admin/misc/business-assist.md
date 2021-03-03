@@ -26,8 +26,11 @@ Get the most out of your Microsoft 365 subscription with expert advice from smal
 
 A business assistant expert can help you with your Microsoft 365 subscription.
 
-|**A business assistant expert can provide adive and guidance that's tailor-made for you business**|**A business assistant expert stays up-to-date on the latest accounting rules so you don't have to**|**With a A business assistant expert you can spend less time on your books and more time pursuing your passion**|
+|**A business assistant expert can provide advice and guidance that's tailor-made for your business**|**A business assistant expert stays up-to-date on the latest accounting rules so you don't have to**|**With a A business assistant expert you can spend less time on your books and more time pursuing your passion**|
 |:-----|:-----|:-----|
+
+> [!div class="nextstepaction"]
+> [Learn about adding code to articles](https://www.microsoft.com/en-us/microsoft-365/business)
 
 ## Eligibility for Business Assist
 
@@ -51,6 +54,9 @@ Only organizations that are eligible will see the option to purchase Business As
 - You can go to the Microsoft admin center add-on page, and select Buy now.
 
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Purchase Business Assist from the Add-ons section on the Purchase services page":::
+
+> [!div class="nextstepaction"]
+> [Learn about adding code to articles](https://www.microsoft.com/en-us/microsoft-365/business)
 
 ## Business Assist services
 
