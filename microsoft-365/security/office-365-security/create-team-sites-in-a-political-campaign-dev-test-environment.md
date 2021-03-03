@@ -26,9 +26,12 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
 
- **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment.
-
+- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
+- 
+ **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment. 
+   
 Use the instructions in this article to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution. These sites are described in detail on Topic 10, titled **SharePoint and OneDrive for Business**.
 
 ## Phase 1: Create your political campaign dev/test environment
@@ -417,6 +420,6 @@ To protect a document with Azure Information Protection and this new label, you 
 
 [Configure groups and users for a political campaign dev/test environment](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Microsoft 365 solution and architecture center](../../solutions/index.yml)

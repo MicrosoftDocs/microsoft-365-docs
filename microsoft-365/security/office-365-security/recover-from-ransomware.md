@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: 
 audience: ITPro
-ms.article: how-to
+ms.topic: article
 
 localization_priority: Normal
 search.appverid: 
@@ -22,6 +22,10 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are very sophisticated.
 

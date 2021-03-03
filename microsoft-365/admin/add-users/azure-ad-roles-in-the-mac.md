@@ -15,7 +15,6 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
-- okr_smb
 description: "Manage these Azure admin roles in the Microsoft 365 admin center."
 ---
 

@@ -20,6 +20,8 @@ Exchange Online PowerShell is required to view and configure multi geo propertie
 
 You need the [Microsoft Azure Active Directory PowerShell Module](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 or later in v1.x to see the **PreferredDataLocation** property on user objects. User objects synchronized via AAD Connect into AAD cannot have their **PreferredDataLocation** value directly modified via AAD PowerShell. Cloud-only user objects can be modified via AAD PowerShell. To connect to Azure AD PowerShell, see [Connect to PowerShell](connect-to-microsoft-365-powershell.md).
 
+In Exchange Online multi-geo environments, you don't need to do any manual steps to add geos to your tenant. After you receive the Message Center post that says multi-geo is ready for Exchange Online, all available geos will be ready and configured for you to use.
+
 ## Connect directly to a geo location using Exchange Online PowerShell
 
 Typically, Exchange Online PowerShell will connect to the central geo location. But, you can also connect directly to satellite geo locations. Because of performance improvements, we recommend connecting directly to the satellite geo location when you only manage users in that location.
