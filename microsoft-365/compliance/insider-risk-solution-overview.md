@@ -15,6 +15,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- m365solution-overview
 ---
 
 # Insider risk solutions in Microsoft 365
