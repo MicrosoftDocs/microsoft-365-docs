@@ -26,6 +26,24 @@ With Microsoft Application Protection and Governance (MAPG), you can:
 
 - Easily remediate alerts either manually after investigation or automatically through the action settings on active app policies.
 
+
+>[!Note]
+>Anomalous activities from Azure-only apps that are not granted permissions to access Microsoft 365 resources are not included in MAPG detection and alerting.
+>
+
+Here's a quick review of required administrator roles for alerts and remediation.
+
+| Role | Read alerts | Update alerts |
+|:-------|:-----|:-------|
+| Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Compliance Reader | ![Check mark](..\media\checkmark.png) |  |
+| Global Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Global Reader  | ![Check mark](..\media\checkmark.png) |  |
+| Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+| Security Reader  | ![Check mark](..\media\checkmark.png) |  |
+| Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
+||||
+
 ## Integration with Azure AD
 
 **Feedback from Anand:** We should add some details on how MAPG works with M365 Defender (previously MTP). Also, we should highlight the integration with MCAS and AAD.
@@ -45,25 +63,6 @@ Key cross-reference resources:
 - [Monitor alerts raised in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
 - [Control which third-party cloud OAuth apps get permissions](https://docs.microsoft.com/cloud-app-security/manage-app-permissions)
 
-
-
-
->[!Note]
->Anomalous activities from Azure-only apps that are not granted permissions to access Microsoft 365 resources are not included in MAPG detection and alerting.
->
-
-Here's a quick review of required administrator roles for alerts and remediation.
-
-| Role | Read alerts | Update alerts |
-|:-------|:-----|:-------|
-| Compliance Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Compliance Reader | ![Check mark](..\media\checkmark.png) |  |
-| Global Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Global Reader  | ![Check mark](..\media\checkmark.png) |  |
-| Security Administrator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-| Security Reader  | ![Check mark](..\media\checkmark.png) |  |
-| Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
-||||
 
 <!--
 CFA #3 Scenario 1:  As an admin, I can investigate alerts associated to my M365 apps through MAPG.
