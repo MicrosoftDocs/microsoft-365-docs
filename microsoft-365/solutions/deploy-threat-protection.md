@@ -8,6 +8,7 @@ ms.audience: ITPro
 ms.topic: article
 ms.prod: m365-security
 ms.technology: m365d
+audience: Admin
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance

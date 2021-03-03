@@ -5,6 +5,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
+audience: Admin
 ms.topic: article
 ms.prod: m365-security
 ms.technology: m365d
@@ -153,7 +154,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 After you have set up and deployed your threat protection services and capabilities, your next step is to monitor threat detections, and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can monitor and managing security across your Microsoft identities, data, devices, apps, and infrastructure. 
 
-![Microsoft 365 security center](../media/deploy-threat-protection/m365-security-center.png)
+![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
 
 The Microsoft 365 security center is specifically intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
 - View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
