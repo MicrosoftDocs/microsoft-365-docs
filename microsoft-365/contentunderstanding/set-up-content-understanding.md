@@ -87,11 +87,11 @@ To assign licenses:
 
 1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
 
-2. Select the users that you want to license, and click **Manage product licenses**.
+2. Select the users that you want to license, and choose **Manage product licenses**.
 
-3. Select **Assign more**.
+3. Choose **Apps** from the drop-down menu.
 
-4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
+4. Select **Show apps for  SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
     > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/content-understanding/sharepoint-syntex-licenses.png)

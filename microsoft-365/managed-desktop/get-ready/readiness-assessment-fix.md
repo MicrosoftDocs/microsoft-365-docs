@@ -194,11 +194,11 @@ Security baseline policies should not target any Microsoft Managed Desktop devic
 
 **Not ready**
 
-You have a security baseline profile that targets all users, all devices or both. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines).
+You have a security baseline profile that targets all users, all devices, or both. Change the policy to use an assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines). During enrollment, we apply a new security baseline to all Microsoft Managed Desktop devices. After enrollment, you can review the Microsoft Managed Desktop security baseline policy in the **Configuration policy** area of Microsoft Endpoint Manager.
 
 **Advisory**
 
-Make sure that any security baseline policies you have exclude Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines). The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+Make sure that any security baseline policies you have exclude Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines). During enrollment, we apply a new security baseline to all Microsoft Managed Desktop devices. The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment. 
 
 
 ### Windows apps
@@ -277,13 +277,13 @@ A number of licenses are required to use Microsoft Managed Desktop.
 You don't have all the licenses you need to use Microsoft Managed Desktop. For more information, see [Microsoft Managed Desktop technologies](../intro/technologies.md) and [More about licenses](prerequisites.md#more-about-licenses).
 
 
-### Security account names
+### Microsoft Managed Desktop service accounts
 
-Certain security account names could conflict with ones created by Microsoft Managed Desktop.
+Certain account names could conflict with account names created by Microsoft Managed Desktop to manage the Microsoft Managed Desktop service.
 
 **Not ready**
 
-You have at least one account name that will conflict with ones created by Microsoft Managed Desktop. Work with your Microsoft account representative to exclude these account names.
+You have at least one account name that will conflict with account names created by Microsoft Managed Desktop. Work with your Microsoft account representative to exclude these account names. We don't list the account names publicly to minimize security risk. 
 
 
 ### Security administrator roles

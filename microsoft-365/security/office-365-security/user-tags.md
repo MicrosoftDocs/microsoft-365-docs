@@ -26,7 +26,7 @@ ms.prod: m365-security
 
 User tags are identifiers for specific groups of users in [Microsoft Defender for Office 365](office-365-atp.md). There are two types of user tags:
 
-- **System tags**: Currently, [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) is the only type of system tag.
+- **System tags**: Currently, [Priority accounts](../../admin/setup/priority-accounts.md) is the only type of system tag.
 - **Custom tags**: You create these user tags yourself.
 
 If your organization has Defender for Office 365 Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the priority accounts tag.
@@ -54,10 +54,10 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
   **Notes**:
 
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - User tag management is controlled by the **Tag Reader**, **Tag Contributor**, and **Tag Manager** roles.
 
-- You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+- You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
 ## Use the Security Center to create user tags
 

@@ -25,6 +25,11 @@ ms.prod: m365-security
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+
 "Secure by default" is a term used to define the default settings that are most secure as possible.
 
 However, security needs to be balanced with productivity. This can include balancing across:

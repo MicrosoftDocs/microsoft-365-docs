@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords: 
   - NOCSH
 ms.reviewer: martincoetzer
@@ -22,6 +23,11 @@ ms.technology: mdo
 ---
 
 # Common identity and device access policies
+
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- Azure
 
 This article describes the common recommended policies for securing access to Microsoft 365 cloud services, including on-premises applications published with Azure Active Directory (Azure AD) Application Proxy.
 
