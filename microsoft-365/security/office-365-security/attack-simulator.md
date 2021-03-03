@@ -46,6 +46,8 @@ If your organization has Microsoft Defender for Office 365 Plan 2, which include
 
 - Your account needs to be configured for multi-factor authentication (MFA) to create and manage campaigns in Attack Simulator. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
+- Attack Simulator only works on cloud-based mailboxes.
+
 - Phishing campaigns will collect and process events for 30 days. Historical campaign data will be available for up to 90 days after you launch the campaign.
 
 - Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
