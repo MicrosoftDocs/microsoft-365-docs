@@ -28,6 +28,13 @@ Creating a custom trainable classifier first involves giving it samples that are
 
 To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
+Watch this video for a quick summary of creating a trainable classifier. You'll still need to read this full article to get the details.
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
+
+
 ## Prerequisites
 
 ### Licensing requirements
