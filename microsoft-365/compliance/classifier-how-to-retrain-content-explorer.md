@@ -25,6 +25,13 @@ This article shows you how to improve the performance of custom trainable classi
 
 To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
+Watch this video for a quick summary of the tuning and retraining process. You'll still need to read this full article to get the details.
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
+
+
 ## Permissions
 
 To access classifiers in the Microsoft 365 Compliance center:
