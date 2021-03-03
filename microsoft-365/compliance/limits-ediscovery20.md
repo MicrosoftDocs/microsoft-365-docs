@@ -81,6 +81,20 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of public folder mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain items that match the search query, only the top 500 mailboxes with the most results are available for preview.|500|
 |||
 
+## Search times
+
+Microsoft collects performance information for searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for collection searches based on the number of mailboxes included in the search.
+  
+  |**Number of mailboxes**|**Average search time**|
+  |:-----|:-----|
+  |100  <br/> |30 seconds  <br/> |
+  |1,000  <br/> |45 seconds  <br/> |
+  |10,000  <br/> |4 minutes  <br/> |
+  |25,000  <br/> |10 minutes  <br/> |
+  |50,000  <br/> |20 minutes  <br/> |
+  |100,000  <br/> |25 minutes  <br/> |
+  |||
+
 ## Viewer limits
 
 | Description of limit | Limit |

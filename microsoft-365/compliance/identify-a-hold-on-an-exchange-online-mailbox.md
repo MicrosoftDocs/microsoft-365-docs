@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to identify the different types of hold that can be placed on an Exchange Online mailbox in Microsoft 365.
+description: "Learn how to identify the different types of hold that can be placed on an Exchange Online mailbox in Microsoft 365."
 
 ---
 
@@ -30,7 +30,10 @@ Microsoft 365 offers several ways that your organization can prevent mailbox con
 
 - **[eDiscovery hold](create-ediscovery-holds.md):** Holds that are associated with a Core eDiscovery case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams.
 
-- **[In-Place Hold](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Holds that are applied to user mailboxes by using the In-Place eDiscovery & Hold tool in the Exchange admin center in Exchange Online.
+- **[In-Place Hold](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Holds that are applied to user mailboxes by using the In-Place eDiscovery & Hold tool in the Exchange admin center in Exchange Online. 
+
+   > [!NOTE]
+   > In-Place Holds have been retired and you can no longer create In-Place Holds or apply them to mailboxes. However, In-Place Holds might still be applied to mailboxes in your organization, which is why they are included in this article. For more information, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md#in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center).
 
 - **[Microsoft 365 retention policies](retention.md):** Can be configured to retain (or retain and then delete) content in user mailboxes in Exchange Online and in the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams. You can also create a retention policy to retain Skype for Business Conversations, which are stored in user mailboxes.
 
@@ -233,8 +236,6 @@ Keep the following things in mind when managing a mailbox on delay hold:
 After you identify the holds that are applied to a mailbox, you can perform tasks such as changing the duration of the hold, temporarily or permanently removing the hold, or excluding an inactive mailbox from a Microsoft 365 retention policy. For more information about performing tasks related to holds, see one of the following topics:
 
 - Run the [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) command in Security & Compliance Center PowerShell to exclude a mailbox from an organization-wide Microsoft 365 retention policy. This command can only be used for retention policies where the value for the *ExchangeLocation* property equals `All`.
-
-- Run the [Set-Mailbox -ExcludeFromOrgHolds \<hold GUID without prefix or suffix>](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) command in Exchange Online PowerShell to exclude an inactive mailbox from an organization-wide Microsoft 365 retention policy.
 
 - [Change the hold duration for an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md)
 
