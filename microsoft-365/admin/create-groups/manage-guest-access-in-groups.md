@@ -48,7 +48,7 @@ If you want to enable or disable guest access in groups, you can do so in the Mi
 
 ## Add guests to a Microsoft 365 group from the admin center
 
-If the guest already exists in your directory, you can add them to your groups from the Microsoft 365 admin center. (Groups with dynamic membership must be [managed in Azure Active Directory]((https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-create-rule).)
+If the guest already exists in your directory, you can add them to your groups from the Microsoft 365 admin center. (Groups with dynamic membership must be [managed in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-create-rule).)
   
 1. In the admin center, go to the **Groups** > **Groups** page.
   
