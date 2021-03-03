@@ -28,7 +28,7 @@ MCCA can help you quickly see which improvement actions in Compliance Manger app
 
 An additional resource for understanding MCCA is by visiting the [README instructions on GitHub](https://github.com/OfficeDev/MCCA#overview). This page provides detailed information about prerequisites and gives full installation instructions. You don’t need a GitHub account to access this page.
 
-**Availability**: MCCA is available to all organizations with Office 365 and Microsoft 365 licenses and US Government Community (GCC) Moderate customers, with plans underway to expand service to to GCC High customers.
+**Availability**: MCCA is available to all organizations with Office 365 and Microsoft 365 licenses and US Government Community (GCC) Moderate and GCC High customers, with plans underway to expand service to DOD customers.
 
 ## Install MCCA and run a report
 
@@ -59,12 +59,11 @@ After you install MCCA, you can run MCCA and generate a report. To run a report:
     ```powershell
     Get-MCCAReport
     ```
-    If you are U.S. Government GCC High or U.S. Government DoD customer, you will have to provide an additional input parameter to run the report.
+
+   If you're a GCC High customer, you'll need to provide an additional input parameter to run the report:
+
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
-    ```
-    ```powershell
-    Get-MCCAReport -ExchangeEnvironmentName O365USGovDoD
     ```
 
 3. Once MCCA runs, it does an initial version check and ask for credentials. At the Input the user name prompt, sign in with your Microsoft 365 account email address ([view the roles eligible to create reports](#role-based-reporting)). Then enter your password at the password prompt.
