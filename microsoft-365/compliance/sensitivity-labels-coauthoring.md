@@ -84,7 +84,7 @@ Make sure you understand the following prerequisites before you turn on this fea
         - Android: Not yet supported
     
     - **Azure Information Protection unified labeling client and scanner:** 
-        - A public preview version (minimum version of 2.10.45.0) that you can install from the [Microsoft Download Center](https://aka.ms/aip-coauth-pp) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
+        - A public preview version (installation name of AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
@@ -117,6 +117,8 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     - **Double Key Encryption** is selected.
     
     For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they are warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
+
+- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [more requirements or limitations](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
 
 ## Known issues for this preview
 
