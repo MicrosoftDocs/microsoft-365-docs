@@ -19,6 +19,18 @@ ms.localizationpriority: normal
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## January 2021
+New or changed article | Description
+--- | ---
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
+[Adjust settings after enrollment](get-started/conditional-access.md) | Updated article
+[Work with reports](working-with-managed-desktop/reports.md) | Updated article
+[Install Intune Company Portal on devices](get-started/company-portal.md) | Updated article
+[Device requirements](service-description/device-requirements.md) | New article
+[Compliance](intro/compliance.md) | Updated article
+[How updates are handled in Microsoft Managed Desktop](service-description/updates.md) | Updated article
+[Access the admin portal](get-started/access-admin-portal.md) | Updated article
+
 
 ## December 2020
 New or changed article | Description
