@@ -51,7 +51,9 @@ To perform these steps, you must be using an active Microsoft PowerShell command
    Import-Module ExchangeOnlineManagement
    ```
 
-   **Note**: If you've already [installed the EXO V2 module](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.
+   > [!NOTE]
+   > If you've already [installed the EXO V2 module](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.
+   
 2. The command that you need to run uses the following syntax:
 
    ```powershell
@@ -64,13 +66,13 @@ To perform these steps, you must be using an active Microsoft PowerShell command
 
 4. Once this command is done processing, enter the following command to get a list of the booking mailboxes in your tenant:
 
-   ```PowerShell
+   ```powershell
    Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
 5. Type the following command:
 
-   ```PowerShell
+   ```powershell
    remove-mailbox [BookingCalendarToDelete]
    ```
 
@@ -79,7 +81,7 @@ To perform these steps, you must be using an active Microsoft PowerShell command
 
 6. To verify that the calendar has been deleted, enter the following command:
 
-   ```PowerShell
+   ```powershell
     Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
