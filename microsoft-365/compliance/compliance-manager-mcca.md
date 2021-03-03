@@ -59,7 +59,7 @@ After you install MCCA, you can run MCCA and generate a report. To run a report:
     ```powershell
     Get-MCCAReport
     ```
-    If you are GCC High or DOD customer, you will have to provide an additional input parameter to run the report.
+    If you are U.S. Government GCC High or U.S. Government DoD customer, you will have to provide an additional input parameter to run the report.
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
     ```
