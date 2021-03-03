@@ -77,16 +77,16 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
-- All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions:
-    
-    - **Microsoft 365 Apps for enterprise:**
+- Microsoft 365 Apps for enterprise:
         - Windows: [Current Channel (Preview)](https://office.com/insider) with minimum build 16.0.13801.20182, or [Beta Channel](https://office.com/insider) with minimum build 16.0.13819.20006
         - macOS: [Beta Channel](https://office.com/insider) with minimal build 16.47.218.0
         - iOS: Not yet supported
         - Android: Not yet supported
+
+- All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
-    - **Azure Information Protection unified labeling client and scanner:** 
-        - A public preview version (installation name of AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) and one of the versions of Microsoft 365 Apps for enterprise for Windows listed in the previous item.
+    - **Azure Information Protection unified labeling client and scanner:**
+        - A public preview version (installation name of AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
