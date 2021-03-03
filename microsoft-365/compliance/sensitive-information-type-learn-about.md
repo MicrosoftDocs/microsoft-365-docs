@@ -114,9 +114,9 @@ In a sensitive information type entity definition, **confidence level** reflects
 
 A high confidence level returns the fewest false positives but might result in more false negatives. Low or medium confidence levels returns more false positives but few to zero false negatives.
 
-- **low confidence**: value of 65, matched items will contain the fewest false negatives but the most false positives.  
-- **medium confidence**: value of 75, matched items will contain an average amount of false positives and false negatives.  
-- **high confidence**: value of 85, matched items will contain the fewest false positives but the most false negatives.  
+- **low confidence**: Value of 65, matched items will contain the fewest false negatives but the most false positives. Low confidence returns all low, medium, and high confidence matches.
+- **medium confidence**: Value of 75, matched items will contain an average amount of false positives and false negatives. Medium confidence returns all medium, and high confidence matches.  
+- **high confidence**: Value of 85, matched items will contain the fewest false positives but the most false negatives. High confidence only returns high confidence matches.  
 
 You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.
 

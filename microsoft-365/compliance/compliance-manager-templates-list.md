@@ -37,12 +37,15 @@ Below is the complete list of templates in Compliance Manager. Each template det
 
 **Where to find your templates**
 
-In Compliance Manager, go to your **Assessment templates** page. You'll see a list of all the templates available to your organization.
+In Compliance Manager, go to your **Assessment templates** page. You'll see a list of all the templates available to your organization. It’s important to understand the distinction between included and premium templates:
 
 - **Included templates** are templates included as part of your organization's licensing agreement.
  - **Premium templates** displays additional templates your organization may choose to obtain (refer to the [service terms](https://go.microsoft.com/fwlink/?linkid=2132371)).
 
 Read more about [how to view and manage your templates](compliance-manager-templates.md#viewing-and-managing-templates-from-the-assessment-templates-page).
+
+> [!NOTE]
+> See [Template types](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information about included and premium templates and understanding which ones are available for your organization to use.
 
 ## Included templates
 
@@ -50,6 +53,9 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - [European Union GDPR](https://docs.microsoft.com/compliance/regulatory/gdpr) (Microsoft 365, Office 365, Intune)
 - [ISO 27001:2013](https://docs.microsoft.com/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Rev.4
+
+> [!NOTE]
+> For US Government Community (GCC) Moderate and GCC High customers, the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
 
 ## Premium templates
 

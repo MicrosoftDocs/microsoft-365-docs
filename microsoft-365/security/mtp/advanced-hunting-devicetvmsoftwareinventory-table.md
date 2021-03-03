@@ -1,6 +1,6 @@
 ---
-title: DeviceTvmSoftwareInventoryVulnerabilities table in the advanced hunting schema
-description: Learn about the inventory of software in your devices and their vulnerabilities in the DeviceTvmSoftwareInventoryVulnerabilities table of the advanced hunting schema.
+title: DeviceTvmSoftwareInventory table in the advanced hunting schema
+description: Learn about the inventory of software in your devices in the DeviceTvmSoftwareInventory table of the advanced hunting schema.
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,7 +22,7 @@ ms.topic: article
 ms.technology: m365d
 ---
 
-# DeviceTvmSoftwareInventoryVulnerabilities
+# DeviceTvmSoftwareInventory
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -30,9 +30,14 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+>[!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-The `DeviceTvmSoftwareInventoryVulnerabilities` table in the advanced hunting schema contains the [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software on your devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information. Use this reference to construct queries that return information from the table.
+The `DeviceTvmSoftwareInventory` table in the advanced hunting schema contains the [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software currently installed on devices in your network, including end of support information. You can, for instance, hunt for events involving devices that are installed with a currently vulnerable software version. Use this reference to construct queries that return information from the table.
+
+>[!NOTE]
+> The `DeviceTvmSoftwareInventory` and `DeviceTvmSoftwareVulnerabilities` tables have replaced the `DeviceTvmSoftwareInventoryVulnerabilities` table. Together, the first two tables include more columns you can use to help inform your vulnerablity management activities or hunt for vulnerable devices.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -46,8 +51,8 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `SoftwareVendor` | string | Name of the software vendor |
 | `SoftwareName` | string | Name of the software product |
 | `SoftwareVersion` | string | Version number of the software product |
-| `CveId` | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system |
-| `VulnerabilitySeverityLevel` | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape |
+| `EndOfSupportStatus` | string | Indicates the lifecycle stage of the software product relative to its specified end-of-support (EOS) or end-of-life (EOL) date |
+| `EndOfSupportDate` | string | End-of-support (EOS) or end-of-life (EOL) date of the software product |
 
 
 
