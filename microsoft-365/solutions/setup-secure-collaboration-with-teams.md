@@ -74,7 +74,7 @@ Microsoft 365 provides many options for governing your collaboration solution. W
 
 To manage access to information with different sensitivities, we've developed [three different tiers of protection for Teams](configure-teams-three-tiers-protection.md). You can customize any of these tiers to better address the needs or your business. 
 
-![Thumb image for Teams logical architecture poster](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
+![Graphic of three levels of protection for Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
 These tiers - *baseline*, *sensitive*, and *highly sensitive* - gradually increase the protections that help prevent oversharing and potential information leakage, as shown in the following table.
@@ -132,7 +132,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 
 |Training:|Manage team collaboration with Microsoft Teams|
 |:---|:---|
-|![Teams training icon](../media/manage-team-collaboration-with-microsoft-teams.svg)|Manage team collaboration with Microsoft Teams introduces you to the features and capabilities of Microsoft Teams, the central hub for team collaboration in Microsoft 365. You’ll learn how you can use Teams to facilitate teamwork and communication within your organization, both on and off premises, on a wide range of devices—from desktops to tablets to phones—while taking advantage of all the rich functionality of Office 365 applications. You’ll gain an understanding of how Teams provides a comprehensive and flexible environment for collaboration across applications and devices. This learning path can help you prepare for the Microsoft 365 Certified: Teams Administrator Associate certification.<br><br>2 hr 17 min - Learning Path - 5 Modules|
+|![Teams collaboration training icon](../media/manage-team-collaboration-with-microsoft-teams.svg)|Manage team collaboration with Microsoft Teams introduces you to the features and capabilities of Microsoft Teams, the central hub for team collaboration in Microsoft 365. You’ll learn how you can use Teams to facilitate teamwork and communication within your organization, both on and off premises, on a wide range of devices—from desktops to tablets to phones—while taking advantage of all the rich functionality of Office 365 applications. You’ll gain an understanding of how Teams provides a comprehensive and flexible environment for collaboration across applications and devices. This learning path can help you prepare for the Microsoft 365 Certified: Teams Administrator Associate certification.<br><br>2 hr 17 min - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
 > [Start >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
@@ -150,7 +150,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 
 |Training:|Protect enterprise information with Microsoft 365|
 |:---|:---|
-|![Teams training icon](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Learning Path - 5 Modules|
+|![Teams info protection training icon](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
 > [Start >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
