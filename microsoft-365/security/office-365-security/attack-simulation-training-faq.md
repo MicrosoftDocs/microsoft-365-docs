@@ -181,7 +181,3 @@ A: Region aware delivery uses the TimeZone attribute of the targeted user's mail
 At 9:00 AM on the same day, the simulation message is sent to UserB. With region-aware delivery, the message is not sent to UserA on the same day, because 9:00 AM Pacific time is 12:00 PM Eastern time. Instead, the message is sent to UserA at 9:00 AM Eastern time on the following day.
 
 So, on the initial run of a campaign with region aware delivery enabled, it might appear that the simulation message was sent only to users in a specific time zone. But, as time passes and more users come into scope, the targeted users will increase.
-
-### Q: Does Attack simulation training deliver messages to on-prem mailboxes? Is this a supported scenario?
-
-A: Yes. Attack simulation training can deliver messages to on-prem mailboxes.
