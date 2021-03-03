@@ -365,7 +365,7 @@ Click one of the following links to go to a specific table.
         [Power BI activities](#power-bi-activities)
     :::column-end:::
     :::column:::
-        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+        [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
         [Microsoft Teams activities](#microsoft-teams-activities)
@@ -428,7 +428,8 @@ Click one of the following links to go to a specific table.
         [Exchange admin activities](#exchange-admin-audit-log)
     :::column-end:::
     :::column:::
-        []()
+
+
     :::column-end:::
 :::row-end:::
 
