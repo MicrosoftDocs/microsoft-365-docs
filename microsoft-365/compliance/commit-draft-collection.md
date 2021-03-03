@@ -73,11 +73,13 @@ When you commit a draft collection to a review set, the following things happen:
 
 - All items in the search results are copied from the original data source in the live service, and copied to a secure Azure Storage location in the Microsoft cloud.
 
-- All items (including the content and metadata) are reindexed so that all data in the review set is fully searchable during the review of the case data. Reindexing the content in a collection results in thorough and fast searches when you search or filter the content in the review set during the case investigation.
+- All items (including the content and metadata) that aren't located in custodian or non-custodian data sources are reindexed (in a process called *deep indexing*) so that all data in the review set is fully searchable during the review of the case data. Reindexing the content in a collection results in thorough and fast searches when you search or filter the content in the review set during the case investigation.
 
 - Encrypted SharePoint and OneDrive documents and encrypted files attached email messages that's returned in the search results are decrypted when you commit the collection to a review set. You can review and query the decrypted files in the review set. For more information, see [Decryption in Microsoft 365 eDiscovery tools](ediscovery-decryption.md).
 
 - Optical character recognition (OCR) functionality extracts text from images, and includes the image text with the content that's added to a review set. For more information, see the [Optical character recognition](#optical-character-recognition) section in this article.
+
+- After the commit is successfully completed, the value of the status column of on the **Collections** tab is changed to `Committed`.
 
 ## Optical character recognition
 
