@@ -52,7 +52,7 @@ To perform these steps, you must be using an active Microsoft PowerShell command
    ```
 
    > [!NOTE]
-   > If you've already [installed the EXO V2 module](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.
+   > If you've already [installed the EXO V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.
    
 2. The command that you need to run uses the following syntax:
 
