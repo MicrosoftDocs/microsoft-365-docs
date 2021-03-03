@@ -39,12 +39,13 @@ Microsoft Managed Desktop stores its data in one or more of the following Micros
 
 - Azure SQL
 - Azure storage
+- Dynamics 365
 
-Microsoft Managed Desktop stores its data in the United States. Personal data is retained by Microsoft Managed Desktop for a maximum of 30 days.
+Microsoft Managed Desktop stores its data in the United States. Personal data is retained by Microsoft Managed Desktop for a maximum of 30 days, except for alert data for Microsoft Managed Desktop devices collected by Microsoft Defender for Endpoint. The actual alert data (which could include personal data) is stored for 180 days. Alert data with personal data removed is stored for up to two years. In compliance with the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA), Microsoft Managed Desktop honors the data subject rights for any personal data that is stored in alert data.
 
 ### Staff location
 
-The MMD Operations and MMD Security Operations teams are located in the United States and India.
+The Microsoft Managed Desktop Operations and Security Operations teams are located in the United States and India.
 
 ## Data usage of Microsoft Managed Desktop
 
@@ -72,7 +73,7 @@ Microsoft Managed Desktop processes these entities to provide the service:
 - Tenant data
 - Azure Active Directory resources
 - Policy and configuration data
-- Microsoft Defender for Endpoint metadata
+- Microsoft Defender for Endpoint metadata and alert data
 - Windows diagnostic data
 - Product and service usage data
 
@@ -118,7 +119,7 @@ Microsoft Managed Desktop does not use any personal data collected as part of pr
 
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as data subjects) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the data controller or just controller). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a Data Subject Request or DSR.
 
-Similarly, the California Consumer Privacy Act (CCPA) provides privacy rights and obligations to California consumers, including rights similar to GDPR's Data Subject Rights, such as the right to delete, access, and receive (portability) their personal information. The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and "opt-out / opt-in" requirements for certain data transfers classified as "sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide) and the [California Consumer Privacy Act FAQ](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide).
+Similarly, the CCPA provides privacy rights and obligations to California consumers, including rights similar to GDPR's Data Subject Rights, such as the right to delete, access, and receive (portability) their personal information. The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and "opt-out / opt-in" requirements for certain data transfers classified as "sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide) and the [California Consumer Privacy Act FAQ](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide).
 
 The following section discusses how Microsoft Managed Desktop helps controllers to find, access, and act on personal data or personal information used by Microsoft Managed Desktop.
 
@@ -128,6 +129,10 @@ The following section discusses how Microsoft Managed Desktop helps controllers 
 ### IT Admin contact information
 
 A tenant administrator can view, correct, and delete their own personal data (such as their own contact information) directly in the Admin Contact section of the Microsoft Managed Desktop Portal.
+
+## Microsoft Defender for Endpoint alert data
+
+Security administrators can request an extraction or deletion of personal data related to Microsoft Defender for Endpoint alerts on a Microsoft Managed Desktop managed device in their environment. The security administrator should sign in to the Microsoft Managed Desktop [Admin Portal](https://aka.ms/memadmin) and submit a support request. Select **Support request type** of **Change request**, **Category** of **Security**, and **Subcategory** of **Other**, and then provide the relevant device names in the description along with your request for extraction or deletion of data.
 
 ### User-related personal data
 
