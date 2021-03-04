@@ -29,6 +29,8 @@ new DLP alert management dashboard in the [Microsoft 365 compliance
 center](https://compliance.microsoft.com/) to view alerts, events, and
 associated metadata for DLP policy violations.
 
+<!-- LEFT OFF HERE-->
+
 ## Features
 
 The following features are part of this:
