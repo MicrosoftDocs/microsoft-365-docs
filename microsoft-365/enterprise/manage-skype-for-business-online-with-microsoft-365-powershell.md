@@ -35,13 +35,6 @@ Install the [Teams PowerShell module](https://docs.microsoft.com/microsoftteams/
 1. Open a Windows PowerShell command prompt window and run the following commands:
     
    ```powershell
-   # When using Teams PowerShell Module 1.1.6
-   Import-Module MicrosoftTeams
-   $userCredential = Get-Credential
-   $sfbSession = New-CsOnlineSession -Credential $userCredential
-   Import-PSSession $sfbSession
-   
-   # When using Teams PowerShell Module 2.0 or later
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
    Connect-MicrosoftTeams -Credential $userCredential
@@ -55,12 +48,6 @@ Install the [Teams PowerShell module](https://docs.microsoft.com/microsoftteams/
 1. Open a Windows PowerShell command prompt window, and run the following commands:
 
    ```powershell
-    # When using Teams PowerShell Module 1.1.6
-   Import-Module MicrosoftTeams
-   $sfbSession = New-CsOnlineSession
-   Import-PSSession $sfbSession
-   
-   # When using Teams PowerShell Module 2.0 or later
    Import-Module MicrosoftTeams
    Connect-MicrosoftTeams
    ```
