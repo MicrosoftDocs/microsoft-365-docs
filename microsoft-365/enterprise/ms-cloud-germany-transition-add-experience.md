@@ -30,6 +30,8 @@ The following sections provide additional information on customer experiences wh
 
 ## Services
 
+Between Phase 2 of 9 and Phase 3 of 9, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenants information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours. 
+
 ### Azure AD (Phase 2 of 9)
 
 | Step(s) | Description | Applies to | Impact |
