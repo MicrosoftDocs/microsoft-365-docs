@@ -27,6 +27,13 @@ description: "Learn about the Microsoft Business Assist program and how it can h
 > [!div class="nextstepaction"]
 > [Buy now](https://www.microsoft.com/en-us/microsoft-365/business)
 
+## Business assist services
+
+:::image type="content" source="../../media/projectgenie-business-service-details.png" alt-text="Screenshot: Showing the benefits of Business Assist for Microsoft 365":::
+
+> [!div class="nextstepaction"]
+> [Buy now](https://www.microsoft.com/en-us/microsoft-365/business)
+
 ## Eligibility for Business Assist
 
 Customers with current and eligible Microsoft 365 for business plan subscriptions can use Business Assist onboarding, migration, and management services.
