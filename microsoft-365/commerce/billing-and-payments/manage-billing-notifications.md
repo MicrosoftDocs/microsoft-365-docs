@@ -84,7 +84,7 @@ In addition to your Global and Billing admins, we send billing notifications to 
 > [!NOTE]
 > Billing admins can also do the steps in this section.
 
-You can choose to have a copy of your organization's invoice attached as a PDF file to invoice notification emails when a new invoice is ready. Use the following steps to receive invoices as attachments.
+You can have a copy of your organization's invoice attached as a PDF file to invoice notification emails when a new invoice is ready. Use the following steps to receive invoices as attachments.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 2. Under **Billing notification settings**, select **Edit notification settings**.
@@ -98,7 +98,7 @@ If you have a billing profile, some of the steps described in this article might
 
 ### Who receives Billing notifications?
 
-Billing notification emails are sent to the primary and alternate email addresses for users who’re assigned one of the following roles:
+Billing notification emails are sent to the primary and alternate email addresses for users who are assigned one of the following roles:
 
 - Billing profile owner
 - Billing profile contributor
