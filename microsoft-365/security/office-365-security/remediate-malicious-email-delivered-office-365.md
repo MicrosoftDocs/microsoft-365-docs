@@ -126,6 +126,8 @@ Open any remediation item to view details about it, including its name, creation
   - **Success**: The desired action on remediable emails was accomplished. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email isn't found in the original folder after the action is taken, the status will show as successful.
 
   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
+  
+  - **Already in destination**: The desired action was already taken on the email OR the email already existed in the destination location. For example: An email was soft deleted by the admin through Explorer on day one. Then similar emails show up on day 2, which are again soft deleted by the admin. While selecting these emails, admin ends up picking some emails from day one which are already soft deleted. Now these emails will not be acted upon again, they will just show as "already in destination", since no action was taken on them as they existed in the destination location.
 
   Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
 

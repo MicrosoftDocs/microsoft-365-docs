@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
-    - m365initiative-topics
+    - m365initiative-viva-topics
 localization_priority: None
 description: "Learn about user roles in Viva Topics."
 ---

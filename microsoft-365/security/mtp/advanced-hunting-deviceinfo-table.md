@@ -32,7 +32,7 @@ ms.technology: m365d
 
 
 
-The `DeviceInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about machines in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
+The `DeviceInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about devices in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -47,13 +47,24 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7 |
 | `OSBuild` | string | Build version of the operating system running on the machine |
 | `IsAzureADJoined` | boolean | Boolean indicator of whether machine is joined to the Azure Active Directory |
-| `DeviceObjectId` | string | Unique identifier for the device in Azure AD |
+| `AadObjectId` | string | Unique identifier for the device in Azure AD |
 | `LoggedOnUsers` | string | List of all users that are logged on the machine at the time of the event in JSON array format |
 | `RegistryDeviceTag` | string | Machine tag added through the registry |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 |`AdditionalFields` | string | Additional information about the event in JSON array format |
 | `OSVersion` | string | Version of the operating system running on the machine |
 | `MachineGroup` | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine |
+
+The `DeviceInfo` table provides device information based on heartbeats, which are periodic reports or signals from a device. Every fifteen minutes, the device sends a partial heartbeat that contains frequently changing attributes like `LoggedOnUsers`. Once a day, a full heartbeat containing the device's attributes is sent.
+
+You can use the following sample query to get the latest state of a device:
+
+```kusto
+// Get latest information on user/device
+DeviceInfo
+| where DeviceName == "example" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
