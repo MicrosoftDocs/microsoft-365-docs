@@ -98,11 +98,26 @@ Individual users can try out Cortana voice assistance in the Teams mobile app by
 
 [Learn more about Cortana voice assistance in Teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
+### Conversational AI in Outlook for iOS with Cortana
+
+In Outlook for iOS, Cortana’s voice-driven conversational AI experience enables users to ask their productivity assistant to schedule meetings, compose emails, manage their calendar and inbox, and find all kinds of information.
+
+Using natural language, speech recognition, machine learning, and linguistics based on Microsoft AI technology, Cortana gets to know your context to help you stay organized, connected to the people and things that are important to you, and in control of your day.
+
+Simply use the microphone button to ask Cortana to add meeting recipients, or change dates, times, or locations. You can also ask Cortana to find specific events. Lastly, you can ask Cortana to compose quick emails, forward messages, or reply to threads. Cortana’s mic can also help you start Play My Emails in Outlook for iOS, so you can listen to your inbox hands-free.
+
+Initially, this new conversational AI capability with Cortana will be available in English for customers in the United States using Outlook for iOS with a Microsoft 365 work account. To learn more, go to [Start a conversation with your personal productivity assistant in Outlook with Cortana](https://techcommunity.microsoft.com/t5/outlook-blog/start-a-conversation-with-your-personal-productivity-assistant/ba-p/2071416#:~:text=Conversational%20AI%20allows%20you%20to,time%2C%20all%20with%20your%20voice).
+
+### Conversational AI with Cortana in Outlook with iOS is an opt-in experience
+
+Individual users will be prompted to opt in to the conversational AI experience the first time they select the “Ask Cortana” mic button in Outlook on iOS.
+
 ### Play My Emails
 
 Play My Emails (as connected to through Outlook mobile) is a voice-driven, hands-free experience for users to listen to new messages in their Focused Inbox and changes to their day via the speakers on their phone, headphones, or connected audio device. Users can ask Cortana to read their recent emails aloud, and ask Cortana to take actions such as flag, archive, delete, and skip messages. This feature is especially helpful to catch up on your email while commuting, multitasking, or on the go. When the user talks to Cortana in Play My Emails, the speech audio request goes directly to Cortana enterprise services. A text to speech readout of the user's email is processed inside the Office 365 cloud. During this process, no Office 365 data is processed on the user's mobile device and no email data is saved. A transcript of spoken commands (i.e. "mark as read," "next," "flag," etc.) may be retained in accordance with the Data Protection Terms in the Microsoft [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
 Cortana will call out when an email is protected and briefly pause before reading the message to give users enough time to pause playback or skip to the next message. Similar to a private phone call, users should exercise caution when initiating playback in locations where confidential information could potentially be overheard. In these instances, it's recommended that employees of your organization wear headphones in appropriate environments when using Play My Emails in Outlook mobile.
+
 
 ### Opt out of Play My Emails
 
