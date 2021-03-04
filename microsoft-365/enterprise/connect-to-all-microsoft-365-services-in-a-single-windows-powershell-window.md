@@ -110,13 +110,6 @@ Follow these steps to connect to all the services in a single PowerShell window 
    > Skype for Business Online Connector is currently part of the latest Teams PowerShell module. If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.
    
    ```powershell
-   # When using Teams PowerShell Module 1.1.6
-   Import-Module MicrosoftTeams
-   $credential = Get-Credential
-   $sfboSession = New-CsOnlineSession -Credential $credential
-   Import-PSSession $sfboSession
-   
-   # When using Teams PowerShell Module 2.0 or later
    Import-Module MicrosoftTeams
    $credential = Get-Credential
    Connect-MicrosoftTeams -Credential $credential
@@ -169,11 +162,7 @@ Connect-AzureAD -Credential $credential
 #SharePoint Online
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-#Skype for Business Online & using Teams PowerShell Module 1.1.6
-Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
-# #Skype for Business Online & using Teams PowerShell Module 2.0 or later
+#Skype for Business Online
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
@@ -199,11 +188,7 @@ Connect-MsolService -Credential $credential
 #SharePoint Online
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-#Skype for Business Online & using Teams PowerShell Module 1.1.6
-Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
-#Skype for Business Online & using Teams PowerShell Module 2.0 or later
+#Skype for Business Online
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
@@ -229,11 +214,7 @@ $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 Connect-AzureAD
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
-#Skype for Business Online & using Teams PowerShell Module 1.1.6
-Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
-#Skype for Business Online & using Teams PowerShell Module 2.0 or later
+#Skype for Business Online
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 #Exchange Online
@@ -256,11 +237,7 @@ $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
-#Skype for Business Online & using Teams PowerShell Module 1.1.6
-Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
-#Skype for Business Online & using Teams PowerShell Module 2.0 or later
+#Skype for Business Online
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 #Exchange Online
