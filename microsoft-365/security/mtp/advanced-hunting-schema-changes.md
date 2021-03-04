@@ -71,6 +71,7 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 ## February 2021
 
+1. In the [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) and [EmailEvents](advanced-hunting-emailevents-table.md) tables, we deprecated the `MalwareFilterVerdict`and `PhishDetectionMethod` columns and replaced them with the `ThreatTypes` column. We also deprecated the `MalwareDetectionMethod` and `PhishDetectionMethod` columns and replaced them with the `DetectionMethods` column. This streamlining allows us to provide more information under the new columns. The mapping is provided below.
 
 | Table name | Original column name | Replaced by | Reason for change
 |--|--|--|--|
@@ -79,9 +80,11 @@ Naming changes are automatically applied to queries that are saved in the securi
 | [EmailEvents](advanced-hunting-emailevents-table.md) | `MalwareFilterVerdict` <br>`PhishDetectionMethod` | `ThreatTypes` | Include more threat types |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Include more detection methods |
 
-We also added the column `ThreatNames` to the  [EmailEvents](advanced-hunting-emailevents-table.md) and [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) tables to give more information about the email threat. This column contains values like Spam or Phish.
+2. We also added the column `ThreatNames` to the [EmailEvents](advanced-hunting-emailevents-table.md) and [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) tables to give more information about the email threat. This column contains values like Spam or Phish.
 
+3. In the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table, we replaced the `DeviceObjectId` column with `AadDeviceId` based on customer feedback.
 
+4. In the [DeviceEvents](advanced-hunting-deviceevents-table.md) table, we updated several ActionType names to better reflect the description of the action. Details can be found below.
 
 | Table name | Original ActionType name | New ActionType name | Reason for change
 |--|--|--|--|
@@ -92,7 +95,7 @@ We also added the column `ThreatNames` to the  [EmailEvents](advanced-hunting-em
 | [DeviceEvents](advanced-hunting-deviceevents-table.md) | `AntivirusDetection` | `EdrBlock` | Customer feedback |
 
 
-In the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table, we replaced `DeviceObjectId` with `AadDeviceId` based on customer feedback.
+
 
 
 ## Related topics
