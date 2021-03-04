@@ -22,7 +22,7 @@ description: "Learn about the Microsoft Business Assist program and how it can h
 
 :::image type="content" source="../../media/projectgenie-heading-picture.png" alt-text="Screenshot: Business Assist person looking at laptop":::
 
-Business Assist is a service especially designed for businesses with less than 5 users to give you and your employees around-the-clock access to specialists so you can get the most out of your subscription.
+**Business Assist for Microsoft 365** is a service especially designed for businesses with less than 5 users to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 **24/7 on-demand support**
 :::image type="content" source="../../media/projectgenie-24-7-support.png" alt-text="Screenshot: Image showing a person working at their computer":::
