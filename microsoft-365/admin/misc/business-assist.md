@@ -24,9 +24,6 @@ description: "Learn about the Microsoft Business Assist program and how it can h
 
 **Business Assist for Microsoft 365** is a service especially designed for businesses with less than 5 users to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
-**24/7 on-demand support**
-:::image type="content" source="../../media/projectgenie-24-7-support.png" alt-text="Screenshot: Image showing a person working at their computer":::
-
 > [!div class="nextstepaction"]
 > [Buy now](https://www.microsoft.com/en-us/microsoft-365/business)
 
@@ -36,17 +33,6 @@ Customers with current and eligible Microsoft 365 for business plan subscription
 
 - Organizations with 5 or less user licenses.
 - Business Assist is only available in the U.S.
-
-## Business Assist services
-
-||||
-|:-----|:-----|:-----|
-|**Migration assistance** Get expert assistance with moving all your current files (email, storage, documents, and communication) to Microsoft 365. |**24/7 on-demand support** Call, email or chat and our experts will pick up the conversation where you left off. No tickets to track and no long waiting times.|**Periodic consultation** Regular check ups from experts that help you stay current as new service capabilities are added and your company’s needs evolve.|
-|**Onboarding plan** Receive advice on how to achieve your productivity goals, with a plan tailored to your needs.|**Direct employee access** All your employees can go directly to Microsoft experts for ongoing support.|**Untap business potential** Learn about underutilized features and get advice on ways to get more value out of your subscription.|
-|**Secure and professional set up** Get help setting up subscription features that protect your business and give it a professional look.|**Connect with small business specialists** Get professional support from a person that takes time to know you and your business.| |
-
-> [!div class="nextstepaction"]
-> [Buy now](https://www.microsoft.com/en-us/microsoft-365/business)
 
 ## Get Business Assist
 
