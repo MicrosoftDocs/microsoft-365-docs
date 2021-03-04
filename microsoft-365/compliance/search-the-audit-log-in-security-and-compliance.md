@@ -425,11 +425,10 @@ Click one of the following links to go to a specific table.
         [MyAnalytics activities](#myanalytics-activities)
     :::column-end:::
     :::column:::
-        [Exchange admin activities](#exchange-admin-audit-log)
+        [Information barriers activities](#information-barriers-activities)
     :::column-end:::
     :::column:::
-
-
+        [Exchange admin activities](#exchange-admin-audit-log)
     :::column-end:::
 :::row-end:::
 
@@ -1003,6 +1002,17 @@ The following table lists the activities in MyAnalytics that are logged in the O
 |:-----|:-----|:-----|
 |Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
 |Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
+||||
+
+### Information barriers activities
+
+The following table lists the activities in information barriers that are logged in the Office 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
+
+|**Friendly name**|**Operation**|**Description**|
+|:----------------|:------------|:--------------|
+| Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
+| Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
+| Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
 ||||
 
 ### Exchange admin audit log
