@@ -25,14 +25,14 @@ description: "Learn about the Microsoft Business Assist program and how it can h
 **Business Assist for Microsoft 365** is a service especially designed for businesses with less than 5 users to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 > [!div class="nextstepaction"]
-> [Buy now](https://www.microsoft.com/en-us/microsoft-365/business)
+> [Buy now](https://go.microsoft.com/fwlink/p/?linkid=868433)
 
 ## Business assist services
 
 :::image type="content" source="../../media/projectgenie-business-service-details.png" alt-text="Screenshot: Showing the benefits of Business Assist for Microsoft 365":::
 
 > [!div class="nextstepaction"]
-> [Buy now](https://www.microsoft.com/en-us/microsoft-365/business)
+> [Buy now](https://go.microsoft.com/fwlink/p/?linkid=868433)
 
 ## Eligibility for Business Assist
 
@@ -50,4 +50,4 @@ Only organizations that are eligible will see the option to purchase Business As
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Purchase Business Assist from the Add-ons section on the Purchase services page":::
 
 > [!div class="nextstepaction"]
-> [Buy now](https://www.microsoft.com/en-us/microsoft-365/business)
+> [Buy now](https://go.microsoft.com/fwlink/p/?linkid=868433)
