@@ -11,6 +11,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/commerce/billing-and-payments/e-invoice-of-your-subscription-in-taiwan.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/view-your-bill-or-invoice",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/manage-payment-methods",
       "redirect_document_id": false
@@ -21,9 +26,19 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/commerce/billing-and-payments/change-payment-method.md",
+      "redirect_url":" https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/commerce/billing-and-payments/what-tax-will-i-be-charged.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/tax-information",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/billing-and-payments/top-billing-questions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/index",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/commerce/subscriptions/what-happens-if-i-cancel.md",
@@ -1942,7 +1957,7 @@
     },
     {
       "source_path": "microsoft-365/compliance/offering-HIPAA-HITECH.md",
-      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-HIPAA-HITEC",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech",
       "redirect_document_id": false
     },
     {
@@ -2649,6 +2664,51 @@
       "source_path": "microsoft-365/security/mtp/monitor-apps.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/label_analytics.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/email/email-collaboration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/work-with-customers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/isolated-sharepoint-online-team-sites.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/design-an-isolated-sharepoint-online-team-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/deploy-an-isolated-sharepoint-online-team-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/manage-an-isolated-sharepoint-online-team-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/team-security-isolation-dev-test",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/microsoft-365-client-support-modern-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/microsoft-365-client-support-multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventory-table",
+      "redirect_document_id": true
     }
   ]
 }

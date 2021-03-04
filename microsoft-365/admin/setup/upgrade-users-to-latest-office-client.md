@@ -98,6 +98,9 @@ Before installing the latest version of Office, we recommend you uninstall all o
   
 We recommend if you have third-party add-ins, contact the manufacturer to see if there's an update that will work with the latest version of Office.
 
+> [!TIP]
+> If you run into issues while uninstalling Office, you can use the Microsoft Support and Recovery Assistant tool to help you remove Office: [Download and run the Microsoft Support and Recovery Assistant](https://go.microsoft.com/fwlink/?LinkID=2155008).
+
 ### Select the version of Office you want to uninstall
 
 - [From a PC](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)

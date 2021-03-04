@@ -184,8 +184,6 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: Set up Focused Inbox
           href: setup/configure-focused-inbox.md
-        - name: About email collaboration
-          href: email/email-collaboration.md
         - name: Add user or contact to distribution group
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Manage clutter for your organization
@@ -238,8 +236,6 @@
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
            href: manage/update-phone-number-and-email-address.md
-         - name: Set password expiration policy
-           href: manage/set-password-expiration-policy.md
          - name: Customize the app launcher
            href: manage/customize-the-app-launcher.md
          - name: Pin apps to users' app launcher
@@ -296,6 +292,8 @@
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: Set up multi-factor authentication
           href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: Manage and monitor priority accounts
+          href: setup/priority-accounts.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Secure Microsoft 365 Business Premium

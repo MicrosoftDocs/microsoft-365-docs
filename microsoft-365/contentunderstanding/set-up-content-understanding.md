@@ -29,12 +29,12 @@ You can change your settings after initial setup in the Microsoft 365 admin cent
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
 - The SharePoint sites in which you want to enable form processing - all of them, some, or selected sites
-- The name and admins or your content center
+- The name and admins for your content center
 
 ## Requirements 
 
 > [!NOTE]
-> You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content understanding.
+> You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint Syntex.
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the Microsoft 365 Admin Center.
 
@@ -87,11 +87,11 @@ To assign licenses:
 
 1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
 
-2. Select the users that you want to license, and click **Manage product licenses**.
+2. Select the users that you want to license, and choose **Manage product licenses**.
 
-3. Select **Assign more**.
+3. Choose **Apps** from the drop-down menu.
 
-4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
+4. Select **Show apps for  SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
     > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/content-understanding/sharepoint-syntex-licenses.png)
