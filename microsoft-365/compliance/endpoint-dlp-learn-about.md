@@ -29,8 +29,7 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 ## Endpoint activities you can monitor and take action on
 
-Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
-
+Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10. 
 
 |activity |description  | auditable/restictable|
 |---------|---------|---------|
@@ -42,6 +41,28 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 |create an item|Detects when a user creates an item| auditable|
 |rename an item|Detects when a user renames an item| auditable|
 
+ ## Monitored files
+
+Endpoint DLP supports monitoring of these file types:
+
+- Word files
+- PowerPoint files
+- Excel files
+- PDF files
+- .csv files
+- .tsv files
+- .txt files
+- .rtf files
+- .c files
+- .class files
+- .cpp files
+- .cs files
+- .h files
+- .java files
+ 
+By default, endpoint DLP audits the activities for these file types, even if there isn't a policy match. If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings. No matter what, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited.
+
+Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed. 
 
 ## What's different in Endpoint DLP
 
@@ -74,25 +95,7 @@ If you have onboarded devices through [Microsoft Defender for Endpoint](https://
 
 ### Viewing Endpoint DLP data
 
- Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed. At this time the following file types are supported:
 
-- Word files
-- PowerPoint files
-- Excel files
-- PDF files
-- .csv files
-- .tsv files
-- .txt files
-- .rtf files
-- .c files
-- .class files
-- .cpp files
-- .cs files
-- .h files
-- .java files
-
-> [!NOTE]
-> Endpoint DLP evaluates files of all the above types against the DLP policy and applies protection actions accordingly. All files that match a DLP policy are audited for all supported actions, even if they aren't blocked. In addition, file activity performed on any Word, PowerPoint, Excel, PDF, and .csv file is audited by default, independent of whether a DLP policy exists or matches these files.
 
 You can view alerts related to DLP policies enforced on endpoint devices by going to the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md).
 

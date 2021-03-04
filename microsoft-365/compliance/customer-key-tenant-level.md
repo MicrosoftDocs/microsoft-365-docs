@@ -3,7 +3,7 @@ title: "Customer Key for Microsoft 365 at the tenant level (public preview)"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/17/2020
+ms.date: 2/17/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -22,7 +22,7 @@ description: "Learn how to set up Customer Key for all data within your Microsof
 Using keys you provide, you can create a data encryption policy (DEP) and assign it to the tenant. The DEP encrypts data across the tenant for these workloads:
 
 - Teams chat messages (1:1 chats, group chats, meeting chats and channel conversations)
-- Teams media messages (images, code snippets, videos messages, audio messages, wiki images)
+- Teams media messages (images, code snippets, video messages, audio messages, wiki images)
 - Teams call and meeting recordings stored in Teams storage
 - Teams chat notifications
 - Teams chat suggestions by Cortana
@@ -309,7 +309,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 Parameters:
 
 | Name | Description | Optional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |Name|Friendly name of the data encryption policy|N|
 |AzureKeyIDs|Specifies two URI values of the Azure Key Vault keys, separated by a comma, to associate with the data encryption policy|N|
 |Description|Description of the data encryption policy|N|
@@ -331,7 +331,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
 
 Parameters:
 | Name | Description | Optional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 -Policy|Specifies the data encryption policy that needs to be assigned; specify either the Policy Name or the Policy ID.|N|
 
 ### Modify or Refresh policy
@@ -359,7 +359,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 
 Parameters:
 | Name | Description | Optional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|Specifies the data encryption policy that you want to modify.|N|
 |-Refresh|Use the Refresh switch to update the data encryption policy after you rotate any of the associated keys in the Azure Key Vault. You don't need to specify a value with this switch.|Y|
 |-Enabled|The Enabled parameter enables or disable the data encryption policy. Before you disable a policy, you must unassign it from your tenant. Valid values are:</br > $true: The policy is enabled</br > $false: The policy is disabled.|Y|
@@ -391,7 +391,7 @@ Get-M365DataAtRestEncryptionPolicy -Identity "NAM Policy"
 Parameters:
 
 | Name | Description | Optional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|Specifies the data encryption policy that you want to list the details for.|Y|
 
 ### Get policy assignment info

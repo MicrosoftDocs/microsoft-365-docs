@@ -59,10 +59,10 @@ The numbers listed are the minimum Office application version required for each 
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Under review |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under review   | Under review         | Under review                                                        |
-|[Get started with data classification](data-classification-overview.md) and send data for administrators                      | 2011+ | 16.43+ | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: [Current Channel (Preview)](https://office.com/insider) | Yes <sup>\*</sup>                                                        |
-|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Preview: [Current Channel (Preview)](https://office.com/insider)             | Preview: [Current Channel (Preview)](https://office.com/insider)         | Under review   | Rolling out: 16.0.13628+ | Under review                                            
+|[Audit label-related user activity](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | Rolling out: 2.46+ | Rolling out: 16.0.13628+ | Yes <sup>\*</sup>                                                        |
+|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rolling out: 2101+             | Rolling out: 16.45+         | Rolling out in preview: [Beta Channel](https://office.com/insider) | Rolling out: 16.0.13628+ | Under review                                            
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Rolling out: 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and encrypted documents | Under review | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: [Beta Channel](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Footnote:**
@@ -84,11 +84,16 @@ The numbers listed are the minimum Office application version required for each 
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Under review                     | Under review                 | Under review         | Under review           | Under review               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Preview: [Current Channel (Preview)](https://office.com/insider))                        | 16.43+                     | Under review            | Under review                | Yes                |
-|[Get started with data classification](data-classification-overview.md) and send data for administrators                      | 2011+ | Under review | Under review           | Under review               | Under review |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+                    | Under review           | Under review               | Yes |
-|[OutlookDefaultLabel](#outlook-specific-options-for-default-label-and-mandatory-labeling) and [DisableMandatoryInOutlook](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | xxx+                      | xxx+                    | xxx+           | xxx+               | Yes |
+|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rolling out: 2101+                        | 16.43+ <sup>\*</sup>                    | Under review            | Under review                | Yes                |
+|[Audit label-related user activity](data-classification-activity-explorer.md) | 2011+ | Under review | Under review           | Under review               | Under review |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
+>|[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | xxx+                      | xxx+                    | xxx+           | xxx+               | Yes |
 |
+
+**Footnote:**
+
+<sup>\*</sup>
+Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
 ## Office built-in labeling client and other labeling solutions
@@ -123,7 +128,7 @@ For information about which features are supported by the Azure Information Prot
 
 ## Office file types supported
 
-Office apps that have built-in labeling for Word, Excel, and PowerPoint files support the Open XML format (such as .docx and .xlsx) but not the Microsoft Office 97-2003 format (such as .doc and .xls). When a file type is not supported for built-in labeling, the **Sensitivity** button is not available in the Office app.
+Office apps that have built-in labeling for Word, Excel, and PowerPoint files support the Open XML format (such as .docx and .xlsx) but not the Microsoft Office 97-2003 format (such as .doc and .xls), Open Document Format (such as .odt and .ods), or other formats. When a file type is not supported for built-in labeling, the **Sensitivity** button is not available in the Office app.
 
 The Azure Information Protection unified labeling client supports both the Open XML format and the Microsoft Office 97-2003 format. For more information, see [File types supported by the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) from that client's admin guide.
 
@@ -216,12 +221,12 @@ If external users do not have an account in Azure Active Directory, they can aut
     
     The advantage of this option is minimum administrative overhead because the accounts are created automatically, and simpler label configuration. For this scenario, you must select the encryption option [Add any authenticated user](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) because you won't know the email addresses in advance. The downside is that this setting doesn't let you restrict access and usage rights to specific users.
 
-External users can also use a Microsoft account for encrypted documents when they use Microsoft 365 Apps ([formerly Office 365 apps](https://docs.microsoft.com/deployoffice/name-change)) on Windows, and newly supported on macOS (version 16.42+), Android (version 16.0.13029+), and iOS (version 2.42+). For example, somebody shares an encrypted document with them, and the encryption settings specify their Gmail email address. This user can create their own Microsoft account that uses their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for that user. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+External users can also use a Microsoft account to open encrypted documents when they use Windows and Microsoft 365 Apps ([formerly Office 365 apps](https://docs.microsoft.com/deployoffice/name-change)) or the standalone edition of Office 2019. More recently supported for other platforms, Microsoft accounts are also supported for opening encrypted documents on macOS (Microsoft 365 Apps, version 16.42+), Android (version 16.0.13029+), and iOS (version 2.42+). For example, a user in your organization shares an encrypted document with a user outside your organization, and the encryption settings specify a Gmail email address for the external user. This external user can create their own Microsoft account that uses their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for them. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > The email address for the Microsoft account must match the email address that's specified to restrict access for the encryption settings.
 
-When a user with a Microsoft account opens an encrypted document in this way, it automatically creates a guest account for the tenant if a guest account with the same name doesn't already exist. When the guest account exists, it can then be used to open documents in SharePoint and OneDrive by using a browser (Office on the web), in addition to opening encrypted documents from the Windows desktop app. 
+When a user with a Microsoft account opens an encrypted document in this way, it automatically creates a guest account for the tenant if a guest account with the same name doesn't already exist. When the guest account exists, it can then be used to open documents in SharePoint and OneDrive by using Office on the web, in addition to opening encrypted documents from the supported desktop and mobile Office apps.
 
 However, the automatic guest account is not created immediately in this scenario, because of replication latency. If you specify personal email addresses as part of your label encryption settings, we recommend that you create corresponding guest accounts in Azure Active Directory. Then let these users know that they must use this account to open an encrypted document from your organization.
 
@@ -230,7 +235,7 @@ However, the automatic guest account is not created immediately in this scenario
 
 ### Conditional Access policies
 
-If your organization has implemented [Azure Active Directory Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include Azure Information Protection and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
+If your organization has implemented [Azure Active Directory Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
 
 Without this guest account, they can't open the encrypted document and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
 
