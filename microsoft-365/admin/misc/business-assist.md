@@ -24,9 +24,6 @@ description: "Learn about the Microsoft Business Assist program and how it can h
 
 **Business Assist for Microsoft 365** is a service especially designed for businesses with less than 5 users to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
-> [!div class="nextstepaction"]
-> [Buy now](https://go.microsoft.com/fwlink/p/?linkid=868433)
-
 ## Business assist services
 
 :::image type="content" source="../../media/projectgenie-business-service-details.png" alt-text="Screenshot: Showing the benefits of Business Assist for Microsoft 365":::
@@ -43,9 +40,11 @@ Customers with current and eligible Microsoft 365 for business plan subscription
 
 ## Get Business Assist
 
-Only organizations that are eligible will see the option to purchase Business Assist. Business Assist costs $5 per user per month. Here's how you can purchase Business Assist:
+Only organizations that are eligible will see the option to purchase Business Assist. Business Assist costs $5 per user per month. Here's how you can purchase Business Assist.
 
-- You can go to the Microsoft admin center add-on page, and select Buy now.
+1. In the Microsoft 365 admin center, go to **Billing** > **Purchase services**.
+
+2. Select **Details** on the **Small Business Assist for Microsoft 365** and complete your purchase.
 
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Purchase Business Assist from the Add-ons section on the Purchase services page":::
 
