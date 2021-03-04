@@ -11,7 +11,7 @@ ms.service:
 ms.prod: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
-    - m365initiative-topics
+    - m365initiative-viva-topics
 localization_priority: None
 
 ---

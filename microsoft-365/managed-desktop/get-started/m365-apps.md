@@ -48,8 +48,8 @@ Microsoft Managed Desktop staggers each release to identify any potential issues
 
 - Test: zero days
 - First: zero days
-- Fast: 7 days
-- Broad: 21 days
+- Fast: 3 days
+- Broad: 7 days
 
 Microsoft Managed Desktop sets a seven-day [update deadline](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) for devices. Once the update is available, it must be installed within seven days. Users are [notified](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) that updates are required in several locations: the application, in the system tray 12 hours prior to the deadline, and they receive a 15-minute warning prior to the deadline. All Microsoft 365 Apps must be closed for the update to complete.
 
