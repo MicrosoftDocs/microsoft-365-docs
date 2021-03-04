@@ -75,13 +75,13 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 | Table name | Original column name | New column name | Reason for change
 |--|--|--|--|
-| [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Include more detection methods |
-| [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Include more threat types |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Include more detection methods |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Include more threat types |
+| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Include more detection methods |
+| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Include more threat types |
+| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Include more detection methods |
+| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Include more threat types |
 
 
-2. In the [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) and [EmailEvents](advanced-hunting-emailevents-table.md) tables, we added the column `ThreatNames` to give more information about the email threat. This column contains values like Spam or Phish.
+2. In the `EmailAttachmentInfo` and `EmailEvents` tables, we added the column `ThreatNames` to give more information about the email threat. This column contains values like Spam or Phish.
 
 3. In the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table, we replaced the `DeviceObjectId` column with `AadDeviceId` based on customer feedback.
 
@@ -89,11 +89,11 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 | Table name | Original ActionType name | New ActionType name | Reason for change
 |--|--|--|--|
-| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `DlpPocPrintJob` | `FilePrinted` | Customer feedback |
-| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `UsbDriveMount` | `UsbDriveMounted` | Customer feedback |
-| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `UsbDriveUnmount` | `UsbDriveUnmounted` | Customer feedback |
-| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Customer feedback |
-| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `AntivirusDetection` | `EdrBlock` | Customer feedback |
+| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Customer feedback |
+| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Customer feedback |
+| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Customer feedback |
+| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Customer feedback |
+| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | Customer feedback |
 
 
 

@@ -32,7 +32,7 @@ ms.technology: m365d
 
 
 
-The `DeviceInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about machines in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
+The `DeviceInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about devices in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -54,6 +54,17 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`AdditionalFields` | string | Additional information about the event in JSON array format |
 | `OSVersion` | string | Version of the operating system running on the machine |
 | `MachineGroup` | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine |
+
+The `DeviceInfo` table provides device information based on heartbeats, which are periodic reports or signals from a device. Every fifteen minutes, the device sends a partial heartbeat that contains frequently changing attributes like `LoggedOnUsers`. Once a day, a full heartbeat containing the device's attributes is sent.
+
+You can use the following sample query to get the latest state of a device:
+
+```kusto
+// Get latest information on user/device
+DeviceInfo
+| where DeviceName == "example" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
