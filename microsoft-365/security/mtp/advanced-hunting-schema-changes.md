@@ -68,6 +68,33 @@ Naming changes are automatically applied to queries that are saved in the securi
 | `ServiceSource` |Azure ATP	|Microsoft Defender for Identity | Rebranding |
 
 `DetectionSource` is available in the [AlertInfo](advanced-hunting-alertinfo-table.md) table. `ServiceSource` is available in the [AlertEvidence](advanced-hunting-alertevidence-table.md) and [AlertInfo](advanced-hunting-alertinfo-table.md) tables. 
+
+## February 2021
+
+
+| Table name | Original column name | Replaced by | Reason for change
+|--|--|--|--|
+| [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | `MalwareFilterVerdict` <br>`PhishDetectionMethod` | `ThreatTypes` | Include more threat types |
+| [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Include more detection methods |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `MalwareFilterVerdict` <br>`PhishDetectionMethod` | `ThreatTypes` | Include more threat types |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Include more detection methods |
+
+We also added the column `ThreatNames` to the  [EmailEvents](advanced-hunting-emailevents-table.md) and [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) tables to give more information about the email threat. This column contains values like Spam or Phish.
+
+
+
+| Table name | Original ActionType name | New ActionType name | Reason for change
+|--|--|--|--|
+| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `DlpPocPrintJob` | `FilePrinted` | Customer feedback |
+| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `UsbDriveMount` | `UsbDriveMounted` | Customer feedback |
+| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `UsbDriveUnmount` | `UsbDriveUnmounted` | Customer feedback |
+| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Customer feedback |
+| [DeviceEvents](advanced-hunting-deviceevents-table.md) | `AntivirusDetection` | `EdrBlock` | Customer feedback |
+
+
+In the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table, we replaced `DeviceObjectId` with `AadDeviceId` based on customer feedback.
+
+
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
