@@ -71,16 +71,17 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 ## February 2021
 
-1. In the [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) and [EmailEvents](advanced-hunting-emailevents-table.md) tables, we deprecated the `MalwareFilterVerdict`and `PhishDetectionMethod` columns and replaced them with the `ThreatTypes` column. We also deprecated the `MalwareDetectionMethod` and `PhishDetectionMethod` columns and replaced them with the `DetectionMethods` column. This streamlining allows us to provide more information under the new columns. The mapping is provided below.
+1. In the [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) and [EmailEvents](advanced-hunting-emailevents-table.md) tables, we deprecated the `MalwareFilterVerdict`and `PhishFilterVerdict` columns and replaced them with the `ThreatTypes` column. We also deprecated the `MalwareDetectionMethod` and `PhishDetectionMethod` columns and replaced them with the `DetectionMethods` column. This streamlining allows us to provide more information under the new columns. The mapping is provided below.
 
-| Table name | Original column name | Replaced by | Reason for change
+| Table name | Original column name | New column name | Reason for change
 |--|--|--|--|
-| [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | `MalwareFilterVerdict` <br>`PhishDetectionMethod` | `ThreatTypes` | Include more threat types |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Include more detection methods |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | `MalwareFilterVerdict` <br>`PhishDetectionMethod` | `ThreatTypes` | Include more threat types |
+| [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Include more threat types |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Include more detection methods |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Include more threat types |
 
-2. We also added the column `ThreatNames` to the [EmailEvents](advanced-hunting-emailevents-table.md) and [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) tables to give more information about the email threat. This column contains values like Spam or Phish.
+
+2. In the [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) and [EmailEvents](advanced-hunting-emailevents-table.md) tables, we added the column `ThreatNames` to give more information about the email threat. This column contains values like Spam or Phish.
 
 3. In the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table, we replaced the `DeviceObjectId` column with `AadDeviceId` based on customer feedback.
 
