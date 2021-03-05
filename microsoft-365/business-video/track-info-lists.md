@@ -52,7 +52,7 @@ Format a column to highlight the details in it:
 1. Above the list, select **Automate**.
 1. Select **Create a rule**.
 1. Choose the appropriate condition to trigger the rule you want to make.
-1. Customize the rule with the specific info needed, such as the names of people to be notified when the list is updated.
+1. Customize the rule with the specific info you need, such as the names of people to be notified when the list is updated.
 1. Select **Create** to save the rule.
 
 ### Sort and group list items
