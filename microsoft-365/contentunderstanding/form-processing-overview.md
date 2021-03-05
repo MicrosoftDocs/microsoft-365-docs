@@ -43,7 +43,7 @@ When using form processing models, make sure to note the [requirements and limit
 
 ### Multi-Geo environments
 
-When setting up SharePoint Syntex in a [Microsoft 365 Multi-Geo environment](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide), you can only configure it to use form processing in the central location. If you want to use form processing in a satellite location, contact Microsoft support.
+When setting up SharePoint Syntex in a [Microsoft 365 Multi-Geo environment](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo), you can only configure it to use form processing in the central location. If you want to use form processing in a satellite location, contact Microsoft support.
 
 
 
