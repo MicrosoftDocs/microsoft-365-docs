@@ -34,7 +34,7 @@ Groups that are actively in use are renewed automatically. Any of the following 
 - Teams - visiting a teams channel.
 
 
-> [!Note]
+> [!NOTE]
 > Microsoft 365 Groups converted by Yammer in Native Mode do not renew automatically and the Yammer activities do not count towards automatic renewal. For more information about Native Mode, see [Overview of Native Mode](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode).
 
 
