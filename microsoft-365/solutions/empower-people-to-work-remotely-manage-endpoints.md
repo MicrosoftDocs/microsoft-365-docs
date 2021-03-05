@@ -82,7 +82,7 @@ For more information, see this [overview of Windows Autopilot](https://docs.micr
 - [How to enroll different types of devices for mobile device management](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
-## Results of Step 3
+## Results of Step 4
 
 You are using the suite of Endpoint Manager features and capabilities to manage mobile devices, desktop computers, virtual machines, embedded devices, and servers.
 

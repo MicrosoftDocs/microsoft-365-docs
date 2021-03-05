@@ -20,6 +20,8 @@ Exchange Online PowerShell is required to view and configure multi geo propertie
 
 You need the [Microsoft Azure Active Directory PowerShell Module](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 or later in v1.x to see the **PreferredDataLocation** property on user objects. User objects synchronized via AAD Connect into AAD cannot have their **PreferredDataLocation** value directly modified via AAD PowerShell. Cloud-only user objects can be modified via AAD PowerShell. To connect to Azure AD PowerShell, see [Connect to PowerShell](connect-to-microsoft-365-powershell.md).
 
+In Exchange Online multi-geo environments, you don't need to do any manual steps to add geos to your tenant. After you receive the Message Center post that says multi-geo is ready for Exchange Online, all available geos will be ready and configured for you to use.
+
 ## Connect directly to a geo location using Exchange Online PowerShell
 
 Typically, Exchange Online PowerShell will connect to the central geo location. But, you can also connect directly to satellite geo locations. Because of performance improvements, we recommend connecting directly to the satellite geo location when you only manage users in that location.
@@ -32,7 +34,9 @@ Specifically, you need to add the `?email=<emailaddress>` value to end of the _C
 
 Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _ConnectionUri_ parameter to connect to Exchange Online PowerShell. But, to connect to a specific geo location, you do need to use _ConnectionUri_ parameter so you can use `?email=<emailaddress>` in the value.
 
-### Connect to a geo location in Exchange Online PowerShell using multi-factor authentication (MFA)
+### Connect to a geo location in Exchange Online PowerShell
+
+The following connection instructions work for accounts that are or aren't configured for multi-factor authentication (MFA).
 
 1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
 
@@ -42,31 +46,11 @@ Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _Co
 
 2. In the following example, admin@contoso.onmicrosoft.com is the admin account, and the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
 
-  ```powershell
-  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-  ```
-
-### Connect to a geo location in Exchange Online PowerShell without using MFA
-
-1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
-
    ```powershell
-   Import-Module ExchangeOnlineManagement
+   Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-2. Run the following command:
-
-   ```powershell
-   $UserCredential = Get-Credential
-   ```
-
-   In the **Windows PowerShell Credential Request** dialog box that appears, type your work or school account and password, and then click **OK**.
-
-3. In the following example, the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
-
-   ```powershell
-   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-   ```
+3. Enter the password for the admin@contoso.onmicrosoft.com in the prompt that appears. If the account is configured for MFA, you also need to enter the security code.
 
 ## View the available geo locations that are configured in your Exchange Online organization
 

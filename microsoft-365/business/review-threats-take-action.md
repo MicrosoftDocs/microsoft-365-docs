@@ -37,7 +37,7 @@ You have several options to view specific information about threat detections an
 
 - The **Active devices** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the Active devices page](#manage-threat-detections-on-the-active-devices-page) in this article.
 - The **Active threats** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the Active threats page](#manage-threat-detections-on-the-active-threats-page) in this article.
-- The **Antivirus** page in <a href="https://endpoint.microsoft.com" target="_blank">Microsoft Endpoint Manager</a>. See [Manage threat detections in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in this article.
+- The **Antivirus** page in <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. See [Manage threat detections in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in this article.
 
 To learn more, see [Threats detected by Microsoft Defender Antivirus](threats-detected-defender-av.md).
 
@@ -68,7 +68,7 @@ The following procedure applies to customers who have Microsoft 365 Business Pre
 
 ## Actions you can take
 
-When you view details about specific threats or devices, you’ll see recommendations and one or more actions you can take. The following table describes actions that you might see.<br><br>
+When you view details about specific threats or devices, you'll see recommendations and one or more actions you can take. The following table describes actions that you might see.<br><br>
 
 | Action | Description |
 |--|--|
@@ -83,7 +83,7 @@ When you view details about specific threats or devices, you’ll see recommenda
 
 You can use Microsoft Endpoint Manager to manage threat detections. Windows 10 devices must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods) (part of Microsoft Endpoint Manager).
 
-1. Go to the Microsoft Endpoint Manager admin center at <a href="https://endpoint.microsoft.com" target="_blank">https://endpoint.microsoft.com</a> and sign in.
+1. Go to the Microsoft Endpoint Manager admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> and sign in.
 
 2. In the navigation pane, select **Endpoint security**.
 

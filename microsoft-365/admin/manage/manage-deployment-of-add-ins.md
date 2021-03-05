@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -28,7 +30,7 @@ description: "Learn to deploy add-ins to users and groups in your organization b
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -62,7 +64,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
  
     > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+    > The admin center is getting updated to deployment experience with Integrated Apps. Integrated Apps is only visible to Global administrators, while for others the old experience still exists. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
     
 3. Select an option and follow the instructions.
   
@@ -93,7 +95,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
   
 ### Considerations when assigning an add-in to users and groups
 
-Admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
+Global admins and Exchange admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
   
 - **Everyone** This option assigns the add-in to every user in the organization. Use this option sparingly and only for add-ins that are truly universal to your organization. 
     
@@ -134,7 +136,7 @@ Updates for add-ins happen as follows:
 
 [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md)
 
-[Building Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins-fundamentals).
+[Build your first Word task pane add-in](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator).
 
 [Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md)
   

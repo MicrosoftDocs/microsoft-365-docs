@@ -2,8 +2,8 @@
 title: "Set up multi-factor authentication for users"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -37,7 +37,7 @@ Based on your understanding of [multi-factor authentication (MFA) and its suppor
 - You must be a Global admin to manage MFA. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 - If you have legacy per-user MFA turned on, [Turn off legacy per-user MFA](#turn-off-legacy-per-user-mfa).
 - If you have Office 2013 clients on Windows devices, [turn on Modern Authentication for Office 2013 clients](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
-- Advanced: If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server. See [advanced scenarios with Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for more information.
+- Advanced: If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server. See [advanced scenarios with Azure AD Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for more information.
 
 ## Turn Security defaults on or off
 
@@ -95,3 +95,9 @@ If you have previously turned on per-user MFA, you must turn it off before enabl
 - [What is: Multifactor Authentication](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [How to sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+
+## Related topics
+
+[Video: Turn on multi-factor authentication](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+
+[Video: Turn on multi-factor authentication for your phone](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
