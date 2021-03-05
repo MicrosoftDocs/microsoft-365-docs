@@ -33,6 +33,11 @@ Groups that are actively in use are renewed automatically. Any of the following 
 - Outlook - join group, read or write group message from the group, and like a message (Outlook on the web).
 - Teams - visiting a teams channel.
 
+
+> [!Note]
+> Microsoft 365 Groups converted by Yammer in native mode do not renew automatically and the yammer activities donot count for automatic renewal. For more information about Native mode, See[Overview of Native Mode](https://docs.microsoft.com/en-us/yammer/configure-your-yammer-network/overview-native-mode)
+
+
 > [!IMPORTANT]
 > When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
 
