@@ -526,6 +526,8 @@ To register the DKE service:
 
     4. Select **Save** at the top to save your changes.
 
+    5. Repeat the above steps, but this time define the Client ID as **c00e9d32-3c8d-4a7d-832b-029040e7db99**. This value is the Azure Information Protection Unified Labeling Client ID. 
+
 Your DKE service is now registered. Continue by [creating labels using DKE](#create-sensitivity-labels-using-dke).
 
 ## Create sensitivity labels using DKE
