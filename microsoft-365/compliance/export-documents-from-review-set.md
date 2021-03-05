@@ -39,7 +39,7 @@ Export allows users to customize the content that is included in the download pa
 
 - Metadata
   
-  - Load file - This file contains metadata for each file. see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md) for more information about what fields are included. This file can typically be ingested by third-party eDiscovery tools.
+  - Load file - This file contains metadata for each file. For more information about what fields are included, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). This file can typically be ingested by third-party eDiscovery tools.
   
   - Tags - When selected, tagging information will be included in the load file.
 
@@ -65,7 +65,7 @@ Export allows users to customize the content that is included in the download pa
   
   - Condensed directory structure - Files are exported and included in the download.
   
-  - Condensed directory structure exported to your Azure Storage account - Files are exported to your organization's Azure Storage accouunt.
+  - Condensed directory structure exported to your Azure Storage account - Files are exported to your organization's Azure Storage account.
 
 ## Loose files and PST export structure
 
@@ -100,4 +100,4 @@ If you select this export option, the exported content is organized in the follo
   - Extracted_text_files - This folder contains all of the extracted text files that were generated at processing.
 
 > [!NOTE]
-> Export jobs are retained for the life of the case and can be downloaded as long as the case isn't deleted.
+> Export jobs are retained for the life of the case. However, you must download the content from an export job within 30 days after the export job is complete.
