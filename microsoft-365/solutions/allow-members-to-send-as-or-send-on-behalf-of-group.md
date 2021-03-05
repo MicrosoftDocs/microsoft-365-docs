@@ -1,5 +1,5 @@
 ---
-title: "Allow Users to send as or send on behalf of a Group"
+title: "Allow users to send as or send on behalf of a group"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
