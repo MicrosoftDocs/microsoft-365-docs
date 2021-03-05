@@ -25,7 +25,7 @@ description: "Monitor and manage the disposal of content, whether you use a disp
 Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
 > [!NOTE]
-> Rolling out in preview: multi-staged disposition. Now, an administrator can add up to five stages of disposition and reviewers can forward disposition requests to additional users. For more information, see the information that follows.
+> Rolling out in preview: multi-staged disposition. Now, an administrator can add up to five stages of disposition and reviewers can forward disposition requests to additional users. You can also customize the email notifications. For more information, see the information that follows.
 
 ## Prerequisites for viewing content dispositions
 
@@ -115,6 +115,16 @@ For each stage specified, you can rename it, reorder it, or remove it by selecti
 ![Stage actions for disposition reviews](../media/stage-actions-disposition-review.png)
 
 After you have specified your reviewers, remember to grant them the **Disposition Management** admin role. For more information, see the [Permissions for disposition](#permissions-for-disposition) section on this page.
+
+### Customizing email messages for disposition review
+
+Also in preview, you can customize the email messages that are sent to disposition reviewers for the initial notification and then reminders.
+
+From any of the Disposition pages in the compliance center, select **Record management settings**:  
+
+![Record management settings](../media/record-management-settings.png)
+
+Then select whether you want to use the default email templates or specify your own text.
 
 ### Viewing and disposing of content
 
