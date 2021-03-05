@@ -23,7 +23,7 @@ description: "Learn about Microsoft Lists. With Microsoft Lists, you can track c
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MnGM?autoplay=false]
 
-## Try it!
+## Try it
 
 Track information and organize work with Microsoft Lists. Create a list from scratch, from Excel, from an existing list, or from a template. You can get started from Microsoft 365, Microsoft Teams, or SharePoint.
 
