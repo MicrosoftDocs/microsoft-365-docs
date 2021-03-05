@@ -81,11 +81,11 @@ Naming changes are automatically applied to queries that are saved in the securi
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Include more threat types |
 
 
-2. In the `EmailAttachmentInfo` and `EmailEvents` tables, the column `ThreatNames` was added to give more information about the email threat. This column contains values like Spam or Phish.
+2. In the `EmailAttachmentInfo` and `EmailEvents` tables, the `ThreatNames` column was added to give more information about the email threat. This column contains values like Spam or Phish.
 
 3. In the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table, the `DeviceObjectId` column was replaced by the `AadDeviceId` column based on customer feedback.
 
-4. In the [DeviceEvents](advanced-hunting-deviceevents-table.md) table, several ActionType names were modified to better reflect the description of the action. Details can be found below.
+4. In the [DeviceEvents](advanced-hunting-deviceevents-table.md) table, several ActionType names were modified to better reflect the description of the action. Details of the changes can be found below.
 
 | Table name | Original ActionType name | New ActionType name | Reason for change
 |--|--|--|--|
