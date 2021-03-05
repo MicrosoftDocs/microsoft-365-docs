@@ -1,10 +1,10 @@
 ---
-title: What's new in Microsoft Threat Protection
-description: Lists the new features and functionality in Microsoft Threat Protection
+title: What's new in Microsoft 365 Defender
+description: Lists the new features and functionality in Microsoft 365 Defender
 keywords: what's new in microsoft threat protection, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
@@ -14,22 +14,29 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
+ms.technology: m365d
 ---
 
-# What's new in Microsoft Threat Protection
+# What's new in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+>
 
-The following features are generally available (GA) in the latest release of Microsoft Threat Protection.
+The following features are generally available (GA) in the latest release of Microsoft 365 Defender.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+## February 2021
+- (Preview) The enhanced [Microsoft 365 security center (https://security.microsoft.com)](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint and Defender for Office 365 to the center. [Learn more about what's changed](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
+
 ## September 2020
 - [IdentityDirectoryEvents table](advanced-hunting-identitydirectoryevents-table.md) <br> Find events involving an on-premises domain controller running Active Directory (AD). This [advanced hunting](advanced-hunting-overview.md) schema table covers a range of identity-related events and system events on the domain controller.
 - [AssignedIPAddresses() function](advanced-hunting-assignedipaddresses-function.md) <br> Use this function in your advanced hunting queries to quickly obtain the latest IP addresses assigned to a device or the most recent IP addresses from a specific time.

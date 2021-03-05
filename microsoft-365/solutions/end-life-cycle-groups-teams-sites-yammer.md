@@ -220,7 +220,7 @@ In the case of files stored within SharePoint in one of the libraries mentioned 
 **Move files**
 
 Additionally, files can be moved to another location within SharePoint such as a library in a different site.
-Reference: https://support.office.com/en-us/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
+Reference: https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
 
 **Export list**
 Data stored within SharePoint lists can be [exported to an Excel spreadsheet](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9), and imported again to a list in another site.

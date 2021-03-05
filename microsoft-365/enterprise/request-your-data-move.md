@@ -39,11 +39,12 @@ Eligible Microsoft 365 customers may request migration for their entire organiza
 |South Africa  <br/> |July 25, 2019  <br/> |June 30, 2020  <br/> |
 |Switzerland, Liechtenstein  <br/> |December 10, 2019  <br/> |June 30, 2020  <br/> |
 |Norway  <br/> |April 15, 2020  <br/> |October 31, 2020  <br/> |
-|Germany  <br/> |Planned  <br/> |Planned  <br/> |
+|Germany  <br/> |November 1, 2020  <br/> |April 30, 2021  <br/> |
+|Brazil  <br/> |November 18, 2020  <br/> |May 31, 2021  <br/> |
 
 ## How to request a move
 
-Eligible customers will see a page in the [Microsoft 365 admin center](https://aka.ms/365admin), which will allow them to request to have their core customer data moved to their new datacenter region.  
+Eligible customers will see a page in the Microsoft 365 admin center, which will allow them to request to have their core customer data moved to their new datacenter region.  
   
 To access the page in the Microsoft 365 admin center, in the navigation pane on the left, expand **Settings**, and then click **Org Settings**.
 Select the tab **Organization profile**, then select the option **Data residency**.

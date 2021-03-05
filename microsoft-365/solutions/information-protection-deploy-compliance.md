@@ -39,7 +39,7 @@ This article provides guidance on the use of this tool for data privacy purposes
 
 Compliance Manager provides pre-built templates for [building assessments](../compliance/compliance-manager-assessments.md) that are aligned to data privacy-related regulations, such as GDPR and HIPAA/HITECH. The templates have built-in control mapping to help you take improvement actions for meeting the regulation's requirements. Each assessment provides information about the controls each regulation calls for specific to the target service, broken out by controls you manage and controls Microsoft manages. 
 
-Using a pre-built template helps you quickly get started with risk assessments. As you become more proficient in using Compliance Manger, you can customize a pre-built template by adding your own controls and improvement actions, or you can create your own custom assessments to suit your organization's needs.
+Using a pre-built template helps you quickly get started with risk assessments. As you become more proficient in using Compliance Manager, you can customize a pre-built template by adding your own controls and improvement actions, or you can create your own custom assessments to suit your organization's needs.
 
 View the [full list of assessment templates](../compliance/compliance-manager-templates-list.md) provided by Compliance Manager.
 

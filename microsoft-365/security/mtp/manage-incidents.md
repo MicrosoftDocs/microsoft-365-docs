@@ -1,39 +1,40 @@
 ---
-title: Manage incidents in Microsoft Threat Protection
-description: Learn how to assign, update the status, 
+title: Manage incidents in Microsoft 365 Defender
+description: Learn how to assign, update the status,
 keywords: incident, incidents, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 search.appverid: 
-- MOE150
-- MET150
+  - MOE150
+  - MET150
+ms.technology: m365d
 ---
 
-# Manage incidents in Microsoft Threat Protection
+# Manage incidents in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft Threat Protection, you have access to managing incidents on devices, users, and mailboxes. 
+Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft 365 Defender, you have access to managing incidents on devices, users, and mailboxes. 
 
 
 You can manage incidents by selecting an incident from the **Incidents queue**. 

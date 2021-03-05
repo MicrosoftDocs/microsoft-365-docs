@@ -28,7 +28,7 @@ Microsoft Managed Desktop support includes:
 
 Supported products:
 
-- Windows 10 with Microsoft Defender Advanced Threat Protection 
+- Windows 10 with Microsoft Defender for Endpoint
 - These Microsoft 365 Apps for enterprise apps: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store for Business 
 - OneDrive for Business client 

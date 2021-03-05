@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -28,7 +30,7 @@ description: "Learn how to set a password expiration policy for your organizatio
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide).
 
 ::: moniker-end
 
@@ -58,7 +60,7 @@ Follow the steps below if you want to set user passwords to expire after a speci
   
 3. Select **Password expiration policy**.
   
-4. If you don't want users to have to change passwords, select the checkbox next to **Set user passwords to expire after a number of days**.
+4. If you don't want users to have to change passwords, uncheck the box next to **Set user passwords to expire after a number of days**.
   
 5. Type how often passwords should expire. Choose a number of days from 14 to 730.
   

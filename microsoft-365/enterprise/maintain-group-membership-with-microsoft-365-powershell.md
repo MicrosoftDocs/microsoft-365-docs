@@ -1,9 +1,8 @@
 ---
-title: "Maintain Microsoft 365 group membership with PowerShell"
+title: "Maintain security group membership with PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,14 +20,11 @@ ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Learn how to use PowerShell to maintain membership in Microsoft 365 groups."
 ---
 
-# Maintain Microsoft 365 group membership with PowerShell
+# Maintain security group membership with PowerShell
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 admin center to maintain group membership in Microsoft 365. 
-
-> [!TIP]
-> To generate ready-to-run PowerShell commands by specifying user account and group names, use this [group maintenance Microsoft Excel workbook](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/maintain-group-membership-with-microsoft-365-powershell/GroupMaintPowerShellGenerator.xlsx). 
+You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 admin center to maintain security group membership in Microsoft 365. 
 
 >[!Note]
 >[Learn how to maintain Microsoft 365 group membership](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
@@ -39,7 +35,7 @@ First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershel
 
 ### Add or remove user accounts as members of a group
 
-**To add a user account by its UPN**, fill in the user account User Principal Name (UPN) (example: belindan@contoso.com) and the group display name, removing the “<” and “>” characters, and run these commands in the PowerShell window or the PowerShell Integrated Script Environment (ISE).
+**To add a user account by its UPN**, fill in the user account User Principal Name (UPN) (example: belindan@contoso.com) and the security group display name, removing the “<” and “>” characters, and run these commands in the PowerShell window or the PowerShell Integrated Script Environment (ISE).
 
 ```powershell
 $userUPN="<UPN of the user account to add>"

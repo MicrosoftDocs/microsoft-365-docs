@@ -72,7 +72,7 @@ As private channels for the Project 2X were created, the group owner disabled gu
 
 Here is the resulting configuration of the Project 2X team with security isolation.
 
-![The resulting configuration of the Project 2X team](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project.png)
+![The resulting configuration of the Project 2X team](../media/contoso-team-for-top-secret-project.png)
 
  ## Step 4: Trained Project 2X team members
 
@@ -87,7 +87,7 @@ The end result was a secure environment in which Project 2X team members collabo
 
 Here is an example of a file stored in the underlying Project 2X site with the Project 2X sensitivity label assigned.
 
-![An example of a file stored in the underlying Project 2X site](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project-example.png)
+![An example of a file stored in the underlying Project 2X site](../media/contoso-team-for-top-secret-project-example.png)
 
 In a couple of instances, Project 2X team members downloaded files protected by the Project 2X label to a local drive for offline work. 
 

@@ -22,7 +22,7 @@ description: "Find answers to frequently asked questions about Microsoft Complia
 
 There is now just one solution: Compliance Manager. This section walks you through the transition, starting with a basic overview below. You may also find it helpful to jump directly to one of the following sections:
 
-- [Your organization primarily used Compliance Manager (either the classic or public preview versions), located in the Microsoft Service Trust Portal](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
+- [Your organization primarily used Compliance Manager (either the classic or public preview versions), located in the Microsoft Service Trust Portal](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
 - [Your organization primarily used Compliance Score (public preview), located in the Microsoft 365 compliance center](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
@@ -36,7 +36,7 @@ The general availability of Compliance Manager in the Microsoft 365 compliance c
 
 Read this [blog post](https://aka.ms/compliancemanager/GAblog) to learn more about what’s new with the GA release of Compliance Manager.
 
-#### Your organization regularly used Compliance Manger in the Service Trust Portal
+#### Your organization regularly used Compliance Manager in the Service Trust Portal
 
 If you used Compliance Manager in the Service Trust Portal, all of your organization’s data now exists in Compliance Manager in the Microsoft 365 compliance center at https://compliance.microsoft.com/compliancemanager. There’s nothing you need to do to resume your Compliance Manager work in its new location, other than to update any bookmarks you have to its previous location. All of your assessments and other data have been brought over for you.
 
@@ -46,7 +46,7 @@ Everything you used to do in previous versions of Compliance Manager, such as co
 
 Below are some helpful resources:
 
-- [Get familiar with your new Compliance Manger experience](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Get familiar with your new Compliance Manager experience](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Find permissions and other setup information for Compliance Manager in its new home](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [Learn more about the Microsoft 365 compliance center](microsoft-365-compliance-center.md)
 
@@ -68,7 +68,7 @@ Compliance Manager is an end-to-end solution in the Microsoft 365 compliance cen
 
 ## Are there licensing requirements for using Compliance Manager?
 
-Yes. The GA release of Compliance Manager contains new licensing terms. All organizations with Office 365 and Microsoft 365 licenses (except for US Government and DoD) have access to Compliance Manager. However, the assessments available to your organization and how you manage assessment templates depends on your licensing agreement. Visit the [Microsoft 365 licensing guidance for security and compliance](https://go.microsoft.com/fwlink/?linkid=2132371) for details.
+Yes. The GA release of Compliance Manager contains new licensing terms. All organizations with Office 365 and Microsoft 365 licenses, and US Government Community (GCC) Moderate and GCC High customers, have access to Compliance Manager. However, the assessments available to your organization and how you manage assessment templates depends on your licensing agreement. Visit the [Microsoft 365 licensing guidance for security and compliance](https://go.microsoft.com/fwlink/?linkid=2132371) for details.
 
 ## If I have a high score, does it mean I’m fully compliant?
 
@@ -77,3 +77,9 @@ No. Your compliance score measures your progress in completing recommended actio
 ## Can I use Compliance Manager for non-Microsoft products?
 
 While Compliance Manager provides continuous monitoring and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your third-party services. In this way, you can use Microsoft Compliance Manager as a SaaS compliance management tool to help you manage all the controls across your digital assets.
+
+## What’s happening to Compliance Manager (classic) in the Service Trust Portal?
+
+The classic version of Compliance Manager, which resides in the Microsoft Service Trust Portal, will soon be retired. A Microsoft 365 Message Center notice will go out at least 60 days before the final retirement of Compliance Manager (classic). Customers who are managing their compliance activities in Compliance Manager (classic) will need to move their data, including assessments and controls, over to the new Compliance Manager solution in the Microsoft 365 compliance center. Customer data will not automatically transfer over to Compliance Manager in the Microsoft 365 compliance center when Compliance Manager (classic) is retired.
+
+To learn how you can quickly set up the new Compliance Manager, read our [Compliance Manager quickstart](compliance-manager-quickstart.md) guide.

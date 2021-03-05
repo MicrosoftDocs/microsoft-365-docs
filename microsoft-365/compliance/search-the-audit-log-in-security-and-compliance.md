@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: how-to
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Office 365 Security & Compliance Center or the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization."
+description: "Use the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Search the audit log in the compliance Center
+# Search the audit log in the compliance center
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Microsoft 365:
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Microsoft 365:
 
 - User activity in SharePoint Online and OneDrive for Business
 
@@ -57,14 +57,18 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
 
+- Admin activity in Briefing email and MyAnalytics
+
 ## Requirements to search the audit log
 
 Be sure to read the following items before you start searching the audit log.
 
-- You (or another admin) must first turn on audit logging before you can start searching the audit log. To turn it on, click **Turn on auditing** on the **Audit log search** page in the Security & Compliance Center. (If you don't see this link, auditing has already been turned on for your organization.) After you turn it on, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this once. For more information, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+- Audit log search is turned on by default for Microsoft 365 and Office 365 enterprise organizations. This includes organizations with E3/G3 or E5/G5 subscriptions. To verify that audit log search is turned on, you can run the following command in Exchange Online PowerShell:
 
-  > [!NOTE]
-  > We're in the process of turning on auditing by default. Until then, you can turn it on as previously described.
+  ```powershell
+  Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+  ```
+  The value of `True` for the *UnifiedAuditLogIngestionEnabled* property indicates that audit log search is turned on. For more information, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 - You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Note global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
@@ -107,25 +111,25 @@ Be sure to read the following items before you start searching the audit log.
 
   |Microsoft 365 service or feature|30 minutes|24 hours|
   |:-----|:-----:|:-----:|
-  |Advanced Threat Protection and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory (user login events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Azure Active Directory (admin events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Data Loss Prevention|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |eDiscovery|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange Online|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Microsoft Project|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Power BI|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Security & Compliance Center|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sensitivity labels||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |SharePoint Online and OneDrive for Business|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Workplace Analytics|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Defender for Office 365 and Threat Intelligence|![Check mark](../media/checkmark.png)||
+  |Azure Active Directory (user login events)||![Check mark](../media/checkmark.png)|
+  |Azure Active Directory (admin events)||![Check mark](../media/checkmark.png)|
+  |Data Loss Prevention|![Check mark](../media/checkmark.png)||
+  |Dynamics 365 CRM||![Check mark](../media/checkmark.png)|
+  |eDiscovery|![Check mark](../media/checkmark.png)||
+  |Exchange Online|![Check mark](../media/checkmark.png)||
+  |Microsoft Power Automate||![Check mark](../media/checkmark.png)|
+  |Microsoft Project|![Check mark](../media/checkmark.png)||
+  |Microsoft Stream|![Check mark](../media/checkmark.png)||
+  |Microsoft Teams|![Check mark](../media/checkmark.png)||
+  |Power Apps||![Check mark](../media/checkmark.png)|
+  |Power BI|![Check mark](../media/checkmark.png)||
+  |Security & Compliance Center|![Check mark](../media/checkmark.png)||
+  |Sensitivity labels||![Check mark](../media/checkmark.png)|
+  |SharePoint Online and OneDrive for Business|![Check mark](../media/checkmark.png)||
+  |Workplace Analytics|![Check mark](../media/checkmark.png)||
+  |Yammer||![Check mark](../media/checkmark.png)||
+  |Microsoft Forms|![Check mark](../media/checkmark.png)|
   ||||
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).
@@ -134,6 +138,9 @@ Be sure to read the following items before you start searching the audit log.
 
 ## Search the audit log
 
+> [!NOTE]
+> There was an issue with Azure AD activities being unavailable in the audit log search tool from October 22, 2020 to November 6, 2020. These activites include Azure AD user administration activities, group administration activities, application administration activities, role administration activities, and directory administration activities. The missing events for the period of impact will be available over the next few days, and is expected to take no later than November 20, 2020 to complete. In some cases, customers might notice duplicate event data for events generated between October 26, 2020 and November 05, 2020.
+    
 Here's the process for searching the audit log in Office 365.
 
 [Step 1: Run an audit log search](#step-1-run-an-audit-log-search)
@@ -168,7 +175,7 @@ Here's the process for searching the audit log in Office 365.
 
       Over 100 user and admin activities are logged in the audit log. Click the **Audited activities** tab at the topic of this article to see the descriptions of every activity in each of the different services.
 
-   1. **Start date** and **End date**: The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
+   1. **Start date** and **End date**: The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
 
       > [!TIP]
       > If you're using the maximum date range of 90 days, select the current time for the **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the maximum date range can't start before the date that auditing was turned on.
@@ -211,7 +218,7 @@ The results of an audit log search are displayed under **Results** on the **Audi
 
 The results contain the following information about each event returned by the search:
 
-- **Date**: The date and time (in UTC format) when the event occurred.
+- **Date**: The date and time (in your local time) when the event occurred.
 
 - **IP address**: The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.
 
@@ -358,7 +365,7 @@ Click one of the following links to go to a specific table.
         [Power BI activities](#power-bi-activities)
     :::column-end:::
     :::column:::
-        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+        [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
         [Microsoft Teams activities](#microsoft-teams-activities)
@@ -409,6 +416,18 @@ Click one of the following links to go to a specific table.
         [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
     :::column-end:::
     :::column:::
+        [Briefing email activities](#briefing-email-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [MyAnalytics activities](#myanalytics-activities)
+    :::column-end:::
+    :::column:::
+        [Information barriers activities](#information-barriers-activities)
+    :::column-end:::
+    :::column:::
         [Exchange admin activities](#exchange-admin-audit-log)
     :::column-end:::
 :::row-end:::
@@ -430,7 +449,7 @@ The following table describes the file and page activities in SharePoint Online 
 |Deleted file|FileDeleted|User deletes a document from a site.|
 |Deleted file from recycle bin|FileDeletedFirstStageRecycleBin|User deletes a file from the recycle bin of a site.|
 |Deleted file from second-stage recycle bin|FileDeletedSecondStageRecycleBin|User deletes a file from the second-stage recycle bin of a site.|
-|Deleted record compliance policy label|ComplianceRecordDelete|A document that was marked as a record was deleted. A document is considered a record when a retention label that marks content as a record is applied to the document.|
+|Deleted file marked as a record|RecordDelete|A document or email that was marked as a record was deleted. An item is considered a record when a retention label that marks items as a record is applied to content.|
 |Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document to a site that's protected with a sensitivity label and the document has a higher priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled Confidential is uploaded to a site labeled General. <br/><br/> This event isn't triggered if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled General is uploaded to a site labeled Confidential. For more information about sensitivity label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).|
 |Detected malware in file|FileMalwareDetected|SharePoint anti-virus engine detects malware in a file.|
 |Discarded file checkout|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
@@ -454,7 +473,7 @@ The following table describes the file and page activities in SharePoint Online 
 
 #### Frequently asked questions about FileAccessed and FilePreviewed events
 
-**Could any non-user activities trigger FilePreviewed audit records that contains a user agent like "OneDriveMpc-Transform_Thumbnail"?**
+**Could any non-user activities trigger FilePreviewed audit records that contain a user agent like "OneDriveMpc-Transform_Thumbnail"?**
 
 We aren't aware of scenarios where non-user actions generate events like these. User actions like opening a user profile card (by clicking their name or email address in a message in Outlook on the web) would generate similar events.
 
@@ -667,8 +686,9 @@ The following table lists the activities that can be logged by mailbox audit log
 |Purged messages from the mailbox|HardDelete|A message was purged from the Recoverable Items folder (permanently deleted from the mailbox).|
 |Removed delegate mailbox permissions|Remove-MailboxPermission|An administrator removed the FullAccess permission (that was assigned to a delegate) from a person's mailbox. After the FullAccess permission is removed, the delegate can't open the other person's mailbox or access any content in it.|
 |Removed permissions from folder|RemoveFolderPermissions|A folder permission was removed. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
+|Sent message|Send|A message was sent, replied to or forwarded. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. For more information, see the "Access to crucial events for investigations" section in [Advanced Audit](advanced-audit.md#access-to-crucial-events-for-investigations).|
 |Sent message using Send As permissions|SendAs|A message was sent using the SendAs permission. This means that another user sent the message as though it came from the mailbox owner.|
-|Sent message using Send On Behalf permissions|SendOnBehalf|A message was sent using the SendOnBehalf permission. This means that another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|
+|Sent message using Send On Behalf permissions|SendOnBehalf|A message was sent using the SendOnBehalf permission. This means that another user sent the message on behalf of the mailbox owner. The message indicates to the recipient whom the message was sent on behalf of and who actually sent the message.|
 |Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox modified an inbox rule in the Outlook client.|
 |Updated message|Update|A message or its properties was changed.|
 |User signed in to mailbox|MailboxLogin|The user signed in to their mailbox.|
@@ -779,7 +799,7 @@ You can search the audit log for activities in Power BI. For information about P
 
 Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
-### Microsoft Workplace Analytics activities
+### Workplace Analytics activities
 
 Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
@@ -887,7 +907,7 @@ Where noted below in the descriptions, some operations contain additional activi
 |:-----|:-----|:-----|
 |Created comment|CreateComment|Form owner adds comment or score to a quiz.|
 |Created form|CreateForm|Form owner creates a new form.|
-|Edited form|EditForm|Form owner edits a form such, as creating, removing, or editing a question. <br><br>Property EditOperation:string indicates the edit operation name. Possible operations are: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage, and ChangeTheme.  <br><br>Most operation names are self-explanatory. <br><br>FormImage includes any place within Forms that user can upload an image, such as in a query or as a background theme.|
+|Edited form|EditForm|Form owner edits a form such, as creating, removing, or editing a question. The property *EditOperation:string* indicates the edit operation name. The possible operations are:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage includes any place within Forms that user can upload an image, such as in a query or as a background theme.|
 |Moved form|MoveForm|Form owner moves a form. <br><br>Property DestinationUserId:string indicates the user ID of the person who moved the form. Property NewFormId:string is the new ID for the newly copied form.|
 |Deleted form|DeleteForm|Form owner deletes a form. This includes SoftDelete (delete option used and form moved to recycle bin) and HardDelete (Recycle bin is emptied).|
 |Viewed form (design time)|ViewForm|Form owner opens an existing form for editing.|
@@ -906,7 +926,8 @@ Where noted below in the descriptions, some operations contain additional activi
 |Viewed response|ViewResponse|Form owner views a particular response. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
 |Created summary link|GetSummaryLink|Form owner creates summary results link to share results.|
 |Deleted summary link|DeleteSummaryLink|Form owner deletes summary results link.|
-|Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the internal security status detailed value has changed, regardless of whether this changed the final Security State (for example, form is now Closed or Opened). This means you may see duplicate events without a final Security State change.|
+|Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the detailed value for the internal security status was changed, regardless of whether this changed the final security state (for example, form is now Closed or Opened). This means you may see duplicate events without a final security state change. The possible status values for this event are:<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
+|Updated user phishing status|UpdateUserPhishingStatus|This event is logged whenever the value for the user security status was changed. The value of the user status in the audit record is **Confirmed as Phisher** when the user created a phishing form that was taken down by the Microsoft Online safety team. If an admin unblocks the user, the value of the user's status is set to **Reset as Normal User**.|
 |Sent Forms Pro invitation|ProInvitation|User clicks to activate a Pro trial.|
 |Updated form setting|UpdateFormSetting|Form owner updates a form setting. <br><br>Property FormSettingName:string indicates the setting's name and new value.|
 |Updated user setting|UpdateUserSetting|Form owner updates a user setting. <br><br>Property UserSettingName:string indicates the setting's name and new value|
@@ -916,7 +937,7 @@ Where noted below in the descriptions, some operations contain additional activi
 
 #### Forms activities performed by coauthors and anonymous responders
 
-Forms supports collaboration when forms are being designed and when analyzing responses. A form collaborator is known as a *coauthor*. Coauthors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form. 
+Forms supports collaboration when forms are designed and when analyzing responses. A form collaborator is known as a *coauthor*. Coauthors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form.
 
 The following table describes the auditing activities and information in the audit record for activities performed by coauthors and anonymous responders.
 
@@ -940,7 +961,7 @@ The following table lists events that result from labeling activities for ShareP
 |Removed sensitivity label from site|SensitivityLabelRemoved|A sensitivity label was removed from a SharePoint or Teams site.|
 |Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
 |Changed sensitivity label applied to file|FileSensitivityLabelChanged|A different sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
-|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web or an auto-labeling policy.|
+|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web, an auto-labeling policy, or by using the [Unlock-SPOSensitivityLabelEncryptedFile](https://docs.microsoft.com/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet.|
 ||||
 
 ### Retention policy and retention label activities
@@ -957,6 +978,42 @@ The following table lists events that result from labeling activities for ShareP
 | Updated settings for a retention policy | SetRetentionComplianceRule | Administrator changed the retention settings for an existing retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlet. |
 | Updated retention label |SetComplianceTag  | Administrator updated an existing retention label.|
 | Updated retention policy |SetRetentionCompliancePolicy |Administrator updated an existing a retention policy. Updates that trigger this event include adding or excluding content locations that the retention policy is applied to.|
+||||
+
+### Briefing email activities
+
+The following table lists the activities in Briefing email that are logged in the Office 365 audit log. For more information about Briefing email, see:
+
+- [Overview of Briefing email](https://docs.microsoft.com/Briefing/be-overview)
+
+- [Configure Briefing email](https://docs.microsoft.com/Briefing/be-admin)
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
+|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
+||||
+
+### MyAnalytics activities
+
+The following table lists the activities in MyAnalytics that are logged in the Office 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
+|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
+||||
+
+### Information barriers activities
+
+The following table lists the activities in information barriers that are logged in the Office 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
+
+|**Friendly name**|**Operation**|**Description**|
+|:----------------|:------------|:--------------|
+| Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
+| Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
+| Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
+||||
 
 ### Exchange admin audit log
 
@@ -989,7 +1046,7 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 **What are different Microsoft 365 services that are currently audited?**
 
-The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
+The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Defender for Office 365, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
 
 **What activities are audited by auditing service in Office 365?**
 
