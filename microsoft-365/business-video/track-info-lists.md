@@ -44,7 +44,7 @@ Track information and organize work with Microsoft Lists. Create a list from scr
 
 Format a column to highlight the details in it:
 
-1. Select the column heading, then select the option you want, such as a background color or rounded corners.
+1. Select the column heading, select the option you want, such as a background color or rounded corners.
 1. Select **Save** to apply the changes.
 
 ### Add rules to alert coworkers about list updates
