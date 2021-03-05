@@ -110,6 +110,8 @@ See the following references to create a secure and productive guest sharing env
 
 For the sensitive and highly sensitive tiers, we restrict access to SharePoint content with sensitivity labels. Azure AD conditional access offers many options for determining how people access Microsoft 365, including limitations based on location, risk, device compliance, and other factors. We recommend you read [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) and consider which additional policies might be appropriate for your organization.
 
+Note that guest users often don't have devices that are managed by your organization. If you allow guests in any of the tiers, consider what kinds of devices they'll be using to access teams and sites and set your unmanaged device policies accordingly.
+
 ## Next step
 
 Start by [configuring the baseline level of protection](configure-teams-baseline-protection.md). If needed you can add [sensitive protection](configure-teams-sensitive-protection.md) and [highly sensitive protection](configure-teams-highly-sensitive-protection.md) on top of the baseline.
