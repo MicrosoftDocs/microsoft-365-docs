@@ -40,13 +40,17 @@ A SharePoint admin can create a content center site like they would [create any 
 To create a new content center:
 
 1. On the Microsoft 365 admin center, go to the SharePoint admin center.
+
 2. On the SharePoint admin center, under **Sites**, select **Active Sites**.
+
 3. On the **Active Sites** page, click **Create**, and then select **Other options**.
+
 4. On the **Choose a template** menu, select **Content Center**.
+
 5. For the new site, provide a **Site Name**, **Primary administrator**, and a **Language**.</br>
 
-> [!NOTE] 
-> You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files. Also note that like other site templates, the default site language isn't editable after the site is created.</br>
+   > [!NOTE] 
+   > You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files. Also note that like other site templates, the default site language isn't editable after the site is created.</br>
 
 6. Select **Finished**.
  
