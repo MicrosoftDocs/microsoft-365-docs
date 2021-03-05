@@ -38,6 +38,16 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the Microsoft 365 Admin Center.
 
+### Licensing
+
+To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each user must have the following licenses assigned:
+
+- SharePoint Syntex
+- SharePoint Syntex - SPO type
+- Common Data Service for SharePoint Syntex
+
+If you cancel your subscription at a future date (or your trial expires), users will no longer be able to create or run document understanding or form processing models, and the content center template will no longer be available. Additionally, term store reports, SKOS taxonomy import, and Content type push will no longer be available. No content will be deleted and site permissions will not be changed.
+
 ## To set up SharePoint Syntex
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Files and content** section.
