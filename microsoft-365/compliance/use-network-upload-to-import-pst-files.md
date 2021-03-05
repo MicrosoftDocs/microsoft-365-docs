@@ -177,7 +177,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
   
 1. Download and install the [Microsoft Azure Storage Explorer tool](https://go.microsoft.com/fwlink/p/?LinkId=544842).
     
-2. Start the Microsoft Azure Storage Explorer, Choose **Blob Container**
+2. Start the Microsoft Azure Storage Explorer and select **Blob Container**.
   
 3. Click **Use a shared access signature (SAS) URI or connection string** and click **Next**.
     
