@@ -46,7 +46,7 @@ To use SharePoint Syntex, your organization must have a subscription to SharePoi
 - SharePoint Syntex - SPO type
 - Common Data Service for SharePoint Syntex
 
-If you cancel your subscription at a future date (or your trial expires), users will no longer be able to create or run document understanding or form processing models, and the content center template will no longer be available. Additionally, term store reports, SKOS taxonomy import, and Content type push will no longer be available. No content will be deleted and site permissions will not be changed.
+If you cancel your SharePoint Syntex subscription at a future date (or your trial expires), users will no longer be able to create or run document understanding or form processing models, and the content center template will no longer be available. Additionally, term store reports, SKOS taxonomy import, and Content type push will no longer be available. No content will be deleted and site permissions will not be changed.
 
 ## To set up SharePoint Syntex
 
