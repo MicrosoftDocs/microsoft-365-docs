@@ -57,7 +57,7 @@ Format a column to highlight the details in it:
 
 ### Sort and group list items
 
-You can prioritize a list of orders in different ways:
+You can prioritize a list of orders in a few different ways:
 
 - To sort by deadline, select the Fulfill order by column and then select Older to Newer.
 - To group orders by customer, select the Customer type column, and select Group by Customer type.
