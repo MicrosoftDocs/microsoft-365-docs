@@ -37,6 +37,7 @@ Select from 4 different techniques, curated from the [MITRE ATT&CK® framework](
 - **Malware attachment** adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
 - **Link in attachment** is a type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
 - **Link to malware** will run some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file and help the attacker compromise the target's device.
+- **Drive-by URL** is where the malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code code on the user's device.
 
 > [!TIP]
 > Clicking on **View details** within the description of each technique will display further information and the simulation steps for the technique.

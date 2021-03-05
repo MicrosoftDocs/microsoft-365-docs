@@ -124,6 +124,7 @@ The details pages are:
 - [Mobility – people experiences](mobility.md)
 - [Teamwork – people experiences](teamwork.md)
 - [Microsoft 365 Apps health – technology experiences](apps-health.md)
+- [Endpoint Analytics](https://docs.microsoft.com/mem/analytics/productivity-score)
 
 ## Business continuity special report
 
