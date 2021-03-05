@@ -55,10 +55,10 @@ Use this procedure to create a new sensitive information type that you fully def
 2. Fill in values for **Name** and **Description** and choose **Next**.
 3. Choose **Create pattern**. You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.
 4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
-5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).
+5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions and validators, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).
 6. Fill in a value for **Character proximity**.
-7. (Optional) Add supporting elements if you have any. Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary or one of the pre-defined functions. 
-8.	(Optional) Add additional checks from the list of available checks
+7. (Optional) Add supporting elements if you have any. Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary or one of the pre-defined functions. If needed you can group your **Supporting elements** in groups of "All of these", "Any of these" and "Not any of these".
+8.	(Optional) Add additional checks from the list of available checks. For more information on Additional checks, see [Additional checks](Link to the Additional checks topic a the bottom of the page)
 9. Choose **Create**.
 10. Choose **Next**.
 11. Choose the **recommended confidence level** for this sensitive information type.
@@ -107,11 +107,27 @@ Use this procedure to create a new sensitive information type that is based on a
 7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
 8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [What the DLP functions look for](what-the-dlp-functions-look-for.md).
 9. Fill in a value for **Character proximity**.
-10. (Optional) If you have **Supporting elements** or any **Additional checks** add them. If needed you can group your **Supporting elements**.
+10. (Optional) If you have **Supporting elements** or any **Additional checks** add them. If needed you can group your **Supporting elements** in groups of "All of these", "Any of these" with ability to select how many and "Not any of these".
 11. Choose **Create**.
 12. Choose **Next**.
 13. Choose the **recommended confidence level** for this sensitive information type.
 14. Check your setting and choose **Submit**.
+
+## Additional Checks
+**Exclude specific matches** allow you to define keywords that will be excluded when detecting matches for this pattern of the info type. For example, you might exclude test credit card numbers like '4111111111111111' so that they're not matched as a valid number.
+
+**Starts or doesn't start with characters** allow you to define the characters with which the matched items should or should not start with. For example, if you want credit card numbers to always start with '41' or '42' or '43' then select 'Starts with' and add 41, 42 & 43 to the list seperated by commas. 
+
+**Ends or doesn't end with characters** allow you to define the characters with which the matched items should or should not end with. For example, if your Employee ID number cannot end with 0 or 1 then select 'Doesn't end with' and add 0 & 1 to the list seperated by commas.
+
+**Exclude duplicate characters** allow you to ignore matches in which all the digits are same. For example, if the Employee ID number can not have all the digits to be same, you can select Exclude duplicate characters additional check to exclude 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999, 000000 from the list of valid matches for employee ID.
+
+**Include or exclude prefixes** allow you to define the keywords that should or shouldn't be found immediately before the matching entity. Depending on your selection, entities will be matched or not matched if they're preceded by the prefixes you include here. For example, if you 'Exclude' the prefix 'GUID:', any entity that's preceded by 'GUID:' won't be considered a match.
+
+**Include or exclude suffixes** allow you to define the keywords that should or shouldn't be found immediately after the matching entity. Depending on your selection, entities will be matched or not matched if they're followed by the suffixes you include here. For example, if you 'Exclude' the suffix ':GUID', any text that's followed with ':GUID' won't be matched.
+
+
+
 
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
