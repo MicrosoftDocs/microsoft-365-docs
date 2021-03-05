@@ -41,6 +41,13 @@ An Office 365 admin needs to [enable Form processing](https://docs.microsoft.com
 
 When using form processing models, make sure to note the [requirements and limitations for file usage](https://docs.microsoft.com/ai-builder/form-processing-model-requirements).
 
+### Multi-Geo environments
+
+When setting up SharePoint Syntex in a [Microsoft 365 Multi-Geo environment](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide), you can only configure it to use form processing in the central location. If you want to use form processing in a satellite location, contact Microsoft support.
+
+
+
+
 
 
 ## See Also
