@@ -3,7 +3,7 @@ title: "Migration phases actions and impacts for the migration from Microsoft Cl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 01/26/2021
+ms.date: 03/05/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -22,9 +22,26 @@ description: "Summary: Understand the migration phases actions and impacts of mo
 
 # Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (general)
 
-Tenant migrations from Microsoft Cloud Deutschland to the Germany region of Microsoft's Office 365 services are executed as a set of phases and their configured actions for each workload. This figure shows the nine phases of migration to the new German datacenters.
+Tenant migrations from Microsoft Cloud Deutschland to the Germany region of Microsoft's Office 365 services are executed as a set of phases and their configured actions for each workload. This figure shows the nine phases of migration to the new German datacenters. 
 
 ![The nine phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+
+The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation.
+
+|Phase|Duration|Responsible party|Description|
+|:--------|:--------|:--------|:--------|
+|Opt-In|Hours|Customer|Opt your organization in to the migration.|
+|1. Pre-Work|Days|Customer|Complete the work needed to prepare users, workstations, and network for migration.|
+|2. Azure Active Directory (Azure AD)|Hours|Microsoft|Migrate Azure AD organization to worldwide.|
+|3 through 8. Azure|Weeks|Customer|Create new worldwide Azure subscriptions and transition Azure services.|
+|3. Subscription & License Transition|Hours|Microsoft|Purchase worldwide subscriptions, cancel Microsoft Cloud Deutschland subscriptions, and transition user licenses.|
+|4. SharePoint and OneDrive|Days|Microsoft|Migrate SharePoint and OneDrive for Business content, peristing sharepoint.de URLs.|
+|5. Exchange|Days|Microsoft|Migrate Exchange Online content and transition to worldwide URLs.|
+|6. Security & Compliance|Days|Microsoft|Transition security & compliance policies and content.|
+|7. Skype for Business|Days|Microsoft|Transition from Skype for Business to Microsoft Teams.|
+|8. Power BI & Dynamics 365|Days|Microsoft|Migrate PowerBI and Dynamics 365 content.|
+|9. Finalize Azure AD|Days|Microsoft|Complete tenant cutover to worlwide.|
+|9. Clean-Up|Days|Customer|Clean up legacy connections to Microsoft Cloud Deutschland, such as Active Directory Federation Services (AD FS) Relying Party Trust, Azure AD Connect, and Office client restarts.|
 
 The phases and their actions ensure that critical data and experiences are migrated to the Office 365 services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
