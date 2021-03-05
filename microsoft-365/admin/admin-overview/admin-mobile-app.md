@@ -40,7 +40,7 @@ The admin app has a lot of capabilities which will enable you to manage Microsof
 - **Service Health** Monitor the health of all the services by viewing the current status of the service and details about service disruption and outages.
 - **Notifications** Stay on top of all the important information and updates related to message center posts, service health and billing through push notifications. You can even customize what you want to be notified of.
 
-And if you're someone who is responsible for more than one online organization, you can sign in to multiple organizations and quickly switch between them.
+If you're an admin and you're responsible for more than one Microsoft 365 organization, you can sign in to multiple organizations and quickly switch between them.
   
 > [!IMPORTANT]
 > If you're having trouble using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
