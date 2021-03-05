@@ -56,7 +56,11 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - The Tenant Allow/Block List allows a maximum of 500 entries for URLs, and 500 entries for file hashes.
 
-- An entry should be active within 15 minutes.
+- The maximum number of characters for each entry is:
+  - File hashes = 64
+  - URL = 250
+
+- An entry should be active within 30 minutes.
 
 - By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire.
 
