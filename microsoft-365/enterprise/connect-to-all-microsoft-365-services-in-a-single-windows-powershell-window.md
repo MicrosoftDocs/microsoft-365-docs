@@ -110,8 +110,9 @@ Follow these steps to connect to all the services in a single PowerShell window 
    > Skype for Business Online Connector is currently part of the latest Teams PowerShell module. If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.
    
    ```powershell
-   $sfboSession = New-CsOnlineSession -Credential $credential
-   Import-PSSession $sfboSession
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
    ```
 
 6. Run these commands to connect to Exchange Online.
@@ -138,11 +139,14 @@ Follow these steps to connect to all the services in a single PowerShell window 
     
    ```powershell
    Import-Module MicrosoftTeams
-   Connect-MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
    ```
   
    > [!Note]
    > To connect to Microsoft Teams clouds other than *Worldwide*, see [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+  
+
 
 
 ### Azure Active Directory PowerShell for Graph module
@@ -159,8 +163,8 @@ Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
@@ -168,7 +172,7 @@ Connect-ExchangeOnline -ShowProgress $true
 Connect-IPPSSession -UserPrincipalName $acctName
 #Teams
 Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 ```
 
 ### Microsoft Azure Active Directory Module for Windows PowerShell module
@@ -185,8 +189,8 @@ Connect-MsolService -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
@@ -194,7 +198,7 @@ Connect-ExchangeOnline -ShowProgress $true
 Connect-IPPSSession -UserPrincipalName $acctName
 #Teams
 Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 ```
 
 ## Connection steps when using multi-factor authentication
@@ -211,8 +215,8 @@ Connect-AzureAD
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
@@ -234,8 +238,8 @@ Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
