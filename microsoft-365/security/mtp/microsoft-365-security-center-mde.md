@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint in the Microsoft 365 security center supports [g
 > What you see in the Microsoft 365 security center depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown.
 
 >[!Note]
->the new unified portal is not available for:
+>The new unified portal is not available for:
 >US Government Community Cloud (GCC)
 >US Government Community Cloud High (GCC High)
 >US Department of Defense
