@@ -26,22 +26,22 @@ Tenant migrations from Microsoft Cloud Deutschland to the Germany region of Micr
 
 ![The nine phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
-The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation.
+The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation. The graphic and table define phases and steps during the migration.
 
-|Phase|Duration|Responsible party|Description|
+|Step|Duration|Responsible party|Description|
 |:--------|:--------|:--------|:--------|
 |Opt-In|Hours|Customer|Opt your organization in to the migration.|
-|1. Pre-Work|Days|Customer|Complete the work needed to prepare users, workstations, and network for migration.|
-|2. Azure Active Directory (Azure AD)|1-2 days|Microsoft|Migrate Azure AD organization to worldwide.|
-|3 through 8. Azure|Weeks|Customer|Create new worldwide Azure subscriptions and transition Azure services.|
-|3. Subscription & License Transition|1-2 days|Microsoft|Purchase worldwide subscriptions, cancel Microsoft Cloud Deutschland subscriptions, and transition user licenses.|
-|4. SharePoint and OneDrive|15+ days|Microsoft|Migrate SharePoint and OneDrive for Business content, peristing sharepoint.de URLs.|
-|5. Exchange|15+ days|Microsoft|Migrate Exchange Online content and transition to worldwide URLs.|
-|6. Security & Compliance|1-2 days|Microsoft|Transition security & compliance policies and content.|
-|7. Skype for Business|1-2 days|Microsoft|Transition from Skype for Business to Microsoft Teams.|
-|8. Power BI & Dynamics 365|15+ days|Microsoft|Migrate PowerBI and Dynamics 365 content.|
-|9. Finalize Azure AD|1-2 days|Microsoft|Complete tenant cutover to worlwide.|
-|9. Clean-Up|1-2 days|Customer|Clean up legacy connections to Microsoft Cloud Deutschland, such as Active Directory Federation Services (AD FS) Relying Party Trust, Azure AD Connect, and Office client restarts.|
+|Pre-Work|Days|Customer|Complete the work needed to prepare users, workstations, and network for migration.|
+|Azure Active Directory (Azure AD)|1-2 days|Microsoft|Migrate Azure AD organization to worldwide.|
+|Azure|Weeks|Customer|Create new worldwide Azure subscriptions and transition Azure services.|
+|Subscription & License Transition|1-2 days|Microsoft|Purchase worldwide subscriptions, cancel Microsoft Cloud Deutschland subscriptions, and transition user licenses.|
+|SharePoint and OneDrive|15+ days|Microsoft|Migrate SharePoint and OneDrive for Business content, peristing sharepoint.de URLs.|
+|Exchange Online|15+ days|Microsoft|Migrate Exchange Online content and transition to worldwide URLs.|
+|Security & Compliance|1-2 days|Microsoft|Transition security & compliance policies and content.|
+|Skype for Business|1-2 days|Microsoft|Transition from Skype for Business to Microsoft Teams.|
+|Power BI & Dynamics 365|15+ days|Microsoft|Migrate PowerBI and Dynamics 365 content.|
+|Finalize Azure AD|1-2 days|Microsoft|Complete tenant cutover to worlwide.|
+|Clean-Up|1-2 days|Customer|Clean up legacy connections to Microsoft Cloud Deutschland, such as Active Directory Federation Services (AD FS) Relying Party Trust, Azure AD Connect, and Office client restarts.|
 
 The phases and their actions ensure that critical data and experiences are migrated to the Office 365 services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
