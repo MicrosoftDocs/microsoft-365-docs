@@ -16,7 +16,7 @@ Now that you've enrolled in the service, follow these steps to confirm admin con
 > This is the recommended order to follow, but you do have some flexibility in the sequence.
 
 1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
-2. [Adjust conditional access](conditional-access.md)
+2. [Adjust settings after enrollment](conditional-access.md)
 3. [Assign licenses](assign-licenses.md)
 4. [Deploy Intune Company Portal](company-portal.md)
 5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)

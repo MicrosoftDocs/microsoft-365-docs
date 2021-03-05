@@ -105,6 +105,10 @@ ZAP will take action on a message based on the configuration your anti-spam poli
 
 Safe senders, mail flow rules, or block and allow organizational settings take precedence. These messages are excluded from ZAP since the service is doing what you configured it to do. This is another reason to be careful about configuring messages to bypass filtering.
 
+### What are the licensing Requirements for ZAP to work?
+
+There are no limitations on licenses. ZAP works on all mailboxes hosted on Exchange online. ZAP doesn't work in standalone Exchange Online Protection (EOP) environments that protect on-premises Exchange mailboxes.
+
 ### What if a message is moved to another folder (e.g. Inbox rules)?
 
 ZAP still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the anti-phishing policy is set to quarantine and message is already in the Junk Email, then ZAP will take action to quarantine the message.

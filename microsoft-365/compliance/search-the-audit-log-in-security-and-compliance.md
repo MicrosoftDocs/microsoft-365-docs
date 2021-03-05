@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Office 365 Security & Compliance Center or the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization."
+description: "Use the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -56,6 +56,8 @@ Need to find if a user viewed a specific document or purged an item from their m
 - User and admin activity in Microsoft Forms
 
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
+
+- Admin activity in Briefing email and MyAnalytics
 
 ## Requirements to search the audit log
 
@@ -173,7 +175,7 @@ Here's the process for searching the audit log in Office 365.
 
       Over 100 user and admin activities are logged in the audit log. Click the **Audited activities** tab at the topic of this article to see the descriptions of every activity in each of the different services.
 
-   1. **Start date** and **End date**: The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
+   1. **Start date** and **End date**: The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
 
       > [!TIP]
       > If you're using the maximum date range of 90 days, select the current time for the **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the maximum date range can't start before the date that auditing was turned on.
@@ -216,7 +218,7 @@ The results of an audit log search are displayed under **Results** on the **Audi
 
 The results contain the following information about each event returned by the search:
 
-- **Date**: The date and time (in UTC format) when the event occurred.
+- **Date**: The date and time (in your local time) when the event occurred.
 
 - **IP address**: The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.
 
@@ -363,7 +365,7 @@ Click one of the following links to go to a specific table.
         [Power BI activities](#power-bi-activities)
     :::column-end:::
     :::column:::
-        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+        [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
         [Microsoft Teams activities](#microsoft-teams-activities)
@@ -412,6 +414,18 @@ Click one of the following links to go to a specific table.
     :::column-end:::
     :::column:::
         [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [Briefing email activities](#briefing-email-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [MyAnalytics activities](#myanalytics-activities)
+    :::column-end:::
+    :::column:::
+        [Information barriers activities](#information-barriers-activities)
     :::column-end:::
     :::column:::
         [Exchange admin activities](#exchange-admin-audit-log)
@@ -785,7 +799,7 @@ You can search the audit log for activities in Power BI. For information about P
 
 Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
-### Microsoft Workplace Analytics activities
+### Workplace Analytics activities
 
 Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
@@ -964,6 +978,42 @@ The following table lists events that result from labeling activities for ShareP
 | Updated settings for a retention policy | SetRetentionComplianceRule | Administrator changed the retention settings for an existing retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlet. |
 | Updated retention label |SetComplianceTag  | Administrator updated an existing retention label.|
 | Updated retention policy |SetRetentionCompliancePolicy |Administrator updated an existing a retention policy. Updates that trigger this event include adding or excluding content locations that the retention policy is applied to.|
+||||
+
+### Briefing email activities
+
+The following table lists the activities in Briefing email that are logged in the Office 365 audit log. For more information about Briefing email, see:
+
+- [Overview of Briefing email](https://docs.microsoft.com/Briefing/be-overview)
+
+- [Configure Briefing email](https://docs.microsoft.com/Briefing/be-admin)
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
+|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
+||||
+
+### MyAnalytics activities
+
+The following table lists the activities in MyAnalytics that are logged in the Office 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
+|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
+||||
+
+### Information barriers activities
+
+The following table lists the activities in information barriers that are logged in the Office 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
+
+|**Friendly name**|**Operation**|**Description**|
+|:----------------|:------------|:--------------|
+| Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
+| Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
+| Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
+||||
 
 ### Exchange admin audit log
 
