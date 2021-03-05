@@ -59,6 +59,7 @@ After you install MCCA, you can run MCCA and generate a report. To run a report:
     ```powershell
     Get-MCCAReport
     ```
+
    If you're a GCC High customer, you'll need to provide an additional input parameter to run the report:
 
     ```powershell
