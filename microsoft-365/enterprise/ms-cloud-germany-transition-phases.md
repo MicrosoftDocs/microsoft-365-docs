@@ -30,17 +30,17 @@ The migration process will complete over many weeks depending on the overall siz
 
 |Step|Duration|Responsible party|Description|
 |:--------|:--------|:--------|:--------|
-|Opt-In|Hours|Customer|Opt your organization in to the migration.|
+|Opt-In|Hours|Customer|Opt your organization into the migration.|
 |Pre-Work|Days|Customer|Complete the work needed to prepare users, workstations, and network for migration.|
 |Azure Active Directory (Azure AD)|1-2 days|Microsoft|Migrate Azure AD organization to worldwide.|
 |Azure|Weeks|Customer|Create new worldwide Azure subscriptions and transition Azure services.|
 |Subscription & License Transition|1-2 days|Microsoft|Purchase worldwide subscriptions, cancel Microsoft Cloud Deutschland subscriptions, and transition user licenses.|
-|SharePoint and OneDrive|15+ days|Microsoft|Migrate SharePoint and OneDrive for Business content, peristing sharepoint.de URLs.|
+|SharePoint and OneDrive|15+ days|Microsoft|Migrate SharePoint and OneDrive for Business content, persisting sharepoint.de URLs.|
 |Exchange Online|15+ days|Microsoft|Migrate Exchange Online content and transition to worldwide URLs.|
 |Security & Compliance|1-2 days|Microsoft|Transition security & compliance policies and content.|
 |Skype for Business|1-2 days|Microsoft|Transition from Skype for Business to Microsoft Teams.|
-|Power BI & Dynamics 365|15+ days|Microsoft|Migrate PowerBI and Dynamics 365 content.|
-|Finalize Azure AD|1-2 days|Microsoft|Complete tenant cutover to worlwide.|
+|Power BI & Dynamics 365|15+ days|Microsoft|Migrate Power BI and Dynamics 365 content.|
+|Finalize Azure AD|1-2 days|Microsoft|Complete tenant cutover to worldwide.|
 |Clean-Up|1-2 days|Customer|Clean up legacy connections to Microsoft Cloud Deutschland, such as Active Directory Federation Services (AD FS) Relying Party Trust, Azure AD Connect, and Office client restarts.|
 
 The phases and their actions ensure that critical data and experiences are migrated to the Office 365 services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
@@ -67,7 +67,7 @@ The following sections contain actions and effects for workloads as they progres
 
 | Step(s) | Description | Impact |
 |:-------|:-----|:-------|
-| SharePoint and OneDrive are transitioned | SharePoint Online and OneDrive for Business are migrated from Microsoft Cloud Deutschland to Office 365 Global services in this phase.<br><ul><li>Existing Microsoft Cloud Deutschland URLs are preserved (for example, `contoso.sharepoint.de`).</li><li>Existing sites are preserved.</li><li>Client side authentication tokens that were issued by the Security Token Service (STS) in the Microsoft Cloud Deutschland or Office 365 Global services instance are valid during the transition.</li></ul>|<ul><li>Content will be read-only for two brief periods during migration. During this time, expect a "you can't edit content" banner in SharePoint.</li><li>The search index won't be preserved, and may take up to 10 days to be rebuilt.</li><li>SharePoint Online and OneDrive for Business content will be read-only for two brief periods during migration. Users will see a "you can't edit content" banner briefly during this time.</li><li>Upon completion of the SharePoint Online migration, the search results for SharePoint Online and OneDrive for Business content may be unavailable while the index is rebuilt. During this period, search queries might not return complete results. Features that are dependent on search indexes, such as SharePoint Online News, may be affected while reindexing completes.</li></ul>|
+| SharePoint and OneDrive are transitioned | SharePoint Online and OneDrive for Business are migrated from Microsoft Cloud Deutschland to Office 365 Global services in this phase.<br><ul><li>Existing Microsoft Cloud Deutschland URLs are preserved (for example, `contoso.sharepoint.de`).</li><li>Existing sites are preserved.</li><li>Client-side authentication tokens that were issued by the Security Token Service (STS) in the Microsoft Cloud Deutschland or Office 365 Global services instance are valid during the transition.</li></ul>|<ul><li>Content will be read-only for two brief periods during migration. During this time, expect a "you can't edit content" banner in SharePoint.</li><li>The search index won't be preserved, and may take up to 10 days to be rebuilt.</li><li>SharePoint Online and OneDrive for Business content will be read-only for two brief periods during migration. Users will see a "you can't edit content" banner briefly during this time.</li><li>Upon completion of the SharePoint Online migration, the search results for SharePoint Online and OneDrive for Business content may be unavailable while the index is rebuilt. During this period, search queries might not return complete results. Features that are dependent on search indexes, such as SharePoint Online News, may be affected while reindexing completes.</li></ul>|
 ||||
 
 Additional considerations:
@@ -122,7 +122,7 @@ Back-end Exchange Online Protection (EOP) features are copied to new Germany reg
 |||||
 
 ## Dynamics 365 (Phase 8)
-Customers with Dynamics 365 require additional engagement to migrate the organization's Dynamics organizations independenly.
+Customers with Dynamics 365 require additional engagement to migrate the organization's Dynamics organizations independently.
  
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -144,7 +144,8 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 
 ## Office Apps
-Office customers transitioning to the Germany region are required to close and sign out and back in for all Office applications (Word, PowerPoint, Outlook, etc) and OneDrive for Business client after the migration is complete. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
+
+Office customers transitioning to the Germany region are required to close and sign out and back in for all Office applications (Word, PowerPoint, Outlook, etc.) and OneDrive for Business client after the migration is complete. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
  
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
