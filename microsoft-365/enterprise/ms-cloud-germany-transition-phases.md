@@ -82,10 +82,12 @@ Additional considerations:
 
 **Applies to:**  Exchange Online
 
-If you're using Exchange Online hybrid: Exchange Online Hybrid customers must execute the Hybrid Configuration wizard (HCW) multiple times as part of this transition. <br>
+If you're using Exchange Online hybrid: Exchange Online Hybrid customers must execute the Hybrid Configuration wizard (HCW) multiple times as part of this transition.
+
 As described in the migration [prework](ms-cloud-germany-transition-add-pre-work.md#exchange-online), **before the migration step phase 5 begins,** Exchange Online hybrid customers need to run the latest version of the HCW in Office 365 Germany mode to prepare the on-premises configuration for the migration to Office 365 global.
 
 Upon **completion of the migration phase 5** (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global service. Additional DNS updates may be required if you use custom domains.
+
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -129,7 +131,8 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 | Microsoft Dynamics resources | Customers with Microsoft Dynamics will be engaged by Engineering or FastTrack to transition Dynamics to the Office 365 services instance.* | Microsoft Dynamics 365 customers | - After migration, the admin validates the organization. <br><br> - The admin modifies workflows, as necessary. <br><br> - The admin clears AdminOnly mode as appropriate. <br><br> - The admin changes the organization type from _Sandbox_, as appropriate <br><br> - Notify end users of the new URL to access the instance (org). <br><br> - Update any inbound connections to the new endpoint URL. <br><br> - The Dynamics service will be unavailable to users during the transition. <br><br> - Users are required to validate the org health and features after migration of each org.  |
 |||||
 
-\* (i) Customers with Microsoft Dynamics 365 must take action in this migration scenario as defined by the migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021.|
+\* 
+(i) Customers with Microsoft Dynamics 365 must take action in this migration scenario as defined by the migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021.|
 |||||
 
 ## Power BI (Phase 8 of 9)
