@@ -35,12 +35,12 @@ The migration process will complete over many weeks depending on the overall siz
 |2. Azure Active Directory (Azure AD)|Hours|Microsoft|Migrate Azure AD organization to worldwide.|
 |3 through 8. Azure|Weeks|Customer|Create new worldwide Azure subscriptions and transition Azure services.|
 |3. Subscription & License Transition|Hours|Microsoft|Purchase worldwide subscriptions, cancel Microsoft Cloud Deutschland subscriptions, and transition user licenses.|
-|4. SharePoint and OneDrive|Days|Microsoft|Migrate SharePoint and OneDrive for Business content, peristing sharepoint.de URLs.|
+|4. SharePoint and OneDrive|Days|Microsoft|Migrate SharePoint and OneDrive for Business content, persisting sharepoint.de URLs.|
 |5. Exchange|Days|Microsoft|Migrate Exchange Online content and transition to worldwide URLs.|
 |6. Security & Compliance|Days|Microsoft|Transition security & compliance policies and content.|
 |7. Skype for Business|Days|Microsoft|Transition from Skype for Business to Microsoft Teams.|
-|8. Power BI & Dynamics 365|Days|Microsoft|Migrate PowerBI and Dynamics 365 content.|
-|9. Finalize Azure AD|Days|Microsoft|Complete tenant cutover to worlwide.|
+|8. Power BI & Dynamics 365|Days|Microsoft|Migrate Power BI and Dynamics 365 content.|
+|9. Finalize Azure AD|Days|Microsoft|Complete tenant cutover to worldwide.|
 |9. Clean-Up|Days|Customer|Clean up legacy connections to Microsoft Cloud Deutschland, such as Active Directory Federation Services (AD FS) Relying Party Trust, Azure AD Connect, and Office client restarts.|
 
 The phases and their actions ensure that critical data and experiences are migrated to the Office 365 services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
