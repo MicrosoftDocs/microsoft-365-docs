@@ -33,10 +33,10 @@ Use these instructions to get set up to run the commands (skip the steps you hav
     
 2. Open a Windows PowerShell command prompt and run the following commands: 
     
-```powershell
+   ```powershell
    Import-Module MicrosoftTeams
    Connect-MicrosoftTeams
-```
+   ```
 
 When prompted, enter your Skype for Business Online administrator account name and password.
     
