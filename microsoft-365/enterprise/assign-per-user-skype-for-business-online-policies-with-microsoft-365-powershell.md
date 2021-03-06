@@ -38,7 +38,7 @@ Use these instructions to get set up to run the commands (skip the steps you hav
    Connect-MicrosoftTeams
    ```
 
-When prompted, enter your Skype for Business Online administrator account name and password.
+   When prompted, enter your Skype for Business Online administrator account name and password.
     
 ## Updating external communication settings for a user account
 
