@@ -50,6 +50,19 @@ This capability is similar to [advanced hunting in Microsoft Defender for Endpoi
 
 To use advanced hunting, [turn on Microsoft 365 Defender](mtp-enable.md).
 
+### Before you begin
+
+Users need one of the following levels of permissions to access Microsoft Defender:
+
+- Full access (read and write)
+- Read-only access
+
+**Full access**:
+Users with full access can save, modify, and share a query. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" AAD built-in roles.
+
+**Read-only access**:
+Users with read-only access can log in and view all alerts and related information. They will not be able to save, modify, or share a query. Assigning read-only access rights requires adding the users to the "Security Reader" Azure AD built-in role.
+
 ## Get started with advanced hunting
 
 We recommend going through several steps to quickly get started with advanced hunting.
