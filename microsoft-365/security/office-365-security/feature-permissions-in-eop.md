@@ -1,29 +1,33 @@
 ---
-title: "Feature permissions in EOP"
-f1.keywords:
-- NOCSH
+title: Feature permissions in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
-description: "Learn about the permission that are required for tasks in standalone Exchange Online Protection"
+description: Learn about the permission that are required for tasks in standalone Exchange Online Protection
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Permissions in standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 Standalone Exchange Online Protection (EOP) without Exchange Online mailboxes uses the Role Based Access Control (RBAC) permissions model to easily grant permissions to your admins. You can use the permission features in standalone EOP to get your new organization up and running quickly.
 
 To grant permissions to users, see [Manage admin role groups in EOP](manage-admin-role-group-permissions-in-eop.md).
 
-For more information about permissions across Microsoft 365, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+For more information about permissions across Microsoft 365, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Role-based permissions
 
@@ -121,7 +125,7 @@ When you create a user in the Microsoft 365 admin center, you can choose whether
 > [!NOTE]
 > The account you used to create your standalone EOP organization is automatically assigned to the Global admin role.
 
-The following table lists the Microsoft 365 roles and the standalone EOP role groups that they correspond to. For more information about these roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+The following table lists the Microsoft 365 roles and the standalone EOP role groups that they correspond to. For more information about these roles, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ****
 
@@ -135,7 +139,7 @@ The following table lists the Microsoft 365 roles and the standalone EOP role gr
 |Security reader|SecurityReader|
 |
 
-Other Microsoft 365 roles don't have a corresponding EOP role group and won't grant administrative permissions in EOP. For more information about assigning a Microsoft 365 role to a user, see [Assign admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
+Other Microsoft 365 roles don't have a corresponding EOP role group and won't grant administrative permissions in EOP. For more information about assigning a Microsoft 365 role to a user, see [Assign admin roles](../../admin/add-users/assign-admin-roles.md).
 
 Users can be granted administrative rights in EOP without adding them to Microsoft 365 roles. You do this by adding the user as a member of an EOP role group. The user will get permissions in EOP, but they won't get permissions in other Microsoft 365 workloads.
 

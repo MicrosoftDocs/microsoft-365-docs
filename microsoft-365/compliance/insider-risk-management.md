@@ -1,5 +1,5 @@
 ---
-title: Insider risk management
+title: Learn about insider risk management
 description: Learn how to help minimize risk in your organization with insider risk management in Microsoft 365.
 keywords: Microsoft 365, insider risk, risk management, compliance
 localization_priority: Normal
@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-compliance
 ---
 
-# Insider risk management in Microsoft 365
+# Learn about insider risk management in Microsoft 365
 
 Insider risk management is a compliance solution in Microsoft 365 that helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Insider risk policies allow you to define the types of risks to identify and detect in your organization, including acting on cases and escalating cases to Microsoft Advanced eDiscovery if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.
 
@@ -70,7 +70,6 @@ You can select from the following[policy templates to quickly get started with i
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
-- [Offensive language in email](insider-risk-management-policies.md#offensive-language-in-email)
 
 ![Insider risk management policy dashboard](../media/insider-risk-policy-dashboard.png)
 
@@ -134,10 +133,6 @@ In most cases, users try their best to properly handle sensitive or confidential
 - [General data leaks](insider-risk-management-policies.md#general-data-leaks)
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-
-### Offensive behavior that violates corporate policies
-
-User-to-user communications are often a source of inadvertent or malicious violations of corporate policies. These violations can include offensive language, threats, and harassment between users. This type of activity contributes to a hostile work environment and can result in legal actions against both users and the larger organization. Insider risk management uses new built-in Microsoft 365 classifiers and the [Offensive language in email](insider-risk-management-policies.md#offensive-language-in-email) policy template to help minimize these risks. This policy template helps you quickly configure and enable a policy to automatically detect and alert you of this kind of behavior in your organization.
 
 ## Intentional or unintentional security policy violations (preview)
 
