@@ -234,7 +234,7 @@ However, the automatic guest account is not created immediately in this scenario
 
 ### Conditional Access policies
 
-If your organization has implemented [Azure Active Directory Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include Azure Information Protection and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
+If your organization has implemented [Azure Active Directory Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
 
 Without this guest account, they can't open the encrypted document and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
 

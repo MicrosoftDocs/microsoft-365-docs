@@ -37,8 +37,7 @@ Install the [Teams PowerShell module](https://docs.microsoft.com/microsoftteams/
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
-   $sfbSession = New-CsOnlineSession -Credential $userCredential
-   Import-PSSession $sfbSession
+   Connect-MicrosoftTeams -Credential $userCredential
    ```
 
 2. In the **Windows PowerShell Credential Request** dialog box, type your administrator account name and password, and then select **OK**.
@@ -50,11 +49,10 @@ Install the [Teams PowerShell module](https://docs.microsoft.com/microsoftteams/
 
    ```powershell
    Import-Module MicrosoftTeams
-   $sfbSession = New-CsOnlineSession
-   Import-PSSession $sfbSession
+   Connect-MicrosoftTeams
    ```
 
-2. When prompted by the **New-CsOnlineSession** command, enter your Skype for Business Online administrator account name.
+2. When prompted enter your Skype for Business Online administrator account name.
 
 3. In the **Sign in to your account** dialog box, type your Skype for Business Online administrator password and select **Sign in**.
 
