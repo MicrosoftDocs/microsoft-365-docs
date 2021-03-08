@@ -428,9 +428,13 @@ When you upload your rule package XML file, the system validates the XML and che
 
 - Each Custom Sensitive Information Type can have a maximum of 2048 keywords total.
 
-- When using the PowerShell Cmdlet there is a maximum return size of the Deserialized Data of approximately 1 megabyte.   This will affect the size of your XML file. Keep the uploaded file limited to a 512 megabyte maximum as a suggested limit for consistent results without error when processing.
+- The maximum size of Keyword Dictionaries in a single tenant is 100 kilobytes compressed. Reference the same dictionary as many times as necessary when creating custom sensitive information types. Start with creating custom keyword lists in the sensitive information type and use keyword dictionaries if you have more than 2048 keywords in a keyword list or a keyword is larger than 50 characters in length.
 
-- The XML structure does not require formatting characters such as Spaces, Tabs or Carriage Return / Linefeed entries.  Take note of this when optimizing for space on uploads.
+- Ensure each Entity element contains a recommendedConfidence attribute.
+
+- When using the PowerShell Cmdlet there is a maximum return size of the Deserialized Data of approximately 1 megabyte.   This will affect the size of your rule pack XML file. Keep the uploaded file limited to a 770 kilobyte maximum as a suggested limit for consistent results without error when processing.
+
+- The XML structure does not require formatting characters such as spaces, tabs, or carriage return/linefeed entries.  Take note of this when optimizing for space on uploads. Tools such as Microsoft Visual Code provide join line features to compact the XML file.
     
 If a custom sensitive information type contains an issue that may affect performance, it won't be uploaded and you may see one of these error messages:
   

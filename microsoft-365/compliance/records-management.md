@@ -97,7 +97,7 @@ Message a user sees if they try to delete a labeled document in SharePoint:
 When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted. 
 
 <sup>2</sup>
-Containers include SharePoint document libraries and Exchange mailboxes.
+Containers include SharePoint document libraries, OneDrive accounts, and Exchange mailboxes.
 
 >[!IMPORTANT] 
 > The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label. 

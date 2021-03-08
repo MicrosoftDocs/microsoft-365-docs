@@ -39,6 +39,7 @@ To be enrolled in Microsoft Managed Desktop, a device must be one of the followi
 |Dell Latitude 7200 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR camera required | **May 1, 2024** |
 |Dell Latitude 7300 / 7400 / 7400 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR camera required | **May 1, 2024**  |
 |Dell Latitude 7390 / 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | IR camera required | **Jan 9, 2023** |
+|Dell Latitude 7410 / 7410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR camera required | **May 19, 2025**  |
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB RAM | None | **May 1, 2025**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Feb 15, 2023** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Nov 30, 2023** |

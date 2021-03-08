@@ -94,8 +94,8 @@ Prepare the source tenant:
 
     | Parameter | Value | Required or Optional
     |---------------------------------------------|-----------------|--------------|
-    | -TargetTenantDomain                         | Target tenant domain, such as contoso\.onmicrosoft.com. | Required |
-    | -ResourceTenantDomain                       | Source tenant domain, such as fabrikam\.onmicrosoft.com. | Required |
+    | -TargetTenantDomain                         | Target tenant domain, such as fabrikam\.onmicrosoft.com. | Required |
+    | -ResourceTenantDomain                       | Source tenant domain, such as contoso\.onmicrosoft.com. | Required |
     | -ResourceTenantAdminEmail                   | Source tenant admin’s email address. This is the source tenant admin who will be consenting to the use of the mailbox migration application sent from the target admin. This is the admin who will receive the email invite for the application. | Required |
     | -ResourceTenantId                           | Source tenant organization ID (GUID). | Required |
     | -SubscriptionId                             | The Azure subscription to use for creating resources. | Required |
@@ -182,9 +182,9 @@ The target admin setup is now complete!
     | Parameter | Value |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | Mail-enabled security group created by source tenant for the identities/mailboxes that are in scope for migration. |
-    | -ResourceTenantDomain | Source tenant domain name, such as fabrikam\.onmicrosoft.com. |
+    | -ResourceTenantDomain | Source tenant domain name, such as contoso\.onmicrosoft.com. |
     | -ApplicationId | Azure application ID (GUID) of the application used for migration. Application ID available via your Azure portal (Azure AD, Enterprise Applications, app name, application ID) or included in your invitation email.  |
-    | -TargetTenantDomain | Target tenant domain name, such as contoso\.onmicrosoft.com. |
+    | -TargetTenantDomain | Target tenant domain name, such as fabrikam\.onmicrosoft.com. |
     | -TargetTenantId | Tenant ID of the target tenant. For example, the Azure AD tenant ID of contoso\.onmicrosoft.com tenant. |
     |||
 

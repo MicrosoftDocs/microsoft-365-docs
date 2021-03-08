@@ -227,8 +227,10 @@
                       href: mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
                       href: mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
-                    - name: DeviceTvmSoftwareInventoryVulnerabilities
-                      href: mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
+                    - name: DeviceTvmSoftwareInventory
+                      href: mtp/advanced-hunting-devicetvmsoftwareinventory-table.md
+                    - name: DeviceTvmSoftwareVulnerabilities
+                      href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
                     - name: EmailAttachmentInfo
@@ -486,6 +488,8 @@
               href: ./office-365-security/attack-simulation-training-payloads.md
             - name: Gain insights through Attack simulation training
               href: ./office-365-security/attack-simulation-training-insights.md
+            - name: Attack simulation training deployment considerations and FAQ
+              href: ./office-365-security/attack-simulation-training-faq.md
             - name: Recommended settings for configuring EOP and Defender for Office 365 Security
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Best practices for configuring EOP
