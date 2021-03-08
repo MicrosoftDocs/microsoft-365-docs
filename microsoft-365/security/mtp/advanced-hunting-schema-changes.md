@@ -93,7 +93,7 @@ Naming changes are automatically applied to queries that are saved in the securi
 | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Customer feedback |
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Customer feedback |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Customer feedback |
-| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | Customer feedback |
+
 
 
 
