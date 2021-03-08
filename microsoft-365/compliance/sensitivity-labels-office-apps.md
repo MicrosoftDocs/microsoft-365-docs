@@ -115,7 +115,7 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 
 ### Office built-in labeling client and the Azure Information Protection client
 
-If users have one of the Azure Information Protection clients installed ([unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) or [classic client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is turned off in their Office apps. 
+If users have the [Azure Information Protection client installed](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2), by default, the built-in labeling client is turned off in their Office apps. 
 
 To use built-in labeling rather than the Azure Information Protection client for Office apps, use the instructions from the previous section but set the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **1**. 
 
