@@ -1,5 +1,5 @@
 ---
-title: "Get started with FOOBAR (preview)"
+title: "Get started with the Microsoft Compliance Extension (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-compliance
 search.appverid: 
 - MET150
-description: "Prepare for and deploy FOOBAR."
+description: "Prepare for and deploy the Microsoft Compliance Extension."
 ---
 
-# Get started with FOOBAR  (preview)
+# Get started with Microsoft Compliance Extension (preview)
 
-Use these procedures to roll out FOOBAR.
+Use these procedures to roll out the Microsoft Compliance Extension.
 
 ## Before you begin
 
-To use FOOBAR extension the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use Microsoft Compliance Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about FOOBAR](dlp-chrome-learn-about.md)
+- [Learn about Microsoft Compliance Extension](dlp-chrome-learn-about.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
@@ -59,7 +59,7 @@ For detailed licensing guidance, see [Microsoft 365 licensing guidance for secur
 
 ### Permissions
 
-Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
+Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are seven roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
 
 - Global admin
 - Compliance admin
@@ -71,7 +71,7 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 
 ### Overall workflow
 
-Deploying FOOBAR is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
+Deploying Microsoft Compliance Extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
 
 1. [Prepare your devices](#prepare-your-devices).
 2. [Basic Setup Single Machine Selfhost](#basic-setup-single-machine-selfhost)
@@ -93,13 +93,13 @@ Deploying FOOBAR is a multi-phase process. You can choose to install on one mach
 
 This is the recommended method. 
 
-1. Sign on to the Windows 10 computer that you want to install the FOOBAR on and run the this  PowerShell script as an administrator. 
+1. Sign on to the Windows 10 computer that you want to install the Microsoft Compliance Extension on and run the this PowerShell script as an administrator. 
 
 ```powershell
 Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ``` 
 
-2.	Navigate to [Microsoft Data Loss Prevention (BETA) - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-data-loss-preve/echcggldkblhodogklpincgchnpgcdco).
+2.	Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-data-loss-preve/echcggldkblhodogklpincgchnpgcdco).
 3.	Install the extension using the instructions on the Chrome Web Store page.
 
 ### Deploy using Microsoft Endpoint Manager
@@ -123,7 +123,7 @@ Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configur
 
 #### Microsoft Endpoint Manager Force Install Steps
 
-Before adding FOOBAR to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Microsoft Endpoint Manager are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Before adding the Microsoft Compliance Extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Microsoft Endpoint Manager are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
 
  After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
@@ -143,7 +143,7 @@ Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000;
 
 ### Deploy using Group Policy
 
-If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy FOOBAR across your organization
+If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy the Microsoft Compliance Extension across your organization
 
 1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMXs into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 2.	Create a PowerShell script using this:
