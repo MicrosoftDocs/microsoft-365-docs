@@ -122,7 +122,7 @@ Use this procedure to create a new sensitive information type that is based on a
 
 **Exclude duplicate characters** allows you to ignore matches in which all the digits are the same. For example, if the Employee ID number cannot have all the digits be the same, you can select **Exclude duplicate characters** to exclude 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999, and 000000 from the list of valid matches for the employee ID.
 
-**Include or exclude prefixes** allow you to define the keywords that should or shouldn't be found immediately before the matching entity. Depending on your selection, entities will be matched or not matched if they're preceded by the prefixes you include here. For example, if you 'Exclude' the prefix 'GUID:', any entity that's preceded by 'GUID:' won't be considered a match.
+**Include or exclude prefixes** allows you to define the keywords that should or shouldn't be found immediately before the matching entity. Depending on your selection, entities will be matched or not matched if they're preceded by the prefixes you include here. For example, if you **Exclude** the prefix **GUID:**, any entity that's preceded by **GUID:** won't be considered a match.
 
 **Include or exclude suffixes** allows you to define the keywords that should or shouldn't be found immediately after the matching entity. Depending on your selection, entities will be matched or not matched if they're followed by the suffixes you include here. For example, if you **Exclude** the suffix **:GUID**, any text that's followed by **:GUID** won't be matched.
 
