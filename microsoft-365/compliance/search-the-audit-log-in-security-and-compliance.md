@@ -138,9 +138,6 @@ Be sure to read the following items before you start searching the audit log.
 
 ## Search the audit log
 
-> [!NOTE]
-> There was an issue with Azure AD activities being unavailable in the audit log search tool from October 22, 2020 to November 6, 2020. These activites include Azure AD user administration activities, group administration activities, application administration activities, role administration activities, and directory administration activities. The missing events for the period of impact will be available over the next few days, and is expected to take no later than November 20, 2020 to complete. In some cases, customers might notice duplicate event data for events generated between October 26, 2020 and November 05, 2020.
-    
 Here's the process for searching the audit log in Office 365.
 
 [Step 1: Run an audit log search](#step-1-run-an-audit-log-search)
