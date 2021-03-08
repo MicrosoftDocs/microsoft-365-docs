@@ -107,7 +107,7 @@ Use this procedure to create a new sensitive information type that is based on a
 7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
 8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [What the DLP functions look for](what-the-dlp-functions-look-for.md).
 9. Fill in a value for **Character proximity**.
-10. (Optional) If you have **Supporting elements** or any **Additional checks** add them. If needed you can group your **Supporting elements** in groups of "All of these", "Any of these" with ability to select how many and "Not any of these".
+10. (Optional) If you have **Supporting elements** or any **Additional checks**, add them. If needed you can group your **Supporting elements** into groups of "All of these", "Any of these" with the ability to select how many, and "Not any of these".
 11. Choose **Create**.
 12. Choose **Next**.
 13. Choose the **recommended confidence level** for this sensitive information type.
