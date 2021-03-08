@@ -169,7 +169,7 @@ Yes. All encrypted email messages are discoverable by Microsoft 365 compliance f
 
 ## Can I remove encryption from email?
 
-Admins can set up a mail flow rule to remove encryption from outgoing mail. You can't remove encryption using a mail flow rule from incoming messages.
+Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by other organization, unless the mail is enrypted using encrypt-only protection.
 
 ## Is delegated access supported?
 
