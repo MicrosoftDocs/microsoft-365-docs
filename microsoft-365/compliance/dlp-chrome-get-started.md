@@ -75,7 +75,7 @@ Deploying Microsoft Compliance Extension is a multi-phase process. You can choos
 
 1. [Prepare your devices](#prepare-your-devices).
 2. [Basic Setup Single Machine Selfhost](#basic-setup-single-machine-selfhost)
-3. [Deploy using Microsoft Endpoint Manager](#deploy-using-intune)
+3. [Deploy using Microsoft Endpoint Manager](#deploy-using-microsoft-endpoint-manager)
 4. [Deploy using Group Policy](#deploy-using-group-policy)
 5. [Test the Extension](#test-the-extension)
 6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
