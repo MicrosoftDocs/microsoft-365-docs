@@ -46,7 +46,7 @@ activity |description  | supported policy actions|
 4. Remove Google Chrome from the unallowed app list. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers).
 > [!TIP]
 > If you are deploying the Microsoft Compliance Extension to only a few devices and you still want to restrict uploading of sensitive items via Chrome, you can leave Chrome on the unallowed browser list. The Microsoft Compliance Extension will bypass the restrictions of the unallowed apps list for those computers where it is installed.
-1. [Create or edit DLP policies](create-test-tune-dlp-policy.md) that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10 devices
+5. [Create or edit DLP policies](create-test-tune-dlp-policy.md) that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10 devices
 
 ## Next steps
 
