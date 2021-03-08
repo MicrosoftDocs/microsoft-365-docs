@@ -124,7 +124,7 @@ Use this procedure to create a new sensitive information type that is based on a
 
 **Include or exclude prefixes** allow you to define the keywords that should or shouldn't be found immediately before the matching entity. Depending on your selection, entities will be matched or not matched if they're preceded by the prefixes you include here. For example, if you 'Exclude' the prefix 'GUID:', any entity that's preceded by 'GUID:' won't be considered a match.
 
-**Include or exclude suffixes** allow you to define the keywords that should or shouldn't be found immediately after the matching entity. Depending on your selection, entities will be matched or not matched if they're followed by the suffixes you include here. For example, if you 'Exclude' the suffix ':GUID', any text that's followed with ':GUID' won't be matched.
+**Include or exclude suffixes** allows you to define the keywords that should or shouldn't be found immediately after the matching entity. Depending on your selection, entities will be matched or not matched if they're followed by the suffixes you include here. For example, if you **Exclude** the suffix **:GUID**, any text that's followed by **:GUID** won't be matched.
 
 
 
