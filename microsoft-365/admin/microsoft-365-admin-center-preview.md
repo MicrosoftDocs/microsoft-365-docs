@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -111,5 +111,53 @@ Updating all of the admin centers to have a coherent experience will take awhile
 - [Overview of Microsoft 365 Device Management](https://go.microsoft.com/fwlink/?linkid=2006262)
     
 - [Introducing the Microsoft 365 Security and Compliance Center](https://go.microsoft.com/fwlink/?linkid=2025413)
+
+## What language options are available the Admin Center?
+
+The Microsoft 365 admin center is fully localized in 40 languages.
+
+|Language |Locale |
+|---------|---------|
+|Arabic | ar |
+|Bulgarian | bg |
+|Catalan | ca |
+|Czech | cs |
+|Danish | da |
+|German | de |
+|Greek | el |
+|Spanish | es |
+|English | en |
+|Estonian | et |
+|Basque | eu |
+|Finnish | fi |
+|French | fr |
+|Galician | gl |
+|Hebrew | he |
+|Croatian | hr |
+|Hungarian | hu |
+|Indonesian  | id |
+|Italian | it |
+|Japanese | ja |
+|Korean | ko |
+|Lithuanian | lt |
+|Latvian | lv |
+|Dutch | nl |
+|Norwegian | no |
+|Polish | pl |
+|Portuguese ( Brazil) | pt |
+|Portuguese (Portugal) | pt-pt |
+|Romanian | ro |
+|Russian | ru |
+|Slovak | sk |
+|Slovenian | sl |
+|Serbian (Cyrillic)  | sr-cyrl |
+|Serbian Latin | sr |
+|Swedish | sv |
+|Thai | th |
+|Turkish | tr |
+|Ukrainian | uk |
+|Vietnamese | vi |
+|Chinese Simplified | zh-hans |
+|Chinese Traditional | zh-hant |
 
 ::: moniker-end

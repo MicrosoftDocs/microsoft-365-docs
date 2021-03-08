@@ -1,24 +1,25 @@
 ---
-title: FileProfile() function in advanced hunting for Microsoft Threat Protection
-description: Learn how to use the FileProfile() to enrich information about files in your advanced hunting query results 
+title: FileProfile() function in advanced hunting for Microsoft 365 Defender
+description: Learn how to use the FileProfile() to enrich information about files in your advanced hunting query results
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
+ms.technology: m365d
 ---
 
 # FileProfile()
@@ -27,7 +28,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by the query.
 
@@ -60,6 +61,10 @@ invoke FileProfile(x,y)
 
 - **x**—file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1`, or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified
 - **y**—limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
+
+
+>[!TIP]
+> Enrichment functions will show supplemental information only when they are available. Availability of information is varied and depends on a lot of factors. Make sure to consider this when using FileProfile() in your queries or in creating custom detections. For best results, we recommend using the FileProfile() function with SHA1.
 
 ## Examples
 

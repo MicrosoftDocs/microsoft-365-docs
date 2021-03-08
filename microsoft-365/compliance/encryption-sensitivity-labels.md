@@ -80,7 +80,7 @@ However, the content might be already encrypted. For example, another user might
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| |**Encryption: Not selected**|**Encryption: Configured**|**Encryption: Remove**|
+| | Encryption: Not selected | Encryption: Configured | Encryption: Remove |
 |:-----|:-----|:-----|:-----|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
@@ -172,6 +172,9 @@ As a best practice, use groups rather than users. This strategy keeps your confi
 ##### Requirements and limitations for "Add any authenticated users"
 
 This setting doesn't restrict who can access the content that the label encrypts, while still encrypting the content and providing you with options to restrict how the content can be used (permissions), and accessed (expiry and offline access). However, the application opening the encrypted content must be able to support the authentication being used. For this reason, federated social providers such as Google, and onetime passcode authentication work for email only, and only when you use Exchange Online. Microsoft accounts can be used with Office 365 apps and the [Azure Information Protection viewer](https://portal.azurerms.com/#/download).
+
+> [!NOTE]
+> Consider using this setting with [SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) when sensitivity labels are [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Some typical scenarios for any authenticated users setting:
 
@@ -271,7 +274,7 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 - Windows: **File** tab > **Info** > **Protect Document** > **Restrict Access** > **Restricted Access**
 
-- MacOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
+- macOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
 
 ## Example configurations for the encryption settings
 
@@ -371,6 +374,8 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
   - DLP policies work for the metadata of these encrypted files (including retention label information) but not the content of these files (such as credit card numbers within files).
   - Users can't open encrypted files using Office on the web. When sensitivity labels for Office files in SharePoint and OneDrive are enabled, users can use Office on the web to open encrypted files, with some [limitations](sensitivity-labels-sharepoint-onedrive-files.md#limitations) that include encryption that has been applied with an on-premises key (known as "hold your own key", or HYOK), [double key encryption](#double-key-encryption), and encryption that has been applied independently from a sensitivity label.
 
+- If you share encrypted documents with people outside your organization, you might need to create guest accounts and modify Conditional Access policies. For more information, see [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
+
 - For multiple users to edit an encrypted file at the same time, they must all be using Office for the web. If this isn't the case, and the file is already open:
 
   - In Office apps (Windows, Mac, Android, and iOS), users see a **File In Use** message with the name of the person who has checked out the file. They can then view a read-only copy or save and edit a copy of the file, and receive notification when the file is available.
@@ -380,12 +385,15 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - Encrypted files might take longer to open in Office apps (Windows, Mac, Android, and iOS).
 
+- If a label that applies encryption is added by using an Office app when the document is [checked out in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), and the user then discards the checkout, the document remains labeled and encrypted.
+
 - The following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
 
   - View, restore, and save copies of previous versions. As an alternative, users can do these actions using Office on the web when you [enable and configure versioning for a list or library](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
 
 For the best collaboration experience for files that are encrypted by a sensitivity label, we recommend you use [sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) and Office for the web.
+
 
 ## Important prerequisites
 
@@ -406,3 +414,6 @@ Before you can use encryption, you might need to do some configuration tasks.
     - For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
     - For Exchange on-premises, you must deploy the [RMS connector and configure your Exchange servers](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
 
+## Next steps
+
+Need to share your labeled and encrypted documents with people outside your organization?  See [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

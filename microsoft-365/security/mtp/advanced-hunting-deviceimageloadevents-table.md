@@ -4,21 +4,22 @@ description: Learn about DLL loading events in the DeviceImageLoadEvents table o
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, imageloadevents, DeviceImageLoadEvents, DLL loading, library, file image
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
+ms.technology: m365d
 ---
 
 # DeviceImageLoadEvents
@@ -27,7 +28,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
@@ -52,6 +53,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountUpn` | string | User principal name (UPN) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountObjectId` | string | Azure AD object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessIntegrityLevel` | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | `InitiatingProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
@@ -67,6 +70,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessParentCreationTime` | datetime | Date and time when the parent of the process responsible for the event was started |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
+| `FileSize` | long | Size of the file in bytes |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

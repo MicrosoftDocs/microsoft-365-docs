@@ -90,7 +90,7 @@ If the setup used by Microsoft Managed Desktop doesn't exactly match your needs,
 
 ### Autopilot settings change
 
-You might want to request a different device name template. You cannot, however, change Deployment Mode, Join to Azure As, Privacy Settings, or User Account Type.
+You might want to request a different device name template. You cannot, however, change Deployment Mode, Join to Azure AD As, Privacy Settings, or User Account Type.
 
 ### Enrollment Status Page settings change
 

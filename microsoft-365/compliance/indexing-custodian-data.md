@@ -38,7 +38,7 @@ After the Advanced indexing process is completed, you can get an understanding o
 
 This view  also includes the number of items that require remediation and another graph of errors by file type. For more information, see:
 
-- [Error remediation when processing data](error-remediation.md)
+- [Error remediation when processing data](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Single item error remediation](single-item-error-remediation.md)
 

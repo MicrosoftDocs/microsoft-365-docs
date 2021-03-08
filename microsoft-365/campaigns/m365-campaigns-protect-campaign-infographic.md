@@ -26,7 +26,8 @@ search.appverid:
 description: "What you can do to help protect your campaign from digital attacks."
 ---
 
-# Infographic: Help protect yourself and your campaign from digital threats 
+# Infographic: Help protect yourself and your campaign from digital threats
+
 The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).
 
 [![Image for secure your help protect your campaign info graphic](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)

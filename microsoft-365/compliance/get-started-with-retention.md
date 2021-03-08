@@ -47,9 +47,15 @@ To see the options for licensing your users to benefit from Microsoft 365 compli
 
 ## Permissions required to create and manage retention policies and retention labels
 
-Members of your compliance team who will create and manage retention policies and retention labels need permissions to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Compliance Administrator** admin role group. For instructions, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Members of your compliance team who will create and manage retention policies and retention labels need permissions to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Compliance Administrator** admin role group.
 
-These permissions are required only to create, configure, and apply retention policies and retention labels. The person configuring these polices and labels doesn't require access to the content.
+Alternatively to using this default role, you can create a new role group and add the **Retention Management** role to this group. For a read-only role, use **View-Only Retention Management**. 
+
+For more information about role groups and roles, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+
+For instructions to add users to role groups and assign roles, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+
+These permissions are required only to create, configure, and apply retention policies and retention labels. The person configuring these policies and labels doesn't require access to the content.
 
 ## Common scenarios for retention policies and retention labels
 
@@ -64,17 +70,18 @@ Use the following table to help you map your business requirements to retention 
 |Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Automatically apply retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
-|Manage the lifecycle of different document types in SharePoint| [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)|
-|Comply with SEC Rule 17a-4|[Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|Make sure somebody reviews and approves before content is permanently deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
+|Restrict changes to policies to help meet regulatory requirements or safeguard against rogue administrators| [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md)
+|Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
 |Use a single records management solution for documents and emails |[Learn about records management](records-management.md) |
 
 If you use retention labels for records management, there are additional scenarios that are unique to retention labels that mark content as a record. See [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
 
-## End-user documentation for retention labels
+## End-user documentation for retention
 
-Retention labels, unlike retention policies, have a UI presence in Microsoft 365 apps. Make sure you provide guidance for end users and your help desk before you deploy retention labels to your production network.
+Most retention policies work unobtrusively in the background without user interaction, and so need little documentation for users. Retention policies for Teams inform users when their messages have been deleted with a link to [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+
+Because retention labels have a UI presence in Microsoft 365 apps, make sure you provide guidance for end users and your help desk before you deploy these labels to your production network.
 
 The most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. See the following blog post for a download package that you can use to train users and drive adoption: [End User Training for Retention Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 

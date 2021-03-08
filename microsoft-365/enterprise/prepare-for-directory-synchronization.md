@@ -122,7 +122,7 @@ The attributes that you need to prepare are listed here:
     Note that the invalid characters apply to the characters following the type delimiter and ":", such that SMTP:User@contso.com is allowed, but SMTP:user:M@contoso.com is not.
 
     > [!IMPORTANT]
-    > All Simple Mail Transport Protocol (SMTP) addresses should comply with email messaging standards. If duplicate or unwanted addresses exist, see the Help topic [Removing duplicate and unwanted proxy addresses in Exchange](https://go.microsoft.com/fwlink/?LinkId=293860).
+    > All Simple Mail Transport Protocol (SMTP) addresses should comply with email messaging standards. Remove duplicate or unwanted addresses if they exist.
 
 - **sAMAccountName**
 
@@ -152,7 +152,7 @@ The attributes that you need to prepare are listed here:
   - The maximum number of characters for the **userPrincipalName** attribute is 113. A specific number of characters are permitted before and after the at sign (@), as follows:
   - Maximum number of characters for the username that is in front of the at sign (@): 64
   - Maximum number of characters for the domain name following the at sign (@): 48
-  - Invalid characters: \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] " '
+  - Invalid characters: \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] "
   - Characters allowed: A – Z, a - z, 0 – 9, ' . - _ ! # ^ ~
   - Letters with diacritical marks, such as umlauts, accents, and tildes, are invalid characters.
   - The @ character is required in each **userPrincipalName** value.
