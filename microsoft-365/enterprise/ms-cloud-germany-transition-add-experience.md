@@ -57,28 +57,6 @@ If you're using a hybrid, on-premises deployment:
 |Stop or delete any onboarding or offboarding moves of mailboxes.  | This ensures the move requests don't fail with an error. | Exchange Online customers with hybrid (on-premises) deployments | Required action. Failure to do so may result in failure of the service or of software clients. |
 |||||
 
-### Dynamics (Phase 8 of 9)
-
-| Step(s) | Description | Applies to | Impact |
-|:-------|:-----|:-------|:-------|
-| Microsoft Dynamics resources | Customers with Microsoft Dynamics will be engaged by Engineering or FastTrack to transition Dynamics to the Office 365 services instance.* | Microsoft Dynamics 365 customers | - After migration, the admin validates the organization. <br><br> - The admin modifies workflows, as necessary. <br><br> - The admin clears AdminOnly mode as appropriate. <br><br> - The admin changes the organization type from _Sandbox_, as appropriate <br><br> - Notify end users of the new URL to access the instance (org). <br><br> - Update any inbound connections to the new endpoint URL. <br><br> - The Dynamics service will be unavailable to users during the transition. <br><br> - Users are required to validate the org health and features after migration of each org.  |
-|||||
-
-\* (i) Customers with Microsoft Dynamics 365 must take action in this migration scenario as defined by the migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021. 
-
-
-### Power BI (Phase 8 of 9)
-
-| Step(s) | Description | Applies to | Impact |
-|:-------|:-----|:-------|:-------|
-| Migration of Power BI resources | Customers with Microsoft Power BI will be engaged by Engineering or FastTrack after manually triggering an existing PBI migration tool to transition Power BI to the Office 365 services instance.\*\* | Microsoft Power BI customers | - The following Power BI items will _not_ be transitioned, and they'll have to be re-created: <br><br> - Real-time datasets (for example, streaming or push datasets). <br> - Power BI on-premises data gateway configuration and data source. <br> - Reports built on top of the real-time datasets won't be available after migration and are required to be recreated. <br><br> - Power BI services will be unavailable to users during the transition. The unavailability of the service shouldn't be more than 24 hours. <br><br> - Users will be required to reconfigure data sources and their on-premise data gateways with the Power BI service after migration.  Until they do so, users will be unable to use these data sources to perform scheduled refresh and/or direct queries against these data sources. <br><br> - Capacities and premium workspaces cannot be migrated. Customers need to delete all capacities before migration and re-create them after migration. Move workspaces back to capacities as desired.  |
-|||||
-
-\*\*
-  (i) Customers with Microsoft Power BI must take action in this migration scenario as defined by the Migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021. 
-
-
-
 ## During migration
 
 ### SharePoint Online (Phase 4 of 9)
@@ -111,14 +89,14 @@ For eDiscovery:
 
 ### Azure AD (Phase 9 of 9)
 
-For hybrid:
+For hybrid Azure customers:
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
 | Update Azure AD Connect. | After the cut over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland. At this point, the customer needs to ensure that the delta sync process has been finalized, and after that, change the string value of `AzureInstance` from 3 (Microsoft Cloud Deutschland) to 0 in the registry path `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect`. | Hybrid Azure AD–connected organizations | Change the value of `AzureInstance`, the registry key. Failing to do so, will lead to objects not being synchronized after the Microsoft Cloud Deutschland endpoints are no longer available. |
 |||||
 
-For federated authentication:
+For customers utilizing federated authentication:
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -132,7 +110,7 @@ For Azure AD:
 | Requests to join an Azure AD group in the last 30 days before migration will need to be requested again if the original request wasn't approved. | End-user customers will need to use the Access panel to submit request to join an Azure AD group again if those requests weren't approved in the last 30 days before the migration. | End users whose Azure AD group approval requests weren't approved in last 30 days before migration |  As an end user: <ol><li>Navigate to [Access panel](https://account.activedirectory.windowsazure.com/r#/joinGroups).</li><li>Find an Azure AD group for which membership approval was pending in 30 days before migration.</li><li>Request to join the Azure AD group again.</li></ol> Requests to join a group that are active less than 30 days before migration cannot be approved, unless they're re-requested after migration. |
 |||||
 
-For DNS:
+For customer managed DNS zones:
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
