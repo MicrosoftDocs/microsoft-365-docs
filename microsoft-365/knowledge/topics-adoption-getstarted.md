@@ -11,7 +11,6 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: 
 localization_priority: Normal
-ROBOTS: NOINDEX
 ---
 
 # Get started driving adoption of Microsoft Viva Topics

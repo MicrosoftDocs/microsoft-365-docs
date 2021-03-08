@@ -87,6 +87,8 @@
       items:
         - name: Overview of Bookings
           href: overview-bookings.md
+        - name: Track business info with Microsoft Lists
+          href: track-info-lists.md
         - name: Plan an event
           href: plan-event.md   
     - name: Manage services
