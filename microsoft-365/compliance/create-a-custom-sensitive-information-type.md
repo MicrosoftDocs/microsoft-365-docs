@@ -58,7 +58,7 @@ Use this procedure to create a new sensitive information type that you fully def
 5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions and validators, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).
 6. Fill in a value for **Character proximity**.
 7. (Optional) Add supporting elements if you have any. Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary, or one of the pre-defined functions. If needed you can group your **Supporting elements** into groups of "All of these", "Any of these", and "Not any of these".
-8.	(Optional) Add additional checks from the list of available checks. For more information on Additional checks, see [Additional checks](Link to the Additional checks topic a the bottom of the page)
+8. (Optional) Add additional checks from the list of available checks. For more information on additional checks, see [Additional checks](Link to the Additional checks topic a the bottom of the page).
 9. Choose **Create**.
 10. Choose **Next**.
 11. Choose the **recommended confidence level** for this sensitive information type.
