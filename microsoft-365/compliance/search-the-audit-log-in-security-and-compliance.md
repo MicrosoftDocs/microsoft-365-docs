@@ -699,6 +699,9 @@ The following table lists the activities that can be logged by mailbox audit log
 
 The following table lists user administration activities that are logged when an admin adds or changes a user account by using the Microsoft 365 admin center or the Azure management portal.
 
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( . ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts.
+
 |Activity|Operation|Description|
 |:-----|:-----|:-----|
 |Added user|Add user.|A user account was created.|
@@ -715,6 +718,9 @@ The following table lists user administration activities that are logged when an
 
 The following table lists group administration activities that are logged when an admin or a user creates or changes a Microsoft 365 group or when an admin creates a security group by using the Microsoft 365 admin center or the Azure management portal. For more information about groups in Office 365, see [View, create, and delete Groups in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups).
 
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( . ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts.
+
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Added group|Add group.|A group was created.|
@@ -727,6 +733,9 @@ The following table lists group administration activities that are logged when a
 ### Application administration activities
 
 The following table lists application admin activities that are logged when an admin adds or changes an application that's registered in Azure AD. Any application that relies on Azure AD for authentication must be registered in the directory.
+
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( . ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts.
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -743,6 +752,9 @@ The following table lists application admin activities that are logged when an a
 
 The following table lists Azure AD role administration activities that are logged when an admin manages admin roles in the Microsoft 365 admin center or in the Azure management portal.
 
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( . ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts.
+
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Add member to Role|Add member to role.|Added a user to an admin role in Microsoft 365.|
@@ -753,6 +765,9 @@ The following table lists Azure AD role administration activities that are logge
 ### Directory administration activities
 
 The following table lists Azure AD directory and domain-related activities that are logged when an administrator manages their organization in the Microsoft 365 admin center or in the Azure management portal.
+
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( . ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts.
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
