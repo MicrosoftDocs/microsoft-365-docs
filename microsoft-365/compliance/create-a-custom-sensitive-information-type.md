@@ -120,7 +120,7 @@ Use this procedure to create a new sensitive information type that is based on a
 
 **Ends or doesn't end with characters** allows you to define the characters that the matched items should or should not end with. For example, if your Employee ID number cannot end with 0 or 1, select **Doesn't end with** and add 0 and 1 to the list, separated by commas.
 
-**Exclude duplicate characters** allow you to ignore matches in which all the digits are same. For example, if the Employee ID number can not have all the digits to be same, you can select Exclude duplicate characters additional check to exclude 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999, 000000 from the list of valid matches for employee ID.
+**Exclude duplicate characters** allows you to ignore matches in which all the digits are the same. For example, if the Employee ID number cannot have all the digits be the same, you can select **Exclude duplicate characters** to exclude 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999, and 000000 from the list of valid matches for the employee ID.
 
 **Include or exclude prefixes** allow you to define the keywords that should or shouldn't be found immediately before the matching entity. Depending on your selection, entities will be matched or not matched if they're preceded by the prefixes you include here. For example, if you 'Exclude' the prefix 'GUID:', any entity that's preceded by 'GUID:' won't be considered a match.
 
