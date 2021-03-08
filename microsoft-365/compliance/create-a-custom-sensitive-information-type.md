@@ -113,7 +113,7 @@ Use this procedure to create a new sensitive information type that is based on a
 13. Choose the **recommended confidence level** for this sensitive information type.
 14. Check your setting and choose **Submit**.
 
-## Additional Checks
+## Additional checks
 **Exclude specific matches** allow you to define keywords that will be excluded when detecting matches for this pattern of the info type. For example, you might exclude test credit card numbers like '4111111111111111' so that they're not matched as a valid number.
 
 **Starts or doesn't start with characters** allow you to define the characters with which the matched items should or should not start with. For example, if you want credit card numbers to always start with '41' or '42' or '43' then select 'Starts with' and add 41, 42 & 43 to the list seperated by commas. 
