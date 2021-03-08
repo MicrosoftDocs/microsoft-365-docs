@@ -118,7 +118,7 @@ Use this procedure to create a new sensitive information type that is based on a
 
 **Starts or doesn't start with characters** allow you to define the characters with which the matched items should or should not start with. For example, if you want credit card numbers to always start with '41' or '42' or '43' then select 'Starts with' and add 41, 42 & 43 to the list seperated by commas. 
 
-**Ends or doesn't end with characters** allow you to define the characters with which the matched items should or should not end with. For example, if your Employee ID number cannot end with 0 or 1 then select 'Doesn't end with' and add 0 & 1 to the list seperated by commas.
+**Ends or doesn't end with characters** allows you to define the characters that the matched items should or should not end with. For example, if your Employee ID number cannot end with 0 or 1, select **Doesn't end with** and add 0 and 1 to the list, separated by commas.
 
 **Exclude duplicate characters** allow you to ignore matches in which all the digits are same. For example, if the Employee ID number can not have all the digits to be same, you can select Exclude duplicate characters additional check to exclude 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999, 000000 from the list of valid matches for employee ID.
 
