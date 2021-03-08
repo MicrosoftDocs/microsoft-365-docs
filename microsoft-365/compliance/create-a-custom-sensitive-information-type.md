@@ -116,7 +116,7 @@ Use this procedure to create a new sensitive information type that is based on a
 ## Additional checks
 **Exclude specific matches** allows you to define keywords that will be excluded when detecting matches for this pattern of the sensitive information type. For example, you might exclude test credit card numbers like '4111111111111111' so that they're not matched as a valid number.
 
-**Starts or doesn't start with characters** allow you to define the characters with which the matched items should or should not start with. For example, if you want credit card numbers to always start with '41' or '42' or '43' then select 'Starts with' and add 41, 42 & 43 to the list seperated by commas. 
+**Starts or doesn't start with characters** allows you to define the characters that the matched items should or should not start with. For example, if you want credit card numbers always to start with 41, 42, or 43, select **Starts with** and add 41, 42, and 43 to the list, separated by commas. 
 
 **Ends or doesn't end with characters** allows you to define the characters that the matched items should or should not end with. For example, if your Employee ID number cannot end with 0 or 1, select **Doesn't end with** and add 0 and 1 to the list, separated by commas.
 
