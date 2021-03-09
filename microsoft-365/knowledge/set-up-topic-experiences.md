@@ -128,9 +128,13 @@ To assign licenses:
 
 2. Select the users that you want to license, and click **Licenses and apps**.
 
-3. Under **Apps**, make sure **Graph Connectors Search with Index** and **Topic Experiences** are both selected.
+3. Under **Licenses**, select **Viva Topics**.
 
-4. Click **Save changes**.
+4. Under **Apps**, make sure **Graph Connectors Search with Index (Viva Topics)** and **Viva Topics** are both selected.
+
+    ![Microsoft Viva Topics licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
+
+5. Click **Save changes**.
 
 ## Manage topic experiences
 
