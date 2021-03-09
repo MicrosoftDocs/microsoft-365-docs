@@ -27,23 +27,24 @@ description: "Get the Microsoft 365 Admin app and learn to manage your online or
 
 # About the Microsoft 365 admin mobile app
 
-Are you an admin who’s usually on the go? Even if you aren’t, there may be times when you need to manage Microsoft 365 from your phone or tablet. Check out the free [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216), the perfect companion to the web-based Microsoft 365 admin center. You can download the app from the Apple App Store, and from Google Play Store.
+Are you an admin who’s usually on the go? Even if you aren’t, there may be times when you need to manage Microsoft 365 from your phone or tablet. Check out the free [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216), the perfect companion to the web-based Microsoft 365 admin center. You can download the app from the [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8), and from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
 :::image type="content" source="../../media/admin mobile app screenshot.png" alt-text="Screen capture of the admin mobile app's home page, displaying search, Message center, health, and quick links":::
 
 The admin app has a lot of capabilities which will enable you to manage Microsoft 365 from your mobile or tablet device, when you can’t get to a computer. Here's a list of a few of the tasks you can do from the app:
 
-- **Manage users and devices** Add or edit a user, reset a user’s password, assign a role, block user, delete user, manage alias, assign licenses and more.
-- **Manage groups** Add a group, add or remove users from groups etc.License management and billing: View a list of purchases and assigned licenses, assign licenses to users, purchase or remove licenses, view and download invoices etc.
+- **Manage users and devices** Add or edit a user, reset a user’s password, assign a role, block user, delete user, manage alias, assign licenses, wipe device data and more.
+- **Manage groups** Add a group, add or remove users from groups.
+- **License management and billing** View a list of purchased and assigned licenses, assign licenses to users, purchase or remove licenses and view and download invoices.
 - **Support** Create a new service request and keep track of all the updates related to the service requests while you are on the go.
 - **Message Center** Stay on top of all the upcoming changes, planned maintenance, or other important announcements related to Microsoft 365
 - **Service Health** Monitor the health of all the services by viewing the current status of the service and details about service disruption and outages.
 - **Notifications** Stay on top of all the important information and updates related to message center posts, service health and billing through push notifications. You can even customize what you want to be notified of.
 
-If you're an admin and you're responsible for more than one Microsoft 365 organization, you can sign in to multiple organizations and quickly switch between them.
+If you're an admin and you're responsible for more than one Microsoft 365 organization, you can sign in to multiple organizations and quickly switch between them. The app supports dark theme and is available in 39 languages.
   
 > [!IMPORTANT]
-> If you're having trouble using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
+> If you're having issues using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
   
 ## Download the admin mobile app
 
