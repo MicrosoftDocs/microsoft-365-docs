@@ -251,7 +251,7 @@ Even when you use built-in labeling in Office apps, you can also use the Azure I
 
 - A PowerShell module to discover sensitive information in files on premises, and apply or remove labels and encryption from these files.
 
-If you are new to Azure Information Protection, or if you are an existing Azure Information Protection customer that has just migrated your labels, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
+If you are new to Azure Information Protection, or if you are an existing Azure Information Protection customer who has recently migrated your labels, see [Choose your Windows labeling solution](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
 
 ## Sensitivity labels and Microsoft Cloud App Security
 
