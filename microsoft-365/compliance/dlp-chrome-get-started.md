@@ -69,6 +69,10 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Security reader
 - Reports reader
 
+### Chrome dependency
+
+The Microsoft Compliance Extension is supported for the current version of Chrome and the past three versions.
+
 ### Overall workflow
 
 Deploying Microsoft Compliance Extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
