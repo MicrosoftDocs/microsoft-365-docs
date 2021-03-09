@@ -58,6 +58,12 @@ We’ve revamped the Message center to help you discover relevant messages and a
 
 To learn more about the new features, check out [Manage messages in Message center](manage/manage-messages.md).
 
+### What's new help pane
+
+We've added the ability to control what your Microsoft 365 users see when they launch the What's new help pane in the Office desktop apps. You can choose to display or hide features that appear in the What's new help pane, which helps you control what you want your end users to focus on.
+
+
+
 ## Ignite 2020 (August & September)
 
 Welcome to Microsoft Ignite - our first online-only Ignite. We hope to see you in one of our sessions: [Microsoft Ignite 2020 Session Catalog](https://myignite.microsoft.com/sessions). Here's just a few of the things we'll be talking about at Ignite.
