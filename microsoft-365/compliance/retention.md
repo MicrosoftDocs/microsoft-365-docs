@@ -361,7 +361,7 @@ Providing your policies for retention don't have a Preservation Lock, you can de
  
 When you do any of these actions, any SharePoint or OneDrive content that's subject to retention from the policy continues to be retained for 30 days to prevent inadvertent data loss. If necessary, you can restore data from the Preservation Hold library. During this 30-day grace period, you can't manually delete the content and the content's site can't be deleted.
 
-For more information about the Preservation Hold library, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md##how-retention-works-for-sharepoint-and-onedrive).
+For more information about the Preservation Hold library, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 You can change the location status back to on during the grace period, and no content will be deleted for that policy.
 
