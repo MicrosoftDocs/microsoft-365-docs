@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn about data loss preventions alerts and the alerts dashboard. 
+description: Learn about data loss prevention alerts and the alerts dashboard. 
 ---
 
 # Learn about the data loss prevention Alerts dashboard
@@ -50,13 +50,13 @@ There are two types of alerts that can be configured in DLP policies.
 
 ## Types of events
 
-Here are some of the events associated with an alert. In the UI you can choose a particular event to view its details. 
+Here are some of the events associated with an alert. In the UI, you can choose a particular event to view its details. 
 
 ### Event details
 
 |Property name  |Description  |Event types  |
 |---------|---------|---------|
-|Id |unique ID associated with the event |all events |
+|ID |unique ID associated with the event |all events |
 |Location |workload where the event was detected|all events |
 |time of activity     |time of the user activity that matched the criteria of the DLP policy |
 
@@ -67,7 +67,7 @@ Here are some of the events associated with an alert. In the UI you can choose a
 |user | user who took the action that caused the policy match | all events|
 |hostname | host name of the computer where the DLP policy match occurred | device events|
 |IP address | IP address of the computer where the DLP policy match occurred | device events|
-|file path | the absolute path of the item involved with the DLP policy match | SharePoint, OneDrive and devices events|
+|file path | the absolute path of the item involved with the DLP policy match | SharePoint, OneDrive, and devices events|
 |email recipients |if an email was the sensitive item that matched the DLP policy, this field includes the recipients of that email| Exchange events|
 |email subject |subject of the email that matched the DLP policy |Exchange events|
 |email attachments | names of the attachments in the email that matched the DLP policy| Exchange events|

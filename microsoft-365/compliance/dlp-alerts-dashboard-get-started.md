@@ -24,28 +24,7 @@ description: Get started with defining and managing alerts for data loss prevent
 
 # Get started with the data loss prevention alert dashboard
 
-Data loss prevention (DLP) polices can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the
-new DLP alert management dashboard in the [Microsoft 365 compliance
-center](https://compliance.microsoft.com/) to view alerts, events, and
-associated metadata for DLP policy violations.
-
-<!-- LEFT OFF HERE-->
-
-## Features
-
-The following features are part of this:
-
--   **DLP alert management dashboard**: In the [Microsoft 365 compliance 
-    center](https://compliance.microsoft.com/), this dashboard shows
-    alerts for DLP policies that are enforced on the following
-    workloads:
-
-    -   Exchange
-    -   SharePoint
-    -   OneDrive
-    -   Teams
-    -   Devices
--   **Advanced alert configuration options**: These options are part of the DLP policy authoring flow. Use them to create rich alert configurations. You can create a single-event alert or an aggregated alert, based on the number of events or the size of the leaked data.
+Data loss prevention (DLP) polices can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the [DLP alert management dashboard](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) in the [Microsoft 365 compliance center](https://compliance.microsoft.com/) to view alerts, events, and associated metadata for DLP policy violations.
 
 ## Before you begin
 
