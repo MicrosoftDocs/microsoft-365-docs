@@ -30,7 +30,7 @@ When the criteria in a Data loss prevention (DLP) policy is matched by the actio
 
 ## Workloads
 
-The **DLP alert management dashboard**, in the [Microsoft 365 compliance center](https://compliance.microsoft.com/), shows alerts for DLP policies on these workloads:
+The [DLP alert management dashboard](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts), in the [Microsoft 365 compliance center](https://compliance.microsoft.com/), shows alerts for DLP policies on these workloads:
 - Exchange
 - SharePoint
 - OneDrive
@@ -50,7 +50,7 @@ There are two types of alerts that can be configured in DLP policies.
 
 ## Types of events
 
-Here are some of the events associated with an alert. You can choose a particular event to view its details. 
+Here are some of the events associated with an alert. In the UI you can choose a particular event to view its details. 
 
 ### Event details
 
@@ -89,3 +89,7 @@ Here are some of the events associated with an alert. You can choose a particula
 |user overrode policy |did the user override the policy via a policy tip | all events|
 |use override justification |the text of the reason provided by the user for the override | all events|   
 
+## See Also
+
+- [Get started with the data loss prevention alert dashboard](dlp-alerts-dashboard-get-started.md)
+- [Where to start with data loss prevention](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention)
