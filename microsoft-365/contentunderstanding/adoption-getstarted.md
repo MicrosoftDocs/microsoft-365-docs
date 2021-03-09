@@ -35,7 +35,7 @@ With new AI services and capabilities, you can build content understanding and c
 | Restricted to a single library. | Can be applied to multiple libraries. |
 | Train on PDF, JPG, PNG format, total 50 MB/500 pp. | Train on 5-10 PDF, Office, or email files, including negative examples. |
 
-For a more complete comparison of the capabilities, see [Difference between document understanding and form processing models](differences-between-document-understanding-and-form-processing-model.md).
+For a more complete comparison of the capabilities, see [Difference between document understanding and form processing models](difference-between-document-understanding-and-form-processing-model.md).
 
 ## Identify pilot business scenarios to optimize
 
