@@ -96,13 +96,28 @@ To work with the DLP alert management dashboard:
 2. Select the **Alerts** tab to view the DLP alerts dashboard.
 3. Select an alert to see details:
 
-        :::image type="content" source="../media/alert-details.png" alt-text="Screenshot showing alert details on the DLP alert management dashboard." border="false":::
+:::image type="content" source="../media/alert-details.png" alt-text="Screenshot showing alert details on the DLP alert management dashboard." border="false":::
 
 4. Select the **Events** tab to view all of the events associated with the alert. You can choose a particular event to view its details. For a list of some of the available event details, see, [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md).
- 
+5. Select **Details** to open the **Overview** page for the alert. The overview page provides a summary:
+    1. of what happened
+    1. who performed the actions that caused the policy match
+    1. information about the matched policy, and more 
+
+6. Choose the **Events** tab to access the:
+    1. content involved
+    1. sensitive information types matched
+    1. metadata
+
 5. Select the **Sensitive Info Types** tab to view details about the sensitive information types detected in the content. Details include confidence and count.
 
-6. After you investigate the alert, choose **Manage alert** to change the status (**Active**, **Investigating**, **Dismissed**, or  **Resolved**). You can also add comments and assign the alert to someone in your organization.
+6. After you investigate the alert, return to the **Overview** tab where you can manage triage and manage the disposition of the alert and add comments.
 
     -   To see the history of workflow management, choose **Management log**.
     -   After you take the required action for the alert, set the status of the alert to **Resolved**.
+
+
+## See also
+
+- [Learn about data loss prevention alerts and the alerts dashboard](dlp-alerts-dashboard-learn.md)
+- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
