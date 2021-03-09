@@ -177,21 +177,19 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
   
 1. Download and install the [Microsoft Azure Storage Explorer tool](https://go.microsoft.com/fwlink/p/?LinkId=544842).
     
-2. Start the Microsoft Azure Storage Explorer and select **Blob Container**.
+2. Start the Microsoft Azure Storage Explorer.
+
+3. On the **Select Resource** page in the **Connect to Azure Storage** dialog, click **Blob container**.
   
-3. Click **Use a shared access signature (SAS) URI or connection string** and click **Next**.
+4. On the **Select Authentication Method** page, select the **Shared access signature (SAS)** option, and then click **Next**.
     
-4. Click **Use a SAS URI**, paste the SAS URL that you obtained in Step 1 into the box under **URI**, and then click **Next**.
+5. On the **Enter Connection Info** page, paste the SAS URL that you obtained in Step 1 into the box under **Blob container SAS URL**, and then click **Next**. After you paste the SAS URL, the box under **Display name** is auto-populated with **ingestiondata**.
     
-5. On the **Connection summary** page, you can review the connection information, and then click **Connect**.
+6. On the **Summary** page, you can review the connection information, and then click **Connect**.
     
-    The **ingestiondata** container is opened. It contains the PST files that you uploaded in Step 2. The **ingestiondata** container is located under **Storage Accounts** \> **(SAS-Attached Services)** \> **Blob Containers**. 
-    
-    ![Azure Storage Explorer displays a list of the PST files that you uploaded](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
+    The **ingestiondata** container is opened. It contains the PST files that you uploaded in Step 2. The **ingestiondata** container is located under **Storage Accounts** \> **(Attached Containers)** \> **Blob Containers**. 
   
-6. When you're finished using the Microsoft Azure Storage Explorer, right-click **ingestiondata**, and then click **Detach** to disconnect from your Azure Storage area. Otherwise, you'll receive an error the next time you try to attach. 
-    
-    ![Right-click ingestion and click Detach to disconnect from your Azure Storage area](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
+7. When you're finished using the Microsoft Azure Storage Explorer, right-click **ingestiondata**, and then click **Detach** to disconnect from your Azure Storage area. Otherwise, you'll receive an error the next time you try to attach.
   
 ## Step 4: Create the PST Import mapping file
 
