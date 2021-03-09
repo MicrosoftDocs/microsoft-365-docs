@@ -1,29 +1,33 @@
 ---
-title: "Campaign Views in Microsoft Defender for Office 365 Plan"
-f1.keywords:
-- NOCSH
+title: Campaign Views in Microsoft Defender for Office 365 Plan
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: mcostea
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
-description: "Learn about Campaign Views in Microsoft Defender for Office 365."
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Learn about Campaign Views in Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Campaign Views in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
 
 Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example Microsoft 365 E5 or organizations with an Defender for Office 365 Plan 2 add-on). Campaign Views in the Security & Compliance Center identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
@@ -160,7 +164,7 @@ After you create a basic or advanced filter, you can save it by using **Save que
 
 To export the graph or the list of campaigns, click **Export** and select **Export chart data** or **Export campaign list**.
 
-If you have a Microsoft Defender for Endpoint subscription, you can click **WDATP** to connect or disconnect the campaigns information with Microsoft Defender for Endpoint. For more information, see [Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
+If you have a Microsoft Defender for Endpoint subscription, you can click **MDE Settings** to connect or disconnect the campaigns information with Microsoft Defender for Endpoint. For more information, see [Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
 
 ## Campaign details
 
@@ -209,7 +213,7 @@ The diagram contains the following information:
 
   |Value|Spam filter verdict|Description|
   |---|---|---|
-  |**Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering. For example, the message was marked as not spam by a mail flow rule (also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons. For example, the sender and recipient appear to be in the same organization.|
+  |**Allowed**|`SFV:SKN` <p> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering. For example, the message was marked as not spam by a mail flow rule (also known as a transport rule). <p> The message skipped spam filtering for other reasons. For example, the sender and recipient appear to be in the same organization.|
   |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by spam filtering. For example, by a mail flow rule.|
   |**Detected**|`SFV:SPM`|The message was marked as spam by spam filtering.|
   |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by spam filtering.|

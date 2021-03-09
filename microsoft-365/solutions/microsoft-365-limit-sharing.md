@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 search.appverid:
 - SPO160
 - MET150
@@ -31,7 +32,7 @@ The methods of sharing files are listed in the table below. Click the link in th
 |[Microsoft 365 group or team](#microsoft-365-group-or-team)|People granted access to a Microsoft Teams team or Microsoft 365 group have edit access to files in the associated SharePoint site.|If the group or team is private, sharing invitations to join the team go to the owner for approval. Admins can disable guest access or use sensitivity labels to prevent access by people from outside the organization.|
 |[SharePoint site](#sharepoint-site)|People can be granted Owner, Member, or Visitor access to a SharePoint site and will have that level of access to files in the site.|Site permissions can be restricted so that only site owners can share the site. Admins can set a site to read-only or block access entirely.|
 |[Sharing with specific people](#sharing-with-specific-people)|Site members and people with edit permissions can give direct permissions to files and folders or share them by using *Specific people* links.|Site permissions can be restricted so that only site owners can share files and folders. In this case, direct access and *Specific people* link sharing by site members goes to site owner for approval.|
-|[SharePoint guest sharing](#sharepoint-guest-sharing)|SharePoint site owners and members can share files and folders with people outside the organization.|Guest sharing can be disabled for the entire organization or for individual sites.|
+|[SharePoint and OneDrive guest sharing](#sharepoint-guest-sharing)|SharePoint site owners and members and OneDrive owners can share files and folders with people outside the organization.|Guest sharing can be disabled for the entire organization or for individual sites.|
 |[*People in your organization* sharing links](#people-in-your-organization-sharing-links)|SharePoint site owners and members can share files using *People in your organization* links, which will work for anyone inside the organization.|*People in your organization* links can be disabled at the site level.|
 |[Create sites, groups, and teams](#create-sites-groups-and-teams)|By default, users can create new sites, groups, and teams from which they can share content.|Admins can restrict who can create sites, groups, and teams.|
 |[Email](#email)|People with access to a file can send it to others via email.|Admins can encrypt files by using sensitivity labels to prevent them being shared with unauthorized people.|
@@ -150,6 +151,8 @@ To turn off guest sharing for a site
 
     ![Screenshot of SharePoint site-level sharing settings set to Only people in your organization](../media/sharepoint-site-external-sharing-settings-off.png)
 
+You can turn off guest sharing for an individual OneDrive by clicking the user in the Microsoft 365 admin center and selecting **Manage external sharing** on the **OneDrive** tab.
+
 If you would like to allow sharing with people outside your organization but you want to make sure that everyone authenticates, you can disable *Anyone* (anonymous sharing) links for the entire organization or for an individual site.
 
 To turn off *Anyone* links at the organization level
@@ -171,11 +174,15 @@ To turn off *Anyone* links for a site
 
 By default, members of a site can share files and folders with other people in your organization by using a *People in your organization* link. You can disable *People in your organization* links by using PowerShell:
 
-`Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks`
+```powershell
+Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
+```
 
 For example:
 
-`Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks`
+```powershell
+Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks
+```
 
 ## Create sites, groups, and teams
 
@@ -184,7 +191,8 @@ By default, users can create new sites, groups, and teams from which they may be
 - [Manage site creation in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
 - [Manage who can create Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
 
-Note that restricting group creation restricts team creation.
+> [!NOTE]
+> Restricting group creation restricts team creation.
 
 ## Email
 

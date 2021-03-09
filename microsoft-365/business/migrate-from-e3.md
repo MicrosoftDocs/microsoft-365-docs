@@ -48,7 +48,7 @@ This table shows the differences between Microsoft 365 Business Premium and Offi
 | **Threat Protection**        | | | 
 | Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure AD multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
 | **Device and app management**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Shared computer activation|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png)| 

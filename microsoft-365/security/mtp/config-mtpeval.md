@@ -1,25 +1,26 @@
 ---
 title: Configure Microsoft 365 Defender pillars for the trial lab or pilot environment
 description: Configure Microsoft 365 Defender pillars, such as Microsoft Defender for Office 365 , Microsoft Defender for Identity, Microsoft Cloud App Security, and Microsoft Defender for Endpoint, for your trial lab or pilot environment.
-keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars 
+keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
-ms.author: dolmont  
+f1.keywords: 
+  - NOCSH
+ms.author: dolmont
 author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
-- m365solution-evalutatemtp
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-evalutatemtp
+ms.topic: article
+ms.technology: m365d
 ---
 
 # Configure Microsoft 365 Defender pillars for your trial lab or pilot environment
@@ -33,29 +34,11 @@ ms.topic: article
 
 Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Prepare your Microsoft 365 Defender trial lab or pilot environment" />
-      <br/>Phase 1: Prepare </a><br>
-    </td>
-     <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Set up your Microsoft 365 Defender trial lab or pilot environment" />
-      <br/>Phase 2: Setup </a><br>
-    </td>
-    <td align="center" bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard endpoints" />
-      <br/>Phase 3: Configure & Onboard </a><br>
-</td>
-  </tr>
-</table>
+|[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Phase 1: Prepare](prepare-mtpeval.md) |[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Phase 2: Set up](setup-mtpeval.md) |![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)<br/>Phase 3: Onboard | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Back to pilot playbook](mtp-pilot.md) |
+|--|--|--|--|
+|| |*You are here!* | |
 
 You're currently in the configuration phase.
-
 
 Preparation is key to any successful deployment. In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender for Endpoint.
 
@@ -63,7 +46,7 @@ Preparation is key to any successful deployment. In this article, you'll be guid
 ## Microsoft 365 Defender pillars
 Microsoft 365 Defender consists of four pillars. Although one pillar can already provide value to your network organization's security, enabling the four Microsoft 365 Defender pillars will give your organization the most value.
 
-![Image of_Microsoft 365 Defender solution for users, Microsoft Defender for Identity, for endpoints Microsoft Defender for Endpoint, for cloud apps, Microsoft Cloud App Security, and for data, Microsoft Defender for Office 365](../../media/mtp-eval-31.png)
+![Image of_Microsoft 365 Defender solution for users, Microsoft Defender for Identity, for endpoints Microsoft Defender for Endpoint, for cloud apps, Microsoft Cloud App Security, and for data, Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
 
 This section will guide you to configure:
 -	Microsoft Defender for Office 365
@@ -175,14 +158,14 @@ There's a PowerShell Module called the *Office 365 Advanced Threat Protection Re
 
     ![Image of_the Microsoft Defender for Identity settings page where you should turn the Microsoft Defender for Endpoint  toggle on](../../media/mtp-eval-52.png)
 
->[!NOTE]
->Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint. Rebranding changes across all of our portals are being rolled out the for consistency.
+> [!NOTE]
+> Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint. Rebranding changes across all of our portals are being rolled out the for consistency.
 
 
 ## Configure Microsoft Cloud App Security
 
->[!NOTE]
->Skip this step if you've already enabled Microsoft Cloud App Security. 
+> [!NOTE]
+> Skip this step if you've already enabled Microsoft Cloud App Security. 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.
 
@@ -303,5 +286,6 @@ Congratulations! You've just created your Microsoft 365 Defender trial lab or pi
 Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
 ## Next step
-|![Attack simulation phase](../../media/mtp/run-sim.png) <br>[Attack simulation phase](mtp-pilot-simulate.md) | Run the attack simulation for your Microsoft 365 Defender pilot environment.
-|:-------|:-----|
+
+- [Generate a test alert](generate-test-alert.md) - Run an attack simulation in your Microsoft 365 Defender trial lab.
+

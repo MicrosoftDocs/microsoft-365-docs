@@ -7,6 +7,9 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 localization_priority: Priority
 description: "Learn how to create a classifier"
 ---
@@ -140,3 +143,5 @@ If you received a match on your labeled sample files, you can now  test your mod
 [Explanation types](explanation-types-overview.md)
 
 [Apply a model](apply-a-model.md) 
+
+[SharePoint Syntex Accessibility Mode](accessibility-mode.md)

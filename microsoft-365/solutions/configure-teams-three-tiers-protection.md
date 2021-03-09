@@ -44,7 +44,7 @@ For more information about these tiers and capabilities recommended for each tie
 
 The following table summarizes the configurations for each tier. Use these configurations as starting point recommendations and adjust the configurations to meet the needs of your organization. You may not need every tier.
 
-||Baseline (Public)|Baseline (Private)|Sensitive|Highly sensitive|
+|-|Baseline (Public)|Baseline (Private)|Sensitive|Highly sensitive|
 |:-----|:-----|:-----|:-----|:-----|
 |Private or public team|Public|Private|Private|Private|
 |Who has access?|Everybody in the organization, including B2B users.|Only members of the team. Others can request access to the associated site.|Only members of the team.|Only members of the team.|
@@ -109,6 +109,8 @@ See the following references to create a secure and productive guest sharing env
 ## Access from unmanaged devices
 
 For the sensitive and highly sensitive tiers, we restrict access to SharePoint content with sensitivity labels. Azure AD conditional access offers many options for determining how people access Microsoft 365, including limitations based on location, risk, device compliance, and other factors. We recommend you read [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) and consider which additional policies might be appropriate for your organization.
+
+Note that guests often don't have devices that are managed by your organization. If you allow guests in any of the tiers, consider what kinds of devices they'll be using to access teams and sites and set your unmanaged device policies accordingly.
 
 ## Next step
 
