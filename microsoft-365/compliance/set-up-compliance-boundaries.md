@@ -189,7 +189,7 @@ To create a case and assign members:
 5. Click **Save** on the **Manage this case** flyout to save the change.
 
 > [!NOTE]
-When adding a role group to a case, you can only add the role groups that you are a member of.
+> When adding a role group to a case, you can only add the role groups that you are a member of.
 
 ## Searching and exporting content in Multi-Geo environments
 
