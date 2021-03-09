@@ -62,7 +62,7 @@ To learn more about the new features, check out [Manage messages in Message cent
 
 We've added the ability to control what your Microsoft 365 users see when they launch the What's new help pane in the Office desktop apps. You can choose to display or hide features that appear in the What's new help pane, which helps you control what you want your end users to focus on.
 
-
+:::image type="content" source="../media/whats-new-page-MAC.png" alt-text="Screenshot: What's new page in the Microsoft 365 admin center showing what new features you can show or hide for endusers":::
 
 ## Ignite 2020 (August & September)
 
