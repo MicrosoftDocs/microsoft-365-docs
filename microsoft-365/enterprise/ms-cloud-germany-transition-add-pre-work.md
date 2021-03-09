@@ -3,7 +3,7 @@ title: "Pre-work for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/18/2020
+ms.date: 03/09/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -46,9 +46,9 @@ Use these links to get to the pre-work steps relevant to your organization:
 | Create organization-wide [retention policies](https://docs.microsoft.com/microsoft-365/compliance/retention) to protect from inadvertent deletion of content during migration.  |<ul><li>To ensure that content isn't inadvertently deleted by end users during the migration, customers may choose to enable an organization-wide retention policy. </li><li>Although retention isn't required, since holds placed at any time during the migration should work as expected, having a retention policy is a back-up safety mechanism. At the same time, a retention policy might not be used by all customers, especially those who are concerned about over preservation.</li></ul>| Apply retention policy as described in [Learn about retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention-policies). Failures of the service or client software can occur if this is not done before Phase 4 of 9. </li></ul>|
 |||||
 
-## Active Directory Federation Services (ADFS)
+## Active Directory Federation Services (AD FS)
 
-**Applies to**: Customers using Active Directory Federation Services on premises to authenticate users connecting to Microsoft Office 365
+**Applies to**: Customers using AD FS on premises to authenticate users connecting to Microsoft Office 365
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -58,55 +58,25 @@ Use these links to get to the pre-work steps relevant to your organization:
 ## Exchange Online
 
 **Applies to**: Exchange Online customers who have enabled sharing calendar and availability address space.
+
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Notify external partners of the upcoming transition to Office 365 services. | Availability address space configurations allow sharing of free/busy information with Office 365. | Failure to do so may result in service or client failure at a later phase of customer migration. |
 |||||
 
-<!--
-Reworked as text:
-
-**Step:** Notify external partners of the upcoming transition to Office 365 services.
-
-**Description:** Availability address space configurations allow sharing of free/busy information with Office 365. | Exchange Online customers who have enabled sharing calendar and availability address space.
-
-**Applies to:** Exchange Online customers who have enabled sharing calendar and availability address space.
-
-**Impact:** Required action.  Failure to do so may result in service or client failure at a later phase of customer migration.
-
-- **Step:** Notify external partners of the upcoming transition to Office 365 services.
-
-- **Description:** Availability address space configurations allow sharing of free/busy information with Office 365. | Exchange Online customers who have enabled sharing calendar and availability address space.
-
-- **Applies to:** Exchange Online customers who have enabled sharing calendar and availability address space.
-
-- **Impact:** Required action.  Failure to do so may result in service or client failure at a later phase of customer migration.
-
--->
 ### Exchange Online Hybrid configuration
 
 **Applies to**:  Exchange Online customers with an active Exchange Hybrid configuration
+
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Update to the latest version of the Hybrid Configuration Wizard (HCW) any time before your tenant is entering migration stage 5. You may start this activity immidiately after receiving the message center notificate that your Office 365 tenant migratin has begun.<br><br> Microsoft Cloud Deutschland hybrid Exchange Online customers must uninstall previous versions of HCW, and then install and execute the latest version (17.0.5378.0 or higher) from [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard). |<ul><li>The latest version of the HCW includes necessary updates to support customers who are transitioning from Microsoft Cloud Deutschland to Office 365 Services.</li><li> Updates include changes to on-premises certificate settings for the Send connector and the Receive connector.</li><li> Exchange administrators must re-install the HCW any time before Phase 5 of 9 (Exchange migration) begins.<br>When executing the HCW before phase 5, select "Office 365 Germany" on the 2nd page of the HCW under _Office 365 Exchange Online_ in the listbox below  _My Office 365 organization is hosted by_</li><li>**NOTE**: Upon completion of your Office 365 tenant  migration , you will remove and re-install the HCW again, this time using "Office 365 Worldwide" settings on the 2nd parge of the HCW to complete your Hybrid setup with the Exchange Online global service.</li></ul>|Failure to run the HCW before Phase 5 (Exchange migration) may result in service or client failure. |
 ||||
 
-<!--
-youReworked as text:
-
-**Step:** Uninstall previous versions of Hybrid Configuration wizard (HCW), and then install and execute the latest version, 17.0.5378.0, from [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard).
-
-**Description:** The latest version of the HCW includes necessary updates to support customers who are transitioning from Microsoft Cloud Deutschland to Office 365 Services. <br><br> Updates include changes to on-premises certificate settings for Send connector and Receive connector.
-
-**Applies to:** Exchange Online customers running Hybrid deployment
-
-**Impact:** Required action. Failure to do so may result in service or client failure.
--->
-
-
 ## SharePoint Online
 
 **Applies to**: Customers using SharePoint 2013 on premises
+
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -115,7 +85,7 @@ youReworked as text:
 
 ## Skype for Business Online
 
-Applies to:  Skype For Business Online customers
+**Applies to**:  Skype For Business Online customers
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -145,7 +115,7 @@ If you're using a third-party service or line-of-business (LOB) apps that are in
 
 ## Dynamics	365
 
-Applies to: Customers using Microsoft Dynamics
+**Applies to**: Customers using Microsoft Dynamics
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -155,6 +125,7 @@ Applies to: Customers using Microsoft Dynamics
 ## Power BI
 
 **Applies to**: Power BI customers 
+
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Removal of objects from Power BI subscriptions that won't be migrated from Power BI Microsoft Cloud Deutschland to Office 365 services. | Migration of Power BI services will require customer action to delete certain artifacts, such as datasets and dashboards. | <ul><li>Admins may have to remove the following items from their subscription: </li><li>Real-Time datasets (for example, streaming or push datasets) </li><li>Power BI on-premises Data Gateway configuration and data source </li></ul>|
@@ -162,8 +133,8 @@ Applies to: Customers using Microsoft Dynamics
 
 ## DNS
 
-**Applies to**: Customers using Office Desktop client (Office 365 ProPlus, Office 2019, 2016, ...)<br>
-Remove MSOID, CName from customer-owned DNS if it exists anytime before Azure AD cut-over. A TTL of 5 minutes can be set so that the change can take effect quickly.
+**Applies to**: Customers using Office Desktop client (Microsoft 365 Apps, Office 365 ProPlus, Office 2019, 2016, ...)<br>
+Remove MSOID, CName from customer-owned DNS if it exists anytime before Azure Active Directory (Azure AD) cut-over. A TTL of 5 minutes can be set so that the change can take effect quickly.
 
 ## Federated identity
 
