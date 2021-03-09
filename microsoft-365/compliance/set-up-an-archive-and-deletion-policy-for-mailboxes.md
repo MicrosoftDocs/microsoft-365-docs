@@ -29,7 +29,7 @@ In Microsoft 365, admins can create an archiving and deletion policy that automa
   
 The steps in this article will set up an archiving and retention policy for a fictitious organization named Alpine House. Setting up this policy includes the following tasks:
   
-- Enabling an archive mailbox for every user in the organization. This gives users addition mailbox storage, and is required so that a retention policy can move items to the archive mailbox. It also lets a user store archival information by moving items to their archive mailbox.
+- Enabling an archive mailbox for every user in the organization. This gives users additional mailbox storage, and is required so that a retention policy can move items to the archive mailbox. It also lets a user store archival information by moving items to their archive mailbox.
 
 - Creating three custom retention tags that do the following:
 
