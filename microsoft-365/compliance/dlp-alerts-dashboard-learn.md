@@ -50,7 +50,7 @@ There are two types of alerts that can be configured in DLP policies.
 
 ## Types of events
 
-Select the **Events** tab to view all of the events associated with the alert. You can choose a particular event to view its details. 
+Here are some of the events associated with an alert. You can choose a particular event to view its details. 
 
 ### Event details
 
@@ -84,44 +84,8 @@ Select the **Events** tab to view all of the events associated with the alert. Y
 |---------|---------|---------|
 |DLP policy matched |name of the matched DLP policy |all events|
 |rule matched |name of the matched DLP policy rule |all events|
+|sensitive information types (SIT) detected|SITs that were detected as part of the DLP policy match |all events|
+|actions taken |actions that were taken that caused the DLP policy match| all events|
+|user overrode policy |did the user override the policy via a policy tip | all events|
+|use override justification |the text of the reason provided by the user for the override | all events|   
 
- 
-    |*Event details*||
-    |      | Id                            | Unique ID associated with the event                                        | All events                               |
-    |                   | Location                      | Workload where the event was detected                                      | All events                               |
-    |                   | Time of activity              | Time of the user activity that caused the DLP violation                    | All events                               |
-    |*Impacted entities*||
-    |  | User                          | User who caused the DLP violation                                          | All events                               |
-    |                   | Hostname                      | Host name of the machine where the DLP violation was detected              | Devices events                           |
-    |                   | IP address                    | IP address of the machine                                                  | Devices events                           |
-    |                   | File path                     | Absolute path of the file involved in the violation                        | SharePoint, OneDrive, and Devices events |
-    |                   | Email recipients              | Recipients of the email that violated the DLP policy                       | Exchange events                          |
-    |                   | Email subject                 | Subject of the email that violated the DLP policy                          | Exchange events                          |
-    |                   | Email attachments             | Names of the attachments in the email that violated the DLP policy         | Exchange events                          |
-    |                   | Site owner                    | Name of the site owner                                                     | SharePoint and OneDrive events           |
-    |                   | Site URL                      | Full URL of the SharePoint or OneDrive site                                | SharePoint and OneDrive events           |
-    |                   | File created                  | Time of file creation                                                      | SharePoint and OneDrive events           |
-    |                   | File last modified            | Time of the last modification of the file                                  | SharePoint and OneDrive events           |
-    |                   | File size                     | Size of the file                                                           | SharePoint and OneDrive events           |
-    |                   | File owner                    | Owner of the file                                                          | SharePoint and OneDrive events           |
-    |*Policy details*||
-    |     | DLP policy matched            | Name of the DLP policy that was matched                                    | All events                               |
-    |                   | Rule matched                  | Name of the DLP rule in the DLP policy that was matched                    | All events                               |
-    |                   | Sensitive info types detected | Sensitive information types that were detected as a part of the DLP policy | All events                               |
-    |                   | Actions taken                 | Actions taken as a part of the matched DLP policy                          | All events                               |
-    |                   | User overrode policy          | Whether the user overrode the policy through the policy tip                | All events                               |
-    |                   | Override justification text   | Justification provided to override the policy tip                          | All events                               |
-    
-1.  Select the **Sensitive Info Types** tab to view details about the
-    sensitive information types detected in the content. Details include
-    confidence and count.
-
-2.  After you investigate the alert, choose **Manage alert** to change
-    the status (**Active**, **Investigating**, **Dismissed**, or
-    **Resolved**). You can also add comments and assign the alert to
-    someone in your organization.
-
-    -   To see the history of workflow management, choose **Management
-    log**.
-    -   After you take the required action for the alert, set the status of
-    the alert to **Resolved**.
