@@ -34,7 +34,7 @@ ID | Category | ER | Addresses | Ports
 11 | Allow<BR>Required | Yes | `*.gov.online.office365.us`<BR>`52.127.37.0/24, 52.127.82.0/23` | **TCP:** 443
 12 | Default<BR>Required | Yes | `*.cdn.office365.us` | **TCP:** 443
 13 | Allow<BR>Required | Yes | `*.gov.us.microsoftonline.com, graph.microsoft.us, graph.microsoftazure.us, login.microsoftonline.us`<BR>`20.140.232.0/23, 52.126.194.0/23` | **TCP:** 443
-14 | Default<BR>Required | No | `*.msauth.net, *.msauthimages.us, *.msftauth.net, *.msftauthimages.us, clientconfig.microsoftonline-p.net, graph.windows.net, login.microsoftonline.com, login.microsoftonline-p.com, login.windows.net, loginex.microsoftonline.com, login-us.microsoftonline.com, mscrl.microsoft.com, nexus.microsoftonline-p.com, secure.aadcdn.microsoftonline-p.com` | **TCP:** 443
+14 | Default<BR>Required | No | `*.msauth.net, *.msauthimages.us, *.msftauth.net, *.msftauthimages.us, clientconfig.microsoftonline-p.net, graph.windows.net, login.microsoftonline.com, login.microsoftonline-p.com, login.windows.net, loginex.microsoftonline.com, login-us.microsoftonline.com, mscrl.microsoft.com, nexus.microsoftonline-p.com, secure.aadcdn.microsoftonline-p.com, *.portal.cloudappsecurity.us` | **TCP:** 443
 15 | Default<BR>Required | No | `officehome.msocdn.us, prod.msocdn.us` | **TCP:** 443, 80
 16 | Allow<BR>Required | Yes | `portal.office365.us, www.office365.us`<BR>`13.72.179.48/32, 52.227.167.206/32, 52.227.170.242/32` | **TCP:** 443, 80
 17 | Allow<BR>Required | Yes | `*.osi.office365.us, gcchigh.loki.office365.us, tasks.office365.us`<BR>`52.127.240.0/20, 2001:489a:2206::/48` | **TCP:** 443
