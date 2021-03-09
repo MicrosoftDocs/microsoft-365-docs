@@ -50,12 +50,42 @@ There are two types of alerts that can be configured in DLP policies.
 
 ## Types of events
 
-Select the **Events** tab to view all of the events associated with
-    the alert. You can choose a particular event to view its details.
-    The following table shows some of the event details.
+Select the **Events** tab to view all of the events associated with the alert. You can choose a particular event to view its details. 
 
-| Category          | Property name                 | Description                                                                | Applicable event types                   |
-    |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
+### Event details
+
+|Property name  |Description  |Event types  |
+|---------|---------|---------|
+|Id |unique ID associated with the event |all events |
+|Location |workload where the event was detected|all events |
+|time of activity     |time of the user activity that matched the criteria of the DLP policy |
+
+### Impacted entities
+
+|Property name |Description| Event types|
+|---------|---------|---------|
+|user | user who took the action that caused the policy match | all events|
+|hostname | host name of the computer where the DLP policy match occurred | device events|
+|IP address | IP address of the computer where the DLP policy match occurred | device events|
+|file path | the absolute path of the item involved with the DLP policy match | SharePoint, OneDrive and devices events|
+|email recipients |if an email was the sensitive item that matched the DLP policy, this field includes the recipients of that email| Exchange events|
+|email subject |subject of the email that matched the DLP policy |Exchange events|
+|email attachments | names of the attachments in the email that matched the DLP policy| Exchange events|
+|site owner |name of the site owner| SharePoint and OneDrive events|
+|site URL |full of the URL of the SharePoint or OneDrive site where the DLP policy match occurred |SharePoint and OneDrive events|
+|file created |time of creation of the file that matched the DLP policy |SharePoint and OneDrive events|
+|file last modified | the last time that the file that matched the DLP policy was changed | SharePoint and OneDrive events|
+|file size | size of the file that matched the DLP policy |SharePoint and OneDrive events|
+|file owner |owner of the file that matched the DLP policy |SharePoint and OneDrive events|  
+
+### Policy details
+
+|Property name |Description |Event types |
+|---------|---------|---------|
+|DLP policy matched |name of the matched DLP policy |all events|
+|rule matched |name of the matched DLP policy rule |all events|
+
+ 
     |*Event details*||
     |      | Id                            | Unique ID associated with the event                                        | All events                               |
     |                   | Location                      | Workload where the event was detected                                      | All events                               |
