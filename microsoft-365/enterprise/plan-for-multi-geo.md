@@ -54,7 +54,7 @@ You can configure any of the following locations to be satellite locations where
 
 When you configure multi-geo, consider taking the opportunity to consolidate your on-premises infrastructure while migrating to Microsoft 365. For example, if you have on-premises farms in Singapore and Malaysia, then you can consolidate them to the APC satellite location, provided data residency requirements allow you to do so. 
 
-For more information about edisovery configuration, We recommend that you review [Microsoft 365 Multi-Geo eDiscovery configuration](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)
+For more information about eDiscovery configuration, please review [Microsoft 365 Multi-Geo eDiscovery configuration](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration).
 
 ## Best practices
 
