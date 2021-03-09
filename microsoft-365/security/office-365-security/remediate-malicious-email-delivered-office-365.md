@@ -133,6 +133,6 @@ Open any remediation item to view details about it, including its name, creation
 
   In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100k records.
 
-Security team can take upto 50 concurrent manual remediations, however there is no limit set for automated investigation and response actions.
+Security team can take up to 50 concurrent manual remediations; however, there is no limit set for automated investigation and response actions.
 
   Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.
