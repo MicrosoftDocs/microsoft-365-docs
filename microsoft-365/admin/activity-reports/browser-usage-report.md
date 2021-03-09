@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Reports in the admin center - Microsoft browser usage"
  ms.author: waxiaoyu
- author: waxiaoyu
+ author: sarahwxy
  manager: scotv
  audience: Admin
  ms.topic: article
