@@ -29,7 +29,7 @@ description: "Get the Microsoft 365 Admin app and learn to manage your online or
 
 Are you an admin who’s usually on the go? Even if you aren’t, there may be times when you need to manage Microsoft 365 from your phone or tablet. Check out the free [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216), the perfect companion to the web-based Microsoft 365 admin center. You can download the app from the [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8), and from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
-:::image type="content" source="../../media/admin mobile app screenshot.png" alt-text="Screen capture of the admin mobile app's home page, displaying search, Message center, health, and quick links":::
+:::image type="content" source="../../media/adminmobileapp.png" alt-text="Screen capture of the admin mobile app's home page, displaying search, Message center, health, and quick links":::
 
 The admin app has a lot of capabilities which will enable you to manage Microsoft 365 from your mobile or tablet device, when you can’t get to a computer. Here's a list of a few of the tasks you can do from the app:
 
