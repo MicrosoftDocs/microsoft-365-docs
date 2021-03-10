@@ -55,7 +55,7 @@ To add or remove column headings for the activity queue, use the **Customize col
 
 ## Audit log export
 
-Users must be assigned to the *Insider Risk Management* or *Insider Risk Management Auditors* role groups can export all activity in the audit log to a .csv (comma-separated values) file by selecting **Export** on the **Insider risk audit log** page. Depending on the activity, some fields for an activity may not be applicable to the activity and these fields will appear as blank in the exported file.
+Users assigned to the *Insider Risk Management* or *Insider Risk Management Auditors* role groups can export all activity in the audit log to a .csv (comma-separated values) file by selecting **Export** on the **Insider risk audit log** page. Depending on the activity, some fields for an activity may not be applicable to the activity and these fields will appear as blank in the exported file.
 
 The file contains activity information for the following fields:
 
