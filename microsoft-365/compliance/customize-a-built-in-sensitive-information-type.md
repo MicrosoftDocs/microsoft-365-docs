@@ -196,7 +196,7 @@ To upload your rule, you need to do the following.
   
 1. Save it as an .xml file with Unicode encoding. This is important because the rule won't work if the file is saved with a different encoding.
     
-2. [Connect to the Security and Compliance Center via Remote PowerShell.](https://go.microsoft.com/fwlink/?linkid=799771)
+2. [Connect to the Security and Compliance Center via Remote PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     
 3. In the PowerShell, type the following.
 

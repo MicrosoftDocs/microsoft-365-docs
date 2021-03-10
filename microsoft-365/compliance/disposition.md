@@ -47,15 +47,13 @@ Make sure that auditing is enabled at least one day before the first disposition
 
 ## Disposition reviews
 
-When content reaches the end of its retention period, there are several reasons why you might want to review that content to decide whether it can be safely deleted ("disposed"). For example, you might need to:
+When content reaches the end of its retention period, there are several reasons why you might want to review that content and confirm whether it can be permanently deleted ("disposed"). For example, instead of deleting the content, you might need to:
   
 - Suspend the deletion of relevant content in the event of litigation or an audit.
-    
-- Remove content from the disposition list to store in an archive, if that content has research or historical value.
-    
+
 - Assign a different retention period to the content, perhaps because the original retention settings were a temporary or provisional solution.
-    
-- Return the content to clients or transfer it to another organization.
+
+- Move the content from its existing location to an archive location, for example, if that content has research or historical value.
 
 When a disposition review is triggered at the end of the retention period:
   

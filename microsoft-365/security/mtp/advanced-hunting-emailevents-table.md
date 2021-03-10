@@ -33,7 +33,7 @@ ms.technology: m365d
 The `EmailEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving the processing of emails on Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table.
 
 >[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in the security center.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -57,10 +57,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `EmailDirection` | string | Direction of the email relative to your network:  Inbound, Outbound, Intra-org |
 | `DeliveryAction` | string | Delivery action of the email: Delivered, Junked, Blocked, or Replaced |
 | `DeliveryLocation` | string | Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items |
-| `PhishFilterVerdict` | string | Verdict of the email filtering stack on whether the email is phish: Phish or Not Phish |
-| `PhishDetectionMethod` | string | Method used to detect the email as a phish: Malicious URL reputation, Safe Links URL Detonation, Advanced phish filter, General phish filter, Anti-Spoof: Intra-org, Anti-spoof: external domain, Domain impersonation, User impersonation, Brand impersonation |
-| `MalwareFilterVerdict` | string | Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware |
-| `MalwareDetectionMethod` | string | Method used to detect malware in the email: Antimalware engine, File reputation, Safe Attachments |
 | `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | `ThreatNames` | string |Detection name for malware or other threats found |
 | `DetectionMethods` | string | Methods used to detect malware, phishing, or other threats found in the email |
