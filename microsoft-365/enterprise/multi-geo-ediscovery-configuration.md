@@ -17,16 +17,20 @@ description: Learn how to use the Region parameter to configure eDiscovery for u
 
 # Microsoft 365 Multi-Geo eDiscovery configuration
 
-[Advanced eDiscovery capabilities](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) allow a multi-geo eDiscovery administrator to search all of the geos without needing to utilize a "Region" security filter. Data is exported to the Azure instance of the central location of the multi-geo tenant. 
+With [advanced eDiscovery capabilities](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20), a multi-geo eDiscovery manager or administrator can search all geos without needing to use a “Region” compliance security filter. In this case, data is exported to the Azure instance of the multi-geo tenant’s central location. Advanced eDiscovery is recommended for tenants whose central location is not in North America, Europe, or Asia Pacific and who need to perform eDiscovery across satellite geo locations.
 
-Without advanced eDiscovery capabilities, an eDiscovery manager or administrator of a multi-geo tenant will be able to conduct eDiscovery only in the central location of that tenant. To support the ability to conduct eDiscovery for satellite locations, a new compliance security filter parameter named "Region" is available via PowerShell. This parameter can be used by tenants whose central location is in North America, Europe, or Asia Pacific. Advanced eDiscovery is recommended for tenants whose central location is not in North America, Europe, or Asia Pacific and who need to perform eDiscovery across satellite geo locations. 
+Without advanced eDiscovery capabilities, a multi-geo eDiscovery manager or administrator can only conduct eDiscovery in the tenant's central location. To conduct eDiscovery for satellite locations, the eDiscovery manager or administrator must use the “Region” compliance security filter. "Region" is available via PowerShell and can only be used by tenants whose central location is in North America, Europe, or Asia Pacific. 
 
-The Microsoft 365 global administrator must assign eDiscovery Manager permissions to allow others to perform eDiscovery and assign a "Region" parameter in their applicable Compliance Security Filter to specify the region for conducting eDiscovery as satellite location, otherwise no eDiscovery will be carried out for the satellite location.
+To conduct eDiscovery for satellite locations using the “Region” compliance security filter, the Microsoft 365 global administrator must:
+- Assign the eDiscovery manager permission to allow others to conduct eDiscovery
+- Assign a "Region" parameter in the applicable Compliance Security Filter to specify which region is a satellite location for conducting eDiscovery
 
-When the eDiscovery Manager or Administrator role is set for a particular satellite location, the eDiscovery Manager or Administrator will only be able to perform eDiscovery search actions against the SharePoint sites and OneDrive sites located in that satellite location. If an eDiscovery Manager or Administrator attempts to search SharePoint or OneDrive sites outside the specified satellite location, no results will be returned. Also, when the eDiscovery Manager or Administrator for a satellite location triggers an export, data is exported to the Azure instance of that region. This helps organizations stay in compliance by not allowing content to be exported across controlled borders.
+Otherwise, no eDiscovery will be conducted for the satellite location.
+
+Without advanced eDiscovery capabilities, when the eDiscovery manager or administrator role is set for a particular satellite location, the eDiscovery manager or administrator can only conduct eDiscovery for the SharePoint and OneDrive sites located in that satellite location. In this case, if an eDiscovery manager or administrator attempts to search SharePoint or OneDrive sites outside their specified satellite location, no results will be returned. Also, when the eDiscovery manager or administrator for a satellite location triggers an export, data is exported to that region's Azure instance. This helps organizations remain compliant by not allowing content to be exported across controlled borders.
 
 > [!NOTE]
-> If it's necessary for an eDiscovery Manager to search across multiple SharePoint satellite locations, another user account will need to be created for the eDiscovery Manager which specifies the alternate satellite location where the OneDrive or SharePoint sites are located.
+> If it's necessary for an eDiscovery manager or administrator to search across multiple satellite locations, you will need to create another user account for the eDiscovery manager or administrator, which specifies the alternate satellite location where the OneDrive or SharePoint sites are located.
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
