@@ -274,18 +274,18 @@ For these scenarios, using their Office apps, a user with built-in labeling can 
 > [!IMPORTANT]
 > Currently, not all apps on all platforms support dynamic content markings that you can specify for your headers, footers, and watermarks. For apps that don't support this capability, they apply the markings as the original text specified in the label configuration, rather than resolving the variables.
 > 
-> The Azure Information Protection unified labeling client supports dynamic markings. For labeling built in to Office, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+> The Azure Information Protection unified labeling client supports dynamic markings and all listed variables. For labeling built in to Office, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions, and then the following table to identify the variables supported.
 
 When you configure a sensitivity label for content markings, you can use the following variables in the text string for your header, footer, or watermark:
 
 | Variable | Description | Example when label applied |
 | -------- | ----------- | ------- |
 | `${Item.Label}` | Label display name of the label applied <br /><br> Supported by Word, Excel, PowerPoint, and Outlook| **General**|
-| `${Item.Name}` | File name or email subject of the content being labeled <br /><br> Supported by Word, Excel, PowerPoint | **Sales.docx** |
-| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled <br /><br> Supported by Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Display name of the user applying the label <br /><br> Supported by Word, Excel, PowerPoint | **Richard Simone** |
-| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label <br /><br> Supported by Word, Excel, PowerPoint  | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label <br /><br> Supported by Word, Excel, PowerPoint  | **8/10/2020 1:30 PM** |
+| `${Item.Name}` | File name or email subject of the content being labeled <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **Sales.docx** |
+| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Display name of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint  | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint  | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
