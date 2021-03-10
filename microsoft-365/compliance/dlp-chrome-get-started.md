@@ -103,7 +103,7 @@ This is the recommended method.
 Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ``` 
 
-2.	Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-data-loss-preve/echcggldkblhodogklpincgchnpgcdco).
+2.	Navigate to [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 3.	Install the extension using the instructions on the Chrome Web Store page.
 
 ### Deploy using Microsoft Endpoint Manager
