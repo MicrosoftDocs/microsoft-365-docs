@@ -61,10 +61,12 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 Be sure to read the following items before you start searching the audit log.
 
-- You (or another admin) must first turn on audit logging before you can start searching the audit log. To turn it on, click **Turn on auditing** on the **Audit log search** page in the Security & Compliance Center. (If you don't see this link, auditing has already been turned on for your organization.) After you turn it on, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this once. For more information, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+- Audit log search is turned on by default for Microsoft 365 and Office 365 enterprise organizations. This includes organizations with E3/G3 or E5/G5 subscriptions. To verify that audit log search is turned on, you can run the following command in Exchange Online PowerShell:
 
-  > [!NOTE]
-  > We're in the process of turning on auditing by default. Until then, you can turn it on as previously described.
+  ```powershell
+  Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+  ```
+  The value of `True` for the *UnifiedAuditLogIngestionEnabled* property indicates that audit log search is turned on. For more information, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 - You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Note global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
@@ -171,7 +173,7 @@ Here's the process for searching the audit log in Office 365.
 
       Over 100 user and admin activities are logged in the audit log. Click the **Audited activities** tab at the topic of this article to see the descriptions of every activity in each of the different services.
 
-   1. **Start date** and **End date**: The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
+   1. **Start date** and **End date**: The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
 
       > [!TIP]
       > If you're using the maximum date range of 90 days, select the current time for the **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the maximum date range can't start before the date that auditing was turned on.
@@ -214,7 +216,7 @@ The results of an audit log search are displayed under **Results** on the **Audi
 
 The results contain the following information about each event returned by the search:
 
-- **Date**: The date and time (in UTC format) when the event occurred.
+- **Date**: The date and time (in your local time) when the event occurred.
 
 - **IP address**: The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.
 
@@ -672,7 +674,7 @@ The following table lists the activities that can be logged by mailbox audit log
 |Removed permissions from folder|RemoveFolderPermissions|A folder permission was removed. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
 |Sent message|Send|A message was sent, replied to or forwarded. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. For more information, see the "Access to crucial events for investigations" section in [Advanced Audit](advanced-audit.md#access-to-crucial-events-for-investigations).|
 |Sent message using Send As permissions|SendAs|A message was sent using the SendAs permission. This means that another user sent the message as though it came from the mailbox owner.|
-|Sent message using Send On Behalf permissions|SendOnBehalf|A message was sent using the SendOnBehalf permission. This means that another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|
+|Sent message using Send On Behalf permissions|SendOnBehalf|A message was sent using the SendOnBehalf permission. This means that another user sent the message on behalf of the mailbox owner. The message indicates to the recipient whom the message was sent on behalf of and who actually sent the message.|
 |Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox modified an inbox rule in the Outlook client.|
 |Updated message|Update|A message or its properties was changed.|
 |User signed in to mailbox|MailboxLogin|The user signed in to their mailbox.|

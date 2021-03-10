@@ -28,7 +28,7 @@ For this tier of protection, we create a sensitivity label that can be used acro
 
 The highly sensitive tier offers the following additional protections over the baseline tier:
 
-- A sensitivity label for the team that allows you to turn guest sharing on or off and limits access to SharePoint content to web-only for unmanaged devices. This label can also be used to classify and encrypt files.
+- A sensitivity label for the team that allows you to turn guest sharing on or off and blocks access to SharePoint content for unmanaged devices. This label can also be used to classify and encrypt files.
 - A more restrictive default sharing link type
 - Only team owners can create private channels.
 - Access requests for the associated SharePoint site are turned off.
@@ -58,7 +58,7 @@ To create a sensitivity label
 1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
 2. Under **Solutions**, click **Information protection**.
 3. Click **Create a label**.
-4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
+4. Give the label a name. We suggest **Highly sensitive**, but you can choose a different name if that one is already in use.
 5. Add a display name and description, and then click **Next**.
 6. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
 7. On the **Choose protection settings for files and emails** page, select **Encrypt files and emails**, and then click **Next**.
@@ -148,7 +148,7 @@ To configure owners-only site sharing
 2. In the tool bar for the team, click **Files**.
 3. Click the ellipsis, and then click **Open in SharePoint**.
 4. In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
-5. In the Site permissions pane, under **Sharing Settings**, click **Change sharing settings**.
+5. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
 6. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
 7. Set **Allow access requests** to **Off**, and then click **Save**.
 

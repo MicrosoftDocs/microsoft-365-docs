@@ -61,7 +61,7 @@ Before you can successfully run the script in this section, you have to download
     ```powershell
     Import-Module ExchangeOnlineManagement
     $UserCredential = Get-Credential
-    Connect-ExchangeOnline -Credential $UserCredential
+    Connect-ExchangeOnline -Credential $UserCredential -ShowBanner:$false
     Connect-IPPSSession -Credential $UserCredential
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```

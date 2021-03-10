@@ -1,28 +1,32 @@
 ---
-title: "Configure EOP to junk spam in hybrid environments"
-f1.keywords:
-- NOCSH
+title: Configure EOP to junk spam in hybrid environments
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: MSFTTracyP
 manager: chrisda
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to route spam to user Junk Email folders in an Exchange Online Protection hybrid environment."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to route spam to user Junk Email folders in an Exchange Online Protection hybrid environment.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 > [!IMPORTANT]
 > This topic is only for standalone EOP customers in hybrid environments. This topic does not apply to Microsoft 365 customers with Exchange Online mailboxes.

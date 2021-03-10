@@ -1,27 +1,33 @@
 ---
-title: "Manage an isolated SharePoint Online team site"
-f1.keywords:
-- NOCSH
+title: Manage an isolated SharePoint Online team site
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: 
- - Ent_Solutions
- - seo-marvel-apr2020
+  - Ent_Solutions
+  - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: Manage an isolated SharePoint Online team site, add new users and groups, remove users and groups, and create a documents subfolder with custom permissions.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Manage an isolated SharePoint Online team site
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1](office-365-atp.md)
+- SharePoint Online 
 
  **Summary:** Manage your isolated SharePoint Online team site with these procedures.
 
@@ -43,7 +49,7 @@ If you are managing user accounts and groups through Microsoft 365, you can use 
 
 - For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to add the appropriate users to the appropriate access groups.
 
-- For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). To add a user account to an access group with its user principal name (UPN), use the following PowerShell command block:
+- For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module). To add a user account to an access group with its user principal name (UPN), use the following PowerShell command block:
 
 ```powershell
 $userUPN="<UPN of the user account>"
@@ -75,7 +81,7 @@ If you are managing user accounts and groups through Office 365, you can use the
 
 - For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to add the appropriate groups to the appropriate access groups.
 
-- For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+- For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  Then, use the following PowerShell commands:
 
 ```powershell
@@ -100,7 +106,7 @@ If you are managing user accounts and groups through Office 365, you can use the
 
 - For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to remove the appropriate users from the appropriate access groups.
 
-- For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+- For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 To remove a user account from an access group with its UPN, use the following PowerShell command block:
 
 ```powershell
@@ -133,7 +139,7 @@ If you are managing user accounts and groups through Office 365, you can use the
 
 - For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to remove the appropriate groups from the appropriate access groups.
 
-- For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+- For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 To remove a group from an access group using their display names, use the following PowerShell command block:
 
 ```powershell

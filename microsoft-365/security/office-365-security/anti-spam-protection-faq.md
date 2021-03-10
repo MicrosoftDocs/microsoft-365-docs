@@ -1,29 +1,35 @@
 ---
-title: "Anti-spam protection FAQ"
-f1.keywords:
-- NOCSH
+title: Anti-spam protection FAQ
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP)."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Anti-spam protection FAQ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 This topic provides frequently asked questions and answers about anti-malware protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 
@@ -136,7 +142,7 @@ The guidelines presented below are best practices for sending outbound email mes
 
   [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Domains FAQ](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
 
 - **Signing email with DKIM, sign with relaxed canonicalization.**
 

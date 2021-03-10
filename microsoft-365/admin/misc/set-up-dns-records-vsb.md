@@ -19,7 +19,6 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn to verify your domain and create DNS records with Microsoft 365."
 ms.custom: 
-- okr_smb
 - AdminSurgePortfolio
 ---
 

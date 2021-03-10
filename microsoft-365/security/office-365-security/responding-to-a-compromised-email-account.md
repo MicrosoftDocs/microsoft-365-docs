@@ -1,29 +1,35 @@
 ---
-title: "Responding to a Compromised Email Account"
-f1.keywords:
-- NOCSH
+title: Responding to a Compromised Email Account
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.collection:
-- o365_security_incident_response
-- M365-security-compliance
-- m365solution-smb
+ms.collection: 
+  - o365_security_incident_response
+  - M365-security-compliance
+  - m365solution-smb
 ms.custom: 
- - TopSMBIssues
- - seo-marvel-apr2020
-ms.service: O365-seccomp
+  - TopSMBIssues
+  - seo-marvel-apr2020
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 # Responding to a Compromised Email Account
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.
 
@@ -79,7 +85,7 @@ You must do all the following steps to regain access to your account the sooner 
 
 ### Step 1 Reset the user's password
 
-Follow the procedures in [Reset a business password for someone](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
+Follow the procedures in [Reset a business password for someone](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
 
 > [!IMPORTANT]
 >
@@ -93,7 +99,7 @@ Follow the procedures in [Reset a business password for someone](https://docs.mi
 >
 > - Be sure to update app passwords. App passwords aren't automatically revoked when a user account password reset. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
-> - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### Step 2 Remove suspicious email forwarding addresses
 

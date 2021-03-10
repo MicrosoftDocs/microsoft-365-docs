@@ -3,11 +3,11 @@ title: Go to the Action center to view and approve your automated investigation 
 description: Use the Action Center to view details about automated investigation and approve pending actions
 keywords: Action Center, threat protection, investigation, alert, pending, automated, detection
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
+f1.keywords: 
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
-ms.topic: conceptual
+- M365-security-compliance
+- m365initiative-m365-defender
+ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 12/09/2020
+ms.date: 02/01/2021
 ---
 
 # The Action center
@@ -31,10 +31,6 @@ ms.date: 12/09/2020
 **Applies to:**
 - Microsoft 365 Defender
 
-Use the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and resulting verdict, [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) can occur automatically or upon approval by your organization's security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
-
-![Action Center](../../media/air-actioncenter.png)
-
 ## A "single pane of glass" experience
 
 The Action center provides a "single pane of glass" experience for tasks, such as:
@@ -44,32 +40,54 @@ The Action center provides a "single pane of glass" experience for tasks, such a
 
 Your security operations team can operate more effectively and efficiently, because the Action center provides a comprehensive view of Microsoft 365 Defender at work.
 
-## Go to the Action center
+## A new, unified Action center
 
-1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+We are pleased to announce a new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))! 
 
-2. In the navigation pane, choose **Action center**. 
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender":::
 
-3. In the Action center, you'll see two tabs: **Pending** and **History**.
+The improved Action center lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
+- If you were previously using the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), try the new, unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+- If you were using the Action Center in the Microsoft Defender Security Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), try the new, unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+- If you were already using the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), you'll see several improvements in the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 
-    - The **Pending** tab lists investigations that require review and approval by someone in your security operations team to continue. Make sure to review and take action on pending items you see here.
+The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. The Action center provides your security operations team with a "single pane of glass" experience to view and manage remediation actions.  
 
-    - The **History** tab lists past investigations and remediation actions that were taken automatically. You can view data for the past day, week, month, or six months.
+You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
 
-4. To show only the columns you want to see, select **Customize columns**.<br/>![Action Center in Microsoft 365 Defender](../../media/mtp-action-center.png)
-
-5. Select an item in the list to view more details about an investigation. The investigation details view opens.<br/>![Investigation details](../../media/mtp-air-investdetails.png)
-
-    - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
-
-    - If the investigation involves a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
+- [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 
 > [!TIP]
-> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft 365 Defender, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
+> To learn more, see [Requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
 
-## Available actions
+## Using the Action center
 
-As remediation actions are taken, they're listed on the **History** tab in the Action center. Such actions include the following:
+1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+2. In the navigation pane, choose **Action center**. 
+
+When you visit the Action center, you see two tabs: Pending actions and History. The following table summarizes what you'll see on each tab:
+
+|Tab  |Description  |
+|---------|---------|
+|**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as Quarantine file). <p>**TIP**: Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner.       |
+|**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br/>- Remediation actions that were taken on suspicious or malicious email messages, files, or URLs<br/>- Remediation actions that were approved by your security operations team <br/>- Commands that were run and remediation actions that were applied during Live Response sessions<br/>- Remediation actions that were taken by your antivirus protection <p>Provides a way to undo certain actions (see [Undo completed actions](mtp-autoir-actions.md#undo-completed-actions)).        |
+
+You can customize, sort, filter, and export data in the Action center.
+
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="The Action center enables you to sort, filter, and customize your list of actions":::
+
+- Select a column heading to sort items in ascending or descending order.
+- Use the time period filter to view data for the past day, week, 30 days, or 6 months.
+- Choose the columns that you want to view.
+- Specify how many items to include on each page of data.
+- Use filters to view just the items you want to see.
+- Select **Export** to export results to a .csv file.
+
+## Actions tracked in the Action center
+
+All actions, whether they're pending approval or were already taken, are tracked in the Action center. Available actions include the following:
 
 - Collect investigation package 
 - Isolate device (this action can be undone) 
@@ -81,14 +99,11 @@ As remediation actions are taken, they're listed on the **History** tab in the A
 - Run antivirus scan 
 - Stop and quarantine 
 
-> [!NOTE]
-> In addition to remediation actions that are taken automatically, your security operations team can take manual actions to address detected threats. For more information about automatic and manual remediation actions, see [Remediation actions](mtp-remediation-actions.md).
+In addition to remediation actions that are taken automatically as a result of [automated investigations](mtp-autoir.md), the Action center also tracks actions your security team has taken to address detected threats, and actions that were taken as a result of threat protection features in Microsoft 365 Defender. For more information about automatic and manual remediation actions, see [Remediation actions](mtp-remediation-actions.md).
 
-## Action source
+## Viewing action source details
 
-(**NEW!**) As you know, Microsoft 365 Defender brings together automated investigation and response capabilities across multiple services, such as [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). The new and improved Action center now includes an **Action source** column that tells you where each remediation action came from. 
-
-The following table describes possible **Action source** values:
+(**NEW!**) The improved Action center now includes an **Action source** column that tells you where each action came from. The following table describes possible **Action source** values:
 
 | Action source value | Description |
 |:-----|:---|
@@ -103,18 +118,16 @@ The following table describes possible **Action source** values:
 
 ## Required permissions for Action center tasks
 
-To approve or reject pending actions in the Action center, you must have permissions assigned as listed in the following table:
+To perform tasks, such as approving or rejecting pending actions in the Action center, you must have permissions assigned as listed in the following table:
 
 |Remediation action |Required roles and permissions |
 |--|----|
-|Microsoft Defender for Endpoint remediation (devices) |Security Administrator role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- or ---<br/>Active remediation actions role assigned in Microsoft Defender for Endpoint <br/> <br/> To learn more, see the following resources: <br/>- [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Create and manage roles for role-based access control (Microsoft Defender for Endpoint)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Microsoft Defender for Office 365 remediation (Office content and email)  |Security Administrator role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- and --- <br/>Search and Purge role assigned the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT**: If you have the Security Administrator role assigned only in the Security & Compliance Center, you will not be able to access the Action center or Microsoft 365 Defender capabilities. You must have the Security Administrator role assigned in Azure Active Directory or the Microsoft 365 admin center. <br/><br/>To learn more, see the following resources: <br/>- [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint remediation (devices) |**Security Administrator** role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- or ---<br/>**Active remediation actions** role assigned in Microsoft Defender for Endpoint <br/> <br/> To learn more, see the following resources: <br/>- [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Create and manage roles for role-based access control (Microsoft Defender for Endpoint)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Microsoft Defender for Office 365 remediation (Office content and email)  |**Security Administrator** role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- and --- <br/>**Search and Purge** role assigned the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT**: If you have the **Security Administrator** role assigned only in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), you will not be able to access the Action center or Microsoft 365 Defender capabilities. You must have the **Security Administrator** role assigned in Azure Active Directory or the Microsoft 365 admin center. <br/><br/>To learn more, see the following resources: <br/>- [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
-> [!NOTE]
-> Users who have the Global Administrator role assigned in Azure Active Directory can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the Global Administrator role assigned. We recommend using the Security Administrator, Active remediation actions, and Search and Purge roles listed above for Action center permissions.
+> [!TIP]
+> Users who have the **Global Administrator** role assigned in Azure Active Directory can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the **Global Administrator** role assigned. We recommend using the **Security Administrator**, **Active remediation actions**, and **Search and Purge** roles listed in the preceding table for Action center permissions.
 
-## Next steps 
+## Next step 
 
-- [Approve or reject pending actions following an automated investigation](mtp-autoir-actions.md)
-- [View the results of an automated investigation](mtp-autoir-results.md)
-
+- [Review and manage remediation actions](mtp-autoir-actions.md)

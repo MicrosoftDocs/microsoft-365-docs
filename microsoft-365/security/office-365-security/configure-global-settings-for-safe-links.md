@@ -1,27 +1,33 @@
 ---
-title: "Configure global settings for Safe Links settings in Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: Configure global settings for Safe Links settings in Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date:
-ms.service: O365-seccomp
+ms.date: 
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to view and configure global settings (the 'Block the following URLs' list and protection for Office 365 apps) for Safe Links in Microsoft Defender for Office 365."
+search.appverid: 
+  - MET150
+  - MOE150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to view and configure global settings (the 'Block the following URLs' list and protection for Office 365 apps) for Safe Links in Microsoft Defender for Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Configure global settings for Safe Links in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](office-365-atp.md). If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -53,7 +59,7 @@ You can configure the global Safe Links settings in the Security & Compliance Ce
 
   **Notes**:
 
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 - For our recommended values for the global settings for Safe Links, see [Safe Links settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings).

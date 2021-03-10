@@ -35,7 +35,7 @@ highlightedContent:
       url: /learn/m365/
     - title: Get your small business started with Microsoft 365
       itemType: quickstart
-      url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+      url: business-video/index.yml
 
 # productDirectory section (optional)
 productDirectory:
@@ -76,8 +76,8 @@ productDirectory:
       links:
         - url: solutions/collaborate-with-people-outside-your-organization.md
           text: Configure external sharing
-        - url: /sharepoint/plan-intranet
-          text: Plan an intelligent SharePoint intranet
+        - url: /sharepoint/intelligent-internet-overview
+          text: Build an intelligent SharePoint intranet
         - url: /sharepoint/deploy-file-collaboration
           text: File collaboration in SharePoint
         - url: /onedrive/plan-onedrive-enterprise

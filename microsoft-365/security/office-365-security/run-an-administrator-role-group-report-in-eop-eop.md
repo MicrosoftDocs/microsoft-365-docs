@@ -1,25 +1,29 @@
 ---
-title: "Run an administrator role group report in standalone EOP"
-f1.keywords:
-- NOCSH
+title: Run an administrator role group report in standalone EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to run an administrator role group report in standalone Exchange Online Protection (EOP). This report logs when an admin adds members to or removes members from administrator role groups."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to run an administrator role group report in standalone Exchange Online Protection (EOP). This report logs when an admin adds members to or removes members from administrator role groups.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Run an administrator role group report in standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, when an admin adds members to or removes members from administrative role groups, the service logs each occurrence. For more information about role groups in standalone EOP, see [Permissions in standalone EOP](feature-permissions-in-eop.md).
 
@@ -34,7 +38,7 @@ When you run an administrator role group report in the Exchange admin center (EA
 - For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Having problems? Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
+> Having problems? Ask for help in the [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) forum.
 
 ## Use the EAC to run an administrator role group report
 

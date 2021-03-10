@@ -1,25 +1,31 @@
 ---
 title: Switch to EOP from another protection service
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
-ms.custom:
-- seo-marvel-apr2020
-description: "In this article, you'll learn how to switch to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service."
+ms.custom: 
+  - seo-marvel-apr2020
+description: In this article, you'll learn how to switch to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  The purpose of this topic is to help you understand the process for switching to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service, and then to provide you with help resources to get started. There are many spam-filtering solutions, but the process for switching to EOP is similar in most cases.
 

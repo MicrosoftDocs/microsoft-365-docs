@@ -1,27 +1,32 @@
 ---
-title: "Deploy an isolated SharePoint Online team site"
-f1.keywords:
-- NOCSH
+title: Deploy an isolated SharePoint Online team site
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: 
- - Ent_Solutions
- - seo-marvel-apr2020
+  - Ent_Solutions
+  - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Use this step-by-step deployment guide to create and configure an isolated SharePoint Online team site in Microsoft Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Deploy an isolated SharePoint Online team site
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Summary:** Deploy a new isolated SharePoint Online team site with these step-by-step instructions.
 
@@ -103,7 +108,7 @@ If you are managing user accounts and groups through Office 365, you can use the
 
 For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to add the appropriate user accounts and groups to the appropriate access groups.
 
-For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 Next, use the following command block to add an individual user account to an access group:
 

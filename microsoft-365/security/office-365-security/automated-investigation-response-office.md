@@ -1,31 +1,36 @@
 ---
-title: "How automated investigation and response works in Microsoft Defender for Office 365"
-f1.keywords:
+title: How automated investigation and response works in Microsoft Defender for Office 365
+f1.keywords: 
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
+search.appverid: 
 - MET150
 - MOE150
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
-ms.date: 11/05/2020
-description: "See how automated investigation and response capabilities work in Microsoft Defender for Office 365"
+ms.date: 01/29/2021
+description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
 ms.custom: 
 - air
 - seo-marvel-mar2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # How automated investigation and response works in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities in Microsoft Defender for Office 365 can help.
 
@@ -39,7 +44,7 @@ This article describes how AIR works through several examples. When you're ready
 
 ## Example: A user-reported phish message launches an investigation playbook
 
-Suppose that a user in your organization receives an email that they think is a phishing attempt. The user, trained to report such messages, uses the [Report Message add-in](enable-the-report-message-add-in.md) to send it to Microsoft for analysis. The submission is also sent to your system and is visible in Explorer in the **Submissions** view (formerly referred to as the **User-reported** view). In addition, the user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
+Suppose that a user in your organization receives an email that they think is a phishing attempt. The user, trained to report such messages, uses the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) to send it to Microsoft for analysis. The submission is also sent to your system and is visible in Explorer in the **Submissions** view (formerly referred to as the **User-reported** view). In addition, the user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
 
 During the root investigation phase, various aspects of the email are assessed. These aspects include:
 
@@ -88,7 +93,4 @@ For example, recently, an organization set up a way for their security operation
 ## Next steps
 
 - [Get started using AIR](office-365-air.md)
-
-- [Visit the Microsoft 365 Roadmap to see what's planned and releasing soon](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
-- [Learn about automated investigation and response capabilities in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [View pending or completed remediation actions](air-review-approve-pending-completed-actions.md)

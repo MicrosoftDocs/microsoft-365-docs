@@ -21,13 +21,34 @@ ms.custom: seo-marvel-apr2020
 
 # Compare versions of OME
 
-This article compares legacy Office 365 Message Encryption (OME) to the new OME capabilities and Office 365 Advanced Message Encryption. The new capabilities are a merger and newer version of both OME and Information Rights Management (IRM). Unique characteristics of deploying into GCC High are also outlined. The two can coexist in your organization. For information on how the new capabilities work, see [Office 365 Message Encryption (OME)](ome.md).
+> [!IMPORTANT]
+> On February 28, 2021, Microsoft will deprecate support for AD RMS in Exchange Online. If you've deployed a hybrid environment where your Exchange mailboxes are online and you're using IRM with Active Directory RMS on-premises, you'll need to migrate to Azure. Organizations that have deployed into the GCC Moderate environment are also affected. See "Overview of AD RMS deprecation in Exchange Online" in this article for information.
+
+The rest of this article compares legacy Office 365 Message Encryption (OME) to the new OME capabilities and Office 365 Advanced Message Encryption. The new capabilities are a merger and newer version of both OME and Information Rights Management (IRM). Unique characteristics of deploying into GCC High are also outlined. The two can coexist in your organization. For information on how the new capabilities work, see [Office 365 Message Encryption (OME)](ome.md).
 
 This article is part of a larger series of articles about Office 365 Message Encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) and locate the article that best fits your needs.
 
+## Overview of AD RMS deprecation in Exchange Online
+
+Exchange Online includes Information Rights Management (IRM) functionality that provides online and offline protection of email messages and attachments. By default, Exchange Online uses Azure Azure Information Protection. However, your organization may have configured Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS). AD RMS support in Exchange Online is retiring. Instead, Azure Information Protection will replace AD RMS entirely.
+
+Before you begin, review and assess the impact for your organization. If your organization is already using Azure Information Protection to encrypt email in Exchange Online, there is nothing for you to do. If you encrypt your email using Exchange mail flow rules, for example using Office 365 Message Encryption, you won't have to change your secure email. Otherwise, you'll need to prepare for AD RMS deprecation by switching to Azure Information Protection.
+
+### Prepare for AD RMS deprecation
+
+If you've already set up Azure Information Protection but you're not using it, enable the service using Exchange Online PowerShell. On your local computer, using a work or school account that has global administrator permissions in your organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+
+To enable Azure Information Protection, use the Set-IrmConfiguration cmdlet by typing the following command.
+
+```powershell
+Set-IrmConfiguration -AzureRMSLicensingEnabled $true
+```
+
+If your organization has not yet set up Azure Information Protection, you'll need to migrate from AD RMS to Azure Information Protection. For instructions, see [Migrating from AD RMS to Azure Information Protection](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms).
+
 ## Side-by-side comparison of features and capabilities
 
-|           **Situation**           | **Legacy OME**    | **IRM**           | **New OME capabilities** |
+|           **Situation**           | **Legacy OME**    | **IRM in AD RMS**        | **New OME capabilities** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |*Sending an encrypted mail*        |Through Exchange mail flow rules|End-user initiated from Outlook desktop or Outlook on the Web; or through Exchange mail flow rules|End-user initiated from Outlook desktop, Outlook for Mac, or Outlook on the Web; through Exchange mail flow rules (also known as transport rules) and Data Loss Prevention (DLP)|
 |*Rights management template*       |   N/A      |Do Not Forward option and custom templates|Do Not Forward option, Encrypt-Only option, and custom templates|

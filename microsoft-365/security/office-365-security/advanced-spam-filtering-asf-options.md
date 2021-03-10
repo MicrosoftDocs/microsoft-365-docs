@@ -1,29 +1,34 @@
 ---
-title: "ASF settings in EOP"
-f1.keywords:
-- NOCSH
+title: ASF settings in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about the Advanced Spam Filter (ASF) settings that are available in anti-spam policies in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the Advanced Spam Filter (ASF) settings that are available in anti-spam policies in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Advanced Spam Filter (ASF) settings in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > ASF settings that are currently available in anti-spam policies are in the process of being deprecated. We recommend that you don't use these settings in anti-spam policies. The functionality of these ASF settings is being incorporated into other parts of the filtering stack. For more information, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).

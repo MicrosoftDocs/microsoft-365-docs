@@ -3,7 +3,7 @@ title: "Migration phases actions and impacts for the migration from Microsoft Cl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/15/2020
+ms.date: 01/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -22,11 +22,35 @@ description: "Summary: Understand the migration phases actions and impacts of mo
 
 # Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (general)
 
-Tenant migrations from Microsoft Cloud Deutschland to the Germany region of Microsoft's Office 365 services are executed as a set of configured actions for each workload. These actions ensure that critical data and experiences are migrated to the Office 365 services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
+Tenant migrations from Microsoft Cloud Deutschland to the Germany region of Microsoft's Office 365 services are executed as a set of phases and their configured actions for each workload. This figure shows the nine phases of migration to the new German datacenters.
+
+![The nine phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+
+The phases and their actions ensure that critical data and experiences are migrated to the Office 365 services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
 The following sections contain actions and effects for workloads as they progress through various phases of the migration. Review the tables and determine which actions or effects are applicable to your organization. Ensure that you're prepared to execute the steps in the respective phases as required. Failure to complete necessary steps may result in service outage and might delay completion of the migration to the Office 365 services.
 
-## Exchange Online
+## SharePoint Online (Phase 4 of 9)
+
+| Step(s) | Description | Applies to | Impact |
+|:-------|:-----|:-------|:-------|
+| SharePoint and OneDrive are transitioned. | SharePoint and OneDrive are migrated from Microsoft Cloud Deutschland to Office 365 services in this phase. Existing Microsoft Cloud Deutschland URLs are preserved (for example, `contoso.sharepoint.de`). Tokens that were issued by Microsoft Cloud Deutschland or Office 365 services are valid during the transition. | SharePoint customers | - Content will be read-only for two brief periods during migration. During this time, expect a "you can't edit content" banner in SharePoint. <br><br> - The search index won't be preserved, and may take up to 10 days to be rebuilt. <br><br> - SharePoint/OneDrive content will be read-only for two brief periods during migration. Users will see a "you can't edit content" banner briefly during this time. <br><br> - The search index may be unavailable while the index is rebuilt. During this period, search queries might not return complete results. <br><br> - Existing sites are preserved. |
+|||||
+
+Additional considerations:
+
+- Upon completion of the SharePoint Online migration to the German region, data indexes are rebuilt. Features that are dependent on search indexes may be affected while reindexing completes.
+
+- If your organization still uses SharePoint 2010 workflows, they'll no longer function after December 31, 2021. SharePoint 2013 workflows will remain supported, although turned off by default for new tenants starting on November 1, 2020. After migration to the SharePoint Online service is complete, we recommend that you to move to Power Automate or other supported solutions.
+
+- Upon completion of the OneDrive migration to the German region, data indexes are rebuilt. Features that depend on search indexes may be affected while reindexing is in progress.
+
+- Microsoft Cloud Deutschland customers whose SharePoint Online instance is not yet migrated need to stay on SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 or below. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
+
+- Microsoft Cloud Deutschland customers whose SharePoint Online instance is migrated must update SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM to version 16.0.20717.12000 or above. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
+
+
+## Exchange Online (Phase 5 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -49,7 +73,7 @@ Additional considerations:
 
 To find out more about the differences for organizations in migration and after Exchange Online resources are migrated, review the information in [Customer experience during the migration to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition-experience.md).
 
-## Exchange Online Protection
+## Exchange Online Protection (Phase 6 of 9)
 
 Back-end Exchange Online Protection (EOP) features are copied to new Germany region. 
 
@@ -58,32 +82,23 @@ Back-end Exchange Online Protection (EOP) features are copied to new Germany reg
 | Migration of Exchange Online routing and historical message detail. | Exchange Online enables routing from external hosts to Office 365. The external MX records are transitioned to route to the EOP service. Tenant configuration and historical details are migrated. | Exchange Online customers | - Microsoft–managed DNS entries are updated from Office 365 Germany EOP to Office 365 services. <br><br> - Customers should wait for 30 days after EOP dual write for EOP migration. Otherwise, there may be data loss. |
 |||||
 
-## SharePoint Online
-
-| Step(s) | Description | Applies to | Impact |
-|:-------|:-----|:-------|:-------|
-| SharePoint and OneDrive are transitioned. | SharePoint and OneDrive are migrated from Microsoft Cloud Deutschland to Office 365 services in this phase. Existing Microsoft Cloud Deutschland URLs are preserved (for example, `contoso.sharepoint.de`). Tokens that were issued by Microsoft Cloud Deutschland or Office 365 services are valid during the transition. | SharePoint customers | - Content will be read-only for two brief periods during migration. During this time, expect a "you can't edit content" banner in SharePoint. <br><br> - The search index won't be preserved, and may take up to 10 days to be rebuilt. <br><br> - SharePoint/OneDrive content will be read-only for two brief periods during migration. Users will see a "you can't edit content" banner briefly during this time. <br><br> - The search index may be unavailable while the index is rebuilt. During this period, search queries might not return complete results. <br><br> - Existing sites are preserved. |
-|||||
-
-Additional considerations:
-
-- Upon completion of the SharePoint Online migration to the German region, data indexes are rebuilt. Features that are dependent on search indexes may be affected while reindexing completes.
-
-- If your organization still uses SharePoint 2010 workflows, they'll no longer function after December 31, 2021. SharePoint 2013 workflows will remain supported, although turned off by default for new tenants starting on November 1, 2020. After migration to the SharePoint Online service is complete, we recommend that you to move to Power Automate or other supported solutions.
-
-- Upon completion of the OneDrive migration to the German region, data indexes are rebuilt. Features that depend on search indexes may be affected while reindexing is in progress.
-
-- Microsoft Cloud Deutschland customers whose SharePoint Online instance is not yet migrated need to stay on SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 or below. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
-
-- Microsoft Cloud Deutschland customers whose SharePoint Online instance is migrated must update SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM to version 16.0.20717.12000 or above. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
 
 
-## Skype for Business Online
+## Skype for Business Online (Phase 7 of 9)
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
 | Migration of Skype for Business to Teams. | Existing Skype for Business customers are migrated to Office 365 services in Europe and then transitioned to Microsoft Teams in the Germany region of Office 365 services. | Skype for Business customers | - Users won't be able to sign in to Skype for Business on the migration date. Ten days before migration, we'll post to the Admin center to let you know about when the migration will take place, and again when we begin the migration. <br><br> - Policy configuration is migrated. <br><br> - Users will be migrated to Teams and will no longer have Skype for Business after migration. <br><br> - Users must have the Teams desktop client installed. Installation will happen during the 10 days via policy on the Skype for Business infrastructure, but if this fails, users will still need to download the client or connect with a supported browser. <br><br> - Contacts and meetings will be migrated to Teams. <br><br> - Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed. <br><br> - Contacts and existing meetings will continue to function as Skype for Business meetings. |
 |||||
+
+
+## Office Apps (Phase 8 of 9)
+
+| Step(s) | Description | Applies to | Impact |
+|:-------|:-----|:-------|:-------|
+| Clients, Office Online during Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. | This configuration change enables Office clients to update and point to the Office 365 services endpoints. | All Office customers | - Notify users to close _all_ Office apps and then sign back in (or force clients to restart and users to sign in) to enable Office clients to pick up the change. <br><br> - Notify users and help desk staff that users *may* see an Office banner that prompts them to reactivate Office apps within 72 hours of the cutover. <br><br> - All Office applications on personal machines must be closed, and users must sign out then sign in again. In the Yellow activation bar, sign in to reactivate against Office 365 services. <br><br> - Shared machines will require actions that are similar to personal machines, and won't require a special procedure. <br><br> - On mobile devices, users must sign out of apps, close them, and then sign in again. |
+|||||
+
 
 ## Office Services
 

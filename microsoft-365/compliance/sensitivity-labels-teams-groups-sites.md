@@ -74,7 +74,7 @@ Enabling sensitivity labels for containers means that you can now configure prot
     
     When only this scope is selected for the label, the label won't be displayed in Office apps that support sensitivity labels and can't be applied to files and emails. Having this separation of labels can be helpful for both users and administrators, but can also add to the complexity of your label deployment.
     
-    For example, you need to carefully review your [label ordering](sensitivity-labels.md#label-priority-order-matters) because SharePoint detects when a labeled document is uploaded to a labeled site. In this scenario, an audit event and email is automatically generated when the document has a higher priority sensitivity label than the site's label. For more information, see the [Auditing sensitivity label activities](#auditing-sensitivity-label-activities) section on this page. 
+    For example, you need to carefully review your [label ordering](sensitivity-labels.md#label-priority-order-matters) because SharePoint detects when a labeled document is uploaded to a labeled site. In this scenario, an audit event and email are automatically generated when the document has a higher priority sensitivity label than the site's label. For more information, see the [Auditing sensitivity label activities](#auditing-sensitivity-label-activities) section on this page. 
 
 2. Then, on the **Define protection settings for groups and sites** page, select one or both of the available options:
     
@@ -266,21 +266,22 @@ The following apps and services support sensitivity labels configured for sites 
 
   - SharePoint admin center
   - Azure Active Directory portal
+  - Microsoft 365 admin center
   - Microsoft 365 compliance center, Microsoft 365 security center, Security & Compliance Center
 
 - User apps and services:
 
   - SharePoint
   - Teams
-  - Outlook on the web and for Windows, MacOS, iOS, and Android
+  - Outlook on the web and for Windows, macOS, iOS, and Android
   - Forms
   - Stream
+  - Planner 
 
 The following apps and services don't currently support sensitivity labels configured for sites and group settings:
 
 - Admin centers:
 
-  - Microsoft 365 admin center
   - Teams admin center
   - Exchange admin center
 
@@ -288,7 +289,6 @@ The following apps and services don't currently support sensitivity labels confi
 
   - Dynamics 365
   - Yammer
-  - Planner
   - Project
   - Power BI
 

@@ -80,6 +80,8 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
     
     For labels with any of these encryption configurations, the labels aren't displayed to users in Office on the web. Additionally, the new capabilities can't be used with labeled documents that already have these encryption settings. For example, these documents won't be returned in search results, even if they are updated.
 
+- For encrypted documents, printing is not supported.
+
 - For an encrypted document that grants edit permissions to a user, copying can't be blocked in the web versions of the Office apps.
 
 - The Azure Information Protection document tracking site is not supported.
@@ -96,6 +98,10 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
     - Encryption that uses an on-premises key ("hold your own key" or HYOK)
     - Encryption that was applied by using [Double Key Encryption](double-key-encryption.md)
     - Encryption that was applied independently from a label, for example, by directly applying a Rights Management protection template.
+
+- Labels configured for [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) are not supported and display the original language only.
+
+- Screen captures can't be prevented for encrypted documents. For more information, see [Can Rights Management prevent screen captures?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - If you delete a label that's been applied to a document in SharePoint or OneDrive, rather than remove the label from the applicable label policy, the document when downloaded won't be labeled or encrypted. In comparison, if the labeled document is stored outside SharePoint or OneDrive, the document remains encrypted if the label is deleted. Note that although you might delete labels during a testing phase, it's very rare to delete a label in a production environment.
 
@@ -194,7 +200,7 @@ However, you can use both protection solutions together and the behavior is as f
 With this behavior, you can be assured that all Office and PDF files are protected from unauthorized access if they are downloaded, even if they aren't labeled. However, labeled files that are uploaded won't benefit from the new capabilities.
 
 
-## Search for documents by sensitivity label	
+## Search for documents by sensitivity label
 
 Use the managed property **InformationProtectionLabelId** to find all documents in SharePoint or OneDrive that have a specific sensitivity label. Use the following syntax: `InformationProtectionLabelId:<GUID>`
 
@@ -251,3 +257,5 @@ If you have Microsoft 365 Multi-Geo, you must run this command for each of your 
 ## Next steps
 
 After you've enabled sensitivity labels for Office files in SharePoint and OneDrive, consider automatically labeling these files by using auto-labeling policies. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+
+Need to share your labeled and encrypted documents with people outside your organization?  See [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

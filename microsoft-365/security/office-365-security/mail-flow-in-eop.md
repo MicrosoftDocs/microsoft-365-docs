@@ -1,25 +1,31 @@
 ---
-title: "Mail flow in EOP"
-f1.keywords:
-- NOCSH
+title: Mail flow in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
-ms.custom:
-- seo-marvel-apr2020
-description: "Admin can learn about the options for configuring mail flow and routing in Exchange Online Protection (EOP)."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admin can learn about the options for configuring mail flow and routing in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Mail flow in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In Microsoft 365 organizations with Exchange Online mailboxes, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, all messages sent to your organization pass through EOP before your workers see them. You have options about how to route messages that pass through EOP for processing before they are routed to your worker inboxes.
 

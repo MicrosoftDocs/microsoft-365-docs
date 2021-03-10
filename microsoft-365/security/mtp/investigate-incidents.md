@@ -3,24 +3,25 @@ title: Investigate incidents in Microsoft 365 Defender
 description: Analyze incidents related to devices, users, and mailboxes.
 keywords: incident, incidents, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 search.appverid: 
-- MOE150
-- MET150
+  - MOE150
+  - MET150
+ms.technology: m365d
 ---
 
 # Investigate incidents in Microsoft 365 Defender
@@ -68,7 +69,7 @@ You can view all the alerts related to the incident and other information about 
 
 ![Image of the incident alerts page](../../media/incident-alerts.png)
 
-By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time. Clicking on each alert will lead you to the relevant alert page where you can conduct an in-depth investigation of that alert.
+By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time. Clicking on each alert will lead you to the relevant alert page where you can conduct an in-depth investigation of that alert. Learn how to use alert pages and the unified alert queue in [Investigate alerts](investigate-alerts.md)
 
 ## Devices
 

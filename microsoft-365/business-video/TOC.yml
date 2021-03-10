@@ -158,4 +158,6 @@
         - name: Get help or support
           href: get-help-support.md 
         - name: Employee quick setup  
-          href: employee-quick-setup.md    
+          href: employee-quick-setup.md  
+    - name: Switch from Google Workspace
+      href: moveto-microsoft-365/move-from-google-workspace-overview.md  

@@ -1,22 +1,24 @@
 ---
-title: "Detect and remediate the Outlook rules and custom forms injections attacks."
-f1.keywords:
-- NOCSH
+title: Detect and remediate the Outlook rules and custom forms injections attacks.
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
 ms.date: 04/23/2018
 audience: ITPro
 ms.topic: article
-ms.collection:
-- o365_security_incident_response
-- M365-security-compliance
-ms.service: O365-seccomp
+ms.collection: 
+  - o365_security_incident_response
+  - M365-security-compliance
+
 localization_priority: Normal
-search.appverid:
-- MET150
-description: "Learn how to recognize and remediate the Outlook rules and custom forms injections attacks in Office 365"
+search.appverid: 
+  - MET150
+description: Learn how to recognize and remediate the Outlook rules and custom forms injections attacks in Office 365
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
 
@@ -162,7 +164,7 @@ If you find any evidence of either of these attacks, remediation is simple, just
 
 4. Install the most up-to-date versions of Outlook. Remember that the current version of Outlook blocks both types of this attack by default.
 
-5. Once all offline copies of the mailbox have been removed, reset the user's password (use a high-quality one) and follow the steps in [Setup multi-factor authentication for users](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) if MFA has not already been enabled. This ensures that the user's credentials are not exposed via other means (such as phishing or password re-use).
+5. Once all offline copies of the mailbox have been removed, reset the user's password (use a high-quality one) and follow the steps in [Setup multi-factor authentication for users](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) if MFA has not already been enabled. This ensures that the user's credentials are not exposed via other means (such as phishing or password re-use).
 
 ### Using PowerShell
 
@@ -190,7 +192,7 @@ There are two remote PowerShell cmdlets you can use to remove or disable dangero
 
 The Rules and Forms exploits are only used by an attacker after they have stolen or breached one of your user's accounts. So, your first step to preventing the use of these exploits against your organization is to aggressively protect your user accounts. Some of the most common ways that accounts are breached are through phishing or [password spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) attacks.
 
-The best way to protect your user accounts, and especially your administrator accounts, is to [set up multi-factor authentication for users](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication). You should also:
+The best way to protect your user accounts, and especially your administrator accounts, is to [set up multi-factor authentication for users](../../admin/security-and-compliance/set-up-multi-factor-authentication.md). You should also:
 
 - Monitor how your user accounts are [accessed and used](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports). You may not prevent the initial breach, but you will shorten the duration and the impact of the breach by detecting it sooner. You can use these [Office 365 Cloud App Security policies](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) to monitor you accounts and alert on unusual activity:
 

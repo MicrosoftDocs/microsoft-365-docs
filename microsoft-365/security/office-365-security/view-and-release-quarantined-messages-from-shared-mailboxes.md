@@ -3,19 +3,21 @@ title: View and release quarantined messages from shared mailboxes
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer:
-ms.date:
+ms.reviewer: 
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
 ROBOTS: NOINDEX
-description: "Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to."
+description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # View and release quarantined messages from shared mailboxes
@@ -29,7 +31,7 @@ Previously, the ability for users to manage quarantined messages sent to a share
 
 Now, automapping is no longer required for users to manage quarantined messages that were sent to shared mailboxes. It just works. There are two different methods to access quarantined messages that were sent to a shared mailbox:
 
-- If the admin has [enabled end-user spam notifications](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies) in anti-spam policies, any user that has access to the end-user spam notifications in the shared mailbox can click the **Review** button in the notification to go to quarantine in the Security & Compliance Center. Note that this method only allows users to manage quarantined messages that were sent to the shared mailbox. Users can't manage their own quarantine messages in this context.
+- If the admin has [enabled end-user spam notifications](configure-your-spam-filter-policies.md) in anti-spam policies, any user that has access to the end-user spam notifications in the shared mailbox can click the **Review** button in the notification to go to quarantine in the Security & Compliance Center. Note that this method only allows users to manage quarantined messages that were sent to the shared mailbox. Users can't manage their own quarantine messages in this context.
 
 - The user can [go to the quarantine in the Security & Compliance Center](find-and-release-quarantined-messages-as-a-user.md). By default, only messages that were sent to the user are shown. However, the user can change the **Sort results** (the **Message ID button** by default) to **Recipient email address**, enter the shared mailbox email address, and then click **Refresh** to see the quarantined messages that were sent to the shared mailbox.
 

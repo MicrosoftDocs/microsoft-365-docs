@@ -1,26 +1,32 @@
 ---
-title: "Views in Threat Explorer and real-time detections"
-f1.keywords:
-- NOCSH
+title: Views in Threat Explorer and real-time detections
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
+search.appverid: 
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Views in Threat Explorer and real-time detections
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
 ![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
@@ -42,6 +48,9 @@ When you first open Explorer (or the real-time detections report), the default v
 |Microsoft Defender for Office 365 P2 trial|Threat Explorer|7|
 |Microsoft Defender for Office 365 P2 paid|Threat Explorer|30|
 |
+ [!NOTE]
+> We will soon be extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days. This change is being tracked as part of roadmap item no. 70544, and is currently in a roll-out phase. 
+>>>>>>> public
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
 

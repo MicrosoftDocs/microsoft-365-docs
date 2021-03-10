@@ -1,30 +1,35 @@
 ---
 title: View Defender for Office 365 reports in the Reports dashboard
-f1.keywords:
-- CSH
+f1.keywords: 
+  - CSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # View Defender for Office 365 reports in the Reports dashboard in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
@@ -313,6 +318,9 @@ If you click **View details table**, the report provides a near-real-time view o
 
 If you click **Filters** in the details table view, you can filter by the same criteria as in the report view, and also by **Domains** or **Recipients** separated by commas.
 
+> [!NOTE]
+> The **Domains** filter refers to the URL domain listed in the report results. 
+
 To get back to the reports view, click **View report**.
 
 ## Additional reports to view
@@ -342,7 +350,7 @@ In order to view and use the reports described in this article, you need to be a
 
 For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## What if the reports aren't showing data?
 

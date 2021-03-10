@@ -1,30 +1,35 @@
 ---
 title: Threat investigation & response capabilities - Microsoft Defender for Office 365 Plan 2
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
-ms.custom:
-- seo-marvel-apr2020
-description: "Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Threat investigation and response
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies To**
+- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
 
 
 Threat investigation and response capabilities in [Microsoft Defender for Office 365](office-365-atp.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
