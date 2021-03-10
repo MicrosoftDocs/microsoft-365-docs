@@ -50,9 +50,10 @@ The following sections contain actions and effects for workloads as they progres
 ## Opt-In
 
 **Applies to**: All customers with an Office 365 tenant hosted in the Microsoft Cloud Deutschland (MCD)
+
 | Step(s) | Description | Impact |
 |:-------|:-----|:-------|
-| We can't migrate Office 365 tenants hosted in the MCD without consent. | Microsoft gains the right to migrate in one of two ways, which enables Microsoft to orchestrate the transition of data and services to the Office 365 Global services instance. <ol><li>The Office 365 tenant administrator opts-in to the Microsoft-driven migration. </li><li> Customers renew any subscriptions in their MCD Office 365 tenant after May 1, 2020. We'll notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in.</li></ol> | <ul><li>Tenant is marked as consented for migration, and Admin Center displays confirmation. </li><li>Acknowledgment is posted to the Office 365 tenant Message Center. Service configuration continues from Microsoft Cloud Deutschland endpoints. </li><li>The tenant administatror must monitor the Office 365 Message Center for updates on the igration phase status. </li></ul>|
+| We can't migrate Office 365 tenants hosted in the MCD without consent. | Microsoft gains the right to migrate in one of two ways, which enables Microsoft to orchestrate the transition of data and services to the Office 365 Global services instance. <ol><li>The Office 365 tenant administrator opts-in to the Microsoft-driven migration. </li><li> Customers renew any subscriptions in their MCD Office 365 tenant after May 1, 2020. We'll notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in.</li></ol> | <ul><li>Tenant is marked as consented for migration, and Admin Center displays confirmation. </li><li>Acknowledgment is posted to the Office 365 tenant Message Center. Service configuration continues from Microsoft Cloud Deutschland endpoints. </li><li>The tenant administrator must monitor the Office 365 Message Center for updates on the migration phase status. </li></ul>|
 
 ## Subscription (Phase 3)
 
@@ -84,9 +85,9 @@ Additional considerations:
 
 **Applies to:** All customers using Exchange Online
 
-If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. See the [prework advanced migration steps for Exchange](ms-cloud-germany-transition-add-experience.md#Exchange-Online-before-phase-5)
+If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. See the [prework advanced migration steps for Exchange](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
 
-As described in the migration [prework](ms-cloud-germany-transition-add-pre-work.md#exchange-online), **before the migration step phase 5 begins,** Exchange Online hybrid customers need to run the latest version of the Exchange Hybrid Configruation Wizard (HCW) in "Office 365 Germany" mode to prepare the on-premises configuration for the migration to Office 365 global services.
+As described in the migration [prework](ms-cloud-germany-transition-add-pre-work.md#exchange-online), **before the migration step phase 5 begins,** Exchange Online hybrid customers need to run the latest version of the Exchange Hybrid Configuration Wizard (HCW) in "Office 365 Germany" mode to prepare the on-premises configuration for the migration to Office 365 global services.
 
 Upon **completion of the migration phase 5** (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global services. Additional DNS updates may be required if you use custom domains.
 
@@ -174,7 +175,7 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 **Applies to:** All customers using Office desktop applications (Word, Excel, PowerPoint, Outlook, ...)
 
-Office 365 tenants transitioning to the region "Germany" require all users to close, sign out from Office 365 and back in for all Office desktop applications (Word, Excel, PowerPoint, Outlook, etc.) and OneDrive for Business client after the tenant migration has reached phase 9 . Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
+Office 365 tenants transitioning to the region "Germany" require all users to close, sign out from Office 365 and back in for all Office desktop applications (Word, Excel, PowerPoint, Outlook, etc.) and OneDrive for Business client after the tenant migration has reached phase 9. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
