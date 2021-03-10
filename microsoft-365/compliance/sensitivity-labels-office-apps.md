@@ -280,11 +280,11 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 | Variable | Description | Example when label applied |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Label display name of the label applied <br /><br> Supported by Word, Excel, PowerPoint, and Outlook| **General**|
-| `${Item.Name}` | File name or email subject of the content being labeled <br /><br> Labels built in to Office apps: Supported by Word, Excel, PowerPoint | **Sales.docx** |
-| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled <br /><br> Labels built in to Office apps: Supported by Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Display name of the user applying the label <br /><br> Labels built in to Office apps: Supported by Word, Excel, PowerPoint | **Richard Simone** |
-| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label <br /><br> Labels built in to Office apps: Supported by Word, Excel, PowerPoint  | **rsimone\@contoso.com** |
+| `${Item.Label}` | Label display name of the label applied <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint, and Outlook| **General**|
+| `${Item.Name}` | File name or email subject of the content being labeled <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **Sales.docx** |
+| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Display name of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint  | **rsimone\@contoso.com** |
 | `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint  | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
