@@ -44,7 +44,7 @@ Examples:
 
 Microsoft Teams files and some Teams call and meeting recordings that are saved in OneDrive for Business and SharePoint are encrypted by a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo.
 
-For Exchange Online, if you have already assigned Customer Key DEPs to individual mailboxes, the tenant level policy will not override those DEPs. The tenant-level policy will only encrypt mailboxes that are not assigned a mailbox level DEP already.
+For Exchange Online, if you have already assigned Customer Key DEPs to individual mailboxes, the tenant-level policy won't override those DEPs. The tenant-level policy will only encrypt mailboxes that are not assigned a mailbox level DEP already.
 ## Set up Customer Key at the tenant level (public preview)
 
 These steps are similar but not identical to the steps for setting up Customer Key at the application level. You should only use this public preview with test data in test tenants. Do not use this release with production data or in your production environment. If you already have a production deployment of Customer Key, use these steps to set up Customer Key at the tenant level in a test environment.
@@ -270,7 +270,7 @@ To verify that an expiration date is not set for your keys, run the [Get-AzKeyVa
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-An expired key cannot be used by Customer Key and operations attempted with an expired key will fail and possibly result in a service outage. We strongly recommend that keys used with Customer Key do not have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 will not pass Microsoft 365 validation.
+An expired key cannot be used by Customer Key and operations attempted with an expired key will fail and possibly result in a service outage. We strongly recommend that keys used with Customer Key do not have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 won't pass Microsoft 365 validation.
   
 To change an expiration date that has been set to any value other than 12/31/9999, run the [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) cmdlet as follows:
   
