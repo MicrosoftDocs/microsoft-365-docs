@@ -60,10 +60,10 @@ To learn more about the new features, check out [Manage messages in Message cent
 
 ### What's new help pane
 
-We've made improvements to the ability to control what your Microsoft 365 users see when they launch the What's new help pane in the Office desktop apps. You can choose to display or hide features that appear in the What's new help pane, which helps you control what new features you want your end users to focus on.
+We've made improvements to how admins view the "What's new" features to users in the Office apps. You can now see the rich content in the Whats' new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out manage/show-hide-new-features
 
 **Office desktop apps What's New page**
-:::image type="content" source="../media/power-bi-whats-new.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
 
 ## Ignite 2020 (August & September)
 
