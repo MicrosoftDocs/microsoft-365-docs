@@ -2709,6 +2709,16 @@
       "source_path": "microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventory-table",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/supervision-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/communication-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/configure-supervision-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure",
+      "redirect_document_id": false
     }
   ]
 }

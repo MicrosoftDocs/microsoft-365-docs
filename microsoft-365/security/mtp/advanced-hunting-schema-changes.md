@@ -71,7 +71,7 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 ## February 2021
 
-1. In the [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) and [EmailEvents](advanced-hunting-emailevents-table.md) tables, we deprecated the `MalwareFilterVerdict`and `PhishFilterVerdict` columns and replaced them with the `ThreatTypes` column. We also deprecated the `MalwareDetectionMethod` and `PhishDetectionMethod` columns and replaced them with the `DetectionMethods` column. This streamlining allows us to provide more information under the new columns. The mapping is provided below.
+1. In the [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) and [EmailEvents](advanced-hunting-emailevents-table.md) tables, the `MalwareFilterVerdict`and `PhishFilterVerdict` columns have been replaced by the `ThreatTypes` column. The `MalwareDetectionMethod` and `PhishDetectionMethod` columns were also replaced by the `DetectionMethods` column. This streamlining allows us to provide more information under the new columns. The mapping is provided below.
 
 | Table name | Original column name | New column name | Reason for change
 |--|--|--|--|
@@ -81,11 +81,11 @@ Naming changes are automatically applied to queries that are saved in the securi
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Include more threat types |
 
 
-2. In the `EmailAttachmentInfo` and `EmailEvents` tables, we added the column `ThreatNames` to give more information about the email threat. This column contains values like Spam or Phish.
+2. In the `EmailAttachmentInfo` and `EmailEvents` tables, the `ThreatNames` column was added to give more information about the email threat. This column contains values like Spam or Phish.
 
-3. In the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table, we replaced the `DeviceObjectId` column with `AadDeviceId` based on customer feedback.
+3. In the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table, the `DeviceObjectId` column was replaced by the `AadDeviceId` column based on customer feedback.
 
-4. In the [DeviceEvents](advanced-hunting-deviceevents-table.md) table, we updated several ActionType names to better reflect the description of the action. Details can be found below.
+4. In the [DeviceEvents](advanced-hunting-deviceevents-table.md) table, several ActionType names were modified to better reflect the description of the action. Details of the changes can be found below.
 
 | Table name | Original ActionType name | New ActionType name | Reason for change
 |--|--|--|--|
@@ -93,7 +93,7 @@ Naming changes are automatically applied to queries that are saved in the securi
 | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Customer feedback |
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Customer feedback |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Customer feedback |
-| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | Customer feedback |
+
 
 
 
