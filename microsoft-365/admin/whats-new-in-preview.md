@@ -58,6 +58,12 @@ We’ve revamped the Message center to help you discover relevant messages and a
 
 To learn more about the new features, check out [Manage messages in Message center](manage/manage-messages.md).
 
+### What's new features
+
+We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the Whats' new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
+
 ## Ignite 2020 (August & September)
 
 Welcome to Microsoft Ignite - our first online-only Ignite. We hope to see you in one of our sessions: [Microsoft Ignite 2020 Session Catalog](https://myignite.microsoft.com/sessions). Here's just a few of the things we'll be talking about at Ignite.
