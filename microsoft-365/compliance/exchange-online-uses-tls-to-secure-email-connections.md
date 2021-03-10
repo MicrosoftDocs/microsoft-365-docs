@@ -33,7 +33,7 @@ If you want to encrypt the message you need to use an encryption technology that
   
 We recommend using TLS in situations where you want to set up a secure channel of correspondence between Microsoft and your on-premises organization or another organization, such as a partner. Exchange Online always attempts to use TLS first to secure your email but cannot always do this if the other party does not offer TLS security. Keep reading to find out how you can secure all mail to your on-premises servers or important partners by using  *connectors*. 
 
-To provide the best-in-class encryption to our customers, Microsoft has deprecated Transport Layer Security (TLS) versions 1.0 and 1.1 in [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) and [Office 365 GCC](tls-1-2-in-office-365-gcc.md). However, you can continue to use an unencrypted SMPT connection without any TLS. We don't recommend email transmission without any encryption.  
+To provide the best-in-class encryption to our customers, Microsoft has deprecated Transport Layer Security (TLS) versions 1.0 and 1.1 in [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) and [Office 365 GCC](tls-1-2-in-office-365-gcc.md). However, you can continue to use an unencrypted SMTP connection without any TLS. We don't recommend email transmission without any encryption.  
   
 ## How Exchange Online uses TLS between Exchange Online customers
 
