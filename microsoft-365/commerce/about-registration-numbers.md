@@ -39,7 +39,7 @@ For countries where the registration number is optional, you can choose to provi
 [//] The following screenshot shows an example of when the registration number is optional.
 [//] add screenshot
 
-If you don’t have a valid registration number, please see [Registration numbers by country](#registration-numbers-by-country) for details.
+If you don’t have a valid registration number, see [Registration numbers by country](#registration-numbers-by-country) for details.
 
 ## What should I do if I get an under-review notification?  
 
@@ -63,7 +63,7 @@ The following table contains samples of the registration numbers collected for e
 |-|-|-|-|-|-|
 | **Armenia** | INN – Tax identification number<br>VAT number – Also known as a VAT Registration Number. This is the unique number that identifies a taxable person (business) or non-taxable legal entity that is registered for VAT.<br>Public service number |  |  |  |  |
 | **Azerbaijan**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) – Tax Identification number<br>INN – Tax identification number |  |  |  |  |
-| **Belarus**  | UNP – This is a 9 digit number (numeric for organizations, alphanumeric for individuals) that contains a region identifier, a serial per region, and a check digit. |  |  |  |  |
+| **Belarus**  | UNP – This is a nine-digit number (numeric for organizations, alphanumeric for individuals) that contains a region identifier, a serial per region, and a check digit. |  |  |  |  |
 |**Brazil** | [CNPJ](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Brazil-TIN.pdf) – (Cadastro Nacional da Pessoa Jurídica, or National Registry of Legal Entities). This is an identification number issued to Brazilian companies by the Department of Federal Revenue of Brazil  |  |  |  |  |
 | **China** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/China-TIN.pdf) – Tax Identification number |  |  |  |  |
 | **Hungary**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Hungary-TIN.pdf) – Tax Identification number |  |  |  |  |
@@ -71,7 +71,7 @@ The following table contains samples of the registration numbers collected for e
 | **Iraq** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Tax Identification number |  |  |  |  |
 | **Kazakhstan**  | BIN – Bank identification number<br>IIN – Issuer identification number |  |  |  |  |
 | **Kyrgyzstan**  | INN – Tax Identification number |  |  |  |  |
-| **Moldova**  | IDNO – The unique state identification number assigned to the legal entity (aka. Fiscal code).<br>IDNP – Birth personal code (“Numarul de Identificare”) |  |  |  |  |
+| **Moldova**  | IDNO – The unique state identification number assigned to the legal entity (also known as. Fiscal code).<br>IDNP – Birth personal code (“Numarul de Identificare”) |  |  |  |  |
 | **Myanmar** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Tax Identification number |  |  |  |  |
 | **Poland**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – Tax Identification   number<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – The national identification number used in Poland (Polish Powszechny Elektroniczny System Ewidencji Ludności, Universal Electronic System for Registration of the Population) |  |  |  |  |
 | **Russia**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – Tax identification number (Russian “Individualiy Nomer Nalogoplatelshika”) |  |  |  |  |
