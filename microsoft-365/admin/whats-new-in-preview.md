@@ -4,7 +4,6 @@ f1.keywords:
 - CSH
 ms.author: kwekua
 author: kwekua
-audience: Admin
 manager: scotv
 audience: Admin
 ms.topic: overview
