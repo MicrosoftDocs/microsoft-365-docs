@@ -359,11 +359,11 @@ You apply Preservation Lock after the retention policy or retention label policy
 
 Providing your policies for retention don't have a Preservation Lock, you can delete your policies at any time, which effectively turns off the previously applied retention settings. You can also keep the policy, but remove a site for SharePoint or an account for OneDrive, or change the location status to off.
  
-When you do any of these actions, any SharePoint or OneDrive content that's subject to retention from the policy continues to be retained for 30 days to prevent inadvertent data loss. During this time, you can't delete the site and the timer job that periodically cleans up the Preservation Hold library is suspended for these files so you can restore them if necessary.
+When you do any of these actions, any SharePoint or OneDrive content that's subject to retention from the policy continues to be retained for 30 days to prevent inadvertent data loss. During this 30-day grace period, you can't delete the site and the timer job that periodically cleans up the Preservation Hold library is suspended for these files so you can restore them if necessary.
 
 For more information about the Preservation Hold library, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
-You can change the location status back to on during the grace period, and no content will be deleted for that policy.
+Because of the grace period, if you change the location status back to on within 30 days, the policy resumes without any permanent data loss during this time.
 
 ## Auditing retention configuration
 
