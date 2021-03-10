@@ -23,22 +23,22 @@ description: "Summary: Active Directory Federation Services (AD FS) migration st
 # AD FS migration steps for the migration from Microsoft Cloud Deutschland
 
 This configuration change can be applied at any time before phase 4 is starting.
-Once phase 2 is completed the configuration change will work and you are able to sign in to Office 365 Global endpoints such as `https://portal.office.com`. If you are implementing the configuration change before phase 2, the Office 365 Global endpoints will _not yet work_ but the new relying party trust is still part of your ADFS configuration.
+Once phase 2 is completed the configuration change will work and you are able to sign in to Office 365 Global endpoints such as `https://portal.office.com`. If you are implementing the configuration change before phase 2, the Office 365 Global endpoints will _not yet work_ but the new relying party trust is still part of your Active Directory Federation Services (AD FS) configuration.
 
-To migrate your Active Directory Federation Services (AD FS) farm from Microsoft Cloud Deutschland:
+To migrate your AD FS farm from Microsoft Cloud Deutschland:
 
 1. Back up your AD FS settings including FF trust info with [these steps](#backup). Name the backup **Microsoft Cloud Deutschland_Only** to indicate it only has the Microsoft Cloud Deutschland tenant info.
 2. Test the restore using the Microsoft Cloud Deutschland_Only backup, The AD FS farm should continue to operate as Microsoft Cloud Deutschland only.
 
-Once you have completed and tested the ADFS backup, perform the following steps to add a new releying party trust to your ADFS configuration:
+Once you have completed and tested the AD FS backup, perform the following steps to add a new relying party trust to your ADFS configuration:
 
 1. Open the AD FS management console
-2. In the left pane of the ADFS managment console, expand **ADFS**, then **Trust Relationships**, then **Relying Party Trusts**
+2. In the left pane of the ADFS management console, expand **ADFS**, then **Trust Relationships**, then **Relying Party Trusts**
 3. In the right pane, select **Add Relying Party Trust...**
 4. Select **Next** on the **Welcome** page of the Add Relying Party Trust wizard.
 5. On the **Select Data Source** page, select **Import data about the relying party published online or on a local network**. The **Federation metadata address (host name or URL)** value must be set to `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml`. Then, click **Next**.
 6. On the **Select Data Source** page, type the display name such as **Microsoft Office 365 Identity Platform WorldWide**. Then, click **Next**.
-7. On the wizard page **Configure Multi-factor Authentication Now?**, select the appropiate choice according to your authentication requirements. If you stick with the default, select **I don't want to configure multi-factor authentication settings for this relying party trust at this time**. You can change this setting later if you want to.
+7. On the wizard page **Configure Multi-factor Authentication Now?**, select the appropriate choice according to your authentication requirements. If you stick with the default, select **I don't want to configure multi-factor authentication settings for this relying party trust at this time**. You can change this setting later if you want to.
 8. On the **Choose Issuance Authorization Rules**, keep **Permit all users to access this relying party** selected click **Next**
 9. Click **Next** on the **Ready to Add Trust** page to complete the wizard.
 10. Click **Close** on the **Finish** page.
@@ -63,7 +63,7 @@ You can use [AD FS Help](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGen
 4. Safe and execute the PowerShell script.
 5. Verify that two Relying Party trusts are present; one for the Microsoft Cloud Deutschland and one for the Office 365 Global service.
 6. Backup your trusts using [these steps](#backup). Save it with the name **FFAndWorldwide**.
-7. Complete your backend migration and verify that AD FS still works during migration process.
+7. Complete your backend migration and verify that AD FS still works during the migration process.
 
 ## AD FS Disaster Recovery (WID Database)
 
