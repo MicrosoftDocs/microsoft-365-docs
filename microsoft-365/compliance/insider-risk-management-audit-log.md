@@ -18,7 +18,7 @@ ms.collection: m365-security-compliance
 
 The insider risk management audit log enables you to stay informed on the actions that were taken on insider risk management features. This log allows independent review of the actions taken by users assigned to one or more insider risk management role groups. The insider risk management audit log is automatically enabled in your organization and cannot be disabled.
 
-<<<<ADD SCREENSHOT>>>>>
+-----ADD SCREENSHOT-----
 
 The audit log is automatically and immediately updated whenever monitored activities occur and the log retains information about the activity for 180 days (about six months). After 180 days, the data for the activity is permanently deleted from the log.
 
@@ -47,7 +47,7 @@ To view feature activity monitored for insider risk management, navigate to, and
 
 For more information about a logged activity, select the activity to display the activity details pane. This pane includes additional information about the activity.
 
-## Column and filtering
+## Columns and filtering
 
 To make it easier for auditors to review logged activity, filtering is supported in the **Insider risk audit log**. For basic filtering, queue columns are available to add to the view to provide different pivots on the files and messages. You can filter activities by the **Category, Date range,** and **Activity performed by** fields.
 
@@ -59,7 +59,7 @@ Users must be assigned to the *Insider Risk Management* or *Insider Risk Managem
 
 The file contains activity information for the following fields:
 
-- **Activity performed by:** The user name of the user modifying an item value. Users listed here were assigned to one or more of the following role insider risk management role groups: *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Each role group has different permission levels for managing insider risk features.
+- **Activity performed by:** The user name of the user modifying an item value. Users listed here were assigned to one or more of the following role [insider risk management role groups](insider-risk-management-configure#step-1-enable-permissions-for-insider-risk-management): *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Each role group has different permission levels for managing insider risk features.
 - **Activity:** The activity taken on an item. Values are *Viewed, Deleted, Added, Edited policy, Case, User, Alert,* and *Settings.*
 - **Added**: Objects that were added during the activity, such as users, file types, or domains.
 - **Alert volume**: The level of alert volume defined in insider risk management settings.
