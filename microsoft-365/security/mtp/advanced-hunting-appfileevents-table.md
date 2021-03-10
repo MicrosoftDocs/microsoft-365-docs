@@ -68,7 +68,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AdditionalFields` | string | Additional information about the entity or event |
 
 >[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in the security center.
 
 
 ## Related topics
