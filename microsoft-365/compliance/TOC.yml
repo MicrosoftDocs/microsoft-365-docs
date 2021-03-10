@@ -54,6 +54,8 @@
           href: insider-risk-management-alerts.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
+        - name: Review activities with the insider risk audit log
+          href: insider-risk-management-audit-log.md
         - name: Review data with the insider risk content explorer
           href: insider-risk-management-content-explorer.md
         - name: Manage the workflow with the Users dashboard
