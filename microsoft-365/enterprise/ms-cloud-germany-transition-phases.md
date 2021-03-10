@@ -50,6 +50,7 @@ The following sections contain actions and effects for workloads as they progres
 ## Opt-In
 
 **Applies to**: All customers with an Office 365 tenant hosted in the Microsoft Cloud Deutschland (MCD)
+
 | Step(s) | Description | Impact |
 |:-------|:-----|:-------|
 | We can't migrate Office 365 tenants hosted in the MCD without consent. | Microsoft gains the right to migrate in one of two ways, which enables Microsoft to orchestrate the transition of data and services to the Office 365 Global services instance. <ol><li>The Office 365 tenant administrator opts-in to the Microsoft-driven migration. </li><li> Customers renew any subscriptions in their MCD Office 365 tenant after May 1, 2020. We'll notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in.</li></ol> | <ul><li>Tenant is marked as consented for migration, and Admin Center displays confirmation. </li><li>Acknowledgment is posted to the Office 365 tenant Message Center. Service configuration continues from Microsoft Cloud Deutschland endpoints. </li><li>The tenant administatror must monitor the Office 365 Message Center for updates on the igration phase status. </li></ul>|
@@ -84,7 +85,7 @@ Additional considerations:
 
 **Applies to:** All customers using Exchange Online
 
-If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. See the [prework advanced migration steps for Exchange](ms-cloud-germany-transition-add-experience.md#Exchange-Online-before-phase-5)
+If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. See the [prework advanced migration steps for Exchange](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
 
 As described in the migration [prework](ms-cloud-germany-transition-add-pre-work.md#exchange-online), **before the migration step phase 5 begins,** Exchange Online hybrid customers need to run the latest version of the Exchange Hybrid Configruation Wizard (HCW) in "Office 365 Germany" mode to prepare the on-premises configuration for the migration to Office 365 global services.
 
