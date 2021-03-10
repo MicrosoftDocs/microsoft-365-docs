@@ -81,7 +81,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Under review                     | Under review                 | Under review         | Under review           | Under review               |
+|[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | 2010+                     | 16.42+                 | 2.42+         | 16.0.13328+           | Under review               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rolling out: 2101+                        | 16.43+ <sup>\*</sup>                    | Under review            | Under review                | Yes                |
@@ -272,7 +272,7 @@ For these scenarios, using their Office apps, a user with built-in labeling can 
 ### Dynamic markings with variables
 
 > [!IMPORTANT]
-> Currently, not all apps on all platforms support dynamic content markings that you can specify for your headers, footers, and watermarks. For apps that don't support this capability, they  apply the markings as the original text specified in the label configuration, rather than resolving the variables.
+> Currently, not all apps on all platforms support dynamic content markings that you can specify for your headers, footers, and watermarks. For apps that don't support this capability, they apply the markings as the original text specified in the label configuration, rather than resolving the variables.
 > 
 > The Azure Information Protection unified labeling client supports dynamic markings. For labeling built in to Office, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
 
@@ -280,12 +280,12 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 | Variable | Description | Example when label applied |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Label display name of the label applied| **General**|
-| `${Item.Name}` | File name or email subject of the content being labeled | **Sales.docx** |
-| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Display name of the user applying the label| **Richard Simone** |
-| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | Label display name of the label applied <br /> Supported by Word, Excel, PowerPoint, and Outlook| **General**|
+| `${Item.Name}` | File name or email subject of the content being labeled <br /> Supported by Word, Excel, PowerPoint | **Sales.docx** |
+| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled <br /> Supported by Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Display name of the user applying the label <br /> Supported by Word, Excel, PowerPoint | **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label <br /> Supported by Word, Excel, PowerPoint  | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label <br /> Supported by Word, Excel, PowerPoint  | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
@@ -293,9 +293,6 @@ When you configure a sensitivity label for content markings, you can use the fol
 #### Setting different visual markings for Word, Excel, PowerPoint, and Outlook
 
 As an additional variable, you can configure visual markings per Office application type by using an "If.App" variable statement in the text string, and identify the application type by using the values **Word**, **Excel**, **PowerPoint**, or **Outlook**. You can also abbreviate these values, which is necessary if you want to specify more than one in the same If.App statement.
-
-> [!NOTE]
-> For completeness, instructions for Outlook are included, although currently supported only by the Azure Information Protection unified labeling client.
 
 Use the following syntax:
 
