@@ -54,8 +54,6 @@ You can configure any of the following locations to be satellite locations where
 
 When you configure multi-geo, consider taking the opportunity to consolidate your on-premises infrastructure while migrating to Microsoft 365. For example, if you have on-premises farms in Singapore and Malaysia, then you can consolidate them to the APC satellite location, provided data residency requirements allow you to do so. 
 
-For more information about eDiscovery configuration, please review [Microsoft 365 Multi-Geo eDiscovery configuration](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration).
-
 ## Best practices
 
 We recommend that you create a test user in Microsoft 365 to do some initial testing. We’ll walk through some testing and verification steps with this user before you proceed to onboard production users into Microsoft 365 Multi-Geo.
@@ -77,3 +75,7 @@ For details about the Teams experience in a Microsoft 365 Multi-Geo tenancy, see
 To get started configuring Microsoft 365 Multi-Geo, see [Configure Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md).
 
 Once you've completed the configuration, remember to [migrate your users' OneDrive libraries](move-onedrive-between-geo-locations.md) as needed to get your users working from their preferred data locations.
+
+## Related topics
+
+[Microsoft 365 Multi-Geo eDiscovery configuration](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)
