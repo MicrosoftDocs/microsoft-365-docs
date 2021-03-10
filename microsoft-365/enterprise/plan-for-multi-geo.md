@@ -75,3 +75,7 @@ For details about the Teams experience in a Microsoft 365 Multi-Geo tenancy, see
 To get started configuring Microsoft 365 Multi-Geo, see [Configure Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md).
 
 Once you've completed the configuration, remember to [migrate your users' OneDrive libraries](move-onedrive-between-geo-locations.md) as needed to get your users working from their preferred data locations.
+
+## Related topics
+
+[Microsoft 365 Multi-Geo eDiscovery configuration](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)
