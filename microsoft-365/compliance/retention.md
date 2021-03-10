@@ -25,6 +25,11 @@ description: Learn about retention policies and retention labels that help you t
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+> [!NOTE]
+> If you're seeing seeing messages about retention policies in your apps, contact your IT department for information about how they have been configured for you. If these messages are for Teams chat or channel messages, see [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+>
+> The information on this page is for IT administrators who can create retention policies and retention labels for compliance reasons.
+
 For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time—for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 

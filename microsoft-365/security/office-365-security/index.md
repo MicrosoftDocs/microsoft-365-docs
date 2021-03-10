@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 
 localization_priority: Normal
 search.appverid: 

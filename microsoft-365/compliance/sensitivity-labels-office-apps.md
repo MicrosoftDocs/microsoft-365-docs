@@ -123,7 +123,7 @@ Alternatively, disable or remove the Office Add-in, **Azure Information Protecti
 
 When you disable or remove this Office Add-in, the Azure Information Protection client remains installed so that you can continue to label files outside your Office apps. For example, by using File Explorer, or PowerShell.
 
-For information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
+For information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose your Windows labeling solution](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
 
 ## Office file types supported
 
@@ -234,7 +234,7 @@ However, the automatic guest account is not created immediately in this scenario
 
 ### Conditional Access policies
 
-If your organization has implemented [Azure Active Directory Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include Azure Information Protection and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
+If your organization has implemented [Azure Active Directory Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
 
 Without this guest account, they can't open the encrypted document and see an error message. The message text might inform them that their account needs to be added as an external user in the tenant, with the incorrect instruction for this scenario to **Sign out and sign in again with a different Azure Active Directory user account**.
 

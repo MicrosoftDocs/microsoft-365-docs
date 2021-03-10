@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Office 365 Security & Compliance Center or the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization."
+description: "Use the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -56,6 +56,8 @@ Need to find if a user viewed a specific document or purged an item from their m
 - User and admin activity in Microsoft Forms
 
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
+
+- Admin activity in Briefing email and MyAnalytics
 
 ## Requirements to search the audit log
 
@@ -136,9 +138,6 @@ Be sure to read the following items before you start searching the audit log.
 
 ## Search the audit log
 
-> [!NOTE]
-> There was an issue with Azure AD activities being unavailable in the audit log search tool from October 22, 2020 to November 6, 2020. These activites include Azure AD user administration activities, group administration activities, application administration activities, role administration activities, and directory administration activities. The missing events for the period of impact will be available over the next few days, and is expected to take no later than November 20, 2020 to complete. In some cases, customers might notice duplicate event data for events generated between October 26, 2020 and November 05, 2020.
-    
 Here's the process for searching the audit log in Office 365.
 
 [Step 1: Run an audit log search](#step-1-run-an-audit-log-search)
@@ -363,7 +362,7 @@ Click one of the following links to go to a specific table.
         [Power BI activities](#power-bi-activities)
     :::column-end:::
     :::column:::
-        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+        [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
         [Microsoft Teams activities](#microsoft-teams-activities)
@@ -412,6 +411,18 @@ Click one of the following links to go to a specific table.
     :::column-end:::
     :::column:::
         [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [Briefing email activities](#briefing-email-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [MyAnalytics activities](#myanalytics-activities)
+    :::column-end:::
+    :::column:::
+        [Information barriers activities](#information-barriers-activities)
     :::column-end:::
     :::column:::
         [Exchange admin activities](#exchange-admin-audit-log)
@@ -685,75 +696,90 @@ The following table lists the activities that can be logged by mailbox audit log
 
 The following table lists user administration activities that are logged when an admin adds or changes a user account by using the Microsoft 365 admin center or the Azure management portal.
 
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
+
 |Activity|Operation|Description|
 |:-----|:-----|:-----|
-|Added user|Add user|A user account was created.|
-|Changed user license|Change user license|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
-|Changed user password|Change user password|A user changes their password. Self-service password reset has to be enabled (for all or selected users) in your organization to allow users to reset their password. You can also track self-service password reset activity in Azure Active Directory. For more information, see [Reporting options for Azure AD password management](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
-|Deleted user|Delete user|A user account was deleted.|
-|Reset user password|Reset user password|Administrator resets the password for a user.|
-|Set property that forces user to change password|Set force change user password|Administrator set the property that forces a user to change their password the next time the user signs in to Office 365.|
-|Set license properties|Set license properties|Administrator modifies the properties of a licensed assigned to a user.|
-|Updated user|Update user|Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
+|Added user|Add user.|A user account was created.|
+|Changed user license|Change user license.|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
+|Changed user password|Change user password.|A user changes their password. Self-service password reset has to be enabled (for all or selected users) in your organization to allow users to reset their password. You can also track self-service password reset activity in Azure Active Directory. For more information, see [Reporting options for Azure AD password management](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
+|Deleted user|Delete user.|A user account was deleted.|
+|Reset user password|Reset user password.|Administrator resets the password for a user.|
+|Set property that forces user to change password|Set force change user password.|Administrator set the property that forces a user to change their password the next time the user signs in to Office 365.|
+|Set license properties|Set license properties.|Administrator modifies the properties of a licensed assigned to a user.|
+|Updated user|Update user.|Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
 ||||
 
 ### Azure AD group administration activities
 
 The following table lists group administration activities that are logged when an admin or a user creates or changes a Microsoft 365 group or when an admin creates a security group by using the Microsoft 365 admin center or the Azure management portal. For more information about groups in Office 365, see [View, create, and delete Groups in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups).
 
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
+
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Added group|Add group|A group was created.|
-|Added member to group|Add member to group|A member was added to a group.|
-|Deleted group|Delete group|A group was deleted.|
-|Removed member from group|Remove member from group|A member was removed from a group.|
-|Updated group|Update group|A property of a group was changed.|
+|Added group|Add group.|A group was created.|
+|Added member to group|Add member to group.|A member was added to a group.|
+|Deleted group|Delete group.|A group was deleted.|
+|Removed member from group|Remove member from group.|A member was removed from a group.|
+|Updated group|Update group.|A property of a group was changed.|
 ||||
 
 ### Application administration activities
 
 The following table lists application admin activities that are logged when an admin adds or changes an application that's registered in Azure AD. Any application that relies on Azure AD for authentication must be registered in the directory.
 
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
+
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Added delegation entry|Add delegation entry|An authentication permission was created/granted to an application in Azure AD.|
-|Added service principal|Add service principal|An application was registered in Azure AD. An application is represented by a service principal in the directory.|
-|Added credentials to a service principal|Add service principal credentials|Credentials were added to a service principal in Azure AD. A service principle represents an application in the directory.|
-|Removed delegation entry|Remove delegation entry|An authentication permission was removed from an application in Azure AD.|
-|Removed a service principal from the directory|Remove service principal|An application was deleted/unregistered from Azure AD. An application is represented by a service principal in the directory.|
-|Removed credentials from a service principal|Remove service principal credentials|Credentials were removed from a service principal in Azure AD. A service principle represents an application in the directory.|
-|Set delegation entry|Set delegation entry|An authentication permission was updated for an application in Azure AD.|
+|Added delegation entry|Add delegation entry.|An authentication permission was created/granted to an application in Azure AD.|
+|Added service principal|Add service principal.|An application was registered in Azure AD. An application is represented by a service principal in the directory.|
+|Added credentials to a service principal|Add service principal credentials.|Credentials were added to a service principal in Azure AD. A service principle represents an application in the directory.|
+|Removed delegation entry|Remove delegation entry.|An authentication permission was removed from an application in Azure AD.|
+|Removed a service principal from the directory|Remove service principal.|An application was deleted/unregistered from Azure AD. An application is represented by a service principal in the directory.|
+|Removed credentials from a service principal|Remove service principal credentials.|Credentials were removed from a service principal in Azure AD. A service principle represents an application in the directory.|
+|Set delegation entry|Set delegation entry.|An authentication permission was updated for an application in Azure AD.|
 ||||
 
 ### Role administration activities
 
 The following table lists Azure AD role administration activities that are logged when an admin manages admin roles in the Microsoft 365 admin center or in the Azure management portal.
 
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
+
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Add member to Role|Add role member to role|Added a user to an admin role in Microsoft 365.|
-|Removed a user from a directory role|Remove role member from role|Removed a user to from an admin role in Microsoft 365.|
-|Set company contact information|Set company contact information|Updated the company-level contact preferences for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about services.|
+|Add member to Role|Add member to role.|Added a user to an admin role in Microsoft 365.|
+|Removed a user from a directory role|Remove member from role.|Removed a user to from an admin role in Microsoft 365.|
+|Set company contact information|Set company contact information.|Updated the company-level contact preferences for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about services.|
 ||||
 
 ### Directory administration activities
 
 The following table lists Azure AD directory and domain-related activities that are logged when an administrator manages their organization in the Microsoft 365 admin center or in the Azure management portal.
 
+> [!NOTE]
+> The operation names listed in the the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
+
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Added domain to company|Add domain to company|Added a domain to your organization.|
-|Added a partner to the directory|Add partner to company|Added a partner (delegated administrator) to your organization.|
-|Removed domain from company|Remove domain from company|Removed a domain from your organization.|
-|Removed a partner from the directory|Remove partner from company|Removed a partner (delegated administrator) from your organization.|
-|Set company information|Set company information|Updated the company information for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about Microsoft 365 services.|
-|Set domain authentication|Set domain authentication|Changed the domain authentication setting for your organization.|
-|Updated the federation settings for a domain|Set federation settings on domain|Changed the federation (external sharing) settings for your organization.|
-|Set password policy|Set password policy|Changed the length and character constraints for user passwords in your organization.|
-|Turned on Azure AD sync|Set DirSyncEnabled flag on company|Set the property that enables a directory for Azure AD Sync.|
-|Updated domain|Update domain|Updated the settings of a domain in your organization.|
-|Verified domain|Verify domain|Verified that your organization is the owner of a domain.|
-|Verified email verified domain|Verify email verified domain|Used email verification to verify that your organization is the owner of a domain.|
+|Added domain to company|Add domain to company.|Added a domain to your organization.|
+|Added a partner to the directory|Add partner to company.|Added a partner (delegated administrator) to your organization.|
+|Removed domain from company|Remove domain from company.|Removed a domain from your organization.|
+|Removed a partner from the directory|Remove partner from company.|Removed a partner (delegated administrator) from your organization.|
+|Set company information|Set company information.|Updated the company information for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about Microsoft 365 services.|
+|Set domain authentication|Set domain authentication.|Changed the domain authentication setting for your organization.|
+|Updated the federation settings for a domain|Set federation settings on domain.|Changed the federation (external sharing) settings for your organization.|
+|Set password policy|Set password policy.|Changed the length and character constraints for user passwords in your organization.|
+|Turned on Azure AD sync|Set DirSyncEnabled flag.|Set the property that enables a directory for Azure AD Sync.|
+|Updated domain|Update domain.|Updated the settings of a domain in your organization.|
+|Verified domain|Verify domain.|Verified that your organization is the owner of a domain.|
+|Verified email verified domain|Verify email verified domain.|Used email verification to verify that your organization is the owner of a domain.|
 ||||
 
 ### eDiscovery activities
@@ -785,7 +811,7 @@ You can search the audit log for activities in Power BI. For information about P
 
 Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
-### Microsoft Workplace Analytics activities
+### Workplace Analytics activities
 
 Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
@@ -964,6 +990,42 @@ The following table lists events that result from labeling activities for ShareP
 | Updated settings for a retention policy | SetRetentionComplianceRule | Administrator changed the retention settings for an existing retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlet. |
 | Updated retention label |SetComplianceTag  | Administrator updated an existing retention label.|
 | Updated retention policy |SetRetentionCompliancePolicy |Administrator updated an existing a retention policy. Updates that trigger this event include adding or excluding content locations that the retention policy is applied to.|
+||||
+
+### Briefing email activities
+
+The following table lists the activities in Briefing email that are logged in the Office 365 audit log. For more information about Briefing email, see:
+
+- [Overview of Briefing email](https://docs.microsoft.com/Briefing/be-overview)
+
+- [Configure Briefing email](https://docs.microsoft.com/Briefing/be-admin)
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
+|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
+||||
+
+### MyAnalytics activities
+
+The following table lists the activities in MyAnalytics that are logged in the Office 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
+|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
+||||
+
+### Information barriers activities
+
+The following table lists the activities in information barriers that are logged in the Office 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
+
+|**Friendly name**|**Operation**|**Description**|
+|:----------------|:------------|:--------------|
+| Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
+| Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
+| Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
+||||
 
 ### Exchange admin audit log
 
