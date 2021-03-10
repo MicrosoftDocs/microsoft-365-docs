@@ -194,11 +194,11 @@ For eligible customers and users that are assigned the appropriate license, ther
 
 **When will the new 10-year audit log retention add-on license be available?**
 
-The new 10-year audit log retention add-on will be available for purchase by customers with E5 subscriptions in early 2021.
+The new 10-year audit log retention add-on is now available for purchase by customers with E5 subscriptions.
 
-**What happens to my organization's audit log data if I create 10-year audit log retention policy the feature is released to general availability but before the required add-on license is available in early 2021?**
+**What happens to my organization's audit log data if I created a 10-year audit log retention policy when the feature was released to general availability but before the required add-on license was made available in February 2021?**
 
-Any audit log data covered by a 10-year audit log retention policy that you create after general availability will be retained for 10 years. When the 10-year audit log retention add-on license is available in early 2021, you will need to purchase add-on licenses for users who's audit data is being retained by an existing 10-year audit retention policy. Also, once the add-on license is available in early 2021, the appropriate licensing will be enforced when you create new 10-year audit log retention policies.
+Any audit log data covered by a 10-year audit log retention policy that you created after general availability will be retained for 10 years. When the 10-year audit log retention add-on license is available in early 2021, you will need to purchase add-on licenses for users who's audit data is being retained by an existing 10-year audit retention policy.
 
 **Are the new events in Advanced Audit available in the Office 365 Management Activity API?**
 
