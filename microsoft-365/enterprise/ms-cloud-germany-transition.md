@@ -58,11 +58,11 @@ Office 365 Video is being retired on March 1, 2021. If you choose to migrate you
 
 ## How is the migration organized?
 
-This figure represents the various components of Office 365 and Dynamics 365 in the migration to the new German datacenters.
+This figure shows the nine phases of migration to the new German datacenters.
 
-![Components of Office 365 and Dynamics 365 in the migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![The nine phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
-Migration is executed in phases that all start when you [opt-in for migration](https://aka.ms/office365germanymoveoptin). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
+These phases start when you [opt-in for migration](https://aka.ms/office365germanymoveoptin). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
 
 Migration does not immediately begin when opt-in occurs. Your organization is added to the list of tenants that are scheduled for later migration. You can begin the pre-work phases now as these are critical to ensure successful migration and usage upon completion:
 
@@ -277,6 +277,52 @@ If you have questions, you can contact us or your partner:
 - For Azure, you can submit [new support requests](https://portal.microsoftazure.de/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) in the Azure portal.
 - For Office 365, you may submit questions using the &quot;Need Help?&quot; link of the [Microsoft 365 admin center](https://portal.office.de/).
 - If you are Dynamics 365 Customer Engagement and Power BI customer and also have Office 365, you may submit questions using the &quot;Need Help?&quot; link of the [Microsoft 365 admin center](https://portal.office.de/). Dynamics 365 Customer Engagement support options are located [here](https://docs.microsoft.com/dynamics365/get-started/support/). Power BI support options are located [here](https://powerbi.microsoft.com/support/).
+
+### My customer already has a M365 tenant in the global Microsoft cloud in addition to a Microsoft Cloud Deutschland tenant. Can these two tenants be merged into one as part of the migration?
+
+No, there is no tenant merge capability. Tenants will remain separate and unique as every tenant has its own namespace and unique ID. Microsoft will migrate a Microsoft Cloud Deutschland tenant to the global cloud if desired or else the customer can cancel and abandon it.
+
+
+### What actions are required to be done by most end users as part of the migration?
+The migration is designed to have minimal impact to end users/customers.
+- Ensure that Office applications are running latest available versions. 
+- Customers using Skype for Business will transition to Teams as part of the migration and may need to [download and install Teams](https://docs.microsoft.com/deployoffice/teams-install) on devices.
+- End users may need to log out of the Office applications and log back in once the migration is complete. 
+- Customers running the OneDrive Sync client need to log out of their workstation and log in again to allow OneDrive Sync client to log in to the global Azure Active Directory service.
+- Be aware of new global URLs once migration is complete, notably Outlook Web Access (example: use outlook.office365.com). SharePoint Online clients will continue to successfully connect to the MCD namespace using the existing URL (example: contoso.sharepoint.de).
+
+
+### Which customers are affected by the Azure Active Directory migration? 
+
+All customers of Office365 depend on Azure Active Directory to authenticate and store critical service components needed for operation of Microsoft hosted services. 
+
+
+### What are the impacts of the Azure Active Directory Migration?
+
+The initial migration of Azure Active Directory in the early phase has no impact to the customer experience. After the final migration stage all services for the customer tenant are fully in the global service. After this final stage the Azure Active Directory service in Microsoft Cloud Deutschland may no longer accept authorization requests or provide access tokens to Office services.
+
+
+### What does it mean to ensure network connectivity to [Office 365 services URLs and IP addresses](https://aka.ms/o365urls)?
+
+This article describes the necessary URLs and IP addresses required for proper function of the global service to ensure a good customer experience. In relatively rare cases, some customers attempt to configure network perimeter security in such a way to minimize traffic flows and have restricted access to services to those only as part of the Microsoft Cloud Deutschland service IP ranges.
+
+
+### How do I manage the DNS changes for Exchange Online so mail will continue to flow?
+
+Microsoft-managed IP ranges and DNS zones are transitioned during and as part of the migration to the global service. 
+
+Customer-managed DNS zones such as custom domain MX records are the responsibility of the customer, however, to simplify this migration the customer managed MX record points to an Office 365 service endpoint in the office.de zone and Microsoft manages the migration of this service endpoint automatically.
+
+
+### How do I manage the DNS changes for Skype for Business? 
+ 
+All Skype For Business customers in will transition to Microsoft Teams. The transition of customer Skype DNS zones is not required in the migration to Teams. Customers will be able to sign-into Teams immediately with all functionality after migration.
+ 
+
+### Will Outlook for iOS and Android work after the migration? 
+
+Yes. Microsoft’s recommendation is all customers run the latest available versions of Office clients including Outlook for iOS and Android clients. Upon completion of the migration to the Office 365 global service, all Office clients will need to log out and log back in to obtain a new Azure Active Directory access token from the global service. 
+
 
 
 ## Next step

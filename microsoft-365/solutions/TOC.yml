@@ -93,6 +93,24 @@
         href: information-protection-deploy-monitor-respond.md
 - name: Workload solutions and scenarios
   items: 
+    - name: Overview
+      href: workload-solutions-scenarios-overview.md
+
+    - name: Tenant management
+      items:
+      - name: Overview
+        href: tenant-management-overview.md
+      - name: Step 1. Your tenants
+        href: tenant-management-tenants.md
+      - name: Step 2. Optimal networking
+        href: tenant-management-networking.md
+      - name: Step 3. Identity
+        href: tenant-management-identity.md
+      - name: Step 4. Migration
+        href: tenant-management-migration.md
+      - name: Step 5. Device and app management
+        href: tenant-management-device-management.md
+
     - name: Teamwork and collaboration
       items:
       - name: Teams architecture posters
@@ -155,8 +173,8 @@
 
       - name: File collaboration in SharePoint with Microsoft 365
         href: https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
-      - name: Plan an intelligent SharePoint intranet
-        href: https://docs.microsoft.com/sharepoint/intranet-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+      - name: Build an intelligent SharePoint intranet
+        href: https://docs.microsoft.com/sharepoint/intelligent-internet-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
       - name: OneDrive Guide for enterprises
         href: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
 

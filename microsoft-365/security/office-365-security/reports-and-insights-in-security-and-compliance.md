@@ -1,29 +1,35 @@
 ---
 title: Smart reports, insights - Microsoft 365 Security & Compliance Center
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
 author: denisebmsft
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection: 
-- M365-security-compliance
+  - M365-security-compliance
 description: Learn about the smart reports and insights available in the Security & Compliance Center, and how to use them to view and explore data and take quick actions.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Smart reports and insights in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 If you are part of your organization's Microsoft for 365 for business security team and have the necessary [permissions assigned in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md), you can access a variety of reports, including smart reports and insights. Read this article to get an overview of these reports and insights, and where to go to learn more about specific reports.
 
@@ -50,7 +56,7 @@ A wide variety of reports are available in the Security & Compliance Center. (Go
 |**Threat explorer** (also referred to as Explorer) or **Real-time detections** <p> Suspected malware detected in email and files in Microsoft 365|In the Security & Compliance Center, go to **Threat management** \> **Explorer** or **Real-time detections**<br> |[Threat Explorer (or real-time detections)](threat-explorer.md)|
 |**Defender for Office 365 and email security reports** <p> Email security and threat protection reports (including malware, spam, phishing, and spoofing reports)|In the Security & Compliance Center, go to **Reports** \> **Dashboard**|[View reports for Defender for Office 365](view-reports-for-atp.md) <p> [View email security reports in the Security & Compliance Center](view-email-security-reports.md)|
 |**Mail flow** <p> Information about sent and received email messages, recent alerts, top senders and recipients, email forwarding reports, and more|In the Security & Compliance Center, go to **Mail flow** \> **Dashboard** and **Reports** \> **Dashboard**|[Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md) <p> [View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)|
-|**GDPR compliance** <p> Information about GDPR compliance, including links to data subjects, label trends, and active & closed cases|In the Security & Compliance Center, go to **Data privacy** \> **GDPR dashboard**|[Office 365 Information Protection for GDPR](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
+|**GDPR compliance** <p> Information about GDPR compliance, including links to data subjects, label trends, and active & closed cases|In the Security & Compliance Center, go to **Data privacy** \> **GDPR dashboard**|[General Data Protection Regulation Summary](https://docs.microsoft.com/compliance/regulatory/gdpr)|
 |**Audit log** <p> Information about Microsoft 365 activities, users, files or folders, and more|In the Security & Compliance Center, go to **Search & investigation** \> **Audit log search**|[Search the audit log in the Security & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Compliance reports** <p> FedRAMP reports, governance, risk and compliance reports, ISO information security management reports, and Service Organization Controls audit and assessment reports|In the Security & Compliance Center, go to **Service assurance** \> **Compliance reports**|[Plan for security & compliance in Office 365](../../compliance/plan-for-security-and-compliance.md)|
 |

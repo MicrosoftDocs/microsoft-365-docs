@@ -3,38 +3,51 @@ title: What's new in Microsoft Defender for Office 365
 description: Learn about the new features and functionality available in the latest release of Microsoft Defender for Office 365.
 keywords: what's new in Office 365 atp, ga, generally available, capabilities, available, new
 search.appverid: met150
-ms.service: O365-seccomp
+
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 01/12/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # What's new in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-**Applies to:**
-
-- [Microsoft Defender for Office 365](office-365-atp.md)
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 This article lists new features in the latest release of Microsoft Defender for Office 365. Features that are currently in preview are denoted with **(preview)**.
 
 > [!TIP]
-> Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+> Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
+
+## February/March 2021 
+
+- Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer.md)
+- Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
+- Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer.md)
+- New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+
+## December 2020
+
+- [Secure by default in Office 365](secure-by-default.md)
+- Automated investigation improvements to: general alerts for manually triggered email investigations, treat mailbox changes as a separate entity category, remove redundant URL block actions, and create outbound email clusters for user compromised investigations.
 
 ## November 2020
 
@@ -43,14 +56,13 @@ This article lists new features in the latest release of Microsoft Defender for 
 ## September/October 2020
 
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
-- [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
 - [Extended capabilities in Threat Explorer including top targeted users, transport rules, and connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender for Office 365 information in [Threat Explorer](threat-explorer.md) (email was allowed/blocked by tenant/user policy) (Defender for Office 365 Plan 2)
 - Surfacing URL threats in [Threat Explorer](threat-explorer.md#threats-in-urls) (malware, phish, spam, or none) (Defender for Office 365 Plan 2)
 - [Improvements to Hunting Experience Threat Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) with updates around Threats, Additional Actions, Delivery locations and Updated timeline view (Defender for Office 365 Plan 2)
 
 ## July/August 2020
 
-- [Experience improvements to the hunting experience](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- [Experience improvements to the hunting experience](threat-explorer.md#improvements-to-threat-hunting-experience) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 - [Easily apply recommended settings using preset security policies](preset-security-policies.md)
 
 ## March/April 2020

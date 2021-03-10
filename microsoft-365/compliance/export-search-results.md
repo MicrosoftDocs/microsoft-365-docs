@@ -153,9 +153,12 @@ The next step is to download the search results from the Azure Storage location 
   
    2. Click **Browse** to specify the location where you want to download the search result files.
   
-      > [!NOTE]
-      > Due to the high amount of disk activity (reads and writes), you should download search results to a local disk drive; don't download them to a mapped network drive or other network location. 
-  
+      > [!IMPORTANT]
+      >  Due to high network activity during download, you should download search results only to a location on an internal drive on your local computer. For the best download experience, follow these guidelines: <br/>
+      >- Don't download search results to a UNC path, a mapped network drive, an external USB drive, or a synched OneDrive for Business account.<br/>
+      >- Disable anti-virus scanning for the folder that you download the search result to.<br/>
+      >- Download search results to different folders for concurrent download jobs.
+
 6. Click **Start** to download the search results to your computer.
   
     The **eDiscovery Export Tool** displays status information about the export process, including an estimate of the number (and size) of the remaining items to be downloaded. When the export process is complete, you can access the files in the location where they were downloaded.

@@ -23,10 +23,13 @@ description: Enable your users to be productive with Teams, Exchange, SharePoint
 
 To be productive, people need to communicate and collaborate with one another. They need to meet, chat by voice and text, create new content and share information and files, exchange email, and manage calendars and tasks. Microsoft 365 provides cloud-based services for all of these key functions:
 
-- To keep people connected while they work apart, use Microsoft Teams, which provides a common hub of communication for meetings, chats, and file storage for the organization, departments, and for small teams and individuals. 
-- For exchanging email and managing calendars, contacts, and tasks, use Exchange Online and the Outlook client.
-- For storing and collaborating on files, use SharePoint and OneDrive. You can use them within a web browser or within Teams.
-- For creating new content or collaborating on existing content, Microsoft 365 Apps are versions of Word, PowerPoint, Excel, and Outlook that are installed on your local computer and receive ongoing feature and security updates.
+| IT function | Microsoft 365 components | Description |
+|:-------|:-----|:-------|
+| Email services | Exchange Online | Exchange email and manage calendars, contacts, and tasks with the Outlook client. |
+| Organizational chat, voice over IP (VOIP), and team-based collaboration | Microsoft Teams | Keep people connected while they work apart with a common hub of communication for meetings, chats, and file storage for the organization, departments, and for small teams and individuals. |
+| Intranet sites, document collaboration | SharePoint and OneDrive | Store and collaborate on files within a web browser or within Teams. |
+| Desktop and mobile device Office applications | Microsoft 365 Apps | Create new content or collaborate on existing content with versions of Word, PowerPoint, Excel, and Outlook that are installed on your local computer and receive ongoing feature and security updates. |
+||||
 
 ![Use Teams, Outlook, SharePoint, OneDrive, and Microsoft 365 Apps to stay productive](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 

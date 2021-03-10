@@ -25,6 +25,11 @@ description: Learn about retention policies and retention labels that help you t
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+> [!NOTE]
+> If you're seeing seeing messages about retention policies in your apps, contact your IT department for information about how they have been configured for you. If these messages are for Teams chat or channel messages, see [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+>
+> The information on this page is for IT administrators who can create retention policies and retention labels for compliance reasons.
+
 For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time—for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 
@@ -72,7 +77,7 @@ For more detailed information about how retention settings work for different wo
 
 ## Retention policies and retention labels
 
-You can use both retention policies and retention labels with label policies to assign your retention settings to content. 
+To assign your retention settings to content, use **retention policies** and **retention labels with label policies**. You can use just one of these methods, or combine them.
 
 Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level (folder, document, email).
 
@@ -219,7 +224,7 @@ You can then drill down into details by using [content explorer](data-classifica
 
 The Office 365 Security & Compliance Center has the equivalent overview information for retention labels from **Information governance** > **Dashboard**, and more detailed information from **Information governance** > **Label activity explorer**. For more information about monitoring retention labels from this older admin center, see the following documentation:
 - [View the data governance reports](view-the-data-governance-reports.md)
-- [View label usage with label analytics](label-analytics.md)
+- [Get started with data classification](data-classification-overview.md).
 - [View label activity for documents](view-label-activity-for-documents.md)
 
 #### Using Content Search to find all content with a specific retention label
@@ -444,7 +449,7 @@ If you currently use these older features, they will continue to work side-by-si
     
 - [Configuring in place records management](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retention only) 
     
-- [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (deletion only) 
+- [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (deletion only)
     
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
      

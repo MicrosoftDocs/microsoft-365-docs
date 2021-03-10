@@ -3,7 +3,7 @@ title: "Enable the Report Phish add-in"
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -36,7 +36,7 @@ The Report Phishing add-in provides the option to report only phishing messages.
 
 If you're an individual user, you can [enable the Report Phishing add-in for yourself](#get-the-report-phishing-add-in-for-yourself).
 
-If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Phishing add-in for your organization](#get-and-enable-the-report-phishing-add-in-for-your-organization). The Report Phishing Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
+If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Phishing add-in for your organization](#get-and-enable-the-report-phishing-add-in-for-your-organization). The Report Phishing Add-In is now available through [Centralized Deployment](../../admin/manage/centralized-deployment-of-add-ins.md).
 
 ## What do you need to know before you begin?
 
@@ -44,10 +44,11 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
   - Outlook on the web
   - Outlook 2013 SP1 or later
-  - Outlook 2016 for Mac
+  - Outlook 2016 for Mac or later
   - Outlook included with Microsoft 365 apps for Enterprise
+  - Outlook app for iOS and Android
 
-- The Report Phishing add-in is not available for mailboxes in on-premises Exchange organizations.
+- The Report Phishing add-in is not available for shared mailboxes or mailboxes in on-premises Exchange organizations.
 
 - You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
@@ -82,21 +83,23 @@ After the add-in is installed and enabled, you'll see the following icons:
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center, go to the **Settings, integrated Apps & Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, and then click **Deploy Add-In**.
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
+
+2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 
    ![Services and add-ins page in the Microsoft 365 admin center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.
+3. In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.
 
-3. On the next page, click **Choose from the Store**.
+4. On the next page, click **Choose from the Store**.
 
    ![Deploy a new add-in page](../../media/NewAddInScreen2.png)
 
-4. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Phishing** and then click **Add**.
+5. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Phishing** and then click **Add**.
 
-5. In the dialog that appears, review the licensing and privacy information, and then click **Continue**.
+6. In the dialog that appears, review the licensing and privacy information, and then click **Continue**.
 
-6. In the **Configure add-in** page that appears, configure the following settings:
+7. In the **Configure add-in** page that appears, configure the following settings:
 
    - **Assigned users**: Select one of the following values:
 
@@ -112,9 +115,9 @@ After the add-in is installed and enabled, you'll see the following icons:
 
    When you're finished, click **Deploy**.
 
-7. In the **Deploy Report Phishing** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed. After you read the information, click **Next**.
+8. In the **Deploy Report Phishing** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed. After you read the information, click **Next**.
 
-8. On the **Announce add-in** page that appears, review the information, and then click **Close**.
+9. On the **Announce add-in** page that appears, review the information, and then click **Close**.
 
 ## Learn how to use the Report Phishing add-in
 
@@ -130,7 +133,7 @@ People who have the add-in assigned to them will see the following icons:
 
 ## Review or edit settings for the Report Phishing add-in
 
-1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
 
 2. Find and select the **Report Phishing** add-in.
 

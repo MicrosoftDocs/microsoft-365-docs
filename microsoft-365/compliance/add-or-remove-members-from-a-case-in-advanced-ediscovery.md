@@ -32,6 +32,9 @@ You can add or remove members to manage who can access the case. However, before
 
 5. In the list of people or role groups that can be added as members of the case, select the check box next to the names of the people or role groups that you want to add.
 
+   > [!NOTE]
+   > When adding a role group to a case, you can only add the role groups that you are a member of.
+
 6. After you've selected the people or role groups to add as members of the case, click **Add**.
 
 7. In the **Manage this case** flyout page, click **Save** to save the new list of case members.

@@ -1,29 +1,35 @@
 ---
 title: Permissions - Security & Compliance Center
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
-- 'ms.o365.cc.AdminRoleGroups'
-ms.service: O365-seccomp
+f1_keywords: 
+  - 'ms.o365.cc.AdminRoleGroups'
+
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
-description: "Admins can learn about the permissions that are available in the Security & Compliance Center in Microsoft 365."
+search.appverid: 
+  - MOE150
+  - MET150
+description: Admins can learn about the permissions that are available in the Security & Compliance Center in Microsoft 365.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Permissions in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 The Security & Compliance Center lets you grant permissions to people who perform compliance tasks like device management, data loss prevention, eDiscovery, retention, and so on. These people can perform only the tasks that you explicitly grant them access to. To access the Security & Compliance Center, users need to be a global administrator or a member of one or more Security & Compliance Center role groups.
 
@@ -82,23 +88,17 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 |**MailFlow Administrator**|Members can monitor and view mail flow insights and reports in the Security & Compliance Center. Global admins can add ordinary users to this group, but, if the user isn't a member of the Exchange Admin group, the user will not have access to Exchange admin-related tasks.|View-Only Recipients|
 |**Organization Management**<sup>1</sup>|Members can control permissions for accessing features in the Security & Compliance Center, and also manage settings for device management, data loss prevention, reports, and preservation. <p> Users who are not global administrators must be Exchange administrators to see and take action on devices that are managed by Basic Mobility and Security for Microsoft 365 (formerly known as Mobile Device Management or MDM). <p> Global admins are automatically added as members of this role group.|Audit Logs <p> Case Management <p> Compliance Administrator <p> Compliance Search <p> Device Management <p> DLP Compliance Management <p> Hold <p> IB Compliance Management <p> Manage Alerts <p> Organization Configuration <p> Quarantine <p> RecordManagement <p> Retention Management <p> Role Management <p> Search And Purge <p> Security Administrator <p> Security Reader <p> Sensitivity Label Administrator <p> Sensitivity Label Reader <p> Service Assurance View <p> Tag Contributor <p> Tag Manager <p> Tag Reader <p> View-Only Audit Logs <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Case <p> View-Only Manage Alerts <p> View-Only Recipients <p> View-Only Record Management <p> View-Only Retention Management|
 |**Quarantine Administrator**|Members can access all Quarantine actions. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)|Quarantine|
-|**Privacy Management**|Manage access control for Privacy Management solution in the Microsoft 365 Compliance Center.|Privacy Management Admin <p> Privacy Management Analysis <p> Privacy Management Investigation <p> Privacy Management Permanent contribution <p> Privacy Management Temporary contribution <p> Privacy Management Viewer|
-|**Privacy Management Administrators**|Administrators of privacy management solution that can create/edit policies and define global settings.|Privacy Management Admin|
-|**Privacy Management Analysts**|Analysts of privacy management solution that can investigate policy matches, view messages meta data, and take remediation actions.|Privacy Management Analysis|
-|**Privacy Management Contributors**|Manage contributor access for privacy management cases.|Privacy Management Permanent contribution <p> Privacy Management Temporary contribution|
-|**Privacy Management Investigators**|Analysts of privacy management solution that can investigate policy matches, view message content, and take remediation actions.|Privacy Management Investigation|
-|**Privacy Management Viewers**|Viewer of privacy management solution that can access the available dashboards and widgets.|Privacy Management Viewer|
 |**Records Management**|Members can configure all aspects of records management, including retention labels and disposition reviews.|Disposition Management <p> RecordManagement <p> Retention Management|
-|**Reviewer**|Members can access review sets in [Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) cases. Members of this role group can see and open the list of cases on the **eDiscovery > Advanced** page in the Microsoft 365 compliance center that they're members of. After the user accesses an Advanced eDiscovery case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Members of this role group can only access the data in a review set.|Review|
+|**Reviewer**|Members can access review sets in [Advanced eDiscovery](../../compliance/overview-ediscovery-20.md) cases. Members of this role group can see and open the list of cases on the **eDiscovery > Advanced** page in the Microsoft 365 compliance center that they're members of. After the user accesses an Advanced eDiscovery case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Members of this role group can only access the data in a review set.|Review|
 |**Security Administrator**|Members have access to a number of security features of Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center. <p> By default, this role group may not appear to have any members. However, the Security Administrator role from Azure Active Directory is assigned to this role group. Therefore, this role group inherits the capabilities and membership of the Security Administrator role from Azure Active Directory. <p> To manage permissions centrally, add and remove group members in the Azure Active Directory admin center. For more information, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). If you edit this role group in the Security & Compliance Center (membership or roles), those changes apply only to the Security & Compliance Center and not to any other services. <p> This role group includes all of the read-only permissions of the Security reader role, plus a number of additional administrative permissions for the same services: Azure Information Protection, Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center.|Audit Logs <p> Device Management <p> DLP Compliance Management <p> IB Compliance Management <p> Manage Alerts <p> Quarantine <p> Security Administrator <p> Sensitivity Label Administrator <p> Tag Contributor <p> Tag Manager <p> Tag Reader <p> View-Only Audit Logs <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
 |**Security Operator**|Members can manage security alerts, and also view reports and settings of security features.|Compliance Search <p> Manage Alerts <p> Security Reader <p> Tag Contributor <p> Tag Reader <p> View-Only Audit Logs <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
 |**Security Reader**|Members have read-only access to a number of security features of Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center. <p> By default, this role group may not appear to have any members. However, the Security Reader role from Azure Active Directory is assigned to this role group. Therefore, this role group inherits the capabilities and membership of the Security Reader role from Azure Active Directory. <p> To manage permissions centrally, add and remove group members in the Azure Active Directory admin center. For more information, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). If you edit this role group in the Security & Compliance Center (membership or roles), those changes apply only to the Security & Compliance Center and not to any other services.|Security Reader <p> Sensitivity Label Reader <p> Tag Reader <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
-|**Service Assurance User**|Members can access the Service assurance section in the Security & Compliance Center. Service assurance provides reports and documents that describe Microsoft's security practices for customer data that's stored in Microsoft 365. It also provides independent third-party audit reports on Microsoft 365. For more information, see [Service assurance in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/service-assurance).|Service Assurance View|
+|**Service Assurance User**|Members can access the Service assurance section in the Security & Compliance Center. Service assurance provides reports and documents that describe Microsoft's security practices for customer data that's stored in Microsoft 365. It also provides independent third-party audit reports on Microsoft 365. For more information, see [Service assurance in the Security & Compliance Center](../../compliance/service-assurance.md).|Service Assurance View|
 |**Supervisory Review**|Members can create and manage the policies that define which communications are subject to review in an organization. For more information, see [Configure communication compliance policies for your organization](../../compliance/communication-compliance-configure.md).|Supervisory Review Administrator|
 |
 
 > [!NOTE]
-> <sup>1</sup> This role group doesn't assign members the permissions necessary to search the audit log or to use any reports that might include Exchange data, such as the DLP or Defender for Office 365 reports. To search the audit log or to view all reports, a user has to be assigned permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet. Global admins can search the audit log and view all reports because they're automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+> <sup>1</sup> This role group doesn't assign members the permissions necessary to search the audit log or to use any reports that might include Exchange data, such as the DLP or Defender for Office 365 reports. To search the audit log or to view all reports, a user has to be assigned permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet. Global admins can search the audit log and view all reports because they're automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Search the audit log in the Security & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 ## Roles in the Security & Compliance Center
 
@@ -132,12 +132,6 @@ Note that the following roles aren't assigned to the Organization Management rol
 - Insider Risk Management Permanent contribution
 - Insider Risk Management Temporary contribution
 - Preview
-- Privacy Management Admin
-- Privacy Management Analysis
-- Privacy Management Investigation
-- Privacy Management Permanent contribution
-- Privacy Management Temporary contribution
-- Privacy Management Viewer
 - Review
 - RMS Decrypt
 - Supervisory Review Administrator
@@ -184,12 +178,6 @@ Note that the following roles aren't assigned to the Organization Management rol
 |**Manage Alerts**|View and edit settings and reports for alerts.|Compliance Administrator <p> Compliance Data Administrator <p> Organization Management <p> Security Administrator <p> Security Operator|
 |**Organization Configuration**|Run, view, and export audit reports and manage compliance policies for DLP, devices, and preservation.|Compliance Administrator <p> Compliance Data Administrator <p> Organization Management|
 |**Preview**|View a list of items that are returned from content searches, and open each item from the list to view its contents.|eDiscovery Manager|
-|**Privacy Management Admin**|Used to manage policies in Privacy Management solution and has access to all functionality of the solution.|Privacy Management <p> Privacy Management Administrators|
-|**Privacy Management Analysis**|Used to perform investigation, remediation of the message violations in Privacy Management solution. Can only view messages meta data.|Privacy Management <p> Privacy Management Analysts|
-|**Privacy Management Investigation**|Used to perform investigation, remediation, review message violations in Privacy Management solution. Can view messages meta data & full message.|Privacy Management <p> Privacy Management Investigators|
-|**Privacy Management Permanent contribution**|Used to access Privacy Management case as a permanent contributor.|Privacy Management <p> Privacy Management Contributors|
-|**Privacy Management Temporary contribution**|Used to access Privacy Management case as a temporary contributor.|Privacy Management <p> Privacy Management Contributors|
-|**Privacy Management Viewer**|Used to access dashboards & widgets in Privacy Management solution.|PrivacyManagement <p> Privacy Management Viewers|
 |**Quarantine**|Allows viewing and releasing quarantined email.|Quarantine Administrator <p> Security Administrator <p> Organization Management|
 |**RecordManagement**|View and edit the configuration of the records management feature.|Compliance Administrator <p> Compliance Data Administrator <p> Organization Management <p> Records Management|
 |**Retention Management**|Manage retention policies, retention labels, and retention label policies.|Compliance Administrator <p> Compliance Data Administrator <p> Organization Management <p> Records Management|

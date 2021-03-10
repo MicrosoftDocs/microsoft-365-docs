@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -36,7 +38,7 @@ description: "Learn how to set a password expiration policy for your organizatio
 
 This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md).
 
-You must be a [global admin or password admin](../add-users/about-admin-roles.md) to perform these steps.
+You must be a [global admin](../add-users/about-admin-roles.md) to perform these steps.
 
 If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
 
@@ -48,9 +50,7 @@ As an admin, you can make user passwords expire after a certain number of days, 
 > By default, passwords are set to expire in 90 days. Current research strongly indicates that mandated password changes do more harm than good. They drive users to choose weaker passwords, re-use passwords, or update old passwords in ways that are easily guessed by hackers. If setting password to never expire, we recommend enabling [multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md).
 
 Follow the steps below if you want to set user passwords to expire after a specific amount of time.
-> [!IMPORTANT]
-> Only [global admins](../add-users/about-admin-roles.md) can perform these steps.
-  
+
 1. In the admin center, go to the **Settings** \> **Org Settings**.
 
 2. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Security & privacy</a> page.
@@ -63,8 +63,6 @@ Follow the steps below if you want to set user passwords to expire after a speci
 5. Type how often passwords should expire. Choose a number of days from 14 to 730.
   
 6. In the second box type when users are notified that their password will expire, and then select **Save**. Choose a number of days from 1 to 30.
-
-7. When the user's password expires, they'll get a notification that appears in the lower right corner of their screen.
   
 ## Important things you need to know about the password expiration feature
   

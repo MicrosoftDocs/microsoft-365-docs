@@ -1,20 +1,22 @@
 ---
-title: "User tags in Microsoft Defender for Office 365"
-f1.keywords:
-- NOCSH
+title: User tags in Microsoft Defender for Office 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users."
+search.appverid: 
+  - MET150
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # User tags in Microsoft Defender for Office 365
@@ -24,7 +26,7 @@ description: "Admins can learn how to identify specific groups of users with use
 
 User tags are identifiers for specific groups of users in [Microsoft Defender for Office 365](office-365-atp.md). There are two types of user tags:
 
-- **System tags**: Currently, [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) is the only type of system tag.
+- **System tags**: Currently, [Priority accounts](../../admin/setup/priority-accounts.md) is the only type of system tag.
 - **Custom tags**: You create these user tags yourself.
 
 If your organization has Defender for Office 365 Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the priority accounts tag.
@@ -52,10 +54,10 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
   **Notes**:
 
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - User tag management is controlled by the **Tag Reader**, **Tag Contributor**, and **Tag Manager** roles.
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  - User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
 
-- You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+- You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
 ## Use the Security Center to create user tags
 

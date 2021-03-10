@@ -1,22 +1,26 @@
 ---
-title: "Best practices for configuring EOP"
-f1.keywords:
-- NOCSH
+title: Best practices for configuring EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
-description: "Follow these best-practice recommendations for standalone Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors."
+description: Follow these best-practice recommendations for standalone Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Best practices for configuring standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 Follow these best-practice recommendations for standalone Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors. This topic assumes that you've already completed the setup process. If you haven't completed EOP setup, see [Set up your EOP service](set-up-your-eop-service.md).
 
@@ -54,7 +58,7 @@ These settings cover a range of features that are outside of security policies.
 |[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) cmdlet).|
 |Use [spoof intelligence](learn-about-spoof-intelligence.md) to add senders to your allow list|Yes|Yes||
 |[Directory-Based Edge Blocking (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Enabled|Enabled|Domain Type = Authoritative|
-|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
+|[Set up multi-factor authentication for all admin accounts](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|Enabled|Enabled||
 |
 
 ## Troubleshooting

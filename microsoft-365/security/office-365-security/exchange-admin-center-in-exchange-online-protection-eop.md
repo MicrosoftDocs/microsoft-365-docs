@@ -1,27 +1,31 @@
 ---
-title: "Exchange admin center in standalone EOP"
-f1.keywords:
-- NOCSH
+title: Exchange admin center in standalone EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
-ms.collection:
-- M365-security-compliance
-description: "Learn about the web management interface in standalone Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+description: Learn about the web management interface in standalone Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Exchange admin center in standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 The Exchange admin center (EAC) is a web-based management console for standalone Exchange Online Protection (EOP).
 

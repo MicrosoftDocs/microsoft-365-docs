@@ -1,49 +1,50 @@
 ---
-title: "Set up SPF to help prevent spoofing"
-f1.keywords:
-- CSH
+title: Set up SPF to help prevent spoofing
+f1.keywords: 
+  - CSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Learn how to update a Domain Name Service (DNS) record to use Sender Policy Framework (SPF) with your custom domain in Office 365."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Learn how to update a Domain Name Service (DNS) record to use Sender Policy Framework (SPF) with your custom domain in Office 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Set up SPF to help prevent spoofing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [Prerequisites <a name="UpdateSPFTXT"></a>](#updating-your-spf-txt-record-for-office-365-a-nameUpdateSPFTXT)
-- [Create / update your SPF TXT record for Office 365 <a name="CreateUpdateSPFTXT"></a>](#to-create-or-update-your-spf-txt-record-a-namecreateupdatespftxta)
-    - [How to handle subdomains? <a name="SPFandSubdomains"></a>](#how-to-handle-subdomains-a-namespfandsubdomainsa)
-- [SPF troubleshooting and best practices <a name="TshootingSPF"></a>](#next-steps-after-you-set-up-spf-for-office-365-a-nametshootingspfa)
-- [Advanced SPF examples <a name="AdvancedSPFexs"></a>](#more-information-about-spf-a-nameadvancedspfexsa)
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 This article describes how to update an Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF)  email authentication with your custom domain in Office 365.
 
 Using SPF helps to validate outbound email sent from your custom domain. It's a first step in setting up other recommended email authentication methods DMARC and DKIM (two further email authentication methods supported in Office 365).
 
-## Updating your SPF TXT record for Office 365 <a name="UpdateSPFTXT"></a>
+## Prerequisites
 
 > [!IMPORTANT]
 > If you are a **small business**, or are unfamiliar with IP addresses or DNS configuration, call your Internet domain registrar (ex. GoDaddy, Bluehost, web.com) to ask for help with DNS configuration of SPF (and any other email authentication method). *Also*, if you haven't bought, or don't use a custom URL (in other words the URL you and your customers browse to reach Office 365 ends in **onmicrosoft.com**), SPF has been set up for you in the Office 365 service. No further steps are required in that case. Thanks for reading.
 
-Before you update the TXT record in DNS, you need to gather some information needed to make the record. For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+Before you create or update the SPF TXT record for Office 365 in external DNS, you need to gather some information needed to make the record. For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
 Gather this information:
 
-- The current SPF TXT record for your custom domain, if one exists. For instructions, see [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+- The current SPF TXT record for your custom domain, if one exists. For instructions, see [Gather the information you need to create Office 365 DNS records](../../admin/get-help-with-domains/information-for-dns-records.md).
 
 - Go to your messaging server(s) and find out the External IP addresses (needed from all on-premises messaging servers). For example, **131.107.2.200**.
 
@@ -54,7 +55,7 @@ Gather this information:
 > [!IMPORTANT]
 > In order to use a custom domain, Office 365 requires that you add a Sender Policy Framework (SPF) TXT record to your DNS record to help prevent spoofing.
 
-## Create or update your SPF TXT record <a name="CreateUpdateSPFTXT"></a>
+## Create or update your SPF TXT record
 
 1. Ensure that you're familiar with the SPF syntax in the following table.
 
@@ -89,11 +90,11 @@ Gather this information:
 
    If you're already deployed in Office 365 and have set up your SPF TXT records for your custom domain, and you're migrating to Office 365 Germany, you need to update your SPF TXT record. To do this, change `include:spf.protection.outlook.com` to `include:spf.protection.outlook.de`.
 
-3. Once you have formed your SPF TXT record, you need to update the record in DNS. You can only have one SPF TXT record for a domain. If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), and then click the link for your DNS host.
+3. Once you have formed your SPF TXT record, you need to update the record in DNS. You can only have one SPF TXT record for a domain. If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md), and then click the link for your DNS host.
 
 4. Test your SPF TXT record.
 
-## How to handle subdomains? <a name="SPFandSubdomains"></a>
+## How to handle subdomains?
 
 It is important to note that *you need to create a separate record for each subdomain as subdomains don't inherit the SPF record of their top level domain*.
 
@@ -103,7 +104,7 @@ An additional wildcard SPF record (`*.`) is required for every domain and subdom
 *.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
-## Next steps <a name="TshootingSPF"></a>
+## Troubleshooting SPF
 
 Having trouble with your SPF TXT record? Read [Troubleshooting: Best practices for SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
@@ -124,7 +125,7 @@ If you've already set up mail for Office 365, then you have already included Mic
 
 - You intend to set up DKIM and DMARC (recommended).
 
-## More information about SPF <a name="AdvancedSPFexs"></a>
+## More information about SPF
 
 For advanced examples, a more detailed discussion about supported SPF syntax, spoofing, troubleshooting, and how Office 365 supports SPF, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
@@ -132,6 +133,6 @@ For advanced examples, a more detailed discussion about supported SPF syntax, sp
 
  SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. To defend against these, once you've set up SPF, you should configure DKIM and DMARC for Office 365.
 
-[DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) email authentication's goal is to prove the contents of the mail haven't been tampered with.
+[DKIM](use-dkim-to-validate-outbound-email.md) email authentication's goal is to prove the contents of the mail haven't been tampered with.
 
-[DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
+[DMARC](use-dmarc-to-validate-email.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.

@@ -1,28 +1,34 @@
 ---
-title: "Manually submit messages to Microsoft for analysis"
-f1.keywords:
-- NOCSH
+title: Manually submit messages to Microsoft for analysis
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
-ms.collection:
-- M365-security-compliance
-description: "Admins and end users can learn how to email messages (good mail marked as bad or bad mail allowed) to Microsoft for analysis."
+ms.collection: 
+  - M365-security-compliance
+description: Admins and end users can learn how to email messages (good mail marked as bad or bad mail allowed) to Microsoft for analysis.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Manually submit messages to Microsoft for analysis
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > If you're an admin in an organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).

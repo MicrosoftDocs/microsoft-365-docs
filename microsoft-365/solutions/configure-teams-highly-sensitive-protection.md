@@ -74,7 +74,7 @@ To create a sensitivity label
 17. Click **Next**.
 18. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
 19. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
-20. Under **Access from unmanaged devices**, choose **Block access**.
+20. Under **Access from unmanaged devices**, choose **Block access**. (If you're allowing guests and they don't have managed devices, you may want to choose **Allow limited, web-only access**.)
 21. Click **Next**.
 22. On the **Auto-labeling for database columns** page, click **Next**.
 23. Click **Create label**, and then click **Done**.
@@ -148,7 +148,7 @@ To configure owners-only site sharing
 2. In the tool bar for the team, click **Files**.
 3. Click the ellipsis, and then click **Open in SharePoint**.
 4. In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
-5. In the Site permissions pane, under **Sharing Settings**, click **Change sharing settings**.
+5. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
 6. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
 7. Set **Allow access requests** to **Off**, and then click **Save**.
 

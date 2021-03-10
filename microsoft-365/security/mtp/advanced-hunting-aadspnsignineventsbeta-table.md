@@ -4,21 +4,22 @@ description: Learn about information associated with Azure Active Directory serv
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
+ms.technology: m365d
 ---
 # AADSpnSignInEventsBeta
 
@@ -62,7 +63,7 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 | `ResourceId`           | string        | Unique identifier of the resource accessed                                                                                                      |
 | `ResourceTenantId`     | string        | Unique identifier of the tenant of the resource accessed                                                                                        |
 | `IPAddress`            | string        | IP address assigned to the endpoint and used during related network communications                                                              |
-| `CountryCode`          | string        | Two-letter code indicating the country where the client IP address is geolocated                                                                |
+| `Country`          | string        | Two-letter code indicating the country where the client IP address is geolocated                                                                |
 | `State`                | string        | State where the sign-in occurred, if available                                                                                                  |
 | `City`                 | string        | City where the account user is located                                                                                                          |
 | `Latitude`             | string        | The north to south coordinates of the sign-in location                                                                                          |

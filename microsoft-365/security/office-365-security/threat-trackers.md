@@ -1,28 +1,33 @@
 ---
-title: "Threat Trackers - New and Noteworthy"
-f1.keywords:
-- NOCSH
+title: Threat Trackers - New and Noteworthy
+f1.keywords: 
+  - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns."
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Threat Trackers - New and Noteworthy
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [Office 365 Threat Investigation and Response](office-365-ti.md) capabilities enable your organization's security team to discover and take action against cybersecurity threats. Office 365 Threat Investigation and Response capabilities include Threat Tracker features, including Noteworthy trackers. Read this article to get an overview of these new features and next steps.
 

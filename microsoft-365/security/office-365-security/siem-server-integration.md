@@ -1,28 +1,34 @@
 ---
 title: SIEM server integration with Microsoft 365 services and applications
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 11/18/2019
-ms.service: O365-seccomp
+
 localization_priority: Normal
-ms.collection:
-- M365-security-compliance
-ms.custom:
- - Ent_Solutions
- - SIEM
- - seo-marvel-apr2020
-description: "Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications"
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - Ent_Solutions
+  - SIEM
+  - seo-marvel-apr2020
+description: Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Security Information and Event Management (SIEM) server integration with Microsoft 365 services and applications
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 ## Summary
 

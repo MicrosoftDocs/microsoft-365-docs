@@ -1,32 +1,37 @@
 ---
 title: Microsoft Security Guidance - Political campaigns & nonprofits
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: overview
-ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
-- M365-security-compliance
-ms.service: O365-seccomp
+ms.collection: 
+  - Ent_O365
+  - Strat_O365_Enterprise
+  - M365-security-compliance
+
 localization_priority: Priority
-search.appverid:
-- MET150
-ms.custom:
- - Strat_O365_Enterprise
- - seo-marvel-apr2020
+search.appverid: 
+  - MET150
+ms.custom: 
+  - Strat_O365_Enterprise
+  - seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "Summary: Planning and implementation guidance for fast-moving organizations that have an increased threat profile."
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
 
  **Summary:** Planning and implementation guidance for fast-moving organizations that have an increased threat profile.
 
@@ -56,10 +61,8 @@ To create a dev/test environment for this solution, use the following test lab g
 
   Create four SharePoint Online team sites with Internal, Private, Sensitive, and Highly Confidential levels of security.
 
-For additional security features for demonstration or proof of concept, see [Office 365 Test Lab Guides](https://aka.ms/o365tlgs).
+For additional security features for demonstration or proof of concept, see [Office 365 Test Lab Guides](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md).
 
 ## See Also
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
-
-[Microsoft Cloud IT architecture resources](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+[Microsoft Cloud IT architecture resources](../../solutions/cloud-architecture-models.md)

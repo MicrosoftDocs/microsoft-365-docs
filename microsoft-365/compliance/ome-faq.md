@@ -65,7 +65,7 @@ The new capabilities for Office 365 Message Encryption are an evolution of the e
   
 **Comparison of legacy OME, IRM, and new OME capabilities**
 
-|**Capability**|**Previous versions of OME**|**IRM**|**New OME capabilities**|
+| Capability | Previous versions of OME | IRM | New OME capabilities |
 |:-----|:-----|:-----|:-----|
 |**Sending an encrypted email**|Only through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through mail flow rules|
 |**Rights management**|-|Do Not Forward option and custom templates|Do Not Forward option, encrypt-only option, default and custom templates|
@@ -169,11 +169,15 @@ Yes. All encrypted email messages are discoverable by Microsoft 365 compliance f
 
 ## Can I remove encryption from email?
 
-Admins can set up a mail flow rule to remove encryption from outgoing mail. You can't remove encryption using a mail flow rule from incoming messages.
+Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization, unless the mail is enrypted using encrypt-only protection.
 
 ## Is delegated access supported?
 
 Not at this time.
+
+## Can I send as a shared mailbox and encrypt emails?
+
+When someone sends an email message that matches an encryption mail flow rule, the message is encrypted before it's sent.
 
 ## Can I open encrypted messages sent to a shared mailbox?
 
@@ -209,6 +213,10 @@ There are currently two known limitations:
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
+   
+ ## Can I open encrypted messages sent to another user's mailbox with Fullaccess?
+
+Users can open encrypted messages as long as they are given direct access and automapping is turned ON. Access is not allowed if the access is granted via an email-enabled security group.
 
 ## What do I do if I don’t receive the one-time pass code after I requested it?
 

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn about the case limits, indexing limits, and search limits in effect for the Advanced eDiscovery solution in Microsoft 365.
+description: "Learn about the case limits, indexing limits, and search limits in effect for the Advanced eDiscovery solution in Microsoft 365."
 ---
 
 # Limits in Advanced eDiscovery
@@ -37,17 +37,26 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 |Maximum number of tags per case.  <br/> |1000 <br/> |
 |||
 
+## Hold limits
+
+The following table lists the limits for holds associated with an Advanced eDiscovery case.
+
+| Description of limit | Limit |
+|:-----|:-----|
+|Maximum number of mailboxes in a single case hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups. <br/> |1,000  <br/> |
+|Maximum number of sites in a single case hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.  <br/> |100  <br/> |
+
 ## Indexing limits
 
 The following table lists the indexing limits in Advanced eDiscovery.
 
 | Description of limit | Limit |
-  |:-----|:-----|
-  |Maximum number of characters extracted from a single file.  <br/> |10 million<sup>1</sup> <br/> |
-  |Maximum size of a single file.   <br/> |100 MB<sup>1</sup> <br/> |
-  |Maximum depth of embedded items in a document.  <br/> |25<sup>1</sup> <br/> |
-  |Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
-  |Maximum number of indexing jobs per organization per day. <br/> |10<sup>6</sup> <br/>|  
+|:-----|:-----|
+|Maximum number of characters extracted from a single file.  <br/> |10 million<sup>1</sup> <br/> |
+|Maximum size of a single file.   <br/> |100 MB<sup>1</sup> <br/> |
+|Maximum depth of embedded items in a document.  <br/> |25<sup>1</sup> <br/> |
+|Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
+|Maximum number of indexing jobs per organization per day. <br/> |10<sup>6</sup> <br/>|  
 |||
 
 ## Search limits
@@ -56,21 +65,35 @@ The limits described in this section are related to using the search tool on the
 
 | Description of limit | Limit |
 |:-----|:-----|
-|Maximum number of mailboxes or sites that can be searched in a single search.  <br/> |No limit  <br/> |
-|Maximum number of searches that can run at the same time.  <br/> |No limit  <br/> | 
-|Maximum number of searches that a single user can start at the same time.  <br/> |10  <br/> | 
-|Maximum number of characters for a search query (including operators and conditions).  <br/> |**Mailboxes**: 10,000<br/>**Sites**: 4,000 when searching all sites or 2,000 when searching up to 20 sites <sup>2</sup> <br/> |
-|Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***. <br/> |3  <br/> |  
-|Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator.  <br/> |10,000 <sup>3</sup> <br/> |
-|Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed.   <br/> |100  <br/> |
-|Maximum number of items from all mailboxes displayed on preview page for searches.  <br/> |1,000  <br/> |
-|Maximum number of mailboxes that can be previewed for search results.  If there are more than 1000 mailboxes that contain items that match the search query, only the top 1,000 mailboxes with the most results are available for preview.<br/> |1,000  <br/> |
-|Maximum number of items from SharePoint and OneDrive for Business sites displayed on preview page for searches. The newest items are displayed.  <br/> |200  <br/> |
-|Maximum number of SharePoint and OneDrive for Business sites that can be previewed for search results. If there are more than 200 sites that contain items that match the search query, only the top 200 sites with the most results are available for preview.  <br/> |200  <br/> |
-|Maximum number of items per public folder mailbox displayed on preview page for searches.  <br/> |100  <br/> |
-|Maximum number of items found in all public folder mailbox items displayed on preview page for searches.  <br/> |200  <br/> |
-|Maximum number of public folder mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain items that match the search query, only the top 500 mailboxes with the most results are available for preview.  <br/> |500  <br/> |
+|Maximum number of mailboxes or sites that can be searched in a single search. |No limit|
+|Maximum number of searches that can run at the same time. |No limit |
+|Maximum number of searches that a single user can start at the same time. |10 | 
+|Maximum number of characters for a search query (including operators and conditions). |10,000&nbsp;<sup>2</sup>|
+|Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***.|3 |  
+|Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator. |10,000&nbsp;<sup>3</sup>|
+|Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed. |100|
+|Maximum number of items from all mailboxes displayed on preview page for searches.|1,000|
+|Maximum number of mailboxes that can be previewed for search results.  If there are more than 1000 mailboxes that contain items that match the search query, only the top 1,000 mailboxes with the most results are available for preview.|1,000|
+|Maximum number of items from SharePoint and OneDrive for Business sites displayed on preview page for searches. The newest items are displayed. |200|
+|Maximum number of SharePoint and OneDrive for Business sites that can be previewed for search results. If there are more than 200 sites that contain items that match the search query, only the top 200 sites with the most results are available for preview.|200|
+|Maximum number of items per public folder mailbox displayed on preview page for searches. |100|
+|Maximum number of items found in all public folder mailbox items displayed on preview page for searches. |200|
+|Maximum number of public folder mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain items that match the search query, only the top 500 mailboxes with the most results are available for preview.|500|
 |||
+
+## Search times
+
+Microsoft collects performance information for searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for collection searches based on the number of mailboxes included in the search.
+  
+  |**Number of mailboxes**|**Average search time**|
+  |:-----|:-----|
+  |100  <br/> |30 seconds  <br/> |
+  |1,000  <br/> |45 seconds  <br/> |
+  |10,000  <br/> |4 minutes  <br/> |
+  |25,000  <br/> |10 minutes  <br/> |
+  |50,000  <br/> |20 minutes  <br/> |
+  |100,000  <br/> |25 minutes  <br/> |
+  |||
 
 ## Viewer limits
 

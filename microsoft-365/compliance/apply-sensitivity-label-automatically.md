@@ -55,7 +55,7 @@ There are two different methods for automatically applying a sensitivity label t
     
     Specific to auto-labeling for SharePoint and OneDrive:
     - Office files for Word, PowerPoint, and Excel are supported. Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls).
-        - These files can be auto-labeled when they are not part of an open session and whether they have been created, uploaded, or changed since you created auto-labeling policies, or they are existing files that have not been changed since you created your auto-labeling policies.
+        - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Note that files cannot be auto-labeled if they are part of an open session (the file is open).
     - Maximum of 25,000 automatically labeled files in your tenant per day.
     - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive).
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
@@ -133,7 +133,7 @@ Also similarly to DLP policy configuration, you can choose whether a condition m
 
 ### Configuring trainable classifiers for a label
 
-This option is currently in preview.
+This option is currently in preview. If you use this option, make sure you have published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
 
 When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
@@ -205,7 +205,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
     - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
 
-- If you plan to use [custom sensitive information types](custom-sensitive-info-types.md) rather than the built-in sensitivity types: 
+- If you plan to use [custom sensitive information types](sensitive-information-type-learn-about.md) rather than the built-in sensitivity types: 
     - Custom sensitivity information types are evaluated for content that is added to SharePoint or OneDrive after the custom sensitivity information types are saved. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
@@ -222,9 +222,9 @@ Workflow for an auto-labeling policy:
 
 1. Create and configure an auto-labeling policy.
 
-2. Run the policy in simulation mode and wait 24 hours, or until the simulation is complete.
+2. Run the policy in simulation mode, which can take 48 hours to complete.
 
-3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait another 24 hours, or until the simulation is complete.
+3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
 
 4. Repeat step 3 as needed.
 

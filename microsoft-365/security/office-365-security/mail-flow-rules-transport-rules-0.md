@@ -1,23 +1,29 @@
 ---
 title: Mail flow rules in EOP
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: "You can use mail flow rules (transport rules) to identify and take action on messages that flow through your organization."
+description: You can use mail flow rules (transport rules) to identify and take action on messages that flow through your organization.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Mail flow rules (transport rules) in standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through your organization.
 
@@ -41,7 +47,7 @@ To implement specific messaging policies by using mail flow rules, see these top
 
 - [Reducing malware threats through file attachment blocking in Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [Define rules to encrypt or decrypt email messages in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+- [Define rules to encrypt or decrypt email messages in Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
 The following video provides a demonstration of setting up mail flow rules in standalone EOP.
 
@@ -112,7 +118,7 @@ There are several types of messages that pass through an organization. The follo
 |Type of message|Can a rule be applied?|
 |---|---|
 |**Regular messages**: Messages that contain a single rich text format (RTF), HTML, or plain text message body or a multipart or alternative set of message bodies.|Yes|
-|**Office 365 Message Encryption**: Messages encrypted by Office 365 Message Encryption in Office 365. For more information, see [Encryption in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <p> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Define rules to encrypt or decrypt email messages in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
+|**Office 365 Message Encryption**: Messages encrypted by Office 365 Message Encryption in Office 365. For more information, see [Encryption in Office 365](../../compliance/encryption.md).|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <p> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Define rules to encrypt or decrypt email messages in Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).|
 |**S/MIME encrypted messages**|Rules can only access envelope headers and process messages based on conditions that inspect those headers. <p> Rules with conditions that require inspection of the message's content, or actions that modify the message's content can't be processed.|
 |**RMS protected messages**: Messages that had an Active Directory Rights Management Services (AD RMS) or Azure Rights Management (RMS) policy applied.|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <p> For a rule to inspect or modify the contents of an RMS protected message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional).|
 |**Clear-signed messages**: Messages that have been signed but not encrypted.|Yes|
