@@ -4,6 +4,7 @@ f1.keywords:
 - CSH
 ms.author: kwekua
 author: kwekua
+audience: Admin
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -58,11 +59,10 @@ We’ve revamped the Message center to help you discover relevant messages and a
 
 To learn more about the new features, check out [Manage messages in Message center](manage/manage-messages.md).
 
-### What's new help pane
+### What's new features
 
-We've made improvements to how admins view the "What's new" features to users in the Office apps. You can now see the rich content in the Whats' new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out manage/show-hide-new-features
+We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the Whats' new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
 
-**Office desktop apps What's New page**
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
 
 ## Ignite 2020 (August & September)
