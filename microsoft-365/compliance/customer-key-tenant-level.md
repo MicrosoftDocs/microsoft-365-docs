@@ -28,7 +28,7 @@ Using keys you provide, you can create a data encryption policy (DEP) and assign
 - Teams chat suggestions by Cortana
 - Teams status messages
 - User and signal information for Exchange Online
-- Exchange Online mailboxes that are not already encrypted Customer Key DEPs at the service level.
+- Exchange Online mailboxes that aren't already encrypted Customer Key DEPs at the application level.
 
 For Microsoft Teams, Customer Key at the tenant level encrypts new data from the time the DEP is assigned to the tenant. Public preview does not support encrypting past data. For Exchange Online, Customer Key encrypts all existing and new data.
 
@@ -38,13 +38,10 @@ You can create multiple DEPs per tenant but can only assign one DEP at any point
 
 If you already have Customer Key set up for Exchange Online and Sharepoint Online, here's how the new tenant-level public preview fits in.
 
-The tenant-level encryption policy you create encrypts all data for the Microsoft Teams and Exchange Online workloads in Microsoft 365. This policy doesn't interfere with finely tuned DEPs you've already created in Customer Key.
+The tenant-level encryption policy you create encrypts all data for the Microsoft Teams and Exchange Online workloads in Microsoft 365. However, for Exchange Online, if you have already assigned Customer Key DEPs to individual mailboxes, the tenant-level policy won't override those DEPs. The tenant-level policy will only encrypt mailboxes that aren't assigned a mailbox level Customer Key DEP already.
 
-Examples:
+For example, Microsoft Teams files and some Teams call and meeting recordings that are saved in OneDrive for Business and SharePoint are encrypted by a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo.
 
-Microsoft Teams files and some Teams call and meeting recordings that are saved in OneDrive for Business and SharePoint are encrypted by a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo.
-
-For Exchange Online, if you have already assigned Customer Key DEPs to individual mailboxes, the tenant-level policy won't override those DEPs. The tenant-level policy will only encrypt mailboxes that are not assigned a mailbox level DEP already.
 ## Set up Customer Key at the tenant level (public preview)
 
 These steps are similar but not identical to the steps for setting up Customer Key at the application level. You should only use this public preview with test data in test tenants. Do not use this release with production data or in your production environment. If you already have a production deployment of Customer Key, use these steps to set up Customer Key at the tenant level in a test environment.
