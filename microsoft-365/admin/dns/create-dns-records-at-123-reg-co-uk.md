@@ -109,7 +109,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
     ![Select Delete (the trash can icon)](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
-## Add the six CNAME records that are required for Microsoft
+## Add the five CNAME records that are required for Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
@@ -120,7 +120,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
 4. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
     
-5. Add the first of the six CNAME records.
+5. Add the first of the five CNAME records.
     
     In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -140,11 +140,11 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
     ![Select Add](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
-7. Add the other five CNAME records.
+7. Add the other four CNAME records.
     
     In the **Advanced DNS** section, create a record using the values from the next row in the table, and then again select **Add** to complete that record. 
     
-    Repeat this process until you have created all six CNAME records.
+    Repeat this process until you have created all five CNAME records.
     
 ## Add a TXT record for SPF to help prevent email spam
 <a name="BKMK_add_TXT"> </a>
