@@ -28,7 +28,7 @@ Using keys you provide, you can create a data encryption policy (DEP) and assign
 - Teams chat suggestions by Cortana
 - Teams status messages
 - User and signal information for Exchange Online
-- Exchange Online mailboxes that aren't already encrypted Customer Key DEPs at the application level.
+- Exchange Online mailboxes that aren't already encrypted Customer Key DEPs at the application level
 
 For Microsoft Teams, Customer Key at the tenant level encrypts new data from the time the DEP is assigned to the tenant. Public preview does not support encrypting past data. For Exchange Online, Customer Key encrypts all existing and new data.
 
