@@ -327,6 +327,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_Po
 ```
 
 Parameters:
+
 | Name | Description | Optional (Y/N) |
 |----------|----------|---------|
 -DataEncryptionPolicy|Specifies the data encryption policy that needs to be assigned; specify either the Policy Name or the Policy ID.|N|
@@ -355,6 +356,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 ```
 
 Parameters:
+
 | Name | Description | Optional (Y/N) |
 |----------|----------|---------|
 |-Identity|Specifies the data encryption policy that you want to modify.|N|
