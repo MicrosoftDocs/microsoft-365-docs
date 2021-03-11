@@ -46,7 +46,13 @@ Insider risk management is centered around the following principles:
 - **Transparency**: Balance user privacy versus organization risk with privacy-by-design architecture.
 - **Configurable**: Configurable policies based on industry, geographical, and business groups.
 - **Integrated**: Integrated workflow across Microsoft 365 compliance solutions.
-- **Actionable**: Provides insights to enable user notifications, data investigations, and user investigations.
+- **Actionable**: Provides insights to enable reviewer notifications, data investigations, and user investigations.
+
+## Identifying potential risks with analytics (preview)
+
+Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing insider risk policies.
+
+To learn more about insider risk analytics, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analystics-preview).
 
 ## Workflow
 
@@ -104,6 +110,8 @@ Selecting a case on the case dashboard opens the case for investigation and revi
 - **Case notes**: Reviewers can provide notes for a case in the Case Notes section. This list consolidates all notes in a central view and include reviewer and date submitted information.
 
 ![Insider risk management investigation](../media/insider-risk-investigate.png)
+
+Additionally, the new [Audit log (preview)](insider-risk-management-audit-log.md) enables you to stay informed of the actions that were taken on insider risk management features. This allows an independent review of the actions taken by users assigned to one or more insider risk management role groups.
 
 ### Action
 
