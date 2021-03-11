@@ -38,7 +38,7 @@ Microsoft 365 uses a common virus detection engine for scanning files that users
 
 ## What happens if an infected file is uploaded to SharePoint Online?
 
-The Microsoft 365 virus detection engine runs asynchronously (idenpedent from file uploads) within SharePoint Online. **All files are not automatically scanned**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged. In April 2018, we removed the 25 MB limit for scanned files.
+The Microsoft 365 virus detection engine runs asynchronously (independent from file uploads) within SharePoint Online. **All files are not automatically scanned**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged. In April 2018, we removed the 25 MB limit for scanned files.
 
 Here's what happens:
 
