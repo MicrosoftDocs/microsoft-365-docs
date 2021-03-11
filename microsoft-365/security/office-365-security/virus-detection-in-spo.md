@@ -43,7 +43,7 @@ The Microsoft 365 virus detection engine runs asynchronously (independent from f
 Here's what happens:
 
 1. A user uploads a file to SharePoint Online.
-2. SharePoint Online as part of its virus scanning processes later determines if the file meets the criteria for a scan.
+2. SharePoint Online, as part of its virus scanning processes, later determines if the file meets the criteria for a scan.
 3. If the file meets the criteria for a scan, the virus detection engine scans the file.
 4. If a virus is found within the scanned file, the virus engine sets a property on the file indicating that it's infected.
 
