@@ -53,6 +53,8 @@
               href: mtp/microsoft-365-security-center-mdo.md  
             - name: Redirecting Defender for Endpoint to Microsoft 365 security center
               href: mtp/microsoft-365-security-mde-redirection.md 
+            - name: Redirecting Defender for Office 365 to Microsoft 365 security center
+              href: mtp/microsoft-365-security-mdo-redirection.md   
             - name: Preview features
               href: mtp/preview.md
             - name: Troubleshoot issues
