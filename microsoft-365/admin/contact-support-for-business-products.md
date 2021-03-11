@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - MET150
 description: "Get technical and billing support by using phone numbers listed for your country or region, or submitting your service request online."
@@ -27,7 +28,7 @@ ms.date: 7/28/2020
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/help/contactus).
+> You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/contactus).
 
 Start by [checking the current health of your services](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). You can view detailed information about current and past issues on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health dashboard</a>. If you're experiencing an issue that isn't listed, you can get support in one of the following ways:
 

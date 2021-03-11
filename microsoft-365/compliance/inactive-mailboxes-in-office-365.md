@@ -37,9 +37,9 @@ But if your organization needs to retain mailbox content for former employees, y
 
 ## Inactive mailboxes and Microsoft 365 retention policies
 
-In addition to Litigation Hold, using the new Microsoft 365 retention policy feature in the Security & Compliance Center is another way to make a mailbox inactive. To use a retention policy to make an inactive mailbox:
+In addition to Litigation Hold, using the new Microsoft 365 retention policy feature in the Microsoft 365 compliance center is another way to make a mailbox inactive. To use a retention policy to make an inactive mailbox:
 
-- It has to be configured to retain content or retain and then delete content. If a retention policy is configured to only delete content, a mailbox that the policy is applied to won't become inactive when the mailbox is deleted.
+- It has to be configured to retain content or retain and then delete content. If a retention policy is configured to only delete content, a mailbox that the policy is applied to won't become inactive when the user account is deleted.
 
 - It has to be applied to Exchange mailboxes or Skype for Business locations (because Skype-related content is stored in the user's mailbox).
 
@@ -90,7 +90,7 @@ Conversely, any archive policies (which are retention tags configured with a **M
 
 ## Creating an inactive mailbox
 
-To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a Litigation Hold or Microsoft 365 retention policy can be applied to the mailbox before it's deleted. After the mailbox is deleted, any Exchange Online license associated with it will be available to assign to a new user.
+To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a Litigation Hold or Microsoft 365 retention policy can be applied to the mailbox before it's deleted. After the user account is deleted, any Exchange Online license associated with the user account will be available to assign to a new user.
 
 The following table summarizes the process of making an inactive mailbox for different retention scenarios. For more information, see [Manage inactive mailboxes](create-and-manage-inactive-mailboxes.md).
 

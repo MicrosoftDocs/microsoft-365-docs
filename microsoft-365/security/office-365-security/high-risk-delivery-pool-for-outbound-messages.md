@@ -1,27 +1,33 @@
 ---
-title: "Outbound delivery pools"
-f1.keywords:
-- NOCSH
+title: Outbound delivery pools
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
-ms.collection:
-- M365-security-compliance
-description: "Learn how the delivery pools are used to protect the reputation of email servers in the Microsoft 365 datacenters."
+ms.collection: 
+  - M365-security-compliance
+description: Learn how the delivery pools are used to protect the reputation of email servers in the Microsoft 365 datacenters.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Outbound delivery pools
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Email servers in the Microsoft 365 datacenters might be temporarily guilty of sending spam. For example, a malware or malicious spam attack in an on-premises email organization that sends outbound mail through Microsoft 365, or compromised Microsoft 365 accounts. Attackers also try to avoid detection by relaying messages through Microsoft 365 forwarding.
 

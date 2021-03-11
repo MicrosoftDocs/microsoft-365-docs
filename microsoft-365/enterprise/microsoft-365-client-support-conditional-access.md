@@ -24,11 +24,11 @@ In the modern workplace, users can access your organization's resources using va
 
 With Azure Active Directory device, location, and multi-factor authentication-based Conditional Access, you can meet this new requirement. Conditional Access is a capability of Azure Active Directory that enables you to enforce controls on the access to apps in your environment, all based on specific conditions and managed from a central location.
 
-Learn more about [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+Learn more about [Azure Active Directory Conditional Access](/azure/active-directory/conditional-access/).
 
 ## Supported clients & platforms
 
-The latest versions of the following clients and platforms support conditional access. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+The latest versions of the following clients and platforms support conditional access. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
 
 <br>
 <br>
@@ -76,6 +76,6 @@ The latest versions of the following clients and platforms support conditional a
 
 ## Supported PowerShell modules
 
-- [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
-- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
-- [SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

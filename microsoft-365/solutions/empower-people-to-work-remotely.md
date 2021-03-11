@@ -32,11 +32,16 @@ Microsoft 365 has the capabilities to empower your workers to work remotely.
 
 ![Empower your remote workers with Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
+>[!Note]
+>If you are new to Microsoft 365, see [these resources](https://www.microsoft.com/microsoft-365).
+>
+
 Watch this video for an overview of the deployment process.
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-This solution provides these key capabilities.
+For IT professionals managing onsite and cloud-based infrastructure to enable worker productivity, this solution provides these key capabilities:
 
 - Connected
 
@@ -95,7 +100,7 @@ For a 2-page summary of this solution, see the [Empower remote workers poster](.
 
 [![Empower remote workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
-You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) and print it on letter, legal, or tabloid (11 x 17) size paper.
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) or  [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
 
 ## Provide remote working for all of your workers
 

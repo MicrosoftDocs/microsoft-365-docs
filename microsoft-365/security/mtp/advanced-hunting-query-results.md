@@ -4,21 +4,22 @@ description: Make the most of the query results returned by advanced hunting in 
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
+ms.technology: m365d
 ---
 
 # Work with advanced hunting query results
@@ -88,8 +89,8 @@ If you're dealing with a list of values that isn’t finite, you can use the `To
 
 ```kusto
 EmailEvents
-| where PhishFilterVerdict == "Phish"
-| summarize Count = count() by SenderFromDomain
+| where ThreatTypes has "Phish" 
+| summarize Count = count() by SenderFromDomain 
 | top 10 by Count
 ```
 Use the pie chart view to effectively show distribution across the top domains:

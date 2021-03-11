@@ -1,6 +1,6 @@
 ---
 title: Security operations in Microsoft Managed Desktop 
-description:  
+description:  Services and processes provided by the Security Operations Center
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -27,7 +27,7 @@ The SOC provides these services:
 
 ## Processes
 
-- Microsoft Managed Desktop Security Operations is staffed by full-time Microsoft employees in partnership with  Microsoft’s [Cyber Defense Operations Center](https://www.microsoft.com/msrc/cdoc). 
+- Microsoft Managed Desktop Security Operations is staffed by full-time Microsoft employees in partnership with Microsoft’s [Cyber Defense Operations Center](https://www.microsoft.com/msrc/cdoc). 
 - Our SOC uses collective signals from across our company, both internal and external, to protect your devices--even from things we have not yet seen in Microsoft Managed Desktop.
 - Microsoft security solutions align to many cybersecurity protection standards. SOC operations are based on the National Institute of Standards and Technology Computer Security Incident Response Handling Guide (NIST 800-61 r2).
 - The process allows for proper collection of information and evidence, for analysis and documentation and post-recovery insights into ways to better defend your environment through these phases:
@@ -36,5 +36,5 @@ The SOC provides these services:
     - Eradication
     - Recovery
     - Post-incident activity
-- Microsoft Managed Desktop customers are eligible to enroll in the Microsoft Threat Experts service. The SOC liaises with this service to understand better the complex threats affecting your organization, including alert inquiries, potentially compromised devices, root cause of a suspicious network connection, and additional threat intelligence regarding ongoing advanced persistent threat campaigns. For more information, see [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
+- Microsoft Managed Desktop customers are eligible to enroll in the Microsoft Threat Experts service. The SOC liaises with this service to understand better the complex threats affecting your organization, including alert inquiries, potentially compromised devices, root cause of a suspicious network connection, and other threat intelligence regarding ongoing advanced persistent threat campaigns. For more information, see [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
 - SOC’s Threat and Vulnerability Management process uses some of Microsoft’s services to help inform recommendations for your organization to protect against threats. The SOC consumes data from your Microsoft Defender for Endpoint Security Center and from relevant vulnerability data sources within and outside of Microsoft to discover vulnerabilities and misconfigurations and provide actionable reporting.

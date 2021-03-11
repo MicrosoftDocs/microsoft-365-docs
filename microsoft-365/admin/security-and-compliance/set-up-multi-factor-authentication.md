@@ -2,8 +2,8 @@
 title: "Set up multi-factor authentication for users"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -76,10 +76,11 @@ For more information about the Azure AD P1 and P2, see [Azure Active Directory p
 
 ### Turn on Modern authentication for your organization
 
-For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription a long time ago, it might not be. This has to be turned on before MFA works appropriately with Office apps.
+For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription before August 2017, it is likely that you will need to turn on Modern Authentication in order to get features like Multi-Factor Authentication to work in Windows clients like Outlook.
+
 
 1. In the Microsoft 365 admin center, in the left nav choose **Settings** \> **Org settings**.
-1. Under **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
+2. Under the **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
 
 ### Turn off legacy per-user MFA
 
@@ -95,3 +96,9 @@ If you have previously turned on per-user MFA, you must turn it off before enabl
 - [What is: Multifactor Authentication](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [How to sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+
+## Related topics
+
+[Video: Turn on multi-factor authentication](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+
+[Video: Turn on multi-factor authentication for your phone](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)

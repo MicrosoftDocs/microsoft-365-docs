@@ -75,13 +75,17 @@ For people experiences data, you need a Microsoft 365 for business or Office 365
 
 Productivity Score is only available in the Microsoft 365 Admin Center and can only be accessed by IT professionals who have one of the following roles:  
 
-- Global admin 
+- Global admin
 - Exchange admins
-- SharePoint admin 
-- Skype for Business admin 
-- Teams admin 
-- Global Reader 
-- Reports Reader 
+- SharePoint admin
+- Skype for Business admin
+- Teams admin
+- Global Reader
+- Reports Reader
+- Usage Summary Reports Reader
+
+> [!NOTE]
+> Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Productivity Score.
 
 Please note that the information is only intended to be used for furthering digital transformation using Microsoft 365, and should therefore be shared with discretion. 
 
@@ -120,6 +124,7 @@ The details pages are:
 - [Mobility – people experiences](mobility.md)
 - [Teamwork – people experiences](teamwork.md)
 - [Microsoft 365 Apps health – technology experiences](apps-health.md)
+- [Endpoint Analytics](https://docs.microsoft.com/mem/analytics/productivity-score)
 
 ## Business continuity special report
 
@@ -136,6 +141,10 @@ This report helps organizations understand:
 [Learn more about the Business continuity report](https://aka.ms/bcrps)
 
 [Learn more about Microsoft Graph](https://docs.microsoft.com/graph/)
+
+> [!NOTE]
+> Users also have the option to get productivity insights from the [MyAnalytics dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+
 
 ## We want to hear from you
 

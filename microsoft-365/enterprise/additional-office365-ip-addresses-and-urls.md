@@ -1,7 +1,7 @@
 ---
 title: "Additional endpoints not included in the Office 365 IP Address and URL Web service"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/29/2020
 audience: Admin
@@ -48,7 +48,7 @@ Apart from DNS, these are all optional for most customers unless you need the sp
 | 6  | Mailbox Migration. When mailbox migration is initiated from on-premises [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant) to Office 365, Office 365 will connect to your published Exchange Web Services (EWS)/Mailbox Replication Services (MRS) server. If you need the NAT IP addresses used by Exchange Online servers to restrict inbound connections from specific source IP ranges, they are listed in [Office 365 URL & IP ranges](urls-and-ip-address-ranges.md) under the "Exchange Online" service area. Care should be taken to ensure that access to published EWS endpoints like OWA is not impacted by ensuring the MRS proxy resolves to a separate FQDN and public IP address before restricting TCP 443 connections from specific source IP ranges. | Customer on-premises EWS/MRS Proxy<br> TCP port 443 | Inbound server traffic |
 | 7  | [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant) co-existence functions such as Free/Busy sharing. | Customer on-premises Exchange server | Inbound server traffic |
 | 8  | [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant) proxy authentication | Customer on-premises STS | Inbound server traffic |
-| 9  | Used to configure [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant), using the [Exchange Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) <br> Note: These endpoints are only required to configure Exchange hybrid  | domains.live.com on TCP ports 80 & 443, only required for Exchange 2010 SP3 Hybrid Configuration Wizard<BR> <BR> GCC High, DoD IP addresses: 40.118.209.192/32; 168.62.190.41/32 <BR> <BR> Worldwide Commercial & GCC: *.store.core.windows.net; asl.configure.office.com; mshrcstorageprod.blob.core.windows.net; tds.configure.office.com; mshybridservice.trafficmanager.net <BR>  | Outbound server only traffic |
+| 9  | Used to configure [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant), using the [Exchange Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) <br> Note: These endpoints are only required to configure Exchange hybrid  | domains.live.com on TCP ports 80 & 443, only required for Exchange 2010 SP3 Hybrid Configuration Wizard<BR> <BR> GCC High, DoD IP addresses: 40.118.209.192/32; 168.62.190.41/32 <BR> <BR> Worldwide Commercial & GCC: *.store.core.windows.net; asl.configure.office.com; tds.configure.office.com; mshybridservice.trafficmanager.net ; <BR> aka.ms/hybridwizard; <BR> shcwreleaseprod.blob.core.windows.net/shcw/\*;<BR>  | Outbound server only traffic |
 | 10  | The AutoDetect service is used in [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant) scenarios with [Hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Customer on-premises Exchange server on TCP 443 | Inbound server traffic |
 | 11  | Exchange hybrid Azure AD authentication | *.msappproxy.net | TCP outbound server only traffic |
 | 12  | Skype for Business in Office 2016 includes video based screen sharing which uses UDP ports. Prior Skype for Business clients in Office 2013 and earlier used RDP over TCP port 443. | TCP port 443 open to 52.112.0.0/14 | Skype for Business older client versions in Office 2013 and earlier |
@@ -69,12 +69,18 @@ Apart from DNS, these are all optional for most customers unless you need the sp
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
   
-[Troubleshooting Office 365 connectivity](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d.aspx)
+[Monitor Microsoft 365 connectivity](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
   
 [Client connectivity](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   
 [Content delivery networks](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
   
-[Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653)
+[Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
+
+[Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
+
+[Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
+
+[Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)

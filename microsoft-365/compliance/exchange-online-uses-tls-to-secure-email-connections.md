@@ -20,6 +20,7 @@ ms.collection:
 description: "Learn how Exchange Online and Microsoft 365 use Transport Layer Security (TLS) and Forward Secrecy (FS) to secure email communications. Also get information about the certificate issued by Microsoft for Exchange Online."
 ---
 
+
 # How Exchange Online uses TLS to secure email connections
 
 Learn how Exchange Online and Microsoft 365 use Transport Layer Security (TLS) and Forward Secrecy (FS) to secure email communications. Also provides information about the certificate issued by Microsoft for Exchange Online.
@@ -31,6 +32,8 @@ Transport Layer Security (TLS), and SSL that came before TLS, are cryptographic 
 If you want to encrypt the message you need to use an encryption technology that encrypts the message contents, for example, something like Office Message Encryption. See [Email encryption in Office 365](email-encryption.md) and [Office 365 Message Encryption (OME)](ome.md) for information on message encryption options in Office 365. 
   
 We recommend using TLS in situations where you want to set up a secure channel of correspondence between Microsoft and your on-premises organization or another organization, such as a partner. Exchange Online always attempts to use TLS first to secure your email but cannot always do this if the other party does not offer TLS security. Keep reading to find out how you can secure all mail to your on-premises servers or important partners by using  *connectors*. 
+
+To provide the best-in-class encryption to our customers, Microsoft has deprecated Transport Layer Security (TLS) versions 1.0 and 1.1 in [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) and [Office 365 GCC](tls-1-2-in-office-365-gcc.md). However, you can continue to use an unencrypted SMTP connection without any TLS. We don't recommend email transmission without any encryption.  
   
 ## How Exchange Online uses TLS between Exchange Online customers
 
@@ -56,7 +59,7 @@ The certificate information used by Exchange Online is described in the followin
   
  **Current certificate information valid from September 3, 2018**
   
-|**Attribute**|**Value**|
+| Attribute | Value |
 |:-----|:-----|
 |Certificate authority root issuer  <br/> |GlobalSign Root CA – R1 <br/> |
 |Certificate name  <br/> |mail.protection.outlook.com  <br/> |
@@ -70,7 +73,7 @@ To help ensure a smooth transition, we will continue to provide the old certific
   
 ****
 
-|**Attribute**|**Value**|
+| Attribute | Value |
 |:-----|:-----|
 |Certificate authority root issuer  <br/> |Baltimore CyberTrust Root  <br/> |
 |Certificate name  <br/> |mail.protection.outlook.com  <br/> |
@@ -86,15 +89,18 @@ The new certificate requires connecting to the endpoints of the new CA as part o
 
 1. Connect to your local Exchange Server using Windows PowerShell and then run the following command:  
   `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
-2. On the window that appears, choose **Retrieve**.
-3. When the utility completes its check it returns a status. If the status displays **OK**, then your mail server can successfully validate the new certificate. If not, you need to determine what is causing the connections to fail. Most likely, you need to update the settings of a firewall. The full list of endpoints that need to be accessed include:
+
+1. On the window that appears, choose **Retrieve**.
+
+1. When the utility completes its check it returns a status. If the status displays **OK**, then your mail server can successfully validate the new certificate. If not, you need to determine what is causing the connections to fail. Most likely, you need to update the settings of a firewall. The full list of endpoints that need to be accessed include:
     - ocsp.globalsign.com
-     - crl.globalsign.com
-     - secure.globalsign.com   
+    - crl.globalsign.com
+    - secure.globalsign.com   
 
 Normally, you receive updates to your root certificates automatically through Windows Update. However some deployments have additional security in place that prevents these updates from occurring automatically. In these locked-down deployments where Windows Update can't automatically update root certificates, you need to ensure that the correct root CA certificate is installed by completing these steps:
 1.  Connect to your local Exchange Server using Windows PowerShell and then run the following command:  
   `certmgr.msc`
+
 2. Under **Trusted Root Certification Authority/Certificates**, confirm that the new certificate is listed.
 
 ## Get more information about TLS and Microsoft 365
