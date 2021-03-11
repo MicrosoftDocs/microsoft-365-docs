@@ -114,7 +114,7 @@ The settings in Safe Links policies that apply to email messages are described i
 
 - **Do not allow users to click through to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is enabled.
 
-- **Display the organization branding on notification and warning pages**: This option shows your organization’s branding on warning pages. It should help users identify that it’s a legitimate warning they’re seeing, as default Microsoft warning pages are often used by malicious actors to look legitimate themselves. See [Add branding to your organization's Azure Active Directory sign-in page](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) for more information about customized branding.
+- **Display the organization branding on notification and warning pages**: This option shows your organization's branding on warning pages. Branding helps users identify legitimate warnings, because default Microsoft warning pages are often used by attackers. For more information about customized branding, see [Add branding to your organization's Azure Active Directory sign-in page](/azure/active-directory/fundamentals/customize-branding).
 
 - **Do not rewrite the following URLs**: Leaves URLs as they are. Keeps a custom list of safe URLs that don't need scanning. The list is unique for each Safe Links policy. For more information about the **Do not rewrite the following URLs** list, see the ["Do not rewrite the following URLs" lists in Safe Links policies](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) section later in this article.
 
