@@ -22,10 +22,9 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 ## Planned updates
 
-Here are some updates in the works for Compliance Manager.
+Here are some updates that are planned for Compliance Manager:
 
 - Support for US Government DoD customers
-- another item...
 
 ## March 2021
 
