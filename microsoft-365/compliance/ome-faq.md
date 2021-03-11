@@ -140,8 +140,7 @@ When attachments are protected with a protected mail, Outlook clients provide th
 
 ## What email clients support revocation of protected emails?
 
-Outlook on the web supports revocation of protected mail.  See [How to revoke an encrypted message that you sent](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) for details.
-
+Outlook on the web supports revocation of protected mail.  See [How to revoke an encrypted message that you sent](revoke-ome-encrypted-mail#how-to-revoke-an-encrypted-message-that-you-sent) for details.
 
 ## Can I automatically encrypt messages by setting up policies?
 
@@ -213,8 +212,8 @@ There are currently two known limitations:
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
-   
- ## Can I open encrypted messages sent to another user's mailbox with Fullaccess?
+
+## Can I open encrypted messages sent to another user's mailbox with Fullaccess?
 
 Users can open encrypted messages as long as they are given direct access and automapping is turned ON. Access is not allowed if the access is granted via an email-enabled security group.
 
