@@ -144,31 +144,48 @@ To create a new insider risk management policy, you'll use the policy wizard in 
 Complete the following steps to create a new policy:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
-2. Select **Create policy** to open the policy wizard
-3. On the **New insider risk policy** page, complete the following fields:
-    - **Name (required)**: Enter a friendly name for the policy.
-    - **Description (optional)**: Enter a description for the policy.
-    - **Choose policy template (required)**: Select one of the [policy templates](insider-risk-management-policies.md#policy-templates) to define the types of risk indicators are monitored by the policy.
+2. Select **Create policy** to open the policy wizard.
+3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
 
     >[!IMPORTANT]
-    >Most policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see [Get started with insider risk management](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates).
+    >Some policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 4** above.
 
 4. Select **Next** to continue.
-5. On the **Users** page, select **Add user or group** or **Choose Priority user groups** to define which users or priority user groups are included in the policy, depending on the policy template you've selected. Select **All users and mail-enabled groups** checkbox if applicable (if you haven't selected a priority user-based template). Select **Next** to continue.
-6. On the **Specify what content to prioritize (optional)** page, you can assign the sources to prioritize for increased risk scores. However, some activities won't generate an alert at all unless the related content contains built-in or custom sensitive info types or was specified as a priority on this page:
-    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+5. On the **Name and description** page, complete the following fields:
+    - **Name (required)**: Enter a friendly name for the policy. This name cannot be changed after the policy is created.
+    - **Description (optional)**: Enter a description for the policy.
+
+6. Select **Next** to continue.
+7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy.
+8. Select **Next** to continue.
+9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
+
+    - **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content**. Selecting this option will enable detail pages in the wizard to configure these channels.
+    - **I don't want to specify priority content right now (you'll be able to do this after the policy is created)**. Selecting this option will skip the channel detail pages in the wizard.
+
+10. Select **Next** to continue.
+
+11. If you selected **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *Sensitive info types*, and *Sensitivity labels*. Use these detail pages to define the SharePoint, sensitive info types, and sensitivity labels to prioritize in the policy.
+
+    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint organizations you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
     - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
-7. Select **Next** to continue.
-8. On the **Select policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. If you selected a *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list to enable triggering indicators for the policy. Select the indicators you want to apply to the policy. If you prefer not to use the default policy threshold settings for these indicators, disable the **Use default thresholds recommended by Microsoft** and enter the threshold values for each selected indicator. If you've selected at least one *Office* or *Device* indicator, select the **Risk score boosters** as appropriate. Risk score boosters are only applicable for selected indicators.
+
+12. Select **Next** to continue.
+13. On the **Indicators and triggering events** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. If you selected a *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list to enable triggering indicators for the policy or select the built-in triggering event.
 
     >[!IMPORTANT]
-    >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies on the **Insider risk management** > **Settings** > **Policy indicators** page.
+    >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
 
-9. Select **Next** to continue.
-10. On the **Policy timeframes** page, you'll see the [activation window conditions](insider-risk-management-settings.md#policy-timeframes) for the policy that on the **Insider risk settings** > **Policy timeframes** page.
-11. Select **Next** to continue.
-12. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
+    Select the indicators you want to apply to the policy. If you prefer not to use the default policy threshold settings for these indicators, disable the **Use default thresholds recommended by Microsoft** and enter the threshold values for each selected indicator.
+
+    - If you've selected at least one *Office* or *Device* indicator, select the **Risk score boosters** as appropriate. Risk score boosters are only applicable for selected indicators.
+    - If you've selected a *Data theft* or *Data leaks* policy template, select one or more **Sequence detection** methods and a **Cumulative exfiltration detection** method to apply to the policy.
+
+14. Select **Next** to continue.
+15. On the **Indicator thresholds** page, select the option to use default indicator thresholds or to specify custom thresholds for individual indicators. For each indicator, choose the appropriate level to generate the desired level of activity alerts.
+16. Select **Next** to continue.
+17. On the **Review** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
 ## Update a policy
 
