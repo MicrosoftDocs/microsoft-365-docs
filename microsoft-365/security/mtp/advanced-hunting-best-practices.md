@@ -102,7 +102,7 @@ The [join operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
     ```kusto
     EmailEvents
     | where Timestamp > ago(7d)
-    | where MalwareFilterVerdict == "Malware" 
+    | where ThreatTypes has "Malware"
     | project EmailReceivedTime = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0])
     | join (
     DeviceLogonEvents 
@@ -243,7 +243,7 @@ abuse_sha256
 | where Timestamp > ago(1d) 
 ) on $left.sha256_hash == $right.SHA256
 | project Timestamp,SenderFromAddress,RecipientEmailAddress,FileName,FileType,
-SHA256,MalwareFilterVerdict,MalwareDetectionMethod
+SHA256,ThreatTypes,DetectionMethods
 ```
 
 ### Parse strings
