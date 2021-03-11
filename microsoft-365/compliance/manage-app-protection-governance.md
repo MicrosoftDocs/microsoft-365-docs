@@ -20,6 +20,8 @@ description: "Implement Microsoft Application Protection and Governance capabili
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+Cyberattacks are becoming increasingly sophisticated, exploiting many ways to enter your on-premises or cloud infrastructure to begin more advanced privilege escalation, lateral movement, and exfiltration of your data. One point of entry is through apps that you deploy to your users. Once installed, a malicious user can use an app to access data or perform system configuration changes and widen the scope of their activities. To stop these types of attacks, you need to understand your organization's app compliance posture and monitor and respond to apps that exhibit anomalous behavior.
+
 Microsoft Application Protection and Governance (MAPG) is a security and compliance solution for business productivity and line of business apps built by third-party vendors and published for the Microsoft 365 application platform. MAPG delivers full visibility, oversight, and governance into how these publishers and apps access, use, and share your sensitive data stored in Microsoft 365 through automated app-specific services and open Internet authentication protocols.
 
 <!--
@@ -78,6 +80,55 @@ For additional information about each role, see [Administrator role permissions]
 ## A first glimpse at MAPG
 
 To see the MAPG dashboard, go to [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
+
+## MAPG integration with Azure Active Directory and Microsoft Cloud App Security
+
+MAPG, Azure Active Directory (Azure AD), and Microsoft Cloud App Security collect and provide different data sets:
+
+- Azure AD provides foundational app metadata and detailed information on sign-ins to apps.
+- MAPG provides detailed information about an app’s activity at the API level.
+- Microsoft Cloud App Security provides app risk information.
+
+By sharing information across MAPG, Azure AD, and Microsoft Cloud App Security, you can display aggregate information in one portal and easily link to another portal for more information. Here are some examples:
+
+- App sign-in information in MAPG: 
+
+  From the MAPG portal, you can see the aggregated sign-in activity for each app and link back to the Azure Active Directory admin center for the details of sign-in events. 
+
+- App API usage information in the Azure Active Directory admin center: 
+
+  From the Azure Active Directory admin center, you can see the aggregated app usage information and link to the MAPG portal for the details of app usage.
+
+- API usage information in the Microsoft Cloud App Security portal: 
+
+  From the Microsoft Cloud App Security portal, you can see API usage level and aggregate data transfer and link to the MAPG portal for the details.
+
+Additionally, MAPG sends its alerts as signals to Microsoft Cloud App Security and Microsoft 365 Defender for more detailed analysis of app-based security incidents.
+
+<!--
+Integration of alerts with MCAS and M365 Defender
+Azure AD IP detections in progress to surface in M365 Defender
+
+## Integration with Azure AD
+
+**Feedback from Anand:** We should add some details on how MAPG works with M365 Defender (previously MTP). Also, we should highlight the integration with MCAS and AAD.
+
+Key cross-reference resources:
+
+- [What is application management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management)
+- [Common application management scenarios for Azure Active Directory (especially scenarios 3-4)](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
+- [Azure Active Directory Identity Governance documentation](https://docs.microsoft.com/azure/active-directory/governance/)
+- [Managing access to apps using Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management)
+
+## Integration with Microsoft Cloud App Security
+
+Key cross-reference resources:
+
+- [Cloud App Security anomaly detection alerts investigation guide](https://docs.microsoft.com/cloud-app-security/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app)
+- [Monitor alerts raised in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
+- [Control which third-party cloud OAuth apps get permissions](https://docs.microsoft.com/cloud-app-security/manage-app-permissions)
+
+--> 
 
 ## Using MAPG
 
