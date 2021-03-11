@@ -92,8 +92,8 @@ The numbers listed are the minimum Office application version required for each 
 **Footnotes:**
 
 <sup>\*</sup>
-In preview, and not all variables are supported. See the [Dynamic markings with variables](#dynamic-markings-with-variables) section for more information.
-<br /><br />
+In preview, and [not all variables are supported](#dynamic-markings-with-variables)
+<br />
 <sup>\*\*</sup>
 Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
