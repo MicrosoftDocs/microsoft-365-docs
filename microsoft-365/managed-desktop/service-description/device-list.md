@@ -32,7 +32,7 @@ The links to devices here are for your reference only. If you want to order devi
 
 | Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022  | April 28, 2025 |
+| [Dell Latitude 5310 / 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022  | April 28, 2025 |
 | [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025  |
 | [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025  |
 | [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025 |
