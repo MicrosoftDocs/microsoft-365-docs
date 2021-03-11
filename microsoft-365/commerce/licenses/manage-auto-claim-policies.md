@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,9 +12,10 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- commerce
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 ms.custom: 
+- AdminSurgePortfolio
+- commerce
 search.appverid:
 - MET150
 ---
@@ -47,8 +48,7 @@ You must be a Global, Billing, or User admin to create and manage auto-claim pol
 
 ## Turn the auto-claim policy feature on or off
 
-By default, the auto-claim policy feature is turned off. You must turn on
-the feature before you can use it. After you turn on the feature, you
+By default, the auto-claim policy feature is turned off. Before you can use the feature, you must first turn it on. After you turn on the feature, you
 can create an auto-claim policy.
 
 ### Turn on auto-claim policies
@@ -62,7 +62,7 @@ can create an auto-claim policy.
 2. Near the bottom of the table, select **User owned apps and services**.
 3. In the right pane, clear the box for **Let users auto-claim licenses the first time they sign in**.
 
-If you already have an active policy, but you don't want any more users to claim licenses, [turn off the policy](#turn-a-policy-on-or-off). When you turn off an auto-claim policy, no additional users can claim a license from that point on. Users who already claimed a license don't lose their license.
+If you already have an active policy, but you don't want any more users to claim licenses, [turn off the policy](#turn-a-policy-on-or-off). When you turn off an auto-claim policy, no more users can claim a license from that point on. Users who already claimed a license don't lose their license.
 
 ## Create an auto-claim policy
 
