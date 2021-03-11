@@ -123,7 +123,7 @@ Alternatively, disable or remove the Office Add-in, **Azure Information Protecti
 
 When you disable or remove this Office Add-in, the Azure Information Protection client remains installed so that you can continue to label files outside your Office apps. For example, by using File Explorer, or PowerShell.
 
-For information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
+For information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose your Windows labeling solution](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
 
 ## Office file types supported
 
