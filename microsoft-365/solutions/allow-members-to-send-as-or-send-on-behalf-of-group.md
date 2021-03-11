@@ -16,15 +16,14 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: "Learn how to allow users to send email as a Microsoft 365 group or send email on behalf of a Microsoft 365 group."
+description: "Learn how to allow group members to send email as a Microsoft 365 group or send email on behalf of a Microsoft 365 group."
 ---
 
 # Allow members to send as or send on behalf of a group
 
-> [!NOTE]
-> Guests who are members of a Microsoft 365 group cannot be granted **Send as** or **Send on behalf** permissions for the group.
+A member of a Microsoft 365 group who has been granted **Send as** or **Send on behalf** permissions can send email as the group, or on behalf of the group. (Guests in the group cannot be granted these permissions.)
 
-A member of a Microsoft 365 group who has been granted **Send as** or **Send on behalf** permissions can send email as the group, or on behalf of the group. This article explains how a global or Exchange administrator can set these permissions.
+This article explains how a global or Exchange administrator can set these permissions.
   
 For example, if Megan Bowen is part of the **Training** Microsoft 365 group, and has **Send as** permissions on the group, if she sends an email as the group, it will look like the **Training** group sent the email. 
   
