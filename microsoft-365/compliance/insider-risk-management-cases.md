@@ -131,13 +131,13 @@ The **Activity explorer** tab allows risk analysts and investigators to review a
 
 For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-alerts.md#activity-explorer-preview) article.
 
-### Content Explorer
+### Content explorer
 
-The **Content Explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when a user downloads hundreds of files from SharePoint Online and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.
+The **Content explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when a user downloads hundreds of files from SharePoint Online and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.
 
-The Content Explorer is a powerful tool with basic and advanced search and filtering features. To learn more about using the Content Explorer, see [Insider risk management Content Explorer](insider-risk-management-content-explorer.md).
+The Content explorer is a powerful tool with basic and advanced search and filtering features. To learn more about using the Content explorer, see [Insider risk management Content explorer](insider-risk-management-content-explorer.md).
 
-![Insider risk management case Content Explorer](../media/insider-risk-content-explorer.png)
+![Insider risk management case Content explorer](../media/insider-risk-content-explorer.png)
 
 ### Case notes
 
@@ -154,13 +154,13 @@ To add a note to a case:
 
 ### Contributors
 
-The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case. Only users assigned the **Insider Risk Management Investigators** role have permission to view files and messages in the Content Explorer.
+The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case. Only users assigned the **Insider Risk Management Investigators** role have permission to view files and messages in the Content explorer.
 
 Temporary access to a case can be granted by adding a user as a contributor. Contributors have all case management control on the specific case except:
 
 - Permission to confirm or dismiss alerts
 - Permission to edit the contributors for cases
-- Permission to view files and messages in the Content Explorer
+- Permission to view files and messages in the Content explorer
 
 To add a contributor to a case:
 
