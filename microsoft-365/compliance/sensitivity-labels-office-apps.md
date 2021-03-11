@@ -84,7 +84,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Dynamic markings with variables](#dynamic-markings-with-variables) <sup>\*</sup>                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rolling out: 2101+                        | 16.43+ <sup>\**</sup>                    | Under review            | Under review                | Yes                |
+|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rolling out: 2101+                        | 16.43+ <sup>\*\*</sup>                    | Under review            | Under review                | Yes                |
 |[Audit label-related user activity](data-classification-activity-explorer.md) | 2011+ | Under review | Under review           | Under review               | Under review |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
 |
@@ -94,7 +94,7 @@ The numbers listed are the minimum Office application version required for each 
 <sup>\**</sup>
 In preview, and not all variables are supported. See the [Dynamic markings with variables](#dynamic-markings-with-variables) section for more information.
 <br />
-<sup>\**</sup>
+<sup>\*\*</sup>
 Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
