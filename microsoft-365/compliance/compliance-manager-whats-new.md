@@ -27,19 +27,15 @@ Here are some updates in the works for Compliance Manager.
 - Support for US Government DoD customers
 - another item...
 
-## February 2021
+## March 2021
 
 ### New assessment templates
 
 We published 75 new assessment templates, including:
-- notable template a
-- notable template b
-- notable template c
-- notable template d
-- notable template e
+- Australia Privacy Act
+- CIS Microsoft 365 Foundation Levels 1 and 2
+- Germany - Supervisory Requirements for IT in Financial Institutions (BAIT)
+- Sarbanes-Oxley Act
+- South Africa - Promotion of Access to Information Act
 
 Check out the complete list of [assessment templates](compliance-manager-templates-list.md).
-
-### Updated assessments
-
-enter text here
