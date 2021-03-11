@@ -48,15 +48,13 @@ The links to devices here are for your reference only. If you want to order devi
 
 | Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [HP EliteBook 830 / 840 / 850 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Nov 30, 2021 | Nov 30, 2024 |
-| [HP EliteBook x360 830 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Nov 30, 2021 | Nov 30, 2024 |
-| [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV | July 31, 2021 | July 31, 2024 |
-| [HP EliteBook x360 1030 / 1040 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8XW08AV | Aug 31, 2021 | Aug 31, 2024 |
-| [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Mar 31, 2021 | Mar 31, 2024 |
-| **\*[HP EliteOne 800 G6 24/27 All-in-One PC ](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 GB RAM | SKU with 9XM14AV | Jun 30, 2022 | Jun 30, 2025 |
-| **\*[HP EliteDesk 800 G6 Desktop Mini PC ](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256 / Intel i5 / 8 GB RAM | SKU with 9XM14AV | Jun 30, 2022 | Jun 30, 2025 |
-| [HP Z2 Mini G5 Workstation](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8QR48AV| Dec 31, 2021 | Dec 31, 2024 |
-| **\*[HP ZBook Firefly 14/15 G7 Mobile Workstation](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ22AV, IR camera required | Nov 30, 2021 | Nov 30, 2024 |
+| **\*[HP EliteBook 830 / 840 / 850 G8 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-830-g8-notebook-pc-p-35c52ut-aba-1)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 2U4M8AV, IR camera required | Jun 30, 2022 | Jun 30, 2025 |
+| **\*[HP EliteBook x360 830 G8 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g8-notebook-pc-customizable-17n20av-mb#!)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 2U4M8AV | Jul 15, 2021 | Jul 15, 2025 |
+| **\*[HP Elite x2 G8 Tablet](https://www8.hp.com/us/en/elite-family/elite-x2.html)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 2U4M8AV | Sep 30, 2022 | Sep 30, 2025 |
+| **\*[HP EliteBook x360 1030 / 1040 G8 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g8-notebook-pc-customizable-1g7f3av-mb)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 2U4M8AV | Jul 31, 2022 | Jul 31, 2025 |
+| **\*[HP Elite DragonFly G2](https://store.hp.com/us/en/pdp/hp-elite-dragonfly-notebook-pc-g2-customizable-1j1p9av-mb)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 2U4M8AV | Jul 31, 2022 | Jul 31, 2025 |
+| [HP EliteDesk 800 G6 Desktop Mini PC ](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!) | 256 / Intel i5 / 8 GB RAM | SKU with 9XM14AV | Jun 30, 2022 | Jun 30, 2025 |
+| **\*[HP ZBook Firefly 14/15 G8 Mobile Workstation](https://www8.hp.com/us/en/workstations/zbook-firefly.html)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 2U4M8AV, IR camera required | Jun 30, 2022 | Jun 30, 2025 |
 
 ### Microsoft
 
