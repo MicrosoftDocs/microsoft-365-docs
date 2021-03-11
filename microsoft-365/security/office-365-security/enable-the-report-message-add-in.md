@@ -54,7 +54,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
-- The Report Message add-in is not available for mailboxes in on-premises Exchange organizations.
+- The Report Message add-in is not available for shared mailboxes or mailboxes in on-premises Exchange organizations.
 
 - You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
