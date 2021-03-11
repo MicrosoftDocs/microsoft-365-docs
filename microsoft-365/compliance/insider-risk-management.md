@@ -111,7 +111,7 @@ Selecting a case on the case dashboard opens the case for investigation and revi
 
 ![Insider risk management investigation](../media/insider-risk-investigate.png)
 
-Additionally, the new [Audit log (preview)](insider-risk-management-audit-log.md) enables you to stay informed of the actions that were taken on insider risk management features. This allows an independent review of the actions taken by users assigned to one or more insider risk management role groups.
+Additionally, the new [Audit log (preview)](insider-risk-management-audit-log.md) enables you to stay informed of the actions that were taken on insider risk management features. This resource allows an independent review of the actions taken by users assigned to one or more insider risk management role groups.
 
 ### Action
 
@@ -144,7 +144,7 @@ In most cases, users try their best to properly handle sensitive or confidential
 
 ## Intentional or unintentional security policy violations (preview)
 
-Users typically have a large degree of control when managing their devices in the modern workplace. This may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identity these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender for Endpoint alerts to provide insights for security-related activities:
+Users typically have a large degree of control when managing their devices in the modern workplace. This control may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identity these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender for Endpoint alerts to provide insights for security-related activities:
 
 - [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
@@ -153,7 +153,7 @@ Users typically have a large degree of control when managing their devices in th
 
 ## Policies for users based on position, access level, or risk history (preview)
 
-Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. This may include members of your organization's executive leadership team, IT administrators that have extensive data and network access privileges, or users with a past history of risky activities. In these circumstances, closer inspection and more aggressive risk scoring are important to help surface alerts for investigation and quick action. To help identify risky activities for these types of users, you can create priority user groups and create policies from the following policy templates:
+Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. This structure may include members of your organization's executive leadership team, IT administrators that have extensive data and network access privileges, or users with a past history of risky activities. In these circumstances, closer inspection and more aggressive risk scoring are important to help surface alerts for investigation and quick action. To help identify risky activities for these types of users, you can create priority user groups and create policies from the following policy templates:
 
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
