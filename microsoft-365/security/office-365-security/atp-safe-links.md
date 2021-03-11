@@ -2,8 +2,8 @@
 title: Safe Links
 f1.keywords: 
   - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
