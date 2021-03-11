@@ -8,7 +8,7 @@ ms.reviewer: nickrob
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -80,12 +80,14 @@ After you commit a collection to a review set, the following tabs are displayed 
 
 This section of the **Summary** tab contains statistics and other information about the items that were collected from the data sources in the collection and added to the review set.
 
-- **Total extracted items**. This number indicates the sum of parent items and child items added to the review set.
+- **Total extracted items**. The total number of items added to the review set. This number indicates the sum of parent items and child items added to the review set.
 
   > [!TIP]
   > Hover the cursor over the parent or child item bars to display the total number of parent or child items.
 
-- **Parent items**. The number of items returned by the collection estimate. This number corresponds (and is equal to) to the estimated number of items returned by the draft collection. A parent item might contain multiple child items. For example, an email message is a parent item if it contains an attached file or has a cloud attachment. In this case, the attached file or the target of the cloud attachment are the child items. When you commit a collection, parent items and any corresponding child items are added to the review set as individual items or files.
+- **Parent items**. The number of items returned by the collection that was used to collect the items that were added to the review set. This number corresponds  to (and is equal to) the estimated number of items that is displayed in the **Collection parameters** section. The number of parent items he collection information that was used to collect the items that were added to the review set.
+ 
+   A parent item might contain multiple child items. For example, an email message is a parent item if it contains an attached file or has a cloud attachment. In this case, the attached file or the target of the cloud attachment are considered child items. When you commit a collection, parent items and any corresponding child items are added to the review set as individual items or files.
 
 - **Child items**. The number of child items added to the review set. Child items are attachments or other parts of a parent item. Child items include attached files, cloud attachments, images, and email signatures. When you commit a collection to a review set, child items are extracted, indexed, and added to the review set as individual files.
 
@@ -105,11 +107,11 @@ The **Indexing** section on the **Summary** tab of a committed review set contai
 
 ### Collection parameters
 
-This section displays the collection information that was used to collect the items that were added to the review set. This tab displays information that is similar to the information on the **Search statistics** tab. This section provides a quick snap shot of the search query used by the collection, the content locations that were searched, and the estimated collection results. As previously explained, the number of estimated items in this section would be equal to the number of parent items shown in the **Collection content** section.
+This section displays the collection information that was used to collect the items that were added to the review set. This tab displays information that is similar to the information on the **Search statistics** tab. This section provides a quick snap shot of the search query used by the collection, the content locations that were searched, and the estimated collection results. As previously explained, the number of estimated items in this section would be equal to the number of parent items shown in the **Collection contents** section.
 
 ### Search statistics tab
 
-The statistics displayed on the **Search statistics** tab are the same statistics from the last time that a draft collection was run. This information is preserved from the draft collection for historical reference, and can be compared to the actual collection that was committed to the review set.
+The statistics displayed on the **Search statistics** tab are the same statistics from the last time that a draft collection was run. This includes collection estimates, condition report, and top locations. This information is preserved from the draft collection for historical reference, and can be compared to the actual collection that was committed to the review set.
 
 ## Differences between draft collection estimates and the actual committed collection
 
