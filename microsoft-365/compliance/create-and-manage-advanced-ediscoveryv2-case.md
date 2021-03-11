@@ -76,15 +76,15 @@ To get you started using Advanced eDiscovery, here's a basic workflow that align
 
    - You can use the [communications workflow](managing-custodian-communications.md) in Advanced eDiscovery to send a legal hold notification to custodians.
 
-2. **[Search data sources for data relevant to the case](collecting-data-for-ediscovery.md)**. After you add custodians and non-custodial data sources to a case, use the built-in search tool to search these data sources for data that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
+2. **[Collect relevant data from data sources](create-draft-collection.md)**. After you add custodians and non-custodial data sources to a case, use the built-in collections tool to search these data sources for content that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
 
-   - View [search statistics](search-statistics-in-advanced-ediscovery.md) that may help you refine a search query to narrow the results.
+   - View [collection statistics](collection-statistics-reports.md) that may help you refine a collection to narrow the results.
 
-   - Preview the search results to quickly verify whether the relevant data is being found.
+   - Preview a sample of the collection to quickly verify whether the relevant data is being found.
 
-   - Revise a query and rerun the search.
+   - Revise a query and rerun the collection.
 
-3. **[Add data to a review set](add-data-to-review-set.md)**. Once you've configured and verified that a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is reindexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md).
+3. **[Commit collection to a review set](commit-draft-collection.md)**. Once you've configured and verified that a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is reindexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md).
 
    There's also a special kind of review set that you can add data to, called a *conversation review set*. These types of reviews sets provide conversation reconstruction capabilities to reconstruct, review, and export threaded conversations like those in Microsoft Teams. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
 
