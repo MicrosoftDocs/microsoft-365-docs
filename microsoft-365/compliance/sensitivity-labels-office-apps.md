@@ -93,7 +93,7 @@ The numbers listed are the minimum Office application version required for each 
 
 <sup>\**</sup>
 In preview, and not all variables are supported. See the [Dynamic markings with variables](#dynamic-markings-with-variables) section for more information.
-<br />
+<br /><br />
 <sup>\*\*</sup>
 Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
