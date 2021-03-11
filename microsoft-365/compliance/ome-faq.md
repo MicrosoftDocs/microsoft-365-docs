@@ -140,8 +140,7 @@ When attachments are protected with a protected mail, Outlook clients provide th
 
 ## What email clients support revocation of protected emails?
 
-Outlook on the web supports revocation of protected mail.  See [How to revoke an encrypted message that you sent](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) for details.
-
+Outlook on the web supports revocation of protected mail.  See [How to revoke an encrypted message that you sent](revoke-ome-encrypted-mail#how-to-revoke-an-encrypted-message-that-you-sent) for details.
 
 ## Can I automatically encrypt messages by setting up policies?
 
