@@ -23,6 +23,8 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
+## Steps
+
 1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff**
 
 2. Select the **Add Staff** button.
