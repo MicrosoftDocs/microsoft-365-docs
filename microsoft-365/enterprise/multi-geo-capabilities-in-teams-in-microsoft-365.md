@@ -50,8 +50,6 @@ For Teams channel meetings, Teams chat data associated with the meeting is store
 
 ## See also
 
-[Multi-Geo in SharePoint and Microsoft 365 Groups](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)
-
 [Administering a multi-geo environment](administering-a-multi-geo-environment.md)
 
 [Administering Exchange Online mailboxes in a multi-geo environment](administering-exchange-online-multi-geo.md)
