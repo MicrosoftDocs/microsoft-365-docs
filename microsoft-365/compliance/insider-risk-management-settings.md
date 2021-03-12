@@ -532,7 +532,11 @@ For completed scans, you'll see the potential risks discovered in your organizat
     - Transferring files to a network share
     - Moving sensitive or priority content to a new location on a device
 
+![Insider risk management analytics overview report](../media/insider-risk-analytics-overview.png)
+
 To display more information for an insight, select **View details** to display the details pane for the insight. The details pane includes the complete insight results, an insider risk policy recommendation, and the **Create policy** button to quickly help you create the recommended policy. Selecting Create policy takes you to the policy wizard and automatically selects the recommended policy template related to the insight. For example, if the analytics insight is for *Data leak* activity, the *General data leaks* policy template will be pre-selected in the policy wizard for you.
+
+![Insider risk management analytics details report](../media/insider-risk-analytics-details.png)
 
 ### Turn off analytics
 
