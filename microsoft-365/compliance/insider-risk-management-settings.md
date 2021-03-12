@@ -61,8 +61,6 @@ Policy indicators are segmented into the following areas. You can choose the ind
 - **Microsoft Cloud App Security indicators (preview)**: These include policy indicators from shared alerts from Cloud App Security. Automatically enabled anomaly detection in Cloud App Security immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these activities in insider risk management policy alerts, select one or more indicators in this section. To learn more about Cloud App Security analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
 - **Risk score boosters**: These include raising the risk score for unusual activities or past policy violations. Enabling risk score boosters increases risk scores and the likelihood of alerts for these types of activities. For unusual activities, scores are boosted if the detected activity deviates from the user's typical behavior. For example, a significant increase in daily file downloads. Unusual activity is presented as an increase in percentage (for example, '100% above usual activity') and will impact the risk score differently depending on the activity. For users with previous policy violations, scores are boosted if a user had more than one case previously resolved as a confirmed policy violation. Risk score boosters can only be selected if one or more indicators are selected.
 
-![Insider risk management indicator settings](../media/insider-risk-settings-indicators.png)
-
 In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies. Triggering events cannot be modified for insider risk policy templates.
 
 To define the insider risk policy indicators that are enabled in all insider risk policies, navigate to **Insider risk settings** > **Indicators** and select one or more policy indicators. The indicators selected on the Indicators settings page cannot be individually configured when creating or editing an insider risk policy in the policy wizard.
@@ -224,7 +222,7 @@ Insider risk management alert information is exportable to security information 
 
 To use the APIs to review insider risk alert information:
 
-1. Enable Office 365 Management Activity API support in **Insider risk management** > **Settings** > **Export**. By default, this setting is disabled for your Microsoft 365 organization.
+1. Enable Office 365 Management Activity API support in **Insider risk management** > **Settings** > **Export alerts**. By default, this setting is disabled for your Microsoft 365 organization.
 2. Filter the common Office 365 audit activities by *SecurityComplianceAlerts*.
 3. Filter *SecurityComplianceAlerts* by the *InsiderRiskManagement* category.
 
@@ -323,6 +321,8 @@ For example, your organization has a badging system for users that monitors and 
 
 You choose to enable the Physical badging data connector in Microsoft 365 to import access information from your physical badging system and specify priority physical assets in insider risk management. By importing information from your badging system and correlating physical access information with other risk activities identified in insider risk management, you notice that one of the users on the project is accessing the project offices after normal working hours and is also exporting large amounts of data to a personal cloud storage service from their normal work area. This physical access activity associated with the online activity may point to possible data theft and compliance investigators and analysts can take appropriate actions as dictated by the circumstances for this user.
 
+![Insider risk management priority physical assets](../media/insider-risk-settings-priority-assets.png)
+
 ### Configure priority physical assets
 
 To configure priority physical assets, you'll configure the Physical badging connector and use setting controls in the **Insider risk management** solution in the Microsoft 365 compliance center. To configure priority physical assets, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin role group*.
@@ -393,6 +393,8 @@ Complete the following steps to create a Power Automate flow from a recommended 
 
 >[!IMPORTANT]
 >If other users in your organization need access to the flow, the flow must be shared.
+
+![Insider risk management power automate flows](../media/insider-risk-settings-power-automate-flows.png)
 
 ### Create a custom Power Automate flow for insider risk management
 
@@ -471,6 +473,8 @@ Enabling Microsoft Teams support for cases is quick and easy to configure. To en
 3. Enable Microsoft Teams integration for insider risk management.
 4. Select **Save** to configure and exit.
 
+![Insider risk management Microsoft Teams](../media/insider-risk-settings-teams.png)
+
 ### Create a Microsoft Teams team for existing cases
 
 If you enable Microsoft Teams support for insider risk management after you have existing cases, you'll need to manually create a team for each case as needed. After enabling Microsoft Teams support in insider risk management settings, new cases will automatically create a new Microsoft Teams team.
@@ -512,9 +516,11 @@ Complete the following steps to enable insider risk analytics:
 2. Select **Run scan** on the **Scan for insider risks in your organization** card on the insider risk management **Overview** tab. This turns on analytics scanning for your organization. You can also turn on scanning in your organization by navigating to **Insider risk settings** > **Analytics** and enabling **Scan your tenant's user activity to identify potential insider risks**.
 3. On the **Analytics details** pane, select **Run scan** to start the scan for your organization. Analytics scan results may take up to 24 hours before insights are available as reports for review.
 
+![Insider risk management analytics settings](../media/insider-risk-settings-analytics-enable.png)
+
 ### Viewing analytics insights and creating new policies
 
-After the first analytics scan is complete for your organization, you can view the insights and recommendations for potentially risky activities by your users. Daily scans will continue unless you turn off analytics for your organization. To view potential risks for your organization, go to the Overview tab and select View on the Organization risks card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
+After the first analytics scan is complete for your organization, you can view the insights and recommendations for potentially risky activities by your users. Daily scans will continue unless you turn off analytics for your organization. To view potential risks for your organization, go to the **Overview** tab and select **View results** on the **Insider risk analytics (preview)** card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
 
 ![Insider risk management analytics report ready card](../media/insider-risk-analytics-ready-card.png)
 
