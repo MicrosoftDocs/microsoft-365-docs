@@ -132,7 +132,7 @@ The **Network Trace** tab provides detailed information about both requests to b
 
 3. **Share relevant details with others who can help investigate issues**. To share the details or information provided in the tool with your developers or a technical support person, using the **Enable exporting to HTTP Archive (HAR)** is the recommended approach. 
 
-![Enable exporting to HAR](../media/page-diagnostics-for-spo/PageDiag-SubmitHAR.PNG)
+![Enable exporting to HAR](../media/page-diagnostics-for-spo/pagediag-submithar.png)
 
 That should be enabled prior to clicking Start, which will then enable debug mode in your browser. It will generate an HTTP Archive file (HAR) which can then be accessed through the "Network Trace" tab. Click the "Export to HAR" and it will download the file to your computer and you can then share it accordingly. The file can be opened in a variety of debug tools, like F12 Developer Tools and Fiddler.
 
