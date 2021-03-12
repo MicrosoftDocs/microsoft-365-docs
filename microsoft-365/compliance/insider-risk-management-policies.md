@@ -143,6 +143,27 @@ When you create an insider risk management policy in the policy wizard, you can 
 
 ## Sequence detection (preview)
 
+Risky activities may not occur as isolated events. These risks are frequently part of a larger sequence of events. A sequence is a group of two or more user activities performed one after the other that might suggest an elevated risk. Identifying these related activities is an important part of evaluating overall risk. When sequence detection is enabled for data theft or data leaks policies, insights from sequence information activities are displayed on the **User activity** tab within an insider risk management case. The following policy templates support sequence detection:
+
+- Data theft by departing users
+- General data leaks
+- Data leaks by priority users
+- Data leaks by disgruntled users
+
+These insider risk management policies can use specific indicators and the order that they occur to detect each step in a sequence of risk. File names are used when mapping activities across a sequence. These risks are organized into four main categories of activity:
+
+- **Collection**: These category signals focus on download activities by in-scope policy users. An example activity in this category would be downloading files from SharePoint sites.
+- **Exfiltration**: These category signals focus on sharing or extraction activities to internal and external sources by in-scope policy users. An example activity in this category would be sending emails with attachments from your organization to external recipients.
+- **Obfuscation**: These category signals focus on the masking of risky activities by in-scope policy users. An example activity in this category would be renaming files on a device.
+- **Clean-up**: These category signals focus on deletion activities by in-scope policy users. An example activity in this category would be deleting files from a device.
+
+>[!NOTE]
+>Sequence detection uses indicators that are enabled in the global settings for insider risk management and indicators that are selected in a policy. If appropriate indicators are not selected, sequence detection will not work.
+
+You can customize individual threshold settings for each sequence detection type when configured in the policy. These threshold settings adjust alerts based on the volume of files associated with the sequence.
+
+To learn more about sequence detection management in the **User activity** view, see [Insider risk management cases: User activity](insider-risk-management-cases.md#user-activity).
+
 ## Cumulative exfiltration detection (preview)
 
 Insider risk indicators help identify unusual levels of risk activities when evaluated daily for users that are in-scope for insider risk policies. Cumulative exfiltration detection uses machine learning models to help you identify when user exfiltration activities exceed the organizational averages when measured over time and over multiple exfiltration activity types. Insider risk management analysts and investigators may use cumulative exfiltration detection insights to help identify exfiltration activities that may not typically generate alerts but are above what is typical for their organization. Some examples may be departing users slowly exfiltrate data across a range of days, or when users repeatedly share data across multiple channels more than usual for data sharing for your organization.
