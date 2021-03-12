@@ -47,6 +47,7 @@ Teams Live Event Content is also stored in the PDL of the meeting organizer.
 
 For Teams channel meetings, Teams chat data associated with the meeting is stored in the PDL of the team.
 
+
 ## See also
 
 [Multi-Geo in SharePoint and Microsoft 365 Groups](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)
