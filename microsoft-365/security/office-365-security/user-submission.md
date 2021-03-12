@@ -87,6 +87,7 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **User submissions**.
 
 2. In the **User submissions** page that appears, select one of the following options:
+
     1. **Enable the Report Message feature for Outlook (Recommended)**: Select
 this option if you use the Report Message add-in, the Report Phishing 
 add-in or the built-in reporting in Outlook on the web, and then configure
@@ -109,14 +110,14 @@ the following settings:
 descriptive text for Junk email reporting options. 
       Under **Options to show when messages are reported**, select at least
 one among the following options:
-      - **Ask me before sending a report**
-      - **Automatically send reports**
-      - **Never send reports**
+        - **Ask me before sending a report**
+        - **Automatically send reports**
+        - **Never send reports**
    When you're finished, click **Save**.
-        - **Send the reported messages to**: Make one of the following selections:
-        - **Microsoft (Recommended)**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
-        - **Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions will go to both Microsoft for analysis and to the custom mailbox for your admin or security operations team to analyze.
-        - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. Use this option if you want the message to only go to an admin or the security operations team for analysis first. Messages will not go to Microsoft unless the admin forwards it themselves.
+      - **Send the reported messages to**: Make one of the following selections:
+      - **Microsoft (Recommended)**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
+      - **Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions will go to both Microsoft for analysis and to the custom mailbox for your admin or security operations team to analyze.
+      - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. Use this option if you want the message to only go to an admin or the security operations team for analysis first. Messages will not go to Microsoft unless the admin forwards it themselves.
 
         > [!NOTE]
         > U.S. Government organizations (GCC, GCC-H, and DoD) can only configure **Custom mailbox**. The other two options are disabled.
