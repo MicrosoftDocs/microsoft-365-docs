@@ -82,7 +82,7 @@ To perform these steps, you must be using an active Microsoft PowerShell command
 6. To verify that the calendar has been deleted, enter the following command:
 
    ```powershell
-    Get-EXOMailbox -RecipientTypeDetails Scheduling
+    Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
    The deleted calendar will not appear in the output.
