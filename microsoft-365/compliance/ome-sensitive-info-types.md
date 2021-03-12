@@ -34,7 +34,7 @@ Use a work or school account that has global administrator permissions in your o
 
 ## Example mail flow rule created with PowerShell
 
-Run the following commands in PowerShell to create an Exchange mail flow rule that automatically encrypts emails sent outside your organization with the *Encrypt-Only* policy if the emails or their attachments contain the following sensitive information types:
+Run the following commands in PowerShell to create an Exchange mail flow rule that automatically encrypts emails sent outside your organization with the encrypt-only option if the emails or their attachments contain the following sensitive information types:
 
 - ABA routing number
 - Credit card Number

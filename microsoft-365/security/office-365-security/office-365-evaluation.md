@@ -30,7 +30,7 @@ ms.prod: m365-security
 
 Conducting a comprehensive security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product's capabilities to assess how it can help your security operations team in their daily tasks.
 
-The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients, or Teams.
+The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients like Word, or Teams.
 
 If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the Office 365 Security & Compliance center (https://protection.office.com/homepage). You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
@@ -38,11 +38,11 @@ If you don't already have a license that supports Microsoft Defender for Office 
 
 Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don't act on messages. You are not required to change your MX record configuration.
 
-With evaluation mode, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [anti-phishing impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are set up on your behalf. All Defender for Office 365 policies are created in non-enforcement mode in the background and are not visible to you.
+With evaluation mode, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [mailbox intelligence based impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are set up on your behalf. All Defender for Office 365 policies are created in non-enforcement mode in the background and are not visible to you.
 
-As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). It improves filtering accuracy by preserving IP address and sender information, which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. Enhanced Filtering also improves the filtering accuracy for your Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
+As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). It improves filtering accuracy by preserving IP address and sender information, which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. Enhanced Filtering for Connectors also improves the filtering accuracy for your existing Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
 
-To minimize potential production impact on some unsupported scenarios, you can bypass all EOP filtering by creating a transport rule to set the Spam Confidence Level (SCL) to -1. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) for details.
+Enabled Enhanced Filtering for Connectors improves filtering accuracy but may alter deliverability for certain messages if you have an ESG in front of Defender for Office 365, and currently do not bypass EOP filtering. The impact is limited to EOP policies; MDO policies setup as part of the evaluation are created in non-enforcement mode. To minimize potential production impact, you can bypass all EOP filtering by creating a transport rule to set the Spam Confidence Level (SCL) to -1. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) for details.
 
 When the evaluation mode is set up, you will have a report updated daily with up to 90 days of data quantifying the messages that would have been blocked if the policies were implemented (for example, delete, send to junk, quarantine). Reports are generated for all Defender for Office 365 and EOP detections. They are aggregated per detection technology (for example, impersonation) and can be filtered by time range. Additionally, message reports can be created on-demand to create custom pivots or to deep dive messages using Threat Explorer.
 
@@ -95,9 +95,9 @@ The following roles are needed:
 
 ### Enhanced filtering
 
-Your Exchange Online Protection policies, such as bulk and spam protection, will remain the same. Message delivery will also remain the same. However, the evaluation turns on enhanced filtering for connectors, which will impact your mail flow and Exchange Online Protection policies unless bypassed.
+Your Exchange Online Protection policies, such as bulk and spam protection, will remain the same. However, the evaluation turns on enhanced filtering for connectors, which may impact your mail flow and Exchange Online Protection policies unless bypassed.
 
-Enhanced filtering for connectors will allow tenants to use anti-spoofing protection. Anti-spoofing is not supported if you're using an email security gateway (ESG) without having turned on Enhanced filtering for connectors.
+Enhanced filtering for connectors allows tenants to use anti-spoofing protection. Anti-spoofing is not supported if you're using an email security gateway (ESG) without having turned on Enhanced filtering for connectors.
 
 ### URLs
 
