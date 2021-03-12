@@ -516,6 +516,8 @@ Complete the following steps to enable insider risk analytics:
 
 After the first analytics scan is complete for your organization, you can view the insights and recommendations for potentially risky activities by your users. Daily scans will continue unless you turn off analytics for your organization. To view potential risks for your organization, go to the Overview tab and select View on the Organization risks card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
 
+![Insider risk management analytics report ready card](../media/insider-risk-analytics-ready-card.png)
+
 For completed scans, you'll see the potential risks discovered in your organization and insights and recommendations to address these risks. Identified risks and specific insights are included in reports grouped by area, the total number of users with identified risks, the percentage of these users with potentially risky activities, and a recommended insider risk policy to help mitigate these risks. The reports include:
 
 - **Data leaks insights**: Activities for all users that may include accidental oversharing of information outside your organization or data leaks by users with malicious intent.
