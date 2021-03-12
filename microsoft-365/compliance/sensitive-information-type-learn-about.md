@@ -119,6 +119,11 @@ A high confidence level returns the fewest false positives but might result in m
 
 You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.
 
+> [!NOTE]
+> If you have existing policies or custom sensitive information types (SITs) defined using number-based confidence levels (also know as accuracy), they will automatically be mapped to the three discrete confidence levels; low confidence, medium confidence, and high confidence, across the Security @ Compliance Center UI.
+> - All policies with minimum accuracy or custom SIT patterns with confidence levels of between 76 and 100 will be mapped to high confidence. 
+> - All policies with minimum accuracy or custom SIT patterns with confidence levels of between 66 and 75 will be mapped to medium confidence.
+> - All policies with minimum accuracy or custom SIT patterns with confidence levels less than or equal to 65 will be mapped to low confidence. 
 ## Creating custom sensitive information types
 
 To create custom sensitive information types in the Security & Compliance Center, you can choose from several options:
