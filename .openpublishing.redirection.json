@@ -2719,6 +2719,11 @@
       "source_path": "microsoft-365/compliance/configure-supervision-policies.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/tickets-security-center.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/security/mtp/tickets",
+      "redirect_document_id": true
     }
   ]
 }
