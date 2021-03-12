@@ -31,31 +31,34 @@ Are you an admin who's usually on the go? Then check out the [Microsoft 365 Admi
 
 ![Screen capture of the admin mobile app's home page, displaying search, messages, health, and quick links.](../../media/admin-mobile-app-darkbg.png)
 
-The admin app is a feature-rich app that has over 80 features to help you manage your org when you can't get to a computer. Here's a list of just a few of the tasks you can do from the app:
+The admin app is a feature-rich app that has over 80 features to help you manage your organization. Here's a list of a few of the tasks you can do from the app:
 
 - Get service health and change notifications
 - Create a service request
 - Reset a user's password
 - Assign licenses
 - Add or remove group memberships
-- Add users 
+- Add users
 
-And if you're someone who is responsible for more than one online organization, you sign in to multiple orgs and quickly switch between them. 
+And if you're responsible for more than one Microsoft 365 for business organization, you can sign in to multiple organizations and switch between them.
   
 > [!IMPORTANT]
-> If you're having trouble using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know. 
+> If you're having trouble using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
+
+## Before you begin
+
+You must be an admin in a Microsoft 365 organization to use the admin mobile app.
+
+## Watch: Install the admin mobile app
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
   
-## Download the admin mobile app
+## Steps: Download the admin mobile app
 
 [Microsoft 365 Admin mobile app](https://go.microsoft.com/fwlink/?LinkID=627216).
-  
-Watch a short video about installing the admin mobile app.<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
- 
 ## Frequently asked questions
 
 Below are answers to some frequently asked questions people ask about the app.
@@ -93,11 +96,11 @@ Yes, you can setup multiple accounts or tenants.
 You can try some common mobile app troubleshooting steps:
   
 1. Close and reopen the app.
-    
+
 2. Uninstall and reinstall the app.
 
 3. If that doesn't work, you can email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
-    
+
 ### What do I do if my question isn't answered?
 
 Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an issue with the app. Or you can give feedback at the bottom of this article. 
