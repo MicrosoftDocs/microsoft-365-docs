@@ -112,12 +112,12 @@ descriptive text for Junk email reporting options.
 one among the following options:
         - **Ask me before sending a report**
         - **Automatically send reports**
-        - **Never send reports**
+        -  **Never send reports** \
    When you're finished, click **Save**.
-      - **Send the reported messages to**: Make one of the following selections:
-      - **Microsoft (Recommended)**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
-      - **Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions will go to both Microsoft for analysis and to the custom mailbox for your admin or security operations team to analyze.
-      - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. Use this option if you want the message to only go to an admin or the security operations team for analysis first. Messages will not go to Microsoft unless the admin forwards it themselves.
+              - **Send the reported messages to**: Make one of the following selections:
+              - **Microsoft (Recommended)**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
+              - **Both Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions will go to both Microsoft for analysis and to the custom mailbox for your admin or security operations team to analyze.
+              - **Custom mailbox only**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. Use this option if you want the message to only go to an admin or the security operations team for analysis first. Messages will not go to Microsoft unless the admin forwards it themselves.
 
         > [!NOTE]
         > U.S. Government organizations (GCC, GCC-H, and DoD) can only configure **Custom mailbox**. The other two options are disabled.
