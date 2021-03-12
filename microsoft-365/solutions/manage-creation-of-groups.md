@@ -44,7 +44,7 @@ The steps in this article won't prevent members of certain roles from creating G
 - Directory Writers: Azure AD
 - SharePoint Administrator: SharePoint Admin center, Azure AD
 - Teams Service Administrator: Teams Admin center, Azure AD
-- User Management Administrator: Microsoft 365 Admin center, Yammer, Azure AD
+- User Administrator: Microsoft 365 Admin center, Azure AD
 
 If you're a member of one of these roles, you can create Microsoft 365 Groups for restricted users, and then assign the user as the owner of the group.
 

@@ -115,7 +115,7 @@ Red or yellow results may also indicate web parts that refresh data too frequent
 >[!IMPORTANT]
 >Test rules are added and updated regularly so please refer to the latest version of the tool for details about current rules and specific information included in test results. You can verify the version by managing your extensions and the extension will advise whether an update is available.
 
-## How to use the Network Trace tab
+## How to use the Network Trace tab and how to export a HAR file
 
 The **Network Trace** tab provides detailed information about both requests to build the page and the responses received from SharePoint.
 
@@ -130,9 +130,11 @@ The **Network Trace** tab provides detailed information about both requests to b
 
 2. **Test item load times**. In some cases there will be no time or color indicator because the items have already been cached by the browser. To test this correctly, open the page, clear browser cache, and then click **Start** as that will force a "cold" page load and be a true reflection of the initial page load. This should then be compared to the "warm" page load as that will also help determine what items are being cached on the page.
 
-3. **Share relevant details with others who can help investigate issues**. To share the details or information provided in the tool with your developers or a technical support person, click **Export to JSON** (as shown in the image above). That will enable you to download the results, viewable with a JSON file viewer.
+3. **Share relevant details with others who can help investigate issues**. To share the details or information provided in the tool with your developers or a technical support person, using the **Enable exporting to HTTP Archive (HAR)** is the recommended approach. 
 
-    If you have opted to use the preview feature *enable Export to HAR* then the export type will show as **Export to HAR**.
+![Enable exporting to HAR](../media/page-diagnostics-for-spo/pagediag-submithar.png)
+
+That should be enabled prior to clicking Start, which will then enable debug mode in your browser. It will generate an HTTP Archive file (HAR) which can then be accessed through the "Network Trace" tab. Click the "Export to HAR" and it will download the file to your computer and you can then share it accordingly. The file can be opened in a variety of debug tools, like F12 Developer Tools and Fiddler.
 
     ![Network trace](../media/page-diagnostics-for-spo/pagediag-NetworkTraceHAR.PNG)
 
