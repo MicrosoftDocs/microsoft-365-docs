@@ -199,7 +199,9 @@ To quickly view the health status for a policy, navigate the Policy tab and the 
 - Recommendations: There are some issues with the policy that may prevent the policy from operating as expected.
 - Warnings: There are issues with the policy that will prevent it from identifying risky activities.
 
-For more details about any recommendations or warnings, select a policy on the Policy tab to open the policy details card. More information about the recommendations and warnings, including guidance on how to address these issues, will be displayed in the Notifications section of the details card.
+For more details about any recommendations or warnings, select a policy on the **Policy** tab to open the policy details card. More information about the recommendations and warnings, including guidance on how to address these issues, will be displayed in the Notifications section of the details card.
+
+![Insider risk management policy health](../media/insider-risk-policy-health.png)
 
 Use the following table to learn more about recommendations and warning notifications and actions to take to resolve potential issues.
 
