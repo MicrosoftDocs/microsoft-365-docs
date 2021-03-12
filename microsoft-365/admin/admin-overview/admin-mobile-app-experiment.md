@@ -104,7 +104,11 @@ You can try some common mobile app troubleshooting steps:
 ### What do I do if my question isn't answered?
 
 Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an issue with the app. Or you can give feedback at the bottom of this article. 
-  
-## See also
+
+## Next steps
+
+
+
+## Related content
 
 [Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
