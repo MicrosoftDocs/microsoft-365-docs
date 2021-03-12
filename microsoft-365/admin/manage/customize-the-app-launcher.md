@@ -61,18 +61,6 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
     
 Your custom tile now appears in the app launcher on the **All** tab for you and your users. 
   
-## Promote the tile to App Launcher
-
-1. Select the app launcher icon and select the **All apps**. 
-    
-2. Locate the new tile for your app, select the ellipsis, and choose **Pin to launcher**.
-  
-    > [!NOTE]
-    > If you don't see the custom tile created in the previous steps, make sure you have an Exchange Online mailbox assigned to you and you've signed into your mailbox at least once. These steps are required for custom tiles in Microsoft 365. 
-  
-> [!IMPORTANT]
-> Both you and your users need to perform these steps to promote custom tiles from the My apps page to the app launcher. 
-  
 ## Edit or delete a custom tile
 
 1. In the admin center, go to the **Settings** > **Org Settings** > **Organization profile**</a> tab.
