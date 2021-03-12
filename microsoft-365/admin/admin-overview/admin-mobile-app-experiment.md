@@ -107,8 +107,12 @@ Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an
 
 ## Next steps
 
-Once you've dow
+Once you've downloaded the admin mobile, you can add users to get you started. Check out [Add users and assign licenses at the same time](../add-users/add-users.md).
 
 ## Related content
+
+[Admin center overview](admin-overview.md)
+
+[Reset passwords](../add-users/reset-passwords.md)
 
 [Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
