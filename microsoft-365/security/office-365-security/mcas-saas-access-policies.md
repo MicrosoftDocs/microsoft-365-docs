@@ -33,7 +33,7 @@ The first step in using Microsoft Cloud App Security to manage SaaS apps is to d
 
 You can begin to manage these by doing the following:
 1. First, in Azure AD, create a new conditional access policy and configure it to "Use Conditional Access App Control." This redirects the request to Cloud App Security. You can create one policy and add all SaaS apps to this policy.
-1. Next, in Cloud App Security, create Conditional Access App Control policies. Create one policy for each control you want to apply. 
+1. Next, in Cloud App Security, create session policies. Create one policy for each control you want to apply. 
 
 To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Azure AD conditional access policy plus suggested policies you can create in Cloud App Security. In this example, the policies created in Cloud App Security apply to all SaaS apps you are managing. These are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files. 
 
@@ -42,8 +42,6 @@ illustration option A
 
 illustration option B -- truncated 
 ![Policies for managing SaaS apps in Cloud App Security](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
-
-It's important to understand that conditional access policies in Azure AD are assigned to users and groups. The policies recommended for Cloud App Security are designed to protect the SaaS apps that you include in the policies, regardless of which users are accessing. 
 
 Permissions to SaaS apps are typically based on business need for access to the app. These permissions can be highly dynamic. Using Cloud App Security policies ensures protection to app data, regardless of whether users are assigned to an Azure AD group associated with baseline, sensitive, or highly regulated protection.
 
@@ -61,8 +59,11 @@ For example, you can protect your Box environment with these types of built-in a
 - Activity performed by terminated user (requires AAD as IdP)
 - Malware detection
 - Multiple failed login attempts
+- Ransomware activity
+- Risky Oauth App
+- Unusual file share activity
 
-For examples of how to apply additional protection to specific apps, see [Protecting connected apps](https://docs.microsoft.com/cloud-app-security/protect-connected-apps). 
+These are examples and additional policy templates are added on a regular basis. For examples of how to apply additional protection to specific apps, see [Protecting connected apps](https://docs.microsoft.com/cloud-app-security/protect-connected-apps). 
 
 [How Cloud App Security helps protect your Box environment](https://docs.microsoft.com/cloud-app-security/protect-box) demonstrates the types of controls that can help you protect your business data in Box and other apps with sensitive data.
 
@@ -76,9 +77,13 @@ The following table and illustration provide several examples of policies that c
 
 |Protection level|Example policies|
 |:---------------|:-------|
-| Baseline |Alert when files with this attribute ("All Countries: Email saddress") are shared outside the organization<p> Block downloads of files with this attribute (All Counties: Email address") to unmanaged devices |
-| Sensitive  | Protect downloads of files with this attribute ("All countries: Finance: Credit card number") to managed devices <p> Block downloads of files with this attribute ("All countries: Finance: Credit card number") to unmanaged devices <p> Alert wen a file with on of these lables is uploaded to OneDrive for Business or Box (Customer data, Human Resources: Salary Data,Human Resources, Employee data)|
-| Highly regulated |Alert when files iwth this label ("Highly classified") are downloaded to managed devices <p>Block downloads of files with this label ("Highly classified") to unmanaged devices |
+| Baseline |Alert when files containing this sensitive information type ("Credit Card Number") are shared outside the organization <b>
+Block downloads of files containing this sensitive information type (”Credit card number") to unmanaged devices
+|
+| Sensitive  | Protect downloads of files containing this sensitive information type ("Credit card number") to managed devices <b>
+Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices <b>
+Alert when a file with on of these labels is uploaded to OneDrive for Business or Box (Customer data, Human Resources: Salary Data,Human Resources, Employee data)|
+| Highly regulated |Alert when files with this label ("Highly classified") are downloaded to managed devices <p>Block downloads of files with this label ("Highly classified") to unmanaged devices |
 | | |
 
 
