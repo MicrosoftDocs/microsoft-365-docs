@@ -97,7 +97,7 @@ Select **Start** to begin collecting data for analysis.
 
     ![Page diagnostics](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
-1. A [**Network trace**](#how-to-use-the-network-trace-tab) tab provides details about page build requests and responses.
+1. A [**Network trace**](#how-to-use-the-network-trace-tab-and-how-to-export-a-har-file) tab provides details about page build requests and responses.
 
 ## How to use the Diagnostic tests tab
 
@@ -136,7 +136,7 @@ The **Network Trace** tab provides detailed information about both requests to b
 
 That should be enabled prior to clicking Start, which will then enable debug mode in your browser. It will generate an HTTP Archive file (HAR) which can then be accessed through the "Network Trace" tab. Click the "Export to HAR" and it will download the file to your computer and you can then share it accordingly. The file can be opened in a variety of debug tools, like F12 Developer Tools and Fiddler.
 
-    ![Network trace](../media/page-diagnostics-for-spo/pagediag-NetworkTraceHAR.PNG)
+![Network trace](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)
 
 > [!IMPORTANT]
 > These results contain URLs and that can be classified as PII (Personally Identifiable Information). Make sure to follow your organization's guidelines before distributing that information.
