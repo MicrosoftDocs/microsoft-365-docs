@@ -36,10 +36,6 @@
           href: communication-compliance-feature-reference.md
         - name: Case study - Contoso quickly configures an offensive language policy 
           href: communication-compliance-case-study.md
-        - name: Supervision policies in Office 365
-          href: supervision-policies.md
-        - name: Configure supervision policies for Office 365
-          href: configure-supervision-policies.md
     - name: Insider risk management
       items:
         - name: Overview
@@ -110,6 +106,8 @@
           href: sit-edm-wizard.md
         - name: Modify exact data match schema to use configurable match
           href: sit-modify-edm-schema-configurable-match.md
+        - name: Create notifications for exact data match activities (preview)
+          href: sit-edm-notifications-activities.md  
         - name: Create a custom sensitive information type - Security & Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell

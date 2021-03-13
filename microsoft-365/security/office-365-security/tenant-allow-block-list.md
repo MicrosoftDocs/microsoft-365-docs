@@ -51,7 +51,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
 
-  ```dos
+  ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -61,7 +61,11 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - The Tenant Allow/Block List allows a maximum of 500 entries for URLs, and 500 entries for file hashes.
 
-- An entry should be active within 15 minutes.
+- The maximum number of characters for each entry is:
+  - File hashes = 64
+  - URL = 250
+
+- An entry should be active within 30 minutes.
 
 - By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire.
 
@@ -73,10 +77,10 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
   For more information, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+  > [!NOTE]
+  > 
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  > - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 ## Use the Security & Compliance Center to create block URL entries in the Tenant Allow/Block List
 
@@ -92,7 +96,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
      - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entries.
 
-     or
+       or
 
      - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
 
@@ -294,7 +298,7 @@ New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef
 This example adds a block URL entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com). Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.
 
 ```powershell
-New-TenantAllowBlockListItem -ListType Url -Block -Entries ~contoso.com
+New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
@@ -311,6 +315,7 @@ This example adds an allowed bulk sender entry for the specified domain that nev
 
 ```powershell
 New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
+New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
