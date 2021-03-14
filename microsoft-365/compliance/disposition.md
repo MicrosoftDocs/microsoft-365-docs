@@ -46,7 +46,7 @@ Additionally:
 
 - To view the contents of items during the disposition process, add users to the following two role groups: **Content Explorer Content Viewer** and **Content Explorer List Viewer**. If users don't have the permissions from these role groups, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the compliance center.
 
-- By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For an administrator to see all items for all users, use the **Records management settings** > **Record Manager Security Group** to select a security group that contains the administrator accounts. 
+- By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For an administrator to see all items for all users, and all retention labels that are configured for disposition review: Use the **Records management settings** > **Record Manager Security Group** to select a security group that contains the administrator accounts.
 
 ### Enable auditing
 
