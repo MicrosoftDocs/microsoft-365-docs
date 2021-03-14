@@ -25,7 +25,7 @@ description: "Monitor and manage the disposal of content, whether you use a disp
 Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
 > [!NOTE]
-> Rolling out in preview: multi-staged disposition. Now, an administrator can add up to five stages of disposition and reviewers can forward disposition requests to additional users. You can also customize the email notifications. For more information, see the information that follows.
+> Rolling out in preview: multi-staged disposition. Now, an administrator can add up to five stages of disposition and reviewers can forward disposition requests to additional users. You can also customize the email notifications and reminders. For more information, see the information that follows.
 
 ## Prerequisites for viewing content dispositions
 
@@ -40,9 +40,13 @@ To successfully access the **Disposition** tab in the Microsoft 365 compliance c
 
 To grant users just the permissions they need for disposition reviews without granting them permissions to view and configure other features for retention and records management, create a custom role group (for example, named "Disposition Reviewers") and grant this group the Disposition Management role.
 
-Additionally, to view the contents of items during the disposition process, add users to the following two role groups: **Content Explorer Content Viewer** and **Content Explorer List Viewer**. If users don't have the permissions from these role groups, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the compliance center.
-
 For instructions to configure these permissions, see [Give users access to the Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+
+Additionally:
+
+- To view the contents of items during the disposition process, add users to the following two role groups: **Content Explorer Content Viewer** and **Content Explorer List Viewer**. If users don't have the permissions from these role groups, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the compliance center.
+
+- By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For an administrator to see all items for all users, use the **Records management settings** > **Record Manager Security Group** to select a security group that contains the administrator accounts. 
 
 ### Enable auditing
 
@@ -65,16 +69,16 @@ When a disposition review is triggered at the end of the retention period:
    - Users receive an initial email notification at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned.
     
 - The reviewers go to the **Disposition** tab in the Microsoft 365 compliance center to review the content and decide whether to permanently delete it, extend its retention period, or apply a different retention label. New in preview:
-- Reviewers see only the disposition reviews that are assigned to them, whereas administrators see all disposition reviews.
+- Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected Record Manager Security Group see all disposition reviews.
 - Reviewers can add new users to the same disposition review, which generates a new auditing event and notifies the administrator.
-- For the disposition review process, a details pane for each item shows a preview of the content if they have permissions to see, and a link to request permissions if not. This details pane also has a History tab to display indexed properties, where it's located, who created it and when, who last modified it and when, matched sensitive info types, and any disposition review actions to date.
+- For the disposition review process, a details pane for each item shows a preview of the content if they have permissions to see, and a link to request permissions if not. This details pane also has a **History** tab to display indexed properties, where it's located, who created it and when, who last modified it and when, matched sensitive info types, and any disposition review actions to date.
 
 A disposition review can include content in Exchange mailboxes, SharePoint sites, and OneDrive accounts. Content awaiting a disposition review in those locations is permanently deleted only after a reviewer for the final stage of disposition chooses to permanently delete the content.
 
 > [!NOTE]
 > A mailbox must have at least 10 MB data to support disposition reviews.
 
-An administrator can see an overview of all pending dispositions in the **Overview** tab. For example:
+Administrators can see an overview of all pending dispositions in the **Overview** tab. Reviewers see only their items pending disposition. For example:
 
 ![Pending dispositions in Records management overview](../media/dispositions-overview.png)
 
@@ -95,7 +99,7 @@ From the **Define retention settings** page for a retention label:
 
 ![Retention settings for a label](../media/disposition-review-option.png)
  
-After you select this **Trigger a disposition review** option, on the next page of the wizard, you specify how many stages of disposition you want and the disposition reviewers for each stage:
+After you select this **Trigger a disposition review** option, on the next page of the wizard, you specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
 
 ![Specifying disposition reviewers](../media/disposition-reviewers.png)
 
@@ -124,7 +128,7 @@ From any of the Disposition pages in the compliance center, select **Record mana
 
 ![Record management settings](../media/record-management-settings.png)
 
-Then select whether you want to use the default email templates or specify your own text.
+Then select whether you want to use just the default email templates, or append your own text to the default template. Text and hyperlinks are supported.
 
 ### Viewing and disposing of content
 
