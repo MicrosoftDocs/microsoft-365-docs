@@ -72,7 +72,7 @@ Your organization might be required to identify and perform additional analysis 
   
 Keep the following in mind about partially indexed items:
   
-- When you run an eDiscovery search, the total number and size of partially indexed Exchange items (returned by the search query) are displayed in search statistics in the details pane, and labeled as **Indexed items**. Statistics about partially indexed items displayed in the details pane don't include partially indexed items in SharePoint or OneDrive.
+- When you run an eDiscovery search, the total number and size of partially indexed Exchange items (returned by the search query) are displayed in the search statistics on the flyout page, and labeled as **unindexed items**. Statistics about partially indexed items displayed on the flyout page don't include partially indexed items in SharePoint or OneDrive.
 
 - If the search that you're exporting results from was a search of specific content locations or all content locations in your organization, only the unindexed items from content locations that contain items that match the search criteria will be exported. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. The reason for this is that exporting partially indexed items from lots of locations in the organization might increase the likelihood of export errors and increase the time it takes to export and download the search results.
 
