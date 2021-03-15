@@ -43,9 +43,6 @@ Microsoft Managed Desktop uses these settings in the Autopilot profile used for 
 |Apply device name template     | Yes        |
 |Enter a name     | MMD-%RAND:11%        |
 
-> [!NOTE]
-> While "white glove" provisioning is only enabled for customers with ESP turned on, it is not currently supported in Microsoft Managed Desktop.
-
 ## Enrollment Status Page settings
 
 Microsoft Managed Desktop uses these settings for the Enrollment Status Page experience:
@@ -80,33 +77,32 @@ The experience proceeds as follows:
 
 ![Start page of Autopilot setup showing "device preparation" and "device setup" phases.](../../media/mmd-autopilot-screenshot.png)
 
-## Autopilot Pre-provisioning
+## Autopilot for pre-provisioned deployment
+> [!NOTE]
+> Autopilot for pre-provisioned deployment in Microsoft Managed Desktop is currently in public preview.
 
-Autopilot Pre Provisioning is currently in public preview.
+## Additional prerequisites for Autopilot for pre-provisioned deployment
+• You must have Enrollment Status Page (ESP) enabled. For more information, see [Initial deployment](#initial-deployment).
+• Device must plugged in to AC power and have a wired network connection.
+• If you have devices that were registered using the Microsoft Managed Desktop portal before August 2020, de-register and register them again.
+• Devices must must have a factory image that includes the November cumulative update installed or must be reimaged with the latest Microsoft Managed Desktop image.
+• Physical devices must support TPM 2.0 and device attestation. Virtual machines aren't supported. The pre-provisioning process uses Windows Autopilot self-deploying capabilities, so TPM 2.0 is required. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Autopilot self-deploying mode and Autopilot pre-provisioned deployment in [Windows Autopilot networking requirements](https://docs.microsoft.com/mem/autopilot/networking-requirements#tpm).
 
-## Additional prerequisites for Autopilot Pre-Provisioning
-• Customers must have Enrollment Status Page (ESP) enabled or willing to enable it. See Initial deployment section for how to enable ESP : https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/get-started/esp-first-run?view=o365-worldwide#initial-deployment
-• Device is plugged in with ethernet cable.
-• Devices that have been registered using the MMD portal before August 2020 will need to be de-registered and registered again.
-• Devices must must have factory image with November LCU injected or must be reimaged with the latest Universal Image available. If devices do not meet this requirement, this feature will not work.
-• Physical devices that support TPM 2.0 and device attestation. Virtual machines aren't supported. The pre-provisioning process uses Windows Autopilot self-deploying capabilities, so TPM 2.0 is required. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Autopilot self-deploying mode and Autopilot Pre-Previsioning in https://docs.microsoft.com/en-us/mem/autopilot/networking-requirements#tpm.
+## Sequence of events in Autopilot for pre-provisioned deployment
+1. IT Admin reimages or resets the device if needed.
+2. IT Admin boots the device, reaches the out-of-box-experience, and presses the Windows key five times.
+3. IT Admin selects Windows Autopilot Provisioning and then selects **Continue**. On the Windows Autopilot configuration screen, information will be displayed about the device.
+5. IT admin selects **Provision** to start the provisioning process.
+6. Device starts ESP and goes through device preparation and setup phases. During the device setup phase, you'll see **App installation x of x** displayed (depending on the exact configuration of the ESP profile).
+7. The account setup step is currently skipped in the Microsoft Managed Desktop configuration, since we disable User ESP.
+8. The device restarts.
 
-## Expected Autopilot Pre Provisioning experience for IT admins using Autopilot Pre-Provisioning
-1. IT Admin reimage/reset the device if needed.
-2. IT Admin boots the device, reaches OOBE and press the Windows Key 5 times.
-3. IT Admin selects Windows Autopilot Provisioning and then click continue.
-4. On the Windows Autopilot configuration screen, information will be displayed about the device.
-5. IT admin selects Provision to start the Autopilot Provisioning Process.
-6. Device starts ESP and go through Device Preparation and Device setup phases.
-7. During Device Setup, Applications should be installed showing App installation x of x depending of what’s configured in the ESP profile.
-8. The 3rd step (Account Setup) is currently skipped in the Microsoft Managed Desktop configuration as we disable User ESP.
-9. Once the first 2 steps are complete, the device is expected to reboot.
-After rebooting, the device will show the Green status screen, with a Reseal button.![image](https://user-images.githubusercontent.com/44784523/110839865-e4113d00-8258-11eb-92e5-8922bdc4a632.png)
+After it restarts, the device will show the green status screen, with a **Reseal** button.
 
 > [!NOTE]
 > Known issues : 
-> ESP does not re-run after Autopilot Pre-Provisioning reseal function.
-> Device names are not being renamed by Autopilot Pre-Provisioning. Device will only be renamed after going through ESP user flow.
+> ESP does not run again after the Autopilot for pre-provisioned deployment reseal function.
+> Device are not being renamed by Autopilot for pre-provisioned deployment. The device will only be renamed after going through the ESP user flow.
 
 
 ## Change to Autopilot and Enrollment Status Page settings
