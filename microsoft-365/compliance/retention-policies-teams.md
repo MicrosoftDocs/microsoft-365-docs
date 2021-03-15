@@ -24,7 +24,7 @@ description: "Learn about retention policies that apply to Microsoft Teams."
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 > [!NOTE]
-> If you are a user who is seeing a message in Teams that your chats and messages have been deleted by a retention policy, see [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> If you are seeing a message in Teams that your chats or messages have been deleted by a retention policy, see [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 > 
 > The information on this page is for IT administrators who manage these retention policies.
 
@@ -53,8 +53,8 @@ You can use a retention policy to retain and delete data from chats and channel 
 
 These mailboxes are, listed by their RecipientTypeDetails attribute:
 
-- **UserMailbox**: These mailboxes store messages for Teams users who have an Exchange Online mailbox.
-- **MailUser**: These mailboxes store messages for Teams users who have a mailbox for an on-premises Exchange server and not Exchange Online.
+- **MailUser**: These mailboxes store messages for cloud-based Teams users.
+- **UserMailbox**: These mailboxes store messages for [on-premises Teams users](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: These mailboxes store messages for Teams channels.
 
 Other mailbox types, such as RoomMailbox that is used for Teams conference rooms, are not supported for Teams retention policies.
