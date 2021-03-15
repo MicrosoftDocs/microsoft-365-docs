@@ -239,8 +239,12 @@
             href: data-loss-prevention-policies.md
           - name: Learn about Endpoint data loss prevention
             href: endpoint-dlp-learn-about.md
+          - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)
+            href: dlp-teams-default-policy.md
           - name: Learn about Microsoft 365 data loss prevention on-premises scanner (preview)
-            href: dlp-on-premises-scanner-learn.md  
+            href: dlp-on-premises-scanner-learn.md
+          - name: Learn about the Microsoft Compliance Extension (preview)
+            href: dlp-chrome-learn-about.md  
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -255,6 +259,8 @@
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Endpoint DLP
             href: endpoint-dlp-configure-proxy.md
+          - name: Get started with the Microsoft Compliance Extension (preview)
+            href: dlp-chrome-get-started.md
           - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
             items:
               - name: Onboarding tools and methods for Windows 10 devices   
