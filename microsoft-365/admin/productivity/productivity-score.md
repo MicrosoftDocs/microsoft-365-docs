@@ -2,8 +2,8 @@
 title: "Microsoft Productivity Score"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,7 +23,7 @@ description: "Overview of Microsoft productivity score."
 
 # Microsoft Productivity Score 
 
-Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
+Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
 
 It provides:
 
@@ -67,9 +67,9 @@ Productivity Score includes data from Exchange, SharePoint, OneDrive, Teams, Wor
 Your organization's score is updated daily and reflects user actions completed in the last 28 (including the current day).
 
 
-## Pre-requisites 
+## Prerequisites 
 
-For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
+For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization's data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
 > A license to Workplace Analytics is not required to get the Productivity Score features.
 
@@ -87,9 +87,9 @@ Productivity Score is only available in the Microsoft 365 Admin Center and can o
 > [!NOTE]
 > Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Productivity Score.
 
-Please note that the information is only intended to be used for furthering digital transformation using Microsoft 365, and should therefore be shared with discretion. 
+The role-based access control model for Productivity Score helps organizations further digital transformation efforts with Microsoft 365 by providing the flexibility to assign roles to IT professionals. 
 
-Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization’s IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft .
+Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft .
 
 You can access the experience from Microsoft 365 Admin home under **Reports** > **Productivity Score**.
 
