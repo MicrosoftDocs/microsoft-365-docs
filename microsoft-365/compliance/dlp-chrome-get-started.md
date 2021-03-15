@@ -73,7 +73,7 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 
 The Microsoft Compliance Extension is supported for the current version of Chrome and the past three versions.
 
-### Overall workflow
+### Overall installation workflow
 
 Deploying Microsoft Compliance Extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
 
@@ -85,6 +85,9 @@ Deploying Microsoft Compliance Extension is a multi-phase process. You can choos
 6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
 7. [Viewing Chrome DLP data in activity explorer](#viewing-chrome-dlp-data-in-activity-explorer) 
 
+### Prepare infrastructure
+
+1. If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed apps list. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices you can leave Chrome on the unallowed browser list. The Microsoft Compliance Extension will bypass the restrictions of the unallowed apps list for those computers where it is installed.  
 
 ### Prepare your devices
 
