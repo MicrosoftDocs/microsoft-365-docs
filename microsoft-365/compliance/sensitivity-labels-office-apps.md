@@ -119,7 +119,7 @@ If users have one of the Azure Information Protection clients installed ([unifie
 
 To use built-in labeling rather than the Azure Information Protection client for Office apps, we recommend you use the Group Policy setting **List of managed add-ins** as documented in [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
-For Word, Excel, PowerPoint, and Outlook, specify the following programmatic identifiers (ProgID) for the Azure Information Protection client, and set the option to **0: The add-in is always disabled (blocked)**
+For Microsoft Word 2016, Excel 2016, PowerPoint 2016, and Outlook 2016, specify the following programmatic identifiers (ProgID) for the Azure Information Protection client, and set the option to **0: The add-in is always disabled (blocked)**
 
 |Application  |ProgID  |
 |---------|---------|
