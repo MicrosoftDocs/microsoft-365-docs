@@ -68,7 +68,8 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of mailboxes or sites that can be searched in a single search. |No limit|
 |Maximum number of searches that can run at the same time. |No limit |
 |Maximum number of searches that a single user can start at the same time. |10 | 
-|Maximum number of characters for a search query (including operators and conditions). |10,000&nbsp;<sup>2</sup>|
+|Maximum number of characters for a search query (including operators and conditions). |10,000 &nbsp;<sup>2</sup>|
+|Maximum number of characters for a search query for Sharepoint and OneDrive For Business Sites (including operators and conditions). |10,000<br>4,000 with Wildcards&nbsp;<sup>2</sup>|
 |Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***.|3 |  
 |Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator. |10,000&nbsp;<sup>3</sup>|
 |Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed. |100|
@@ -127,7 +128,11 @@ Microsoft collects performance information for searches run by all organizations
 > [!NOTE]
 > <sup>1</sup> Any item that exceeds a single file limit will show up as a processing error.
 >
-> <sup>2</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched count against this limit.
+> <sup>2</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched count against this limit. The total number of characters consists of:<br>
+> - All Characters in both the Users and Filters fields
+> - All Compliance Security Filters that apply to the user will be included in their search.
+> - The characters from any location properties in the search (ExchangeLocation,PublicFolderLocation,SharpointLocation,ExchangeLocationExclusion,PublicFolderLocationExclusion,SharePointLocationExclusion, OneDriveLocationExclusion).
+> - Example: Including all SPO/ODB workloads will incur 6 characters as the word "ALL" will appear for both the SharePointLocation and OneDriveLocation
 >
 > <sup>3</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR …"**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.
 >
