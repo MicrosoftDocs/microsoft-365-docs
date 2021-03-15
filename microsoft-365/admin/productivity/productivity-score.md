@@ -87,7 +87,7 @@ Productivity Score is only available in the Microsoft 365 Admin Center and can o
 > [!NOTE]
 > Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Productivity Score.
 
-The role-based access control model for Productivity Score helps organizations further digital transformation efforts with Microsoft 365 by providing the flexibility to assign roles to IT professionals. 
+The role-based access control model for Productivity Score helps organizations further digital transformation efforts with Microsoft 365 by providing the flexibility to assign roles to IT professionals within an organization.
 
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft .
 
