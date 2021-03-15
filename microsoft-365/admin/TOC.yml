@@ -231,6 +231,8 @@
               href: productivity/meetings.md
             - name: Microsoft 365 Apps health
               href: productivity/apps-health.md
+            - name: Endpoint Analytics
+              href: https://docs.microsoft.com/mem/analytics/productivity-score
             
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
