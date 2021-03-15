@@ -43,7 +43,7 @@ activity |description  | supported policy actions|
 1. [Get started with endpoint data loss prevention](endpoint-dlp-getting-started.md)
 2. [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
 3. [Install the extension on your Windows 10 devices](dlp-chrome-get-started.md)
-4. Remove Google Chrome from the unallowed app list. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers).
+4. Remove Google Chrome from the unallowed app list if you are rolling out to all onboarded Windows 10 devices. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers).
 > [!TIP]
 > If you are deploying the Microsoft Compliance Extension to only a few devices and you still want to restrict uploading of sensitive items via Chrome, you can leave Chrome on the unallowed browser list. The Microsoft Compliance Extension will bypass the restrictions of the unallowed apps list for those computers where it is installed.
 5. [Create or edit DLP policies](create-test-tune-dlp-policy.md) that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10 devices
