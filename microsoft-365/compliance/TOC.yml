@@ -44,16 +44,18 @@
           href: insider-risk-management.md
         - name: Plan for insider risk management
           href: insider-risk-management-plan.md
-        - name: Get started with insider risk settings
-          href: insider-risk-management-settings.md
         - name: Get started with insider risk management
           href: insider-risk-management-configure.md
+        - name: Get started with insider risk settings
+          href: insider-risk-management-settings.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
         - name: Investigate insider risk alerts
           href: insider-risk-management-alerts.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
+        - name: Review activities with the insider risk audit log
+          href: insider-risk-management-audit-log.md
         - name: Review data with the insider risk content explorer
           href: insider-risk-management-content-explorer.md
         - name: Manage the workflow with the Users dashboard
