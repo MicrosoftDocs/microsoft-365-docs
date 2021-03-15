@@ -82,11 +82,11 @@ The experience proceeds as follows:
 > Autopilot for pre-provisioned deployment in Microsoft Managed Desktop is currently in public preview.
 
 ## Additional prerequisites for Autopilot for pre-provisioned deployment
-• You must have Enrollment Status Page (ESP) enabled. For more information, see [Initial deployment](#initial-deployment).
-• Device must plugged in to AC power and have a wired network connection.
-• If you have devices that were registered using the Microsoft Managed Desktop portal before August 2020, de-register and register them again.
-• Devices must must have a factory image that includes the November cumulative update installed or must be reimaged with the latest Microsoft Managed Desktop image.
-• Physical devices must support TPM 2.0 and device attestation. Virtual machines aren't supported. The pre-provisioning process uses Windows Autopilot self-deploying capabilities, so TPM 2.0 is required. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Autopilot self-deploying mode and Autopilot pre-provisioned deployment in [Windows Autopilot networking requirements](https://docs.microsoft.com/mem/autopilot/networking-requirements#tpm).
+- You must have Enrollment Status Page (ESP) enabled. For more information, see [Initial deployment](#initial-deployment).
+- Device must plugged in to AC power and have a wired network connection.
+- If you have devices that were registered using the Microsoft Managed Desktop portal before August 2020, de-register and register them again.
+- Devices must must have a factory image that includes the November cumulative update installed or must be reimaged with the latest Microsoft Managed Desktop image.
+- Physical devices must support TPM 2.0 and device attestation. Virtual machines aren't supported. The pre-provisioning process uses Windows Autopilot self-deploying capabilities, so TPM 2.0 is required. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Autopilot self-deploying mode and Autopilot pre-provisioned deployment in [Windows Autopilot networking requirements](https://docs.microsoft.com/mem/autopilot/networking-requirements#tpm).
 
 ## Sequence of events in Autopilot for pre-provisioned deployment
 1. IT Admin reimages or resets the device if needed.
@@ -101,8 +101,8 @@ After it restarts, the device will show the green status screen, with a **Reseal
 
 > [!NOTE]
 > Known issues : 
-> ESP does not run again after the Autopilot for pre-provisioned deployment reseal function.
-> Device are not being renamed by Autopilot for pre-provisioned deployment. The device will only be renamed after going through the ESP user flow.
+> - ESP does not run again after the Autopilot for pre-provisioned deployment reseal function.
+> - Device are not being renamed by Autopilot for pre-provisioned deployment. The device will only be renamed after going through the ESP user flow.
 
 
 ## Change to Autopilot and Enrollment Status Page settings
