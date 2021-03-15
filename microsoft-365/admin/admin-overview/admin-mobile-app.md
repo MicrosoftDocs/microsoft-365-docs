@@ -48,8 +48,6 @@ If you're an admin and you're responsible for more than one Microsoft 365 organi
   
 ## Download the admin mobile app
 
-[Microsoft 365 Admin mobile app](https://go.microsoft.com/fwlink/?LinkID=627216).
-
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
