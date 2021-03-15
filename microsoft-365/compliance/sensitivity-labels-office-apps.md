@@ -129,12 +129,14 @@ For Word, Excel, PowerPoint, and Outlook, specify the following programmatic ide
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
+Deploy this setting by using Group Policy, or by using the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
+
 > [!NOTE]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the Azure Information Protection client might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
 
 Alternatively, you can interactively disable or remove the **Microsoft Azure Information Protection** Office add-in from Word, Excel, PowerPoint, and Outlook. This method is suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
 
-When you disable or remove this Office add-in, the Azure Information Protection client remains installed on the computer so that you can continue to label files outside your Office apps. For example, by using File Explorer, or PowerShell.
+Whichever method you choose, the changes take effect when Office apps restart. By disabling or removing this Office add-in, the Azure Information Protection client remains installed on the computer so that you can continue to label files outside your Office apps. For example, by using File Explorer, or PowerShell.
 
 For information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose your Windows labeling solution](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
 
