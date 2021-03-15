@@ -103,6 +103,10 @@ By sharing information across MAPG, Azure AD, and Microsoft Cloud App Security, 
 
   From the Microsoft Cloud App Security portal, you can see API usage level and aggregate data transfer and link to the MAPG portal for the details.
 
+Here's a summary of the integration.
+
+![The integration of MAPG with Azure AD and Microsoft Cloud App Security](..\media\manage-app-protection-governance\mapg-integration.png)
+
 Additionally, MAPG sends its alerts as signals to Microsoft Cloud App Security and Microsoft 365 Defender for more detailed analysis of app-based security incidents.
 
 <!--
