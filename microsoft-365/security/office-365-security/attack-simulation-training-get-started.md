@@ -105,3 +105,6 @@ For step by step instructions on how to create a payload for use within a simula
 ### Gaining insights
 
 For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](attack-simulation-training-insights.md).
+
+> [!NOTE]
+> Attack Simulator uses Safe Links in Defender for Office 365 to securely track click data for the URL in the payload message that's sent to targeted recipients of a phishing campaign, even if the **Do not track user clicks** setting in Safe Links policies is turned on.

@@ -41,6 +41,8 @@ After you apply system tags or custom tags to users, you can use those tags as f
 
 This article explains how to configure user tags in the Security & Compliance Center. There are no cmdlets in Security & Compliance Center to manage user tags.
 
+To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](security-recommendations-for-priority-accounts.md).
+
 ## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User tags** page, open <https://protection.office.com/userTags>.
@@ -59,9 +61,9 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
 - You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
-## Use the Security Center to create user tags
+## Use the Security & Compliance Center to create user tags
 
-1. In the Security Center, go to **Threat management** \> **User tags**.
+1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, click **Create tag**.
 
@@ -90,9 +92,9 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
    When you're finished, click **Submit**.
 
-## Use the Security Center to view user tags
+## Use the Security & Compliance Center to view user tags
 
-1. In the Security Center, go to **Threat management** \> **User tags**.
+1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view (don't click on the checkbox).
 
@@ -100,9 +102,9 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
    When you're finished, click **Close**.
 
-## Use the Security Center to modify user tags
+## Use the Security & Compliance Center to modify user tags
 
-1. In the Security Center, go to **Threat management** \> **User tags**.
+1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view, and then click **Edit tag**.
 
@@ -110,10 +112,10 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
    When you're finished, click **Submit**.
 
-## Use the Security Center to remove user tags
+## Use the Security & Compliance Center to remove user tags
 
 **Note**: You can't remove the built-in **Priority account** tag.
 
-1. In the Security Center, go to **Threat management** \> **User tags**.
+1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to remove, click **Delete tag**, and then select **Yes, remove** in the warning that appears.
