@@ -528,17 +528,7 @@ For completed scans, you'll see the potential risks discovered in your organizat
 
 - **Data leaks insights**: Activities for all users that may include accidental oversharing of information outside your organization or data leaks by users with malicious intent.
 - **Data theft insights**: Activities for departing users or users with deleted Azure Active Directory accounts that may include risky sharing of information outside your organization or data theft by users with malicious intent.
-- **Top exfiltration insights**: Activities by all users that may include sharing data outside of your organization. Includes the following insider risk indicators:
-
-    - Sharing SharePoint files with people outside the organization
-    - Sharing SharePoint folders with people outside the organization
-    - Sharing SharePoint sites with people outside the organization
-    - Sending email with attachments to recipients outside the organization
-    - Copying files to USB
-    - Using Microsoft Edge to copy files to personal cloud storage
-    - Printing documents
-    - Transferring files to a network share
-    - Moving sensitive or priority content to a new location on a device
+- **Top exfiltration insights**: Activities by all users that may include sharing data outside of your organization.
 
 ![Insider risk management analytics overview report](../media/insider-risk-analytics-overview.png)
 

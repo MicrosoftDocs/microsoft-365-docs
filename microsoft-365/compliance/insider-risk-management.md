@@ -52,7 +52,7 @@ Insider risk management is centered around the following principles:
 
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing insider risk policies.
 
-To learn more about insider risk analytics, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analystics-preview).
+To learn more about insider risk analytics, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics-preview).
 
 ## Workflow
 
