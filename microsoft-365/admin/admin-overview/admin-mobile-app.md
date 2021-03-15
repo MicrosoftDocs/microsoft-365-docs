@@ -60,7 +60,7 @@ If you're an admin and you're responsible for more than one Microsoft 365 organi
 
 ## Frequently asked questions
 
-Below are answers to some frequently asked questions people ask about the app.
+Below are answers to frequently asked questions.
   
 ### What do I need to do to be able to use the app?
 
