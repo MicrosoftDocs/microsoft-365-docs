@@ -1,6 +1,6 @@
 ---
 title: Windows 10 location service
-description:  
+description:  How to have Windows location services turned on for your devices
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -24,7 +24,7 @@ You don't have to use the location service in order to participate in Microsoft 
 
 ## Enable the location service
 
-You can either opt in to using the location service when you enroll devices into Microsoft Managed Desktop or you can turn the service on or off after enrollment.
+You can either opt in to using the location service when you enroll devices into the Microsoft Managed Desktop service or you can turn the service on or off after enrollment.
 
 ### Opt in during enrollment
 
