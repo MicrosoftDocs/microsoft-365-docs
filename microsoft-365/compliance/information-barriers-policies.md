@@ -71,10 +71,11 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
 - Admin consent for information barriers in Microsoft Teams -  When your IB policies are in place, they can remove non-IB compliance users from Groups (i.e. Teams channels, which are based on groups). This configuration helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams.
 
-   1. Run the following PowerShell cmdlets:
+   1. Pre-requisite: Install Azure PowerShell from [here](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps)
+   2. Run the following PowerShell cmdlets:
 
       ```powershell
-      Connect-AzAccount 
+      Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
@@ -83,7 +84,9 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
    2. When prompted, sign in using your work or school account for Office 365.
 
-   3. In the **Permissions requested** dialog box, review the information, and then choose **Accept**.
+   3. In the **Permissions requested** dialog box, review the information, and then choose **Accept**. The permissions reqested by the App is given below <add a screenshot>
+   ![image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
+
 
 When all the prerequisites are met, proceed to the next section.
 
