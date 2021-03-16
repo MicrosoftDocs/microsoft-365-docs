@@ -113,24 +113,12 @@ Now, the first time a guest user attempts to access content or a team or site in
 
 With access reviews in Azure AD, you can automate a periodic review of user access to various teams and groups. By requiring an access review for guests specifically, you can help ensure guest users do not retain access to your organization's sensitive information for longer than is necessary.
 
-Access reviews can be organized into programs. A program is a grouping of similar access reviews that can be used to organize access reviews for reporting and auditing purposes.
-
-To create a program
-
-1. Sign in to the Azure portal and open the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
-2. In the left menu, click **Programs**
-3. Click **New program**.
-4. Type a **Name**  and **Description**.
-5. Click **Create**.
-
-Once the program has been created, we can create a guest access review and associate it with the program.
-
 To set up a guest user access review
 
 1. On the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), in the left menu, click **Access reviews**.
 2. Click **New access review**.
 3. Choose the **Teams + Groups** option.
-4. Choose the **All Microsoft 365 groups with guest users** option.
+4. Choose the **All Microsoft 365 groups with guest users** option. Click **Select group(s) to exclude** if you want to exclude any groups.
 5. Choose the **Guest users only** option, and then click **Next: Reviews**.
 6. Under **Select reviewers**, choose **Group Owner(s)**.
 7. Click **Select fallback reviewers**, choose who should be the fallback reviewers, and then click **Select**.
@@ -142,13 +130,11 @@ To set up a guest user access review
 
 11. On the **Settings** tab, review the settings for compliance with your business rules.
 
-   ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review.png)
+   ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review-settings.png)
 
 12. Click **Next: Review + Create**.
 13. Type a **Review name** and review the settings.
 14. Click **Create**.
-
-
 
 It's important to note that guests can be given access to teams or groups, or to individual files and folders. When given access to files and folders, guests may not be added to any particular group. If you want to do access reviews on guest users who don't belong to a team or group, you can create a dynamic group in Azure AD to contain all guests and then create an access review for that group. Site owners can also manage [guest expiration for the site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
