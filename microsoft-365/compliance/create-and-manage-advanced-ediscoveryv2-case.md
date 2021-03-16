@@ -12,9 +12,9 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
-- m365initiative-scenario
+- m365solution-scenario
 search.appverid: 
 - MOE150
 - MET150
