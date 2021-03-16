@@ -23,7 +23,11 @@ description: "Learn how to control which users can create Microsoft 365 Groups."
 
 By default, all users can create Microsoft 365 groups. This is the recommended approach because it allows users to start collaborating without requiring assistance from IT.
 
-If your business requires that you restrict who can create groups, you can do so by following the procedures in this article. When you limit who can create a group, it affects all services that rely on groups for access, including:
+If your business requires that you restrict who can create groups, you can restrict Microsoft 365 Group creation to the members of a particular Microsoft 365 group or security group.
+
+If you're concerned about users creating teams or groups that don't comply with your business standards, consider requiring users to complete a training course and then adding them to the group of allowed users.
+
+When you limit who can create a group, it affects all services that rely on groups for access, including:
 
 - Outlook
 - SharePoint
@@ -33,8 +37,6 @@ If your business requires that you restrict who can create groups, you can do so
 - Planner
 - Power BI (classic)
 - Project for the web / Roadmap
-
-You can restrict Microsoft 365 Group creation to the members of a particular Microsoft 365 group or security group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
 
 The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via any means, such as the Microsoft 365 admin center, Planner, Teams, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
 
