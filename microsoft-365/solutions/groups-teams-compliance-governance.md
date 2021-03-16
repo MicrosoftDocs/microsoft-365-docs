@@ -47,7 +47,9 @@ Configuring a retention policy for Microsoft 365 Groups covers the group mailbox
 
 - [Learn about retention policies for SharePoint and OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)
 
-Retention policies for Teams retain chat and channel messages. While chat and channel messages are stored in Exchange mailboxes, they are not affected by Exchange retention policies. You must set your retention policies to apply to Teams chats and Teams channel messages:
+Retention policies for Teams retain chat and channel messages. While chat and channel messages are stored in Exchange mailboxes, they are not affected by Exchange retention policies. You must set your retention policies to apply to Teams chats and Teams channel messages. 
+
+User chats are retained indefinitely even if a user account is deleted. If you don't want to retain this data indefinitely, consider using a retention policy to delete user chats after a specified time or include this deletion in your user deletion process.
 
 - [Learn about retention policies for Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)
 
