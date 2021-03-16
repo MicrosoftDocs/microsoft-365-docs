@@ -177,4 +177,4 @@ AlertInfo
 - [Turn on Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Advanced hunting in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
