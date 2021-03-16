@@ -92,7 +92,7 @@ The numbers listed are the minimum Office application version required for each 
 **Footnotes:**
 
 <sup>1</sup>
-In preview, and [not all variables are supported](#dynamic-markings-with-variables)
+Currently, [not all variables are supported](#dynamic-markings-with-variables)
 <br />
 <sup>2</sup>
 Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
@@ -283,7 +283,7 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 | Variable | Description | Example when label applied |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Label display name of the label applied <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint, and Outlook (currently in preview)| **General**|
+| `${Item.Label}` | Label display name of the label applied <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint, and Outlook | **General**|
 | `${Item.Name}` | File name or email subject of the content being labeled <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **Sales.docx** |
 | `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
 | `${User.Name}` | Display name of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **Richard Simone** |
@@ -295,7 +295,7 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 #### Setting different visual markings for Word, Excel, PowerPoint, and Outlook
 
-As an additional variable, you can configure visual markings per Office application type by using an "If.App" variable statement in the text string, and identify the application type by using the values **Word**, **Excel**, **PowerPoint**, or **Outlook** (currently in preview). You can also abbreviate these values, which is necessary if you want to specify more than one in the same If.App statement.
+As an additional variable, you can configure visual markings per Office application type by using an "If.App" variable statement in the text string, and identify the application type by using the values **Word**, **Excel**, **PowerPoint**, or **Outlook**. You can also abbreviate these values, which is necessary if you want to specify more than one in the same If.App statement.
 
 Use the following syntax:
 
