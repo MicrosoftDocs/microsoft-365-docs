@@ -11,8 +11,9 @@
         - name: Security recommendations for priority accounts
           href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Identity and device access configurations
-      href: ./office-365-security/microsoft-365-policies-configurations.md
       items: 
+        - name: Overview
+          href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: Prerequisite work
           href: ./office-365-security/identity-access-prerequisites.md
         - name: Common identity and device access policies
