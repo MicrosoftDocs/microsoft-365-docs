@@ -36,7 +36,7 @@ This series of articles will help you understand how groups, teams, and SharePoi
 
 There are many options for deploying Microsoft 365 Groups and Teams for secure collaboration in your organization. We recommend you use this governance content alongside [Set up secure collaboration with Microsoft 365](setup-secure-collaboration-with-teams.md) and its associated articles to create the best collaboration solution for your organization.
 
-## What are Microsoft 365 groups?
+## Why Microsoft 365 groups are important
 
 Microsoft 365 groups lets you choose a set of people with whom you wish to collaborate, and easily set up a collection of resources for those people to share. Adding members to the group automatically grants the needed permissions to all assets provided by the group. Both Teams and Yammer use Microsoft 365 groups to manage their membership.
 

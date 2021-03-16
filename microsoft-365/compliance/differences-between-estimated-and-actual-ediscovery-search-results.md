@@ -26,8 +26,8 @@ description: "Understand why estimated and actual search results may vary in sea
 This topic applies to searches that you can run using one of the following Microsoft 365 eDiscovery tools: 
 
 - Content search
-- Core eDiscovery 
-   
+- Core eDiscovery
+
 When you run an eDiscovery search, the tool you're using will return an estimate of the number of items (and their total size) that meet the search criteria. For example, when you run a search in the Microsoft 365 compliance center, the estimated search results are displayed on the flyout page for the selected search.
   
 ![Estimate of results displayed in details pane of selected search](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
@@ -64,6 +64,8 @@ Here are some reasons for these differences:
 
     The reason for not exporting unindexed items from every location in the organization is because it might increase the likelihood of export errors and increase the time it takes to export and download the search results.
 
+- **Unindexed items in SharePoint and OneDrive not included in search estimates**. Unindexed items from SharePoint sites and OneDrive for Business accounts aren't included in the estimated search results. This is because the SharePoint index doesn't contain data for unindexed items. Only unindexed items from mailboxes are included in the search estimates. However, if you include unindexed items when exporting search results, unindexed items in SharePoint and OneDrive are included. This can result in differences between the estimated results (which don't include unindexed items in SharePoint and OneDrive sites) and the actual items that are downloaded. The rule about exporting unindexed items only from content locations that contain items that match the search criteria still applies in this situation.
+
 - **Raw file formats versus exported file formats**. For Exchange items, the estimated size of the search results is calculated by using the raw Exchange message sizes. However, email messages are exported in a PST file or as individual messages (which are formatted as EML files). Both of these export options use a different file format than raw Exchange messages, which results in the total exported file size being different than the estimated file size.
 
 - **Document versions**. For SharePoint documents, multiple versions of a document aren't included in the estimated search results. But you have the option to include all document versions when you export the search results, which will increase the actual number (and total size) of the exported documents. 
@@ -71,6 +73,10 @@ Here are some reasons for these differences:
 - **De-duplication**. For Exchange items, de-duplication reduces the number of items that are exported. You have the option to de-duplicate the search results when you export them. For Exchange messages, this means that only a single instance of a message is exported, even though that message might be found in multiple mailboxes. The estimated search results include every instance of a message. So if you choose the de-duplication option when exporting search results, the actual number of items that are exported might be considerably less than the estimated number of items.
 
     Another thing to keep in mind if you choose the de-duplication option is that all Exchange items are exported in a single PST file and the folder structure from the source mailboxes isn't preserved. The exported PST file just contains the email items. However, a search results report contains an entry for each exported message that identifies the source mailbox where the message is located. This helps you identify all mailboxes that contain a duplicate message. If you don't enable de-duplication, a separate PST file is exported for each mailbox included in the search. 
- 
+
+
+
+
+
 > [!NOTE]
 > If you don't select the **Include items that are encrypted or have an unrecognized format** option when you export search results or just download the reports, the index error reports are downloaded but they don't have any entries. This doesn't mean there aren't any indexing errors. It just means that unindexed items weren't included in the export. 
