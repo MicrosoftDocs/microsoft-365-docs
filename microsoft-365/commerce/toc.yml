@@ -11,7 +11,7 @@
     - name: Buy or manage add-ons
       href: buy-or-edit-an-add-on.md
     - name: Microsoft Business Assist
-      href: misc/business-assist.md
+      href: admin/misc/business-assist.md
     - name: Add storage space
       href: add-storage-space.md
 - name: Manage subscriptions
