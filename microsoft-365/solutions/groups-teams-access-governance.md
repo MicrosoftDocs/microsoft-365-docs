@@ -55,7 +55,7 @@ Membership of teams and groups is controlled by owners. Members can invite other
 
 - [Manage discovery of private teams in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)
 
-You can manage membership of a group or team dynamically based on some criteria, such as department. In this case, members and owners cannot invite people to the team.
+You can manage membership of a group or team dynamically based on some criteria, such as department. In this case, members and owners cannot invite people to the team. Dynamic groups uses metadata that you define in Azure Active Directory to control who is a member of the group. Be sure the metadata that you're using is complete and up to date as incorrect metadata can lead to users being left out of groups or incorrect users being added.
 
 - [Create or update a dynamic group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
 

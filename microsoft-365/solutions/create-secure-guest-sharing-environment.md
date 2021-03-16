@@ -129,19 +129,26 @@ To set up a guest user access review
 
 1. On the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), in the left menu, click **Access reviews**.
 2. Click **New access review**.
+3. Choose the **Teams + Groups** option.
+4. Choose the **All Microsoft 365 groups with guest users** option.
+5. Choose the **Guest users only** option, and then click **Next: Reviews**.
+6. Under **Select reviewers**, choose **Group Owner(s)**.
+7. Click **Select fallback reviewers**, choose who should be the fallback reviewers, and then click **Select**.
+8. Under **Specify recurrence of review**, choose **Quarterly**.
+9. Select a start date and duration.
+10. For **End**, choose **Never**, and then click **Next: Settings**.
 
    ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review.png)
 
-3. In the **Name** box, type a name.
-4. For **Frequency**, choose **Quarterly**.
-5. For **End**, choose **Never**.
-6. For **Scope**, choose **Guest users only**.
-7. Click **Group**, select the groups that you want to include in the access review, and then click **Select**.
-8. Under **Programs**, click **Link to program**.
-9. On the **Select a program** blade, choose **Guest access review program**
-10. Click **Start**.
+11. On the **Settings** tab, review the settings for compliance with your business rules.
 
-A separate access review is created for each group that you specify. Group owners of each group will be emailed quarterly to approve or deny guest access to their groups.
+   ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review.png)
+
+12. Click **Next: Review + Create**.
+13. Type a **Review name** and review the settings.
+14. Click **Create**.
+
+
 
 It's important to note that guests can be given access to teams or groups, or to individual files and folders. When given access to files and folders, guests may not be added to any particular group. If you want to do access reviews on guest users who don't belong to a team or group, you can create a dynamic group in Azure AD to contain all guests and then create an access review for that group. Site owners can also manage [guest expiration for the site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
