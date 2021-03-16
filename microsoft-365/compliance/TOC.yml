@@ -540,6 +540,8 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
         - name: Content search PowerShell scripts
@@ -570,6 +572,8 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
           - name: Set up compliance boundaries
@@ -635,14 +639,27 @@
         - name: Manage processing errors
           href: processing-data-for-case.md
           items: 
-            - name: Advanced indexing of custodian data
+            - name: Advanced indexing of custodian content
               href: indexing-custodian-data.md
-            - name: Error remediation when processing data
+            - name: Error remediation when processing content
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Single item error remediation
-              href: single-item-error-remediation.md
+              href: single-item-error-remediation.md        
+        - name: Collect content for a case (preview)
+          items: 
+            - name: Learn about collections (preview)
+              href: collections-overview.md
+            - name: Create a draft collection (preview)
+              href: create-draft-collection.md
+            - name: Commit a draft collection to a review set (preview)
+              href: commit-draft-collection.md
+            - name: Collection statistics and reports (preview)
+              href: collection-statistics-reports.md        
+            - name: Build search queries for collections
+              href: building-search-queries.md
+            - name: Keyword queries and search conditions
+              href: keyword-queries-and-search-conditions.md 
         - name: Collect data for a case
-          href: collecting-data-for-ediscovery.md
           items: 
             - name: Create a search
               href: create-search-to-collect-data.md
@@ -661,7 +678,7 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: add-data-to-review-set-from-another-review-set.md
-        - name: Review case data
+        - name: Review case content
           items: 
             - name: Use the review set dashboard
               href: advanced-ediscovery-dashboard.md
@@ -671,7 +688,7 @@
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
-        - name: Analyze case data
+        - name: Analyze case content
           href: analyzing-data-in-review-set.md
           items: 
             - name: Near duplicate detection
@@ -680,11 +697,11 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Themes
               href: themes-in-advanced-ediscovery.md
-            - name: Use the Relevance module to analyze data
+            - name: Use the Relevance module to analyze content
               href: using-relevance.md
             - name: Retirement of the Relevance module
               href: relevance-module-retirement.md  
-        - name: Export case data
+        - name: Export case content
           href: exporting-data-ediscover20.md
           items: 
             - name: Download documents from a review set
@@ -725,6 +742,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Content stored in mailboxes for eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
             - name: Collect eDiscovery diagnostic information

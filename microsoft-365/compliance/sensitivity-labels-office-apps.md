@@ -350,6 +350,11 @@ Additional information for built-in labeling:
 
 For guidance about when to use this setting, see the information about [policy settings](sensitivity-labels.md#what-label-policies-can-do).
 
+> [!NOTE]
+> If you use the default label policy setting for documents and emails in addition to mandatory labeling: 
+>
+> The default label always takes priority over mandatory labeling. However, for documents, the Azure Information Protection unified labeling client applies the default label to all unlabeled documents whereas built-in labeling applies the default label to new documents and not to existing documents that are unlabeled. This difference in behavior means that when you use mandatory labeling with the default label setting, users will be prompted to apply a sensitivity label more often when they use built-in labeling than when they use the Azure Information Protection unified labeling client.
+
 ## End-user documentation
 
 - [Apply sensitivity labels to your documents and email within Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)

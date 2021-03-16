@@ -55,7 +55,7 @@ Membership of teams and groups is controlled by owners. Members can invite other
 
 - [Manage discovery of private teams in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)
 
-You can manage membership of a group or team dynamically based on some criteria, such as department. In this case, members and owners cannot invite people to the team.
+You can manage membership of a group or team dynamically based on some criteria, such as department. In this case, members and owners cannot invite people to the team. Dynamic groups uses metadata that you define in Azure Active Directory to control who is a member of the group. Be sure the metadata that you're using is complete and up to date as incorrect metadata can lead to users being left out of groups or incorrect users being added.
 
 - [Create or update a dynamic group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
 
@@ -112,9 +112,13 @@ If your organization has sensitive data that you need to share with guests, but 
 
 - [Limit external sharing to specified security groups](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
-Groups and Teams have organization-level setting that allow or deny guest access. While you can [restrict guest access to specific teams or groups by using Microsoft PowerShell](per-group-guest-access.md), we recommend doing this by means of a sensitivity label. With sensitivity labels you can automatically allow or deny guest access based on the label applied:
+Groups and Teams have organization-level settings that allow or deny guest access. While you can [restrict guest access to specific teams or groups by using Microsoft PowerShell](per-group-guest-access.md), we recommend doing this by means of a sensitivity label. With sensitivity labels you can automatically allow or deny guest access based on the label applied:
 
 - [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+
+In an environment where you frequently invite guests to groups and teams, consider setting up regularly scheduled guest access reviews. Owners can be prompted to review guests in their groups and teams and approve or deny access.
+
+- [Set up guest access reviews](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
 
 Microsoft 365 offers many different methods of sharing information. If you have sensitive information and you want to restrict how it's shared, review the options for limiting sharing:
 
