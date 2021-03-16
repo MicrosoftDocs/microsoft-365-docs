@@ -4,8 +4,8 @@ description: Gain insights into activity that has affected your Microsoft Secure
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-ms.localizationpriority: medium
-f1.keywords: 
+localization_priority: Normal
+f1.keywords:
   - NOCSH
 ms.author: ellevin
 author: levinec

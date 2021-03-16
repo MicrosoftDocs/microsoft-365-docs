@@ -29,10 +29,10 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-[Microsoft Defender for Office 365](office-365-atp.md) includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. As alerts are triggered, it's up to your security operations team to review, prioritize, and respond to those alerts. Keeping up with the volume of incoming alerts can be overwhelming. Automating some of those tasks can help.
+[Microsoft Defender for Office 365](defender-for-office-365.md) includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. As alerts are triggered, it's up to your security operations team to review, prioritize, and respond to those alerts. Keeping up with the volume of incoming alerts can be overwhelming. Automating some of those tasks can help.
 
 AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well-known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond effectively to detected threats. With AIR, your security operations team can focus on higher-priority tasks without losing sight of important alerts that are triggered.
 
@@ -70,7 +70,7 @@ During and after each automated investigation, your security operations team can
 
 ## How to get AIR
 
-AIR capabilities are included in [Microsoft Defender for Office 365](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
+AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
 
 - [Audit logging](../../compliance/turn-audit-log-search-on-or-off.md) (should be turned on)
 - [Antimalware policies](protect-against-threats.md#part-1---anti-malware-protection)
@@ -88,7 +88,7 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 
 |Alert|Severity|How the alert is generated|
 |:---|:---|:---|
-|A potentially malicious URL click was detected|**High**|This alert is generated when any of the following occurs: <ul><li>A user protected by [Safe Links](atp-safe-links.md) in your organization clicks a malicious link</li><li>Verdict changes for URLs are identified by Microsoft Defender for Office 365</li><li>Users override Safe Links warning pages (based on your organization's [Safe Links policy](set-up-atp-safe-links-policies.md)).</li></ul> <p> For more information on events that trigger this alert, see [Set up Safe Links policies](set-up-atp-safe-links-policies.md).|
+|A potentially malicious URL click was detected|**High**|This alert is generated when any of the following occurs: <ul><li>A user protected by [Safe Links](safe-links.md) in your organization clicks a malicious link</li><li>Verdict changes for URLs are identified by Microsoft Defender for Office 365</li><li>Users override Safe Links warning pages (based on your organization's [Safe Links policy](set-up-safe-links-policies.md)).</li></ul> <p> For more information on events that trigger this alert, see [Set up Safe Links policies](set-up-safe-links-policies.md).|
 |An email message is reported by a user as malware or phish|**Informational**|This alert is generated when users in your organization report messages as phishing email using the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md).|
 |Email messages containing malware are removed after delivery|**Informational**|This alert is generated when any email messages containing malware are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [Zero-hour auto purge](zero-hour-auto-purge.md).|
 |Email messages containing phish URLs are removed after delivery|**Informational**|This alert is generated when any messages containing phish are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [Zero-hour auto purge](zero-hour-auto-purge.md).|
@@ -110,7 +110,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Required licenses
 
-[Microsoft Defender for Office 365 Plan 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) licenses should be assigned to:
+[Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) licenses should be assigned to:
 
 - Security administrators (including global administrators)
 - Your organization's security operations team (including security readers and those with the **Search and Purge** role)
@@ -123,7 +123,7 @@ If you’re already using AIR capabilities in Microsoft Defender for Office 365,
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center":::
 
-The new and improved security center brings together AIR capabilities in [Microsoft Defender for Office 365](office-365-atp.md) and in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
+The new and improved security center brings together AIR capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) and in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
 
 > [!TIP]
 > The new Microsoft 365 security center (<https://security.microsoft.com>) replaces the following centers:
