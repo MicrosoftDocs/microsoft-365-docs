@@ -56,7 +56,7 @@ To manage who creates groups, the following people need Azure AD Premium license
 - The members of the group who are allowed to create groups
 
 > [!NOTE]
-> See [Assign or remove licenses in the Azure Active Directory portal](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
+> See [Assign or remove licenses in the Azure Active Directory portal](/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
 
 The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
 
@@ -76,19 +76,19 @@ Admins in the roles listed above do not need to be members of this group: they r
 
 4. Finish setting up the group, adding people or other groups who you want to be able to create groups in your org.
 
-For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
+For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md).
 
 ## Step 2: Run PowerShell commands
 
-You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
+You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
 
-- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true) and follow the instructions to install the public preview release.
+- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) and follow the instructions to install the public preview release.
 
 - If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
 
 - If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version of this module.
 
-Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
+Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
 Replace *\<GroupName\>* with the name of the group that you created. For example:
 
@@ -102,7 +102,7 @@ Run the script by typing:
 
 `.\GroupCreators.ps1`
 
-and [sign in with your administrator account](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
+and [sign in with your administrator account](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -157,7 +157,7 @@ Changes can take thirty minutes or more to take effect. You can verify the new s
 Try the same procedure again with a member of the group.
 
 > [!NOTE]
-> If members of the group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](https://go.microsoft.com/fwlink/?linkid=852135).
+> If members of the group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](/powershell/module/exchange/set-owamailboxpolicy).
 
 ## Related topics
 
@@ -165,10 +165,10 @@ Try the same procedure again with a member of the group.
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 
-[Getting started with Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=808033)
+[Getting started with Office 365 PowerShell](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
-[Set up self-service group management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
+[Set up self-service group management in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
-[Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+[Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[Azure Active Directory cmdlets for configuring group settings](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
