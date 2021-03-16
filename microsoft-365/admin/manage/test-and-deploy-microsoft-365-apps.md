@@ -46,25 +46,21 @@ By choosing Integrated apps in the Microsoft 365 admin center, you can manage te
 
 ## Find published apps for testing and full deployment
 
-You can find, test, and fully deploy published apps that do not already appear in the list on the Integrated apps page. By purchasing and licensing the apps from the admin center, you can add Microsoft and Microsoft partner apps to your list from a single location.
+You can find, test, and fully deploy published apps that don't already appear in the list on the Integrated apps page. By purchasing and licensing the apps from the admin center, you can add Microsoft and Microsoft partner apps to your list from a single location.
 
 1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**.
 
 2. Select **Get apps** above the list of apps.
 
-3. On the **Microsoft 365 Apps** published apps page, select the app you want to deploy by choosing **Get it now**.
-
-4. Accept the permissions, and then select **Continue**.
+3. On the **Microsoft 365 Apps** published apps page, select the app you want to deploy by choosing **Get it now**. Integrated apps support Word, PowerPoint, Excel, Outlook add-ins, Teams app and SharePoint apps (built on SharePoint Framework technology). Accept the permissions and select **Continue**.
 
 5. Select **Deploy** at the top of the page next to the message that refers to waiting to be deployed.
 
-    Some apps require you to add users before you can select **Deploy**.
+    If the app selected is linked to a SaaS offer by an ISV, all the other apps that are part of this linked offer will appear on the Configuration page. If you choose to deploy of all of the apps, select **Next**. Otherwise,select **Edit**, and choose which apps you want deployed. Some apps require you to add users before you can select **Deploy**.
 
-    a. Select **Add users**, choose **Full deployment**, and then choose **Entire organization** or **Specific users/groups**.
+    a. Select **Add users**, choose **Is this a test deployment**, and then choose **Entire organization** or **Specific users/groups**.
 
-    Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
-
-    You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization.
+    Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group. You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization.
 
     b. Select **Update**, **Done**, and and now you can select **Deploy** on the **Overview** tab.  
 
