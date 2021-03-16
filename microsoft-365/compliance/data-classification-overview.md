@@ -1,5 +1,5 @@
 ---
-title: "Get started with data classification"
+title: "Learn about data classification"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,7 +20,7 @@ search.appverid:
 description: "The data classification dashboard gives you visibility into how much sensitive data has been found and classified in your organization."
 ---
 
-# Know your data - data classification overview
+# Learn about data classification
 
 As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according to your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](retention.md#retention-labels), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large number of documents and emails that are tagged and classified with one or both of these labels. After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
 
@@ -31,8 +31,12 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 - the locations of your sensitive and retained data
 
 You also manage these features on the data classification page:
+
 - [trainable classifiers](classifier-learn-about.md)
-- [sensitive information types](what-the-sensitive-information-types-look-for.md)
+- [sensitive information types](sensitive-information-type-learn-about.md)
+- [exact data matches](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [content explorer](data-classification-content-explorer.md)
+- [activity explorer](data-classification-activity-explorer.md)
 
 You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
 
