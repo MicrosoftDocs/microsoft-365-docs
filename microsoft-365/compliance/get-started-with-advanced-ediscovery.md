@@ -25,9 +25,9 @@ description: "This article describes how to set up Advanced eDiscovery so you ca
 
 Advanced eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy Advanced eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use Advanced eDiscovery cases to manage your investigations.
 
-This article discusses the following steps necessary to set up Advanced eDiscovery. 
+This article discusses the following steps necessary to set up Advanced eDiscovery.
 
-![Steps to set up Advanced eDiscovery](../media/set-up-advanced-ediscovey.png)
+![Steps to set up Advanced eDiscovery](../media/set-up-advanced-ediscovery.png)
 
 This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, and assigning permissions to your legal and investigation team so they can access and manage cases.
 
@@ -59,9 +59,9 @@ Complete the following steps to add users to the eDiscovery Manager role group:
 
 There are two subgroups in the eDiscovery Manager role group. The difference between these subgroups is based on scope.
 
-- **eDiscovery Manager:** Can view and manage the Advanced eDiscovery cases they create or are a member of. If another eDiscovery Manager creates a case but doesn't add a second eDiscovery Manager as a member of that case, the second eDiscovery Manager won't be able to view or open the case on the Advanced eDiscovery page in the compliance center. In general, most people in your organization can be added to the eDiscovery Manager subgroup.
+- **eDiscovery Manager**: Can view and manage the Advanced eDiscovery cases they create or are a member of. If another eDiscovery Manager creates a case but doesn't add a second eDiscovery Manager as a member of that case, the second eDiscovery Manager won't be able to view or open the case on the Advanced eDiscovery page in the compliance center. In general, most people in your organization can be added to the eDiscovery Manager subgroup.
 
-- **eDiscovery Administrator:** Can perform all case management tasks that an eDiscovery Manager can do. Additionally, an eDiscovery Administrator can:
+- **eDiscovery Administrator**: Can perform all case management tasks that an eDiscovery Manager can do. Additionally, an eDiscovery Administrator can:
 
   - View all cases that are listed on the Advanced eDiscovery page.
   
