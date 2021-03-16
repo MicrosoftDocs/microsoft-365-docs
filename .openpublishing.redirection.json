@@ -376,6 +376,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/collecting-data-for-ediscovery.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/collections-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Windows.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
       "redirect_document_id": false
