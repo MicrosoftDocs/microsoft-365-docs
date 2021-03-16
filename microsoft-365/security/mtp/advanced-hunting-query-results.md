@@ -89,8 +89,8 @@ If you're dealing with a list of values that isn’t finite, you can use the `To
 
 ```kusto
 EmailEvents
-| where PhishFilterVerdict == "Phish"
-| summarize Count = count() by SenderFromDomain
+| where ThreatTypes has "Phish" 
+| summarize Count = count() by SenderFromDomain 
 | top 10 by Count
 ```
 Use the pie chart view to effectively show distribution across the top domains:

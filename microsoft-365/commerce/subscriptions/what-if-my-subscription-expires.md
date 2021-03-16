@@ -8,19 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: 
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: "Learn what happens to your data when your Microsoft 365 for business subscription expires, is disabled, or if you cancel."
 ---
