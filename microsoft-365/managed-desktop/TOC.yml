@@ -70,7 +70,7 @@
           href: get-ready/certs-wifi-lan.md
         - name: Prepare on-premises resources access
           href: get-ready/authentication.md
-          - name: Prepare apps
+        - name: Prepare apps
           href: get-ready/apps.md
           items: 
             - name: Working with Microsoft Consulting Services
