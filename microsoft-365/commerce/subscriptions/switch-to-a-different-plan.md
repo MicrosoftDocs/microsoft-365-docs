@@ -87,7 +87,7 @@ Here's why this can happen:
 
 When you use the **Switch plans** button, the plans that you can switch to are displayed based on the services in your current plan. You can only use the **Switch plans** button to switch to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the switch.
   
-To compare plans before switching, see the [Microsoft 365 for business product comparison](https://go.microsoft.com/fwlink/p/?linkid=842056) page. For technical specifications, see [Microsoft 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=842275).
+To compare plans before switching, see the [Microsoft 365 for business product comparison](https://go.microsoft.com/fwlink/p/?linkid=842056) page. For technical specifications, see [Microsoft 365 Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library).
   
 If you want to switch to a plan with fewer services, you can [switch plans manually](switch-plans-manually.md), or [Call Microsoft Support](../../admin/contact-support-for-business-products.md) for help.
   
