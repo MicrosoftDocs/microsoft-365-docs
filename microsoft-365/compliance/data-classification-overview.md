@@ -112,7 +112,7 @@ The top applied retention labels card shows you how many items have a given rete
 
 ## Top activities detected
 
-This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items. You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on eight different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
+This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items. You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on the different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
 
 > [!NOTE]
 > If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
@@ -132,5 +132,6 @@ The point of the data classification reporting is to provide visibility into the
 - [View labeled content](data-classification-content-explorer.md)
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about retention policies and retention labels](retention.md)
+- [Learn about sensitive information types](sensitive-information-type-learn-about.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about trainable classifiers (preview)](classifier-learn-about.md)
