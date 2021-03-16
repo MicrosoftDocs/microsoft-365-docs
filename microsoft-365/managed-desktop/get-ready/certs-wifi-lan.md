@@ -1,6 +1,6 @@
 ---
 title: Prepare certificates and network profiles for Microsoft Managed Desktop 
-description:  certs/wifi/lan
+description:  Certificate requirements and wi-fi connectivity
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -11,7 +11,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.audience: Admin
+audience: Admin
 ---
 
 # Prepare certificates and network profiles for Microsoft Managed Desktop  

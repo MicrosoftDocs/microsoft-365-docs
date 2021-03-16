@@ -1,6 +1,6 @@
 ---
 title: Prepare mapped drives for Microsoft Managed Desktop 
-description:  Important steps to make sure 
+description:  Important steps to make sure users can access data on mapped drives
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,7 +9,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.audience: Admin
+audience: Admin
 ---
 
 #  Prepare mapped drives for Microsoft Managed Desktop

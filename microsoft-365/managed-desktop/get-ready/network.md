@@ -1,6 +1,6 @@
 ---
 title: Network configuration for Microsoft Managed Desktop 
-description:  
+description:  How to set up proxies and necessary endpoints
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -11,7 +11,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.audience: Admin
+audience: Admin
 ---
 
 #  Network configuration for Microsoft Managed Desktop

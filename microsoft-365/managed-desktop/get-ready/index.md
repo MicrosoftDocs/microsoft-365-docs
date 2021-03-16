@@ -8,6 +8,7 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Get ready for enrollment in Microsoft Managed Desktop

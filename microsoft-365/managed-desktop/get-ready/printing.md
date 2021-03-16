@@ -9,7 +9,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.audience: Admin
+audience: Admin
 ---
 
 # Prepare printing resources for Microsoft Managed Desktop

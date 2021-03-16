@@ -9,7 +9,7 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.audience: Admin
+audience: Admin
 ---
 
 # Apps in Microsoft Managed Desktop
