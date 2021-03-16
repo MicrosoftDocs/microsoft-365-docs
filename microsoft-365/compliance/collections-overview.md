@@ -21,7 +21,7 @@ description: "Use collections in Advanced eDiscovery to search for and collect c
 # Learn about collections in Advanced eDiscovery
 
 > [!NOTE]
-> We're rolling out a new collections experience in Advanced eDiscovery, which is described in this article. This rollout will take a number of weeks before it's available to all organizations. If the new collections experience isn't available in your organization, you can still collect case content with the [Advanced eDiscovery search tool](search-for-content-in-core-ediscovery.md).
+> We're rolling out a new collections experience in Advanced eDiscovery, which is described in this article. This rollout will take a number of weeks before it's available to all organizations. If the new collections experience isn't available in your organization, you can still collect case content with the [Advanced eDiscovery search tool](create-search-to-collect-data.md).
 
 When organizations are faced with gathering the communications and content that may be relevant to an investigation or potential litigation, they face a significant challenge under the best of circumstances. In today’s modern workplace, the volume, variety, and velocity of content is enabling innovation and remote work, while also expanding the requirements and process for managing collections for eDiscovery investigations.
 
@@ -41,9 +41,9 @@ To get started using collections in Advanced eDiscovery, here's a basic workflow
 
 ![Collections workflow in Advanced eDiscovery](../media/CollectionsWorkflow.png)
 
-1. **Create and run a draft collection**. The first step is to create a draft collection and define the custodial and non-custodial data sources to search. You can also search other data sources that haven't been added to the case. After you add the data sources, you configure the search query to search the data sources for content relevant to the case. You can keywords, properties, and conditions to build search queries that return content that's likely most relevant to the case.
+1. **Create and run a draft collection**. The first step is to create a draft collection and define the custodial and non-custodial data sources to search. You can also search other data sources that haven't been added to the case. After you add the data sources, you configure the search query to search the data sources for content relevant to the case. You can keywords, properties, and conditions to build search queries that return content that's likely most relevant to the case. For more information, see [Create a draft collection](create-draft-collection.md).
 
-2. **Review estimates and statistics**. After you create a draft collection and run it, the next step is to view collection statistics to help you verify whether relevant content is being found and the content locations with the most hits. You can also preview a sample of the search results to further help you determine if the content is within scope of your investigation.
+2. **Review estimates and statistics**. After you create a draft collection and run it, the next step is to view collection statistics to help you verify whether relevant content is being found and the content locations with the most hits. You can also preview a sample of the search results to further help you determine if the content is within scope of your investigation. For more information, see [Statistics and reports for draft collections](collection-statistics-reports.md#statistics-and-reports-for-draft-collections).
 
 3. **Revise and rerun a draft collection**. Based on the estimates and statistics returned by the collection, you can edit the draft collection by changing the data sources that are searched and the search query to expand or narrow the collection. You can update and rerun the draft collection until you're confident that collection contains the content that's most relevant to your case.
 
@@ -53,4 +53,6 @@ To get started using collections in Advanced eDiscovery, here's a basic workflow
 
    - Deep indexing is performed on items collected from additional data sources. These types of data sources are content locations other than the custodial and non-custodial data sources previously added to the case.
 
-5. **Review collection summary and statistics**. After you commit a collection to a review set, information about the collection is retained, such as statistics about extracted items, deep indexing, the search query used for the collection, and the content locations that items were collected from. Also, committed collections can't be edited or rerun. You can only copy or delete them. Preserving collections provides a historical record of the collected items that were added to a review set.
+   For more information, see [Commit a draft collection to a review set](commit-draft-collection.md).
+
+5. **Review collection summary and statistics**. After you commit a collection to a review set, information about the collection is retained, such as statistics about extracted items, deep indexing, the search query used for the collection, and the content locations that items were collected from. Also, committed collections can't be edited or rerun. You can only copy or delete them. Preserving collections provides a historical record of the collected items that were added to a review set. For more information, see [Statistics and reports for committed collections](collection-statistics-reports.md#statistics-and-reports-for-committed-collections).
