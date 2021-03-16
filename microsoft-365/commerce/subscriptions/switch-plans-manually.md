@@ -50,7 +50,7 @@ To continue with a manual switch, read [Step 2: Buy a new subscription](#step-2-
   
 - OR -
   
- **Purchase a new subscription and licenses:** Follow the steps in [Buy another Microsoft 365 for business subscription](../buy-another-subscription.md) to buy a new subscription.
+ **Purchase a new subscription and licenses:** Follow the steps in [Buy another Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md) to buy a new subscription.
   
 Make sure you purchase a subscription for the same organization that the users are in now. For example, check the email addresses for the users you want to move. If their email addresses include @contoso.com, you must purchase a new subscription for contoso.com. Include a license for each user that you want to move.
   
@@ -173,7 +173,7 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 If you moved all users from one subscription to another, and you no longer need the original subscription, you can [cancel the subscription](cancel-your-subscription.md).
   
-If you moved only some users to a different subscription, [remove licenses](../licenses/remove-licenses-from-subscription.md) that you no longer need.
+If you moved only some users to a different subscription, [remove licenses](../licenses/buy-licenses.md) that you no longer need.
   
 ## Call support to help you switch plans
 
