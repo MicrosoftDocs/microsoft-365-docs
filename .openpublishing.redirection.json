@@ -381,21 +381,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/compliance/create-search-to-collect-data.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/compliance/add-data-to-review-set.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/commit-draft-collection",
-      "redirect_document_id": false
-    },  
-    {
-      "source_path": "microsoft-365/compliance/search-statistics-in-advanced-ediscovery.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/collection-statistics-reports",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Windows.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
       "redirect_document_id": false
