@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Summary:** This solution tells you what the indicators are for the most common cybersecurity attacks in Office 365, how to positively confirm any given attack, and how to respond to it.

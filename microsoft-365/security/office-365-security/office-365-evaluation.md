@@ -30,7 +30,7 @@ ms.prod: m365-security
 
 Conducting a comprehensive security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product's capabilities to assess how it can help your security operations team in their daily tasks.
 
-The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients like Word, or Teams.
+The [Microsoft Defender for Office 365](defender-for-office-365.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients like Word, or Teams.
 
 If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the Office 365 Security & Compliance center (https://protection.office.com/homepage). You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
