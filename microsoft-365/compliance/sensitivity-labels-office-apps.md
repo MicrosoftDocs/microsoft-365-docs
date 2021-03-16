@@ -351,9 +351,7 @@ Additional information for built-in labeling:
 For guidance about when to use this setting, see the information about [policy settings](sensitivity-labels.md#what-label-policies-can-do).
 
 > [!NOTE]
-> The difference in how mandatory labeling works for the Azure Information Protection unified labeling client and built-in labeling becomes more apparent when you also use the default label policy setting for documents and emails:
-> - Azure Information Protection unified labeling client: The default label is applied first, so unless users remove this label, they don't see the prompt for mandatory labeling.
-> - Built-in labeling: Mandatory labeling is applied first, so the default label is not automatically applied.
+> If you use the default label policy setting for documents and emails in addition to mandatory labeling: The default label always takes priority over mandatory labeling. However, because the Azure Information Protection unified labeling client applies the default label to all unlabeled documents and built-in labeling applies the default label to only new documents and emails, built-in labeling will prompt users to apply a label more often than the Azure Information Protection unified labeling client.
 
 ## End-user documentation
 
