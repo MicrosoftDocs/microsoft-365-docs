@@ -25,7 +25,7 @@ description: "This article describes how to create and manage Advanced eDiscover
 
 After setting up Advanced eDiscovery and [assigning permissions to eDiscovery managers](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) in your organization that will manage cases, the next step is to create and manage a case.
 
-This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
+This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal case or other types of investigations.
 
 ## Create a case
 
