@@ -126,11 +126,11 @@ To set up a guest user access review
 9. Select a start date and duration.
 10. For **End**, choose **Never**, and then click **Next: Settings**.
 
-   ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review.png)
+   ![Screenshot of Azure AD access review tab](../media/azure-ad-create-access-review.png)
 
 11. On the **Settings** tab, review the settings for compliance with your business rules.
 
-   ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review-settings.png)
+   ![Screenshot of Azure AD access review settings tab](../media/azure-ad-create-access-review-settings.png)
 
 12. Click **Next: Review + Create**.
 13. Type a **Review name** and review the settings.
