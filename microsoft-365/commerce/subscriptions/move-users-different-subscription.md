@@ -46,7 +46,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 2. Select the circles next to the names of the users that you want to replace existing licenses for.
 3. At the top, select **Manage product licenses**.
 4. In the **Manage product licenses** pane, select the licenses that you would like to assign to the user and unselect the current subscription.
-5. At the bottom , select **Save Changes** \> **Close**.
+5. At the bottom, select **Save Changes** \> **Close**.
 
 ::: moniker-end
 
