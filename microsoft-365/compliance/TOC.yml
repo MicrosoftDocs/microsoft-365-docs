@@ -540,6 +540,8 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
         - name: Content search PowerShell scripts
@@ -570,6 +572,8 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
           - name: Set up compliance boundaries
@@ -725,6 +729,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Content stored in mailboxes for eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
             - name: Collect eDiscovery diagnostic information
