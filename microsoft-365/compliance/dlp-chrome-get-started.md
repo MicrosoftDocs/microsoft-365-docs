@@ -83,7 +83,7 @@ Deploying Microsoft Compliance Extension is a multi-phase process. You can choos
 
 ### Prepare infrastructure
 
-If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.  
+If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.  
 
 ### Prepare your devices
 
@@ -96,7 +96,7 @@ If you are rolling out the Microsoft Compliance Extension to all your monitored 
 
 This is the recommended method. 
 
-1. Sign on to the Windows 10 computer that you want to install the Microsoft Compliance Extension on and run the this PowerShell script as an administrator. 
+1. Sign in to the Windows 10 computer on which you want to install the Microsoft Compliance Extension on, and run this PowerShell script as an administrator. 
 
    ```powershell
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
@@ -108,7 +108,8 @@ This is the recommended method.
 
 ### Deploy using Microsoft Endpoint Manager
 
-Use this setup method for organization Wide deployments 
+Use this setup method for organization-wide deployments.
+
 
 ##### Enabling Required Registry Key via Microsoft Endpoint Manager
 
@@ -165,7 +166,7 @@ If you don't want to use Microsoft Endpoint Manager, you can use group policies 
 
 1. Your devices must be manageable via Group Policy, and you need to import all Chrome ADMXs into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-2.	Create a PowerShell script using this:
+2.	Create a PowerShell script using this PowerShell command:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
