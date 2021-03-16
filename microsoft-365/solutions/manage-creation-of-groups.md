@@ -138,7 +138,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 The last line of the script will display the updated settings:
 
-![This is what your settings will look like when you're done.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
+![Screenshot of PowerShell script output.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
 If in the future you want to change which group is used, you can rerun the script with the name of the new group.
 
