@@ -92,7 +92,7 @@ The numbers listed are the minimum Office application version required for each 
 **Footnotes:**
 
 <sup>1</sup>
-Currently, [not all variables are supported](#dynamic-markings-with-variables)
+Currently, only the [Item.Label and If.App variables are supported](#dynamic-markings-with-variables)
 <br />
 <sup>2</sup>
 Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
