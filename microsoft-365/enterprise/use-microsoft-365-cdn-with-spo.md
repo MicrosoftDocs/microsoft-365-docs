@@ -127,7 +127,7 @@ You can read more about how CDN access to assets in a private origin works in [U
     > You should never place resources that contain user information or are considered sensitive to your organization in a public origin.
 + If you remove an asset from a public origin, the asset may continue to be available for up to 30 days from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.
 + When you host style sheets (CSS files) in a public origin, you can use relative paths and URIs within the code. This means that you can reference the location of background images and other objects relative to the location of the asset that's calling it.
-+ While you can hard code a public origin's URL, doing so is not recommended. The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors.
++ While you can construct a public origin's URL, you should proceed with caution and ensure you utilize the page context property and follow the guidance for doing so. The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors. The URL is also subject to change wich is why it should not just be hard coded to its current value.
 + The default file types that are included for public origins are .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, .woff and .woff2. You can specify additional file types.
 + You can configure a policy to exclude assets that have been identified by site classifications that you specify. For example, you can choose to exclude all assets that are marked as "confidential" or "restricted" even if they are an allowed file type and are located in a public origin.
 
@@ -910,12 +910,12 @@ The following diagram illustrates the workflow when SharePoint receives a reques
 > [!TIP]
 > If you want to disable auto-rewriting for specific URLs on a page, you can check out the page and add the query string parameter **?NoAutoReWrites=true** to the end of each link you want to disable.
 
-#### Hardcoding CDN URLs for public assets
+#### Constructing CDN URLs for public assets
 
 If the _Publishing_ feature is not enabled for a public origin, or the asset is not one of the link types supported by the auto-rewrite feature of the CDN service, you can manually construct URLs to the CDN location of the assets and use these URLs in your content.
 
 > [!NOTE]
-> You cannot hardcode CDN URLs to assets in a private origin because the required access token that forms the last section of the URL is generated at the time the resource is requested.
+> You cannot hardcode or construct CDN URLs to assets in a private origin because the required access token that forms the last section of the URL is generated at the time the resource is requested. You can construct the URL for Public CDN and the URL should not be hard coded as it is subject to change.
 
 For public CDN assets, the URL format will look like the following:
 
@@ -928,6 +928,9 @@ Replace **TenantHostName** with your tenant name. Example:
 ``` html
 https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png
 ```
+> [!NOTE]
+> The page context property should be used to construct the prefix instead of hard coding "https://publiccdn.sharepointonline.com". The URL is subject to change and should not be hard coded. If you are using display templates with Classic SharePoint Online then you can use the property "window._spPageContextInfo.publicCdnBaseUrl" in your display template for the prefix of the URL. If you are SPFx web parts for modern and classic SharePoint the you can utilize the property "this.context.pageContext.legacyPageContext.publicCdnBaseUrl". This will provide the prefix so that if it is changed then your implementation will update with it. As an example for SPFx, the URL can be constructed using the property "this.context.pageContext.legacyPageContext.publicCdnBaseUrl" + "/" + "host" + "/" + "relativeURL for the item". Please see [Using CDN in Client-side code](https://youtu.be/IH1RbQlbhIA) which is part of the [season 1 performance series](https://aka.ms/sppnp-perfvideos)
+
 
 ### Using assets in private origins
 
