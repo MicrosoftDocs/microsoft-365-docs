@@ -54,7 +54,7 @@ In contrast, you also have several options to block email from specific sources 
 
 ## (Recommended) Use mail flow rules
 
-Mail flow rules in Exchange Online and standalone EOP use conditions and exceptions to identify messages, and actions to specify what should be done to those messages. For more information, see [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Mail flow rules in Exchange Online and standalone EOP use conditions and exceptions to identify messages, and actions to specify what should be done to those messages. For more information, see [Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
 The following example assumes you need email from contoso.com to skip spam filtering. To do this, configure the following settings:
 

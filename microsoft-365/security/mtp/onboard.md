@@ -35,12 +35,9 @@ Configure and manage all the Microsoft Defender for Endpoint capabilities to get
 ## In this section 
 Topic | Description 
 :---|:---
-[Configure attack surface reduction capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction) |  By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation. 
-[Configure next generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) | Configure next generation protection to catch all types of emerging threats.
-[Configure Microsoft Threat Experts capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts) | Configure and manage how you would like to get cybersecurity threat intelligence from Microsoft Threat Experts.
-[Configure Microsoft 365 Defender integration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration)| Configure other solutions that integrate with Microsoft Defender for Endpoint.
-[Management and API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis)| Pull alerts to your SIEM or use APIs to create custom alerts. Create and build Power BI reports. 
-[Configure Microsoft Defender Security Center settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preferences-setup) |  Configure portal-related settings such as general settings, advanced features, enable the preview experience and others.
-
-
-
+[Configure attack surface reduction capabilities](/windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction) |  By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation. 
+[Configure next generation protection](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) | Configure next generation protection to catch all types of emerging threats.
+[Configure Microsoft Threat Experts capabilities](/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts) | Configure and manage how you would like to get cybersecurity threat intelligence from Microsoft Threat Experts.
+[Configure Microsoft 365 Defender integration](/windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration)| Configure other solutions that integrate with Microsoft Defender for Endpoint.
+[Management and API support](/windows/security/threat-protection/microsoft-defender-atp/management-apis)| Pull alerts to your SIEM or use APIs to create custom alerts. Create and build Power BI reports. 
+[Configure Microsoft Defender Security Center settings](/windows/security/threat-protection/microsoft-defender-atp/preferences-setup) |  Configure portal-related settings such as general settings, advanced features, enable the preview experience and others.

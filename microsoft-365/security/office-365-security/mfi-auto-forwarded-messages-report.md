@@ -36,7 +36,7 @@ When you click the number of messages in the widget, a flyout pane appears that 
 
   - **By mail flow rules**
   - **By Inbox rules**
-  - **By SMTP forwarding**: This method indicates automatic forwarding that admins can configure on a mailbox as described in [Configure email forwarding for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
+  - **By SMTP forwarding**: This method indicates automatic forwarding that admins can configure on a mailbox as described in [Configure email forwarding for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
   - A link to the [Forwarding report](view-mail-flow-reports.md#forwarding-report) for more details.
 
 - **Auto-forwarded messages by domains and users**:
