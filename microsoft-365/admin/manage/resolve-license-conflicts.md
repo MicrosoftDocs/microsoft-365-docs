@@ -29,11 +29,11 @@ description: "Learn how to resolve license conflicts with your Microsoft 365 for
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+[About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-We recommend that you buy the licenses that you need for your subscription before you create new users. That way, a license can be assigned to new users as user accounts are created. If you have already assigned all of your licenses to users, but some of the licenses have expired, or you try to remove a license that is already assigned to a user, you will have license conflicts. For more information, see [Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).
+We recommend that you buy the licenses that you need for your subscription before you create new users. That way, a license can be assigned to new users as user accounts are created. If you have already assigned all of your licenses to users, but some of the licenses have expired, or you try to remove a license that is already assigned to a user, you will have license conflicts. For more information, see [Remove licenses from your subscription](../../commerce/licenses/buy-licenses.md).
   
 ## How do I view license conflicts?
 

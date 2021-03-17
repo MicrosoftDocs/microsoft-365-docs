@@ -29,13 +29,13 @@ Here is an example of the validation and management of users, their devices, and
 To help you secure and protect your organization's resources, Microsoft 365 for enterprise includes features to help manage devices and their access to apps. There are two options for device management:
 
 - Microsoft Intune, which is a comprehensive device and app management solution for enterprises.
-- Basic Mobility and Security, which is a subset of Intune services included with all Microsoft 365 products for managing devices in your organization. For more information, see [Capabilities of Basic Mobility and Security](https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/capabilities).
+- Basic Mobility and Security, which is a subset of Intune services included with all Microsoft 365 products for managing devices in your organization. For more information, see [Capabilities of Basic Mobility and Security](../admin/basic-mobility-security/capabilities.md).
 
 If you have Microsoft 365 E3 or E5, you should use Intune.
 
 ## Microsoft Intune
 
-You use [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide) to manage access to your organization using MDM or MAM. MDM is when users "enroll" their devices in Intune. After a device is enrolled, it is a managed device and can receive your organization's  policies, rules, and settings. For example, you can install specific apps, create a password policy, install a VPN connection, and more.
+You use [Microsoft Intune](/mem/intune/fundamentals/planning-guide) to manage access to your organization using MDM or MAM. MDM is when users "enroll" their devices in Intune. After a device is enrolled, it is a managed device and can receive your organization's  policies, rules, and settings. For example, you can install specific apps, create a password policy, install a VPN connection, and more.
 
 Users with their own personal devices may not want to enroll their devices or be managed by Intune and your organization's policies. But you still need to protect your organization's resources and data. In this scenario, you can protect your apps using MAM. For example, you can use an MAM policy that requires a user to enter a PIN when accessing SharePoint on the device.
 

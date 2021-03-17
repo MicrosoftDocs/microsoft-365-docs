@@ -23,14 +23,14 @@ description: "This article discusses how to apply a retention label to a model i
 </br>
 
 
-You can easily apply a [retention label](https://docs.microsoft.com/microsoft-365/compliance/retention) to a model in Microsoft SharePoint Syntex. You can do this for both document understanding and form processing models.
+You can easily apply a [retention label](../compliance/retention.md) to a model in Microsoft SharePoint Syntex. You can do this for both document understanding and form processing models.
 
 Retention labels let you apply retention settings to the documents that your models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).
 
 You can apply a pre-existing retention label to your model through your model settings on your model's home page. 
 
 > [!Important]
-> For retention labels to be available to apply to your document understanding models, they need to be [created and published in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> For retention labels to be available to apply to your document understanding models, they need to be [created and published in the Microsoft 365 Compliance Center](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 ## To add a retention label to a document understanding model
 
@@ -68,13 +68,13 @@ For example, all *Insurance notice* documents that your model identifies will al
 ## To add a retention label to a form processing model
 
 > [!Important]
-> For retention labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> For retention labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 You can either apply a retention label to a form processing model when you are creating a model, or apply it to an existing model.
 
 ### To add a retention label when you create a form processing model
 
-1. When you are [creating a new form processing model](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model), select <b>Advanced settings.</b>
+1. When you are [creating a new form processing model](./create-a-form-processing-model.md), select <b>Advanced settings.</b>
 2. In <b>Advanced settings</b>, in the <b>Retention label</b> section, select the menu and then select the retention label you want to apply to the model.</b>
 
  
@@ -127,5 +127,3 @@ You can add a retention label to an existing form processing model that you own 
 [Create an extractor](create-an-extractor.md)
 
 [Document Understanding overview](document-understanding-overview.md)
-
-

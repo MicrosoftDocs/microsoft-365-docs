@@ -42,6 +42,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Move users to a different subscription
       href: subscriptions/move-users-different-subscription.md
+    - name: Manage auto-claim policies
+      href: licenses/manage-auto-claim-policies.md
     - name: Understand subscriptions and licenses
       href: licenses/subscriptions-and-licenses.md
 - name: Bills and payments
@@ -69,7 +71,7 @@
     - name: Manage billing accounts
       href: manage-billing-accounts.md
     - name: Associate a tenant with your billing account
-      href: https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: Manage relationships with your partners
   href: manage-partners.md
 - name: Close your account

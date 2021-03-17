@@ -38,7 +38,7 @@ For a visual map to all the articles in the Microsoft 365 for enterprise Test La
 
 ## Base configuration
 
-First, create a test environment for [Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/). You can create two different types of base configurations:
+First, create a test environment for [Microsoft 365 for enterprise](/microsoft-365-enterprise/). You can create two different types of base configurations:
 
 - [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) - Use this when you want to configure and demonstrate Microsoft 365 for enterprise features and capabilities in a cloud-only environment, which does not include any on-premises components.
 
