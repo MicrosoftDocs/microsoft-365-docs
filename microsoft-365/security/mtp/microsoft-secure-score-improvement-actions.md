@@ -29,7 +29,7 @@ ms.technology: m365d
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
-To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
+To help you find the information you need more quickly, Microsoft improvement actions are organized into groups:
 
 * Identity (Azure Active Directory accounts & roles)
 * Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
