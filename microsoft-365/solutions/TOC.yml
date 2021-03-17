@@ -225,6 +225,8 @@
         href: contoso-team-for-top-secret-project.md
       - name: Teams voice migration
         href: /MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+      - name: Contoso compliance case study
+        href: ../compliance/communication-compliance-case-study.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&view=o365-worldwide%3ftoc%3d%2fmicrosoft-365%2fsolutions%2ftoc.json
 
     - name: Test Lab Guides
       items:
