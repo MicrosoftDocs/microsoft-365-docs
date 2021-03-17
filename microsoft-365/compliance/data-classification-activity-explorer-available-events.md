@@ -25,7 +25,8 @@ description: "listing of labeling actions that are available in activity explore
 ## Sensitivity labeling activities in Activity explorer
 
 ### Label applied
-This activity is generated each time an unlabeled document is labeled or an email is sent with a label. 
+
+This event is generated each time an unlabeled document is labeled or an email is sent with a label. 
 
 - It is captured at the point of save in Office native applications and web applications. 
 - It is captured at the time of occurrence in Azure Information protection add-ins. 
@@ -110,6 +111,21 @@ This event is generated each time a labeled or protected document is opened. The
 
 
 ### Files discovered
+
+This event is generated each time files are discovered when AIP Scanner is used for scanning sensitive data in various locations and finds files.
+
+|Source  |available or not available| Note  |
+|---------|---------|---------| 
+|Word, Excel, PowerPoint         |not applicable         | |
+|Outlook         |not applicable         ||
+|SharePoint Online, OneDrive         |not applicable         | |
+|Exchange         |not applicable         | |
+|AIP unified client         |not applicable       |the AIP *access* action is mapped to the *file read* action in activity explorer|
+|AIP unified scanner         |yes         |the AIP *discover* action is mapped to the *files discovered* action in activity explorer|
+|MIP SDK         |yes         |the *discover* action is mapped to the *file discovered* action in activity explorer|
+|RMS service         |not applicable         |the *access* action is mapped to the *file read* action in activity explorer |
+|Power BI desktop and Web         |not applicable         |accessible in the Microsoft 365 audit logs |
+|MCAS     |not applicable         |         | |
 
 
 [data classification overview](data-classification-overview.md)
