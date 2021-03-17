@@ -134,7 +134,8 @@ To assign licenses:
 
 4. Under **Apps**, make sure **Graph Connectors Search with Index (Viva Topics)** and **Viva Topics** are both selected.
 
-    ![Microsoft Viva Topics licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft Viva Topics licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
 
 5. Click **Save changes**.
 
