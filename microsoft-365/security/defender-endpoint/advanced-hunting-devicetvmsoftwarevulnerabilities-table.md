@@ -35,7 +35,7 @@ The `DeviceTvmSoftwareVulnerabilities` table in the advanced hunting schema cont
 >[!NOTE]
 >The `DeviceTvmSoftwareInventory` and `DeviceTvmSoftwareVulnerabilities` tables have replaced the `DeviceTvmSoftwareInventoryVulnerabilities` table. Together, the first two tables include more columns you can use to help inform your vulnerability management activities.
 
-For information on other tables in the advanced hunting schema, see [the advanced hunting reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md).
+For information on other tables in the advanced hunting schema, see [the advanced hunting reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
