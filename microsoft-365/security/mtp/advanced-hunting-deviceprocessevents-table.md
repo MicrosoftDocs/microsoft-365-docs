@@ -50,6 +50,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
 | `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
 | `MD5` | string | MD5 hash of the file that the recorded action was applied to |
+| `FileSize` | long | Size of the file in bytes |
 | `ProcessId` | int | Process ID (PID) of the newly created process |
 | `ProcessCommandLine` | string | Command line used to create the new process |
 | `ProcessIntegrityLevel` | string | Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources |
@@ -84,7 +85,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | string | Additional information about the event in JSON array format |
-| `FileSize` | long | Size of the file in bytes |
+
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
