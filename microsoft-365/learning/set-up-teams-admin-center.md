@@ -18,5 +18,3 @@ description: "Learn how to configure Microsoft Viva Learning in the Teams admin 
 
 # Set up Viva Learning in the Teams admin center 
 
-
-
