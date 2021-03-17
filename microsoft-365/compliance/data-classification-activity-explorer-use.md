@@ -1,5 +1,5 @@
 ---
-title: "Get started with activity explorer"
+title: "Use activity explorer"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,10 +17,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Activity explorer rounds out the functionality of the data classification feature by letting you see and filter on the actions users are taking on your labeled content."
+description: "Learn how to use activity explorer to investigate labeling events for the most common scenarios."
 ---
 
-# Get started with activity explorer
+# Use activity explorer
 
 The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view of activities on your labeled content. The activity information is collected from the Microsoft 365 unified audit logs, transformed and made available in the Activity explorer UI. 
 
@@ -104,6 +104,8 @@ The value of understanding what actions are being taken with your sensitive labe
 
 > [!NOTE]
 > Activity explorer doesn't currently monitor retention activities for Exchange Online.
+
+
 
 ## See also
 - [Learn about sensitivity labels](sensitivity-labels.md)
