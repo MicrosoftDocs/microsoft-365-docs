@@ -17,6 +17,12 @@ description: "Learn how to find resources for Microsoft Viva Learning."
 
 # Introduction to Microsoft Viva Topics
 
+The resources on this page are designed to get you started with learning about and using Viva Learning in your organization.
+
+## Get started
+
+<!--
+
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
@@ -72,6 +78,6 @@ The resources in this section help your users learn how to use and manage topics
 |Understand why topics might differ to different users|[Viva Topics security trimming](topic-experiences-security-trimming.md)|
 |Learn how to prevent specific topics from being identified and viewed|[Restrict access to topics](restrict-access-to-topics.md)|
 
-
+-->
 
 
