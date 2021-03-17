@@ -2,8 +2,8 @@
 title: "Test and deploy Microsoft 365 Apps"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
