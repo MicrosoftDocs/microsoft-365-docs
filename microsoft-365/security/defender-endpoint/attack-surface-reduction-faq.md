@@ -44,7 +44,7 @@ Yes. ASR is supported for Windows Enterprise E3 and above.
 
 All of the rules supported with E3 are also supported with E5.
 
-E5 also added greater integration with Defender for Endpoint. With E5, you can [use Defender for Endpoint to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/mtp/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
+E5 also added greater integration with Defender for Endpoint. With E5, you can [use Defender for Endpoint to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/defender/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
 
 ## What are the currently supported ASR rules?
 
@@ -86,7 +86,7 @@ From within Defender for Endpoint, you can update your defenses with custom indi
 
 ## Does ASR support file or folder exclusions that include system variables and wildcards in the path?
 
-Yes. See [Excluding files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for more details on excluding files or folders from ASR rules, and [Configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for more on using system variables and wildcards in excluded file paths.
+Yes. See [Excluding files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for more details on excluding files or folders from ASR rules, and [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for more on using system variables and wildcards in excluded file paths.
 
 ## Do ASR rules cover all applications by default?
 

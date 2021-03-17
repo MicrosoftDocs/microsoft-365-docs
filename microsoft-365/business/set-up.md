@@ -102,7 +102,7 @@ To set up services, you have to update some records at your DNS host or domain r
 
 The policies you set up in the wizard are applied automatically to a [Security group](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) called *All Users*. You can also create additional groups to assign policies to in the admin center.
 
-1. On the **Increase protection from advanced cyber threats**, it is recommended that you accept the defaults to let [Office 365 Advance Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) scan files and links in Office apps.
+1. On the **Increase protection from advanced cyber threats**, it is recommended that you accept the defaults to let [Office 365 Advance Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp) scan files and links in Office apps.
 
     ![Screenshot of Increase protection page.](../media/increasetreatprotection.png)
 

@@ -44,3 +44,4 @@ Article | Description
 [Controlled folder access](./enable-controlled-folders.md)|How to protect valuable data from malicious apps
 [Attack surface reduction](./enable-attack-surface-reduction.md)|How to prevent actions and apps that are typically used by exploit-seeking malware
 [Network firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)|How to protect devices and data across a network
+
