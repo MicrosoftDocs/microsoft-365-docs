@@ -108,7 +108,7 @@ productDirectory:
           text: Deploy Microsoft Defender for Endpoint
         - url: security/defender-365-security/defender-for-office-365.md
           text: Deploy Microsoft Defender for Office 365
-        - url: security/office-365-security/microsoft-365-policies-configurations.md
+        - url: security/defender-365-security/microsoft-365-policies-configurations.md
           text: Configure identity and device access protection
     # Card
     - title: Protect your information and comply with regulations

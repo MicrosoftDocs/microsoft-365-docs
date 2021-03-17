@@ -107,7 +107,7 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusio
 
 ## Customize the notification
 
-You can customize the notification for when a rule is triggered and blocks an app or file. See the [Windows Security](../windows-defender-security-center/windows-defender-security-center.md#customize-notifications-from-the-windows-defender-security-center) article.
+You can customize the notification for when a rule is triggered and blocks an app or file. See the [Windows Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center) article.
 
 ## Related topics
 
