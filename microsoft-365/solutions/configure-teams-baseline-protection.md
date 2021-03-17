@@ -26,15 +26,15 @@ In this article, we look at how to deploy teams with a baseline level of protect
 
 ## Initial protections
 
-As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](../security/office-365-security/teams-access-policies.md) for details.
+As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](../security/defender-365-security/teams-access-policies.md) for details.
 
 We also recommend turning on basic Defender for Office 365 features to guard against malware in documents, attachments, and links. We recommend turning on each of the options in the following table.
 
 |Option|Information|
 |:------|:-----------|
-|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Safe Links for Teams|[Office 365 Safe Links in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-attachments)<br>[Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-for-spo-odb-and-teams)|
+|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/safe-docs)|
+|Safe Links for Teams|[Office 365 Safe Links in Teams](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links-for-teams)<br>[Safe Links](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links)|
 
 ## Teams guest sharing
 

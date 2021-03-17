@@ -27,18 +27,18 @@ landingContent:
       - linkListType: overview
         links:
         - text: What is Microsoft 365 Defender?
-          url:  mtp/microsoft-threat-protection.md
+          url:  defender/microsoft-365-defender.md
         - text: Microsoft 365 security center
-          url:  mtp/overview-security-center.md
+          url:  defender/overview-security-center.md
   # Card
   - title: Start with free trials
     linkLists:
       - linkListType: get-started
         links:
           - text: Evaluate Microsoft 365 Defender
-            url: mtp/mtp-evaluation.md
+            url: defender/m365d-evaluation.md
           - text: Microsoft 365 Defender pilot playbook
-            url: mtp/mtp-pilot.md
+            url: defender/m365d-pilot.md
   
   # Card
   - title: Secure your remote workforce
@@ -54,7 +54,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Office 365?
-            url: ./office-365-security/defender-for-office-365.md
+            url: ./defender-365-security/defender-for-office-365.md
           - text: Microsoft Defender for Office 365 service description
             url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
             
@@ -106,7 +106,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Secure score
-            url: mtp/microsoft-secure-score.md
+            url: defender/microsoft-secure-score.md
 
   # Card
   - title: Azure Sentinel 
