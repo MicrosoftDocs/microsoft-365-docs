@@ -46,10 +46,10 @@ Microsoft Defender for Endpoint in the Microsoft 365 security center supports [g
 
 >[!Note]
 >The new unified portal is not available for:
->US Government Community Cloud (GCC)
->US Government Community Cloud High (GCC High)
->US Department of Defense
->All US government institutions with commercial licenses
+>- US Government Community Cloud (GCC)
+>- US Government Community Cloud High (GCC High)
+>- US Department of Defense
+>- All US government institutions with commercial licenses
 
 Take a look at the improved Microsoft 365 security center: [https://security.microsoft.com](https://security.microsoft.com).
 
