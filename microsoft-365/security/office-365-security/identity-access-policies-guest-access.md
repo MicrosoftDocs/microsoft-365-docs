@@ -34,8 +34,6 @@ This diagram shows which policies to add or update among the common identity and
 
 [![Summary of policy updates for protecting guest access](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
-
 The following table lists the policies you either need to create and update. The common policies link to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
 
 |Protection level|Policies|More information|
