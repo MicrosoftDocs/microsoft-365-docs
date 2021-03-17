@@ -114,7 +114,7 @@ When you identify an origin, you specify whether it should be made _public_ or _
 
 Both public and private options provide similar performance gains, but each has unique attributes and advantages.
 
-**Public** origins within the Office 365 CDN are accessible anonymously, and hosted assets can be accessed by anyone who has the URL to the asset. Because access to content in public origins is anonymous, you should only use them to cache non-sensitive generic content such as javascript files, scripts, icons and images.
+**Public** origins within the Office 365 CDN are accessible anonymously, and hosted assets can be accessed by anyone who has the URL to the asset. Because access to content in public origins is anonymous, you should only use them to cache non-sensitive generic content such as JavaScript files, scripts, icons and images.
 
 **Private** origins within the Office 365 CDN provide private access to user content such as SharePoint Online document libraries, sites and proprietary images. Access to content in private origins is secured by dynamically generated tokens so it can only be accessed by users with permissions to the original document library or storage location. Private origins in the Office 365 CDN can only be used for SharePoint Online content, and you can only access assets in private origins through redirection from your SharePoint Online tenant.
 
@@ -130,7 +130,7 @@ You can read more about how CDN access to assets in a private origin works in [U
 
 + When you host style sheets (CSS files) in a public origin, you can use relative paths and URIs within the code. This means that you can reference the location of background images and other objects relative to the location of the asset that's calling it.
 
-+ While you can construct a public origin's URL, you should proceed with caution and ensure you utilize the page context property and follow the guidance for doing so. The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors. The URL is also subject to change wich is why it should not just be hard coded to its current value.
++ While you can construct a public origin's URL, you should proceed with caution and ensure you utilize the page context property and follow the guidance for doing so. The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors. The URL is also subject to change which is why it should not just be hard coded to its current value.
 
 + The default file types that are included for public origins are .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, .woff and .woff2. You can specify additional file types.
 
@@ -198,7 +198,7 @@ The status of the CDN for the specified CdnType will output to the screen.
 
 Use the **Set-SPOTenantCdnEnabled** cmdlet to enable your organization to use the Office 365 CDN. You can enable your organization to use public origins, private origins, or both at once. You can also configure the CDN to skip the setup of default origins when you enable it. You can always add these origins later as described in this topic.
   
-In Windows Powershell for SharePoint Online:
+In Windows PowerShell for SharePoint Online:
 
 ```powershell
 Set-SPOTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
