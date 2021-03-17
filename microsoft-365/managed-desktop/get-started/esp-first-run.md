@@ -14,7 +14,7 @@ ms.collection: M365-modern-desktop
 
 # First-run experience with Autopilot and the Enrollment Status Page
 
-Microsoft Managed Desktop uses both [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) and Microsoft Intune's [Enrollment Status Page (ESP)](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) to provide the best possible first-run experience to your users.
+Microsoft Managed Desktop uses both [Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) and Microsoft Intune's [Enrollment Status Page (ESP)](/windows/deployment/windows-autopilot/enrollment-status) to provide the best possible first-run experience to your users.
 
 The Enrollment Status Page is currently in public preview.
 
@@ -66,7 +66,7 @@ Microsoft Managed Desktop uses these settings for the Enrollment Status Page exp
 
 
 
-The Enrollment Status Page experience occurs in three phases. For more, see [Enrollment Status Page tracking information](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
+The Enrollment Status Page experience occurs in three phases. For more, see [Enrollment Status Page tracking information](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
 
 The experience proceeds as follows:
 
