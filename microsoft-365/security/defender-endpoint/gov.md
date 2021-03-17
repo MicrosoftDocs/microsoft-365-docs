@@ -70,7 +70,7 @@ The following OS versions are supported:
 
 OS version | GCC | GCC High | DoD (PREVIEW)
 :---|:---|:---|:---
-Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4586853)) | ![Yes](/security/defender-endpoint/images/svg/check-yes) | ![Yes](/security/defender-endpoint/images/svg/check-yes) | ![Yes](/security/defender-endpoint/images/svg/check-yes)
+Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4586853)) | ![Yes](/images/svg/check-yes) | ![Yes](/defender-endpoint/images/svg/check-yes) | ![Yes](images/svg/check-yes)
 Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4586853)) | ![Yes](/security/defender-endpoint/images/svg/check-yes) | ![Yes](/security/defender-endpoint/images/svg/check-yes) | ![Yes](/security/defender-endpoint/images/svg/check-yes)
 Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](/security/defender-endpoint/images/svg/check-yes) | ![Yes](/security/defender-endpoint/images/svg/check-yes) | ![Yes](/security/defender-endpoint/images/svg/check-yes)
 Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](/security/defender-endpoint/images/svg/check-yes) | ![Yes](/security/defender-endpoint/images/svg/check-yes) | ![Yes](/security/defender-endpoint/images/svg/check-yes)
