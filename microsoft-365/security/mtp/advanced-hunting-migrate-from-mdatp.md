@@ -68,7 +68,7 @@ The `AlertInfo` and `AlertEvidence` tables replace the `DeviceAlertEvents` table
 Use the following table to check how `DeviceAlertEvents` columns map to columns in the `AlertInfo` and `AlertEvidence` tables.
 
 >[!TIP]
->In addition to the columns the following table, the `AlertEvidence` table includes many other columns that provide a more holistic picture of alerts from various sources. [See all AlertEvidence columns](advanced-hunting-alertevidence-table.md) 
+>In addition to the columns in the following table, the `AlertEvidence` table includes many other columns that provide a more holistic picture of alerts from various sources. [See all AlertEvidence columns](advanced-hunting-alertevidence-table.md) 
 
 | DeviceAlertEvents column | Where to find the same data in Microsoft 365 Defender |
 |-------------|-----------|-------------|-------------|
