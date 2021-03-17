@@ -26,7 +26,7 @@ description: "listing of labeling events that are available in activity explorer
 
 |Activity  |Source  |available or not available| Note  |
 |---------|---------|---------|---------|
-|label applied| Word, Excel, PowerPoint|yes | captured at time of save
+|**label applied** is generated each time an unlabeled document is labeled or an email is sent with a label| Word, Excel, PowerPoint|yes | captured at time of save
 |     |Outlook| yes |- from Win 32</br>- captured at time of save |
 |     |SharePoint online, OneDrive|yes | |
 |     |Exchange        |yes         | |
@@ -35,7 +35,7 @@ description: "listing of labeling events that are available in activity explorer
 |     |RMS service         |not applicable         | |
 |     |Power BI desktop and web        | no| accessible in the Microsoft 365 audit logs         |
 |     |Microsoft Cloud App Security         |no|         |
-|label changed    |Word, Excel, PowerPoint         |yes         |captured at time of save |
+|**label changed** is generated each time a label is updated on the document or email    |Word, Excel, PowerPoint         |yes         |captured at time of save |
 |Row11     |Outlook         |yes         |Win 32|
 |Row12     |SharePoint Online, OneDrive         |yes         | |
 |Row13     |Exchange         |yes         | |
