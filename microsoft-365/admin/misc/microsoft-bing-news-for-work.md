@@ -1,5 +1,5 @@
 ---
-title: "The smart way to start your work day"
+title: "Microsoft Bing News for Work"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -14,7 +14,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "A daily roundup of news, trends, and stories related to your company, work, or industry delivered fresh to your inbox."
 ---
 
-# The smart way to start your workday
+# Microsoft Bing News for Work
 
 Stay up to date with what's happening in your industry. Every morning, you'll get a roundup of news, interesting trends, and stories related to your company, work, or industry—delivered fresh to your inbox. [Subscribe now](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form).
 
