@@ -72,7 +72,7 @@ Every account that accesses and uses data classification must have a license ass
 
 ## Activity types
 
-Activity explorer gathers activity information from the audit logs on multiple sources of activities. For more detailed information on what labeling activity makes it to Activity explorer, see [Use activity explorer](data-classification-activity-explorer-use.md)
+Activity explorer gathers activity information from the audit logs on multiple sources of activities. For more detailed information on what labeling activity makes it to Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
 
 **Sensitivity label activities** and **Retention labeling activities** from Office native applications, Azure Information Protection add-in, SharePoint Online, Exchange Online (sensitivity labels only) and OneDrive. Some examples are:
 
