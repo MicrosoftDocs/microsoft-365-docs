@@ -100,7 +100,7 @@ The tables in the following sections describe the conditions and exceptions that
 |Message size over|condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver*|	Size	|Messages where the total size (message plus attachments) is greater than or equal to the specified value. <br/>**Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
 | With importance    | condition: *WithImportance* <br/> exception: *ExceptIfWithImportance*    | Importance    | Messages that are marked with the specified importance level.    |
 | Content character set contains words    | condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Messages that have any of the specified character set names.    |
-| Has sender override    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/a    | Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).   |
+| Has sender override    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/a    | Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Data loss prevention](./data-loss-prevention-policies.md).   |
 | Message type matches    | condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*    | MessageType    | Messages of the specified type.    |
 
 ## Actions for DLP policies
@@ -119,7 +119,3 @@ This table describes the actions that are available in DLP.
 |Add the sender’s manager as recipient|AddRecipients | First property: *AddedManagerAction*</br>Second property: *Field* | Adds the sender's manager to the message as the specified recipient type ( To, Cc, Bcc ), or redirects the message to the sender's manager without notifying the sender or the recipient. This action only works if the sender's Manager attribute is defined in Active Directory. This parameter uses the syntax: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
 Prepend subject    |PrependSubject    |String    |Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.</br>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.    |
 Apply HTML disclaimer    |ApplyHtmlDisclaimer    |First property: *Text*</br>Second property: *Location*</br>Third property: *Fallback action*    |Applies the specified HTML disclaimer to the required location of the message.</br>This parameter uses the syntax: @{ Text = “ ” ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }
-
-
-
-

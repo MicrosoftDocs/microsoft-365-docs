@@ -21,7 +21,7 @@ description: "Understand how to use and manage templates for building assessment
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depends on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
+> The assessment templates that are available to your organization depends on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Templates overview
 
@@ -33,7 +33,7 @@ A template is a framework of controls for creating an assessment in Compliance M
 
 #### Included and premium templates
 
-The templates available for use are based on your organization’s licensing agreement ([view licensing details](https://go.microsoft.com/fwlink/?linkid=2132371)). There are two categories of templates: included and premium.
+The templates available for use are based on your organization’s licensing agreement ([view licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)). There are two categories of templates: included and premium.
 
 1. **Included templates** are available for use as part of your organization’s licensing agreement.
 2. **Premium templates** must be purchased in order to create assessments from them. Once purchased, you may create as many assessments from a template as needed.
@@ -55,7 +55,7 @@ For example, if your counter shows 2/5, this means your organization has activat
 
 If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
 
-See [Compliance Manager licensing guidance](https://go.microsoft.com/fwlink/?linkid=2132371) for further details.
+See [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) for further details.
 
 ## Viewing and managing templates from the assessment templates page
 

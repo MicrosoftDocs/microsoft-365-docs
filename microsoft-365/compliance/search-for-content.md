@@ -41,7 +41,7 @@ The first step is to starting using the Content Search tool to choose content lo
 
 - [Retry a Content Search](retry-failed-content-search.md) to resolve a content location error
 
-- [Preserve Bcc recipients](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) so you can search for them 
+- [Preserve Bcc recipients](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) so you can search for them 
 
 ## Perform actions on content you find
 

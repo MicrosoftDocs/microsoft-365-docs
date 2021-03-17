@@ -52,11 +52,11 @@ Certain types of files, such as Bitmap or MP3 files, don't contain content that 
   
 For a list of supported and disabled file formats, see the following topics:
   
-- **Exchange** - [File formats indexed by Exchange Search](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange** - [File formats indexed by Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- **Exchange** - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange** - [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
-- **SharePoint** - [Default crawled file name extensions and parsed file types in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint** - [Default crawled file name extensions and parsed file types in SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## Messages and documents with partially indexed file types can be returned in search results
 
@@ -105,7 +105,7 @@ One exception to this rule is when you create a query-based hold that's associat
 
 The following table describes the indexing limits that might result in an email message being returned as a partially indexed item in an eDiscovery search in Microsoft 365.
   
-For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
+For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](/sharepoint/search-limits).
   
 |**Indexing limit**|**Maximum value**|**Description**|
 |:-----|:-----|:-----|

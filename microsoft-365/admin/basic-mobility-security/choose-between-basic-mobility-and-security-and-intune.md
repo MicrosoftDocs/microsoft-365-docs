@@ -22,7 +22,7 @@ description: "Basic Mobility and Security are part of the Microsoft 365 plans."
 
 # Choose between Basic Mobility and Security or Intune
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) is a standalone product included with certain Microsoft 365 plans, while Basic Mobility and Security is part of the Microsoft 365 plans.
+[Microsoft Intune](/mem/intune/) is a standalone product included with certain Microsoft 365 plans, while Basic Mobility and Security is part of the Microsoft 365 plans.
 
  ## Availability of Basic Mobility and Security and Intune
 
@@ -50,7 +50,7 @@ Both Basic Mobility and Security and Intune are included in a variety of plans, 
 >[!NOTE]
 >You can't start using Basic Mobility and Security if you're already using Microsoft Intune.
 
- For details, see [Microsoft 365 and Office 365 platform service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). 
+ For details, see [Microsoft 365 and Office 365 platform service descriptions](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). 
 
 ## Differences in capabilities
 
@@ -82,20 +82,20 @@ Basic Mobility and Security remote actions include retire, wipe and full wipe. F
 With Intune you have the following set of actions:
 
 -   Autopilot reset (Windows only
--  [Bitlocker key rotation](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys) (Windows only)
--  [Use wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
--  [Disable activation loc](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable) (iOS only)
--  [Fresh start](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start) (Windows only)
-- [Full scan](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 only)
-- [Locate device](https://docs.microsoft.com/mem/intune/remote-actions/device-locate) (iOS only)
-- [Lost mode](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode) (iOS only)- [Quick scan](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 only)
-- [Remote control for Android](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
-- [Remote lock](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
-- [Rename device](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
--  [Reset passcode](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset) [Restart](https://docs.microsoft.com/mem/intune/remote-actions/device-restart) (Windows only)
+-  [Bitlocker key rotation](/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys) (Windows only)
+-  [Use wipe, retire, or manually unenrolling the device](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
+-  [Disable activation loc](/mem/intune/remote-actions/device-activation-lock-disable) (iOS only)
+-  [Fresh start](/mem/intune/remote-actions/device-fresh-start) (Windows only)
+- [Full scan](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 only)
+- [Locate device](/mem/intune/remote-actions/device-locate) (iOS only)
+- [Lost mode](/mem/intune/remote-actions/device-lost-mode) (iOS only)- [Quick scan](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 only)
+- [Remote control for Android](/mem/intune/remote-actions/teamviewer-support)
+- [Remote lock](/mem/intune/remote-actions/device-remote-lock)
+- [Rename device](/mem/intune/remote-actions/device-rename)
+-  [Reset passcode](/mem/intune/remote-actions/device-passcode-reset) [Restart](/mem/intune/remote-actions/device-restart) (Windows only)
 -  Update Windows Defender Security Intelligence (Windows only)
 -  Windows 10 PIN reset (Windows only)
--  [Send custom notifications](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad OS)
--  [Synchronize device](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)
+-  [Send custom notifications](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad OS)
+-  [Synchronize device](/mem/intune/remote-actions/device-sync)
 
-For more information on Intune actions, see [Microsoft Intune documentation](https://docs.microsoft.com/mem/intune/).
+For more information on Intune actions, see [Microsoft Intune documentation](/mem/intune/).
