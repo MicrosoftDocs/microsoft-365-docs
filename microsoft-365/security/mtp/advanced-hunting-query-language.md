@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). To understand these concepts better, run your first query.
+Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). To understand these concepts better, run your first query.
 
 ## Try your first query
 
@@ -141,13 +141,13 @@ Advanced hunting supports Kusto data types, including the following common types
 
 | Data type | Description and query implications |
 |--|--|
-| `datetime` | Data and time information typically representing event timestamps. [See supported datetime formats](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | Character string in UTF-8 enclosed in single quotes (`'`) or double quotes (`"`). [Read more about strings](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
-| `bool` | This data type supports `true` or `false` states. [See supported literals and operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `datetime` | Data and time information typically representing event timestamps. [See supported datetime formats](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | Character string in UTF-8 enclosed in single quotes (`'`) or double quotes (`"`). [Read more about strings](/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | This data type supports `true` or `false` states. [See supported literals and operators](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | 32-bit integer  |
 | `long` | 64-bit integer |
 
-To learn more about these data types, [read about Kusto scalar data types](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
+To learn more about these data types, [read about Kusto scalar data types](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
@@ -174,7 +174,7 @@ The **Get started** section provides a few simple queries using commonly used op
 
 ## Access query language documentation
 
-For more information on Kusto query language and supported operators, see [Kusto query language documentation](https://docs.microsoft.com/azure/kusto/query/).
+For more information on Kusto query language and supported operators, see [Kusto query language documentation](/azure/kusto/query/).
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
