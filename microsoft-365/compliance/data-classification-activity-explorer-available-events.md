@@ -267,17 +267,10 @@ Generated each time a document with a retention label has been renamed.
 |SharePoint Online|no          |
 |OneDrive |no|
 
+## Known issues
+  
+- When the recommended label tool tip is shown to an end user, it is not captured. But if the user chooses to apply the recommended label, the label will be shown under the *How applied* field as *Recommended*  
 
+- Justification text is not currently available on sensitivity label downgrade from Sharepoint and OneDrive.  
 
-
-[data classification overview](data-classification-overview.md)
-
-[content explorer](data-classification-content-explorer.md)
-
-[data loss prevention policies](data-loss-prevention-policies.md)
-
-## See also
-- [Learn about sensitivity labels](sensitivity-labels.md)
-- [Learn about retention policies and retention labels](retention.md)
-- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-
+- Sensitive information types are currently not available for auto-labeling activities from Word, Excel, PowerPoint, and Outlook, as well as SharePoint Online, and OneDrive.
