@@ -90,10 +90,6 @@ Footnotes:
 <sup>1</sup>
 Supported by OneDrive and Exchange by retaining a copy in a secured location, but blocked by SharePoint.
 
-Exampe message a user sees if they try to delete a labeled document in SharePoint:
-
-![Message that item wasn't deleted from SharePoint](../media/delete-message-retention-label-spo.png)
-
 When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted. 
 
 <sup>2</sup>
