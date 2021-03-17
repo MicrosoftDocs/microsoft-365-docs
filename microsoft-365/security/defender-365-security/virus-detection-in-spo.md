@@ -36,16 +36,16 @@ Microsoft 365 uses a common virus detection engine for scanning files that users
 > [!IMPORTANT]
 > The built-in anti-virus capabilities are a way to help contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to investigate and implement anti-malware protection at various layers and apply best practices for securing their enterprise infrastructure. For more information about strategies and best practices, see [Security roadmap](security-roadmap.md).
 
-## What happens when an infected file is uploaded to SharePoint Online?
+## What happens if an infected file is uploaded to SharePoint Online?
 
-The Microsoft 365 virus detection engine runs asynchronously within SharePoint Online. **All files are not automatically scanned on upload**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged so it can't be downloaded again. In April 2018, we removed the 25 MB limit for scanned files.
+The Microsoft 365 virus detection engine runs asynchronously (independent from file uploads) within SharePoint Online. **All files are not automatically scanned**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged. In April 2018, we removed the 25 MB limit for scanned files.
 
 Here's what happens:
 
 1. A user uploads a file to SharePoint Online.
-2. SharePoint Online determines whether the file meets the criteria for a scan.
-3. The virus detection engine scans the file.
-4. If a virus is found, the virus engine sets a property on the file indicating that it's infected.
+2. SharePoint Online, as part of its virus scanning processes, later determines if the file meets the criteria for a scan.
+3. If the file meets the criteria for a scan, the virus detection engine scans the file.
+4. If a virus is found within the scanned file, the virus engine sets a property on the file indicating that it's infected.
 
 ## What happens when a user tries to download an infected file by using the browser?
 

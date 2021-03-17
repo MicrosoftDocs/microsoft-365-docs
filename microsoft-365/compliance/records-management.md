@@ -95,7 +95,7 @@ Message a user sees if they try to delete a labeled document in SharePoint:
 ![Message that item wasn't deleted from SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
 <sup>2</sup>
-Containers include SharePoint document libraries and Exchange mailboxes.
+Containers include SharePoint document libraries, OneDrive accounts, and Exchange mailboxes.
 
 >[!IMPORTANT] 
 > The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label. 

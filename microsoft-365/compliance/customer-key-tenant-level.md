@@ -22,12 +22,13 @@ description: "Learn how to set up Customer Key for all data within your Microsof
 Using keys you provide, you can create a data encryption policy (DEP) and assign it to the tenant. The DEP encrypts data across the tenant for these workloads:
 
 - Teams chat messages (1:1 chats, group chats, meeting chats and channel conversations)
-- Teams media messages (images, code snippets, videos messages, audio messages, wiki images)
+- Teams media messages (images, code snippets, video messages, audio messages, wiki images)
 - Teams call and meeting recordings stored in Teams storage
 - Teams chat notifications
 - Teams chat suggestions by Cortana
 - Teams status messages
 - User and signal information for Exchange Online
+- Exchange Online mailboxes that aren't already encrypted Customer Key DEPs at the application level
 
 For Microsoft Teams, Customer Key at the tenant level encrypts new data from the time the DEP is assigned to the tenant. Public preview does not support encrypting past data. For Exchange Online, Customer Key encrypts all existing and new data.
 
@@ -37,17 +38,13 @@ You can create multiple DEPs per tenant but can only assign one DEP at any point
 
 If you already have Customer Key set up for Exchange Online and Sharepoint Online, here's how the new tenant-level public preview fits in.
 
-The tenant-level encryption policy you create encrypts all data for the Microsoft Teams and Exchange Online workloads in Microsoft 365. This policy doesn't interfere with finely tuned DEPs you've already created in Customer Key.
+The tenant-level encryption policy you create encrypts all data for the Microsoft Teams and Exchange Online workloads in Microsoft 365. However, for Exchange Online, if you have already assigned Customer Key DEPs to individual mailboxes, the tenant-level policy won't override those DEPs. The tenant-level policy will only encrypt mailboxes that aren't assigned a mailbox level Customer Key DEP already.
 
-Examples:
-
-Microsoft Teams files and some Teams call and meeting recordings that are saved in OneDrive for Business and SharePoint are encrypted by a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo.
-
-For Exchange Online, you can create a DEP that encrypts one or more user mailboxes with Customer Key. When you create a tenant-level policy, that policy will not encrypt the encrypted mailboxes. However,  the tenant-level key will encrypt the mailboxes that are not affected by a DEP already.
+For example, Microsoft Teams files and some Teams call and meeting recordings that are saved in OneDrive for Business and SharePoint are encrypted by a SharePoint Online DEP. A single SharePoint Online DEP encrypts content within a single geo.
 
 ## Set up Customer Key at the tenant level (public preview)
 
-These steps are similar but not identical to the steps for setting up Customer Key at the application level. You should only use this public preview with test data in test tenants. Do not use this release with production data or in your production environment. If you already have a production deployment of Customer Key, use these steps to set up Customer Key at the tenant level in a test environment.
+These steps are similar but not identical to the steps for setting up Customer Key at the application level. You should only use this public preview with test data in test tenants. Do not use this release with production data or in your production environment. If you already have a production deployment of Customer Key, use these steps to set up Customer Key at the tenant level in a test environment. Once you have assigned a tenant level DEP to your tenant, you can start the validation process and reach out to m365ck@microsoft.com with any questions or concerns. You can also find documented validation steps in the public preview of [Validation Instructions for Data-at-rest Encryption for Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
 
 You'll complete most of these tasks by remotely connecting to Azure PowerShell. For best results, use version 4.4.0 or later of Azure PowerShell.
 
@@ -270,7 +267,7 @@ To verify that an expiration date is not set for your keys, run the [Get-AzKeyVa
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-An expired key cannot be used by Customer Key and operations attempted with an expired key will fail and possibly result in a service outage. We strongly recommend that keys used with Customer Key do not have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 will not pass Microsoft 365 validation.
+An expired key cannot be used by Customer Key and operations attempted with an expired key will fail and possibly result in a service outage. We strongly recommend that keys used with Customer Key do not have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 won't pass Microsoft 365 validation.
   
 To change an expiration date that has been set to any value other than 12/31/9999, run the [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) cmdlet as follows:
   
@@ -295,10 +292,10 @@ You need to be assigned permissions before you can run these cmdlets. Although t
 ### Create policy
 
 ```powershell
-   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
+   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>]
 ```
 
-Description: Enable compliance admin to create a new data encryption policy (DEP) using two AKV root keys. Once created, a policy can then be assigned using Set-M365DataAtRestEncryptionPolicy cmdlet. Upon first assignment of keys or after you rotate keys, it can take up to 24 hours for the new keys to take effect. If the new DEP takes more than 24 hours to take effect, contact Microsoft.
+Description: Enable compliance admin to create a new data encryption policy (DEP) using two AKV root keys. Once created, a policy can then be assigned using Set-M365DataAtRestEncryptionPolicyAssignment cmdlet. Upon first assignment of keys or after you rotate keys, it can take up to 24 hours for the new keys to take effect. If the new DEP takes more than 24 hours to take effect, contact Microsoft.
 
 Example:
 
@@ -317,7 +314,7 @@ Parameters:
 ### Assign policy
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
 Description:
@@ -326,18 +323,19 @@ This cmdlet is used for configuring default Data Encryption Policy. This policy 
 Example:
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Default_PolicyName"
 ```
 
 Parameters:
+
 | Name | Description | Optional (Y/N) |
 |----------|----------|---------|
--Policy|Specifies the data encryption policy that needs to be assigned; specify either the Policy Name or the Policy ID.|N|
+-DataEncryptionPolicy|Specifies the data encryption policy that needs to be assigned; specify either the Policy Name or the Policy ID.|N|
 
 ### Modify or Refresh policy
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
+Set-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
 ```
 
 Description:
@@ -354,22 +352,23 @@ Set-M365DataAtRestEncryptionPolicy -Identity "NAM Policy" -Enabled $false
 Refresh a data encryption policy.
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
+Set-M365DataAtRestEncryptionPolicy -Identity "EUR Policy" -Refresh
 ```
 
 Parameters:
+
 | Name | Description | Optional (Y/N) |
 |----------|----------|---------|
 |-Identity|Specifies the data encryption policy that you want to modify.|N|
 |-Refresh|Use the Refresh switch to update the data encryption policy after you rotate any of the associated keys in the Azure Key Vault. You don't need to specify a value with this switch.|Y|
 |-Enabled|The Enabled parameter enables or disable the data encryption policy. Before you disable a policy, you must unassign it from your tenant. Valid values are:</br > $true: The policy is enabled</br > $false: The policy is disabled.|Y|
-|-Name|The Name parameter specifies the unique name for the data encryption policy.|Y
+|-Name|The Name parameter specifies the unique name for the data encryption policy.|Y|
 |-Description|The Description parameter specifies an optional description for the data encryption policy.|Y|
 
 ### Get policy details
 
 ```powershell
-Get-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
+Get-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
 ```
 
 Description: This cmdlet lists all of M365DataAtRest encryption policies that are created for the tenant or details about a specific policy.
@@ -407,7 +406,7 @@ This cmdlet lists the policy that’s currently assigned to the tenant.
 
 If you need to revert back to Microsoft-managed keys, you can. When you offboard, your data is re-encrypted using default encryption supported by each individual workload. For example, Exchange Online supports default encryption using Microsoft-managed keys.
 
-If you decided to offboard your tenant from Customer Key at the tenant level, reach out to Microsoft with a request through email to “disable” the service for the tenant at [m365ck@microsoft.com](mailto:m365ck@microsoft.com).
+If you decided to offboard your tenant from Customer Key at the tenant level, reach out to Microsoft with a request through email to "disable" the service for the tenant at [m365ck@microsoft.com](mailto:m365ck@microsoft.com).
 
 > [!IMPORTANT]
 > Offboarding is not the same as a data purge. A data purge permanently crypto-deletes your organization's data from Microsoft 365, offboarding does not. You can't perform a data purge for a tenant-level policy. For information about data purge path, see [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).

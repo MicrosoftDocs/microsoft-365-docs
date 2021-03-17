@@ -38,6 +38,9 @@ For more information about reports and insights, see [Reports and insights in th
 
 This walkthrough is one of several for the Security & Compliance Center. To about navigating reports and insights, see the walkthroughs in the [Related topics](#related-topics) section.
 
+> [!NOTE]
+> The spoof intelligence insight shows data from the last 7 days. The [spoof intelligence policy](learn-about-spoof-intelligence.md) and the corresponding [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy) cmdlet in Exchange Online PowerShell shows data from the last 30 days. The [Get-SpoofMailReport](https://docs.microsoft.com/powershell/module/exchange/get-spoofmailreport) shows data for up to 90 days.
+
 ## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Security dashboard** page, use <https://protection.office.com/searchandinvestigation/dashboard>.

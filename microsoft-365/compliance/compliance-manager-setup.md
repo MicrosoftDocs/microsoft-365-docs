@@ -317,6 +317,8 @@ There are two ways you can take action from this screen:
 
 The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
 
+The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template type](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information.
+
 The assessments page summarizes key information about each assessment:
 
 - **Assessment**: name of the assessment
@@ -349,6 +351,8 @@ By default, you'll see the [Data Protection Baseline](compliance-manager-assessm
 ## Assessment templates page
 
 A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, and who created it.
+
+The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template type](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information.
 
 Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 

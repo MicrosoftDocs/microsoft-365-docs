@@ -30,11 +30,13 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Currently available in preview, the `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about activities in various cloud apps and services, specifically Microsoft Teams and Exchange Online. Use this reference to construct queries that return information from this table.
 
-This table will expand to include more activities monitored by Microsoft Cloud App Security. Eventually, this table will include file activity currently stored in the [AppFileEvents](advanced-hunting-appfileevents-table.md) table. Microsoft will provide additional guidance as more data moves to this table.
+The `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about activities in various cloud apps and services covered by Microsoft Cloud App Security, specifically Dropbox, Exchange Online, OneDrive, Microsoft Teams, and SharePoint. Use this reference to construct queries that return information from this table.
+
+>[!IMPORTANT]
+>This table includes information that used to be available in the `AppFileEvents` table. Starting March 7, 2021, users hunting through file-related activities in cloud services on and beyond this date should use the `CloudAppEvents` table instead. <br><br>Make sure to search for queries and custom detection rules that still use the `AppFileEvents` table and edit them to use the `CloudAppEvents` table. More guidance about converting affected queries can be found in [Hunt across cloud app activities with Microsoft 365 Defender advanced hunting](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857).
+
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -63,6 +65,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ReportId` | string | Unique identifier for the event |
 | `RawEventData` | string | Raw event information from the source application or service in JSON format |
 | `AdditionalFields` | string | Additional information about the entity or event |
+
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

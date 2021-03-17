@@ -39,6 +39,7 @@ The elements of configuration for a team with security isolation are:
 
 Watch this video for an overview of the deployment process.
 <br>
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a>
@@ -47,6 +48,10 @@ For a 1-page summary of this scenario, see the [Microsoft Teams with security is
 [![Microsoft Teams with security isolation poster](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) or [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
+
+Try this configuration in your own test lab environment with [these instructions](team-security-isolation-dev-test.md).
+
+See how the Contoso Corporation used an isolated team for a top-secret project in [this case study](contoso-team-for-top-secret-project.md).
 
 ## Initial protections
 

@@ -45,9 +45,6 @@ Any of these licenses gives you access to Microsoft 365 Defender features in Mic
 - Microsoft Cloud App Security
 - Defender for Office 365 (Plan 2)
 
-> [!NOTE]
-> Trial licenses for Office 365 currently do not provide access to Microsoft 365 Defender.
-
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
 > Don't have license yet? [Try or buy a Microsoft 365 subscription](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)

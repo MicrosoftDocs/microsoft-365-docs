@@ -46,7 +46,13 @@ Insider risk management is centered around the following principles:
 - **Transparency**: Balance user privacy versus organization risk with privacy-by-design architecture.
 - **Configurable**: Configurable policies based on industry, geographical, and business groups.
 - **Integrated**: Integrated workflow across Microsoft 365 compliance solutions.
-- **Actionable**: Provides insights to enable user notifications, data investigations, and user investigations.
+- **Actionable**: Provides insights to enable reviewer notifications, data investigations, and user investigations.
+
+## Identifying potential risks with analytics (preview)
+
+Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing insider risk policies.
+
+To learn more about insider risk analytics, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics-preview).
 
 ## Workflow
 
@@ -60,7 +66,7 @@ Identifying and resolving internal risk activities and compliance issues with in
 
 [Insider risk management policies](insider-risk-management-policies.md) are created using pre-defined templates and policy conditions that define what triggering events and risk indicators are examined in your organization. These conditions include how risk indicators are used for alerts, what users are included in the policy, which services are prioritized, and the monitoring time period.
 
-You can select from the following[policy templates to quickly get started with insider risk management:
+You can select from the following policy templates to quickly get started with insider risk management:
 
 - [Data theft by departing users](insider-risk-management-policies.md#data-theft-by-departing-users)
 - [General data leaks](insider-risk-management-policies.md#general-data-leaks)
@@ -100,10 +106,12 @@ Alerts are resolved by opening a new case, assigning the alert to an existing ca
 Selecting a case on the case dashboard opens the case for investigation and review. This step is the heart of the insider risk management workflow. This area is where risk activities, policy conditions, alerts details, and user details are synthesized into an integrated view for reviewers. The primary investigation tools in this area are:
 
 - **User activity**: User activity is automatically displayed in an interactive chart that plots activities over time and by risk level for current or past risk activities. Reviewers can quickly filter and view the entire risk history for the user and drill into specific activities for more details.
-- **Content Explorer**: All data files and email messages associated with alert activities are automatically captured and displayed in the Content Explorer. Reviewers can filter and view files and messages by data source, file type, tags, conversation, and many more attributes.
+- **Content explorer**: All data files and email messages associated with alert activities are automatically captured and displayed in the Content explorer. Reviewers can filter and view files and messages by data source, file type, tags, conversation, and many more attributes.
 - **Case notes**: Reviewers can provide notes for a case in the Case Notes section. This list consolidates all notes in a central view and include reviewer and date submitted information.
 
 ![Insider risk management investigation](../media/insider-risk-investigate.png)
+
+Additionally, the new [Audit log (preview)](insider-risk-management-audit-log.md) enables you to stay informed of the actions that were taken on insider risk management features. This resource allows an independent review of the actions taken by users assigned to one or more insider risk management role groups.
 
 ### Action
 
@@ -136,7 +144,7 @@ In most cases, users try their best to properly handle sensitive or confidential
 
 ## Intentional or unintentional security policy violations (preview)
 
-Users typically have a large degree of control when managing their devices in the modern workplace. This may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identity these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender for Endpoint alerts to provide insights for security-related activities:
+Users typically have a large degree of control when managing their devices in the modern workplace. This control may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identity these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender for Endpoint alerts to provide insights for security-related activities:
 
 - [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
@@ -145,7 +153,7 @@ Users typically have a large degree of control when managing their devices in th
 
 ## Policies for users based on position, access level, or risk history (preview)
 
-Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. This may include members of your organization's executive leadership team, IT administrators that have extensive data and network access privileges, or users with a past history of risky activities. In these circumstances, closer inspection and more aggressive risk scoring are important to help surface alerts for investigation and quick action. To help identify risky activities for these types of users, you can create priority user groups and create policies from the following policy templates:
+Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. This structure may include members of your organization's executive leadership team, IT administrators that have extensive data and network access privileges, or users with a past history of risky activities. In these circumstances, closer inspection and more aggressive risk scoring are important to help surface alerts for investigation and quick action. To help identify risky activities for these types of users, you can create priority user groups and create policies from the following policy templates:
 
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)

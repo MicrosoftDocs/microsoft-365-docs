@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
@@ -103,6 +103,9 @@ Common controls and content either appear in the same place, or are condensed in
 
 - Learn more about how to [manage access to Microsoft 365 Defender](m365d-permissions.md)
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 security center
+
+> [!NOTE]
+> Microsoft Defender for Endpoint in the Microsoft 365 security center supports [granting access to managed security service providers (MSSPs)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access).
 
 ### Integrated reports
 

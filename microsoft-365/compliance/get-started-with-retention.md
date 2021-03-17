@@ -77,9 +77,11 @@ Use the following table to help you map your business requirements to retention 
 
 If you use retention labels for records management, there are additional scenarios that are unique to retention labels that mark content as a record. See [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
 
-## End-user documentation for retention labels
+## End-user documentation for retention
 
-Retention labels, unlike retention policies, have a UI presence in Microsoft 365 apps. Make sure you provide guidance for end users and your help desk before you deploy retention labels to your production network.
+Most retention policies work unobtrusively in the background without user interaction, and so need little documentation for users. Retention policies for Teams inform users when their messages have been deleted with a link to [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+
+Because retention labels have a UI presence in Microsoft 365 apps, make sure you provide guidance for end users and your help desk before you deploy these labels to your production network.
 
 The most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. See the following blog post for a download package that you can use to train users and drive adoption: [End User Training for Retention Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 

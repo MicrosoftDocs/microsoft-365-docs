@@ -33,8 +33,10 @@ ms.prod: m365-security
 If your organization has Microsoft Defender for Office 365 Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
 > [!NOTE]
-> Attack Simulator v1 experience has been switched to read-only mode and replaced by Attack simulator training that's described in [Get started using Attack simulation training](attack-simulation-training-get-started.md).
-> The ability to launch new simulations from this site has been disabled. However, you can still access reports for simulations run for a period of 90 days from January 24, 2021.
+>
+> Attack Simulator as described in this article is now read-only and has been replaced by **Attack simulation training** in the **Email & collaboration** node in the [Microsoft 365 security center](https://security.microsoft.com). For more information, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+>
+> The ability to launch new simulations from this version of Attack Simulator has been disabled. However, you can still access reports for up to 90 days from January 24, 2021.
 
 ## What do you need to know before you begin?
 
@@ -45,6 +47,8 @@ If your organization has Microsoft Defender for Office 365 Plan 2, which include
 - You need to be a member of the **Organization Management** or **Security Administrator** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Your account needs to be configured for multi-factor authentication (MFA) to create and manage campaigns in Attack Simulator. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+
+- Attack Simulator only works on cloud-based mailboxes.
 
 - Phishing campaigns will collect and process events for 30 days. Historical campaign data will be available for up to 90 days after you launch the campaign.
 

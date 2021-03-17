@@ -376,6 +376,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/collecting-data-for-ediscovery.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/collections-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Windows.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
       "redirect_document_id": false
@@ -2676,9 +2681,54 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/isolated-sharepoint-online-team-sites.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/design-an-isolated-sharepoint-online-team-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/deploy-an-isolated-sharepoint-online-team-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/manage-an-isolated-sharepoint-online-team-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/team-security-isolation-dev-test",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/microsoft-365-client-support-modern-authentication.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/microsoft-365-client-support-multi-factor-authentication",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventory-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/supervision-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/communication-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/configure-supervision-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/tickets-security-center.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/security/mtp/tickets",
+      "redirect_document_id": true
     }
   ]
 }

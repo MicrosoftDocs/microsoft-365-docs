@@ -23,6 +23,11 @@ description: "Learn about retention policies that apply to Microsoft Teams."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+> [!NOTE]
+> If you are seeing a message in Teams that your chats or messages have been deleted by a retention policy, see [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> 
+> The information on this page is for IT administrators who manage these retention policies.
+
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Microsoft Teams messages.
 
 For other workloads, see:
@@ -36,9 +41,9 @@ For other workloads, see:
 The following Teams items can be retained and deleted by using retention policies for Teams: Chat messages and channel messages, including embedded images, tables, hypertext links and links to other Teams messages and files, and [card content](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages include all the names of the people in the chat, and channel messages include the team name and the message title (if supplied). 
 
 > [!NOTE]
-> Including card content is a recent addition and currently rolling out to tenants. For more information, see [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
+> Including card content is a recent addition and now fully rolled out to tenants. For more information, see [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Teams messages in private channels are currently not supported for retention policies. Code snippets, recorded voice memos from the Teams mobile client, and reactions from others in the form of emoticons are not included when you use retention policies for Teams.
+Teams messages in private channels are currently not supported for retention policies. Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons are not included when you use retention policies for Teams.
 
 Emails and files that you use with Teams aren't included in retention policies for Teams. These items have their own retention policies.
 
@@ -48,8 +53,8 @@ You can use a retention policy to retain and delete data from chats and channel 
 
 These mailboxes are, listed by their RecipientTypeDetails attribute:
 
-- **UserMailbox**: These mailboxes store messages for Teams users who have an Exchange Online mailbox.
-- **MailUser**: These mailboxes store messages for Teams users who have a mailbox for an on-premises Exchange server and not Exchange Online.
+- **MailUser**: These mailboxes store messages for cloud-based Teams users.
+- **UserMailbox**: These mailboxes store messages for [on-premises Teams users](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: These mailboxes store messages for Teams channels.
 
 Other mailbox types, such as RoomMailbox that is used for Teams conference rooms, are not supported for Teams retention policies.

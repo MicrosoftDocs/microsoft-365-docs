@@ -33,7 +33,7 @@ ms.technology: m365d
 The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities made through your on-premises Active Directory captured by Microsoft Defender for Identity and authentication activities related to Microsoft online services captured by Microsoft Cloud App Security. Use this reference to construct queries that return information from this table.
 
 >[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference  available in the security center.
 
 >[!NOTE]
 >This table covers Azure Active Directory (AD) logon activities tracked by Cloud App Security, specifically interactive sign-ins and authentication activities using ActiveSync and other legacy protocols. Non-interactive logons that are not available in this table can be viewed in the Azure AD audit log. [Learn more about connecting Cloud App Security to Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)

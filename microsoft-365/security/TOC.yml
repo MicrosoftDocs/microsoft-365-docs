@@ -53,6 +53,8 @@
               href: defender/microsoft-365-security-center-mdo.md  
             - name: Redirecting Defender for Endpoint to Microsoft 365 security center
               href: defender/microsoft-365-security-mde-redirection.md 
+            - name: Redirecting Defender for Office 365 to Microsoft 365 security center
+              href: defender/microsoft-365-security-mdo-redirection.md   
             - name: Preview features
               href: defender/preview.md
             - name: Troubleshoot issues
@@ -227,8 +229,10 @@
                       href: defender/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
                       href: defender/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
-                    - name: DeviceTvmSoftwareInventoryVulnerabilities
-                      href: defender/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
+                    - name: DeviceTvmSoftwareInventory
+                      href: defender/advanced-hunting-devicetvmsoftwareinventory-table.md
+                    - name: DeviceTvmSoftwareVulnerabilities
+                      href: defender/advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: defender/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
                     - name: EmailAttachmentInfo
@@ -485,7 +489,9 @@
             - name: Create a custom payload for Attack simulation training
               href: ./defender-365-security/attack-simulation-training-payloads.md
             - name: Gain insights through Attack simulation training
-              href: ./defender-365-security/attack-simulation-training-insights.md
+              href: ./office-365-security/attack-simulation-training-insights.md
+            - name: Attack simulation training deployment considerations and FAQ
+              href: ./office-365-security/attack-simulation-training-faq.md
             - name: Recommended settings for configuring EOP and Defender for Office 365 Security
               href: ./defender-365-security/recommended-settings-for-eop-and-office365.md
             - name: Best practices for configuring EOP

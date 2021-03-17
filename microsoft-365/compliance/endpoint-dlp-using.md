@@ -77,6 +77,9 @@ If the list mode is set to **Block**, then user will not be able to upload sensi
 
 If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains is not allowed.
 
+> [!IMPORTANT]
+> When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
+
 #### Unallowed browsers
 
 You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
@@ -111,7 +114,7 @@ This configuration will help ensure your data remains safe while also avoiding u
 
 ## Endpoint DLP policy scenarios
 
-To help familiarize you with Endpoint DLP features and how they surface in DLP policies, we've put together some scenarios for you to follow. All the Endpoint DLP content will be folded in to the main DLP content set when Endpoint DLP becomes generally available.
+To help familiarize you with Endpoint DLP features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
 > [!IMPORTANT]
 > These Endpoint DLP scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:

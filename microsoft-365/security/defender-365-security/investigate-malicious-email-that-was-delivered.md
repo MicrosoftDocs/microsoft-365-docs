@@ -63,10 +63,10 @@ To perform certain actions, such as viewing message headers or downloading email
 |
 
 > [!NOTE]
-> *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365 (at [https://protection.office.com](https://protection.office.com)). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
+> *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365 (at <https://protection.office.com>). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
 > The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in the Security & Compliance Center (<https://protection.office.com>). To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). Go to **Search** > **Audit log search** and filter on the admin name in Search section. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Office 365 Security & Compliance Center (<https://protection.office.com>). Go to **Search** > **Audit log search** and filter on the admin name in Search section. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
 
 ## Find suspicious email that was delivered
 

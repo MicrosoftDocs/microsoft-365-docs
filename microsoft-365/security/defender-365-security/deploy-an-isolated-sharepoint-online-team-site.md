@@ -29,7 +29,7 @@ ms.prod: m365-security
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
  **Summary:** Deploy a new isolated SharePoint Online team site with these step-by-step instructions.
-
+ 
 This article is a step-by-step deployment guide for creating and configuring an isolated SharePoint Online team site in Microsoft Office 365. These steps assume the use of the three default SharePoint groups and corresponding permission levels, with a single Azure Active Directory (AD)-based access group for each level of access.
 
 ## Phase 1: Create and populate the team site access groups

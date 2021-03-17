@@ -306,13 +306,39 @@ The search for connectors is "contains" in nature, which means partial keyword s
 
 ## New features in Threat Explorer and Real-time detections
 
-Three new features are available in Threat Explorer and Real-time detections:
-
-- [Preview email header and download email body](#preview-email-header-and-download-email-body)
+- [View phishing emails sent to impersonated users and domains](#view-phishing-emails-sent-to-impersonated-users-and-domains)
+-  [Preview email header and download email body](#preview-email-header-and-download-email-body)
 - [Email timeline](#email-timeline)
 - [Export URL click data](#export-url-click-data)
 
-These new features are outlined below.
+### View phishing emails sent to impersonated users and domains
+
+To identify phishing attempts against users and domains that are impersonated users must be added to the list of *Users to protect*. For domains, admins must either enable *Organization domains*, or add a domain name to *Domains to protect*. The domains to protect are found on the *Anti-Phishing policy page* in the *Impersonation* section.
+
+To review phish messages and search for impersonated users or domains, use the [Email > Phish view](threat-explorer-views.md) of Explorer.
+
+This example uses Threat Explorer.
+
+1. In the [Security & Compliance Center](https://protection.office.com) (https://protection.office.com), choose Threat management > Explorer (or Real-time detections).
+
+2. In the View menu, choose Email > Phish.
+
+   Here you can choose **impersonated domain** or **impersonated user**.
+
+3. **EITHER** select **Impersonated domain**, and then type a protected domain in the textbox.
+
+   For example, search for protected domain names like *contoso*, *contoso.com*, or *contoso.com.au*.
+
+4. Select the Subject of any message under the Email tab > Details tab to see additional impersonation information like Impersonated Domain / Detected location.
+
+5. **OR** Select **Impersonated user** and type a protected user's email address in the textbox.
+
+6. Select the **Subject** of any message under **Email tab** > **Details tab** to see additional impersonation information about the user or domain, and the *Detected location*.
+
+:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="The Threat Explorer details pane for a protected user showing the detection location, and the threat that was detected (here phish impersonation of a user).":::
+
+> [!TIP]
+> **For best results**, use *full email addresses* to search protected users. You will find your protected user quicker and more successfully if you search for *firstname.lastname@contoso.com*, for example, when investigating user impersonation. When searching for a protected domain the search will take the root domain (contoso.com, for example), and the domain name (*contoso*). Searching for the root domain *contoso.com* will return both impersonations of *contoso.com* and the domain name *contoso*.
 
 ### Preview email header and download email body
 
@@ -517,3 +543,7 @@ To learn more about roles and permissions, see the following resources:
 - The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it also provides additional details for a given attack.
 - An *All email* view is available in Threat Explorer but not in the Real-time detections report.
 - More filtering capabilities and available actions are included in Threat Explorer. For more information, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## Other articles
+
+[Investigate emails with the Email Entity Page](mdo-email-entity-page.md)

@@ -31,9 +31,11 @@ The following features are generally available (GA) in the latest release of Mic
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
+## March 2021
+- [CloudAppEvents table](advanced-hunting-cloudappevents-table.md) <br>Find information about events in various cloud apps and services covered by Microsoft Cloud App Security. This table also includes information previously available in `AppFileEvents`.
 ## February 2021
 - (Preview) The enhanced [Microsoft 365 security center (https://security.microsoft.com)](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint and Defender for Office 365 to the center. [Learn more about what's changed](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center).
 

@@ -11,6 +11,8 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: "Deploy the correct identity model for your Microsoft 365 tenants and enforce strong user sign-ins."

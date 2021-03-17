@@ -189,7 +189,7 @@ To [Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365
 - It does not to provide performance benefits. It could make performance worse if the [network design](https://aka.ms/office365networking) is not correct. Get devices "close" to the Microsoft network, not necessarily to your data.
 - It is not a solution for [GDPR compliance](https://www.microsoft.com/trust-center/privacy/gdpr-overview). GDPR does not focus on data sovereignty or storage locations. There are other compliance frameworks for that.
 - It does not solve delegation of administration (see below) or [information barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers).
-- It is not the same as multi-tenant and requires additional [user provisioning](https:/docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) workflows.
+- It is not the same as multi-tenant and requires additional [user provisioning](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) workflows.
 - It does not [move your tenant](https://docs.microsoft.com/microsoft-365/enterprise/moving-data-to-new-datacenter-geos) (your Azure AD) to another geography. 
 
 ## Delegation of administration

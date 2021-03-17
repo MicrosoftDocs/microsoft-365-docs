@@ -4,7 +4,7 @@ description: Learn how to schedule an automatic scanning time for Microsoft Defe
 keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft defender for endpoint (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Schedule scans with Microsoft Defender for Endpoint (Linux)
@@ -77,7 +78,7 @@ Type “:wq” without the double quotes.
 
 To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp":::
+:::image type="content" source="..\images\linux-mdatp-1.png" alt-text="linux mdatp":::
 
 **To inspect cron job runs**
 

@@ -11,6 +11,8 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: "Deploy the correct option for device and app management for your Microsoft 365 tenants."
