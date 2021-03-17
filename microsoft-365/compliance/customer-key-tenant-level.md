@@ -3,7 +3,7 @@ title: "Customer Key for Microsoft 365 at the tenant level (public preview)"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 2/17/2021
+ms.date: 3/16/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: "Learn how to set up Customer Key for all data within your Microsoft 365 tenant."
+description: "Learn how to set up Customer Key for your data within Microsoft 365 at the tenant level."
 ---
 
 # Overview of Customer Key for Microsoft 365 at the tenant level (public preview)
@@ -419,7 +419,7 @@ For information about the availability key, see [Learn about the availability ke
 
 For information about rotating or rolling keys used with Customer Key, see [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). When you update the DEP to use the new version of the keys, you'll run the Set-M365DataAtRestEncryptionPolicy cmdlet as described earlier in this article.
 
-## Related articles:
+## Related articles
 
 - [Service encryption with Customer Key](customer-key-overview.md)
 
