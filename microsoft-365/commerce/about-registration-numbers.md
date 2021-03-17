@@ -18,7 +18,7 @@ description: "Learn about registration numbers and under-review notifications wh
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
+- commerce
 ---
 
 # About registration numbers and under review notifications
