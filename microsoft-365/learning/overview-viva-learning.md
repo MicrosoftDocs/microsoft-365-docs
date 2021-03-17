@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Viva Learning overview"
-ms.author: 
+ms.author: daisyfeller
 author: 
 manager: pamgreen
 ms.reviewer: 
