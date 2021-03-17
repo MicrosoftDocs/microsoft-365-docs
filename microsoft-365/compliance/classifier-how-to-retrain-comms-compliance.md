@@ -90,4 +90,4 @@ We compare the performance numbers on both sets of items for the retrained and p
 ## See also
 
 - [Learn about trainable classifiers](classifier-learn-about.md)
-- [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

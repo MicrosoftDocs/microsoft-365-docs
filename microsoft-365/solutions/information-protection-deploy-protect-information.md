@@ -33,7 +33,7 @@ These controls are within following solution areas:
 ![Key services to protect personal information subject to data privacy regulation](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
->This solution describes security and compliance features to protect information subject to data privacy regulations. For a complete list of security features in Microsoft 365, see [Microsoft 365 security documentation](https://docs.microsoft.com/microsoft-365/security/). For a complete list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance/).
+>This solution describes security and compliance features to protect information subject to data privacy regulations. For a complete list of security features in Microsoft 365, see [Microsoft 365 security documentation](../security/index.yml). For a complete list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](../compliance/index.yml).
 >
 
 ## Data privacy regulations that impact information protection controls
@@ -63,7 +63,7 @@ To help you get started with an information protection scheme in Microsoft 365, 
 Microsoft [information protection solutions](../compliance/information-protection.md) include a number of integrated capabilities across Microsoft 365, Microsoft Azure, and Microsoft Windows. In Microsoft 365, information protection solutions include:
 
 - [Service encryption with Customer Key](../compliance/customer-key-overview.md)
-- [Sensitive information types](../compliance/what-the-sensitive-information-types-look-for.md) (described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md))
+- [Sensitive information types](../compliance/sensitive-information-type-entity-definitions.md) (described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md))
 - [Sensitivity labels](../compliance/sensitivity-labels.md) 
   - Service/container-level
   - Client-side/content-level
@@ -76,10 +76,10 @@ In addition, site and library level protection are important mechanisms to inclu
 
 For information on other information protection capabilities outside of Microsoft 365, see:
 
-- [Microsoft Cloud Application Security (MCAS)](https://docs.microsoft.com/cloud-app-security/)
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
+- [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
+- [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
-- [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+- [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 ## Sensitivity labels
 
