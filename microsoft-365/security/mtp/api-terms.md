@@ -35,7 +35,7 @@ ms.technology: m365d
 
 ## Official terms
 
-Microsoft 365 Defender APIs are governed by the [Microsoft APIs license and terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+Microsoft 365 Defender APIs are governed by the [Microsoft APIs license and terms of use](/legal/microsoft-apis/terms-of-use).
 
 ## Legal Notices
 
@@ -51,7 +51,7 @@ Microsoft and any contributors reserve all other rights, whether under their res
 
 ## Other restrictions
 
-The advanced hunting API has some [limitations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations) on the number of results returned, and the data that can be queried.
+The advanced hunting API has some [limitations](/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations) on the number of results returned, and the data that can be queried.
 
 1. You can only query data from the past 30 days.
 1. The results will include a maximum of 100,000 rows.

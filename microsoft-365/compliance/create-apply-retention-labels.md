@@ -21,7 +21,7 @@ description: Instructions to create and publish retention labels so you can then
 
 # Create retention labels and apply them in apps
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > This scenario is supported for all retention label configurations, including [regulatory records](records-management.md#records).
@@ -106,9 +106,9 @@ For example:
 ![Diagram of when manual labels take effect](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy), a PowerShell command, to retry the policy distribution:
+If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy), a PowerShell command, to retry the policy distribution:
 
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Run the following command:
     
@@ -120,7 +120,7 @@ If the labels don't appear after seven days, check the **Status** of the label p
 
 In Exchange Online, retention labels are made available to end users by a process that runs every seven days. By using PowerShell, you can see when this process last ran and therefore identify when it will run again.
   
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Run these commands.
     
@@ -304,5 +304,5 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
 
 - [Start retention when an event occurs](event-driven-retention.md)
-- [Automate event-based retention](automate-event-driven-retention.md)
+- [Automate event-based retention](./event-driven-retention.md#automate-events-by-using-a-rest-apiautomate-events-by-using-a-rest-api)
 - [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)

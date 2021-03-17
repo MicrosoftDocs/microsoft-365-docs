@@ -21,7 +21,7 @@ description: "Learn how retention works for SharePoint and OneDrive."
 
 # Learn about retention for SharePoint and OneDrive
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to SharePoint and OneDrive.
 

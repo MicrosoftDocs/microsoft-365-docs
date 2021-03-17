@@ -42,7 +42,7 @@ There are a few things you need to set up to run the commands and scripts descri
 
 ### Step 1: Download and install the Azure Active Directory Module for Windows PowerShell
 
-For more info on these steps, see [Connect to Microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
+For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
 
 1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://www.microsoft.com/download/details.aspx?id=41950) and select  **Download for Microsoft Online Services Sign-in Assistant**.   
 
@@ -298,7 +298,7 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 
 ## Related topics
 
-[Microsoft Connect Has Been Retired](https://docs.microsoft.com/collaborate/connect-redirect)
+[Microsoft Connect Has Been Retired](/collaborate/connect-redirect)
 
 [Overview of Basic Mobility and Security](overview.md)
 

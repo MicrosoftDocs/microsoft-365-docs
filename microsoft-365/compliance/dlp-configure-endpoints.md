@@ -22,7 +22,7 @@ description: Onboard Windows 10 devices so that they can send sensor data to the
 # Onboarding tools and methods for Windows 10 devices
 
 **Applies to:**
-- [Microsoft 365 Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 
 Devices in your organization must be configured so that the Microsoft 365 Endpoint data loss prevention service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization.
 

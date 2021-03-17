@@ -65,7 +65,7 @@ The following table lists the policies you either need to review and update or c
 
 If you implement access controls in SharePoint, you must create this Conditional Access policy in Azure AD to tell Azure AD to enforce the policies you configure in SharePoint. This policy applies to all users, but only affects access to the sites you specify using PowerShell when you create the access controls in SharePoint.
 
-To configure this policy see "Block or limit access to specific SharePoint site collections or OneDrive accounts" in [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+To configure this policy see "Block or limit access to specific SharePoint site collections or OneDrive accounts" in [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
 
 ## SharePoint access control policies
 
@@ -74,7 +74,7 @@ Microsoft recommends you protect content in SharePoint sites with sensitive and 
 - Sensitive sites: Allow browser-only access. This prevents users from editing and downloading files.
 - Highly regulated sites: Block access from unmanaged devices.
 
-See "Block or limit access to specific SharePoint site collections or OneDrive accounts" in [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+See "Block or limit access to specific SharePoint site collections or OneDrive accounts" in [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
 
 ## How these policies work together
 

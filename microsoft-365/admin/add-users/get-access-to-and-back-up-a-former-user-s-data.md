@@ -180,14 +180,14 @@ See how to [Export or backup email, contacts, and calendar to an Outlook .pst fi
   
   
   > [!NOTE]
-  > By default, your email is available offline for a period of 12 months. If required, see how to [increase the data available offline](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
+  > By default, your email is available offline for a period of 12 months. If required, see how to [increase the data available offline](/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
  
 ## Give another user access to a former user's email 
 
 To give access to the email messages, calendar, tasks, and contacts of the former employee to another employee, import the information to another employee's Outlook inbox.
 
 > [!NOTE]
-> You can also [convert the former user's mailbox to a shared mailbox](https://docs.microsoft.com/office365/admin/email/convert-user-mailbox-to-shared-mailbox) or [forward a former employee's email to another employee](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox).
+> You can also [convert the former user's mailbox to a shared mailbox](/office365/admin/email/convert-user-mailbox-to-shared-mailbox) or [forward a former employee's email to another employee](/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox).
 
   
 1. In Outlook, go to **File** \> **Open &amp; Export** \> **Import/Export**.
@@ -227,4 +227,3 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 [Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive)
   
 [OneDrive retention and deletion](/onedrive/retention-and-deletion)
-  

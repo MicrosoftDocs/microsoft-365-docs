@@ -80,7 +80,7 @@ Some search features you might be familiar with, work differently in a multi-geo
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Multi-geo search doesn't support dynamic bucketing for numerical refiners.</td>
-<td align="left">Use the <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" parameter</a> for numerical refiners.</td>
+<td align="left">Use the <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" parameter</a> for numerical refiners.</td>
 </tr>
 <tr class="even">
 <td align="left">Document IDs</td>
@@ -94,7 +94,7 @@ Some search features you might be familiar with, work differently in a multi-geo
 </tr>
 <tr class="even">
 <td align="left">Hybrid search</td>
-<td align="left">In a hybrid SharePoint environment with <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">cloud hybrid search</a>,  on-premises content is added to the Microsoft 365 index of the central location.</td>
+<td align="left">In a hybrid SharePoint environment with <a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">cloud hybrid search</a>,  on-premises content is added to the Microsoft 365 index of the central location.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -201,7 +201,7 @@ MultiGeoSearchConfiguration - This is an optional list of which geo locations in
 </tbody>
 </table>
 
-If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery).
+If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### Response data
 
