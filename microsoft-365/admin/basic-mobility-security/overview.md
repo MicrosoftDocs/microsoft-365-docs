@@ -52,7 +52,7 @@ After you've got Basic Mobility and Security set up and your users have enrolled
 
 ## Other ways to manage devices and apps
 
-If you just need mobile app management (MAM), perhaps for people updating work projects on their own devices, Intune provides another option besides enrolling and managing devices. An Intune subscription allows you to set up MAM policies by using the Azure portal, even if people's devices aren't enrolled in Intune. For more info, see [App protection policies overview](https://go.microsoft.com/fwlink/?LinkId=2132517).
+If you just need mobile app management (MAM), perhaps for people updating work projects on their own devices, Intune provides another option besides enrolling and managing devices. An Intune subscription allows you to set up MAM policies by using the Azure portal, even if people's devices aren't enrolled in Intune. For more info, see [App protection policies overview](/mem/intune/apps/app-protection-policy).
 
 ## Related topics
 

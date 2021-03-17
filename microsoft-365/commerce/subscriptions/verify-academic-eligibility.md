@@ -62,7 +62,7 @@ After you have a Microsoft 365 Education trial, you can check the status of your
 
 ## Buy subscriptions at academic prices
 
-After your school's eligibility is verified, you can buy subscriptions at academic prices. You can also [convert your free trial to a paid subscription](https://docs.microsoft.com/microsoft-365/commerce/buy-a-subscription-from-your-free-trial). If you want to convert your trial subscription, you must do so before the end of the trial period.
+After your school's eligibility is verified, you can buy subscriptions at academic prices. You can also [convert your free trial to a paid subscription](../try-or-buy-microsoft-365.md). If you want to convert your trial subscription, you must do so before the end of the trial period.
 
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. To view academic offers, select the **Education** tab.
@@ -90,11 +90,11 @@ If you have questions about your school's academic eligibility decision, [contac
 
 ## Next steps
 
-To learn how to deploy Microsoft 365 for your school, visit [Microsoft 365 Education documentation and resources](https://docs.microsoft.com/microsoft-365/education/deploy/). Next, you can [add users and assign licenses at the same time](../../admin/add-users/add-users.md). If you need to, you can also [buy more licenses for your subscription](../licenses/buy-licenses.md).
+To learn how to deploy Microsoft 365 for your school, visit [Microsoft 365 Education documentation and resources](/microsoft-365/education/deploy/). Next, you can [add users and assign licenses at the same time](../../admin/add-users/add-users.md). If you need to, you can also [buy more licenses for your subscription](../licenses/buy-licenses.md).
 
 ## Related content
 
-[Microsoft 365 Education Documentation for IT Admins](https://docs.microsoft.com/education/itadmins) (article links)\
+[Microsoft 365 Education Documentation for IT Admins](/education/itadmins) (article links)\
 [Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (product page)\
 [Understand subscriptions and licenses in Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) (article)\
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\

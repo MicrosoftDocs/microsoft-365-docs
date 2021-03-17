@@ -35,7 +35,7 @@ ms.prod: m365-security
 Is your organization using or planning to get a Security Information and Event Management (SIEM) server? You might be wondering how it integrates with Microsoft 365 or Office 365. This article provides a list of resources you can use to integrate your SIEM server with Microsoft 365 services and applications.
 
 > [!TIP]
-> If you don't have a SIEM server yet and are exploring your options, consider **[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)**.
+> If you don't have a SIEM server yet and are exploring your options, consider **[Microsoft Azure Sentinel](/azure/sentinel/overview)**.
 
 ## Do I need a SIEM server?
 
@@ -54,12 +54,12 @@ A SIEM server can receive data from a wide variety of Microsoft 365 services and
 |Microsoft 365 Service or Application|SIEM server inputs/methods|Resources to learn more|
 |---|---|---|
 |[Microsoft Defender for Office 365](office-365-atp.md)|Audit logs|[SIEM integration with Microsoft Defender for Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS endpoint hosted in Azure <p> REST API|[Pull alerts to your SIEM tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
-|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Log integration|[SIEM integration with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem)|
+|[Microsoft Defender for Endpoint](/windows/security/threat-protection/)|HTTPS endpoint hosted in Azure <p> REST API|[Pull alerts to your SIEM tools](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Log integration|[SIEM integration with Microsoft Cloud App Security](/cloud-app-security/siem)|
 |
 
 > [!TIP]
-> Take a look at [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel comes with connectors for Microsoft solutions. These connectors are available "out of the box" and provide for real-time integration. You can use Azure Sentinel with your Microsoft 365 Defender solutions and Microsoft 365 services, including Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security, and more.
+> Take a look at [Azure Sentinel](/azure/sentinel/overview). Azure Sentinel comes with connectors for Microsoft solutions. These connectors are available "out of the box" and provide for real-time integration. You can use Azure Sentinel with your Microsoft 365 Defender solutions and Microsoft 365 services, including Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security, and more.
 
 ### Audit logging must be turned on
 
@@ -71,6 +71,6 @@ Make sure that audit logging is turned on before you configure SIEM server integ
 
 ## More resources
 
-[Integrate security solutions in Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Integrate security solutions in Azure Defender](/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
-[Integrate Microsoft Graph Security API alerts with a SIEM](https://docs.microsoft.com/graph/security-integration)
+[Integrate Microsoft Graph Security API alerts with a SIEM](/graph/security-integration)

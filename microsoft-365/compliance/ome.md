@@ -31,7 +31,7 @@ With Office 365 Message Encryption, your organization can send and receive encry
 
 The rest of this article applies to the new OME capabilities.
 
-Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This service includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the [Do Not Forward option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails), and the [encrypt-only option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This service includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the [Do Not Forward option](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails), and the [encrypt-only option](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 Users can then encrypt email messages and various attachments by using these options. For a full list of supported attachment types, see ["File types covered by IRM policies when they are attached to messages" in Introduction to IRM for email messages](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM).
 
@@ -49,7 +49,7 @@ End users that read encrypted or rights-protected mail on clients other than Out
 
 If the sender of the protected mail is in GCC High and the recipient is outside of GCC High, including commercial users, Outlook.com users, and users of other email providers such as Gmail, the recipient receives a wrapper mail. The wrapper mail directs the recipient to the OME Portal where the recipient is able to read and reply to the message. Otherwise, if the sender and recipient are both in the GCC High environment, even if they're not in the same organization, then recipients that use Outlook clients to read mail receive native, first-class reading experiences for encrypted and rights-protected mail. For more information about the different experience in GCC High, see [Compare versions of OME](ome-version-comparison.md).
 
-For more information about size limits for messages and attachments that you can encrypt using OME, see [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx).
+For more information about size limits for messages and attachments that you can encrypt using OME, see [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 ## How Office 365 Advanced Message Encryption works on top of OME
 

@@ -36,10 +36,10 @@ Accounts synchronized from your on-premises Active Directory Domain Services do 
 
 - The Microsoft 365 admin center
  - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
- - The [Azure portal](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **Users**  > user account > **Profile** > **Contact info** > **Country or region**).
+ - The [Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **Users**  > user account > **Profile** > **Contact info** > **Country or region**).
 
 >[!Note]
->[Learn how to assign licenses to user accounts](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>[Learn how to assign licenses to user accounts](../admin/manage/assign-licenses-to-users.md) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
 >
 
 ## Use the Azure Active Directory PowerShell for Graph module
