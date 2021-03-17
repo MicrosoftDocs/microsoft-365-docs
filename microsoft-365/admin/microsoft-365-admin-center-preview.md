@@ -104,11 +104,11 @@ The Microsoft 365 admin center is the common entry point for all teams and roles
   
 Updating all of the admin centers to have a coherent experience will take awhile, but you can learn more about the admin centers we've already started to makeover:
   
-- [Get started with the new SharePoint Admin Center](https://go.microsoft.com/fwlink/?linkid=2024186)
+- [Get started with the new SharePoint Admin Center](/sharepoint/get-started-new-admin-center)
     
-- [Manage Teams during the transition to the new Microsoft Teams &amp; Skype for Business Admin Center](https://go.microsoft.com/fwlink/?linkid=2024308)
+- [Manage Teams during the transition to the new Microsoft Teams &amp; Skype for Business Admin Center](/microsoftteams/manage-teams-skypeforbusiness-admin-center)
     
-- [Overview of Microsoft 365 Device Management](https://go.microsoft.com/fwlink/?linkid=2006262)
+- [Overview of Microsoft 365 Device Management](/mem/intune/fundamentals/what-is-device-management)
     
 - [Introducing the Microsoft 365 Security and Compliance Center](https://go.microsoft.com/fwlink/?linkid=2025413)
 

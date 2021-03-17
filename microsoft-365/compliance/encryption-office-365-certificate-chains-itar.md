@@ -21,7 +21,7 @@ description: "View a complete list of DOD and GCC High root certificates and cer
 
 # Microsoft 365 encryption chains - DOD and GCC High
 
-Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that **DOD and GCC High customers** may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates).
+Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that **DOD and GCC High customers** may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md).
 
 The following certificate information applies to **all DOD and GCC High customers**.
 
