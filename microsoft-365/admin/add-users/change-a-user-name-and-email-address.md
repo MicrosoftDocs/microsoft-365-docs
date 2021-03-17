@@ -216,7 +216,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 ### "A parameter cannot be found that matches parameter name 'EmailAddresses"
 
-If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the setup process has time to finish, and then try again. If the problem persists, call [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) and ask them to do a full sync for you.
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the setup process has time to finish, and then try again. If the problem persists, call [support](../contact-support-for-business-products.md) and ask them to do a full sync for you.
   
 ### "We're sorry, the user couldn't be edited. Review the user information and try again"
 
@@ -244,7 +244,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 > [!TIP]
 > This changes the person's **userPrincipalName** attribute and has no bearing on their Microsoft Online Email Routing Address (MOERA) email address. It is best practice, however, to have the person's logon UPN match their primary SMTP address. 
   
-To learn how to change someone's username in Active Directory, in Windows Server 2003 and earlier, see [Rename a user account](https://go.microsoft.com/fwlink/?LinkId=809091).
+To learn how to change someone's username in Active Directory, in Windows Server 2003 and earlier, see [Rename a user account](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
 ## Related articles
 
