@@ -23,7 +23,7 @@ Without advanced eDiscovery capabilities, a multi-geo eDiscovery manager or admi
 
 To conduct eDiscovery for satellite locations using the “Region” compliance security filter, the Microsoft 365 global administrator must:
 - Assign the eDiscovery manager permission to allow others to conduct eDiscovery.
-- Assign a "Region" parameter in the applicable Compliance Security Filter to specify which region is a satellite location for conducting eDiscovery
+- Assign a "Region" parameter in the applicable compliance security filter to specify which region is a satellite location for conducting eDiscovery.
 
 Otherwise, no eDiscovery will be conducted for the satellite location.
 
