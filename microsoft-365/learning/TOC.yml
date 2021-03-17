@@ -9,7 +9,6 @@
 
     - name: Setup and administration
       items:
-
         - name: Set up in the Teams admin center
           href: set-up-teams-admin-center.md
         - name: Configure learning contents sources
