@@ -81,6 +81,8 @@ In the CSV template, enter the following information about the topics you want t
 
     ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
 
+The first time that topic discovery is turned on a new tenant, it may take up to 2 weeks for all suggested topics for a tenant to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is expected to have fluctuations in the number of suggested topics in your tenant as new information is considered.
+
 ## See also
 
 [Manage topic visibility in Microsoft 365](topic-experiences-knowledge-rules.md)
