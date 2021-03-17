@@ -308,5 +308,5 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
 
 - [Start retention when an event occurs](event-driven-retention.md)
-- [Automate event-based retention](./event-driven-retention.md#automate-events-by-using-a-rest-apiautomate-events-by-using-a-rest-api)
+- [Automate event-based retention](./event-driven-retention.md#automate-events-by-using-a-rest-api)
 - [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)
