@@ -64,7 +64,7 @@ With PHS, you synchronize your AD DS user accounts with Microsoft 365 and manage
 
 When passwords are changed or reset on-premises, the new password hashes are synchronized to Azure AD so that your users can always use the same password for cloud resources and on-premises resources. The user passwords are never sent to Azure AD or stored in Azure AD in clear text. Some premium features of Azure AD, such as Identity Protection, require PHS regardless of which authentication method is selected.
   
-See [choosing the right authentication method](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) to learn more.
+See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
   
 #### Pass-through authentication (PTA)
 
@@ -76,7 +76,7 @@ PTA allows your users to sign in to both on-premises and Microsoft 365 resources
 
 PTA is also for organizations with a security requirement to immediately enforce on-premises user account states, password policies, and logon hours. 
   
-See [choosing the right authentication method](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) to learn more.
+See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
   
 ### Federated authentication
 
@@ -84,13 +84,13 @@ Federated authentication is primarily for large enterprise organizations with mo
 
 Federated authentication can support additional authentication requirements, such as smartcard-based authentication or a third-party multi-factor authentication and is typically required when organizations have an authentication requirement not natively supported by Azure AD.
  
-See [choosing the right authentication method](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) to learn more.
+See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
   
 #### Third-party authentication and identity providers
 
 On-premises directory objects may be synchronized to Microsoft 365 and cloud resource access is primarily managed by a third-party identity provider (IdP). If your organization uses a third-party federation solution, you can configure sign-on with that solution for Microsoft 365 provided that the third-party federation solution is compatible with Azure AD.
   
-See the [Azure AD federation compatibility list](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) to learn more.
+See the [Azure AD federation compatibility list](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) to learn more.
   
 ## AD DS Preparation
 
@@ -107,7 +107,7 @@ Your directory preparation should focus on the following tasks:
   
 ## Multi-forest deployment considerations
 
-For multiple forests and SSO options, use a [Custom Installation of Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).
+For multiple forests and SSO options, use a [Custom Installation of Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
   
 If your organization has multiple forests for authentication (logon forests), we highly recommend the following:
   
@@ -116,7 +116,7 @@ If your organization has multiple forests for authentication (logon forests), we
 
 If you can't consolidate your multi-forest AD DS deployment or are using other directory services to manage identities, you may be able to synchronize these with the help of Microsoft or a partner.
   
-See [Topologies for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies) for more information.
+See [Topologies for Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies) for more information.
   
 ## Features that are dependent on directory synchronization
   
@@ -139,4 +139,3 @@ Directory synchronization is required for the following features and functionali
 ## Next step
 
 When you are ready to deploy hybrid identity, see [prepare for directory synchronization](prepare-for-directory-synchronization.md).
-  

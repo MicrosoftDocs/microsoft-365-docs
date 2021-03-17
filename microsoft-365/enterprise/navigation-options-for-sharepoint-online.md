@@ -56,7 +56,7 @@ The most appropriate option for your site will depend on your site requirements 
 
 ## Analyzing navigation performance in SharePoint Online
 
-The [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) is a browser extension for Microsoft Edge and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages. This tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
+The [Page Diagnostics for SharePoint tool](./page-diagnostics-for-spo.md) is a browser extension for Microsoft Edge and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages. This tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
 
 The tool generates a report for each analyzed page showing how the page performs against a pre-defined set of rules and displays detailed information when results for a test fall outside the baseline value. SharePoint Online administrators and designers can use the tool to troubleshoot performance issues to ensure that new pages are optimized prior to publishing.
 
@@ -94,7 +94,7 @@ Many sites do not require security trimming, as the navigation structure is ofte
 
 ### How to implement managed navigation and the results
 
-There are several articles on docs.microsoft.com about the details of managed navigation. For example, see [Overview of managed navigation in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
+There are several articles on docs.microsoft.com about the details of managed navigation. For example, see [Overview of managed navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
 In order to implement managed navigation, you set up terms with URLs corresponding to the navigation structure of the site. Managed navigation can even be manually curated to replace structural navigation in many cases. For example:
 
@@ -112,7 +112,7 @@ These navigation providers have a couple of key advantages:
 
 An example of a data provider is to use a **Search-driven navigation**, which allows flexibility for enumerating navigation nodes and handling security trimming efficiently.
 
-There are other popular options to build **Custom navigation providers**. Please review [Navigation solutions for SharePoint Online portals](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) for further guidance on building a Custom navigation provider.
+There are other popular options to build **Custom navigation providers**. Please review [Navigation solutions for SharePoint Online portals](/sharepoint/dev/solution-guidance/portal-navigation) for further guidance on building a Custom navigation provider.
 
 Using search you can leverage the indexes that are built up in the background using continuous crawl. The search results are pulled from the search index and the results are security-trimmed. This is generally faster than out-of-the-box navigation providers when security trimming is required. Using search for structural navigation, especially if you have a complex site structure, will speed up page loading time considerably. The main advantage of this over managed navigation is that you benefit from security trimming.
 
@@ -540,6 +540,6 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
   
 ## Related topics
 
-[Overview of managed navigation in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
+[Overview of managed navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation)
 
 [Structural navigation caching and performance](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)

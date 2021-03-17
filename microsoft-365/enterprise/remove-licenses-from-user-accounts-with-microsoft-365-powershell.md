@@ -28,7 +28,7 @@ description: "Explains how to use PowerShell to remove Microsoft 365 licenses th
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
 >[!Note]
->[Learn how to remove licenses from user accounts](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>[Learn how to remove licenses from user accounts](../admin/manage/remove-licenses-from-users.md) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
 >
 
 ## Use the Azure Active Directory PowerShell for Graph module
@@ -179,4 +179,3 @@ Another way to free up a license is by deleting the user account. For more infor
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

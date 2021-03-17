@@ -23,7 +23,7 @@ description: "Learn how to work with Microsoft-certified solution providers (par
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+[About the new Microsoft 365 admin center](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ If you already have a partner but haven’t yet signed a Microsoft Customer Agre
 
 ## Remove partner admin roles
 
-Depending on the request made by the partner, when you accept the invitation, you agree to give them Global and Helpdesk admin roles. When you give these admin roles to a partner, you automatically grant them delegated admin privileges in Azure AD. To learn more, see [Delegated admin privileges in Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+Depending on the request made by the partner, when you accept the invitation, you agree to give them Global and Helpdesk admin roles. When you give these admin roles to a partner, you automatically grant them delegated admin privileges in Azure AD. To learn more, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
 If you don't want to give the admin roles to the partner, cancel the invitation instead of accepting it.
 
