@@ -339,7 +339,7 @@ When this policy setting is selected, users assigned the policy must select and 
     - For emails (Outlook): At the time users send an unlabeled message.
 
 - For labeling built in to Office apps:
-    - For documents ((Word, Excel, PowerPoint): When an unlabeled document is opened or saved.
+    - For documents (Word, Excel, PowerPoint): When an unlabeled document is opened or saved.
     - For emails (Outlook): At the time users send an unlabeled email message.
 
 Additional information for built-in labeling:
@@ -349,6 +349,11 @@ Additional information for built-in labeling:
 - When mandatory labeling is in effect, users can't remove sensitivity labels from documents, but can change an existing label.
 
 For guidance about when to use this setting, see the information about [policy settings](sensitivity-labels.md#what-label-policies-can-do).
+
+> [!NOTE]
+> If you use the default label policy setting for documents and emails in addition to mandatory labeling: 
+>
+> The default label always takes priority over mandatory labeling. However, for documents, the Azure Information Protection unified labeling client applies the default label to all unlabeled documents whereas built-in labeling applies the default label to new documents and not to existing documents that are unlabeled. This difference in behavior means that when you use mandatory labeling with the default label setting, users will be prompted to apply a sensitivity label more often when they use built-in labeling than when they use the Azure Information Protection unified labeling client.
 
 ## End-user documentation
 
