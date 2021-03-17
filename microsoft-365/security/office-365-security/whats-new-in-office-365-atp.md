@@ -96,7 +96,7 @@ This article lists new features in the latest release of Microsoft Defender for 
 
 - [Employ automated investigation and response capabilities](automated-investigation-response-office.md) (Microsoft Defender for Office 365 Plan 2)
 
-- [Integrate with Microsoft Defender for Office 365 automated investigation and response events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Defender for Office 365 Plan 2)
+- [Integrate with Microsoft Defender for Office 365 automated investigation and response events using the Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Defender for Office 365 Plan 2)
 
 - [View the email headers and download the email body](investigate-malicious-email-that-was-delivered.md) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 
@@ -120,4 +120,4 @@ Did you know that Microsoft Defender for Office 365 is available in two plans? [
 
 [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Microsoft Defender for Office 365 Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+[Microsoft Defender for Office 365 Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

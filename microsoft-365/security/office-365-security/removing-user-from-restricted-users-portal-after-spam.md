@@ -32,9 +32,9 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-If a user exceeds one of the outbound sending limits as specified in [the service limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
+If a user exceeds one of the outbound sending limits as specified in [the service limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
 
-The user is added to the Restricted Users portal in the Security & Compliance Center. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce messages) with the error code [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
+The user is added to the Restricted Users portal in the Security & Compliance Center. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce messages) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
 
 > "Your message couldn't be delivered because you weren't recognized as a valid sender. The most common reason for this is that
 > your email address is suspected of sending spam and it's no longer allowed to send email.  Contact  your email admin for
@@ -46,19 +46,19 @@ Admins can remove users from the Restricted Senders portal in the Security & Com
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Restricted Users** page, use <https://protection.office.com/restrictedusers>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
   - To remove users from the Restricted Users portal, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
   - For read-only access to the Restricted Users portal, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  For more information, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
   > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   >
-  > - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 - A sender exceeding the outbound email limits is an indicator of a compromised account. Before you remove the user from the Restricted Users portal, be sure to follow the required steps to regain control of their account. For more information, see [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
 
@@ -118,7 +118,7 @@ To view details about a specific user, replace \<emailaddress\> with their email
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-For detailed syntax and parameter information, see [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress).
+For detailed syntax and parameter information, see [Get-BlockedSenderAddress](/powershell/module/exchange/get-blockedsenderaddress).
 
 To remove a user from the Restricted Users list, replace \<emailaddress\> with their email address and run the following command:
 
@@ -126,4 +126,4 @@ To remove a user from the Restricted Users list, replace \<emailaddress\> with t
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-For detailed syntax and parameter information, see [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress).
+For detailed syntax and parameter information, see [Remove-BlockedSenderAddress](/powershell/module/exchange/remove-blockedsenderaddress).

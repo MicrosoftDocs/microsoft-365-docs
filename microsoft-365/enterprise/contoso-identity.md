@@ -44,7 +44,7 @@ Here's the Contoso DMZ containing a public web site, a partner extranet, and a s
  
 AD FS servers in the DMZ facilitate authentication of customer credentials by their identity providers for access to the public web site and partner credentials for access to the partner extranet.
 
-Contoso decided to keep this infrastructure and dedicate it to customer and partner authentication. Contoso identity architects are investigating the conversion of this infrastructure to Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) and [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) solutions.
+Contoso decided to keep this infrastructure and dedicate it to customer and partner authentication. Contoso identity architects are investigating the conversion of this infrastructure to Azure AD [B2B](/azure/active-directory/b2b/hybrid-organizations) and [B2C](/azure/active-directory-b2c/solution-articles) solutions.
 
 ## Hybrid identity with password hash synchronization for cloud-based authentication
 
@@ -60,7 +60,7 @@ Here's the server running Azure AD Connect polling the Contoso AD DS forest for 
  
 ## Conditional Access policies for identity and device access
 
-Contoso created a set of Azure AD and Intune [Conditional Access policies](identity-access-policies.md) for three protection levels:
+Contoso created a set of Azure AD and Intune [Conditional Access policies](../security/office-365-security/identity-access-policies.md) for three protection levels:
 
 - *Baseline* protections apply to all user accounts.
 - *Sensitive* protections apply to senior leadership and executive staff.

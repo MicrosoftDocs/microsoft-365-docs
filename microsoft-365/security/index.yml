@@ -45,7 +45,7 @@ landingContent:
       - linkListType: get-started
         links:
         - text: Secure your remote workforce
-          url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/     
+          url: /enterprise-mobility-security/remote-work/
 
   # Card
   - title: Microsoft Defender for Identity
@@ -53,9 +53,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Identity?
-            url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
+            url: /azure-advanced-threat-protection/what-is-atp
           - text: Microsoft Defender for Identity architecture
-            url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
+            url: /azure-advanced-threat-protection/atp-architecture
 
    # Card
   - title: Defender for Office 365
@@ -65,7 +65,7 @@ landingContent:
           - text: What is Defender for Office 365?
             url: office-365-security/office-365-atp.md
           - text: Defender for Office 365 service description
-            url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+            url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
             
   # Card
   - title: Defender for Endpoint
@@ -73,9 +73,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Endpoint?
-            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+            url: /windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
           - text: Overview of capabilities
-            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
+            url: /windows/security/threat-protection/microsoft-defender-atp/overview
              
   # Card (optional)
   - title: Azure Defender
@@ -83,18 +83,18 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Azure Defender?
-            url: https://docs.microsoft.com/azure/security-center/security-center-intro
+            url: /azure/security-center/security-center-intro
           - text: Supported features
-            url: https://docs.microsoft.com/azure/security-center/security-center-services
+            url: /azure/security-center/security-center-services
   # Card
   - title: Microsoft Cloud App Security
     linkLists:
       - linkListType: overview
         links:
           - text: What is Microsoft Cloud App Security?
-            url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+            url: /cloud-app-security/what-is-cloud-app-security
           - text: Get started with Microsoft Cloud App Security
-            url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
+            url: /cloud-app-security/getting-started-with-cloud-app-security
   # Card
   - title: Security management 
     linkLists:
@@ -109,11 +109,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Azure Sentinel? 
-            url: https://docs.microsoft.com/azure/sentinel/overview
+            url: /azure/sentinel/overview
 
 
 
   
               
- 
-

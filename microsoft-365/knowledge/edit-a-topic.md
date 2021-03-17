@@ -35,7 +35,7 @@ In Viva Topics, you can edit an existing topic. You may need to do this if you w
 
 To edit an existing topic, you need to:
 - Have a Viva Topics license.
-- Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Have permissions to [**Who can create or edit topics**](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Users who have permission to manage topics in the Topic center (knowledge managers) already have permissions to create and edit topics.
@@ -127,13 +127,6 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
 
 ## See also
-
-
-
-  
-
-
-
 
 
 

@@ -25,12 +25,12 @@ These reports include:
 
 Additionally, in several locations throughout Microsoft Endpoint Manager you can filter reports from other product groups to specifically include or exclude your devices that are managed by Microsoft Managed Desktop. These reports have integrated this filtering capability:
 
-- [All devices](https://docs.microsoft.com/mem/intune/remote-actions/device-management#get-to-your-devices)
-- [Device compliance](https://docs.microsoft.com/mem/intune/fundamentals/reports#device-compliance-report-organizational)
-- [Noncompliant devices](https://docs.microsoft.com/mem/intune/fundamentals/reports#noncompliant-devices-report-operational)
+- [All devices](/mem/intune/remote-actions/device-management#get-to-your-devices)
+- [Device compliance](/mem/intune/fundamentals/reports#device-compliance-report-organizational)
+- [Noncompliant devices](/mem/intune/fundamentals/reports#noncompliant-devices-report-operational)
 
 > [!NOTE]
-> Custom Microsoft Managed Desktop roles guarantee access only to the Microsoft Managed Desktop reports. To access other parts of Microsoft Endpoint Manager, such as **All devices**, see [Role-based access control with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control). 
+> Custom Microsoft Managed Desktop roles guarantee access only to the Microsoft Managed Desktop reports. To access other parts of Microsoft Endpoint Manager, such as **All devices**, see [Role-based access control with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control). 
 
 ## Reports in Microsoft 365 Admin Center
 

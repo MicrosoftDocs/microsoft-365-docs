@@ -85,7 +85,7 @@ Need help with choosing a plan? Sales consultants are available to answer your q
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-If you start with a free trial, you can [buy it later](../../commerce/buy-a-subscription-from-your-free-trial.md). All your users and data from the trial will still be there.
+If you start with a free trial, you can [buy it later](../../commerce/try-or-buy-microsoft-365.md). All your users and data from the trial will still be there.
   
 You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
 
@@ -100,7 +100,7 @@ Watch a short video that shows the sign up process.<br><br>
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-If you start with a free trial, you can [buy it later](../../commerce/buy-a-subscription-from-your-free-trial.md). All your users and data from the trial will still be there.
+If you start with a free trial, you can [buy it later](../../commerce/try-or-buy-microsoft-365.md). All your users and data from the trial will still be there.
   
 You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
   

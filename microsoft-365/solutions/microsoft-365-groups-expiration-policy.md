@@ -39,14 +39,14 @@ Groups that are actively in use are renewed automatically. Any of the following 
 It's important to know that expiration is turned off by default. Administrators have to enable it for their organization if they want to use it.
 
 > [!NOTE]
-> Configuring and using the expiration policy for Microsoft 365 groups requires you to possess but not necessarily assign Azure AD Premium licenses for the members of all groups to which the expiration policy is applied. For more information see [Getting started with Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+> Configuring and using the expiration policy for Microsoft 365 groups requires you to possess but not necessarily assign Azure AD Premium licenses for the members of all groups to which the expiration policy is applied. For more information see [Getting started with Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
 
 ## Who can configure and use the Microsoft 365 groups expiration policy?
 
 |Role|What they can do|
 |---------|---------|
 |Office 365 global admin (in Azure, the Company administrator), User administrator|Create, read, update, or delete the Microsoft 365 groups expiration policy settings.|
-|User|Renew or [restore](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) a Microsoft 365 group that they own|
+|User|Renew or [restore](/azure/active-directory/users-groups-roles/groups-restore-deleted) a Microsoft 365 group that they own|
 
 ## How to set the expiration policy
 
@@ -86,4 +86,4 @@ If you have a group that you no longer plan to use, but you want to retain its c
 
 [Assign a new owner to an orphaned group](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Configure Microsoft 365 groups expiration](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[Configure Microsoft 365 groups expiration](/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
