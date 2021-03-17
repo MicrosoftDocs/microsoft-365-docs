@@ -33,7 +33,7 @@ ms.technology: m365d
 The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by the query.
 
 | Column | Data type | Description |
-|------------|-------------|-------------|
+|------------|---------------|-------------|
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to |
