@@ -15,7 +15,7 @@ localization_priority: None
 description: "Learn how to find resources for Microsoft Viva Learning."
 ---
 
-# Introduction to Microsoft Viva Topics
+# Introduction to Microsoft Viva Learning
 
 The resources on this page are designed to get you started with learning about and using Viva Learning in your organization.
 
