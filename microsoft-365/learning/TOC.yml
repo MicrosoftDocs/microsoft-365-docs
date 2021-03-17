@@ -1,35 +1,23 @@
     - name: Microsoft Viva Learning 
       href: index.md   
 
-    - name: Get started with Microsoft Viva Topics
+    - name: Get started with Microsoft Viva Learning
       items:    
-        - name: Microsoft Viva Topics overview
-          href: topic-experiences-overview.md 
-        - name: Microsoft Viva Topics discovery and curation
-          href: topic-experiences-discovery-curation.md           
-        - name: Microsoft Viva Topics roles 
-          href: topic-experiences-roles.md 
-        - name: Get your environment ready 
-          href: topic-experiences-get-ready.md           
+        - name: Microsoft Viva Learning overview
+          href: overview-viva-learning.md 
+           
 
     - name: Setup and administration
       items:
 
-        - name: Topics security
-          href: topic-experiences-security-privacy.md
-        - name: Plan for Topics
-          href: plan-topic-experiences.md
-        - name: Set up Topics
-          href: set-up-topic-experiences.md
-        - name: Manage topic discovery
-          href: topic-experiences-discovery.md
-        - name: Manage topic visibility
-          href: topic-experiences-knowledge-rules.md
-        - name: Manage topic permissions
-          href: topic-experiences-user-permissions.md
-        - name: Change the topic center name
-          href: topic-experiences-administration.md
-    
+        - name: Set up in the Teams admin center
+          href: set-up-teams-admin-center.md
+        - name: Configure learning contents sources
+          href: content-sources-365-admin-center.md
+        - name: Configure SharePoint as a content source
+          href: configure-sharepoint-content-source.md
+
+<!--    
     
     - name: Work with topics
       items:
@@ -52,3 +40,4 @@
       items: 
         - name: Get started driving adoption
           href: topics-adoption-getstarted.md
+-->
