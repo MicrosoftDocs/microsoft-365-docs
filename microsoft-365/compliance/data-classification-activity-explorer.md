@@ -52,7 +52,11 @@ Every account that accesses and uses data classification must have a license ass
 
 ### Permissions
 
- In order to get access to the activity explorer tab, an account must be assigned membership in any one of these roles or role groups.
+ In order to get access to the activity explorer tab, an account must be explicitly assigned membership in any one of these role groups or explicitly granted the role.
+
+<!--
+> [!IMPORTANT]
+> Access to Activity explorer via the Security reader or Device Management role groups or other has been removed-->
 
 **Microsoft 365 role groups**
 
@@ -60,6 +64,11 @@ Every account that accesses and uses data classification must have a license ass
 - Compliance administrator
 - Security administrator
 - Compliance data administrator
+
+**Microsoft 365 roles**
+
+- Compliance administrator
+- Security administrator
 
 ## Activity types
 
