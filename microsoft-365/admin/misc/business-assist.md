@@ -28,9 +28,9 @@ Get the most out of your subscription with expert advice from small business spe
 
 ||||
 |:-----|:-----|:-----|
-|**24/7 on-demand support** <br> Call, email or chat and our experts will pick up the conversation where you left off. No tickets to track and no long waiting times. |**Direct employee access** <br> All your employees can go directly to Microsoft experts for ongoing support. |**Periodic consultation** <br> Regular check ups from experts that help you stay current as new service capabilities are added and your company’s needs evolve. |
-|**Migration assistance** <br> Get expert assistance with moving all your current files (email, storage, documents, and communication) to Microsoft 365. |**Connect with small business specialists** <br> Get professional support from a person that takes time to know you and your business. |**Untap business potential** <br> Learn about underutilized features and get advice on ways to get more value out of your subscription. |
-|**Secure and professional set up** <br> Get help setting up subscription features that protect your business and give it a professional look.|**Onboarding plan** <br> Receive advice on how to achieve your productivity goals, with a plan tailored to your needs. | |
+|**Get up and running quickly** <br> Work with a small business specialist to set up Microsoft 365 features that protect your business and give it a professional look. |**Empower everyone in your business** <br> All your employees not just the person in charge of IT can go directly to Microsoft experts for faster ongoing support. |**Unlock business potential** <br> Learn about underutilized features and get advice on ways to get more value out of your subscription. |
+|**Accelerate your cloud migration** <br> Get personalized help moving all your current files (email, storage, documents, and communication) to Microsoft 365. |**Access specialists with ease** <br> Our team will pick up the conversation where you left it last. No tickets to track, no robots, no long waiting times. |**Stay up to date** <br> Regular check-ups that help you stay current as new service capabilities are added, and your company’s needs evolve. |
+| | | |
 
 > [!div class="nextstepaction"]
 > [Buy now](https://go.microsoft.com/fwlink/p/?linkid=868433)
