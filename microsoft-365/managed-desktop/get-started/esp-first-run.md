@@ -77,18 +77,18 @@ The experience proceeds as follows:
 
 ![Start page of Autopilot setup showing "device preparation" and "device setup" phases.](../../media/mmd-autopilot-screenshot.png)
 
-## Autopilot for pre-provisioned deployment
+## Autopilot Pre-Provisioning
 > [!NOTE]
-> Autopilot for pre-provisioned deployment in Microsoft Managed Desktop is currently in public preview.
+> Autopilot Pre-Provisioning in Microsoft Managed Desktop is currently in public preview.
 
-## Additional prerequisites for Autopilot for pre-provisioned deployment
+## Additional prerequisites for Autopilot Pre-provisioning
 - You must have Enrollment Status Page (ESP) enabled. For more information, see [Initial deployment](#initial-deployment).
 - Device must have a wired network connection.
 - If you have devices that were registered using the Microsoft Managed Desktop portal before August 2020, de-register and register them again.
 - Devices must must have a factory image that includes the November 2020 cumulative update [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) or [20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) as appropriate installed or must be reimaged with the latest Microsoft Managed Desktop image.
-- Physical devices must support TPM 2.0 and device attestation. Virtual machines aren't supported. The pre-provisioning process uses Windows Autopilot self-deploying capabilities, so TPM 2.0 is required. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Autopilot self-deploying mode and Autopilot pre-provisioned deployment in [Windows Autopilot networking requirements](https://docs.microsoft.com/mem/autopilot/networking-requirements#tpm).
+- Physical devices must support TPM 2.0 and device attestation. Virtual machines aren't supported. The pre-provisioning process uses Windows Autopilot self-deploying capabilities, so TPM 2.0 is required. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Autopilot self-deploying mode and Autopilot pre-provisioning in [Windows Autopilot networking requirements](https://docs.microsoft.com/mem/autopilot/networking-requirements#tpm).
 
-## Sequence of events in Autopilot for pre-provisioned deployment
+## Sequence of events in Autopilot Pre-Provisioning
 1. IT Admin reimages or resets the device if needed.
 2. IT Admin boots the device, reaches the out-of-box-experience, and presses the Windows key five times.
 3. IT Admin selects Windows Autopilot Provisioning and then selects **Continue**. On the Windows Autopilot configuration screen, information will be displayed about the device.
