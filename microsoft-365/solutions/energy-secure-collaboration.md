@@ -33,7 +33,7 @@ Regulatory standards that are recommended for consideration by energy organizati
 - Azure and Azure Government have each been granted a FedRAMP High P-ATO (Provisional Authorization to Operate), which represents the highest level of FedRAMP authorization. 
 
 For information about Microsoft cloud services and FedRAMP, see the following resources:
-- [Microsoft FedRAMP overview](https://docs.microsoft.com/microsoft-365/compliance/offering-fedramp?view=o365-worldwide)
+- [Microsoft FedRAMP overview](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
 - [Office 365 FedRAMP reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 

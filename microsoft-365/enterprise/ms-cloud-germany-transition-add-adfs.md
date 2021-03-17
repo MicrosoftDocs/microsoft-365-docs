@@ -67,7 +67,7 @@ You can use [AD FS Help](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGen
 
 ## AD FS Disaster Recovery (WID Database)
 
-To restore the AD FS farm in a disaster [AD FS Rapid Restore Tool](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) needs to be leveraged. Therefore, the tool must be downloaded and before the start of the migration a backup must be created and safely stored. In this example (TAT environments) the following commands have been run to back up the farm:
+To restore the AD FS farm in a disaster [AD FS Rapid Restore Tool](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) needs to be leveraged. Therefore, the tool must be downloaded and before the start of the migration a backup must be created and safely stored. In this example (TAT environments) the following commands have been run to back up the farm:
 
 <h2 id="backup"></h2>
 
@@ -114,6 +114,6 @@ Moving through the transition:
 
 Cloud apps:
 
-- [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
-- [Power BI migration program information](https://aka.ms/pbioptin)
-- [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 migration program information](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI migration program information](/power-bi/admin/service-admin-migrate-data-germany)
+- [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here)

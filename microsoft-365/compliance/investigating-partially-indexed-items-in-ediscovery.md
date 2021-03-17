@@ -162,7 +162,7 @@ The following steps show you how to run a PowerShell script that searches for al
      }
    ```
 
-2. [Connect to Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell).
 
 3. In Security & Compliance Center PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
 
