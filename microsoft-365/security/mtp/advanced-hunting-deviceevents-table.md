@@ -26,11 +26,8 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Microsoft 365 Defender
-
-
 
 The miscellaneous device events or `DeviceEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from this table.
 
@@ -51,6 +48,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
 | `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
 | `MD5` | string | MD5 hash of the file that the recorded action was applied to |
+| `FileSize` | long | Size of the file in bytes |
+| `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 | `AccountDomain` | string | Domain of the account |
 | `AccountName` | string | User name of the account |
 | `AccountSid` | string | Security Identifier (SID) of the account |
@@ -71,8 +71,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileOriginUrl` | string | URL where the file was downloaded from |
 | `FileOriginIP` | string | IP address where the file was downloaded from |
 | `AdditionalFields` | string | Additional information about the event in JSON array format |
-| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
-| `FileSize` | long | Size of the file in bytes |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
 | `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
@@ -83,7 +81,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessParentId` | int | Process ID (PID) of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentFileName` | string | Name of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentCreationTime` | datetime | Date and time when the parent of the process responsible for the event was started |
-| `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
