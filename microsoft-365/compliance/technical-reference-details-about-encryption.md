@@ -28,7 +28,7 @@ Refer to this article to learn about certificates, technologies, and TLS cipher 
   
 - If you're looking for overview information, see [Encryption in Office 365](encryption.md).
 - If you're looking for setup information, see [Set up encryption in Office 365 Enterprise](set-up-encryption.md).
-- For information about cipher suites supported by specific versions of Windows, see [Cipher Suites in TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+- For information about cipher suites supported by specific versions of Windows, see [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
 
 ## Microsoft Office 365 certificate ownership and management
 
@@ -40,7 +40,7 @@ To provide best-in-class encryption, Office 365 regularly reviews supported encr
 
 ## FIPS compliance for Office 365
 
-All cipher suites supported by Office 365 use algorithms acceptable under FIPS 140-2. Office 365 inherits FIPS validations from Windows (through Schannel). For information about Schannel, see [Cipher Suites in TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+All cipher suites supported by Office 365 use algorithms acceptable under FIPS 140-2. Office 365 inherits FIPS validations from Windows (through Schannel). For information about Schannel, see [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
   
 ## Versions of TLS supported by Office 365
 
@@ -95,7 +95,7 @@ These cipher suites supported TLS 1.0 and 1.1 protocols until their deprecation 
 
 ## Related articles
 
-[TLS Cipher Suites in Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
+[TLS Cipher Suites in Windows 10 v1903](/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Encryption in Office 365](encryption.md)
   
@@ -103,6 +103,6 @@ These cipher suites supported TLS 1.0 and 1.1 protocols until their deprecation 
   
 [Schannel implementation of TLS 1.0 in Windows security status update: November 24, 2015](https://support.microsoft.com/kb/3117336)
   
-[TLS/SSL Cryptographic Enhancements (Windows IT Center)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
+[TLS/SSL Cryptographic Enhancements (Windows IT Center)](/previous-versions/windows/it-pro/windows-vista/cc766285(v=ws.10))
   
-[Preparing for TLS 1.2 in Office 365 and Office 365 GCC](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
+[Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)

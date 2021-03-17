@@ -49,4 +49,4 @@ No. Microsoft 365 does not currently have this capability.
 
 ## Can I get consolidated reporting across all of my subtenants?
 
-Consolidated reporting across the companies you manage isn't available in Microsoft 365 admin center reports. However, you can get reports by using [Microsoft Graph](https://docs.microsoft.com/graph/overview).
+Consolidated reporting across the companies you manage isn't available in Microsoft 365 admin center reports. However, you can get reports by using [Microsoft Graph](/graph/overview).
