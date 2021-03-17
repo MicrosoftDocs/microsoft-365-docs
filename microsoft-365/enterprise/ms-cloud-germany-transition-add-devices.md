@@ -282,6 +282,6 @@ Moving through the transition:
 
 Cloud apps:
 
-- [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
-- [Power BI migration program information](https://aka.ms/pbioptin)
-- [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 migration program information](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI migration program information](/power-bi/admin/service-admin-migrate-data-germany)
+- [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here)

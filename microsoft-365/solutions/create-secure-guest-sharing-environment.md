@@ -34,7 +34,7 @@ This article includes:
 - Automatically assigning a sensitivity label to documents that contain a sensitive information type.
 - Automatically removing guest access from files with a sensitivity label.
 
-Some of the options discussed in this article require guests to have an account in Azure Active Directory. To ensure that guests are included in the directory when you share files and folders with them, use the [SharePoint and OneDrive integration with Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Some of the options discussed in this article require guests to have an account in Azure Active Directory. To ensure that guests are included in the directory when you share files and folders with them, use the [SharePoint and OneDrive integration with Azure AD B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Note that we won't discuss enabling guest sharing settings in this article. See [Collaborating with people outside your organization](collaborate-with-people-outside-your-organization.md) for details about enabling guest sharing for different scenarios.
 
@@ -61,7 +61,7 @@ Now, guest will be required to enroll in multi-factor authentication before they
 
 ### More information
 
-[Planning an Azure AD Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planning an Azure AD Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## Set up a terms of use for guests
 
@@ -103,11 +103,11 @@ To create a conditional access policy
 Now, the first time a guest attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
 
 > [!NOTE]
-> Using Conditional Access requires an Azure AD Premium P1 license. For more information, see [What is Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+> Using Conditional Access requires an Azure AD Premium P1 license. For more information, see [What is Conditional Access](/azure/active-directory/conditional-access/overview).
 
 ### More information
 
-[Azure Active Directory terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
+[Azure Active Directory terms of use](/azure/active-directory/conditional-access/terms-of-use)
 
 ## Set up guest access reviews
 
@@ -140,15 +140,15 @@ It's important to note that guests can be given access to teams or groups, or to
 
 ### More information
 
-[Manage guest access with Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Manage guest access with Azure AD access reviews](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[Create an access review of groups or applications in Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[Create an access review of groups or applications in Azure AD access reviews](/azure/active-directory/governance/create-access-review)
 
 ## Set up web-only access for guests
 
 You can reduce your attack surface and ease administration by requiring guests to access your teams, sites, and files by using a web browser only.
 
-For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
+For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
 To restrict guests to web-only access for Groups and Teams:
 
@@ -217,7 +217,7 @@ To create a sensitive information type
 
 ### More information
 
-[Custom sensitive information types](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[Custom sensitive information types](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## Create an auto-labeling policy to assign a sensitivity label based on a sensitive information type
 
@@ -247,11 +247,11 @@ With the policy in place, when a user types "Project Saturn" into a document, th
 
 ### More information
 
-[Apply a sensitivity label to content automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
-You can use [data loss prevention (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
+You can use [data loss prevention (DLP)](../compliance/data-loss-prevention-policies.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
 
 To create a DLP rule
 
@@ -282,9 +282,9 @@ It's important to note that this policy doesn't remove access if the guest is a 
 
 There are some additional options in Microsoft 365 and Azure Active Directory that can help secure your guest sharing environment.
 
-- You can create a list of allowed or denied sharing domains to limit who users can share with. See [Restrict sharing of SharePoint and OneDrive content by domain](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) and [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) for more information.
-- You can limit which other Azure Active Directory tenants your users can connect to. See [Use tenant restrictions to manage access to SaaS cloud applications](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions) for information.
-- You can create a managed environment where partners can help manage guest accounts. See [Create a B2B extranet with managed guests](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet) for information.
+- You can create a list of allowed or denied sharing domains to limit who users can share with. See [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing) and [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list) for more information.
+- You can limit which other Azure Active Directory tenants your users can connect to. See [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions) for information.
+- You can create a managed environment where partners can help manage guest accounts. See [Create a B2B extranet with managed guests](/Office365/Enterprise/b2b-extranet) for information.
 
 ## See Also
 

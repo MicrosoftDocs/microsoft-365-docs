@@ -787,11 +787,11 @@
         - name: Office 365 Management Activity API
           items:
             - name: Office 365 Management Activity API reference
-              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference  
+              href: /office/office-365-management-api/office-365-management-activity-api-reference
             - name: Office 365 Management Activity API schema
-              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema 
+              href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 Management Activity API FAQs and troubleshooting
-              href: https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
+              href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
     - name: Advanced Audit
@@ -846,8 +846,8 @@
         - name: Configure IRM to use an on-premises AD RMS server
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
 - name: Microsoft 365 enterprise
-  href: https://docs.microsoft.com/microsoft-365/enterprise/
+  href: ../enterprise/index.yml
 - name: Microsoft 365 security
-  href: https://docs.microsoft.com/microsoft-365/security/
+  href: ../security/index.yml
 - name: Microsoft 365 Apps for business
-  href: https://docs.microsoft.com/office365/admin/admin-home
+  href: /office365/admin/admin-home

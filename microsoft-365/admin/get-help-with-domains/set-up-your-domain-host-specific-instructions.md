@@ -52,7 +52,7 @@ Or, learn how to [change nameservers to set up Microsoft 365 with any domain reg
 
 |                           |                          |
 |---------------------------|--------------------------|
-| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [Hover](../dns/create-dns-records-at-hover.md) |
+| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [Hover](./create-dns-records-at-any-dns-hosting-provider.md) |
 | [123-reg.co.uk](../dns/create-dns-records-at-123-reg-co-uk.md) | [Managed   by Google (eNom)](../dns/create-dns-records-for-domain-managed-by-google-enom.md)|
 | [Amazon Web Services (AWS)](../dns/create-dns-records-at-aws.md) | [MyDomain](../dns/create-dns-records-at-mydomain.md) |
 | [Azure DNS zones](../dns/create-dns-records-for-azure-dns-zones.md) | [name.com](../dns/create-dns-records-at-name-com.md) |
@@ -69,4 +69,3 @@ Or, learn how to [change nameservers to set up Microsoft 365 with any domain reg
 |[Hostgator](../dns/create-dns-records-at-hostgator.md)  | [Yahoo!   Small Business](../dns/create-dns-records-at-yahoo-small-business.md)  |
 
 [I need general instructions, because my domain host isn't on this list. ](create-dns-records-at-any-dns-hosting-provider.md)
-   
