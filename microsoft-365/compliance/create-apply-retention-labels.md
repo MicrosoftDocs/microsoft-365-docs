@@ -222,10 +222,6 @@ After a retention label is applied to an item, you can view it in the details pa
   
 ![Applied label shown in Details pane](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
 
-After a retention label is applied to items in SharePoint, users won't be able to delete that item. Example message a user sees if they try to delete a labeled document in SharePoint:
-
-![Message that item wasn't deleted from SharePoint](../media/delete-message-retention-label-spo.png)
-
 For SharePoint, but not OneDrive, you can create a view of the library that contains the **Labels** column or **Item is a Record** column. This view lets you see at a glance the retention labels assigned to all items and which items are records. Note, however, that you can't filter the view by the **Item is a Record** column. For instructions how to add columns, see [Show or hide columns in a list or library](https://support.microsoft.com/en-us/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
 
 
