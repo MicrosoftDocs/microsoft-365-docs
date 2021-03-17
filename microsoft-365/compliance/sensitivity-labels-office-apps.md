@@ -339,7 +339,7 @@ When this policy setting is selected, users assigned the policy must select and 
     - For emails (Outlook): At the time users send an unlabeled message.
 
 - For labeling built in to Office apps:
-    - For documents ((Word, Excel, PowerPoint): When an unlabeled document is opened or saved.
+    - For documents (Word, Excel, PowerPoint): When an unlabeled document is opened or saved.
     - For emails (Outlook): At the time users send an unlabeled email message.
 
 Additional information for built-in labeling:
