@@ -36,7 +36,7 @@ Self-service sign-up subscriptions are free and are available for a larger list 
 
 ## Block users from signing up
 
-You use the [**Set-MsolCompanySettings**](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0&preserve-view=true) cmdlet with the **AllowAdHocSubscriptions** parameter to control whether users can sign up for self-service sign-up subscriptions. For more information, see [How do I control self-service settings?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+You use the [**Set-MsolCompanySettings**](/powershell/module/msonline/set-msolcompanysettings?preserve-view=true&view=azureadps-1.0) cmdlet with the **AllowAdHocSubscriptions** parameter to control whether users can sign up for self-service sign-up subscriptions. For more information, see [How do I control self-service settings?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## Delete a self-service sign-up subscription
 
@@ -51,4 +51,4 @@ You use the [**Set-MsolCompanySettings**](https://docs.microsoft.com/powershell/
 
 ## I have a self-service sign-up subscription that blocks directory deletion
 
-The self-service sign-up products that individual users can sign up for also create a guest user for authentication in your Azure AD directory. To avoid data loss, these self-service products block directory deletions until they're fully deleted from the directory. They can only be deleted by the Azure AD admin. For more information, see [Delete a directory in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-delete-howto).
+The self-service sign-up products that individual users can sign up for also create a guest user for authentication in your Azure AD directory. To avoid data loss, these self-service products block directory deletions until they're fully deleted from the directory. They can only be deleted by the Azure AD admin. For more information, see [Delete a directory in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).

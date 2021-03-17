@@ -502,7 +502,7 @@ To view communication compliance review activities for a policy, select the **Ex
 | **Operations** | The review operations performed on the policy. |
 | **AuditData** | This field is the main data source for all policy review activities. All review activities are recorded and separated by comma delimiters. |
 
-You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet.
+You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet. To learn more about audit log retention policies, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
 For example, the following example returns the activities for all the supervisory review activities (policies and rules):
 
@@ -516,11 +516,17 @@ This example returns the update activities for your communication compliance pol
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
 
+This example returns activities that match your current communication compliance policies:
+
+```PowerShell
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
+```
+
 ## Transitioning from Supervision in Office 365
 
 Organizations using supervision policies in Office 365 should immediately plan to transition to communication compliance policies in Microsoft 365 and need to understand these important points:
 
-- The supervision solution in Office 365 has been fully replaced by the communication compliance solution in Microsoft 365. We recommend creating new policies in communication compliance that have the same settings as existing supervision policies to use the new investigation and remediation improvements. When transitioning to communication compliance in Microsoft 365, you should plan to export reporting data from supervision in Office 365 if you have internal compliance retention policy requirements.
+- The supervision solution in Office 365 has been fully replaced by the communication compliance solution in Microsoft 365. We recommend creating new policies in communication compliance that have the same settings as existing supervision policies to use the new investigation and remediation improvements.
 - Messages saved in supervision in Office 365 policy matches cannot be moved or shared into communication compliance in Microsoft 365.
 - For organizations with both solutions used side by side during the transition process, policies used in each solution must have unique policy names. Groups and custom keyword dictionaries can be shared between solutions during a transition period.
 

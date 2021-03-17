@@ -43,7 +43,7 @@ We'll communicate these changes by using established channels. If you have any q
 
 Microsoft Managed Desktop changes and communications are governed by two Microsoft policies:
 - [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
-- [Microsoft 365 Change Communication Policy](https://docs.microsoft.com/office365/admin/manage/message-center?redirectSourcePath=%252fen-us%252farticle%252fMessage-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093&view=o365-worldwide)
+- [Microsoft 365 Change Communication Policy](/office365/admin/manage/message-center?view=o365-worldwide)
 
 ## Changes you make
 
@@ -65,5 +65,3 @@ These changes aren’t likely to be disruptive, so you don’t need to let us kn
 - Adding or removing users from the service
 - Configuration of system that does not have a material impact on the delivery of the Microsoft Managed Desktop
 - Application version updates, with the exception of VPN or proxy applications
-
-

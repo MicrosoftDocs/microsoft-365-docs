@@ -3,7 +3,7 @@ title: "Microsoft 365 informed network routing"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/22/2020
+ms.date: 03/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -54,7 +54,7 @@ In the case where there is not at least one network circuit providing direct Int
 
 ### Application usage
 
-Application experience data (reflected through network quality metrics) is collected through usage of Microsoft Outlook on devices running Windows, Teams, SharePoint, and OneDrive. Other application traffic is not considered when evaluating the health of a network circuit.
+Application experience data (reflected through network quality metrics) is collected through usage of specific Microsoft client applications. Exchange metrics reflect usage of the Outlook client as well as some Outlook Web App usage. SharePoint and OneDrive metrics reflect usage of the tenant-specific SharePoint endpoints, regardless of client application. Teams metrics reflect usage of the Teams desktop client. Other application traffic is not considered when evaluating the health of a network circuit.
 
 ## Enabling informed network routing
 

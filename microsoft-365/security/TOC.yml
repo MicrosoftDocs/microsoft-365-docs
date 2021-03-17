@@ -11,8 +11,9 @@
         - name: Security recommendations for priority accounts
           href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Identity and device access configurations
-      href: ./office-365-security/microsoft-365-policies-configurations.md
       items: 
+        - name: Overview
+          href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: Prerequisite work
           href: ./office-365-security/identity-access-prerequisites.md
         - name: Common identity and device access policies
@@ -53,6 +54,8 @@
               href: mtp/microsoft-365-security-center-mdo.md  
             - name: Redirecting Defender for Endpoint to Microsoft 365 security center
               href: mtp/microsoft-365-security-mde-redirection.md 
+            - name: Redirecting Defender for Office 365 to Microsoft 365 security center
+              href: mtp/microsoft-365-security-mdo-redirection.md   
             - name: Preview features
               href: mtp/preview.md
             - name: Troubleshoot issues
@@ -283,8 +286,6 @@
                   items: 
                     - name: ServiceNow integration overview
                       href: ./mtp/tickets.md
-                    - name: ServiceNow tickets in the security center
-                      href: ./mtp/tickets-security-center.md
             - name: Microsoft 365 Defender APIs (Preview)
               items: 
                 - name: Overview of Microsoft 365 Defender APIs (Preview)
@@ -703,8 +704,8 @@
                   href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
 
     - name: Microsoft 365 for Enterprise
-      href: https://docs.microsoft.com/microsoft-365/enterprise
+      href: ../enterprise/index.yml
     - name: Microsoft 365 for Business
-      href: https://docs.microsoft.com/microsoft-365/admin/admin-home
+      href: ./index.yml
     - name: Microsoft 365 Compliance
-      href: https://docs.microsoft.com/microsoft-365/compliance/
+      href: ../compliance/index.yml
