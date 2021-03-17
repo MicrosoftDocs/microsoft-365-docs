@@ -22,13 +22,11 @@ description: "listing of labeling actions that are available in activity explore
 
 # Labeling activities that are available in Activity explorer
 
-## Sensitivity labeling activities in Activity explorer
-
-### Label applied
+## Sensitivity label applied
 
 This event is generated each time an unlabeled document is labeled or an email is sent with a label. 
 
-- It is captured at the point of save in Office native applications and web applications. 
+- It is captured at the time of save in Office native applications and web applications. 
 - It is captured at the time of occurrence in Azure Information protection add-ins. 
 - Upgrade and downgrade labels actions can also be monitored via the *Label event type* field and filter. The *justification* text is also captured.   
 
@@ -45,7 +43,7 @@ This event is generated each time an unlabeled document is labeled or an email i
 |Power BI desktop and web        | no| accessible in the Microsoft 365 audit logs         |
 |Microsoft Cloud App Security (MCAS)         |no|         |
 
-### Label changed
+## Sensitivity label changed
 
 This event is generated each time a label is updated on the document or email.
 
@@ -71,7 +69,7 @@ This event is generated each time a label is updated on the document or email.
 |Power BI desktop and Web         |no         |accessible in the Microsoft 365 audit logs |
 |MCAS     |         |         | |
 
-### Label removed
+## Sensitivity label removed
 
 This event is generated each time a label is removed from a file or document.
 
@@ -93,7 +91,8 @@ This event is generated each time a label is removed from a file or document.
 |MCAS     |no         |         | |
  
 
-### File read
+## Sensitivity label file read
+
 This event is generated each time a labeled or protected document is opened. There are also 'File read’ activities from Endpoint DLP that is covered below in section 12. <!-- add link to endpoint dlp table-->
 
 |Source  |available or not available| Note  |
@@ -110,7 +109,7 @@ This event is generated each time a labeled or protected document is opened. The
 |MCAS     |no         |         | |
 
 
-### Files discovered
+## Sensitivity label files discovered
 
 This event is generated each time files are discovered when AIP Scanner is used for scanning sensitive data in various locations and finds files.
 
@@ -126,6 +125,149 @@ This event is generated each time files are discovered when AIP Scanner is used 
 |RMS service         |not applicable         |the *access* action is mapped to the *file read* action in activity explorer |
 |Power BI desktop and Web         |not applicable         |accessible in the Microsoft 365 audit logs |
 |MCAS     |not applicable         |         | |
+
+
+## Sensitivity label file renamed
+
+This event is generated each time a document with a sensitivity label is renamed. 
+
+|Source  |available or not available| Note  |
+|---------|---------|---------| 
+|Word, Excel, PowerPoint         |yes         ||
+|Outlook         |not applicable         ||
+|SharePoint Online, OneDrive         |yes        ||
+|Exchange         |not applicable         ||
+|AIP unified client         |no         ||
+|AIP unified scanner         |no         ||
+|MIP SDK         |no         ||
+|RMS service         |no      ||
+|Power BI desktop and Web         |no         ||
+|MCAS     |no         |         ||
+
+
+## Sensitivity label file removed
+
+This event is generated each time the AIP scanner detects that a previously scanned file has been removed.
+
+|Source  |available or not available| Note  |
+|---------|---------|---------| 
+|Word, Excel, PowerPoint         |not applicable         ||
+|Outlook         |not applicable         ||
+|SharePoint Online, OneDrive         |not applicable           ||
+|Exchange         |not applicable         ||
+|AIP unified client         |not applicable            ||
+|AIP unified scanner         |yes         ||
+|MIP SDK         |not applicable            ||
+|RMS service         |not applicable         ||
+|Power BI desktop and Web         |not applicable            ||
+|MCAS     |not applicable        |         ||
+
+### Sensitivity label protection applied
+
+This event is generated the first time protection is added manually to an item that does not have a label.
+
+|Source  |available or not available| Note  |
+|---------|---------|---------| 
+|Word, Excel, PowerPoint         |no         ||
+|Outlook         |no         ||
+|SharePoint Online, OneDrive         |not applicable           ||
+|Exchange         |no       ||
+|AIP unified client         |yes            ||
+|AIP unified scanner         |not applicable         ||
+|MIP SDK         |yes            ||
+|RMS service         |not applicable         ||
+|Power BI desktop and Web         |not applicable            ||
+|MCAS     |not applicable        |         ||
+
+## Sensitivity label protection changed
+
+This event is generated each time the protection on an unlabeled document is changed manually.
+
+|Source  |available or not available|
+|---------|---------|---------| 
+|Word, Excel, PowerPoint         |no         |
+|Outlook         |no         |
+|SharePoint Online, OneDrive         |not applicable           |
+|Exchange         |no       |
+|AIP unified client         |yes            |
+|AIP unified scanner         |not applicable         |
+|MIP SDK         |yes            |
+|RMS service         |not applicable         |
+|Power BI desktop and Web         |not applicable            |
+|MCAS     |not applicable        |         |
+
+## Sensitivity label DLP policy matched
+
+This event is generated each time a DLP policy is matched.
+
+|Source  |available or not available|
+|---------|---------| 
+|Exchange         |yes       |
+|SharePoint Online|yes          |
+|OneDrive |yes|
+|Teams |yes   |
+|Windows 10 devices         |yes |
+|MAC         |no     |
+|on-premises         |no|
+|MCAS     |no        | 
+
+## Retention label applied 
+
+This event is generated each time an unlabeled document is labeled or an email is sent with a label.
+
+- It is captured at the time of save in Office native applications and web applications. 
+
+|Source  |available or not available|
+|---------|---------| 
+|Exchange         |no       |
+|SharePoint Online|yes          |
+|OneDrive |yes|
+
+## Retention label changed
+
+This event is generated each time a label is updated on a document or email.
+
+- It is captured at the time of save.
+
+|Source  |available or not available|
+|---------|---------| 
+|Exchange         |no       |
+|SharePoint Online|yes          |
+|OneDrive |yes|
+ 
+## Retention label removed
+
+This event is generated each time a label is removed from a file or document.
+
+- It is captured at the time of save.
+
+|Source  |available or not available|
+|---------|---------| 
+|Exchange         |no       |
+|SharePoint Online|yes          |
+|OneDrive |yes|
+
+## Retention label file read
+
+This event is generated each time a labeled or protected document is opened.
+
+|Source  |available or not available|
+|---------|---------| 
+|Exchange         |no       |
+|SharePoint Online|no          |
+|OneDrive |no|
+
+## Retention label file renamed
+
+Generated each time a document with a retention label has been renamed.
+
+|Source  |available or not available|
+|---------|---------| 
+|Exchange         |no       |
+|SharePoint Online|no          |
+|OneDrive |no|
+
+
 
 
 [data classification overview](data-classification-overview.md)
