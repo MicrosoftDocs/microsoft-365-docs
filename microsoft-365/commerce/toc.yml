@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Move users to a different subscription
       href: subscriptions/move-users-different-subscription.md
+    - name: Manage auto-claim policies
+      href: licenses/manage-auto-claim-policies.md
     - name: Understand subscriptions and licenses
       href: licenses/subscriptions-and-licenses.md
 - name: Bills and payments
