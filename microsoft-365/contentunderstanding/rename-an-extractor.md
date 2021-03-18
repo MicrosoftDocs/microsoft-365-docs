@@ -17,6 +17,18 @@ description: "Learn how and why to rename an extractor in Microsoft SharePoint S
 
 # Rename an extractor in Microsoft SharePoint Syntex
 
+At some point, you might need to rename an extractor when your organization makes a decision to refer to an extracted data field by a different name.  For example, your organization might decide to make changes to their contract documents, and refers to “Customers” as “Clients” in their documents.  If you were extracting a “Customer” field in your model, you can choose to rename it to “Client.”
+
+When you sync your updated model to your SharePoint document library, you will see a new “Client” column in your document library view.  Your view will retain the “Customer” column for past activity, but will update the new “Client” column for all new documents that are processed by your model. 
+
+> [!NOTE]
+>  Make sure to sync your updated model to the document libraries you need to apply it to for the new column to display. 
+
+## Rename an extractor
+
+Follow these steps to rename an extractor.
+
+
 
 
 
