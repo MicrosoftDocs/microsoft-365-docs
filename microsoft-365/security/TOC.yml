@@ -11,8 +11,9 @@
         - name: Security recommendations for priority accounts
           href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Identity and device access configurations
-      href: ./office-365-security/microsoft-365-policies-configurations.md
       items: 
+        - name: Overview
+          href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: Prerequisite work
           href: ./office-365-security/identity-access-prerequisites.md
         - name: Common identity and device access policies
@@ -360,6 +361,8 @@
               href: ./mtp/overview-security-center.md
             - name: Threat Explorer (and real-time detections)
               href: ./office-365-security/threat-explorer.md
+            - name: The Email entity page
+              href: ./office-365-security/mdo-email-entity-page.md
             - name: AIR overview
               href: ./office-365-security/office-365-air.md
             - name: How automated investigation and response works

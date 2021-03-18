@@ -44,7 +44,11 @@ The following files can be deleted:
 > [!TIP]
 > When you use a [query with an auto-apply policy for a retention label](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), you can exclude specific document libraries by using the following entry: `NOT(DocumentLink:"<URL to document library>")`
 
-List items are not supported by retention policies but are supported by retention labels with the exception of items in system lists. These are hidden lists used by SharePoint to manage the system and include the master page catalog, solution catalog, and data sources.
+List items are not supported by retention policies but are supported by retention labels with the exception of items in system lists. These are hidden lists used by SharePoint to manage the system and include the master page catalog, solution catalog, and data sources. When you apply a retention label to a supported list item that has a document attachment:
+- For a standard retention label (doesn't declare the item to be a record):
+    - The document attachment doesn't automatically inherit the retention settings of the label, but can be labeled independently.
+- For a retention label that declares the item a record: 
+    - The document attachment automatically inherits the retention settings from the label if the document isn't already labeled.
 
 Retention settings from both retention policies and retention labels do not apply to organizing structures that include libraries, lists, and folders.
 
