@@ -1,5 +1,5 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|Clients|Android|iOS|Mac|Windows 10 Desktop|Windows 10 Modern Apps|
+|Clients|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Modern Apps|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|N/A|N/A|N/A|✔|N/A|
 |AZURE ACTIVE DIRECTORY ADMIN|N/A|N/A|N/A|✔|N/A|
