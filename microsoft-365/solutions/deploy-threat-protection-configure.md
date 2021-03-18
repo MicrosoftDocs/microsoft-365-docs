@@ -95,7 +95,7 @@ Microsoft 365 Defender unifies alerts, incidents, automated investigation and re
 
 |Configuration, protection, and detection capabilities|Automation, investigation, remediation, and education capabilities|
 |---|---|
-|[Safe Attachments](../security/office-365-security/atp-safe-attachments.md)<br/>[Safe Links](../security/office-365-security/atp-safe-links.md)<br/>[Safe Documents](../security/office-365-security/safe-docs.md)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)<br/>[Anti-phishing in Defender for Office 365 protection](../security/office-365-security/set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)|[Threat Trackers](../security/office-365-security/threat-trackers.md)<br/>[Threat Explorer](../security/office-365-security/threat-explorer.md)<br/>[Automated investigation and response](../security/office-365-security/office-365-air.md)<br/>[Attack Simulator](../security/office-365-security/attack-simulator.md)|
+|[Safe Attachments](../security/office-365-security/atp-safe-attachments.md)<br/>[Safe Links](../security/office-365-security/atp-safe-links.md)<br/>[Safe Documents](../security/office-365-security/safe-docs.md)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)<br/>[Anti-phishing in Defender for Office 365 protection](../security/office-365-security/set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|[Threat Trackers](../security/office-365-security/threat-trackers.md)<br/>[Threat Explorer](../security/office-365-security/threat-explorer.md)<br/>[Automated investigation and response](../security/office-365-security/office-365-air.md)<br/>[Attack Simulator](../security/office-365-security/attack-simulator.md)|
 |
 
 With Microsoft Defender for Office 365, people across your organization can communicate and collaborate more securely, with threat protection for their email content and Office documents.
@@ -122,8 +122,8 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 ![Process for deploying Microsoft Defender for Endpoint](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
-1. [Prepare your Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
-2. [Set up your Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
+1. [Prepare your environment for Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
+2. [Set up your Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/micros.oft-defender-atp/production-deployment).
 3. [Onboard to the Microsoft Defender for Endpoint service](/windows/security/threat-protection/microsoft-defender-atp/onboarding).
 4. [Complete your top security administrative tasks](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation).
 
@@ -142,7 +142,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 1. [Set up the portal and other basic requirements](/cloud-app-security/general-setup).
 2. [Set up cloud discovery](/cloud-app-security/set-up-cloud-discovery) and [connect apps](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
-3. [Deploy Conditional Access app control for featured apps](/cloud-app-security/proxy-deployment-aad).
+3. [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad).
 4. [Use the investigation tools and dashboards](/cloud-app-security/investigate).
 
 ### More information about Microsoft Cloud App Security

@@ -76,14 +76,14 @@ You'll have a 30-day window with the evaluation to monitor and report on advance
 
 ### Roles
 
-Exchange Online roles are required to set up Defender for Office 365 in evaluation mode.
+**Exchange Online roles are required** to set up Defender for Office 365 in evaluation mode. Assigning a Microsoft 365 compliance or security admin role won't work.
 
 - [Learn about permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Learn about assigning admin roles](../../admin/add-users/assign-admin-roles.md)
 
 The following roles are needed:
 
-|Task|Role|
+|Task|Role (in Exchange Online)|
 |---|---|
 |Get a free trial or buy Microsoft Defender for Office 365 (Plan 2)|Billing admin role OR Global admin role|
 |Create evaluation policy|Remote and Accepted Domains role; Security admin role|
@@ -91,7 +91,6 @@ The following roles are needed:
 |Delete evaluation policy|Remote and Accepted Domains role; Security admin role |
 |View evaluation report|Security admin role OR Security reader role|
 |
-
 
 ### Enhanced filtering
 
