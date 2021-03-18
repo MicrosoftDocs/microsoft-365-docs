@@ -122,8 +122,8 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 ![Process for deploying Microsoft Defender for Endpoint](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
-1. [Prepare your Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
-2. [Set up your Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
+1. [Prepare your environment for Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
+2. [Set up your Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/micros.oft-defender-atp/production-deployment).
 3. [Onboard to the Microsoft Defender for Endpoint service](/windows/security/threat-protection/microsoft-defender-atp/onboarding).
 4. [Complete your top security administrative tasks](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation).
 
@@ -142,7 +142,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 1. [Set up the portal and other basic requirements](/cloud-app-security/general-setup).
 2. [Set up cloud discovery](/cloud-app-security/set-up-cloud-discovery) and [connect apps](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
-3. [Deploy Conditional Access app control for featured apps](/cloud-app-security/proxy-deployment-aad).
+3. [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad).
 4. [Use the investigation tools and dashboards](/cloud-app-security/investigate).
 
 ### More information about Microsoft Cloud App Security
