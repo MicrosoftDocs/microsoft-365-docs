@@ -8,19 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: 
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: "Learn what happens to your data when your Microsoft 365 for business subscription expires, is disabled, or if you cancel."
 ---
@@ -29,7 +26,7 @@ description: "Learn what happens to your data when your Microsoft 365 for busine
 
 If your subscription ends—either because it expires, or because you decide to cancel—your access to Microsoft 365 services, applications, and customer data go through multiple states before the subscription is fully turned off, or *deleted*. If you are aware of this progression, you'll be better equipped to return your subscription to an active state before it's too late, or—if you're leaving Microsoft 365—back up your data before it is ultimately deleted.
 
-Read through this important information before you contact [Microsoft 365 support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+Read through this important information before you contact [Microsoft 365 support](../../admin/contact-support-for-business-products.md).
   
 ## What happens to data when a subscription expires?
 
@@ -49,7 +46,7 @@ The following table explains what you can expect when a paid Microsoft 365 for b
 *For most offers, in most countries and regions.
   
 > [!NOTE]
-> **What is "customer data"?** Customer data, as defined in the [Microsoft Online Service Terms](https://go.microsoft.com/fwlink/p/?LinkId=613649), refers to all data, including all text, sound, or image files that are provided to Microsoft by, or on behalf of, the customer through the customer's use of Microsoft 365 services. To learn more about the protection of customer data, see the [Get started with the Microsoft Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
+> **What is "customer data"?** Customer data, as defined in the [Microsoft Online Service Terms](https://go.microsoft.com/fwlink/p/?LinkId=613649), refers to all data, including all text, sound, or image files that are provided to Microsoft by, or on behalf of, the customer through the customer's use of Microsoft 365 services. To learn more about the protection of customer data, see the [Get started with the Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## What happens if I cancel a subscription?
 
@@ -208,13 +205,13 @@ When your trial ends, you can't continue using Microsoft 365 for free. You have 
 
 ::: moniker range="o365-worldwide"
 
-- **Buy Microsoft 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md).
+- **Buy Microsoft 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **Buy Microsoft 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md).
+- **Buy Microsoft 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
@@ -233,7 +230,6 @@ When your trial ends, you can't continue using Microsoft 365 for free. You have 
 
 ## Related content 
 
-[Cancel your subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (article)\
-[Renew Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (article)\
-[Reactivate your subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (article)
-
+[Cancel your subscription](./cancel-your-subscription.md) (article)\
+[Renew Microsoft 365 for business](./renew-your-subscription.md) (article)\
+[Reactivate your subscription](./reactivate-your-subscription.md) (article)

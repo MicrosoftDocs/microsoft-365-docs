@@ -17,7 +17,7 @@ description: Learn how to use the Region parameter to configure eDiscovery for u
 
 # Microsoft 365 Multi-Geo eDiscovery configuration
 
-With [Advanced eDiscovery capabilities](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20), a multi-geo eDiscovery manager or administrator can search all geos without needing to use a “Region” compliance security filter. In this case, data is exported to the Azure instance of the multi-geo tenant’s central location. Advanced eDiscovery is recommended for tenants whose central location is not in North America, Europe, or Asia Pacific and who need to perform eDiscovery across satellite geo locations.
+With [Advanced eDiscovery capabilities](/microsoft-365/compliance/overview-ediscovery-20), a multi-geo eDiscovery manager or administrator can search all geos without needing to use a “Region” compliance security filter. In this case, data is exported to the Azure instance of the multi-geo tenant’s central location. Advanced eDiscovery is recommended for tenants whose central location is not in North America, Europe, or Asia Pacific and who need to perform eDiscovery across satellite geo locations.
 
 Without Advanced eDiscovery capabilities, a multi-geo eDiscovery manager or administrator can only conduct eDiscovery in the tenant's central location. To conduct eDiscovery for satellite locations, the eDiscovery manager or administrator must use the “Region” compliance security filter. "Region" is available via PowerShell and can only be used by tenants whose central location is in North America, Europe, or Asia Pacific. 
 
@@ -36,7 +36,7 @@ Without Advanced eDiscovery capabilities, when the eDiscovery manager or adminis
 
 To set the Compliance Security Filter for a Region:
 
-1. [Connect to Microsoft 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Microsoft 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Use the following syntax:
 
@@ -50,4 +50,4 @@ To set the Compliance Security Filter for a Region:
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-See the [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter) article for additional parameters and syntax.
+See the [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) article for additional parameters and syntax.
