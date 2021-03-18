@@ -125,7 +125,7 @@ For more information, see:
 - [AIP quickstart: Deploy the AIP client](/azure/information-protection/quickstart-deploy-client)
 - [AIP administrator guide](/azure/information-protection/rms-client/clientv2-admin-guide)
 - [AIP user guide](/azure/information-protection/rms-client/clientv2-user-guide)
-- [Learn about Microsoft 365 sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
+- [Learn about Microsoft 365 sensitivity labels](../../compliance/sensitivity-labels.md)
 
 ### Step 4: Configure AIP apps on Windows
 

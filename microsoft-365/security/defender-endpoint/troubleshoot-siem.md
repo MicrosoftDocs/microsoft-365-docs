@@ -82,6 +82,6 @@ If you encounter an error when trying to enable the SIEM connector application, 
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
 - [Configure ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)
-- [Configure Splunk to pull Microsoft Defender for Endpoint detections](configure-splunk.md)
+- [Pull detections to your SIEM tools](configure-siem.md)
 - [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md)
 - [Pull Microsoft Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)

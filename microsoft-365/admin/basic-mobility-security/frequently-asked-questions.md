@@ -76,7 +76,7 @@ If you want to exclude a specific group of users from being affected by policies
 
 ## Can I switch from Exchange ActiveSync device management to Basic Mobility and Security for Microsoft 365?
 
-If you’re already using Exchange ActiveSync policies to manage mobile devices, you can start using Basic Mobility and Security by following the steps to set up Basic Mobility and Security. For more information, see [Protect user and device access](https://go.microsoft.com/fwlink/?LinkId=615145) and [Set up Basic Mobility and Security](set-up.md).
+If you’re already using Exchange ActiveSync policies to manage mobile devices, you can start using Basic Mobility and Security by following the steps to set up Basic Mobility and Security. For more information, see [Protect user and device access](../../compliance/protect-access-to-data-and-services.md) and [Set up Basic Mobility and Security](set-up.md).
 
 When you apply the policies that you create in Basic Mobility and Security to groups of users, these policies override Exchange ActiveSync mobile device mailbox policies and device access rules that you’ve previously created in the Exchange admin center for those users.
 

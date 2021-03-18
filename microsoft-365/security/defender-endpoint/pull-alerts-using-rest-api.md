@@ -332,6 +332,6 @@ HTTP error code | Description
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
 - [Configure ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)
-- [Configure Splunk to pull Microsoft Defender for Endpoint detections](configure-splunk.md)
+- [Pull detections to your SIEM tools](configure-siem.md)
 - [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)

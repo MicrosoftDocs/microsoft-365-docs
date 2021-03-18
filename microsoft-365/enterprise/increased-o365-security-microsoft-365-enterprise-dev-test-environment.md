@@ -38,11 +38,11 @@ If you want to configure increased Microsoft 365 security in a simulated enterpr
 
 ## Phase 2: Configure increased Microsoft 365 security
 
-In this phase, you enable increased Microsoft 365 security for your Microsoft 365 for enterprise test environment. For additional details and settings, see [Configure your tenant for increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+In this phase, you enable increased Microsoft 365 security for your Microsoft 365 for enterprise test environment. For additional details and settings, see [Configure your tenant for increased security](/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 ### Configure SharePoint Online to block apps that don't support modern authentication
 
-Apps that do not support modern authentication cannot have [identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets. 
+Apps that do not support modern authentication cannot have [identity and device access configurations](../security/defender-365-security/microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets. 
 
 1. Go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)) and sign in to your Microsoft 365 test lab subscription with your global administrator account.
     
@@ -72,7 +72,7 @@ Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects y
 
 Malware is comprised of viruses and spyware. Viruses infect other programs and data, and they spread throughout your computer looking for programs to infect. Spyware refers to malware that gathers your personal information, such as sign-in information and personal data, and sends it back to the malware author. 
 
-Microsoft 365 has built-in malware and spam filtering capabilities that help protect inbound and outbound messages from malicious software and help protect you from spam. For more information, see [Anti-spam & anti-malware protection](../security/office-365-security/anti-spam-and-anti-malware-protection.md).
+Microsoft 365 has built-in malware and spam filtering capabilities that help protect inbound and outbound messages from malicious software and help protect you from spam. For more information, see [Anti-spam & anti-malware protection](../security/defender-365-security/anti-spam-and-anti-malware-protection.md).
 
 To ensure that anti-malware processing is being performed on files with common attachment file types:
 
@@ -95,7 +95,7 @@ To see the security dashboard:
 
 Take a close look at all the cards on the dashboard to familiarize yourself with the information provided.
 
-For more information, see [Security Dashboard](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-dashboard).
+For more information, see [Security Dashboard](../security/defender-365-security/security-dashboard.md).
 
 
 ## Phase 4: Examine Microsoft Secure Score
@@ -106,7 +106,7 @@ Microsoft Secure Score shows your security posture as a number, which indicates 
 2. On the **Overview**  tab, note your current Secure Score and how it compares with the global average and subscriptions with a similar number of licenses.
 3. On the **Improvement actions** tab, read through the list of actions you can take to increase your score.
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## Next steps
 
@@ -118,4 +118,4 @@ Explore additional [information protection](m365-enterprise-test-lab-guides.md#i
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)
