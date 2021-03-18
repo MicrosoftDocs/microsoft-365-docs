@@ -90,7 +90,7 @@ landingContent:
             url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Microsoft 365 security for Business Decision Makers (BDMs)
             url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-          - text: Deploy Microsoft Defender Advanced Threat Protection
+          - text: Deploy Microsoft Defender for Endpoint
             url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
       - linkListType: reference
         links:
