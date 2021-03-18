@@ -11,6 +11,7 @@
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
 |KAIZALA|Planned|Planned|N/A|N/A|N/A|
+|MICROSOFT ROOMS|Planned|Planned|N/A|N/A|N/A|
 |OFFICE 365 ADMIN|Planned|N/A|N/A|N/A|N/A|
 |OFFICE LENS|Planned|Planned|N/A|N/A|N/A|
 |OFFICE MOBILE|Planned|Planned|N/A|N/A|N/A|
