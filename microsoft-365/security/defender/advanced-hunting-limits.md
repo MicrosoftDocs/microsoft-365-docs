@@ -42,7 +42,7 @@ Refer to the following table to understand existing quotas and usage parameters.
 | CPU resources | Based on tenant size | - On the hour and then every 15 minutes<br>- Daily at 12 midnight | The service enforces the daily and the 15-minute quota separately. For each quota, the [portal displays an error](advanced-hunting-errors.md) whenever a query runs and the tenant has consumed over 10% of allocated resources. Queries are blocked if the tenant has reached 100% until after the next daily or 15-minute cycle. |
 
 >[!NOTE] 
->A separate set of quotas and parameters apply to advanced hunting queries performed through the API. [Read about advanced hunting APIs](https://docs.microsoft.com/microsoft-365/security/defender/api-advanced-hunting)
+>A separate set of quotas and parameters apply to advanced hunting queries performed through the API. [Read about advanced hunting APIs](./api-advanced-hunting.md)
 
 ## Related topics
 

@@ -37,7 +37,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Threat Explorer and real-time detections](threat-explorer.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Campaign Views](campaigns.md)
-- For priority accounts, you can use the [Email issues for priority accounts report](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
+- For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
 
 This article explains how to configure user tags in the Security & Compliance Center. There are no cmdlets in Security & Compliance Center to manage user tags.
 

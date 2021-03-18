@@ -38,7 +38,7 @@ You can choose to get notifications based on incident severity or by device grou
 
 You can add or remove recipients in the email notifications. Newly added recipients get notified about incidents after they're added. 
 
-The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also directly go to incidents so you can start your investigation right away. For more on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/investigate-incidents).
+The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also directly go to incidents so you can start your investigation right away. For more on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](./investigate-incidents.md).
 
 >[!NOTE]
 >You need 'Manage security settings' permissions to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications for you. <br> <br>
@@ -68,7 +68,6 @@ To set up your first email notification for incidents, create a new rule and cus
 6. Finally, select **Next** to go to **Review rule** so you can see all the settings associated with your new rule. Recipients will start receiving incident notifications through email based on the settings.
 
 ## See also
-- [Incidents overview in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview)
-- [Prioritize incidents in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)
-- [Investigate incidents in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/investigate-incidents)
-
+- [Incidents overview in Microsoft 365 Defender](./incidents-overview.md)
+- [Prioritize incidents in Microsoft 365 Defender](./incident-queue.md)
+- [Investigate incidents in Microsoft 365 Defender](./investigate-incidents.md)

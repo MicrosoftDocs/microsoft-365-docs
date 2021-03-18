@@ -91,7 +91,7 @@ There's a PowerShell Module called the *Office 365 Advanced Threat Protection Re
  
 7. Next, select the **Safe Links** policy, then click the pencil icon to edit the default policy.
 
-8. Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected. See [Safe Links settings](https://docs.microsoft.com/microsoft-365/security/defender-365-security/recommended-settings-for-eop-and-office365-atp) for details. Click **Save**. 
+8. Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected. See [Safe Links settings](../defender-365-security/recommended-settings-for-eop-and-office365-atp.md) for details. Click **Save**. 
 
    ![Image of_Office 365 Security & Compliance Center page which shows that the option Do not track when users click safe is not selected](../../media/mtp-eval-38.png)
 
@@ -288,4 +288,3 @@ Next, you can simulate an attack and see how the cross product capabilities dete
 ## Next step
 
 - [Generate a test alert](generate-test-alert.md) - Run an attack simulation in your Microsoft 365 Defender trial lab.
-

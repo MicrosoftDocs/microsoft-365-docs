@@ -56,5 +56,5 @@ Along with these Microsoft 365 Defender-specific APIs, each of our other securit
 | [Create an app with multi-tenant partner access to Microsoft 365 Defender APIs](api-partner-access.md) |
 | **Troubleshoot and maintain your apps** |
 | [Understand API error codes](api-error-codes.md) |
-| [Manage secrets in your apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
-| [Implement OAuth 2.0 authorization for user sign in](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
+| [Manage secrets in your apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [Implement OAuth 2.0 authorization for user sign in](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

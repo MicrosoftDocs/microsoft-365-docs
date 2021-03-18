@@ -87,12 +87,12 @@ landingContent:
       - linkListType: overview
         links:
           - text: SharePoint documentation for IT pros and admins
-            url: https://docs.microsoft.com/sharepoint/
+            url: /sharepoint/
           - text: OneDrive documentation for IT pros and admins
-            url: https://docs.microsoft.com/onedrive/
+            url: /onedrive/
       - linkListType: how-to-guide
         links:
           - text: Manage sharing in OneDrive and SharePoint
-            url: https://docs.microsoft.com/onedrive/manage-sharing
+            url: /onedrive/manage-sharing
           - text: Create and manage sites
             url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center

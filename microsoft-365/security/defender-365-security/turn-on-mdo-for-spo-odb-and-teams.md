@@ -41,7 +41,7 @@ This article contains the steps for enabling and configuring Safe Attachments fo
 
 - To turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) or [SharePoint Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) roles in Azure AD.
+- To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) or [SharePoint Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) roles in Azure AD.
 
 - Verify that audit logging is enabled for your organization. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
@@ -57,19 +57,19 @@ This article contains the steps for enabling and configuring Safe Attachments fo
 
 ### Use Exchange Online PowerShell to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
-If you'd rather use PowerShell to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
+If you'd rather use PowerShell to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 ```
 
-For detailed syntax and parameter information, see [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365).
+For detailed syntax and parameter information, see [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
 
 ## Step 2: (Recommended) Use SharePoint Online PowerShell to prevent users from downloading malicious files
 
 By default, users can't open, move, copy, or share malicious files that are detected by ATP. However, they can delete and download malicious files.
 
-To prevent users from downloading malicious files, [connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and run the following command:
+To prevent users from downloading malicious files, [connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and run the following command:
 
 ```powershell
 Set-SPOTenant -DisallowInfectedFileDownload $true
@@ -80,7 +80,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 - This setting affects both users and admins.
 - People can still delete malicious files.
 
-For detailed syntax and parameter information, see [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
+For detailed syntax and parameter information, see [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 ## Step 3 (Recommended) Use the Security & Compliance Center to create an alert policy for detected files
 
@@ -121,7 +121,7 @@ You can create an alert policy that notifies you and other admins when Safe Atta
 
 ### Use Security & Compliance PowerShell to create an alert policy for detected files
 
-If you'd rather use PowerShell to create the same alert policy as described in the previous section, [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and run the following command:
+If you'd rather use PowerShell to create the same alert policy as described in the previous section, [connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command:
 
 ```powershell
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
@@ -129,7 +129,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 **Note**: The default _Severity_ value is Low. To specify Medium or High, include the _Severity_ parameter and value in the command.
 
-For detailed syntax and parameter information, see [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert).
+For detailed syntax and parameter information, see [New-ActivityAlert](/powershell/module/exchange/new-activityalert).
 
 ### How do you know these procedures worked?
 
@@ -143,7 +143,7 @@ For detailed syntax and parameter information, see [New-ActivityAlert](https://d
     Get-AtpPolicyForO365 | Format-List EnableATPForSPOTeamsODB
     ```
 
-    For detailed syntax and parameter information, see [Get-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365).
+    For detailed syntax and parameter information, see [Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365).
 
 - To verify that you've successfully blocked people from downloading malicious files, open SharePoint Online PowerShell, and run the following command to verify the property value:
 
@@ -151,7 +151,7 @@ For detailed syntax and parameter information, see [New-ActivityAlert](https://d
   Get-SPOTenant | Format-List DisallowInfectedFileDownload
   ```
 
-  For detailed syntax and parameter information, see [Get-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
+  For detailed syntax and parameter information, see [Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - To verify that you've successfully configured an alert policy for detected files, use any of the following steps:
 
@@ -163,6 +163,6 @@ For detailed syntax and parameter information, see [New-ActivityAlert](https://d
     Get-ActivityAlert -Identity "<AlertPolicyName>"
     ```
 
-    For detailed syntax and parameter information, see [Get-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/get-activityalert).
+    For detailed syntax and parameter information, see [Get-ActivityAlert](/powershell/module/exchange/get-activityalert).
 
 - Use the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) to view information about detected files in SharePoint, OneDrive, and Microsoft Teams. Specifically, you can use the **View data by: Content \> Malware** view.

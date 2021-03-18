@@ -100,6 +100,6 @@ To learn more, see [View details of an investigation](air-view-investigation-res
 
 - [Find and investigate malicious email in Office 365](investigate-malicious-email-that-was-delivered.md)
 
-- [Learn about AIR in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Learn about AIR in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 - [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)

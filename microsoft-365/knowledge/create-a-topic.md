@@ -30,7 +30,7 @@ In Viva Topics, you can create a new topic if one is not discovered through inde
 
 To create a new topic, you need to:
 - Have a Viva Topics license.
-- Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Have permissions to [**Who can create or edit topics**](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Users who have permission to manage topics in the topic center (knowledge managers) already have permissions to create and edit topics.
@@ -123,13 +123,6 @@ After you publish the page, the topic name, alternate name, description, and pin
 
 
 ## See also
-
-
-
-  
-
-
-
 
 
 

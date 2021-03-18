@@ -49,7 +49,7 @@ The base URI for both of the main APIs is: https://api.security.microsoft.com. F
 
 Tokens can be acquired by accessing https://api.security.microsoft.com.
 
-All APIs along the `/api` path use the [OData](https://docs.microsoft.com/odata/overview) Protocol; for example, https://api.security.microsoft.com/api/incidents.
+All APIs along the `/api` path use the [OData](/odata/overview) Protocol; for example, https://api.security.microsoft.com/api/incidents.
 
 ## Related articles
 

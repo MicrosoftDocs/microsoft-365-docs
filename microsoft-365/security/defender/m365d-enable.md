@@ -42,7 +42,7 @@ For detailed licensing information, [read the licensing requirements](prerequisi
 
 ### Check your role
 
-You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft 365 Defender. [View your roles in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft 365 Defender. [View your roles in Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## Supported services
 
@@ -55,7 +55,7 @@ Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select
 
 ### Data center location
 
-Microsoft 365 Defender will store and process data in the [same location used by Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender for Endpoint, a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown in the screen.
+Microsoft 365 Defender will store and process data in the [same location used by Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender for Endpoint, a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown in the screen.
 
 Select **Need help?** in the Microsoft 365 security center to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
 
@@ -90,8 +90,8 @@ Microsoft support staff can help provision or deprovision the service and relate
 - [Licensing requirements and other prerequisites](prerequisites.md)
 - [Deploy supported services](deploy-supported-services.md)
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
-- [Microsoft Defender for Endpoint overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender for Endpoint overview](../defender-endpoint/microsoft-defender-advanced-threat-protection.md)
 - [Defender for Office 365 overview](../defender-365-security/defender-for-office-365.md)
-- [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
-- [Microsoft Defender for Identity overview](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
-- [Microsoft Defender for Endpoint data storage](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Identity overview](/azure-advanced-threat-protection/what-is-atp)
+- [Microsoft Defender for Endpoint data storage](../defender-endpoint/data-storage-privacy.md)

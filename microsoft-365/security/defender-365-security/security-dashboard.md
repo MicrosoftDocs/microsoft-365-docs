@@ -29,7 +29,7 @@ ms.prod: m365-security
 
 ## Basic functions and how to open Security Dashboard
 
-The [Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) enables your organization to manage data protection and compliance. Assuming you have the necessary permissions, the Security Dashboard enables you to review your Threat Protection Status, as well as view and act on security alerts.
+The [Security & Compliance Center](../../compliance/microsoft-365-compliance-center.md) enables your organization to manage data protection and compliance. Assuming you have the necessary permissions, the Security Dashboard enables you to review your Threat Protection Status, as well as view and act on security alerts.
 
 Watch the video to get an overview, and then read this article to learn more.
 
@@ -37,7 +37,7 @@ Watch the video to get an overview, and then read this article to learn more.
 
 Depending on what your organization's subscription includes, the Security Dashboard includes several widgets, such as Threat Management Summary, Threat Protection Status, Global Weekly Threat Detections, Malware, and more, as described in the following sections.
 
-To view the Security Dashboard, in the [Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md), go to **Threat management** \> **Dashboard**.
+To view the Security Dashboard, in the [Security & Compliance Center](../../compliance/microsoft-365-compliance-center.md), go to **Threat management** \> **Dashboard**.
 
 > [!NOTE]
 > You must be a global administrator, a security administrator, or a security reader to view the Security Dashboard. Some widgets require additional permissions to view. To learn more, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).

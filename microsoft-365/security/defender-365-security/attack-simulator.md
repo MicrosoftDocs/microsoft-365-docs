@@ -42,7 +42,7 @@ If your organization has Microsoft Defender for Office 365 Plan 2, which include
 
 - To open the Security & Compliance Center, go to <https://protection.office.com/>. Attack simulator is available at **Threat management** \> **Attack simulator**. Go go directly to attack simulator, open <https://protection.office.com/attacksimulator>.
 
-- For more information about the availability of Attack Simulator across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- For more information about the availability of Attack Simulator across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be a member of the **Organization Management** or **Security Administrator** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -52,7 +52,7 @@ If your organization has Microsoft Defender for Office 365 Plan 2, which include
 
 - Phishing campaigns will collect and process events for 30 days. Historical campaign data will be available for up to 90 days after you launch the campaign.
 
-- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md).
 
 - There are no corresponding PowerShell cmdlets for Attack Simulator.
 

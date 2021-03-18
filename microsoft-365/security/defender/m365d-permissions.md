@@ -49,7 +49,7 @@ To review accounts with these roles, [view Permissions in the Microsoft 365 secu
 > This article applies only to managing global Azure Active Directory roles. For more information about using custom role-based access control, see [Custom roles for role-based access control](custom-roles.md)
 
 ## Access to functionality
-Access to specific functionality is determined by your [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
+Access to specific functionality is determined by your [Azure AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
 
 ### Approve pending automated tasks
 [Automated investigation and remediation](m365d-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you must have certain roles assigned in Microsoft 365. To learn more, see [Action center permissions](m365d-action-center.md#required-permissions-for-action-center-tasks).
@@ -57,7 +57,7 @@ Access to specific functionality is determined by your [Azure AD role](https://d
 ## Access to data
 Access to Microsoft 365 Defender data can be controlled using the scope assigned to user groups in Microsoft Defender for Endpoint role-based access control (RBAC). If your access has not been scoped to a specific set of devices in the Defender for Endpoint, you will have full access to data in Microsoft 365 Defender. However, once your account is scoped, you will only see data about the devices in your scope.
 
-For example, if you belong to only one user group with a Microsoft Defender for Endpoint role and that user group has been given access to sales devices only, you will see only data about sales devices in Microsoft 365 Defender. [Learn more about RBAC settings in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+For example, if you belong to only one user group with a Microsoft Defender for Endpoint role and that user group has been given access to sales devices only, you will see only data about sales devices in Microsoft 365 Defender. [Learn more about RBAC settings in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ### Microsoft Cloud App Security access controls
 During the preview, Microsoft 365 Defender does not enforce access controls based on  Cloud App Security settings. Access to Microsoft 365 Defender data is not affected by these settings.
@@ -65,5 +65,5 @@ During the preview, Microsoft 365 Defender does not enforce access controls base
 ## Related topics
 - [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md)
 - [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-- [Microsoft Defender for Endpoint RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
-- [Cloud App Security roles](https://docs.microsoft.com/cloud-app-security/manage-admins)
+- [Microsoft Defender for Endpoint RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- [Cloud App Security roles](/cloud-app-security/manage-admins)

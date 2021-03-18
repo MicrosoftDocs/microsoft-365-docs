@@ -40,11 +40,11 @@ This is built into Microsoft 365 and helps you secure and manage your users' mob
 
 ## Choose between the two options
 
-To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune).
+To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](/office365/securitycompliance/choose-between-mdm-and-intune).
 
 Based on your assessment, get started managing your devices with:
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Intune](/mem/intune/fundamentals/planning-guide)
 - [Basic Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## Identity and device access recommendations

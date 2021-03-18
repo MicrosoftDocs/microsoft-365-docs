@@ -51,13 +51,13 @@ These settings cover a range of features that are outside of security policies.
 |Schedule Malware and Spam Reports|Yes|Yes||
 |Auto-forwarding to external domains should be disallowed or monitored|Yes|Yes||
 |Unified Auditing should be enabled|Yes|Yes||
-|[IMAP connectivity to mailbox](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
-|[POP connectivity to mailbox](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
+|[IMAP connectivity to mailbox](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
+|[POP connectivity to mailbox](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
 |Authenticated SMTP submission|Disabled|Disabled|Authenticated client SMTP submission (also known as client SMTP submission or SMTP AUTH) is required for POP3 and IMAP4 clients to send email.|
 |EWS connectivity to mailbox|Disabled|Disabled||
-|[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) cmdlet).|
+|[PowerShell connectivity](/powershell/exchange/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](/powershell/module/exchange/get-user) cmdlet).|
 |Use [spoof intelligence](learn-about-spoof-intelligence.md) to add senders to your allow list|Yes|Yes||
-|[Directory-Based Edge Blocking (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Enabled|Enabled|Domain Type = Authoritative|
+|[Directory-Based Edge Blocking (DBEB)](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Enabled|Enabled|Domain Type = Authoritative|
 |[Set up multi-factor authentication for all admin accounts](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|Enabled|Enabled||
 |
 
@@ -77,4 +77,4 @@ When you deploy a new rule to production, select one of the test modes first to 
 
 When you deploy new rules, consider adding the additional action of **Generate Incident Report** to monitor the rule in action.
 
-In hybrid environments where your organization includes both on-premises Exchange and Exchange Online, consider the conditions that you use in mail flow rules. If you want the rules to apply to the entire organization, be sure to use conditions that are available in both on-premises Exchange and in Exchange Online. While most conditions are available in both environments, there are a few that are only available in one environment or the other. Learn more at [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+In hybrid environments where your organization includes both on-premises Exchange and Exchange Online, consider the conditions that you use in mail flow rules. If you want the rules to apply to the entire organization, be sure to use conditions that are available in both on-premises Exchange and in Exchange Online. While most conditions are available in both environments, there are a few that are only available in one environment or the other. Learn more at [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).

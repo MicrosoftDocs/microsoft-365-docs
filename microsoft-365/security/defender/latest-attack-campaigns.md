@@ -27,4 +27,4 @@ Cyber threats are becoming more frequent and sophisticated. It's critical for or
 
 **Threat analytics** is a set of interactive reports published as soon as emerging threats—new techniques, attack campaigns, and malware outbreaks—are identified. The reports help you the assess impact of threats to your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
-[Learn more about threat analytics in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  
+[Learn more about threat analytics in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).

@@ -43,15 +43,15 @@ The following sections describe how to perform these tasks.
 
 |Item missed or wrongly detected |Service  |What to do  |
 |---------|---------|---------|
-|- Email message <br/>- Email attachment <br/>- URL in an email message<br/>- URL in an Office file      |[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)        |[Submit suspected spam, phish, URLs, and files to Microsoft for scanning](https://docs.microsoft.com/microsoft-365/security/defender-365-security/admin-submission)         |
-|File or app on a device    |[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)         |[Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission)         |
+|- Email message <br/>- Email attachment <br/>- URL in an email message<br/>- URL in an Office file      |[Microsoft Defender for Office 365](../defender-365-security/office-365-atp.md)        |[Submit suspected spam, phish, URLs, and files to Microsoft for scanning](../defender-365-security/admin-submission.md)         |
+|File or app on a device    |[Microsoft Defender for Endpoint](/windows/security/threat-protection)         |[Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## Adjust an alert to prevent false positives from recurring
 
 |Scenario |Service |What to do |
 |--------|--------|--------|
-|- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
-|A file, IP address, URL, or domain is treated as malware on a device, even though it's safe|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Cloud App Security](/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](/cloud-app-security/managing-alerts)         |
+|A file, IP address, URL, or domain is treated as malware on a device, even though it's safe|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## Undo a remediation action that was taken on a device
 
@@ -69,4 +69,4 @@ If a remediation action was taken on an entity (such as a device or an email mes
 
 - [View the details and results of an automated investigation](m365d-autoir-results.md)
 - [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
-- [Address false positives/negatives in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
+- [Address false positives/negatives in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

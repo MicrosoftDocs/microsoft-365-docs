@@ -47,13 +47,13 @@ Any of these licenses gives you access to Microsoft 365 Defender features in Mic
 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
-> Don't have license yet? [Try or buy a Microsoft 365 subscription](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+> Don't have license yet? [Try or buy a Microsoft 365 subscription](../../commerce/try-or-buy-microsoft-365.md?view=o365-worldwide)
 
 ### Check your existing  licenses
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. In the admin center, go to **Billing** > **Licenses**.
 
 >[!NOTE]
-> You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information. If you encounter access problems, contact a global admin.
+> You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information. If you encounter access problems, contact a global admin.
 
 ## Required permissions
 You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft 365 Defender. For the list of roles required to use Microsoft 365 Defender and information on how access to data is regulated, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).

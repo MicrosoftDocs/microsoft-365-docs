@@ -50,7 +50,7 @@ The final output should be:
 - A detailed report of the findings of the pilot
 - A decision on how to move forward
 
-Present the reports from your final output to internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/defender/prepare-mtpeval) phase) and Microsoft contacts. Such an effort ensures that any feedback can be used to improve products and documentation.
+Present the reports from your final output to internal stakeholders (which you’ve identified during the [preparation](./prepare-m365d-eval.md) phase) and Microsoft contacts. Such an effort ensures that any feedback can be used to improve products and documentation.
 
 We hope you enjoyed this simulation. Start implementing what you've learned on a larger scale in your organization to get the most out of the integrated security solution.
 

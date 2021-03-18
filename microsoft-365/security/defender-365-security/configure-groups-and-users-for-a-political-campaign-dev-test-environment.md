@@ -210,4 +210,4 @@ Build the four different types of SharePoint Online team sites in this dev/test 
 
 [Cloud adoption Test Lab Guides (TLGs)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Cloud adoption and hybrid solutions](/office365/enterprise/cloud-adoption-and-hybrid-solutions)

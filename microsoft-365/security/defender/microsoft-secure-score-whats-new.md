@@ -88,7 +88,7 @@ In time, Identity Secure Score will adopt the new scoring model. Until then, cus
 
 - Added Azure Active Directory improvement actions
 - Added Microsoft Defender for Identity improvement actions
-- Support for Microsoft Defender for Endpoint [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
+- Support for Microsoft Defender for Endpoint [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
     - All released security recommendations supplied by TVM are now available
 
 ## Updated interface and functionality

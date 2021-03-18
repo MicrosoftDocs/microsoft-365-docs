@@ -113,7 +113,7 @@ Learn how Contoso uses the [security features across Microsoft 365 for enterpris
 
 ## See also
 
-[Security roadmap](https://docs.microsoft.com/microsoft-365/security/defender-365-security/security-roadmap)
+[Security roadmap](../security/defender-365-security/security-roadmap.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 

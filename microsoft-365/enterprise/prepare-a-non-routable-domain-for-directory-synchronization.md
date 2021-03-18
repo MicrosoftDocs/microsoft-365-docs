@@ -32,7 +32,7 @@ If you currently use a ".local" domain for your user accounts in AD DS, it's rec
   
 ## What if I only have a ".local" on-premises domain?
 
-You use Azure AD Connect for synchronizing your AD DS to the Azure AD tenant of your Microsoft 365 tenant. For more information, see [Integrating your on-premises identities with Azure AD](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
+You use Azure AD Connect for synchronizing your AD DS to the Azure AD tenant of your Microsoft 365 tenant. For more information, see [Integrating your on-premises identities with Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
   
 Azure AD Connect synchronizes your users' UPN and password so that users can sign in with the same credentials they use on-premises. However, Azure AD Connect only synchronizes users to domains that are verified by Microsoft 365. This means that the domain also is verified by Azure AD because Microsoft 365 identities are managed by Azure AD. In other words, the domain has to be a valid Internet domain (such as, .com, .org, .net, .us). If your internal AD DS only uses a non-routable domain (for example, ".local"), this can't possibly match the verified domain you have for your Microsoft 365 tenant. You can fix this issue by either changing your primary domain in your on-premises AD DS, or by adding one or more UPN suffixes.
   
@@ -85,7 +85,7 @@ After you have updated the UPNs to use the verified domain, you are ready to syn
    
 ### Use PowerShell to change the UPN suffix for all of your users
 
-If you have a lot of user accounts to update, it's easier to use PowerShell. The following example uses the cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) and [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) to change all contoso.local suffixes to contoso.com in AD DS. 
+If you have a lot of user accounts to update, it's easier to use PowerShell. The following example uses the cmdlets [Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) and [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) to change all contoso.local suffixes to contoso.com in AD DS. 
 
 For example, you could run the following PowerShell commands to update all contoso.local suffixes to contoso.com:
     
@@ -94,5 +94,4 @@ For example, you could run the following PowerShell commands to update all conto
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("@contoso.local","@contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
 
-See [Active Directory Windows PowerShell module](https://go.microsoft.com/fwlink/p/?LinkId=624314) to learn more about using Windows PowerShell in AD DS. 
-
+See [Active Directory Windows PowerShell module](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) to learn more about using Windows PowerShell in AD DS.

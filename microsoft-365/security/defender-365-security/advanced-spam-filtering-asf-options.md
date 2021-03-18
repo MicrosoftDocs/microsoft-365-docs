@@ -44,7 +44,7 @@ In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in a
 >
 > - The specific `X-CustomSpam:` X-header fields that are added to messages as described in this article.
 
-The following sections describe the ASF settings and options that are available in anti-spam policies in the Security & Compliance Center, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+The following sections describe the ASF settings and options that are available in anti-spam policies in the Security & Compliance Center, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## Enable, disable, or test ASF settings
 

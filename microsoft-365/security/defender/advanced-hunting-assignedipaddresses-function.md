@@ -39,7 +39,7 @@ This function returns a table with the following columns:
 | `Timestamp` | datetime | Latest time when the device was observed using the IP address |
 | `IPAddress` | string | IP address used by the device |
 | `IPType` | string | Indicates whether the IP address is a public or private address |
-| `NetworkAdapterType` | int | Network adapter type used by the device that has been assigned the IP address. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterType` | int | Network adapter type used by the device that has been assigned the IP address. For the possible values, refer to [this enumeration](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
 | `ConnectedNetworks` | int | Networks that the adapter with the assigned IP address is connected to. Each JSON array contains the network name, category (public, private, or domain), a description, and a flag indicating if it's connected publicly to the internet |
 
 ## Syntax

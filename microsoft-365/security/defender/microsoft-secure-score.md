@@ -83,7 +83,7 @@ Recommendations for other security products are coming soon. The recommendations
 
 ### Security defaults
 
-Microsoft Secure Score has updated improvement actions to support [security defaults in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with pre-configured security settings for common attacks.
+Microsoft Secure Score has updated improvement actions to support [security defaults in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with pre-configured security settings for common attacks.
 
 If you turn on security defaults, you'll be awarded full points for the following improvement actions:
 

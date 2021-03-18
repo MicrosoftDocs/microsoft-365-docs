@@ -38,7 +38,7 @@ You can quickly contain threats or address compromised assets that you find in [
 - Quarantine files
 
 ## Required permissions
-To be able to take action through advanced hunting, you need a role in Microsoft Defender for Endpoint with [permissions to submit remediation actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
+To be able to take action through advanced hunting, you need a role in Microsoft Defender for Endpoint with [permissions to submit remediation actions on devices](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
 
 *Active remediation actions > Threat and vulnerability management - Remediation handling*
 
@@ -51,7 +51,7 @@ You can take the following actions on devices identified by the `DeviceId` colum
 - Initiate an automated investigation to check and remediate threats on the device and possibly other affected devices
 - Restrict app execution to only Microsoft-signed executable files, preventing subsequent threat activity through malware or other untrusted executables
 
-To learn more about how these response actions are performed through Microsoft Defender for Endpoint, [read about response actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+To learn more about how these response actions are performed through Microsoft Defender for Endpoint, [read about response actions on devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
 ## Quarantine files
 You can deploy the *quarantine* action on files so that they are automatically quarantined when encountered. When selecting this action, you can choose between the following columns to identify which files in your query results to quarantine:
@@ -61,7 +61,7 @@ You can deploy the *quarantine* action on files so that they are automatically q
 - `SHA256` — This is the SHA-256 equivalent of the file identified by the `SHA1` column.
 - `InitiatingProcessSHA256` — This is the SHA-256 equivalent of the file identified by the `InitiatingProcessSHA1` column.
 
-To learn more about how quarantine actions are taken and how files can be restored, [read about response actions on files](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
+To learn more about how quarantine actions are taken and how files can be restored, [read about response actions on files](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 
 >[!NOTE]
 >To locate files and quarantine them, the query results should also include `DeviceId` values as device identifiers.  

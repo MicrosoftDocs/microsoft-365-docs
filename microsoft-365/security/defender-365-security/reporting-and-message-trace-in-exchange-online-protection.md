@@ -61,7 +61,7 @@ These enhanced reports provide an interactive reporting experience for EOP admin
 
 ## Custom reports using Microsoft Graph
 
-Programmatically create reports that are available in the admin center by using Microsoft Graph. For more information, see [Overview of Microsoft Graph](https://docs.microsoft.com/graph/overview) and [Working with Office 365 usage reports in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
+Programmatically create reports that are available in the admin center by using Microsoft Graph. For more information, see [Overview of Microsoft Graph](/graph/overview) and [Working with Office 365 usage reports in Microsoft Graph](/graph/api/resources/report).
 
 ## Message trace
 

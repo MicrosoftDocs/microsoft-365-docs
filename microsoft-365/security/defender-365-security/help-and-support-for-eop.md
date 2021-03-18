@@ -29,7 +29,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 ## Self-support options
 
-Upon logging in, the Microsoft 365 admin center provides information about the status of your organization's services. Also, the service health section shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Microsoft 365 admin center also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area, see [Service health and continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums, and community sites listed here.
+Upon logging in, the Microsoft 365 admin center provides information about the status of your organization's services. Also, the service health section shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Microsoft 365 admin center also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area, see [Service health and continuity](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums, and community sites listed here.
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -89,4 +89,4 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 
 ## For more information about EOP documentation
 
-[Accessibility in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/accessibility)
+[Accessibility in Exchange Online](/Exchange/accessibility/accessibility)

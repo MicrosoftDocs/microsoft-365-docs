@@ -52,7 +52,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
   - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
     Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-the-custom-mailbox) as described later in this article.
 

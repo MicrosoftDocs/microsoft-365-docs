@@ -36,7 +36,7 @@ If your organization is using [Microsoft 365 Defender](microsoft-365-defender.md
 This article provides an overview of AIR and includes links to next steps and additional resources.
 
 > [!TIP]
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](./mtp-pilot.md?ocid=cx-evalpilot).
 
 ## How automated investigation and self-healing works
 
@@ -84,8 +84,8 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 
 |Entities |Threat protection services  |
 |:---------|:---------|
-|Devices (also referred to as endpoints, and sometimes referred to as machines)     |[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
-|Email content (email messages that can contain files and URLs)     |[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)         |
+|Devices (also referred to as endpoints, and sometimes referred to as machines)     |[Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
+|Email content (email messages that can contain files and URLs)     |[Microsoft Defender for Office 365](../defender-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; it depends on how automated investigation and response is configured for your organization. See [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).

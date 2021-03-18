@@ -68,7 +68,7 @@ The `AlertInfo` and `AlertEvidence` tables replace the `DeviceAlertEvents` table
 Use the following table to check how `DeviceAlertEvents` columns map to columns in the `AlertInfo` and `AlertEvidence` tables.
 
 >[!TIP]
->In addition to the columns the following table, the `AlertEvidence` table includes many other columns that provide a more holistic picture of alerts from various sources. [See all AlertEvidence columns](advanced-hunting-alertevidence-table.md) 
+>In addition to the columns in the following table, the `AlertEvidence` table includes many other columns that provide a more holistic picture of alerts from various sources. [See all AlertEvidence columns](advanced-hunting-alertevidence-table.md) 
 
 | DeviceAlertEvents column | Where to find the same data in Microsoft 365 Defender |
 |-------------|-----------|-------------|-------------|
@@ -177,4 +177,4 @@ AlertInfo
 - [Turn on Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Advanced hunting in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

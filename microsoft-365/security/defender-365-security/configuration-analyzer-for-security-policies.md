@@ -58,7 +58,7 @@ The **Standard** and **Strict** policy setting values that are used as baselines
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Configuration analyzer** page, use <https://protection.office.com/configurationAnalyzer>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
   - To use the configuration analyzer **and** make updates to security policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
@@ -70,7 +70,7 @@ The **Standard** and **Strict** policy setting values that are used as baselines
   >  
   > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   >
-  > - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 ## Use the configuration analyzer in the Security & Compliance Center
 

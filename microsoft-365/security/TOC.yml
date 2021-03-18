@@ -11,8 +11,9 @@
         - name: Security recommendations for priority accounts
           href: ./defender-365-security/security-recommendations-for-priority-accounts.md
     - name: Identity and device access configurations
-      href: ./defender-365-security/microsoft-365-policies-configurations.md
       items: 
+        - name: Overview
+          href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: Prerequisite work
           href: ./defender-365-security/identity-access-prerequisites.md
         - name: Common identity and device access policies
@@ -362,6 +363,8 @@
               href: ./defender/overview-security-center.md
             - name: Threat Explorer (and real-time detections)
               href: ./defender-365-security/threat-explorer.md
+            - name: The Email entity page
+              href: ./defender-365-security/mdo-email-entity-page.md
             - name: AIR overview
               href: ./defender-365-security/office-365-air.md
             - name: How automated investigation and response works
@@ -705,8 +708,8 @@
                   href: ./defender-365-security/manage-admin-role-group-permissions-in-eop.md
 
     - name: Microsoft 365 for Enterprise
-      href: https://docs.microsoft.com/microsoft-365/enterprise
+      href: ../enterprise/index.yml
     - name: Microsoft 365 for Business
-      href: https://docs.microsoft.com/microsoft-365/admin/admin-home
+      href: ./index.yml
     - name: Microsoft 365 Compliance
-      href: https://docs.microsoft.com/microsoft-365/compliance/
+      href: ../compliance/index.yml

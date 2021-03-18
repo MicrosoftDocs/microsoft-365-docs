@@ -37,13 +37,13 @@ The `AADSpnSignInEventsBeta` table in the advanced hunting schema contains
 information about Azure Active Directory service principal and managed identity
 sign-ins. You can learn more about the different kinds of sign-ins in [Azure
 Active Directory sign-in activity reports -
-preview](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+preview](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Use this reference to construct queries that return information from the table.
 
 For information on other tables in the advanced hunting schema, see [the
 advanced hunting
-reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
+reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
 
 
 
@@ -75,11 +75,10 @@ reference](https://docs.microsoft.com/windows/security/threat-protection/microso
 
 ## Related articles
 
--   [AADSignInEventsBeta](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-aadsignineventsbeta-table)
+-   [AADSignInEventsBeta](./advanced-hunting-aadsignineventsbeta-table.md)
 -   [Advanced hunting
-    overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+    overview](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 -   [Learn the query
-    language](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
+    language](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
 -   [Understand the
-    schema](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
-
+    schema](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)

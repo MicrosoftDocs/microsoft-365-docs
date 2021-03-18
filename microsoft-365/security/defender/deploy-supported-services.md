@@ -72,10 +72,10 @@ Deploying each service typically requires provisioning to your tenant and some i
 
 | Service | Provisioning instructions | Initial configuration |
 | ------ | ------ | ------ |
-| Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint deployment guide](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *See provisioning instructions* |
-|Microsoft Defender for Office 365 | *None, provisioned with Office 365* | [Configure Microsoft Defender for Office 365 policies](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp#configure-atp-policies) |
-| Microsoft Defender for Identity | [Quickstart: Create your Microsoft Defender for Identity instance](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *See provisioning instructions* |
-| Microsoft Cloud App Security | *None* | [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint deployment guide](../defender-endpoint/deployment-phases.md) | *See provisioning instructions* |
+|Microsoft Defender for Office 365 | *None, provisioned with Office 365* | [Configure Microsoft Defender for Office 365 policies](../defender-365-security/office-365-atp.md#configure-atp-policies) |
+| Microsoft Defender for Identity | [Quickstart: Create your Microsoft Defender for Identity instance](/azure-advanced-threat-protection/install-atp-step1) | *See provisioning instructions* |
+| Microsoft Cloud App Security | *None* | [Quickstart: Get started with Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
 
 Once you’ve deployed the supported services, [turn on Microsoft 365 Defender](m365d-enable.md).
 
@@ -83,7 +83,7 @@ Once you’ve deployed the supported services, [turn on Microsoft 365 Defender](
 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
-- [Microsoft Defender for Endpoint overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender for Endpoint overview](../defender-endpoint/microsoft-defender-advanced-threat-protection.md)
 - [Microsoft Defender for Office 365 overview](../defender-365-security/defender-for-office-365.md)
-- [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
-- [Microsoft Defender for Identity overview](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+- [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Identity overview](/azure-advanced-threat-protection/what-is-atp)

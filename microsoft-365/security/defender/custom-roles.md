@@ -46,14 +46,14 @@ Users with existing Custom roles may access data in the Microsoft 365 security c
 ## Create and manage custom roles
 Custom roles and permissions can be created and individually managed through each of the following security portals: 
 
-- Microsoft Defender for Endpoint – [Edit roles in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- Microsoft Defender for Office 365 – [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/defender-365-security/permissions-in-the-security-and-compliance-center?view=o365-worldwide&preserve-view=true )
-- Microsoft Cloud App Security – [Manage admin access](https://docs.microsoft.com/cloud-app-security/manage-admins)
+- Microsoft Defender for Endpoint – [Edit roles in Microsoft Defender for Endpoint](../defender-endpoint/user-roles.md)
+- Microsoft Defender for Office 365 – [Permissions in the Security & Compliance Center](../defender-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
+- Microsoft Cloud App Security – [Manage admin access](/cloud-app-security/manage-admins)
 
 Each custom role created through an individual portal allows access to the data of the relevant product portal. For example, a custom role created through Microsoft Defender for Endpoint will only allow access to Defender for Endpoint data.
 
 > [!TIP]
-> Permissions and roles can also be accessed through the Microsoft 365 security center by selecting Permissions & roles from the navigation pane. Access to Microsoft Cloud App Security (MCAS) is managed through the MCAS portal and controls access to Microsoft Defender for Identity as well.  See [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/manage-admins)
+> Permissions and roles can also be accessed through the Microsoft 365 security center by selecting Permissions & roles from the navigation pane. Access to Microsoft Cloud App Security (MCAS) is managed through the MCAS portal and controls access to Microsoft Defender for Identity as well.  See [Microsoft Cloud App Security](/cloud-app-security/manage-admins)
 
 > [!NOTE]
 > Custom roles created in Microsoft Cloud App Security have access to Microsoft Defender for Identity data as well. Users with User group admin, or App/instance admin Microsoft Cloud App Security roles are not able to access Microsoft Cloud App Security data through the Microsoft 365 security center.
@@ -95,4 +95,4 @@ Similarly, to view hunting data from Microsoft Defender for Office 365, users wo
 
 ## Related topics
 - [Manage access to Microsoft 365 Defender](m365d-permissions.md)
-- [Manage admin access for MCAS](https://docs.microsoft.com/cloud-app-security/manage-admins)
+- [Manage admin access for MCAS](/cloud-app-security/manage-admins)

@@ -55,7 +55,7 @@ The sidebar lists the device's full name and exposure level. It also provides so
 
 * **Device details** - Domain, OS, timestamp for when the device was first seen, IP addresses, resources. Devices enrolled in Microsoft Defender for Endpoint also display health state. Devices enrolled in Microsoft Defender for Identity will display SAM name and a timestamp for when the device was first created.
 * **Network activity** - Timestamps for the first time and last time the device was seen on the network.
-* **Directory data** (*only for devices enrolled in Microsoft Defender for Identity*) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) flags, [SPNs](https://docs.microsoft.com/windows/win32/ad/service-principal-names), and group memberships.
+* **Directory data** (*only for devices enrolled in Microsoft Defender for Identity*) - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) flags, [SPNs](/windows/win32/ad/service-principal-names), and group memberships.
 
 ## Response actions
 
@@ -64,7 +64,7 @@ Response actions offer a quick way to defend against and analyze threats.
 ![Image of action bar for device profile](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * [Response actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) are only available if the device is enrolled in Microsoft Defender for Endpoint.
+> * [Response actions](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) are only available if the device is enrolled in Microsoft Defender for Endpoint.
 > * Devices that are enrolled in Microsoft Defender for Endpoint may display different numbers of response actions, based on the device's OS and version number.
 
 Actions available on the device profile page include:
@@ -75,8 +75,8 @@ Actions available on the device profile page include:
 * **Restrict app execution** - Prevents applications that are not signed by Microsoft from running.
 * **Run antivirus scan** - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
 * **Collect investigation package** - Gathers information about the device. When the investigation is completed, you can download it.
-* **Initiate Live Response Session** - Loads a remote shell on the device for [in-depth security investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
-* **Initiate automated investigation** - Automatically [investigates and remediates threats](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-air). Although you can manually trigger automated investigations to run from this page, [certain alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) trigger automatic investigations on their own.
+* **Initiate Live Response Session** - Loads a remote shell on the device for [in-depth security investigations](../defender-endpoint/live-response).
+* **Initiate automated investigation** - Automatically [investigates and remediates threats](../defender-365-security/office-365-air.md). Although you can manually trigger automated investigations to run from this page, [certain alert policies](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) trigger automatic investigations on their own.
 * **Action center** - Displays information about any response actions that are currently running.
 
 ## Tabs section
@@ -177,5 +177,5 @@ Selecting an item will open a flyout that links to the update.
 
 * [Microsoft 365 Defender overview](microsoft-365-defender.md)
 * [Turn on Microsoft 365 Defender](m365d-enable.md)
-* [Investigate entities on devices, using live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
-* [Automated investigation and response (AIR) in Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-air)
+* [Investigate entities on devices, using live response](../defender-endpoint/live-response.md)
+* [Automated investigation and response (AIR) in Office 365](../defender-365-security/office-365-air.md)

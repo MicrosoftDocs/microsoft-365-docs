@@ -39,8 +39,8 @@ During and after an automated investigation in Microsoft 365 Defender, remediati
 > [!IMPORTANT]
 > Whether remediation actions are taken automatically or only upon approval depends on certain settings, such as how automation levels. To learn more, see the following articles:
 > - [Configure your automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
-> - [How threats are remediated on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-> - [Threats and remediation actions on email & collaboration content](https://docs.microsoft.com/microsoft-365/security/defender-365-security/air-remediation-actions#threats-and-remediation-actions)
+> - [How threats are remediated on devices](../defender-endpoint/automated-investigations.md)
+> - [Threats and remediation actions on email & collaboration content](../defender-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
 The following table summarizes remediation actions that are currently supported in Microsoft 365 Defender: 
 
@@ -48,7 +48,7 @@ The following table summarizes remediation actions that are currently supported 
 |:---------|:---------|
 |- Collect investigation package <br/>- Isolate device (this action can be undone)<br/>- Offboard machine <br/>- Release code execution <br/>- Release from quarantine <br/>- Request sample <br/>- Restrict code execution (this action can be undone) <br/>- Run antivirus scan <br/>- Stop and quarantine      |- Block URL (time-of-click)<br/>- Soft delete email messages or clusters<br/>- Quarantine email<br/>- Quarantine an email attachment<br/>- Turn off external mail forwarding          |
 
-Remediation actions, whether pending approval or already complete, can be viewed in the [Action Center](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center).
+Remediation actions, whether pending approval or already complete, can be viewed in the [Action Center](./mtp-action-center.md).
 
 ## Remediation actions that follow automated investigations
 
@@ -70,13 +70,13 @@ In addition to remediation actions that follow automated investigations, your se
 
 - Manual device action, such as device isolation or file quarantine.
 - Manual email action, such as soft-deleting email messages. 
-- [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) action on devices or email.
-- [Explorer](https://docs.microsoft.com/microsoft-365/security/defender-365-security/threat-explorer) action on email content, such as moving email to junk, soft-deleting email, or hard-deleting email.
+- [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md) action on devices or email.
+- [Explorer](../defender-365-security/threat-explorer.md) action on email content, such as moving email to junk, soft-deleting email, or hard-deleting email.
 - Manual [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) action, such as deleting a file, stopping a process, and removing a scheduled task.
-- Live response action with [Microsoft Defender for Endpoint APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis), such as isolating a device, running an antivirus scan, and getting information about a file. 
+- Live response action with [Microsoft Defender for Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis), such as isolating a device, running an antivirus scan, and getting information about a file. 
 
 ## Next steps
 
-- [Visit the Action center](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center)
-- [View and manage remediation actions](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir-actions)
+- [Visit the Action center](mtp-action-center.md)
+- [View and manage remediation actions](mtp-autoir-actions.md)
 - [Handle false positives/negatives in automated investigation and response capabilities](m365d-autoir-report-false-positives-negatives.md)

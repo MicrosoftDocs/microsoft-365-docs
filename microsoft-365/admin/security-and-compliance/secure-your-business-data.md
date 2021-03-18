@@ -29,7 +29,7 @@ description: "Protect your business email and data from cyber threats, including
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -64,7 +64,7 @@ To see a training video for how to set up MFA and how users complete the set up,
 
 To set up multi-factor authentication, you turn on Security defaults:
 
-For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 If your subscription is new, Security defaults might already be turned on for you automatically.
 

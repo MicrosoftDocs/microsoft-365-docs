@@ -31,7 +31,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](./mtp-pilot.md?ocid=cx-evalpilot).
 >
 
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
@@ -41,7 +41,7 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
 
-This capability is similar to [advanced hunting in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Available in Microsoft 365 security center, this capability supports queries that check a broader data set from:
+This capability is similar to [advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Available in Microsoft 365 security center, this capability supports queries that check a broader data set from:
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
@@ -56,7 +56,7 @@ We recommend going through several steps to quickly get started with advanced hu
 
 | Learning goal | Description | Resource |
 |--|--|--|
-| **Learn the language** | Advanced hunting is based on [Kusto query language](https://docs.microsoft.com/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
+| **Learn the language** | Advanced hunting is based on [Kusto query language](/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
 | **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries, drill down to get richer information, and take response actions. | - [Work with query results](advanced-hunting-query-results.md)<br>- [Take action on query results](advanced-hunting-take-action.md) |
 | **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. Learn where to look for data when constructing your queries. | - [Schema reference](advanced-hunting-schema-tables.md)<br>- [Transition from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md) |
 | **Get expert tips and examples** | Train for free with guides from Microsoft experts. Explore collections of predefined queries covering different threat hunting scenarios. | - [Get expert training](advanced-hunting-expert-training.md)<br>- [Use shared queries](advanced-hunting-shared-queries.md)<br>- [Go hunt](advanced-hunting-go-hunt.md)<br>- [Hunt for threats across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md) |
@@ -82,4 +82,3 @@ Time information in advanced hunting is in the UTC time zone.
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Custom detections overview](custom-detections-overview.md)
-
