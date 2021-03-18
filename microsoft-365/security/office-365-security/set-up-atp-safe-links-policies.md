@@ -58,18 +58,18 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Safe Links** page, use <https://protection.office.com/safelinksv2>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article:
   - To create, modify, and delete Safe Links policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center **and** a member of the **Organization Management** role group in Exchange Online.
   - For read-only access to Safe Links policies, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   > 
   > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  . - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+  . - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 - For our recommended settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
@@ -274,7 +274,7 @@ This example creates a safe links policy named Contoso All with the following va
 New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
 ```
 
-For detailed syntax and parameter information, see [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy).
+For detailed syntax and parameter information, see [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).
 
 #### Step 2: Use PowerShell to create a safe links rule
 
@@ -295,7 +295,7 @@ This example creates a safe links rule named Contoso All with the following cond
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
-For detailed syntax and parameter information, see [New-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule).
+For detailed syntax and parameter information, see [New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule).
 
 ### Use PowerShell to view safe links policies
 
@@ -317,7 +317,7 @@ This example returns detailed information for the safe links policy named Contos
 Get-SafeLinksPolicy -Identity "Contoso Executives"
 ```
 
-For detailed syntax and parameter information, see [Get-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safelinkspolicy).
+For detailed syntax and parameter information, see [Get-SafeLinksPolicy](/powershell/module/exchange/get-safelinkspolicy).
 
 ### Use PowerShell to view safe links rules
 
@@ -349,7 +349,7 @@ This example returns detailed information for the safe links rule named Contoso 
 Get-SafeLinksRule -Identity "Contoso Executives"
 ```
 
-For detailed syntax and parameter information, see [Get-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/get-safelinksrule).
+For detailed syntax and parameter information, see [Get-SafeLinksRule](/powershell/module/exchange/get-safelinksrule).
 
 ### Use PowerShell to modify safe links policies
 
@@ -368,7 +368,7 @@ To modify a safe links policy, use this syntax:
 Set-SafeLinksPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-For detailed syntax and parameter information, see [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy).
+For detailed syntax and parameter information, see [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy).
 
 ### Use PowerShell to modify safe links rules
 
@@ -382,7 +382,7 @@ To modify a safe links rule, use this syntax:
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
 ```
 
-For detailed syntax and parameter information, see [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).
+For detailed syntax and parameter information, see [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).
 
 ### Use PowerShell to enable or disable safe links rules
 
@@ -406,7 +406,7 @@ This example enables same rule.
 Enable-SafeLinksRule -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Enable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) and [Disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule).
+For detailed syntax and parameter information, see [Enable-SafeLinksRule](/powershell/module/exchange/enable-safelinksrule) and [Disable-SafeLinksRule](/powershell/module/exchange/disable-safelinksrule).
 
 ### Use PowerShell to set the priority of safe links rules
 
@@ -427,7 +427,7 @@ Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 > [!NOTE]
 > To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-SafeLinksRule** cmdlet instead.
 
-For detailed syntax and parameter information, see [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).
+For detailed syntax and parameter information, see [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).
 
 ### Use PowerShell to remove safe links policies
 
@@ -445,7 +445,7 @@ This example removes the safe links policy named Marketing Department.
 Remove-SafeLinksPolicy -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safelinkspolicy).
+For detailed syntax and parameter information, see [Remove-SafeLinksPolicy](/powershell/module/exchange/remove-safelinkspolicy).
 
 ### Use PowerShell to remove safe links rules
 
@@ -463,7 +463,7 @@ This example removes the safe links rule named Marketing Department.
 Remove-SafeLinksRule -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/remove-safelinksrule).
+For detailed syntax and parameter information, see [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
 To verify that Safe Links is scanning messages, check the available Microsoft Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](view-reports-for-atp.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).
 

@@ -27,7 +27,7 @@ description: "Learn how to extend your trial subscription for another 30-day per
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+[About the new Microsoft 365 admin center](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -58,4 +58,4 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 
 ::: moniker-end
 
-When you're ready to buy, see [Buy your trial version](buy-a-subscription-from-your-free-trial.md).
+When you're ready to buy, see [Buy your trial version](./try-or-buy-microsoft-365.md).

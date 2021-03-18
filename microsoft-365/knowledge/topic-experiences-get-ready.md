@@ -52,10 +52,10 @@ To plan for Viva Topics, you need to:
 
 ## 1. Migrate content to Microsoft 365
 
-There are several tools and services to help with your migration - you can get an overview and information about how to migrate at [Migrate your content to Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online). Migration tools include:
+There are several tools and services to help with your migration - you can get an overview and information about how to migrate at [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online). Migration tools include:
 
-- [Migration Manager](https://docs.microsoft.com/sharepointmigration/mm-get-started)
-- [SharePoint Migration Tool (SPMT)](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
+- [Migration Manager](/sharepointmigration/mm-get-started)
+- [SharePoint Migration Tool (SPMT)](/sharepointmigration/introducing-the-sharepoint-migration-tool)
 - [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)
 - [Partner migration tools and services](https://www.microsoft.com/solution-providers)
 
@@ -69,12 +69,12 @@ Make the most of your migration:
 
 If you can’t migrate some content, then connect it with the Microsoft Graph:
 
-- Consider implementing [Graph Content Connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview). Using connectors, external content can be indexed into the Microsoft Graph, where users can then discover it through Microsoft Search.
+- Consider implementing [Graph Content Connectors](/microsoftsearch/connectors-overview). Using connectors, external content can be indexed into the Microsoft Graph, where users can then discover it through Microsoft Search.
 - Future developments will bring external data into Viva Topics.
 
 ## 3. Modernize SharePoint pages
 
-Because topic cards and highlights can only appear on modern pages, update any pages you want to include in Viva Topics from classic to modern. See [Modernize your classic SharePoint sites](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites). You can use the [SharePoint Modernization scanner](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) to prepare your classic sites for modernization.
+Because topic cards and highlights can only appear on modern pages, update any pages you want to include in Viva Topics from classic to modern. See [Modernize your classic SharePoint sites](/sharepoint/dev/transform/modernize-classic-sites). You can use the [SharePoint Modernization scanner](/sharepoint/dev/transform/modernize-scanner) to prepare your classic sites for modernization.
 
 If you have a lot of classic sites, prioritize high profile pages to convert to modern.
 
@@ -85,7 +85,7 @@ Good permissions management is critical here. And good permissions management is
 
 - Encourage site owners to review sharing and permissions.
 
-  SharePoint site owners can review a sharing report for their site that shows full details of all permissions and sharing links configured on the site, see [Sharing reports](https://docs.microsoft.com/sharepoint/sharing-reports). This lists internal and external (guest) users.
+  SharePoint site owners can review a sharing report for their site that shows full details of all permissions and sharing links configured on the site, see [Sharing reports](/sharepoint/sharing-reports). This lists internal and external (guest) users.
 
   Site owners can also see who has permissions for the site by going to the **Site Permissions** and **Advanced Permissions Settings** pages.
 

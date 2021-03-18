@@ -48,10 +48,10 @@ With Office 365, multiple layers and kinds of encryption work together to secure
   
 |**Kinds of Content**|**Encryption Technologies**|**Resources to learn more**|
 |:-----|:-----|:-----|
-|Files on a device. These files can include email messages saved in a folder, Office documents saved on a computer, tablet, or phone, or data saved to the Microsoft cloud.  <br/> |BitLocker in Microsoft datacenters. BitLocker can also be used on client machines, such as Windows computers and tablets  <br/> Distributed Key Manager (DKM) in Microsoft datacenters  <br/> Customer Key for Microsoft 365  <br/> |[Windows IT Center: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Trust Center: Encryption](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Cloud security controls series: Encrypting Data at Rest](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md) <br/> [Service encryption with Customer Key](customer-key-overview.md) <br/> |
-|Files in transit between users. These files can include Office documents or SharePoint list items shared between users.  <br/> |TLS for files in transit  <br/> |[Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype for Business Online: Security and Archiving](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
+|Files on a device. These files can include email messages saved in a folder, Office documents saved on a computer, tablet, or phone, or data saved to the Microsoft cloud.  <br/> |BitLocker in Microsoft datacenters. BitLocker can also be used on client machines, such as Windows computers and tablets  <br/> Distributed Key Manager (DKM) in Microsoft datacenters  <br/> Customer Key for Microsoft 365  <br/> |[Windows IT Center: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Trust Center: Encryption](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Cloud security controls series: Encrypting Data at Rest](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md) <br/> [Service encryption with Customer Key](customer-key-overview.md) <br/> |
+|Files in transit between users. These files can include Office documents or SharePoint list items shared between users.  <br/> |TLS for files in transit  <br/> |[Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype for Business Online: Security and Archiving](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
 |Email in transit between recipients. This email includes email hosted by Exchange Online.  <br/> |Office 365 Message Encryption with Azure Rights Management, S/MIME, and TLS for email in transit  <br/> |[Office 365 Message Encryption (OME)](ome.md) <br/> [Email encryption in Office 365](email-encryption.md) <br/> [How Exchange Online uses TLS to secure email connections in Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
-|Chats, messages, and files in transit between recipients using Microsoft Teams. <br/> |Teams uses TLS and MTLS to encrypt instant messages. Media traffic is encrypted using Secure RTP (SRTP). Teams uses FIPS (Federal Information Processing Standard) compliant algorithms for encryption key exchanges. <br/> |[Encryption for Teams](https://docs.microsoft.com/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
+|Chats, messages, and files in transit between recipients using Microsoft Teams. <br/> |Teams uses TLS and MTLS to encrypt instant messages. Media traffic is encrypted using Secure RTP (SRTP). Teams uses FIPS (Federal Information Processing Standard) compliant algorithms for encryption key exchanges. <br/> |[Encryption for Teams](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## What if I need more control over encryption to meet security and compliance requirements?
 
@@ -59,9 +59,9 @@ Microsoft 365 provides Microsoft-managed solutions for volume encryption, file e
   
 To learn more, see the following resources:
   
-- [What is Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+- [What is Azure Rights Management?](/information-protection/understand-explore/what-is-azure-rms)
 
-- [Activate Rights Management in the admin center](https://docs.microsoft.com/microsoft-365/enterprise/activate-rms-in-microsoft-365)
+- [Activate Rights Management in the admin center](../enterprise/activate-rms-in-microsoft-365.md)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -84,6 +84,6 @@ To learn more, see the following resources:
 
 [Plan for Microsoft 365 security and information protection capabilities](plan-for-security-and-compliance.md)
 
-[Top 10 ways to secure Microsoft 365 for business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)
+[Top 10 ways to secure Microsoft 365 for business plans](/office365/admin/security-and-compliance/secure-your-business-data)
 
-[Microsoft Stream Video level encryption and playback flow](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)
+[Microsoft Stream Video level encryption and playback flow](/stream/network-overview#video-level-encryption-and-playback-flow)

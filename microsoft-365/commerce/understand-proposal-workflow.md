@@ -75,7 +75,7 @@ you automatically become the billing account owner, provided you:
 
 - Are the person named in the proposal\
     OR
-- Are already an [Azure Active Directory global admin](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) for your
+- Are already an [Azure Active Directory global admin](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) for your
     organization
 
 ## What is the overall workflow?
@@ -245,14 +245,14 @@ billing account in the Azure portal.
 
 If you're a new customer and have bought Azure products as part of the
 proposal, your next step is to set up your new billing account. To learn
-how, see [Set up your billing account for a Microsoft Customer Agreement](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-setup-account).
+how, see [Set up your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-setup-account).
 
 If you're an existing Azure customer with an Enterprise Agreement, and
 you're signing an MCA for the first time, your next step is to learn
 about the changes between the agreements, and how to complete tasks with
 your new billing account. To learn more, see [Complete Enterprise
 Agreement tasks in your billing account for a Microsoft Customer
-Agreement](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-enterprise-operations).
+Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
 
 ## Understand invoicing
 

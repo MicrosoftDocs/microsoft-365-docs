@@ -30,7 +30,7 @@ ms.custom: seo-marvel-apr2020
 **Applies to:**
 - Microsoft 365 Defender
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](./mtp-pilot.md?ocid=cx-evalpilot).
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -150,7 +150,7 @@ In the **Mitigations** section, review the list of specific actionable recommend
   - Potentially unwanted application (PUA) protection
   - Real-time protection
  
-Mitigation information in this section incorporates data from [threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
+Mitigation information in this section incorporates data from [threat and vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
 
 ![Image of the mitigations section of a threat analytics report showing secure configuration details](../../media/threat-analytics/ta_mitigations_mtp.png)
 ![Image of the mitigations section of a threat analytics report showing vulnerability details](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -176,4 +176,4 @@ When looking at the threat analytics data, remember the following factors:
 ## Related topics
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md) 
 - [Understand the analyst report section](threat-analytics-analyst-reports.md)
-- [Assess and resolve security weaknesses and exposures](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Assess and resolve security weaknesses and exposures](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

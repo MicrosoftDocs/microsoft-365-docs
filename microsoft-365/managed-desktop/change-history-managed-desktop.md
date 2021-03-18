@@ -35,7 +35,7 @@ New or changed article | Description
 ## December 2020
 New or changed article | Description
 --- | ---
-[What is Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Updated article
+[What is Microsoft Managed Desktop?](./intro/index.md) | Updated article
 [Work with reports](working-with-managed-desktop/reports.md) | Updated article
 [Privacy and personal data](service-description/privacy-personal-data.md) | Updated article
 [Compliance](intro/compliance.md) | Updated article
@@ -183,8 +183,8 @@ New or changed article | Description
 [Usage insights](working-with-managed-desktop/usage-insights.md) | New article
 [Reliability insights](working-with-managed-desktop/reliability-insights.md) | New article
 [Microsoft Managed Desktop devices](service-description/device-list.md) | Updated article
-[Microsoft Managed Desktop main page](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Updated article
-[What is Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Updated article
+[Microsoft Managed Desktop main page](./index.yml) | Updated article
+[What is Microsoft Managed Desktop?](./intro/index.md) | Updated article
 [Get your users ready to use devices](get-started/get-started-devices.md) | Updated article
 [Exceptions to the service plan](service-description/customizing.md) | Updated article
 
@@ -301,5 +301,4 @@ New or changed article | Description
 [Support for Microsoft Managed Desktop](service-description/support.md)<br />and [User support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Updated to include Australia.
 
 ## October 30, 2018
-Content reorganized: added section for [Microsoft Managed Desktop service description](service-description/index.md). 
-
+Content reorganized: added section for [Microsoft Managed Desktop service description](service-description/index.md).
