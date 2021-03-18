@@ -53,7 +53,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `OSVersion` | string | Version of the operating system running on the machine |
 | `MachineGroup` | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
-|`AdditionlFields` | string | Additional information about the event in JSON array format |
+|`AdditionalFields` | string | Additional information about the event in JSON array format |
 
 The `DeviceInfo` table provides device information based on heartbeats, which are periodic reports or signals from a device. Every fifteen minutes, the device sends a partial heartbeat that contains frequently changing attributes like `LoggedOnUsers`. Once a day, a full heartbeat containing the device's attributes is sent.
 
