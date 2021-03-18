@@ -21,7 +21,7 @@ description: "Build assessments in Microsoft Compliance Manager to help you meet
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
 > [!IMPORTANT]
-> The assessments available to your organization depend on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
+> The assessments available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Introduction to assessments
 
@@ -110,7 +110,7 @@ You can also start from your assessment templates page by finding the template y
 
 2. Go to your **assessments** page in Compliance Manager and select **Add assessment**. An assessment wizard will appear in a large flyout pane.
 
-3. **Select a template**: Choose a template to serve as the basis for your assessment. Select the radio button next to your chosen template, then select **Next**.
+3. **Select a template**: Choose a template to serve as the basis for your assessment. You’ll see the list of templates divided into included and premium categories (see [Template types](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information). Select the radio button next to your chosen template, then select **Next**.
 
 4. **Name and group:** Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
 
@@ -150,25 +150,27 @@ After you format your spreadsheet, follow the steps below.
 
 1. Go to your **Assessment templates** page and select **Create new template**. A template creation wizard will open.
 
-2. Choose the type of template you want to create. In this case, select **Extend a Microsoft template**, then **Select**.
+2. Choose the type of template you want to create. In this case, select **Extend a Microsoft template**, then **Select Microsoft template**.
 
-3. A template selection flyout pane appears on the right side of your screen. Use **Search** to apply filters for locating the template you want
+3. A template selection flyout pane appears on the right side of your screen, showing a list of all templates and their status of active or inactive. Your **activated templates** counter shows how many templates are currently in use out of the total number available to use. If you’re over your limit, a message bar will provide notice. See [Template types](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information.
 
-4. Once you locate your template, select the radio button to the left of its name, then select **Save**.
+4. A template selection flyout pane appears on the right side of your screen. Use **Search** to apply filters for locating the template you want
 
-5. The next screen shows the template you selected. If correct, select **Next**. (If incorrect, choose **Select a different template** to choose again.)
+5. Once you locate your template, select the radio button to the left of its name, then select **Save**.
 
-6. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data.
+6. The next screen shows the template you selected. If correct, select **Next**. (If incorrect, choose **Select a different template** to choose again.)
 
-7. If there are no problems with your file, the next screen shows the name of the file uploaded. Select **Next** to continue (if you need to change the file, select **Upload a different file**).
+7. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data.
+
+8. If there are no problems with your file, the next screen shows the name of the file uploaded. Select **Next** to continue (if you need to change the file, select **Upload a different file**).
 
     - If there’s a problem with your file, an error message at the top explains what’s wrong. You’ll need to fix and re-upload your file. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields.
  
-8. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Next**. (If you need to make changes, select **Upload a different file**.)
+9. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Next**. (If you need to make changes, select **Upload a different file**.)
 
-9. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
+10. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
 
-10. You’ll arrive at your new template’s details page. From here you can create your assessment by selecting **Create assessment**. For guidance, start at step #4 in the [assessment creation instructions above](#to-create-an-assessment).
+11. You’ll arrive at your new template’s details page. From here you can create your assessment by selecting **Create assessment**. For guidance, start at step #4 in the [assessment creation instructions above](#to-create-an-assessment).
 
 ## Create your own custom assessment
 

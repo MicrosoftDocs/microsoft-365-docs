@@ -27,9 +27,9 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 This topic provides frequently asked questions and answers about anti-malware protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 
@@ -88,13 +88,13 @@ Spam and non-spam messages can be submitted to Microsoft for analysis in several
 
 Yes, for example you can get a spam detection report in the Microsoft 365 admin center. This report shows spam volume as a count of unique messages. For more information about reporting, see the following links:
 
-Exchange Online customers: [Monitoring, Reporting, and Message Tracing in Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
+Exchange Online customers: [Monitoring, Reporting, and Message Tracing in Exchange Online](/exchange/monitoring/monitoring)
 
 Standalone EOP customers: [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
 
 ## Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?
 
-Yes, the message trace tool enables you to follow email messages as they pass through the service, in order to find out what happened to them. For more information about how to use the message trace tool to find out why a message was marked as spam, see [Was a message marked as spam?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
+Yes, the message trace tool enables you to follow email messages as they pass through the service, in order to find out what happened to them. For more information about how to use the message trace tool to find out why a message was marked as spam, see [Was a message marked as spam?](/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
 
 ## Will the service throttle (rate limit) my mail if my users send outbound spam?
 
@@ -106,7 +106,7 @@ You can send a notification to a specified email address when a sender is blocke
 
 Yes. Although we recommend that you point your MX record to Microsoft, we realize that there are legitimate business reasons to route your email to somewhere other than Microsoft first.
 
-- **Inbound**: Change your MX records to point to the third-party provider, and then redirect the messages to EOP for additional processing. For more information, see [Enhanced Filtering for connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- **Inbound**: Change your MX records to point to the third-party provider, and then redirect the messages to EOP for additional processing. For more information, see [Enhanced Filtering for connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 - **Outbound**: Configure smart host routing from Microsoft 365 to the destination third-party provider.
 
@@ -142,7 +142,7 @@ The guidelines presented below are best practices for sending outbound email mes
 
   [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Domains FAQ](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
 
 - **Signing email with DKIM, sign with relaxed canonicalization.**
 

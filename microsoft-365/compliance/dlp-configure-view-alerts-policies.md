@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/15/2020
+ms.date:
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -62,12 +62,12 @@ management dashboard. To get started, you should be eligible for Office
 Business. For more information about the licensing requirements for
 Office 365 DLP, see [Which licenses provide the rights for a user to
 benefit from the
-service?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+service?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
 Customers who participate in the [Endpoint
-DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
+DLP](./endpoint-dlp-learn-about.md?view=o365-worldwide)
 public preview or who are eligible for [Teams
-DLP](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
+DLP](./dlp-microsoft-teams.md?view=o365-worldwide)
 will see their endpoint DLP policy alerts and Teams DLP policy alerts in
 the DLP alert management dashboard.
 

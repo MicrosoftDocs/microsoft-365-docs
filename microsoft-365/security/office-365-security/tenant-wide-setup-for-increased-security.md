@@ -28,9 +28,9 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point.
 
@@ -80,13 +80,13 @@ Many of the controls for security and protection in the Exchange admin center ar
 
 |Area|Includes a default policy|Recommendation|
 |---|---|---|
-|**Mail Flow** (mail flow rules, also known as transport rules)|No|Add a mail flow rule to help protect against ransomware by blocking executable file types and Office file types that contain macros. For more information, see [Use mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <p> See these additional topics: <ul><li>[Protect against ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)</li><li>[Malware and Ransomware Protection in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection)</li><li>[Recover from a ransomware attack in Office 365](recover-from-ransomware.md)</li></ul> <p> Create a mail flow rule to prevent auto-forwarding of email to external domains. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <p> More information: [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**Enable modern authentication**|No|Modern authentication is a prerequisite for using multi-factor authentication (MFA). MFA is recommended for securing access to cloud resources, including email. <p> See these topics: <ul><li>[Enable or disable modern authentication in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype for Business Online: Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business. <p> More information: [How modern authentication works for Office 2013 and Office 2016 client apps](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)|
+|**Mail Flow** (mail flow rules, also known as transport rules)|No|Add a mail flow rule to help protect against ransomware by blocking executable file types and Office file types that contain macros. For more information, see [Use mail flow rules to inspect message attachments in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <p> See these additional topics: <ul><li>[Protect against ransomware](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[Malware and Ransomware Protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[Recover from a ransomware attack in Office 365](recover-from-ransomware.md)</li></ul> <p> Create a mail flow rule to prevent auto-forwarding of email to external domains. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <p> More information: [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**Enable modern authentication**|No|Modern authentication is a prerequisite for using multi-factor authentication (MFA). MFA is recommended for securing access to cloud resources, including email. <p> See these topics: <ul><li>[Enable or disable modern authentication in Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype for Business Online: Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business. <p> More information: [How modern authentication works for Office 2013 and Office 2016 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
 |
 
 ## Configure tenant-wide sharing policies in SharePoint admin center
 
-Microsoft recommendations for configuring SharePoint team sites at increasing levels of protection, starting with baseline protection. For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)
+Microsoft recommendations for configuring SharePoint team sites at increasing levels of protection, starting with baseline protection. For more information, see [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md).
 
 SharePoint team sites configured at the baseline level allow sharing files with external users by using anonymous access links. This approach is recommended instead of sending files in email.
 
@@ -96,7 +96,7 @@ To support the goals for baseline protection, configure tenant-wide sharing poli
 
 |Area|Includes a default policy|Recommendation|
 |---|---|---|
-|**Sharing** (SharePoint Online and OneDrive for Business)|Yes|External sharing is enabled by default. These settings are recommended: <ul><li>Allow sharing to authenticated external users and using anonymous access links (default setting).</li><li>Anonymous access links expire in this many days. Enter a number, if desired, such as 30 days.</li><li>Default link type — select Internal (people in the organization only). Users who wish to share using anonymous links must choose this option from the sharing menu.</li></ul> <p> More information: [External sharing overview](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
+|**Sharing** (SharePoint Online and OneDrive for Business)|Yes|External sharing is enabled by default. These settings are recommended: <ul><li>Allow sharing to authenticated external users and using anonymous access links (default setting).</li><li>Anonymous access links expire in this many days. Enter a number, if desired, such as 30 days.</li><li>Default link type — select Internal (people in the organization only). Users who wish to share using anonymous links must choose this option from the sharing menu.</li></ul> <p> More information: [External sharing overview](/sharepoint/external-sharing-overview)|
 |
 
 SharePoint admin center and OneDrive for Business admin center include the same settings. The settings in either admin center apply to both.
@@ -109,7 +109,7 @@ Be sure to visit these two areas in Azure Active Directory to complete tenant-wi
 
 If your organization includes offices with secure network access, add the trusted IP address ranges to Azure Active Directory as named locations. This feature helps reduce the number of reported false positives for sign-in risk events.
 
-See: [Named locations in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-named-locations)
+See: [Named locations in Azure Active Directory](/azure/active-directory/active-directory-named-locations)
 
 ### Block apps that don't support modern authentication
 
@@ -119,7 +119,7 @@ For secure environments, be sure to disable authentication for apps that do not 
 
 In the meantime, use one of the following methods to accomplish this for SharePoint Online and OneDrive for Business:
 
-- Use PowerShell, see [Block apps that do not use modern authentication (ADAL)](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block).
+- Use PowerShell, see [Block apps that do not use modern authentication (ADAL)](/mem/intune/protect/app-modern-authentication-block).
 
 - Configure this in the SharePoint admin center on the "device access' page — "Control access from apps that don't use modern authentication." Choose Block.
 
@@ -133,11 +133,11 @@ Because this solution recommends the EMS E5 plan, we recommend you start with Cl
 
 More information:
 
-- [Deploy Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Deploy Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [What is Cloud App Security?](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+- [What is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)
 
 ![Cloud App Security dashboard](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 

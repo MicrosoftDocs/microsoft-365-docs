@@ -43,8 +43,8 @@ Use a private browsing session (not a regular session) to access the Azure porta
 
 ## More information
 
-- A free Azure Active Directory subscription does not include the Sign-ins activity report. To record sign-in activity (which can be useful in a data breach), you need an Azure Active Directory Premium subscription. For more information, see [How long does Azure AD store the data?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+- A free Azure Active Directory subscription does not include the Sign-ins activity report. To record sign-in activity (which can be useful in a data breach), you need an Azure Active Directory Premium subscription. For more information, see [How long does Azure AD store the data?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 - You can also access the **Azure Active Directory** admin center from the Microsoft 365 admin center. In the left navigation pane of the Microsoft 365 admin center, click **Admin centers** \> **Azure Active Directory**.
 
-- For information about managing users and groups and performing other directory management tasks, see [Manage your Azure AD directory](https://docs.microsoft.com/azure/active-directory/active-directory-administer).
+- For information about managing users and groups and performing other directory management tasks, see [Manage your Azure AD directory](/azure/active-directory/active-directory-administer).

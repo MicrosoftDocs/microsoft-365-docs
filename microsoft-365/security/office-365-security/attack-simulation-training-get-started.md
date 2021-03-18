@@ -12,7 +12,7 @@ localization_priority: Normal
 search.appverid: 
   - MET150
   - MOE150
-ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.assetid:
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
@@ -36,17 +36,17 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 
 - To open the Microsoft Security Center, go to <https://security.microsoft.com/>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, open <https://security.microsoft.com/attacksimulator>.
 
-- For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be assigned permissions in the Security & Compliance Center or in Azure Active Directory before you can do the procedures in this article. Specifically, you need to be a member of **Organization Management**, **Security Administrator**, or one of the following roles:
   - **Attack Simulator Administrators**: Create and managed all aspects of attack simulation campaigns.
   - **Attack Simulator Payload Authors**: Create attack payloads that an admin can initiate later.
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) or [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
-- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations). Attack simulation is currently not available in the following regions: SGP, NOR, UAE, ZAF, GER, BRA, and CHE.
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation is available in the following regions: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, and KOR.
 
 ## Simulations
 
@@ -105,3 +105,6 @@ For step by step instructions on how to create a payload for use within a simula
 ### Gaining insights
 
 For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](attack-simulation-training-insights.md).
+
+> [!NOTE]
+> Attack Simulator uses Safe Links in Defender for Office 365 to securely track click data for the URL in the payload message that's sent to targeted recipients of a phishing campaign, even if the **Do not track user clicks** setting in Safe Links policies is turned on.

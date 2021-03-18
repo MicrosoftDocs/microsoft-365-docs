@@ -29,6 +29,4 @@ ms.technology: m365d
 >**The preview period for the ServiceNow connector has ended**<br>
 >This capability is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
-ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. [Learn more about ServiceNow](https://www.servicenow.com/)
-
-Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Microsoft 365 security center](overview-security-center.md) and the [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) are being enhanced with the ability to natively create and track tickets in ServiceNow.
+ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows.

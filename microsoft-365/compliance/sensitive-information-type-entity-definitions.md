@@ -172,12 +172,12 @@ No
 
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_australia_bank_account_number finds content that matches the pattern.
 - A keyword from Keyword_australia_bank_account_number is found.
 - The regular expression Regex_australia_bank_account_number_bsb finds content that matches the pattern.
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_australia_bank_account_number finds content that matches the pattern.
 
 - A keyword from Keyword_australia_bank_account_number is found.
@@ -497,10 +497,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10-11 digits:
-- 1st digit is in the range 2-6
-- 9th digit is a check digit
-- 10th digit is the issue digit
-- 11th digit (optional) is the individual number
+- First digit is in the range 2-6
+- Nine digit is a check digit
+- Tenth digit is the issue digit
+- Eleventh digit (optional) is the individual number
 
 ### Checksum
 
@@ -953,6 +953,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Passnummer
 - reisepässe
 
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
 
 ## Austria social security number
 
@@ -1412,7 +1416,7 @@ No
 
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_AzureRedisCacheConnectionString finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
@@ -1506,7 +1510,7 @@ No
 
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_AzureServiceBusConnectionString finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
@@ -1988,6 +1992,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Passnummer
 - reisepass kein
 
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
 
 ## Belgium value added tax number
 This sensitive information type is only available for use in:
@@ -3966,67 +3974,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin no
 - tin#
 
-## Croatia social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-11 digits without spaces and delimiters
-  
-### Pattern
-
-11 digits:
-  
-- 10 digits
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_croatia_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_croatia_eu_ssn_or_equivalent
-
-- personal identification number
-- master citizen number
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- personal id number
-- personalidnumber#
-- oib
-- osobni identifikacijski broj
-
 ## Cyprus drivers license number
 
 ### Format
@@ -4746,66 +4693,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin#
 - unique identification number
 
-## Czech social security number or equivalent identification
-
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-10 digits and a backslash in the specified pattern
-  
-### Pattern
-
-10 digits and a backslash:
-  
-- six digits that correspond to the birth date (YYMMDD): 
-- a backslash
-- three digits that correspond to a serial number that separates persons born on the same date
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_czech_republic_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_czech_republic_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_czech_republic_eu_ssn_or_equivalent` finds content that matches the pattern. 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_czech_republic_eu_ssn_or_equivalent
-
-- birth number
-- national identification number
-- personal identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- personal id number
-- personalidnumber#
-- rč
-- rodné číslo
-- rodne cislo
 
 ## Denmark driver's license number
 
@@ -5162,62 +5049,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - sygesikringsnr
 - sygesikringsnummer
 
-## Denmark social security number or equivalent identification
-This sensitive information type entity is only available the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-10 digits and a hyphen in the specified pattern
-  
-### Pattern
-
-10 digits and a hyphen:
-  
-- six digits that correspond to the birth date (DDMMYY) 
-- a hyphen
-- four digits that correspond to a sequence number
-
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_denmark_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_denmark_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_denmark_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_denmark_eu_ssn_or_equivalent
-
-- personal identification number
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- personal id number
-- personalidnumber#
-- cpr-nummer
-- personnummer
 
 ## Drug Enforcement Agency (DEA) number
 
@@ -6071,7 +5902,7 @@ These entities that are in the EU Social Security Number or equivalent identific
 - [Czech](#czech-personal-identity-number)
 - [Denmark](#denmark-personal-identification-number)
 - [Finland](#finland-national-id)
-- [France](#france-social-security-number-insee-or-equivalent-identification)
+- [France](#france-social-security-number-insee)
 - [Germany](#germany-identity-card-number)
 - [Greece](#greece-national-id-card)
 - [Hungary](#hungary-social-security-number-taj)
@@ -6460,25 +6291,41 @@ No
 
 ### Definition
 
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_finland_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keyword_finland_passport_number` is found.
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_finland_passport_number finds content that matches the pattern.
-- A keyword from Keywords_eu_passport_number_common or Keyword_finland_passport_number is found.
+- The regular expression `Regex_finland_passport_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keyword_finland_passport_number` is found.
 
 ```xml
-<!-- Finland Passport Number -->
-<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+      <!-- Finland Passport Number -->
+      <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_finland_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_finland_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keyword_finland_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### Keywords
 
-#### Keywords_eu_passport_number_common
+#### Keywords_eu_passport_number
 
 - passport#
 - passport #
@@ -6501,6 +6348,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - passi#
 - passi number
 
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
 
 ## France driver's license number
 
@@ -6782,46 +6633,79 @@ No
 
 ### Definition
 
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_fr_passport` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_france_eu_passport_number` is found.
+- The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
+
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_fr_passport finds content that matches the pattern.
-- A keyword from Keyword_passport is found.
+- The function `Func_fr_passport` finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_france_eu_passport_number` is found.
+
 
 ```xml
-<!-- France Passport Number -->
-<Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_fr_passport" />
-        <Match idRef="Keyword_passport" />
-  </Pattern>
-</Entity>
+    <!-- France Passport Number -->
+    <Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_fr_passport" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_france_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_fr_passport" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_france_eu_passport_number" />
+          </Any>
+        </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
-#### Keyword_passport
+#### Keywords_eu_passport_number
 
-- Passport Number
-- Passport No
-- Passport #
-- Passport#
-- PassportID
-- Passportno
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
 - passportnumber
-- パスポート
-- パスポート番号
-- パスポートのNum
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport Non
-- Passeport #
-- Passeport#
-- PasseportNon
-- Passeportn °
+- passport number
+- passportnumbers
+- passport numbers
 
-      
-## France social security number (INSEE) or equivalent identification
-This sensitive information type entity is included in the EU Social Security Number and Equivalent ID sensitive information type. It's available as a stand-alone sensitive information type entity.
+#### Keywords_france_eu_passport_number
+
+- numéro de passeport
+- passeport n °
+- passeport non
+- passeport #
+- passeport#
+- passeportnon
+- passeportn °
+- passeport français
+- passeport livre
+- passeport carte
+- numéro passeport
+- passeport n°
+- n° du passeport
+- n° passeport
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
+
+## France social security number (INSEE)
 
 ### Format
 
@@ -6840,61 +6724,62 @@ Yes
 
 ### Definition
 
-A DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_french_insee or Func_fr_insee finds content that matches the pattern.
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_french_insee` finds content that matches the pattern.
 - A keyword from Keyword_fr_insee is found.
 - The checksum passes.
 
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_french_insee or Func_fr_insee finds content that matches the pattern.
-- No keyword from Keyword_fr_insee is found.
 - The checksum passes.
 
 ```xml
-<!-- France INSEE -->
-<Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="85">
-  <Pattern confidenceLevel="95">
+    <!-- France INSEE -->
+    <Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_insee" />
-        <Match idRef="Func_fr_insee" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_fr_insee" />
-        </Any>
-  </Pattern>
-  <Pattern confidenceLevel="85">
-        <IdMatch idRef="Func_french_insee" />
-        <Match idRef="Func_fr_insee" />
         <Any minMatches="0" maxMatches="0">
           <Match idRef="Keyword_fr_insee" />
         </Any>
-  </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_french_insee" />
+        <Match idRef="Keyword_fr_insee" />
+      </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
 #### Keyword_fr_insee
 
+- code sécu
+- d'identité nationale
 - insee
-- securité sociale
-- securite sociale
-- national id
-- national identification
-- numéro d'identité
-- no d'identité
-- no. d'identité
-- numero d'identite
-- no d'identite
-- no. d'identite
-- social security number
-- social security code
-- social insurance number
-- le numéro d'identification nationale
-- d'identité nationale
-- numéro de sécurité sociale
-- le code de la sécurité sociale
-- numéro d'assurance sociale
-- numéro de sécu
-- code sécu 
+- fssn#
+- le numéro d'identification nationale
+- le code de la sécurité sociale
+- national id
+- national identification
+- no d'identité
+- no. d'identité
+- numéro d'assurance
+- numéro d'identité
+- numero d'identite
+- numéro de sécu
+- numéro de sécurité sociale
+- no d'identite
+- no. d'identite
+- ssn
+- ssn#
+- sécurité sociale
+- securité sociale
+- securite sociale
+- socialsecuritynumber
+- social security number
+- social security code
+- social insurance number
+
 
 ## France tax identification number
 
@@ -8311,6 +8196,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Útlevelek száma
 - útlevél szám
 
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Hungary social security number (TAJ)
 
@@ -8818,11 +8708,11 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
 - The regular expression Regex_ipv6_address finds content that matches the pattern.
 - No keyword from Keyword_ipaddress is found.
 
-For IPv4, a DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+For IPv4, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_ipv4_address finds content that matches the pattern.
 - A keyword from Keyword_ipaddress is found.
 
-For IPv6, a DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+For IPv6, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_ipv6_address finds content that matches the pattern.
 - No keyword from Keyword_ipaddress is found.
 
@@ -9333,22 +9223,144 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_italy_drivers_license_number finds content that matches the pattern.
-- A keyword from Keyword_italy_drivers_license_number is found.
+- The regular expression `Regex_italy_drivers_license_number` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keyword_italy_drivers_license_number` is found.
 
 ```xml
-<!-- Italy Driver's license Number -->
-<Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="75">
+    <!-- Italy Driver's license Number -->
+    <Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_italy_drivers_license_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_italy_drivers_license_number" />
-        </Any>
-    </Pattern>
-</Entity>
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keyword_italy_drivers_license_number" />
+          </Any>
+        </Pattern>
+    </Entity>
 ```
 
 ### Keywords
+
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
 
 #### Keyword_italy_drivers_license_number
 
@@ -9357,6 +9369,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - patente guida
 - patenti di guida
 - patenti guida
+
 
 ## Italy fiscal code
 This sensitive information type is only available for use in:
@@ -12573,11 +12586,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-14 digits containing 2 forward slashes
+14 digits containing two forward slashes
   
 ### Pattern
 
-14 digits and 2 forward slashes:
+14 digits and two forward slashes:
   
 - five digits 
 - a forward slash
@@ -12854,28 +12867,75 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_polish_passport_number finds content that matches the pattern.
-- A keyword from Keyword_polish_national_id_passport_number is found.
+- The function `Func_polish_passport_number_v2` finds content that matches the pattern.
+- The checksum passes.
+- A keyword from `Keywords_eu_passport_number` or `Keyword_polish_national_passport_number` is found.
+- A keyword from `Keywords_eu_passport_date` is found.
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_polish_passport_number_v2` finds content that matches the pattern.
+- The checksum passes.
+- A keyword from `Keywords_eu_passport_number` or `Keyword_polish_national_passport_number` is found.
+
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_polish_passport_number_v2` finds content that matches the pattern.
 - The checksum passes.
 
 ```xml
-<!-- Poland Passport Number -->
-<Entity id="03937FB5-D2B6-4487-B61F-0F8BFF7C3517" patternsProximity="300" recommendedConfidence="85">
-      <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_polish_passport_number" />
-          <Match idRef="Keyword_polish_national_id_passport_number" />
-      </Pattern>
-</Entity>
-</Version>
+      <!-- Poland Passport Number -->
+      <Entity id="03937FB5-D2B6-4487-B61F-0F8BFF7C3517" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_polish_passport_number_v2" />
+          <Match idRef="Keywords_eu_passport_date" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_polish_national_passport_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_polish_passport_number_v2" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_polish_national_passport_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_polish_passport_number_v2" />
+        </Pattern>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keyword_poland_national_id_passport_number
+#### Keywords_eu_passport_number
 
-- Numer paszportu
-- Nr. Paszportu
-- Paszport
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+#### Keyword_polish_national_passport_number
+
+- numer paszportu
+- numery paszportów
+- numery paszportowe
+- nr paszportu
+- nr. paszportu
+- nr paszportów
+- n° passeport
+- passeport n°
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
 
 ## Poland REGON number
 This sensitive information type is only available for use in:
@@ -15163,7 +15223,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Spain social security number (SSN)
 
-This sensitive information type entity is included in the EU Social Security Number or Equivalent ID sensitive information type. It's  available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -15187,19 +15246,35 @@ Yes
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_spanish_social_security_number finds content that matches the pattern.
 - The checksum passes.
+- - A keyword from  `Keywords_spain_eu_ssn_or_equivalent` is found. 
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_spanish_social_security_number finds content that matches the pattern.
+- The checksum passes.
 
 ```xml
-<!-- Spain SSN -->
-<Entity id="5df987c0-8eae-4bce-ace7-b316347f3070" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
-        <IdMatch idRef="Func_spanish_social_security_number" />
-    </Pattern>
-</Entity>
+    <!-- Spain SSN -->
+    <Entity id="5df987c0-8eae-4bce-ace7-b316347f3070" patternsProximity="300" recommendedConfidence="85" relaxProximity="true" >
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spanish_social_security_number" />
+          <Match idRef="Keywords_spain_eu_ssn_or_equivalent" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spanish_social_security_number" />
+        </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
-None
+#### Keywords_spain_eu_passport_number
+
+- ssn
+- ssn#
+- socialsecurityno
+- social security no
+- social security number
+- número de la seguridad social
 
 ## Spain tax identification number
 This sensitive information type is only available for use in:
@@ -15628,7 +15703,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - skatteidentifikationsnummer
    
 ## Sweden passport number
-This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -15644,120 +15718,82 @@ No
 
 ### Definition
 
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- the regular expression Regex_sweden_passport_number finds content that matches the pattern.
+- a keyword from `Keywords_eu_passport_number` or `Keyword_sweden_passport` is found.
+- the regular expression `Regex_sweden_eu_passport_date` finds a date in the format DD MMM/MMM YY (01 JAN/JAN 12) or a keyword from `Keywords_eu_passport_date` is found.
+
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - the regular expression Regex_sweden_passport_number finds content that matches the pattern.
-- one of the following is true:
-    - a keyword from Keyword_passport is found.
-    - a keyword from Keyword_sweden_passport is found.
+- a keyword from `Keywords_eu_passport_number` or `Keyword_sweden_passport` is found.
+
 
 ```xml
-<!-- Sweden Passport Number -->
-<Entity id="ba4e7456-55a9-4d89-9140-c33673553526" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="75">
-        <IdMatch idRef="Regex_sweden_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_sweden_passport" />
-        </Any>
-    </Pattern>
-</Entity>
+    <!-- Sweden Passport Number -->
+    <Entity id="ba4e7456-55a9-4d89-9140-c33673553526" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_sweden_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_sweden_passport" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_sweden_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_sweden_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_sweden_passport" />
+          </Any>
+      </Pattern>
+    </Entity>
 ```
 
 ### Keywords
    
+#### Keywords_eu_passport_number
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keyword_sweden_passport
 
-- visa requirements 
-- Alien Registration Card 
-- Schengen visas 
-- Schengen visa 
-- Visa Processing 
-- Visa Type 
-- Single Entry 
-- Multiple Entry 
-- G3 Processing Fees 
+- alien registration card
+- g3 processing fees
+- multiple entry
+- Numéro de passeport
+- passeport n °
+- passeport non
+- passeport #
+- passeport#
+- passeportnon
+- passeportn °
+- passnummer
+- pass nr
+- schengen visa
+- schengen visas
+- single entry
+- sverige pass
+- visa requirements
+- visa processing
+- visa type
 
-#### Keyword_passport
+#### Keywords_eu_passport_date
 
-- Passport Number 
-- Passport No 
-- Passport # 
-- Passport# 
-- PassportID 
-- Passportno 
-- passportnumber 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
-- Numéro de passeport 
-- Passeport n ° 
-- Passeport Non 
-- Passeport # 
-- Passeport# 
-- PasseportNon 
-- Passeportn ° 
+- date of issue
+- date of expiry
 
-## Sweden social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-12 digits without spaces and delimiters
-  
-### Pattern
-
-12 digits:
-  
-- eight digits that correspond to the birth date (YYYYMMDD) 
-- three digits that correspond to a serial number where: 
-  - the last digit in the serial number indicates gender by the assignment of an odd number for male and an even number for female
-  - Before 1990, the assignment of a serial number corresponded to the county where the bearer of the number was born. Or (if born before 1947) where they had been living, according to tax records, on January 1, 1947, with a special code (usually 9 as the seventh digit) for immigrants.
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_sweden_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_sweden_eu_ssn_or_equivalent
-
-- personal id number
-- identification number
-- personal id no
-- identity no
-- identification no
-- personal identification no
-- personnummer id
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer#
-- identifikationsnumret#
 
 ## Sweden tax identification number
 This sensitive information type is only available for use in:
@@ -15924,11 +15960,11 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-13 digit number
+13-digit number
 
 ### Pattern
 
-13 digit number:
+13-digit number:
 
 - three digits - 756
 - an optional dot
@@ -16096,7 +16132,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
-## Taiwan resident certificate (ARC/TARC) number
+## Taiwan-resident certificate (ARC/TARC) number
 
 ### Format
 
@@ -16239,7 +16275,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Vatandaşlık no
 
 ## U.K. driver's license number
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -16261,39 +16296,150 @@ Yes
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_uk_drivers_license finds content that matches the pattern.
-- A keyword from Keyword_uk_drivers_license is found.
+- The function `Func_uk_drivers_license` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number` is found.
+- The checksum passes.
+
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_uk_drivers_license` finds content that matches the pattern.
 - The checksum passes.
 
 ```xml
-<!-- U.K. Driver's License Number -->
-<Entity id="f93de4be-d94c-40df-a8be-461738047551" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_uk_drivers_license" />
-        <Match idRef="Keyword_uk_drivers_license" />
-    </Pattern>
-</Entity>
+    <!-- U.K. Driver's License Number -->
+    <Entity id="f93de4be-d94c-40df-a8be-461738047551" patternsProximity="300" recommendedConfidence="75" relaxProximity="true" >
+      <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_uk_drivers_license" />
+          <Match idRef="Keywords_eu_driver's_license_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_uk_drivers_license" />
+        </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
-#### Keyword_uk_drivers_license
+#### Keywords_eu_driver's_license_number
 
-- DVLA 
-- light vans 
-- quadbikes 
-- motor cars 
-- 125cc 
-- sidecar 
-- tricycles 
-- motorcycles 
-- photocard licence 
-- learner drivers 
-- licence holder 
-- licence holders 
-- driving licences 
-- driving licence 
-- dual control car 
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
    
 ## U.K. electoral roll number
 
@@ -16869,7 +17015,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - The function Func_randomized_formatted_ssn finds content that matches the pattern.
 - A keyword from Keyword_ssn is found.
 
-A DLP policy is 55% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_randomized_unformatted_ssn finds content that matches the pattern.
 - A keyword from Keyword_ssn is found.
 
@@ -16914,7 +17060,6 @@ A DLP policy is 55% confident that it's detected this type of sensitive informat
 - SSID
    
 ## U.S. / U.K. passport number
-The U.K. passport number sensitive information type entity is available in the EU Passport Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -16930,41 +17075,56 @@ No
 
 ### Definition
 
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_usa_uk_passport finds content that matches the pattern.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_uk_eu_passport_number` is found.
+- A keyword from `Keywords_eu_passport_date` is found
+
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_usa_uk_passport finds content that matches the pattern.
-- A keyword from Keyword_passport is found.
+- A keyword from `Keywords_eu_passport_number` or `Keywords_uk_eu_passport_number` is found.
 
 ```xml
-<Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_usa_uk_passport" />
-        <Match idRef="Keyword_passport" />
-    </Pattern>
-</Entity>
+    <!-- U.S. / U.K. Passport Number -->
+    <Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
+       <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_usa_uk_passport" />
+          <Match idRef="Keywords_eu_passport_date" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_uk_eu_passport_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_usa_uk_passport" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_uk_eu_passport_number" />
+          </Any>
+        </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
-#### Keyword_passport
+#### Keywords_eu_passport_number
 
-- Passport Number 
-- Passport No 
-- Passport # 
-- Passport# 
-- PassportID 
-- Passportno 
-- passportnumber 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
-- Numéro de passeport 
-- Passeport n ° 
-- Passeport Non 
-- Passeport # 
-- Passeport# 
-- PasseportNon 
-- Passeportn ° 
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+#### Keywords_uk_eu_passport_number
+
+- british passport 
+- uk passport 
+
 
 ## Ukraine passport domestic
 This sensitive information type is only available for use in:

@@ -33,11 +33,11 @@ If you want help getting Microsoft 365 set up, [FastTrack](https://fasttrack.mic
 - Find alternative ways [people in your organization can migrate their own email, contacts, and calendars](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 ## Migrate files and folders
-- [Migrate to SharePoint Online and OneDrive](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online). (Administrator)
-- [SharePoint Server hybrid configuration roadmaps](https://docs.microsoft.com/SharePoint/hybrid/configuration-roadmaps). (Administrator)
+- [Migrate to SharePoint Online and OneDrive](/sharepointmigration/migrate-to-sharepoint-online). (Administrator)
+- [SharePoint Server hybrid configuration roadmaps](/SharePoint/hybrid/configuration-roadmaps). (Administrator)
 
 ## Migrate Skype for Business users
-- [Migrate to Skype for Business Online](https://technet.microsoft.com/library/jj204969.aspx). (Administrator)
+- [Migrate to Skype for Business Online](/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). (Administrator)
 - Download the [Skype for Business meeting update tool](https://www.microsoft.com/download/details.aspx?id=51659) and [run it on each workstation](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Administrator and/or end user)
   
 ## Need to talk to Support?

@@ -37,9 +37,9 @@ But if your organization needs to retain mailbox content for former employees, y
 
 ## Inactive mailboxes and Microsoft 365 retention policies
 
-In addition to Litigation Hold, using the new Microsoft 365 retention policy feature in the Security & Compliance Center is another way to make a mailbox inactive. To use a retention policy to make an inactive mailbox:
+In addition to Litigation Hold, using the new Microsoft 365 retention policy feature in the Microsoft 365 compliance center is another way to make a mailbox inactive. To use a retention policy to make an inactive mailbox:
 
-- It has to be configured to retain content or retain and then delete content. If a retention policy is configured to only delete content, a mailbox that the policy is applied to won't become inactive when the mailbox is deleted.
+- It has to be configured to retain content or retain and then delete content. If a retention policy is configured to only delete content, a mailbox that the policy is applied to won't become inactive when the user account is deleted.
 
 - It has to be applied to Exchange mailboxes or Skype for Business locations (because Skype-related content is stored in the user's mailbox).
 
@@ -66,7 +66,7 @@ You might consider creating a Microsoft 365 retention policy specifically for in
 
 If a hold that's associated with an eDiscovery case in the Security & Compliance Center is placed on a mailbox and then the mailbox or the user's account is deleted, the mailbox becomes an inactive mailbox. However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. Also, you can't create a time-based eDiscovery hold. That's means that content in an inactive mailbox is retained forever or until the hold is removed and the inactive mailbox is deleted. Therefore, we recommend using a Litigation Hold or a retention policy for inactive mailboxes.
 
-For more information about eDiscovery cases and holds, see [eDiscovery cases](ediscovery-cases.md).
+For more information about eDiscovery cases and holds, see [eDiscovery cases](./get-started-core-ediscovery.md).
 
 ## Inactive mailboxes and labels
 
@@ -90,7 +90,7 @@ Conversely, any archive policies (which are retention tags configured with a **M
 
 ## Creating an inactive mailbox
 
-To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a Litigation Hold or Microsoft 365 retention policy can be applied to the mailbox before it's deleted. After the mailbox is deleted, any Exchange Online license associated with it will be available to assign to a new user.
+To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a Litigation Hold or Microsoft 365 retention policy can be applied to the mailbox before it's deleted. After the user account is deleted, any Exchange Online license associated with the user account will be available to assign to a new user.
 
 The following table summarizes the process of making an inactive mailbox for different retention scenarios. For more information, see [Manage inactive mailboxes](create-and-manage-inactive-mailboxes.md).
 
