@@ -77,14 +77,20 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
 | `InitiatingProcessCommandLine` | string | Command line used to run the process that initiated the event |
 | `InitiatingProcessCreationTime` | datetime | Date and time when the process that initiated the event was started |
-| `InitiatingProcessParentId` | int | Process ID (PID) of the parent process that spawned the process responsible for the event |
-| `InitiatingProcessParentFileName` | string | Name of the parent process that spawned the process responsible for the event |
-| `InitiatingProcessParentCreationTime` | datetime | Date and time when the parent of the process responsible for the event was started |
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountUpn` | string | User principal name (UPN) of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountObjectId` | string | Azure AD object ID of the user account that ran the process responsible for the event |
+| `InitiatingProcessVersionInfoCompanyName` | string | Company name from the version information of the process (image file) responsible for the event |
+| `InitiatingProcessVersionInfoProductName` | string | Product name from the version information of the process (image file) responsible for the event |
+| `InitiatingProcessVersionInfoProductVersion` | string | Product version from the version information of the process (image file) responsible for the event |
+|` InitiatingProcessVersionInfoInternalFileName` | string | Internal file name from the version information of the process (image file) responsible for the event |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | Original file name from the version information of the process (image file) responsible for the event |
+| `InitiatingProcessVersionInfoFileDescription` | string | Description from the version information of the process (image file) responsible for the event |
+| `InitiatingProcessParentId` | int | Process ID (PID) of the parent process that spawned the process responsible for the event |
+| `InitiatingProcessParentFileName` | string | Name of the parent process that spawned the process responsible for the event |
+| `InitiatingProcessParentCreationTime` | datetime | Date and time when the parent of the process responsible for the event was started |
 | `InitiatingProcessLogonId` | string | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
