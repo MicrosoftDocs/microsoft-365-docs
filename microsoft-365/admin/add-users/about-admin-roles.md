@@ -32,9 +32,9 @@ The Microsoft 365 admin center lets you manage Azure AD roles and Microsoft Intu
 
 ## Before you begin
 
-Looking for the full list of detailed Azure AD role descriptions you can manage in the Microsoft 365 admin center? Check out Administrator role permissions in Azure Active Directory. [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Looking for the full list of detailed Azure AD role descriptions you can manage in the Microsoft 365 admin center? Check out Administrator role permissions in Azure Active Directory. [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Looking for the full list of detailed Intune role descriptions you can manage in the Microsoft 365 admin center?  Check out [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+Looking for the full list of detailed Intune role descriptions you can manage in the Microsoft 365 admin center?  Check out [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
@@ -62,7 +62,7 @@ In the Microsoft 365 admin center, you can go to **Roles**, and then select any 
 
 ::: moniker-end
 
-You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **Show all by Category**. (For detailed information, including the cmdlets associated with a role, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
+You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **Show all by Category**. (For detailed information, including the cmdlets associated with a role, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
 
 |Admin role     |Who should be assigned this role?  |
 |---------|---------|
@@ -87,7 +87,7 @@ A partner can assign these roles:
 
 - **Helpdesk Agent** Privileges equivalent to a helpdesk admin.
 
-Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../misc/add-partner.md).
   
 ## Related articles
 

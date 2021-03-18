@@ -179,7 +179,7 @@ There is no provision to set time zone for staff in Bookings. Staff time zone, a
 
 ### Can email notifications be sent as the tenant domain name?
 
-The email addresses are controlled and managed at the Microsoft 365 settings level and depend on the domain configuration settings there. More information can be found [here](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain).
+The email addresses are controlled and managed at the Microsoft 365 settings level and depend on the domain configuration settings there. More information can be found [here](/powershell/module/exchange/get-accepteddomain).
 
 ### Is the ability to send SMS messages dependent on a different service or specific configuration?
 
@@ -213,7 +213,7 @@ Recording Time Off within the Bookings Web app will always trigger a notificatio
 
 ### Can Bookings calendars be cloned or duplicated, and can they be templatized for easy scaling?
 
-The process would be to use the Graph API to get mailbox details, and then use those details to create a new mailbox. API documentation is [here](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+The process would be to use the Graph API to get mailbox details, and then use those details to create a new mailbox. API documentation is [here](/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### What reporting is available in Bookings?
 
@@ -355,19 +355,19 @@ If you still see this error after an extended period of time or you are seeing i
 
   - [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md)
 
-  - [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
+  - [Add users individually or in bulk](../admin/add-users/add-users.md?view=o365-worldwide.)
 
   - [Add staff to Bookings](add-staff.md)
 
-  - [API components to automate after template has been defined](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
+  - [API components to automate after template has been defined](/graph/api/bookingbusiness-post-bookingbusinesses)
 
   - [URL to Bookings Calendar for Display](https://outlook.office.com/bookings/calendar)
 
-  - [Bookings compliance policies](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
+  - [Bookings compliance policies](/compliance/regulatory/gdpr-dsr-Office365?view=o365-worldwide#bookings)
 
   - [Customize and publish your booking page](customize-booking-page.md)
 
-  - [Tenant Mailbox configuration](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
+  - [Tenant Mailbox configuration](/powershell/module/exchange/get-accepteddomain)
 
   - [Group Bookings](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 
