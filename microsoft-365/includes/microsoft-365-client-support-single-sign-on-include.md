@@ -8,6 +8,7 @@
 |EDGE|✔|Planned|N/A|✔|N/A|
 |EXCEL|✔|✔|✔|✔|✔|
 |KAIZALA|✔|Planned|N/A|N/A|N/A|
+|MICROSOFT ROOMS|Planned|Planned|N/A|N/A|N/A|
 |OFFICE LENS|✔|✔|N/A|N/A|N/A|
 |OFFICE MOBILE|✔|✔|N/A|N/A|N/A|
 |OFFICE.COM|N/A|N/A|N/A|N/A|✔|
