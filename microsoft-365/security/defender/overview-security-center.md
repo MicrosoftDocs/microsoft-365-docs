@@ -171,7 +171,7 @@ Keep exploring the features and capabilities in the Microsoft 365 security cente
 
 - [Manage incidents and alerts](manage-incidents.md)
 - [Track and respond to emerging threats with threat analytics](threat-analytics.md)
-- [The Action center](./mtp-action-center.md)
+- [The Action center](m365d-action-center.md)
 - [Hunt for threats across devices, emails, apps, and identities](./advanced-hunting-query-emails-devices.md)
 - [Custom detection rules](./custom-detection-rules.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
