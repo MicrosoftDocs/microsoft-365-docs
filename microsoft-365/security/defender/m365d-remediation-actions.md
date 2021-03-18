@@ -77,6 +77,6 @@ In addition to remediation actions that follow automated investigations, your se
 
 ## Next steps
 
-- [Visit the Action center](mtp-action-center.md)
+- [Visit the Action center](m365d-action-center.md)
 - [View and manage remediation actions](mtp-autoir-actions.md)
 - [Handle false positives/negatives in automated investigation and response capabilities](m365d-autoir-report-false-positives-negatives.md)
