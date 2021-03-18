@@ -119,7 +119,7 @@ In this phase, you'll be guided to:
 ## Enable Microsoft 365 trial subscription
 
 >[!NOTE]
->Signing up for a trial gives you 25 user licenses to use for a month. See [Try or Buy an M365 subscription](../../commerce/try-or-buy-microsoft-365.md#try-or-buy-a-microsoft-365-subscription-1) for details.
+>Signing up for a trial gives you 25 user licenses to use for a month. See [Try or Buy an M365 subscription](../../commerce/try-or-buy-microsoft-365.md) for details.
 
 1. From [Microsoft 365 Admin Center](https://admin.microsoft.com/), click **Billing** and then navigate to **Purchase services**.
 
