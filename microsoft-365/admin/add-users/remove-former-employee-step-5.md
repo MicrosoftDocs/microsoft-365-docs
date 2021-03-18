@@ -1,31 +1,32 @@
 ---
-title: "Get access to and back up a former user's data"
+title: "Step 5 - Access and back up a former user's data"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-- M365-subscription-management 
+- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- TRN_M365B
+- OKR_SMB_Videos
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
-description: "Learn how to preserve an employee's files and emails when the person leaves your organization."
+description: "Follow this checklist to remove an employee from Microsoft 365 and secure data. "
 ---
 
-# Get access to and back up a former user's data
+# Step 5 - Access and back up a former user's data
 
 When an employee leaves your organization, you probably want to access their data (documents and emails) and either review it, back it up, or give it to a new employee.
   
@@ -34,8 +35,6 @@ When an employee leaves your organization, you probably want to access their dat
 If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user's OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted. 
 
 To preserve a former user's OneDrive files, first give yourself access to their OneDrive, and then move the files you want to keep.
-
-::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
 
@@ -49,67 +48,13 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 > You can move or copy up to 500 MB of files and folders at a time.<br/>
 > When you move or copy documents that have version history, only the latest version is moved.  
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
-
-2. Select a user.
-
-3. In the right pane, expand **OneDrive Settings**, and then next to **Access**, select **Access files**.
-
-4. Select the link to open the file location. Download the files to your computer, or select **Move to** or **Copy to** to move or copy them to your own OneDrive or to a shared library. 
-
-> [!NOTE]
-> You can move or copy up to 500 MB of files and folders at a time.<br/>
-> When you move or copy documents that have version history, only the latest version is moved.  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
-
-2. Select a user.
-
-3. In the right pane, expand **OneDrive Settings**, and then next to **Access**, select **Access files**.
-
-4. Select the link to open the file location. Download the files to your computer, or select **Move to** or **Copy to** to move or copy them to your own OneDrive or to a shared library.  
-
-> [!NOTE]
-> You can move or copy up to 500 MB of files and folders at a time.<br/>
-> When you move or copy documents that have version history, only the latest version is moved.  
-
-::: moniker-end
-
 ## Revoke admin access to a user's OneDrive
 
 As global admin, you can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it.
 
-::: moniker range="o365-worldwide"
-
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin. 
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin.
 
     If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a> as a global admin or SharePoint admin.
-
-    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a> as a global admin or SharePoint admin.
-
-    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
-
-::: moniker-end
 
 2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
 
@@ -150,7 +95,7 @@ To save the email messages, calendar, tasks, and contacts of the former employee
 6. Select the account you want to export by selecting the name or email address, such as Mailbox - Anne Weiler or anne@contoso.com. If you want to export everything in your account, including mail, calendar, contacts, tasks, and notes, make sure the **Include subfolders** check box is selected. 
 
     > [!NOTE]
-    > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps. 
+    > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps.
   
     ![Export Outlook Data File dialog box with top folder selected and Include subfolders checked](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
@@ -176,8 +121,8 @@ See how to [Export or backup email, contacts, and calendar to an Outlook .pst fi
 
   > [!NOTE]
   > By default, your email is available offline for a period of 12 months. If required, see how to [increase the data available offline](/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
- 
-## Give another user access to a former user's email 
+
+## Give another user access to a former user's email
 
 To give access to the email messages, calendar, tasks, and contacts of the former employee to another employee, import the information to another employee's Outlook inbox.
 

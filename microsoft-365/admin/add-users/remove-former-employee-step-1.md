@@ -1,0 +1,43 @@
+---
+title: "Step 1 - Save the contents of a former employee's mailbox"
+f1.keywords:
+- NOCSH
+ms.author: kwekua
+author: kwekua
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: 
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+- SPO_Content
+ms.custom:
+- MSStore_Link
+- TRN_M365B
+- OKR_SMB_Videos
+- AdminSurgePortfolio
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+description: "Follow this checklist to remove an employee from Microsoft 365 and secure data. "
+---
+
+# Step 1 - Save the contents of a former employee's mailbox
+
+There are two ways you can save the contents of the former employee's mailbox:
+  
+1. Add the former employee's email address to your version of Outlook 2013 or 2016, and then export the data to a .pst file. You can import the data to another email account as needed. To learn how to do this, see [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
+
+    OR
+
+2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
+
+    After you convert the mailbox to an "inactive mailbox," administrators, compliance officers, or records managers can use In-Place eDiscovery tools in Exchange Online to access and search the contents.
+
+    Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
+
+    To learn how to place a hold on a mailbox, see [Manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
