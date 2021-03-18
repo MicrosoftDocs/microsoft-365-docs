@@ -23,26 +23,32 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow this checklist to remove an employee from Microsoft 365 and secure data. "
+description: "Follow the steps in this solution to remove an employee from Microsoft 365 and secure data. "
 ---
 
 # Remove or Delete a former employee
 
-Watch a short video about removing an employee. <br><br>
+A question we often get is, "What should I do to protect data when an employee leaves the organization?" This article explains how to block access to Microsoft 365 and the steps you should take to secure your data.
+  
+> [!NOTE]
+> If you are a global administrator you can delete the employee, forward their email, choose what to do with their OneDrive content using the new guided experience. For more information, see [Global admin: Delete a user](remove-former-employee.md). However, we recommend completing all of the additional steps listed here to ensure the employee doesn't have access to your company's data.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
+## Before you begin
+
+You need to be a global administrator to initiate sign-out.
+
+## Watch: Delete a user
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-To prevent an employee from logging in:
+## Prevent an employee from logging in
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the box next to the user's name, and then select **Reset password**.
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
 4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
-
-> [!NOTE]
-> You need to be a global administrator to initiate sign-out.
 
 Within an hour - or after they leave the current Microsoft 365 page they are on - they're prompted to sign in again. An access token is good for an hour, so the timeline depends on how much time is left on that token, and whether they navigate out of their current webpage.
   
@@ -52,15 +58,8 @@ Within an hour - or after they leave the current Microsoft 365 page they are on 
 To use PowerShell to sign out a user immediately, see [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) cmdlet.
   
 For more information about how long it takes to get someone out of email, see [What you need to know about terminating an employee's email session](#what-you-need-to-know-about-terminating-an-employees-email-session).
-
-## Overview of all the steps to remove an employee and secure data
-
-A question we often get is, "What should I do to protect data when an employee leaves the organization?" This article explains how to block access to Microsoft 365 and the steps you should take to secure your data.
   
-> [!NOTE]
-> If you are a global administrator you can delete the employee, forward their email, choose what to do with their OneDrive content using the new guided experience. For more information, see [Global admin: Delete a user](remove-former-employee.md). However, we recommend completing all of the additional steps listed here to ensure the employee doesn't have access to your company's data. 
-  
-Here's a quick overview. Each step is explained in detail in this article.
+This solution takes you through the process of removing a former employee. Each step is explained in detail in the articles in this solution. Although we've numbered the steps in this solution, you don't have to complete the solution using the exact order, but we do recommend doing the steps this way.
   
 |||
 |:-----|:-----|

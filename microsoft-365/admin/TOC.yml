@@ -119,6 +119,24 @@
              href: add-users/create-and-use-a-template-to-add-users.md
            - name: Upgrade users to the latest apps 
              href: setup/upgrade-users-to-latest-office-client.md
+        - name: Remove a former employee 
+          items:
+           - name: Overview
+             href: remove-former-employee-overview.md
+           - name: Step 1. Save the contents of a former employee's mailbox
+             href: remove-former-employee-step-1.md
+           - name: Step 2. Forward a former employee's email to another employee or convert to a shared mailbox
+             href: remove-former-employee-step-2.md
+           - name: Step 3. Wipe and block a former employee's mobile device
+             href: remove-former-employee-step-3.md
+           - name: Step 4. Block a former employee's access to Microsoft 365 data
+             href: remove-former-employee-step-4.md
+           - name: Step 5. Move the employee's OneDrive content
+             href: remove-former-employee-step-5.md
+           - name: Step 6. Remove and delete the Microsoft 365 license from a former employee
+             href: remove-former-employee-step-6.md
+           - name: Step 7. Delete a former employee's user account
+             href: remove-former-employee-step-7.md             
         - name: Groups 
           items:
            - name: Groups overview

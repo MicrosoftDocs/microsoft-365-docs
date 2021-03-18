@@ -23,14 +23,14 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow this checklist to remove an employee from Microsoft 365 and secure data. "
+description: "Learn how to save the content of a former employee's mailbox."
 ---
 
 # Step 1 - Save the contents of a former employee's mailbox
 
-There are two ways you can save the contents of the former employee's mailbox:
+Once you've blocked a user from being able to log into your organization you can save the contents of their mailbox. There are two ways you can save the contents of the former employee's mailbox.
   
-1. Add the former employee's email address to your version of Outlook 2013 or 2016, and then export the data to a .pst file. You can import the data to another email account as needed. To learn how to do this, see [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
+1. Add the former employee's email address to your version of Outlook web app, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
 
     OR
 
