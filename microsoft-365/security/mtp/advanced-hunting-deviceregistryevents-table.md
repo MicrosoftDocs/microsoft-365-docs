@@ -60,6 +60,12 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
 | `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
+| `InitiatingProcessVersionInfoCompanyName` | string | Company name from the version information of the process (image file) responsible for the event |
+| `InitiatingProcessVersionInfoProductName` | string | Product name from the version information of the process (image file) responsible for the event |
+|` InitiatingProcessVersionInfoProductVersion` | string | Product version from the version information of the process (image file) responsible for the event |
+|` InitiatingProcessVersionInfoInternalFileName` | string | Internal file name from the version information of the process (image file) responsible for the event |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | Original file name from the version information of the process (image file) responsible for the event |
+| `InitiatingProcessVersionInfoFileDescription` | string | Description from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
 | `InitiatingProcessCommandLine` | string | Command line used to run the process that initiated the event |
 | `InitiatingProcessCreationTime` | datetime | Date and time when the process that initiated the event was started |
