@@ -48,7 +48,7 @@ The following table summarizes remediation actions that are currently supported 
 |:---------|:---------|
 |- Collect investigation package <br/>- Isolate device (this action can be undone)<br/>- Offboard machine <br/>- Release code execution <br/>- Release from quarantine <br/>- Request sample <br/>- Restrict code execution (this action can be undone) <br/>- Run antivirus scan <br/>- Stop and quarantine      |- Block URL (time-of-click)<br/>- Soft delete email messages or clusters<br/>- Quarantine email<br/>- Quarantine an email attachment<br/>- Turn off external mail forwarding          |
 
-Remediation actions, whether pending approval or already complete, can be viewed in the [Action Center](./mtp-action-center.md).
+Remediation actions, whether pending approval or already complete, can be viewed in the [Action Center](m365d-action-center.md).
 
 ## Remediation actions that follow automated investigations
 
@@ -77,6 +77,6 @@ In addition to remediation actions that follow automated investigations, your se
 
 ## Next steps
 
-- [Visit the Action center](mtp-action-center.md)
-- [View and manage remediation actions](mtp-autoir-actions.md)
+- [Visit the Action center](m365d-action-center.md)
+- [View and manage remediation actions]( m365d-autoir-actions.md)
 - [Handle false positives/negatives in automated investigation and response capabilities](m365d-autoir-report-false-positives-negatives.md)

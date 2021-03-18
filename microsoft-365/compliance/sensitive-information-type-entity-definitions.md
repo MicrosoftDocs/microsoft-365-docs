@@ -172,12 +172,12 @@ No
 
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_australia_bank_account_number finds content that matches the pattern.
 - A keyword from Keyword_australia_bank_account_number is found.
 - The regular expression Regex_australia_bank_account_number_bsb finds content that matches the pattern.
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_australia_bank_account_number finds content that matches the pattern.
 
 - A keyword from Keyword_australia_bank_account_number is found.
@@ -1416,7 +1416,7 @@ No
 
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_AzureRedisCacheConnectionString finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
@@ -1510,7 +1510,7 @@ No
 
 ### Definition
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression CEP_Regex_AzureServiceBusConnectionString finds content that matches the pattern.
 - The regular expression CEP_CommonExampleKeywords doesn't find content that matches the pattern.
 
@@ -3974,67 +3974,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin no
 - tin#
 
-## Croatia social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-11 digits without spaces and delimiters
-  
-### Pattern
-
-11 digits:
-  
-- 10 digits
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_croatia_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_croatia_eu_ssn_or_equivalent
-
-- personal identification number
-- master citizen number
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- personal id number
-- personalidnumber#
-- oib
-- osobni identifikacijski broj
-
 ## Cyprus drivers license number
 
 ### Format
@@ -4754,66 +4693,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin#
 - unique identification number
 
-## Czech social security number or equivalent identification
-
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-10 digits and a backslash in the specified pattern
-  
-### Pattern
-
-10 digits and a backslash:
-  
-- six digits that correspond to the birth date (YYMMDD): 
-- a backslash
-- three digits that correspond to a serial number that separates persons born on the same date
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_czech_republic_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_czech_republic_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_czech_republic_eu_ssn_or_equivalent` finds content that matches the pattern. 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_czech_republic_eu_ssn_or_equivalent
-
-- birth number
-- national identification number
-- personal identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- personal id number
-- personalidnumber#
-- rč
-- rodné číslo
-- rodne cislo
 
 ## Denmark driver's license number
 
@@ -5170,62 +5049,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - sygesikringsnr
 - sygesikringsnummer
 
-## Denmark social security number or equivalent identification
-This sensitive information type entity is only available the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-10 digits and a hyphen in the specified pattern
-  
-### Pattern
-
-10 digits and a hyphen:
-  
-- six digits that correspond to the birth date (DDMMYY) 
-- a hyphen
-- four digits that correspond to a sequence number
-
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_denmark_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_denmark_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_denmark_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_denmark_eu_ssn_or_equivalent
-
-- personal identification number
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- personal id number
-- personalidnumber#
-- cpr-nummer
-- personnummer
 
 ## Drug Enforcement Agency (DEA) number
 
@@ -6079,7 +5902,7 @@ These entities that are in the EU Social Security Number or equivalent identific
 - [Czech](#czech-personal-identity-number)
 - [Denmark](#denmark-personal-identification-number)
 - [Finland](#finland-national-id)
-- [France](#france-social-security-number-insee-or-equivalent-identification)
+- [France](#france-social-security-number-insee)
 - [Germany](#germany-identity-card-number)
 - [Greece](#greece-national-id-card)
 - [Hungary](#hungary-social-security-number-taj)
@@ -6882,7 +6705,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of expiry
 
 
-## France social security number (INSEE) or equivalent identification
+## France social security number (INSEE)
 
 ### Format
 
@@ -8885,11 +8708,11 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
 - The regular expression Regex_ipv6_address finds content that matches the pattern.
 - No keyword from Keyword_ipaddress is found.
 
-For IPv4, a DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+For IPv4, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_ipv4_address finds content that matches the pattern.
 - A keyword from Keyword_ipaddress is found.
 
-For IPv6, a DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+For IPv6, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_ipv6_address finds content that matches the pattern.
 - No keyword from Keyword_ipaddress is found.
 
@@ -15972,67 +15795,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of expiry
 
 
-## Sweden social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
-
-### Format
-
-12 digits without spaces and delimiters
-  
-### Pattern
-
-12 digits:
-  
-- eight digits that correspond to the birth date (YYYYMMDD) 
-- three digits that correspond to a serial number where: 
-  - the last digit in the serial number indicates gender by the assignment of an odd number for male and an even number for female
-  - Before 1990, the assignment of a serial number corresponded to the county where the bearer of the number was born. Or (if born before 1947) where they had been living, according to tax records, on January 1, 1947, with a special code (usually 9 as the seventh digit) for immigrants.
-- one check digit
-    
-### Checksum
-
-Yes
-  
-### Definition
-
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
-- A keyword from  `Keywords_sweden_eu_ssn_or_equivalent` is found. 
-    
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### Keywords
-
-#### Keywords_sweden_eu_ssn_or_equivalent
-
-- personal id number
-- identification number
-- personal id no
-- identity no
-- identification no
-- personal identification no
-- personnummer id
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer#
-- identifikationsnumret#
-
 ## Sweden tax identification number
 This sensitive information type is only available for use in:
 - data loss prevention policies
@@ -17253,7 +17015,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - The function Func_randomized_formatted_ssn finds content that matches the pattern.
 - A keyword from Keyword_ssn is found.
 
-A DLP policy is 55% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_randomized_unformatted_ssn finds content that matches the pattern.
 - A keyword from Keyword_ssn is found.
 
