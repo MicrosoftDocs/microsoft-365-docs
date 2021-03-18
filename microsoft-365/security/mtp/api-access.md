@@ -42,7 +42,7 @@ In general, you'll need to take the following steps to use the APIs:
 - Use the token to access the Microsoft 365 Defender API
 
 > [!NOTE]
-> API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+> API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Once you've accomplished these steps, you're ready to access the Microsoft 365 Defender API using a particular context.
 
@@ -71,11 +71,11 @@ For more information, see **[Create an app to access Microsoft 365 Defender APIs
 
 ## Partner context
 
-Use this context when you need to provide an app to many users across [multiple tenants](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
+Use this context when you need to provide an app to many users across [multiple tenants](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
 1. Create an Azure Active Directory multi-tenant application.
 2. Assign the desired permission to the application.
-3. Get [admin consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) for the app from each tenant.
+3. Get [admin consent](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) for the app from each tenant.
 4. Get a security token using user credentials based on a customer's tenant ID.
 5. Use the token to access  Microsoft 365 Defender API.
 
@@ -84,6 +84,6 @@ For more information, see **[Create an app with partner access to Microsoft 365 
 ## Related articles
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
-- [OAuth 2.0 authorization for user sign in and API access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
-- [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [OAuth 2.0 authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [Create a 'Hello world' application that accesses the Microsoft 365 APIs](api-hello-world.md)

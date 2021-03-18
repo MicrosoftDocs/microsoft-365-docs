@@ -52,4 +52,4 @@ Of course, sometimes questions are best answered by humans. If our modern self-h
 
 ## Guides and articles
 
-Additionally, if you're looking for comprehensive deployment guides, quick step-by-step procedures, or PowerShell cmdlets, look us up on the web. We update content frequently and try to provide you with the latest information. Check out our articles and guides on the [Microsoft 365 Documentation](https://docs.microsoft.com/microsoft-365/) site.
+Additionally, if you're looking for comprehensive deployment guides, quick step-by-step procedures, or PowerShell cmdlets, look us up on the web. We update content frequently and try to provide you with the latest information. Check out our articles and guides on the [Microsoft 365 Documentation](../../index.yml) site.

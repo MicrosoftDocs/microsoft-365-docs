@@ -39,7 +39,7 @@ On successful import of the file, a success message will be displayed, and the t
 
 ## See also
 
-[Introduction to managed metadata](https://docs.microsoft.com/sharepoint/managed-metadata)
+[Introduction to managed metadata](/sharepoint/managed-metadata)
 
 [Document understanding overview](document-understanding-overview.md)
 
