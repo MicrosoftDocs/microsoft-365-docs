@@ -190,7 +190,7 @@ appSecret = '' # Paste your own app secret here to test, then store it in a safe
 
 url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
 
-resourceAppIdUri = 'https://api.securitycenter.windows.com'
+resourceAppIdUri = 'https://api.security.microsoft.com'
 
 body = {
     'resource' : resourceAppIdUri,
@@ -221,7 +221,7 @@ aadToken = jsonResponse["access_token"]
 1. Run the following command:
 
    ```bash
-   curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
+   curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://api.security.microsoft.com/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
    ```
 
    A successful response will look like this:
