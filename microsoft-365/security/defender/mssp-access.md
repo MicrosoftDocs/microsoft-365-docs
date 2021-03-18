@@ -28,7 +28,7 @@ ms.collection:
 
 **Applies to:**
 
-- [Microsoft 365 Defender](./microsoft-threat-protection.md)
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 To implement a multi-tenant delegated access solution, take the following steps:

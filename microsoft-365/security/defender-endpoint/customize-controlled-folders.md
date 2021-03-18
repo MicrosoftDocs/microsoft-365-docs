@@ -85,7 +85,7 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
     ```
 3. Repeat step 2 until you have added all the folders you want to protect. Folders that are added are visible in the Windows Security app.
 
-   ![Screenshot of a PowerShell window with the cmdlet above entered](../images/cfa-allow-folder-ps.png)
+   ![Screenshot of a PowerShell window with the cmdlet above entered](/microsoft-365/security/defender-endpoint/images/cfa-allow-folder-ps)
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
@@ -115,7 +115,7 @@ An allowed application or service only has write access to a controlled folder a
 
 4. Select **Add an allowed app** and follow the prompts to add apps.
 
-    ![Screenshot of how to add an allowed app button](../images/cfa-allow-app.png)
+    ![Screenshot of how to add an allowed app button](/microsoft-365/security/defender-endpoint/images/cfa-allow-app)
 
 ### Use Group Policy to allow specific apps
 
@@ -144,7 +144,7 @@ An allowed application or service only has write access to a controlled folder a
 
    Continue to use `Add-MpPreference -ControlledFolderAccessAllowedApplications` to add more apps to the list. Apps added using this cmdlet will appear in the Windows Security app.
 
-![Screenshot of a PowerShell window with the above cmdlet entered](../images/cfa-allow-app-ps.png)
+![Screenshot of a PowerShell window with the above cmdlet entered](/microsoft-365/security/defender-endpoint/images/cfa-allow-app-ps)
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.

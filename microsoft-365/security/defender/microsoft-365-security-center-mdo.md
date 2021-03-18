@@ -26,9 +26,9 @@ ms.technology: m365d
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Applies to:**
-- [Microsoft 365 Defender](./microsoft-threat-protection.md)
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft Defender for Office 365](../office-365-security/office-365-atp.md)
+- [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
 
 The improved [Microsoft 365 security center](./overview-security-center.md) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
@@ -45,7 +45,7 @@ This table is a quick reference of Email & Collaboration areas where change has 
 |**Area**  |**Description of change**  |
 |---------|---------|
 | [Email entity page](../defender-365-security/mdo-email-entity-page.md) | This page **unifies** email information that had been scattered across different pages or views in the past. Investigating email for threats and trends is *centralized*. Header information and email preview are accessible through the same email page, along with other useful email-related information. Likewise, the detonation status for malicious file attachments or URLs can be found on a tab of the same page. The Email entity page empowers admins and security operations teams to understand an email threat and its status, fast, and then act quickly determine handling.  |
-| [Investigation](../defender-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | Brings together AIR capabilities in [Defender for Office 365](../office-365-security/office-365-atp.md) and [Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.  | 
+| [Investigation](../defender-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) and [Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.  | 
 | [Alert view](../../compliance/alert-policies.md) | The **View alerts** flyout pane in the Office Security and Compliance center now includes links to the Microsoft 365 security center. Click on the **Open Alert Page** link and the Microsoft 365 security center opens. You can access the **View alerts** page by clicking on any Office 365 alert in the Alerts queue. |
 | [Attack Simulation training](../defender-365-security/attack-simulation-training-insights.md)   | Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.  |
 
@@ -131,7 +131,7 @@ View reports, change your settings, and modify user roles.
 ## Advanced Hunting example for Microsoft Defender for Office 365
 Want to get started searching for email threats using advanced hunting? Try this:
 
-The [Getting Started](../defender-365-security/office-365-atp.md#getting-started) section of the [Microsoft Defender for Office 365 article](../defender-365-security/office-365-atp.md) has logical early configuration chunks that look like this:
+The [Getting Started](/microsoft-365/security/defender-365-security/defender-for-office-365.md#getting-started) section of the [Microsoft Defender for Office 365 article](/microsoft-365/security/defender-365-security/defender-for-office-365) has logical early configuration chunks that look like this:
 
 1. Configure everything with 'anti' in the name.
 - anti-malware
@@ -177,5 +177,5 @@ The data from this query will appear in the results panel below the query itself
 - [The Action center](./m365d-action-center.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Hunt for threats across devices, emails, apps, and identities](./advanced-hunting-query-emails-devices.md)
-- [Custom detection rules](../defender-endpoint/custom-detection-rules)
+- [Custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules)
 - [Create a phishing attack simulation](../defender-365-security/attack-simulation-training.md) and [create a payload for training your people](../defender-365-security/attack-simulation-training-payloads.md)
