@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: Learn how to use the Search Statistics feature to display and compare statistics for multiple Content Searches in Security & Compliance Center.
+description: "Learn how to use the Search Statistics feature to display and compare statistics for multiple Content Searches in Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
 

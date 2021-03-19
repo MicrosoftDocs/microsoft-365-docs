@@ -30,12 +30,12 @@ To create and manage document understanding models, you first need a content cen
 You create a default content center during [setup](set-up-content-understanding.md). But a SharePoint admin can also choose to create additional centers as needed. While a single content center may be fine for environments for which you want a roll-up of all model activity, you may want to have additional centers for multiple departments within your organization, which may have different needs and permission requirements for their models.
 
 > [!NOTE]
-> In a [Microsoft 365 Multi-Geo environment](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo), if you have a single default content center in your central location, you can only provide a roll-up of model activity from within that location. You currently cannot get a roll-up of model activity across farm-boundaries in Multi-Geo environment. 
+> In a [Microsoft 365 Multi-Geo environment](../enterprise/microsoft-365-multi-geo.md), if you have a single default content center in your central location, you can only provide a roll-up of model activity from within that location. You currently cannot get a roll-up of model activity across farm-boundaries in Multi-Geo environment. 
 
 
 ## Create a content center
 
-A SharePoint admin can create a content center site like they would [create any other SharePoint site](https://docs.microsoft.com/sharepoint/create-site-collection) through the admin center site provisioning panel.
+A SharePoint admin can create a content center site like they would [create any other SharePoint site](/sharepoint/create-site-collection) through the admin center site provisioning panel.
 
 To create a new content center:
 
@@ -58,7 +58,7 @@ After you create a content center site, you will see it listed on the **Active s
 
 ### Give access to additional users
  
-After you create the site, you can give additional users access to the site through the standard [SharePoint site permissions model](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).
+After you create the site, you can give additional users access to the site through the standard [SharePoint site permissions model](/sharepoint/modern-experience-sharing-permissions).
 
 ## See Also
 [Create a classifier](create-a-classifier.md)
@@ -71,4 +71,4 @@ After you create the site, you can give additional users access to the site thro
 
 [Create a form processing model](create-a-form-processing-model.md)
 
-[Apply a model](apply-a-model.md)    
+[Apply a model](apply-a-model.md)

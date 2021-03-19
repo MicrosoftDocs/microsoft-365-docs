@@ -45,12 +45,12 @@ Most of the setup steps can be done in the guided setup, but the other options a
 
    - **Add users**. You can add users in any of the three ways:
         - In the [guided setup](set-up.md#add-users-in-the-wizard).
-        - Use directory synchronization to [add users by using Azure AD Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) if you have an on-premises Active directory.
-        - You can also [add users later](add-users-m365b.md) in the admin center.
+        - Use directory synchronization to [add users by using Azure AD Connect](../enterprise/set-up-directory-synchronization.md) if you have an on-premises Active directory.
+        - You can also [add users later](../admin/add-users/add-users.md) in the admin center.
 ## Step 2: Set up security policies and configure devices 
 
   - Use the [guided setup](set-up.md#protect-your-organization) to configure device policies. 
-  - You can also add more or edit them later in the [admin center](view-policies-and-devices.md) and in the [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
+  - You can also add more or edit them later in the [admin center](view-policies-and-devices.md) and in the [Intune portal](/intune/tutorial-walkthrough-intune-portal).
   - The setup wizard will also set up basic threat protection and data loss prevention settings.
   
   In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
@@ -62,20 +62,20 @@ Most of the setup steps can be done in the guided setup, but the other options a
 
 To get started, see [increase threat protection](increase-threat-protection.md) and [set up compliance features](set-up-compliance.md).
 
-See also [top 10 ways to secure your Microsoft 365 Business Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a road-map of best security practices.
+See also [top 10 ways to secure your Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data) for a road-map of best security practices.
 
 ## Step 3: Set up and manage Windows 10 devices
 
 After you complete the guided setup, you will want to protect all the Windows 10 computers in your organization.
   
-- Windows 10 Pro is a [prerequisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business Premium, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+- Windows 10 Pro is a [prerequisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business Premium, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](./upgrade-to-windows-pro-creators-update.md).
 - Follow the steps in [secure Windows 10 PCs](secure-win-10-pcs.md) to set up policies for Windows 10 devices.
 
 When you join a Windows 10 device to Azure AD, the policies you set for Windows 10 computers get applied to it. For more information, see [Set up Windows devices for Microsoft 365 users](set-up-windows-devices.md).
 
 ## Step 4: Install Microsoft 365 Apps for business
 - You can automatically install Office in the Windows devices by using the [setup wizard](set-up.md#deploy-office-365-client-apps).
-- Let users [install Office apps](https://docs.microsoft.com/office365/admin/setup/install-applications) for Windows and devices.
+- Let users [install Office apps](/office365/admin/setup/install-applications) for Windows and devices.
      
 ## Advanced
 - **Use Autopilot to set up new devices**
