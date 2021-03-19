@@ -96,7 +96,7 @@ Additional considerations:
 - Microsoft Cloud Deutschland customers whose SharePoint Online instance is migrated must update SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM to version 16.0.20717.12000 or above. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
 
 > [!NOTE]
-    > In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md#eDiscovery-phase-4-to-the-end-of-phase-9)
+> In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md#eDiscovery-phase-4-to-the-end-of-phase-9).
 
 ## Exchange Online (Phase 5)
 
