@@ -107,7 +107,7 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs)
 
 ### Exchange Online Hybrid configuration
 
-**Applies to:** All customers using an active Exchange Hybrid Configuration with Exchange servers on premises<br>
+**Applies to:** All customers using an active Exchange Hybrid Configuration with Exchange servers on-premises<br>
 **When applied**: Any time before phase 5 starts
 
 | Step(s) | Description | Impact |
