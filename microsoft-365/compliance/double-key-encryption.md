@@ -69,7 +69,7 @@ DKE sensitivity labels are made available to end users through the sensitivity r
 
 **Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, and PowerPoint.
 
-**Online content support**. Documents and files stored online in both Microsoft SharePoint and OneDrive for Business are supported. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the desktop apps on your local computer.
+**Online content support**. Documents and files protected with Double Key Encryption can be stored online in both Microsoft SharePoint and OneDrive for Business. Documents and files must be labeled and protected with DKE by supported applications prior to being uploaded to these locations. You can share encrypted content by email, but you cannot view encrypted documents and files online. Instead, you must view protected content using the supported desktop applications and clients on your local computer.
 
 ## Overview of deploying DKE
 
