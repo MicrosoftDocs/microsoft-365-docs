@@ -72,7 +72,7 @@ Between Phase 2 and phase 3, Partner Portal may not be accessible. During this t
     Question from ckinder
     The following paragraph is not clear
 -->
-**Applies to:** End users whose Azure AD group approval requests weren't approved in last 30 days before migration 
+**Applies to:** End-users whose Azure AD group approval requests weren't approved in the last 30 days before migration 
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
