@@ -217,7 +217,7 @@ Make sure you have completed the [prework for mobile devices](ms-cloud-germany-t
 
 ## Line-of-business apps
 
-In case you have line-of-business apps, make sure you have done the [prework for line-of-business apps](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps)
+In case you have line-of-business apps, make sure you have completed the [prework for line-of-business apps](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps) procedure.
 
 ## Office Services
 
