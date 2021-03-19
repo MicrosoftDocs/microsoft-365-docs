@@ -59,9 +59,9 @@ The following sections contain actions and effects for workloads as they progres
 
 Make sure that you are familiar with the [migration preparation steps that are applying for all customers](ms-cloud-germany-transition-add-pre-work.md#applies-to-everyone).
 
-In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ any time before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#DNS).
+In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ any time before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns).
 
-In case you are using single sign on for Office 365 and Azure in the Microsoft Cloud Deutschland instance, you must prepare and schedule your Azure subscription migration accordingly. Make sure that you understand the [prework for Microsoft Azure](ms-cloud-germany-transition-add-pre-work.md#Microsoft-Azure).
+In case you are using single sign on for Office 365 and Azure in the Microsoft Cloud Deutschland instance, you must prepare and schedule your Azure subscription migration accordingly. Make sure that you understand the [prework for Microsoft Azure](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure).
 
 ## Before Phase 2 starts
 
@@ -96,17 +96,17 @@ Additional considerations:
 - Microsoft Cloud Deutschland customers whose SharePoint Online instance is migrated must update SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM to version 16.0.20717.12000 or above. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
 
 > [!NOTE]
-> In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md#eDiscovery-phase-4-to-the-end-of-phase-9).
+> In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md#ediscovery-phase-4-to-the-end-of-phase-9).
 
 ## Exchange Online (Phase 5)
 
 **Applies to:** All customers using Exchange Online
 
-If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. Apply the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#Exchange-Online-Hybrid-configuration) **before the migration step phase 5 begins**. Exchange Online hybrid customers must run the latest version of the Exchange Hybrid Configuration Wizard (HCW) in "Office 365 Germany" mode to prepare the on-premises configuration for the migration to Office 365 global services.
+If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. Apply the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-configuration) **before the migration step phase 5 begins**. Exchange Online hybrid customers must run the latest version of the Exchange Hybrid Configuration Wizard (HCW) in "Office 365 Germany" mode to prepare the on-premises configuration for the migration to Office 365 global services.
 
 Upon **completion of the migration phase 9** (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global services.
 
-If you want to modify user photos during phase 5, see [Set-UserPhoto](ms-cloud-germany-transition-add-experience.md#Exchange-Online-Set-UserPhoto)
+If you want to modify user photos during phase 5, see [Set-UserPhoto](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -154,7 +154,7 @@ Back-end Exchange Online Protection (EOP) features are copied to the new region 
 
 **Applies to:** All customers using Skype for Business Online
 
-Make sure that you are familiar with the [prework for your Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#Skype-for-Business-Online) procedure.
+Make sure that you are familiar with the [prework for your Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) procedure.
 
 <!--
     Question from ckinder
@@ -178,7 +178,7 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 **Applies to:** All customers using Microsoft Dynamics 365
 
-Make sure that you are familiar with the [prework for your Microsoft Dynamics 365 installation](ms-cloud-germany-transition-add-pre-work.md#Dynamics-365) procedure.
+Make sure that you are familiar with the [prework for your Microsoft Dynamics 365 installation](ms-cloud-germany-transition-add-pre-work.md#dynamics365) procedure.
 
 Customers with Dynamics 365 require additional engagement to migrate the organization's Dynamics organizations independently.
 
@@ -208,7 +208,7 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 Office 365 tenants transitioning to the region "Germany" require all users to close, sign out from Office 365 and back in for all Office desktop applications (Word, Excel, PowerPoint, Outlook, etc.) and OneDrive for Business client after the tenant migration has reached phase 9. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
 
-Make sure you have completed the [prework for mobile devices](ms-cloud-germany-transition-add-pre-work.md#Mobile) procedure.
+Make sure you have completed the [prework for mobile devices](ms-cloud-germany-transition-add-pre-work.md#mobile) procedure.
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -225,7 +225,7 @@ The most recently used (MRU) service in Office is a cutover from the Microsoft C
 
 ## Post migration
 
-Make sure you read the [post migration activities](ms-cloud-germany-transition-add-experience.md#Post-migration) article and execute them accordingly.
+Make sure you read the [post migration activities](ms-cloud-germany-transition-add-experience.md#post-migration) article and execute them accordingly.
 
 ## More information
 
