@@ -147,7 +147,7 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs)
 **Applies to:** Customers using line-of-business (LOB) apps with endpoints provided by Microsoft Cloud Deutschland<br>
 **When applied**: After completion of phase 2 and before end of phase 9
 
-If you're using a third-party service or line-of-business (LOB) apps that are integrated with Office 365, you must resolve any dependencies on endpoints provided by the Microsoft Cloud Deutschland instance. For example if you LOB apps are connecting to `https://graph.microsoft.de/`, you must change the endpoint to `https://graph.microsoft.com/`. The endpoints of the Microsoft Office 365 Global service become available to your tenant after phase 2.
+If you're using a third-party service or line-of-business (LOB) apps that are integrated with Office 365, you must resolve any dependencies on endpoints provided by the Microsoft Cloud Deutschland instance. For example, if your LOB apps are connecting to `https://graph.microsoft.de/`, you must change the endpoint to `https://graph.microsoft.com/`. The endpoints of the Microsoft Office 365 Global service become available to your tenant after phase 2.
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
