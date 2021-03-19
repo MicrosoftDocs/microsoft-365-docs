@@ -518,13 +518,15 @@ To register the DKE service:
 
     In the new client application:
 
-    1. Define the Client ID as **d3590ed6-52b3-4102-aeff-aad2292ab01c**. This value is the Microsoft Office client ID, and enables Office to obtain an access token for your key store.
+    1. Define the Client ID as `d3590ed6-52b3-4102-aeff-aad2292ab01c`. This value is the Microsoft Office client ID, and enables Office to obtain an access token for your key store.
 
     2. Under **Authorized scopes**, select the **user_impersonation** scope.
 
     3. Select **Add application**.
 
     4. Select **Save** at the top to save your changes.
+
+    5. Repeat these steps, but this time, define the client ID as `c00e9d32-3c8d-4a7d-832b-029040e7db99`. This value is the Azure Information Protection unified labeling client ID. 
 
 Your DKE service is now registered. Continue by [creating labels using DKE](#create-sensitivity-labels-using-dke).
 
