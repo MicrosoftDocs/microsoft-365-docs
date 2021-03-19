@@ -29,10 +29,6 @@ Watch this video for an overview of the deployment process.
 <br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
 
->[!Note]
->This video uses the previous names of threat protection products and features, but the concepts are the same. An update to this video is in progress.
->
-
 Use this article as a guide for implementing your threat protection solution.
 
 ## Threat protection in Microsoft 365 E5
