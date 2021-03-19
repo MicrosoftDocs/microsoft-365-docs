@@ -166,7 +166,7 @@ Make sure that you are familiar with the [prework for your Skype for Business On
 | Migration of Skype for Business to Teams. | Existing Skype for Business customers are migrated to Office 365 Global services in Europe and then transitioned to Microsoft Teams in the region "Germany" of Office 365 services. |<ul><li>Users won't be able to sign in to Skype for Business on the migration date. Ten days before migration, we'll post to the Admin center to let you know about when the migration will take place, and again when we begin the migration.</li><li> Policy configuration is migrated. </li><li>Users will be migrated to Teams and will no longer have Skype for Business after migration. </li><li>Users must have the Teams desktop client installed. Installation will happen during the 10 days via policy on the Skype for Business infrastructure, but if this fails, users will still need to download the client or connect with a supported browser. </li><li>Contacts and meetings will be migrated to Teams.</li><li>Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed. </li><li>Contacts and existing meetings will continue to function as Skype for Business meetings. </li></ul>|
 ||||
 
-If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed use the follwoing  code to connect:
+If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed, use the following code to connect:
 
 ```powershell
 Import-Module MicrosoftTeams
