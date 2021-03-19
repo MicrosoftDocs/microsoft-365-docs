@@ -208,7 +208,7 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 Office 365 tenants transitioning to the region "Germany" require all users to close, sign out from Office 365 and back in for all Office desktop applications (Word, Excel, PowerPoint, Outlook, etc.) and OneDrive for Business client after the tenant migration has reached phase 9. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
 
-Make sure, you have done the [prework for mobile devices](ms-cloud-germany-transition-add-pre-work.md#Mobile)
+Make sure you have completed the [prework for mobile devices](ms-cloud-germany-transition-add-pre-work.md#Mobile) procedure.
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
