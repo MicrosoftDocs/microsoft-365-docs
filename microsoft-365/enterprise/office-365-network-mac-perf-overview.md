@@ -144,6 +144,9 @@ The details tab on the office location page shows the specific measurement resul
 > [!div class="mx-imgBorder"]
 > ![Location-specific details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
+## User-submitted report settings
+You can prevent users from sharing reports from the [Microsoft 365 connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md) to the Admin Center at any time in the **Sharing and user-submitted reports** flyout under Settings. You can also block reports from specific users and/or specific locations. If you would like to view submitted reports by certain users above other users, we provide you with the option to prioritize reports. User-submitted reports in the Admin Center have an expiry date of 90 days by default but can be changed to suit your organization’s preferences.
+
 ## CSV Import for LAN subnet office locations
 
 For LAN subnet office identification, you need to add each location in advance. Instead of adding individual office locations in the **Locations** tab you can import them from a CSV file. You may be able to obtain this data from other places you have stored it such as the Call Quality Dashboard or Active Directory Sites and Services
