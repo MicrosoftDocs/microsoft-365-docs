@@ -56,6 +56,7 @@ Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) who are eligible f
 
 ### Roles
 
+
 If you want to view the DLP alert management dashboard or to edit the alert configuration options in a DLP policy, you must be a member of one of these role groups:
 
 - Compliance Administrator
@@ -64,10 +65,21 @@ If you want to view the DLP alert management dashboard or to edit the alert conf
 - Security Operator
 - Security Reader
 
-To access the DLP alert management dashboard, you need the Manage alerts role and either of the following roles:
+To access the DLP alert management dashboard, you need the:
+
+- Manage alerts
+
+and either of these two roles:
 
 - DLP Compliance Management
 - View-Only DLP Compliance Management
+
+To access the Content preview feature and the Matched sensitive content and context features you must be a member of:
+
+- Content Explorer Content Viewer role group
+
+which has the data classification content viewer role pre-assigned.
+
 
 ## DLP alert configuration
 

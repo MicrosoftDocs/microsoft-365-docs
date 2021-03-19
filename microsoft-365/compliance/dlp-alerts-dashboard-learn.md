@@ -67,6 +67,10 @@ Here are some of the events associated with an alert. In the UI, you can choose 
 |user | user who took the action that caused the policy match | all events|
 |hostname | host name of the computer where the DLP policy match occurred | device events|
 |IP address | IP address of the computer where the DLP policy match occurred | device events|
+|sha1 |SHA-1 hash of the file | device events|
+|sha256 | SHA-256 hash of the file | device events|
+|MDATP device ID | endpoint device MDATP ID|
+|file size | size of the file| SharePoint, OneDrive, and device events|
 |file path | the absolute path of the item involved with the DLP policy match | SharePoint, OneDrive, and devices events|
 |email recipients |if an email was the sensitive item that matched the DLP policy, this field includes the recipients of that email| Exchange events|
 |email subject |subject of the email that matched the DLP policy |Exchange events|
@@ -86,6 +90,7 @@ Here are some of the events associated with an alert. In the UI, you can choose 
 |rule matched |name of the matched DLP policy rule |all events|
 |sensitive information types (SIT) detected|SITs that were detected as part of the DLP policy match |all events|
 |actions taken |actions that were taken that caused the DLP policy match| all events|
+|violating action | action on the endpoint device that raised the DLP alert| device events | 
 |user overrode policy |did the user override the policy via a policy tip | all events|
 |use override justification |the text of the reason provided by the user for the override | all events|   
 
