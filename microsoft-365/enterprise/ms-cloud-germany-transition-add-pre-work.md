@@ -85,7 +85,7 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs)
 
 <!-- before phase 4 -->
 
-**Applies to**: Customers using SharePoint 2013 on premises<br>
+**Applies to**: Customers using SharePoint 2013 on-premises<br>
 **When applied**: Any time before phase 4 starts
 
 | Step(s) | Description | Impact |
