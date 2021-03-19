@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -70,4 +69,4 @@ Choosing the right Microsoft 365 subscription is key to getting the most out of 
 
 \*\*\* Unlimited archiving when auto-expansion is turned on.
 
-To compare Microsoft 365 Business Premium with other products, including other Microsoft 365 plans, see [Licensing Microsoft 365 for small and medium-sized businesses](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb).
+To compare Microsoft 365 Business Premium with other products, including other Microsoft 365 plans, see [Licensing Microsoft 365 for small and medium-sized businesses](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb).

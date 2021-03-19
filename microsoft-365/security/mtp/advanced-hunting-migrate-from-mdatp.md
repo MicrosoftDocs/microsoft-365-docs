@@ -59,13 +59,16 @@ The [Microsoft 365 Defender advanced hunting schema](advanced-hunting-schema-tab
 | [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Authentication events on Active Directory and Microsoft online services |
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Queries for Active Directory objects, such as users, groups, devices, and domains |
 
+>[!IMPORTANT]
+> Queries and custom detections which use schema tables that are only available in Microsoft 365 Defender can only be viewed in Microsoft 365 Defender.
+
 ## Map DeviceAlertEvents table
 The `AlertInfo` and `AlertEvidence` tables replace the `DeviceAlertEvents` table in the Microsoft Defender for Endpoint schema. In addition to data about device alerts, these two tables include data about alerts for identities, apps, and emails.
 
 Use the following table to check how `DeviceAlertEvents` columns map to columns in the `AlertInfo` and `AlertEvidence` tables.
 
 >[!TIP]
->In addition to the columns the following table, the `AlertEvidence` table includes many other columns that provide a more holistic picture of alerts from various sources. [See all AlertEvidence columns](advanced-hunting-alertevidence-table.md) 
+>In addition to the columns in the following table, the `AlertEvidence` table includes many other columns that provide a more holistic picture of alerts from various sources. [See all AlertEvidence columns](advanced-hunting-alertevidence-table.md) 
 
 | DeviceAlertEvents column | Where to find the same data in Microsoft 365 Defender |
 |-------------|-----------|-------------|-------------|
@@ -174,4 +177,4 @@ AlertInfo
 - [Turn on Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Advanced hunting in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

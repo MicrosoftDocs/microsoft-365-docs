@@ -63,8 +63,9 @@ Devices should meet or exceed following limits for storage and memory:
 
 - Boot drive must be any type other than a hard disk. For example, SSD, NVMe, and eMMC drives are all valid choices.
 - Boot drive must have a capacity of at least 128 GB.
+- Internal device memory (RAM) must equal or exceed 8 GB.
 
-If the device was made after July 1, 2020, it should also have an IR camera, fingerprint reader, or both, in order to support [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
+If the device was made after July 1, 2020, it should also have an IR camera, fingerprint reader, or both, in order to support [Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
 
 ## Recommended requirements
 
