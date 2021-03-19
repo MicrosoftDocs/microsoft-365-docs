@@ -80,7 +80,7 @@ If you are using ADFS, make sure to [back up your ADFS configuration before and 
 
 **Applies to**: All customers using SharePoint Online
 
-In case you are still using SharePoint 2013 workflows, limit SharePoint 2013 workflows the use during the SharePoint Online migration.
+In case you are still using SharePoint 2013 workflows, limit the use of SharePoint 2013 workflows during the SharePoint Online migration.
 
 | Step(s) | Description | Impact |
 |:-------|:-----|:-------|
