@@ -111,6 +111,6 @@ The device will boot into the "out of box experience," and all preinstalled appl
 
 When the device has been reset, you can give it to a different person in your organization. None of the previous user’s data or enterprise data will be on the device. The next user will go through the same process that the previous person did with a new Microsoft Managed Desktop device.
 
-BitLocker is a key component of data security in this process. With BitLocker encryption on Microsoft Managed Desktop devices, data on the drive remains secure even after the device as been factory-reset. Any data that was on the drive will not be available to the next user of the device. For more information, see [BitLocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
+BitLocker is a key component of data security in this process. With BitLocker encryption on Microsoft Managed Desktop devices, data on the drive remains secure even after the device as been factory-reset. Any data that was on the drive will not be available to the next user of the device. For more information, see [BitLocker overview](/windows/security/information-protection/bitlocker/bitlocker-overview).
 
-For more information, see [Factory reset a device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 
+For more information, see [Factory reset a device](/intune/remote-actions/devices-wipe#factory-reset-a-device).

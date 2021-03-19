@@ -29,10 +29,10 @@ ms.technology: m365d
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
-To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
+To help you find the information you need more quickly, Microsoft improvement actions are organized into groups:
 
 * Identity (Azure Active Directory accounts & roles)
-* Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+* Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 
 >[!NOTE]
@@ -76,7 +76,7 @@ To complete the action, you have a few options:
 
 - Select **Manage** to go the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the fly out. Points generally take about 24 hours to update.
 
-- Select **Share** to copy the direct link to the improvement action. You can also choose the platform to share the link, such as email, Microsoft Teams, Microsoft Planner, or ServiceNow. Selecting ServiceNow will let you create a change ticket that will be visible in ServiceNow and the Microsoft 365 security center home. To learn more, see [Microsoft 365 security center and ServiceNow integration](tickets-security-center.md).
+- Select **Share** to copy the direct link to the improvement action. You can also choose the platform to share the link, such as email, Microsoft Teams, Microsoft Planner, or ServiceNow. Selecting ServiceNow will let you create a change ticket that will be visible in ServiceNow and the Microsoft 365 security center home. To learn more, see [Microsoft 365 security center and ServiceNow integration](./tickets.md).
 
 Add **Notes** to keep track of progress or anything else you want to comment on. If you add your own **tags** to the improvement action, you can filter by those tags.
 
@@ -91,7 +91,7 @@ Choose any statuses and record notes specific to the improvement action.
 
 #### Threat & vulnerability management improvement actions
 
-For improvement actions in the "Device" category, you can't choose statuses. Instead, you'll be directed to the associated [threat and vulnerability management security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) to take action. The exception you choose and justification you write will be specific to that portal. It won't be present in the Microsoft Secure Score portal.
+For improvement actions in the "Device" category, you can't choose statuses. Instead, you'll be directed to the associated [threat and vulnerability management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in the [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/use) to take action. The exception you choose and justification you write will be specific to that portal. It won't be present in the Microsoft Secure Score portal.
 
 #### Completed improvement actions
 

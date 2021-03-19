@@ -42,6 +42,7 @@ This article lists new features in the latest release of Microsoft Defender for 
 - Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer.md)
 - Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
 - Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer.md)
+- New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 
 ## December 2020
 
@@ -95,7 +96,7 @@ This article lists new features in the latest release of Microsoft Defender for 
 
 - [Employ automated investigation and response capabilities](automated-investigation-response-office.md) (Microsoft Defender for Office 365 Plan 2)
 
-- [Integrate with Microsoft Defender for Office 365 automated investigation and response events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Defender for Office 365 Plan 2)
+- [Integrate with Microsoft Defender for Office 365 automated investigation and response events using the Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Defender for Office 365 Plan 2)
 
 - [View the email headers and download the email body](investigate-malicious-email-that-was-delivered.md) (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 
@@ -119,4 +120,4 @@ Did you know that Microsoft Defender for Office 365 is available in two plans? [
 
 [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Microsoft Defender for Office 365 Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+[Microsoft Defender for Office 365 Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

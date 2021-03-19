@@ -36,7 +36,7 @@ Audit logging is turned on by default for Microsoft 365 and Office 365 enterpris
     > [!NOTE]
     > Users have to be assigned permissions in Exchange Online to turn audit log search on or off. If you assign users the Audit Logs role on the **Permissions** page in the Security & Compliance Center, they won't be able to turn audit log search on or off. This is because the underlying cmdlet is an Exchange Online PowerShell cmdlet. 
     
-- For step-by-step instructions on searching the audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md). For more information about the Microsoft 365 Management Activity API, see [Get started with Microsoft 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+- For step-by-step instructions on searching the audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md). For more information about the Microsoft 365 Management Activity API, see [Get started with Microsoft 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 - To verify that audit log search is turned on, you can run the following command in Exchange Online PowerShell:
 
@@ -66,7 +66,7 @@ If audit log search is not turned on for your organization, you can turn it on i
 
 ### Use PowerShell to turn on audit log search
 
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Run the following PowerShell command to turn on audit log search in Office 365.
 
@@ -80,7 +80,7 @@ If audit log search is not turned on for your organization, you can turn it on i
 
 You have to use Exchange Online PowerShell to turn off audit log search.
   
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Run the following PowerShell command to turn off audit log search.
 
