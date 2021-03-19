@@ -28,7 +28,7 @@ description: In this article, learn how to use PowerShell for Microsoft 365 to m
 
 If you are a SharePoint Online administrator who works with large lists of user accounts or groups and wants an easier way to manage them, you can use PowerShell for Microsoft 365. 
 
-Before you begin, the procedures in this topic require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Before you begin, the procedures in this topic require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## Get a list of sites, groups, and users
 
@@ -273,7 +273,7 @@ This report is fairly simple, and you can add more code to create more specific 
    
 ## See also
 
-[Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Manage SharePoint Online with PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 

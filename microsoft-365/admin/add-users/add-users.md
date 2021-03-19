@@ -2,13 +2,13 @@
 title: "Add users and assign licenses"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365_Setup
@@ -28,7 +28,7 @@ ms.date: 07/01/2020
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -95,10 +95,10 @@ You must be a global, license, or a user admin to add users and assign licenses.
 
 You can use any of the following methods to add multiple users at the same time:
 
-- **Use a spreadsheet to add people in bulk.** See [Add several users at the same time](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
-- **Automate adding accounts and assigning licenses.** See [Create user accounts with Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Choose this method if you're already familiar with using Windows PowerShell cmdlets.
-- **Using ActiveDirectory?** [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Use the Azure AD Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Microsoft 365. The sync only adds the user accounts. You must assign licenses to the synced users before they can use email and other Office apps.
-- **Migrating from Exchange?** See [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Microsoft 365 by using either cutover, staged, or a hybrid Exchange method, you automatically add users as part of the migration. The migration only adds the user accounts. You must assign licenses to the users before they can use email and other Office apps. If you don't assign a license to a user, their mailbox is disabled after a grace period of 30 days. Learn how to [assign licenses to users](../manage/assign-licenses-to-users.md) in the Microsoft 365 admin center.
+- **Use a spreadsheet to add people in bulk.** See [Add several users at the same time](../../enterprise/add-several-users-at-the-same-time.md).
+- **Automate adding accounts and assigning licenses.** See [Create user accounts with Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). Choose this method if you're already familiar with using Windows PowerShell cmdlets.
+- **Using ActiveDirectory?** [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md). Use the Azure AD Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Microsoft 365. The sync only adds the user accounts. You must assign licenses to the synced users before they can use email and other Office apps.
+- **Migrating from Exchange?** See [Ways to migrate multiple email accounts to Office 365](/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Microsoft 365 by using either cutover, staged, or a hybrid Exchange method, you automatically add users as part of the migration. The migration only adds the user accounts. You must assign licenses to the users before they can use email and other Office apps. If you don't assign a license to a user, their mailbox is disabled after a grace period of 30 days. Learn how to [assign licenses to users](../manage/assign-licenses-to-users.md) in the Microsoft 365 admin center.
 
 ## Next steps
 
@@ -107,7 +107,7 @@ After you add a user, you get an email notification from Microsoft. The email co
 ## Related content
 
 [Add a new employee to Microsoft 365](add-new-employee.md) (article)\
-[Add several users at the same time to Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (article)\
+[Add several users at the same time to Microsoft 365](../../enterprise/add-several-users-at-the-same-time.md) (article)\
 [Restore a user in Microsoft 365](restore-user.md) (article)\
 [Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
 [Delete a user from your organization](delete-a-user.md) (article)

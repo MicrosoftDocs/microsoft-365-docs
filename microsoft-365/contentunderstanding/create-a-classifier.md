@@ -27,7 +27,7 @@ A classifier is a type of model that you can use to automate identification and 
 
 ![Contract Renewal document](../media/content-understanding/contract-renewal.png)
 
-Creating a classifier enables you to create a new [SharePoint content type](https://docs.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) that will be associated to the model.
+Creating a classifier enables you to create a new [SharePoint content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) that will be associated to the model.
 
 When creating the classifier, you need to create *explanations* to define the model. This enables you to note common data that you would expect to consistently find this document type. 
 
