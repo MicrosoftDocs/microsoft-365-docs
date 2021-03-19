@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: 
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW

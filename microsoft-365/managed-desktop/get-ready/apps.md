@@ -50,8 +50,8 @@ If you currently deploy your apps by using Microsoft Endpoint Configuration Mana
 ### Preparing your own apps for inclusion in Microsoft Managed Desktop
 Review your apps, checking:
 
-- None of the apps are prohibited or have restricted behavior, as described in [Microsoft Managed Desktop app requirements](https://aka.ms/app-req).
-- Apps must be ready for management by Microsoft Intune. For more about this topic, see [Windows 10 app deployment using Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) and [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
+- None of the apps are prohibited or have restricted behavior, as described in [Microsoft Managed Desktop app requirements](../service-description/mmd-app-requirements.md).
+- Apps must be ready for management by Microsoft Intune. For more about this topic, see [Windows 10 app deployment using Microsoft Intune](/intune/apps-windows-10-app-deploy) and [Add apps to Microsoft Intune](/intune/apps-add).
 - Other pre-packaging requirements such as providing license keys, agreement with license terms, and pre-setting server connections.
 
 ### Decide how to package apps
@@ -70,5 +70,3 @@ There are three options to get your apps packaged:
 ## Deploying apps
 
 Whatever method you use to get apps packaged, once that is complete, you're ready to follow the steps in [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.md).
-
-

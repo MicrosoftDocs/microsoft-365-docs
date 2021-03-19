@@ -31,6 +31,6 @@ Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
 
 - [An isolated team for a top-secret project](contoso-team-for-top-secret-project.md)
 
-- [Migration of their on-premises users to Teams for unified communication, collaboration, and voice](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Migration of their on-premises users to Teams for unified communication, collaboration, and voice](/MicrosoftTeams/voice-case-study-overview)
 
 - [Configure an offensive language policy for Microsoft Teams, Exchange, and Yammer communications](../compliance/communication-compliance-case-study.md)

@@ -13,9 +13,9 @@ ms.topic: article
 
 # Enable Enterprise State Roaming
 
-For the best experience with Microsoft Managed Desktop, enable [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), which lets users securely synchronize user and application settings data to the cloud. This means they'll have the same experience no matter which Windows device they sign into. For example, if you replace one of their Microsoft Managed Desktop devices with a new one, it will look and behave exactly the same as the last one.
+For the best experience with Microsoft Managed Desktop, enable [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview), which lets users securely synchronize user and application settings data to the cloud. This means they'll have the same experience no matter which Windows device they sign into. For example, if you replace one of their Microsoft Managed Desktop devices with a new one, it will look and behave exactly the same as the last one.
 
-To enable Enterprise State Roaming, follow the steps in [Enable Enterprise State Roaming in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable), and then return to this documentation.
+To enable Enterprise State Roaming, follow the steps in [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable), and then return to this documentation.
 
 If you have any difficulty with Enterprise State Roaming, contact Admin [support](../working-with-managed-desktop/admin-support.md).
 
@@ -29,4 +29,3 @@ If you have any difficulty with Enterprise State Roaming, contact Admin [support
 6. [Set up devices](set-up-devices.md)
 7. [Get your users ready to use devices](get-started-devices.md)
 8. [Deploy apps](deploy-apps.md)
-

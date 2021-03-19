@@ -29,15 +29,14 @@ Use these instructions to get set up to run the commands (skip the steps you hav
   > [!Note]
   > Skype for Business Online Connector is currently part of the latest Teams PowerShell module. If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.
 
-1. Install the [Teams PowerShell module](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Install the [Teams PowerShell module](/microsoftteams/teams-powershell-install).
     
 2. Open a Windows PowerShell command prompt and run the following commands: 
 
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
-   $sfbSession = New-CsOnlineSession -Credential $userCredential
-   Import-PSSession $sfbSession
+   Connect-MicrosoftTeams -Credential $userCredential
    ```
 
    When prompted, enter your Skype for Business Online administrator account name and password.
@@ -86,11 +85,11 @@ This command finds the policy assigned to the user, then finds the capabilities 
   
 To manage Skype for Business Online policies with PowerShell, see the cmdlets for:
 
-- [Client policy](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
-- [Conferencing policy](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
-- [Mobile policy](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
-- [Online Voicemail policy](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
-- [Voice Routing policy](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+- [Client policy](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [Conferencing policy](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [Mobile policy](/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [Online Voicemail policy](/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [Voice Routing policy](/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
 
 
 > [!NOTE]
@@ -103,7 +102,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> That returns a list of all the voice policies available to you. Keep in mind, however, that not all policies can be assigned to all users. This is due to various restrictions involving licensing and geographic location. (The so-called "[usage location](https://msdn.microsoft.com/library/azure/dn194136.aspx).") If you want to know the external access policies and the conferencing policies that can be assigned to a particular user, use commands similar to these: 
+> That returns a list of all the voice policies available to you. Keep in mind, however, that not all policies can be assigned to all users. This is due to various restrictions involving licensing and geographic location. (The so-called "[usage location](/previous-versions/azure/dn194136(v=azure.100)).") If you want to know the external access policies and the conferencing policies that can be assigned to a particular user, use commands similar to these: 
 
 ```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -127,4 +126,3 @@ Get-CsClientPolicy -Identity "Global"
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
