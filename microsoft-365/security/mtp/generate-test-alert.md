@@ -38,5 +38,4 @@ Now that you've completed your Microsoft 365 Defender evaluation lab setup and c
 
 ## Next steps
 
-Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to understand how to design the solution and architecture that is right for your organization.
-
+Browse through the [Microsoft 365 solution and architecture center](../../solutions/index.yml) to understand how to design the solution and architecture that is right for your organization.

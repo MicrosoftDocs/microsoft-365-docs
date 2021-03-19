@@ -140,8 +140,8 @@ You can stop a SharePoint site geo move, provided the move is not in progress or
 
 You can determine the status of a site move in our out of the geo that you are connected to by using the following cmdlets:
 
-- [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)
-- [Get-SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
+- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
 
 Use the `-SourceSiteUrl` parameter to specify the site for which you want to see move status.
 

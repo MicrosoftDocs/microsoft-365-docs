@@ -10,8 +10,11 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ms.collection:
-- commerce 
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce
 search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
@@ -86,6 +89,8 @@ The following table lists the available products and their **ProductId**.
 |-----------------------------|--------------|
 | Power Apps per user | CFQ7TTC0KP0P |
 | Power Automate per user | CFQ7TTC0KP0N |
+| Power Automate RPA | CFQ7TTC0KXG6  |
+| Power BI Premium (standalone) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
 | Project Plan 1 | CFQ7TTC0KXND |
 | Project Plan 3 | CFQ7TTC0KXNC |
@@ -137,7 +142,7 @@ This may be due to an older version of Transport Layer Security (TLS). To connec
 
 ### Solution
 
-Upgrade to TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+Upgrade to TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

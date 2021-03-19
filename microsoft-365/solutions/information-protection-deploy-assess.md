@@ -25,7 +25,7 @@ Assessing the data privacy regulations and risks that your organization is subje
 
 ## Potentially applicable data privacy regulations
 
-For a good reference on the broader regulatory framework for data privacy regulations, see the [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) and the [series of articles on the General Data Protection Regulation (GDPR) regulation](../compliance/gdpr.md), as well as other materials on the regulations you may be subject to in your industry or region.
+For a good reference on the broader regulatory framework for data privacy regulations, see the [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) and the [series of articles on the General Data Protection Regulation (GDPR) regulation](/compliance/regulatory/gdpr), as well as other materials on the regulations you may be subject to in your industry or region.
 
 ### GDPR
 
@@ -43,7 +43,7 @@ Adherence to other standards like ISO 27001 has also been recognized by several 
 
 Other prominent data privacy regulations also specify requirements for the handling of personal data.
 
-In the United States, these include the California Consumer Protection Act ([CCPA](../compliance/ccpa-faq.md)), HIPAA-HITECH (United States health care privacy act), and the Graham Leach Bliley Act (GLBA). Additional state-specific regulations are also in-place or in development. 
+In the United States, these include the California Consumer Protection Act ([CCPA](/compliance/regulatory/ccpa-faq)), HIPAA-HITECH (United States health care privacy act), and the Graham Leach Bliley Act (GLBA). Additional state-specific regulations are also in-place or in development. 
 
 Around the world, additional examples include Germany's National GDPR Implementation Act (BDSG), the Brazil Data Protection Act (LGPD), and many others.
 
@@ -151,10 +151,10 @@ Typically, contracts with external customers, partners, and the other entities w
 
 This category is the one most people think about for data privacy, due to many public instances of customer data leakage. This can be intentional, such as a third party under contract to the provider, or unintentional, such as exfiltration by a malicious actor. Consumer data protection is one of the primary reasons the EU and others enacted these regulations. Data privacy regulations like GDPR and CCPA require you to do planning for:
 
-- [Action plans](../compliance/gdpr-action-plan.md) and [accountability readiness checklists](../compliance/gdpr-arc-office365.md)
-- [Data Protection Impact Assessments](../compliance/gdpr-data-protection-impact-assessments.md)
-- [Breach notifications](../compliance/gdpr-breach-office365.md)
-- [Data subject requests](../compliance/gdpr-dsr-office365.md)
+- [Action plans](/compliance/regulatory/gdpr-action-plan) and [accountability readiness checklists](/compliance/regulatory/gdpr-arc-Office365)
+- [Data Protection Impact Assessments](/compliance/regulatory/gdpr-data-protection-impact-assessments)
+- [Breach notifications](/compliance/regulatory/gdpr-breach-Office365)
+- [Data subject requests](/compliance/regulatory/gdpr-dsr-Office365)
 
 If your organization does not do a lot of direct-from-consumer data collection, this category may be less of an issue. However, you may still need to go through the processes outlined in these articles to achieve compliance.
 
@@ -194,7 +194,7 @@ With the new **Data Classification** solution in the Microsoft Compliance admin 
  
 ### Sensitive information types
 
-The Microsoft Compliance admin center comes pre-loaded with over 100 sensitive information types, most of them related to identifying and locating personal data. These built-in sensitive information types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more, based on patterns that are defined by a regular expression (regex) or a function. To learn more, see [What the sensitive information types look for](../compliance/what-the-sensitive-information-types-look-for.md).
+The Microsoft Compliance admin center comes pre-loaded with over 100 sensitive information types, most of them related to identifying and locating personal data. These built-in sensitive information types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more, based on patterns that are defined by a regular expression (regex) or a function. To learn more, see [What the sensitive information types look for](../compliance/sensitive-information-type-entity-definitions.md).
 
 If you need to identify and protect an organization-specific or regional type of sensitive items, such as a custom format for employee IDs, or other personal information not already covered by a built-in sensitive information type, you can create a custom sensitive information type with these methods: 
 
@@ -224,10 +224,9 @@ Along with the other steps highlighted in this article, this provides a starting
 
 In addition to the Content Explorer, organizations have access to the Content Search capability to produce custom searches to find personal data in their environment, using advanced search criteria and custom filters.
 
-Detailed guidance on the use of Content Search for discovery of personal data is provided in [this article](../compliance/search-for-and-find-personal-data.md). Content Search and other discovery techniques are also explored in [DSRs for the GDPR and CCPA](../compliance/gdpr-dsr-office365.md#introduction-to-dsrs).
+Detailed guidance on the use of Content Search for discovery of personal data is provided in [this article](/compliance/regulatory/gdpr). Content Search and other discovery techniques are also explored in [DSRs for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs).
 
 Additional insights on investigative and remediation techniques for personal data in Microsoft 365 are provided in the [monitor and respond article](information-protection-deploy-monitor-respond.md).
 
 > [!NOTE]
-> To Find what sensitive information you have in files stored on-premises, please refer to [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo).
-
+> To Find what sensitive information you have in files stored on-premises, please refer to [Azure Information Protection](/azure/information-protection/quickstart-findsensitiveinfo).
