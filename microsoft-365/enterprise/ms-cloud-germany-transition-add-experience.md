@@ -30,7 +30,7 @@ The following sections provide additional information on customer experiences wh
 
 ## Office 365 Portal Services between phase 2 and phase 3
 
-Between Phase 2 and phase 3, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenants information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours.
+Between Phase 2 and phase 3, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenant's information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours.
 
 ### eDiscovery phase 4 to the end of phase 9
 
