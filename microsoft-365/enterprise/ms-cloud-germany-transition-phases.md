@@ -225,7 +225,7 @@ The most recently used (MRU) service in Office is a cutover from the Microsoft C
 
 ## Post migration
 
-Make sure you read the [post migration activities](ms-cloud-germany-transition-add-experience.md#Post-migration) and execute them accordingly article.
+Make sure you read the [post migration activities](ms-cloud-germany-transition-add-experience.md#Post-migration) article and execute them accordingly.
 
 ## More information
 
