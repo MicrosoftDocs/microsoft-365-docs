@@ -65,8 +65,6 @@ An isolated site can be used with other features, such as:
 
 To try out an isolated SharePoint Online team site in a trial subscription, see the step-by-step instructions in [Isolated SharePoint Online team site dev/test environment](isolated-sharepoint-online-team-site-dev-test-environment.md).
 
-When you are ready to deploy an isolated SharePoint Online team site in production, see the step-by-step design considerations in [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md).
-
 ## Related topic
 
 [Configure a team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation)

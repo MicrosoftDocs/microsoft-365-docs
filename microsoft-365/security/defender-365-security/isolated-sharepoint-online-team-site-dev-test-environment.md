@@ -141,12 +141,6 @@ Results:
 
 - The ProjectX-Viewers access group contains the Development VP user account
 
-Figure 1 shows the access groups and their membership.
-
-**Figure 1**:
-
-![The Microsoft 365 groups and their membership for an isolated SharePoint Online Group site](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
-
 ## Phase 3: Create a new ProjectX SharePoint Online team site and isolate it
 
 To create a SharePoint Online team site for ProjectX, do the following:
@@ -206,12 +200,6 @@ Here are the results of configuring permissions:
 - Members cannot modify site-level permissions (this can only be done by members of the ProjectX-Admins group).
 
 - Other user accounts cannot access the site or its resources or request access to the site.
-
-Figure 2 shows the SharePoint groups and their membership.
-
-**Figure 2**
-
-![The SharePoint Online groups and their membership for an isolated SharePoint Online Group site](../../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
 
 Now let's demonstrate access using the Lead Designer user account:
 
@@ -283,7 +271,7 @@ Your isolated SharePoint Online site is now ready for your additional experiment
 
 ## Next Step
 
-When you are ready to deploy an isolated SharePoint Online team site in production, see the step-by-step design considerations in [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md).
+When you are ready to deploy an isolated SharePoint Online team site in production, see [Configure a team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation).
 
 ## See Also
 
