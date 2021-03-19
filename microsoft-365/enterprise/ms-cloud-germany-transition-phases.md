@@ -178,7 +178,7 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 **Applies to:** All customers using Microsoft Dynamics 365
 
-Make sure that you are familiar with the [prework for your Microsoft Dynamics 365 installation](ms-cloud-germany-transition-add-pre-work.md#Dynamics-365)
+Make sure that you are familiar with the [prework for your Microsoft Dynamics 365 installation](ms-cloud-germany-transition-add-pre-work.md#Dynamics-365) procedure.
 
 Customers with Dynamics 365 require additional engagement to migrate the organization's Dynamics organizations independently.
 
