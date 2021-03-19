@@ -76,5 +76,5 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 - [Security recommendations](tvm-security-recommendation.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Advanced hunting overview](overview-hunting.md)
+- [Advanced hunting overview](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [All advanced hunting tables](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)

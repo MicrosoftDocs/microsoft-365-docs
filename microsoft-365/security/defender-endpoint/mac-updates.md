@@ -37,7 +37,7 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 To update Microsoft Defender for Endpoint for Mac, a program named Microsoft AutoUpdate (MAU) is used. By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.
 
-![MAU screenshot](../microsoft-defender-antivirus/images/MDATP-34-MAU.png)
+![MAU screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-34-mau)
 
 If you decide to deploy updates by using your software distribution tools, you should configure MAU to manually check for software updates. You can deploy preferences to configure how and when MAU checks for updates for the Macs in your organization.
 

@@ -31,7 +31,7 @@ ms.prod: m365-security
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 > [!NOTE]
 > This topic is intended for admins. For end-user topics, see [Overview of the Junk Email Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) and [Learn about junk email and phishing](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).

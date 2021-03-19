@@ -43,5 +43,5 @@ With [Microsoft Defender for Office 365](defender-for-office-365.md), you get [d
 
 ## See also
 
-- [Microsoft Defender for Office 365](defender-365-atp.md)
-- [Automated investigation and response in Microsoft 365 Defender](../defender/mtp-autoir.md)
+- [Microsoft Defender for Office 365](defender-for-office-365.md)
+- [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

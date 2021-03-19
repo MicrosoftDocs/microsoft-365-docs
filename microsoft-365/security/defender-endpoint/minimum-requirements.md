@@ -215,5 +215,5 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 
 
 ## Related topics
-- [Validate licensing and complete setup](licensing.md)
+- [Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
 - [Onboard devices](onboard-configure.md)

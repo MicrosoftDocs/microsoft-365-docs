@@ -49,7 +49,7 @@ During the simulation, the attack injects shellcode into a seemingly innocent pr
 
 Since you have already configured your pilot environment during the preparation phase, ensure that you have two devices for this scenario: a test device and a domain controller.
 
-1. Verify your tenant has [enabled Microsoft 365 Defender](./mtp-enable.md#starting-the-service).
+1. Verify your tenant has [enabled Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 
 2. Verify your test domain controller configuration:
 
@@ -274,7 +274,7 @@ This wraps up the attack simulation for the incident management and automated in
 
 There's a single internal mailbox and device required for this scenario. You'll also need an external email account to send the test message.
 
-1. Verify that your tenant has [enabled Microsoft 365 Defender](./mtp-enable.md#starting-the-service).
+1. Verify that your tenant has [enabled Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 2. Identify a target mailbox to be used for receiving email.
     a. This mailbox must be monitored by Microsoft Defender for Office 365
     b. The device from requirement 3 needs to access this mailbox
