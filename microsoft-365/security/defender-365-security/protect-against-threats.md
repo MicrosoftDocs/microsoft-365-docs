@@ -56,7 +56,7 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 |Anti-spam protection|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Zero-hour auto purge (for email)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365 ](atp-for-spo-odb-and-teams.md)|
+|Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365 ](turn-on-mdo-for-spo-odb-and-teams.md)|
 |Advanced anti-phishing protection|[Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### Roles and permissions
@@ -152,7 +152,7 @@ To learn more about your anti-spam policy options, see [Configure anti-spam poli
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](atp-safe-attachments.md) and [Safe Links](atp-safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments.md) and [Safe Links](safe-links.md) policies.
 
 ### Safe Attachments policies in Microsoft Defender for Office 365
 
@@ -285,7 +285,7 @@ After configuring the threat protection features, make sure to monitor how those
 
 |What to do|Resources to learn more|
 |---|---|
-|See how threat protection features are working for your organization by viewing reports|[Security dashboard](security-dashboard.md) <p> [Email security reports](view-email-security-reports.md) <p> [Reports for Microsoft Defender for Office 365](view-reports-for-atp.md) <p> [Threat Explorer](threat-explorer.md)|
+|See how threat protection features are working for your organization by viewing reports|[Security dashboard](security-dashboard.md) <p> [Email security reports](view-email-security-reports.md) <p> [Reports for Microsoft Defender for Office 365](view-reports-for-mdo.md) <p> [Threat Explorer](threat-explorer.md)|
 |Periodically review and revise your threat protection policies as needed|[Secure Score](../defender/microsoft-secure-score.md) <p> [Smart reports and insights](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 threat investigation and response features](./office-365-ti.md)|
 |Watch for new features and service updates|[Standard and Targeted release options](../../admin/manage/release-options-in-office-365.md) <p> [Message Center](../../admin/manage/message-center.md) <p> [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|Learn the details about recommended Standard and Strict security configurations for EOP and Defender for Office 365|[Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md)|
+|Learn the details about recommended Standard and Strict security configurations for EOP and Defender for Office 365|[Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)|

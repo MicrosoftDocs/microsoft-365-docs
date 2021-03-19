@@ -31,7 +31,7 @@ ms.technology: mde
 
 The `DeviceTvmSoftwareVulnerabilitiesKB` table in the advanced hunting schema contains the list of vulnerabilities [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) assesses devices for. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-reference.md).
+For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|

@@ -21,14 +21,14 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](./mtp-pilot.md?ocid=cx-evalpilot).
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes the results and provides analysis.
 
 ## Microsoft 365 Defender
 
-[Microsoft 365 Defender](./microsoft-threat-protection.md) is a unified pre- and post-breach enterprise defense suite. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+[Microsoft 365 Defender](microsoft-365-defender.md) is a unified pre- and post-breach enterprise defense suite. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
 Microsoft 365 Defender combines the capabilities of [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection), and [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) into a single solution.
 
@@ -114,4 +114,4 @@ The capabilities within Microsoft Defender for Endpoint provide [additional laye
 
 [Learn more about Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and evaluate it in your own network by signing up for a [90-day trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), or [enabling Preview features on existing tenants](/windows/security/threat-protection/microsoft-defender-atp/preview).
 
-[Learn more about Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](./mtp-enable.md).
+[Learn more about Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](m365d-enable.md).

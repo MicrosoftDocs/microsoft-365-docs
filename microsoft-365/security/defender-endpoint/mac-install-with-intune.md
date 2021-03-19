@@ -132,11 +132,11 @@ You do not need any special provisioning for a Mac device beyond a standard [Com
 
 1. Confirm device management.
 
-    ![Confirm device management screenshot](../microsoft-defender-antivirus/images/MDATP-3-ConfirmDeviceMgmt.png)
+    ![Confirm device management screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-3-confirmdevicemgmt)
 
     Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
-    ![Management profile screenshot](../microsoft-defender-antivirus/images/MDATP-4-ManagementProfile.png)
+    ![Management profile screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-4-managementprofile)
 
 2. Select **Continue** and complete the enrollment.
 
@@ -145,7 +145,7 @@ You do not need any special provisioning for a Mac device beyond a standard [Com
 3. In Intune, open **Manage** > **Devices** > **All devices**. Here you can see your device among those listed:
 
    > [!div class="mx-imgBorder"]
-   > ![Add Devices screenshot](../microsoft-defender-antivirus/images/MDATP-5-allDevices.png)
+   > ![Add Devices screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-5-alldevices)
 
 ## Approve System Extensions
 
@@ -181,7 +181,7 @@ To approve the system extensions:
 
 4. Select **OK**.
 
-    ![System configuration profiles screenshot](../microsoft-defender-antivirus/images/MDATP-6-SystemConfigurationProfiles.png)
+    ![System configuration profiles screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
 
 5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
@@ -205,7 +205,7 @@ To approve the system extensions:
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 
 > [!div class="mx-imgBorder"]
-> ![System configuration profiles screenshot](../microsoft-defender-antivirus/images/MDATP-7-DeviceStatusBlade.png)
+> ![System configuration profiles screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade)
 
 ## Publish application
 
@@ -227,44 +227,44 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
     > If the version uploaded by Intune is lower than the version on the device, then the lower version will be installed, effectively downgrading Microsoft Defender for Endpoint. This could result in a non-functioning application. See [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md) for additional information about how the product is updated. If you deployed Microsoft Defender for Endpoint with *Ignore app version* set to **No**, please change it to **Yes**. If Microsoft Defender for Endpoint still cannot be installed on a client device, then uninstall Microsoft Defender for Endpoint and push the updated policy.
      
     > [!div class="mx-imgBorder"]
-    > ![Device status blade screenshot](../microsoft-defender-antivirus/images/MDATP-8-IntuneAppInfo.png)
+    > ![Device status blade screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
 
 7. Select **OK** and **Add**.
 
     > [!div class="mx-imgBorder"]
-    > ![Device status blade screenshot](../microsoft-defender-antivirus/images/MDATP-9-IntunePkgInfo.png)
+    > ![Device status blade screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
 
 8. It may take a few moments to upload the package. After it's done, select the package from the list and go to **Assignments** and **Add group**.
 
     > [!div class="mx-imgBorder"]
-    > ![Client apps screenshot](../microsoft-defender-antivirus/images/MDATP-10-ClientApps.png)
+    > ![Client apps screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-10-clientapps)
 
 9. Change **Assignment type** to **Required**.
 
 10. Select **Included Groups**. Select **Make this app required for all devices=Yes**. Select **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
 
     > [!div class="mx-imgBorder"]
-    > ![Intune assignments info screenshot](../microsoft-defender-antivirus/images/MDATP-11-Assignments.png)
+    > ![Intune assignments info screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-11-assignments)
 
 11. After some time the application will be published to all enrolled devices. You can see it listed in **Monitor** > **Device**, under **Device install status**:
 
     > [!div class="mx-imgBorder"]
-    > ![Intune device status screenshot](../microsoft-defender-antivirus/images/MDATP-12-DeviceInstall.png)
+    > ![Intune device status screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-12-deviceinstall)
 
 ## Verify client device state
 
 1. After the configuration profiles are deployed to your devices, open **System Preferences** > **Profiles** on your Mac device.
 
-    ![System Preferences screenshot](../microsoft-defender-antivirus/images/MDATP-13-SystemPreferences.png)<br/>
-    ![System Preferences Profiles screenshot](../microsoft-defender-antivirus/images/MDATP-14-SystemPreferencesProfiles.png)
+    ![System Preferences screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-13-systempreferences)<br/>
+    ![System Preferences Profiles screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-14-systempreferencesprofiles)
 
 2. Verify that the following configuration profiles are present and installed. The **Management Profile** should be the Intune system profile. _Wdav-config_ and _wdav-kext_ are system configuration profiles that were added in Intune:
-    ![Profiles screenshot](../microsoft-defender-antivirus/images/MDATP-15-ManagementProfileConfig.png)
+    ![Profiles screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-15-managementprofileconfig)
 
 3. You should also see the Microsoft Defender icon in the top-right corner:
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Defender icon in status bar screenshot](../microsoft-defender-antivirus/images/MDATP-Icon-Bar.png)
+    > ![Microsoft Defender icon in status bar screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
 
 ## Troubleshooting
 

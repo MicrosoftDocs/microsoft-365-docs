@@ -29,19 +29,19 @@ ms.technology: m365d
 
 **Applies to:**
 
-- [Microsoft 365 Defender](./microsoft-threat-protection.md)
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft Defender for Office 365](../office-365-security/office-365-atp.md)
+- [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](./mtp-pilot.md?ocid=cx-evalpilot).
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
 
 The improved **Microsoft 365 security center** ([https://security.microsoft.com](https://security.microsoft.com)) combines protection, detection, investigation, and response to *email*, *collaboration*, *identity*, and *device* threats, in a central portal.
 
 Microsoft 365 security center brings together functionality from existing Microsoft security portals, like Microsoft Defender Security Center and the Office 365 Security & Compliance center. The security center emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. This center includes:
 
-- **[Microsoft Defender for Office 365](../defender-365-security/office-365-atp.md)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
-- **[Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
-- **[Microsoft 365 Defender](microsoft-threat-protection.md)**
+- **[Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
+- **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
+- **[Microsoft 365 Defender](microsoft-365-defender.md)**
 is part of Microsoft’s *Extended Detection and Response* (XDR) solution that leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, and build a picture of an attack on a single dashboard.
 
 If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft Defender Security Center, see:
@@ -99,7 +99,7 @@ Common controls and content either appear in the same place, or are condensed in
 
 ![Permissions & Roles page showing Endpoints roles & groups, Roles, and Device groups.](../../media/converged-roles-5.png)
 
- Access the Microsoft 365 security center is configured with Azure Active Directory global roles or by using custom roles. For Defender for Endpoint, see [Assign user access to Microsoft Defender Security Center](../defender-endpoint/assign-portal-access). For Defender for Office 365, see [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](../defender-365-security/permissions-microsoft-365-compliance-security.md).
+ Access the Microsoft 365 security center is configured with Azure Active Directory global roles or by using custom roles. For Defender for Endpoint, see [Assign user access to Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/assign-portal-access). For Defender for Office 365, see [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](../defender-365-security/permissions-microsoft-365-compliance-security.md).
 
 - Learn more about how to [manage access to Microsoft 365 Defender](m365d-permissions.md)
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 security center
@@ -175,7 +175,7 @@ Keep exploring the features and capabilities in the Microsoft 365 security cente
 - [Hunt for threats across devices, emails, apps, and identities](./advanced-hunting-query-emails-devices.md)
 - [Custom detection rules](./custom-detection-rules.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
-- [Create a phishing attack simulation](../defender-365-security/attack-simulation-training.md) and [create a payload for training your teams](../office-365-security/attack-simulation-training-payloads.md)
+- [Create a phishing attack simulation](../defender-365-security/attack-simulation-training.md) and [create a payload for training your teams](/microsoft-365/security/defender-365-security/attack-simulation-training-payloads)
  
 ### Related information
 - [Microsoft 365 security center](overview-security-center.md)

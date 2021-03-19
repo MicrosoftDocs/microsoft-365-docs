@@ -74,7 +74,7 @@ For more information on how to configure exclusions from JAMF, Intune, or anothe
 
 Open the Defender for Endpoint application and navigate to **Manage settings** > **Add or Remove Exclusion...**, as shown in the following screenshot:
 
-![Manage exclusions screenshot](../microsoft-defender-antivirus/images/mdatp-37-exclusions.png)
+![Manage exclusions screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-37-exclusions)
 
 Select the type of exclusion that you wish to add and follow the prompts.
 

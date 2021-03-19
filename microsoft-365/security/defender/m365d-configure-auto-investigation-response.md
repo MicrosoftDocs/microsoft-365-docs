@@ -41,8 +41,8 @@ Then, after you're all set up, [View and manage actions in the Action center](m3
 |Subscription requirements |One of these subscriptions: <br/>- Microsoft 365 E5<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- Microsoft 365 A5 Security<br/>- Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<p> See [Microsoft 365 Defender licensing requirements](./prerequisites.md#licensing-requirements).|
 |Network requirements |- [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) enabled<br/>- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configured<br/>- [Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration) |
 |Windows machine requirements |- Windows 10, version 1709 or later installed (See [Windows 10 release information](/windows/release-information/)) <br/>- The following threat protection services configured:<br/>- [Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)<br/>- [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|Protection for email content and Office files |[Microsoft Defender for Office 365](../defender-365-security/office-365-atp.md#configure-atp-policies) configured |
-|Permissions | To configure automated investigation and response capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).<p>To get the permissions needed to work with automated investigation and response capabilities, such as reviewing, approving, or rejecting pending actions, see [Required permissions for Action center tasks](m365d-action-center.md#required-permissions-for-action-center-tasks). |
+|Protection for email content and Office files |[Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) configured |
+|Permissions | To configure automated investigation and response capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).<p>To get the permissions needed to work with automated investigation and response capabilities, such as reviewing, approving, or rejecting pending actions, see [Required permissions for Action center tasks](mtp-action-center.md#required-permissions-for-action-center-tasks). |
 
 ## Review or change the automation level for device groups
 
@@ -56,14 +56,14 @@ Whether automated investigations run, and whether remediation actions are taken 
 
 ## Review your security and alert policies in Office 365
 
-Microsoft provides built-in [alert policies](../../compliance/alert-policies.md) that help identify certain risks. These risks include Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Some alerts can trigger [automated investigation and response in Office 365](../defender-365-security/office-365-air.md). Make sure your [Microsoft Defender for Office 365](../defender-365-security/office-365-atp.md) features are configured correctly.
+Microsoft provides built-in [alert policies](../../compliance/alert-policies.md) that help identify certain risks. These risks include Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Some alerts can trigger [automated investigation and response in Office 365](../defender-365-security/office-365-air.md). Make sure your [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) features are configured correctly.
 
 Although certain alerts and security policies can trigger automated investigations, no remediation actions are taken automatically for email and content. Instead, all remediation actions for email and email content await approval by your security operations team in the [Action center](m365d-action-center.md).
 
 Security settings in Office 365 help protect email and content. To view or change these settings, follow the guidance in [Protect against threats](../defender-365-security/protect-against-threats.md).
 
 1. In the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), go to **Policies** > **Threat protection**.
-2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](../office-365-security/protect-against-threats.md).
+2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](/microsoft-365/security/defender-365-security/protect-against-threats).
    - [Anti-malware (Office 365)](../defender-365-security/protect-against-threats.md#part-1---anti-malware-protection)
    - [Anti-phishing in Defender for Office 365)](../defender-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
    - [Safe Attachments (Office 365)](../defender-365-security/protect-against-threats.md#atp-safe-attachments-policies)
@@ -84,7 +84,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 3. In the navigation pane, choose **Settings** > **Microsoft 365 Defender**. Confirm that Microsoft 365 Defender is turned on. 
 
 > [!TIP]
-> Need help? See [Turn on Microsoft 365 Defender](./mtp-enable.md).
+> Need help? See [Turn on Microsoft 365 Defender](m365d-enable.md).
 
 ## Next steps
 
