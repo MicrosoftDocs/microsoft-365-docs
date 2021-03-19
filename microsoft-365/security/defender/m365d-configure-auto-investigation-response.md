@@ -66,10 +66,10 @@ Security settings in Office 365 help protect email and content. To view or chang
 2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](../office-365-security/protect-against-threats.md).
    - [Anti-malware (Office 365)](../defender-365-security/protect-against-threats.md#part-1---anti-malware-protection)
    - [Anti-phishing in Defender for Office 365)](../defender-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
-   - [Safe Attachments (Office 365)](../defender-365-security/protect-against-threats.md#atp-safe-attachments-policies)
-   - [Safe Links (Office 365)](../defender-365-security/protect-against-threats.md#atp-safe-links-policies)
-   - [Anti-spam (Office 365)](../defender-365-security/protect-against-threats.md#part-3---anti-spam-protection)
-3. Make sure [Microsoft Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams](../defender-365-security/protect-against-threats.md#part-5---turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams-workloads) is turned on.
+   - [Safe Attachments (Office 365)](../defender-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
+   - [Safe Links (Office 365)](../defender-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
+   - [Anti-spam (Office 365)](../defender-365-security/protect-against-threats.md#part-3---anti-spam-protection) 
+3. Make sure [Microsoft Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams](../defender-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) is turned on.
 4. Make sure [zero-hour auto purge for email](../defender-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) protection is in effect.
 5. (This step is optional.) Review your [Office 365 alert policies](../../compliance/alert-policies.md) in the Microsoft 365 compliance center ([https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies)). Several default alert policies are in the Threat management category. Some of these alerts can trigger automated investigation and response. To learn more, see [Default alert policies](../../compliance/alert-policies.md#default-alert-policies).
 
