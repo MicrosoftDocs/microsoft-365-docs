@@ -133,7 +133,7 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs)
 ## Mobile Device Management
 
 <!-- before phase 5 -->
-**Applys to:** Customers using a third-party mobile device management (MDM) solution<br>
+**Applies to:** Customers using a third-party mobile device management (MDM) solution<br>
 **When applied**: Any time before phase 5 starts
 
 | Step(s) | Description | Applies to | Impact |
