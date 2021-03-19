@@ -154,7 +154,7 @@ Back-end Exchange Online Protection (EOP) features are copied to the new region 
 
 **Applies to:** All customers using Skype for Business Online
 
-Make sure that you are familiar with the [prework for your Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#Skype-for-Business-Online)
+Make sure that you are familiar with the [prework for your Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#Skype-for-Business-Online) procedure.
 
 <!--
     Question from ckinder
