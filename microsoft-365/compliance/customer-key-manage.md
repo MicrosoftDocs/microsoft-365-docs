@@ -163,9 +163,11 @@ The output from this cmdlet includes:
 
   - **Rolling:** A key roll is in progress. If the key for the geo is rolling, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
 
-## Unassign a DEP from a mailbox
+## Roll back from Customer Key to Microsoft managed Keys
 
-You unassign a DEP from a mailbox using the Set-mailbox PowerShell cmdlet and setting the `DataEncryptionPolicy` to `$NULL`. Running this cmdlet unassigns the currently assigned DEP and reencrypts the mailbox using the DEP associated with default Microsoft managed keys. You can't unassign the DEP used by Microsoft managed keys. If you don't want to use Microsoft managed keys, you can assign another DEP to the mailbox.
+For Customer Key at the tenant level, you'll need to reach out to Microsoft with a request for “offboarding” from Customer Key. The request will be handled by the On Call Engineering team.
+
+For Customer Key at the application level, you do this by unassigning a DEP from mailboxes using the Set-mailbox PowerShell cmdlet and setting the `DataEncryptionPolicy` to `$NULL`. Running this cmdlet unassigns the currently assigned DEP and reencrypts the mailbox using the DEP associated with default Microsoft managed keys. You can't unassign the DEP used by Microsoft managed keys. If you don't want to use Microsoft managed keys, you can assign another Customer Key DEP to the mailbox.
 
 To unassign the DEP from a mailbox using the Set-Mailbox PowerShell cmdlet, complete these steps.
 
@@ -179,7 +181,7 @@ To unassign the DEP from a mailbox using the Set-Mailbox PowerShell cmdlet, comp
 
 ## Revoke your keys and start the data purge path process
 
-You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes.
+You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes. You can't perform a data purge for a tenant-level policy.
 
 Microsoft 365 audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
 

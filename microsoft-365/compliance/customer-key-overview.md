@@ -32,7 +32,7 @@ Customer Key enhances the ability of your organization to meet the demands of co
 
 ## Customer Key encrypts data at rest in Office 365
 
-Using keys you provide, Customer Key encrypts:
+Using keys you provide, Customer Key at the application level encrypts:
 
 - SharePoint Online, OneDrive for Business, and Teams files.
 - Files uploaded to OneDrive for Business.
