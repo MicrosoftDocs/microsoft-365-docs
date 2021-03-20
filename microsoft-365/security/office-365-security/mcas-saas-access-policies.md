@@ -81,7 +81,7 @@ For example, you can protect your Box environment with these types of built-in a
 - Risky Oauth App
 - Unusual file share activity
 
-These are examples and additional policy templates are added on a regular basis. For examples of how to apply additional protection to specific apps, see [Protecting connected apps](https://docs.microsoft.com/cloud-app-security/protect-connected-apps). 
+These are examples. Additional policy templates are added on a regular basis. For examples of how to apply additional protection to specific apps, see [Protecting connected apps](https://docs.microsoft.com/cloud-app-security/protect-connected-apps). 
 
 [How Cloud App Security helps protect your Box environment](https://docs.microsoft.com/cloud-app-security/protect-box) demonstrates the types of controls that can help you protect your business data in Box and other apps with sensitive data.
 
