@@ -42,4 +42,11 @@ description: "Learn how to set up Microsoft 365 Business Premium."
 12. On the  **Protect data in Office for mobile**  page, leave mobile app management on, expand the settings and review them, and then select  **Create mobile app management policy**.
 13. After your setup is complete, return to the Microsoft admin center. In the admin center you can continue setting up features like Windows 10 policies, DLP, etc. on the  **Setup**  page.
 
+- [Microsoft365.com/setup](https://soft365setup.com/)
+- [Set up Microsoft 365 Business Basic](setup-business-basic.md)
+- [Set up Microsoft Business Standard](setup-business-standard.md)
+- [Set up Microsoft 365 Business Premium](../../business/set-up.md)
+- [Set up Microsoft 365 Apps for business](setup-apps-for-business.md)
+
+
 Your setup is complete.
