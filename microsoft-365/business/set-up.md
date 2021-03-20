@@ -46,7 +46,7 @@ When you purchase Microsoft 365 Business Premium, you have the option of using a
 
 ### Add your domain to personalize sign-in
 
-1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials. 
+1. Sign in to [Microsoft365.cpm/setup](https://admin.microsoft.com) by using your global admin credentials. 
 
 2. Choose **Go to setup** to start the wizard.
 
