@@ -47,17 +47,17 @@ To enable security defaults in your Azure Active Directory (Azure AD) or to chec
 5. In the right pane, you'll see the **Enable Security defaults** setting. If **Yes** is selected, then security defaults are already enabled and no further action is required. If security defaults are not currently enabled, then select **Yes** to enable them, and then select **Save**.
 
 > [!NOTE]
-> If you've been using [baseline Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection), you'll be prompted to turn them off before using security defaults.
+> If you've been using Conditional Access policies, you'll need to turn them off before using security defaults.
 >
 > You can use either security defaults or Conditional Access policies, but you can't use both at the same time.
 
 ## Other security options
 
-If your organization has complex security requirements and you have a Microsoft 365 Business Premium or E3 plan or Azure Active Directory Premium licenses, then you should consider using Conditional Access instead of security defaults.
+If your organization has complex security requirements that need greater control and you have a Microsoft 365 Business Premium or E3 plan or Azure Active Directory Premium licenses, then you should consider using Conditional Access instead of security defaults.
 
 Conditional Access lets you create and define policies that react to sign-in events and request additional actions before a user is granted access to an application or service. Conditional Access policies can be granular and specific, empowering users to be productive wherever and whenever, but also protecting your organization.
 
-Here are links to step-by-step guides on how to use Conditional Access to configure policies equivalent to those enabled by security defaults:
+If you want to use Conditional Access to configure policies equivalent to those enabled by security defaults, check out the following step-by-step guides:
 
 - [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 
@@ -69,7 +69,7 @@ Here are links to step-by-step guides on how to use Conditional Access to config
 
 - [Require Azure AD MFA registration](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Requires Azure AD Identity Protection part of Azure AD Premium P2
 
-To learn more about Conditional Access, see [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). For more information about creating Conditional Access policies, see [Create a Conditional Access policy](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
+To learn more about Conditional Access, see [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) For more information about creating Conditional Access policies, see [Create a Conditional Access policy](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
 
 > [!NOTE]
 > If you have a plan or license that provides Conditional Access but haven't yet created any Conditional Access policies, you're welcome to use security defaults. However, you'll need to turn off security defaults before you can use Conditional Access policies.
