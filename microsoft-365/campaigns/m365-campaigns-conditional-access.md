@@ -60,13 +60,9 @@ Conditional Access lets you create and define policies that react to sign-in eve
 If you want to use Conditional Access to configure policies equivalent to those enabled by security defaults, check out the following step-by-step guides:
 
 - [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
-
 - [Require MFA for Azure management](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
-
 - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
-
 - [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-
 - [Require Azure AD MFA registration](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Requires Azure AD Identity Protection part of Azure AD Premium P2
 
 To learn more about Conditional Access, see [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) For more information about creating Conditional Access policies, see [Create a Conditional Access policy](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
