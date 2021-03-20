@@ -30,7 +30,7 @@ description: "Learn how security defaults can help protect your organization fro
 
 Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization. For most organizations, security defaults offer a good level of additional sign-in security.
 
-For more information about security defaults and the policies they enforce, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+For more information about security defaults and the policies they enforce, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 If your subscription is new, security defaults might already be turned on for you.
 
@@ -51,7 +51,7 @@ To enable security defaults in your Azure Active Directory (Azure AD) or to chec
 >
 > You can use either security defaults or Conditional Access policies, but you can't use both at the same time.
 
-## Other security options
+## Consider using Conditional Access
 
 If your organization has complex security requirements that need greater control and you have a Microsoft 365 Business Premium or E3 plan or Azure Active Directory Premium licenses, then you should consider using Conditional Access instead of security defaults.
 
