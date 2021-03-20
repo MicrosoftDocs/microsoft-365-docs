@@ -35,15 +35,33 @@ You can begin to manage these by doing the following:
 1. First, in Azure AD, create a new conditional access policy and configure it to "Use Conditional Access App Control." This redirects the request to Cloud App Security. You can create one policy and add all SaaS apps to this policy.
 1. Next, in Cloud App Security, create session policies. Create one policy for each control you want to apply. 
 
+Permissions to SaaS apps are typically based on business need for access to the app. These permissions can be highly dynamic. Using Cloud App Security policies ensures protection to app data, regardless of whether users are assigned to an Azure AD group associated with baseline, sensitive, or highly regulated protection.
+
 To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Azure AD conditional access policy plus suggested policies you can create in Cloud App Security. In this example, the policies created in Cloud App Security apply to all SaaS apps you are managing. These are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files. 
 
-illustration option A
-![Policies for managing SaaS apps in Cloud App Security](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps.png) 
+<br>
 
-illustration option B -- truncated 
 ![Policies for managing SaaS apps in Cloud App Security](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
 
-Permissions to SaaS apps are typically based on business need for access to the app. These permissions can be highly dynamic. Using Cloud App Security policies ensures protection to app data, regardless of whether users are assigned to an Azure AD group associated with baseline, sensitive, or highly regulated protection.
+The following table lists the new conditional access policy you must create in Azure AD.
+
+|Protection level|Policy|More information|
+|---|---|---|
+|All protection levels | [Use Conditional Access App Control in Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad) |This configures your IdP (Azure AD) to work with Cloud App Security. |
+
+This next table lists the example policies illustrated above that you can create to protect all SaaS apps. Be sure to evaluate your own business, security, and compliance objectives and then create policies that provide the most appropriate protection for your environment. 
+
+|Protection level|Policy|
+|---|---|
+|Baseline | Monitor traffic from unmanaged devices<br><br>Add protection to file downloads from unmanaged devices | 
+|Sensitive  | Block download of files labeled with sensitive or classified from unmanaged devices (this provides browser only access)  | 
+| Highly regulated | Block download of files labeled with classified from all devices (this provides browser only access)  |   
+|  |   |  
+
+For end-to-end instructions for setting up Conditional Access App Control, see [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad). This article walks you through the process of creating the necessary conditional access policy in Azure AD and testing your SaaS apps.
+
+
+
 
 For more information, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad). 
 
@@ -72,8 +90,9 @@ These are examples and additional policy templates are added on a regular basis.
 
 Cloud App Security can be a valuable tool for configuring protection for compliance regulations. In this case, you create specific policies to look for specific data that a regulation applies to and configure each policy to take appropriate action. 
 
-The following table and illustration provide several examples of policies that can be configured to help comply with  the General Data Protection Regulation (GDPR). In these examples, policies look for specific data. Based on the sensitivity of the data, each policy is configured to take appropriate action. 
+The following illustration and table provide several examples of policies that can be configured to help comply with  the General Data Protection Regulation (GDPR). In these examples, policies look for specific data. Based on the sensitivity of the data, each policy is configured to take appropriate action. 
 
+![Example Cloud App Security policies for data loss prevention](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
 
 |Protection level|Example policies|
 |:---------------|:-------|
@@ -83,11 +102,7 @@ The following table and illustration provide several examples of policies that c
 | | |
 
 
-![Example Cloud App Security policies for data loss prevention](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
-
-
-
-
 
 ## Next steps
 
+For more information about using Cloud App Security, see [Microsoft Cloud App Security documentation](https://docs.microsoft.com//cloud-app-security/). 
