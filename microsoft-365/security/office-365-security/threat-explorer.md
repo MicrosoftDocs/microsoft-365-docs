@@ -340,6 +340,9 @@ This example uses Threat Explorer.
 > [!TIP]
 > **For best results**, use *full email addresses* to search protected users. You will find your protected user quicker and more successfully if you search for *firstname.lastname@contoso.com*, for example, when investigating user impersonation. When searching for a protected domain the search will take the root domain (contoso.com, for example), and the domain name (*contoso*). Searching for the root domain *contoso.com* will return both impersonations of *contoso.com* and the domain name *contoso*.
 
+> [!NOTE]
+> In step 3 or 5 above, if you choose **Detection Technology** and select **Impersonation domain** or **Impersonation user** respectively, the information in the **Email tab** > **Details tab** about the user or domain, and the *Detected location* will be shown only on the messages that are related to the user or domain listed on the *Anti-Phishing policy* page. 
+
 ### Preview email header and download email body
 
 You can now preview an email header and download the email body in Threat Explorer Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails in all-email messages view. However, viewing email header does not require any additional role (other than what is required to view messages in Threat Explorer).
