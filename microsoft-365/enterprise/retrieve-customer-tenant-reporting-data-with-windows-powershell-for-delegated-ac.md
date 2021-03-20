@@ -30,7 +30,7 @@ In this article, you use remote Windows PowerShell for Exchange Online to connec
  
 ## Before you begin
 
-- You need to connect to your Exchange Online tenant by using remote Windows PowerShell. For instructions, see [Connect to Exchange Online tenants with remote Windows PowerShell for Delegated Access Permissions (DAP) partners](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
+- You need to connect to your Exchange Online tenant by using remote Windows PowerShell. For instructions, see [Connect to Exchange Online tenants with remote Windows PowerShell for Delegated Access Permissions (DAP) partners](/powershell/exchange/connect-to-exchange-online-powershell)
     
 ## Run the Get-StaleMailboxReport sample
 
@@ -46,9 +46,8 @@ There are many other reporting cmdlets available for Exchange Online, Lync Onlin
 
 #### 
 
-[Office 365 Reporting web service](https://go.microsoft.com/fwlink/p/?LinkId=532777)
+[Office 365 Reporting web service](/previous-versions/office/developer/o365-enterprise-developers/jj984325(v=office.15))
   
-[Reporting cmdlets in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=526430)
+[Reporting cmdlets in Exchange Online](/powershell/module/exchange/get-csclientdevicedetailreport)
   
 [Help for partners](https://go.microsoft.com/fwlink/p/?LinkID=533477)
-

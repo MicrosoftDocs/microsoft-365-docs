@@ -66,7 +66,7 @@ Additionally, if you have capitalization requirements in your pattern list, you 
    ![Only exact capitalization](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Instead of manually creating a pattern list explanation, use the [explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) to use pattern list templates for a common pattern list, such as *date*, *phone number*, *credit card number*, etc.
+> Instead of manually creating a pattern list explanation, use the [explanation library](#use-explanation-templates) to use pattern list templates for a common pattern list, such as *date*, *phone number*, *credit card number*, etc.
 
 ## Proximity 
 
@@ -152,25 +152,25 @@ For example, instead of manually adding all the variations for *Date*, you can u
  
 The explanation library includes commonly used phrase list explanations, including:</br>
 
-- Date</br>
-- Date (numeric)</br>
-- Time</br>
-- Number</br>
-- Percentage</br>
-- Phone number</br>
-- Zip code</br>
-- First word of sentence</br>
-- End of sentence</br>
-- Credit card</br>
-- Social security number</br>
-- Checkbox</br>
-- Currency</br>
-- Email CC</br>
-- Email date</br>
-- Email greeting</br>
-- Email recipient</br>
-- Email sender</br>
-- Email subject</br>
+- Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2020").</br>
+- Date (numeric): Calendar dates, all formats. Includes numbers (for example 1-11-2020).</br>
+- Time: 12 and 24 hour formats.</br>
+- Number: Positive and negative numbers up to 2 decimals. </br>
+- Percentage: A list of patterns representing a percentage. For example, 1%, 11%, 100%, 11.11%, etc.</br>
+- Phone number: Common US and International formats. For example, 000 000 0000, 000-000-0000, (000)000-0000, (000) 000-0000, etc.</br>
+- Zip code: US Zip code formats. For example, 11111, 11111-1111.</br>
+- First word of sentence: Common patterns for words up to 9 characters. </br>
+- End of sentence: Common punctuation for end of a sentence</br>
+- Credit card: Common credit card number formats. For example, 1111-1111-1111-1111. </br>
+- Social security number: US Social Security Number format. For example, 111-11-1111. </br>
+- Checkbox: A phrase list representing variations on a filled in checkbox. For example, _X_, __X_, etc.</br>
+- Currency: Major international symbols. For example, $. </br>
+- Email CC: A phrase list with the term 'CC:', often found near the names or email addresses of additional people or groups the message was sent to.</br>
+- Email date: A phrase list with the term 'Sent on:', often found near the date the email was sent.</br>
+- Email greeting: Common opening lines for emails.</br>
+- Email recipient: A phrase list with the term 'To:', often found near the names or email addresses of people or groups the message was sent to. </br>
+- Email sender: A phrase list with the term 'From:', often found near the sender's name or email address. </br>
+- Email subject: A phrase list with the term 'Subject:', often found near the email's subject. </br>
 
 The explanation library also includes three automatic template types that work with the data you've labeled in your example files:
 

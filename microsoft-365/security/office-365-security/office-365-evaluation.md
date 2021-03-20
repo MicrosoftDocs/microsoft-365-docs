@@ -30,7 +30,7 @@ ms.prod: m365-security
 
 Conducting a comprehensive security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product's capabilities to assess how it can help your security operations team in their daily tasks.
 
-The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of the security solution. It only applies to email protection and not SharePoint, Office Clients like Word, or Teams.
+The [Microsoft Defender for Office 365](office-365-atp.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of Microsoft Defender for Office 365. With evaluation mode, all messages sent to Exchange Online mailboxes can be evaluated without pointing MX records to Microsoft. The feature only applies to email protection and not to Office Clients like Word, SharePoint, or Teams.
 
 If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the Office 365 Security & Compliance center (https://protection.office.com/homepage). You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
@@ -40,7 +40,7 @@ Defender for Office 365 in evaluation mode creates Defender for Office 365 ema
 
 With evaluation mode, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [mailbox intelligence based impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are set up on your behalf. All Defender for Office 365 policies are created in non-enforcement mode in the background and are not visible to you.
 
-As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). It improves filtering accuracy by preserving IP address and sender information, which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. Enhanced Filtering for Connectors also improves the filtering accuracy for your existing Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
+As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). It improves filtering accuracy by preserving IP address and sender information, which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. Enhanced Filtering for Connectors also improves the filtering accuracy for your existing Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
 
 Enabled Enhanced Filtering for Connectors improves filtering accuracy but may alter deliverability for certain messages if you have an ESG in front of Defender for Office 365, and currently do not bypass EOP filtering. The impact is limited to EOP policies; MDO policies setup as part of the evaluation are created in non-enforcement mode. To minimize potential production impact, you can bypass all EOP filtering by creating a transport rule to set the Spam Confidence Level (SCL) to -1. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) for details.
 
@@ -68,7 +68,7 @@ If you don't have one of those licenses, then you'll need to obtain a trial lice
 
 #### Trial
 
-To obtain a trial license for Microsoft Defender for Office 365, you need to have the **Billing admin role** or **Global admin role**. Request permission from someone that has the Global admin role. [Learn about subscriptions and licenses](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+To obtain a trial license for Microsoft Defender for Office 365, you need to have the **Billing admin role** or **Global admin role**. Request permission from someone that has the Global admin role. [Learn about subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md)
 
 Once you have the proper role, the recommended path is to obtain a trial license for Microsoft Defender for Office 365 (Plan 2) in the Microsoft 365 admin center by going to Billing > Purchase services. The trial includes a 30-day free trial for 25 licenses. [Get a trial for Microsoft Defender for Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
@@ -76,14 +76,14 @@ You'll have a 30-day window with the evaluation to monitor and report on advance
 
 ### Roles
 
-Exchange Online roles are required to set up Defender for Office 365 in evaluation mode.
+**Exchange Online roles are required** to set up Defender for Office 365 in evaluation mode. Assigning a Microsoft 365 compliance or security admin role won't work.
 
-- [Learn about permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [Learn about permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Learn about assigning admin roles](../../admin/add-users/assign-admin-roles.md)
 
 The following roles are needed:
 
-|Task|Role|
+|Task|Role (in Exchange Online)|
 |---|---|
 |Get a free trial or buy Microsoft Defender for Office 365 (Plan 2)|Billing admin role OR Global admin role|
 |Create evaluation policy|Remote and Accepted Domains role; Security admin role|
@@ -91,7 +91,6 @@ The following roles are needed:
 |Delete evaluation policy|Remote and Accepted Domains role; Security admin role |
 |View evaluation report|Security admin role OR Security reader role|
 |
-
 
 ### Enhanced filtering
 
@@ -107,7 +106,7 @@ URL links in the email message bodies won't wrap, to lessen customer impact.
 
 ### Email routing
 
-Prepare the corresponding details that you will need to set up how your email is currently routed, including the name of the inbound connector that routes your mail. If you are just using Exchange Online Protection, you won’t have a connector. [Learn about mail flow and email routing](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Prepare the corresponding details that you will need to set up how your email is currently routed, including the name of the inbound connector that routes your mail. If you are just using Exchange Online Protection, you won’t have a connector. [Learn about mail flow and email routing](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Supported email routing scenarios include:
 

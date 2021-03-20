@@ -42,7 +42,7 @@ For more information, see [Prerequisites](prerequisites.md).
 
 If you have Microsoft Defender for Identity deployed in your environment but you're not seeing Defender for Identity alerts as part of Microsoft 365 Defender incidents, you'll need to ensure that the Microsoft Cloud App Security and Defender for Identity integration is enabled.
 
-For more information, see [Microsoft Defender for Identity integration](https://docs.microsoft.com/cloud-app-security/mdi-integration).
+For more information, see [Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration).
 
 ## Where is the settings page for turning the service on?
 

@@ -138,11 +138,11 @@ devices | All devices where alerts related to the incident were sent. | \[\] (se
 Field name | Description | Example value
 -|-|-
 DeviceId | The device ID as designated in Microsoft Defender ATP. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  The device ID as designated in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis). Only available for domain-joined devices. | null
+aadDeviceId |  The device ID as designated in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis). Only available for domain-joined devices. | null
 deviceDnsName | The fully qualified domain name for the device. | user5cx.middleeast.corp.contoso.com
 osPlatform | The OS platform the device is running.| WindowsServer2016
 osBuild | The build version for the OS the device is running. | 14393
-rbacGroupName | The [role-based access control](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC) group associated with the device. | WDATP-Ring0
+rbacGroupName | The [role-based access control](/azure/role-based-access-control/overview) (RBAC) group associated with the device. | WDATP-Ring0
 firstSeen | Time when device was first seen. | 2020-02-06T14:16:01.9330135Z
 healthStatus | The health state of the device. | Active
 riskScore | The risk score for the  device. | High
