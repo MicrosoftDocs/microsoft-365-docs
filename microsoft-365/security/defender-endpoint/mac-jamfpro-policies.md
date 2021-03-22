@@ -27,7 +27,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+- [Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
 
 This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.
 

@@ -34,7 +34,7 @@ In alignment with macOS evolution, we are preparing a Defender for Endpoint for 
 
 This functionality is currently in public preview. This article describes how to enable this functionality on your device. You can try out this feature locally on your own device or configure it remotely through a management tool.
 
-These steps assume you already have Defender for Endpoint running on your device. For more information, see [this page](microsoft-defender-atp-mac.md).
+These steps assume you already have Defender for Endpoint running on your device. For more information, see [this page](microsoft-defender-endpoint-mac.md).
 
 ## Known issues
 

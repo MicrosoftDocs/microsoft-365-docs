@@ -116,7 +116,7 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 ### [Microsoft Defender Advanced Threat Protection for Mac]()
-#### [Overview of Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md)
+#### [Overview of Microsoft Defender ATP for Mac](microsoft-defender-endpoint-mac.md)
 #### [What's New](mac-whatsnew.md)
 
 #### [Deploy]()
