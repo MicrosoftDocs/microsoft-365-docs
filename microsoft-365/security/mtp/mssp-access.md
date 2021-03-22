@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint in the Microsoft 365 security center
+title: Provide managed security service provider (MSSP) access
 description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 security center
 keywords: Getting started with the Microsoft 365 security center, OATP, MDATP, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
 ms.prod: microsoft-365-enterprise
@@ -28,16 +28,16 @@ ms.collection:
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](./microsoft-threat-protection.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 To implement a multi-tenant delegated access solution, take the following steps:
 
-1. Enable [role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac) in Defender for Endpoint in Microsoft 365 security center and connect with Azure Active Directory (Azure AD) groups.
+1. Enable [role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac) in Defender for Endpoint in Microsoft 365 security center and connect with Azure Active Directory (Azure AD) groups.
 
-2. Configure [Governance Access Packages](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
+2. Configure [Governance Access Packages](/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
 
-3. Manage access requests and audits in [Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve).
+3. Manage access requests and audits in [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
 ## Enable role-based access controls in Microsoft Defender for Endpoint in Microsoft 365 security center
 
@@ -64,9 +64,9 @@ To implement a multi-tenant delegated access solution, take the following steps:
       Perform all actions except for live response and manage security settings.
 
     - **Tier 2 Analysts** <br>
-      Tier 1 capabilities with the addition to [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
+      Tier 1 capabilities with the addition to [live response](/windows/security/threat-protection/microsoft-defender-atp/live-response)
 
-    For more information, see [Use role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac).
+    For more information, see [Use role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac).
 
 
 
@@ -86,7 +86,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     ![Image of new catalog](../../media/goverance-catalog.png)
 
-    Further more information, see [Create a catalog of resources](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create).
+    Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
 
 3. **Create access packages for MSSP resources Customer AAD: Identity Governance**
@@ -102,7 +102,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     ![Image of new access package](../../media/new-access-package.png)
 
-    For more information, see [Create a new access package](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create).
+    For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
 
 4. **Provide access request link to MSSP resources from Customer AAD: Identity Governance**
@@ -131,4 +131,4 @@ To implement a multi-tenant delegated access solution, take the following steps:
     `https://security.microsoft.com/?tid=<CustomerTenantId>` with the permissions and roles they were assigned.
 
 > [!IMPORTANT]
-> Delegated access to Microsoft Defender for Endpoint in the Microsoft 365 security center currently allows access to a single tenant per browser window. 
+> Delegated access to Microsoft Defender for Endpoint in the Microsoft 365 security center currently allows access to a single tenant per browser window.

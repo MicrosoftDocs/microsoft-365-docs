@@ -43,10 +43,11 @@ Depending on the structure of your compliance management team, you have options 
 
 | **Role group** | **Role permissions** |
 | :------------- | :------------------- |
-| **Insider Risk Management** | Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, and investigators, you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles. This configuration is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users.|
-| **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to segregate insider risk administrators into a defined group.  Users in this role group can create, read, update, and delete insider risk management policies, and global settings. |
-| **Insider Risk Management Analysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access to all insider risk management alerts, cases, and notices templates. They cannot access the insider risk Content Explorer. |
-| **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access to all insider risk management alerts, cases, notices templates, and the Content Explorer for all cases. |
+| **Insider Risk Management** | Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and auditors you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles and associated permissions. This configuration is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users. |
+| **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to segregate insider risk administrators into a defined group. Users in this role group can enable and view analytics insights and create, read, update, and delete insider risk management policies, global settings, and role group assignments. |
+| **Insider Risk Management Analysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access and view all insider risk management alerts, cases, analytics insights, and notices templates. They cannot access the insider risk Content explorer. |
+| **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access to all insider risk management alerts, cases, notices templates, and the Content explorer for all cases. |
+| **Insider Risk Management Auditors** | Use this group to assign permissions to users that will audit insider risk management activities. Users in this role group can access the insider risk audit log. |
 
 ## Understand requirements and dependencies
 
@@ -78,7 +79,7 @@ Share insider risk management documentation with the stakeholders in your organi
 - [Create and manage insider risk policies](insider-risk-management-policies.md)
 - [Investigate insider risk alerts](insider-risk-management-alerts.md)
 - [Take action on insider risk cases](insider-risk-management-cases.md)
-- [Review case data with the insider risk Content Explorer](insider-risk-management-content-explorer.md)
+- [Review case data with the insider risk Content explorer](insider-risk-management-content-explorer.md)
 - [Create insider risk notice templates](insider-risk-management-notices.md)
 
 ## Ready to get started?

@@ -14,7 +14,7 @@ ms.topic: article
 
 Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article lists the specific devices that are currently supported. For a more general statement of device requirements, see [Device requirements](device-requirements.md).
 
-For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
+For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](../index.yml). 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -73,11 +73,11 @@ In addition, the device must also meet these criteria:
 
 - If a specific SKU is listed in the device requirements, make sure you use it when you order. Doing so ensures that devices comply with Microsoft Managed Desktop software requirements. 
 - Not have completed the Windows first-run experience.
-- Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
+- Be registered with Microsoft Managed Desktop using the [Device Registration](../get-started/register-devices-self.md) feature
 
 >[!NOTE]
 >Devices with a 2.0 GHz or faster processor will provide a much better experience for users involved in these activities:
->- Using video conferencing with Teams. See [Hardware requirements for Microsoft Teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) for details.
+>- Using video conferencing with Teams. See [Hardware requirements for Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) for details.
 >-	Using one device for several different workloads.
 >- Using multiple monitors.
 
@@ -88,8 +88,3 @@ These resources can help answer questions that you might have about specific dev
 - For more questions on Dell devices contact <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>.
 
 - For more questions on HP devices and device ordering instructions, contact: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europe/Middle East/Africa (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asia Pacific/Japan (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
-
-
-
-
-

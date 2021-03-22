@@ -39,7 +39,7 @@ This page shows information specific to the security risk of a user. This includ
 
 You can access this page from multiple areas in the Microsoft 365 security center. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
 
-Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
+Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
 
 ## Related topics
 

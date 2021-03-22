@@ -27,7 +27,7 @@ description: Learn how to view directory synchronization errors and possible fix
 
 # View directory synchronization errors in Microsoft 365
 
-You can view directory synchronization errors in the Microsoft 365 admin center. Only the User object errors are displayed. To view errors with PowerShell, see [Identify objects with DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+You can view directory synchronization errors in the Microsoft 365 admin center. Only the User object errors are displayed. To view errors with PowerShell, see [Identify objects with DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 ## View directory synchronization errors in the Microsoft 365 admin center
 
@@ -48,4 +48,3 @@ To view any errors in the Microsoft 365 admin center:
    ![Example of the details of a directory sync error](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
 After viewing, see [fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) to correct any identified issues.
-

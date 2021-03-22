@@ -70,7 +70,7 @@ Need a little help? See [Start a call from a chat in Teams](https://support.micr
 
 ## Related articles
 
-[Meetings in Microsoft Teams](https://docs.microsoft.com/microsoftteams/tutorial-meetings-in-teams)
+[Meetings in Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams)
 
 [6 ways to make virtual meetings more efficient](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 
