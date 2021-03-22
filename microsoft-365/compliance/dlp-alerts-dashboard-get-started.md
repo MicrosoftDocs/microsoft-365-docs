@@ -121,9 +121,9 @@ To work with the DLP alert management dashboard:
     1. sensitive information types matched
     1. metadata
 
-5. Select the **Sensitive Info Types** tab to view details about the sensitive information types detected in the content. Details include confidence and count.
+7. Select the **Sensitive Info Types** tab to view details about the sensitive information types detected in the content. Details include confidence, count, and the content that matches the sensitive information type.
 
-6. After you investigate the alert, return to the **Overview** tab where you can manage triage and manage the disposition of the alert and add comments.
+8. After you investigate the alert, return to the **Overview** tab where you can manage triage and manage the disposition of the alert and add comments.
 
     -   To see the history of workflow management, choose **Management log**.
     -   After you take the required action for the alert, set the status of the alert to **Resolved**.
