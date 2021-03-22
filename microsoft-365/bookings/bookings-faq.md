@@ -56,15 +56,15 @@ If you use an OWA Mailbox policy to disable access to Bookings, all users will h
 
 ### Is Bookings customizable?
 
-Yes, Bookings is customizable and can be used for a variety of different scenarios. When setting up a Bookings calendar, many aspects of the Web-based scheduling page, your business information, staff details, service types, and scheduling policies can be customized.
+Yes, Bookings is customizable and can be used for various scenarios. When setting up a Bookings calendar, many aspects of the Web-based scheduling page, your business information, staff details, service types, and scheduling policies can be customized.
 
 ### Is all the functionality of the original Bookings Web app available in Microsoft Teams?
 
-A lightweight version of Bookings is now available as an app in Teams. Please find the initial announcement [here](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). There is deep link functionality to pop out in the Web app, and after setup, day-to-day use of Bookings can be done without ever leaving Teams. Information flows across platforms.
+A lightweight version of Bookings is now available as an app in Teams. The initial announcement is [here](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). There is deep link functionality to pop out in the Web app, and after setup, day-to-day use of Bookings can be done without ever leaving Teams. Information flows across platforms.
 
 ### Is Bookings a small business offering or an Enterprise offering or both?
 
-Bookings is an ideal solution for both Enterprise and small business customers, across a variety of industries. Use cases include:
+Bookings is an ideal solution for both Enterprise and small business customers, across various industries. Use cases include:
 
 - Financial services
     - consultations
@@ -139,11 +139,11 @@ Those store employees with E1/F1/F3 licenses, or with no licenses, can still be 
 
 The store employees will also display as unavailable in Bookings if an appointment has already been scheduled at that time through the Bookings Web app. Appointments booked via Bookings will reflect as busy on a staff member's calendar within Bookings. Staff with a non-Bookings enabled license can still have their personal calendar impact their availability in Bookings, provided they are within the same tenant.
 
-People in the Guests role can view any of the information the customer has provided within the initial appointment creation. For example, if the store representative who is booked for the appointment is required to call the customer prior to the appointment, they will have access to the information the customer provides during the scheduling process. The staff member who is booked will have access to all information that appears in the confirmation email, as well as the .ics calendar event (such as the customer phone number if it was entered).
+People in the Guests role can view any of the information the customer has provided within the initial appointment creation. For example, if the store representative who is booked for the appointment is required to call the customer prior to the appointment, they will have access to the information the customer provides during the scheduling process. The staff member who is booked will have access to all information that appears in the confirmation email, and the .ics calendar event (such as the customer phone number if it was entered).
 
 People in the Guest role will not have the ability to access the Bookings Web app to change settings or to view and manage appointments (add, cancel, and reschedule). However, they can make appointments on behalf of customers using the Self-service page, in the same way that a customer would make an appointment.
 
-We recommend licensing a business manager or administrator of each store with a Bookings-eligible license to set up and manage pages and appointments. The rest of the staff would then work with the employee licensed with Bookings in order to reschedule or cancel a booking.
+We recommend licensing a business manager or administrator of each store with a Bookings-eligible license to set up and manage pages and appointments. The rest of the staff would then work with the employee licensed with Bookings to reschedule or cancel a booking.
 
 ## Product features
 
@@ -153,7 +153,7 @@ Each new Bookings calendar creates a corresponding mailbox in Exchange, as well 
 
 ### Can I delete a previously created Bookings calendar?
 
-In order to delete a Bookings calendar you must delete the associated mailbox in Exchange.
+To delete a Bookings calendar, you must delete the associated mailbox in Exchange.
 
 ### If I create a calendar and someone else has access to Bookings, would they be able to see my calendar?
 
@@ -171,7 +171,7 @@ A setting called **Maximum lead time** determines the farthest in advance (measu
 
 ### How does Bookings work across time zones?
 
-All times are in the business time zone (your local time zone) by default. This means any setting you configure for a Bookings calendar, such as working hours, will appear in this time zone. The Self-service page has the ability to display all the appointment times in the end-user's time zone, which can be turned off if desired. If **Always show time slots in business time zone** remains unchecked on the Bookings page tab, then people visiting the page will see time slots in their own local time zones.
+All times are in the business time zone (your local time zone) by default. Any setting that you configure for a Bookings calendar, such as working hours, will appear in this time zone. The Self-service page has the ability to display all the appointment times in the end-user's time zone, which can be turned off if desired. If **Always show time slots in business time zone** remains unchecked on the Bookings page tab, then people visiting the page will see time slots in their own local time zones.
 
 :::image type="content" source="media/bookings-faq-region.png" alt-text="Bookings region and time zone settings":::
 
