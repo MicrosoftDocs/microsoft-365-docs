@@ -72,7 +72,7 @@ Microsoft Defender for Identity enables security operations (SecOps) analysts an
 
 ## Step 3: Turn on Microsoft 365 Defender
 
-[Microsoft 365 Defender](../security/defender/microsoft-threat-protection.md) combines signals and orchestrates capabilities into a single solution. With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
+[Microsoft 365 Defender](../security/defender/microsoft-365-defender.md) combines signals and orchestrates capabilities into a single solution. With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
 
 Microsoft 365 Defender unifies alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, and Microsoft Cloud App Security) into a single pane of glass experience. After you have configured one or more of your Defender for Office 365 services, turn on Microsoft 365 Defender. New features are added continually to Microsoft 365 Defender; consider opting in to receive preview features.
 
@@ -81,21 +81,21 @@ Microsoft 365 Defender unifies alerts, incidents, automated investigation and re
 ![Process for deploying Microsoft 365 Defender](../media/deploy-threat-protection/deploy-mtp-steps.png) 
 
 1. [Review the prerequisites](../security/defender/prerequisites.md).
-2. [Turn on Microsoft 365 Defender](../security/defender/mtp-enable.md).
+2. [Turn on Microsoft 365 Defender](../security/defender/m365d-enable.md).
 3. [Opt in for preview features](../security/defender/preview.md).
 
 ### More information about Microsoft 365 Defender
 
-- [What is Microsoft 365 Defender?](../security/defender/microsoft-threat-protection.md)
+- [What is Microsoft 365 Defender?](../security/defender/microsoft-365-defender.md)
 - [What's new in Microsoft 365 Defender](../security/defender/whats-new.md)
 
 ## Step 4: Configure Microsoft Defender for Office 365
 
-[Microsoft Defender for Office 365](../security/defender-365-security/office-365-atp.md) safeguards your organization against malicious threats in email messages (attachments and URLs), Office documents, and collaboration tools. The following table lists Microsoft Defender for Office 365 features and capabilities that are included in Microsoft 365 E5:
+[Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) safeguards your organization against malicious threats in email messages (attachments and URLs), Office documents, and collaboration tools. The following table lists Microsoft Defender for Office 365 features and capabilities that are included in Microsoft 365 E5:
 
 |Configuration, protection, and detection capabilities|Automation, investigation, remediation, and education capabilities|
 |---|---|
-|[Safe Attachments](../security/defender-365-security/atp-safe-attachments.md)<br/>[Safe Links](../security/defender-365-security/atp-safe-links.md)<br/>[Safe Documents](../security/defender-365-security/safe-docs.md)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](../security/defender-365-security/atp-for-spo-odb-and-teams.md)<br/>[Anti-phishing in Defender for Office 365 protection](../security/defender-365-security/set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)|[Threat Trackers](../security/defender-365-security/threat-trackers.md)<br/>[Threat Explorer](../security/defender-365-security/threat-explorer.md)<br/>[Automated investigation and response](../security/defender-365-security/office-365-air.md)<br/>[Attack Simulator](../security/defender-365-security/attack-simulator.md)|
+|[Safe Attachments](../security/defender-365-security/safe-attachments.md)<br/>[Safe Links](../security/defender-365-security/safe-links.md)<br/>[Safe Documents](../security/defender-365-security/safe-docs.md)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Anti-phishing in Defender for Office 365 protection](../security/defender-365-security/set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)|[Threat Trackers](../security/defender-365-security/threat-trackers.md)<br/>[Threat Explorer](../security/defender-365-security/threat-explorer.md)<br/>[Automated investigation and response](../security/defender-365-security/office-365-air.md)<br/>[Attack Simulator](../security/defender-365-security/attack-simulator.md)|
 |
 
 With Microsoft Defender for Office 365, people across your organization can communicate and collaborate more securely, with threat protection for their email content and Office documents.
@@ -105,13 +105,13 @@ With Microsoft Defender for Office 365, people across your organization can comm
 ![Process for deploying Microsoft Defender for Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
 1. [Set up and configure your Microsoft Defender for Office 365 policies](../security/defender-365-security/protect-against-threats.md).
-2. [View and use your Microsoft Defender for Office 365 reports](../security/defender-365-security/view-reports-for-atp.md).
+2. [View and use your Microsoft Defender for Office 365 reports](../security/defender-365-security/view-reports-for-mdo.md).
 3. [Use threat investigation and response capabilities](../security/defender-365-security/office-365-ti.md).
 
 ### More information about Microsoft Defender for Office 365
 
-- [Microsoft Defender for Office 365 overview](../security/defender-365-security/office-365-atp.md)
-- [What's new in Microsoft Defender for Office 365](../security/defender-365-security/whats-new-in-office-365-atp.md)
+- [Microsoft Defender for Office 365 overview](../security/defender-365-security/defender-for-office-365.md)
+- [What's new in Microsoft Defender for Office 365](../security/defender-365-security/whats-new-in-defender-for-office-365.md)
 
 ## Step 5: Configure Microsoft Defender for Endpoint
 
