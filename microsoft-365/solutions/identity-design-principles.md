@@ -257,7 +257,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
 Note: data platform security and delegation (which Power BI is a component) is a complex area.
 - **MEM/Intune** - [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control ](/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender for Endpoint** - [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles ](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/mtp-permissions.md)
+- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
 - **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
 - **Stream** - [https://docs.microsoft.com/stream/assign-administrator-user-role ](/stream/assign-administrator-user-role)
 - **Information barriers** - [https://docs.microsoft.com/microsoft-365/compliance/information-barriers ](../compliance/information-barriers.md)
