@@ -32,7 +32,7 @@ Security defaults help protect your organization from identity-related attacks b
 
 For more information about security defaults and the policies they enforce, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-If your subscription was created on or after October 22, 2019, security defaults might already be enabled for you&mdash;you should check your settings to confirm.
+If your subscription was created on or after October 22, 2019, security defaults might have already been enabled for you&mdash;you should check your settings to confirm.
 
 To enable security defaults in your Azure Active Directory (Azure AD) or to check to see if they're already enabled:
 
@@ -44,7 +44,7 @@ To enable security defaults in your Azure Active Directory (Azure AD) or to chec
 
 4. From the left menu of the Dashboard, in the **Manage** section, select **Properties**.
 
-:::image type="content" source="/media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot of the Azure Active Directory admin center showing the location of the Properties menu item.":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot of the Azure Active Directory admin center showing the location of the Properties menu item.":::
 
 5. At the bottom of the **Properties** page, select **Manage Security defaults**.
 
