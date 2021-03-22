@@ -27,7 +27,15 @@ When you duplicate the model, after you rename it (for example, to “Contract R
 
 Follow these steps to duplicate a model.
 
+1. From the content center, select **Models** to see your models list.</br>
+2. On the **Models** page, select the model you want to duplicate.
+3. On the ribbon, select **Duplicate**.
+4. On the **Duplicate model** panel:
+   a. Under **Name**, enter the new name of the model that you want to duplicate.
+   b. Under **Description**, add a description of your new model.
+5. Select **Duplicate**.</br>
 
+    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
 
 
 
