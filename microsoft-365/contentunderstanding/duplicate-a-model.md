@@ -25,7 +25,7 @@ When you duplicate the model, after you rename it (for example, to “Contract R
 
 ## Duplicate a model
 
-Follow these steps to duplicate a model.
+Follow these steps to duplicate a document understanding model.
 
 1. From the content center, select **Models** to see your models list.
 
@@ -39,11 +39,13 @@ Follow these steps to duplicate a model.
 
 4. On the **Duplicate model** panel:
 
-   a. Under **Name**, enter the new name of the model that you want to duplicate.
+   a. Under **Name**, enter the new name of the model that you want to duplicate.</br>
+
+    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
 
    b. Under **Description**, add a description of your new model.
 
-   c. Under **Advanced settings**, select whether you want to associate a new or existing [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview).
+   c. Under **Advanced settings**, select whether you want to associate an existing [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview).
 
 5. Select **Duplicate**.
 
