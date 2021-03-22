@@ -254,9 +254,7 @@ Configuring the user-assigned permissions:
 ### Outlook restrictions
 
 > [!IMPORTANT]
-> Applying the Encrypt-Only option with a sensitivity label is a recent release that's supported only by built-in labeling and not the Azure Information Protection unified labeling client. For email clients that don't support this capability, the label won't be visible.
->
-> To check the minimum versions of Outlook apps that support applying the Encrypt-Only option with a sensitivity label, see the [Outlook table](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) for listed capabilities.
+> Not all email clients support the Encrypt-Only option with a sensitivity label. Be sure to check the [Outlook table](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) for minimum versions.
 
 In Outlook, when a user applies a sensitivity label that lets them assign permissions to a message, you can choose the **Do Not Forward option** or **Encrypt-Only**. The user will see the label name and description at the top of the message, which indicates the content's being protected. Unlike Word, PowerPoint, and Excel (see the [next section](#word-powerpoint-and-excel-permissions)), users aren't prompted to select specific permissions.
 
