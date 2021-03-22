@@ -36,13 +36,13 @@ Follow these steps to rename a document understanding model.
 
 3. On the ribbon, select **Rename**.</br>
 
-    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
+    ![Screenshot of the Models page showing a selected model with the Rename option highlighted.](../media/content-understanding/select-model-rename.png) </br>
 
 4. On the **Rename model** panel:
 
    a. Under **New name**, enter the new name of the model that you want to rename.</br>
 
-    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
+    ![Screenshot showing the Rename model panel.](../media/content-understanding/rename-model-panel.png) </br>
 
    b. (Optional) Under **Advanced settings**, select whether you want to associate an existing [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview).
 

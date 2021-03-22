@@ -34,13 +34,13 @@ Follow these steps to rename an entity extractor.
 
 3. Under **Entity extractors**, select the name of the extractor you want to rename, and then select **Rename**.</br>
 
-    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
+    ![Screenshot of the Entity extractors section showing a selected extractor with the Rename option highlighted.](../media/content-understanding/entity-extractor-rename.png) </br>
 
 4. On the **Rename entity extractor** panel:
 
    a. Under **New name**, enter the new name of the extractor.</br>
 
-    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
+    ![Screenshot showing the Entity extractor panel.](../media/content-understanding/rename-entity-extractor-panel.png) </br>
 
    b. (Optional) Under **Advanced settings**, select whether you want to associate an existing site column.
 

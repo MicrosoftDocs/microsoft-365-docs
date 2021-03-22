@@ -33,13 +33,13 @@ Follow these steps to duplicate a document understanding model.
 
 3. On the ribbon, select **Duplicate**.</br>
 
-    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
+    ![Screenshot of the Models page showing a selected model with the Duplicate option highligted.](../media/content-understanding/select-model-duplicate.png) </br>
 
 4. On the **Duplicate model** panel:
 
    a. Under **Name**, enter the new name of the model that you want to duplicate.</br>
 
-    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
+    ![Screenshot showing the Duplicate model panel.](../media/content-understanding/duplicate-model-panel.png) </br>
 
    b. Under **Description**, add a description of your new model.
 
