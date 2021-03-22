@@ -235,7 +235,7 @@ You can use these options to let users assign permissions when they manually app
 
 - In Word, PowerPoint, and Excel, a user is prompted to select their own permissions for specific users, groups, or organizations.
 
-    This option is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, the label either won't be visible for users or the label is visible for consistency, but it can't be applied with an explanation message to users.
+    This option is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, the label either won't be visible for users, or the label is visible for consistency but it can't be applied with an explanation message to users.
     
     To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Let users assign permissions: - Prompt users**.
 
