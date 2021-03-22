@@ -57,7 +57,6 @@ Per-App M365 API Usage Data by Workload (count, download/upload)
 Per-User M365 API Usage Data by Workload (count, download/upload)
 M365 API Usage Data For High-Value/Classified Assets (count, download/upload)
 M365 API Error Analysis per App
-
 --> 
 
 With MAPG, you can see:
@@ -82,13 +81,17 @@ With MAPG, you can see:
 - Policy hit and success rates insight.
 - Insights from Microsoft Cloud App Security (MCAS).
 - Policies created in MCAS in the MAPG portal.
-- Alerts for OAuth apps generated in MCAS, in MAPG portal.
+- Alerts for OAuth apps generated in MCAS, in the MAPG portal.
 
 You can also:
 
-- Customize the dashboard to select the insights they want to view.
-- Drill down to a single app (app page) with all associated insights.
+- Customize the dashboard to select the insights you want to view.
+- Drill down to a single app (app page) with all its associated insights.
 - Drill-down into users.
+
+<!--
+NOTE TO WRITER: Above list was taken from an internal spec. It will need to be scrubbed for the public preview.
+--> 
 
 ## Next step
 

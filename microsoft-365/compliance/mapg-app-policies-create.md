@@ -27,7 +27,11 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
 
-To create a new app policy, go to **Microsoft 365 Compliance Center > App protection & governance > Overview page > Policies > Create New**.
+To create a new app policy, go to **Microsoft 365 Compliance Center > App protection & governance > Overview page > Policies**:
+
+- To create a new app policy with templates designed for app usage, select **Create policy** under **Create an app usage policy**.
+- To create a new app policy with templates designed for app permissions, select **Create policy** under **Create a permissions policy**.
+- To create a new app policy for app certification or for a custom policy, select **Create new**.
 
 ## App policy templates
 
@@ -70,7 +74,7 @@ MAPG includes these templates to generate alerts for app certification.
 
 Use a custom app policy when you need to do something not already done by one of the built-in templates.
 
-To create a new custom app policy, on the **Choose App policy template page**, select the **Custom** category, the **Custom policy** template, and then select **Next**.
+To create a new custom app policy, first select **Create new** on the **Policies** page. On the **Choose App policy template page**, select the **Custom** category, the **Custom policy** template, and then select **Next**.
 
 On the **Name and description** page, configure the following:
 
@@ -122,6 +126,10 @@ Here are the available conditions for a custom app policy.
 | Workload accessed | OneDrive and/or SharePoint and/or Exchange | Multiple selections allowed. |
 | Error rate | Error rate is greater than X% |  |
 ||||
+
+<!--
+NOTE TO WRITER: Replace X in the above table with correct values.
+--> 
 
 All of the specified conditions must be met for this app policy to apply.
 

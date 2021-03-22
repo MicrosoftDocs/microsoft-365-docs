@@ -79,7 +79,7 @@ For additional information about each role, see [Administrator role permissions]
 
 ## A first glimpse at MAPG
 
-To see the MAPG dashboard, go to [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection).
+To see the MAPG dashboard, go to [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection). Note that your sign-in account must have one of the above administrator roles to view any MAPG data.
 
 ## MAPG integration with Azure Active Directory and Microsoft Cloud App Security
 

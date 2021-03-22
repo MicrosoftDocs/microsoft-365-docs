@@ -31,23 +31,27 @@ For a summary of apps in your tenant, go to **Microsoft 365 Compliance Center > 
 
 ![The MAPG app summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
+>[!Note]
+> Your sign-in account must have one of [these roles](manage-app-protection-governance.md#administrator-roles) to view any MAPG data.
+>
+
 You will see a list of apps and this information:
 
 - App Name
 - Publisher
-- App Certification
+- App certification
 
   Indicates whether the app is compatible with Microsoft technologies, compliant with cloud app security best practices, and supported by Microsoft.
 
-- Last Modified
-- Date Installed
-- Permission Privilege
-- Number of Users
-- Data Access
+- Last modified
+- Date installed
+- Privilege level
+- Number of users
+- Data access
 
   The sum of the app’s data upload and download in the tenant over the last day, along with the change over the prior day.
 
-The app list is sorted by **Last Modified** by default. To sort the list by another category, select the category name.
+MAPG sorts the app list by **Last modified** by default. To sort the list by another app attribute, select the attribute name.
 
 You can also select **Search** to search for an app by name.
 
@@ -61,13 +65,13 @@ The app details pane provides additional information on these tabs:
 
 | Tab name | Description |
 |:-------|:-----|
-| Details | See additional data on the app such as the date first consented and the App ID. |
+| Details | See additional data on the app such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**. |
 | Usage | See the data accessed by the app in the tenant, plot the data usage, and show usage by the top \<x> users and users with [priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
 | Users | See a list of users who are using the app, whether they are a priority account, and the amount of data downloaded and uploaded. |
-| Permissions | See a summary of the permissions granted to and used by the app, the list of specific permissions, and their status and usage level. |
+| Permissions | See a summary of the permissions granted to and used by the app and the list of specific permissions. See the [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference) for more information. |
 |||
 
-There is also a **Disable App** control to disable the use of the selected app and an **Enable App** control to enable the use of the disabled app, but these actions require these [administrator roles](manage-app-protection-governance.md#administrator-roles):
+For an enabled app, there is also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these [administrator roles](manage-app-protection-governance.md#administrator-roles):
 
 - Compliance Administrator
 - Global Administrator
