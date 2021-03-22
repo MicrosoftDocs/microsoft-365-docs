@@ -3116,26 +3116,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/mtp/monitor-apps.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/monitor-apps",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/mtp/monitor-data.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/monitor-data",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/mtp/monitor-devices.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/monitor-devices",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/mtp/monitoring-and-reporting.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/security/mtp/mtp-action-center.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-action-center",
       "redirect_document_id": true
@@ -3257,7 +3237,7 @@
     },
     {
       "source_path": "microsoft-365/security/mtp/tickets-security-center.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/tickets-security-center",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/tickets",
       "redirect_document_id": true
     },
     {
