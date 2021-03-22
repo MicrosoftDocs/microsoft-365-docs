@@ -526,7 +526,7 @@ Communication compliance policy matches are stored in a supervision mailbox for 
 
 To check the size of a supervision mailbox for a policy, complete the following:
 
-1. Use the Connect-ExchangeOnline cmdlet in the Exchange Online PowerShell V2 module to connect to Exchange Online PowerShell using modern authentication.
+1. Use the [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) cmdlet in the Exchange Online PowerShell V2 module to connect to Exchange Online PowerShell using modern authentication.
 2. Run the following in PowerShell:
 
     ```PowerShell
