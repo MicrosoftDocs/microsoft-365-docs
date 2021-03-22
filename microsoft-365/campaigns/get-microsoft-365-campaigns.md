@@ -2,8 +2,8 @@
 title: "Get Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
 ms.audience: Admin
 ms.topic: article

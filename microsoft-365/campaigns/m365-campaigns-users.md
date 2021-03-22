@@ -2,8 +2,8 @@
 title: "How these security recommendations affect your users"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
 ms.audience: Admin
 ms.topic: conceptual

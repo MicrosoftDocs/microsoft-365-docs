@@ -2,8 +2,8 @@
 title: "Sign in to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
 ms.audience: Admin
 ms.topic: article
