@@ -40,6 +40,8 @@ We empower security admins to customize their security settings to satisfy the n
 
 These settings cover a range of features that are outside of security policies.
 
+<br>
+
 ****
 
 |Security feature name|Standard|Strict|Comment|
@@ -53,8 +55,8 @@ These settings cover a range of features that are outside of security policies.
 |Unified Auditing should be enabled|Yes|Yes||
 |[IMAP connectivity to mailbox](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
 |[POP connectivity to mailbox](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
-|Authenticated SMTP submission|Disabled|Disabled|Authenticated client SMTP submission (also known as client SMTP submission or SMTP AUTH) is required for POP3 and IMAP4 clients to send email.|
-|EWS connectivity to mailbox|Disabled|Disabled||
+|Authenticated SMTP submission|Disabled|Disabled|Authenticated client SMTP submission (also known as client SMTP submission or SMTP AUTH) is required for POP3 and IMAP4 clients and applications and devices that generate and send email. <p> For instructions to enable and disable SMTP AUTH globally or selectively, see [Enable or disable authenticated client SMTP submission in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission).|
+|EWS connectivity to mailbox|Disabled|Disabled|Outlook uses Exchange Web Services for free/busy, out-of-office settings, and calendar sharing. If you can't disable EWS globally, you have the following options: <ul><li>Use [Authentication policies](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) to prevent EWS from using Basic authentication if your clients support modern authentication (modern auth).</li><li>Use [Client Access Rules](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) to limit EWS to specific users or source IP addresses.</li><li>Control EWS access to specific applications globally or per user. For instructions, see [Control access to EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange).</li></ul> <p> The [Report message add-in](enable-the-report-message-add-in.md) and the [Report phishing add-in](enable-the-report-phish-add-in.md) uses REST by default in supported environments, but will fall back to EWS if REST isn't available. The supported environments that use REST are:<ul><li>Exchange Online</li><li>Exchange 2019 or Exchange 2016</li><li>Current Outlook for Windows from a Microsoft 365 subscription or one-time purchase Outlook 2019.</li><li>Current Outlook for Mac from a Microsoft 365 subscription or one-time purchase Outlook for Mac 2016 or later.</li><li>Outlook for iOS and Android</li><li>Outlook on the web</li></ul>|
 |[PowerShell connectivity](/powershell/exchange/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](/powershell/module/exchange/get-user) cmdlet).|
 |Use [spoof intelligence](learn-about-spoof-intelligence.md) to add senders to your allow list|Yes|Yes||
 |[Directory-Based Edge Blocking (DBEB)](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Enabled|Enabled|Domain Type = Authoritative|

@@ -216,11 +216,11 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
      - **Enable mailbox intelligence?**: The default value is **On**. To turn it off, slide the toggle to **Off**.
 
-     - **Enable mailbox intelligence based impersonation protection?**: This setting is only available if **Enable mailbox intelligence?** is **On**.
+     - **Enable mailbox intelligence based impersonation protection?**: This setting is available only if **Enable mailbox intelligence?** is **On**. Turn on this setting to specify the action to take on messages for impersonation detections from mailbox intelligence results.
 
-       In **If email is sent by an impersonated user**, you can specify one of the following actions to take on messages that fail mailbox intelligence (the same actions that are available for protected users and protected domains):
+       In **If email is sent by an impersonated user**, you can specify one of the following actions (the same actions that are available for protected users and protected domains):
 
-       - **Don't apply any action**
+       - **Don't apply any action**: Note that this value has the same result as turning on **Enable mailbox intelligence?** but turning off **Enable mailbox intelligence based impersonation protection?**.
        - **Redirect message to other email addresses**
        - **Move message to Junk Email folder**
        - **Quarantine the message**
