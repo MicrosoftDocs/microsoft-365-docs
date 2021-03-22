@@ -52,5 +52,5 @@ Defender for Endpoint for Android allows IT Administrators the ability to config
 For more information, see [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## Related topics
-- [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md)
+- [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md)
 - [Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune](android-intune.md)

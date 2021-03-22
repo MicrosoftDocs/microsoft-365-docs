@@ -296,5 +296,5 @@ by navigating to the **Devices** page.
 
 
 ## Related topics
-- [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md)
+- [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md)
 - [Configure Microsoft Defender for Endpoint for Android features](android-configure.md)
