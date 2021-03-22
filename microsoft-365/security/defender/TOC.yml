@@ -249,8 +249,6 @@
                   items: 
                     - name: ServiceNow integration overview
                       href: tickets.md
-                    - name: ServiceNow tickets in the security center
-                      href: tickets-security-center.md
             - name: Microsoft 365 Defender APIs (Preview)
               items: 
                 - name: Overview of Microsoft 365 Defender APIs (Preview)
