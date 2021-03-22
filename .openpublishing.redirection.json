@@ -3486,16 +3486,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/deploy-an-isolated-sharepoint-online-team-site.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-365-security/deploy-an-isolated-sharepoint-online-team-site",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/design-an-isolated-sharepoint-online-team-site.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-365-security/design-an-isolated-sharepoint-online-team-site",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-365-security/detect-and-remediate-illicit-consent-grants",
       "redirect_document_id": true
@@ -3626,16 +3616,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-365-security/isolated-sharepoint-online-team-site-dev-test-environment",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/isolated-sharepoint-online-team-sites.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-365-security/isolated-sharepoint-online-team-sites",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-365-security/junk-email-reporting-add-in-for-microsoft-outlook",
       "redirect_document_id": true
@@ -3668,11 +3648,6 @@
     {
       "source_path": "microsoft-365/security/office-365-security/manage-admin-role-group-permissions-in-eop.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-365-security/manage-admin-role-group-permissions-in-eop",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/manage-an-isolated-sharepoint-online-team-site.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-365-security/manage-an-isolated-sharepoint-online-team-site",
       "redirect_document_id": true
     },
     {
