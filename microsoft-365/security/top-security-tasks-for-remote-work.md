@@ -115,13 +115,13 @@ You'll need to work with your Exchange Online administrator and SharePoint Onlin
 
 ## 5: Turn on Microsoft 365 Defender
 
-Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./defender/microsoft-threat-protection.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane at [security.microsoft.com](https://security.microsoft.com).
+Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane at [security.microsoft.com](https://security.microsoft.com).
 
 ![MTP dashboard illustration](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
 After you have configured one or more of your Defender for Office 365 services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
 
-- [Learn more about MTP](./defender/microsoft-threat-protection.md)
+- [Learn more about MTP](./defender/microsoft-365-defender.md)
 - [Turn on MTP](./defender/mtp-enable.md)
 - [Opt in for preview features](./defender/preview.md)
 
