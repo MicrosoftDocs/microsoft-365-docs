@@ -13,7 +13,7 @@
     - name: Identity and device access configurations
       items: 
         - name: Overview
-          href: ./office-365-security/microsoft-365-policies-configurations.md
+          href: ./defender-365-security/microsoft-365-policies-configurations.md
         - name: Prerequisite work
           href: ./defender-365-security/identity-access-prerequisites.md
         - name: Common identity and device access policies
@@ -492,9 +492,9 @@
             - name: Create a custom payload for Attack simulation training
               href: ./defender-365-security/attack-simulation-training-payloads.md
             - name: Gain insights through Attack simulation training
-              href: ./office-365-security/attack-simulation-training-insights.md
+              href: ./defender-365-security/attack-simulation-training-insights.md
             - name: Attack simulation training deployment considerations and FAQ
-              href: ./office-365-security/attack-simulation-training-faq.md
+              href: ./defender-365-security/attack-simulation-training-faq.md
             - name: Recommended settings for configuring EOP and Defender for Office 365 Security
               href: ./defender-365-security/recommended-settings-for-eop-and-office365.md
             - name: Best practices for configuring EOP
