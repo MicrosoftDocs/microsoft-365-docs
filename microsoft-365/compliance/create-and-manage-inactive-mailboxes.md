@@ -37,7 +37,7 @@ Microsoft 365 makes it possible for you to retain the contents of deleted mailbo
 
 - If a Litigation Hold or a retention policy (that's configured to retain or retain and then delete content) isn't applied to a mailbox before it's deleted, the contents of the mailbox won't be retained or discoverable. However, the deleted mailbox can be recovered within 30 days of deletion, but the mailbox and its contents will be permanently deleted after 30 days if it isn't recovered.
 
-- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). For more information about retention policies, see [Learn about retention policies and retention labels](retention.md).
+- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds). For more information about retention policies, see [Learn about retention policies and retention labels](retention.md).
   
 ## Create an inactive mailbox
 
@@ -51,7 +51,7 @@ If a hold is already placed on a mailbox, or if a retention policy is already ap
   
 For step-by-step procedures for placing a mailbox on Litigation Hold or applying a retention policy, see:
   
-- [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
+- [Place a mailbox on Litigation Hold](./create-a-litigation-hold.md)
     
 - [Learn about retention policies and retention labels in Office 365](retention.md)
     
@@ -60,10 +60,10 @@ For step-by-step procedures for placing a mailbox on Litigation Hold or applying
   
 ### Step 2: Delete the mailbox
 
-After the mailbox is placed on hold or a retention policy is applied to it, the next step is to delete the mailbox. The best way to delete a mailbox is to delete the corresponding user account in the Microsoft 365 admin center. For information about deleting user accounts, see [Delete a user from your organization](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
+After the mailbox is placed on hold or a retention policy is applied to it, the next step is to delete the mailbox. The best way to delete a mailbox is to delete the corresponding user account in the Microsoft 365 admin center. For information about deleting user accounts, see [Delete a user from your organization](../admin/add-users/delete-a-user.md).
   
 > [!NOTE]
-> You can also delete the mailbox by using the **Remove-Mailbox** cmdlet in Exchange Online PowerShell. For more information, see [Delete or restore user mailboxes in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 
+> You can also delete the mailbox by using the **Remove-Mailbox** cmdlet in Exchange Online PowerShell. For more information, see [Delete or restore user mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes). 
   
 
 ## View a list of inactive mailboxes

@@ -38,6 +38,8 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 |copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.         | auditable and restrictable|
 |copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive         |auditable and restrictable|
 |print a document    |Detects when a user attempts to print a protected item to a local or network printer.| auditable and restrictable         |
+|copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session |  auditable and restrictable|
+|copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).| auditable and restrictable|
 |create an item|Detects when a user creates an item| auditable|
 |rename an item|Detects when a user renames an item| auditable|
 
@@ -88,7 +90,7 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
+If you have onboarded devices through [Microsoft Defender for Endpoint](/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
 
 > [!div class="mx-imgBorder"]
 > ![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
@@ -156,5 +158,5 @@ Now that you've learned about Endpoint DLP, your next steps are:
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [Insider Risk management](insider-risk-management.md)
