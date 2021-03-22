@@ -3,10 +3,10 @@ title: Use OneDrive LTI
 ms.author: v-cichur
 author: cichur
 manager: serdars
-ms.reviewer:amitman 
+ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: 
+ms.service: ITPro
 search.appverid: 
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
@@ -55,58 +55,64 @@ The person who performs this integration should be an admin of Canvas and an adm
 
 1. Sign in to the Microsoft Azure portal with the tenant admin account. The Azure tenant administrator should also have the Group administrator role.
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image1.png" style="width:6.5in;height:2.54792in" />
+    ![group administrator highlighted](../media/lti-media/lti-group-admin.png)
 
 2. Sign in to the Microsoft [OneDrive LTI portal](https://odltiappnl.azurewebsites.net/admin).
 
 3. Accept the permissions to complete the sign in.
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image2.png" style="width:6.5in;height:3.48194in" />
+    ![accept permissions](../media/lti-media/lti-permissions.png)
 
-4. Select **Add LTI Tenant**
+4. Select **Add LTI Tenant**.
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image3.png" style="width:6.5in;height:2.44028in" />
+     ![add LTI tenant](../media/lti-media/lti-add-tenant.png)
 
-1. Select **LTI Consumer Platform** as **Canvas** from the dropdown.
+5. Select **LTI Consumer Platform** as **Canvas** from the dropdown.
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image4.png" style="width:6.5in;height:1.42639in" />
+6. Select **Canvas Base URL** and then select **Next**.
 
-1. Select **Canvas Base URL** and then select **Next**.
+    ![select Canvas and add base URL](../media/lti-media/lti-canvas-base-url.png)
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image5.png" style="width:6.5in;height:1.48472in" />
+   The next screen shows fields that are confidential to you.
 
- You'll see the following screen. The fields on this page are confidential to you. Click **Next** on this page
+7. Select **Next** from ?? page.
 
 <img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image6.png" style="width:6.5in;height:3.3375in" />
 
-1.  You will see the following screen. It completes the first part of journey on azure portal
+8. Select **Next** in the screen that shows information that's confidential to you.
+ 
+   The final screen of the Azure portal shows the next steps for adding your Canvas instance.
+ 
+9. Copy the Developer Keys from this screen. You'll use when you create the Canvas instance. 
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image7.png" style="width:6.5in;height:2.05833in" />
+## Add the Canvas instance
 
-1.  Go to your canvas instance. Select **Admin** à **Developer Keys**. Choose **LTI Key** in the dropdown on Developer Key button on top right
+1. In your Canvas instance, deselect **Admin** > **Developer Keys**.
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image8.png" style="width:6.5in;height:3.38889in" />
+2. Choose **LTI Key** in the dropdown on **Developer Key**.
 
-1.  Copy the values here from step \#8
+   ![Get the LTI developer keys](../media/lti-media/lti-developer-keys.png)
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image9.png" style="width:6.5in;height:3.37083in" />
+3. Paste the developer keys here. 
 
-1.  The key gets created in **OFF** mode
+     ![Paste the developer keys](../media/lti-media/lti-developer-keys.png)
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image10.png" style="width:6.5in;height:3.35556in" />
+   The key gets created in **OFF** mode
 
-1.  Copy the highlighted text. This serves as Client ID in Microsoft OneDrive LTI portal
+   ![The created developer keys in the off mode](../media/lti-media/copy-developer-keys.png)
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image11.png" style="width:6.5in;height:3.36319in" />
+4. Copy the highlighted text.
+    This serves as Client ID in Microsoft OneDrive LTI portal.
 
-1.  Paste this text into **Client ID** field in Microsoft OneDrive LTI portal and click **Next**
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image12.png" style="width:6.5in;height:2.75139in" />
 
-1.  The resulting page looks like this. Click **Save**
+5. Paste the text into the **Client ID** field in Microsoft OneDrive LTI portal, and then select **Next**.
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image13.png" style="width:6.5in;height:3.17222in" />
 
-1.  The settings can be viewed by clicking **View LTI Tenants**
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image14.png" style="width:6.5in;height:1.5in" />
+6. Select **Save**.
+
+
+7. View the settings by selecting**View LTI Tenants**.
+
+
