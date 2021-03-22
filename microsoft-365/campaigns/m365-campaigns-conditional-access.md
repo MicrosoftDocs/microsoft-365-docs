@@ -61,7 +61,7 @@ If your organization has complex security requirements or you need more granular
 
 Conditional Access lets you create and define policies that react to sign-in events and request additional actions before a user is granted access to an application or service. Conditional Access policies can be granular and specific, empowering users to be productive wherever and whenever, but also protecting your organization.
 
-Security defaults are available to all customers, while Conditional Access requires licenses for one of the following:
+Security defaults are available to all customers, while Conditional Access requires a license for one of the following:
 
 - Azure Active Directory Premium P1 or P2
 - Microsoft 365 Business Premium
