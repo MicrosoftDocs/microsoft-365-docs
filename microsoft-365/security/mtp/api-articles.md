@@ -35,6 +35,6 @@ ms.technology: m365d
 
 The following resources provide more information about APIs available for other Microsoft security solutions, beyond the Microsoft 365 Defender API.
 
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
-- [Microsoft Defender for Office 365](https://docs.microsoft.com/office/office-365-management-api/)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/api-introduction)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
+- [Microsoft Defender for Office 365](/office/office-365-management-api/)
+- [Microsoft Cloud App Security](/cloud-app-security/api-introduction)

@@ -50,37 +50,37 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 
 |Protection type|Subscription requirement|
 |---|---|
-|Audit logging (for reporting purposes)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|Anti-malware protection|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
-|Anti-phishing protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Anti-spam protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Zero-hour auto purge (for email)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Audit logging (for reporting purposes)|[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
+|Anti-malware protection|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
+|Anti-phishing protection|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
+|Anti-spam protection|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
+|Zero-hour auto purge (for email)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
+|Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365 ](atp-for-spo-odb-and-teams.md)|
-|Advanced anti-phishing protection|[Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Advanced anti-phishing protection|[Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### Roles and permissions
 
-To configure Defender for Office 365 policies, you must be assigned an appropriate role in the [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Take a look at the table below for roles that can do these actions.
+To configure Defender for Office 365 policies, you must be assigned an appropriate role in the [Security & Compliance Center](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Take a look at the table below for roles that can do these actions.
 
 ****
 
 |Role or role group|Where to learn more|
 |---|---|
 |global administrator|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
-|Security Administrator|[Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online Organization Management|[Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> and <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|Security Administrator|[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> and <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
 |
 
 To learn more, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## Before you begin, turn on Audit logging for reporting and investigation
 
-Start your audit logging early. You'll need auditing to be **ON** for certain of the steps that follow. Audit logging is available in subscriptions that include [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, such as the [Security Dashboard](security-dashboard.md), [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+Start your audit logging early. You'll need auditing to be **ON** for certain of the steps that follow. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, such as the [Security Dashboard](security-dashboard.md), [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## Part 1 - Anti-malware protection
 
-[Anti-malware protection](anti-malware-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+[Anti-malware protection](anti-malware-protection.md) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-malware**.
 
@@ -98,7 +98,7 @@ To learn more about anti-malware policy options, see [Configure anti-malware pol
 
 ## Part 2 - Anti-phishing protection
 
-[Anti-phishing protection](anti-phishing-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Advanced anti-phishing protection is available in [Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+[Anti-phishing protection](anti-phishing-protection.md) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Advanced anti-phishing protection is available in [Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 The following procedure describes how to configure an anti-phishing policy in Microsoft Defender for Office 365. The steps are similar for configuring an anti-phishing policy in EOP.
 
@@ -134,7 +134,7 @@ To learn more about your anti-phishing policy options, see [Configure anti-phish
 
 ## Part 3 - Anti-spam protection
 
-[Anti-spam protection](anti-spam-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+[Anti-spam protection](anti-spam-protection.md) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-spam**.
 
@@ -152,7 +152,7 @@ To learn more about your anti-spam policy options, see [Configure anti-spam poli
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](atp-safe-attachments.md) and [Safe Links](atp-safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](atp-safe-attachments.md) and [Safe Links](atp-safe-links.md) policies.
 
 ### Safe Attachments policies in Microsoft Defender for Office 365
 
@@ -221,7 +221,7 @@ Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Usin
 
 3. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) and [Safe Links policies](set-up-atp-safe-links-policies.md).
 
-4. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to `$true`.
+4. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to `$true`.
 
    - `$true` blocks all actions (except Delete) for detected files. People cannot open, move, copy, or share detected files.
    - `$false` blocks all actions except Delete and Download. People can choose to accept the risk and download a detected file.
@@ -269,7 +269,7 @@ Along with configuring protection from malware, malicious URLs and files, phishi
 
 ### Zero-hour auto purge for email in EOP
 
-[Zero-hour auto purge](zero-hour-auto-purge.md) (ZAP) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). This protection is turned on by default; however, the following conditions must be met for protection to be in effect:
+[Zero-hour auto purge](zero-hour-auto-purge.md) (ZAP) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). This protection is turned on by default; however, the following conditions must be met for protection to be in effect:
 
 - Spam actions are set to **Move message to Junk Email folder** in [anti-spam policies](anti-spam-protection.md).
 
@@ -286,6 +286,6 @@ After configuring the threat protection features, make sure to monitor how those
 |What to do|Resources to learn more|
 |---|---|
 |See how threat protection features are working for your organization by viewing reports|[Security dashboard](security-dashboard.md) <p> [Email security reports](view-email-security-reports.md) <p> [Reports for Microsoft Defender for Office 365](view-reports-for-atp.md) <p> [Threat Explorer](threat-explorer.md)|
-|Periodically review and revise your threat protection policies as needed|[Secure Score](../mtp/microsoft-secure-score.md) <p> [Smart reports and insights](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 threat investigation and response features](keep-users-safe-with-office-365-ti.md)|
-|Watch for new features and service updates|[Standard and Targeted release options](../../admin/manage/release-options-in-office-365.md) <p> [Message Center](../../admin/manage/message-center.md) <p> [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|Periodically review and revise your threat protection policies as needed|[Secure Score](../mtp/microsoft-secure-score.md) <p> [Smart reports and insights](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 threat investigation and response features](./office-365-ti.md)|
+|Watch for new features and service updates|[Standard and Targeted release options](../../admin/manage/release-options-in-office-365.md) <p> [Message Center](../../admin/manage/message-center.md) <p> [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |Learn the details about recommended Standard and Strict security configurations for EOP and Defender for Office 365|[Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md)|

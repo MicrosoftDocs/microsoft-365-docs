@@ -59,18 +59,18 @@ To increase the effectiveness of anti-phishing protection in Microsoft Defender 
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
   - To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
   - For read-only access to anti-phishing policies, you need to be a member of the **Global Reader** or **Security Reader** role groups<sup>\*</sup>.
 
-  For more information, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Notes**:
 
   - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature<sup>\*</sup>.
+  - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature<sup>\*</sup>.
   - <sup>\*</sup> In the Security & Compliance Center, read-only access allows users to view the settings of custom anti-phishing policies. Read-only users can't see the settings in the default anti-phishing policy.
 
 - For our recommended settings for anti-phishing policies in Microsoft Defender for Office 365, see [Anti-phishing policy in Defender for Office 365 settings](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
@@ -221,11 +221,11 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
      - **Enable mailbox intelligence?**: The default value is **On** [Toggle On](../../media/scc-toggle-on.png). To turn it off, slide the toggle to **Off** ![Toggle Off](../../media/scc-toggle-off.png).
 
-     - **Enable mailbox intelligence based impersonation protection?**: This setting is only available if **Enable mailbox intelligence?** is **On**.
+     - **Enable mailbox intelligence based impersonation protection?**: This setting is available only if **Enable mailbox intelligence?** is **On**. Turn on this setting to specify the action to take on messages for impersonation detections from mailbox intelligence results.
 
-       In **If email is sent by an impersonated user**, you can specify one of the following actions to take on messages that fail mailbox intelligence (the same actions that are available for protected users and protected domains):
+       In **If email is sent by an impersonated user**, you can specify one of the following actions (the same actions that are available for protected users and protected domains):
 
-       - **Don't apply any action**
+       - **Don't apply any action**: Note that this value has the same result as turning on **Enable mailbox intelligence?** but turning off **Enable mailbox intelligence based impersonation protection?**.
        - **Redirect message to other email addresses**
        - **Move message to the recipients' Junk Email folders**
        - **Quarantine the message**
@@ -261,7 +261,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
    - **Spoofing filter settings**: Use the **Enable spoof intelligence?** setting to turn spoof intelligence on or off. The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off** ![Toggle Off](../../media/scc-toggle-off.png).
 
      > [!NOTE]
-     > You don't need to turn off spoof intelligence if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > You don't need to turn off anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    - **Unauthenticated sender settings**: You can configure the following settings:
      - **Enable unauthenticated sender question mark (?) symbol?**: Add a question mark to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). The default value is **On**. To turn it off, slide the toggle to **Off** ![Toggle Off](../../media/scc-toggle-off.png).
@@ -433,7 +433,7 @@ This example creates anti-phish policy named Research Quarantine with the follow
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
-For detailed syntax and parameter information, see [New-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishPolicy).
+For detailed syntax and parameter information, see [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
 
 #### Step 2: Use PowerShell to create an anti-phish rule
 
@@ -453,7 +453,7 @@ This example creates an anti-phish rule named Research Department with the follo
 New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
 ```
 
-For detailed syntax and parameter information, see [New-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishRule).
+For detailed syntax and parameter information, see [New-AntiPhishRule](/powershell/module/exchange/New-AntiPhishRule).
 
 ### Use PowerShell to view anti-phish policies
 
@@ -475,7 +475,7 @@ This example returns all the property values for the anti-phish policy named Exe
 Get-AntiPhishPolicy -Identity "Executives"
 ```
 
-For detailed syntax and parameter information, see [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishPolicy).
+For detailed syntax and parameter information, see [Get-AntiPhishPolicy](/powershell/module/exchange/Get-AntiPhishPolicy).
 
 ### Use PowerShell to view anti-phish rules
 
@@ -507,7 +507,7 @@ This example returns all the property values for the anti-phish rule named Conto
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-For detailed syntax and parameter information, see [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishrule).
+For detailed syntax and parameter information, see [Get-AntiPhishRule](/powershell/module/exchange/Get-AntiPhishrule).
 
 ### Use PowerShell to modify anti-phish policies
 
@@ -523,7 +523,7 @@ To modify an anti-phish policy, use this syntax:
 Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-AntiPhishPolicy).
+For detailed syntax and parameter information, see [Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy).
 
 ### Use PowerShell to modify anti-phish rules
 
@@ -537,7 +537,7 @@ To modify an anti-phish rule, use this syntax:
 Set-AntiPhishRule -Identity "<RuleName>" <Settings>
 ```
 
-For detailed syntax and parameter information, see [Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/set-antiphishrule).
+For detailed syntax and parameter information, see [Set-AntiPhishRule](/powershell/module/exchange/set-antiphishrule).
 
 ### Use PowerShell to enable or disable anti-phish rules
 
@@ -561,7 +561,7 @@ This example enables same rule.
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) and [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule).
+For detailed syntax and parameter information, see [Enable-AntiPhishRule](/powershell/module/exchange/enable-antiphishrule) and [Disable-AntiPhishRule](/powershell/module/exchange/disable-antiphishrule).
 
 ### Use PowerShell to set the priority of anti-phish rules
 
@@ -601,7 +601,7 @@ This example removes the anti-phish policy named Marketing Department.
 Remove-AntiPhishPolicy -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishPolicy).
+For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](/powershell/module/exchange/Remove-AntiPhishPolicy).
 
 ### Use PowerShell to remove anti-phish rules
 
@@ -619,7 +619,7 @@ This example removes the anti-phish rule named Marketing Department.
 Remove-AntiPhishRule -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishRule).
+For detailed syntax and parameter information, see [Remove-AntiPhishRule](/powershell/module/exchange/Remove-AntiPhishRule).
 
 ## How do you know these procedures worked?
 

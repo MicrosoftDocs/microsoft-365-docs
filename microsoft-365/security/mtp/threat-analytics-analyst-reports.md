@@ -30,7 +30,7 @@ ms.custom: seo-marvel-apr2020
 **Applies to:**
 - Microsoft 365 Defender
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](https://aka.ms/mtp-trial-lab) or [run your pilot project in production](https://aka.ms/m365d-pilotplaybook).
+> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](./mtp-pilot.md?ocid=cx-evalpilot).
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -63,7 +63,7 @@ In addition to these tracked mitigations, the analyst report also discusses miti
 - Block emails with _.lnk_ attachments or other suspicious file types
 - Randomize local administrator passwords
 - Educate end users about phishing email and other threat vectors
-- Turn on specific [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
+- Turn on specific [attack surface reduction rules](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
 While you can use the **Mitigations** tab to assess your security posture against a threat, these recommendations let you take additional steps towards improving your security posture. Carefully read all the mitigation guidance in the analyst report and apply them whenever possible.
 
@@ -71,13 +71,13 @@ While you can use the **Mitigations** tab to assess your security posture agains
 The analyst report also provides the detections from Microsoft Defender for Endpoint antivirus and _endpoint detection and response_ (EDR) capabilities.
 
 ### Antivirus detections
-These detections are available on devices with [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) turned on. When these detections occur on devices that have been onboarded to Microsoft Defender for Endpoint, they also trigger alerts that light up the charts in the report.
+These detections are available on devices with [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) turned on. When these detections occur on devices that have been onboarded to Microsoft Defender for Endpoint, they also trigger alerts that light up the charts in the report.
 
 >[!NOTE]
 >The analyst report also lists **generic detections** that can identify a wide-range of threats, in addition to components or behaviors specific to the tracked threat. These generic detections don't reflect in the charts.
 
 ### Endpoint detection and response (EDR) alerts
-EDR alerts are raised for [devices onboarded to Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). These alerts generally rely on security signals collected by the Microsoft Defender for Endpoint sensor and other endpoint capabilities—such as antivirus, network protection, tamper protection—that serve as powerful signal sources.
+EDR alerts are raised for [devices onboarded to Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). These alerts generally rely on security signals collected by the Microsoft Defender for Endpoint sensor and other endpoint capabilities—such as antivirus, network protection, tamper protection—that serve as powerful signal sources.
 
 Like the list of antivirus detections, some EDR alerts are designed to generically flag suspicious behavior that might not be associated with the tracked threat. In such cases, the report will clearly identify the alert as "generic" and that it doesn't influence any of the charts in the report.
 
@@ -95,7 +95,7 @@ Advanced hunting queries in the analyst reports have been vetted by Microsoft an
 
 
 >[!NOTE]
-> Threat analytics is also available in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office and Microsoft Defender for Endpoint that Microsoft 365 Defender threat analytics has.
+> Threat analytics is also available in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office and Microsoft Defender for Endpoint that Microsoft 365 Defender threat analytics has.
 
 
 ## Related topics

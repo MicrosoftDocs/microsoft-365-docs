@@ -104,7 +104,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
   >
   > - Anti-spoofing protection is enabled by default in the default anti-phishing policy and in any new custom anti-phishing policies that you create.
   >
-  > - You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > - You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   >
   > - Disabling anti-spoofing protection only disables implicit spoofing protection from [composite authentication](email-validation-and-authentication.md#composite-authentication) checks. If the sender fails explicit [DMARC](use-dmarc-to-validate-email.md) checks where the policy is set to quarantine or reject, the message is still quarantined or rejected.
 
@@ -170,7 +170,7 @@ The following impersonation settings are only available in anti-phishing policie
 
   When you add internal or external email addresses to the **Users to protect** list, messages from those **senders** are subject to impersonation protection checks. The message is checked for impersonation **if** the message is sent to a **recipient** that the policy applies to (all recipients for the default policy; **Applied to** recipients in custom policies). If impersonation is detected in the sender's email address, the impersonation protections actions for users are applied to the message (what to do with the message, whether to show impersonated users safety tips, etc.).
 
-- **Add domains to protect**: Prevents the specified domains from being impersonated **in the message sender's domain**. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of **sender domains** that are protected from impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Applied to** setting in the [Policy settings](#policy-settings) section).
+- **Add domains to protect**: Prevents the specified domains from being impersonated **in the message sender's domain**. For example, all domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of **sender domains** that are protected from impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Applied to** setting in the [Policy settings](#policy-settings) section).
 
   > [!NOTE]
   > The maximum number of protected domains that you can define in all anti-phishing policies is 50.
@@ -188,7 +188,6 @@ The following impersonation settings are only available in anti-phishing policie
   - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
-
     - [Quarantine in Microsoft 365](quarantine-email-messages.md)
     - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
@@ -198,22 +197,25 @@ The following impersonation settings are only available in anti-phishing policie
   - **Delete the message before it's delivered**: Silently deletes the entire message, including all attachments.
 
 - **Turn on impersonation safety tips**: Turn on or turn off the following impersonation safety tips that will appear messages that fail impersonation checks:
-
   - **Show tip for impersonated users**: The From address contains a protected user.
   - **Show tip for impersonated domains**: The From address contains a protected domain.
   - **Show tip for unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a protected sender or domain.
 
   > [!IMPORTANT]
   >
-  > **Recommendation for enabling a safety tip that will appear during the first-time contact between the sender and recipient(s)**:
   > Even when the impersonation safety tips are turned off, **we recommend** that you use a mail flow rule (also known as a transport rule) to add a message header named **X-MS-Exchange-EnableFirstContactSafetyTip** with value **enable** to messages. A safety tip will notify recipients the first time they get a message from the sender or if they don't often get messages from the sender. This capability adds an extra layer of security protection against potential impersonation attacks.
+  >
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="The text of the safety tip for impersonation protection with multiple recipients.":::
 
-- **Enable mailbox intelligence?**: Turn on or turn off artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between legitimate and spoofed email from those contacts. Mailbox intelligence is only available for Exchange Online mailboxes.
+- **Mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between messages from legitimate and impersonated senders.
 
-- **Enable mailbox intelligence based impersonation protection**: Turn on or turn off enhanced impersonation results based on each user's individual sender map. This intelligence allows Microsoft 365 to customize user impersonation detection and better handle false positives. When user impersonation is detected, you can define a specific action to take on the message:
+  For example, Gabriela Laureano (glaureano@contoso.com) is the CEO of your company, so you add her as a protected sender in the **Users to protect** settings of the policy. But, some of the recipients that the policy applies to communicate regularly with a vendor who is also named Gabriela Laureano (glaureano@fabrikam.com). Because those recipients have a communication history with glaureano@fabrikam.com, mailbox intelligence will not identify messages from glaureano@fabrikam.com as an impersonation attempt of glaureano@contoso.com for those recipients.
 
-  - **Don't apply any action**
+  To use frequent contacts that were learned by mailbox intelligence (and lack thereof) to help protect users from impersonation attacks, you can turn on **Mailbox intelligence based impersonation protection** and specify the action to take **if** you also turn on **Mailbox intelligence**.
+
+- **Mailbox intelligence based impersonation protection**: Turn on this setting to specify the action to take on messages for impersonation detections from mailbox intelligence results:
+
+  - **Don't apply any action**: Note that this value has the same result as turning on **Mailbox intelligence** but turning off **Mailbox intelligence based impersonation protection**.
   - **Redirect message to other email addresses**
   - **Move message to the recipients' Junk Email folders**
   - **Quarantine the message**
