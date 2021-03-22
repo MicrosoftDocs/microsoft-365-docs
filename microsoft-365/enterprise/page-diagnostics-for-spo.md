@@ -39,13 +39,15 @@ The tool generates a report for each analyzed page showing how the page performs
 
 The Page Diagnostics tool is designed to analyze SharePoint site pages only, not system pages such as *allitems.aspx* or *sharepoint.aspx*. If you attempt to run the tool on a system page or any other non-site page, you will receive an error message advising that the tool cannot be run for that type of page.
 
-![Must run on a SharePoint page](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
+> [!div class="mx-imgBorder"]
+> ![Must run on a SharePoint page](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
 
 This is not an error in the tool as there is no value in assessing libraries or system pages. Please navigate to a SharePoint site page to use the tool. If this error occurs on a SharePoint page, please check the master page to ensure that the SharePoint metatags have not been removed.
 
 To provide feedback about the tool, select the ellipsis at the top right corner of the tool and then select [Give feedback](https://go.microsoft.com/fwlink/?linkid=874109).
 
-![Give feedback](../media/page-diagnostics-for-spo/pagediag-feedback.png)
+> [!div class="mx-imgBorder"]
+> ![Give feedback](../media/page-diagnostics-for-spo/pagediag-feedback.png)
   
 ## Install the Page Diagnostics for SharePoint tool
 
@@ -56,7 +58,8 @@ The installation procedure in this section will work for both the Chrome and Mic
 
 1. Install the Page Diagnostics for SharePoint tool for **Microsoft Edge** [(Edge extension)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) or **Chrome** [(Chrome extension)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi). Please review the User Privacy Policy provided on the description page in the store. When adding the tool to your browser, you will see the following permissions notice.
 
-    ![Extension permissions](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
+    > [!div class="mx-imgBorder"]
+    > ![Extension permissions](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
     This notice is in place because a page may contain content from locations outside of SharePoint depending on the web parts and customizations on the page. This means that the tool will read the requests and responses when the start button is clicked and only for the active SharePoint tab where the tool is running. This information is captured locally by the web browser and is available to you via the **Export to JSON** or **Export to HAR** button in the tool's _Network trace_ tab. **The information is not sent to or captured by Microsoft.** (The tool respects the Microsoft privacy policy accessible [here](https://go.microsoft.com/fwlink/p/?linkid=857875).)
 
@@ -79,7 +82,8 @@ Select **Start** to begin collecting data for analysis.
    1. The **About** link includes the currently installed version of the tool and a direct link to the tool's third party notice.  
 1. The **Correlation ID, SPRequestDuration, SPIISLatency**, **Page load time**, and **URL** details are informational and can be used for a few purposes.
 
-    ![Page diagnostics details](../media/page-diagnostics-for-spo/pagediag-details.PNG)
+    > [!div class="mx-imgBorder"]
+    > ![Page diagnostics details](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
    - **CorrelationID** is an important element when working with Microsoft Support as it allows them to gather additional diagnostic data for the specific page.
    - **SPRequestDuration** is the time taken for SharePoint to process the page. Structural navigation, large images, lots of API calls could all contribute to longer durations.
@@ -95,9 +99,10 @@ Select **Start** to begin collecting data for analysis.
     |**Improvement opportunities** |Yellow |Test result falls outside the baseline value and could be contributing to performance issues. Test-specific criteria may apply.|
     |**No action required** |Green |Test result falls within the test's baseline value.|
 
-    ![Page diagnostics](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+    > [!div class="mx-imgBorder"]
+    > ![Page diagnostics](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
-1. A [**Network trace**](#how-to-use-the-network-trace-tab) tab provides details about page build requests and responses.
+1. A [**Network trace**](#how-to-use-the-network-trace-tab-and-how-to-export-a-har-file) tab provides details about page build requests and responses.
 
 ## How to use the Diagnostic tests tab
 
@@ -115,7 +120,7 @@ Red or yellow results may also indicate web parts that refresh data too frequent
 >[!IMPORTANT]
 >Test rules are added and updated regularly so please refer to the latest version of the tool for details about current rules and specific information included in test results. You can verify the version by managing your extensions and the extension will advise whether an update is available.
 
-## How to use the Network Trace tab
+## How to use the Network Trace tab and how to export a HAR file
 
 The **Network Trace** tab provides detailed information about both requests to build the page and the responses received from SharePoint.
 
@@ -124,17 +129,22 @@ The **Network Trace** tab provides detailed information about both requests to b
     - Yellow: 500-1000ms
     - Red: \> 1000ms
 
-    ![Network Trace](../media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
+    > [!div class="mx-imgBorder"]
+    > ![Network Trace](../media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
     In the image shown above, the red item pertains to the default page. It will always show red unless the page loads in \< 1000ms (less than 1 second).
 
 2. **Test item load times**. In some cases there will be no time or color indicator because the items have already been cached by the browser. To test this correctly, open the page, clear browser cache, and then click **Start** as that will force a "cold" page load and be a true reflection of the initial page load. This should then be compared to the "warm" page load as that will also help determine what items are being cached on the page.
 
-3. **Share relevant details with others who can help investigate issues**. To share the details or information provided in the tool with your developers or a technical support person, click **Export to JSON** (as shown in the image above). That will enable you to download the results, viewable with a JSON file viewer.
+3. **Share relevant details with others who can help investigate issues**. To share the details or information provided in the tool with your developers or a technical support person, using the **Enable exporting to HTTP Archive (HAR)** is the recommended approach. 
 
-    If you have opted to use the preview feature *enable Export to HAR* then the export type will show as **Export to HAR**.
+   > [!div class="mx-imgBorder"]
+   > ![Enable exporting to HAR](../media/page-diagnostics-for-spo/pagediag-submithar.png)
 
-    ![Network trace](../media/page-diagnostics-for-spo/pagediag-NetworkTraceHAR.PNG)
+That should be enabled prior to clicking Start, which will then enable debug mode in your browser. It will generate an HTTP Archive file (HAR) which can then be accessed through the "Network Trace" tab. Click the "Export to HAR" and it will download the file to your computer and you can then share it accordingly. The file can be opened in a variety of debug tools, like F12 Developer Tools and Fiddler.
+
+> [!div class="mx-imgBorder"]
+> ![Network trace](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)
 
 > [!IMPORTANT]
 > These results contain URLs and that can be classified as PII (Personally Identifiable Information). Make sure to follow your organization's guidelines before distributing that information.
@@ -151,7 +161,8 @@ No change is visible except that you will be notified that you have enabled it a
 2. On your keyboard, press **ALT-Shift-L**. This will display the **Enable support logging** check box.
 3. Select the check box, and then click **Start** to reload the page and generate verbose logging.
 
-    ![Support Option Enabled](../media/page-diagnostics-for-spo/pagediag-support.png)
+   > [!div class="mx-imgBorder"]
+   > ![Support Option Enabled](../media/page-diagnostics-for-spo/pagediag-support.png)
   
     You should note the CorrelationID (displayed at the top of the tool) and provide it to your support representative to enable them to gather additional information about the diagnostic session.
 
@@ -161,7 +172,7 @@ No change is visible except that you will be notified that you have enabled it a
 
 [Tune Office 365 performance](tune-microsoft-365-performance.md)
 
-[Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)
 

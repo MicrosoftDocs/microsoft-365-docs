@@ -62,7 +62,7 @@ This also means that even though your Exchange server and Skype for Business env
 What doesn't change? Whether you're in a split-domain hybrid or using Skype for Business and Exchange server on-premises, all users must first authenticate *on-premises*. In a hybrid implementation of modern authentication, _Lyncdiscovery_ and _Autodiscovery_ both point to your on-premises server.
 
 > [!IMPORTANT]
-> If you need to know the specific Skype for Business topologies supported with MA, that's [documented right here](https://technet.microsoft.com/library/mt803262.aspx).
+> If you need to know the specific Skype for Business topologies supported with MA, that's [documented right here](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported).
 
 ## Check the modern authentication status of your on-premises environment
 <a name="BKMK_CheckStatus"> </a>
@@ -75,7 +75,7 @@ Get-OrganizationConfig | ft OAuth*
 
 If the value of the _OAuth2ClientProfileEnabled_ property is **False**, then modern authentication is disabled.
 
-For more information about the Get-OrganizationConfig cmdlet, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
+For more information about the Get-OrganizationConfig cmdlet, see [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
 
 You can check your Skype for Business servers by running the following PowerShell command:
 
@@ -85,7 +85,7 @@ Get-CSOAuthConfiguration
 
 If the command returns an empty _OAuthServers_ property, or if the value of the _ClientADALAuthOverride_ property is not **Allowed**, then modern authentication is disabled.
 
-For more information about the Get-CsOAuthConfiguration cmdlet, see [Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration).
+For more information about the Get-CsOAuthConfiguration cmdlet, see [Get-CsOAuthConfiguration](/powershell/module/skype/get-csoauthconfiguration).
 
 ## Do you meet modern authentication prerequisites?
 
@@ -103,7 +103,7 @@ Verify and check these items off your list before you continue:
   - A deployment with a maximum of two different server versions as listed below:
     - Skype for Business Server 2015
     - Skype for Business Server 2019
-  - All Skype for Business servers must have the latest cumulative updates installed, see [Skype for Business Server updates](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) to find and manage all available updates.
+  - All Skype for Business servers must have the latest cumulative updates installed, see [Skype for Business Server updates](/skypeforbusiness/sfb-server-updates) to find and manage all available updates.
   - There is no Lync Server 2010 or 2013 in the hybrid environment.
 
 >[!NOTE]
@@ -131,14 +131,14 @@ Verify and check these items off your list before you continue:
   - You're using either Exchange server 2013 CU19 and up, Exchange server 2016 CU8 and up, or Exchange Server 2019 CU1 and up.
   - There is no Exchange server 2010 in the environment.
   - SSL Offloading is not configured. SSL termination and re-encryption is supported.
-  - In the event your environment utilizes a proxy server infrastructure to allow servers to connect to the Internet, be sure all Exchange servers have the proxy server defined in the [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) property.
+  - In the event your environment utilizes a proxy server infrastructure to allow servers to connect to the Internet, be sure all Exchange servers have the proxy server defined in the [InternetWebProxy](/powershell/module/exchange/set-exchangeserver) property.
 
 - **Exchange Server on-premises in a hybrid Office 365 environment**
 
   - If you are using Exchange Server 2013, at least one server must have the Mailbox and Client Access server roles installed. While it is possible to install the Mailbox and Client Access roles on separate servers, we strongly recommend that you install both roles on the same server to provide additional reliability and improved performance.
   - If you are using Exchange server 2016 or later version, at least one server must have the Mailbox server role installed.
   - There is no Exchange server 2007 or 2010 in the Hybrid environment.
-  - All Exchange servers must have the latest cumulative updates installed, see [Upgrade Exchange to the latest Cumulative Updates](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates) to find and manage all available updates.
+  - All Exchange servers must have the latest cumulative updates installed, see [Upgrade Exchange to the latest Cumulative Updates](/exchange/plan-and-deploy/install-cumulative-updates) to find and manage all available updates.
 
 - **Exchange client and protocol requirements**
 
@@ -148,9 +148,9 @@ Verify and check these items off your list before you continue:
 
   |**Clients**|**Primary Protocol**|**Notes**|
   |:-----|:-----|:-----|
-  |Outlook 2013 and later  <br/> |MAPI over HTTP  <br/> |MAPI over HTTP must be enabled within Exchange in order to leverage modern authentication with these clients (usually enabled or True for new installs of Exchange 2013 Service Pack 1 and above); for more information see [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).  <br/> Ensure you are running the minimum required build of Outlook; see [Latest updates for versions of Outlook that use Windows Installer (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
+  |Outlook 2013 and later  <br/> |MAPI over HTTP  <br/> |MAPI over HTTP must be enabled within Exchange in order to leverage modern authentication with these clients (usually enabled or True for new installs of Exchange 2013 Service Pack 1 and above); for more information see [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).  <br/> Ensure you are running the minimum required build of Outlook; see [Latest updates for versions of Outlook that use Windows Installer (MSI)](/officeupdates/outlook-updates-msi).  <br/> |
   |Outlook 2016 for Mac and later  <br/> |Exchange Web Services  <br/> |  <br/> |
-  |Outlook for iOS and Android  <br/> | Microsoft sync technology <br/> |See [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) for more information.  <br/> |
+  |Outlook for iOS and Android  <br/> | Microsoft sync technology <br/> |See [Using hybrid Modern Authentication with Outlook for iOS and Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) for more information.  <br/> |
   |Exchange ActiveSync clients (e.g., iOS11 Mail)  <br/> |Exchange ActiveSync  <br/> |For Exchange ActiveSync clients that support modern authentication, you must recreate the profile in order to switch from basic authentication to modern authentication.  <br/> |
 
     Clients and/or protocols that are not listed (e.g., POP3) do not support modern authentication with on-premises Exchange and continue to leverage legacy authentication mechanisms even after modern authentication is enabled in the environment.
@@ -162,7 +162,7 @@ Verify and check these items off your list before you continue:
   - You have Azure AD Connect configured and functioning for user replication and sync.
   - You have verified that hybrid is configured using Exchange Classic Hybrid Topology mode between your on-premises and Office 365 environment. Official support statement for Exchange hybrid says you must have either current CU or current CU - 1.
     > [!NOTE]
-    > Hybrid modern authentication is not supported with the [Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
+    > Hybrid modern authentication is not supported with the [Hybrid Agent](/exchange/hybrid-deployment/hybrid-agent).
 
   - Make sure both an on-premises test user, as well as a hybrid test user homed in Office 365, can login to the Skype for Business desktop client (if you want to use modern authentication with Skype) and Microsoft Outlook (if you want to use modern authentication with Exchange).
 
@@ -176,6 +176,6 @@ Verify and check these items off your list before you continue:
 <a name="BKMK_URLListforMA"> </a>
 
 - [How to configure Exchange Server on-premises to use Modern Authentication](configure-exchange-server-for-hybrid-modern-authentication.md)
-- [Skype for Business topologies supported with Modern Authentication](https://technet.microsoft.com/library/mt803262.aspx)
+- [Skype for Business topologies supported with Modern Authentication](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
 - [How to configure Skype for Business on-premises to use Modern Authentication](configure-skype-for-business-for-hybrid-modern-authentication.md)
 - [Removing or disabling Hybrid Modern Authentication from Skype for Business and Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
