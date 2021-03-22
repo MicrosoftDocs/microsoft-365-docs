@@ -19,7 +19,7 @@ description: "Learn how and why to duplicate a model in Microsoft SharePoint Syn
 
 Duplicating a document understanding model can save you time and effort if you need to create a new model, and know that an existing model is very similar to what you need.
 
-For example, you know that an existing model (for example, “Contracts”) classifies the same files you need to work with. Your new model will extract some of the existing data, but will need to be updated to extract some additional data. Instead of creating and training a new model from scratch, you can use the duplicate model feature to make a copy of the Contracts model, which will also copy all associated training items, such as example files, extractors, and classifiers.
+For example, an existing model named “Contracts” classifies the same files you need to work with. Your new model will extract some of the existing data, but will need to be updated to extract some additional data. Instead of creating and training a new model from scratch, you can use the duplicate model feature to make a copy of the Contracts model, which will also copy all associated training items, such as example files, extractors, and classifiers.
 
 When you duplicate the model, after you rename it (for example, to “Contract Renewals”), you can then make updates to it. For example, you can choose to remove some of the existing extracted fields that you don’t need, and then train the model to extract a new one (for example, “Renewal date”).
 
