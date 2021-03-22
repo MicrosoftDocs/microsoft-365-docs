@@ -1,12 +1,13 @@
 ---
 title: Recommended Microsoft Cloud App Security policies for SaaS apps - Microsoft 365 Enterprise | Microsoft Docs
-description: Describes the policies for Microsoft recommendations about how to secure SharePoint file access.
+description: Describes recommended policies for integration with Microsoft Cloud App Security.
 author: BrendaCarter
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+audience: Admin
 ms.author: bcarter
-ms.date: 063/28/2019
+ms.date: 03/22/2021
 ms.reviewer: martincoetzer
 ms.custom: 
 - it-pro
