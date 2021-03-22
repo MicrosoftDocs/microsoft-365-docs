@@ -3241,11 +3241,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/mtp/tickets.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/tickets",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/security/mtp/top-scoring-industry-tests.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/top-scoring-industry-tests",
       "redirect_document_id": true
