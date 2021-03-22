@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.author: lomayor
 author: lomayor
-ms.localizationpriority: medium
+localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 

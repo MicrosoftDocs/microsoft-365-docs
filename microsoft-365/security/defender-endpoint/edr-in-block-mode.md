@@ -11,7 +11,7 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr

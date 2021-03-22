@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.prod: m365-security
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.collection: 
   - M365-security-compliance
   - m365solution-scenario

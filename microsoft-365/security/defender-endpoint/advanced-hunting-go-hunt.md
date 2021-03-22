@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: v-maave
 author: martyav
-ms.localizationpriority: medium
+localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
