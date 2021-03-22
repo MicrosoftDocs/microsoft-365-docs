@@ -158,7 +158,7 @@ Watch the video below to learn how Compliance Manager can help simplify how your
 ### Communication compliance
 
 - [Updated role groups](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance). Communication compliance role groups now match the role group structure available for the insider risk management solution.
-- [Reports dashboard](communication-compliance-feature-reference.md#reports-preview). Your central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities.
+- [Reports dashboard](communication-compliance-feature-reference.md#reports). Your central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities.
 - [Power Automate flows](communication-compliance-feature-reference.md#power-automate-flows). Set up flows to automate tasks for alerts and users, notify managers when users trigger an alerts, and more.
 - [‘Improve classification’ remediation action](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action). Alerts containing items that match trainable classifiers might benefit from feedback to help minimize false positives in your organization. The **Improve classification** option lets you provide feedback whether detected items match the classifier configured in the related communication compliance policy. You can even suggest other classifiers to associate with the item to improve match accuracy for future alerts.
 
