@@ -69,10 +69,10 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
-|Basic Mobility and Security application management  |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
+|Mobile application management  |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
 |Mobile application protection  |Enable your users to securely access corporate information using the Office mobile and line-of-business apps they know, while ensuring security of data by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. Works even if the devices are not enrolled to Basic Mobility and Security. See Protect app data using MAM policies. |No|Yes|
 |Managed browser  |Enable more secure web browsing using the Edge app. |No|Yes|
-|Zero touch enrollment programs Autopilot) |Enroll large numbers of corporate-owned devices, while simplifying user setup. |No|Yes|
+|Zero touch enrollment programs (AutoPilot) |Enroll large numbers of corporate-owned devices, while simplifying user setup. |No|Yes|
 |||
 
 In addition to features listed in the preceding table, Basic Mobility and Security and Intune both include a set of remote actions that send commands to devices over the internet. For example, you can remove Office data from an employee’s device while leaving personal data in place (retire), remove Office apps from a employee's device (wipe), or reset a device to its factory settings (full wipe). 
