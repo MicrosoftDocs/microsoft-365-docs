@@ -48,7 +48,7 @@ For more information preview features, see [Preview features](https://docs.micro
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint now adds support for Windows Virtual Desktop.
 
 ## December 2020
-- [Microsoft Defender for Endpoint for iOS](microsoft-defender-atp-ios.md) <br> Microsoft Defender for Endpoint now adds support for iOS. Learn how to install, configure, update, and use Microsoft Defender for Endpoint for iOS.
+- [Microsoft Defender for Endpoint for iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint now adds support for iOS. Learn how to install, configure, update, and use Microsoft Defender for Endpoint for iOS.
 
 ## September 2020
 - [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. Learn how to install, configure, update, and use Microsoft Defender for Endpoint for Android.
@@ -63,7 +63,7 @@ For more information preview features, see [Preview features](https://docs.micro
 - [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
 
 ## June 2020
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md) <br> Microsoft Defender for Endpoint now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender for Endpoint for Linux.
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender for Endpoint for Linux.
 
 - [Attack simulators in the evaluation lab](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal.
 

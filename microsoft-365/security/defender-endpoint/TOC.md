@@ -152,7 +152,7 @@
 #### [Resources](mac-resources.md)
 
 ### [Microsoft Defender Advanced Threat Protection for iOS]()
-#### [Overview of Microsoft Defender Advanced Threat Protection for iOS](microsoft-defender-atp-ios.md)
+#### [Overview of Microsoft Defender Advanced Threat Protection for iOS](microsoft-defender-endpoint-ios.md)
 
 #### [Deploy]()
 ##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](ios-install.md)
@@ -163,7 +163,7 @@
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux]()
-#### [Overview of Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md)
+#### [Overview of Microsoft Defender ATP for Linux](microsoft-defender-endpoint-linux.md)
 #### [What's New](linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](linux-install-manually.md)

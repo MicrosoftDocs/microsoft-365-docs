@@ -38,7 +38,7 @@ This topic describes how to deploy Microsoft Defender for Endpoint for macOS man
 
 ## Prerequisites and system requirements
 
-Before you get started, see [the main Microsoft Defender for Endpoint for macOS page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender for Endpoint for macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 

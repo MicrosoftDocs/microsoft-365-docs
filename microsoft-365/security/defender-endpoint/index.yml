@@ -86,13 +86,13 @@ landingContent:
       - linkListType: overview
         links:
         - text: Microsoft Defender for Endpoint for Mac
-          url: microsoft-defender-atp-mac.md  
+          url: microsoft-defender-endpoint-mac.md  
         - text: Microsoft Defender for Endpoint for iOS
-          url: microsoft-defender-atp-ios.md
+          url: microsoft-defender-endpoint-ios.md
         - text: Microsoft Defender for Endpoint for Linux
-          url: microsoft-defender-atp-linux.md
+          url: microsoft-defender-endpoint-linux.md
         - text: Microsoft Defender for Endpoint for Android
-          url: microsoft-defender-atp-android.md          
+          url: microsoft-defender-endpoint-android.md          
   
  
 # Card

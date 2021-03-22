@@ -152,7 +152,7 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     findmnt -T <path_of_EICAR_file>
     ```
 
-    Currently supported file systems for on-access activity are listed [here](microsoft-defender-atp-linux.md#system-requirements). Any files outside these file systems won't be scanned.
+    Currently supported file systems for on-access activity are listed [here](microsoft-defender-endpoint-linux.md#system-requirements). Any files outside these file systems won't be scanned.
 
 ## Command-line tool “mdatp” isn't working
 

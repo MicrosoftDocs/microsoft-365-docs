@@ -50,7 +50,7 @@ This article describes how to deploy Microsoft Defender for Endpoint for Linux m
 
 ## Prerequisites and system requirements
 
-Before you get started, see [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Configure the Linux software repository
 

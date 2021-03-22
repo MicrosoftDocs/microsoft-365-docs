@@ -41,7 +41,7 @@ This article describes how to deploy Defender for Endpoint for Linux using Ansib
 
 ## Prerequisites and system requirements
 
-Before you get started, see [the main Defender for Endpoint for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Defender for Endpoint for Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Ansible documentation](https://docs.ansible.com/) for details.
 
