@@ -26,6 +26,8 @@
           href: ./defender-365-security/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
           href: ./defender-365-security/sharepoint-file-access-policies.md
+        - name: Recommended MCAS policies for SaaS apps
+          href: ./defender-365-security/mcas-saas-access-policies.md
     - name: Microsoft 365 security center
       href: defender/overview-security-center.md  
     - name: Microsoft Secure Score
