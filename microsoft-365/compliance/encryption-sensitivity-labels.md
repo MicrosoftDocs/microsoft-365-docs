@@ -222,6 +222,9 @@ For more information, prerequisites, and configuration instructions, see [Double
 
 ## Let users assign permissions
 
+> [!IMPORTANT]
+> Not all labeling clients support all the available options that let users assign their own permissions.
+
 You can use these options to let users assign permissions when they manually apply a sensitivity label to content:
 
 - In Outlook, a user can select restrictions equivalent to the [Do Not Forward](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) option or [Encrypt-only](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) for their chosen recipients.
@@ -232,9 +235,9 @@ You can use these options to let users assign permissions when they manually app
 
 - In Word, PowerPoint, and Excel, a user is prompted to select their own permissions for specific users, groups, or organizations.
 
-    This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, a label configured for this option either won't be visible for users, the label is visible for consistency, but it can't be applied with an explanation message to users.
+    This option is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, the label either won't be visible for users or the label is visible for consistency, but it can't be applied with an explanation message to users.
     
-    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Let users assign permissions: - Prompt users to specify permisions**.
+    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Let users assign permissions: - Prompt users**.
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
@@ -252,9 +255,6 @@ Configuring the user-assigned permissions:
 ![Encryption settings for user-defined permissions](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### Outlook restrictions
-
-> [!IMPORTANT]
-> Not all email clients support the Encrypt-Only option with a sensitivity label. Be sure to check the [Outlook table](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) for minimum versions.
 
 In Outlook, when a user applies a sensitivity label that lets them assign permissions to a message, you can choose the **Do Not Forward option** or **Encrypt-Only**. The user will see the label name and description at the top of the message, which indicates the content's being protected. Unlike Word, PowerPoint, and Excel (see the [next section](#word-powerpoint-and-excel-permissions)), users aren't prompted to select specific permissions.
 
