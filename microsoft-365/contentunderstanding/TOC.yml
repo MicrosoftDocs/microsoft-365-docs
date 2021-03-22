@@ -22,9 +22,9 @@
         - name: Rename a model
           href: rename-a-model.md
         - name: Create an extractor
+          href: create-an-extractor.md
         - name: Rename an extractor
           href: rename-an-extractor.md
-          href: create-an-extractor.md
         - name: Explanation types 
           href: explanation-types-overview.md
         - name: Apply a model
