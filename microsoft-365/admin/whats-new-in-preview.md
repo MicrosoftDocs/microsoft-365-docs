@@ -43,6 +43,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [Office updates](/OfficeUpdates/)
+- [How to check Windows release health](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
 ## Ignite 2021 (March)
 

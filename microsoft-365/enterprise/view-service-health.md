@@ -149,3 +149,4 @@ For more information about our commitment to uptime, see [Transparent operations
 
 [Activity Reports in the Microsoft 365 admin center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 [Message center Preferences](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)
+[How to check Windows release health on admin center](https://docs.microsoft.com/windows/deployment/update/check-release-health)
