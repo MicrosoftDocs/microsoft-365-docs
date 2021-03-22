@@ -30,9 +30,7 @@ Follow these steps to rename an entity extractor.
 
 1. From the content center, select **Models** to see your models list.
 
-2. On the **Models** page, in the **Name** column, select the model for which you want to rename an extractor.</br>
-
-    ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
+2. On the **Models** page, in the **Name** column, select the model for which you want to rename an extractor.
 
 3. Under **Entity extractors**, select the name of the extractor you want to rename, and then select **Rename**.</br>
 
