@@ -44,7 +44,7 @@ Customers with an active Microsoft 365 for business subscription plan can use Bu
 
 ## Get Business Assist
 
-Only organizations that are eligible will see the option to purchase Business Assist. Business Assist costs $5 per user per month. Here's how you can purchase Business Assist.
+Only organizations that are eligible will see the option to buy Business Assist. Business Assist costs $5 per user per month. Here's how you can buy Business Assist.
 
 1. In the Microsoft 365 admin center, go to **Billing** > **Purchase services**.
 
