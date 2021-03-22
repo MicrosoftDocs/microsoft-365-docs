@@ -245,7 +245,7 @@ To create a new policy targeted to all recipients in your domain:
 |Use Safe Attachments to scan downloadable content|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Safe Links in Defender for Office 365](../security/defender-365-security/atp-safe-links.md).
+For more information, see [Safe Links in Defender for Office 365](../security/defender-365-security/safe-links.md).
 
 ## Turn on the Unified Audit Log
 
