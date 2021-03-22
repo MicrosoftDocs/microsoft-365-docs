@@ -28,11 +28,11 @@ description: "Learn how security defaults can help protect your organization fro
 
 # Turn on security defaults
 
-Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization. For most organizations, security defaults offer a good level of additional sign-in security.
+Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization. These settings include enabling multi-factor authentication (MFA) for all admins and user accounts. For most organizations, security defaults offer a good level of additional sign-in security.
 
 For more information about security defaults and the policies they enforce, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-If your subscription is new, security defaults might already be turned on for you.
+If your subscription was created on or after October 22, 2019, security defaults might already be enabled for you&mdash;you should check your settings to confirm.
 
 To enable security defaults in your Azure Active Directory (Azure AD) or to check to see if they're already enabled:
 
@@ -40,11 +40,15 @@ To enable security defaults in your Azure Active Directory (Azure AD) or to chec
 
 2. In the left pane, select **Show All,** and then under **Admin centers**, select **Azure Active Directory**.
 
-3. In the left pane of the **Azure Active Directory admin center,** select **Azure Active Directory**, and then select **Properties**.
+3. In the left pane of the **Azure Active Directory admin center,** select **Azure Active Directory**.
 
-4. At the bottom of the **Properties** page, select **Manage Security defaults**.
+4. From the left menu of the Dashboard, in the **Manage** section, select **Properties**.
 
-5. In the right pane, you'll see the **Enable Security defaults** setting. If **Yes** is selected, then security defaults are already enabled and no further action is required. If security defaults are not currently enabled, then select **Yes** to enable them, and then select **Save**.
+:::image type="content" source="/media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot of the Azure Active Directory admin center showing the location of the Properties menu item.":::
+
+5. At the bottom of the **Properties** page, select **Manage Security defaults**.
+
+6. In the right pane, you'll see the **Enable Security defaults** setting. If **Yes** is selected, then security defaults are already enabled and no further action is required. If security defaults are not currently enabled, then select **Yes** to enable them, and then select **Save**.
 
 > [!NOTE]
 > If you've been using Conditional Access policies, you'll need to turn them off before using security defaults.
@@ -53,9 +57,16 @@ To enable security defaults in your Azure Active Directory (Azure AD) or to chec
 
 ## Consider using Conditional Access
 
-If your organization has complex security requirements that need greater control and you have a Microsoft 365 Business Premium or E3 plan or Azure Active Directory Premium licenses, then you should consider using Conditional Access instead of security defaults.
+If your organization has complex security requirements or you need more granular control over your security polices, then you should consider using Conditional Access instead of security defaults to achieve a similar or higher security posture. 
 
 Conditional Access lets you create and define policies that react to sign-in events and request additional actions before a user is granted access to an application or service. Conditional Access policies can be granular and specific, empowering users to be productive wherever and whenever, but also protecting your organization.
+
+Security defaults are available to all customers, while Conditional Access requires licenses for one of the following:
+
+- Azure Active Directory Premium P1 or P2
+- Microsoft 365 Business Premium
+- Microsoft 365 E3 or E5
+- Enterprise Mobility & Security E3 or E5
 
 If you want to use Conditional Access to configure policies equivalent to those enabled by security defaults, check out the following step-by-step guides:
 
