@@ -137,9 +137,9 @@
 ##### [Set preferences](mac-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](mac-pua.md)
 ##### [Device control]()
-###### [Device control overview](microsoft-defender-atp/mac-device-control-overview.md)
-###### [JAMF examples](microsoft-defender-atp/mac-device-control-jamf.md)
-###### [Intune examples](microsoft-defender-atp/mac-device-control-intune.md)
+###### [Device control overview](mac-device-control-overview.md)
+###### [JAMF examples](mac-device-control-jamf.md)
+###### [Intune examples](mac-device-control-intune.md)
 ##### [Schedule scans](mac-schedule-scan-atp.md)
 
 #### [Troubleshoot]()
