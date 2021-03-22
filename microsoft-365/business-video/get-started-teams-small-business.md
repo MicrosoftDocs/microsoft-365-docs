@@ -24,6 +24,12 @@ description: "Learn how to use Microsoft Teams in your small business."
 
 # Get started with Microsoft Teams in your small business
 
+- [Use Teams for your business (video)](#use-teams-for-your-business-video)
+- [Host online meetings for your business (video)](#host-online-meetings-for-your-business-video)
+- [Start and pin chats (video)](#start-and-pin-chats-video)
+- [Create a company-wide team (video)](#create-a-company-wide-team-video)
+- [Create a team with guests (video)](#create-a-team-with-guests-video)
+
 The way we work and live has changed significantly and many small businesses are embracing [remote work](https://www.microsoft.com/microsoft-teams/work-remotely?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline). As your business works to equip employees to work remotely and connect with your customers virtually, below is a brief set of guidelines to help you get up and running quickly with Microsoft Teams. 
 
 If you're just starting to change your business to work remotely, you've come to the right place. With Microsoft 365, you can manage a business virtually and stay in touch with your employees, partners, and customers through online meetings, [chats](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline), file sharing, and calls in Microsoft Teams. 
@@ -50,15 +56,15 @@ Now it's time to start using Microsoft Teams. You can use it from the web, or [i
 
 With Microsoft Teams, people can use video conferencing to communicate securely with HD video while seeing and talking to other participants in real time. This adds a level of engagement and interaction to the conversation as body language and facial expressions promote higher collaboration and understanding.
 
-## Host online meetings for your business (video)
+### Host online meetings for your business (video)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ueMh?autoplay=false]
+> [!VIDEO https://docs.microsoft.com/microsoft-365/business-video/overview-online-meetings?view=o365-worldwide]
 
 ### Chat from anywhere
 
 Connect in real time on private 1:1 chats, group chats or in channel conversations that are visible to the entire team. Chat history is available at any time to recall past discussions and decisions. This adds a lot of value for new people coming into the team, or for current team members looking to re-visit a conversation’s context.
 
-## Start and pin chats (video)
+### Start and pin chats (video)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
 
@@ -76,11 +82,11 @@ A team in Microsoft Teams is designed to bring together a group of people who wo
 
 Channels are dedicated sections within a team to keep conversations organized by specific topics, projects or disciplines. Conversations, files, and notes for each channel are only visible to members of that group.
 
-## Create a company-wide team (video)
+### Create a company-wide team (video)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9?autoplay=false]
 
-## Create a team with guests (video)
+### Create a team with guests (video)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp?autoplay=false]
 
