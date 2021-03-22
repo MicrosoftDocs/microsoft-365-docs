@@ -224,7 +224,6 @@ For more information, prerequisites, and configuration instructions, see [Double
 
 You can use these options to let users assign permissions when they manually apply a sensitivity label to content:
 
-<<<<<<< HEAD
 - In Outlook, a user can select restrictions equivalent to the [Do Not Forward](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) option or [Encrypt-only](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) for their chosen recipients.
 
 - In Word, PowerPoint, and Excel, a user is prompted to select their own permissions for specific users, groups, or organizations.
