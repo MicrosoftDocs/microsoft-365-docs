@@ -32,7 +32,7 @@ Your customers will only see the Bookings calendar that you publish online for t
 
 ### How do I change a bookable attribute under Manage staff?
 
-When staff members were added, they would have received an email to accept or reject the request. They can open the same email and select "Reject" to make them non-bookable. We currently do not have a way to toggle this from inside the app.
+When staff members were added, they would have received an email to accept or reject the request. They can open the same email and select "Reject" to make them so that they aren't bookable. We currently do not have a way to toggle this from inside the app.
 
 ### How do end users access the Bookings app?
 
@@ -113,7 +113,7 @@ Bookings is an ideal solution for both Enterprise and small business customers, 
 
 ### How do I get Microsoft Bookings?
 
-Bookings is available in Microsoft 365 for customers with Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, and E5 licenses, along with an iOS and Android companion app. Bookings is not available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
+Bookings is available in Microsoft 365 for customers with Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, and E5 licenses, along with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
 
 A Bookings license provides full functionality to the product, including creating and managing calendars. It also enables the ability for users to view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 
@@ -239,7 +239,7 @@ Booking can support a large quantity of visitors and bookings at one time. If th
 
 ### Where is Bookings data stored?
 
-Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies set by Microsoft, which are the same policies followed by all Office apps. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it is stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Office apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it is stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
 
 ### Is there a way to centrally manage Bookings calendars for all users?
 
