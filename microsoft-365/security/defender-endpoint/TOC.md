@@ -190,7 +190,7 @@
 #### [Resources](linux-resources.md)
 
 ### [Microsoft Defender Advanced Threat Protection for Android]()
-#### [Overview of Microsoft Defender ATP for Android](microsoft-defender-atp-android.md)
+#### [Overview of Microsoft Defender ATP for Android](microsoft-defender-endpoint-android.md)
 
 #### [Deploy]()
 ##### [Deploy Microsoft Defender ATP for Android with Microsoft Intune](android-intune.md)
