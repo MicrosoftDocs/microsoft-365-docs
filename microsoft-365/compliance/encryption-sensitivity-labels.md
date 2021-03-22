@@ -225,13 +225,16 @@ For more information, prerequisites, and configuration instructions, see [Double
 You can use these options to let users assign permissions when they manually apply a sensitivity label to content:
 
 - In Outlook, a user can select restrictions equivalent to the [Do Not Forward](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) option or [Encrypt-only](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) for their chosen recipients.
+    
+    Applying the **Encrypt-Only** option with a sensitivity label is a recent release that's supported only by built-in labeling and not the Azure Information Protection unified labeling client. For email clients that don't support this capability, the label won't be visible.
+    
+    To check which Outlook apps that use built-in labeling and support applying the Encrypt-Only option with a sensitivity label, use the [capabilities table for Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) and the row **Let users assign permissions: - Encrypt-Only**.
 
 - In Word, PowerPoint, and Excel, a user is prompted to select their own permissions for specific users, groups, or organizations.
 
-    > [!NOTE]
-    > This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client. For apps that use built-in labeling, [check which apps support it](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
-    >
-    > If this option is selected but isn't supported for a user's app, either that label doesn't display to the user, or the label displays for consistency, but it can't be applied with an explanation message to users.
+    This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, a label configured for this option either won't be visible for users, the label is visible for consistency, but it can't be applied with an explanation message to users.
+    
+    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Let users assign permissions: - Prompt users to specify permisions**.
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
