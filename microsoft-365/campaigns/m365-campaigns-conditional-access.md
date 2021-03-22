@@ -32,7 +32,7 @@ Security defaults help protect your organization from identity-related attacks b
 
 For more information about security defaults and the policies they enforce, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-If your subscription was created on or after October 22, 2019, security defaults might have already been enabled for you&mdash;you should check your settings to confirm.
+If your subscription was created on or after October 22, 2019, security defaults might have been automatically enabled for you&mdash;you should check your settings to confirm.
 
 To enable security defaults in your Azure Active Directory (Azure AD) or to check to see if they're already enabled:
 
