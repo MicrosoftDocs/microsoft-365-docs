@@ -242,7 +242,7 @@ To go back to the report view, click **View report**.
 
 ## Spoof detections report
 
-The **Spoof detections** report shows how many spoof mail messages were detected, and of those, which ones were considered "good" (spoof mail done for legitimate business reasons). For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
+The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
 The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
 
@@ -250,25 +250,34 @@ To view the report, open the [Security & Compliance Center](https://protection.o
 
 ![Spoof detections widget in the Reports dashboard](../../media/spoof-detections-widget.png)
 
-When you hover over a day (data point) in the chart, you can see how many spoof mail messages came through.
+When you hover over a day (data point) in the chart, you can see how many spoofed messages were detected and why.
 
 You can filter both the chart and the details table by clicking **Filters** and selecting one or more of the following values:
 
 - **Start date** and **End date**
 
-- **Good mail**
+- **Result**
+  - **Pass**
+  - **Fail**
+  - **SoftPass**
+  - **None**
+  - **Other**
 
-- **Caught as spam**
+- **Spoof type**: **Internal** and **External**
 
 ![Report view in the Spoof detections report](../../media/spoof-detections-report-view.png)
 
 If you click **View details table**, you can see the following details:
 
 - **Date**
-- **Spoofed sender**
-- **True sender**
-- **Sender IP**
-- **Action**
+- **Spoofed user**
+- **Sending infrastructure**
+- **Spoof type**
+- **Result**
+- **Result code**
+- **SPF**
+- **DKIM**
+- **DMARC**
 - **Message count**
 
 To go back to the report view, click **View report**.
