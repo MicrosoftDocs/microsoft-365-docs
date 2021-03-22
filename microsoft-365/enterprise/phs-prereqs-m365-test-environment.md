@@ -118,7 +118,7 @@ The result is a test environment that meets the requirements of the [Active Dire
 
 ## Next step
 
-Use [Common identity and device access policies](../security/office-365-security/identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.
+Use [Common identity and device access policies](../security/defender-365-security/identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.
 
 ## See also
 
