@@ -1,5 +1,5 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|Clients|Android|iOS|Mac|Windows 10 Desktop|Windows 10 Modern Apps|
+|Clients|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Modern Apps|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|N/A|N/A|N/A|✔|N/A|
 |AZURE ACTIVE DIRECTORY ADMIN|N/A|N/A|N/A|✔|N/A|
@@ -12,6 +12,7 @@
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
 |KAIZALA|✔|✔|N/A|N/A|N/A|
+|MICROSOFT ROOMS|Planned|Planned|N/A|N/A|N/A|
 |OFFICE 365 ADMIN|✔|N/A|N/A|N/A|N/A|
 |OFFICE LENS|✔|✔|N/A|N/A|✔|
 |OFFICE MOBILE|✔|✔|N/A|N/A|N/A|
