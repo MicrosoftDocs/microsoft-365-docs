@@ -33,7 +33,7 @@ The administrative accounts you use to administer your Microsoft 365 environment
 
 Begin by using administrator accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function.
 
-Protect your administrator accounts with multi-factor authentication and conditional access. For more information, see [Protecting administrator accounts](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
+Protect your administrator accounts with multi-factor authentication and conditional access. For more information, see [Protecting administrator accounts](../security/defender-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
 
 Next, configure privileged access management in Office 365. Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
