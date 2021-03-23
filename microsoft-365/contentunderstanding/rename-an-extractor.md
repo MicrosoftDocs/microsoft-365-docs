@@ -22,7 +22,7 @@ At some point, you might need to rename an extractor if you want to refer to an 
 When you sync your updated model to your SharePoint document library, you will see a new “Client” column in your document library view. Your view will retain the “Customer” column for past activity, but will update the new “Client” column for all new documents that are processed by your model. 
 
 > [!IMPORTANT]
->  Make sure to sync your updated model to the document libraries you need to apply it to for the new column to display. 
+>  Make sure to sync your updated model to the document libraries where you had previously applied it for the new column name to display. 
 
 ## Rename an extractor
 
