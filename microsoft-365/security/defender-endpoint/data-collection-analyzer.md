@@ -41,7 +41,7 @@ parameters and their description:
 !Note  
 When any advanced troubleshooting parameter is used, the analyzer also calls
 into
-[MpCmdRun.exe](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance)
+[MpCmdRun.exe](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance)
 to collect Microsoft Defender Antivirus related support logs.
 
 **-h** Calls into [Windows Performance
