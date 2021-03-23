@@ -28,8 +28,11 @@ Away from your desk? No more laptop battery? No problem! Handle your work from a
 
 **Pro tip:** Keep your work-life balance in check by turning off notifications for your work apps on your personal devices.
 
-Use the four tips below to work wherever you are:
-Download an infographic to get tips for working from anywhere: [PDF](https://go.microsoft.com/fwlink/?linkid=2079451), [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
+Use the four tips below to work wherever you are.
+
+Download an infographic to get tips for working from anywhere: 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079451) | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **Thinking of working from home regularly?**
 
