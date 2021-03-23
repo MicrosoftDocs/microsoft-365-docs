@@ -94,6 +94,8 @@
           href: get-started/company-portal.md
         - name: Enable Enterprise State Roaming
           href: get-started/enterprise-state-roaming.md
+        - name: Localize devices for users
+          href: get-started/localization.md
         - name: Set up devices
           href: get-started/set-up-devices.md
           items: 
