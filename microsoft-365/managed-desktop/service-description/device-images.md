@@ -23,7 +23,7 @@ Whether you order [new devices](#new-devices) or reuse [existing](#existing-devi
 When you order a new device from an [approved manufacturer](device-requirements.md#minimum-requirements), follow these steps to make sure they ship devices with the right Microsoft Managed Desktop image and software configuration.
 
 ### Dell
-Work directly with the Dell sales representative, will make sure that the image approved by Microsoft Managed Desktop is applied to devices for your order. For more questions on Dell devices, the image, and the ordering process, contact MMD_at_dell@dell.com.
+Work directly with the Dell sales representative, who will make sure that the image approved by Microsoft Managed Desktop is applied to devices for your order. For more questions on Dell devices, the image, and the ordering process, contact MMD_at_dell@dell.com.
 
 ### HP 
 When you order new devices from HP, be sure to use the specific SKU listed in the Additional requirements section for each model as shown in [Program devices](device-list.md#hp).
@@ -55,7 +55,7 @@ The following products are currently enabled for Microsoft Managed Desktop suppo
 
 
 ### Microsoft
-All Microsoft devices meet device requirements come with an image compliant to Microsoft Managed Desktop software. No other steps are required.
+All Microsoft devices that meet device requirements come with an image that works with Microsoft Managed Desktop. No other steps are required.
 
 To get the latest image available in the factory on a Microsoft device, work with your Surface specialist to use the Surface "Pegged PO" process.
 
@@ -66,7 +66,7 @@ You can reuse existing devices as long as they meet both the  [device requiremen
 You can reimage devices either with an image from the manufacturer or by using the Microsoft Managed Desktop "universal image." To get an appropriate manufacturer image, you could order at least one [new device](#new-devices) of the model you are reusing. Then you can obtain the image from that device and apply it to other devices of the exact same model.
 
 > [!NOTE]
-> It's your the responsibility to create, test, and deploy images. We also recommend using appropriate images provided by the manufacturer instead of custom images--including the "universal image."
+> It's your the responsibility to create, test, and deploy images. We also recommend using appropriate images provided by the manufacturer whenever possible instead of custom images--including the "universal image."
 
 ### HP
 
@@ -94,11 +94,11 @@ These images use the Windows Recovery Environment (WinRE) and this is a manual p
 
 
 ### Universal image
-Microsoft Managed Desktop has created an image containing Windows 10 Pro and Microsoft 365 Apps for Enterprise image that you can use with Microsoft Managed Desktop. However, it's best to use images appropriate to Microsoft Managed Desktop provided by the manufacturer whenever possible, even if that means an older Windows version that then needs to update once the user signs in. Using the Microsoft Managed Desktop Universal image should be a final option.
+Microsoft Managed Desktop has created an image containing Windows 10 Pro and Microsoft 365 Apps for Enterprise that you can use with Microsoft Managed Desktop. However, it's best to use images appropriate to Microsoft Managed Desktop provided by the manufacturer whenever possible, even if that means an older Windows version that then needs to update once the user signs in. Using the Microsoft Managed Desktop Universal image should be a final option.
 
 - We update the image with the latest Windows monthly quality updates every 30-60 days and Microsoft 365 Apps for Enterprise updates at least twice a year.
 - The image contains a recovery provisioning package to ensure Microsoft 365 Apps for Enterprise is restored following Windows recovery scenarios.
-- You can deploy the image with USB drives. It contains a scriptable process to insert drivers (outlined in the documentation).{WHERE? CAN WE LINK?}
+- You can deploy the image with USB drives. It contains a scriptable process to insert drivers (outlined in the documentation included with the image).
 - You can modify the included scripts and folders for use with other customizations, such as adding specific cumulative updates, file copy code, or performing other checks.
 - Drivers and quality updates are added to Windows during deployment from the USB drive.
 
