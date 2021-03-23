@@ -152,6 +152,8 @@ After you select a message, you have options for what to do with the messages in
 
 - **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.
 
+- **Block Sender**: this blocks the sender from sending emails to user.
+
 When you're finished, click **Close**.
 
 If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.
