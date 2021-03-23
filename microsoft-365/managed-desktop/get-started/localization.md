@@ -1,5 +1,5 @@
 ---
-title: Localize devices for users
+title: Localize the user experience
 description:  How to localize devices for users
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -25,7 +25,9 @@ During the process of completing setup, users can select the display and keyboar
 
 ## After completing setup
 
-Anytime after the setup process is complete, users can select the display and keyboard language for Windows 10 and the language used for display and proofing and authoring tools in Microsoft 365 Apps for Enterprise. They can't install any language-related Features on Demand however.
+Anytime after the setup process is complete, users can select the display and keyboard language for Windows 10 and the language used for display and proofing and authoring tools in Microsoft 365 Apps for Enterprise. They can't install any language-related Features on Demand however. To make these [Supported languages](#supported-languages) available for your users to install, add the user to the **Modern Workplace-Office-Language_Packs** group. The languages will be available in the Intune Company Portal.
+
+
 
 ## Supported languages
 
