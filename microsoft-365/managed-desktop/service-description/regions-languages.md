@@ -11,7 +11,7 @@ ms.collection: M365-modern-desktop
 
 # Microsoft Managed Desktop supported regions and languages
 
-This article provides details about regions and languages supported by Microsoft Managed Desktop and the regions where you can use it.
+This article provides details about regions and languages supported by Microsoft Managed Desktop and the regions where you can use it. For more information about languages supported by Microsoft Managed Desktop for the user experience, see [Localize devices for users](../get-started/localization.md).
 
 ## Supported languages
 
@@ -21,6 +21,7 @@ English is the only language available to users of Microsoft Managed Desktop. Th
 You can still use managed devices outside of English-speaking regions without an interruption to the Microsoft Managed Desktop service. For example, an employee based in the United Kingdom can work securely and receive updates on their managed device while traveling Asia, Europe, or South America. 
 
 For more information about user support with Microsoft Managed Desktop, see [Support for Microsoft Managed Desktop](./support.md).
+
 
 ## Availability of the service
 
