@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Microsoft Defender for Endpoint service issues
-description: Find solutions and work arounds to known issues such as server errors when trying to access the service.
+description: Find solutions and workarounds to known issues such as server errors when trying to access the service.
 keywords: troubleshoot microsoft defender for endpoint, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, allow, event viewer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -36,9 +36,9 @@ If you encounter a server error when trying to access the service, you’ll need
 Configure your browser to allow cookies.
 
 ## Elements or data missing on the portal
-If some UI elements or data is missing on Microsoft Defender Security Center it’s possible that proxy settings are blocking it.
+If some elements or data is missing on Microsoft Defender Security Center it’s possible that proxy settings are blocking it.
 
-Make sure that `*.securitycenter.windows.com` is included the proxy allow list.
+Make sure that `*.securitycenter.windows.com` is included the proxy allowlist.
 
 
 > [!NOTE]
@@ -46,7 +46,7 @@ Make sure that `*.securitycenter.windows.com` is included the proxy allow list.
 
 ## Microsoft Defender for Endpoint service shows event or error logs in the Event Viewer
 
-See the topic [Review events and errors using Event Viewer](event-error-codes.md) for a list of event IDs that are reported by the Microsoft Defender for Endpoint service. The topic also contains troubleshooting steps for event errors.
+See [Review events and errors using Event Viewer](event-error-codes.md) for a list of event IDs that are reported by the Microsoft Defender for Endpoint service. The article also contains troubleshooting steps for event errors.
 
 ## Microsoft Defender for Endpoint service fails to start after a reboot and shows error 577
 
