@@ -36,7 +36,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Before you begin
 
-- Create a Merge1 account for Microsoft connectors. To create an account, contact [Veritas Customer Support](https://globanet.com/contact-us/). You need to sign into this account when you create the connector in Step 1.
+- Create a Merge1 account for Microsoft connectors. To create an account, contact [Veritas Customer Support](https://www.veritas.com/content/support/). You need to sign into this account when you create the connector in Step 1.
 
 - Create a Salesforce application and acquire a token at [https://salesforce.com](https://salesforce.com). You'll need to log into the Salesforce account as an admin and get a user personal token to import data. Also, triggers need to be published on the Chatter site to capture updates, deletes, and edits. These triggers will create a post on a channel, and Merge1 will capture the information from the channel. For step-by-step instructions about how to create the application and acquire the token, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
 

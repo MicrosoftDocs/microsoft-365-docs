@@ -36,7 +36,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Before you begin
 
-- Create a Merge1 account for Microsoft connectors. To create an account, contact [Veritas Customer Support](https://globanet.com/contact-us/). You need to sign into this account when you create the connector in Step 1.
+- Create a Merge1 account for Microsoft connectors. To create an account, contact [Veritas Customer Support](https://www.veritas.com/content/support/). You need to sign into this account when you create the connector in Step 1.
 
 - Create a ServiceNow application to fetch data from your ServiceNow account. For step-by step instructions about creating the application, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf).
 

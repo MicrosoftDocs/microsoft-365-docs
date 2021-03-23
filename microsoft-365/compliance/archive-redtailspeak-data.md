@@ -36,7 +36,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Before you begin
 
-- Create a Veritas Merge1 account for Microsoft connectors. To create an account, contact [Veritas Customer Support](https://globanet.com/contact-us/). You need to sign into this account when you create the connector in Step 1.
+- Create a Veritas Merge1 account for Microsoft connectors. To create an account, contact [Veritas Customer Support](https://www.veritas.com/content/support/). You need to sign into this account when you create the connector in Step 1.
 
 - In Step 2, you need to specify your organization's SFTP server. This step is necessary so that Veritas Merge1 can contact it to collect Redtail Speak data via SFTP.
 
