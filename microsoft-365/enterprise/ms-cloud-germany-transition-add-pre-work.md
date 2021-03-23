@@ -26,10 +26,10 @@ Use these links to get to the pre-work steps relevant to your organization:
 
 - For **all customers** using Office 365 in Microsoft Cloud Deutschland, do [these steps](#General-tenant-migration-considerations).
 - For **DNS changes**, do [this step](#dns).
-- If you're using **Active Directory Federation Services** on premeises, do [these steps](#Active-Directory-Federation-Services-(AD-FS)).
+- If you're using **Active Directory Federation Services** on premises, do [these steps](#Active-Directory-Federation-Services-(AD-FS)).
 - If you're using **SharePoint Online**, do [this step](#sharepoint-online).
 - If you're using **Exchange Online** or **Exchange hybrid**, do [this step](#exchange-online).
-- If you 're using **Skype for Business Online**, do [this stpe](#Skype-for-Business-Online)
+- If you 're using **Skype for Business Online**, do [this step](#Skype-for-Business-Online)
 - If you're using a third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
 - If you're using **third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
 - If you're also using **Dynamics 365**, do [this step](#dynamics365).
