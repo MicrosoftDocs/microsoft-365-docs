@@ -78,8 +78,8 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: [Current Channel (Preview)](https://office.com/insider) with minimum build 16.0.13801.20182, or [Beta Channel](https://office.com/insider) with minimum build 16.0.13819.20006
-    - **macOS**: [Beta Channel](https://office.com/insider) with minimal build 16.47.218.0
+    - **Windows**: Preview: [Current Channel (Preview)](https://office.com/insider)
+    - **macOS**: Preview: [Beta Channel](https://office.com/insider)
     - **iOS**: Not yet supported
     - **Android**: Not yet supported
 
