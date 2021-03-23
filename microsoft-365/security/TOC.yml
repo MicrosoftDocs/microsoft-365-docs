@@ -26,6 +26,8 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
           href: ./office-365-security/sharepoint-file-access-policies.md
+        - name: Recommended MCAS policies for SaaS apps
+          href: ./office-365-security/mcas-saas-access-policies.md
     - name: Microsoft 365 security center
       href: mtp/overview-security-center.md  
     - name: Microsoft Secure Score
@@ -361,6 +363,8 @@
               href: ./mtp/overview-security-center.md
             - name: Threat Explorer (and real-time detections)
               href: ./office-365-security/threat-explorer.md
+            - name: The Email entity page
+              href: ./office-365-security/mdo-email-entity-page.md
             - name: AIR overview
               href: ./office-365-security/office-365-air.md
             - name: How automated investigation and response works
