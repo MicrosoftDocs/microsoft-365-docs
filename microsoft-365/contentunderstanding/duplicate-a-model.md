@@ -31,9 +31,9 @@ Follow these steps to duplicate a document understanding model.
 
 2. On the **Models** page, select the model you want to duplicate.
 
-3. On the ribbon, select **Duplicate**.</br>
+3. By using either the ribbon or the **Show actions** button (next to the model name), select **Duplicate**.</br>
 
-    ![Screenshot of the Models page showing a selected model with the Duplicate option highligted.](../media/content-understanding/select-model-duplicate.png) </br>
+    ![Screenshot of the Models page showing a selected model with the Duplicate options highlighted.](../media/content-understanding/select-model-duplicate-both.png) </br>
 
 4. On the **Duplicate model** panel:
 
