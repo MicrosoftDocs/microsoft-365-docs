@@ -56,7 +56,7 @@ Your action status is updated on your dashboard every 24 hours. Once you follow 
 
 For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Manager detects the setting and reflects it in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Manager flags that as a recommended action for you to take.
 
-Learn more about [Secure Score and how it works](../security/mtp/microsoft-secure-score.md).
+Learn more about [Secure Score and how it works](../security/defender/microsoft-secure-score.md).
   
 ## Action types and points
 
