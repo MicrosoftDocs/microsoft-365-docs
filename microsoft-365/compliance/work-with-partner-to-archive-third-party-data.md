@@ -65,7 +65,7 @@ The following sections list the Microsoft partners (and the third-party data sou
   
 [ArchiveSocial](#archivesocial)
   
-[Globanet](#globanet)
+[Veritas](#veritas)
   
 [OpenText](#opentext)
   
@@ -137,9 +137,9 @@ The following sections list the Microsoft partners (and the third-party data sou
     
 - Vimeo
   
-### Globanet
+### Veritas
 
-[Globanet](https://www.globanet.com) supports the following third-party data sources: 
+[Veritas](https://www.globanet.com) supports the following third-party data sources: 
   
 - AOL with Pivot Client 
     
