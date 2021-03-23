@@ -116,7 +116,7 @@ The next step is to use the PGP and SSH public keys and the IP address that you 
 
 The last step is to create a Bloomberg Message connector in the Microsoft 365 compliance center. The connector uses the information you provide to connect to the Bloomberg SFTP site and transfer email messages to the corresponding user mailbox boxes in Microsoft 365.
 
-1. Go to <https://compliance.microsoft.com]> and click **Data connectors** in the left nav.
+1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
 2. On the **Data connectors** page under **Bloomberg Message**, click **View**.
 
@@ -169,7 +169,7 @@ You need to work with Bloomberg customer support to set up your Bloomberg SFTP s
 
 After your Bloomberg SFTP site is set up, the next step is to create a Bloomberg Message connector in the Microsoft 365 compliance center. The connector uses the information you provide to connect to the Bloomberg SFTP site and transfer email messages to the corresponding user mailbox boxes in Microsoft 365. To complete this step, be sure to have copies of the same private keys and key passphrases that you used to set up your Bloomberg SFTP site.
 
-1. Go to <https://compliance.microsoft.com]> and click **Data connectors** in the left nav.
+1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
 2. On the **Data connectors** page under **Bloomberg Message**, click **View**.
 
