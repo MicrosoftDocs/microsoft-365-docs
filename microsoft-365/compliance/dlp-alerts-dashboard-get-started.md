@@ -38,10 +38,18 @@ Before you begin, make sure you have the necessary prerequisites:
 
 ### Licensing for the DLP alert management dashboard
 
-All eligible tenants for Office 365 DLP can access the new DLP alert management dashboard. To get started, you should be eligible for Office 365 DLP for Exchange Online, SharePoint Online, and OneDrive for Business. For more information about the licensing requirements for Office 365 DLP, see [Which licenses provide the rights for a user to
+All eligible tenants for Office 365 DLP can access the DLP alert management dashboard. To get started, you should be eligible for Office 365 DLP for Exchange Online, SharePoint Online, and OneDrive for Business. For more information about the licensing requirements for Office 365 DLP, see [Which licenses provide the rights for a user to
 benefit from the service?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
 Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) who are eligible for [Teams DLP](dlp-microsoft-teams.md) will see their endpoint DLP policy alerts and Teams DLP policy alerts in the DLP alert management dashboard.
+
+The **content preview** feature is available only for these licenses:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Advanced Compliance (E5) add on
+- Microsoft 365 E5/A5 Information Protection and Governance
+- Microsft 365 E5/A5 Compliance
 
 ### Licensing for alert configuration options
 
