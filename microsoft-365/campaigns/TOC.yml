@@ -19,7 +19,7 @@
     - name: Customize sign-in page
       href: m365-customize-sign-in.md
     - name: Add users
-      href: ../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
+      href: ../admin/add-users/add-users.md?bc=%2fmicrosoft-365%2fcampaigns%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json
 - name: Bump up security protection
   items: 
     - name: Overview
@@ -65,4 +65,4 @@
 - name: Security incident management
   items: 
     - name: Respond to a compromised email account
-      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
+      href: ../security/defender-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json

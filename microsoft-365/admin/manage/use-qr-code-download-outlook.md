@@ -33,7 +33,7 @@ In Outlook on the web or other desktop Outlook applications, users may see notif
 
 This feature is on by default. To disable this feature, follow the steps below.
 
-1. [Connect to Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Connect to Exchange PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
 2. Using PowerShell, you can disable the notifications informing your users about the Outlook mobile apps. This will also prevent the QR code sign-in flow from being shown.
 
 ```powershell
@@ -42,4 +42,4 @@ Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 
 Related topics
 
-[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps)
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig?view=exchange-ps)
