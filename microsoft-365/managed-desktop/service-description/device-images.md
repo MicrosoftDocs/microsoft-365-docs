@@ -90,7 +90,7 @@ These steps will remove all data on the device, so before starting you should ba
 
 Microsoft Surface devices include "bare metal recovery" [images](https://support.microsoft.com/en-us/surfacerecoveryimage) that are specific to each model. You can use these images to reimage devices.
 
-These images use the Windows Recovery Environment (WinRE) and this is a manual process (not automated). Follow the steps in [Creating and using a USB recovery drive for Surface](https://support.microsoft.comsurface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07#bkmk_reset_surface).
+These images use the Windows Recovery Environment (WinRE) and this is a manual process (not automated). Follow the steps in [Creating and using a USB recovery drive for Surface](https://support.microsoft.com/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07).
 
 
 ### Universal image
