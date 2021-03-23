@@ -28,13 +28,13 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-1.  Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the
+1.  Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the
     Windows machine you need to investigate.
 
 2.  Extract the contents of MDEClientAnalyzer.zip on the machine.
 
 3.  Open an elevated command-line:
-    1. Go to **Start** and type **cmd**.
+    1. Go to **Start** and type **cmd**.
     2. Right-click **Command prompt** and select **Run as administrator**.
 
 4.  Enter the following command and press **Enter**:
@@ -43,7 +43,7 @@ ms.technology: m365d
 HardDrivePath\\MDEClientAnalyzer.cmd
 ```
 
-**Replace HardDrivePath with the path to which the tool was extracted to, for example:**
+**Replace HardDrivePath with the path to which the tool was extracted to, for example:**
 
 `C:\\Work\\tools\\MDATPClientAnalyzer\\MDEClientAnalyzer.cmd`
 
@@ -62,17 +62,14 @@ Control (CnC) URLs while also calling into Microsoft Monitoring Agent
 connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 
 ## Result package contents on Windows
-!Note  
-The exact files captured may change depending on factors such as:
 
--   The version of windows on which the analyzer is run.
-
--   Event log channel availability on the machine.
-
--   The start state of the EDR sensor (Sense is stopped if machine is not yet
+> [!NOTE]    
+> The exact files captured may change depending on factors such as:
+> -   The version of windows on which the analyzer is run.
+> -   Event log channel availability on the machine.
+> -   The start state of the EDR sensor (Sense is stopped if machine is not yet
     onboarded).
-
--   If an advanced troubleshoot parameter was used with the analyzer command.
+>-   If an advanced troubleshoot parameter was used with the analyzer command.
 
 By default, the unpacked MDEClientAnalyzerResult.zip file will contain the
 following items.

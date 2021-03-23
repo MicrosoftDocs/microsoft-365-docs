@@ -572,13 +572,12 @@
 ##### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
 #### [Troubleshoot sensor health issues using Client Analyzer]()
 ##### [Client analyzer overview](overview-client-analyzer.md)
-##### [Download and run the Client analyzer](get-run-client-analyzer.md)
+##### [Download and run the Client analyzer](download-client-analyzer.md)
 ##### [Run the client analyzer on Windows](run-analyzer-windows.md)
 ##### [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
 ##### [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
 ##### [Understand the analyzer HTML report](analyzer-report.md)
-##### [Open a support ticket to Microsoft and include the Analyzer results](support-analyzer.md)
-
+##### [Provide feedback on the client analyzer tool](analyzer-feedback.md)
 
   
 #### [Troubleshoot Microsoft Defender ATP service issues]()

@@ -22,7 +22,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-#  Run the client analyzer on Windows
+#  Run the client analyzer on macOS and Linux
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -37,10 +37,10 @@ ms.technology: m365d
 
 3.  Open a terminal session, change directory to the extracted location and run:
 
->   **./mde_support_tool.sh -d**
+`./mde_support_tool.sh -d`
 
 !Note  
-If the script does not have permissions to execute, then you’ll need to first
+If the script does not have permissions to execute, then you'll need to first
 run:  
 *chmod a+x mde_support_tool.sh*
 

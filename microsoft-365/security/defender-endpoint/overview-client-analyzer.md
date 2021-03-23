@@ -63,10 +63,9 @@ Prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-lea
     collaboration on a support issue, you may be asked to send the compressed
     data to Microsoft CSS using Secure File Exchange. 
 
->   For more information about Secure File
->   Exchange: <https://support.microsoft.com/help/4012140/how-to-use-secure-file-exchange-to-exchange-files-with-microsoft-suppo>  
->   For more information about our privacy
->   statement: <https://privacy.microsoft.com/privacy>
+For more information about Secure File Exchange, see [How to use Secure File Exchange to exchange files with Microsoft Support](https://support.microsoft.com/help/4012140/how-to-use-secure-file-exchange-to-exchange-files-with-microsoft-suppo>)  
+
+For more information about our privacy statement, see [Privacy at Microsoft](https://privacy.microsoft.com/privacy).
 
 ## Requirements
 
@@ -91,9 +90,9 @@ Prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-lea
     Local System and emulate the behavior of the actual EDR sensor.
 
     > [!NOTE]
-    > If you use Attack Surface Reduction (ASR) rule ‘[Block process creations
+    > If you use Attack Surface Reduction (ASR) rule [Block process creations
     originating from PSExec and WMI
-    commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)’,
+    commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands),
     then you should temporarily disable the rule or [configure an exclusion to
     the ASR
     rule](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules)

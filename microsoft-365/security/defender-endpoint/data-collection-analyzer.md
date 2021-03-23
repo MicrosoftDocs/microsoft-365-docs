@@ -33,10 +33,10 @@ scenarios. The analyzer script supports additional parameters for that purpose
 and can collect a specific log set based on the observed symptoms that need to
 be investigated.
 
-Simply run ‘**MDEClientAnalyzer.cmd /?**’ to see the list of available
+Simply run '**MDEClientAnalyzer.cmd /?**' to see the list of available
 parameters and their description:
 
-![Scenarios.jpg](media/d89a1c04cf8441e4df72005879871bd0.png)
+![Scenarios.jpg](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 !Note  
 When any advanced troubleshooting parameter is used, the analyzer also calls
@@ -66,7 +66,7 @@ scenarios.
 to start a network and windows firewall trace that is useful when
 troubleshooting various network related issues.  
   
-**-b** Same as ‘-c’ but the process monitor trace will be initiated during next
+**-b** Same as '-c' but the process monitor trace will be initiated during next
 boot and stopped only when the -b is used again.
 
 **-a** Calls into [Windows Performance
@@ -83,7 +83,7 @@ DLP. This is useful for scenarios where [DLP
 actions](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide#endpoint-activities-you-can-monitor-and-take-action-on)
 are not happening as expected for files.
 
-**-q** Calls into DLPDiagnose.ps1 script from the analyzer ‘Tools’ directory
+**-q** Calls into DLPDiagnose.ps1 script from the analyzer 'Tools' directory
 that validates the basic configuration and requirements for Endpoint DLP.
 
 **-d** Collects a memory dump of MsSense**S**.exe (the sensor process on Windows
@@ -106,15 +106,15 @@ to force the system to crash and generate a machine memory dump. This would be
 useful for analysis of various OS stability issues.
 
 The analyzer and all the above scenario flags can be initiated remotely by
-running ‘**RemoteMDEClientAnalyzer.cmd**’ which is also bundled into the
+running '**RemoteMDEClientAnalyzer.cmd**' which is also bundled into the
 analyzer toolset:
 
-![Text Description automatically generated](media/57cab9d82d08f672a92bf9e748ac9572.png)
+![Text Description automatically generated](images/57cab9d82d08f672a92bf9e748ac9572.png)
 
 >[!NOTE]
 > -   When using RemoteMDEClientAnalyzer.cmd it calls into psexec to download the
     tool from the configured file share and then run it locally via PsExec.exe.
-    The CMD script uses ‘-r’ flag to specify that it is running remotely within
+    The CMD script uses '-r' flag to specify that it is running remotely within
     SYSTEM context and so no prompt to the user will be presented.
 >-   That same flag can be used with MDEClientAnalyzer.cmd to avoid a prompt to
     user that requests to specify the number of minutes for data collection. For
