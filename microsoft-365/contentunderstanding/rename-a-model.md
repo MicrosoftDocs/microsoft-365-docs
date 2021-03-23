@@ -34,7 +34,7 @@ Follow these steps to rename a document understanding model.
 
 2. On the **Models** page, select the model you want to rename.
 
-3. Select **Rename**, by using either the ribbon or the **Show actions** button (next to the model name). </br>
+3. By using either the ribbon or the **Show actions** button (next to the model name), select **Rename**. </br>
 
     ![Screenshot of the Models page showing a selected model with the Rename options highlighted.](../media/content-understanding/select-model-rename-both.png) </br>
 
