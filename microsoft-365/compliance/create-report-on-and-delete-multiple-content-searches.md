@@ -29,7 +29,7 @@ ms.custom: seo-marvel-apr2020
 
 - You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center to run the scripts that are described in this topic.
 
-- To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls).
+- To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls).
 
 - Be sure to save all the files that you create in this topic to the same folder. That will make it easier to run the scripts.
 
@@ -72,7 +72,7 @@ The comma separated value (CSV) file that you create in this step contains a row
 
 ## Step 2: Connect to Security & Compliance Center PowerShell
 
-The next step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+The next step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Step 3: Run the script to create and start the searches
 

@@ -106,9 +106,9 @@ productDirectory:
           text: Configure three tiers of protection with Microsoft Teams
         - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
           text: Deploy Microsoft Defender for Endpoint
-        - url: security/office-365-security/office-365-atp.md
+        - url: security/defender-365-security/defender-for-office-365.md
           text: Deploy Microsoft Defender for Office 365
-        - url: security/office-365-security/microsoft-365-policies-configurations.md
+        - url: security/defender-365-security/microsoft-365-policies-configurations.md
           text: Configure identity and device access protection
     # Card
     - title: Protect your information and comply with regulations
@@ -133,7 +133,7 @@ productDirectory:
           text: Deploy Microsoft 365 Apps
         - url: /windows/deployment/
           text: Deploy Windows 10
-        - url: /microsoft-365/managed-desktop/
+        - url: ./managed-desktop/index.yml
           text: Microsoft Managed Desktop
         - url: /mem/intune/fundamentals/what-is-intune
           text: Device management with Microsoft Intune
@@ -264,7 +264,7 @@ additionalContent:
             - text: Microsoft Stream
               url: /stream/
             - text: MileIQ
-              url: https://docs.microsoft.com/office365/mileiq/
+              url: /office365/mileiq/
             - text: Yammer
               url: /yammer/yammer-landing-page
         # Card

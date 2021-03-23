@@ -34,7 +34,7 @@ You must also connect to Microsoft 365 with PowerShell.
 
 ## Set strong passwords
 
-1. [Connect to Microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 2. Using PowerShell, you can turn off strong password requirements for all users with the following command:
 
@@ -52,8 +52,8 @@ You must also connect to Microsoft 365 with PowerShell.
 
 ## Related content
 
-[How to connect to Microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[How to connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-[More information on PowerShell MsolUser commands](https://docs.microsoft.com/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
+[More information on PowerShell MsolUser commands](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
 
-[More information on password policy](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)
+[More information on password policy](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)

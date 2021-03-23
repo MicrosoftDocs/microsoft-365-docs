@@ -38,7 +38,7 @@ See the [More information](#more-information) section for a detailed description
 
 ## Step 1: Connect to the Security & Compliance Center PowerShell
 
-The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Step 2: Run the script to report on holds associated with eDiscovery cases
 
@@ -159,7 +159,7 @@ After you've connected to Security & Compliance Center PowerShell, the next step
 
 ## More information
 
-The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases](ediscovery-cases.md).
+The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases](./get-started-core-ediscovery.md).
 
 - The name of the hold and the name of the eDiscovery case that the hold is associated with.
 

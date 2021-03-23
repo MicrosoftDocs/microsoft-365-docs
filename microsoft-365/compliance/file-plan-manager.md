@@ -21,7 +21,7 @@ ms.custom: seo-marvel-may2020
 
 # Use file plan to manage retention labels
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Although you can create and manage retention labels from **Information governance** in the Microsoft 365 compliance center, file plan from **Records management** has additional management capabilities:
 
@@ -138,8 +138,13 @@ To import new retention labels and modify existing retention labels:
 
    ![Blank file plan template opens in Excel](../media/file-plan-blank-template.png)
 
-3. Fill out the template, using the following information that describes the properties and valid values for each property. For import, each value has a maximum length of 64 characters. <br/>
-
+3. Fill out the template, using the following information that describes the properties and valid values for each property. For import, some values have a maximum length:
+    
+    - **LabelName**: Maximum length of 64 characters
+    - **Comment** and **Notes**: Maximum length of 1024 characters
+    - All other values: Unlimited length
+    <br/>
+    
    |Property|Type|Valid values|
    |:-----|:-----|:-----|
    |LabelName|String|This property specifies the name of the retention label.|
@@ -159,7 +164,7 @@ To import new retention labels and modify existing retention labels:
    |CitationUrl|String|This property specifies the URL that's displayed in the **Provision/citation** file plan descriptor.|
    |CitationJurisdiction|String|This property specifies the jurisdiction or agency that's displayed in the **Provision/citation** file plan descriptor. For example, "U.S. Securities and Exchange Commission (SEC)".|
    |Regulatory|String|Leave blank. This property isn't used at this time.|
-   |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) cmdlet to view the available retention rules. Note that because the EventType values are unique to an organization, if you export labels from one organization, you can't use the values for the EventType property from that organization to import labels into a different organization.|
+   |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule) cmdlet to view the available retention rules. Note that because the EventType values are unique to an organization, if you export labels from one organization, you can't use the values for the EventType property from that organization to import labels into a different organization.|
    |||
 
    Here's an example of the template containing the information about retention labels.
