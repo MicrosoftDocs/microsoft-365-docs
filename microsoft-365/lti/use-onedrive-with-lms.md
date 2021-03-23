@@ -6,8 +6,13 @@ manager: serdars
 ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: ITPro
+ms.service: o365-administration
+f1.keywords:
+- CSH
 search.appverid: 
+- MET150
+- MOE150
+- BCS160
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new OneDrive LTI App."
@@ -77,8 +82,6 @@ The person who performs this integration should be an admin of Canvas and an adm
 
 7. Select **Next** from ?? page.
 
-<img src="c:\Users\v-cichur\GitHub\microsoft-365-docs-pr\microsoft-365\knowledge/media/image6.png" style="width:6.5in;height:3.3375in" />
-
 8. Select **Next** in the screen that shows information that's confidential to you.
  
    The final screen of the Azure portal shows the next steps for adding your Canvas instance.
@@ -99,20 +102,13 @@ The person who performs this integration should be an admin of Canvas and an adm
 
    The key gets created in **OFF** mode
 
-   ![The created developer keys in the off mode](../media/lti-media/copy-developer-keys.png)
+   ![The created developer keys in the off mode](../media/lti-media/lti-copy-developer-keys.png)
 
 4. Copy the highlighted text.
     This serves as Client ID in Microsoft OneDrive LTI portal.
 
-
-
 5. Paste the text into the **Client ID** field in Microsoft OneDrive LTI portal, and then select **Next**.
-
-
 
 6. Select **Save**.
 
-
 7. View the settings by selecting**View LTI Tenants**.
-
-
