@@ -56,9 +56,9 @@ Take the following configuration steps in Microsoft 365 security center:
 
 
 ## Exclude devices from being actively probed in standard discovery
-If there are devices on your network which should not be actively scanned, you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode. Those devices will be passively discovered but won't be actively probed. 
+If there are devices on your network which should not be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode. Those devices will be passively discovered but won't be actively probed. 
 
-## Select networks to monitor  - WORK IN PROGRESS
+## Select networks to monitor
  Microsoft Defender for Endpoint analyzes networks and determines if it is a corporate network that needs to be monitored or a non-corporate network that can be ignored. Corporate networks are typically chosen to be monitored. However, you can override this decision by choosing to monitor non-corporate networks where onboarded devices are found. 
 
 You can configure where device discovery can be performed by specifying which networks to monitor. When a network is monitored, device discovery can be performed on it. 
@@ -67,10 +67,10 @@ A list of networks where device discovery can be performed is shown in the **Mon
 
 
 >[!NOTE]
-> Only the top 50 networks (according to the number of associated onboarded devices) will be available in the network list. 
+> Only top 50 networks (according to the number of associated devices) will be available in the network list. 
 
 
-The page is sorted by the number of onboarded devices that were connected to the network in the last 7 days. 
+The list of monitored networks is sorted based upon the total number of devices seen on the network in the last 7 days.
 
 
 You can apply a filter to view any of the following network discovery states:
@@ -81,7 +81,7 @@ You can apply a filter to view any of the following network discovery states:
 
 
 ### Configure the network monitor state
-You can specify which networks to monitor or ignore by configuring the network monitor state. Monitored networks is where device discovery will be performed and are typically corporate networks. You can also choose to ignore networks or select the initial discovery classification after modifying a state. 
+You control where device discovery takes place. Monitored networks is where device discovery will be performed and are typically corporate networks. You can also choose to ignore networks or select the initial discovery classification after modifying a state. 
 
 Choosing the initial discovery classification means applying the default system-made network monitor state. Selecting the default system-made network monitor state means that networks that were identified to be corporate, will be monitored, and ones identified as non-corporate, will be ignored automatically.
  
@@ -92,9 +92,10 @@ Choosing the initial discovery classification means applying the default system-
 5. Choose whether you want to monitor, ignore, or use the initial discovery classification. 
     
     > [!WARNING]
-    >- Choosing to monitor a network that was not identified by Microsoft Defender for Endpoint as a corporate network can cause device discovery outside of your corporate network. Conversely, choosing to ignore a network means that devices will not be discovered in that network. 
+    >- Choosing to monitor a network that was not identified by Microsoft Defender for Endpoint as a corporate network can cause device discovery outside of your corporate network, and may therefore detect home or other non-corporate devices. 
+    > - Choosing to ignore a network will stop monitoring and discovering devices in that network. Devices that were already discovered will not be removed from the inventory, but will no longer be updated, and details will be retained until the data retention period of the Defender for Endpoint expires.
     > - Before choosing to monitor non-corporate networks, you must ensure you have permission to do so. <br>
-    > - Devices that were already discovered will not be removed from the inventory during the standard retention period, and will not be updated anymore. 
+
 
 6. Confirm that you want to make the change. 
 
