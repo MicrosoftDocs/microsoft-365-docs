@@ -36,7 +36,7 @@ The following overview explains the process of using a connector to archive webp
 
 ## Before you begin
 
-- Create a Veritas Merge1 account for Microsoft connectors. To create this account, contact [Veritas Customer Support](https://globanet.com/ms-connectors-contact/). You will sign into this account when you create the connector in Step 1.
+- Create a Veritas Merge1 account for Microsoft connectors. To create this account, contact [Veritas Customer Support](https://www.veritas.com/content/support/). You will sign into this account when you create the connector in Step 1.
 
 - You need to work with Veritas support to set up a custom file format to convert the webpage items to. For more information, see the [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
