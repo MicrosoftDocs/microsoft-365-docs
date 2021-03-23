@@ -44,7 +44,7 @@ Follow these steps to rename a document understanding model.
 
     ![Screenshot showing the Rename model panel.](../media/content-understanding/rename-model-panel.png) </br>
 
-   b. (Optional) Under **Advanced settings**, select whether you want to associate an existing [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview). If you you select **Use an existing content type**, the model will be renamed to match the selected content type.
+   b. (Optional) Under **Advanced settings**, select whether you want to associate an existing [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview). If you choose **Use an existing content type**, the model will be renamed to match the selected content type.
 
 5. Select **Rename**.
 
