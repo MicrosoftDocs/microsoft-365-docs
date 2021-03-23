@@ -116,7 +116,7 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 
-### [Device discovery][]
+### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
