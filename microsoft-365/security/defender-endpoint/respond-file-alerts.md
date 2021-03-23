@@ -156,7 +156,7 @@ Go to **Settings** > **Advanced features** > **Download quarantined files** to t
 >[!IMPORTANT]
 >Requirements:
 >- Your organization uses Microsoft Defender Antivirus 
->- Cloud–based protection is enabled. See [Manage cloud–based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
+>- Cloud–based protection is enabled. See [Manage cloud–based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 >- Microsoft Defender for Endpoint is in active mode
 >- Engine version is 1.1.17300.4 or later
 >- Devices have Windows 10 version 1703 or later, or Windows server 2016 and 2019
