@@ -48,7 +48,7 @@ Likewise, if your organization is using role-based access control (RBAC), you ca
 
 To set up your first email notification for incidents, create a new rule and customize email notification settings.
 
-1. In the navigation pane, select **Settings** > **Incident email notifications**.
+1. In the navigation pane of the Microsoft 365 security center, select **Settings** > **Microsoft 365 Defender** > **Incident email notifications**.
 2. Select **Add item**.
 3. Give the rule a name in **Name** and supply a **Description**.
 
