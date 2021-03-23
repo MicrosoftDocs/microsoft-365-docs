@@ -11,6 +11,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 #  Network configuration for Microsoft Managed Desktop
