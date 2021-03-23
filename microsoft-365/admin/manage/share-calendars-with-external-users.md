@@ -31,7 +31,7 @@ It's sometimes necessary for your users to schedule meetings with people outside
 You can enable calendar sharing for all users in your organization in the Microsoft 365 admin center. Once sharing is enabled, your users can use Outlook Web App to share their calendars with anyone inside or outside the organization. People inside the organization can view the shared calendar along with their own calendar. People outside the organization will be sent a URL that they can use to view the calendar. Users in your organization decide when to share and how much to share.
 
 > [!NOTE]
-> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as federation, and must meet minimum software requirements. See [Sharing](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) for more information.
+> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as federation, and must meet minimum software requirements. See [Sharing](/exchange/sharing-exchange-2013-help) for more information.
   
 ## Enable calendar sharing using the Microsoft 365 admin center
 

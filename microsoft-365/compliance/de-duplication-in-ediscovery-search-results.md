@@ -79,6 +79,6 @@ Unique messages can also be marked as duplicates when the Copy-on-Write page pro
 
   - [Export a Content Search report](export-a-content-search-report.md)
 
-  - [Export In-Place eDiscovery search results to a PST file](https://go.microsoft.com/fwlink/p/?linkid=832671)
+  - [Export In-Place eDiscovery search results to a PST file](/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
 
-  - [Export content and create reports in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)
+  - [Export content and create reports in the eDiscovery Center](/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

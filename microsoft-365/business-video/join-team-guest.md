@@ -1,5 +1,5 @@
 ---
-title: "Join a team as s guest"
+title: "Join a team as a guest"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw

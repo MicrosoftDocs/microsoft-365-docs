@@ -83,4 +83,4 @@ Follow these steps to get started with multi-geo:
 
 [Multi-Geo Capabilities in Exchange Online](multi-geo-capabilities-in-exchange-online.md)
 
-[Teams experience in a multi-geo environment](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Teams experience in a multi-geo environment](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

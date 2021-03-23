@@ -80,7 +80,7 @@ In this step, you create an Azure virtual network and add DC1, a virtual machine
 First, start a Windows PowerShell command prompt on your local computer.
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/). 
   
 Sign in to your Azure account with the following command.
   
@@ -412,4 +412,4 @@ Explore these additional sets of Test Lab Guides:
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

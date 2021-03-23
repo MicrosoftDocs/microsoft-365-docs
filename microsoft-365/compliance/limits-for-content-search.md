@@ -30,6 +30,7 @@ The following table lists the search limits when using the content search tool i
 |:-----|:-----|
 |The maximum number of mailboxes or sites that can be searched in a single search  <br/> |No limit <sup>1</sup> <br/> |
 |The maximum number of searches that can run at the same time in your organization.  <br/> |30  <br/> |
+|The maximum number of organization-wide searches that can be run at the same time. <br/> |3  <br/> |
 |The maximum number of searches that a single user can start at the same time. This limit is most likely hit when the user tries to start multiple searches by using the **Get-ComplianceSearch \| Start-ComplianceSearch** command in Security & Compliance Center PowerShell.  <br/> |10  <br/> |
 |The maximum number of items per user mailbox that are displayed on the preview page when previewing Content Search results.  <br/> |100  <br/> |
 |The maximum number of items found in all user mailboxes that are displayed on the preview page when previewing search results. The newest items are displayed.  <br/> |1,000  <br/> |
@@ -49,6 +50,19 @@ The following table lists the search limits when using the content search tool i
 > [!NOTE]
 > <sup>1</sup> Although you can search an unlimited number of mailboxes in a single search, you can only download the exported search results from a maximum of 100,000 mailboxes using the eDiscovery Export Tool in the Microsoft 365 compliance center. To download the search results from more than 100,000 mailboxes, you have to use Security & Compliance Center PowerShell. For more information and a sample script, see [Exporting results from more than 100,000 mailboxes](export-search-results.md#exporting-results-from-more-than-100000-mailboxes). <br/><br/> <sup>2</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched are counted against this limit. <br/><br/> <sup>3</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  `"time*"` can expand to  `"time OR timer OR times OR timex OR timeboxed OR …"`. 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms. 
   
+## Search times
+Microsoft collects performance information for searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for collection searches based on the number of mailboxes included in the search.
+
+|Number of mailboxes|Average search time|
+|:-----|:-----|
+|100|30 seconds|
+|1,000|45 seconds|
+|10,000|4 minutes|
+|25,000|10 minutes|
+|50,000|20 minutes|
+|100,000|25 minutes|
+|||
+
 ## Export limits
 The following table lists the limits when exporting the results of a content search. These limits also apply when you export content from a Core eDiscovery case.
 
@@ -88,7 +102,7 @@ There are additional limits related to different aspects of searching for conten
 
 - [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 
-- [Search limits for SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits)
+- [Search limits for SharePoint Online](/sharepoint/search-limits)
 
 For information about content searches, see:
   
