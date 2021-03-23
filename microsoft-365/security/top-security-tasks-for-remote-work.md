@@ -122,7 +122,7 @@ Now that you have Microsoft Defender for Office 365 and Microsoft Defender for I
 After you have configured one or more of your Defender for Office 365 services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
 
 - [Learn more about MTP](./defender/microsoft-365-defender.md)
-- [Turn on MTP](./defender/mtp-enable.md)
+- [Turn on MTP](./defender/m365d-enable.md)
 - [Opt in for preview features](./defender/preview.md)
 
 ## 6: Configure Intune mobile app protection for phones and tablets
