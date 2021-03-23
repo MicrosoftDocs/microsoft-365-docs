@@ -79,7 +79,7 @@ If the command line returns a DNS record, remove the _msoid_ CNAME from your dom
 **Applies to**: Customers using AD FS on premises to authenticate users connecting to Microsoft Office 365<br>
 **When applied**: Any time before phase 4 starts
 
-Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs)
+Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.md)
 
 ## SharePoint Online
 
