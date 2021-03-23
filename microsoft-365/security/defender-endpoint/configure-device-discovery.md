@@ -83,7 +83,7 @@ You can apply a filter to view any of the following network discovery states:
 ### Configure the network monitor state
 You can specify which networks to monitor or ignore by configuring the network monitor state. Monitored networks is where device discovery will be performed and are typically corporate networks. You can also choose to ignore networks or select the initial discovery classification after modifying a state. 
 
-Choosing the initial discovery classification means applying the default system-made network monitor state. For example, a network was identified to be a non-corporate network and was classified as a network that will be ignored. It was then overridden to be monitored. Selecting the initial discovery classification will revert to the network being ignored. 
+Choosing the initial discovery classification means applying the default system-made network monitor state. Selecting the default system-made network monitor state means that networks that were identified to be corporate, will be monitored, and ones identified as non-corporate, will be ignored automatically.
  
 1. Select **Settings > Device discovery**.
 2. Select **Monitored networks**. 
