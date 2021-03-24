@@ -18,7 +18,7 @@ localization_priority: Normal
 
 ---
 
-# Edit an existing topic 
+# Edit an existing topic in Microsoft Viva Topics 
 
 </br>
 
