@@ -200,11 +200,11 @@ After your Bloomberg SFTP site is configured, the next step is to create a Insta
 
       - **SFTP port:** The port number for the Bloomberg SFTP site. The connector uses this port to connect to the SFTP site.
 
-      - **PGP private key:** The PGP private key for the Bloomberg SFTP site. Be sure to include the entire private key value, including the beginning and ending lines for the key block.
+      - **PGP private key:** The PGP private key for the Bloomberg SFTP site. Be sure to include the entire private key value, including the beginning and ending lines of the key block.
 
       - **PGP key passphrase:** The passphrase for the PGP private key.
 
-      - **SSH private key:** The SSH private key for the Bloomberg SFTP site. Be sure to include the entire private key value, including the beginning and ending lines for the key block.
+      - **SSH private key:** The SSH private key for the Bloomberg SFTP site. Be sure to include the entire private key value, including the beginning and ending lines of the key block.
 
       - **SSH key passphrase:** The passphrase for the SSH private key.
 
