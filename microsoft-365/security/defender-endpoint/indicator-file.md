@@ -30,7 +30,8 @@ ms.technology: mde
 
 
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
 
@@ -47,13 +48,11 @@ It's important to understand the following prerequisites prior to creating indic
 - To start blocking files, you first need to [turn the **Block or allow** feature on](advanced-features.md) in Settings.
 - This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
 
->[!IMPORTANT]
->- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action 
->- Trusted signed files will be treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
-
- 
->[!NOTE]
->Typically, file blocks are enforced within a couple of minutes, but can take upwards of 30 minutes.
+> [!IMPORTANT]
+> - The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action 
+> - Trusted signed files will be treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
+> - Typically, file blocks are enforced within a couple of minutes, but can take upwards of 30 minutes.
+> - If there are conflicting file indicator policies, the enforcement policy of the more secure policy is applied. For example, a SHA-256 file hash indicator policy takes precedence over an MD5 file hash indicator policy if both hash types define the same file.
 
 ### Create an indicator for files from the settings page
 
