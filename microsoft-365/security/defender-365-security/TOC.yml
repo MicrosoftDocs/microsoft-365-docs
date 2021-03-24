@@ -10,7 +10,7 @@
             - name: Security roadmap
               href: security-roadmap.md
             - name: Defender for Office 365 in the Microsoft 365 security center
-              href: defender/microsoft-365-security-center-mdo.md 
+              href: ../defender/microsoft-365-security-center-mdo.md 
             - name: Exchange Online Protection
               items: 
                 - name: Exchange Online Protection overview
@@ -38,7 +38,7 @@
             - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
               href: turn-on-mdo-for-spo-odb-and-teams.md
             - name: Microsoft 365 security center overview
-              href: ./defender/overview-security-center.md
+              href: ../defender/overview-security-center.md
             - name: Threat Explorer (and real-time detections)
               href: threat-explorer.md
             - name: The Email entity page
@@ -202,7 +202,7 @@
             - name: Use Threat Trackers
               href: threat-trackers.md
             - name: View alerts
-              href: ../compliance/alert-policies.md
+              href: ../../compliance/alert-policies.md
             - name: Smart reports and insights in the Security & Compliance Center
               href: reports-and-insights-in-security-and-compliance.md
             - name: Enable the Report Message add-in
@@ -319,8 +319,6 @@
               href: quarantine-faq.md
         - name: Reference
           items: 
-            - name: Understanding latest attacks with threat analytics
-              href: ./defender/latest-attack-campaigns.md
             - name: Help and support for EOP
               href: help-and-support-for-eop.md
             - name: Troubleshooting mail sent to Microsoft 365
