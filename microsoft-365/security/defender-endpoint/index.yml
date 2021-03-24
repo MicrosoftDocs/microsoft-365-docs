@@ -27,7 +27,7 @@ landingContent:
       - linkListType: overview
         links:
         - text: What is Microsoft Defender for Endpoint?
-          url:  microsoft-defender-advanced-threat-protection.md
+          url:  microsoft-defender-endpoint.md
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Defender for Endpoint

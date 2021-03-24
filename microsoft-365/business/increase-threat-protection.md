@@ -51,7 +51,7 @@ Your Office 365 or Microsoft 365 environment includes protection against malware
 
 6. Select **Save.**
 
-For more information, see [Anti-malware protection in EOP](../security/defender-365-security/anti-malware-protection.md).
+For more information, see [Anti-malware protection in EOP](../security/office-365-security/anti-malware-protection.md).
 
 ## Protect against ransomware
 
@@ -132,7 +132,7 @@ To create an anti-phishing policy in Microsoft Defender for Office 365, watch  [
 
 4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-5. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/defender-365-security/set-up-anti-phishing-policies.md).
+5. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
 
@@ -175,7 +175,7 @@ To create an Safe Attachment policy, either watch [this short video](https://sup
 |Redirect attachment on detection|Enable redirection (select this box)          Enter the admin account or a mailbox setup for quarantine.          Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Set up anti-phishing policies in Microsoft Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md).
+For more information, see [Set up anti-phishing policies in Microsoft Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 ## Protect against phishing attacks with Safe Links
 
@@ -218,7 +218,7 @@ To create a new policy targeted to all recipients in your domain:
 |Use Safe Attachments to scan downloadable content|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Safe Links](../security/defender-365-security/safe-links.md).
+For more information, see [Safe Links](../security/office-365-security/safe-links.md).
 
 ## Go to Intune admin center
 

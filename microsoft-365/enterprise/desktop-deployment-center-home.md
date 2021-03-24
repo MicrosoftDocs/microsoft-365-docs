@@ -24,7 +24,7 @@ Use these resources to deploy modern desktops:
 - [Windows 10 deployment](/windows/deployment/)
 - [Deploy Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
-- [Identity and device access policies](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [Identity and device access policies](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 You can also view the [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).
 
