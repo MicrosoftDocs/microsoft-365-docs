@@ -12,14 +12,12 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 03/24/2021
 ms.technology: mde
+ms.topic: how-to
 ---
 
 # Customize controlled folder access
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -115,7 +113,7 @@ An allowed application or service only has write access to a controlled folder a
 
 4. Select **Add an allowed app** and follow the prompts to add apps.
 
-    ![Screenshot of how to add an allowed app button](/microsoft-365/security/defender-endpoint/images/cfa-allow-app)
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="Add an allowed app button":::
 
 ### Use Group Policy to allow specific apps
 
@@ -144,7 +142,7 @@ An allowed application or service only has write access to a controlled folder a
 
    Continue to use `Add-MpPreference -ControlledFolderAccessAllowedApplications` to add more apps to the list. Apps added using this cmdlet will appear in the Windows Security app.
 
-![Screenshot of a PowerShell window with the above cmdlet entered](/microsoft-365/security/defender-endpoint/images/cfa-allow-app-ps)
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="PowerShell cmdlet to allow an app":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
