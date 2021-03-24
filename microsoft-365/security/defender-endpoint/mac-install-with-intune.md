@@ -181,7 +181,7 @@ To approve the system extensions:
 
 4. Select **OK**.
 
-    ![Import a configuration from a file for Custom Configuration Profile](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles.png)
+    ![Import a configuration from a file for Custom Configuration Profile](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
 
 5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
@@ -205,7 +205,7 @@ To approve the system extensions:
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 
 > [!div class="mx-imgBorder"]
-> ![View of Device Status in Monitor](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade)
+> ![View of Device Status in Monitor](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
 
 ## Publish application
 
