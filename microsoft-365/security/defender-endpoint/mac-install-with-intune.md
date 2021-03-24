@@ -181,7 +181,7 @@ To approve the system extensions:
 
 4. Select **OK**.
 
-    ![Import a configuration from a file for Custom Configuration Profile](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![Import a configuration from a file for Custom Configuration Profile](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles.png)
 
 5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
