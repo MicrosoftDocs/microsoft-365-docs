@@ -42,7 +42,7 @@ Some of the implementation steps required to archive Bloomberg Message data are 
 
 - To set up a Bloomberg Message connector, you have to use keys and key passphrases for Pretty Good Privacy (PGP) and Secure Shell (SSH). These keys are used to configure the Bloomberg SFTP site and used by the connector to connect to the Bloomberg SFTP site to import data to Microsoft 365. The PGP key is used to configure the encryption of data that's transferred from the Bloomberg SFTP site to Microsoft 365. The SSH key is used to configure secure shell to enable a secure remote login when the connector connects to the Bloomberg SFTP site.
 
-  When setting up a connector, you have the option to use public keys and key passphrases provided by Microsoft or you can use your own private keys and passphrases. We recommend that you use the public keys provided by Microsoft. However, if your organization requires using private keys, you'll have to create or somehow obtain these private keys and key passphrases.
+  When setting up a connector, you have the option to use public keys and key passphrases provided by Microsoft or you can use your own private keys and passphrases. We recommend that you use the public keys provided by Microsoft. However, if your organization has already configured a Bloomberg SFTP site using private keys, then you can create a connector using these same private keys.
 
 - Subscribe to [Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA). This is required so that you can log in to Bloomberg Anywhere to access the Bloomberg SFTP site that you have to set up and configure.
 
@@ -98,7 +98,7 @@ The first step is to obtain a copy of the PGP and SSH public keys. You use these
 
    - SSH public key: This key is used to configure secure shell to enable a secure remote login when the connector connects to the Bloomberg SFTP site.
 
-   - IP address: The Bloomberg SFTP site is configured to accept a connection request only from this IP address, which is used by the Bloomberg Message connector that you create in Step 3.
+   - IP address: The Bloomberg SFTP site is configured to accept connection requests from this IP address. The same IP address is used by the Bloomberg Message connector to connect to the SFTP site and transfer Bloomberg Message data to Microsoft 365.
 
 7. Click **Cancel** to close the wizard. You come back to this wizard in Step 3 to create the connector.
 
@@ -140,34 +140,46 @@ The last step is to create a Bloomberg Message connector in the Microsoft 365 co
 
 7. After the connection is successfully validated, click **Next**.
 
-8. On the **User mapping** page, enable automatic user mapping and provide custom user mapping as required
+8. On the **Map Bloomberg Message users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required.
 
-9. Click **Next**, review your settings, and then click prepare to create the connector.
+9. Click **Next**, review your settings, and then click **Finish** to create the connector.
 
-10. Go to the **Data connectors** page to see the progress of the import process for the new connector.
+10. Go to the **Data connectors** page to see the progress of the import process for the new connector. Click the connector to display the flyout page, which contains information about the connector.
 
 ## Set up a connector using private keys
 
-The steps in this section show you how to set up a Bloomberg Message connector using PGP and SSH private keys. Your organization will have to generate PGP and SSH private keys and the corresponding key passphrases. This connector setup option is intended for organizations that already have these private keys.
+The steps in this section show you how to set up a Bloomberg Message connector using PGP and SSH private keys. This connector setup option is intended for organizations that have already configured a Bloomberg SFTP site using private keys.
 
-### Step 1: Configure the Bloomberg SFTP site
+### Step 1: Obtain an IP address to configure the Bloomberg SFTP site
 
 > [!NOTE]
-> If your organization has previously set up a Bloomberg SFTP site to archive Instant Bloomberg data using PGP and SSH private keys, you don't have to set up another one. You can specify the same SFTP site when you create the connector in Step 2.
+> If your organization has previously configured a Bloomberg SFTP site to archive Instant Bloomberg data using PGP and SSH private keys, you don't have to configure another one. You can specify the same SFTP site when you create the connector in Step 2.
 
-The first step is to use your PGP and SSH private keys and key passphrases to configure PGP encryption and SSH authentication for the Bloomberg SFTP site. Additionally, you have to use the following IP address to set up the Bloomberg SFTP site:
+If your organization has used PGP and SSH private keys to set up a Bloomberg SFTP site, then you have to obtain an IP address and provide it to Bloomberg customer support. The Bloomberg SFTP site must be configured to accept  connection requests from this IP address. The same IP address is used by the Bloomberg Message connector to connect to the SFTP site and transfer Bloomberg Message data to Microsoft 365.
 
-```text
-40.124.28.216
-```
+To obtain the IP address:
 
-The Bloomberg SFTP site is configured to accept a connection request only from this IP address, which is used by the Bloomberg Message connector that you create in Step 3. These private keys and IP address let the Bloomberg Message connector that you create in Step 2 connect to the Bloomberg SFTP site and transfer Bloomberg Message data to Microsoft 365.
+1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
-You need to work with Bloomberg customer support to set up your Bloomberg SFTP site. Contact [Bloomberg customer support](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) for assistance.
+2. On the **Data connectors** page under **Bloomberg Message**, click **View**.
+
+3. On the **Bloomberg Message** product description page, click **Add connector**
+
+4. On the **Terms of service** page, click **Accept**.
+
+5. On the **Add credentials for content source** page, click **I want to use PGP and SSH private keys**.
+
+6. Under step 1, click **Download IP address** to save a copy of the IP address file to your local computer.
+
+   ![Download the IP address](../media/BloombergMessageConnectorIPAddress.png)
+
+7. Click **Cancel** to close the wizard. You come back to this wizard in Step 2 to create the connector.
+
+You need to work with Bloomberg customer support to configure your Bloomberg SFTP site to accept connection requests from this IP address. Contact [Bloomberg customer support](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) for assistance.
 
 ### Step 2: Create a Bloomberg Message connector
 
-After your Bloomberg SFTP site is set up, the next step is to create a Bloomberg Message connector in the Microsoft 365 compliance center. The connector uses the information you provide to connect to the Bloomberg SFTP site and transfer email messages to the corresponding user mailbox boxes in Microsoft 365. To complete this step, be sure to have copies of the same private keys and key passphrases that you used to set up your Bloomberg SFTP site.
+After your Bloomberg SFTP site is configured, the next step is to create a Bloomberg Message connector in the Microsoft 365 compliance center. The connector uses the information you provide to connect to the Bloomberg SFTP site and transfer email messages to the corresponding user mailbox boxes in Microsoft 365. To complete this step, be sure to have copies of the same private keys and key passphrases that you used to set up your Bloomberg SFTP site.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
@@ -193,21 +205,21 @@ After your Bloomberg SFTP site is set up, the next step is to create a Bloomberg
 
       - **SFTP port:** The port number for the Bloomberg SFTP site. The connector uses this port to connect to the SFTP site.
 
-      - **PGP private key:** The PGP private key for the Bloomberg SFTP site.
+      - **PGP private key:** The PGP private key for the Bloomberg SFTP site. Be sure to include the entire private key value, including the beginning and ending lines for the key block.
 
       - **PGP key passphrase:** The passphrase for the PGP private key.
 
-      - **SSH private key:** The SSH private key for the Bloomberg SFTP site.
+      - **SSH private key:** The SSH private key for the Bloomberg SFTP site. Be sure to include the entire private key value, including the beginning and ending lines for the key block.
 
       - **SSH key passphrase:** The passphrase for the SSH private key.
 
 7. After the connection is successfully validated, click **Next**.
 
-8. On the **User mapping** page, enable automatic user mapping and provide custom user mapping as required
+8. On the **Map Bloomberg Message users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required.
 
-9. Click **Next**, review your settings, and then click prepare to create the connector.
+9. Click **Next**, review your settings, and then click **Finish** to create the connector.
 
-10. Go to the **Data connectors** page to see the progress of the import process for the new connector.
+10. Go to the **Data connectors** page to see the progress of the import process for the new connector. Click the connector to display the flyout page, which contains information about the connector.
 
 ## Known issues
 
