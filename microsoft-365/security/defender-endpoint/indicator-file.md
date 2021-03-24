@@ -48,6 +48,8 @@ It's important to understand the following prerequisites prior to creating indic
 - To start blocking files, you first need to [turn the **Block or allow** feature on](advanced-features.md) in Settings.
 - This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
 
+Performance can be affected if you are copying large files from a network share onto your local device, especially over a VPN connection. 
+
 > [!IMPORTANT]
 > - The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action 
 > - Trusted signed files will be treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
