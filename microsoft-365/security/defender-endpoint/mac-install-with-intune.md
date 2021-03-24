@@ -132,7 +132,7 @@ You do not need any special provisioning for a Mac device beyond a standard [Com
 
 1. Confirm device management.
 
-    ![Confirm device management screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-3-confirmdevicemgmt)
+    ![Confirm device management screenshot](./images/mdatp-3-confirmdevicemgmt.png)
 
     Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
@@ -155,9 +155,9 @@ To approve the system extensions:
 
 2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Extensions**. Select **Create**.
 
-3. In the `Basics` tab, give a name to this new profile.
+3. In the **Basics** tab, give a name to this new profile.
 
-4. In the `Configuration settings` tab, add the following entries in the `Allowed system extensions` section:
+4. In the **Configuration settings** tab, add the following entries in the **Allowed system extensions** section:
 
     Bundle identifier         | Team identifier
     --------------------------|----------------
@@ -165,9 +165,9 @@ To approve the system extensions:
     com.microsoft.wdav.netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Configuration settings tab, including the Allowed team identifiers section](images/mac-system-extension-intune2.png)
+    > ![Screenshot of the extension settings in Configuration settings on the Basics tab](images/mac-system-extension-intune2.png)
 
-5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
+5. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 
 6. Review and create this configuration profile.
 
@@ -181,7 +181,7 @@ To approve the system extensions:
 
 4. Select **OK**.
 
-    ![System configuration profiles screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![Import a configuration from a file for Custom Configuration Profile](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
 
 5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
@@ -189,14 +189,14 @@ To approve the system extensions:
 
 7. Create another profile, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
 
-8. Download `fulldisk.mobileconfig` from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and save it as `tcc.xml`. Create another profile, give it any name and upload this file to it.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
+8. Download **fulldisk.mobileconfig** from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and save it as **tcc.xml**. Create another profile, give it any name and upload this file to it.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
 
    > [!CAUTION]
    > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
    >
    > This configuration profile grants Full Disk Access to Microsoft Defender for Endpoint. If you previously configured Microsoft Defender for Endpoint through Intune, we recommend you update the deployment with this configuration profile.
 
-9. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality. Download `netfilter.mobileconfig` from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig), save it as netext.xml and deploy it using the same steps as in the previous sections. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality. Download **netfilter.mobileconfig** from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig), save it as netext.xml and deploy it using the same steps as in the previous sections. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
 10. To allow Microsoft Defender for Endpoint for Mac and Microsoft Auto Update to display notifications in UI on macOS 10.15 (Catalina), download `notif.mobileconfig` from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) and import it as a custom payload. <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
@@ -205,7 +205,7 @@ To approve the system extensions:
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of kext - Device status](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade)
+> ![View of Device Status in Monitor](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
 
 ## Publish application
 
@@ -217,7 +217,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 
 4. Select **Configure** and add the required information.
 
-5. Use **macOS High Sierra 10.13** as the minimum OS.
+5. Use **macOS High Sierra 10.14** as the minimum OS.
 
 6. Set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
 
@@ -227,12 +227,12 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
     > If the version uploaded by Intune is lower than the version on the device, then the lower version will be installed, effectively downgrading Microsoft Defender for Endpoint. This could result in a non-functioning application. See [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md) for additional information about how the product is updated. If you deployed Microsoft Defender for Endpoint with *Ignore app version* set to **No**, please change it to **Yes**. If Microsoft Defender for Endpoint still cannot be installed on a client device, then uninstall Microsoft Defender for Endpoint and push the updated policy.
      
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Configure App information option in the Add app dialog box](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![Display of App information in App add](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
 
 7. Select **OK** and **Add**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of a sample overview](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![Device status shown in Notifications window](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
 
 8. It may take a few moments to upload the package. After it's done, select the package from the list and go to **Assignments** and **Add group**.
 
