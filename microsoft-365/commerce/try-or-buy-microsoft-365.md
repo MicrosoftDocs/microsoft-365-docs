@@ -77,6 +77,17 @@ these steps:
 6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. If you need to make any changes, select **Change** next to the applicable section.
 7. When you\'re finished, select **Accept agreement & place order**.
 
+## Extend your trial
+
+Do you need more time to try out the features of Microsoft 365 for business before buying? If your trial subscription is within 15 days of expiring and the trial hasn't been extended before then you can extend your trial for another 30 day period. You can only do this one time.
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. On the **Products** tab, select the trial subscription that you want to extend. 
+3. On the subscription details page, in the **Subscriptions and payment settings** section, select **Extend end date**.
+4. In the **Extend end date** pane, review the extension information, and if necessary, select a payment method. When you're finished, select **Extend trial**.
+
+When you're ready to buy, see [Buy your trial version](#buy-a-subscription-from-your-free-trial).
+
 ## Cancel your free trial subscription
 
 If you decide to cancel your trial subscription before the free trial
