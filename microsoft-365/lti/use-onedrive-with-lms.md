@@ -1,5 +1,5 @@
 ---
-title: Use OneDrive LTI
+title: Use OneDrive Learning Tools Interoperability
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -15,7 +15,7 @@ search.appverid:
 - BCS160
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new OneDrive LTI App."
+description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new OneDrive Learning Tools Interoperability App."
 ---
 
 # Use Microsoft OneDrive with your Learning Management System
@@ -64,7 +64,7 @@ The person who performs this integration should be an admin of Canvas and an adm
 
 2. Sign in to the Microsoft [OneDrive LTI portal](https://odltiappnl.azurewebsites.net/admin).
 
-3. Accept the permissions to complete the sign in.
+3. Accept the permissions to complete the sign-in.
 
     ![accept permissions](../media/lti-media/lti-permissions.png)
 
@@ -80,13 +80,13 @@ The person who performs this integration should be an admin of Canvas and an adm
 
    The next screen shows fields that are confidential to you.
 
-7. Select **Next** from ?? page.
+7. Select **Next** from ?? page. CAN REVIEWERS FILL IN THE BLANK HERE?
 
 8. Select **Next** in the screen that shows information that's confidential to you.
- 
+
    The final screen of the Azure portal shows the next steps for adding your Canvas instance.
- 
-9. Copy the Developer Keys from this screen. You'll use when you create the Canvas instance. 
+
+9. Copy the Developer Keys from this screen. You'll use when you create the Canvas instance.
 
 ## Add the Canvas instance
 
@@ -96,7 +96,7 @@ The person who performs this integration should be an admin of Canvas and an adm
 
    ![Get the LTI developer keys](../media/lti-media/lti-developer-keys.png)
 
-3. Paste the developer keys here. 
+3. Paste the developer keys here.
 
      ![Paste the developer keys](../media/lti-media/lti-developer-keys.png)
 
@@ -111,4 +111,4 @@ The person who performs this integration should be an admin of Canvas and an adm
 
 6. Select **Save**.
 
-7. View the settings by selecting**View LTI Tenants**.
+7. View the settings by selecting **View LTI Tenants**.
