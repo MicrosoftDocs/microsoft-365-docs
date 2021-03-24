@@ -9,10 +9,7 @@ ms.topic: article
 ms.service: o365-administration
 f1.keywords:
 - CSH
-search.appverid: 
-- MET150
-- MOE150
-- BCS160
+ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new OneDrive Learning Tools Interoperability App."
