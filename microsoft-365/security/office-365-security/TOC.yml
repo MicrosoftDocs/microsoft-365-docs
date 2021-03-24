@@ -1,7 +1,3 @@
-- name: Microsoft 365 security
-  href: ../index.yml
-  expanded: true
-  items:     
     - name: Office 365 security
       href: overview.md
       items: 
@@ -382,6 +378,8 @@
                   href: move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
                 - name: Manage role groups in standalone EOP
                   href: manage-admin-role-group-permissions-in-eop.md
+- name: Microsoft 365 security
+  href: ../index.yml
 - name: Microsoft 365 Defender
   href: ../defender/index.yml
 - name: Microsoft Defender for Endpoint

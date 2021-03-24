@@ -1,4 +1,3 @@
-# [Microsoft 365 security](../index.yml)
 # [Microsoft Defender for Endpoint](index.yml)
 
 ## [Overview]()
@@ -587,4 +586,4 @@
 
 # [Microsoft 365 Security](../index.yml)
 # [Microsoft 365 Defender](../defender/index.yml)
-# [Microsoft Defender for Office 365](../office-365-security/overview.md)
+# [Defender for Office 365](../office-365-security/overview.md)
