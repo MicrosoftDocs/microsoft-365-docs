@@ -30,7 +30,7 @@ This article provides a reference for the various settings that can affect shari
 Azure Active Directory is the directory service used by Microsoft 365. The Azure Active Directory Organizational relationships settings directly affect sharing in Teams, Microsoft 365 Groups, SharePoint, and OneDrive.
 
 > [!NOTE]
-> These settings only affect SharePoint when [SharePoint and OneDrive integration with Azure AD B2B (Preview)](/sharepoint/sharepoint-azureb2b-integration-preview) has been configured. The table below assumes that this has been configured.
+> These settings only affect SharePoint when [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) has been configured. The table below assumes that this has been configured.
 
 ### Organizational relationships settings
 
