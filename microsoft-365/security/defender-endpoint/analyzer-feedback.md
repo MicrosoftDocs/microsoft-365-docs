@@ -22,7 +22,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-#  rovide feedback on the Microsoft Defender for Endpoint client analyzer tool
+#  Provide feedback on the Microsoft Defender for Endpoint client analyzer tool
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
