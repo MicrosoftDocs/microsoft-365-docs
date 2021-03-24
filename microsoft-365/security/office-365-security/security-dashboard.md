@@ -6,8 +6,7 @@ ms.author: siosulli
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: overview
-
+ms.topic: article
 localization_priority: Normal
 search.appverid: 
   - MET150
