@@ -291,4 +291,6 @@
         items: 
         - name: Understand the latest attack techniques
           href: latest-attack-campaigns.md   
+- name: Microsoft Defender for Endpoint
+  href: ../defender-endpoint/index.yml
               
