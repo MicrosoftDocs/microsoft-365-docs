@@ -706,7 +706,8 @@
                   href: ./defender-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
                 - name: Manage role groups in standalone EOP
                   href: ./defender-365-security/manage-admin-role-group-permissions-in-eop.md
-
+    - name: Microsoft Defender for Endpoint
+      href: ./defender-endpoint/index.yml
     - name: Microsoft 365 for Enterprise
       href: ../enterprise/index.yml
     - name: Microsoft 365 for Business
