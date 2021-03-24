@@ -4,8 +4,6 @@
   items: 
    - name: Overview
      items:
-       - name: Security roadmap
-         href: security-roadmap.md
        - name: Defender for Office 365
          href: defender-for-office-365.md
        - name: Evaluate Defender for Office 365
@@ -316,6 +314,8 @@
        href: quarantine-faq.md
    - name: Reference
      items: 
+     - name: Security roadmap
+       href: security-roadmap.md
      - name: Help and support for EOP
        href: help-and-support-for-eop.md
      - name: Troubleshooting mail sent to Microsoft 365
