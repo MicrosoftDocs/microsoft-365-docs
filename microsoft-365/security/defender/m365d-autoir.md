@@ -85,7 +85,7 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 |Entities |Threat protection services  |
 |:---------|:---------|
 |Devices (also referred to as endpoints, and sometimes referred to as machines)     |[Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
-|Email content (email messages that can contain files and URLs)     |[Microsoft Defender for Office 365](../defender-365-security/defender-for-office-365.md)         |
+|Email content (email messages that can contain files and URLs)     |[Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; it depends on how automated investigation and response is configured for your organization. See [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
