@@ -40,7 +40,7 @@ The Defender for Office 365 trial is available for 90 days and can be initiated 
 
 ## Set up a Defender for Office 365 trial
 
-A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
+A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments](safe-attachments.md), [Safe Links](safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
 
 By default, these policies are scoped to all users in the organization, but admins can customize the policies during or after setup so they apply only to specific users.
 
@@ -77,8 +77,8 @@ You can also learn more about Defender for Office 365 at this [interactive guide
 A robust filtering stack prevents a wide variety of volume-based and targeted attacks including business email compromise, credential phishing, ransomware, and advanced malware.
 
 - [Anti-phishing policies: Exclusive settings in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-- [Safe Attachments](atp-safe-attachments.md)
-- [Safe Links](atp-safe-links.md)
+- [Safe Attachments](safe-attachments.md)
+- [Safe Links](safe-links.md)
 
 ### Detection
 
@@ -91,9 +91,9 @@ Industry-leading AI detects malicious and suspicious content and correlates atta
 Powerful experiences help identify, prioritize, and investigate threats, with advanced hunting capabilities to track attacks across Office 365.
 
 - [Threat Explorer and Real-time detections](threat-explorer.md)
-- [Real-time reports in Defender for Office 365](view-reports-for-atp.md)
+- [Real-time reports in Defender for Office 365](view-reports-for-mdo.md)
 - [Threat Trackers - New and Noteworthy](threat-trackers.md)
-- Integration with [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- Integration with [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
 
 ### Response and remediation
 

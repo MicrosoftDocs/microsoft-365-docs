@@ -42,7 +42,7 @@ For step-by-step guidance to get started with Compliance Manager, see [Get start
 >[!IMPORTANT]
 >Security and compliance are tightly integrated for most organizations. It’s important that your organization addresses basic security, threat protection, and identity and access management areas to help provide a defense in-depth approach to both security and compliance.
 >
->Check your [Microsoft 365 Secure Score](../security/mtp/microsoft-secure-score.md) in the Microsoft 365 security center and completing the tasks outlined in the following articles:
+>Check your [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) in the Microsoft 365 security center and completing the tasks outlined in the following articles:
 >
 > - [Security roadmap - Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md)
 > - [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md)
