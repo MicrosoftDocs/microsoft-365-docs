@@ -57,7 +57,7 @@ The following sections contain actions and effects for workloads as they progres
 
 ## Before the migration starts
 
-Make sure that you are familiar with the [migration preparation steps that are applying for all customers](ms-cloud-germany-transition-add-pre-work.md#applies-to-everyone).
+Make sure that you are familiar with the [migration preparation steps that apply to all customers](ms-cloud-germany-transition-add-pre-work.md).
 
 In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ any time before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns).
 
@@ -106,7 +106,7 @@ If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  *
 
 Upon **completion of the migration phase 9** (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global services.
 
-If you want to modify user photos during phase 5, see [Set-UserPhoto](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
+If you want to modify user photos during phase 5, see [Exchange Online Set-UserPhoto during phase 5](ms-cloud-germany-transition-add-experience.md#exchange-online-set-userphoto-during-phase-5)
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -208,11 +208,11 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 Office 365 tenants transitioning to the region "Germany" require all users to close, sign out from Office 365 and back in for all Office desktop applications (Word, Excel, PowerPoint, Outlook, etc.) and OneDrive for Business client after the tenant migration has reached phase 9. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
 
-Make sure you have completed the [prework for mobile devices](ms-cloud-germany-transition-add-pre-work.md#mobile) procedure.
+Make sure you have completed the [prework for mobile devices](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) procedure.
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
-| Clients, Office Online during Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. | This configuration change enables Office clients to update and point to the Office 365 services endpoints. | <ul><li>Notify users to close _all_ Office apps and then sign back in (or force clients to restart and users to sign in) to enable Office clients to pick up the change. </li><li>Notify users and help desk staff that users *may* see an Office banner that prompts them to reactivate Office apps within 72 hours of the cutover. </li><li>All Office applications on personal machines must be closed, and users must sign out then sign in again. In the Yellow activation bar, sign in to reactivate against Office 365 services.</li><li>Shared machines will require actions that are similar to personal machines, and won't require a special procedure. </li><li>On mobile devices, users must sign out of apps, close them, and then sign in again. </li></ul>|
+| Clients, Office Online during Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. | This configuration change enables Office clients to update and point to the Office 365 services endpoints. | <ul><li>Notify users to close _all_ Office apps and then sign back in (or force clients to restart and users to sign in) to enable Office clients to pick up the change. </li><li>Notify users and help desk staff that users *may* see an Office banner that prompts them to reactivate Office apps within 72 hours of the cutover. </li><li>All Office applications on personal machines must be closed, and users must sign out then sign in again. In the Yellow activation bar, sign in to reactivate against Office 365 services.</li><li>Shared machines will require actions that are similar to personal machines, and won't require a special procedure. </li><li>On mobile devices, users must sign out of apps, close them, and then sign in again.</li></ul>|
 ||||
 
 ## Line-of-business apps

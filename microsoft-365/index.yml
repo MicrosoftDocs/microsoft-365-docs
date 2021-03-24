@@ -263,8 +263,6 @@ additionalContent:
               url: /Kaizala
             - text: Microsoft Stream
               url: /stream/
-            - text: MileIQ
-              url: /office365/mileiq/
             - text: Yammer
               url: /yammer/yammer-landing-page
         # Card
