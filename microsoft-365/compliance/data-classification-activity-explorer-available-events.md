@@ -1,5 +1,5 @@
 ---
-title: "Labeling actions available in Activity explorer"
+title: "Labeling actions reported in Activity explorer"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
