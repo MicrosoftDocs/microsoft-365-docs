@@ -35,7 +35,7 @@ Controlled folder access helps protect your valuable data from malicious apps an
 > [!NOTE]
 > Scripting engines are not trusted and you cannot allow them access to controlled protected folders.  For example, PowerShell is not trusted by controlled folder access, even if you allow with [certificate and file indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates). 
 
-Controlled folder access works best with [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](investigate-alerts.md).
+Controlled folder access works best with [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](investigate-alerts.md).
 
 > [!TIP]
 > Controlled folder access blocks don't generate alerts in the [Alerts queue](alerts-queue.md). However, you can view information about controlled folder access blocks in the [device timeline view](investigate-machines.md), while using [advanced hunting](advanced-hunting-overview.md), or with [custom detection rules](custom-detection-rules.md).
