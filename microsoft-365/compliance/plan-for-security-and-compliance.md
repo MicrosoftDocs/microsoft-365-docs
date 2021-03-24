@@ -41,7 +41,7 @@ Protecting access to your Microsoft 365 data and services is crucial to defendin
   
 - [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
     
-- [Secure email policies and configurations](../security/defender-365-security/secure-email-recommended-policies.md)
+- [Secure email policies and configurations](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -57,15 +57,15 @@ The Security &amp; Compliance Center gives you a single view into the controls y
   
 - [Go to the Security &amp; Compliance Center](./microsoft-365-compliance-center.md)
     
-- [Permissions in the Security &amp; Compliance Center](~/security/defender-365-security/protect-against-threats.md)
+- [Permissions in the Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
-- [Give users access to the Security &amp; Compliance Center](~/security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Give users access to the Security &amp; Compliance Center](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## Step 6: Use end-to-end security scenarios as starting points
 
 Use these recommended configurations as a starting point for enterprise scale or sophisticated access security scenarios.
   
-- [Secure email policies and configurations](../security/defender-365-security/secure-email-recommended-policies.md)
+- [Secure email policies and configurations](../security/office-365-security/secure-email-recommended-policies.md)
     
 - [Contoso in the Microsoft Cloud](../enterprise/contoso-case-study.md)
     
