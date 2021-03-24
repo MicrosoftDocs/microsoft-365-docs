@@ -93,7 +93,7 @@ When accessing Microsoft Defender Security Center for the first time, a wizard t
 
 4. Set up preferences.
 
-   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU, or UK. You cannot change the location after this set up and Microsoft won't transfer the data from the specified geolocation. 
+   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU, or UK. You can't change the location after this set up and Microsoft won't transfer the data from the specified geolocation. 
 
     **Data retention** - The default is six months.
 
@@ -130,7 +130,7 @@ the following discovery methods:
 If a Transparent proxy or WPAD has been implemented in the network topology,
 there is no need for special configuration settings. For more information on
 Microsoft Defender for Endpoint URL exclusions in the proxy, see the
-[Proxy Service URLs](production-deployment.md#proxy-service-urls) section in this document for the URLs allow list or on
+[Proxy Service URLs](production-deployment.md#proxy-service-urls) section in this document for the URLs allowlist or on
 [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 **Manual static proxy configuration:**
@@ -145,7 +145,7 @@ Microsoft Defender for Endpoint URL exclusions in the proxy, see the
 
 Configure a registry-based static proxy to allow only Microsoft Defender for Endpoint
 sensor to report diagnostic data and communicate with Microsoft Defender for Endpoint
-services if a computer is not permitted to connect to the Internet. The static
+services if a computer isn't permitted to connect to the Internet. The static
 proxy is configurable through Group Policy (GP). The group policy can be found
 under:
 
@@ -218,7 +218,7 @@ needed if the device is on Windows 10, version 1803 or later.
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender for Endpoint sensor is connecting from system context, make sure anonymous traffic is permitted in the listed URLs.
 
-The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. Ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. Ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
 |**Spreadsheet of domains list**|**Description**|
 |:-----|:-----|
