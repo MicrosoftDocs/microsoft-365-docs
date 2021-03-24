@@ -1,8 +1,13 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/manage/resolve-license-conflicts.md",
+      "redirect_url": "/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-bluehost.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
     },
     {
