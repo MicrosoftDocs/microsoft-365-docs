@@ -56,8 +56,8 @@ See how the Contoso Corporation used an isolated team for a top-secret project i
 ## Initial protections
 
 To help protect access to the team and its underlying SharePoint site, review the following best practices:
-- [Identity and device access policies](../security/defender-365-security/identity-access-policies.md)
-- [SharePoint Online access policies](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [Identity and device access policies](../security/office-365-security/identity-access-policies.md)
+- [SharePoint Online access policies](../security/office-365-security/sharepoint-file-access-policies.md)
 - [Deploy teams with baseline protection](configure-teams-baseline-protection.md)
 
 ## Guest sharing
