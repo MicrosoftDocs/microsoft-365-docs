@@ -14,6 +14,7 @@ ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.date: 03/24/2021
 ms.technology: mde
+ms.topic: how-to
 ---
 
 # Customize controlled folder access
