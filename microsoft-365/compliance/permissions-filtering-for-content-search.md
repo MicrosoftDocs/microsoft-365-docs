@@ -40,7 +40,7 @@ Search permissions filtering is supported by the Content Search feature in the S
 
 ## Requirements to configure permissions filtering
 
-- To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
+- To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 - You have to connect to both Exchange Online and Security & Compliance Center PowerShell to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online PowerShell. See the steps in the next section.
 
