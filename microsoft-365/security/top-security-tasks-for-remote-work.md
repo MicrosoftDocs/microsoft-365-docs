@@ -51,7 +51,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |12|[Monitor for threats and take action](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-Before you begin, check your [Microsoft 365 Secure Score](./mtp/microsoft-secure-score.md) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
+Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
 
 ![Screenshot of Microsoft Secure Score](../media/secure-score.png)
 
@@ -69,7 +69,7 @@ Applying these policies will take only a few minutes, but be prepared to support
 |---|---|
 |Microsoft 365 plans (without Azure AD P1 or P2)|[Enable Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.|
 |Microsoft 365 E3 (with Azure AD P1)|Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br/>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](./office-365-security/identity-access-policies.md) by creating these two policies:<br/> - [Require MFA when sign-in risk is medium or high](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Block clients that don't support modern authentication](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [High risk users must change password](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](./defender-365-security/identity-access-policies.md) by creating these two policies:<br/> - [Require MFA when sign-in risk is medium or high](./defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Block clients that don't support modern authentication](./defender-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [High risk users must change password](./defender-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## 2: Protect against threats
@@ -81,7 +81,7 @@ All Microsoft 365 plans include a variety of threat protection features. Bumping
 - Anti-phishing protection
 - Anti-spam protection
 
-See [Protect against threats in Office 365](office-365-security/protect-against-threats.md) for guidance you can use as a starting point.
+See [Protect against threats in Office 365](defender-365-security/protect-against-threats.md) for guidance you can use as a starting point.
 
 ## 3: Configure Microsoft Defender for Office 365
 
@@ -93,17 +93,17 @@ Microsoft Defender for Office 365:
 - Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries.
 - Applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks.
 
-For an overview, including a summary of plans, see [Defender for Office 365](office-365-security/office-365-atp.md).
+For an overview, including a summary of plans, see [Defender for Office 365](./defender-365-security/defender-for-office-365.md).
 
 Your Global Administrator can configure these protections:
 
-- [Set up Safe Links policies](office-365-security/set-up-atp-safe-links-policies.md)
-- [Configure global settings for Safe Links](office-365-security/configure-global-settings-for-safe-links.md)
-- [Set up Safe Attachments policies](office-365-security/set-up-atp-safe-attachments-policies.md)
+- [Set up Safe Links policies](defender-365-security/set-up-safe-links-policies.md)
+- [Configure global settings for Safe Links](defender-365-security/configure-global-settings-for-safe-links.md)
+- [Set up Safe Attachments policies](defender-365-security/set-up-safe-attachments-policies.md)
 
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
 
-- [ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
+- [ATP for SharePoint, OneDrive, and Microsoft Teams](defender-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## 4: Configure Microsoft Defender for Identity
 
@@ -115,15 +115,15 @@ You'll need to work with your Exchange Online administrator and SharePoint Onlin
 
 ## 5: Turn on Microsoft 365 Defender
 
-Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./mtp/microsoft-threat-protection.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane at [security.microsoft.com](https://security.microsoft.com).
+Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane at [security.microsoft.com](https://security.microsoft.com).
 
 ![MTP dashboard illustration](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
 After you have configured one or more of your Defender for Office 365 services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
 
-- [Learn more about MTP](./mtp/microsoft-threat-protection.md)
-- [Turn on MTP](./mtp/mtp-enable.md)
-- [Opt in for preview features](./mtp/preview.md)
+- [Learn more about MTP](./defender/microsoft-365-defender.md)
+- [Turn on MTP](./defender/m365d-enable.md)
+- [Opt in for preview features](./defender/preview.md)
 
 ## 6: Configure Intune mobile app protection for phones and tablets
 
@@ -136,10 +136,10 @@ APP protection policies include many settings. Fortunately, you don't need to le
 
 Even better, Microsoft coordinates this app protection framework with a set of conditional access and related policies we recommend all organizations use as a starting point. If you've implemented MFA using the guidance in this article, you're half way there!
 
-To configure mobile app protection, use the guidance in [Common identity and device access policies](./office-365-security/identity-access-policies.md):
+To configure mobile app protection, use the guidance in [Common identity and device access policies](./defender-365-security/identity-access-policies.md):
 
- 1. Use the [Apply APP data protection policies](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) guidance to create policies for iOS and Android. Level 2 (enhanced data protection) is recommended for baseline protection.
- 2. Create a conditional access rule to [Require approved apps and APP protection](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection).
+ 1. Use the [Apply APP data protection policies](./defender-365-security/identity-access-policies.md#apply-app-data-protection-policies) guidance to create policies for iOS and Android. Level 2 (enhanced data protection) is recommended for baseline protection.
+ 2. Create a conditional access rule to [Require approved apps and APP protection](./defender-365-security/identity-access-policies.md#require-approved-apps-and-app-protection).
 
 ## 7: Configure MFA and conditional access for guests, including Intune mobile app protection
 
@@ -150,7 +150,7 @@ If you're using the Microsoft 365 E5 plan and you're taking advantage of Azure I
 - Create a new conditional access rule to require MFA always for guests and external users.
 - Update the risk-based MFA conditional access rule to exclude guests and external users.
 
-Use the guidance in [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md) to understand how guest access works with Azure AD and to update the affected policies.
+Use the guidance in [Updating the common policies to allow and protect guest and external access](./defender-365-security/identity-access-policies-guest-access.md) to understand how guest access works with Azure AD and to update the affected policies.
 
 The Intune mobile app protection policies you created, together with the conditional access rule to require approved apps and APP protection, apply to guests accounts and will help protect your organization data.
 
@@ -168,12 +168,12 @@ You can also take advantage of these tutorials:
 - [Use Autopilot to enroll Windows devices in Intune](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [Use Apple's Corporate Device Enrollment features in Apple Business Manager (ABM) to enroll iOS/iPadOS devices in Intune](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-After enrolling devices, use the guidance in [Common identity and device access policies](./office-365-security/identity-access-policies.md) to create these policies:
+After enrolling devices, use the guidance in [Common identity and device access policies](./defender-365-security/identity-access-policies.md) to create these policies:
 
-- [Define device-compliance policies](./office-365-security/identity-access-policies.md#define-device-compliance-policies) — The recommended settings for Windows 10 include requiring antivirus protection. If you have Microsoft 365 E5, use Microsoft Defender for Endpoint to monitor the health of employee devices. Be sure compliance policies for other operating systems include antivirus protection and end-point protection software.
-- [Require compliant PCs](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) — This is the conditional access rule in Azure AD that enforces the device compliance policies.
+- [Define device-compliance policies](./defender-365-security/identity-access-policies.md#define-device-compliance-policies) — The recommended settings for Windows 10 include requiring antivirus protection. If you have Microsoft 365 E5, use Microsoft Defender for Endpoint to monitor the health of employee devices. Be sure compliance policies for other operating systems include antivirus protection and end-point protection software.
+- [Require compliant PCs](./defender-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) — This is the conditional access rule in Azure AD that enforces the device compliance policies.
 
-Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Azure AD. If you don't exclude guest and external users from policies that require device compliance, these policies will block these users. For more information, see [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md).
+Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Azure AD. If you don't exclude guest and external users from policies that require device compliance, these policies will block these users. For more information, see [Updating the common policies to allow and protect guest and external access](./defender-365-security/identity-access-policies-guest-access.md).
 
 ## 9: Optimize your network for cloud connectivity
 
@@ -236,11 +236,11 @@ Get started with Cloud App Security now. Later you can set up more sophisticated
 
 ## 12: Monitor for threats and take action
 
-Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](./mtp/microsoft-secure-score.md), and any alerts or entities that require your attention.
+Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
-- [Get started with the Microsoft 365 security center](./mtp/overview-security-center.md)
-- [Monitor and view reports](./mtp/overview-security-center.md)
-- [See the security portals in Microsoft 365](./mtp/portals.md)
+- [Get started with the Microsoft 365 security center](./defender/overview-security-center.md)
+- [Monitor and view reports](./defender/overview-security-center.md)
+- [See the security portals in Microsoft 365](./defender/portals.md)
 
 ## Next steps
 

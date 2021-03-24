@@ -54,7 +54,7 @@ The following table describes what users - topic viewers, contributors, and know
 
 |Topic item|What users can see|
 |:---------|:------------------|
-|Topic name|Users can see the topic name of all topics in the topic center. Some topics may not be visible if they have a low relevancy to the user.|
+|Topic name|Users can see the topic name of topics in the topic center. Some topics may not be visible if users don't have permissions to the source content or have a low relevancy to the user.|
 |Topic description|AI-generated descriptions are visible only to users who have permissions to the source content. Manually entered or edited descriptions are visible to all users.|
 |People|Pinned people are visible to all users. Suggested people are only visible to users who have permissions to the source content.|
 |Files|Files are only visible to users who have permissions to the source content.|
