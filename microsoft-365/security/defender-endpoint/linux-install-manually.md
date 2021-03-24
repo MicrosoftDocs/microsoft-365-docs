@@ -379,6 +379,28 @@ See [Log installation issues](linux-resources.md#log-installation-issues) for mo
 
 When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.
 
+## How to migrate from Insiders-Fast to Production channel
+
+1. Uninstall the “Insiders-Fast channel” version of MDE for macOS.
+
+    ``
+    sudo yum remove mdatp
+    ``
+
+1. Disable the MDE for Linux Insiders-Fast repo
+    ``
+    sudo yum repolist
+    ``
+
+    > [!NOTE]
+    > The output should show “packages-microsoft-com-fast-prod”.
+
+    ``
+    sudo yum-config-manager --disable packages-microsoft-com-fast-prod
+    ``
+1. Redeploy MDE for Linux using the “Production channel”.
+
+
 ## Uninstallation
 
 See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint for Linux from client devices.
