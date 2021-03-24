@@ -1,7 +1,7 @@
 # [Microsoft Defender for Endpoint](index.yml)
 
 ## [Overview]()
-### [What is Microsoft Defender for Endpoint?](microsoft-defender-advanced-threat-protection.md)
+### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)

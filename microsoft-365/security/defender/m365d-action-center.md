@@ -55,7 +55,7 @@ The unified Action center brings together remediation actions across Defender fo
 
 You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
 
-- [Defender for Endpoint](../defender-endpoint/microsoft-defender-advanced-threat-protection.md)
+- [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
