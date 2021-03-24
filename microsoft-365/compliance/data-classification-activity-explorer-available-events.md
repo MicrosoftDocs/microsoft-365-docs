@@ -163,7 +163,7 @@ This event is generated each time the AIP scanner detects that a previously scan
 
 ### Sensitivity label protection applied
 
-This event is generated the first time protection is added manually to an item that does not have a label.
+This event is generated the first-time protection is added manually to an item that does not have a label.
 
 |Source  |Reported in activity explorer | Note  |
 |---------|---------|---------| 
@@ -281,4 +281,4 @@ This event is generated each time a label is removed from a file or document.
 
 - Justification text is not currently available on sensitivity label downgrade from Sharepoint and OneDrive.  
 
-- Sensitive information types are currently not available for auto-labeling activities from Word, Excel, PowerPoint, and Outlook, as well as SharePoint Online, and OneDrive.
+- Sensitive information types are currently not available for autolabeling activities from Word, Excel, PowerPoint, and Outlook, as well as SharePoint Online, and OneDrive.
