@@ -110,5 +110,4 @@ The value of understanding what actions are being taken with your sensitive labe
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about retention policies and retention labels](retention.md)
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md)
-- [Use activity explorer](data-classification-activity-explorer-use.md)
 - [Learn about data classification](data-classification-overview.md)
