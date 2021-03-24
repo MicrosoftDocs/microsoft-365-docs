@@ -51,7 +51,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |12|[Monitor for threats and take action](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-Before you begin, check your [Microsoft 365 Secure Score](./mtp/microsoft-secure-score.md) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
+Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
 
 ![Screenshot of Microsoft Secure Score](../media/secure-score.png)
 
@@ -93,17 +93,17 @@ Microsoft Defender for Office 365:
 - Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries.
 - Applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks.
 
-For an overview, including a summary of plans, see [Defender for Office 365](office-365-security/office-365-atp.md).
+For an overview, including a summary of plans, see [Defender for Office 365](./office-365-security/defender-for-office-365.md).
 
 Your Global Administrator can configure these protections:
 
-- [Set up Safe Links policies](office-365-security/set-up-atp-safe-links-policies.md)
+- [Set up Safe Links policies](office-365-security/set-up-safe-links-policies.md)
 - [Configure global settings for Safe Links](office-365-security/configure-global-settings-for-safe-links.md)
-- [Set up Safe Attachments policies](office-365-security/set-up-atp-safe-attachments-policies.md)
+- [Set up Safe Attachments policies](office-365-security/set-up-safe-attachments-policies.md)
 
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
 
-- [ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
+- [ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## 4: Configure Microsoft Defender for Identity
 
@@ -115,15 +115,15 @@ You'll need to work with your Exchange Online administrator and SharePoint Onlin
 
 ## 5: Turn on Microsoft 365 Defender
 
-Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./mtp/microsoft-threat-protection.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane at [security.microsoft.com](https://security.microsoft.com).
+Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane at [security.microsoft.com](https://security.microsoft.com).
 
 ![MTP dashboard illustration](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
 After you have configured one or more of your Defender for Office 365 services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
 
-- [Learn more about MTP](./mtp/microsoft-threat-protection.md)
-- [Turn on MTP](./mtp/mtp-enable.md)
-- [Opt in for preview features](./mtp/preview.md)
+- [Learn more about MTP](./defender/microsoft-365-defender.md)
+- [Turn on MTP](./defender/m365d-enable.md)
+- [Opt in for preview features](./defender/preview.md)
 
 ## 6: Configure Intune mobile app protection for phones and tablets
 
@@ -236,11 +236,11 @@ Get started with Cloud App Security now. Later you can set up more sophisticated
 
 ## 12: Monitor for threats and take action
 
-Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](./mtp/microsoft-secure-score.md), and any alerts or entities that require your attention.
+Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
-- [Get started with the Microsoft 365 security center](./mtp/overview-security-center.md)
-- [Monitor and view reports](./mtp/overview-security-center.md)
-- [See the security portals in Microsoft 365](./mtp/portals.md)
+- [Get started with the Microsoft 365 security center](./defender/overview-security-center.md)
+- [Monitor and view reports](./defender/overview-security-center.md)
+- [See the security portals in Microsoft 365](./defender/portals.md)
 
 ## Next steps
 
