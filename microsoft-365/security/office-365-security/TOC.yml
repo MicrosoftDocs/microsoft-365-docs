@@ -321,7 +321,7 @@
      - name: Troubleshooting mail sent to Microsoft 365
        href: troubleshooting-mail-sent-to-office-365.md
      - name: How Microsoft 365 uses SPF to prevent spoofing
-        href: how-office-365-uses-spf-to-prevent-spoofing.md
+       href: how-office-365-uses-spf-to-prevent-spoofing.md
      - name: How Office 365 validates the From address to prevent phishing
        href: how-office-365-validates-the-from-address.md
      - name: How policies and protections are combined
