@@ -27,11 +27,11 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> ASF settings that are currently available in anti-spam policies are in the process of being deprecated. We recommend that you don't use these settings in anti-spam policies. The functionality of these ASF settings is being incorporated into other parts of the filtering stack. For more information, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+> ASF settings that are currently available in anti-spam policies are in the process of being deprecated. We recommend that you don't use these settings in anti-spam policies. The functionality of these ASF settings is being incorporated into other parts of the filtering stack. For more information, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
 In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in anti-spam policies in EOP allow admins to mark messages as spam based on specific message properties. ASF specifically targets these properties because they're commonly found in spam. Depending on the property, ASF detections will either mark the message as **Spam** or **High confidence spam**.
 

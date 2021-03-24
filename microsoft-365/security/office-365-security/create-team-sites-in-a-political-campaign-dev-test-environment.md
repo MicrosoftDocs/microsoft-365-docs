@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 **Applies to**
 
-- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 - 
  **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment. 
    
