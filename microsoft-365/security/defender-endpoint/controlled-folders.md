@@ -16,6 +16,7 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
+ms.topic: how-to
 ---
 
 # Protect important folders with controlled folder access
