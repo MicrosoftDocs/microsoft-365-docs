@@ -15,7 +15,7 @@
     - name: Microsoft Managed Desktop service description
       href: service-description/index.md
       items: 
-        - name: Supported regions and languages
+        - name: Supported regions
           href: service-description/regions-languages.md
         - name: Product lifecycle
           href: service-description/device-lifecycle.md
