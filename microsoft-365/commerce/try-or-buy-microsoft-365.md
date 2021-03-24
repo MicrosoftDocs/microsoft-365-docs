@@ -86,7 +86,7 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 3. On the subscription details page, in the **Subscriptions and payment settings** section, select **Extend end date**.
 4. In the **Extend end date** pane, review the extension information, and if necessary, select a payment method. When you're finished, select **Extend trial**.
 
-When you're ready to buy, see [Buy your trial version](#buy-a-subcription-from-your-free-trial).
+When you're ready to buy, see [Buy your trial version](#buy-a-subscription-from-your-free-trial).
 
 ## Cancel your free trial subscription
 

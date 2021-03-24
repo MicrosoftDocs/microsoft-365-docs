@@ -3,7 +3,7 @@
     {
       "source_path": "microsoft-365/commerce/extend-your-trial.md",
       "redirect_url": "/microsoft-365/commerce/try-or-buy-microsoft-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/manage/resolve-license-conflicts.md",
