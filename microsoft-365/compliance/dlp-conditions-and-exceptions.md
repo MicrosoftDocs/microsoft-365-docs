@@ -51,15 +51,15 @@ The tables in the following sections describe the conditions and exceptions that
 | Sender address matches patterns    | condition: *FromAddressMatchesPatterns* <br/> exception: *ExceptFromAddressMatchesPatterns*       |      Patterns   |  Messages where the sender's email address contains text patterns that match the specified regular expressions.  |
 |Sender domain is  |  condition: *SenderDomainIs* <br/> exception: *ExceptIfSenderDomainIs*       |DomainName         |     Messages where the domain of the sender's email address matches the specified value. If you need to find sender domains that *contain* the specified domain (for example, any subdomain of a domain), use **The sender address matches**(*FromAddressMatchesPatterns*) condition and specify the domain by using the syntax: '\.domain\.com$'.    |
 |Sender scope    | condition: *FromScope* <br/> exception: *ExceptIfFromScope*    | UserScopeFrom    |    Messages that are sent by either internal or external senders.    |
-|The sender's specified properties include any of these words|_SenderADAttributeContainsWords_ <br/> _ExceptIfSenderADAttributeContainsWords_|First property: `ADAttribute` <p> Second property: `Words`|Messages where the specified Active Directory attribute of the sender contains any of the specified words.|
-|The sender's specified properties match these text patterns|_SenderADAttributeMatchesPatterns_ <br/> _ExceptIfSenderADAttributeMatchesPatterns_|First property: `ADAttribute` <p> Second property: `Patterns`|Messages where the specified Active Directory attribute of the sender contains text patterns that match the specified regular expressions.|
+|The sender's specified properties include any of these words|condition: *SenderADAttributeContainsWords* <br/> exception: *ExceptIfSenderADAttributeContainsWords*|First property: `ADAttribute` <p> Second property: `Words`|Messages where the specified Active Directory attribute of the sender contains any of the specified words.|
+|The sender's specified properties match these text patterns|condition: *SenderADAttributeMatchesPatterns* <br/> exception: *ExceptIfSenderADAttributeMatchesPatterns*|First property: `ADAttribute` <p> Second property: `Patterns`|Messages where the specified Active Directory attribute of the sender contains text patterns that match the specified regular expressions.|
 
 ### Recipients
 
 |**condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell** |	**property type** |	**description**|
 |---------|---------|---------|---------|
 |Recipient is|	condition: *SentTo* <br/> exception: *ExceptIfSentTo* | Addresses |	Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the organization. The recipients can be in the **To**, **Cc**, or **Bcc** fields of the message.|
-|Recipient domain is|	condition: *RecipientDomainIs* <br/> exception: *ExceptIfRecipientDomainIs* |	DomainName |	Messages where the domain of the sender's email address matches the specified value.|
+|Recipient domain is|	condition: *RecipientDomainIs* <br/> exception: *ExceptIfRecipientDomainIs* |	DomainName |	Messages where the domain of the recipient's email address matches the specified value.|
 |Recipient address contains words|	condition: *AnyOfRecipientAddressContainsWords* <br/> exception: *ExceptIfAnyOfRecipientAddressContainsWords*|	Words|	Messages that contain the specified words in the recipient's email address. <br/>**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
 |Recipient address matches patterns| condition: *AnyOfRecipientAddressMatchesPatterns* <br/> exception: *ExceptIfAnyOfRecipientAddressMatchesPatterns*|	Patterns	|Messages where a recipient's email address contains text patterns that match the specified regular expressions. <br/> **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
 |Sent to member of|	condition: *SentToMemberOf* <br/> exception: *ExceptIfSentToMemberOf*|	Addresses|	Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Microsoft 365 group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message.|
@@ -87,8 +87,8 @@ The tables in the following sections describe the conditions and exceptions that
 |Document name matches patterns|condition: *DocumentNameMatchesPatterns* <br/> exception: *ExceptIfDocumentNameMatchesPatterns*|	Patterns	|Messages where an attachment's file name contains text patterns that match the specified regular expressions.|
 |Document property is|condition: *ContentPropertyContainsWords* <br/> exception: *ExceptIfContentPropertyContainsWords*	|Words|	Messages or documents where an attachment's file extension matches any of the specified words.|
 |Document size equals or is greater than| condition: *DocumentSizeOver* <br/> exception: *ExceptIfDocumentSizeOver*|	Size	|Messages where any attachment is greater than or equal to the specified value.|
-|Any attachment's content includes any of these words|_DocumentContainsWords_ <br/> _ExceptIfDocumentContainsWords_|`Words`|Messages where an attachment contains the specified words.|
-|Any attachments content matches these text patterns|_DocumentMatchesPatterns_ <br/> _ExceptIfDocumentMatchesPatterns_|`Patterns`|Messages where an attachment contains text patterns that match the specified regular expressions. |
+|Any attachment's content includes any of these words| condition: *DocumentContainsWords* <br/> exception: *ExceptIfDocumentContainsWords* |`Words`|Messages where an attachment contains the specified words.|
+|Any attachments content matches these text patterns|condition: *DocumentMatchesPatterns* <br/> exception: *ExceptIfDocumentMatchesPatterns* |`Patterns`|Messages where an attachment contains text patterns that match the specified regular expressions. |
 
 ### Message Headers
 
@@ -101,12 +101,11 @@ The tables in the following sections describe the conditions and exceptions that
 
 |**condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	**property type**	|**description**|
 |---------|---------|---------|---------|
-|Message size over|condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver*|	Size	|Messages where the total size (message plus attachments) is greater than or equal to the specified value. <br/>**Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
 | With importance    | condition: *WithImportance* <br/> exception: *ExceptIfWithImportance*    | Importance    | Messages that are marked with the specified importance level.    |
 | Content character set contains words    | condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Messages that have any of the specified character set names.    |
 | Has sender override    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/a    | Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Data loss prevention](./data-loss-prevention-policies.md).   |
 | Message type matches    | condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*    | MessageType    | Messages of the specified type.    |
-|The message size is greater than or equal to|_MessageSizeOver_ <br/> _ExceptIfMessageSizeOver_|`Size`|Messages where the total size (message plus attachments) is greater than or equal to the specified value. **Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
+|The message size is greater than or equal to| condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver* |`Size`|Messages where the total size (message plus attachments) is greater than or equal to the specified value. **Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
 
 ## Actions for DLP policies
 
