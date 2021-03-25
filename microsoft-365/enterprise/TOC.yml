@@ -485,7 +485,11 @@
               href: performance-troubleshooting-plan.md
 
 - name: Windows 10
-  href: /windows/deployment/
+  items:
+    - name: How to check release health
+      href: https://docs.microsoft.com/windows/deployment/update/check-release-health
+    - name: Deploy and update
+      href: /windows/deployment/
 
 - name: Microsoft 365 Apps for enterprise
   href: /deployoffice/deployment-guide-microsoft-365-apps

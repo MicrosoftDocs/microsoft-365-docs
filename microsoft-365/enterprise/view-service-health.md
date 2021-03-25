@@ -42,7 +42,7 @@ If you are unable to sign in to the admin center, you can use the [service statu
 1. Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339), and sign in with an admin account.
 
     > [!NOTE]
-    > People who are assigned the global admin or service administrator role can view service health. To allow Exchange, SharePoint, and Skype for Business admins to view service health, they must also be assigned the Service admin role. For more information about roles that can view service health, see [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center).
+    > People who are assigned the global admin or service administrator role can view service health. To allow Exchange, SharePoint, and Skype for Business admins to view service health, they must also be assigned the Service admin role. For more information about roles that can view service health, see [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
   
 2. If you are not using the new admin center, on the **Home** page, select the **Try the new admin center** toggle in the upper-right corner.
 
@@ -148,4 +148,5 @@ For more information about our commitment to uptime, see [Transparent operations
 ## Related topics
 
 [Activity Reports in the Microsoft 365 admin center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-[Message center Preferences](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)
+[Message center Preferences](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)<br/>
+[How to check Windows release health on admin center](https://docs.microsoft.com/windows/deployment/update/check-release-health)
