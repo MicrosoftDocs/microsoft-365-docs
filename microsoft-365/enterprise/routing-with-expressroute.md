@@ -36,7 +36,7 @@ Some of the key items in the above articles that you'll need to understand inclu
 
 - There's a 1:1 mapping between an ExpressRoute circuit and a customer s-key.
 
-- Each circuit can support 2 independent peering relationships (Azure Private peering, and Microsoft peering); Office 365 requires Microsoft peering.
+- Each circuit can support two independent peering relationships (Azure Private peering, and Microsoft peering); Office 365 requires Microsoft peering.
 
 - Each circuit has a fixed bandwidth that is shared across all peering relationships.
 
