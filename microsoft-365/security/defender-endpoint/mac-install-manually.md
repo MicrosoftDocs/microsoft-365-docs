@@ -92,7 +92,7 @@ To complete this process, you must have admin privileges on the device.
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-3. At the end of the installation process, you will be promoted to approve the system extensions used by the product. Select **Open Security Preferences**.
+3. At the end of the installation process, you'll be promoted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
     ![System extension approval](images/big-sur-install-2.png)
 
@@ -114,7 +114,7 @@ To complete this process, you must have admin privileges on the device.
 
 1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint for macOS.
 
-    The client device is not associated with orgId. Note that the *orgId* attribute is blank.
+    The client device isn't associated with orgId. Note that the *orgId* attribute is blank.
 
     ```bash
     mdatp health --field org_id
