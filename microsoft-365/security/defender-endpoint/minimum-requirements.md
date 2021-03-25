@@ -75,7 +75,6 @@ For a detailed comparison table of Windows 10 commercial edition comparison, see
 Access to Defender for Endpoint is done through a browser, supporting the following browsers:
 
 - Microsoft Edge
-- Internet Explorer version 11
 - Google Chrome
 
 > [!NOTE]
