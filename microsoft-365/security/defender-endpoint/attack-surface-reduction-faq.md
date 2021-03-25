@@ -72,7 +72,7 @@ The following two specific rules don't support exclusions:
 - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
 - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
 
-ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](../microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
 ## How do I know what I need to exclude?
 Different ASR rules will have different protection flows. Always think about what the ASR rule you are configuring protects against, and how the actual execution flow pans out.
