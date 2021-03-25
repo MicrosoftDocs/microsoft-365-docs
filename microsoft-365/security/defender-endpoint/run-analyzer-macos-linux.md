@@ -30,8 +30,8 @@ ms.technology: m365d
 
 ## Running the analyzer through GUI scenario
 
-1.  Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer)
-    tool to the MacOS machine you need to investigate.
+1.  Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer)
+    tool to the macOS machine you need to investigate.
 
 2.  Extract the contents of XMDEClientAnalyzer.zip on the machine.
 
@@ -52,7 +52,7 @@ run:
     <http://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd
     XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
 
-3.  Run `“./mde_support_tool.sh -d”` to generate the result archive file.
+3.  Run ` ./mde_support_tool.sh -d ` to generate the result archive file.
 
 > [!NOTE]  
 > For Linux, the analyzer requires 'lxml' to produce the result output. If not
@@ -88,19 +88,19 @@ reproduced on demand.
 
 ## Result package contents on macOS and Linux
 
--   report.html <br> Description: The main HTML output file which will contain the findings and
+-   report.html <br> Description: The main HTML output file that will contain the findings and
     guidance that the analyzer script run on the machine can produce.
 
 -   mde_diagnostic.zip <br> Description: Same diagnostic output that gets generated when
     running *mdatp diagnostic create* on either
-    [MacOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+    [macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
     or
     [Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 
 -   mde.xml <br> Description: XML output that is generated while running and is used to build
     the html report file.
 
--   Processes_information.txt <br> Description: contains the details of the running MDE related
+-   Processes_information.txt <br> Description: contains the details of the running Microsoft Defender for Endpoint related
     processes on the system.
 
 -   Log.txt <br> Description: contains the same log messages written on screen during the data

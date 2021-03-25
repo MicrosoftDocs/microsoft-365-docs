@@ -33,11 +33,11 @@ ms.technology: m365d
 
 2.  Extract the contents of MDEClientAnalyzer.zip on the machine.
 
-3.  Open an elevated command-line:
-    1. Go to **Start** and type **cmd**.
-    2. Right-click **Command prompt** and select **Run as administrator**.
+3.  Open an elevated command line:
+    1. Go to **Start** and type **cmd**.
+    2. Right-click **Command prompt** and select **Run as administrator**.
 
-4.  Enter the following command and press **Enter**:
+4.  Enter the following command and press **Enter**:
 
 ```
 HardDrivePath\\MDEClientAnalyzer.cmd
@@ -74,7 +74,7 @@ connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 By default, the unpacked MDEClientAnalyzerResult.zip file will contain the
 following items.
 
--   MDEClientAnalyzer.htm \| This is the main HTML output file which will
+-   MDEClientAnalyzer.htm \| This is the main HTML output file, which will
     contain the findings and guidance that the analyzer script run on the
     machine can produce.
 
@@ -132,3 +132,10 @@ following items.
 
     -   OperationsManager.evtx <br> Description:  Export of the Microsoft
         Monitoring Agent event log
+
+
+## See also
+- [Client analyzer overview](overview-client-analyzer.md)
+- [Download and run the client analyzer](download-client-analyzer.md)
+- [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+- [Understand the analyzer HTML report](analyzer-report.md)

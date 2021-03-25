@@ -27,8 +27,7 @@ ms.technology: m365d
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-If you have feedback or suggestions that would improve the analyzer, please use
-either options below:
+If you have feedback or suggestions that would improve the analyzer, use either of these options:
 
 1.  Microsoft Defender for Endpoint portal (securitycenter.windows.com):
 

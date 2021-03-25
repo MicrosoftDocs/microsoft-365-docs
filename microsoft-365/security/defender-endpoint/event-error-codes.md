@@ -344,7 +344,10 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
-## Related topics
+## See also
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [Client analyzer overview](overview-client-analyzer.md)
+- [Download and run the client analyzer](download-client-analyzer.md)
+- [Understand the analyzer HTML report](analyzer-report.md)

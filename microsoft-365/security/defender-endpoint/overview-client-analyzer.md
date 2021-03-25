@@ -30,17 +30,17 @@ ms.technology: m365d
 The Microsoft Defender for Endpoint Client Analyzer (MDECA) can be useful when
 diagnosing sensor health or reliability issues on [onboarded
 devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
-running either Windows, Linux or MacOS. For example, you may want to run the
-analyzer on a machine which appears to be unhealthy according to the displayed
+running either Windows, Linux, or macOS. For example, you may want to run the
+analyzer on a machine that appears to be unhealthy according to the displayed
 [sensor health
 status](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/fix-unhealthy-sensors)
 (Inactive, No Sensor Data or Impaired Communication issues) in the security
 portal.
 
-Besides obvious sensor health issues, MDECA can collect additional traces, logs,
+Besides obvious sensor health issues, MDECA can collect other traces, logs,
 and diagnostics information for troubleshooting of more complex scenarios such
 as:  
-application compatiblity (AppCompat), performance, network connectivity, or
+application compatibility (AppCompat), performance, network connectivity, or
 unexpected behavior related to [Endpoint Data Loss
 Prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide).
 
@@ -61,7 +61,7 @@ Prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-lea
 
 -   No data is automatically sent to Microsoft. If you are using the tool during
     collaboration on a support issue, you may be asked to send the compressed
-    data to Microsoft CSS using Secure File Exchange. 
+    data to Microsoft CSS using Secure File Exchange.
 
 For more information about Secure File Exchange, see [How to use Secure File Exchange to exchange files with Microsoft Support](https://support.microsoft.com/help/4012140/how-to-use-secure-file-exchange-to-exchange-files-with-microsoft-suppo>)  
 
@@ -77,7 +77,7 @@ For more information about our privacy statement, see [Privacy at Microsoft](htt
     [Windows](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions),
     [Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements),
     or
-    [MacOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements)
+    [macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements)
     either before of after onboarding to Microsoft Defender for Endpoint.
 
 -   If you are running the analyzer directly on specific machines and not

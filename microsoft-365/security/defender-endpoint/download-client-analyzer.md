@@ -1,5 +1,5 @@
 ---
-title:  Download the Microsoft Defender for Endpoint Client Analyzer
+title:  Download the Microsoft Defender for Endpoint client analyzer
 description: Learn how to download the Microsoft Defender for Endpoint Client Analyzer on Windows, macOS, or Linux.
 keywords: download, client analyzer, troubleshoot sensor, analyzer, mdeanalyzer
 search.product: eADQiWindows 10XVcnh
@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-#  Download the Microsoft Defender for Endpoint Client Analyzer
+#  Download the Microsoft Defender for Endpoint client analyzer
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-Learn how to download the Microsoft Defender for Endpoint Client Analyzer on supported Windows, macOS, and Linux Operating Systems.
+Learn how to download the Microsoft Defender for Endpoint client analyzer on supported Windows, macOS, and Linux Operating Systems.
 
 ## Download client analyzer for Windows OS
 
@@ -37,12 +37,12 @@ Learn how to download the Microsoft Defender for Endpoint Client Analyzer on sup
 2.  The latest preview edition is available for download from following URL:
     <https://aka.ms/BetaMDEAnalyzer>
 
-##  Download client analyzer for MacOS or Linux
+##  Download client analyzer for macOS or Linux
 
 1.  The latest stable edition will be integrated into the MDE for Endpoint
     agent.  
-    Please ensure that you are running the latest edition for either
-    [MacOS](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew)
+    Ensure that you are running the latest edition for either
+    [macOS](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew)
     or
     [Linux](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/linux-whatsnew).
 
