@@ -57,7 +57,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 | [Grant full disk access to Microsoft Defender for Endpoint](#create-system-configuration-profiles-step-8) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
 | [Network Extension policy](#create-system-configuration-profiles-step-9) | MDATP_NetExt.xml | N/A |
 | [Configure Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-updates#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
-| [Microsoft Defender for Endpoint configuration settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-preferences#intune-profile-1)<br/><br/> **Note:** If you are planning to run a third-party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
+| [Microsoft Defender for Endpoint configuration settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-preferences#intune-profile-1)<br/><br/> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-10) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
 
 ## Download installation and onboarding packages
@@ -128,11 +128,11 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 
 ## Client device setup
 
-You do not need any special provisioning for a Mac device beyond a standard [Company Portal installation](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
+You don't need any special provisioning for a Mac device beyond a standard [Company Portal installation](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
 
 1. Confirm device management.
 
-    ![Confirm device management screenshot](./images/mdatp-3-confirmdevicemgmt.png)
+    ![Confirm device management screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-3-confirmdevicemgmt.png)
 
     Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
