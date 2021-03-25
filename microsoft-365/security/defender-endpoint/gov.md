@@ -83,8 +83,8 @@ Windows 8.1 Enterprise | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/ch
 Windows 8 Pro | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
-Linux | ![No](images/svg/check-no.svg) Rolling out | ![No](images/svg/check-no.svg) Rolling out | ![No](images/svg/check-no.svg) Rolling out
-macOS | ![No](images/svg/check-no.svg) Rolling out | ![No](images/svg/check-no.svg) Rolling out | ![No](images/svg/check-no.svg) Rolling out
+Linux | ![Yes](images/svg/check-yes.svg) Preview, see note below | ![Yes](images/svg/check-yes.svg) Preview, see note below | ![Yes](images/svg/check-yes.svg) Preview, see note below
+macOS | ![Yes](images/svg/check-yes.svg) Preview, see note below | ![Yes](images/svg/check-yes.svg) Preview, see note below | ![Yes](images/svg/check-yes.svg) Preview, see note below
 Android | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
 iOS | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
 
@@ -93,6 +93,9 @@ iOS | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/c
 
 > [!NOTE]
 > Trying to onboard Windows devices older than Windows 10 or Windows Server 2019 using [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
+
+> [!NOTE]
+> For Linux you'll need version 101.25.72 and above. For macOS you'll need version 101.25.69 and above. While we're in preview, those versions are availble in the "Insider Fast" channel. See [Configure the Linux software repository](linux-install-manually.md#configure-the-linux-software-repository) or [Set the channel name (macOS)](mac-updates.md#set-the-channel-name) for instructions.
 
 ### OS versions when using Azure Defender for Servers
 The following OS versions are supported when using [Azure Defender for Servers](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
@@ -138,7 +141,7 @@ You can find the Azure IP ranges in [Azure IP Ranges and Service Tags – US Gov
 <br>
 
 ## API
-Instead of the public URIs listed in our [API documentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro), you'll need to use the following URIs:
+Instead of the public URIs listed in our [API documentation](apis-intro.md), you'll need to use the following URIs:
 
 Endpoint type | GCC | GCC High & DoD
 :---|:---|:---
