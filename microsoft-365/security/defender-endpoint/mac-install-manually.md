@@ -59,7 +59,7 @@ To complete this process, you must have admin privileges on the device.
 
 1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-    ![App install screenshot1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall.png)
+    ![App install screenshot1](images/mdatp-28-appinstall.png)
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
@@ -68,11 +68,11 @@ To complete this process, you must have admin privileges on the device.
    > [!IMPORTANT]
    > You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
-   ![App install screenshot3](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-30-systemextension.png)
+   ![App install screenshot3](images/mdatp-30-systemextension.png)
 
 3. Select **Open Security Preferences** or **Open System Preferences > Security & Privacy**. Select **Allow**:
 
-    ![Security and privacy window screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-31-securityprivacysettings.png)
+    ![Security and privacy window screenshot](/images/mdatp-31-securityprivacysettings.png)
 
    The installation proceeds.
 
@@ -134,7 +134,7 @@ To complete this process, you must have admin privileges on the device.
 
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
-   ![Microsoft Defender icon in status bar screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar.png)
+   ![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)
    
 
 ## How to Allow Full Disk Access
