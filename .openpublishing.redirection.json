@@ -3307,7 +3307,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/office-365-atp.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
