@@ -106,7 +106,7 @@ Devices on your network must be running one of these editions.
 The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
 
 > [!NOTE]
-> Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) are not supported.
+> Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 >
 > Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
@@ -115,11 +115,12 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 
 ### Other supported operating systems
 - Android
+- iOS
 - Linux
 - macOS
 
 > [!NOTE]
-> You'll need to know the exact Linux distributions and versions of Android and macOS that are compatible with Defender for Endpoint for the integration to work.
+> You'll need to know the exact Linux distributions and versions of Android, iOS and macOS that are compatible with Defender for Endpoint for the integration to work.
 
 
 
@@ -158,7 +159,7 @@ By default, this service is enabled. It's good practice to check to ensure that 
    ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 
-You'll need to set the service to automatically start if the **START_TYPE** is not set to **AUTO_START**.
+You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.
 
 
 **Use the command line to set the Windows 10 diagnostic data service to automatically start:**
@@ -185,7 +186,7 @@ You'll need to set the service to automatically start if the **START_TYPE** is n
 #### Internet connectivity
 Internet connectivity on devices is required either directly or through proxy.
 
-The Defender for Endpoint sensor can utilize a daily average bandwidth of 5 MB to communicate with the Defender for Endpoint cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
+The Defender for Endpoint sensor can use a daily average bandwidth of 5 MB to communicate with the Defender for Endpoint cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
 
 For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
@@ -197,11 +198,11 @@ The Defender for Endpoint agent depends on the ability of Microsoft Defender Ant
 
 Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode.
+When Microsoft Defender Antivirus isn't the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode.
 
 If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.
 
-If you are onboarding servers and Microsoft Defender Antivirus is not the active antimalware on your servers, Microsoft Defender Antivirus will either need to be configured to go on passive mode or uninstalled. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md).
+If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, Microsoft Defender Antivirus will either need to be configured to go on passive mode or uninstalled. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
 > Your regular group policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on.
