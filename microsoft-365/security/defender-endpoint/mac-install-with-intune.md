@@ -244,27 +244,27 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 10. Select **Included Groups**. Select **Make this app required for all devices=Yes**. Select **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
 
     > [!div class="mx-imgBorder"]
-    > ![Intune assignments info screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-11-assignments.png)
+    > ![Intune assignments info screenshot](images/mdatp-11-assignments.png)
 
 11. After some time the application will be published to all enrolled devices. You can see it listed in **Monitor** > **Device**, under **Device install status**:
 
     > [!div class="mx-imgBorder"]
-    > ![Intune device status screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-12-deviceinstall.png)
+    > ![Intune device status screenshot](images/mdatp-12-deviceinstall.png)
 
 ## Verify client device state
 
 1. After the configuration profiles are deployed to your devices, open **System Preferences** > **Profiles** on your Mac device.
 
-    ![System Preferences screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-13-systempreferences.png)<br/>
-    ![System Preferences Profiles screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-14-systempreferencesprofiles.png)
+    ![System Preferences screenshot](images/mdatp-13-systempreferences.png)<br/>
+    ![System Preferences Profiles screenshot](images/mdatp-14-systempreferencesprofiles.png)
 
 2. Verify that the following configuration profiles are present and installed. The **Management Profile** should be the Intune system profile. _Wdav-config_ and _wdav-kext_ are system configuration profiles that were added in Intune:
-    ![Profiles screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-15-managementprofileconfig.png)
+    ![Profiles screenshot](images/mdatp-15-managementprofileconfig.png)
 
 3. You should also see the Microsoft Defender icon in the top-right corner:
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Defender icon in status bar screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar.png)
+    > ![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)
 
 ## Troubleshooting
 
