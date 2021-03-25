@@ -132,8 +132,6 @@ You do not need any special provisioning for a Mac device beyond a standard [Com
 
 1. Confirm device management.
 
-    ![Confirm device management screenshot](./images/mdatp-3-confirmdevicemgmt.png)
-
     Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
     ![Management profile screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-4-managementprofile)

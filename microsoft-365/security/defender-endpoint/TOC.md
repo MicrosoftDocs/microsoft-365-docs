@@ -115,7 +115,7 @@
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
-### [Microsoft Defender Advanced Threat Protection for Mac]()
+### [Microsoft Defender for Endpoint for Mac]()
 #### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
 #### [What's New](mac-whatsnew.md)
 
@@ -378,6 +378,8 @@
 ##### [Offboarding devices](offboard-machines.md)
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
+
+### [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
