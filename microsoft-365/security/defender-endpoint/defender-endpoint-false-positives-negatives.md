@@ -50,7 +50,7 @@ And, you can [get help if you still have issues with false positives/negatives](
 ![Steps to address false positives and negatives](images/false-positives-step-diagram.png)
 
 > [!NOTE]
-> This article is intended as guidance for security operators and security administrators who are using [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md).
+> This article is intended as guidance for security operators and security administrators who are using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
 ## Part 1: Review and classify alerts
 

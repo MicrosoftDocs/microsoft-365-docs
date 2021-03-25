@@ -1,15 +1,15 @@
 # [Microsoft Defender for Endpoint](index.yml)
 
 ## [Overview]()
-### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-advanced-threat-protection.md)
+### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Minimum requirements](minimum-requirements.md)
-### [What's new in Microsoft Defender ATP](whats-new-in-microsoft-defender-atp.md)
+### [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
 ### [Portal overview](portal-overview.md)
-### [Microsoft Defender for Endpoint for US Government customers](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/gov)
-### [Microsoft Defender ATP for non-Windows platforms](non-windows.md)
+### [Microsoft Defender for Endpoint for US Government customers](gov.md)
+### [Microsoft Defender for Endpoint for non-Windows platforms](non-windows.md)
 
 ## [Evaluate capabilities](evaluation-lab.md)
 
@@ -33,7 +33,7 @@
 #### [Phase 2: Setup](mcafee-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](mcafee-to-microsoft-defender-onboard.md)
 ### [Switch from Symantec to Microsoft Defender for Endpoint]()
-#### [Overview of migration](symantec-to-microsoft-defender-atp-migration.md)
+#### [Overview of migration](symantec-to-microsoft-defender-endpoint-migration.md)
 #### [Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md)
 #### [Phase 2: Setup](symantec-to-microsoft-defender-atp-setup.md)
 #### [Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md)
@@ -116,13 +116,13 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 ### [Microsoft Defender Advanced Threat Protection for Mac]()
-#### [Overview of Microsoft Defender ATP for Mac](microsoft-defender-endpoint-mac.md)
+#### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
 #### [What's New](mac-whatsnew.md)
 
 #### [Deploy]()
 ##### [Microsoft Intune-based deployment](mac-install-with-intune.md)
 ##### [JAMF Pro-based deployment]()
-###### [Deploying Microsoft Defender ATP for macOS using Jamf Pro](mac-install-with-jamf.md)
+###### [Deploying Microsoft Defender for Endpoint for macOS using Jamf Pro](mac-install-with-jamf.md)
 ###### [Login to Jamf Pro](mac-install-jamfpro-login.md)
 ###### [Set up device groups](mac-jamfpro-device-groups.md)
 ###### [Set up policies](mac-jamfpro-policies.md)
@@ -151,8 +151,8 @@
 #### [Privacy](mac-privacy.md)
 #### [Resources](mac-resources.md)
 
-### [Microsoft Defender Advanced Threat Protection for iOS]()
-#### [Overview of Microsoft Defender Advanced Threat Protection for iOS](microsoft-defender-endpoint-ios.md)
+### [Microsoft Defender for Endpoint for iOS]()
+#### [Overview of Microsoft Defender for Endpoint for iOS](microsoft-defender-endpoint-ios.md)
 
 #### [Deploy]()
 ##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](ios-install.md)
@@ -162,8 +162,8 @@
 #### [Privacy](ios-privacy.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Linux]()
-#### [Overview of Microsoft Defender ATP for Linux](microsoft-defender-endpoint-linux.md)
+### [Microsoft Defender for Endpoint for Linux]()
+#### [Overview of Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md)
 #### [What's New](linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](linux-install-manually.md)
@@ -177,7 +177,7 @@
 ##### [Static proxy configuration](linux-static-proxy-configuration.md)
 ##### [Set preferences](linux-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](linux-pua.md)
-##### [Schedule scans with Microsoft Defender ATP for Linux](linux-schedule-scan-atp.md)
+##### [Schedule scans with Microsoft Defender for Endpoint for Linux](linux-schedule-scan-atp.md)
 ##### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
 
 #### [Troubleshoot]()
@@ -189,17 +189,17 @@
 #### [Privacy](linux-privacy.md)
 #### [Resources](linux-resources.md)
 
-### [Microsoft Defender Advanced Threat Protection for Android]()
-#### [Overview of Microsoft Defender ATP for Android](microsoft-defender-endpoint-android.md)
+### [Microsoft Defender for Endpoint for Android]()
+#### [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md)
 
 #### [Deploy]()
-##### [Deploy Microsoft Defender ATP for Android with Microsoft Intune](android-intune.md)
+##### [Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune](android-intune.md)
 
 #### [Configure]()
-##### [Configure Microsoft Defender ATP for Android features](android-configure.md)
+##### [Configure Microsoft Defender for Endpoint for Android features](android-configure.md)
 
 #### [Privacy]()
-##### [Microsoft Defender ATP for Android - Privacy information](android-privacy.md)
+##### [Microsoft Defender for Endpoint for Android - Privacy information](android-privacy.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot issues](android-support-signin.md)
@@ -321,7 +321,7 @@
 
 ## [How-to]()
 ### [Onboard devices to the service]()
-#### [Onboard devices to Microsoft Defender ATP](onboard-configure.md)
+#### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
 #### [Onboard Windows 10 devices]()
 ##### [Onboarding tools and methods](configure-endpoints.md)
@@ -379,6 +379,8 @@
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
+### [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
@@ -388,16 +390,16 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](management-apis.md)
-#### [Microsoft Defender ATP API]()
+#### [Microsoft Defender for Endpoint API]()
 ##### [Get started]()
-###### [Microsoft Defender ATP API license and terms](api-terms-of-use.md)
-###### [Access the Microsoft Defender ATP APIs](apis-intro.md)
+###### [Microsoft Defender for Endpoint API license and terms](api-terms-of-use.md)
+###### [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
 ###### [Get partner application access](exposed-apis-create-app-partners.md)
-##### [Microsoft Defender ATP APIs Schema]()
-###### [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+##### [Microsoft Defender for Endpoint APIs Schema]()
+###### [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 ###### [Common REST API error codes](common-errors.md)
 ###### [Advanced Hunting](run-advanced-query-api.md)
 
@@ -521,7 +523,7 @@
 ##### [Learn about different ways to pull detections](configure-siem.md)
 ##### [Enable SIEM integration](enable-siem-integration.md)
 ##### [Configure Micro Focus ArcSight to pull detections](configure-arcsight.md)
-##### [Microsoft Defender ATP detection fields](api-portal-mapping.md)
+##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
 ##### [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
@@ -549,21 +551,21 @@
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](partner-integration.md)
 #### [Managed security service provider opportunity](mssp-support.md)
-#### [Become a Microsoft Defender ATP partner](get-started-partner-integration.md)
+#### [Become a Microsoft Defender for Endpoint partner](get-started-partner-integration.md)
 
 ### [Integrations]()
-#### [Microsoft Defender ATP integrations](threat-protection-integration.md)
+#### [Microsoft Defender for Endpoint integrations](threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](conditional-access.md)
 #### [Microsoft Cloud App Security integration overview](microsoft-cloud-app-security-integration.md)
 
 ### [Information protection in Windows overview]()
 #### [Windows integration](information-protection-in-windows-overview.md)
 
-### [Access the Microsoft Defender ATP Community Center](community.md)
+### [Access the Microsoft Defender for Endpoint Community Center](community.md)
 
 ### [Helpful resources](helpful-resources.md)
 
-### [Troubleshoot Microsoft Defender ATP]()
+### [Troubleshoot Microsoft Defender for Endpoint]()
 #### [Troubleshoot sensor state]()
 ##### [Check sensor state](check-sensor-status.md)
 ##### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
@@ -580,10 +582,10 @@
 ##### [Provide feedback on the client analyzer tool](analyzer-feedback.md)
 
   
-#### [Troubleshoot Microsoft Defender ATP service issues]()
+#### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 ##### [Troubleshoot service issues](troubleshoot-mdatp.md)
 ##### [Check service health](service-status.md)
-##### [Contact Microsoft Defender ATP support](contact-support.md)
+##### [Contact Microsoft Defender for Endpoint support](contact-support.md)
 
 #### [Troubleshoot live response issues](troubleshoot-live-response.md)
 
@@ -592,3 +594,7 @@
 #### [Troubleshoot attack surface reduction issues]()
 ##### [Network protection](troubleshoot-np.md)
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
+
+# [Microsoft 365 Security](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
+# [Defender for Office 365](../office-365-security/overview.md)

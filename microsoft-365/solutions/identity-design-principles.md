@@ -130,7 +130,7 @@ If you agree with this expanded definition of authorization, then you need to im
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
@@ -222,11 +222,11 @@ Sometimes scenarios call for adding an external user to a role (see the multi-te
 
 ### Security and Compliance Center (SCC)
 
-[Permissions in the Office 365 Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) are a collection of "role groups", which are separate and distinct from Azure AD roles. This can be confusing because some of these role groups have the same name as Azure AD roles (for example, Security Reader), yet they can have different membership. I prefer the use of Azure AD roles. Each role group consists of one or more "roles" (see what I mean about reusing the same word?) and have members from Azure AD, which are email enabled objects. Also, you can create a role group with the same name as a role, which may or may not contain that role (avoid this confusion).
+[Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) are a collection of "role groups", which are separate and distinct from Azure AD roles. This can be confusing because some of these role groups have the same name as Azure AD roles (for example, Security Reader), yet they can have different membership. I prefer the use of Azure AD roles. Each role group consists of one or more "roles" (see what I mean about reusing the same word?) and have members from Azure AD, which are email enabled objects. Also, you can create a role group with the same name as a role, which may or may not contain that role (avoid this confusion).
 
 In a sense, these are an evolution of the Exchange role groups model. However, Exchange Online has its own [role group management](/exchange/permissions-exo) interface. Some role groups in Exchange Online are locked and managed from Azure AD or the Security & Compliance Center, but others might have the same or similar names and are managed in Exchange Online (adding to the confusion). I recommend you avoid using the Exchange Online user interface unless you need scopes for Exchange management.
 
-You can't create custom roles. Roles are defined by services created by Microsoft and will grow as new services are introduced. This is similar in concept to [roles defined by applications](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. When new services are enabled, often new role groups need to be created in order to grant or delegate access to these (for example, [insider risk management](../compliance/insider-risk-management-configure.md?view=o365-worldwide#step-1-required-enable-permissions-for-insider-risk-management)).
+You can't create custom roles. Roles are defined by services created by Microsoft and will grow as new services are introduced. This is similar in concept to [roles defined by applications](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. When new services are enabled, often new role groups need to be created in order to grant or delegate access to these (for example, [insider risk management](../compliance/insider-risk-management-configure.md?view=o365-worldwide)).
 
 These role groups also require direct membership and cannot contain Azure AD groups. Unfortunately, today these role groups are not supported by Azure AD PIM. Like Azure AD roles, I tend to recommend management of these through APIs or a partner governance product like Saviynt, or others.
 

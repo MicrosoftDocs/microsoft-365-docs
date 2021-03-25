@@ -26,7 +26,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 # Migrate from Symantec - Phase 1: Prepare for your migration
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |![Phase 1: Prepare](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |[![Phase 3: Onboard](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
@@ -34,7 +34,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 |*You are here!*| | |
 
 
-**Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. 
+**Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
 1. [Get Microsoft Defender for Endpoint](#get-microsoft-defender-for-endpoint).
@@ -84,5 +84,5 @@ To enable communication between your devices and Microsoft Defender for Endpoint
 
 ## Next step
 
-**Congratulations**! You have completed the **Prepare** phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
+**Congratulations**! You have completed the **Prepare** phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)!
 - [Proceed to set up Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md).

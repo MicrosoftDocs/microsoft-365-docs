@@ -26,7 +26,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 # Migrate from Symantec - Phase 3: Onboard to Microsoft Defender for Endpoint
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![Phase 1: Prepare](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |[![Phase 2: Set up](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |![Phase 3: Onboard](images/phase-diagrams/onboard.png)<br/>Phase 3: Onboard |
@@ -34,7 +34,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 || |*You are here!* |
 
 
-**Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
+**Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
 1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Run a detection test](#run-a-detection-test).
@@ -100,6 +100,6 @@ To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([http
 
 ## Next steps
 
-**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
+**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)! 
 - [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
 - [Manage Microsoft Defender for Endpoint, post migration](manage-atp-post-migration.md).
