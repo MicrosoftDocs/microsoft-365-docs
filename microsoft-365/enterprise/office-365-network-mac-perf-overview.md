@@ -137,7 +137,7 @@ The details tab on the office location page shows the specific measurement resul
 
 ## Sharing network assessment data with Microsoft
 
-By default the network assessments for your organization and the network insights are shared with Microsoft employees. This does not include any personal data from your staff but only the specific network assessment metrics and network insights shown in the Admin Center for your office locations. It also does not include your office location names or street addresses so you would need to tell them the City and Support ID of the office you want to discuss. If this is turned off then Microsoft engineers that you are discussing your network connectivity with cannot view any of this information. Enabling this setting only shares future data starting the day after you enable it.
+By default, the network assessments for your organization and the network insights are shared with Microsoft employees. This does not include any personal data from your staff but only the specific network assessment metrics and network insights shown in the admin center for your office locations. It also does not include your office location names or street addresses so you would need to tell them the city and support ID of the office you want to discuss. If this is turned off, the Microsoft engineers that you are discussing your network connectivity with cannot view any of this information. Enabling this setting only shares future data starting the day after you enable it.
 
 ## CSV Import for LAN subnet office locations
 
