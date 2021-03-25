@@ -76,11 +76,11 @@ AIR capabilities are included in [Microsoft Defender for Office 365](defender-fo
 - [Antimalware policies](protect-against-threats.md#part-1---anti-malware-protection)
 - [Antiphishing protection](protect-against-threats.md#part-2---anti-phishing-protection)
 - [Antispam protection](protect-against-threats.md#part-3---anti-spam-protection)
-- [Antiphishing protection](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats#part-2---anti-phishing-protection)
-- [Antispam protection](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats#part-3---anti-spam-protection)
-- [Safe Links and Safe Attachments](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/defender-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop)
+- [Antiphishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection)
+- [Antispam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-3---anti-spam-protection)
+- [Safe Links and Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [Zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop)
 
 In addition, make sure to [review your organization's alert policies](../../compliance/alert-policies.md), especially the [default policies in the Threat management category](../../compliance/alert-policies.md#default-alert-policies).
 
