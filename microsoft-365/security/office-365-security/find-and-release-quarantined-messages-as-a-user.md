@@ -152,7 +152,7 @@ After you select a message, you have options for what to do with the messages in
 
 - **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.
 
-- **Block Sender**: This blocks the sender from sending emails to you.
+- **Block Sender**: This prevents the sender from sending messages to you.
 
 When you're finished, click **Close**.
 
