@@ -66,7 +66,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Admin center features and settings
 
-Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](./admin-overview.md).
+Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](./admin-center-overview.md).
   
 |**Menu**|**What it's for**|
 |-----|-----|
