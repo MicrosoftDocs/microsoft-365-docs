@@ -56,7 +56,7 @@ The following are scenarios where communications from Office 365 to your on-prem
   
 - SMTP services such as mail from an Exchange Online tenant to an on-premises host or SharePoint Online Mail sent from SharePoint Online to an on-premises host. SMTP protocol is used more broadly within Microsoft's network than the route prefixes shared over ExpressRoute circuits and advertising on-premises SMTP servers over ExpressRoute will cause failures with these other services.
 
-- ADFS during password validation for sign-in.
+- ADFS during password validation for signing in.
 
 - [Exchange Server Hybrid deployments](/exchange/exchange-hybrid).
 
