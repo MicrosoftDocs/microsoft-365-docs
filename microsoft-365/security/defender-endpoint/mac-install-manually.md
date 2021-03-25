@@ -144,6 +144,57 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 
 To grant consent, open System Preferences -> Security & Privacy -> Privacy -> Full Disk Access. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
 
+Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+
+- Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
+    ``bash
+    mdatp health --field real_time_protection_enabled
+    ``
+- Open a Terminal window. Copy and execute the following command:
+    ``bash
+    curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+    ``
+- The file should have been quarantined by Defender for Endpoint for Mac. Use the following command to list all the detected threats:
+    ``bash
+    mdatp threat list
+    ``
+Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+In your browser such as Microsoft Edge for Mac or Safari
+Download MDATP MacOS DIY.zip from https://aka.ms/mdatpmacosdiy and extract.
+You may get prompted:
+
+Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?
+You can change which websites can download files in Websites Preferences.
+Cancel Allow.
+
+Click **Allow**.
+Open **Downloads**.
+You should see **MDATP MacOS DIY**.
+
+> [!TIP]
+> If you double-click, you will get the following message:
+"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.
+macOS cannot verify that this app is free from malware.
+Move to **Trash Cancel**.
+Click **Cancel**.
+Right-click on **MDATP MacOS DIY**.
+Click **Open**.
+
+macOS cannot verify the developer of **MDATP MacOS DIY**. Are you sure you want to open it?
+By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
+Click **Open**.
+
+Microsoft Defender ATP - macOS EDR DIY test file
+Corresponding alert will be available in the MDATP portal.
+Cancel **Open**.
+Click **Open**.
+In a few minutes an alert named macOS EDR Test Alert should be raised.
+
+Go to Microsoft Defender Security Center (https://SecurityCenter.microsoft.com)
+Go to the Alert Queue
+:::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="aaa":::
+Look at the alert details, device timeline and perform the regular investigation steps.
+
 ## Logging installation issues
 
 See [Logging installation issues](mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
