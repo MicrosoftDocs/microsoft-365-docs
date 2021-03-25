@@ -99,7 +99,7 @@ DeviceInfo
 ## Hunting scenarios
 
 ### List logon activities of users that received emails that were not zapped successfully
-[Zero-hour auto purge (ZAP)](../defender-365-security/zero-hour-auto-purge.md) addresses malicious emails after they have been received. If ZAP fails, malicious code might eventually run on the device and leave accounts compromised. This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.
+[Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) addresses malicious emails after they have been received. If ZAP fails, malicious code might eventually run on the device and leave accounts compromised. This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.
 
 ```kusto
 EmailPostDeliveryEvents 

@@ -6,8 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: overview
-
+ms.topic: article
 localization_priority: None
 search.appverid: 
   - MET150
