@@ -28,7 +28,7 @@ The logical architecture of productivity services in Microsoft 365, leading with
 
 
 ### Groups in Microsoft 365 for IT Architects
-What IT architects need to know about groups in Microsoft 365
+This illustration includes information for IT architects about Microsoft 365 Groups. To learn about configuring and administering Microsoft 365 Groups and teams for collaboration in your organization, see [Set up secure collaboration with Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) and [What is collaboration governance?](/microsoft-365/solutions/collaboration-governance-overview).
 
 | Item | Description |
 |:-----|:-----|
