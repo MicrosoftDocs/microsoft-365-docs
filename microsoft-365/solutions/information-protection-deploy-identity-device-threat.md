@@ -65,7 +65,7 @@ Use [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microso
 - Require mobile devices to lock upon inactivity.
 - Require mobile devices to wipe on multiple sign-in failures.
 
-Use [Exchange Online Protection and Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) for the **Protect Against Threats** category, with which you can:
+Use [Exchange Online Protection and Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) for the **Protect Against Threats** category, with which you can:
 
 - Enable sender authentication (SPF, DMARC and DKIM).
 - Set up Microsoft Defender for Office 365 anti-phishing policies.
@@ -76,8 +76,8 @@ Use [Exchange Online Protection and Microsoft Defender for Office 365](../securi
 
 ### References:
 
-- [Common identity and device access policies](../security/defender-365-security/identity-access-policies.md)
+- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 - [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Safe Attachments](../security/defender-365-security/safe-attachments.md)
-- [Safe Links](../security/defender-365-security/safe-links.md)
-- [Safe Documents](../security/defender-365-security/safe-docs.md)
+- [Safe Attachments](../security/office-365-security/safe-attachments.md)
+- [Safe Links](../security/office-365-security/safe-links.md)
+- [Safe Documents](../security/office-365-security/safe-docs.md)
