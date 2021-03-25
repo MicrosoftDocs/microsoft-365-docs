@@ -48,7 +48,7 @@ E5 also added greater integration with Defender for Endpoint. With E5, you can [
 
 ## What are the currently supported ASR rules?
 
-ASR currently supports all of the rules below:
+ASR currently supports all of the rules below spanning across multiple pillars of protection, like Office, Credentials,Scripts, E-Mail, etc. All ASR rules, except for Block persistence through WMI event subscription, are supported on Windows 10, version 1709 and later:
 
 * [Block executable content from email client and webmail](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 * [Block all Office applications from creating child processes](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
@@ -65,6 +65,53 @@ ASR currently supports all of the rules below:
 * [Block Office communication applications from creating child processes](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)
 * [Block Adobe Reader from creating child processes](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)
 * [Block persistence through WMI event subscription](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)
+
+## What rules to enable? All, or can I turn on individual rules?
+To help you figure out what’s best for your environment, we highly 
+recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you’ll be able to determine the possible impact on your organization, e.g. your line-of-business applications.
+
+## How do ASR rules exclusions work?
+For ASR rules, if you add one exclusion, it will affect every ASR rule.
+The following 2 specific rules do not support exclusions:
+||||
+|:--|:--|:--|
+|Rule name|GUID|File & folder exclusions|
+|Block JavaScript or VBScript from launching downloaded executable content|D3E037E1-3EB8-44C8-A917-57927947596D|Not supported|
+|Block persistence through WMI event subscription|e6db77e5-3df2-4cf1-b95a-636979351e5b|Not supported|
+||||
+
+**Important notes on ASR rules exclusions (including wildcards and env. variables):**
+-  ASR rules exclusions are independent from Defender AV exclusions
+-  Wildcards cannot be used to define a drive letter
+- If you want to exclude more than one folder, in a path, use multiple instances of \*\ to indicate multiple nested folders (e.g. c:\Folder\*\*\Test)
+- Currently, Microsoft Endpoint Configuration Manager *does not* support wildcards (* or ?)
+- If you want to exclude a file, that contains random characters ( automated file generation), you can use the ? symbol (e.g. C:\Folder\fileversion?.docx)
+- ASR exclusions in Group Policy do not support quotes (the engine will natively handle long path, spaces, etc., so there is no need to use quotes)
+- ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
+
+ASR rules exclusions support wildcards, paths and environmental variables. For more information on how to use wildcards in ASR rules see [configure and validate exclusions based on file extension and folder location](../microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+
+## How do I know what I need to exclude?
+Different ASR rules will have different protection flows. Always think about what the ASR rule you are configuring protects against, and how the actual execution flow pans out.
+
+Example: 
+**Block credential stealing from the Windows local security authority subsystem**
+Reading directly from Local Security Authority Subsystem (LSASS) process can be a security risk, since it might expose corporate credentials.
+
+This rule prevents untrusted processes from having direct access to LSASS memory. Whenever a process tries to use the OpenProcess() function to access LSASS, with an access right of PROCESS_VM_READ, the rule will  specifically block that access right.
+
+:::image type="content" source="images/asrfaq1.png" alt-text="block credential stealing LSASS":::
+
+Looking at the above example, if you really had to create an exception for the process that the access right was blocked, adding the filename along with full path would exclude it from being blocked and subsequently allowed to access LSASS process memory. The value of 0 means that ASR rules will ignore this file/process and not block/audit it.
+
+:::image type="content" source="images/asrfaq2.png" alt-text="exclude files asr":::
+
+## What are the rules Microsoft recommends enabling?
+
+Overall, we recommend enabling every possible rule. Nevertheless, there are some clear cut cases where you shouldn’t enable a rule. For example, we do not recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you’re using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
+
+We highly recommend you that you read each rule specific information and/or warnings, which are available in our
+[public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction?view=o365-worldwide).
 
 ## What are some good recommendations for getting started with ASR?
 
