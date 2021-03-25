@@ -33,7 +33,7 @@
 #### [Phase 2: Setup](mcafee-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](mcafee-to-microsoft-defender-onboard.md)
 ### [Switch from Symantec to Microsoft Defender for Endpoint]()
-#### [Overview of migration](symantec-to-microsoft-defender-atp-migration.md)
+#### [Overview of migration](symantec-to-microsoft-defender-endpoint-migration.md)
 #### [Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md)
 #### [Phase 2: Setup](symantec-to-microsoft-defender-atp-setup.md)
 #### [Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md)
