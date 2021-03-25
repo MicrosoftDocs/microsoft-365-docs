@@ -193,7 +193,7 @@ After you select a message, you have several options for what to do with the mes
 
 - **Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
 
--**Block Sender**: this blocks the sender from sending emails to recipient in the organization.
+-**Block Sender**: This blocks the sender from sending emails to the admin recipient mailbox.
 
 - **Submit message**: In the flyout pane that appears, choose the following options:
 
