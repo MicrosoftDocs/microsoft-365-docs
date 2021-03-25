@@ -16,6 +16,7 @@ ms.reviewer:
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
+ms.topic: how-to
 ---
 
 # Troubleshoot attack surface reduction rules
