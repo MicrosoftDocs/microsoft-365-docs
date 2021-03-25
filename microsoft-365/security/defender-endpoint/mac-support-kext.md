@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot kernel extension issues in Microsoft Defender ATP for Mac
-description: Troubleshoot kernel extension-related issues in Microsoft Defender ATP for Mac.
+title: Troubleshoot kernel extension issues in Microsoft Defender for Endpoint for Mac
+description: Troubleshoot kernel extension-related issues in Microsoft Defender for Endpoint for Mac.
 keywords: microsoft, defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -39,7 +39,7 @@ Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to
 
 If you did not approve the kernel extension during the deployment/installation of Microsoft Defender for Endpoint for Mac, the application displays a banner prompting you to enable it:
 
-   ![RTP disabled screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix)
+   ![RTP disabled screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix.png)
 
 You can also run ```mdatp health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension is not approved to run on your device.
 
@@ -68,7 +68,7 @@ If less than 30 minutes have passed since the product was installed, navigate to
 
 If you don't see this prompt, it means that 30 or more minutes have passed, and the kernel extension still not been approved to run on your device:
 
-![Security and privacy window after prompt expired screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt)
+![Security and privacy window after prompt expired screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt.png)
 
 In this case, you need to perform the following steps to trigger the approval flow again.
 
