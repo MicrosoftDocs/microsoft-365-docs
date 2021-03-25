@@ -1,8 +1,18 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/commerce/extend-your-trial.md",
+      "redirect_url": "/microsoft-365/commerce/try-or-buy-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/resolve-license-conflicts.md",
+      "redirect_url": "/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-bluehost.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
     },
     {
@@ -2738,6 +2748,541 @@
     {
       "source_path": "microsoft-365/security/mtp/tickets-security-center.md",
       "redirect_url": "/microsoft-365/security/mtp/tickets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-alertevidence-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-alertevidence-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-alertinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-alertinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-appfileevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-appfileevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-assignedipaddresses-function.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-assignedipaddresses-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-best-practices.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-best-practices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-cloudappevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-cloudappevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-deviceevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicefilecertificateinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicefilecertificateinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicefileevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicefileevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-deviceimageloadevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceimageloadevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-deviceinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicelogonevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicelogonevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicenetworkevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicenetworkevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicenetworkinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicenetworkinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-deviceprocessevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-deviceregistryevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceregistryevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsecureconfigurationassessment-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventory-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventory-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-emailattachmentinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-emailattachmentinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-emailevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-emailevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-emailpostdeliveryevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-emailpostdeliveryevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-emailurlinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-emailurlinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-errors.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-errors",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-expert-training.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-expert-training",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-extend-data.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-extend-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-fileprofile-function.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-fileprofile-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-go-hunt.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-go-hunt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-identitydirectoryevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-identitydirectoryevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-identityinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-identityinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-identitylogonevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-identitylogonevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-identityqueryevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-identityqueryevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-limits.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-limits",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-migrate-from-mde",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-query-emails-devices.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-emails-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-query-language.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-language",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-query-results.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-results",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-schema-tables.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-schema-tables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-shared-queries.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-shared-queries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-take-action.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-take-action",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-access.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-advanced-hunting.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-advanced-hunting",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-articles.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-articles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-create-app-user-context.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-create-app-user-context",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-create-app-web.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-create-app-web",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-error-codes.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-error-codes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-hello-world.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-hello-world",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-incident.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-incident",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-list-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-list-incidents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-partner-access.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-partner-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-supported.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-supported",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-terms.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-terms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/api-update-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/api-update-incidents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/config-mtpeval.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/config-m365d-eval",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/custom-detection-rules.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/custom-detection-rules",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/custom-detections-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/custom-detections-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/data-privacy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/data-privacy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/deploy-supported-services.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/deploy-supported-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/device-profile.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/device-profile",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/feedback.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/feedback",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/generate-test-alert.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/generate-test-alert",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/incident-queue.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/incident-queue",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/incidents-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/investigate-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/investigate-incidents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/latest-attack-campaigns.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/manage-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/manage-incidents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/microsoft-secure-score-history-metrics-trends.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score-history-metrics-trends",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/microsoft-secure-score-improvement-actions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score-improvement-actions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/microsoft-secure-score-whats-coming.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score-whats-coming",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/microsoft-secure-score-whats-new.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score-whats-new",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/microsoft-secure-score.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/microsoft-threat-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-defender",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-action-center.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-action-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-autoir-actions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-autoir-actions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-autoir-report-false-positives-negatives.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-autoir-report-false-positives-negatives",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-autoir-results.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-autoir-results",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-autoir.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-autoir",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-configure-auto-investigation-response.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-configure-auto-investigation-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-enable-faq.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-enable-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-enable.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-enable",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-evaluation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-evaluation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-permissions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-pilot-close.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-pilot-close",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-pilot-plan.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-pilot-plan",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-pilot-simulate.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-pilot-simulate",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-pilot.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-pilot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-remediation-actions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-remediation-actions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-time-zone.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-time-zone",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/mtp-whats-new.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/m365d-whats-new",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/onboard.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/onboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/overview-security-center.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/portals.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/portals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/prepare-mtpeval.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/prepare-m365d-eval",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/prerequisites.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/prerequisites",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/preview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/preview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/setup-mtpeval.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/setup-m365deval",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/tickets.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/tickets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/top-scoring-industry-tests.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/top-scoring-industry-tests",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/troubleshoot.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/troubleshoot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/whats-new.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/whats-new",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/microsoft-365-security-center-mdo.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-security-center-mdo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/mtp/microsoft-365-security-center-mde.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-security-center-mde",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-atp-safe-links-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-links-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/ecommended-settings-for-eop-and-office365",
       "redirect_document_id": true
     }
   ]
