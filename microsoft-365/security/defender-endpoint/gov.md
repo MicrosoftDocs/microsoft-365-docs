@@ -47,7 +47,7 @@ GCC | GCC High | DoD
 Microsoft Defender for Endpoint Server GCC | Microsoft Defender for Endpoint Server for GCC High | Microsoft Defender for Endpoint Server for DOD
 Azure Defender for Servers | Azure Defender for Servers - Government | Azure Defender for Servers - Government
 
-<br>
+<br />
 
 ## Portal URLs
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
@@ -58,7 +58,7 @@ GCC | https://gcc.securitycenter.microsoft.us
 GCC High | https://securitycenter.microsoft.us
 DoD | https://securitycenter.microsoft.us
 
-<br>
+<br />
 
 ## Endpoint versions
 
@@ -73,8 +73,8 @@ Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/45
 Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/4598245)) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
-Windows 10, version 1709 | ![No](images/svg/check-no.svg)<br>Note: Won't be supported | ![Yes](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: [Deprecated](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade | ![No](images/svg/check-no.svg)<br>Note: Won't be supported
-Windows 10, version 1703 and earlier | ![No](images/svg/check-no.svg)<br>Note: Won't be supported | ![No](images/svg/check-no.svg)<br>Note: Won't be supported | ![No](images/svg/check-no.svg)<br>Note: Won't be supported
+Windows 10, version 1709 | ![No](images/svg/check-no.svg)<br />Note: Won't be supported | ![Yes](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br />Note: [Deprecated](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade | ![No](images/svg/check-no.svg)<br />Note: Won't be supported
+Windows 10, version 1703 and earlier | ![No](images/svg/check-no.svg)<br />Note: Won't be supported | ![No](images/svg/check-no.svg)<br />Note: Won't be supported | ![No](images/svg/check-no.svg)<br />Note: Won't be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows Server 2016 | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
@@ -83,8 +83,8 @@ Windows 8.1 Enterprise | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/ch
 Windows 8 Pro | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
-Linux | ![Yes](images/svg/check-yes.svg) Preview, see note below | ![Yes](images/svg/check-yes.svg) Preview, see note below | ![Yes](images/svg/check-yes.svg) Preview, see note below
-macOS | ![Yes](images/svg/check-yes.svg) Preview, see note below | ![Yes](images/svg/check-yes.svg) Preview, see note below | ![Yes](images/svg/check-yes.svg) Preview, see note below
+Linux | ![Yes](images/svg/check-yes.svg) In preview<br />See note below | ![Yes](images/svg/check-yes.svg) In preview<br />See note below | ![Yes](images/svg/check-yes.svg) In preview<br />See note below
+macOS | ![Yes](images/svg/check-yes.svg) In preview<br />See note below | ![Yes](images/svg/check-yes.svg) In preview<br />See note below | ![Yes](images/svg/check-yes.svg) In preview<br />See note below
 Android | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
 iOS | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
 
@@ -106,7 +106,7 @@ Windows Server 2016 | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check
 Windows Server 2012 R2 | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 
-<br>
+<br />
 
 ## Required connectivity settings
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed in the downloadable sheet to the allowed domains list.
@@ -115,7 +115,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 Spreadsheet of domains list | Description
 :-----|:-----
-![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/> | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
+![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/> | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br /><br />[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 For more information, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
@@ -138,7 +138,7 @@ You can find the Azure IP ranges in [Azure IP Ranges and Service Tags – US Gov
 > [!NOTE]
 > As a cloud-based solution, the IP address ranges can change. It's recommended you move to DNS-based rules.
 
-<br>
+<br />
 
 ## API
 Instead of the public URIs listed in our [API documentation](apis-intro.md), you'll need to use the following URIs:
@@ -149,7 +149,7 @@ Login | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
 SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https://wdatp-alertexporter-us.securitycenter.windows.us`
 
-<br>
+<br />
 
 ## Feature parity with commercial
 Defender for Endpoint for US Government customers doesn't have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available we want to highlight.
