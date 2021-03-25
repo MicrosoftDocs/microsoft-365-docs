@@ -70,7 +70,7 @@ The following are scenarios where communications from Office 365 to your on-prem
 
 For Microsoft to route back to your network for these bi-directional traffic flows, the BGP routes to your on-premises devices must be shared with Microsoft. When you advertise route prefixes to Microsoft over ExpressRoute, you should follow these best practices:
 
-1) Do not advertise the same public IP Address route prefix to the public Internet and over ExpressRoute. It is strongly recommended that the IP BGP Route Prefix advertisements to Microsoft over ExpressRoute are from a range that is not advertised to the internet at all. If this is not possible to achieve due to the available IP Address space, then it is essential to ensure you advertise a more specific range over ExpressRoute than any internet circuits.
+1) Do not advertise the same public IP Address route prefix to the public Internet and over ExpressRoute. It is recommended that the IP BGP Route Prefix advertisements to Microsoft over ExpressRoute are from a range that is not advertised to the internet at all. If this is not possible to achieve due to the available IP Address space, then it is essential to ensure you advertise a more specific range over ExpressRoute than any internet circuits.
 
 2) Use separate NAT IP pools per ExpressRoute circuit and separate to that of your internet circuits.
 
@@ -90,7 +90,7 @@ Other applications such as Office 365 Video, is an Office 365 application; howev
 
 Each of the Office 365 features that are available using Microsoft peering are listed in the [Office 365 endpoints article](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) by application type and FQDN. The reason for using the FQDN in the tables is to allow customers to manage traffic using PAC files or other proxy configurations, see our guide to [managing Office 365 endpoints](./managing-office-365-endpoints.md) for example PAC files.
   
-In some situations we've used a wildcard domain where one or more sub-FQDNs are advertised differently than the higher-level wildcard domain. This usually happens when the wildcard represents a long list of servers that are all advertised to ExpressRoute and the Internet, while a small subset of destinations are only advertised to the Internet, or the reverse. Refer to the tables below to understand where the differences are.
+In some situations we've used a wildcard domain where one or more sub-FQDNs are advertised differently than the higher-level wildcard domain. This usually happens when the wildcard represents a long list of servers that are all advertised to ExpressRoute and the Internet, while a small subset of destinations is only advertised to the Internet, or the reverse. Refer to the tables below to understand where the differences are.
   
 This table displays the wildcard FQDNs that are advertised to both the internet and Azure ExpressRoute alongside the sub-FQDNs that are advertised only to the internet.
 
@@ -175,7 +175,7 @@ The additional questions that must be answered for customers with multiple locat
 
 3. What is the preferred method for consolidating traffic in the case of networks with many small locations?
 
-Each of these presents a unique challenge that requires you to evaluate your own network as well as the options available from Microsoft.
+Each of these presents a unique challenge that requires you to evaluate your own network and the options available from Microsoft.
 
 |**Consideration**|**Network components to evaluate**|
 |:-----|:-----|
