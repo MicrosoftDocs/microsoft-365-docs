@@ -120,7 +120,7 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 - macOS
 
 > [!NOTE]
-> You'll need to know the exact Linux distributions and versions of Android, iOS and macOS that are compatible with Defender for Endpoint for the integration to work.
+> You'll need to confirm the Linux distributions and versions of Android, iOS and macOS you've are compatible with Defender for Endpoint for the integration to work.
 
 
 
