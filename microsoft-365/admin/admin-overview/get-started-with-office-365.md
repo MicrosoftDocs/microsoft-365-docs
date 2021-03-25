@@ -55,7 +55,7 @@ Here are some resources to help you get started.
   
 - [Training for admins](../index.yml): Get links to free online classes for admins.
     
-- [Admin Help](../admin-center-overview.md): Get info about top tasks, getting started with admin tools, and troubleshooting problems.
+- [Admin Help](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview): Get info about top tasks, getting started with admin tools, and troubleshooting problems.
     
 - [Contact support - Admin Help](../contact-support-for-business-products.md) : Call us, open an online request, or let the community help. 
     
